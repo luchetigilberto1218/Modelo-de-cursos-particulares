@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "coord-1",
+      "name": "Gilberto Lucheto",
+      "email": "gilberto@alumni.com",
+      "password": "$2b$10$NfKPgNmDDxrvixRuubiYmeIgKCMEk0Ec3f6W7AI5DVJFScReSz526",
+      "role": "coordinator",
+      "clients": ["aps"]
+    },
+    {
+      "id": "prof-1",
+      "name": "Professor Demo",
+      "email": "professor@alumni.com",
+      "password": "$2b$10$NfKPgNmDDxrvixRuubiYmeIgKCMEk0Ec3f6W7AI5DVJFScReSz526",
+      "role": "teacher",
+      "clients": ["aps"]
+    },
+    {
+      "id": "aluno-1",
+      "name": "Aluno Demo",
+      "email": "aluno@alumni.com",
+      "password": "$2b$10$NfKPgNmDDxrvixRuubiYmeIgKCMEk0Ec3f6W7AI5DVJFScReSz526",
+      "role": "student",
+      "clients": ["aps"]
+    }
+  ]
+}
