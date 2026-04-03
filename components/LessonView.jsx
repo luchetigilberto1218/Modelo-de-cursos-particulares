@@ -20,10 +20,25 @@ function isAudioExercise(title) {
   return /Listening|Pronunciation|drill|Read aloud/i.test(title || '');
 }
 
+// Voice rotation by module: US male, US female, GB male, GB female
+const VOICE_CYCLE = ['us-male', 'us-female', 'gb-male', 'gb-female'];
+const VOICE_LABELS = {
+  'us-male': 'American male',
+  'us-female': 'American female',
+  'gb-male': 'British male',
+  'gb-female': 'British female',
+};
+
+function getModuleVoice(lessonNum) {
+  const moduleIndex = Math.floor((lessonNum - 1) / 8);
+  return VOICE_CYCLE[moduleIndex % VOICE_CYCLE.length];
+}
+
 export default function LessonView({ lesson, lessonIndex, totalLessons, clientId }) {
   const l = lesson;
   const prevNum = lessonIndex > 0 ? lessonIndex : null;
   const nextNum = lessonIndex < totalLessons - 1 ? lessonIndex + 2 : null;
+  const voiceType = getModuleVoice(l.num);
 
   // Vocab rendering
   const hasObjectVocab = l.vocab?.[0] && typeof l.vocab[0] === 'object';
@@ -40,6 +55,9 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           <h1>{l.title}</h1>
           <span className="lesson-focus" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', borderColor: 'rgba(255,255,255,0.2)' }}>
             {l.focus}
+          </span>
+          <span className="lesson-focus" style={{ background: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.6)', borderColor: 'rgba(255,255,255,0.1)', marginLeft: 8, fontSize: 11 }}>
+            Voice: {VOICE_LABELS[voiceType]}
           </span>
         </div>
       </div>
@@ -66,7 +84,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
             <div className="intro-box">
               <p dangerouslySetInnerHTML={{ __html: l.intro }} />
               <div style={{ marginTop: 12 }}>
-                <AudioPlayer text={stripHtml(l.intro)} rate={0.8} label="Listen" />
+                <AudioPlayer text={stripHtml(l.intro)} rate={0.8} label="Listen" voiceType={voiceType} />
               </div>
             </div>
           </div>
@@ -133,7 +151,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                 <span className="exercise-title">{ex.title}</span>
                 {audioText && (
                   <span style={{ marginLeft: 8 }}>
-                    <AudioPlayer text={audioText} rate={0.85} label="Listen" small />
+                    <AudioPlayer text={audioText} rate={0.85} label="Listen" small voiceType={voiceType} />
                   </span>
                 )}
                 <div className="exercise-content" dangerouslySetInnerHTML={{ __html: ex.content }} />
@@ -162,7 +180,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
               {l.takeaways.map((t, i) => (
                 <div key={i} className="takeaway-item">
                   <span style={{ flex: 1 }}>{t}</span>
-                  <AudioPlayer text={t} rate={0.85} label="" small />
+                  <AudioPlayer text={t} rate={0.85} label="" small voiceType={voiceType} />
                 </div>
               ))}
             </div>
