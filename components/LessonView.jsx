@@ -61,7 +61,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {l.intro && (
           <div className="lesson-section">
             <div className="section-title">
-              <div className="section-icon">🌍</div> Introduction
+              <div className="section-icon">I</div> Introduction
             </div>
             <div className="intro-box">
               <p dangerouslySetInnerHTML={{ __html: l.intro }} />
@@ -75,7 +75,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {/* Objective */}
         <div className="lesson-section">
           <div className="section-title">
-            <div className="section-icon">🎯</div> Objective
+            <div className="section-icon">O</div> Objective
           </div>
           <p>{l.objective}</p>
         </div>
@@ -83,7 +83,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {/* Vocabulary */}
         <div className="lesson-section">
           <div className="section-title">
-            <div className="section-icon">📖</div> Vocabulary
+            <div className="section-icon">V</div> Vocabulary
           </div>
           {isReviewVocab ? (
             <p>{l.vocab[0]}</p>
@@ -105,7 +105,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {/* Context */}
         <div className="lesson-section">
           <div className="section-title">
-            <div className="section-icon">💬</div> Context
+            <div className="section-icon">C</div> Context
           </div>
           <div className="context-box">
             <p>{l.situation}</p>
@@ -115,7 +115,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {/* Grammar Point */}
         <div className="lesson-section">
           <div className="section-title">
-            <div className="section-icon">🔬</div> Grammar Point
+            <div className="section-icon">G</div> Grammar Point
           </div>
           <div className="grammar-box" dangerouslySetInnerHTML={{ __html: l.grammarDetail }} />
         </div>
@@ -123,7 +123,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {/* Exercises */}
         <div className="lesson-section">
           <div className="section-title">
-            <div className="section-icon">✍</div> Exercises
+            <div className="section-icon">E</div> Exercises
           </div>
           {l.exercises?.map((ex, i) => {
             const audioText = isAudioExercise(ex.title) ? extractAudioText(ex.content) : '';
@@ -145,7 +145,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {/* Wrap-up */}
         <div className="lesson-section">
           <div className="section-title">
-            <div className="section-icon">🏆</div> Teacher&apos;s Wrap-up
+            <div className="section-icon">W</div> Teacher&apos;s Wrap-up
           </div>
           <div className="wrapup-box">
             <p>{l.wrapup}</p>
@@ -156,7 +156,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {l.takeaways && l.takeaways.length > 0 && (
           <div className="lesson-section">
             <div className="section-title">
-              <div className="section-icon">🔥</div> Sentences I Need to Own
+              <div className="section-icon">S</div> Sentences I Need to Own
             </div>
             <div className="takeaway-box">
               {l.takeaways.map((t, i) => (

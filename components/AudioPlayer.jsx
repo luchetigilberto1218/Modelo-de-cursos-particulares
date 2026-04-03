@@ -37,8 +37,8 @@ export default function AudioPlayer({ text, rate = 0.85, label = 'Listen', small
   }
 
   const labels = {
-    idle: `🔊 ${label}`,
-    playing: '⏸ Pause',
+    idle: `▶ ${label}`,
+    playing: '◼ Pause',
     paused: '▶ Resume',
   };
 
