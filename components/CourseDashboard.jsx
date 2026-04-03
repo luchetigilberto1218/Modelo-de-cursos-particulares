@@ -109,6 +109,10 @@ export default function CourseDashboard({ course, theme, clientId }) {
           ))}
         </div>
 
+        <div style={{ textAlign: 'center', marginTop: 16 }}>
+          <Link href={`/${clientId}/grammar`} className="btn btn-outline">Grammar Reference</Link>
+        </div>
+
         <div style={{ height: 80 }} />
       </div>
     </>
