@@ -1,14 +1,10 @@
 import { redirect } from 'next/navigation';
-import { getSession, canAccessClient } from '../../../../lib/auth';
 import { getCourse, getTheme } from '../../../../lib/courses';
 import NavBar from '../../../../components/NavBar';
 import LessonView from '../../../../components/LessonView';
 
 export default async function LessonPage({ params }) {
   const { client, id } = await params;
-  const session = await getSession();
-  if (!session) redirect('/login');
-  if (!canAccessClient(session, client)) redirect('/login');
 
   const course = getCourse(client);
   const theme = getTheme(client);
@@ -22,7 +18,7 @@ export default async function LessonPage({ params }) {
 
   return (
     <>
-      <NavBar user={session} theme={theme} />
+      <NavBar user={null} theme={theme} />
       <LessonView
         lesson={lesson}
         lessonIndex={lessonIndex}

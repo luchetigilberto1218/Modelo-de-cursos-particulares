@@ -1,19 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export function middleware(request) {
-  const token = request.cookies.get('alumni_token')?.value;
-  const { pathname } = request.nextUrl;
-
-  // Public routes
-  if (pathname === '/login' || pathname.startsWith('/api/')) {
-    return NextResponse.next();
-  }
-
-  // No token → redirect to login
-  if (!token) {
-    return NextResponse.redirect(new URL('/login', request.url));
-  }
-
+export function middleware() {
   return NextResponse.next();
 }
 

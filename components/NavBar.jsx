@@ -26,11 +26,13 @@ export default function NavBar({ user, theme }) {
           </>
         )}
       </div>
-      <div className="nav-right">
-        <span className="nav-user">{user?.name}</span>
-        <span className="nav-role">{roleLabels[user?.role] || user?.role}</span>
-        <button className="nav-logout" onClick={handleLogout}>Sign out</button>
-      </div>
+      {user && (
+        <div className="nav-right">
+          <span className="nav-user">{user.name}</span>
+          <span className="nav-role">{roleLabels[user.role] || user.role}</span>
+          <button className="nav-logout" onClick={handleLogout}>Sign out</button>
+        </div>
+      )}
     </nav>
   );
 }

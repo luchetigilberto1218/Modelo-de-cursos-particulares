@@ -1,11 +1,5 @@
 import { redirect } from 'next/navigation';
-import { getSession } from '../lib/auth';
 
-export default async function Home() {
-  const session = await getSession();
-  if (!session) redirect('/login');
-
-  // Redirect to first available client
-  const clientId = session.clients?.[0] || 'aps';
-  redirect(`/${clientId}`);
+export default function Home() {
+  redirect('/aps');
 }
