@@ -5,6 +5,12 @@ const VOICES = {
   'us-female': 'en-US-JennyNeural',
   'gb-male': 'en-GB-RyanNeural',
   'gb-female': 'en-GB-SoniaNeural',
+  'james': 'en-GB-RyanNeural',
+  'oliver': 'en-GB-ThomasNeural',
+  'harry': 'en-GB-ThomasNeural',
+  'sophie': 'en-GB-SoniaNeural',
+  'emily': 'en-GB-LibbyNeural',
+  'charlotte': 'en-GB-MaisieNeural',
 };
 
 export async function GET(request) {

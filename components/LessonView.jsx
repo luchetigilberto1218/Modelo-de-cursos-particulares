@@ -27,6 +27,12 @@ const VOICE_LABELS = {
   'us-female': 'American female',
   'gb-male': 'British male',
   'gb-female': 'British female',
+  'james': 'James · RP',
+  'oliver': 'Oliver · London',
+  'harry': 'Harry · British',
+  'sophie': 'Sophie · RP',
+  'emily': 'Emily · London',
+  'charlotte': 'Charlotte · British',
 };
 
 function getModuleVoice(lessonNum) {
@@ -34,11 +40,16 @@ function getModuleVoice(lessonNum) {
   return VOICE_CYCLE[moduleIndex % VOICE_CYCLE.length];
 }
 
-export default function LessonView({ lesson, lessonIndex, totalLessons, clientId }) {
+export default function LessonView({ lesson, lessonIndex, totalLessons, clientId, backHref }) {
   const l = lesson;
   const prevNum = lessonIndex > 0 ? lessonIndex : null;
   const nextNum = lessonIndex < totalLessons - 1 ? lessonIndex + 2 : null;
-  const voiceType = getModuleVoice(l.num);
+  // Prefer lesson-assigned character (Czarnikow), fall back to module rotation (APS)
+  const voiceType = l.character || getModuleVoice(l.num);
+  const voiceLabel = l.characterName
+    ? `${l.characterName} · ${l.characterAccent || 'British'}`
+    : VOICE_LABELS[voiceType] || voiceType;
+  const allLessonsHref = backHref || `/${clientId}`;
 
   // Vocab rendering
   const hasObjectVocab = l.vocab?.[0] && typeof l.vocab[0] === 'object';
@@ -57,7 +68,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
             {l.focus}
           </span>
           <span className="lesson-focus" style={{ background: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.6)', borderColor: 'rgba(255,255,255,0.1)', marginLeft: 8, fontSize: 11 }}>
-            Voice: {VOICE_LABELS[voiceType]}
+            🎙 {voiceLabel}
           </span>
         </div>
       </div>
@@ -192,7 +203,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           {prevNum ? (
             <Link href={`/${clientId}/lesson/${prevNum}`} className="btn btn-outline">← Previous Lesson</Link>
           ) : <span />}
-          <Link href={`/${clientId}`} className="btn btn-outline">All Lessons</Link>
+          <Link href={allLessonsHref} className="btn btn-outline">All Lessons</Link>
           {nextNum ? (
             <Link href={`/${clientId}/lesson/${nextNum}`} className="btn btn-primary">Next Lesson →</Link>
           ) : <span />}

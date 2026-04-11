@@ -16,6 +16,11 @@ export default async function LessonPage({ params }) {
 
   const totalLessons = course.lessons.length;
 
+  // For level-based platforms (Czarnikow), "All Lessons" goes back to the track page
+  const backHref = lesson.level && lesson.track
+    ? `/${client}/level/${lesson.level}/track/${lesson.track}`
+    : `/${client}`;
+
   return (
     <>
       <NavBar user={null} theme={theme} />
@@ -24,6 +29,7 @@ export default async function LessonPage({ params }) {
         lessonIndex={lessonIndex}
         totalLessons={totalLessons}
         clientId={client}
+        backHref={backHref}
       />
     </>
   );

@@ -1,0 +1,75 @@
+{
+  "clientId": "czarnikow",
+  "clientName": "Czarnikow",
+  "platform": "levels",
+  "tagline": "Fluência aplicada ao negócio",
+  "colors": {
+    "navy": "#1B2736",
+    "navyLight": "#2B3B4F",
+    "accent": "#2AAAE2",
+    "accentHover": "#1C96CC",
+    "accentLight": "#E6F5FC",
+    "white": "#FFFFFF",
+    "offWhite": "#F9FAFB",
+    "grayLight": "#E4E9EF",
+    "gray": "#6B7A8F",
+    "text": "#2D3748",
+    "dark": "#32373C"
+  },
+  "logos": {
+    "client": "https://www.czarnikow.com/wp-content/uploads/2022/08/czarnikow-logo.svg",
+    "clientFallback": "https://www.czarnikow.com/wp-content/themes/czarnikow/images/logo.svg",
+    "school": "https://alumni.org.br/wp-content/uploads/2025/12/logo_alumni-bco-1024x445.png"
+  },
+  "heroImage": "https://images.unsplash.com/photo-1494961104209-3c223057bd26?w=1600&q=80",
+  "characters": [
+    {
+      "id": "james",
+      "name": "James",
+      "gender": "male",
+      "accent": "RP (posh English)",
+      "description": "Senior consultant, refined received pronunciation. Used for formal briefings and executive contexts.",
+      "voice": "en-GB-RyanNeural"
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "gender": "male",
+      "accent": "London (contemporary)",
+      "description": "Account manager, modern London accent. Used for day-to-day business talk and casual meetings.",
+      "voice": "en-GB-ThomasNeural"
+    },
+    {
+      "id": "harry",
+      "name": "Harry",
+      "gender": "male",
+      "accent": "Neutral British",
+      "description": "Analyst, clear neutral British. Used for reports, data and process explanations. (Shares base voice with Oliver — msedge-tts limitation; replace with ElevenLabs for a fully distinct voice.)",
+      "voice": "en-GB-ThomasNeural"
+    },
+    {
+      "id": "sophie",
+      "name": "Sophie",
+      "gender": "female",
+      "accent": "RP (posh English)",
+      "description": "HR director, poised RP delivery. Used for strategic HR topics and leadership scenarios.",
+      "voice": "en-GB-SoniaNeural"
+    },
+    {
+      "id": "emily",
+      "name": "Emily",
+      "gender": "female",
+      "accent": "London (contemporary)",
+      "description": "Team lead, warm London accent. Used for employee engagement and culture conversations.",
+      "voice": "en-GB-LibbyNeural"
+    },
+    {
+      "id": "charlotte",
+      "name": "Charlotte",
+      "gender": "female",
+      "accent": "RP (neutral British)",
+      "description": "Finance partner, articulate neutral British. Used for compliance, numbers and formal advice.",
+      "voice": "en-GB-MaisieNeural"
+    }
+  ]
+}
