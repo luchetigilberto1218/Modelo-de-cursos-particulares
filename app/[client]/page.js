@@ -15,7 +15,7 @@ export default async function ClientPage({ params }) {
 
   return (
     <>
-      <NavBar user={null} theme={theme} />
+      <NavBar user={null} theme={theme} clientId={client} />
       {isLevelPlatform ? (
         <LevelHub course={course} theme={theme} clientId={client} />
       ) : (

@@ -18,7 +18,7 @@ export default async function TrackRoute({ params }) {
 
   return (
     <>
-      <NavBar user={null} theme={theme} />
+      <NavBar user={null} theme={theme} clientId={client} />
       <TrackPage
         course={course}
         theme={theme}

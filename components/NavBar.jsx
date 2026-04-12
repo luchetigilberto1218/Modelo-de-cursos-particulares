@@ -1,9 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-export default function NavBar({ user, theme }) {
+export default function NavBar({ user, theme, clientId }) {
   const router = useRouter();
+  const homeHref = clientId ? `/${clientId}` : '/';
 
   async function handleLogout() {
     await fetch('/api/auth', { method: 'DELETE' });
@@ -24,7 +26,7 @@ export default function NavBar({ user, theme }) {
       flexWrap: 'wrap',
       gap: 8,
     }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <Link href={homeHref} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', minHeight: 44 }}>
         {theme?.logos?.school && (
           <img
             src={theme.logos.school}
@@ -33,7 +35,7 @@ export default function NavBar({ user, theme }) {
             onError={(e) => { e.target.style.display = 'none'; }}
           />
         )}
-      </div>
+      </Link>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
         {user && (

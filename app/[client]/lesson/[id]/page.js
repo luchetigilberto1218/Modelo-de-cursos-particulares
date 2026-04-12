@@ -23,7 +23,7 @@ export default async function LessonPage({ params }) {
 
   return (
     <>
-      <NavBar user={null} theme={theme} />
+      <NavBar user={null} theme={theme} clientId={client} />
       <LessonView
         lesson={lesson}
         lessonIndex={lessonIndex}

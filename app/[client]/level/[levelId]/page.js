@@ -15,7 +15,7 @@ export default async function LevelRoute({ params }) {
 
   return (
     <>
-      <NavBar user={null} theme={theme} />
+      <NavBar user={null} theme={theme} clientId={client} />
       <LevelPage course={course} theme={theme} clientId={client} levelId={levelId} />
     </>
   );

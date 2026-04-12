@@ -21,7 +21,7 @@ export default async function GrammarPage({ params }) {
 
   return (
     <>
-      <NavBar user={null} theme={theme} />
+      <NavBar user={null} theme={theme} clientId={client} />
       <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 24px 80px' }}>
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
           <h1 style={{ fontSize: 32, fontWeight: 700, color: 'var(--navy)', marginBottom: 8 }}>
