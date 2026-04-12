@@ -235,11 +235,11 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                     <AudioPlayer key={`ex-${l.num}-${i}`} text={audioText} rate={0.85} label="Listen" small voiceType={voiceType} />
                   </div>
                 )}
-                {answers.length > 0 && (
+                {(answers.length > 0 || ex.answers?.length > 0) && (
                   <details style={{ marginTop: 12 }}>
                     <summary style={{ cursor: 'pointer', color: 'var(--accent, #2AAAE2)', fontSize: 13, fontWeight: 600 }}>Show answers</summary>
                     <div style={{ marginTop: 8, padding: 12, background: '#F0FFF4', borderRadius: 8, border: '1px solid #C6F6D5', fontSize: 14, color: '#2F855A', lineHeight: 1.8 }}>
-                      {answers.map((a, j) => <div key={j}>{a}</div>)}
+                      {(ex.answers || answers).map((a, j) => <div key={j}>{a}</div>)}
                     </div>
                   </details>
                 )}
