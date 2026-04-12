@@ -14,25 +14,56 @@ export default function NavBar({ user, theme }) {
   const roleLabels = { coordinator: 'Coordinator', teacher: 'Teacher', student: 'Student' };
 
   return (
-    <nav className="nav">
-      <div className="nav-logos">
+    <nav style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      padding: '12px 20px',
+      background: '#1B2736',
+      minHeight: 48,
+      flexWrap: 'wrap',
+      gap: 8,
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
         {theme?.logos?.school && (
-          <img src={theme.logos.school} alt="Alumni" onError={(e) => { e.target.style.display = 'none'; }} />
-        )}
-        {theme?.logos?.client && (
-          <>
-            <div className="nav-divider" />
-            <img src={theme.logos.client} alt={theme?.clientName || 'Client'} onError={(e) => { e.target.style.display = 'none'; }} />
-          </>
+          <img
+            src={theme.logos.school}
+            alt="Alumni"
+            style={{ height: 28, objectFit: 'contain', maxWidth: 120 }}
+            onError={(e) => { e.target.style.display = 'none'; }}
+          />
         )}
       </div>
-      {user && (
-        <div className="nav-right">
-          <span className="nav-user">{user.name}</span>
-          <span className="nav-role">{roleLabels[user.role] || user.role}</span>
-          <button className="nav-logout" onClick={handleLogout}>Sign out</button>
-        </div>
-      )}
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        {user && (
+          <>
+            <span style={{ color: '#fff', fontSize: 13, fontWeight: 500 }}>{user.name}</span>
+            <button
+              onClick={handleLogout}
+              style={{
+                background: 'rgba(255,255,255,0.1)',
+                border: '1px solid rgba(255,255,255,0.2)',
+                color: '#fff',
+                padding: '6px 12px',
+                borderRadius: 8,
+                fontSize: 12,
+                cursor: 'pointer',
+              }}
+            >
+              Sign out
+            </button>
+          </>
+        )}
+        {theme?.logos?.client && (
+          <img
+            src={theme.logos.client}
+            alt={theme?.clientName || 'Client'}
+            style={{ height: 28, objectFit: 'contain' }}
+            onError={(e) => { e.target.style.display = 'none'; }}
+          />
+        )}
+      </div>
     </nav>
   );
 }

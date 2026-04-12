@@ -1,22 +1,22 @@
 import { MsEdgeTTS, OUTPUT_FORMAT } from 'msedge-tts';
 
 const VOICES = {
-  'us-male': 'en-US-GuyNeural',
+  'us-male':   'en-US-GuyNeural',
   'us-female': 'en-US-JennyNeural',
-  'gb-male': 'en-GB-RyanNeural',
+  'gb-male':   'en-GB-RyanNeural',
   'gb-female': 'en-GB-SoniaNeural',
-  'james': 'en-GB-RyanNeural',
-  'oliver': 'en-GB-ThomasNeural',
-  'harry': 'en-GB-ThomasNeural',
-  'sophie': 'en-GB-SoniaNeural',
-  'emily': 'en-GB-LibbyNeural',
+  'james':     'en-GB-RyanNeural',
+  'oliver':    'en-GB-ThomasNeural',
+  'harry':     'en-AU-WilliamNeural',
+  'sophie':    'en-GB-SoniaNeural',
+  'emily':     'en-GB-LibbyNeural',
   'charlotte': 'en-GB-MaisieNeural',
 };
 
 export async function GET(request) {
-  const { searchParams } = new URL(request.url);
-  const text = searchParams.get('text');
-  const voice = searchParams.get('voice') || 'us-male';
+  const url = new URL(request.url);
+  const text = url.searchParams.get('text');
+  const voice = url.searchParams.get('voice') || 'us-male';
 
   if (!text) {
     return new Response('Missing text parameter', { status: 400 });
@@ -43,7 +43,9 @@ export async function GET(request) {
     return new Response(audioBuffer, {
       headers: {
         'Content-Type': 'audio/mpeg',
+        'Content-Length': audioBuffer.length.toString(),
         'Cache-Control': 'public, max-age=86400, s-maxage=604800',
+        'Accept-Ranges': 'bytes',
       },
     });
   } catch (err) {
