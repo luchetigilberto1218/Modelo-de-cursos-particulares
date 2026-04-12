@@ -9,8 +9,8 @@ const VOICES = {
   'oliver':    'en-GB-ThomasNeural',
   'harry':     'en-AU-WilliamNeural',
   'sophie':    'en-GB-SoniaNeural',
-  'emily':     'en-GB-LibbyNeural',
-  'charlotte': 'en-GB-MaisieNeural',
+  'emily':     'en-IE-EmilyNeural',
+  'charlotte': 'en-NZ-MollyNeural',
 };
 
 export async function GET(request) {
