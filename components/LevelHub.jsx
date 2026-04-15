@@ -130,11 +130,13 @@ export default function LevelHub({ course, theme, clientId }) {
           Plataforma de Estudos
         </h2>
         <div style={{ background: '#fff', borderRadius: 20, padding: '36px 40px', color: '#424245', fontSize: 16, lineHeight: 1.7, boxShadow: '0 2px 12px rgba(0,0,0,0.04)', border: '1px solid #e8e8ed' }}>
-          <p style={{ margin: '0 0 14px' }}>Sejam bem-vindos.</p>
-          <p style={{ margin: '0 0 14px' }}>Este é o ambiente de estudos que apoiará suas aulas particulares, conectando você e seu professor aos conteúdos que serão trabalhados em cada encontro.</p>
-          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>Como utilizar.</strong> Os materiais estão organizados por nível — <strong style={{ color: '#1d1d1f' }}>Confidence</strong>, <strong style={{ color: '#1d1d1f' }}>Rise</strong> e <strong style={{ color: '#1d1d1f' }}>Apex</strong>. Siga os conteúdos do seu nível para garantir consistência na evolução.</p>
-          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>Trilhas de desenvolvimento.</strong> Sua jornada pode ser direcionada pela sua área de atuação. Se você atua em Trade Finance, por exemplo, utilize essa trilha como preparação.</p>
-          <p style={{ margin: 0 }}><strong style={{ color: '#1d1d1f' }}>Boa jornada.</strong> Aproveite a plataforma e conte conosco.</p>
+          <p style={{ margin: '0 0 14px' }}>Olá, seja muito bem-vindo(a).</p>
+          <p style={{ margin: '0 0 14px' }}>Este é o seu ambiente de estudos: o espaço onde você e seu professor acessam, antes, durante e depois de cada aula, todo o conteúdo que será trabalhado nos encontros.</p>
+          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>1. Escolha o seu nível.</strong> Os materiais estão organizados em quatro níveis — <strong style={{ color: '#1d1d1f' }}>Confidence</strong>, <strong style={{ color: '#1d1d1f' }}>Essentials</strong>, <strong style={{ color: '#1d1d1f' }}>Rise</strong> e <strong style={{ color: '#1d1d1f' }}>Apex</strong>. Comece pelo nível indicado pelo seu professor para garantir uma evolução sólida.</p>
+          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>2. Siga a trilha do seu departamento.</strong> Cada trilha corresponde a uma área de atuação da Czarnikow — RH, Trade &amp; Finance, Supply Chain, Logistics, Accounting, Fiscal &amp; Taxes, Information Technology, UK &amp; England e General Business. <strong>Utilize a trilha que corresponde ao seu departamento</strong>: o vocabulário, os exemplos e os exercícios foram pensados para a sua rotina de trabalho.</p>
+          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>3. Faça as lições em ordem.</strong> Dentro de cada trilha, as lições foram desenhadas de forma progressiva — cada uma prepara o terreno para a seguinte. Avance lição por lição, na sequência, para consolidar o aprendizado.</p>
+          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>Conteúdos complementares.</strong> Se quiser explorar além, as trilhas <em>General Business</em> e <em>UK &amp; England</em> estão disponíveis para estudo independente e enriquecem a experiência com contexto profissional e cultural.</p>
+          <p style={{ margin: 0 }}><strong style={{ color: '#1d1d1f' }}>Boa jornada.</strong> Estamos aqui para apoiar o seu desenvolvimento — aproveite cada aula.</p>
         </div>
       </section>
 
