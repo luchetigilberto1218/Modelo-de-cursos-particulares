@@ -208,6 +208,33 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
               ))}
             </div>
           )}
+
+          {/* Vocabulary Practice — exercise[2] shown right after vocab */}
+          {l.exercises?.[2] && (() => {
+            const ex = l.exercises[2];
+            const isReadAloud = /Read aloud|Listening|Pronunciation/i.test(ex.title || '');
+            const parenMatches = !isReadAloud ? [...(ex.content || '').matchAll(/([a-j])\)[^(]*\(([^)]{1,40})\)/g)] : [];
+            const hasRealAnswers = parenMatches.length > 0 && parenMatches.every(m => !m[2].includes('/'));
+            const contentWithout = hasRealAnswers ? ex.content.replace(/\s*\(([^)/]{1,40})\)/g, '') : ex.content;
+            const answers = hasRealAnswers ? parenMatches.map(m => m[1] + ') ' + m[2]) : [];
+            return (
+              <div className="exercise-item" style={{ marginTop: 20 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+                  <span className="exercise-num">V</span>
+                  <span className="exercise-title">Vocabulary Practice</span>
+                </div>
+                <div className="exercise-content" dangerouslySetInnerHTML={{ __html: contentWithout }} />
+                {(answers.length > 0 || ex.answers?.length > 0) && (
+                  <details style={{ marginTop: 12 }}>
+                    <summary style={{ cursor: 'pointer', color: 'var(--accent, #2AAAE2)', fontSize: 13, fontWeight: 600 }}>Show answers</summary>
+                    <div style={{ marginTop: 8, padding: 12, background: '#F0FFF4', borderRadius: 8, border: '1px solid #C6F6D5', fontSize: 14, color: '#2F855A', lineHeight: 1.8 }}>
+                      {(ex.answers || answers).map((a, j) => <div key={j}>{a}</div>)}
+                    </div>
+                  </details>
+                )}
+              </div>
+            );
+          })()}
         </div>
 
         {/* 4. Context */}
@@ -285,7 +312,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           <div className="section-title">
             <div className="section-icon">E</div> Exercises
           </div>
-          {l.exercises?.map((ex, i) => {
+          {l.exercises?.filter((_, i) => i !== 2).map((ex, i) => {
             const audioText = isAudioExercise(ex.title) ? extractAudioText(ex.content) : '';
             const isReadAloud = /Read aloud|Listening|Pronunciation/i.test(ex.title || '');
             const parenMatches = !isReadAloud ? [...(ex.content || '').matchAll(/([a-j])\)[^(]*\(([^)]{1,40})\)/g)] : [];
