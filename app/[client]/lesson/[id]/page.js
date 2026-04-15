@@ -10,8 +10,9 @@ export default async function LessonPage({ params }) {
   const theme = getTheme(client);
   if (!course) redirect('/');
 
-  const lessonIndex = parseInt(id, 10) - 1;
-  const lesson = course.lessons[lessonIndex];
+  const lessonNum = parseInt(id, 10);
+  const lessonIndex = course.lessons.findIndex((l) => l.num === lessonNum);
+  const lesson = lessonIndex >= 0 ? course.lessons[lessonIndex] : null;
   if (!lesson) redirect(`/${client}`);
 
   const totalLessons = course.lessons.length;
