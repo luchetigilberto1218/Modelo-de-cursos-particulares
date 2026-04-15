@@ -137,22 +137,61 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                   {l.teacherGuide.overview}
                 </p>
               )}
-              {l.teacherGuide.lessonFlow?.length > 0 && (
-                <>
-                  <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: '#8C6A00', margin: '16px 0 10px' }}>
-                    Lesson Flow
-                  </h4>
-                  <ol style={{ paddingLeft: 22, margin: 0 }}>
-                    {l.teacherGuide.lessonFlow.map((step, i) => (
-                      <li key={i} style={{ marginBottom: 12, fontSize: 14, lineHeight: 1.55 }}>
-                        <strong>{step.title || step.what}</strong>
-                        <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>({step.time || step.duration})</span>
-                        <div style={{ color: '#5A4A1F', marginTop: 2 }}>{step.description || step.instructions}</div>
-                      </li>
-                    ))}
-                  </ol>
-                </>
-              )}
+              <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: '#8C6A00', margin: '16px 0 10px' }}>
+                Lesson Flow (90 min) — follows the page order
+              </h4>
+              <ol style={{ paddingLeft: 22, margin: 0 }}>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Objective of the class</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(3 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Read the objective aloud. Ask the student what they already know about the topic.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Introduction</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(10 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Play the intro audio once, then read together. Check understanding with 2 quick questions.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Vocabulary + Vocabulary Practice</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(15 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Drill each word with its example. Then do the Vocabulary Practice exercise right after — it uses all 10 words and reinforces them in context. Check with Show answers.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Context</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(5 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Set the scene. Ask the student to imagine themselves in the situation before moving on.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Role Play</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(15 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Run the role play twice, swapping roles. Use the sample dialogue only if the student gets stuck.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Additional Audios</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(10 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Play each audio, then go through the tasks. Replay key sections if needed.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Exercises (Read aloud + Complete)</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(15 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Do the Read aloud for pronunciation, then the fill/complete exercise. Use Show answers for correction.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Questions &amp; Answers</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(10 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Ask 3–5 questions. Compare with the model answer only after the student speaks.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Extra Material 1 — Sentences I Need to Own</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(5 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Drill each sentence aloud. Student should leave the class able to say them naturally.</div>
+                </li>
+                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                  <strong>Grammar of the Lesson</strong>
+                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(7 min)</span>
+                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Start with the Grammar Point. Go to Deep Dive only if the student wants more detail or makes errors.</div>
+                </li>
+              </ol>
               {l.teacherGuide.commonChallenges?.length > 0 && (
                 <>
                   <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: '#8C6A00', margin: '20px 0 10px' }}>
