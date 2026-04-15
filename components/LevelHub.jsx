@@ -5,7 +5,7 @@ import { useState } from 'react';
 import AudioPlayer from './AudioPlayer';
 
 const HISTORY_PARAGRAPHS = [
-  "Czarnikow was founded in London in 1861 by Caesar Czarnikow, a young German sugar broker who saw an opportunity in the growing British market. From a small office in the City, he began trading sugar from the Caribbean and built trust with refiners across Europe.",
+  "Czarnikow was founded in London in 1861 by Caesar Czarnikow, a young Polish sugar broker who saw an opportunity in the growing British market. From a small office in the City, he began trading sugar from the Caribbean and built trust with refiners across Europe.",
   "Over the following decades, Czarnikow became one of the most respected names in the global sugar trade. The company expanded into new markets, opened offices in different continents, and survived wars, crises and the constant changes of international commerce.",
   "Today, Czarnikow is much more than a sugar broker. It is a smart supply chain partner, helping clients source products, manage financial risk, handle logistics and make better decisions with data and insight.",
   "The group now operates from 13 offices around the world, with teams in Europe, the Americas, Asia and Africa. Czarnikow works with agriculture, food, energy and manufacturing clients, connecting producers and buyers across more than 90 countries.",
