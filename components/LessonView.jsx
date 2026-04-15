@@ -152,7 +152,18 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           </details>
         )}
 
-        {/* Introduction */}
+        {/* === IN CLASS EXERCISES === */}
+        <h2 className="part-title">IN CLASS EXERCISES</h2>
+
+        {/* 1. Objective of the class */}
+        <div className="lesson-section">
+          <div className="section-title">
+            <div className="section-icon">O</div> Objective of the class
+          </div>
+          <p>{l.objective}</p>
+        </div>
+
+        {/* 2. Introduction */}
         {l.intro && (
           <div className="lesson-section">
             <div className="section-title">
@@ -167,15 +178,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           </div>
         )}
 
-        {/* Objective */}
-        <div className="lesson-section">
-          <div className="section-title">
-            <div className="section-icon">O</div> Objective
-          </div>
-          <p>{l.objective}</p>
-        </div>
-
-        {/* Vocabulary */}
+        {/* 3. Vocabulary */}
         <div className="lesson-section">
           <div className="section-title">
             <div className="section-icon">V</div> Vocabulary
@@ -183,9 +186,19 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           {isReviewVocab ? (
             <p>{l.vocab[0]}</p>
           ) : hasObjectVocab ? (
-            <div className="vocab-grid">
+            <div className="vocab-list">
               {l.vocab.map((v, i) => (
-                <VocabChip key={i} en={v.en} pt={v.pt} />
+                <div key={i} className="vocab-row">
+                  <div className="vocab-row-words">
+                    <span className="vocab-en">{v.en}</span>
+                    <span className="vocab-pt"> — {v.pt}</span>
+                  </div>
+                  {v.example && (
+                    <div className="vocab-example">
+                      <em>e.g.</em> {v.example}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           ) : (
@@ -197,7 +210,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           )}
         </div>
 
-        {/* Context */}
+        {/* 4. Context */}
         <div className="lesson-section">
           <div className="section-title">
             <div className="section-icon">C</div> Context
@@ -207,7 +220,67 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           </div>
         </div>
 
-        {/* Exercises */}
+        {/* 5. Role Plays (moved up) */}
+        {l.extendedExercises?.rolePlays?.length > 0 && l.extendedExercises.rolePlays[0] && (
+          <div className="lesson-section">
+            <div className="section-title">
+              <div className="section-icon">R</div> Role Play
+            </div>
+            {l.extendedExercises.rolePlays.filter(Boolean).map((rp, i) => (
+              <div key={i} className="lesson-card-box" style={{ marginBottom: 24, padding: 16, background: '#F9FAFB', borderRadius: 10, border: '1px solid var(--gray-light, #E4E9EF)' }}>
+                <h4 style={{ margin: '0 0 10px', fontSize: 15 }}>{rp.title}</h4>
+                <p style={{ fontSize: 14, color: 'var(--gray)', margin: '0 0 10px' }}><strong>Setup:</strong> {rp.setup}</p>
+                {rp.studentA && <p style={{ fontSize: 14, margin: '0 0 6px' }}><strong>Student A:</strong> {rp.studentA}</p>}
+                {rp.studentB && <p style={{ fontSize: 14, margin: '0 0 12px' }}><strong>Student B:</strong> {rp.studentB}</p>}
+                {rp.sampleDialogue?.length > 0 && (
+                  <>
+                    <p style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, color: 'var(--gray)', margin: '12px 0 6px' }}>Sample dialogue</p>
+                    <div style={{ padding: 12, background: 'white', borderRadius: 6, fontSize: 13, lineHeight: 1.6 }}>
+                      {rp.sampleDialogue.map((line, j) => <div key={j} style={{ marginBottom: 4 }}>{line}</div>)}
+                    </div>
+                  </>
+                )}
+                {rp.successCriteria && (
+                  <p style={{ fontSize: 13, color: 'var(--gray)', margin: '12px 0 0' }}>
+                    <strong>Success:</strong> {rp.successCriteria}
+                  </p>
+                )}
+                {rp.teacherNotes && (
+                  <p style={{ fontSize: 13, color: '#8C6A00', margin: '8px 0 0', padding: 10, background: '#FFF8E1', borderRadius: 6 }}>
+                    <strong>Teacher note:</strong> {rp.teacherNotes}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* 6. Additional Audios (moved up) */}
+        {l.extendedExercises?.additionalAudios?.length > 0 && (
+          <div className="lesson-section">
+            <div className="section-title">
+              <div className="section-icon">A</div> Additional Audios
+            </div>
+            {l.extendedExercises.additionalAudios.map((audio, i) => (
+              <div key={i} className="lesson-card-box" style={{ marginBottom: 24, padding: 16, background: '#F9FAFB', borderRadius: 10, border: '1px solid var(--gray-light, #E4E9EF)' }}>
+                <h4 style={{ margin: '0 0 4px', fontSize: 15 }}>{audio.title}</h4>
+                <div style={{ padding: 12, background: 'white', borderRadius: 6, fontSize: 14, lineHeight: 1.6, marginBottom: 12 }}>
+                  {audio.transcript}
+                </div>
+                <AudioPlayer text={audio.transcript} rate={0.85} label="Listen" voiceType={audio.speaker || voiceType} />
+                {audio.tasks?.length > 0 && (
+                  <ol style={{ paddingLeft: 22, marginTop: 12, marginBottom: 0 }}>
+                    {audio.tasks.map((t, j) => (
+                      <li key={j} style={{ marginBottom: 4, fontSize: 14, lineHeight: 1.5 }}>{t}</li>
+                    ))}
+                  </ol>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* 7. Exercises */}
         <div className="lesson-section">
           <div className="section-title">
             <div className="section-icon">E</div> Exercises
@@ -248,70 +321,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           })}
         </div>
 
-        {/* Role Plays */}
-        {l.extendedExercises?.rolePlays?.length > 0 && (
-          <div className="lesson-section">
-            <div className="section-title">
-              <div className="section-icon">R</div> Role Plays
-            </div>
-            {l.extendedExercises.rolePlays.map((rp, i) => (
-              <div key={i} className="lesson-card-box" style={{ marginBottom: 24, padding: 16, background: '#F9FAFB', borderRadius: 10, border: '1px solid var(--gray-light, #E4E9EF)' }}>
-                <h4 style={{ margin: '0 0 10px', fontSize: 15 }}>{rp.title}</h4>
-                <p style={{ fontSize: 14, color: 'var(--gray)', margin: '0 0 10px' }}><strong>Setup:</strong> {rp.setup}</p>
-                <p style={{ fontSize: 14, margin: '0 0 6px' }}><strong>Student A:</strong> {rp.studentA}</p>
-                <p style={{ fontSize: 14, margin: '0 0 12px' }}><strong>Student B:</strong> {rp.studentB}</p>
-                {rp.sampleDialogue?.length > 0 && (
-                  <>
-                    <p style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.8, color: 'var(--gray)', margin: '12px 0 6px' }}>Sample dialogue</p>
-                    <div style={{ padding: 12, background: 'white', borderRadius: 6, fontSize: 13, lineHeight: 1.6 }}>
-                      {rp.sampleDialogue.map((line, j) => <div key={j} style={{ marginBottom: 4 }}>{line}</div>)}
-                    </div>
-                  </>
-                )}
-                {rp.successCriteria && (
-                  <p style={{ fontSize: 13, color: 'var(--gray)', margin: '12px 0 0' }}>
-                    <strong>Success:</strong> {rp.successCriteria}
-                  </p>
-                )}
-                {rp.teacherNotes && (
-                  <p style={{ fontSize: 13, color: '#8C6A00', margin: '8px 0 0', padding: 10, background: '#FFF8E1', borderRadius: 6 }}>
-                    👩‍🏫 <strong>Teacher note:</strong> {rp.teacherNotes}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Additional Audios */}
-        {l.extendedExercises?.additionalAudios?.length > 0 && (
-          <div className="lesson-section">
-            <div className="section-title">
-              <div className="section-icon">A</div> Additional Audios
-            </div>
-            {l.extendedExercises.additionalAudios.map((audio, i) => (
-              <div key={i} className="lesson-card-box" style={{ marginBottom: 24, padding: 16, background: '#F9FAFB', borderRadius: 10, border: '1px solid var(--gray-light, #E4E9EF)' }}>
-                <h4 style={{ margin: '0 0 4px', fontSize: 15 }}>{audio.title}</h4>
-                {audio.durationSeconds && (
-                  <p style={{ fontSize: 12, color: 'var(--gray)', margin: '0 0 12px' }}>~{audio.durationSeconds}s</p>
-                )}
-                <div style={{ padding: 12, background: 'white', borderRadius: 6, fontSize: 14, lineHeight: 1.6, marginBottom: 12 }}>
-                  {audio.transcript}
-                </div>
-                <AudioPlayer text={audio.transcript} rate={0.85} label="Listen" voiceType={audio.speaker || voiceType} />
-                {audio.tasks?.length > 0 && (
-                  <ol style={{ paddingLeft: 22, marginTop: 12, marginBottom: 0 }}>
-                    {audio.tasks.map((t, j) => (
-                      <li key={j} style={{ marginBottom: 4, fontSize: 14, lineHeight: 1.5 }}>{t}</li>
-                    ))}
-                  </ol>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Q&A */}
+        {/* 8. Q&A */}
         {l.extendedExercises?.qAndA?.length > 0 && (
           <div className="lesson-section">
             <div className="section-title">
@@ -334,110 +344,28 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           </div>
         )}
 
-        {/* Contextualization */}
-        {l.extendedExercises?.contextualization?.length > 0 && (
-          <div className="lesson-section">
-            <div className="section-title">
-              <div className="section-icon">M</div> Make It Your Own
-            </div>
-            <p style={{ fontSize: 14, color: 'var(--gray)', marginBottom: 12 }}>
-              Answer each prompt about your real Czarnikow day-to-day.
-            </p>
-            <ol style={{ paddingLeft: 22, margin: 0 }}>
-              {l.extendedExercises.contextualization.map((c, i) => (
-                <li key={i} style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.6 }}>{c}</li>
-              ))}
-            </ol>
-          </div>
-        )}
-
-        {/* Production Tasks */}
-        {l.extendedExercises?.productionTasks?.length > 0 && (
-          <div className="lesson-section">
-            <div className="section-title">
-              <div className="section-icon">P</div> Production Tasks
-            </div>
-            {l.extendedExercises.productionTasks.map((pt, i) => (
-              <div key={i} style={{ marginBottom: 16, padding: 14, background: '#F9FAFB', borderRadius: 10, border: '1px solid var(--gray-light, #E4E9EF)' }}>
-                <span style={{ fontSize: 10, padding: '2px 8px', borderRadius: 999, background: '#E6F5FC', color: '#1C8FBF', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 8, display: 'inline-block', fontWeight: 700 }}>
-                  {pt.type}
-                </span>
-                <p style={{ margin: '6px 0 0', fontSize: 14, lineHeight: 1.55 }}>{pt.task}</p>
-                {pt.successCriteria && (
-                  <p style={{ fontSize: 13, color: 'var(--gray)', margin: '8px 0 0' }}>
-                    <strong>✓ Success:</strong> {pt.successCriteria}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Pair Work */}
-        {l.extendedExercises?.pairWork?.length > 0 && (
-          <div className="lesson-section">
-            <div className="section-title">
-              <div className="section-icon">2</div> Pair Work
-            </div>
-            {l.extendedExercises.pairWork.map((pw, i) => (
-              <div key={i} style={{ marginBottom: 16, padding: 14, background: '#F9FAFB', borderRadius: 10, border: '1px solid var(--gray-light, #E4E9EF)' }}>
-                <h4 style={{ margin: '0 0 6px', fontSize: 15 }}>{pw.title}</h4>
-                <p style={{ fontSize: 14, margin: '0 0 6px', lineHeight: 1.55 }}>{pw.description}</p>
-                {pw.duration && (
-                  <p style={{ fontSize: 12, color: 'var(--gray)', margin: 0 }}>Duration: {pw.duration}</p>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Homework */}
-        {l.extendedExercises?.homework && (
-          <div className="lesson-section">
-            <div className="section-title">
-              <div className="section-icon">H</div> Homework
-            </div>
-            {l.extendedExercises.homework.tasks?.length > 0 && (
-              <ol style={{ paddingLeft: 22, margin: 0 }}>
-                {l.extendedExercises.homework.tasks.map((t, i) => (
-                  <li key={i} style={{ marginBottom: 8, fontSize: 14, lineHeight: 1.6 }}>{t}</li>
-                ))}
-              </ol>
-            )}
-            {l.extendedExercises.homework.reviewInNextLesson && (
-              <p style={{ marginTop: 14, padding: 12, background: '#FFF8E1', borderRadius: 8, fontSize: 13, color: '#5A4A1F' }}>
-                👩‍🏫 <strong>Next lesson:</strong> {l.extendedExercises.homework.reviewInNextLesson}
-              </p>
-            )}
-          </div>
-        )}
-
-        {/* Wrap-up */}
-        <div className="lesson-section">
-          <div className="section-title">
-            <div className="section-icon">W</div> Teacher&apos;s Wrap-up
-          </div>
-          <div className="wrapup-box">
-            <p>{l.wrapup}</p>
-          </div>
-        </div>
-
-        {/* Takeaways */}
+        {/* === EXTRA MATERIAL 1 === */}
         {l.takeaways && l.takeaways.length > 0 && (
-          <div className="lesson-section">
-            <div className="section-title">
-              <div className="section-icon">S</div> Sentences I Need to Own
+          <>
+            <h2 className="part-title">EXTRA MATERIAL 1</h2>
+            <div className="lesson-section">
+              <div className="section-title">
+                <div className="section-icon">S</div> Sentences I Need to Own
+              </div>
+              <div className="takeaway-box">
+                {l.takeaways.map((t, i) => (
+                  <div key={i} className="takeaway-item">
+                    <span style={{ flex: 1 }}>{t}</span>
+                    <AudioPlayer text={t} rate={0.85} label="" small voiceType={voiceType} />
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="takeaway-box">
-              {l.takeaways.map((t, i) => (
-                <div key={i} className="takeaway-item">
-                  <span style={{ flex: 1 }}>{t}</span>
-                  <AudioPlayer text={t} rate={0.85} label="" small voiceType={voiceType} />
-                </div>
-              ))}
-            </div>
-          </div>
+          </>
         )}
+
+        {/* === GRAMMAR OF THE LESSON === */}
+        <h2 className="part-title">GRAMMAR OF THE LESSON</h2>
 
         {/* Grammar Point */}
         <div className="lesson-section">
