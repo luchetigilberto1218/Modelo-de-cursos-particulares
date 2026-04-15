@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const LEVEL_META = {
-  confidence: { name: 'Confidence & Essentials', tag: 'A1 – A2', color: '#2AAAE2' },
+  confidence: { name: 'Confidence', tag: 'A0 – A1', color: '#7FD4F5' },
+  essentials: { name: 'Essentials', tag: 'A1 – A2', color: '#2AAAE2' },
   rise: { name: 'Rise', tag: 'B1 – B2', color: '#1C8FBF' },
   apex: { name: 'Apex', tag: 'C1 – C2', color: '#0F6E99' }
 };

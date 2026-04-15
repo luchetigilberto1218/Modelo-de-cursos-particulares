@@ -4,13 +4,15 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const LEVEL_COLOR = {
-  confidence: '#2AAAE2',
+  confidence: '#7FD4F5',
+  essentials: '#2AAAE2',
   rise: '#1C8FBF',
   apex: '#0F6E99'
 };
 
 const LEVEL_NAME = {
-  confidence: 'Confidence & Essentials',
+  confidence: 'Confidence',
+  essentials: 'Essentials',
   rise: 'Rise',
   apex: 'Apex'
 };

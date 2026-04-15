@@ -41,7 +41,8 @@ function getModuleVoice(lessonNum) {
 }
 
 const LEVEL_LABEL = {
-  confidence: 'Confidence & Essentials',
+  confidence: 'Confidence',
+  essentials: 'Essentials',
   rise: 'Rise',
   apex: 'Apex'
 };
@@ -206,6 +207,23 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
               )}
             </div>
           </details>
+        )}
+
+        {l.level === 'confidence' && (
+          <div style={{
+            margin: '20px 0 24px',
+            padding: '14px 20px',
+            background: 'linear-gradient(135deg, #FEF3C7, #FDE68A)',
+            border: '1px solid #F59E0B',
+            borderRadius: 12,
+            color: '#78350F',
+            fontSize: 14,
+            fontWeight: 500,
+            textAlign: 'center',
+            lineHeight: 1.5,
+          }}>
+            💛 English comes in <strong>CAN's</strong>, not in <strong>CAN'Ts</strong>. Vá no seu ritmo!
+          </div>
         )}
 
         {/* === IN CLASS EXERCISES === */}

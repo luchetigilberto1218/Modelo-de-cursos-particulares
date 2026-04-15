@@ -15,7 +15,8 @@ const HISTORY_PARAGRAPHS = [
 const FULL_HISTORY = HISTORY_PARAGRAPHS.join(' ');
 
 const LEVELS = [
-  { id: 'confidence', name: 'Confidence &\nEssentials', tag: 'A1 – A2', accent: '#2AAAE2' },
+  { id: 'confidence', name: 'Confidence', tag: 'A0 – A1', accent: '#7FD4F5' },
+  { id: 'essentials', name: 'Essentials', tag: 'A1 – A2', accent: '#2AAAE2' },
   { id: 'rise', name: 'Rise', tag: 'B1 – B2', accent: '#1C8FBF' },
   { id: 'apex', name: 'Apex', tag: 'C1 – C2', accent: '#0F6E99' }
 ];

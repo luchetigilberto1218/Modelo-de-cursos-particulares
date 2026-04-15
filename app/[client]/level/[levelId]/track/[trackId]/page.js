@@ -3,7 +3,7 @@ import { getCourse, getTheme } from '../../../../../../lib/courses';
 import NavBar from '../../../../../../components/NavBar';
 import TrackPage from '../../../../../../components/TrackPage';
 
-const VALID_LEVELS = ['confidence', 'rise', 'apex'];
+const VALID_LEVELS = ['confidence', 'essentials', 'rise', 'apex'];
 
 export default async function TrackRoute({ params }) {
   const { client, levelId, trackId } = await params;
