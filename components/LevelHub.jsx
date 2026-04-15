@@ -106,14 +106,19 @@ export default function LevelHub({ course, theme, clientId }) {
 
       <section style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+        gridTemplateColumns: 'repeat(3, 1fr)',
         gap: 16,
         maxWidth: 1080,
         margin: '0 auto',
         padding: '0 24px 60px',
       }}>
-        {LEVELS.map((level) => (
-          <LevelCard key={level.id} level={level} clientId={clientId} />
+        {LEVELS.map((level, i) => (
+          <div
+            key={level.id}
+            style={level.id === 'apex' ? { gridColumn: '2' } : {}}
+          >
+            <LevelCard level={level} clientId={clientId} />
+          </div>
         ))}
       </section>
 
