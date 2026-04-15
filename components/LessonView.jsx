@@ -40,7 +40,24 @@ function getModuleVoice(lessonNum) {
   return VOICE_CYCLE[moduleIndex % VOICE_CYCLE.length];
 }
 
-export default function LessonView({ lesson, lessonIndex, totalLessons, clientId, backHref }) {
+const LEVEL_LABEL = {
+  confidence: 'Confidence & Essentials',
+  rise: 'Rise',
+  apex: 'Apex'
+};
+const TRACK_LABEL = {
+  'general-business': 'General Business',
+  'hr': 'Human Resources',
+  'trade-finance': 'Trade & Finance',
+  'information-technology': 'Information Technology',
+  'fiscal-taxes': 'Fiscal & Taxes',
+  'accounting': 'Accounting',
+  'supply-chain': 'Supply Chain',
+  'logistics': 'Logistics',
+  'uk-england': 'UK & England'
+};
+
+export default function LessonView({ lesson, lessonIndex, totalLessons, clientId, backHref, course }) {
   const l = lesson;
   const prevNum = lessonIndex > 0 ? lessonIndex : null;
   const nextNum = lessonIndex < totalLessons - 1 ? lessonIndex + 2 : null;
@@ -62,7 +79,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
       {/* Lesson hero */}
       <div className="lesson-hero">
         <div className="lesson-hero-inner">
-          <div className="lesson-label">Lesson {String(l.num).padStart(2, '0')} of {totalLessons}</div>
+          <div className="lesson-label">{LEVEL_LABEL[l.level] || ''} · {TRACK_LABEL[l.track] || ''} · Lesson {l.trackOrder || l.num}</div>
           <h1>{l.title}</h1>
           <span className="lesson-focus" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', borderColor: 'rgba(255,255,255,0.2)' }}>
             {l.focus}
