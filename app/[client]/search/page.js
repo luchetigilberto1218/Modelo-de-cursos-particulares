@@ -1,9 +1,9 @@
 import { redirect } from 'next/navigation';
 import { getCourse, getTheme } from '../../../lib/courses';
 import NavBar from '../../../components/NavBar';
-import GrammarReference from '../../../components/GrammarReference';
+import SearchView from '../../../components/SearchView';
 
-export default async function GrammarPage({ params }) {
+export default async function SearchPage({ params }) {
   const { client } = await params;
 
   const course = getCourse(client);
@@ -13,7 +13,7 @@ export default async function GrammarPage({ params }) {
   return (
     <>
       <NavBar user={null} theme={theme} clientId={client} />
-      <GrammarReference course={course} clientId={client} />
+      <SearchView course={course} clientId={client} />
     </>
   );
 }

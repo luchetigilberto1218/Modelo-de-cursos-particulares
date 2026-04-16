@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+// Grammar & Search quick links are rendered in the header and footer.
 import AudioPlayer from './AudioPlayer';
 
 const HISTORY_PARAGRAPHS = [
@@ -83,15 +84,25 @@ export default function LevelHub({ course, theme, clientId }) {
     }}>
       <header style={{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         alignItems: 'center',
         maxWidth: 1080,
         margin: '0 auto',
         padding: '24px 40px',
+        gap: 16,
+        flexWrap: 'wrap',
       }}>
         <span style={{ fontSize: 17, fontWeight: 600, color: '#1d1d1f', letterSpacing: -0.2 }}>
           English Programme
         </span>
+        <nav style={{ display: 'flex', gap: 20, fontSize: 14 }}>
+          <Link href={`/${clientId}/grammar`} style={{ color: '#0071e3', textDecoration: 'none', fontWeight: 500 }}>
+            Grammar
+          </Link>
+          <Link href={`/${clientId}/search`} style={{ color: '#0071e3', textDecoration: 'none', fontWeight: 500 }}>
+            Search
+          </Link>
+        </nav>
       </header>
 
       <section style={{ textAlign: 'center', padding: 'clamp(40px, 8vw, 64px) 24px clamp(32px, 6vw, 48px)', maxWidth: 680, margin: '0 auto' }}>
@@ -157,6 +168,11 @@ export default function LevelHub({ course, theme, clientId }) {
       </section>
 
       <footer style={{ textAlign: 'center', padding: '40px 40px 56px', color: '#86868b', fontSize: 13 }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 18, marginBottom: 12 }}>
+          <Link href={`/${clientId}/grammar`} style={{ color: '#0071e3', textDecoration: 'none' }}>Grammar reference</Link>
+          <span style={{ color: '#d2d2d7' }}>·</span>
+          <Link href={`/${clientId}/search`} style={{ color: '#0071e3', textDecoration: 'none' }}>Search lessons</Link>
+        </div>
         Alumni · Fluência aplicada ao negócio
       </footer>
     </div>
