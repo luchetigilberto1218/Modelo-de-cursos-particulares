@@ -96,9 +96,6 @@ export default function LevelHub({ course, theme, clientId }) {
           English Programme
         </span>
         <nav style={{ display: 'flex', gap: 20, fontSize: 14 }}>
-          <Link href={`/${clientId}/grammar`} style={{ color: '#0071e3', textDecoration: 'none', fontWeight: 500 }}>
-            Grammar
-          </Link>
           <Link href={`/${clientId}/search`} style={{ color: '#0071e3', textDecoration: 'none', fontWeight: 500 }}>
             Search
           </Link>
@@ -168,10 +165,8 @@ export default function LevelHub({ course, theme, clientId }) {
       </section>
 
       <footer style={{ textAlign: 'center', padding: '40px 40px 56px', color: '#86868b', fontSize: 13 }}>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 18, marginBottom: 12 }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 12 }}>
           <Link href={`/${clientId}/grammar`} style={{ color: '#0071e3', textDecoration: 'none' }}>Grammar reference</Link>
-          <span style={{ color: '#d2d2d7' }}>·</span>
-          <Link href={`/${clientId}/search`} style={{ color: '#0071e3', textDecoration: 'none' }}>Search lessons</Link>
         </div>
         Alumni · Fluência aplicada ao negócio
       </footer>
