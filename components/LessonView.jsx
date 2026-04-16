@@ -445,6 +445,64 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           </div>
         )}
 
+        {/* Production Tasks — present to teacher */}
+        {l.extendedExercises?.productionTasks?.length > 0 && (
+          <div className="lesson-section">
+            <div className="section-title">
+              <div className="section-icon">P</div> Production Task
+            </div>
+            {l.extendedExercises.productionTasks.map((pt, i) => (
+              <div key={i} style={{ marginBottom: 16, padding: 16, background: '#F0FFF4', borderRadius: 10, border: '1px solid #C6F6D5' }}>
+                {pt.type && (
+                  <span style={{ fontSize: 10, padding: '2px 10px', borderRadius: 999, background: '#C6F6D5', color: '#2F855A', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 10, display: 'inline-block', fontWeight: 700 }}>
+                    {pt.type}
+                  </span>
+                )}
+                <p style={{ margin: '8px 0 0', fontSize: 14, lineHeight: 1.6, color: '#1A202C' }}>
+                  {pt.task || pt.prompt}
+                </p>
+                {pt.successCriteria && (
+                  <p style={{ fontSize: 13, color: 'var(--gray)', margin: '10px 0 0' }}>
+                    <strong style={{ color: '#2F855A' }}>✓ Success:</strong> {pt.successCriteria}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Contextualization — Make It Your Own */}
+        {l.extendedExercises?.contextualization?.length > 0 && (
+          <div className="lesson-section">
+            <div className="section-title">
+              <div className="section-icon">M</div> Make It Your Own
+            </div>
+            <ol style={{ paddingLeft: 22, margin: 0 }}>
+              {l.extendedExercises.contextualization.map((c, i) => (
+                <li key={i} style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.6 }}>{c}</li>
+              ))}
+            </ol>
+          </div>
+        )}
+
+        {/* Pair Work */}
+        {l.extendedExercises?.pairWork?.length > 0 && (
+          <div className="lesson-section">
+            <div className="section-title">
+              <div className="section-icon">2</div> Pair Work
+            </div>
+            {l.extendedExercises.pairWork.map((pw, i) => (
+              <div key={i} style={{ marginBottom: 16, padding: 14, background: '#F9FAFB', borderRadius: 10, border: '1px solid var(--gray-light, #E4E9EF)' }}>
+                {pw.title && <h4 style={{ margin: '0 0 6px', fontSize: 15 }}>{pw.title}</h4>}
+                <p style={{ fontSize: 14, margin: '0 0 6px', lineHeight: 1.55 }}>{pw.description || pw.instructions}</p>
+                {pw.duration && (
+                  <p style={{ fontSize: 12, color: 'var(--gray)', margin: 0 }}>Duration: {pw.duration}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
         {/* === EXTRA MATERIAL 1 === */}
         {l.takeaways && l.takeaways.length > 0 && (
           <>
