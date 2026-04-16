@@ -97,7 +97,7 @@ export default function LevelHub({ course, theme, clientId }) {
         </span>
         <nav style={{ display: 'flex', gap: 20, fontSize: 14 }}>
           <Link href={`/${clientId}/search`} style={{ color: '#0071e3', textDecoration: 'none', fontWeight: 500 }}>
-            Search
+            Search Lessons
           </Link>
         </nav>
       </header>
