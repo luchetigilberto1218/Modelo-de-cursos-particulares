@@ -1,0 +1,318 @@
+{
+  "moduleNum": 3,
+  "title": "Prova do Módulo 3 — Museu do Porto",
+  "intro": "Você terminou as 9 lições do M3 sobre a história e os espaços do Museu do Porto. Vamos testar tudo o que você aprendeu.",
+  "exercises": [
+    {
+      "type": "fillGap",
+      "lessonNum": 14,
+      "title": "1. Data exata",
+      "prompt": "The museum opened ___ September 1, 1989.",
+      "correctAnswer": "on",
+      "acceptable": ["on"],
+      "explanation": "Datas específicas (dia exato) → on. Anos sozinhos → in.",
+      "commonErrors": {
+        "in": "'In' é para anos sozinhos. Para data com dia: on.",
+        "at": "'At' é para horários (at 3 p.m.)."
+      }
+    },
+    {
+      "type": "writing",
+      "lessonNum": 14,
+      "title": "Apresentação rápida do museu",
+      "prompt": "Escreva uma apresentação curta do Museu do Porto para um grupo de visitantes que acabou de chegar. Mencione o ano de abertura, o ano do prédio e a quantidade de salas e de peças.",
+      "modelAnswer": "Welcome to the Port of Santos Museum. The museum opened in 1989. The building is from 1902. We have more than 2,000 artifacts in 20 rooms.",
+      "keywords": ["museum", "opened", "1989", "1902", "rooms", "artifacts"],
+      "minWords": 5,
+      "explanation": "Combine past simple ('opened') com 'is from' para o prédio e 'we have' para o acervo. Use números exatos."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 14,
+      "title": "Pitch de boas-vindas",
+      "prompt": "Você recebe cinco visitantes na entrada do museu. Diga em voz alta a frase de boas-vindas e o ano de abertura.",
+      "targetText": "Welcome to the museum. It opened on September 1, 1989.",
+      "explanation": "Pratique a entonação calorosa em 'Welcome' e a pronúncia da data com 'on'."
+    },
+    {
+      "type": "fillGap",
+      "lessonNum": 15,
+      "title": "2. Past irregular: wear",
+      "prompt": "Divers ___ the diving suit underwater.",
+      "correctAnswer": "wore",
+      "acceptable": ["wore"],
+      "explanation": "Wear → wore. Vestir → vestiu/vestiram.",
+      "commonErrors": {
+        "weared": "'Weared' não existe. Wear é irregular.",
+        "wear": "Falta a forma passada."
+      }
+    },
+    {
+      "type": "writing",
+      "lessonNum": 15,
+      "title": "Descrição do escafandro",
+      "prompt": "Os visitantes estão diante do escafandro de cem quilos na Sala Náutica. Escreva três frases curtas em inglês explicando o que é, quanto pesava e para que servia.",
+      "modelAnswer": "This is the diving suit. It weighed 100 kilos. Divers wore it to repair the underwater quay.",
+      "keywords": ["diving suit", "weighed", "100 kilos", "divers", "wore"],
+      "minWords": 5,
+      "explanation": "Use past simple irregular: 'weighed' para o peso e 'wore' para a função. Estrutura: This is + It weighed + Divers wore."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 15,
+      "title": "Frota Maru",
+      "prompt": "Diga em voz alta uma frase curta sobre os navios Maru e a chegada de imigrantes japoneses.",
+      "targetText": "The Maru ships brought Japanese immigrants in 1908.",
+      "explanation": "Atenção à pronúncia de 'brought' /brɔːt/ e ao ritmo da frase com pausa antes do ano."
+    },
+    {
+      "type": "fillGap",
+      "lessonNum": 16,
+      "title": "3. Used to + verbo base",
+      "prompt": "Computers ___ ___ fill whole rooms.",
+      "correctAnswer": "used to",
+      "acceptable": ["used to"],
+      "explanation": "Used to + verbo base. Fala de hábito que mudou.",
+      "commonErrors": {
+        "use to": "Sem -d no afirmativo: used to.",
+        "used": "Falta o 'to'."
+      }
+    },
+    {
+      "type": "writing",
+      "lessonNum": 16,
+      "title": "Contraste passado e presente",
+      "prompt": "Na Sala de Informática, escreva duas frases que contrastem como o porto trabalhava em 1963 com o uso de computadores hoje. Use 'used to' na primeira frase.",
+      "modelAnswer": "In 1963, computers used to fill a whole room. Today, all this fits in your phone.",
+      "keywords": ["used to", "fill", "today", "phone"],
+      "minWords": 5,
+      "explanation": "Estrutura clássica de contraste: 'used to + verbo base' no passado, 'today' + presente. Reforça a mudança histórica."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 16,
+      "title": "Livro de orçamentos de 1886",
+      "prompt": "Mostre ao visitante o livro de orçamentos mais antigo do museu e fale sobre como os registros eram feitos.",
+      "targetText": "People used to write everything by hand.",
+      "explanation": "Frase curta com 'used to + write' (verbo base). Pratique a pronúncia de 'used to' /juːst tə/."
+    },
+    {
+      "type": "multipleChoice",
+      "lessonNum": 17,
+      "title": "3. Sequência completa",
+      "prompt": "Sequenciadores na ordem correta:",
+      "options": [
+        {
+          "id": "a",
+          "text": "First → After that → Then → Finally",
+          "correct": false,
+          "whyWrong": "'After that' vem depois de 'Then'. Ordem trocada."
+        },
+        {
+          "id": "b",
+          "text": "First → Then → After that → Finally",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Finally → First → Then → After",
+          "correct": false,
+          "whyWrong": "'Finally' é o último, não o primeiro."
+        },
+        {
+          "id": "d",
+          "text": "First → Finally → Then → After",
+          "correct": false,
+          "whyWrong": "'Finally' não pode vir antes de 'Then'."
+        }
+      ],
+      "explanation": "Ordem: First → Then → After that → Finally. Memorize."
+    },
+    {
+      "type": "writing",
+      "lessonNum": 17,
+      "title": "Do Porto da Morte à cidade saudável",
+      "prompt": "Conte a transformação de Santos em quatro frases conectadas, usando 'First', 'Then', 'After that' e 'Finally'. Mencione a associação de saúde, Saturnino de Brito e Oswaldo Cruz.",
+      "modelAnswer": "First, the company created a health association in 1905. Then, Saturnino de Brito built drainage canals. After that, Oswaldo Cruz led vaccination campaigns. Finally, Santos became a healthy city.",
+      "keywords": ["first", "then", "after that", "finally", "health", "vaccination", "became"],
+      "minWords": 5,
+      "explanation": "Use os quatro sequenciadores na ordem correta com vírgula. Verbos no passado: created, built, led, became."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 17,
+      "title": "Causa das mortes",
+      "prompt": "Explique ao visitante por que Santos era chamada de Porto da Morte no fim do século dezenove.",
+      "targetText": "Because of yellow fever and malaria, many workers died.",
+      "explanation": "Use 'because of + substantivo'. Cuidado com a pronúncia de 'died' /daɪd/."
+    },
+    {
+      "type": "info",
+      "lessonNum": 18,
+      "title": "Esta lição é presencial",
+      "content": "Toda a estrutura desta aula está no <strong>Teacher Guide</strong> acima. O professor conduzirá 7 atividades em 2 horas. Você só precisa estar presente, com o uniforme da APS, e disposto a apresentar 4 peças em inglês."
+    },
+    {
+      "type": "writing",
+      "lessonNum": 18,
+      "title": "Roteiro do tour do primeiro andar",
+      "prompt": "Escreva um roteiro curto que conecte as quatro salas do primeiro andar na ordem da visita. Use sequenciadores entre as salas.",
+      "modelAnswer": "First, we visit the Nautical Room. Then, the Computer Room. After that, the Administrative Activities. Finally, the Workers' Health room.",
+      "keywords": ["first", "then", "after that", "finally", "nautical", "computer"],
+      "minWords": 5,
+      "explanation": "Recap da aula presencial: integre sequenciadores e nomes das quatro salas do primeiro andar."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 18,
+      "title": "Convite para subir",
+      "prompt": "No fim do tour pelo primeiro andar, convide os visitantes a subirem para o segundo andar.",
+      "targetText": "Now, please follow me to the second floor.",
+      "explanation": "Frase típica de guia: 'follow me' (sem 'to' depois de follow). Tom firme e convidativo."
+    },
+    {
+      "type": "fillGap",
+      "lessonNum": 19,
+      "title": "1. Antes da data",
+      "prompt": "___ 1892, the port was small.",
+      "correctAnswer": "Before",
+      "acceptable": ["Before"],
+      "explanation": "Before = antes. NÃO leva 'of' antes de data.",
+      "commonErrors": {
+        "Before of": "Em inglês: 'before 1892', sem 'of'.",
+        "Until": "'Until' funciona em outro contexto. Aqui 'before' é mais simples."
+      }
+    },
+    {
+      "type": "writing",
+      "lessonNum": 19,
+      "title": "A virada de 1892",
+      "prompt": "Diante da pintura de Calixto, escreva três frases que contrastem o porto antes e depois de 1892. Mencione os trapiches de madeira, o cais de pedra e a chegada do Nasmith.",
+      "modelAnswer": "Before 1892, the port was small with wooden piers. Gaffrée and Guinle built the first stone quay. On February 2, 1892, the Nasmith arrived.",
+      "keywords": ["before", "1892", "wooden", "stone quay", "nasmith", "arrived"],
+      "minWords": 5,
+      "explanation": "Combine 'before' (sem 'of') com past simple irregular ('built', 'arrived') e formato de data com 'on'."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 19,
+      "title": "Nascimento do Porto Organizado",
+      "prompt": "Aponte para o painel da fundação e diga em voz alta a frase clássica que marca o nascimento do Porto Organizado.",
+      "targetText": "On February 2, 1892, the Port Organizado was born.",
+      "explanation": "Pratique a leitura da data em inglês: 'February second, eighteen ninety-two'. Pausa antes de 'was born'."
+    },
+    {
+      "type": "multipleChoice",
+      "lessonNum": 20,
+      "title": "7. Erro comum — duplo superlativo",
+      "prompt": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Santos is the most biggest port.",
+          "correct": false,
+          "whyWrong": "Não combine 'most' com '-est'. Apenas um."
+        },
+        {
+          "id": "b",
+          "text": "Santos is the biggest port.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Santos is more biggest port.",
+          "correct": false,
+          "whyWrong": "'More' é comparativo. Para superlativo use 'the' + biggest."
+        },
+        {
+          "id": "d",
+          "text": "Santos is the bigger port.",
+          "correct": false,
+          "whyWrong": "'Bigger' é comparativo (maior que algo). 'Biggest' é o maior em geral."
+        }
+      ],
+      "explanation": "Superlativo: ou '-est' ou 'the most', nunca os dois."
+    },
+    {
+      "type": "writing",
+      "lessonNum": 20,
+      "title": "Recordes do porto",
+      "prompt": "Na Sala de Autoridades, escreva duas frases com superlativos sobre o Porto de Santos. Use um adjetivo curto e um adjetivo longo.",
+      "modelAnswer": "Santos is the biggest port in Latin America. It is the most important port in Brazil.",
+      "keywords": ["the biggest", "the most important", "latin america", "brazil"],
+      "minWords": 5,
+      "explanation": "Adjetivo curto: 'the biggest'. Adjetivo longo: 'the most important'. Sempre com 'the' antes do superlativo."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 20,
+      "title": "O trio fundador",
+      "prompt": "Diante dos retratos, apresente em voz alta os três fundadores do Porto Organizado.",
+      "targetText": "Gaffrée, Guinle, and Weinschenck were the founders.",
+      "explanation": "Lista de três nomes próprios separados por vírgula e 'and' antes do último. Verbo 'were' no plural."
+    },
+    {
+      "type": "fillGap",
+      "lessonNum": 21,
+      "title": "1. Voz passiva — passado",
+      "prompt": "Itatinga ___ ___ (build) in 1910.",
+      "correctAnswer": "was built",
+      "acceptable": ["was built"],
+      "explanation": "Passiva passado: was + past participle. Build → built.",
+      "commonErrors": {
+        "was build": "Falta o particípio: built (com -t).",
+        "built": "Falta o auxiliar 'was'.",
+        "is built": "É histórico (1910), use 'was', não 'is'."
+      }
+    },
+    {
+      "type": "writing",
+      "lessonNum": 21,
+      "title": "Itatinga em voz passiva",
+      "prompt": "Escreva três frases sobre a Usina de Itatinga usando voz passiva. Mencione quando foi construída, onde foi construída e como é usada hoje.",
+      "modelAnswer": "Itatinga was built in 1910. It was built in Bertioga, near Santos. Today, it is used as a backup energy source.",
+      "keywords": ["was built", "1910", "bertioga", "is used", "backup"],
+      "minWords": 5,
+      "explanation": "Combine passiva passado (was built) e passiva presente (is used). Use 'in + ano' para datas e 'in + lugar' para localização."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 21,
+      "title": "Nível topográfico de bronze",
+      "prompt": "Na Sala da Engenharia, descreva em voz alta a peça mais antiga do museu.",
+      "targetText": "The oldest piece is made of bronze.",
+      "explanation": "Use 'made of' para material. Pratique a pronúncia de 'bronze' /brɒnz/."
+    },
+    {
+      "type": "fillGap",
+      "lessonNum": 22,
+      "title": "1. Welcome + intro",
+      "prompt": "Welcome! ___ ___ introduce the museum.",
+      "correctAnswer": "Let me",
+      "acceptable": ["Let me"],
+      "explanation": "Let me + verbo BASE = me deixe (apresentar, mostrar).",
+      "commonErrors": {
+        "Let me to": "NUNCA 'to' depois de 'let'.",
+        "Let's me": "Let's = let us. 'Let me' é diferente."
+      }
+    },
+    {
+      "type": "writing",
+      "lessonNum": 22,
+      "title": "Tour completo em quatro frases",
+      "prompt": "Escreva um mini-tour de quatro frases que abra com boas-vindas, conecte primeiro e segundo andares com sequenciadores e termine com uma despedida calorosa.",
+      "modelAnswer": "Welcome! Let me introduce the museum. First, we visit the Nautical Room. Then, let's go to the second floor. Thank you for visiting today.",
+      "keywords": ["welcome", "let me", "first", "let's go", "thank you", "visiting"],
+      "minWords": 5,
+      "explanation": "Integra linguagem de tour guide: abertura, transição com sequenciador, convite com 'let's go' e despedida calorosa."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 22,
+      "title": "Despedida calorosa",
+      "prompt": "Ao final do tour de cinco minutos, despeça-se dos visitantes em voz alta.",
+      "targetText": "Thank you for visiting the museum today.",
+      "explanation": "Frase modelo de despedida. Atenção ao ritmo: pausa breve depois de 'visiting'."
+    }
+  ]
+}

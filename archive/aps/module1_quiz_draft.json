@@ -1,0 +1,185 @@
+{
+  "moduleNum": 1,
+  "title": "Prova do Módulo 1 — Apresentações",
+  "intro": "Você terminou as 4 lições do M1. Vamos consolidar tudo: cumprimentos, apresentação pessoal, nacionalidades e o uso prático no Complexo Cultural.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "lessonNum": 1,
+      "title": "1. Qual frase está correta?",
+      "prompt": "I want to introduce myself to a visitor. Which is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I have name Carlos.",
+          "correct": false,
+          "whyWrong": "Em inglês não usamos 'have' para nomes. Use 'My name is...'."
+        },
+        {
+          "id": "b",
+          "text": "My name is Carlos.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Me Carlos.",
+          "correct": false,
+          "whyWrong": "Falta o verbo. Toda frase precisa de verbo."
+        },
+        {
+          "id": "d",
+          "text": "Carlos I am.",
+          "correct": false,
+          "whyWrong": "Ordem errada. Sujeito vem antes do verbo: 'I am Carlos'."
+        }
+      ],
+      "explanation": "'My name is Carlos' é a forma natural. 'I am Carlos' também funciona."
+    },
+    {
+      "type": "writing",
+      "lessonNum": 1,
+      "title": "2. Apresente-se ao visitante",
+      "prompt": "Um visitante acabou de chegar à recepção do Complexo Cultural pela manhã. Escreva em inglês uma saudação curta com seu cumprimento, seu nome e sua função no museu.",
+      "modelAnswer": "Good morning! My name is Carlos. I am a port assistant. Welcome to the Port of Santos Museum.",
+      "keywords": [
+        "good morning",
+        "my name is",
+        "i am",
+        "port assistant",
+        "welcome"
+      ],
+      "minWords": 10,
+      "explanation": "Uma boa resposta usa o cumprimento da manhã, apresenta o nome com 'my name is' e a função com 'I am a port assistant', e dá as boas-vindas."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 1,
+      "title": "3. Recepcione o visitante em voz alta",
+      "prompt": "Imagine que um visitante entrou agora no museu. Diga em voz alta a frase em inglês para recebê-lo, com cumprimento, seu nome e a saudação do museu.",
+      "targetText": "Hello! My name is Carlos. Welcome to the Port of Santos Museum.",
+      "explanation": "Fale com calma, sorria e mantenha o ritmo natural. As contrações 'I'm' e 'you're' soam mais naturais que 'I am' e 'you are'."
+    },
+    {
+      "type": "fillGap",
+      "lessonNum": 2,
+      "title": "4. Complete a pergunta",
+      "prompt": "___ are you from?",
+      "correctAnswer": "Where",
+      "acceptable": [
+        "Where",
+        "where"
+      ],
+      "explanation": "Para 'de onde você é', use 'Where are you from?'.",
+      "commonErrors": {
+        "What": "'What' é 'qual'. Para origem (lugar), use 'Where'.",
+        "From where": "Em inglês a estrutura natural é 'Where are you from?', com 'from' no fim."
+      }
+    },
+    {
+      "type": "writing",
+      "lessonNum": 2,
+      "title": "5. Pequena entrevista de acolhida",
+      "prompt": "Você acabou de cumprimentar uma visitante no museu. Escreva em inglês duas perguntas curtas para descobrir o nome dela e o país de origem dela.",
+      "modelAnswer": "What is your name? Where are you from?",
+      "keywords": [
+        "what is your name",
+        "where are you from"
+      ],
+      "minWords": 8,
+      "explanation": "Use as duas WH-questions clássicas com 'to be': 'What is your name?' e 'Where are you from?'. Mantenha as perguntas curtas e claras."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 2,
+      "title": "6. Responda em voz alta",
+      "prompt": "Uma visitante perguntou de onde você é. Diga em voz alta, em inglês, a sua resposta completa com país e nacionalidade.",
+      "targetText": "I am from Brazil. I am Brazilian.",
+      "explanation": "Use 'I am from + país' ou 'I am + nacionalidade'. Você pode dizer das duas formas para reforçar a informação."
+    },
+    {
+      "type": "multipleChoice",
+      "lessonNum": 3,
+      "title": "7. Combinação plural correta",
+      "prompt": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "a",
+          "text": "This is your badges.",
+          "correct": false,
+          "whyWrong": "'This' (singular) com 'badges' (plural) não combina. Ou 'this badge' ou 'these badges'."
+        },
+        {
+          "id": "b",
+          "text": "These is your badges.",
+          "correct": false,
+          "whyWrong": "'These' (plural) precisa de 'are', não 'is'."
+        },
+        {
+          "id": "c",
+          "text": "These are your badges.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "This are your badge.",
+          "correct": false,
+          "whyWrong": "'This' (singular) precisa de 'is'. Tudo trocado."
+        }
+      ],
+      "explanation": "Concordância: this+is, these+are. Singular ou plural — combine os dois."
+    },
+    {
+      "type": "writing",
+      "lessonNum": 3,
+      "title": "8. Recebendo um grupo",
+      "prompt": "Um grupo de cinco pessoas chegou ao museu. Escreva em inglês duas frases: uma perguntando quantas pessoas estão no grupo e outra entregando os crachás do grupo.",
+      "modelAnswer": "How many people are in your group? These are your badges.",
+      "keywords": [
+        "how many",
+        "people",
+        "these are",
+        "your badges"
+      ],
+      "minWords": 8,
+      "explanation": "Use 'How many people' para contar o grupo e 'These are your badges' (plural com 'these + are') ao entregar vários crachás."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 3,
+      "title": "9. Entregue um crachá em voz alta",
+      "prompt": "Você está entregando um único crachá a uma visitante. Diga em voz alta, em inglês, a frase de entrega.",
+      "targetText": "This is your badge. Here you are. Thank you!",
+      "explanation": "Para um único crachá use 'this is' (singular). 'Here you are' é a frase clássica ao entregar algo. Sorria ao falar."
+    },
+    {
+      "type": "info",
+      "lessonNum": 4,
+      "title": "10. Esta lição é presencial",
+      "content": "Toda a estrutura desta aula está no <strong>Teacher Guide</strong> acima. O professor conduzirá 7 atividades em 2 horas. Você só precisa estar presente e disposto a falar inglês — mesmo errando."
+    },
+    {
+      "type": "writing",
+      "lessonNum": 4,
+      "title": "11. Recepção completa do visitante",
+      "prompt": "No Complexo Cultural, uma visitante japonesa chegou sozinha. Escreva em inglês uma recepção completa: cumprimento, seu nome, sua função, pergunte o nome dela e o país dela.",
+      "modelAnswer": "Good morning! My name is Carlos. I am a port assistant. What is your name? Where are you from?",
+      "keywords": [
+        "good morning",
+        "my name is",
+        "port assistant",
+        "what is your name",
+        "where are you from"
+      ],
+      "minWords": 15,
+      "explanation": "Uma recepção completa junta as três lições: cumprimento (L1), apresentação com nome e função (L1) e duas perguntas WH com 'to be' (L2). Frases curtas funcionam bem."
+    },
+    {
+      "type": "speaking",
+      "lessonNum": 4,
+      "title": "12. Vídeo no #vcnoporto",
+      "prompt": "Imagine que você está gravando o vídeo de 30 segundos no espaço #vcnoporto. Diga em voz alta, em inglês, a sua apresentação no museu.",
+      "targetText": "Hello! I am Carlos. I am a port assistant. Welcome to the Port of Santos Museum.",
+      "explanation": "Fale olhando para a câmera, com sorriso e voz firme. Frases curtas soam mais naturais que frases longas e travadas."
+    }
+  ]
+}

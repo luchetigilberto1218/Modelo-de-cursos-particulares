@@ -1,0 +1,921 @@
+{
+  "_note": "Módulo 5 — Atendimento avançado e cenários reais. Lições 32-40. Outdoor na L40 (simulação completa de delegação no museu + Espaço Porto e Arte). 8 estudo + 1 ao ar livre.",
+  "lessons": [
+    {
+      "num": 32,
+      "title": "The full museum tour: from start to finish",
+      "focus": "Recap of M3 and M4 — full guided tour in English",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "Review: present simple, past simple, prepositions, sequencing words",
+      "objective": "Ao final desta lição, você será capaz de conduzir um tour completo pelas 23 salas do museu em inglês, juntando saudação, descrição de exposições, fatos históricos e despedida em uma sequência fluida.",
+      "heroImage": "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?w=1600&q=80",
+      "intro": "<p>You know a lot of English now. You can greet, give directions, talk about the past and the present.</p><p>Today you bring it all together. One visitor, one full tour, one English voice — yours.</p><p>The Museu do Porto opened in 1989. It has 23 rooms and over two thousand objects. By the end of this lesson, you can guide a visitor through all of them.</p>",
+      "vocab": [
+        { "en": "tour", "pt": "tour / visita guiada", "example": "The tour starts at the main hall." },
+        { "en": "guide", "pt": "guiar / guia", "example": "I will guide you through the museum." },
+        { "en": "follow me", "pt": "me siga", "example": "Please follow me to the next room." },
+        { "en": "this way", "pt": "por aqui", "example": "This way, please." },
+        { "en": "let's start", "pt": "vamos começar", "example": "Let's start with the main hall." },
+        { "en": "let's continue", "pt": "vamos continuar", "example": "Let's continue to the next exhibit." },
+        { "en": "first", "pt": "primeiro", "example": "First, we visit the entrance hall." },
+        { "en": "next", "pt": "depois / em seguida", "example": "Next, we go to the locomotive room." },
+        { "en": "after that", "pt": "depois disso", "example": "After that, we see the photo gallery." },
+        { "en": "finally", "pt": "finalmente / por último", "example": "Finally, we end at the gift shop." },
+        { "en": "exhibition", "pt": "exposição", "example": "This exhibition shows old port objects." },
+        { "en": "object", "pt": "objeto / peça", "example": "We have over two thousand objects." },
+        { "en": "room", "pt": "sala", "example": "The museum has 23 rooms." },
+        { "en": "thank you for coming", "pt": "obrigado por vir", "example": "Thank you for coming to our museum." },
+        { "en": "I hope you enjoy", "pt": "espero que goste", "example": "I hope you enjoy the tour." }
+      ],
+      "situation": "Um casal australiano chega ao museu para um tour guiado de 45 minutos. Você é responsável por todo o percurso: recepção, sala da locomotiva Lavoura, salas de fotos, exposições temporárias e despedida. Tudo em inglês.",
+      "context": "You: Welcome to the Museu do Porto! My name is Pedro. Let's start our tour. First, we visit the main hall. The building is from 1902. Next, we see the Lavoura locomotive — it is from 1889. After that, we go to the photo gallery on the second floor. Finally, we end at the gift shop. The tour takes about 45 minutes. Please follow me!",
+      "grammarDetail": "<h4>Sequenciação — palavras de ordem</h4><p>Para guiar um tour, você precisa de palavras que mostram a <strong>ordem</strong> dos passos.</p><div class='grammar-example'><strong>First</strong>, we visit the main hall.<br><strong>Next</strong>, we go to the locomotive room.<br><strong>After that</strong>, we see the photo gallery.<br><strong>Finally</strong>, we end at the gift shop.</div><h4>Verbos do tour</h4><div class='grammar-example'>Let's <strong>start</strong> the tour. (vamos começar)<br>Let's <strong>continue</strong>. (vamos continuar)<br>Please <strong>follow me</strong>. (me siga)<br><strong>This way</strong>, please. (por aqui)</div><h4>Juntando presente e passado</h4><div class='grammar-example'>The museum <strong>opened</strong> in 1989. (passado — fato histórico)<br>The museum <strong>has</strong> 23 rooms. (presente — fato atual)<br>The locomotive <strong>arrived</strong> in 1889 and <strong>is</strong> still here today.</div><h4>Watch Out!</h4><div class='grammar-example'>Firstly we go... → <strong>First</strong>, we go... (use 'first', não 'firstly')<br>For end → <strong>Finally</strong> / <strong>At the end</strong>.<br>Come with me → <strong>Follow me</strong>. (mais profissional)</div>",
+      "grammarCriticalQuestion": "A group of 8 visitors just arrived. You have only 30 minutes. What 4 sequencing sentences do you use to guide them through the priority rooms?",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Início do tour", "prompt": "___ start with the main hall.", "correctAnswer": "Let's", "acceptable": ["Let's", "Lets", "let's"], "explanation": "Para sugerir uma ação em grupo: 'Let's' (let us). É a forma mais natural para iniciar um tour.", "commonErrors": { "We start": "Falta o tom de convite. 'Let's start' soa mais profissional.", "Start": "Imperativo sozinho soa abrupto. 'Let's start' é mais cordial." } },
+        { "type": "fillGap", "title": "2. Sequência — segunda parada", "prompt": "First, we visit the main hall. ___, we go to the locomotive.", "correctAnswer": "Next", "acceptable": ["Next", "next", "Then", "then"], "explanation": "Para a segunda etapa de uma sequência: 'Next' ou 'Then'. Ambas funcionam.", "commonErrors": { "Second": "'Second' funciona em listas, mas em tours soa mecânico. Prefira 'next'.", "After": "'After' precisa de 'that' (after that) para ficar natural." } },
+        { "type": "multipleChoice", "title": "3. Convite para seguir", "prompt": "Como se diz 'me siga, por favor' de forma profissional?", "options": [
+          { "id": "a", "text": "Come with me.", "correct": false, "whyWrong": "Funciona em conversa, mas em tour profissional 'follow me' é o padrão." },
+          { "id": "b", "text": "Please follow me.", "correct": true },
+          { "id": "c", "text": "Walk after me.", "correct": false, "whyWrong": "'Walk after me' soa estranho em inglês. Use 'follow me'." },
+          { "id": "d", "text": "Go behind me.", "correct": false, "whyWrong": "Soa como ordem militar. 'Follow me' é o termo correto." }
+        ], "explanation": "'Please follow me' é a frase padrão de qualquer guia profissional." },
+        { "type": "matching", "title": "4. Conector × função", "pairs": [
+          { "left": "First", "right": "primeiro passo" },
+          { "left": "Next", "right": "passo seguinte" },
+          { "left": "After that", "right": "depois disso" },
+          { "left": "Finally", "right": "último passo" }
+        ], "explanation": "Quatro conectores que organizam qualquer tour. Memorize a ordem." },
+        { "type": "reorder", "title": "5. Frase de boas-vindas", "prompt": ["to", "Welcome", "Porto", "the", "Museu", "do"], "correctOrder": ["Welcome", "to", "the", "Museu", "do", "Porto"], "explanation": "Welcome + to + the + nome do lugar. Frase de abertura padrão." },
+        { "type": "fillGap", "title": "6. Tempo de tour", "prompt": "The tour ___ about 45 minutes.", "correctAnswer": "takes", "acceptable": ["takes"], "explanation": "Para duração: 'the tour takes X minutes'. Não usamos 'has' para tempo.", "commonErrors": { "has": "Em inglês não dizemos 'has 45 minutes' para duração. Use 'takes'.", "is": "'Is 45 minutes' funciona, mas 'takes' é o verbo padrão." } },
+        { "type": "multipleChoice", "title": "7. Mistura presente e passado", "prompt": "The museum ___ in 1989 and ___ over 2,000 objects today.", "options": [
+          { "id": "a", "text": "opens / had", "correct": false, "whyWrong": "Inverso: 1989 é passado (opened) e hoje é presente (has)." },
+          { "id": "b", "text": "opened / has", "correct": true },
+          { "id": "c", "text": "opened / had", "correct": false, "whyWrong": "Hoje é presente — use 'has', não 'had'." },
+          { "id": "d", "text": "open / have", "correct": false, "whyWrong": "1989 exige passado: 'opened'. E 'has' (3ª pessoa do singular)." }
+        ], "explanation": "Fato histórico (1989) → past simple. Fato atual (hoje) → present simple." },
+        { "type": "fillGap", "title": "8. Encerramento elegante", "prompt": "___, we end at the gift shop.", "correctAnswer": "Finally", "acceptable": ["Finally", "finally"], "explanation": "Para o último passo do tour: 'Finally'. Marca o encerramento.", "commonErrors": { "At end": "'At end' não existe sozinho. 'At the end' funciona, mas 'finally' é mais natural.", "Last": "'Last' precisa de outro contexto (the last room). Para sequência: 'finally'." } },
+        { "type": "matching", "title": "9. Frase × momento do tour", "pairs": [
+          { "left": "Welcome to the Museu do Porto.", "right": "abertura" },
+          { "left": "Please follow me.", "right": "transição entre salas" },
+          { "left": "This room shows old port objects.", "right": "explicação de exposição" },
+          { "left": "Thank you for coming. I hope you enjoyed.", "right": "despedida" }
+        ], "explanation": "Quatro momentos clássicos de qualquer tour. Cada um pede uma frase certa." },
+        { "type": "reorder", "title": "10. Convite — por aqui", "prompt": ["please", "way", "This"], "correctOrder": ["This", "way", "please"], "explanation": "'This way, please' = por aqui, por favor. Frase de transição mais curta e elegante." },
+        { "type": "multipleChoice", "title": "11. Despedida", "prompt": "Best closing for a tour:", "options": [
+          { "id": "a", "text": "Bye.", "correct": false, "whyWrong": "Curto demais. Visitante merece despedida calorosa." },
+          { "id": "b", "text": "Thank you for coming. I hope you enjoyed the tour.", "correct": true },
+          { "id": "c", "text": "Now go.", "correct": false, "whyWrong": "Soa rude. Nunca dispense um visitante assim." },
+          { "id": "d", "text": "Tour finish.", "correct": false, "whyWrong": "Frase incompleta. Precisa de sujeito e verbo conjugado." }
+        ], "explanation": "Despedida profissional: agradeça e expresse esperança de que tenha gostado." },
+        { "type": "reorder", "title": "12. Sequência completa", "prompt": ["Finally", "we", "the", "shop", "end", "gift", "at"], "correctOrder": ["Finally", "we", "end", "at", "the", "gift", "shop"], "explanation": "Conector + sujeito + verbo + preposição + lugar. Estrutura completa de fechamento." }
+      ],
+      "wrapup": "Você acabou de juntar tudo de M3 e M4 em um tour completo. Próxima lição: como responder perguntas difíceis com educação.",
+      "takeaways": [
+        "I can structure a full tour with first, next, after that, finally.",
+        "I can welcome visitors and say goodbye professionally.",
+        "I use 'Please follow me' and 'This way' to move groups.",
+        "I mix past (the museum opened in 1989) and present (it has 23 rooms).",
+        "I know 'the tour takes 45 minutes' — not 'has 45 minutes'.",
+        "I can guide a 45-minute tour from start to finish in English."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 1 do M5. Recapitulação ativa de M3+M4 em formato de tour completo. Aluno sai capaz de conduzir uma visita guiada de 45 minutos sem pausas.",
+        "pacing": "2h aula + 30min pré-estudo",
+        "lessonFlow": [
+          { "step": 1, "duration": "5 min", "what": "Recap M3-M4", "instructions": "Em duplas, listem 5 frases que aprenderam em M3 e 5 em M4. Apenas para reativar memória." },
+          { "step": 2, "duration": "10 min", "what": "Intro + conectores", "instructions": "Leia o intro. Drill em coro: first, next, after that, finally. Cada aluno usa 1 conector com uma ação do dia." },
+          { "step": 3, "duration": "15 min", "what": "Vocab + frases de transição", "instructions": "Drill: 'Please follow me. This way. Let's continue.' Em pé, simulando movimento entre salas." },
+          { "step": 4, "duration": "20 min", "what": "Tour piloto no quadro", "instructions": "Desenhe o mapa do museu (lobby, locomotiva, salas, loja). Cada aluno guia 2 colegas por 3 paradas usando os 4 conectores." },
+          { "step": 5, "duration": "15 min", "what": "Context + Read aloud", "instructions": "Diálogo do tour completo. Cada aluno lê um trecho com mic. Foco em entonação amigável, não robotizada." },
+          { "step": 6, "duration": "30 min", "what": "Exercícios 1-12", "instructions": "Atenção ao 7 (mistura passado/presente) e 11 (despedida calorosa). São os erros mais comuns." },
+          { "step": 7, "duration": "10 min", "what": "Think about it", "instructions": "Pergunta crítica: tour relâmpago de 30min com 8 visitantes. Aceite respostas como 'First, the locomotive. Next, the photo gallery. After that, the temporary exhibit. Finally, the gift shop'." },
+          { "step": 8, "duration": "15 min", "what": "Mini-tour final em duplas", "instructions": "Cada aluno conduz 5 minutos de tour para o colega. O outro avalia: usou os 4 conectores? Falou claro? Sorriu?" }
+        ],
+        "commonChallenges": [
+          "'Firstly' em vez de 'first': aluno usa a forma mais formal por insegurança. Reforce que 'first' é o padrão em tours.",
+          "Esquecer o 'that' em 'after that'. Aluno fala 'after we go...'. Reforce que o conector completo é 'after that'.",
+          "Mistura inadequada de tempos verbais. Aluno fala 'The museum open in 1989'. Reforce: data passada → opened.",
+          "Despedida fria ou inexistente. Aluno termina com 'OK, end'. Drill de 'Thank you for coming. I hope you enjoyed.'",
+          "Velocidade alta. Aluno corre o tour em 5 minutos para 'acabar'. Lembre que tour é experiência — pausas são bem-vindas."
+        ]
+      }
+    },
+
+    {
+      "num": 33,
+      "title": "Could you tell me more? — handling difficult questions",
+      "focus": "Polite responses to tough or unexpected questions",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "Modal verbs: can, could, may for politeness",
+      "objective": "Ao final desta lição, você será capaz de responder com educação a perguntas difíceis ou inesperadas dos visitantes, usando 'can', 'could' e 'may' para suavizar respostas e ganhar tempo.",
+      "heroImage": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+      "intro": "<p>Sometimes the visitor asks a hard question. <em>How much did this object cost? Why is this room closed? Can I touch the locomotive?</em></p><p>You do not always know the answer. That is fine. What you need are <strong>polite words</strong> to gain time.</p><p>Three small words help: <strong>can</strong>, <strong>could</strong>, <strong>may</strong>. They turn any answer into a kind one.</p>",
+      "vocab": [
+        { "en": "can", "pt": "poder (informal)", "example": "Can you wait a moment, please?" },
+        { "en": "could", "pt": "poderia (mais educado)", "example": "Could you repeat that, please?" },
+        { "en": "may", "pt": "posso (formal)", "example": "May I help you?" },
+        { "en": "I am not sure", "pt": "não tenho certeza", "example": "I am not sure, but I can check." },
+        { "en": "let me check", "pt": "deixe-me verificar", "example": "Let me check with my colleague." },
+        { "en": "one moment, please", "pt": "um momento, por favor", "example": "One moment, please. I will find out." },
+        { "en": "I will find out", "pt": "vou descobrir", "example": "I do not know, but I will find out." },
+        { "en": "Could you repeat?", "pt": "poderia repetir?", "example": "Could you repeat the question, please?" },
+        { "en": "Could you speak slowly?", "pt": "poderia falar devagar?", "example": "Could you speak more slowly, please?" },
+        { "en": "I do not know", "pt": "não sei", "example": "I do not know, but let me ask." },
+        { "en": "good question", "pt": "boa pergunta", "example": "That is a good question." },
+        { "en": "let me think", "pt": "deixe-me pensar", "example": "Let me think for a moment." },
+        { "en": "actually", "pt": "na verdade", "example": "Actually, the room opens at 10." },
+        { "en": "of course", "pt": "claro", "example": "Of course, I can help you." },
+        { "en": "I am afraid", "pt": "receio que / lamento", "example": "I am afraid the room is closed today." }
+      ],
+      "situation": "Um visitante curioso faz três perguntas seguidas: o valor de um objeto raro, por que uma sala está fechada e se ele pode tocar na locomotiva. Você precisa responder com educação — mesmo sem saber tudo.",
+      "context": "Visitor: How much is this locomotive worth? You: That is a good question. I am not sure of the exact value, but it is a national treasure from 1889. Visitor: Could I touch it? You: I am afraid not — the locomotive is very old. But you can take a photo. Visitor: Why is room 12 closed? You: Let me check, please. One moment.",
+      "grammarDetail": "<h4>Can / Could / May — pedidos e respostas educadas</h4><p>Os três verbos significam 'poder', mas com <strong>níveis</strong> diferentes de formalidade.</p><div class='grammar-example'><strong>Can</strong> you help me? (informal — entre amigos)<br><strong>Could</strong> you help me? (educado — padrão profissional)<br><strong>May</strong> I help you? (formal — recepção, atendimento VIP)</div><h4>Pedidos do visitante — você responde</h4><div class='grammar-example'>'Could I take a photo?' → 'Of course, you can.' / 'I am afraid not.'<br>'Can I touch this?' → 'I am afraid not, but you can look closely.'<br>'May I enter this room?' → 'Yes, you may.' / 'I am sorry, the room is closed.'</div><h4>Ganhar tempo com educação</h4><div class='grammar-example'>That is a <strong>good question</strong>.<br><strong>Let me check</strong>, please.<br><strong>One moment</strong>, please.<br>I am not sure, but I <strong>will find out</strong>.</div><h4>Watch Out!</h4><div class='grammar-example'>I no know. → <strong>I do not know</strong>. (sempre com 'do' no negativo)<br>You can not. → <strong>I am afraid not</strong>. ('cannot' soa duro; suavize)<br>Wait. → <strong>One moment, please</strong>. ('wait' sem 'please' soa abrupto)</div>",
+      "grammarCriticalQuestion": "A visitor asks: 'Why are the bathrooms so small?' (a real complaint). How do you respond politely without lying?",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Pedido educado", "prompt": "___ you repeat that, please?", "correctAnswer": "Could", "acceptable": ["Could", "could"], "explanation": "Para pedidos educados em atendimento profissional: 'Could you...?'.", "commonErrors": { "Can": "'Can' funciona, mas 'could' é mais educado em atendimento.", "May": "'May you' não soa natural. Use 'may' apenas com 'I' (May I...?)." } },
+        { "type": "fillGap", "title": "2. Não sei — com educação", "prompt": "I am not sure, but ___ ___ check.", "correctAnswer": "let me", "acceptable": ["let me", "Let me"], "explanation": "'Let me check' = deixe-me verificar. Sempre soa profissional.", "commonErrors": { "I check": "Falta o tom de oferta. 'Let me' suaviza.", "I will": "'I will check' funciona, mas 'let me check' é mais cordial." } },
+        { "type": "multipleChoice", "title": "3. Negar com educação", "prompt": "Visitor: 'Can I touch the locomotive?' Best response:", "options": [
+          { "id": "a", "text": "No.", "correct": false, "whyWrong": "Curto e rude. Sempre suavize com 'I am afraid'." },
+          { "id": "b", "text": "I am afraid not, but you can take a photo.", "correct": true },
+          { "id": "c", "text": "You can not.", "correct": false, "whyWrong": "Direto demais. Em atendimento, suavize a negativa." },
+          { "id": "d", "text": "Forbidden.", "correct": false, "whyWrong": "Palavra forte e impessoal. Use 'I am afraid not'." }
+        ], "explanation": "'I am afraid not' = receio que não. Suaviza a negativa e oferece alternativa." },
+        { "type": "matching", "title": "4. Frase × função", "pairs": [
+          { "left": "Could you repeat?", "right": "pedir para repetir" },
+          { "left": "Let me check.", "right": "ganhar tempo" },
+          { "left": "I am afraid not.", "right": "negar com educação" },
+          { "left": "That is a good question.", "right": "ganhar tempo com elogio" }
+        ], "explanation": "Quatro frases que salvam qualquer atendimento difícil." },
+        { "type": "reorder", "title": "5. Frase formal", "prompt": ["I", "May", "you", "help", "?"], "correctOrder": ["May", "I", "help", "you", "?"], "explanation": "May + I + verbo + complemento. Frase clássica de recepção." },
+        { "type": "fillGap", "title": "6. Pedido para falar devagar", "prompt": "Could you speak more ___, please?", "correctAnswer": "slowly", "acceptable": ["slowly"], "explanation": "Advérbio de modo: 'slowly'. Termina em -ly.", "commonErrors": { "slow": "'Slow' é adjetivo. Para o advérbio (modo de falar): slowly.", "low": "'Low' é baixo (volume). Para velocidade: slowly." } },
+        { "type": "multipleChoice", "title": "7. Visitante insiste", "prompt": "Visitor asks the same question twice. Best response:", "options": [
+          { "id": "a", "text": "I told you already.", "correct": false, "whyWrong": "Soa impaciente. Em atendimento, nunca confronte." },
+          { "id": "b", "text": "Of course. Let me explain again.", "correct": true },
+          { "id": "c", "text": "What?", "correct": false, "whyWrong": "Curto e desinteressado. Não funciona em atendimento." },
+          { "id": "d", "text": "Same answer.", "correct": false, "whyWrong": "Frase incompleta e fria. Sempre disponha-se a repetir." }
+        ], "explanation": "Sempre se ofereça para repetir com calma. 'Of course' demonstra paciência." },
+        { "type": "fillGap", "title": "8. Sala fechada — explicar", "prompt": "I am ___ the room is closed today.", "correctAnswer": "afraid", "acceptable": ["afraid"], "explanation": "'I am afraid' = receio que / lamento. Suaviza notícia ruim.", "commonErrors": { "sorry": "'Sorry' funciona, mas 'afraid' é mais profissional para fatos.", "sad": "'Sad' é triste pessoalmente. Use 'afraid' para informação ruim." } },
+        { "type": "matching", "title": "9. Pergunta difícil × resposta educada", "pairs": [
+          { "left": "How much is this object?", "right": "I am not sure of the exact value." },
+          { "left": "Can I touch it?", "right": "I am afraid not, but you can take a photo." },
+          { "left": "Why is the room closed?", "right": "Let me check, please." },
+          { "left": "Could you speak English?", "right": "Of course, I can help you." }
+        ], "explanation": "Cada pergunta difícil tem uma fórmula de resposta. Memorize." },
+        { "type": "reorder", "title": "10. Frase de tempo", "prompt": ["please", "moment", "One"], "correctOrder": ["One", "moment", "please"], "explanation": "'One moment, please' = um momento, por favor. Mais elegante que 'wait'." },
+        { "type": "multipleChoice", "title": "11. Não sabe a resposta", "prompt": "Visitor asks something you do not know. Best response:", "options": [
+          { "id": "a", "text": "I do not know.", "correct": false, "whyWrong": "Verdadeiro mas insuficiente. Sempre ofereça uma alternativa." },
+          { "id": "b", "text": "I am not sure, but let me find out for you.", "correct": true },
+          { "id": "c", "text": "Ask another person.", "correct": false, "whyWrong": "Joga a responsabilidade fora. Em atendimento, você se compromete." },
+          { "id": "d", "text": "No information.", "correct": false, "whyWrong": "Frio e impessoal. Sempre humanize com 'I'." }
+        ], "explanation": "Admita que não sabe + comprometa-se a descobrir. Padrão ouro de atendimento." },
+        { "type": "reorder", "title": "12. Negativa elegante", "prompt": ["afraid", "I", "not", "am"], "correctOrder": ["I", "am", "afraid", "not"], "explanation": "'I am afraid not' = receio que não. Frase completa de negação educada." }
+      ],
+      "wrapup": "Você já consegue responder qualquer pergunta — mesmo as difíceis — com educação. Próxima lição: pedidos de desculpa e reclamações.",
+      "takeaways": [
+        "I use 'could' for polite requests in professional service.",
+        "I use 'may I' for formal openings ('May I help you?').",
+        "I gain time with 'Let me check' and 'One moment, please'.",
+        "I soften refusals with 'I am afraid not' instead of 'no'.",
+        "I admit I do not know — but always offer to find out.",
+        "I never say 'wait' alone — always 'one moment, please'."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 2 do M5. Modais de educação para atendimento avançado. Aluno sai capaz de lidar com perguntas difíceis sem perder a postura profissional.",
+        "pacing": "2h aula + 30min pré-estudo",
+        "lessonFlow": [
+          { "step": 1, "duration": "5 min", "what": "Recap L32", "instructions": "Em duplas, cada aluno faz uma frase com cada conector (first, next, after that, finally)." },
+          { "step": 2, "duration": "10 min", "what": "Intro + drill modais", "instructions": "Leia o intro. Drill em coro: 'Can you... / Could you... / May I...'. Aluno percebe a escala de formalidade." },
+          { "step": 3, "duration": "15 min", "what": "Vocab + frases de cortesia", "instructions": "Drill: 'Let me check. One moment, please. I am afraid not.' Cada aluno repete 3 vezes em pé." },
+          { "step": 4, "duration": "15 min", "what": "Mapa de respostas difíceis", "instructions": "No quadro, escreva 5 perguntas difíceis em PT. Em duplas, alunos formulam respostas educadas em EN. Cada dupla apresenta 1." },
+          { "step": 5, "duration": "15 min", "what": "Context + Read aloud", "instructions": "Diálogo de 3 perguntas difíceis. Cada aluno lê com mic. Foco em entonação calma — sem pressa." },
+          { "step": 6, "duration": "30 min", "what": "Exercícios 1-12", "instructions": "Atenção ao 3 (negativa elegante) e 11 (não sabe — comprometa-se). São os pilares desta lição." },
+          { "step": 7, "duration": "10 min", "what": "Think about it", "instructions": "Pergunta crítica: visitante reclama do tamanho do banheiro. Aceite 'I am afraid the building is from 1902. We do our best.' ou similar. Foco em educação sem mentir." },
+          { "step": 8, "duration": "20 min", "what": "Role-play perguntas difíceis", "instructions": "Em duplas: um aluno faz 3 perguntas difíceis (sorteie cartas). Outro responde usando 3 modais diferentes. Trocam." }
+        ],
+        "commonChallenges": [
+          "'I no know': aluno omite o auxiliar 'do' no negativo. Reforce: 'I do not know' ou 'I don't know'.",
+          "'Wait' sem 'please': soa abrupto. Drill de 'One moment, please' como bloco único.",
+          "Confusão can/could/may: aluno usa um pelo outro. Crie escala visual no quadro: informal → formal.",
+          "Negativa direta: aluno fala 'No' sem suavizar. Reforce 'I am afraid not' como reflexo.",
+          "Não admitir desconhecimento: aluno tenta inventar resposta. Ensine que admitir é mais profissional do que mentir."
+        ]
+      }
+    },
+
+    {
+      "num": 34,
+      "title": "I'm sorry — handling apologies and complaints",
+      "focus": "Apologies and managing visitor complaints",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "I'm sorry, I'm afraid, Would you mind...?",
+      "objective": "Ao final desta lição, você será capaz de pedir desculpas com sinceridade, lidar com reclamações de visitantes e usar 'Would you mind...?' para fazer pedidos polidos em situações delicadas.",
+      "heroImage": "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?w=1600&q=80",
+      "intro": "<p>Sometimes things go wrong. The bathroom is dirty. The room is closed. The audio guide does not work.</p><p>The visitor complains. You need to <strong>apologize</strong> — and fix it.</p><p>Three short phrases save the day: <strong>I'm sorry, I'm afraid, Would you mind...?</strong> They turn any complaint into a calm conversation.</p>",
+      "vocab": [
+        { "en": "I'm sorry", "pt": "desculpe / lamento", "example": "I'm sorry for the delay." },
+        { "en": "I'm so sorry", "pt": "lamento muito", "example": "I'm so sorry for the inconvenience." },
+        { "en": "I apologize", "pt": "peço desculpas (formal)", "example": "I apologize for this problem." },
+        { "en": "I'm afraid", "pt": "receio que", "example": "I'm afraid the room is closed." },
+        { "en": "Would you mind...?", "pt": "você se importaria de...?", "example": "Would you mind waiting a moment?" },
+        { "en": "complaint", "pt": "reclamação", "example": "We take every complaint seriously." },
+        { "en": "problem", "pt": "problema", "example": "Is there a problem?" },
+        { "en": "issue", "pt": "questão / problema", "example": "Let me solve this issue for you." },
+        { "en": "to fix", "pt": "consertar", "example": "We will fix the audio guide soon." },
+        { "en": "to solve", "pt": "resolver", "example": "I will solve this problem now." },
+        { "en": "to wait", "pt": "esperar", "example": "Would you mind waiting two minutes?" },
+        { "en": "inconvenience", "pt": "inconveniente", "example": "I'm sorry for the inconvenience." },
+        { "en": "right away", "pt": "agora mesmo", "example": "I will check right away." },
+        { "en": "of course", "pt": "claro", "example": "Of course, let me help you." },
+        { "en": "thank you for your patience", "pt": "obrigado pela paciência", "example": "Thank you for your patience." }
+      ],
+      "situation": "Um grupo de visitantes está irritado: o áudio guia parou de funcionar, a sala que queriam ver está fechada e o banheiro estava sujo. Você precisa pedir desculpas, oferecer solução e manter o tom calmo.",
+      "context": "Visitor: The audio guide doesn't work! You: I'm so sorry for the inconvenience. Would you mind waiting two minutes? I will fix it right away. Visitor: And room 12 is closed! You: I'm afraid that room is in maintenance today. But the photo gallery is open and very nice. Visitor: OK, thank you. You: Thank you for your patience.",
+      "grammarDetail": "<h4>I'm sorry — pedidos de desculpa</h4><p>A frase universal de desculpa em inglês.</p><div class='grammar-example'><strong>I'm sorry.</strong> (genérico)<br><strong>I'm sorry for</strong> the delay. (causa específica)<br><strong>I'm so sorry</strong> for the inconvenience. (mais forte)<br><strong>I apologize</strong> for this problem. (formal)</div><h4>I'm afraid — informar algo ruim</h4><div class='grammar-example'><strong>I'm afraid</strong> the room is closed.<br><strong>I'm afraid</strong> we are out of tickets.<br><strong>I'm afraid</strong> the elevator is broken.</div><p>'I'm afraid' não é medo — é uma forma educada de dar uma notícia ruim.</p><h4>Would you mind...? — pedido educado</h4><p>Use 'Would you mind' + verbo terminado em -ing para pedir algo de modo gentil.</p><div class='grammar-example'><strong>Would you mind waiting</strong> a moment? (esperar)<br><strong>Would you mind coming</strong> back later? (voltar)<br><strong>Would you mind speaking</strong> more slowly? (falar)</div><h4>Watch Out!</h4><div class='grammar-example'>Sorry. → <strong>I'm sorry</strong>. ('sorry' sozinho soa casual demais)<br>Would you mind to wait? → <strong>Would you mind waiting?</strong> (sempre -ing, não 'to')<br>I'm afraid for... → <strong>I'm afraid that</strong>... (use 'that', não 'for', com frases)</div>",
+      "grammarCriticalQuestion": "A family with two children waited 30 minutes and the room is still closed. The mother is angry. What 3 sentences do you say to calm her?",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Desculpa simples", "prompt": "___ ___ for the delay.", "correctAnswer": "I'm sorry", "acceptable": ["I'm sorry", "I am sorry"], "explanation": "Padrão de desculpa: 'I'm sorry' + 'for' + causa.", "commonErrors": { "Sorry": "'Sorry' sozinho funciona em conversa, mas 'I'm sorry' é mais profissional.", "I sorry": "Falta o verbo 'am'. Sempre 'I am sorry' ou contraído 'I'm sorry'." } },
+        { "type": "fillGap", "title": "2. Pedido educado", "prompt": "Would you mind ___ a moment?", "correctAnswer": "waiting", "acceptable": ["waiting"], "explanation": "Após 'would you mind', use sempre o verbo no -ing.", "commonErrors": { "to wait": "Erro clássico. Após 'would you mind' nunca use 'to'. Use -ing.", "wait": "Falta o -ing. 'Wait' sozinho é imperativo." } },
+        { "type": "multipleChoice", "title": "3. Notícia ruim", "prompt": "Como informar 'a sala está fechada' com educação?", "options": [
+          { "id": "a", "text": "Room closed.", "correct": false, "whyWrong": "Frase incompleta e fria. Falta verbo e suavização." },
+          { "id": "b", "text": "I'm afraid the room is closed today.", "correct": true },
+          { "id": "c", "text": "You cannot enter.", "correct": false, "whyWrong": "Direto demais. Sempre suavize com 'I'm afraid'." },
+          { "id": "d", "text": "Sorry, no.", "correct": false, "whyWrong": "Curto e impessoal. Não explica nem oferece alternativa." }
+        ], "explanation": "'I'm afraid' suaviza qualquer notícia ruim e mantém o tom profissional." },
+        { "type": "matching", "title": "4. Frase × função", "pairs": [
+          { "left": "I'm sorry", "right": "pedir desculpa" },
+          { "left": "I'm afraid", "right": "dar notícia ruim" },
+          { "left": "Would you mind...?", "right": "pedido educado" },
+          { "left": "Thank you for your patience", "right": "agradecer espera" }
+        ], "explanation": "Quatro frases para qualquer reclamação. Memorize a função de cada uma." },
+        { "type": "reorder", "title": "5. Frase com inconveniente", "prompt": ["the", "I'm", "sorry", "inconvenience", "for"], "correctOrder": ["I'm", "sorry", "for", "the", "inconvenience"], "explanation": "'I'm sorry for the inconvenience' = lamento o inconveniente. Frase clássica de atendimento." },
+        { "type": "fillGap", "title": "6. Resolver agora", "prompt": "I will fix it ___ ___.", "correctAnswer": "right away", "acceptable": ["right away"], "explanation": "'Right away' = imediatamente / agora mesmo. Tranquiliza o visitante.", "commonErrors": { "right now": "'Right now' funciona, mas 'right away' soa mais profissional.", "soon": "'Soon' é vago. Visitante quer ouvir 'right away'." } },
+        { "type": "multipleChoice", "title": "7. Visitante furioso", "prompt": "Visitor (very angry): 'This is unacceptable!' Best first sentence:", "options": [
+          { "id": "a", "text": "Calm down.", "correct": false, "whyWrong": "Pior frase possível. Aumenta a raiva. Nunca diga 'calm down' a um cliente irritado." },
+          { "id": "b", "text": "I'm so sorry for the inconvenience. Let me solve this.", "correct": true },
+          { "id": "c", "text": "Not my problem.", "correct": false, "whyWrong": "Total descaso. Você representa o museu — sempre se responsabilize." },
+          { "id": "d", "text": "What?", "correct": false, "whyWrong": "Curto e impaciente. Visitante furioso precisa de empatia, não pergunta." }
+        ], "explanation": "Sempre comece com desculpa sincera + compromisso de resolver. Nunca peça para se acalmar." },
+        { "type": "fillGap", "title": "8. Pedir paciência", "prompt": "Thank you ___ your patience.", "correctAnswer": "for", "acceptable": ["for"], "explanation": "'Thank you for' + substantivo. Preposição fixa.", "commonErrors": { "by": "Não usamos 'by' aqui. Sempre 'thank you for'.", "of": "'Thank you of' não existe. Sempre 'for'." } },
+        { "type": "matching", "title": "9. Reclamação × resposta", "pairs": [
+          { "left": "The audio guide doesn't work.", "right": "I'm sorry. I will fix it right away." },
+          { "left": "The bathroom is dirty.", "right": "I apologize. I will call cleaning now." },
+          { "left": "I waited 30 minutes!", "right": "I'm so sorry for the delay. Thank you for your patience." },
+          { "left": "Room 12 is closed.", "right": "I'm afraid that room is in maintenance today." }
+        ], "explanation": "Cada reclamação tem fórmula: desculpa + ação ou explicação." },
+        { "type": "reorder", "title": "10. Pergunta — Would you mind?", "prompt": ["coming", "Would", "later", "you", "back", "mind", "?"], "correctOrder": ["Would", "you", "mind", "coming", "back", "later", "?"], "explanation": "Would + you + mind + verbo-ing + complemento. Estrutura fixa." },
+        { "type": "multipleChoice", "title": "11. Oferecer alternativa", "prompt": "Room is closed. Best follow-up after 'I'm afraid the room is closed':", "options": [
+          { "id": "a", "text": "But the photo gallery is open and very nice.", "correct": true },
+          { "id": "b", "text": "Sorry, bye.", "correct": false, "whyWrong": "Não oferece alternativa. Visitante fica frustrado." },
+          { "id": "c", "text": "Try another day.", "correct": false, "whyWrong": "Joga a responsabilidade no visitante. Ofereça uma opção agora." },
+          { "id": "d", "text": "No solution.", "correct": false, "whyWrong": "Frio e desistente. Sempre proponha alternativa." }
+        ], "explanation": "Após qualquer 'não', ofereça uma alternativa positiva. Mantém a experiência boa." },
+        { "type": "reorder", "title": "12. Desculpa formal", "prompt": ["I", "this", "for", "apologize", "problem"], "correctOrder": ["I", "apologize", "for", "this", "problem"], "explanation": "I + apologize + for + the/this + substantivo. Versão mais formal de 'I'm sorry'." }
+      ],
+      "wrapup": "Você já consegue lidar com reclamações sem perder a calma. Próxima lição: recomendar lugares de Santos.",
+      "takeaways": [
+        "I apologize sincerely with 'I'm sorry' or 'I apologize'.",
+        "I deliver bad news politely with 'I'm afraid'.",
+        "I make polite requests with 'Would you mind + verb-ing?'.",
+        "I never say 'calm down' to an angry visitor.",
+        "I always offer an alternative after a 'no'.",
+        "I close with 'Thank you for your patience'."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 3 do M5. Gestão emocional em inglês: desculpa, notícia ruim, pedido polido. Aluno sai capaz de lidar com qualquer reclamação sem escalada.",
+        "pacing": "2h aula + 30min pré-estudo",
+        "lessonFlow": [
+          { "step": 1, "duration": "5 min", "what": "Recap L33", "instructions": "Em duplas, cada aluno faz 1 frase com 'could', 1 com 'may', 1 com 'I am afraid'." },
+          { "step": 2, "duration": "10 min", "what": "Intro + drill desculpas", "instructions": "Leia o intro. Drill em coro: 'I'm sorry. I'm so sorry. I apologize.' Em escala de intensidade." },
+          { "step": 3, "duration": "15 min", "what": "Vocab + Would you mind?", "instructions": "Atenção ao -ing após 'would you mind'. Drill: waiting, coming back, speaking. Cada aluno faz 3 frases." },
+          { "step": 4, "duration": "20 min", "what": "Banco de reclamações no quadro", "instructions": "Liste 6 reclamações reais (banheiro sujo, áudio quebrado, etc). Em duplas, alunos formulam resposta com desculpa + ação." },
+          { "step": 5, "duration": "15 min", "what": "Context + Read aloud", "instructions": "Diálogo de 3 reclamações. Foco em entonação calma e empática. Cada aluno lê com mic." },
+          { "step": 6, "duration": "30 min", "what": "Exercícios 1-12", "instructions": "Atenção ao 2 (would you mind + ing) e 7 (nunca diga 'calm down'). São os pontos críticos." },
+          { "step": 7, "duration": "10 min", "what": "Think about it", "instructions": "Pergunta crítica: mãe furiosa, 30min de espera. Aceite 3 frases que mostrem empatia, ação e gratidão." },
+          { "step": 8, "duration": "15 min", "what": "Role-play reclamação", "instructions": "Em duplas: um aluno reclama (sorteie carta), outro responde com desculpa + ação + alternativa. Trocam." }
+        ],
+        "commonChallenges": [
+          "'Would you mind to wait': erro clássico de calque (do português 'esperar'). Drill insistente do -ing.",
+          "'Calm down' a visitante irritado: pior frase possível. Reforce que ela inflama. Use desculpa em seu lugar.",
+          "Desculpa sem ação: aluno fala 'I'm sorry' e para. Reforce o pacote 'desculpa + ação'.",
+          "Não oferecer alternativa após 'não'. Aluno fala 'Room is closed' e silencia. Drill: sempre + 'But...'.",
+          "'I'm afraid for' em vez de 'I'm afraid that'. Reforce a estrutura correta com cláusula."
+        ]
+      }
+    },
+
+    {
+      "num": 35,
+      "title": "You should visit the orla — recommending Santos",
+      "focus": "Recommending places, food and activities in Santos",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "Should / could for suggestions",
+      "objective": "Ao final desta lição, você será capaz de recomendar lugares, comidas e atividades em Santos para visitantes, usando 'should' para sugestões fortes e 'could' para opções alternativas.",
+      "heroImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=80",
+      "intro": "<p>The visitor is hungry. Or curious. Or has 3 free hours. They ask: <em>What should I do? Where should I eat?</em></p><p>Two small words give the answer: <strong>should</strong> (strong tip) and <strong>could</strong> (a soft option).</p><p>Santos has the orla, the Coffee Museum, Vila Belmiro, the Aquário. By the end of this lesson, you can recommend any of them like a local.</p>",
+      "vocab": [
+        { "en": "should", "pt": "deveria (sugestão forte)", "example": "You should visit the orla." },
+        { "en": "could", "pt": "poderia (opção)", "example": "You could try the coffee museum too." },
+        { "en": "to recommend", "pt": "recomendar", "example": "I recommend the seafood restaurant." },
+        { "en": "to suggest", "pt": "sugerir", "example": "I suggest a walk on the beach." },
+        { "en": "to try", "pt": "experimentar / tentar", "example": "You should try the local fish." },
+        { "en": "to visit", "pt": "visitar", "example": "You should visit Vila Belmiro." },
+        { "en": "must-see", "pt": "imperdível", "example": "The Coffee Museum is a must-see." },
+        { "en": "amazing", "pt": "incrível", "example": "The view is amazing." },
+        { "en": "delicious", "pt": "delicioso", "example": "The food there is delicious." },
+        { "en": "famous", "pt": "famoso", "example": "Santos is famous for coffee." },
+        { "en": "local", "pt": "local / da região", "example": "Try the local fish dish." },
+        { "en": "nearby", "pt": "perto / próximo", "example": "There is a great café nearby." },
+        { "en": "worth it", "pt": "vale a pena", "example": "The view from the orla is worth it." },
+        { "en": "I recommend", "pt": "eu recomendo", "example": "I recommend the orla at sunset." },
+        { "en": "my favorite", "pt": "meu favorito", "example": "My favorite spot is the orla gardens." }
+      ],
+      "situation": "Um casal de turistas tem 4 horas livres em Santos antes de embarcar no cruzeiro. Eles perguntam o que fazer, onde comer e o que vale a pena ver. Você recomenda 3 opções com 'should' e 2 alternativas com 'could'.",
+      "context": "Visitor: We have four hours. What should we do? You: You should walk on the orla — it has the longest beachfront garden in the world. After that, you should try a local fish at a kiosk. You could also visit the Coffee Museum nearby — it is amazing. If you have time, you could go to Vila Belmiro, the Pelé stadium.",
+      "grammarDetail": "<h4>Should — sugestão forte</h4><p>Use 'should' quando você tem certeza de que vale a pena.</p><div class='grammar-example'>You <strong>should</strong> visit the orla.<br>You <strong>should</strong> try the local fish.<br>You <strong>should</strong> see the Coffee Museum.</div><h4>Could — sugestão suave / alternativa</h4><div class='grammar-example'>You <strong>could</strong> visit Vila Belmiro.<br>You <strong>could</strong> try the ferry to Guarujá.<br>You <strong>could</strong> walk to the gardens.</div><p>'Could' não é tão forte — é uma opção entre várias.</p><h4>Diferença na prática</h4><div class='grammar-example'>You <strong>should</strong> visit the orla. (=imperdível)<br>You <strong>could</strong> visit the orla. (=é uma opção)</div><h4>Recomendar com adjetivo</h4><div class='grammar-example'>The view is <strong>amazing</strong>.<br>The food is <strong>delicious</strong>.<br>The walk is <strong>worth it</strong>.<br>The museum is a <strong>must-see</strong>.</div><h4>Watch Out!</h4><div class='grammar-example'>You should to visit. → You <strong>should visit</strong>. (sem 'to' depois de should)<br>You should visiting. → You <strong>should visit</strong>. (sem -ing)<br>I recommend to go. → <strong>I recommend going</strong>. ('recommend' pede -ing)</div>",
+      "grammarCriticalQuestion": "A vegetarian visitor with 2 hours wants to know where to eat and what to see in Santos. Give 1 'should' and 2 'could' suggestions.",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Sugestão forte", "prompt": "You ___ visit the orla.", "correctAnswer": "should", "acceptable": ["should"], "explanation": "Para uma sugestão forte (vale muito a pena): 'should'.", "commonErrors": { "must": "'Must' é obrigação. Para sugestão use 'should'.", "have": "'Have' não funciona como sugestão." } },
+        { "type": "fillGap", "title": "2. Após should — sem to", "prompt": "You should ___ the local fish.", "correctAnswer": "try", "acceptable": ["try"], "explanation": "Após 'should' use o verbo no infinitivo SEM 'to'.", "commonErrors": { "to try": "Erro clássico. Após 'should' nunca use 'to'.", "trying": "Após 'should' não use -ing. Use o verbo simples." } },
+        { "type": "multipleChoice", "title": "3. Sugestão suave", "prompt": "Como dar uma opção entre várias?", "options": [
+          { "id": "a", "text": "You must visit the Coffee Museum.", "correct": false, "whyWrong": "'Must' é forte demais — soa como obrigação." },
+          { "id": "b", "text": "You could visit the Coffee Museum.", "correct": true },
+          { "id": "c", "text": "You will visit the Coffee Museum.", "correct": false, "whyWrong": "'Will' é futuro afirmativo, não sugestão." },
+          { "id": "d", "text": "Visit the Coffee Museum.", "correct": false, "whyWrong": "Imperativo direto, sem suavização." }
+        ], "explanation": "'Could' = opção entre várias. Suave e profissional." },
+        { "type": "matching", "title": "4. Adjetivo × tradução", "pairs": [
+          { "left": "amazing", "right": "incrível" },
+          { "left": "delicious", "right": "delicioso" },
+          { "left": "famous", "right": "famoso" },
+          { "left": "worth it", "right": "vale a pena" }
+        ], "explanation": "Quatro adjetivos que vendem qualquer recomendação." },
+        { "type": "reorder", "title": "5. Recomendação completa", "prompt": ["the", "should", "You", "try", "fish", "local"], "correctOrder": ["You", "should", "try", "the", "local", "fish"], "explanation": "Sujeito + should + verbo + complemento. Sem 'to' após 'should'." },
+        { "type": "fillGap", "title": "6. Recomendar com -ing", "prompt": "I recommend ___ on the orla at sunset.", "correctAnswer": "walking", "acceptable": ["walking"], "explanation": "Após 'recommend' use o verbo terminado em -ing.", "commonErrors": { "to walk": "Após 'recommend' não use 'to'. Use -ing.", "walk": "Falta o -ing. 'Walk' sozinho não funciona após 'recommend'." } },
+        { "type": "multipleChoice", "title": "7. 4 horas livres", "prompt": "Visitor has 4 hours. Best 'should' suggestion:", "options": [
+          { "id": "a", "text": "You should walk on the orla — the longest beachfront garden in the world.", "correct": true },
+          { "id": "b", "text": "You should travel to São Paulo.", "correct": false, "whyWrong": "São Paulo é longe demais para 4 horas. Não cabe." },
+          { "id": "c", "text": "You should sleep.", "correct": false, "whyWrong": "Não é uma recomendação turística." },
+          { "id": "d", "text": "Should orla.", "correct": false, "whyWrong": "Frase incompleta — falta sujeito e verbo." }
+        ], "explanation": "Recomende algo viável no tempo disponível e com fato interessante." },
+        { "type": "fillGap", "title": "8. Imperdível", "prompt": "The Coffee Museum is a ___-see.", "correctAnswer": "must", "acceptable": ["must"], "explanation": "'Must-see' = imperdível. Adjetivo composto.", "commonErrors": { "should": "'Should-see' não existe. Use 'must-see'.", "have": "'Have-see' não existe." } },
+        { "type": "matching", "title": "9. Lugar × razão", "pairs": [
+          { "left": "the orla", "right": "longest beachfront garden in the world" },
+          { "left": "Coffee Museum", "right": "Santos was the world coffee capital" },
+          { "left": "Vila Belmiro", "right": "Pelé played here" },
+          { "left": "the Aquário", "right": "great for families with children" }
+        ], "explanation": "Cada recomendação precisa de uma razão. Memorize 1 fato por lugar." },
+        { "type": "reorder", "title": "10. Comer local", "prompt": ["fish", "should", "try", "the", "You", "local"], "correctOrder": ["You", "should", "try", "the", "local", "fish"], "explanation": "Estrutura padrão de recomendação gastronômica." },
+        { "type": "multipleChoice", "title": "11. Visitante com pouco tempo", "prompt": "Visitor has only 1 hour. Best recommendation:", "options": [
+          { "id": "a", "text": "You should walk on the orla — it is right outside.", "correct": true },
+          { "id": "b", "text": "You should visit Vila Belmiro.", "correct": false, "whyWrong": "Vila Belmiro fica longe — não cabe em 1 hora." },
+          { "id": "c", "text": "You should travel to Guarujá.", "correct": false, "whyWrong": "A balsa sozinha já leva tempo. Não cabe." },
+          { "id": "d", "text": "You should sleep on the beach.", "correct": false, "whyWrong": "Não é uma recomendação turística válida." }
+        ], "explanation": "Sempre considere o tempo do visitante. A orla é perfeita para 1 hora." },
+        { "type": "reorder", "title": "12. Vale a pena", "prompt": ["worth", "is", "view", "The", "it"], "correctOrder": ["The", "view", "is", "worth", "it"], "explanation": "Sujeito + verbo + 'worth it'. Frase clássica para fechar uma recomendação." }
+      ],
+      "wrapup": "Você já consegue recomendar Santos para qualquer perfil de visitante. Próxima lição: contar uma história passo a passo.",
+      "takeaways": [
+        "I use 'should' for strong recommendations.",
+        "I use 'could' for soft suggestions or alternatives.",
+        "I never put 'to' after 'should' or 'could'.",
+        "I use -ing after 'recommend' (I recommend walking).",
+        "I always give a reason: 'amazing view', 'longest garden', 'Pelé played here'.",
+        "I match the recommendation to the visitor's time and interests."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 4 do M5. Recomendações em inglês com modais. Aluno sai capaz de virar consultor turístico básico de Santos.",
+        "pacing": "2h aula + 30min pré-estudo",
+        "lessonFlow": [
+          { "step": 1, "duration": "5 min", "what": "Recap L34", "instructions": "Em duplas, cada aluno faz 1 desculpa e 1 'Would you mind' com -ing." },
+          { "step": 2, "duration": "10 min", "what": "Intro + drill should/could", "instructions": "Leia o intro. Drill em coro: 'You should... You could...'. Aluno percebe a diferença de força." },
+          { "step": 3, "duration": "15 min", "what": "Vocab + adjetivos vendedores", "instructions": "Drill em coro: amazing, delicious, must-see, worth it. Cada aluno usa 3 em frases sobre Santos." },
+          { "step": 4, "duration": "20 min", "what": "Mapa de Santos no quadro", "instructions": "Liste 5 atrações com 1 fato cada. Em duplas, alunos recomendam 3 com should e 2 com could. Cada dupla apresenta." },
+          { "step": 5, "duration": "15 min", "what": "Context + Read aloud", "instructions": "Diálogo de 4 horas livres. Cada aluno lê com mic. Foco em entusiasmo na entonação." },
+          { "step": 6, "duration": "30 min", "what": "Exercícios 1-12", "instructions": "Atenção ao 2 (sem 'to' após should) e 6 (recommend + ing). Erros mais comuns." },
+          { "step": 7, "duration": "10 min", "what": "Think about it", "instructions": "Pergunta crítica: vegetariano com 2 horas. Aceite respostas com 1 should + 2 could combinando comida vegetariana e atração próxima." },
+          { "step": 8, "duration": "15 min", "what": "Role-play turista", "instructions": "Em duplas: um aluno é turista com perfil sorteado (família, idoso, esportivo, gourmand). Outro recomenda 3 atrações. Trocam." }
+        ],
+        "commonChallenges": [
+          "'You should to visit': aluno coloca 'to' por reflexo. Drill: should + verbo direto.",
+          "'I recommend to go': calque do português 'recomendo ir'. Drill: 'I recommend going'.",
+          "Confusão should/could: aluno usa um pelo outro. Crie escala visual: should = forte, could = opção.",
+          "Recomendação sem razão. Aluno fala 'You should visit Vila Belmiro' e para. Reforce: sempre + 'because' ou fato.",
+          "Não considerar tempo do visitante. Drill: sempre pergunte 'How much time do you have?' antes de recomendar."
+        ]
+      }
+    },
+
+    {
+      "num": 36,
+      "title": "First, then, after that, finally — telling a story",
+      "focus": "Telling stories step by step using linking words",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "Linking words: first / then / after that / finally",
+      "objective": "Ao final desta lição, você será capaz de contar a história do Porto de Santos passo a passo, usando conectores que organizam o tempo (first, then, after that, finally) e mantêm o visitante engajado.",
+      "heroImage": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=1600&q=80",
+      "intro": "<p>The visitor wants more than facts. They want a <strong>story</strong>.</p><p>How did the port begin? How did it grow? Why is it the largest in Latin America today?</p><p>Four small words turn facts into a story: <strong>first, then, after that, finally</strong>. By the end of this lesson, you can tell the story of the Port of Santos in two minutes.</p>",
+      "vocab": [
+        { "en": "first", "pt": "primeiro", "example": "First, the village of Santos was founded in 1546." },
+        { "en": "then", "pt": "depois / em seguida", "example": "Then, the port grew with coffee." },
+        { "en": "after that", "pt": "depois disso", "example": "After that, the railway arrived in 1867." },
+        { "en": "finally", "pt": "finalmente / por fim", "example": "Finally, today the port is the largest in Latin America." },
+        { "en": "story", "pt": "história", "example": "The story of the port is amazing." },
+        { "en": "history", "pt": "história (factual)", "example": "Santos has a long history." },
+        { "en": "to begin / began", "pt": "começar / começou", "example": "It all began in 1546." },
+        { "en": "to grow / grew", "pt": "crescer / cresceu", "example": "The port grew with the coffee trade." },
+        { "en": "to arrive / arrived", "pt": "chegar / chegou", "example": "The railway arrived in 1867." },
+        { "en": "to become / became", "pt": "tornar-se / tornou-se", "example": "Santos became the world coffee capital." },
+        { "en": "long ago", "pt": "há muito tempo", "example": "Long ago, this was a small village." },
+        { "en": "century", "pt": "século", "example": "In the 19th century, coffee was king." },
+        { "en": "in the past", "pt": "no passado", "example": "In the past, ships were smaller." },
+        { "en": "today", "pt": "hoje em dia", "example": "Today, Santos handles 5.4 million TEUs." },
+        { "en": "amazing story", "pt": "história incrível", "example": "It is an amazing story of growth." }
+      ],
+      "situation": "Um grupo de estudantes universitários quer entender como o Porto de Santos se tornou o maior da América Latina. Você precisa contar a história em 2 minutos, usando conectores temporais para organizar os fatos.",
+      "context": "You: Let me tell you the story. First, the village of Santos was founded in 1546. Then, in 1867, the railway arrived from São Paulo. After that, coffee made Santos rich — it became the world coffee capital. Finally, today the port handles 179.8 million tonnes per year and connects with over 600 ports around the world. Amazing story, right?",
+      "grammarDetail": "<h4>Conectores de tempo — contar uma história</h4><p>Para organizar fatos em ordem cronológica, use 4 conectores:</p><div class='grammar-example'><strong>First</strong>, the village was founded in 1546. (primeiro fato)<br><strong>Then</strong>, the railway arrived in 1867. (próximo fato)<br><strong>After that</strong>, coffee made Santos rich. (sequência)<br><strong>Finally</strong>, today the port is the largest in Latin America. (fato atual)</div><h4>Verbos do passado simples — irregulares</h4><div class='grammar-example'>begin → <strong>began</strong> (começou)<br>grow → <strong>grew</strong> (cresceu)<br>become → <strong>became</strong> (tornou-se)<br>build → <strong>built</strong> (construiu)</div><h4>Verbos regulares no passado</h4><div class='grammar-example'>arrive → <strong>arrived</strong><br>open → <strong>opened</strong><br>change → <strong>changed</strong><br>connect → <strong>connected</strong></div><h4>Frase de abertura</h4><div class='grammar-example'><strong>Let me tell you the story.</strong><br><strong>It all began in...</strong><br><strong>Long ago,...</strong></div><h4>Watch Out!</h4><div class='grammar-example'>After that we go... → <strong>After that, we went...</strong> (vírgula + verbo no passado)<br>In the past was... → <strong>In the past, it was...</strong> (sempre com sujeito)<br>It begin in 1546. → <strong>It began in 1546.</strong> (passado irregular)</div>",
+      "grammarCriticalQuestion": "A child asks: 'How did the port become so big?' Tell the story in 4 sentences using first, then, after that, finally.",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Início da história", "prompt": "___, the village was founded in 1546.", "correctAnswer": "First", "acceptable": ["First", "first"], "explanation": "Para abrir uma sequência cronológica: 'First'.", "commonErrors": { "Firstly": "Forma muito formal. Em narrativa use 'first'.", "One": "'One' não funciona como conector de tempo." } },
+        { "type": "fillGap", "title": "2. Passado irregular — começar", "prompt": "It all ___ in 1546.", "correctAnswer": "began", "acceptable": ["began"], "explanation": "Begin é irregular: passado é 'began'.", "commonErrors": { "begin": "Falta o passado. 1546 é passado.", "beginned": "Não existe. Begin é irregular: began." } },
+        { "type": "multipleChoice", "title": "3. Conector intermediário", "prompt": "First, the village was founded. ___, the railway arrived.", "options": [
+          { "id": "a", "text": "Finally", "correct": false, "whyWrong": "'Finally' é só para o último fato da sequência." },
+          { "id": "b", "text": "Then", "correct": true },
+          { "id": "c", "text": "Before", "correct": false, "whyWrong": "'Before' é antes — não avança no tempo." },
+          { "id": "d", "text": "Always", "correct": false, "whyWrong": "'Always' é frequência, não sequência." }
+        ], "explanation": "'Then' é o conector clássico para o segundo fato." },
+        { "type": "matching", "title": "4. Conector × posição", "pairs": [
+          { "left": "First", "right": "1º fato" },
+          { "left": "Then", "right": "2º fato" },
+          { "left": "After that", "right": "3º fato" },
+          { "left": "Finally", "right": "último fato" }
+        ], "explanation": "Quatro conectores que organizam qualquer narrativa cronológica." },
+        { "type": "reorder", "title": "5. Frase de abertura", "prompt": ["the", "Let", "tell", "story", "you", "me"], "correctOrder": ["Let", "me", "tell", "you", "the", "story"], "explanation": "Frase clássica para iniciar uma narrativa. Memorize." },
+        { "type": "fillGap", "title": "6. Crescer no passado", "prompt": "The port ___ with the coffee trade.", "correctAnswer": "grew", "acceptable": ["grew"], "explanation": "Grow é irregular: passado é 'grew'.", "commonErrors": { "grow": "Falta o passado. Reorganize no tempo correto.", "growed": "Não existe. Grow é irregular: grew." } },
+        { "type": "multipleChoice", "title": "7. Tornar-se", "prompt": "Santos ___ the world coffee capital.", "options": [
+          { "id": "a", "text": "become", "correct": false, "whyWrong": "Falta o passado. 'Become' é forma base." },
+          { "id": "b", "text": "became", "correct": true },
+          { "id": "c", "text": "becomed", "correct": false, "whyWrong": "Não existe. Become é irregular: became." },
+          { "id": "d", "text": "becoming", "correct": false, "whyWrong": "'-ing' precisa de auxiliar (was). Aqui é passado simples." }
+        ], "explanation": "Become é irregular: passado é 'became'." },
+        { "type": "fillGap", "title": "8. Fato atual no fim", "prompt": "___, today the port handles 5.4 million TEUs.", "correctAnswer": "Finally", "acceptable": ["Finally", "finally"], "explanation": "'Finally' marca o fato atual / último.", "commonErrors": { "First": "'First' é o início, não o fim.", "Then": "'Then' é intermediário. Use 'finally' para fechar." } },
+        { "type": "matching", "title": "9. Verbo × passado", "pairs": [
+          { "left": "begin", "right": "began" },
+          { "left": "grow", "right": "grew" },
+          { "left": "become", "right": "became" },
+          { "left": "build", "right": "built" }
+        ], "explanation": "Quatro verbos irregulares essenciais para contar a história do porto." },
+        { "type": "reorder", "title": "10. Sequência completa", "prompt": ["coffee", "After", "made", "rich", "Santos", "that"], "correctOrder": ["After", "that", "coffee", "made", "Santos", "rich"], "explanation": "After that + sujeito + verbo (passado) + objeto. Sequência narrativa." },
+        { "type": "multipleChoice", "title": "11. Estudante curioso", "prompt": "Best opening for a 2-minute story about the port:", "options": [
+          { "id": "a", "text": "Let me tell you the story. It all began in 1546.", "correct": true },
+          { "id": "b", "text": "Port story.", "correct": false, "whyWrong": "Frase incompleta e fria. Falta sujeito e contexto." },
+          { "id": "c", "text": "I will speak about port.", "correct": false, "whyWrong": "Falta naturalidade. Use 'Let me tell you'." },
+          { "id": "d", "text": "Port history was many years.", "correct": false, "whyWrong": "Frase mal estruturada. Falta clareza." }
+        ], "explanation": "Abertura calorosa + fato concreto. Engaja o ouvinte." },
+        { "type": "reorder", "title": "12. Fato atual", "prompt": ["with", "ports", "600", "It", "today", "connects", "over"], "correctOrder": ["Today", "it", "connects", "with", "over", "600", "ports"], "explanation": "Today + sujeito + verbo + complemento. Frase de fechamento com fato impactante." }
+      ],
+      "wrapup": "Você já consegue contar a história do Porto de Santos em 2 minutos. Próxima lição: receber grupos grandes com clareza.",
+      "takeaways": [
+        "I tell stories using first, then, after that, finally.",
+        "I open with 'Let me tell you the story' or 'It all began in...'.",
+        "I use past simple for history (began, grew, became, built).",
+        "I close with 'Today...' to connect past and present.",
+        "I use 1 striking fact per step (1546, 1867, 5.4 million TEUs).",
+        "I keep the story to 4 sentences for casual visitors."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 5 do M5. Conectores narrativos + verbos irregulares no passado. Aluno sai capaz de contar a história do porto em 2 minutos.",
+        "pacing": "2h aula + 30min pré-estudo",
+        "lessonFlow": [
+          { "step": 1, "duration": "5 min", "what": "Recap L35", "instructions": "Em duplas, cada aluno faz 1 frase com 'should' e 1 com 'could' sobre Santos." },
+          { "step": 2, "duration": "10 min", "what": "Intro + linha do tempo", "instructions": "Leia o intro. Desenhe linha do tempo no quadro: 1546, 1867, hoje. Drill em coro dos 4 conectores." },
+          { "step": 3, "duration": "15 min", "what": "Vocab + verbos irregulares", "instructions": "Drill em coro dos pares: begin/began, grow/grew, become/became, build/built. Repetir 5 vezes." },
+          { "step": 4, "duration": "20 min", "what": "Construção da história em grupo", "instructions": "Cada aluno escreve 1 frase da história usando 1 conector. Junte na ordem (first → finally). Resultado: história completa em 4 frases." },
+          { "step": 5, "duration": "15 min", "what": "Context + Read aloud", "instructions": "Diálogo da história em 5 frases. Cada aluno lê com mic. Foco em pausas dramáticas após cada conector." },
+          { "step": 6, "duration": "30 min", "what": "Exercícios 1-12", "instructions": "Atenção aos 2, 6, 7 (passado irregular). Drill final: began, grew, became." },
+          { "step": 7, "duration": "10 min", "what": "Think about it", "instructions": "Pergunta crítica: criança pergunta 'como o porto ficou tão grande?'. Aceite 4 frases simples com cada conector." },
+          { "step": 8, "duration": "15 min", "what": "Storytelling em pé", "instructions": "Cada aluno conta a história do porto em 2 minutos para a turma. Avalie: usou 4 conectores? Verbos no passado corretos? Fechamento atual?" }
+        ],
+        "commonChallenges": [
+          "Verbos irregulares: aluno fala 'begined', 'growed', 'becomed'. Drill diário das 4 formas até virar reflexo.",
+          "Esquecer 'that' em 'after that': aluno fala só 'after'. Reforce o pacote completo.",
+          "Mistura passado/presente sem critério: aluno alterna sem motivo. Reforce: fato histórico → past, fato atual → present.",
+          "Narrativa sem 'finally': aluno termina sem fechamento. Drill: a história precisa de 'finally + today'.",
+          "Velocidade alta: aluno corre a história em 30 segundos. Reforce que pausas após cada conector valorizam o conteúdo."
+        ]
+      }
+    },
+
+    {
+      "num": 37,
+      "title": "Welcome, group of 40 — receiving large groups",
+      "focus": "Receiving and managing large visitor groups",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "Numbers + imperatives: Please follow me, This way",
+      "objective": "Ao final desta lição, você será capaz de receber grupos grandes (escolas, cruzeiros, delegações), contar visitantes em inglês, dar instruções claras e mantê-los juntos durante o tour.",
+      "heroImage": "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1600&q=80",
+      "intro": "<p>A school bus arrives. Forty children. Two teachers. One you.</p><p>Or a cruise ship sends a group of 60 visitors at once. They speak many languages, but English is the bridge.</p><p>You need clear numbers, simple commands and a calm voice. Three words manage any group: <strong>please, follow, this way</strong>.</p>",
+      "vocab": [
+        { "en": "group", "pt": "grupo", "example": "Welcome, group of forty!" },
+        { "en": "school group", "pt": "grupo escolar", "example": "We have a school group today." },
+        { "en": "cruise group", "pt": "grupo de cruzeiro", "example": "The cruise group arrives at 10." },
+        { "en": "all together", "pt": "todos juntos", "example": "Please stay all together." },
+        { "en": "in line", "pt": "em fila", "example": "Please walk in line." },
+        { "en": "two by two", "pt": "dois a dois", "example": "Please walk two by two." },
+        { "en": "stay with me", "pt": "fique comigo", "example": "Please stay with me, everyone." },
+        { "en": "do not run", "pt": "não corra", "example": "Please do not run inside." },
+        { "en": "be careful", "pt": "tenha cuidado", "example": "Be careful with the stairs." },
+        { "en": "everyone", "pt": "todo mundo", "example": "Everyone, please come closer." },
+        { "en": "raise your hand", "pt": "levante a mão", "example": "Raise your hand if you have a question." },
+        { "en": "come closer", "pt": "venha mais perto", "example": "Please come closer to see." },
+        { "en": "step back", "pt": "afaste-se", "example": "Please step back from the locomotive." },
+        { "en": "let's go", "pt": "vamos lá", "example": "Are you ready? Let's go!" },
+        { "en": "headcount", "pt": "contagem de pessoas", "example": "Let me do a quick headcount." }
+      ],
+      "situation": "Um ônibus escolar chega com 40 crianças e 2 professoras. Você precisa receber o grupo, contar todos, dar instruções de segurança e organizar a entrada de forma calma e clara.",
+      "context": "You: Welcome, everyone! My name is Pedro. We have a great tour today. First, please come closer. Let me do a quick headcount — one, two, three... forty. Perfect! Please stay all together and walk in line. Do not run inside, the floors are old. If you have a question, raise your hand. Are you ready? Let's go! Please follow me, this way.",
+      "grammarDetail": "<h4>Números — contar visitantes</h4><div class='grammar-example'>10 — ten / 20 — twenty / 30 — thirty / 40 — forty<br>50 — fifty / 60 — sixty / 100 — one hundred</div><p>Cuidado: <strong>forty</strong> não tem 'u' — diferente de 'four'.</p><h4>Comandos polidos</h4><div class='grammar-example'><strong>Please follow me.</strong> (me siga)<br><strong>This way, please.</strong> (por aqui)<br><strong>Please stay together.</strong> (fique junto)<br><strong>Please walk in line.</strong> (em fila)</div><h4>Comandos de segurança</h4><div class='grammar-example'><strong>Do not run.</strong> (não corra)<br><strong>Be careful.</strong> (cuidado)<br><strong>Step back, please.</strong> (afaste-se)<br><strong>Stay with me.</strong> (fique comigo)</div><h4>Chamar atenção do grupo</h4><div class='grammar-example'><strong>Everyone</strong>, please come closer.<br><strong>Excuse me</strong>, can I have your attention?<br><strong>Listen, please.</strong></div><h4>Watch Out!</h4><div class='grammar-example'>Fourty → <strong>Forty</strong> (sem 'u'!)<br>Stay together all → <strong>Stay all together</strong> (ordem das palavras)<br>No run! → <strong>Do not run</strong>, please. (negativo educado)</div>",
+      "grammarCriticalQuestion": "A school group of 35 children just arrived. The teacher is tired. What 5 sentences do you say in the first minute?",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Saudação ao grupo", "prompt": "___, everyone! My name is Pedro.", "correctAnswer": "Welcome", "acceptable": ["Welcome", "welcome"], "explanation": "Saudação universal a grupos: 'Welcome'.", "commonErrors": { "Hello": "Funciona, mas 'Welcome' é mais profissional para grupos.", "Hi": "Casual demais para grupo grande." } },
+        { "type": "fillGap", "title": "2. Quarenta — atenção à grafia", "prompt": "We have a group of ___ today.", "correctAnswer": "forty", "acceptable": ["forty", "40"], "explanation": "Quarenta em inglês: 'forty' (sem 'u', diferente de 'four').", "commonErrors": { "fourty": "Erro clássico. Não existe 'fourty' — é 'forty'.", "fourthy": "Não existe. Apenas 'forty'." } },
+        { "type": "multipleChoice", "title": "3. Comando educado", "prompt": "Como pedir para o grupo me seguir?", "options": [
+          { "id": "a", "text": "Come.", "correct": false, "whyWrong": "Curto e impessoal. Para grupo grande, suavize." },
+          { "id": "b", "text": "Please follow me.", "correct": true },
+          { "id": "c", "text": "Walk after me.", "correct": false, "whyWrong": "'Walk after me' soa estranho. Use 'follow me'." },
+          { "id": "d", "text": "Go behind.", "correct": false, "whyWrong": "Soa como ordem militar. Use 'follow me'." }
+        ], "explanation": "'Please follow me' é o padrão profissional para grupos." },
+        { "type": "matching", "title": "4. Comando × situação", "pairs": [
+          { "left": "Please follow me", "right": "iniciar movimento" },
+          { "left": "Please stay together", "right": "manter grupo unido" },
+          { "left": "Please do not run", "right": "segurança" },
+          { "left": "Raise your hand", "right": "perguntas" }
+        ], "explanation": "Cada situação pede um comando específico. Memorize." },
+        { "type": "reorder", "title": "5. Atenção do grupo", "prompt": ["come", "please", "Everyone", "closer"], "correctOrder": ["Everyone", "please", "come", "closer"], "explanation": "Vocativo + please + comando. Estrutura para chamar atenção." },
+        { "type": "fillGap", "title": "6. Negativo polido", "prompt": "Please ___ ___ run inside.", "correctAnswer": "do not", "acceptable": ["do not", "don't"], "explanation": "Negativo no imperativo: 'do not' ou contraído 'don't'.", "commonErrors": { "no": "'No run' não funciona em inglês. Use 'do not run'.", "not": "'Not run' isolado não existe. Sempre 'do not run'." } },
+        { "type": "multipleChoice", "title": "7. Contagem rápida", "prompt": "Como começar uma headcount?", "options": [
+          { "id": "a", "text": "Let me do a quick headcount.", "correct": true },
+          { "id": "b", "text": "I count now.", "correct": false, "whyWrong": "Frase mal construída. Falta naturalidade." },
+          { "id": "c", "text": "Wait, I count.", "correct": false, "whyWrong": "'Wait' soa abrupto. Use 'let me'." },
+          { "id": "d", "text": "Numbers.", "correct": false, "whyWrong": "Frase incompleta — não comunica intenção." }
+        ], "explanation": "'Let me do a quick headcount' = deixe-me fazer uma contagem rápida. Frase profissional." },
+        { "type": "fillGap", "title": "8. Em fila", "prompt": "Please walk ___ ___.", "correctAnswer": "in line", "acceptable": ["in line"], "explanation": "Em fila: 'in line'.", "commonErrors": { "on line": "'On line' significa 'online' (internet).", "by line": "'By line' não existe nesse sentido." } },
+        { "type": "matching", "title": "9. Frase × propósito", "pairs": [
+          { "left": "Welcome, everyone!", "right": "abertura" },
+          { "left": "Let me do a headcount.", "right": "contagem" },
+          { "left": "Be careful with the stairs.", "right": "segurança" },
+          { "left": "Are you ready? Let's go!", "right": "início do tour" }
+        ], "explanation": "Quatro momentos da chegada de grupo. Cada um pede uma frase certa." },
+        { "type": "reorder", "title": "10. Levantar a mão", "prompt": ["a", "Raise", "if", "question", "have", "you", "your", "hand"], "correctOrder": ["Raise", "your", "hand", "if", "you", "have", "a", "question"], "explanation": "Comando + condicional ('if'). Estrutura para gerenciar perguntas em grupo." },
+        { "type": "multipleChoice", "title": "11. Cuidado com escadas", "prompt": "Best safety phrase for stairs:", "options": [
+          { "id": "a", "text": "Be careful with the stairs.", "correct": true },
+          { "id": "b", "text": "Stairs danger.", "correct": false, "whyWrong": "Frase incompleta — falta verbo." },
+          { "id": "c", "text": "Slow.", "correct": false, "whyWrong": "Curto e ambíguo. Use frase completa." },
+          { "id": "d", "text": "Stairs old.", "correct": false, "whyWrong": "Frase quebrada e sem verbo." }
+        ], "explanation": "'Be careful with' + objeto. Padrão de segurança." },
+        { "type": "reorder", "title": "12. Vamos lá!", "prompt": ["go", "you", "ready", "Are", "Let's", "?"], "correctOrder": ["Are", "you", "ready", "Let's", "go", "?"], "explanation": "Pergunta de prontidão + chamada à ação. Energia para iniciar o tour." }
+      ],
+      "wrapup": "Você já consegue receber qualquer grupo grande com calma e clareza. Próxima lição: o futuro do porto.",
+      "takeaways": [
+        "I welcome groups with 'Welcome, everyone!'.",
+        "I count groups in English (twenty, thirty, forty).",
+        "I never write 'fourty' — it is 'forty'.",
+        "I use 'Please follow me' and 'This way, please' to move groups.",
+        "I give safety commands: 'Do not run', 'Be careful', 'Step back'.",
+        "I keep groups together with 'Please stay all together'."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 6 do M5. Gestão de grupos grandes em inglês. Aluno sai capaz de receber 40 visitantes com clareza e segurança.",
+        "pacing": "2h aula + 30min pré-estudo",
+        "lessonFlow": [
+          { "step": 1, "duration": "5 min", "what": "Recap L36", "instructions": "Em duplas, cada aluno conta a história do porto em 4 frases (first, then, after that, finally)." },
+          { "step": 2, "duration": "10 min", "what": "Intro + drill números", "instructions": "Leia o intro. Drill em coro: ten, twenty, thirty, forty, fifty, sixty. Atenção: forty SEM u." },
+          { "step": 3, "duration": "15 min", "what": "Vocab + comandos polidos", "instructions": "Drill em coro: 'Please follow me. Please stay together. Please do not run.' Em pé, simulando comando real." },
+          { "step": 4, "duration": "20 min", "what": "Simulação de chegada de grupo", "instructions": "Toda turma é o 'grupo'. Um aluno é o anfitrião. Ele faz: saudação, headcount, instruções de segurança, início do tour. 5 alunos rodam." },
+          { "step": 5, "duration": "15 min", "what": "Context + Read aloud", "instructions": "Diálogo de chegada de grupo escolar. Cada aluno lê com mic. Foco em voz firme mas amigável." },
+          { "step": 6, "duration": "30 min", "what": "Exercícios 1-12", "instructions": "Atenção ao 2 (forty sem u) e 6 (do not + verbo). São os erros mais comuns." },
+          { "step": 7, "duration": "10 min", "what": "Think about it", "instructions": "Pergunta crítica: grupo escolar de 35 crianças, professora cansada. Aceite 5 frases que mostrem acolhimento + organização." },
+          { "step": 8, "duration": "15 min", "what": "Role-play grupo", "instructions": "Em quartetos: 1 anfitrião, 3 visitantes (1 criança travessa, 1 idoso, 1 estrangeiro). Anfitrião gerencia 2 minutos. Trocam." }
+        ],
+        "commonChallenges": [
+          "'Fourty' em vez de 'forty': erro de grafia muito comum. Drill visual repetido.",
+          "Comando direto sem 'please': aluno fala 'Follow me' sem suavização. Reforce o pacote completo com please.",
+          "'No run' em vez de 'do not run': calque do português. Drill negativo com auxiliar.",
+          "Headcount sem aviso: aluno começa a contar sem explicar. Reforce 'Let me do a quick headcount' antes.",
+          "Voz tímida: aluno fala baixo demais para grupo. Em sala, pratique projeção sem gritar."
+        ]
+      }
+    },
+
+    {
+      "num": 38,
+      "title": "The future of the Port of Santos",
+      "focus": "Talking about future plans and projections",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "Going to + simple future (will)",
+      "objective": "Ao final desta lição, você será capaz de falar sobre o futuro do Porto de Santos — projetos planejados, expansões e expectativas — usando 'going to' para planos e 'will' para previsões.",
+      "heroImage": "https://images.unsplash.com/photo-1568871391152-f2dba8d76a3a?w=1600&q=80",
+      "intro": "<p>The Port of Santos is the largest in Latin America. But it does not stop. New terminals. New tunnels. More tonnes per year.</p><p>The visitor asks: <em>What is next? What will the port look like in 2030?</em></p><p>Two structures answer the future: <strong>going to</strong> (a plan) and <strong>will</strong> (a prediction). By the end of this lesson, you can talk about the future like a port expert.</p>",
+      "vocab": [
+        { "en": "going to", "pt": "ir + verbo (plano)", "example": "The port is going to expand." },
+        { "en": "will", "pt": "vai (previsão)", "example": "The port will grow more." },
+        { "en": "future", "pt": "futuro", "example": "The future is bright." },
+        { "en": "plan", "pt": "plano", "example": "We have big plans for 2030." },
+        { "en": "to expand", "pt": "expandir", "example": "The port is going to expand by 2027." },
+        { "en": "to build", "pt": "construir", "example": "They will build a new tunnel." },
+        { "en": "to open", "pt": "abrir / inaugurar", "example": "A new terminal will open in 2026." },
+        { "en": "tunnel", "pt": "túnel", "example": "The Santos-Guarujá tunnel is a future project." },
+        { "en": "terminal", "pt": "terminal", "example": "A new container terminal will open soon." },
+        { "en": "project", "pt": "projeto", "example": "This is a major project." },
+        { "en": "next year", "pt": "ano que vem", "example": "Next year, the port will handle more cargo." },
+        { "en": "in 2030", "pt": "em 2030", "example": "In 2030, we will see big changes." },
+        { "en": "soon", "pt": "em breve", "example": "A new terminal will open soon." },
+        { "en": "by 2027", "pt": "até 2027", "example": "The expansion will finish by 2027." },
+        { "en": "investment", "pt": "investimento", "example": "There is a big investment in the port." }
+      ],
+      "situation": "Uma jornalista visita o museu para um especial sobre 'o porto do futuro'. Você precisa falar sobre projetos planejados (terminais novos, túnel) e previsões para 2030, alternando 'going to' e 'will'.",
+      "context": "Journalist: What is next for the Port of Santos? You: We have big plans. The port is going to expand by 2027. They are also going to build a tunnel between Santos and Guarujá — that will save a lot of time. By 2030, the port will handle more than 6 million TEUs per year. The future is bright!",
+      "grammarDetail": "<h4>Going to — plano definido</h4><p>Use 'going to' quando há um <strong>plano concreto</strong>, com data ou decisão.</p><div class='grammar-example'>The port <strong>is going to expand</strong> by 2027.<br>They <strong>are going to build</strong> a tunnel.<br>We <strong>are going to open</strong> a new terminal next year.</div><h4>Will — previsão / decisão na hora</h4><div class='grammar-example'>The port <strong>will handle</strong> more cargo. (previsão)<br>By 2030, we <strong>will see</strong> big changes. (previsão)<br>Don't worry, I <strong>will check</strong>. (decisão na hora)</div><h4>Diferença na prática</h4><div class='grammar-example'>'Going to' = decisão tomada antes (plano)<br>'Will' = decisão do momento OU previsão</div><h4>Negativo e pergunta</h4><div class='grammar-example'>The port <strong>is not going to</strong> close.<br>The port <strong>will not</strong> (won't) close.<br><strong>Is</strong> the port <strong>going to expand?</strong> Yes, it is.<br><strong>Will</strong> the port <strong>grow?</strong> Yes, it will.</div><h4>Watch Out!</h4><div class='grammar-example'>The port will to expand. → The port <strong>will expand</strong>. (sem 'to' após will)<br>It is going expand. → It <strong>is going to expand</strong>. (precisa do 'to')<br>I will going... → escolha um: <strong>I am going to</strong> ou <strong>I will</strong>.</div>",
+      "grammarCriticalQuestion": "A student asks: 'Do you think the port will be different in 2040?' Give 2 sentences with 'going to' and 1 with 'will'.",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Plano com going to", "prompt": "The port ___ ___ ___ expand by 2027.", "correctAnswer": "is going to", "acceptable": ["is going to"], "explanation": "Plano concreto com data: is/are + going to + verbo.", "commonErrors": { "will to": "'Will' nunca leva 'to'. Use 'is going to' para planos.", "going": "Falta 'is' e 'to'. Frase completa: 'is going to'." } },
+        { "type": "fillGap", "title": "2. Previsão com will", "prompt": "By 2030, the port ___ handle 6 million TEUs.", "correctAnswer": "will", "acceptable": ["will"], "explanation": "Previsão futura: 'will' + verbo (sem 'to').", "commonErrors": { "is going": "'Is going' precisa de 'to'. Mais simples: use 'will'.", "is": "Falta o futuro. Use 'will'." } },
+        { "type": "multipleChoice", "title": "3. Após will — sem to", "prompt": "Frase correta:", "options": [
+          { "id": "a", "text": "The port will to grow.", "correct": false, "whyWrong": "'Will' nunca leva 'to'. Erro clássico." },
+          { "id": "b", "text": "The port will grow.", "correct": true },
+          { "id": "c", "text": "The port will growing.", "correct": false, "whyWrong": "Após 'will' não use -ing. Use o verbo simples." },
+          { "id": "d", "text": "The port will grew.", "correct": false, "whyWrong": "Após 'will' use o verbo no infinitivo, não no passado." }
+        ], "explanation": "Após 'will' use sempre o verbo simples, sem 'to' e sem -ing." },
+        { "type": "matching", "title": "4. Estrutura × função", "pairs": [
+          { "left": "going to + verbo", "right": "plano com data" },
+          { "left": "will + verbo", "right": "previsão" },
+          { "left": "next year", "right": "marcador de futuro" },
+          { "left": "by 2027", "right": "prazo final" }
+        ], "explanation": "Cada estrutura tem uma função. Memorize a diferença going to × will." },
+        { "type": "reorder", "title": "5. Plano com data", "prompt": ["a", "build", "tunnel", "going", "They", "are", "to"], "correctOrder": ["They", "are", "going", "to", "build", "a", "tunnel"], "explanation": "Sujeito + are + going to + verbo + objeto. Estrutura completa de plano." },
+        { "type": "fillGap", "title": "6. Negativo com won't", "prompt": "The port ___ close — it is too important.", "correctAnswer": "won't", "acceptable": ["won't", "will not"], "explanation": "Forma contraída do negativo: 'won't' (will not).", "commonErrors": { "no will": "Não existe. Use 'will not' ou 'won't'.", "don't will": "Não existe. 'Will' já é auxiliar — não precisa de 'don't'." } },
+        { "type": "multipleChoice", "title": "7. Decisão na hora", "prompt": "Visitor: 'I lost my ticket.' Best response:", "options": [
+          { "id": "a", "text": "Don't worry. I will help you right away.", "correct": true },
+          { "id": "b", "text": "I am going to help you.", "correct": false, "whyWrong": "'Going to' é plano antecipado. Para decisão na hora use 'will'." },
+          { "id": "c", "text": "I help.", "correct": false, "whyWrong": "Falta o futuro. 'Help' presente não comunica ação imediata." },
+          { "id": "d", "text": "Help yourself.", "correct": false, "whyWrong": "Soa rude. Não oferece ajuda." }
+        ], "explanation": "Decisão tomada agora (na hora) → use 'will'." },
+        { "type": "fillGap", "title": "8. Pergunta sobre o futuro", "prompt": "___ the port grow more in the next decade?", "correctAnswer": "Will", "acceptable": ["Will", "will"], "explanation": "Pergunta com 'will': inverte ordem. Will + sujeito + verbo.", "commonErrors": { "Going": "Para pergunta com 'going to' use 'Is the port going to...'.", "Does": "'Does' é presente. Para futuro use 'will'." } },
+        { "type": "matching", "title": "9. Plano × marcador de tempo", "pairs": [
+          { "left": "is going to expand", "right": "by 2027" },
+          { "left": "will open", "right": "next year" },
+          { "left": "is going to build", "right": "soon" },
+          { "left": "will handle", "right": "in 2030" }
+        ], "explanation": "Cada estrutura combina com marcadores de tempo do futuro." },
+        { "type": "reorder", "title": "10. Previsão otimista", "prompt": ["bright", "future", "is", "The"], "correctOrder": ["The", "future", "is", "bright"], "explanation": "Frase de fechamento positivo. Memorize." },
+        { "type": "multipleChoice", "title": "11. Visitante curioso sobre 2040", "prompt": "Best 1-sentence projection for 2040:", "options": [
+          { "id": "a", "text": "By 2040, the port will be the most modern in the world.", "correct": true },
+          { "id": "b", "text": "Maybe port good.", "correct": false, "whyWrong": "Frase quebrada e sem verbo." },
+          { "id": "c", "text": "I don't know.", "correct": false, "whyWrong": "Não responde. Sempre arrisque uma previsão otimista." },
+          { "id": "d", "text": "Port grow.", "correct": false, "whyWrong": "Falta auxiliar (will) e estrutura." }
+        ], "explanation": "By + ano + sujeito + will + verbo. Estrutura clássica de previsão." },
+        { "type": "reorder", "title": "12. Túnel — fato impactante", "prompt": ["lot", "save", "will", "of", "a", "time", "It"], "correctOrder": ["It", "will", "save", "a", "lot", "of", "time"], "explanation": "Sujeito + will + verbo + objeto. 'A lot of' = muito." }
+      ],
+      "wrapup": "Você já consegue falar sobre o futuro do porto com confiança. Próxima lição: hospitalidade VIP.",
+      "takeaways": [
+        "I use 'going to' for plans with a date (going to expand by 2027).",
+        "I use 'will' for predictions (the port will grow).",
+        "I use 'will' for decisions made on the spot ('I will help right away').",
+        "I never put 'to' after 'will'.",
+        "I close with optimism: 'The future is bright'.",
+        "I quote one impactful fact: '6 million TEUs by 2030'."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 7 do M5. Going to vs will para falar do futuro do porto. Aluno sai capaz de discutir projetos e previsões com jornalistas, estudantes e visitantes curiosos.",
+        "pacing": "2h aula + 30min pré-estudo",
+        "lessonFlow": [
+          { "step": 1, "duration": "5 min", "what": "Recap L37", "instructions": "Em duplas, cada aluno faz 3 comandos para grupo (welcome + headcount + safety)." },
+          { "step": 2, "duration": "10 min", "what": "Intro + drill going to / will", "instructions": "Leia o intro. Drill em coro: 'is going to expand / will grow'. Aluno percebe a diferença plano × previsão." },
+          { "step": 3, "duration": "15 min", "what": "Vocab + verbos do futuro", "instructions": "Drill: expand, build, open. Cada aluno faz 2 frases (uma com going to, uma com will)." },
+          { "step": 4, "duration": "20 min", "what": "Linha do tempo do futuro", "instructions": "No quadro: 2026, 2027, 2030, 2040. Em duplas, alunos preenchem 1 fato em cada ano usando going to ou will." },
+          { "step": 5, "duration": "15 min", "what": "Context + Read aloud", "instructions": "Diálogo com a jornalista. Cada aluno lê com mic. Foco em entusiasmo na entonação." },
+          { "step": 6, "duration": "30 min", "what": "Exercícios 1-12", "instructions": "Atenção ao 3 (sem 'to' após will) e 7 (will para decisão na hora). Pontos críticos." },
+          { "step": 7, "duration": "10 min", "what": "Think about it", "instructions": "Pergunta crítica: porto em 2040. Aceite 2 frases com going to + 1 com will. Demonstra mistura correta." },
+          { "step": 8, "duration": "15 min", "what": "Entrevista simulada", "instructions": "Em duplas: um aluno é jornalista, outro é guia. Jornalista faz 4 perguntas sobre o futuro. Guia responde com mistura going to / will. Trocam." }
+        ],
+        "commonChallenges": [
+          "'Will to + verbo': erro clássico de calque. Drill: 'will + verbo simples', sem 'to'.",
+          "Confundir going to com will: aluno usa um pelo outro. Reforce: plano com data → going to / previsão geral → will.",
+          "'Going expand' (sem to): aluno omite o 'to' obrigatório. Drill o pacote completo: 'going to + verbo'.",
+          "'Don't will': aluno tenta negar como verbo regular. Reforce: 'will not' ou 'won't'.",
+          "Não usar marcador de tempo: aluno fala 'will grow' solto. Drill: sempre acompanhe de 'next year', 'by 2027' ou 'in 2030'."
+        ]
+      }
+    },
+
+    {
+      "num": 39,
+      "title": "Would you like a coffee? — VIP visits and polite hospitality",
+      "focus": "Polite hospitality language for VIP and corporate visits",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "Would you like...? / Would you prefer...?",
+      "objective": "Ao final desta lição, você será capaz de receber visitantes VIP — autoridades, executivos, delegações estrangeiras — usando linguagem hospitaleira com 'Would you like...?' e 'Would you prefer...?'.",
+      "heroImage": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=1600&q=80",
+      "intro": "<p>Sometimes a special visitor arrives. A senator. A foreign ambassador. A company president.</p><p>Your English needs to rise one level: more polite, more elegant, more careful.</p><p>Two phrases unlock VIP service: <strong>Would you like...?</strong> and <strong>Would you prefer...?</strong> They turn any offer into a refined gesture.</p>",
+      "vocab": [
+        { "en": "Would you like...?", "pt": "você gostaria de...?", "example": "Would you like a coffee?" },
+        { "en": "Would you prefer...?", "pt": "você prefere...?", "example": "Would you prefer tea or coffee?" },
+        { "en": "VIP", "pt": "VIP / convidado especial", "example": "We have a VIP today." },
+        { "en": "delegation", "pt": "delegação", "example": "A foreign delegation will visit us." },
+        { "en": "ambassador", "pt": "embaixador", "example": "The ambassador arrives at 10." },
+        { "en": "honor", "pt": "honra", "example": "It is an honor to receive you." },
+        { "en": "to escort", "pt": "acompanhar / escoltar", "example": "I will escort you to the meeting room." },
+        { "en": "private tour", "pt": "tour privado", "example": "We arranged a private tour for you." },
+        { "en": "reception", "pt": "recepção / evento", "example": "There is a reception after the tour." },
+        { "en": "refreshment", "pt": "refresco / lanche leve", "example": "Would you like a refreshment?" },
+        { "en": "comfortable", "pt": "confortável", "example": "Please make yourself comfortable." },
+        { "en": "make yourself at home", "pt": "fique à vontade", "example": "Please make yourself at home." },
+        { "en": "I would be happy to", "pt": "ficaria feliz em", "example": "I would be happy to show you the museum." },
+        { "en": "if you wish", "pt": "se desejar", "example": "We can extend the tour, if you wish." },
+        { "en": "with pleasure", "pt": "com prazer", "example": "With pleasure, sir." }
+      ],
+      "situation": "Uma delegação de 5 executivos do porto de Roterdã chega para uma visita oficial de 1 hora. Você é o anfitrião principal. Precisa receber, oferecer café, conduzir tour e despedir-se com formalidade VIP.",
+      "context": "You: Good morning, ladies and gentlemen. Welcome to the Museu do Porto — it is an honor to receive you. Would you like a coffee or tea before we start? Visitor: A coffee, please. You: With pleasure. Please make yourselves comfortable. After the coffee, I will escort you on a private tour of the museum. Would you prefer the historical rooms first, or the photo gallery? Visitor: The historical rooms, please. You: Excellent choice. This way, please.",
+      "grammarDetail": "<h4>Would you like...? — oferta polida</h4><p>Forma elegante de oferecer algo a um visitante.</p><div class='grammar-example'><strong>Would you like</strong> a coffee?<br><strong>Would you like</strong> some water?<br><strong>Would you like</strong> to sit down?<br><strong>Would you like</strong> to start the tour?</div><h4>Would you prefer...? — oferecer escolhas</h4><div class='grammar-example'><strong>Would you prefer</strong> tea or coffee?<br><strong>Would you prefer</strong> the historical rooms or the photo gallery?<br><strong>Would you prefer</strong> a guided tour or a free visit?</div><h4>Frases de hospitalidade VIP</h4><div class='grammar-example'>It is an <strong>honor to receive you</strong>.<br>Please <strong>make yourself comfortable</strong>.<br>I <strong>would be happy to</strong> show you.<br><strong>With pleasure</strong>.</div><h4>Vocativos formais</h4><div class='grammar-example'><strong>Sir</strong> / <strong>Ma'am</strong> (senhor / senhora)<br><strong>Ladies and gentlemen</strong> (grupo)<br><strong>Mr. Smith</strong> / <strong>Mrs. Smith</strong> / <strong>Ms. Smith</strong></div><h4>Watch Out!</h4><div class='grammar-example'>Do you want coffee? → <strong>Would you like</strong> a coffee? (mais educado)<br>You prefer tea? → <strong>Would you prefer</strong> tea? (estrutura completa)<br>Sit. → <strong>Would you like to sit down?</strong> (suave, não imperativo)</div>",
+      "grammarCriticalQuestion": "A foreign minister arrives 30 minutes early. The room is not ready. What 3 polite sentences do you say?",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Oferta de café", "prompt": "___ ___ ___ a coffee?", "correctAnswer": "Would you like", "acceptable": ["Would you like"], "explanation": "Estrutura padrão de oferta polida: 'Would you like + substantivo'.", "commonErrors": { "Do you want": "Funciona, mas é casual demais para VIP. Use 'Would you like'.", "You like": "Frase quebrada. Sempre 'Would you like'." } },
+        { "type": "fillGap", "title": "2. Oferecer escolha", "prompt": "Would you ___ tea or coffee?", "correctAnswer": "prefer", "acceptable": ["prefer"], "explanation": "Para oferecer escolhas: 'Would you prefer A or B?'.", "commonErrors": { "like": "'Would you like' é oferta única. Para escolha use 'prefer'.", "want": "Casual demais para VIP. Use 'prefer'." } },
+        { "type": "multipleChoice", "title": "3. Boas-vindas formal", "prompt": "VIP arrives. Best opening:", "options": [
+          { "id": "a", "text": "Hi, welcome.", "correct": false, "whyWrong": "'Hi' é casual demais para VIP." },
+          { "id": "b", "text": "Good morning, ladies and gentlemen. Welcome — it is an honor to receive you.", "correct": true },
+          { "id": "c", "text": "Hello, come in.", "correct": false, "whyWrong": "Casual demais para visita oficial." },
+          { "id": "d", "text": "Welcome.", "correct": false, "whyWrong": "Curto demais. VIP merece saudação completa." }
+        ], "explanation": "VIP merece saudação formal completa: cumprimento + vocativo + boas-vindas + honra." },
+        { "type": "matching", "title": "4. Frase × função VIP", "pairs": [
+          { "left": "Would you like a coffee?", "right": "oferta de bebida" },
+          { "left": "Would you prefer A or B?", "right": "oferecer escolha" },
+          { "left": "It is an honor to receive you", "right": "saudação formal" },
+          { "left": "Please make yourself comfortable", "right": "convidar a relaxar" }
+        ], "explanation": "Quatro frases-pilares de hospitalidade VIP. Memorize." },
+        { "type": "reorder", "title": "5. Honra de receber", "prompt": ["honor", "is", "to", "It", "an", "you", "receive"], "correctOrder": ["It", "is", "an", "honor", "to", "receive", "you"], "explanation": "It + is + an + honor + to + verbo + objeto. Frase clássica VIP." },
+        { "type": "fillGap", "title": "6. Resposta polida — claro!", "prompt": "Visitor: 'A coffee, please.' You: ___ ___.", "correctAnswer": "With pleasure", "acceptable": ["With pleasure"], "explanation": "'With pleasure' = com prazer. Mais elegante que 'OK'.", "commonErrors": { "OK": "Casual demais para VIP. Use 'With pleasure'.", "Sure": "Funciona, mas 'with pleasure' é mais formal." } },
+        { "type": "multipleChoice", "title": "7. Acompanhar VIP", "prompt": "Como dizer 'vou acompanhá-lo ao tour'?", "options": [
+          { "id": "a", "text": "Go with me.", "correct": false, "whyWrong": "Casual demais e soa como ordem." },
+          { "id": "b", "text": "I will escort you on a private tour.", "correct": true },
+          { "id": "c", "text": "Come tour.", "correct": false, "whyWrong": "Frase quebrada e sem polidez." },
+          { "id": "d", "text": "Walk with me.", "correct": false, "whyWrong": "Funciona em conversa, mas para VIP use 'escort'." }
+        ], "explanation": "'Escort' eleva o registro — é a palavra de protocolo VIP." },
+        { "type": "fillGap", "title": "8. Convidar a relaxar", "prompt": "Please make yourself ___.", "correctAnswer": "comfortable", "acceptable": ["comfortable", "at home"], "explanation": "'Make yourself comfortable' ou 'make yourself at home' = fique à vontade.", "commonErrors": { "comfort": "Falta o -able. 'Comfort' é substantivo.", "good": "'Good' não funciona aqui. Use 'comfortable'." } },
+        { "type": "matching", "title": "9. Vocativo × situação", "pairs": [
+          { "left": "Sir", "right": "homem (formal)" },
+          { "left": "Ma'am", "right": "mulher (formal)" },
+          { "left": "Ladies and gentlemen", "right": "grupo formal" },
+          { "left": "Mr. Smith", "right": "homem com sobrenome" }
+        ], "explanation": "Vocativos VIP. Use o que cabe ao perfil do visitante." },
+        { "type": "reorder", "title": "10. Pergunta de preferência", "prompt": ["the", "rooms", "you", "Would", "or", "gallery", "prefer", "historical", "the"], "correctOrder": ["Would", "you", "prefer", "the", "historical", "rooms", "or", "the", "gallery"], "explanation": "Would you prefer + opção A + or + opção B. Estrutura completa." },
+        { "type": "multipleChoice", "title": "11. Despedida VIP", "prompt": "Best closing for a VIP visit:", "options": [
+          { "id": "a", "text": "Bye, see you.", "correct": false, "whyWrong": "Casual demais. VIP merece despedida formal." },
+          { "id": "b", "text": "Thank you for your visit. It was an honor.", "correct": true },
+          { "id": "c", "text": "End.", "correct": false, "whyWrong": "Frio e impessoal." },
+          { "id": "d", "text": "Tour finished.", "correct": false, "whyWrong": "Fato sem cordialidade." }
+        ], "explanation": "VIP merece agradecimento formal + reforço da honra." },
+        { "type": "reorder", "title": "12. Tour privado", "prompt": ["arranged", "We", "tour", "a", "for", "private", "you"], "correctOrder": ["We", "arranged", "a", "private", "tour", "for", "you"], "explanation": "Sujeito + verbo (passado) + objeto + 'for you'. Frase clássica VIP." }
+      ],
+      "wrapup": "Você já consegue receber qualquer VIP com elegância. Próxima lição: simulação completa ao ar livre.",
+      "takeaways": [
+        "I offer with 'Would you like...?' instead of 'Do you want...?'.",
+        "I give choices with 'Would you prefer A or B?'.",
+        "I open VIP visits with 'It is an honor to receive you'.",
+        "I reply with 'With pleasure' instead of 'OK'.",
+        "I use 'escort' instead of 'walk with' for VIP tours.",
+        "I close with 'Thank you for your visit. It was an honor'."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 8 do M5. Hospitalidade VIP em inglês. Aluno sai capaz de receber autoridades, executivos e delegações com registro formal apropriado.",
+        "pacing": "2h aula + 30min pré-estudo",
+        "lessonFlow": [
+          { "step": 1, "duration": "5 min", "what": "Recap L38", "instructions": "Em duplas, cada aluno faz 1 frase com going to e 1 com will sobre o futuro do porto." },
+          { "step": 2, "duration": "10 min", "what": "Intro + drill Would you like / prefer", "instructions": "Leia o intro. Drill em coro: 'Would you like... / Would you prefer...'. Aluno percebe a função (oferta vs escolha)." },
+          { "step": 3, "duration": "15 min", "what": "Vocab + frases de honra", "instructions": "Drill: 'It is an honor to receive you. With pleasure. Please make yourself comfortable.' Cada aluno repete 3 vezes em pé, postura ereta." },
+          { "step": 4, "duration": "20 min", "what": "Cenários VIP no quadro", "instructions": "Liste 4 perfis: senador, embaixador, executivo, jornalista premiada. Em duplas, alunos preparam saudação + oferta + escolha. Cada dupla apresenta 1." },
+          { "step": 5, "duration": "15 min", "what": "Context + Read aloud", "instructions": "Diálogo da delegação de Roterdã. Cada aluno lê com mic. Foco em entonação calma, ritmo pausado, postura formal." },
+          { "step": 6, "duration": "30 min", "what": "Exercícios 1-12", "instructions": "Atenção ao 1, 2 e 6 — diferença Would you like / prefer / With pleasure. Pilares VIP." },
+          { "step": 7, "duration": "10 min", "what": "Think about it", "instructions": "Pergunta crítica: ministro chega 30min antes. Aceite 3 frases que mostrem polidez + transparência + oferta." },
+          { "step": 8, "duration": "15 min", "what": "Role-play VIP", "instructions": "Em duplas: 1 aluno é VIP (sorteie carta), outro é anfitrião. Faz: saudação + oferta + escolha + tour + despedida em 3min. Trocam." }
+        ],
+        "commonChallenges": [
+          "'Do you want' em vez de 'Would you like': calque do português 'você quer'. Drill: nível VIP = sempre 'Would you like'.",
+          "Falta de vocativo formal: aluno fala 'welcome' sem ladies and gentlemen / sir / ma'am. Drill da escolha do vocativo.",
+          "Resposta 'OK' ou 'sure' a VIP: muito casual. Drill: substituir por 'With pleasure' ou 'Of course'.",
+          "Postura corporal: aluno cruza braços ou desvia olhar. Pratique olhar nos olhos + mãos visíveis.",
+          "Velocidade alta: VIP exige ritmo pausado. Drill: 1 frase por segundo, com pausa entre elas."
+        ]
+      }
+    },
+
+    {
+      "num": 40,
+      "title": "OUTDOOR — full delegation simulation at the museum",
+      "focus": "Outdoor full simulation: complete VIP/group reception in real spaces",
+      "type": "comm",
+      "level": "starter",
+      "grammar": "Recap of M5: politeness modals, sequencing, future, hospitality",
+      "objective": "Ao final desta lição, você será capaz de conduzir uma simulação completa de delegação VIP no Complexo Cultural Porto, integrando tudo que aprendeu em M5 — recepção, tour, perguntas difíceis, recomendações e despedida — em inglês fluente e seguro.",
+      "heroImage": "https://images.unsplash.com/photo-1564507004663-b6dfb3c824d5?w=1600&q=80",
+      "intro": "<p>This is your final test. No script. No safety net. Real spaces, real movement.</p><p>You walk a delegation through the museum. You greet, you tour, you handle questions, you say goodbye — all in English.</p><p>You have everything you need. Module 5 is in your voice now.</p>",
+      "vocab": [
+        { "en": "simulation", "pt": "simulação", "example": "Today is the full simulation." },
+        { "en": "delegation", "pt": "delegação", "example": "We receive a delegation today." },
+        { "en": "outdoor", "pt": "ao ar livre", "example": "The lesson is outdoor today." },
+        { "en": "real spaces", "pt": "espaços reais", "example": "We use the real spaces of the museum." },
+        { "en": "checkpoint", "pt": "ponto de parada", "example": "We have four checkpoints today." },
+        { "en": "shadowing", "pt": "acompanhar / observar", "example": "Today, two students do shadowing." },
+        { "en": "feedback", "pt": "retorno / avaliação", "example": "We give feedback after each round." },
+        { "en": "round", "pt": "rodada", "example": "Each student does one full round." },
+        { "en": "to perform", "pt": "atuar / executar", "example": "Each student performs the full role." },
+        { "en": "to assess", "pt": "avaliar", "example": "We assess fluency and clarity." },
+        { "en": "rehearsal", "pt": "ensaio", "example": "This is a final rehearsal for real visits." },
+        { "en": "improvise", "pt": "improvisar", "example": "If you forget a word, improvise." },
+        { "en": "calm voice", "pt": "voz calma", "example": "Keep a calm voice always." },
+        { "en": "eye contact", "pt": "contato visual", "example": "Maintain eye contact with the visitor." },
+        { "en": "well done", "pt": "muito bem", "example": "Well done — that was a great tour!" }
+      ],
+      "situation": "Aula ao ar livre: o grupo se desloca pelo Complexo Cultural Porto. Em duplas, cada aluno conduz um colega (ou o professor) por 4 checkpoints reais — recepção, sala da locomotiva, sacada panorâmica e Espaço Porto e Arte — usando inglês integrado de M5.",
+      "context": "Teacher: Today is your full simulation. You are the host. I am your visitor. Greet me, show me the museum, answer my questions, recommend something in Santos, tell me one fact about the future of the port, say goodbye like a professional. We start at the reception. Are you ready? Let's go!",
+      "grammarDetail": "<h4>Recap M5 — todos os pilares em uma simulação</h4><p>Hoje você integra <strong>tudo</strong> de M5:</p><div class='grammar-example'>L32 — full tour com first / next / after that / finally<br>L33 — could / may para perguntas difíceis<br>L34 — I'm sorry / I'm afraid para problemas<br>L35 — should / could para recomendar Santos<br>L36 — passado simples para contar a história<br>L37 — comandos de grupo (please follow me, this way)<br>L38 — going to / will para o futuro do porto<br>L39 — Would you like / prefer para hospitalidade VIP</div><h4>Os 4 checkpoints da simulação</h4><div class='grammar-example'><strong>1. Recepção</strong> — saudação + headcount + oferta de café<br><strong>2. Sala da locomotiva</strong> — história 1889 + fato impactante<br><strong>3. Sacada panorâmica</strong> — explicar canal + futuro do porto<br><strong>4. Espaço Porto e Arte / loja</strong> — recomendar Santos + despedida</div><h4>Lembretes finais</h4><div class='grammar-example'>Voz calma. Olhar nos olhos. Pausas. Sorriso.<br>Erro acontece — improvise e siga em frente.<br>Sempre suavize negativas com 'I'm afraid'.<br>Sempre feche com gratidão.</div>",
+      "grammarCriticalQuestion": "During the simulation, the visitor asks something you really do not know. What do you say in 2 sentences to keep the tour fluid?",
+      "exercises": [
+        { "type": "fillGap", "title": "1. Saudação inicial", "prompt": "Good morning! ___ to the Museu do Porto.", "correctAnswer": "Welcome", "acceptable": ["Welcome", "welcome"], "explanation": "Sempre comece com saudação + welcome. Padrão profissional." },
+        { "type": "multipleChoice", "title": "2. Oferta inicial", "prompt": "First minute with VIP. Best phrase:", "options": [
+          { "id": "a", "text": "Would you like a coffee before the tour?", "correct": true },
+          { "id": "b", "text": "Want coffee?", "correct": false, "whyWrong": "Casual demais. Use 'Would you like'." },
+          { "id": "c", "text": "Coffee?", "correct": false, "whyWrong": "Frase incompleta — falta cortesia." },
+          { "id": "d", "text": "I bring coffee.", "correct": false, "whyWrong": "Não é uma oferta — é uma afirmação. Use pergunta." }
+        ], "explanation": "Oferta polida sempre com 'Would you like'." },
+        { "type": "matching", "title": "3. Checkpoint × frase-chave", "pairs": [
+          { "left": "Recepção", "right": "Would you like a coffee?" },
+          { "left": "Sala da locomotiva", "right": "It all began in 1889." },
+          { "left": "Sacada panorâmica", "right": "By 2030, the port will handle 6M TEUs." },
+          { "left": "Espaço Porto e Arte", "right": "You should visit the orla." }
+        ], "explanation": "Cada checkpoint pede uma frase-chave do que aprendemos. Memorize." },
+        { "type": "reorder", "title": "4. Comando de movimento", "prompt": ["follow", "This", "way", "please", "me"], "correctOrder": ["This", "way", "please", "follow", "me"], "explanation": "Reforço do comando padrão: 'This way, please. Follow me'." },
+        { "type": "fillGap", "title": "5. Perguntar conforto", "prompt": "Please make yourself ___.", "correctAnswer": "comfortable", "acceptable": ["comfortable", "at home"], "explanation": "Frase de hospitalidade clássica. Reforço de L39." },
+        { "type": "multipleChoice", "title": "6. Não sabe a resposta", "prompt": "Visitor asks something you do not know. Best response:", "options": [
+          { "id": "a", "text": "I don't know.", "correct": false, "whyWrong": "Insuficiente. Sempre adicione ação." },
+          { "id": "b", "text": "That is a good question. Let me check and I will find out for you.", "correct": true },
+          { "id": "c", "text": "Ask someone.", "correct": false, "whyWrong": "Joga responsabilidade fora. Comprometa-se." },
+          { "id": "d", "text": "No.", "correct": false, "whyWrong": "Frio e impessoal. Sempre se ofereça para descobrir." }
+        ], "explanation": "Elogio da pergunta + compromisso de descobrir. Reforço de L33." },
+        { "type": "fillGap", "title": "7. Recomendação de Santos", "prompt": "After the tour, you ___ visit the orla — it is amazing.", "correctAnswer": "should", "acceptable": ["should"], "explanation": "Recomendação forte: 'should'. Reforço de L35." },
+        { "type": "matching", "title": "8. Erro × correção", "pairs": [
+          { "left": "Wait.", "right": "One moment, please." },
+          { "left": "No.", "right": "I am afraid not." },
+          { "left": "Want coffee?", "right": "Would you like a coffee?" },
+          { "left": "Bye.", "right": "Thank you for your visit." }
+        ], "explanation": "Cada frase casual tem versão profissional. Em simulação, sempre use a profissional." },
+        { "type": "multipleChoice", "title": "9. Despedida final", "prompt": "End of full tour. Best closing:", "options": [
+          { "id": "a", "text": "Thank you for your visit. It was an honor. I hope you enjoyed the tour.", "correct": true },
+          { "id": "b", "text": "Goodbye.", "correct": false, "whyWrong": "Curto demais para encerrar visita." },
+          { "id": "c", "text": "Tour end.", "correct": false, "whyWrong": "Frase quebrada e fria." },
+          { "id": "d", "text": "OK, you go.", "correct": false, "whyWrong": "Soa rude. VIP merece encerramento caloroso." }
+        ], "explanation": "Despedida completa: gratidão + honra + esperança. Padrão VIP." },
+        { "type": "reorder", "title": "10. Fato do futuro do porto", "prompt": ["6", "TEUs", "By", "the", "handle", "will", "port", "million", "2030"], "correctOrder": ["By", "2030", "the", "port", "will", "handle", "6", "million", "TEUs"], "explanation": "Reforço L38: by + ano + sujeito + will + verbo + número + objeto." }
+      ],
+      "wrapup": "Você acabou de fazer a simulação completa. Agora é só repetir no atendimento real. Bem-vindo a M5 concluído — Porto de Santos em inglês.",
+      "takeaways": [
+        "I can run a full delegation tour in English from start to finish.",
+        "I integrate politeness, sequencing, history, future, recommendations.",
+        "I improvise when I forget a word — and keep going.",
+        "I keep a calm voice, eye contact and a real smile.",
+        "I always close with gratitude and warmth.",
+        "I am ready to receive any visitor at the Museu do Porto."
+      ],
+      "teacherGuide": {
+        "overview": "Lição 9 do M5 — OUTDOOR. Simulação integradora ao vivo. Aluno sai com a confiança de quem fez todo o ciclo de atendimento em ambiente real.",
+        "pacing": "3h ao ar livre (4 checkpoints + feedback)",
+        "lessonFlow": [
+          { "step": 1, "duration": "10 min", "what": "Briefing inicial na recepção", "instructions": "Reúna a turma. Explique os 4 checkpoints e o papel de cada um. Sorteie ordem das duplas. Cada aluno fará 1 rodada como anfitrião." },
+          { "step": 2, "duration": "15 min", "what": "Demonstração pelo professor", "instructions": "Faça você mesmo a primeira rodada completa, do início ao fim. Os alunos observam e tomam notas das frases-chave usadas." },
+          { "step": 3, "duration": "30 min", "what": "Checkpoint 1 — Recepção", "instructions": "Cada aluno faz a recepção: saudação + Would you like a coffee + headcount + Please follow me. Feedback rápido após cada um (1min)." },
+          { "step": 4, "duration": "30 min", "what": "Checkpoint 2 — Sala da locomotiva", "instructions": "Cada aluno conta a história em 4 frases (first / then / after that / finally). Foco em verbos no passado: began, grew, became, built." },
+          { "step": 5, "duration": "30 min", "what": "Checkpoint 3 — Sacada panorâmica", "instructions": "Cada aluno explica canal + futuro do porto usando going to / will. Inclua 1 fato concreto (179.8M tonnes / 5.4M TEUs / 64 berths)." },
+          { "step": 6, "duration": "30 min", "what": "Checkpoint 4 — Espaço Porto e Arte", "instructions": "Cada aluno recomenda Santos com should/could (orla, Coffee Museum, Vila Belmiro). Em seguida: despedida VIP completa." },
+          { "step": 7, "duration": "20 min", "what": "Pergunta crítica + improviso", "instructions": "Surpresa: você (professor) faz uma pergunta difícil em cada rodada. Aluno deve responder com 'Let me check' / 'I'm afraid' / 'That is a good question'. Avalie improviso." },
+          { "step": 8, "duration": "15 min", "what": "Roda final de feedback", "instructions": "Em círculo na entrada. Cada aluno escolhe o melhor momento da própria simulação + 1 ponto a melhorar. Professor fecha com 'Well done — you are ready'." }
+        ],
+        "commonChallenges": [
+          "Travamento ao esquecer palavra: aluno congela. Reforce o reflexo 'Let me think' / 'One moment, please' para ganhar tempo.",
+          "Voz baixa em ambiente aberto: vento, ruído. Pratique projeção sem gritar — pausa entre frases ajuda.",
+          "Mistura PT-EN durante simulação: aluno escapa para português ao se enrolar. Combine antes: tudo em inglês, mesmo errado.",
+          "Esquecer despedida: aluno termina o tour e fica em silêncio. Drill final do 'Thank you for your visit'.",
+          "Comparação entre alunos: alguns ficam ansiosos vendo colegas. Reforce que cada um tem seu ritmo — o objetivo é completar, não competir."
+        ]
+      }
+    }
+  ]
+}
+

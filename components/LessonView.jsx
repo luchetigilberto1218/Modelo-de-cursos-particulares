@@ -3,9 +3,31 @@
 import Link from 'next/link';
 import AudioPlayer from './AudioPlayer';
 import VocabChip from './VocabChip';
+import Exercise from './Exercise';
+import SpeakingExercise from './SpeakingExercise';
+import Icon from './Icon';
 
 function stripHtml(html) {
   return html?.replace(/<br>/g, ' ').replace(/<[^>]+>/g, '').trim() || '';
+}
+
+// Convert "<h4>Watch Out!</h4>" + following block into a styled CUIDADO banner.
+// Captures the heading and the next sibling block (paragraph or div) up to the next <h4>.
+function styleWatchOut(html) {
+  if (!html) return html;
+  const re = /<h4[^>]*>\s*(?:Watch\s*Out!?|Cuidado!?|Atenção!?)[^<]*<\/h4>\s*([\s\S]*?)(?=<h4|$)/gi;
+  return html.replace(re, (_match, body) => {
+    return `
+      <div class="watch-out-banner">
+        <div class="wob-sign">!</div>
+        <div class="wob-text">
+          <span class="wob-label">Cuidado</span>
+          <span class="wob-title">Erro comum em português → inglês</span>
+        </div>
+      </div>
+      <div class="watch-out-content">${body}</div>
+    `;
+  });
 }
 
 function extractAudioText(content) {
@@ -60,6 +82,7 @@ const TRACK_LABEL = {
 
 export default function LessonView({ lesson, lessonIndex, totalLessons, clientId, backHref, course }) {
   const l = lesson;
+  const isOutdoor = l.type === 'outdoor';
   const prevNum = lessonIndex > 0 ? lessonIndex : null;
   const nextNum = lessonIndex < totalLessons - 1 ? lessonIndex + 2 : null;
   // Prefer lesson-assigned character (Czarnikow), fall back to module rotation (APS)
@@ -73,12 +96,18 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
   const hasObjectVocab = l.vocab?.[0] && typeof l.vocab[0] === 'object';
   const isReviewVocab = !hasObjectVocab && l.vocab?.[0] && (
     l.vocab[0].startsWith('Review') || l.vocab[0].startsWith('No new') || l.vocab[0].startsWith('Nenhum')
-  );
+  ) || (hasObjectVocab && l.vocab?.[0]?.en === 'Review');
+
+  // Detect typed exercises (new APS / FAAP-style lessons)
+  const isTypedLesson = l.exercises?.[0]?.type !== undefined;
 
   return (
     <>
       {/* Lesson hero */}
       <div className="lesson-hero">
+        {l.heroImage && (
+          <div className="lesson-hero-bg" style={{ backgroundImage: `url(${l.heroImage})` }} />
+        )}
         <div className="lesson-hero-inner">
           <div className="lesson-label">{LEVEL_LABEL[l.level] || ''} · {TRACK_LABEL[l.track] || ''} · Lesson {l.trackOrder || l.num}</div>
           <h1>{l.title}</h1>
@@ -129,7 +158,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
               justifyContent: 'space-between',
               userSelect: 'none',
             }}>
-              <span>Teacher Guide · {l.teacherGuide.duration || l.teacherGuide.pacing || '90 minutes'}</span>
+              <span>Teacher Guide · Plano da atividade de hoje</span>
               <span style={{ fontSize: 12, color: '#B8960A' }}>tap to expand</span>
             </summary>
             <div style={{ padding: '0 20px 20px' }}>
@@ -138,61 +167,105 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                   {l.teacherGuide.overview}
                 </p>
               )}
-              <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: '#8C6A00', margin: '16px 0 10px' }}>
-                Lesson Flow (90 min) — follows the page order
-              </h4>
-              <ol style={{ paddingLeft: 22, margin: 0 }}>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Objective of the class</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(3 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Read the objective aloud. Ask the student what they already know about the topic.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Introduction</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(10 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Play the intro audio once, then read together. Check understanding with 2 quick questions.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Vocabulary + Vocabulary Practice</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(15 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Drill each word with its example. Then do the Vocabulary Practice exercise right after — it uses all 10 words and reinforces them in context. Check with Show answers.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Context</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(5 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Set the scene. Ask the student to imagine themselves in the situation before moving on.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Role Play</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(15 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Run the role play twice, swapping roles. Use the sample dialogue only if the student gets stuck.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Additional Audios</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(10 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Play each audio, then go through the tasks. Replay key sections if needed.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Exercises (Read aloud + Complete)</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(15 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Do the Read aloud for pronunciation, then the fill/complete exercise. Use Show answers for correction.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Questions &amp; Answers</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(10 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Ask 3–5 questions. Compare with the model answer only after the student speaks.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Extra Material 1 — Sentences I Need to Own</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(5 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Drill each sentence aloud. Student should leave the class able to say them naturally.</div>
-                </li>
-                <li style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
-                  <strong>Grammar of the Lesson</strong>
-                  <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>(7 min)</span>
-                  <div style={{ color: '#5A4A1F', marginTop: 2 }}>Start with the Grammar Point. Go to Deep Dive only if the student wants more detail or makes errors.</div>
-                </li>
-              </ol>
+
+              {/* Outdoor lessons → field-activity menu */}
+              {Array.isArray(l.teacherGuide.fieldActivities) ? (
+                <>
+                  {l.teacherGuide.openingRitual && (
+                    <>
+                      <h4 style={sectionH4Outdoor()}>
+                        <Icon name="flag" size={14} color="#8C6A00" />
+                        <span>Ritual de abertura — celular como apoio</span>
+                      </h4>
+                      <p style={{ fontSize: 14, lineHeight: 1.6, color: '#5A4A1F', margin: 0, padding: '12px 14px', background: '#FFFCF0', border: '1px dashed #E8C786', borderRadius: 8 }}>
+                        {l.teacherGuide.openingRitual}
+                      </p>
+                    </>
+                  )}
+
+                  <h4 style={sectionH4Outdoor('20px 0 10px')}>
+                    <Icon name="target" size={14} color="#8C6A00" />
+                    <span>Sugestões de atividades em campo (escolha quais e em que ordem)</span>
+                  </h4>
+                  <div style={{ display: 'grid', gap: 10 }}>
+                    {l.teacherGuide.fieldActivities.map((a, i) => (
+                      <div key={i} style={{ background: '#FFFFFF', border: '1px solid #F5D976', borderRadius: 10, padding: 14 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6, flexWrap: 'wrap' }}>
+                          <span style={{ fontSize: 13, fontWeight: 700, color: '#5A4A1F' }}>{i + 1}. {a.title}</span>
+                          {a.format && (
+                            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: 0.6, textTransform: 'uppercase', padding: '2px 8px', borderRadius: 980, background: '#FEEBC8', color: '#8C6A00' }}>{a.format}</span>
+                          )}
+                          {a.location && (
+                            <span style={{ fontSize: 11, color: '#8C6A00', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                              <Icon name="pin" size={11} color="#8C6A00" />
+                              {a.location}
+                            </span>
+                          )}
+                        </div>
+                        {a.instructions && (
+                          <div style={{ fontSize: 13, color: '#5A4A1F', lineHeight: 1.55 }}>{a.instructions}</div>
+                        )}
+                        {a.evaluation && (
+                          <div style={{ fontSize: 12, color: '#8C6A00', marginTop: 6, paddingTop: 6, borderTop: '1px dashed #F0D080', fontStyle: 'italic' }}>
+                            <strong>Avaliar:</strong> {a.evaluation}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+
+                  {l.teacherGuide.vocabPeek && (
+                    <>
+                      <h4 style={sectionH4Outdoor('20px 0 8px')}>
+                        <Icon name="eye" size={14} color="#8C6A00" />
+                        <span>Espiadinha permitida no app</span>
+                      </h4>
+                      <p style={{ fontSize: 13, lineHeight: 1.55, color: '#5A4A1F', margin: 0 }}>{l.teacherGuide.vocabPeek}</p>
+                    </>
+                  )}
+
+                  {Array.isArray(l.teacherGuide.evaluationFocus) && l.teacherGuide.evaluationFocus.length > 0 && (
+                    <>
+                      <h4 style={sectionH4Outdoor('20px 0 8px')}>
+                        <Icon name="check" size={14} color="#8C6A00" />
+                        <span>Foco de avaliação</span>
+                      </h4>
+                      <ul style={{ paddingLeft: 22, margin: 0 }}>
+                        {l.teacherGuide.evaluationFocus.map((c, i) => (
+                          <li key={i} style={{ marginBottom: 4, fontSize: 13, lineHeight: 1.55, color: '#5A4A1F' }}>{c}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+
+                  {l.teacherGuide.wrapUpRitual && (
+                    <>
+                      <h4 style={sectionH4Outdoor('20px 0 8px')}>
+                        <Icon name="film" size={14} color="#8C6A00" />
+                        <span>Ritual de fechamento</span>
+                      </h4>
+                      <p style={{ fontSize: 13, lineHeight: 1.55, color: '#5A4A1F', margin: 0 }}>{l.teacherGuide.wrapUpRitual}</p>
+                    </>
+                  )}
+                </>
+              ) : Array.isArray(l.teacherGuide.lessonFlow) && l.teacherGuide.lessonFlow.length > 0 ? (
+                /* Classic in-class flow → render the actual lessonFlow array */
+                <>
+                  <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: '#8C6A00', margin: '16px 0 10px' }}>
+                    Lesson Flow
+                  </h4>
+                  <ol style={{ paddingLeft: 22, margin: 0 }}>
+                    {l.teacherGuide.lessonFlow.map((s, i) => (
+                      <li key={i} style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
+                        <strong>{s.what || `Passo ${i + 1}`}</strong>
+                        {s.duration && <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>({s.duration})</span>}
+                        {s.instructions && <div style={{ color: '#5A4A1F', marginTop: 2 }}>{s.instructions}</div>}
+                      </li>
+                    ))}
+                  </ol>
+                </>
+              ) : null}
+
               {l.teacherGuide.commonChallenges?.length > 0 && (
                 <>
                   <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: '#8C6A00', margin: '20px 0 10px' }}>
@@ -226,17 +299,26 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           </div>
         )}
 
-        {/* === IN CLASS EXERCISES === */}
-        <h2 className="part-title">IN CLASS EXERCISES</h2>
+        {/* === OUTDOOR LESSON STUDENT BRIEFING === */}
+        {isOutdoor && (
+          <OutdoorStudentBriefing lesson={l} clientId={clientId} />
+        )}
+
+        {/* === IN CLASS EXERCISES (only for in-class lessons) === */}
+        {!isOutdoor && <h2 className="part-title">IN CLASS EXERCISES</h2>}
 
         {/* 1. Objective of the class */}
-        <div className="lesson-section">
-          <div className="section-title">
-            <div className="section-icon">O</div> Objective of the class
+        {!isOutdoor && (
+          <div className="lesson-section">
+            <div className="section-title">
+              <div className="section-icon">O</div> Objective of the class
+            </div>
+            <p>{l.objective}</p>
           </div>
-          <p>{l.objective}</p>
-        </div>
+        )}
 
+        {!isOutdoor && (
+        <>
         {/* 2. Introduction */}
         {l.intro && (
           <div className="lesson-section">
@@ -247,7 +329,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
               <p dangerouslySetInnerHTML={{ __html: l.intro }} />
             </div>
             <div style={{ marginTop: 12 }}>
-              <AudioPlayer key={`intro-${l.num}`} text={stripHtml(l.intro)} rate={0.8} label="Listen to introduction" voiceType={voiceType} />
+              <AudioPlayer key={`intro-${l.num}`} text={stripHtml(l.intro)} audioUrl={l.audio?.intro} rate={0.95} label="Listen to introduction" voiceType={voiceType} />
             </div>
           </div>
         )}
@@ -258,20 +340,32 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
             <div className="section-icon">V</div> Vocabulary
           </div>
           {isReviewVocab ? (
-            <p>{l.vocab[0]}</p>
+            <p>{typeof l.vocab[0] === 'object' ? (l.vocab[0].pt || l.vocab[0].en) : l.vocab[0]}</p>
           ) : hasObjectVocab ? (
             <div className="vocab-list">
               {l.vocab.map((v, i) => (
                 <div key={i} className="vocab-row">
-                  <div className="vocab-row-words">
-                    <span className="vocab-en">{v.en}</span>
-                    <span className="vocab-pt"> — {v.pt}</span>
-                  </div>
-                  {v.example && (
-                    <div className="vocab-example">
-                      <em>e.g.</em> {v.example}
+                  <div className="vocab-body">
+                    <div className="vocab-row-words">
+                      <span className="vocab-en">{v.en}</span>
+                      <span className="vocab-pt"> — {v.pt}</span>
                     </div>
-                  )}
+                    {v.example && (
+                      <div className="vocab-example">
+                        <em>e.g.</em> {v.example}
+                      </div>
+                    )}
+                  </div>
+                  <div className="vocab-audio">
+                    <AudioPlayer
+                      key={`vocab-${l.num}-${i}`}
+                      text={v.example ? `${v.en}. ${v.example}` : v.en}
+                      rate={0.85}
+                      label=""
+                      small
+                      voiceType={voiceType}
+                    />
+                  </div>
                 </div>
               ))}
             </div>
@@ -283,8 +377,8 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
             </div>
           )}
 
-          {/* Vocabulary Practice — exercise[2] shown right after vocab */}
-          {l.exercises?.[2] && (() => {
+          {/* Vocabulary Practice — exercise[2] shown right after vocab (legacy Czarnikow) */}
+          {!isTypedLesson && l.exercises?.[2] && (() => {
             const ex = l.exercises[2];
             const isReadAloud = /Read aloud|Listening|Pronunciation/i.test(ex.title || '');
             const parenMatches = !isReadAloud ? [...(ex.content || '').matchAll(/([a-j])\)[^(]*\(([^)]{1,40})\)/g)] : [];
@@ -319,6 +413,28 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           <div className="context-box">
             <p>{l.situation}</p>
           </div>
+          {l.context && (
+            <div style={{ marginTop: 14 }}>
+              <div style={{ fontSize: 12, color: '#8892A4', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 8 }}>
+                Read aloud · Leia em voz alta
+              </div>
+              <div style={{
+                padding: 14,
+                background: '#FFFFFF',
+                border: '1px solid #E4E9EF',
+                borderRadius: 10,
+                fontSize: 15,
+                lineHeight: 1.6,
+                fontStyle: 'italic',
+              }}>
+                "{l.context}"
+              </div>
+              <div style={{ marginTop: 10 }}>
+                <AudioPlayer key={`ctx-${l.num}`} text={l.context} audioUrl={l.audio?.context} rate={0.95} label="Listen to context" voiceType={voiceType} />
+              </div>
+              <SpeakingExercise mode="read" targetText={l.context} levelId={l.level || 'starter'} lang="en-US" />
+            </div>
+          )}
         </div>
 
         {/* 5. Role Plays (moved up) */}
@@ -386,7 +502,16 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           <div className="section-title">
             <div className="section-icon">E</div> Exercises
           </div>
-          {l.exercises?.filter((_, i) => i !== 2).map((ex, i) => {
+          {/* Typed exercises (new APS lessons) */}
+          {isTypedLesson && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+              {l.exercises.map((ex, i) => (
+                <Exercise key={i} exercise={ex} levelId={l.level || 'starter'} />
+              ))}
+            </div>
+          )}
+          {/* Legacy HTML exercises (Czarnikow) */}
+          {!isTypedLesson && l.exercises?.filter((_, i) => i !== 2).map((ex, i) => {
             const audioText = isAudioExercise(ex.title) ? extractAudioText(ex.content) : '';
             const isReadAloud = /Read aloud|Listening|Pronunciation/i.test(ex.title || '');
             const parenMatches = !isReadAloud ? [...(ex.content || '').matchAll(/([a-j])\)[^(]*\(([^)]{1,40})\)/g)] : [];
@@ -506,12 +631,22 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {/* === EXTRA MATERIAL 1 === */}
         {l.takeaways && l.takeaways.length > 0 && (
           <>
-            <h2 className="part-title">EXTRA MATERIAL 1</h2>
+            <h2 className="part-title">{isTypedLesson ? 'O QUE APRENDI HOJE' : 'EXTRA MATERIAL 1'}</h2>
             <div className="lesson-section">
               <div className="section-title">
-                <div className="section-icon">S</div> Sentences I Need to Own
+                <div className="section-icon">✓</div>
+                {isTypedLesson ? 'I can / Eu consigo' : 'Sentences I Need to Own'}
               </div>
               <div className="takeaway-box">
+                {isTypedLesson && (
+                  <div className="takeaway-heading">
+                    <span style={{ fontSize: 22 }}>🎯</span>
+                    <div>
+                      What I learned today
+                      <span className="takeaway-heading-pt">O que eu consegui hoje</span>
+                    </div>
+                  </div>
+                )}
                 {l.takeaways.map((t, i) => (
                   <div key={i} className="takeaway-item">
                     <span style={{ flex: 1 }}>{t}</span>
@@ -528,11 +663,64 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
 
         {/* Grammar Point */}
         <div className="lesson-section">
-          <div className="section-title">
-            <div className="section-icon">G</div> Grammar Point
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14, gap: 12 }}>
+            <div className="section-title" style={{ marginBottom: 0 }}>
+              <div className="section-icon">G</div> Grammar Point
+            </div>
+            {(l.grammarDetail || l.audio?.grammar) && (
+              <AudioPlayer
+                key={`gr-${l.num}`}
+                text={`${l.grammar || ''}. ${stripHtml(l.grammarDetail)}`}
+                audioUrl={l.audio?.grammar}
+                rate={0.95}
+                label="Listen"
+                small
+                voiceType={voiceType}
+              />
+            )}
           </div>
-          <div className="grammar-box" dangerouslySetInnerHTML={{ __html: l.grammarDetail }} />
+          <div className="grammar-box" dangerouslySetInnerHTML={{ __html: styleWatchOut(l.grammarDetail) }} />
         </div>
+
+        {/* Think about it — open question with free-mode SpeakingExercise */}
+        {l.grammarCriticalQuestion && (
+          <div className="lesson-section">
+            <div style={{
+              padding: '20px 22px',
+              borderRadius: 14,
+              background: 'linear-gradient(135deg, #FFFBEB, #FFFFFF)',
+              border: '1px dashed #D69E2E',
+              position: 'relative',
+            }}>
+              <div style={{
+                position: 'absolute',
+                top: -12,
+                left: 18,
+                fontSize: 10,
+                fontWeight: 800,
+                letterSpacing: '0.25em',
+                color: '#7B5300',
+                textTransform: 'uppercase',
+                background: '#FFFFFF',
+                padding: '2px 10px',
+                borderRadius: 999,
+                border: '1px solid #D69E2E',
+              }}>
+                🤔 Think about it
+              </div>
+              <p style={{ fontSize: 12, color: '#8892A4', margin: '6px 0 10px' }}>
+                Não há resposta certa — é pra você pensar em inglês. Toque no microfone e responda como vier, mesmo que seja uma frase curta.
+              </p>
+              <p style={{ margin: '6px 0 0', fontSize: 16, fontStyle: 'italic', color: '#2D3748', lineHeight: 1.55 }}>
+                {l.grammarCriticalQuestion}
+              </p>
+              <div style={{ marginTop: 10 }}>
+                <AudioPlayer key={`crit-${l.num}`} text={l.grammarCriticalQuestion} audioUrl={l.audio?.critical} rate={0.95} label="Listen" small voiceType={voiceType} />
+              </div>
+              <SpeakingExercise mode="free" levelId={l.level || 'starter'} lang="en-US" />
+            </div>
+          </div>
+        )}
 
         {/* Grammar Deep Dive */}
         {l.grammarDeepDive && (
@@ -606,6 +794,9 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           </div>
         )}
 
+        </>
+        )}
+
         {/* Bottom nav */}
         <div className="lesson-bottom-nav">
           {prevNum ? (
@@ -620,3 +811,116 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
     </>
   );
 }
+
+/* ─────────────────────────────────────────────────────────────────
+   OutdoorStudentBriefing — what the student sees on outdoor lessons.
+   No exercises, no voice recording, no "Think about it".
+   Shows: milestone + celebration (PT/EN), grammar recap, outdoor prep.
+   Reads `lesson.studentBriefing` if present; otherwise falls back to the
+   lesson's own focus + objective for graceful degradation.
+   ───────────────────────────────────────────────────────────────── */
+function sectionH4Outdoor(margin = '16px 0 8px') {
+  return {
+    fontSize: 12, textTransform: 'uppercase', letterSpacing: 1,
+    color: '#8C6A00', margin, display: 'flex', alignItems: 'center', gap: 8,
+  };
+}
+
+function OutdoorStudentBriefing({ lesson, clientId }) {
+  const b = lesson.studentBriefing || {};
+  const milestone = b.milestone || `Você chegou ao fim do conteúdo dessa parte do curso. Hora de aplicar tudo no porto.`;
+  const celebration = b.celebration || `Você não está começando do zero hoje. Você já consegue se virar em inglês em situações reais. Today is the day to use what you know — fora da tela, dentro do museu.`;
+  const structures = Array.isArray(b.structures) ? b.structures : [];
+  const outdoorPrep = b.outdoorPrep || `Hoje a aula é fora da sala, no Complexo Cultural. Leve o celular carregado, mas a aula é viva. Você pode dar uma espiadinha rápida no app se travar — mas a regra é: olhos no porto, não na tela.`;
+
+  return (
+    <>
+      <h2 className="part-title" style={{ color: '#B7791F', display: 'flex', alignItems: 'center', gap: 10 }}>
+        <Icon name="flag" size={22} color="#B7791F" />
+        <span>Aula outdoor — preparação</span>
+      </h2>
+
+      {/* Milestone banner */}
+      <div style={{
+        margin: '0 0 18px',
+        padding: '22px 24px',
+        borderRadius: 16,
+        background: 'linear-gradient(135deg, #FFFCF5 0%, #FEEBC8 100%)',
+        border: '1px solid #E8C786',
+      }}>
+        <div style={{ fontSize: 11, fontWeight: 800, letterSpacing: 1.4, textTransform: 'uppercase', color: '#B7791F', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
+          <Icon name="target" size={13} color="#B7791F" />
+          <span>Você chegou até aqui</span>
+        </div>
+        <p style={{ fontSize: 16, fontWeight: 600, color: '#7B341E', lineHeight: 1.5, margin: 0 }}>
+          {milestone}
+        </p>
+      </div>
+
+      {/* Celebration / motivational */}
+      <div className="lesson-section">
+        <div className="section-title">
+          <div className="section-icon" style={{ background: '#2F855A', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Icon name="bicep" size={18} color="#FFFFFF" strokeWidth={2} />
+          </div>
+          Olha de onde você veio
+        </div>
+        <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--text)' }}>{celebration}</p>
+      </div>
+
+      {/* Structures recap */}
+      {structures.length > 0 && (
+        <div className="lesson-section">
+          <div className="section-title">
+            <div className="section-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Icon name="list" size={18} color="#FFFFFF" strokeWidth={2} />
+            </div>
+            O que você já sabe (e vai usar hoje)
+          </div>
+          <div style={{ display: 'grid', gap: 10 }}>
+            {structures.map((s, i) => (
+              <div key={i} style={{
+                padding: '14px 16px',
+                borderRadius: 10,
+                background: '#FFFFFF',
+                border: '1px solid var(--gray-light)',
+                borderLeft: '4px solid #0071E3',
+              }}>
+                <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--navy)', marginBottom: 4 }}>{s.title}</div>
+                {s.example && (
+                  <div style={{ fontSize: 13, color: 'var(--text)', fontStyle: 'italic', marginBottom: 4 }}>
+                    e.g. {s.example}
+                  </div>
+                )}
+                {s.whenToUse && (
+                  <div style={{ fontSize: 13, color: 'var(--gray)', lineHeight: 1.5 }}>
+                    <strong style={{ color: 'var(--text)' }}>Quando usar:</strong> {s.whenToUse}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Outdoor prep */}
+      <div className="lesson-section">
+        <div className="section-title">
+          <div className="section-icon" style={{ background: '#B7791F', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Icon name="pin" size={18} color="#FFFFFF" strokeWidth={2} />
+          </div>
+          Como se preparar para hoje
+        </div>
+        <div style={{
+          padding: '16px 18px',
+          borderRadius: 12,
+          background: 'linear-gradient(135deg, #EBF8FF 0%, #FFFFFF 100%)',
+          border: '1px solid #BEE3F8',
+        }}>
+          <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--text)', margin: 0 }}>{outdoorPrep}</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
