@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { getCourse, getTheme } from '../../lib/courses';
+import { getCourseLite, getTheme } from '../../lib/courses';
 import NavBar from '../../components/NavBar';
 import CourseDashboard from '../../components/CourseDashboard';
 import LevelHub from '../../components/LevelHub';
@@ -7,7 +7,7 @@ import LevelHub from '../../components/LevelHub';
 export default async function ClientPage({ params }) {
   const { client } = await params;
 
-  const course = getCourse(client);
+  const course = getCourseLite(client);
   const theme = getTheme(client);
   if (!course) redirect('/');
 
@@ -17,7 +17,7 @@ export default async function ClientPage({ params }) {
     <>
       <NavBar user={null} theme={theme} clientId={client} />
       {isLevelPlatform ? (
-        <LevelHub course={course} theme={theme} clientId={client} />
+        <LevelHub theme={theme} clientId={client} />
       ) : (
         <CourseDashboard course={course} theme={theme} clientId={client} />
       )}

@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { getCourse, getTheme } from '../../../../../../lib/courses';
+import { getCourseLite, getTheme } from '../../../../../../lib/courses';
 import NavBar from '../../../../../../components/NavBar';
 import TrackPage from '../../../../../../components/TrackPage';
 
@@ -8,7 +8,7 @@ const VALID_LEVELS = ['confidence', 'essentials', 'rise', 'apex'];
 export default async function TrackRoute({ params }) {
   const { client, levelId, trackId } = await params;
 
-  const course = getCourse(client);
+  const course = getCourseLite(client);
   const theme = getTheme(client);
   if (!course) redirect('/');
   if (!VALID_LEVELS.includes(levelId)) redirect(`/${client}`);

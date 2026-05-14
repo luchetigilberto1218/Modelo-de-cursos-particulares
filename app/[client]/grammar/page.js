@@ -1,12 +1,12 @@
 import { redirect } from 'next/navigation';
-import { getCourse, getTheme } from '../../../lib/courses';
+import { getCourseLite, getTheme } from '../../../lib/courses';
 import NavBar from '../../../components/NavBar';
 import GrammarReference from '../../../components/GrammarReference';
 
 export default async function GrammarPage({ params }) {
   const { client } = await params;
 
-  const course = getCourse(client);
+  const course = getCourseLite(client);
   const theme = getTheme(client);
   if (!course) redirect('/');
 

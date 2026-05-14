@@ -1,12 +1,12 @@
 import { redirect } from 'next/navigation';
-import { getCourse, getTheme } from '../../../lib/courses';
+import { getCourseForSearch, getTheme } from '../../../lib/courses';
 import NavBar from '../../../components/NavBar';
 import SearchView from '../../../components/SearchView';
 
 export default async function SearchPage({ params }) {
   const { client } = await params;
 
-  const course = getCourse(client);
+  const course = getCourseForSearch(client);
   const theme = getTheme(client);
   if (!course) redirect('/');
 
