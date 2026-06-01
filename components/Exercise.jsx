@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { translateExerciseTitle, UI_LABELS_PT, UI_LABELS_EN } from '../lib/translate-exercises';
 import SpeakingExercise from './SpeakingExercise';
+import AudioPlayer from './AudioPlayer';
 
 /**
  * Typed exercise dispatcher.
@@ -25,6 +26,7 @@ export default function Exercise({ exercise, levelId = 'starter', onResult, quiz
   if (type === 'reorder') return <Reorder {...ctx} />;
   if (type === 'writing') return <Writing {...ctx} />;
   if (type === 'speaking') return <Speaking {...ctx} />;
+  if (type === 'dictation') return <Dictation {...ctx} />;
   if (type === 'info') return <Info {...ctx} />;
 
   return (
@@ -501,7 +503,10 @@ function Writing({ ex, title, L, onResult, quizMode }) {
 
   return (
     <Shell title={title}>
-      {ex.prompt && <p style={{ fontSize: 15, marginBottom: 14, lineHeight: 1.6 }}>{ex.prompt}</p>}
+      {ex.prompt && <p style={{ fontSize: 15, marginBottom: 8, lineHeight: 1.6 }}>{ex.prompt}</p>}
+      <div style={{ fontSize: 12.5, color: '#1B5E36', background: '#EAF7EF', border: '1px solid #A7D7BC', borderRadius: 8, padding: '8px 12px', marginBottom: 12, lineHeight: 1.5 }}>
+        A correção olha só o <strong>uso dos termos em inglês</strong> da lição — não a gramática nem outras nuances. {ex.minKeywords ? `Use ao menos ${ex.minKeywords} termo(s).` : ''}
+      </div>
       <textarea
         value={value}
         onChange={e => setValue(e.target.value)}
@@ -533,17 +538,17 @@ function Writing({ ex, title, L, onResult, quizMode }) {
               {isCorrect ? '✓ ' : '✗ '}
               <strong>
                 {isCorrect
-                  ? 'Sua resposta cobre a proposta.'
-                  : 'Sua resposta não cobre a proposta da questão.'}
+                  ? `Boa! Você aplicou os termos da lição (${result.found.length} de ${ex.keywords ? ex.keywords.length : result.found.length}).`
+                  : `Quase — você usou ${result.found.length} termo(s). Use ao menos ${result.need || 1} termo(s) em inglês da lição.`}
               </strong>
               {result.found.length > 0 && (
                 <div style={{ marginTop: 8, fontSize: 13 }}>
-                  <span style={{ color: OK_FG }}>Você usou:</span> {result.found.map(k => <KeywordChip key={k} kind="ok">{k.split('|')[0]}</KeywordChip>)}
+                  <span style={{ color: OK_FG }}>Termos que você usou:</span> {result.found.map(k => <KeywordChip key={k} kind="ok">{k.split('|')[0]}</KeywordChip>)}
                 </div>
               )}
               {!isCorrect && result.missing.length > 0 && (
                 <div style={{ marginTop: 8, fontSize: 13 }}>
-                  <span style={{ color: BAD_FG }}>Use ao menos uma:</span> {result.missing.map(k => <KeywordChip key={k} kind="bad">{k.split('|')[0]}</KeywordChip>)}
+                  <span style={{ color: BAD_FG }}>Termos sugeridos:</span> {result.missing.map(k => <KeywordChip key={k} kind="bad">{k.split('|')[0]}</KeywordChip>)}
                 </div>
               )}
               {ex.modelAnswer && (
@@ -595,8 +600,79 @@ function gradeWriting(text, ex) {
     else missing.push(raw);
   }
   const coverage = found.length / rawKeywords.length;
-  const score = found.length > 0 ? 1 : 0;
-  return { score, coverage, found, missing };
+  // minKeywords: nº mínimo de termos-alvo a usar (default 1 = leniente).
+  const need = Math.min(ex.minKeywords || 1, rawKeywords.length);
+  const score = found.length >= need ? 1 : 0;
+  return { score, coverage, found, missing, need };
+}
+
+/* ───── 8. DICTATION (listen and type, with word-by-word diff) ───── */
+function diffWords(userText, correctText) {
+  const user = normalize(userText).split(' ').filter(Boolean);
+  const correct = normalize(correctText).split(' ').filter(Boolean);
+  return correct.map((cw, i) => {
+    if (user[i] === cw) return { text: cw, status: 'ok' };
+    if (user[i]) return { text: cw, status: 'wrong' };
+    return { text: cw, status: 'missing' };
+  });
+}
+function Dictation({ ex, title, L, onResult, quizMode }) {
+  const [value, setValue] = useState('');
+  const [checked, setChecked] = useState(false);
+  const isCorrect = checked && normalize(value) === normalize(ex.correctText);
+  const words = checked ? diffWords(value, ex.correctText) : [];
+  useEffect(() => {
+    if (!quizMode && checked && onResult) onResult({ correct: isCorrect, accuracy: isCorrect ? 1 : 0 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [checked]);
+
+  return (
+    <Shell title={title || (L === UI_LABELS_PT ? 'Escute e digite' : 'Listen and type')}>
+      <div style={{ marginBottom: 14 }}>
+        <AudioPlayer text={ex.correctText} audioUrl={ex.audioUrl} voiceType={ex.voice || 'us-male'} rate={ex.rate || 0.8} label={L === UI_LABELS_PT ? 'Ouvir' : 'Listen'} small />
+      </div>
+      <textarea
+        value={value}
+        onChange={e => setValue(e.target.value)}
+        disabled={!quizMode && checked && isCorrect}
+        placeholder={L === UI_LABELS_PT ? 'Digite o que você ouviu…' : 'Type what you hear…'}
+        rows={2}
+        style={{
+          width: '100%', padding: '12px 14px', borderRadius: 10,
+          border: `2px solid ${!quizMode && checked ? (isCorrect ? OK_BORDER : BAD_BORDER) : LINE}`,
+          background: !quizMode && checked ? (isCorrect ? OK_BG : BAD_BG) : '#FFFFFF',
+          fontSize: 15, fontFamily: 'inherit', resize: 'vertical', lineHeight: 1.5,
+        }}
+      />
+      {!quizMode && (
+        <>
+          <div style={{ marginTop: 14, display: 'flex', gap: 10 }}>
+            {!checked ? (
+              <button style={btnPrimary(!value.trim())} onClick={() => setChecked(true)} disabled={!value.trim()}>{L.check}</button>
+            ) : (
+              <button style={btnOutline()} onClick={() => { setChecked(false); setValue(''); }}>{L.tryAgain}</button>
+            )}
+          </div>
+          {checked && isCorrect && <div style={fbOk()}>✓ {ex.explanation || L.correct + '!'}</div>}
+          {checked && !isCorrect && (
+            <div style={fbBad()}>
+              <div style={{ marginBottom: 8 }}>✗ {L.almost}.</div>
+              <div style={{ lineHeight: 2 }}>
+                {words.map((w, i) => (
+                  <span key={i} style={{
+                    padding: '2px 6px', margin: '0 2px', borderRadius: 4, fontWeight: 600,
+                    background: w.status === 'ok' ? 'rgba(56,161,105,0.15)' : w.status === 'missing' ? 'rgba(220,38,38,0.15)' : 'rgba(217,119,6,0.2)',
+                    color: w.status === 'ok' ? OK_FG : w.status === 'missing' ? BAD_FG : '#9C6A00',
+                    textDecoration: w.status === 'missing' ? 'underline' : 'none',
+                  }}>{w.text}</span>
+                ))}
+              </div>
+            </div>
+          )}
+        </>
+      )}
+    </Shell>
+  );
 }
 
 /* ───── 7. SPEAKING (wraps SpeakingExercise — voice with per-word feedback) ───── */

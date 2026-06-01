@@ -57,6 +57,18 @@ function stripHtml(s) {
     .trim();
 }
 
+// Resolve um MP3 pré-gerado (ex.: ElevenLabs) a partir de um manifesto global
+// opcional: window.__RC_AUDIO__ = { base, sep, manifest: { `${voiceType}${sep}${stripHtml(text)}`: 'rel/path.mp3' } }.
+// Sem o global (ou sem entrada), retorna null e o player usa Web Speech.
+function resolveManifestUrl(voiceType, text) {
+  if (typeof window === 'undefined') return null;
+  const g = window.__RC_AUDIO__;
+  if (!g || !g.manifest) return null;
+  const key = (voiceType || 'us-male') + (g.sep || '') + stripHtml(text);
+  const rel = g.manifest[key];
+  return rel ? (g.base || '') + rel : null;
+}
+
 export default function AudioPlayer({
   text,
   audioUrl = null,
@@ -88,10 +100,12 @@ export default function AudioPlayer({
 
   function play() {
     if (!text && !audioUrl) return;
-    // Pre-generated MP3 path
-    if (useNative) {
-      if (!audioRef.current) {
-        audioRef.current = new Audio(audioUrl);
+    // Pre-generated MP3 path (prop explícita ou manifesto global resolvido no clique)
+    const mp3Url = audioUrl || resolveManifestUrl(voiceType, text);
+    if (mp3Url) {
+      if (!audioRef.current || audioRef.current.dataset.url !== mp3Url) {
+        audioRef.current = new Audio(mp3Url);
+        audioRef.current.dataset.url = mp3Url;
         audioRef.current.onended = () => setState('idle');
         audioRef.current.onerror = () => setState('idle');
       }
