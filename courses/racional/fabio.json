@@ -1036,6 +1036,197 @@
    "type": "PRÁTICA",
    "mod": "M1",
    "title": "Abrindo e conduzindo a primeira reunião — small talk executivo",
+   "level": "starter",
+   "objective": "Ao final desta aula (PRÁTICA · sexta) você abre e conduz a primeira reunião com um cliente big tech: faz small talk executivo, puxa o assunto com WH-questions e confirma o que ouviu com question tags e frases de clarificação. É a teoria de segunda posta em obra.",
+   "intro": "<p>A primeira reunião não começa pelos números — começa por <strong>quebrar o gelo com classe</strong> e mostrar que você conduz a conversa.</p><p>Três movimentos: <strong>(1) small talk</strong> curto e profissional (\"How was your trip?\"), <strong>(2) abrir a pauta</strong> com uma WH-question (\"What would you like to cover today?\") e <strong>(3) confirmar entendimento</strong> com question tag (\"We have 30 minutes, right?\") ou clarificação (\"Just to make sure I understood...\").</p><p>Regra de ouro do executivo: quem faz a pergunta conduz a sala. Você não precisa de inglês perfeito — precisa de inglês <strong>que mantém o controle da reunião</strong>.</p>",
+   "situation": "Você recebe, pela primeira vez, o novo gerente de conta da Microsoft numa call. Os 60 segundos iniciais definem o tom de toda a relação.",
+   "context": "Good morning, James. Thanks for joining. How was your week? Great. So, what would you like to cover today? On our side, I'd like to align on the schedule and the safety plan. We have about forty minutes, right? Perfect. Just to make sure I understood: you need the commissioning dates by Friday, correct?",
+   "vocab": [
+    {
+     "en": "to break the ice",
+     "pt": "quebrar o gelo",
+     "example": "A quick question about the weather breaks the ice."
+    },
+    {
+     "en": "How was your trip?",
+     "pt": "Como foi sua viagem?",
+     "example": "How was your trip to São Paulo?"
+    },
+    {
+     "en": "to align on",
+     "pt": "alinhar sobre",
+     "example": "Let's align on the schedule first."
+    },
+    {
+     "en": "agenda",
+     "pt": "pauta",
+     "example": "What's on the agenda for today?"
+    },
+    {
+     "en": "to cover",
+     "pt": "abordar (um tema)",
+     "example": "What would you like to cover today?"
+    },
+    {
+     "en": "on our side",
+     "pt": "do nosso lado",
+     "example": "On our side, the main topic is safety."
+    },
+    {
+     "en": "to make sure",
+     "pt": "certificar-se",
+     "example": "Just to make sure I understood you."
+    },
+    {
+     "en": "right?",
+     "pt": "não é? (question tag)",
+     "example": "We have forty minutes, right?"
+    },
+    {
+     "en": "correct?",
+     "pt": "correto? (confirmação)",
+     "example": "The deadline is Friday, correct?"
+    },
+    {
+     "en": "Could you clarify...?",
+     "pt": "Você poderia esclarecer...?",
+     "example": "Could you clarify the next step?"
+    },
+    {
+     "en": "to move on",
+     "pt": "seguir adiante",
+     "example": "Let's move on to the budget."
+    },
+    {
+     "en": "to wrap up",
+     "pt": "encerrar (resumindo)",
+     "example": "Let's wrap up with the action items."
+    },
+    {
+     "en": "action item",
+     "pt": "tarefa/encaminhamento",
+     "example": "The first action item is the safety report."
+    },
+    {
+     "en": "to follow up",
+     "pt": "dar retorno/acompanhar",
+     "example": "I'll follow up by email tomorrow."
+    }
+   ],
+   "exercises": [
+    {
+     "type": "multipleChoice",
+     "title": "1. Abrindo a pauta",
+     "prompt": "Você quer que o cliente diga o que precisa tratar. Qual abertura é a mais natural?",
+     "options": [
+      {
+       "id": "a",
+       "text": "What would you like to cover today?",
+       "correct": true
+      },
+      {
+       "id": "b",
+       "text": "What you want today?",
+       "correct": false,
+       "whyWrong": "Falta o verbo auxiliar 'do' e a estrutura de pergunta: 'What do you want...'. A opção A soa mais executiva."
+      },
+      {
+       "id": "c",
+       "text": "Today cover what?",
+       "correct": false,
+       "whyWrong": "Ordem das palavras incorreta. WH-question pede: WH + auxiliar + sujeito + verbo."
+      }
+     ]
+    },
+    {
+     "type": "fillGap",
+     "title": "2. Confirme com question tag",
+     "prompt": "Você quer confirmar o tempo da reunião: \"We have forty minutes, ___?\"",
+     "correctAnswer": "right",
+     "acceptable": [
+      "right",
+      "correct",
+      "don't we"
+     ],
+     "explanation": "Question tags curtas ('right?', 'correct?') confirmam sem soar inseguro. 'Don't we?' é a tag gramatical formal.",
+     "commonErrors": {
+      "no": "'No?' não funciona como tag em inglês; use 'right?' ou 'correct?'.",
+      "yes": "'Yes?' soa como você pedindo permissão, não confirmando."
+     }
+    },
+    {
+     "type": "reorder",
+     "title": "3. Monte uma frase de clarificação",
+     "prompt": [
+      "make",
+      "to",
+      "I",
+      "Just",
+      "understood",
+      "sure"
+     ],
+     "correctOrder": [
+      "Just",
+      "to",
+      "make",
+      "sure",
+      "I",
+      "understood"
+     ],
+     "explanation": "\"Just to make sure I understood...\" é a ponte para repetir o que o cliente disse e confirmar — controle total da sala."
+    },
+    {
+     "type": "matching",
+     "title": "4. Combine a função com a frase",
+     "pairs": [
+      {
+       "left": "Small talk",
+       "right": "How was your week?"
+      },
+      {
+       "left": "Abrir a pauta",
+       "right": "What would you like to cover?"
+      },
+      {
+       "left": "Confirmar",
+       "right": "The deadline is Friday, right?"
+      },
+      {
+       "left": "Encerrar",
+       "right": "Let's wrap up with the action items."
+      }
+     ],
+     "explanation": "Cada momento da reunião tem uma frase-âncora. Decorar quatro já te dá uma reunião inteira."
+    },
+    {
+     "type": "writing",
+     "title": "5. Sua abertura de reunião (2 frases)",
+     "prompt": "Escreva a abertura de uma primeira call com a Amazon: (1) um small talk + (2) uma pergunta que abre a pauta. Use ao menos 2 termos em inglês desta lição. A correção é sobre o uso dos termos — não sobre gramática ou outras nuances.",
+     "keywords": [
+      "how was|good morning|thanks for joining",
+      "what would you like to cover|on the agenda|align on"
+     ],
+     "minKeywords": 2,
+     "minWords": 12,
+     "modelAnswer": "Good morning, Sarah, thanks for joining. How was your week? So, what would you like to cover today, and what should we align on first?",
+     "explanation": "Small talk curto + pergunta que devolve o controle da pauta para você. Aberturas assim soam seguras em qualquer board."
+    },
+    {
+     "type": "speaking",
+     "title": "6. Conduza os 30 segundos iniciais",
+     "prompt": "Leia em voz alta como se estivesse abrindo a reunião agora.",
+     "targetText": "Good morning, James. Thanks for joining. How was your trip? Great. So, what would you like to cover today? On our side, I'd like to align on the schedule and the safety plan.",
+     "explanation": "Treine até soar natural. O objetivo não é a frase perfeita: é manter o ritmo e o controle da conversa."
+    }
+   ],
+   "critical": "Em 20 segundos, abra uma reunião com um cliente novo: cumprimente, faça um small talk e puxe a pauta com uma pergunta. Diga em voz alta, sem texto na frente.",
+   "takeaways": [
+    "I can open a meeting with short, professional small talk.",
+    "I can ask what the client wants to cover using a WH-question.",
+    "I can confirm details with a question tag like 'right?' or 'correct?'.",
+    "I can clarify what I heard with 'Just to make sure I understood...'."
+   ],
+   "rich": true,
    "teacher": {
     "overview": "M1 — Bloco de abertura para destravar a comunicação executiva cotidiana — apresentar-se, abrir reuniões, fazer perguntas e dizer números, datas, valores e prazos em voz alta sem travar.…",
     "focus": "Fluência aplicada: comunicar sob pressão, sem travar.",
@@ -1073,7 +1264,7 @@
      "Corrigir só o que compromete o entendimento."
     ],
     "note": "",
-    "richNote": "Conteúdo interativo em produção; conduza a partir do objetivo do módulo e do título da aula."
+    "richNote": "Esta aula tem conteúdo interativo completo na plataforma (vocabulário, exercícios e recap)."
    },
    "pill": {
     "kind": "accent",
@@ -1089,6 +1280,191 @@
    "type": "TEORIA",
    "mod": "M1",
    "title": "Números, datas, valores e prazos: a gramática dos numerais em voz alta",
+   "level": "starter",
+   "objective": "Ao final desta aula (TEORIA · segunda) você domina a gramática dos números em voz alta: cardinais grandes (million/billion), datas, moeda, porcentagens e durações. É a planta numérica que a sexta vai pôr em obra com valores de contrato e prazos reais.",
+   "intro": "<p>Em inglês, número falado tem armadilhas que travam executivos brasileiros. Vamos desarmá-las.</p><p><strong>Grandes números não levam 's':</strong> diz-se <em>\"two billion\"</em>, nunca \"two billions\". O 's' só aparece em expressões vagas: <em>\"millions of dollars\"</em>.<br><strong>Datas:</strong> americano fala <em>\"May fifth\"</em> ou <em>\"the fifth of May\"</em>; o ano 2026 é <em>\"twenty twenty-six\"</em>.<br><strong>Moeda:</strong> <em>\"R$1 billion\"</em> = <em>\"one billion reais\"</em>; \"US$2.5M\" = <em>\"two point five million dollars\"</em>.<br><strong>Durações:</strong> <em>\"a 24-month project\"</em> (com hífen, mês no singular quando vira adjetivo).</p><p>Regra de ouro: número dito devagar e certo passa mais credibilidade que número dito rápido e errado.</p>",
+   "situation": "Antes da reunião de sexta com a Amazon, você revisa, em voz alta, os números que vai apresentar: valor, prazo e indicadores de segurança.",
+   "context": "The total contract is worth two point five billion reais. We delivered the first phase in twenty twenty-five, and the full project runs for twenty-four months. Our safety record is strong: zero lost-time incidents in over three million working hours.",
+   "vocab": [
+    {
+     "en": "million",
+     "pt": "milhão (sem 's')",
+     "example": "The budget is fifty million reais."
+    },
+    {
+     "en": "billion",
+     "pt": "bilhão (sem 's')",
+     "example": "The contract is worth two billion reais."
+    },
+    {
+     "en": "point (decimal)",
+     "pt": "vírgula decimal",
+     "example": "Two point five million, not two comma five."
+    },
+    {
+     "en": "to be worth",
+     "pt": "valer (quantia)",
+     "example": "The deal is worth one billion reais."
+    },
+    {
+     "en": "figure",
+     "pt": "cifra/número",
+     "example": "Let me walk you through the figures."
+    },
+    {
+     "en": "percent",
+     "pt": "por cento",
+     "example": "We cut costs by twelve percent."
+    },
+    {
+     "en": "deadline",
+     "pt": "prazo final",
+     "example": "The deadline is March thirty-first."
+    },
+    {
+     "en": "duration",
+     "pt": "duração",
+     "example": "The duration is twenty-four months."
+    },
+    {
+     "en": "a 24-month project",
+     "pt": "um projeto de 24 meses",
+     "example": "It's a twenty-four-month project."
+    },
+    {
+     "en": "by (a date)",
+     "pt": "até (prazo)",
+     "example": "We deliver by December."
+    },
+    {
+     "en": "within",
+     "pt": "dentro de (prazo)",
+     "example": "We finish within eighteen months."
+    },
+    {
+     "en": "quarter",
+     "pt": "trimestre",
+     "example": "We report every quarter."
+    },
+    {
+     "en": "year-on-year",
+     "pt": "ano a ano",
+     "example": "Revenue grew year-on-year."
+    },
+    {
+     "en": "rough estimate",
+     "pt": "estimativa aproximada",
+     "example": "As a rough estimate, around forty million."
+    }
+   ],
+   "exercises": [
+    {
+     "type": "multipleChoice",
+     "title": "1. O plural traiçoeiro",
+     "prompt": "Como se diz \"2 bilhões de reais\" corretamente?",
+     "options": [
+      {
+       "id": "a",
+       "text": "two billions reais",
+       "correct": false,
+       "whyWrong": "Com número exato, 'billion' NÃO leva 's'. O 's' só aparece em 'billions of...' (vago)."
+      },
+      {
+       "id": "b",
+       "text": "two billion reais",
+       "correct": true
+      },
+      {
+       "id": "c",
+       "text": "two billion of reais",
+       "correct": false,
+       "whyWrong": "Sem 'of' quando há número exato: 'two billion reais', não 'two billion of reais'."
+      }
+     ]
+    },
+    {
+     "type": "fillGap",
+     "title": "2. Decimal em inglês",
+     "prompt": "Diga \"US$2,5 milhões\" em inglês: \"two ___ five million dollars\".",
+     "correctAnswer": "point",
+     "acceptable": [
+      "point"
+     ],
+     "explanation": "Em inglês a vírgula decimal vira 'point'. 2.5 = 'two point five'. Cuidado: vírgula em inglês separa milhares (2,500 = dois mil e quinhentos).",
+     "commonErrors": {
+      "comma": "'Comma' é o nome do sinal, mas não se lê a vírgula decimal: use 'point'.",
+      "and": "'And' aparece em centenas (two hundred and fifty), não no decimal."
+     }
+    },
+    {
+     "type": "reorder",
+     "title": "3. Diga a duração como adjetivo",
+     "prompt": [
+      "a",
+      "project",
+      "twenty-four-month",
+      "It's"
+     ],
+     "correctOrder": [
+      "It's",
+      "a",
+      "twenty-four-month",
+      "project"
+     ],
+     "explanation": "Quando o prazo vira adjetivo (antes do substantivo), o mês fica no singular e com hífen: 'a 24-month project'."
+    },
+    {
+     "type": "matching",
+     "title": "4. Combine o número com a leitura",
+     "pairs": [
+      {
+       "left": "2026",
+       "right": "twenty twenty-six"
+      },
+      {
+       "left": "R$1bi",
+       "right": "one billion reais"
+      },
+      {
+       "left": "May 5",
+       "right": "May fifth"
+      },
+      {
+       "left": "2.5M",
+       "right": "two point five million"
+      }
+     ],
+     "explanation": "Anos em pares (twenty/twenty-six), datas ordinais (fifth), decimais com 'point'. Treine os quatro padrões."
+    },
+    {
+     "type": "writing",
+     "title": "5. Frase com número de contrato",
+     "prompt": "Escreva 1 frase apresentando o valor e o prazo de um projeto para a Microsoft. Use ao menos 2 termos em inglês desta lição. A correção é sobre o uso dos termos — não sobre gramática ou outras nuances.",
+     "keywords": [
+      "billion|million|worth",
+      "month|deadline|duration|within|by"
+     ],
+     "minKeywords": 2,
+     "minWords": 10,
+     "modelAnswer": "The contract is worth one point two billion reais, and the duration is twenty-four months.",
+     "explanation": "Valor (worth + billion, sem 's') + prazo (duration/months). Dois números bem ditos já sustentam uma fala de negociação."
+    },
+    {
+     "type": "speaking",
+     "title": "6. Leia os números em voz alta",
+     "prompt": "Leia devagar, pronunciando cada número com cuidado.",
+     "targetText": "The contract is worth two point five billion reais. The project runs for twenty-four months, and we deliver the first phase by twenty twenty-six.",
+     "explanation": "Devagar e certo. Números são onde o inglês trava — pronunciá-los com calma já te diferencia."
+    }
+   ],
+   "critical": "Em voz alta, diga três números do seu dia a dia em inglês: um valor em bilhões, um prazo em meses e um ano. Sem texto na frente.",
+   "takeaways": [
+    "I can say large numbers without adding an 's' (two billion, not two billions).",
+    "I can read decimals with 'point' and dates as ordinals.",
+    "I can express a duration as an adjective ('a 24-month project').",
+    "I can state a contract value and a deadline clearly and slowly."
+   ],
+   "rich": true,
    "teacher": {
     "overview": "M1 — Bloco de abertura para destravar a comunicação executiva cotidiana — apresentar-se, abrir reuniões, fazer perguntas e dizer números, datas, valores e prazos em voz alta sem travar.…",
     "focus": "Estrutura e forma: a regra do dia bem fixada.",
@@ -1126,7 +1502,7 @@
      "Conectar a regra a uma fala real do cliente."
     ],
     "note": "",
-    "richNote": "Conteúdo interativo em produção; conduza a partir do objetivo do módulo e do título da aula."
+    "richNote": "Esta aula tem conteúdo interativo completo na plataforma (vocabulário, exercícios e recap)."
    },
    "pill": {
     "kind": "accent",
@@ -1142,6 +1518,196 @@
    "type": "PRÁTICA",
    "mod": "M1",
    "title": "Falando valores de contrato (R$1 bi) e prazos (24 meses) sem travar",
+   "level": "starter",
+   "objective": "Ao final desta aula (PRÁTICA · sexta) você fala valores de contrato (R$1 bi) e prazos (24 meses) sem travar, dentro de uma fala de negociação com cliente big tech. É a gramática numérica de segunda aplicada em situação real.",
+   "intro": "<p>Saber o número é uma coisa; dizê-lo numa negociação, sem gaguejar, é outra. Esta aula é treino de fluência sob pressão.</p><p>Três frases-âncora que carregam qualquer número: <strong>(1)</strong> <em>\"The total investment is around...\"</em> (apresenta o valor), <strong>(2)</strong> <em>\"We can deliver within...\"</em> (compromisso de prazo) e <strong>(3)</strong> <em>\"That gives us a buffer of...\"</em> (margem de segurança).</p><p>Dica executiva: ao dar um número sensível, baixe um pouco o ritmo e use um <em>hedge</em> (\"approximately\", \"around\", \"in the region of\") — soa confiante e te protege de cravar um valor exato cedo demais.</p>",
+   "situation": "Reunião de negociação com a Amazon/AWS. O gerente de conta pergunta diretamente o valor e o prazo do empreendimento, e você responde com firmeza.",
+   "context": "So, what are we looking at in terms of investment? The total is in the region of one point eight billion reais. And the timeline? We can deliver the full data center within twenty-two months, with a buffer of two months for commissioning. That keeps us comfortably on schedule.",
+   "vocab": [
+    {
+     "en": "investment",
+     "pt": "investimento",
+     "example": "The total investment is around one billion."
+    },
+    {
+     "en": "in the region of",
+     "pt": "na casa de",
+     "example": "In the region of two billion reais."
+    },
+    {
+     "en": "approximately",
+     "pt": "aproximadamente",
+     "example": "Approximately eighteen months."
+    },
+    {
+     "en": "timeline",
+     "pt": "cronograma/prazo",
+     "example": "What's the timeline for delivery?"
+    },
+    {
+     "en": "to deliver within",
+     "pt": "entregar em (prazo)",
+     "example": "We deliver within twenty-four months."
+    },
+    {
+     "en": "buffer",
+     "pt": "margem/folga",
+     "example": "We keep a buffer of two months."
+    },
+    {
+     "en": "on schedule",
+     "pt": "no prazo",
+     "example": "The project is on schedule."
+    },
+    {
+     "en": "ahead of schedule",
+     "pt": "adiantado",
+     "example": "We finished ahead of schedule."
+    },
+    {
+     "en": "to commit to",
+     "pt": "comprometer-se com",
+     "example": "We commit to the December deadline."
+    },
+    {
+     "en": "ballpark",
+     "pt": "ordem de grandeza",
+     "example": "Give me a ballpark figure."
+    },
+    {
+     "en": "upfront",
+     "pt": "antecipado (pagamento)",
+     "example": "Twenty percent is paid upfront."
+    },
+    {
+     "en": "in installments",
+     "pt": "parcelado",
+     "example": "The rest is paid in installments."
+    },
+    {
+     "en": "to come in under budget",
+     "pt": "ficar abaixo do orçado",
+     "example": "We came in under budget last year."
+    },
+    {
+     "en": "milestone",
+     "pt": "marco (de entrega)",
+     "example": "Each milestone has a payment."
+    }
+   ],
+   "exercises": [
+    {
+     "type": "multipleChoice",
+     "title": "1. O hedge profissional",
+     "prompt": "Você quer dar um valor sem cravar o número exato cedo demais. Qual frase soa mais confiante e segura?",
+     "options": [
+      {
+       "id": "a",
+       "text": "It is exactly one billion, eight hundred million reais.",
+       "correct": false,
+       "whyWrong": "Cravar o número ao centavo cedo demais te prende. Numa negociação inicial, um hedge protege melhor."
+      },
+      {
+       "id": "b",
+       "text": "The total is in the region of one point eight billion reais.",
+       "correct": true
+      },
+      {
+       "id": "c",
+       "text": "Maybe one billion, I don't know exactly.",
+       "correct": false,
+       "whyWrong": "'I don't know exactly' soa inseguro. Use um hedge profissional ('in the region of'), não uma dúvida."
+      }
+     ]
+    },
+    {
+     "type": "fillGap",
+     "title": "2. Compromisso de prazo",
+     "prompt": "Prometa entregar em até 22 meses: \"We can deliver the data center ___ twenty-two months.\"",
+     "correctAnswer": "within",
+     "acceptable": [
+      "within",
+      "in"
+     ],
+     "explanation": "'Within' = dentro do limite de. 'We deliver within 22 months' soa como compromisso firme e profissional.",
+     "commonErrors": {
+      "until": "'Until' é para ações contínuas até um ponto; para prazo de entrega use 'within' ou 'by'.",
+      "during": "'During' indica o período em que algo ocorre, não o limite de entrega."
+     }
+    },
+    {
+     "type": "reorder",
+     "title": "3. Monte a frase da margem",
+     "prompt": [
+      "a",
+      "of",
+      "buffer",
+      "We",
+      "keep",
+      "two months"
+     ],
+     "correctOrder": [
+      "We",
+      "keep",
+      "a",
+      "buffer",
+      "of",
+      "two months"
+     ],
+     "explanation": "\"We keep a buffer of two months\" comunica que você planejou margem de segurança — soa como gestor experiente."
+    },
+    {
+     "type": "matching",
+     "title": "4. Combine o termo com o uso",
+     "pairs": [
+      {
+       "left": "in the region of",
+       "right": "valor aproximado"
+      },
+      {
+       "left": "within 22 months",
+       "right": "compromisso de prazo"
+      },
+      {
+       "left": "buffer",
+       "right": "margem de segurança"
+      },
+      {
+       "left": "on schedule",
+       "right": "tudo no prazo"
+      }
+     ],
+     "explanation": "Quatro expressões cobrem valor, prazo, folga e status. Com elas você sustenta uma negociação inteira."
+    },
+    {
+     "type": "writing",
+     "title": "5. Sua resposta de negociação (2 frases)",
+     "prompt": "O cliente perguntou valor e prazo. Responda em 2 frases: (1) o valor com um hedge e (2) o prazo com margem. Use ao menos 2 termos em inglês desta lição. A correção é sobre o uso dos termos — não sobre gramática ou outras nuances.",
+     "keywords": [
+      "in the region of|approximately|investment|ballpark",
+      "within|deliver|buffer|on schedule|timeline"
+     ],
+     "minKeywords": 2,
+     "minWords": 14,
+     "modelAnswer": "The total investment is in the region of one point eight billion reais. We can deliver within twenty-two months, with a buffer of two months to stay on schedule.",
+     "explanation": "Valor com hedge + prazo com margem = resposta de negociação firme e protegida. Exatamente o tom que big techs respeitam."
+    },
+    {
+     "type": "speaking",
+     "title": "6. Responda à pergunta do cliente",
+     "prompt": "Leia em voz alta como se respondesse à pergunta sobre valor e prazo numa reunião.",
+     "targetText": "The total investment is in the region of one point eight billion reais. We can deliver the full data center within twenty-two months, with a buffer of two months. That keeps us comfortably on schedule.",
+     "explanation": "Devagar nos números, firme nos compromissos. Repita até a fala sair sem travas."
+    }
+   ],
+   "critical": "Imagine que um cliente acabou de perguntar o valor e o prazo do seu maior projeto. Responda em voz alta, em 20 segundos, usando um hedge no valor e uma margem no prazo. Sem texto na frente.",
+   "takeaways": [
+    "I can present a contract value with a professional hedge ('in the region of').",
+    "I can commit to a deadline using 'within' and 'deliver'.",
+    "I can mention a safety buffer to sound like an experienced manager.",
+    "I can answer a value-and-timeline question without freezing."
+   ],
+   "rich": true,
    "teacher": {
     "overview": "M1 — Bloco de abertura para destravar a comunicação executiva cotidiana — apresentar-se, abrir reuniões, fazer perguntas e dizer números, datas, valores e prazos em voz alta sem travar.…",
     "focus": "Fluência aplicada: comunicar sob pressão, sem travar.",
@@ -1179,7 +1745,7 @@
      "Corrigir só o que compromete o entendimento."
     ],
     "note": "",
-    "richNote": "Conteúdo interativo em produção; conduza a partir do objetivo do módulo e do título da aula."
+    "richNote": "Esta aula tem conteúdo interativo completo na plataforma (vocabulário, exercícios e recap)."
    },
    "pill": {
     "kind": "accent",
