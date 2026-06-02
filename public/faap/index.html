@@ -178,17 +178,17 @@
   .cta{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;text-align:center}
   .cta h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:900;max-width:18ch;margin:0 auto}
   .cta p{margin:20px auto 0;max-width:56ch;color:rgba(255,255,255,.85);font-size:1.08rem}
-  .cta-badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:8px 18px;border-radius:999px;font-size:.82rem;font-weight:600;margin-bottom:24px;letter-spacing:.04em}
-  .cta-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:780px;margin:44px auto 0}
-  .cta-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:26px 20px;transition:.15s}
-  .cta-card:hover{background:rgba(255,255,255,.13);transform:translateY(-3px)}
-  .cta-card .ic{font-size:1.7rem;margin-bottom:10px}
-  .cta-card .lbl{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55)}
-  .cta-card .val{font-size:1.02rem;font-weight:700;margin-top:4px;word-break:break-word}
-  .cta-whats{margin-top:40px}
-  .cta-whats a{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#0a3d1e;padding:16px 34px;border-radius:999px;font-weight:800;font-size:1.05rem;transition:.15s}
-  .cta-whats a:hover{transform:scale(1.04)}
-  @media(max-width:680px){.cta-cards{grid-template-columns:1fr}}
+  .cta-badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:8px 18px;border-radius:999px;font-size:.78rem;font-weight:700;margin-bottom:24px;letter-spacing:.1em;text-transform:uppercase}
+  .cta-actions{display:flex;flex-direction:column;align-items:center;gap:18px;margin-top:44px}
+  .cta-primary{display:inline-flex;align-items:center;gap:12px;background:#25d366;color:#05351b;padding:18px 38px;border-radius:14px;font-weight:800;font-size:1.12rem;box-shadow:0 14px 40px rgba(37,211,102,.32);transition:.15s}
+  .cta-primary:hover{transform:translateY(-2px);box-shadow:0 18px 50px rgba(37,211,102,.42)}
+  .cta-primary svg{width:24px;height:24px;flex:0 0 24px}
+  .cta-primary .num{font-weight:600;opacity:.82;font-size:.95rem;border-left:1px solid rgba(5,53,27,.28);padding-left:12px;margin-left:2px}
+  .cta-alt{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+  .cta-alt a{display:inline-flex;align-items:center;gap:9px;color:#fff;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);padding:12px 22px;border-radius:999px;font-weight:600;font-size:.92rem;transition:.15s}
+  .cta-alt a:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5)}
+  .cta-alt svg{width:17px;height:17px;opacity:.85;flex:0 0 17px}
+  @media(max-width:560px){.cta-primary{flex-direction:column;gap:6px;padding:18px 28px}.cta-primary .num{border:0;padding:0;margin:0}.cta-alt{flex-direction:column;width:100%}.cta-alt a{justify-content:center}}
 
   /* FOOTER */
   footer{background:#0b1020;color:rgba(255,255,255,.6);padding:40px 0;text-align:center;font-size:.84rem}
@@ -388,7 +388,7 @@
         <h4>Qual o seu principal objetivo com o inglês?</h4>
         <div class="opts">
           <div class="opt" data-v="C"><span class="dot"></span>Praticar e manter o inglês do dia a dia</div>
-          <div class="opt" data-v="F"><span class="dot"></span>Evoluir rápido, com atenção individual</div>
+          <div class="opt" data-v="F"><span class="dot"></span>Evoluir com atenção individual nas particulares</div>
         </div>
       </div>
       <div class="quiz-q" data-q="2">
@@ -403,8 +403,8 @@
         <span class="qn">Pergunta 3</span>
         <h4>Como é a sua disponibilidade?</h4>
         <div class="opts">
-          <div class="opt" data-v="C"><span class="dot"></span>Variável — preciso agendar de última hora</div>
-          <div class="opt" data-v="F"><span class="dot"></span>Tenho uma rotina, mas quero acelerar</div>
+          <div class="opt" data-v="C"><span class="dot"></span>Variável — gosto de agendar de última hora</div>
+          <div class="opt" data-v="F"><span class="dot"></span>Tenho rotina e quero atenção individual</div>
         </div>
       </div>
       <div class="quiz-q" data-q="4">
@@ -412,7 +412,7 @@
         <h4>O que pesa mais na sua decisão?</h4>
         <div class="opts">
           <div class="opt" data-v="C"><span class="dot"></span>Melhor custo mensal</div>
-          <div class="opt" data-v="F"><span class="dot"></span>Equilíbrio entre preço e velocidade de avanço</div>
+          <div class="opt" data-v="F"><span class="dot"></span>Equilíbrio entre preço e acompanhamento individual</div>
         </div>
       </div>
     </div>
@@ -542,30 +542,20 @@
 <!-- CTA -->
 <section class="cta" id="contato">
   <div class="wrap">
-    <span class="cta-badge">⭑ BENEFÍCIO EXCLUSIVO · COLABORADORES FAAP</span>
+    <span class="cta-badge">Benefício exclusivo · Colaboradores FAAP</span>
     <h2>Comece seu inglês agora — e garanta seus 50%.</h2>
     <p>Não deixe esse benefício passar. A parceria FAAP × Alumni é a forma mais inteligente de finalmente destravar o seu inglês: método de 65 anos, equipe certificada e metade do preço. Fale com a gente, escolha seu curso e dê o próximo passo na sua carreira e na sua vida.</p>
 
-    <div class="cta-cards">
-      <a class="cta-card" href="https://wa.me/5511930065608?text=Ol%C3%A1!%20Sou%20colaborador(a)%20da%20FAAP%20e%20quero%20aproveitar%20o%20benef%C3%ADcio%20de%2050%25%20nos%20cursos%20da%20Alumni." target="_blank" rel="noopener">
-        <div class="ic">💬</div>
-        <div class="lbl">WhatsApp</div>
-        <div class="val">(11) 93006-5608</div>
+    <div class="cta-actions">
+      <a class="cta-primary" href="https://wa.me/5511930065608?text=Ol%C3%A1!%20Sou%20colaborador(a)%20da%20FAAP%20e%20quero%20aproveitar%20o%20benef%C3%ADcio%20de%2050%25%20nos%20cursos%20da%20Alumni." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>Falar no WhatsApp</span>
+        <span class="num">(11) 93006-5608</span>
       </a>
-      <a class="cta-card" href="tel:+5511930065608">
-        <div class="ic">📞</div>
-        <div class="lbl">Telefone</div>
-        <div class="val">(11) 93006-5608</div>
-      </a>
-      <a class="cta-card" href="mailto:gilberto.lucheti@alumnibybetter.com?subject=Benef%C3%ADcio%20FAAP%20%C3%97%20Alumni%20-%20inscri%C3%A7%C3%A3o&body=Ol%C3%A1%20Gilberto%2C%20sou%20colaborador(a)%20da%20FAAP%20e%20quero%20aproveitar%20o%20desconto%20de%2050%25.">
-        <div class="ic">✉️</div>
-        <div class="lbl">E-mail</div>
-        <div class="val">gilberto.lucheti@alumnibybetter.com</div>
-      </a>
-    </div>
-
-    <div class="cta-whats">
-      <a href="https://wa.me/5511930065608?text=Ol%C3%A1!%20Sou%20colaborador(a)%20da%20FAAP%20e%20quero%20aproveitar%20o%20benef%C3%ADcio%20de%2050%25%20nos%20cursos%20da%20Alumni." target="_blank" rel="noopener">💬 Quero meu benefício no WhatsApp</a>
+      <div class="cta-alt">
+        <a href="tel:+5511930065608"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Ligar · (11) 93006-5608</a>
+        <a href="mailto:gilberto.lucheti@alumnibybetter.com?subject=Benef%C3%ADcio%20FAAP%20%C3%97%20Alumni%20-%20inscri%C3%A7%C3%A3o&body=Ol%C3%A1%20Gilberto%2C%20sou%20colaborador(a)%20da%20FAAP%20e%20quero%20aproveitar%20o%20desconto%20de%2050%25."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>gilberto.lucheti@alumnibybetter.com</a>
+      </div>
     </div>
   </div>
 </section>
@@ -606,7 +596,7 @@
     var text = document.getElementById('resText');
     if(f > c){
       title.textContent = 'Community Flow';
-      text.textContent = 'Você quer avançar mais rápido e com atenção individual. O Community Flow combina o grupo com aulas particulares intercaladas — e, pra você da FAAP, sai por 12x R$ 298 (em vez de R$ 596).';
+      text.textContent = 'Você gosta da dinâmica de grupo e quer também atenção individual. O Community Flow soma as aulas em grupo às particulares intercaladas — e, pra você da FAAP, sai por 12x R$ 298 (em vez de R$ 596).';
     } else {
       title.textContent = 'Community';
       text.textContent = 'Você quer praticar com flexibilidade e o melhor custo. O Community é online ao vivo, em grupo, no seu ritmo — e, pra você da FAAP, sai por 12x R$ 240 (em vez de R$ 480).';
