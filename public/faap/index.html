@@ -36,16 +36,16 @@
 
   /* NAV */
   header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--n200)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .nav-logos{display:flex;align-items:center;gap:14px}
-  .nav-logos img.alumni{height:34px}
-  .nav-logos img.faap{height:52px}
-  .nav-logos .x{color:var(--n300);font-weight:600;font-size:1.1rem}
-  .nav-links{display:flex;gap:26px;align-items:center}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:84px}
+  .nav-logos{display:flex;align-items:center;gap:18px}
+  .nav-logos img.alumni{height:46px}
+  .nav-logos img.faap{height:70px}
+  .nav-logos .x{color:var(--n300);font-weight:600;font-size:1.25rem}
+  .nav-links{display:flex;gap:28px;align-items:center}
   .nav-links a{font-size:.9rem;font-weight:500;color:var(--n600)}
   .nav-links a:hover{color:var(--azul)}
-  .nav-cta{background:var(--vermelho);color:#fff;padding:9px 18px;border-radius:999px;font-weight:600;font-size:.88rem}
-  .nav-cta:hover{background:var(--vermelho-dark)}
+  .nav-cta{background:var(--azul);color:#fff;padding:11px 22px;border-radius:10px;font-weight:600;font-size:.9rem;box-shadow:0 4px 14px rgba(16,42,113,.22);transition:.15s}
+  .nav-cta:hover{background:var(--azul-dark);box-shadow:0 6px 18px rgba(16,42,113,.32);transform:translateY(-1px)}
   @media(max-width:860px){.nav-links a:not(.nav-cta){display:none}}
 
   /* HERO */
@@ -98,6 +98,8 @@
   .specs li{display:flex;justify-content:space-between;gap:12px;font-size:.88rem;padding:6px 0;border-bottom:1px dashed var(--n200)}
   .specs li span:first-child{color:var(--n500)}
   .specs li span:last-child{font-weight:600;text-align:right}
+  .specs li.stack{flex-direction:column;align-items:flex-start;gap:3px}
+  .specs li.stack span:last-child{text-align:left}
   .feats{list-style:none;margin:18px 0 24px}
   .feats li{position:relative;padding-left:24px;font-size:.9rem;color:var(--n700);margin-bottom:9px}
   .feats li::before{content:"✓";position:absolute;left:0;color:var(--vermelho);font-weight:800}
@@ -219,6 +221,30 @@
   </div>
 </header>
 
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-logos">
+      <img class="faap" src="/faap/img/faap-brasao.svg" alt="FAAP" />
+      <span class="x">×</span>
+      <img class="alumni" src="/faap/img/alumni.webp" alt="Alumni by Better" />
+    </div>
+    <div class="partner-row" style="margin-top:28px">
+      <span class="chip">⭑ PARCERIA EXCLUSIVA · COLABORADORES FAAP</span>
+    </div>
+    <h1>O inglês que abre portas, agora com 50% de desconto pra você.</h1>
+    <p class="lead">A FAAP e a Alumni firmaram uma parceria para que cada colaborador possa, enfim, dar o próximo passo no inglês — com o centro binacional Brasil–EUA mais tradicional do país, há 65 anos formando quem se comunica de verdade. É a sua chance de estudar com método próprio, equipe certificada internacionalmente e um benefício que é só seu.</p>
+    <div class="hero-badge">
+      <span class="big">−50%</span>
+      <span class="txt">de desconto exclusivo<br/>nos cursos Community e Community Flow</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#cursos" class="btn btn-primary">Ver os dois cursos →</a>
+      <a href="#contato" class="btn btn-ghost">Falar com a Alumni</a>
+    </div>
+  </div>
+</section>
+
 <!-- SOBRE -->
 <section class="about" id="sobre">
   <div class="wrap">
@@ -247,36 +273,12 @@
   </div>
 </section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-logos">
-      <img class="faap" src="/faap/img/faap-brasao.svg" alt="FAAP" />
-      <span class="x">×</span>
-      <img class="alumni" src="/faap/img/alumni.webp" alt="Alumni by Better" />
-    </div>
-    <div class="partner-row" style="margin-top:28px">
-      <span class="chip">⭑ PARCERIA EXCLUSIVA · COLABORADORES FAAP</span>
-    </div>
-    <h1>O inglês que abre portas, agora com 50% de desconto pra você.</h1>
-    <p class="lead">A FAAP e a Alumni firmaram uma parceria para que cada colaborador possa, enfim, dar o próximo passo no inglês — com o centro binacional Brasil–EUA mais tradicional do país, há 65 anos formando quem se comunica de verdade. É a sua chance de estudar com método próprio, equipe certificada internacionalmente e um benefício que é só seu.</p>
-    <div class="hero-badge">
-      <span class="big">−50%</span>
-      <span class="txt">de desconto exclusivo<br/>nos cursos Community e Community Flow</span>
-    </div>
-    <div class="hero-btns">
-      <a href="#cursos" class="btn btn-primary">Ver os dois cursos →</a>
-      <a href="#contato" class="btn btn-ghost">Falar com a Alumni</a>
-    </div>
-  </div>
-</section>
-
 <!-- CURSOS -->
 <section id="cursos">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Os cursos da parceria</p>
-      <h2>Dois caminhos, o mesmo padrão Alumni — e 50% de desconto pra você.</h2>
+      <h2>Dois caminhos, o mesmo padrão Alumni.</h2>
       <p>Como colaborador da FAAP, você escolhe entre o <strong>Community</strong> (turma flexível, no seu ritmo) e o <strong>Community Flow</strong> (grupo + aulas particulares intercaladas, com atenção individual). Em ambos, o valor é metade — veja o preço cheio e o seu preço de parceria.</p>
     </div>
     <div class="courses-grid">
@@ -296,7 +298,7 @@
           <li><span>Grupo</span><span>Até 8 alunos</span></li>
           <li><span>Carga</span><span>96 aulas em grupo</span></li>
           <li><span>Níveis</span><span>11 níveis (CEFR)</span></li>
-          <li><span>Agendamento</span><span>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</span></li>
+          <li class="stack"><span>Agendamento</span><span>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</span></li>
         </ul>
         <ul class="feats" style="margin-top:18px">
           <li>Aulas 3x por semana, com temas que mudam a cada dois dias</li>
@@ -322,7 +324,7 @@
           <li><span>Grupo</span><span>Até 8; 1:1 nas particulares</span></li>
           <li><span>Carga</span><span>96 aulas em grupo + 19 particulares</span></li>
           <li><span>Níveis</span><span>11 níveis (CEFR)</span></li>
-          <li><span>Agendamento</span><span>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</span></li>
+          <li class="stack"><span>Agendamento</span><span>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</span></li>
         </ul>
         <ul class="feats" style="margin-top:18px">
           <li>Aulas coletivas + individuais no mesmo plano</li>
@@ -340,11 +342,6 @@
 <!-- COMPARADOR -->
 <section class="compare" id="comparar">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Comparador lado a lado</p>
-      <h2>Dois cursos. O mesmo método. Você escolhe o ritmo.</h2>
-      <p>Os dois preços já estão com o desconto de 50% da parceria FAAP × Alumni.</p>
-    </div>
     <table class="ctable">
       <thead>
         <tr>
