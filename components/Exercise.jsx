@@ -553,8 +553,8 @@ function Writing({ ex, title, L, onResult, quizMode }) {
               {isCorrect ? '✓ ' : '✗ '}
               <strong>
                 {isCorrect
-                  ? `Boa! Você aplicou os termos da lição (${result.found.length} de ${ex.keywords ? ex.keywords.length : result.found.length}).`
-                  : `Quase — você usou ${result.found.length} termo(s). Use ao menos ${result.need || 1} termo(s) em inglês da lição.`}
+                  ? `Boa! Você usou ${result.found.length} termo(s) em inglês da lição.`
+                  : `Quase — você usou ${result.found.length} de ${result.need || 1} termo(s) necessários. Inclua mais termos em inglês da lição.`}
               </strong>
               {result.found.length > 0 && (
                 <div style={{ marginTop: 8, fontSize: 13 }}>
@@ -602,22 +602,39 @@ function KeywordChip({ children, kind }) {
 // the review screen can show what was covered.
 function gradeWriting(text, ex) {
   const norm = (s) => (s || '').toLowerCase().replace(/[^a-z0-9\s']/g, ' ').replace(/\s+/g, ' ').trim();
-  const t = norm(text);
+  // Tolerância a flexão: ignora terminações comuns (-ing/-ed/-s) para que
+  // "doubling down" reconheça "double down", "centers" reconheça "center", etc.
+  const stem = (w) => w.replace(/(ing|ed|s)$/i, '');
+  const loose = (s) => norm(s).split(' ').map(stem).filter(Boolean).join(' ');
+  const t = ' ' + norm(text) + ' ';
+  const tl = ' ' + loose(text) + ' ';
   const rawKeywords = (ex.keywords || []).filter(Boolean);
-  if (rawKeywords.length === 0) return { score: 1, coverage: 1, found: [], missing: [] };
+  if (rawKeywords.length === 0) return { score: 1, coverage: 1, found: [], missing: [], need: 0 };
+  // Conta TERMOS recomendados distintos usados (somando alternativas de todos os
+  // grupos), não nº de grupos — alinha com o enunciado "use N termos".
+  const foundAlts = new Set();
   const found = [];
   const missing = [];
+  let totalAlts = 0;
   for (const raw of rawKeywords) {
-    // 'a|b|c' = match if any alternative appears (sinônimos / formas válidas)
-    const alts = raw.split('|').map(s => norm(s)).filter(Boolean);
-    const hit = alts.some(a => t.includes(a));
-    if (hit) found.push(raw);
-    else missing.push(raw);
+    const alts = raw.split('|').map(s => s.trim()).filter(Boolean);
+    totalAlts += alts.length;
+    let groupHit = false;
+    for (const a of alts) {
+      const na = norm(a);
+      if (!na) continue;
+      if (t.includes(' ' + na + ' ') || t.includes(na) || tl.includes(loose(a))) {
+        if (!foundAlts.has(na)) { foundAlts.add(na); found.push(a); }
+        groupHit = true;
+      }
+    }
+    if (!groupHit) missing.push(raw);
   }
-  const coverage = found.length / rawKeywords.length;
-  // minKeywords: nº mínimo de termos-alvo a usar (default 1 = leniente).
-  const need = Math.min(ex.minKeywords || 1, rawKeywords.length);
+  // minKeywords: nº mínimo de termos a usar (default 1). Nunca exige mais termos
+  // do que existem disponíveis.
+  const need = Math.min(ex.minKeywords || 1, totalAlts || 1);
   const score = found.length >= need ? 1 : 0;
+  const coverage = rawKeywords.length ? (rawKeywords.length - missing.length) / rawKeywords.length : 1;
   return { score, coverage, found, missing, need };
 }
 
@@ -694,13 +711,23 @@ function Dictation({ ex, title, L, onResult, quizMode }) {
 function Speaking({ ex, title, L, onResult, quizMode }) {
   return (
     <Shell title={title}>
-      {ex.prompt && <p style={{ fontSize: 15, marginBottom: 12, lineHeight: 1.6 }}>{ex.prompt}</p>}
+      {ex.prompt && (
+        <div style={{ fontSize: 14, marginBottom: 10, lineHeight: 1.6, color: '#4A5568' }}>
+          <span style={{ fontWeight: 700, color: 'var(--gray)' }}>Contexto: </span>{ex.prompt}
+        </div>
+      )}
+      <div style={{
+        fontSize: 13.5, color: '#1B4D7A', background: '#EAF2FB', border: '1px solid #BBD6F2',
+        borderRadius: 8, padding: '8px 12px', marginBottom: 12, lineHeight: 1.5,
+      }}>
+        🗣️ <strong>Leia a frase abaixo em voz alta.</strong> É uma resposta-modelo: o objetivo é treinar a <strong>pronúncia e a fluência</strong> — não precisa criar sua própria resposta aqui. Toque no microfone e leia; depois você se ouve e compara.
+      </div>
       <div style={{
         padding: '12px 14px', borderRadius: 10, background: SURFACE,
         border: `1px solid ${LINE}`, marginBottom: 14, fontSize: 15, fontWeight: 500,
         lineHeight: 1.6, overflowWrap: 'break-word', wordBreak: 'break-word', maxWidth: '100%',
       }}>
-        <span style={{ display: 'block', fontSize: 11, fontWeight: 700, color: 'var(--gray)', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 4 }}>Frase para você falar</span>
+        <span style={{ display: 'block', fontSize: 11, fontWeight: 700, color: 'var(--gray)', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 4 }}>Frase-modelo para ler em voz alta</span>
         {ex.targetText}
       </div>
       <SpeakingExercise
