@@ -38,8 +38,8 @@
   header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--n200)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
   .nav-logos{display:flex;align-items:center;gap:14px}
-  .nav-logos img.alumni{height:26px}
-  .nav-logos img.faap{height:38px}
+  .nav-logos img.alumni{height:34px}
+  .nav-logos img.faap{height:52px}
   .nav-logos .x{color:var(--n300);font-weight:600;font-size:1.1rem}
   .nav-links{display:flex;gap:26px;align-items:center}
   .nav-links a{font-size:.9rem;font-weight:500;color:var(--n600)}
@@ -66,8 +66,8 @@
   .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.3)}
   .btn-ghost:hover{background:rgba(255,255,255,.16)}
   .hero-logos{display:flex;align-items:center;gap:20px}
-  .hero-logos img.faap{height:60px;filter:brightness(0) invert(1)}
-  .hero-logos img.alumni{height:34px;filter:brightness(0) invert(1)}
+  .hero-logos img.faap{height:84px;filter:brightness(0) invert(1)}
+  .hero-logos img.alumni{height:48px;filter:brightness(0) invert(1)}
   .hero-logos .x{color:rgba(255,255,255,.4);font-size:1.4rem;font-weight:300}
 
   /* ABOUT */
@@ -170,9 +170,9 @@
   .shot .cap p{font-size:.85rem;color:var(--n600)}
   @media(max-width:680px){.gallery{grid-template-columns:1fr}}
 
-  .themes{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-  .theme{display:flex;align-items:center;gap:10px;background:var(--azul-soft);border-radius:12px;padding:12px 18px;font-weight:600;font-size:.9rem;color:var(--azul-dark)}
-  .theme .ic{font-size:1.1rem}
+  .themes{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .theme{position:relative;background:#fff;border:1px solid var(--n200);border-radius:10px;padding:11px 18px 11px 32px;font-weight:600;font-size:.88rem;color:var(--azul-dark)}
+  .theme::before{content:"";position:absolute;left:15px;top:50%;transform:translateY(-50%);width:7px;height:7px;border-radius:2px;background:var(--vermelho)}
 
   /* CTA */
   .cta{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;text-align:center}
@@ -193,8 +193,8 @@
   /* FOOTER */
   footer{background:#0b1020;color:rgba(255,255,255,.6);padding:40px 0;text-align:center;font-size:.84rem}
   footer .flogos{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:18px}
-  footer .flogos img.faap{height:42px;filter:brightness(0) invert(1);opacity:.85}
-  footer .flogos img.alumni{height:26px;filter:brightness(0) invert(1);opacity:.85}
+  footer .flogos img.faap{height:58px;filter:brightness(0) invert(1);opacity:.85}
+  footer .flogos img.alumni{height:36px;filter:brightness(0) invert(1);opacity:.85}
   footer .flogos .x{color:rgba(255,255,255,.3)}
   footer .disc{margin-top:8px;color:rgba(255,255,255,.35);font-size:.78rem}
 </style>
@@ -218,30 +218,6 @@
     </nav>
   </div>
 </header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-logos">
-      <img class="faap" src="/faap/img/faap-brasao.svg" alt="FAAP" />
-      <span class="x">×</span>
-      <img class="alumni" src="/faap/img/alumni.webp" alt="Alumni by Better" />
-    </div>
-    <div class="partner-row" style="margin-top:28px">
-      <span class="chip">⭑ PARCERIA EXCLUSIVA · COLABORADORES FAAP</span>
-    </div>
-    <h1>O inglês que abre portas, agora com 50% de desconto pra você.</h1>
-    <p class="lead">A FAAP e a Alumni firmaram uma parceria para que cada colaborador possa, enfim, dar o próximo passo no inglês — com o centro binacional Brasil–EUA mais tradicional do país, há 65 anos formando quem se comunica de verdade. É a sua chance de estudar com método próprio, equipe certificada internacionalmente e um benefício que é só seu.</p>
-    <div class="hero-badge">
-      <span class="big">−50%</span>
-      <span class="txt">de desconto exclusivo<br/>nos cursos Community e Community Flow</span>
-    </div>
-    <div class="hero-btns">
-      <a href="#cursos" class="btn btn-primary">Ver os dois cursos →</a>
-      <a href="#contato" class="btn btn-ghost">Falar com a Alumni</a>
-    </div>
-  </div>
-</section>
 
 <!-- SOBRE -->
 <section class="about" id="sobre">
@@ -271,13 +247,37 @@
   </div>
 </section>
 
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-logos">
+      <img class="faap" src="/faap/img/faap-brasao.svg" alt="FAAP" />
+      <span class="x">×</span>
+      <img class="alumni" src="/faap/img/alumni.webp" alt="Alumni by Better" />
+    </div>
+    <div class="partner-row" style="margin-top:28px">
+      <span class="chip">⭑ PARCERIA EXCLUSIVA · COLABORADORES FAAP</span>
+    </div>
+    <h1>O inglês que abre portas, agora com 50% de desconto pra você.</h1>
+    <p class="lead">A FAAP e a Alumni firmaram uma parceria para que cada colaborador possa, enfim, dar o próximo passo no inglês — com o centro binacional Brasil–EUA mais tradicional do país, há 65 anos formando quem se comunica de verdade. É a sua chance de estudar com método próprio, equipe certificada internacionalmente e um benefício que é só seu.</p>
+    <div class="hero-badge">
+      <span class="big">−50%</span>
+      <span class="txt">de desconto exclusivo<br/>nos cursos Community e Community Flow</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#cursos" class="btn btn-primary">Ver os dois cursos →</a>
+      <a href="#contato" class="btn btn-ghost">Falar com a Alumni</a>
+    </div>
+  </div>
+</section>
+
 <!-- CURSOS -->
 <section id="cursos">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Os cursos da parceria</p>
       <h2>Dois caminhos, o mesmo padrão Alumni — e 50% de desconto pra você.</h2>
-      <p>Como colaborador da FAAP, você escolhe entre o <strong>Community</strong> (turma flexível, no seu ritmo) e o <strong>Community Flow</strong> (grupo + aulas particulares intercaladas, para avançar mais rápido). Em ambos, o valor é metade — veja o preço cheio e o seu preço de parceria.</p>
+      <p>Como colaborador da FAAP, você escolhe entre o <strong>Community</strong> (turma flexível, no seu ritmo) e o <strong>Community Flow</strong> (grupo + aulas particulares intercaladas, com atenção individual). Em ambos, o valor é metade — veja o preço cheio e o seu preço de parceria.</p>
     </div>
     <div class="courses-grid">
 
@@ -294,9 +294,9 @@
         <ul class="specs">
           <li><span>Formato</span><span>100% online ao vivo</span></li>
           <li><span>Grupo</span><span>Até 8 alunos</span></li>
-          <li><span>Carga</span><span>1h por aula, contínuo</span></li>
+          <li><span>Carga</span><span>96 aulas em grupo</span></li>
           <li><span>Níveis</span><span>11 níveis (CEFR)</span></li>
-          <li><span>Agendamento</span><span>Até 30 min antes da aula</span></li>
+          <li><span>Agendamento</span><span>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</span></li>
         </ul>
         <ul class="feats" style="margin-top:18px">
           <li>Aulas 3x por semana, com temas que mudam a cada dois dias</li>
@@ -308,11 +308,10 @@
       </div>
 
       <!-- COMMUNITY FLOW -->
-      <div class="card featured">
-        <span class="tag">Avanço mais rápido</span>
+      <div class="card">
         <span class="plan">Plano anual · Community Flow</span>
         <h3>Community Flow</h3>
-        <p class="desc">Tudo do Community + aulas particulares intercaladas. Progressão acelerada e atenção individual, sem precisar contratar duas coisas.</p>
+        <p class="desc">Tudo do Community + aulas particulares intercaladas, com atenção individual — sem precisar contratar grupo e particular à parte.</p>
         <div class="price-box">
           <div class="price-old">De 12x R$ 596 no plano anual</div>
           <div class="price-new"><span class="v">12x R$ 298</span><span class="u">no plano anual</span></div>
@@ -321,9 +320,9 @@
         <ul class="specs">
           <li><span>Formato</span><span>Online ao vivo (grupo + particular)</span></li>
           <li><span>Grupo</span><span>Até 8; 1:1 nas particulares</span></li>
-          <li><span>Carga</span><span>96h grupo + 1 particular a cada 5 aulas</span></li>
+          <li><span>Carga</span><span>96 aulas em grupo + 19 particulares</span></li>
           <li><span>Níveis</span><span>11 níveis (CEFR)</span></li>
-          <li><span>Agendamento</span><span>Seg–sex 7h–20h, sáb 8h–14h</span></li>
+          <li><span>Agendamento</span><span>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</span></li>
         </ul>
         <ul class="feats" style="margin-top:18px">
           <li>Aulas coletivas + individuais no mesmo plano</li>
@@ -362,12 +361,12 @@
       </thead>
       <tbody>
         <tr><td class="feat-col">Formato</td><td>100% online ao vivo</td><td>Online ao vivo (grupo + particular)</td></tr>
-        <tr><td class="feat-col">Carga horária</td><td>1 hora por aula, contínuo</td><td>96h em grupo + 1 particular a cada 5 aulas</td></tr>
+        <tr><td class="feat-col">Carga horária</td><td>96 aulas em grupo</td><td>96 aulas em grupo + 19 aulas particulares</td></tr>
         <tr><td class="feat-col">Tamanho de grupo</td><td>Até 8 alunos</td><td>Até 8 em grupo; 1:1 nas particulares</td></tr>
         <tr><td class="feat-col">Níveis</td><td>11 níveis (CEFR) — Confidence ao Apex</td><td>11 níveis (CEFR) — Confidence ao Apex</td></tr>
-        <tr><td class="feat-col">Agendamento</td><td>Até 30 min antes da aula</td><td>Seg–sex 7h–20h, sábados 8h–14h</td></tr>
-        <tr><td class="feat-col">Indicado para</td><td>Praticar e manter o inglês do dia a dia, com flexibilidade total</td><td>Quem quer progressão acelerada e atenção individual, sem abrir mão do grupo</td></tr>
-        <tr><td class="feat-col">Material personalizado</td><td>Plataforma Alumni com vocabulário do dia a dia</td><td>Conteúdo construído a partir das suas dificuldades reais</td></tr>
+        <tr><td class="feat-col">Agendamento</td><td>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</td><td>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</td></tr>
+        <tr><td class="feat-col">Indicado para</td><td>Praticar e manter o inglês do dia a dia, com flexibilidade total</td><td>Quem quer atenção individual nas particulares, sem abrir mão do grupo</td></tr>
+        <tr><td class="feat-col">Material personalizado</td><td>Plataforma Alumni com vocabulário do dia a dia</td><td>Plataforma Alumni + conteúdo construído a partir das suas dificuldades reais</td></tr>
         <tr class="row-invest"><td class="feat-col">Investimento FAAP</td><td><s style="opacity:.5;font-weight:500">R$ 480</s> 12x R$ 240</td><td><s style="opacity:.5;font-weight:500">R$ 596</s> 12x R$ 298</td></tr>
       </tbody>
     </table>
@@ -483,9 +482,9 @@
       <div class="mat-text">
         <p class="eyebrow" style="color:var(--vermelho)">Exclusivo · material FAAP</p>
         <h3>Uma plataforma desenhada para os colaboradores da FAAP.</h3>
-        <p>Quando o escopo justifica, desenhamos uma plataforma e um material próprios — lições interativas, vocabulário do seu contexto, gravação de voz com feedback e referências de gramática integradas. Para a FAAP, esse material vai contemplar tanto o <strong>inglês para negócios</strong> quanto o inglês para <strong>viagens e experiências internacionais</strong> e para o <strong>dia a dia: saúde, bem-estar e entretenimento</strong>.</p>
+        <p>Para a FAAP, vamos desenhar uma plataforma e um material próprios — com lições interativas, gravação de voz com feedback e referências de gramática integradas. O conteúdo contempla o <strong>inglês para negócios</strong>, o inglês para <strong>viagens e experiências internacionais</strong> e o inglês do <strong>dia a dia: saúde, bem-estar e entretenimento</strong>, pensado para a rotina e os objetivos de quem é da FAAP.</p>
         <ul>
-          <li>Lições interativas com vocabulário do contexto da FAAP</li>
+          <li>Lições interativas, exercícios guiados e correção a cada passo</li>
           <li>Gravação de voz com feedback e gramática integrada</li>
           <li>Trilhas temáticas que vão do trabalho à vida pessoal</li>
           <li>Acesso pelo celular, tablet e computador, dentro e fora da aula</li>
@@ -496,10 +495,10 @@
 
     <!-- Themes -->
     <div class="themes">
-      <span class="theme"><span class="ic">💼</span>Inglês para negócios</span>
-      <span class="theme"><span class="ic">✈️</span>Viagens e experiências internacionais</span>
-      <span class="theme"><span class="ic">🩺</span>Saúde e bem-estar</span>
-      <span class="theme"><span class="ic">🎬</span>Entretenimento e cultura</span>
+      <span class="theme">Inglês para negócios</span>
+      <span class="theme">Viagens e experiências internacionais</span>
+      <span class="theme">Saúde e bem-estar</span>
+      <span class="theme">Entretenimento e cultura</span>
     </div>
 
     <!-- Gallery -->
