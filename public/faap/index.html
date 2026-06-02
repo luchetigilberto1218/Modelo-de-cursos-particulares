@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Alumni × FAAP — Inglês com 50% de desconto para colaboradores</title>
+<meta name="description" content="Proposta exclusiva Alumni by Better para colaboradores da FAAP: 50% de desconto nos cursos Community e Community Flow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --azul:#102a71; --azul-dark:#0a1d52; --azul-soft:#e8edf8;
+    --vermelho:#cb142d; --vermelho-dark:#a30f24;
+    --faap:#1753d9;
+    --n50:#fafafa; --n100:#f5f5f5; --n200:#e5e5e5; --n300:#d4d4d4;
+    --n400:#a1a1a1; --n500:#737373; --n600:#525252; --n700:#404040;
+    --n800:#262626; --n900:#171717;
+    --green:#16a34a; --green-bg:#dcfce7; --green-dark:#016630;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Inter",system-ui,-apple-system,sans-serif;color:var(--n900);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--vermelho)}
+  h1,h2,h3{letter-spacing:-.02em;line-height:1.12}
+  section{padding:72px 0}
+  .sec-head{max-width:680px;margin-bottom:40px}
+  .sec-head .eyebrow{color:var(--n400);margin-bottom:12px}
+  .sec-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;color:var(--azul)}
+  .sec-head p{margin-top:14px;color:var(--n600);font-size:1.05rem}
+
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--n200)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .nav-logos{display:flex;align-items:center;gap:14px}
+  .nav-logos img.alumni{height:26px}
+  .nav-logos img.faap{height:38px}
+  .nav-logos .x{color:var(--n300);font-weight:600;font-size:1.1rem}
+  .nav-links{display:flex;gap:26px;align-items:center}
+  .nav-links a{font-size:.9rem;font-weight:500;color:var(--n600)}
+  .nav-links a:hover{color:var(--azul)}
+  .nav-cta{background:var(--vermelho);color:#fff;padding:9px 18px;border-radius:999px;font-weight:600;font-size:.88rem}
+  .nav-cta:hover{background:var(--vermelho-dark)}
+  @media(max-width:860px){.nav-links a:not(.nav-cta){display:none}}
+
+  /* HERO */
+  .hero{background:linear-gradient(160deg,var(--azul-dark) 0%,var(--azul) 60%,#163485 100%);color:#fff;padding:84px 0 96px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:480px;height:480px;background:radial-gradient(circle,rgba(203,20,45,.22),transparent 70%);border-radius:50%}
+  .hero .wrap{position:relative;z-index:2}
+  .partner-row{display:flex;align-items:center;gap:18px;margin-bottom:30px}
+  .partner-row .chip{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:8px 16px;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.04em}
+  .hero h1{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:900;max-width:16ch}
+  .hero .lead{margin-top:22px;font-size:1.15rem;max-width:54ch;color:rgba(255,255,255,.85)}
+  .hero-badge{display:inline-flex;align-items:center;gap:12px;margin-top:34px;background:#fff;color:var(--azul-dark);padding:14px 22px;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+  .hero-badge .big{font-size:1.9rem;font-weight:900;color:var(--vermelho);line-height:1}
+  .hero-badge .txt{font-size:.82rem;font-weight:600;line-height:1.25;color:var(--n700)}
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:.95rem;transition:.15s}
+  .btn-primary{background:var(--vermelho);color:#fff}
+  .btn-primary:hover{background:var(--vermelho-dark)}
+  .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.3)}
+  .btn-ghost:hover{background:rgba(255,255,255,.16)}
+  .hero-logos{display:flex;align-items:center;gap:20px}
+  .hero-logos img.faap{height:60px;filter:brightness(0) invert(1)}
+  .hero-logos img.alumni{height:34px;filter:brightness(0) invert(1)}
+  .hero-logos .x{color:rgba(255,255,255,.4);font-size:1.4rem;font-weight:300}
+
+  /* ABOUT */
+  .about{background:var(--n50)}
+  .about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
+  .feat{background:#fff;border:1px solid var(--n200);border-radius:16px;padding:26px}
+  .feat .ck{color:var(--green);font-weight:800}
+  .feat h3{font-size:1.05rem;font-weight:700;margin:12px 0 8px;color:var(--azul)}
+  .feat p{font-size:.92rem;color:var(--n600)}
+  @media(max-width:760px){.about-grid{grid-template-columns:1fr}}
+
+  /* COURSES */
+  .courses-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .card{border:1px solid var(--n200);border-radius:20px;padding:32px;display:flex;flex-direction:column;position:relative;background:#fff;transition:.18s}
+  .card:hover{box-shadow:0 18px 50px rgba(16,42,113,.1);transform:translateY(-3px)}
+  .card.featured{border:2px solid var(--azul);box-shadow:0 18px 50px rgba(16,42,113,.12)}
+  .card .tag{position:absolute;top:-13px;left:32px;background:var(--azul);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+  .card .plan{font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--n400)}
+  .card h3{font-size:1.6rem;font-weight:800;margin:6px 0 10px;color:var(--azul)}
+  .card .desc{font-size:.95rem;color:var(--n600);min-height:48px}
+  .price-box{margin:20px 0;padding:18px;background:var(--n50);border-radius:14px;border:1px solid var(--n200)}
+  .price-old{font-size:.95rem;color:var(--n400);text-decoration:line-through}
+  .price-new{display:flex;align-items:baseline;gap:8px;margin-top:2px}
+  .price-new .v{font-size:1.9rem;font-weight:900;color:var(--azul-dark)}
+  .price-new .u{font-size:.9rem;color:var(--n600);font-weight:600}
+  .save-pill{display:inline-block;margin-top:10px;background:var(--green-bg);color:var(--green-dark);font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:999px}
+  .specs{list-style:none;margin:8px 0 0;border-top:1px solid var(--n200);padding-top:16px}
+  .specs li{display:flex;justify-content:space-between;gap:12px;font-size:.88rem;padding:6px 0;border-bottom:1px dashed var(--n200)}
+  .specs li span:first-child{color:var(--n500)}
+  .specs li span:last-child{font-weight:600;text-align:right}
+  .feats{list-style:none;margin:18px 0 24px}
+  .feats li{position:relative;padding-left:24px;font-size:.9rem;color:var(--n700);margin-bottom:9px}
+  .feats li::before{content:"✓";position:absolute;left:0;color:var(--vermelho);font-weight:800}
+  .card .btn-card{margin-top:auto;text-align:center;background:var(--azul);color:#fff;padding:13px;border-radius:12px;font-weight:700;font-size:.92rem}
+  .card .btn-card:hover{background:var(--azul-dark)}
+  @media(max-width:760px){.courses-grid{grid-template-columns:1fr}}
+
+  /* COMPARATOR */
+  .compare{background:var(--azul-dark);color:#fff}
+  .compare .sec-head h2{color:#fff}
+  .compare .sec-head .eyebrow{color:rgba(255,255,255,.5)}
+  .compare .sec-head p{color:rgba(255,255,255,.7)}
+  .ctable{width:100%;border-collapse:collapse;background:rgba(255,255,255,.04);border-radius:16px;overflow:hidden}
+  .ctable th,.ctable td{text-align:left;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.1);font-size:.9rem;vertical-align:top}
+  .ctable thead th{background:rgba(255,255,255,.07)}
+  .ctable thead .cn{font-size:1.05rem;font-weight:800}
+  .ctable thead .cp{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:500;margin-top:2px}
+  .ctable thead .cp s{color:rgba(255,255,255,.4)}
+  .ctable thead .cp b{color:#fff}
+  .ctable td:first-child,.ctable th:first-child{color:rgba(255,255,255,.55);font-weight:600;width:200px}
+  .ctable .row-invest td{font-weight:800;font-size:1rem}
+  .ctable .feat-col{color:rgba(255,255,255,.55)!important;font-weight:600}
+  @media(max-width:760px){.ctable{display:block;overflow-x:auto;white-space:nowrap}.ctable td:first-child,.ctable th:first-child{width:auto}}
+
+  /* QUIZ */
+  .quiz{background:var(--n50)}
+  .quiz-q{background:#fff;border:1px solid var(--n200);border-radius:16px;padding:24px;margin-bottom:16px}
+  .quiz-q .qn{font-size:.72rem;font-weight:700;letter-spacing:.12em;color:var(--vermelho);text-transform:uppercase}
+  .quiz-q h4{font-size:1.1rem;font-weight:700;margin:6px 0 16px;color:var(--azul)}
+  .opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .opt{border:1.5px solid var(--n200);border-radius:12px;padding:14px 16px;font-size:.92rem;cursor:pointer;transition:.12s;color:var(--n700);display:flex;align-items:center;gap:10px}
+  .opt:hover{border-color:var(--azul)}
+  .opt.sel{border-color:var(--azul);background:var(--azul-soft);color:var(--azul-dark);font-weight:600}
+  .opt .dot{width:16px;height:16px;border-radius:50%;border:2px solid var(--n300);flex:0 0 16px}
+  .opt.sel .dot{border-color:var(--azul);background:var(--azul);box-shadow:inset 0 0 0 3px #fff}
+  @media(max-width:600px){.opts{grid-template-columns:1fr}}
+  .quiz-result{margin-top:20px;background:#fff;border:2px solid var(--azul);border-radius:16px;padding:28px;display:none}
+  .quiz-result.show{display:block;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .quiz-result .label{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--n400)}
+  .quiz-result h3{font-size:1.5rem;color:var(--azul);margin:6px 0 8px;font-weight:800}
+  .quiz-result p{color:var(--n600);font-size:.95rem}
+  .quiz-note{margin-top:12px;font-size:.82rem;color:var(--n400)}
+
+  /* GRADE */
+  .grade-card{background:var(--n50);border:1px solid var(--n200);border-radius:18px;padding:30px}
+  .grade-card p{color:var(--n600);font-size:.95rem}
+  .grade-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .gt{background:#fff;border:1px solid var(--n200);border-radius:999px;padding:8px 16px;font-size:.85rem;font-weight:600;color:var(--azul)}
+
+  /* MATERIAL */
+  .mat-block{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;margin-bottom:64px}
+  .mat-block:last-child{margin-bottom:0}
+  .mat-block.rev{grid-template-columns:.95fr 1.05fr}
+  .mat-block.rev .mat-text{order:2}
+  .mat-text h3{font-size:1.5rem;font-weight:800;color:var(--azul);margin:8px 0 14px}
+  .mat-text p{color:var(--n600);font-size:.98rem;margin-bottom:14px}
+  .mat-text ul{list-style:none}
+  .mat-text li{position:relative;padding-left:24px;font-size:.92rem;color:var(--n700);margin-bottom:9px}
+  .mat-text li::before{content:"✓";position:absolute;left:0;color:var(--vermelho);font-weight:800}
+  .mat-shot{border-radius:14px;overflow:hidden;border:1px solid var(--n200);box-shadow:0 16px 44px rgba(16,42,113,.14)}
+  @media(max-width:820px){.mat-block,.mat-block.rev{grid-template-columns:1fr}.mat-block.rev .mat-text{order:0}}
+
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px}
+  .shot{border:1px solid var(--n200);border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+  .shot img{aspect-ratio:16/10;object-fit:cover;object-position:top}
+  .shot .cap{padding:16px 18px}
+  .shot .cap .t{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--vermelho)}
+  .shot .cap h4{font-size:1rem;font-weight:700;color:var(--azul);margin:5px 0 4px}
+  .shot .cap p{font-size:.85rem;color:var(--n600)}
+  @media(max-width:680px){.gallery{grid-template-columns:1fr}}
+
+  .themes{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .theme{display:flex;align-items:center;gap:10px;background:var(--azul-soft);border-radius:12px;padding:12px 18px;font-weight:600;font-size:.9rem;color:var(--azul-dark)}
+  .theme .ic{font-size:1.1rem}
+
+  /* CTA */
+  .cta{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;text-align:center}
+  .cta h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:900;max-width:18ch;margin:0 auto}
+  .cta p{margin:20px auto 0;max-width:56ch;color:rgba(255,255,255,.85);font-size:1.08rem}
+  .cta-badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:8px 18px;border-radius:999px;font-size:.82rem;font-weight:600;margin-bottom:24px;letter-spacing:.04em}
+  .cta-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:780px;margin:44px auto 0}
+  .cta-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:26px 20px;transition:.15s}
+  .cta-card:hover{background:rgba(255,255,255,.13);transform:translateY(-3px)}
+  .cta-card .ic{font-size:1.7rem;margin-bottom:10px}
+  .cta-card .lbl{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+  .cta-card .val{font-size:1.02rem;font-weight:700;margin-top:4px;word-break:break-word}
+  .cta-whats{margin-top:40px}
+  .cta-whats a{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#0a3d1e;padding:16px 34px;border-radius:999px;font-weight:800;font-size:1.05rem;transition:.15s}
+  .cta-whats a:hover{transform:scale(1.04)}
+  @media(max-width:680px){.cta-cards{grid-template-columns:1fr}}
+
+  /* FOOTER */
+  footer{background:#0b1020;color:rgba(255,255,255,.6);padding:40px 0;text-align:center;font-size:.84rem}
+  footer .flogos{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:18px}
+  footer .flogos img.faap{height:42px;filter:brightness(0) invert(1);opacity:.85}
+  footer .flogos img.alumni{height:26px;filter:brightness(0) invert(1);opacity:.85}
+  footer .flogos .x{color:rgba(255,255,255,.3)}
+  footer .disc{margin-top:8px;color:rgba(255,255,255,.35);font-size:.78rem}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="nav-logos">
+      <img class="faap" src="/faap/img/faap-brasao.svg" alt="FAAP" />
+      <span class="x">×</span>
+      <img class="alumni" src="/faap/img/alumni.webp" alt="Alumni by Better" />
+    </div>
+    <nav class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#comparar">Comparar</a>
+      <a href="#material">Material</a>
+      <a href="#contato" class="nav-cta">Quero meu benefício</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-logos">
+      <img class="faap" src="/faap/img/faap-brasao.svg" alt="FAAP" />
+      <span class="x">×</span>
+      <img class="alumni" src="/faap/img/alumni.webp" alt="Alumni by Better" />
+    </div>
+    <div class="partner-row" style="margin-top:28px">
+      <span class="chip">⭑ PARCERIA EXCLUSIVA · COLABORADORES FAAP</span>
+    </div>
+    <h1>O inglês que abre portas, agora com 50% de desconto pra você.</h1>
+    <p class="lead">A FAAP e a Alumni firmaram uma parceria para que cada colaborador possa, enfim, dar o próximo passo no inglês — com o centro binacional Brasil–EUA mais tradicional do país, há 65 anos formando quem se comunica de verdade. É a sua chance de estudar com método próprio, equipe certificada internacionalmente e um benefício que é só seu.</p>
+    <div class="hero-badge">
+      <span class="big">−50%</span>
+      <span class="txt">de desconto exclusivo<br/>nos cursos Community e Community Flow</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#cursos" class="btn btn-primary">Ver os dois cursos →</a>
+      <a href="#contato" class="btn btn-ghost">Falar com a Alumni</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Sobre a Alumni</p>
+      <h2>65 anos formando comunicadores em inglês.</h2>
+      <p>A Alumni é o centro binacional Brasil–EUA mais tradicional do país, fundado em 1961. Certificação reconhecida internacionalmente, método próprio e equipe pedagógica certificada — a mesma estrutura, agora ao alcance de quem é da FAAP.</p>
+    </div>
+    <div class="about-grid">
+      <div class="feat">
+        <span class="ck">✓ Centro Binacional Brasil–EUA</span>
+        <h3>Tradição desde 1961</h3>
+        <p>Certificação reconhecida internacionalmente, construída em São Paulo ao longo de seis décadas.</p>
+      </div>
+      <div class="feat">
+        <span class="ck">✓ Professores certificados</span>
+        <h3>Equipe pedagógica de elite</h3>
+        <p>Time certificado internacionalmente, com suporte individualizado a cada aluno.</p>
+      </div>
+      <div class="feat">
+        <span class="ck">✓ Método em 3 passos</span>
+        <h3>Pré-aula, aula ao vivo e pós-aula</h3>
+        <p>Exercícios interativos antes, conversação ao vivo durante e fixação depois. Você evolui de verdade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURSOS -->
+<section id="cursos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Os cursos da parceria</p>
+      <h2>Dois caminhos, o mesmo padrão Alumni — e 50% de desconto pra você.</h2>
+      <p>Como colaborador da FAAP, você escolhe entre o <strong>Community</strong> (turma flexível, no seu ritmo) e o <strong>Community Flow</strong> (grupo + aulas particulares intercaladas, para avançar mais rápido). Em ambos, o valor é metade — veja o preço cheio e o seu preço de parceria.</p>
+    </div>
+    <div class="courses-grid">
+
+      <!-- COMMUNITY -->
+      <div class="card">
+        <span class="plan">Plano anual · Community</span>
+        <h3>Community</h3>
+        <p class="desc">Inglês para o dia a dia profissional, em grupo, com flexibilidade total. Entrada imediata, sem esperar turma fechar.</p>
+        <div class="price-box">
+          <div class="price-old">De 12x R$ 480 no plano anual</div>
+          <div class="price-new"><span class="v">12x R$ 240</span><span class="u">no plano anual</span></div>
+          <span class="save-pill">−50% · benefício FAAP · economize R$ 2.880 no ano</span>
+        </div>
+        <ul class="specs">
+          <li><span>Formato</span><span>100% online ao vivo</span></li>
+          <li><span>Grupo</span><span>Até 8 alunos</span></li>
+          <li><span>Carga</span><span>1h por aula, contínuo</span></li>
+          <li><span>Níveis</span><span>11 níveis (CEFR)</span></li>
+          <li><span>Agendamento</span><span>Até 30 min antes da aula</span></li>
+        </ul>
+        <ul class="feats" style="margin-top:18px">
+          <li>Aulas 3x por semana, com temas que mudam a cada dois dias</li>
+          <li>Turmas não-fixas — colegas diferentes em cada sessão, como na vida real</li>
+          <li>Plataforma com atividades gamificadas e Leaderboard</li>
+          <li>Professores certificados internacionalmente</li>
+        </ul>
+        <a href="#contato" class="btn-card">Quero o Community com 50% off</a>
+      </div>
+
+      <!-- COMMUNITY FLOW -->
+      <div class="card featured">
+        <span class="tag">Avanço mais rápido</span>
+        <span class="plan">Plano anual · Community Flow</span>
+        <h3>Community Flow</h3>
+        <p class="desc">Tudo do Community + aulas particulares intercaladas. Progressão acelerada e atenção individual, sem precisar contratar duas coisas.</p>
+        <div class="price-box">
+          <div class="price-old">De 12x R$ 596 no plano anual</div>
+          <div class="price-new"><span class="v">12x R$ 298</span><span class="u">no plano anual</span></div>
+          <span class="save-pill">−50% · benefício FAAP · economize R$ 3.576 no ano</span>
+        </div>
+        <ul class="specs">
+          <li><span>Formato</span><span>Online ao vivo (grupo + particular)</span></li>
+          <li><span>Grupo</span><span>Até 8; 1:1 nas particulares</span></li>
+          <li><span>Carga</span><span>96h grupo + 1 particular a cada 5 aulas</span></li>
+          <li><span>Níveis</span><span>11 níveis (CEFR)</span></li>
+          <li><span>Agendamento</span><span>Seg–sex 7h–20h, sáb 8h–14h</span></li>
+        </ul>
+        <ul class="feats" style="margin-top:18px">
+          <li>Aulas coletivas + individuais no mesmo plano</li>
+          <li>Custo-benefício superior à contratação separada de grupo e particular</li>
+          <li>Conversação com personalização e feedback direto</li>
+          <li>Material didático próprio incluído, construído a partir das suas dificuldades</li>
+        </ul>
+        <a href="#contato" class="btn-card">Quero o Community Flow com 50% off</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARADOR -->
+<section class="compare" id="comparar">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Comparador lado a lado</p>
+      <h2>Dois cursos. O mesmo método. Você escolhe o ritmo.</h2>
+      <p>Os dois preços já estão com o desconto de 50% da parceria FAAP × Alumni.</p>
+    </div>
+    <table class="ctable">
+      <thead>
+        <tr>
+          <th>Atributo</th>
+          <th>
+            <div class="cn">Community</div>
+            <div class="cp"><s>12x R$ 480</s> &nbsp;→&nbsp; <b>12x R$ 240</b></div>
+          </th>
+          <th>
+            <div class="cn">Community Flow</div>
+            <div class="cp"><s>12x R$ 596</s> &nbsp;→&nbsp; <b>12x R$ 298</b></div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="feat-col">Formato</td><td>100% online ao vivo</td><td>Online ao vivo (grupo + particular)</td></tr>
+        <tr><td class="feat-col">Carga horária</td><td>1 hora por aula, contínuo</td><td>96h em grupo + 1 particular a cada 5 aulas</td></tr>
+        <tr><td class="feat-col">Tamanho de grupo</td><td>Até 8 alunos</td><td>Até 8 em grupo; 1:1 nas particulares</td></tr>
+        <tr><td class="feat-col">Níveis</td><td>11 níveis (CEFR) — Confidence ao Apex</td><td>11 níveis (CEFR) — Confidence ao Apex</td></tr>
+        <tr><td class="feat-col">Agendamento</td><td>Até 30 min antes da aula</td><td>Seg–sex 7h–20h, sábados 8h–14h</td></tr>
+        <tr><td class="feat-col">Indicado para</td><td>Praticar e manter o inglês do dia a dia, com flexibilidade total</td><td>Quem quer progressão acelerada e atenção individual, sem abrir mão do grupo</td></tr>
+        <tr><td class="feat-col">Material personalizado</td><td>Plataforma Alumni com vocabulário do dia a dia</td><td>Conteúdo construído a partir das suas dificuldades reais</td></tr>
+        <tr class="row-invest"><td class="feat-col">Investimento FAAP</td><td><s style="opacity:.5;font-weight:500">R$ 480</s> 12x R$ 240</td><td><s style="opacity:.5;font-weight:500">R$ 596</s> 12x R$ 298</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="quiz" id="quiz">
+  <div class="wrap" style="max-width:760px">
+    <div class="sec-head" style="margin:0 auto 36px;text-align:center">
+      <p class="eyebrow" style="color:var(--n400)">Qual curso é o seu?</p>
+      <h2>Quatro perguntas rápidas.</h2>
+      <p>Agora são só dois cursos — então o resultado aponta direto para o seu. É um ponto de partida: a equipe Alumni ajuda você a confirmar a melhor escolha.</p>
+    </div>
+
+    <div id="quizForm">
+      <div class="quiz-q" data-q="1">
+        <span class="qn">Pergunta 1</span>
+        <h4>Qual o seu principal objetivo com o inglês?</h4>
+        <div class="opts">
+          <div class="opt" data-v="C"><span class="dot"></span>Praticar e manter o inglês do dia a dia</div>
+          <div class="opt" data-v="F"><span class="dot"></span>Evoluir rápido, com atenção individual</div>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="2">
+        <span class="qn">Pergunta 2</span>
+        <h4>Como você prefere estudar?</h4>
+        <div class="opts">
+          <div class="opt" data-v="C"><span class="dot"></span>Em grupo, com horários flexíveis</div>
+          <div class="opt" data-v="F"><span class="dot"></span>Em grupo, mas com aulas individuais intercaladas</div>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="3">
+        <span class="qn">Pergunta 3</span>
+        <h4>Como é a sua disponibilidade?</h4>
+        <div class="opts">
+          <div class="opt" data-v="C"><span class="dot"></span>Variável — preciso agendar de última hora</div>
+          <div class="opt" data-v="F"><span class="dot"></span>Tenho uma rotina, mas quero acelerar</div>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="4">
+        <span class="qn">Pergunta 4</span>
+        <h4>O que pesa mais na sua decisão?</h4>
+        <div class="opts">
+          <div class="opt" data-v="C"><span class="dot"></span>Melhor custo mensal</div>
+          <div class="opt" data-v="F"><span class="dot"></span>Equilíbrio entre preço e velocidade de avanço</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-result" id="quizResult">
+      <span class="label">Seu ponto de partida</span>
+      <h3 id="resTitle">Community</h3>
+      <p id="resText"></p>
+      <p class="quiz-note">Lembre: com a parceria FAAP, os dois cursos estão com 50% de desconto. A equipe Alumni confirma a melhor escolha com você.</p>
+      <div style="margin-top:20px"><a href="#contato" class="btn btn-primary">Garantir meu benefício →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- GRADE -->
+<section id="grade">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Operação</p>
+      <h2>Grade de aulas em grupo.</h2>
+      <p>A grade do Community e do Community Flow cobre os 11 níveis em quatro faixas, com múltiplas opções por dia — do início da manhã ao fim da noite, mais sábado pela manhã. Você agenda até 30 minutos antes de cada aula.</p>
+    </div>
+    <div class="grade-card">
+      <p>Não há turma fixa: a cada sessão, formam-se grupos diferentes dentro do mesmo nível — exatamente como na vida real, conversando com pessoas diferentes a cada dia.</p>
+      <div class="grade-tags">
+        <span class="gt">Confidence — entrada</span>
+        <span class="gt">Essential 1–4 — básico ao pré-intermediário</span>
+        <span class="gt">Rise 1–3 — intermediário</span>
+        <span class="gt">Apex 1–3 — avançado</span>
+      </div>
+      <div class="grade-tags" style="margin-top:14px">
+        <span class="gt" style="background:var(--azul-soft);border-color:var(--azul-soft)">Seg a sex · 08h às 20h</span>
+        <span class="gt" style="background:var(--azul-soft);border-color:var(--azul-soft)">Sábado · manhã</span>
+        <span class="gt" style="background:var(--azul-soft);border-color:var(--azul-soft)">Agende até 30 min antes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIAL -->
+<section id="material">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Material didático</p>
+      <h2>Conteúdo construído para o seu objetivo.</h2>
+      <p>No <strong>Community Flow</strong>, você não recebe uma apostila fechada: o conteúdo é construído a partir das suas necessidades e dificuldades. E, para a FAAP, vamos além — estamos montando um material personalizado só para os colaboradores.</p>
+    </div>
+
+    <!-- FLOW personalization -->
+    <div class="mat-block">
+      <div class="mat-text">
+        <p class="eyebrow" style="color:var(--vermelho)">Community Flow</p>
+        <h3>Aulas personalizadas para você.</h3>
+        <p>Nos encontros particulares intercalados, você tem um momento individual com o professor para destravar pontos específicos, ajustar o foco do seu plano e acelerar — no ritmo e no objetivo que são seus: carreira, negócios ou viagem.</p>
+        <ul>
+          <li>Aula particular intercalada para personalizar o seu conteúdo</li>
+          <li>Foco nas suas dificuldades reais, não numa apostila genérica</li>
+          <li>Plano ajustado com o professor a cada ciclo</li>
+          <li>Vocabulário do seu contexto: trabalho, negócios e viagens</li>
+        </ul>
+      </div>
+      <div class="mat-shot"><img src="/faap/img/business-1.jpg" alt="Inglês para reuniões e apresentações" /></div>
+    </div>
+
+    <!-- FAAP custom material -->
+    <div class="mat-block rev">
+      <div class="mat-text">
+        <p class="eyebrow" style="color:var(--vermelho)">Exclusivo · material FAAP</p>
+        <h3>Uma plataforma desenhada para os colaboradores da FAAP.</h3>
+        <p>Quando o escopo justifica, desenhamos uma plataforma e um material próprios — lições interativas, vocabulário do seu contexto, gravação de voz com feedback e referências de gramática integradas. Para a FAAP, esse material vai contemplar tanto o <strong>inglês para negócios</strong> quanto o inglês para <strong>viagens e experiências internacionais</strong> e para o <strong>dia a dia: saúde, bem-estar e entretenimento</strong>.</p>
+        <ul>
+          <li>Lições interativas com vocabulário do contexto da FAAP</li>
+          <li>Gravação de voz com feedback e gramática integrada</li>
+          <li>Trilhas temáticas que vão do trabalho à vida pessoal</li>
+          <li>Acesso pelo celular, tablet e computador, dentro e fora da aula</li>
+        </ul>
+      </div>
+      <div class="mat-shot"><img src="/faap/img/campus-1.png" alt="Plataforma com trilhas temáticas" /></div>
+    </div>
+
+    <!-- Themes -->
+    <div class="themes">
+      <span class="theme"><span class="ic">💼</span>Inglês para negócios</span>
+      <span class="theme"><span class="ic">✈️</span>Viagens e experiências internacionais</span>
+      <span class="theme"><span class="ic">🩺</span>Saúde e bem-estar</span>
+      <span class="theme"><span class="ic">🎬</span>Entretenimento e cultura</span>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="shot">
+        <img src="/faap/img/porto-1.png" alt="Inglês para negócios — módulos centrados na operação" />
+        <div class="cap">
+          <span class="t">Inglês para negócios</span>
+          <h4>Módulos centrados no seu contexto</h4>
+          <p>Vocabulário, cases e situações reais de trabalho — reuniões, apresentações e e-mails em inglês.</p>
+        </div>
+      </div>
+      <div class="shot">
+        <img src="/faap/img/porto-2.png" alt="Lições interativas com objetivo claro" />
+        <div class="cap">
+          <span class="t">Lições interativas</span>
+          <h4>Objetivo claro a cada aula</h4>
+          <p>Exercícios guiados, exemplos do dia a dia e correção — você sabe exatamente o que vai aprender.</p>
+        </div>
+      </div>
+      <div class="shot">
+        <img src="/faap/img/campus-3.png" alt="Go Global — viagens e experiências internacionais" />
+        <div class="cap">
+          <span class="t">Viagem &amp; internacional</span>
+          <h4>Go Global</h4>
+          <p>Inglês para viagens, intercâmbios, eventos e experiências internacionais — pronto para o mundo.</p>
+        </div>
+      </div>
+      <div class="shot">
+        <img src="/faap/img/campus-1.png" alt="Trilhas de saúde, bem-estar e entretenimento" />
+        <div class="cap">
+          <span class="t">Saúde &amp; entretenimento</span>
+          <h4>Trilhas para a vida real</h4>
+          <p>Do bem-estar a séries, filmes e música — inglês conectado ao que você curte de verdade.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contato">
+  <div class="wrap">
+    <span class="cta-badge">⭑ BENEFÍCIO EXCLUSIVO · COLABORADORES FAAP</span>
+    <h2>Comece seu inglês agora — e garanta seus 50%.</h2>
+    <p>Não deixe esse benefício passar. A parceria FAAP × Alumni é a forma mais inteligente de finalmente destravar o seu inglês: método de 65 anos, equipe certificada e metade do preço. Fale com a gente, escolha seu curso e dê o próximo passo na sua carreira e na sua vida.</p>
+
+    <div class="cta-cards">
+      <a class="cta-card" href="https://wa.me/5511930065608?text=Ol%C3%A1!%20Sou%20colaborador(a)%20da%20FAAP%20e%20quero%20aproveitar%20o%20benef%C3%ADcio%20de%2050%25%20nos%20cursos%20da%20Alumni." target="_blank" rel="noopener">
+        <div class="ic">💬</div>
+        <div class="lbl">WhatsApp</div>
+        <div class="val">(11) 93006-5608</div>
+      </a>
+      <a class="cta-card" href="tel:+5511930065608">
+        <div class="ic">📞</div>
+        <div class="lbl">Telefone</div>
+        <div class="val">(11) 93006-5608</div>
+      </a>
+      <a class="cta-card" href="mailto:gilberto.lucheti@alumnibybetter.com?subject=Benef%C3%ADcio%20FAAP%20%C3%97%20Alumni%20-%20inscri%C3%A7%C3%A3o&body=Ol%C3%A1%20Gilberto%2C%20sou%20colaborador(a)%20da%20FAAP%20e%20quero%20aproveitar%20o%20desconto%20de%2050%25.">
+        <div class="ic">✉️</div>
+        <div class="lbl">E-mail</div>
+        <div class="val">gilberto.lucheti@alumnibybetter.com</div>
+      </a>
+    </div>
+
+    <div class="cta-whats">
+      <a href="https://wa.me/5511930065608?text=Ol%C3%A1!%20Sou%20colaborador(a)%20da%20FAAP%20e%20quero%20aproveitar%20o%20benef%C3%ADcio%20de%2050%25%20nos%20cursos%20da%20Alumni." target="_blank" rel="noopener">💬 Quero meu benefício no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="flogos">
+      <img class="faap" src="/faap/img/faap-brasao.svg" alt="FAAP" />
+      <span class="x">×</span>
+      <img class="alumni" src="/faap/img/alumni.webp" alt="Alumni by Better" />
+    </div>
+    <div>Parceria FAAP × Alumni by Better · Centro Binacional Brasil–EUA desde 1961</div>
+    <div class="disc">Desconto de 50% exclusivo para colaboradores da FAAP. Valores e condições do plano anual sujeitos a confirmação no ato da matrícula.</div>
+  </div>
+</footer>
+
+<script>
+  // Quiz
+  var answers = {};
+  document.querySelectorAll('.quiz-q').forEach(function(q){
+    var qid = q.getAttribute('data-q');
+    q.querySelectorAll('.opt').forEach(function(opt){
+      opt.addEventListener('click', function(){
+        q.querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel')});
+        opt.classList.add('sel');
+        answers[qid] = opt.getAttribute('data-v');
+        maybeResult();
+      });
+    });
+  });
+  function maybeResult(){
+    if(Object.keys(answers).length < 4) return;
+    var c=0,f=0;
+    Object.values(answers).forEach(function(v){ v==='C'?c++:f++; });
+    var res = document.getElementById('quizResult');
+    var title = document.getElementById('resTitle');
+    var text = document.getElementById('resText');
+    if(f > c){
+      title.textContent = 'Community Flow';
+      text.textContent = 'Você quer avançar mais rápido e com atenção individual. O Community Flow combina o grupo com aulas particulares intercaladas — e, pra você da FAAP, sai por 12x R$ 298 (em vez de R$ 596).';
+    } else {
+      title.textContent = 'Community';
+      text.textContent = 'Você quer praticar com flexibilidade e o melhor custo. O Community é online ao vivo, em grupo, no seu ritmo — e, pra você da FAAP, sai por 12x R$ 240 (em vez de R$ 480).';
+    }
+    res.classList.add('show');
+    res.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+</script>
+</body>
+</html>
