@@ -683,6 +683,7 @@ function Speaking({ ex, title, L, onResult, quizMode }) {
       <div style={{
         padding: '12px 14px', borderRadius: 10, background: SURFACE,
         border: `1px solid ${LINE}`, marginBottom: 14, fontSize: 15, fontWeight: 500,
+        lineHeight: 1.6, overflowWrap: 'break-word', wordBreak: 'break-word', maxWidth: '100%',
       }}>
         <span style={{ display: 'block', fontSize: 11, fontWeight: 700, color: 'var(--gray)', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 4 }}>Frase para você falar</span>
         {ex.targetText}
@@ -690,6 +691,7 @@ function Speaking({ ex, title, L, onResult, quizMode }) {
       <SpeakingExercise
         mode="read"
         targetText={ex.targetText}
+        translation={ex.translation}
         levelId="starter"
         hideFeedback={quizMode}
         onResult={(r) => {

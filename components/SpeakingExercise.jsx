@@ -75,6 +75,7 @@ function hasWebSpeech() {
 export default function SpeakingExercise({
   mode = 'read',
   targetText = '',
+  translation = '',
   levelId = 'starter',
   lang = 'en-US',
   maxSeconds = 90,
@@ -320,7 +321,7 @@ export default function SpeakingExercise({
               <div style={{ fontSize: 12, color: '#8892A4', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 6 }}>
                 {T('Comparação com o texto', 'Comparison with the text')}
               </div>
-              <div style={{ marginBottom: 12, lineHeight: 2 }}>
+              <div style={{ marginBottom: 12, lineHeight: 2, overflowWrap: 'break-word', wordBreak: 'break-word' }}>
                 {diff.map((w, i) => (
                   <span key={i} style={{
                     padding: '2px 6px', margin: '0 2px', borderRadius: 4,
@@ -342,6 +343,16 @@ export default function SpeakingExercise({
                 {accuracy >= 50 && accuracy < 80 && ' — ' + T('Bom, continue treinando.', 'Good, keep practising.')}
                 {accuracy < 50 && ' — ' + T('Ouça o áudio e tente de novo.', 'Listen to the audio and try again.')}
               </div>
+              {translation && (
+                <div style={{
+                  marginTop: 10, padding: '10px 14px', borderRadius: 8,
+                  background: '#FFFFFF', border: '1px dashed #CBD5E0', color: '#4A5568',
+                  fontSize: 14, lineHeight: 1.55, overflowWrap: 'break-word', wordBreak: 'break-word',
+                }}>
+                  <span style={{ display: 'block', fontSize: 11, fontWeight: 700, color: '#8892A4', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 4 }}>Tradução</span>
+                  {translation}
+                </div>
+              )}
             </>
           )}
 
