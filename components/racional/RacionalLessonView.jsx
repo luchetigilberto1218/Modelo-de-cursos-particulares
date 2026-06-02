@@ -35,6 +35,17 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
   const screens = [];
 
   if (lesson.rich) {
+    // Tela: Overview do tópico (panorama de abertura, sem áudio)
+    if (lesson.overview) {
+      screens.push({
+        kicker: T('Sobre o tema', 'About the topic'),
+        title: lesson.title,
+        render: () => (
+          <div className="rc-prose" dangerouslySetInnerHTML={{ __html: lesson.overview }} />
+        ),
+      });
+    }
+
     // Tela: Objetivo + Introdução
     screens.push({
       kicker: T('Objetivo da aula', 'Lesson objective'),
