@@ -260,6 +260,11 @@ function MultipleChoice({ ex, title, L, onResult, quizMode }) {
 /* ───── 3. MATCHING ───── */
 function Matching({ ex, title, L, onResult, quizMode }) {
   const pairs = ex.pairs || [];
+  // Exercício de vocabulário? (associa termo/palavra ↔ tradução/significado)
+  const isVocab = ex.skill === 'vocabulary' || /vocabul|tradu|termo|palavra/i.test(ex.title || '');
+  const instruction = ex.instruction || (isVocab
+    ? 'Associe cada termo em inglês à sua tradução em português: clique na caixa à direita e escolha a opção correta.'
+    : 'Associe cada item da esquerda ao seu par correto: clique na caixa à direita e escolha a opção.');
   const [shuffledRight, setShuffledRight] = useState(() => pairs.map(p => p.right));
   useEffect(() => {
     setShuffledRight(shuffle(pairs.map(p => p.right)));
@@ -299,6 +304,16 @@ function Matching({ ex, title, L, onResult, quizMode }) {
 
   return (
     <Shell title={title}>
+      <div style={{ marginBottom: 12 }}>
+        {isVocab && (
+          <span style={{
+            display: 'inline-block', fontSize: 11, fontWeight: 700, color: '#1B5E36',
+            background: '#EAF7EF', border: '1px solid #A7D7BC', borderRadius: 999,
+            padding: '3px 10px', marginBottom: 8, textTransform: 'uppercase', letterSpacing: 0.5,
+          }}>🔤 Vocabulário</span>
+        )}
+        <p style={{ fontSize: 14, color: '#4A5568', lineHeight: 1.55, margin: 0 }}>{instruction}</p>
+      </div>
       <div style={{ display: 'grid', gap: 10 }}>
         {pairs.map(pair => (
           <div key={pair.left} style={{
