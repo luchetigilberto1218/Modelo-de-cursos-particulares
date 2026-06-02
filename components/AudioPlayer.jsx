@@ -78,10 +78,11 @@ export default function AudioPlayer({
   small = false,
   size,
 }) {
-  const [state, setState] = useState('idle'); // 'idle' | 'playing' | 'unsupported'
+  const [state, setState] = useState('idle'); // 'idle' | 'playing' | 'paused' | 'unsupported'
   const [voices, setVoices] = useState([]);
   const audioRef = useRef(null);
   const utteranceRef = useRef(null);
+  const modeRef = useRef(null); // 'mp3' | 'speech' — qual via está ativa (para pausar/retomar)
 
   const useNative = !!audioUrl;
   const supportsSpeech = typeof window !== 'undefined' && !!window.speechSynthesis;
@@ -98,7 +99,8 @@ export default function AudioPlayer({
     };
   }, [useNative, supportsSpeech]);
 
-  function play() {
+  // Inicia do começo (cria/reinicia o áudio).
+  function start() {
     if (!text && !audioUrl) return;
     // Pre-generated MP3 path (prop explícita ou manifesto global resolvido no clique)
     const mp3Url = audioUrl || resolveManifestUrl(voiceType, text);
@@ -109,6 +111,7 @@ export default function AudioPlayer({
         audioRef.current.onended = () => setState('idle');
         audioRef.current.onerror = () => setState('idle');
       }
+      modeRef.current = 'mp3';
       audioRef.current.currentTime = 0;
       audioRef.current.playbackRate = rate;
       audioRef.current.play().then(() => setState('playing')).catch(() => setState('idle'));
@@ -128,18 +131,36 @@ export default function AudioPlayer({
     u.onend = () => setState('idle');
     u.onerror = () => setState('idle');
     utteranceRef.current = u;
+    modeRef.current = 'speech';
     window.speechSynthesis.speak(u);
     setState('playing');
   }
 
-  function stop() {
-    if (useNative) {
+  // Pausa mantendo a posição.
+  function pause() {
+    if (modeRef.current === 'mp3') {
       try { audioRef.current?.pause(); } catch (_) {}
-      setState('idle');
-      return;
+    } else if (supportsSpeech) {
+      try { window.speechSynthesis.pause(); } catch (_) {}
     }
-    if (supportsSpeech) try { window.speechSynthesis.cancel(); } catch (_) {}
-    setState('idle');
+    setState('paused');
+  }
+
+  // Retoma de onde parou.
+  function resume() {
+    if (modeRef.current === 'mp3') {
+      audioRef.current?.play().then(() => setState('playing')).catch(() => setState('idle'));
+    } else if (supportsSpeech) {
+      try { window.speechSynthesis.resume(); } catch (_) {}
+      setState('playing');
+    }
+  }
+
+  // Clique único alterna: tocar → pausar → continuar.
+  function toggle() {
+    if (state === 'playing') pause();
+    else if (state === 'paused') resume();
+    else start();
   }
 
   if (state === 'unsupported' && !useNative) {
@@ -151,19 +172,22 @@ export default function AudioPlayer({
   }
 
   const isPlaying = state === 'playing';
+  const isPaused = state === 'paused';
   const isSmall = small || size === 'xs' || size === 'sm';
   const styleSmall = isSmall ? { padding: '4px 10px', fontSize: 11 } : {};
+  // ▶ tocar (idle) · ⏸ pausar (tocando) · ▶ continuar (pausado)
+  const icon = isPlaying ? '⏸' : '▶';
 
   return (
     <button
-      className={'btn-audio' + (isPlaying ? ' playing' : '')}
-      onClick={isPlaying ? stop : play}
+      className={'btn-audio' + (isPlaying ? ' playing' : '') + (isPaused ? ' paused' : '')}
+      onClick={toggle}
       type="button"
       style={styleSmall}
-      aria-label={label}
-      title={label}
+      aria-label={isPlaying ? 'Pausar' : isPaused ? 'Continuar' : label}
+      title={isPlaying ? 'Pausar' : isPaused ? 'Continuar' : label}
     >
-      {isPlaying ? '◼ ' + (label || 'Stop') : '▶ ' + (label || 'Listen')}
+      {icon + ' ' + (label || 'Listen')}
     </button>
   );
 }
