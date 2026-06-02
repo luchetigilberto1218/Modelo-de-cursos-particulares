@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TeacherExit from './TeacherExit';
 
 /* Barra superior com os dois logos nas cores das marcas. */
 export function RacionalTopBar({ showHome = false }) {
@@ -14,6 +15,7 @@ export function RacionalTopBar({ showHome = false }) {
           <Link href="/racional" className="rc-topbar-link">Todos os alunos</Link>
         )}
         <Link href="/racional/professor" className="rc-topbar-link">Professor</Link>
+        <TeacherExit />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { RacionalTopBar, RacionalFooter } from './RacionalChrome';
 import { useTeacher, setTeacher } from './access';
 
@@ -12,8 +13,14 @@ function initials(name) {
 
 export default function ProfessorHub({ students, professorCode }) {
   const teacher = useTeacher();
+  const router = useRouter();
   const [code, setCode] = useState('');
   const [err, setErr] = useState(false);
+
+  function exitTeacher() {
+    setTeacher(false);
+    router.push('/racional');
+  }
 
   function submit(e) {
     e.preventDefault();
@@ -49,7 +56,7 @@ export default function ProfessorHub({ students, professorCode }) {
           <>
             <div className="rc-card" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
               <div><span className="rc-teacher-tag">MODO PROFESSOR ATIVO</span> <span style={{ fontSize: 14, color: 'var(--rc-mute)' }}>O Teacher's Guide aparece no topo de cada aula.</span></div>
-              <button className="rc-btn rc-btn-outline" onClick={() => setTeacher(false)}>Sair do modo professor</button>
+              <button className="rc-btn rc-btn-outline" onClick={exitTeacher}>Sair do modo professor</button>
             </div>
             <div className="rc-section-head" style={{ marginTop: 18 }}><h2>Programas dos alunos</h2></div>
             <div className="rc-student-grid">
