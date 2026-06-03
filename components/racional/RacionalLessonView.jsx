@@ -201,7 +201,7 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
               marginTop: 12, fontSize: 13.5, color: '#1B4D7A', background: '#EAF2FB',
               border: '1px solid #BBD6F2', borderRadius: 8, padding: '10px 12px', lineHeight: 1.55,
             }}>
-              🎙️ <strong>{T('Exercício de fala livre.', 'Free speaking exercise.')}</strong> {T(
+              <Icon name="mic" size={14} /> <strong>{T('Exercício de fala livre.', 'Free speaking exercise.')}</strong> {T(
                 'A ideia é praticar falar em inglês como se estivesse numa reunião real — não há resposta certa. Toque no microfone e responda como vier (pode apoiar no português no que travar). Ao terminar, ouça a sua gravação: ouvir-se aumenta a consciência da sua produção oral e a fluência.',
                 'The point is to practise speaking English as if in a real meeting — there is no right answer. Tap the mic and answer however it comes (lean on Portuguese where you get stuck). When you finish, listen to your recording: hearing yourself builds awareness of your spoken English and fluency.'
               )}
