@@ -1073,6 +1073,42 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Briefing semanal na Racional",
+    "topic": "Briefing semanal",
+    "intro": "Preencha com seus dados reais, em primeira pessoa; se você escrever a palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. This week I give a status briefing about ",
+     {
+      "type": "free",
+      "placeholder": "obra/cliente real, ex.: Data Center"
+     },
+     ". The next ",
+     {
+      "type": "word",
+      "answer": "milestone",
+      "placeholder": "marco do cronograma (EN)"
+     },
+     " is ",
+     {
+      "type": "free",
+      "placeholder": "sua meta/data, ex.: 30%"
+     },
+     ". My ",
+     {
+      "type": "word",
+      "answer": "forecast",
+      "placeholder": "previsão (EN)"
+     },
+     " is good and the main ",
+     {
+      "type": "word",
+      "answer": "risk",
+      "placeholder": "risco (EN)"
+     },
+     " is small. The work is on track and the client is happy."
+    ]
    }
   },
   {
@@ -2152,6 +2188,42 @@
     "tip": "Arrastado (drawl) e o clássico 'y'all' (= you all), com as vogais bem alongadas.",
     "sample": "Y'all have a great day now — we'll talk real soon.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "Conflict resolution na Racional",
+    "topic": "Conflict resolution",
+    "intro": "Preencha com seus dados reais, em primeira pessoa; se você escrever a palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. Last week my team had a ",
+     {
+      "type": "word",
+      "answer": "conflict",
+      "placeholder": "conflito (EN)"
+     },
+     " about ",
+     {
+      "type": "free",
+      "placeholder": "tema real, ex.: o prazo da obra"
+     },
+     ". I listened to ",
+     {
+      "type": "free",
+      "placeholder": "pessoa real da equipe, ex.: João"
+     },
+     " and tried to be ",
+     {
+      "type": "word",
+      "answer": "fair",
+      "placeholder": "justo (EN)"
+     },
+     " with both sides. In the end we made a good ",
+     {
+      "type": "word",
+      "answer": "agreement",
+      "placeholder": "acordo (EN)"
+     },
+     " and moved forward together."
+    ]
    }
   },
   {
@@ -3938,6 +4010,42 @@
     "tip": "Usa 'like' como muleta no meio da frase e sobe a entonação no fim (uptalk), como se perguntasse.",
     "sample": "It's gonna be, like, a really good project, you know?",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Reading contracts na Racional",
+    "topic": "Reading contracts",
+    "intro": "Preencha os espaços com seus dados reais, em primeira pessoa; se você escrever uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. I read every ",
+     {
+      "type": "word",
+      "answer": "clause",
+      "placeholder": "cláusula (EN)"
+     },
+     " in the ",
+     {
+      "type": "word",
+      "answer": "agreement",
+      "placeholder": "acordo (EN)"
+     },
+     " with my client ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: o hospital"
+     },
+     ". The other ",
+     {
+      "type": "word",
+      "answer": "party",
+      "placeholder": "parte do contrato (EN)"
+     },
+     " must read it too. My team has ",
+     {
+      "type": "free",
+      "placeholder": "sua meta/número real, ex.: 12 contratos"
+     },
+     " to manage this year."
+    ]
    }
   },
   {
@@ -5031,6 +5139,42 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "Claims management na Racional",
+    "topic": "Claims management",
+    "intro": "Preencha os espaços com os seus dados reais, em primeira pessoa; se você escrever a palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. My team manages the ",
+     {
+      "type": "free",
+      "placeholder": "obra/contrato real, ex.: Hospital São Luiz"
+     },
+     " project for the client. When a delay is not our fault, we raise a ",
+     {
+      "type": "word",
+      "answer": "claim",
+      "placeholder": "pleito (EN)"
+     },
+     ". We support it with clear ",
+     {
+      "type": "word",
+      "answer": "evidence",
+      "placeholder": "evidência (EN)"
+     },
+     " and good ",
+     {
+      "type": "word",
+      "answer": "records",
+      "placeholder": "registros (EN)"
+     },
+     ". This month I want compensation of about ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: R$ 2M"
+     },
+     "."
+    ]
    }
   },
   {
@@ -6616,6 +6760,42 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "Contractual notices na Racional",
+    "topic": "Contractual notices",
+    "intro": "Complete os espaços com os seus dados reais, em primeira pessoa; se a palavra em inglês estiver errada, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. I send a formal ",
+     {
+      "type": "word",
+      "answer": "notice",
+      "placeholder": "notificação (EN)"
+     },
+     " to the client ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: hospital ou data center"
+     },
+     " about a ",
+     {
+      "type": "word",
+      "answer": "delay",
+      "placeholder": "atraso (EN)"
+     },
+     " of ",
+     {
+      "type": "free",
+      "placeholder": "sua métrica real, ex.: 15 dias"
+     },
+     ". I explain the ",
+     {
+      "type": "word",
+      "answer": "impact",
+      "placeholder": "impacto (EN)"
+     },
+     " on the project and I ask the client to acknowledge my message."
+    ]
    }
   },
   {
@@ -7497,6 +7677,42 @@
     "tip": "O 'r' depois da vogal desaparece: 'park the car' vira 'pahk the cah'. Ouça 'park' e 'car'.",
     "sample": "Park the car and meet us at the site office.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "Variation orders na Racional",
+    "topic": "Variation orders & extras",
+    "intro": "Complete as lacunas com os seus próprios dados reais, em primeira pessoa; se você digitar uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. My client is ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: hospital ou data center"
+     },
+     ". The client wants an ",
+     {
+      "type": "word",
+      "answer": "extra",
+      "placeholder": "serviço adicional (EN)"
+     },
+     " that is out of scope. I send a ",
+     {
+      "type": "word",
+      "answer": "quote",
+      "placeholder": "orçamento/cotação (EN)"
+     },
+     " with a cost impact of ",
+     {
+      "type": "free",
+      "placeholder": "sua meta/valor, ex.: R$ 2M"
+     },
+     ". My team needs the client to ",
+     {
+      "type": "word",
+      "answer": "approve",
+      "placeholder": "aprovar (EN)"
+     },
+     " the change order before we proceed."
+    ]
    }
   },
   {
@@ -8579,6 +8795,42 @@
     "tip": "Usa 'like' como muleta no meio da frase e sobe a entonação no fim (uptalk), como se perguntasse.",
     "sample": "It's gonna be, like, a really good project, you know?",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Construção EUA vs. Brasil na Racional",
+    "topic": "Construção EUA vs. Brasil",
+    "intro": "Preencha com seus dados reais, em primeira pessoa; se você escrever uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. I work on a project for ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: hospital ou data center"
+     },
+     ". My team uses ",
+     {
+      "type": "word",
+      "answer": "concrete",
+      "placeholder": "concreto (EN)"
+     },
+     " for the building, and we have a big ",
+     {
+      "type": "word",
+      "answer": "workforce",
+      "placeholder": "mão de obra (EN)"
+     },
+     " on site. The US client and Brazil follow a different ",
+     {
+      "type": "word",
+      "answer": "standard",
+      "placeholder": "padrão, norma (EN)"
+     },
+     ". Today my goal is ",
+     {
+      "type": "free",
+      "placeholder": "sua meta real, ex.: entregar em 12 meses"
+     },
+     "."
+    ]
    }
   },
   {
@@ -10802,6 +11054,42 @@
     "tip": "Em reunião por telefone tudo vem 'colado' e com contrações ('we're gonna', 'we'll'). Treine o encadeamento.",
     "sample": "We're gonna circle back on that and we'll confirm by Friday.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "Estrutura metálica e pré-fabricação na Racional",
+    "topic": "Estrutura metálica e pré-fabricação",
+    "intro": "Preencha os espaços com os seus próprios dados reais, em primeira pessoa; se você escrever uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. My project is for the client ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: hospital ou data center"
+     },
+     ". We use ",
+     {
+      "type": "word",
+      "answer": "prefabrication",
+      "placeholder": "pré-fabricação (EN)"
+     },
+     " to build faster. The team makes the steel off-site and brings it to the site. On-site, we ",
+     {
+      "type": "word",
+      "answer": "bolt",
+      "placeholder": "parafusar (EN)"
+     },
+     " and ",
+     {
+      "type": "word",
+      "answer": "weld",
+      "placeholder": "solda / soldar (EN)"
+     },
+     " the steel beams together. This saves about ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: 30 dias"
+     },
+     " on the schedule, and I report this progress to the client."
+    ]
    }
   },
   {
@@ -11025,6 +11313,44 @@
     "tip": "Ritmo silábico (cada sílaba bem marcada) e expressões próprias de negócios: 'kindly' (= por favor) e 'revert' (= responder).",
     "sample": "Kindly share the update and we will revert to you by end of day.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Formwork e trabalhos temporários na Racional",
+    "topic": "Formwork e trabalhos temporários",
+    "intro": "Preencha os espaços com seus dados reais, em primeira pessoa; se você escrever uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. ",
+     "My team works on the ",
+     {
+      "type": "free",
+      "placeholder": "obra/cliente real, ex.: Hospital São Lucas"
+     },
+     " project. ",
+     "We put the ",
+     {
+      "type": "word",
+      "answer": "formwork",
+      "placeholder": "fôrma (EN)"
+     },
+     " in place and we pour the concrete for the ",
+     {
+      "type": "word",
+      "answer": "slab",
+      "placeholder": "laje (EN)"
+     },
+     ". The ",
+     {
+      "type": "word",
+      "answer": "shoring",
+      "placeholder": "escoramento (EN)"
+     },
+     " stays for ",
+     {
+      "type": "free",
+      "placeholder": "número de dias, ex.: 14 dias"
+     },
+     " days. The client knows it is safe."
+    ]
    }
   },
   {
@@ -13001,6 +13327,42 @@
     "tip": "Arrastado (drawl) e o clássico 'y'all' (= you all), com as vogais bem alongadas.",
     "sample": "Y'all have a great day now — we'll talk real soon.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "Building envelope & facade na Racional",
+    "topic": "Building envelope & facade",
+    "intro": "Complete os espaços com os seus dados reais, em primeira pessoa; se a palavra em inglês estiver errada, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. My team is building the new ",
+     {
+      "type": "free",
+      "placeholder": "obra/prédio real, ex.: Data Center XP"
+     },
+     ". The ",
+     {
+      "type": "word",
+      "answer": "facade",
+      "placeholder": "fachada (EN)"
+     },
+     " of the building uses a lot of ",
+     {
+      "type": "word",
+      "answer": "glazing",
+      "placeholder": "vidro/envidraçamento (EN)"
+     },
+     " and metal ",
+     {
+      "type": "word",
+      "answer": "cladding",
+      "placeholder": "revestimento de fachada (EN)"
+     },
+     ". The client is ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: hospital americano"
+     },
+     ", and the client wants the wall to be safe and dry."
+    ]
    }
   },
   {
@@ -14760,6 +15122,42 @@
     "tip": "Usa 'like' como muleta no meio da frase e sobe a entonação no fim (uptalk), como se perguntasse.",
     "sample": "It's gonna be, like, a really good project, you know?",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Data centers na Racional",
+    "topic": "Data centers",
+    "intro": "Preencha com seus dados reais, em primeira pessoa; se você escrever a palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. I work on a big ",
+     {
+      "type": "word",
+      "answer": "hyperscale",
+      "placeholder": "escala gigante (EN)"
+     },
+     " data center for ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: Microsoft"
+     },
+     ". My goal is ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: 99.9%"
+     },
+     " of ",
+     {
+      "type": "word",
+      "answer": "uptime",
+      "placeholder": "tempo em funcionamento (EN)"
+     },
+     " every month. The client does not want ",
+     {
+      "type": "word",
+      "answer": "downtime",
+      "placeholder": "tempo parado (EN)"
+     },
+     ", so my team checks the cooling system every day."
+    ]
    }
   },
   {
@@ -14982,6 +15380,42 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Industrial facilities na Racional",
+    "topic": "Industrial facilities",
+    "intro": "Preencha com os seus dados reais, em primeira pessoa; se a palavra em inglês estiver errada, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. I work on an industrial facility for ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: Cliente norte-americano"
+     },
+     ". The building is a big ",
+     {
+      "type": "word",
+      "answer": "warehouse",
+      "placeholder": "galpão (EN)"
+     },
+     " with a simple ",
+     {
+      "type": "word",
+      "answer": "layout",
+      "placeholder": "disposição (EN)"
+     },
+     " for good material flow. We use an overhead ",
+     {
+      "type": "word",
+      "answer": "crane",
+      "placeholder": "ponte rolante (EN)"
+     },
+     " to move heavy parts. My goal is ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: R$ 40M"
+     },
+     "."
+    ]
    }
   },
   {
@@ -17178,6 +17612,42 @@
     "tip": "Ritmo silábico (cada sílaba bem marcada) e expressões próprias de negócios: 'kindly' (= por favor) e 'revert' (= responder).",
     "sample": "Kindly share the update and we will revert to you by end of day.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Cronograma e caminho crítico na Racional",
+    "topic": "Cronograma e caminho crítico",
+    "intro": "Preencha os espaços com os seus dados reais, em primeira pessoa; se a palavra em inglês estiver errada, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. I track the ",
+     {
+      "type": "word",
+      "answer": "schedule",
+      "placeholder": "cronograma (EN)"
+     },
+     " for the project of ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: Hospital São Luiz"
+     },
+     ". My next ",
+     {
+      "type": "word",
+      "answer": "milestone",
+      "placeholder": "marco (EN)"
+     },
+     " is ",
+     {
+      "type": "free",
+      "placeholder": "sua meta/data, ex.: entrega do data center"
+     },
+     ", and the ",
+     {
+      "type": "word",
+      "answer": "deadline",
+      "placeholder": "prazo final (EN)"
+     },
+     " is close. The work is on schedule today."
+    ]
    }
   },
   {
@@ -18702,6 +19172,42 @@
     "tip": "Ritmo silábico (cada sílaba bem marcada) e expressões próprias de negócios: 'kindly' (= por favor) e 'revert' (= responder).",
     "sample": "Kindly share the update and we will revert to you by end of day.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Incident reporting na Racional",
+    "topic": "incident reporting",
+    "intro": "Preencha com seus dados reais, em primeira pessoa; se você escrever a palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. Last week we had an ",
+     {
+      "type": "word",
+      "answer": "incident",
+      "placeholder": "ocorrência (EN)"
+     },
+     " on the project for ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: o hospital"
+     },
+     ". A worker had a small ",
+     {
+      "type": "word",
+      "answer": "injury",
+      "placeholder": "lesão (EN)"
+     },
+     " on the hand. The root cause was a ",
+     {
+      "type": "word",
+      "answer": "hazard",
+      "placeholder": "perigo/risco (EN)"
+     },
+     " on the floor. My team reported it in ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: 24 horas"
+     },
+     "."
+    ]
    }
   },
   {
@@ -19579,6 +20085,42 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Sustentabilidade e construção verde na Racional",
+    "topic": "Sustentabilidade e construção verde",
+    "intro": "Preencha os espaços com os seus dados reais, em primeira pessoa; se você escrever uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. My project is for ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: um data center"
+     },
+     ". I care about ",
+     {
+      "type": "word",
+      "answer": "sustainability",
+      "placeholder": "sustentabilidade (EN)"
+     },
+     " on the site. My team wants an ",
+     {
+      "type": "word",
+      "answer": "energy-efficient",
+      "placeholder": "eficiente em energia (EN)"
+     },
+     " building with less ",
+     {
+      "type": "word",
+      "answer": "waste",
+      "placeholder": "resíduo (EN)"
+     },
+     ". The client wants to earn ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: 60"
+     },
+     " LEED points this year."
+    ]
    }
   },
   {
@@ -20460,6 +21002,42 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "First meeting & introductions na Racional",
+    "topic": "First meeting & introductions",
+    "intro": "Preencha com os seus dados reais, em primeira pessoa; se você escrever a palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. I want to ",
+     {
+      "type": "word",
+      "answer": "introduce",
+      "placeholder": "apresentar (EN)"
+     },
+     " myself to ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: hospital nos EUA"
+     },
+     ". My ",
+     {
+      "type": "word",
+      "answer": "role",
+      "placeholder": "cargo (EN)"
+     },
+     " is to manage a contract of ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: R$ 40M"
+     },
+     ". My ",
+     {
+      "type": "word",
+      "answer": "counterpart",
+      "placeholder": "interlocutor (EN)"
+     },
+     " on the client side leads the project. Nice to meet you."
+    ]
    }
   },
   {
@@ -22438,6 +23016,42 @@
     "tip": "Usa 'like' como muleta no meio da frase e sobe a entonação no fim (uptalk), como se perguntasse.",
     "sample": "It's gonna be, like, a really good project, you know?",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Site meetings & toolbox talks na Racional",
+    "topic": "Site meetings & toolbox talks",
+    "intro": "Preencha com os seus dados reais, em primeira pessoa; se você escrever uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. In the site meeting, I talk about ",
+     {
+      "type": "word",
+      "answer": "progress",
+      "placeholder": "progresso / andamento (EN)"
+     },
+     " with my client, ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: Hospital X"
+     },
+     ". My team works in the morning ",
+     {
+      "type": "word",
+      "answer": "shift",
+      "placeholder": "turno (EN)"
+     },
+     ". I have one ",
+     {
+      "type": "word",
+      "answer": "hazard",
+      "placeholder": "perigo / risco (EN)"
+     },
+     " on site, and my goal is to finish ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: 100% até dezembro"
+     },
+     "."
+    ]
    }
   },
   {
@@ -23760,6 +24374,42 @@
     "tip": "Arrastado (drawl) e o clássico 'y'all' (= you all), com as vogais bem alongadas.",
     "sample": "Y'all have a great day now — we'll talk real soon.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "Negotiation fundamentals na Racional",
+    "topic": "Negotiation fundamentals",
+    "intro": "Preencha com seus dados reais, em primeira pessoa; uma palavra errada em inglês mostra uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. Before I negotiate scope with ",
+     {
+      "type": "free",
+      "placeholder": "cliente real"
+     },
+     ", I am prepared. My ",
+     {
+      "type": "word",
+      "answer": "alternative",
+      "placeholder": "alternativa (EN)"
+     },
+     " is clear, so I have good ",
+     {
+      "type": "word",
+      "answer": "leverage",
+      "placeholder": "poder de barganha (EN)"
+     },
+     ". My target is ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: R$ 40M"
+     },
+     ", and I explain my ",
+     {
+      "type": "word",
+      "answer": "position",
+      "placeholder": "posição (EN)"
+     },
+     " in a calm way."
+    ]
    }
   },
   {
@@ -24859,6 +25509,42 @@
     "tip": "Ritmo silábico (cada sílaba bem marcada) e expressões próprias de negócios: 'kindly' (= por favor) e 'revert' (= responder).",
     "sample": "Kindly share the update and we will revert to you by end of day.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Scope negotiations & change orders na Racional",
+    "topic": "Scope negotiations & change orders",
+    "intro": "Preencha com seus dados reais, em primeira pessoa; se você escrever a palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. I work on the project for ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: hospital ou data center"
+     },
+     ". The client wants to change the ",
+     {
+      "type": "word",
+      "answer": "scope",
+      "placeholder": "escopo (EN)"
+     },
+     ", so I send a change order. This is ",
+     {
+      "type": "free",
+      "placeholder": "sua meta/valor real, ex.: R$ 2M"
+     },
+     " of extra cost. I need the client to ",
+     {
+      "type": "word",
+      "answer": "approve",
+      "placeholder": "aprovar (EN)"
+     },
+     " it, and I ",
+     {
+      "type": "word",
+      "answer": "request",
+      "placeholder": "solicitar (EN)"
+     },
+     " the approval in writing."
+    ]
    }
   },
   {
@@ -26452,6 +27138,42 @@
     "tip": "Ritmo silábico (cada sílaba bem marcada) e expressões próprias de negócios: 'kindly' (= por favor) e 'revert' (= responder).",
     "sample": "Kindly share the update and we will revert to you by end of day.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Presenting proposals na Racional",
+    "topic": "Presenting proposals",
+    "intro": "Preencha os espaços com seus dados reais, em primeira pessoa; se você escrever uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. Today I present a ",
+     {
+      "type": "word",
+      "answer": "proposal",
+      "placeholder": "proposta (EN)"
+     },
+     " for the project at ",
+     {
+      "type": "free",
+      "placeholder": "cliente/local real, ex.: o data center"
+     },
+     ". I ",
+     {
+      "type": "word",
+      "answer": "recommend",
+      "placeholder": "recomendar (EN)"
+     },
+     " a budget of ",
+     {
+      "type": "free",
+      "placeholder": "sua meta/valor, ex.: R$ 40M"
+     },
+     ". The team has one ",
+     {
+      "type": "word",
+      "answer": "concern",
+      "placeholder": "preocupação (EN)"
+     },
+     ", but I stand by my position and stay calm."
+    ]
    }
   },
   {
@@ -27324,6 +28046,42 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Follow-up emails & meeting recaps na Racional",
+    "topic": "Follow-up emails & meeting recaps",
+    "intro": "Preencha os espaços com os seus dados reais, em primeira pessoa; se a palavra em inglês estiver errada, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. After my meeting with ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: o cliente do Hospital"
+     },
+     ", I write a short email with a ",
+     {
+      "type": "word",
+      "answer": "recap",
+      "placeholder": "resumo (EN)"
+     },
+     " of the next steps. I always ",
+     {
+      "type": "word",
+      "answer": "attach",
+      "placeholder": "anexar (EN)"
+     },
+     " the project plan and I ",
+     {
+      "type": "word",
+      "answer": "confirm",
+      "placeholder": "confirmar (EN)"
+     },
+     " the budget of ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: R$ 40M"
+     },
+     " in writing. My team is happy with this."
+    ]
    }
   },
   {
@@ -28842,6 +29600,42 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Marcos e datas especiais na Racional",
+    "topic": "Marcos e datas especiais",
+    "intro": "Preencha os espaços com seus dados reais, em primeira pessoa; se você escrever uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. Today my team reached an important ",
+     {
+      "type": "word",
+      "answer": "milestone",
+      "placeholder": "marco (EN)"
+     },
+     " on the project for ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: o hospital X"
+     },
+     ". We delivered ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: 80% da obra"
+     },
+     ", and I am very proud of this ",
+     {
+      "type": "word",
+      "answer": "achievement",
+      "placeholder": "conquista (EN)"
+     },
+     ". Next week we also celebrate my ",
+     {
+      "type": "word",
+      "answer": "birthday",
+      "placeholder": "aniversário de pessoa (EN)"
+     },
+     " with the team."
+    ]
    }
   },
   {
@@ -30158,6 +30952,42 @@
     "tip": "Usa 'like' como muleta no meio da frase e sobe a entonação no fim (uptalk), como se perguntasse.",
     "sample": "It's gonna be, like, a really good project, you know?",
     "voice": "us-female"
+   },
+   "personalized": {
+    "title": "Daily stand-ups na Racional",
+    "topic": "Daily stand-ups",
+    "intro": "Complete com os seus dados reais, em primeira pessoa; se você colocar uma palavra errada em inglês, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. In my daily ",
+     {
+      "type": "word",
+      "answer": "update",
+      "placeholder": "atualização de status (EN)"
+     },
+     ", I say that the ",
+     {
+      "type": "free",
+      "placeholder": "frente/obra real, ex.: hospital project"
+     },
+     " is on track. Today my ",
+     {
+      "type": "word",
+      "answer": "delivery",
+      "placeholder": "entrega (EN)"
+     },
+     " is ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: 80% ready"
+     },
+     ". I have one ",
+     {
+      "type": "word",
+      "answer": "blocker",
+      "placeholder": "impedimento (EN)"
+     },
+     ", and my team is waiting on the client."
+    ]
    }
   },
   {
@@ -31358,6 +32188,43 @@
     "tip": "Arrastado (drawl) e o clássico 'y'all' (= you all), com as vogais bem alongadas.",
     "sample": "Y'all have a great day now — we'll talk real soon.",
     "voice": "us-male"
+   },
+   "personalized": {
+    "title": "Data center na Racional",
+    "topic": "Data center",
+    "intro": "Complete os espaços com os seus dados reais, em primeira pessoa; se a palavra em inglês estiver errada, aparece uma dica.",
+    "segments": [
+     "I am a contract manager at Racional Engenharia. ",
+     "My team builds a data center for ",
+     {
+      "type": "free",
+      "placeholder": "cliente real, ex.: hospital americano"
+     },
+     ". Now we are in the ",
+     {
+      "type": "word",
+      "answer": "commissioning",
+      "placeholder": "comissionamento (EN)"
+     },
+     " phase, and we test the ",
+     {
+      "type": "word",
+      "answer": "cooling",
+      "placeholder": "refrigeração (EN)"
+     },
+     " system every day. My target is only ",
+     {
+      "type": "free",
+      "placeholder": "sua meta, ex.: 0 horas"
+     },
+     " of ",
+     {
+      "type": "word",
+      "answer": "downtime",
+      "placeholder": "tempo de parada (EN)"
+     },
+     "."
+    ]
    }
   },
   {
