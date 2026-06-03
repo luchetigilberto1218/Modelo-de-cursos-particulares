@@ -11,6 +11,9 @@ import { useTeacher } from './access';
 import Icon from './RacionalIcon';
 import OverviewLookup from './OverviewLookup';
 import PersonalizedDraft from './PersonalizedDraft';
+import GrammarDeepDive from './GrammarDeepDive';
+import PracticeStudio from './PracticeStudio';
+import ClassroomActivity from './ClassroomActivities';
 
 function pad(n) { return String(n).padStart(3, '0'); }
 
@@ -68,8 +71,29 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
       });
     }
 
+    // Aula de PRÁTICA (formato exclusivo): só produção, sem telas de ensino.
+    const isPractice = lesson.format === 'practice';
+
+    // Tela: Gramática em profundidade (aula TEORIA com deep dive)
+    if (lesson.grammar) {
+      screens.push({
+        kicker: T('Gramática', 'Grammar'),
+        title: lesson.grammar.point || T('Gramática em profundidade', 'Grammar deep dive'),
+        render: () => <GrammarDeepDive grammar={lesson.grammar} voice={voice} accent={accent} />,
+      });
+    }
+
+    // Tela: Estúdio de prática (aula PRÁTICA) — substitui as telas de ensino
+    if (lesson.practice) {
+      screens.push({
+        kicker: T('Prática', 'Practice'),
+        title: T('Estúdio de prática', 'Practice studio'),
+        render: () => <PracticeStudio practice={lesson.practice} voice={voice} level={level} accent={accent} />,
+      });
+    }
+
     // Tela: Objetivo + Introdução
-    screens.push({
+    if (!isPractice) screens.push({
       kicker: T('Objetivo da aula', 'Lesson objective'),
       title: T('O que você vai dominar', 'What you will master'),
       render: () => (
@@ -90,7 +114,7 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
     });
 
     // Tela: Vocabulário
-    if (lesson.vocab?.length) {
+    if (!isPractice && lesson.vocab?.length) {
       screens.push({
         kicker: T(`Vocabulário · ${lesson.vocab.length} palavras`, `Vocabulary · ${lesson.vocab.length} words`),
         title: T('Palavras-chave da aula', 'Key words for this lesson'),
@@ -114,7 +138,7 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
     }
 
     // Tela: Contexto
-    if (lesson.situation || lesson.context) {
+    if (!isPractice && (lesson.situation || lesson.context)) {
       screens.push({
         kicker: T('Contexto', 'Context'),
         title: T('A cena real', 'The real scene'),
@@ -137,7 +161,7 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
     }
 
     // Telas: um exercício por tela
-    (lesson.exercises || []).forEach((ex, i) => {
+    if (!isPractice) (lesson.exercises || []).forEach((ex, i) => {
       screens.push({
         kicker: T(`Exercício ${i + 1} de ${lesson.exercises.length}`, `Exercise ${i + 1} of ${lesson.exercises.length}`),
         title: T('Pratique', 'Practice'),
@@ -145,8 +169,25 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
       });
     });
 
+    // Telas: atividades extras (Fabrício) — uma por tela
+    if (lesson.activities?.length) {
+      const ACT_LABEL = {
+        picture: T('Picture Discussion', 'Picture Discussion'),
+        bingo: T('Corporate Bingo', 'Corporate Bingo'),
+        email: T('Email Detective', 'Email Detective'),
+        problem: T('Resolução de problema', 'Problem solving'),
+      };
+      lesson.activities.forEach((act, i) => {
+        screens.push({
+          kicker: T(`Atividade ${i + 1} de ${lesson.activities.length}`, `Activity ${i + 1} of ${lesson.activities.length}`),
+          title: ACT_LABEL[act.kind] || T('Atividade', 'Activity'),
+          render: () => <ClassroomActivity activity={act} voice={voice} level={level} accent={accent} />,
+        });
+      });
+    }
+
     // Tela: Think about it (pergunta crítica, fala livre)
-    if (lesson.critical) {
+    if (!isPractice && lesson.critical) {
       screens.push({
         kicker: T('Pense nisso', 'Think about it'),
         title: T('Responda em inglês', 'Answer in English'),

@@ -403,7 +403,250 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "business meeting in an office"
+     },
+     "instruction": "Olhe a foto e responda em inglês, em voz alta, com o professor.",
+     "questions": [
+      "What do you see?",
+      "Who is the manager?",
+      "What are they doing?",
+      "Where are they?",
+      "How many people are there?",
+      "Is it morning or afternoon?",
+      "Is this a good meeting? Why?",
+      "What is on the table?"
+     ],
+     "wrapUp": {
+      "prompt": "Agora descreva a foto para o professor em 3 ou 4 frases: diga quem são, onde estão e o que estão fazendo.",
+      "model": "In this picture I see a business meeting. There are five people in an office. The manager is talking and the team is listening. It is a good meeting because everybody is paying attention.",
+      "teacherNote": "O professor ajuda o aluno a juntar as frases e a inserir detalhes (quem, onde, o quê)."
+     }
+    },
+    {
+     "kind": "bingo",
+     "instruction": "Pergunte ao professor (ou ao colega) para cada linha. Use a pergunta em inglês.",
+     "items": [
+      {
+       "find": "works with clients",
+       "ask": "Do you work with clients?"
+      },
+      {
+       "find": "uses Excel every day",
+       "ask": "Do you use Excel every day?"
+      },
+      {
+       "find": "had coffee today",
+       "ask": "Did you have coffee today?"
+      },
+      {
+       "find": "speaks another language",
+       "ask": "Do you speak another language?"
+      },
+      {
+       "find": "had a meeting this morning",
+       "ask": "Did you have a meeting this morning?"
+      },
+      {
+       "find": "works on a data center",
+       "ask": "Do you work on a data center?"
+      },
+      {
+       "find": "sends emails in English",
+       "ask": "Do you send emails in English?"
+      },
+      {
+       "find": "travels for work",
+       "ask": "Do you travel for work?"
+      },
+      {
+       "find": "manages a team",
+       "ask": "Do you manage a team?"
+      },
+      {
+       "find": "likes their job",
+       "ask": "Do you like your job?"
+      }
+     ],
+     "wrapUp": {
+      "prompt": "Conte ao professor o que você descobriu: use \"He/She works…\", \"He/She has…\".",
+      "model": "I found someone who works with clients and uses Excel every day. He had a meeting this morning and he speaks two languages.",
+      "teacherNote": "O professor ajuda a transformar as respostas em frases na 3ª pessoa (works, has, speaks)."
+     }
+    },
+    {
+     "kind": "email",
+     "email": {
+      "from": "Sarah (Microsoft)",
+      "to": "Fabrício (Racional)",
+      "body": "Hi Fabrício,\n\nThank you for the update on the data center.\nCan we meet tomorrow at 3 PM to talk about the schedule?\nPlease bring the safety report.\n\nBest regards,\nSarah"
+     },
+     "questions": [
+      {
+       "q": "Who wrote the email?",
+       "options": [
+        {
+         "text": "Sarah",
+         "correct": true
+        },
+        {
+         "text": "Fabrício",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "q": "Who is the email for?",
+       "options": [
+        {
+         "text": "Fabrício",
+         "correct": true
+        },
+        {
+         "text": "The whole team",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "q": "When is the meeting?",
+       "options": [
+        {
+         "text": "Today at 3 PM",
+         "correct": false
+        },
+        {
+         "text": "Tomorrow at 3 PM",
+         "correct": true
+        },
+        {
+         "text": "Next week",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "q": "What is the meeting about?",
+       "options": [
+        {
+         "text": "The schedule",
+         "correct": true
+        },
+        {
+         "text": "A new contract",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "q": "What should Fabrício bring?",
+       "options": [
+        {
+         "text": "The safety report",
+         "correct": true
+        },
+        {
+         "text": "His laptop only",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "q": "Is it formal or informal?",
+       "options": [
+        {
+         "text": "Polite and semi-formal",
+         "correct": true
+        },
+        {
+         "text": "Very informal",
+         "correct": false
+        }
+       ]
+      }
+     ],
+     "wrapUp": {
+      "prompt": "Resuma o e-mail para o professor: quem mandou, para quem, quando é a reunião e o que ela pede.",
+      "model": "Sarah from Microsoft wrote to Fabrício. She wants to meet tomorrow at 3 PM to talk about the schedule, and she asks him to bring the safety report.",
+      "teacherNote": "O professor ajuda o aluno a resumir com \"She wants…\", \"She asks…\"."
+     }
+    },
+    {
+     "kind": "problem",
+     "scenario": "The client is angry. There is a problem with the schedule of the data center, and the delivery is late.",
+     "questions": [
+      {
+       "q": "What happened?",
+       "options": [
+        {
+         "text": "The delivery is late.",
+         "correct": true
+        },
+        {
+         "text": "The client paid too much.",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "q": "What should we do first?",
+       "options": [
+        {
+         "text": "We should call the client.",
+         "correct": true
+        },
+        {
+         "text": "We should do nothing.",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "q": "What do we say?",
+       "options": [
+        {
+         "text": "We should apologize and explain.",
+         "correct": true
+        },
+        {
+         "text": "We should blame the client.",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "q": "Who should call the client?",
+       "options": [
+        {
+         "text": "The contract manager.",
+         "correct": true
+        },
+        {
+         "text": "Nobody.",
+         "correct": false
+        }
+       ]
+      }
+     ],
+     "suggestions": [
+      "We should call.",
+      "We should apologize.",
+      "We should help.",
+      "We should explain.",
+      "The client is always right."
+     ],
+     "wrapUp": {
+      "prompt": "Explique a situação para o professor em voz alta, com detalhes: o que aconteceu, o que vamos fazer e por quê.",
+      "model": "There is a client who is very angry about an issue with Racional. We should call the client urgently and we should apologize, because the client is always right. Then we should explain the new schedule and help to fix the problem.",
+      "teacherNote": "O professor ajuda o aluno a inserir esses comentários adicionais e a ligar as ideias (because, then, and)."
+     }
+    }
+   ]
   },
   {
    "num": 2,

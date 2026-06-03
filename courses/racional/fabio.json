@@ -512,6 +512,63 @@
      "minWords": 12,
      "modelAnswer": "I'm Fábio, Director of Operations at Racional. I oversee our projects in Brazil. Right now, we are building three sites and the schedule is on track.",
      "explanation": "A correção é só sobre o uso dos termos. Mantenha o Present Simple para o cargo e o Continuous para o que está em andamento."
+    },
+    {
+     "type": "multipleChoice",
+     "title": "6. Stative verb",
+     "prompt": "Qual é a forma correta? \"I ___ the schedule very well.\"",
+     "options": [
+      {
+       "id": "a",
+       "text": "am knowing",
+       "correct": false,
+       "whyWrong": "\"know\" é stative: não usa -ing."
+      },
+      {
+       "id": "b",
+       "text": "know",
+       "correct": true
+      },
+      {
+       "id": "c",
+       "text": "knows",
+       "correct": false,
+       "whyWrong": "\"-s\" só na 3ª pessoa (he/she/it)."
+      }
+     ]
+    },
+    {
+     "type": "fillGap",
+     "title": "7. Terceira pessoa (-s)",
+     "prompt": "Racional ___ (build) hospitals, shoppings and data centers.",
+     "correctAnswer": "builds",
+     "acceptable": [
+      "builds"
+     ],
+     "explanation": "Present Simple, 3ª pessoa do singular (Racional = it): acrescenta -s.",
+     "commonErrors": {
+      "build": "builds",
+      "is building": "builds"
+     }
+    },
+    {
+     "type": "reorder",
+     "title": "8. Projeto em andamento agora",
+     "prompt": [
+      "are",
+      "we",
+      "a data center",
+      "delivering",
+      "right now"
+     ],
+     "correctOrder": [
+      "right now",
+      "we",
+      "are",
+      "delivering",
+      "a data center"
+     ],
+     "explanation": "\"Right now\" pede Present Continuous: we are delivering a data center right now."
     }
    ],
    "critical": "Em voz alta, apresente-se em 15 segundos: diga seu nome, seu cargo na Racional e uma obra que está em andamento agora.",
@@ -523,43 +580,48 @@
    ],
    "rich": true,
    "teacher": {
-    "overview": "M1 — Bloco de abertura para destravar a comunicação executiva cotidiana — apresentar-se, abrir reuniões, fazer perguntas e dizer números, datas, valores e prazos em voz alta sem travar.…",
+    "overview": "Aula de TEORIA conduzida em sala. O aluno NÃO estuda antes: você apresenta a gramática, dá exemplos, deixa ele tentar e volta para breakdowns. Ritmo: explicar → exemplificar com a Racional → o aluno produz → você corrige.",
     "focus": "Estrutura e forma: a regra do dia bem fixada.",
     "flow": [
      {
-      "min": "5",
-      "what": "Aquecimento · back-to-back",
-      "how": "Professor e aluno de costas (ou câmera desligada): um descreve, o outro responde só pela voz."
+      "min": 10,
+      "what": "Aquecimento + overview",
+      "how": "Leia o overview com ele em voz alta. Pergunte como ele se apresenta hoje. NÃO corrija ainda — colete a base."
      },
      {
-      "min": "8",
-      "what": "Transformation drill",
-      "how": "Aluno passa a frase de afirmativa → pergunta → negativa, falando."
+      "min": 20,
+      "what": "Present Simple (forma + usos)",
+      "how": "Explique no quadro. Peça 2 frases sobre o cargo dele na Racional. Faça breakdown de cada uma."
      },
      {
-      "min": "12",
-      "what": "Caça ao erro",
-      "how": "Diga uma frase com erro; o aluno corrige falando."
+      "min": 20,
+      "what": "Present Continuous (forma + usos)",
+      "how": "Contraste com o simple usando a tabela lado a lado. Peça 2 frases sobre o que está em andamento agora nos projetos dele."
      },
      {
-      "min": "8",
-      "what": "Transferência ao projeto",
-      "how": "Aplique o alvo a uma situação real do projeto do aluno."
+      "min": 15,
+      "what": "Stative verbs + erros típicos",
+      "how": "Mostre os 3 erros típicos. Dê tempo para ele identificar o erro ANTES de você explicar o porquê."
      },
      {
-      "min": "3",
-      "what": "Fechamento · O que eu aprendi nessa lição",
-      "how": "Feche SEMPRE por aqui: o aluno marca cada 'I can…' que já consegue dizer em voz alta. Ao marcar todos, a aula fica registrada como concluída e mais clara no programa. É assim que toda aula termina."
+      "min": 20,
+      "what": "Exercícios de fixação (Racional/business)",
+      "how": "Faça os exercícios juntos. Para cada erro, pare e explique. Dê tempo; não responda por ele."
+     },
+     {
+      "min": 5,
+      "what": "Recap",
+      "how": "Ele fecha com as frases-âncora do cargo. Confirme que ele consegue dizer cargo (simple) + projeto atual (continuous)."
      }
     ],
     "watch": [
-     "Priorize a FALA: o aluno deve falar na maior parte da aula.",
-     "Varie a dinâmica a cada aula — o roteiro acima rotaciona para não repetir.",
-     "Não deixar a teoria virar palestra: o aluno tem que produzir.",
-     "Conectar a regra a uma fala real do cliente."
+     "Confusão simple/continuous com \"right now\".",
+     "stative verbs com -ing (I am knowing).",
+     "esquecer -s na 3ª pessoa (Racional build → builds)."
     ],
-    "note": "",
-    "richNote": "Esta aula tem conteúdo interativo completo na plataforma (vocabulário, exercícios e recap)."
+    "note": "Esta é a aula em que ele ENTENDE a regra. A produção solta fica para a aula de PRÁTICA seguinte — aqui o foco é compreender e fixar com sua ajuda.",
+    "richNote": "Esta aula tem conteúdo interativo completo na plataforma (vocabulário, exercícios e recap).",
+    "mode": "Aula teórica conduzida pelo professor (não-flipped) · 1h30"
    },
    "pill": {
     "kind": "accent",
@@ -568,6 +630,144 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
+   },
+   "format": "theory",
+   "duration": 90,
+   "grammar": {
+    "point": "Present Simple & Present Continuous",
+    "sources": [
+     "Cambridge — English Grammar Today",
+     "British Council — LearnEnglish"
+    ],
+    "lead": "Estes são os dois tempos do presente que você mais usa para se apresentar e abrir reuniões. O <strong>Present Simple</strong> descreve quem você é e sua rotina (o que é sempre verdade); o <strong>Present Continuous</strong> descreve o que está em andamento agora. Dominar o contraste entre os dois é a base da sua fala executiva no dia a dia com Microsoft, Amazon e Google.",
+    "sections": [
+     {
+      "heading": "Present Simple — forma",
+      "body": "Sujeito + verbo na base. Na 3ª pessoa (he/she/it) acrescenta-se <strong>-s</strong>. Negativa com <em>do/does + not</em>; pergunta com <em>do/does</em>.",
+      "examples": [
+       {
+        "en": "I oversee our data center projects in Brazil.",
+        "gloss": "rotina/responsabilidade do cargo"
+       },
+       {
+        "en": "Racional builds hospitals, shopping centers and data centers.",
+        "gloss": "3ª pessoa: builds"
+       },
+       {
+        "en": "I do not handle procurement; my team does.",
+        "gloss": "negativa"
+       }
+      ]
+     },
+     {
+      "heading": "Present Simple — usos",
+      "body": "Para <strong>fatos e situações permanentes</strong>, <strong>rotinas</strong> e <strong>o seu cargo</strong>. É o tempo de \"quem eu sou e o que eu faço\".",
+      "examples": [
+       {
+        "en": "I am the Director of Operations at Racional.",
+        "gloss": "cargo (fato permanente)"
+       },
+       {
+        "en": "We usually run a monthly review with the client.",
+        "gloss": "rotina"
+       }
+      ]
+     },
+     {
+      "heading": "Present Continuous — forma",
+      "body": "Sujeito + <strong>am/is/are</strong> + verbo com <strong>-ing</strong>.",
+      "examples": [
+       {
+        "en": "We are delivering a hyperscale data center right now.",
+        "gloss": "em andamento agora"
+       },
+       {
+        "en": "I am preparing the monthly call with Microsoft.",
+        "gloss": "temporário/atual"
+       }
+      ]
+     },
+     {
+      "heading": "Present Continuous — usos",
+      "body": "Para o que <strong>acontece agora</strong>, situações <strong>temporárias</strong> e projetos <strong>em andamento</strong> neste ciclo.",
+      "examples": [
+       {
+        "en": "This quarter we are expanding our data center team.",
+        "gloss": "temporário (este trimestre)"
+       },
+       {
+        "en": "Right now we are reviewing the project schedule.",
+        "gloss": "agora"
+       }
+      ]
+     },
+     {
+      "heading": "Stative verbs — não usam -ing",
+      "body": "Verbos de estado (opinião, sentido, posse) ficam no <strong>Present Simple</strong> mesmo quando falamos do agora: <em>know, believe, want, need, mean, understand, have</em> (posse), <em>see, agree</em>. Fonte: British Council.",
+      "examples": [
+       {
+        "en": "I know the numbers well.",
+        "gloss": "✔ (não: I am knowing)"
+       },
+       {
+        "en": "We have three data centers under construction.",
+        "gloss": "✔ posse (não: we are having)"
+       }
+      ]
+     }
+    ],
+    "contrast": [
+     {
+      "simple": "I run the monthly review.",
+      "continuous": "I am running the review right now.",
+      "note": "rotina × neste momento"
+     },
+     {
+      "simple": "Racional builds data centers.",
+      "continuous": "We are building a data center for the client.",
+      "note": "fato permanente × projeto atual"
+     },
+     {
+      "simple": "I work in São Paulo.",
+      "continuous": "This month I am working from the site.",
+      "note": "permanente × temporário"
+     }
+    ],
+    "signalWords": {
+     "simple": [
+      "always",
+      "usually",
+      "every day",
+      "often",
+      "normally",
+      "each month"
+     ],
+     "continuous": [
+      "now",
+      "right now",
+      "at the moment",
+      "currently",
+      "this week",
+      "this quarter"
+     ]
+    },
+    "mistakes": [
+     {
+      "wrong": "Look, the client is win the argument.",
+      "right": "Look, the client is winning the argument.",
+      "why": "ação em progresso agora → continuous (-ing)."
+     },
+     {
+      "wrong": "I am knowing the schedule.",
+      "right": "I know the schedule.",
+      "why": "know é stative → present simple."
+     },
+     {
+      "wrong": "Right now I work on the report.",
+      "right": "Right now I am working on the report.",
+      "why": "\"right now\" pede continuous."
+     }
+    ]
    }
   },
   {
@@ -701,43 +901,48 @@
    ],
    "rich": true,
    "teacher": {
-    "overview": "M1 — Bloco de abertura para destravar a comunicação executiva cotidiana — apresentar-se, abrir reuniões, fazer perguntas e dizer números, datas, valores e prazos em voz alta sem travar.…",
+    "overview": "Aula de PRÁTICA. NÃO explique gramática nova. Conduza os blocos de produção (drill → role play → conversação → argumentação), dê tempo para ele falar e foque o feedback no contraste simple/continuous e na fluência.",
     "focus": "Fluência aplicada: comunicar sob pressão, sem travar.",
     "flow": [
      {
-      "min": "6",
-      "what": "Aquecimento · rajada de perguntas",
-      "how": "Professor dispara 3 perguntas da aula em sequência; o aluno responde em inglês, sem pausa."
+      "min": 10,
+      "what": "Aquecimento",
+      "how": "Relembre as frases-âncora da teoria em 1 minuto. Sem ensinar — só ativar."
      },
      {
-      "min": "7",
-      "what": "Choral + individual drill",
-      "how": "Repetição coral, depois individual, focando ritmo e ênfase."
+      "min": 20,
+      "what": "Drill cargo & projeto",
+      "how": "Rode o drill 5×, trocando o cliente. Corrija rápido e siga; o objetivo é automatizar."
      },
      {
-      "min": "14",
-      "what": "Repeat & record",
-      "how": "Refaça e grave; o aluno se ouve e ajusta."
+      "min": 25,
+      "what": "Role play abertura",
+      "how": "Faça 2 rodadas. Na 1ª, deixe fluir. Na 2ª, exija um projeto em andamento (continuous) e uma pergunta de retorno."
      },
      {
-      "min": "6",
-      "what": "Gravação de 60s",
-      "how": "Grave 60s para o portfólio de fala do aluno."
+      "min": 20,
+      "what": "Conversação livre",
+      "how": "Anote 3 acertos e 3 erros. Dê feedback ao final, não no meio."
      },
      {
-      "min": "3",
-      "what": "Fechamento · O que eu aprendi nessa lição",
-      "how": "Feche SEMPRE por aqui: o aluno marca cada 'I can…' que já consegue dizer em voz alta. Ao marcar todos, a aula fica registrada como concluída e mais clara no programa. É assim que toda aula termina."
+      "min": 10,
+      "what": "Argumentação + pergunta difícil",
+      "how": "Desafie com 1 pergunta inesperada. Avalie se ele mantém o tempo verbal correto sob pressão."
+     },
+     {
+      "min": 5,
+      "what": "Feedback final",
+      "how": "Resuma 2 pontos fortes e 1 meta para a próxima prática."
      }
     ],
     "watch": [
-     "Priorize a FALA: o aluno deve falar na maior parte da aula.",
-     "Varie a dinâmica a cada aula — o roteiro acima rotaciona para não repetir.",
-     "Não interromper a fluência para corrigir cada erro.",
-     "Corrigir só o que compromete o entendimento."
+     "Travar e recorrer ao português.",
+     "misturar simple/continuous sob pressão.",
+     "ler em vez de falar."
     ],
-    "note": "",
-    "richNote": "Esta aula tem conteúdo interativo completo na plataforma (vocabulário, exercícios e recap)."
+    "note": "Sucesso = ele se apresenta e abre uma call sem ler, com simple para cargo e continuous para o projeto atual.",
+    "richNote": "Esta aula tem conteúdo interativo completo na plataforma (vocabulário, exercícios e recap).",
+    "mode": "Aula de prática conduzida pelo professor · 1h30 · só produção + feedback"
    },
    "pill": {
     "kind": "accent",
@@ -746,6 +951,59 @@
     "tip": "Arrastado (drawl) e o clássico 'y'all' (= you all), com as vogais bem alongadas.",
     "sample": "Y'all have a great day now — we'll talk real soon.",
     "voice": "us-male"
+   },
+   "format": "practice",
+   "duration": 90,
+   "practice": {
+    "lead": "Aula de PRÁTICA: sem teoria nova. Você usa, em voz alta e com o professor, o Present Simple e o Present Continuous que viu na teoria. Tudo aqui é produção para receber feedback.",
+    "setup": "Contexto: primeira call com um interlocutor da Microsoft/Amazon/Google. Você se apresenta, fala do seu cargo e do que está em andamento, e abre a reunião.",
+    "blocks": [
+     {
+      "type": "drill",
+      "title": "Drill — cargo & projeto atual",
+      "prompt": "O professor diz um cliente (Microsoft/Amazon/Google) e você responde em 1 frase com Present Simple (cargo) + 1 frase com Present Continuous (projeto agora). Repita 5 vezes, trocando o projeto.",
+      "model": "I am the Director of Operations at Racional. Right now we are delivering a data center in Brazil."
+     },
+     {
+      "type": "roleplay",
+      "title": "Role play — abertura da call",
+      "prompt": "Professor é o interlocutor da Microsoft. Cumprimente, apresente-se, diga seu cargo e um projeto em andamento, e convide para começar a pauta — sem ler texto.",
+      "model": "It's a pleasure to meet you. I'm Fábio, Director of Operations at Racional. We are currently delivering your data center in Brazil. Shall we start?"
+     },
+     {
+      "type": "conversation",
+      "title": "Conversação — small talk executivo",
+      "prompt": "Troca livre de 2 minutos: o professor pergunta sobre sua semana e seus projetos; responda alternando simple (rotina) e continuous (agora). O professor anota e dá feedback ao final."
+     },
+     {
+      "type": "debate",
+      "title": "Argumentação — por que a Racional",
+      "prompt": "Em 60 segundos, defenda por que a Racional é o parceiro certo, usando 2 fatos (simple) e 1 frase de projeto atual (continuous). O professor desafia com 1 pergunta difícil."
+     },
+     {
+      "type": "drill",
+      "title": "Drill — stative verbs",
+      "prompt": "O professor diz um verbo de estado (know, want, need, have). Você responde 1 frase no Present Simple sobre a Racional. 6 rodadas.",
+      "model": "I know our schedule. We have three projects in progress."
+     },
+     {
+      "type": "situation",
+      "title": "Situação — pergunta inesperada",
+      "prompt": "O professor (cliente) pergunta \"What are you working on this month?\". Responda no Continuous, depois acrescente um fato no Simple.",
+      "model": "This month we are finishing your data center. We always deliver on schedule."
+     },
+     {
+      "type": "roleplay",
+      "title": "Role play — 2ª rodada da call",
+      "prompt": "Repita a abertura da call, mas agora o cliente faz 1 pergunta difícil sobre prazo. Mantenha o tempo verbal certo sob pressão.",
+      "model": "Right now we are on schedule. We usually finish within 24 months."
+     },
+     {
+      "type": "argumentation",
+      "title": "Argumentação — sua semana",
+      "prompt": "Em 60 segundos, descreva sua semana misturando rotina (Simple) e o que está em andamento (Continuous). O professor dá feedback sobre os dois tempos."
+     }
+    ]
    }
   },
   {
