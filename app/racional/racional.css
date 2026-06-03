@@ -510,3 +510,6 @@
 .rc-sm-fnlabel { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:var(--rc-blue); margin-bottom:8px; }
 .rc-sm-phrase { display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:14.5px; color:var(--rc-ink); padding:5px 0; border-top:1px solid var(--rc-surface); }
 .rc-sm-phrase:first-of-type { border-top:none; }
+
+/* ---------- Reading + compreensão (BRIDGE Fernando) ---------- */
+.rc-reading { background:#fff; border:1px solid var(--rc-line); border-left:3px solid var(--rc-blue); border-radius:0 12px 12px 0; padding:16px 18px; margin:6px 0 4px; font-size:15.5px; line-height:1.75; color:var(--rc-ink); white-space:pre-line; }

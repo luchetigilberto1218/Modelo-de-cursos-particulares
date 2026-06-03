@@ -27,6 +27,7 @@ export default function ClassroomActivity({ activity, voice = 'us-female', level
     case 'problem': body = <CompanyProblem a={activity} accent={accent} />; break;
     case 'pitch': body = <ElevatorPitch a={activity} voice={voice} accent={accent} />; break;
     case 'meeting': body = <SurvivalMeetings a={activity} voice={voice} accent={accent} />; break;
+    case 'reading': body = <Reading a={activity} voice={voice} accent={accent} />; break;
     default: return null;
   }
   return (
@@ -182,6 +183,18 @@ function SurvivalMeetings({ a, voice, accent }) {
         ))}
       </div>
       {a.task && <div className="rc-box" style={{ borderLeftColor: accent, marginTop: 12 }}>{a.task}</div>}
+    </div>
+  );
+}
+
+/* ---------- Reading + compreensão (BRIDGE do Fernando) ---------- */
+function Reading({ a, accent }) {
+  return (
+    <div className="rc-act">
+      <Tag accent={accent} icon="book">Leitura{a.title ? ` · ${a.title}` : ''}</Tag>
+      <div className="rc-reading">{a.body}</div>
+      <p className="rc-act-instr">{a.question?.q || 'Qual opção resume melhor o texto?'}</p>
+      {a.question && <QuizList questions={[a.question]} accent={accent} />}
     </div>
   );
 }

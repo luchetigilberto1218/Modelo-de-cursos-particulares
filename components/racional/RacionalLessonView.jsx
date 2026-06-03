@@ -178,6 +178,7 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
         problem: T('Resolução de problema', 'Problem solving'),
         pitch: T('Elevator Pitch Lite', 'Elevator Pitch Lite'),
         meeting: T('Survival Meetings', 'Survival Meetings'),
+        reading: T('Leitura & compreensão', 'Reading & comprehension'),
       };
       lesson.activities.forEach((act, i) => {
         screens.push({
