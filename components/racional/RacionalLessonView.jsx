@@ -9,6 +9,8 @@ import SpeakingExercise from '../SpeakingExercise';
 import { useLessonProgress } from './progress';
 import { useTeacher } from './access';
 import Icon from './RacionalIcon';
+import OverviewLookup from './OverviewLookup';
+import PersonalizedDraft from './PersonalizedDraft';
 
 function pad(n) { return String(n).padStart(3, '0'); }
 
@@ -41,7 +43,27 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
         kicker: T('Sobre o tema', 'About the topic'),
         title: lesson.title,
         render: () => (
-          <div className="rc-prose" dangerouslySetInnerHTML={{ __html: lesson.overview }} />
+          <>
+            <div className="rc-prose" dangerouslySetInnerHTML={{ __html: lesson.overview }} />
+            {/* Campo educativo de dúvida de vocabulário — em todos os overviews */}
+            <OverviewLookup accent={accent} />
+          </>
+        ),
+      });
+    }
+
+    // Tela: Exercício personalizado "[tema] na Racional" (quando a aula tem `personalized`)
+    if (lesson.personalized) {
+      screens.push({
+        kicker: T('Exercício personalizado', 'Personalized exercise'),
+        title: lesson.personalized.title || `${lesson.personalized.topic || lesson.title} na Racional`,
+        render: () => (
+          <PersonalizedDraft
+            data={lesson.personalized}
+            studentName={meta.studentName}
+            voice={voice}
+            accent={accent}
+          />
         ),
       });
     }
