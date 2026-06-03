@@ -25,6 +25,8 @@ export default function ClassroomActivity({ activity, voice = 'us-female', level
     case 'bingo': body = <Bingo a={activity} voice={voice} accent={accent} />; break;
     case 'email': body = <EmailDetective a={activity} accent={accent} />; break;
     case 'problem': body = <CompanyProblem a={activity} accent={accent} />; break;
+    case 'pitch': body = <ElevatorPitch a={activity} voice={voice} accent={accent} />; break;
+    case 'meeting': body = <SurvivalMeetings a={activity} voice={voice} accent={accent} />; break;
     default: return null;
   }
   return (
@@ -128,6 +130,58 @@ function CompanyProblem({ a, accent }) {
           <div className="rc-act-chips">{a.suggestions.map((s, i) => <span key={i} className="rc-act-chip">{s}</span>)}</div>
         </div>
       )}
+    </div>
+  );
+}
+
+/* ---------- Elevator Pitch Lite — construção guiada (Fernando) ---------- */
+function ElevatorPitch({ a, voice, accent }) {
+  return (
+    <div className="rc-act">
+      <Tag accent={accent} icon="spark">Elevator Pitch Lite</Tag>
+      {a.intro && <p className="rc-act-instr">{a.intro}</p>}
+      <div className="rc-pitch">
+        {a.frame.map((f, i) => (
+          <div key={i} className="rc-pitch-step">
+            <span className="rc-pitch-n" style={{ background: accent }}>{i + 1}</span>
+            <div className="rc-pitch-body">
+              <span className="rc-pitch-label">{f.label}</span>
+              {f.hint && <span className="rc-pitch-hint">{f.hint}</span>}
+            </div>
+          </div>
+        ))}
+      </div>
+      {a.model && (
+        <div className="rc-pitch-model">
+          <span className="rc-mini-label" style={{ marginBottom: 4 }}>Modelo de pitch</span>
+          <div className="rc-readaloud">"{a.model}"</div>
+          <div style={{ marginTop: 8 }}><AudioPlayer text={a.model} voiceType={voice} rate={0.9} label="Ouvir modelo" small /></div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ---------- Survival Meetings — banco de expressões + prática (Fernando) ---------- */
+function SurvivalMeetings({ a, voice, accent }) {
+  return (
+    <div className="rc-act">
+      <Tag accent={accent} icon="check">Survival Meetings</Tag>
+      {a.intro && <p className="rc-act-instr">{a.intro}</p>}
+      <div className="rc-sm">
+        {a.functions.map((fn, i) => (
+          <div key={i} className="rc-sm-fn">
+            <div className="rc-sm-fnlabel">{fn.label}</div>
+            {fn.phrases.map((ph, j) => (
+              <div key={j} className="rc-sm-phrase">
+                <span>“{ph}”</span>
+                <AudioPlayer text={ph} voiceType={voice} rate={0.9} label="" small />
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+      {a.task && <div className="rc-box" style={{ borderLeftColor: accent, marginTop: 12 }}>{a.task}</div>}
     </div>
   );
 }

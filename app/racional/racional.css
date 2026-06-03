@@ -494,3 +494,19 @@
 .rc-quiz-opt.correct { background:#E6F4EC; color:var(--rc-ok); font-weight:600; }
 .rc-quiz-opt.wrong { background:#FDE8EB; color:var(--rc-red); }
 .rc-quiz-mark { font-weight:700; }
+
+/* ---------- Elevator Pitch Lite (Fernando) ---------- */
+.rc-pitch { margin:8px 0; }
+.rc-pitch-step { display:flex; align-items:flex-start; gap:12px; background:#fff; border:1px solid var(--rc-line); border-radius:10px; padding:11px 14px; margin:8px 0; }
+.rc-pitch-n { flex:0 0 auto; width:24px; height:24px; border-radius:50%; color:#fff; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+.rc-pitch-body { display:flex; flex-direction:column; gap:2px; }
+.rc-pitch-label { font-size:15px; font-weight:600; color:var(--rc-ink); }
+.rc-pitch-hint { font-size:13px; color:var(--rc-mute); font-style:italic; }
+.rc-pitch-model { margin-top:12px; }
+
+/* ---------- Survival Meetings (Fernando) ---------- */
+.rc-sm { margin:8px 0; }
+.rc-sm-fn { background:#fff; border:1px solid var(--rc-line); border-left:3px solid var(--rc-blue); border-radius:0 10px 10px 0; padding:12px 14px; margin:10px 0; }
+.rc-sm-fnlabel { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:var(--rc-blue); margin-bottom:8px; }
+.rc-sm-phrase { display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:14.5px; color:var(--rc-ink); padding:5px 0; border-top:1px solid var(--rc-surface); }
+.rc-sm-phrase:first-of-type { border-top:none; }

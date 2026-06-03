@@ -406,7 +406,119 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Monte a sua apresentação profissional curta, passo a passo. Depois fale em voz alta para o professor.",
+     "frame": [
+      {
+       "label": "Cumprimento + nome",
+       "hint": "Hello, I am Fernando."
+      },
+      {
+       "label": "Cargo",
+       "hint": "I am a Contract Manager at Racional Engenharia."
+      },
+      {
+       "label": "Empresa / o que faz",
+       "hint": "Racional builds hospitals and data centers."
+      },
+      {
+       "label": "Sua responsabilidade",
+       "hint": "I manage contracts for our US client."
+      },
+      {
+       "label": "Projeto atual",
+       "hint": "Right now I am working on a data center project."
+      },
+      {
+       "label": "Fechamento",
+       "hint": "It is a pleasure to work with you."
+      }
+     ],
+     "model": "Hello, I am Fernando. I am a Contract Manager at Racional Engenharia. We build hospitals and data centers. I manage the contracts for our US client, and right now I am working on a data center project. It is a pleasure to work with you.",
+     "wrapUp": {
+      "prompt": "Agora faça o seu pitch para o professor, sem ler. Diga cargo, empresa, sua responsabilidade e o projeto atual.",
+      "model": "Hi, I am Fernando, Contract Manager at Racional. I manage contracts for a hospital and a data center for our US client.",
+      "teacherNote": "O professor ajuda o aluno a encadear as partes e a falar com confiança, sem ler."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Expressões de sobrevivência em reunião. Ouça, repita e use com o professor.",
+     "functions": [
+      {
+       "label": "Acompanhar a discussão",
+       "phrases": [
+        "I see.",
+        "That makes sense.",
+        "Could you say more about that?"
+       ]
+      },
+      {
+       "label": "Pedir esclarecimento",
+       "phrases": [
+        "Sorry, could you repeat that?",
+        "What do you mean by that?",
+        "Could you speak more slowly, please?"
+       ]
+      },
+      {
+       "label": "Confirmar entendimento",
+       "phrases": [
+        "So, you mean the deadline is next week?",
+        "Let me check: we deliver in June, right?"
+       ]
+      },
+      {
+       "label": "Dar opinião",
+       "phrases": [
+        "I think it is a good idea.",
+        "In my opinion, we should wait.",
+        "I agree with you."
+       ]
+      },
+      {
+       "label": "Interagir / ganhar tempo",
+       "phrases": [
+        "That is a good question.",
+        "Let me think for a second.",
+        "Can I come back to that later?"
+       ]
+      }
+     ],
+     "task": "Simulação: o professor conduz uma mini-reunião sobre o cronograma do data center. Use ao menos uma expressão de cada função.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: o que você entendeu e o que você pediu para esclarecer.",
+      "model": "In the meeting we talked about the data center schedule. I asked the client to repeat the deadline, and I confirmed that we deliver in June.",
+      "teacherNote": "O professor ajuda a relatar a reunião no passado e a inserir as expressões usadas."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+      "alt": "construction / engineering site"
+     },
+     "instruction": "Descreva a imagem em inglês, em voz alta, com o professor.",
+     "questions": [
+      "What do you see?",
+      "Where is this place?",
+      "Who works here?",
+      "What are they doing?",
+      "Is it safe? Why?",
+      "What equipment do you see?",
+      "Is it a hospital or a data center?",
+      "What is the weather like?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3-4 frases: o lugar, as pessoas e o que está acontecendo.",
+      "model": "In this picture I see a construction site. There are workers and machines. They are building a project for the client. It looks safe because the workers have helmets.",
+      "teacherNote": "O professor ajuda o aluno a ampliar o vocabulário (site, workers, helmet, machine) e a montar frases."
+     }
+    }
+   ]
   },
   {
    "num": 2,
