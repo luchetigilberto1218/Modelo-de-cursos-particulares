@@ -1648,7 +1648,115 @@
     "tip": "Em reunião por telefone tudo vem 'colado' e com contrações ('we're gonna', 'we'll'). Treine o encadeamento.",
     "sample": "We're gonna circle back on that and we'll confirm by Friday.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que houve um problema na obra do Data Center e o cliente americano quer saber como você decidiu. Monte um pitch curto explicando como você toma uma decisão sob pressão: avalia, decide e assume a responsabilidade.",
+     "frame": [
+      {
+       "label": "Apresente a situação na obra",
+       "hint": "There was a problem on-site at the Data Center this morning."
+      },
+      {
+       "label": "Diga que avaliou as opções",
+       "hint": "I stopped and I assessed the options with my team."
+      },
+      {
+       "label": "Explique a contrapartida (trade-off)",
+       "hint": "Option A was fast but expensive. Option B was slower but safe. That is the trade-off."
+      },
+      {
+       "label": "Tome a decisão",
+       "hint": "I weighed the options and I made the call. We proceed with Option B."
+      },
+      {
+       "label": "Assuma a responsabilidade",
+       "hint": "I am the Contract Manager, so this decision is mine."
+      },
+      {
+       "label": "Confirme o próximo passo",
+       "hint": "I will update the US client today."
+      }
+     ],
+     "model": "Good morning. This morning we had a problem on-site at the Data Center. I stopped the work and I assessed the options with my team. Option A was fast but expensive, and Option B was slower but safe. I weighed the options and I made the call: we proceed with Option B. I am the Contract Manager at Racional, so this decision is mine, and I will update the US client today.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor SEM ler. Olhe nos olhos e fale as 5-6 frases de cabeça.",
+      "model": "We had a problem on-site. I assessed the options, I made the call, and we proceed with the safe option. This is my decision as Contract Manager.",
+      "teacherNote": "Reforce o uso de 'I made the call' e 'this decision is mine'. Corrija pronúncia de 'assess' e 'weigh'."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, agora vamos simular uma mini-reunião com o cliente norte-americano sobre uma decisão urgente na obra do Hospital. Use as funções abaixo para participar e não só ouvir.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "I see. So we have two options on the table.",
+        "Let me check: you want a decision today, right?"
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you say that again, please?",
+        "What is the trade-off here?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, that is correct.",
+        "Okay, I understand the deadline."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think we should hold off for one day.",
+        "In my opinion, the safe option is better."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "Good point. Let me assess this with my team.",
+        "Thank you. I will make the call by 5 p.m."
+       ]
+      }
+     ],
+     "task": "Simule uma reunião de 4-5 minutos: o cliente americano relata um atraso urgente na obra do Hospital e pede uma decisão hoje. Fernando avalia as opções em voz alta, pondera o trade-off e toma a decisão (proceed ou hold off). O professor faz o papel do cliente.",
+     "wrapUp": {
+      "prompt": "Relate a reunião para o professor: o que o cliente pediu e qual decisão você tomou.",
+      "model": "The US client asked for a decision today about the Hospital. There was a delay on-site. I assessed the options and I made the call. We hold off for one day, then we proceed.",
+      "teacherNote": "Estimule Fernando a usar pelo menos uma frase de cada função. Foque em respostas curtas e claras (A1+)."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+      "alt": "Workers and a manager on a construction site looking at the work"
+     },
+     "instruction": "Fernando, olhe a foto da obra. Imagine que é o seu canteiro no Data Center e algo aconteceu. Responda às perguntas em inglês simples.",
+     "questions": [
+      "What do you see in the picture?",
+      "Where are these people? Is it on-site?",
+      "Who is the manager? What is his job?",
+      "Is there a problem on the site? What problem?",
+      "What options do they have?",
+      "What is the trade-off?",
+      "Who makes the call here?",
+      "Do they proceed or do they hold off?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3-4 frases, como se fosse a sua obra na Racional.",
+      "model": "This is a construction site, like my Data Center project. The manager is on-site with the team. There is a problem, so he assesses the options. He weighs the trade-off and he makes the call.",
+      "teacherNote": "Peça que Fernando conecte a foto ao seu papel real na Racional. Corrija 'make a call' vs 'make the call' e o vocabulário da aula."
+     }
+    }
+   ]
   },
   {
    "num": 7,
@@ -3008,7 +3116,115 @@
     "tip": "O 'r' depois da vogal desaparece: 'park the car' vira 'pahk the cah'. Ouça 'park' e 'car'.",
     "sample": "Park the car and meet us at the site office.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Imagine que houve um incidente na obra do hospital. O cliente norte-americano liga preocupado. Você, como Gerente de Contrato, precisa explicar a situação em inglês com calma. Monte um pitch curto de gerenciamento de crise seguindo os passos abaixo.",
+     "frame": [
+      {
+       "label": "Abrir e situar",
+       "hint": "Good morning. This is Fernando from Racional Engenharia, the Contract Manager on the hospital site."
+      },
+      {
+       "label": "Dizer o que aconteceu",
+       "hint": "We had an incident this morning on the construction site."
+      },
+      {
+       "label": "Confirmar que todos estão seguros",
+       "hint": "First, the most important thing: everyone is safe. No one is hurt."
+      },
+      {
+       "label": "Dizer a ação imediata",
+       "hint": "We stopped the work and we isolated the area right now."
+      },
+      {
+       "label": "Dizer o próximo passo",
+       "hint": "Our team is here to assess the situation."
+      },
+      {
+       "label": "Tranquilizar e fechar",
+       "hint": "I will call you again in one hour with more news. You can call me anytime."
+      }
+     ],
+     "model": "Good morning. This is Fernando from Racional Engenharia, the Contract Manager on the hospital site. We had a small incident this morning on the construction site. First, the most important thing: everyone is safe and no one is hurt. We stopped the work and we isolated the area. Our team is here now to assess the situation. I will call you again in one hour with more news.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch ao professor, em voz alta, sem ler o modelo. Fale como se estivesse ligando para o cliente do hospital.",
+      "model": "Hello, this is Fernando from Racional. We had an incident on the site, but everyone is safe. We stopped the work and isolated the area. The team is assessing it now. I will update you in one hour.",
+      "teacherNote": "Foque na calma e na ordem dos passos: primeiro segurança das pessoas, depois ação, depois próximo passo. Corrija a pronúncia de 'incident', 'isolate' e 'assess'."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Você está numa mini-reunião de emergência com o cliente (Hospital) e a equipe de segurança da obra. Use as funções abaixo para acompanhar e participar da reunião sobre o incidente.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "Okay, I understand.",
+        "Let me write that down."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you say that again?",
+        "What do you mean by 'the area'?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, everyone is safe.",
+        "That is correct, the work is stopped."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think we need to isolate the area first.",
+        "In my opinion, the client must know now."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "What do you think?",
+        "Do you agree with me?"
+       ]
+      }
+     ],
+     "task": "Simule uma mini-reunião de 3 minutos sobre o incidente na obra do hospital. O professor é o cliente americano e pergunta: 'Is everyone safe?', 'What did you do?', 'When can the work start again?'. Fernando responde como Gerente de Contrato usando as frases das funções.",
+     "wrapUp": {
+      "prompt": "Conte ao professor, em inglês, o que ficou decidido na reunião (3 frases).",
+      "model": "In the meeting, we confirmed that everyone is safe. We decided to keep the area isolated today. We will assess the site tomorrow and then start the work again.",
+      "teacherNote": "Verifique se Fernando usa pelo menos uma frase de cada função. Reforce 'everyone is safe' e 'the work is stopped'."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+      "alt": "A construction site with workers and machines."
+     },
+     "instruction": "Olhe a foto de uma obra. Imagine que aconteceu um incidente nesse lugar. Responda em inglês simples (A1+), sempre pensando no papel de Fernando como Gerente de Contrato da Racional.",
+     "questions": [
+      "What do you see in the picture?",
+      "Is this a construction site?",
+      "How many workers can you see?",
+      "Is the area safe?",
+      "Where is the incident?",
+      "Who do you call first?",
+      "Do you stop the work?",
+      "What do you say to the client?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3 ou 4 frases, em inglês simples, como se fosse a obra do hospital da Racional.",
+      "model": "This is a construction site, like our hospital project. I can see workers and machines. There was an incident here, but everyone is safe. I stopped the work and I called the client.",
+      "teacherNote": "Aceite frases curtas. Incentive o uso do vocabulário da aula: 'incident', 'safe', 'stop the work', 'isolate the area'."
+     }
+    }
+   ]
   },
   {
    "num": 13,
@@ -4377,7 +4593,115 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que você está em uma reunião com o cliente norte-americano do Hospital. Você precisa explicar, em inglês simples, o que está dentro e fora do escopo do contrato. Monte um pitch curto seguindo os passos abaixo.",
+     "frame": [
+      {
+       "label": "Apresente-se e diga sua função",
+       "hint": "Hi, I am Fernando. I am the Contract Manager at Racional Engenharia."
+      },
+      {
+       "label": "Diga qual projeto você gerencia",
+       "hint": "I manage the Hospital project for our US client."
+      },
+      {
+       "label": "Explique o que está no escopo",
+       "hint": "The new operating rooms are in scope. This work is in the contract."
+      },
+      {
+       "label": "Explique o que está fora do escopo",
+       "hint": "The parking area is out of scope. It is not in this contract."
+      },
+      {
+       "label": "Fale sobre trabalho extra",
+       "hint": "If the client wants extra work, we make a new request and define the requirements."
+      },
+      {
+       "label": "Feche com um próximo passo",
+       "hint": "I will send you a clear scope document this week."
+      }
+     ],
+     "model": "Hi, I am Fernando, the Contract Manager at Racional Engenharia. I manage the Hospital project for our US client. The new operating rooms are in scope, so this work is in the contract. The parking area is out of scope and is not in this contract. If you need extra work, we define the requirements and make a new request. I will send you a clear scope document this week.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, sem ler. Diga o que está in scope e o que está out of scope no projeto do Hospital.",
+      "model": "I am Fernando from Racional Engenharia. For the Hospital project, the operating rooms are in scope. The parking area is out of scope. For extra work, we make a new request.",
+      "teacherNote": "Verifique se Fernando usa 'in scope' e 'out of scope' com naturalidade. Corrija a pronúncia de 'scope' (escope, não 'escopi')."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, você vai simular uma mini-reunião com o cliente do Data Center. O cliente pede um trabalho novo, e você precisa dizer se está dentro ou fora do escopo. Use as funções abaixo.",
+     "functions": [
+      {
+       "label": "acompanhar (mostrar que está ouvindo)",
+       "phrases": [
+        "Okay, I understand.",
+        "Yes, please continue."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you repeat the request?",
+        "Is this part of the Data Center scope?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, the cooling system is in scope.",
+        "Okay, this is in the contract."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think this new request is out of scope.",
+        "For me, this is extra work."
+       ]
+      },
+      {
+       "label": "interagir / propor próximo passo",
+       "phrases": [
+        "Let's define the requirements together.",
+        "I will send you a new scope document."
+       ]
+      }
+     ],
+     "task": "Simule uma reunião de 4-5 minutos: o professor (cliente) pede uma sala extra no Data Center. Fernando ouve, pede esclarecimento, confirma o que está in scope, diz que a sala extra é out of scope e propõe tratar como extra work com um novo request.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: o que o cliente pediu e o que você respondeu sobre o escopo.",
+      "model": "The client asked for an extra room in the Data Center. I said the cooling system is in scope. The extra room is out of scope, so it is extra work. We will define the requirements and make a new request.",
+      "teacherNote": "Foque no uso de 'request', 'extra work' e 'to define'. Ajude Fernando a separar 'in scope' (já no contrato) de 'extra work' (pedido novo)."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "A team in a business meeting talking around a table."
+     },
+     "instruction": "Fernando, olhe a foto desta reunião. Imagine que é uma reunião sua na Racional sobre o escopo do projeto do Hospital. Responda às perguntas em inglês simples.",
+     "questions": [
+      "How many people are in the meeting?",
+      "Where are the people?",
+      "What are they talking about?",
+      "Who is the Contract Manager in this meeting?",
+      "Is the project in scope or out of scope?",
+      "What is the client's request?",
+      "Is this extra work?",
+      "What is the next step after the meeting?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3-4 frases. Diga quem está na reunião e sobre qual escopo eles falam.",
+      "model": "This is a meeting at Racional Engenharia. The people talk about the Hospital project. They define the scope: some work is in scope and some is out of scope. I am the Contract Manager, and I take notes about the requirements.",
+      "teacherNote": "Incentive frases simples com 'there is / there are'. Reforce o vocabulário 'scope', 'requirement' e 'request' na descrição."
+     }
+    }
+   ]
   },
   {
    "num": 19,
@@ -5745,7 +6069,115 @@
     "tip": "Usa 'like' como muleta no meio da frase e sobe a entonação no fim (uptalk), como se perguntasse.",
     "sample": "It's gonna be, like, a really good project, you know?",
     "voice": "us-female"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que o cliente norte-americano do Hospital pergunta na reunião: 'Which contract type is best for us?'. Você é o Gerente de Contrato da Racional. Monte um pitch curto e simples para explicar os tipos de contrato e quem assume o risco.",
+     "frame": [
+      {
+       "label": "Apresente-se e o projeto",
+       "hint": "I am Fernando. I am the Contract Manager at Racional for your Hospital project."
+      },
+      {
+       "label": "Diga que há três tipos de contrato",
+       "hint": "At Racional we work with three contract types: lump-sum, cost-plus and GMP."
+      },
+      {
+       "label": "Explique o lump-sum (preço global)",
+       "hint": "Lump-sum is a fixed price. Racional carries the risk on the Hospital project."
+      },
+      {
+       "label": "Explique o cost-plus (custo mais taxa)",
+       "hint": "Cost-plus is cost plus a fee. The US client carries more risk here."
+      },
+      {
+       "label": "Explique o GMP (preço máximo garantido)",
+       "hint": "GMP has a guaranteed maximum price. The Data Center cost is never higher than this number."
+      },
+      {
+       "label": "Feche oferecendo ajuda na escolha",
+       "hint": "I can help you choose the best contract type for the Hospital. Thank you."
+      }
+     ],
+     "model": "Hello, I am Fernando. I am the Contract Manager at Racional for your Hospital project. At Racional we use three contract types: lump-sum, cost-plus and GMP. Lump-sum is a fixed price, and Racional carries the risk. Cost-plus is the cost plus a fee, and the US client carries more risk. GMP gives a guaranteed maximum price, so the cost is never higher. I can help you choose the best contract type. Thank you.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch ao professor sem ler. Fale como se o cliente do Hospital estivesse na sua frente.",
+      "model": "I am Fernando, the Contract Manager at Racional. We have three contract types: lump-sum, cost-plus and GMP. In lump-sum, the price is fixed and Racional carries the risk. In cost-plus, you pay the cost plus a fee. In GMP, the price has a guaranteed maximum. I can help you choose. Thank you.",
+      "teacherNote": "Confira se Fernando liga cada tipo de contrato a 'quem assume o risco'. Aceite frases curtas; corrija 'carry the risk' e a pronúncia de 'lump-sum' e 'fee'."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, simule uma reunião curta com o cliente norte-americano sobre qual tipo de contrato usar no Data Center. Use as funções abaixo para acompanhar, perguntar, confirmar, opinar e interagir.",
+     "functions": [
+      {
+       "label": "Acompanhar a reunião",
+       "phrases": [
+        "So, today we talk about the contract type for the Data Center.",
+        "Let me follow your idea about the price."
+       ]
+      },
+      {
+       "label": "Pedir esclarecimento",
+       "phrases": [
+        "Sorry, do you mean a fixed price?",
+        "Can you explain the fee again, please?"
+       ]
+      },
+      {
+       "label": "Confirmar",
+       "phrases": [
+        "Yes, in lump-sum the price is fixed.",
+        "OK, so the US client carries the risk in cost-plus."
+       ]
+      },
+      {
+       "label": "Opinar",
+       "phrases": [
+        "I think GMP is good for the Hospital.",
+        "For me, lump-sum is safer for the client."
+       ]
+      },
+      {
+       "label": "Interagir",
+       "phrases": [
+        "And what do you think about cost-plus?",
+        "Do you want the guaranteed maximum price?"
+       ]
+      }
+     ],
+     "task": "Faça uma mini-reunião de 4 a 5 minutos. O professor é o cliente do Hospital/Data Center. Fernando deve recomendar um tipo de contrato (lump-sum, cost-plus ou GMP) e dizer quem assume o risco em cada um.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: o que o cliente queria e qual tipo de contrato você recomendou.",
+      "model": "In the meeting, we talked about the Data Center contract. The client wanted a fixed price. I said lump-sum is fixed and Racional carries the risk. I recommended GMP for the Hospital, because the price has a guaranteed maximum. The client liked the idea.",
+      "teacherNote": "Verifique se Fernando usa pelo menos uma frase de cada função. Reforce 'fixed price', 'fee' e 'carry the risk'. Aceite passado simples imperfeito; foco é comunicar."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "A team in a meeting room talking about a project around a table"
+     },
+     "instruction": "Fernando, olhe a foto. Imagine que é uma reunião na Racional sobre o tipo de contrato do Hospital. Responda às perguntas em inglês simples.",
+     "questions": [
+      "How many people are in the picture?",
+      "Where are the people? In an office or at home?",
+      "What do they do? Do they have a meeting?",
+      "Is this a meeting about a contract?",
+      "Who is the Contract Manager in this meeting?",
+      "Do they talk about lump-sum, cost-plus or GMP?",
+      "Who carries the risk: Racional or the client?",
+      "Is the meeting happy or serious?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3 ou 4 frases, ligando à Racional e ao tema da aula (tipos de contrato).",
+      "model": "In the picture I see a team in a meeting room. They have a meeting at Racional. They talk about the contract type for the Hospital. I think they talk about lump-sum and who carries the risk. The people look serious and friendly.",
+      "teacherNote": "Incentive Fernando a usar o vocabulário da aula (contract type, lump-sum, carry the risk). Aceite frases simples; corrija 'there is / there are' e preposições de lugar."
+     }
+    }
+   ]
   },
   {
    "num": 25,
@@ -7120,7 +7552,115 @@
     "tip": "Arrastado (drawl) e o clássico 'y'all' (= you all), com as vogais bem alongadas.",
     "sample": "Y'all have a great day now — we'll talk real soon.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, voce esta num jantar com o cliente americano do projeto do Hospital, na noite antes da reuniao de obra. Monte um pequeno discurso para receber bem o cliente, comentar a comida e o vinho, e criar um clima leve. Use cada passo abaixo.",
+     "frame": [
+      {
+       "label": "Dar as boas-vindas ao cliente",
+       "hint": "Welcome to Sao Paulo! I am very happy to have dinner with you tonight."
+      },
+      {
+       "label": "Falar do projeto de forma leve",
+       "hint": "Tomorrow we visit the Hospital site, but tonight we relax and enjoy."
+      },
+      {
+       "label": "Recomendar uma entrada",
+       "hint": "I recommend the cheese starter. It is a Brazilian classic."
+      },
+      {
+       "label": "Sugerir o prato principal",
+       "hint": "For the main course, you can try our beef. It is delicious."
+      },
+      {
+       "label": "Sugerir o vinho",
+       "hint": "I am in the mood for red wine. It pairs very well with the beef."
+      },
+      {
+       "label": "Fazer um brinde",
+       "hint": "Let's make a toast to our work on the Data Center. Cheers!"
+      }
+     ],
+     "model": "Welcome to Sao Paulo! I am very happy to have dinner with you tonight. Tomorrow we visit the Hospital site, but tonight we relax. I recommend the cheese starter to begin. For the main course, you can try our beef. It is delicious. I am in the mood for red wine, and it pairs very well with the meat. Let's make a toast to our project. Cheers!",
+     "wrapUp": {
+      "prompt": "Agora feche o livro e faca o pitch para o professor, sem ler. Imagine que o professor e o cliente americano chegando ao restaurante.",
+      "model": "Welcome to Sao Paulo! Tonight we relax before the site visit. I recommend the cheese starter, and you can try the beef for your main course. It is delicious. I am in the mood for red wine. It pairs well with the meat. Cheers to our project!",
+      "teacherNote": "Confira se Fernando usa 'recommend', 'main course', 'pair' e 'delicious' de forma natural. Aceite frases curtas; o foco e fluencia e calor humano, nao gramatica perfeita."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, voce esta no jantar com o cliente americano e a equipe da Racional. Vamos simular a conversa na mesa: pedir comida, comentar o vinho e ainda falar um pouco do projeto. Use as frases abaixo para participar.",
+     "functions": [
+      {
+       "label": "acompanhar a conversa",
+       "phrases": [
+        "That sounds good.",
+        "I see, the main course is ready."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, is this a red or white wine?",
+        "Can you say the name of the starter again?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, I am in the mood for the fish.",
+        "Perfect, two main courses, please."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think this wine is delicious.",
+        "In my opinion, the red wine pairs better with the beef."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "What do you recommend?",
+        "Would you like to try a Brazilian dessert?"
+       ]
+      }
+     ],
+     "task": "Simule uma mini-reuniao de jantar (3-4 minutos). O professor faz o cliente americano. Voce, como Gerente de Contrato, recebe o cliente, ajuda a escolher entrada, prato principal e vinho, e fala de forma leve sobre a visita ao Hospital no dia seguinte.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi o jantar: o que o cliente pediu, o que voce recomendou e como ficou o clima para a reuniao de obra.",
+      "model": "The dinner was very nice. The client tried the cheese starter and the beef. I recommended a red wine, and it paired very well. We talked about the Hospital site visit, and the client was happy. It was a good start for the meeting.",
+      "teacherNote": "Observe se Fernando alterna entre pedir esclarecimento e opinar. Estimule perguntas com 'What do you recommend?'. Corrija com gentileza, mantendo o nivel A1+."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=900&q=80",
+      "alt": "Two business people shaking hands, like a contract manager greeting an American client before dinner."
+     },
+     "instruction": "Fernando, olhe a imagem. Imagine que e voce cumprimentando o cliente americano do projeto do Data Center antes do jantar. Responda as perguntas em ingles, com frases simples.",
+     "questions": [
+      "Where are these people?",
+      "What are they doing?",
+      "Are they happy?",
+      "Is this before or after the dinner?",
+      "What food do you recommend for the client?",
+      "Do you prefer red or white wine?",
+      "What can they try for the main course?",
+      "Why is a good dinner important for the project?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3 ou 4 frases, ligando ao seu trabalho na Racional e ao tema do jantar com o cliente.",
+      "model": "In the picture, two men shake hands. I think this is me and the American client before dinner. We are happy. Tonight we relax and try Brazilian food. I recommend the beef with red wine. A good dinner helps our project.",
+      "teacherNote": "Verifique se Fernando descreve a cena e conecta ao contexto (cliente, jantar, projeto). Reforce o vocabulario 'recommend', 'try', 'pair', 'main course'. Aceite frases curtas e simples."
+     }
+    }
+   ]
   },
   {
    "num": 31,
@@ -8469,7 +9009,115 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que você está numa reunião final com o cliente norte-americano do hospital. Você precisa explicar, em inglês simples, que a obra está chegando ao fim. Monte um pitch curto sobre o encerramento da obra (closeout), a entrega final e o pagamento final.",
+     "frame": [
+      {
+       "label": "Quem é você e qual obra",
+       "hint": "Hi, I am Fernando. I am the Contract Manager at Racional for the hospital project."
+      },
+      {
+       "label": "Dizer que a obra terminou",
+       "hint": "The construction is finished. Now we start the project closeout."
+      },
+      {
+       "label": "Falar da lista de pendências",
+       "hint": "We have a small punch list. My team will fix all the items this week."
+      },
+      {
+       "label": "Falar da entrega e dos desenhos",
+       "hint": "After that, we do the handover. I will give you all the as-built drawings."
+      },
+      {
+       "label": "Falar da aceitação final",
+       "hint": "Then you sign the final acceptance for the hospital."
+      },
+      {
+       "label": "Falar do pagamento e da retenção",
+       "hint": "After final acceptance, you release the retention and the final payment to Racional."
+      }
+     ],
+     "model": "Hi, I am Fernando. I am the Contract Manager at Racional for the hospital project. The construction is finished, so now we start the closeout. We have a small punch list, and my team will fix all the items this week. After that, we do the handover, and I give you all the as-built drawings. Then you sign the final acceptance and release the retention and the final payment to Racional.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor sem ler. Fale sobre o encerramento do hospital, a entrega e o pagamento final.",
+      "model": "I am Fernando from Racional. The hospital is finished. We start the closeout now. We have a small punch list, and we fix it this week. Then we do the handover with the as-built drawings. You sign the final acceptance and release the final payment.",
+      "teacherNote": "Foco no vocabulário da aula: closeout, punch list, handover, as-built drawings, final acceptance, retention, final payment, to release. Aceite frases curtas; corrija só o que atrapalha o sentido."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, agora vamos simular uma reunião de encerramento do Data Center com o cliente norte-americano. Você vai precisar acompanhar, pedir esclarecimento, confirmar, opinar e interagir, sempre falando do fim da obra e da entrega.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "Yes, I am following you.",
+        "OK, so the next step is the handover."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, what is on the punch list?",
+        "Can you explain the final acceptance again?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, the as-built drawings are ready.",
+        "That is correct, the construction is finished."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think we can finish the punch list this week.",
+        "In my opinion, the handover is ready for Friday."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "And you, when can you release the retention?",
+        "What do you think about the final payment date?"
+       ]
+      }
+     ],
+     "task": "Faça uma mini-reunião de 4 a 5 minutos com o professor sobre o encerramento do Data Center. Combine: a lista de pendências, a data da entrega (handover), a aceitação final e quando o cliente vai liberar a retenção e o pagamento final.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: o que foi combinado sobre o encerramento, a entrega e o pagamento.",
+      "model": "We had a meeting about the Data Center closeout. The construction is finished. My team will close the punch list this week. The handover is on Friday with the as-built drawings. After the final acceptance, the client will release the retention and the final payment.",
+      "teacherNote": "Estimule Fernando a usar uma frase de cada função. Reforce 'to release the retention / final payment'. Tudo em A1+, frases curtas."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=900&q=80",
+      "alt": "Two people shaking hands after closing a deal"
+     },
+     "instruction": "Fernando, olhe a foto. Imagine que é o momento da entrega final (handover) do hospital: você, da Racional, e o cliente norte-americano apertam as mãos depois da aceitação final. Responda às perguntas em inglês simples.",
+     "questions": [
+      "What do you see in the picture?",
+      "Who are the two people? (Racional and the client)",
+      "Why are they shaking hands?",
+      "Is the construction finished or not finished?",
+      "Is this the handover of the hospital?",
+      "What does Fernando give to the client? (the as-built drawings)",
+      "Does the client sign the final acceptance now?",
+      "After this, does the client release the final payment?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3 ou 4 frases, falando da entrega final do hospital.",
+      "model": "I see two people. They shake hands. This is the handover of the hospital. The construction is finished, and the client signs the final acceptance. After this, the client releases the final payment to Racional.",
+      "teacherNote": "Conecte a imagem ao tema: handover, final acceptance, to release, final payment. Peça frases completas curtas; corrija pronúncia de 'release' e 'acceptance' se necessário."
+     }
+    }
+   ]
   },
   {
    "num": 37,
@@ -9836,7 +10484,115 @@
     "tip": "Ritmo silábico (cada sílaba bem marcada) e expressões próprias de negócios: 'kindly' (= por favor) e 'revert' (= responder).",
     "sample": "Kindly share the update and we will revert to you by end of day.",
     "voice": "us-female"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que o cliente norte-americano do Hospital quer saber como vai a investigação do solo antes da fundação. Monte um pitch curto, em inglês simples, explicando a sondagem e o que vem a seguir.",
+     "frame": [
+      {
+       "label": "Apresente-se e o projeto",
+       "hint": "Hi, I am Fernando, the Contract Manager at Racional. I work on your Hospital project."
+      },
+      {
+       "label": "Diga o que está acontecendo no solo",
+       "hint": "This week we start the soil investigation on the site."
+      },
+      {
+       "label": "Explique a sondagem",
+       "hint": "Our team drills boreholes to study the soil."
+      },
+      {
+       "label": "Fale das amostras",
+       "hint": "We take samples from each borehole."
+      },
+      {
+       "label": "Diga sobre rocha e nível d'água",
+       "hint": "We check the bedrock and the water level under the ground."
+      },
+      {
+       "label": "Diga o próximo passo",
+       "hint": "After that, we send you the soil report for the foundation."
+      }
+     ],
+     "model": "Hi, I am Fernando, the Contract Manager at Racional. I work on your Hospital project. This week we start the soil investigation on the site. Our team drills boreholes and takes samples from the soil. We check the bedrock and the water level under the ground. After that, we send you the soil report. This report helps us choose the right foundation.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, sem ler. Fale devagar e com confiança.",
+      "model": "Hi, I am Fernando from Racional. We start the soil investigation on the Hospital site. We drill boreholes and take samples. We check the bedrock and the water level. Then we send you the soil report for the foundation.",
+      "teacherNote": "Peça o pitch sem leitura. Corrija só 'drill', 'borehole', 'samples' e 'soil report'. Reforce a frase final sobre o próximo passo."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, simule uma mini-reunião online com o cliente do Data Center sobre o resultado da sondagem geotécnica. Use as funções abaixo para participar bem em inglês.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "Okay, I follow you.",
+        "Yes, I understand the soil report."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, what is the water level?",
+        "Can you say that again, please?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, the bedrock is deep here.",
+        "Correct, we drilled five boreholes."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think we need more samples.",
+        "In my opinion, the soil is good for the foundation."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "What do you think about the soil report?",
+        "Do you have a question about the survey?"
+       ]
+      }
+     ],
+     "task": "Faça uma reunião de 4 minutos com o professor como cliente. Tema: a sondagem geotécnica do Data Center, as amostras do solo, a rocha firme e o nível d'água. Use pelo menos uma frase de cada função.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: o que vocês falaram e o que ficou combinado.",
+      "model": "We talked about the soil investigation on the Data Center. I said we drilled five boreholes and took samples. The bedrock is deep, and the water level is low. The client wants the soil report next week.",
+      "teacherNote": "Atue como cliente e faça uma pergunta de esclarecimento. Verifique se Fernando usou as cinco funções. Foque no vocabulário: borehole, sample, bedrock, water level."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+      "alt": "Construction site with workers and machines, related to soil and ground work"
+     },
+     "instruction": "Fernando, olhe a foto de um canteiro de obras. Responda em inglês simples, pensando no seu projeto do Hospital na Racional e na investigação do solo.",
+     "questions": [
+      "What do you see in the picture?",
+      "Is this a construction site?",
+      "Do you see workers in the picture?",
+      "Where do they drill the boreholes?",
+      "Do you take soil samples on a site like this?",
+      "Is the ground hard or soft here?",
+      "Who reads the soil report at Racional?",
+      "Is this site like your Hospital project?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3 ou 4 frases, ligando ao seu trabalho na Racional.",
+      "model": "This is a construction site. I see workers and machines on the ground. They drill boreholes and take soil samples. At Racional, we use the soil report for the foundation of the Hospital.",
+      "teacherNote": "Aceite frases curtas. Incentive 'drill', 'soil samples' e 'foundation'. Peça a Fernando ligar a cena ao projeto dele."
+     }
+    }
+   ]
   },
   {
    "num": 43,
@@ -11202,7 +11958,115 @@
      },
      " on the schedule, and I report this progress to the client."
     ]
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, voce vai explicar ao cliente americano por que a Racional usa estrutura metalica e pre-fabricacao no projeto do Hospital. Monte um pitch curto e simples, mostrando o ganho de prazo. Use os passos abaixo como guia.",
+     "frame": [
+      {
+       "label": "Apresente o tema",
+       "hint": "Hi, today I talk about our structural steel plan."
+      },
+      {
+       "label": "Diga o que e estrutura metalica",
+       "hint": "We use steel beams and steel columns for the Hospital building."
+      },
+      {
+       "label": "Explique a fabricacao fora da obra",
+       "hint": "We make the steel off-site, in our fabrication shop."
+      },
+      {
+       "label": "Mostre a montagem na obra",
+       "hint": "Then we bring the steel on-site and we lift it with a crane."
+      },
+      {
+       "label": "Fale das ligacoes",
+       "hint": "On-site, the team makes the connections between the beams and the columns."
+      },
+      {
+       "label": "Mostre o ganho",
+       "hint": "Prefabrication is fast, so we save time on the Hospital project."
+      }
+     ],
+     "model": "Hi, today I talk about our steel plan for the Hospital. We use structural steel: steel beams and steel columns. We make the steel off-site, in our fabrication shop. Then we bring it on-site and we lift it with a crane. The team makes the connections on-site. Prefabrication is fast, so we save time. This is good for you and for Racional.",
+     "wrapUp": {
+      "prompt": "Agora faca o pitch para o professor, falando direto, sem ler o texto.",
+      "model": "Hi, today I talk about our steel plan. We use steel beams and steel columns. We make the steel off-site and we lift it on-site with a crane. Prefabrication is fast, so we save time.",
+      "teacherNote": "Peca para o Fernando falar olhando para voce, nao para a tela. Corrija so se ele travar."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, voce esta numa reuniao online com o cliente sobre o cronograma do aco. Use as frases abaixo para participar bem da reuniao.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "Yes, I understand.",
+        "OK, please continue."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you repeat?",
+        "What does 'connection' mean?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, the steel is off-site now.",
+        "That is correct."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think prefabrication is faster.",
+        "In my opinion, the crane plan is good."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "Good question.",
+        "And you, what do you think?"
+       ]
+      }
+     ],
+     "task": "Faca uma mini-reuniao com o professor sobre a estrutura metalica do Data Center. O professor pergunta quando o aco sai da fabrica e quando o guindaste monta as vigas na obra. Fernando responde usando as frases acima.",
+     "wrapUp": {
+      "prompt": "Agora conte ao professor como foi a reuniao, em 2-3 frases.",
+      "model": "In the meeting, we talk about the steel for the Data Center. I say the steel is off-site now. Next week, we lift the beams on-site with a crane.",
+      "teacherNote": "Foque em ele usar pelo menos uma frase de cada funcao. Anote as frases que ele esquece para revisar."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80",
+      "alt": "A fabrication shop with workers and steel parts."
+     },
+     "instruction": "Fernando, olhe a foto da fabrica. Imagine que e a oficina de fabricacao da Racional, onde o aco do Hospital e feito fora da obra. Responda as perguntas em ingles simples.",
+     "questions": [
+      "What do you see in the photo?",
+      "Is this on-site or off-site?",
+      "Do you see steel in the photo?",
+      "What is a fabrication shop?",
+      "Are the workers busy?",
+      "What do they make here, steel beams or steel columns?",
+      "Where does the steel go after the shop?",
+      "Is prefabrication fast or slow?"
+     ],
+     "wrapUp": {
+      "prompt": "Agora descreva a cena para o professor em 3-4 frases.",
+      "model": "This is a fabrication shop. I see steel and workers. They make steel beams and steel columns off-site. After the shop, the steel goes on-site for the Hospital.",
+      "teacherNote": "Estimule o uso do vocabulario novo: fabrication shop, off-site, steel beam, steel column. Aceite frases curtas."
+     }
+    }
+   ]
   },
   {
    "num": 49,
@@ -12584,7 +13448,115 @@
     "tip": "O 'r' depois da vogal desaparece: 'park the car' vira 'pahk the cah'. Ouça 'park' e 'car'.",
     "sample": "Park the car and meet us at the site office.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, o cliente americano do hospital quer saber como a Racional cuida do sistema hidráulico. Monte um pitch curto, em inglês simples, explicando o abastecimento de água, os tubos, as válvulas e a drenagem — e diga que tudo é testado antes de fechar as paredes.",
+     "frame": [
+      {
+       "label": "Apresente o tema",
+       "hint": "Today I talk about the plumbing system in our hospital project."
+      },
+      {
+       "label": "Fale do abastecimento de água",
+       "hint": "We bring clean water supply to every floor of the hospital."
+      },
+      {
+       "label": "Explique os tubos",
+       "hint": "We use strong pipes for hot and cold water."
+      },
+      {
+       "label": "Fale das válvulas e da drenagem",
+       "hint": "We install valves to control the water, and good drainage to take the water out."
+      },
+      {
+       "label": "Garanta a qualidade",
+       "hint": "We test the pressure, so the pipes do not leak."
+      },
+      {
+       "label": "Feche com confiança",
+       "hint": "Everything is tested before we close the walls."
+      }
+     ],
+     "model": "Hello. Today I talk about the plumbing system in our hospital project at Racional. First, we bring clean water supply to every floor. We use strong pipes for hot and cold water, and we install valves to control the water. We also build good drainage to take the dirty water out. We test the pressure, so the pipes do not leak. Everything is tested before we close the walls.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, em voz alta e sem ler o texto. Olhe para ele e fale como se ele fosse o cliente do hospital.",
+      "model": "Hello. Today I talk about our plumbing system. We bring clean water to every floor of the hospital. We use strong pipes and good valves. We test the pressure, so the pipes do not leak. Everything is tested before we close the walls.",
+      "teacherNote": "Peça o pitch sem leitura. Corrija a pronúncia de 'plumbing' (o 'b' é mudo), 'valve' e 'leak'. Reforce o vocabulário: water supply, pipe, valve, drainage, to leak."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, simule uma reunião de obra sobre o sistema hidráulico do hospital. Use as frases abaixo para acompanhar, pedir esclarecimento, confirmar, opinar e interagir com a equipe e o cliente.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "Okay, I understand the water supply plan.",
+        "Yes, please continue about the pipes."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you explain the drainage again?",
+        "What does this valve control?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "So, the pressure test is on Monday, right?",
+        "Let me confirm: all pipes are tested before the walls."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think we need a stronger pipe here.",
+        "In my opinion, this valve is in a good place."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "Good point. Can you check that valve, please?",
+        "Thank you. I will tell the client the pipes do not leak."
+       ]
+      }
+     ],
+     "task": "Faça uma mini-reunião de 4 minutos com o professor: você é o Gerente de Contrato da Racional e ele é o cliente do hospital. Falem sobre o abastecimento de água, os tubos, as válvulas, a drenagem e o teste de pressão. Use pelo menos uma frase de cada função.",
+     "wrapUp": {
+      "prompt": "Conte ao professor, em 3 ou 4 frases, o que foi decidido na reunião sobre o sistema hidráulico.",
+      "model": "In the meeting, we talked about the plumbing system. We confirmed the water supply for every floor. The pressure test is on Monday. All pipes are tested before we close the walls.",
+      "teacherNote": "Observe se o aluno usa cada função (acompanhar, pedir esclarecimento, confirmar, opinar, interagir). Incentive perguntas curtas e respostas simples. Corrija ordem de palavras em perguntas (Can you...? / What does...?)."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+      "alt": "Construction site with workers and structure being built"
+     },
+     "instruction": "Fernando, olhe a foto da obra. Imagine que é o hospital da Racional, na fase do sistema hidráulico. Responda às perguntas em inglês simples.",
+     "questions": [
+      "What do you see in the picture?",
+      "Is this a construction site?",
+      "Where are the pipes in a building like this?",
+      "Do workers install the water supply here?",
+      "What is a valve for?",
+      "Why do we need good drainage?",
+      "What happens if a pipe leaks?",
+      "Why do we test the pressure before we close the walls?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3 ou 4 frases, ligando a foto ao sistema hidráulico do hospital da Racional.",
+      "model": "This is a construction site, like our hospital. The workers install the pipes and the valves for the water supply. We also build the drainage. We test the pressure, so the pipes do not leak.",
+      "teacherNote": "Aceite frases curtas. Reforce o vocabulário do tema (pipe, valve, drainage, water supply, to leak) e o presente simples. Peça que conecte sempre com a obra da Racional e o papel de Gerente de Contrato."
+     }
+    }
+   ]
   },
   {
    "num": 55,
@@ -13926,7 +14898,115 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Antes de uma reunião com o cliente americano do projeto do Hospital, é comum ter um momento de small talk. Falar de música é uma ótima maneira de criar conexão. Monte um pequeno pitch sobre por que você gosta de Lenny Kravitz e de rock/funk. Use cada passo abaixo como um degrau e fale frases simples (A1+).",
+     "frame": [
+      {
+       "label": "Comece com o gosto por música",
+       "hint": "I like music a lot. After work at Racional, I listen to music."
+      },
+      {
+       "label": "Diga o estilo que você curte",
+       "hint": "I like rock and funk. The groove is very good."
+      },
+      {
+       "label": "Apresente o artista",
+       "hint": "My favorite is Lenny Kravitz. He is a great guitar player."
+      },
+      {
+       "label": "Diga o que ele faz bem",
+       "hint": "He plays guitar, drums and bass. He mixes many styles."
+      },
+      {
+       "label": "Fale de um detalhe da música",
+       "hint": "I love the riff in his songs. The groove is strong."
+      },
+      {
+       "label": "Conecte com o cliente",
+       "hint": "Do you like rock too? We can talk about music before the meeting."
+      }
+     ],
+     "model": "I like music a lot. After work at Racional, I listen to music at home. I like rock and funk because the groove is very good. My favorite is Lenny Kravitz. He is a great guitar player, and he mixes many styles. I love the riff in his songs. Do you like rock too? We can talk about music before our meeting.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch ao professor SEM ler. Imagine que é o começo de uma call com o cliente do Hospital.",
+      "model": "Hi! Before we start, I want to talk a little. I like rock and funk. My favorite is Lenny Kravitz. He is a great guitar player and he mixes styles. Do you like music too?",
+      "teacherNote": "Foque em fluidez, não em perfeição. Corrija só 'I like / he plays / he mixes'. Elogie o uso de groove, riff, guitar player."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Você está em uma call rápida com o cliente americano (projeto do Data Center). Antes do assunto técnico, há um small talk sobre música. Use as funções abaixo para acompanhar e participar da conversa.",
+     "functions": [
+      {
+       "label": "acompanhar (mostrar que está ouvindo)",
+       "phrases": [
+        "Oh, nice!",
+        "I see, that is cool."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, who is the guitar player?",
+        "Can you say that again, please?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, I like rock too.",
+        "Right, the groove is very good."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think Lenny Kravitz is great.",
+        "For me, the riff is the best part."
+       ]
+      },
+      {
+       "label": "interagir / devolver a pergunta",
+       "phrases": [
+        "And you? Do you like funk?",
+        "What music do you like?"
+       ]
+      }
+     ],
+     "task": "Simulação: o professor é o cliente americano. Ele começa falando de música. Faça um mini small talk de 2 minutos sobre rock, funk e Lenny Kravitz antes de 'entrar' no assunto do Data Center. Use pelo menos uma frase de cada função.",
+     "wrapUp": {
+      "prompt": "Relate a reunião ao professor: do que vocês falaram antes do assunto técnico?",
+      "model": "We talked about music before the meeting. The client likes rock. I said I like Lenny Kravitz. He plays guitar and drums. We had a good small talk, then we talked about the Data Center.",
+      "teacherNote": "Treine a transição do small talk para o trabalho: 'Ok, now let's talk about the project.' Reforce as perguntas de devolução (And you?)."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=900&q=80",
+      "alt": "A man in an online video call at his desk, smiling and talking"
+     },
+     "instruction": "Olhe a foto. É uma call online, como as que você faz com o cliente americano. Responda as perguntas em inglês simples e imagine que eles estão fazendo small talk sobre música.",
+     "questions": [
+      "Where is the man?",
+      "Is he in a meeting or at a party?",
+      "Is he happy or sad?",
+      "What is on his desk?",
+      "Do you think he is talking to a client?",
+      "Can he talk about music in this call?",
+      "Do you have calls like this at Racional?",
+      "What do you say before a meeting?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3-4 frases, conectando com o seu dia a dia na Racional.",
+      "model": "This is a man in an online call. He is at his desk and he is happy. He is talking to a client, like me at Racional. Before the meeting, he can talk about music to make a good connection.",
+      "teacherNote": "Aceite frases curtas. Foque em 'He is + adjective' e 'There is / on the desk'. Ligue ao rapport com o cliente americano."
+     }
+    }
+   ]
   },
   {
    "num": 61,
@@ -15270,7 +16350,115 @@
      },
      ", so my team checks the cooling system every day."
     ]
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que você está numa reunião com um cliente norte-americano (Microsoft) e precisa apresentar, em inglês simples, o data center que a Racional vai construir. Monte um pitch curto usando os passos abaixo.",
+     "frame": [
+      {
+       "label": "Apresente-se e seu papel",
+       "hint": "Hello, my name is Fernando. I am the Contract Manager at Racional Engenharia."
+      },
+      {
+       "label": "Diga o que a Racional faz",
+       "hint": "Racional builds data centers for big clients like Microsoft and Amazon."
+      },
+      {
+       "label": "Fale do projeto",
+       "hint": "This data center is hyperscale. It is very big and very strong."
+      },
+      {
+       "label": "Explique o resfriamento",
+       "hint": "We have a good cooling system. The servers do not overheat."
+      },
+      {
+       "label": "Fale de redundância e Tier",
+       "hint": "We use 2N redundancy. This is a Tier IV data center."
+      },
+      {
+       "label": "Feche com o benefício",
+       "hint": "This means high uptime and very low downtime for you."
+      }
+     ],
+     "model": "Hello, my name is Fernando. I am the Contract Manager at Racional Engenharia. Racional builds data centers for big clients like Microsoft and Amazon. This new project is a hyperscale data center, so it is very big. We have a strong cooling system, and the servers do not overheat. We use 2N redundancy, and this is a Tier IV data center. This means high uptime and very low downtime for your business.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, sem ler. Fale devagar e com confiança, como numa reunião de verdade com o cliente.",
+      "model": "Hello, I am Fernando, the Contract Manager at Racional. We build a hyperscale data center for you. The cooling system is strong, the redundancy is 2N, and it is Tier IV. You have high uptime and low downtime.",
+      "teacherNote": "Corrija a pronúncia de 'redundancy', 'uptime' e 'downtime'. Incentive o Fernando a olhar para você (não para o papel) ao fazer o pitch."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, agora vamos simular uma mini-reunião sobre o data center. Você está na obra com a equipe e com o cliente. Use as frases abaixo para participar bem da reunião.",
+     "functions": [
+      {
+       "label": "acompanhar (mostrar que entendeu)",
+       "phrases": [
+        "OK, I understand.",
+        "Yes, I see. The cooling system is ready."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you repeat the Tier level?",
+        "What do you mean by 2N redundancy?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, that is correct. It is Tier IV.",
+        "Right, the uptime is very high."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think the cooling system is very good.",
+        "In my opinion, we need more redundancy here."
+       ]
+      },
+      {
+       "label": "interagir (passar a palavra)",
+       "phrases": [
+        "And you, what do you think?",
+        "Carlos, can you talk about the downtime?"
+       ]
+      }
+     ],
+     "task": "Simule uma reunião de 4 minutos: o professor é o cliente da Microsoft e pergunta sobre resfriamento, redundância (N+1, 2N) e o nível Tier do data center. Fernando responde como Gerente de Contrato da Racional, usando as funções acima.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: sobre o que vocês falaram e o que o cliente perguntou. Use 3 ou 4 frases simples.",
+      "model": "We talked about the new data center. The client asked about the cooling system and the Tier level. I said it is Tier IV with 2N redundancy. The client was happy because the uptime is high.",
+      "teacherNote": "Foque no uso de perguntas para pedir esclarecimento. Reforce o tempo passado simples ('talked', 'asked', 'said') no relato."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80",
+      "alt": "A large industrial facility with machines and equipment, like a data center room."
+     },
+     "instruction": "Fernando, olhe a foto. Imagine que este é o data center que a Racional está construindo para um cliente norte-americano. Responda às perguntas em inglês simples.",
+     "questions": [
+      "What do you see in this picture?",
+      "Is this place big or small?",
+      "Is this a data center or a hospital?",
+      "Do you see machines and equipment?",
+      "Does a data center need a cooling system?",
+      "Why can the servers overheat?",
+      "Is this a hyperscale data center?",
+      "Why is uptime important for the client?"
+     ],
+     "wrapUp": {
+      "prompt": "Agora descreva a cena para o professor em 3 ou 4 frases, como se fosse mostrar o data center da Racional ao cliente.",
+      "model": "This is a big data center. I see many machines and equipment. The place has a strong cooling system, so the servers do not overheat. This is a hyperscale project with high uptime for the client.",
+      "teacherNote": "Estimule frases completas e o vocabulário-alvo: 'cooling system', 'overheat', 'hyperscale', 'uptime'. Corrija artigos ('a', 'the') com gentileza."
+     }
+    }
+   ]
   },
   {
    "num": 67,
@@ -16631,7 +17819,115 @@
     "tip": "Arrastado (drawl) e o clássico 'y'all' (= you all), com as vogais bem alongadas.",
     "sample": "Y'all have a great day now — we'll talk real soon.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, você vai apresentar a avaliação de desempenho de um fornecedor da obra do hospital. Em inglês simples, diga o que foi bem, o que precisa melhorar e qual a próxima ação. Monte seu pitch seguindo os 6 passos abaixo.",
+     "frame": [
+      {
+       "label": "Diga quem é o fornecedor e o que ele faz na obra",
+       "hint": "This is the performance review of our steel supplier for the hospital project."
+      },
+      {
+       "label": "Mostre um ponto acima das expectativas",
+       "hint": "Their on-time delivery is above expectations. They are on track."
+      },
+      {
+       "label": "Mostre um ponto que ficou abaixo da meta",
+       "hint": "Their quality is below target. Some parts have small problems."
+      },
+      {
+       "label": "Cite um KPI ou número simples",
+       "hint": "Our main KPI is on-time delivery. This month it is 95%."
+      },
+      {
+       "label": "Diga o impacto na obra (prazo e custo)",
+       "hint": "Good delivery keeps the hospital project on time and on budget."
+      },
+      {
+       "label": "Diga a próxima ação",
+       "hint": "Next action: we will have a call next week to fix the quality issue."
+      }
+     ],
+     "model": "Good morning. This is the performance review of our steel supplier for the hospital project. Their on-time delivery is above expectations, so we are on track. But their quality is below target, because some parts have small problems. Our main KPI is on-time delivery, and this month it is 95%. Good delivery keeps the project on time and on budget. Next action: we will have a call next week to fix the quality issue.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, sem ler. Fale devagar e use as palavras da aula (above expectations, below target, on track, KPI).",
+      "model": "This is the supplier performance review. Delivery is above expectations and on track. Quality is below target. Our KPI is on-time delivery, 95% this month. Next action is a call next week.",
+      "teacherNote": "Peça que ele use pelo menos 'above expectations', 'below target' e 'next action'. Corrija a ordem boa-ruim-ação no final."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, agora é uma mini-reunião de avaliação de fornecedor para a obra do Data Center. Use as funções abaixo para conduzir a reunião em inglês simples.",
+     "functions": [
+      {
+       "label": "acompanhar (abrir e guiar a reunião)",
+       "phrases": [
+        "Today we review the supplier performance for the Data Center.",
+        "Let's look at the on-time delivery first."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you explain this KPI?",
+        "What does 'below target' mean here?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "So delivery is on track. Is that correct?",
+        "OK, so quality is below target."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think their delivery is above expectations.",
+        "In my opinion, the price is good."
+       ]
+      },
+      {
+       "label": "interagir (combinar a próxima ação)",
+       "phrases": [
+        "Let's set the next action.",
+        "Can you send the report by Friday?"
+       ]
+      }
+     ],
+     "task": "Simule uma reunião de 5 minutos: o professor é o fornecedor do Data Center. Você abre a reunião, mostra dois KPIs (entrega e qualidade), diz o que está acima das expectativas e o que está abaixo da meta, e fecha com a próxima ação.",
+     "wrapUp": {
+      "prompt": "Relate a reunião ao professor em 3-4 frases: o que foi avaliado e o que foi combinado.",
+      "model": "We reviewed the Data Center supplier. Their delivery is on track and above expectations. Their quality is below target. The next action is to send a report by Friday.",
+      "teacherNote": "Verifique se ele usa 'on track', 'above expectations' e 'below target' corretamente. Reforce a função de confirmar ('Is that correct?')."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "A team of people in a meeting room reviewing documents together at a table."
+     },
+     "instruction": "Olhe a foto. Imagine que é a reunião de avaliação de desempenho do fornecedor do hospital. Responda as perguntas em inglês simples.",
+     "questions": [
+      "How many people are in the picture?",
+      "Where are they? Are they in a meeting?",
+      "What are they looking at?",
+      "Is this a performance review meeting?",
+      "Who is the Contract Manager in this picture?",
+      "Is the supplier on track or below target?",
+      "What is one good KPI for this supplier?",
+      "What is the next action after the meeting?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3-4 frases, como se fosse a sua reunião de avaliação de fornecedor.",
+      "model": "In the picture, a team is in a meeting room. They are reviewing the supplier performance for the hospital. The Contract Manager says delivery is above expectations but quality is below target. The next action is a new call next week.",
+      "teacherNote": "Aceite frases curtas. Incentive o uso de 'review', 'on track', 'next action'. Peça que ligue a cena ao papel dele na Racional."
+     }
+    }
+   ]
   },
   {
    "num": 73,
@@ -17971,7 +19267,115 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que a obra do hospital atrasou e você precisa apresentar o plano de recuperação de prazo para o cliente norte-americano. Monte um pitch curto e simples, em inglês, explicando o atraso, a causa e as ações para voltar ao cronograma.",
+     "frame": [
+      {
+       "label": "Cumprimente e abra o assunto",
+       "hint": "Good morning. Thank you for your time. I want to talk about the schedule."
+      },
+      {
+       "label": "Diga qual obra e a situação",
+       "hint": "We have a small delay on the hospital project here at Racional."
+      },
+      {
+       "label": "Explique a causa-raiz",
+       "hint": "The root cause is a late delivery of materials."
+      },
+      {
+       "label": "Apresente a ação principal",
+       "hint": "We have a recovery plan to catch up."
+      },
+      {
+       "label": "Liste 2 ações concretas",
+       "hint": "We will add a crew and work an extra shift."
+      },
+      {
+       "label": "Feche com confiança",
+       "hint": "We will recover time and finish on schedule."
+      }
+     ],
+     "model": "Good morning. Thank you for your time. I am Fernando, the Contract Manager at Racional. We have a small delay on the hospital project. The root cause is a late delivery of materials. But we have a recovery plan to catch up. We will add a crew and work an extra shift. We will fast-track some activities and recover time. The project will finish on schedule. Thank you.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, sem ler o modelo. Fale devagar, em inglês simples, como se o cliente do hospital estivesse na sala.",
+      "model": "Good morning. I am Fernando from Racional. We have a small delay on the hospital project. The root cause is late materials. We have a recovery plan. We will add a crew and work an extra shift to catch up. We will finish on schedule.",
+      "teacherNote": "Foque em frases curtas no presente e futuro simples (will). Corrija a pronúncia de 'delay', 'crew' e 'schedule'. Garanta que ele use 3 itens do vocabulário: recovery plan, delay, catch up."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, agora é uma mini-reunião de status com o cliente do data center. O tema é o atraso e o plano de recuperação. Use as funções abaixo para participar bem da reunião em inglês simples.",
+     "functions": [
+      {
+       "label": "Acompanhar / dar status",
+       "phrases": [
+        "We have a two-week delay on the data center.",
+        "Here is the recovery plan."
+       ]
+      },
+      {
+       "label": "Pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you repeat the new date?",
+        "What is the root cause, please?"
+       ]
+      },
+      {
+       "label": "Confirmar",
+       "phrases": [
+        "Yes, we will add a crew next week.",
+        "Correct, we work an extra shift on Saturday."
+       ]
+      },
+      {
+       "label": "Opinar",
+       "phrases": [
+        "I think we can fast-track the electrical work.",
+        "In my opinion, we will catch up in two weeks."
+       ]
+      },
+      {
+       "label": "Interagir / responder",
+       "phrases": [
+        "Good point. Let me check that.",
+        "I agree. We will recover time."
+       ]
+      }
+     ],
+     "task": "Simule uma reunião de 4 minutos com o professor (cliente do data center). Você abre com o status do atraso, explica a causa-raiz, apresenta o plano de recuperação (adicionar equipe, turno extra, acelerar atividades) e responde às perguntas do cliente.",
+     "wrapUp": {
+      "prompt": "Conte para o professor, em inglês simples, como foi a reunião: qual era o atraso, a causa e o que você combinou.",
+      "model": "We had a status meeting about the data center. We have a two-week delay. The root cause is bad weather. We have a recovery plan. We will add a crew and work an extra shift. We will catch up in two weeks.",
+      "teacherNote": "Treine perguntas e respostas curtas. Verifique se Fernando consegue pedir esclarecimento ('Can you repeat?') e confirmar ('Yes, correct'). Corrija 'extra shift' e 'add a crew'."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+      "alt": "Workers and cranes on a large construction site"
+     },
+     "instruction": "Fernando, olhe a foto da obra. Imagine que é o canteiro do hospital da Racional, com um atraso no cronograma. Responda às perguntas em inglês simples.",
+     "questions": [
+      "What do you see in the picture?",
+      "How many workers can you see?",
+      "Is this a hospital or a data center?",
+      "Is the project on schedule or late?",
+      "What is the root cause of the delay?",
+      "What can the team do to catch up?",
+      "Can they work an extra shift?",
+      "When will the project finish?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3 ou 4 frases, em inglês simples, ligando à obra da Racional e ao plano de recuperação.",
+      "model": "This is a construction site. I see workers and a crane. This is the hospital project at Racional. The project has a delay. We have a recovery plan. We will add a crew and work an extra shift to catch up.",
+      "teacherNote": "Estimule frases com 'There is / There are' e 'I see'. Reforce o vocabulário da aula: delay, recovery plan, catch up, add a crew. Aceite frases simples e corrija a ordem das palavras."
+     }
+    }
+   ]
   },
   {
    "num": 79,
@@ -19320,7 +20724,115 @@
      },
      "."
     ]
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Aconteceu um quase-acidente na obra do hospital. Você, Fernando, vai apresentar um resumo rápido da ocorrência ao cliente norte-americano na daily. Monte seu pitch seguindo os passos abaixo. Mantenha o inglês simples (A1+).",
+     "frame": [
+      {
+       "label": "Diga seu nome e função",
+       "hint": "Hi, I am Fernando. I am the Contract Manager at Racional."
+      },
+      {
+       "label": "Diga o que aconteceu",
+       "hint": "Yesterday we had a near miss at the hospital site."
+      },
+      {
+       "label": "Diga se houve lesão",
+       "hint": "Nobody was hurt. There was no injury."
+      },
+      {
+       "label": "Diga a causa-raiz",
+       "hint": "The root cause was a wet floor with no sign."
+      },
+      {
+       "label": "Diga a ação corretiva",
+       "hint": "The corrective action is a new sign and a daily check."
+      },
+      {
+       "label": "Diga a lição aprendida",
+       "hint": "Our lesson learned is to mark every wet floor fast."
+      }
+     ],
+     "model": "Hi, I am Fernando, the Contract Manager at Racional. Yesterday we had a near miss at the hospital site. A worker almost fell on a wet floor, but nobody was hurt and there was no injury. The root cause was a wet floor with no sign. The corrective action is a new sign and a daily check by the team. Our lesson learned is to mark every wet floor fast.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor sem ler o texto. Olhe só os passos em português e fale.",
+      "model": "Hi, I am Fernando from Racional. Yesterday we had a near miss at the hospital. Nobody was hurt. The root cause was a wet floor with no sign. The corrective action is a new sign. Our lesson learned is to mark wet floors fast.",
+      "teacherNote": "Confira se ele usa todos os termos da aula: near miss, injury, root cause, corrective action. Corrija o passado simples (had, was)."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Simulação de reunião de HSE com o cliente sobre uma ocorrência no Data Center. Você vai usar frases para acompanhar, pedir esclarecimento, confirmar, opinar e interagir. Inglês simples (A1+).",
+     "functions": [
+      {
+       "label": "acompanhar (mostrar que está entendendo)",
+       "phrases": [
+        "OK, I understand.",
+        "Yes, I see the problem."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, what was the root cause?",
+        "Can you say that again, please?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, nobody was hurt.",
+        "That is correct, it was a near miss."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think we need a new sign.",
+        "In my opinion, we must report it today."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "What do you think?",
+        "Do you agree with this corrective action?"
+       ]
+      }
+     ],
+     "task": "Faça uma mini-reunião com o professor. Tema: uma ocorrência no Data Center (um cabo no chão). Você (Fernando) reporta o incidente, fala a causa-raiz e propõe uma ação corretiva. O professor faz o papel do cliente e faz perguntas.",
+     "wrapUp": {
+      "prompt": "Conte para o professor como foi a reunião em 3 ou 4 frases.",
+      "model": "We had a meeting about an incident at the Data Center. A cable was on the floor. Nobody was hurt. We agreed on a corrective action: clean the cables every day.",
+      "teacherNote": "Veja se Fernando usa pelo menos uma frase de cada função. Reforce 'I think' e 'Can you say that again, please?'."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+      "alt": "Construction site with workers"
+     },
+     "instruction": "Olhe a foto da obra. Imagine que é um canteiro da Racional. Responda as perguntas em inglês simples (A1+). Pense em segurança e em ocorrências.",
+     "questions": [
+      "What do you see in the picture?",
+      "Where are the workers?",
+      "Is this a safe place? Why?",
+      "Can you see any risk or danger?",
+      "Do the workers wear a helmet?",
+      "Is there a near miss risk here?",
+      "What can cause an incident here?",
+      "What corrective action do you suggest?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3 ou 4 frases. Fale sobre segurança e risco de ocorrência.",
+      "model": "I see a construction site. The workers are at the site. I see a small risk because the floor is not clean. There can be a near miss here. The corrective action is to clean the floor and put a sign.",
+      "teacherNote": "Use as respostas para revisar o vocabulário: incident, near miss, injury, corrective action. Incentive frases curtas e completas."
+     }
+    }
+   ]
   },
   {
    "num": 85,
@@ -20686,7 +22198,115 @@
     "tip": "Em reunião por telefone tudo vem 'colado' e com contrações ('we're gonna', 'we'll'). Treine o encadeamento.",
     "sample": "We're gonna circle back on that and we'll confirm by Friday.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Você é o Fernando, Gerente de Contrato da Racional Engenharia, e foi recebido para jantar pelo cliente americano do projeto do Hospital. No fim da noite, você faz um pequeno discurso de agradecimento. Monte um pitch curto e simples (A1+) usando o vocabulário da aula.",
+     "frame": [
+      {
+       "label": "Cumprimente e agradeça por receber",
+       "hint": "Thank you for having me tonight."
+      },
+      {
+       "label": "Diga que é muito gentil",
+       "hint": "It's very kind of you and your team."
+      },
+      {
+       "label": "Elogie a comida",
+       "hint": "The dinner was delicious."
+      },
+      {
+       "label": "Valorize a hospitalidade",
+       "hint": "I really appreciate your hospitality."
+      },
+      {
+       "label": "Fale do projeto (Hospital)",
+       "hint": "I'm happy to work with you on the Hospital project."
+      },
+      {
+       "label": "Retribua o convite",
+       "hint": "Next time in Brazil, dinner is on me."
+      }
+     ],
+     "model": "Good evening, everyone. Thank you for having me tonight. It's very kind of you and your team. The dinner was delicious and I really appreciate your hospitality. At Racional Engenharia, I am the Contract Manager for the Hospital project, and I am happy to work with you. Next time in Brazil, dinner is on me.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, sem ler. Fale devagar e olhe para frente.",
+      "model": "Thank you for having me. It's very kind of you. The dinner was delicious. I appreciate your hospitality. Next time, dinner is on me.",
+      "teacherNote": "Aceite frases curtas. Reforce 'Thank you for having me' e 'It's very kind of you' com pronúncia tranquila."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Simulação: você está numa mesa de jantar com o cliente americano (time do Data Center). Não é uma reunião formal, é uma conversa à mesa. Use as funções abaixo para participar com naturalidade e cortesia.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "Yes, I see.",
+        "That's interesting."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you say that again?",
+        "What does that mean?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, that's right.",
+        "Exactly, the Data Center project."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think the food is delicious.",
+        "In my opinion, the team is great."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "Thank you, it's very kind of you.",
+        "Let's grab a coffee tomorrow."
+       ]
+      }
+     ],
+     "task": "Faça uma mini-conversa de jantar com o professor: agradeça por receber, elogie a comida, fale do projeto do Data Center e combine de tomar um café no dia seguinte.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi o jantar, em 2 ou 3 frases.",
+      "model": "The dinner was very nice. The client was kind and the food was delicious. We will grab a coffee tomorrow.",
+      "teacherNote": "Foque em cortesia. Corrija só erros que atrapalham. Pratique 'to grab a coffee' e 'hospitality'."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "Business people at a table talking and smiling together"
+     },
+     "instruction": "Olhe a foto. É como um jantar de negócios com o cliente americano. Responda às perguntas em inglês simples (A1+), pensando no Fernando e no projeto do Hospital.",
+     "questions": [
+      "How many people are in the picture?",
+      "Where are they?",
+      "Are they happy?",
+      "What are they doing?",
+      "Is the dinner delicious?",
+      "Who is the host?",
+      "Can you say 'Thank you for having me'?",
+      "Do you like to grab a coffee after a meeting?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3 ou 4 frases, como se você estivesse no jantar.",
+      "model": "This is a business dinner. The people are happy and they talk together. The host is very kind. I say: thank you for having me, the dinner is delicious.",
+      "teacherNote": "Aceite descrições simples. Estimule o uso de 'host', 'kind', 'delicious' e 'thank you for having me'."
+     }
+    }
+   ]
   },
   {
    "num": 91,
@@ -22023,7 +23643,115 @@
     "tip": "O 'r' depois da vogal desaparece: 'park the car' vira 'pahk the cah'. Ouça 'park' e 'car'.",
     "sample": "Park the car and meet us at the site office.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Você é o Gerente de Contrato da Racional e precisa apresentar o status mensal da obra do hospital ao cliente norte-americano. Monte um pitch curto: comece com o resumo, fale do progresso, do orçamento e da segurança. Use as etapas abaixo como guia.",
+     "frame": [
+      {
+       "label": "Cumprimentar e abrir o resumo mensal",
+       "hint": "Good morning. This is the monthly summary for the hospital project."
+      },
+      {
+       "label": "Falar do progresso da obra",
+       "hint": "The progress is good. This month we finished the second floor."
+      },
+      {
+       "label": "Falar do custo",
+       "hint": "I have good news about the cost."
+      },
+      {
+       "label": "Confirmar que está dentro do orçamento",
+       "hint": "The project is within budget. We are not over budget."
+      },
+      {
+       "label": "Falar da segurança do trabalho",
+       "hint": "Safety is very good. We had zero accidents this month."
+      },
+      {
+       "label": "Fechar e abrir para perguntas",
+       "hint": "Thank you. Do you have any questions?"
+      }
+     ],
+     "model": "Good morning. This is the monthly summary for the hospital project. The progress is good. This month we finished the second floor. The cost is also good news: the project is within budget, not over budget. Safety is very good too, with zero accidents this month. Thank you. Do you have any questions?",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch ao professor sem ler. Apresente o status mensal da obra do hospital em poucas frases.",
+      "model": "Good morning. This is the monthly summary for the hospital. The progress is good and we finished the second floor. The project is within budget. Safety is very good, with zero accidents. Thank you.",
+      "teacherNote": "Peça que ele use 'within budget' e 'zero accidents'. Corrija a ordem progresso > custo > segurança. Não exija perfeição, foco em clareza A1+."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Simulação de mini-reunião mensal de status com o cliente norte-americano do data center. Você, como Gerente de Contrato da Racional, apresenta o andamento. Use as funções abaixo para participar da reunião.",
+     "functions": [
+      {
+       "label": "acompanhar (mostrar que está seguindo)",
+       "phrases": [
+        "Yes, I am with you.",
+        "OK, let me show the progress now."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you repeat the question?",
+        "Do you mean the cost or the progress?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, that is correct. We are within budget.",
+        "Right, we had zero accidents this month."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think the progress is very good.",
+        "In my opinion, safety is the most important point."
+       ]
+      },
+      {
+       "label": "interagir (perguntar e responder)",
+       "phrases": [
+        "What do you think about the budget?",
+        "Good question. The cost is OK this month."
+       ]
+      }
+     ],
+     "task": "Faça uma mini-reunião de 3 minutos com o professor no papel de cliente. Você apresenta o resumo mensal do data center: progresso, custo (dentro do orçamento) e segurança. O cliente faz 2 ou 3 perguntas e você responde usando as funções acima.",
+     "wrapUp": {
+      "prompt": "Relate a reunião ao professor em poucas frases: o que você apresentou e o que o cliente perguntou.",
+      "model": "In the meeting, I presented the monthly summary for the data center. I said the progress is good and we are within budget. The client asked about safety, and I said we had zero accidents.",
+      "teacherNote": "Avalie se ele consegue acompanhar e responder perguntas simples. Incentive 'within budget' e 'zero accidents'. Tolere pausas; o objetivo é interação, não fluência."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+      "alt": "A construction site with workers, cranes and a building under construction."
+     },
+     "instruction": "Olhe a foto de uma obra. Imagine que é a obra do hospital da Racional. Responda as perguntas em inglês simples e depois descreva a cena.",
+     "questions": [
+      "What do you see in the picture?",
+      "Is this a construction site?",
+      "How many workers do you see?",
+      "What is the progress of the building?",
+      "Do the workers use safety helmets?",
+      "Is the work safe?",
+      "Is the project within budget or over budget?",
+      "What is your monthly summary for this project?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3 ou 4 frases, como se fosse o status mensal dessa obra.",
+      "model": "This is a construction site. I see workers and a building. The progress is good this month. The workers use safety helmets, so the work is safe. The project is within budget.",
+      "teacherNote": "Peça frases curtas com 'progress', 'safety' e 'within budget'. Corrija ordem das palavras sem interromper a fala. Foco em vocabulário da aula."
+     }
+    }
+   ]
   },
   {
    "num": 97,
@@ -23380,7 +25108,115 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Imagine que a Racional está atrasada na obra do Data Center e você abre uma sessão de brainstorming com a equipe e o cliente norte-americano. Você precisa apresentar uma ideia em poucas frases. Monte seu pitch seguindo os passos abaixo.",
+     "frame": [
+      {
+       "label": "Diga o problema",
+       "hint": "We have a problem on the Data Center site."
+      },
+      {
+       "label": "Proponha uma ideia (to come up with)",
+       "hint": "I came up with one idea to save time."
+      },
+      {
+       "label": "Faça uma sugestão (How about...?)",
+       "hint": "How about we start the test room first?"
+      },
+      {
+       "label": "Lance uma opção (What if...?)",
+       "hint": "What if we add one more team at night?"
+      },
+      {
+       "label": "Diga o benefício",
+       "hint": "This option is faster for the client."
+      },
+      {
+       "label": "Peça opinião",
+       "hint": "What do you think about this idea?"
+      }
+     ],
+     "model": "We have a problem on the Data Center site. The work is two weeks late. I came up with one idea to save time. How about we start the server test room first? What if we add one more team at night? This option is faster, and the hospital client is happy. What do you think?",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor sem ler. Fale o problema, sua ideia e peça a opinião dele.",
+      "model": "We are late on the Data Center. I came up with one idea. How about we start the test room first? What do you think?",
+      "teacherNote": "Aceite frases curtas. Corrija só 'How about + verbo' e 'What if + sujeito + verbo'. Elogie quando ele pedir opinião."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Você vai simular uma mini-reunião de brainstorming com a equipe da Racional e o cliente. Use as funções e frases abaixo para participar, propor ideias e construir sobre as ideias dos outros.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "So, the topic today is the Data Center delay.",
+        "OK, let's brainstorm now."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, what do you mean?",
+        "Can you say that again, please?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, that is a good point.",
+        "OK, I agree with this option."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think we need one more team.",
+        "In my opinion, the test room comes first."
+       ]
+      },
+      {
+       "label": "interagir / construir sobre",
+       "phrases": [
+        "I want to build on your idea.",
+        "How about we also call the client today?"
+       ]
+      }
+     ],
+     "task": "Faça uma reunião de 5 minutos com o professor. O tema é: como recuperar o atraso na obra do Data Center. Cada um lança uma ideia (What if...? / How about...?), constrói sobre a ideia do outro (to build on) e no final vocês escolhem uma opção juntos.",
+     "wrapUp": {
+      "prompt": "Conte ao professor o que foi decidido na reunião. Diga qual opção a equipe escolheu e por quê.",
+      "model": "In the meeting, we had two options. I liked Ana's idea. We chose to start the test room first. This option is faster for the client.",
+      "teacherNote": "Foque em 'to build on' e 'good point'. Deixe Fernando reagir às suas ideias, não só falar as dele. Frases simples bastam."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "A team in a meeting room brainstorming ideas around a table."
+     },
+     "instruction": "Olhe a foto. É uma sessão de brainstorming, como as que você faz na Racional com a equipe e o cliente. Responda as perguntas em inglês simples.",
+     "questions": [
+      "How many people are in the picture?",
+      "Where are they? In an office or on a site?",
+      "Are they in a meeting?",
+      "What do you think they are talking about?",
+      "Is one person sharing an idea?",
+      "Do they look happy or worried?",
+      "Is this like your meetings at Racional?",
+      "What idea can you throw out in this meeting?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3 ou 4 frases, como se fosse uma reunião sua na Racional.",
+      "model": "This is a team in a meeting. They are brainstorming. One person is sharing an idea. They look happy. This is like my meetings at Racional.",
+      "teacherNote": "Aceite present continuous simples ('they are talking'). Incentive o vocabulário da aula: brainstorm, idea, option, good point."
+     }
+    }
+   ]
   },
   {
    "num": 103,
@@ -24739,7 +26575,115 @@
     "tip": "Usa 'like' como muleta no meio da frase e sobe a entonação no fim (uptalk), como se perguntasse.",
     "sample": "It's gonna be, like, a really good project, you know?",
     "voice": "us-female"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Você vai treinar um pitch curto de negociação. Imagine que o cliente americano do projeto do Hospital quer reduzir o prazo. Você precisa abrir a negociação (ancorar), explicar sua posição e propor uma troca usando 'if you... then I...'. Monte o pitch passo a passo e depois fale tudo junto.",
+     "frame": [
+      {
+       "label": "Cumprimente e abra o tema",
+       "hint": "Hello, thank you for your time. I want to talk about the Hospital project schedule."
+      },
+      {
+       "label": "Faça a proposta inicial (ancorar)",
+       "hint": "Our opening offer is to finish the Hospital in 14 months."
+      },
+      {
+       "label": "Explique o porquê",
+       "hint": "This is safe because the Hospital has many systems and we want good quality."
+      },
+      {
+       "label": "Ofereça uma concessão condicional",
+       "hint": "If you give us more workers, then I can finish in 13 months."
+      },
+      {
+       "label": "Peça algo em troca",
+       "hint": "In exchange for a faster schedule, I need a faster payment from your side."
+      },
+      {
+       "label": "Feche e proponha o meio-termo",
+       "hint": "I think we can meet halfway. Can we agree on this plan?"
+      }
+     ],
+     "model": "Hello, thank you for your time. I am the Contract Manager for Racional Engenharia. I want to talk about the Hospital project schedule. Our opening offer is to finish the Hospital in 14 months, because this is safe and the quality is good. If you give us more workers, then I can finish in 13 months. In exchange for a faster schedule, I need a faster payment from your side. I think we can meet halfway and agree on a good plan.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch de negociação para o professor SEM ler o texto. Use suas próprias palavras simples e lembre de ancorar, propor uma troca e fechar.",
+      "model": "Hello, I am Fernando from Racional Engenharia. Our opening offer is 14 months for the Hospital. If you give us more workers, then I can finish faster. In exchange, I need faster payment. Let's meet halfway.",
+      "teacherNote": "Verifique se o Fernando ancora com 'opening offer', usa 'if you... then I...' e fecha com 'meet halfway'. Corrija a ordem das frases se ele inverter a troca."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Você vai simular uma mini-reunião de negociação com o cliente americano sobre o ESCOPO do Data Center. Pratique as funções abaixo. Use frases simples e sempre fale como Gerente de Contrato da Racional.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "So, you want more cameras in the Data Center, right?",
+        "Let me check, you need this for security."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, what is the new scope exactly?",
+        "Can you say that again, please?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, I agree with this point.",
+        "OK, we can do that for the Data Center."
+       ]
+      },
+      {
+       "label": "opinar (ancorar / contrapor)",
+       "phrases": [
+        "My opening offer is to add 10 cameras.",
+        "I think we should counter with a small price."
+       ]
+      },
+      {
+       "label": "interagir (concessão / troca)",
+       "phrases": [
+        "If you accept the price, then I add the cameras.",
+        "I can give ground here, in exchange for more time."
+       ]
+      }
+     ],
+     "task": "Faça uma reunião de 3 a 4 minutos: o cliente quer adicionar câmeras de segurança ao escopo do Data Center sem aumentar o preço. Você abre com uma proposta inicial, pede esclarecimento, confirma os pontos e usa 'if you... then I...' para fazer uma troca. Tente manter a posição (hold firm) no preço, mas ceda um pouco (give ground) no prazo.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: o que o cliente pediu, qual foi sua proposta inicial e a troca que você fez.",
+      "model": "We talked about the Data Center scope. The client wanted more cameras. My opening offer was 10 cameras. I held firm on the price, but I gave ground on time. If they pay more, then I add the cameras.",
+      "teacherNote": "Confira o uso de 'hold firm', 'give ground' e 'in exchange for'. Incentive frases curtas e claras; corrija pronúncia de 'exchange' e 'counter'."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=900&q=80",
+      "alt": "Two people shaking hands after a business deal."
+     },
+     "instruction": "Olhe a foto de um aperto de mão depois de um acordo. Imagine que é o Fernando fechando uma negociação com o cliente do Hospital. Responda às perguntas em inglês simples.",
+     "questions": [
+      "What do you see in the picture?",
+      "Who are these two people?",
+      "Are they happy or angry?",
+      "What did they agree on?",
+      "Did they meet halfway?",
+      "What was the opening offer?",
+      "Did Fernando hold firm or give ground?",
+      "Is this a good deal for Racional?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3 ou 4 frases. Diga quem são as pessoas, o que elas fizeram e como terminou a negociação.",
+      "model": "In the picture, two people shake hands. They are Fernando and the client. They finished the negotiation. They met halfway, so it is a good deal for Racional.",
+      "teacherNote": "Estimule frases completas com 'they shake hands', 'they agree', 'they meet halfway'. Conecte sempre ao papel do Fernando e à Racional."
+     }
+    }
+   ]
   },
   {
    "num": 109,
@@ -26120,7 +28064,115 @@
     "tip": "Arrastado (drawl) e o clássico 'y'all' (= you all), com as vogais bem alongadas.",
     "sample": "Y'all have a great day now — we'll talk real soon.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que o hospital (cliente norte-americano) está preocupado com um atraso na obra. Você precisa abrir uma conversa difícil com calma, sem culpar ninguém, e mostrar um caminho a seguir. Monte um pitch curto e honesto.",
+     "frame": [
+      {
+       "label": "Cumprimentar e abrir o tema com calma",
+       "hint": "Hello, thank you for your time. I want to talk about an important issue."
+      },
+      {
+       "label": "Levantar o problema de forma clara",
+       "hint": "I need to raise an issue about the schedule on the hospital project."
+      },
+      {
+       "label": "Dizer como você se sente, sem culpar",
+       "hint": "I am concerned about the delay, but I do not want to blame anyone."
+      },
+      {
+       "label": "Ser honesto sobre os fatos",
+       "hint": "To be honest, we are two weeks late on the data center area."
+      },
+      {
+       "label": "Propor um caminho a seguir",
+       "hint": "Let's find a good way forward together."
+      },
+      {
+       "label": "Fechar e pedir a opinião do cliente",
+       "hint": "What do you think? I want to hear your view."
+      }
+     ],
+     "model": "Hello, thank you for your time. I want to raise an issue about the hospital project. I am the contract manager at Racional, and I want to be honest with you. We are two weeks late on the data center area, and I am concerned about it. I do not want to blame anyone. Let's find a good way forward together. What do you think?",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch ao professor sem ler o texto. Fale com calma, como em uma conversa difícil de verdade com o cliente.",
+      "model": "Hello, thank you for your time. I want to raise an issue about the hospital project. We are a little late, and I am concerned. I do not want to blame anyone. Let's find a good way forward together.",
+      "teacherNote": "Peça para o Fernando manter um tom calmo e usar 'I am concerned' e 'way forward'. Corrija se ele tentar culpar o cliente."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, agora uma mini-reunião sobre um conflito com um fornecedor. O material chegou errado e atrasou o hospital. Você precisa acompanhar, pedir esclarecimento, confirmar, opinar e interagir com calma.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "I am following the issue.",
+        "Let me check the situation on the project."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Can you explain the problem with the material?",
+        "Sorry, what do you mean exactly?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "So, the wrong material came on Monday. Is that right?",
+        "OK, let me confirm the new date with you."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think we need to be honest about this issue.",
+        "In my opinion, this is a serious conflict for the hospital."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "What do you think we can do?",
+        "I understand. Let's find a way forward together."
+       ]
+      }
+     ],
+     "task": "Simule uma reunião de 5 minutos entre Fernando (Gerente de Contrato da Racional) e o fornecedor. O professor faz o papel do fornecedor. O material chegou errado e atrasou o hospital. Fernando levanta o problema com calma, sem culpar, pede esclarecimento e busca um caminho a seguir.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião em 3 ou 4 frases: qual era o problema, o que vocês decidiram e qual é o próximo passo.",
+      "model": "We had a difficult conversation with the supplier. The wrong material came and the hospital is late. We did not blame anyone. We found a good way forward and we have a new date.",
+      "teacherNote": "Observe se o Fernando usa 'to raise an issue', 'concerned' e 'way forward'. Incentive perguntas de esclarecimento como 'Can you explain...?'."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "People in a meeting room talking around a table with laptops"
+     },
+     "instruction": "Fernando, olhe a foto. É uma conversa difícil em uma reunião, como uma com o cliente do hospital. Responda às perguntas em inglês simples e use o vocabulário da aula.",
+     "questions": [
+      "How many people are in the room?",
+      "Where are the people?",
+      "Are they happy or concerned?",
+      "Do you think this is a difficult conversation?",
+      "Who is talking now?",
+      "What is the issue, in your opinion?",
+      "Is someone trying to blame another person?",
+      "What can they say to find a good way forward?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3 ou 4 frases, como se fosse uma reunião difícil sua com o cliente do hospital.",
+      "model": "In the picture, some people are in a meeting room. They look concerned. I think they have a difficult conversation about an issue. They do not blame anyone and they want a good way forward.",
+      "teacherNote": "Peça frases curtas e completas. Reforce 'concerned', 'issue', 'difficult conversation' e 'way forward' ligando à realidade do Fernando na Racional."
+     }
+    }
+   ]
   },
   {
    "num": 115,
@@ -27496,7 +29548,115 @@
     "tip": "Vogal 'aw' bem aberta: 'coffee' soa como 'CAW-fee' e 'talk' como 'tawk'. Ouça as duas palavras na frase.",
     "sample": "I'm gonna grab a coffee, and then we can talk.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, no jantar com o cliente americano do Hospital ou do Data Center, falar de viagens é a conversa mais fácil e calorosa. Monte um pequeno pitch contando uma história de viagem sua e perguntando sobre os destinos do cliente.",
+     "frame": [
+      {
+       "label": "Quebre o gelo com uma pergunta",
+       "hint": "Have you been to Brazil?"
+      },
+      {
+       "label": "Conte para onde você foi de férias",
+       "hint": "Last year I went on vacation to the south of Brazil."
+      },
+      {
+       "label": "Diga o que o destino tinha de bom",
+       "hint": "It was a stunning place with mountains and good weather."
+      },
+      {
+       "label": "Fale do que você fez lá",
+       "hint": "I did some sightseeing and I tried the local food."
+      },
+      {
+       "label": "Diga por que gostou",
+       "hint": "The people were very friendly and the city was calm."
+      },
+      {
+       "label": "Devolva a conversa para o cliente",
+       "hint": "What is your favorite destination in the US?"
+      }
+     ],
+     "model": "Have you been to Brazil? Last year I went on vacation to the south of Brazil with my family. It was a stunning place with green mountains and nice weather. I did some sightseeing and I tried a lot of local food. The people were very friendly, so I want to go back. What is your favorite destination in the US?",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor sem ler. Conte sua história de viagem e termine perguntando sobre um destino do cliente.",
+      "model": "Have you been to Brazil? Last year I went on vacation to the south. It was a stunning place. I tried the local food and the people were very friendly. What is your favorite destination?",
+      "teacherNote": "Foque em frases curtas e na pronúncia de 'stunning', 'sightseeing' e 'destination'. Corrija o uso de 'went' (passado de go) com gentileza."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, imagine uma conversa informal num voo ou no jantar com o gerente do cliente do Data Center. Vocês trocam histórias de viagem. Use estas funções para manter a conversa viva em inglês simples.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "Oh, that sounds nice!",
+        "And then what did you do?"
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, where is that city?",
+        "Can you say that destination again?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "So you went there last summer, right?",
+        "OK, so the local food was great."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think that is a stunning place.",
+        "For me, sightseeing is the best part."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "Have you been to Rio?",
+        "You should go on vacation to Brazil!"
+       ]
+      }
+     ],
+     "task": "Simule uma mini-reunião informal de 3 minutos com o professor no papel do cliente americano. Falem sobre destinos favoritos e histórias de viagem. Fernando deve usar pelo menos uma frase de cada função (acompanhar, pedir esclarecimento, confirmar, opinar e interagir).",
+     "wrapUp": {
+      "prompt": "Relate a conversa ao professor: conte para onde o cliente viajou e qual destino você recomendou para ele.",
+      "model": "The client went on vacation to Italy last year. He said the local food was stunning. I told him he should visit Brazil. It was a friendly talk.",
+      "teacherNote": "Observe se Fernando reage de forma natural (acompanhar) em vez de só responder. Reforce 'Have you been to...?' como abertura de conversa."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80",
+      "alt": "An airplane wing over the clouds, seen from a window seat during a flight."
+     },
+     "instruction": "Fernando, olhe a foto. Imagine que você está neste voo, indo encontrar o cliente do Hospital nos Estados Unidos. Responda as perguntas em inglês simples.",
+     "questions": [
+      "Where is this airplane?",
+      "Is the sky blue or grey?",
+      "Do you like to travel by plane?",
+      "Where are you going on this flight?",
+      "Have you been to the United States?",
+      "What is your favorite destination?",
+      "Do you do sightseeing when you travel?",
+      "Do you like the local food when you go on vacation?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3 ou 4 frases: onde você está, para onde vai e o que sente sobre a viagem.",
+      "model": "I am on a plane. The sky is blue and the clouds are white. I am flying to the US to meet my client. I like to travel and see new places.",
+      "teacherNote": "Incentive Fernando a usar 'I am flying to...' e o vocabulário de viagem. Aceite respostas curtas, mas peça uma frase completa quando possível."
+     }
+    }
+   ]
   },
   {
    "num": 121,
@@ -28841,7 +31001,115 @@
     "tip": "Ritmo silábico (cada sílaba bem marcada) e expressões próprias de negócios: 'kindly' (= por favor) e 'revert' (= responder).",
     "sample": "Kindly share the update and we will revert to you by end of day.",
     "voice": "us-female"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, o cliente norte-americano nem sempre conhece a realidade do Brasil. Monte um pitch curto para explicar uma realidade local da obra do Data Center e propor uma solução prática. Use inglês simples (A1+).",
+     "frame": [
+      {
+       "label": "Apresentar-se e dizer seu papel",
+       "hint": "Hi, I am Fernando, the Contract Manager at Racional Engenharia."
+      },
+      {
+       "label": "Apresentar o tema (realidade local)",
+       "hint": "Today I want to explain a local reality of our Data Center project."
+      },
+      {
+       "label": "Explicar a restrição (constraint)",
+       "hint": "In Brazil, the lead time for imported equipment is long."
+      },
+      {
+       "label": "Dar a razão / contexto BR",
+       "hint": "We have the rainy season and we need to follow the local standard."
+      },
+      {
+       "label": "Propor a solução prática (workaround)",
+       "hint": "My idea is to use a local supplier and adapt to the local reality."
+      },
+      {
+       "label": "Fechar e pedir aprovação",
+       "hint": "This is a good workaround for us. Do you agree with this plan?"
+      }
+     ],
+     "model": "Hi, I am Fernando, the Contract Manager at Racional Engenharia. Today I want to explain a local reality of our Data Center project. In Brazil, the lead time to import equipment is very long, and we have the rainy season now. We also need to follow the local standard for safety. My idea is to use a local supplier and adapt to the local reality. This is a simple workaround, and it is good for the schedule. Do you agree with this plan?",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, sem ler. Apresente-se, explique a realidade local e proponha a solução.",
+      "model": "Hi, I am Fernando from Racional. The lead time to import is long, so my idea is to use a local supplier. It is a good workaround for our Data Center project.",
+      "teacherNote": "Confira se Fernando usa 'lead time', 'local supplier', 'workaround' e 'local reality'. Corrija a pronúncia de 'lead time' e 'constraint'. Reforce frases curtas A1+."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Vamos simular uma mini-reunião com o cliente do Hospital. Você vai explicar realidades do Brasil e propor soluções. Use as funções abaixo para participar bem da reunião.",
+     "functions": [
+      {
+       "label": "acompanhar (mostrar que está seguindo)",
+       "phrases": [
+        "Yes, I understand.",
+        "OK, I am with you."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you repeat the lead time?",
+        "What do you mean by 'local standard'?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, that is correct.",
+        "So, we use a local supplier. Right?"
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think the rainy season is a big constraint.",
+        "In my opinion, the workaround is good for us."
+       ]
+      },
+      {
+       "label": "interagir / propor",
+       "phrases": [
+        "Can we adapt to the local reality?",
+        "Let's import only the special parts."
+       ]
+      }
+     ],
+     "task": "Simule uma reunião de 4 minutos sobre o Hospital. O professor é o cliente norte-americano. Você explica duas realidades do Brasil (lead time longo e estação chuvosa) e propõe um workaround com fornecedor local. Use pelo menos uma frase de cada função.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião em 3-4 frases: o que você explicou e o que você propôs.",
+      "model": "In the meeting, I explained two local realities. The lead time to import is long and we have the rainy season. I proposed a workaround with a local supplier. The client agreed with the plan.",
+      "teacherNote": "Observe se Fernando usa frases de cada função (acompanhar, esclarecer, confirmar, opinar, interagir). Estimule perguntas curtas de esclarecimento. Vocabulário-alvo: constraint, workaround, local supplier, lead time."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "People in a business meeting talking around a table"
+     },
+     "instruction": "Olhe a foto desta reunião. Imagine que é a reunião onde Fernando explica as realidades do Brasil ao cliente. Responda às perguntas em inglês simples.",
+     "questions": [
+      "How many people are in the meeting?",
+      "Where are the people?",
+      "What are they doing?",
+      "Who is the Contract Manager? Where is Fernando?",
+      "Is this an online call or a real meeting?",
+      "What can Fernando explain about Brazil here?",
+      "Do they look happy or serious?",
+      "What is a good workaround for the project?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3-4 frases. Diga onde estão, o que fazem e o que Fernando explica.",
+      "model": "In the picture, some people are in a meeting. They are at a table in the office. They talk about the project. Fernando, the Contract Manager, explains the lead time and the local reality of Brazil.",
+      "teacherNote": "Aceite descrições simples com 'there is / there are' e present continuous. Reforce o vocabulário da aula: local reality, lead time, workaround. Corrija plural e preposições de lugar (at, in)."
+     }
+    }
+   ]
   },
   {
    "num": 127,
@@ -30209,7 +32477,115 @@
     "tip": "Em reunião por telefone tudo vem 'colado' e com contrações ('we're gonna', 'we'll'). Treine o encadeamento.",
     "sample": "We're gonna circle back on that and we'll confirm by Friday.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, imagine que a reunião semanal com o cliente norte-americano do Data Center acabou. Você precisa apresentar a ata em 4-6 frases simples: o que foi falado, os itens de ação, quem é o responsável e o prazo. Monte seu pitch seguindo os passos abaixo.",
+     "frame": [
+      {
+       "label": "Diga o nome e o tema da reunião",
+       "hint": "This is the weekly meeting with the US client about the Data Center."
+      },
+      {
+       "label": "Diga quantos itens de ação você anotou na ata",
+       "hint": "In the meeting minutes I have three action items."
+      },
+      {
+       "label": "Diga o primeiro item e o responsável",
+       "hint": "The first action item is the safety report. The owner is Carlos."
+      },
+      {
+       "label": "Diga o prazo desse item",
+       "hint": "The due date is Friday."
+      },
+      {
+       "label": "Diga o status de um item (feito, em andamento ou pendente)",
+       "hint": "The electrical test is in progress. The cooling check is still pending."
+      },
+      {
+       "label": "Diga o próximo passo",
+       "hint": "I will send the meeting minutes to the team today."
+      }
+     ],
+     "model": "Good morning. This is the weekly meeting with our US client about the Data Center. In the meeting minutes I have three action items. The first action item is the safety report, and the owner is Carlos, with a due date on Friday. The electrical test is in progress, but the cooling check is still pending. I will send the meeting minutes to all the team today.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor sem ler. Fale sobre a ata da reunião do Data Center, os itens de ação, os responsáveis e os prazos.",
+      "model": "This is the weekly meeting about the Data Center. I have three action items. Carlos is the owner of the safety report, due on Friday. The electrical test is in progress and the cooling check is pending. I will send the minutes today.",
+      "teacherNote": "Peça que o Fernando use 'action item', 'owner', 'due date' e pelo menos um status (done / in progress / pending). Corrija a pronúncia de 'due date' e 'minutes'."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, vamos simular uma reunião curta na obra do Hospital. Você é o Gerente de Contrato e precisa registrar a ata com itens de ação. Use as frases abaixo para acompanhar a conversa, pedir esclarecimento, confirmar, opinar e interagir.",
+     "functions": [
+      {
+       "label": "Acompanhar (anotar a ata)",
+       "phrases": [
+        "Let me write this in the meeting minutes.",
+        "I am taking notes for the minutes."
+       ]
+      },
+      {
+       "label": "Pedir esclarecimento",
+       "phrases": [
+        "Sorry, who is the owner of this action item?",
+        "What is the due date for the Hospital report?"
+       ]
+      },
+      {
+       "label": "Confirmar",
+       "phrases": [
+        "OK, so the owner is Ana and the due date is Monday.",
+        "Yes, I will assign this action item to the site team."
+       ]
+      },
+      {
+       "label": "Opinar",
+       "phrases": [
+        "I think this action item is urgent for the Hospital.",
+        "In my opinion, we need more time for the test."
+       ]
+      },
+      {
+       "label": "Interagir",
+       "phrases": [
+        "And you, Carlos, is your task done or in progress?",
+        "Can you give me the status, please?"
+       ]
+      }
+     ],
+     "task": "Simule uma mini-reunião de 5 minutos sobre a obra do Hospital. O professor faz o papel de um colega da equipe. Fernando deve: abrir a reunião, anotar 3 itens de ação na ata, perguntar o responsável (owner) e o prazo (due date) de cada um, e fechar pedindo o status (done / in progress / pending) de um item.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: quantos itens de ação ficaram na ata, quem são os responsáveis e quais estão feitos, em andamento ou pendentes.",
+      "model": "In the meeting we had three action items. Ana is the owner of the Hospital report, due on Monday. The water test is in progress. The fire alarm check is done. The cleaning task is still pending.",
+      "teacherNote": "Verifique se o Fernando atribui um 'owner' e um 'due date' para cada item e usa os três status. Reforce 'to assign' e 'pending'."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "A team in a meeting room around a table, taking notes."
+     },
+     "instruction": "Fernando, olhe a foto desta reunião. Imagine que é a reunião semanal do contrato do Hospital com o cliente norte-americano. Responda as perguntas em inglês simples e pense na ata e nos itens de ação.",
+     "questions": [
+      "How many people are in the meeting?",
+      "Where are they? Are they in an office or on the site?",
+      "Who is writing the meeting minutes?",
+      "What is the topic? Is it the Hospital or the Data Center?",
+      "Is the team talking about action items?",
+      "Who is the owner of the first action item?",
+      "What is the due date for this task?",
+      "Is the work done, in progress, or pending?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3-4 frases. Diga quem está na reunião, sobre o que falam e o que você anota na ata.",
+      "model": "This is a meeting with my team. We talk about the Hospital contract. One person writes the meeting minutes. We have two action items, and Ana is the owner of the first one, due on Friday.",
+      "teacherNote": "Incentive frases curtas no presente simples. Cobre o uso de 'meeting minutes', 'action item', 'owner' e 'due date' ao descrever a foto."
+     }
+    }
+   ]
   },
   {
    "num": 133,
@@ -31557,7 +33933,115 @@
     "tip": "O 'r' depois da vogal desaparece: 'park the car' vira 'pahk the cah'. Ouça 'park' e 'car'.",
     "sample": "Park the car and meet us at the site office.",
     "voice": "us-male"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Você vai abrir uma sessão de lições aprendidas (lessons learned) no final da obra do hospital, com o cliente norte-americano na sala. Monte um pitch curto e simples para apresentar os principais pontos.",
+     "frame": [
+      {
+       "label": "Apresente-se e diga o objetivo",
+       "hint": "Hi, I am Fernando, the Contract Manager at Racional. Today we review our lessons learned."
+      },
+      {
+       "label": "Diga o que deu certo",
+       "hint": "First, what went well: we finished the hospital rooms on time."
+      },
+      {
+       "label": "Mostre um número ou prazo",
+       "hint": "Our lead time with the supplier was short, only two weeks."
+      },
+      {
+       "label": "Diga o que melhorar",
+       "hint": "Now, room for improvement: we need to improve our daily reports."
+      },
+      {
+       "label": "Aponte a causa raiz",
+       "hint": "The root cause was a late material order."
+      },
+      {
+       "label": "Feche com o aprendizado e o próximo passo",
+       "hint": "The big takeaway is: order materials early. Next, we use this on the data center."
+      }
+     ],
+     "model": "Hi, I am Fernando, the Contract Manager at Racional. Today we review our lessons learned from the hospital project. First, what went well: we finished the rooms on time, and our lead time with the supplier was short. Now, room for improvement: we need to improve our daily reports for the client. The root cause was a late material order. The big takeaway is simple: we order materials early. Next, we use this lesson on the new data center project. Thank you.",
+     "wrapUp": {
+      "prompt": "Agora faça o pitch para o professor, sem ler. Olhe para ele e fale com calma sobre o que deu certo, o que melhorar e o próximo passo.",
+      "model": "Hi, I am Fernando from Racional. Today we review our lessons learned. What went well: we finished on time. Room for improvement: better reports. The takeaway is: order materials early. Next, we use this on the data center.",
+      "teacherNote": "Peça que Fernando fale sem ler o frame. Reforce as palavras-chave da aula: what went well, room for improvement, root cause, takeaway, lead time."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Simulação de uma mini-reunião de lições aprendidas na Racional. Fernando conduz e o professor faz o papel do cliente do hospital. Use as funções abaixo para acompanhar, opinar e confirmar.",
+     "functions": [
+      {
+       "label": "Acompanhar / abrir a sessão",
+       "phrases": [
+        "Let's review our lessons learned today.",
+        "Let's start with what went well."
+       ]
+      },
+      {
+       "label": "Pedir esclarecimento",
+       "phrases": [
+        "Sorry, what was the root cause?",
+        "Can you explain the lead time, please?"
+       ]
+      },
+      {
+       "label": "Confirmar",
+       "phrases": [
+        "Yes, that is correct.",
+        "OK, I agree, that went well."
+       ]
+      },
+      {
+       "label": "Opinar",
+       "phrases": [
+        "I think we have room for improvement here.",
+        "In my opinion, the reports were the problem."
+       ]
+      },
+      {
+       "label": "Interagir / fechar",
+       "phrases": [
+        "My takeaway is: order early.",
+        "Next, we use this on the data center."
+       ]
+      }
+     ],
+     "task": "Faça uma reunião de 4 a 5 minutos sobre a obra do hospital. Fernando abre a sessão, lista o que deu certo, pergunta a causa raiz de um atraso, dá uma opinião sobre o que melhorar e fecha com o aprendizado (takeaway) e o próximo passo no data center.",
+     "wrapUp": {
+      "prompt": "Conte para o professor como foi a reunião: o que deu certo, o que vocês decidiram melhorar e qual foi o aprendizado.",
+      "model": "In the meeting, we reviewed the hospital project. What went well: we finished on time. We have room for improvement in our reports. The root cause was a late order. My takeaway is: we order materials early. Next, we use this on the data center.",
+      "teacherNote": "Faça o papel do cliente americano. Force Fernando a usar lessons learned, what went well, room for improvement e takeaway. Corrija frases longas demais; mantenha no nível A1+."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80",
+      "alt": "A team in a meeting room talking around a table"
+     },
+     "instruction": "Olhe para a foto. Imagine que é a sessão de lições aprendidas da Racional, no final da obra do hospital. Responda às perguntas em inglês simples.",
+     "questions": [
+      "How many people are in the room?",
+      "What are they doing?",
+      "Is this a lessons-learned session? Why?",
+      "Who is the Contract Manager? What does he say?",
+      "What went well on the project?",
+      "What is the room for improvement?",
+      "What is the root cause of a problem?",
+      "What is the big takeaway for the data center?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena para o professor em 3 ou 4 frases. Diga quem está na sala, o que eles fazem e qual é o aprendizado.",
+      "model": "This is a meeting room at Racional. The team has a lessons-learned session for the hospital. They review what went well and the room for improvement. The takeaway is: order materials early for the data center.",
+      "teacherNote": "Deixe Fernando descrever a cena livremente. Reforce o vocabulário da aula e o presente simples. Aceite frases curtas e claras (A1+)."
+     }
+    }
+   ]
   },
   {
    "num": 139,
@@ -32706,7 +35190,115 @@
     "tip": "O sotaque 'neutro' do noticiário: claro, com o 'r' bem pronunciado. É o mais fácil de entender.",
     "sample": "Let's go over the schedule and the next steps.",
     "voice": "us-female"
-   }
+   },
+   "activities": [
+    {
+     "kind": "pitch",
+     "intro": "Fernando, você é Gerente de Contrato na Racional. A obra do edifício corporativo (a nova sede do cliente norte-americano) está pronta. Agora você faz a entrega final ao cliente. Prepare um pitch curto que mostra o resultado, o prazo, o custo e o ROI.",
+     "frame": [
+      {
+       "label": "Cumprimente e abra a entrega",
+       "hint": "Good morning. Today Racional hands over your new headquarters."
+      },
+      {
+       "label": "Apresente o projeto entregue",
+       "hint": "We finished the corporate building, your new headquarters in the US."
+      },
+      {
+       "label": "Confirme prazo e custo",
+       "hint": "The project is on time and on budget."
+      },
+      {
+       "label": "Mostre a qualidade",
+       "hint": "Our team tested everything to validate quality."
+      },
+      {
+       "label": "Apresente o ROI e a economia",
+       "hint": "The energy savings give you a good ROI and a short payback."
+      },
+      {
+       "label": "Feche e agradeça",
+       "hint": "Thank you for your trust. Racional is proud to hand over this building."
+      }
+     ],
+     "model": "Good morning. Today Racional hands over your new headquarters. We finished the corporate building on time and on budget. Our team tested all systems to validate quality. The energy savings are very good, so the ROI is strong and the payback is short. The building will pay back fast. Thank you for your trust.",
+     "wrapUp": {
+      "prompt": "Faça o pitch ao professor sem ler. Fale como se o cliente americano estivesse na sua frente, na entrega da sede.",
+      "model": "Good morning. Today Racional hands over your new headquarters. The project is on time and on budget. We validated the quality. The energy savings give a strong ROI and a short payback. Thank you.",
+      "teacherNote": "Peça o pitch de memória. Corrija só 'ROI', 'payback', 'hand over' e 'on time and on budget'. Elogie frases curtas e claras."
+     }
+    },
+    {
+     "kind": "meeting",
+     "intro": "Fernando, simule uma reunião final de entrega com o cliente norte-americano. Você, como Gerente de Contrato, conduz a reunião sobre a entrega da sede corporativa: resultados, prazo, custo e ROI.",
+     "functions": [
+      {
+       "label": "acompanhar",
+       "phrases": [
+        "Let's start the handover meeting.",
+        "Now let's look at the ROI."
+       ]
+      },
+      {
+       "label": "pedir esclarecimento",
+       "phrases": [
+        "Sorry, can you repeat the question?",
+        "What do you mean by payback time?"
+       ]
+      },
+      {
+       "label": "confirmar",
+       "phrases": [
+        "Yes, the building is on time and on budget.",
+        "That is correct, we validated the quality."
+       ]
+      },
+      {
+       "label": "opinar",
+       "phrases": [
+        "I think the energy savings are excellent.",
+        "In my opinion, the ROI is very good."
+       ]
+      },
+      {
+       "label": "interagir",
+       "phrases": [
+        "What do you think about the result?",
+        "Do you have any questions about the handover?"
+       ]
+      }
+     ],
+     "task": "Faça uma mini-reunião de 4-5 minutos com o professor. Você abre a reunião, apresenta a entrega da sede, confirma prazo e custo, explica o ROI e o payback, e responde a 2 perguntas do cliente.",
+     "wrapUp": {
+      "prompt": "Conte ao professor como foi a reunião: o que você apresentou e o que o cliente perguntou.",
+      "model": "In the meeting I handed over the headquarters. I said the project is on time and on budget. I explained the ROI and the payback. The client asked about the energy savings, and I answered.",
+      "teacherNote": "Faça o papel do cliente americano. Insira 1 pergunta sobre 'payback' para forçar 'pedir esclarecimento'. Foque vocabulário da aula."
+     }
+    },
+    {
+     "kind": "picture",
+     "image": {
+      "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=900&q=80",
+      "alt": "Two business people shaking hands after closing a deal"
+     },
+     "instruction": "Fernando, olhe a foto. Imagine que é o momento da entrega final da sede corporativa: você, da Racional, aperta a mão do cliente norte-americano. Responda às perguntas em inglês simples.",
+     "questions": [
+      "Who are the two people in the photo?",
+      "What are they doing?",
+      "Is this the handover of the building?",
+      "How do they feel? Happy or sad?",
+      "Is the project on time and on budget?",
+      "Did Racional validate the quality?",
+      "Is the ROI good?",
+      "What do you say to the client at this moment?"
+     ],
+     "wrapUp": {
+      "prompt": "Descreva a cena ao professor em 3-4 frases, como se fosse a sua entrega da sede.",
+      "model": "In the photo, two people shake hands. This is the handover of the headquarters. I give the building to the client. The project is on time and on budget, and the ROI is good.",
+      "teacherNote": "Aceite frases curtas. Reforce 'to hand over', 'headquarters' e 'on time and on budget'. Peça para conectar a cena ao papel de Gerente de Contrato dele."
+     }
+    }
+   ]
   }
  ]
 }
