@@ -17,7 +17,7 @@ export default function BonusReader({ meta, item }) {
       <section className="rc-bonus-hero">
         <div className="rc-bonus-hero-inner rc-wrap-narrow">
           <Link href={`/racional/${meta.id}`} className="rc-back">← {meta.studentName}</Link>
-          <span className="rc-bonus-flag">★ Bônus · sem exercícios</span>
+          <span className="rc-bonus-flag">Bônus · sem exercícios</span>
           <div className="rc-bonus-cat">{item.category} · {item.readMin} min de leitura</div>
           <h1>{item.title}</h1>
         </div>
