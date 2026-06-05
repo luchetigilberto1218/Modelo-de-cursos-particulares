@@ -92,27 +92,7 @@ export default function StudentDashboard({ course }) {
           </div>
         )}
 
-        {/* MATERIAL EXTRA · BÔNUS */}
-        {course.extras?.length > 0 && (
-          <div className="rc-card">
-            <div className="rc-h">Material extra · bônus</div>
-            <p className="rc-prose" style={{ marginBottom: 16 }}>
-              Conteúdo de qualidade para o seu estudo e entretenimento — <strong>sem exercícios</strong>, fora da aula. Aparece a cada 5 lições.
-            </p>
-            <div style={{ display: 'grid', gap: 10 }}>
-              {course.extras.map((e) => (
-                <Link key={e.id} href={`/racional/${course.id}/extra/${e.id}`} className="rc-bonus-row">
-                  <span className="rc-bonus-badge">★ BÔNUS</span>
-                  <span className="rc-bonus-row-body">
-                    <span className="rc-bonus-row-title">{e.title}</span>
-                    <span className="rc-bonus-row-meta">{e.category} · {e.readMin} min · após a aula {String(e.afterLesson).padStart(3, '0')}</span>
-                  </span>
-                  <span className="rc-lesson-soon">ler ›</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Bônus de leitura agora vivem DENTRO das aulas (a cada 2 lições, em inglês). */}
 
         {/* CURRÍCULO + MAPA (com progresso do aluno) */}
         <CurriculumProgress course={course} />

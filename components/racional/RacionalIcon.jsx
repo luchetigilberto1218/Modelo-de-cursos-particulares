@@ -18,6 +18,10 @@ export default function RacionalIcon({ name, size = 18, stroke = 2, style }) {
       return (<svg {...p}><path d="m9 6 6 6-6 6" /></svg>);
     case 'arrow-left':
       return (<svg {...p}><path d="M19 12H5M12 19l-7-7 7-7" /></svg>);
+    case 'image':
+      return (<svg {...p}><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8.5" cy="8.5" r="1.5" /><path d="m21 15-5-5L5 21" /></svg>);
+    case 'cards':
+      return (<svg {...p}><rect x="3" y="5" width="13" height="15" rx="2" /><path d="M8 5V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-1" /></svg>);
     default:
       return null;
   }
