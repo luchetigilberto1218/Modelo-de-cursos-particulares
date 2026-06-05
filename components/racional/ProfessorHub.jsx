@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { RacionalTopBar, RacionalFooter } from './RacionalChrome';
 import { useTeacher, setTeacher } from './access';
+import TeacherCompass from './TeacherCompass';
 
 function initials(name) {
   const p = (name || '').split(' ').filter(Boolean);
@@ -55,9 +56,12 @@ export default function ProfessorHub({ students, professorCode }) {
         ) : (
           <>
             <div className="rc-card" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
-              <div><span className="rc-teacher-tag">MODO PROFESSOR ATIVO</span> <span style={{ fontSize: 14, color: 'var(--rc-mute)' }}>O Teacher's Guide aparece no topo de cada aula.</span></div>
+              <div><span className="rc-teacher-tag">MODO PROFESSOR ATIVO</span> <span style={{ fontSize: 14, color: 'var(--rc-mute)' }}>Ao abrir um aluno você vê <strong>todo o material do aluno</strong> + o seu <strong>Teacher's Guide</strong> no topo de cada aula.</span></div>
               <button className="rc-btn rc-btn-outline" onClick={exitTeacher}>Sair do modo professor</button>
             </div>
+
+            <div style={{ marginTop: 18 }}><TeacherCompass variant="full" /></div>
+
             <div className="rc-section-head" style={{ marginTop: 18 }}><h2>Programas dos alunos</h2></div>
             <div className="rc-student-grid">
               {students.map((s) => (
