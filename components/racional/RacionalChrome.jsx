@@ -1,8 +1,7 @@
-import Link from 'next/link';
-import TeacherExit from './TeacherExit';
+import TopNav from './TopNav';
 
 /* Barra superior com os dois logos nas cores das marcas. */
-export function RacionalTopBar({ showHome = false }) {
+export function RacionalTopBar({ showHome = false, student = false }) {
   return (
     <div className="rc-topbar">
       <div className="rc-topbar-logos">
@@ -11,11 +10,7 @@ export function RacionalTopBar({ showHome = false }) {
         <img src="/racional/logo-racional.svg" alt="Racional Engenharia" />
       </div>
       <div className="rc-topbar-right">
-        {showHome && (
-          <Link href="/racional" className="rc-topbar-link">Todos os alunos</Link>
-        )}
-        <Link href="/racional/professor" className="rc-topbar-link">Professor</Link>
-        <TeacherExit />
+        <TopNav showHome={showHome} student={student} />
       </div>
     </div>
   );

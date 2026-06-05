@@ -10,7 +10,7 @@ export default function StudentDashboard({ course }) {
 
   return (
     <>
-      <RacionalTopBar showHome />
+      <RacionalTopBar showHome student />
 
       {/* HERO */}
       <section className="rc-dash-hero" style={{ background: `linear-gradient(135deg, ${meta.accent} 0%, #1C2230 120%)` }}>
@@ -26,15 +26,17 @@ export default function StudentDashboard({ course }) {
                 <span>{meta.universe}</span>
               </div>
             </div>
-            <div className="rc-dash-stats">
-              <div className="rc-dash-stat"><b>{meta.totalLessons}</b><span>Aulas</span></div>
-              <div className="rc-dash-stat"><b>{meta.totalModules}</b><span>Módulos</span></div>
-              <div className="rc-dash-stat"><b>{course.capstoneDetail.length}</b><span>Capstone</span></div>
+            <div className="rc-dash-statcol">
+              <div className="rc-dash-stats">
+                <div className="rc-dash-stat"><b>{meta.totalLessons}</b><span>Aulas</span></div>
+                <div className="rc-dash-stat"><b>{meta.totalModules}</b><span>Módulos</span></div>
+                <div className="rc-dash-stat"><b>{course.capstoneDetail.length}</b><span>Capstone</span></div>
+              </div>
+              <Link href={`/racional/${course.id}/vocabulario`} className="rc-dash-action rc-dash-action-glossary"><Icon name="book" size={15} /> Glossário</Link>
             </div>
           </div>
           <div className="rc-dash-cta-row">
             <ContinueCTA studentId={course.id} accent={meta.accent} lessons={course.lessons.map((l) => ({ num: l.num, title: l.title }))} />
-            <Link href={`/racional/${course.id}/vocabulario`} className="rc-dash-action"><Icon name="book" size={15} /> Glossário</Link>
           </div>
         </div>
       </section>

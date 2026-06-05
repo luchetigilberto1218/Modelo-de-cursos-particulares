@@ -271,13 +271,16 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
 
   return (
     <>
-      <RacionalTopBar showHome />
+      <RacionalTopBar showHome student />
 
       {/* HERO da aula */}
       <section className="rc-lesson-hero" style={{ background: `linear-gradient(135deg, ${accent} 0%, #1C2230 120%)` }}>
         <div className="rc-lesson-hero-bg" style={{ backgroundImage: `url(${meta.hero})` }} />
         <div className="rc-lesson-hero-inner rc-wrap-narrow">
-          <Link href={`/racional/${course.id}`} className="rc-back">← {meta.studentName}</Link>
+          <div className="rc-lesson-backrow">
+            <Link href={`/racional/${course.id}`} className="rc-back">← {meta.studentName}</Link>
+            <Link href={`/racional/${course.id}#rc-curriculo`} className="rc-back rc-back-lessons">{T('Todas as lições', 'All lessons')} ☰</Link>
+          </div>
           <div className="rc-lesson-label">{mod?.code} · {mod?.name} · {T('Aula', 'Lesson')} {pad(lesson.num)}</div>
           <h1>{lesson.title}</h1>
           <span className="rc-chip" style={{ background: 'rgba(255,255,255,0.14)' }}>
@@ -344,6 +347,10 @@ function StepFlow({ screens, courseId, prevNum, nextNum, T, accent }) {
           <Link className="rc-btn rc-btn-primary" style={{ background: accent }} href={`/racional/${courseId}`}>{T('Concluir', 'Finish')} ✓</Link>
         )}
       </div>
+
+      <div className="rc-step-backlessons">
+        <Link href={`/racional/${courseId}#rc-curriculo`} className="rc-continue-link" style={{ color: 'var(--rc-mute)', borderColor: 'var(--rc-line)' }}>← {T('Voltar a todas as lições', 'Back to all lessons')}</Link>
+      </div>
     </>
   );
 }
@@ -380,21 +387,26 @@ function NotYet({ course, lesson, mod, prevNum, nextNum, T, voice }) {
 /* ---------- Recap interativo: marca cada item; ao completar, conclui a aula ---------- */
 function RecapChecklist({ studentId, num, takeaways, voice, T, accent }) {
   const { checks, done, toggle } = useLessonProgress(studentId, num, takeaways.length);
+  const teacher = useTeacher();
   const checkedCount = takeaways.filter((_, i) => checks[i]).length;
+  // Para o ALUNO, marcar é irreversível: uma vez marcado, não desmarca.
+  // O professor pode ajustar (desmarcar) livremente.
+  const handle = (i) => { if (checks[i] && !teacher) return; toggle(i); };
 
   return (
     <div className="rc-recap" style={done ? { borderColor: '#1E7A46', boxShadow: '0 0 0 3px rgba(30,122,70,0.12)' } : null}>
       <div className="rc-recap-head"><Icon name="target" size={20} /> {T('O que eu aprendi nessa lição', 'What I learned in this lesson')}</div>
       <div className="rc-recap-sub">
-        {T('Marque cada frase que você já consegue dizer com confiança. Ao marcar todas, a aula fica registrada como concluída.',
-           'Tick each line you can already say with confidence. Tick them all and the lesson is saved as completed.')}
+        {T('Marque cada frase que você já consegue dizer com confiança — a marcação é definitiva. Ao marcar todas, a aula fica registrada como concluída.',
+           'Tick each line you can already say with confidence — ticking is final. Tick them all and the lesson is saved as completed.')}
         {' '}<b>{checkedCount}/{takeaways.length}</b>
       </div>
       {takeaways.map((t, i) => {
         const on = !!checks[i];
+        const locked = on && !teacher;
         return (
-          <div key={i} className="rc-check-item" onClick={() => toggle(i)} role="checkbox" aria-checked={on} tabIndex={0}
-               onKeyDown={(e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(i); } }}>
+          <div key={i} className={`rc-check-item ${locked ? 'locked' : ''}`} onClick={() => handle(i)} role="checkbox" aria-checked={on} tabIndex={0}
+               onKeyDown={(e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); handle(i); } }}>
             <span className={`rc-check-box ${on ? 'on' : ''}`} style={on ? { background: '#1E7A46', borderColor: '#1E7A46' } : null}>{on ? '✓' : ''}</span>
             <span className="rc-check-text" style={on ? { color: '#1B5E36', fontWeight: 600 } : null}>{t}</span>
             <span onClick={(e) => e.stopPropagation()}><AudioPlayer text={t} voiceType={voice} rate={0.85} label="" small /></span>

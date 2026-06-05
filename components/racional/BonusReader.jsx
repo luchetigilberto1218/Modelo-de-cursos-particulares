@@ -13,7 +13,7 @@ export default function BonusReader({ meta, item }) {
   const voice = VOICE_BY_STUDENT[meta.id] || 'us-male';
   return (
     <>
-      <RacionalTopBar showHome />
+      <RacionalTopBar showHome student />
       <section className="rc-bonus-hero">
         <div className="rc-bonus-hero-inner rc-wrap-narrow">
           <Link href={`/racional/${meta.id}`} className="rc-back">← {meta.studentName}</Link>

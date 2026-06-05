@@ -22,7 +22,6 @@ export default function ContinueCTA({ studentId, lessons, accent }) {
           Aula {pad(next.num)} · {next.title}
         </span>
       </Link>
-      <a href="#rc-curriculo" className="rc-continue-link">ver o desenho do curso ↓</a>
     </div>
   );
 }

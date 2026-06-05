@@ -129,6 +129,9 @@
 .rc-dash-stat span { font-size: 9.5px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.65; }
 .rc-dash-cta-row { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:20px; }
 .rc-dash-cta-row .rc-continue { margin-top:0; }
+.rc-dash-statcol { display:flex; flex-direction:column; gap:10px; align-items:flex-end; }
+.rc-dash-action-glossary { align-self:flex-end; }
+@media (max-width:680px){ .rc-dash-statcol { align-items:flex-start; } .rc-dash-action-glossary { align-self:flex-start; } }
 
 .rc-card {
   background: var(--rc-white); border: 1px solid var(--rc-line); border-radius: 16px;
@@ -518,6 +521,17 @@
 
 /* ---------- Reading + compreensão (BRIDGE Fernando) ---------- */
 .rc-reading { background:#fff; border:1px solid var(--rc-line); border-left:3px solid var(--rc-blue); border-radius:0 12px 12px 0; padding:16px 18px; margin:6px 0 4px; font-size:15.5px; line-height:1.75; color:var(--rc-ink); white-space:pre-line; }
+
+/* ---------- Navegação dentro da aula ---------- */
+.rc-lesson-backrow { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:14px; }
+.rc-lesson-backrow .rc-back { margin-bottom:0; }
+.rc-back-lessons { font-weight:700; border:1px solid rgba(255,255,255,0.35); border-radius:980px; padding:5px 13px; }
+.rc-back-lessons:hover { background:rgba(255,255,255,0.14); }
+.rc-step-backlessons { text-align:center; margin:16px 0 4px; }
+
+/* check de recap travado (aluno não desmarca) */
+.rc-check-item.locked { cursor:default; }
+.rc-check-item.locked .rc-check-box { cursor:default; }
 
 /* ---------- Cards recolhíveis (Lógica pedagógica, Capstone) ---------- */
 .rc-foldable { padding: 0; overflow: hidden; }
