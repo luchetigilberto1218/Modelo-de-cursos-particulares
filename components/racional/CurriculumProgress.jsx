@@ -10,11 +10,9 @@ export default function CurriculumProgress({ course }) {
   const { meta, typeMeta } = course;
   const done = useDoneMap(course.id);
   const tColor = (t) => typeMeta[t]?.color || meta.accent;
-  const cols = course.visualMap?.cols || 12;
   const total = course.lessons.length;
   const doneCount = course.lessons.filter((l) => done[l.num]).length;
   const pct = total ? Math.round((doneCount / total) * 100) : 0;
-  const hasAnyProgress = doneCount > 0;
 
   return (
     <>
@@ -39,8 +37,8 @@ export default function CurriculumProgress({ course }) {
                 <span className="rc-tag" style={{ background: tColor(l.type) }}>{typeMeta[l.type]?.label || l.type}</span>
                 {m && <span title={m.name} style={{ fontSize: 10, fontWeight: 700, color: m.color, border: `1px solid ${m.color}`, borderRadius: 4, padding: '1px 5px', whiteSpace: 'nowrap' }}>{m.code}</span>}
                 <span className="rc-lesson-title">{l.title}</span>
-                {done[l.num] ? <span className="rc-lesson-done">✓ concluída</span>
-                  : l.rich ? <span className="rc-lesson-rich">conteúdo completo</span>
+                {done[l.num] ? <span className="rc-lesson-done">✓ aula concluída</span>
+                  : l.rich ? <span className="rc-lesson-rich">acessar aula {l.num} ›</span>
                   : <span className="rc-lesson-soon">ver aula ›</span>}
               </Link>
             );
@@ -55,35 +53,6 @@ export default function CurriculumProgress({ course }) {
             ))}
           </div>
         )}
-      </div>
-
-      {/* MAPA VISUAL */}
-      <div className="rc-card">
-        <div className="rc-h">Mapa visual do programa · {meta.totalLessons} aulas</div>
-        <div className="rc-map" style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}>
-          {course.lessons.map((l) => {
-            const isDone = !!done[l.num];
-            const cls = hasAnyProgress ? (isDone ? 'done' : 'todo') : '';
-            return (
-              <Link
-                key={l.num}
-                href={`/racional/${course.id}/lesson/${l.num}`}
-                className={`rc-map-cell ${cls}`}
-                style={{ background: tColor(l.type) }}
-                title={`${pad(l.num)} · ${l.title}${isDone ? ' (concluída)' : ''}`}
-              >
-                {isDone && <span className="rc-map-check">✓</span>}
-                <b>{pad(l.num)}</b>
-                <span>{l.mod}</span>
-              </Link>
-            );
-          })}
-        </div>
-        <div className="rc-map-legend">
-          {Object.entries(typeMeta).map(([t, v]) => (
-            <span key={t}><i style={{ background: v.color }} />{v.label}</span>
-          ))}
-        </div>
       </div>
     </>
   );
