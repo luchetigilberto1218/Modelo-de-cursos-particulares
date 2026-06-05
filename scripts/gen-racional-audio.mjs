@@ -53,6 +53,7 @@ const args = Object.fromEntries(process.argv.slice(2).map(a => {
 }));
 const DRY = args.dry === true;
 const FORCE = args.force === true;
+const LIMIT = args.limit ? parseInt(args.limit, 10) : Infinity;
 const ONLY = args.students ? String(args.students).split(',') : Object.keys(VOICE_BY_STUDENT);
 
 function loadApiKey() {
@@ -129,7 +130,8 @@ async function tts(text, voiceId, apiKey) {
 async function run() {
   const manifest = fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, 'utf-8')) : {};
   const clips = collectClips();
-  const todo = clips.filter(c => FORCE || !manifest[c.key]);
+  let todo = clips.filter(c => FORCE || !manifest[c.key]);
+  if (Number.isFinite(LIMIT)) todo = todo.slice(0, LIMIT);
 
   const dist = { us: 0, gb: 0, in: 0 }; let chars = 0, itCount = 0;
   for (const c of todo) { const v = pickVoice(c.text); c.pick = v; dist[v.accent]++; chars += c.text.length; if (v.isIT) itCount++; }
