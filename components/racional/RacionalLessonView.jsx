@@ -14,6 +14,9 @@ import PersonalizedDraft from './PersonalizedDraft';
 import GrammarDeepDive from './GrammarDeepDive';
 import PracticeStudio from './PracticeStudio';
 import ClassroomActivity from './ClassroomActivities';
+import RacionalFlashcards from './RacionalFlashcards';
+import LessonBonus from './LessonBonus';
+import TeacherCompass from './TeacherCompass';
 
 function pad(n) { return String(n).padStart(3, '0'); }
 
@@ -169,6 +172,26 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
       });
     });
 
+    // Tela: Flashcards business (todas as aulas com vocabulário) — deck do vocab + tema
+    if (!isPractice && lesson.vocab?.length) {
+      screens.push({
+        kicker: T('Flashcards', 'Flashcards'),
+        title: T('Flashcards business', 'Business flashcards'),
+        render: () => (
+          <RacionalFlashcards
+            vocab={lesson.vocab}
+            title={lesson.title}
+            image={meta.hero}
+            scene={lesson.flashcards?.scene}
+            voice={voice}
+            level={level}
+            accent={accent}
+            T={T}
+          />
+        ),
+      });
+    }
+
     // Telas: atividades extras (Fabrício) — uma por tela
     if (lesson.activities?.length) {
       const ACT_LABEL = {
@@ -224,6 +247,15 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
       });
     }
 
+    // Tela: Bônus de leitura em inglês (dentro da aula) — a cada 2 aulas
+    if (lesson.bonus) {
+      screens.push({
+        kicker: T(`Bônus · ${lesson.bonus.level || 'A2+'}`, `Bonus · ${lesson.bonus.level || 'A2+'}`),
+        title: lesson.bonus.title || T('Bônus de leitura', 'Bonus read'),
+        render: () => <LessonBonus bonus={lesson.bonus} voice={voice} accent={accent} T={T} />,
+      });
+    }
+
     // Tela final: Recap
     if (lesson.takeaways?.length) {
       screens.push({
@@ -260,7 +292,7 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
 
       {teacher && lesson.teacher && (
         <div className="rc-wrap-narrow" style={{ paddingTop: 20 }}>
-          <TeacherGuide guide={lesson.teacher} lesson={lesson} />
+          <TeacherGuide guide={lesson.teacher} lesson={lesson} studentId={course.id} />
         </div>
       )}
 
@@ -377,7 +409,7 @@ function RecapChecklist({ studentId, num, takeaways, voice, T, accent }) {
 }
 
 /* ---------- Teacher's Guide (visível só no modo professor) ---------- */
-function TeacherGuide({ guide }) {
+function TeacherGuide({ guide, lesson, studentId }) {
   return (
     <details className="rc-teacher-card" open>
       <summary>
@@ -386,6 +418,7 @@ function TeacherGuide({ guide }) {
         <span className="rc-module-chev">›</span>
       </summary>
       <div className="rc-teacher-body">
+        <TeacherCompass variant="banner" studentId={studentId} lesson={lesson} />
         {guide.overview && <p className="rc-teacher-over">{guide.overview}</p>}
         {guide.focus && <p className="rc-teacher-focus"><b>Foco:</b> {guide.focus}</p>}
         {guide.note && <div className="rc-teacher-note">{guide.note}</div>}
@@ -404,6 +437,27 @@ function TeacherGuide({ guide }) {
             <div className="rc-teacher-h">Atenção</div>
             <ul className="rc-teacher-watch">{guide.watch.map((w, i) => <li key={i}>{w}</li>)}</ul>
           </>
+        )}
+        {guide.practiceBank?.length > 0 && (
+          <details className="rc-pbank">
+            <summary>
+              <span className="rc-pbank-tag">BANCO DE PRÁTICA</span>
+              <span className="rc-pbank-sub">{guide.practiceBank.length} atividades extras — use o que precisar; sempre sobra material</span>
+              <span className="rc-module-chev">›</span>
+            </summary>
+            <ol className="rc-pbank-list">
+              {guide.practiceBank.map((a, i) => (
+                <li key={i} className="rc-pbank-item">
+                  <div className="rc-pbank-head">
+                    <span className="rc-pbank-format">{a.format}</span>
+                    {a.min ? <span className="rc-pbank-min">{a.min}'</span> : null}
+                    <b className="rc-pbank-title">{a.title}</b>
+                  </div>
+                  <div className="rc-pbank-how">{a.how}</div>
+                </li>
+              ))}
+            </ol>
+          </details>
         )}
         {guide.richNote && <p className="rc-teacher-rich">{guide.richNote}</p>}
       </div>

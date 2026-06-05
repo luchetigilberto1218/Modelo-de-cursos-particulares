@@ -513,3 +513,76 @@
 
 /* ---------- Reading + compreensão (BRIDGE Fernando) ---------- */
 .rc-reading { background:#fff; border:1px solid var(--rc-line); border-left:3px solid var(--rc-blue); border-radius:0 12px 12px 0; padding:16px 18px; margin:6px 0 4px; font-size:15.5px; line-height:1.75; color:var(--rc-ink); white-space:pre-line; }
+
+/* ---------- Banco de prática (Teacher's Guide) ---------- */
+.rc-pbank { margin:14px 0 4px; border:1px solid var(--rc-line); border-left:4px solid var(--rc-red); border-radius:10px; background:#fff; overflow:hidden; }
+.rc-pbank > summary { display:flex; align-items:center; gap:10px; flex-wrap:wrap; cursor:pointer; padding:11px 14px; list-style:none; }
+.rc-pbank > summary::-webkit-details-marker { display:none; }
+.rc-pbank-tag { font-size:11.5px; font-weight:800; letter-spacing:.5px; color:#fff; background:var(--rc-red); border-radius:999px; padding:3px 10px; }
+.rc-pbank-sub { font-size:13px; color:var(--rc-mute); }
+.rc-pbank[open] > summary .rc-module-chev { transform:rotate(90deg); }
+.rc-pbank > summary .rc-module-chev { margin-left:auto; transition:transform .15s ease; color:var(--rc-red); }
+.rc-pbank-list { margin:0; padding:6px 16px 14px 16px; display:grid; gap:10px; counter-reset:pb; list-style:none; }
+.rc-pbank-item { border-top:1px solid #F0F2F6; padding-top:10px; }
+.rc-pbank-item:first-child { border-top:none; }
+.rc-pbank-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.rc-pbank-format { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.4px; color:var(--rc-blue); background:#EAF2FB; border:1px solid #C3D6F2; border-radius:6px; padding:2px 8px; }
+.rc-pbank-min { font-size:12px; font-weight:700; color:var(--rc-mute); }
+.rc-pbank-title { font-size:14.5px; color:var(--rc-char); }
+.rc-pbank-how { font-size:13.5px; color:var(--rc-text); line-height:1.6; margin-top:4px; }
+
+/* ---------- Bússola Pedagógica (modo professor) ---------- */
+.rc-compass { border-radius:12px; margin:0 0 14px; }
+.rc-compass-banner { background:#FFF8EC; border:1px solid #EAD9B0; border-left:4px solid var(--rc-blue); overflow:hidden; }
+.rc-compass-banner > summary { display:flex; align-items:center; gap:8px; flex-wrap:wrap; cursor:pointer; padding:11px 14px; list-style:none; font-size:13px; }
+.rc-compass-banner > summary::-webkit-details-marker { display:none; }
+.rc-compass-title { font-weight:800; color:var(--rc-blue); text-transform:uppercase; letter-spacing:.4px; font-size:12px; }
+.rc-compass-mini { color:#8A6D3B; font-size:12.5px; }
+.rc-compass-banner[open] > summary .rc-module-chev { transform:rotate(90deg); }
+.rc-compass-banner > summary .rc-module-chev { margin-left:auto; transition:transform .15s ease; color:var(--rc-blue); }
+.rc-compass-list { margin:2px 0 0; padding:0 16px 14px 32px; display:grid; gap:7px; }
+.rc-compass-banner .rc-compass-list { padding-top:4px; }
+.rc-compass-list li { font-size:13.5px; line-height:1.6; color:var(--rc-text); }
+.rc-compass-list li strong { color:var(--rc-char); }
+.rc-compass-full { background:#FFF8EC; border:1px solid #EAD9B0; border-left:4px solid var(--rc-blue); padding:16px 18px; }
+.rc-compass-tag { display:flex; align-items:center; gap:7px; font-weight:800; color:var(--rc-blue); text-transform:uppercase; letter-spacing:.4px; font-size:12.5px; margin-bottom:8px; }
+.rc-compass-lead { font-size:14px; color:var(--rc-text); margin:0 0 10px; }
+.rc-compass-full .rc-compass-list { padding:0 0 0 18px; list-style:disc; }
+/* variante TEÓRICA (Fábio): tom azul para sinalizar 'aula de teoria, sem produção' */
+.rc-compass-theory { background:#EEF3FC; border-color:#C3D6F2; }
+.rc-compass-theory .rc-compass-mini { color:#3A5A8C; }
+
+/* ---------- Flashcards business ---------- */
+.rc-fc { margin:8px 0; }
+.rc-fc-counter { font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; margin:6px 0 12px; }
+.rc-fc-card { position:relative; min-height:200px; display:flex; align-items:center; justify-content:center; text-align:center; background:#fff; border:2px solid var(--rc-blue); border-radius:16px; padding:28px 22px; cursor:pointer; box-shadow:0 6px 20px rgba(16,29,58,.08); transition:transform .12s ease, box-shadow .12s ease; user-select:none; }
+.rc-fc-card:hover { transform:translateY(-2px); box-shadow:0 10px 28px rgba(16,29,58,.13); }
+.rc-fc-card.is-flipped { background:#F7F9FC; }
+.rc-fc-face { display:flex; flex-direction:column; align-items:center; gap:10px; width:100%; }
+.rc-fc-en { font-size:26px; font-weight:800; color:var(--rc-char); line-height:1.2; }
+.rc-fc-hint { font-size:12px; color:var(--rc-mute); }
+.rc-fc-pt { font-size:21px; font-weight:700; color:var(--rc-blue); }
+.rc-fc-ex { font-size:14.5px; color:var(--rc-text); line-height:1.6; max-width:34ch; }
+.rc-fc-ex em { color:var(--rc-mute); font-style:italic; margin-right:4px; }
+.rc-fc-picture { background:#fff; border:2px solid var(--rc-blue); border-radius:16px; overflow:hidden; box-shadow:0 6px 20px rgba(16,29,58,.08); }
+.rc-fc-img { height:150px; background-size:cover; background-position:center; }
+.rc-fc-picture-body { padding:18px 20px; }
+.rc-fc-tag { font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; display:flex; align-items:center; gap:6px; margin-bottom:8px; }
+.rc-fc-scene { font-size:15.5px; color:var(--rc-text); line-height:1.65; margin:0 0 12px; }
+.rc-fc-words { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:12px; }
+.rc-fc-word { font-size:13px; font-weight:600; color:var(--rc-blue); background:#EAF2FB; border:1px solid #BBD6F2; border-radius:999px; padding:4px 11px; }
+.rc-fc-instr { font-size:13.5px; color:var(--rc-mute); line-height:1.55; margin:0 0 10px; }
+.rc-fc-nav { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:16px; }
+
+/* ---------- Bônus de leitura (inglês, dentro da aula) ---------- */
+.rc-lb { margin:6px 0; }
+.rc-lb-flag { display:inline-flex; align-items:center; gap:6px; color:#fff; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; border-radius:999px; padding:5px 12px; }
+.rc-lb-cat { font-size:13px; color:var(--rc-mute); margin:10px 0 4px; }
+.rc-lb-body { font-size:16px; line-height:1.8; color:var(--rc-text); margin:10px 0 18px; }
+.rc-lb-listen { background:#F7F9FC; border:1px solid var(--rc-line); border-radius:12px; padding:14px 16px; margin:6px 0 16px; }
+.rc-lb-gloss { background:#fff; border:1px solid var(--rc-line); border-left:3px solid var(--rc-blue); border-radius:0 12px 12px 0; padding:14px 16px; margin:6px 0 14px; }
+.rc-lb-gloss-row { display:flex; gap:8px; font-size:14.5px; padding:4px 0; border-top:1px solid #F0F2F6; }
+.rc-lb-gloss-row:first-of-type { border-top:none; }
+.rc-lb-gloss-en { font-weight:700; color:var(--rc-char); }
+.rc-lb-gloss-pt { color:var(--rc-mute); }
+.rc-lb-takeaway { background:#EAF2FB; border-left:4px solid var(--rc-blue); border-radius:0 10px 10px 0; padding:12px 16px; font-size:14.5px; color:var(--rc-text); line-height:1.6; }
