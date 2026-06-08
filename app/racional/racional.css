@@ -560,6 +560,13 @@
 .rc-pbank-min { font-size:12px; font-weight:700; color:var(--rc-mute); }
 .rc-pbank-title { font-size:14.5px; color:var(--rc-char); }
 .rc-pbank-how { font-size:13.5px; color:var(--rc-text); line-height:1.6; margin-top:4px; }
+.rc-pbank-script { margin-top:8px; padding:8px 12px; background:#FBF7EC; border-left:3px solid #D8A33A; border-radius:6px; }
+.rc-pbank-script-h { font-size:11px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#B7791F; margin-bottom:4px; }
+.rc-pbank-lines { margin:0; padding-left:18px; display:grid; gap:3px; }
+.rc-pbank-lines li { font-size:13.5px; line-height:1.55; color:var(--rc-text); }
+.rc-teacher-close { margin:0; padding-left:20px; display:grid; gap:4px; }
+.rc-teacher-close li { font-size:13.5px; line-height:1.6; color:var(--rc-text); }
+.rc-teacher-close-note { font-size:12.5px; color:var(--rc-muted, #6B7280); margin:8px 0 0; font-style:italic; }
 
 /* ---------- Bússola Pedagógica (modo professor) ---------- */
 .rc-compass { border-radius:12px; margin:0 0 14px; }

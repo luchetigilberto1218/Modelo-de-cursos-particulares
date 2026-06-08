@@ -429,7 +429,18 @@ function TeacherGuide({ guide, lesson, studentId }) {
         {guide.overview && <p className="rc-teacher-over">{guide.overview}</p>}
         {guide.focus && <p className="rc-teacher-focus"><b>Foco:</b> {guide.focus}</p>}
         {guide.note && <div className="rc-teacher-note">{guide.note}</div>}
-        {guide.flow?.length > 0 && (
+        {guide.leadIn?.length > 0 && (
+          <>
+            <div className="rc-teacher-h">Lead-in · comece sempre por aqui ({guide.leadIn.length} perguntas)</div>
+            <ol className="rc-teacher-flow">
+              {guide.leadIn.map((q, i) => (
+                <li key={i}>{q}</li>
+              ))}
+            </ol>
+          </>
+        )}
+        {/* "Roteiro sugerido" antigo: só como fallback enquanto a lição não tiver lead-in/banco detalhado. */}
+        {!guide.leadIn?.length && guide.flow?.length > 0 && (
           <>
             <div className="rc-teacher-h">Roteiro sugerido</div>
             <ol className="rc-teacher-flow">
@@ -461,10 +472,29 @@ function TeacherGuide({ guide, lesson, studentId }) {
                     <b className="rc-pbank-title">{a.title}</b>
                   </div>
                   <div className="rc-pbank-how">{a.how}</div>
+                  {a.lines?.length > 0 && (
+                    <div className="rc-pbank-script">
+                      <div className="rc-pbank-script-h">👉 O professor fala:</div>
+                      <ul className="rc-pbank-lines">
+                        {a.lines.map((ln, j) => <li key={j}>{ln}</li>)}
+                      </ul>
+                    </div>
+                  )}
                 </li>
               ))}
             </ol>
           </details>
+        )}
+        {lesson?.takeaways?.length > 0 && (
+          <>
+            <div className="rc-teacher-h">Fechamento · o que o aluno já consegue fazer</div>
+            <ul className="rc-teacher-close">
+              {lesson.takeaways.map((tk, i) => (
+                <li key={i}>Você consegue dizer: “{tk}”?</li>
+              ))}
+            </ul>
+            <p className="rc-teacher-close-note">Feche sempre por aqui: o aluno marca cada “I can…” que já diz em voz alta. Ao marcar todos, a aula fica registrada como concluída.</p>
+          </>
         )}
         {guide.richNote && <p className="rc-teacher-rich">{guide.richNote}</p>}
       </div>
