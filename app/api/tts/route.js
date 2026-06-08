@@ -11,9 +11,11 @@ const VOICES = {
   'sophie':    'en-GB-SoniaNeural',
   'emily':     'en-IE-EmilyNeural',
   'charlotte': 'en-NZ-MollyNeural',
-  // Português (BR) — vozes neurais (texto em PT toca com voz pt-BR natural).
-  'pt-br':        'pt-BR-FranciscaNeural',
-  'pt-br-female': 'pt-BR-FranciscaNeural',
+  // Português (BR) — voz neural MULTILÍNGUE: pronuncia trechos em inglês (frases-âncora,
+  // termos, nomes) corretamente dentro da frase em português. Antônio (male) não é
+  // multilíngue, então fica como alternativa de timbre.
+  'pt-br':        'pt-BR-ThalitaMultilingualNeural',
+  'pt-br-female': 'pt-BR-ThalitaMultilingualNeural',
   'pt-br-male':   'pt-BR-AntonioNeural',
 };
 
