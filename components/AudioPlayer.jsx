@@ -140,8 +140,28 @@ export default function AudioPlayer({
       audioRef.current.play().then(() => setState('playing')).catch(() => setState('idle'));
       return;
     }
-    // Web Speech path
-    if (!supportsSpeech) return;
+    // Texto PT → voz neural pt-BR via Edge TTS (/api/tts, grátis). Muito melhor que a
+    // voz robótica do navegador; se a rota falhar, cai no Web Speech como fallback.
+    if (vt.startsWith('pt')) {
+      const clean = stripHtml(text);
+      if (clean) {
+        const apiUrl = `/api/tts?voice=${encodeURIComponent(vt)}&text=${encodeURIComponent(clean.slice(0, 3000))}`;
+        audioRef.current = new Audio(apiUrl);
+        audioRef.current.dataset.url = apiUrl;
+        audioRef.current.onended = () => setState('idle');
+        audioRef.current.onerror = () => { audioRef.current = null; speakViaWebSpeech(vt); };
+        modeRef.current = 'mp3';
+        audioRef.current.playbackRate = rate;
+        audioRef.current.play().then(() => setState('playing')).catch(() => speakViaWebSpeech(vt));
+        return;
+      }
+    }
+    speakViaWebSpeech(vt);
+  }
+
+  // Fallback (e via padrão p/ EN sem MP3): Web Speech do navegador.
+  function speakViaWebSpeech(vt) {
+    if (!supportsSpeech) { setState('idle'); return; }
     try { window.speechSynthesis.cancel(); } catch (_) {}
     const cleanText = stripHtml(text);
     if (!cleanText) return;
