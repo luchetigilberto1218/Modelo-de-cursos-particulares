@@ -105,12 +105,7 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
             <div className="rc-box" style={{ borderLeftColor: accent }}>{lesson.objective}</div>
           )}
           {lesson.intro && (
-            <>
-              <div style={{ marginTop: 18 }} dangerouslySetInnerHTML={{ __html: lesson.intro }} className="rc-prose" />
-              <div style={{ marginTop: 12 }}>
-                <AudioPlayer text={stripTags(lesson.intro)} voiceType={voice} rate={0.95} label={T('Ouvir introdução', 'Listen to intro')} />
-              </div>
-            </>
+            <div style={{ marginTop: 18 }} dangerouslySetInnerHTML={{ __html: lesson.intro }} className="rc-prose" />
           )}
         </>
       ),
