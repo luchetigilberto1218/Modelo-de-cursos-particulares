@@ -20,6 +20,16 @@ import TeacherCompass from './TeacherCompass';
 
 function pad(n) { return String(n).padStart(3, '0'); }
 
+// Texto majoritariamente em português → deve ser lido com voz PT-BR (não a voz inglesa do aluno).
+// Heurística leve: palavras-função/acentos comuns do PT vs marcadores de EN.
+function isPortuguese(text) {
+  const t = ` ${String(text || '').toLowerCase()} `;
+  if (!t.trim()) return false;
+  const pt = (t.match(/[áàâãéêíóôõúüç]|\b(você|voce|não|nao|para|com|que|uma|seu|sua|isso|aqui|então|porque|quando|aula|frases|prática|cliente|obra|reunião|sobre|vai|este|esta|nesta|neste|muito|mais|como)\b/g) || []).length;
+  const en = (t.match(/\b(the|you|your|this|with|that|will|about|meeting|client|they|are|for|and|to|of|is)\b/g) || []).length;
+  return pt > en;
+}
+
 // Voz por aluno/universo (rotação leve só para variar timbre).
 const VOICE_BY_STUDENT = {
   cassio: 'us-male', fabio: 'us-male', fabricio: 'us-female',
@@ -108,7 +118,7 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
             <>
               <div style={{ marginTop: 18 }} dangerouslySetInnerHTML={{ __html: lesson.intro }} className="rc-prose" />
               <div style={{ marginTop: 12 }}>
-                <AudioPlayer text={stripTags(lesson.intro)} voiceType={voice} rate={0.95} label={T('Ouvir introdução', 'Listen to intro')} />
+                <AudioPlayer text={stripTags(lesson.intro)} voiceType={isPortuguese(stripTags(lesson.intro)) ? 'pt-br' : voice} rate={0.95} label={T('Ouvir introdução', 'Listen to intro')} />
               </div>
             </>
           )}

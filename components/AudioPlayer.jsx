@@ -30,6 +30,10 @@ const VOICE_PREFS = {
   'sophie':   { lang: 'en-GB', genderHints: ['sonia', 'female'] },
   'emily':    { lang: 'en-IE', genderHints: ['emily', 'female'] },
   'charlotte':{ lang: 'en-NZ', genderHints: ['molly', 'female'] },
+  // Português (BR) — texto em PT deve ser lido com voz PT-BR.
+  'pt-br':        { lang: 'pt-BR', genderHints: ['francisca', 'maria', 'luciana', 'female', 'antonio', 'daniel', 'male'] },
+  'pt-br-female': { lang: 'pt-BR', genderHints: ['francisca', 'maria', 'luciana', 'female'] },
+  'pt-br-male':   { lang: 'pt-BR', genderHints: ['antonio', 'daniel', 'male'] },
 };
 
 function pickVoice(voices, voiceType = 'us-male') {
