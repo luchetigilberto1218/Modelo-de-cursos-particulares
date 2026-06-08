@@ -61,6 +61,23 @@ function stripHtml(s) {
     .trim();
 }
 
+// Texto majoritariamente em português → deve ser lido com voz PT-BR, mesmo que a
+// chamada passe uma voiceType inglesa. Heurística leve (acentos + palavras-função
+// PT vs EN); conservadora: só vira PT quando PT supera EN, pra não trocar texto inglês.
+function isPortuguese(text) {
+  const t = ` ${stripHtml(text).toLowerCase()} `;
+  if (!t.trim()) return false;
+  const pt = (t.match(/[áàâãéêíóôõúüç]|\b(você|voce|não|nao|para|com|que|uma|seu|sua|isso|aqui|então|porque|quando|aula|frases|prática|cliente|obra|reunião|sobre|vai|este|esta|nesta|neste|muito|mais|como|fazer|também|seus|suas|nós|são|está)\b/g) || []).length;
+  const en = (t.match(/\b(the|you|your|this|with|that|will|about|meeting|client|they|are|for|and|to|of|is|in|on|we|our|it)\b/g) || []).length;
+  return pt > en;
+}
+
+// Resolve a voiceType efetiva: se o texto é PT e a voz pedida não é PT, usa pt-BR.
+function effectiveVoiceType(voiceType, text) {
+  if (String(voiceType || '').startsWith('pt')) return voiceType;
+  return isPortuguese(text) ? 'pt-br' : (voiceType || 'us-male');
+}
+
 // Resolve um MP3 pré-gerado (ex.: ElevenLabs) a partir de um manifesto global
 // opcional: window.__RC_AUDIO__ = { base, sep, manifest: { `${voiceType}${sep}${stripHtml(text)}`: 'rel/path.mp3' } }.
 // Sem o global (ou sem entrada), retorna null e o player usa Web Speech.
@@ -106,8 +123,10 @@ export default function AudioPlayer({
   // Inicia do começo (cria/reinicia o áudio).
   function start() {
     if (!text && !audioUrl) return;
+    // Texto PT → voz pt-BR mesmo que a chamada peça voz inglesa (varredura global).
+    const vt = effectiveVoiceType(voiceType, text);
     // Pre-generated MP3 path (prop explícita ou manifesto global resolvido no clique)
-    const mp3Url = audioUrl || resolveManifestUrl(voiceType, text);
+    const mp3Url = audioUrl || resolveManifestUrl(vt, text);
     if (mp3Url) {
       if (!audioRef.current || audioRef.current.dataset.url !== mp3Url) {
         audioRef.current = new Audio(mp3Url);
@@ -129,9 +148,9 @@ export default function AudioPlayer({
     const u = new SpeechSynthesisUtterance(cleanText);
     u.rate = rate;
     u.pitch = 1.0;
-    const v = pickVoice(voices, voiceType);
+    const v = pickVoice(voices, vt);
     if (v) { u.voice = v; u.lang = v.lang; }
-    else u.lang = (VOICE_PREFS[voiceType]?.lang) || 'en-US';
+    else u.lang = (VOICE_PREFS[vt]?.lang) || 'en-US';
     u.onend = () => setState('idle');
     u.onerror = () => setState('idle');
     utteranceRef.current = u;
