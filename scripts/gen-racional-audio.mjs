@@ -37,13 +37,27 @@ const VOICE_BY_STUDENT = {
 // Pools ElevenLabs (US/GB/PT reaproveitados de lib/eleven-voices.js).
 // Indiano: precisa de IDs reais da SUA biblioteca ElevenLabs (env ELEVEN_IN_F / ELEVEN_IN_M
 // ou edite abaixo). Sem IDs, clipes de TI caem para US e o script avisa.
+// Lê vars do .env.local sem precisar exportá-las no shell (aditivo: só preenche
+// process.env quando ausente). Evita que ELEVEN_IN_F/M sejam esquecidos no source.
+function envLocal(name) {
+  if (process.env[name]) return process.env[name];
+  try {
+    const env = fs.readFileSync(path.join(ROOT, '.env.local'), 'utf-8');
+    const m = env.match(new RegExp(`^${name}=([^\\s]+)`, 'm'));
+    if (m) return m[1];
+  } catch {}
+  return null;
+}
+const IN_F = envLocal('ELEVEN_IN_F');
+const IN_M = envLocal('ELEVEN_IN_M');
+
 const POOLS = {
   us: { f: ['EXAVITQu4vr4xnSDxMaL', 'qWRrMoaOJUg6mVvRBiwM', 'XrExE9yKIg1WjnnlVkGX'],
         m: ['cjVigY5qzO86Huf0OWal', 'IjnA9kwZJHJ20Fp7Vmy6', 'CwhRBWXzGAHq8TQ4Fs17'] },
   gb: { f: ['Xb7hH8MSUJpSbSDYk0k2', 'AHg1lJfBfVzMxI156Ici', 'pFZP5JQG7iQjIQuC4Bku'],
         m: ['JBFqnCBsd6RMkjVDRZzb', 'EtsjFhqOd0YWASYxlmIg', 'NNl6r8mD7vthiJatiJt1'] },
-  in: { f: (process.env.ELEVEN_IN_F ? [process.env.ELEVEN_IN_F] : []),
-        m: (process.env.ELEVEN_IN_M ? [process.env.ELEVEN_IN_M] : []) },
+  in: { f: (IN_F ? [IN_F] : []),
+        m: (IN_M ? [IN_M] : []) },
 };
 
 const IT_RE = /\b(data ?center|datacenter|server|cloud|software|hardware|network|azure|aws|amazon web|google cloud|hyperscale|latency|bandwidth|fiber|fibre|rack|cooling|uptime|downtime|firmware|database|API|IT team|infrastructure|provider|cabling|switch|router|virtual|storage|backup|cyber|protocol)\b/i;
