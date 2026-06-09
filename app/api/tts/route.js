@@ -79,7 +79,9 @@ export async function GET(request) {
 
   if (!text) return new Response('Missing text parameter', { status: 400 });
 
-  const trimmed = text.slice(0, 3000);
+  // Remove emojis/símbolos — senão a voz os lê em voz alta ("coração amarelo", "seta").
+  const noEmoji = text.replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2190}-\u{21FF}\u{2B00}-\u{2BFF}\u{FE00}-\u{FE0F}\u{200D}]/gu, ' ').replace(/\s+/g, ' ').trim();
+  const trimmed = noEmoji.slice(0, 3000);
   const voiceName = VOICES[voice] || VOICES['us-male'];
 
   try {

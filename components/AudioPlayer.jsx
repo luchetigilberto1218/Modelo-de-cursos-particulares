@@ -58,6 +58,8 @@ function stripHtml(s) {
   return String(s || '')
     .replace(/<br\s*\/?>/gi, '. ')
     .replace(/<[^>]+>/g, ' ')
+    // Remove emojis e símbolos pictográficos — a voz os lê em voz alta ("coração amarelo").
+    .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2190}-\u{21FF}\u{2B00}-\u{2BFF}\u{FE00}-\u{FE0F}\u{200D}]/gu, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }

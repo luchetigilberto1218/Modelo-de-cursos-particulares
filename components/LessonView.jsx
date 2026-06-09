@@ -273,6 +273,32 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                 </>
               ) : null}
 
+              {/* Banco de exercícios extras — feitos pelo professor, não estão no app.
+                  Cada bloco tem o gabarito/resposta-modelo em verde ao lado. */}
+              {Array.isArray(l.teacherGuide.extraPractice) && l.teacherGuide.extraPractice.length > 0 && (
+                <>
+                  <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: '#8C6A00', margin: '22px 0 10px' }}>
+                    Exercícios extras · não estão no app — faça com o aluno
+                  </h4>
+                  <div style={{ display: 'grid', gap: 12 }}>
+                    {l.teacherGuide.extraPractice.map((b, bi) => (
+                      <div key={bi} style={{ background: '#FFFFFF', border: '1px solid #F5D976', borderRadius: 10, padding: 14 }}>
+                        <div style={{ fontSize: 13, fontWeight: 700, color: '#5A4A1F', marginBottom: b.note ? 2 : 8 }}>{b.title}</div>
+                        {b.note && <div style={{ fontSize: 12, color: '#8C6A00', fontStyle: 'italic', marginBottom: 8 }}>{b.note}</div>}
+                        <ol style={{ paddingLeft: 20, margin: 0 }}>
+                          {(b.items || []).map((it, ii) => (
+                            <li key={ii} style={{ marginBottom: 6, fontSize: 13, lineHeight: 1.55, color: '#5A4A1F' }}>
+                              <span>{it.q}</span>
+                              {it.a && <span style={{ color: '#1B7A3D', fontWeight: 600 }}>{`   →   ${it.a}`}</span>}
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
               {l.teacherGuide.commonChallenges?.length > 0 && (
                 <>
                   <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: '#8C6A00', margin: '20px 0 10px' }}>
