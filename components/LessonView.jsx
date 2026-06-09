@@ -700,7 +700,10 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
             <div className="section-title" style={{ marginBottom: 0 }}>
               <div className="section-icon">G</div> Grammar Point
             </div>
-            {(l.grammarDetail || l.audio?.grammar) && (
+            {/* Áudio só na gramática em INGLÊS (níveis Rise/Apex). Na gramática em PT
+                (Confidence) o texto mistura português com termos em inglês soltos
+                ("am, is, are", "to be") e a voz confunde os dois — então sem áudio aqui. */}
+            {(l.grammarDetail || l.audio?.grammar) && !/[áàâãéêíóôõúüç]/i.test(stripHtml(l.grammarDetail || '')) && (
               <AudioPlayer
                 key={`gr-${l.num}`}
                 text={`${l.grammar || ''}. ${stripHtml(l.grammarDetail)}`}
@@ -708,10 +711,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                 rate={0.95}
                 label="Listen"
                 small
-                /* Gramática em PT (níveis básicos) traz termos em inglês soltos no meio do
-                   texto ("am, is, are", "to be"). Use a voz multilíngue para pronunciá-los
-                   corretamente; em gramática só-inglês mantém a voz do personagem. */
-                voiceType={/[áàâãéêíóôõúüç]/i.test(stripHtml(l.grammarDetail || '')) ? 'pt-br-multi' : voiceType}
+                voiceType={voiceType}
               />
             )}
           </div>
