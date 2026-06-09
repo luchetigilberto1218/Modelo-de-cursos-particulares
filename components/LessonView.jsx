@@ -80,11 +80,18 @@ const TRACK_LABEL = {
   'uk-england': 'UK & England'
 };
 
-export default function LessonView({ lesson, lessonIndex, totalLessons, clientId, backHref, course }) {
+export default function LessonView({ lesson, lessonIndex, totalLessons, clientId, backHref, course, prevNum: prevNumProp, nextNum: nextNumProp }) {
   const l = lesson;
   const isOutdoor = l.type === 'outdoor';
-  const prevNum = lessonIndex > 0 ? lessonIndex : null;
-  const nextNum = lessonIndex < totalLessons - 1 ? lessonIndex + 2 : null;
+  // Navigation by real lesson `num`. The page passes prevNum/nextNum scoped to the
+  // same level+track (correct for Czarnikow, where num !== index+1). Fall back to the
+  // legacy index-based math only for older sequential courses that don't pass them.
+  const prevNum = prevNumProp !== undefined
+    ? prevNumProp
+    : (lessonIndex > 0 ? lessonIndex : null);
+  const nextNum = nextNumProp !== undefined
+    ? nextNumProp
+    : (lessonIndex < totalLessons - 1 ? lessonIndex + 2 : null);
   // Prefer lesson-assigned character (Czarnikow), fall back to module rotation (APS)
   const voiceType = l.character || getModuleVoice(l.num);
   const voiceLabel = l.characterName
@@ -259,7 +266,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                       <li key={i} style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55 }}>
                         <strong>{s.what || `Passo ${i + 1}`}</strong>
                         {s.duration && <span style={{ color: '#8C6A00', fontSize: 12, marginLeft: 8 }}>({s.duration})</span>}
-                        {s.instructions && <div style={{ color: '#5A4A1F', marginTop: 2 }}>{s.instructions}</div>}
+                        {s.instructions && <div style={{ color: '#5A4A1F', marginTop: 2, whiteSpace: 'pre-wrap' }}>{s.instructions}</div>}
                       </li>
                     ))}
                   </ol>
@@ -675,7 +682,10 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                 rate={0.95}
                 label="Listen"
                 small
-                voiceType={voiceType}
+                /* Gramática em PT (níveis básicos) traz termos em inglês soltos no meio do
+                   texto ("am, is, are", "to be"). Use a voz multilíngue para pronunciá-los
+                   corretamente; em gramática só-inglês mantém a voz do personagem. */
+                voiceType={/[áàâãéêíóôõúüç]/i.test(stripHtml(l.grammarDetail || '')) ? 'pt-br-multi' : voiceType}
               />
             )}
           </div>

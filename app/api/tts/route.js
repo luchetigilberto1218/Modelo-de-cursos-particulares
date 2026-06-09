@@ -17,6 +17,10 @@ const VOICES = {
   'pt-br':        'pt-BR-FranciscaNeural',
   'pt-br-female': 'pt-BR-FranciscaNeural',
   'pt-br-male':   'pt-BR-AntonioNeural',
+  // Voz multilíngue: lê português nativo E pronuncia inglês embutido (mesmo sem aspas)
+  // corretamente. Usada na seção de gramática, onde termos em inglês ("am, is, are",
+  // "to be") aparecem soltos no meio do texto em PT e a Francisca os leria aportuguesados.
+  'pt-br-multi':  'pt-BR-ThalitaMultilingualNeural',
 };
 
 // Voz en-US que casa com o timbre da voz pt-BR (mesmo gênero).
@@ -79,9 +83,14 @@ export async function GET(request) {
   const voiceName = VOICES[voice] || VOICES['us-male'];
 
   try {
-    const audioBuffer = String(voice).startsWith('pt')
-      ? await synthPtMixed(voiceName, trimmed)
-      : await synth(voiceName, trimmed);
+    // Voz multilíngue lê o texto inteiro de uma vez (ela mesma pronuncia o inglês embutido).
+    // As demais vozes PT usam o split PT/EN por aspas (synthPtMixed).
+    const isMultilingual = String(voice).includes('multi');
+    const audioBuffer = isMultilingual
+      ? await synth(voiceName, trimmed)
+      : String(voice).startsWith('pt')
+        ? await synthPtMixed(voiceName, trimmed)
+        : await synth(voiceName, trimmed);
 
     if (!audioBuffer || audioBuffer.length < 512) return new Response('TTS generation failed', { status: 500 });
 

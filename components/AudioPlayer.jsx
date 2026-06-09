@@ -32,6 +32,7 @@ const VOICE_PREFS = {
   'charlotte':{ lang: 'en-NZ', genderHints: ['molly', 'female'] },
   // Português (BR) — texto em PT deve ser lido com voz PT-BR.
   'pt-br':        { lang: 'pt-BR', genderHints: ['francisca', 'maria', 'luciana', 'female', 'antonio', 'daniel', 'male'] },
+  'pt-br-multi':  { lang: 'pt-BR', genderHints: ['thalita', 'francisca', 'maria', 'luciana', 'female'] },
   'pt-br-female': { lang: 'pt-BR', genderHints: ['francisca', 'maria', 'luciana', 'female'] },
   'pt-br-male':   { lang: 'pt-BR', genderHints: ['antonio', 'daniel', 'male'] },
 };
