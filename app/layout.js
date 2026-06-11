@@ -1,5 +1,6 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
+import EmpresaTracker from '../components/EmpresaTracker';
 
 export const metadata = {
   title: 'Alumni Courses',
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
+        <EmpresaTracker />
         <Analytics />
       </body>
     </html>
