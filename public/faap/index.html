@@ -124,26 +124,6 @@
   .ctable .feat-col{color:rgba(255,255,255,.55)!important;font-weight:600}
   @media(max-width:760px){.ctable{display:block;overflow-x:auto;white-space:nowrap}.ctable td:first-child,.ctable th:first-child{width:auto}}
 
-  /* QUIZ */
-  .quiz{background:var(--n50)}
-  .quiz-q{background:#fff;border:1px solid var(--n200);border-radius:16px;padding:24px;margin-bottom:16px}
-  .quiz-q .qn{font-size:.72rem;font-weight:700;letter-spacing:.12em;color:var(--vermelho);text-transform:uppercase}
-  .quiz-q h4{font-size:1.1rem;font-weight:700;margin:6px 0 16px;color:var(--azul)}
-  .opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .opt{border:1.5px solid var(--n200);border-radius:12px;padding:14px 16px;font-size:.92rem;cursor:pointer;transition:.12s;color:var(--n700);display:flex;align-items:center;gap:10px}
-  .opt:hover{border-color:var(--azul)}
-  .opt.sel{border-color:var(--azul);background:var(--azul-soft);color:var(--azul-dark);font-weight:600}
-  .opt .dot{width:16px;height:16px;border-radius:50%;border:2px solid var(--n300);flex:0 0 16px}
-  .opt.sel .dot{border-color:var(--azul);background:var(--azul);box-shadow:inset 0 0 0 3px #fff}
-  @media(max-width:600px){.opts{grid-template-columns:1fr}}
-  .quiz-result{margin-top:20px;background:#fff;border:2px solid var(--azul);border-radius:16px;padding:28px;display:none}
-  .quiz-result.show{display:block;animation:fade .3s ease}
-  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-  .quiz-result .label{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--n400)}
-  .quiz-result h3{font-size:1.5rem;color:var(--azul);margin:6px 0 8px;font-weight:800}
-  .quiz-result p{color:var(--n600);font-size:.95rem}
-  .quiz-note{margin-top:12px;font-size:.82rem;color:var(--n400)}
-
   /* GRADE */
   .grade-card{background:var(--n50);border:1px solid var(--n200);border-radius:18px;padding:30px}
   .grade-card p{color:var(--n600);font-size:.95rem}
@@ -383,60 +363,6 @@
   </div>
 </section>
 
-<!-- QUIZ -->
-<section class="quiz" id="quiz">
-  <div class="wrap" style="max-width:760px">
-    <div class="sec-head" style="margin:0 auto 36px;text-align:center">
-      <p class="eyebrow" style="color:var(--n400)">Qual curso é o seu?</p>
-      <h2>Quatro perguntas rápidas.</h2>
-      <p>Agora são só dois cursos — então o resultado aponta direto para o seu. É um ponto de partida: a equipe Alumni ajuda você a confirmar a melhor escolha.</p>
-    </div>
-
-    <div id="quizForm">
-      <div class="quiz-q" data-q="1">
-        <span class="qn">Pergunta 1</span>
-        <h4>Qual o seu principal objetivo com o inglês?</h4>
-        <div class="opts">
-          <div class="opt" data-v="C"><span class="dot"></span>Praticar e manter o inglês do dia a dia</div>
-          <div class="opt" data-v="F"><span class="dot"></span>Evoluir com atenção individual nas particulares</div>
-        </div>
-      </div>
-      <div class="quiz-q" data-q="2">
-        <span class="qn">Pergunta 2</span>
-        <h4>Como você prefere estudar?</h4>
-        <div class="opts">
-          <div class="opt" data-v="C"><span class="dot"></span>Em grupo, com horários flexíveis</div>
-          <div class="opt" data-v="F"><span class="dot"></span>Em grupo, mas com aulas individuais intercaladas</div>
-        </div>
-      </div>
-      <div class="quiz-q" data-q="3">
-        <span class="qn">Pergunta 3</span>
-        <h4>Como é a sua disponibilidade?</h4>
-        <div class="opts">
-          <div class="opt" data-v="C"><span class="dot"></span>Variável — gosto de agendar de última hora</div>
-          <div class="opt" data-v="F"><span class="dot"></span>Tenho rotina e quero atenção individual</div>
-        </div>
-      </div>
-      <div class="quiz-q" data-q="4">
-        <span class="qn">Pergunta 4</span>
-        <h4>O que pesa mais na sua decisão?</h4>
-        <div class="opts">
-          <div class="opt" data-v="C"><span class="dot"></span>Melhor custo mensal</div>
-          <div class="opt" data-v="F"><span class="dot"></span>Equilíbrio entre preço e acompanhamento individual</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="quiz-result" id="quizResult">
-      <span class="label">Seu ponto de partida</span>
-      <h3 id="resTitle">Community</h3>
-      <p id="resText"></p>
-      <p class="quiz-note">Lembre: com a parceria FAAP, os dois cursos estão com 50% de desconto. A equipe Alumni confirma a melhor escolha com você.</p>
-      <div style="margin-top:20px"><a href="#contato" class="btn btn-primary">Garantir meu benefício →</a></div>
-    </div>
-  </div>
-</section>
-
 <!-- GRADE -->
 <section id="grade">
   <div class="wrap">
@@ -623,37 +549,6 @@
 </footer>
 
 <script>
-  // Quiz
-  var answers = {};
-  document.querySelectorAll('.quiz-q').forEach(function(q){
-    var qid = q.getAttribute('data-q');
-    q.querySelectorAll('.opt').forEach(function(opt){
-      opt.addEventListener('click', function(){
-        q.querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel')});
-        opt.classList.add('sel');
-        answers[qid] = opt.getAttribute('data-v');
-        maybeResult();
-      });
-    });
-  });
-  function maybeResult(){
-    if(Object.keys(answers).length < 4) return;
-    var c=0,f=0;
-    Object.values(answers).forEach(function(v){ v==='C'?c++:f++; });
-    var res = document.getElementById('quizResult');
-    var title = document.getElementById('resTitle');
-    var text = document.getElementById('resText');
-    if(f > c){
-      title.textContent = 'Community Flow';
-      text.textContent = 'Você gosta da dinâmica de grupo e quer também atenção individual. O Community Flow soma as aulas em grupo às particulares intercaladas — e, pra você da FAAP, sai por 12x R$ 298 (em vez de R$ 596).';
-    } else {
-      title.textContent = 'Community';
-      text.textContent = 'Você quer praticar com flexibilidade e o melhor custo. O Community é online ao vivo, em grupo, no seu ritmo — e, pra você da FAAP, sai por 12x R$ 240 (em vez de R$ 480).';
-    }
-    res.classList.add('show');
-    res.scrollIntoView({behavior:'smooth',block:'center'});
-  }
-
   // Grade interativa
   var GRADE = [
     { id:'Confidence', cor:'#16a34a', desc:'Iniciante absoluto. Primeiros passos em inglês.',
