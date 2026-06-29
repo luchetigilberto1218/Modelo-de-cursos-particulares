@@ -227,6 +227,22 @@
   footer .flogos img.alumni{height:36px;filter:brightness(0) invert(1);opacity:.85}
   footer .flogos .x{color:rgba(255,255,255,.3)}
   footer .disc{margin-top:8px;color:rgba(255,255,255,.35);font-size:.78rem}
+
+  /* BÔNUS 03/07 */
+  .bonus{background:var(--n50)}
+  .bonus-card{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--azul-dark),var(--azul) 70%,#163485);border-radius:24px;padding:48px;color:#fff;box-shadow:0 24px 60px rgba(16,42,113,.22)}
+  .bonus-card::after{content:"";position:absolute;right:-100px;top:-100px;width:380px;height:380px;background:radial-gradient(circle,rgba(203,20,45,.28),transparent 70%);border-radius:50%}
+  .bonus-head{position:relative;z-index:2;max-width:640px}
+  .bonus-flag{display:inline-block;background:var(--vermelho);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:18px}
+  .bonus-head h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;color:#fff}
+  .bonus-head p{margin-top:14px;color:rgba(255,255,255,.85);font-size:1.05rem}
+  .bonus-gifts{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:32px 0 28px}
+  .bgift{display:flex;align-items:center;gap:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:22px 24px}
+  .bgift-ic{flex:0 0 56px;height:56px;border-radius:14px;background:#fff;color:var(--vermelho);font-size:1.55rem;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .bgift h3{font-size:1.15rem;font-weight:800;color:#fff}
+  .bgift p{font-size:.9rem;color:rgba(255,255,255,.8);margin-top:2px}
+  .bonus-cta{position:relative;z-index:2;margin-top:4px}
+  @media(max-width:760px){.bonus-card{padding:32px 22px}.bonus-gifts{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -309,18 +325,18 @@
 
       <!-- COMMUNITY -->
       <div class="card">
-        <span class="plan">Plano anual · Community</span>
+        <span class="plan">Plano 6 meses · Community</span>
         <h3>Community</h3>
         <p class="desc">Inglês para o dia a dia profissional, em grupo, com flexibilidade total. Entrada imediata, sem esperar turma fechar.</p>
         <div class="price-box">
-          <div class="price-old">De 12x R$ 480 no plano anual</div>
-          <div class="price-new"><span class="v">12x R$ 240</span><span class="u">no plano anual</span></div>
-          <span class="save-pill">−50% · benefício FAAP · economize R$ 2.880 no ano</span>
+          <div class="price-old">De 6x R$ 480 no plano de 6 meses</div>
+          <div class="price-new"><span class="v">6x R$ 240</span><span class="u">no plano de 6 meses</span></div>
+          <span class="save-pill">−50% · benefício FAAP · economize R$ 1.440 em 6 meses</span>
         </div>
         <ul class="specs">
           <li><span>Formato</span><span>100% online ao vivo</span></li>
           <li><span>Grupo</span><span>Até 8 alunos</span></li>
-          <li><span>Carga</span><span>96 aulas em grupo</span></li>
+          <li><span>Carga</span><span>48 aulas em grupo</span></li>
           <li><span>Níveis</span><span>11 níveis (CEFR)</span></li>
           <li class="stack"><span>Agendamento</span><span>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</span></li>
         </ul>
@@ -335,18 +351,18 @@
 
       <!-- COMMUNITY FLOW -->
       <div class="card">
-        <span class="plan">Plano anual · Community Flow</span>
+        <span class="plan">Plano 6 meses · Community Flow</span>
         <h3>Community Flow</h3>
         <p class="desc">Tudo do Community + aulas particulares intercaladas, com atenção individual — sem precisar contratar grupo e particular à parte.</p>
         <div class="price-box">
-          <div class="price-old">De 12x R$ 596 no plano anual</div>
-          <div class="price-new"><span class="v">12x R$ 298</span><span class="u">no plano anual</span></div>
-          <span class="save-pill">−50% · benefício FAAP · economize R$ 3.576 no ano</span>
+          <div class="price-old">De 6x R$ 596 no plano de 6 meses</div>
+          <div class="price-new"><span class="v">6x R$ 298</span><span class="u">no plano de 6 meses</span></div>
+          <span class="save-pill">−50% · benefício FAAP · economize R$ 1.788 em 6 meses</span>
         </div>
         <ul class="specs">
           <li><span>Formato</span><span>Online ao vivo (grupo + particular)</span></li>
           <li><span>Grupo</span><span>Até 8; 1:1 nas particulares</span></li>
-          <li><span>Carga</span><span>96 aulas em grupo + 19 particulares</span></li>
+          <li><span>Carga</span><span>48 aulas em grupo + 9 particulares</span></li>
           <li><span>Níveis</span><span>11 níveis (CEFR)</span></li>
           <li class="stack"><span>Agendamento</span><span>Até 30 min antes · Seg–sex 7h–20h, sáb 8h–14h</span></li>
         </ul>
@@ -359,6 +375,30 @@
         <a href="#contato" class="btn-card">Quero o Community Flow com 50% off</a>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- BÔNUS 03/07 -->
+<section class="bonus" id="bonus">
+  <div class="wrap">
+    <div class="bonus-card">
+      <div class="bonus-head">
+        <span class="bonus-flag">Condição exclusiva · até 03/07</span>
+        <h2>Fechando até 3 de julho, você leva mais.</h2>
+        <p>Quem garante a matrícula até 03/07 começa a jornada na Alumni com duas cortesias — um reconhecimento a quem decide na hora certa.</p>
+      </div>
+      <div class="bonus-gifts">
+        <div class="bgift">
+          <div class="bgift-ic">+1</div>
+          <div><h3>Mês de curso</h3><p>Uma extensão de cortesia, sem nenhum custo adicional.</p></div>
+        </div>
+        <div class="bgift">
+          <div class="bgift-ic">8</div>
+          <div><h3>Aulas extras</h3><p>Encontros adicionais, gratuitos, para acelerar a sua evolução.</p></div>
+        </div>
+      </div>
+      <a href="#contato" class="btn btn-primary bonus-cta">Garantir meu benefício até 03/07 &rarr;</a>
     </div>
   </div>
 </section>
@@ -544,7 +584,7 @@
       <img class="alumni" src="/faap/img/alumni.webp" alt="Alumni by Better" />
     </div>
     <div>Parceria FAAP × Alumni by Better · Centro Binacional Brasil–EUA desde 1961</div>
-    <div class="disc">Desconto de 50% exclusivo para colaboradores da FAAP. Valores e condições do plano anual sujeitos a confirmação no ato da matrícula.</div>
+    <div class="disc">Desconto de 50% exclusivo para colaboradores da FAAP. Valores e condições do plano de 6 meses sujeitos a confirmação no ato da matrícula. Bônus de +1 mês e 8 aulas extras válidos para matrículas realizadas até 03/07.</div>
   </div>
 </footer>
 
