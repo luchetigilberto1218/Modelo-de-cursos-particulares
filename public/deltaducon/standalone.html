@@ -512,6 +512,7 @@ function speak(text,lang,el){try{
   }
   // novo áudio: destrava o motor (bug do Chrome que fica "preso em pausa" após um pause)
   userPaused=false;
+  if(typeof stopClip==='function')stopClip();
   synth.cancel(); synth.resume();
   if(audBtn&&audBtn!==el)clearBtn(audBtn);
   document.querySelectorAll('.speaking,.paused').forEach(e=>e.classList.remove('speaking','paused'));
@@ -698,7 +699,7 @@ try{PROG=JSON.parse(localStorage.getItem(PKEY)||'{}')||{};}catch(e){PROG={};}
 function saveProg(){try{localStorage.setItem(PKEY,JSON.stringify(PROG));}catch(e){}}
 function isDone(t,l){return !!PROG[t+'_'+l];}
 function trackDone(ti){const t=DATA[ti];let n=0;for(let j=0;j<t.lessons.length;j++)if(isDone(ti,j))n++;return n;}
-function markDone(ti,li){const k=ti+'_'+li;if(!PROG[k]){PROG[k]=1;saveProg();if(typeof renderHome==='function')renderHome();}}
+function markDone(ti,li){const k=ti+'_'+li;if(!PROG[k]){PROG[k]=1;saveProg();if(typeof renderHome==='function')renderHome();if(typeof syncPush==='function')syncPush();}}
 
 function renderStudy(){
   document.getElementById('studyGrid').innerHTML = DATA.map((t,i)=>{
@@ -752,7 +753,7 @@ function openLesson(ti,li){
   // ===== ABERTURA (fixa): Objective, Introduction, Vocabulary =====
   let head=`<div class="lblock"><div class="lbadge"><span class="b g">O</span><h3>Objective of the class</h3></div><div class="obj">${L.objective}</div></div>`;
   head+=`<div class="lblock"><div class="lbadge"><span class="b">I</span><h3>Introduction</h3></div>${(L.intro||[]).map(p=>`<p>${p}</p>`).join('')}
-    <button class="listen" onclick="speak('${esc((L.intro||[]).join(' '))}','en-US',this)">▶ Listen to introduction</button></div>`;
+    <button class="listen" onclick="playClip('${t.id}-${li+1}-intro','${esc((L.intro||[]).join(' '))}',this)">▶ Listen to introduction</button></div>`;
   head+=`<div class="lblock"><div class="lbadge"><span class="b">V</span><h3>Vocabulary</h3></div><div class="vlist">`+
     (L.vocab||[]).map(v=>`<div class="vi"><b>${v[0]}</b> — <span class="tr">${v[1]}</span>
       <button class="listen" onclick="speak('${esc(v[0])}. ${esc(v[2])}','en-US',this)">▶ Listen</button>
@@ -766,7 +767,7 @@ function openLesson(ti,li){
     (L.practice||[]).slice(0,(L.vocab||[]).length).map((r,i)=>fillLine(String.fromCharCode(97+i)+') ',r[0],r[1],'______',150)).join('')+`</div>`;
   B.A=L.audio?`<div class="lblock"><div class="lbadge"><span class="b a">A</span><h3>Additional Audios</h3></div>
     <p><b>Audio 1 — ${L.audio.title}</b></p><p class="note">${L.audio.text}</p>
-    <button class="listen" onclick="speak('${esc(L.audio.text)}','en-US',this)">▶ Listen</button></div>`:'';
+    <button class="listen" onclick="playClip('${t.id}-${li+1}-listen','${esc(L.audio.text)}',this)">▶ Listen</button></div>`:'';
   B.E=`<div class="lblock"><div class="lbadge"><span class="b">E</span><h3>Exercises</h3></div>
     <p><b>1. Leia em voz alta (Read aloud)</b> — devagar.</p><div class="dialog">`+
     (L.readAloud||[]).map(s=>`<div class="l">"${s}"</div>`).join('')+`</div>
@@ -861,7 +862,7 @@ function onbConfirm(){
   }
   saveUser();
   document.getElementById('onbOvl').classList.remove('show');
-  renderHome(); presRefresh();
+  renderHome(); presRefresh(); syncPull();
   toast('Olá, '+firstName()+'! Bom te ver 👋');
 }
 function changeUser(){document.getElementById('onbCard').classList.remove('freemode');document.getElementById('onbOvl').classList.add('show');}
@@ -940,12 +941,54 @@ function showCert(ti,mod){
   document.getElementById('certOvl').classList.add('show');
 }
 
+/* ---------- áudio de aula (2 vozes ElevenLabs, com fallback) ---------- */
+let clipAudio=null, clipBtn=null;
+function clipClear(el){if(el){el.classList.remove('speaking','paused');setIcon(el,'▶');}}
+function stopClip(){try{if(clipAudio){clipAudio.pause();clipAudio=null;}}catch(e){}if(clipBtn){clipClear(clipBtn);clipBtn=null;}}
+function playClip(id,fallbackText,el){
+  if(clipBtn===el&&clipAudio){
+    if(clipAudio.paused){clipAudio.play();el.classList.remove('paused');el.classList.add('speaking');setIcon(el,'⏸');}
+    else{clipAudio.pause();el.classList.remove('speaking');el.classList.add('paused');setIcon(el,'▶');}
+    return;
+  }
+  stopClip();
+  try{synth.cancel();}catch(e){}
+  document.querySelectorAll('.speaking,.paused').forEach(e=>e.classList.remove('speaking','paused'));
+  const a=new Audio('/deltaducon/audio/l/'+id+'.mp3');clipAudio=a;clipBtn=el;
+  el.classList.add('speaking');setIcon(el,'⏸');
+  const finish=()=>{clipClear(el);if(clipBtn===el){clipBtn=null;clipAudio=null;}};
+  const fb=()=>{clipAudio=null;clipBtn=null;clipClear(el);speak(fallbackText,'en-US',el);};
+  a.onended=finish;a.onerror=fb;
+  a.play().then(()=>{}).catch(fb);
+}
+
+/* ---------- sync de progresso (servidor, aditivo) ---------- */
+function slugify(s){return String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,64);}
+let _syncT=null;
+function syncPush(){
+  if(!USER)return;clearTimeout(_syncT);
+  _syncT=setTimeout(()=>{try{
+    fetch('/api/deltaducon/progress?student='+encodeURIComponent(slugify(USER.name)),
+      {method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:USER.name,t:USER.t,done:PROG})}).catch(()=>{});
+  }catch(e){}},800);
+}
+async function syncPull(){
+  if(!USER)return;
+  try{
+    const r=await fetch('/api/deltaducon/progress?student='+encodeURIComponent(slugify(USER.name)));
+    if(!r.ok)return;const d=await r.json();
+    if(d&&d.done){let ch=false;for(const k in d.done){if(!PROG[k]){PROG[k]=1;ch=true;}}
+      if(ch){saveProg();renderHome();renderStudy();}}
+  }catch(e){}
+}
+
 /* ---------- boot ---------- */
 function boot(){
   buildOnboard();
   renderHome();
   presRefresh();
   if(!USER)document.getElementById('onbOvl').classList.add('show');
+  else syncPull();
 }
 
 renderStudy();
