@@ -886,9 +886,8 @@ function renderHome(){
 
 /* ---------- apresentador "Duca" ---------- */
 function presScript(){
-  const fn=firstName();
   return [
-   (fn?('Oi, '+fn+'! Seja bem-vindo.'):'Oi! Seja bem-vindo.')+' Este material é assíncrono e foi feito sob medida pro seu desenvolvimento no inglês da Delta Ducon.',
+   'Oi! Seja bem-vindo. Este material é assíncrono e foi feito sob medida pro seu desenvolvimento no inglês da Delta Ducon.',
    'Sua primeira missão é conhecer a empresa e saber apresentá-la em inglês. Navegue pela primeira parte e domine essa tarefa!',
    'Depois vêm as áreas de atuação da Delta, com um vocabulário bem específico, que sobe de nível aos poucos.',
    'Mas relaxa: sempre tem um exemplo pra te mostrar como usar cada palavra, e exercícios pra te deixar afiado.',
@@ -896,7 +895,7 @@ function presScript(){
    'Toda aula começa com um objetivo: é o ponto principal, o que você precisa aprender ali. Faça todos os exercícios e, se precisar, refaça a unidade.',
    'Dica de ouro: as frases de "Sentences I need to know" salvam em qualquer situação. Tente memorizar o máximo delas.',
    'No fim vem a gramática, leve e cheia de exemplos. Esse conteúdo faz toda a diferença nas suas aulas, principalmente nas particulares.',
-   (fn?('Bora começar, '+fn+'?'):'Bora começar?')
+   'Bora começar?'
   ];
 }
 let presI=-1, presPlaying=false, presAudio=null, presTok=0;
