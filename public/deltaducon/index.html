@@ -245,6 +245,50 @@
   footer b{color:#fff}
   .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--navy);color:#fff;padding:12px 22px;border-radius:100px;font-weight:700;font-size:14px;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:transform .35s;z-index:99}
   .toast.show{transform:translateX(-50%) translateY(0)}
+  /* ===== personalização + apresentador ===== */
+  .ovl{position:fixed;inset:0;background:rgba(13,43,62,.55);display:none;place-items:center;z-index:200;padding:20px}
+  .ovl.show{display:grid}
+  .ocard{background:var(--card);border-radius:18px;max-width:470px;width:100%;padding:28px 26px;box-shadow:0 20px 60px rgba(13,43,62,.35);text-align:center}
+  .ocard .em{font-size:38px}
+  .ocard h3{color:var(--navy);font-size:22px;margin:6px 0 4px}
+  .ocard p{color:var(--muted);font-size:14.5px;margin-bottom:16px}
+  .ocard select,.ocard input{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:11px;font-size:15px;color:var(--navy);background:#fff;margin-bottom:12px;font-family:inherit}
+  .ocard button.prim{width:100%;background:var(--green);color:#fff;border:none;padding:13px;border-radius:11px;font-weight:800;font-size:15px;cursor:pointer}
+  .ocard .alt{margin-top:12px;font-size:13px;color:var(--green);cursor:pointer;text-decoration:underline;display:inline-block}
+  .ocard .row2{display:none} .ocard.freemode .row2{display:block} .ocard.freemode .namerow{display:none}
+  .dash{background:linear-gradient(135deg,var(--navy),#0a3550);color:#fff;border-radius:16px;padding:18px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;box-shadow:0 10px 30px rgba(13,43,62,.2)}
+  .dash .ring{--p:0;width:64px;height:64px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--p)*1%),rgba(255,255,255,.16) 0);display:grid;place-items:center;flex-shrink:0}
+  .dash .ring i{width:50px;height:50px;border-radius:50%;background:#0a3550;display:grid;place-items:center;font-size:13px;font-weight:800;font-style:normal;color:#fff}
+  .dash .hi{flex:1;min-width:190px} .dash .hi b{font-size:19px;display:block} .dash .hi small{opacity:.85;font-size:13px;display:block;margin-top:2px}
+  .dash .hi .trk{display:inline-block;margin-top:8px;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:100px;font-size:12.5px;font-weight:700}
+  .dash .acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .dash .acts button{background:var(--green);color:#fff;border:none;padding:10px 15px;border-radius:10px;font-weight:800;font-size:14px;cursor:pointer}
+  .dash .acts button.ghost{background:rgba(255,255,255,.13)}
+  .dash .chg{opacity:.75;font-size:12px;cursor:pointer;text-decoration:underline;width:100%;text-align:right}
+  .pres{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:0 8px 24px rgba(13,43,62,.08);display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .pres .host{width:104px;height:104px;flex-shrink:0}
+  .pres .pbody{flex:1;min-width:230px}
+  .pres .cta{color:var(--green);font-size:12px;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;font-weight:800}
+  .pres .cap{color:var(--navy);font-size:16.5px;line-height:1.5;min-height:50px;font-weight:600}
+  .pres .ctrl{display:flex;align-items:center;gap:12px;margin-top:12px}
+  .pres .pbtn{background:var(--green);color:#fff;border:none;width:44px;height:44px;border-radius:50%;font-size:16px;cursor:pointer;display:grid;place-items:center;flex-shrink:0}
+  .pres .dots{display:flex;gap:6px} .pres .dots i{width:8px;height:8px;border-radius:50%;background:var(--line);transition:.2s} .pres .dots i.on{background:var(--green);transform:scale(1.3)}
+  .pres .skip{margin-left:auto;font-size:13px;color:var(--muted);cursor:pointer;text-decoration:underline}
+  .host .mouth{transform-origin:center;transform-box:fill-box}
+  .pres.talking .host .mouth{animation:talk .28s infinite alternate}
+  @keyframes talk{from{transform:scaleY(.35)}to{transform:scaleY(1.1)}}
+  .pres.talking .host .head{animation:bob 1.7s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+  .cert{background:#fff;color:#0a3550;border:6px double var(--green);border-radius:12px;max-width:640px;width:100%;padding:36px 34px;text-align:center}
+  .cert .k{letter-spacing:3px;text-transform:uppercase;font-size:11px;color:var(--muted)}
+  .cert h2{font-size:25px;margin:8px 0;color:var(--navy)}
+  .cert .nm{font-size:28px;font-weight:800;color:var(--navy);margin:16px 0 8px;border-bottom:2px solid var(--line);display:inline-block;padding:0 18px 6px}
+  .cert .dt{margin-top:18px;font-size:13px;color:var(--muted)}
+  .cert .sig{margin-top:26px;display:flex;justify-content:space-around;font-size:12px;color:var(--muted)}
+  .cert .btns{margin-top:20px;display:flex;gap:10px;justify-content:center}
+  .cert .btns button{border:none;padding:10px 18px;border-radius:10px;font-weight:800;font-size:14px;cursor:pointer}
+  .cert .btns .pr{background:var(--green);color:#fff} .cert .btns .cl{background:var(--line);color:var(--navy)}
+  @media print{body *{visibility:hidden}#certOvl,#certOvl *{visibility:visible}#certOvl{position:absolute;inset:0;background:#fff;display:block}.cert{border-color:#1f8a5b;box-shadow:none}.cert .btns{display:none}}
 </style>
 </head>
 <body>
@@ -266,6 +310,40 @@
     <h1>Bem-vindo ao seu inglês na Delta Ducon</h1>
     <p>Aqui você aprende inglês com a nossa própria história, as nossas áreas e o nosso dia a dia. Sem pressa — cada passo conta.</p>
   </div></div>
+
+  <div class="wrap" style="margin-top:16px"><div id="dashBar"></div></div>
+
+  <div class="section wrap" style="padding-top:14px">
+    <div class="pres" id="pres">
+      <svg class="host" viewBox="0 0 120 122" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="60" cy="114" rx="30" ry="5" fill="rgba(13,43,62,.10)"/>
+        <g class="head">
+          <path d="M60 12 L90 24 L60 36 L30 24 Z" fill="#0a3550"/>
+          <rect x="57" y="6" width="6" height="9" rx="2" fill="#0a3550"/>
+          <circle cx="60" cy="64" r="38" fill="var(--green)"/>
+          <circle cx="60" cy="64" r="38" fill="none" stroke="rgba(0,0,0,.06)" stroke-width="2"/>
+          <ellipse cx="46" cy="58" rx="9" ry="10.5" fill="#fff"/>
+          <ellipse cx="74" cy="58" rx="9" ry="10.5" fill="#fff"/>
+          <circle cx="47.5" cy="60" r="4.6" fill="#0a3550"/>
+          <circle cx="72.5" cy="60" r="4.6" fill="#0a3550"/>
+          <circle cx="49" cy="58.5" r="1.5" fill="#fff"/>
+          <circle cx="74" cy="58.5" r="1.5" fill="#fff"/>
+          <circle cx="40" cy="74" r="4.5" fill="rgba(255,255,255,.35)"/>
+          <circle cx="80" cy="74" r="4.5" fill="rgba(255,255,255,.35)"/>
+          <ellipse class="mouth" cx="60" cy="80" rx="9" ry="5.5" fill="#0a3550"/>
+        </g>
+      </svg>
+      <div class="pbody">
+        <div class="cta">▶ Duca explica · como funciona (1 min)</div>
+        <div class="cap" id="presCap">Oi! Seja bem-vindo ao seu inglês na Delta Ducon.</div>
+        <div class="ctrl">
+          <button class="pbtn" id="presPlay" onclick="presToggle()">▶</button>
+          <div class="dots" id="presDots"></div>
+          <span class="skip" onclick="presSkip()">pular</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="section wrap">
     <span class="kicker">Comece por aqui</span>
@@ -393,6 +471,28 @@
 
 <div class="toast" id="toast">Muito bem</div>
 
+<!-- ONBOARDING -->
+<div class="ovl" id="onbOvl">
+  <div class="ocard" id="onbCard">
+    <div class="em">👋</div>
+    <h3>Bem-vindo ao seu inglês na Delta Ducon</h3>
+    <p>Este material é assíncrono e feito sob medida para você. Diga quem é você para começarmos.</p>
+    <div class="namerow"><select id="nameSel"></select></div>
+    <div class="row2">
+      <input id="nameFree" placeholder="Digite o seu nome" autocomplete="off">
+      <select id="deptSel"></select>
+    </div>
+    <button class="prim" onclick="onbConfirm()">Começar meu curso →</button>
+    <span class="alt namerow" onclick="onbFree()">Meu nome não está na lista</span>
+    <span class="alt row2" onclick="document.getElementById('onbCard').classList.remove('freemode')">← Voltar para a lista</span>
+  </div>
+</div>
+
+<!-- CERTIFICADO -->
+<div class="ovl" id="certOvl">
+  <div class="cert" id="certBody"></div>
+</div>
+
 <script src="/deltaducon/lessons.js"></script>
 <script>
 /* ---------- audio ---------- */
@@ -427,7 +527,10 @@ function speak(text,lang,el){try{
 if(synth&&synth.onvoiceschanged!==undefined){synth.onvoiceschanged=()=>{};}
 
 /* ---------- router ---------- */
-function go(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function go(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});
+  if(id!=='home'&&typeof presStop==='function')presStop();
+  if(id==='home'&&typeof renderHome==='function')renderHome();
+  if(id==='study'&&typeof renderStudy==='function')renderStudy();}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1500);}
 function esc(s){return String(s).replace(/'/g,"\\'").replace(/"/g,'&quot;');}
 
@@ -592,7 +695,7 @@ try{PROG=JSON.parse(localStorage.getItem(PKEY)||'{}')||{};}catch(e){PROG={};}
 function saveProg(){try{localStorage.setItem(PKEY,JSON.stringify(PROG));}catch(e){}}
 function isDone(t,l){return !!PROG[t+'_'+l];}
 function trackDone(ti){const t=DATA[ti];let n=0;for(let j=0;j<t.lessons.length;j++)if(isDone(ti,j))n++;return n;}
-function markDone(ti,li){const k=ti+'_'+li;if(!PROG[k]){PROG[k]=1;saveProg();}}
+function markDone(ti,li){const k=ti+'_'+li;if(!PROG[k]){PROG[k]=1;saveProg();if(typeof renderHome==='function')renderHome();}}
 
 function renderStudy(){
   document.getElementById('studyGrid').innerHTML = DATA.map((t,i)=>{
@@ -638,7 +741,7 @@ function openLesson(ti,li){
   document.getElementById('lessonSub').textContent='Gramática: '+L.grammar;
   document.getElementById('progressNote').textContent='';
   const cel=document.getElementById('celebrate');cel.className='celebrate';
-  cel.innerHTML=`<div class="tag">Aula concluída</div><div class="en">${(L.celebrate&&L.celebrate.en)||'Well done. Consistency turns practice into fluency.'}</div><div class="pt">${(L.celebrate&&L.celebrate.pt)||'Muito bem. A consistência transforma a prática em fluência.'}</div>`;
+  cel.innerHTML=`<div class="tag">${(typeof firstName==='function'&&firstName())?firstName()+', aula concluída 🎉':'Aula concluída'}</div><div class="en">${(L.celebrate&&L.celebrate.en)||'Well done. Consistency turns practice into fluency.'}</div><div class="pt">${(L.celebrate&&L.celebrate.pt)||'Muito bem. A consistência transforma a prática em fluência.'}</div>`;
 
   const bt=document.getElementById('lessonBackTop'),bb=document.getElementById('lessonBackBot');
   bt.onclick=()=>openTrack(ti);bb.onclick=()=>openTrack(ti);
@@ -702,7 +805,149 @@ function openLesson(ti,li){
   go('lesson');
 }
 
+/* ======================================================
+   PERSONALIZAÇÃO (identidade local) + APRESENTADOR
+   ====================================================== */
+// track index: 0 BIZ,1 ADM,2 SAL,3 IND,4 QUA,5 PEO,6 ENG,7 PUR
+const PEOPLE=[
+ {n:"Aldo Stella Junior",t:2},
+ {n:"André Vinicius Neves Dias",t:3},
+ {n:"Andrea Rosa dos Santos",t:2},
+ {n:"Anselmo Teixeira",t:2},
+ {n:"Carlos Eduardo Campos de Freitas",t:2},
+ {n:"Felipe da Silva Ribeiro Mariano",t:2},
+ {n:"Felipe Gomes",t:6},
+ {n:"Fernando Antonio Rosatti",t:7},
+ {n:"Fernando Maranim Sandoval",t:2},
+ {n:"Gabriel Marcos de Rosa Miari",t:3},
+ {n:"Gustavo Quintela dos Santos",t:6},
+ {n:"Hugo César Alves Dantas",t:6},
+ {n:"Jefferson Matozinho da Luz",t:6},
+ {n:"Jessica Lima da Silva",t:2},
+ {n:"Marcio Clementino dos Santos Sousa",t:6},
+ {n:"Milton Chiga",t:2},
+ {n:"Raphael Henrique Aguiar da Silva",t:2},
+ {n:"Ricardo Bruno Aguiar da Silva",t:6}
+].sort((a,b)=>a.n.localeCompare(b.n,'pt'));
+
+const UKEY='dd_user_v1';
+let USER=null; try{USER=JSON.parse(localStorage.getItem(UKEY)||'null');}catch(e){USER=null;}
+function saveUser(){try{localStorage.setItem(UKEY,JSON.stringify(USER));}catch(e){}}
+function firstName(){return (USER&&USER.name)?USER.name.trim().split(' ')[0]:'';}
+
+/* ---------- onboarding ---------- */
+function buildOnboard(){
+  const sel=document.getElementById('nameSel');
+  sel.innerHTML='<option value="">Selecione o seu nome…</option>'+PEOPLE.map((p,i)=>`<option value="${i}">${p.n}</option>`).join('');
+  const ds=document.getElementById('deptSel');
+  ds.innerHTML='<option value="">Selecione o seu departamento…</option>'+DATA.map((t,i)=>`<option value="${i}">${t.ptName}</option>`).join('');
+}
+function onbFree(){document.getElementById('onbCard').classList.add('freemode');}
+function onbConfirm(){
+  const card=document.getElementById('onbCard');
+  if(card.classList.contains('freemode')){
+    const nm=(document.getElementById('nameFree').value||'').trim();
+    const d=document.getElementById('deptSel').value;
+    if(!nm){toast('Digite o seu nome');return;}
+    if(d===''){toast('Escolha o seu departamento');return;}
+    USER={name:nm,t:+d};
+  }else{
+    const v=document.getElementById('nameSel').value;
+    if(v===''){toast('Selecione o seu nome');return;}
+    USER={name:PEOPLE[+v].n,t:PEOPLE[+v].t};
+  }
+  saveUser();
+  document.getElementById('onbOvl').classList.remove('show');
+  renderHome(); presRefresh();
+  toast('Olá, '+firstName()+'! Bom te ver 👋');
+}
+function changeUser(){document.getElementById('onbCard').classList.remove('freemode');document.getElementById('onbOvl').classList.add('show');}
+
+/* ---------- painel pessoal ---------- */
+function nextLesson(ti){const t=DATA[ti];for(let j=0;j<t.lessons.length;j++)if(!isDone(ti,j))return j;return t.lessons.length-1;}
+function renderHome(){
+  const bar=document.getElementById('dashBar'); if(!bar)return;
+  if(!USER){bar.innerHTML='';return;}
+  const ti=USER.t,t=DATA[ti],tot=t.lessons.length,dn=trackDone(ti),pct=Math.round(dn/tot*100),nl=nextLesson(ti);
+  const m1=[0,1,2,3,4].every(j=>isDone(ti,j)), full=dn>=tot;
+  let cert=''; if(full)cert=`<button class="ghost" onclick="showCert(${ti},2)">🎓 Certificado</button>`; else if(m1)cert=`<button class="ghost" onclick="showCert(${ti},1)">🎓 Certificado M1</button>`;
+  bar.innerHTML=`<div class="dash">
+    <div class="ring" style="--p:${pct}"><i>${dn}/${tot}</i></div>
+    <div class="hi"><b>Olá, ${firstName()} 👋</b><small>${full?'Você concluiu a sua trilha! Explore as outras se quiser.':'Uma lição por semana e você chega lá.'}</small>
+      <span class="trk">Sua trilha: ${t.ptName}</span></div>
+    <div class="acts">
+      <button onclick="openTrack(${ti})">Minha trilha</button>
+      <button class="ghost" onclick="openLesson(${ti},${nl})">${dn>0?(full?'Revisar':'Continuar'):'Começar a aula 1'}</button>
+      ${cert}
+    </div>
+    <span class="chg" onclick="changeUser()">não é você? trocar</span>
+  </div>`;
+}
+
+/* ---------- apresentador "Duca" ---------- */
+function presScript(){
+  const fn=firstName();
+  return [
+   (fn?('Oi, '+fn+'! Seja bem-vindo.'):'Oi! Seja bem-vindo.')+' Este material é assíncrono e foi feito sob medida pro seu desenvolvimento no inglês da Delta Ducon.',
+   'Sua primeira missão é conhecer a empresa e saber apresentá-la em inglês. Navegue pela primeira parte e domine essa tarefa!',
+   'Depois vêm as áreas de atuação da Delta, com um vocabulário bem específico, que sobe de nível aos poucos.',
+   'Mas relaxa: sempre tem um exemplo pra te mostrar como usar cada palavra, e exercícios pra te deixar afiado.',
+   'As trilhas são por departamento. Ache a sua e estude uma lição por semana. E fique à vontade pra explorar as outras, porque conhecimento nunca é demais.',
+   'Toda aula começa com um objetivo: é o ponto principal, o que você precisa aprender ali. Faça todos os exercícios e, se precisar, refaça a unidade.',
+   'Dica de ouro: as frases de "Sentences I need to know" salvam em qualquer situação. Tente memorizar o máximo delas.',
+   'No fim vem a gramática, leve e cheia de exemplos. Esse conteúdo faz toda a diferença nas suas aulas, principalmente nas particulares.',
+   (fn?('Bora começar, '+fn+'?'):'Bora começar?')
+  ];
+}
+let presI=-1, presPlaying=false, presAudio=null, presTok=0;
+function presDots(){const d=document.getElementById('presDots');if(d)d.innerHTML=presScript().map((_,i)=>`<i class="${i===presI?'on':''}"></i>`).join('');}
+function presRefresh(){const c=document.getElementById('presCap');if(c&&!presPlaying&&presI<0)c.textContent=presScript()[0];presDots();}
+function presStop(){presPlaying=false;presTok++;const p=document.getElementById('pres');if(p)p.classList.remove('talking');const b=document.getElementById('presPlay');if(b)b.textContent='▶';try{if(presAudio){presAudio.pause();presAudio=null;}}catch(e){}try{synth.cancel();}catch(e){}}
+function ttsSeg(text,done){try{synth.cancel();synth.resume();const u=new SpeechSynthesisUtterance(text);u.lang='pt-BR';const v=pickVoice('pt-BR');if(v)u.voice=v;u.rate=1;u.onend=done;u.onerror=done;synth.speak(u);}catch(e){if(done)done();}}
+function presPlayFrom(i){
+  const S=presScript();
+  if(i>=S.length){presStop();presI=-1;presDots();document.getElementById('presCap').textContent='Pronto! É só escolher por onde começar aqui embaixo. 👇';return;}
+  presI=i;presPlaying=true;const tok=++presTok;
+  document.getElementById('presCap').textContent=S[i];presDots();
+  const p=document.getElementById('pres');p.classList.add('talking');document.getElementById('presPlay').textContent='⏸';
+  let advanced=false,fbUsed=false;
+  const nextSeg=()=>{if(advanced||tok!==presTok)return;advanced=true;if(presPlaying)presPlayFrom(i+1);};
+  const fallback=()=>{if(fbUsed||tok!==presTok)return;fbUsed=true;presAudio=null;ttsSeg(S[i],nextSeg);};
+  try{
+    const a=new Audio('/deltaducon/audio/intro-'+(i+1)+'.mp3');presAudio=a;
+    a.onended=nextSeg;a.onerror=fallback;
+    a.play().then(()=>{}).catch(fallback);
+  }catch(e){fallback();}
+}
+function presToggle(){if(presPlaying){presStop();}else{presPlayFrom(presI<0?0:presI);}}
+function presSkip(){presStop();presI=-1;presDots();document.getElementById('presCap').textContent='Sem problema — dá play quando quiser. Comece escolhendo uma etapa aqui embaixo. 👇';}
+
+/* ---------- certificado ---------- */
+function showCert(ti,mod){
+  const t=DATA[ti];let dstr='';try{dstr=new Date().toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'});}catch(e){}
+  const scope=mod>=2?'o curso completo (Módulos 1 e 2)':'o Módulo 1';
+  document.getElementById('certBody').innerHTML=`
+    <div class="k">Alumni by Better · Delta Ducon English Program</div>
+    <h2>Certificado de Conclusão</h2>
+    <p>Certificamos que</p>
+    <div class="nm">${USER?USER.name:'—'}</div>
+    <p>concluiu <b>${scope}</b> da trilha<br><b>${t.ptName}</b> do programa de inglês corporativo da Delta Ducon.</p>
+    <div class="dt">Emitido em ${dstr}</div>
+    <div class="sig"><div>__________________<br>Alumni by Better</div><div>__________________<br>Delta Ducon</div></div>
+    <div class="btns"><button class="pr" onclick="window.print()">🖨️ Imprimir / Salvar PDF</button><button class="cl" onclick="document.getElementById('certOvl').classList.remove('show')">Fechar</button></div>`;
+  document.getElementById('certOvl').classList.add('show');
+}
+
+/* ---------- boot ---------- */
+function boot(){
+  buildOnboard();
+  renderHome();
+  presRefresh();
+  if(!USER)document.getElementById('onbOvl').classList.add('show');
+}
+
 renderStudy();
+boot();
 </script>
 </body>
 </html>
