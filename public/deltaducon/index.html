@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Inglês na Delta Ducon · Programa da Equipe</title>
+<style>
+  :root{
+    --navy:#0d2b3e; --navy2:#14415c; --petrol:#0f3a52;
+    --green:#1f9d55; --green2:#34b46b; --green-soft:#e7f6ee;
+    --steel:#5b7385; --bg:#f4f8fa; --card:#ffffff;
+    --ink:#0f2430; --muted:#6a7f8e; --line:#e3ecf1;
+    --amber:#e0a53a; --red:#cb2f3a; --ok:#1f9d55;
+    --shadow:0 10px 30px rgba(13,43,62,.10); --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{line-height:1.2;margin:0 0 .4em}
+  a{color:var(--green);text-decoration:none}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+  .topbar{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(0,0,0,.18)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;cursor:pointer}
+  .logo .mark{width:40px;height:40px;border-radius:9px;background:linear-gradient(135deg,var(--green2),var(--green));
+    display:grid;place-items:center;font-weight:800;color:#fff;font-size:20px;box-shadow:0 4px 12px rgba(31,157,85,.4)}
+  .logo b{font-size:19px;letter-spacing:.5px;font-weight:800}
+  .logo b span{color:var(--green2)}
+  .logo small{display:block;font-size:10.5px;color:#9db6c4;letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+  .topnav{display:flex;gap:22px;font-size:13.5px;color:#c8d7e0;font-weight:500}
+  .topnav span{opacity:.75}
+  @media(max-width:720px){.topnav{display:none}}
+
+  .hero{position:relative;min-height:380px;display:flex;align-items:flex-end;
+    background:linear-gradient(180deg,rgba(13,43,62,.35),rgba(13,43,62,.9)),
+      url('https://static.wixstatic.com/media/0f6ed5_e9286b3abd8040778458ad52178eefc1~mv2.jpg') center/cover no-repeat,
+      linear-gradient(135deg,var(--navy),var(--petrol));color:#fff}
+  .hero .wrap{padding:48px 20px 40px}
+  .hero .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(31,157,85,.92);
+    padding:6px 14px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.8px;margin-bottom:16px;text-transform:uppercase}
+  .hero h1{font-size:38px;font-weight:800;max-width:640px;text-shadow:0 2px 20px rgba(0,0,0,.4)}
+  .hero p{font-size:17px;color:#d7e6ee;max-width:560px;margin:.3em 0 0}
+  @media(max-width:560px){.hero h1{font-size:28px}}
+
+  .section{padding:44px 0}
+  .kicker{display:inline-block;color:var(--green);font-weight:800;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+  .section h2{font-size:26px;color:var(--navy)}
+  .section .lead{color:var(--muted);font-size:16px;max-width:620px;margin:.2em 0 26px}
+
+  .hero-btn{display:flex;gap:20px;align-items:center;width:100%;text-align:left;cursor:pointer;
+    background:linear-gradient(135deg,var(--navy),var(--petrol));color:#fff;border:none;
+    border-radius:20px;padding:26px 28px;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
+  .hero-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(13,43,62,.22)}
+  .hero-btn .ic{width:52px;height:52px;border-radius:13px;background:linear-gradient(135deg,var(--green2),var(--green));
+    display:grid;place-items:center;font-size:24px;font-weight:800;flex-shrink:0}
+  .hero-btn .t b{font-size:20px;font-weight:800;display:block}
+  .hero-btn .t small{color:#bcd2dd;font-size:14px;font-weight:500}
+  .hero-btn .go{margin-left:auto;font-size:26px;color:var(--green2);flex-shrink:0}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .area-btn{position:relative;cursor:pointer;text-align:left;border:1px solid var(--line);
+    background:var(--card);border-radius:var(--radius);padding:0;overflow:hidden;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
+  .area-btn:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(13,43,62,.15)}
+  .area-btn .ph{height:104px;background-size:cover;background-position:center;position:relative}
+  .area-btn .ph::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(13,43,62,.55))}
+  .area-btn .num{position:absolute;top:10px;left:10px;z-index:2;width:30px;height:30px;border-radius:8px;
+    background:var(--green);color:#fff;font-weight:800;display:grid;place-items:center;font-size:15px}
+  .area-btn .bd{padding:16px 18px 18px}
+  .area-btn .bd b{display:block;color:var(--navy);font-size:15.5px;font-weight:700;line-height:1.35}
+  .area-btn .bd small{color:var(--muted);font-size:13px}
+  .area-btn .tag{display:inline-block;margin-top:10px;font-size:11.5px;font-weight:700;background:var(--green-soft);color:var(--green);padding:3px 10px;border-radius:100px}
+  .area-btn .tag.soon{background:#fff4e2;color:var(--amber)}
+
+  .study-cta{background:linear-gradient(135deg,#12324a,#0d2b3e);border-radius:22px;color:#fff;
+    padding:34px 30px;display:flex;align-items:center;gap:24px;box-shadow:var(--shadow)}
+  .study-cta .ic{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--green2),var(--green));
+    display:grid;place-items:center;font-size:20px;font-weight:800;flex-shrink:0}
+  .study-cta h3{font-size:22px;margin:0}
+  .study-cta p{color:#c2d5df;margin:.3em 0 16px;font-size:15px}
+  .study-cta button{background:var(--green);color:#fff;border:none;font-weight:700;font-size:15px;padding:12px 22px;border-radius:100px;cursor:pointer;transition:background .15s}
+  .study-cta button:hover{background:var(--green2)}
+  @media(max-width:560px){.study-cta{flex-direction:column;text-align:center}}
+
+  .view{display:none}
+  .view.active{display:block;animation:fade .35s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .back{display:inline-flex;align-items:center;gap:8px;color:var(--navy);font-weight:700;font-size:14px;cursor:pointer;
+    background:#fff;border:1px solid var(--line);padding:9px 16px;border-radius:100px}
+  .back:hover{background:var(--green-soft);border-color:var(--green)}
+  .back.top{margin:24px 0 8px} .back.bottom{margin:26px 0 44px}
+
+  .vhead{background:linear-gradient(135deg,var(--navy),var(--petrol));color:#fff;border-radius:20px;padding:30px 28px;margin:12px 0 26px;position:relative;overflow:hidden}
+  .vhead h2{font-size:26px;margin:0}
+  .vhead .tk{color:var(--green2);font-weight:800;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;display:block}
+  .vhead p{color:#c8dae3;margin:.35em 0 0;font-size:15px;max-width:660px}
+
+  .story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:8px 8px;box-shadow:var(--shadow);margin-bottom:26px}
+  .bp{padding:16px 16px;border-radius:12px;transition:background .2s}
+  .bp+.bp{border-top:1px solid var(--line)}
+  .bp:hover{background:#fafcfd}
+  .bp .en{font-size:17.5px;color:var(--ink);font-weight:500}
+  .bp .tools{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .pill{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;cursor:pointer;
+    border:1px solid var(--line);background:#fff;color:var(--navy);padding:6px 13px;border-radius:100px;transition:.15s}
+  .pill:hover{border-color:var(--green);color:var(--green);background:var(--green-soft)}
+  .pill.on{background:var(--green);color:#fff;border-color:var(--green)}
+  .pill.speaking{background:var(--amber);border-color:var(--amber);color:#fff;animation:pulse 1s infinite}
+  @keyframes pulse{50%{opacity:.6}}
+  .bp .pt{display:none;margin-top:12px;padding:12px 14px;background:var(--green-soft);border-left:3px solid var(--green);border-radius:8px;color:#0b4a2c;font-size:15.5px}
+  .bp .pt.show{display:block;animation:fade .25s}
+
+  .act{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px;box-shadow:var(--shadow);margin-bottom:22px}
+  .act .atitle{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:800;color:var(--navy);margin-bottom:4px}
+  .act .atitle .n{width:28px;height:28px;border-radius:8px;background:var(--green);color:#fff;display:grid;place-items:center;font-size:14px;flex-shrink:0}
+  .act .ainstr{color:var(--muted);font-size:14px;margin-bottom:16px}
+  .qrow{padding:14px 0;border-top:1px dashed var(--line)}
+  .qrow:first-of-type{border-top:none}
+  .qrow .q{font-size:16px;font-weight:600}
+  .qrow .qpt{color:var(--muted);font-size:13.5px;font-style:italic;margin:2px 0 10px}
+  .qrow select{font-size:15px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);min-width:220px;cursor:pointer;font-family:inherit}
+  .qrow select:focus{outline:none;border-color:var(--green)}
+  .qrow.right select{border-color:var(--ok);background:var(--green-soft)}
+  .qrow.wrong select{border-color:var(--red);background:#fdeceb}
+  .fb{display:inline-block;margin-left:10px;font-weight:700;font-size:14px}
+  .fb.ok{color:var(--ok)} .fb.no{color:var(--red)}
+  .tf{display:flex;gap:8px;margin-top:8px}
+  .tf button{flex:0 0 auto;border:1.5px solid var(--line);background:#fff;font-weight:700;font-size:14px;padding:8px 20px;border-radius:100px;cursor:pointer;color:var(--navy);font-family:inherit}
+  .tf button:hover{border-color:var(--green)}
+  .tf button.sel-ok{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .tf button.sel-no{background:var(--red);color:#fff;border-color:var(--red)}
+  .match{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:560px){.match{gap:12px}}
+  .mcol{display:flex;flex-direction:column;gap:10px}
+  .mitem{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:11px 14px;cursor:pointer;font-weight:600;font-size:15px;transition:.15s;text-align:center}
+  .mitem:hover{border-color:var(--green)}
+  .mitem.sel{border-color:var(--amber);background:#fff8ec}
+  .mitem.done{background:var(--green-soft);border-color:var(--green);color:var(--green);cursor:default;opacity:.85}
+  .say{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--green-soft);border-radius:12px;padding:16px 18px}
+  .say .txt{font-size:17px;font-weight:600;color:#0b4a2c}
+
+  .vcard{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 4px 14px rgba(13,43,62,.06);margin-bottom:12px}
+  .vcard .lvl{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:800;color:#fff;font-size:15px;flex-shrink:0}
+  .vcard .lvl.e{background:var(--green)} .vcard .lvl.m{background:var(--amber)} .vcard .lvl.h{background:var(--navy2)}
+  .vcard .body{flex:1;min-width:0}
+  .vcard .ptw{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.5px;font-weight:700}
+  .vcard .enw{font-size:19px;font-weight:800;color:var(--navy)}
+  .vcard .ex{font-size:14px;color:#41586a;margin-top:3px}
+  .vcard .ex b{color:var(--green);font-style:normal}
+  .vcard .play{width:42px;height:42px;border-radius:50%;border:none;background:var(--navy);color:#fff;font-size:16px;cursor:pointer;flex-shrink:0;transition:.15s}
+  .vcard .play:hover{background:var(--green)}
+  .vcard .play.speaking{background:var(--amber);animation:pulse 1s infinite}
+
+  /* track cards */
+  .tcard{position:relative;cursor:pointer;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
+  .tcard:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(13,43,62,.15)}
+  .tcard .ph{height:96px;background-size:cover;background-position:center;position:relative}
+  .tcard .ph::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,43,62,.15),rgba(13,43,62,.7))}
+  .tcard .bd{padding:15px 18px 18px}
+  .tcard .bd b{display:block;color:var(--navy);font-size:16px;font-weight:800}
+  .tcard .bd small{color:var(--muted);font-size:13px}
+  .tcard .cnt{position:absolute;top:10px;right:10px;z-index:2;background:var(--green);color:#fff;font-weight:800;font-size:12px;padding:4px 11px;border-radius:100px}
+
+  /* lesson list */
+  .mdiv{display:flex;align-items:center;gap:12px;margin:22px 2px 4px;color:var(--navy)}
+  .mdiv:first-child{margin-top:2px}
+  .mdiv .mt{font-weight:800;font-size:13px;letter-spacing:.6px;text-transform:uppercase;white-space:nowrap;background:var(--green-soft);color:var(--green);padding:5px 13px;border-radius:100px}
+  .mdiv .ms{font-size:12.5px;color:var(--muted);white-space:nowrap}
+  .mdiv .mln{flex:1;height:1px;background:var(--line)}
+  .llist{display:flex;flex-direction:column;gap:12px}
+  .lrow{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;box-shadow:0 4px 14px rgba(13,43,62,.06);transition:.15s}
+  .lrow:hover{border-color:var(--green);transform:translateX(3px)}
+  .lrow .ln{width:40px;height:40px;border-radius:10px;background:var(--navy);color:#fff;font-weight:800;display:grid;place-items:center;flex-shrink:0}
+  .lrow .li{flex:1;min-width:0}
+  .lrow .li b{color:var(--navy);font-size:16px;display:block}
+  .lrow .li small{color:var(--muted);font-size:13px}
+  .lrow .go{color:var(--green);font-size:22px}
+  .lrow.done{border-color:var(--green);background:var(--green-soft)}
+  .lrow.done .ln{background:var(--green)}
+  .lrow .go .dtag{font-size:11px;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.4px}
+  .tprog{margin-top:10px;height:6px;border-radius:100px;background:#e5edf2;overflow:hidden}
+  .tprog span{display:block;height:100%;background:var(--green);border-radius:100px;transition:width .3s}
+
+  /* lesson blocks */
+  .lblock{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 4px 14px rgba(13,43,62,.05)}
+  .lbadge{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .lbadge .b{width:34px;height:34px;border-radius:9px;background:var(--navy);color:#fff;font-weight:800;display:grid;place-items:center;font-size:15px;flex-shrink:0}
+  .lbadge .b.g{background:var(--green)} .lbadge .b.a{background:var(--amber)}
+  .lbadge h3{margin:0;font-size:17px;color:var(--navy)}
+  .obj{background:var(--green-soft);border-left:4px solid var(--green);padding:14px 16px;border-radius:8px;font-size:15.5px}
+  .listen{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--navy);padding:5px 12px;border-radius:100px;margin-top:6px}
+  .listen:hover{border-color:var(--green);color:var(--green)}
+  .listen.speaking{background:var(--amber);color:#fff;border-color:var(--amber);animation:pulse 1s infinite}
+  .listen.paused,.pill.paused{background:#fff8ec;border-color:var(--amber);color:var(--amber)}
+  .vcard .play.paused{background:var(--amber);color:#fff}
+  .vlist .vi{padding:10px 0;border-top:1px dashed var(--line)}
+  .vlist .vi:first-child{border:none}
+  .vlist .vi b{color:var(--navy);font-size:16px} .vlist .vi .tr{color:var(--muted)}
+  .vlist .vi .eg{font-size:14px;color:#41586a;font-style:italic}
+  .bank{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;padding:14px;background:#f0f6f9;border-radius:12px}
+  .bank .lbl{width:100%;font-size:12.5px;font-weight:800;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px}
+  .chip{background:#fff;border:1.5px solid var(--line);border-radius:100px;padding:6px 14px;font-weight:700;font-size:14px;color:var(--navy)}
+  .chip.sm{background:#eef4f7;font-size:13px;padding:5px 11px;color:#41586a;border-color:transparent}
+  .scramble{display:flex;flex-wrap:wrap;gap:6px}
+  .inp.ordr{width:100%;max-width:520px}
+  .fillrow{margin:11px 0;font-size:15.5px;display:flex;align-items:center;flex-wrap:wrap;gap:2px}
+  .inp{border:1.5px solid var(--line);border-radius:8px;padding:7px 10px;font-size:15px;width:120px;font-family:inherit;transition:.15s}
+  .inp:focus{outline:none;border-color:var(--green)}
+  .inp.ok{border-color:var(--ok);background:var(--green-soft)}
+  .inp.no{border-color:var(--red);background:#fdeceb}
+  .mark{display:inline-block;width:22px;font-weight:800;font-size:15px;margin-left:6px}
+  .mark.ok{color:var(--ok)} .mark.no{color:var(--red)}
+  .wrow{margin:12px 0}
+  .winp{width:100%;max-width:520px;border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;font-size:15px;font-family:inherit}
+  .winp:focus{outline:none;border-color:var(--green)}
+  .winp.ok{border-color:var(--ok);background:var(--green-soft)}
+  .winp.no{border-color:var(--red);background:#fdeceb}
+  .wfb{display:block;font-size:13.5px;font-weight:600;margin-top:4px;min-height:18px}
+  .wfb.ok{color:var(--ok)} .wfb.no{color:var(--red)}
+  .btn{display:inline-block;background:var(--green);color:#fff;border:none;font-weight:700;font-size:14px;padding:9px 18px;border-radius:100px;cursor:pointer;margin-top:12px;font-family:inherit}
+  .btn:hover{background:var(--green2)}
+  .btn.ghost{background:#fff;color:var(--navy);border:1px solid var(--line)}
+  .btn.ghost:hover{border-color:var(--green);color:var(--green)}
+  .dialog{background:#f7fafb;border-radius:10px;padding:14px 16px;font-size:15px}
+  .dialog .l{margin:4px 0}
+  .note{background:#f0f6f9;border-radius:8px;padding:12px 14px;font-size:14.5px;margin-top:10px;color:#41586a}
+  .mistake{padding:10px 0;border-top:1px dashed var(--line)}
+  .mistake:first-child{border:none}
+  .mistake .bad{color:var(--red)} .mistake .good{color:var(--ok);font-weight:600}
+  .mistake small{display:block;color:var(--muted)}
+
+  /* celebration */
+  .progress-note{font-size:13px;color:var(--muted);margin:6px 0 18px}
+  .celebrate{display:none;margin:6px 0 20px;padding:26px 28px;border-radius:18px;text-align:center;color:#fff;
+    background:linear-gradient(135deg,var(--green),#0f7a41);box-shadow:0 14px 34px rgba(31,157,85,.35)}
+  .celebrate.show{display:block;animation:pop .4s ease}
+  @keyframes pop{0%{transform:scale(.94);opacity:0}100%{transform:scale(1);opacity:1}}
+  .celebrate .tag{font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;opacity:.85}
+  .celebrate .en{font-size:20px;font-weight:800;margin:8px 0 6px}
+  .celebrate .pt{font-size:15px;opacity:.95}
+
+  footer{background:var(--navy);color:#9db6c4;text-align:center;padding:28px 20px;font-size:13px;margin-top:40px}
+  footer b{color:#fff}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--navy);color:#fff;padding:12px 22px;border-radius:100px;font-weight:700;font-size:14px;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:transform .35s;z-index:99}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo" onclick="go('home')">
+      <div class="mark">Δ</div>
+      <div><b>DELTA <span>DUCON</span></b><small>Sistemas Ambientais · English Program</small></div>
+    </div>
+    <div class="topnav"><span>Quem Somos</span><span>Divisões</span><span>Tecnologias</span><span>Sustentabilidade</span></div>
+  </div>
+</div>
+
+<!-- HOME -->
+<section id="home" class="view active">
+  <div class="hero"><div class="wrap">
+    <span class="badge">Programa de Inglês · Equipe Delta Ducon</span>
+    <h1>Bem-vindo ao seu inglês na Delta Ducon</h1>
+    <p>Aqui você aprende inglês com a nossa própria história, as nossas áreas e o nosso dia a dia. Sem pressa — cada passo conta.</p>
+  </div></div>
+
+  <div class="section wrap">
+    <span class="kicker">Comece por aqui</span>
+    <h2>Escolha por onde começar</h2>
+    <p class="lead">Cada botão te leva a uma etapa. As instruções estão em português; o conteúdo, em inglês — sempre com tradução quando você precisar.</p>
+    <button class="hero-btn" onclick="go('conheca')">
+      <span class="ic">Δ</span>
+      <span class="t"><b>Conheça a Delta Ducon em inglês</b>
+        <small>A nossa história, a fundação e o nosso negócio — de um jeito interativo, com áudio e tradução.</small></span>
+      <span class="go">→</span>
+    </button>
+  </div>
+
+  <div class="section wrap" style="padding-top:6px">
+    <span class="kicker">Vocabulário</span>
+    <h2>Conheça mais sobre nossas áreas de atuação em inglês</h2>
+    <p class="lead">Palavras do fácil para o difícil, com som e exemplos sempre baseados na Delta, no nosso negócio e nos nossos clientes.</p>
+    <div class="grid">
+      <button class="area-btn" onclick="openArea(0)">
+        <div class="ph" style="background-image:linear-gradient(180deg,rgba(13,43,62,.1),transparent),url('https://static.wixstatic.com/media/0f6ed5_dcdbf45564ab422e91d753753623c2e4~mv2.jpg')"><span class="num">1</span></div>
+        <div class="bd"><b>Controle de Emissões Atmosféricas</b><small>Exaustão Industrial</small><span class="tag">Disponível</span></div>
+      </button>
+      <button class="area-btn" onclick="openArea(1)">
+        <div class="ph" style="background-image:linear-gradient(180deg,rgba(13,43,62,.1),transparent),url('https://static.wixstatic.com/media/0f6ed5_b85e26e9a1e4447a924460bf8ebcff6f~mv2.jpg')"><span class="num">2</span></div>
+        <div class="bd"><b>Transportes Pneumáticos</b><small>Manuseios e Moagem Fina</small><span class="tag">Disponível</span></div>
+      </button>
+      <button class="area-btn" onclick="openArea(2)">
+        <div class="ph" style="background-image:linear-gradient(180deg,rgba(13,43,62,.1),transparent),url('https://static.wixstatic.com/media/0f6ed5_2f23468731be406fb49894316fe52bff~mv2.png')"><span class="num">3</span></div>
+        <div class="bd"><b>Engenharia, Serviços e Peças</b><small>Pós-vendas e manutenção</small><span class="tag">Disponível</span></div>
+      </button>
+      <button class="area-btn" onclick="openArea(3)">
+        <div class="ph" style="background-image:linear-gradient(180deg,rgba(13,43,62,.1),transparent),url('https://static.wixstatic.com/media/0f6ed5_e9286b3abd8040778458ad52178eefc1~mv2.jpg')"><span class="num">4</span></div>
+        <div class="bd"><b>Tratamento de Águas e Efluentes</b><small>Soluções sustentáveis</small><span class="tag">Disponível</span></div>
+      </button>
+    </div>
+  </div>
+
+  <div class="section wrap" style="padding-top:6px">
+    <div class="study-cta">
+      <span class="ic">EN</span>
+      <div>
+        <h3>Agora é hora de estudar inglês</h3>
+        <p>Trilhas por área com aulas completas: vocabulário, prática, gramática e áudio — no ritmo da Delta Ducon.</p>
+        <button onclick="go('study')">Ver as trilhas de estudo →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONHEÇA -->
+<section id="conheca" class="view">
+  <div class="wrap">
+    <div class="back top" onclick="go('home')">← Voltar ao início</div>
+    <div class="vhead"><h2>Conheça a Delta Ducon em inglês</h2>
+      <p>Leia a nossa história em inglês. Clique em <b>Ver tradução</b> quando precisar e em <b>▶</b> para ouvir. Depois, faça as atividades.</p></div>
+    <span class="kicker">Our story</span>
+    <h2 style="color:var(--navy);font-size:22px;margin-bottom:14px">Read and translate</h2>
+    <div class="story" id="story"></div>
+    <div class="act"><div class="atitle"><span class="n">1</span> Datas &amp; fatos da Delta</div>
+      <div class="ainstr">Leia a pergunta em inglês (com a tradução abaixo) e escolha a resposta certa.</div><div id="quizDates"></div></div>
+    <div class="act"><div class="atitle"><span class="n">2</span> Verdadeiro ou falso? (True or False)</div>
+      <div class="ainstr">A frase está certa? Clique em <b>True</b> (verdadeiro) ou <b>False</b> (falso).</div><div id="quizTF"></div></div>
+    <div class="act"><div class="atitle"><span class="n">3</span> Ligue as palavras (Match)</div>
+      <div class="ainstr">Clique em uma palavra em inglês e depois na tradução em português.</div><div class="match" id="matchGame"></div></div>
+    <div class="act"><div class="atitle"><span class="n">4</span> Complete a frase (Complete)</div>
+      <div class="ainstr">Escolha a palavra que completa a frase sobre a Delta.</div><div id="quizComplete"></div></div>
+    <div class="act"><div class="atitle"><span class="n">5</span> Fale em voz alta (Say it out loud)</div>
+      <div class="ainstr">Ouça, repita em voz alta e marque quando conseguir.</div>
+      <div class="say"><button class="pill" onclick="speak('I work at Delta Ducon. We protect the environment.','en-US',this)">▶ Ouvir</button>
+        <span class="txt">"I work at Delta Ducon. We protect the environment."</span>
+        <button class="pill" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'Consegui!':'✓ Eu disse'">✓ Eu disse</button></div></div>
+    <div class="back bottom" onclick="go('home')">← Voltar ao início</div>
+  </div>
+</section>
+
+<!-- AREA (dinâmica) -->
+<section id="area" class="view">
+  <div class="wrap">
+    <div class="back top" onclick="go('home')">← Voltar ao início</div>
+    <div class="vhead"><span class="tk" id="areaSub"></span><h2 id="areaTitle"></h2>
+      <p>Vocabulário essencial da área, do mais fácil para o mais difícil. Palavra em português, correspondente em inglês, som (<b>▶</b>) e um exemplo baseado na Delta.</p></div>
+    <div id="areaVocab"></div>
+    <div class="act" style="margin-top:8px"><div class="atitle"><span class="n">✓</span> Prática rápida</div>
+      <div class="ainstr">Escolha a tradução correta em inglês.</div><div id="areaQuiz"></div></div>
+    <div class="back bottom" onclick="go('home')">← Voltar ao início</div>
+  </div>
+</section>
+
+<!-- STUDY (tracks) -->
+<section id="study" class="view">
+  <div class="wrap">
+    <div class="back top" onclick="go('home')">← Voltar ao início</div>
+    <div class="vhead"><h2>Trilhas de estudo</h2><p>Escolha a trilha da sua área. Cada trilha tem 10 aulas em 2 módulos, do básico ao mais avançado, com vocabulário, prática e gramática do seu dia a dia na Delta.</p></div>
+    <div class="grid" id="studyGrid"></div>
+    <div class="back bottom" onclick="go('home')">← Voltar ao início</div>
+  </div>
+</section>
+
+<!-- TRACK (lessons) -->
+<section id="track" class="view">
+  <div class="wrap">
+    <div class="back top" onclick="go('study')">← Voltar às trilhas</div>
+    <div class="vhead"><span class="tk" id="trackKicker"></span><h2 id="trackTitle"></h2><p id="trackSub"></p></div>
+    <div class="llist" id="trackBody"></div>
+    <div class="back bottom" onclick="go('study')">← Voltar às trilhas</div>
+  </div>
+</section>
+
+<!-- LESSON (dynamic) -->
+<section id="lesson" class="view">
+  <div class="wrap">
+    <div class="back top" id="lessonBackTop">← Voltar às aulas</div>
+    <div class="vhead"><span class="tk" id="lessonKicker"></span><h2 id="lessonTitle"></h2><p id="lessonSub"></p></div>
+    <div class="progress-note" id="progressNote"></div>
+    <div id="lessonBody"></div>
+    <div class="celebrate" id="celebrate"></div>
+    <div class="back bottom" id="lessonBackBot">← Voltar às aulas</div>
+  </div>
+</section>
+
+<footer>
+  <b>DELTA DUCON</b> · Sistemas e Tecnologias Ambientais · Programa de Inglês da Equipe<br>
+  <span style="opacity:.7">Modelo v3 — desenvolvido por Alumni by Better</span>
+</footer>
+
+<div class="toast" id="toast">Muito bem</div>
+
+<script src="/deltaducon/lessons.js"></script>
+<script>
+/* ---------- audio ---------- */
+const synth = window.speechSynthesis;
+function pickVoice(lang){const vs=synth.getVoices();return vs.find(v=>v.lang===lang)||vs.find(v=>v.lang&&v.lang.startsWith(lang.split('-')[0]));}
+let audBtn=null, userPaused=false;
+function setIcon(el,icon){if(!el)return;const t=el.textContent;el.textContent=/^[▶⏸]/.test(t)?icon+t.slice(1):icon+t;}
+function clearBtn(el){if(!el)return;el.classList.remove('speaking','paused');setIcon(el,'▶');}
+function speak(text,lang,el){try{
+  // clique no MESMO botão: pausa / retoma
+  if(el&&audBtn===el){
+    if(synth.paused){userPaused=false;synth.resume();el.classList.remove('paused');el.classList.add('speaking');setIcon(el,'⏸');return;}
+    if(synth.speaking){userPaused=true;synth.pause();el.classList.remove('speaking');el.classList.add('paused');setIcon(el,'▶');return;}
+  }
+  // novo áudio: destrava o motor (bug do Chrome que fica "preso em pausa" após um pause)
+  userPaused=false;
+  synth.cancel(); synth.resume();
+  if(audBtn&&audBtn!==el)clearBtn(audBtn);
+  document.querySelectorAll('.speaking,.paused').forEach(e=>e.classList.remove('speaking','paused'));
+  const clean=String(text).replace(/\s+/g,' ').trim();
+  const segs=(clean.match(/[^.!?]+[.!?]*/g)||[clean]).map(s=>s.trim()).filter(Boolean);
+  const v=pickVoice(lang);
+  audBtn=el||null;
+  if(el){el.classList.add('speaking');setIcon(el,'⏸');}
+  let done=0;
+  const finish=()=>{if(el)clearBtn(el);if(audBtn===el)audBtn=null;};
+  segs.forEach(seg=>{const u=new SpeechSynthesisUtterance(seg);u.lang=lang;if(v)u.voice=v;u.rate=lang.startsWith('en')?0.92:1;
+    u.onend=()=>{done++;if(done>=segs.length)finish();};
+    u.onerror=()=>finish();
+    synth.speak(u);});
+}catch(e){}}
+if(synth&&synth.onvoiceschanged!==undefined){synth.onvoiceschanged=()=>{};}
+
+/* ---------- router ---------- */
+function go(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1500);}
+function esc(s){return String(s).replace(/'/g,"\\'").replace(/"/g,'&quot;');}
+
+/* ---------- generic checkers ---------- */
+function ac(inp){const v=inp.value.trim().toLowerCase(),a=inp.dataset.ans.toLowerCase(),m=inp.nextElementSibling;
+  if(v===a){inp.className='inp ok';m.className='mark ok';m.textContent='✓';toast('Muito bem');maybeCelebrate();}else{inp.className='inp';m.className='mark';m.textContent='';}}
+function ab(inp){const v=inp.value.trim().toLowerCase(),a=inp.dataset.ans.toLowerCase(),m=inp.nextElementSibling;
+  if(v===''){inp.className='inp';m.className='mark';m.textContent='';return;}
+  if(v===a){inp.className='inp ok';m.className='mark ok';m.textContent='✓';maybeCelebrate();}else{inp.className='inp no';m.className='mark no';m.textContent='✗';}}
+function norm(s){return String(s).toLowerCase().replace(/[.,;:!?"']/g,'').replace(/\s+/g,' ').trim();}
+function scramble(s){const w=s.replace(/[.]$/,'').split(/\s+/);if(w.length<2)return w;let t=w.slice();for(let a=0;a<6;a++){for(let i=t.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const tmp=t[i];t[i]=t[j];t[j]=tmp;}if(t.join(' ')!==w.join(' '))break;}return t;}
+function acOrder(inp){const v=norm(inp.value),a=norm(inp.dataset.ans),m=inp.nextElementSibling;if(v===a){inp.className='inp ordr ok';m.className='mark ok';m.textContent='✓';toast('Muito bem');maybeCelebrate();}else{inp.className='inp ordr';m.className='mark';m.textContent='';}}
+function abOrder(inp){const v=norm(inp.value),a=norm(inp.dataset.ans),m=inp.nextElementSibling;if(v===''){inp.className='inp ordr';m.className='mark';m.textContent='';return;}if(v===a){inp.className='inp ordr ok';m.className='mark ok';m.textContent='✓';maybeCelebrate();}else{inp.className='inp ordr no';m.className='mark no';m.textContent='✗';}}
+function checkSel(sel,rowId,ans){const row=document.getElementById(rowId),fb=row.querySelector('.fb');row.classList.remove('right','wrong');
+  if(sel.value===''){fb.textContent='';return;}
+  if(sel.value===ans){row.classList.add('right');fb.className='fb ok';fb.textContent='✓';toast('Muito bem');}else{row.classList.add('wrong');fb.className='fb no';fb.textContent='✗ Tente de novo';}}
+function checkTF(i,choice,ans){const row=document.getElementById('tf'+i),fb=row.querySelector('.fb'),btns=row.querySelectorAll('.tf button');btns.forEach(b=>b.className='');
+  const clicked=choice?btns[0]:btns[1];
+  if(choice===ans){clicked.className=choice?'sel-ok':'sel-no';fb.className='fb ok';fb.textContent='✓ Certo';toast('Certo');}else{fb.className='fb no';fb.textContent='✗ Não é bem isso';}}
+function checkWrite(inp){const v=inp.value.trim().toLowerCase(),fb=inp.nextElementSibling,st=inp.dataset.start,inc=inp.dataset.inc,label=inp.dataset.label;
+  if(v===''){inp.className='winp';fb.className='wfb';fb.textContent='';return;}
+  let ok; if(st){ok=v.startsWith(st)&&v.length>st.length+1;}else{ok=v.indexOf(inc)>=0&&v.length>inc.length+2;}
+  if(ok){inp.className='winp ok';fb.className='wfb ok';fb.textContent='✓ Muito bem — '+(st?'sua frase começa com "'+label+'".':'sua frase usa "'+label+'".');}
+  else{inp.className='winp no';fb.className='wfb no';fb.textContent=(st?'Comece com "'+label+'"':'Use "'+label+'"')+' e complete a frase.';}}
+
+/* ---------- celebration ---------- */
+function maybeCelebrate(){
+  if(!document.getElementById('lesson').classList.contains('active'))return;
+  const body=document.getElementById('lessonBody');
+  const req=body.querySelectorAll('input[data-ans]');
+  if(!req.length)return;
+  let ok=0;req.forEach(i=>{if(i.classList.contains('ok'))ok++;});
+  document.getElementById('progressNote').textContent='Progresso dos exercícios: '+ok+'/'+req.length;
+  const cel=document.getElementById('celebrate');
+  if(ok===req.length&&!cel.classList.contains('show')){cel.classList.add('show');if(curTrack!=null&&curLesson!=null)markDone(curTrack,curLesson);setTimeout(()=>cel.scrollIntoView({behavior:'smooth',block:'center'}),150);}
+}
+
+/* ======================================================
+   CONHEÇA + ÁREA 1  (conteúdo institucional fixo)
+   ====================================================== */
+const STORY=[
+ ["Hello! Welcome to Delta Ducon. We are happy to have you here.","Olá! Bem-vindo à Delta Ducon. Estamos felizes em ter você aqui."],
+ ["Delta Ducon is a Brazilian company. We started in 1998, in São Paulo.","A Delta Ducon é uma empresa brasileira. Começamos em 1998, em São Paulo."],
+ ["We have more than 25 years of experience. We protect the environment.","Temos mais de 25 anos de experiência. Nós protegemos o meio ambiente."],
+ ["We build systems to clean the air and the gases from big factories.","Construímos sistemas para limpar o ar e os gases das grandes fábricas."],
+ ["We work with steel, mining, cement, chemical, and food industries.","Trabalhamos com as indústrias de aço, mineração, cimento, química e alimentos."],
+ ["Today, more than 15,000 of our systems are working around Brazil.","Hoje, mais de 15.000 dos nossos sistemas estão funcionando pelo Brasil."],
+ ["We work 'turn-key'. We do the project, the equipment, and the start-up.","Trabalhamos 'turn-key'. Fazemos o projeto, os equipamentos e a partida (start-up)."],
+ ["Our mission is simple: to protect the environment with sustainable solutions.","Nossa missão é simples: proteger o meio ambiente com soluções sustentáveis."]];
+const DATES=[
+ ["When did Delta Ducon start?","Quando a Delta Ducon começou?",["1978","1998","2018"],"1998"],
+ ["How many years of experience does Delta Ducon have?","Quantos anos de experiência a Delta Ducon tem?",["more than 5","more than 25","more than 100"],"more than 25"],
+ ["How many systems are working today?","Quantos sistemas estão funcionando hoje?",["150","15,000","150,000"],"15,000"],
+ ["Where is Delta Ducon from?","De onde é a Delta Ducon?",["Brazil","Japan","Germany"],"Brazil"],
+ ["What does Delta Ducon protect?","O que a Delta Ducon protege?",["the environment","the internet","the bank"],"the environment"]];
+const TF=[["Delta Ducon protects the environment.","A Delta Ducon protege o meio ambiente.",true],
+ ["Delta Ducon started in 2020.","A Delta Ducon começou em 2020.",false],
+ ["Delta Ducon works with steel factories.","A Delta Ducon trabalha com fábricas de aço.",true]];
+const PAIRS=[["company","empresa"],["air","ar"],["factory","fábrica"],["environment","meio ambiente"],["gas","gás"]];
+const COMPLETE=[["Delta Ducon cleans the ______ from factories.",["air","coffee","music"],"air"],
+ ["We protect the ______.",["environment","television","weather"],"environment"],
+ ["Delta Ducon is a ______ company.",["Brazilian","Italian","French"],"Brazilian"]];
+const AREAS=[
+ {sub:"Exaustão Industrial",title:"Controle de Emissões Atmosféricas",vocab:[
+   ["e","ar","air","Delta Ducon cleans the |air| around big factories."],
+   ["e","gás","gas","We treat the |gas| before it leaves the chimney."],
+   ["e","poeira","dust","Our filters capture the |dust| from the process."],
+   ["e","fábrica","factory","The steel |factory| needs a clean-air system."],
+   ["m","filtro","filter","The |filter| stops the small particles."],
+   ["m","chaminé","chimney / stack","The clean gas goes out through the |chimney|."],
+   ["m","emissão","emission","We control the |emissions| from the furnace."],
+   ["m","exaustão","exhaust / extraction","The |exhaust| system removes the hot gases."],
+   ["h","despoeiramento","dedusting","|Dedusting| keeps the steel plant clean and safe."],
+   ["h","filtro de mangas","bag filter","A |bag filter| separates the dust from the air."],
+   ["h","lavador de gases","gas scrubber","The |gas scrubber| removes the acid gases."],
+   ["h","precipitador eletrostático","electrostatic precipitator","The |electrostatic precipitator| captures very fine particles."]],
+  quiz:[["poeira",["dust","water","light"],"dust"],["chaminé",["chimney","kitchen","garden"],"chimney"],["lavador de gases",["gas scrubber","car wash","dishwasher"],"gas scrubber"]]},
+ {sub:"Manuseios e Moagem Fina",title:"Transportes Pneumáticos",vocab:[
+   ["e","pó","powder","The plant moves fine |powder| through closed pipes."],
+   ["e","tubo","pipe","The material travels inside a steel |pipe|."],
+   ["e","silo","silo","The cement is stored in a large |silo|."],
+   ["e","funil","hopper","The powder falls from the |hopper| into the line."],
+   ["m","soprador","blower","A |blower| pushes the air that carries the powder."],
+   ["m","válvula rotativa","rotary valve","The |rotary valve| feeds the powder at a steady rate."],
+   ["m","alimentador","feeder","The |feeder| controls how much material enters the line."],
+   ["m","transporte pneumático","pneumatic conveying","Delta Ducon designs |pneumatic conveying| systems for powders."],
+   ["h","material a granel","bulk material","We move |bulk material| like cement and lime."],
+   ["h","moagem fina","fine grinding","|Fine grinding| turns the material into a very fine powder."],
+   ["h","descarga","discharge","The |discharge| point sends the powder to the next stage."],
+   ["h","desgaste","wear","Hard powders can cause |wear| inside the pipes."]],
+  quiz:[["silo",["silo","kitchen","garden"],"silo"],["soprador",["blower","broom","bottle"],"blower"],["moagem fina",["fine grinding","fine dining","fine art"],"fine grinding"]]},
+ {sub:"Pós-vendas e manutenção",title:"Engenharia, Serviços e Peças",vocab:[
+   ["e","desenho","drawing","Every project starts with a technical |drawing|."],
+   ["e","peça","part","We keep each |part| ready for our clients."],
+   ["e","serviço","service","Our |service| team supports the plant after start-up."],
+   ["e","equipe","team","The field |team| travels to the client site."],
+   ["m","peça de reposição","spare part","We deliver the |spare part| fast to avoid downtime."],
+   ["m","manutenção","maintenance","Regular |maintenance| keeps the filter working well."],
+   ["m","montagem","assembly","The |assembly| of the equipment takes a few weeks."],
+   ["m","comissionamento","commissioning","|Commissioning| tests the system before start-up."],
+   ["h","garantia","warranty","The equipment comes with a two-year |warranty|."],
+   ["h","reforma","retrofit","A |retrofit| upgrades an old dedusting system."],
+   ["h","parada de manutenção","shutdown","We plan the work during the plant |shutdown|."],
+   ["h","pós-vendas","after-sales","Our |after-sales| service includes parts and support."]],
+  quiz:[["peça de reposição",["spare part","spare time","spare room"],"spare part"],["manutenção",["maintenance","furniture","temperature"],"maintenance"],["garantia",["warranty","warehouse","warning"],"warranty"]]},
+ {sub:"Soluções sustentáveis",title:"Tratamento de Águas e Efluentes",vocab:[
+   ["e","água","water","Delta Ducon treats the |water| used in the process."],
+   ["e","tanque","tank","The effluent is stored in a large |tank|."],
+   ["e","bomba","pump","A |pump| moves the water through the system."],
+   ["e","limpo","clean","After treatment, the water is |clean| and safe."],
+   ["m","efluente","effluent","The plant sends its |effluent| to our treatment system."],
+   ["m","tratamento","treatment","The |treatment| removes solids and oil from the water."],
+   ["m","filtragem","filtration","|Filtration| takes the small particles out of the water."],
+   ["m","reuso","reuse","Treated water can go back to the plant for |reuse|."],
+   ["h","águas residuais","wastewater","We clean the |wastewater| before it leaves the plant."],
+   ["h","lodo","sludge","The |sludge| is separated and removed from the tank."],
+   ["h","decantador","clarifier","The |clarifier| lets the solids settle at the bottom."],
+   ["h","dosagem","dosing","Correct chemical |dosing| keeps the water within limits."]],
+  quiz:[["efluente",["effluent","elephant","event"],"effluent"],["lodo",["sludge","bridge","fridge"],"sludge"],["reuso",["reuse","refuse","rescue"],"reuse"]]}
+];
+
+document.getElementById('story').innerHTML=STORY.map((p,i)=>`<div class="bp"><div class="en">${p[0]}</div>
+ <div class="tools"><button class="pill" onclick="speak('${esc(p[0])}','en-US',this)">▶ Ouvir</button>
+ <button class="pill" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'Ocultar tradução':'Ver tradução';document.getElementById('pt${i}').classList.toggle('show')">Ver tradução</button></div>
+ <div class="pt" id="pt${i}">${p[1]}</div></div>`).join('');
+document.getElementById('quizDates').innerHTML=DATES.map((q,i)=>`<div class="qrow" id="dr${i}"><div class="q">${q[0]}</div><div class="qpt">${q[1]}</div>
+ <select onchange="checkSel(this,'dr${i}','${esc(q[3])}')"><option value="">— escolha —</option>${q[2].map(o=>`<option>${o}</option>`).join('')}</select><span class="fb"></span></div>`).join('');
+document.getElementById('quizTF').innerHTML=TF.map((q,i)=>`<div class="qrow" id="tf${i}"><div class="q">${q[0]}</div><div class="qpt">${q[1]}</div>
+ <div class="tf"><button onclick="checkTF(${i},true,${q[2]})">True</button><button onclick="checkTF(${i},false,${q[2]})">False</button><span class="fb"></span></div></div>`).join('');
+let mSel=null,mDone=0;
+function renderMatch(){const en=PAIRS.map((p,i)=>`<div class="mitem" data-t="en" data-i="${i}" onclick="pick(this)">${p[0]}</div>`).join('');
+ const sh=PAIRS.map((p,i)=>({t:p[1],i})).sort((a,b)=>a.t.localeCompare(b.t));
+ const pt=sh.map(o=>`<div class="mitem" data-t="pt" data-i="${o.i}" onclick="pick(this)">${o.t}</div>`).join('');
+ document.getElementById('matchGame').innerHTML=`<div class="mcol">${en}</div><div class="mcol">${pt}</div>`;}
+function pick(el){if(el.classList.contains('done'))return;
+ if(!mSel){mSel=el;el.classList.add('sel');return;}
+ if(mSel===el){el.classList.remove('sel');mSel=null;return;}
+ if(mSel.dataset.t===el.dataset.t){mSel.classList.remove('sel');mSel=el;el.classList.add('sel');return;}
+ if(mSel.dataset.i===el.dataset.i){mSel.classList.remove('sel');mSel.classList.add('done');el.classList.add('done');mSel=null;mDone++;toast('Certo');if(mDone===PAIRS.length)setTimeout(()=>toast('Você ligou todas!'),400);}
+ else{const a=mSel;a.style.borderColor='var(--red)';el.style.borderColor='var(--red)';setTimeout(()=>{a.style.borderColor='';el.style.borderColor='';a.classList.remove('sel');},600);mSel=null;}}
+renderMatch();
+document.getElementById('quizComplete').innerHTML=COMPLETE.map((q,i)=>`<div class="qrow" id="cp${i}"><div class="q">${q[0]}</div>
+ <select onchange="checkSel(this,'cp${i}','${esc(q[2])}')"><option value="">— escolha —</option>${q[1].map(o=>`<option>${o}</option>`).join('')}</select><span class="fb"></span></div>`).join('');
+function vx(e){return e.replace(/\|(.+?)\|/g,'<b>$1</b>');}function vxP(e){return e.replace(/\|/g,'');}
+function openArea(i){const A=AREAS[i];
+ document.getElementById('areaSub').textContent='Área '+(i+1)+' · '+A.sub;
+ document.getElementById('areaTitle').textContent=A.title;
+ document.getElementById('areaVocab').innerHTML=A.vocab.map(v=>`<div class="vcard"><div class="lvl ${v[0]}">${v[0]==='e'?'1':v[0]==='m'?'2':'3'}</div><div class="body"><div class="ptw">${v[1]}</div><div class="enw">${v[2]}</div><div class="ex">${vx(v[3])}</div></div><button class="play" onclick="speak('${esc(vxP(v[3]))}','en-US',this)">▶</button></div>`).join('');
+ document.getElementById('areaQuiz').innerHTML=A.quiz.map((q,j)=>`<div class="qrow" id="aq${j}"><div class="q">${q[0]} = ?</div><select onchange="checkSel(this,'aq${j}','${esc(q[2])}')"><option value="">— escolha —</option>${q[1].map(o=>`<option>${o}</option>`).join('')}</select><span class="fb"></span></div>`).join('');
+ go('area');}
+
+/* ======================================================
+   STUDY / TRACK / LESSON  (data-driven)
+   ====================================================== */
+const DATA = (window.LESSONS && window.LESSONS.tracks) ? window.LESSONS.tracks : [];
+let curTrack=null, curLesson=null;
+
+/* ---------- progresso (localStorage) ---------- */
+const PKEY='dd_prog_v1';
+let PROG={};
+try{PROG=JSON.parse(localStorage.getItem(PKEY)||'{}')||{};}catch(e){PROG={};}
+function saveProg(){try{localStorage.setItem(PKEY,JSON.stringify(PROG));}catch(e){}}
+function isDone(t,l){return !!PROG[t+'_'+l];}
+function trackDone(ti){const t=DATA[ti];let n=0;for(let j=0;j<t.lessons.length;j++)if(isDone(ti,j))n++;return n;}
+function markDone(ti,li){const k=ti+'_'+li;if(!PROG[k]){PROG[k]=1;saveProg();}}
+
+function renderStudy(){
+  document.getElementById('studyGrid').innerHTML = DATA.map((t,i)=>{
+    const dn=trackDone(i),tot=t.lessons.length,pct=Math.round(dn/tot*100);
+    return `
+    <button class="tcard" onclick="openTrack(${i})">
+      <div class="ph" style="background-image:url('${t.img}')"><span class="cnt">${dn>0?dn+'/'+tot+' ✓':tot+' aulas'}</span></div>
+      <div class="bd"><b>${t.ptName}</b><small>${t.subtitle}</small>
+        <div class="tprog"><span style="width:${pct}%"></span></div>
+      </div>
+    </button>`;}).join('') || '<p class="lead">Conteúdo das trilhas em processamento.</p>';
+}
+function openTrack(i){
+  curTrack=i;const t=DATA[i];
+  document.getElementById('trackKicker').textContent='Trilha';
+  document.getElementById('trackTitle').textContent=t.ptName;
+  document.getElementById('trackSub').textContent=t.subtitle;
+  document.getElementById('trackBody').innerHTML=t.lessons.map((L,j)=>{
+    let div='';
+    if(j===0 && t.lessons.length>5) div=`<div class="mdiv"><span class="mt">Módulo 1</span><span class="ms">Fundamentos</span><span class="mln"></span></div>`;
+    if(j===5) div=`<div class="mdiv"><span class="mt">Módulo 2</span><span class="ms">Avançando</span><span class="mln"></span></div>`;
+    const done=isDone(i,j);
+    return div+`
+    <div class="lrow${done?' done':''}" onclick="openLesson(${i},${j})">
+      <div class="ln">${done?'✓':(j+1)}</div>
+      <div class="li"><b>Aula ${j+1} — ${L.title}</b><small>${L.grammar}</small></div>
+      <div class="go">${done?'<span class="dtag">concluída</span>':'→'}</div>
+    </div>`;}).join('');
+  go('track');
+}
+
+function inputCell(ans,w){return `<input class="inp" style="width:${w||110}px" data-ans="${String(ans).replace(/"/g,'&quot;')}" oninput="ac(this)" onblur="ab(this)"><span class="mark"></span>`;}
+function fillLine(prefixLabel, q, a, ph, w){
+  const parts=q.split(ph);
+  return `<div class="fillrow">${prefixLabel||''}${parts[0]}${inputCell(a,w)}${parts[1]||''}</div>`;
+}
+
+function openLesson(ti,li){
+  curTrack=ti;curLesson=li;
+  const t=DATA[ti],L=t.lessons[li];
+  document.getElementById('lessonKicker').textContent=t.ptName+' · Aula '+(li+1);
+  document.getElementById('lessonTitle').textContent='Aula '+(li+1)+' — '+L.title;
+  document.getElementById('lessonSub').textContent='Gramática: '+L.grammar;
+  document.getElementById('progressNote').textContent='';
+  const cel=document.getElementById('celebrate');cel.className='celebrate';
+  cel.innerHTML=`<div class="tag">Aula concluída</div><div class="en">${(L.celebrate&&L.celebrate.en)||'Well done. Consistency turns practice into fluency.'}</div><div class="pt">${(L.celebrate&&L.celebrate.pt)||'Muito bem. A consistência transforma a prática em fluência.'}</div>`;
+
+  const bt=document.getElementById('lessonBackTop'),bb=document.getElementById('lessonBackBot');
+  bt.onclick=()=>openTrack(ti);bb.onclick=()=>openTrack(ti);
+
+  // ===== ABERTURA (fixa): Objective, Introduction, Vocabulary =====
+  let head=`<div class="lblock"><div class="lbadge"><span class="b g">O</span><h3>Objective of the class</h3></div><div class="obj">${L.objective}</div></div>`;
+  head+=`<div class="lblock"><div class="lbadge"><span class="b">I</span><h3>Introduction</h3></div>${(L.intro||[]).map(p=>`<p>${p}</p>`).join('')}
+    <button class="listen" onclick="speak('${esc((L.intro||[]).join(' '))}','en-US',this)">▶ Listen to introduction</button></div>`;
+  head+=`<div class="lblock"><div class="lbadge"><span class="b">V</span><h3>Vocabulary</h3></div><div class="vlist">`+
+    (L.vocab||[]).map(v=>`<div class="vi"><b>${v[0]}</b> — <span class="tr">${v[1]}</span>
+      <button class="listen" onclick="speak('${esc(v[0])}. ${esc(v[2])}','en-US',this)">▶ Listen</button>
+      <div class="eg">e.g. ${v[2]}</div></div>`).join('')+`</div></div>`;
+
+  // ===== MIOLO (ordem varia por aula) =====
+  const B={};
+  B.P=`<div class="lblock"><div class="lbadge"><span class="b">V</span><h3>Vocabulary Practice</h3></div>
+    <div class="ainstr" style="color:var(--muted)">Digite a palavra que completa cada frase. A correção aparece sozinha.</div>
+    <div class="bank"><span class="lbl">Banco de palavras</span>${(L.bank||[]).map(w=>`<span class="chip">${w}</span>`).join('')}</div>`+
+    (L.practice||[]).slice(0,(L.vocab||[]).length).map((r,i)=>fillLine(String.fromCharCode(97+i)+') ',r[0],r[1],'______',150)).join('')+`</div>`;
+  B.A=L.audio?`<div class="lblock"><div class="lbadge"><span class="b a">A</span><h3>Additional Audios</h3></div>
+    <p><b>Audio 1 — ${L.audio.title}</b></p><p class="note">${L.audio.text}</p>
+    <button class="listen" onclick="speak('${esc(L.audio.text)}','en-US',this)">▶ Listen</button></div>`:'';
+  B.E=`<div class="lblock"><div class="lbadge"><span class="b">E</span><h3>Exercises</h3></div>
+    <p><b>1. Leia em voz alta (Read aloud)</b> — devagar.</p><div class="dialog">`+
+    (L.readAloud||[]).map(s=>`<div class="l">"${s}"</div>`).join('')+`</div>
+    <button class="listen" onclick="speak('${esc((L.readAloud||[]).join(' '))}','en-US',this)" style="margin-top:10px">▶ Listen</button>
+    <p style="margin-top:20px"><b>2. Complete</b> — correção automática.</p>`+
+    (L.fill||[]).map((r,i)=>fillLine(String.fromCharCode(97+i)+') ',r[0],r[1],'___',90)).join('')+`</div>`;
+  B.Q=`<div class="lblock"><div class="lbadge"><span class="b">Q</span><h3>Questions &amp; Answers</h3></div>
+    <div class="ainstr" style="color:var(--muted)">Ouça a pergunta e responda em voz alta. A sugestão de resposta está logo abaixo.</div>`+
+    (L.qa||[]).map(q=>`<div class="qrow"><div class="q">${q[0]} <button class="listen" style="margin-left:8px" onclick="speak('${esc(q[0])}','en-US',this)">▶</button></div>
+      <div class="qpt" style="font-style:normal;color:#41586a">Sugestão: <b>${q[1]}</b></div></div>`).join('')+`</div>`;
+  const moPool=(L.sentences||[]).filter(s=>s.trim().split(/\s+/).length>=4).slice(0,4);
+  B.M=`<div class="lblock"><div class="lbadge"><span class="b g">M</span><h3>Make It Your Own</h3></div>
+    <div class="ainstr" style="color:var(--muted)">Coloque as palavras na ordem certa e escreva a frase completa. A correção aparece sozinha.</div>`+
+    moPool.map(s=>{const w=scramble(s);
+      return `<div class="wrow"><div class="scramble">${w.map(x=>`<span class="chip sm">${x}</span>`).join('')}</div>
+        <div class="fillrow" style="margin-top:6px"><input class="inp ordr" data-ans="${s.replace(/"/g,'&quot;')}" oninput="acOrder(this)" onblur="abOrder(this)" placeholder="Escreva a frase completa..."><span class="mark"></span></div></div>`;
+    }).join('')+`</div>`;
+  B.S=`<div class="lblock"><div class="lbadge"><span class="b g">S</span><h3>Sentences I Need to Own</h3></div><div class="vlist">`+
+    (L.sentences||[]).map(s=>`<div class="vi"><b>${s}</b><button class="listen" onclick="speak('${esc(s)}','en-US',this)">▶ Listen</button></div>`).join('')+`</div></div>`;
+
+  const ORDERS=[['P','A','E','Q','M','S'],['P','E','A','M','Q','S'],['A','P','E','Q','S','M'],['E','P','Q','A','M','S'],['P','Q','E','M','A','S'],['A','E','P','Q','M','S'],['P','A','Q','E','S','M'],['E','A','P','M','Q','S'],['Q','P','E','A','M','S'],['P','E','Q','A','S','M'],['A','P','Q','M','E','S'],['E','Q','P','A','M','S'],['P','M','A','E','Q','S'],['A','E','Q','P','M','S'],['P','A','E','M','S','Q'],['Q','E','P','M','A','S'],['E','P','A','Q','S','M'],['P','Q','A','E','M','S'],['A','M','P','E','Q','S'],['E','A','Q','P','S','M']];
+  const order=ORDERS[(ti*5+li)%ORDERS.length];
+  const mid=order.map(k=>B[k]||'').join('');
+
+  // ===== FIM (fixo): Gramática =====
+  let tail=`<div class="lblock"><div class="lbadge"><span class="b g">G</span><h3>Grammar Point</h3></div><p>${L.grammarPoint||''}</p></div>`;
+  tail+=`<div class="lblock"><div class="lbadge"><span class="b g">G+</span><h3>Grammar Deep Dive</h3></div><p>${L.deepDive||''}</p>
+    <p style="margin-top:16px"><b>Examples</b></p><div class="vlist">`+
+    (L.examples||[]).map(e=>`<div class="vi"><b>${e[0]}</b><br><span class="tr">${e[1]}</span></div>`).join('')+`</div>
+    <p style="margin-top:16px"><b>Common Mistakes</b></p>`+
+    (L.mistakes||[]).map(m=>`<div class="mistake"><span class="bad">✗ ${m[0]}</span> &nbsp; <span class="good">✓ ${m[1]}</span><small>${m[2]}</small></div>`).join('')+
+    `<p style="margin-top:16px"><b>Quick Practice</b> — correção automática.</p>`+
+    (L.quick||[]).map(q=>fillLine('',q[0],q[1],'___',90)).join('')+`</div>`;
+
+  const h=head+mid+tail;
+
+  document.getElementById('lessonBody').innerHTML=h;
+  maybeCelebrate();
+  go('lesson');
+}
+
+renderStudy();
+</script>
+</body>
+</html>

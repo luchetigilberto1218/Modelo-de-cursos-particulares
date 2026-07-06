@@ -1,0 +1,517 @@
+[
+  {
+    "title": "Talking about possibilities in a technical design",
+    "grammar": "may / might / could (possibility)",
+    "objective": "Nesta aula você vai aprender a falar de possibilidades usando may, might e could. Na Engenharia de Aplicação, você raramente tem certeza absoluta antes dos cálculos: um equipamento pode ou não atender à vazão, um cliente pode enviar novos dados. Essas três palavras deixam você discutir opções de projeto com clientes e colegas sem prometer o que ainda não foi confirmado.",
+    "intro": [
+      "In Application Engineering, nothing is final until the calculations are done. A baghouse may fit the layout, or it might not. A scrubber could be the better choice, but we need the process data first.",
+      "Today we practise may, might and could to talk about what is possible. These small words let you sound careful and professional when you present design options to a client."
+    ],
+    "introAudio": "Hello. In application engineering we often say what may happen before we are sure. A cyclone might work here, or a filter could be better. Today we learn to speak about possibilities with confidence.",
+    "vocab": [
+      ["sizing", "dimensionamento", "The sizing of the fan may change after we get the flow rate."],
+      ["specification", "especificação", "The specification might require a higher collection efficiency."],
+      ["drawing", "desenho", "The drawing could show the duct route more clearly."],
+      ["calculation", "cálculo", "Our calculation may confirm that the baghouse is enough."],
+      ["baghouse", "filtro de manga", "A baghouse might be the best option for this dust load."],
+      ["scrubber", "lavador de gases", "A wet scrubber could remove the acid gases in this process."]
+    ],
+    "bank": ["sizing", "specification", "drawing", "calculation", "baghouse", "scrubber"],
+    "practice": [
+      ["The ______ of the equipment may change after the site visit.", "sizing"],
+      ["The client ______ might ask for a lower emission limit.", "specification"],
+      ["Please check the ______; it could be missing a dimension.", "drawing"],
+      ["Our ______ may show that one cyclone is not enough.", "calculation"],
+      ["A ______ might be too large for this small building.", "baghouse"],
+      ["A wet ______ could handle the corrosive gas better.", "scrubber"],
+      ["The ______ of the ductwork may need a bigger diameter.", "sizing"],
+      ["This ______ could be updated after the review meeting.", "drawing"]
+    ],
+    "audio": {
+      "title": "Presenting two options to a client",
+      "text": "Good morning. Based on the process data, a baghouse may be the best solution for this dust. However, the temperature might be too high, so a cyclone could be needed before the filter. The client may prefer a wet scrubber, but that could increase water use. We are not sure yet, and the final calculation might change our advice. We will confirm everything once the flow rate is measured."
+    },
+    "readAloud": [
+      "The baghouse may not fit in the current layout.",
+      "A cyclone might reduce the dust load before the filter.",
+      "This scrubber could remove the acid gases well.",
+      "The client might ask for a second drawing.",
+      "The sizing may change after the site visit."
+    ],
+    "fill": [
+      ["The equipment ___ be too large for the building. (possibility)", "may"],
+      ["A cyclone ___ help before the baghouse. (possibility)", "might"],
+      ["A wet scrubber ___ be a better choice here. (possibility)", "could"],
+      ["The client ___ change the specification next week. (possibility)", "may"],
+      ["The temperature ___ be too high for the filter bags. (possibility)", "might"],
+      ["We ___ need a bigger fan after the calculation. (possibility)", "could"],
+      ["The drawing ___ still contain an error. (possibility)", "may"],
+      ["The flow rate ___ increase during full production. (possibility)", "might"]
+    ],
+    "qa": [
+      ["Could a baghouse work for this process?", "Yes, it could, but we need the temperature first."],
+      ["What might change the sizing?", "New process data might change the sizing."],
+      ["May the client ask for a wet scrubber?", "Yes, the client may prefer a wet scrubber."],
+      ["What could go wrong with this drawing?", "It could be missing a key dimension."],
+      ["Might the flow rate be higher than expected?", "Yes, it might be higher during full production."]
+    ],
+    "own": {
+      "a": {"label": "The equipment may ...", "mustStart": "the equipment may", "placeholder": "The equipment may ...", "count": 3},
+      "b": {"label": "A frase deve conter 'could'", "mustInclude": "could", "placeholder": "A cyclone could ...", "count": 2}
+    },
+    "sentences": [
+      "The baghouse may be too large for this layout.",
+      "A cyclone might reduce the dust before the filter.",
+      "A wet scrubber could handle the acid gases.",
+      "The client may change the specification.",
+      "The temperature might be too high for the bags.",
+      "We could need a bigger fan after the calculation.",
+      "The drawing may still have an error.",
+      "The flow rate might rise during full production."
+    ],
+    "grammarPoint": "may / might / could indicam possibilidade — algo que talvez aconteça, mas não é certo. Depois deles vem sempre o verbo na forma base (sem to). The scrubber may work. — O lavador talvez funcione. It could be too small. — Pode ser pequeno demais.",
+    "deepDive": "may, might e could são muito parecidos para falar de possibilidade. might costuma soar um pouco menos certo que may, e could sugere uma opção entre outras. Em todos os casos, o verbo seguinte fica na forma base: may be, might work, could need — nunca 'may to be' ou 'could works'.",
+    "examples": [
+      ["The baghouse may fit the layout.", "O filtro de manga talvez caiba no arranjo."],
+      ["The client might want a wet scrubber.", "O cliente talvez queira um lavador úmido."],
+      ["A cyclone could reduce the dust load.", "Um ciclone poderia reduzir a carga de poeira."],
+      ["The sizing may change after the visit.", "O dimensionamento pode mudar após a visita."],
+      ["The temperature might be too high.", "A temperatura pode estar alta demais."],
+      ["We could need a larger fan.", "Talvez precisemos de um ventilador maior."],
+      ["The drawing may contain an error.", "O desenho pode conter um erro."],
+      ["The flow rate might increase later.", "A vazão pode aumentar depois."],
+      ["This solution could be more expensive.", "Esta solução poderia ser mais cara."],
+      ["The precipitator may be a better option.", "O precipitador talvez seja uma opção melhor."]
+    ],
+    "mistakes": [
+      ["The filter may to be small.", "The filter may be small.", "Depois de may não use to; use o verbo base."],
+      ["It might works here.", "It might work here.", "Depois de might o verbo não leva -s."],
+      ["We could to need a fan.", "We could need a fan.", "Depois de could use o verbo base, sem to."],
+      ["The client may wants a scrubber.", "The client may want a scrubber.", "Modais não mudam com he/she/it: sem -s."],
+      ["Maybe the sizing may change.", "The sizing may change.", "Evite 'maybe' junto com 'may'; um já basta."]
+    ],
+    "quick": [
+      ["The baghouse ___ be too small. (possibility)", "may"],
+      ["A cyclone ___ help here. (possibility)", "might"],
+      ["We ___ need a bigger fan. (possibility)", "could"],
+      ["The client ___ change the spec. (possibility)", "may"],
+      ["The temperature ___ rise later. (possibility)", "might"]
+    ],
+    "celebrate": {
+      "en": "Well done. You can now discuss design options with the caution a good engineer needs.",
+      "pt": "Muito bem. Agora você discute opções de projeto com a cautela que um bom engenheiro precisa."
+    }
+  },
+  {
+    "title": "Describing equipment with relative clauses",
+    "grammar": "Relative clauses (who / which / that)",
+    "objective": "Nesta aula você vai aprender a juntar informações em uma frase usando who, which e that. Na Engenharia de Aplicação você descreve equipamentos, componentes e as pessoas do projeto o tempo todo — 'o ciclone que remove as partículas maiores', 'a engenheira que fez os cálculos'. As orações relativas deixam suas descrições técnicas claras e precisas.",
+    "intro": [
+      "A technical memo is full of descriptions: the filter that removes fine dust, the supplier which delivered the fans, the engineer who signed the drawing.",
+      "Today we practise who, which and that to connect ideas. With relative clauses your specifications and reports become clearer and more professional."
+    ],
+    "introAudio": "Welcome back. In application engineering we describe things all day. The cyclone that removes coarse particles, or the engineer who prepared the calculation. Today we learn to connect these ideas with who, which and that.",
+    "vocab": [
+      ["cyclone", "ciclone", "The cyclone that removes coarse dust comes before the filter."],
+      ["precipitator", "precipitador", "The precipitator which uses high voltage collects fine particles."],
+      ["flow rate", "vazão", "This is the flow rate that we use for the sizing."],
+      ["ductwork", "rede de dutos", "The ductwork which connects the units must be sealed."],
+      ["supplier", "fornecedor", "The supplier that delivered the fans is reliable."],
+      ["datasheet", "folha de dados", "The datasheet which lists the pressure drop is attached."]
+    ],
+    "bank": ["cyclone", "precipitator", "flow rate", "ductwork", "supplier", "datasheet"],
+    "practice": [
+      ["The ______ that removes coarse particles sits before the baghouse.", "cyclone"],
+      ["The ______ which uses electric fields collects very fine dust.", "precipitator"],
+      ["This is the ______ that we used for the fan sizing.", "flow rate"],
+      ["The ______ which links the two units must be leak free.", "ductwork"],
+      ["The ______ who delivered the equipment is based in São Paulo.", "supplier"],
+      ["The ______ that lists all dimensions is on page two.", "datasheet"],
+      ["The ______ that failed the test needs a new gasket.", "ductwork"],
+      ["We chose the ______ which gave the best efficiency.", "cyclone"]
+    ],
+    "audio": {
+      "title": "Explaining a dust collection system",
+      "text": "Let me explain the system that we designed for this plant. The cyclone which stands at the entrance removes the large particles first. Then the gas reaches the baghouse that captures the fine dust. The engineer who prepared the calculation checked the flow rate carefully. The supplier that will build the units is the one which we trust the most. Finally, the datasheet that lists all the parts is attached to the memo."
+    },
+    "readAloud": [
+      "The cyclone that removes coarse dust comes first.",
+      "The precipitator which uses high voltage is very efficient.",
+      "The engineer who signed the drawing is our team leader.",
+      "The supplier that delivered the fans is reliable.",
+      "The datasheet which lists the pressure drop is attached."
+    ],
+    "fill": [
+      ["The cyclone ___ removes coarse dust comes first. (equipment)", "that"],
+      ["The engineer ___ prepared the calculation is here. (person)", "who"],
+      ["The precipitator, ___ uses high voltage, is efficient. (equipment)", "which"],
+      ["The supplier ___ delivered the fans is reliable. (thing)", "that"],
+      ["The manager ___ approved the budget signed today. (person)", "who"],
+      ["The datasheet, ___ lists the dimensions, is attached. (thing)", "which"],
+      ["This is the filter ___ we selected for the project. (thing)", "that"],
+      ["The colleague ___ helped me is an expert in scrubbers. (person)", "who"]
+    ],
+    "qa": [
+      ["Which cyclone did you choose?", "The one that gave the best efficiency."],
+      ["Who prepared the calculation?", "The engineer who works on the emissions team."],
+      ["What is a precipitator?", "It is a device which uses electric fields to collect dust."],
+      ["Which supplier delivered the fans?", "The supplier that is based in São Paulo."],
+      ["Where is the datasheet?", "It is the file which is attached to the memo."]
+    ],
+    "own": {
+      "a": {"label": "A frase deve conter 'that'", "mustInclude": "that", "placeholder": "The filter that ...", "count": 3},
+      "b": {"label": "A frase deve conter 'who'", "mustInclude": "who", "placeholder": "The engineer who ...", "count": 2}
+    },
+    "sentences": [
+      "The cyclone that removes coarse dust comes first.",
+      "The precipitator which uses high voltage is efficient.",
+      "The engineer who signed the drawing is our leader.",
+      "The supplier that delivered the fans is reliable.",
+      "The datasheet which lists the dimensions is attached.",
+      "This is the flow rate that we used for sizing.",
+      "The ductwork that failed the test needs a gasket.",
+      "The colleague who helped me knows scrubbers well."
+    ],
+    "grammarPoint": "Orações relativas dão mais informação sobre um substantivo. Use who para pessoas, which para coisas, e that para os dois. The engineer who signed it. — O engenheiro que assinou. The filter which cleans the gas. — O filtro que limpa o gás.",
+    "deepDive": "who é para pessoas, which é para coisas e equipamentos, e that serve para ambos em frases que definem qual item você quer dizer. O pronome relativo vem logo depois do substantivo que descreve. Dica: quando puder trocar por that sem mudar o sentido, a oração é definidora e that é natural.",
+    "examples": [
+      ["The engineer who did the sizing is Ana.", "A engenheira que fez o dimensionamento é a Ana."],
+      ["The cyclone that removes dust is first.", "O ciclone que remove a poeira vem primeiro."],
+      ["The scrubber which uses water is efficient.", "O lavador que usa água é eficiente."],
+      ["The supplier that delivered late apologised.", "O fornecedor que atrasou pediu desculpas."],
+      ["The drawing which shows the ducts is here.", "O desenho que mostra os dutos está aqui."],
+      ["The manager who approved it signed today.", "O gerente que aprovou assinou hoje."],
+      ["The filter that failed needs new bags.", "O filtro que falhou precisa de mangas novas."],
+      ["The datasheet which lists the fan is attached.", "A folha de dados que lista o ventilador está anexa."],
+      ["The client who visited us liked the plant.", "O cliente que nos visitou gostou da planta."],
+      ["The pump that leaked was replaced.", "A bomba que vazou foi substituída."]
+    ],
+    "mistakes": [
+      ["The engineer which did the sizing.", "The engineer who did the sizing.", "Para pessoas use who, não which."],
+      ["The cyclone who removes dust.", "The cyclone that removes dust.", "Para equipamentos use that ou which, não who."],
+      ["The filter what cleans the gas.", "The filter that cleans the gas.", "Em inglês não se usa what como relativo; use that."],
+      ["The supplier that he delivered late.", "The supplier that delivered late.", "Não repita o sujeito depois do relativo."],
+      ["The drawing which show the ducts.", "The drawing which shows the ducts.", "Concorde o verbo com o substantivo singular."]
+    ],
+    "quick": [
+      ["The engineer ___ signed it is Ana. (person)", "who"],
+      ["The cyclone ___ removes dust is first. (equipment)", "that"],
+      ["The scrubber ___ uses water is efficient. (equipment)", "which"],
+      ["The supplier ___ delivered the fans is here. (thing)", "that"],
+      ["The manager ___ approved the budget left. (person)", "who"]
+    ],
+    "celebrate": {
+      "en": "Excellent. Your descriptions are now precise enough for any technical memo.",
+      "pt": "Excelente. Suas descrições agora têm a precisão de um bom memorial técnico."
+    }
+  },
+  {
+    "title": "Choosing between -ing and to in engineering tasks",
+    "grammar": "Gerúndio vs infinitivo (verb + -ing / to + verb)",
+    "objective": "Nesta aula você vai aprender quando usar o gerúndio (-ing) e quando usar o infinitivo (to + verbo) depois de outro verbo. Na Engenharia de Aplicação você fala de decisões o tempo todo: 'começamos a projetar', 'evitamos superdimensionar', 'planejamos entregar'. Escolher a forma certa deixa seus e-mails e propostas mais naturais e corretos.",
+    "intro": [
+      "Some verbs are followed by -ing and others by to. We finished sizing the fan. We decided to use a baghouse. Both are correct, but each verb has its own pattern.",
+      "Today we practise this choice with real design tasks: selecting equipment, preparing estimates, avoiding mistakes. Learn the common patterns and your writing will flow."
+    ],
+    "introAudio": "Hello again. In engineering we plan to design, we finish calculating, and we avoid oversizing. Some verbs take to, others take -ing. Today we learn which is which, step by step.",
+    "vocab": [
+      ["selection", "seleção", "Equipment selection needs the full process data."],
+      ["estimate", "estimativa", "We finished preparing the cost estimate today."],
+      ["layout", "arranjo", "The layout helps us plan the ductwork route."],
+      ["efficiency", "eficiência", "We aim to reach a high collection efficiency."],
+      ["pressure drop", "perda de carga", "We avoid increasing the pressure drop too much."],
+      ["proposal", "proposta", "We decided to send the proposal on Friday."]
+    ],
+    "bank": ["selection", "estimate", "layout", "efficiency", "pressure drop", "proposal"],
+    "practice": [
+      ["Equipment ______ needs the complete process data.", "selection"],
+      ["We finished preparing the cost ______ this morning.", "estimate"],
+      ["The new ______ helps us plan the duct route.", "layout"],
+      ["We aim to reach a high collection ______.", "efficiency"],
+      ["We avoid increasing the ______ across the filter.", "pressure drop"],
+      ["We decided to send the ______ on Friday.", "proposal"],
+      ["The client asked to review the ______ before approval.", "proposal"],
+      ["We keep improving the ______ of the plant.", "layout"]
+    ],
+    "audio": {
+      "title": "Planning the next design steps",
+      "text": "This week we plan to finish the sizing of the baghouse. The team enjoys working on this kind of project, but we want to avoid oversizing the fan. We decided to prepare the estimate first and then to update the layout. We keep checking the pressure drop because we need to keep it low. Finally, we hope to send the proposal to the client before Friday. Everyone agreed to review the drawings together."
+    },
+    "readAloud": [
+      "We decided to use a baghouse for this dust.",
+      "The team finished sizing the main fan.",
+      "We want to avoid increasing the pressure drop.",
+      "We plan to send the proposal on Friday.",
+      "We keep improving the layout of the plant."
+    ],
+    "fill": [
+      ["We decided ___ use a baghouse. (to + verb)", "to use"],
+      ["The team finished ___ the fan. (verb + -ing)", "sizing"],
+      ["We want ___ the pressure drop low. (to + verb)", "to keep"],
+      ["We avoid ___ the equipment. (verb + -ing)", "oversizing"],
+      ["We plan ___ the proposal on Friday. (to + verb)", "to send"],
+      ["We enjoy ___ on ventilation projects. (verb + -ing)", "working"],
+      ["The client agreed ___ the drawings. (to + verb)", "to review"],
+      ["We keep ___ the layout. (verb + -ing)", "improving"]
+    ],
+    "qa": [
+      ["What did the team finish?", "The team finished sizing the fan."],
+      ["What do you want to avoid?", "We want to avoid oversizing the equipment."],
+      ["When do you plan to send the proposal?", "We plan to send it on Friday."],
+      ["What does the team enjoy?", "The team enjoys working on these projects."],
+      ["What did the client agree to do?", "The client agreed to review the drawings."]
+    ],
+    "own": {
+      "a": {"label": "We decided to ...", "mustStart": "we decided to", "placeholder": "We decided to ...", "count": 3},
+      "b": {"label": "A frase deve conter uma palavra com '-ing'", "mustInclude": "ing", "placeholder": "We finished sizing ...", "count": 2}
+    },
+    "sentences": [
+      "We decided to use a baghouse for this dust.",
+      "The team finished sizing the main fan.",
+      "We want to avoid increasing the pressure drop.",
+      "We plan to send the proposal on Friday.",
+      "We keep improving the layout of the plant.",
+      "The client agreed to review the drawings.",
+      "We enjoy working on ventilation projects.",
+      "We hope to reach a high collection efficiency."
+    ],
+    "grammarPoint": "Depois de alguns verbos usamos to + verbo (want, plan, decide, agree, hope). Depois de outros usamos verbo + -ing (finish, avoid, enjoy, keep). We plan to design. — Planejamos projetar. We finished designing. — Terminamos de projetar.",
+    "deepDive": "Não existe regra única: cada verbo pede uma forma. Vale memorizar os grupos. Pedem to: want, need, decide, plan, hope, agree, offer. Pedem -ing: finish, avoid, enjoy, keep, mind, suggest. Verbos como start e continue aceitam as duas formas sem mudar o sentido.",
+    "examples": [
+      ["We decided to use a baghouse.", "Decidimos usar um filtro de manga."],
+      ["The team finished sizing the fan.", "A equipe terminou de dimensionar o ventilador."],
+      ["We want to keep the pressure drop low.", "Queremos manter a perda de carga baixa."],
+      ["We avoid oversizing the equipment.", "Evitamos superdimensionar o equipamento."],
+      ["We plan to send the proposal today.", "Planejamos enviar a proposta hoje."],
+      ["We enjoy working on these projects.", "Gostamos de trabalhar nesses projetos."],
+      ["The client agreed to review the drawings.", "O cliente concordou em revisar os desenhos."],
+      ["We keep improving the layout.", "Continuamos melhorando o arranjo."],
+      ["We hope to reach high efficiency.", "Esperamos alcançar alta eficiência."],
+      ["They suggested checking the datasheet.", "Eles sugeriram conferir a folha de dados."]
+    ],
+    "mistakes": [
+      ["We decided using a baghouse.", "We decided to use a baghouse.", "decide pede to + verbo, não -ing."],
+      ["The team finished to size the fan.", "The team finished sizing the fan.", "finish pede verbo + -ing, não to."],
+      ["We want keeping it low.", "We want to keep it low.", "want pede to + verbo."],
+      ["We avoid to oversize it.", "We avoid oversizing it.", "avoid pede verbo + -ing."],
+      ["We enjoy to work here.", "We enjoy working here.", "enjoy pede verbo + -ing."]
+    ],
+    "quick": [
+      ["We decided ___ a baghouse. (use)", "to use"],
+      ["The team finished ___ the fan. (size)", "sizing"],
+      ["We avoid ___ the equipment. (oversize)", "oversizing"],
+      ["We plan ___ the proposal. (send)", "to send"],
+      ["We enjoy ___ here. (work)", "working"]
+    ],
+    "celebrate": {
+      "en": "Great work. Choosing -ing or to is now a habit, not a guess.",
+      "pt": "Ótimo trabalho. Escolher -ing ou to virou hábito, não mais chute."
+    }
+  },
+  {
+    "title": "Reporting ongoing work with Present Perfect Continuous",
+    "grammar": "Present Perfect Continuous (have/has been + -ing)",
+    "objective": "Nesta aula você vai aprender a falar de trabalhos que começaram no passado e continuam agora, usando have/has been + verbo com -ing. Na Engenharia de Aplicação isso é essencial para dar status: 'estamos revisando os cálculos há dois dias', 'ela está trabalhando na simulação desde segunda'. Perfeito para reuniões de andamento e e-mails de acompanhamento.",
+    "intro": [
+      "When a client asks how the project is going, you often describe work in progress: We have been revising the drawings. She has been running the simulation since Monday.",
+      "Today we practise have/has been + -ing to report ongoing tasks. This tense shows that the work started earlier and is still happening now."
+    ],
+    "introAudio": "Welcome back. Clients often ask how the design is going. We have been checking the calculations, and the team has been working on the layout since Monday. Today we learn to report work in progress.",
+    "vocab": [
+      ["deadline", "prazo", "We have been working hard to meet the deadline."],
+      ["revision", "revisão", "The drawing has been going through its third revision."],
+      ["simulation", "simulação", "She has been running the simulation all week."],
+      ["workload", "carga de trabalho", "The team has been handling a heavy workload."],
+      ["memo", "memorial", "I have been writing the technical memo since Monday."],
+      ["benchmark", "referência", "We have been using this project as a benchmark."]
+    ],
+    "bank": ["deadline", "revision", "simulation", "workload", "memo", "benchmark"],
+    "practice": [
+      ["We have been working hard to meet the ______.", "deadline"],
+      ["The drawing is in its third ______ this month.", "revision"],
+      ["She has been running the ______ since Monday.", "simulation"],
+      ["The team has been carrying a heavy ______.", "workload"],
+      ["I have been writing the technical ______ all week.", "memo"],
+      ["We have been using this plant as a ______ for others.", "benchmark"],
+      ["He has been reviewing every ______ of the drawing.", "revision"],
+      ["They have been checking the ______ results carefully.", "simulation"]
+    ],
+    "audio": {
+      "title": "A project status update",
+      "text": "Good afternoon. I want to give you a short status update. We have been working on the baghouse design for two weeks now. The team has been revising the drawings, and Ana has been running the simulation since Monday. We have been checking the pressure drop carefully because the deadline is close. The client has been sending new process data, so we have been updating the calculations every day. Overall, we have been making good progress."
+    },
+    "readAloud": [
+      "We have been working on this design for two weeks.",
+      "She has been running the simulation since Monday.",
+      "The team has been revising the drawings all week.",
+      "I have been writing the technical memo since Tuesday.",
+      "We have been checking the pressure drop every day."
+    ],
+    "fill": [
+      ["We ___ working on the design for two weeks. (have/has + been)", "have been"],
+      ["She ___ running the simulation since Monday. (have/has + been)", "has been"],
+      ["The team ___ revising the drawings all week. (have/has + been)", "has been"],
+      ["I ___ writing the memo since Tuesday. (have/has + been)", "have been"],
+      ["He ___ checking the calculations all morning. (have/has + been)", "has been"],
+      ["They ___ sending new data every day. (have/has + been)", "have been"],
+      ["The client ___ asking for updates lately. (have/has + been)", "has been"],
+      ["We ___ using this project as a benchmark. (have/has + been)", "have been"]
+    ],
+    "qa": [
+      ["How long have you been working on the design?", "We have been working on it for two weeks."],
+      ["What has Ana been doing?", "She has been running the simulation."],
+      ["What has the team been revising?", "The team has been revising the drawings."],
+      ["Have you been checking the pressure drop?", "Yes, we have been checking it every day."],
+      ["What has the client been sending?", "The client has been sending new process data."]
+    ],
+    "own": {
+      "a": {"label": "We have been ...", "mustStart": "we have been", "placeholder": "We have been ...", "count": 3},
+      "b": {"label": "She has been ...", "mustStart": "she has been", "placeholder": "She has been ...", "count": 2}
+    },
+    "sentences": [
+      "We have been working on the design for two weeks.",
+      "She has been running the simulation since Monday.",
+      "The team has been revising the drawings all week.",
+      "I have been writing the technical memo since Tuesday.",
+      "We have been checking the pressure drop every day.",
+      "The client has been sending new process data.",
+      "He has been reviewing every revision carefully.",
+      "We have been making good progress on the project."
+    ],
+    "grammarPoint": "Present Perfect Continuous: have/has been + verbo com -ing. Mostra uma ação que começou antes e continua agora. We have been working. — Estamos trabalhando (desde antes). She has been running the simulation. — Ela está rodando a simulação (há um tempo).",
+    "deepDive": "Use have com I/you/we/they e has com he/she/it, sempre seguidos de been + verbo-ing. Combine com for (duração: for two weeks) ou since (ponto de início: since Monday). É o tempo ideal para status de projeto, porque enfatiza que o trabalho ainda está em andamento.",
+    "examples": [
+      ["We have been working on the design.", "Estamos trabalhando no projeto (desde antes)."],
+      ["She has been running the simulation.", "Ela está rodando a simulação."],
+      ["The team has been revising the drawings.", "A equipe está revisando os desenhos."],
+      ["I have been writing the memo since Tuesday.", "Estou escrevendo o memorial desde terça."],
+      ["We have been checking the pressure drop.", "Estamos checando a perda de carga."],
+      ["He has been reviewing the calculations.", "Ele está revisando os cálculos."],
+      ["They have been sending new data.", "Eles estão enviando novos dados."],
+      ["The client has been asking for updates.", "O cliente está pedindo atualizações."],
+      ["We have been using it as a benchmark.", "Estamos usando isso como referência."],
+      ["We have been making good progress.", "Estamos fazendo um bom progresso."]
+    ],
+    "mistakes": [
+      ["She have been running it.", "She has been running it.", "Com she use has, não have."],
+      ["We has been working on it.", "We have been working on it.", "Com we use have, não has."],
+      ["We have been work on it.", "We have been working on it.", "Depois de been o verbo leva -ing."],
+      ["We are working since Monday.", "We have been working since Monday.", "Com since use o present perfect continuous."],
+      ["She has been ran the simulation.", "She has been running the simulation.", "Use a forma -ing, não o passado."]
+    ],
+    "quick": [
+      ["We ___ working for two weeks. (have/has + been)", "have been"],
+      ["She ___ running the simulation. (have/has + been)", "has been"],
+      ["The team ___ revising the drawings. (have/has + been)", "has been"],
+      ["I ___ writing the memo. (have/has + been)", "have been"],
+      ["They ___ sending new data. (have/has + been)", "have been"]
+    ],
+    "celebrate": {
+      "en": "Well done. Your status updates now sound clear, current and professional.",
+      "pt": "Muito bem. Seus updates de projeto agora soam claros, atuais e profissionais."
+    }
+  },
+  {
+    "title": "Reporting what people said in meetings",
+    "grammar": "Reported speech — afirmações (He said that ...)",
+    "objective": "Nesta aula você vai aprender a relatar afirmações de outras pessoas usando He said that... e She told me that.... Na Engenharia de Aplicação você repassa muita informação: o que o cliente afirmou sobre a vazão, o que o gerente disse na reunião. O discurso indireto deixa você registrar decisões em memoriais e e-mails com clareza e profissionalismo.",
+    "intro": [
+      "After a meeting, you often report what was said: The client said that the flow rate was higher. The manager told me that the deadline had changed.",
+      "Today we practise reported speech for statements. Notice how the verb usually moves one step back in time when we report it."
+    ],
+    "introAudio": "Hello again. After every meeting we report what people said. The client said that the deadline was tight, and the manager told me that the design was approved. Today we learn to pass on statements clearly.",
+    "vocab": [
+      ["statement", "declaração", "The client made a clear statement about the emission limit."],
+      ["meeting", "reunião", "In the meeting the manager said that the budget was ready."],
+      ["report", "relatório", "She said that the report was almost finished."],
+      ["update", "atualização", "He told me that the update was sent yesterday."],
+      ["requirement", "requisito", "The client said that the requirement had changed."],
+      ["summary", "resumo", "I wrote a summary of what everyone said."]
+    ],
+    "bank": ["statement", "meeting", "report", "update", "requirement", "summary"],
+    "practice": [
+      ["The client made a clear ______ about the emission limit.", "statement"],
+      ["In the ______ the manager said the budget was ready.", "meeting"],
+      ["She said that the ______ was almost finished.", "report"],
+      ["He told me that the ______ was sent yesterday.", "update"],
+      ["The client said that the ______ had changed.", "requirement"],
+      ["I wrote a ______ of what everyone said.", "summary"],
+      ["After the ______ we updated the drawings.", "meeting"],
+      ["He said that the ______ still needed a signature.", "report"]
+    ],
+    "audio": {
+      "title": "Reporting a client meeting",
+      "text": "Here is what happened in the meeting yesterday. The client said that the flow rate was higher than expected. He told me that the dust load had increased since last year. The manager said that we needed a bigger baghouse. She also told the team that the deadline was still Friday. The client said that the budget was approved, and he told us that the requirement for efficiency was ninety-nine percent. I wrote a summary so that everyone has the same information."
+    },
+    "readAloud": [
+      "The client said that the flow rate was higher.",
+      "The manager told me that the deadline had changed.",
+      "He said that the report was almost finished.",
+      "She told us that the budget was approved.",
+      "The engineer said that the design was ready."
+    ],
+    "fill": [
+      ["The client ___ that the flow rate was higher. (said/told)", "said"],
+      ["The manager ___ me that the deadline had changed. (said/told)", "told"],
+      ["He ___ that the report was finished. (said/told)", "said"],
+      ["She ___ us that the budget was approved. (said/told)", "told"],
+      ["The client said that the requirement ___ changed. (had/have)", "had"],
+      ["He told me that the update ___ sent. (was/is)", "was"],
+      ["The engineer ___ that the design was ready. (said/told)", "said"],
+      ["She ___ the team that the deadline was Friday. (said/told)", "told"]
+    ],
+    "qa": [
+      ["What did the client say about the flow rate?", "He said that the flow rate was higher."],
+      ["What did the manager tell you?", "She told me that the deadline had changed."],
+      ["What did the engineer say about the design?", "He said that the design was ready."],
+      ["What did the client say about the budget?", "He said that the budget was approved."],
+      ["What did she tell the team?", "She told the team that the report was finished."]
+    ],
+    "own": {
+      "a": {"label": "He said that ...", "mustStart": "he said that", "placeholder": "He said that ...", "count": 3},
+      "b": {"label": "She told me that ...", "mustStart": "she told me that", "placeholder": "She told me that ...", "count": 2}
+    },
+    "sentences": [
+      "The client said that the flow rate was higher.",
+      "The manager told me that the deadline had changed.",
+      "He said that the report was almost finished.",
+      "She told us that the budget was approved.",
+      "The engineer said that the design was ready.",
+      "He told me that the update was sent yesterday.",
+      "The client said that the requirement had changed.",
+      "She told the team that the meeting was on Monday."
+    ],
+    "grammarPoint": "No discurso indireto usamos said that ou told someone that para relatar uma afirmação. O verbo costuma recuar um tempo. 'The flow rate is high' vira He said that the flow rate was high. 'We changed it' vira She told me that they had changed it.",
+    "deepDive": "Use say sem objeto de pessoa (He said that...) e tell com objeto de pessoa (He told me that...). Ao relatar, o presente vira passado (is > was), e o passado simples vira past perfect (changed > had changed). O that é opcional, mas ajuda na escrita formal de memoriais.",
+    "examples": [
+      ["He said that the design was ready.", "Ele disse que o projeto estava pronto."],
+      ["She told me that the deadline had changed.", "Ela me disse que o prazo tinha mudado."],
+      ["The client said that the flow rate was high.", "O cliente disse que a vazão estava alta."],
+      ["He told us that the budget was approved.", "Ele nos disse que o orçamento foi aprovado."],
+      ["She said that the report was finished.", "Ela disse que o relatório estava pronto."],
+      ["He told me that the update was sent.", "Ele me disse que a atualização foi enviada."],
+      ["The manager said that we needed a bigger fan.", "O gerente disse que precisávamos de um ventilador maior."],
+      ["She told the team that the meeting was Monday.", "Ela disse à equipe que a reunião era segunda."],
+      ["He said that the requirement had changed.", "Ele disse que o requisito tinha mudado."],
+      ["The engineer said that the test was successful.", "O engenheiro disse que o teste foi bem-sucedido."]
+    ],
+    "mistakes": [
+      ["He said me that it was ready.", "He told me that it was ready.", "Com objeto de pessoa use told, não said."],
+      ["She told that the deadline changed.", "She said that the deadline changed.", "Sem objeto de pessoa use said, não told."],
+      ["He said that the flow rate is high.", "He said that the flow rate was high.", "Ao relatar, o presente vira passado."],
+      ["She told me the report is finished.", "She told me the report was finished.", "Recue o verbo: is vira was."],
+      ["He said me the budget was approved.", "He told me the budget was approved.", "said me está errado; use told me."]
+    ],
+    "quick": [
+      ["He ___ that the design was ready. (said/told)", "said"],
+      ["She ___ me that the deadline changed. (said/told)", "told"],
+      ["He said the flow rate ___ high. (is/was)", "was"],
+      ["She ___ us that the budget was approved. (said/told)", "told"],
+      ["The client said the requirement ___ changed. (had/have)", "had"]
+    ],
+    "celebrate": {
+      "en": "Excellent work. You can now record and pass on decisions like a true professional.",
+      "pt": "Excelente trabalho. Agora você registra e repassa decisões como um verdadeiro profissional."
+    }
+  }
+]
