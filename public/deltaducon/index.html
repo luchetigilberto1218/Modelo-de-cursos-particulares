@@ -1039,6 +1039,14 @@ async function syncPull(){
 
 /* ---------- boot ---------- */
 function boot(){
+  // Abrir com ?reset limpa o usuário e o progresso salvos neste navegador
+  // (ex.: parar de entrar sempre no mesmo nome). Ex.: /deltaducon/?reset
+  if(/reset/i.test(location.search+location.hash)){
+    try{localStorage.removeItem(UKEY);localStorage.removeItem(PKEY);}catch(e){}
+    USER=null; PROG={};
+    try{history.replaceState(null,'',location.pathname);}catch(e){}
+    try{toast('Navegador limpo — escolha o seu nome');}catch(e){}
+  }
   buildOnboard();
   renderHome();
   presRefresh();
