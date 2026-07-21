@@ -686,3 +686,68 @@
 
   @page { margin:14mm; }
 }
+
+/* ---------- Componentes interativos de pós-aula ---------- */
+.pc-card { background:#fff; border:1px solid var(--rc-line); border-radius:14px; padding:18px; margin-bottom:16px; }
+.pc-check { margin-top:14px; }
+.pc-fb { margin-top:12px; font-size:14px; font-weight:600; line-height:1.5; }
+.pc-fb-inline { font-size:13px; font-weight:600; margin-left:6px; }
+
+/* Verdadeiro/Falso */
+.pc-tf-row { display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; padding:12px 0; border-bottom:1px solid #F0F2F6; }
+.pc-tf-row:last-child { border-bottom:none; }
+.pc-tf-text { flex:1 1 220px; font-size:14.5px; line-height:1.55; color:var(--rc-text); }
+.pc-tf-btns { display:flex; gap:8px; }
+.pc-tf-btn { width:44px; height:40px; border-radius:10px; border:2px solid var(--rc-line); background:#fff; font-weight:800; font-size:15px; cursor:pointer; color:var(--rc-text); }
+.pc-tf-btn:disabled { cursor:default; }
+.pc-tf-row .pc-fb { flex-basis:100%; margin-top:0; }
+
+/* Jogo da memória */
+.pc-mem-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(96px, 1fr)); gap:10px; }
+.pc-mem-card { min-height:70px; border:2px solid var(--rc-line); border-radius:12px; background:var(--rc-surface); cursor:pointer; padding:8px; display:flex; align-items:center; justify-content:center; text-align:center; transition:transform .15s, background .2s; }
+.pc-mem-card:hover:not(.up) { transform:translateY(-2px); }
+.pc-mem-card.up { background:#EBF2FF; }
+.pc-mem-card.done { background:#EAF7EF; border-color:#A7D7BC !important; cursor:default; }
+.pc-mem-face { font-size:13.5px; font-weight:600; color:var(--rc-char); line-height:1.35; }
+.pc-mem-card:not(.up) .pc-mem-face { color:var(--rc-mute); font-size:20px; }
+
+/* Banco de palavras / chips */
+.pc-bank { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+.pc-chip { padding:8px 12px; border-radius:999px; border:2px solid var(--rc-line); background:#fff; font-size:13.5px; font-weight:600; cursor:pointer; color:var(--rc-text); }
+.pc-chip.sel { border-color:var(--rc-blue); }
+.pc-chip:disabled { opacity:.55; cursor:default; }
+.pc-cloze-list { margin:0; padding-left:20px; }
+.pc-cloze-list li { font-size:15px; line-height:2.1; color:var(--rc-text); margin-bottom:6px; }
+.pc-blank { min-width:96px; margin:0 4px; padding:4px 10px; border:2px dashed var(--rc-line); border-radius:8px; background:#fff; font-size:14px; font-weight:600; cursor:pointer; color:var(--rc-text); }
+
+/* Peças (letras/palavras) */
+.pc-tile-item { padding:12px 0; border-bottom:1px solid #F0F2F6; }
+.pc-tile-item:last-child { border-bottom:none; }
+.pc-tile-hint { font-size:12.5px; color:var(--rc-mute); margin-bottom:8px; }
+.pc-tile-answer { min-height:46px; border:2px solid var(--rc-line); border-radius:10px; background:var(--rc-surface); padding:8px; display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px; }
+.pc-tile-ph { font-size:13px; color:var(--rc-mute); padding:0 6px; }
+.pc-tile-bank { display:flex; flex-wrap:wrap; gap:8px; }
+.pc-tile { padding:8px 12px; border:2px solid var(--rc-line); border-radius:8px; background:#fff; font-size:14.5px; font-weight:700; cursor:pointer; color:var(--rc-char); }
+.pc-tile.spent { opacity:.3; cursor:default; }
+.pc-tile.used { background:#EBF2FF; }
+.pc-tile-actions { margin-top:12px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.pc-tile-actions .pc-fb { margin-top:0; }
+
+/* Escolha com imagem */
+.pc-pic { margin:0 0 14px; }
+.pc-pic img { width:100%; max-height:230px; object-fit:cover; border-radius:12px; display:block; }
+.pc-pic figcaption { font-size:12px; color:var(--rc-mute); margin-top:6px; }
+.pc-pic-prompt { font-size:15.5px; font-weight:600; color:var(--rc-char); margin:0 0 12px; }
+.pc-pic-opts { display:grid; gap:10px; }
+.pc-pic-opt { text-align:left; padding:12px 14px; border-radius:10px; border:2px solid var(--rc-line); background:#fff; font-size:14px; cursor:pointer; color:var(--rc-text); }
+.pc-pic-opt:disabled { cursor:default; }
+
+/* ---------- Folha impressa: novos formatos ---------- */
+.pc-sheet-choices { display:block; margin-top:4px; }
+.pc-sheet-choice { display:inline-block; margin:0 16px 0 0; font-size:12.5px; }
+.pc-sheet-order { font-size:13px; line-height:2.4; margin:6px 0 10px; }
+.pc-sheet-token { display:inline-block; margin:0 10px 0 0; white-space:nowrap; }
+
+@media print {
+  body.pc-active .pc-sheet-list li { line-height:1.7; }
+}

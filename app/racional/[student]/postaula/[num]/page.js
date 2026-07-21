@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
-import { getStudentIds, getStudent, getStudentLesson } from '../../../../../lib/racional';
+import { getStudentIds, getStudent } from '../../../../../lib/racional';
+import { buildDistractorPool, buildPostClass } from '../../../../../lib/postclass-exercises';
 import PostClass from '../../../../../components/racional/PostClass';
 
 export function generateStaticParams() {
@@ -16,7 +17,16 @@ export function generateStaticParams() {
 
 export default async function PostClassPage({ params }) {
   const { student, num } = await params;
-  const data = getStudentLesson(student, num);
-  if (!data) notFound();
-  return <PostClass course={data.course} lesson={data.lesson} />;
+  const course = getStudent(student);
+  if (!course) notFound();
+  const n = parseInt(num, 10);
+  const lesson = course.lessons.find((l) => l.num === n);
+  if (!lesson) notFound();
+
+  const pool = buildDistractorPool(course, n);
+  const { blocks } = buildPostClass({ ...lesson, __meta: course.meta }, pool);
+
+  // curso enxuto (sem o array completo de aulas) para não inflar o payload
+  const { lessons, overview, logic, capstoneDetail, distribution, legend, ...slim } = course;
+  return <PostClass course={slim} lesson={lesson} blocks={blocks} />;
 }
