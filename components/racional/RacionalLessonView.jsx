@@ -411,6 +411,12 @@ function RecapChecklist({ studentId, num, takeaways, voice, T, accent }) {
       {done && (
         <div className="rc-done-banner">✓ {T('Aula concluída! Ela vai aparecer mais clara no seu programa.', 'Lesson completed! It will appear highlighted in your programme.')}</div>
       )}
+      <div className="pc-cta">
+        <Link href={`/racional/${studentId}/postaula/${num}`} className="rc-btn rc-btn-primary pc-cta-btn" style={{ background: accent }}>
+          <Icon name="target" size={15} /> {T('Exercícios de pós-aula', 'Post-class exercises')} →
+        </Link>
+        <span className="pc-cta-note">{T('Memorize as palavras-chave e contextualize a lição — dá para imprimir a folha.', 'Memorise the key words and contextualise the lesson — the sheet is printable.')}</span>
+      </div>
     </div>
   );
 }
