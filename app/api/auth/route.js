@@ -2,10 +2,16 @@ import { NextResponse } from 'next/server';
 import { getUsers, verifyPassword, createToken } from '../../../lib/auth';
 
 export async function POST(request) {
-  const { email, password } = await request.json();
+  const { username, email, password } = await request.json();
 
+  // Accept login by username (name) — case/space-insensitive — or by email (legacy).
+  const id = (username ?? email ?? '').trim().toLowerCase();
   const users = getUsers();
-  const user = users.find(u => u.email === email);
+  const user = users.find(
+    u =>
+      u.username?.trim().toLowerCase() === id ||
+      u.email?.trim().toLowerCase() === id
+  );
 
   if (!user) {
     return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });

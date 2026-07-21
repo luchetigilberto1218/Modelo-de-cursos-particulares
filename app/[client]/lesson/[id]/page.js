@@ -1,10 +1,12 @@
 import { redirect } from 'next/navigation';
 import { getCourse, getTheme } from '../../../../lib/courses';
+import { guardClient } from '../../../../lib/guard';
 import NavBar from '../../../../components/NavBar';
 import LessonView from '../../../../components/LessonView';
 
 export default async function LessonPage({ params }) {
   const { client, id } = await params;
+  await guardClient(client);
 
   const course = getCourse(client);
   const theme = getTheme(client);

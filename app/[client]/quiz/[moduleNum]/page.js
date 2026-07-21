@@ -1,10 +1,12 @@
 import { redirect } from 'next/navigation';
 import { getCourse } from '../../../../lib/courses';
+import { guardClient } from '../../../../lib/guard';
 import NavBar from '../../../../components/NavBar';
 import ModuleQuiz from '../../../../components/ModuleQuiz';
 
 export default async function QuizPage({ params }) {
   const { client, moduleNum } = await params;
+  await guardClient(client);
 
   const course = getCourse(client);
   if (!course) redirect('/');
