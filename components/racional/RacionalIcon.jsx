@@ -22,6 +22,8 @@ export default function RacionalIcon({ name, size = 18, stroke = 2, style }) {
       return (<svg {...p}><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8.5" cy="8.5" r="1.5" /><path d="m21 15-5-5L5 21" /></svg>);
     case 'cards':
       return (<svg {...p}><rect x="3" y="5" width="13" height="15" rx="2" /><path d="M8 5V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-1" /></svg>);
+    case 'printer':
+      return (<svg {...p}><path d="M6 9V3h12v6" /><path d="M6 18H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2" /><rect x="6" y="14" width="12" height="7" rx="1" /></svg>);
     default:
       return null;
   }
