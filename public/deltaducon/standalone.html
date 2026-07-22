@@ -546,6 +546,8 @@ function ab(inp){const v=inp.value.trim().toLowerCase(),a=inp.dataset.ans.toLowe
   if(v===a){inp.className='inp ok';m.className='mark ok';m.textContent='✓';maybeCelebrate();}else{inp.className='inp no';m.className='mark no';m.textContent='✗';}}
 function norm(s){return String(s).toLowerCase().replace(/[.,;:!?"']/g,'').replace(/\s+/g,' ').trim();}
 function scramble(s){const w=s.replace(/[.]$/,'').split(/\s+/);if(w.length<2)return w;let t=w.slice();for(let a=0;a<6;a++){for(let i=t.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const tmp=t[i];t[i]=t[j];t[j]=tmp;}if(t.join(' ')!==w.join(' '))break;}return t;}
+// Embaralha o banco de palavras para não sair na ordem das respostas (garante ordem != original)
+function shufBank(a){if(!a||a.length<2)return (a||[]).slice();let t=a.slice();for(let k=0;k<8;k++){for(let i=t.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const tmp=t[i];t[i]=t[j];t[j]=tmp;}if(t.join('|')!==a.join('|'))break;}return t;}
 function acOrder(inp){const v=norm(inp.value),a=norm(inp.dataset.ans),m=inp.nextElementSibling;if(v===a){inp.className='inp ordr ok';m.className='mark ok';m.textContent='✓';toast('Muito bem');maybeCelebrate();}else{inp.className='inp ordr';m.className='mark';m.textContent='';}}
 function abOrder(inp){const v=norm(inp.value),a=norm(inp.dataset.ans),m=inp.nextElementSibling;if(v===''){inp.className='inp ordr';m.className='mark';m.textContent='';return;}if(v===a){inp.className='inp ordr ok';m.className='mark ok';m.textContent='✓';maybeCelebrate();}else{inp.className='inp ordr no';m.className='mark no';m.textContent='✗';}}
 function checkSel(sel,rowId,ans){const row=document.getElementById(rowId),fb=row.querySelector('.fb');row.classList.remove('right','wrong');
@@ -773,7 +775,7 @@ function openLesson(ti,li){
   const B={};
   B.P=`<div class="lblock"><div class="lbadge"><span class="b">V</span><h3>Vocabulary Practice</h3></div>
     <div class="ainstr" style="color:var(--muted)">Digite a palavra que completa cada frase. A correção aparece sozinha.</div>
-    <div class="bank"><span class="lbl">Banco de palavras</span>${(L.bank||[]).map(w=>`<span class="chip">${w}</span>`).join('')}</div>`+
+    <div class="bank"><span class="lbl">Banco de palavras</span>${shufBank(L.bank||[]).map(w=>`<span class="chip">${w}</span>`).join('')}</div>`+
     (L.practice||[]).slice(0,(L.vocab||[]).length).map((r,i)=>fillLine(String.fromCharCode(97+i)+') ',r[0],r[1],'______',150)).join('')+`</div>`;
   B.A=L.audio?`<div class="lblock"><div class="lbadge"><span class="b a">A</span><h3>Additional Audios</h3></div>
     <p><b>Audio 1 — ${L.audio.title}</b></p><p class="note">${L.audio.text}</p>
