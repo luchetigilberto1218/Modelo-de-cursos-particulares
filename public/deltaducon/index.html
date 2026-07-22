@@ -729,6 +729,16 @@ function saveProg(){if(DEMO)return;try{localStorage.setItem(PKEY,JSON.stringify(
 function isDone(t,l){return !!PROG[t+'_'+l];}
 function trackDone(ti){const t=DATA[ti];let n=0;for(let j=0;j<t.lessons.length;j++)if(isDone(ti,j))n++;return n;}
 function markDone(ti,li){const k=ti+'_'+li;if(!PROG[k]){PROG[k]=1;saveProg();if(typeof renderHome==='function')renderHome();if(typeof syncPush==='function')syncPush();}}
+// Ao clicar "Voltar às aulas", finaliza a unidade e conta como aula feita
+// (desde que o aluno tenha engajado: pelo menos 1 exercício correto ou já concluída).
+function leaveLesson(ti,li){
+  if(ti!=null&&li!=null){
+    const body=document.getElementById('lessonBody');
+    const ok=body?body.querySelectorAll('input[data-ans].ok').length:0;
+    if(ok>=1||isDone(ti,li))markDone(ti,li);
+  }
+  openTrack(ti);
+}
 
 function renderStudy(){
   document.getElementById('studyGrid').innerHTML = DATA.map((t,i)=>{
@@ -777,7 +787,7 @@ function openLesson(ti,li){
   cel.innerHTML=`<div class="tag">${(typeof firstName==='function'&&firstName())?firstName()+', aula concluída 🎉':'Aula concluída'}</div><div class="en">${(L.celebrate&&L.celebrate.en)||'Well done. Consistency turns practice into fluency.'}</div><div class="pt">${(L.celebrate&&L.celebrate.pt)||'Muito bem. A consistência transforma a prática em fluência.'}</div>`;
 
   const bt=document.getElementById('lessonBackTop'),bb=document.getElementById('lessonBackBot');
-  bt.onclick=()=>openTrack(ti);bb.onclick=()=>openTrack(ti);
+  bt.onclick=()=>leaveLesson(ti,li);bb.onclick=()=>leaveLesson(ti,li);
 
   // ===== ABERTURA (fixa): Objective, Introduction, Vocabulary =====
   let head=`<div class="lblock"><div class="lbadge"><span class="b g">O</span><h3>Objective of the class</h3></div><div class="obj">${L.objective}</div></div>`;
