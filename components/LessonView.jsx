@@ -137,6 +137,11 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         {prevNum ? (
           <Link href={`/${clientId}/lesson/${prevNum}`} className="btn btn-outline">← Previous</Link>
         ) : <span />}
+        {cztProgress && (
+          <Link href={allLessonsHref} className="btn btn-outline" style={{ fontWeight: 600 }}>
+            ☰ Voltar à trilha
+          </Link>
+        )}
         {nextNum ? (
           <Link href={`/${clientId}/lesson/${nextNum}`} className="btn btn-outline">Next →</Link>
         ) : <span />}
@@ -857,6 +862,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
                   {nextNum && (
                     <Link href={`/${clientId}/lesson/${nextNum}`} className="btn btn-primary">Próxima lição →</Link>
                   )}
+                  <Link href={allLessonsHref} className="btn btn-outline">☰ Voltar à trilha</Link>
                   <button onClick={cztLesson.markUndone} className="btn btn-outline" style={{ cursor: 'pointer' }}>
                     Desfazer
                   </button>
@@ -884,7 +890,7 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           {prevNum ? (
             <Link href={`/${clientId}/lesson/${prevNum}`} className="btn btn-outline">← Previous</Link>
           ) : <span />}
-          <Link href={allLessonsHref} className="btn btn-outline">All Lessons</Link>
+          <Link href={allLessonsHref} className="btn btn-outline">{cztProgress ? '☰ Voltar à trilha' : 'All Lessons'}</Link>
           {nextNum ? (
             <Link href={`/${clientId}/lesson/${nextNum}`} className="btn btn-primary">Next →</Link>
           ) : <span />}
