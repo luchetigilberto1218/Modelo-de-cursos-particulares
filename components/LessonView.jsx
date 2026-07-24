@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import AudioPlayer from './AudioPlayer';
 import VocabChip from './VocabChip';
@@ -7,6 +8,7 @@ import Exercise from './Exercise';
 import SpeakingExercise from './SpeakingExercise';
 import Icon from './Icon';
 import { useIdentity, useLessonDone } from './czarnikow-teste/progress';
+import CztLesson from './czarnikow-teste/CztLesson';
 
 function stripHtml(html) {
   return html?.replace(/<br>/g, ' ').replace(/<[^>]+>/g, '').trim() || '';
@@ -112,6 +114,32 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
 
   // Detect typed exercises (new APS / FAAP-style lessons)
   const isTypedLesson = l.exercises?.[0]?.type !== undefined;
+
+  // Auto-conclusão (Czarnikow · teste): a lição marca-se sozinha quando o aluno
+  // responde todos os exercícios avaliáveis. Espelha o doneSet da Baker Hughes.
+  const CZT_GRADEABLE = ['multipleChoice', 'matching', 'fillGap', 'dictation', 'reorder', 'writing'];
+  const cztGradeableIdx = (cztProgress && isTypedLesson && Array.isArray(l.exercises))
+    ? l.exercises.map((ex, i) => (CZT_GRADEABLE.includes(ex.type) ? i : null)).filter((i) => i !== null)
+    : [];
+  const [cztAnswered, setCztAnswered] = useState({});
+  const cztAllAnswered = cztGradeableIdx.length > 0 && cztGradeableIdx.every((i) => cztAnswered[i]);
+  useEffect(() => {
+    if (cztProgress && cztAllAnswered && !cztLesson.done) cztLesson.markDone();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cztProgress, cztAllAnswered, cztLesson.done]);
+
+  // Czarnikow · teste — lições convertidas usam o renderizador estilo Baker Hughes.
+  if (cztProgress && isTypedLesson) {
+    return (
+      <CztLesson
+        lesson={l}
+        clientId={clientId}
+        prevNum={prevNum}
+        nextNum={nextNum}
+        backHref={allLessonsHref}
+      />
+    );
+  }
 
   return (
     <>
@@ -549,7 +577,12 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           {isTypedLesson && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
               {l.exercises.map((ex, i) => (
-                <Exercise key={i} exercise={ex} levelId={l.level || 'starter'} />
+                <Exercise
+                  key={i}
+                  exercise={ex}
+                  levelId={l.level || 'starter'}
+                  onResult={cztProgress ? () => setCztAnswered((a) => (a[i] ? a : { ...a, [i]: true })) : undefined}
+                />
               ))}
             </div>
           )}
@@ -855,17 +888,40 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
           }}>
             {cztLesson.done ? (
               <>
-                <p style={{ margin: '0 0 14px', fontSize: 16, fontWeight: 600, color: '#248A3D' }}>
-                  ✓ Lição concluída
+                <p style={{ margin: '0 0 6px', fontSize: 17, fontWeight: 700, color: '#248A3D' }}>
+                  ✓ {l.celebrate?.en || 'Lição concluída'}
                 </p>
+                {l.celebrate?.pt && (
+                  <p style={{ margin: '0 0 16px', fontSize: 14, color: '#5A7A66' }}>{l.celebrate.pt}</p>
+                )}
                 <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
                   {nextNum && (
                     <Link href={`/${clientId}/lesson/${nextNum}`} className="btn btn-primary">Próxima lição →</Link>
                   )}
                   <Link href={allLessonsHref} className="btn btn-outline">☰ Voltar à trilha</Link>
-                  <button onClick={cztLesson.markUndone} className="btn btn-outline" style={{ cursor: 'pointer' }}>
-                    Desfazer
-                  </button>
+                  {!isTypedLesson && (
+                    <button onClick={cztLesson.markUndone} className="btn btn-outline" style={{ cursor: 'pointer' }}>
+                      Desfazer
+                    </button>
+                  )}
+                </div>
+              </>
+            ) : isTypedLesson && cztGradeableIdx.length > 0 ? (
+              <>
+                <p style={{ margin: '0 0 12px', fontSize: 15, color: '#6B7A8F' }}>
+                  Responda os exercícios acima — a lição se conclui sozinha e acende a sua trilha.
+                </p>
+                <div style={{ maxWidth: 260, margin: '0 auto' }}>
+                  <div style={{ height: 8, borderRadius: 999, background: '#e4e9ef', overflow: 'hidden' }}>
+                    <div style={{
+                      height: '100%',
+                      width: `${Math.round((cztGradeableIdx.filter((i) => cztAnswered[i]).length / cztGradeableIdx.length) * 100)}%`,
+                      background: '#2AAAE2', borderRadius: 999, transition: 'width 0.4s ease',
+                    }} />
+                  </div>
+                  <p style={{ fontSize: 13, color: '#86868b', margin: '8px 0 0', fontWeight: 500 }}>
+                    {cztGradeableIdx.filter((i) => cztAnswered[i]).length} de {cztGradeableIdx.length} exercícios respondidos
+                  </p>
                 </div>
               </>
             ) : (
