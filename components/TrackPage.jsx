@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { useIdentity, useDoneMap } from './czarnikow-teste/progress';
 
 const LEVEL_COLOR = {
   confidence: '#7FD4F5',
@@ -35,13 +36,23 @@ function useIsMobile(breakpoint = 600) {
   return isMobile;
 }
 
-function LessonCard({ lesson, clientId, color, mobile }) {
+function LessonCard({ lesson, clientId, color, mobile, done = false, isNext = false }) {
   const [hovered, setHovered] = useState(false);
+
+  // Estados visuais (só mudam quando o progresso está ligado, i.e. czarnikow-teste):
+  //  - done  => "acende" verde com ✓
+  //  - isNext => borda de destaque + "Continue aqui →"
+  const bg = done ? '#F0FBF4' : '#fff';
+  const borderColor = done ? '#34C759' : isNext ? color : '#d2d2d7';
+  const borderWidth = done || isNext ? 2 : 1;
+  const label = done ? 'Concluída' : isNext ? 'Continue aqui →' : 'Open';
+  const labelColor = done ? '#248A3D' : color;
 
   return (
     <Link
       href={`/${clientId}/lesson/${lesson.num}`}
       style={{
+        position: 'relative',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -50,12 +61,14 @@ function LessonCard({ lesson, clientId, color, mobile }) {
         gap: mobile ? 4 : 8,
         padding: mobile ? '16px 10px 14px' : '28px 20px 24px',
         borderRadius: mobile ? 14 : 20,
-        background: '#fff',
+        background: bg,
         textDecoration: 'none',
         color: '#1d1d1f',
         minHeight: mobile ? 100 : 140,
-        border: '1px solid #d2d2d7',
-        boxShadow: hovered ? '0 12px 40px rgba(0,0,0,0.12)' : '0 1px 4px rgba(0,0,0,0.04)',
+        border: `${borderWidth}px solid ${borderColor}`,
+        boxShadow: hovered
+          ? '0 12px 40px rgba(0,0,0,0.12)'
+          : isNext ? `0 0 0 3px ${color}22` : '0 1px 4px rgba(0,0,0,0.04)',
         transform: hovered ? 'translateY(-8px)' : 'translateY(0)',
         transition: 'transform 0.4s cubic-bezier(0.25,0.1,0.25,1), box-shadow 0.4s',
         cursor: 'pointer',
@@ -63,6 +76,15 @@ function LessonCard({ lesson, clientId, color, mobile }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
+      {done && (
+        <span style={{
+          position: 'absolute', top: 8, right: 10,
+          width: 22, height: 22, borderRadius: '50%',
+          background: '#34C759', color: '#fff',
+          fontSize: 13, fontWeight: 700,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>✓</span>
+      )}
       <span style={{ fontSize: mobile ? 11 : 13, fontWeight: 600, color, letterSpacing: 0.5 }}>
         {String(lesson.trackOrder || lesson.num).padStart(2, '0')}
       </span>
@@ -71,14 +93,14 @@ function LessonCard({ lesson, clientId, color, mobile }) {
       </span>
       <span style={{
         fontSize: mobile ? 12 : 14,
-        fontWeight: 400,
-        color,
+        fontWeight: isNext ? 600 : 400,
+        color: labelColor,
         marginTop: 2,
         minHeight: 44,
         display: 'flex',
         alignItems: 'center',
       }}>
-        Open
+        {label}
       </span>
     </Link>
   );
@@ -92,6 +114,19 @@ export default function TrackPage({ course, theme, clientId, levelId, trackId })
     (l) => l.level === levelId && l.track === trackId
   );
   const mobile = useIsMobile();
+
+  // Progresso "acende a lição" — SÓ no ambiente de teste; os demais cursos não mudam.
+  const trackProgress = clientId === 'czarnikow-teste';
+  const identity = useIdentity(trackProgress);
+  const doneMap = useDoneMap(trackProgress ? identity?.student : null);
+  const doneCount = trackProgress ? lessons.filter((l) => doneMap[l.num]).length : 0;
+  // "Próxima" = primeira lição (na ordem da trilha) ainda não concluída.
+  const nextNum = (() => {
+    if (!trackProgress) return null;
+    const ordered = [...lessons].sort((a, b) => (a.trackOrder || a.num) - (b.trackOrder || b.num));
+    const next = ordered.find((l) => !doneMap[l.num]);
+    return next ? next.num : null;
+  })();
 
   if (!track) return null;
 
@@ -158,6 +193,23 @@ export default function TrackPage({ course, theme, clientId, levelId, trackId })
         <p style={{ fontSize: mobile ? 15 : 19, color: '#86868b', margin: 0 }}>
           {lessons.length} lesson{lessons.length === 1 ? '' : 's'}
         </p>
+        {trackProgress && lessons.length > 0 && (
+          <div style={{ maxWidth: 320, margin: '18px auto 0' }}>
+            <div style={{ height: 8, borderRadius: 999, background: '#e4e9ef', overflow: 'hidden' }}>
+              <div style={{
+                height: '100%',
+                width: `${Math.round((doneCount / lessons.length) * 100)}%`,
+                background: color,
+                borderRadius: 999,
+                transition: 'width 0.5s ease',
+              }} />
+            </div>
+            <p style={{ fontSize: 13, color: '#86868b', margin: '8px 0 0', fontWeight: 500 }}>
+              {doneCount} de {lessons.length} concluídas
+              {doneCount === lessons.length ? ' · trilha completa 🎉' : ''}
+            </p>
+          </div>
+        )}
       </section>
 
       {lessons.length === 0 ? (
@@ -194,6 +246,8 @@ export default function TrackPage({ course, theme, clientId, levelId, trackId })
               clientId={clientId}
               color={color}
               mobile={mobile}
+              done={trackProgress && !!doneMap[lesson.num]}
+              isNext={trackProgress && lesson.num === nextNum}
             />
           ))}
         </section>

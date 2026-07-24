@@ -6,6 +6,7 @@ import VocabChip from './VocabChip';
 import Exercise from './Exercise';
 import SpeakingExercise from './SpeakingExercise';
 import Icon from './Icon';
+import { useIdentity, useLessonDone } from './czarnikow-teste/progress';
 
 function stripHtml(html) {
   return html?.replace(/<br>/g, ' ').replace(/<[^>]+>/g, '').trim() || '';
@@ -83,6 +84,10 @@ const TRACK_LABEL = {
 export default function LessonView({ lesson, lessonIndex, totalLessons, clientId, backHref, course, prevNum: prevNumProp, nextNum: nextNumProp }) {
   const l = lesson;
   const isOutdoor = l.type === 'outdoor';
+  // Progresso "acende a lição" — SÓ no ambiente de teste do Czarnikow (aditivo).
+  const cztProgress = clientId === 'czarnikow-teste';
+  const cztIdentity = useIdentity(cztProgress);
+  const cztLesson = useLessonDone(cztProgress ? cztIdentity?.student : null, l.num);
   // Navigation by real lesson `num`. The page passes prevNum/nextNum scoped to the
   // same level+track (correct for Czarnikow, where num !== index+1). Fall back to the
   // legacy index-based math only for older sequential courses that don't pass them.
@@ -831,6 +836,47 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
         )}
 
         </>
+        )}
+
+        {/* Concluir lição (Czarnikow · teste) — marca a lição e acende o card na trilha */}
+        {cztProgress && cztIdentity?.student && (
+          <div style={{
+            margin: '32px 0 8px',
+            padding: '24px',
+            borderRadius: 16,
+            textAlign: 'center',
+            background: cztLesson.done ? '#F0FBF4' : '#fff',
+            border: `2px solid ${cztLesson.done ? '#34C759' : '#e4e9ef'}`,
+          }}>
+            {cztLesson.done ? (
+              <>
+                <p style={{ margin: '0 0 14px', fontSize: 16, fontWeight: 600, color: '#248A3D' }}>
+                  ✓ Lição concluída
+                </p>
+                <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+                  {nextNum && (
+                    <Link href={`/${clientId}/lesson/${nextNum}`} className="btn btn-primary">Próxima lição →</Link>
+                  )}
+                  <button onClick={cztLesson.markUndone} className="btn btn-outline" style={{ cursor: 'pointer' }}>
+                    Desfazer
+                  </button>
+                </div>
+              </>
+            ) : (
+              <>
+                <p style={{ margin: '0 0 14px', fontSize: 15, color: '#6B7A8F' }}>
+                  Terminou esta lição? Marque como concluída para acender a sua trilha.
+                </p>
+                <button
+                  onClick={cztLesson.markDone}
+                  className="btn btn-primary"
+                  style={{ cursor: 'pointer', fontSize: 16, padding: '12px 28px' }}
+                >
+                  ✓ Concluir lição
+                </button>
+              </>
+            )}
+          </div>
         )}
 
         {/* Bottom nav */}

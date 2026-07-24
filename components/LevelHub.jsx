@@ -2,8 +2,10 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 // Grammar & Search quick links are rendered in the header and footer.
 import AudioPlayer from './AudioPlayer';
+import { useIdentity } from './czarnikow-teste/progress';
 
 const HISTORY_PARAGRAPHS = [
   "Czarnikow was founded in London in 1861 by Caesar Czarnikow, a young Polish sugar broker who saw an opportunity in the growing British market. From a small office in the City, he began trading sugar from the Caribbean and built trust with refiners across Europe.",
@@ -74,6 +76,15 @@ function LevelCard({ level, clientId }) {
 
 export default function LevelHub({ course, theme, clientId }) {
   const logos = theme?.logos || {};
+  const router = useRouter();
+  // Saudação + "Sair" só no ambiente de teste (login obrigatório); aditivo.
+  const cztProgress = clientId === 'czarnikow-teste';
+  const identity = useIdentity(cztProgress);
+  async function handleLogout() {
+    await fetch('/api/auth', { method: 'DELETE' });
+    router.push('/login');
+    router.refresh();
+  }
 
   return (
     <div style={{
@@ -95,10 +106,24 @@ export default function LevelHub({ course, theme, clientId }) {
         <span style={{ fontSize: 17, fontWeight: 600, color: '#1d1d1f', letterSpacing: -0.2 }}>
           English Programme
         </span>
-        <nav style={{ display: 'flex', gap: 20, fontSize: 14 }}>
+        <nav style={{ display: 'flex', gap: 20, fontSize: 14, alignItems: 'center' }}>
           <Link href={`/${clientId}/search`} style={{ color: '#0071e3', textDecoration: 'none', fontWeight: 500 }}>
             Search Lessons
           </Link>
+          {cztProgress && identity?.name && (
+            <>
+              <span style={{ color: '#86868b', fontWeight: 500 }}>Olá, {identity.name.split(' ')[0]}</span>
+              <button
+                onClick={handleLogout}
+                style={{
+                  background: 'transparent', border: '1px solid #d2d2d7', color: '#6B7A8F',
+                  padding: '6px 12px', borderRadius: 8, fontSize: 13, cursor: 'pointer', fontWeight: 500,
+                }}
+              >
+                Sair
+              </button>
+            </>
+          )}
         </nav>
       </header>
 

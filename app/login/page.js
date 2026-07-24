@@ -30,7 +30,13 @@ export default function LoginPage() {
         return;
       }
 
-      router.push('/');
+      // Alunos/professores com um único cliente vão direto pro material dele;
+      // coordenador (acesso a tudo) segue para a raiz. Aditivo e seguro.
+      const clients = data.user?.clients;
+      const dest = data.user?.role !== 'coordinator' && clients?.length === 1
+        ? `/${clients[0]}`
+        : '/';
+      router.push(dest);
       router.refresh();
     } catch {
       setError('Connection error');

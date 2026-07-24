@@ -8,6 +8,22 @@
       "password": "$2b$10$CZ5rPffoZ/6QnJBFXR54pOM3ulV4TLXeXNnIjcYxwTjCYPP2cN74K",
       "role": "coordinator",
       "clients": ["aps"]
+    },
+    {
+      "id": "czt-teste",
+      "name": "Colaborador Teste",
+      "username": "teste",
+      "password": "$2b$10$ozrVX6eGaIS9KJuUsPikG.rkB6zt5xvl9C6kEAMaFOFNSxuP1OR1S",
+      "role": "student",
+      "clients": ["czarnikow-teste"]
+    },
+    {
+      "id": "czt-prof",
+      "name": "Professor Czarnikow",
+      "username": "professor",
+      "password": "$2b$10$GgCsSlv0zvOpsDPZ9YJTtuJB1a0u6axaKASHcTWcGO2IHD4nTzdTy",
+      "role": "teacher",
+      "clients": ["czarnikow-teste"]
     }
   ]
 }

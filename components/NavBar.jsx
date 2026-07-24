@@ -2,10 +2,24 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 
 export default function NavBar({ user, theme, clientId }) {
   const router = useRouter();
   const homeHref = clientId ? `/${clientId}` : '/';
+
+  // No ambiente de teste do Czarnikow (login obrigatório), a NavBar descobre
+  // sozinha quem está logado para mostrar o nome + "Sair". Aditivo: se um `user`
+  // for passado por prop, ele tem prioridade; os outros cursos ficam intactos.
+  const [me, setMe] = useState(null);
+  useEffect(() => {
+    if (user || clientId !== 'czarnikow-teste') return;
+    fetch('/api/czarnikow-teste/me', { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => { if (d?.student) setMe({ name: d.name, role: d.role }); })
+      .catch(() => {});
+  }, [user, clientId]);
+  const shownUser = user || me;
 
   async function handleLogout() {
     await fetch('/api/auth', { method: 'DELETE' });
@@ -38,9 +52,9 @@ export default function NavBar({ user, theme, clientId }) {
       </Link>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        {user && (
+        {shownUser && (
           <>
-            <span style={{ color: '#fff', fontSize: 13, fontWeight: 500 }}>{user.name}</span>
+            <span style={{ color: '#fff', fontSize: 13, fontWeight: 500 }}>{shownUser.name}</span>
             <button
               onClick={handleLogout}
               style={{
