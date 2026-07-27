@@ -14,21 +14,24 @@
 import { SEMESTER } from '../components/czarnikow-teste/campaign.js';
 
 /*
-  O retrato é o de uma campanha por volta da 14ª das 20 semanas — assim o RH vê
-  o ranking com gente espalhada por tiers diferentes, e não todo mundo empatado
-  no começo. nome, aulas em turma, aulas particulares, lições, semanas ativas.
+  O retrato é o de uma campanha por volta da 15ª das 20 semanas: gente espalhada
+  por tiers diferentes e por perfis diferentes — quem é puxado pelas aulas, quem
+  é puxado pelo material, quem faz particulares. Assim o RH vê o ranking contando
+  uma história, e não dez linhas iguais.
+
+  nome, aulas em turma, aulas particulares, lições concluídas, semanas ativas.
 */
 const SEED = [
-  { student: 'demo-ana',      name: 'Ana Beatriz Moraes',  general: 28, private: 6, lessons: 20, weeks: 14 },
-  { student: 'demo-rafael',   name: 'Rafael Nogueira',     general: 26, private: 4, lessons: 18, weeks: 14 },
-  { student: 'demo-juliana',  name: 'Juliana Petrelli',    general: 25, private: 5, lessons: 16, weeks: 13 },
-  { student: 'demo-thiago',   name: 'Thiago Aoki',         general: 26, private: 0, lessons: 19, weeks: 14 },
-  { student: 'demo-camila',   name: 'Camila Ferreira',     general: 22, private: 3, lessons: 15, weeks: 12 },
-  { student: 'demo-lucas',    name: 'Lucas Bernardes',     general: 20, private: 0, lessons: 13, weeks: 11 },
-  { student: 'demo-patricia', name: 'Patrícia Salgado',    general: 18, private: 2, lessons: 12, weeks: 10 },
-  { student: 'demo-eduardo',  name: 'Eduardo Tanaka',      general: 16, private: 0, lessons: 10, weeks: 9 },
-  { student: 'demo-marina',   name: 'Marina Cordeiro',     general: 12, private: 0, lessons: 8,  weeks: 7 },
-  { student: 'demo-felipe',   name: 'Felipe Andrade',      general: 8,  private: 0, lessons: 5,  weeks: 5 },
+  { student: 'demo-ana',      name: 'Ana Beatriz Moraes',  general: 30, private: 5, lessons: 45, weeks: 15 },
+  { student: 'demo-juliana',  name: 'Juliana Petrelli',    general: 30, private: 4, lessons: 30, weeks: 15 },
+  { student: 'demo-rafael',   name: 'Rafael Nogueira',     general: 28, private: 3, lessons: 42, weeks: 15 },
+  { student: 'demo-thiago',   name: 'Thiago Aoki',         general: 26, private: 0, lessons: 48, weeks: 15 },
+  { student: 'demo-camila',   name: 'Camila Ferreira',     general: 24, private: 2, lessons: 35, weeks: 14 },
+  { student: 'demo-lucas',    name: 'Lucas Bernardes',     general: 22, private: 0, lessons: 26, weeks: 13 },
+  { student: 'demo-patricia', name: 'Patrícia Salgado',    general: 24, private: 1, lessons: 18, weeks: 13 },
+  { student: 'demo-eduardo',  name: 'Eduardo Tanaka',      general: 18, private: 0, lessons: 20, weeks: 11 },
+  { student: 'demo-marina',   name: 'Marina Cordeiro',     general: 14, private: 0, lessons: 12, weeks: 9 },
+  { student: 'demo-felipe',   name: 'Felipe Andrade',      general: 8,  private: 0, lessons: 6,  weeks: 6 },
 ];
 
 const DAY = 86400000;
@@ -69,8 +72,25 @@ export function demoParticipants(lessonNums = []) {
  * Aulas de demonstração para os logins de teste, para que a metade "aula" da
  * campanha (60%) apareça enquanto a Alumni ainda não lança presença de verdade.
  */
-// A chave é o `id` do usuário em data/users.json (não o username do login).
-export const DEMO_CLASSES = {
-  'czt-teste': { general: 18, private: 3 },
-  'czt-prof': { general: 0, private: 0 },
+/*
+  O login de demonstração também entra na campanha "no meio dela": recebe aulas e
+  um histórico de estudo fictícios, para que quem apresenta caia numa tela
+  representativa (com os ~60/40 visíveis) em vez de 100% aula e material zerado.
+
+  As lições feitas AO VIVO durante a demonstração somam por cima disso — o
+  progresso real sempre vence o sintético. A interface avisa que são dados de
+  demonstração. Chave = `id` do usuário em data/users.json, não o username.
+*/
+const SELF = {
+  'czt-teste': { general: 20, private: 2, lessons: 24, weeks: 12 },
 };
+
+export const DEMO_CLASSES = Object.fromEntries(
+  Object.entries(SELF).map(([id, s]) => [id, { general: s.general, private: s.private }]),
+);
+
+/** Histórico de estudo fictício do login de demonstração (null para os demais). */
+export function demoBacklog(student, lessonNums = []) {
+  const s = SELF[student];
+  return s ? synthState(lessonNums, s.lessons, s.weeks) : null;
+}

@@ -3,7 +3,7 @@ import { getSession, getUsers } from '../../../../lib/auth';
 import { readDoc, listAll, isValidStudent } from '../../../../lib/czarnikow-teste-progress-store';
 import { getCourseLite } from '../../../../lib/courses';
 import { computeScore, badgesFor, SEMESTER } from '../../../../components/czarnikow-teste/campaign';
-import { demoParticipants, DEMO_CLASSES } from '../../../../data/czarnikow-teste-demo';
+import { demoParticipants, demoBacklog, DEMO_CLASSES } from '../../../../data/czarnikow-teste-demo';
 
 /*
   Campanha Czarnikow Ago–Dez 2026 (ambiente de teste).
@@ -28,12 +28,20 @@ function lessonMeta() {
   }));
 }
 
-// Lições da trilha já convertida — base para o progresso dos participantes demo.
+// Base de lições para o progresso dos participantes demo: o nível Essentials
+// inteiro, começando por HR (a trilha já convertida) e seguindo pelas demais —
+// é o percurso de quem estuda o semestre todo, e faz os badges se espalharem.
 function demoLessonNums(lessons) {
-  return lessons
-    .filter((l) => l.level === 'essentials' && l.track === 'hr')
+  const essentials = lessons.filter((l) => l.level === 'essentials');
+  const byTrack = new Map();
+  for (const l of essentials) {
+    if (!byTrack.has(l.track)) byTrack.set(l.track, []);
+    byTrack.get(l.track).push(l);
+  }
+  const order = ['hr', ...[...byTrack.keys()].filter((t) => t !== 'hr')];
+  return order.flatMap((t) => (byTrack.get(t) || [])
     .sort((a, b) => (a.trackOrder || a.num) - (b.trackOrder || b.num))
-    .map((l) => l.num);
+    .map((l) => l.num));
 }
 
 export async function GET() {
@@ -49,7 +57,12 @@ export async function GET() {
   try {
     // ── participante logado ──────────────────────────────────────────────
     const doc = await readDoc(session.id);
-    const state = doc?.lessons || {};
+    const realLessons = doc?.lessons || {};
+    // O histórico de demonstração entra por baixo: o progresso REAL sempre vence.
+    const backlog = demoBacklog(session.id, demoLessonNums(lessons)) || {};
+    const isDemoLogin = Object.keys(backlog).length > 0;
+    const state = { ...backlog, ...realLessons };
+
     const classes = doc?.classes || DEMO_CLASSES[session.id] || { general: 0, private: 0 };
     const classesAreDemo = !doc?.classes && !!DEMO_CLASSES[session.id];
 
@@ -59,6 +72,8 @@ export async function GET() {
       score: computeScore({ lessons, state, classes }),
       badges: badgesFor({ lessons, state }),
       classesAreDemo,
+      isDemoLogin,
+      realLessonsDone: Object.values(realLessons).filter((l) => l?.done).length,
     };
 
     // ── ranking aberto ───────────────────────────────────────────────────

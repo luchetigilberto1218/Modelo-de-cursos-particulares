@@ -17,14 +17,29 @@ export const SEMESTER = {
   label: 'Agosto – Dezembro 2026',
 };
 
+/*
+  Dois tetos, e é aí que mora o desenho da campanha:
+
+  - TETO DIÁRIO (4 pts): estudar tudo de uma vez não paga. Vinte lições numa
+    tarde valem o mesmo que uma.
+  - TETO SEMANAL (9 pts): para fechar a semana no material é preciso estudar em
+    pelo menos TRÊS dias diferentes. É o teto diário que obriga a espalhar —
+    com teto semanal sozinho, uma única lição já fecharia a semana e quem
+    estudasse 1 vez por semana pontuaria igual a quem estudasse 5.
+
+  O bônus de constância (7 dias seguidos) é o único ganho que passa do teto
+  semanal — é o prêmio de quem sustenta ritmo, e é raro o bastante para não
+  desequilibrar o 60/40.
+*/
 export const SCORING = {
-  classPrivate: 10,      // aula particular (por aula, sem teto)
-  classGeneral: 7,       // aula em turma (por aula, sem teto)
-  lessonDone: 5,         // lição concluída
-  accuracyMax: 2,        // 2 × % de acerto na 1ª tentativa (0 a 2 pts)
-  activeDay: 5,          // dia com estudo válido — no máximo 1 por dia
-  streakBonus: 5,        // 7 dias seguidos estudando na mesma trilha
-  materialWeeklyCap: 9,  // TETO do material por semana (anti-gaming)
+  classPrivate: 10,       // aula particular (por aula, sem teto)
+  classGeneral: 7,        // aula em turma (por aula, sem teto)
+  lessonDone: 2,          // lição concluída
+  accuracyMax: 1,         // até 1 pt, conforme o % de acerto na 1ª tentativa
+  activeDay: 1,           // por dia com estudo válido
+  streakBonus: 5,         // 7 dias seguidos na mesma trilha (fora do teto semanal)
+  materialDailyCap: 4,    // TETO do material por dia
+  materialWeeklyCap: 9,   // TETO do material por semana
 };
 
 /* Faixas calibradas pela projeção do semestre:
@@ -110,64 +125,60 @@ export function computeScore({ lessons = [], state = {}, classes = {} } = {}) {
   }
   done.sort((a, b) => String(a.at || '').localeCompare(String(b.at || '')));
 
-  // Ganhos brutos de material, agrupados por semana.
-  const weeks = new Map();           // week -> { raw, lessons }
-  const activeDays = new Set();
-  const daysByTrack = new Map();     // track -> Set(dia)
-
-  const bump = (week, pts) => {
-    const w = weeks.get(week) || { raw: 0, lessons: 0 };
-    w.raw += pts;
-    weeks.set(week, w);
-  };
+  // Ganhos de material, primeiro agrupados por DIA (onde vale o teto diário).
+  const days = new Map();            // dia -> { raw, lessons, week }
+  const daysByTrack = new Map();     // trilha -> Set(dia)
 
   for (const l of done) {
+    const day = (l.at && dayKey(l.at)) || NO_DATE;
     const week = (l.at && isoWeek(l.at)) || NO_DATE;
-    const w = weeks.get(week) || { raw: 0, lessons: 0 };
-    w.lessons += 1;
-    weeks.set(week, w);
 
-    bump(week, SCORING.lessonDone);
-    if (l.acc !== null) bump(week, SCORING.accuracyMax * l.acc);
+    const d = days.get(day) || { raw: SCORING.activeDay, lessons: 0, week };
+    d.lessons += 1;
+    d.raw += SCORING.lessonDone;
+    if (l.acc !== null) d.raw += SCORING.accuracyMax * l.acc;
+    days.set(day, d);
 
-    const day = l.at ? dayKey(l.at) : null;
-    if (day) {
-      if (!activeDays.has(day)) {
-        activeDays.add(day);
-        bump(week, SCORING.activeDay);   // sessão válida: 1 por dia
-      }
-      if (l.track) {
-        if (!daysByTrack.has(l.track)) daysByTrack.set(l.track, new Set());
-        daysByTrack.get(l.track).add(day);
-      }
+    if (l.track && l.at) {
+      if (!daysByTrack.has(l.track)) daysByTrack.set(l.track, new Set());
+      daysByTrack.get(l.track).add(day);
     }
   }
 
-  // Bônus de constância: 7 dias seguidos de estudo na mesma trilha.
-  let streaks = 0;
-  for (const [, days] of daysByTrack) {
-    streaks += countStreaks([...days].sort(), 7);
-  }
-  if (streaks > 0) {
-    // O bônus cai na semana mais recente com atividade.
-    const last = [...weeks.keys()].sort().pop();
-    if (last) bump(last, streaks * SCORING.streakBonus);
+  // Teto diário → depois agrupa por semana.
+  const weeks = new Map();           // semana -> { raw, capped, lessons, days }
+  let materialRaw = 0;
+  for (const [, d] of days) {
+    const dayCapped = Math.min(d.raw, SCORING.materialDailyCap);
+    materialRaw += d.raw;
+    const w = weeks.get(d.week) || { raw: 0, lessons: 0, days: 0 };
+    w.raw += dayCapped;
+    w.lessons += d.lessons;
+    w.days += 1;
+    weeks.set(d.week, w);
   }
 
-  // Aplica o teto semanal.
+  // Teto semanal.
   let materialPoints = 0;
-  let materialRaw = 0;
   const byWeek = [...weeks.entries()]
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([week, w]) => {
       const capped = Math.min(w.raw, SCORING.materialWeeklyCap);
-      materialRaw += w.raw;
       materialPoints += capped;
-      return { week, raw: round1(w.raw), capped: round1(capped), lessons: w.lessons };
+      return { week, raw: round1(w.raw), capped: round1(capped), lessons: w.lessons, days: w.days };
     });
 
-  materialPoints = round1(materialPoints);
-  materialRaw = round1(materialRaw);
+  // Bônus de constância: 7 dias seguidos na mesma trilha. Único ganho que passa
+  // do teto semanal — ver a nota em SCORING.
+  let streaks = 0;
+  for (const [, set] of daysByTrack) {
+    streaks += countStreaks([...set].sort(), 7);
+  }
+  const streakPoints = streaks * SCORING.streakBonus;
+
+  materialPoints = round1(materialPoints + streakPoints);
+  materialRaw = round1(materialRaw + streakPoints);
+  const activeDays = new Set([...days.keys()].filter((d) => d !== NO_DATE));
   const total = round1(classPoints + materialPoints);
 
   return {
@@ -180,6 +191,7 @@ export function computeScore({ lessons = [], state = {}, classes = {} } = {}) {
     lessonsDone: done.length,
     activeDays: activeDays.size,
     streaks,
+    streakPoints,
     byWeek,
     split: {
       classPct: total > 0 ? Math.round((classPoints / total) * 100) : 0,
@@ -248,10 +260,19 @@ export function badgesFor({ lessons = [], state = {} } = {}) {
  */
 export function projectSemester({ weeks = SEMESTER.weeks, generalPerWeek = 2, privatePerWeek = 0, lessonsPerWeek = 2 } = {}) {
   const classPoints = weeks * (generalPerWeek * SCORING.classGeneral + privatePerWeek * SCORING.classPrivate);
-  // material da semana: lições × (5 + até 2 de acerto) + 5 por dia ativo,
-  // tudo limitado pelo teto semanal.
-  const rawWeek = lessonsPerWeek * (SCORING.lessonDone + SCORING.accuracyMax) + Math.min(lessonsPerWeek, 3) * SCORING.activeDay;
-  const materialWeek = Math.min(rawWeek, SCORING.materialWeeklyCap);
+
+  // Material: assume a pessoa espalhando as lições em dias diferentes (até 5 por
+  // semana). Cada dia sofre o teto diário; a semana sofre o teto semanal.
+  const ACC = 0.8;                                   // acerto médio suposto
+  const studyDays = Math.min(lessonsPerWeek, 5);
+  const perLesson = SCORING.lessonDone + SCORING.accuracyMax * ACC;
+  let materialWeek = 0;
+  for (let d = 0; d < studyDays; d += 1) {
+    // sobras se distribuem nos primeiros dias
+    const lessonsToday = Math.floor(lessonsPerWeek / studyDays) + (d < lessonsPerWeek % studyDays ? 1 : 0);
+    materialWeek += Math.min(SCORING.activeDay + lessonsToday * perLesson, SCORING.materialDailyCap);
+  }
+  materialWeek = Math.min(materialWeek, SCORING.materialWeeklyCap);
   const materialPoints = weeks * materialWeek;
   const total = classPoints + materialPoints;
   return {

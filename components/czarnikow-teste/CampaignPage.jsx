@@ -93,7 +93,7 @@ export default function CampaignPage({ clientId, theme }) {
 
       {me && (
         <section style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 24px 0' }}>
-          <SplitCard score={me.score} classesAreDemo={me.classesAreDemo} />
+          <SplitCard score={me.score} classesAreDemo={me.classesAreDemo} isDemoLogin={me.isDemoLogin} realLessonsDone={me.realLessonsDone} />
         </section>
       )}
 
@@ -143,12 +143,12 @@ export default function CampaignPage({ clientId, theme }) {
             <RuleGroup
               tone="plain"
               title="Material · 40% da campanha"
-              note={`Teto de ${SCORING.materialWeeklyCap} pts por semana — estudar tudo num dia só não multiplica pontos.`}
+              note={`Teto de ${SCORING.materialDailyCap} pts por dia e ${SCORING.materialWeeklyCap} pts por semana: para fechar a semana no material é preciso estudar em pelo menos três dias diferentes.`}
               rules={[
                 [`${SCORING.lessonDone} pts`, 'por lição concluída'],
-                [`até ${SCORING.accuracyMax} pts`, 'conforme o acerto na 1ª tentativa'],
-                [`${SCORING.activeDay} pts`, 'por dia de estudo válido (máx. 1 por dia)'],
-                [`${SCORING.streakBonus} pts`, 'por 7 dias seguidos na mesma trilha'],
+                [`até ${SCORING.accuracyMax} pt`, 'conforme o acerto na 1ª tentativa'],
+                [`${SCORING.activeDay} pt`, 'por dia com estudo válido'],
+                [`${SCORING.streakBonus} pts`, 'por 7 dias seguidos na mesma trilha — único bônus que passa do teto'],
               ]}
             />
           </div>
@@ -164,9 +164,10 @@ export default function CampaignPage({ clientId, theme }) {
           </div>
 
           <p style={{ fontSize: 13.5, color: C.gray, lineHeight: 1.6, margin: '16px 0 0' }}>
-            <strong style={{ color: C.navy }}>Anti-gaming:</strong> o acerto só conta na primeira tentativa;
-            o dia de estudo conta uma vez por dia; e o teto semanal do material vale para tudo somado.
-            A presença em aula é lançada pela Alumni — não é o participante quem declara.
+            <strong style={{ color: C.navy }}>Anti-gaming:</strong> o acerto só conta na primeira tentativa,
+            e os dois tetos do material valem para tudo somado. Na prática, vinte lições numa tarde só
+            valem o teto de um dia — o que pontua é voltar em dias diferentes.
+            A presença em aula é lançada pela Alumni; não é o participante quem declara.
           </p>
         </Card>
       </section>
@@ -233,7 +234,7 @@ function TierTrack({ score }) {
 }
 
 /* ── 60/40 do participante ────────────────────────────────────────────────── */
-function SplitCard({ score, classesAreDemo }) {
+function SplitCard({ score, classesAreDemo, isDemoLogin, realLessonsDone }) {
   const total = score.total || 1;
   const classW = (score.classPoints / total) * 100;
   return (
@@ -263,10 +264,12 @@ function SplitCard({ score, classesAreDemo }) {
         )}
       </div>
 
-      {classesAreDemo && (
+      {(classesAreDemo || isDemoLogin) && (
         <p style={{ fontSize: 13, color: C.gray, margin: '16px 0 0', lineHeight: 1.5 }}>
-          ⓘ As aulas deste login são <strong>dados de demonstração</strong>, para mostrar como a metade
-          &ldquo;aula&rdquo; da campanha aparece. Na campanha real, a Alumni lança a presença de cada colaborador.
+          ⓘ Este login entra na campanha já em andamento: as aulas e o histórico de estudo anteriores são
+          {' '}<strong>dados de demonstração</strong>, para mostrar a campanha em regime.
+          {realLessonsDone > 0 && ` As ${realLessonsDone} lições que você concluiu de verdade somam por cima.`}
+          {' '}Na campanha real, a Alumni lança a presença de cada colaborador e o histórico é só o do próprio aluno.
         </p>
       )}
     </Card>
