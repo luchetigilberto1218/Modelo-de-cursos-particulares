@@ -10,3 +10,6 @@ extract_course.js
 # APS course backups (kept locally only)
 courses/aps/course.backup*.json
 .env*
+
+# Claude Code worktrees/local settings (never commit — GBs of data)
+.claude/

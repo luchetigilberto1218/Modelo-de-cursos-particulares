@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation';
+import { redirect, notFound } from 'next/navigation';
 import { getCourseLite, getTheme } from '../../../lib/courses';
 import { guardClient } from '../../../lib/guard';
 import NavBar from '../../../components/NavBar';
@@ -10,7 +10,7 @@ export default async function GrammarPage({ params }) {
 
   const course = getCourseLite(client);
   const theme = getTheme(client);
-  if (!course) redirect('/');
+  if (!course) notFound();
 
   return (
     <>

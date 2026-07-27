@@ -1,8 +1,9 @@
-import { redirect } from 'next/navigation';
+import { redirect, notFound } from 'next/navigation';
 import { getCourse, getTheme } from '../../../../lib/courses';
 import { guardClient } from '../../../../lib/guard';
 import NavBar from '../../../../components/NavBar';
 import LessonView from '../../../../components/LessonView';
+import BakerHughesLesson from '../../../../components/bakerhughes/BakerHughesLesson';
 
 export default async function LessonPage({ params }) {
   const { client, id } = await params;
@@ -10,7 +11,7 @@ export default async function LessonPage({ params }) {
 
   const course = getCourse(client);
   const theme = getTheme(client);
-  if (!course) redirect('/');
+  if (!course) notFound();
 
   const lessonNum = parseInt(id, 10);
   const lessonIndex = course.lessons.findIndex((l) => l.num === lessonNum);
@@ -39,6 +40,19 @@ export default async function LessonPage({ params }) {
     siblingIndex >= 0 && siblingIndex < siblings.length - 1
       ? siblings[siblingIndex + 1].num
       : null;
+
+  if (client === 'bakerhughes') {
+    return (
+      <BakerHughesLesson
+        lesson={lesson}
+        theme={theme}
+        clientId={client}
+        backHref={backHref}
+        prevNum={prevNum}
+        nextNum={nextNum}
+      />
+    );
+  }
 
   return (
     <>

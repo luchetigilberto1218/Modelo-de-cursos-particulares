@@ -1,14 +1,12 @@
-// Root neutro. NÃO redireciona para nenhum cliente (antes ia para /aps, o que
-// fazia qualquer rota inexistente "vazar" para o Porto de Santos). Agora a raiz
-// mostra uma página neutra da Alumni, sem expor nenhum cliente.
+// 404 neutro. Qualquer cliente inexistente cai aqui (via notFound()), em vez de
+// "vazar" para /aps. Sem expor nenhum cliente.
 
 export const metadata = {
-  title: 'Alumni by Better — Cursos corporativos',
-  description: 'Plataforma de cursos de inglês corporativo da Alumni by Better.',
+  title: 'Página não encontrada — Alumni by Better',
   robots: { index: false, follow: false },
 };
 
-export default function Home() {
+export default function NotFound() {
   return (
     <main
       style={{
@@ -26,26 +24,20 @@ export default function Home() {
       <div style={{ maxWidth: 520 }}>
         <div
           style={{
-            display: 'inline-block',
             fontSize: 13,
             letterSpacing: '.18em',
             textTransform: 'uppercase',
             fontWeight: 700,
             color: 'rgba(255,255,255,.6)',
-            border: '1px solid rgba(255,255,255,.2)',
-            borderRadius: 999,
-            padding: '6px 16px',
-            marginBottom: 26,
+            marginBottom: 16,
           }}
         >
           Alumni by Better
         </div>
-        <h1 style={{ fontSize: 30, fontWeight: 800, letterSpacing: '-.02em', margin: '0 0 14px', lineHeight: 1.15 }}>
-          Plataforma de cursos corporativos
-        </h1>
+        <h1 style={{ fontSize: 46, fontWeight: 800, letterSpacing: '-.02em', margin: '0 0 10px' }}>404</h1>
         <p style={{ fontSize: 16, lineHeight: 1.65, color: 'rgba(255,255,255,.75)', fontWeight: 400, margin: 0 }}>
-          Acesse pelo link que a sua empresa compartilhou com você. Cada empresa tem o seu
-          próprio material, com endereço exclusivo.
+          Esta página não existe. Verifique o link que a sua empresa compartilhou com você —
+          cada empresa tem o seu material em um endereço exclusivo.
         </p>
       </div>
     </main>

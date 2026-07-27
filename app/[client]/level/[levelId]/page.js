@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation';
+import { redirect, notFound } from 'next/navigation';
 import { getCourseLite, getTheme } from '../../../../lib/courses';
 import { guardClient } from '../../../../lib/guard';
 import NavBar from '../../../../components/NavBar';
@@ -12,8 +12,12 @@ export default async function LevelRoute({ params }) {
 
   const course = getCourseLite(client);
   const theme = getTheme(client);
-  if (!course) redirect('/');
+  if (!course) notFound();
   if (!VALID_LEVELS.includes(levelId)) redirect(`/${client}`);
+
+  // Baker Hughes has a bespoke self-study flow (home → track → lesson); it has
+  // no level page, so send any direct hit back to the home.
+  if (client === 'bakerhughes') redirect(`/${client}`);
 
   return (
     <>

@@ -1,8 +1,9 @@
-import { redirect } from 'next/navigation';
+import { redirect, notFound } from 'next/navigation';
 import { getCourseLite, getTheme } from '../../../../../../lib/courses';
 import { guardClient } from '../../../../../../lib/guard';
 import NavBar from '../../../../../../components/NavBar';
 import TrackPage from '../../../../../../components/TrackPage';
+import BakerHughesTrack from '../../../../../../components/bakerhughes/BakerHughesTrack';
 
 const VALID_LEVELS = ['confidence', 'essentials', 'rise', 'apex'];
 
@@ -12,11 +13,15 @@ export default async function TrackRoute({ params }) {
 
   const course = getCourseLite(client);
   const theme = getTheme(client);
-  if (!course) redirect('/');
+  if (!course) notFound();
   if (!VALID_LEVELS.includes(levelId)) redirect(`/${client}`);
 
   const track = (course.tracks || []).find((t) => t.id === trackId);
   if (!track) redirect(`/${client}/level/${levelId}`);
+
+  if (client === 'bakerhughes') {
+    return <BakerHughesTrack course={course} theme={theme} clientId={client} trackId={trackId} />;
+  }
 
   return (
     <>

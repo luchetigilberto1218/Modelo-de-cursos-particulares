@@ -1,0 +1,1461 @@
+{
+  "meta": {
+    "title": "Baker Hughes English Programme",
+    "client": "bakerhughes",
+    "clientName": "Baker Hughes",
+    "platform": "levels",
+    "mode": "self-study",
+    "totalLevels": 1,
+    "totalTracks": 9,
+    "version": "0.2"
+  },
+  "levels": [
+    {
+      "id": "essentials",
+      "name": "Programme",
+      "tag": "B1 – B2",
+      "order": 1
+    }
+  ],
+  "businessLines": [
+    {
+      "id": "ofse",
+      "name": "Oilfield Services & Equipment",
+      "short": "OFSE",
+      "description": "Do poço à produção: perfuração, avaliação, completação e produção — a linha de negócio que trabalha no campo.",
+      "lesson": 6
+    },
+    {
+      "id": "iet",
+      "name": "Industrial & Energy Technology",
+      "short": "IET",
+      "description": "Turbomáquinas, GNL e transição energética — a linha de negócio das grandes máquinas e da nova energia.",
+      "lesson": 7
+    }
+  ],
+  "tracks": [
+    {
+      "id": "foundations",
+      "name": "Baker Hughes & Industry Foundations",
+      "status": "active",
+      "description": "A linguagem da empresa e do setor: história, business lines, siglas, equipamentos e fundamentos de óleo, gás e energia. Comece por aqui."
+    },
+    {
+      "id": "everyday",
+      "name": "Everyday Workplace Communication",
+      "status": "soon",
+      "description": "O inglês do dia a dia: apresentações, calls, e-mails, agendamento e pedidos claros."
+    },
+    {
+      "id": "meetings",
+      "name": "Meetings & Collaboration",
+      "status": "soon",
+      "description": "Conduzir e participar de reuniões, dar opinião, decidir e registrar action items."
+    },
+    {
+      "id": "technical",
+      "name": "Technical & Operational Communication",
+      "status": "soon",
+      "description": "Descrever equipamentos e processos, dar instruções, troubleshooting e updates de campo."
+    },
+    {
+      "id": "hse",
+      "name": "Safety, Compliance & HSE",
+      "status": "soon",
+      "description": "Safety briefings, reporte de incidentes, permits e linguagem de risco e conformidade."
+    },
+    {
+      "id": "projects",
+      "name": "Projects & Reporting",
+      "status": "soon",
+      "description": "Status updates, prazos, riscos, KPIs e relatórios executivos em inglês."
+    },
+    {
+      "id": "commercial",
+      "name": "Commercial & Client Relations",
+      "status": "soon",
+      "description": "Reuniões com clientes, propostas, tenders, negociação e follow-up comercial."
+    },
+    {
+      "id": "presentations",
+      "name": "Presentations & Influence",
+      "status": "soon",
+      "description": "Estruturar apresentações, mostrar dados, storytelling e conduzir Q&A sob pressão."
+    },
+    {
+      "id": "global",
+      "name": "Global Teams & Energy Transition",
+      "status": "soon",
+      "description": "Times internacionais, etiqueta remota, feedback e o futuro da energia (hidrogênio, CCUS)."
+    }
+  ],
+  "lessons": [
+    {
+      "num": 1,
+      "level": "essentials",
+      "track": "foundations",
+      "trackOrder": 1,
+      "levelLabel": "Foundations",
+      "trackLabel": "Baker Hughes & Industry Foundations",
+      "character": "us-male",
+      "title": "Talking About Where You Work",
+      "focus": "Departments, roles and responsibilities",
+      "objective": "Falar, em inglês, sobre o seu departamento, o seu cargo e as suas responsabilidades na Baker Hughes.",
+      "intro": [
+        "In a global company, the first thing people ask is: <em>\"What do you do?\"</em> and <em>\"Which team are you on?\"</em>.",
+        "In this lesson you learn to answer clearly — your <strong>department</strong>, your <strong>role</strong> and what you are <strong>responsible for</strong>."
+      ],
+      "vocab": [
+        {
+          "en": "department",
+          "pt": "departamento / área",
+          "example": "I work in the operations department."
+        },
+        {
+          "en": "role",
+          "pt": "cargo / função",
+          "example": "My role is field engineer."
+        },
+        {
+          "en": "to be responsible for",
+          "pt": "ser responsável por",
+          "example": "I'm responsible for equipment maintenance."
+        },
+        {
+          "en": "to report to",
+          "pt": "reportar-se a",
+          "example": "I report to the operations manager."
+        },
+        {
+          "en": "colleague",
+          "pt": "colega de trabalho",
+          "example": "My colleagues are based in Houston."
+        },
+        {
+          "en": "based in",
+          "pt": "sediado em / lotado em",
+          "example": "I'm based in Rio de Janeiro."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Escolha a palavra certa para se apresentar na Baker Hughes.",
+          "bank": [
+            "department",
+            "role",
+            "responsible",
+            "report",
+            "based"
+          ],
+          "items": [
+            {
+              "text": "I work in the operations ___.",
+              "answer": "department"
+            },
+            {
+              "text": "My ___ is field engineer.",
+              "answer": "role"
+            },
+            {
+              "text": "I'm ___ for equipment maintenance.",
+              "answer": "responsible"
+            },
+            {
+              "text": "I ___ to the operations manager.",
+              "answer": "report"
+            },
+            {
+              "text": "I'm ___ in Rio de Janeiro.",
+              "answer": "based"
+            }
+          ],
+          "explanation": "Estas são as peças para dizer onde você trabalha e o que faz."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual soa mais natural?",
+          "prompt": "Someone asks: \"So, what do you do?\" Which answer sounds most natural?",
+          "options": [
+            {
+              "id": "a",
+              "text": "I'm a field engineer. I work in the operations department.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "I make the engineer in the operations.",
+              "correct": false,
+              "whyWrong": "Não usamos \"make the engineer\". Diga \"I'm a(n) + cargo\" e \"I work in…\"."
+            },
+            {
+              "id": "c",
+              "text": "I am responsible of maintenance.",
+              "correct": false,
+              "whyWrong": "É \"responsible FOR\", não \"responsible of\"."
+            }
+          ],
+          "explanation": "Padrão natural: \"I'm a(n) [cargo]. I work in [área]. I'm responsible for [algo].\""
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · responsible ___?",
+          "prompt": "Complete: \"I'm responsible ___ equipment maintenance.\"",
+          "options": [
+            {
+              "id": "a",
+              "text": "for",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "of",
+              "correct": false,
+              "whyWrong": "Em inglês é sempre \"responsible for\"."
+            },
+            {
+              "id": "c",
+              "text": "to",
+              "correct": false,
+              "whyWrong": "\"responsible to\" existe, mas para uma pessoa; para uma tarefa é \"responsible for\"."
+            }
+          ],
+          "explanation": "responsible FOR + tarefa/área."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · a quem você se reporta?",
+          "prompt": "Your manager is the person you…",
+          "options": [
+            {
+              "id": "a",
+              "text": "report to.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "are based in.",
+              "correct": false,
+              "whyWrong": "\"based in\" é para lugar (cidade), não para pessoa."
+            },
+            {
+              "id": "c",
+              "text": "are a colleague.",
+              "correct": false,
+              "whyWrong": "Colega é alguém do mesmo nível; ao gestor você \"report to\"."
+            }
+          ],
+          "explanation": "\"I report to my manager\" = a quem você se reporta."
+        }
+      ],
+      "celebrate": {
+        "en": "Now you can introduce yourself and your work at Baker Hughes with confidence.",
+        "pt": "Agora você consegue se apresentar e falar do seu trabalho na Baker Hughes com confiança."
+      },
+      "introPt": [
+        "Numa empresa global, a primeira coisa que perguntam é: <em>\"What do you do?\"</em> (o que você faz?) e <em>\"Which team are you on?\"</em> (de qual time você é?).",
+        "Nesta lição você aprende a responder com clareza — o seu <strong>departamento</strong>, o seu <strong>cargo</strong> e aquilo pelo que você é <strong>responsável</strong>."
+      ],
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Como se apresentar num time global",
+        "intro": "Pequenos detalhes que fazem você soar natural numa empresa internacional. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "In a global company like Baker Hughes, your team can be spread across five countries and time zones.",
+            "pt": "Numa empresa global como a Baker Hughes, o seu time pode estar espalhado por cinco países e fusos horários."
+          },
+          {
+            "en": "When people ask \"What do you do?\", they usually mean your role, not your company — answer with your job.",
+            "pt": "Quando perguntam \"What do you do?\", geralmente querem saber o seu cargo, não a empresa — responda com a sua função."
+          },
+          {
+            "en": "\"I'm based in São Paulo\" is the natural way to say where you work, even if you travel a lot.",
+            "pt": "\"I'm based in São Paulo\" é o jeito natural de dizer onde você trabalha, mesmo que você viaje muito."
+          },
+          {
+            "en": "Saying who you \"report to\" instantly shows colleagues where you fit in the structure.",
+            "pt": "Dizer a quem você \"report to\" mostra na hora aos colegas onde você se encaixa na estrutura."
+          }
+        ]
+      }
+    },
+    {
+      "num": 2,
+      "level": "essentials",
+      "track": "foundations",
+      "trackOrder": 2,
+      "levelLabel": "Foundations",
+      "trackLabel": "Baker Hughes & Industry Foundations",
+      "character": "gb-male",
+      "title": "The Energy Journey — Upstream, Midstream & Downstream",
+      "focus": "Como a energia viaja: das rochas até o mundo",
+      "objective": "Um panorama de como a energia viaja no setor — upstream, midstream e downstream — e onde a Baker Hughes entra em cada etapa. Você sai com o vocabulário que abre praticamente qualquer conversa sobre a indústria.",
+      "intro": [
+        "The energy industry has its own map. People split the whole business into three big stages: <em>upstream</em>, <em>midstream</em> and <em>downstream</em>. Learn these three words and suddenly a lot of conversations make sense.",
+        "<strong>Upstream</strong> is the beginning — finding oil and gas and getting it out of the ground. This is the world of wells and rigs, where Baker Hughes' <em>OFSE</em> business line does most of its work.",
+        "<strong>Midstream</strong> is the middle — moving and storing energy. Think pipelines, compressors and <em>LNG</em> plants that cool gas into a liquid so ships can carry it across oceans. A lot of Baker Hughes' <em>IET</em> technology lives here.",
+        "<strong>Downstream</strong> is the end — turning oil and gas into finished products like fuels and chemicals, and delivering them to customers. From the rock deep underground all the way to the world: that's the energy journey."
+      ],
+      "vocab": [
+        {
+          "en": "upstream",
+          "pt": "exploração e produção (início da cadeia)",
+          "example": "Upstream is about finding and producing oil and gas."
+        },
+        {
+          "en": "midstream",
+          "pt": "transporte e armazenamento",
+          "example": "Midstream moves energy through pipelines and LNG plants."
+        },
+        {
+          "en": "downstream",
+          "pt": "refino e distribuição",
+          "example": "Downstream turns crude oil into fuels and chemicals."
+        },
+        {
+          "en": "supply chain",
+          "pt": "cadeia de suprimentos",
+          "example": "Energy travels along a long supply chain."
+        },
+        {
+          "en": "pipeline",
+          "pt": "duto / gasoduto",
+          "example": "A pipeline can carry gas for thousands of kilometers."
+        },
+        {
+          "en": "crude oil",
+          "pt": "petróleo bruto",
+          "example": "Crude oil is refined into fuels downstream."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Escolha a palavra certa do banco para completar cada frase sobre a jornada da energia.",
+          "bank": [
+            "upstream",
+            "midstream",
+            "downstream",
+            "pipeline",
+            "crude"
+          ],
+          "items": [
+            {
+              "text": "Finding oil and getting it out of the ground is called ___.",
+              "answer": "upstream"
+            },
+            {
+              "text": "Moving gas through a ___ is part of the midstream stage.",
+              "answer": "pipeline"
+            },
+            {
+              "text": "Cooling gas into LNG and shipping it belongs to the ___ stage.",
+              "answer": "midstream"
+            },
+            {
+              "text": "Refining ___ oil into fuels happens downstream.",
+              "answer": "crude"
+            },
+            {
+              "text": "Selling finished fuels to customers is the ___ stage.",
+              "answer": "downstream"
+            }
+          ],
+          "explanation": "Upstream → midstream → downstream: as três etapas da jornada da energia."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Upstream, midstream ou downstream?",
+          "prompt": "Which stage is about finding oil and getting it out of the ground?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Upstream — at the wells.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Midstream — in the pipelines.",
+              "correct": false,
+              "whyWrong": "Midstream é o transporte. Encontrar e extrair óleo e gás é upstream."
+            },
+            {
+              "id": "c",
+              "text": "Downstream — at the refinery.",
+              "correct": false,
+              "whyWrong": "Downstream é o refino e a venda. A extração acontece no upstream."
+            }
+          ],
+          "explanation": "Upstream = o começo: encontrar e produzir óleo e gás."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · onde entra a OFSE?",
+          "prompt": "Baker Hughes' OFSE business line works mostly in which stage?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Upstream — out at the wells.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Downstream — at the gas station.",
+              "correct": false,
+              "whyWrong": "A OFSE trabalha no poço, no início da cadeia — ou seja, no upstream."
+            },
+            {
+              "id": "c",
+              "text": "None — Baker Hughes isn't in energy.",
+              "correct": false,
+              "whyWrong": "A Baker Hughes é uma empresa de tecnologia de energia; a OFSE atua no upstream."
+            }
+          ],
+          "explanation": "A OFSE vive no upstream — nos poços. (Veja a Lição 6 para o mergulho na OFSE.)"
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o que acontece no midstream?",
+          "prompt": "What happens in the midstream stage?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Energy is moved and stored — pipelines and LNG.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Oil is discovered for the first time.",
+              "correct": false,
+              "whyWrong": "Descobrir óleo é upstream. Midstream é mover e armazenar a energia."
+            },
+            {
+              "id": "c",
+              "text": "Fuel is sold to drivers.",
+              "correct": false,
+              "whyWrong": "Vender combustível é downstream. Midstream é o transporte e a estocagem."
+            }
+          ],
+          "explanation": "Midstream = transporte e armazenamento: dutos, compressores e GNL. (Veja a Lição 7 para a IET.)"
+        }
+      ],
+      "celebrate": {
+        "en": "Now you've got the whole map — upstream to downstream — and the words to talk about it.",
+        "pt": "Agora você tem o mapa inteiro — do upstream ao downstream — e as palavras para falar sobre ele em inglês."
+      },
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "introPt": [
+        "A indústria de energia tem o seu próprio mapa. O setor inteiro costuma ser dividido em três grandes etapas: <em>upstream</em>, <em>midstream</em> e <em>downstream</em>. Aprenda essas três palavras e, de repente, muitas conversas passam a fazer sentido.",
+        "<strong>Upstream</strong> é o começo — encontrar óleo e gás e tirá-los do solo. É o mundo dos poços e das sondas, onde a business line <em>OFSE</em> da Baker Hughes faz a maior parte do seu trabalho.",
+        "<strong>Midstream</strong> é o meio — transportar e armazenar a energia. Pense em dutos, compressores e plantas de <em>GNL</em>, que resfriam o gás até virar líquido para que navios o levem pelos oceanos. Boa parte da tecnologia <em>IET</em> da Baker Hughes está aqui.",
+        "<strong>Downstream</strong> é o fim — transformar óleo e gás em produtos finais, como combustíveis e produtos químicos, e entregá-los aos clientes. Da rocha lá no fundo até o mundo: essa é a jornada da energia."
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Curiosidades da jornada da energia",
+        "intro": "Três palavras que valem por muitas conversas. Ouça e revele a tradução quando quiser.",
+        "cards": [
+          {
+            "en": "Some pipelines are so long they cross entire countries — thousands of kilometers underground.",
+            "pt": "Alguns dutos são tão longos que atravessam países inteiros — milhares de quilômetros no subsolo."
+          },
+          {
+            "en": "The words 'upstream' and 'downstream' come from a river: the source is up, the users are down.",
+            "pt": "As palavras 'upstream' e 'downstream' vêm da imagem de um rio: a nascente fica em cima, os usuários embaixo."
+          },
+          {
+            "en": "A single LNG carrier ship can hold enough gas to heat a small city for weeks.",
+            "pt": "Um único navio de GNL pode carregar gás suficiente para aquecer uma cidade pequena por semanas."
+          },
+          {
+            "en": "Downstream is why the same barrel of oil can become fuel, plastic, and even medicine.",
+            "pt": "O downstream é o motivo de um mesmo barril de petróleo virar combustível, plástico e até remédio."
+          }
+        ]
+      }
+    },
+    {
+      "num": 3,
+      "level": "essentials",
+      "track": "foundations",
+      "trackOrder": 3,
+      "levelLabel": "Foundations",
+      "trackLabel": "Baker Hughes & Industry Foundations",
+      "character": "us-female",
+      "title": "Everyday Acronyms",
+      "focus": "Reading and saying industry acronyms",
+      "objective": "Reconhecer, dizer e usar as siglas do dia a dia da Baker Hughes e do setor de energia.",
+      "intro": [
+        "The energy industry loves <strong>acronyms</strong>. In your first weeks you will hear <em>ESP, LNG, CCUS, HSE, OEM</em> and many more.",
+        "This lesson gives you the most common ones — and how to say them out loud."
+      ],
+      "vocab": [
+        {
+          "en": "acronym",
+          "pt": "sigla",
+          "example": "HSE is a common acronym."
+        },
+        {
+          "en": "ESP — Electrical Submersible Pump",
+          "pt": "bomba centrífuga submersa",
+          "example": "An ESP lifts oil from the well."
+        },
+        {
+          "en": "LNG — Liquefied Natural Gas",
+          "pt": "gás natural liquefeito",
+          "example": "IET builds equipment for LNG plants."
+        },
+        {
+          "en": "CCUS — Carbon Capture, Utilisation & Storage",
+          "pt": "captura, uso e armazenamento de carbono",
+          "example": "CCUS is part of the energy transition."
+        },
+        {
+          "en": "HSE — Health, Safety & Environment",
+          "pt": "saúde, segurança e meio ambiente",
+          "example": "HSE comes first on every site."
+        },
+        {
+          "en": "OEM — Original Equipment Manufacturer",
+          "pt": "fabricante do equipamento original",
+          "example": "Baker Hughes is an OEM for turbomachinery."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com a sigla certa",
+          "instruction": "Escolha a sigla certa para cada frase do dia a dia.",
+          "bank": [
+            "HSE",
+            "ESP",
+            "LNG",
+            "CCUS",
+            "OEM"
+          ],
+          "items": [
+            {
+              "text": "On every site, ___ comes first (health & safety).",
+              "answer": "HSE"
+            },
+            {
+              "text": "An ___ lifts oil from the well.",
+              "answer": "ESP"
+            },
+            {
+              "text": "IET builds equipment for ___ plants.",
+              "answer": "LNG"
+            },
+            {
+              "text": "___ is part of the energy transition (capturing carbon).",
+              "answer": "CCUS"
+            },
+            {
+              "text": "Baker Hughes is an ___ for turbomachinery.",
+              "answer": "OEM"
+            }
+          ],
+          "explanation": "Estas cinco siglas aparecem o tempo todo na Baker Hughes."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o que significa LNG?",
+          "prompt": "What does LNG stand for?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Liquefied Natural Gas",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Large Natural Grid",
+              "correct": false,
+              "whyWrong": "LNG = Liquefied Natural Gas — gás natural liquefeito."
+            },
+            {
+              "id": "c",
+              "text": "Low Noise Generator",
+              "correct": false,
+              "whyWrong": "LNG = Liquefied Natural Gas."
+            }
+          ],
+          "explanation": "LNG = Liquefied Natural Gas (gás natural liquefeito)."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o que significa HSE?",
+          "prompt": "What does HSE stand for?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Health, Safety & Environment",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "High Speed Engine",
+              "correct": false,
+              "whyWrong": "HSE = Health, Safety & Environment — saúde, segurança e meio ambiente."
+            },
+            {
+              "id": "c",
+              "text": "Heavy Site Equipment",
+              "correct": false,
+              "whyWrong": "HSE = Health, Safety & Environment."
+            }
+          ],
+          "explanation": "HSE = Health, Safety & Environment — vem antes de qualquer tarefa."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o que significa OEM?",
+          "prompt": "What does OEM stand for?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Original Equipment Manufacturer",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Oil & Energy Management",
+              "correct": false,
+              "whyWrong": "OEM = Original Equipment Manufacturer — o fabricante original do equipamento."
+            },
+            {
+              "id": "c",
+              "text": "Operational Emergency Mode",
+              "correct": false,
+              "whyWrong": "OEM = Original Equipment Manufacturer."
+            }
+          ],
+          "explanation": "OEM = Original Equipment Manufacturer (fabricante do equipamento original)."
+        }
+      ],
+      "celebrate": {
+        "en": "Now the alphabet soup makes sense — you can read and say the everyday acronyms.",
+        "pt": "Agora a sopa de letrinhas faz sentido — você lê e fala as siglas do dia a dia."
+      },
+      "introPt": [
+        "A indústria de energia adora <strong>siglas</strong>. Nas suas primeiras semanas você vai ouvir <em>ESP, LNG, CCUS, HSE, OEM</em> e muitas outras.",
+        "Esta lição te dá as mais comuns — e como falá-las em voz alta."
+      ],
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O mundo das siglas",
+        "intro": "Curiosidades que ajudam as siglas a grudarem. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "You say \"an ESP\" (not \"a ESP\") because the letter E sounds like a vowel — go by the sound, not the spelling.",
+            "pt": "Você diz \"an ESP\" (e não \"a ESP\") porque a letra E soa como vogal — vá pelo som, não pela escrita."
+          },
+          {
+            "en": "LNG takes up about 600 times less space than natural gas — that's why it's shipped as a liquid.",
+            "pt": "O GNL ocupa cerca de 600 vezes menos espaço que o gás natural — por isso é transportado como líquido."
+          },
+          {
+            "en": "'HSE first' is more than a phrase — on many sites no task starts until safety is checked.",
+            "pt": "'HSE first' é mais que uma frase — em muitos sites nenhuma tarefa começa antes de checar a segurança."
+          },
+          {
+            "en": "New acronyms appear all the time; 'CCUS' only became common with the energy transition.",
+            "pt": "Novas siglas surgem o tempo todo; 'CCUS' só ficou comum com a transição energética."
+          }
+        ]
+      }
+    },
+    {
+      "num": 4,
+      "level": "essentials",
+      "track": "foundations",
+      "trackOrder": 4,
+      "levelLabel": "Foundations",
+      "trackLabel": "Baker Hughes & Industry Foundations",
+      "character": "us-male",
+      "title": "Equipment Families",
+      "focus": "Describing equipment and what it does",
+      "objective": "Descrever, em inglês, famílias de equipamentos da Baker Hughes e explicar para que cada uma serve.",
+      "intro": [
+        "Baker Hughes builds many <strong>families of equipment</strong>: pumps, valves, compressors, turbines, sensors.",
+        "In this lesson you learn to name them and say what each one <strong>does</strong> — using <em>which</em> and <em>that</em>."
+      ],
+      "vocab": [
+        {
+          "en": "pump",
+          "pt": "bomba",
+          "example": "A pump moves fluid from one place to another."
+        },
+        {
+          "en": "valve",
+          "pt": "válvula",
+          "example": "A valve controls the flow of gas or liquid."
+        },
+        {
+          "en": "compressor",
+          "pt": "compressor",
+          "example": "A compressor increases the pressure of a gas."
+        },
+        {
+          "en": "turbine",
+          "pt": "turbina",
+          "example": "A turbine turns energy into rotation."
+        },
+        {
+          "en": "sensor",
+          "pt": "sensor",
+          "example": "A sensor measures pressure or temperature."
+        },
+        {
+          "en": "to measure",
+          "pt": "medir",
+          "example": "This sensor measures temperature."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Complete cada frase com o equipamento certo do banco de palavras.",
+          "bank": [
+            "pump",
+            "valve",
+            "compressor",
+            "turbine",
+            "sensor"
+          ],
+          "items": [
+            {
+              "text": "A ___ moves fluid from one place to another.",
+              "answer": "pump"
+            },
+            {
+              "text": "A ___ controls the flow of gas or liquid.",
+              "answer": "valve"
+            },
+            {
+              "text": "A ___ increases the pressure of a gas.",
+              "answer": "compressor"
+            },
+            {
+              "text": "A ___ turns energy into rotation.",
+              "answer": "turbine"
+            },
+            {
+              "text": "A ___ measures pressure or temperature.",
+              "answer": "sensor"
+            }
+          ],
+          "explanation": "Cada família de equipamento tem uma função — essa é a base para descrevê-las."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o que faz um compressor?",
+          "prompt": "What does a compressor do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It raises the pressure of a gas.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "It measures temperature.",
+              "correct": false,
+              "whyWrong": "Medir é função do sensor. O compressor aumenta a pressão do gás."
+            },
+            {
+              "id": "c",
+              "text": "It controls the flow.",
+              "correct": false,
+              "whyWrong": "Controlar o fluxo é a válvula. O compressor comprime (aumenta a pressão)."
+            }
+          ],
+          "explanation": "Compressor = aumenta a pressão de um gás."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · which ou that?",
+          "prompt": "Which sentence sounds natural in English?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A pump is a machine that moves fluid.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "A pump is a machine what moves fluid.",
+              "correct": false,
+              "whyWrong": "\"what\" não introduz oração relativa aqui. Use \"that\" ou \"which\"."
+            },
+            {
+              "id": "c",
+              "text": "A pump is a machine who moves fluid.",
+              "correct": false,
+              "whyWrong": "\"who\" é para pessoas. Para coisas use \"that\" ou \"which\"."
+            }
+          ],
+          "explanation": "Para coisas: \"a machine that/which moves fluid\"."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · qual mede as condições?",
+          "prompt": "Which equipment measures pressure or temperature?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A sensor.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "A valve.",
+              "correct": false,
+              "whyWrong": "A válvula controla o fluxo. Quem mede é o sensor."
+            },
+            {
+              "id": "c",
+              "text": "A turbine.",
+              "correct": false,
+              "whyWrong": "A turbina transforma energia em rotação. Quem mede é o sensor."
+            }
+          ],
+          "explanation": "Sensor = mede condições como pressão e temperatura."
+        }
+      ],
+      "celebrate": {
+        "en": "Now you can name the main equipment families and say what each one does.",
+        "pt": "Agora você sabe nomear as principais famílias de equipamentos e dizer o que cada uma faz."
+      },
+      "introPt": [
+        "A Baker Hughes fabrica muitas <strong>famílias de equipamentos</strong>: bombas, válvulas, compressores, turbinas, sensores.",
+        "Nesta lição você aprende a nomeá-las e a dizer o que cada uma <strong>faz</strong> — usando <em>which</em> e <em>that</em>."
+      ],
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "As famílias de equipamentos",
+        "intro": "Um pouco da escala e da lógica por trás das máquinas. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "A single large compressor can be as big as a bus and weigh more than 100 tons.",
+            "pt": "Um único compressor grande pode ser do tamanho de um ônibus e pesar mais de 100 toneladas."
+          },
+          {
+            "en": "Sensors are the 'senses' of a plant — modern equipment can carry thousands of them.",
+            "pt": "Os sensores são os 'sentidos' de uma planta — equipamentos modernos podem ter milhares deles."
+          },
+          {
+            "en": "Turbines and compressors are cousins: one takes energy out of a gas, the other puts energy in.",
+            "pt": "Turbinas e compressores são primos: um tira energia de um gás, o outro coloca energia nele."
+          },
+          {
+            "en": "The right valve can stop the flow of an entire pipeline in seconds.",
+            "pt": "A válvula certa pode interromper o fluxo de um duto inteiro em segundos."
+          }
+        ]
+      }
+    },
+    {
+      "num": 5,
+      "level": "essentials",
+      "track": "foundations",
+      "trackOrder": 5,
+      "levelLabel": "Foundations",
+      "trackLabel": "Baker Hughes & Industry Foundations",
+      "character": "gb-female",
+      "title": "Oil, Gas & the Life of a Well",
+      "focus": "O que são óleo, gás e energia — e como um poço nasce, produz e fecha",
+      "objective": "O básico que faz o resto do setor fazer sentido: o que são óleo e gás natural, o que significa “energia” no dia a dia da Baker Hughes, e as etapas da vida de um poço — da exploração ao fechamento.",
+      "intro": [
+        "Let's start with the raw materials. <strong>Crude oil</strong> is a thick, dark liquid formed underground over millions of years. <strong>Natural gas</strong> is its lighter cousin — the same ancient origin, but a gas instead of a liquid. Both are packed with energy.",
+        "In this industry, <em>energy</em> means the power that comes from these fuels — heat, electricity and motion — plus the newer, cleaner sources the world is moving toward.",
+        "Now the star of the show: the <strong>well</strong>. A well is how we reach the oil and gas, sometimes several kilometers underground. And every well has a life.",
+        "That life follows a clear sequence. <em>First</em>, geologists <strong>explore</strong> to find where the oil and gas are. <em>Then</em> the team <strong>drills</strong> the well. <em>Next</em>, the well goes into <strong>production</strong> for years. <em>Finally</em>, when it runs dry, the well is safely closed. Exploration → drilling → production → closing."
+      ],
+      "vocab": [
+        {
+          "en": "crude oil",
+          "pt": "petróleo bruto",
+          "example": "Crude oil is a thick, dark liquid formed deep underground."
+        },
+        {
+          "en": "natural gas",
+          "pt": "gás natural",
+          "example": "Natural gas is lighter than oil and burns more cleanly."
+        },
+        {
+          "en": "energy source",
+          "pt": "fonte de energia",
+          "example": "Oil, gas and hydrogen are all energy sources."
+        },
+        {
+          "en": "to explore / exploration",
+          "pt": "explorar / exploração",
+          "example": "Geologists explore to find where the oil and gas are."
+        },
+        {
+          "en": "to drill",
+          "pt": "perfurar",
+          "example": "The team drills the well to reach the oil and gas."
+        },
+        {
+          "en": "well lifecycle",
+          "pt": "ciclo de vida do poço",
+          "example": "The well lifecycle goes from exploration to closing."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Escolha a palavra certa do banco para completar cada frase sobre o básico do setor.",
+          "bank": [
+            "crude",
+            "natural",
+            "explore",
+            "drill",
+            "production"
+          ],
+          "items": [
+            {
+              "text": "___ oil is a thick, dark liquid found deep underground.",
+              "answer": "crude"
+            },
+            {
+              "text": "___ gas is lighter than oil and burns more cleanly.",
+              "answer": "natural"
+            },
+            {
+              "text": "First, geologists ___ to find where the oil and gas are.",
+              "answer": "explore"
+            },
+            {
+              "text": "Then the team must ___ the well to reach it.",
+              "answer": "drill"
+            },
+            {
+              "text": "After that, the well goes into ___ for many years.",
+              "answer": "production"
+            }
+          ],
+          "explanation": "Óleo e gás são a matéria-prima; explorar, perfurar e produzir são as primeiras etapas da vida do poço."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Óleo ou gás?",
+          "prompt": "Which sentence about natural gas is correct?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Natural gas is lighter than oil and burns more cleanly.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Natural gas is a solid rock you dig up.",
+              "correct": false,
+              "whyWrong": "Gás natural é um gás, não uma rocha. Vem da mesma origem antiga do petróleo."
+            },
+            {
+              "id": "c",
+              "text": "Natural gas is exactly the same as crude oil.",
+              "correct": false,
+              "whyWrong": "São parentes, mas diferentes: o óleo é líquido; o gás natural é, como diz o nome, um gás."
+            }
+          ],
+          "explanation": "Gás natural = mais leve que o óleo e queima de forma mais limpa."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · qual etapa vem primeiro?",
+          "prompt": "In the life of a well, which step comes FIRST?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Exploration — finding where the oil and gas are.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Production — getting the oil and gas out.",
+              "correct": false,
+              "whyWrong": "A produção vem bem depois. Primeiro é preciso explorar e depois perfurar."
+            },
+            {
+              "id": "c",
+              "text": "Closing the well.",
+              "correct": false,
+              "whyWrong": "Fechar o poço é a última etapa, não a primeira."
+            }
+          ],
+          "explanation": "A sequência é: exploration → drilling → production → closing."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · e a última etapa?",
+          "prompt": "What happens at the END of a well's life?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It is safely closed when it runs dry.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "It is explored for the first time.",
+              "correct": false,
+              "whyWrong": "Explorar é o começo. No fim, o poço é fechado com segurança."
+            },
+            {
+              "id": "c",
+              "text": "It is drilled.",
+              "correct": false,
+              "whyWrong": "Perfurar acontece no início. A vida do poço termina com o fechamento."
+            }
+          ],
+          "explanation": "No fim da vida, o poço é fechado (closed / plugged) com segurança."
+        }
+      ],
+      "celebrate": {
+        "en": "Now the basics are yours — oil, gas, energy and the whole life of a well.",
+        "pt": "Agora o básico é seu — óleo, gás, energia e a vida inteira de um poço."
+      },
+      "introPt": [
+        "Vamos começar pela matéria-prima. O <strong>petróleo bruto</strong> (crude oil) é um líquido escuro e espesso, formado no subsolo ao longo de milhões de anos. O <strong>gás natural</strong> é o primo mais leve — mesma origem antiga, mas em forma de gás, não de líquido. Os dois são cheios de energia.",
+        "Nesta indústria, <em>energia</em> é a força que vem desses combustíveis — calor, eletricidade e movimento — mais as fontes novas e mais limpas para as quais o mundo está caminhando.",
+        "Agora a estrela: o <strong>poço</strong> (well). O poço é como chegamos ao óleo e ao gás, às vezes a vários quilômetros de profundidade. E todo poço tem uma vida.",
+        "Essa vida segue uma sequência clara. <em>Primeiro</em>, geólogos <strong>exploram</strong> para achar onde estão o óleo e o gás. <em>Depois</em>, a equipe <strong>perfura</strong> o poço. <em>Em seguida</em>, o poço entra em <strong>produção</strong> por anos. <em>Por fim</em>, quando se esgota, o poço é fechado com segurança. Exploração → perfuração → produção → fechamento."
+      ],
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Curiosidades de óleo, gás e poços",
+        "intro": "O básico do setor rende ótimas curiosidades. Ouça e revele a tradução quando quiser.",
+        "cards": [
+          {
+            "en": "Crude oil formed from tiny sea creatures that lived over 100 million years ago — it's basically ancient sunlight stored underground.",
+            "pt": "O petróleo se formou de criaturas marinhas minúsculas que viveram há mais de 100 milhões de anos — é basicamente luz do sol antiga guardada no subsolo."
+          },
+          {
+            "en": "Natural gas has no smell. The 'gas smell' at home is a chemical added on purpose so that leaks are easy to notice.",
+            "pt": "O gás natural não tem cheiro. O 'cheiro de gás' em casa é uma substância adicionada de propósito para que vazamentos sejam fáceis de perceber."
+          },
+          {
+            "en": "A single well can stay in production for 20 to 40 years before it runs dry.",
+            "pt": "Um único poço pode ficar em produção de 20 a 40 anos antes de se esgotar."
+          },
+          {
+            "en": "Closing a well safely at the end of its life is engineered just as carefully as drilling it.",
+            "pt": "Fechar um poço com segurança no fim da vida é projetado com o mesmo cuidado da perfuração."
+          }
+        ]
+      }
+    },
+    {
+      "num": 6,
+      "level": "essentials",
+      "track": "foundations",
+      "trackOrder": 6,
+      "levelLabel": "Foundations",
+      "trackLabel": "Baker Hughes & Industry Foundations",
+      "character": "gb-male",
+      "title": "Inside OFSE — Oilfield Services & Equipment",
+      "focus": "A business line que vai do poço à produção",
+      "objectiveLabel": "O que você leva daqui",
+      "objective": "Um tour pela OFSE — a business line que leva a Baker Hughes do poço até a produção. Você vai sair sabendo, em inglês, o que essa área faz e as palavras-chave para conversar sobre ela.",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "OFSE stands for <strong>Oilfield Services &amp; Equipment</strong>. It's the part of Baker Hughes that works out in the field — right at the oil and gas wells themselves.",
+        "Think about the whole life of a well. First you <em>drill</em> deep into the ground. Then you <em>evaluate</em> the rock to understand what's down there. You build and <em>complete</em> the well so it's safe and stable. Finally, the well starts to <em>produce</em> oil and gas, sometimes for decades. OFSE has products and services for every one of those steps.",
+        "This is the classic, hands-on side of the energy business — drill bits, pumps, sensors, chemicals, and the engineers who run them. Wherever there's a rig, OFSE is usually close by.",
+        "For your English, OFSE is where a lot of the industry's core vocabulary lives: <em>drilling, well, reservoir, completion, production</em>. Learn these and the rest of the sector gets much easier to follow."
+      ],
+      "introPt": [
+        "OFSE significa <strong>Oilfield Services &amp; Equipment</strong> (Serviços e Equipamentos de Campo). É a parte da Baker Hughes que trabalha no campo — bem ali, nos poços de óleo e gás.",
+        "Pense na vida inteira de um poço. Primeiro você <em>perfura</em> fundo no solo. Depois você <em>avalia</em> a rocha para entender o que há lá embaixo. Você constrói e <em>completa</em> o poço para que ele fique seguro e estável. Por fim, o poço começa a <em>produzir</em> óleo e gás, às vezes por décadas. A OFSE tem produtos e serviços para cada uma dessas etapas.",
+        "Este é o lado clássico e “mão na massa” do setor de energia — brocas, bombas, sensores, produtos químicos e os engenheiros que operam tudo. Onde há uma sonda, a OFSE costuma estar por perto.",
+        "Para o seu inglês, a OFSE é onde mora boa parte do vocabulário central da indústria: <em>drilling, well, reservoir, completion, production</em>. Aprenda essas palavras e o resto do setor fica bem mais fácil de acompanhar."
+      ],
+      "vocab": [
+        {
+          "en": "drilling",
+          "pt": "perfuração",
+          "example": "Drilling is the first step in building a well."
+        },
+        {
+          "en": "well",
+          "pt": "poço",
+          "example": "A single well can be several kilometers deep."
+        },
+        {
+          "en": "reservoir",
+          "pt": "reservatório",
+          "example": "The reservoir is the underground rock that holds the oil and gas."
+        },
+        {
+          "en": "to complete a well / completion",
+          "pt": "completar um poço / completação",
+          "example": "After drilling, the team completes the well so it can produce safely."
+        },
+        {
+          "en": "rig",
+          "pt": "sonda (de perfuração)",
+          "example": "The drilling rig operates day and night."
+        },
+        {
+          "en": "production",
+          "pt": "produção",
+          "example": "Production is the phase when the well finally delivers oil and gas."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Escolha a palavra certa do banco para completar cada frase sobre a OFSE.",
+          "bank": [
+            "drilling",
+            "reservoir",
+            "well",
+            "rig",
+            "production"
+          ],
+          "items": [
+            {
+              "text": "___ is the first step: making a deep hole in the ground.",
+              "answer": "drilling"
+            },
+            {
+              "text": "The oil and gas are stored in an underground ___.",
+              "answer": "reservoir"
+            },
+            {
+              "text": "A single ___ can be several kilometers deep.",
+              "answer": "well"
+            },
+            {
+              "text": "The drilling ___ works day and night.",
+              "answer": "rig"
+            },
+            {
+              "text": "In the ___ phase, the well finally delivers oil and gas.",
+              "answer": "production"
+            }
+          ],
+          "explanation": "Estas são as cinco palavras-chave para falar do trabalho da OFSE."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "O que a OFSE faz?",
+          "prompt": "A colleague asks: \"What does OFSE actually do?\" What's the best answer?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It provides the services and equipment used at oil and gas wells, from drilling to production.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "It builds turbines and compressors for industrial plants.",
+              "correct": false,
+              "whyWrong": "Isso é a IET (Industrial & Energy Technology). A OFSE trabalha no poço, no campo."
+            },
+            {
+              "id": "c",
+              "text": "It sells electricity to homes.",
+              "correct": false,
+              "whyWrong": "A Baker Hughes é uma empresa de tecnologia de energia, não uma distribuidora de eletricidade."
+            }
+          ],
+          "explanation": "OFSE = os serviços e equipamentos usados no poço, do drilling à production."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o que significa OFSE?",
+          "prompt": "What does the acronym OFSE stand for?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Oilfield Services & Equipment",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Oil, Fuel, Safety & Energy",
+              "correct": false,
+              "whyWrong": "É Oilfield Services & Equipment — serviços e equipamentos de campo."
+            },
+            {
+              "id": "c",
+              "text": "Offshore Field Standard Engineering",
+              "correct": false,
+              "whyWrong": "OFSE = Oilfield Services & Equipment."
+            }
+          ],
+          "explanation": "OFSE = Oilfield Services & Equipment."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · qual etapa vem primeiro?",
+          "prompt": "In the life of a well, which step comes FIRST?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Drilling — making the hole.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Production — getting the oil and gas out.",
+              "correct": false,
+              "whyWrong": "A produção vem por último. Antes é preciso perfurar (drill) e completar (complete) o poço."
+            },
+            {
+              "id": "c",
+              "text": "Completion — preparing the well.",
+              "correct": false,
+              "whyWrong": "A completação vem depois da perfuração. Drilling é o primeiro passo."
+            }
+          ],
+          "explanation": "A ordem básica é: drilling → completion → production."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Curiosidades da OFSE",
+        "intro": "O mundo do poço rende ótimas histórias para uma conversa em inglês. Ouça e revele a tradução quando quiser.",
+        "cards": [
+          {
+            "en": "A single offshore well can cost over 100 million dollars to drill.",
+            "pt": "Um único poço offshore (no mar) pode custar mais de 100 milhões de dólares para ser perfurado."
+          },
+          {
+            "en": "Modern drill bits are often studded with industrial diamonds to cut through hard rock.",
+            "pt": "As brocas modernas costumam ser cravejadas de diamantes industriais para cortar rochas duras."
+          },
+          {
+            "en": "OFSE sensors can send data from kilometers underground back to the surface in real time.",
+            "pt": "Os sensores da OFSE conseguem enviar dados de quilômetros de profundidade até a superfície em tempo real."
+          },
+          {
+            "en": "The same deep-drilling know-how is now being used for geothermal energy — clean heat from deep inside the Earth.",
+            "pt": "O mesmo conhecimento de perfuração profunda está sendo usado para energia geotérmica — calor limpo lá do fundo da Terra."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "That's OFSE — now you can talk about the field side of Baker Hughes in English.",
+        "pt": "Essa é a OFSE — agora você já consegue falar, em inglês, do lado de campo da Baker Hughes."
+      }
+    },
+    {
+      "num": 7,
+      "level": "essentials",
+      "track": "foundations",
+      "trackOrder": 7,
+      "levelLabel": "Foundations",
+      "trackLabel": "Baker Hughes & Industry Foundations",
+      "character": "us-female",
+      "title": "Inside IET — Industrial & Energy Technology",
+      "focus": "Turbomáquinas, GNL e a transição energética",
+      "objectiveLabel": "O que você leva daqui",
+      "objective": "Um tour pela IET — a business line das grandes máquinas industriais e da nova energia. Você vai sair sabendo, em inglês, o que essa área faz e o vocabulário para falar sobre ela.",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "IET stands for <strong>Industrial &amp; Energy Technology</strong>. If OFSE lives out at the well, IET lives inside the big industrial plants — and in the technology for the energy of the future.",
+        "IET builds and services <em>turbomachinery</em>: giant turbines, compressors and pumps that move and process gas at massive scale. These machines run <em>LNG</em> plants, where natural gas is cooled until it turns into a liquid and can be shipped across the world.",
+        "IET is also Baker Hughes' engine for the <em>energy transition</em>. It develops technology for <em>hydrogen</em>, <em>carbon capture</em> (CCUS) and cleaner power — helping heavy industries cut their emissions without shutting down.",
+        "For your English, IET brings the vocabulary of machines and the future: <em>turbine, compressor, LNG, emissions, energy transition</em>. It's the language of how energy is processed — and made cleaner."
+      ],
+      "introPt": [
+        "IET significa <strong>Industrial &amp; Energy Technology</strong> (Tecnologia Industrial e de Energia). Se a OFSE vive lá no poço, a IET vive dentro das grandes plantas industriais — e na tecnologia para a energia do futuro.",
+        "A IET fabrica e faz a manutenção de <em>turbomáquinas</em>: turbinas, compressores e bombas gigantes que movem e processam gás em escala enorme. Essas máquinas fazem funcionar as plantas de <em>GNL</em>, onde o gás natural é resfriado até virar líquido e poder ser transportado pelo mundo.",
+        "A IET também é o motor da Baker Hughes na <em>transição energética</em>. Ela desenvolve tecnologia para <em>hidrogênio</em>, <em>captura de carbono</em> (CCUS) e energia mais limpa — ajudando indústrias pesadas a reduzir suas emissões sem parar de operar.",
+        "Para o seu inglês, a IET traz o vocabulário das máquinas e do futuro: <em>turbine, compressor, LNG, emissions, energy transition</em>. É a linguagem de como a energia é processada — e deixada mais limpa."
+      ],
+      "vocab": [
+        {
+          "en": "turbomachinery",
+          "pt": "turbomáquinas",
+          "example": "IET is famous for its turbomachinery — turbines and compressors."
+        },
+        {
+          "en": "turbine",
+          "pt": "turbina",
+          "example": "A single gas turbine can power an entire plant."
+        },
+        {
+          "en": "compressor",
+          "pt": "compressor",
+          "example": "Compressors push gas through pipelines at high pressure."
+        },
+        {
+          "en": "LNG (liquefied natural gas)",
+          "pt": "GNL (gás natural liquefeito)",
+          "example": "LNG is natural gas cooled into a liquid for shipping."
+        },
+        {
+          "en": "emissions",
+          "pt": "emissões",
+          "example": "New technology helps customers reduce their emissions."
+        },
+        {
+          "en": "energy transition",
+          "pt": "transição energética",
+          "example": "IET leads Baker Hughes' work in the energy transition."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Escolha a palavra certa do banco para completar cada frase sobre a IET.",
+          "bank": [
+            "turbine",
+            "compressor",
+            "LNG",
+            "emissions",
+            "transition"
+          ],
+          "items": [
+            {
+              "text": "A single gas ___ can power an entire industrial plant.",
+              "answer": "turbine"
+            },
+            {
+              "text": "A ___ pushes gas through pipelines at high pressure.",
+              "answer": "compressor"
+            },
+            {
+              "text": "___ is natural gas cooled until it becomes a liquid.",
+              "answer": "LNG"
+            },
+            {
+              "text": "New technology helps customers cut their ___.",
+              "answer": "emissions"
+            },
+            {
+              "text": "IET leads the company's work in the energy ___.",
+              "answer": "transition"
+            }
+          ],
+          "explanation": "Estas são as cinco palavras-chave para falar do trabalho da IET."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "O que a IET faz?",
+          "prompt": "A colleague asks: \"What does IET focus on?\" What's the best answer?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Industrial machines like turbines and compressors, plus energy-transition technology.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Drilling wells and getting oil out of the ground.",
+              "correct": false,
+              "whyWrong": "Isso é a OFSE, que trabalha no poço. A IET cuida das máquinas industriais e da nova energia."
+            },
+            {
+              "id": "c",
+              "text": "Selling gas directly to customers' homes.",
+              "correct": false,
+              "whyWrong": "A IET faz a tecnologia e as máquinas; não vende gás para residências."
+            }
+          ],
+          "explanation": "IET = turbomáquinas industriais + tecnologia da transição energética."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o que significa IET?",
+          "prompt": "What does the acronym IET stand for?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Industrial & Energy Technology",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "International Energy Trading",
+              "correct": false,
+              "whyWrong": "É Industrial & Energy Technology — tecnologia industrial e de energia."
+            },
+            {
+              "id": "c",
+              "text": "Internal Engineering Team",
+              "correct": false,
+              "whyWrong": "IET = Industrial & Energy Technology."
+            }
+          ],
+          "explanation": "IET = Industrial & Energy Technology."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o que é LNG?",
+          "prompt": "What is LNG?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Natural gas cooled into a liquid so it can be shipped.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "A type of drill used at the well.",
+              "correct": false,
+              "whyWrong": "LNG não é uma ferramenta. É o gás natural transformado em líquido (liquefied natural gas)."
+            },
+            {
+              "id": "c",
+              "text": "A safety rule for the plant.",
+              "correct": false,
+              "whyWrong": "LNG = liquefied natural gas — gás natural resfriado até virar líquido."
+            }
+          ],
+          "explanation": "LNG = liquefied natural gas: gás natural resfriado até virar líquido, para transporte."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Curiosidades da IET",
+        "intro": "Máquinas gigantes e energia do futuro rendem ótimos assuntos em inglês. Ouça e revele a tradução quando quiser.",
+        "cards": [
+          {
+            "en": "To make LNG, natural gas is cooled to about −162°C — colder than any natural place on Earth.",
+            "pt": "Para fazer GNL, o gás natural é resfriado a cerca de −162°C — mais frio que qualquer lugar natural na Terra."
+          },
+          {
+            "en": "A single large gas turbine can generate enough electricity for hundreds of thousands of homes.",
+            "pt": "Uma única turbina a gás de grande porte pode gerar eletricidade para centenas de milhares de casas."
+          },
+          {
+            "en": "Baker Hughes turbines are being adapted to run on hydrogen, a fuel that emits no CO₂.",
+            "pt": "As turbinas da Baker Hughes estão sendo adaptadas para funcionar com hidrogênio, um combustível que não emite CO₂."
+          },
+          {
+            "en": "'CCUS' means Carbon Capture, Utilization and Storage — catching CO₂ before it reaches the air.",
+            "pt": "'CCUS' significa Captura, Uso e Armazenamento de Carbono — capturar o CO₂ antes que ele chegue ao ar."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "That's IET — now you can talk about the industrial and clean-energy side of Baker Hughes in English.",
+        "pt": "Essa é a IET — agora você já consegue falar, em inglês, do lado industrial e de energia limpa da Baker Hughes."
+      }
+    }
+  ]
+}

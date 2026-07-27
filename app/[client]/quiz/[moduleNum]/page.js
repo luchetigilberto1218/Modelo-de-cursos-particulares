@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation';
+import { redirect, notFound } from 'next/navigation';
 import { getCourse } from '../../../../lib/courses';
 import { guardClient } from '../../../../lib/guard';
 import NavBar from '../../../../components/NavBar';
@@ -9,7 +9,7 @@ export default async function QuizPage({ params }) {
   await guardClient(client);
 
   const course = getCourse(client);
-  if (!course) redirect('/');
+  if (!course) notFound();
 
   const modIdx = parseInt(moduleNum, 10) - 1;
   const mod = course.modules?.[modIdx];
