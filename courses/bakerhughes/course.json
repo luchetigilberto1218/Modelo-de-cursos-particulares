@@ -7,7 +7,7 @@
     "mode": "self-study",
     "totalLevels": 1,
     "totalTracks": 9,
-    "version": "0.2"
+    "version": "0.3"
   },
   "levels": [
     {
@@ -43,7 +43,7 @@
     {
       "id": "everyday",
       "name": "Everyday Workplace Communication",
-      "status": "soon",
+      "status": "active",
       "description": "O inglês do dia a dia: apresentações, calls, e-mails, agendamento e pedidos claros."
     },
     {
@@ -1455,6 +1455,1357 @@
       "celebrate": {
         "en": "That's IET — now you can talk about the industrial and clean-energy side of Baker Hughes in English.",
         "pt": "Essa é a IET — agora você já consegue falar, em inglês, do lado industrial e de energia limpa da Baker Hughes."
+      }
+    },
+    {
+      "num": 8,
+      "level": "essentials",
+      "track": "everyday",
+      "trackOrder": 1,
+      "levelLabel": "Everyday",
+      "trackLabel": "Everyday Workplace Communication",
+      "character": "us-female",
+      "title": "Starting and Ending a Call",
+      "focus": "Joining, greeting and signing off on calls",
+      "objective": "Entrar numa call em inglês, se identificar, conduzir o início e encerrar sem travar.",
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "The first thirty seconds of a call set the tone. You join, you say who you are, and you check that people can hear you.",
+        "In this lesson you learn the fixed phrases that native speakers use to <strong>open</strong> and <strong>close</strong> a call — the same ones, every time."
+      ],
+      "introPt": [
+        "Os primeiros trinta segundos de uma call definem o tom. Você entra, diz quem é e confirma que estão te ouvindo.",
+        "Nesta lição você aprende as frases fixas que os nativos usam para <strong>abrir</strong> e <strong>fechar</strong> uma call — sempre as mesmas."
+      ],
+      "vocab": [
+        {
+          "en": "to join a call",
+          "pt": "entrar numa call",
+          "example": "Sorry, I've just joined the call."
+        },
+        {
+          "en": "Can you hear me?",
+          "pt": "Você consegue me ouvir?",
+          "example": "Can you hear me okay?"
+        },
+        {
+          "en": "to go ahead",
+          "pt": "pode falar / prossiga",
+          "example": "Go ahead, Marcos."
+        },
+        {
+          "en": "to wrap up",
+          "pt": "encerrar / finalizar",
+          "example": "Let's wrap up — we're almost out of time."
+        },
+        {
+          "en": "to catch up",
+          "pt": "conversar / se atualizar",
+          "example": "Let's catch up next week."
+        },
+        {
+          "en": "Talk to you soon",
+          "pt": "Até breve / falamos em breve",
+          "example": "Thanks everyone — talk to you soon!"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Monte a abertura e o encerramento de uma call.",
+          "bank": [
+            "joined",
+            "hear",
+            "ahead",
+            "wrap",
+            "soon"
+          ],
+          "items": [
+            {
+              "text": "Hi everyone, I've just ___ the call.",
+              "answer": "joined"
+            },
+            {
+              "text": "Can you ___ me okay?",
+              "answer": "hear"
+            },
+            {
+              "text": "Go ___, Sarah — you had a question.",
+              "answer": "ahead"
+            },
+            {
+              "text": "Let's ___ up, we're out of time.",
+              "answer": "wrap"
+            },
+            {
+              "text": "Thanks everyone — talk to you ___!",
+              "answer": "soon"
+            }
+          ],
+          "explanation": "Estas cinco peças cobrem quase toda call: entrar, checar áudio, passar a palavra, encerrar e se despedir."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual soa mais natural?",
+          "prompt": "You join a call two minutes late. What do you say?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hi everyone, sorry I'm late — please carry on.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Hi everyone, excuse the delay of my person.",
+              "correct": false,
+              "whyWrong": "\"delay of my person\" não existe em inglês. Diga simplesmente \"sorry I'm late\"."
+            },
+            {
+              "id": "c",
+              "text": "Hi everyone, I have delay.",
+              "correct": false,
+              "whyWrong": "\"I have delay\" está incorreto. O natural é \"I'm late\" ou \"I'm running late\"."
+            }
+          ],
+          "explanation": "Curto e direto: \"Sorry I'm late\" + \"please carry on\" (podem continuar)."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · encerrando a call",
+          "prompt": "Complete: \"We're almost out of time, so let's ___ up.\"",
+          "options": [
+            {
+              "id": "a",
+              "text": "wrap",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "close",
+              "correct": false,
+              "whyWrong": "\"close up\" é fechar uma loja, não encerrar uma reunião."
+            },
+            {
+              "id": "c",
+              "text": "finish",
+              "correct": false,
+              "whyWrong": "\"finish up\" existe, mas para reuniões o natural e mais usado é \"wrap up\"."
+            }
+          ],
+          "explanation": "\"Let's wrap up\" é a frase padrão para encerrar uma reunião no mundo corporativo."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · passando a palavra",
+          "prompt": "Someone wants to speak. The natural way to give them the floor is…",
+          "options": [
+            {
+              "id": "a",
+              "text": "Go ahead.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Go on ahead of me.",
+              "correct": false,
+              "whyWrong": "Isso significa seguir na frente de alguém andando, não passar a palavra."
+            },
+            {
+              "id": "c",
+              "text": "You can talk now, please.",
+              "correct": false,
+              "whyWrong": "Está gramaticalmente correto, mas soa rígido. \"Go ahead\" é o padrão."
+            }
+          ],
+          "explanation": "\"Go ahead\" = pode falar. Duas palavras que resolvem."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Os trinta segundos que abrem uma call",
+        "intro": "Detalhes pequenos que fazem você soar experiente numa call internacional. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "On global calls, people often say their name before speaking — \"This is Marcos\" — because not everyone recognises every voice.",
+            "pt": "Em calls globais, as pessoas costumam dizer o nome antes de falar — \"This is Marcos\" — porque nem todos reconhecem todas as vozes."
+          },
+          {
+            "en": "\"Sorry, I'm late\" is enough. Long explanations draw more attention to the delay than the delay itself.",
+            "pt": "\"Sorry, I'm late\" basta. Explicações longas chamam mais atenção para o atraso do que o próprio atraso."
+          },
+          {
+            "en": "\"You're on mute\" is probably the most spoken sentence in corporate English today.",
+            "pt": "\"You're on mute\" é provavelmente a frase mais falada no inglês corporativo hoje."
+          },
+          {
+            "en": "Ending with a clear \"Thanks everyone\" signals the call is over — otherwise people wait, unsure.",
+            "pt": "Encerrar com um \"Thanks everyone\" claro sinaliza que a call acabou — sem isso, as pessoas ficam esperando, na dúvida."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now open and close a call in English without hesitating.",
+        "pt": "Agora você consegue abrir e encerrar uma call em inglês sem hesitar."
+      }
+    },
+    {
+      "num": 9,
+      "level": "essentials",
+      "track": "everyday",
+      "trackOrder": 2,
+      "levelLabel": "Everyday",
+      "trackLabel": "Everyday Workplace Communication",
+      "character": "us-male",
+      "title": "Asking for Clarification",
+      "focus": "Repeating, checking and confirming understanding",
+      "objective": "Pedir para repetir, confirmar o que entendeu e resolver ruído na comunicação sem constrangimento.",
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "Nobody understands 100% of a call in a second language — not even native speakers on a bad line.",
+        "What separates confident professionals is not understanding everything; it is <strong>asking well</strong> when they don't."
+      ],
+      "introPt": [
+        "Ninguém entende 100% de uma call num segundo idioma — nem falantes nativos numa linha ruim.",
+        "O que separa profissionais confiantes não é entender tudo; é <strong>perguntar bem</strong> quando não entendem."
+      ],
+      "vocab": [
+        {
+          "en": "Could you repeat that?",
+          "pt": "Você pode repetir?",
+          "example": "Sorry, could you repeat that?"
+        },
+        {
+          "en": "to break up",
+          "pt": "falhar (áudio)",
+          "example": "You're breaking up — I lost the last part."
+        },
+        {
+          "en": "Just to confirm",
+          "pt": "Só para confirmar",
+          "example": "Just to confirm, the deadline is Friday?"
+        },
+        {
+          "en": "in other words",
+          "pt": "em outras palavras",
+          "example": "In other words, we postpone the test."
+        },
+        {
+          "en": "to follow",
+          "pt": "acompanhar / entender",
+          "example": "Sorry, I didn't quite follow."
+        },
+        {
+          "en": "Does that make sense?",
+          "pt": "Ficou claro?",
+          "example": "That's the plan — does that make sense?"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Escolha a peça certa para pedir esclarecimento.",
+          "bank": [
+            "repeat",
+            "breaking",
+            "confirm",
+            "follow",
+            "sense"
+          ],
+          "items": [
+            {
+              "text": "Sorry, could you ___ that?",
+              "answer": "repeat"
+            },
+            {
+              "text": "You're ___ up — I lost the last part.",
+              "answer": "breaking"
+            },
+            {
+              "text": "Just to ___, the deadline is Friday?",
+              "answer": "confirm"
+            },
+            {
+              "text": "Sorry, I didn't quite ___.",
+              "answer": "follow"
+            },
+            {
+              "text": "That's the plan — does that make ___?",
+              "answer": "sense"
+            }
+          ],
+          "explanation": "Com estas cinco frases você resolve praticamente qualquer falha de entendimento."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual soa mais natural?",
+          "prompt": "You didn't understand a number. What do you say?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Sorry, could you repeat the number?",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Repeat, please, the number.",
+              "correct": false,
+              "whyWrong": "A ordem está invertida e soa como ordem, não pedido. Use \"Could you…?\"."
+            },
+            {
+              "id": "c",
+              "text": "I not understand the number.",
+              "correct": false,
+              "whyWrong": "Falta o auxiliar: seria \"I don't understand\". E é melhor pedir a repetição do que apenas relatar o problema."
+            }
+          ],
+          "explanation": "\"Could you…?\" transforma qualquer pedido em algo educado e natural."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · áudio ruim",
+          "prompt": "The audio is bad. Which sentence describes it correctly?",
+          "options": [
+            {
+              "id": "a",
+              "text": "You're breaking up.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "You're breaking down.",
+              "correct": false,
+              "whyWrong": "\"Break down\" é quebrar (uma máquina) ou desabar emocionalmente."
+            },
+            {
+              "id": "c",
+              "text": "You're broken.",
+              "correct": false,
+              "whyWrong": "Isso diz que a pessoa está quebrada. O áudio é que falha: \"breaking up\"."
+            }
+          ],
+          "explanation": "\"You're breaking up\" = seu áudio está falhando, cortando."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · confirmando o combinado",
+          "prompt": "You want to check you understood the deadline. You say…",
+          "options": [
+            {
+              "id": "a",
+              "text": "Just to confirm — we deliver on Friday, correct?",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "For confirm, we deliver Friday?",
+              "correct": false,
+              "whyWrong": "\"For confirm\" não existe. O correto é \"Just to confirm\" ou \"To confirm\"."
+            },
+            {
+              "id": "c",
+              "text": "I confirm you the Friday.",
+              "correct": false,
+              "whyWrong": "\"Confirm you something\" não é usado assim. Diga \"Just to confirm, …\"."
+            }
+          ],
+          "explanation": "\"Just to confirm…\" é a forma segura de repetir o combinado e evitar retrabalho."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Pedir para repetir não é fraqueza",
+        "intro": "Como os profissionais mais experientes lidam com o que não entenderam. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "Native speakers ask each other to repeat things all the time — accents and bad audio affect everyone.",
+            "pt": "Falantes nativos pedem para repetir uns aos outros o tempo todo — sotaques e áudio ruim afetam todo mundo."
+          },
+          {
+            "en": "Blaming the line instead of yourself — \"you're breaking up\" — keeps the conversation comfortable for both sides.",
+            "pt": "Culpar a conexão em vez de si mesmo — \"you're breaking up\" — deixa a conversa confortável para os dois lados."
+          },
+          {
+            "en": "Repeating a number back is standard practice in operations, where one wrong digit is expensive.",
+            "pt": "Repetir um número de volta é prática padrão em operações, onde um dígito errado custa caro."
+          },
+          {
+            "en": "\"Does that make sense?\" is how speakers check understanding without implying the listener is slow.",
+            "pt": "\"Does that make sense?\" é como se checa o entendimento sem sugerir que o ouvinte é lento."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now ask for clarification without losing confidence.",
+        "pt": "Agora você consegue pedir esclarecimento sem perder a confiança."
+      }
+    },
+    {
+      "num": 10,
+      "level": "essentials",
+      "track": "everyday",
+      "trackOrder": 3,
+      "levelLabel": "Everyday",
+      "trackLabel": "Everyday Workplace Communication",
+      "character": "gb-male",
+      "title": "Writing Clear Emails",
+      "focus": "Subject lines, openings, closings and tone",
+      "objective": "Escrever e-mails curtos e claros em inglês, com assunto útil, abertura correta e fechamento profissional.",
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "A good work email answers three questions fast: <strong>what is this about</strong>, <strong>what do you need</strong>, and <strong>by when</strong>.",
+        "In this lesson you learn the standard openings and closings — and the small mistakes that make an email sound translated."
+      ],
+      "introPt": [
+        "Um bom e-mail de trabalho responde três perguntas rápido: <strong>do que se trata</strong>, <strong>o que você precisa</strong> e <strong>para quando</strong>.",
+        "Nesta lição você aprende as aberturas e fechamentos padrão — e os pequenos erros que fazem um e-mail soar traduzido."
+      ],
+      "vocab": [
+        {
+          "en": "subject line",
+          "pt": "assunto (do e-mail)",
+          "example": "Keep the subject line short and specific."
+        },
+        {
+          "en": "I'm writing to…",
+          "pt": "Escrevo para…",
+          "example": "I'm writing to confirm tomorrow's inspection."
+        },
+        {
+          "en": "Please find attached",
+          "pt": "Segue em anexo",
+          "example": "Please find attached the updated report."
+        },
+        {
+          "en": "to follow up",
+          "pt": "dar sequência / cobrar retorno",
+          "example": "I'm following up on my message from Monday."
+        },
+        {
+          "en": "at your earliest convenience",
+          "pt": "assim que possível (formal)",
+          "example": "Please reply at your earliest convenience."
+        },
+        {
+          "en": "Best regards",
+          "pt": "Atenciosamente",
+          "example": "Best regards, Marcos"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Monte um e-mail profissional do começo ao fim.",
+          "bank": [
+            "subject",
+            "writing",
+            "attached",
+            "following",
+            "regards"
+          ],
+          "items": [
+            {
+              "text": "Keep the ___ line short and specific.",
+              "answer": "subject"
+            },
+            {
+              "text": "I'm ___ to confirm tomorrow's inspection.",
+              "answer": "writing"
+            },
+            {
+              "text": "Please find ___ the updated report.",
+              "answer": "attached"
+            },
+            {
+              "text": "I'm ___ up on my message from Monday.",
+              "answer": "following"
+            },
+            {
+              "text": "Best ___, Marcos",
+              "answer": "regards"
+            }
+          ],
+          "explanation": "Assunto, abertura, anexo, cobrança e fechamento: a estrutura completa de um e-mail de trabalho."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual assunto é melhor?",
+          "prompt": "You need approval for a purchase order by Thursday. Best subject line?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Approval needed: PO 4471 — by Thursday",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Important!!!",
+              "correct": false,
+              "whyWrong": "Não diz nada sobre o conteúdo e as exclamações soam pouco profissionais."
+            },
+            {
+              "id": "c",
+              "text": "Hello",
+              "correct": false,
+              "whyWrong": "Um assunto vazio faz o e-mail ser adiado ou perdido na caixa de entrada."
+            }
+          ],
+          "explanation": "Bom assunto = o que é + qual item + até quando. Quem lê decide a prioridade em um segundo."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · o anexo",
+          "prompt": "Complete: \"Please find ___ the updated report.\"",
+          "options": [
+            {
+              "id": "a",
+              "text": "attached",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "in attachment",
+              "correct": false,
+              "whyWrong": "\"In attachment\" é tradução literal do português e não é usado."
+            },
+            {
+              "id": "c",
+              "text": "attach",
+              "correct": false,
+              "whyWrong": "Aqui é preciso o particípio \"attached\", não o verbo \"attach\"."
+            }
+          ],
+          "explanation": "\"Please find attached\" é a fórmula fixa. Mais informal: \"I've attached the report\"."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · cobrando retorno",
+          "prompt": "You sent an email on Monday and got no answer. On Wednesday you write…",
+          "options": [
+            {
+              "id": "a",
+              "text": "I'm just following up on my email from Monday.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "I am charging you the answer.",
+              "correct": false,
+              "whyWrong": "\"Charge\" é cobrar dinheiro. Cobrar retorno é \"follow up\"."
+            },
+            {
+              "id": "c",
+              "text": "Why you didn't answer me?",
+              "correct": false,
+              "whyWrong": "Além do erro de estrutura (\"why didn't you\"), soa agressivo."
+            }
+          ],
+          "explanation": "\"Follow up\" é a palavra exata para retomar um assunto sem soar impaciente."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O e-mail que não parece traduzido",
+        "intro": "Convenções do e-mail corporativo em inglês que quase ninguém ensina. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "\"Dear\" is unusual between colleagues — \"Hi Sarah\" or just \"Sarah,\" is the everyday standard.",
+            "pt": "\"Dear\" é incomum entre colegas — \"Hi Sarah\" ou apenas \"Sarah,\" é o padrão do dia a dia."
+          },
+          {
+            "en": "Long paragraphs get skimmed. Three short lines and a bullet list get read.",
+            "pt": "Parágrafos longos são apenas passados de olho. Três linhas curtas e uma lista são realmente lidas."
+          },
+          {
+            "en": "Putting the deadline in the subject line is the single fastest way to get a reply.",
+            "pt": "Colocar o prazo no assunto é o jeito mais rápido de conseguir uma resposta."
+          },
+          {
+            "en": "\"At your earliest convenience\" sounds polite but means \"soon\" — use it when there is real urgency.",
+            "pt": "\"At your earliest convenience\" soa educado mas significa \"logo\" — use quando há urgência real."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now write a work email that gets read and answered.",
+        "pt": "Agora você consegue escrever um e-mail de trabalho que é lido e respondido."
+      }
+    },
+    {
+      "num": 11,
+      "level": "essentials",
+      "track": "everyday",
+      "trackOrder": 4,
+      "levelLabel": "Everyday",
+      "trackLabel": "Everyday Workplace Communication",
+      "character": "us-female",
+      "title": "Scheduling and Rescheduling",
+      "focus": "Times, availability and time zones",
+      "objective": "Marcar, remarcar e confirmar reuniões em inglês, lidando com fusos horários sem confusão.",
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "In a company working across 120 countries, \"three o'clock\" means nothing without a time zone.",
+        "This lesson gives you the language to <strong>propose</strong>, <strong>move</strong> and <strong>confirm</strong> a meeting clearly."
+      ],
+      "introPt": [
+        "Numa empresa que atua em 120 países, \"três da tarde\" não significa nada sem o fuso horário.",
+        "Esta lição te dá a linguagem para <strong>propor</strong>, <strong>mover</strong> e <strong>confirmar</strong> uma reunião com clareza."
+      ],
+      "vocab": [
+        {
+          "en": "Are you available…?",
+          "pt": "Você tem disponibilidade…?",
+          "example": "Are you available on Tuesday morning?"
+        },
+        {
+          "en": "to set up a meeting",
+          "pt": "marcar uma reunião",
+          "example": "Let's set up a meeting for next week."
+        },
+        {
+          "en": "to reschedule",
+          "pt": "remarcar",
+          "example": "Can we reschedule to Thursday?"
+        },
+        {
+          "en": "to push back",
+          "pt": "adiar",
+          "example": "Let's push the review back one week."
+        },
+        {
+          "en": "time zone",
+          "pt": "fuso horário",
+          "example": "What time zone are you in?"
+        },
+        {
+          "en": "It works for me",
+          "pt": "Funciona para mim",
+          "example": "Ten a.m. works for me."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Marque, remarque e confirme uma reunião.",
+          "bank": [
+            "available",
+            "set",
+            "reschedule",
+            "zone",
+            "works"
+          ],
+          "items": [
+            {
+              "text": "Are you ___ on Tuesday morning?",
+              "answer": "available"
+            },
+            {
+              "text": "Let's ___ up a meeting for next week.",
+              "answer": "set"
+            },
+            {
+              "text": "Can we ___ to Thursday?",
+              "answer": "reschedule"
+            },
+            {
+              "text": "What time ___ are you in?",
+              "answer": "zone"
+            },
+            {
+              "text": "Ten a.m. ___ for me.",
+              "answer": "works"
+            }
+          ],
+          "explanation": "Propor, marcar, remarcar, checar fuso e aceitar: o ciclo completo de uma agenda internacional."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual soa mais natural?",
+          "prompt": "You want to suggest Tuesday at 10. Which is most natural?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Would Tuesday at 10 a.m. Houston time work for you?",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "You can in the Tuesday at 10?",
+              "correct": false,
+              "whyWrong": "A estrutura está incorreta. Use \"Would … work for you?\" ou \"Are you available…?\"."
+            },
+            {
+              "id": "c",
+              "text": "I mark Tuesday 10 for you.",
+              "correct": false,
+              "whyWrong": "\"I mark\" é tradução literal de \"eu marco\". Em inglês: \"I'll set up\" ou \"Let's schedule\"."
+            }
+          ],
+          "explanation": "Proponha com \"Would … work for you?\" e sempre inclua o fuso quando o time é global."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · adiando",
+          "prompt": "The review needs to move one week later. You say…",
+          "options": [
+            {
+              "id": "a",
+              "text": "Let's push the review back one week.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Let's push the review front one week.",
+              "correct": false,
+              "whyWrong": "\"Push front\" não existe. Para adiar é \"push back\"."
+            },
+            {
+              "id": "c",
+              "text": "Let's delay the review to before.",
+              "correct": false,
+              "whyWrong": "\"Delay to before\" é contraditório — atrasar é sempre para depois."
+            }
+          ],
+          "explanation": "\"Push back\" = adiar. \"Move up\" = antecipar. Cuidado: são opostos e confundem muito."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · confirmando",
+          "prompt": "Your colleague proposes 3 p.m. You agree. The most natural reply is…",
+          "options": [
+            {
+              "id": "a",
+              "text": "Three works for me.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Three is working to me.",
+              "correct": false,
+              "whyWrong": "O verbo aqui é simples e a preposição é \"for\": \"works for me\"."
+            },
+            {
+              "id": "c",
+              "text": "I am agree with three.",
+              "correct": false,
+              "whyWrong": "\"I am agree\" é um erro clássico. O correto seria \"I agree\" — mas o natural aqui é \"works for me\"."
+            }
+          ],
+          "explanation": "\"Works for me\" é a resposta padrão para aceitar um horário."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Agenda entre fusos horários",
+        "intro": "Como times globais evitam o clássico erro de horário. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "Always write the time zone — \"3 p.m. CST\" — even internally. It prevents the most common scheduling error.",
+            "pt": "Sempre escreva o fuso horário — \"3 p.m. CST\" — mesmo internamente. Evita o erro de agenda mais comum."
+          },
+          {
+            "en": "Houston is Baker Hughes' headquarters, so many global calls are anchored to Central Time.",
+            "pt": "Houston é a sede da Baker Hughes, então muitas calls globais são ancoradas no Central Time."
+          },
+          {
+            "en": "Brazil no longer uses daylight saving time, but the US does — so the gap to Houston changes twice a year.",
+            "pt": "O Brasil não usa mais horário de verão, mas os EUA usam — então a diferença para Houston muda duas vezes por ano."
+          },
+          {
+            "en": "\"Push back\" means later and \"move up\" means earlier. Mixing them up moves a meeting the wrong way.",
+            "pt": "\"Push back\" é adiar e \"move up\" é antecipar. Trocar os dois move a reunião para o lado errado."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now schedule and reschedule meetings across time zones.",
+        "pt": "Agora você consegue marcar e remarcar reuniões entre fusos horários."
+      }
+    },
+    {
+      "num": 12,
+      "level": "essentials",
+      "track": "everyday",
+      "trackOrder": 5,
+      "levelLabel": "Everyday",
+      "trackLabel": "Everyday Workplace Communication",
+      "character": "gb-female",
+      "title": "Making Requests Politely",
+      "focus": "Could you, would you mind, and softening language",
+      "objective": "Pedir coisas em inglês no tom certo — nem seco demais, nem indireto demais.",
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "In Portuguese, tone often comes from the voice. In English, it comes from the <strong>words you choose</strong>.",
+        "\"Send me the file\" and \"Could you send me the file?\" carry the same information — and a completely different relationship."
+      ],
+      "introPt": [
+        "Em português, o tom costuma vir da voz. Em inglês, ele vem das <strong>palavras que você escolhe</strong>.",
+        "\"Send me the file\" e \"Could you send me the file?\" carregam a mesma informação — e uma relação completamente diferente."
+      ],
+      "vocab": [
+        {
+          "en": "Could you…?",
+          "pt": "Você poderia…?",
+          "example": "Could you send me the report?"
+        },
+        {
+          "en": "Would you mind…?",
+          "pt": "Você se importaria de…?",
+          "example": "Would you mind checking this?"
+        },
+        {
+          "en": "I was wondering if…",
+          "pt": "Eu queria saber se…",
+          "example": "I was wondering if you could help."
+        },
+        {
+          "en": "when you get a chance",
+          "pt": "quando puder",
+          "example": "Have a look when you get a chance."
+        },
+        {
+          "en": "to appreciate",
+          "pt": "agradecer / valorizar",
+          "example": "I'd appreciate your help on this."
+        },
+        {
+          "en": "no rush",
+          "pt": "sem pressa",
+          "example": "No rush — end of week is fine."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Ajuste o tom dos pedidos.",
+          "bank": [
+            "Could",
+            "mind",
+            "wondering",
+            "chance",
+            "appreciate"
+          ],
+          "items": [
+            {
+              "text": "___ you send me the report?",
+              "answer": "Could"
+            },
+            {
+              "text": "Would you ___ checking this?",
+              "answer": "mind"
+            },
+            {
+              "text": "I was ___ if you could help.",
+              "answer": "wondering"
+            },
+            {
+              "text": "Have a look when you get a ___.",
+              "answer": "chance"
+            },
+            {
+              "text": "I'd ___ your help on this.",
+              "answer": "appreciate"
+            }
+          ],
+          "explanation": "Estas cinco estruturas cobrem do pedido rápido ao pedido delicado."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual soa mais natural?",
+          "prompt": "You need a file from a colleague today. Which is best?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Could you send me the file today? Thanks!",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Send me the file today.",
+              "correct": false,
+              "whyWrong": "Sem \"could you\", soa como ordem — especialmente por escrito, onde não há tom de voz."
+            },
+            {
+              "id": "c",
+              "text": "I need that you send the file.",
+              "correct": false,
+              "whyWrong": "\"I need that you…\" é tradução literal. Em inglês: \"I need you to send…\" ou \"Could you send…\"."
+            }
+          ],
+          "explanation": "\"Could you…?\" + \"thanks\" é o pedido padrão do inglês corporativo. Rápido e educado."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · would you mind",
+          "prompt": "Complete: \"Would you mind ___ this before the call?\"",
+          "options": [
+            {
+              "id": "a",
+              "text": "reviewing",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "to review",
+              "correct": false,
+              "whyWrong": "Depois de \"mind\" o verbo vai sempre no -ing, nunca no infinitivo."
+            },
+            {
+              "id": "c",
+              "text": "review",
+              "correct": false,
+              "whyWrong": "Falta o -ing: \"Would you mind reviewing…?\"."
+            }
+          ],
+          "explanation": "Regra fixa: \"Would you mind\" + verbo com -ing."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · tirando a pressão",
+          "prompt": "You want the answer, but it is not urgent. You add…",
+          "options": [
+            {
+              "id": "a",
+              "text": "No rush — end of week is fine.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Without hurry, please.",
+              "correct": false,
+              "whyWrong": "\"Without hurry\" é tradução literal e não é usado. Diga \"no rush\"."
+            },
+            {
+              "id": "c",
+              "text": "Is not urgent for me.",
+              "correct": false,
+              "whyWrong": "Falta o sujeito: \"It's not urgent\". E \"no rush\" soa mais natural."
+            }
+          ],
+          "explanation": "\"No rush\" evita que o colega largue tudo — e mostra consideração pela agenda dele."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O tom escrito engana",
+        "intro": "Por que pedidos em inglês precisam de mais palavras do que em português. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "Direct requests that feel normal in Portuguese can read as rude in written English, where there is no tone of voice.",
+            "pt": "Pedidos diretos que parecem normais em português podem soar rudes no inglês escrito, onde não há tom de voz."
+          },
+          {
+            "en": "British colleagues tend to soften more — \"I was wondering if…\" is very common in the UK.",
+            "pt": "Colegas britânicos tendem a suavizar mais — \"I was wondering if…\" é muito comum no Reino Unido."
+          },
+          {
+            "en": "Adding a deadline to a polite request is not rude; leaving it out is what causes delays.",
+            "pt": "Adicionar um prazo a um pedido educado não é rude; deixá-lo de fora é o que causa atrasos."
+          },
+          {
+            "en": "\"Thanks in advance\" can sound like pressure — \"thank you\" after the reply is safer.",
+            "pt": "\"Thanks in advance\" pode soar como pressão — agradecer depois da resposta é mais seguro."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now ask for what you need in the right tone.",
+        "pt": "Agora você consegue pedir o que precisa no tom certo."
+      }
+    },
+    {
+      "num": 13,
+      "level": "essentials",
+      "track": "everyday",
+      "trackOrder": 6,
+      "levelLabel": "Everyday",
+      "trackLabel": "Everyday Workplace Communication",
+      "character": "us-male",
+      "title": "Small Talk That Works",
+      "focus": "Openers, safe topics and moving to business",
+      "objective": "Conduzir os dois minutos de conversa antes da reunião e fazer a transição para o assunto.",
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "The two minutes before a meeting starts are not wasted time — they are where trust is built.",
+        "You need three things: an <strong>opener</strong>, a <strong>safe topic</strong>, and a clean <strong>transition</strong> into business."
+      ],
+      "introPt": [
+        "Os dois minutos antes de a reunião começar não são tempo perdido — é ali que se constrói confiança.",
+        "Você precisa de três coisas: uma <strong>abertura</strong>, um <strong>assunto seguro</strong> e uma <strong>transição</strong> limpa para o trabalho."
+      ],
+      "vocab": [
+        {
+          "en": "How's it going?",
+          "pt": "Como vai?",
+          "example": "Hi Tom — how's it going?"
+        },
+        {
+          "en": "How was your weekend?",
+          "pt": "Como foi seu fim de semana?",
+          "example": "How was your weekend?"
+        },
+        {
+          "en": "to be swamped",
+          "pt": "estar atolado de trabalho",
+          "example": "I've been swamped this week."
+        },
+        {
+          "en": "Shall we get started?",
+          "pt": "Vamos começar?",
+          "example": "Shall we get started?"
+        },
+        {
+          "en": "speaking of which",
+          "pt": "por falar nisso",
+          "example": "Speaking of which, did you see the report?"
+        },
+        {
+          "en": "to catch up on",
+          "pt": "colocar em dia",
+          "example": "Let's catch up on the project."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Conduza o small talk e entre no assunto.",
+          "bank": [
+            "going",
+            "weekend",
+            "swamped",
+            "started",
+            "Speaking"
+          ],
+          "items": [
+            {
+              "text": "Hi Tom — how's it ___?",
+              "answer": "going"
+            },
+            {
+              "text": "How was your ___?",
+              "answer": "weekend"
+            },
+            {
+              "text": "I've been ___ this week.",
+              "answer": "swamped"
+            },
+            {
+              "text": "Shall we get ___?",
+              "answer": "started"
+            },
+            {
+              "text": "___ of which, did you see the report?",
+              "answer": "Speaking"
+            }
+          ],
+          "explanation": "Abrir, manter e fechar o small talk — e emendar no assunto sem corte brusco."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual soa mais natural?",
+          "prompt": "A colleague asks \"How's it going?\". The most natural reply is…",
+          "options": [
+            {
+              "id": "a",
+              "text": "Good, thanks — busy week. How about you?",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "It goes well, thank you very much for asking me.",
+              "correct": false,
+              "whyWrong": "Gramaticalmente possível, mas longo e formal demais para um cumprimento casual."
+            },
+            {
+              "id": "c",
+              "text": "I am going good.",
+              "correct": false,
+              "whyWrong": "A pergunta não é sobre você ir a lugar nenhum. Responda \"Good, thanks\"."
+            }
+          ],
+          "explanation": "Resposta curta + devolver a pergunta. É isso que mantém a conversa fluindo."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · atolado de trabalho",
+          "prompt": "You had a very heavy week. You say…",
+          "options": [
+            {
+              "id": "a",
+              "text": "I've been swamped this week.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "I've been drowned this week.",
+              "correct": false,
+              "whyWrong": "\"Drowned\" é literalmente afogado. A expressão de trabalho é \"swamped\"."
+            },
+            {
+              "id": "c",
+              "text": "I've been very full of work.",
+              "correct": false,
+              "whyWrong": "Não é uma expressão natural. Use \"swamped\" ou \"really busy\"."
+            }
+          ],
+          "explanation": "\"Swamped\" é a forma mais natural e comum de dizer que você está sobrecarregado."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · entrando no assunto",
+          "prompt": "Small talk is over. How do you move to business?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Right — shall we get started?",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Stop. Now we work.",
+              "correct": false,
+              "whyWrong": "Corta a conversa de forma abrupta e soa quase agressivo."
+            },
+            {
+              "id": "c",
+              "text": "We can begin the meeting now, is possible?",
+              "correct": false,
+              "whyWrong": "\"Is possible\" está incompleto (\"is it possible?\") e a frase soa insegura."
+            }
+          ],
+          "explanation": "\"Shall we get started?\" é a transição clássica — educada e inequívoca."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Small talk é trabalho",
+        "intro": "O que funciona e o que evitar nos dois minutos iniciais. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "\"How are you?\" is a greeting, not a real question — a short positive answer is expected.",
+            "pt": "\"How are you?\" é um cumprimento, não uma pergunta de verdade — espera-se uma resposta curta e positiva."
+          },
+          {
+            "en": "Safe topics: weather, travel, sport, weekend plans. Risky: salary, politics, religion, health.",
+            "pt": "Assuntos seguros: clima, viagem, esporte, planos de fim de semana. Arriscados: salário, política, religião, saúde."
+          },
+          {
+            "en": "With British colleagues, small talk is often longer; with Americans, it is usually shorter and then straight to business.",
+            "pt": "Com colegas britânicos, o small talk costuma ser mais longo; com americanos, geralmente é mais curto e vai direto ao assunto."
+          },
+          {
+            "en": "Asking one follow-up question about the answer is what turns small talk into a real connection.",
+            "pt": "Fazer uma pergunta de acompanhamento sobre a resposta é o que transforma small talk em conexão real."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now handle the first two minutes of any meeting.",
+        "pt": "Agora você domina os dois primeiros minutos de qualquer reunião."
+      }
+    },
+    {
+      "num": 14,
+      "level": "essentials",
+      "track": "everyday",
+      "trackOrder": 7,
+      "levelLabel": "Everyday",
+      "trackLabel": "Everyday Workplace Communication",
+      "character": "gb-male",
+      "title": "Giving and Getting Updates",
+      "focus": "Progress, blockers and next steps",
+      "objective": "Dar um update claro em inglês: o que está pronto, o que travou e qual o próximo passo.",
+      "objectiveLabel": "O que você leva daqui",
+      "practiceLabel": "Quiz rápido · teste o que você pegou",
+      "intro": [
+        "A good update has three parts: <strong>done</strong>, <strong>in progress</strong>, <strong>blocked</strong>. Nothing else.",
+        "Say it in that order and your manager will never have to ask a follow-up question."
+      ],
+      "introPt": [
+        "Um bom update tem três partes: <strong>feito</strong>, <strong>em andamento</strong>, <strong>travado</strong>. Nada além disso.",
+        "Diga nessa ordem e o seu gestor nunca vai precisar fazer uma pergunta de acompanhamento."
+      ],
+      "vocab": [
+        {
+          "en": "on track",
+          "pt": "dentro do previsto",
+          "example": "The installation is on track."
+        },
+        {
+          "en": "behind schedule",
+          "pt": "atrasado",
+          "example": "We're two days behind schedule."
+        },
+        {
+          "en": "blocker",
+          "pt": "impedimento",
+          "example": "The main blocker is the missing part."
+        },
+        {
+          "en": "to be waiting on",
+          "pt": "estar esperando por",
+          "example": "We're waiting on the supplier."
+        },
+        {
+          "en": "next steps",
+          "pt": "próximos passos",
+          "example": "Next steps: confirm the delivery date."
+        },
+        {
+          "en": "to keep someone posted",
+          "pt": "manter alguém informado",
+          "example": "I'll keep you posted."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "wordBank",
+          "title": "Complete com o banco de palavras",
+          "instruction": "Monte um update completo de status.",
+          "bank": [
+            "track",
+            "behind",
+            "blocker",
+            "waiting",
+            "posted"
+          ],
+          "items": [
+            {
+              "text": "The installation is on ___.",
+              "answer": "track"
+            },
+            {
+              "text": "We're two days ___ schedule.",
+              "answer": "behind"
+            },
+            {
+              "text": "The main ___ is the missing part.",
+              "answer": "blocker"
+            },
+            {
+              "text": "We're ___ on the supplier.",
+              "answer": "waiting"
+            },
+            {
+              "text": "I'll keep you ___.",
+              "answer": "posted"
+            }
+          ],
+          "explanation": "Status, atraso, impedimento, dependência e acompanhamento: o vocabulário completo de um update."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual soa mais natural?",
+          "prompt": "Everything is going according to plan. You say…",
+          "options": [
+            {
+              "id": "a",
+              "text": "We're on track for Friday.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "We're in the track for Friday.",
+              "correct": false,
+              "whyWrong": "A preposição é \"on\": \"on track\"."
+            },
+            {
+              "id": "c",
+              "text": "We're in the plan for Friday.",
+              "correct": false,
+              "whyWrong": "\"In the plan\" significa estar previsto no plano, não estar em dia com ele."
+            }
+          ],
+          "explanation": "\"On track\" = dentro do previsto. Oposto: \"behind schedule\"."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · dependência externa",
+          "prompt": "The supplier hasn't delivered yet. You say…",
+          "options": [
+            {
+              "id": "a",
+              "text": "We're waiting on the supplier.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "We're waiting the supplier.",
+              "correct": false,
+              "whyWrong": "Falta a preposição. É \"waiting for\" ou, no contexto de dependência de trabalho, \"waiting on\"."
+            },
+            {
+              "id": "c",
+              "text": "We're in wait of the supplier.",
+              "correct": false,
+              "whyWrong": "Não é uma construção usada em inglês."
+            }
+          ],
+          "explanation": "\"Waiting on someone\" é o padrão corporativo para dependência de outra parte."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Quiz · fechando o update",
+          "prompt": "You will send more information later. You end with…",
+          "options": [
+            {
+              "id": "a",
+              "text": "I'll keep you posted.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "I'll keep you informed of everything always.",
+              "correct": false,
+              "whyWrong": "Está correto, mas é longo e redundante. \"I'll keep you posted\" resolve."
+            },
+            {
+              "id": "c",
+              "text": "I go to inform you.",
+              "correct": false,
+              "whyWrong": "\"I go to inform\" não é inglês. Use \"I'll let you know\" ou \"I'll keep you posted\"."
+            }
+          ],
+          "explanation": "\"I'll keep you posted\" fecha qualquer update de forma natural e profissional."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O update que evita perguntas",
+        "intro": "Como reportar progresso do jeito que gestores globais esperam. Ouça e revele a tradução.",
+        "cards": [
+          {
+            "en": "Managers want the blocker first if it is serious — good news can wait, bad news cannot.",
+            "pt": "Gestores querem o impedimento primeiro se ele for sério — boa notícia pode esperar, má notícia não."
+          },
+          {
+            "en": "\"Behind schedule\" with a new date is professional. \"Behind schedule\" with no date creates anxiety.",
+            "pt": "\"Behind schedule\" com uma data nova é profissional. \"Behind schedule\" sem data gera ansiedade."
+          },
+          {
+            "en": "Naming what you are waiting on moves responsibility to where it actually sits.",
+            "pt": "Nomear aquilo que você está esperando move a responsabilidade para onde ela realmente está."
+          },
+          {
+            "en": "In field operations, updates are often given in a fixed order so nothing is forgotten under pressure.",
+            "pt": "Em operações de campo, updates costumam ser dados numa ordem fixa para que nada seja esquecido sob pressão."
+          }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now give a clear status update in English.",
+        "pt": "Agora você consegue dar um update de status claro em inglês."
       }
     }
   ]
