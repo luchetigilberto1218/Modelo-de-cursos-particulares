@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 // Grammar & Search quick links are rendered in the header and footer.
 import AudioPlayer from './AudioPlayer';
 import { useIdentity } from './czarnikow-teste/progress';
+import PointsWidget from './czarnikow-teste/PointsWidget';
 
 const HISTORY_PARAGRAPHS = [
   "Czarnikow was founded in London in 1861 by Caesar Czarnikow, a young Polish sugar broker who saw an opportunity in the growing British market. From a small office in the City, he began trading sugar from the Caribbean and built trust with refiners across Europe.",
@@ -136,6 +137,13 @@ export default function LevelHub({ course, theme, clientId }) {
           Choose your level and start learning.
         </p>
       </section>
+
+      {/* Campanha Ago–Dez: só no ambiente de teste da Czarnikow (aditivo). */}
+      {cztProgress && (
+        <section style={{ maxWidth: 1080, margin: '0 auto', padding: '0 24px 28px' }}>
+          <PointsWidget clientId={clientId} />
+        </section>
+      )}
 
       <section style={{
         display: 'grid',

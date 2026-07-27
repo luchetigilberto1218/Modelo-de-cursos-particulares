@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useIdentity, useDoneMap } from './czarnikow-teste/progress';
+import PointsWidget from './czarnikow-teste/PointsWidget';
 
 const LEVEL_COLOR = {
   confidence: '#7FD4F5',
@@ -211,6 +212,17 @@ export default function TrackPage({ course, theme, clientId, levelId, trackId })
           </div>
         )}
       </section>
+
+      {/* Campanha Ago–Dez: só no ambiente de teste da Czarnikow (aditivo). */}
+      {trackProgress && (
+        <section style={{
+          maxWidth: 1080,
+          margin: '0 auto',
+          padding: mobile ? '0 16px 4px' : '0 40px 8px',
+        }}>
+          <PointsWidget clientId={clientId} compact />
+        </section>
+      )}
 
       {lessons.length === 0 ? (
         <div style={{

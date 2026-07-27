@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Exercise from '../Exercise';
 import AudioPlayer from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
-import { useIdentity, useLessonDone } from './progress';
+import { useIdentity, useLessonDone, useDoneMap } from './progress';
 
 /*
   Czarnikow (ambiente de teste) — renderizador de lição no estilo Baker Hughes.
@@ -26,6 +26,12 @@ const C = {
   grayLight: '#E4E9EF', offWhite: '#F9FAFB',
 };
 
+/** Fração de acertos (0..1) de um exercício — alimenta os pontos da campanha. */
+function accuracyOf(items, isRight) {
+  if (!items?.length) return 0;
+  return items.filter((_, i) => isRight(i)).length / items.length;
+}
+
 function normalize(s) {
   return (s || '').toString().trim().toLowerCase().replace(/[.,!?]/g, '').replace(/\s+/g, ' ');
 }
@@ -44,18 +50,31 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
 
   // Conclusão: o card "lição completa" só aparece quando os exercícios avaliáveis
   // foram respondidos (certo ou errado). Espelha o doneSet da Baker Hughes.
+  // Cada exercício guarda também o acerto da PRIMEIRA tentativa (0..1), que vira
+  // pontos na campanha Ago–Dez.
   const GRADEABLE = ['wordBank', 'verbFill', 'quickDrill', ...RACIONAL_TYPES.filter(t => t !== 'info')];
   const gradeableIdx = exercises.map((ex, i) => (GRADEABLE.includes(ex.type) ? i : null)).filter(i => i !== null);
   const [doneSet, setDoneSet] = useState({});
-  const mark = (i) => setDoneSet(prev => (prev[i] ? prev : { ...prev, [i]: true }));
-  const doneCount = gradeableIdx.filter(i => doneSet[i]).length;
+  const mark = (i, accuracy) => setDoneSet(prev => (
+    prev[i] ? prev : { ...prev, [i]: { acc: typeof accuracy === 'number' ? Math.min(1, Math.max(0, accuracy)) : 0 } }
+  ));
+  const answered = gradeableIdx.filter(i => doneSet[i]);
+  const doneCount = answered.length;
   const totalGradeable = gradeableIdx.length;
   const allDone = totalGradeable > 0 && doneCount >= totalGradeable;
+  const firstTryAccuracy = doneCount > 0
+    ? answered.reduce((sum, i) => sum + (doneSet[i].acc || 0), 0) / doneCount
+    : 0;
 
   useEffect(() => {
-    if (allDone && identity?.student && !persistedDone) markDone();
+    if (allDone && identity?.student && !persistedDone) markDone(firstTryAccuracy);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allDone, identity?.student, persistedDone]);
+
+  // Marco: a cada 3 lições concluídas, um card sóbrio de recapitulação.
+  const doneMap = useDoneMap(identity?.student);
+  const totalLessonsDone = Object.keys(doneMap).length;
+  const isMilestone = (allDone || persistedDone) && totalLessonsDone > 0 && totalLessonsDone % 3 === 0;
 
   const showCelebrate = allDone || persistedDone;
   const levelLabel = LEVEL_LABEL[l.level] || l.levelLabel || 'Essentials';
@@ -115,10 +134,10 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
             <PartTitle accent={accent} navy={navy}>{l.practiceLabel || 'Practice · pratique sozinho'}</PartTitle>
             {exercises.map((ex, i) => {
               if (RACIONAL_TYPES.includes(ex.type)) {
-                return <Exercise key={i} exercise={ex} levelId="starter" onResult={() => mark(i)} />;
+                return <Exercise key={i} exercise={ex} levelId="starter" onResult={(r) => mark(i, r?.accuracy)} />;
               }
-              if (ex.type === 'wordBank') return <WordBank key={i} ex={ex} c={c} onChecked={() => mark(i)} />;
-              if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill key={i} ex={ex} c={c} onChecked={() => mark(i)} />;
+              if (ex.type === 'wordBank') return <WordBank key={i} ex={ex} c={c} onChecked={(acc) => mark(i, acc)} />;
+              if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill key={i} ex={ex} c={c} onChecked={(acc) => mark(i, acc)} />;
               if (ex.type === 'readAloud') return <ReadAloud key={i} ex={ex} c={c} voiceType={voiceType} />;
               if (ex.type === 'makeItYourOwn') return <MakeItYourOwn key={i} ex={ex} c={c} voiceType={voiceType} />;
               return null;
@@ -161,6 +180,8 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
             <p style={{ fontSize: 14.5, color: 'rgba(255,255,255,0.72)', lineHeight: 1.5, margin: 0 }}>{l.celebrate?.pt || 'Lição concluída — sua trilha acendeu.'}</p>
           </div>
         )}
+        {isMilestone && <Milestone count={totalLessonsDone} c={c} clientId={clientId} />}
+
         {!showCelebrate && totalGradeable > 0 && (
           <div style={{ margin: '30px 0 8px', padding: '18px 22px', borderRadius: 14, background: '#fff', border: `1px dashed ${grayLight}`, color: gray, fontSize: 14, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
             <span style={{ fontWeight: 800, color: navy }}>{doneCount}/{totalGradeable}</span>
@@ -175,6 +196,50 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
           {nextNum ? <CztBtn href={`/${clientId}/lesson/${nextNum}`} c={c}>Próxima lição →</CztBtn> : <span />}
         </div>
       </div>
+    </div>
+  );
+}
+
+/* ── marco a cada 3 lições ──
+   Tom profissional, nada cartunesco: recapitula o progresso, dá uma micro-dica
+   de uso do inglês no trabalho e leva à campanha. */
+const MICRO_TIPS = [
+  { en: 'Say the sentence out loud before you write it — your emails start sounding natural.',
+    pt: 'Fale a frase em voz alta antes de escrever: seus e-mails passam a soar naturais.' },
+  { en: 'In meetings, prepare one sentence in advance. One is enough to break the silence.',
+    pt: 'Em reuniões, prepare uma frase antes. Uma já basta para quebrar o silêncio.' },
+  { en: 'Reuse the vocabulary of the lesson in a real message this week.',
+    pt: 'Use o vocabulário da lição numa mensagem real ainda esta semana.' },
+  { en: 'When you do not know a word, describe it. Fluency is not vocabulary size.',
+    pt: 'Quando faltar a palavra, descreva. Fluência não é tamanho de vocabulário.' },
+  { en: 'Short, regular study beats long sessions once in a while.',
+    pt: 'Estudo curto e regular vence sessões longas de vez em quando.' },
+];
+
+function Milestone({ count, c, clientId }) {
+  const tip = MICRO_TIPS[(Math.floor(count / 3) - 1) % MICRO_TIPS.length];
+  return (
+    <div style={{
+      margin: '18px 0 8px', padding: '24px 26px', borderRadius: 16,
+      background: '#fff', border: `1px solid ${c.grayLight}`, borderLeft: `4px solid ${c.navy}`,
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, flexWrap: 'wrap' }}>
+        <span style={{
+          fontSize: 10.5, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase',
+          padding: '4px 10px', borderRadius: 999, background: c.navy, color: '#fff',
+        }}>
+          Marco
+        </span>
+        <strong style={{ fontSize: 17, color: c.navy }}>{count} lições concluídas</strong>
+      </div>
+      <p style={{ fontSize: 14.5, lineHeight: 1.6, color: c.text, margin: '0 0 4px' }}>{tip.en}</p>
+      <p style={{ fontSize: 13.5, lineHeight: 1.6, color: c.gray, margin: '0 0 16px' }}>{tip.pt}</p>
+      <Link href={`/${clientId}/campanha`} style={{
+        display: 'inline-block', fontSize: 13.5, fontWeight: 700, color: c.navy,
+        textDecoration: 'none', border: `1px solid ${c.grayLight}`, borderRadius: 999, padding: '9px 18px',
+      }}>
+        Ver sua pontuação na campanha →
+      </Link>
     </div>
   );
 }
@@ -263,7 +328,7 @@ function WordBank({ ex, c, onChecked }) {
           );
         })}
       </div>
-      <CheckRow checked={checked} setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(); }} onReset={() => setAnswers({})} canCheck={allFilled} c={c} />
+      <CheckRow checked={checked} setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(accuracyOf(items, isRight)); }} onReset={() => setAnswers({})} canCheck={allFilled} c={c} />
       {checked && <ResultLine ok={items.every((_, i) => isRight(i))} c={c} explanation={ex.explanation} corrections={items.map((it, i) => !isRight(i) ? `${it.text.replace('___', `[${it.answer}]`)}` : null).filter(Boolean)} />}
     </ExShell>
   );
@@ -294,7 +359,7 @@ function VerbFill({ ex, c, onChecked }) {
           );
         })}
       </div>
-      <CheckRow checked={checked} setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(); }} onReset={() => setAnswers({})} canCheck={allFilled} c={c} />
+      <CheckRow checked={checked} setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(accuracyOf(items, isRight)); }} onReset={() => setAnswers({})} canCheck={allFilled} c={c} />
       {checked && <ResultLine ok={items.every((_, i) => isRight(i))} c={c} explanation={ex.explanation} corrections={items.map((it, i) => !isRight(i) ? `${it.prompt.replace('___', `[${it.answer}]`)}` : null).filter(Boolean)} />}
     </ExShell>
   );

@@ -72,6 +72,10 @@ function mergeRemoteInto(local, remote) {
     const checks = Array.from({ length: len }, (_, i) => !!l.checks?.[i] || !!r.checks?.[i]);
     const done = !!l.done || !!r.done;
     const merged = { ...l, checks, done };
+    // campanha: vale sempre o registro mais antigo (ver mergeLessons no store)
+    const dates = [l.doneAt, r.doneAt].filter(Boolean).sort();
+    if (dates.length) merged.doneAt = dates[0];
+    if (typeof merged.acc !== 'number' && typeof r.acc === 'number') merged.acc = r.acc;
     if (JSON.stringify(l) !== JSON.stringify(merged)) { local[num] = merged; changed = true; }
   }
   return changed;
@@ -146,9 +150,15 @@ export function useLessonDone(studentId, num) {
     return () => window.removeEventListener('czt-progress', h);
   }, [studentId, num]);
 
-  const markDone = useCallback(() => {
+  // `acc` = acerto médio na 1ª tentativa (0..1), usado pela campanha. Data e acerto
+  // só são gravados na PRIMEIRA conclusão — refazer a lição não reescreve nenhum dos dois.
+  const markDone = useCallback((acc) => {
     if (!studentId) return;
-    setLessonState(studentId, num, { done: true });
+    const cur = getLesson(studentId, num);
+    const state = { done: true };
+    if (!cur.doneAt) state.doneAt = new Date().toISOString();
+    if (typeof cur.acc !== 'number' && typeof acc === 'number') state.acc = Math.min(1, Math.max(0, acc));
+    setLessonState(studentId, num, state);
   }, [studentId, num]);
 
   const markUndone = useCallback(() => {
@@ -157,4 +167,34 @@ export function useLessonDone(studentId, num) {
   }, [studentId, num]);
 
   return { done, markDone, markUndone };
+}
+
+/* -------------------------------------------------------------------------
+ * Campanha Ago–Dez: pontuação + ranking, calculados no servidor (o ranking
+ * precisa ver todo mundo). Recarrega quando o progresso local muda.
+ * ----------------------------------------------------------------------- */
+export function useCampaign(enabled = true) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(enabled);
+
+  const load = useCallback(() => {
+    if (!enabled) return;
+    fetch('/api/czarnikow-teste/campaign', { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => { if (d) setData(d); })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, [enabled]);
+
+  useEffect(() => {
+    if (!enabled) return;
+    load();
+    // dá tempo do push chegar ao Blob antes de recalcular
+    let t;
+    const h = () => { clearTimeout(t); t = setTimeout(load, 1200); };
+    window.addEventListener('czt-progress', h);
+    return () => { clearTimeout(t); window.removeEventListener('czt-progress', h); };
+  }, [enabled, load]);
+
+  return { data, loading, reload: load };
 }
