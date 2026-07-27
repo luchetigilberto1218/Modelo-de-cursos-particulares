@@ -60,7 +60,7 @@ export default function PointsWidget({ clientId, compact = false }) {
             }} />
           </div>
           <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.6)', marginTop: 7 }}>
-            {s.nextTier ? `Faltam ${s.toNext} pts para ${s.nextTier.name}` : 'Tier máximo alcançado'}
+            {s.nextTier ? `Faltam ${s.toNext} pts para ${s.nextTier.name}` : 'Última etapa alcançada — carga entregue'}
           </div>
         </div>
 

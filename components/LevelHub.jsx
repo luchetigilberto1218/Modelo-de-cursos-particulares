@@ -174,9 +174,23 @@ export default function LevelHub({ course, theme, clientId }) {
           <p style={{ margin: '0 0 14px' }}>Olá, seja muito bem-vindo(a).</p>
           <p style={{ margin: '0 0 14px' }}>Este é o seu ambiente de estudos: o espaço onde você e seu professor acessam o conteúdo que será trabalhado antes e durante cada aula. Fique também à vontade para explorar os materiais sempre que quiser, no seu ritmo.</p>
           <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>1. Escolha o seu nível.</strong> Os materiais estão organizados em quatro níveis — <strong style={{ color: '#1d1d1f' }}>Confidence</strong>, <strong style={{ color: '#1d1d1f' }}>Essentials</strong>, <strong style={{ color: '#1d1d1f' }}>Rise</strong> e <strong style={{ color: '#1d1d1f' }}>Apex</strong>. Utilize a trilha correspondente ao seu nível.</p>
-          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>2. Siga a trilha do seu departamento.</strong> Cada trilha corresponde a uma área de atuação da Czarnikow — <strong>RH</strong>, <strong>Trade &amp; Finance</strong>, <strong>Supply Chain</strong>, <strong>Logistics</strong>, <strong>Accounting</strong>, <strong>Fiscal &amp; Taxes</strong> e <strong>Information Technology</strong>. Utilize a trilha do seu departamento: o vocabulário, os exemplos e os exercícios foram pensados para a sua rotina de trabalho.</p>
-          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>3. Faça as lições em ordem.</strong> Dentro de cada trilha, as lições foram desenhadas de forma progressiva — cada uma prepara o terreno para a seguinte. Avance lição por lição, na sequência, para consolidar o aprendizado.</p>
-          <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>Trilhas complementares.</strong> As trilhas <em>General Business</em> e <em>UK &amp; England</em> não correspondem a departamentos, mas são um convite para você enriquecer a sua experiência com contexto profissional e cultural. Explore quando quiser.</p>
+          {/* No ambiente de teste, General Business deixa de ser "complementar" e vira
+              trilha de estudo como as demais (há aluno para quem ela é a melhor porta de
+              entrada); só UK & England segue como complementar. O /czarnikow REAL mantém
+              o texto atual até o RH validar — este componente é compartilhado pelos dois. */}
+          {cztProgress ? (
+            <>
+              <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>2. Escolha a sua trilha.</strong> Cada trilha corresponde a uma área de atuação da Czarnikow — <strong>RH</strong>, <strong>Trade &amp; Finance</strong>, <strong>Supply Chain</strong>, <strong>Logistics</strong>, <strong>Accounting</strong>, <strong>Fiscal &amp; Taxes</strong> e <strong>Information Technology</strong> —, com vocabulário, exemplos e exercícios pensados para a sua rotina de trabalho. Há ainda a trilha <strong>General Business</strong>, com a linguagem comum a todas as áreas: reuniões, e-mails, negociação e relatórios. Ela é uma escolha tão válida quanto a do seu departamento — e costuma ser a melhor porta de entrada para quem transita entre áreas ou prefere firmar primeiro o vocabulário do dia a dia.</p>
+              <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>3. Faça as lições em ordem.</strong> Dentro de cada trilha, as lições foram desenhadas de forma progressiva — cada uma prepara o terreno para a seguinte. Avance lição por lição, na sequência, para consolidar o aprendizado.</p>
+              <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>Trilha complementar.</strong> A trilha <em>UK &amp; England</em> não corresponde a uma área de trabalho: é um convite para enriquecer a sua experiência com contexto cultural. Explore quando quiser.</p>
+            </>
+          ) : (
+            <>
+              <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>2. Siga a trilha do seu departamento.</strong> Cada trilha corresponde a uma área de atuação da Czarnikow — <strong>RH</strong>, <strong>Trade &amp; Finance</strong>, <strong>Supply Chain</strong>, <strong>Logistics</strong>, <strong>Accounting</strong>, <strong>Fiscal &amp; Taxes</strong> e <strong>Information Technology</strong>. Utilize a trilha do seu departamento: o vocabulário, os exemplos e os exercícios foram pensados para a sua rotina de trabalho.</p>
+              <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>3. Faça as lições em ordem.</strong> Dentro de cada trilha, as lições foram desenhadas de forma progressiva — cada uma prepara o terreno para a seguinte. Avance lição por lição, na sequência, para consolidar o aprendizado.</p>
+              <p style={{ margin: '0 0 14px' }}><strong style={{ color: '#1d1d1f' }}>Trilhas complementares.</strong> As trilhas <em>General Business</em> e <em>UK &amp; England</em> não correspondem a departamentos, mas são um convite para você enriquecer a sua experiência com contexto profissional e cultural. Explore quando quiser.</p>
+            </>
+          )}
           <p style={{ margin: 0 }}><strong style={{ color: '#1d1d1f' }}>Boa jornada.</strong> Estamos aqui para apoiar o seu desenvolvimento — aproveite cada aula.</p>
         </div>
       </section>

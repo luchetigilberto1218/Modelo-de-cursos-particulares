@@ -80,7 +80,7 @@ export default function CampaignPage({ clientId, theme }) {
             <>
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 22 }}>
                 <HeroStat label="Seus pontos" value={me.score.total} big />
-                <HeroStat label="Tier atual" value={me.score.tier.name} tint={TIER_COLOR[me.score.tier.id]} />
+                <HeroStat label="Etapa atual" value={me.score.tier.name} tint={TIER_COLOR[me.score.tier.id]} />
                 <HeroStat label="Posição" value={me.position ? `${me.position}º` : '—'} />
                 <HeroStat label="Lições concluídas" value={me.score.lessonsDone} />
               </div>
@@ -97,7 +97,7 @@ export default function CampaignPage({ clientId, theme }) {
         </section>
       )}
 
-      {/* ── O que são os níveis ───────────────────────────────────────────── */}
+      {/* ── O que são as etapas ───────────────────────────────────────────── */}
       <section style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 24px 0' }}>
         <TiersExplained current={me?.score?.tier?.id} />
       </section>
@@ -238,17 +238,17 @@ function TierTrack({ score }) {
   );
 }
 
-/* ── o que são os níveis ──────────────────────────────────────────────────── */
+/* ── o que são as etapas ──────────────────────────────────────────────────── */
 function TiersExplained({ current }) {
   return (
     <Card
-      title="Os quatro níveis"
-      subtitle="Eles seguem a viagem de uma carga — o vocabulário de casa."
+      title="As quatro etapas"
+      subtitle="Elas seguem a viagem de uma carga — o vocabulário de casa."
     >
       <p style={{ fontSize: 14.5, lineHeight: 1.65, color: C.text, margin: '0 0 20px', maxWidth: 720 }}>
-        O nível diz <strong>até onde você levou o seu inglês neste semestre</strong> — não o seu nível de
-        proficiência. Alguém que está começando o idioma pode chegar a <em>Delivered</em>, e alguém
-        avançado pode ficar em <em>Loading</em> se não aparecer. O que ele mede é percurso: aula
+        A etapa diz <strong>até onde você levou o seu inglês neste semestre</strong> — não o seu nível de
+        inglês. Quem está começando o idioma pode chegar a <em>Delivered</em>, e quem já é
+        avançado pode ficar em <em>Loading</em> se não aparecer. O que ela mede é percurso: aula
         frequentada e estudo feito.
       </p>
 
@@ -413,7 +413,7 @@ function Badge({ b }) {
       </div>
       <div style={{ fontSize: 12.5, color: C.gray }}>
         {b.count} lições
-        {b.next ? ` · faltam ${b.next - b.count} para o próximo nível` : ' · trilha completa'}
+        {b.next ? ` · faltam ${b.next - b.count} para o badge ${b.level === 'half' ? 'completo' : 'de bronze'}` : ' · trilha completa'}
       </div>
     </div>
   );
@@ -432,7 +432,7 @@ function Ranking({ rows, meId, hasDemo }) {
               <th style={{ ...th, textAlign: 'right' }}>Aula</th>
               <th style={{ ...th, textAlign: 'right' }}>Material</th>
               <th style={{ ...th, textAlign: 'right' }}>Total</th>
-              <th style={th}>Tier</th>
+              <th style={th}>Etapa</th>
             </tr>
           </thead>
           <tbody>
