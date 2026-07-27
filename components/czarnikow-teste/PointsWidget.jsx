@@ -14,7 +14,7 @@ const C = {
   navy: '#1B2736', navyLight: '#2B3B4F', accent: '#2AAAE2',
   gold: '#B08D57', grayLight: '#e4e9ef',
 };
-const TIER_COLOR = { foundation: '#8FA3B8', working: '#2AAAE2', business: '#7FC4EC', advisor: '#D8B678' };
+const TIER_COLOR = { loading: '#8FA3B8', underway: '#2AAAE2', oncourse: '#7FC4EC', delivered: '#D8B678' };
 
 export default function PointsWidget({ clientId, compact = false }) {
   const { data, loading } = useCampaign(true);

@@ -42,15 +42,21 @@ export const SCORING = {
   materialWeeklyCap: 9,   // TETO do material por semana
 };
 
-/* Faixas calibradas pela projeção do semestre:
-   quem cumpre a política da CZ (2 aulas/semana) + material constante fecha o
-   semestre por volta de 460 pts = Business Fluent. Advisor exige ir além —
-   aulas extras ou particulares. */
+/* Faixas calibradas pela projeção do semestre: quem cumpre a política da CZ
+   (2 aulas/semana) + material constante fecha o semestre por volta de 460 pts =
+   On Course. Delivered exige ir além — aulas extras ou particulares.
+
+   Os nomes seguem a viagem de uma carga, o vocabulário da própria Czarnikow.
+   Foi uma escolha deliberada: o ranking é ABERTO, então nenhum degrau pode
+   soar como julgamento de quem está embaixo — são etapas de um percurso, não
+   notas. E, ao contrário dos nomes anteriores (Foundation / Working Proficiency
+   / Business Fluent / Advisor), estes não se confundem com nível de inglês:
+   o tier mede ENGAJAMENTO na campanha, não proficiência. */
 export const TIERS = [
-  { id: 'foundation',  name: 'Foundation',           min: 0,   desc: 'Começando o programa.' },
-  { id: 'working',     name: 'Working Proficiency',  min: 180, desc: 'Ritmo constante de aula e estudo.' },
-  { id: 'business',    name: 'Business Fluent',      min: 360, desc: 'Cumpriu a política de 2 aulas por semana.' },
-  { id: 'advisor',     name: 'Advisor',              min: 540, desc: 'Foi além: aulas extras ou particulares.' },
+  { id: 'loading',   name: 'Loading',    min: 0,   desc: 'A carga está sendo montada.' },
+  { id: 'underway',  name: 'Underway',   min: 180, desc: 'Saiu do porto, seguindo com constância.' },
+  { id: 'oncourse',  name: 'On Course',  min: 360, desc: 'No rumo certo: 2 aulas por semana.' },
+  { id: 'delivered', name: 'Delivered',  min: 540, desc: 'Entregue — foi até o fim.' },
 ];
 
 /* Badges de competência por trilha. Bronze na metade, full na trilha inteira. */
@@ -256,7 +262,7 @@ export function badgesFor({ lessons = [], state = {} } = {}) {
 
 /**
  * Simulador: projeta o semestre a partir do ritmo que o participante pretende
- * manter. É o que responde "o que eu preciso fazer para chegar em Advisor?".
+ * manter. É o que responde "o que eu preciso fazer para chegar em Delivered?".
  */
 export function projectSemester({ weeks = SEMESTER.weeks, generalPerWeek = 2, privatePerWeek = 0, lessonsPerWeek = 2 } = {}) {
   const classPoints = weeks * (generalPerWeek * SCORING.classGeneral + privatePerWeek * SCORING.classPrivate);

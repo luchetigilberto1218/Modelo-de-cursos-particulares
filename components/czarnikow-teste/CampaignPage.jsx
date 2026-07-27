@@ -24,10 +24,10 @@ const C = {
 const FONT = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif";
 
 const TIER_COLOR = {
-  foundation: '#8FA3B8',
-  working: '#2AAAE2',
-  business: '#1B6BA8',
-  advisor: '#B08D57',
+  loading: '#8FA3B8',
+  underway: '#2AAAE2',
+  oncourse: '#1B6BA8',
+  delivered: '#B08D57',
 };
 
 export default function CampaignPage({ clientId, theme }) {
@@ -96,6 +96,11 @@ export default function CampaignPage({ clientId, theme }) {
           <SplitCard score={me.score} classesAreDemo={me.classesAreDemo} isDemoLogin={me.isDemoLogin} realLessonsDone={me.realLessonsDone} />
         </section>
       )}
+
+      {/* ── O que são os níveis ───────────────────────────────────────────── */}
+      <section style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 24px 0' }}>
+        <TiersExplained current={me?.score?.tier?.id} />
+      </section>
 
       {/* ── Simulador ─────────────────────────────────────────────────────── */}
       <section style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 24px 0' }}>
@@ -230,6 +235,53 @@ function TierTrack({ score }) {
         </p>
       )}
     </div>
+  );
+}
+
+/* ── o que são os níveis ──────────────────────────────────────────────────── */
+function TiersExplained({ current }) {
+  return (
+    <Card
+      title="Os quatro níveis"
+      subtitle="Eles seguem a viagem de uma carga — o vocabulário de casa."
+    >
+      <p style={{ fontSize: 14.5, lineHeight: 1.65, color: C.text, margin: '0 0 20px', maxWidth: 720 }}>
+        O nível diz <strong>até onde você levou o seu inglês neste semestre</strong> — não o seu nível de
+        proficiência. Alguém que está começando o idioma pode chegar a <em>Delivered</em>, e alguém
+        avançado pode ficar em <em>Loading</em> se não aparecer. O que ele mede é percurso: aula
+        frequentada e estudo feito.
+      </p>
+
+      <div style={{ display: 'grid', gap: 10 }}>
+        {TIERS.map((t) => {
+          const isCurrent = t.id === current;
+          const color = TIER_COLOR[t.id];
+          return (
+            <div key={t.id} style={{
+              display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap',
+              padding: '14px 16px', borderRadius: 12,
+              background: isCurrent ? C.accentLight : '#fbfbfd',
+              border: `1px solid ${isCurrent ? '#BBD6F2' : C.grayLight}`,
+            }}>
+              <span style={{ width: 10, height: 10, borderRadius: '50%', background: color, flexShrink: 0 }} />
+              <strong style={{ fontSize: 15.5, color, minWidth: 96 }}>{t.name}</strong>
+              <span style={{ fontSize: 13, color: C.gray, fontWeight: 600, minWidth: 78 }}>
+                {t.min}+ pts
+              </span>
+              <span style={{ flex: '1 1 240px', fontSize: 14, color: C.text, lineHeight: 1.5 }}>{t.desc}</span>
+              {isCurrent && (
+                <span style={{
+                  fontSize: 10.5, fontWeight: 700, letterSpacing: 0.5, textTransform: 'uppercase',
+                  padding: '3px 9px', borderRadius: 999, border: `1px solid ${C.accent}`, color: C.accent,
+                }}>
+                  você está aqui
+                </span>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </Card>
   );
 }
 
