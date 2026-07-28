@@ -31,14 +31,15 @@ function lessonMeta() {
 // Base de lições para o progresso dos participantes demo: o nível Essentials
 // inteiro, começando por HR (a trilha já convertida) e seguindo pelas demais —
 // é o percurso de quem estuda o semestre todo, e faz os badges se espalharem.
-function demoLessonNums(lessons) {
+function demoLessonNums(lessons, { excludeHr = false } = {}) {
   const essentials = lessons.filter((l) => l.level === 'essentials');
   const byTrack = new Map();
   for (const l of essentials) {
     if (!byTrack.has(l.track)) byTrack.set(l.track, []);
     byTrack.get(l.track).push(l);
   }
-  const order = ['hr', ...[...byTrack.keys()].filter((t) => t !== 'hr')];
+  const others = [...byTrack.keys()].filter((t) => t !== 'hr');
+  const order = excludeHr ? others : ['hr', ...others];
   return order.flatMap((t) => (byTrack.get(t) || [])
     .sort((a, b) => (a.trackOrder || a.num) - (b.trackOrder || b.num))
     .map((l) => l.num));
@@ -59,7 +60,9 @@ export async function GET() {
     const doc = await readDoc(session.id);
     const realLessons = doc?.lessons || {};
     // O histórico de demonstração entra por baixo: o progresso REAL sempre vence.
-    const backlog = demoBacklog(session.id, demoLessonNums(lessons)) || {};
+    // Ele usa só lições FORA de essentials/hr — assim a trilha que o visitante
+    // realmente percorre continua mostrando o progresso dele, sem número inflado.
+    const backlog = demoBacklog(session.id, demoLessonNums(lessons, { excludeHr: true })) || {};
     const isDemoLogin = Object.keys(backlog).length > 0;
     const state = { ...backlog, ...realLessons };
 
