@@ -81,9 +81,29 @@ function mergeRemoteInto(local, remote) {
   return changed;
 }
 
+/**
+ * Zera o progresso LOCAL deste aluno quando a URL pede (?reset=local).
+ * Existe para limpar a máquina de quem validou o material antes de entregar a
+ * conta a outra pessoa: o localStorage é a fonte da verdade do cliente e o merge
+ * é por união, então sem isso o progresso antigo volta para o servidor no
+ * primeiro acesso. Não destrói nada de verdade — logo em seguida o pull traz o
+ * que houver no servidor de volta.
+ */
+function resetLocalIfAsked(studentId) {
+  try {
+    if (!new URLSearchParams(window.location.search).has('reset')) return;
+    if (new URLSearchParams(window.location.search).get('reset') !== 'local') return;
+    const all = readAll();
+    if (!all[studentId]) return;
+    delete all[studentId];
+    writeAll(all);
+  } catch { /* ignore */ }
+}
+
 export async function pullRemote(studentId) {
   if (typeof window === 'undefined' || !studentId || pulledOnce.has(studentId)) return;
   pulledOnce.add(studentId);
+  resetLocalIfAsked(studentId);
   try {
     const res = await fetch(SYNC_API, { cache: 'no-store' });
     if (!res.ok) return;
