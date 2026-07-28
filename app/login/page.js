@@ -1,14 +1,32 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { Suspense, useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+
+// Destino pós-login pedido pela URL (?next=/algum/caminho). Só aceitamos caminho
+// relativo do próprio site — nunca "//host" ou URL absoluta, senão o link viraria
+// um redirecionador aberto para fora.
+function safeNext(raw) {
+  if (typeof raw !== 'string') return null;
+  if (!raw.startsWith('/') || raw.startsWith('//')) return null;
+  return raw;
+}
 
 export default function LoginPage() {
+  return (
+    <Suspense fallback={null}>
+      <LoginForm />
+    </Suspense>
+  );
+}
+
+function LoginForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -30,12 +48,15 @@ export default function LoginPage() {
         return;
       }
 
-      // Alunos/professores com um único cliente vão direto pro material dele;
-      // coordenador (acesso a tudo) segue para a raiz. Aditivo e seguro.
+      // Se a URL pediu um destino (?next=), ele vence — é o que faz um link
+      // direto para uma trilha sobreviver à tela de login. Sem ?next=, nada muda:
+      // alunos/professores com um único cliente vão direto pro material dele e
+      // coordenador (acesso a tudo) segue para a raiz.
       const clients = data.user?.clients;
-      const dest = data.user?.role !== 'coordinator' && clients?.length === 1
+      const fallback = data.user?.role !== 'coordinator' && clients?.length === 1
         ? `/${clients[0]}`
         : '/';
+      const dest = safeNext(searchParams.get('next')) || fallback;
       router.push(dest);
       router.refresh();
     } catch {
