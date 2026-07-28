@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getSession, getUsers } from '../../../../lib/auth';
 import { readDoc, listAll, isValidStudent } from '../../../../lib/czarnikow-teste-progress-store';
 import { getCourseLite } from '../../../../lib/courses';
-import { computeScore, badgesFor, SEMESTER } from '../../../../components/czarnikow-teste/campaign';
+import { computeScore, SEMESTER } from '../../../../components/czarnikow-teste/campaign';
 import { demoParticipants, demoBacklog, DEMO_CLASSES } from '../../../../data/czarnikow-teste-demo';
 
 /*
@@ -30,7 +30,7 @@ function lessonMeta() {
 
 // Base de lições para o progresso dos participantes demo: o nível Essentials
 // inteiro, começando por HR (a trilha já convertida) e seguindo pelas demais —
-// é o percurso de quem estuda o semestre todo, e faz os badges se espalharem.
+// é o percurso de quem estuda o semestre todo.
 function demoLessonNums(lessons, { excludeHr = false } = {}) {
   const essentials = lessons.filter((l) => l.level === 'essentials');
   const byTrack = new Map();
@@ -73,7 +73,6 @@ export async function GET() {
       student: session.id,
       name: doc?.name || nameOf(session.id),
       score: computeScore({ lessons, state, classes }),
-      badges: badgesFor({ lessons, state }),
       classesAreDemo,
       isDemoLogin,
       realLessonsDone: Object.values(realLessons).filter((l) => l?.done).length,

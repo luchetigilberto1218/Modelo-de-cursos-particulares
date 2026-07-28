@@ -59,21 +59,12 @@ export const TIERS = [
   { id: 'delivered', name: 'Delivered',  min: 540, desc: 'Entregue — foi até o fim.' },
 ];
 
-/* Badges de competência por trilha. Bronze na metade, full na trilha inteira. */
-export const TRACK_BADGES = {
-  'hr':                     'People Partner',
-  'general-business':       'Meeting Fluent',
-  'trade-finance':          'Trade Confident',
-  'information-technology': 'Tech Ready',
-  'fiscal-taxes':           'Compliance Aware',
-  'accounting':             'Numbers Fluent',
-  'logistics':              'Ops Fluent',
-  'supply-chain':           'Chain Fluent',
-  'uk-england':             'Culture Ready',
-};
-
-export const TRACK_BADGE_HALF = 10;   // lições para o badge bronze
-export const TRACK_BADGE_FULL = 20;   // lições para o badge completo
+/*
+  NÃO existe badge de competência por trilha (People Partner, Meeting Fluent e
+  companhia foram removidos em 28/07/2026). A única progressão do participante
+  são as quatro etapas acima — um segundo sistema de nomes só embaralhava a
+  leitura da tela, para o RH e para o colaborador.
+*/
 
 /* ── helpers de data ──────────────────────────────────────────────────────── */
 
@@ -233,31 +224,6 @@ export function tierInfo(points) {
       ? Math.round(((points - tier.min) / (next.min - tier.min)) * 100)
       : 100,
   };
-}
-
-/** Badges conquistados, a partir das lições concluídas por trilha. */
-export function badgesFor({ lessons = [], state = {} } = {}) {
-  const perTrack = new Map();
-  const trackOf = new Map(lessons.map((l) => [String(l.num), l.track]));
-  for (const num of Object.keys(state)) {
-    if (!state[num]?.done) continue;
-    const t = trackOf.get(String(num));
-    if (!t) continue;
-    perTrack.set(t, (perTrack.get(t) || 0) + 1);
-  }
-  const out = [];
-  for (const [track, name] of Object.entries(TRACK_BADGES)) {
-    const n = perTrack.get(track) || 0;
-    out.push({
-      track,
-      name,
-      count: n,
-      level: n >= TRACK_BADGE_FULL ? 'full' : n >= TRACK_BADGE_HALF ? 'half' : null,
-      next: n >= TRACK_BADGE_FULL ? null : (n >= TRACK_BADGE_HALF ? TRACK_BADGE_FULL : TRACK_BADGE_HALF),
-    });
-  }
-  out.sort((a, b) => b.count - a.count);
-  return out;
 }
 
 /**

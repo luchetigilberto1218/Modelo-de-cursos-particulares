@@ -3,17 +3,18 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useCampaign } from './progress';
-import {
-  SEMESTER, SCORING, TIERS,
-  TRACK_BADGE_HALF, TRACK_BADGE_FULL, projectSemester,
-} from './campaign';
+import { SEMESTER, SCORING, TIERS, projectSemester } from './campaign';
 
 /*
   Campanha Ago–Dez 2026 — página do participante (Czarnikow · ambiente de teste).
 
-  Mostra a pontuação real (calculada no servidor a partir do progresso), o tier,
-  os badges, o ranking aberto e um simulador de semestre. Só existe para o
-  cliente `czarnikow-teste`; nenhum outro curso é afetado.
+  Mostra a pontuação real (calculada no servidor a partir do progresso), a etapa,
+  o ranking aberto e um simulador de semestre. Só existe para o cliente
+  `czarnikow-teste`; nenhum outro curso é afetado.
+
+  A ÚNICA progressão do participante são as quatro etapas (Loading → Underway →
+  On Course → Delivered). Não há badge de competência por trilha: mais um sistema
+  de nomes só confundiria quem lê a tela.
 */
 
 const C = {
@@ -106,17 +107,6 @@ export default function CampaignPage({ clientId, theme }) {
       <section style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 24px 0' }}>
         <Simulator />
       </section>
-
-      {/* ── Badges ────────────────────────────────────────────────────────── */}
-      {me && (
-        <section style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 24px 0' }}>
-          <Card title="Badges de competência" subtitle={`Bronze com ${TRACK_BADGE_HALF} lições da trilha, completo com ${TRACK_BADGE_FULL}.`}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: 12 }}>
-              {me.badges.map((b) => <Badge key={b.track} b={b} />)}
-            </div>
-          </Card>
-        </section>
-      )}
 
       {/* ── Ranking ───────────────────────────────────────────────────────── */}
       <section style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 24px 0' }}>
@@ -393,29 +383,6 @@ function Slider({ label, value, min, max, onChange }) {
         <span>{min}</span><span>{max}</span>
       </div>
     </label>
-  );
-}
-
-/* ── badges ───────────────────────────────────────────────────────────────── */
-function Badge({ b }) {
-  const earned = !!b.level;
-  const full = b.level === 'full';
-  return (
-    <div style={{
-      padding: '14px 16px', borderRadius: 14,
-      background: earned ? (full ? '#FFF8EC' : C.accentLight) : '#fff',
-      border: `1px solid ${earned ? (full ? '#E3C48A' : '#BBD6F2') : C.grayLight}`,
-      opacity: earned ? 1 : 0.72,
-    }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-        <span style={{ fontSize: 16 }}>{full ? '🏅' : earned ? '🎖️' : '○'}</span>
-        <strong style={{ fontSize: 14.5, color: earned ? C.navy : C.gray }}>{b.name}</strong>
-      </div>
-      <div style={{ fontSize: 12.5, color: C.gray }}>
-        {b.count} lições
-        {b.next ? ` · faltam ${b.next - b.count} para o badge ${b.level === 'half' ? 'completo' : 'de bronze'}` : ' · trilha completa'}
-      </div>
-    </div>
   );
 }
 
