@@ -1,0 +1,675 @@
+{
+  "topic": "Negotiation",
+  "lessons": [
+    {
+      "title": "Preparing to Negotiate",
+      "focus": "Posições, interesses e o seu limite antes da conversa",
+      "character": "uk-female",
+      "objective": "Preparar uma negociação em inglês: separar posição de interesse, definir o seu limite e as perguntas que você vai fazer.",
+      "intro": [
+        "Most negotiations are decided before anyone speaks. What decides them is preparation.",
+        "Three English words do the heavy lifting: <strong>position</strong> (what they ask for), <strong>interest</strong> (why they want it), and <strong>walk-away</strong> (the point where no deal is better than this deal).",
+        "If you know all three — theirs and yours — the conversation is almost easy."
+      ],
+      "introPt": [
+        "A maioria das negociações é decidida antes de alguém falar. Quem decide é a preparação.",
+        "Três palavras em inglês fazem o trabalho pesado: <strong>position</strong> (o que pedem), <strong>interest</strong> (por que querem) e <strong>walk-away</strong> (o ponto em que não fechar é melhor que fechar).",
+        "Se você conhece as três — as suas e as deles — a conversa fica quase fácil."
+      ],
+      "vocab": [
+        { "en": "position", "pt": "posição declarada", "example": "Their position is a 15% discount." },
+        { "en": "interest", "pt": "interesse real por trás da posição", "example": "Their interest is predictable cost, not the discount itself." },
+        { "en": "walk-away point", "pt": "limite, ponto de saída", "example": "Our walk-away point is 8% on a one-year term." },
+        { "en": "leverage", "pt": "poder de barganha", "example": "Our leverage is the lead time on the panel." },
+        { "en": "concession", "pt": "concessão", "example": "Every concession should buy something." },
+        { "en": "to trade", "pt": "trocar (uma coisa por outra)", "example": "We can trade price for term." },
+        { "en": "common ground", "pt": "terreno comum", "example": "Let's start with the common ground." },
+        { "en": "to anchor", "pt": "ancorar (a primeira referência)", "example": "They anchored high with the 15% ask." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Posição ou interesse?",
+          "instruction": "Posição é o que a pessoa pede. Interesse é por que ela pede. Classifique.",
+          "categories": [
+            { "id": "position", "name": "Posição", "short": "Posição" },
+            { "id": "interest", "name": "Interesse", "short": "Interesse" }
+          ],
+          "items": [
+            { "text": "\"We need a 15% discount.\"", "cat": "position" },
+            { "text": "\"Our own budget was cut by 10% this year.\"", "cat": "interest" },
+            { "text": "\"Delivery has to be in August.\"", "cat": "position" },
+            { "text": "\"Our drilling campaign starts in September and can't move.\"", "cat": "interest" },
+            { "text": "\"We want a three-month warranty extension.\"", "cat": "position" },
+            { "text": "\"Our maintenance team is stretched and we're worried about downtime.\"", "cat": "interest" }
+          ],
+          "explanation": "Posições colidem; interesses quase sempre têm mais de uma solução. É por isso que se pergunta \"why\"."
+        },
+        {
+          "type": "readingTask",
+          "title": "Prepare a negociação",
+          "badge": "Leia e responda",
+          "heading": "Briefing · renewal negotiation",
+          "instruction": "Leia o briefing e responda.",
+          "passage": [
+            "The customer's stated position is a 15% price reduction on renewal. Informally, their procurement lead has mentioned that their own budget was cut and that the finance director wants predictable annual costs.",
+            "Our current margin allows up to 8% on a one-year term. On a three-year term, with annual indexation, we could go to 10% and still improve the total value of the account.",
+            "Our leverage: we hold the maintenance history and the spare parts inventory. Switching supplier would cost them roughly four months of transition."
+          ],
+          "questions": [
+            {
+              "prompt": "What is their real interest?",
+              "options": [
+                { "text": "The 15% number itself." },
+                { "text": "Predictable costs within a smaller budget.", "correct": true },
+                { "text": "Changing supplier." }
+              ],
+              "why": "O desconto é a posição. Previsibilidade dentro de um orçamento menor é o interesse."
+            },
+            {
+              "prompt": "What's the best trade available?",
+              "options": [
+                { "text": "10% on a three-year term with indexation.", "correct": true },
+                { "text": "15% on a one-year term." },
+                { "text": "No discount at all." }
+              ],
+              "why": "Dá mais desconto e ganha prazo e previsibilidade — atende o interesse dos dois lados."
+            },
+            {
+              "prompt": "What is our leverage?",
+              "options": [
+                { "text": "The four-month cost of switching supplier.", "correct": true },
+                { "text": "The 8% margin limit." },
+                { "text": "Their budget cut." }
+              ],
+              "why": "Leverage é sempre o custo que o outro lado tem de não fechar com você."
+            }
+          ],
+          "explanation": "Interesse + trade + leverage. Com esses três na mão, você entra pronta."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A pergunta que revela o interesse",
+          "badge": "Escolha certa",
+          "instruction": "Qual pergunta abre a informação de que você precisa?",
+          "items": [
+            {
+              "prompt": "Eles pedem 15% de desconto.",
+              "options": [
+                { "text": "Help me understand what's driving the 15% — is it a budget number or a benchmark?", "correct": true },
+                { "text": "Why do you always ask for discounts?" },
+                { "text": "Is 15% your final number?" }
+              ],
+              "why": "A pergunta aberta separa \"orçamento apertado\" de \"o concorrente é mais barato\" — duas negociações completamente diferentes."
+            },
+            {
+              "prompt": "Eles insistem na data de agosto.",
+              "options": [
+                { "text": "August is impossible." },
+                { "text": "What happens on your side if it lands in early September instead?", "correct": true },
+                { "text": "Can you move to September?" }
+              ],
+              "why": "Descobrir a consequência real revela se a data é dura ou negociável."
+            },
+            {
+              "prompt": "Eles mencionam outro fornecedor.",
+              "options": [
+                { "text": "Are they cheaper on identical scope, or on a reduced one? I'd genuinely like to see the comparison.", "correct": true },
+                { "text": "They can't do what we do." },
+                { "text": "Then go with them." }
+              ],
+              "why": "Traz a conversa para escopo, onde você tem argumento, sem desmerecer ninguém."
+            }
+          ],
+          "explanation": "Toda pergunta boa de negociação começa com \"help me understand\" ou \"what happens if\"."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases da preparação",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Perguntar o que está por trás do pedido.", "answer": "Help me understand what is driving the fifteen per cent", "extra": ["to drive", "for"] },
+            { "hint": "Condicionar toda concessão.", "answer": "We could look at ten per cent on a three year term", "extra": ["looking", "in"] },
+            { "hint": "Nomear o terreno comum.", "answer": "We both want predictable costs over the next three years", "extra": ["wanting", "at"] }
+          ],
+          "explanation": "Perguntar, condicionar, unir. As três frases que abrem qualquer negociação."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que preparar antes da call",
+          "instruction": "Marque tudo o que faz parte de uma boa preparação.",
+          "prompt": "You have a renewal negotiation on Thursday.",
+          "options": [
+            { "text": "Your walk-away point, written down.", "correct": true },
+            { "text": "What you can trade and what it's worth to you.", "correct": true },
+            { "text": "The two or three questions that reveal their interest.", "correct": true },
+            { "text": "A list of everything wrong with the competitor.", "correct": false },
+            { "text": "The cost to them of not doing the deal.", "correct": true },
+            { "text": "A plan to say yes to whatever keeps the customer happy.", "correct": false }
+          ],
+          "explanation": "Limite, moedas de troca, perguntas e leverage. Quatro itens numa página."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can tell a position from an interest.", "pt": "Distingo posição de interesse." },
+            { "en": "I know my walk-away point before the conversation starts.", "pt": "Sei o meu limite antes da conversa começar." },
+            { "en": "I can ask \"help me understand what's driving this\".", "pt": "Sei perguntar \"help me understand what's driving this\"." },
+            { "en": "I can name what I have to trade.", "pt": "Sei nomear o que tenho para trocar." }
+          ],
+          "doneMessage": "preparação feita. Agora, a mesa.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que a preparação compra",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"Anchoring\" is why the first number matters so much — everything after it is measured against it.", "pt": "\"Anchoring\" é por que o primeiro número importa tanto — tudo depois é medido em relação a ele." },
+          { "en": "\"Help me understand\" is the most disarming phrase in English negotiation. It sounds curious, not defensive.", "pt": "\"Help me understand\" é a frase mais desarmante da negociação em inglês. Soa curiosa, não defensiva." },
+          { "en": "A concession given for free teaches the other side to ask again.", "pt": "Concessão dada de graça ensina o outro lado a pedir de novo." },
+          { "en": "Your leverage is never what you want — it's what it costs them to walk away.", "pt": "Seu poder de barganha nunca é o que você quer — é o que custa ao outro lado sair da mesa." }
+        ]
+      },
+      "celebrate": {
+        "en": "You now walk into a negotiation knowing more than the other side expects.",
+        "pt": "Agora você entra numa negociação sabendo mais do que o outro lado espera."
+      }
+    },
+    {
+      "title": "Making and Responding to Offers",
+      "focus": "Propor, contrapor e condicionar",
+      "character": "us-male",
+      "objective": "Fazer e responder a propostas em inglês usando a estrutura condicional que protege o seu valor.",
+      "intro": [
+        "There is one grammatical structure at the centre of every negotiation in English: <strong>if… then…</strong>",
+        "\"If you can move to three years, then I can look at ten per cent.\" Nothing is given away; everything is exchanged.",
+        "Master the conditional and you never again make a concession for free."
+      ],
+      "introPt": [
+        "Existe uma estrutura gramatical no centro de toda negociação em inglês: <strong>if… then…</strong>",
+        "\"If you can move to three years, then I can look at ten per cent.\" Nada é dado; tudo é trocado.",
+        "Domine o condicional e você nunca mais faz uma concessão de graça."
+      ],
+      "vocab": [
+        { "en": "to put an offer on the table", "pt": "colocar uma proposta na mesa", "example": "Let me put an offer on the table." },
+        { "en": "counter-offer", "pt": "contraproposta", "example": "Their counter-offer was 12%." },
+        { "en": "in principle", "pt": "em princípio", "example": "We agree in principle, subject to legal review." },
+        { "en": "subject to", "pt": "condicionado a", "example": "This is subject to board approval." },
+        { "en": "package", "pt": "pacote (proposta completa)", "example": "Let's look at the package, not just the price." },
+        { "en": "to be within range", "pt": "estar dentro da faixa", "example": "That's within range for us." },
+        { "en": "ballpark", "pt": "ordem de grandeza", "example": "Can you give me a ballpark figure?" },
+        { "en": "sticking point", "pt": "ponto de impasse", "example": "The only sticking point is the liability cap." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Concessão livre ou condicionada?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que protege o seu valor.",
+          "items": [
+            {
+              "prompt": "Você pode chegar a 10%.",
+              "a": "Ok, we can do ten per cent.",
+              "b": "If you can commit to three years, I can look at ten per cent.",
+              "correct": "b",
+              "why": "Mesma concessão, mas comprada. A primeira versão ensina o cliente a pedir mais."
+            },
+            {
+              "prompt": "Você aceita antecipar uma unidade.",
+              "a": "If we prioritise the first unit for August, could you release the down payment this month?",
+              "b": "We'll prioritise the first unit for you.",
+              "correct": "a",
+              "why": "Toda antecipação custa alguma coisa — cobre em fluxo de caixa, prazo ou escopo."
+            },
+            {
+              "prompt": "Você concorda com o pacote em geral.",
+              "a": "We agree, let's sign.",
+              "b": "We're agreed in principle, subject to legal review of the liability cap.",
+              "correct": "b",
+              "why": "\"In principle, subject to…\" mantém o acordo vivo sem fechar o que ainda não foi analisado."
+            }
+          ],
+          "explanation": "Nunca dê. Sempre troque. É essa a diferença entre desconto e negociação."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a oferta condicionada",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Trocar prazo por preço.", "answer": "If you can commit to three years I can look at ten per cent", "extra": ["committing", "will look"] },
+            { "hint": "Acordo condicionado a revisão.", "answer": "We are agreed in principle subject to legal review", "extra": ["agreeing", "under"] },
+            { "hint": "Trocar antecipação por caixa.", "answer": "If we prioritise the first unit could you release the down payment", "extra": ["prioritising", "would release"] }
+          ],
+          "explanation": "If + they give, then + you give. Sempre nessa ordem — quem oferece primeiro perde a moeda."
+        },
+        {
+          "type": "flowChoice",
+          "title": "A mesa de negociação",
+          "badge": "Conversa",
+          "situation": "Renovação. Eles ancoraram em 15%. Seu limite é 8% em um ano, 10% em três anos.",
+          "turns": [
+            {
+              "who": "Procurement",
+              "them": "So — 15%. That's what we need to make this work.",
+              "options": [
+                { "text": "15% isn't available. 8% is my limit.", "why": "Você revelou o seu limite no primeiro turno e não comprou nada com isso." },
+                { "text": "Help me understand what's driving the 15% — is it your budget, or a benchmark from another supplier?", "correct": true, "why": "Compra informação antes de gastar qualquer concessão." },
+                { "text": "Let me check with my director and come back to you.", "why": "Sai da mesa no momento em que a informação estava disponível." }
+              ]
+            },
+            {
+              "who": "Procurement",
+              "them": "Honestly? Our budget was cut. The finance director wants costs he can predict.",
+              "options": [
+                { "text": "Then predictability is what we should design for. If you can commit to three years with annual indexation, I can look at ten per cent from year one.", "correct": true, "why": "Atende o interesse real, e cobra prazo pela concessão." },
+                { "text": "Ok, so 15% is really about the budget. I'll see what I can do.", "why": "Recolheu a informação e não usou. A concessão vai sair de graça." },
+                { "text": "Everyone's budget was cut this year.", "why": "Verdadeiro, inútil e levemente hostil." }
+              ]
+            },
+            {
+              "who": "Procurement",
+              "them": "Three years is a long commitment. What if we did two?",
+              "options": [
+                { "text": "Two years works — same ten per cent.", "why": "Perdeu um ano inteiro sem cobrar nada. A concessão devia encolher junto." },
+                { "text": "Two years I could do at eight per cent. Ten is priced on three. Which matters more to you — the rate or the flexibility?", "correct": true, "why": "Mantém a proporção e devolve a decisão. Impecável." },
+                { "text": "It has to be three years." }
+              ]
+            },
+            {
+              "who": "Procurement",
+              "them": "Let's say three years at ten. The only sticking point left is the liability cap.",
+              "options": [
+                { "text": "We're agreed in principle then, subject to legal review of the cap. I'll send the summary today so we're both working from the same page.", "correct": true, "why": "Fecha o que já está fechado, isola o ponto aberto e registra por escrito no mesmo dia." },
+                { "text": "Great, I'll consider it a deal.", "why": "Chamar de fechado o que tem ponto aberto é como se perdem acordos." },
+                { "text": "We can discuss the cap another time.", "why": "Deixar o sticking point sem dono é deixá-lo crescer." }
+              ]
+            }
+          ],
+          "explanation": "Perguntar → desenhar para o interesse → manter a proporção → registrar. Quatro turnos, um acordo."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o resumo do acordo",
+          "badge": "Complete o texto",
+          "instruction": "Escolha o termo certo em cada lacuna.",
+          "text": "Following our call, we are agreed ___ principle on the following ___ : a three-year term with annual indexation, at a ten per cent reduction from year one. This is ___ to legal review of the liability cap, which remains the only open ___ . I'll circulate the summary today so we're both working from the same ___ .",
+          "gaps": [
+            { "options": ["in", "on", "at"], "answer": "in", "why": "\"Agreed in principle\" — expressão fixa." },
+            { "options": ["package", "packet", "parcel"], "answer": "package", "why": "Package é a proposta completa, não só o preço." },
+            { "options": ["subject", "conditioned", "attached"], "answer": "subject", "why": "\"Subject to\" — condicionado a." },
+            { "options": ["point", "topic", "issue of sticking"], "answer": "point", "why": "Sticking point — o ponto que ainda trava." },
+            { "options": ["page", "sheet", "paper"], "answer": "page", "why": "\"On the same page\" — mesma compreensão." }
+          ],
+          "explanation": "Esse parágrafo é o e-mail que se manda no mesmo dia. Sem ele, o acordo evapora."
+        },
+        {
+          "type": "listenChoose",
+          "title": "Ouça e avalie a oferta",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque no áudio e escolha a leitura correta.",
+          "items": [
+            {
+              "audio": "That's within range for us, but I'd want to see the whole package before I commit to anything.",
+              "options": [
+                { "text": "O número serve, mas ela não fecha só com base nele.", "correct": true },
+                { "text": "O número está fora do aceitável." },
+                { "text": "Ela já fechou." }
+              ],
+              "why": "\"Within range\" é sinal verde para o número; \"the whole package\" é o freio."
+            },
+            {
+              "audio": "Give me a ballpark and I'll tell you straight away whether it's worth continuing.",
+              "options": [
+                { "text": "Ele quer uma ordem de grandeza para decidir se vale seguir.", "correct": true },
+                { "text": "Ele quer a proposta final detalhada." },
+                { "text": "Ele está recusando a conversa." }
+              ],
+              "why": "\"Ballpark\" é a estimativa aproximada — pedida justamente para não perder tempo."
+            }
+          ],
+          "explanation": "\"Within range\", \"ballpark\" e \"the whole package\" são os três termômetros de uma negociação."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I never make a concession without asking for something.", "pt": "Nunca faço concessão sem pedir algo em troca." },
+            { "en": "I can use \"if… then…\" naturally in a negotiation.", "pt": "Uso \"if… then…\" com naturalidade numa negociação." },
+            { "en": "I can say \"agreed in principle, subject to…\".", "pt": "Sei dizer \"agreed in principle, subject to…\"." },
+            { "en": "I send the written summary the same day.", "pt": "Mando o resumo por escrito no mesmo dia." }
+          ],
+          "doneMessage": "ofertas dominadas. Agora, a arte de dizer não sem fechar a porta.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A gramática que protege o seu preço",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"I can look at ten per cent\" is not the same as \"I can do ten per cent\". The first buys you room.", "pt": "\"I can look at ten per cent\" não é o mesmo que \"I can do ten per cent\". A primeira preserva espaço." },
+          { "en": "Put their condition first: \"If YOU can commit…, then I can…\". The order signals who moves first.", "pt": "Ponha a condição deles primeiro: \"If YOU can commit…, then I can…\". A ordem sinaliza quem se move primeiro." },
+          { "en": "\"Subject to\" is how professionals agree without agreeing to everything.", "pt": "\"Subject to\" é como profissionais concordam sem concordar com tudo." },
+          { "en": "\"Ballpark\" comes from baseball — it means roughly inside the stadium, not the exact seat.", "pt": "\"Ballpark\" vem do beisebol — significa aproximadamente dentro do estádio, não a poltrona exata." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now trade instead of give — in English, in real time.",
+        "pt": "Agora você troca em vez de dar — em inglês e em tempo real."
+      }
+    },
+    {
+      "title": "Pushing Back Diplomatically",
+      "focus": "Discordar, resistir à pressão e manter a posição",
+      "character": "us-female",
+      "objective": "Discordar com firmeza em inglês, sem hostilidade e sem ceder por desconforto.",
+      "intro": [
+        "The hardest moment in a negotiation isn't the offer. It's the silence after someone pushes hard and looks at you.",
+        "English gives you a whole toolkit for that moment: soft openers, firm middles, and the sentence that buys you time without losing ground.",
+        "Discomfort is not a reason to concede."
+      ],
+      "introPt": [
+        "O momento mais difícil de uma negociação não é a proposta. É o silêncio depois que alguém pressiona forte e olha para você.",
+        "O inglês oferece um kit inteiro para esse momento: aberturas suaves, meios firmes e a frase que ganha tempo sem perder terreno.",
+        "Desconforto não é motivo para ceder."
+      ],
+      "vocab": [
+        { "en": "I hear you, but…", "pt": "eu entendo, mas…", "example": "I hear you, but that doesn't work for us." },
+        { "en": "to hold firm", "pt": "manter a posição", "example": "We held firm on the liability cap." },
+        { "en": "that doesn't work for us", "pt": "isso não funciona para nós", "example": "As it stands, that doesn't work for us." },
+        { "en": "let me come back to you", "pt": "deixe-me retornar", "example": "Let me come back to you tomorrow." },
+        { "en": "with respect", "pt": "com todo o respeito", "example": "With respect, that's not the comparison." },
+        { "en": "I'd need to understand…", "pt": "eu precisaria entender…", "example": "I'd need to understand what changed." },
+        { "en": "where I struggle is…", "pt": "onde me travo é…", "example": "Where I struggle is the timing." },
+        { "en": "to park a point", "pt": "deixar um ponto de lado", "example": "Let's park the cap and come back to it." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Do mais suave ao mais firme",
+          "badge": "Coloque em escala",
+          "scale": ["mais suave", "mais firme"],
+          "instruction": "Coloque as formas de discordar em ordem crescente de firmeza.",
+          "items": [
+            "I see it slightly differently.",
+            "Where I struggle is the timing.",
+            "I hear you, but that doesn't work for us.",
+            "As it stands, that's not something we can accept.",
+            "That's a deal-breaker for us."
+          ],
+          "explanation": "Comece suave. Quem abre no topo da escada não tem degrau nenhum para subir."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Firmeza ou hostilidade?",
+          "badge": "A ou B",
+          "instruction": "As duas discordam. Escolha a que mantém a relação.",
+          "items": [
+            {
+              "prompt": "Eles comparam vocês com um concorrente mais barato.",
+              "a": "With respect, I don't think that's the same scope. Can we put the two side by side?",
+              "b": "That comparison is completely unfair.",
+              "correct": "a",
+              "why": "\"With respect\" + pedido de comparação factual. Discorda sem acusar."
+            },
+            {
+              "prompt": "Pressionam por uma resposta imediata.",
+              "a": "Ok, fine, let's do it.",
+              "b": "I'd rather give you an answer I can hold. Let me come back to you tomorrow morning.",
+              "correct": "b",
+              "why": "Ganhar tempo é uma posição legítima — e soa mais confiável que um sim apressado."
+            },
+            {
+              "prompt": "Insistem num ponto que você já recusou.",
+              "a": "I've already said no.",
+              "b": "I hear you, and I understand why it matters. On that point I have to hold firm — but let's look at what else I can move.",
+              "correct": "b",
+              "why": "Firme no ponto, aberto no resto. É assim que se recusa sem travar a negociação."
+            }
+          ],
+          "explanation": "Firmeza é sobre o conteúdo. A forma continua sendo generosa."
+        },
+        {
+          "type": "readAloud",
+          "title": "Diga em voz alta: a recusa firme",
+          "instruction": "Ouça, repita e grave. Firmeza em inglês está no ritmo e na pausa, não no volume.",
+          "sentences": [
+            "I hear you, and I understand why it matters.",
+            "On that point I have to hold firm.",
+            "With respect, that's not the same comparison.",
+            "I'd rather give you an answer I can hold — let me come back to you tomorrow."
+          ]
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Uma palavra errada por frase.",
+          "items": [
+            { "sentence": "I am agree with the scope but not with the price.", "wrong": "am", "fix": "(nada: \"I agree\")", "why": "Agree é verbo pleno: \"I agree\", nunca \"I am agree\"." },
+            { "sentence": "With all respect, that is not the same comparison.", "wrong": "all", "fix": "(nada: \"With respect\")", "why": "A forma consagrada é \"With respect\" ou \"With all due respect\"." },
+            { "sentence": "Let me to come back to you tomorrow morning.", "wrong": "to", "fix": "(nada)", "why": "Depois de \"let me\" não se usa \"to\": let me come back." },
+            { "sentence": "We need to hold firm in the liability cap.", "wrong": "in", "fix": "on", "why": "To hold firm ON something." }
+          ],
+          "explanation": "\"I am agree\" é o erro mais frequente de brasileiros em negociação — e o mais fácil de eliminar."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Sob pressão",
+          "badge": "Conversa",
+          "situation": "O cliente pressiona por uma resposta imediata sobre o teto de responsabilidade — que você não pode conceder.",
+          "turns": [
+            {
+              "who": "Customer",
+              "them": "Look, everyone else in the market accepts unlimited liability. Why can't you?",
+              "options": [
+                { "text": "That's not true.", "why": "Confronto frontal sobre um fato que você não pode provar na hora." },
+                { "text": "With respect, that's not what we see in this market. Can you share which contracts you're comparing? I'd genuinely like to look at them.", "correct": true, "why": "Discorda, pede evidência e mostra abertura. Desarma sem ceder." },
+                { "text": "Maybe we could review our position.", "why": "Cedeu terreno sem receber nada — só porque a pergunta foi feita em voz alta." }
+              ]
+            },
+            {
+              "who": "Customer",
+              "them": "I need an answer today. My board meets tomorrow morning.",
+              "options": [
+                { "text": "Then let's say yes for now and adjust later.", "why": "\"Sim agora, ajusta depois\" em contrato é como se perdem milhões." },
+                { "text": "I understand the timing. On the cap I have to hold firm — that's a governance limit, not a preference. What I can do today is confirm everything else in writing so your board has a complete picture.", "correct": true, "why": "Nomeia o limite como institucional, não pessoal, e entrega algo útil no prazo dele." },
+                { "text": "I can't help with that timeline.", "why": "Recusa sem oferecer nada — desperdiça a chance de ajudar no que dá." }
+              ]
+            },
+            {
+              "who": "Customer",
+              "them": "So you're telling me this is non-negotiable.",
+              "options": [
+                { "text": "The cap is. The rest isn't — and there's quite a lot in the rest. Shall we park the cap and go through the other three points?", "correct": true, "why": "Separa o que é rígido do que é flexível e move a conversa para onde há acordo." },
+                { "text": "Yes. Take it or leave it.", "why": "Ultimato fecha portas que você vai precisar amanhã." },
+                { "text": "Everything is negotiable if you push enough.", "why": "Acabou de convidar o cliente a pressionar mais." }
+              ]
+            }
+          ],
+          "explanation": "Limite institucional + entrega alternativa + separar o rígido do flexível. É o kit completo."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can disagree without becoming aggressive.", "pt": "Discordo sem ficar agressiva." },
+            { "en": "I can buy time instead of conceding under pressure.", "pt": "Ganho tempo em vez de ceder sob pressão." },
+            { "en": "I can say \"I have to hold firm on this point\".", "pt": "Sei dizer \"I have to hold firm on this point\"." },
+            { "en": "I never say \"I am agree\".", "pt": "Nunca digo \"I am agree\"." }
+          ],
+          "doneMessage": "pressão resolvida. Falta fechar.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Discordar em inglês",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"With all due respect\" in British English is a warning: strong disagreement is coming.", "pt": "\"With all due respect\" no inglês britânico é um aviso: vem discordância forte." },
+          { "en": "Framing a limit as governance (\"that's a governance limit, not a preference\") takes it off the personal level.", "pt": "Enquadrar um limite como governança (\"não é preferência minha\") tira a discussão do plano pessoal." },
+          { "en": "\"Let me come back to you tomorrow\" is a complete answer — silence under pressure costs more than a delay.", "pt": "\"Let me come back to you tomorrow\" é uma resposta completa — ceder sob pressão custa mais que adiar." },
+          { "en": "\"Let's park it\" moves a blocked point aside without killing it. Everyone in a meeting understands it instantly.", "pt": "\"Let's park it\" tira um ponto travado do caminho sem matá-lo. Todo mundo numa reunião entende na hora." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now hold your ground in English — calmly, and without damage.",
+        "pt": "Agora você segura a sua posição em inglês — com calma e sem estrago."
+      }
+    },
+    {
+      "title": "Closing the Deal",
+      "focus": "Fechar, registrar e confirmar o combinado",
+      "character": "uk-female",
+      "objective": "Reconhecer o momento de fechar, confirmar o acordo em inglês e registrá-lo de forma que ninguém lembre diferente.",
+      "intro": [
+        "Deals are lost at the end more often than in the middle — because nobody said clearly: <em>are we agreed?</em>",
+        "Closing in English has three moves: <strong>summarise</strong>, <strong>confirm</strong>, <strong>write it down</strong>.",
+        "The last one is not bureaucracy. It's the difference between an agreement and a memory."
+      ],
+      "introPt": [
+        "Acordos se perdem mais no fim do que no meio — porque ninguém disse com clareza: <em>estamos de acordo?</em>",
+        "Fechar em inglês tem três movimentos: <strong>resumir</strong>, <strong>confirmar</strong>, <strong>registrar</strong>.",
+        "O último não é burocracia. É a diferença entre um acordo e uma lembrança."
+      ],
+      "vocab": [
+        { "en": "so where does that leave us?", "pt": "então, onde ficamos?", "example": "So where does that leave us on the term?" },
+        { "en": "are we agreed?", "pt": "estamos de acordo?", "example": "Are we agreed on ten per cent over three years?" },
+        { "en": "to summarise", "pt": "resumir", "example": "Let me summarise what we've agreed." },
+        { "en": "next steps", "pt": "próximos passos", "example": "Next steps: I send the draft by Friday." },
+        { "en": "to formalise", "pt": "formalizar", "example": "Legal will formalise it next week." },
+        { "en": "on both sides", "pt": "dos dois lados", "example": "Action points on both sides." },
+        { "en": "to have a deal", "pt": "ter um acordo", "example": "I think we have a deal." },
+        { "en": "outstanding", "pt": "pendente", "example": "The only outstanding item is the cap." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte o fechamento",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as frases na ordem de um fechamento bem-feito.",
+          "items": [
+            "So where does that leave us?",
+            "Let me summarise: three-year term, ten per cent from year one, annual indexation.",
+            "The only outstanding item is the liability cap, which goes to legal.",
+            "Are we agreed on that basis?",
+            "I'll send you the written summary this afternoon and we'll aim to sign by the 30th."
+          ],
+          "explanation": "Perguntar onde ficamos → resumir → isolar o pendente → confirmar → registrar com data."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que precisa entrar no resumo escrito",
+          "instruction": "Marque tudo o que deve constar do e-mail de fechamento.",
+          "prompt": "You're writing the summary email right after the call.",
+          "options": [
+            { "text": "The commercial terms agreed, with numbers.", "correct": true },
+            { "text": "What is still open, and who owns it.", "correct": true },
+            { "text": "The dates for next steps.", "correct": true },
+            { "text": "A note that everything is subject to signature.", "correct": true },
+            { "text": "Your personal opinion on how the call went.", "correct": false },
+            { "text": "Every argument that was discussed and rejected.", "correct": false }
+          ],
+          "explanation": "Acordado, pendente, prazos, condição. Quatro blocos, meia página."
+        },
+        {
+          "type": "emailTriage",
+          "title": "O e-mail de fechamento",
+          "badge": "Caixa de entrada",
+          "instruction": "Leia o resumo enviado e avalie.",
+          "email": {
+            "channel": "Outlook",
+            "from": "Fernanda Vassimon · Baker Hughes",
+            "subject": "Summary of today's call — renewal terms",
+            "body": "Hi Priya,\n\nThank you for the call. To make sure we're working from the same page, here's what we agreed:\n\n· Term: three years, from 1 January.\n· Price: 10% reduction from year one, with annual indexation.\n· Scope: unchanged from the current contract.\n\nStill open: the liability cap, which our legal team will review and come back on by Friday.\n\nNext steps: I'll circulate the draft on Monday; we're both aiming to sign by the 30th. All of the above is of course subject to signature.\n\nIf anything here doesn't match your understanding, just tell me and I'll correct it.\n\nBest,\nFernanda"
+          },
+          "questions": [
+            {
+              "prompt": "Which sentence does the most protective work?",
+              "options": [
+                { "text": "\"Thank you for the call.\"" },
+                { "text": "\"If anything here doesn't match your understanding, just tell me and I'll correct it.\"", "correct": true },
+                { "text": "\"Scope: unchanged from the current contract.\"" }
+              ],
+              "why": "Convida à correção imediata. Silêncio depois disso vira concordância registrada."
+            },
+            {
+              "prompt": "Why separate \"still open\" from what was agreed?",
+              "options": [
+                { "text": "To make the email look longer." },
+                { "text": "So nobody later claims the cap was part of the deal.", "correct": true },
+                { "text": "Because legal asked for it." }
+              ],
+              "why": "Ponto pendente misturado com acordado é a origem de metade das disputas comerciais."
+            },
+            {
+              "prompt": "When should this email be sent?",
+              "options": [
+                { "text": "The same day, ideally within the hour.", "correct": true },
+                { "text": "When the contract is ready." },
+                { "text": "Only if the customer asks for it." }
+              ],
+              "why": "Memória é o pior sistema de registro do mundo. E o primeiro a escrever define o entendimento."
+            }
+          ],
+          "explanation": "Acordado · pendente · próximos passos · convite à correção. Esse e-mail vale mais que a call."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases de fechamento",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Confirmar o acordo.", "answer": "Are we agreed on ten per cent over three years", "extra": ["Do we agree", "in"] },
+            { "hint": "Isolar o pendente.", "answer": "The only outstanding item is the liability cap", "extra": ["outstanding items", "are"] },
+            { "hint": "Proteger o registro.", "answer": "All of the above is of course subject to signature", "extra": ["under", "signing"] }
+          ],
+          "explanation": "Três frases que fecham qualquer negociação em inglês."
+        },
+        {
+          "type": "readAloud",
+          "title": "Ensaie o fechamento em voz alta",
+          "instruction": "Ouça, repita e grave. Um fechamento hesitante reabre a negociação — o ritmo importa.",
+          "sentences": [
+            "So where does that leave us?",
+            "Let me summarise what we've agreed.",
+            "The only outstanding item is the liability cap.",
+            "Are we agreed on that basis?",
+            "I'll send the written summary this afternoon."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Negotiation",
+          "items": [
+            { "en": "I can recognise the moment to close.", "pt": "Reconheço o momento de fechar." },
+            { "en": "I can summarise an agreement out loud, in English.", "pt": "Resumo um acordo em voz alta, em inglês." },
+            { "en": "I ask \"are we agreed?\" instead of assuming.", "pt": "Pergunto \"are we agreed?\" em vez de presumir." },
+            { "en": "I send a written summary the same day.", "pt": "Mando um resumo escrito no mesmo dia." },
+            { "en": "Looking at the topic: I can run a negotiation in English from start to finish.", "pt": "Olhando o tópico: conduzo uma negociação em inglês do início ao fim." }
+          ],
+          "doneMessage": "tópico Negotiation concluído. Próximo: apresentações.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O fechamento que ninguém ensina",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"So where does that leave us?\" is the classic English signal that it's time to land the deal.", "pt": "\"So where does that leave us?\" é o sinal clássico em inglês de que é hora de aterrissar o acordo." },
+          { "en": "Whoever writes the summary defines what was agreed. Write it first, and write it the same day.", "pt": "Quem escreve o resumo define o que foi acordado. Escreva primeiro e no mesmo dia." },
+          { "en": "\"Subject to signature\" protects you until the ink is dry — and costs nothing to include.", "pt": "\"Subject to signature\" te protege até a assinatura sair — e não custa nada incluir." },
+          { "en": "Inviting correction (\"tell me if this doesn't match\") makes silence work in your favour.", "pt": "Convidar à correção (\"me diga se não bate\") faz o silêncio trabalhar a seu favor." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now close a deal in English — and make sure it stays closed.",
+        "pt": "Agora você fecha um acordo em inglês — e garante que ele continue fechado."
+      }
+    }
+  ]
+}

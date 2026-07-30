@@ -1,0 +1,604 @@
+{
+  "topic": "Presentations and public speaking",
+  "lessons": [
+    {
+      "title": "Opening and Structure",
+      "focus": "Abrir bem e dizer para onde a apresentação vai",
+      "character": "us-female",
+      "objective": "Abrir uma apresentação em inglês em trinta segundos: quem você é, o que vem, e por que interessa a quem ouve.",
+      "intro": [
+        "The first thirty seconds decide whether people listen or open their laptops.",
+        "A strong English opening has three parts: <strong>who and why me</strong>, <strong>what I'll cover</strong>, <strong>what you get out of it</strong>.",
+        "Then — and only then — the content."
+      ],
+      "introPt": [
+        "Os primeiros trinta segundos decidem se as pessoas escutam ou abrem o notebook.",
+        "Uma boa abertura em inglês tem três partes: <strong>quem sou e por que eu</strong>, <strong>o que vou cobrir</strong>, <strong>o que você leva daqui</strong>.",
+        "Depois — e só depois — o conteúdo."
+      ],
+      "vocab": [
+        { "en": "to walk you through", "pt": "conduzir você por", "example": "I'll walk you through the three options." },
+        { "en": "agenda", "pt": "roteiro da apresentação", "example": "Quick agenda: context, options, recommendation." },
+        { "en": "takeaway", "pt": "o que fica", "example": "The main takeaway is that September is achievable." },
+        { "en": "to set the scene", "pt": "contextualizar", "example": "Let me set the scene first." },
+        { "en": "bear with me", "pt": "tenha paciência comigo", "example": "Bear with me — this chart needs one minute." },
+        { "en": "by the end of this", "pt": "ao final disto", "example": "By the end of this you'll know which option to back." },
+        { "en": "housekeeping", "pt": "avisos práticos", "example": "Quick housekeeping: we have twenty minutes." },
+        { "en": "to hand over to", "pt": "passar a palavra para", "example": "I'll hand over to Marcus for the technical part." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a abertura",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as frases na ordem de uma abertura de trinta segundos.",
+          "items": [
+            "Good morning everyone, and thank you for making the time.",
+            "I'm Fernanda, from the commercial team in Rio.",
+            "In the next twenty minutes I'll walk you through three options for the Macaé renewal.",
+            "By the end you'll know which one I recommend, and what it costs.",
+            "Quick housekeeping: questions at the end, but stop me if something isn't clear."
+          ],
+          "explanation": "Cumprimento → quem → o que vem → o que você leva → regras. Trinta segundos, cinco frases."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual abertura prende a sala?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que faz as pessoas levantarem a cabeça.",
+          "items": [
+            {
+              "prompt": "Abrindo uma apresentação de renovação.",
+              "a": "Hi everyone, so, I have some slides here about the renewal, let me see if I can share my screen.",
+              "b": "Good morning. In twenty minutes you'll have everything you need to decide on the Macaé renewal — three options, one recommendation.",
+              "correct": "b",
+              "why": "Promessa clara de valor logo na primeira frase. A outra começa pedindo desculpas pela tecnologia."
+            },
+            {
+              "prompt": "Apresentando um assunto técnico a não técnicos.",
+              "a": "This is about the commissioning sequence of the subsea control module, which as you know involves…",
+              "b": "One decision today: do we commission in August or September? Everything else I'll explain along the way.",
+              "correct": "b",
+              "why": "Comece pela decisão, não pelo contexto técnico. O contexto vem depois, se precisar."
+            },
+            {
+              "prompt": "Quando você tem só cinco minutos.",
+              "a": "I know there's a lot here, I'll try to be quick, sorry.",
+              "b": "Five minutes, three slides, one ask. Here we go.",
+              "correct": "b",
+              "why": "Pouco tempo pede estrutura visível, não pedido de desculpas."
+            }
+          ],
+          "explanation": "Nunca abra com desculpa. Abra com o que a pessoa ganha por ficar."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a abertura",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a expressão certa em cada lacuna.",
+          "text": "Good morning everyone. Let me quickly ___ the scene: the Macaé contract expires in December. In the next twenty minutes I'll ___ you through three options. ___ the end of this, you'll know which one I recommend and what it costs. Quick ___ : we have twenty minutes, and I'd like to leave five for questions. I'll ___ over to Marcus for the technical detail at the end.",
+          "gaps": [
+            { "options": ["set", "put", "make"], "answer": "set", "why": "\"To set the scene\" — expressão fixa." },
+            { "options": ["walk", "pass", "drive"], "answer": "walk", "why": "\"To walk someone through something\" — conduzir passo a passo." },
+            { "options": ["By", "In", "At"], "answer": "By", "why": "\"By the end of this\" — até o final." },
+            { "options": ["housekeeping", "housework", "organisation"], "answer": "housekeeping", "why": "Housekeeping são os avisos práticos no início de uma reunião." },
+            { "options": ["hand", "give", "leave"], "answer": "hand", "why": "\"To hand over to someone\" — passar a palavra." }
+          ],
+          "explanation": "Cinco expressões que abrem qualquer apresentação em inglês."
+        },
+        {
+          "type": "matching",
+          "title": "Associe a expressão à função",
+          "instruction": "Clique na caixa à direita e escolha o que cada expressão faz.",
+          "pairs": [
+            { "left": "Let me set the scene.", "right": "dar o contexto mínimo antes do conteúdo" },
+            { "left": "I'll walk you through…", "right": "anunciar que vai explicar passo a passo" },
+            { "left": "By the end of this you'll…", "right": "prometer o que a plateia ganha" },
+            { "left": "Quick housekeeping…", "right": "avisos práticos de tempo e formato" },
+            { "left": "I'll hand over to…", "right": "passar a palavra a outra pessoa" }
+          ],
+          "explanation": "São peças de encaixe — você monta a abertura combinando as cinco."
+        },
+        {
+          "type": "readAloud",
+          "title": "Ensaie a sua abertura",
+          "instruction": "Ouça, repita e grave. Uma abertura decorada libera a sua cabeça para o resto da apresentação.",
+          "sentences": [
+            "Good morning everyone, and thank you for making the time.",
+            "In the next twenty minutes I'll walk you through three options.",
+            "By the end you'll know which one I recommend, and what it costs.",
+            "Quick housekeeping: questions at the end, but stop me if something isn't clear.",
+            "Let me set the scene."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can open a presentation in thirty seconds.", "pt": "Abro uma apresentação em trinta segundos." },
+            { "en": "I promise a takeaway instead of apologising.", "pt": "Prometo um resultado em vez de pedir desculpas." },
+            { "en": "I can announce the agenda in one sentence.", "pt": "Anuncio o roteiro em uma frase." },
+            { "en": "I can hand over to a colleague smoothly.", "pt": "Passo a palavra a um colega com naturalidade." }
+          ],
+          "doneMessage": "abertura pronta. Agora, os números na tela.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Os primeiros trinta segundos",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "Never apologise at the start. \"Sorry, this will be quick\" tells the room the next minutes are worth less.", "pt": "Nunca peça desculpas no início. \"Sorry, this will be quick\" avisa à sala que os próximos minutos valem menos." },
+          { "en": "\"Bear with me\" is the polite way to ask for patience — with an E, not \"bare\".", "pt": "\"Bear with me\" é o jeito educado de pedir paciência — com E, não \"bare\"." },
+          { "en": "\"Housekeeping\" at the start of a meeting means the practical notices: timing, breaks, questions.", "pt": "\"Housekeeping\" no início de uma reunião são os avisos práticos: tempo, pausas, perguntas." },
+          { "en": "Announcing how long you'll take is the single easiest way to keep an audience with you.", "pt": "Anunciar quanto tempo você vai levar é a forma mais simples de manter a plateia com você." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now open in English and have the room with you from the first line.",
+        "pt": "Agora você abre em inglês e prende a sala desde a primeira frase."
+      }
+    },
+    {
+      "title": "Presenting Data",
+      "focus": "Apresentar gráficos e números sem perder ninguém",
+      "character": "us-male",
+      "objective": "Descrever um gráfico em inglês e — mais importante — dizer o que ele significa.",
+      "intro": [
+        "A chart doesn't speak. You do.",
+        "In English there is a fixed sequence for every visual: <strong>what it is</strong>, <strong>what it shows</strong>, <strong>what it means</strong>, <strong>what we do about it</strong>.",
+        "Most people stop at the second step. The difference between reporting and influencing is steps three and four."
+      ],
+      "introPt": [
+        "Um gráfico não fala. Você fala.",
+        "Em inglês existe uma sequência fixa para todo visual: <strong>o que é</strong>, <strong>o que mostra</strong>, <strong>o que significa</strong>, <strong>o que fazemos com isso</strong>.",
+        "A maioria para no segundo passo. A diferença entre reportar e influenciar está no terceiro e no quarto."
+      ],
+      "vocab": [
+        { "en": "to peak / to bottom out", "pt": "atingir o pico / o fundo", "example": "Costs peaked in June and bottomed out in September." },
+        { "en": "to level off / plateau", "pt": "estabilizar", "example": "Volumes levelled off in Q3." },
+        { "en": "steady increase", "pt": "aumento constante", "example": "A steady increase since March." },
+        { "en": "sharp drop", "pt": "queda acentuada", "example": "There's a sharp drop in July." },
+        { "en": "the outlier", "pt": "o ponto fora da curva", "example": "August is the outlier here." },
+        { "en": "the takeaway is…", "pt": "o que fica é…", "example": "The takeaway is that the trend is stable." },
+        { "en": "which means…", "pt": "o que significa que…", "example": "…which means we can commit to September." },
+        { "en": "to zoom in on", "pt": "focar em", "example": "Let me zoom in on the last quarter." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "A sequência de todo gráfico",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque os quatro passos na ordem certa.",
+          "items": [
+            "This chart shows monthly subcontractor spend against budget.",
+            "You can see a steady increase from March, peaking in June, then levelling off.",
+            "Which means the June spike was a one-off, not a trend.",
+            "So my recommendation is that we keep the annual budget unchanged."
+          ],
+          "explanation": "O que é → o que mostra → o que significa → o que fazer. Quatro frases por gráfico, nunca mais."
+        },
+        {
+          "type": "categorize",
+          "title": "Subiu, caiu ou estabilizou?",
+          "instruction": "Classifique cada expressão pelo movimento que descreve.",
+          "categories": [
+            { "id": "up", "name": "Subiu", "short": "↑" },
+            { "id": "down", "name": "Caiu", "short": "↓" },
+            { "id": "flat", "name": "Estável", "short": "→" }
+          ],
+          "items": [
+            { "text": "a steady increase", "cat": "up" },
+            { "text": "a sharp drop", "cat": "down" },
+            { "text": "levelled off", "cat": "flat" },
+            { "text": "picked up", "cat": "up" },
+            { "text": "bottomed out", "cat": "down" },
+            { "text": "broadly flat", "cat": "flat" },
+            { "text": "softened", "cat": "down" },
+            { "text": "plateaued", "cat": "flat" }
+          ],
+          "explanation": "Oito verbos cobrem qualquer gráfico que você vá apresentar na vida."
+        },
+        {
+          "type": "listenChoose",
+          "title": "Ouça e escolha a leitura certa",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque no áudio e escolha o que a pessoa está dizendo sobre o gráfico.",
+          "items": [
+            {
+              "audio": "Spend picked up sharply in June, then levelled off. August is the outlier — that's the mobilisation charge, which won't repeat.",
+              "options": [
+                { "text": "Junho subiu forte, depois estabilizou; agosto é um ponto fora da curva não recorrente.", "correct": true },
+                { "text": "O gasto caiu em junho e voltou a subir em agosto." },
+                { "text": "O gasto ficou estável o ano inteiro." }
+              ],
+              "why": "\"Picked up sharply\" (subiu forte) + \"levelled off\" (estabilizou) + \"outlier\" (fora da curva)."
+            },
+            {
+              "audio": "Let me zoom in on the last quarter, because that's where the story is.",
+              "options": [
+                { "text": "Ele vai focar no último trimestre, onde está o ponto principal.", "correct": true },
+                { "text": "Ele vai mostrar o ano inteiro." },
+                { "text": "Ele vai pular essa parte." }
+              ],
+              "why": "\"Zoom in on\" — focar num recorte. \"Where the story is\" — onde está o que importa."
+            }
+          ],
+          "explanation": "Escute o verbo de movimento e o \"which means\". O resto é decoração."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase do gráfico",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Apresentar o gráfico.", "answer": "This chart shows monthly spend against budget", "extra": ["showing", "over"] },
+            { "hint": "Descrever o movimento.", "answer": "You can see a steady increase from March peaking in June", "extra": ["seeing", "peak"] },
+            { "hint": "Dar o significado.", "answer": "Which means the June spike was a one off not a trend", "extra": ["meaning", "and"] }
+          ],
+          "explanation": "\"Which means…\" é a frase que transforma dado em argumento."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que fazer com um slide cheio de números",
+          "instruction": "Marque tudo o que funciona.",
+          "prompt": "Your slide has a table with 40 numbers and you have two minutes.",
+          "options": [
+            { "text": "Point to the two numbers that matter and ignore the rest.", "correct": true },
+            { "text": "Say what the pattern means before anyone reads the table.", "correct": true },
+            { "text": "Read every row out loud.", "correct": false },
+            { "text": "Tell them where to look: \"third column, the two red cells\".", "correct": true },
+            { "text": "Apologise for the busy slide.", "correct": false },
+            { "text": "Give the recommendation that follows from the numbers.", "correct": true }
+          ],
+          "explanation": "A plateia lê ou escuta — nunca as duas. Diga onde olhar e o que concluir."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can describe a trend with the right verb.", "pt": "Descrevo uma tendência com o verbo certo." },
+            { "en": "I always add \"which means…\" after the data.", "pt": "Sempre acrescento \"which means…\" depois do dado." },
+            { "en": "I can point the audience to what matters on a busy slide.", "pt": "Sei apontar o que importa num slide carregado." },
+            { "en": "I finish a chart with a recommendation.", "pt": "Fecho um gráfico com uma recomendação." }
+          ],
+          "doneMessage": "dados apresentados. Agora, a costura entre as partes.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Como se fala de gráfico em inglês",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "Movement verbs in English are precise: rise, climb, spike, ease, soften, slide. Each one carries a speed.", "pt": "Os verbos de movimento em inglês são precisos: rise, climb, spike, ease, soften, slide. Cada um carrega uma velocidade." },
+          { "en": "\"Which means…\" is the bridge from data to argument. Without it, you're only reading numbers aloud.", "pt": "\"Which means…\" é a ponte do dado para o argumento. Sem ela, você só está lendo números em voz alta." },
+          { "en": "\"Outlier\" is the professional word for the point that breaks the pattern — and it needs an explanation every time.", "pt": "\"Outlier\" é a palavra profissional para o ponto que quebra o padrão — e ele sempre pede explicação." },
+          { "en": "Never apologise for a busy slide. Tell people where to look instead.", "pt": "Nunca peça desculpas por um slide carregado. Diga onde olhar." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now make a chart say something — in English.",
+        "pt": "Agora você faz um gráfico dizer alguma coisa — em inglês."
+      }
+    },
+    {
+      "title": "Signposting and Storytelling",
+      "focus": "Guiar a plateia e dar forma de história ao conteúdo",
+      "character": "uk-female",
+      "objective": "Usar sinalizadores em inglês para que a plateia sempre saiba onde está — e fechar com uma mensagem que gruda.",
+      "intro": [
+        "In a long presentation, people don't get lost in the content. They get lost in the structure.",
+        "<strong>Signposting</strong> is the set of short phrases that say: <em>we're leaving this part, we're entering that one</em>.",
+        "And underneath the signposts, the best presentations run a simple story: <strong>situation → complication → resolution</strong>."
+      ],
+      "introPt": [
+        "Numa apresentação longa, as pessoas não se perdem no conteúdo. Elas se perdem na estrutura.",
+        "<strong>Signposting</strong> é o conjunto de frases curtas que dizem: <em>estamos saindo desta parte, entrando naquela</em>.",
+        "E, sob os sinalizadores, as melhores apresentações rodam uma história simples: <strong>situação → complicação → resolução</strong>."
+      ],
+      "vocab": [
+        { "en": "let's move on to", "pt": "vamos passar para", "example": "Let's move on to the second option." },
+        { "en": "coming back to", "pt": "voltando a", "example": "Coming back to the point about cost…" },
+        { "en": "that brings me to", "pt": "isso me leva a", "example": "That brings me to my recommendation." },
+        { "en": "in a nutshell", "pt": "em resumo", "example": "In a nutshell: September is achievable." },
+        { "en": "the bottom line is", "pt": "a conclusão é", "example": "The bottom line is we need a decision today." },
+        { "en": "to recap", "pt": "recapitulando", "example": "To recap: three options, one recommendation." },
+        { "en": "the turning point", "pt": "o ponto de virada", "example": "The turning point was the customs delay." },
+        { "en": "so what?", "pt": "e daí? (o teste da relevância)", "example": "Always answer the 'so what' for the audience." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Associe o sinalizador à sua função",
+          "instruction": "Clique na caixa à direita e escolha a função certa.",
+          "pairs": [
+            { "left": "Let's move on to…", "right": "sair de uma parte e entrar na próxima" },
+            { "left": "Coming back to…", "right": "retomar algo que ficou pendente antes" },
+            { "left": "That brings me to…", "right": "conectar o que foi dito com a conclusão" },
+            { "left": "To recap…", "right": "resumir antes de seguir" },
+            { "left": "The bottom line is…", "right": "anunciar a conclusão principal" }
+          ],
+          "explanation": "Sinalizadores são placas de estrada. Sem eles, a plateia dirige no escuro."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte a história",
+          "badge": "Coloque em ordem",
+          "instruction": "Situação → complicação → resolução. Coloque as frases nessa lógica.",
+          "items": [
+            "We signed the Macaé contract in January with a September handover.",
+            "In May the control panel arrived off-specification, and the replacement has a sixteen-week lead time.",
+            "That put the September date at risk for the first time.",
+            "We resequenced commissioning and brought the spare forward, which protects the handover.",
+            "The bottom line: September holds, provided the panel ships on the 30th."
+          ],
+          "explanation": "Toda apresentação boa é essa história: estava assim, aconteceu isto, fizemos aquilo."
+        },
+        {
+          "type": "highlightPick",
+          "title": "Onde estão as placas?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que SINALIZAM uma mudança de parte na apresentação.",
+          "instruction": "Toque em cada sinalizador de estrutura.",
+          "text": "The cost picture is stable . Moving on to the schedule , we have one open risk . Coming back to the panel for a moment , the replacement ships on the thirtieth . That brings me to my recommendation .",
+          "targets": ["Moving", "Coming", "brings"],
+          "explanation": "Três placas em quatro frases. É esse ritmo que mantém a plateia orientada."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual fecha melhor?",
+          "badge": "A ou B",
+          "instruction": "Escolha o encerramento que deixa a mensagem gravada.",
+          "items": [
+            {
+              "prompt": "Encerrando uma apresentação de vinte minutos.",
+              "a": "So that's it, I think I covered everything, any questions?",
+              "b": "In a nutshell: September holds, provided the panel ships on the 30th. That's the one date to keep an eye on. Questions?",
+              "correct": "b",
+              "why": "Uma frase-resumo e uma coisa para lembrar. \"That's it\" apaga vinte minutos de trabalho."
+            },
+            {
+              "prompt": "Fechando a parte de custos antes de passar ao cronograma.",
+              "a": "Ok, next slide.",
+              "b": "To recap on cost: stable, no action needed. Let's move on to the schedule, where there is one open risk.",
+              "correct": "b",
+              "why": "Fecha, conclui e anuncia. A plateia sabe exatamente onde está."
+            },
+            {
+              "prompt": "Respondendo ao \"e daí?\" da plateia.",
+              "a": "The spend was 2.4 million against a plan of 2.2.",
+              "b": "The spend was 2.4 against a plan of 2.2 — which means we have no room for a second mobilisation this year.",
+              "correct": "b",
+              "why": "O número sozinho não decide nada. A consequência, sim."
+            }
+          ],
+          "explanation": "Sempre responda ao \"so what?\" antes que alguém precise perguntar."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a transição",
+          "badge": "Complete o texto",
+          "instruction": "Escolha o sinalizador certo em cada lacuna.",
+          "text": "To ___ on cost: stable, and no action is needed. Let's move ___ to the schedule. ___ back to the panel for a moment — the replacement ships on the thirtieth. That ___ me to my recommendation. In a ___ : September holds.",
+          "gaps": [
+            { "options": ["recap", "resume", "review"], "answer": "recap", "why": "\"To recap\" — recapitular. \"Resume\" em inglês significa retomar, não resumir." },
+            { "options": ["on", "to", "for"], "answer": "on", "why": "\"Let's move on to\" — o \"on\" vem antes do \"to\"." },
+            { "options": ["Coming", "Returning", "Going"], "answer": "Coming", "why": "\"Coming back to…\" é o padrão falado." },
+            { "options": ["brings", "takes", "leads"], "answer": "brings", "why": "\"That brings me to…\" — expressão fixa." },
+            { "options": ["nutshell", "resume", "short"], "answer": "nutshell", "why": "\"In a nutshell\" — em resumo." }
+          ],
+          "explanation": "\"Resume\" é um falso amigo perigoso: em inglês significa retomar, não resumir."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I use signposting so the audience always knows where we are.", "pt": "Uso sinalizadores para a plateia sempre saber onde estamos." },
+            { "en": "I can structure content as situation, complication, resolution.", "pt": "Estruturo o conteúdo como situação, complicação, resolução." },
+            { "en": "I answer the \"so what?\" for every number.", "pt": "Respondo ao \"so what?\" de cada número." },
+            { "en": "I never say \"resume\" when I mean \"summarise\".", "pt": "Nunca digo \"resume\" querendo dizer \"resumir\"." }
+          ],
+          "doneMessage": "estrutura dominada. Falta a parte que dá medo: as perguntas.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "As placas invisíveis",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"In a nutshell\" comes from the idea of writing something small enough to fit inside a nut.", "pt": "\"In a nutshell\" vem da ideia de escrever algo pequeno o bastante para caber dentro de uma noz." },
+          { "en": "\"Resume\" is a false friend: in English it means to restart, not to summarise. Use \"recap\" or \"summarise\".", "pt": "\"Resume\" é falso amigo: em inglês é retomar, não resumir. Use \"recap\" ou \"summarise\"." },
+          { "en": "\"The bottom line\" comes from accounting — the last line of the statement, where profit sits.", "pt": "\"The bottom line\" vem da contabilidade — a última linha do demonstrativo, onde fica o lucro." },
+          { "en": "Audiences forgive weak slides. They don't forgive not knowing where they are.", "pt": "Plateias perdoam slides fracos. Não perdoam não saber onde estão." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now guide an audience through twenty minutes without losing a single person.",
+        "pt": "Agora você conduz uma plateia por vinte minutos sem perder ninguém pelo caminho."
+      }
+    },
+    {
+      "title": "Handling Q&A Under Pressure",
+      "focus": "Responder perguntas difíceis — inclusive as que você não sabe responder",
+      "character": "us-male",
+      "objective": "Conduzir a sessão de perguntas em inglês com controle: entender, responder, e admitir o que não sabe sem perder autoridade.",
+      "intro": [
+        "Q&A is where credibility is really tested — because you can't rehearse it.",
+        "The technique is always the same: <strong>buy a second</strong>, <strong>check you understood</strong>, <strong>answer one thing</strong>, <strong>stop</strong>.",
+        "And the hardest sentence of all — <em>\"I don't know, but I'll find out by Thursday\"</em> — is the one that raises your credibility the most."
+      ],
+      "introPt": [
+        "O Q&A é onde a credibilidade é realmente testada — porque não dá para ensaiar.",
+        "A técnica é sempre a mesma: <strong>ganhar um segundo</strong>, <strong>confirmar que entendeu</strong>, <strong>responder uma coisa</strong>, <strong>parar</strong>.",
+        "E a frase mais difícil de todas — <em>\"I don't know, but I'll find out by Thursday\"</em> — é a que mais aumenta a sua credibilidade."
+      ],
+      "vocab": [
+        { "en": "that's a fair question", "pt": "é uma pergunta justa", "example": "That's a fair question — let me answer it directly." },
+        { "en": "if I understood you correctly…", "pt": "se entendi corretamente…", "example": "If I understood you correctly, you're asking about cost." },
+        { "en": "let me come back to you on that", "pt": "deixe-me retornar sobre isso", "example": "I don't have that number — let me come back to you on that." },
+        { "en": "to take it offline", "pt": "tratar fora da reunião", "example": "Let's take that one offline." },
+        { "en": "in short", "pt": "em resumo", "example": "In short: yes, but not before September." },
+        { "en": "I'd push back on that", "pt": "eu discordaria disso", "example": "I'd push back on that slightly." },
+        { "en": "does that answer your question?", "pt": "isso responde à sua pergunta?", "example": "Does that answer your question?" },
+        { "en": "to park it", "pt": "deixar para depois", "example": "Let's park that and come back at the end." }
+      ],
+      "exercises": [
+        {
+          "type": "flowChoice",
+          "title": "A sessão de perguntas",
+          "badge": "Conversa",
+          "situation": "Você acabou de apresentar. A sala tem o diretor regional e dois gerentes técnicos.",
+          "turns": [
+            {
+              "who": "Regional Director",
+              "them": "You say September holds. What if the panel doesn't ship on the 30th?",
+              "options": [
+                { "text": "That's a fair question. If it slips past the 30th, September is at risk and October becomes the realistic date. I'll know on the 30th and I'll tell you that day.", "correct": true, "why": "Responde direto, dá a data alternativa e assume o compromisso de avisar." },
+                { "text": "I'm confident it will ship.", "why": "Não responde à pergunta — que era justamente sobre o cenário em que não embarca." },
+                { "text": "That's a hypothetical, I'd rather not speculate.", "why": "Recusar a pergunta de um diretor é o caminho mais curto para perder a sala." }
+              ]
+            },
+            {
+              "who": "Technical Manager",
+              "them": "And what's the unit cost impact of resequencing the commissioning?",
+              "options": [
+                { "text": "It's small, don't worry about it.", "why": "\"Don't worry about it\" é a frase que mais irrita um gerente técnico." },
+                { "text": "I don't have that number in front of me. I'll get it from project controls and send it to you by Thursday.", "correct": true, "why": "Admitir com prazo é infinitamente mais forte que improvisar um número." },
+                { "text": "Around fifty thousand, I think. Maybe more.", "why": "Chutar número numa sala com diretor é o risco mais desnecessário que existe." }
+              ]
+            },
+            {
+              "who": "Technical Manager",
+              "them": "Honestly, I think the whole resequencing plan is too risky.",
+              "options": [
+                { "text": "It's the only option we have.", "why": "Fecha o debate e transforma uma objeção técnica em disputa pessoal." },
+                { "text": "I'd push back on that slightly — the resequencing only affects commissioning, and we've done it twice before on this site. But if you're seeing a risk I'm not, I'd genuinely like to hear it. Can we take that one offline?", "correct": true, "why": "Discorda com argumento, abre espaço genuíno e tira o debate técnico da apresentação." },
+                { "text": "Maybe you're right, let's rethink everything.", "why": "Ceder à primeira objeção na frente da diretoria desmonta a sua recomendação." }
+              ]
+            },
+            {
+              "who": "Regional Director",
+              "them": "Okay. So what do you need from us today?",
+              "options": [
+                { "text": "Nothing for now, I'll keep you posted.", "why": "Ele acabou de oferecer apoio. Não pedir nada é desperdiçar o melhor momento da reunião." },
+                { "text": "One decision: approval to bring the spare forward, which is 18k. Everything else I can handle.", "correct": true, "why": "Um pedido, um número, e a garantia de que o resto está sob controle." },
+                { "text": "A few things, I'll send a list later.", "why": "\"Uma lista depois\" nunca é aprovada com a mesma facilidade que um pedido na sala." }
+              ]
+            }
+          ],
+          "explanation": "Responder direto, admitir com prazo, discordar com argumento e pedir uma coisa só."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A frase certa para cada pergunta",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a resposta profissional em cada situação.",
+          "items": [
+            {
+              "prompt": "Você não entendeu bem a pergunta.",
+              "options": [
+                { "text": "If I understood you correctly, you're asking about the cost impact — is that right?", "correct": true },
+                { "text": "What?" },
+                { "text": "Sorry, my English is not very good." }
+              ],
+              "why": "Reformular é técnica profissional em qualquer idioma — e ganha o segundo que você precisa."
+            },
+            {
+              "prompt": "Você não sabe a resposta.",
+              "options": [
+                { "text": "I don't have that number in front of me — I'll send it by Thursday.", "correct": true },
+                { "text": "I think it's around fifty thousand." },
+                { "text": "That's not really relevant." }
+              ],
+              "why": "Admitir com prazo aumenta a credibilidade. Chutar destrói."
+            },
+            {
+              "prompt": "A pergunta abriu um debate técnico longo.",
+              "options": [
+                { "text": "Let's take that one offline — I'd like to give it proper time.", "correct": true },
+                { "text": "That's too complicated to explain here." },
+                { "text": "Let's just move on." }
+              ],
+              "why": "\"Take it offline\" respeita a pergunta e protege o tempo da sala."
+            },
+            {
+              "prompt": "Você terminou de responder.",
+              "options": [
+                { "text": "Does that answer your question?", "correct": true },
+                { "text": "Anyway…" },
+                { "text": "…and there's also this other thing I wanted to mention." }
+              ],
+              "why": "Fechar a resposta com uma pergunta devolve o controle da sala para você."
+            }
+          ],
+          "explanation": "Reformular · admitir com prazo · levar para depois · fechar. Quatro movimentos e o Q&A é seu."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre Q&A em inglês.",
+          "items": [
+            { "text": "Saying \"I don't know\" damages your credibility.", "answer": false, "why": "Só se vier sozinho. Com prazo — \"I'll find out by Thursday\" — aumenta." },
+            { "text": "Repeating the question back is a good way to gain thinking time.", "answer": true, "why": "É técnica padrão, e ainda garante que você entendeu certo." },
+            { "text": "You should answer everything in the room, however long it takes.", "answer": false, "why": "Debate longo se leva offline. A sala tem outras pessoas." },
+            { "text": "\"Does that answer your question?\" is a sign of weakness.", "answer": false, "why": "É sinal de controle: você decide quando a resposta terminou." }
+          ],
+          "explanation": "Autoridade em Q&A vem de controle do processo, não de saber tudo."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases do Q&A",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Confirmar o que entendeu.", "answer": "If I understood you correctly you are asking about the cost impact", "extra": ["understand", "for"] },
+            { "hint": "Admitir com prazo.", "answer": "I do not have that number in front of me but I will send it by Thursday", "extra": ["have not", "until"] },
+            { "hint": "Levar para depois.", "answer": "Let us take that one offline so I can give it proper time", "extra": ["taking", "out of line"] }
+          ],
+          "explanation": "Três frases que resolvem noventa por cento das perguntas difíceis."
+        },
+        {
+          "type": "readAloud",
+          "title": "Ensaie as respostas difíceis",
+          "instruction": "Ouça, repita e grave. Sob pressão, sai o que está automatizado — então automatize estas.",
+          "sentences": [
+            "That's a fair question — let me answer it directly.",
+            "If I understood you correctly, you're asking about the cost impact.",
+            "I don't have that number in front of me. I'll send it by Thursday.",
+            "I'd push back on that slightly, and here's why.",
+            "Does that answer your question?"
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Presentations",
+          "items": [
+            { "en": "I can buy a second by rephrasing the question.", "pt": "Ganho um segundo reformulando a pergunta." },
+            { "en": "I can say \"I don't know\" with a date attached.", "pt": "Sei dizer \"não sei\" com prazo junto." },
+            { "en": "I can take a long debate offline.", "pt": "Sei levar um debate longo para fora da reunião." },
+            { "en": "I close each answer instead of trailing off.", "pt": "Fecho cada resposta em vez de deixá-la no ar." },
+            { "en": "Looking at the topic: I can present in English and handle what comes after.", "pt": "Olhando o tópico: apresento em inglês e dou conta do que vem depois." }
+          ],
+          "doneMessage": "tópico Presentations concluído. Próximo: e-mails e Teams.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que a sala realmente avalia",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"That's a fair question\" buys you two full seconds and signals you're not defensive.", "pt": "\"That's a fair question\" compra dois segundos inteiros e sinaliza que você não está na defensiva." },
+          { "en": "Never apologise for your English in a Q&A. Rephrase the question instead — it's what native speakers do too.", "pt": "Nunca peça desculpas pelo seu inglês num Q&A. Reformule a pergunta — é o que os nativos também fazem." },
+          { "en": "\"Take it offline\" doesn't mean \"never\" — say when you'll come back to it and people accept it instantly.", "pt": "\"Take it offline\" não significa \"nunca\" — diga quando vai retomar e as pessoas aceitam na hora." },
+          { "en": "The person who ends the answer controls the room. \"Does that answer your question?\" ends it.", "pt": "Quem encerra a resposta controla a sala. \"Does that answer your question?\" encerra." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now take the hardest question in the room — in English — and come out taller.",
+        "pt": "Agora você encara a pergunta mais difícil da sala — em inglês — e sai maior."
+      }
+    }
+  ]
+}

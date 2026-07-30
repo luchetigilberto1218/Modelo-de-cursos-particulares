@@ -1,0 +1,666 @@
+{
+  "topic": "Project Management",
+  "lessons": [
+    {
+      "title": "The Project Lifecycle",
+      "focus": "Do kick-off ao close-out: nomear cada fase",
+      "character": "us-male",
+      "objective": "Dizer em que fase o projeto está e o que se espera de cada etapa, do kick-off ao encerramento.",
+      "intro": [
+        "Every project in English follows the same arc: <strong>initiation</strong>, <strong>planning</strong>, <strong>execution</strong>, <strong>monitoring</strong>, <strong>close-out</strong>.",
+        "People rarely say those academic words out loud. What they say is: <em>\"we've kicked off\"</em>, <em>\"we're in execution\"</em>, <em>\"we're closing out\"</em>.",
+        "Learn both registers — the formal one for documents, the spoken one for meetings."
+      ],
+      "introPt": [
+        "Todo projeto em inglês segue o mesmo arco: <strong>initiation</strong>, <strong>planning</strong>, <strong>execution</strong>, <strong>monitoring</strong>, <strong>close-out</strong>.",
+        "As pessoas raramente falam esses termos acadêmicos em voz alta. O que se diz é: <em>\"we've kicked off\"</em>, <em>\"we're in execution\"</em>, <em>\"we're closing out\"</em>.",
+        "Aprenda os dois registros — o formal para documentos, o falado para reuniões."
+      ],
+      "vocab": [
+        { "en": "kick-off (meeting)", "pt": "reunião de partida", "example": "The kick-off is scheduled for Monday." },
+        { "en": "deliverable", "pt": "entregável", "example": "The next deliverable is the commissioning report." },
+        { "en": "milestone", "pt": "marco", "example": "First gas is the key milestone." },
+        { "en": "critical path", "pt": "caminho crítico", "example": "That activity is on the critical path." },
+        { "en": "to be on track", "pt": "estar dentro do previsto", "example": "We're on track for the September handover." },
+        { "en": "handover", "pt": "passagem de bastão / entrega ao cliente", "example": "Handover to operations is next month." },
+        { "en": "close-out", "pt": "encerramento do projeto", "example": "We're in close-out — final documentation only." },
+        { "en": "lessons learned", "pt": "lições aprendidas", "example": "We'll run a lessons learned session in October." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Coloque as fases em ordem",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas fases na sequência real de um projeto.",
+          "items": [
+            "Kick-off meeting with the customer and the team.",
+            "Detailed planning: scope, schedule and resources.",
+            "Execution: the work actually happens.",
+            "Handover to operations.",
+            "Close-out and lessons learned."
+          ],
+          "explanation": "Kick-off → planning → execution → handover → close-out. Cinco palavras, todo o projeto."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo à sua definição",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "deliverable", "right": "algo concreto que precisa ser entregue ao cliente" },
+            { "left": "milestone", "right": "uma data-marco que sinaliza progresso importante" },
+            { "left": "critical path", "right": "a sequência de tarefas que define a data final" },
+            { "left": "handover", "right": "o momento em que o projeto passa para a operação" },
+            { "left": "lessons learned", "right": "o que a equipe registra para não repetir os mesmos erros" }
+          ],
+          "explanation": "Milestone é data; deliverable é coisa. Confundir os dois gera relatório errado."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o update de projeto",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "We ___ off in March and completed detailed planning in April. We're now in ___ , with two ___ delivered out of five. The commissioning activity is on the ___ path, so any delay there moves the final date. We're still ___ track for the September ___ to operations.",
+          "gaps": [
+            { "options": ["kicked", "started up", "opened"], "answer": "kicked", "why": "\"To kick off\" é o verbo consagrado para iniciar um projeto." },
+            { "options": ["execution", "executing phase", "the making"], "answer": "execution", "why": "In execution — a fase em que o trabalho acontece." },
+            { "options": ["deliverables", "deliveries", "delivered"], "answer": "deliverables", "why": "Deliverable é o entregável; delivery é a entrega física." },
+            { "options": ["critical", "crucial", "important"], "answer": "critical", "why": "Critical path é termo técnico fixo." },
+            { "options": ["on", "in", "at"], "answer": "on", "why": "To be ON track." },
+            { "options": ["handover", "hand", "delivering"], "answer": "handover", "why": "Handover to operations — a passagem final." }
+          ],
+          "explanation": "Esse parágrafo funciona como modelo para qualquer update semanal."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o status e conclua",
+          "badge": "Leia e responda",
+          "heading": "Weekly status · Macaé project",
+          "instruction": "Leia e responda com base no texto.",
+          "passage": [
+            "We kicked off in March and closed detailed planning on schedule. Execution started in May and three of five deliverables are complete.",
+            "Commissioning is on the critical path. The customer has confirmed site access for 4 August, which protects the sequence — if that slips by more than a week, the September handover is at risk.",
+            "Close-out documentation is already being prepared in parallel, so we don't lose time at the end."
+          ],
+          "questions": [
+            {
+              "prompt": "Why does site access matter so much?",
+              "options": [
+                { "text": "Because commissioning is on the critical path.", "correct": true },
+                { "text": "Because close-out documents depend on it." },
+                { "text": "Because planning hasn't finished yet." }
+              ],
+              "why": "Atividade no caminho crítico: atraso ali empurra a data final do projeto."
+            },
+            {
+              "prompt": "What is the team doing to protect the end date?",
+              "options": [
+                { "text": "Preparing close-out documentation in parallel.", "correct": true },
+                { "text": "Delaying execution until August." },
+                { "text": "Reducing the number of deliverables." }
+              ],
+              "why": "\"Already being prepared in parallel\" — trabalhar em paralelo é a forma clássica de ganhar tempo."
+            },
+            {
+              "prompt": "How would you describe the project status in one phrase?",
+              "options": [
+                { "text": "On track, with one risk on the critical path.", "correct": true },
+                { "text": "Delayed and out of control." },
+                { "text": "Finished, awaiting payment." }
+              ],
+              "why": "Status honesto: on track, mas com o risco nomeado. É assim que se reporta."
+            }
+          ],
+          "explanation": "\"On track, with one risk\" é a frase mais útil de gestão de projetos."
+        },
+        {
+          "type": "serialChoice",
+          "title": "Formal ou falado?",
+          "badge": "Registro certo",
+          "instruction": "Escolha a versão adequada ao contexto indicado.",
+          "items": [
+            {
+              "prompt": "Numa reunião semanal com o time.",
+              "options": [
+                { "text": "We've kicked off and we're in execution.", "correct": true },
+                { "text": "The project has transitioned from the initiation phase to the execution phase." },
+                { "text": "Initiation concluded; execution commenced." }
+              ],
+              "why": "Reunião pede o registro falado. O formal soa artificial numa conversa."
+            },
+            {
+              "prompt": "No relatório oficial ao cliente.",
+              "options": [
+                { "text": "Stuff is moving along nicely." },
+                { "text": "The project has completed the planning phase and entered execution.", "correct": true },
+                { "text": "We kicked off ages ago." }
+              ],
+              "why": "Documento pede o registro formal e a frase completa."
+            },
+            {
+              "prompt": "Avisando que a data final está em risco.",
+              "options": [
+                { "text": "The September handover is at risk if site access slips.", "correct": true },
+                { "text": "Everything might go wrong." },
+                { "text": "There is a possibility of a potential eventual delay scenario." }
+              ],
+              "why": "Risco nomeado, condição explícita, uma frase. Nem drama, nem névoa."
+            }
+          ],
+          "explanation": "Mesma informação, dois registros. Saber alternar é o que soa profissional."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can name the five phases of a project in English.", "pt": "Sei nomear as cinco fases de um projeto em inglês." },
+            { "en": "I know the difference between a milestone and a deliverable.", "pt": "Sei a diferença entre milestone e deliverable." },
+            { "en": "I can explain what the critical path is.", "pt": "Sei explicar o que é o caminho crítico." },
+            { "en": "I can switch between the formal and the spoken register.", "pt": "Sei alternar entre o registro formal e o falado." }
+          ],
+          "doneMessage": "ciclo do projeto dominado. Agora, as três restrições.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O vocabulário falado dos projetos",
+        "intro": "O que se diz de verdade nas reuniões. Ouça e revele.",
+        "cards": [
+          { "en": "\"We've kicked off\" is present perfect for a reason: the start matters now, the exact date doesn't.", "pt": "\"We've kicked off\" está no present perfect por um motivo: o que importa é o efeito agora, não a data exata." },
+          { "en": "\"On track\" is the single most requested phrase in project meetings — and its opposite is \"at risk\", not \"late\".", "pt": "\"On track\" é a expressão mais pedida em reuniões de projeto — e o oposto dela é \"at risk\", não \"late\"." },
+          { "en": "\"In parallel\" is how you say you're saving time without saying you're rushing.", "pt": "\"In parallel\" é como se diz que está ganhando tempo sem dizer que está correndo." },
+          { "en": "\"Close-out\" always takes a hyphen as a noun, but \"to close out\" as a verb does not.", "pt": "\"Close-out\" leva hífen como substantivo; \"to close out\" como verbo, não." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now say exactly where your project is — in either register.",
+        "pt": "Agora você diz exatamente onde o seu projeto está — em qualquer registro."
+      }
+    },
+    {
+      "title": "Scope, Schedule and Resources",
+      "focus": "As três restrições e como negociá-las",
+      "character": "us-female",
+      "objective": "Explicar, em inglês, o efeito de mexer em escopo, prazo ou recursos — e negociar qual dos três vai ceder.",
+      "intro": [
+        "Every project runs on three things: <strong>scope</strong> (what), <strong>schedule</strong> (when) and <strong>resources</strong> (who and how much).",
+        "The iron rule: you can't change one without moving another. Someone asks for more scope in the same time with the same team — and that's exactly when you need English.",
+        "This lesson gives you the sentences to say it without saying no."
+      ],
+      "introPt": [
+        "Todo projeto roda sobre três coisas: <strong>scope</strong> (o quê), <strong>schedule</strong> (quando) e <strong>resources</strong> (quem e quanto).",
+        "A regra de ferro: não dá para mudar uma sem mexer nas outras. Alguém pede mais escopo, no mesmo prazo, com o mesmo time — e é exatamente aí que o inglês é necessário.",
+        "Esta lição te dá as frases para dizer isso sem dizer não."
+      ],
+      "vocab": [
+        { "en": "scope creep", "pt": "crescimento silencioso do escopo", "example": "We need to watch out for scope creep." },
+        { "en": "trade-off", "pt": "troca, concessão mútua", "example": "There's a trade-off between speed and cost." },
+        { "en": "to de-scope", "pt": "tirar algo do escopo", "example": "We could de-scope the training package." },
+        { "en": "resource constraint", "pt": "limitação de recursos", "example": "We have a resource constraint in Q3." },
+        { "en": "to fast-track", "pt": "acelerar (fazendo em paralelo)", "example": "We can fast-track it, but the risk goes up." },
+        { "en": "buffer / contingency", "pt": "folga / contingência", "example": "There's a two-week buffer in the schedule." },
+        { "en": "bandwidth", "pt": "capacidade da equipe", "example": "The team doesn't have the bandwidth for this." },
+        { "en": "to re-baseline", "pt": "refazer a linha de base", "example": "If scope grows, we'll have to re-baseline." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Qual restrição está sendo tocada?",
+          "instruction": "Cada pedido mexe principalmente em qual das três restrições?",
+          "categories": [
+            { "id": "scope", "name": "Escopo", "short": "Escopo" },
+            { "id": "schedule", "name": "Prazo", "short": "Prazo" },
+            { "id": "resources", "name": "Recursos", "short": "Recursos" }
+          ],
+          "items": [
+            { "text": "\"Can you also commission the third unit?\"", "cat": "scope" },
+            { "text": "\"We need it two weeks earlier.\"", "cat": "schedule" },
+            { "text": "\"Two of your engineers are being moved to another job.\"", "cat": "resources" },
+            { "text": "\"Add a training package for the operators.\"", "cat": "scope" },
+            { "text": "\"The budget for contractors has been cut.\"", "cat": "resources" },
+            { "text": "\"Can we bring first gas forward to August?\"", "cat": "schedule" }
+          ],
+          "explanation": "Nomear a restrição atingida é o primeiro passo para negociar com dados."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Como dizer que não cabe",
+          "badge": "A ou B",
+          "instruction": "Escolha a resposta que protege o projeto sem travar a relação.",
+          "items": [
+            {
+              "prompt": "Pediram mais escopo, mesmo prazo, mesmo time.",
+              "a": "We can't do that.",
+              "b": "We can absolutely do that — it would move the handover by about three weeks, or we'd need two extra engineers. Which works better for you?",
+              "correct": "b",
+              "why": "Sim condicionado, com duas saídas. Devolve a decisão a quem pediu."
+            },
+            {
+              "prompt": "Perderam dois engenheiros para outro projeto.",
+              "a": "With two engineers less, commissioning moves from September to October. I'd rather flag it now than in August.",
+              "b": "It'll be difficult but we'll try our best.",
+              "correct": "a",
+              "why": "\"We'll try our best\" é o começo de todo atraso não reportado."
+            },
+            {
+              "prompt": "Pediram para acelerar em duas semanas.",
+              "a": "Sure, no problem at all.",
+              "b": "We can fast-track it by running commissioning in parallel — that saves two weeks but increases the rework risk. Happy to do it if you accept that trade-off.",
+              "correct": "b",
+              "why": "Acelerar sempre tem preço. Nomear o preço é o que te protege depois."
+            }
+          ],
+          "explanation": "A fórmula: sim + consequência + escolha para o outro lado."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase da negociação",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Sim condicionado ao prazo.", "answer": "We can do that but it would move the handover by three weeks", "extra": ["moving", "in"] },
+            { "hint": "Oferecer tirar algo do escopo.", "answer": "We could de-scope the training package to protect the date", "extra": ["descoping", "for"] },
+            { "hint": "Avisar sobre capacidade.", "answer": "The team does not have the bandwidth for this in the third quarter", "extra": ["have not", "on"] }
+          ],
+          "explanation": "Três frases que resolvem 90% dos pedidos impossíveis."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que fazer quando o escopo cresce",
+          "instruction": "Marque todas as respostas profissionais.",
+          "prompt": "The customer keeps adding small requests. What should you do?",
+          "options": [
+            { "text": "Log each request, however small.", "correct": true },
+            { "text": "Quantify the cumulative impact on date and cost.", "correct": true },
+            { "text": "Absorb it quietly to keep the customer happy.", "correct": false },
+            { "text": "Raise a variation order when the impact is material.", "correct": true },
+            { "text": "Tell the customer to stop asking.", "correct": false },
+            { "text": "Offer a trade: new scope in, something else out.", "correct": true }
+          ],
+          "explanation": "Scope creep não se combate com irritação — se combate com registro e números."
+        },
+        {
+          "type": "listenChoose",
+          "title": "Ouça e identifique a restrição",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque no áudio e identifique o que está realmente sendo pedido.",
+          "items": [
+            {
+              "audio": "Look, I understand the date is tight, but we simply don't have the bandwidth in the team right now — I'd need two more engineers to make August work.",
+              "options": [
+                { "text": "Ela está pedindo mais recursos para manter o prazo.", "correct": true },
+                { "text": "Ela está pedindo para reduzir o escopo." },
+                { "text": "Ela está recusando o projeto." }
+              ],
+              "why": "\"I'd need two more engineers\" — o pedido é de recurso, não de prazo."
+            },
+            {
+              "audio": "We could still hit September if we de-scope the training package and pick it up as a separate job later.",
+              "options": [
+                { "text": "Ela propõe tirar algo do escopo para proteger a data.", "correct": true },
+                { "text": "Ela propõe adiar a data de entrega." },
+                { "text": "Ela propõe contratar mais gente." }
+              ],
+              "why": "De-scope + \"pick it up later\": o clássico trade-off escopo por prazo."
+            }
+          ],
+          "explanation": "Escute qual das três restrições a pessoa está oferecendo — é ali que está a negociação."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can name which constraint a request is touching.", "pt": "Sei nomear qual restrição um pedido está afetando." },
+            { "en": "I can say yes with a consequence instead of saying no.", "pt": "Sei dizer sim com consequência, em vez de dizer não." },
+            { "en": "I can offer a trade-off in English.", "pt": "Sei oferecer um trade-off em inglês." },
+            { "en": "I can explain that the team doesn't have bandwidth, professionally.", "pt": "Sei dizer que o time não tem capacidade, de forma profissional." }
+          ],
+          "doneMessage": "as três restrições sob controle. Agora, riscos e problemas.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A arte de dizer sim com condição",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "In English project culture, \"no\" is rare. What you hear is \"yes, and here's what it costs\".", "pt": "Na cultura de projetos em inglês, o \"não\" é raro. O que se ouve é \"sim, e este é o custo\"." },
+          { "en": "\"Bandwidth\" borrowed from telecoms means available capacity — of a person or a team.", "pt": "\"Bandwidth\", emprestado das telecomunicações, significa capacidade disponível — de uma pessoa ou de um time." },
+          { "en": "\"I'd rather flag it now than in August\" is one of the most respected sentences a project manager can say.", "pt": "\"I'd rather flag it now than in August\" é uma das frases mais respeitadas que um gerente de projetos pode dizer." },
+          { "en": "\"Trade-off\" always takes a hyphen as a noun; \"to trade off\" as a verb does not.", "pt": "\"Trade-off\" leva hífen como substantivo; \"to trade off\" como verbo, não." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now negotiate scope, schedule and resources without ever saying a flat no.",
+        "pt": "Agora você negocia escopo, prazo e recursos sem nunca dar um não seco."
+      }
+    },
+    {
+      "title": "Risks and Issues",
+      "focus": "Falar do que pode dar errado — e do que já deu",
+      "character": "uk-female",
+      "objective": "Distinguir risco de problema em inglês e reportar cada um com a linguagem certa.",
+      "intro": [
+        "In English project language, a <strong>risk</strong> hasn't happened yet. An <strong>issue</strong> already has.",
+        "Mixing them up makes you sound either alarmist or careless — and both cost credibility.",
+        "A risk gets a probability and a mitigation. An issue gets an owner and a date."
+      ],
+      "introPt": [
+        "Na linguagem de projetos em inglês, um <strong>risk</strong> ainda não aconteceu. Um <strong>issue</strong> já aconteceu.",
+        "Trocar os dois faz você soar alarmista ou desatenta — e as duas coisas custam credibilidade.",
+        "Um risco ganha probabilidade e mitigação. Um problema ganha responsável e data."
+      ],
+      "vocab": [
+        { "en": "risk", "pt": "risco (ainda não ocorreu)", "example": "There's a risk of delay if permits are late." },
+        { "en": "issue", "pt": "problema (já ocorreu)", "example": "We have an issue with the customs clearance." },
+        { "en": "likelihood / impact", "pt": "probabilidade / impacto", "example": "Low likelihood, high impact." },
+        { "en": "to mitigate", "pt": "mitigar", "example": "We mitigated it by ordering a spare in advance." },
+        { "en": "showstopper", "pt": "impeditivo total", "example": "It's serious but it's not a showstopper." },
+        { "en": "to escalate", "pt": "escalar para outro nível", "example": "I'll escalate this to the regional director." },
+        { "en": "workaround", "pt": "solução alternativa temporária", "example": "We have a workaround until the part arrives." },
+        { "en": "root cause", "pt": "causa raiz", "example": "The root cause was a specification error." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Risco ou problema?",
+          "badge": "Leia e responda",
+          "heading": "Project log · week 22",
+          "instruction": "Leia o registro e responda.",
+          "passage": [
+            "RISK — Customs clearance in Rio may take longer than the standard five days during the strike period. Likelihood: medium. Impact: high, as commissioning is on the critical path. Mitigation: shipment brought forward by two weeks and a local agent engaged.",
+            "ISSUE — The control panel delivered on 14 May does not match the specification in Appendix A. Owner: procurement. Target resolution: 30 May. Workaround: manual operation of the valve until the correct panel arrives.",
+            "Neither of these is a showstopper, but if the panel isn't resolved by 30 May, the risk of missing the September handover becomes high."
+          ],
+          "questions": [
+            {
+              "prompt": "Which of the two has already happened?",
+              "options": [
+                { "text": "The customs delay.", "correct": false },
+                { "text": "The wrong control panel.", "correct": true },
+                { "text": "Both of them." }
+              ],
+              "why": "O painel errado foi entregue — é issue. A alfândega ainda pode ou não atrasar — é risk."
+            },
+            {
+              "prompt": "What is the workaround?",
+              "options": [
+                { "text": "Manual operation of the valve.", "correct": true },
+                { "text": "Engaging a local customs agent." },
+                { "text": "Moving the handover to October." }
+              ],
+              "why": "Workaround é a solução provisória que mantém o trabalho andando."
+            },
+            {
+              "prompt": "How is the overall situation described?",
+              "options": [
+                { "text": "As a showstopper." },
+                { "text": "As serious but manageable, with a clear deadline.", "correct": true },
+                { "text": "As under control with no action needed." }
+              ],
+              "why": "\"Neither of these is a showstopper, but if… becomes high\" — honesto e condicional."
+            }
+          ],
+          "explanation": "Risco: likelihood + impact + mitigation. Problema: owner + date + workaround."
+        },
+        {
+          "type": "categorize",
+          "title": "Classifique cada linha",
+          "instruction": "É um risco (ainda não aconteceu) ou um problema (já aconteceu)?",
+          "categories": [
+            { "id": "risk", "name": "Risk · pode acontecer", "short": "Risk" },
+            { "id": "issue", "name": "Issue · já aconteceu", "short": "Issue" }
+          ],
+          "items": [
+            { "text": "The vendor has confirmed a two-week delay on the pump.", "cat": "issue" },
+            { "text": "Heavy rain in August could affect site access.", "cat": "risk" },
+            { "text": "Two engineers resigned last week.", "cat": "issue" },
+            { "text": "The customer may require an extra inspection.", "cat": "risk" },
+            { "text": "The panel delivered does not match the specification.", "cat": "issue" },
+            { "text": "Currency movement might increase import costs.", "cat": "risk" }
+          ],
+          "explanation": "Tempo verbal entrega tudo: perfect/past = issue; may/could/might = risk."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre como esses termos funcionam de verdade.",
+          "items": [
+            { "text": "A risk that has materialised becomes an issue.", "answer": true, "why": "Exatamente: risco que se concretiza vira problema, e muda de coluna no relatório." },
+            { "text": "\"To escalate\" means to make a problem worse.", "answer": false, "why": "Significa levar a um nível hierárquico mais alto para destravar." },
+            { "text": "A workaround is a permanent solution.", "answer": false, "why": "É provisório, por definição — o que espera a solução definitiva." },
+            { "text": "Every risk needs a named mitigation.", "answer": true, "why": "Risco sem mitigação é só preocupação registrada." }
+          ],
+          "explanation": "Escalar não é reclamar: é pedir a decisão a quem tem alçada para tomá-la."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Reportando um problema ao gestor",
+          "badge": "Conversa",
+          "situation": "O painel de controle veio errado. Você precisa contar ao seu gestor regional — e ele odeia surpresas.",
+          "turns": [
+            {
+              "who": "Regional Manager",
+              "them": "Morning Fernanda — anything I need to know from the Macaé job?",
+              "options": [
+                { "text": "Yes — one issue: the control panel delivered on the 14th doesn't match the spec. We have a workaround and a fix date of the 30th.", "correct": true, "why": "Problema, impacto contido, data. Três informações em uma frase." },
+                { "text": "There's a bit of a mess with one of the deliveries, I'll explain later.", "why": "\"A bit of a mess\" e \"later\" são as duas coisas que um gestor não quer ouvir." },
+                { "text": "Everything's fine.", "why": "Omitir custa muito mais caro na semana seguinte." }
+              ]
+            },
+            {
+              "who": "Regional Manager",
+              "them": "Does it put the September handover at risk?",
+              "options": [
+                { "text": "Possibly, we'll see.", "why": "Resposta que não decide nada e ainda deixa a dúvida com ele." },
+                { "text": "Not yet. If the panel isn't resolved by 30 May, then the risk becomes high — I'll flag it that day either way.", "correct": true, "why": "Condição, data e compromisso de avisar. É o padrão-ouro." },
+                { "text": "No, definitely not.", "why": "Garantia que você não pode dar. Se falhar, perde credibilidade para o resto do projeto." }
+              ]
+            },
+            {
+              "who": "Regional Manager",
+              "them": "Do you need anything from me?",
+              "options": [
+                { "text": "No, I'll handle it.", "why": "Recusar ajuda quando ela é oferecida é orgulho, não autonomia." },
+                { "text": "Yes — if procurement hasn't confirmed by Friday, I'd like to escalate to their director. A word from you would speed that up.", "correct": true, "why": "Pedido específico, com gatilho e prazo. Fácil de dizer sim." },
+                { "text": "Maybe, I'll let you know if something comes up.", "why": "Vago demais para virar ação." }
+              ]
+            }
+          ],
+          "explanation": "Problema + contenção + data + pedido específico. É a conversa inteira."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Uma palavra errada em cada frase.",
+          "items": [
+            { "sentence": "We have a risk with the control panel that was delivered wrong.", "wrong": "risk", "fix": "issue", "why": "Já aconteceu — é issue, não risk." },
+            { "sentence": "I will escalate this problem for the regional director.", "wrong": "for", "fix": "to", "why": "To escalate something TO someone." },
+            { "sentence": "We found a workaround until the correct part will arrive.", "wrong": "will", "fix": "(nada)", "why": "Depois de until não se usa futuro: \"until the part arrives\"." },
+            { "sentence": "The root cause was a specification mistake in the appendix A.", "wrong": "the", "fix": "(nada)", "why": "Nomes de anexos não levam artigo: \"in Appendix A\"." }
+          ],
+          "explanation": "Trocar risk por issue é o erro que mais confunde um gestor estrangeiro."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I know the difference between a risk and an issue.", "pt": "Sei a diferença entre risco e problema." },
+            { "en": "I can report a risk with likelihood, impact and mitigation.", "pt": "Reporto um risco com probabilidade, impacto e mitigação." },
+            { "en": "I can report an issue with owner, date and workaround.", "pt": "Reporto um problema com responsável, data e solução provisória." },
+            { "en": "I can ask for help by escalating, with a clear trigger.", "pt": "Sei pedir ajuda escalando, com um gatilho claro." }
+          ],
+          "doneMessage": "riscos e problemas sob controle. Falta só reportar tudo isso.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A gramática do risco",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "Modal verbs carry the risk: may, might and could all say \"not yet\". Present perfect says \"already\".", "pt": "Os modais carregam o risco: may, might e could dizem \"ainda não\". O present perfect diz \"já\"." },
+          { "en": "\"Showstopper\" comes from theatre — originally a performance so good the show had to stop. In business it means the opposite.", "pt": "\"Showstopper\" vem do teatro — originalmente uma apresentação tão boa que o show parava. Nos negócios significa o oposto." },
+          { "en": "\"I'd rather flag it early\" is never criticised in English-speaking companies. Late news is.", "pt": "\"I'd rather flag it early\" nunca é criticado em empresas anglófonas. Notícia tardia, sim." },
+          { "en": "\"Root cause\" belongs to a specific discipline — if you say it, be ready to show the analysis.", "pt": "\"Root cause\" pertence a uma disciplina específica — se você disser, esteja pronta para mostrar a análise." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now report bad news in English and come out with more credibility, not less.",
+        "pt": "Agora você reporta más notícias em inglês e sai com mais credibilidade, não menos."
+      }
+    },
+    {
+      "title": "Status Reporting",
+      "focus": "Relatar progresso: RAG status, marcos e próximos passos",
+      "character": "us-male",
+      "objective": "Escrever e apresentar um status report em inglês que qualquer gestor entende em trinta segundos.",
+      "intro": [
+        "A status report answers four questions and nothing else: <em>where are we</em>, <em>what changed</em>, <em>what's at risk</em>, <em>what's next</em>.",
+        "Most people write four paragraphs. The good ones write four lines and a colour.",
+        "That colour — green, amber, red — is called RAG status, and it does more work than any paragraph."
+      ],
+      "introPt": [
+        "Um status report responde a quatro perguntas e nada mais: <em>onde estamos</em>, <em>o que mudou</em>, <em>o que está em risco</em>, <em>o que vem a seguir</em>.",
+        "A maioria escreve quatro parágrafos. Quem é bom escreve quatro linhas e uma cor.",
+        "Essa cor — verde, âmbar, vermelho — chama-se RAG status, e trabalha mais que qualquer parágrafo."
+      ],
+      "vocab": [
+        { "en": "RAG status (red/amber/green)", "pt": "farol do projeto", "example": "We're amber this month, not red." },
+        { "en": "progress to date", "pt": "progresso até agora", "example": "Progress to date is 62% of planned." },
+        { "en": "next steps", "pt": "próximos passos", "example": "Next steps: confirm site access and mobilise." },
+        { "en": "blocker", "pt": "impedimento", "example": "The only blocker is the customs paperwork." },
+        { "en": "to slip", "pt": "atrasar (uma data)", "example": "The date slipped by one week." },
+        { "en": "ahead of / behind schedule", "pt": "adiantado / atrasado", "example": "We're two days behind schedule." },
+        { "en": "burn rate", "pt": "ritmo de consumo do orçamento", "example": "Our burn rate is in line with plan." },
+        { "en": "forecast completion", "pt": "previsão de conclusão", "example": "Forecast completion is 12 September." }
+      ],
+      "exercises": [
+        {
+          "type": "emailTriage",
+          "title": "Um status report chegou",
+          "badge": "Caixa de entrada",
+          "instruction": "Leia o report e avalie a qualidade dele.",
+          "email": {
+            "channel": "Teams",
+            "from": "Project Controls",
+            "subject": "Macaé — weekly status, week 22",
+            "body": "Status: AMBER (was green last week)\n\nWhere we are: 62% complete against 65% planned. Two of five deliverables signed off.\n\nWhat changed: control panel delivered off-spec on 14 May; procurement is chasing a replacement for 30 May.\n\nAt risk: September handover, IF the panel is not resolved by 30 May.\n\nNext steps: confirm site access for 4 August; weekly check with procurement until the panel lands."
+          },
+          "questions": [
+            {
+              "prompt": "Why is the status amber rather than red?",
+              "options": [
+                { "text": "Because there is a mitigation and a date, and the end date is not lost yet.", "correct": true },
+                { "text": "Because nothing has gone wrong." },
+                { "text": "Because the project is finished." }
+              ],
+              "why": "Âmbar = há um problema real, mas com plano e data. Vermelho = a data final já se perdeu."
+            },
+            {
+              "prompt": "What makes this report strong?",
+              "options": [
+                { "text": "It's long and detailed." },
+                { "text": "Each section answers one question, with numbers and dates.", "correct": true },
+                { "text": "It avoids mentioning problems." }
+              ],
+              "why": "Quatro perguntas, quatro respostas. Nada de enfeite."
+            },
+            {
+              "prompt": "Which line does the most work for a busy manager?",
+              "options": [
+                { "text": "\"Status: AMBER (was green last week)\"", "correct": true },
+                { "text": "\"Two of five deliverables signed off.\"" },
+                { "text": "\"Weekly check with procurement.\"" }
+              ],
+              "why": "A cor mais a mudança de cor. Em dois segundos ele sabe se precisa agir."
+            }
+          ],
+          "explanation": "RAG + o que mudou desde a última vez. É essa combinação que faz um gestor confiar no report."
+        },
+        {
+          "type": "highlightPick",
+          "title": "Onde está a informação acionável?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que dão uma DATA ou um NÚMERO — a informação que permite decidir.",
+          "instruction": "Toque em cada dado concreto.",
+          "text": "We are making good progress overall and the team is working hard . We are 62% complete against plan and the replacement panel is due on 30 May . Everyone is committed to a successful outcome .",
+          "targets": ["62%", "30", "May"],
+          "explanation": "Adjetivo não decide nada. Número e data, sim. Um bom report tem mais dado que elogio."
+        },
+        {
+          "type": "wordBank",
+          "title": "Complete o status report",
+          "instruction": "Escolha a palavra certa para cada lacuna.",
+          "bank": ["behind", "blocker", "slipped", "amber", "next"],
+          "items": [
+            { "text": "We're two days ___ schedule.", "answer": "behind" },
+            { "text": "The only ___ is the customs paperwork.", "answer": "blocker" },
+            { "text": "The commissioning date ___ by one week.", "answer": "slipped" },
+            { "text": "We're ___ this month, not red.", "answer": "amber" },
+            { "text": "___ steps: confirm site access and mobilise.", "answer": "next" }
+          ],
+          "explanation": "Cinco palavras que fazem um report inteiro."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o status report",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as linhas na ordem em que um bom report é lido.",
+          "items": [
+            "Status: AMBER (was green last week).",
+            "Where we are: 62% complete against 65% planned.",
+            "What changed: the control panel was delivered off-spec on 14 May.",
+            "At risk: the September handover, if the panel isn't resolved by 30 May.",
+            "Next steps: confirm site access for 4 August."
+          ],
+          "explanation": "Cor → posição → mudança → risco → ação. Sempre nessa ordem, sempre nessa sequência."
+        },
+        {
+          "type": "listenGap",
+          "title": "Ouça o report falado",
+          "badge": "Ouça e complete",
+          "instruction": "Ouça o áudio completo e complete as frases.",
+          "audioText": "We're amber this week, down from green. We're sixty-two per cent complete against sixty-five planned, so we're slightly behind. The main blocker is the replacement control panel, due on the thirtieth of May. Forecast completion is still the twelfth of September, but that assumes the panel lands on time.",
+          "bank": ["amber", "sixty-two", "blocker", "thirtieth", "assumes"],
+          "items": [
+            { "text": "We're ___ this week, down from green.", "answer": "amber" },
+            { "text": "We're ___ per cent complete.", "answer": "sixty-two" },
+            { "text": "The main ___ is the replacement control panel.", "answer": "blocker" },
+            { "text": "It's due on the ___ of May.", "answer": "thirtieth" },
+            { "text": "That ___ the panel lands on time.", "answer": "assumes" }
+          ],
+          "explanation": "\"That assumes…\" é a palavra que protege a sua previsão. Use sempre que houver condição."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Project Management",
+          "items": [
+            { "en": "I can write a status report in four lines.", "pt": "Escrevo um status report em quatro linhas." },
+            { "en": "I can explain why a project is amber rather than red.", "pt": "Sei explicar por que um projeto está âmbar e não vermelho." },
+            { "en": "I use numbers and dates instead of adjectives.", "pt": "Uso números e datas em vez de adjetivos." },
+            { "en": "I can protect a forecast with \"that assumes…\".", "pt": "Sei proteger uma previsão com \"that assumes…\"." },
+            { "en": "Looking at the whole topic: I can run a project conversation in English.", "pt": "Olhando o tópico inteiro: conduzo uma conversa de projeto em inglês." }
+          ],
+          "doneMessage": "tópico Project Management concluído. Próximo: comunicação com clientes.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que um bom report faz por você",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "RAG comes from traffic lights. Amber doesn't mean \"a bit worried\" — it means there IS a problem, with a plan attached.", "pt": "RAG vem do semáforo. Âmbar não significa \"um pouco preocupado\" — significa que HÁ um problema, com plano." },
+          { "en": "Always show the previous colour: \"amber, was green\" tells a manager whether things are getting better or worse.", "pt": "Mostre sempre a cor anterior: \"amber, was green\" diz ao gestor se a coisa piora ou melhora." },
+          { "en": "\"Slip\" is the polite verb for a date moving — it happens to the date, not to a person.", "pt": "\"Slip\" é o verbo educado para uma data que se move — acontece com a data, não com uma pessoa." },
+          { "en": "A report that never turns amber isn't a report — it's a press release.", "pt": "Um report que nunca fica âmbar não é report — é release de imprensa." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now report a project in English so clearly that nobody needs to call you afterwards.",
+        "pt": "Agora você reporta um projeto em inglês com tanta clareza que ninguém precisa te ligar depois."
+      }
+    }
+  ]
+}

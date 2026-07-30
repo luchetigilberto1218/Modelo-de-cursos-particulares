@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function BakerHughesTrack({ course, theme, clientId, trackId }) {
+export default function BakerHughesTrack({ course, theme, clientId, trackId, student }) {
   const c = theme?.colors || {};
   const navy = c.navy || '#062E2B';
   const navyLight = c.navyLight || '#0E4A44';
@@ -42,12 +42,38 @@ export default function BakerHughesTrack({ course, theme, clientId, trackId }) {
       </div>
 
       <div style={{ maxWidth: 880, margin: '0 auto', padding: '28px 24px 70px', display: 'grid', gap: 12 }}>
-        {lessons.map((l, i) => (
-          <LessonRow key={l.num} lesson={l} clientId={clientId} index={i} c={c} />
+        {groupByTopic(lessons).map((group, gi) => (
+          <div key={gi} style={{ display: 'grid', gap: 12 }}>
+            {group.topic && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: gi === 0 ? '0 0 2px' : '20px 0 2px' }}>
+                <span style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: accent, whiteSpace: 'nowrap' }}>
+                  Tópico {gi + 1} · {group.topic}
+                </span>
+                <span style={{ height: 1, flex: 1, background: grayLight }} />
+                <span style={{ fontSize: 12, color: gray, whiteSpace: 'nowrap' }}>{group.items.length} lições</span>
+              </div>
+            )}
+            {group.items.map((l) => (
+              <LessonRow key={l.num} lesson={l} clientId={clientId} index={lessons.indexOf(l)} c={c} />
+            ))}
+          </div>
         ))}
       </div>
     </div>
   );
+}
+
+/* Agrupa as lições por `topic` mantendo a ordem. Trilha sem topic vira um
+   único grupo sem cabeçalho — as 9 trilhas antigas seguem exatamente iguais. */
+function groupByTopic(lessons) {
+  if (!lessons.some((l) => l.topic)) return [{ topic: null, items: lessons }];
+  const groups = [];
+  for (const l of lessons) {
+    const last = groups[groups.length - 1];
+    if (last && last.topic === (l.topic || null)) last.items.push(l);
+    else groups.push({ topic: l.topic || null, items: [l] });
+  }
+  return groups;
 }
 
 function LessonRow({ lesson, clientId, index, c }) {

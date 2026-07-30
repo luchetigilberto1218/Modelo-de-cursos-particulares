@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Exercise from '../Exercise';
 import AudioPlayer from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
+import BhExercise, { BH_EXTRA_TYPES, BH_UNGRADED_TYPES } from './BhExercises';
 
 /*
   Baker Hughes — self-study lesson renderer (async, no teacher).
@@ -20,7 +21,7 @@ function normalize(s) {
   return (s || '').toString().trim().toLowerCase().replace(/[.,!?]/g, '').replace(/\s+/g, ' ');
 }
 
-export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, nextNum, backHref }) {
+export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, nextNum, backHref, student, position }) {
   const l = lesson;
   const c = theme?.colors || {};
   const navy = c.navy || '#062E2B';
@@ -39,13 +40,30 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
 
   // Completion tracking — the "lesson complete" card only shows once the
   // gradeable exercises have actually been answered (right or wrong).
-  const GRADEABLE = ['wordBank', 'verbFill', 'quickDrill', ...RACIONAL_TYPES.filter(t => t !== 'info')];
+  const GRADEABLE = [
+    'wordBank', 'verbFill', 'quickDrill',
+    ...RACIONAL_TYPES.filter(t => t !== 'info'),
+    // formatos novos das trilhas personalizadas (BhExercises); o check-off é
+    // auto-avaliação e por isso não conta para fechar a lição.
+    ...BH_EXTRA_TYPES.filter(t => !BH_UNGRADED_TYPES.includes(t)),
+  ];
   const gradeableIdx = exercises.map((ex, i) => (GRADEABLE.includes(ex.type) ? i : null)).filter(i => i !== null);
   const [doneSet, setDoneSet] = useState({});
   const markDone = (i) => setDoneSet(prev => (prev[i] ? prev : { ...prev, [i]: true }));
   const doneCount = gradeableIdx.filter(i => doneSet[i]).length;
   const totalGradeable = gradeableIdx.length;
   const allDone = totalGradeable > 0 && doneCount >= totalGradeable;
+
+  // Ponto de retomada: a home lê isto para dizer "continue de onde parou".
+  // Só no navegador de quem estuda — nada sai daqui.
+  useEffect(() => {
+    if (!l.track) return;
+    try {
+      window.localStorage.setItem(`bh:last:${clientId}:${l.track}`, JSON.stringify({
+        num: l.num, title: l.title, order: position?.index || l.trackOrder || l.num,
+      }));
+    } catch { /* navegador sem localStorage: só não lembra */ }
+  }, [clientId, l.track, l.num, l.title, l.trackOrder, position?.index]);
 
   return (
     <div style={{ minHeight: '100vh', background: offWhite, fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", color: text, WebkitFontSmoothing: 'antialiased' }}>
@@ -71,6 +89,11 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
           <span style={{ display: 'inline-block', fontSize: 13, padding: '5px 12px', borderRadius: 999, background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.18)' }}>{l.focus}</span>
         </div>
       </div>
+
+      {/* Onde você está — a lição do dia dentro da trilha, sempre visível */}
+      {position?.total > 1 && (
+        <YouAreHere position={position} student={student} l={l} c={c} clientId={clientId} />
+      )}
 
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '28px 24px 60px' }}>
 
@@ -130,6 +153,9 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
               if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill key={i} ex={ex} c={c} onChecked={() => markDone(i)} />;
               if (ex.type === 'readAloud') return <ReadAloud key={i} ex={ex} c={c} voiceType={voiceType} />;
               if (ex.type === 'makeItYourOwn') return <MakeItYourOwn key={i} ex={ex} c={c} voiceType={voiceType} />;
+              if (BH_EXTRA_TYPES.includes(ex.type)) {
+                return <BhExercise key={i} ex={ex} c={c} voiceType={voiceType} seed={(l.num || 1) * 31 + i} onChecked={() => markDone(i)} />;
+              }
               return null;
             })}
           </>
@@ -202,6 +228,41 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
           {prevNum ? <BhBtn href={`/${clientId}/lesson/${prevNum}`} c={c} outline>← Anterior</BhBtn> : <span />}
           <Link href={backHref || `/${clientId}`} style={{ color: gray, textDecoration: 'none', fontSize: 14 }}>Todas as lições</Link>
           {nextNum ? <BhBtn href={`/${clientId}/lesson/${nextNum}`} c={c}>Próxima lição →</BhBtn> : <span />}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ── "Onde você está" — faixa fina abaixo do hero com a lição do dia,
+      o tópico atual e o quanto já foi andado na trilha. ── */
+function YouAreHere({ position, student, l, c, clientId }) {
+  const navy = c.navy || '#062E2B';
+  const accent = c.accent || '#00B04F';
+  const gray = c.gray || '#5F7570';
+  const grayLight = c.grayLight || '#E2E9E7';
+  const { index, total, topic, trackName } = position;
+  const pct = Math.round((index / total) * 100);
+  const firstName = (student || '').split(' ')[0];
+
+  return (
+    <div style={{ background: '#fff', borderBottom: `1px solid ${grayLight}` }}>
+      <div style={{ maxWidth: 820, margin: '0 auto', padding: '14px 24px', display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+        <div style={{ flex: '1 1 260px', minWidth: 0 }}>
+          <div style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: accent, marginBottom: 4 }}>
+            {firstName ? `A lição de hoje, ${firstName}` : 'A lição de hoje'}
+          </div>
+          <div style={{ fontSize: 13.5, color: gray, lineHeight: 1.45 }}>
+            <strong style={{ color: navy }}>{index} de {total}</strong>
+            {trackName ? ` · ${trackName}` : ''}
+            {topic ? ` · tópico: ${topic}` : ''}
+          </div>
+        </div>
+        <div style={{ flex: '1 1 200px', minWidth: 160 }}>
+          <div style={{ height: 7, borderRadius: 999, background: grayLight, overflow: 'hidden' }}>
+            <div style={{ width: `${pct}%`, height: '100%', background: accent, borderRadius: 999, transition: 'width 0.4s' }} />
+          </div>
+          <div style={{ fontSize: 11.5, color: gray, marginTop: 5, textAlign: 'right' }}>{pct}% da trilha</div>
         </div>
       </div>
     </div>

@@ -1,0 +1,638 @@
+{
+  "topic": "Leadership and People First",
+  "lessons": [
+    {
+      "title": "Giving Feedback",
+      "focus": "Elogiar e corrigir com a estrutura certa",
+      "character": "us-female",
+      "objective": "Dar feedback em inglês — positivo e corretivo — com fato, efeito e pedido, sem julgar a pessoa.",
+      "intro": [
+        "Feedback in English follows one reliable shape: <strong>situation</strong>, <strong>behaviour</strong>, <strong>impact</strong> — and then the ask.",
+        "What it never does is describe the person. \"You're disorganised\" is a verdict. \"The report arrived after the meeting\" is a fact.",
+        "The first starts an argument. The second starts a conversation."
+      ],
+      "introPt": [
+        "Feedback em inglês segue uma forma confiável: <strong>situação</strong>, <strong>comportamento</strong>, <strong>impacto</strong> — e então o pedido.",
+        "O que ele nunca faz é descrever a pessoa. \"You're disorganised\" é veredito. \"The report arrived after the meeting\" é fato.",
+        "O primeiro começa uma discussão. O segundo começa uma conversa."
+      ],
+      "vocab": [
+        { "en": "feedback", "pt": "retorno, devolutiva", "example": "Can I give you some feedback on the report?" },
+        { "en": "to land well", "pt": "ser bem recebido", "example": "Your update landed really well with the customer." },
+        { "en": "the impact was…", "pt": "o efeito foi…", "example": "The impact was that we lost a day." },
+        { "en": "what would help me is…", "pt": "o que me ajudaria é…", "example": "What would help me is a heads-up the day before." },
+        { "en": "to check in", "pt": "conferir como está", "example": "I wanted to check in after last week." },
+        { "en": "I noticed…", "pt": "eu percebi…", "example": "I noticed you took the whole Q&A yourself." },
+        { "en": "how did you find…?", "pt": "como foi para você…?", "example": "How did you find the customer call?" },
+        { "en": "for what it's worth", "pt": "se serve de algo", "example": "For what it's worth, I'd have done the same." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Fato ou julgamento?",
+          "instruction": "Feedback útil descreve fatos. Classifique cada frase.",
+          "categories": [
+            { "id": "fact", "name": "Fato observável", "short": "Fato" },
+            { "id": "judgement", "name": "Julgamento", "short": "Julgamento" }
+          ],
+          "items": [
+            { "text": "The report arrived twenty minutes after the meeting started.", "cat": "fact" },
+            { "text": "You're disorganised.", "cat": "judgement" },
+            { "text": "You answered every technical question without notes.", "cat": "fact" },
+            { "text": "You don't care about deadlines.", "cat": "judgement" },
+            { "text": "In the last three calls you spoke after the customer had already decided.", "cat": "fact" },
+            { "text": "You're too passive in meetings.", "cat": "judgement" }
+          ],
+          "explanation": "Todo julgamento tem um fato por trás. Diga o fato — o julgamento a pessoa tira sozinha."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o feedback corretivo",
+          "badge": "Coloque em ordem",
+          "instruction": "Situação → comportamento → impacto → pedido. Coloque na ordem.",
+          "items": [
+            "Can I give you some feedback on yesterday's call?",
+            "The status report came through twenty minutes after we'd started.",
+            "The impact was that the director made the decision without the cost numbers.",
+            "What would help me is having it the evening before, even if it's still draft.",
+            "Does that work for you?"
+          ],
+          "explanation": "Pedir licença, dar o fato, dar o efeito, pedir o ajuste, confirmar. Cinco frases."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual feedback funciona?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que produz mudança em vez de defesa.",
+          "items": [
+            {
+              "prompt": "Elogiando uma boa apresentação.",
+              "a": "Great job today, well done!",
+              "b": "Your opening landed really well — you gave the decision in the first thirty seconds and the room stayed with you. Keep doing exactly that.",
+              "correct": "b",
+              "why": "Elogio genérico não ensina nada. Elogio específico faz a pessoa repetir o comportamento certo."
+            },
+            {
+              "prompt": "Corrigindo um atraso recorrente.",
+              "a": "You always send things late.",
+              "b": "In the last three weeks the report came in after the meeting. The impact is that we discuss without numbers. What would help?",
+              "correct": "b",
+              "why": "\"Always\" é impossível de defender e fácil de negar. Três semanas é verificável."
+            },
+            {
+              "prompt": "Depois de uma call difícil com o cliente.",
+              "a": "You should have handled that differently.",
+              "b": "How did you find that call? … From where I sat, the moment that changed it was when you gave the date with the condition attached.",
+              "correct": "b",
+              "why": "Pergunta primeiro, observação depois. A pessoa quase sempre já sabe — e assim ela conclui sozinha."
+            }
+          ],
+          "explanation": "Específico, verificável e com pergunta. É essa a diferença entre feedback e opinião."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Feedback que a pessoa não esperava",
+          "badge": "Conversa",
+          "situation": "Um analista do seu time entregou uma análise com erro de número, que foi para a diretoria.",
+          "turns": [
+            {
+              "who": "Analyst",
+              "them": "I heard the numbers in my analysis were wrong. I'm really sorry, I don't know how that happened.",
+              "options": [
+                { "text": "It's fine, don't worry about it.", "why": "Minimizar impede o aprendizado — e o erro vai voltar." },
+                { "text": "Let's look at it together — not to find blame, but because I want to know where the process broke. Can you walk me through how you built the table?", "correct": true, "why": "Tira o foco da pessoa e põe no processo. É o que faz alguém contar a verdade." },
+                { "text": "This is serious, it went to the director.", "why": "Ela já sabe. Repetir a gravidade só aumenta o medo e diminui a informação." }
+              ]
+            },
+            {
+              "who": "Analyst",
+              "them": "I copied the figures from last month's file and didn't notice one column hadn't updated.",
+              "options": [
+                { "text": "That's exactly the kind of thing that's easy to miss and expensive to fix. Two things: a check on the source column before it goes out, and — this matters more — flag it to me the moment you spot something, even after it's gone.", "correct": true, "why": "Nomeia a correção e o comportamento que quer ver: avisar cedo." },
+                { "text": "You need to be more careful.", "why": "\"Be more careful\" não é um processo. Nada muda." },
+                { "text": "I'll review everything you send from now on.", "why": "Punição disfarçada de controle: dobra o seu trabalho e reduz a autonomia dela." }
+              ]
+            },
+            {
+              "who": "Analyst",
+              "them": "Should I tell the director myself?",
+              "options": [
+                { "text": "No, I'll handle it.", "why": "Protege demais e tira dela a chance de reconstruir a própria credibilidade." },
+                { "text": "Yes — send a short correction with the right figure and one line on what changed. I'll copy myself in so it's clear you have my backing.", "correct": true, "why": "Ela assume, e você a cobre publicamente. É assim que se constrói alguém." },
+                { "text": "Up to you.", "why": "Num momento de fragilidade, \"você que sabe\" soa como abandono." }
+              ]
+            }
+          ],
+          "explanation": "Processo em vez de culpa, correção concreta, e apoio visível na hora de reparar."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases de feedback",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Pedir licença para o feedback.", "answer": "Can I give you some feedback on yesterday's call", "extra": ["giving", "about of"] },
+            { "hint": "Descrever o impacto.", "answer": "The impact was that we discussed it without the cost numbers", "extra": ["impacted", "for"] },
+            { "hint": "Pedir o ajuste.", "answer": "What would help me is having it the evening before", "extra": ["helping", "to have it"] }
+          ],
+          "explanation": "Licença, impacto, pedido. Três frases e o feedback está dado."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I describe facts, not the person.", "pt": "Descrevo fatos, não a pessoa." },
+            { "en": "I always name the impact.", "pt": "Sempre nomeio o impacto." },
+            { "en": "My praise is specific enough to be repeatable.", "pt": "Meu elogio é específico o bastante para ser repetido." },
+            { "en": "I ask \"how did you find it?\" before giving my view.", "pt": "Pergunto \"how did you find it?\" antes de dar a minha visão." }
+          ],
+          "doneMessage": "feedback dominado. Agora, a conversa de desenvolvimento.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O feedback que muda algo",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"Always\" and \"never\" are the two words that turn feedback into an argument. Use dates and counts instead.", "pt": "\"Always\" e \"never\" são as duas palavras que transformam feedback em discussão. Use datas e contagens." },
+          { "en": "\"Can I give you some feedback?\" gives the other person a second to prepare — and that second changes how it lands.", "pt": "\"Can I give you some feedback?\" dá à outra pessoa um segundo para se preparar — e esse segundo muda tudo." },
+          { "en": "Praise that isn't specific can't be repeated. \"Great job\" teaches nothing.", "pt": "Elogio sem especificidade não pode ser repetido. \"Great job\" não ensina nada." },
+          { "en": "\"What would help me is…\" turns a complaint into a request. Requests get acted on.", "pt": "\"What would help me is…\" transforma queixa em pedido. Pedidos são atendidos." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now give feedback in English that changes behaviour instead of starting a fight.",
+        "pt": "Agora você dá feedback em inglês que muda comportamento em vez de começar briga."
+      }
+    },
+    {
+      "title": "One-to-Ones and Development",
+      "focus": "Conversas de desenvolvimento e carreira",
+      "character": "uk-female",
+      "objective": "Conduzir (ou participar de) uma conversa de desenvolvimento em inglês: o que está indo bem, o que trava e o que vem a seguir.",
+      "intro": [
+        "A one-to-one isn't a status meeting with fewer people. The project has its own meeting.",
+        "This one is about the person: <strong>how are things going</strong>, <strong>what's getting in the way</strong>, <strong>where do you want to go</strong>.",
+        "In English there's a set of questions that open people up — and a set that closes them down. This lesson gives you both, so you can choose."
+      ],
+      "introPt": [
+        "Um one-to-one não é uma reunião de status com menos gente. O projeto já tem a reunião dele.",
+        "Esta é sobre a pessoa: <strong>como as coisas estão indo</strong>, <strong>o que está atrapalhando</strong>, <strong>para onde você quer ir</strong>.",
+        "Em inglês existe um conjunto de perguntas que abre as pessoas — e outro que as fecha. Esta lição te dá os dois, para você escolher."
+      ],
+      "vocab": [
+        { "en": "one-to-one (1:1)", "pt": "conversa individual", "example": "Let's cover that in our one-to-one." },
+        { "en": "how are you finding…?", "pt": "como está sendo para você…?", "example": "How are you finding the new role?" },
+        { "en": "what's getting in the way?", "pt": "o que está atrapalhando?", "example": "What's getting in the way at the moment?" },
+        { "en": "to stretch someone", "pt": "desafiar, expandir", "example": "This project would stretch you a bit." },
+        { "en": "development area", "pt": "área a desenvolver", "example": "Presenting to senior stakeholders is a development area." },
+        { "en": "to play to your strengths", "pt": "usar seus pontos fortes", "example": "That role plays to your strengths." },
+        { "en": "where do you see yourself…?", "pt": "onde você se vê…?", "example": "Where do you see yourself in two years?" },
+        { "en": "to back someone", "pt": "apoiar alguém", "example": "I'll back you on that with the regional team." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Pergunta que abre ou que fecha?",
+          "badge": "A ou B",
+          "instruction": "Escolha a pergunta que faz a pessoa falar de verdade.",
+          "items": [
+            {
+              "prompt": "Abrindo a conversa.",
+              "a": "Everything ok?",
+              "b": "How are you finding the new scope — what's been easier than you expected, and what's been harder?",
+              "correct": "b",
+              "why": "\"Everything ok?\" recebe \"yes\" em 99% dos casos. A segunda pergunta é impossível de responder com uma palavra."
+            },
+            {
+              "prompt": "Investigando um problema.",
+              "a": "What's getting in the way at the moment?",
+              "b": "Why haven't you finished the analysis?",
+              "correct": "a",
+              "why": "A primeira busca o obstáculo; a segunda busca um culpado. Só uma delas produz informação."
+            },
+            {
+              "prompt": "Falando de futuro.",
+              "a": "Do you want a promotion?",
+              "b": "What kind of work would you like more of in a year's time?",
+              "correct": "b",
+              "why": "Promoção é uma resposta binária. Tipo de trabalho revela o que a pessoa realmente quer."
+            }
+          ],
+          "explanation": "Pergunta aberta, sobre obstáculo e sobre trabalho — não sobre cargo."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o one-to-one",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as partes na ordem de uma conversa de desenvolvimento.",
+          "items": [
+            "How are you finding things at the moment — genuinely?",
+            "What's been going well that I might not have seen?",
+            "What's getting in the way?",
+            "Here's what I'm seeing from my side, for what it's worth.",
+            "So what would you like more of over the next six months?",
+            "Right — two things I'll do, and two things you'll do. Let's write them down."
+          ],
+          "explanation": "Escutar antes de falar. A visão do gestor vem em quarto lugar, nunca em primeiro."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a conversa",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a expressão certa em cada lacuna.",
+          "text": "So, how are you ___ the new scope? … And what's ___ in the way at the moment? … For what it's ___ , from where I sit the customer work really ___ to your strengths — the technical depth is what they keep mentioning. Presenting to the regional board is probably your main ___ area right now, and honestly that's just exposure. Where do you ___ yourself in a couple of years?",
+          "gaps": [
+            { "options": ["finding", "seeing", "looking"], "answer": "finding", "why": "\"How are you finding…?\" — como está sendo para você." },
+            { "options": ["getting", "putting", "standing"], "answer": "getting", "why": "\"What's getting in the way?\" — o que está atrapalhando." },
+            { "options": ["worth", "value", "price"], "answer": "worth", "why": "\"For what it's worth\" — se serve de algo." },
+            { "options": ["plays", "goes", "fits"], "answer": "plays", "why": "\"To play to someone's strengths\" — usar os pontos fortes." },
+            { "options": ["development", "developing", "improvement"], "answer": "development", "why": "\"Development area\" é o termo padrão em avaliação." },
+            { "options": ["see", "look", "find"], "answer": "see", "why": "\"Where do you see yourself…?\" — expressão fixa." }
+          ],
+          "explanation": "Seis expressões que estruturam qualquer conversa de desenvolvimento em inglês."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que faz um one-to-one valer a pena",
+          "instruction": "Marque tudo o que funciona.",
+          "prompt": "You have thirty minutes with someone in your team.",
+          "options": [
+            { "text": "Ask before telling.", "correct": true },
+            { "text": "Leave silence after a question.", "correct": true },
+            { "text": "Go through the project status list.", "correct": false },
+            { "text": "End with commitments on both sides.", "correct": true },
+            { "text": "Take notes and follow up next time.", "correct": true },
+            { "text": "Fill any pause so it doesn't get awkward.", "correct": false }
+          ],
+          "explanation": "O silêncio depois da pergunta é onde a resposta real aparece. Aguente três segundos."
+        },
+        {
+          "type": "readAloud",
+          "title": "Ensaie as perguntas que abrem",
+          "instruction": "Ouça, repita e grave. Perguntas boas precisam sair naturais — se forem lidas, soam como avaliação.",
+          "sentences": [
+            "How are you finding the new scope?",
+            "What's been going well that I might not have seen?",
+            "What's getting in the way at the moment?",
+            "For what it's worth, from where I sit that work plays to your strengths.",
+            "What would you like more of over the next six months?"
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I ask open questions instead of \"everything ok?\".", "pt": "Faço perguntas abertas em vez de \"está tudo bem?\"." },
+            { "en": "I listen before giving my view.", "pt": "Escuto antes de dar a minha visão." },
+            { "en": "I can talk about strengths and development areas in English.", "pt": "Falo de pontos fortes e áreas a desenvolver em inglês." },
+            { "en": "I end with commitments on both sides.", "pt": "Encerro com compromissos dos dois lados." }
+          ],
+          "doneMessage": "conversa de desenvolvimento dominada. Agora, People First.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "As perguntas que abrem gente",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"How are you finding it?\" invites an honest answer; \"Is everything ok?\" invites \"yes\".", "pt": "\"How are you finding it?\" convida a uma resposta honesta; \"Is everything ok?\" convida a um \"sim\"." },
+          { "en": "Three seconds of silence after a question is where the real answer lives. Most managers fill it.", "pt": "Três segundos de silêncio depois de uma pergunta é onde vive a resposta real. A maioria dos gestores preenche esse espaço." },
+          { "en": "\"For what it's worth\" softens an opinion so it can be rejected without conflict.", "pt": "\"For what it's worth\" suaviza uma opinião para que ela possa ser recusada sem conflito." },
+          { "en": "\"What's getting in the way?\" assumes the obstacle is external — which makes it safe to answer honestly.", "pt": "\"What's getting in the way?\" presume que o obstáculo é externo — o que torna seguro responder com honestidade." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now hold a real development conversation in English.",
+        "pt": "Agora você conduz uma conversa de desenvolvimento de verdade em inglês."
+      }
+    },
+    {
+      "title": "People First",
+      "focus": "Reconhecimento, segurança psicológica e o direito de falar",
+      "character": "us-male",
+      "objective": "Falar de segurança, inclusão e reconhecimento em inglês — a linguagem do People First na prática.",
+      "intro": [
+        "\"People First\" only means something if the language matches it in the small moments.",
+        "That means naming contributions out loud, making it safe to raise a concern, and stopping work when something isn't right.",
+        "In an energy company, this isn't soft. It's the same principle as safety: the person who speaks up early prevents the incident."
+      ],
+      "introPt": [
+        "\"People First\" só significa alguma coisa se a linguagem acompanhar nos pequenos momentos.",
+        "Isso quer dizer nomear contribuições em voz alta, tornar seguro levantar uma preocupação e parar o trabalho quando algo não está certo.",
+        "Numa empresa de energia, isso não é tema leve. É o mesmo princípio da segurança: quem fala cedo evita o incidente."
+      ],
+      "vocab": [
+        { "en": "to speak up", "pt": "levantar a voz, se manifestar", "example": "Thanks for speaking up about that." },
+        { "en": "psychological safety", "pt": "segurança psicológica", "example": "Psychological safety is what makes people report near misses." },
+        { "en": "to give credit", "pt": "dar crédito", "example": "Credit to Ana — that was her idea." },
+        { "en": "stop work authority", "pt": "autoridade para parar o trabalho", "example": "Everyone on site has stop work authority." },
+        { "en": "near miss", "pt": "quase acidente", "example": "We report near misses, not just incidents." },
+        { "en": "to raise a concern", "pt": "levantar uma preocupação", "example": "I'd like to raise a concern about the schedule." },
+        { "en": "to have someone's back", "pt": "apoiar alguém", "example": "I've got your back on this." },
+        { "en": "no blame culture", "pt": "cultura sem culpabilização", "example": "A no blame culture is how you get the truth early." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Por que as pessoas ficam caladas",
+          "badge": "Leia e responda",
+          "heading": "Note from an HSE review",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "In the review, three of the four people who noticed the alignment problem said they had not raised it. Two said they assumed someone more senior had already seen it. One said the last person who stopped work on that crew had been questioned about the delay for a week afterwards.",
+            "None of them lacked technical knowledge. What was missing was the belief that speaking up would be welcomed rather than costly.",
+            "The recommendation was not more training. It was that supervisors publicly thank the person who raises a concern — including, and especially, when the concern turns out to be unfounded."
+          ],
+          "questions": [
+            {
+              "prompt": "Why didn't people speak up?",
+              "options": [
+                { "text": "They didn't know enough technically." },
+                { "text": "They expected speaking up to cost them something.", "correct": true },
+                { "text": "They didn't notice the problem." }
+              ],
+              "why": "Os três notaram. O que faltou foi a expectativa de que falar seria bem recebido."
+            },
+            {
+              "prompt": "Why thank people even when the concern is unfounded?",
+              "options": [
+                { "text": "To be polite." },
+                { "text": "Because otherwise people only speak up when they're certain — and certainty comes too late.", "correct": true },
+                { "text": "Because it's a company rule." }
+              ],
+              "why": "Se só o alarme certo é premiado, ninguém dá o alarme duvidoso. E é o duvidoso que chega a tempo."
+            },
+            {
+              "prompt": "Which sentence would you say as a supervisor?",
+              "options": [
+                { "text": "\"Thanks for raising it — I'd rather look at ten of these than miss one.\"", "correct": true },
+                { "text": "\"Next time make sure before you stop the job.\"" },
+                { "text": "\"It was nothing, but ok.\"" }
+              ],
+              "why": "A primeira frase é a política inteira em quinze palavras."
+            }
+          ],
+          "explanation": "Segurança psicológica não é sentimento. É o cálculo que a pessoa faz antes de abrir a boca."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "O que a sua resposta ensina ao time",
+          "badge": "A ou B",
+          "instruction": "Escolha a resposta que aumenta a chance de alguém falar da próxima vez.",
+          "items": [
+            {
+              "prompt": "Alguém para o trabalho e o alarme era falso.",
+              "a": "Thanks for stopping it — I'd rather look at ten of these than miss one. What made you uneasy?",
+              "b": "Ok, but next time check first.",
+              "correct": "a",
+              "why": "\"Check first\" ensina o time a esperar pela certeza — que sempre chega tarde demais."
+            },
+            {
+              "prompt": "Uma boa ideia da equipe é apresentada à diretoria.",
+              "a": "We came up with a way to resequence the commissioning.",
+              "b": "Ana came up with the resequencing — I'll let her explain it, she knows it better than I do.",
+              "correct": "b",
+              "why": "Dar crédito nominal custa nada e compra tudo. E dar o palco custa ainda menos."
+            },
+            {
+              "prompt": "Alguém do time levanta uma preocupação numa call com o cliente.",
+              "a": "(deixar passar e falar com a pessoa depois em particular)",
+              "b": "That's a fair point and I'm glad it came up now rather than in August. Let's take two minutes on it.",
+              "correct": "b",
+              "why": "Apoiar publicamente na hora é o que sinaliza ao resto do time que é seguro falar."
+            }
+          ],
+          "explanation": "O time aprende com o que acontece com quem fala — não com o que está escrito na política."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases do People First",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Agradecer quem levantou a preocupação.", "answer": "Thanks for raising it I would rather look at ten of these than miss one", "extra": ["rising", "for"] },
+            { "hint": "Dar crédito nominal.", "answer": "Credit to Ana that was her idea not mine", "extra": ["Crediting", "for"] },
+            { "hint": "Apoiar publicamente.", "answer": "I have got your back on this one", "extra": ["have get", "in"] }
+          ],
+          "explanation": "Três frases curtas que fazem mais pela cultura que qualquer treinamento."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre a linguagem de segurança e inclusão.",
+          "items": [
+            { "text": "A near miss should be reported even though nothing happened.", "answer": true, "why": "É justamente o quase acidente que revela o risco antes do incidente." },
+            { "text": "Stop work authority belongs only to supervisors.", "answer": false, "why": "É de todos no site — é esse o princípio inteiro." },
+            { "text": "Thanking someone for a false alarm encourages carelessness.", "answer": false, "why": "Encoraja o alarme precoce, que é o único que chega a tempo." },
+            { "text": "Giving credit by name in front of leadership is a leadership behaviour.", "answer": true, "why": "Quem dá crédito não perde autoridade — ganha lealdade." }
+          ],
+          "explanation": "Estas quatro respostas são a diferença entre uma política e uma cultura."
+        },
+        {
+          "type": "highlightPick",
+          "title": "O que torna seguro falar?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que dizem à pessoa que ela está SEGURA para falar.",
+          "instruction": "Toque em cada sinal de segurança.",
+          "text": "Thanks for raising it . I would rather look at ten of these than miss one . No blame here — I just want to understand what you saw . I have got your back on this .",
+          "targets": ["Thanks", "rather", "blame", "back"],
+          "explanation": "Agradecer, preferir o excesso ao risco, negar a culpa e oferecer respaldo. Quatro sinais."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can thank someone for speaking up, in English.", "pt": "Sei agradecer a quem se manifestou, em inglês." },
+            { "en": "I give credit by name in front of others.", "pt": "Dou crédito nominal na frente dos outros." },
+            { "en": "I can explain stop work authority and near miss.", "pt": "Sei explicar stop work authority e near miss." },
+            { "en": "I support a concern publicly, not only in private.", "pt": "Apoio uma preocupação publicamente, não só em particular." }
+          ],
+          "doneMessage": "People First na prática. Falta a conversa mais difícil de todas.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A linguagem que faz as pessoas falarem",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "People decide whether to speak up in about two seconds, based on what happened to the last person who did.", "pt": "As pessoas decidem se vão falar em cerca de dois segundos, com base no que aconteceu com a última pessoa que falou." },
+          { "en": "\"I'd rather look at ten of these than miss one\" is the single most useful sentence in a safety culture.", "pt": "\"I'd rather look at ten of these than miss one\" é a frase mais útil de uma cultura de segurança." },
+          { "en": "\"Credit to Ana\" costs a leader nothing and buys loyalty that no bonus reaches.", "pt": "\"Credit to Ana\" não custa nada a um líder e compra uma lealdade que bônus nenhum alcança." },
+          { "en": "Public support in the moment is worth ten private conversations afterwards.", "pt": "Apoio público na hora vale dez conversas privadas depois." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now lead in English in a way that makes people speak up.",
+        "pt": "Agora você lidera em inglês de um jeito que faz as pessoas falarem."
+      }
+    },
+    {
+      "title": "Difficult Conversations",
+      "focus": "Desempenho, conflito e conversas que ninguém quer ter",
+      "character": "us-female",
+      "objective": "Conduzir uma conversa difícil em inglês: preparar, abrir sem rodeios, escutar e fechar com um acordo verificável.",
+      "intro": [
+        "The conversation you keep postponing is costing more than the conversation itself.",
+        "In English there's a structure that makes it survivable: <strong>state the purpose</strong>, <strong>give the facts</strong>, <strong>listen properly</strong>, <strong>agree what changes</strong>.",
+        "The opening matters most. Ten seconds of small talk before hard news makes the news worse, not softer."
+      ],
+      "introPt": [
+        "A conversa que você adia está custando mais caro que a conversa em si.",
+        "Em inglês existe uma estrutura que a torna suportável: <strong>dizer o propósito</strong>, <strong>dar os fatos</strong>, <strong>escutar de verdade</strong>, <strong>combinar o que muda</strong>.",
+        "A abertura é o que mais importa. Dez segundos de conversa fiada antes de uma notícia dura pioram a notícia, não a suavizam."
+      ],
+      "vocab": [
+        { "en": "I want to be straight with you", "pt": "quero ser direta com você", "example": "I want to be straight with you about where we are." },
+        { "en": "this isn't easy to say", "pt": "não é fácil dizer isto", "example": "This isn't easy to say, so I'll say it plainly." },
+        { "en": "help me understand", "pt": "me ajude a entender", "example": "Help me understand what's happening from your side." },
+        { "en": "what I need to see is", "pt": "o que eu preciso ver é", "example": "What I need to see is the report on time for four weeks." },
+        { "en": "to hold someone accountable", "pt": "cobrar responsabilidade", "example": "I'll hold you to that, and you can hold me to mine." },
+        { "en": "where does that leave us?", "pt": "onde isso nos deixa?", "example": "So where does that leave us?" },
+        { "en": "to check back in", "pt": "retomar a conversa", "example": "Let's check back in a month." },
+        { "en": "I may be wrong about this", "pt": "posso estar errada nisso", "example": "I may be wrong about this — tell me." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a conversa difícil",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as partes na ordem que torna a conversa possível.",
+          "items": [
+            "Thanks for making time. I want to be straight with you about something, and it isn't easy to say.",
+            "In the last two months, three deliverables have come in after the deadline, and twice I found out from the customer.",
+            "Help me understand what's happening from your side — I may be missing something important.",
+            "What I need to see is the report on time for the next four weeks, and a heads-up from you the moment something slips.",
+            "Let's check back in a month. And tell me what you need from me to make that work."
+          ],
+          "explanation": "Propósito → fatos → escuta genuína → o que muda → data de retorno e oferta de apoio."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Como abrir",
+          "badge": "A ou B",
+          "instruction": "Escolha a abertura que respeita a outra pessoa.",
+          "items": [
+            {
+              "prompt": "Conversa sobre desempenho.",
+              "a": "Hey! How was your weekend? How are the kids? … So, listen, there's something I've been meaning to raise…",
+              "b": "Thanks for making time. I want to be straight with you — this is about the deadlines, and it's a difficult conversation.",
+              "correct": "b",
+              "why": "Conversa fiada antes de notícia dura faz a pessoa reviver a parte leve com desconfiança depois."
+            },
+            {
+              "prompt": "A pessoa reage com raiva.",
+              "a": "There's no need to react like that.",
+              "b": "I can see this has landed hard. Take a moment — and then tell me how it looks from where you sit.",
+              "correct": "b",
+              "why": "Nomear a reação sem julgá-la baixa a temperatura. Repreender a reação a dobra."
+            },
+            {
+              "prompt": "Fechando a conversa.",
+              "a": "Ok, so, hopefully things improve.",
+              "b": "So: report on time for four weeks, heads-up the moment something slips, and we check back in on the 20th. Have I got that right?",
+              "correct": "b",
+              "why": "Acordo verificável com data. \"Hopefully\" não é combinado nenhum."
+            }
+          ],
+          "explanation": "Direta na abertura, generosa na escuta, precisa no fechamento."
+        },
+        {
+          "type": "flowChoice",
+          "title": "A conversa que você vem adiando",
+          "badge": "Conversa",
+          "situation": "Um colega sênior de outra área tem passado por cima de você em decisões comerciais. Vocês vão trabalhar juntos por mais dois anos.",
+          "turns": [
+            {
+              "who": "Colleague",
+              "them": "You wanted to talk? Is this about the Macaé pricing?",
+              "options": [
+                { "text": "It is. I want to be straight with you: the last two pricing decisions went to the customer without me, and I'd like to understand how that happened.", "correct": true, "why": "Direta, factual e formulada como pergunta genuína, não como acusação." },
+                { "text": "No, no, nothing serious, just wanted to catch up.", "why": "Adiar de novo, e ainda por cima começar mentindo sobre o propósito." },
+                { "text": "Yes, and honestly I'm quite frustrated with how you've been operating.", "why": "\"Como você vem operando\" é veredito sobre a pessoa. A defesa sobe na hora." }
+              ]
+            },
+            {
+              "who": "Colleague",
+              "them": "The customer called me directly and needed an answer in the meeting. What was I supposed to do, say no?",
+              "options": [
+                { "text": "That's exactly the situation I want us to have a plan for. In the room, give the range we've agreed in advance — then neither of us is stuck. Would that work?", "correct": true, "why": "Aceita a restrição real dele e propõe um mecanismo que resolve os dois lados." },
+                { "text": "You should have called me.", "why": "Ele acabou de explicar por que não deu. Repetir o dever não muda o cenário." },
+                { "text": "Fine, I understand.", "why": "Encerrar sem acordo garante que a mesma coisa vai acontecer no mês que vem." }
+              ]
+            },
+            {
+              "who": "Colleague",
+              "them": "Yes, that would actually help me too. I hate being put on the spot like that.",
+              "options": [
+                { "text": "Good. I'll send you the agreed ranges by Friday, and I'll ask you to tell me the same day whenever a price is discussed — even if it's already done. Deal?", "correct": true, "why": "Compromisso dos dois lados, com prazo e verificação. Isso sobrevive a dois anos." },
+                { "text": "Great, let's leave it there.", "why": "Combinar sem escrever é combinar de esquecer." },
+                { "text": "Perfect, I knew we'd sort it out.", "why": "Simpático e vazio — nada mudou operacionalmente." }
+              ]
+            }
+          ],
+          "explanation": "Nomear o fato, entender a restrição do outro, e sair com um mecanismo — não com uma promessa."
+        },
+        {
+          "type": "categorize",
+          "title": "Isso ajuda ou piora?",
+          "instruction": "Numa conversa difícil, cada frase move a temperatura. Classifique.",
+          "categories": [
+            { "id": "help", "name": "Ajuda", "short": "Ajuda" },
+            { "id": "hurt", "name": "Piora", "short": "Piora" }
+          ],
+          "items": [
+            { "text": "\"Help me understand what's happening from your side.\"", "cat": "help" },
+            { "text": "\"Everyone in the team has noticed this.\"", "cat": "hurt" },
+            { "text": "\"I may be wrong about this — tell me.\"", "cat": "help" },
+            { "text": "\"You always do this.\"", "cat": "hurt" },
+            { "text": "\"I can see this has landed hard.\"", "cat": "help" },
+            { "text": "\"I didn't want to have this conversation.\"", "cat": "hurt" }
+          ],
+          "explanation": "Citar terceiros (\"todo mundo notou\") transforma uma conversa em julgamento coletivo."
+        },
+        {
+          "type": "readAloud",
+          "title": "Ensaie as frases difíceis",
+          "instruction": "Ouça, repita e grave. Estas frases precisam sair firmes e calmas — e isso só vem com repetição.",
+          "sentences": [
+            "Thanks for making time. I want to be straight with you.",
+            "This isn't easy to say, so I'll say it plainly.",
+            "Help me understand what's happening from your side.",
+            "What I need to see is the report on time for the next four weeks.",
+            "So where does that leave us? Let's check back in on the twentieth."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Leadership",
+          "items": [
+            { "en": "I open a difficult conversation without small talk.", "pt": "Abro uma conversa difícil sem conversa fiada." },
+            { "en": "I state facts and then genuinely listen.", "pt": "Declaro fatos e depois escuto de verdade." },
+            { "en": "I never say \"everyone has noticed\".", "pt": "Nunca digo \"todo mundo notou\"." },
+            { "en": "I close with a verifiable agreement and a date.", "pt": "Fecho com um acordo verificável e uma data." },
+            { "en": "Looking at the topic: I can lead people in English, not just projects.", "pt": "Olhando o tópico: sei liderar pessoas em inglês, não só projetos." }
+          ],
+          "doneMessage": "tópico Leadership concluído. Último: resolver problemas e decidir.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O custo de adiar",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "Small talk before hard news makes people distrust the small talk forever afterwards.", "pt": "Conversa fiada antes de notícia dura faz a pessoa desconfiar da conversa fiada para sempre." },
+          { "en": "\"I may be wrong about this\" is not weakness — it's what makes the other person able to answer honestly.", "pt": "\"I may be wrong about this\" não é fraqueza — é o que permite ao outro responder com honestidade." },
+          { "en": "Never say \"everyone has noticed\". It turns one conversation into a tribunal.", "pt": "Nunca diga \"todo mundo notou\". Transforma uma conversa em tribunal." },
+          { "en": "A difficult conversation that ends without a date ends without a change.", "pt": "Uma conversa difícil que termina sem data termina sem mudança." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now have the conversation you've been postponing — in English, and well.",
+        "pt": "Agora você tem a conversa que vinha adiando — em inglês e bem feita."
+      }
+    }
+  ]
+}

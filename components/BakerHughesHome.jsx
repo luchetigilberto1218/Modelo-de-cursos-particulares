@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const STORY = [
   "Baker Hughes is an energy technology company — it builds the technology that helps the world find, produce and move energy, and increasingly produce it in a cleaner way.",
@@ -14,7 +14,7 @@ function trackHref(clientId, trackId) {
   return `/${clientId}/level/essentials/track/${trackId}`;
 }
 
-export default function BakerHughesHome({ course, theme, clientId }) {
+export default function BakerHughesHome({ course, theme, clientId, student, role }) {
   const c = theme?.colors || {};
   const navy = c.navy || '#062E2B';
   const navyLight = c.navyLight || '#0E4A44';
@@ -28,7 +28,14 @@ export default function BakerHughesHome({ course, theme, clientId }) {
   const school = theme?.logos?.school;
 
   const lines = course?.businessLines || [];
-  const tracks = course?.tracks || [];
+  const allTracks = course?.tracks || [];
+  // Trilha pessoal (com `owner`) vem destacada no topo; as compartilhadas
+  // seguem na grade de sempre.
+  const personal = allTracks.filter((t) => t.owner);
+  const tracks = allTracks.filter((t) => !t.owner);
+  const lessonsOf = (trackId) => (course?.lessons || [])
+    .filter((l) => l.track === trackId)
+    .sort((a, b) => (a.trackOrder || a.num) - (b.trackOrder || b.num));
 
   return (
     <div style={{
@@ -71,6 +78,16 @@ export default function BakerHughesHome({ course, theme, clientId }) {
           </div>
         </div>
       </header>
+
+      {/* ── 0. SUA TRILHA (personalizada) ── */}
+      {personal.length > 0 && (
+        <section style={{ maxWidth: 1040, margin: '0 auto', padding: 'clamp(36px, 5vw, 56px) 32px 0' }}>
+          {personal.map((t) => (
+            <MyTrackCard key={t.id} track={t} lessons={lessonsOf(t.id)} clientId={clientId} student={student}
+              navy={navy} navyLight={navyLight} accent={accent} accentLight={accentLight} gray={gray} grayLight={grayLight} teal={teal} />
+          ))}
+        </section>
+      )}
 
       {/* ── 1. COMPANY STORY (first) ── */}
       <section style={{ maxWidth: 1040, margin: '0 auto', padding: 'clamp(48px, 7vw, 76px) 32px 8px' }}>
@@ -153,6 +170,72 @@ export default function BakerHughesHome({ course, theme, clientId }) {
           <Link href={`/${clientId}/search`} style={{ color: 'rgba(255,255,255,0.75)', textDecoration: 'none', fontSize: 13 }}>Search lessons</Link>
         </div>
       </footer>
+    </div>
+  );
+}
+
+/* Trilha personalizada do aluno — abre a home com "onde você parou".
+   O ponto de retomada vem do localStorage gravado pela própria lição, então
+   funciona sem back-end e é privado ao navegador de quem estuda. */
+function MyTrackCard({ track, lessons, clientId, student, navy, navyLight, accent, accentLight, gray, grayLight, teal }) {
+  const [last, setLast] = useState(null);
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem(`bh:last:${clientId}:${track.id}`);
+      if (raw) setLast(JSON.parse(raw));
+    } catch { /* sem localStorage, mostra a lição 1 */ }
+  }, [clientId, track.id]);
+
+  const first = lessons[0];
+  const resume = last && lessons.find((l) => l.num === last.num) ? last : null;
+  const target = resume || (first ? { num: first.num, title: first.title, order: 1 } : null);
+  const firstName = (student || '').split(' ')[0];
+  const topics = [...new Set(lessons.map((l) => l.topic).filter(Boolean))];
+
+  return (
+    <div style={{ borderRadius: 18, overflow: 'hidden', border: `1px solid ${grayLight}`, boxShadow: '0 12px 40px rgba(6,46,43,0.08)', background: '#fff' }}>
+      <div style={{ background: `linear-gradient(135deg, ${navy}, ${navyLight})`, color: '#fff', padding: 'clamp(26px, 4vw, 36px) clamp(24px, 4vw, 40px)', position: 'relative' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${accent}, ${teal})` }} />
+        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1.6, textTransform: 'uppercase', color: accent, margin: '0 0 12px' }}>
+          {firstName ? `Sua trilha, ${firstName}` : 'Trilha personalizada'}
+        </p>
+        <h2 style={{ fontSize: 'clamp(24px, 3.2vw, 34px)', fontWeight: 800, letterSpacing: -0.7, margin: '0 0 10px', lineHeight: 1.1 }}>{track.name}</h2>
+        {track.description && (
+          <p style={{ fontSize: 15.5, lineHeight: 1.6, color: 'rgba(255,255,255,0.78)', margin: 0, maxWidth: 640 }}>{track.description}</p>
+        )}
+      </div>
+
+      <div style={{ padding: 'clamp(22px, 3vw, 30px) clamp(24px, 4vw, 40px)' }}>
+        {target && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: 18, flexWrap: 'wrap', marginBottom: topics.length ? 22 : 0 }}>
+            <div style={{ flex: '1 1 260px' }}>
+              <div style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: accent, marginBottom: 5 }}>
+                {resume ? 'Continue de onde parou' : 'Comece por aqui'}
+              </div>
+              <div style={{ fontSize: 18, fontWeight: 700, color: navy, letterSpacing: -0.3, lineHeight: 1.3 }}>
+                Lição {target.order || 1} · {target.title}
+              </div>
+              <div style={{ fontSize: 13.5, color: gray, marginTop: 4 }}>{lessons.length} lições no total · estudo no seu ritmo</div>
+            </div>
+            <Link href={`/${clientId}/lesson/${target.num}`} style={{ padding: '13px 26px', borderRadius: 999, background: accent, color: '#fff', fontWeight: 700, fontSize: 15, textDecoration: 'none' }}>
+              {resume ? 'Retomar →' : 'Começar →'}
+            </Link>
+            <Link href={`/${clientId}/level/${track.level || 'essentials'}/track/${track.id}`} style={{ padding: '13px 22px', borderRadius: 999, background: '#fff', color: navy, fontWeight: 700, fontSize: 14.5, textDecoration: 'none', border: `1px solid ${grayLight}` }}>
+              Ver todas as lições
+            </Link>
+          </div>
+        )}
+        {topics.length > 0 && (
+          <div>
+            <div style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: gray, marginBottom: 10 }}>Os tópicos desta trilha</div>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {topics.map((t, i) => (
+                <span key={i} style={{ padding: '6px 13px', borderRadius: 999, background: accentLight, color: navy, fontSize: 13, fontWeight: 600 }}>{t}</span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

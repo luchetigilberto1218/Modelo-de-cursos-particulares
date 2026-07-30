@@ -1,0 +1,823 @@
+{
+  "topic": "Finance and budgeting",
+  "lessons": [
+    {
+      "title": "The Budget Cycle",
+      "focus": "Falar do ciclo orçamentário: planejar, aprovar, acompanhar",
+      "character": "us-female",
+      "objective": "Explicar, em inglês, em que fase do orçamento vocês estão e o que acontece em cada etapa do ciclo.",
+      "intro": [
+        "Every year the same conversation comes back: <em>\"Where are we in the budget cycle?\"</em>",
+        "The vocabulary is small — <strong>plan</strong>, <strong>submit</strong>, <strong>approve</strong>, <strong>track</strong>, <strong>close</strong> — but it repeats in every meeting, every quarter, in every country where Baker Hughes operates.",
+        "Once you own these five verbs, you can join a budget discussion with anyone, anywhere."
+      ],
+      "introPt": [
+        "Todo ano volta a mesma conversa: <em>\"Where are we in the budget cycle?\"</em> (em que ponto do ciclo orçamentário estamos?).",
+        "O vocabulário é pequeno — <strong>plan</strong> (planejar), <strong>submit</strong> (submeter), <strong>approve</strong> (aprovar), <strong>track</strong> (acompanhar), <strong>close</strong> (fechar) — mas se repete em toda reunião, todo trimestre, em cada país onde a Baker Hughes opera.",
+        "Quando esses cinco verbos são seus, você entra em qualquer discussão de orçamento, com qualquer pessoa."
+      ],
+      "vocab": [
+        { "en": "budget cycle", "pt": "ciclo orçamentário", "example": "We're in the middle of the budget cycle right now." },
+        { "en": "fiscal year (FY)", "pt": "ano fiscal", "example": "This spend belongs to fiscal year 2027." },
+        { "en": "to submit a budget", "pt": "submeter um orçamento", "example": "We submit the budget by the end of October." },
+        { "en": "budget holder", "pt": "responsável pelo orçamento", "example": "As budget holder, she signs off on every request." },
+        { "en": "headcount", "pt": "quadro de pessoal / número de posições", "example": "The plan includes two additional headcount for next year." },
+        { "en": "capex / opex", "pt": "investimento / custeio", "example": "New equipment is capex; travel is opex." },
+        { "en": "to allocate", "pt": "alocar, destinar", "example": "We allocated 15% of the budget to training." },
+        { "en": "quarter (Q1–Q4)", "pt": "trimestre", "example": "Most of the spend lands in Q4." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Onde estamos no ciclo?",
+          "badge": "Leia e responda",
+          "heading": "Internal note · Finance",
+          "instruction": "Leia a nota interna e responda. Tudo o que você precisa está no texto.",
+          "passage": [
+            "The budget cycle at Baker Hughes runs on the fiscal year. Between August and October, each budget holder builds a plan for their area: headcount, capex, opex and travel.",
+            "Plans are submitted in October and reviewed by Finance in November. Approvals usually come in December, and the new budget goes live on 1 January.",
+            "From that point on, the job changes: instead of planning, teams track actual spend against the approved budget, quarter by quarter, and explain any variance."
+          ],
+          "questions": [
+            {
+              "prompt": "When do budget holders build their plans?",
+              "options": [
+                { "text": "Between August and October.", "correct": true },
+                { "text": "In December, after approval.", "correct": false },
+                { "text": "Only in the first quarter." }
+              ],
+              "why": "\"Between August and October, each budget holder builds a plan\" — é a fase de planejamento."
+            },
+            {
+              "prompt": "What changes once the budget goes live?",
+              "options": [
+                { "text": "Teams stop reporting until the year closes.", "correct": false },
+                { "text": "Teams track actual spend against the approved budget.", "correct": true },
+                { "text": "Finance builds the plan for each area." }
+              ],
+              "why": "Depois do go-live, o verbo deixa de ser <em>plan</em> e passa a ser <em>track</em>."
+            },
+            {
+              "prompt": "Which sentence uses \"budget holder\" correctly?",
+              "options": [
+                { "text": "The budget holder is the person accountable for that budget.", "correct": true },
+                { "text": "The budget holder is the software where we keep the numbers.", "correct": false },
+                { "text": "The budget holder is the last month of the fiscal year." }
+              ]
+            }
+          ],
+          "explanation": "Plan → submit → review → approve → track. Esse é o ciclo inteiro em cinco verbos."
+        },
+        {
+          "type": "wordBank",
+          "title": "Complete com o verbo do ciclo",
+          "instruction": "Cada frase é uma fase diferente do ciclo. Escolha o verbo certo.",
+          "bank": ["build", "submit", "approve", "track", "close"],
+          "items": [
+            { "text": "In September we ___ the plan for our area.", "answer": "build" },
+            { "text": "We have to ___ the budget by 31 October.", "answer": "submit" },
+            { "text": "Finance will ___ the final numbers in December.", "answer": "approve" },
+            { "text": "Every month we ___ actual spend against plan.", "answer": "track" },
+            { "text": "We ___ the fiscal year at the end of December.", "answer": "close" }
+          ],
+          "explanation": "Esses cinco verbos cobrem 90% das conversas de orçamento."
+        },
+        {
+          "type": "categorize",
+          "title": "Capex ou opex?",
+          "badge": "Classifique",
+          "instruction": "Investimento (capex) ou custeio do dia a dia (opex)? Classifique cada item.",
+          "categories": [
+            { "id": "capex", "name": "Capex · investimento", "short": "Capex" },
+            { "id": "opex", "name": "Opex · custeio", "short": "Opex" }
+          ],
+          "items": [
+            { "text": "A new compressor for the plant", "cat": "capex" },
+            { "text": "Monthly software licences", "cat": "opex" },
+            { "text": "Travel to a customer site", "cat": "opex" },
+            { "text": "Building a new test facility", "cat": "capex" },
+            { "text": "Salaries of the local team", "cat": "opex" },
+            { "text": "Upgrading the plant's control system", "cat": "capex" }
+          ],
+          "explanation": "Regra prática: capex compra algo que dura anos; opex paga o funcionamento do mês."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Dizer em que fase vocês estão.", "answer": "We are in the planning phase of the budget cycle", "extra": ["was", "budgets"] },
+            { "hint": "Dizer o prazo de submissão.", "answer": "The budget has to be submitted by the end of October", "extra": ["submit", "on"] },
+            { "hint": "Dizer o que vocês fazem depois da aprovação.", "answer": "After approval we track actual spend every month", "extra": ["tracking", "each"] }
+          ],
+          "explanation": "Frases curtas e diretas — é assim que se fala de orçamento em inglês."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A preposição certa muda tudo",
+          "badge": "Escolha certa",
+          "instruction": "Finanças tem colocações fixas. Escolha a que soa natural para um falante nativo.",
+          "items": [
+            {
+              "prompt": "We track spend ___ the approved budget.",
+              "options": [{ "text": "against", "correct": true }, { "text": "with" }, { "text": "over" }],
+              "why": "<strong>to track X against Y</strong> — comparar o real com o planejado."
+            },
+            {
+              "prompt": "The plan has to be submitted ___ 31 October.",
+              "options": [{ "text": "by", "correct": true }, { "text": "until" }, { "text": "in" }],
+              "why": "<strong>by</strong> = até essa data, no mais tardar. <em>until</em> seria \"durante todo o tempo até\"."
+            },
+            {
+              "prompt": "We allocated 15% of the budget ___ training.",
+              "options": [{ "text": "to", "correct": true }, { "text": "for the" }, { "text": "in" }],
+              "why": "<strong>to allocate something to something</strong> — destinar a."
+            },
+            {
+              "prompt": "Most of the spend lands ___ Q4.",
+              "options": [{ "text": "in", "correct": true }, { "text": "on" }, { "text": "at" }],
+              "why": "Trimestres, meses e anos pedem <strong>in</strong>: in Q4, in March, in 2027."
+            }
+          ],
+          "explanation": "Preposição errada não impede a comunicação, mas denuncia. Essas quatro aparecem toda semana."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can say which phase of the budget cycle we are in.", "pt": "Sei dizer em que fase do ciclo orçamentário estamos." },
+            { "en": "I can use plan, submit, approve, track and close correctly.", "pt": "Uso os cinco verbos do ciclo corretamente." },
+            { "en": "I can explain the difference between capex and opex.", "pt": "Sei explicar a diferença entre capex e opex." },
+            { "en": "I can say a deadline with \"by\" instead of \"until\".", "pt": "Digo prazos com \"by\", não com \"until\"." }
+          ],
+          "doneMessage": "ciclo dominado. A próxima lição é sobre o que acontece depois — forecast e actuals.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre orçamento em inglês",
+        "intro": "Detalhes pequenos que fazem você soar como quem já viveu vários ciclos.",
+        "cards": [
+          { "en": "\"Budget\" is both a noun and a verb: we have a budget, and we budget for something.", "pt": "\"Budget\" é substantivo e verbo: temos um orçamento, e orçamos para algo." },
+          { "en": "In global companies people say \"FY27\" out loud as \"F-Y twenty-seven\", not \"fiscal year two thousand twenty-seven\".", "pt": "Em empresas globais, \"FY27\" se fala \"F-Y twenty-seven\", não a versão longa." },
+          { "en": "\"Spend\" works as a noun in finance: \"our travel spend went up\" — no plural, no article.", "pt": "\"Spend\" funciona como substantivo em finanças: \"our travel spend went up\" — sem plural, sem artigo." },
+          { "en": "A budget is never \"made\" in English — it is built, prepared or put together.", "pt": "Orçamento não é \"made\" em inglês — é built, prepared ou put together." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now walk into a budget conversation and know exactly where you are.",
+        "pt": "Agora você entra numa conversa de orçamento sabendo exatamente em que ponto está."
+      }
+    },
+    {
+      "title": "Forecast vs. Actuals",
+      "focus": "Explicar variação: por que o real ficou acima ou abaixo do plano",
+      "character": "us-male",
+      "objective": "Comparar previsto e realizado em inglês e explicar a variação em uma frase que qualquer gestor entende.",
+      "intro": [
+        "Once the budget is live, one question comes back every single month: <em>\"Why is this number different from the plan?\"</em>",
+        "The answer has a fixed shape in English: the <strong>number</strong>, the <strong>direction</strong> (over or under), the <strong>size</strong>, and the <strong>reason</strong>.",
+        "Say those four things in order and you sound in control — even when the number is bad."
+      ],
+      "introPt": [
+        "Depois que o orçamento entra em vigor, uma pergunta volta todo mês: <em>\"Why is this number different from the plan?\"</em> (por que este número está diferente do plano?).",
+        "A resposta tem uma forma fixa em inglês: o <strong>número</strong>, a <strong>direção</strong> (acima ou abaixo), o <strong>tamanho</strong> e a <strong>razão</strong>.",
+        "Diga essas quatro coisas nessa ordem e você soa no controle — mesmo quando o número é ruim."
+      ],
+      "vocab": [
+        { "en": "forecast", "pt": "previsão", "example": "The latest forecast is slightly higher than plan." },
+        { "en": "actuals", "pt": "valores realizados", "example": "The actuals came in below budget this quarter." },
+        { "en": "variance", "pt": "variação (real vs. plano)", "example": "We have a 12% variance on travel costs." },
+        { "en": "over budget / under budget", "pt": "acima / abaixo do orçamento", "example": "We're 40k over budget on logistics." },
+        { "en": "run rate", "pt": "ritmo de gasto anualizado", "example": "At this run rate, we'll exceed the annual budget." },
+        { "en": "to come in at", "pt": "ficar em (um valor)", "example": "Costs came in at 2.3 million." },
+        { "en": "one-off", "pt": "evento pontual, não recorrente", "example": "The spike was a one-off, not a trend." },
+        { "en": "to phase", "pt": "distribuir ao longo do tempo", "example": "The spend was phased differently than planned." }
+      ],
+      "exercises": [
+        {
+          "type": "listenChoose",
+          "title": "Ouça o update e escolha",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque em cada áudio quantas vezes quiser e escolha a interpretação correta.",
+          "items": [
+            {
+              "audio": "We came in slightly under budget this quarter, mainly because two projects were phased into next year.",
+              "options": [
+                { "text": "Gastaram menos que o previsto, por causa de projetos adiados.", "correct": true },
+                { "text": "Gastaram mais que o previsto, por causa de projetos novos." },
+                { "text": "Gastaram exatamente o previsto." }
+              ],
+              "why": "<strong>under budget</strong> = abaixo do orçamento; <strong>phased into next year</strong> = empurrado para o ano seguinte."
+            },
+            {
+              "audio": "Travel is running about fifteen per cent over plan, but it's a one-off — we had two customer visits that weren't in the original budget.",
+              "options": [
+                { "text": "Viagens estão 15% acima do plano, e isso deve se repetir todo mês." },
+                { "text": "Viagens estão 15% acima do plano, mas por um motivo pontual.", "correct": true },
+                { "text": "Viagens estão 15% abaixo do plano." }
+              ],
+              "why": "<strong>one-off</strong> avisa que não é tendência — é a palavra que acalma a sala."
+            },
+            {
+              "audio": "At this run rate we'll be about two hundred thousand over by year end, so we need to slow down discretionary spend.",
+              "options": [
+                { "text": "Se continuarem nesse ritmo, vão estourar em 200 mil até o fim do ano.", "correct": true },
+                { "text": "Já estouraram 200 mil no mês passado." },
+                { "text": "Vão economizar 200 mil até o fim do ano." }
+              ],
+              "why": "<strong>run rate</strong> projeta o futuro a partir do ritmo atual."
+            }
+          ],
+          "explanation": "Direção (over/under), tamanho (%, valor) e razão — sempre nessa ordem."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o update mensal",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna para montar um update de verdade.",
+          "text": "Hi everyone — quick update on the numbers. We closed the month ___ budget, by roughly eight per cent. The main ___ is on subcontractor costs, where actuals came in ___ 320k against a plan of 290k. This was a ___ , linked to the extra scope on the Macaé job, so I don't expect it to repeat. At the current ___ we are still within the annual plan.",
+          "gaps": [
+            { "options": ["over", "on", "into"], "answer": "over", "why": "over budget = acima do orçamento." },
+            { "options": ["variance", "different", "distance"], "answer": "variance", "why": "\"Variance\" é o termo técnico para a diferença entre plano e real." },
+            { "options": ["at", "in", "for"], "answer": "at", "why": "to come in AT a number." },
+            { "options": ["one-off", "one-time-only-event", "single"], "answer": "one-off", "why": "\"One-off\" é a palavra usada no dia a dia corporativo." },
+            { "options": ["run rate", "speed", "rhythm"], "answer": "run rate", "why": "Run rate = ritmo de gasto projetado." }
+          ],
+          "explanation": "Esse parágrafo é um modelo pronto: troque os números e ele serve para qualquer mês."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Com base no uso real dessas expressões em finanças.",
+          "items": [
+            { "text": "\"We're under budget\" is good news for a cost line.", "answer": true, "why": "Under budget = gastou menos que o planejado." },
+            { "text": "\"Actuals\" means the numbers we expect for next quarter.", "answer": false, "why": "Actuals são os valores realizados. A expectativa é o forecast." },
+            { "text": "A one-off is expected to repeat every month.", "answer": false, "why": "One-off é justamente o que NÃO se repete." },
+            { "text": "\"Variance\" can be positive or negative.", "answer": true, "why": "Variação é a diferença — em qualquer direção." }
+          ],
+          "explanation": "Forecast olha para frente; actuals olham para trás; variance é a distância entre os dois."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o update na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Um bom update de variação segue sempre a mesma sequência. Clique nas frases na ordem.",
+          "items": [
+            "Quick update on the Q3 numbers.",
+            "We closed the quarter at 1.8 million against a plan of 1.6.",
+            "That's a 12% variance, driven mainly by subcontractor costs.",
+            "It's linked to the extra scope agreed with the customer in July.",
+            "We don't expect it to repeat in Q4."
+          ],
+          "explanation": "Contexto → número → tamanho da variação → causa → o que esperar. Sempre nessa ordem."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual versão passa mais confiança?",
+          "badge": "A ou B",
+          "instruction": "As duas estão gramaticalmente corretas. Escolha a que um gestor prefere ouvir.",
+          "items": [
+            {
+              "prompt": "Explicando um estouro de 12%.",
+              "a": "We spent too much money, sorry about that.",
+              "b": "We're 12% over plan, driven by the extra scope in July. It's a one-off.",
+              "correct": "b",
+              "why": "Número + causa + perspectiva. Pedir desculpa sem dado não informa nada."
+            },
+            {
+              "prompt": "Quando você ainda não tem a causa.",
+              "a": "I don't know why the number is different.",
+              "b": "I'm still investigating the variance — I'll come back to you by Thursday.",
+              "correct": "b",
+              "why": "Não saber é aceitável; não ter prazo para saber, não."
+            },
+            {
+              "prompt": "Dando uma boa notícia.",
+              "a": "We came in 5% under budget, mainly because two projects were phased into Q1.",
+              "b": "Everything is fine with the budget, no problems.",
+              "correct": "a",
+              "why": "Mesmo a boa notícia precisa de número e razão — senão parece sorte."
+            }
+          ],
+          "explanation": "Em inglês corporativo, dado + causa + próximo passo vale mais que qualquer adjetivo."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can say if we are over or under budget, and by how much.", "pt": "Sei dizer se estamos acima ou abaixo do orçamento, e quanto." },
+            { "en": "I can explain a variance in one sentence, with the reason.", "pt": "Explico uma variação em uma frase, com a causa." },
+            { "en": "I can use forecast, actuals, variance and run rate correctly.", "pt": "Uso forecast, actuals, variance e run rate corretamente." },
+            { "en": "I know how to answer when I don't have the reason yet.", "pt": "Sei responder quando ainda não tenho a causa." }
+          ],
+          "doneMessage": "você já explica um número fora do plano sem gaguejar.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O jeito anglo de dar más notícias numéricas",
+        "intro": "Não é otimismo — é estrutura. Ouça e revele a tradução.",
+        "cards": [
+          { "en": "English speakers put the number before the excuse: \"We're 12% over, because…\" — never the other way round.", "pt": "Falantes de inglês põem o número antes da justificativa: \"We're 12% over, because…\" — nunca ao contrário." },
+          { "en": "\"Slightly\", \"broadly\" and \"roughly\" are the three softeners that make a number sound controlled.", "pt": "\"Slightly\", \"broadly\" e \"roughly\" são os três amortecedores que fazem um número soar sob controle." },
+          { "en": "\"Driven by\" is the standard way to give a cause in finance: \"the variance is driven by subcontractor costs\".", "pt": "\"Driven by\" é o jeito padrão de dar a causa em finanças." },
+          { "en": "Saying \"it's a one-off\" changes the whole room: it tells everyone the problem has an end date.", "pt": "Dizer \"it's a one-off\" muda a sala inteira: avisa que o problema tem prazo de validade." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now explain any variance calmly — number first, reason second.",
+        "pt": "Agora você explica qualquer variação com calma — número primeiro, motivo depois."
+      }
+    },
+    {
+      "title": "Cost Control and Approvals",
+      "focus": "Pedir, justificar e aprovar gastos",
+      "character": "uk-female",
+      "objective": "Pedir aprovação de um gasto em inglês, com justificativa curta, e responder a um pedido que chega até você.",
+      "intro": [
+        "Cost control is where finance stops being a spreadsheet and becomes a conversation: someone wants to spend, someone else has to say yes or no.",
+        "In English, a good request is short and has three parts: <strong>what</strong>, <strong>how much</strong>, <strong>why now</strong>.",
+        "And a good answer is equally short — even when it's a no."
+      ],
+      "introPt": [
+        "Controle de custo é onde finanças deixa de ser planilha e vira conversa: alguém quer gastar, e alguém precisa dizer sim ou não.",
+        "Em inglês, um bom pedido é curto e tem três partes: <strong>o quê</strong>, <strong>quanto</strong>, <strong>por que agora</strong>.",
+        "E uma boa resposta é igualmente curta — inclusive quando é não."
+      ],
+      "vocab": [
+        { "en": "to sign off / approval", "pt": "aprovar / aprovação", "example": "I need your sign-off before we place the order." },
+        { "en": "purchase order (PO)", "pt": "ordem de compra", "example": "The PO hasn't been raised yet." },
+        { "en": "to raise a PO", "pt": "emitir uma ordem de compra", "example": "Can you raise a PO for 12k?" },
+        { "en": "threshold", "pt": "limite / alçada", "example": "Anything above the 50k threshold needs regional approval." },
+        { "en": "discretionary spend", "pt": "gasto não essencial", "example": "We're freezing discretionary spend this quarter." },
+        { "en": "cost saving", "pt": "economia, redução de custo", "example": "This change delivers a 20k annual cost saving." },
+        { "en": "to justify", "pt": "justificar", "example": "Can you justify the additional cost?" },
+        { "en": "business case", "pt": "justificativa de negócio", "example": "The business case is strong — it pays back in eight months." }
+      ],
+      "exercises": [
+        {
+          "type": "emailTriage",
+          "title": "Chegou um pedido na sua caixa",
+          "badge": "Caixa de entrada",
+          "instruction": "Leia como se tivesse acabado de chegar e decida.",
+          "email": {
+            "channel": "Outlook",
+            "from": "Marcus Lindqvist · Field Operations",
+            "subject": "Approval needed — spare parts, Macaé",
+            "body": "Hi Fernanda,\n\nWe need to order a spare seal kit for the Macaé job — 18k. The current one is at the end of its service life and the next campaign starts on the 12th.\n\nIf we wait for the next cycle, we risk two days of downtime, which would cost us more than the part itself.\n\nCan you sign off so I can raise the PO this week?\n\nThanks,\nMarcus"
+          },
+          "questions": [
+            {
+              "prompt": "What exactly is Marcus asking for?",
+              "options": [
+                { "text": "Your approval so he can raise a purchase order.", "correct": true },
+                { "text": "Your opinion about the campaign schedule." },
+                { "text": "An increase in his annual budget." }
+              ],
+              "why": "\"Can you sign off so I can raise the PO\" — o pedido é a aprovação, não o dinheiro em si."
+            },
+            {
+              "prompt": "Which part of his message is the business case?",
+              "options": [
+                { "text": "\"The next campaign starts on the 12th.\"" },
+                { "text": "\"We risk two days of downtime, which would cost us more than the part itself.\"", "correct": true },
+                { "text": "\"We need to order a spare seal kit.\"" }
+              ],
+              "why": "Business case = por que gastar agora sai mais barato que não gastar."
+            },
+            {
+              "prompt": "You agree. Which reply is best in English?",
+              "options": [
+                { "text": "Yes ok.", "correct": false },
+                { "text": "Approved — go ahead and raise the PO. Please copy me when it's issued.", "correct": true },
+                { "text": "I think maybe we could possibly approve this, if you want." }
+              ],
+              "why": "Aprovação clara + próximo passo + o que você quer de volta. Três linhas resolvem."
+            }
+          ],
+          "explanation": "What · how much · why now — é a estrutura que faz um pedido ser aprovado rápido."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa para cada termo.",
+          "pairs": [
+            { "left": "threshold", "right": "o valor a partir do qual é preciso outra alçada de aprovação" },
+            { "left": "to raise a PO", "right": "emitir formalmente a ordem de compra no sistema" },
+            { "left": "discretionary spend", "right": "gasto que dá para adiar ou cortar sem parar a operação" },
+            { "left": "business case", "right": "a justificativa que mostra que o gasto se paga" },
+            { "left": "sign-off", "right": "o \"de acordo\" formal de quem tem autoridade" }
+          ],
+          "explanation": "Esses cinco termos aparecem em qualquer fluxo de aprovação da empresa."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "I need your approval before we make the purchase order.", "wrong": "make", "fix": "raise", "why": "Em inglês corporativo o PO é raised (ou issued), nunca made." },
+            { "sentence": "Anything above the threshold needs approval from regional finance manager.", "wrong": "regional", "fix": "the regional", "why": "Faltou o artigo: from THE regional finance manager." },
+            { "sentence": "Can you justify me the additional cost?", "wrong": "me", "fix": "(nada)", "why": "Justify não leva objeto indireto: \"Can you justify the additional cost?\"" },
+            { "sentence": "We are freezing all discretionary spends this quarter.", "wrong": "spends", "fix": "spend", "why": "\"Spend\" como substantivo de finanças não vai para o plural." }
+          ],
+          "explanation": "São quatro erros que brasileiros repetem — e que somem depois que você os vê uma vez."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que faz um pedido ser aprovado rápido?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "You're writing a request for a 25k spend. Which elements make approval faster?",
+          "options": [
+            { "text": "The exact amount and the currency.", "correct": true },
+            { "text": "The deadline and what happens if it slips.", "correct": true },
+            { "text": "A long apology for asking.", "correct": false },
+            { "text": "The cost of NOT doing it.", "correct": true },
+            { "text": "Every technical detail of the equipment.", "correct": false },
+            { "text": "Who else has already agreed.", "correct": true }
+          ],
+          "explanation": "Valor, prazo, risco e apoio já obtido. O resto vai em anexo."
+        },
+        {
+          "type": "flowChoice",
+          "title": "A conversa da aprovação",
+          "badge": "Conversa",
+          "situation": "Você precisa da aprovação do seu gestor regional para um gasto de 25k que não estava no plano. Ele tem cinco minutos.",
+          "turns": [
+            {
+              "who": "Regional Manager",
+              "them": "Hi Fernanda, you wanted to talk about a spend request?",
+              "options": [
+                { "text": "Yes — 25k for a spare seal kit in Macaé, needed before the 12th. Can I walk you through it?", "correct": true, "why": "Valor, o quê e prazo em uma frase. Perfeito para quem tem cinco minutos." },
+                { "text": "Yes, it's a bit complicated, let me start from the beginning of the project.", "why": "Começar do começo é o jeito mais rápido de perder a atenção dele." },
+                { "text": "Yes, sorry to bother you with this again.", "why": "Pedir desculpa por trabalhar tira força do pedido." }
+              ]
+            },
+            {
+              "who": "Regional Manager",
+              "them": "It's not in the plan, though. Why now?",
+              "options": [
+                { "text": "Because we didn't plan well enough last year.", "why": "Verdadeiro ou não, isso muda a conversa para culpa em vez de decisão." },
+                { "text": "The current kit is at end of life. If we wait, we risk two days of downtime — that costs more than the part.", "correct": true, "why": "Custo de não fazer. É o argumento que sempre funciona." },
+                { "text": "Everyone in the team thinks we should do it.", "why": "Consenso não é business case." }
+              ]
+            },
+            {
+              "who": "Regional Manager",
+              "them": "Fine. But keep it within this quarter's envelope — can you offset it somewhere?",
+              "options": [
+                { "text": "I'll look into it and let you know at some point.", "why": "\"At some point\" é o oposto de compromisso." },
+                { "text": "Yes — I can phase the training spend into Q1. I'll confirm the numbers by Thursday.", "correct": true, "why": "Solução concreta + prazo. É assim que se fecha." },
+                { "text": "No, there's nothing I can move.", "why": "Pode até ser verdade, mas sem alternativa a resposta vira um impasse." }
+              ]
+            }
+          ],
+          "explanation": "Pedido claro → custo de não fazer → compensação com prazo. Aprovação em três turnos."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can ask for approval in three lines: what, how much, why now.", "pt": "Peço aprovação em três linhas: o quê, quanto, por que agora." },
+            { "en": "I can explain the cost of not doing something.", "pt": "Sei explicar o custo de NÃO fazer algo." },
+            { "en": "I can approve or decline a request clearly, without sounding rude.", "pt": "Aprovo ou recuso um pedido com clareza, sem soar ríspida." },
+            { "en": "I use \"raise a PO\", \"sign off\" and \"threshold\" naturally.", "pt": "Uso \"raise a PO\", \"sign off\" e \"threshold\" com naturalidade." }
+          ],
+          "doneMessage": "pedido e aprovação resolvidos. Falta só falar os números em voz alta.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O inglês de quem aprova",
+        "intro": "Frases curtas que resolvem em segundos. Ouça e revele.",
+        "cards": [
+          { "en": "\"Approved — go ahead\" is a complete, professional answer. You don't need more.", "pt": "\"Approved — go ahead\" é uma resposta completa e profissional. Não precisa de mais." },
+          { "en": "To say no without closing the door: \"Not this quarter — let's revisit in Q1.\"", "pt": "Para dizer não sem fechar a porta: \"Not this quarter — let's revisit in Q1.\"" },
+          { "en": "\"Can you offset it?\" means: find the money somewhere else in your own budget.", "pt": "\"Can you offset it?\" quer dizer: ache o dinheiro em outro lugar do seu próprio orçamento." },
+          { "en": "\"What's the cost of not doing it?\" is the single most persuasive question in cost control.", "pt": "\"What's the cost of not doing it?\" é a pergunta mais persuasiva do controle de custos." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now ask for money in English — and say no to a request, politely.",
+        "pt": "Agora você pede verba em inglês — e também sabe recusar um pedido com elegância."
+      }
+    },
+    {
+      "title": "Saying the Numbers Out Loud",
+      "focus": "Ler valores, percentuais, datas e grandes cifras sem travar",
+      "character": "us-female",
+      "objective": "Falar qualquer número financeiro em voz alta — milhões, percentuais, moedas e datas — sem hesitar.",
+      "intro": [
+        "You can know every finance word in English and still freeze on a call — because someone asked you to read a number.",
+        "Numbers have their own rules: where the <strong>and</strong> goes, when you say <strong>point</strong>, how a currency is pronounced, and why nobody says \"two thousand and twenty-seven\" for a fiscal year.",
+        "This lesson is short on theory and long on practice. Say everything out loud."
+      ],
+      "introPt": [
+        "Você pode saber todas as palavras de finanças em inglês e ainda assim travar numa call — porque alguém pediu para você ler um número.",
+        "Números têm regras próprias: onde entra o <strong>and</strong>, quando se diz <strong>point</strong>, como se pronuncia uma moeda e por que ninguém fala \"two thousand and twenty-seven\" para um ano fiscal.",
+        "Esta lição tem pouca teoria e muita prática. Fale tudo em voz alta."
+      ],
+      "vocab": [
+        { "en": "1.5m — one point five million", "pt": "1,5 milhão", "example": "The contract is worth one point five million dollars." },
+        { "en": "250k — two hundred and fifty thousand", "pt": "250 mil", "example": "We saved two hundred and fifty thousand this year." },
+        { "en": "12% — twelve per cent", "pt": "12 por cento", "example": "Costs went up by twelve per cent." },
+        { "en": "USD 3.2bn — three point two billion dollars", "pt": "3,2 bilhões de dólares", "example": "Revenue reached three point two billion dollars." },
+        { "en": "a 0.5% increase — a half a per cent increase", "pt": "aumento de 0,5%", "example": "It's only a half a per cent increase." },
+        { "en": "Q3 — Q three / the third quarter", "pt": "terceiro trimestre", "example": "We'll review it in Q three." },
+        { "en": "FY27 — F-Y twenty-seven", "pt": "ano fiscal de 2027", "example": "That budget belongs to F-Y twenty-seven." },
+        { "en": "year on year (YoY)", "pt": "na comparação anual", "example": "Costs are down 8% year on year." }
+      ],
+      "exercises": [
+        {
+          "type": "listenGap",
+          "title": "Ouça o trecho e complete",
+          "badge": "Ouça e complete",
+          "instruction": "Ouça o áudio completo primeiro, depois complete cada frase com o banco.",
+          "audioText": "Revenue for the quarter came in at two point four million dollars, up eleven per cent year on year. Costs were two hundred and eighty thousand above plan, which is a nine per cent variance. For F-Y twenty-seven we're forecasting growth of about half a per cent per quarter.",
+          "bank": ["two point four", "eleven", "two hundred and eighty", "nine", "half a"],
+          "items": [
+            { "text": "Revenue came in at ___ million dollars.", "answer": "two point four" },
+            { "text": "That's up ___ per cent year on year.", "answer": "eleven" },
+            { "text": "Costs were ___ thousand above plan.", "answer": "two hundred and eighty" },
+            { "text": "That's a ___ per cent variance.", "answer": "nine" },
+            { "text": "We're forecasting growth of about ___ per cent per quarter.", "answer": "half a" }
+          ],
+          "explanation": "Repare: decimal é \"point\", e o \"and\" só aparece depois de hundred."
+        },
+        {
+          "type": "serialChoice",
+          "title": "Como se diz este número?",
+          "badge": "Números em voz alta",
+          "instruction": "Escolha a leitura correta em inglês de negócios.",
+          "items": [
+            {
+              "prompt": "1,250,000",
+              "options": [
+                { "text": "one point twenty-five million", "correct": false },
+                { "text": "one point two five million", "correct": true },
+                { "text": "one million two hundred fifty" }
+              ],
+              "why": "Depois do ponto decimal, os dígitos vão um a um: point two five."
+            },
+            {
+              "prompt": "£340",
+              "options": [
+                { "text": "three hundred and forty pounds", "correct": true },
+                { "text": "three hundred forty pound" },
+                { "text": "pounds three hundred forty" }
+              ],
+              "why": "No inglês britânico o <strong>and</strong> depois de hundred é padrão; a moeda vem depois do número."
+            },
+            {
+              "prompt": "0.5%",
+              "options": [
+                { "text": "zero point five per cent", "correct": true },
+                { "text": "point five percents" },
+                { "text": "five per cent" }
+              ],
+              "why": "Também se ouve \"half a per cent\". O que não existe é \"percents\"."
+            },
+            {
+              "prompt": "FY27",
+              "options": [
+                { "text": "fiscal year two thousand and twenty-seven" },
+                { "text": "F-Y twenty-seven", "correct": true },
+                { "text": "fiscal twenty-seven year" }
+              ],
+              "why": "Anos fiscais se falam por sigla e dois dígitos."
+            },
+            {
+              "prompt": "USD 3.2bn",
+              "options": [
+                { "text": "three point two billion dollars", "correct": true },
+                { "text": "three billion and two dollars" },
+                { "text": "three comma two billions of dollars" }
+              ],
+              "why": "Billion nunca vai ao plural quando vem com número: three billion, não three billions."
+            }
+          ],
+          "explanation": "Regra de ouro: hundred e thousand nunca ganham -s depois de um número."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase com o número",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Receita do trimestre.", "answer": "Revenue came in at two point four million dollars", "extra": ["millions", "on"] },
+            { "hint": "Comparação anual.", "answer": "Costs are down eight per cent year on year", "extra": ["percents", "in"] },
+            { "hint": "Projeção do ano fiscal.", "answer": "For F-Y twenty-seven we are forecasting modest growth", "extra": ["forecast", "twenty seven thousand"] }
+          ],
+          "explanation": "Número, unidade, moeda, comparação — nessa ordem, sempre."
+        },
+        {
+          "type": "oddOneOut",
+          "title": "Qual não pertence?",
+          "badge": "Odd one out",
+          "instruction": "Em cada linha, clique na forma que NÃO é usada em inglês de negócios.",
+          "groups": [
+            { "items": ["two million", "two millions", "2m"], "odd": "two millions", "why": "Million não vai ao plural depois de número." },
+            { "items": ["twelve per cent", "twelve percent", "twelve percents"], "odd": "twelve percents", "why": "Percent nunca vai ao plural." },
+            { "items": ["Q3", "the third quarter", "the quarter three"], "odd": "the quarter three", "why": "Ou \"Q three\", ou \"the third quarter\"." },
+            { "items": ["year on year", "YoY", "year by year"], "odd": "year by year", "why": "O termo consagrado é year on year (YoY)." }
+          ],
+          "explanation": "Esses quatro deslizes são os mais comuns entre falantes de português."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça cada frase, repita e grave. Compare até sair fluido — números só entram na boca com repetição.",
+          "sentences": [
+            "Revenue for the quarter came in at two point four million dollars.",
+            "That's up eleven per cent year on year.",
+            "Costs were two hundred and eighty thousand above plan.",
+            "For F-Y twenty-seven we're forecasting growth of about half a per cent per quarter.",
+            "The contract is worth one point five million dollars over three years."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can read millions and thousands out loud without hesitating.", "pt": "Leio milhões e milhares em voz alta sem hesitar." },
+            { "en": "I say \"per cent\" correctly, never \"percents\".", "pt": "Digo \"per cent\" corretamente, nunca \"percents\"." },
+            { "en": "I can say a fiscal year and a quarter the way people actually say them.", "pt": "Falo ano fiscal e trimestre do jeito que as pessoas realmente falam." },
+            { "en": "I can compare two periods using \"year on year\".", "pt": "Comparo dois períodos usando \"year on year\"." }
+          ],
+          "doneMessage": "números destravados. A última lição do tópico é ler um resultado inteiro.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Os detalhes que entregam um não-nativo",
+        "intro": "Pequenas regras de número que ninguém ensina. Ouça e revele.",
+        "cards": [
+          { "en": "Decimals use a point, not a comma: 1.5 is \"one point five\". In Portuguese it's the opposite.", "pt": "Decimais usam ponto, não vírgula: 1.5 é \"one point five\". Em português é o contrário." },
+          { "en": "After a number, hundred, thousand, million and billion never take -s.", "pt": "Depois de um número, hundred, thousand, million e billion nunca levam -s." },
+          { "en": "British English keeps the \"and\": three hundred AND forty. American English often drops it.", "pt": "O inglês britânico mantém o \"and\": three hundred AND forty. O americano costuma omitir." },
+          { "en": "\"K\" for thousand is spoken, not just written: \"we saved twenty K\" is perfectly normal at work.", "pt": "\"K\" para mil também se fala: \"we saved twenty K\" é absolutamente normal no trabalho." }
+        ]
+      },
+      "celebrate": {
+        "en": "Numbers will never freeze you on a call again.",
+        "pt": "Número nunca mais vai te travar numa call."
+      }
+    },
+    {
+      "title": "Reading the Results",
+      "focus": "Comentar resultados: receita, margem, custo e tendência",
+      "character": "us-male",
+      "objective": "Ler um quadro de resultados em inglês e comentá-lo em três frases: o que aconteceu, por quê, e o que vem a seguir.",
+      "intro": [
+        "At some point the numbers stop being yours and become <em>the results</em> — the thing the whole company looks at.",
+        "Commenting on results is a skill of its own: you need to describe a <strong>trend</strong>, name a <strong>driver</strong>, and give an <strong>outlook</strong>.",
+        "Three sentences. That's the whole job."
+      ],
+      "introPt": [
+        "Em algum momento os números deixam de ser seus e viram <em>os resultados</em> — aquilo que a empresa inteira olha.",
+        "Comentar resultados é uma habilidade própria: descrever uma <strong>tendência</strong>, nomear um <strong>motor</strong> (driver) e dar uma <strong>perspectiva</strong> (outlook).",
+        "Três frases. É esse o trabalho inteiro."
+      ],
+      "vocab": [
+        { "en": "revenue", "pt": "receita", "example": "Revenue grew 9% in the quarter." },
+        { "en": "margin", "pt": "margem", "example": "Margin improved by two points." },
+        { "en": "top line / bottom line", "pt": "receita / resultado final", "example": "Top line is strong, but the bottom line is under pressure." },
+        { "en": "driver", "pt": "fator que explica o resultado", "example": "The main driver was higher activity in Brazil." },
+        { "en": "outlook", "pt": "perspectiva", "example": "The outlook for next quarter is stable." },
+        { "en": "headwind / tailwind", "pt": "vento contra / vento a favor", "example": "Currency was a headwind this quarter." },
+        { "en": "to be under pressure", "pt": "estar sob pressão", "example": "Margins are under pressure from logistics costs." },
+        { "en": "broadly flat", "pt": "praticamente estável", "example": "Costs were broadly flat versus last quarter." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "O quadro do trimestre",
+          "badge": "Leia e responda",
+          "heading": "Q3 results · summary for the leadership team",
+          "instruction": "Leia o resumo e responda às perguntas.",
+          "passage": [
+            "Revenue for the third quarter came in at 2.4 million dollars, up 11% year on year. The main driver was higher activity in Brazil, where two new campaigns started earlier than planned.",
+            "Margin, however, is under pressure: logistics costs were a headwind, and we absorbed a one-off charge related to equipment mobilisation. Costs overall were broadly flat versus Q2.",
+            "The outlook for Q4 is stable. We expect revenue in line with Q3 and a modest recovery in margin as the mobilisation costs drop out."
+          ],
+          "questions": [
+            {
+              "prompt": "What drove the revenue increase?",
+              "options": [
+                { "text": "Higher activity in Brazil, with campaigns starting early.", "correct": true },
+                { "text": "A reduction in logistics costs." },
+                { "text": "The one-off mobilisation charge." }
+              ],
+              "why": "\"The main driver was…\" — é sempre aí que está a causa."
+            },
+            {
+              "prompt": "What does \"margin is under pressure\" mean here?",
+              "options": [
+                { "text": "Margin is being squeezed by costs.", "correct": true },
+                { "text": "Margin has already collapsed." },
+                { "text": "Margin is growing faster than revenue." }
+              ],
+              "why": "\"Under pressure\" é a forma diplomática de dizer que está apertando — sem dizer que quebrou."
+            },
+            {
+              "prompt": "What is expected for Q4?",
+              "options": [
+                { "text": "A sharp fall in revenue." },
+                { "text": "Revenue similar to Q3 and slightly better margin.", "correct": true },
+                { "text": "A second one-off charge." }
+              ],
+              "why": "\"In line with Q3\" + \"modest recovery in margin\" = estável com leve melhora."
+            }
+          ],
+          "explanation": "Trend → driver → outlook. Todo comentário de resultado segue esse trio."
+        },
+        {
+          "type": "highlightPick",
+          "title": "Onde está a perspectiva?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que apontam para o FUTURO (perspectiva), não para o passado.",
+          "instruction": "Toque em cada palavra que indica expectativa ou projeção.",
+          "text": "Revenue was up eleven per cent in the quarter and we expect a similar level in Q4 . Margin is under pressure today , but the outlook is a modest recovery as mobilisation costs drop out .",
+          "targets": ["expect", "outlook", "recovery"],
+          "explanation": "Expect, outlook e recovery são as três palavras que sinalizam futuro num comentário de resultado."
+        },
+        {
+          "type": "categorize",
+          "title": "Vento a favor ou vento contra?",
+          "instruction": "Cada fator ajudou ou atrapalhou o resultado? Classifique.",
+          "categories": [
+            { "id": "tail", "name": "Tailwind · ajudou", "short": "Tailwind" },
+            { "id": "head", "name": "Headwind · atrapalhou", "short": "Headwind" }
+          ],
+          "items": [
+            { "text": "Two campaigns started earlier than planned", "cat": "tail" },
+            { "text": "Logistics costs went up sharply", "cat": "head" },
+            { "text": "A one-off mobilisation charge", "cat": "head" },
+            { "text": "Higher activity in Brazil", "cat": "tail" },
+            { "text": "Currency moved against us", "cat": "head" },
+            { "text": "A customer extended the contract by a year", "cat": "tail" }
+          ],
+          "explanation": "Headwind e tailwind são a metáfora padrão do inglês de negócios — e economizam explicação."
+        },
+        {
+          "type": "orderList",
+          "title": "Do mais forte ao mais fraco",
+          "badge": "Coloque em escala",
+          "scale": ["resultado melhor", "resultado pior"],
+          "instruction": "Coloque as expressões em ordem, da que descreve o melhor resultado para a que descreve o pior.",
+          "items": [
+            "Revenue was up sharply.",
+            "Revenue grew modestly.",
+            "Revenue was broadly flat.",
+            "Revenue softened slightly.",
+            "Revenue fell significantly."
+          ],
+          "explanation": "Sharply, modestly, broadly flat, slightly, significantly — os advérbios é que carregam a notícia."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual comentário está completo?",
+          "prompt": "Você tem 20 segundos para comentar o trimestre. Qual versão faz o trabalho inteiro?",
+          "options": [
+            { "id": "a", "text": "Revenue was up 11% year on year, driven by higher activity in Brazil. Margin is under pressure from logistics, but the outlook for Q4 is stable.", "correct": true },
+            { "id": "b", "text": "The quarter was good in general, we are happy with the numbers and the team worked very hard.", "correct": false, "whyWrong": "Nenhum número, nenhum driver, nenhuma perspectiva. É elogio, não comentário de resultado." },
+            { "id": "c", "text": "Revenue was 2.4 million dollars.", "correct": false, "whyWrong": "É só o dado. Falta o porquê e o que vem a seguir." }
+          ],
+          "explanation": "Trend + driver + outlook. Se as três estão lá, o comentário está pronto."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Finance",
+          "items": [
+            { "en": "I can describe a trend using up, down, flat and the right adverb.", "pt": "Descrevo uma tendência com up, down, flat e o advérbio certo." },
+            { "en": "I can name the driver behind a result.", "pt": "Sei nomear o driver por trás de um resultado." },
+            { "en": "I can give an outlook for the next quarter.", "pt": "Sei dar uma perspectiva para o próximo trimestre." },
+            { "en": "I can comment on results in three sentences, in English.", "pt": "Comento um resultado em três frases, em inglês." },
+            { "en": "Looking back at the whole topic: I feel comfortable in a finance conversation.", "pt": "Olhando o tópico inteiro: me sinto confortável numa conversa de finanças." }
+          ],
+          "doneMessage": "tópico Finance concluído. Próximo: contratos e termos comerciais.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O vocabulário invisível dos resultados",
+        "intro": "Palavras que aparecem em todo relatório de empresa listada. Ouça e revele.",
+        "cards": [
+          { "en": "\"Top line\" is revenue, \"bottom line\" is profit — they come from where those lines sit on the income statement.", "pt": "\"Top line\" é receita, \"bottom line\" é lucro — os nomes vêm da posição das linhas no demonstrativo." },
+          { "en": "\"Broadly flat\" is the most useful phrase in finance: it means \"it didn't really move, and that's fine\".", "pt": "\"Broadly flat\" é a expressão mais útil de finanças: \"não mudou muito, e está tudo bem\"." },
+          { "en": "Headwind and tailwind come from aviation — a headwind slows the plane down, a tailwind pushes it forward.", "pt": "Headwind e tailwind vêm da aviação — vento de proa freia o avião, vento de cauda empurra." },
+          { "en": "\"Under pressure\" says there's a problem without saying anything is broken. It buys you time.", "pt": "\"Under pressure\" avisa que há um problema sem dizer que algo quebrou. Compra tempo." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now read a set of results and comment on them like a finance professional.",
+        "pt": "Agora você lê um quadro de resultados e comenta como profissional de finanças."
+      }
+    }
+  ]
+}

@@ -1,13 +1,14 @@
 import { redirect, notFound } from 'next/navigation';
 import { getCourse, getTheme } from '../../../../lib/courses';
 import { guardClient } from '../../../../lib/guard';
+import { canAccessTrack } from '../../../../lib/auth';
 import NavBar from '../../../../components/NavBar';
 import LessonView from '../../../../components/LessonView';
 import BakerHughesLesson from '../../../../components/bakerhughes/BakerHughesLesson';
 
 export default async function LessonPage({ params }) {
   const { client, id } = await params;
-  await guardClient(client);
+  const session = await guardClient(client);
 
   const course = getCourse(client);
   const theme = getTheme(client);
@@ -17,6 +18,10 @@ export default async function LessonPage({ params }) {
   const lessonIndex = course.lessons.findIndex((l) => l.num === lessonNum);
   const lesson = lessonIndex >= 0 ? course.lessons[lessonIndex] : null;
   if (!lesson) redirect(`/${client}`);
+
+  // Lição de trilha pessoal só abre para o dono (ou para quem vê tudo).
+  const lessonTrack = (course.tracks || []).find((t) => t.id === lesson.track);
+  if (lessonTrack && !canAccessTrack(session, lessonTrack)) redirect(`/${client}`);
 
   const totalLessons = course.lessons.length;
 
@@ -42,6 +47,13 @@ export default async function LessonPage({ params }) {
       : null;
 
   if (client === 'bakerhughes') {
+    // "Onde você está": posição da lição dentro da própria trilha.
+    const position = {
+      index: siblingIndex >= 0 ? siblingIndex + 1 : 1,
+      total: siblings.length,
+      topic: lesson.topic || null,
+      trackName: lessonTrack?.name || lesson.trackLabel || null,
+    };
     return (
       <BakerHughesLesson
         lesson={lesson}
@@ -50,6 +62,8 @@ export default async function LessonPage({ params }) {
         backHref={backHref}
         prevNum={prevNum}
         nextNum={nextNum}
+        student={session?.name || null}
+        position={position}
       />
     );
   }

@@ -1,0 +1,819 @@
+{
+  "topic": "Meeting language",
+  "lessons": [
+    {
+      "title": "Leading a Meeting",
+      "focus": "Abrir, conduzir o tempo e fechar uma reunião",
+      "character": "uk-female",
+      "objective": "Conduzir uma reunião em inglês do início ao fim: abrir com objetivo, controlar o tempo e fechar com decisões.",
+      "intro": [
+        "Leading a meeting in a second language is mostly about a dozen fixed phrases — the ones that open, redirect, and close.",
+        "The content is yours. The structure is borrowed, and it's the same in every company in the world.",
+        "Learn the phrases once and you can chair any call."
+      ],
+      "introPt": [
+        "Conduzir uma reunião numa segunda língua é, quase sempre, uma dúzia de frases fixas — as que abrem, redirecionam e fecham.",
+        "O conteúdo é seu. A estrutura é emprestada, e é a mesma em qualquer empresa do mundo.",
+        "Aprenda as frases uma vez e você preside qualquer call."
+      ],
+      "vocab": [
+        { "en": "to chair a meeting", "pt": "presidir uma reunião", "example": "I'll chair today's call." },
+        { "en": "the purpose of today is…", "pt": "o objetivo de hoje é…", "example": "The purpose of today is to decide on the date." },
+        { "en": "let's crack on", "pt": "vamos ao que interessa", "example": "We're short on time, so let's crack on." },
+        { "en": "to keep an eye on the time", "pt": "ficar de olho no tempo", "example": "I'll keep an eye on the time." },
+        { "en": "let's park that", "pt": "vamos deixar isso de lado", "example": "Good point — let's park that for now." },
+        { "en": "to bring someone in", "pt": "dar a palavra a alguém", "example": "Let me bring Marcus in on this." },
+        { "en": "we're going round in circles", "pt": "estamos girando em círculos", "example": "We're going round in circles — let's decide." },
+        { "en": "to wrap up", "pt": "encerrar", "example": "Let's wrap up with the actions." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a condução da reunião",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as falas na ordem de uma reunião bem conduzida.",
+          "items": [
+            "Right — shall we make a start? Thanks everyone for joining.",
+            "The purpose of today is to decide whether we commit to the September handover.",
+            "We've got thirty minutes, and I'd like to leave five at the end for actions.",
+            "Marcus, can you take us through where we are on the panel?",
+            "We're going round in circles on the sequencing — let's park it and come back on Thursday.",
+            "Let's wrap up: two decisions, three actions. I'll send the notes today."
+          ],
+          "explanation": "Abrir · objetivo · tempo · dar a palavra · cortar o loop · fechar. Seis movimentos."
+        },
+        {
+          "type": "matching",
+          "title": "Associe a frase à situação",
+          "instruction": "Clique na caixa à direita e escolha quando usar cada frase.",
+          "pairs": [
+            { "left": "The purpose of today is…", "right": "abrir dizendo para que a reunião existe" },
+            { "left": "Let me bring Marcus in here.", "right": "dar a palavra a quem tem a informação" },
+            { "left": "Let's park that for now.", "right": "tirar do caminho um tema fora do escopo" },
+            { "left": "We're going round in circles.", "right": "cortar uma discussão que não avança" },
+            { "left": "Let's wrap up with the actions.", "right": "fechar consolidando o que ficou combinado" }
+          ],
+          "explanation": "Cinco frases e você controla qualquer reunião — sem levantar a voz uma vez."
+        },
+        {
+          "type": "serialChoice",
+          "title": "O que dizer quando…",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a intervenção certa para cada situação.",
+          "items": [
+            {
+              "prompt": "Duas pessoas discutem um detalhe técnico há cinco minutos.",
+              "options": [
+                { "text": "That's important but it's a level of detail we don't need today — can the two of you take it offline and come back on Thursday?", "correct": true },
+                { "text": "Can we please move on?" },
+                { "text": "(esperar terminarem)" }
+              ],
+              "why": "Valida, delimita e dá destino. Cortar sem destino gera ressentimento."
+            },
+            {
+              "prompt": "Alguém não falou nada em vinte minutos.",
+              "options": [
+                { "text": "Ana, you know this site better than any of us — what's your read?", "correct": true },
+                { "text": "Ana, do you have anything to add?" },
+                { "text": "(não chamar)" }
+              ],
+              "why": "Convite específico e com um motivo. \"Anything to add?\" quase sempre recebe \"no\"."
+            },
+            {
+              "prompt": "O tempo acabou e falta uma decisão.",
+              "options": [
+                { "text": "We're at time. I need a decision on the date — can we agree September, or do we need another call?", "correct": true },
+                { "text": "We're out of time, let's continue next week." },
+                { "text": "Sorry, I know we're over, just a few more minutes…" }
+              ],
+              "why": "Nomeia o tempo, isola a decisão e dá duas saídas. Nunca estoure o horário sem combinar."
+            }
+          ],
+          "explanation": "Conduzir é sobre destino: toda intervenção deve dizer para onde a coisa vai."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Conduzindo com uma sala difícil",
+          "badge": "Conversa",
+          "situation": "Você preside a call semanal. O gerente técnico monopoliza e o cliente está na sala.",
+          "turns": [
+            {
+              "who": "Technical Manager",
+              "them": "…and that's why the valve sequencing is fundamentally different from what we did in Aberdeen, which by the way also had issues with…",
+              "options": [
+                { "text": "Sorry to jump in, that's really useful context. For today, what I need from you is one thing: does the sequencing change the September date, yes or no?", "correct": true, "why": "Interrompe reconhecendo, e reduz a fala a uma pergunta fechada." },
+                { "text": "(deixar ele continuar)", "why": "Cinco minutos por pessoa e a reunião acaba sem decisão." },
+                { "text": "We don't have time for this.", "why": "Corta sem reconhecer, na frente do cliente. Cria um inimigo por nada." }
+              ]
+            },
+            {
+              "who": "Customer",
+              "them": "Can I ask something? We've been told three different dates in three weeks.",
+              "options": [
+                { "text": "That's fair, and I'd rather deal with it head-on. Let me give you the current position and how confident we are in it.", "correct": true, "why": "Reconhece a crítica na hora, sem defensiva, e assume o controle da resposta." },
+                { "text": "That's not really accurate.", "why": "Discutir a percepção do cliente na frente da sala nunca sai barato." },
+                { "text": "I'll follow up with you after the call.", "why": "Empurrar uma pergunta legítima para depois soa como fuga." }
+              ]
+            },
+            {
+              "who": "Technical Manager",
+              "them": "Well, the date depends on so many variables that any answer is speculation.",
+              "options": [
+                { "text": "Understood, but our customer needs a number to plan with. Let's give the date we believe in today, with the one condition attached to it — that's not speculation, that's a forecast.", "correct": true, "why": "Reformula: previsão com condição não é chute. Resolve o impasse técnico e político." },
+                { "text": "Then we won't give a date.", "why": "Deixa o cliente sem nada — exatamente a reclamação dele." },
+                { "text": "September. Definitely September.", "why": "Comprometer o time sem base é como se chega à quarta data em quatro semanas." }
+              ]
+            }
+          ],
+          "explanation": "Interromper reconhecendo, encarar a crítica e transformar impasse em previsão condicionada."
+        },
+        {
+          "type": "readAloud",
+          "title": "Ensaie a condução",
+          "instruction": "Ouça, repita e grave. Quem conduz precisa dessas frases automáticas, não pensadas.",
+          "sentences": [
+            "Right — shall we make a start?",
+            "The purpose of today is to decide on the handover date.",
+            "We've got thirty minutes, and I'll keep an eye on the time.",
+            "Sorry to jump in — let me bring Marcus in here.",
+            "We're going round in circles, so let's park that and come back on Thursday.",
+            "Let's wrap up: two decisions, three actions."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can open a meeting with a clear purpose.", "pt": "Abro uma reunião com objetivo claro." },
+            { "en": "I can interrupt politely and redirect.", "pt": "Interrompo com educação e redireciono." },
+            { "en": "I can bring a quiet person into the conversation.", "pt": "Sei trazer para a conversa quem está calado." },
+            { "en": "I close with decisions and actions, not with \"thanks everyone\".", "pt": "Fecho com decisões e ações, não com \"obrigada a todos\"." }
+          ],
+          "doneMessage": "condução dominada. Agora, a sua vez de falar.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Quem conduz, decide",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"Shall we make a start?\" is the most common opening in British meetings — softer than \"let's begin\".", "pt": "\"Shall we make a start?\" é a abertura mais comum em reuniões britânicas — mais suave que \"let's begin\"." },
+          { "en": "\"Let's park that\" saves the idea and the person's face at the same time. Nobody feels rejected.", "pt": "\"Let's park that\" salva a ideia e a face da pessoa ao mesmo tempo. Ninguém se sente rejeitado." },
+          { "en": "\"Sorry to jump in\" makes an interruption acceptable in almost any English-speaking meeting.", "pt": "\"Sorry to jump in\" torna uma interrupção aceitável em praticamente qualquer reunião em inglês." },
+          { "en": "Naming the time (\"we're at time\") is the chair's strongest and least aggressive tool.", "pt": "Nomear o tempo (\"we're at time\") é a ferramenta mais forte e menos agressiva de quem preside." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now chair a meeting in English and finish it on time, with decisions.",
+        "pt": "Agora você preside uma reunião em inglês e a encerra no horário, com decisões."
+      }
+    },
+    {
+      "title": "Giving an Update",
+      "focus": "Falar a sua parte em sessenta segundos",
+      "character": "us-female",
+      "objective": "Dar um update em inglês em um minuto: status, mudança, risco e o que você precisa.",
+      "intro": [
+        "\"Fernanda, over to you\" — and suddenly it's your turn, in English, with everyone listening.",
+        "A good update has four parts and lasts sixty seconds: <strong>where we are</strong>, <strong>what changed</strong>, <strong>what's at risk</strong>, <strong>what I need</strong>.",
+        "Rehearse the shape and you'll never improvise the structure again — only the content."
+      ],
+      "introPt": [
+        "\"Fernanda, over to you\" — e de repente é a sua vez, em inglês, com todo mundo ouvindo.",
+        "Um bom update tem quatro partes e dura sessenta segundos: <strong>onde estamos</strong>, <strong>o que mudou</strong>, <strong>o que está em risco</strong>, <strong>o que eu preciso</strong>.",
+        "Ensaie a forma e você nunca mais improvisa a estrutura — só o conteúdo."
+      ],
+      "vocab": [
+        { "en": "over to you", "pt": "com você", "example": "Marcus, over to you." },
+        { "en": "in short", "pt": "resumindo", "example": "In short: we're on track." },
+        { "en": "since we last spoke", "pt": "desde a última conversa", "example": "Since we last spoke, the panel shipped." },
+        { "en": "the one thing to watch is", "pt": "o ponto de atenção é", "example": "The one thing to watch is site access." },
+        { "en": "what I need from you is", "pt": "o que eu preciso de vocês é", "example": "What I need from you is a decision by Friday." },
+        { "en": "nothing to report", "pt": "nada a reportar", "example": "Nothing to report this week — all on plan." },
+        { "en": "that's it from me", "pt": "é isso da minha parte", "example": "That's it from me." },
+        { "en": "to hand back", "pt": "devolver a palavra", "example": "I'll hand back to you, Priya." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte o update de sessenta segundos",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as quatro partes na ordem certa, com a abertura e o fechamento.",
+          "items": [
+            "Thanks — in short, we're on track for September.",
+            "Since we last spoke, the replacement panel shipped on the 30th.",
+            "The one thing to watch is site access on 4 August — the customer hasn't confirmed yet.",
+            "What I need from you is a nudge to their operations team this week.",
+            "That's it from me — I'll hand back to you."
+          ],
+          "explanation": "Status → mudança → risco → pedido → devolução. Sessenta segundos, cinco frases."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual update funciona?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que a sala consegue acompanhar.",
+          "items": [
+            {
+              "prompt": "Sua vez de falar numa call com dez pessoas.",
+              "a": "So, um, we've been working on a few things, the panel situation has evolved somewhat and there were also some discussions with procurement, and the site access is something we're looking into…",
+              "b": "In short: on track for September. The panel shipped on the 30th. The one thing to watch is site access on the 4th. I need a nudge to the customer's ops team this week.",
+              "correct": "b",
+              "why": "Quatro frases, quatro informações. A primeira versão não tem nenhuma."
+            },
+            {
+              "prompt": "Semana sem novidades.",
+              "a": "Nothing to report this week — all on plan, next milestone is the 4th.",
+              "b": "Not much has happened really, more or less the same as last week I think.",
+              "correct": "a",
+              "why": "\"Nothing to report\" é uma resposta profissional e completa — desde que venha com o próximo marco."
+            },
+            {
+              "prompt": "Você precisa de algo do grupo.",
+              "a": "It would be good if someone could maybe help with the customer.",
+              "b": "What I need from you is one thing: Priya, could you call their ops manager before Friday?",
+              "correct": "b",
+              "why": "Nome, ação e prazo. \"Someone\" e \"maybe\" garantem que nada vai acontecer."
+            }
+          ],
+          "explanation": "Update sem pedido é relatório. Update com pedido é gestão."
+        },
+        {
+          "type": "listenGap",
+          "title": "Ouça o update e complete",
+          "badge": "Ouça e complete",
+          "instruction": "Ouça o áudio e complete cada frase com o banco.",
+          "audioText": "Thanks. In short, we're on track for September. Since we last spoke, the replacement panel shipped on the thirtieth. The one thing to watch is site access on the fourth of August, which the customer hasn't confirmed yet. What I need from you is a nudge to their operations team this week. That's it from me.",
+          "bank": ["In short", "Since", "watch", "need", "That's it"],
+          "items": [
+            { "text": "___ , we're on track for September.", "answer": "In short" },
+            { "text": "___ we last spoke, the panel shipped.", "answer": "Since" },
+            { "text": "The one thing to ___ is site access.", "answer": "watch" },
+            { "text": "What I ___ from you is a nudge to their ops team.", "answer": "need" },
+            { "text": "___ from me.", "answer": "That's it" }
+          ],
+          "explanation": "Essas cinco expressões são o esqueleto de qualquer update em inglês."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Uma palavra errada por frase.",
+          "items": [
+            { "sentence": "Since we last spoke, the panel has ship on the thirtieth.", "wrong": "ship", "fix": "shipped", "why": "Particípio: has shipped." },
+            { "sentence": "The one thing to watch is the site access in the fourth of August.", "wrong": "in", "fix": "on", "why": "Datas específicas levam ON: on the fourth of August." },
+            { "sentence": "What I need from you are a decision by Friday.", "wrong": "are", "fix": "is", "why": "O sujeito é \"what I need\", singular: is." },
+            { "sentence": "I will hand back the word to you now.", "wrong": "the", "fix": "(nada: \"hand back to you\")", "why": "\"Hand back to you\" — não se traduz \"passar a palavra\" literalmente." }
+          ],
+          "explanation": "Quatro deslizes que aparecem justamente no momento em que todo mundo está ouvindo."
+        },
+        {
+          "type": "readAloud",
+          "title": "Ensaie o seu update",
+          "instruction": "Ouça, repita e grave. O update é a única fala que dá para ensaiar antes de toda reunião.",
+          "sentences": [
+            "Thanks — in short, we're on track for September.",
+            "Since we last spoke, the replacement panel shipped on the thirtieth.",
+            "The one thing to watch is site access on the fourth.",
+            "What I need from you is a nudge to their operations team this week.",
+            "That's it from me — I'll hand back to you."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can give an update in four parts, in sixty seconds.", "pt": "Dou um update em quatro partes, em sessenta segundos." },
+            { "en": "I always end with what I need, and from whom.", "pt": "Sempre termino com o que preciso, e de quem." },
+            { "en": "I can say \"nothing to report\" professionally.", "pt": "Sei dizer \"nothing to report\" de forma profissional." },
+            { "en": "I hand back cleanly instead of trailing off.", "pt": "Devolvo a palavra com clareza em vez de deixar a fala se dissolver." }
+          ],
+          "doneMessage": "update dominado. Agora, perguntar e interromper.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O minuto que define a sua reputação",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"In short\" at the start of an update is a promise — and people relax as soon as they hear it.", "pt": "\"In short\" no começo de um update é uma promessa — e as pessoas relaxam assim que ouvem." },
+          { "en": "\"Nothing to report\" is a complete update when the plan is holding. Filling silence with words costs credibility.", "pt": "\"Nothing to report\" é um update completo quando o plano está de pé. Encher o silêncio custa credibilidade." },
+          { "en": "\"The one thing to watch is…\" focuses ten people on a single risk. It's the most efficient sentence in meetings.", "pt": "\"The one thing to watch is…\" foca dez pessoas num único risco. É a frase mais eficiente das reuniões." },
+          { "en": "Ending with a request turns your minute from a report into a decision point.", "pt": "Terminar com um pedido transforma o seu minuto de relatório em ponto de decisão." }
+        ]
+      },
+      "celebrate": {
+        "en": "Your turn to speak is now the clearest minute of the whole meeting.",
+        "pt": "A sua vez de falar agora é o minuto mais claro da reunião inteira."
+      }
+    },
+    {
+      "title": "Asking Questions and Interrupting",
+      "focus": "Entrar na conversa, perguntar e pedir para repetir",
+      "character": "us-male",
+      "objective": "Entrar numa conversa em inglês no momento certo, perguntar com clareza e pedir repetição sem constrangimento.",
+      "intro": [
+        "The hardest part of a meeting in English isn't understanding. It's finding the gap to speak.",
+        "Native speakers don't leave pauses — they leave <em>signals</em>. And there are fixed phrases designed exactly for entering a conversation.",
+        "There's also one that no one should be ashamed of: <em>\"Sorry, could you say that again?\"</em>"
+      ],
+      "introPt": [
+        "A parte mais difícil de uma reunião em inglês não é entender. É achar a brecha para falar.",
+        "Falantes nativos não deixam pausas — deixam <em>sinais</em>. E existem frases fixas feitas exatamente para entrar na conversa.",
+        "E existe uma da qual ninguém deveria ter vergonha: <em>\"Sorry, could you say that again?\"</em>"
+      ],
+      "vocab": [
+        { "en": "can I just come in there?", "pt": "posso entrar aqui?", "example": "Can I just come in there for a second?" },
+        { "en": "sorry to jump in", "pt": "desculpe interromper", "example": "Sorry to jump in — quick question." },
+        { "en": "just to build on that", "pt": "só complementando", "example": "Just to build on what Marcus said…" },
+        { "en": "could you say that again?", "pt": "pode repetir?", "example": "Sorry, could you say that again?" },
+        { "en": "you're breaking up", "pt": "está cortando (áudio)", "example": "Sorry, you're breaking up a bit." },
+        { "en": "just so I'm clear", "pt": "só para eu entender bem", "example": "Just so I'm clear — the date moved?" },
+        { "en": "can I check one thing?", "pt": "posso conferir uma coisa?", "example": "Can I check one thing before we move on?" },
+        { "en": "I'll come back to that", "pt": "eu volto nisso", "example": "Good point — I'll come back to that." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Qual é a função da frase?",
+          "instruction": "Classifique cada expressão pela função na reunião.",
+          "categories": [
+            { "id": "enter", "name": "Entrar na conversa", "short": "Entrar" },
+            { "id": "clarify", "name": "Esclarecer / repetir", "short": "Esclarecer" },
+            { "id": "defer", "name": "Adiar o assunto", "short": "Adiar" }
+          ],
+          "items": [
+            { "text": "Can I just come in there?", "cat": "enter" },
+            { "text": "Sorry, could you say that again?", "cat": "clarify" },
+            { "text": "Let's park that and come back on Thursday.", "cat": "defer" },
+            { "text": "Just to build on what Marcus said…", "cat": "enter" },
+            { "text": "Just so I'm clear — the date moved to September?", "cat": "clarify" },
+            { "text": "Good point — I'll come back to that at the end.", "cat": "defer" }
+          ],
+          "explanation": "Entrar, esclarecer e adiar. Três funções, e a reunião inteira cabe nelas."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Como pedir para repetir",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que não te coloca numa posição frágil.",
+          "items": [
+            {
+              "prompt": "Você não entendeu uma frase inteira.",
+              "a": "Sorry, my English isn't very good, could you repeat?",
+              "b": "Sorry, could you say that again? The line dropped for a second.",
+              "correct": "b",
+              "why": "Nunca ofereça o seu inglês como explicação. Nativos pedem repetição o tempo todo, sem se justificar."
+            },
+            {
+              "prompt": "Você entendeu as palavras, mas não a conclusão.",
+              "a": "I don't understand.",
+              "b": "Just so I'm clear — are you saying the date moves to October, or that it might?",
+              "correct": "b",
+              "why": "Pergunta específica com duas opções. Mostra que você acompanhou e força a precisão."
+            },
+            {
+              "prompt": "Alguém fala muito rápido.",
+              "a": "Could I ask you to slow down a touch? I want to get the numbers right.",
+              "b": "(não dizer nada e perder os números)",
+              "correct": "a",
+              "why": "Pedir ritmo é normal e profissional — e a justificativa \"quero anotar certo\" torna o pedido óbvio."
+            }
+          ],
+          "explanation": "Peça repetição pelo canal, pelo ritmo ou pela precisão. Nunca pelo seu inglês."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Entrando numa conversa rápida",
+          "badge": "Conversa",
+          "situation": "Call com sete pessoas, todas nativas, falando rápido. Você tem uma informação que muda a decisão.",
+          "turns": [
+            {
+              "who": "Colleague",
+              "them": "…so I think we can just confirm October and move on, unless anyone objects—",
+              "options": [
+                { "text": "Can I just come in there? Before we confirm October — the customer's campaign starts in September, so October may not be an option for them.", "correct": true, "why": "Entra na brecha exata com a frase feita para isso, e vai direto ao dado que muda tudo." },
+                { "text": "(esperar terminarem e mandar e-mail depois)", "why": "A decisão já terá sido tomada — e reverter custa dez vezes mais." },
+                { "text": "Excuse me! Excuse me!", "why": "Funciona, mas queima capital social que você vai precisar depois." }
+              ]
+            },
+            {
+              "who": "Colleague",
+              "them": "Oh — is that confirmed? Because that changes things quite a lot.",
+              "options": [
+                { "text": "It's in clause 4 of their campaign schedule. I'll put the reference in the chat now so you can see it.", "correct": true, "why": "Fonte, referência e evidência imediata. Assim a informação vira decisão." },
+                { "text": "I'm fairly sure, yes.", "why": "\"Fairly sure\" num ponto que muda a decisão não sustenta o peso." },
+                { "text": "That's what I heard somewhere.", "why": "Enfraquece uma informação que era boa." }
+              ]
+            },
+            {
+              "who": "Chair",
+              "them": "Good catch. So — do we need another call, or can we decide now?",
+              "options": [
+                { "text": "I think we can decide now: September with the panel condition. I'll write it up straight after.", "correct": true, "why": "Propõe a decisão e assume o registro. É assim que se ganha a sala." },
+                { "text": "Maybe another call would be safer.", "why": "Você tinha a informação e a sala estava pronta — adiar desperdiça o momento." },
+                { "text": "Whatever everyone prefers.", "why": "Depois de uma intervenção forte, devolver a decisão apaga o efeito dela." }
+              ]
+            }
+          ],
+          "explanation": "Entrar com frase feita → sustentar com fonte → propor a decisão. Três movimentos."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases de intervenção",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Entrar na conversa.", "answer": "Can I just come in there for a second", "extra": ["Could I to", "in"] },
+            { "hint": "Confirmar o entendimento.", "answer": "Just so I am clear are you saying the date moves to October", "extra": ["for", "moving"] },
+            { "hint": "Complementar o colega.", "answer": "Just to build on what Marcus said about the sequencing", "extra": ["building", "over"] }
+          ],
+          "explanation": "Três frases decoradas e você nunca mais fica esperando a brecha perfeita."
+        },
+        {
+          "type": "multiSelect",
+          "title": "Como criar a sua brecha",
+          "instruction": "Marque tudo o que ajuda a entrar numa conversa rápida em inglês.",
+          "prompt": "Seven native speakers, fast call, you need to speak.",
+          "options": [
+            { "text": "Use a fixed opener like \"can I just come in there?\"", "correct": true },
+            { "text": "Unmute audibly — the sound itself signals you want to speak.", "correct": true },
+            { "text": "Type your point in the chat if the gap doesn't come.", "correct": true },
+            { "text": "Wait for a long pause.", "correct": false },
+            { "text": "Start with \"sorry, my English…\"", "correct": false },
+            { "text": "Say the person's name first: \"Marcus — quick one.\"", "correct": true }
+          ],
+          "explanation": "Pausa longa não vem. A brecha se cria com sinal, nome ou chat."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can interrupt politely with a fixed phrase.", "pt": "Interrompo com educação usando uma frase feita." },
+            { "en": "I ask for repetition without apologising for my English.", "pt": "Peço repetição sem me desculpar pelo meu inglês." },
+            { "en": "I can check understanding with \"just so I'm clear\".", "pt": "Confirmo entendimento com \"just so I'm clear\"." },
+            { "en": "I use the chat when the gap doesn't come.", "pt": "Uso o chat quando a brecha não aparece." }
+          ],
+          "doneMessage": "voz garantida na sala. Agora, o registro do que foi combinado.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A física das conversas em inglês",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "In fast English conversation, the gap between speakers is about 0.2 seconds. Waiting for a pause means never speaking.", "pt": "Numa conversa rápida em inglês, a brecha entre falantes é de cerca de 0,2 segundo. Esperar a pausa é nunca falar." },
+          { "en": "\"Can I just come in there?\" is designed to be said over someone — that's its whole purpose.", "pt": "\"Can I just come in there?\" foi feita para ser dita por cima de alguém — é essa a função dela." },
+          { "en": "Native speakers ask each other to repeat constantly. It's about the line, the accent, the noise — never about competence.", "pt": "Nativos pedem repetição uns aos outros o tempo todo. É sobre a linha, o sotaque, o barulho — nunca sobre competência." },
+          { "en": "\"Just to build on that\" makes your point sound like a contribution rather than a correction.", "pt": "\"Just to build on that\" faz o seu ponto soar como contribuição, não como correção." }
+        ]
+      },
+      "celebrate": {
+        "en": "You now have a voice in any meeting — however fast it moves.",
+        "pt": "Agora você tem voz em qualquer reunião — por mais rápida que ela seja."
+      }
+    },
+    {
+      "title": "Minutes and Action Items",
+      "focus": "Registrar decisões e distribuir responsabilidades",
+      "character": "uk-female",
+      "objective": "Escrever a ata de uma reunião em inglês: decisões, ações, donos e prazos — em meia página.",
+      "intro": [
+        "Minutes are not a transcript. Nobody reads a transcript.",
+        "Good minutes have exactly three sections: <strong>decisions</strong>, <strong>actions</strong> (with owner and date), <strong>open points</strong>.",
+        "Everything else that was said stays in the room — and that's a feature, not a loss."
+      ],
+      "introPt": [
+        "Ata não é transcrição. Ninguém lê transcrição.",
+        "Uma boa ata tem exatamente três seções: <strong>decisões</strong>, <strong>ações</strong> (com dono e data), <strong>pontos em aberto</strong>.",
+        "Tudo o mais que foi dito fica na sala — e isso é uma vantagem, não uma perda."
+      ],
+      "vocab": [
+        { "en": "minutes", "pt": "ata", "example": "I'll circulate the minutes today." },
+        { "en": "action item", "pt": "item de ação", "example": "Three action items from today." },
+        { "en": "owner", "pt": "responsável", "example": "Every action needs an owner." },
+        { "en": "due date", "pt": "prazo", "example": "Due date: Friday the 12th." },
+        { "en": "to circulate", "pt": "distribuir", "example": "I'll circulate the notes after the call." },
+        { "en": "agreed", "pt": "decidido, acordado", "example": "Agreed: we commit to September." },
+        { "en": "open point", "pt": "ponto em aberto", "example": "Open point: the liability cap." },
+        { "en": "carried over", "pt": "transferido para a próxima", "example": "Two actions carried over from last week." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Duas atas da mesma reunião",
+          "badge": "Leia e responda",
+          "heading": "Same meeting, two sets of minutes",
+          "instruction": "Leia as duas versões e compare.",
+          "passage": [
+            "Version A: \"The team discussed the panel situation at length. Marcus explained the technical background and the difficulties experienced with the supplier. There was a long discussion about the sequencing. Fernanda raised the customer's campaign dates. It was felt that September might still be possible. Various options were considered.\"",
+            "Version B: \"DECISIONS — 1. We commit to the September handover, conditional on the panel shipping by 30 May. 2. Commissioning will be resequenced to run in parallel. ACTIONS — 1. Marcus: confirm panel shipping date. Due 30 May. 2. Fernanda: inform customer of the September commitment. Due 24 May. 3. Ana: book crew for 4 August. Due 31 May. OPEN — liability cap, with legal, next review Thursday.\""
+          ],
+          "questions": [
+            {
+              "prompt": "Which version tells you what to do on Monday morning?",
+              "options": [
+                { "text": "Version A." },
+                { "text": "Version B.", "correct": true },
+                { "text": "Both equally." }
+              ],
+              "why": "Ação sem dono e sem data não é ação — é lembrança."
+            },
+            {
+              "prompt": "What's the problem with \"It was felt that September might still be possible\"?",
+              "options": [
+                { "text": "It's too long." },
+                { "text": "Nobody is responsible for it and nothing was decided.", "correct": true },
+                { "text": "It's grammatically wrong." }
+              ],
+              "why": "A voz passiva sem sujeito é onde as decisões vão morrer."
+            },
+            {
+              "prompt": "What's the right length for minutes of a 30-minute meeting?",
+              "options": [
+                { "text": "Half a page.", "correct": true },
+                { "text": "Three pages." },
+                { "text": "As long as the discussion was." }
+              ],
+              "why": "Meia página é lida. Três páginas são arquivadas."
+            }
+          ],
+          "explanation": "Decisões · ações com dono e data · pontos em aberto. Nada mais."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte a ata",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as seções na ordem de uma ata profissional.",
+          "items": [
+            "Meeting: Macaé weekly · 22 May · attendees listed below.",
+            "DECISIONS: we commit to September, conditional on the panel shipping by 30 May.",
+            "ACTIONS: Marcus — confirm shipping date (30 May); Fernanda — inform customer (24 May).",
+            "OPEN POINTS: liability cap, with legal, review Thursday.",
+            "Next meeting: 29 May, same time."
+          ],
+          "explanation": "Cabeçalho → decisões → ações → aberto → próxima. Cinco blocos, meia página."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Uma palavra errada por linha de ata.",
+          "items": [
+            { "sentence": "Marcus will confirm the shipping date until 30 May.", "wrong": "until", "fix": "by", "why": "Prazo é BY. \"Until\" significa continuamente até a data." },
+            { "sentence": "It was decided to commit with the September handover.", "wrong": "with", "fix": "to", "why": "To commit TO something." },
+            { "sentence": "Two actions were carried on from last week.", "wrong": "on", "fix": "over", "why": "Carried OVER — transferidas para a lista seguinte." },
+            { "sentence": "I will circulate the minutes of the meeting to all the attendants.", "wrong": "attendants", "fix": "attendees", "why": "Attendee é participante; attendant é atendente de serviço." }
+          ],
+          "explanation": "\"Attendants\" e \"until\" são os dois erros mais comuns em ata escrita por brasileiros."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que faz uma ação ser cumprida",
+          "instruction": "Marque tudo o que uma boa action item precisa ter.",
+          "prompt": "You're writing the action list after a meeting.",
+          "options": [
+            { "text": "A named owner — one person, not a team.", "correct": true },
+            { "text": "A verb that says exactly what will be done.", "correct": true },
+            { "text": "A due date.", "correct": true },
+            { "text": "The full discussion that led to it.", "correct": false },
+            { "text": "A note of what happens if it slips.", "correct": true },
+            { "text": "Everyone who was consulted about it.", "correct": false }
+          ],
+          "explanation": "Dono único, verbo claro, data. Se a ação é de um time, ninguém a fez."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a ata",
+          "badge": "Complete o texto",
+          "instruction": "Escolha o termo certo em cada lacuna.",
+          "text": "___ : we commit to the September handover, conditional on the panel shipping ___ 30 May. ___ : Marcus — confirm shipping date, ___ 30 May; Fernanda — inform the customer, due 24 May. ___ points: the liability cap, with legal. Two actions ___ over from last week. I'll ___ these notes this afternoon.",
+          "gaps": [
+            { "options": ["Decisions", "Conclusions", "Thoughts"], "answer": "Decisions", "why": "A seção se chama Decisions — o que ficou decidido." },
+            { "options": ["by", "until", "on"], "answer": "by", "why": "Prazo é BY." },
+            { "options": ["Actions", "Tasks to do", "Activities"], "answer": "Actions", "why": "\"Actions\" ou \"Action items\" é o termo padrão." },
+            { "options": ["due", "date", "deadline of"], "answer": "due", "why": "Due 30 May — formato consagrado." },
+            { "options": ["Open", "Opened", "Free"], "answer": "Open", "why": "Open points — pontos em aberto." },
+            { "options": ["carried", "carry", "carrying"], "answer": "carried", "why": "Carried over — transferidas." },
+            { "options": ["circulate", "spread", "divulge"], "answer": "circulate", "why": "To circulate minutes — distribuir a ata." }
+          ],
+          "explanation": "Esse é o vocabulário completo de uma ata em inglês."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I write minutes in three sections: decisions, actions, open points.", "pt": "Escrevo ata em três seções: decisões, ações, pontos em aberto." },
+            { "en": "Every action has one named owner and a due date.", "pt": "Toda ação tem um dono nomeado e um prazo." },
+            { "en": "I use \"by\" for deadlines, never \"until\".", "pt": "Uso \"by\" para prazos, nunca \"until\"." },
+            { "en": "I circulate the notes the same day.", "pt": "Distribuo as notas no mesmo dia." }
+          ],
+          "doneMessage": "registro dominado. Falta o que decide tudo: prazos e prioridades.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Quem escreve a ata tem poder",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"It was agreed\" without a name is where decisions go to die. Always write who.", "pt": "\"It was agreed\" sem nome é onde as decisões morrem. Escreva sempre quem." },
+          { "en": "The person who writes the minutes decides what the meeting meant. Volunteer for it.", "pt": "Quem escreve a ata decide o que a reunião significou. Ofereça-se para escrever." },
+          { "en": "\"Attendees\" are the people in the meeting; \"attendants\" work at petrol stations.", "pt": "\"Attendees\" são os participantes da reunião; \"attendants\" trabalham em postos de gasolina." },
+          { "en": "An action owned by a team is owned by nobody. One name, always.", "pt": "Uma ação cujo dono é um time não tem dono. Um nome, sempre." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now turn a thirty-minute meeting into half a page that actually moves work forward.",
+        "pt": "Agora você transforma uma reunião de trinta minutos em meia página que faz o trabalho andar."
+      }
+    },
+    {
+      "title": "Deadlines and Priorities",
+      "focus": "Combinar prazos, renegociar e dizer o que vem primeiro",
+      "character": "us-female",
+      "objective": "Falar de prazos e prioridades em inglês com precisão — inclusive quando precisa renegociar uma data já combinada.",
+      "intro": [
+        "\"As soon as possible\" is not a deadline. \"End of play Thursday\" is.",
+        "English has a precise grammar of time at work: <strong>by</strong> vs <strong>until</strong>, <strong>EOD</strong>, <strong>EOP</strong>, <strong>hard deadline</strong> vs <strong>target date</strong>.",
+        "And it has a respected way of renegotiating — as long as you do it early."
+      ],
+      "introPt": [
+        "\"As soon as possible\" não é prazo. \"End of play Thursday\" é.",
+        "O inglês tem uma gramática precisa do tempo no trabalho: <strong>by</strong> vs <strong>until</strong>, <strong>EOD</strong>, <strong>EOP</strong>, <strong>hard deadline</strong> vs <strong>target date</strong>.",
+        "E tem uma forma respeitada de renegociar — desde que seja cedo."
+      ],
+      "vocab": [
+        { "en": "hard deadline", "pt": "prazo inegociável", "example": "The 12th is a hard deadline." },
+        { "en": "target date", "pt": "data-alvo (com folga)", "example": "The 8th is a target, not a commitment." },
+        { "en": "EOD / EOP", "pt": "fim do dia / fim do expediente", "example": "I'll have it with you by EOD Thursday." },
+        { "en": "to push back a date", "pt": "adiar uma data", "example": "Can we push the review back to Monday?" },
+        { "en": "to bring forward", "pt": "antecipar", "example": "They brought the campaign forward two weeks." },
+        { "en": "top priority", "pt": "prioridade máxima", "example": "The panel is top priority this week." },
+        { "en": "to deprioritise", "pt": "tirar da prioridade", "example": "We've deprioritised the training package." },
+        { "en": "what would you like me to drop?", "pt": "o que você quer que eu deixe de lado?", "example": "Happy to take it — what would you like me to drop?" }
+      ],
+      "exercises": [
+        {
+          "type": "serialChoice",
+          "title": "By, until, in ou on?",
+          "badge": "Escolha certa",
+          "instruction": "A preposição errada num prazo gera atraso de verdade. Escolha a certa.",
+          "items": [
+            {
+              "prompt": "I'll send it ___ Thursday. (no mais tardar quinta)",
+              "options": [{ "text": "by", "correct": true }, { "text": "until" }, { "text": "in" }],
+              "why": "BY = até essa data, no mais tardar. É o prazo."
+            },
+            {
+              "prompt": "We can't start ___ the permit arrives. (só depois que chegar)",
+              "options": [{ "text": "until", "correct": true }, { "text": "by" }, { "text": "since" }],
+              "why": "UNTIL marca o momento a partir do qual algo muda."
+            },
+            {
+              "prompt": "The review is ___ the 12th.",
+              "options": [{ "text": "on", "correct": true }, { "text": "in" }, { "text": "at" }],
+              "why": "Dias específicos levam ON."
+            },
+            {
+              "prompt": "We'll close the contract ___ September.",
+              "options": [{ "text": "in", "correct": true }, { "text": "on" }, { "text": "by the" }],
+              "why": "Meses e anos levam IN."
+            },
+            {
+              "prompt": "I'll have it with you ___ EOD.",
+              "options": [{ "text": "by", "correct": true }, { "text": "until" }, { "text": "on" }],
+              "why": "BY EOD — até o fim do dia."
+            }
+          ],
+          "explanation": "By é prazo. Until é continuidade. Trocar os dois é a causa nº 1 de mal-entendido de data."
+        },
+        {
+          "type": "categorize",
+          "title": "É prazo firme ou alvo?",
+          "instruction": "Classifique cada frase pelo tipo de compromisso que ela cria.",
+          "categories": [
+            { "id": "hard", "name": "Compromisso firme", "short": "Firme" },
+            { "id": "soft", "name": "Alvo / intenção", "short": "Alvo" }
+          ],
+          "items": [
+            { "text": "I'll have it with you by EOD Thursday.", "cat": "hard" },
+            { "text": "We're aiming for the 8th.", "cat": "soft" },
+            { "text": "The 12th is a hard deadline — the campaign starts.", "cat": "hard" },
+            { "text": "I'll try to get to it this week.", "cat": "soft" },
+            { "text": "Committed date: 30 May.", "cat": "hard" },
+            { "text": "Hopefully by the end of the month.", "cat": "soft" }
+          ],
+          "explanation": "Saber qual dos dois você está dando — e qual está recebendo — evita metade dos conflitos."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Renegociando um prazo",
+          "badge": "Conversa",
+          "situation": "Você prometeu a análise para quinta. Surgiu uma emergência e não vai dar. É terça.",
+          "turns": [
+            {
+              "who": "Manager",
+              "them": "Morning — still on for the analysis on Thursday?",
+              "options": [
+                { "text": "Yes, it'll be there.", "why": "Prometer o que você já sabe que não entrega é o pior movimento possível." },
+                { "text": "That's what I wanted to raise. With the Macaé issue this week, Thursday is no longer realistic. I can do Monday, or a partial version Thursday — which is more useful to you?", "correct": true, "why": "Avisa na terça (não na quinta), explica e oferece duas opções concretas." },
+                { "text": "I'm not sure, things have been complicated.", "why": "Nem confirma nem renegocia — deixa o gestor sem base para decidir." }
+              ]
+            },
+            {
+              "who": "Manager",
+              "them": "What would a partial version have in it?",
+              "options": [
+                { "text": "The cost section complete, with the schedule impact as headline numbers only. That's enough for the board pre-read; the full detail follows Monday.", "correct": true, "why": "Define exatamente o que entra e o que fica, ligado ao uso que ele vai dar." },
+                { "text": "Most of it, more or less.", "why": "\"Most of it\" não permite decisão nenhuma." },
+                { "text": "Whatever I manage to finish.", "why": "Entrega o controle do escopo ao acaso." }
+              ]
+            },
+            {
+              "who": "Manager",
+              "them": "Fine, partial on Thursday. And going forward?",
+              "options": [
+                { "text": "I'll flag any risk to a date as soon as I see it, not on the day. And if two things collide, I'll ask you which one to drop.", "correct": true, "why": "Corrige o processo, não só o caso. E devolve a priorização a quem tem alçada." },
+                { "text": "I'll manage my time better.", "why": "Promessa genérica que não muda nada." },
+                { "text": "It won't happen again.", "why": "Vai acontecer de novo. O que importa é o aviso antecipado." }
+              ]
+            }
+          ],
+          "explanation": "Avisar cedo, oferecer opções, ajustar o processo. Renegociar assim aumenta a confiança."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Quando pedem mais uma coisa",
+          "badge": "A ou B",
+          "instruction": "Escolha a resposta que protege as suas entregas.",
+          "items": [
+            {
+              "prompt": "Seu gestor pede uma análise extra numa semana já cheia.",
+              "a": "Sure, I'll fit it in.",
+              "b": "Happy to take it. This week I have the status report and the renewal pack — what would you like me to drop, or can this wait until Monday?",
+              "correct": "b",
+              "why": "Aceita e devolve a priorização. Quem tem alçada decide o que cai."
+            },
+            {
+              "prompt": "Duas coisas urgentes ao mesmo tempo, de pessoas diferentes.",
+              "a": "I'll do both tonight.",
+              "b": "Both are marked urgent and I can only do one properly today. Priya's is customer-facing, so I'll take that first unless you tell me otherwise.",
+              "correct": "b",
+              "why": "Propõe um critério e uma decisão. Silêncio vira concordância."
+            },
+            {
+              "prompt": "Alguém pede \"o mais rápido possível\".",
+              "a": "Ok, ASAP.",
+              "b": "To make sure I get it right — is that today, or is Thursday soon enough?",
+              "correct": "b",
+              "why": "\"ASAP\" não é prazo. Transformá-lo em data é trabalho de quem recebe o pedido."
+            }
+          ],
+          "explanation": "Nunca aceite mais trabalho sem tornar visível o que ele desloca."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases de prazo",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Renegociar com antecedência.", "answer": "Thursday is no longer realistic but I can do Monday", "extra": ["realistically", "until"] },
+            { "hint": "Devolver a priorização.", "answer": "Happy to take it what would you like me to drop", "extra": ["dropping", "for"] },
+            { "hint": "Transformar ASAP em data.", "answer": "Is that today or is Thursday soon enough", "extra": ["enough soon", "at"] }
+          ],
+          "explanation": "Três frases que resolvem qualquer conflito de prazo em inglês."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Meetings",
+          "items": [
+            { "en": "I use \"by\" for deadlines and \"until\" for continuity.", "pt": "Uso \"by\" para prazos e \"until\" para continuidade." },
+            { "en": "I know the difference between a target date and a hard deadline.", "pt": "Sei a diferença entre data-alvo e prazo inegociável." },
+            { "en": "I renegotiate early, with two concrete options.", "pt": "Renegocio cedo, com duas opções concretas." },
+            { "en": "I ask \"what would you like me to drop?\" instead of silently overloading.", "pt": "Pergunto \"o que você quer que eu deixe de lado?\" em vez de me sobrecarregar em silêncio." },
+            { "en": "Looking at the topic: I can run, join and record a meeting in English.", "pt": "Olhando o tópico: conduzo, participo e registro uma reunião em inglês." }
+          ],
+          "doneMessage": "tópico Meetings concluído. Próximo: liderança e People First.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A gramática do tempo no trabalho",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"EOP\" (end of play) is British and means end of the working day — it comes from cricket.", "pt": "\"EOP\" (end of play) é britânico e significa fim do expediente — vem do críquete." },
+          { "en": "\"ASAP\" means different things to different people. Always convert it into a date.", "pt": "\"ASAP\" significa coisas diferentes para pessoas diferentes. Sempre converta em data." },
+          { "en": "A deadline renegotiated three days early is a plan. Renegotiated on the day, it's a failure.", "pt": "Um prazo renegociado com três dias de antecedência é um plano. Renegociado no dia, é uma falha." },
+          { "en": "\"What would you like me to drop?\" is the most professional way to say no in a hierarchy.", "pt": "\"What would you like me to drop?\" é a forma mais profissional de dizer não dentro de uma hierarquia." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now agree, protect and renegotiate a deadline in English — without ever missing one silently.",
+        "pt": "Agora você combina, protege e renegocia prazos em inglês — sem nunca perder um em silêncio."
+      }
+    }
+  ]
+}

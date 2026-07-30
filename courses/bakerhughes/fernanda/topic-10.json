@@ -1,0 +1,484 @@
+{
+  "topic": "Problem-solving and decision-making",
+  "lessons": [
+    {
+      "title": "Defining the Problem",
+      "focus": "Descrever o problema e chegar à causa raiz",
+      "character": "uk-female",
+      "objective": "Descrever um problema em inglês com precisão e conduzir a conversa até a causa raiz, sem pular para a solução.",
+      "intro": [
+        "The fastest way to solve the wrong problem is to start with a solution.",
+        "In English there's a discipline for this: describe the <strong>symptom</strong>, separate it from the <strong>cause</strong>, and only then talk about the <strong>fix</strong>.",
+        "The tool that does the work is embarrassingly simple: keep asking <em>why</em>."
+      ],
+      "introPt": [
+        "O jeito mais rápido de resolver o problema errado é começar pela solução.",
+        "Em inglês existe uma disciplina para isso: descrever o <strong>sintoma</strong>, separá-lo da <strong>causa</strong>, e só então falar da <strong>solução</strong>.",
+        "A ferramenta que faz o trabalho é constrangedoramente simples: continuar perguntando <em>why</em>."
+      ],
+      "vocab": [
+        { "en": "symptom", "pt": "sintoma", "example": "Late delivery is the symptom, not the problem." },
+        { "en": "root cause", "pt": "causa raiz", "example": "The root cause was an outdated specification." },
+        { "en": "to jump to conclusions", "pt": "tirar conclusões precipitadas", "example": "Let's not jump to conclusions." },
+        { "en": "to narrow it down", "pt": "afunilar", "example": "We narrowed it down to two possible causes." },
+        { "en": "what exactly happened?", "pt": "o que exatamente aconteceu?", "example": "Walk me through what exactly happened." },
+        { "en": "recurring", "pt": "recorrente", "example": "Is this a one-off or is it recurring?" },
+        { "en": "to rule out", "pt": "descartar", "example": "We can rule out the supplier." },
+        { "en": "the real question is", "pt": "a pergunta de verdade é", "example": "The real question is why nobody checked." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Sintoma, causa ou solução?",
+          "instruction": "Classifique cada frase pelo que ela realmente é.",
+          "categories": [
+            { "id": "symptom", "name": "Sintoma", "short": "Sintoma" },
+            { "id": "cause", "name": "Causa", "short": "Causa" },
+            { "id": "fix", "name": "Solução", "short": "Solução" }
+          ],
+          "items": [
+            { "text": "The panel arrived off-specification.", "cat": "symptom" },
+            { "text": "The spec sent to the supplier was revision B, not revision D.", "cat": "cause" },
+            { "text": "Add a revision check before any spec leaves the office.", "cat": "fix" },
+            { "text": "We lost two weeks on the schedule.", "cat": "symptom" },
+            { "text": "Nobody owns the document control for this project.", "cat": "cause" },
+            { "text": "Assign document control to one named person.", "cat": "fix" }
+          ],
+          "explanation": "Sintoma dói, causa explica, solução muda. Quase toda reunião confunde os três."
+        },
+        {
+          "type": "orderList",
+          "title": "Os cinco porquês",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque a cadeia de causas do sintoma até a raiz.",
+          "items": [
+            "The panel arrived off-specification.",
+            "Because the supplier built it to revision B.",
+            "Because revision B was what we sent them.",
+            "Because the engineer pulled the file from a shared folder that wasn't updated.",
+            "Because nobody owns document control on this project."
+          ],
+          "explanation": "Cinco porquês e você sai de \"o painel veio errado\" para \"falta dono do controle documental\"."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A pergunta que avança",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a pergunta que leva a conversa adiante.",
+          "items": [
+            {
+              "prompt": "Alguém diz: \"o fornecedor errou\".",
+              "options": [
+                { "text": "What exactly did they build, and against which revision?", "correct": true },
+                { "text": "Are you sure it was them?" },
+                { "text": "Should we change supplier?" }
+              ],
+              "why": "Pergunta factual e específica. As outras duas já pulam para julgamento ou solução."
+            },
+            {
+              "prompt": "O time já está discutindo qual solução adotar.",
+              "options": [
+                { "text": "Before we choose, can we agree on what actually caused it? Otherwise we might fix the wrong thing.", "correct": true },
+                { "text": "I prefer the second option." },
+                { "text": "Let's vote." }
+              ],
+              "why": "Puxar o freio antes da solução é a intervenção mais valiosa de uma reunião de problema."
+            },
+            {
+              "prompt": "Você quer saber se o problema é sistêmico.",
+              "options": [
+                { "text": "Is this a one-off, or has it happened before on other jobs?", "correct": true },
+                { "text": "Whose fault was it?" },
+                { "text": "How bad is it?" }
+              ],
+              "why": "Recorrência muda tudo: um caso pede correção, um padrão pede mudança de processo."
+            }
+          ],
+          "explanation": "Fato específico · causa antes da solução · recorrência. Três perguntas que resolvem reuniões."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Uma palavra errada por frase.",
+          "items": [
+            { "sentence": "We need to discuss about the root cause before deciding.", "wrong": "about", "fix": "(nada)", "why": "Discuss não leva preposição: \"discuss the root cause\"." },
+            { "sentence": "The problem happened because of the file was outdated.", "wrong": "of", "fix": "(nada: \"because the file was\")", "why": "\"Because of\" vem antes de substantivo; \"because\" antes de oração." },
+            { "sentence": "Let's not jump to the conclusions before we have the facts.", "wrong": "the", "fix": "(nada)", "why": "\"Jump to conclusions\" — expressão fixa, sem artigo." },
+            { "sentence": "Is this recurrent or was it just one time?", "wrong": "recurrent", "fix": "recurring", "why": "No inglês de negócios usa-se \"recurring\"; \"recurrent\" é mais médico/técnico." }
+          ],
+          "explanation": "\"Discuss about\" é o erro mais persistente de brasileiros — e some com uma dose de atenção."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases da análise",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Separar sintoma de causa.", "answer": "Late delivery is the symptom the real question is why the spec was wrong", "extra": ["symptoms", "for"] },
+            { "hint": "Puxar o freio antes da solução.", "answer": "Before we choose can we agree on what actually caused it", "extra": ["choosing", "about"] },
+            { "hint": "Verificar recorrência.", "answer": "Is this a one off or has it happened before on other jobs", "extra": ["did it happen", "in"] }
+          ],
+          "explanation": "Três frases que impedem um time de resolver o problema errado."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can tell a symptom from a cause.", "pt": "Distingo sintoma de causa." },
+            { "en": "I keep asking \"why\" until I reach something structural.", "pt": "Continuo perguntando \"why\" até chegar a algo estrutural." },
+            { "en": "I stop a team that jumps to solutions.", "pt": "Sei frear um time que pula para a solução." },
+            { "en": "I never say \"discuss about\".", "pt": "Nunca digo \"discuss about\"." }
+          ],
+          "doneMessage": "problema definido. Agora, pesar as opções.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A disciplina de não resolver ainda",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "The \"five whys\" comes from Toyota — you stop when the answer is about a process, not a person.", "pt": "Os \"cinco porquês\" vêm da Toyota — você para quando a resposta é sobre um processo, não sobre uma pessoa." },
+          { "en": "If the root cause is a person's name, you haven't reached the root cause.", "pt": "Se a causa raiz é o nome de uma pessoa, você ainda não chegou à causa raiz." },
+          { "en": "\"Is this a one-off or is it recurring?\" is the question that decides whether you fix a case or a system.", "pt": "\"Is this a one-off or is it recurring?\" é a pergunta que decide se você corrige um caso ou um sistema." },
+          { "en": "\"Discuss\" and \"answer\" take no preposition in English: discuss the problem, answer the question.", "pt": "\"Discuss\" e \"answer\" não levam preposição em inglês: discuss the problem, answer the question." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now take a team from a complaint to a root cause — in English.",
+        "pt": "Agora você leva um time de uma reclamação até a causa raiz — em inglês."
+      }
+    },
+    {
+      "title": "Weighing the Options",
+      "focus": "Comparar alternativas e recomendar",
+      "character": "us-male",
+      "objective": "Apresentar opções em inglês com critérios claros e chegar a uma recomendação que se sustenta.",
+      "intro": [
+        "Two options with no criteria is a debate. Two options with three criteria is a decision.",
+        "The English structure is fixed: <strong>the options</strong>, <strong>what we're judging them on</strong>, <strong>the trade-offs</strong>, <strong>the recommendation</strong>.",
+        "And a recommendation is not optional. If you bring options without one, you've handed the work back."
+      ],
+      "introPt": [
+        "Duas opções sem critério é debate. Duas opções com três critérios é decisão.",
+        "A estrutura em inglês é fixa: <strong>as opções</strong>, <strong>por que critérios estamos julgando</strong>, <strong>os trade-offs</strong>, <strong>a recomendação</strong>.",
+        "E a recomendação não é opcional. Trazer opções sem recomendar é devolver o trabalho a quem pediu."
+      ],
+      "vocab": [
+        { "en": "criteria", "pt": "critérios", "example": "Let's agree the criteria first." },
+        { "en": "on balance", "pt": "no conjunto", "example": "On balance, option B is stronger." },
+        { "en": "the upside / the downside", "pt": "o ponto positivo / negativo", "example": "The upside is speed; the downside is risk." },
+        { "en": "my recommendation is", "pt": "minha recomendação é", "example": "My recommendation is option B." },
+        { "en": "the deciding factor", "pt": "o fator decisivo", "example": "The deciding factor is the customer's campaign date." },
+        { "en": "all things considered", "pt": "considerando tudo", "example": "All things considered, we should go with B." },
+        { "en": "a no-regret move", "pt": "decisão sem arrependimento", "example": "Ordering the spare is a no-regret move." },
+        { "en": "to weigh up", "pt": "ponderar", "example": "We weighed up cost against schedule." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Duas opções, uma decisão",
+          "badge": "Leia e responda",
+          "heading": "Options paper · panel replacement",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Option A — wait for the correct panel from the original supplier. Cost: no additional spend. Schedule: the panel ships on 30 May, handover holds in September. Risk: if the supplier slips again, we have no fallback and October becomes likely.",
+            "Option B — order a second panel from the alternative supplier in parallel. Cost: 18k additional. Schedule: same or better; the spare arrives 22 May. Risk: low. If the original panel arrives on time, the spare goes to inventory and is used on the next campaign.",
+            "Criteria agreed with the customer: protect the September handover first, then cost, then inventory efficiency."
+          ],
+          "questions": [
+            {
+              "prompt": "Against the agreed criteria, which option wins?",
+              "options": [
+                { "text": "Option A — it costs nothing." },
+                { "text": "Option B — it protects the date, which is criterion one.", "correct": true },
+                { "text": "Neither — we need a third option." }
+              ],
+              "why": "Se o critério nº 1 é proteger a data, custo não decide enquanto a data estiver em risco."
+            },
+            {
+              "prompt": "Why is Option B close to a \"no-regret move\"?",
+              "options": [
+                { "text": "Because it's cheaper." },
+                { "text": "Because even in the good scenario the spare is used later, so little is wasted.", "correct": true },
+                { "text": "Because the supplier is more reliable." }
+              ],
+              "why": "No-regret é a decisão que continua fazendo sentido em quase todos os cenários futuros."
+            },
+            {
+              "prompt": "What's missing from a strong options paper like this?",
+              "options": [
+                { "text": "More technical detail on the panel." },
+                { "text": "An explicit recommendation with the deciding factor named.", "correct": true },
+                { "text": "The supplier's contact details." }
+              ],
+              "why": "Sem recomendação, o autor devolveu a decisão para quem pediu a análise."
+            }
+          ],
+          "explanation": "Critérios acordados antes + recomendação explícita = decisão em cinco minutos."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte a recomendação",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as frases na ordem de uma recomendação sólida.",
+          "items": [
+            "We have two options, and we agreed three criteria: date first, then cost, then inventory.",
+            "Option A costs nothing but leaves us with no fallback if the supplier slips again.",
+            "Option B costs 18k and protects the September date, and the spare gets used either way.",
+            "The deciding factor is the customer's campaign, which can't move.",
+            "My recommendation is option B. If you want to hold the spend, I'd need the customer to accept October as a fallback."
+          ],
+          "explanation": "Critérios → opções com trade-off → fator decisivo → recomendação com a condição alternativa."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Recomendar ou empurrar?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que ajuda quem decide.",
+          "items": [
+            {
+              "prompt": "Apresentando duas opções ao diretor.",
+              "a": "Here are the two options — let me know which one you prefer.",
+              "b": "Here are the two options. My recommendation is B, because the campaign date can't move. Happy to be challenged on that.",
+              "correct": "b",
+              "why": "Quem fez a análise tem mais informação. Não recomendar é desperdiçar isso."
+            },
+            {
+              "prompt": "Quando os critérios não foram acordados.",
+              "a": "Before I take you through the options — are we agreed that protecting the September date comes first, then cost?",
+              "b": "So, option A costs nothing and option B costs 18k…",
+              "correct": "a",
+              "why": "Sem critério acordado, a discussão vira preferência pessoal e não termina."
+            },
+            {
+              "prompt": "Quando você recomenda a opção mais cara.",
+              "a": "It's more expensive but I think it's better.",
+              "b": "B costs 18k more. That buys us the September date and a spare we'll use anyway — so the real cost of the insurance is close to zero.",
+              "correct": "b",
+              "why": "Traduza o custo em algo comprado. Preço sem contrapartida sempre parece caro."
+            }
+          ],
+          "explanation": "Critério antes, recomendação sempre, e custo traduzido em benefício."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a recomendação",
+          "badge": "Complete o texto",
+          "instruction": "Escolha o termo certo em cada lacuna.",
+          "text": "We agreed three ___ : date first, then cost, then inventory. The ___ of option A is that it costs nothing; the ___ is that we have no fallback. ___ balance, option B is stronger. The ___ factor is the customer's campaign, which can't move. My ___ is option B — and ordering the spare is close to a ___ move, since we'd use it either way.",
+          "gaps": [
+            { "options": ["criteria", "criterias", "criterions"], "answer": "criteria", "why": "Criteria já é plural (de criterion). \"Criterias\" não existe." },
+            { "options": ["upside", "up point", "positive side"], "answer": "upside", "why": "Upside / downside — o par consagrado." },
+            { "options": ["downside", "down point", "bad side"], "answer": "downside", "why": "O oposto de upside." },
+            { "options": ["On", "In", "At"], "answer": "On", "why": "\"On balance\" — no conjunto." },
+            { "options": ["deciding", "decisive of", "decider"], "answer": "deciding", "why": "\"The deciding factor\" — expressão fixa." },
+            { "options": ["recommendation", "recommendating", "recommend"], "answer": "recommendation", "why": "Substantivo: my recommendation is…" },
+            { "options": ["no-regret", "no-regrets of", "without regret"], "answer": "no-regret", "why": "\"A no-regret move\" — decisão que se sustenta em qualquer cenário." }
+          ],
+          "explanation": "Sete termos que compõem qualquer recomendação executiva em inglês."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que faz uma recomendação ser aceita",
+          "instruction": "Marque tudo o que fortalece.",
+          "prompt": "You're recommending the more expensive option.",
+          "options": [
+            { "text": "Criteria agreed before the options were presented.", "correct": true },
+            { "text": "The cost translated into what it buys.", "correct": true },
+            { "text": "A named deciding factor.", "correct": true },
+            { "text": "An invitation to challenge it.", "correct": true },
+            { "text": "Every detail of the analysis in the room.", "correct": false },
+            { "text": "A hint that the other option would be irresponsible.", "correct": false }
+          ],
+          "explanation": "\"Happy to be challenged\" fortalece: mostra que a recomendação resiste ao teste."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I agree the criteria before presenting options.", "pt": "Acordo os critérios antes de apresentar as opções." },
+            { "en": "I always give a recommendation.", "pt": "Sempre dou uma recomendação." },
+            { "en": "I translate cost into what it buys.", "pt": "Traduzo custo no que ele compra." },
+            { "en": "I name the deciding factor.", "pt": "Nomeio o fator decisivo." }
+          ],
+          "doneMessage": "opções pesadas. Falta decidir e comunicar.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A economia da recomendação",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"Criteria\" is already plural — the singular is \"criterion\". \"Criterias\" doesn't exist.", "pt": "\"Criteria\" já é plural — o singular é \"criterion\". \"Criterias\" não existe." },
+          { "en": "\"On balance\" signals you've weighed both sides — it makes a recommendation sound considered, not defensive.", "pt": "\"On balance\" sinaliza que você pesou os dois lados — faz a recomendação soar ponderada, não defensiva." },
+          { "en": "\"A no-regret move\" is a decision that still looks right in every future scenario. Leaders love finding one.", "pt": "\"A no-regret move\" é a decisão que continua certa em qualquer cenário futuro. Líderes adoram encontrar uma." },
+          { "en": "\"Happy to be challenged on that\" makes a recommendation stronger, not weaker — it shows it can survive scrutiny.", "pt": "\"Happy to be challenged on that\" fortalece a recomendação — mostra que ela aguenta escrutínio." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now turn options into a decision — with a recommendation that holds.",
+        "pt": "Agora você transforma opções em decisão — com uma recomendação que se sustenta."
+      }
+    },
+    {
+      "title": "Making and Communicating the Decision",
+      "focus": "Decidir, comunicar e sustentar a decisão",
+      "character": "us-female",
+      "objective": "Comunicar uma decisão em inglês de forma que ela seja entendida, aceita e executada — inclusive por quem discordou.",
+      "intro": [
+        "A decision that nobody understood is a decision that won't happen.",
+        "Communicating one in English has four parts: <strong>what we decided</strong>, <strong>why</strong>, <strong>what changes for you</strong>, <strong>what we'll watch</strong>.",
+        "And there's a fifth thing, which is what separates a manager from a leader: saying clearly what would make you change your mind."
+      ],
+      "introPt": [
+        "Uma decisão que ninguém entendeu é uma decisão que não vai acontecer.",
+        "Comunicá-la em inglês tem quatro partes: <strong>o que decidimos</strong>, <strong>por quê</strong>, <strong>o que muda para você</strong>, <strong>o que vamos monitorar</strong>.",
+        "E há uma quinta coisa, que separa gestor de líder: dizer com clareza o que faria você mudar de ideia."
+      ],
+      "vocab": [
+        { "en": "we've decided to…", "pt": "decidimos…", "example": "We've decided to order the spare." },
+        { "en": "the reasoning was", "pt": "o raciocínio foi", "example": "The reasoning was simple: the date can't move." },
+        { "en": "what this means for you", "pt": "o que isso significa para você", "example": "What this means for you is one extra check." },
+        { "en": "we'll review this if…", "pt": "vamos rever isso se…", "example": "We'll review this if the supplier confirms earlier." },
+        { "en": "to get behind a decision", "pt": "apoiar a decisão tomada", "example": "I need everyone to get behind this." },
+        { "en": "disagree and commit", "pt": "discordar e apoiar mesmo assim", "example": "Classic disagree and commit." },
+        { "en": "to stand by a decision", "pt": "manter a decisão", "example": "I stand by the call we made." },
+        { "en": "with hindsight", "pt": "em retrospecto", "example": "With hindsight, we'd have ordered earlier." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a comunicação da decisão",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as partes na ordem que faz a decisão ser executada.",
+          "items": [
+            "We've decided to order the spare panel from the alternative supplier.",
+            "The reasoning: the September date is the customer's hard constraint, and the spare gets used either way.",
+            "What this means for you: Ana raises the PO today, Marcus keeps chasing the original supplier in parallel.",
+            "What we'll watch: if the original panel confirms before the 22nd, we hold the spare in inventory rather than mobilising it.",
+            "I know a couple of you would have gone the other way — I'd still like everyone behind this one."
+          ],
+          "explanation": "O quê → por quê → o que muda para cada um → o que monitorar → reconhecer a discordância."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Comunicando para quem discordou",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que faz a pessoa executar mesmo discordando.",
+          "items": [
+            {
+              "prompt": "Alguém do time defendia a outra opção.",
+              "a": "The decision's made, let's move on.",
+              "b": "I know you'd have gone the other way, and your argument on cost was the strongest one in the room. I've decided differently because of the date. I'd still like you behind it — and if the supplier confirms early, your option comes straight back on the table.",
+              "correct": "b",
+              "why": "Reconhece o argumento, explica o critério e mantém a porta aberta. É assim que se compra execução real."
+            },
+            {
+              "prompt": "Explicando a decisão a quem não estava na sala.",
+              "a": "It was decided that we'd order the spare.",
+              "b": "We decided to order the spare — because the September date is the customer's hard constraint. Here's what it means for your part.",
+              "correct": "b",
+              "why": "Voz passiva sem sujeito esconde quem decidiu e enfraquece a decisão."
+            },
+            {
+              "prompt": "A decisão se mostrou errada dois meses depois.",
+              "a": "I said at the time it was risky.",
+              "b": "With hindsight we'd have waited. The information we had pointed the other way, and I'd make the same call again with the same information — here's what we're changing about how we get that information.",
+              "correct": "b",
+              "why": "Separa a qualidade da decisão da qualidade do resultado — e ainda corrige o processo."
+            }
+          ],
+          "explanation": "Uma boa decisão pode ter mau resultado. Confundir as duas coisas destrói a coragem do time."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Sustentando a decisão",
+          "badge": "Conversa",
+          "situation": "Você decidiu comprar o painel reserva. O diretor financeiro questiona os 18k na reunião mensal.",
+          "turns": [
+            {
+              "who": "Finance Director",
+              "them": "Eighteen thousand for a part we may not even need. Talk me through that.",
+              "options": [
+                { "text": "It was a judgement call.", "why": "Sem raciocínio explícito, soa como intuição — e intuição não sobrevive a uma reunião de custos." },
+                { "text": "The customer's campaign starts in September and can't move. Without the spare, a supplier slip costs us two days of downtime — which is more than 18k — plus the relationship. And the spare goes to inventory for the next campaign either way.", "correct": true, "why": "Custo de não fazer, número comparável e valor residual. Três argumentos em quinze segundos." },
+                { "text": "Operations asked for it.", "why": "Transferir a autoria da decisão te enfraquece e não responde à pergunta." }
+              ]
+            },
+            {
+              "who": "Finance Director",
+              "them": "And if the original panel arrives on time? Then we've spent 18k for nothing.",
+              "options": [
+                { "text": "Then it sits in inventory and is used on the next campaign — so the real cost of the insurance is the carrying cost, not 18k.", "correct": true, "why": "Reformula o custo. O gasto não é perdido, é antecipado." },
+                { "text": "That's a risk we accepted.", "why": "Verdadeiro, mas devolve a pergunta em branco." },
+                { "text": "It's unlikely to arrive on time.", "why": "Aposta contra o fornecedor sem base — e ainda enfraquece o plano A." }
+              ]
+            },
+            {
+              "who": "Finance Director",
+              "them": "Fine. But I'd like to see this kind of spend flagged earlier.",
+              "options": [
+                { "text": "Agreed. From now on I'll flag any unplanned spend above 10k to you the day it becomes likely — not the day it becomes necessary.", "correct": true, "why": "Aceita a crítica processual e propõe um gatilho específico. Encerra o assunto de vez." },
+                { "text": "I'll try to.", "why": "\"I'll try\" não é um processo." },
+                { "text": "There wasn't time.", "why": "Defender o passado quando a crítica é sobre o futuro." }
+              ]
+            }
+          ],
+          "explanation": "Custo de não fazer · valor residual · gatilho para o futuro. É assim que se sustenta uma decisão."
+        },
+        {
+          "type": "highlightPick",
+          "title": "O que faz a decisão andar?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que dizem a alguém O QUE FAZER na prática.",
+          "instruction": "Toque em cada elemento acionável.",
+          "text": "We have decided to order the spare panel . The reasoning is the September date . Ana raises the PO today and Marcus keeps chasing the original supplier . We will review this if the panel confirms before the twenty second .",
+          "targets": ["Ana", "raises", "Marcus", "chasing"],
+          "explanation": "Nome + verbo. Sem isso, a comunicação é informação, não decisão."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre decidir e comunicar.",
+          "items": [
+            { "text": "A good decision can still have a bad outcome.", "answer": true, "why": "Decide-se com a informação disponível. Julgar a decisão pelo resultado destrói a coragem do time." },
+            { "text": "\"It was decided\" is a strong way to communicate a decision.", "answer": false, "why": "Passiva sem sujeito esconde o autor e enfraquece tudo. Diga \"we decided\" ou \"I decided\"." },
+            { "text": "You should say what would make you change your mind.", "answer": true, "why": "Torna a decisão revisável sem parecer indecisa — e desarma quem discordou." },
+            { "text": "People who disagreed should be left out of the execution.", "answer": false, "why": "\"Disagree and commit\" existe justamente para isso: discordar e executar." }
+          ],
+          "explanation": "Decisão comunicada com autor, critério e condição de revisão é decisão que se executa."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar a trilha inteira",
+          "items": [
+            { "en": "I can communicate a decision in four parts.", "pt": "Comunico uma decisão em quatro partes." },
+            { "en": "I say what would make me change my mind.", "pt": "Digo o que me faria mudar de ideia." },
+            { "en": "I acknowledge those who disagreed and still ask for commitment.", "pt": "Reconheço quem discordou e ainda assim peço comprometimento." },
+            { "en": "I separate a good decision from a good outcome.", "pt": "Separo uma boa decisão de um bom resultado." },
+            { "en": "Looking at the whole track: I can work in English across finance, contracts, projects, customers, negotiation, presentations, writing, meetings, leadership and decisions.", "pt": "Olhando a trilha inteira: trabalho em inglês em finanças, contratos, projetos, clientes, negociação, apresentações, escrita, reuniões, liderança e decisões." }
+          ],
+          "doneMessage": "trilha concluída. Dez tópicos, do orçamento à decisão — em inglês.",
+          "openMessage": "o que ficou em branco vira pauta das próximas aulas — leve tudo para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Decidir em voz alta",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"Disagree and commit\" is standard vocabulary in global companies: you can argue hard, and once it's decided, you execute.", "pt": "\"Disagree and commit\" é vocabulário padrão em empresas globais: discuta com força e, uma vez decidido, execute." },
+          { "en": "Saying what would change your mind makes a decision revisable without making it look weak.", "pt": "Dizer o que te faria mudar de ideia torna a decisão revisável sem parecer fraca." },
+          { "en": "\"It was decided\" hides the author. \"We decided\" carries weight — passive voice weakens decisions.", "pt": "\"It was decided\" esconde o autor. \"We decided\" tem peso — a voz passiva enfraquece decisões." },
+          { "en": "\"With hindsight\" lets you review an outcome without attacking the decision that was made in good faith.", "pt": "\"With hindsight\" permite revisar um resultado sem atacar a decisão tomada de boa-fé." }
+        ]
+      },
+      "celebrate": {
+        "en": "You've finished the track. From budget language to leading a decision — all of it in English, all of it yours.",
+        "pt": "Você concluiu a trilha. Da linguagem do orçamento à condução de uma decisão — tudo em inglês, tudo seu."
+      }
+    }
+  ]
+}

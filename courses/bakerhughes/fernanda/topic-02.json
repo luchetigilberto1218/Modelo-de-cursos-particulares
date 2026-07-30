@@ -1,0 +1,658 @@
+{
+  "topic": "Contracts and commercial terms",
+  "lessons": [
+    {
+      "title": "The Anatomy of a Contract",
+      "focus": "As partes de um contrato e como falar de cada uma",
+      "character": "uk-female",
+      "objective": "Identificar e nomear, em inglês, as partes de um contrato — escopo, prazo, valor, partes — e localizar rapidamente o que você precisa.",
+      "intro": [
+        "A contract in English always has the same skeleton, no matter the country: <strong>parties</strong>, <strong>scope</strong>, <strong>term</strong>, <strong>value</strong>, <strong>obligations</strong>.",
+        "You don't need to be a lawyer. You need to open a document, find the clause you're looking for, and talk about it with the commercial team.",
+        "That's what this lesson does."
+      ],
+      "introPt": [
+        "Um contrato em inglês tem sempre o mesmo esqueleto, em qualquer país: <strong>parties</strong> (partes), <strong>scope</strong> (escopo), <strong>term</strong> (vigência), <strong>value</strong> (valor), <strong>obligations</strong> (obrigações).",
+        "Você não precisa ser advogada. Precisa abrir o documento, achar a cláusula que procura e conversar sobre ela com o time comercial.",
+        "É isso que esta lição faz."
+      ],
+      "vocab": [
+        { "en": "the parties", "pt": "as partes", "example": "The parties agree to review pricing annually." },
+        { "en": "scope of work (SOW)", "pt": "escopo do trabalho", "example": "That activity is outside the scope of work." },
+        { "en": "term", "pt": "vigência, prazo do contrato", "example": "The initial term is three years." },
+        { "en": "contract value", "pt": "valor do contrato", "example": "The total contract value is 4.5 million." },
+        { "en": "obligations", "pt": "obrigações", "example": "Both parties have reporting obligations." },
+        { "en": "clause", "pt": "cláusula", "example": "Let me check clause 14 on liability." },
+        { "en": "appendix / annex", "pt": "anexo", "example": "The pricing sits in Appendix B." },
+        { "en": "governing law", "pt": "lei aplicável", "example": "The governing law is English law." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Associe a parte do contrato ao que ela responde",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "scope of work", "right": "o que exatamente vai ser entregue — e o que não vai" },
+            { "left": "term", "right": "por quanto tempo o contrato vale" },
+            { "left": "contract value", "right": "quanto vale o negócio no total" },
+            { "left": "governing law", "right": "a legislação de qual país resolve uma disputa" },
+            { "left": "appendix", "right": "onde ficam preços, tabelas e detalhes técnicos" }
+          ],
+          "explanation": "Sabendo esses cinco, você navega qualquer contrato em inglês."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o resumo do contrato",
+          "badge": "Complete o texto",
+          "instruction": "Escolha o termo certo em cada lacuna.",
+          "text": "This agreement is between the two ___ : Baker Hughes and the customer. The ___ of work covers installation and commissioning only — maintenance is excluded. The initial ___ is three years, renewable for a further two. Total contract ___ is 4.5 million dollars, with the pricing table in ___ B. The governing ___ is English law.",
+          "gaps": [
+            { "options": ["parties", "parts", "sides"], "answer": "parties", "why": "\"Parties\" é o termo jurídico para as partes contratantes." },
+            { "options": ["scope", "size", "reach"], "answer": "scope", "why": "Scope of work — o escopo." },
+            { "options": ["term", "time", "period of validity"], "answer": "term", "why": "\"Term\" é a vigência do contrato." },
+            { "options": ["value", "price", "amount"], "answer": "value", "why": "Contract value = valor total do contrato." },
+            { "options": ["Appendix", "Attachment file", "Annexed"], "answer": "Appendix", "why": "Appendix (ou Annex) é o anexo." },
+            { "options": ["law", "legislation", "rule"], "answer": "law", "why": "Governing law — expressão fixa." }
+          ],
+          "explanation": "Esse parágrafo resume qualquer contrato em seis informações."
+        },
+        {
+          "type": "oddOneOut",
+          "title": "Qual não pertence ao grupo?",
+          "badge": "Odd one out",
+          "instruction": "Clique na palavra que não pertence ao mesmo campo das outras.",
+          "groups": [
+            { "items": ["clause", "appendix", "invoice", "annex"], "odd": "invoice", "why": "Invoice é fatura — documento financeiro, não parte do contrato." },
+            { "items": ["term", "duration", "scope", "renewal"], "odd": "scope", "why": "Os outros três falam de tempo; scope fala de conteúdo." },
+            { "items": ["supplier", "contractor", "party", "deadline"], "odd": "deadline", "why": "Os outros nomeiam quem assina; deadline é prazo." },
+            { "items": ["governing law", "jurisdiction", "arbitration", "headcount"], "odd": "headcount", "why": "Headcount é quadro de pessoal — vem do mundo do orçamento." }
+          ],
+          "explanation": "Separar os campos (tempo, partes, conteúdo, jurídico) já resolve metade da leitura."
+        },
+        {
+          "type": "readingTask",
+          "title": "Está no escopo?",
+          "badge": "Leia e responda",
+          "heading": "Extract · Scope of Work",
+          "instruction": "Leia o trecho e decida o que está dentro e fora do escopo.",
+          "passage": [
+            "The Contractor shall supply, install and commission two pumping units at the customer's facility, including all associated piping and instrumentation as detailed in Appendix A.",
+            "Preventive maintenance during the warranty period is included. Corrective maintenance following operator error is excluded and will be quoted separately.",
+            "Any activity not expressly listed in this Scope of Work is considered out of scope and requires a variation order."
+          ],
+          "questions": [
+            {
+              "prompt": "Is preventive maintenance included?",
+              "options": [
+                { "text": "Yes, during the warranty period.", "correct": true },
+                { "text": "No, it's always excluded." },
+                { "text": "Only if the customer pays extra." }
+              ],
+              "why": "\"Preventive maintenance during the warranty period is included.\""
+            },
+            {
+              "prompt": "The customer asks for a small extra activity, not listed anywhere. What happens?",
+              "options": [
+                { "text": "It's covered, because it's small." },
+                { "text": "It's out of scope and needs a variation order.", "correct": true },
+                { "text": "It's automatically refused." }
+              ],
+              "why": "\"Any activity not expressly listed… requires a variation order.\" Fora do escopo não significa não — significa novo pedido."
+            },
+            {
+              "prompt": "How would you say this politely to the customer?",
+              "options": [
+                { "text": "That's not in the contract, sorry.", "correct": false },
+                { "text": "That sits outside the current scope — happy to quote it as a variation.", "correct": true },
+                { "text": "We can't do that." }
+              ],
+              "why": "\"Sits outside the current scope\" + oferta de solução. Nunca só o não."
+            }
+          ],
+          "explanation": "\"Out of scope\" não é uma recusa — é o começo de uma nova proposta."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase comercial",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Dizer que algo não está incluído, com elegância.", "answer": "That activity sits outside the current scope of work", "extra": ["is out from", "sits on"] },
+            { "hint": "Oferecer a saída.", "answer": "We would be happy to quote it as a variation", "extra": ["quoting", "for"] },
+            { "hint": "Falar da vigência.", "answer": "The initial term is three years renewable for a further two", "extra": ["renew", "more"] }
+          ],
+          "explanation": "Recusar em inglês comercial é sempre: fora do escopo + oferta alternativa."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can name the main parts of a contract in English.", "pt": "Sei nomear as partes principais de um contrato em inglês." },
+            { "en": "I can find and refer to a clause by number.", "pt": "Sei localizar e citar uma cláusula pelo número." },
+            { "en": "I can say something is out of scope without sounding negative.", "pt": "Digo que algo está fora do escopo sem soar negativa." },
+            { "en": "I know the difference between term, scope and value.", "pt": "Sei a diferença entre term, scope e value." }
+          ],
+          "doneMessage": "esqueleto do contrato dominado. Agora, as cláusulas que realmente pesam.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O inglês jurídico que você realmente precisa",
+        "intro": "Quatro atalhos que economizam horas de leitura. Ouça e revele.",
+        "cards": [
+          { "en": "\"Shall\" in a contract doesn't mean the future — it means an obligation. \"The Contractor shall supply\" = must supply.", "pt": "\"Shall\" em contrato não é futuro — é obrigação. \"The Contractor shall supply\" = deve fornecer." },
+          { "en": "\"Herein\", \"thereof\" and \"hereto\" just mean \"in this document\", \"of that\" and \"to this\". Nothing more.", "pt": "\"Herein\", \"thereof\" e \"hereto\" só querem dizer \"neste documento\", \"disso\" e \"a isto\". Nada além." },
+          { "en": "If a term is capitalised mid-sentence — the Contractor, the Agreement — it's a defined term with a specific meaning in that contract.", "pt": "Se um termo aparece com maiúscula no meio da frase, é um termo definido com significado específico naquele contrato." },
+          { "en": "\"Without prejudice to\" means \"this doesn't cancel\" — it protects a right that was already there.", "pt": "\"Without prejudice to\" significa \"isto não anula\" — protege um direito que já existia." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now open a contract in English and know exactly where to look.",
+        "pt": "Agora você abre um contrato em inglês sabendo exatamente onde procurar."
+      }
+    },
+    {
+      "title": "The Clauses That Matter",
+      "focus": "Responsabilidade, garantia, multas e força maior",
+      "character": "us-male",
+      "objective": "Reconhecer as cláusulas de risco de um contrato e explicar, em inglês simples, o que cada uma protege.",
+      "intro": [
+        "Most of a contract is routine. A handful of clauses carry all the risk — and those are the ones people argue about.",
+        "<strong>Liability</strong>, <strong>warranty</strong>, <strong>liquidated damages</strong>, <strong>force majeure</strong>, <strong>indemnity</strong>: five words that decide who pays when something goes wrong.",
+        "You don't need to draft them. You need to recognise them and ask the right question."
+      ],
+      "introPt": [
+        "A maior parte de um contrato é rotina. Um punhado de cláusulas concentra todo o risco — e é sobre elas que se discute.",
+        "<strong>Liability</strong> (responsabilidade), <strong>warranty</strong> (garantia), <strong>liquidated damages</strong> (multa contratual), <strong>force majeure</strong> (força maior), <strong>indemnity</strong> (indenização): cinco palavras que decidem quem paga quando algo dá errado.",
+        "Você não precisa redigi-las. Precisa reconhecê-las e fazer a pergunta certa."
+      ],
+      "vocab": [
+        { "en": "liability", "pt": "responsabilidade (civil)", "example": "Our liability is capped at the contract value." },
+        { "en": "cap on liability", "pt": "teto de responsabilidade", "example": "There's a cap on liability of 100% of the contract value." },
+        { "en": "warranty", "pt": "garantia", "example": "The warranty period is twelve months from delivery." },
+        { "en": "liquidated damages (LDs)", "pt": "multa por atraso", "example": "LDs apply at 0.5% per week of delay." },
+        { "en": "force majeure", "pt": "força maior", "example": "The strike was treated as force majeure." },
+        { "en": "indemnity", "pt": "indenização, ressarcimento", "example": "Each party indemnifies the other for its own negligence." },
+        { "en": "to be exposed", "pt": "estar exposto a risco", "example": "We're exposed if the delay is on our side." },
+        { "en": "back-to-back", "pt": "espelhado (com o subcontratado)", "example": "The subcontract is back-to-back with the main contract." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Quem paga se der errado?",
+          "badge": "Leia e responda",
+          "heading": "Extract · Risk clauses",
+          "instruction": "Leia os três trechos e responda.",
+          "passage": [
+            "Clause 12 — Liability. The total liability of either party under this Agreement shall not exceed one hundred per cent (100%) of the Contract Value.",
+            "Clause 14 — Liquidated Damages. If the Contractor fails to complete by the agreed date, liquidated damages of 0.5% of the Contract Value per week of delay shall apply, up to a maximum of 10%.",
+            "Clause 19 — Force Majeure. Neither party shall be liable for failure to perform where such failure results from events beyond its reasonable control, including natural disasters, war and government action."
+          ],
+          "questions": [
+            {
+              "prompt": "What's the maximum the contractor can lose in liquidated damages?",
+              "options": [
+                { "text": "0.5% of the contract value." },
+                { "text": "10% of the contract value.", "correct": true },
+                { "text": "100% of the contract value." }
+              ],
+              "why": "\"…up to a maximum of 10%\". O teto está sempre na última linha da cláusula."
+            },
+            {
+              "prompt": "A hurricane stops the work for three weeks. Which clause applies?",
+              "options": [
+                { "text": "Clause 12 — Liability." },
+                { "text": "Clause 14 — Liquidated Damages." },
+                { "text": "Clause 19 — Force Majeure.", "correct": true }
+              ],
+              "why": "\"Events beyond its reasonable control, including natural disasters\"."
+            },
+            {
+              "prompt": "What does \"capped at 100% of the contract value\" protect?",
+              "options": [
+                { "text": "It limits how much either party can be made to pay.", "correct": true },
+                { "text": "It guarantees the contract will be paid in full." },
+                { "text": "It doubles the value in case of failure." }
+              ],
+              "why": "Cap = teto. É a cláusula que impede um prejuízo ilimitado."
+            }
+          ],
+          "explanation": "Liability limita o total; LDs punem o atraso; force majeure suspende a culpa."
+        },
+        {
+          "type": "categorize",
+          "title": "A cláusula protege quem?",
+          "instruction": "Cada cláusula protege mais quem contrata ou quem executa? Classifique.",
+          "categories": [
+            { "id": "customer", "name": "Protege o cliente", "short": "Cliente" },
+            { "id": "contractor", "name": "Protege o fornecedor", "short": "Fornecedor" }
+          ],
+          "items": [
+            { "text": "Liquidated damages for late delivery", "cat": "customer" },
+            { "text": "A cap on total liability", "cat": "contractor" },
+            { "text": "A twelve-month warranty on the equipment", "cat": "customer" },
+            { "text": "Force majeure covering government action", "cat": "contractor" },
+            { "text": "The right to inspect the work at any time", "cat": "customer" },
+            { "text": "Exclusion of consequential loss", "cat": "contractor" }
+          ],
+          "explanation": "Toda negociação de contrato é um cabo de guerra entre estas duas colunas."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre o uso real destes termos.",
+          "items": [
+            { "text": "\"Force majeure\" covers a supplier simply being late.", "answer": false, "why": "Só cobre eventos fora do controle razoável — greve geral, desastre, guerra. Atraso comum, não." },
+            { "text": "A cap on liability limits how much you can be made to pay.", "answer": true, "why": "É exatamente para isso que serve o cap." },
+            { "text": "Liquidated damages are negotiated in advance, not decided in court.", "answer": true, "why": "É a vantagem das LDs: o valor já está acordado no contrato." },
+            { "text": "\"Back-to-back\" means the subcontract has different terms from the main contract.", "answer": false, "why": "É o oposto: back-to-back significa espelhar os mesmos termos." }
+          ],
+          "explanation": "Essas quatro confusões custam dinheiro de verdade em projetos reais."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A pergunta certa para cada risco",
+          "badge": "Escolha certa",
+          "instruction": "Você está numa call comercial. Qual pergunta faz sentido em cada situação?",
+          "items": [
+            {
+              "prompt": "O cliente propõe responsabilidade ilimitada.",
+              "options": [
+                { "text": "Is there a cap on liability?", "correct": true },
+                { "text": "What's the warranty period?" },
+                { "text": "Who is the governing law?" }
+              ],
+              "why": "Responsabilidade ilimitada é o maior risco de um contrato. A primeira pergunta é sempre sobre o cap."
+            },
+            {
+              "prompt": "O projeto pode atrasar por causa de licenças do cliente.",
+              "options": [
+                { "text": "Do the LDs still apply if the delay is caused by the customer?", "correct": true },
+                { "text": "Can we increase the contract value?" },
+                { "text": "Is the pricing in the appendix?" }
+              ],
+              "why": "A pergunta é se a multa se aplica quando a causa não é sua."
+            },
+            {
+              "prompt": "Vocês vão subcontratar parte do escopo.",
+              "options": [
+                { "text": "Is the subcontract back-to-back with the main contract?", "correct": true },
+                { "text": "What is the fiscal year of the subcontractor?" },
+                { "text": "Do we need a purchase order?" }
+              ],
+              "why": "Se não for back-to-back, você assume um risco que não repassa."
+            }
+          ],
+          "explanation": "Três perguntas que fazem qualquer pessoa parecer experiente numa call comercial."
+        },
+        {
+          "type": "listenChoose",
+          "title": "Ouça e entenda a posição",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque no áudio e escolha o que a pessoa realmente quis dizer.",
+          "items": [
+            {
+              "audio": "We can live with liquidated damages, but we'd need a cap at ten per cent and a carve-out for customer-caused delays.",
+              "options": [
+                { "text": "Aceitam a multa, desde que haja teto e exceção para atrasos causados pelo cliente.", "correct": true },
+                { "text": "Recusam a multa em qualquer hipótese." },
+                { "text": "Aceitam a multa sem nenhuma condição." }
+              ],
+              "why": "\"We can live with X, but we'd need Y\" é a estrutura clássica da concessão condicionada."
+            },
+            {
+              "audio": "Unlimited liability is a deal-breaker for us — that's the one point we can't move on.",
+              "options": [
+                { "text": "Responsabilidade ilimitada é inegociável para eles.", "correct": true },
+                { "text": "Eles topam responsabilidade ilimitada." },
+                { "text": "Eles querem discutir isso depois." }
+              ],
+              "why": "\"Deal-breaker\" = ponto que inviabiliza o negócio."
+            }
+          ],
+          "explanation": "\"We can live with…\" sinaliza flexibilidade; \"deal-breaker\" sinaliza o limite."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can recognise liability, warranty, LDs and force majeure in a document.", "pt": "Reconheço liability, warranty, LDs e force majeure num documento." },
+            { "en": "I can ask whether there is a cap on liability.", "pt": "Sei perguntar se há teto de responsabilidade." },
+            { "en": "I understand what \"back-to-back\" means for a subcontract.", "pt": "Entendo o que \"back-to-back\" significa num subcontrato." },
+            { "en": "I can hear the difference between a concession and a deal-breaker.", "pt": "Distingo uma concessão de um ponto inegociável." }
+          ],
+          "doneMessage": "cláusulas de risco decifradas. Agora, dinheiro e entrega.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que as cláusulas escondem",
+        "intro": "Quatro coisas que só quem já se queimou sabe. Ouça e revele.",
+        "cards": [
+          { "en": "Liquidated damages exist to avoid court: the parties agree the penalty in advance so nobody has to prove the loss.", "pt": "As multas contratuais existem para evitar tribunal: as partes acordam a penalidade antes, e ninguém precisa provar o prejuízo." },
+          { "en": "\"Consequential loss\" means the knock-on damage — lost production, lost profit. Almost every supplier excludes it.", "pt": "\"Consequential loss\" é o dano em cascata — produção e lucro perdidos. Quase todo fornecedor exclui isso." },
+          { "en": "A cap is usually expressed as a percentage of contract value — 100% is common, 30% is a good outcome for the supplier.", "pt": "O teto costuma ser um percentual do valor do contrato — 100% é comum, 30% é um bom resultado para o fornecedor." },
+          { "en": "\"Deal-breaker\" is business English, not legal English — but it's the word that ends a negotiation.", "pt": "\"Deal-breaker\" é inglês de negócios, não jurídico — mas é a palavra que encerra uma negociação." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now spot the risk clauses and ask the questions that matter.",
+        "pt": "Agora você identifica as cláusulas de risco e faz as perguntas que importam."
+      }
+    },
+    {
+      "title": "Payment and Delivery Terms",
+      "focus": "Faturamento, marcos de pagamento e condições de entrega",
+      "character": "us-female",
+      "objective": "Falar sobre pagamento e entrega com clareza: quando se fatura, quando se paga e de quem é o risco no transporte.",
+      "intro": [
+        "Two questions decide the health of a contract: <em>when do we get paid</em> and <em>when does the risk pass to the customer</em>.",
+        "Payment terms answer the first: milestones, invoicing, net 30, retention.",
+        "Delivery terms — the Incoterms — answer the second. Three letters that move thousands of dollars of risk from one side to the other."
+      ],
+      "introPt": [
+        "Duas perguntas decidem a saúde de um contrato: <em>quando recebemos</em> e <em>quando o risco passa para o cliente</em>.",
+        "As condições de pagamento respondem à primeira: marcos, faturamento, net 30, retenção.",
+        "As condições de entrega — os Incoterms — respondem à segunda. Três letras que transferem milhares de dólares de risco de um lado para o outro."
+      ],
+      "vocab": [
+        { "en": "milestone payment", "pt": "pagamento por marco", "example": "30% on order, 60% on delivery, 10% on acceptance." },
+        { "en": "to invoice", "pt": "faturar", "example": "We'll invoice at the end of the month." },
+        { "en": "net 30 / payment terms", "pt": "pagamento em 30 dias", "example": "Payment terms are net 30 from invoice date." },
+        { "en": "retention", "pt": "retenção de garantia", "example": "There's a 10% retention until final acceptance." },
+        { "en": "lead time", "pt": "prazo de entrega", "example": "The lead time on that part is sixteen weeks." },
+        { "en": "Incoterms (EXW, FCA, DDP)", "pt": "condições internacionais de entrega", "example": "We're quoting DDP Rio de Janeiro." },
+        { "en": "to take delivery", "pt": "receber a mercadoria", "example": "The customer takes delivery at the port." },
+        { "en": "acceptance", "pt": "aceite (formal)", "example": "The final payment is triggered by acceptance." }
+      ],
+      "exercises": [
+        {
+          "type": "listenGap",
+          "title": "Ouça a estrutura de pagamento",
+          "badge": "Ouça e complete",
+          "instruction": "Ouça o trecho e complete cada frase com o banco de palavras.",
+          "audioText": "The payment structure is thirty per cent on order, sixty per cent on delivery and ten per cent on final acceptance. Payment terms are net thirty from invoice date, and there's a ten per cent retention released twelve months after commissioning. Lead time on the long-lead items is sixteen weeks.",
+          "bank": ["order", "acceptance", "net thirty", "retention", "lead time"],
+          "items": [
+            { "text": "Thirty per cent is paid on ___.", "answer": "order" },
+            { "text": "The final ten per cent is triggered by final ___.", "answer": "acceptance" },
+            { "text": "Payment terms are ___ from invoice date.", "answer": "net thirty" },
+            { "text": "There is a ten per cent ___ released after twelve months.", "answer": "retention" },
+            { "text": "The ___ on long-lead items is sixteen weeks.", "answer": "lead time" }
+          ],
+          "explanation": "Marcos + prazo de pagamento + retenção + lead time: é o pacote completo."
+        },
+        {
+          "type": "wordBank",
+          "title": "Complete a conversa comercial",
+          "instruction": "Escolha a palavra certa para cada lacuna.",
+          "bank": ["invoice", "milestone", "terms", "delivery", "acceptance"],
+          "items": [
+            { "text": "We'll ___ you at the end of the month.", "answer": "invoice" },
+            { "text": "The second ___ payment is due on delivery.", "answer": "milestone" },
+            { "text": "Our standard payment ___ are net 30.", "answer": "terms" },
+            { "text": "Who pays for transport depends on the ___ term.", "answer": "delivery" },
+            { "text": "Final payment is released on ___.", "answer": "acceptance" }
+          ],
+          "explanation": "Cinco palavras que aparecem em toda discussão de faturamento."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual frase é mais segura comercialmente?",
+          "badge": "A ou B",
+          "instruction": "As duas são educadas. Escolha a que protege melhor a empresa.",
+          "items": [
+            {
+              "prompt": "Confirmando o prazo de entrega.",
+              "a": "We'll deliver in about four months, more or less.",
+              "b": "Lead time is sixteen weeks from receipt of a clean purchase order.",
+              "correct": "b",
+              "why": "Prazo com ponto de partida definido. \"More or less\" vira discussão depois."
+            },
+            {
+              "prompt": "Respondendo a um pedido de prazo maior de pagamento.",
+              "a": "We could look at net 45, if we can move the retention down to five per cent.",
+              "b": "No, our terms are net 30 and that's final.",
+              "correct": "a",
+              "why": "Concessão condicionada mantém a negociação viva e o valor protegido."
+            },
+            {
+              "prompt": "Falando de quem paga o frete.",
+              "a": "We'll sort out the transport later, it's a detail.",
+              "b": "We're quoting DDP Rio, so transport and duties are on our side.",
+              "correct": "b",
+              "why": "Frete e impostos nunca são detalhe — o Incoterm define isso de forma inequívoca."
+            }
+          ],
+          "explanation": "Prazo com marco inicial, concessão condicionada e Incoterm explícito. Sempre."
+        },
+        {
+          "type": "orderList",
+          "title": "Ordene o fluxo do dinheiro",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as etapas na sequência real de um projeto.",
+          "items": [
+            "The customer issues the purchase order.",
+            "We invoice 30% as the down payment.",
+            "The equipment is manufactured and shipped.",
+            "We invoice 60% on delivery.",
+            "The customer signs the acceptance certificate.",
+            "We invoice the final 10% and the retention is released."
+          ],
+          "explanation": "PO → adiantamento → produção → entrega → aceite → saldo. Esse é o ciclo comercial completo."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Uma palavra errada em cada frase. Clique nela.",
+          "items": [
+            { "sentence": "We will make the invoice at the end of the month.", "wrong": "make", "fix": "issue / raise", "why": "Fatura é issued ou raised, nunca made." },
+            { "sentence": "Our payment terms are 30 days net from the invoice.", "wrong": "days", "fix": "(nada)", "why": "A forma consagrada é \"net 30\" — sem \"days\"." },
+            { "sentence": "The lead time of that part is sixteen weeks.", "wrong": "of", "fix": "on", "why": "Lead time ON a part / an item." },
+            { "sentence": "The customer will take the delivery at the port.", "wrong": "the", "fix": "(nada)", "why": "\"Take delivery\" é expressão fixa, sem artigo." }
+          ],
+          "explanation": "Quatro pequenos deslizes que aparecem em e-mails comerciais todos os dias."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can explain a milestone payment structure in English.", "pt": "Explico uma estrutura de pagamento por marcos em inglês." },
+            { "en": "I can state payment terms clearly (net 30, retention).", "pt": "Enuncio condições de pagamento com clareza (net 30, retenção)." },
+            { "en": "I can give a lead time with a clear starting point.", "pt": "Informo um prazo de entrega com marco inicial claro." },
+            { "en": "I know that the Incoterm decides who carries the risk.", "pt": "Sei que o Incoterm define de quem é o risco." }
+          ],
+          "doneMessage": "dinheiro e entrega resolvidos. Falta o que acontece quando o contrato muda.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Detalhes comerciais que valem dinheiro",
+        "intro": "Ouça e revele a tradução.",
+        "cards": [
+          { "en": "\"Net 30\" means the full amount is due 30 days after the invoice date — no discount, no instalments.", "pt": "\"Net 30\" significa o valor cheio em 30 dias da data da fatura — sem desconto, sem parcelas." },
+          { "en": "A \"clean purchase order\" is one with no missing information — the clock only starts when it's clean.", "pt": "Uma \"clean purchase order\" é a que não tem informação faltando — o relógio só começa a contar quando ela está limpa." },
+          { "en": "EXW is the cheapest quote and the biggest risk for the customer; DDP is the opposite. Same product, different price.", "pt": "EXW é a cotação mais barata e o maior risco para o cliente; DDP é o oposto. Mesmo produto, preço diferente." },
+          { "en": "Retention is money you have already earned but haven't received — always track it separately.", "pt": "Retenção é dinheiro que você já ganhou mas ainda não recebeu — controle sempre à parte." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now talk about money and delivery without leaving anything ambiguous.",
+        "pt": "Agora você fala de pagamento e entrega sem deixar nada ambíguo."
+      }
+    },
+    {
+      "title": "Changes, Renewals and Exit",
+      "focus": "Aditivos, mudanças de escopo, renovação e rescisão",
+      "character": "uk-female",
+      "objective": "Conduzir, em inglês, uma conversa sobre mudança de escopo, renovação de contrato ou encerramento — sem desgastar a relação.",
+      "intro": [
+        "No contract survives contact with reality unchanged. Scope grows, dates move, priorities shift.",
+        "English has a precise vocabulary for this: an <strong>amendment</strong> changes the contract, a <strong>variation order</strong> changes the work, a <strong>renewal</strong> extends it and a <strong>termination</strong> ends it.",
+        "Using the right word saves weeks of confusion."
+      ],
+      "introPt": [
+        "Nenhum contrato sobrevive intacto ao contato com a realidade. O escopo cresce, as datas mudam, as prioridades viram.",
+        "O inglês tem vocabulário preciso para isso: um <strong>amendment</strong> muda o contrato, uma <strong>variation order</strong> muda o trabalho, uma <strong>renewal</strong> estende e uma <strong>termination</strong> encerra.",
+        "Usar a palavra certa economiza semanas de confusão."
+      ],
+      "vocab": [
+        { "en": "amendment", "pt": "aditivo contratual", "example": "We'll need an amendment to extend the term." },
+        { "en": "variation order (VO)", "pt": "ordem de alteração de escopo", "example": "That extra work needs a variation order." },
+        { "en": "to renew / renewal", "pt": "renovar / renovação", "example": "The contract renews automatically unless we give notice." },
+        { "en": "notice period", "pt": "prazo de aviso prévio", "example": "There's a ninety-day notice period." },
+        { "en": "to terminate", "pt": "rescindir", "example": "Either party may terminate for convenience." },
+        { "en": "for convenience / for cause", "pt": "sem justa causa / por justa causa", "example": "Termination for convenience requires three months' notice." },
+        { "en": "to novate", "pt": "transferir o contrato a terceiro", "example": "The contract was novated to the new operator." },
+        { "en": "evergreen clause", "pt": "cláusula de renovação automática", "example": "It's an evergreen contract — it rolls over every year." }
+      ],
+      "exercises": [
+        {
+          "type": "emailTriage",
+          "title": "O cliente quer mudar o escopo",
+          "badge": "Caixa de entrada",
+          "instruction": "Leia e decida como responder.",
+          "email": {
+            "channel": "Outlook",
+            "from": "Priya Raman · Customer Procurement",
+            "subject": "Additional scope — can we just add it?",
+            "body": "Hi Fernanda,\n\nWe'd like to add the commissioning of the third unit to the current job. It's the same team, same site, and we'd rather not go through a whole new tender.\n\nCan you just add it to the existing contract? Ideally we'd start next month.\n\nBest,\nPriya"
+          },
+          "questions": [
+            {
+              "prompt": "What is Priya actually asking for, in contract language?",
+              "options": [
+                { "text": "A variation order to the existing contract.", "correct": true },
+                { "text": "A termination for convenience." },
+                { "text": "A novation to a third party." }
+              ],
+              "why": "Mudança no trabalho dentro de um contrato vigente = variation order."
+            },
+            {
+              "prompt": "Which reply keeps the relationship AND protects the company?",
+              "options": [
+                { "text": "Sure, we'll start next month and sort the paperwork later.", "correct": false },
+                { "text": "Happy to take this on. It sits outside the current scope, so we'll issue a variation order with the price and schedule impact — I can have it with you by Friday.", "correct": true },
+                { "text": "That's not possible without a new tender." }
+              ],
+              "why": "Sim ao negócio, não à informalidade. E com prazo."
+            },
+            {
+              "prompt": "Which phrase would you avoid in this reply?",
+              "options": [
+                { "text": "\"We'd be happy to take this on.\"" },
+                { "text": "\"We'll just add it, no problem.\"", "correct": true },
+                { "text": "\"With the price and schedule impact.\"" }
+              ],
+              "why": "\"Just add it\" apaga o registro formal — e é exatamente onde nascem as disputas."
+            }
+          ],
+          "explanation": "Aceite o trabalho, formalize o instrumento. Nunca um sem o outro."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que precisa entrar numa variation order?",
+          "instruction": "Marque tudo o que uma VO bem-feita deve conter.",
+          "prompt": "You're drafting a variation order for extra commissioning work.",
+          "options": [
+            { "text": "A clear description of the additional scope.", "correct": true },
+            { "text": "The price impact.", "correct": true },
+            { "text": "The schedule impact.", "correct": true },
+            { "text": "An apology for the extra cost.", "correct": false },
+            { "text": "Reference to the original contract and clause.", "correct": true },
+            { "text": "The name of everyone who attended the last meeting.", "correct": false }
+          ],
+          "explanation": "Escopo, preço, prazo e referência ao contrato. Quatro itens, uma página."
+        },
+        {
+          "type": "flowChoice",
+          "title": "A conversa da renovação",
+          "badge": "Conversa",
+          "situation": "O contrato vence em quatro meses. O cliente sinaliza que quer renovar, mas quer desconto.",
+          "turns": [
+            {
+              "who": "Customer",
+              "them": "We're happy with the service, but for the renewal we'd need to see a better rate — say, ten per cent down.",
+              "options": [
+                { "text": "Ten per cent is impossible.", "why": "Fecha a porta no primeiro turno e ainda entrega você como inflexível." },
+                { "text": "Good to hear you're happy with the service. A ten per cent reduction is a big step — can you help me understand what's driving it?", "correct": true, "why": "Reconhece o elogio e vai à causa antes de discutir número." },
+                { "text": "Let me check with my manager and come back next month.", "why": "Perde o momento e transfere a conversa para outra pessoa." }
+              ]
+            },
+            {
+              "who": "Customer",
+              "them": "Honestly, we've had a benchmark from another supplier that came in lower.",
+              "options": [
+                { "text": "They're probably not comparing the same scope. Let's put the two side by side — if they are cheaper on identical scope, I need to know that.", "correct": true, "why": "Não desmerece o concorrente, e traz a conversa para escopo — onde você tem argumento." },
+                { "text": "That supplier can't deliver what we deliver.", "why": "Afirmação sem prova, e soa defensivo." },
+                { "text": "Then maybe you should go with them.", "why": "Nunca ofereça a saída ao cliente numa negociação de renovação." }
+              ]
+            },
+            {
+              "who": "Customer",
+              "them": "Fair enough. What could you do if we extended to three years instead of one?",
+              "options": [
+                { "text": "I'd have to think about it.", "why": "Ele acabou de te oferecer a moeda de troca. Hesitar aqui custa o desconto todo." },
+                { "text": "A three-year term changes the picture — I can look at a five per cent reduction with annual indexation. Let me confirm and come back to you by Thursday.", "correct": true, "why": "Troca clara: prazo maior por preço menor, com número e data." },
+                { "text": "Three years is fine, and we can do the ten per cent.", "why": "Concedeu tudo de uma vez. O prazo maior valia mais do que isso." }
+              ]
+            }
+          ],
+          "explanation": "Entender a causa → trazer para escopo → trocar prazo por preço. Renovação não é desconto, é redesenho."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase contratual",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Formalizar um escopo extra.", "answer": "We will issue a variation order with the price and schedule impact", "extra": ["make", "for"] },
+            { "hint": "Falar do aviso prévio.", "answer": "The contract renews automatically unless either party gives ninety days notice", "extra": ["renewing", "to give"] },
+            { "hint": "Encerrar sem justa causa.", "answer": "Either party may terminate for convenience with three months notice", "extra": ["terminating", "by"] }
+          ],
+          "explanation": "Três frases que cobrem mudança, renovação e saída."
+        },
+        {
+          "type": "highlightPick",
+          "title": "Onde está o compromisso?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que criam um COMPROMISSO firme (e não uma intenção vaga).",
+          "instruction": "Toque em cada palavra que compromete de verdade.",
+          "text": "We will issue the variation order by Friday and we shall confirm the revised schedule at the same time . We might look at the pricing later , and we hope to close this before the renewal date .",
+          "targets": ["will", "shall"],
+          "explanation": "Will e shall comprometem. Might e hope são intenção — úteis quando você ainda não pode prometer."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Contracts",
+          "items": [
+            { "en": "I know the difference between an amendment and a variation order.", "pt": "Sei a diferença entre aditivo e ordem de alteração de escopo." },
+            { "en": "I can accept extra work and formalise it in the same message.", "pt": "Aceito trabalho extra e formalizo no mesmo e-mail." },
+            { "en": "I can talk about renewal, notice period and termination.", "pt": "Falo de renovação, aviso prévio e rescisão." },
+            { "en": "I can trade term for price in a renewal conversation.", "pt": "Sei trocar prazo por preço numa conversa de renovação." },
+            { "en": "Looking back at the topic: I feel confident discussing a contract in English.", "pt": "Olhando o tópico inteiro: me sinto segura discutindo um contrato em inglês." }
+          ],
+          "doneMessage": "tópico Contracts concluído. Próximo: projetos.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "As armadilhas da mudança de escopo",
+        "intro": "Ouça e revele a tradução.",
+        "cards": [
+          { "en": "\"Scope creep\" is the slow, invisible growth of a job through small favours nobody documented.", "pt": "\"Scope creep\" é o crescimento lento e invisível de um trabalho, feito de pequenos favores que ninguém documentou." },
+          { "en": "\"Evergreen\" contracts renew themselves — the danger is forgetting the notice period.", "pt": "Contratos \"evergreen\" se renovam sozinhos — o perigo é esquecer o prazo de aviso prévio." },
+          { "en": "\"Termination for convenience\" means ending the contract without anyone being at fault. It usually costs money.", "pt": "\"Termination for convenience\" é encerrar sem culpa de ninguém. Costuma ter custo." },
+          { "en": "In English, \"we'd be happy to\" is how you say yes to the business while saying no to the informality.", "pt": "Em inglês, \"we'd be happy to\" é como se diz sim ao negócio e não à informalidade." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now handle a change, a renewal or an exit — in English, without losing the relationship.",
+        "pt": "Agora você conduz uma mudança, uma renovação ou uma saída — em inglês, sem perder a relação."
+      }
+    }
+  ]
+}

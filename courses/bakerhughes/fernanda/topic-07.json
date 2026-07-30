@@ -1,0 +1,622 @@
+{
+  "topic": "Emails and Teams messages",
+  "lessons": [
+    {
+      "title": "Email That Gets Read",
+      "focus": "Assunto, primeira linha e pedido — a arquitetura do e-mail",
+      "character": "us-female",
+      "objective": "Escrever um e-mail em inglês que é lido, entendido e respondido na primeira tentativa.",
+      "intro": [
+        "The person reading your email is on a phone, between two meetings, with 60 unread messages.",
+        "That's the real audience. So the architecture matters more than the vocabulary: <strong>subject that decides</strong>, <strong>first line that says why</strong>, <strong>ask that is visible</strong>.",
+        "Everything else can go below."
+      ],
+      "introPt": [
+        "Quem lê o seu e-mail está no celular, entre duas reuniões, com 60 mensagens não lidas.",
+        "Esse é o público real. Então a arquitetura importa mais que o vocabulário: <strong>assunto que decide</strong>, <strong>primeira linha que diz por quê</strong>, <strong>pedido visível</strong>.",
+        "O resto pode ficar embaixo."
+      ],
+      "vocab": [
+        { "en": "subject line", "pt": "linha de assunto", "example": "A good subject line saves everyone time." },
+        { "en": "action required", "pt": "ação necessária", "example": "Subject: Macaé PO — action required by Thursday." },
+        { "en": "for your information (FYI)", "pt": "para conhecimento", "example": "FYI only — no action needed." },
+        { "en": "as discussed", "pt": "conforme conversado", "example": "As discussed, here's the summary." },
+        { "en": "please find attached", "pt": "segue em anexo", "example": "Please find attached the revised schedule." },
+        { "en": "to flag", "pt": "sinalizar", "example": "I wanted to flag a risk on the panel." },
+        { "en": "bullet points", "pt": "tópicos, marcadores", "example": "I've put the key points in bullets." },
+        { "en": "to keep it short", "pt": "ser breve", "example": "Keeping it short: two questions below." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Qual assunto funciona?",
+          "badge": "A ou B",
+          "instruction": "Escolha a linha de assunto que faz o e-mail ser aberto e respondido.",
+          "items": [
+            {
+              "prompt": "Pedindo aprovação de um gasto.",
+              "a": "Question",
+              "b": "Macaé spare parts — 18k approval needed by Thu 12th",
+              "correct": "b",
+              "why": "Assunto, valor, ação e data. Ele decide se abre agora só pelo título."
+            },
+            {
+              "prompt": "Enviando um relatório que ninguém precisa responder.",
+              "a": "FYI — Macaé weekly status (no action needed)",
+              "b": "Update",
+              "correct": "a",
+              "why": "Avisar que não precisa de ação é um presente para quem recebe 60 e-mails por dia."
+            },
+            {
+              "prompt": "Retomando um assunto antigo.",
+              "a": "RE: RE: RE: RE: panel",
+              "b": "Panel replacement — one question, one minute",
+              "correct": "b",
+              "why": "Assunto novo e específico ressuscita uma thread morta. Quatro REs enterram."
+            }
+          ],
+          "explanation": "Assunto bom = tema + ação + prazo. Três elementos, oito palavras."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o e-mail",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as partes na ordem em que devem aparecer.",
+          "items": [
+            "Hi Marcus,",
+            "Quick one on the Macaé spare parts — I need your approval by Thursday.",
+            "What: seal kit, 18k. Why now: the current kit is at end of life and the campaign starts on the 12th.",
+            "If we wait, we risk two days of downtime, which costs more than the part.",
+            "Can you sign off by Thursday, or tell me what's missing? Thanks — Fernanda"
+          ],
+          "explanation": "Saudação → o pedido → os fatos → o argumento → a ação com prazo. O pedido vai no topo, nunca no fim."
+        },
+        {
+          "type": "emailTriage",
+          "title": "Reescreva mentalmente este e-mail",
+          "badge": "Caixa de entrada",
+          "instruction": "Leia e identifique o que está errado na arquitetura.",
+          "email": {
+            "channel": "Outlook",
+            "from": "Colega · Field Operations",
+            "subject": "Macaé",
+            "body": "Hi Fernanda,\n\nI hope this email finds you well. As you know, we've been working on the Macaé campaign since January, and the team has done a great job in difficult conditions. The weather in the first quarter was particularly challenging, as you'll remember from our conversation in February.\n\nWe had a meeting last week with the technical team and discussed several topics, including the sequencing, the crew rotation and the spare parts situation.\n\nAnyway, the seal kit is at end of life and we would need 18k approved before the 12th, otherwise we risk two days of downtime.\n\nBest regards"
+          },
+          "questions": [
+            {
+              "prompt": "What's the main structural problem?",
+              "options": [
+                { "text": "The ask is buried in the last paragraph.", "correct": true },
+                { "text": "It's too informal." },
+                { "text": "It has no attachments." }
+              ],
+              "why": "Quem lê no celular para de ler no segundo parágrafo — e o pedido estava no quarto."
+            },
+            {
+              "prompt": "What should the subject line be?",
+              "options": [
+                { "text": "\"Macaé\"" },
+                { "text": "\"Macaé seal kit — 18k approval needed by the 12th\"", "correct": true },
+                { "text": "\"Urgent!!!\"" }
+              ],
+              "why": "Tema + ação + prazo. \"Macaé\" sozinho não diz o que fazer nem quando."
+            },
+            {
+              "prompt": "Which opening line is wasted?",
+              "options": [
+                { "text": "\"I hope this email finds you well.\"", "correct": true },
+                { "text": "\"The seal kit is at end of life.\"" },
+                { "text": "\"We would need 18k approved before the 12th.\"" }
+              ],
+              "why": "É gentil e não informa nada. Um \"Hi Marcus\" já faz esse trabalho."
+            }
+          ],
+          "explanation": "Suba o pedido para a primeira linha. O histórico, se necessário, vai depois."
+        },
+        {
+          "type": "categorize",
+          "title": "Sobe ou desce no e-mail?",
+          "instruction": "Cada elemento deve ficar no topo (primeiras linhas) ou no corpo (depois)?",
+          "categories": [
+            { "id": "top", "name": "No topo", "short": "Topo" },
+            { "id": "body", "name": "No corpo", "short": "Corpo" }
+          ],
+          "items": [
+            { "text": "O que você precisa que a pessoa faça", "cat": "top" },
+            { "text": "O prazo", "cat": "top" },
+            { "text": "O histórico do projeto desde janeiro", "cat": "body" },
+            { "text": "O valor a ser aprovado", "cat": "top" },
+            { "text": "A lista de quem estava na reunião", "cat": "body" },
+            { "text": "O risco se nada for feito", "cat": "body" }
+          ],
+          "explanation": "Pedido, prazo e número no topo. Contexto e justificativa embaixo, para quem quiser."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte as frases de e-mail",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Anunciar o pedido logo na primeira linha.", "answer": "Quick one on the spare parts I need your approval by Thursday", "extra": ["needing", "until"] },
+            { "hint": "Sinalizar um risco.", "answer": "I wanted to flag a risk on the panel replacement", "extra": ["flagging", "about"] },
+            { "hint": "Fechar com a ação.", "answer": "Can you sign off by Thursday or tell me what is missing", "extra": ["signing", "until"] }
+          ],
+          "explanation": "Pedido no topo, risco sinalizado, ação com alternativa no fim."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "My subject lines contain the topic, the action and the date.", "pt": "Meus assuntos têm tema, ação e data." },
+            { "en": "My ask is in the first two lines, never the last.", "pt": "Meu pedido está nas duas primeiras linhas, nunca na última." },
+            { "en": "I drop \"I hope this email finds you well\".", "pt": "Abandonei o \"I hope this email finds you well\"." },
+            { "en": "I mark FYI emails as \"no action needed\".", "pt": "Marco e-mails informativos como \"no action needed\"." }
+          ],
+          "doneMessage": "arquitetura resolvida. Agora, o tom.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O e-mail visto do celular",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "On a phone, only the subject line and about the first 40 words are visible. That's your whole email.", "pt": "No celular, só o assunto e cerca de 40 palavras aparecem. Esse é o seu e-mail inteiro." },
+          { "en": "\"I hope this email finds you well\" is the most-written and least-read sentence in business English.", "pt": "\"I hope this email finds you well\" é a frase mais escrita e menos lida do inglês de negócios." },
+          { "en": "Changing the subject line revives a dead thread — four REs kill it.", "pt": "Mudar a linha de assunto ressuscita uma thread morta — quatro REs a enterram." },
+          { "en": "\"Quick one on…\" is the most effective opening in corporate English: it promises brevity and delivers the topic.", "pt": "\"Quick one on…\" é a abertura mais eficaz do inglês corporativo: promete brevidade e entrega o tema." }
+        ]
+      },
+      "celebrate": {
+        "en": "Your emails will now be read on the first pass — and answered.",
+        "pt": "Seus e-mails agora são lidos de primeira — e respondidos."
+      }
+    },
+    {
+      "title": "Tone and Register",
+      "focus": "Formal, neutro e informal — e quando usar cada um",
+      "character": "uk-female",
+      "objective": "Ajustar o tom de uma mensagem em inglês conforme o destinatário, sem soar nem fria nem íntima demais.",
+      "intro": [
+        "The same content, written three ways, produces three different relationships.",
+        "English has a wide register range, and the risk for non-native speakers goes both ways: too stiff (\"Please be advised\") or too casual (\"Hey, quick thing\").",
+        "The safest place to live is the middle: <strong>warm, direct, professional</strong>."
+      ],
+      "introPt": [
+        "O mesmo conteúdo, escrito de três formas, produz três relações diferentes.",
+        "O inglês tem uma faixa larga de registro, e o risco para quem não é nativo vai nos dois sentidos: engessado demais (\"Please be advised\") ou íntimo demais (\"Hey, quick thing\").",
+        "O lugar mais seguro é o meio: <strong>caloroso, direto, profissional</strong>."
+      ],
+      "vocab": [
+        { "en": "I'd be grateful if you could…", "pt": "eu agradeceria se você pudesse…", "example": "I'd be grateful if you could confirm by Friday." },
+        { "en": "could you possibly…", "pt": "você poderia, por acaso…", "example": "Could you possibly send it today?" },
+        { "en": "just to confirm", "pt": "só confirmando", "example": "Just to confirm, the meeting is at 10." },
+        { "en": "happy to…", "pt": "fico feliz em…", "example": "Happy to walk you through it." },
+        { "en": "let me know if…", "pt": "me avise se…", "example": "Let me know if that works." },
+        { "en": "many thanks", "pt": "muito obrigada", "example": "Many thanks for the quick turnaround." },
+        { "en": "apologies for the delay", "pt": "desculpe a demora", "example": "Apologies for the delay in coming back to you." },
+        { "en": "kind regards / best", "pt": "atenciosamente / abraço", "example": "Kind regards, Fernanda" }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Do mais formal ao mais informal",
+          "badge": "Coloque em escala",
+          "scale": ["mais formal", "mais informal"],
+          "instruction": "Coloque as formas de pedir a mesma coisa em ordem de formalidade.",
+          "items": [
+            "I would be most grateful if you could kindly confirm at your earliest convenience.",
+            "I'd be grateful if you could confirm by Friday.",
+            "Could you confirm by Friday?",
+            "Can you confirm by Friday?",
+            "Confirm by Friday when you can?"
+          ],
+          "explanation": "O segundo e o terceiro cobrem 95% da vida profissional. Os extremos são raros."
+        },
+        {
+          "type": "categorize",
+          "title": "Para quem é esta mensagem?",
+          "instruction": "Classifique pelo destinatário mais provável.",
+          "categories": [
+            { "id": "external", "name": "Cliente externo", "short": "Cliente" },
+            { "id": "internal", "name": "Colega próximo", "short": "Colega" }
+          ],
+          "items": [
+            { "text": "\"Hi Priya, many thanks for your patience on this.\"", "cat": "external" },
+            { "text": "\"Hey — did the panel ever get ordered?\"", "cat": "internal" },
+            { "text": "\"I'd be grateful if you could confirm by Friday.\"", "cat": "external" },
+            { "text": "\"Can you chase Marcus on this one? Thanks!\"", "cat": "internal" },
+            { "text": "\"Apologies for the delay in coming back to you.\"", "cat": "external" },
+            { "text": "\"Quick one — do you have the number handy?\"", "cat": "internal" }
+          ],
+          "explanation": "Com cliente: mais amortecedores. Com colega: mais velocidade. Em ambos: mesma clareza."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Rígido demais ou solto demais?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que fica no meio — calorosa e profissional.",
+          "items": [
+            {
+              "prompt": "Cobrando um cliente sobre uma assinatura.",
+              "a": "Please be advised that the signature remains outstanding and your prompt action is required.",
+              "b": "Just a quick nudge on the signature — we're aiming to start on the 12th and this is the last piece.",
+              "correct": "b",
+              "why": "\"Please be advised\" soa como carta de cobrança de banco. O segundo é direto e humano."
+            },
+            {
+              "prompt": "Respondendo a um diretor que você não conhece.",
+              "a": "Hey! Sure thing, no worries at all.",
+              "b": "Of course — I'll have it with you by Thursday.",
+              "correct": "b",
+              "why": "\"Hey\" e \"no worries\" com alguém que você não conhece soam desinvestidos."
+            },
+            {
+              "prompt": "Agradecendo uma resposta rápida.",
+              "a": "I would like to express my sincere gratitude for your prompt reply.",
+              "b": "Many thanks for the quick turnaround — really helpful.",
+              "correct": "b",
+              "why": "Gratidão em excesso soa artificial. \"Many thanks\" + por que ajudou é perfeito."
+            }
+          ],
+          "explanation": "O meio é caloroso e direto. Fuja dos dois extremos."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Uma palavra errada por frase — todas de tom ou uso.",
+          "items": [
+            { "sentence": "Please be informed that the shipment was dispatched yesterday.", "wrong": "informed", "fix": "(reescrever: \"The shipment was dispatched yesterday.\")", "why": "\"Please be informed\" é arcaico e frio. Vá direto." },
+            { "sentence": "I am waiting your answer since Monday.", "wrong": "waiting", "fix": "waiting for", "why": "To wait FOR something. E \"since Monday\" pede present perfect: \"I've been waiting for\"." },
+            { "sentence": "Thanks for your kindly attention to this matter.", "wrong": "kindly", "fix": "kind", "why": "\"Kind attention\" — adjetivo, não advérbio. Mas o mais natural é só \"Thanks for looking at this\"." },
+            { "sentence": "Please do the needful and revert urgently.", "wrong": "needful", "fix": "(reescrever: \"Could you sort this out and let me know?\")", "why": "\"Do the needful\" e \"revert\" formam a dupla mais evitada do inglês de negócios." }
+          ],
+          "explanation": "Fórmulas antigas soam distantes. O inglês moderno de negócios é simples e caloroso."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Ajuste o tom da mensagem",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a versão de tom adequado para um cliente externo.",
+          "text": "Hi Priya, ___ for the delay in coming back to you. ___ to confirm: the panel ships on the 30th and we're still targeting the 8th for delivery. I'd be ___ if you could confirm the site access dates by Friday, so we can lock the crew. ___ to walk you through the sequence if that's easier. ___ regards, Fernanda",
+          "gaps": [
+            { "options": ["Apologies", "Sorry sorry", "I regret to inform"], "answer": "Apologies", "why": "\"Apologies for the delay\" é a fórmula padrão, curta e profissional." },
+            { "options": ["Just", "Only", "Merely"], "answer": "Just", "why": "\"Just to confirm\" — abre a informação sem peso." },
+            { "options": ["grateful", "thankful", "gratified"], "answer": "grateful", "why": "\"I'd be grateful if you could…\" — pedido educado padrão." },
+            { "options": ["Happy", "Glad of", "Pleasure"], "answer": "Happy", "why": "\"Happy to…\" — oferta de ajuda em uma palavra." },
+            { "options": ["Kind", "Kindly", "Kindest"], "answer": "Kind", "why": "\"Kind regards\" — fechamento neutro-profissional." }
+          ],
+          "explanation": "Cinco fórmulas que cobrem qualquer e-mail a cliente."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can adjust register between a client and a close colleague.", "pt": "Ajusto o registro entre cliente e colega próximo." },
+            { "en": "I avoid \"please be advised\" and \"do the needful\".", "pt": "Evito \"please be advised\" e \"do the needful\"." },
+            { "en": "I use \"I'd be grateful if you could\" for polite requests.", "pt": "Uso \"I'd be grateful if you could\" para pedidos educados." },
+            { "en": "I sound warm and direct at the same time.", "pt": "Soo calorosa e direta ao mesmo tempo." }
+          ],
+          "doneMessage": "tom calibrado. Agora, o Teams.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O termômetro do tom",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"Could you possibly…\" is more polite than \"could you…\", but too many softeners start to sound insincere.", "pt": "\"Could you possibly…\" é mais educado que \"could you…\", mas amortecedores demais começam a soar falsos." },
+          { "en": "\"Do the needful\" and \"revert\" come from an older regional English. They read as dated to most readers.", "pt": "\"Do the needful\" e \"revert\" vêm de um inglês regional mais antigo. Soam datados para a maioria dos leitores." },
+          { "en": "\"Kind regards\" is neutral everywhere. \"Best\" is warmer and safe with people you know.", "pt": "\"Kind regards\" é neutro em qualquer lugar. \"Best\" é mais caloroso e seguro com quem você conhece." },
+          { "en": "Warmth in English lives in short phrases — \"really helpful\", \"happy to\", \"many thanks\" — not in long formulas.", "pt": "O calor humano em inglês vive nas frases curtas — \"really helpful\", \"happy to\", \"many thanks\" — não nas fórmulas longas." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now hit the right tone with anyone, from a close colleague to a client's director.",
+        "pt": "Agora você acerta o tom com qualquer pessoa, do colega próximo ao diretor do cliente."
+      }
+    },
+    {
+      "title": "Teams: Short, Fast, Clear",
+      "focus": "Mensagens instantâneas de trabalho em inglês",
+      "character": "us-male",
+      "objective": "Escrever no Teams em inglês com a brevidade certa — sem parecer ríspida e sem escrever um e-mail dentro do chat.",
+      "intro": [
+        "Teams is not email with a different colour. The rules are different: one topic per message, question at the end, no long greetings.",
+        "The most common mistake is writing a paragraph and then asking the question — the reader answers before finishing.",
+        "The second is being so short it reads as annoyed."
+      ],
+      "introPt": [
+        "O Teams não é e-mail de outra cor. As regras são outras: um assunto por mensagem, pergunta no fim, nada de saudação longa.",
+        "O erro mais comum é escrever um parágrafo e só então perguntar — o leitor responde antes de terminar de ler.",
+        "O segundo é ser tão curta que a mensagem soa irritada."
+      ],
+      "vocab": [
+        { "en": "quick question", "pt": "pergunta rápida", "example": "Quick question on the panel —" },
+        { "en": "when you get a sec", "pt": "quando puder", "example": "When you get a sec, can you check this?" },
+        { "en": "no rush", "pt": "sem pressa", "example": "No rush — sometime today is fine." },
+        { "en": "sorted", "pt": "resolvido", "example": "All sorted, thanks!" },
+        { "en": "on it", "pt": "estou cuidando disso", "example": "On it — back to you in ten." },
+        { "en": "any chance you could…", "pt": "alguma chance de você…", "example": "Any chance you could look before 3?" },
+        { "en": "heads-up", "pt": "aviso rápido", "example": "Heads-up: the call moved to 4." },
+        { "en": "ignore my last", "pt": "desconsidere a anterior", "example": "Ignore my last — found it." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Qual mensagem funciona no chat?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão certa para o Teams.",
+          "items": [
+            {
+              "prompt": "Perguntando se o pedido foi feito.",
+              "a": "Hi Marcus, I hope you're well. I wanted to check with you regarding the status of the seal kit purchase order which we discussed last week during the operations call, as I need to update the schedule accordingly. Could you let me know?",
+              "b": "Quick one — has the seal kit PO gone through?",
+              "correct": "b",
+              "why": "Chat pede uma linha. O parágrafo é um e-mail no lugar errado."
+            },
+            {
+              "prompt": "Pedindo algo com urgência moderada.",
+              "a": "Need this today.",
+              "b": "Any chance you could look at this before 3? Need it for the status report — no rush beyond that.",
+              "correct": "b",
+              "why": "A primeira é uma ordem sem contexto. A segunda dá o porquê e o limite real."
+            },
+            {
+              "prompt": "Avisando que resolveu sozinha.",
+              "a": "Ignore my last — found it. Thanks anyway!",
+              "b": "(não mandar nada)",
+              "correct": "a",
+              "why": "Avisar que já resolveu poupa o tempo da outra pessoa. Silêncio deixa ela procurando."
+            }
+          ],
+          "explanation": "Uma linha, um assunto, o porquê quando houver urgência."
+        },
+        {
+          "type": "multiSelect",
+          "title": "Boas práticas no Teams",
+          "instruction": "Marque tudo o que faz uma mensagem de chat funcionar.",
+          "prompt": "You're messaging a colleague in another time zone.",
+          "options": [
+            { "text": "Put the question in the first line.", "correct": true },
+            { "text": "Say when you need it and why.", "correct": true },
+            { "text": "Send five separate messages in a row.", "correct": false },
+            { "text": "Say \"no rush\" when there genuinely isn't one.", "correct": true },
+            { "text": "Start with \"Hi, how are you?\" and wait for the answer before asking.", "correct": false },
+            { "text": "Use a thread for a topic that will have several replies.", "correct": true }
+          ],
+          "explanation": "\"Hi, how are you?\" e depois esperar é a forma mais rápida de perder duas horas com outro fuso."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a conversa de chat",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a expressão natural em cada lacuna.",
+          "text": "Fernanda: Quick ___ — has the seal kit PO gone through? / Marcus: Not yet, ___ it now. / Fernanda: Perfect. Any chance you could ___ me know once it's raised? Need it for Friday's report. / Marcus: Will do. / Fernanda: ___ — thanks! / Marcus: All ___ , PO 4471 raised.",
+          "gaps": [
+            { "options": ["one", "thing", "doubt"], "answer": "one", "why": "\"Quick one\" é a abertura padrão de chat. \"Doubt\" não significa dúvida nesse sentido." },
+            { "options": ["on", "in", "at"], "answer": "on", "why": "\"On it\" = estou cuidando disso agora." },
+            { "options": ["let", "make", "tell"], "answer": "let", "why": "\"Let me know\" — expressão fixa." },
+            { "options": ["Great", "Nice for you", "Congratulations"], "answer": "Great", "why": "Reconhecimento curto mantém a conversa fluida." },
+            { "options": ["sorted", "solved", "resolved"], "answer": "sorted", "why": "\"All sorted\" é o jeito natural de dizer que está resolvido." }
+          ],
+          "explanation": "Note o ritmo: cada mensagem tem uma linha e move a conversa um passo."
+        },
+        {
+          "type": "oddOneOut",
+          "title": "Qual não cabe no chat?",
+          "badge": "Odd one out",
+          "instruction": "Clique na expressão que não funciona numa mensagem instantânea de trabalho.",
+          "groups": [
+            { "items": ["Quick one —", "Heads-up:", "Please be advised that"], "odd": "Please be advised that", "why": "Fórmula de carta formal. Num chat, soa robótico." },
+            { "items": ["On it", "Will do", "I shall endeavour to"], "odd": "I shall endeavour to", "why": "Formalidade excessiva num canal rápido." },
+            { "items": ["All sorted", "Done", "The matter has been concluded"], "odd": "The matter has been concluded", "why": "É linguagem de ata, não de chat." },
+            { "items": ["No rush", "When you get a sec", "Your prompt action is required"], "odd": "Your prompt action is required", "why": "Soa como cobrança automática de sistema." }
+          ],
+          "explanation": "Chat pede a versão falada da língua. Fórmula de carta destoa imediatamente."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre mensagens de trabalho em inglês.",
+          "items": [
+            { "text": "A one-line message always sounds rude in English.", "answer": false, "why": "Não — no chat, brevidade é respeito ao tempo do outro. O que soa ríspido é ordem sem contexto." },
+            { "text": "\"No rush\" should only be used when it's true.", "answer": true, "why": "Usar e depois cobrar em vinte minutos destrói a credibilidade das suas próximas mensagens." },
+            { "text": "Sending the question before the context is bad practice.", "answer": false, "why": "No chat é o contrário: pergunta primeiro, contexto depois se necessário." },
+            { "text": "\"Ignore my last\" is unprofessional.", "answer": false, "why": "É o oposto: avisa que a pessoa não precisa mais gastar tempo com aquilo." }
+          ],
+          "explanation": "Brevidade não é grosseria. Ordem sem contexto, sim."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I put the question in the first line of a chat message.", "pt": "Ponho a pergunta na primeira linha da mensagem de chat." },
+            { "en": "I say why and when, not just what.", "pt": "Digo por quê e quando, não só o quê." },
+            { "en": "I use quick one, on it, all sorted, heads-up naturally.", "pt": "Uso quick one, on it, all sorted, heads-up com naturalidade." },
+            { "en": "I never open with \"how are you?\" and wait, across time zones.", "pt": "Nunca abro com \"how are you?\" e fico esperando, entre fusos diferentes." }
+          ],
+          "doneMessage": "chat dominado. Falta o mais delicado: mensagens difíceis por escrito.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A etiqueta invisível do chat",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"On it\" is two words that buy you an hour — it tells the other person to stop worrying.", "pt": "\"On it\" são duas palavras que te compram uma hora — dizem à outra pessoa para parar de se preocupar." },
+          { "en": "In a global team, \"Hi, how are you?\" followed by silence can waste half a day across time zones.", "pt": "Num time global, \"Hi, how are you?\" seguido de silêncio pode desperdiçar meio dia entre fusos." },
+          { "en": "\"Sorted\" is British and very common at work; \"all set\" is the American equivalent.", "pt": "\"Sorted\" é britânico e muito usado no trabalho; \"all set\" é o equivalente americano." },
+          { "en": "A full stop at the end of a one-word reply can read as cold in chat. \"Ok.\" and \"Ok\" are not the same message.", "pt": "Um ponto final no fim de uma resposta de uma palavra pode soar frio no chat. \"Ok.\" e \"Ok\" não são a mesma mensagem." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now work in English at chat speed — clear, fast and never rude.",
+        "pt": "Agora você trabalha em inglês na velocidade do chat — clara, rápida e nunca ríspida."
+      }
+    },
+    {
+      "title": "Difficult Messages in Writing",
+      "focus": "Escrever quando o assunto é sensível",
+      "character": "us-female",
+      "objective": "Escrever mensagens difíceis em inglês — cobrança, discordância, erro próprio — sem criar um documento que vai te prejudicar depois.",
+      "intro": [
+        "Everything you write can be forwarded. That single fact should shape every difficult message.",
+        "The rule: write what you would be comfortable having read out loud in a meeting, by someone who doesn't like you.",
+        "Which doesn't mean being vague. It means being factual, specific and free of blame."
+      ],
+      "introPt": [
+        "Tudo o que você escreve pode ser encaminhado. Esse fato sozinho deveria moldar toda mensagem difícil.",
+        "A regra: escreva o que você não se incomodaria de ouvir lido em voz alta numa reunião, por alguém que não gosta de você.",
+        "O que não significa ser vaga. Significa ser factual, específica e sem atribuir culpa."
+      ],
+      "vocab": [
+        { "en": "as I understand it", "pt": "pelo que eu entendo", "example": "As I understand it, the PO was never raised." },
+        { "en": "my understanding was…", "pt": "meu entendimento era…", "example": "My understanding was that legal had signed off." },
+        { "en": "for the record", "pt": "para registro", "example": "For the record, the request went out on the 6th." },
+        { "en": "I may have missed something", "pt": "posso ter deixado passar algo", "example": "I may have missed something — can you check?" },
+        { "en": "to take responsibility", "pt": "assumir a responsabilidade", "example": "That one's on me — I should have flagged it." },
+        { "en": "going forward", "pt": "daqui para frente", "example": "Going forward, I'll copy you on all approvals." },
+        { "en": "to clarify", "pt": "esclarecer", "example": "Just to clarify where we are." },
+        { "en": "no blame intended", "pt": "sem intenção de culpar", "example": "No blame intended — I just want the sequence right." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Qual versão você aceitaria ver encaminhada?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que sobrevive a um forward.",
+          "items": [
+            {
+              "prompt": "O pedido de compra nunca foi feito e o projeto atrasou.",
+              "a": "Procurement dropped the ball on this and now we're two weeks late.",
+              "b": "As I understand it, the PO wasn't raised after the 6th. I may have missed something — can we check the sequence together? I want to get the date back.",
+              "correct": "b",
+              "why": "Fato, abertura para estar errada, e foco na solução. A primeira vira prova contra você."
+            },
+            {
+              "prompt": "Você cometeu o erro.",
+              "a": "There was a misunderstanding regarding the specification which led to certain issues.",
+              "b": "That one's on me — I read the wrong revision of the spec. Here's what I've done to fix it, and what I'll change going forward.",
+              "correct": "b",
+              "why": "Assumir com clareza custa cinco segundos e compra anos de credibilidade. Vagueza custa muito mais."
+            },
+            {
+              "prompt": "Você discorda de uma decisão do time técnico.",
+              "a": "This decision makes no sense and nobody consulted commercial.",
+              "b": "I'd like to flag a commercial risk with this approach — the customer's contract requires the inspection before mobilisation. Happy to be wrong on this; can we look at clause 14 together?",
+              "correct": "b",
+              "why": "Discorda com base contratual e sem acusar ninguém de ter agido mal."
+            }
+          ],
+          "explanation": "Fato + abertura + foco na solução. Nunca adjetivo sobre pessoas."
+        },
+        {
+          "type": "highlightPick",
+          "title": "O que sobrevive a um forward?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que ATRIBUEM CULPA e não deveriam estar num e-mail.",
+          "instruction": "Toque em cada palavra problemática.",
+          "text": "As I understand it the PO was not raised after the sixth . Procurement clearly ignored the request and someone dropped the ball . Can we look at the sequence together ?",
+          "targets": ["clearly", "ignored", "dropped"],
+          "explanation": "Tire os três e a frase continua verdadeira — e deixa de ser uma acusação por escrito."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o e-mail difícil",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as partes na ordem que funciona.",
+          "items": [
+            "Hi Marcus — I want to make sure I've got the sequence right on the panel PO.",
+            "As I understand it, the request went out on the 6th and the PO hasn't been raised yet.",
+            "I may well be missing something — if it's been raised under a different reference, just tell me and I'll update the tracker.",
+            "If it hasn't, could we get it in today? The campaign date depends on it.",
+            "No blame intended — I just want to protect the September handover."
+          ],
+          "explanation": "Objetivo → fato → abertura para estar errada → pedido → intenção declarada."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A frase certa para o assunto sensível",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a formulação que protege você e a relação.",
+          "items": [
+            {
+              "prompt": "Você quer registrar que avisou antes.",
+              "options": [
+                { "text": "For the record, the request went out on the 6th — copying it here so we all have the same timeline.", "correct": true },
+                { "text": "As I said MANY times before…" },
+                { "text": "I told you this would happen." }
+              ],
+              "why": "\"For the record\" registra o fato sem transformar o e-mail numa acusação."
+            },
+            {
+              "prompt": "Você errou e precisa contar.",
+              "options": [
+                { "text": "That one's on me. I've done X to contain it, and going forward I'll do Y.", "correct": true },
+                { "text": "Mistakes were made." },
+                { "text": "It wasn't entirely my fault." }
+              ],
+              "why": "Assumir + conter + corrigir o processo. Três frases e o assunto fecha."
+            },
+            {
+              "prompt": "Você discorda de um colega sênior por escrito.",
+              "options": [
+                { "text": "I see it differently, and I'd like to explain why — happy to be wrong.", "correct": true },
+                { "text": "I completely disagree with this." },
+                { "text": "(não escrever nada e reclamar depois)" }
+              ],
+              "why": "\"Happy to be wrong\" abre espaço real e faz a discordância soar como colaboração."
+            }
+          ],
+          "explanation": "Registrar, assumir e discordar — três atos difíceis, três fórmulas prontas."
+        },
+        {
+          "type": "multiSelect",
+          "title": "Antes de clicar em enviar",
+          "instruction": "Marque tudo o que vale conferir numa mensagem sensível.",
+          "prompt": "You've just written a difficult email.",
+          "options": [
+            { "text": "Would I be comfortable if this were read out in a meeting?", "correct": true },
+            { "text": "Have I stated facts rather than motives?", "correct": true },
+            { "text": "Have I left room for being wrong?", "correct": true },
+            { "text": "Have I copied enough people to make my point?", "correct": false },
+            { "text": "Is there a clear ask and a date?", "correct": true },
+            { "text": "Have I used capital letters for emphasis?", "correct": false }
+          ],
+          "explanation": "Cópia em massa é escalada disfarçada — e todo mundo percebe. Maiúscula é grito."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Emails e Teams",
+          "items": [
+            { "en": "I write only what I'd accept being forwarded.", "pt": "Só escrevo o que aceitaria ver encaminhado." },
+            { "en": "I state facts, not motives.", "pt": "Declaro fatos, não intenções alheias." },
+            { "en": "I can admit a mistake in three sentences.", "pt": "Assumo um erro em três frases." },
+            { "en": "I leave room to be wrong: \"I may have missed something\".", "pt": "Deixo espaço para estar errada: \"I may have missed something\"." },
+            { "en": "Looking at the topic: I write in English with confidence, in any channel.", "pt": "Olhando o tópico: escrevo em inglês com confiança, em qualquer canal." }
+          ],
+          "doneMessage": "tópico de escrita concluído. Próximo: reuniões.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O e-mail que você não quer que exista",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"As I understand it\" is the most useful opening in a difficult email: it states a fact while allowing you to be wrong.", "pt": "\"As I understand it\" é a abertura mais útil de um e-mail difícil: afirma um fato e ainda te permite estar errada." },
+          { "en": "\"That one's on me\" costs five seconds and buys years of credibility. Vagueness costs far more.", "pt": "\"That one's on me\" custa cinco segundos e compra anos de credibilidade. A vagueza custa muito mais." },
+          { "en": "Adding people to copy in a tense thread is read as escalation, even when you don't mean it.", "pt": "Adicionar gente em cópia numa thread tensa é lido como escalada, mesmo sem intenção." },
+          { "en": "If it needs more than two rounds in writing, it needs a call. Difficult topics don't improve by email.", "pt": "Se precisa de mais de duas rodadas por escrito, precisa de uma ligação. Assunto difícil não melhora por e-mail." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now write the hardest message in the inbox — in English, and safely.",
+        "pt": "Agora você escreve a mensagem mais difícil da caixa de entrada — em inglês e com segurança."
+      }
+    }
+  ]
+}

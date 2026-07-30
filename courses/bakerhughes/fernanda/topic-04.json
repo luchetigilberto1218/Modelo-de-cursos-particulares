@@ -1,0 +1,703 @@
+{
+  "topic": "Customer communication",
+  "lessons": [
+    {
+      "title": "Internal Stakeholders",
+      "focus": "Falar com áreas internas: pedir, alinhar e destravar",
+      "character": "us-female",
+      "objective": "Pedir algo a outra área em inglês de forma que a pessoa queira responder — e responder rápido.",
+      "intro": [
+        "Your internal customer is the colleague who needs something from you — or the one you need something from.",
+        "In English, the difference between a request that gets done and one that sits in an inbox is almost always the same: <strong>context</strong>, <strong>the ask</strong>, <strong>the date</strong>.",
+        "Three elements, in that order, in three lines."
+      ],
+      "introPt": [
+        "Seu cliente interno é o colega que precisa de algo de você — ou de quem você precisa de algo.",
+        "Em inglês, a diferença entre um pedido que anda e um que fica parado na caixa de entrada é quase sempre a mesma: <strong>contexto</strong>, <strong>o pedido</strong>, <strong>a data</strong>.",
+        "Três elementos, nessa ordem, em três linhas."
+      ],
+      "vocab": [
+        { "en": "stakeholder", "pt": "parte interessada", "example": "Let's map the stakeholders before we decide." },
+        { "en": "to loop someone in", "pt": "incluir alguém na conversa", "example": "I'll loop in the legal team." },
+        { "en": "to align", "pt": "alinhar", "example": "Let's align on the message before we send it." },
+        { "en": "to chase / follow up", "pt": "cobrar / dar seguimento", "example": "I'm chasing procurement on the panel." },
+        { "en": "heads-up", "pt": "aviso antecipado", "example": "Just a heads-up: the date may move." },
+        { "en": "to unblock", "pt": "destravar", "example": "Can you help unblock the approval?" },
+        { "en": "counterpart", "pt": "colega equivalente em outra área/país", "example": "My counterpart in Aberdeen handles that." },
+        { "en": "bandwidth", "pt": "disponibilidade", "example": "Do you have bandwidth to look at this today?" }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Qual pedido é respondido primeiro?",
+          "badge": "A ou B",
+          "instruction": "As duas mensagens pedem a mesma coisa. Qual você responderia antes?",
+          "items": [
+            {
+              "prompt": "Pedindo um dado ao time de finanças.",
+              "a": "Hi, could you send me the numbers when you have a moment? Thanks!",
+              "b": "Hi Ana — for the Macaé status report due Friday, could you send me the Q2 subcontractor actuals? Anything by Thursday lunchtime works.",
+              "correct": "b",
+              "why": "Contexto, pedido específico e prazo. \"When you have a moment\" significa nunca."
+            },
+            {
+              "prompt": "Pedindo ajuda para destravar uma aprovação.",
+              "a": "This approval has been stuck for two weeks, can someone please look at it?",
+              "b": "The 25k approval for Macaé has been open since the 6th. Marcus, you're the approver — could you sign off today, or tell me what's missing?",
+              "correct": "b",
+              "why": "Nomeia a pessoa, dá a data e oferece a saída alternativa. \"Someone\" nunca é ninguém."
+            },
+            {
+              "prompt": "Avisando de uma possível mudança de data.",
+              "a": "Heads-up: the September handover may move if the panel isn't fixed by the 30th. Nothing to do yet — I'll confirm on the 30th.",
+              "b": "There might be a problem with the handover date, I'll let you know.",
+              "correct": "a",
+              "why": "Aviso com condição, data e compromisso de retorno. E, importante: diz que não precisa fazer nada agora."
+            }
+          ],
+          "explanation": "Nomeie a pessoa, dê o contexto, peça uma coisa só, marque a data."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte o pedido interno",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Contexto antes do pedido.", "answer": "For the status report due on Friday I need the Q2 actuals", "extra": ["needing", "in"] },
+            { "hint": "Pedir com prazo gentil.", "answer": "Would you be able to send it by Thursday lunchtime", "extra": ["can you", "until"] },
+            { "hint": "Oferecer a saída alternativa.", "answer": "If that is not possible let me know what is missing", "extra": ["telling", "which"] }
+          ],
+          "explanation": "Contexto → pedido → prazo → alternativa. Quatro linhas resolvem qualquer pedido interno."
+        },
+        {
+          "type": "serialChoice",
+          "title": "O verbo certo do dia a dia corporativo",
+          "badge": "Escolha certa",
+          "instruction": "Escolha o verbo que um falante nativo usaria.",
+          "items": [
+            {
+              "prompt": "Incluir o jurídico na conversa: \"I'll ___ legal ___.\"",
+              "options": [
+                { "text": "loop / in", "correct": true },
+                { "text": "put / inside" },
+                { "text": "call / together" }
+              ],
+              "why": "\"To loop someone in\" é o verbo padrão para trazer alguém para a conversa."
+            },
+            {
+              "prompt": "Cobrar procurement pela resposta: \"I'm ___ procurement on the panel.\"",
+              "options": [
+                { "text": "chasing", "correct": true },
+                { "text": "running after" },
+                { "text": "pressing" }
+              ],
+              "why": "\"Chasing\" é cobrança normal e educada. \"Pressing\" soa agressivo."
+            },
+            {
+              "prompt": "Combinar a mensagem antes de enviar: \"Let's ___ on the message first.\"",
+              "options": [
+                { "text": "align", "correct": true },
+                { "text": "combine" },
+                { "text": "accord" }
+              ],
+              "why": "\"To align on something\" — chegar a um acordo antes de comunicar."
+            },
+            {
+              "prompt": "Pedir ajuda para destravar: \"Can you help ___ the approval?\"",
+              "options": [
+                { "text": "unblock", "correct": true },
+                { "text": "unlock" },
+                { "text": "release" }
+              ],
+              "why": "Unblock é o verbo para tirar o impedimento; unlock é destrancar (uma porta, um arquivo)."
+            }
+          ],
+          "explanation": "Quatro verbos que aparecem dezenas de vezes por semana num time global."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Destravando com outra área",
+          "badge": "Conversa",
+          "situation": "Você precisa de um dado do time de finanças hoje. A pessoa está claramente sobrecarregada.",
+          "turns": [
+            {
+              "who": "Finance colleague",
+              "them": "Hi Fernanda — I saw your message but honestly I'm buried this week.",
+              "options": [
+                { "text": "I understand. It's one number: the Q2 subcontractor actuals. If you can point me to the report, I'll pull it myself.", "correct": true, "why": "Reduz o pedido ao mínimo e oferece fazer o trabalho. Quase impossível dizer não." },
+                { "text": "Everyone is busy, but I need this today.", "why": "Confronto direto — funciona uma vez e estraga a relação para o resto do ano." },
+                { "text": "No worries, whenever you can.", "why": "Você acabou de abrir mão do prazo. E precisa do dado hoje." }
+              ]
+            },
+            {
+              "who": "Finance colleague",
+              "them": "It's in the SAP extract, but you won't have access to that folder.",
+              "options": [
+                { "text": "Then I'll wait for you.", "why": "Volta ao ponto de partida sem resolver nada." },
+                { "text": "Could you request access for me? Then this won't come back to you every month.", "correct": true, "why": "Resolve hoje e resolve o futuro. Argumento que finanças adora ouvir." },
+                { "text": "That's a problem with your systems.", "why": "Culpar o sistema da outra área não te dá o dado." }
+              ]
+            },
+            {
+              "who": "Finance colleague",
+              "them": "Fine, I'll raise the access request. It takes about two days though.",
+              "options": [
+                { "text": "Perfect, thanks — and just for this week, could you send me that one figure so I don't miss Friday?", "correct": true, "why": "Aceita a solução de longo prazo e resolve a urgência de hoje. Ambas, educadamente." },
+                { "text": "Two days is too slow.", "why": "Reclamar do prazo de um favor que acabou de ser concedido." },
+                { "text": "Great, I'll wait then.", "why": "E perde a sexta-feira." }
+              ]
+            }
+          ],
+          "explanation": "Reduza o pedido, ofereça fazer você mesma, resolva o hoje e o depois."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre comunicação interna em inglês.",
+          "items": [
+            { "text": "\"When you have a moment\" is a polite way to set a deadline.", "answer": false, "why": "Não é prazo nenhum — é a forma mais educada de nunca receber a resposta." },
+            { "text": "A \"heads-up\" means the person needs to act right now.", "answer": false, "why": "É justamente o contrário: um aviso para que ninguém seja surpreendido depois." },
+            { "text": "Naming the person in the request increases the response rate.", "answer": true, "why": "\"Can someone…\" não é ninguém. Nome próprio cria responsável." },
+            { "text": "Offering to do the work yourself makes a request harder to refuse.", "answer": true, "why": "Reduz o custo do sim — a técnica mais eficaz de todas." }
+          ],
+          "explanation": "Educação em inglês não é vagueza. É clareza com boas maneiras."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can write an internal request with context, ask and date.", "pt": "Escrevo um pedido interno com contexto, pedido e data." },
+            { "en": "I avoid \"when you have a moment\" when I actually need a date.", "pt": "Evito \"when you have a moment\" quando preciso mesmo de uma data." },
+            { "en": "I can use loop in, chase, align and unblock naturally.", "pt": "Uso loop in, chase, align e unblock com naturalidade." },
+            { "en": "I can reduce a request to make it easy to say yes.", "pt": "Sei reduzir um pedido para facilitar o sim." }
+          ],
+          "doneMessage": "cliente interno resolvido. Agora, o cliente externo.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O código não escrito do e-mail interno",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"When you have a moment\" is the politest way to say \"never\" in corporate English.", "pt": "\"When you have a moment\" é a forma mais educada de dizer \"nunca\" no inglês corporativo." },
+          { "en": "\"Just a heads-up\" tells the reader: no action needed from you — just don't be surprised later.", "pt": "\"Just a heads-up\" avisa o leitor: você não precisa fazer nada — só não se surpreenda depois." },
+          { "en": "\"Looping in\" someone in copy is a soft escalation. Everyone knows it, nobody says it.", "pt": "Colocar alguém em cópia é uma escalada silenciosa. Todo mundo sabe, ninguém comenta." },
+          { "en": "\"Could you\" gets more yeses than \"can you\" — it sounds like a request, not an instruction.", "pt": "\"Could you\" recebe mais sins que \"can you\" — soa como pedido, não como ordem." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now get things moving inside the company — in English, without friction.",
+        "pt": "Agora você faz as coisas andarem dentro da empresa — em inglês, sem atrito."
+      }
+    },
+    {
+      "title": "Talking to the Customer",
+      "focus": "Tom, clareza e confiança com o cliente externo",
+      "character": "uk-female",
+      "objective": "Comunicar-se com o cliente externo com o tom certo: profissional, caloroso e sem promessas que você não pode cumprir.",
+      "intro": [
+        "With an external customer, every sentence carries the company's name. The tone shifts: warmer at the edges, firmer in the middle.",
+        "The core skill is saying what is true — including what you can't do — while keeping the relationship intact.",
+        "In English, that's done with hedging, not with vagueness. There's a difference, and this lesson is about it."
+      ],
+      "introPt": [
+        "Com o cliente externo, cada frase carrega o nome da empresa. O tom muda: mais caloroso nas bordas, mais firme no meio.",
+        "A habilidade central é dizer o que é verdade — inclusive o que você não pode fazer — mantendo a relação intacta.",
+        "Em inglês, isso se faz com <em>hedging</em> (amortecimento), não com vagueza. Há diferença — e esta lição é sobre ela."
+      ],
+      "vocab": [
+        { "en": "to touch base", "pt": "dar um alô, retomar contato", "example": "I just wanted to touch base on the schedule." },
+        { "en": "at this stage", "pt": "neste momento", "example": "At this stage we can't confirm the date." },
+        { "en": "to come back to you", "pt": "retornar com a resposta", "example": "Let me check and come back to you tomorrow." },
+        { "en": "to set expectations", "pt": "alinhar expectativas", "example": "I'd rather set expectations now than disappoint later." },
+        { "en": "I appreciate that…", "pt": "eu entendo que…", "example": "I appreciate that this is frustrating." },
+        { "en": "to look into", "pt": "investigar", "example": "I'll look into it and report back." },
+        { "en": "on our side / on your side", "pt": "do nosso / do seu lado", "example": "The delay is on our side." },
+        { "en": "to keep someone posted", "pt": "manter alguém informado", "example": "I'll keep you posted through the week." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Amortecer ou enrolar?",
+          "instruction": "Uma coisa é suavizar; outra é fugir da resposta. Classifique cada frase.",
+          "categories": [
+            { "id": "hedge", "name": "Amortece (bom)", "short": "Amortece" },
+            { "id": "vague", "name": "Enrola (ruim)", "short": "Enrola" }
+          ],
+          "items": [
+            { "text": "At this stage we can't confirm the date — I'll come back to you on Thursday.", "cat": "hedge" },
+            { "text": "We'll see what we can do.", "cat": "vague" },
+            { "text": "I appreciate that this is frustrating. Here's where we actually are.", "cat": "hedge" },
+            { "text": "It should be fine, probably.", "cat": "vague" },
+            { "text": "I'd rather set expectations now: September is realistic, August is not.", "cat": "hedge" },
+            { "text": "Let me get back to you at some point.", "cat": "vague" }
+          ],
+          "explanation": "Amortecer é dar a notícia com cuidado. Enrolar é não dar notícia nenhuma."
+        },
+        {
+          "type": "readingTask",
+          "title": "Duas respostas ao mesmo cliente",
+          "badge": "Leia e responda",
+          "heading": "The customer asks: \"Will the equipment arrive in August?\"",
+          "instruction": "Leia as duas respostas e compare.",
+          "passage": [
+            "Reply 1: \"We'll do everything we can to make August happen. The team is fully committed and we're pushing the supplier hard. I'm confident it will work out.\"",
+            "Reply 2: \"At this stage, August is not realistic — the lead time on the panel is sixteen weeks from a clean PO, which puts us in early September. I'd rather tell you now than in August. If the September date is a problem for your campaign, let's look at the sequence together.\""
+          ],
+          "questions": [
+            {
+              "prompt": "Which reply is more professional?",
+              "options": [
+                { "text": "Reply 1 — it's positive and shows commitment." },
+                { "text": "Reply 2 — it gives a date, a reason and an offer.", "correct": true },
+                { "text": "They're equivalent." }
+              ],
+              "why": "Reply 1 é entusiasmo sem informação. Em agosto, vira quebra de confiança."
+            },
+            {
+              "prompt": "What makes Reply 2 respectful rather than blunt?",
+              "options": [
+                { "text": "\"I'd rather tell you now\" plus the offer to work on the sequence together.", "correct": true },
+                { "text": "The technical detail about lead time." },
+                { "text": "The phrase \"at this stage\"." }
+              ],
+              "why": "Má notícia + motivo + oferta de solução conjunta. É a estrutura que preserva a relação."
+            },
+            {
+              "prompt": "What's the real risk of Reply 1?",
+              "options": [
+                { "text": "It sounds unfriendly." },
+                { "text": "It buys three weeks of comfort and loses the customer's trust in August.", "correct": true },
+                { "text": "It's grammatically wrong." }
+              ],
+              "why": "O custo de uma boa notícia falsa é sempre pago depois, com juros."
+            }
+          ],
+          "explanation": "O cliente perdoa uma data ruim. Não perdoa ser surpreendido."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a mensagem ao cliente",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a expressão certa para cada lacuna.",
+          "text": "Hi Priya, I wanted to ___ base on the delivery schedule. ___ this stage, August is not realistic — the lead time puts us in early September. I ___ that this is not what you were hoping for. I'd rather set ___ now than disappoint you later. I'll ___ you posted every Friday until the panel ships.",
+          "gaps": [
+            { "options": ["touch", "make", "get"], "answer": "touch", "why": "\"To touch base\" — expressão fixa." },
+            { "options": ["At", "In", "On"], "answer": "At", "why": "At this stage — neste momento." },
+            { "options": ["appreciate", "regret", "consider"], "answer": "appreciate", "why": "\"I appreciate that…\" = eu entendo que… É empatia, não agradecimento." },
+            { "options": ["expectations", "expectatives", "hopes"], "answer": "expectations", "why": "To set expectations — alinhar expectativas." },
+            { "options": ["keep", "hold", "maintain"], "answer": "keep", "why": "To keep someone posted — manter informado." }
+          ],
+          "explanation": "Essa mensagem inteira cabe em cinco linhas e resolve uma má notícia."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Uma palavra errada por frase — todas são erros comuns com clientes.",
+          "items": [
+            { "sentence": "I will revert to you tomorrow with the confirmed date.", "wrong": "revert", "fix": "come back", "why": "\"Revert\" significa voltar a um estado anterior. O correto é \"come back to you\"." },
+            { "sentence": "We will inform you as soon as we have news about it.", "wrong": "inform", "fix": "let you know", "why": "\"Inform\" soa burocrático com cliente. \"Let you know\" é o natural." },
+            { "sentence": "I appreciate for your patience while we sort this out.", "wrong": "for", "fix": "(nada)", "why": "Appreciate não leva preposição: \"I appreciate your patience\"." },
+            { "sentence": "Please be informed that the shipment has been dispatched.", "wrong": "informed", "fix": "(reescrever: \"The shipment has been dispatched.\")", "why": "\"Please be informed\" é indiano-britânico antigo e soa distante. Vá direto ao ponto." }
+          ],
+          "explanation": "\"Revert\" e \"please be informed\" são os dois vícios mais comuns em e-mail para cliente."
+        },
+        {
+          "type": "flowChoice",
+          "title": "O cliente está irritado",
+          "badge": "Conversa",
+          "situation": "O cliente descobriu, por outro canal, que a entrega vai atrasar. Ele liga.",
+          "turns": [
+            {
+              "who": "Customer",
+              "them": "Fernanda, I had to hear about this delay from your logistics team. Why wasn't I told?",
+              "options": [
+                { "text": "You're right, and I'm sorry — you should have heard it from me first. Let me give you the full picture now.", "correct": true, "why": "Reconhecer sem se defender é o único caminho quando a crítica é justa." },
+                { "text": "I was going to call you today.", "why": "Pode até ser verdade, mas soa como desculpa e não resolve nada." },
+                { "text": "Logistics should have coordinated with me.", "why": "Culpar internamente na frente do cliente destrói a confiança na empresa inteira." }
+              ]
+            },
+            {
+              "who": "Customer",
+              "them": "Fine. So what's the real date?",
+              "options": [
+                { "text": "We're still working on it.", "why": "Depois de uma falha de comunicação, vagueza é gasolina no fogo." },
+                { "text": "Early September — 8 September if the panel ships on the 30th. I'll confirm on the 30th either way, whatever the answer is.", "correct": true, "why": "Data, condição e compromisso de retorno com dia marcado." },
+                { "text": "Probably September, maybe October.", "why": "Duas datas sem critério é o mesmo que nenhuma." }
+              ]
+            },
+            {
+              "who": "Customer",
+              "them": "And how do I know this won't happen again?",
+              "options": [
+                { "text": "I'll do my best.", "why": "\"Best\" não é um processo. Ele está pedindo um mecanismo." },
+                { "text": "From now on you'll get a short update from me every Friday, even when there's nothing new. If something changes mid-week, you hear it from me the same day.", "correct": true, "why": "Um mecanismo concreto e verificável. É isso que reconstrói confiança." },
+                { "text": "It was an exception, it won't happen again.", "why": "Promessa que você não controla sozinha." }
+              ]
+            }
+          ],
+          "explanation": "Reconhecer → dar a data com condição → oferecer um mecanismo. Nessa ordem."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can give bad news to a customer with a reason and an offer.", "pt": "Dou uma má notícia ao cliente com motivo e oferta de solução." },
+            { "en": "I can hedge without being vague.", "pt": "Sei amortecer sem ficar vaga." },
+            { "en": "I avoid \"revert\" and \"please be informed\".", "pt": "Evito \"revert\" e \"please be informed\"." },
+            { "en": "I can acknowledge a fair criticism without blaming colleagues.", "pt": "Reconheço uma crítica justa sem culpar colegas." }
+          ],
+          "doneMessage": "cliente externo dominado. Agora, o assunto mais difícil: atrasos e recusas.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O tom certo com cliente estrangeiro",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"I appreciate that…\" doesn't mean thank you — it means \"I understand how this looks from your side\".", "pt": "\"I appreciate that…\" não é agradecimento — é \"entendo como isso parece do seu lado\"." },
+          { "en": "\"Revert\" is one of the most common false friends in business English. Never use it for \"reply\".", "pt": "\"Revert\" é um dos falsos amigos mais comuns do inglês de negócios. Nunca use no lugar de \"responder\"." },
+          { "en": "British customers hear \"quite good\" as lukewarm; Americans hear it as positive. When in doubt, use a number.", "pt": "Clientes britânicos ouvem \"quite good\" como morno; americanos, como positivo. Na dúvida, use um número." },
+          { "en": "Offering a mechanism (\"an update every Friday\") rebuilds trust faster than any apology.", "pt": "Oferecer um mecanismo (\"um update toda sexta\") reconstrói confiança mais rápido que qualquer desculpa." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now hold a difficult customer conversation in English and come out with the relationship stronger.",
+        "pt": "Agora você conduz uma conversa difícil com cliente em inglês e sai com a relação mais forte."
+      }
+    },
+    {
+      "title": "Delays, Refusals and Bad News",
+      "focus": "Dizer não, avisar de atraso e recusar sem quebrar a relação",
+      "character": "us-male",
+      "objective": "Comunicar uma recusa ou um atraso em inglês com estrutura, empatia e alternativa.",
+      "intro": [
+        "Sooner or later you have to say: <em>it's late</em>, <em>we can't</em>, or <em>not at that price</em>.",
+        "English has a reliable shape for this: <strong>acknowledge</strong> → <strong>state the fact</strong> → <strong>give the reason</strong> → <strong>offer the alternative</strong>.",
+        "Skip the acknowledgement and you sound cold. Skip the alternative and you sound like a wall."
+      ],
+      "introPt": [
+        "Mais cedo ou mais tarde você precisa dizer: <em>atrasou</em>, <em>não podemos</em>, ou <em>não por esse preço</em>.",
+        "O inglês tem uma forma confiável para isso: <strong>reconhecer</strong> → <strong>dizer o fato</strong> → <strong>dar o motivo</strong> → <strong>oferecer a alternativa</strong>.",
+        "Sem o reconhecimento, você soa fria. Sem a alternativa, soa como um muro."
+      ],
+      "vocab": [
+        { "en": "unfortunately", "pt": "infelizmente", "example": "Unfortunately the date has moved." },
+        { "en": "I'm afraid…", "pt": "receio que…", "example": "I'm afraid we can't meet that price." },
+        { "en": "what I can do is…", "pt": "o que eu posso fazer é…", "example": "What I can do is prioritise the first unit." },
+        { "en": "to push back", "pt": "atrasar / empurrar para depois", "example": "The delivery has been pushed back two weeks." },
+        { "en": "beyond our control", "pt": "fora do nosso controle", "example": "The port strike was beyond our control." },
+        { "en": "to make it up to someone", "pt": "compensar alguém", "example": "We'll make it up to you on the next campaign." },
+        { "en": "realistic", "pt": "realista", "example": "September is realistic; August is not." },
+        { "en": "to manage expectations", "pt": "administrar expectativas", "example": "Let me manage expectations early." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a má notícia na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas frases na ordem que funciona em inglês.",
+          "items": [
+            "I know the August date matters for your campaign.",
+            "Unfortunately, the equipment will now arrive in early September.",
+            "The lead time on the control panel is sixteen weeks, and the clean PO only landed in May.",
+            "What I can do is prioritise the first unit so you can start commissioning on the 8th.",
+            "I'll confirm the shipping date on the 30th, either way."
+          ],
+          "explanation": "Reconhecer → fato → motivo → alternativa → compromisso. Cinco frases, nessa ordem."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que NÃO fazer ao dar uma má notícia",
+          "instruction": "Marque tudo o que enfraquece a mensagem.",
+          "prompt": "You're telling a customer the delivery has slipped.",
+          "options": [
+            { "text": "Burying the news in the fourth paragraph.", "correct": true },
+            { "text": "Blaming a named colleague.", "correct": true },
+            { "text": "Giving the new date up front.", "correct": false },
+            { "text": "Apologising five times.", "correct": true },
+            { "text": "Offering what you CAN do.", "correct": false },
+            { "text": "Saying \"we'll see\" instead of a date.", "correct": true }
+          ],
+          "explanation": "Uma desculpa basta. O que o cliente quer é a data nova e o que você pode fazer."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Como recusar sem fechar a porta",
+          "badge": "A ou B",
+          "instruction": "Escolha a recusa que mantém a relação.",
+          "items": [
+            {
+              "prompt": "O cliente pede 15% de desconto.",
+              "a": "I'm afraid 15% isn't something I can do on this scope. What I can do is 5% if we move to a three-year term — would that work?",
+              "b": "15% is impossible.",
+              "correct": "a",
+              "why": "Recusa + contraoferta + pergunta. A negociação continua viva."
+            },
+            {
+              "prompt": "Pedem um serviço que vocês não fazem.",
+              "a": "We don't do that.",
+              "b": "That's outside what we deliver, but I can put you in touch with a partner who does it well. Would that help?",
+              "correct": "b",
+              "why": "Um não útil vale mais que um sim impossível — e o cliente lembra disso."
+            },
+            {
+              "prompt": "Pedem uma data que você não consegue cumprir.",
+              "a": "August is not realistic. September is. I'd rather commit to a date I can hold.",
+              "b": "We'll try for August and see how it goes.",
+              "correct": "a",
+              "why": "\"I'd rather commit to a date I can hold\" transforma uma recusa em sinal de confiabilidade."
+            }
+          ],
+          "explanation": "Todo não em inglês vem acompanhado de um \"what I can do is…\"."
+        },
+        {
+          "type": "listenChoose",
+          "title": "Ouça e leia nas entrelinhas",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque no áudio e escolha o que a pessoa realmente está dizendo.",
+          "items": [
+            {
+              "audio": "I'm afraid that's not something we can accommodate at this stage, but let's see what else might work.",
+              "options": [
+                { "text": "É não, mas a conversa segue aberta.", "correct": true },
+                { "text": "É sim, com condições." },
+                { "text": "É um talvez, ainda em análise." }
+              ],
+              "why": "\"I'm afraid… not something we can accommodate\" é um não firme. \"Let's see what else\" mantém a porta aberta."
+            },
+            {
+              "audio": "That's an interesting idea — leave it with me and I'll come back to you next week.",
+              "options": [
+                { "text": "Ele gostou e vai implementar." },
+                { "text": "Ele está ganhando tempo; pode ser não.", "correct": true },
+                { "text": "Ele recusou de forma clara." }
+              ],
+              "why": "\"Interesting\" + \"leave it with me\" é, com frequência, um não educado no inglês britânico."
+            },
+            {
+              "audio": "Realistically, we're looking at early September rather than August.",
+              "options": [
+                { "text": "É setembro. Agosto está descartado.", "correct": true },
+                { "text": "Ainda pode ser agosto." },
+                { "text": "A data não está definida." }
+              ],
+              "why": "\"Realistically\" é a palavra que anuncia a data verdadeira."
+            }
+          ],
+          "explanation": "Em inglês, o não raramente é a palavra \"no\". Aprender a ouvi-lo é metade do trabalho."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a recusa elegante",
+          "instruction": "Clique nos blocos na ordem certa. Alguns sobram.",
+          "items": [
+            { "hint": "Recusar com empatia.", "answer": "I am afraid that is not something we can do at this stage", "extra": ["afraid of", "in"] },
+            { "hint": "Oferecer o que você pode.", "answer": "What I can do is prioritise the first unit for you", "extra": ["What can I", "to"] },
+            { "hint": "Comprometer-se com um retorno.", "answer": "I will confirm the shipping date on the thirtieth either way", "extra": ["confirming", "in"] }
+          ],
+          "explanation": "\"What I can do is…\" é a frase mais útil desta lição inteira."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can give bad news in the right order: acknowledge, fact, reason, alternative.", "pt": "Dou má notícia na ordem certa: reconhecer, fato, motivo, alternativa." },
+            { "en": "I can refuse using \"I'm afraid\" and \"what I can do is\".", "pt": "Recuso usando \"I'm afraid\" e \"what I can do is\"." },
+            { "en": "I can hear a polite no in English.", "pt": "Sei reconhecer um não educado em inglês." },
+            { "en": "I apologise once, then move to the solution.", "pt": "Peço desculpa uma vez e sigo para a solução." }
+          ],
+          "doneMessage": "más notícias dominadas. Falta o follow-up que mantém tudo vivo.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "Como se diz não em inglês",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"I'm afraid\" has nothing to do with fear — it's the standard softener before bad news.", "pt": "\"I'm afraid\" não tem nada a ver com medo — é o amortecedor padrão antes de uma má notícia." },
+          { "en": "\"That's interesting\" from a British colleague often means \"I disagree but I'm being polite\".", "pt": "\"That's interesting\", vindo de um britânico, muitas vezes significa \"discordo, mas estou sendo educado\"." },
+          { "en": "\"Realistically\" is the word that introduces the true date, after everyone has stopped hoping.", "pt": "\"Realistically\" é a palavra que apresenta a data verdadeira, depois que todos pararam de torcer." },
+          { "en": "One apology is professional. Three apologies transfer your discomfort to the customer.", "pt": "Um pedido de desculpas é profissional. Três transferem o seu desconforto para o cliente." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now say no in English and keep the customer.",
+        "pt": "Agora você diz não em inglês e mantém o cliente."
+      }
+    },
+    {
+      "title": "Follow-up That Works",
+      "focus": "Cobrar, retomar e fechar assuntos sem irritar ninguém",
+      "character": "us-female",
+      "objective": "Escrever follow-ups em inglês que geram resposta — inclusive o terceiro, quando os dois primeiros foram ignorados.",
+      "intro": [
+        "Half of business communication is the second message: the one you send because nobody answered the first.",
+        "A good follow-up doesn't complain and doesn't apologise. It repeats the ask, makes it smaller, and gives a new date.",
+        "And after three attempts, English has a specific, respectable move: the closing loop."
+      ],
+      "introPt": [
+        "Metade da comunicação de negócios é a segunda mensagem: aquela que você manda porque ninguém respondeu a primeira.",
+        "Um bom follow-up não reclama nem se desculpa. Ele repete o pedido, torna-o menor e dá uma data nova.",
+        "E, depois de três tentativas, o inglês tem um movimento específico e respeitável: o <em>closing loop</em>."
+      ],
+      "vocab": [
+        { "en": "to follow up", "pt": "dar seguimento", "example": "Just following up on my note from Tuesday." },
+        { "en": "gentle reminder", "pt": "lembrete gentil", "example": "A gentle reminder about the signature." },
+        { "en": "to circle back", "pt": "retomar um assunto", "example": "Circling back on the panel question." },
+        { "en": "any update on…?", "pt": "alguma novidade sobre…?", "example": "Any update on the customs clearance?" },
+        { "en": "to close the loop", "pt": "encerrar o assunto", "example": "Just closing the loop on this one." },
+        { "en": "for visibility", "pt": "para conhecimento", "example": "Copying Marcus for visibility." },
+        { "en": "no action needed", "pt": "não é preciso fazer nada", "example": "FYI only — no action needed." },
+        { "en": "to park something", "pt": "deixar em espera", "example": "Let's park it until the budget is approved." }
+      ],
+      "exercises": [
+        {
+          "type": "emailTriage",
+          "title": "Terceiro follow-up sem resposta",
+          "badge": "Caixa de entrada",
+          "instruction": "Você já mandou duas mensagens. Leia a terceira que estava para enviar e avalie.",
+          "email": {
+            "channel": "Outlook",
+            "from": "Rascunho seu · não enviado",
+            "subject": "RE: RE: Panel replacement — still waiting",
+            "body": "Hi Marcus,\n\nThis is my third message about the panel and I still haven't had any answer. I understand everyone is busy, but this is holding up the whole project and it's becoming very frustrating.\n\nCan you PLEASE let me know today?\n\nFernanda"
+          },
+          "questions": [
+            {
+              "prompt": "What's the main problem with this draft?",
+              "options": [
+                { "text": "It counts the attempts and shows frustration instead of making the ask easy.", "correct": true },
+                { "text": "It's too short." },
+                { "text": "It doesn't say who it's for." }
+              ],
+              "why": "Contar tentativas é sobre você. O leitor só quer saber o que fazer agora."
+            },
+            {
+              "prompt": "Which rewrite works better?",
+              "options": [
+                { "text": "\"Marcus — one question, one line: has the replacement panel been ordered? If it's blocked on your side, tell me what's missing and I'll chase it. If I don't hear back by Thursday, I'll assume it's not ordered and raise it with Ana.\"", "correct": true },
+                { "text": "\"Sorry to bother you again, whenever you have a moment.\"" },
+                { "text": "\"Please respond urgently, this is critical.\"" }
+              ],
+              "why": "Pergunta única, oferta de ajuda, consequência clara e prazo. Sem drama."
+            },
+            {
+              "prompt": "Why does \"I'll assume it's not ordered and raise it with Ana\" work?",
+              "options": [
+                { "text": "It's a threat and puts pressure on him." },
+                { "text": "It gives a consequence that happens by default — silence is no longer neutral.", "correct": true },
+                { "text": "It removes his responsibility." }
+              ],
+              "why": "Enquanto o silêncio for gratuito, ele continua. Dê ao silêncio um significado."
+            }
+          ],
+          "explanation": "Follow-up eficaz: uma pergunta, uma oferta, uma consequência, uma data."
+        },
+        {
+          "type": "orderList",
+          "title": "A escada do follow-up",
+          "badge": "Coloque em ordem",
+          "instruction": "Coloque as quatro mensagens na ordem crescente de firmeza.",
+          "scale": ["mais leve", "mais firme"],
+          "items": [
+            "Just a gentle reminder about the signature — no rush.",
+            "Circling back on this one. Any update on the panel?",
+            "Marcus — one question: has the panel been ordered? Happy to chase it myself if it's stuck.",
+            "If I don't hear back by Thursday, I'll assume it isn't ordered and raise it with Ana."
+          ],
+          "explanation": "Escale devagar. Quem começa firme não tem para onde subir."
+        },
+        {
+          "type": "serialChoice",
+          "title": "Qual expressão usar?",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a expressão adequada a cada situação.",
+          "items": [
+            {
+              "prompt": "Você está mandando uma informação e ninguém precisa fazer nada.",
+              "options": [
+                { "text": "FYI — no action needed.", "correct": true },
+                { "text": "Please advise." },
+                { "text": "Urgent: please respond." }
+              ],
+              "why": "Avisar que não precisa de ação é uma cortesia enorme na caixa de entrada alheia."
+            },
+            {
+              "prompt": "O assunto acabou e você quer encerrar formalmente.",
+              "options": [
+                { "text": "Just closing the loop: the panel shipped on the 30th. Thanks all.", "correct": true },
+                { "text": "Ok then." },
+                { "text": "Any update?" }
+              ],
+              "why": "Fechar o loop encerra a thread e mostra organização. Todo mundo agradece."
+            },
+            {
+              "prompt": "O tema precisa esperar o orçamento do ano que vem.",
+              "options": [
+                { "text": "Let's park this until the budget is approved and revisit in January.", "correct": true },
+                { "text": "Let's forget about this." },
+                { "text": "This is cancelled." }
+              ],
+              "why": "\"Park\" preserva a ideia sem manter a cobrança viva."
+            }
+          ],
+          "explanation": "FYI, closing the loop e park: três expressões que organizam qualquer caixa de entrada."
+        },
+        {
+          "type": "highlightPick",
+          "title": "O que faz esta mensagem funcionar?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que criam uma CONSEQUÊNCIA ou um PRAZO.",
+          "instruction": "Toque nos elementos que fazem a mensagem produzir resposta.",
+          "text": "Marcus one question has the panel been ordered ? Happy to chase it myself if it is stuck . If I do not hear back by Thursday I will raise it with Ana .",
+          "targets": ["Thursday", "raise", "Ana"],
+          "explanation": "Prazo + o que acontece depois + para quem vai. É isso que transforma um pedido em resposta."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre follow-up em inglês corporativo.",
+          "items": [
+            { "text": "Counting how many times you've written makes the reader act faster.", "answer": false, "why": "Faz o leitor se sentir acusado — e adiar ainda mais." },
+            { "text": "Offering to do the chasing yourself increases the chance of a reply.", "answer": true, "why": "Reduz o custo do sim. Sempre funciona." },
+            { "text": "\"No action needed\" is a waste of words.", "answer": false, "why": "É uma das frases mais gentis do inglês corporativo — economiza tempo de quem lê." },
+            { "text": "A follow-up should repeat the whole history of the topic.", "answer": false, "why": "Uma pergunta, um prazo. O histórico está na thread." }
+          ],
+          "explanation": "Follow-up curto, específico e com consequência. Nada mais."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar o tópico Customer communication",
+          "items": [
+            { "en": "I can write a follow-up without sounding annoyed.", "pt": "Escrevo um follow-up sem soar irritada." },
+            { "en": "I escalate gradually, message by message.", "pt": "Escalo gradualmente, mensagem a mensagem." },
+            { "en": "I can give silence a consequence.", "pt": "Sei dar uma consequência ao silêncio." },
+            { "en": "I use FYI, closing the loop and park correctly.", "pt": "Uso FYI, closing the loop e park corretamente." },
+            { "en": "Looking at the topic: I communicate with internal and external customers with confidence.", "pt": "Olhando o tópico: me comunico com clientes internos e externos com confiança." }
+          ],
+          "doneMessage": "tópico de comunicação concluído. Próximo: negociação.",
+          "openMessage": "o que ficou em branco vira pauta da próxima aula — leve para o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "A psicologia do follow-up",
+        "intro": "Ouça e revele.",
+        "cards": [
+          { "en": "\"Gentle reminder\" is so common it has almost lost its meaning — use it once, then get specific.", "pt": "\"Gentle reminder\" é tão comum que quase perdeu o sentido — use uma vez, depois seja específica." },
+          { "en": "Silence is free until you give it a consequence. That's the whole mechanism.", "pt": "O silêncio é gratuito até você dar uma consequência a ele. É esse o mecanismo inteiro." },
+          { "en": "\"Closing the loop\" is a small gift to everyone on the thread: it tells them to stop thinking about it.", "pt": "\"Closing the loop\" é um presente para todos na thread: avisa que podem parar de pensar naquilo." },
+          { "en": "\"Happy to chase it myself\" turns a demand into an offer — and offers get answered.", "pt": "\"Happy to chase it myself\" transforma uma cobrança em oferta — e ofertas são respondidas." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now get an answer out of anyone, in English, without burning a bridge.",
+        "pt": "Agora você consegue resposta de qualquer pessoa, em inglês, sem queimar nenhuma ponte."
+      }
+    }
+  ]
+}
