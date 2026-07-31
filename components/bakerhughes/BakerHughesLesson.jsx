@@ -54,6 +54,11 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
   const doneCount = gradeableIdx.filter(i => doneSet[i]).length;
   const totalGradeable = gradeableIdx.length;
   const allDone = totalGradeable > 0 && doneCount >= totalGradeable;
+  // Quais exercícios ainda faltam corrigir — o material é self-paced, então o
+  // aluno precisa saber NOMINALMENTE o que ficou para trás, não só o número.
+  const pending = gradeableIdx
+    .filter(i => !doneSet[i])
+    .map(i => ({ i, title: exercises[i].title || EX_LABEL[exercises[i].type] || 'Exercício' }));
 
   // Ponto de retomada: a home lê isto para dizer "continue de onde parou".
   // Só no navegador de quem estuda — nada sai daqui.
@@ -76,6 +81,22 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
     if (allDone) persistDone();
   }, [allDone, persistDone]);
   const lessonComplete = allDone || savedDone;
+
+  // Um exercício, no formato certo para o seu `type`. Extraído do JSX só para
+  // que cada bloco possa ser embrulhado numa div com id — nada mudou aqui.
+  function renderExercise(ex, i) {
+    if (RACIONAL_TYPES.includes(ex.type)) {
+      return <Exercise exercise={ex} levelId="starter" onResult={() => markDone(i)} />;
+    }
+    if (ex.type === 'wordBank') return <WordBank ex={ex} c={c} onChecked={() => markDone(i)} />;
+    if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill ex={ex} c={c} onChecked={() => markDone(i)} />;
+    if (ex.type === 'readAloud') return <ReadAloud ex={ex} c={c} voiceType={voiceType} />;
+    if (ex.type === 'makeItYourOwn') return <MakeItYourOwn ex={ex} c={c} voiceType={voiceType} />;
+    if (BH_EXTRA_TYPES.includes(ex.type)) {
+      return <BhExercise ex={ex} c={c} voiceType={voiceType} seed={(l.num || 1) * 31 + i} onChecked={() => markDone(i)} />;
+    }
+    return null;
+  }
 
   return (
     <div style={{ minHeight: '100vh', background: offWhite, fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", color: text, WebkitFontSmoothing: 'antialiased' }}>
@@ -158,18 +179,13 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
           <>
             <PartTitle accent={accent} navy={navy}>{l.practiceLabel || 'Practice · pratique sozinho'}</PartTitle>
             {exercises.map((ex, i) => {
-              if (RACIONAL_TYPES.includes(ex.type)) {
-                return <Exercise key={i} exercise={ex} levelId="starter" onResult={() => markDone(i)} />;
-              }
-              if (ex.type === 'wordBank') return <WordBank key={i} ex={ex} c={c} onChecked={() => markDone(i)} />;
-              if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill key={i} ex={ex} c={c} onChecked={() => markDone(i)} />;
-              if (ex.type === 'readAloud') return <ReadAloud key={i} ex={ex} c={c} voiceType={voiceType} />;
-              if (ex.type === 'makeItYourOwn') return <MakeItYourOwn key={i} ex={ex} c={c} voiceType={voiceType} />;
-              if (BH_EXTRA_TYPES.includes(ex.type)) {
-                return <BhExercise key={i} ex={ex} c={c} voiceType={voiceType} seed={(l.num || 1) * 31 + i} onChecked={() => markDone(i)} />;
-              }
-              return null;
+              // O bloco vai dentro de uma <div id="bh-ex-N"> só para o rastreador
+              // abaixo conseguir levar o aluno até o exercício que faltou.
+              const node = renderExercise(ex, i);
+              if (!node) return null;
+              return <div key={i} id={`bh-ex-${i}`} style={{ scrollMarginTop: 90 }}>{node}</div>;
             })}
+            <PracticeTracker pending={pending} total={totalGradeable} done={doneCount} c={c} />
           </>
         )}
 
@@ -234,11 +250,10 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
             <p style={{ fontSize: 14.5, color: 'rgba(255,255,255,0.72)', lineHeight: 1.5, margin: 0 }}>{l.celebrate.pt}</p>
           </div>
         )}
-        {l.celebrate && !lessonComplete && totalGradeable > 0 && (
-          <div style={{ margin: '30px 0 8px', padding: '18px 22px', borderRadius: 14, background: '#fff', border: `1px dashed ${grayLight}`, color: gray, fontSize: 14, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
-            <span style={{ fontWeight: 800, color: navy }}>{doneCount}/{totalGradeable}</span>
-            <span>Complete os exercícios acima (basta corrigir cada um) para fechar esta lição.</span>
-          </div>
+        {/* Lembrete de uma linha para quem desceu até o fim da página sem
+            perceber que ficou exercício por corrigir lá em cima. */}
+        {!lessonComplete && totalGradeable > 0 && (
+          <PracticeTracker pending={pending} total={totalGradeable} done={doneCount} c={c} compact />
         )}
 
         {/* Nav */}
@@ -247,6 +262,110 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
           <Link href={backHref || `/${clientId}`} style={{ color: gray, textDecoration: 'none', fontSize: 14 }}>Todas as lições</Link>
           {nextNum ? <BhBtn href={`/${clientId}/lesson/${nextNum}`} c={c}>Próxima lição →</BhBtn> : <span />}
         </div>
+      </div>
+    </div>
+  );
+}
+
+/* Nome amigável do exercício quando o JSON não traz `title`. */
+const EX_LABEL = {
+  wordBank: 'Banco de palavras',
+  verbFill: 'Complete com o verbo',
+  quickDrill: 'Quick drill',
+  matching: 'Associação',
+  multipleChoice: 'Múltipla escolha',
+  fillGap: 'Complete a lacuna',
+  reorder: 'Coloque em ordem',
+  writing: 'Escrita',
+  dictation: 'Ditado',
+  multiSelect: 'Marque todas',
+  trueFalse: 'Verdadeiro ou falso',
+  categorize: 'Classifique',
+  oddOneOut: 'Qual não pertence',
+  orderList: 'Coloque em ordem',
+  errorSpot: 'Ache o erro',
+  highlightPick: 'Destaque',
+  dropdownGap: 'Complete a lacuna',
+  serialChoice: 'Escolha certa',
+  flowChoice: 'Conversa',
+  listenChoose: 'Ouça e escolha',
+  listenGap: 'Ouça e complete',
+  sentenceBuild: 'Monte a frase',
+  readingTask: 'Leitura',
+  emailTriage: 'Triagem de e-mail',
+  swipeChoice: 'Decida rápido',
+};
+
+/* ── Rastreador da prática ──────────────────────────────────────────────────
+   O material é self-paced: sem professor por perto, o aluno que corrige quase
+   tudo vê a lição não fechar e não sabe o que ficou para trás. Este bloco diz
+   quantos faltam, NOMEIA cada um e leva até ele num clique. Só conta o que tem
+   botão de correção — check-off e read aloud continuam de fora. */
+function PracticeTracker({ pending, total, done, c, compact = false }) {
+  const navy = c.navy || '#062E2B';
+  const accent = c.accent || '#00B04F';
+  const gray = c.gray || '#5F7570';
+  const grayLight = c.grayLight || '#E2E9E7';
+  const offWhite = c.offWhite || '#F5F8F7';
+  const falta = pending.length;
+  const pct = total ? Math.round((done / total) * 100) : 0;
+
+  const irPara = (i) => {
+    const el = document.getElementById(`bh-ex-${i}`);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  // Rodapé: uma linha só, que devolve o aluno ao primeiro exercício pendente.
+  if (compact) {
+    if (!falta) return null;
+    return (
+      <div style={{ margin: '30px 0 8px', padding: '16px 20px', borderRadius: 14, background: '#fff', border: `1px dashed ${grayLight}`, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+        <span style={{ fontSize: 14.5, color: gray }}>
+          <strong style={{ color: navy }}>{falta === 1 ? 'Falta 1 exercício' : `Faltam ${falta} exercícios`}</strong> para esta lição contar como concluída.
+        </span>
+        <button onClick={() => irPara(pending[0].i)} type="button"
+          style={{ padding: '8px 14px', borderRadius: 999, border: `1px solid ${accent}`, background: '#fff', color: navy, fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
+          Voltar à prática ↑
+        </button>
+      </div>
+    );
+  }
+
+  if (!falta) {
+    return (
+      <div style={{ margin: '22px 0 6px', padding: '16px 20px', borderRadius: 14, background: '#F2FBF5', border: '1px solid #9AE6B4', display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+        <span style={{ fontSize: 20 }}>✓</span>
+        <span style={{ fontSize: 15, fontWeight: 700, color: '#248A3D' }}>
+          Você corrigiu os {total} exercícios desta lição — ela já conta como concluída.
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <div style={{ margin: '22px 0 6px', padding: '20px 22px', borderRadius: 14, background: offWhite, border: `1px solid ${grayLight}` }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
+        <span style={{ fontSize: 15.5, fontWeight: 800, color: navy }}>
+          {falta === 1 ? 'Falta 1 exercício' : `Faltam ${falta} exercícios`} para concluir esta lição
+        </span>
+        <span style={{ fontSize: 13, color: gray, fontWeight: 700 }}>{done} de {total} corrigidos</span>
+      </div>
+
+      <div style={{ height: 6, borderRadius: 999, background: grayLight, overflow: 'hidden', margin: '11px 0 14px' }}>
+        <div style={{ height: '100%', width: `${pct}%`, borderRadius: 999, background: accent, transition: 'width 0.4s' }} />
+      </div>
+
+      <p style={{ margin: '0 0 10px', fontSize: 13.5, color: gray, lineHeight: 1.55 }}>
+        Basta clicar em <strong style={{ color: navy }}>Corrigir</strong> (ou <strong style={{ color: navy }}>Verificar respostas</strong>) em cada um — não precisa acertar tudo. Toque no nome para ir direto até ele:
+      </p>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        {pending.map((p) => (
+          <button key={p.i} onClick={() => irPara(p.i)} type="button"
+            style={{ padding: '8px 14px', borderRadius: 999, border: `1px solid ${accent}`, background: '#fff', color: navy, fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
+            {p.title} ↑
+          </button>
+        ))}
       </div>
     </div>
   );
