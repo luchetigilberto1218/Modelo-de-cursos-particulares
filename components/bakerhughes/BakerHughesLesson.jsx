@@ -294,6 +294,7 @@ const EX_LABEL = {
   readingTask: 'Leitura',
   emailTriage: 'Triagem de e-mail',
   swipeChoice: 'Decida rápido',
+  checkOff: 'Auto-avaliação final',
 };
 
 /* ── Rastreador da prática ──────────────────────────────────────────────────
@@ -356,7 +357,7 @@ function PracticeTracker({ pending, total, done, c, compact = false }) {
       </div>
 
       <p style={{ margin: '0 0 10px', fontSize: 13.5, color: gray, lineHeight: 1.55 }}>
-        Basta clicar em <strong style={{ color: navy }}>Corrigir</strong> (ou <strong style={{ color: navy }}>Verificar respostas</strong>) em cada um — não precisa acertar tudo. Toque no nome para ir direto até ele:
+        Basta clicar em <strong style={{ color: navy }}>Corrigir</strong>, <strong style={{ color: navy }}>Verificar respostas</strong> ou <strong style={{ color: navy }}>Concluir auto-avaliação</strong> em cada um — não precisa acertar tudo. Toque no nome para ir direto até ele:
       </p>
 
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>

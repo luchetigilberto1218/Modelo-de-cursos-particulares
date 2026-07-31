@@ -39,8 +39,11 @@ export const BH_EXTRA_TYPES = [
   'checkOff',
 ];
 
-// Exercícios que não valem nota (auto-avaliação / prática livre de fala).
-export const BH_UNGRADED_TYPES = ['checkOff'];
+// Exercícios que não contam para fechar a lição. O `checkOff` saiu daqui em
+// 07/2026: ele passou a contar, mas por CONFIRMAÇÃO explícita, não por marcar
+// todos os itens — a instrução pede que o aluno assinale só o que já consegue
+// fazer, e exigir tudo marcado viraria pressão para marcar por obrigação.
+export const BH_UNGRADED_TYPES = [];
 
 export default function BhExercise({ ex, c, voiceType, onChecked, seed = 1 }) {
   const props = { ex, c, voiceType, onChecked, seed };
@@ -780,11 +783,12 @@ function SwipeChoice({ ex, c, onChecked }) {
 }
 
 /* ───────── 17. Check-off final — auto-avaliação assinalável ───────── */
-function CheckOff({ ex, c, voiceType }) {
+function CheckOff({ ex, c, voiceType, onChecked }) {
   const accent = c.accent || '#00B04F';
   const navy = c.navy || '#062E2B';
   const items = ex.items || [];
   const [on, setOn] = useState({});
+  const [confirmed, setConfirmed] = useState(false);
   const done = items.filter((_, i) => on[i]).length;
   const all = items.length > 0 && done === items.length;
 
@@ -817,6 +821,26 @@ function CheckOff({ ex, c, voiceType }) {
       </div>
       <div style={{ marginTop: 16, padding: '11px 15px', borderRadius: 10, background: all ? '#F0FFF4' : c.offWhite || '#F5F8F7', border: `1px solid ${all ? '#9AE6B4' : c.grayLight || '#E2E9E7'}`, fontSize: 14, color: all ? '#22543D' : c.gray || '#5F7570' }}>
         <strong>{done}/{items.length}</strong> {all ? `— ${ex.doneMessage || 'lição fechada. Pode seguir para a próxima com tranquilidade.'}` : `— ${ex.openMessage || 'o que ficou em branco vira pauta da próxima aula.'}`}
+      </div>
+
+      {/* Confirmação: é ela que faz o check-off contar para fechar a lição.
+          Vale com qualquer número de itens marcados — deixar em branco é uma
+          resposta honesta, e é o que vira pauta da aula. */}
+      <div style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+        {!confirmed ? (
+          <button onClick={() => { setConfirmed(true); if (onChecked) onChecked(items.length ? done / items.length : 1); }}
+            style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: accent, color: '#fff', fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>
+            Concluir auto-avaliação
+          </button>
+        ) : (
+          <>
+            <span style={{ fontSize: 14, fontWeight: 700, color: '#248A3D' }}>✓ Auto-avaliação registrada</span>
+            <button onClick={() => setConfirmed(false)}
+              style={{ padding: '8px 14px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: '#fff', color: c.text || '#20302D', fontWeight: 700, fontSize: 13, fontFamily: 'inherit', cursor: 'pointer' }}>
+              Rever marcações
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
