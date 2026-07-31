@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useIdentity, useDoneMap } from './progress';
 
 export default function BakerHughesTrack({ course, theme, clientId, trackId, student }) {
   const c = theme?.colors || {};
@@ -18,6 +19,14 @@ export default function BakerHughesTrack({ course, theme, clientId, trackId, stu
   const lessons = (course.lessons || [])
     .filter(l => l.track === trackId)
     .sort((a, b) => (a.trackOrder || a.num) - (b.trackOrder || b.num));
+
+  // Lições concluídas: acendem verde com ✓ e alimentam o contador do topo.
+  // Enquanto a identidade não carrega, `doneMap` é {} e a tela é a de sempre.
+  const identity = useIdentity();
+  const doneMap = useDoneMap(identity?.student);
+  const doneCount = lessons.filter((l) => doneMap[l.num]).length;
+  const nextNum = (lessons.find((l) => !doneMap[l.num]) || {}).num;
+  const pct = lessons.length ? Math.round((doneCount / lessons.length) * 100) : 0;
 
   return (
     <div style={{ minHeight: '100vh', background: offWhite, fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", color: c.text || '#20302D', WebkitFontSmoothing: 'antialiased' }}>
@@ -38,6 +47,19 @@ export default function BakerHughesTrack({ course, theme, clientId, trackId, stu
           <h1 style={{ fontSize: 'clamp(26px, 4vw, 38px)', fontWeight: 800, letterSpacing: -0.6, margin: '0 0 10px' }}>{track.name}</h1>
           <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.8)', margin: 0, maxWidth: 620, lineHeight: 1.5 }}>{track.description}</p>
           <p style={{ fontSize: 13, color: accent, fontWeight: 700, margin: '14px 0 0' }}>{lessons.length} {lessons.length === 1 ? 'lição' : 'lições'} · estudo no seu ritmo</p>
+          {doneCount > 0 && (
+            <div style={{ marginTop: 16, maxWidth: 420 }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, marginBottom: 7 }}>
+                <span style={{ fontSize: 13.5, fontWeight: 700, color: '#fff' }}>
+                  {doneCount} de {lessons.length} {doneCount === 1 ? 'concluída' : 'concluídas'}
+                </span>
+                <span style={{ fontSize: 12.5, color: 'rgba(255,255,255,0.6)' }}>{pct}%</span>
+              </div>
+              <div style={{ height: 6, borderRadius: 999, background: 'rgba(255,255,255,0.16)', overflow: 'hidden' }}>
+                <div style={{ height: '100%', width: `${pct}%`, borderRadius: 999, background: `linear-gradient(90deg, ${accent}, ${teal})`, transition: 'width 0.4s' }} />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -54,7 +76,8 @@ export default function BakerHughesTrack({ course, theme, clientId, trackId, stu
               </div>
             )}
             {group.items.map((l) => (
-              <LessonRow key={l.num} lesson={l} clientId={clientId} index={lessons.indexOf(l)} c={c} />
+              <LessonRow key={l.num} lesson={l} clientId={clientId} index={lessons.indexOf(l)} c={c}
+                done={!!doneMap[l.num]} isNext={l.num === nextNum && doneCount > 0} />
             ))}
           </div>
         ))}
@@ -76,24 +99,35 @@ function groupByTopic(lessons) {
   return groups;
 }
 
-function LessonRow({ lesson, clientId, index, c }) {
+/* Uma lição na lista. `done` acende a linha em verde com ✓ (fica assim nos
+   próximos acessos, porque a conclusão é gravada); `isNext` destaca a primeira
+   ainda não feita. Sem progresso, a linha é exatamente a de antes. */
+function LessonRow({ lesson, clientId, index, c, done = false, isNext = false }) {
   const [hover, setHover] = useState(false);
   const navy = c.navy || '#062E2B';
   const accent = c.accent || '#00B04F';
   const gray = c.gray || '#5F7570';
   const grayLight = c.grayLight || '#E2E9E7';
 
+  const border = hover ? accent : done ? '#34C759' : isNext ? accent : grayLight;
+  const borderWidth = done || isNext ? 2 : 1;
+
   return (
     <Link href={`/${clientId}/lesson/${lesson.num}`} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
-      style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '18px 20px', background: '#fff', borderRadius: 14, textDecoration: 'none', color: 'inherit',
-        border: `1px solid ${hover ? accent : grayLight}`, boxShadow: hover ? '0 10px 30px rgba(6,46,43,0.10)' : '0 1px 3px rgba(6,46,43,0.04)',
+      style={{ display: 'flex', alignItems: 'center', gap: 16, padding: `${18 - (borderWidth - 1)}px ${20 - (borderWidth - 1)}px`, background: done ? '#F2FBF5' : '#fff', borderRadius: 14, textDecoration: 'none', color: 'inherit',
+        border: `${borderWidth}px solid ${border}`, boxShadow: hover ? '0 10px 30px rgba(6,46,43,0.10)' : '0 1px 3px rgba(6,46,43,0.04)',
         transform: hover ? 'translateX(4px)' : 'none', transition: 'all 0.25s' }}>
-      <div style={{ flex: '0 0 46px', height: 46, borderRadius: 12, background: c.accentLight || '#E4F7EC', color: navy, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 18 }}>
-        {String(lesson.trackOrder || index + 1).padStart(2, '0')}
+      <div style={{ flex: '0 0 46px', height: 46, borderRadius: 12, background: done ? '#34C759' : (c.accentLight || '#E4F7EC'), color: done ? '#fff' : navy, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: done ? 21 : 18 }}>
+        {done ? '✓' : String(lesson.trackOrder || index + 1).padStart(2, '0')}
       </div>
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ fontSize: 17, fontWeight: 700, color: navy, letterSpacing: -0.2 }}>{lesson.title}</div>
         <div style={{ fontSize: 13.5, color: gray, marginTop: 2 }}>{lesson.focus}</div>
+        {(done || isNext) && (
+          <div style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 0.8, textTransform: 'uppercase', marginTop: 6, color: done ? '#248A3D' : accent }}>
+            {done ? '✓ Concluída' : 'Continue aqui →'}
+          </div>
+        )}
       </div>
       <span style={{ color: accent, fontWeight: 800, fontSize: 18 }}>{hover ? '→' : '›'}</span>
     </Link>

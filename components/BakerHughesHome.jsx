@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { useIdentity, useDoneMap } from './bakerhughes/progress';
 
 /*
   Baker Hughes — home do programa.
@@ -306,9 +307,23 @@ function MyTrackCard({ track, lessons, clientId, student, c }) {
     } catch { /* sem localStorage, mostra a lição 1 */ }
   }, [clientId, track.id]);
 
+  // Progresso gravado: manda mais que o "última lição aberta" do localStorage.
+  // Com lições concluídas, o botão aponta para a primeira que ainda falta —
+  // terminar a lição 1 leva a lição 2, que é o que se espera.
+  const identity = useIdentity();
+  const doneMap = useDoneMap(identity?.student);
+  const doneCount = lessons.filter((l) => doneMap[l.num]).length;
+  const nextUndone = lessons.find((l) => !doneMap[l.num]) || null;
+
   const first = lessons[0];
-  const resume = last && lessons.find((l) => l.num === last.num) ? last : null;
+  const lastOpened = last && lessons.find((l) => l.num === last.num) ? last : null;
+  const fromProgress = doneCount > 0 && nextUndone
+    ? { num: nextUndone.num, title: nextUndone.title, order: nextUndone.trackOrder || lessons.indexOf(nextUndone) + 1 }
+    : null;
+  const resume = fromProgress || lastOpened;
   const target = resume || (first ? { num: first.num, title: first.title, order: 1 } : null);
+  const allDoneTrack = lessons.length > 0 && doneCount === lessons.length;
+  const pct = lessons.length ? Math.round((doneCount / lessons.length) * 100) : 0;
   const firstName = (student || '').split(' ')[0];
   const topics = [...new Set(lessons.map((l) => l.topic).filter(Boolean))];
 
@@ -330,15 +345,26 @@ function MyTrackCard({ track, lessons, clientId, student, c }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', marginBottom: topics.length ? 20 : 0 }}>
             <div style={{ flex: '1 1 250px' }}>
               <div style={{ fontSize: 11, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: accent, marginBottom: 5 }}>
-                {resume ? 'Continue de onde parou' : 'Comece por aqui'}
+                {allDoneTrack ? 'Trilha concluída · revise quando quiser' : resume ? 'Continue de onde parou' : 'Comece por aqui'}
               </div>
               <div style={{ fontSize: 17.5, fontWeight: 700, color: navy, letterSpacing: -0.3, lineHeight: 1.3 }}>
                 Lição {target.order || 1} · {target.title}
               </div>
-              <div style={{ fontSize: 13, color: gray, marginTop: 4 }}>{lessons.length} lições · estudo no seu ritmo</div>
+              {doneCount > 0 ? (
+                <div style={{ marginTop: 9, maxWidth: 320 }}>
+                  <div style={{ fontSize: 12.5, color: gray, marginBottom: 6 }}>
+                    <strong style={{ color: navy }}>{doneCount} de {lessons.length}</strong> {doneCount === 1 ? 'concluída' : 'concluídas'} · {pct}%
+                  </div>
+                  <div style={{ height: 6, borderRadius: 999, background: grayLight, overflow: 'hidden' }}>
+                    <div style={{ height: '100%', width: `${pct}%`, borderRadius: 999, background: `linear-gradient(90deg, ${accent}, ${teal})`, transition: 'width 0.4s' }} />
+                  </div>
+                </div>
+              ) : (
+                <div style={{ fontSize: 13, color: gray, marginTop: 4 }}>{lessons.length} lições · estudo no seu ritmo</div>
+              )}
             </div>
             <Link href={`/${clientId}/lesson/${target.num}`} style={{ padding: '12px 24px', borderRadius: 999, background: accent, color: '#fff', fontWeight: 700, fontSize: 14.5, textDecoration: 'none' }}>
-              {resume ? 'Retomar →' : 'Começar →'}
+              {allDoneTrack ? 'Revisar →' : resume ? 'Retomar →' : 'Começar →'}
             </Link>
             <Link href={`/${clientId}/level/${track.level || 'essentials'}/track/${track.id}`} style={{ padding: '12px 20px', borderRadius: 999, background: '#fff', color: navy, fontWeight: 700, fontSize: 14, textDecoration: 'none', border: `1px solid ${grayLight}` }}>
               Ver todas as lições

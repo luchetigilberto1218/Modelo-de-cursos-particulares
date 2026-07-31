@@ -6,6 +6,7 @@ import Exercise from '../Exercise';
 import AudioPlayer from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
 import BhExercise, { BH_EXTRA_TYPES, BH_UNGRADED_TYPES } from './BhExercises';
+import { useIdentity, useLessonDone } from './progress';
 
 /*
   Baker Hughes — self-study lesson renderer (async, no teacher).
@@ -64,6 +65,17 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
       }));
     } catch { /* navegador sem localStorage: só não lembra */ }
   }, [clientId, l.track, l.num, l.title, l.trackOrder, position?.index]);
+
+  // Conclusão persistida (localStorage + Vercel Blob). Assim que os exercícios
+  // corrigíveis são respondidos, a lição "acende" na trilha e continua acesa no
+  // próximo acesso — inclusive de outro aparelho. Falha de rede não atrapalha:
+  // o estudo segue igual, só não sincroniza.
+  const identity = useIdentity();
+  const { done: savedDone, markDone: persistDone } = useLessonDone(identity?.student, l.num);
+  useEffect(() => {
+    if (allDone) persistDone();
+  }, [allDone, persistDone]);
+  const lessonComplete = allDone || savedDone;
 
   return (
     <div style={{ minHeight: '100vh', background: offWhite, fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", color: text, WebkitFontSmoothing: 'antialiased' }}>
@@ -205,18 +217,24 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
           </Section>
         )}
 
-        {/* Lesson complete — só aparece quando os exercícios foram feitos */}
-        {l.celebrate && allDone && (
+        {/* Lesson complete — aparece quando os exercícios foram feitos, e volta a
+            aparecer nos próximos acessos porque a conclusão fica gravada. */}
+        {l.celebrate && lessonComplete && (
           <div style={{ margin: '30px 0 8px', padding: '30px 32px', borderRadius: 16, background: `linear-gradient(135deg, ${navy}, ${navyLight})`, color: '#fff' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14, flexWrap: 'wrap' }}>
               <span style={{ height: 2, width: 28, background: accent }} />
               <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1.4, textTransform: 'uppercase', color: accent }}>Lesson complete</span>
+              {savedDone && !allDone && (
+                <span style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: 0.4, padding: '3px 10px', borderRadius: 999, background: 'rgba(255,255,255,0.14)', color: 'rgba(255,255,255,0.86)' }}>
+                  ✓ você já concluiu esta lição
+                </span>
+              )}
             </div>
             <p style={{ fontSize: 18, fontWeight: 700, lineHeight: 1.5, margin: '0 0 6px' }}>{l.celebrate.en}</p>
             <p style={{ fontSize: 14.5, color: 'rgba(255,255,255,0.72)', lineHeight: 1.5, margin: 0 }}>{l.celebrate.pt}</p>
           </div>
         )}
-        {l.celebrate && !allDone && totalGradeable > 0 && (
+        {l.celebrate && !lessonComplete && totalGradeable > 0 && (
           <div style={{ margin: '30px 0 8px', padding: '18px 22px', borderRadius: 14, background: '#fff', border: `1px dashed ${grayLight}`, color: gray, fontSize: 14, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
             <span style={{ fontWeight: 800, color: navy }}>{doneCount}/{totalGradeable}</span>
             <span>Complete os exercícios acima (basta corrigir cada um) para fechar esta lição.</span>

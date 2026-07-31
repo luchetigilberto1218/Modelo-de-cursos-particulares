@@ -1,0 +1,19 @@
+import { NextResponse } from 'next/server';
+import { getSession, getUsers, canAccessClient } from '../../../../lib/auth';
+
+// Identidade de quem está logado (Baker Hughes), para o cliente saber por qual
+// chave guardar o progresso. Nunca vaza senha/hash.
+export const dynamic = 'force-dynamic';
+
+export async function GET() {
+  const session = await getSession();
+  if (!session?.id || !canAccessClient(session, 'bakerhughes')) {
+    return NextResponse.json({ student: null }, { status: 401 });
+  }
+  const user = getUsers().find((u) => u.id === session.id);
+  return NextResponse.json({
+    student: session.id,
+    name: user?.name || session.name || '',
+    role: session.role || 'student',
+  });
+}
