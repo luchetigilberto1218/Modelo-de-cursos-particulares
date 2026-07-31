@@ -1,0 +1,370 @@
+{
+  "topic": "Building websites and applications",
+  "lessons": [
+    {
+      "title": "Front End, Back End and Everything Between",
+      "focus": "O vocabulário de construir software: camadas, ambientes e o ciclo de release",
+      "character": "us-male",
+      "objective": "Descrever em inglês como um sistema é construído — camadas, ambientes e o caminho do código até a produção.",
+      "intro": [
+        "Software teams talk in layers and in environments, and the two are constantly confused by people learning the vocabulary.",
+        "<strong>Layers</strong> are parts of the system: front end, back end, database. <strong>Environments</strong> are copies of the whole system: dev, staging, production.",
+        "Get those two axes right and you can follow any technical conversation in English — even about a system you've never seen."
+      ],
+      "introPt": [
+        "Times de software falam em camadas e em ambientes, e as duas coisas são constantemente confundidas por quem está aprendendo o vocabulário.",
+        "<strong>Camadas</strong> são partes do sistema: front end, back end, banco. <strong>Ambientes</strong> são cópias do sistema inteiro: dev, staging, produção.",
+        "Acerte esses dois eixos e você acompanha qualquer conversa técnica em inglês — mesmo sobre um sistema que nunca viu."
+      ],
+      "vocab": [
+        { "en": "front end", "pt": "a parte que o usuário vê e usa", "example": "The front end is React; the back end is Node." },
+        { "en": "back end", "pt": "a lógica e os dados por trás", "example": "That calculation happens in the back end." },
+        { "en": "environment", "pt": "ambiente — cópia do sistema", "example": "It works in staging but not in production." },
+        { "en": "to deploy", "pt": "publicar uma versão num ambiente", "example": "We deploy to production on Tuesdays." },
+        { "en": "release", "pt": "versão liberada aos usuários", "example": "The June release introduced the bug." },
+        { "en": "rollback", "pt": "voltar à versão anterior", "example": "We rolled back within twenty minutes." },
+        { "en": "feature flag", "pt": "chave que liga/desliga uma funcionalidade", "example": "It's behind a feature flag for now." },
+        { "en": "responsive", "pt": "que se adapta a telas diferentes", "example": "The dashboard has to be responsive — supervisors use tablets." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Camada ou ambiente?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada termo.",
+          "categories": [
+            { "id": "layer", "name": "Layer · parte do sistema", "short": "Layer" },
+            { "id": "env", "name": "Environment · cópia do sistema", "short": "Environment" }
+          ],
+          "items": [
+            { "text": "front end", "cat": "layer" },
+            { "text": "staging", "cat": "env" },
+            { "text": "database", "cat": "layer" },
+            { "text": "production", "cat": "env" },
+            { "text": "API layer", "cat": "layer" },
+            { "text": "development (dev)", "cat": "env" }
+          ],
+          "explanation": "\"It works in dev\" fala do ambiente. \"It's a front-end issue\" fala da camada. Confundir os dois faz a conversa render o dobro do tempo."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "to deploy", "right": "colocar uma versão do código para rodar num ambiente" },
+            { "left": "rollback", "right": "voltar rapidamente à versão anterior quando algo dá errado" },
+            { "left": "feature flag", "right": "chave que permite ligar ou desligar uma funcionalidade sem novo deploy" },
+            { "left": "staging", "right": "ambiente parecido com produção onde se testa antes de liberar" },
+            { "left": "responsive design", "right": "layout que se adapta a telas de tamanhos diferentes" },
+            { "left": "hotfix", "right": "correção urgente que pula o ciclo normal de release" }
+          ],
+          "explanation": "Feature flag e rollback são as duas redes de segurança de qualquer time que entrega rápido."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia a nota de release",
+          "badge": "Leia e responda",
+          "heading": "Release note · Dashboard v2.4",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "This release adds plant-level filtering to the downtime view and improves load times on tablets.",
+            "The new alert panel is behind a feature flag and is off for all users. We'll enable it for Macaé only, on Thursday, once the supervisors have had the training.",
+            "Deployment window: Tuesday 22:00–23:00 BRT. Expected downtime: none. If the load times regress, we roll back to 2.3 — the rollback has been tested in staging.",
+            "Known issue: on very old Android tablets the date picker renders below the fold. A fix is scheduled for 2.5; the workaround is to rotate the tablet to landscape."
+          ],
+          "questions": [
+            {
+              "prompt": "Why is the alert panel behind a feature flag?",
+              "options": [
+                { "text": "So it can be turned on for one plant at a time, without a new deployment.", "correct": true },
+                { "text": "Because it isn't finished.", "correct": false },
+                { "text": "Because it caused the load-time problem." }
+              ],
+              "why": "Feature flag separa \"o código está lá\" de \"o usuário vê\". É o que permite liberar por planta."
+            },
+            {
+              "prompt": "What is the plan if load times get worse?",
+              "options": [
+                { "text": "A hotfix on Wednesday.", "correct": false },
+                { "text": "Roll back to version 2.3, which has been tested in staging.", "correct": true },
+                { "text": "Turn off the feature flag." }
+              ],
+              "why": "Rollback testado é o que transforma um plano B numa opção real."
+            },
+            {
+              "prompt": "What does \"renders below the fold\" mean here?",
+              "options": [
+                { "text": "It appears outside the visible area of the screen, so users must scroll.", "correct": true },
+                { "text": "It doesn't load at all.", "correct": false },
+                { "text": "It shows the wrong date." }
+              ],
+              "why": "\"Below the fold\" vem do jornal dobrado: o que fica abaixo da dobra, fora da vista."
+            }
+          ],
+          "explanation": "Uma nota de release boa diz: o que mudou, o que está escondido atrás de flag, a janela, o plano de rollback e o que se sabe que está quebrado."
+        },
+        {
+          "type": "serialChoice",
+          "title": "O verbo certo no ciclo de entrega",
+          "badge": "Escolha certa",
+          "instruction": "Escolha o verbo que um time de software usaria.",
+          "items": [
+            { "prompt": "We ___ to production every Tuesday.", "options": [{ "text": "deploy", "correct": true }, { "text": "publish" }, { "text": "install" }], "why": "Deploy é o verbo padrão. Publish serve para conteúdo; install, para software no computador de alguém." },
+            { "prompt": "The bug was introduced in the June ___ .", "options": [{ "text": "release", "correct": true }, { "text": "liberation" }, { "text": "version launch" }], "why": "Release é a versão liberada. \"Liberation\" é outra coisa completamente." },
+            { "prompt": "We ___ back to 2.3 within twenty minutes.", "options": [{ "text": "rolled", "correct": true }, { "text": "went" }, { "text": "returned" }], "why": "to roll back é o phrasal verb consagrado." },
+            { "prompt": "The feature is ___ a flag for now.", "options": [{ "text": "behind", "correct": true }, { "text": "under" }, { "text": "after" }], "why": "\"Behind a feature flag\" — sempre \"behind\"." },
+            { "prompt": "It works in staging but ___ in production.", "options": [{ "text": "not", "correct": true }, { "text": "no" }, { "text": "don't" }], "why": "\"but not in production\" — elipse simples, sem verbo." }
+          ],
+          "explanation": "Deploy · release · roll back · behind a flag. Quatro colocações e você acompanha qualquer conversa de entrega."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Localizar o problema numa camada.", "answer": "The calculation happens in the back end not in the front end", "extra": ["happening", "on"] },
+            { "hint": "Falar de ambiente.", "answer": "It works in staging but not in production", "extra": ["working", "on the"] },
+            { "hint": "Explicar a feature flag.", "answer": "The alert panel is behind a feature flag for now", "extra": ["under", "flagged"] }
+          ],
+          "explanation": "Camada, ambiente e flag. Três frases que resolvem metade das conversas de um time de produto."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "We will make the deploy on Tuesday night.", "wrong": "make", "fix": "do / deploy", "why": "Ou \"we'll deploy on Tuesday\", ou \"we'll do the deployment\". \"Make the deploy\" é calque." },
+            { "sentence": "The system is down in production since this morning.", "wrong": "is", "fix": "has been", "why": "Com \"since\", o inglês exige present perfect: has been down since this morning." },
+            { "sentence": "The developers are developing the front-end of the application.", "wrong": "front-end", "fix": "front end", "why": "Como substantivo, vai sem hífen: \"the front end\". Com hífen só como adjetivo: \"a front-end issue\"." },
+            { "sentence": "This functionality is not working in the mobile.", "wrong": "the", "fix": "(nada)", "why": "\"on mobile\", sem artigo. E prefira \"feature\" a \"functionality\", que soa pesado." },
+            { "sentence": "We need to test in a real environment before the launch.", "wrong": "real", "fix": "production-like", "why": "\"Real environment\" não diz nada. O termo é production-like (ou staging)." }
+          ],
+          "explanation": "\"Make the deploy\" e front-end com hífen no lugar errado são os dois deslizes mais frequentes."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can tell a layer from an environment and use both correctly.", "pt": "Sei distinguir camada de ambiente e uso as duas corretamente." },
+            { "en": "I say \"deploy\", not \"make the deploy\".", "pt": "Digo \"deploy\", não \"make the deploy\"." },
+            { "en": "I can explain what a feature flag does and why it helps.", "pt": "Sei explicar o que uma feature flag faz e por que ajuda." },
+            { "en": "I can read a release note and pull out the rollback plan.", "pt": "Sei ler uma nota de release e extrair dela o plano de rollback." }
+          ],
+          "doneMessage": "vocabulário de construção no lugar. A próxima lição é sobre reunir requisitos e falar de produto.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre o vocabulário de software",
+        "intro": "Quatro detalhes que economizam mal-entendidos caros.",
+        "cards": [
+          { "en": "\"It works on my machine\" is a running joke in every English-speaking dev team. Saying it, ironically, shows you're one of them.", "pt": "\"It works on my machine\" é piada corrente em todo time de dev anglófono. Dizê-la, com ironia, mostra que você é de casa." },
+          { "en": "\"Ship\" means to release: \"we shipped it on Tuesday\". It's more common in tech English than \"release\" as a verb.", "pt": "\"Ship\" significa liberar: \"we shipped it on Tuesday\". É mais comum no inglês tech do que \"release\" como verbo." },
+          { "en": "\"Below the fold\" comes from newspapers folded in half. In software it means the part of the screen you have to scroll to reach.", "pt": "\"Below the fold\" vem do jornal dobrado ao meio. Em software, é a parte da tela que só aparece se você rolar." },
+          { "en": "Hyphens matter: \"the front end\" (noun) vs \"a front-end bug\" (adjective). Native writers are consistent about this.", "pt": "O hífen importa: \"the front end\" (substantivo) vs \"a front-end bug\" (adjetivo). Nativos são consistentes nisso." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now follow a release conversation in English and know exactly what is at stake.",
+        "pt": "Agora você acompanha uma conversa de release em inglês sabendo exatamente o que está em jogo."
+      }
+    },
+    {
+      "title": "Requirements and User Stories",
+      "focus": "Transformar o que o usuário pede no que o time consegue construir",
+      "character": "gb-female",
+      "objective": "Escrever e discutir requisitos em inglês: user stories, critérios de aceite e a pergunta que revela o que a pessoa realmente quer.",
+      "intro": [
+        "Users almost never ask for what they need. They ask for a solution they've already imagined — <em>\"I want a button that exports to Excel\"</em> — and the real need hides behind it.",
+        "The English for uncovering that is short and specific: <em>\"what would you do with it once you had it?\"</em>, <em>\"how do you handle this today?\"</em>, <em>\"what happens if we don't build it?\"</em>",
+        "Then you write it down as a <strong>user story</strong> with <strong>acceptance criteria</strong> — the two artefacts that stop the argument at delivery."
+      ],
+      "introPt": [
+        "Usuários quase nunca pedem o que precisam. Pedem uma solução que já imaginaram — <em>\"quero um botão que exporte para Excel\"</em> — e a necessidade real fica escondida atrás dela.",
+        "O inglês para descobrir isso é curto e específico: <em>\"what would you do with it once you had it?\"</em>, <em>\"how do you handle this today?\"</em>, <em>\"what happens if we don't build it?\"</em>",
+        "Depois você registra como <strong>user story</strong> com <strong>critérios de aceite</strong> — os dois artefatos que evitam a discussão na entrega."
+      ],
+      "vocab": [
+        { "en": "requirement", "pt": "requisito", "example": "That's a nice-to-have, not a requirement." },
+        { "en": "user story", "pt": "história do usuário", "example": "As a supervisor, I want to see downtime by asset." },
+        { "en": "acceptance criteria", "pt": "critérios de aceite", "example": "The acceptance criteria are on the ticket." },
+        { "en": "edge case", "pt": "caso extremo/incomum", "example": "What's the edge case when a plant has no data?" },
+        { "en": "happy path", "pt": "o fluxo em que tudo dá certo", "example": "That's the happy path — what about failures?" },
+        { "en": "must have / nice to have", "pt": "essencial / desejável", "example": "Export is nice to have; filtering is a must have." },
+        { "en": "to gather requirements", "pt": "levantar requisitos", "example": "I spent two days gathering requirements at the plant." },
+        { "en": "out of scope", "pt": "fora do escopo", "example": "Offline mode is out of scope for v1." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Qual pergunta revela a necessidade real?",
+          "badge": "A ou B",
+          "instruction": "O usuário pediu \"um botão de exportar para Excel\". Escolha a pergunta que descobre o que ele realmente precisa.",
+          "items": [
+            { "prompt": "Primeira pergunta.", "a": "Which columns do you want in the Excel file?", "b": "What do you do with the file once you've downloaded it?", "correct": "b", "why": "A primeira já aceitou a solução dele. A segunda descobre o problema — que talvez não precise de Excel nenhum." },
+            { "prompt": "Entendendo o processo atual.", "a": "Do you use Excel a lot?", "b": "How do you handle this today, without the button?", "correct": "b", "why": "O processo atual revela o gargalo real, e às vezes mostra que o problema já tem solução." },
+            { "prompt": "Priorizando.", "a": "Is this important to you?", "b": "If we could only build one of these three, which one changes your morning?", "correct": "b", "why": "Tudo é importante quando se pergunta assim. Forçar a escolha é o que produz prioridade de verdade." },
+            { "prompt": "Testando se vale construir.", "a": "Would you use it?", "b": "What happens if we don't build it? What do you do instead?", "correct": "b", "why": "\"Would you use it?\" tem uma resposta só. A segunda revela o custo real de não fazer." }
+          ],
+          "explanation": "Nunca aceite a solução como se fosse o requisito. Pergunte pelo uso, pelo processo atual e pelo custo de não fazer."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia a user story",
+          "badge": "Leia e responda",
+          "heading": "Ticket DASH-214",
+          "instruction": "Leia o ticket e responda.",
+          "passage": [
+            "As a shift supervisor, I want to see unplanned downtime broken down by asset for my plant, so that I can decide which pump to inspect first at the start of my shift.",
+            "Acceptance criteria: (1) the view defaults to the supervisor's own plant; (2) it shows the last 7 days, ranked by downtime hours descending; (3) each row links to the asset's maintenance history; (4) it loads in under 3 seconds on a plant tablet.",
+            "Edge cases: if the plant has no downtime in the period, show \"no unplanned downtime in the last 7 days\" rather than an empty table. If asset data is missing for a row, show the asset ID rather than hiding the row.",
+            "Out of scope for v1: exporting, comparing plants, custom date ranges."
+          ],
+          "questions": [
+            {
+              "prompt": "What makes this a good user story rather than a task?",
+              "options": [
+                { "text": "It names the user, what they want, and why — the decision it enables.", "correct": true },
+                { "text": "It's written in the first person.", "correct": false },
+                { "text": "It mentions the technology." }
+              ],
+              "why": "\"So that I can decide which pump to inspect first\" — o porquê é o que permite ao time propor uma solução melhor que a pedida."
+            },
+            {
+              "prompt": "Why is the 3-second load time in the acceptance criteria?",
+              "options": [
+                { "text": "Because a criterion you can't measure isn't a criterion.", "correct": true },
+                { "text": "Because tablets are slow.", "correct": false },
+                { "text": "To make the work harder." }
+              ],
+              "why": "Critério de aceite tem que ser verificável. \"Deve ser rápido\" não é um critério."
+            },
+            {
+              "prompt": "What do the edge cases prevent?",
+              "options": [
+                { "text": "The screen looking broken when data is missing.", "correct": true },
+                { "text": "Users exporting data.", "correct": false },
+                { "text": "The plant having no downtime." }
+              ],
+              "why": "Edge cases são onde o software parece quebrado mesmo funcionando. É neles que a confiança do usuário se ganha ou se perde."
+            }
+          ],
+          "explanation": "Quem · o quê · por quê · critérios verificáveis · edge cases · fora de escopo. Seis blocos e o ticket não gera discussão."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte a user story na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nos blocos na ordem certa da história.",
+          "items": [
+            "As a shift supervisor,",
+            "I want to see unplanned downtime broken down by asset for my plant,",
+            "so that I can decide which pump to inspect first at the start of my shift.",
+            "Acceptance criteria: defaults to my plant, last 7 days, ranked by hours, loads in under 3 seconds.",
+            "Out of scope for v1: exporting, comparing plants, custom date ranges."
+          ],
+          "explanation": "As a… I want… so that… é a fórmula. O \"so that\" é a parte que quase todo mundo omite — e é a mais útil."
+        },
+        {
+          "type": "categorize",
+          "title": "Must have ou nice to have?",
+          "badge": "Classifique",
+          "instruction": "Para a v1 do dashboard de supervisores, classifique cada item.",
+          "categories": [
+            { "id": "must", "name": "Must have · v1 não existe sem isso", "short": "Must" },
+            { "id": "nice", "name": "Nice to have · pode esperar", "short": "Nice" }
+          ],
+          "items": [
+            { "text": "Downtime ranked by asset for the supervisor's own plant", "cat": "must" },
+            { "text": "Exporting the table to Excel", "cat": "nice" },
+            { "text": "Loading in under 3 seconds on a plant tablet", "cat": "must" },
+            { "text": "Comparing two plants side by side", "cat": "nice" },
+            { "text": "A clear message when there is no data", "cat": "must" },
+            { "text": "Custom colour themes per plant", "cat": "nice" }
+          ],
+          "explanation": "Teste do must have: se isso não existir, o usuário ainda consegue tomar a decisão que a tela existe para apoiar? Se sim, é nice to have."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Levantando requisitos na planta",
+          "badge": "Conversa",
+          "situation": "Você está na planta de Macaé. Um supervisor de turno pede \"um botão de exportar para Excel\" no dashboard.",
+          "turns": [
+            {
+              "who": "Supervisor",
+              "them": "What I really need is an Excel export button. Can you add one?",
+              "options": [
+                { "text": "Sure, I'll add it to the backlog.", "why": "Você acabou de aceitar a solução dele sem entender o problema. Metade dos botões inúteis do mundo nasceu assim." },
+                { "text": "Tell me what you do with the file once you've exported it — walk me through your morning.", "correct": true, "why": "Descobre o uso real. É de lá que sai o requisito." },
+                { "text": "That's out of scope for version one.", "why": "Fechar a porta antes de entender é como se perde a confiança do usuário na primeira visita." }
+              ]
+            },
+            {
+              "who": "Supervisor",
+              "them": "I paste it into a spreadsheet, sort it by hours, and highlight the top three pumps for the shift meeting.",
+              "options": [
+                { "text": "Understood — I'll make the export cleaner then.", "why": "Ainda está resolvendo o sintoma. Ele não quer exportar; quer os três primeiros." },
+                { "text": "So what you actually need is the top three pumps by downtime, ready at the start of the shift. Would a ranked view on the screen do the job, with no export at all?", "correct": true, "why": "Traduz a solução pedida no problema real e propõe algo melhor e mais barato." },
+                { "text": "That's a manual process, we should automate all of it.", "why": "Generalização. Você ainda não sabe o que é essencial e o que é hábito." }
+              ]
+            },
+            {
+              "who": "Supervisor",
+              "them": "Honestly, yes. As long as I can still send it to my manager afterwards.",
+              "options": [
+                { "text": "Then the ranked view is a must have for v1, and sharing is a separate story we can size next sprint. Does that work?", "correct": true, "why": "Separa o essencial do desejável, dá lugar ao segundo e confirma com ele." },
+                { "text": "We'll do both together.", "why": "Juntar as duas coisas dobra o tamanho da entrega e atrasa o que realmente importa." },
+                { "text": "Sending is out of scope.", "why": "Ele acabou de dizer que é necessário. Descartar aqui perde a boa vontade toda que você construiu." }
+              ]
+            }
+          ],
+          "explanation": "Peça o passo a passo → traduza a solução no problema → separe must de nice → confirme com o usuário."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The users asked for more functionalities in the dashboard.", "wrong": "functionalities", "fix": "features", "why": "\"Functionalities\" existe, mas soa pesado e traduzido. Times de produto dizem <strong>features</strong>." },
+            { "sentence": "This requirement is not in the scope of version one.", "wrong": "the", "fix": "(nada)", "why": "\"Out of scope\" / \"in scope\" — sem artigo." },
+            { "sentence": "We need to attend the user's needs.", "wrong": "attend", "fix": "meet", "why": "Falso amigo: atender uma necessidade é <strong>meet</strong> a need." },
+            { "sentence": "The acceptance criterias are on the ticket.", "wrong": "criterias", "fix": "criteria", "why": "Criteria já é plural (de criterion). \"Criterias\" não existe." },
+            { "sentence": "Let's collect the requirements with the supervisors.", "wrong": "collect", "fix": "gather", "why": "A colocação consagrada é <strong>gather</strong> requirements." }
+          ],
+          "explanation": "\"Criterias\" e \"attend the needs\" são os dois que mais aparecem em ticket escrito por brasileiro."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I ask what the user does with the thing, not just what they want.", "pt": "Pergunto o que o usuário faz com a coisa, não só o que ele quer." },
+            { "en": "I write user stories with the \"so that\" clause.", "pt": "Escrevo user stories com a cláusula \"so that\"." },
+            { "en": "My acceptance criteria are all measurable.", "pt": "Meus critérios de aceite são todos mensuráveis." },
+            { "en": "I write down what is out of scope, not only what is in.", "pt": "Registro o que está fora do escopo, não só o que está dentro." },
+            { "en": "I say \"features\" and \"criteria\", not \"functionalities\" and \"criterias\".", "pt": "Digo \"features\" e \"criteria\", não \"functionalities\" nem \"criterias\"." }
+          ],
+          "doneMessage": "requisitos sob controle. O próximo tópico é testar e consertar software.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre requisitos em inglês",
+        "intro": "Quatro perguntas e distinções que salvam sprints inteiras.",
+        "cards": [
+          { "en": "\"Walk me through your morning\" gets you more requirements in five minutes than any questionnaire. People describe processes better than they describe needs.", "pt": "\"Walk me through your morning\" rende mais requisitos em cinco minutos que qualquer questionário. As pessoas descrevem processos melhor do que necessidades." },
+          { "en": "\"Happy path\" and \"edge case\" are a pair. If someone only demoed the happy path, the feature isn't finished.", "pt": "\"Happy path\" e \"edge case\" andam em par. Se alguém só demonstrou o happy path, a feature não está pronta." },
+          { "en": "\"Criteria\" is already plural — one criterion, several criteria. \"Criterias\" is a giveaway in written English.", "pt": "\"Criteria\" já é plural — one criterion, several criteria. \"Criterias\" te entrega na escrita." },
+          { "en": "Writing down what's out of scope is more valuable than writing what's in. It's the sentence you'll point to in September.", "pt": "Registrar o que está fora do escopo vale mais que registrar o que está dentro. É a frase para a qual você vai apontar em setembro." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now turn what a user asks for into what the team should actually build.",
+        "pt": "Agora você transforma o que o usuário pede no que o time realmente deve construir."
+      }
+    }
+  ]
+}

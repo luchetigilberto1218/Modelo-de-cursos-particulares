@@ -1,0 +1,347 @@
+{
+  "topic": "Problem-solving and decision-making discussions",
+  "lessons": [
+    {
+      "title": "Framing the Problem",
+      "focus": "Descrever o problema antes de discutir solução — sintoma, causa raiz, impacto",
+      "character": "us-male",
+      "objective": "Enunciar um problema em inglês de forma que a sala discuta a mesma coisa: sintoma, causa provável, impacto e o que ainda não se sabe.",
+      "intro": [
+        "Most bad meetings are bad because the problem was never stated. Ten people arrive with ten slightly different versions of it and spend an hour agreeing loudly about different things.",
+        "In English, a well-framed problem has four parts: the <strong>symptom</strong> (what we observe), the <strong>root cause</strong> (why it happens, if we know), the <strong>impact</strong> (what it costs), and the <strong>unknown</strong> (what we still can't answer).",
+        "Say all four and the discussion starts twenty minutes ahead of where it otherwise would."
+      ],
+      "introPt": [
+        "A maioria das reuniões ruins é ruim porque o problema nunca foi enunciado. Dez pessoas chegam com dez versões ligeiramente diferentes dele e passam uma hora concordando alto sobre coisas diferentes.",
+        "Em inglês, um problema bem enquadrado tem quatro partes: o <strong>sintoma</strong> (o que se observa), a <strong>causa raiz</strong> (por que acontece, se soubermos), o <strong>impacto</strong> (o que custa) e o <strong>desconhecido</strong> (o que ainda não sabemos responder).",
+        "Diga as quatro e a discussão começa vinte minutos à frente de onde começaria."
+      ],
+      "vocab": [
+        { "en": "root cause", "pt": "causa raiz", "example": "The root cause is the nightly sync, not the dashboard." },
+        { "en": "symptom", "pt": "sintoma — o que se vê", "example": "Slow loading is the symptom, not the problem." },
+        { "en": "to narrow down", "pt": "estreitar as possibilidades", "example": "We narrowed it down to two data sources." },
+        { "en": "to rule out", "pt": "descartar uma hipótese", "example": "We've ruled out the network." },
+        { "en": "workaround", "pt": "solução paliativa", "example": "The manual export is a workaround, not a fix." },
+        { "en": "trade-off", "pt": "escolha com custo dos dois lados", "example": "It's a trade-off between speed and accuracy." },
+        { "en": "assumption", "pt": "premissa assumida", "example": "We're assuming the data arrives daily — let's test that." },
+        { "en": "blind spot", "pt": "ponto cego", "example": "Our blind spot is what happens at the plant level." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia o enunciado do problema",
+          "badge": "Leia e responda",
+          "instruction": "Leia e responda. Tudo o que você precisa está no texto.",
+          "heading": "Problem statement · Dashboard performance",
+          "passage": [
+            "Symptom: the downtime dashboard takes forty seconds to load for the Macaé plant, against three seconds for the other two sites.",
+            "What we know: the delay only happens for Macaé, only in the morning, and only since the June release. We have ruled out the network and the user's device.",
+            "Likely root cause: the nightly sync for Macaé finishes at 08:40 instead of 03:00, so morning users hit the database while it's still writing. We have narrowed it down to the volume of historical records in that plant's feed.",
+            "Impact: about twenty plant supervisors lose ten minutes each morning. The workaround — a static export at 07:00 — costs one hour of analyst time per day.",
+            "Unknown: we don't yet know whether the volume problem will recur when the fourth plant joins in September."
+          ],
+          "questions": [
+            {
+              "prompt": "What is the symptom, as opposed to the cause?",
+              "options": [
+                { "text": "The forty-second load time for Macaé.", "correct": true },
+                { "text": "The nightly sync finishing late.", "correct": false },
+                { "text": "The volume of historical records." }
+              ],
+              "why": "Sintoma é o que o usuário vê. A causa é o sync terminando às 08:40."
+            },
+            {
+              "prompt": "What has been ruled out?",
+              "options": [
+                { "text": "The network and the user's device.", "correct": true },
+                { "text": "The nightly sync.", "correct": false },
+                { "text": "The June release." }
+              ],
+              "why": "\"We have ruled out the network and the user's device.\" Dizer o que já foi descartado economiza a reunião inteira."
+            },
+            {
+              "prompt": "Why is the static export called a workaround?",
+              "options": [
+                { "text": "Because it fixes the root cause.", "correct": false },
+                { "text": "Because it hides the symptom without fixing the cause, and has its own cost.", "correct": true },
+                { "text": "Because it is temporary by contract." }
+              ],
+              "why": "Workaround compra tempo e cobra por isso — aqui, uma hora de analista por dia."
+            }
+          ],
+          "explanation": "Sintoma · o que já foi descartado · causa provável · impacto · o desconhecido. É o molde de qualquer problem statement."
+        },
+        {
+          "type": "categorize",
+          "title": "Sintoma, causa ou impacto?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada frase.",
+          "categories": [
+            { "id": "symptom", "name": "Symptom · sintoma", "short": "Symptom" },
+            { "id": "cause", "name": "Root cause · causa", "short": "Cause" },
+            { "id": "impact", "name": "Impact · impacto", "short": "Impact" }
+          ],
+          "items": [
+            { "text": "The dashboard takes forty seconds to load.", "cat": "symptom" },
+            { "text": "The nightly sync finishes at 08:40 instead of 03:00.", "cat": "cause" },
+            { "text": "Twenty supervisors lose ten minutes each morning.", "cat": "impact" },
+            { "text": "Users are complaining in the plant WhatsApp group.", "cat": "symptom" },
+            { "text": "The historical feed volume grew fourfold after the June release.", "cat": "cause" },
+            { "text": "An analyst spends one hour a day on the manual export.", "cat": "impact" }
+          ],
+          "explanation": "Se você conserta um sintoma, ele volta. Se você não sabe o impacto, ninguém aprova o conserto."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A palavra exata da investigação",
+          "badge": "Escolha certa",
+          "instruction": "Escolha o verbo que um time técnico anglófono usaria.",
+          "items": [
+            { "prompt": "We've ___ out the network as a cause.", "options": [{ "text": "ruled", "correct": true }, { "text": "taken" }, { "text": "cut" }], "why": "<strong>to rule out</strong> = descartar uma hipótese. É o verbo consagrado." },
+            { "prompt": "We ___ it down to two data sources.", "options": [{ "text": "narrowed", "correct": true }, { "text": "reduced" }, { "text": "shortened" }], "why": "<strong>to narrow down</strong> = estreitar a lista de suspeitos." },
+            { "prompt": "Let's ___ that assumption before we build anything.", "options": [{ "text": "test", "correct": true }, { "text": "prove" }, { "text": "confirm" }], "why": "Testar é neutro. \"Prove\" e \"confirm\" já assumem o resultado." },
+            { "prompt": "The manual export is a ___ , not a fix.", "options": [{ "text": "workaround", "correct": true }, { "text": "turnaround" }, { "text": "walkaround" }], "why": "Workaround = solução que contorna. Turnaround é recuperação; walkaround é inspeção." },
+            { "prompt": "The problem only ___ in the morning.", "options": [{ "text": "occurs", "correct": true }, { "text": "happens to" }, { "text": "arrives" }], "why": "<strong>to occur</strong> é o verbo neutro para um fenômeno técnico." }
+          ],
+          "explanation": "Rule out · narrow down · test the assumption · workaround. Quatro expressões que estruturam qualquer investigação."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Separar sintoma de causa.", "answer": "Slow loading is the symptom but the root cause is the nightly sync", "extra": ["causing", "of"] },
+            { "hint": "Dizer o que já foi descartado.", "answer": "We have ruled out the network and the user device", "extra": ["ruling", "from"] },
+            { "hint": "Nomear o desconhecido.", "answer": "What we still do not know is whether it will recur in September", "extra": ["knowing", "recurring"] }
+          ],
+          "explanation": "Sintoma versus causa, o que foi descartado, o que falta saber. Três frases e o problema está enquadrado."
+        },
+        {
+          "type": "highlightPick",
+          "title": "Onde estão as premissas?",
+          "badge": "Clique nas palavras",
+          "goal": "Clique nas palavras que sinalizam uma PREMISSA — algo assumido, não verificado.",
+          "instruction": "Toque em cada palavra que indica suposição em vez de fato.",
+          "text": "The sync presumably finishes before six . We assume the volume stays flat until September , and the team believes the fourth plant will behave like the others . The measured load time is forty seconds .",
+          "targets": ["presumably", "assume", "believes"],
+          "explanation": "Presumably, assume e believe marcam o que ainda não foi testado. \"Measured\" é o único fato do parágrafo."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre como esses termos são usados de verdade.",
+          "items": [
+            { "text": "A workaround fixes the root cause.", "answer": false, "why": "Ele contorna o sintoma. Se resolvesse a causa, seria a fix." },
+            { "text": "\"To rule out\" means to confirm something is the cause.", "answer": false, "why": "É o contrário: descartar como causa." },
+            { "text": "Stating what you don't know makes you look less prepared.", "answer": false, "why": "Ao contrário: nomear o desconhecido é sinal de rigor, e evita decisão em cima de premissa." },
+            { "text": "A symptom can have more than one root cause.", "answer": true, "why": "Frequentemente tem — por isso se estreita a lista em vez de escolher a primeira hipótese." },
+            { "text": "\"Blind spot\" means an error someone made.", "answer": false, "why": "É uma área que ninguém está olhando — não um erro cometido." }
+          ],
+          "explanation": "Workaround, rule out, blind spot. Três termos que aparecem em toda investigação técnica em inglês."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I state the symptom separately from the root cause.", "pt": "Enuncio o sintoma separado da causa raiz." },
+            { "en": "I say what we've already ruled out, to save the room time.", "pt": "Digo o que já descartamos, para economizar o tempo da sala." },
+            { "en": "I quantify the impact before proposing a fix.", "pt": "Quantifico o impacto antes de propor a solução." },
+            { "en": "I name my assumptions out loud instead of hiding them.", "pt": "Nomeio minhas premissas em voz alta em vez de escondê-las." }
+          ],
+          "doneMessage": "problema bem posto. A próxima lição é sobre escolher entre as opções e comunicar a decisão.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre enunciar problemas em inglês",
+        "intro": "Quatro hábitos de linguagem que economizam meia hora de reunião.",
+        "cards": [
+          { "en": "\"Root cause\" is always singular in the phrase, even when there are several: \"the root cause analysis showed three factors\".", "pt": "\"Root cause\" fica no singular na expressão, mesmo com vários fatores: \"the root cause analysis showed three factors\"." },
+          { "en": "English-speaking engineers say \"it's a symptom, not the problem\" constantly. It's the fastest way to redirect a discussion that jumped to solutions.", "pt": "Engenheiros anglófonos dizem \"it's a symptom, not the problem\" o tempo todo. É o jeito mais rápido de redirecionar quem pulou para a solução." },
+          { "en": "\"Let's test that assumption\" is neutral and non-confrontational — it questions the idea without questioning the person.", "pt": "\"Let's test that assumption\" é neutro e não confrontador — questiona a ideia sem questionar a pessoa." },
+          { "en": "\"What would have to be true for that to work?\" is the single best question in a problem-solving meeting. Learn it word for word.", "pt": "\"What would have to be true for that to work?\" é a melhor pergunta de uma reunião de solução de problema. Decore palavra por palavra." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now put a problem on the table so clearly that the room starts solving it immediately.",
+        "pt": "Agora você põe um problema na mesa com tanta clareza que a sala já começa a resolvê-lo."
+      }
+    },
+    {
+      "title": "Weighing Options and Committing",
+      "focus": "Comparar alternativas, recomendar e comunicar uma decisão que não agrada a todos",
+      "character": "gb-male",
+      "objective": "Apresentar duas ou três opções com seus trade-offs, fazer uma recomendação clara e comunicar a decisão de forma que o time a sustente.",
+      "intro": [
+        "Presenting options is easy. Recommending one is where people go quiet.",
+        "In English, the safe-looking move — <em>\"here are three options, what do you think?\"</em> — is actually the weak one. Senior people want your recommendation, and they want the reasoning that would change it.",
+        "The strong pattern is: <strong>options → trade-offs → recommendation → what would change my mind</strong>. That last part is what makes you sound confident rather than stubborn."
+      ],
+      "introPt": [
+        "Apresentar opções é fácil. Recomendar uma é onde as pessoas emudecem.",
+        "Em inglês, o movimento que parece seguro — <em>\"here are three options, what do you think?\"</em> — é justamente o fraco. Gente sênior quer sua recomendação, e quer o raciocínio que a mudaria.",
+        "O padrão forte é: <strong>opções → trade-offs → recomendação → o que me faria mudar de ideia</strong>. Essa última parte é o que faz você soar confiante em vez de teimosa."
+      ],
+      "vocab": [
+        { "en": "to weigh up the options", "pt": "pesar as alternativas", "example": "Let's weigh up the two options quickly." },
+        { "en": "pros and cons", "pt": "prós e contras", "example": "The pros and cons are on the second slide." },
+        { "en": "my recommendation is", "pt": "minha recomendação é", "example": "My recommendation is option B." },
+        { "en": "on balance", "pt": "no conjunto, pesando tudo", "example": "On balance, B carries less risk." },
+        { "en": "downside", "pt": "o ponto negativo de uma escolha", "example": "The downside of B is the extra cost." },
+        { "en": "to commit to a decision", "pt": "assumir a decisão", "example": "We've committed to B — let's not reopen it." },
+        { "en": "to reopen a decision", "pt": "reabrir uma decisão", "example": "I don't want to reopen this in two weeks." },
+        { "en": "to get behind a decision", "pt": "apoiar a decisão tomada", "example": "I'd like everyone to get behind it now." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a recomendação na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas frases na ordem que faz uma recomendação ser aceita.",
+          "items": [
+            "We have two realistic options for the alerts module.",
+            "Option A is the vendor's built-in alerts: fast to deploy, but it locks us into their schema.",
+            "Option B is our own alert service: three weeks longer, but it works for the fourth plant too.",
+            "My recommendation is B. On balance, three weeks now saves us a rebuild in September.",
+            "What would change my mind is if the September date moves — then A becomes the right call."
+          ],
+          "explanation": "Opções → trade-off de cada → recomendação com o \"on balance\" → a condição que a inverteria."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual versão pesa mais na sala?",
+          "badge": "A ou B",
+          "instruction": "As duas são honestas. Escolha a que faz a decisão andar.",
+          "items": [
+            { "prompt": "Apresentando duas opções ao seu diretor.", "a": "Here are the options — what do you think?", "b": "Here are the two options. My recommendation is B, and I'll tell you what would change my mind.", "correct": "b", "why": "Recomendar não tira a decisão dele. Não recomendar tira o valor de você ter analisado." },
+            { "prompt": "Reconhecendo o custo da sua opção.", "a": "Option B has no real downside.", "b": "The downside of B is three extra weeks. I think it's worth it, and here's why.", "correct": "b", "why": "Quem esconde o downside perde credibilidade quando ele aparece — e ele sempre aparece." },
+            { "prompt": "A decisão foi por A, você preferia B.", "a": "Ok, but for the record I recommended B.", "b": "Understood — I'll get behind A. I'd like the schema risk logged so we see it early.", "correct": "b", "why": "Apoiar e registrar o risco. \"For the record\" te posiciona como quem espera o fracasso." },
+            { "prompt": "Alguém quer reabrir uma decisão já tomada.", "a": "We already decided, let's move on.", "b": "We committed to B last month. Has something changed that we didn't know then? If not, I'd rather not reopen it.", "correct": "b", "why": "Abre uma porta legítima (informação nova) e fecha a ilegítima (mudar de ideia)." }
+          ],
+          "explanation": "Recomende, mostre o custo, apoie o que foi decidido, e só reabra com informação nova."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a recomendação",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "We've ___ up two options for the alerts module. Option A is faster to deploy; the ___ is that it ties us to the vendor's schema. Option B takes three weeks longer but scales to the fourth plant. ___ balance, my recommendation is B. What would ___ my mind is a change to the September date. If we go with B, I'd like us to ___ to it and not reopen it in a month.",
+          "gaps": [
+            { "options": ["weighed", "measured", "thought"], "answer": "weighed", "why": "to weigh up options = pesar alternativas." },
+            { "options": ["downside", "bad side", "negative"], "answer": "downside", "why": "Downside é o termo padrão para o custo de uma escolha." },
+            { "options": ["On", "In", "At"], "answer": "On", "why": "\"On balance\" — no conjunto." },
+            { "options": ["change", "turn", "move"], "answer": "change", "why": "to change one's mind é a colocação fixa." },
+            { "options": ["commit", "compromise", "engage"], "answer": "commit", "why": "commit TO a decision. \"Compromise\" é falso amigo: significa ceder, não comprometer-se." }
+          ],
+          "explanation": "Esse parágrafo é um molde. Troque as opções e ele serve para qualquer decisão."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Comunicando uma decisão impopular",
+          "badge": "Conversa",
+          "situation": "Você decidiu construir o serviço de alertas internamente (opção B). Isso atrasa a entrega em três semanas, e o time de operações queria a solução rápida.",
+          "turns": [
+            {
+              "who": "Head of Operations",
+              "them": "Three more weeks? My supervisors have been asking for alerts since March.",
+              "options": [
+                { "text": "I know, and I'm sorry. It was a close call and I chose B because the vendor option would need a full rebuild when the fourth plant joins in September.", "correct": true, "why": "Reconhece a espera, admite que foi apertado e dá a razão concreta — não a defesa genérica." },
+                { "text": "It's the technically correct decision.", "why": "\"Tecnicamente correto\" não fala com a dor dele, e soa como se o problema dele fosse secundário." },
+                { "text": "It wasn't my decision alone.", "why": "Diluir a autoria de uma decisão que é sua destrói a sua posição na próxima." }
+              ]
+            },
+            {
+              "who": "Head of Operations",
+              "them": "September is your problem. March was mine. Can't we do the quick one now and rebuild later?",
+              "options": [
+                { "text": "That's not how it works.", "why": "Descarta a proposta dele sem examiná-la — e ela não é absurda." },
+                { "text": "I looked at that. Doing both costs roughly six weeks of the same people's time, and the rebuild lands in the middle of the September cutover. That's why I ruled it out.", "correct": true, "why": "Mostra que a ideia dele foi considerada, com números, e explica por que foi descartada." },
+                { "text": "Maybe, let me think about it again.", "why": "Reabrir uma decisão sem informação nova só adia o mesmo desconforto." }
+              ]
+            },
+            {
+              "who": "Head of Operations",
+              "them": "Fine. But my supervisors will hear it from you, not from me.",
+              "options": [
+                { "text": "Fair. I'll join your Thursday call and explain it myself — including what they get in the meantime.", "correct": true, "why": "Assume o custo da própria decisão e ainda traz algo para o intervalo." },
+                { "text": "That's a management responsibility, it should come from you.", "why": "Empurrar a parte desconfortável para quem discordou queima a relação." },
+                { "text": "I'll send an email explaining everything.", "why": "E-mail para uma decisão impopular é como as coisas viram ressentimento." }
+              ]
+            }
+          ],
+          "explanation": "Reconhecer o custo para o outro → mostrar que a alternativa dele foi avaliada → assumir a comunicação."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que faz uma recomendação ser aceita?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "You're recommending one of two technical options to a sponsor with ten minutes.",
+          "options": [
+            { "text": "A clear statement of which one you recommend.", "correct": true },
+            { "text": "The downside of your own recommendation, stated by you first.", "correct": true },
+            { "text": "The condition that would change your recommendation.", "correct": true },
+            { "text": "Every technical detail you considered.", "correct": false },
+            { "text": "What it costs to delay the decision.", "correct": true },
+            { "text": "Leaving the decision entirely open so nobody can blame you.", "correct": false }
+          ],
+          "explanation": "Recomendação, downside assumido, condição de mudança e custo de adiar. O resto vai em anexo."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "We need to compromise with this decision and stop reopening it.", "wrong": "compromise", "fix": "commit to", "why": "Falso amigo clássico: comprometer-se é <strong>commit</strong>. \"Compromise\" é ceder / meio-termo." },
+            { "sentence": "In balance, option B carries less risk.", "wrong": "In", "fix": "On", "why": "A expressão fixa é \"on balance\"." },
+            { "sentence": "I recommend to build the service internally.", "wrong": "to", "fix": "(nada)", "why": "Recommend pede gerúndio ou that-clause: \"I recommend building…\"." },
+            { "sentence": "The decision was took last month.", "wrong": "took", "fix": "taken/made", "why": "Particípio: was made (ou was taken, no britânico)." },
+            { "sentence": "Let's discuss the pros and contras.", "wrong": "contras", "fix": "cons", "why": "Em inglês é \"pros and cons\". Contras não existe." }
+          ],
+          "explanation": "\"Compromise\" e \"recommend to\" são os dois erros mais caros dessa lista — mudam o sentido da frase."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Essas cinco frases fazem uma recomendação inteira.",
+          "sentences": [
+            "We've weighed up two options for the alerts module.",
+            "The downside of option B is three extra weeks.",
+            "On balance, my recommendation is B.",
+            "What would change my mind is a change to the September date.",
+            "We've committed to B — I'd rather not reopen it without new information."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I always give a recommendation, not just a list of options.", "pt": "Sempre dou uma recomendação, não só uma lista de opções." },
+            { "en": "I state the downside of my own recommendation before anyone else does.", "pt": "Digo o ponto fraco da minha própria recomendação antes que outra pessoa diga." },
+            { "en": "I say what would change my mind.", "pt": "Digo o que me faria mudar de ideia." },
+            { "en": "I use \"commit to\", never \"compromise with\", for a decision.", "pt": "Uso \"commit to\", nunca \"compromise with\", para uma decisão." },
+            { "en": "I get behind a decision I lost, and log the risk instead of repeating my objection.", "pt": "Apoio a decisão que perdi e registro o risco em vez de repetir a objeção." }
+          ],
+          "doneMessage": "decisão comunicada. O próximo tópico é apresentar — estrutura, dados e Q&A.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre decidir em inglês",
+        "intro": "Quatro expressões que separam quem analisa de quem decide.",
+        "cards": [
+          { "en": "\"What would change my mind is…\" is the most senior-sounding sentence in this lesson. It shows conviction and openness at the same time.", "pt": "\"What would change my mind is…\" é a frase mais sênior desta lição. Mostra convicção e abertura ao mesmo tempo." },
+          { "en": "\"It was a close call\" tells people the decision was genuinely hard. It buys enormous goodwill from whoever lost the argument.", "pt": "\"It was a close call\" avisa que a decisão foi realmente difícil. Compra uma boa vontade enorme de quem perdeu." },
+          { "en": "\"Disagree and commit\" is a standard phrase in global companies: you argued, you lost, you now execute fully.", "pt": "\"Disagree and commit\" é expressão corrente em empresas globais: você discordou, perdeu e agora executa por inteiro." },
+          { "en": "\"Compromise\" never means \"to commit\" in English. \"I'm compromised\" can even suggest your integrity is in question — a costly mistake.", "pt": "\"Compromise\" nunca significa comprometer-se. \"I'm compromised\" pode até sugerir que sua integridade está em xeque — um erro caro." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now recommend, decide and defend a decision in English — and keep the people who disagreed.",
+        "pt": "Agora você recomenda, decide e sustenta uma decisão em inglês — e mantém do seu lado quem discordou."
+      }
+    }
+  ]
+}

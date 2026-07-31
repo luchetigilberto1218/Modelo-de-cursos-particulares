@@ -1,0 +1,340 @@
+{
+  "topic": "Creating AI solutions",
+  "lessons": [
+    {
+      "title": "The Language of AI Projects",
+      "focus": "Modelo, dados de treino, inferência e as palavras que evitam mal-entendidos caros",
+      "character": "us-female",
+      "objective": "Discutir um projeto de IA em inglês usando os termos corretos — e distinguir o que a tecnologia realmente faz do que as pessoas acham que ela faz.",
+      "intro": [
+        "AI vocabulary is where the most expensive misunderstandings in business English happen right now. Someone says \"the model learns from our data\" and three people in the room hear three different things.",
+        "The words that actually matter are few: <strong>model</strong>, <strong>training data</strong>, <strong>inference</strong>, <strong>accuracy</strong>, <strong>hallucination</strong>, <strong>human in the loop</strong>.",
+        "Using them precisely does two things: it makes you credible with the technical team, and it stops your business stakeholders expecting magic."
+      ],
+      "introPt": [
+        "O vocabulário de IA é onde acontecem hoje os mal-entendidos mais caros do inglês de negócios. Alguém diz \"o modelo aprende com nossos dados\" e três pessoas na sala ouvem três coisas diferentes.",
+        "As palavras que realmente importam são poucas: <strong>model</strong>, <strong>training data</strong>, <strong>inference</strong>, <strong>accuracy</strong>, <strong>hallucination</strong>, <strong>human in the loop</strong>.",
+        "Usá-las com precisão faz duas coisas: te dá credibilidade com o time técnico e impede que as áreas de negócio esperem mágica."
+      ],
+      "vocab": [
+        { "en": "model", "pt": "o sistema treinado que faz previsões", "example": "The model predicts failure two weeks ahead." },
+        { "en": "training data", "pt": "dados usados para treinar", "example": "Our training data covers three years of sensor readings." },
+        { "en": "inference", "pt": "o uso do modelo para gerar uma resposta", "example": "Inference costs are per request, not per user." },
+        { "en": "accuracy / false positive", "pt": "acurácia / falso positivo", "example": "Accuracy is 91%, but false positives are the real cost." },
+        { "en": "hallucination", "pt": "resposta inventada e plausível", "example": "The risk with generative models is hallucination." },
+        { "en": "human in the loop", "pt": "humano validando antes da ação", "example": "We keep a human in the loop for any shutdown decision." },
+        { "en": "to fine-tune", "pt": "ajustar um modelo com dados próprios", "example": "We fine-tuned it on our maintenance logs." },
+        { "en": "proof of concept (PoC)", "pt": "prova de conceito", "example": "It's a PoC — not production, not yet." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "training data", "right": "os exemplos com os quais o modelo aprendeu os padrões" },
+            { "left": "inference", "right": "o momento em que o modelo é usado para responder algo novo" },
+            { "left": "false positive", "right": "o alarme que dispara quando não havia nada errado" },
+            { "left": "hallucination", "right": "uma resposta inventada que parece completamente plausível" },
+            { "left": "human in the loop", "right": "uma pessoa que valida antes de a decisão virar ação" },
+            { "left": "fine-tuning", "right": "ajustar um modelo já existente com dados da própria empresa" }
+          ],
+          "explanation": "Falso positivo é o custo escondido de todo sistema de alerta. Um modelo com 95% de acurácia pode ainda inundar a planta de alarmes falsos."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual explicação é honesta com o negócio?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que não cria expectativa falsa.",
+          "items": [
+            { "prompt": "Explicando o que o modelo de manutenção preditiva faz.", "a": "The AI knows when a pump is going to fail.", "b": "The model estimates the probability that a pump fails in the next two weeks, based on patterns in three years of sensor data. It's often right and sometimes wrong.", "correct": "b", "why": "\"Knows\" cria uma expectativa que nenhum modelo cumpre. Probabilidade e base de dados é o que ele realmente faz." },
+            { "prompt": "Falando de acurácia.", "a": "The model is 91% accurate, so it's reliable.", "b": "It's 91% accurate. But at our alert volume, that still means about twelve false alarms a week — that's what the supervisors will actually experience.", "correct": "b", "why": "Acurácia sozinha engana. Traduzir em alarmes falsos por semana é o que a planta vai sentir." },
+            { "prompt": "Falando de um chatbot para procedimentos.", "a": "It answers questions about our procedures.", "b": "It answers from our procedure documents, and it will occasionally produce a confident wrong answer. That's why every safety-critical answer shows the source document.", "correct": "b", "why": "Nomear a alucinação e mostrar a mitigação é o que permite usar generativo em contexto industrial." },
+            { "prompt": "Status de um piloto.", "a": "The AI is working, we just need to deploy it.", "b": "It's a proof of concept on historical data. Production needs live data, monitoring and a human-in-the-loop step — that's the real work.", "correct": "b", "why": "A distância entre PoC e produção é onde a maioria dos projetos de IA morre. Dizer isso cedo protege o projeto." }
+          ],
+          "explanation": "Probabilidade em vez de certeza · acurácia traduzida em experiência · alucinação nomeada · PoC não é produção."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia a proposta de PoC",
+          "badge": "Leia e responda",
+          "heading": "Proof of concept · Predictive maintenance for ESP pumps",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Objective: estimate the probability that an ESP pump fails within 14 days, using vibration, temperature and current draw from the last three years.",
+            "Success criteria for the PoC: on held-out data from 2025, the model must catch at least 70% of actual failures with no more than fifteen false alarms per month across the fleet. Anything above that alarm rate will not be used by supervisors, however accurate it looks on paper.",
+            "Human in the loop: the model never triggers a shutdown. It raises a flag; a reliability engineer reviews it and decides.",
+            "Out of scope: any pump type other than ESP, any plant other than Macaé, and any automated action.",
+            "Known limitation: the training data contains only eleven confirmed failures of one specific type. For that failure mode, the model's estimates should be treated as weak."
+          ],
+          "questions": [
+            {
+              "prompt": "Why is there a limit on false alarms in the success criteria?",
+              "options": [
+                { "text": "Because supervisors stop trusting a system that cries wolf, however accurate it is.", "correct": true },
+                { "text": "Because false alarms are expensive to process.", "correct": false },
+                { "text": "Because the model can't handle more." }
+              ],
+              "why": "Adoção é o critério real. Um modelo tecnicamente bom e ignorado pela planta vale zero."
+            },
+            {
+              "prompt": "What is the role of the reliability engineer?",
+              "options": [
+                { "text": "To review each flag and make the decision — the model never acts on its own.", "correct": true },
+                { "text": "To train the model.", "correct": false },
+                { "text": "To approve the PoC." }
+              ],
+              "why": "Human in the loop: o modelo sinaliza, a pessoa decide. Em contexto industrial isso quase nunca é negociável."
+            },
+            {
+              "prompt": "Why is the known limitation stated up front?",
+              "options": [
+                { "text": "Because eleven examples is too few to learn a pattern reliably, and hiding that would mislead users.", "correct": true },
+                { "text": "To lower expectations in general.", "correct": false },
+                { "text": "Because the data is wrong." }
+              ],
+              "why": "Poucos exemplos de um modo de falha é a limitação mais comum e mais escondida em projetos industriais de IA."
+            }
+          ],
+          "explanation": "Objetivo · critério que inclui adoção · humano no circuito · fora de escopo · limitação declarada. Cinco blocos e um PoC honesto."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre o uso correto desses termos.",
+          "items": [
+            { "text": "A model with 95% accuracy will rarely produce false alarms.", "answer": false, "why": "Depende do volume. 5% de erro sobre milhares de leituras diárias pode ser dezenas de alarmes falsos por dia." },
+            { "text": "\"Hallucination\" applies to generative models producing confident, invented answers.", "answer": true, "why": "E o adjetivo importante é \"confident\": a resposta parece certa, e é isso que a torna perigosa." },
+            { "text": "Fine-tuning means building a model from scratch.", "answer": false, "why": "É ajustar um modelo existente com dados próprios. Construir do zero é outra coisa, e muito mais cara." },
+            { "text": "A proof of concept is ready for production use.", "answer": false, "why": "PoC prova que é possível. Produção exige dados ao vivo, monitoramento, tratamento de falha e adoção." },
+            { "text": "\"Human in the loop\" means a person validates before action is taken.", "answer": true, "why": "E em contexto de HSE ou de parada de equipamento, é praticamente obrigatório." }
+          ],
+          "explanation": "Acurácia sem volume engana · alucinação é confiante · fine-tune ≠ do zero · PoC ≠ produção."
+        },
+        {
+          "type": "flowChoice",
+          "title": "O diretor quer IA em tudo",
+          "badge": "Conversa",
+          "situation": "Um diretor voltou de uma conferência empolgado. Ele quer \"IA para prever tudo na planta até o fim do ano\".",
+          "turns": [
+            {
+              "who": "Director",
+              "them": "I want AI predicting equipment failures across all our assets by December.",
+              "options": [
+                { "text": "That's not realistic.", "why": "Você pode até estar certa, mas ele vai ouvir resistência e procurar quem diga sim." },
+                { "text": "Let's start where the data can support it. We have three years of good data on ESP pumps and eleven confirmed failures of one type. For most other assets we don't have enough labelled failures to learn from.", "correct": true, "why": "Não é um não. É \"aqui é onde os dados permitem\" — e ele aprende a regra sozinho." },
+                { "text": "Yes, we can look into that.", "why": "Concordar com o que não se cumpre é como projetos de IA queimam o orçamento e a confiança." }
+              ]
+            },
+            {
+              "who": "Director",
+              "them": "Can't the AI just learn from whatever data we have?",
+              "options": [
+                { "text": "It learns patterns from examples of things that already went wrong. If a failure mode has happened eleven times in three years, the model has eleven examples — that's not enough to be confident.", "correct": true, "why": "Explica a limitação real sem jargão, usando um número que ele consegue guardar." },
+                { "text": "It's more complicated than that.", "why": "Soa condescendente e não ensina nada." },
+                { "text": "We'd need much more data.", "why": "Vago. Quanto? De quê? Ele não sai da conversa sabendo o que fazer." }
+              ]
+            },
+            {
+              "who": "Director",
+              "them": "So what can we actually deliver by December?",
+              "options": [
+                { "text": "A production system on ESP pumps at Macaé, with a reliability engineer reviewing each flag. Plus a data plan so that next year we can extend to two more asset types.", "correct": true, "why": "Entrega concreta este ano + o caminho para a ambição dele no ano que vem. É assim que se diz não sem dizer não." },
+                { "text": "A proof of concept.", "why": "Depois de tudo isso, um PoC soa como recuo. Ele quer algo em produção." },
+                { "text": "It depends on the data team's capacity.", "why": "Transfere a resposta. Ele veio até você justamente para não ter que perguntar a mais gente." }
+              ]
+            }
+          ],
+          "explanation": "Comece pelos dados que existem · explique a limitação com um número · ofereça entrega concreta + caminho para a ambição."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "We trained the model with three years of datas.", "wrong": "datas", "fix": "data", "why": "Data é incontável em inglês corporativo: \"three years of data\". Nunca \"datas\"." },
+            { "sentence": "The IA predicts failures two weeks ahead.", "wrong": "IA", "fix": "AI", "why": "Em inglês a sigla é AI (artificial intelligence). \"IA\" é a ordem portuguesa." },
+            { "sentence": "The model has an accuracy of 91 per cent of precision.", "wrong": "of", "fix": "(nada)", "why": "\"An accuracy of 91 per cent\" já basta — \"of precision\" é redundante e confunde dois conceitos diferentes." },
+            { "sentence": "We need to train the model with more informations.", "wrong": "informations", "fix": "information", "why": "Information é incontável. Nunca vai ao plural." },
+            { "sentence": "The algorithm learns alone, without supervision.", "wrong": "alone", "fix": "on its own", "why": "\"Alone\" é solitário. Aprender sozinho é \"on its own\" — e, tecnicamente, \"unsupervised learning\"." }
+          ],
+          "explanation": "\"Datas\" e \"informations\" são os dois plurais impossíveis que mais aparecem em texto técnico de brasileiro."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I say a model estimates a probability, not that it \"knows\".", "pt": "Digo que um modelo estima uma probabilidade, não que ele \"sabe\"." },
+            { "en": "I translate accuracy into false alarms per week.", "pt": "Traduzo acurácia em alarmes falsos por semana." },
+            { "en": "I can explain hallucination and how we mitigate it.", "pt": "Sei explicar alucinação e como a mitigamos." },
+            { "en": "I never let a PoC be mistaken for a production system.", "pt": "Nunca deixo confundirem um PoC com um sistema em produção." },
+            { "en": "I say \"data\" and \"information\", never \"datas\" or \"informations\".", "pt": "Digo \"data\" e \"information\", nunca \"datas\" nem \"informations\"." }
+          ],
+          "doneMessage": "vocabulário de IA no lugar. A próxima lição é sobre levar isso do piloto à produção.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre falar de IA em inglês",
+        "intro": "Quatro precisões que te separam de quem só repete o que ouviu numa conferência.",
+        "cards": [
+          { "en": "\"Data\" is uncountable in business English: \"the data shows\" (US) or \"the data show\" (formal UK) — but never \"datas\".", "pt": "\"Data\" é incontável no inglês de negócios: \"the data shows\" (EUA) ou \"the data show\" (britânico formal) — mas nunca \"datas\"." },
+          { "en": "Accuracy alone is nearly meaningless for alerting. Always ask \"at our volume, how many false alarms per week is that?\"", "pt": "Acurácia sozinha é quase inútil para alertas. Sempre pergunte \"no nosso volume, quantos alarmes falsos por semana isso dá?\"." },
+          { "en": "\"Human in the loop\" is the phrase that makes AI acceptable in safety-critical industries. Learn to say it early in any proposal.", "pt": "\"Human in the loop\" é a expressão que torna IA aceitável em indústrias críticas de segurança. Aprenda a dizê-la cedo em qualquer proposta." },
+          { "en": "In English, saying \"the AI decides\" is a red flag in any regulated industry. Say \"the model flags, the engineer decides\".", "pt": "Em inglês, dizer \"the AI decides\" é sinal vermelho em qualquer indústria regulada. Diga \"the model flags, the engineer decides\"." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now discuss AI in English precisely enough to be trusted by both engineers and directors.",
+        "pt": "Agora você discute IA em inglês com precisão suficiente para ser levada a sério por engenheiros e por diretores."
+      }
+    },
+    {
+      "title": "From Pilot to Production",
+      "focus": "O que separa uma demonstração de um sistema em que a planta confia",
+      "character": "gb-male",
+      "objective": "Explicar em inglês o que falta para um piloto de IA virar produção — e defender esse trabalho, que parece invisível de fora.",
+      "intro": [
+        "The demo always works. That's the problem.",
+        "Between a pilot that impresses a director and a system a plant depends on there is a long list of unglamorous work: <strong>live data pipelines</strong>, <strong>monitoring</strong>, <strong>model drift</strong>, <strong>fallback behaviour</strong>, <strong>user training</strong>.",
+        "None of it is visible in a demo, and all of it is where the budget goes. Being able to name each item in English is what gets that budget approved."
+      ],
+      "introPt": [
+        "A demonstração sempre funciona. Esse é justamente o problema.",
+        "Entre um piloto que impressiona um diretor e um sistema do qual a planta depende existe uma lista longa de trabalho sem glamour: <strong>pipelines de dados ao vivo</strong>, <strong>monitoramento</strong>, <strong>deriva do modelo</strong>, <strong>comportamento de fallback</strong>, <strong>treinamento do usuário</strong>.",
+        "Nada disso aparece numa demo, e é aí que vai o orçamento. Saber nomear cada item em inglês é o que faz esse orçamento ser aprovado."
+      ],
+      "vocab": [
+        { "en": "pipeline", "pt": "o caminho automatizado dos dados", "example": "The pipeline pulls sensor data every fifteen minutes." },
+        { "en": "model drift", "pt": "queda de desempenho com o tempo", "example": "We monitor for drift monthly." },
+        { "en": "to retrain", "pt": "treinar de novo com dados novos", "example": "We retrain quarterly, or sooner if drift is detected." },
+        { "en": "fallback", "pt": "o que o sistema faz quando falha", "example": "If the model is unavailable, the fallback is the old threshold rule." },
+        { "en": "monitoring", "pt": "acompanhamento automático em produção", "example": "Monitoring alerts us before users notice." },
+        { "en": "explainability", "pt": "capacidade de explicar por que o modelo decidiu assim", "example": "Engineers won't act without explainability." },
+        { "en": "to productionise", "pt": "levar para produção de verdade", "example": "Productionising the PoC is three months of work." },
+        { "en": "edge case", "pt": "situação incomum que quebra o padrão", "example": "A pump restarting mid-reading is an edge case." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Isso é piloto ou produção?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada item.",
+          "categories": [
+            { "id": "poc", "name": "Suficiente para o piloto", "short": "Piloto" },
+            { "id": "prod", "name": "Exigido em produção", "short": "Produção" }
+          ],
+          "items": [
+            { "text": "A model trained on a historical export of the data", "cat": "poc" },
+            { "text": "An automated pipeline pulling live sensor data every fifteen minutes", "cat": "prod" },
+            { "text": "Accuracy measured once, on held-out data", "cat": "poc" },
+            { "text": "Monitoring that alerts the team when accuracy drops", "cat": "prod" },
+            { "text": "A notebook a data scientist runs manually", "cat": "poc" },
+            { "text": "A defined fallback for when the model is unavailable", "cat": "prod" },
+            { "text": "Explainability so an engineer can see why a pump was flagged", "cat": "prod" }
+          ],
+          "explanation": "A diferença entre piloto e produção quase nunca é o modelo. É tudo em volta dele."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Defendendo o trabalho invisível",
+          "badge": "A ou B",
+          "instruction": "Escolha a frase que faz alguém aprovar três meses de trabalho que \"já parece pronto\".",
+          "items": [
+            { "prompt": "Por que o piloto não pode ir direto para produção.", "a": "It's not production-ready yet, there's still a lot to do.", "b": "The demo runs on a spreadsheet a data scientist exports by hand. In production, that has to happen every fifteen minutes, alone, at three in the morning, and tell someone when it fails.", "correct": "b", "why": "Concreto e visual. \"Muito a fazer\" não convence ninguém a pagar." },
+            { "prompt": "Explicando model drift.", "a": "Models degrade over time.", "b": "The pumps get maintained, the sensors get replaced, the patterns change. A model trained on 2023 data quietly gets worse — and nothing warns you unless we build the monitoring.", "correct": "b", "why": "Explica por que degrada e por que o silêncio é o perigo." },
+            { "prompt": "Justificando explainability.", "a": "The model should be explainable, it's best practice.", "b": "A reliability engineer will not pull a pump because a screen says so. If we can't show which readings drove the flag, the flag gets ignored — and we've built something nobody uses.", "correct": "b", "why": "Liga explicabilidade a adoção, que é a única moeda que importa." },
+            { "prompt": "Falando de fallback.", "a": "We need a fallback mechanism.", "b": "If the model is down at 3 a.m., the plant can't have a blank screen. The fallback is the old threshold rule — worse, but never silent.", "correct": "b", "why": "\"Nunca silencioso\" é o argumento que qualquer pessoa de operações entende na hora." }
+          ],
+          "explanation": "Traduza cada item invisível numa cena concreta às três da manhã. É assim que se aprova o trabalho que ninguém vê."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o caminho até produção",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas etapas na ordem em que elas realmente acontecem.",
+          "items": [
+            "Proof of concept on historical data, to see if the signal exists at all.",
+            "Automated pipeline so the data arrives live, without anyone exporting anything.",
+            "Explainability, so an engineer can see why a specific pump was flagged.",
+            "Monitoring and a retraining plan, because accuracy quietly decays.",
+            "User training and a defined fallback, before anyone depends on it at 3 a.m."
+          ],
+          "explanation": "Sinal → dado ao vivo → explicação → vigilância → dependência humana. Pular uma etapa é onde os projetos morrem."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o plano de produção",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "To ___ the pilot we need four things. First, a ___ that pulls sensor data every fifteen minutes without anyone exporting a file. Second, ___ , so the reliability engineer can see which readings drove the flag. Third, monitoring for model ___ — accuracy decays as pumps get maintained and sensors get replaced, and we'd ___ the model quarterly. Fourth, a ___ : if the model is unavailable, the old threshold rule takes over, so the plant never sees a blank screen.",
+          "gaps": [
+            { "options": ["productionise", "produce", "make production"], "answer": "productionise", "why": "to productionise (ou productionize, nos EUA) = levar para produção de verdade." },
+            { "options": ["pipeline", "channel", "tube"], "answer": "pipeline", "why": "Pipeline é o termo padrão para o caminho automatizado dos dados." },
+            { "options": ["explainability", "explanation", "clearness"], "answer": "explainability", "why": "Explainability é o termo técnico consagrado." },
+            { "options": ["drift", "decay", "movement"], "answer": "drift", "why": "Model drift é a expressão fixa." },
+            { "options": ["retrain", "train again", "re-do"], "answer": "retrain", "why": "to retrain — uma palavra, sem hífen." },
+            { "options": ["fallback", "backup", "reserve"], "answer": "fallback", "why": "Fallback é o comportamento definido para quando o principal falha." }
+          ],
+          "explanation": "Productionise · pipeline · explainability · drift · retrain · fallback. Seis palavras e o plano de produção está descrito."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que um sistema de IA precisa antes de a planta depender dele?",
+          "instruction": "Marque todas as opções necessárias. Há mais de uma.",
+          "prompt": "The pilot works. What has to exist before supervisors rely on it at 3 a.m.?",
+          "options": [
+            { "text": "A live data pipeline that runs without human intervention.", "correct": true },
+            { "text": "Monitoring that detects accuracy decay before users do.", "correct": true },
+            { "text": "A defined fallback when the model is unavailable.", "correct": true },
+            { "text": "A higher accuracy number than the pilot achieved.", "correct": false },
+            { "text": "Explainability the engineer can act on.", "correct": true },
+            { "text": "A more advanced model architecture.", "correct": false }
+          ],
+          "explanation": "Nada disso é sobre o modelo. Arquitetura mais avançada é a resposta errada quase sempre."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Essas frases defendem um orçamento — precisam sair firmes.",
+          "sentences": [
+            "The demo runs on a spreadsheet someone exports by hand.",
+            "In production that has to happen every fifteen minutes, on its own, at three in the morning.",
+            "Accuracy decays quietly — nothing warns you unless we build the monitoring.",
+            "If we can't show why a pump was flagged, the flag gets ignored.",
+            "The fallback is worse than the model, but it's never silent."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can name the five things that separate a pilot from production.", "pt": "Sei nomear as cinco coisas que separam um piloto da produção." },
+            { "en": "I explain invisible work with a concrete 3 a.m. scenario.", "pt": "Explico o trabalho invisível com um cenário concreto das três da manhã." },
+            { "en": "I can explain model drift and why monitoring matters.", "pt": "Sei explicar model drift e por que o monitoramento importa." },
+            { "en": "I link explainability to adoption, not to best practice.", "pt": "Ligo explicabilidade à adoção, não a boas práticas." }
+          ],
+          "doneMessage": "caminho até produção claro. O próximo tópico é DDD — como o negócio vira software.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre levar IA para produção",
+        "intro": "Quatro verdades que economizam um ano de projeto.",
+        "cards": [
+          { "en": "\"Productionise\" (UK) / \"productionize\" (US) is a real verb in tech English, and it names three months of work in one word.", "pt": "\"Productionise\" (britânico) / \"productionize\" (americano) é verbo de verdade no inglês tech, e nomeia três meses de trabalho numa palavra." },
+          { "en": "\"The demo always works\" is a running joke among data teams — precisely because demos hide everything that's hard.", "pt": "\"The demo always works\" é piada corrente entre times de dados — justamente porque demos escondem tudo que é difícil." },
+          { "en": "Model drift is silent by design: nothing breaks, the answers just get quietly worse. That's why monitoring, not accuracy, is the production question.", "pt": "Model drift é silencioso por natureza: nada quebra, as respostas só pioram em silêncio. Por isso a pergunta de produção é monitoramento, não acurácia." },
+          { "en": "\"Never silent\" is the single most useful design principle to state in English to an operations audience. They will remember it.", "pt": "\"Never silent\" é o princípio de projeto mais útil para enunciar em inglês para uma plateia de operações. Eles vão lembrar." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now defend the three months of invisible work that make an AI system real.",
+        "pt": "Agora você defende os três meses de trabalho invisível que tornam um sistema de IA real."
+      }
+    }
+  ]
+}

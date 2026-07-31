@@ -1,0 +1,337 @@
+{
+  "topic": "Explaining Complex Tech to Non-tech People",
+  "lessons": [
+    {
+      "title": "Translating the Technical",
+      "focus": "Trocar jargão por linguagem comum sem perder a precisão",
+      "character": "us-male",
+      "objective": "Explicar um conceito técnico em inglês simples para alguém de negócio — usando analogia, consequência e zero jargão desnecessário.",
+      "intro": [
+        "The hardest audience is not the technical one. It's the smart, senior, non-technical person who will make a decision based on what you say — and who will not ask you to repeat it.",
+        "The move is not to \"dumb it down\". It's to change the <strong>unit of explanation</strong>: from how it works to what it means.",
+        "An API becomes \"the door our systems use to talk to theirs\". Latency becomes \"the wait\". Technical debt becomes \"the interest we pay every month for shortcuts we took\". Same precision, different unit."
+      ],
+      "introPt": [
+        "A audiência mais difícil não é a técnica. É a pessoa inteligente, sênior e não técnica que vai decidir com base no que você disser — e que não vai pedir para você repetir.",
+        "O movimento não é \"simplificar demais\". É mudar a <strong>unidade da explicação</strong>: de como funciona para o que significa.",
+        "Uma API vira \"a porta que nossos sistemas usam para falar com os deles\". Latência vira \"a espera\". Dívida técnica vira \"os juros que pagamos todo mês por atalhos que tomamos\". Mesma precisão, outra unidade."
+      ],
+      "vocab": [
+        { "en": "in plain English", "pt": "em bom português (lit. inglês simples)", "example": "In plain English: the systems can't talk to each other." },
+        { "en": "think of it as", "pt": "pense nisso como", "example": "Think of it as a translator between two systems." },
+        { "en": "the equivalent of", "pt": "o equivalente a", "example": "It's the equivalent of rebuilding the road while driving on it." },
+        { "en": "under the hood", "pt": "por baixo do capô", "example": "Under the hood it's more complex, but the effect is this." },
+        { "en": "trade-off", "pt": "troca — ganha-se algo, perde-se algo", "example": "The trade-off is speed against accuracy." },
+        { "en": "technical debt", "pt": "dívida técnica", "example": "We're paying technical debt every sprint." },
+        { "en": "to abstract away", "pt": "esconder a complexidade", "example": "The app abstracts away all that complexity." },
+        { "en": "so what that means for you is", "pt": "o que isso significa para você é", "example": "So what that means for you is two fewer clicks." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Traduza o jargão",
+          "instruction": "Clique na caixa à direita e escolha a explicação em linguagem comum para cada termo.",
+          "pairs": [
+            { "left": "API", "right": "a porta pela qual dois sistemas trocam informação de forma combinada" },
+            { "left": "latency", "right": "o tempo de espera entre pedir algo e receber" },
+            { "left": "technical debt", "right": "o custo recorrente dos atalhos que tomamos para entregar rápido" },
+            { "left": "scalability", "right": "se continua funcionando quando o volume dobra" },
+            { "left": "integration", "right": "fazer dois sistemas que não se conhecem trabalharem juntos" },
+            { "left": "downtime", "right": "o tempo em que o sistema não está disponível para usar" }
+          ],
+          "explanation": "Note que nenhuma explicação usa outro termo técnico. Essa é a regra: traduzir jargão com jargão não traduz nada."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual explicação funciona com um diretor?",
+          "badge": "A ou B",
+          "instruction": "As duas são corretas. Escolha a que a pessoa não técnica vai realmente entender.",
+          "items": [
+            { "prompt": "Explicando por que a integração é difícil.", "a": "Their schema is denormalised and there's no idempotency on the endpoints.", "b": "Their system sends the same record more than once, and we have no reliable way to tell duplicates apart. That's the hard part.", "correct": "b", "why": "Mesma informação, sem uma palavra que exija tradução." },
+            { "prompt": "Explicando dívida técnica.", "a": "We have significant technical debt in the reporting layer.", "b": "Every shortcut we took last year now costs us about a day a week. That's the interest we're paying.", "correct": "b", "why": "A metáfora de juros funciona com qualquer pessoa de negócio — é a língua dela." },
+            { "prompt": "Explicando por que a solução rápida sai cara.", "a": "It would create coupling with the vendor schema.", "b": "It's the equivalent of building an extension that only fits this one house. When we move, we rebuild it.", "correct": "b", "why": "Analogia concreta com consequência. \"Coupling\" não significa nada para quem não é técnico." },
+            { "prompt": "Fechando a explicação.", "a": "So that's the architecture.", "b": "So what that means for you is: one decision now, or three weeks of rework in September.", "correct": "b", "why": "Toda explicação técnica precisa terminar na decisão que a pessoa tem que tomar." }
+          ],
+          "explanation": "Sem jargão · analogia concreta · custo em tempo ou dinheiro · e o que isso significa para quem ouve."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte a explicação na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Explicar algo técnico segue uma sequência. Clique nas frases na ordem.",
+          "items": [
+            "In plain English: our system and the vendor's can't talk to each other yet.",
+            "Think of it as two people with no common language — we need a translator in between.",
+            "Building that translator is about three weeks of work.",
+            "Under the hood there's more to it, but that's the shape of the problem.",
+            "So what that means for you is: alerts in July instead of June, and no rebuild in September."
+          ],
+          "explanation": "Frase simples → analogia → custo → aviso de que há mais → o que significa para quem ouve."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que ajuda uma pessoa não técnica?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "You're explaining a system integration to a plant manager who has ten minutes.",
+          "options": [
+            { "text": "An analogy from something physical they already know.", "correct": true },
+            { "text": "The cost in time or money.", "correct": true },
+            { "text": "The full sequence of technical steps.", "correct": false },
+            { "text": "Saying explicitly what decision they need to make.", "correct": true },
+            { "text": "Acronyms, defined the first time you use them.", "correct": false },
+            { "text": "What breaks if we do nothing.", "correct": true }
+          ],
+          "explanation": "Analogia, custo, decisão e consequência de não agir. Siglas — mesmo definidas — consomem atenção que você precisa gastar em outra coisa."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Explicando ao Head of Operations",
+          "badge": "Conversa",
+          "situation": "O head de operações quer entender por que \"só conectar os dois sistemas\" leva três semanas. Ele não é técnico e está impaciente.",
+          "turns": [
+            {
+              "who": "Head of Operations",
+              "them": "Both systems already exist. Why does connecting them take three weeks?",
+              "options": [
+                { "text": "Because the vendor's API isn't idempotent and we need a deduplication layer.", "why": "Duas palavras técnicas na primeira frase — ele desliga aqui." },
+                { "text": "Their system sends us the same reading more than once, and it doesn't tell us it's a repeat. So before we can show anything, we have to work out which readings are real. That's most of the three weeks.", "correct": true, "why": "Zero jargão, o problema é concreto, e o tempo fica justificado." },
+                { "text": "It's complicated, you'd need the technical background.", "why": "Isso soa como \"você não entenderia\" — e ele vai lembrar disso." }
+              ]
+            },
+            {
+              "who": "Head of Operations",
+              "them": "Can't we just show the readings as they come and clean it up later?",
+              "options": [
+                { "text": "No, that's not possible.", "why": "É possível, tecnicamente. Dizer que não é destrói sua credibilidade quando alguém disser o contrário." },
+                { "text": "We could. The risk is that a supervisor sees three alerts for the same pump and stops trusting the screen. Once they stop trusting it, we don't get that back cheaply.", "correct": true, "why": "Aceita a possibilidade e move a discussão para o custo real — confiança do usuário, que é a língua dele." },
+                { "text": "That would create data quality issues.", "why": "\"Data quality issues\" é abstrato. \"Três alertas para a mesma bomba\" ele consegue ver." }
+              ]
+            },
+            {
+              "who": "Head of Operations",
+              "them": "Alright. What do you actually need from me?",
+              "options": [
+                { "text": "Nothing, I just wanted you to understand the delay.", "why": "Você acabou de gastar o tempo dele sem pedido — a próxima conversa terá menos atenção." },
+                { "text": "Two things: one supervisor to test the alerts for an hour in week two, and your backing if someone asks why June became July.", "correct": true, "why": "Pedido concreto, pequeno, e um apoio político específico. Isso ele consegue dar." },
+                { "text": "More time and more people, ideally.", "why": "Pedido vago. Ele não sabe o que fazer com isso." }
+              ]
+            }
+          ],
+          "explanation": "Traduza o obstáculo · aceite a alternativa e mostre o custo dela na língua do outro · termine com um pedido pequeno e concreto."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Abrir a tradução.", "answer": "In plain English the two systems cannot talk to each other", "extra": ["talking", "between"] },
+            { "hint": "Oferecer a analogia.", "answer": "Think of it as a translator between two languages", "extra": ["thinking", "like of"] },
+            { "hint": "Fechar com o significado.", "answer": "So what that means for you is a decision this week", "extra": ["meaning", "to you"] }
+          ],
+          "explanation": "Abrir, comparar, aterrissar. Toda explicação técnica cabe nessas três frases."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can explain a technical obstacle without using a single technical word.", "pt": "Sei explicar um obstáculo técnico sem usar uma única palavra técnica." },
+            { "en": "I use an analogy from something physical and familiar.", "pt": "Uso analogia com algo físico e conhecido." },
+            { "en": "I finish with \"so what that means for you is…\".", "pt": "Termino com \"so what that means for you is…\"." },
+            { "en": "I state the cost in time or money, not in complexity.", "pt": "Digo o custo em tempo ou dinheiro, não em complexidade." }
+          ],
+          "doneMessage": "tradução dominada. A próxima lição é o inverso: entender o negócio para explicar melhor.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre traduzir tecnologia",
+        "intro": "Quatro hábitos de quem consegue fazer um diretor entender arquitetura em dois minutos.",
+        "cards": [
+          { "en": "\"In plain English\" is a real signal in meetings. It tells the room that the next sentence is the one they should listen to.", "pt": "\"In plain English\" é um sinal real em reuniões. Avisa a sala de que a próxima frase é a que importa." },
+          { "en": "\"Under the hood\" lets you admit there's more complexity without going into it. It respects the listener and protects your accuracy.", "pt": "\"Under the hood\" permite admitir que há mais complexidade sem entrar nela. Respeita quem ouve e protege sua precisão." },
+          { "en": "Never say \"it's complicated\" to a non-technical person. It sounds like \"you wouldn't understand\", and people remember that.", "pt": "Nunca diga \"it's complicated\" a alguém não técnico. Soa como \"você não entenderia\", e as pessoas lembram disso." },
+          { "en": "The best analogies come from the listener's own world. For a plant manager, use pumps and shifts — not cars and restaurants.", "pt": "As melhores analogias vêm do mundo de quem ouve. Para um gerente de planta, use bombas e turnos — não carros e restaurantes." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now make a non-technical decision-maker understand — and decide — in two minutes.",
+        "pt": "Agora você faz alguém não técnico entender — e decidir — em dois minutos."
+      }
+    },
+    {
+      "title": "Speaking Business, Not Just Tech",
+      "focus": "Ligar o técnico ao que a empresa mede: custo, risco, tempo e receita",
+      "character": "gb-female",
+      "objective": "Justificar uma decisão técnica em termos de negócio — custo, risco, tempo e receita — em vez de em termos de elegância técnica.",
+      "intro": [
+        "Technical arguments lose to business arguments in every meeting where money is decided. Not because they're wrong, but because they're in the wrong currency.",
+        "\"The architecture would be cleaner\" is a true statement that persuades nobody. \"It saves us a rebuild in September\" is the same fact, in the currency the room uses.",
+        "There are only four currencies: <strong>cost</strong>, <strong>risk</strong>, <strong>time</strong> and <strong>revenue</strong>. Every technical argument you have can be converted into at least one of them."
+      ],
+      "introPt": [
+        "Argumentos técnicos perdem para argumentos de negócio em toda reunião onde se decide dinheiro. Não porque estejam errados, mas porque estão na moeda errada.",
+        "\"A arquitetura ficaria mais limpa\" é verdade e não convence ninguém. \"Evita uma reconstrução em setembro\" é o mesmo fato, na moeda que a sala usa.",
+        "Só existem quatro moedas: <strong>custo</strong>, <strong>risco</strong>, <strong>tempo</strong> e <strong>receita</strong>. Todo argumento técnico seu pode ser convertido em pelo menos uma delas."
+      ],
+      "vocab": [
+        { "en": "business case", "pt": "justificativa de negócio", "example": "The business case is one hour a day of analyst time." },
+        { "en": "return on investment (ROI)", "pt": "retorno sobre o investimento", "example": "The ROI shows up in the second quarter." },
+        { "en": "cost of doing nothing", "pt": "custo de não fazer nada", "example": "The cost of doing nothing is four hundred hours a year." },
+        { "en": "to de-risk", "pt": "reduzir o risco de", "example": "Building it ourselves de-risks the September rollout." },
+        { "en": "payback period", "pt": "prazo de retorno", "example": "The payback period is about seven months." },
+        { "en": "to quantify", "pt": "colocar número em", "example": "Can we quantify the impact on the plants?" },
+        { "en": "efficiency gain", "pt": "ganho de eficiência", "example": "The efficiency gain is ten minutes per supervisor per day." },
+        { "en": "to make the case for", "pt": "defender / argumentar a favor de", "example": "I'm making the case for building it internally." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Em que moeda está esse argumento?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada argumento pela moeda de negócio que ele usa.",
+          "categories": [
+            { "id": "cost", "name": "Custo", "short": "Custo" },
+            { "id": "risk", "name": "Risco", "short": "Risco" },
+            { "id": "time", "name": "Tempo", "short": "Tempo" }
+          ],
+          "items": [
+            { "text": "\"It saves one analyst hour a day — about 250 hours a year.\"", "cat": "cost" },
+            { "text": "\"If the vendor changes their schema, we lose the alerts overnight.\"", "cat": "risk" },
+            { "text": "\"It gets supervisors their ten minutes back every morning.\"", "cat": "time" },
+            { "text": "\"A rebuild in September would land in the middle of the cutover.\"", "cat": "risk" },
+            { "text": "\"The licence is sixty thousand a year, indexed.\"", "cat": "cost" },
+            { "text": "\"It cuts three weeks off the fourth plant's onboarding.\"", "cat": "time" }
+          ],
+          "explanation": "Todo argumento técnico que importa cabe em custo, risco, tempo ou receita. Se não cabe em nenhum, provavelmente não é um argumento de decisão."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Converta para a moeda certa",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão do mesmo argumento que funciona numa sala de decisão.",
+          "items": [
+            { "prompt": "Você quer refatorar o módulo de relatórios.", "a": "The reporting code is a mess and hard to maintain.", "b": "Every change to reporting takes three days instead of half a day. Two months of work now gives us that back within the year.", "correct": "b", "why": "Mesmo fato, em horas e retorno. \"Messy code\" é uma opinião estética para quem decide." },
+            { "prompt": "Você quer testes automatizados.", "a": "We need proper test coverage, it's basic engineering hygiene.", "b": "We've had three production incidents this quarter, each about four hours of plant downtime. Automated tests would have caught two of them.", "correct": "b", "why": "Incidentes contáveis e downtime medido. \"Hygiene\" não é um argumento orçamentário." },
+            { "prompt": "Você quer trocar de fornecedor de cloud.", "a": "Their platform is technically superior.", "b": "It removes the single point of failure we have today, and the migration pays for itself in fourteen months.", "correct": "b", "why": "Risco removido + prazo de payback. \"Tecnicamente superior\" não tem preço nem prazo." },
+            { "prompt": "Você quer documentar a arquitetura.", "a": "Nobody documents anything around here.", "b": "Onboarding a new developer takes six weeks. With the architecture written down, it's closer to three.", "correct": "b", "why": "Reclamação vira número. É o que transforma um desabafo num pedido aprovável." }
+          ],
+          "explanation": "Toda vez que você for dizer \"é melhor tecnicamente\", pergunte-se: melhor em horas, em reais ou em risco?"
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o business case",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "I'd like to ___ the case for building the alerts internally. The ___ of doing nothing is four hundred supervisor hours a year, plus one analyst hour a day on the manual export. Building it ourselves also ___ the September rollout, because the fourth plant would otherwise need a full rebuild. The ___ period is about seven months. I can ___ all of this — the numbers are in the appendix.",
+          "gaps": [
+            { "options": ["make", "do", "build"], "answer": "make", "why": "to make the case for = defender, argumentar a favor." },
+            { "options": ["cost", "price", "value"], "answer": "cost", "why": "\"The cost of doing nothing\" é a expressão fixa — e a mais persuasiva do inglês corporativo." },
+            { "options": ["de-risks", "un-risks", "lowers risk of"], "answer": "de-risks", "why": "to de-risk é o verbo consagrado." },
+            { "options": ["payback", "return", "recovery"], "answer": "payback", "why": "payback period = prazo de retorno." },
+            { "options": ["quantify", "count", "measure up"], "answer": "quantify", "why": "to quantify = colocar número em algo." }
+          ],
+          "explanation": "Custo de não fazer, risco removido, prazo de retorno. Três elementos e o business case está de pé."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o business case",
+          "badge": "Leia e responda",
+          "heading": "One-pager · Alerts module",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Recommendation: build the alerts service internally rather than licensing the vendor module.",
+            "Cost of doing nothing: supervisors currently detect anomalies by checking the dashboard manually. That is roughly 400 hours a year across three plants, plus one analyst hour per day maintaining the manual export.",
+            "Cost of the recommendation: three additional weeks of development, roughly 45k in internal time. The vendor licence would be 60k per year, indexed.",
+            "Risk: the vendor module is tied to their schema. If they change it — as they did in 2025 — the alerts stop until they release a fix. Building internally removes that dependency.",
+            "Payback: seven months against the licence alone. The efficiency gain is not counted in that figure."
+          ],
+          "questions": [
+            {
+              "prompt": "What is the strongest financial argument in this one-pager?",
+              "options": [
+                { "text": "That the internal build costs 45k once, against 60k every year.", "correct": true },
+                { "text": "That the code will be cleaner.", "correct": false },
+                { "text": "That supervisors prefer it." }
+              ],
+              "why": "Custo único contra custo recorrente indexado. É o argumento que qualquer financeiro entende em cinco segundos."
+            },
+            {
+              "prompt": "How is the risk argument framed?",
+              "options": [
+                { "text": "As a technical preference.", "correct": false },
+                { "text": "As a dependency on a third party who has broken it before.", "correct": true },
+                { "text": "As a compliance issue." }
+              ],
+              "why": "Citar o precedente de 2025 transforma um risco hipotético em histórico. É o que faz o risco pesar."
+            },
+            {
+              "prompt": "Why does it say the efficiency gain is \"not counted\"?",
+              "options": [
+                { "text": "Because it doesn't exist.", "correct": false },
+                { "text": "Because leaving it out makes the payback figure more conservative and harder to attack.", "correct": true },
+                { "text": "Because nobody measured it." }
+              ],
+              "why": "Deixar o ganho de fora de propósito é um movimento sofisticado: o número fica mais defensável."
+            }
+          ],
+          "explanation": "Custo de não fazer · custo da recomendação · risco com precedente · payback conservador. Quatro parágrafos aprovam um projeto."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The licence costs sixty thousands per year.", "wrong": "thousands", "fix": "thousand", "why": "Depois de número, thousand/million não vão ao plural." },
+            { "sentence": "This solution has a better cost-benefit.", "wrong": "cost-benefit", "fix": "cost-benefit ratio", "why": "Em inglês precisa do substantivo: \"a better cost-benefit ratio\" — ou, mais natural, \"better value\"." },
+            { "sentence": "We need to justify the investiment to finance.", "wrong": "investiment", "fix": "investment", "why": "Sem o \"i\": investment. Erro de ortografia clássico do português." },
+            { "sentence": "The payback is of seven months.", "wrong": "of", "fix": "(nada)", "why": "\"The payback is seven months\" — sem preposição." },
+            { "sentence": "It will economize four hundred hours a year.", "wrong": "economize", "fix": "save", "why": "Falso amigo: economizar tempo ou dinheiro é <strong>save</strong>. \"Economize\" existe, mas soa arcaico e errado aqui." }
+          ],
+          "explanation": "\"Economize\" e \"cost-benefit\" são os dois que mais denunciam tradução literal num business case."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Esse é o parágrafo que abre qualquer pedido de investimento.",
+          "sentences": [
+            "I'd like to make the case for building it internally.",
+            "The cost of doing nothing is four hundred hours a year.",
+            "Building it ourselves de-risks the September rollout.",
+            "The payback period is about seven months against the licence alone.",
+            "The efficiency gain isn't counted in that figure."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I convert technical arguments into cost, risk, time or revenue.", "pt": "Converto argumentos técnicos em custo, risco, tempo ou receita." },
+            { "en": "I always state the cost of doing nothing.", "pt": "Sempre digo o custo de não fazer nada." },
+            { "en": "I back a risk with a precedent, not with a fear.", "pt": "Sustento um risco com precedente, não com receio." },
+            { "en": "I say \"save\", not \"economize\".", "pt": "Digo \"save\", não \"economize\"." },
+            { "en": "I keep my payback figure conservative on purpose.", "pt": "Mantenho o payback conservador de propósito." }
+          ],
+          "doneMessage": "moeda certa. O próximo tópico é colaboração entre áreas — onde essa tradução vira ponte.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre argumentar em linguagem de negócio",
+        "intro": "Quatro expressões que fazem um pedido técnico virar um projeto aprovado.",
+        "cards": [
+          { "en": "\"The cost of doing nothing\" is the single most persuasive phrase in corporate English. It reframes inaction as a decision with a price.", "pt": "\"The cost of doing nothing\" é a expressão mais persuasiva do inglês corporativo. Transforma a inação numa decisão com preço." },
+          { "en": "\"De-risk\" is a verb in business English: \"this de-risks the rollout\". It sounds odd but it is completely standard.", "pt": "\"De-risk\" é verbo no inglês de negócios: \"this de-risks the rollout\". Soa estranho, mas é totalmente padrão." },
+          { "en": "Deliberately leaving a benefit out of your numbers is a power move. It signals you're not selling — and it makes the figure much harder to attack.", "pt": "Deixar um benefício de fora dos seus números de propósito é um movimento de força. Sinaliza que você não está vendendo — e torna o número muito mais difícil de atacar." },
+          { "en": "\"Indexed\" next to a recurring cost quietly reminds everyone it grows every year. One word, a lot of weight.", "pt": "\"Indexed\" ao lado de um custo recorrente lembra discretamente que ele cresce todo ano. Uma palavra, muito peso." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now argue for a technical decision in the language the money speaks.",
+        "pt": "Agora você defende uma decisão técnica na língua que o dinheiro fala."
+      }
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "topic": "Meeting language",
+  "lessons": [
+    {
+      "title": "Leading the Room",
+      "focus": "Abrir, conduzir, cortar digressão e fechar com action items",
+      "character": "us-female",
+      "objective": "Conduzir uma reunião em inglês do início ao fim: abrir com objetivo, manter o foco, cortar quem se alonga e fechar com quem faz o quê até quando.",
+      "intro": [
+        "Leading a meeting in English is not about vocabulary size. It is about owning four moments: the <strong>open</strong>, the <strong>redirect</strong>, the <strong>decision</strong> and the <strong>close</strong>.",
+        "Each moment has three or four fixed phrases. Native speakers use the same ones over and over — that is exactly why they work. Nobody has to decode them.",
+        "Learn the phrases and the room follows you, even if your grammar wobbles somewhere in the middle."
+      ],
+      "introPt": [
+        "Conduzir uma reunião em inglês não é questão de vocabulário grande. É dominar quatro momentos: a <strong>abertura</strong>, o <strong>redirecionamento</strong>, a <strong>decisão</strong> e o <strong>fechamento</strong>.",
+        "Cada momento tem três ou quatro frases fixas. Nativos usam sempre as mesmas — é justamente por isso que funcionam. Ninguém precisa decodificar.",
+        "Aprenda as frases e a sala te segue, mesmo que a gramática oscile em algum ponto do meio."
+      ],
+      "vocab": [
+        { "en": "agenda", "pt": "pauta", "example": "There are three items on the agenda today." },
+        { "en": "to run through", "pt": "passar rapidamente por", "example": "Let me run through the agenda first." },
+        { "en": "to park something", "pt": "deixar para depois", "example": "Let's park that and come back to it at the end." },
+        { "en": "action item", "pt": "tarefa acordada com dono e prazo", "example": "Three action items came out of the call." },
+        { "en": "to circle back", "pt": "voltar ao assunto depois", "example": "I'll circle back to you on Thursday." },
+        { "en": "to keep it brief", "pt": "ser breve", "example": "Let's keep it brief — hard stop at ten." },
+        { "en": "hard stop", "pt": "hora limite inegociável", "example": "I have a hard stop at eleven." },
+        { "en": "to wrap up", "pt": "encerrar", "example": "Let's wrap up — quick recap of the actions." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Em que momento da reunião?",
+          "badge": "Classifique",
+          "instruction": "Cada frase pertence a um momento. Classifique.",
+          "categories": [
+            { "id": "open", "name": "Abertura", "short": "Open" },
+            { "id": "redirect", "name": "Redirecionar", "short": "Redirect" },
+            { "id": "close", "name": "Fechamento", "short": "Close" }
+          ],
+          "items": [
+            { "text": "\"Thanks everyone — three items today, and we finish at ten.\"", "cat": "open" },
+            { "text": "\"Let's park that and come back at the end if we have time.\"", "cat": "redirect" },
+            { "text": "\"Quick recap: Marcus sends the spec, I chase IT, both by Friday.\"", "cat": "close" },
+            { "text": "\"The goal today is to decide on the vendor, not to review the whole design.\"", "cat": "open" },
+            { "text": "\"I want to be conscious of time — can we take that offline?\"", "cat": "redirect" },
+            { "text": "\"Anything else before we wrap up?\"", "cat": "close" }
+          ],
+          "explanation": "Abrir com objetivo e horário. Redirecionar com \"park\" ou \"offline\". Fechar com recap de ações."
+        },
+        {
+          "type": "orderList",
+          "title": "A abertura na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Uma boa abertura de reunião tem sempre a mesma sequência. Clique nas frases na ordem.",
+          "items": [
+            "Thanks everyone for joining.",
+            "The goal today is to agree on the integration approach.",
+            "Three items on the agenda: the vendor options, the timeline and the budget impact.",
+            "We have forty minutes and I have a hard stop at ten.",
+            "Marcus, can you start us off with the vendor comparison?"
+          ],
+          "explanation": "Agradecer → objetivo → pauta → tempo → passar a palavra. Quarenta segundos e a sala sabe onde está."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Alguém está monopolizando a reunião",
+          "badge": "Conversa",
+          "situation": "Você conduz uma call de 30 minutos. Um colega sênior está há sete minutos num detalhe técnico que não é o objetivo da reunião.",
+          "turns": [
+            {
+              "who": "Colleague",
+              "them": "…and that's why the schema design really matters here, which brings me to the indexing strategy…",
+              "options": [
+                { "text": "Sorry to jump in, Paul — that's important, but it's a level deeper than today's decision. Can we park it and set up a separate session?", "correct": true, "why": "\"Sorry to jump in\" + reconhecer o valor + nomear o desvio + oferecer um lugar para o assunto. Educado e firme." },
+                { "text": "Paul, we don't have time for this.", "why": "Verdade, mas custa a relação — e ele vai lembrar disso na próxima." },
+                { "text": "(deixa ele continuar)", "why": "Sete minutos vira quinze, e a decisão do dia não sai." }
+              ]
+            },
+            {
+              "who": "Colleague",
+              "them": "But we can't decide on the vendor without settling this.",
+              "options": [
+                { "text": "Fine, go ahead.", "why": "Ceder aqui entrega o controle da reunião de vez." },
+                { "text": "Fair point. Does the indexing change which vendor we pick — yes or no?", "correct": true, "why": "Devolve o ônus: ou é relevante para a decisão de hoje, ou é para outra hora. Ele mesmo responde." },
+                { "text": "That's not what we're here for.", "why": "Repetir a regra sem testar o argumento dele soa autoritário." }
+              ]
+            },
+            {
+              "who": "Colleague",
+              "them": "…no, not really. It matters afterwards.",
+              "options": [
+                { "text": "See? I told you.", "why": "Ganhar o ponto em público custa mais do que vale." },
+                { "text": "Then let's decide the vendor now and I'll book thirty minutes with you on indexing this week. Sarah, over to you.", "correct": true, "why": "Fecha o desvio, honra o compromisso e devolve a reunião ao trilho numa frase." },
+                { "text": "Ok, moving on.", "why": "Funciona, mas deixa o colega sem lugar para levar o assunto dele." }
+              ]
+            }
+          ],
+          "explanation": "Interromper bem = pedir licença, reconhecer, testar a relevância, oferecer um lugar. Nunca simplesmente cortar."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual versão mantém a sala com você?",
+          "badge": "A ou B",
+          "instruction": "As duas funcionam gramaticalmente. Escolha a que um time internacional prefere ouvir.",
+          "items": [
+            { "prompt": "Abrindo a reunião.", "a": "So… I think we can start? Maybe?", "b": "Thanks everyone — the goal today is to agree on the vendor. Hard stop at ten.", "correct": "b", "why": "Objetivo e horário na primeira frase. Isso é liderar." },
+            { "prompt": "Alguém foge do assunto.", "a": "That's off topic.", "b": "Good point — let's park it and pick it up at the end.", "correct": "b", "why": "\"Park it\" preserva a ideia e a pessoa. \"Off topic\" fecha a porta." },
+            { "prompt": "Você precisa de uma decisão hoje.", "a": "Maybe we can think about it more and decide later.", "b": "I'd like a decision today. If we can't get there in ten minutes, I'll take it to the sponsor.", "correct": "b", "why": "Prazo + consequência clara é o que tira uma sala da indecisão." },
+            { "prompt": "Fechando.", "a": "Ok, thanks everyone, bye.", "b": "Quick recap: Marcus sends the spec by Wednesday, I chase IT today. Anything I've missed?", "correct": "b", "why": "Reunião sem recap de ações é reunião que vai se repetir." }
+          ],
+          "explanation": "Objetivo · parking lot · prazo para decidir · recap. Quatro movimentos e a reunião se conduz sozinha."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Abrir dizendo o objetivo.", "answer": "The goal today is to agree on the integration approach", "extra": ["agreeing", "about"] },
+            { "hint": "Adiar um assunto.", "answer": "Let us park that and come back at the end", "extra": ["parking", "in"] },
+            { "hint": "Fechar com o recap.", "answer": "Quick recap of the actions before we wrap up", "extra": ["wrapping", "for"] }
+          ],
+          "explanation": "Três frases prontas. Elas abrem, redirecionam e fecham qualquer reunião."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "I would like to make a meeting about this next week.", "wrong": "make", "fix": "set up", "why": "Reunião não se \"faz\": set up, arrange, schedule ou book a meeting." },
+            { "sentence": "Let's discuss about the timeline first.", "wrong": "about", "fix": "(nada)", "why": "Discuss não leva preposição: discuss the timeline." },
+            { "sentence": "Can we assist to the review tomorrow?", "wrong": "assist", "fix": "attend", "why": "Falso amigo: assistir a uma reunião é <strong>attend</strong>. \"Assist\" é ajudar." },
+            { "sentence": "I have a hard stop in ten o'clock.", "wrong": "in", "fix": "at", "why": "Horas pedem <strong>at</strong>: at ten o'clock." },
+            { "sentence": "We need to take a decision today.", "wrong": "take", "fix": "make", "why": "Em inglês se <strong>makes</strong> a decision. \"Take a decision\" existe no britânico formal, mas make é o padrão." }
+          ],
+          "explanation": "Cinco erros que aparecem em toda reunião de brasileiro em inglês."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can open a meeting with goal, agenda and time in under a minute.", "pt": "Abro uma reunião com objetivo, pauta e horário em menos de um minuto." },
+            { "en": "I can interrupt someone politely and offer them somewhere to take it.", "pt": "Sei interromper com educação e oferecer um lugar para o assunto." },
+            { "en": "I close every meeting with a recap of who does what by when.", "pt": "Fecho toda reunião com o recap de quem faz o quê até quando." },
+            { "en": "I say \"attend a meeting\" and \"set up a meeting\", never \"assist\" or \"make\".", "pt": "Digo \"attend\" e \"set up\" a meeting, nunca \"assist\" nem \"make\"." }
+          ],
+          "doneMessage": "sala sob controle. A próxima lição é o outro lado: participar, atualizar e perguntar.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre conduzir reunião em inglês",
+        "intro": "Quatro frases que fazem você soar como quem já conduziu centenas delas.",
+        "cards": [
+          { "en": "\"Sorry to jump in\" is the standard, inoffensive way to interrupt. It works even with people far more senior than you.", "pt": "\"Sorry to jump in\" é a forma padrão e inofensiva de interromper. Funciona até com gente muito mais sênior." },
+          { "en": "\"Parking lot\" is a real meeting concept: a visible list of topics saved for later. Saying \"into the parking lot\" is instantly understood.", "pt": "\"Parking lot\" é um conceito real de reunião: uma lista visível de temas adiados. \"Into the parking lot\" é entendido na hora." },
+          { "en": "\"Hard stop\" tells people your end time is not negotiable — without sounding rude. Announce it at the start, not at the end.", "pt": "\"Hard stop\" avisa que seu horário não é negociável — sem soar rude. Anuncie no começo, não no fim." },
+          { "en": "\"Over to you, Sarah\" is how you hand the floor. Short, warm, and it makes the transition audible on a call.", "pt": "\"Over to you, Sarah\" é como se passa a palavra. Curto, caloroso, e torna a transição audível numa call." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now run a meeting in English from the first word to the last action item.",
+        "pt": "Agora você conduz uma reunião em inglês da primeira palavra ao último action item."
+      }
+    },
+    {
+      "title": "Updating, Questioning and Disagreeing",
+      "focus": "Ser um bom participante: dar update, perguntar sem parecer que não entendeu, discordar bem",
+      "character": "gb-male",
+      "objective": "Dar um update de sessenta segundos, fazer a pergunta que ninguém fez e discordar de alguém sênior sem criar atrito.",
+      "intro": [
+        "Most of your meeting life is spent not leading. And being a great participant is a skill with its own phrases.",
+        "Three things carry the most weight: a <strong>tight update</strong>, a <strong>good question</strong>, and a <strong>well-shaped disagreement</strong>.",
+        "The English for all three is built on softeners — <em>just to check</em>, <em>can I build on that</em>, <em>I see it slightly differently</em>. They are not weakness. They are what makes the content land."
+      ],
+      "introPt": [
+        "A maior parte da sua vida em reuniões é como participante. E ser uma ótima participante é uma habilidade com frases próprias.",
+        "Três coisas pesam mais: um <strong>update enxuto</strong>, uma <strong>boa pergunta</strong> e uma <strong>discordância bem formulada</strong>.",
+        "O inglês das três se apoia em amortecedores — <em>just to check</em>, <em>can I build on that</em>, <em>I see it slightly differently</em>. Não são fraqueza. São o que faz o conteúdo pousar."
+      ],
+      "vocab": [
+        { "en": "to give an update", "pt": "dar um informe", "example": "Quick update from my side: integration is done." },
+        { "en": "from my side", "pt": "da minha parte", "example": "From my side, nothing is blocked." },
+        { "en": "to build on", "pt": "complementar a ideia de alguém", "example": "Can I build on what Sarah just said?" },
+        { "en": "just to check", "pt": "só para confirmar", "example": "Just to check — is the deadline still the 12th?" },
+        { "en": "to follow up on", "pt": "retomar / dar seguimento a", "example": "I'd like to follow up on last week's action." },
+        { "en": "I see it slightly differently", "pt": "eu vejo um pouco diferente", "example": "I see it slightly differently — can I explain?" },
+        { "en": "to be aligned", "pt": "estar de acordo", "example": "Are we aligned on the scope, then?" },
+        { "en": "to flag", "pt": "sinalizar um ponto de atenção", "example": "I want to flag a risk on the timeline." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte o update de sessenta segundos",
+          "badge": "Coloque em ordem",
+          "instruction": "Um update curto tem sempre a mesma estrutura. Clique nas frases na ordem.",
+          "items": [
+            "Quick update from my side on the dashboard project.",
+            "The integration is done and the pilot is live with two plants.",
+            "One thing to flag: the third plant's data feed is still pending with IT.",
+            "That doesn't affect go-live yet, but it will if it slips past the 20th.",
+            "I'll come back to this group on Thursday with a confirmed date."
+          ],
+          "explanation": "Contexto → o que está feito → o alerta → o impacto → quando você volta. Sessenta segundos e ninguém precisa perguntar nada."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que faz uma boa pergunta em reunião?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "You didn't fully follow a technical explanation. Which moves are good?",
+          "options": [
+            { "text": "\"Just to check I've understood — you're saying the sync runs nightly, right?\"", "correct": true },
+            { "text": "Saying nothing and looking it up afterwards.", "correct": false },
+            { "text": "\"Can you say a bit more about how that affects the plant users?\"", "correct": true },
+            { "text": "\"Sorry, my English isn't good enough for this.\"", "correct": false },
+            { "text": "\"Could we take that one slowly? I want to get the sequence right.\"", "correct": true },
+            { "text": "Nodding and hoping someone else asks.", "correct": false }
+          ],
+          "explanation": "Reformular o que você entendeu é a pergunta mais poderosa que existe — e nunca soa como não ter entendido."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A pergunta certa para cada situação",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a formulação que funciona melhor numa reunião internacional.",
+          "items": [
+            {
+              "prompt": "Você não pegou um número que foi dito rápido.",
+              "options": [
+                { "text": "Sorry, could you repeat the figure?", "correct": true },
+                { "text": "I didn't understand anything." },
+                { "text": "What?" }
+              ],
+              "why": "Pergunta cirúrgica: você pede exatamente o pedaço que faltou, não a explicação inteira."
+            },
+            {
+              "prompt": "Você quer confirmar o que entendeu.",
+              "options": [
+                { "text": "Is that correct or not?" },
+                { "text": "Just to check I've understood: the vendor delivers first, then we test. Right?", "correct": true },
+                { "text": "I think I understood." }
+              ],
+              "why": "Repetir com suas palavras testa o entendimento e ainda ajuda quem não entendeu e não perguntou."
+            },
+            {
+              "prompt": "Você quer que alguém aprofunde.",
+              "options": [
+                { "text": "Can you say a bit more about that?", "correct": true },
+                { "text": "Explain better." },
+                { "text": "I need more information about this subject, please." }
+              ],
+              "why": "\"Say a bit more\" é o convite padrão. \"Explain better\" soa como se a pessoa tivesse explicado mal."
+            },
+            {
+              "prompt": "Você quer registrar um risco sem parar a reunião.",
+              "options": [
+                { "text": "This is going to be a big problem." },
+                { "text": "I'd just like to flag a risk on the timeline — happy to take it offline.", "correct": true },
+                { "text": "Nobody is thinking about the timeline here." }
+              ],
+              "why": "\"Flag\" registra o ponto sem sequestrar a pauta, e você já oferece o lugar para aprofundar."
+            }
+          ],
+          "explanation": "Repetir com suas palavras · say a bit more · flag. Três movimentos que valem por dez perguntas."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Como discordar de alguém sênior",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que preserva a relação e ainda assim marca a sua posição.",
+          "items": [
+            { "prompt": "O diretor propôs um prazo que você sabe ser inviável.", "a": "That's not possible.", "b": "I see it slightly differently — with the API dependency, I don't see how we hit the 12th. Can I walk you through the sequence?", "correct": "b", "why": "Posição clara + a razão concreta + convite para verificar juntos." },
+            { "prompt": "Você concorda com o objetivo, não com o caminho.", "a": "I don't agree with any of this.", "b": "I'm with you on the outcome. Where I'd push back is the sequencing.", "correct": "b", "why": "Separar objetivo de método é o que evita que a discordância vire conflito pessoal." },
+            { "prompt": "Alguém está partindo de um dado errado.", "a": "You're wrong, that number is old.", "b": "Can I check one thing? I think that figure is from June — the current one is 18%, not 12%.", "correct": "b", "why": "Corrigir o dado, não a pessoa. E abrir com pergunta dá a ela uma saída digna." },
+            { "prompt": "Você foi voto vencido e a decisão foi tomada.", "a": "Fine, but I said it wouldn't work.", "b": "Understood — I'll get behind it. I'd like the API risk in the minutes, just so it's visible.", "correct": "b", "why": "Apoiar a decisão e registrar o risco. É assim que se discorda sem virar a pessoa do \"eu avisei\"." }
+          ],
+          "explanation": "Concorde com o objetivo, discorde do caminho, corrija o dado e não a pessoa, e registre o risco."
+        },
+        {
+          "type": "listenChoose",
+          "title": "Ouça o update e escolha",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque em cada áudio quantas vezes quiser e escolha a interpretação correta.",
+          "items": [
+            {
+              "audio": "From my side, the integration is done, but I want to flag that the third data feed is still sitting with IT.",
+              "options": [
+                { "text": "A integração terminou, mas há um alerta sobre um feed pendente com o TI.", "correct": true },
+                { "text": "A integração está atrasada por causa do TI." },
+                { "text": "O TI já entregou os três feeds." }
+              ],
+              "why": "<strong>to flag</strong> = sinalizar; <strong>sitting with IT</strong> = está parado do lado deles, esperando ação."
+            },
+            {
+              "audio": "Just to check I've understood — you'd rather we descope the alerts than push the date. Is that right?",
+              "options": [
+                { "text": "Ela está confirmando o entendimento: cortar escopo em vez de adiar.", "correct": true },
+                { "text": "Ela discorda de cortar escopo." },
+                { "text": "Ela está pedindo mais prazo." }
+              ],
+              "why": "\"Just to check I've understood\" abre uma confirmação, não uma objeção."
+            },
+            {
+              "audio": "I'm with you on the outcome — where I'd push back is the sequencing.",
+              "options": [
+                { "text": "Concorda com o objetivo, discorda da ordem das coisas.", "correct": true },
+                { "text": "Discorda de tudo." },
+                { "text": "Concorda com tudo." }
+              ],
+              "why": "É a estrutura clássica da discordância elegante: concordar com o fim, discordar do meio."
+            }
+          ],
+          "explanation": "Flag · just to check · push back. Se você reconhece essas três, entende metade de qualquer reunião."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a sua fala na reunião",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "Quick update ___ my side. The pilot is live with two plants and the feedback is good. I'd like to ___ one risk: the third data feed is still with IT. Just to ___ — the go-live date is still the 20th, correct? If so, I'd ___ back slightly on adding the alerts feature this month. I'm ___ you on the value, but I'd rather protect the date.",
+          "gaps": [
+            { "options": ["from", "of", "in"], "answer": "from", "why": "\"From my side\" é a forma fixa." },
+            { "options": ["flag", "signal", "mark"], "answer": "flag", "why": "to flag a risk é a colocação padrão." },
+            { "options": ["check", "confirm that", "verify"], "answer": "check", "why": "\"Just to check\" é a abertura mais natural de uma confirmação." },
+            { "options": ["push", "give", "step"], "answer": "push", "why": "to push back = resistir educadamente." },
+            { "options": ["with", "agree with", "on"], "answer": "with", "why": "\"I'm with you on X\" = concordo com você quanto a X." }
+          ],
+          "explanation": "Update, alerta, confirmação, discordância e apoio — tudo num parágrafo de trinta segundos."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can give a sixty-second update with a flag and a next step.", "pt": "Dou um update de sessenta segundos com um alerta e um próximo passo." },
+            { "en": "I ask \"just to check I've understood…\" instead of staying silent.", "pt": "Pergunto \"just to check I've understood…\" em vez de ficar calada." },
+            { "en": "I can disagree with a senior person and keep the relationship intact.", "pt": "Consigo discordar de alguém sênior mantendo a relação intacta." },
+            { "en": "I separate agreeing with the goal from disagreeing with the path.", "pt": "Separo concordar com o objetivo de discordar do caminho." }
+          ],
+          "doneMessage": "participação de peso. O próximo tópico é liderança — feedback, delegação e conversas difíceis.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre participar de reunião em inglês",
+        "intro": "Quatro hábitos que fazem sua fala pesar mais do que o seu nível de inglês.",
+        "cards": [
+          { "en": "\"Can I build on that?\" credits the previous speaker and lets you add your point. It is the most generous phrase in meeting English.", "pt": "\"Can I build on that?\" credita quem falou antes e ainda te dá espaço. É a frase mais generosa do inglês de reunião." },
+          { "en": "Never apologise for your English in a meeting. Ask a precise question instead — it reads as sharp, not as limited.", "pt": "Nunca peça desculpa pelo seu inglês numa reunião. Faça uma pergunta precisa — isso é lido como afiado, não como limitado." },
+          { "en": "\"Where I'd push back is…\" narrows the disagreement to one point. Without it, people hear you rejecting everything.", "pt": "\"Where I'd push back is…\" estreita a discordância a um ponto. Sem isso, as pessoas ouvem uma rejeição total." },
+          { "en": "\"Are we aligned?\" is the standard way to close a topic. It asks for confirmation without forcing a vote.", "pt": "\"Are we aligned?\" é o jeito padrão de fechar um assunto. Pede confirmação sem forçar uma votação." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now be the person in the room whose questions make the meeting better.",
+        "pt": "Agora você é a pessoa da sala cujas perguntas melhoram a reunião."
+      }
+    }
+  ]
+}

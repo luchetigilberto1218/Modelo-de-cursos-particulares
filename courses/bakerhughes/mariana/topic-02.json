@@ -1,0 +1,363 @@
+{
+  "topic": "Agile methodology",
+  "lessons": [
+    {
+      "title": "The Agile Ceremonies",
+      "focus": "O vocabulário dos rituais: sprint, stand-up, backlog, retro",
+      "character": "us-male",
+      "objective": "Participar de qualquer cerimônia ágil em inglês sabendo o nome de cada ritual, o que se espera de você em cada um e quanto tempo cada um dura.",
+      "intro": [
+        "Agile has its own dictionary, and almost none of it gets translated. In Brazil people say <em>\"a sprint\"</em>, <em>\"o backlog\"</em>, <em>\"a daily\"</em> — the English words survive intact.",
+        "That is good news: half the vocabulary is already yours. The gap is the language <strong>around</strong> the words — how to give a stand-up update in thirty seconds, how to say something is blocked, how to disagree in a refinement session.",
+        "This lesson covers the ceremonies. The next one covers the sentences you say inside them."
+      ],
+      "introPt": [
+        "O agile tem um dicionário próprio, e quase nada dele é traduzido. No Brasil se diz <em>\"a sprint\"</em>, <em>\"o backlog\"</em>, <em>\"a daily\"</em> — as palavras inglesas sobrevivem intactas.",
+        "Isso é boa notícia: metade do vocabulário já é sua. A lacuna é a linguagem <strong>ao redor</strong> das palavras — como dar um update de stand-up em trinta segundos, como dizer que algo está travado, como discordar num refinamento.",
+        "Esta lição cobre os rituais. A próxima cobre as frases que você diz dentro deles."
+      ],
+      "vocab": [
+        { "en": "sprint", "pt": "ciclo curto de trabalho (2 semanas, em geral)", "example": "We commit to eight stories per sprint." },
+        { "en": "backlog", "pt": "fila priorizada de trabalho", "example": "That request goes to the backlog, not into this sprint." },
+        { "en": "stand-up / daily", "pt": "reunião diária curta, em pé", "example": "Stand-up is at nine, fifteen minutes, no laptops." },
+        { "en": "sprint review / demo", "pt": "demonstração do que foi feito", "example": "We demo the dashboard at the sprint review on Friday." },
+        { "en": "retrospective (retro)", "pt": "reunião de melhoria do processo", "example": "Let's take that to the retro." },
+        { "en": "refinement / grooming", "pt": "refinamento do backlog", "example": "We refine the top ten items every Wednesday." },
+        { "en": "user story", "pt": "descrição de uma necessidade do usuário", "example": "The story says: as a plant manager, I want to see downtime by asset." },
+        { "en": "definition of done", "pt": "critério que fecha um item", "example": "It isn't done until it's tested and documented — that's our definition of done." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Que ritual é esse?",
+          "instruction": "Clique na caixa à direita e escolha a cerimônia certa para cada descrição.",
+          "pairs": [
+            { "left": "stand-up", "right": "15 minutos, todo dia: o que fiz, o que farei, o que me trava" },
+            { "left": "sprint planning", "right": "no início do ciclo: o time decide o que cabe nas próximas duas semanas" },
+            { "left": "refinement", "right": "no meio do ciclo: esclarecer e estimar itens que ainda vão entrar" },
+            { "left": "sprint review", "right": "no fim do ciclo: mostrar aos stakeholders o que ficou pronto" },
+            { "left": "retrospective", "right": "no fim do ciclo: falar do processo, não do produto" }
+          ],
+          "explanation": "Review olha para o produto. Retro olha para o time. Confundir os dois é o erro mais comum."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia as regras do time",
+          "badge": "Leia e responda",
+          "heading": "Team working agreement · Digital squad",
+          "instruction": "Leia o acordo do time e responda.",
+          "passage": [
+            "We run two-week sprints. Planning happens on Monday morning; the sprint review and retrospective are on the Friday of week two.",
+            "Stand-up is at 9:00 and is capped at fifteen minutes. It is a sync, not a status report to the manager: three sentences each — what I closed, what I'm picking up, what is blocking me. Anything longer is taken offline.",
+            "An item is only done when it is tested, documented and merged. Work that appears mid-sprint goes to the backlog and is refined on Wednesday. Only the product owner can change sprint priorities once the sprint has started."
+          ],
+          "questions": [
+            {
+              "prompt": "Who can change priorities inside a running sprint?",
+              "options": [
+                { "text": "Only the product owner.", "correct": true },
+                { "text": "Anyone who asks in the stand-up.", "correct": false },
+                { "text": "The manager." }
+              ],
+              "why": "\"Only the product owner can change sprint priorities once the sprint has started.\""
+            },
+            {
+              "prompt": "What does \"taken offline\" mean here?",
+              "options": [
+                { "text": "Discussed after the meeting, with only the people involved.", "correct": true },
+                { "text": "Cancelled.", "correct": false },
+                { "text": "Done without internet access." }
+              ],
+              "why": "\"Take it offline\" = tirar da reunião e resolver depois, em grupo menor. Nada a ver com internet."
+            },
+            {
+              "prompt": "When is a work item considered done?",
+              "options": [
+                { "text": "When the developer says it works.", "correct": false },
+                { "text": "When it is tested, documented and merged.", "correct": true },
+                { "text": "At the end of the sprint, automatically." }
+              ],
+              "why": "É a definition of done do time — e é ela que evita a discussão de \"mas eu terminei\"."
+            }
+          ],
+          "explanation": "Todo time ágil tem um working agreement. Saber lê-lo em inglês é o primeiro passo para participar dele."
+        },
+        {
+          "type": "categorize",
+          "title": "Isso vai para qual cerimônia?",
+          "badge": "Classifique",
+          "instruction": "Cada assunto tem um lugar certo. Classifique.",
+          "categories": [
+            { "id": "standup", "name": "Stand-up", "short": "Stand-up" },
+            { "id": "review", "name": "Sprint review", "short": "Review" },
+            { "id": "retro", "name": "Retrospective", "short": "Retro" }
+          ],
+          "items": [
+            { "text": "\"I'm blocked on the API credentials.\"", "cat": "standup" },
+            { "text": "\"Let me show you the new dashboard filter working.\"", "cat": "review" },
+            { "text": "\"Our estimates were consistently too optimistic this sprint.\"", "cat": "retro" },
+            { "text": "\"I'll pick up the export ticket today.\"", "cat": "standup" },
+            { "text": "\"Stakeholders, here's what we didn't get to and why.\"", "cat": "review" },
+            { "text": "\"Stand-ups are running twenty-five minutes — let's fix that.\"", "cat": "retro" }
+          ],
+          "explanation": "Se é sobre o trabalho de hoje, é stand-up. Sobre o produto, review. Sobre o time, retro."
+        },
+        {
+          "type": "oddOneOut",
+          "title": "Qual não pertence?",
+          "badge": "Odd one out",
+          "instruction": "Em cada linha, clique na forma que NÃO é usada em times ágeis de língua inglesa.",
+          "groups": [
+            { "items": ["stand-up", "daily", "daily meeting of the team"], "odd": "daily meeting of the team", "why": "Ninguém diz a forma longa. É \"stand-up\" ou \"the daily\"." },
+            { "items": ["the backlog", "the back-log list", "the product backlog"], "odd": "the back-log list", "why": "Backlog já é a lista. \"Backlog list\" é redundante e não se usa." },
+            { "items": ["retro", "retrospective", "retrospection"], "odd": "retrospection", "why": "Retrospection existe em inglês, mas não é o nome da cerimônia." },
+            { "items": ["to groom the backlog", "to refine the backlog", "to clean the backlog"], "odd": "to clean the backlog", "why": "Groom e refine são os verbos consagrados. \"Clean\" soa como faxina." }
+          ],
+          "explanation": "Nesse vocabulário, a forma curta é sempre a certa. Times ágeis abreviam tudo."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que entra num bom stand-up?",
+          "instruction": "Marque todas as opções que pertencem a um stand-up de quinze minutos. Há mais de uma.",
+          "prompt": "You have thirty seconds in the stand-up. What belongs there?",
+          "options": [
+            { "text": "What you closed since yesterday.", "correct": true },
+            { "text": "What you're picking up today.", "correct": true },
+            { "text": "Anything blocking you.", "correct": true },
+            { "text": "A detailed technical debate about the fix.", "correct": false },
+            { "text": "A dependency you need from someone else in the room.", "correct": true },
+            { "text": "A full status report for the manager.", "correct": false }
+          ],
+          "explanation": "Closed · picking up · blocked. O resto é \"let's take it offline\"."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Dizer o que você fechou.", "answer": "I closed the export ticket yesterday", "extra": ["have closing", "on"] },
+            { "hint": "Dizer que você está travada.", "answer": "I am blocked on the API credentials", "extra": ["blocking", "with"] },
+            { "hint": "Mandar um pedido para o backlog.", "answer": "That request goes to the backlog for refinement", "extra": ["in", "refining"] }
+          ],
+          "explanation": "Três frases. Elas cobrem 90% do que você diz num stand-up."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can name every ceremony and say what happens in each one.", "pt": "Sei nomear cada cerimônia e dizer o que acontece em cada uma." },
+            { "en": "I know the difference between a review and a retrospective.", "pt": "Sei a diferença entre review e retrospectiva." },
+            { "en": "I can give a stand-up update in three sentences.", "pt": "Consigo dar um update de stand-up em três frases." },
+            { "en": "I understand \"let's take it offline\" and can use it.", "pt": "Entendo e uso \"let's take it offline\"." }
+          ],
+          "doneMessage": "rituais dominados. A próxima lição é sobre falar dentro deles — estimar, travar, discordar.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre agile em inglês",
+        "intro": "Quatro coisas que só se aprendem participando.",
+        "cards": [
+          { "en": "\"Stand-up\" is a noun with a hyphen; \"to stand up\" is the physical act. The meeting is a stand-up because you're meant to stay standing — that's what keeps it short.", "pt": "\"Stand-up\" com hífen é a reunião; \"to stand up\" é levantar. O nome vem de ficar em pé mesmo — é o que a mantém curta." },
+          { "en": "\"Blocked\" is a state, not a complaint. Saying \"I'm blocked\" is expected and welcomed — staying silently blocked is the problem.", "pt": "\"Blocked\" é um estado, não uma reclamação. Dizer \"I'm blocked\" é esperado; ficar travada em silêncio é que é problema." },
+          { "en": "\"Take it offline\" has nothing to do with the internet — it means \"let's discuss it after this meeting\".", "pt": "\"Take it offline\" não tem nada a ver com internet — é \"vamos discutir depois desta reunião\"." },
+          { "en": "Teams say \"the ask\" as a noun: \"what's the ask here?\" It sounds odd but it is everywhere in agile English.", "pt": "Times dizem \"the ask\" como substantivo: \"what's the ask here?\". Soa estranho, mas é onipresente no inglês ágil." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now walk into any agile ceremony and know exactly what it is for.",
+        "pt": "Agora você entra em qualquer cerimônia ágil sabendo exatamente para que ela serve."
+      }
+    },
+    {
+      "title": "Speaking Inside the Sprint",
+      "focus": "Estimar, sinalizar bloqueio, negociar escopo e discordar sem travar o time",
+      "character": "gb-female",
+      "objective": "Dar uma estimativa com o grau certo de confiança, levantar um bloqueio cedo e dizer \"não cabe nesta sprint\" sem soar resistente.",
+      "intro": [
+        "Inside a sprint, three sentences do most of the work: <em>\"I think that's about a three\"</em>, <em>\"I'm blocked on X\"</em>, and <em>\"that won't fit in this sprint\"</em>.",
+        "Each one is a small act of negotiation. Said well, they protect the team's commitment. Said badly, they sound like guessing, complaining, or refusing.",
+        "The trick in English is hedging — the little words that show how sure you are: <strong>roughly</strong>, <strong>about</strong>, <strong>I'd say</strong>, <strong>assuming</strong>. Skip them and every estimate sounds like a promise."
+      ],
+      "introPt": [
+        "Dentro de uma sprint, três frases fazem quase todo o trabalho: <em>\"I think that's about a three\"</em>, <em>\"I'm blocked on X\"</em> e <em>\"that won't fit in this sprint\"</em>.",
+        "Cada uma é um pequeno ato de negociação. Bem ditas, protegem o compromisso do time. Mal ditas, soam como chute, reclamação ou recusa.",
+        "O truque em inglês é o <em>hedging</em> — as palavrinhas que mostram o quanto você tem certeza: <strong>roughly</strong>, <strong>about</strong>, <strong>I'd say</strong>, <strong>assuming</strong>. Sem elas, toda estimativa vira promessa."
+      ],
+      "vocab": [
+        { "en": "to estimate / an estimate", "pt": "estimar / estimativa", "example": "I'd estimate three days, assuming the data is clean." },
+        { "en": "story points", "pt": "pontos de complexidade", "example": "We sized it at five story points." },
+        { "en": "blocker", "pt": "impedimento que trava o trabalho", "example": "The missing credentials are a blocker for me." },
+        { "en": "to descope", "pt": "tirar algo do escopo da sprint", "example": "We can descope the export and still demo on Friday." },
+        { "en": "capacity", "pt": "capacidade do time no ciclo", "example": "We're at capacity — nothing else fits this sprint." },
+        { "en": "spike", "pt": "investigação curta antes de estimar", "example": "Let's run a spike before we commit to a number." },
+        { "en": "carry over", "pt": "passar para a sprint seguinte", "example": "Two stories will carry over into the next sprint." },
+        { "en": "trade-off", "pt": "troca — algo entra, algo sai", "example": "Happy to take it, but it's a trade-off with the export ticket." }
+      ],
+      "exercises": [
+        {
+          "type": "serialChoice",
+          "title": "O grau certo de confiança",
+          "badge": "Escolha certa",
+          "instruction": "As três opções são possíveis. Escolha a que passa a confiança certa para a situação.",
+          "items": [
+            {
+              "prompt": "Você não investigou ainda. Alguém pede um número.",
+              "options": [
+                { "text": "I'd rather run a quick spike before I give you a number.", "correct": true },
+                { "text": "About three days." },
+                { "text": "I have no idea." }
+              ],
+              "why": "Pedir um spike é a resposta profissional. \"No idea\" não ajuda; um número inventado vira compromisso."
+            },
+            {
+              "prompt": "Você tem uma boa noção, mas depende de dados limpos.",
+              "options": [
+                { "text": "Three days, guaranteed." },
+                { "text": "Roughly three days, assuming the data is clean.", "correct": true },
+                { "text": "Maybe three days, maybe more, hard to say." }
+              ],
+              "why": "Número + a condição de que ele depende. É a estimativa que se sustenta depois."
+            },
+            {
+              "prompt": "Você tem certeza — já fez isso três vezes.",
+              "options": [
+                { "text": "I'd say maybe two days or so." },
+                { "text": "Two days. We've done this exact integration before.", "correct": true },
+                { "text": "Possibly around two days." }
+              ],
+              "why": "Quando você tem certeza, hedging demais destrói sua credibilidade."
+            },
+            {
+              "prompt": "Alguém pede mais um item numa sprint já cheia.",
+              "options": [
+                { "text": "We're at capacity. I can take it if we descope the export — your call.", "correct": true },
+                { "text": "No, impossible." },
+                { "text": "Ok, we'll try to fit it in somehow." }
+              ],
+              "why": "Trade-off explícito devolve a decisão a quem prioriza — sem virar um \"não\"."
+            }
+          ],
+          "explanation": "Confiança calibrada: hedge quando há incerteza, seja direta quando não há."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o seu stand-up",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "Morning. Yesterday I ___ the export ticket and it's in review. Today I'm ___ up the plant filter story. One ___ : I still don't have the API credentials, so the integration test can't start. If they don't land today, that story will ___ over to next sprint. We're already ___ capacity, so I'd rather flag it now than on Friday.",
+          "gaps": [
+            { "options": ["closed", "finished up", "ended"], "answer": "closed", "why": "\"Close a ticket\" é o verbo padrão em qualquer board." },
+            { "options": ["picking", "taking", "getting"], "answer": "picking", "why": "to pick up a story = assumir um item." },
+            { "options": ["blocker", "block", "blocking"], "answer": "blocker", "why": "O substantivo é blocker." },
+            { "options": ["carry", "pass", "move"], "answer": "carry", "why": "to carry over = passar para a sprint seguinte." },
+            { "options": ["at", "in", "on"], "answer": "at", "why": "to be AT capacity = estar no limite." }
+          ],
+          "explanation": "Fechei · pego hoje · o que trava · o risco · o aviso antecipado. Trinta segundos."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Sprint planning: cabe ou não cabe?",
+          "badge": "Conversa",
+          "situation": "No planning, o product owner quer encaixar mais uma história numa sprint que já está cheia.",
+          "turns": [
+            {
+              "who": "Product Owner",
+              "them": "Can we squeeze the alerts feature into this sprint? The plant managers keep asking.",
+              "options": [
+                { "text": "We're at capacity. To take it, something has to come out — probably the export ticket. Which do you prefer?", "correct": true, "why": "Trade-off explícito. A decisão volta para quem prioriza." },
+                { "text": "No, the sprint is closed.", "why": "Correto no processo, mas fecha a conversa e te pinta como inflexível." },
+                { "text": "We'll try our best to fit it in.", "why": "\"We'll try\" costuma virar duas histórias inacabadas no fim da sprint." }
+              ]
+            },
+            {
+              "who": "Product Owner",
+              "them": "Can't we just do both? It's a small feature.",
+              "options": [
+                { "text": "If you say it's small, fine, we'll take it.", "why": "Estimativa é do time, não de quem pede. Ceder aqui quebra o processo." },
+                { "text": "We haven't sized it yet. Let me run a quick spike this afternoon and I'll give you a number before the end of planning.", "correct": true, "why": "Não é um não. É um \"me dê duas horas para responder com dado\"." },
+                { "text": "Nothing is ever small.", "why": "Sarcasmo custa caro numa relação de longo prazo com o PO." }
+              ]
+            },
+            {
+              "who": "Product Owner",
+              "them": "Fine. And if it turns out to be big?",
+              "options": [
+                { "text": "Then we'd descope the export to next sprint — it has no external deadline. I'll confirm by three.", "correct": true, "why": "Plano B pronto, com a justificativa (sem prazo externo) e um horário." },
+                { "text": "Then we'll deal with it later.", "why": "\"Later\" numa sprint de duas semanas costuma significar \"nunca\"." },
+                { "text": "Then it's your decision, not mine.", "why": "É decisão dele, sim — mas sem sua recomendação ele decide pior." }
+              ]
+            }
+          ],
+          "explanation": "Capacidade → trade-off → dado antes do compromisso → plano B com prazo."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual versão protege o time?",
+          "badge": "A ou B",
+          "instruction": "Escolha a frase que resolve, em vez de só sinalizar desconforto.",
+          "items": [
+            { "prompt": "Você está travada há dois dias.", "a": "I've been stuck on this for two days, it's really frustrating.", "b": "I've been blocked for two days on the credentials. Who owns that request? I'd like to escalate today.", "correct": "b", "why": "Bloqueio + dono + próximo passo. Frustração sozinha não desbloqueia nada." },
+            { "prompt": "A estimativa do time foi muito otimista.", "a": "We always underestimate everything in this team.", "b": "Three of our five stories took longer than sized. I'd like to look at why in the retro.", "correct": "b", "why": "Dado específico + o fórum certo. Generalização em stand-up não muda nada." },
+            { "prompt": "Você discorda da abordagem técnica.", "a": "That approach won't work.", "b": "I'd push back on that approach — it couples us to the vendor's schema. Could we look at an adapter instead?", "correct": "b", "why": "\"I'd push back\" + a razão + uma alternativa. Discordar sem alternativa é só atrito." },
+            { "prompt": "Duas histórias não vão terminar.", "a": "We'll probably finish everything, let's see on Friday.", "b": "Two stories will carry over. I'm flagging it now so the review has no surprises.", "correct": "b", "why": "Avisar cedo é o comportamento que constrói confiança. Sexta-feira é tarde." }
+          ],
+          "explanation": "Sinalizar cedo, com dado e com um próximo passo. É a diferença entre reclamar e gerenciar."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre o uso real desses termos em times ágeis.",
+          "items": [
+            { "text": "\"To descope\" means to cancel the project.", "answer": false, "why": "Descope é tirar um item do escopo do ciclo — o projeto continua." },
+            { "text": "A spike is a short investigation done before estimating.", "answer": true, "why": "É exatamente isso: tempo caixa fechada para reduzir incerteza." },
+            { "text": "Saying \"I'm blocked\" in a stand-up is seen as complaining.", "answer": false, "why": "É o comportamento esperado. O problema é ficar travada em silêncio." },
+            { "text": "Story points measure hours.", "answer": false, "why": "Medem complexidade relativa. Traduzir ponto em hora é o erro clássico." },
+            { "text": "\"Carry over\" means moving unfinished work into the next sprint.", "answer": true, "why": "Sim — e é normal, desde que avisado antes da review." }
+          ],
+          "explanation": "Descope, spike, blocker, carry over. Quatro palavras que dão a você controle sobre o ciclo."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Essas frases precisam sair automáticas — você vai usá-las toda semana.",
+          "sentences": [
+            "Roughly three days, assuming the data is clean.",
+            "I've been blocked for two days on the API credentials.",
+            "We're at capacity — to take that in, something has to come out.",
+            "Let me run a quick spike before I commit to a number.",
+            "Two stories will carry over, and I'm flagging it now."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can give an estimate with the right level of hedging.", "pt": "Sei dar uma estimativa com o grau certo de hedging." },
+            { "en": "I can raise a blocker with the owner and a next step.", "pt": "Levanto um bloqueio com dono e próximo passo." },
+            { "en": "I can say \"that's a trade-off\" instead of just saying no.", "pt": "Sei dizer \"that's a trade-off\" em vez de só dizer não." },
+            { "en": "I flag a carry-over before the review, not during it.", "pt": "Aviso de carry-over antes da review, não durante." }
+          ],
+          "doneMessage": "sprint sob controle. O próximo tópico é reunião — conduzir, atualizar e perguntar.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre negociar dentro da sprint",
+        "intro": "Quatro hábitos de linguagem que fazem times confiarem em você.",
+        "cards": [
+          { "en": "\"I'd push back on that\" is the standard polite way to disagree in English-speaking teams. It signals resistance without confrontation.", "pt": "\"I'd push back on that\" é o jeito padrão e educado de discordar. Sinaliza resistência sem confronto." },
+          { "en": "\"Assuming X\" is the most useful two words in estimating: it attaches a condition to your number without weakening it.", "pt": "\"Assuming X\" são as duas palavras mais úteis ao estimar: prendem uma condição ao número sem enfraquecê-lo." },
+          { "en": "Native speakers say \"nice to have\" vs \"must have\" constantly. It's the fastest way to sort a backlog out loud.", "pt": "Nativos usam \"nice to have\" e \"must have\" o tempo todo. É o jeito mais rápido de priorizar em voz alta." },
+          { "en": "\"Your call\" hands the decision back respectfully — it means \"you decide, I've given you what you need\".", "pt": "\"Your call\" devolve a decisão com respeito — \"você decide, eu já te dei o que precisava\"." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now protect your team's commitment in English — without ever sounding difficult.",
+        "pt": "Agora você protege o compromisso do seu time em inglês — sem nunca soar difícil."
+      }
+    }
+  ]
+}

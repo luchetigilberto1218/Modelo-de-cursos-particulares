@@ -1,0 +1,383 @@
+{
+  "topic": "Product Lifespan and Degradation",
+  "lessons": [
+    {
+      "title": "How Equipment Ages",
+      "focus": "Vida útil, curva da banheira, degradação e o que \"fim de vida\" realmente significa",
+      "character": "us-female",
+      "objective": "Explicar em inglês como um equipamento envelhece — vida de projeto, degradação, falha precoce e fim de vida — sem confundir os quatro conceitos.",
+      "intro": [
+        "Equipment doesn't simply work until it breaks. It degrades, and the shape of that degradation is what maintenance strategy is built on.",
+        "The classic picture is the <strong>bathtub curve</strong>: many failures early (manufacturing and installation problems), few in the long middle (random failures), and rising failures at the end (wear-out).",
+        "Each region needs different language and different action. Early failures mean go look at the batch. Wear-out means plan the replacement. Confusing the two is how a company either replaces good equipment too soon or runs bad equipment too long."
+      ],
+      "introPt": [
+        "Equipamento não simplesmente funciona até quebrar. Ele degrada, e o formato dessa degradação é o que sustenta toda estratégia de manutenção.",
+        "A figura clássica é a <strong>curva da banheira</strong>: muitas falhas no início (fabricação e instalação), poucas no longo meio (falhas aleatórias) e falhas crescentes no fim (desgaste).",
+        "Cada região pede uma linguagem e uma ação diferentes. Falha precoce significa ir olhar o lote. Desgaste significa planejar a substituição. Confundir os dois é como uma empresa ou troca equipamento bom cedo demais, ou roda equipamento ruim tempo demais."
+      ],
+      "vocab": [
+        { "en": "design life", "pt": "vida de projeto — para quanto foi projetado", "example": "Design life is twenty-four months in this duty." },
+        { "en": "service life", "pt": "vida em serviço — quanto realmente durou", "example": "Actual service life averaged nineteen months." },
+        { "en": "bathtub curve", "pt": "curva da banheira", "example": "We're seeing the early part of the bathtub curve." },
+        { "en": "infant mortality", "pt": "falha precoce, logo após instalar", "example": "Three failures in the first month — that's infant mortality." },
+        { "en": "wear-out", "pt": "degradação final por desgaste", "example": "Wear-out starts at about twenty months." },
+        { "en": "degradation", "pt": "perda gradual de desempenho", "example": "Degradation shows in efficiency before it shows in failure." },
+        { "en": "end of life", "pt": "fim de vida útil", "example": "The unit is at end of life, not failed." },
+        { "en": "duty / operating envelope", "pt": "condição de serviço / faixa de operação", "example": "Outside the operating envelope, life halves." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Em que região da curva?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada padrão de falha.",
+          "categories": [
+            { "id": "infant", "name": "Infant mortality · falha precoce", "short": "Precoce" },
+            { "id": "random", "name": "Random · aleatória, meio da vida", "short": "Aleatória" },
+            { "id": "wear", "name": "Wear-out · desgaste final", "short": "Desgaste" }
+          ],
+          "items": [
+            { "text": "Three of eight new units failed within six weeks of installation", "cat": "infant" },
+            { "text": "A single unit failed at fourteen months with no pattern across the fleet", "cat": "random" },
+            { "text": "Failure rate across the fleet starts climbing after twenty months", "cat": "wear" },
+            { "text": "A seal fitted incorrectly during installation failed in the first month", "cat": "infant" },
+            { "text": "Vibration and efficiency both drifting on units past twenty-two months", "cat": "wear" },
+            { "text": "One unit hit by a power surge during a storm", "cat": "random" }
+          ],
+          "explanation": "Falha precoce manda investigar lote e instalação. Desgaste manda planejar substituição. Aleatória, sozinha, não manda mudar nada."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia a análise de vida útil",
+          "badge": "Leia e responda",
+          "heading": "Fleet reliability review · ESP units, Macaé",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Design life for these units in this duty is twenty-four months. Actual service life across the fleet of eighteen averages nineteen months.",
+            "The distribution is not uniform. Four units failed within the first three months — all from the same delivery batch, and all with the same seal type. The remaining fourteen cluster between twenty and twenty-six months, which is consistent with normal wear-out.",
+            "This is a bathtub curve with a heavy infant-mortality region. Removing those four units from the average raises service life to twenty-three months — essentially design life.",
+            "Interpretation: this fleet does not have a wear-out problem. It has a batch problem. Replacing units earlier would be the wrong response; investigating that batch and that seal type is the right one.",
+            "Degradation signal: on the fourteen normal units, efficiency drops measurably about three months before failure, and vibration rises about six weeks before. That is the window predictive alerting is designed to use."
+          ],
+          "questions": [
+            {
+              "prompt": "Why would replacing units earlier be the wrong response?",
+              "options": [
+                { "text": "Because the low average is caused by one bad batch, not by units wearing out sooner.", "correct": true },
+                { "text": "Because replacement is expensive.", "correct": false },
+                { "text": "Because design life is twenty-four months." }
+              ],
+              "why": "A média mente quando a distribuição tem dois grupos. Ler a média sem olhar a distribuição leva à decisão oposta da correta."
+            },
+            {
+              "prompt": "What is the practical value of the degradation signal?",
+              "options": [
+                { "text": "It gives a warning window — six weeks on vibration, three months on efficiency — before failure.", "correct": true },
+                { "text": "It proves the units are badly designed.", "correct": false },
+                { "text": "It measures the design life." }
+              ],
+              "why": "Degradação mensurável antes da falha é exatamente o que torna manutenção preditiva possível. Sem janela, não há previsão útil."
+            },
+            {
+              "prompt": "What distinguishes design life from service life here?",
+              "options": [
+                { "text": "Design life is what the unit was engineered for; service life is what it actually achieved.", "correct": true },
+                { "text": "They are the same thing measured differently.", "correct": false },
+                { "text": "Service life includes the warranty." }
+              ],
+              "why": "A distância entre as duas é a informação. Igual significa operação dentro do envelope; muito menor significa lote, instalação ou condição de serviço."
+            }
+          ],
+          "explanation": "Média versus distribuição · região da curva · janela de degradação · vida de projeto versus vida em serviço."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Interpretando dados de vida útil",
+          "badge": "A ou B",
+          "instruction": "Escolha a leitura que leva à ação certa.",
+          "items": [
+            { "prompt": "A vida média caiu de 23 para 19 meses.", "a": "Our units are lasting less — we should shorten the replacement interval.", "b": "Four units from one batch failed in the first three months. Excluding those, the fleet is at twenty-three months. This is a batch problem, not a wear problem.", "correct": "b", "why": "Encurtar o intervalo trocaria catorze unidades boas por causa de quatro ruins. É a decisão oposta da correta." },
+            { "prompt": "Uma unidade falhou aos catorze meses.", "a": "That's a premature failure, let's investigate the batch.", "b": "One unit at fourteen months with no pattern across the fleet looks random. I'd watch it, but I wouldn't open a batch investigation on one point.", "correct": "b", "why": "Falha isolada no meio da vida é aleatória. Investigar lote a cada ponto isolado consome credibilidade e tempo." },
+            { "prompt": "Explicando por que uma unidade será trocada.", "a": "The pump is broken.", "b": "The unit is at end of life, not failed. Efficiency is down 12% and vibration is trending — we're replacing it on plan, not on breakdown.", "correct": "b", "why": "Fim de vida e falha são coisas diferentes. Trocar planejado é vitória; trocar por quebra é derrota." },
+            { "prompt": "A unidade durou metade do previsto.", "a": "The equipment quality is poor.", "b": "Life was eleven months against a design life of twenty-four. Before blaming the equipment, I'd check whether it ran outside the operating envelope — sand content doubled in March.", "correct": "b", "why": "Condição de serviço fora do envelope reduz vida drasticamente. Culpar o equipamento sem checar isso é o erro mais comum." }
+          ],
+          "explanation": "Olhe a distribuição, não a média · ponto isolado é aleatório · fim de vida ≠ falha · cheque o envelope antes de culpar o produto."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "design life", "right": "a vida para a qual o equipamento foi projetado naquela condição" },
+            { "left": "service life", "right": "a vida que ele efetivamente teve em operação" },
+            { "left": "infant mortality", "right": "falhas concentradas logo após instalação, normalmente de lote ou montagem" },
+            { "left": "wear-out", "right": "a subida da taxa de falha no fim da vida, por degradação acumulada" },
+            { "left": "end of life", "right": "o ponto em que substituir planejadamente sai mais barato que continuar" },
+            { "left": "operating envelope", "right": "a faixa de condições dentro da qual a vida de projeto vale" }
+          ],
+          "explanation": "Vida de projeto sempre pressupõe um envelope de operação. Fora dele, o número não vale — e é aí que quase toda discussão de garantia começa."
+        },
+        {
+          "type": "flowChoice",
+          "title": "O cliente reclama da durabilidade",
+          "badge": "Conversa",
+          "situation": "Um cliente diz que as bombas duram metade do prometido e quer discutir garantia. Você tem os dados da frota.",
+          "turns": [
+            {
+              "who": "Client",
+              "them": "Your pumps are supposed to last two years. Ours are lasting eleven months. That's half.",
+              "options": [
+                { "text": "That's not what our data shows.", "why": "Contradizer com \"nossos dados\" na primeira frase põe a conversa em modo de disputa." },
+                { "text": "Eleven months against twenty-four is a real gap, and I want to understand it with you. Can we look at the failures one by one rather than at the average?", "correct": true, "why": "Reconhece a diferença, propõe olhar junto e move da média para os casos — que é onde a resposta está." },
+                { "text": "Design life assumes standard operating conditions.", "why": "Tecnicamente certo e, dito assim, soa como se você já estivesse preparando a recusa da garantia." }
+              ]
+            },
+            {
+              "who": "Client",
+              "them": "Fine. But I've had four failures this year, that's not normal.",
+              "options": [
+                { "text": "Three of those four are from the same delivery batch, with the same seal type. That's a batch issue and it's ours to investigate — I'll open it today.", "correct": true, "why": "Assume a parte que é sua, com evidência, e sem esperar que ele descubra. É isso que preserva a relação." },
+                { "text": "Four out of eighteen is within normal range.", "why": "Pode ser estatisticamente defensável e é péssimo comercialmente — e provavelmente errado, se três são do mesmo lote." },
+                { "text": "We'd need to review your operating conditions.", "why": "Começar pela condição dele antes de olhar o seu lote é o movimento que destrói confiança." }
+              ]
+            },
+            {
+              "who": "Client",
+              "them": "And the fourth one?",
+              "options": [
+                { "text": "That one's probably operational.", "why": "\"Provavelmente\" numa conversa de garantia é lido como fuga." },
+                { "text": "That one ran eleven months, and the sand content in that well doubled in March — that's outside the envelope the design life assumes. I'd like to look at it together, because if the duty has changed, the right answer might be a different seal specification rather than a warranty claim.", "correct": true, "why": "Diz o dado, nomeia a implicação e transforma a discussão de garantia numa proposta técnica melhor para ele." },
+                { "text": "That's outside warranty conditions.", "why": "Verdadeiro talvez, e fecha a conversa numa negativa em vez de numa solução." }
+              ]
+            }
+          ],
+          "explanation": "Reconheça a diferença · assuma o que é seu primeiro, com evidência · e transforme a discussão de garantia numa proposta técnica."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The pump has a useful life of twenty-four months.", "wrong": "useful", "fix": "design", "why": "\"Useful life\" é termo contábil. Em engenharia, é <strong>design life</strong> ou service life." },
+            { "sentence": "The equipment is degradating faster than expected.", "wrong": "degradating", "fix": "degrading", "why": "O verbo é degrade → degrading. \"Degradating\" não existe." },
+            { "sentence": "The unit arrived at the end of its life.", "wrong": "arrived at", "fix": "reached", "why": "\"Reached end of life\" é a colocação. \"Arrived at\" é para lugares." },
+            { "sentence": "Four pieces failed in the first three months.", "wrong": "pieces", "fix": "units", "why": "Equipamento se conta em <strong>units</strong>. \"Pieces\" é para peças soltas." },
+            { "sentence": "This failure is out of the warranty conditions.", "wrong": "out of", "fix": "outside", "why": "\"Outside the warranty conditions\". \"Out of\" muda o sentido para \"acabou a garantia\"." }
+          ],
+          "explanation": "\"Useful life\" e \"pieces\" são os dois que mais destoam numa conversa técnica sobre durabilidade."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. As duas últimas são para uma conversa de garantia — treine até saírem tranquilas.",
+          "sentences": [
+            "Design life is twenty-four months; actual service life averaged nineteen.",
+            "This is a batch problem, not a wear-out problem.",
+            "The unit is at end of life, not failed — we're replacing it on plan.",
+            "Three of those four are from the same batch, and that's ours to investigate.",
+            "The sand content doubled in March, which is outside the envelope the design life assumes."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I look at the distribution of failures, not just the average.", "pt": "Olho a distribuição das falhas, não só a média." },
+            { "en": "I can tell infant mortality from wear-out and say what each one demands.", "pt": "Sei distinguir falha precoce de desgaste e dizer o que cada uma exige." },
+            { "en": "I distinguish \"end of life\" from \"failed\".", "pt": "Distingo \"fim de vida\" de \"falhou\"." },
+            { "en": "I check the operating envelope before blaming the product.", "pt": "Confiro o envelope de operação antes de culpar o produto." },
+            { "en": "In a warranty conversation, I own my batch issues first.", "pt": "Numa conversa de garantia, assumo primeiro o que é problema do meu lote." }
+          ],
+          "doneMessage": "vida útil dominada. A próxima lição fecha a trilha: manutenção preditiva e o valor de prever.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre durabilidade em inglês",
+        "intro": "Quatro distinções que decidem conversas de garantia.",
+        "cards": [
+          { "en": "\"Design life\" always assumes an operating envelope. Quoting the number without the conditions is how warranty disputes start.", "pt": "\"Design life\" sempre pressupõe um envelope de operação. Citar o número sem as condições é como começam as disputas de garantia." },
+          { "en": "The bathtub curve has been standard reliability vocabulary since the 1950s. Saying \"we're in the infant mortality region\" is instantly understood by any reliability engineer.", "pt": "A curva da banheira é vocabulário padrão de confiabilidade desde os anos 1950. Dizer \"we're in the infant mortality region\" é entendido na hora por qualquer engenheiro de confiabilidade." },
+          { "en": "Averages lie when the distribution has two groups. Always ask to see the failures individually before acting on a mean.", "pt": "Médias mentem quando a distribuição tem dois grupos. Sempre peça para ver as falhas individualmente antes de agir sobre uma média." },
+          { "en": "\"At end of life\" and \"failed\" are commercially very different sentences. One is planning; the other is a breakdown.", "pt": "\"At end of life\" e \"failed\" são frases comercialmente muito diferentes. Uma é planejamento; a outra é quebra." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now read a reliability dataset and say what it actually means.",
+        "pt": "Agora você lê um conjunto de dados de confiabilidade e diz o que ele de fato significa."
+      }
+    },
+    {
+      "title": "Predictive Maintenance and the Value of Knowing Early",
+      "focus": "Prever falhas: janela de aviso, custo evitado e a conversa com o cliente",
+      "character": "gb-male",
+      "objective": "Explicar e vender o valor da manutenção preditiva em inglês — a janela de aviso, o custo evitado e por que prever cedo demais também é um problema.",
+      "intro": [
+        "This lesson closes your track, and it brings together almost everything in it: reliability data, AI, business cases, HSE, client conversations.",
+        "Predictive maintenance sells one thing: <strong>a warning window</strong>. Not certainty — time. Enough time to plan an intervention instead of reacting to a breakdown.",
+        "And the honest part, which most vendors leave out: a prediction that arrives too early is also expensive. Pull a pump at eighteen months that would have run to twenty-four and you threw away six months of life. The value is in the window, not in the alarm."
+      ],
+      "introPt": [
+        "Esta lição fecha a sua trilha, e reúne quase tudo o que veio antes: dados de confiabilidade, IA, business case, HSE, conversa com cliente.",
+        "Manutenção preditiva vende uma coisa: <strong>uma janela de aviso</strong>. Não certeza — tempo. Tempo suficiente para planejar uma intervenção em vez de reagir a uma quebra.",
+        "E a parte honesta, que a maioria dos fornecedores omite: uma previsão que chega cedo demais também custa caro. Puxar uma bomba aos dezoito meses que rodaria até vinte e quatro é jogar fora seis meses de vida. O valor está na janela, não no alarme."
+      ],
+      "vocab": [
+        { "en": "predictive maintenance", "pt": "manutenção preditiva", "example": "Predictive maintenance buys us planning time." },
+        { "en": "warning window", "pt": "janela entre o aviso e a falha", "example": "The warning window is about six weeks." },
+        { "en": "condition monitoring", "pt": "monitoramento de condição", "example": "Condition monitoring runs continuously." },
+        { "en": "unplanned downtime", "pt": "parada não programada", "example": "One day of unplanned downtime is 45k." },
+        { "en": "planned intervention", "pt": "intervenção programada", "example": "A planned intervention costs a third of an emergency one." },
+        { "en": "remaining useful life (RUL)", "pt": "vida útil remanescente estimada", "example": "Estimated RUL is about eight weeks." },
+        { "en": "false alarm", "pt": "alarme falso", "example": "Too many false alarms and nobody looks." },
+        { "en": "avoided cost", "pt": "custo evitado", "example": "The business case is built on avoided cost." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia a proposta ao cliente",
+          "badge": "Leia e responda",
+          "heading": "Proposal · Predictive alerting for ESP fleet",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "What it does: continuous condition monitoring on eighteen ESP units, estimating remaining useful life from vibration, temperature and current draw.",
+            "What it gives you: on the units we have studied, vibration rises about six weeks before failure and efficiency drops about three months before. That is the warning window — enough time to plan an intervention into a scheduled slot rather than react to a breakdown.",
+            "The value: an unplanned failure costs roughly eleven days of lost production. A planned intervention in a scheduled window costs about a third of that, because the rig time is already allocated.",
+            "What it does not do: it does not tell you the unit will fail. It estimates a probability and a window. A reliability engineer reviews every flag and decides — the system never triggers an intervention on its own.",
+            "The honest limitation: pulling a unit too early wastes life. Our current model is tuned to flag late rather than early, accepting that we will miss some failures in exchange for a low false alarm rate. If your preference is the opposite, we can retune — but not both at once."
+          ],
+          "questions": [
+            {
+              "prompt": "What is actually being sold here?",
+              "options": [
+                { "text": "A warning window — planning time, not certainty.", "correct": true },
+                { "text": "The prevention of all failures.", "correct": false },
+                { "text": "A cheaper pump." }
+              ],
+              "why": "Vender certeza é o erro fatal em preditiva. Vender tempo de planejamento é o que se pode cumprir."
+            },
+            {
+              "prompt": "Why does the proposal mention tuning late rather than early?",
+              "options": [
+                { "text": "Because it makes the trade-off explicit: fewer false alarms means missing some failures.", "correct": true },
+                { "text": "Because the model isn't very good.", "correct": false },
+                { "text": "Because early alerts are technically harder." }
+              ],
+              "why": "É um trade-off real que não pode ser otimizado dos dois lados. Declará-lo constrói a credibilidade da proposta inteira."
+            },
+            {
+              "prompt": "Why insist that an engineer reviews every flag?",
+              "options": [
+                { "text": "Because the system estimates probability, and pulling equipment is a decision with cost either way.", "correct": true },
+                { "text": "Because the model is unreliable.", "correct": false },
+                { "text": "Because of regulations." }
+              ],
+              "why": "Human in the loop, que você viu no tópico de IA, é exatamente isto aplicado a um equipamento de 200 mil dólares."
+            }
+          ],
+          "explanation": "O que faz · a janela · o valor em custo evitado · o que NÃO faz · e o trade-off declarado."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Vendendo preditiva com honestidade",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que fecha negócio e ainda pode ser cumprida.",
+          "items": [
+            { "prompt": "Explicando o que o sistema entrega.", "a": "It predicts failures before they happen.", "b": "It gives you about six weeks of warning. That's enough to move an intervention into a planned slot instead of reacting to a breakdown.", "correct": "b", "why": "Vender janela é cumprível. Vender previsão de falha é uma promessa que a primeira surpresa quebra." },
+            { "prompt": "Construindo o business case.", "a": "It will reduce your maintenance costs significantly.", "b": "An unplanned failure is eleven days of lost production. A planned one is about a third. Two avoided emergencies a year pays for the system.", "correct": "b", "why": "Custo evitado com número e frequência. \"Significativamente\" não passa por nenhum comitê." },
+            { "prompt": "Falando de alarmes falsos.", "a": "False alarms are rare with our model.", "b": "We tuned it to flag late. That means fewer false alarms and some missed failures. If you'd rather catch everything, we can retune — but you'll get more false alarms. It's one or the other.", "correct": "b", "why": "Nomear o trade-off é o que faz o cliente confiar em tudo o mais que você disse." },
+            { "prompt": "O cliente pergunta se pode automatizar a parada.", "a": "Yes, we can automate the shutdown on a flag.", "b": "Technically yes. I wouldn't. A flag is a probability, and pulling a good pump costs real money — an engineer should look at every one.", "correct": "b", "why": "Recomendar contra a automação total quando ela é possível é o que separa fornecedor de parceiro." }
+          ],
+          "explanation": "Venda a janela · custo evitado com número · trade-off declarado · e recomende o humano no circuito."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o argumento de valor",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas frases na ordem que constrói o caso.",
+          "items": [
+            "An unplanned ESP failure costs about eleven days of lost production.",
+            "Vibration starts rising roughly six weeks before failure — that's our warning window.",
+            "Six weeks is enough to move the intervention into a scheduled rig slot.",
+            "A planned intervention costs about a third of an emergency one.",
+            "Two avoided emergencies a year pays for the whole system, and everything after that is margin."
+          ],
+          "explanation": "Custo da falha → a janela existe → a janela é utilizável → o planejado é mais barato → quantas evitadas pagam a conta."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre manutenção preditiva.",
+          "items": [
+            { "text": "The value of predictive maintenance is certainty about when equipment will fail.", "answer": false, "why": "O valor é a janela de planejamento. Certeza é o que nenhum sistema entrega, e prometê-la afunda o projeto." },
+            { "text": "Flagging too early is also a cost.", "answer": true, "why": "Puxar aos dezoito meses o que rodaria até vinte e quatro joga fora seis meses de vida — e isso é dinheiro." },
+            { "text": "You can minimise false alarms and missed failures at the same time.", "answer": false, "why": "É um trade-off. Otimizar um piora o outro; declarar isso é o que torna a proposta honesta." },
+            { "text": "A warning window is only useful if it is longer than the time needed to plan.", "answer": true, "why": "Seis semanas de aviso não valem nada se a janela de sonda só abre a cada três meses. A janela tem que caber no processo." },
+            { "text": "Condition monitoring and predictive maintenance are the same thing.", "answer": false, "why": "Monitoramento coleta o dado; preditiva usa esse dado para estimar vida remanescente e antecipar a ação." }
+          ],
+          "explanation": "Janela, não certeza · cedo demais custa · trade-off é inescapável · a janela precisa caber no processo do cliente."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a proposta",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "The system provides continuous ___ monitoring on eighteen units and estimates ___ useful life. Vibration rises about six weeks before failure — that's your ___ window. Six weeks is enough to convert an ___ failure into a ___ intervention, which costs roughly a third as much. The business case is built on ___ cost: two avoided emergencies a year pays for the system. We've tuned the model to flag late, which keeps ___ alarms low at the price of missing some failures.",
+          "gaps": [
+            { "options": ["condition", "state", "situation"], "answer": "condition", "why": "Condition monitoring é o termo consagrado." },
+            { "options": ["remaining", "rest of", "left"], "answer": "remaining", "why": "Remaining useful life (RUL) — expressão fixa." },
+            { "options": ["warning", "alert", "advice"], "answer": "warning", "why": "Warning window: o tempo entre o aviso e a falha." },
+            { "options": ["unplanned", "unexpected", "surprise"], "answer": "unplanned", "why": "Unplanned downtime/failure é o par oposto de planned." },
+            { "options": ["planned", "scheduled up", "programmed"], "answer": "planned", "why": "Planned intervention — o par de unplanned." },
+            { "options": ["avoided", "saved", "economised"], "answer": "avoided", "why": "Avoided cost é o termo de business case." },
+            { "options": ["false", "wrong", "fake"], "answer": "false", "why": "False alarm — expressão fixa." }
+          ],
+          "explanation": "Condition monitoring · RUL · warning window · unplanned vs planned · avoided cost · false alarm. Sete termos e a proposta está escrita."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. É a última prática da sua trilha — e é o argumento que você mais vai usar.",
+          "sentences": [
+            "What we're selling is a warning window, not certainty.",
+            "Vibration rises about six weeks before failure.",
+            "That's enough time to move the intervention into a planned slot.",
+            "A planned intervention costs about a third of an emergency one.",
+            "We tuned it to flag late — fewer false alarms, and we accept missing some failures."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I sell a warning window, never certainty.", "pt": "Vendo uma janela de aviso, nunca certeza." },
+            { "en": "I build the case on avoided cost with real numbers.", "pt": "Construo o caso sobre custo evitado com números reais." },
+            { "en": "I state the false-alarm trade-off out loud.", "pt": "Declaro em voz alta o trade-off do alarme falso." },
+            { "en": "I check that the warning window fits the client's planning cycle.", "pt": "Confiro se a janela de aviso cabe no ciclo de planejamento do cliente." },
+            { "en": "I recommend a human in the loop, even when automation is possible.", "pt": "Recomendo humano no circuito, mesmo quando a automação é possível." }
+          ],
+          "doneMessage": "trilha completa. Vinte e dois temas, do inglês de liderança ao vocabulário do produto — todos escolhidos por você.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre vender previsão",
+        "intro": "Quatro coisas que separam uma proposta que se sustenta de uma que decepciona no primeiro trimestre.",
+        "cards": [
+          { "en": "\"Warning window\" is the honest product. Certainty is what competitors promise and what nobody delivers.", "pt": "\"Warning window\" é o produto honesto. Certeza é o que concorrentes prometem e ninguém entrega." },
+          { "en": "\"Avoided cost\" is the standard business-case term for money you didn't have to spend. It is weaker than revenue in a CFO's eyes — so always show how you calculated it.", "pt": "\"Avoided cost\" é o termo padrão de business case para dinheiro que você não precisou gastar. Vale menos que receita aos olhos de um CFO — então sempre mostre como você calculou." },
+          { "en": "A warning window is only worth what the client's planning cycle can use. Six weeks is gold if rig slots open monthly, and worthless if they open twice a year.", "pt": "Uma janela de aviso vale o que o ciclo de planejamento do cliente consegue aproveitar. Seis semanas são ouro se as janelas de sonda abrem todo mês, e não valem nada se abrem duas vezes ao ano." },
+          { "en": "Recommending against full automation, when automation is technically possible, is what turns a vendor into a trusted advisor.", "pt": "Recomendar contra a automação total, quando ela é tecnicamente possível, é o que transforma um fornecedor num conselheiro de confiança." }
+        ]
+      },
+      "celebrate": {
+        "en": "That's your track complete — twenty-two topics, from leading a meeting to defending a warranty conversation, all in English.",
+        "pt": "Trilha completa — vinte e dois temas, de conduzir uma reunião a sustentar uma conversa de garantia, tudo em inglês."
+      }
+    }
+  ]
+}

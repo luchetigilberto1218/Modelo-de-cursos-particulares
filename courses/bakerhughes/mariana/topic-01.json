@@ -1,0 +1,388 @@
+{
+  "topic": "Project management terms",
+  "lessons": [
+    {
+      "title": "The Vocabulary of a Project",
+      "focus": "Nomear as partes de um projeto: escopo, entregas, marcos, dependências",
+      "character": "us-female",
+      "objective": "Descrever qualquer projeto seu em inglês usando os termos que todo PM do mundo entende: scope, deliverable, milestone, dependency e stakeholder.",
+      "intro": [
+        "A project in English is always described with the same handful of nouns: <strong>scope</strong>, <strong>deliverable</strong>, <strong>milestone</strong>, <strong>dependency</strong>, <strong>stakeholder</strong>.",
+        "They are not fancy words — they are the labels everyone in a global team already agrees on. Once you use them, people stop guessing what you mean.",
+        "This lesson gives you the five nouns, plus the verbs that go with each one. That combination is what makes you sound like a project manager, not like someone describing a project."
+      ],
+      "introPt": [
+        "Um projeto em inglês é sempre descrito com o mesmo punhado de substantivos: <strong>scope</strong> (escopo), <strong>deliverable</strong> (entrega), <strong>milestone</strong> (marco), <strong>dependency</strong> (dependência), <strong>stakeholder</strong> (parte interessada).",
+        "Não são palavras pomposas — são os rótulos com os quais um time global já concordou. Quando você usa, as pessoas param de adivinhar o que você quis dizer.",
+        "Esta lição te dá os cinco substantivos e os verbos que andam com cada um. É essa combinação que faz você soar como uma PM, e não como alguém descrevendo um projeto."
+      ],
+      "vocab": [
+        { "en": "scope", "pt": "escopo — o que está dentro e fora do projeto", "example": "Reporting is in scope; training the users is not." },
+        { "en": "deliverable", "pt": "entregável — o resultado concreto", "example": "The first deliverable is the integration spec." },
+        { "en": "milestone", "pt": "marco — data que marca o fim de uma etapa", "example": "Go-live is the last milestone before handover." },
+        { "en": "dependency", "pt": "dependência — algo que precisa acontecer antes", "example": "We have a dependency on the vendor's API." },
+        { "en": "stakeholder", "pt": "parte interessada / público afetado", "example": "Let's map the stakeholders before we kick off." },
+        { "en": "kick-off", "pt": "reunião de partida do projeto", "example": "The kick-off is on Monday with both teams." },
+        { "en": "handover", "pt": "passagem de bastão para operação/suporte", "example": "After handover, support owns the system." },
+        { "en": "workstream", "pt": "frente de trabalho", "example": "I lead the data workstream." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia o resumo do projeto",
+          "badge": "Leia e responda",
+          "heading": "Project one-pager · Digital Operations",
+          "instruction": "Leia o one-pager e responda. Tudo o que você precisa está no texto.",
+          "passage": [
+            "The project delivers a single dashboard for equipment data across three plants. In scope: data integration, the dashboard itself, and user access. Out of scope: replacing the legacy maintenance system.",
+            "There are three deliverables: an integration spec in March, a pilot dashboard in June, and the production release in September. Go-live in September is the final milestone.",
+            "The main dependency sits outside our team — the vendor has to expose their API before we can start the integration. Key stakeholders are plant managers, the HSE team and regional IT."
+          ],
+          "questions": [
+            {
+              "prompt": "What is explicitly out of scope?",
+              "options": [
+                { "text": "Replacing the legacy maintenance system.", "correct": true },
+                { "text": "The pilot dashboard.", "correct": false },
+                { "text": "User access." }
+              ],
+              "why": "\"Out of scope: replacing the legacy maintenance system.\" Dizer o que está fora vale tanto quanto dizer o que está dentro."
+            },
+            {
+              "prompt": "Why is the vendor's API called a dependency?",
+              "options": [
+                { "text": "Because it is one of the deliverables.", "correct": false },
+                { "text": "Because the integration cannot start until it exists.", "correct": true },
+                { "text": "Because the vendor is a stakeholder." }
+              ],
+              "why": "Dependency = algo fora do seu controle que trava o começo de outra coisa."
+            },
+            {
+              "prompt": "Which one is a milestone?",
+              "options": [
+                { "text": "Go-live in September.", "correct": true },
+                { "text": "Regional IT.", "correct": false },
+                { "text": "The data integration work." }
+              ],
+              "why": "Milestone é uma data que marca o fim de uma etapa — não uma atividade nem uma pessoa."
+            }
+          ],
+          "explanation": "Scope, deliverables, milestones, dependencies, stakeholders. Um one-pager de projeto é literalmente essas cinco caixas."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo à definição",
+          "instruction": "Clique na caixa à direita e escolha a definição certa para cada termo.",
+          "pairs": [
+            { "left": "scope", "right": "a fronteira do que o projeto entrega — e do que não entrega" },
+            { "left": "deliverable", "right": "o resultado concreto que alguém recebe no fim de uma etapa" },
+            { "left": "milestone", "right": "a data que marca o fim de uma fase" },
+            { "left": "dependency", "right": "algo fora do seu controle que precisa acontecer antes" },
+            { "left": "stakeholder", "right": "quem é afetado pelo projeto ou influencia o resultado" },
+            { "left": "handover", "right": "a passagem formal do projeto para quem vai operar" }
+          ],
+          "explanation": "Seis termos. Com eles você abre e fecha qualquer conversa de projeto em inglês."
+        },
+        {
+          "type": "serialChoice",
+          "title": "O verbo que anda com cada substantivo",
+          "badge": "Escolha certa",
+          "instruction": "Cada termo de projeto tem um verbo fixo. Escolha o que um falante nativo usaria.",
+          "items": [
+            {
+              "prompt": "We need to ___ the scope before the kick-off.",
+              "options": [{ "text": "define", "correct": true }, { "text": "make" }, { "text": "write" }],
+              "why": "<strong>to define scope</strong> — escopo se define, nunca se \"faz\"."
+            },
+            {
+              "prompt": "The team will ___ the first deliverable in March.",
+              "options": [{ "text": "deliver", "correct": true }, { "text": "give" }, { "text": "send out" }],
+              "why": "<strong>to deliver a deliverable</strong> soa redundante em português, mas é o verbo certo em inglês."
+            },
+            {
+              "prompt": "We ___ the go-live milestone by two weeks.",
+              "options": [{ "text": "missed", "correct": true }, { "text": "lost" }, { "text": "failed" }],
+              "why": "Marco perdido é <strong>missed</strong>. \"Lost\" é para objetos, não para datas."
+            },
+            {
+              "prompt": "There's a dependency ___ the vendor's API.",
+              "options": [{ "text": "on", "correct": true }, { "text": "of" }, { "text": "from" }],
+              "why": "<strong>a dependency ON something</strong> — sempre com \"on\"."
+            },
+            {
+              "prompt": "Let's ___ the stakeholders before we start.",
+              "options": [{ "text": "map", "correct": true }, { "text": "draw" }, { "text": "list up" }],
+              "why": "<strong>to map stakeholders</strong> é a colocação consagrada em gestão de projetos."
+            }
+          ],
+          "explanation": "Define scope · deliver a deliverable · hit or miss a milestone · depend on · map stakeholders."
+        },
+        {
+          "type": "categorize",
+          "title": "Está dentro ou fora do escopo?",
+          "badge": "Classifique",
+          "instruction": "O projeto entrega um dashboard de dados de equipamento. Classifique cada item.",
+          "categories": [
+            { "id": "in", "name": "In scope · dentro", "short": "In scope" },
+            { "id": "out", "name": "Out of scope · fora", "short": "Out of scope" }
+          ],
+          "items": [
+            { "text": "Connecting the three plants' data sources", "cat": "in" },
+            { "text": "Buying new sensors for the plants", "cat": "out" },
+            { "text": "Building the dashboard screens", "cat": "in" },
+            { "text": "Rewriting the legacy maintenance system", "cat": "out" },
+            { "text": "Setting up user access and permissions", "cat": "in" },
+            { "text": "Training every operator on site", "cat": "out" }
+          ],
+          "explanation": "Escopo bem escrito lista o que fica de fora. É essa lista que evita a discussão de scope creep depois."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            {
+              "hint": "Explicar o que o projeto entrega.",
+              "answer": "The project delivers a single dashboard for three plants",
+              "extra": ["delivering", "of"]
+            },
+            {
+              "hint": "Avisar de uma dependência externa.",
+              "answer": "We have a dependency on the vendor API",
+              "extra": ["of", "depends"]
+            },
+            {
+              "hint": "Dizer quando é o marco final.",
+              "answer": "The final milestone is go live in September",
+              "extra": ["milestones", "at"]
+            }
+          ],
+          "explanation": "Frases curtas com o substantivo certo no meio. É todo o segredo."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça cada frase, repita e grave. Compare até sair natural — esse é o parágrafo que você vai usar em toda apresentação de projeto.",
+          "sentences": [
+            "The project delivers a single dashboard for equipment data across three plants.",
+            "Data integration and user access are in scope; replacing the legacy system is not.",
+            "There are three deliverables, and go-live in September is the final milestone.",
+            "Our main dependency is the vendor's API.",
+            "Key stakeholders are the plant managers, HSE and regional IT."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can define the scope of my project in English, including what is out of scope.", "pt": "Sei definir o escopo do meu projeto em inglês, incluindo o que fica de fora." },
+            { "en": "I can name my deliverables and milestones without hesitating.", "pt": "Sei nomear entregas e marcos sem hesitar." },
+            { "en": "I use \"a dependency on\", not \"of\" or \"from\".", "pt": "Uso \"a dependency on\", não \"of\" nem \"from\"." },
+            { "en": "I can list my stakeholders and say why each one matters.", "pt": "Sei listar meus stakeholders e dizer por que cada um importa." }
+          ],
+          "doneMessage": "vocabulário de projeto no lugar. A próxima lição usa esses termos para falar de prazo e progresso.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre falar de projeto em inglês",
+        "intro": "Detalhes pequenos que separam quem estudou o vocabulário de quem já tocou projeto em inglês.",
+        "cards": [
+          { "en": "\"Deliverable\" is a noun, even though it looks like an adjective: \"the three deliverables are…\"", "pt": "\"Deliverable\" é substantivo, mesmo parecendo adjetivo: \"the three deliverables are…\"." },
+          { "en": "A milestone is a date, never a task. If it has a duration, it's an activity, not a milestone.", "pt": "Milestone é uma data, nunca uma tarefa. Se tem duração, é atividade — não marco." },
+          { "en": "Say \"the project is on track\" or \"off track\" — never \"the project is in the track\".", "pt": "Diga \"on track\" ou \"off track\". \"In the track\" não existe." },
+          { "en": "\"Kick-off\" takes a hyphen as a noun (the kick-off) and none as a verb (we kick off on Monday).", "pt": "\"Kick-off\" leva hífen como substantivo e nenhum como verbo: we kick off on Monday." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now describe any project of yours using the same five words the rest of the world uses.",
+        "pt": "Agora você descreve qualquer projeto seu usando as mesmas cinco palavras que o resto do mundo usa."
+      }
+    },
+    {
+      "title": "Timeline, Progress and Slippage",
+      "focus": "Falar de prazo: adiantado, atrasado, no caminho — e o que fazer quando escorrega",
+      "character": "gb-male",
+      "objective": "Dizer, em uma frase, onde o projeto está em relação ao plano — e explicar um atraso sem soar defensiva.",
+      "intro": [
+        "Every project meeting eventually reaches the same question: <em>\"Are we still on track?\"</em>",
+        "English gives you three answers — <strong>on track</strong>, <strong>ahead of schedule</strong>, <strong>behind schedule</strong> — plus one word that changes the temperature of the room: <strong>slippage</strong>.",
+        "The skill is not knowing the words. It is knowing the order: where you are, by how much, why, and what you're doing about it. In that order, a delay sounds managed. In any other order, it sounds like an excuse."
+      ],
+      "introPt": [
+        "Toda reunião de projeto chega na mesma pergunta: <em>\"Are we still on track?\"</em> (ainda estamos no prazo?).",
+        "O inglês te dá três respostas — <strong>on track</strong> (no prazo), <strong>ahead of schedule</strong> (adiantado), <strong>behind schedule</strong> (atrasado) — e uma palavra que muda a temperatura da sala: <strong>slippage</strong> (escorregada no prazo).",
+        "A habilidade não é saber as palavras. É saber a ordem: onde você está, quanto, por quê, e o que está fazendo a respeito. Nessa ordem, o atraso soa gerenciado. Em qualquer outra, soa como desculpa."
+      ],
+      "vocab": [
+        { "en": "on track", "pt": "dentro do plano", "example": "Integration is on track for the June pilot." },
+        { "en": "behind schedule", "pt": "atrasado em relação ao cronograma", "example": "We're two weeks behind schedule on testing." },
+        { "en": "slippage", "pt": "escorregada de prazo", "example": "There's been some slippage on the vendor side." },
+        { "en": "to push back a date", "pt": "empurrar uma data para depois", "example": "We had to push the pilot back to July." },
+        { "en": "critical path", "pt": "caminho crítico", "example": "Testing is on the critical path — any delay hits go-live." },
+        { "en": "buffer / contingency", "pt": "folga / reserva de prazo", "example": "We still have two weeks of buffer before go-live." },
+        { "en": "to catch up", "pt": "recuperar o atraso", "example": "We can catch up if the API arrives this week." },
+        { "en": "lead time", "pt": "prazo de espera até algo ficar pronto", "example": "The lead time for that part is eight weeks." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte o aviso de atraso na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Um bom aviso de atraso segue sempre a mesma sequência. Clique nas frases na ordem.",
+          "items": [
+            "Quick update on the pilot dashboard.",
+            "We're two weeks behind schedule.",
+            "The slippage comes from the vendor API, which arrived later than committed.",
+            "Testing is on the critical path, so this moves the pilot from June to early July.",
+            "We're adding a second developer to the integration to recover one of the two weeks."
+          ],
+          "explanation": "Contexto → tamanho do atraso → causa → impacto → o que você está fazendo. Nessa ordem, ninguém interrompe."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual versão passa mais controle?",
+          "badge": "A ou B",
+          "instruction": "As duas são verdadeiras. Escolha a que um gestor prefere ouvir.",
+          "items": [
+            {
+              "prompt": "Avisando um atraso de duas semanas.",
+              "a": "We're late, the vendor didn't help us at all.",
+              "b": "We're two weeks behind, driven by the vendor API. Go-live moves to early July unless we recover in testing.",
+              "correct": "b",
+              "why": "Tamanho + causa + impacto. Culpar sem número não informa nada."
+            },
+            {
+              "prompt": "Quando você ainda não sabe o impacto final.",
+              "a": "I can't say yet what this means for go-live.",
+              "b": "I'm reworking the plan now — I'll confirm the go-live impact by Thursday.",
+              "correct": "b",
+              "why": "Não saber é aceitável; não ter prazo para saber, não."
+            },
+            {
+              "prompt": "Quando o projeto está adiantado.",
+              "a": "Everything is going really well, no issues at all.",
+              "b": "We're about a week ahead on integration, because the spec was signed off early.",
+              "correct": "b",
+              "why": "Até a boa notícia precisa de número e causa — senão parece sorte."
+            },
+            {
+              "prompt": "Quando o atraso é de outra área.",
+              "a": "It's not our fault, IT never delivers on time.",
+              "b": "The delay sits with the API delivery. I've asked regional IT for a committed date by Friday.",
+              "correct": "b",
+              "why": "Localizar o atraso não é culpar. E pedir data comprometida é o que resolve."
+            }
+          ],
+          "explanation": "Em inglês corporativo, quem traz número, causa e próximo passo é lido como quem está no controle."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o status semanal",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna para montar um status de verdade.",
+          "text": "Hi all — weekly update on the dashboard project. Integration is ___ track for the June pilot. Testing, however, is about two weeks ___ schedule: the vendor API arrived late, and testing sits on the ___ path. We still have one week of ___ before go-live, so the September date holds for now. If the remaining endpoints land this week, we can ___ up most of the delay.",
+          "gaps": [
+            { "options": ["on", "in", "at"], "answer": "on", "why": "on track = dentro do plano. Nunca \"in track\"." },
+            { "options": ["behind", "after", "late"], "answer": "behind", "why": "behind schedule é a forma fixa." },
+            { "options": ["critical", "crucial", "central"], "answer": "critical", "why": "Critical path é o termo técnico — o caminho cujo atraso atrasa o projeto inteiro." },
+            { "options": ["buffer", "space", "rest"], "answer": "buffer", "why": "Buffer (ou contingency) é a folga planejada." },
+            { "options": ["catch", "take", "get"], "answer": "catch", "why": "to catch up = recuperar o atraso." }
+          ],
+          "explanation": "Esse parágrafo é um molde: troque os nomes e datas e ele serve para qualquer semana."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Com base no uso real dessas expressões em gestão de projetos.",
+          "items": [
+            { "text": "If a task is on the critical path, a delay there delays the whole project.", "answer": true, "why": "É exatamente essa a definição de caminho crítico." },
+            { "text": "\"Slippage\" means the project was cancelled.", "answer": false, "why": "Slippage é só a escorregada de prazo — o projeto segue vivo." },
+            { "text": "\"Lead time\" is the time a meeting takes.", "answer": false, "why": "Lead time é o prazo de espera até algo ficar disponível — uma peça, um ambiente, uma aprovação." },
+            { "text": "A project can be behind schedule and still hit go-live.", "answer": true, "why": "Se o atraso está fora do caminho crítico ou há buffer, a data final se mantém." },
+            { "text": "\"We pushed the date back\" means we brought it forward.", "answer": false, "why": "Push back = adiar. Trazer para antes é \"bring forward\"." }
+          ],
+          "explanation": "Buffer e critical path são o que permitem responder \"atrasados, mas a data final continua de pé\"."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "We are late in two weeks on testing.", "wrong": "in", "fix": "by", "why": "Atraso se mede com <strong>by</strong>: two weeks late, ou late by two weeks." },
+            { "sentence": "The project is in track for September.", "wrong": "in", "fix": "on", "why": "on track, sempre. \"In track\" não existe." },
+            { "sentence": "We need to anticipate the pilot to June.", "wrong": "anticipate", "fix": "bring forward", "why": "Falso amigo clássico: antecipar uma data é <strong>bring forward</strong>. \"Anticipate\" é prever." },
+            { "sentence": "The vendor will delivery the API next week.", "wrong": "delivery", "fix": "deliver", "why": "Delivery é substantivo; o verbo é deliver." },
+            { "sentence": "We have enough buffer until absorb the delay.", "wrong": "until", "fix": "to", "why": "\"Enough buffer TO absorb\" — infinitivo de finalidade." }
+          ],
+          "explanation": "Cinco erros que brasileiros repetem — e que somem depois que você os vê uma vez."
+        },
+        {
+          "type": "flowChoice",
+          "title": "A conversa do atraso",
+          "badge": "Conversa",
+          "situation": "Seu sponsor te para no corredor. Ele ouviu que o piloto vai atrasar e quer saber em dois minutos o tamanho do problema.",
+          "turns": [
+            {
+              "who": "Sponsor",
+              "them": "I heard the pilot is slipping. How bad is it?",
+              "options": [
+                { "text": "Two weeks behind on testing, because the vendor API landed late. Go-live is still September.", "correct": true, "why": "Tamanho, causa e o que ele realmente quer saber (a data final), em uma frase." },
+                { "text": "It's complicated — let me explain the whole integration architecture first.", "why": "Ele pediu o tamanho, não o contexto. Começar do começo é perder a atenção dele." },
+                { "text": "It's not that bad, don't worry.", "why": "Tranquilizar sem dado é o que faz um sponsor começar a se preocupar." }
+              ]
+            },
+            {
+              "who": "Sponsor",
+              "them": "September still holds? How confident are you?",
+              "options": [
+                { "text": "I hope so, we're doing our best.", "why": "\"I hope so\" transfere a insegurança para ele." },
+                { "text": "Reasonably confident — we have one week of buffer, and the remaining endpoints are due this week. I'll flag it immediately if that slips.", "correct": true, "why": "Confiança calibrada + a evidência + o compromisso de avisar cedo." },
+                { "text": "Yes, one hundred per cent guaranteed.", "why": "Garantia que você não controla destrói credibilidade quando não se cumpre." }
+              ]
+            },
+            {
+              "who": "Sponsor",
+              "them": "What do you need from me?",
+              "options": [
+                { "text": "Nothing, thanks, we'll manage.", "why": "Recusar ajuda de um sponsor é desperdiçar a única alavanca que ele tem." },
+                { "text": "A nudge to regional IT for a committed API date would help. Friday would be ideal.", "correct": true, "why": "Pedido específico, para uma pessoa específica, com prazo. É o que ele consegue fazer." },
+                { "text": "More people on the team, if possible, whenever you can.", "why": "Pedido vago e tardio — nove mulheres não fazem um bebê em um mês." }
+              ]
+            }
+          ],
+          "explanation": "Tamanho → impacto na data final → o pedido concreto. Três turnos e a conversa está fechada."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can say whether we are on track, ahead or behind — with a number.", "pt": "Sei dizer se estamos no prazo, adiantados ou atrasados — com número." },
+            { "en": "I can explain a delay as cause → impact → action, not as an excuse.", "pt": "Explico um atraso como causa → impacto → ação, não como desculpa." },
+            { "en": "I use \"bring forward\", not \"anticipate\", for moving a date earlier.", "pt": "Uso \"bring forward\", não \"anticipate\", para adiantar uma data." },
+            { "en": "I can explain what the critical path is and what sits on it.", "pt": "Sei explicar o que é o caminho crítico e o que está nele." }
+          ],
+          "doneMessage": "prazo sob controle. O próximo tópico é agile — onde essas mesmas ideias mudam de nome.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre prazo em inglês",
+        "intro": "Quatro detalhes que mudam como o seu status é lido.",
+        "cards": [
+          { "en": "\"Delay\" is the noun and the verb, but for the amount you say \"a two-week delay\" — singular, with a hyphen.", "pt": "\"Delay\" é substantivo e verbo, mas a medida vira \"a two-week delay\" — singular, com hífen." },
+          { "en": "\"Anticipate\" never means to bring a date forward. It means to expect something. This one trips up almost every Brazilian.", "pt": "\"Anticipate\" nunca é antecipar uma data — é prever. Esse pega quase todo brasileiro." },
+          { "en": "Native PMs soften bad news with \"currently\" and \"as it stands\": \"as it stands, we're two weeks behind\".", "pt": "PMs nativos suavizam más notícias com \"currently\" e \"as it stands\": \"as it stands, we're two weeks behind\"." },
+          { "en": "\"ETA\" (estimated time of arrival) is used for anything, not just travel: \"what's the ETA on the spec?\"", "pt": "\"ETA\" serve para qualquer coisa, não só viagem: \"what's the ETA on the spec?\"." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now report a delay in a way that makes people trust you more, not less.",
+        "pt": "Agora você reporta um atraso de um jeito que faz as pessoas confiarem mais em você, não menos."
+      }
+    }
+  ]
+}

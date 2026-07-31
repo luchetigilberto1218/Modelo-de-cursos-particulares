@@ -1,0 +1,353 @@
+{
+  "topic": "Testing and fixing software",
+  "lessons": [
+    {
+      "title": "Reporting a Bug Properly",
+      "focus": "Descrever um defeito de forma que alguém consiga reproduzir e corrigir",
+      "character": "us-female",
+      "objective": "Escrever e falar um bug report em inglês com os três elementos que fazem o desenvolvedor conseguir agir: passos, esperado e observado.",
+      "intro": [
+        "\"It's not working\" is the least useful sentence in software. It contains no information at all.",
+        "A usable bug report in English has three parts, always in the same order: <strong>steps to reproduce</strong>, <strong>expected result</strong>, <strong>actual result</strong>. Plus the environment, because half of all bugs are really \"it works in staging\".",
+        "Writing these well is not a technical skill. It's a language skill — and it will make every developer you work with faster."
+      ],
+      "introPt": [
+        "\"It's not working\" é a frase menos útil do mundo do software. Não carrega informação nenhuma.",
+        "Um bug report utilizável em inglês tem três partes, sempre na mesma ordem: <strong>passos para reproduzir</strong>, <strong>resultado esperado</strong>, <strong>resultado observado</strong>. Mais o ambiente, porque metade dos bugs é na verdade \"funciona em staging\".",
+        "Escrever isso bem não é habilidade técnica. É habilidade de linguagem — e vai deixar mais rápido todo desenvolvedor com quem você trabalha."
+      ],
+      "vocab": [
+        { "en": "to reproduce a bug", "pt": "reproduzir um defeito", "example": "I can reproduce it every time on the tablet." },
+        { "en": "steps to reproduce", "pt": "passos para reproduzir", "example": "Steps to reproduce are in the ticket." },
+        { "en": "expected vs actual", "pt": "esperado vs. observado", "example": "Expected: the total. Actual: zero." },
+        { "en": "intermittent", "pt": "que acontece às vezes", "example": "It's intermittent — about one in five loads." },
+        { "en": "severity vs priority", "pt": "gravidade vs. urgência", "example": "High severity, low priority — it affects one old device." },
+        { "en": "workaround", "pt": "contorno temporário", "example": "The workaround is to rotate the tablet." },
+        { "en": "regression", "pt": "algo que funcionava e quebrou", "example": "This is a regression from 2.3." },
+        { "en": "root cause", "pt": "causa raiz", "example": "The root cause was a timezone conversion." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Qual bug report é acionável?",
+          "badge": "A ou B",
+          "instruction": "Escolha o relato que um desenvolvedor consegue usar hoje.",
+          "items": [
+            { "prompt": "O total aparece errado.", "a": "The downtime total is wrong on the dashboard.", "b": "On the plant view for Macaé, the 7-day total shows 0 h while the rows below add up to 141 h. Chrome, production, since the 2.4 release. Reproduces every time.", "correct": "b", "why": "Onde, o que esperava, o que viu, ambiente, e se reproduz. É um ticket que se resolve hoje." },
+            { "prompt": "O problema é intermitente.", "a": "Sometimes it doesn't load, I don't know why.", "b": "The asset list fails to load roughly one in five times. When it fails, the spinner stays forever. Only on the plant tablets, not on desktop.", "correct": "b", "why": "Frequência estimada, sintoma exato e onde acontece. Intermitente descrito assim é rastreável." },
+            { "prompt": "Classificando o bug.", "a": "This is urgent!!", "b": "Severity high — the number is wrong, not just ugly. Priority medium — it only affects one plant view and there's a workaround.", "correct": "b", "why": "Separar gravidade de urgência é o que faz a fila de correção ser justa." },
+            { "prompt": "Algo que funcionava parou.", "a": "This feature is broken.", "b": "This is a regression — it worked in 2.3 and broke in 2.4. Nothing else in that area changed.", "correct": "b", "why": "\"Regression\" muda a prioridade e aponta o desenvolvedor direto para o diff da versão." }
+          ],
+          "explanation": "Passos · esperado · observado · ambiente · frequência. E diga se é regressão — isso muda tudo."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o bug report na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas linhas na ordem padrão de um bug report.",
+          "items": [
+            "Summary: 7-day downtime total shows 0 h on the Macaé plant view.",
+            "Steps to reproduce: 1) log in as a Macaé supervisor; 2) open the plant view; 3) look at the total above the table.",
+            "Expected: the total of the rows below — 141 h.",
+            "Actual: 0 h. The rows themselves are correct.",
+            "Environment: production, version 2.4, Chrome and the plant tablets. Reproduces every time since the 2.4 release."
+          ],
+          "explanation": "Resumo · passos · esperado · observado · ambiente. Sempre nessa ordem — é o que um dev espera encontrar."
+        },
+        {
+          "type": "categorize",
+          "title": "Severity ou priority?",
+          "badge": "Classifique",
+          "instruction": "Gravidade é o quanto está quebrado. Urgência é o quanto precisa ser consertado agora. Classifique o que cada frase descreve.",
+          "categories": [
+            { "id": "sev", "name": "Severity · gravidade", "short": "Severity" },
+            { "id": "pri", "name": "Priority · urgência", "short": "Priority" }
+          ],
+          "items": [
+            { "text": "The number displayed is simply wrong.", "cat": "sev" },
+            { "text": "It affects only two users on old tablets.", "cat": "pri" },
+            { "text": "The application crashes and loses unsaved work.", "cat": "sev" },
+            { "text": "The plant director is presenting this screen on Thursday.", "cat": "pri" },
+            { "text": "A label is misspelled but the data is correct.", "cat": "sev" },
+            { "text": "There is a simple workaround everyone already knows.", "cat": "pri" }
+          ],
+          "explanation": "Alto/alto vai primeiro. Alta gravidade com baixa urgência é normal — e é exatamente essa distinção que impede fila por quem grita mais alto."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o bug report",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "Summary: the 7-day total shows zero on the Macaé view. Steps to ___ : log in as a Macaé supervisor and open the plant view. ___ result: 141 hours, matching the rows. ___ result: 0 hours. It ___ every time since 2.4, so this looks like a ___ from 2.3. ___ is high — the number is wrong, not just cosmetic. There is a ___ : opening the asset view shows the correct total.",
+          "gaps": [
+            { "options": ["reproduce", "repeat", "replicate again"], "answer": "reproduce", "why": "\"Steps to reproduce\" é o cabeçalho padrão." },
+            { "options": ["Expected", "Waited", "Foreseen"], "answer": "Expected", "why": "Expected result — termo fixo." },
+            { "options": ["Actual", "Real", "Current"], "answer": "Actual", "why": "Aqui \"actual\" está certo: é o resultado real observado, oposto de expected. Esse é o único contexto em que \"actual\" traduz bem." },
+            { "options": ["reproduces", "repeats itself", "occurs again"], "answer": "reproduces", "why": "\"It reproduces every time\" — uso intransitivo padrão em QA." },
+            { "options": ["regression", "return", "repetition"], "answer": "regression", "why": "Regressão: funcionava antes e quebrou." },
+            { "options": ["Severity", "Gravity", "Seriousness"], "answer": "Severity", "why": "Severity é o termo técnico." },
+            { "options": ["workaround", "turnaround", "way out"], "answer": "workaround", "why": "Workaround: o contorno temporário." }
+          ],
+          "explanation": "Repare: \"actual result\" é o único lugar onde \"actual\" traduz \"real\" e não é falso amigo."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre o vocabulário de testes.",
+          "items": [
+            { "text": "\"Actual result\" means the result we wanted.", "answer": false, "why": "É o oposto: o resultado que realmente apareceu. \"Expected\" é o que se queria." },
+            { "text": "A high-severity bug is always high priority.", "answer": false, "why": "Pode ser grave e afetar dois usuários num tablet antigo. Aí a urgência é baixa." },
+            { "text": "A regression means something that used to work is now broken.", "answer": true, "why": "E dizer isso no ticket direciona o dev para as mudanças da versão." },
+            { "text": "\"Intermittent\" bugs are easier to fix than consistent ones.", "answer": false, "why": "São bem mais difíceis — por isso a frequência estimada no relato vale ouro." },
+            { "text": "A workaround closes the ticket.", "answer": false, "why": "Ele reduz a urgência. O ticket só fecha quando a causa é corrigida." }
+          ],
+          "explanation": "Severity ≠ priority · regression aponta o caminho · intermitente é o mais caro."
+        },
+        {
+          "type": "flowChoice",
+          "title": "O usuário reporta um problema por telefone",
+          "badge": "Conversa",
+          "situation": "Um supervisor de Macaé te liga: \"o dashboard não está funcionando\". Você tem que extrair um bug report dessa frase.",
+          "turns": [
+            {
+              "who": "Supervisor",
+              "them": "The dashboard isn't working.",
+              "options": [
+                { "text": "Can you show me exactly what you see on the screen right now? Describe it as if I couldn't see it.", "correct": true, "why": "Traz a pessoa do julgamento (\"não funciona\") para a observação (\"vejo um zero\")." },
+                { "text": "Have you tried refreshing?", "why": "Pode até resolver — e você perde a informação de que precisa para corrigir de verdade." },
+                { "text": "It's working on my side.", "why": "A pior resposta possível. Encerra a conversa e ensina o usuário a não reportar mais." }
+              ]
+            },
+            {
+              "who": "Supervisor",
+              "them": "The big number at the top says zero, but the table below has all the pumps with hours.",
+              "options": [
+                { "text": "Got it. Is this the first time, or has it been like that for a while?", "correct": true, "why": "Estabelecer quando começou é o que liga o bug a uma versão." },
+                { "text": "That's strange.", "why": "Concordar não é coletar informação." },
+                { "text": "I'll ask the developers to look at it.", "why": "Você ainda não tem ambiente, frequência nem data de início. O ticket volta." }
+              ]
+            },
+            {
+              "who": "Supervisor",
+              "them": "Since last week I think. Ana on the other shift says the same.",
+              "options": [
+                { "text": "Perfect — that's the 2.4 release, so it's a regression. Last thing: are you on the tablet or the desktop?", "correct": true, "why": "Conecta à versão, nomeia como regressão e fecha o último dado que falta." },
+                { "text": "Thanks, that's enough.", "why": "Falta o ambiente — e ambiente é metade dos bugs." },
+                { "text": "Can you ask Ana to open a ticket too?", "why": "Dois tickets do mesmo bug custam tempo a todo mundo." }
+              ]
+            }
+          ],
+          "explanation": "Peça o que a pessoa VÊ · descubra quando começou · confirme o ambiente. Três perguntas e você tem um ticket completo."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "My bug reports always have steps, expected and actual.", "pt": "Meus bug reports sempre têm passos, esperado e observado." },
+            { "en": "I always state the environment and the version.", "pt": "Sempre digo o ambiente e a versão." },
+            { "en": "I can explain the difference between severity and priority.", "pt": "Sei explicar a diferença entre severity e priority." },
+            { "en": "I ask users what they SEE, not what they think is broken.", "pt": "Pergunto ao usuário o que ele VÊ, não o que ele acha que quebrou." }
+          ],
+          "doneMessage": "bug bem reportado. A próxima lição é o que acontece depois: investigar e corrigir.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre reportar bugs em inglês",
+        "intro": "Quatro coisas que fazem desenvolvedores gostarem dos seus tickets.",
+        "cards": [
+          { "en": "\"Actual result\" is the one place where \"actual\" correctly translates \"real\" for a Portuguese speaker. Everywhere else it's a false friend.", "pt": "\"Actual result\" é o único lugar onde \"actual\" traduz corretamente \"real\" para quem fala português. Em todo o resto é falso amigo." },
+          { "en": "\"Repro\" is the standard short form: \"can you repro it?\", \"no repro on my machine\".", "pt": "\"Repro\" é a abreviação padrão: \"can you repro it?\", \"no repro on my machine\"." },
+          { "en": "Saying \"this is a regression\" changes a ticket's priority instantly. Something that used to work is treated far more seriously.", "pt": "Dizer \"this is a regression\" muda a prioridade do ticket na hora. Algo que funcionava e quebrou é tratado com muito mais seriedade." },
+          { "en": "Never write \"urgent!!\" — write the severity and the business reason. Exclamation marks are what get a ticket deprioritised.", "pt": "Nunca escreva \"urgente!!\" — escreva a gravidade e a razão de negócio. Ponto de exclamação é o que faz um ticket ser despriorizado." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now write the kind of bug report developers actually thank you for.",
+        "pt": "Agora você escreve o tipo de bug report pelo qual desenvolvedores de fato agradecem."
+      }
+    },
+    {
+      "title": "Debugging and Quality Conversations",
+      "focus": "Investigar em grupo, falar de qualidade e conduzir um post-mortem",
+      "character": "gb-male",
+      "objective": "Participar de uma investigação técnica em inglês e conduzir um post-mortem sem culpa que produza mudanças reais.",
+      "intro": [
+        "When something breaks in production, two conversations happen: the one during, and the one after.",
+        "The one <strong>during</strong> needs short, factual English: what we know, what we've ruled out, who is doing what. No speculation dressed as fact.",
+        "The one <strong>after</strong> — the post-mortem — needs a specific kind of English: <strong>blameless</strong>. You describe systems and decisions, not people. Companies that do this find real causes; companies that don't find scapegoats and the same bug twice."
+      ],
+      "introPt": [
+        "Quando algo quebra em produção, acontecem duas conversas: a de durante e a de depois.",
+        "A de <strong>durante</strong> pede inglês curto e factual: o que sabemos, o que já descartamos, quem está fazendo o quê. Sem especulação vestida de fato.",
+        "A de <strong>depois</strong> — o post-mortem — pede um inglês específico: <strong>blameless</strong>, sem culpa. Você descreve sistemas e decisões, não pessoas. Empresas que fazem isso encontram causas reais; as que não fazem encontram culpados e o mesmo bug duas vezes."
+      ],
+      "vocab": [
+        { "en": "incident", "pt": "incidente em produção", "example": "We had a P1 incident on Tuesday night." },
+        { "en": "post-mortem / retrospective", "pt": "análise depois do incidente", "example": "The post-mortem is on Friday." },
+        { "en": "blameless", "pt": "sem atribuição de culpa", "example": "This is a blameless post-mortem." },
+        { "en": "timeline", "pt": "linha do tempo dos fatos", "example": "Let's build the timeline before we discuss causes." },
+        { "en": "to narrow it down", "pt": "estreitar as hipóteses", "example": "We narrowed it down to the timezone conversion." },
+        { "en": "contributing factor", "pt": "fator que contribuiu", "example": "The missing alert was a contributing factor." },
+        { "en": "action item", "pt": "ação com dono e prazo", "example": "Three action items, all with owners." },
+        { "en": "technical debt", "pt": "dívida técnica", "example": "This incident was technical debt coming due." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Durante o incidente: qual frase ajuda?",
+          "badge": "A ou B",
+          "instruction": "São 22h, produção quebrada, seis pessoas na call. Escolha a frase útil.",
+          "items": [
+            { "prompt": "Você tem uma suspeita.", "a": "It's definitely the database.", "b": "My hypothesis is the database connection pool — I'm checking now, two minutes.", "correct": "b", "why": "Marcar como hipótese e dar prazo. Certeza sem evidência manda cinco pessoas para o lugar errado." },
+            { "prompt": "Você descartou algo.", "a": "(fica em silêncio e continua investigando)", "b": "Ruling out the network — latency is normal on all three links.", "correct": "b", "why": "Anunciar descartes evita que outra pessoa refaça o mesmo trabalho." },
+            { "prompt": "Alguém pergunta o status.", "a": "We're working on it.", "b": "Users affected: three plants. Cause: unknown. Ruled out: network, deploy. Next update in fifteen minutes.", "correct": "b", "why": "Impacto, o que se sabe, o que se descartou e quando vem a próxima atualização." },
+            { "prompt": "Você quer sugerir voltar a versão anterior.", "a": "Maybe we should roll back?", "b": "I'd roll back to 2.3 now and investigate tomorrow. Users first, cause second. Anyone against?", "correct": "b", "why": "Recomendação com princípio explícito e um pedido de objeção. É assim que se decide às 22h." }
+          ],
+          "explanation": "Hipótese marcada como hipótese · descartes anunciados · status com próxima atualização · decidir por princípio."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o post-mortem",
+          "badge": "Leia e responda",
+          "heading": "Post-mortem · Incident 2026-07-14 · Dashboard totals",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Impact: for six days, the 7-day totals on all plant views showed zero. Row-level data was correct throughout. Three plants, roughly sixty supervisors affected.",
+            "Timeline: the 2.4 release went out on 8 July at 22:10. The first user report arrived on 14 July at 07:30. The fix was deployed on 14 July at 16:40.",
+            "Root cause: the aggregation query was changed to use the plant's local timezone. For plants where local midnight falls after UTC midnight, the 7-day window computed as empty.",
+            "Contributing factors: (1) no automated test covered the aggregate against the row data; (2) the staging environment has only one plant, all in UTC, so the case could not occur there; (3) there was no alert on \"total is zero while rows exist\".",
+            "Action items: add the aggregate/rows consistency test (owner: Paulo, by 1 Aug); add a second plant in a non-UTC timezone to staging (owner: regional IT, by 15 Aug); add the zero-total alert (owner: Ana, by 1 Aug).",
+            "This post-mortem is blameless. The developer who made the change followed the process that existed; the process did not cover this case."
+          ],
+          "questions": [
+            {
+              "prompt": "What made this bug survive six days?",
+              "options": [
+                { "text": "No test, no representative staging data, and no alert — three gaps, not one mistake.", "correct": true },
+                { "text": "The developer was careless.", "correct": false },
+                { "text": "Users didn't check the dashboard." }
+              ],
+              "why": "É o coração do post-mortem sem culpa: um incidente é quase sempre várias defesas ausentes, não um erro humano."
+            },
+            {
+              "prompt": "Why does the note say staging had only one plant in UTC?",
+              "options": [
+                { "text": "To explain why testing could never have caught it there.", "correct": true },
+                { "text": "To blame regional IT.", "correct": false },
+                { "text": "To justify the six days." }
+              ],
+              "why": "Ambiente de teste não representativo é um dos fatores contribuintes mais comuns — e um dos mais fáceis de corrigir."
+            },
+            {
+              "prompt": "What makes the action items credible?",
+              "options": [
+                { "text": "Each has a named owner and a date.", "correct": true },
+                { "text": "There are three of them.", "correct": false },
+                { "text": "They are technical." }
+              ],
+              "why": "Post-mortem sem dono e prazo é redação, não melhoria."
+            }
+          ],
+          "explanation": "Impacto · linha do tempo · causa raiz · fatores contribuintes · ações com dono e data · e a declaração de que é blameless."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Post-mortem: com ou sem culpa?",
+          "badge": "A ou B",
+          "instruction": "Escolha a formulação que encontra a causa em vez do culpado.",
+          "items": [
+            { "prompt": "Descrevendo a mudança que quebrou.", "a": "Paulo introduced a timezone bug in the aggregation query.", "b": "The aggregation query was changed to use local timezone; the edge case where local midnight falls after UTC midnight wasn't covered.", "correct": "b", "why": "Voz passiva aqui não é fuga — é o que mantém a discussão no sistema em vez de na pessoa." },
+            { "prompt": "Falando do tempo até detectar.", "a": "Nobody was paying attention for six days.", "b": "There was no alert for \"total is zero while rows exist\", so detection depended on a user noticing.", "correct": "b", "why": "Nomeia a defesa que faltava. É acionável; a acusação não é." },
+            { "prompt": "Sobre o ambiente de teste.", "a": "Staging is useless.", "b": "Staging has one plant, all UTC — the case could not occur there. That's a gap we can close.", "correct": "b", "why": "Descreve a limitação concreta e já aponta a ação." },
+            { "prompt": "Encerrando a reunião.", "a": "Let's all be more careful next time.", "b": "Three action items, three owners, all dated. I'll check them at the retro on 1 August.", "correct": "b", "why": "\"Ser mais cuidadoso\" nunca preveniu nada. Dono, data e verificação, sim." }
+          ],
+          "explanation": "Descreva sistemas e decisões. Nomeie as defesas ausentes. Termine com donos e datas."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o post-mortem na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas seções na ordem que um post-mortem eficaz segue.",
+          "items": [
+            "Impact: what happened, to whom, for how long.",
+            "Timeline: the sequence of events with times, before anyone discusses causes.",
+            "Root cause: the technical explanation of why it happened.",
+            "Contributing factors: the defences that were missing or didn't work.",
+            "Action items: each with a named owner and a date."
+          ],
+          "explanation": "A linha do tempo vem ANTES da causa. Discutir causa sem os fatos na mesa é como reuniões viram opinião."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A palavra certa na investigação",
+          "badge": "Escolha certa",
+          "instruction": "Escolha o termo que um time anglófono usaria.",
+          "items": [
+            { "prompt": "Marcando algo como não confirmado.", "options": [{ "text": "My hypothesis is…", "correct": true }, { "text": "I'm sure that…" }, { "text": "Obviously it's…" }], "why": "Marcar hipótese como hipótese é o que impede a call inteira de perseguir uma pista errada." },
+            { "prompt": "Uma análise que não busca culpado.", "options": [{ "text": "blameless", "correct": true }, { "text": "guiltless" }, { "text": "faultless" }], "why": "Blameless é o termo técnico. \"Faultless\" significa perfeito — outra coisa." },
+            { "prompt": "Algo que ajudou o problema a acontecer, sem ser a causa.", "options": [{ "text": "a contributing factor", "correct": true }, { "text": "a secondary cause" }, { "text": "a co-problem" }], "why": "Contributing factor é o termo padrão em análise de incidente." },
+            { "prompt": "Dívida que finalmente cobrou seu preço.", "options": [{ "text": "technical debt coming due", "correct": true }, { "text": "technical debt arriving" }, { "text": "technical debt paying" }], "why": "\"Coming due\" mantém a metáfora financeira, que é o que dá peso ao argumento." },
+            { "prompt": "Confirmar que a correção funcionou.", "options": [{ "text": "to verify the fix in production", "correct": true }, { "text": "to certify the fix" }, { "text": "to approve the fix" }], "why": "Verify é o verbo de QA. Certify e approve são de outro processo." }
+          ],
+          "explanation": "Hypothesis · blameless · contributing factor · coming due · verify. Cinco termos que estruturam qualquer investigação."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "We need to discover the root cause before Friday.", "wrong": "discover", "fix": "identify", "why": "Causa raiz se <strong>identifies</strong> ou se <strong>finds</strong>. \"Discover\" soa como descobrir um continente." },
+            { "sentence": "The bug was corrected in the last deploy.", "wrong": "corrected", "fix": "fixed", "why": "Bug se <strong>fixes</strong>. \"Correct\" serve para uma redação, não para um defeito." },
+            { "sentence": "The system stayed down during six hours.", "wrong": "during", "fix": "for", "why": "Duração leva <strong>for</strong>: for six hours. \"During\" pede um evento: during the release." },
+            { "sentence": "We have to avoid that this happens again.", "wrong": "that", "fix": "this from happening", "why": "\"Avoid this happening again\" ou \"prevent this from happening again\". Avoid não aceita \"that\"." },
+            { "sentence": "The test suit does not cover this case.", "wrong": "suit", "fix": "suite", "why": "Test <strong>suite</strong> (conjunto). \"Suit\" é terno ou processo judicial." }
+          ],
+          "explanation": "\"Test suit\" e \"during six hours\" são os dois erros mais frequentes em relatos de incidente."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Numa call de incidente, frases longas custam tempo — treine essas curtas.",
+          "sentences": [
+            "My hypothesis is the timezone conversion — checking now, two minutes.",
+            "Ruling out the network; latency is normal on all three links.",
+            "Users affected: three plants. Next update in fifteen minutes.",
+            "I'd roll back to 2.3 now and investigate tomorrow. Anyone against?",
+            "This is a blameless post-mortem — the process didn't cover this case."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I label a hypothesis as a hypothesis until I have evidence.", "pt": "Marco uma hipótese como hipótese até ter evidência." },
+            { "en": "I announce what I've ruled out, so nobody repeats my work.", "pt": "Anuncio o que descartei, para ninguém repetir meu trabalho." },
+            { "en": "I build the timeline before discussing causes.", "pt": "Construo a linha do tempo antes de discutir causas." },
+            { "en": "I describe systems and decisions, not people.", "pt": "Descrevo sistemas e decisões, não pessoas." },
+            { "en": "Every action item leaves with an owner and a date.", "pt": "Toda ação sai com dono e data." }
+          ],
+          "doneMessage": "investigação e post-mortem no lugar. O próximo tópico é criar soluções de IA.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre incidentes em inglês",
+        "intro": "Quatro convenções que times globais seguem sem escrever em lugar nenhum.",
+        "cards": [
+          { "en": "\"Blameless post-mortem\" is a formal concept, not politeness. Naming it at the start changes what people are willing to say.", "pt": "\"Blameless post-mortem\" é um conceito formal, não educação. Anunciá-lo no começo muda o que as pessoas se dispõem a dizer." },
+          { "en": "The passive voice is the right choice in a post-mortem: \"the query was changed\" keeps the focus on the system, not the person.", "pt": "A voz passiva é a escolha certa num post-mortem: \"the query was changed\" mantém o foco no sistema, não na pessoa." },
+          { "en": "\"Next update in fifteen minutes\" is the most calming sentence in an incident. It stops everyone asking for status.", "pt": "\"Next update in fifteen minutes\" é a frase mais calmante de um incidente. Faz todo mundo parar de pedir status." },
+          { "en": "\"Users first, cause second\" is the standard priority in production incidents. Restore service, then investigate.", "pt": "\"Users first, cause second\" é a prioridade padrão em incidentes de produção. Restaure o serviço, investigue depois." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now hold an incident call and run the post-mortem that stops it happening twice.",
+        "pt": "Agora você conduz uma call de incidente e o post-mortem que impede a repetição."
+      }
+    }
+  ]
+}

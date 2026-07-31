@@ -1,0 +1,369 @@
+{
+  "topic": "Cross-functional Collaboration",
+  "lessons": [
+    {
+      "title": "Bridging the Gap",
+      "focus": "Trabalhar com áreas que têm outra linguagem, outras metas e outro chefe",
+      "character": "us-female",
+      "objective": "Pedir, negociar e obter trabalho de pessoas que não se reportam a você — em inglês e sem autoridade formal.",
+      "intro": [
+        "Cross-functional work is the hardest kind: you need something from someone who doesn't report to you, whose priorities were set by someone else, and whose success is measured differently from yours.",
+        "English has a specific register for this. It's built on three moves: making your ask <strong>small and specific</strong>, connecting it to <strong>their</strong> goal, and making the cost of saying yes visible and low.",
+        "Nobody in a global company responds well to \"I need this\". Almost everybody responds to \"here's the smallest thing that would unblock us, and here's why it helps you too\"."
+      ],
+      "introPt": [
+        "Trabalho entre áreas é o mais difícil: você precisa de algo de alguém que não se reporta a você, cujas prioridades foram definidas por outra pessoa e cujo sucesso é medido de forma diferente do seu.",
+        "O inglês tem um registro específico para isso. Ele se apoia em três movimentos: fazer o pedido <strong>pequeno e específico</strong>, ligá-lo à meta <strong>do outro</strong>, e deixar o custo de dizer sim visível e baixo.",
+        "Ninguém numa empresa global responde bem a \"I need this\". Quase todo mundo responde a \"aqui está a menor coisa que nos destravaria, e aqui está por que também ajuda você\"."
+      ],
+      "vocab": [
+        { "en": "to bridge the gap", "pt": "fazer a ponte entre dois mundos", "example": "My role is to bridge the gap between IT and operations." },
+        { "en": "counterpart", "pt": "a pessoa equivalente na outra área", "example": "My counterpart in supply chain is Ana." },
+        { "en": "to align on", "pt": "chegar a um acordo sobre", "example": "Let's align on the definition first." },
+        { "en": "handoff", "pt": "passagem de trabalho entre áreas", "example": "The handoff between design and build isn't clean." },
+        { "en": "competing priorities", "pt": "prioridades concorrentes", "example": "We have competing priorities this quarter." },
+        { "en": "to get buy-in", "pt": "conseguir adesão", "example": "I need buy-in from HSE before we roll out." },
+        { "en": "silo", "pt": "área isolada das outras", "example": "The data sits in three silos." },
+        { "en": "ways of working", "pt": "acordo de como as áreas trabalham juntas", "example": "Let's agree ways of working up front." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Qual pedido consegue um sim?",
+          "badge": "A ou B",
+          "instruction": "Você não tem autoridade sobre essa pessoa. Escolha o pedido que funciona.",
+          "items": [
+            { "prompt": "Você precisa de dados do time de manutenção.", "a": "I need access to the maintenance data as soon as possible.", "b": "Would it be possible to get read access to one table — the work order history? It's about ten minutes of your time and it stops us asking you for extracts every week.", "correct": "b", "why": "Pedido pequeno, tempo estimado e o benefício para quem concede: parar de ser interrompido." },
+            { "prompt": "O time de HSE está atrasando sua aprovação.", "a": "HSE is blocking us, this needs to move.", "b": "I think we've made this harder than it needs to be. Can we do fifteen minutes to work out what evidence you actually need? I'd rather send the right thing once.", "correct": "b", "why": "Assume parte da culpa, propõe tempo curto e mostra que quer facilitar o trabalho do outro." },
+            { "prompt": "Você quer que TI priorize sua demanda.", "a": "Can you prioritise our request? It's very important for the business.", "b": "I know Q3 is full. If this doesn't land by August, the plant rollout slips and that's the one your director is presenting in September.", "correct": "b", "why": "Reconhece a realidade dele e liga o seu pedido a um interesse concreto do lado dele." },
+            { "prompt": "A outra área entregou algo incompleto.", "a": "This isn't what we asked for.", "b": "This gets us most of the way. What's missing is the timestamp field — is that hard to add, or was it just not in the spec?", "correct": "b", "why": "Reconhece o que veio certo, nomeia exatamente o que falta e oferece uma explicação sem culpa." }
+          ],
+          "explanation": "Pedido pequeno · benefício para o outro · reconhecer o que já foi feito. Sem autoridade formal, é isso que funciona."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "counterpart", "right": "a pessoa que ocupa a posição equivalente à sua em outra área" },
+            { "left": "to get buy-in", "right": "conseguir que a pessoa apoie de verdade, não só que não se oponha" },
+            { "left": "handoff", "right": "o momento em que o trabalho passa de uma área para outra" },
+            { "left": "silo", "right": "área que guarda informação e não a compartilha com as outras" },
+            { "left": "ways of working", "right": "o combinado explícito de como duas áreas vão trabalhar juntas" },
+            { "left": "competing priorities", "right": "duas coisas importantes disputando as mesmas pessoas" }
+          ],
+          "explanation": "Buy-in é diferente de aprovação: aprovação é não bloquear; buy-in é empurrar junto."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Negociando com outra área",
+          "badge": "Conversa",
+          "situation": "Você precisa que o time de TI regional libere um ambiente de teste. Eles têm o próprio backlog e você não tem nenhuma autoridade sobre eles.",
+          "turns": [
+            {
+              "who": "Regional IT Lead",
+              "them": "Our Q3 is fully committed. I can look at this in October.",
+              "options": [
+                { "text": "October doesn't work, we need it in August.", "why": "Repetir a sua necessidade não muda o backlog dele. A conversa trava aqui." },
+                { "text": "Understood. Before I push, can I check what \"an environment\" means in your terms? We might need much less than you're pricing.", "correct": true, "why": "Suspende o embate e testa se o pedido é mesmo do tamanho que ele imaginou. Muitas vezes não é." },
+                { "text": "Can I escalate this to your director?", "why": "Escalar no primeiro turno queima a relação — e você vai precisar dele nos próximos dois anos." }
+              ]
+            },
+            {
+              "who": "Regional IT Lead",
+              "them": "A full environment is about three weeks of work. What did you have in mind?",
+              "options": [
+                { "text": "A copy of the production database with two tables, read-only, no integrations. If that's a day instead of three weeks, it solves us.", "correct": true, "why": "Reduz o pedido ao mínimo viável. É assim que se transforma um \"não\" em \"talvez\"." },
+                { "text": "Whatever is standard is fine.", "why": "\"Whatever is standard\" te devolve os três semanas — você acabou de aceitar o escopo caro." },
+                { "text": "The full thing, ideally, since we'll need it eventually.", "why": "Pedir o máximo quando o mínimo resolve é como pedidos entre áreas morrem." }
+              ]
+            },
+            {
+              "who": "Regional IT Lead",
+              "them": "That I could do in August. But I'd need it not to grow into something bigger.",
+              "options": [
+                { "text": "It won't, I promise.", "why": "Promessa sem mecanismo. Ele já ouviu essa antes." },
+                { "text": "Fair. Let's write down what's in it — two tables, read-only, until end of October. Anything beyond that comes back to you as a new request.", "correct": true, "why": "Transforma a confiança num acordo escrito e curto. É exatamente o que tira o medo dele." },
+                { "text": "We can revisit it if it grows.", "why": "\"Revisit\" é vago o bastante para ele ler como \"vai crescer sim\"." }
+              ]
+            }
+          ],
+          "explanation": "Teste o tamanho real do pedido → reduza ao mínimo viável → registre o limite por escrito."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o e-mail para a outra área",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "Hi Ana — quick one. We'd like to ___ on how the work orders reach the dashboard. Right now the data sits in two ___ and the ___ between your team and ours is manual every Friday. My ask is small: read access to one table. That would save your analyst the weekly extract, and it gets us the ___ we need for the September rollout. If it helps, I'm happy to write down the ___ of working so nobody has to remember what we agreed.",
+          "gaps": [
+            { "options": ["align", "agree", "accord"], "answer": "align", "why": "to align ON something — a colocação padrão entre áreas." },
+            { "options": ["silos", "islands", "boxes"], "answer": "silos", "why": "Silo é o termo consagrado para área que não compartilha." },
+            { "options": ["handoff", "passage", "delivery"], "answer": "handoff", "why": "Handoff é a passagem de trabalho entre áreas." },
+            { "options": ["buy-in", "approval", "permission"], "answer": "buy-in", "why": "Aqui o que se precisa é adesão, não só permissão formal." },
+            { "options": ["ways", "manners", "forms"], "answer": "ways", "why": "\"Ways of working\" é a expressão fixa." }
+          ],
+          "explanation": "Align · silo · handoff · buy-in · ways of working. Cinco termos que fazem um pedido entre áreas soar profissional."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que destrava uma colaboração entre áreas?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "You need sustained help from a team that doesn't report to you.",
+          "options": [
+            { "text": "Making the first ask as small as possible.", "correct": true },
+            { "text": "Connecting your need to something their leadership cares about.", "correct": true },
+            { "text": "Escalating early to show it's serious.", "correct": false },
+            { "text": "Writing down what you agreed, including the limits.", "correct": true },
+            { "text": "Naming a single point of contact on each side.", "correct": true },
+            { "text": "Copying both directors on every email.", "correct": false }
+          ],
+          "explanation": "Pedido pequeno, interesse do outro, acordo escrito e um ponto de contato. Escalada e cópia em massa custam relação e raramente aceleram."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Propor alinhamento.", "answer": "Can we align on what good looks like first", "extra": ["aligning", "about"] },
+            { "hint": "Fazer o pedido mínimo.", "answer": "My ask is small read access to one table", "extra": ["asking", "of"] },
+            { "hint": "Propor registrar o combinado.", "answer": "Let us write down the ways of working we agreed", "extra": ["writing", "at"] }
+          ],
+          "explanation": "Alinhar, pedir pouco, registrar. Três frases que carregam qualquer trabalho entre áreas."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I make my first ask as small as it can possibly be.", "pt": "Faço meu primeiro pedido o menor possível." },
+            { "en": "I connect my need to something the other side already cares about.", "pt": "Ligo minha necessidade a algo que o outro lado já valoriza." },
+            { "en": "I know the difference between approval and buy-in.", "pt": "Sei a diferença entre aprovação e buy-in." },
+            { "en": "I write down what we agreed, including the limits.", "pt": "Registro o combinado, incluindo os limites." }
+          ],
+          "doneMessage": "ponte construída. A próxima lição é sobre as reuniões de alinhamento que sustentam essa ponte.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre trabalhar entre áreas",
+        "intro": "Quatro coisas que valem mais que autoridade formal.",
+        "cards": [
+          { "en": "\"My ask is…\" is standard business English and it's disarming. Naming your request as one small thing makes it far easier to say yes to.", "pt": "\"My ask is…\" é inglês corporativo padrão e desarma. Nomear seu pedido como uma coisa pequena torna o sim muito mais fácil." },
+          { "en": "\"Buy-in\" is stronger than approval: approval means they won't block you; buy-in means they'll push with you.", "pt": "\"Buy-in\" é mais forte que aprovação: aprovar é não bloquear; buy-in é empurrar junto." },
+          { "en": "\"What does good look like?\" is the fastest way to align two teams. It surfaces different definitions of success before the work starts.", "pt": "\"What does good look like?\" é o jeito mais rápido de alinhar dois times. Revela definições diferentes de sucesso antes do trabalho começar." },
+          { "en": "Escalating too early is remembered for years. In global companies the phrase \"I had to escalate\" is a real cost to a relationship.", "pt": "Escalar cedo demais é lembrado por anos. Em empresas globais, \"tive que escalar\" cobra um preço real da relação." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now get things from people who don't report to you — which is most of the job.",
+        "pt": "Agora você consegue coisas de pessoas que não se reportam a você — que é a maior parte do trabalho."
+      }
+    },
+    {
+      "title": "Alignment Meetings That Work",
+      "focus": "Reuniões entre áreas: definir o que é sucesso, resolver conflito de prioridade e registrar",
+      "character": "gb-male",
+      "objective": "Conduzir uma reunião de alinhamento entre áreas em inglês: chegar a uma definição comum, resolver o conflito de prioridade e sair com o combinado escrito.",
+      "intro": [
+        "Alignment meetings fail for one reason: everyone agrees on the words and nobody checks the definitions.",
+        "Two teams can say \"we're aligned on delivering in September\" and mean completely different things — one means the software exists, the other means the plants are trained and using it.",
+        "The job of the person leading is to force the definitions into the open, early, and then write them down. That is unglamorous and it is worth more than any other meeting skill you have."
+      ],
+      "introPt": [
+        "Reuniões de alinhamento falham por um motivo: todo mundo concorda com as palavras e ninguém confere as definições.",
+        "Dois times podem dizer \"estamos alinhados em entregar em setembro\" e querer dizer coisas completamente diferentes — um quer dizer que o software existe, o outro que as plantas estão treinadas e usando.",
+        "O trabalho de quem conduz é forçar as definições para fora, cedo, e depois registrá-las. Isso não tem glamour nenhum e vale mais do que qualquer outra habilidade de reunião."
+      ],
+      "vocab": [
+        { "en": "what good looks like", "pt": "como é o resultado bem-feito", "example": "Let's agree what good looks like by September." },
+        { "en": "shared definition", "pt": "definição comum", "example": "We need a shared definition of \"live\"." },
+        { "en": "to surface something", "pt": "trazer à tona", "example": "I want to surface a tension before we commit." },
+        { "en": "tension", "pt": "conflito legítimo entre duas coisas boas", "example": "There's a real tension between speed and safety here." },
+        { "en": "to take a decision away", "pt": "levar a decisão para resolver fora", "example": "Let's take that one away and come back Friday." },
+        { "en": "RACI", "pt": "quem faz, quem aprova, quem é consultado, quem é informado", "example": "Let's do a quick RACI on the rollout." },
+        { "en": "single point of contact", "pt": "ponto único de contato", "example": "Ana is the single point of contact on our side." },
+        { "en": "to document the agreement", "pt": "registrar o acordo", "example": "I'll document what we agreed and send it round." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia a ata do alinhamento",
+          "badge": "Leia e responda",
+          "heading": "Alignment note · Digital × Operations",
+          "instruction": "Leia a ata e responda.",
+          "passage": [
+            "Agreed definition of \"live\" in September: the alerts run in production for all three plants AND at least one supervisor per shift has completed the twenty-minute training. Software alone does not count as live.",
+            "Tension surfaced: Operations wants alerts on every anomaly; Digital wants a threshold to avoid alert fatigue. Not resolved today. Ana and Paulo to come back with a proposed threshold by 12 August.",
+            "Ownership: Digital owns the build and the training material. Operations owns the training delivery and the shift schedule. Single points of contact: Mariana (Digital), Paulo (Operations).",
+            "Escalation path: if the threshold isn't agreed by 12 August, it goes to the steering committee on the 21st — not to individual directors."
+          ],
+          "questions": [
+            {
+              "prompt": "What does \"live\" mean under this agreement?",
+              "options": [
+                { "text": "Software in production plus at least one trained supervisor per shift.", "correct": true },
+                { "text": "The software running in production.", "correct": false },
+                { "text": "All supervisors trained." }
+              ],
+              "why": "Foi exatamente essa definição que a reunião existiu para produzir. Sem ela, os dois times dizem \"live\" e brigam em setembro."
+            },
+            {
+              "prompt": "How is the unresolved tension handled?",
+              "options": [
+                { "text": "It is dropped.", "correct": false },
+                { "text": "Two named people take it away with a date, and there's a defined escalation path.", "correct": true },
+                { "text": "The most senior person decides on the spot." }
+              ],
+              "why": "Nome, prazo e caminho de escalada. É assim que um tema não resolvido não vira um problema esquecido."
+            },
+            {
+              "prompt": "Why does the note specify \"not to individual directors\"?",
+              "options": [
+                { "text": "To prevent each side lobbying their own director separately.", "correct": true },
+                { "text": "Because directors are too busy.", "correct": false },
+                { "text": "Because the steering committee is faster." }
+              ],
+              "why": "Definir o caminho de escalada impede a escalada paralela — que é como alinhamentos entre áreas costumam desmoronar."
+            }
+          ],
+          "explanation": "Definição comum · tensão nomeada com dono e prazo · propriedade clara · caminho de escalada. Uma página resolve um trimestre."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte a reunião de alinhamento na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas etapas na ordem que faz uma reunião de alinhamento funcionar.",
+          "items": [
+            "Before we plan anything: what does \"live in September\" mean to each of you?",
+            "Right — so Operations means trained users, and Digital means software in production. Those are different.",
+            "Let's agree the definition now: production plus one trained supervisor per shift.",
+            "There's one tension we haven't solved: alert volume. Ana and Paulo, can you take that away and come back by the 12th?",
+            "I'll write this up today, including who owns what, and send it round for corrections."
+          ],
+          "explanation": "Definições primeiro. Plano depois. Tensão nomeada com dono e data. E registro no mesmo dia."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual frase produz alinhamento de verdade?",
+          "badge": "A ou B",
+          "instruction": "Escolha a que evita a briga de setembro.",
+          "items": [
+            { "prompt": "Abrindo o alinhamento.", "a": "So we're all agreed on September, right?", "b": "Before we agree: what does \"live in September\" mean to each of you? One sentence each.", "correct": "b", "why": "A pergunta A produz acenos de cabeça. A B produz alinhamento." },
+            { "prompt": "Duas áreas querem coisas diferentes.", "a": "Let's find a middle ground.", "b": "There's a real tension here between coverage and alert fatigue. I'd rather name it than average it.", "correct": "b", "why": "Meio-termo em tensão real costuma produzir algo que não serve para ninguém." },
+            { "prompt": "Um tema não se resolve na reunião.", "a": "Let's park it and see how it goes.", "b": "Ana and Paulo take it away, proposal by the 12th, steering committee on the 21st if not.", "correct": "b", "why": "Parked sem dono e sem data é o mesmo que abandonado." },
+            { "prompt": "Fechando.", "a": "Great meeting, thanks everyone.", "b": "I'll write up the definition, the owners and the open item today, and send it round for corrections.", "correct": "b", "why": "Quem escreve a ata define o que foi combinado. Ofereça-se sempre." }
+          ],
+          "explanation": "Definições antes do plano. Tensão nomeada, não diluída. Item aberto com dono e data. Ata no mesmo dia."
+        },
+        {
+          "type": "categorize",
+          "title": "RACI: qual é o papel?",
+          "badge": "Classifique",
+          "instruction": "No rollout dos alertas, classifique cada papel.",
+          "categories": [
+            { "id": "r", "name": "Responsible · faz o trabalho", "short": "Responsible" },
+            { "id": "a", "name": "Accountable · responde pelo resultado", "short": "Accountable" },
+            { "id": "c", "name": "Consulted · é consultado antes", "short": "Consulted" }
+          ],
+          "items": [
+            { "text": "The developer building the alert service", "cat": "r" },
+            { "text": "Mariana, who answers to the steering committee for the rollout", "cat": "a" },
+            { "text": "HSE, whose sign-off is needed before plant use", "cat": "c" },
+            { "text": "The trainer delivering the twenty-minute session", "cat": "r" },
+            { "text": "Paulo, who answers for training completion in Operations", "cat": "a" },
+            { "text": "The vendor, whose API constraints shape the design", "cat": "c" }
+          ],
+          "explanation": "Só pode haver um Accountable por entrega. Vários Responsible, sim. Confundir os dois é o que faz projeto entre áreas travar."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A expressão certa no alinhamento",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a formulação que funciona melhor entre áreas.",
+          "items": [
+            {
+              "prompt": "Você quer as definições antes do plano.",
+              "options": [
+                { "text": "What does good look like for each of you?", "correct": true },
+                { "text": "Do we all agree?" },
+                { "text": "Is everything clear?" }
+              ],
+              "why": "\"Do we agree?\" só produz acenos. A primeira força cada lado a dizer o que quer dizer."
+            },
+            {
+              "prompt": "Você quer nomear um conflito legítimo.",
+              "options": [
+                { "text": "There's a problem between your team and mine." },
+                { "text": "I want to surface a tension: coverage versus alert fatigue.", "correct": true },
+                { "text": "You're asking for too much." }
+              ],
+              "why": "\"Tension\" trata o conflito como legítimo dos dois lados. \"Problem\" põe alguém em falta."
+            },
+            {
+              "prompt": "Um item fica em aberto.",
+              "options": [
+                { "text": "We'll figure it out later." },
+                { "text": "Ana and Paulo take that away — proposal by the 12th.", "correct": true },
+                { "text": "Let's leave it for now." }
+              ],
+              "why": "\"Take it away\" é o verbo padrão para levar um item para resolver fora, e ele vem com dono e data."
+            },
+            {
+              "prompt": "Você se oferece para registrar.",
+              "options": [
+                { "text": "I'll document what we agreed and send it round for corrections.", "correct": true },
+                { "text": "Someone should write this down." },
+                { "text": "I hope everyone remembers this." }
+              ],
+              "why": "\"Send it round for corrections\" convida revisão e transforma sua ata no acordo oficial."
+            }
+          ],
+          "explanation": "What good looks like · surface a tension · take it away · send it round. Quatro frases conduzem um alinhamento inteiro."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "We need to align about the definition of live.", "wrong": "about", "fix": "on", "why": "to align ON something. Sempre \"on\"." },
+            { "sentence": "I will send the act of the meeting today.", "wrong": "act", "fix": "minutes", "why": "Ata de reunião é <strong>minutes</strong> (sempre plural). \"Act\" é outra coisa." },
+            { "sentence": "Ana is the responsible for the training delivery.", "wrong": "the", "fix": "(nada)", "why": "\"Ana is responsible for…\" — sem artigo. Ou \"Ana is the person responsible\"." },
+            { "sentence": "Let's take away this decision to Friday.", "wrong": "to", "fix": "and come back on", "why": "\"Take it away\" já significa levar para fora; o retorno se marca com \"come back on Friday\"." },
+            { "sentence": "Both teams have differents priorities.", "wrong": "differents", "fix": "different", "why": "Adjetivos em inglês nunca vão ao plural." }
+          ],
+          "explanation": "\"Act\" para ata e adjetivo no plural são as duas marcas mais audíveis de tradução literal do português."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I ask what \"done\" or \"live\" means to each side before we plan.", "pt": "Pergunto o que \"done\" ou \"live\" significa para cada lado antes de planejar." },
+            { "en": "I name tensions instead of averaging them away.", "pt": "Nomeio tensões em vez de dissolvê-las num meio-termo." },
+            { "en": "Every open item leaves with an owner and a date.", "pt": "Todo item em aberto sai com dono e data." },
+            { "en": "I offer to write the minutes — and I send them the same day.", "pt": "Me ofereço para escrever a ata — e mando no mesmo dia." },
+            { "en": "I say \"align on\", never \"align about\".", "pt": "Digo \"align on\", nunca \"align about\"." }
+          ],
+          "doneMessage": "alinhamento que segura. O próximo tópico é reportar progresso e métricas.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre reuniões de alinhamento",
+        "intro": "Quatro coisas que decidem se o alinhamento sobrevive até setembro.",
+        "cards": [
+          { "en": "Whoever writes the minutes decides what was agreed. Volunteering to write them is the cheapest power move in corporate life.", "pt": "Quem escreve a ata define o que foi combinado. Oferecer-se para escrevê-la é o movimento de poder mais barato da vida corporativa." },
+          { "en": "\"Tension\" is the diplomatic English word for a conflict where both sides are right. It's much safer than \"disagreement\" or \"problem\".", "pt": "\"Tension\" é a palavra diplomática para um conflito em que os dois lados têm razão. Muito mais segura que \"disagreement\" ou \"problem\"." },
+          { "en": "\"Send it round\" (British) and \"send it around\" (American) both mean circulate for comment. Either is fine in a global team.", "pt": "\"Send it round\" (britânico) e \"send it around\" (americano) significam circular para comentários. Qualquer uma serve num time global." },
+          { "en": "Agreeing the escalation path in advance stops both sides lobbying their own directors. It's the least fun paragraph in any note and the most useful.", "pt": "Combinar o caminho de escalada antes impede que cada lado vá lobbyar o próprio diretor. É o parágrafo menos divertido de qualquer ata e o mais útil." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now run the meeting that stops the September argument from ever happening.",
+        "pt": "Agora você conduz a reunião que impede a briga de setembro de acontecer."
+      }
+    }
+  ]
+}

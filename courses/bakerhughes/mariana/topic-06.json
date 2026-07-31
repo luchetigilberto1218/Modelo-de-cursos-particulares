@@ -1,0 +1,317 @@
+{
+  "topic": "Presentation and public speaking",
+  "lessons": [
+    {
+      "title": "Structure and Signposting",
+      "focus": "Abrir forte, sinalizar cada transição e fechar com uma mensagem que fica",
+      "character": "us-female",
+      "objective": "Estruturar e conduzir uma apresentação em inglês usando os sinalizadores que fazem a audiência nunca se perder.",
+      "intro": [
+        "An audience listening in their second — or your second — language needs signposts. Not more content: more <strong>signals</strong> about where the content is going.",
+        "Native presenters do this constantly: <em>\"I'll cover three things\"</em>, <em>\"that's the background — now the numbers\"</em>, <em>\"so what does this mean for you?\"</em>",
+        "Those sentences carry no information at all. They carry navigation. And navigation is what makes people follow a presentation to the end."
+      ],
+      "introPt": [
+        "Uma audiência ouvindo numa segunda língua — dela ou sua — precisa de placas de sinalização. Não de mais conteúdo: de mais <strong>sinais</strong> sobre para onde o conteúdo vai.",
+        "Apresentadores nativos fazem isso o tempo todo: <em>\"I'll cover three things\"</em>, <em>\"that's the background — now the numbers\"</em>, <em>\"so what does this mean for you?\"</em>",
+        "Essas frases não carregam informação nenhuma. Carregam navegação. E é a navegação que faz as pessoas te acompanharem até o fim."
+      ],
+      "vocab": [
+        { "en": "to walk you through", "pt": "conduzir passo a passo", "example": "Let me walk you through the timeline." },
+        { "en": "signpost", "pt": "sinalizador de transição", "example": "Signpost every section change." },
+        { "en": "to set the scene", "pt": "dar o contexto inicial", "example": "First, let me set the scene." },
+        { "en": "takeaway", "pt": "a mensagem que fica", "example": "If you remember one thing, this is the takeaway." },
+        { "en": "to move on to", "pt": "passar para o próximo ponto", "example": "Let's move on to the risks." },
+        { "en": "to recap", "pt": "recapitular", "example": "Quick recap before we finish." },
+        { "en": "the bottom line", "pt": "a conclusão essencial", "example": "The bottom line is we need two more weeks." },
+        { "en": "to leave you with", "pt": "encerrar deixando algo", "example": "I'll leave you with one number." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a abertura na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Uma abertura forte tem sempre a mesma sequência. Clique nas frases na ordem.",
+          "items": [
+            "Twenty supervisors lose ten minutes every morning waiting for a dashboard to load.",
+            "That's four hundred hours a year, in one plant alone.",
+            "I'm going to cover three things: what causes it, what we've already ruled out, and what I'm recommending.",
+            "It'll take about twelve minutes, and I'd rather take questions as we go.",
+            "Let me start with what's actually happening at 08:40 every morning."
+          ],
+          "explanation": "Um número que dói → a escala dele → os três tópicos → o contrato de tempo e perguntas → a primeira seção."
+        },
+        {
+          "type": "categorize",
+          "title": "Que tipo de sinalizador é esse?",
+          "badge": "Classifique",
+          "instruction": "Cada frase faz um trabalho de navegação diferente. Classifique.",
+          "categories": [
+            { "id": "open", "name": "Abrir / anunciar", "short": "Abrir" },
+            { "id": "transition", "name": "Transição", "short": "Transição" },
+            { "id": "close", "name": "Fechar", "short": "Fechar" }
+          ],
+          "items": [
+            { "text": "\"I'm going to cover three things today.\"", "cat": "open" },
+            { "text": "\"That's the background — now let's look at the numbers.\"", "cat": "transition" },
+            { "text": "\"If you remember one thing from today, it's this.\"", "cat": "close" },
+            { "text": "\"Let me set the scene first.\"", "cat": "open" },
+            { "text": "\"So what does this mean for your team?\"", "cat": "transition" },
+            { "text": "\"The bottom line is we need a decision by Friday.\"", "cat": "close" }
+          ],
+          "explanation": "Abrir promete a estrutura. Transição avisa a virada. Fechar entrega a única coisa que a pessoa vai lembrar."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a apresentação",
+          "badge": "Complete o texto",
+          "instruction": "Escolha o sinalizador certo em cada lacuna.",
+          "text": "Good morning. Let me ___ you through the dashboard issue in three parts. First, let me ___ the scene: since the June release, the Macaé plant loads in forty seconds. ___ the background — now the numbers. Twenty supervisors, ten minutes each, every morning. So what does this ___ for the September rollout? It means the fourth plant would hit the same wall. The ___ line: three weeks of work now, or a rebuild in September.",
+          "gaps": [
+            { "options": ["walk", "take", "bring"], "answer": "walk", "why": "to walk someone through = conduzir passo a passo. É a colocação padrão." },
+            { "options": ["set", "put", "make"], "answer": "set", "why": "to set the scene é fixo." },
+            { "options": ["That's", "This is", "There's"], "answer": "That's", "why": "\"That's the background\" fecha o que acabou de ser dito; \"this\" apontaria para o que vem." },
+            { "options": ["mean", "signify", "want to say"], "answer": "mean", "why": "\"What does this mean for you?\" é a transição mais poderosa da apresentação." },
+            { "options": ["bottom", "final", "end"], "answer": "bottom", "why": "the bottom line = a conclusão essencial." }
+          ],
+          "explanation": "Walk through · set the scene · that's X, now Y · what does this mean · bottom line. Cinco frases e a estrutura inteira aparece."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual versão prende a audiência?",
+          "badge": "A ou B",
+          "instruction": "Escolha a que funciona melhor com uma audiência internacional.",
+          "items": [
+            { "prompt": "Primeira frase da apresentação.", "a": "Good morning, my name is Mariana and today I'd like to talk a little bit about our dashboard project.", "b": "Twenty supervisors lose ten minutes every morning waiting for a screen to load.", "correct": "b", "why": "Abrir com o problema em números prende. Apresentar-se pode vir depois — ou nem vir, se já te apresentaram." },
+            { "prompt": "Mudando de seção.", "a": "Ok, so, next slide.", "b": "That's the cause. Now, what it costs us.", "correct": "b", "why": "\"Next slide\" descreve o slide. A opção B descreve a ideia — que é o que a audiência acompanha." },
+            { "prompt": "Você percebeu que está acima do tempo.", "a": "Sorry, I'm going too long, I'll rush through the rest.", "b": "I'm conscious of time, so I'll skip the technical detail and go straight to the recommendation.", "correct": "b", "why": "Cortar com critério mostra controle. \"Rush through\" transmite pânico e ninguém entende o final." },
+            { "prompt": "Última frase.", "a": "So, yeah, that's it. Any questions?", "b": "I'll leave you with one number: four hundred hours a year, in one plant. Happy to take questions.", "correct": "b", "why": "A última frase é a mais lembrada. Desperdiçá-la com \"that's it\" é jogar fora o melhor lugar do discurso." }
+          ],
+          "explanation": "Abra com o problema, sinalize ideias e não slides, corte com critério, feche com um número."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Anunciar a estrutura.", "answer": "I am going to cover three things this morning", "extra": ["covering", "about"] },
+            { "hint": "Fazer a transição para o impacto.", "answer": "So what does this mean for your team", "extra": ["meaning", "to"] },
+            { "hint": "Fechar com a mensagem.", "answer": "I will leave you with one number", "extra": ["leaving", "of"] }
+          ],
+          "explanation": "Três frases de navegação. São elas que sustentam qualquer apresentação de dez minutos."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Sinalizadores precisam sair automáticos — se você pensar neles, perde o fio do conteúdo.",
+          "sentences": [
+            "Let me walk you through this in three parts.",
+            "First, let me set the scene.",
+            "That's the background — now let's look at the numbers.",
+            "So what does this mean for the September rollout?",
+            "I'll leave you with one number: four hundred hours a year."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I open with a problem or a number, not with my own name.", "pt": "Abro com um problema ou um número, não com o meu nome." },
+            { "en": "I announce how many things I'll cover, and I keep to that number.", "pt": "Anuncio quantos pontos vou cobrir e cumpro esse número." },
+            { "en": "I signpost ideas, not slides.", "pt": "Sinalizo ideias, não slides." },
+            { "en": "I close with a takeaway, never with \"that's it\".", "pt": "Fecho com um takeaway, nunca com \"that's it\"." }
+          ],
+          "doneMessage": "estrutura no lugar. A próxima lição é a parte que dá mais medo: dados e perguntas difíceis.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre apresentar em inglês",
+        "intro": "Quatro coisas que fazem mais diferença do que o seu vocabulário.",
+        "cards": [
+          { "en": "Pauses are the cheapest fluency upgrade there is. A two-second silence before a key number reads as confidence, not as hesitation.", "pt": "A pausa é a melhoria mais barata de fluência que existe. Dois segundos de silêncio antes de um número-chave soam como confiança, não hesitação." },
+          { "en": "Never apologise for your English at the start. Audiences take you at the level you present yourself.", "pt": "Nunca peça desculpa pelo seu inglês no início. A audiência te aceita no nível em que você se apresenta." },
+          { "en": "\"I'm conscious of time\" is the polite English way to speed up or cut something — it sounds considerate rather than rushed.", "pt": "\"I'm conscious of time\" é a forma educada de acelerar ou cortar — soa atenciosa, não apressada." },
+          { "en": "The rule of three is real: audiences remember three points and lose the fourth. Promise three, deliver three.", "pt": "A regra de três é real: audiências lembram três pontos e perdem o quarto. Prometa três, entregue três." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now take an audience from your first sentence to your last without ever losing them.",
+        "pt": "Agora você leva uma audiência da primeira à última frase sem perder ninguém no caminho."
+      }
+    },
+    {
+      "title": "Presenting Data and Handling Q&A",
+      "focus": "Comentar um gráfico e sobreviver às perguntas — inclusive às que você não sabe responder",
+      "character": "gb-female",
+      "objective": "Comentar dados em inglês com tendência, causa e perspectiva — e responder perguntas difíceis, incluindo aquelas cuja resposta você não tem.",
+      "intro": [
+        "Two moments decide how a presentation is remembered: the chart you comment on, and the question you can't answer.",
+        "For charts, English has a fixed formula: <strong>trend + driver + outlook</strong>. What moved, why it moved, what happens next. Three clauses.",
+        "For questions, the skill is not knowing everything. It is having a clean way to say <em>\"I don't know, and here's when I will\"</em> — which, done well, increases trust rather than damaging it."
+      ],
+      "introPt": [
+        "Dois momentos decidem como uma apresentação é lembrada: o gráfico que você comenta e a pergunta que você não sabe responder.",
+        "Para gráficos, o inglês tem fórmula fixa: <strong>tendência + causa + perspectiva</strong>. O que se moveu, por que se moveu, o que vem depois. Três orações.",
+        "Para perguntas, a habilidade não é saber tudo. É ter um jeito limpo de dizer <em>\"não sei, e aqui está quando saberei\"</em> — o que, bem feito, aumenta a confiança em vez de destruí-la."
+      ],
+      "vocab": [
+        { "en": "to level off / plateau", "pt": "estabilizar", "example": "Downtime levelled off in May." },
+        { "en": "to spike", "pt": "disparar num pico", "example": "Response times spiked after the release." },
+        { "en": "driven by", "pt": "puxado por", "example": "The increase is driven by the Macaé feed." },
+        { "en": "year on year (YoY)", "pt": "na comparação anual", "example": "Downtime is down 8% year on year." },
+        { "en": "outlier", "pt": "ponto fora da curva", "example": "March is an outlier — there was a shutdown." },
+        { "en": "to caveat", "pt": "ressalvar", "example": "One caveat: April data is incomplete." },
+        { "en": "let me come back to you on that", "pt": "eu te retorno sobre isso", "example": "Good question — let me come back to you on that by Thursday." },
+        { "en": "to park a question", "pt": "adiar uma pergunta", "example": "Can I park that and cover it in the appendix?" }
+      ],
+      "exercises": [
+        {
+          "type": "multipleChoice",
+          "title": "Qual comentário de gráfico está completo?",
+          "prompt": "Você tem vinte segundos para comentar o gráfico de downtime. Qual versão faz o trabalho inteiro?",
+          "options": [
+            { "id": "a", "text": "Downtime is down eight per cent year on year, driven mainly by the predictive alerts at Macaé. We expect it to hold at this level through Q4.", "correct": true },
+            { "id": "b", "text": "As you can see in this chart, the blue line goes down and the orange line goes up over the period shown on the horizontal axis.", "correct": false, "whyWrong": "Descrever o desenho do gráfico é o erro número um. A audiência já vê as linhas — ela precisa do significado." },
+            { "id": "c", "text": "The numbers are much better this year, which is great news for everyone involved.", "correct": false, "whyWrong": "Nenhum número, nenhuma causa, nenhuma perspectiva. É entusiasmo, não comentário." }
+          ],
+          "explanation": "Trend + driver + outlook. Se as três estão lá, o comentário está pronto."
+        },
+        {
+          "type": "listenGap",
+          "title": "Ouça o comentário e complete",
+          "badge": "Ouça e complete",
+          "instruction": "Ouça o áudio completo primeiro, depois complete cada frase com o banco.",
+          "audioText": "Unplanned downtime came in at one hundred and forty hours for the quarter, down eight per cent year on year. The improvement is driven mainly by predictive alerts at Macaé. March is an outlier — there was a planned shutdown that quarter. One caveat: April data is still incomplete. For Q4 we expect downtime to level off at around one hundred and thirty-five hours.",
+          "bank": ["one hundred and forty", "eight", "outlier", "caveat", "one hundred and thirty-five"],
+          "items": [
+            { "text": "Downtime came in at ___ hours for the quarter.", "answer": "one hundred and forty" },
+            { "text": "That's down ___ per cent year on year.", "answer": "eight" },
+            { "text": "March is an ___ because of a planned shutdown.", "answer": "outlier" },
+            { "text": "One ___ : April data is still incomplete.", "answer": "caveat" },
+            { "text": "For Q4 we expect it to level off at around ___ hours.", "answer": "one hundred and thirty-five" }
+          ],
+          "explanation": "Repare no \"and\" depois de hundred, e no uso de \"caveat\" como substantivo: one caveat."
+        },
+        {
+          "type": "serialChoice",
+          "title": "O verbo certo para o movimento",
+          "badge": "Escolha certa",
+          "instruction": "Escolha o verbo que descreve exatamente esse movimento no gráfico.",
+          "items": [
+            { "prompt": "Subiu bruscamente e voltou.", "options": [{ "text": "spiked", "correct": true }, { "text": "grew" }, { "text": "climbed" }], "why": "<strong>spike</strong> = pico curto e acentuado." },
+            { "prompt": "Parou de subir e ficou estável.", "options": [{ "text": "levelled off", "correct": true }, { "text": "stopped" }, { "text": "finished" }], "why": "<strong>to level off</strong> ou <strong>to plateau</strong> = estabilizar." },
+            { "prompt": "Caiu de forma constante ao longo de meses.", "options": [{ "text": "declined steadily", "correct": true }, { "text": "fell down" }, { "text": "lowered" }], "why": "\"Fell down\" é para pessoas e objetos. Números <strong>decline</strong> ou <strong>fall</strong>." },
+            { "prompt": "Explicando o que causou a alta.", "options": [{ "text": "driven by", "correct": true }, { "text": "caused for" }, { "text": "because of the fact that" }], "why": "<strong>driven by</strong> é a forma consagrada e econômica." },
+            { "prompt": "O número ficou em 140 horas.", "options": [{ "text": "came in at", "correct": true }, { "text": "arrived in" }, { "text": "stayed on" }], "why": "<strong>to come in at</strong> é como se anuncia um resultado apurado." }
+          ],
+          "explanation": "Spike · level off · decline steadily · driven by · come in at. Cinco verbos cobrem qualquer gráfico."
+        },
+        {
+          "type": "flowChoice",
+          "title": "As perguntas difíceis",
+          "badge": "Conversa",
+          "situation": "Você acabou de apresentar a recomendação de construir os alertas internamente. Abre para perguntas — e a sala não está fácil.",
+          "turns": [
+            {
+              "who": "Finance Director",
+              "them": "What's the total cost of your recommendation, including the internal hours?",
+              "options": [
+                { "text": "I have the external cost — sixty thousand. The internal hours I'd want to check with the resourcing model before I give you a number. I'll have it to you by Thursday.", "correct": true, "why": "Dá o que tem, separa o que não tem e coloca prazo. É o que um diretor financeiro quer ouvir." },
+                { "text": "It's roughly a hundred thousand, I think.", "why": "Chutar um número na frente do financeiro é o jeito mais rápido de perder credibilidade permanentemente." },
+                { "text": "I don't have that with me.", "why": "Verdadeiro, mas sem próximo passo a resposta fica pendurada." }
+              ]
+            },
+            {
+              "who": "Plant Manager",
+              "them": "Honestly, this whole analysis feels like it was built around the answer you wanted.",
+              "options": [
+                { "text": "That's not true at all.", "why": "Negar defensivamente confirma a impressão dele para o resto da sala." },
+                { "text": "That's fair to test. The two things that would have flipped it are a fixed September date and a lower vendor price. Neither held — but I'm happy to walk you through both.", "correct": true, "why": "Aceita o teste, mostra os critérios que poderiam ter mudado a conclusão e abre os dados." },
+                { "text": "I've been doing this for ten years.", "why": "Recorrer à senioridade em vez do argumento é o que faz uma sala perder a confiança." }
+              ]
+            },
+            {
+              "who": "IT Lead",
+              "them": "How does this interact with the ERP migration next year?",
+              "options": [
+                { "text": "It doesn't.", "why": "Resposta absoluta sobre algo que você não checou — se estiver errada, custa caro." },
+                { "text": "I don't know — I haven't looked at the migration scope. Good question. Can I come back to you on that by Thursday, together with the cost figure?", "correct": true, "why": "\"I don't know\" com prazo e agrupado com a outra pendência. Isso é controle, não fraqueza." },
+                { "text": "That's a question for the ERP team.", "why": "Empurra a pergunta para longe em vez de assumi-la — e a pergunta era boa." }
+              ]
+            }
+          ],
+          "explanation": "Dê o que você tem · separe o que não tem · nunca chute número · \"I don't know, by Thursday\" com prazo."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Q&A: qual resposta constrói confiança?",
+          "badge": "A ou B",
+          "instruction": "Escolha a que deixa a audiência mais tranquila com você.",
+          "items": [
+            { "prompt": "Você não sabe a resposta.", "a": "I'm not sure, maybe around thirty per cent?", "b": "I don't have that number. I'll send it by end of day tomorrow.", "correct": "b", "why": "Um número inventado vira citação em ata. Um prazo vira credibilidade." },
+            { "prompt": "A pergunta é longa e desviou do assunto.", "a": "(responde tudo, gastando seis minutos)", "b": "There are two questions in there. Let me take the first now, and grab you afterwards on the second.", "correct": "b", "why": "Separar as perguntas devolve o controle do tempo sem ignorar ninguém." },
+            { "prompt": "Alguém aponta um erro real no seu slide.", "a": "That's probably a rounding difference.", "b": "You're right — that figure is from the June cut. The correct number is 138, and it doesn't change the recommendation.", "correct": "b", "why": "Reconhecer rápido, corrigir e dizer se muda a conclusão. Tentar salvar o slide é que destrói a apresentação." },
+            { "prompt": "A pergunta é sobre algo que vem depois no deck.", "a": "I'll get to that.", "b": "That's slide seven — can I park it for two minutes and come back to you?", "correct": "b", "why": "\"I'll get to that\" pode soar como despacho. Nomear o slide e pedir licença mantém a pessoa com você." }
+          ],
+          "explanation": "Nunca chute. Separe perguntas múltiplas. Reconheça erros na hora. Adie com nome e prazo."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "As you can see in the graphic, downtime is falling.", "wrong": "graphic", "fix": "chart", "why": "Falso amigo: gráfico é <strong>chart</strong> ou graph. \"Graphic\" é imagem/arte." },
+            { "sentence": "The numbers increased in twelve per cent.", "wrong": "in", "fix": "by", "why": "Variação percentual leva <strong>by</strong>: increased by 12%." },
+            { "sentence": "Downtime came in to one hundred and forty hours.", "wrong": "to", "fix": "at", "why": "to come in AT a number." },
+            { "sentence": "I will return you the cost figure tomorrow.", "wrong": "return", "fix": "come back to you with", "why": "\"Return you\" não existe nesse sentido: come back to you with / send you." },
+            { "sentence": "Let me explain you this chart.", "wrong": "you", "fix": "(nada)", "why": "Explain não leva objeto indireto direto: \"explain this chart to you\"." }
+          ],
+          "explanation": "\"Graphic\" e \"explain you\" são os dois que mais entregam um falante de português numa apresentação."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Essas frases precisam sair sem pensar — especialmente a terceira.",
+          "sentences": [
+            "Downtime came in at one hundred and forty hours, down eight per cent year on year.",
+            "The improvement is driven mainly by the predictive alerts at Macaé.",
+            "I don't have that number with me — I'll come back to you by Thursday.",
+            "One caveat: the April data is still incomplete.",
+            "March is an outlier; there was a planned shutdown that quarter."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I comment on data with trend, driver and outlook — never by describing the chart.", "pt": "Comento dados com tendência, causa e perspectiva — nunca descrevendo o gráfico." },
+            { "en": "I say \"chart\", not \"graphic\".", "pt": "Digo \"chart\", não \"graphic\"." },
+            { "en": "I never guess a number in front of finance.", "pt": "Nunca chuto um número na frente do financeiro." },
+            { "en": "I can say \"I don't know\" with a date attached.", "pt": "Sei dizer \"I don't know\" com uma data anexada." },
+            { "en": "I acknowledge an error immediately and say whether it changes the conclusion.", "pt": "Reconheço um erro na hora e digo se ele muda a conclusão." }
+          ],
+          "doneMessage": "apresentação e Q&A dominados. O próximo tópico é explicar tecnologia para quem não é técnico.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre dados e perguntas em inglês",
+        "intro": "Quatro detalhes que separam o comentário amador do profissional.",
+        "cards": [
+          { "en": "\"Caveat\" is used as a countable noun: \"one caveat\", \"two caveats\". It's the most elegant way to add a limitation without weakening your point.", "pt": "\"Caveat\" é substantivo contável: \"one caveat\", \"two caveats\". É o jeito mais elegante de acrescentar uma ressalva sem enfraquecer o argumento." },
+          { "en": "\"That's a fair challenge\" is how senior English speakers accept a tough question. It concedes nothing but lowers the temperature.", "pt": "\"That's a fair challenge\" é como anglófonos sêniores recebem uma pergunta dura. Não concede nada e baixa a temperatura." },
+          { "en": "Percentages take \"by\": up BY eight per cent. Levels take \"at\": came in AT 140 hours. Mixing them is the most audible slip.", "pt": "Percentual leva \"by\": up BY eight per cent. Nível leva \"at\": came in AT 140 hours. Trocar os dois é o deslize mais audível." },
+          { "en": "Answering \"I don't know\" with a deadline is a senior move, not a weak one. Guessing is what destroys credibility.", "pt": "Responder \"I don't know\" com prazo é movimento sênior, não fraqueza. Chutar é que destrói credibilidade." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now present numbers and survive the hardest question in the room.",
+        "pt": "Agora você apresenta números e sobrevive à pergunta mais difícil da sala."
+      }
+    }
+  ]
+}

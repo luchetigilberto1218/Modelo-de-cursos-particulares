@@ -1,0 +1,357 @@
+{
+  "topic": "Reporting Progress and Dashboard Metrics",
+  "lessons": [
+    {
+      "title": "The Weekly Status Report",
+      "focus": "RAG status, progresso e a arte de reportar más notícias cedo",
+      "character": "us-female",
+      "objective": "Escrever e apresentar um status semanal em inglês que ninguém precise questionar — e mudar um projeto de green para amber sem drama.",
+      "intro": [
+        "Status reporting has one purpose: to make sure nobody is surprised. Everything else is decoration.",
+        "The global standard is RAG — <strong>Red</strong>, <strong>Amber</strong>, <strong>Green</strong> — and the hard part is not the colour. It's the honesty. Projects that go straight from green to red destroy the credibility of whoever reported them.",
+        "This lesson gives you the format, the phrases, and the courage-in-a-sentence for moving a project to amber the week you first suspect it."
+      ],
+      "introPt": [
+        "Reportar status tem um único propósito: garantir que ninguém seja surpreendido. Todo o resto é decoração.",
+        "O padrão global é RAG — <strong>Red</strong>, <strong>Amber</strong>, <strong>Green</strong> — e o difícil não é a cor. É a honestidade. Projetos que vão direto de green para red destroem a credibilidade de quem os reportou.",
+        "Esta lição te dá o formato, as frases e a coragem-em-uma-frase para mover um projeto para amber na semana em que você começa a desconfiar."
+      ],
+      "vocab": [
+        { "en": "RAG status", "pt": "farol vermelho/âmbar/verde", "example": "I'm moving the project to amber this week." },
+        { "en": "on track / at risk / off track", "pt": "no prazo / em risco / fora do prazo", "example": "Delivery is on track; adoption is at risk." },
+        { "en": "highlight", "pt": "destaque positivo da semana", "example": "The highlight is the pilot going live." },
+        { "en": "lowlight", "pt": "o que não foi bem", "example": "The lowlight is the API delay." },
+        { "en": "mitigation", "pt": "ação para reduzir o risco", "example": "The mitigation is a second developer on integration." },
+        { "en": "no surprises", "pt": "sem surpresas — o princípio do reporte", "example": "The rule here is no surprises at the steering committee." },
+        { "en": "to escalate early", "pt": "sinalizar cedo", "example": "I'd rather escalate early than explain late." },
+        { "en": "forecast to complete", "pt": "previsão de conclusão", "example": "Forecast to complete is 12 September." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia o status semanal",
+          "badge": "Leia e responda",
+          "heading": "Weekly status · Dashboard programme · Week 31",
+          "instruction": "Leia o status e responda.",
+          "passage": [
+            "Overall status: AMBER (was green last week).",
+            "Why the change: the vendor API arrived nine days later than committed. Integration testing has not started, and testing sits on the critical path.",
+            "Highlight: the pilot is live at Macaé and the first week of supervisor feedback is positive — eight of ten would keep it.",
+            "Lowlight: the third data feed is still with regional IT, now eleven days open.",
+            "Mitigation: a second developer joined integration on Monday; we expect to recover four of the nine days. Forecast to complete is 12 September against a plan of 5 September.",
+            "Ask: a committed date from regional IT for the third feed. Escalation path is the steering committee on the 21st if it isn't resolved by the 12th."
+          ],
+          "questions": [
+            {
+              "prompt": "Why is this report credible?",
+              "options": [
+                { "text": "It gives the colour change, the cause, the numbers, the mitigation and a specific ask.", "correct": true },
+                { "text": "Because it's short.", "correct": false },
+                { "text": "Because the status is amber rather than red." }
+              ],
+              "why": "Cor + causa + números + mitigação + pedido. Cada elemento antecipa uma pergunta que alguém faria."
+            },
+            {
+              "prompt": "What does \"forecast to complete\" tell the reader?",
+              "options": [
+                { "text": "When the team hopes to finish.", "correct": false },
+                { "text": "The current best estimate of the finish date, next to the original plan.", "correct": true },
+                { "text": "The contractual deadline." }
+              ],
+              "why": "Colocar a previsão ao lado do plano é o que torna o desvio visível sem precisar de explicação."
+            },
+            {
+              "prompt": "What makes the \"ask\" a good one?",
+              "options": [
+                { "text": "It names exactly what is needed, from whom, with a date and an escalation path.", "correct": true },
+                { "text": "It asks for more resources.", "correct": false },
+                { "text": "It is optional." }
+              ],
+              "why": "Pedido vago num status é pedido não atendido. Este tem alvo, prazo e consequência."
+            }
+          ],
+          "explanation": "Status · por que mudou · highlight · lowlight · mitigação · previsão · pedido. Sete linhas e ninguém precisa perguntar nada."
+        },
+        {
+          "type": "categorize",
+          "title": "Green, amber ou red?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada situação pelo farol correto.",
+          "categories": [
+            { "id": "green", "name": "Green · no prazo", "short": "Green" },
+            { "id": "amber", "name": "Amber · em risco", "short": "Amber" },
+            { "id": "red", "name": "Red · fora do prazo", "short": "Red" }
+          ],
+          "items": [
+            { "text": "Two days behind, with buffer to absorb it and no external dependency.", "cat": "green" },
+            { "text": "Nine days behind on the critical path, mitigation in place, date may still hold.", "cat": "amber" },
+            { "text": "The delivery date has moved and there is no plan that recovers it.", "cat": "red" },
+            { "text": "On plan, but a key dependency has no committed date yet.", "cat": "amber" },
+            { "text": "All milestones hit, no open risks above low.", "cat": "green" },
+            { "text": "Budget exhausted with 40% of scope remaining and no approved increase.", "cat": "red" }
+          ],
+          "explanation": "Amber é \"a data ainda pode se manter, mas não sem ação\". Red é \"a data mudou\". Green nunca é \"nada deu errado\" — é \"nada ameaça a data\"."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual reporte protege sua credibilidade?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que faz as pessoas confiarem mais em você na semana seguinte.",
+          "items": [
+            { "prompt": "Você desconfia de um atraso, mas ainda não tem certeza.", "a": "Still green — I'll confirm next week.", "b": "Moving to amber. The API is nine days late and I don't yet know if we can recover it. I'll have a firm view by Friday.", "correct": "b", "why": "Amber cedo com incerteza declarada é reportagem madura. Green até a certeza é como se perde a confiança de uma vez." },
+            { "prompt": "O status ficou vermelho.", "a": "Unfortunately the project is now red due to circumstances beyond our control.", "b": "Red. The date has moved from 5 to 26 September. Here's what caused it, and here are the two options for recovery.", "correct": "b", "why": "Nova data + causa + opções. \"Circumstances beyond our control\" é lido como fuga." },
+            { "prompt": "Uma semana correu bem.", "a": "Everything is fine.", "b": "Green. Pilot live at Macaé, eight of ten supervisors would keep it, no open items above low risk.", "correct": "b", "why": "Green também precisa de evidência — senão o green da semana que vem não vale nada." },
+            { "prompt": "Você precisa de algo do diretor.", "a": "Some support with IT would be appreciated.", "b": "Ask: a committed date from regional IT for the third feed, by the 12th.", "correct": "b", "why": "Pedido nomeado, com alvo e prazo, é o único tipo que sai do papel." }
+          ],
+          "explanation": "Amber cedo, red com data nova, green com evidência, pedido com alvo e prazo."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o status",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "Overall status: amber, ___ green last week. The change is driven by the vendor API, which landed nine days late. Integration testing sits on the ___ path. The ___ this week is the Macaé pilot going live with positive feedback. The ___ is that the third feed is still open with IT. Our ___ is a second developer on integration; we expect to recover four of the nine days. ___ to complete is 12 September against a plan of the 5th.",
+          "gaps": [
+            { "options": ["was", "from", "since"], "answer": "was", "why": "\"Amber (was green last week)\" é o formato padrão de mudança de farol." },
+            { "options": ["critical", "crucial", "main"], "answer": "critical", "why": "Critical path — termo técnico fixo." },
+            { "options": ["highlight", "high point", "best"], "answer": "highlight", "why": "Highlight/lowlight é o par consagrado nos status reports." },
+            { "options": ["lowlight", "low point", "problem"], "answer": "lowlight", "why": "Lowlight é o par de highlight — e soa muito melhor que \"problem\"." },
+            { "options": ["mitigation", "solution", "correction"], "answer": "mitigation", "why": "Mitigation é a ação que reduz o risco — não promete resolvê-lo." },
+            { "options": ["Forecast", "Prevision", "Estimative"], "answer": "Forecast", "why": "Forecast to complete. \"Prevision\" e \"estimative\" não existem em inglês corporativo." }
+          ],
+          "explanation": "Esse parágrafo é um molde de verdade: troque os nomes e ele serve para qualquer semana."
+        },
+        {
+          "type": "flowChoice",
+          "title": "O comitê quer saber por que virou amber",
+          "badge": "Conversa",
+          "situation": "Steering committee. Você moveu o projeto para amber esta semana e o sponsor não gostou de ver a cor mudar.",
+          "turns": [
+            {
+              "who": "Sponsor",
+              "them": "It was green three weeks running. What changed?",
+              "options": [
+                { "text": "The vendor API arrived nine days late, and testing is on the critical path. Nothing else changed.", "correct": true, "why": "Uma causa, nomeada, com o motivo de ela importar. E o escopo do problema é delimitado." },
+                { "text": "A few things have been building up for a while.", "why": "Sugere que você já sabia e não reportou — é isso que mata credibilidade, não a cor amber." },
+                { "text": "It's still basically fine, honestly.", "why": "Contradiz a sua própria cor. Ou é amber, ou é green." }
+              ]
+            },
+            {
+              "who": "Sponsor",
+              "them": "Do we still hit 5 September?",
+              "options": [
+                { "text": "Yes, definitely.", "why": "Você não sabe. Uma garantia que não se cumpre custa mais do que qualquer atraso." },
+                { "text": "Forecast to complete is the 12th. With the second developer we expect to recover four days — so realistically the 8th, and I'll know by Friday.", "correct": true, "why": "Previsão atual, efeito da mitigação, e uma data para saber com certeza." },
+                { "text": "It's too early to say.", "why": "Você tem uma previsão. Não dá-la faz o sponsor achar que você não está no controle." }
+              ]
+            },
+            {
+              "who": "Sponsor",
+              "them": "I don't like surprises at this committee.",
+              "options": [
+                { "text": "Neither do I — that's why this is amber today rather than red in three weeks.", "correct": true, "why": "Transforma a crítica em prova do seu método. É a melhor resposta possível." },
+                { "text": "Sorry, I should have flagged it sooner.", "why": "Você flagou na semana certa. Pedir desculpa por isso ensina que se deve esconder." },
+                { "text": "There was nothing I could do about the vendor.", "why": "Defesa. Ele não perguntou de culpa, perguntou de surpresa." }
+              ]
+            }
+          ],
+          "explanation": "Uma causa nomeada · previsão com efeito da mitigação · e amber cedo apresentado como método, não como falha."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The actual status of the project is amber.", "wrong": "actual", "fix": "current", "why": "Falso amigo: atual é <strong>current</strong>. \"Actual\" significa \"real, verdadeiro\"." },
+            { "sentence": "We will inform the news to the committee tomorrow.", "wrong": "inform", "fix": "report", "why": "\"Inform the news to\" não existe. Use report / share / tell." },
+            { "sentence": "The previsions show a delay of one week.", "wrong": "previsions", "fix": "forecasts", "why": "Previsão é forecast. \"Prevision\" não existe em inglês corporativo." },
+            { "sentence": "The project is delayed in one week.", "wrong": "in", "fix": "by", "why": "delayed BY one week. Sempre \"by\" para a medida." },
+            { "sentence": "I prefer to escalate early than to explain late.", "wrong": "than", "fix": "rather than", "why": "\"I prefer to X rather than Y\" — prefer sozinho pede \"rather than\"." }
+          ],
+          "explanation": "\"Actual\" é o falso amigo mais caro desta lista — muda completamente o sentido do seu status."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I move to amber the week I first suspect a problem, not the week I prove it.", "pt": "Movo para amber na semana em que desconfio, não na semana em que provo." },
+            { "en": "My green status always carries evidence.", "pt": "Meu status green sempre vem com evidência." },
+            { "en": "Every report has a named ask with a target and a date.", "pt": "Todo reporte tem um pedido nomeado, com alvo e prazo." },
+            { "en": "I say \"current status\", not \"actual status\".", "pt": "Digo \"current status\", não \"actual status\"." }
+          ],
+          "doneMessage": "status à prova de comitê. A próxima lição é sobre as métricas que vão no dashboard.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre reportar status em inglês",
+        "intro": "Quatro coisas que decidem se acreditam no seu farol.",
+        "cards": [
+          { "en": "\"No surprises\" is a stated principle in most global companies. Reporting amber early is rewarded; jumping green to red is not forgiven.", "pt": "\"No surprises\" é um princípio declarado na maioria das empresas globais. Reportar amber cedo é premiado; pular de green para red não se perdoa." },
+          { "en": "\"Highlight\" and \"lowlight\" are a fixed pair in status reports. \"Lowlight\" is not a real word outside this context — and it's perfect inside it.", "pt": "\"Highlight\" e \"lowlight\" são um par fixo em status reports. \"Lowlight\" quase não existe fora desse contexto — e é perfeita dentro dele." },
+          { "en": "\"Mitigation\" promises to reduce a risk, not to remove it. Using it precisely protects you when the risk still materialises.", "pt": "\"Mitigation\" promete reduzir um risco, não eliminá-lo. Usar a palavra com precisão te protege se o risco se concretizar." },
+          { "en": "\"Actual\" means \"real\", never \"current\". \"The actual status\" reads as \"the true status, as opposed to the one you were told\" — not what you meant.", "pt": "\"Actual\" significa \"real\", nunca \"atual\". \"The actual status\" soa como \"o status verdadeiro, ao contrário do que te disseram\" — não é o que você quis dizer." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now report bad news in a way that increases the trust people have in you.",
+        "pt": "Agora você reporta má notícia de um jeito que aumenta a confiança que têm em você."
+      }
+    },
+    {
+      "title": "Metrics and Dashboards",
+      "focus": "KPI, baseline, target e o que fazer quando a métrica não conta a história toda",
+      "character": "gb-male",
+      "objective": "Definir e discutir métricas em inglês: escolher o KPI certo, explicar a diferença entre baseline e target, e apontar quando um número está enganando.",
+      "intro": [
+        "Every dashboard argument in English comes down to four words: <strong>KPI</strong>, <strong>baseline</strong>, <strong>target</strong> and <strong>trend</strong>.",
+        "A KPI without a baseline is meaningless — \"downtime is 140 hours\" tells you nothing unless you know what it used to be. A target without a date is a wish.",
+        "And the most valuable thing you can say about a dashboard is often that a number is technically correct and still misleading. Doing that in English, politely, is a skill worth practising."
+      ],
+      "introPt": [
+        "Toda discussão de dashboard em inglês se resume a quatro palavras: <strong>KPI</strong>, <strong>baseline</strong>, <strong>target</strong> e <strong>trend</strong>.",
+        "Um KPI sem baseline não significa nada — \"downtime é 140 horas\" não diz nada se você não sabe quanto era antes. Uma meta sem data é um desejo.",
+        "E a coisa mais valiosa que você pode dizer sobre um dashboard é, muitas vezes, que um número está tecnicamente correto e ainda assim enganando. Fazer isso em inglês, com educação, é uma habilidade que vale praticar."
+      ],
+      "vocab": [
+        { "en": "KPI (key performance indicator)", "pt": "indicador-chave de desempenho", "example": "Our main KPI is unplanned downtime." },
+        { "en": "baseline", "pt": "linha de base — o ponto de partida", "example": "The baseline is 152 hours per quarter." },
+        { "en": "target", "pt": "meta", "example": "The target is 120 hours by December." },
+        { "en": "leading vs lagging indicator", "pt": "indicador antecedente vs. resultante", "example": "Near-misses are a leading indicator; incidents are lagging." },
+        { "en": "to move the needle", "pt": "mexer no ponteiro, causar efeito real", "example": "Training didn't move the needle on adoption." },
+        { "en": "vanity metric", "pt": "métrica que impressiona e não decide nada", "example": "Total logins is a vanity metric." },
+        { "en": "adoption rate", "pt": "taxa de adoção", "example": "Adoption is 62% of supervisors, weekly." },
+        { "en": "data quality", "pt": "qualidade do dado", "example": "The trend is real; the April data quality isn't." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "baseline", "right": "o valor de partida contra o qual se mede a melhora" },
+            { "left": "target", "right": "o valor que se quer atingir, com uma data" },
+            { "left": "leading indicator", "right": "algo que se mede antes, e que prevê o resultado" },
+            { "left": "lagging indicator", "right": "o resultado em si, medido depois que aconteceu" },
+            { "left": "vanity metric", "right": "número que sobe, impressiona e não muda nenhuma decisão" },
+            { "left": "adoption rate", "right": "a proporção de usuários que realmente usam, com frequência definida" }
+          ],
+          "explanation": "Leading indicator é o que você ainda pode influenciar. Lagging é o que já aconteceu. Bons dashboards têm os dois."
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Qual KPI serve para decidir?",
+          "prompt": "Você quer medir se o dashboard de alertas está funcionando. Qual métrica é a mais útil?",
+          "options": [
+            { "id": "a", "text": "Percentage of supervisors who open the dashboard at least three times a week, and median time from alert to acknowledgement.", "correct": true },
+            { "id": "b", "text": "Total number of logins since launch.", "correct": false, "whyWrong": "Sobe sempre, nunca desce, e não distingue uso real de curiosidade. É uma vanity metric clássica." },
+            { "id": "c", "text": "Number of alerts generated by the system.", "correct": false, "whyWrong": "Mede o sistema, não a utilidade. Mais alertas pode até ser pior — alert fatigue." }
+          ],
+          "explanation": "Bom KPI muda de direção quando as coisas pioram, e sugere uma ação quando muda. Total de logins não faz nem uma coisa nem outra."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual comentário sobre a métrica é útil?",
+          "badge": "A ou B",
+          "instruction": "Escolha o comentário que faz alguém agir de forma diferente.",
+          "items": [
+            { "prompt": "Adoção está em 62%.", "a": "Adoption is at 62%, which is quite good.", "b": "Adoption is 62% against a baseline of 0 and a target of 80% by December. The gap is concentrated in one plant.", "correct": "b", "why": "Baseline, target e onde está a lacuna. Só assim alguém sabe onde agir." },
+            { "prompt": "O número melhorou, mas por um motivo suspeito.", "a": "Downtime is down 12%, great news.", "b": "Downtime is down 12%, but two plants were on shutdown for part of the period. I'd treat this quarter as not comparable.", "correct": "b", "why": "Apontar que o número está tecnicamente certo e enganoso é o comentário mais valioso que existe." },
+            { "prompt": "Alguém propõe uma métrica fraca.", "a": "That's a bad metric.", "b": "What decision would we make differently if that number doubled? If none, it might not earn its place on the dashboard.", "correct": "b", "why": "Pergunta que testa a métrica sem atacar quem propôs. Funciona quase sempre." },
+            { "prompt": "A meta não tem data.", "a": "We want to reduce downtime significantly.", "b": "Target: 120 hours per quarter by December, from a baseline of 152.", "correct": "b", "why": "Meta sem número e sem data não é meta. É intenção." }
+          ],
+          "explanation": "Baseline, target com data, e a pergunta \"que decisão isso mudaria?\"."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre o uso real desses termos.",
+          "items": [
+            { "text": "A KPI without a baseline can still show whether things improved.", "answer": false, "why": "Sem ponto de partida não existe melhora — só um número solto." },
+            { "text": "Near-misses reported is a leading indicator for safety.", "answer": true, "why": "Antecede o incidente e ainda pode ser influenciado — é o exemplo clássico de leading indicator." },
+            { "text": "\"To move the needle\" means to change a metric in a meaningful way.", "answer": true, "why": "Vem do ponteiro de um mostrador analógico. Uso corporativo consagrado." },
+            { "text": "A metric that always goes up is a good metric.", "answer": false, "why": "Métrica que só sobe (total de logins, total de cadastros) quase nunca ajuda a decidir." },
+            { "text": "Saying a number is misleading is the same as saying it is wrong.", "answer": false, "why": "É a distinção mais importante desta lição: correto e enganoso ao mesmo tempo." }
+          ],
+          "explanation": "Baseline obrigatório, leading vs lagging, e a diferença entre errado e enganoso."
+        },
+        {
+          "type": "listenChoose",
+          "title": "Ouça e escolha",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque em cada áudio quantas vezes quiser e escolha a interpretação correta.",
+          "items": [
+            {
+              "audio": "Downtime is down twelve per cent, but two plants were on shutdown for part of the period, so I'd treat this quarter as not comparable.",
+              "options": [
+                { "text": "O número melhorou, mas o período não é comparável por causa das paradas.", "correct": true },
+                { "text": "O número piorou por causa das paradas." },
+                { "text": "As paradas causaram a melhora e isso é bom." }
+              ],
+              "why": "<strong>not comparable</strong> é a expressão que suspende a conclusão sem acusar ninguém de erro."
+            },
+            {
+              "audio": "Total logins is a vanity metric — it only goes up and it wouldn't change a single decision we make.",
+              "options": [
+                { "text": "Total de logins não serve porque só cresce e não muda decisão nenhuma.", "correct": true },
+                { "text": "Total de logins é a melhor métrica que temos." },
+                { "text": "Total de logins está caindo." }
+              ],
+              "why": "<strong>vanity metric</strong> = métrica que impressiona e não decide. O teste é sempre \"que decisão isso mudaria?\"."
+            },
+            {
+              "audio": "Near-misses are a leading indicator — if reporting drops, incidents usually follow a few months later.",
+              "options": [
+                { "text": "Quase-acidentes antecipam incidentes: se o reporte cai, incidentes tendem a subir depois.", "correct": true },
+                { "text": "Quase-acidentes só podem ser medidos depois do incidente." },
+                { "text": "Menos reportes de quase-acidente é sempre boa notícia." }
+              ],
+              "why": "É o exemplo clássico de leading indicator — e a armadilha de achar que menos reporte é melhora."
+            }
+          ],
+          "explanation": "Not comparable · vanity metric · leading indicator. Três expressões que mudam uma discussão de dashboard."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Dar a métrica com contexto.", "answer": "Adoption is sixty two per cent against a target of eighty", "extra": ["adoptions", "to"] },
+            { "hint": "Apontar que o número engana.", "answer": "The number is correct but I would treat the quarter as not comparable", "extra": ["comparing", "wrong"] },
+            { "hint": "Testar se a métrica vale.", "answer": "What decision would we make differently if that number doubled", "extra": ["deciding", "double"] }
+          ],
+          "explanation": "Contexto, ressalva e o teste da métrica. Três frases que elevam o nível de qualquer discussão de dados."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I never give a metric without a baseline or a target.", "pt": "Nunca dou uma métrica sem baseline ou target." },
+            { "en": "I can explain the difference between a leading and a lagging indicator.", "pt": "Sei explicar a diferença entre indicador antecedente e resultante." },
+            { "en": "I can say a number is correct but misleading, politely.", "pt": "Sei dizer que um número está correto e ainda assim engana, com educação." },
+            { "en": "I test a proposed metric with \"what decision would this change?\".", "pt": "Testo uma métrica proposta com \"que decisão isso mudaria?\"." }
+          ],
+          "doneMessage": "métricas dominadas. O próximo tópico é risco — identificar, avaliar e mitigar.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre métricas em inglês",
+        "intro": "Quatro expressões que fazem você soar como quem lê dashboards há anos.",
+        "cards": [
+          { "en": "\"Not comparable\" is the most diplomatic thing you can say about a flattering number. It suspends the conclusion without calling anyone wrong.", "pt": "\"Not comparable\" é a coisa mais diplomática que se pode dizer sobre um número lisonjeiro. Suspende a conclusão sem chamar ninguém de errado." },
+          { "en": "\"Does it move the needle?\" is how English speakers ask whether something had real effect. Learn it — it's everywhere.", "pt": "\"Does it move the needle?\" é como anglófonos perguntam se algo teve efeito real. Aprenda — está em todo lugar." },
+          { "en": "\"KPI\" is said letter by letter: K-P-I. It's already plural-friendly: \"three KPIs\", never \"three KPI's\" in formal writing.", "pt": "\"KPI\" se soletra: K-P-I. O plural é \"three KPIs\", nunca \"three KPI's\" em texto formal." },
+          { "en": "Adoption should always carry a frequency: \"62% weekly\" means something; \"62% adoption\" could mean anyone who ever logged in once.", "pt": "Adoção sempre precisa de frequência: \"62% weekly\" significa algo; \"62% de adoção\" pode ser qualquer um que entrou uma vez na vida." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now be the person in the room who notices what the dashboard isn't saying.",
+        "pt": "Agora você é a pessoa da sala que percebe o que o dashboard não está dizendo."
+      }
+    }
+  ]
+}

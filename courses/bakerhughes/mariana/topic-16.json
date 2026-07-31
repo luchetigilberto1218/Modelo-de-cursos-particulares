@@ -1,0 +1,348 @@
+{
+  "topic": "Client and Vendor Relations",
+  "lessons": [
+    {
+      "title": "Managing Scope Creep",
+      "focus": "Dizer sim ao cliente e não ao escopo — sem perder nenhum dos dois",
+      "character": "gb-male",
+      "objective": "Reconhecer scope creep em inglês e responder a um pedido fora de escopo de forma que preserve a relação e o prazo.",
+      "intro": [
+        "Scope creep almost never arrives as a request. It arrives as a small favour: <em>\"while you're in there, could you also…\"</em>",
+        "Refusing sounds rigid. Accepting silently is how projects die three weeks before delivery, with everyone surprised.",
+        "The English that solves this is one structure: <strong>yes, and here's what it costs</strong>. You never say no. You make the trade visible and let the client choose."
+      ],
+      "introPt": [
+        "Scope creep quase nunca chega como pedido. Chega como um favorzinho: <em>\"já que você está aí, dava para também…\"</em>",
+        "Recusar soa rígido. Aceitar em silêncio é como projetos morrem três semanas antes da entrega, com todo mundo surpreso.",
+        "O inglês que resolve isso é uma estrutura só: <strong>sim, e aqui está o custo</strong>. Você nunca diz não. Você torna a troca visível e deixa o cliente escolher."
+      ],
+      "vocab": [
+        { "en": "scope creep", "pt": "crescimento silencioso do escopo", "example": "That's scope creep — small, and it adds up." },
+        { "en": "change request", "pt": "pedido formal de mudança", "example": "Happy to do it — let's raise a change request." },
+        { "en": "trade-off", "pt": "troca: algo entra, algo sai", "example": "It's a trade-off with the export feature." },
+        { "en": "to absorb", "pt": "absorver sem cobrar", "example": "We can absorb this one, but not the next three." },
+        { "en": "baseline", "pt": "o escopo acordado originalmente", "example": "That's not in the baseline." },
+        { "en": "goodwill", "pt": "boa vontade acumulada", "example": "I'd rather spend goodwill on something bigger." },
+        { "en": "to log it", "pt": "registrar formalmente", "example": "Let's log it so it's visible to both sides." },
+        { "en": "de-scope", "pt": "tirar algo do escopo", "example": "If that comes in, something has to be de-scoped." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Como responder a um pedido fora de escopo",
+          "badge": "A ou B",
+          "instruction": "O cliente pediu algo pequeno que não estava combinado. Escolha a resposta.",
+          "items": [
+            { "prompt": "Primeira vez, pedido pequeno.", "a": "That's not in scope, I'm afraid.", "b": "Happy to do that one — it's about half a day, and I'll absorb it. I'll log it so we both see what's been added.", "correct": "b", "why": "Aceita, precifica e registra. É o registro que torna o quarto pedido conversável." },
+            { "prompt": "Quarto pedido pequeno no mesmo mês.", "a": "You keep asking for extra things.", "b": "Individually these are all small. Together they're about six days, which is why testing is now tight. Can we look at the list and decide what stays?", "correct": "b", "why": "Agrega os pequenos num número. É o único jeito de tornar scope creep visível sem acusar." },
+            { "prompt": "Pedido grande, com prazo fixo.", "a": "We can try to fit it in.", "b": "We can do it. It's three weeks, so either go-live moves to October or we de-scope the alerts. Which would you prefer?", "correct": "b", "why": "\"Try to fit in\" é como se entrega tarde e mal. Duas opções concretas devolvem a escolha ao cliente." },
+            { "prompt": "O cliente insiste que já estava combinado.", "a": "No, it definitely wasn't.", "b": "Let me check the baseline — I may have missed it. If it's there, we do it at no cost; if not, let's treat it as a change request.", "correct": "b", "why": "Abre a possibilidade de você estar errada e define a regra para os dois casos. Ninguém perde a cara." }
+          ],
+          "explanation": "Sim + custo + registro. Agregue os pequenos. Ofereça duas opções. E cheque o baseline sem brigar."
+        },
+        {
+          "type": "flowChoice",
+          "title": "A conversa do \"já que você está aí\"",
+          "badge": "Conversa",
+          "situation": "Reunião semanal com o cliente. Faltam quatro semanas para o go-live e ele pede uma funcionalidade nova, \"pequena\".",
+          "turns": [
+            {
+              "who": "Client",
+              "them": "While you're working on the dashboard, could you also add a monthly PDF report? Should be quick.",
+              "options": [
+                { "text": "Sure, we'll have a look.", "why": "\"We'll have a look\" é ouvido como sim. Em quatro semanas isso vira uma expectativa firme." },
+                { "text": "We can. Before I say how quick — what would you use the PDF for, and who receives it?", "correct": true, "why": "Não recusa e ainda descobre o requisito real. Talvez um e-mail semanal resolva por um décimo do custo." },
+                { "text": "That's out of scope for this phase.", "why": "Pode até ser verdade, mas fechar a porta antes de entender custa a relação." }
+              ]
+            },
+            {
+              "who": "Client",
+              "them": "My director wants something to take into the monthly regional meeting.",
+              "options": [
+                { "text": "Then a PDF it is.", "why": "Você aceitou a solução dele sem examinar se é a mais barata que resolve." },
+                { "text": "So what he needs is something presentable once a month. A PDF is about five days. A shareable link to a filtered view is about one. Would the link work for that meeting?", "correct": true, "why": "Duas opções com custo, e a mais barata resolvendo a necessidade real. É assim que se protege o prazo sem dizer não." },
+                { "text": "That's a nice-to-have, honestly.", "why": "Chamar de nice-to-have algo que o diretor dele pediu é a forma mais rápida de perder o cliente." }
+              ]
+            },
+            {
+              "who": "Client",
+              "them": "The link would probably do. But I'd still like the PDF eventually.",
+              "options": [
+                { "text": "We'll do the link now — one day, inside the current scope. The PDF goes on the list for phase two, and I'll log it today so it doesn't get lost.", "correct": true, "why": "Entrega agora o que resolve, dá lugar ao resto e registra. O cliente sai sentindo que ganhou as duas coisas." },
+                { "text": "We'll see about the PDF later.", "why": "\"Later\" sem registro significa que ele vai pedir de novo, e você vai parecer que esqueceu." },
+                { "text": "We can probably squeeze both in.", "why": "Você acabou de recriar o problema que tinha resolvido." }
+              ]
+            }
+          ],
+          "explanation": "Pergunte para que serve · ofereça a opção barata que resolve · registre a cara para a fase dois."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "scope creep", "right": "o crescimento silencioso do trabalho por acúmulo de pedidos pequenos" },
+            { "left": "change request", "right": "o pedido formal que torna a mudança e o seu custo visíveis" },
+            { "left": "baseline", "right": "o escopo acordado contra o qual toda mudança é comparada" },
+            { "left": "to absorb", "right": "assumir um custo pequeno sem cobrar, de propósito" },
+            { "left": "goodwill", "right": "o crédito de relação que você gasta ao pedir flexibilidade" },
+            { "left": "to de-scope", "right": "tirar algo do combinado para abrir espaço a outra coisa" }
+          ],
+          "explanation": "Absorver de vez em quando constrói goodwill. Absorver sempre destrói o prazo e ensina que o escopo é negociável de graça."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a resposta ao cliente",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "Hi Peter — happy to look at the PDF report. It's not in the ___ we agreed in March, so I'd suggest we treat it as a ___ request. Roughly five days of work. Individually the extras have been small, but together they're about six days now, which is why I want to make the ___ visible: if the PDF comes in, either go-live moves or we ___ the alerts. I've ___ it on the change list either way, so nothing gets lost.",
+          "gaps": [
+            { "options": ["baseline", "base", "original"], "answer": "baseline", "why": "Baseline é o escopo acordado de referência." },
+            { "options": ["change", "modification", "alteration"], "answer": "change", "why": "Change request é o termo consagrado." },
+            { "options": ["trade-off", "exchange", "swap"], "answer": "trade-off", "why": "Trade-off é a troca com custo dos dois lados." },
+            { "options": ["de-scope", "remove", "cut off"], "answer": "de-scope", "why": "to de-scope = tirar do escopo acordado." },
+            { "options": ["logged", "written", "noted down"], "answer": "logged", "why": "to log something = registrar formalmente numa lista visível." }
+          ],
+          "explanation": "Baseline · change request · trade-off · de-scope · log. Cinco palavras e o scope creep fica visível sem confronto."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que mantém o escopo sob controle?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "Four weeks from go-live, with a client who keeps asking for small additions.",
+          "options": [
+            { "text": "Logging every addition, even the ones you absorb.", "correct": true },
+            { "text": "Presenting the accumulated total, not each item separately.", "correct": true },
+            { "text": "Offering two concrete options rather than refusing.", "correct": true },
+            { "text": "Saying no to everything until after go-live.", "correct": false },
+            { "text": "Asking what the request is for, before pricing it.", "correct": true },
+            { "text": "Absorbing everything to keep the relationship warm.", "correct": false }
+          ],
+          "explanation": "Registrar tudo, apresentar o acumulado, oferecer opções e entender o propósito. Absorver tudo é a rota mais rápida para a entrega atrasada."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "This request is out of the scope we agreed.", "wrong": "the", "fix": "(nada)", "why": "\"Out of scope\" — sem artigo." },
+            { "sentence": "We can attend this request in phase two.", "wrong": "attend", "fix": "handle / address", "why": "Falso amigo: atender um pedido é handle, address ou take on. \"Attend\" é comparecer." },
+            { "sentence": "I will assume this cost internally.", "wrong": "assume", "fix": "absorb", "why": "Assumir um custo é <strong>absorb</strong>. \"Assume\" em inglês é presumir." },
+            { "sentence": "Let's make a change request for that.", "wrong": "make", "fix": "raise", "why": "Change request se <strong>raises</strong> (ou submits), não se \"faz\"." },
+            { "sentence": "The client asked for more three features.", "wrong": "more", "fix": "three more", "why": "A ordem em inglês é \"three more features\", nunca \"more three\"." }
+          ],
+          "explanation": "\"Attend\" e \"assume\" são dois falsos amigos que mudam completamente o sentido numa negociação com cliente."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I never say no — I say yes with the cost attached.", "pt": "Nunca digo não — digo sim com o custo junto." },
+            { "en": "I log every addition, including the ones I absorb.", "pt": "Registro toda adição, inclusive as que eu absorvo." },
+            { "en": "I present the accumulated total, not each small item.", "pt": "Apresento o total acumulado, não cada item pequeno." },
+            { "en": "I ask what a request is for before I price it.", "pt": "Pergunto para que serve o pedido antes de precificá-lo." },
+            { "en": "I say \"absorb\" and \"handle\", not \"assume\" and \"attend\".", "pt": "Digo \"absorb\" e \"handle\", não \"assume\" nem \"attend\"." }
+          ],
+          "doneMessage": "escopo sob controle. A próxima lição é sobre a outra ponta: gerenciar fornecedores.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre escopo em inglês",
+        "intro": "Quatro movimentos que preservam prazo e relação ao mesmo tempo.",
+        "cards": [
+          { "en": "\"Yes, and here's what it costs\" beats \"no\" every time. The client hears cooperation and still gets the information they need to choose.", "pt": "\"Yes, and here's what it costs\" ganha de \"não\" sempre. O cliente ouve cooperação e ainda recebe a informação para escolher." },
+          { "en": "Log even the things you absorb. Without the log, your fourth conversation about creep has no evidence — and sounds like complaining.", "pt": "Registre até o que você absorve. Sem registro, a quarta conversa sobre creep não tem evidência — e soa como reclamação." },
+          { "en": "\"Absorb\" is the business verb for taking a cost without charging. \"Assume\" means to presume, and will confuse everyone.", "pt": "\"Absorb\" é o verbo de negócio para assumir um custo sem cobrar. \"Assume\" significa presumir, e vai confundir todo mundo." },
+          { "en": "\"Which would you prefer?\" ends more scope discussions than any argument. It moves the client from asking to deciding.", "pt": "\"Which would you prefer?\" encerra mais discussões de escopo do que qualquer argumento. Tira o cliente do lugar de quem pede e o põe no de quem decide." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now protect a delivery date without ever saying no to a client.",
+        "pt": "Agora você protege uma data de entrega sem nunca dizer não a um cliente."
+      }
+    },
+    {
+      "title": "Working with Vendors",
+      "focus": "Cobrar sem hostilizar, escalar com o fornecedor e proteger a sua entrega",
+      "character": "us-female",
+      "objective": "Cobrar um fornecedor em inglês, escalar quando necessário e proteger o seu cronograma de uma dependência que você não controla.",
+      "intro": [
+        "A vendor who is late is a special kind of problem: you carry the consequence and you have almost no authority.",
+        "The language that works is unemotional and specific. Dates, commitments, and consequences — not frustration. Frustration is the thing that lets a vendor account manager reframe you as difficult instead of as underserved.",
+        "And the sentence you should learn today: <em>\"I need a committed date, not an estimate.\"</em> Those two words — <strong>committed</strong> versus <strong>estimate</strong> — are the whole conversation."
+      ],
+      "introPt": [
+        "Um fornecedor atrasado é um tipo especial de problema: você carrega a consequência e não tem quase nenhuma autoridade.",
+        "A linguagem que funciona é sem emoção e específica. Datas, compromissos e consequências — não frustração. A frustração é o que permite ao gerente de contas te reenquadrar como difícil em vez de mal atendida.",
+        "E a frase para aprender hoje: <em>\"I need a committed date, not an estimate.\"</em> Essas duas palavras — <strong>committed</strong> versus <strong>estimate</strong> — são a conversa inteira."
+      ],
+      "vocab": [
+        { "en": "committed date", "pt": "data assumida como compromisso", "example": "I need a committed date, not an estimate." },
+        { "en": "to chase", "pt": "cobrar, ir atrás", "example": "I've been chasing this for three weeks." },
+        { "en": "account manager", "pt": "gerente de contas do fornecedor", "example": "I'll take it to their account manager." },
+        { "en": "to hold someone to something", "pt": "cobrar o cumprimento", "example": "I'm holding them to the 12th." },
+        { "en": "contractual obligation", "pt": "obrigação contratual", "example": "Delivery by August is a contractual obligation." },
+        { "en": "penalty clause", "pt": "cláusula de multa", "example": "There's a penalty clause we've never used." },
+        { "en": "single point of failure", "pt": "ponto único de falha", "example": "This vendor is a single point of failure for us." },
+        { "en": "to build in slack", "pt": "colocar folga no plano", "example": "I build slack into anything that depends on them." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Cobrando sem hostilizar",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que consegue a data em vez de criar um inimigo.",
+          "items": [
+            { "prompt": "Terceira semana sem resposta.", "a": "This is completely unacceptable, we've been waiting for weeks.", "b": "This is my third request in three weeks. I need a committed date for the remaining endpoints by Friday — an estimate isn't enough at this point.", "correct": "b", "why": "Contagem factual + o pedido exato + o prazo. Sem adjetivo, sem espaço para te chamar de difícil." },
+            { "prompt": "Eles dão uma data vaga.", "a": "Ok, we'll wait then.", "b": "\"End of August\" doesn't work for planning. Can you give me a specific date your team is committing to, and tell me what it depends on?", "correct": "b", "why": "Rejeita a vagueza e ainda pede a dependência — que é onde o problema real costuma estar." },
+            { "prompt": "Você precisa escalar.", "a": "I'm going to escalate this to your management.", "b": "If I don't have a date by Friday, I'll need to raise it with your account director. I'd rather not, and I wanted to tell you first.", "correct": "b", "why": "Aviso com prazo e a cortesia de contar antes. Preserva a pessoa e mantém a pressão." },
+            { "prompt": "Protegendo o seu cronograma.", "a": "We'll deal with it if they're late.", "b": "I've assumed their date slips by two weeks and built that into the plan. If they deliver on time, we're early — which I'll take.", "correct": "b", "why": "Planejar com a folga é o único controle real que você tem sobre uma dependência externa." }
+          ],
+          "explanation": "Contagem factual · committed date · aviso antes de escalar · folga embutida no plano."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o e-mail para o fornecedor",
+          "badge": "Leia e responda",
+          "heading": "Email · to vendor delivery lead",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Hi Sofia,\n\nThis is my third request since 14 July for delivery dates on the remaining four endpoints.",
+            "Where we are: two of the six endpoints were delivered on 8 July. The other four have no date. Our integration testing cannot begin without them, and testing sits on the critical path to a 5 September go-live agreed with three plants.",
+            "What I need: a committed date for the four endpoints by Friday 8 August. If the date is after 20 August, please say so — I can re-plan around a late date, but I can't plan around no date.",
+            "If I don't have a date by Friday, I'll raise it with Marcus as your account director on Monday. I'd rather resolve it at our level and wanted to flag that first.\n\nThanks,\nMariana"
+          ],
+          "questions": [
+            {
+              "prompt": "Why does the email say \"I can re-plan around a late date, but I can't plan around no date\"?",
+              "options": [
+                { "text": "It makes clear that honesty is more useful to her than a comfortable answer.", "correct": true },
+                { "text": "It threatens the vendor.", "correct": false },
+                { "text": "It accepts any delay." }
+              ],
+              "why": "Essa frase é o que faz um fornecedor dar a data ruim de verdade em vez de uma data otimista que vai falhar."
+            },
+            {
+              "prompt": "How is the escalation handled?",
+              "options": [
+                { "text": "Announced in advance, with a date, at the current level first.", "correct": true },
+                { "text": "Done immediately to the account director.", "correct": false },
+                { "text": "Threatened without a deadline." }
+              ],
+              "why": "Escalar avisando antes preserva a pessoa que você vai continuar precisando por dois anos."
+            },
+            {
+              "prompt": "What makes the opening line effective?",
+              "options": [
+                { "text": "It states the count and the date factually, without any adjective.", "correct": true },
+                { "text": "It expresses frustration clearly.", "correct": false },
+                { "text": "It reminds them of the contract." }
+              ],
+              "why": "\"Third request since 14 July\" é impossível de contestar. Adjetivo é contestável; contagem não."
+            }
+          ],
+          "explanation": "Contagem · onde estamos · o que preciso e até quando · a escalada anunciada. Quatro parágrafos que funcionam."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A palavra certa com fornecedor",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a formulação que funciona melhor.",
+          "items": [
+            {
+              "prompt": "Você quer uma data que valha alguma coisa.",
+              "options": [
+                { "text": "I need a committed date, not an estimate.", "correct": true },
+                { "text": "When do you think it'll be ready?" },
+                { "text": "Please send it as soon as possible." }
+              ],
+              "why": "\"As soon as possible\" é o convite mais claro do mundo para nunca. Committed date é o oposto."
+            },
+            {
+              "prompt": "Você está cobrando há semanas.",
+              "options": [
+                { "text": "I've been chasing this since 14 July.", "correct": true },
+                { "text": "I've been persecuting this since July." },
+                { "text": "I've been charging you since July." }
+              ],
+              "why": "<strong>to chase</strong> é o verbo neutro para cobrar. \"Charge\" é cobrar dinheiro; \"persecute\" é perseguir."
+            },
+            {
+              "prompt": "Vocês dependem só desse fornecedor.",
+              "options": [
+                { "text": "They're a single point of failure for us.", "correct": true },
+                { "text": "They're our only option." },
+                { "text": "We are dependent of them." }
+              ],
+              "why": "\"Single point of failure\" nomeia o risco em linguagem de arquitetura, o que faz o argumento pesar em qualquer sala."
+            },
+            {
+              "prompt": "Você quer manter a data prometida.",
+              "options": [
+                { "text": "I'm holding them to the 12th.", "correct": true },
+                { "text": "I'm keeping them in the 12th." },
+                { "text": "I'm maintaining them at the 12th." }
+              ],
+              "why": "<strong>to hold someone to a date</strong> é a colocação consagrada." }
+          ],
+          "explanation": "Committed date · chase · single point of failure · hold them to it. Quatro expressões e você conduz a relação."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre gestão de fornecedores.",
+          "items": [
+            { "text": "\"To chase\" someone is aggressive in business English.", "answer": false, "why": "É completamente neutro: \"I'm chasing the report\" é dito o dia inteiro em empresas anglófonas." },
+            { "text": "Telling a vendor you'd rather have a bad date than no date usually gets you a more honest answer.", "answer": true, "why": "Remove o incentivo de dar uma data otimista para te acalmar." },
+            { "text": "Announcing an escalation in advance weakens it.", "answer": false, "why": "Fortalece: mostra que você é previsível e preserva a pessoa que você ainda vai precisar." },
+            { "text": "Building slack into a plan for an unreliable vendor is dishonest.", "answer": false, "why": "É gestão de risco básica. O desonesto seria prometer uma data que depende de quem já falhou três vezes." },
+            { "text": "A penalty clause is useful mainly when you invoke it.", "answer": false, "why": "É útil principalmente como referência numa conversa. Invocá-la costuma custar mais relação do que recupera de dinheiro." }
+          ],
+          "explanation": "Chase é neutro · data ruim vale mais que data nenhuma · escalada anunciada · folga é gestão, não desonestidade."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Diga essas frases sem emoção na voz — é isso que as faz funcionar.",
+          "sentences": [
+            "This is my third request since the fourteenth of July.",
+            "I need a committed date, not an estimate.",
+            "I can re-plan around a late date, but I can't plan around no date.",
+            "If I don't have a date by Friday, I'll raise it with your account director on Monday.",
+            "I'd rather resolve it at our level, and I wanted to tell you first."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I state counts and dates instead of adjectives.", "pt": "Digo contagens e datas em vez de adjetivos." },
+            { "en": "I ask for a committed date, never for \"as soon as possible\".", "pt": "Peço uma data comprometida, nunca \"o quanto antes\"." },
+            { "en": "I announce an escalation before I make it.", "pt": "Anuncio uma escalada antes de fazê-la." },
+            { "en": "I build slack into anything that depends on an unreliable vendor.", "pt": "Coloco folga em tudo que depende de um fornecedor pouco confiável." }
+          ],
+          "doneMessage": "fornecedor sob controle. O próximo tópico é integração de dados e arquitetura de software.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre lidar com fornecedores em inglês",
+        "intro": "Quatro coisas que separam quem consegue a data de quem só se irrita.",
+        "cards": [
+          { "en": "\"Committed date\" versus \"estimate\" is a distinction vendors respect, because it's the one their own internal planning uses.", "pt": "\"Committed date\" versus \"estimate\" é uma distinção que fornecedores respeitam, porque é a que o planejamento interno deles usa." },
+          { "en": "\"To chase\" is completely neutral in business English — \"I'm chasing that report\" is said all day, with no aggression at all.", "pt": "\"To chase\" é totalmente neutro no inglês de negócios — \"I'm chasing that report\" se diz o dia inteiro, sem nenhuma agressividade." },
+          { "en": "Adjectives are contestable; counts are not. \"Third request since 14 July\" cannot be argued with. \"Unacceptable\" can.", "pt": "Adjetivos são contestáveis; contagens não. \"Third request since 14 July\" não se discute. \"Unacceptable\" se discute." },
+          { "en": "\"I wanted you to hear it from me first\" works with vendors exactly as it does internally — it keeps the person while you apply the pressure.", "pt": "\"I wanted you to hear it from me first\" funciona com fornecedor exatamente como internamente — mantém a pessoa enquanto você aplica a pressão." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now get a date out of a vendor without ever raising your voice.",
+        "pt": "Agora você arranca uma data de um fornecedor sem nunca elevar a voz."
+      }
+    }
+  ]
+}

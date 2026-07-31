@@ -1,0 +1,338 @@
+{
+  "topic": "Cloud Architecture and Deployment",
+  "lessons": [
+    {
+      "title": "Cloud Vocabulary That Matters",
+      "focus": "Serviços, regiões, escala e custo — o inglês de quem decide arquitetura na nuvem",
+      "character": "us-male",
+      "objective": "Discutir arquitetura em nuvem em inglês: escolher entre modelos de serviço, falar de disponibilidade e explicar o custo para quem paga.",
+      "intro": [
+        "Cloud English is full of words that sound interchangeable and aren't: <strong>availability</strong>, <strong>reliability</strong>, <strong>scalability</strong>, <strong>resilience</strong>.",
+        "They answer different questions. Availability: is it up? Reliability: does it behave correctly? Scalability: does it survive ten times the load? Resilience: does it recover when something fails?",
+        "Getting these right matters commercially, because they map directly onto what you promise a plant — and onto what the bill says at the end of the month."
+      ],
+      "introPt": [
+        "O inglês de nuvem está cheio de palavras que parecem intercambiáveis e não são: <strong>availability</strong>, <strong>reliability</strong>, <strong>scalability</strong>, <strong>resilience</strong>.",
+        "Elas respondem perguntas diferentes. Availability: está no ar? Reliability: se comporta corretamente? Scalability: aguenta dez vezes a carga? Resilience: se recupera quando algo falha?",
+        "Acertar isso importa comercialmente, porque essas palavras se traduzem direto no que você promete a uma planta — e no que a fatura diz no fim do mês."
+      ],
+      "vocab": [
+        { "en": "availability", "pt": "disponibilidade — está no ar", "example": "We commit to 99.9% availability." },
+        { "en": "resilience", "pt": "capacidade de se recuperar de falhas", "example": "Resilience means it survives a region outage." },
+        { "en": "to scale up / out", "pt": "aumentar potência / aumentar número de instâncias", "example": "We scale out during the morning peak." },
+        { "en": "region / availability zone", "pt": "região / zona de disponibilidade", "example": "We run in two availability zones in São Paulo." },
+        { "en": "latency", "pt": "tempo de resposta", "example": "Latency from the plant is under 80 ms." },
+        { "en": "provisioning", "pt": "criar e configurar recursos", "example": "Provisioning is automated — no manual steps." },
+        { "en": "infrastructure as code", "pt": "infraestrutura definida em arquivos versionados", "example": "Everything is infrastructure as code." },
+        { "en": "SLA (service level agreement)", "pt": "acordo de nível de serviço", "example": "Our SLA with the plants is 99.5% in working hours." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Associe o termo à pergunta que ele responde",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "availability", "right": "está no ar quando alguém tenta usar?" },
+            { "left": "reliability", "right": "quando está no ar, se comporta corretamente?" },
+            { "left": "scalability", "right": "aguenta dez vezes a carga sem redesenho?" },
+            { "left": "resilience", "right": "recupera sozinho quando um componente falha?" },
+            { "left": "latency", "right": "quanto tempo entre o pedido e a resposta?" },
+            { "left": "SLA", "right": "o que foi formalmente prometido ao cliente, por escrito" }
+          ],
+          "explanation": "Um sistema pode estar 100% disponível e completamente não confiável — no ar, respondendo, e com os números errados."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Explicando nuvem para quem paga a conta",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que um diretor entende e aprova.",
+          "items": [
+            { "prompt": "Justificando rodar em duas zonas.", "a": "We need multi-AZ for high availability.", "b": "If one data centre in São Paulo goes down, the dashboard keeps working. It costs about 30% more and it's the difference between a bad hour and a bad day.", "correct": "b", "why": "Traduz a arquitetura no que acontece na planta, com o custo do lado." },
+            { "prompt": "Explicando por que a conta subiu.", "a": "Cloud costs went up this month.", "b": "The bill went from 4k to 6k because we started ingesting the third plant's sensor data. It's per gigabyte, so it grows with plants, not with users.", "correct": "b", "why": "Explica o que dirige o custo. É isso que permite o financeiro prever o próximo mês." },
+            { "prompt": "Falando de escala.", "a": "The system is scalable.", "b": "Today it handles three plants. At ten, the query layer needs redesign — I'd rather flag that now than in September.", "correct": "b", "why": "\"Escalável\" sem número não significa nada. Dizer onde quebra é o que constrói confiança." },
+            { "prompt": "Prometendo disponibilidade.", "a": "It'll basically always be up.", "b": "Our SLA is 99.5% in working hours — that's about two hours of downtime a month, worst case. If you need better, we can talk about the cost.", "correct": "b", "why": "Traduz o percentual em horas e coloca o preço da promessa melhor na mesa." }
+          ],
+          "explanation": "Traduza arquitetura em consequência para a planta, o custo em o que dirige a conta, e SLA em horas."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia a nota de arquitetura",
+          "badge": "Leia e responda",
+          "heading": "Architecture summary · Dashboard platform",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "The platform runs in the São Paulo region, across two availability zones. If one zone fails, traffic moves to the other automatically; users may see a slow page for about thirty seconds.",
+            "Sensor data is ingested every fifteen minutes. Costs scale with the number of plants, not with the number of users, because the main driver is data volume rather than requests.",
+            "All infrastructure is defined as code. Provisioning a new environment takes about forty minutes and no manual steps — this is what made the fourth plant's staging environment cheap to add.",
+            "Our SLA with the plants is 99.5% availability during working hours (06:00–22:00 BRT), which allows roughly two hours of downtime per month. Outside working hours we make no commitment, which is why deployments happen at 22:00.",
+            "Known constraint: the query layer was designed for up to five plants. At ten, it needs redesign. That work is not scheduled and should be planned before the 2027 expansion."
+          ],
+          "questions": [
+            {
+              "prompt": "What drives the cloud cost of this platform?",
+              "options": [
+                { "text": "The number of plants, because data volume is the main driver.", "correct": true },
+                { "text": "The number of users.", "correct": false },
+                { "text": "The number of deployments." }
+              ],
+              "why": "Saber o que dirige o custo é o que permite prever a conta antes de aprovar uma expansão."
+            },
+            {
+              "prompt": "Why do deployments happen at 22:00?",
+              "options": [
+                { "text": "Because the SLA only covers 06:00–22:00, so there is no commitment outside those hours.", "correct": true },
+                { "text": "Because the team works late.", "correct": false },
+                { "text": "Because the cloud is cheaper at night." }
+              ],
+              "why": "A janela de deploy é uma consequência direta do SLA. Isso é bom desenho, não conveniência."
+            },
+            {
+              "prompt": "What is the honest limitation stated here?",
+              "options": [
+                { "text": "The query layer was designed for five plants and needs redesign at ten.", "correct": true },
+                { "text": "The system only runs in one region.", "correct": false },
+                { "text": "Provisioning takes forty minutes." }
+              ],
+              "why": "Declarar o limite de escala com o número exato é o que evita a surpresa em 2027."
+            }
+          ],
+          "explanation": "Região e zonas · o que dirige o custo · infra como código · SLA com horário · limite de escala declarado."
+        },
+        {
+          "type": "categorize",
+          "title": "Que qualidade está em jogo?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada situação.",
+          "categories": [
+            { "id": "avail", "name": "Availability", "short": "Availability" },
+            { "id": "scale", "name": "Scalability", "short": "Scalability" },
+            { "id": "resil", "name": "Resilience", "short": "Resilience" }
+          ],
+          "items": [
+            { "text": "The site was unreachable for forty minutes.", "cat": "avail" },
+            { "text": "At ten plants the query layer will need redesign.", "cat": "scale" },
+            { "text": "One zone failed and traffic moved automatically to the other.", "cat": "resil" },
+            { "text": "The dashboard answers in 200 ms with 20 users and 9 s with 500.", "cat": "scale" },
+            { "text": "The service restarted itself after the crash without anyone being paged.", "cat": "resil" },
+            { "text": "We were up 99.6% of working hours last month.", "cat": "avail" }
+          ],
+          "explanation": "Resiliência é o que acontece DEPOIS da falha. Disponibilidade é o resultado que o usuário sente."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A colocação certa em nuvem",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a forma que um arquiteto anglófono usaria.",
+          "items": [
+            { "prompt": "We run ___ two availability zones.", "options": [{ "text": "across", "correct": true }, { "text": "in between" }, { "text": "over" }], "why": "\"Across two zones\" — a preposição padrão para distribuição." },
+            { "prompt": "The bill scales ___ data volume.", "options": [{ "text": "with", "correct": true }, { "text": "by" }, { "text": "to" }], "why": "\"To scale with X\" = crescer junto com X." },
+            { "prompt": "We need to scale ___ during the morning peak.", "options": [{ "text": "out", "correct": true }, { "text": "up more" }, { "text": "wide" }], "why": "Scale out = mais instâncias. Scale up = instância maior. As duas existem e significam coisas diferentes." },
+            { "prompt": "Provisioning takes forty minutes and ___ manual steps.", "options": [{ "text": "no", "correct": true }, { "text": "any" }, { "text": "none" }], "why": "\"No manual steps\" — adjetivo antes do substantivo." },
+            { "prompt": "Our SLA ___ the plants is 99.5%.", "options": [{ "text": "with", "correct": true }, { "text": "to" }, { "text": "for" }], "why": "SLA WITH someone — é um acordo entre duas partes." }
+          ],
+          "explanation": "Across zones · scale with volume · scale out vs up · SLA with someone. Quatro colocações que aparecem toda semana."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The system stayed unavailable during forty minutes.", "wrong": "during", "fix": "for", "why": "Duração leva <strong>for</strong>. \"During\" pede um evento nomeado." },
+            { "sentence": "We need to migrate all the infrastructure for the cloud.", "wrong": "for", "fix": "to", "why": "to migrate TO the cloud." },
+            { "sentence": "The costs scale with the quantity of data.", "wrong": "quantity", "fix": "volume", "why": "Em nuvem se fala em <strong>data volume</strong>, não \"quantity of data\"." },
+            { "sentence": "Our SLA garantees 99.5% of availability.", "wrong": "garantees", "fix": "guarantees", "why": "Ortografia: guarantee, com u." },
+            { "sentence": "This solution is more scalable than the actual one.", "wrong": "actual", "fix": "current", "why": "Falso amigo de novo: atual é <strong>current</strong>." }
+          ],
+          "explanation": "\"Actual\" volta aqui porque é, de longe, o falso amigo mais caro do inglês corporativo brasileiro."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can distinguish availability, reliability, scalability and resilience.", "pt": "Sei distinguir availability, reliability, scalability e resilience." },
+            { "en": "I translate an SLA percentage into hours of downtime.", "pt": "Traduzo um percentual de SLA em horas de indisponibilidade." },
+            { "en": "I can say what drives our cloud cost.", "pt": "Sei dizer o que dirige o nosso custo de nuvem." },
+            { "en": "I state the scale limit with a number, before someone finds it.", "pt": "Declaro o limite de escala com número, antes que alguém o descubra." }
+          ],
+          "doneMessage": "vocabulário de nuvem no lugar. A próxima lição é sobre o ato de publicar: pipelines e janelas de deploy.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre falar de nuvem em inglês",
+        "intro": "Quatro precisões que evitam promessas caras.",
+        "cards": [
+          { "en": "99.9% sounds almost the same as 99.5%, but it's 43 minutes of downtime a month versus 3.6 hours. Always convert the percentage into hours out loud.", "pt": "99,9% parece quase igual a 99,5%, mas são 43 minutos de queda por mês contra 3,6 horas. Sempre converta o percentual em horas em voz alta." },
+          { "en": "\"Scale up\" and \"scale out\" are different: up is a bigger machine, out is more machines. Mixing them confuses any technical audience.", "pt": "\"Scale up\" e \"scale out\" são diferentes: up é máquina maior, out é mais máquinas. Trocar confunde qualquer plateia técnica." },
+          { "en": "An SLA is a commercial promise, not a technical measure. Never state one in a meeting without knowing what it costs to keep.", "pt": "SLA é promessa comercial, não medida técnica. Nunca enuncie uma numa reunião sem saber quanto custa cumpri-la." },
+          { "en": "Saying \"it's scalable\" without a number is meaningless. \"It handles five plants; at ten it needs redesign\" is what earns trust.", "pt": "Dizer \"é escalável\" sem número não significa nada. \"Aguenta cinco plantas; em dez precisa de redesenho\" é o que constrói confiança." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now discuss cloud architecture with engineers and with the person paying the bill.",
+        "pt": "Agora você discute arquitetura em nuvem com engenheiros e com quem paga a conta."
+      }
+    },
+    {
+      "title": "Pipelines, Deployments and Rollbacks",
+      "focus": "CI/CD, janelas de deploy e o que dizer quando é preciso voltar atrás",
+      "character": "gb-female",
+      "objective": "Explicar um pipeline de entrega em inglês, negociar uma janela de deploy e comunicar um rollback sem transformá-lo em crise.",
+      "intro": [
+        "Deployment used to be an event. In a healthy team it should be boring — which takes a surprising amount of engineering to achieve.",
+        "The English here is practical: <strong>pipeline</strong>, <strong>build</strong>, <strong>staging</strong>, <strong>deployment window</strong>, <strong>rollback</strong>, <strong>hotfix</strong>.",
+        "And one more piece of language that matters more than any of them: how you announce a rollback. Done well, it reads as a system working exactly as designed. Done badly, it reads as a failure."
+      ],
+      "introPt": [
+        "Publicar já foi um evento. Num time saudável deveria ser entediante — o que exige uma quantidade surpreendente de engenharia.",
+        "O inglês aqui é prático: <strong>pipeline</strong>, <strong>build</strong>, <strong>staging</strong>, <strong>deployment window</strong>, <strong>rollback</strong>, <strong>hotfix</strong>.",
+        "E mais um pedaço de linguagem que importa mais que todos: como você anuncia um rollback. Bem feito, soa como um sistema funcionando exatamente como projetado. Mal feito, soa como fracasso."
+      ],
+      "vocab": [
+        { "en": "pipeline (CI/CD)", "pt": "esteira automática de build e deploy", "example": "The pipeline runs tests before anything reaches staging." },
+        { "en": "build", "pt": "a versão compilada e empacotada", "example": "The build failed on the linting step." },
+        { "en": "deployment window", "pt": "janela acordada para publicar", "example": "Our window is Tuesdays, 22:00 to 23:00." },
+        { "en": "to promote", "pt": "levar a mesma versão ao próximo ambiente", "example": "We promote the exact build from staging to production." },
+        { "en": "canary / gradual rollout", "pt": "liberar para poucos antes de todos", "example": "We start with Macaé as a canary." },
+        { "en": "hotfix", "pt": "correção urgente fora do ciclo", "example": "We shipped a hotfix at 08:20." },
+        { "en": "to roll back", "pt": "voltar à versão anterior", "example": "We rolled back within twenty minutes." },
+        { "en": "smoke test", "pt": "teste rápido após publicar", "example": "Smoke tests run automatically after every deployment." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte o pipeline na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas etapas na ordem em que o código atravessa a esteira.",
+          "items": [
+            "A developer merges the change into the main branch.",
+            "The pipeline builds the application and runs the automated tests.",
+            "The build is deployed to staging, where the smoke tests run.",
+            "Inside the deployment window, the exact same build is promoted to production.",
+            "Post-deployment smoke tests run, and Macaé gets it first as a canary."
+          ],
+          "explanation": "Repare em \"the exact same build\": promover o mesmo artefato, não reconstruir, é o que garante que você testou o que publicou."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Anunciando um rollback",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que faz o rollback soar como controle, não como crise.",
+          "items": [
+            { "prompt": "Comunicando aos usuários.", "a": "Sorry, the new version had a serious problem and we had to remove it urgently.", "b": "We rolled back to the previous version at 22:40 after the smoke tests flagged an issue. No data was affected and the dashboard is fully working.", "correct": "b", "why": "Horário, gatilho, impacto e estado atual. \"Urgentemente\" e \"sério\" só criam alarme." },
+            { "prompt": "Falando com o seu diretor.", "a": "The deployment failed.", "b": "The deployment was rolled back as designed. That's the safety net doing its job — twenty minutes, no user impact.", "correct": "b", "why": "\"As designed\" é a expressão que reposiciona o rollback como funcionamento, não falha." },
+            { "prompt": "Pedindo um hotfix fora da janela.", "a": "We need to deploy something right now.", "b": "I'd like to hotfix outside the window. The total is showing zero for three plants — it's wrong data on screen, which I'd treat as higher risk than an off-window deployment.", "correct": "b", "why": "Justifica o desvio do processo comparando os dois riscos. É assim que se pede exceção." },
+            { "prompt": "Negociando a janela de deploy.", "a": "Can we deploy whenever we're ready?", "b": "Tuesdays at 22:00 works because it's outside the SLA hours and before the Wednesday shift meeting. If we need a different day, I'll flag it a week ahead.", "correct": "b", "why": "Explica o porquê da janela e já oferece o protocolo para exceção." }
+          ],
+          "explanation": "Rollback \"as designed\" · hotfix justificado por comparação de risco · janela com razão explícita."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a nota de deploy",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "Deployment note. Version 2.5 was ___ from staging to production at 22:05, inside our usual ___ . The ___ tests flagged a problem with the plant filter at 22:31, and we ___ back to 2.4 at 22:40. No data was affected. We'll investigate tomorrow and ship a ___ once the cause is confirmed. Macaé will get 2.5 first as a ___ before we roll it out to the other plants.",
+          "gaps": [
+            { "options": ["promoted", "copied", "moved up"], "answer": "promoted", "why": "to promote a build = levar o mesmo artefato ao próximo ambiente." },
+            { "options": ["window", "period", "schedule"], "answer": "window", "why": "Deployment window é a expressão fixa." },
+            { "options": ["smoke", "quick", "surface"], "answer": "smoke", "why": "Smoke tests: verificação rápida logo após publicar." },
+            { "options": ["rolled", "went", "came"], "answer": "rolled", "why": "to roll back — o phrasal verb consagrado." },
+            { "options": ["hotfix", "quickfix", "urgent patch"], "answer": "hotfix", "why": "Hotfix é o termo padrão para correção fora do ciclo." },
+            { "options": ["canary", "test bird", "pilot user"], "answer": "canary", "why": "Canary release: liberar para um grupo pequeno primeiro. Vem do canário na mina de carvão." }
+          ],
+          "explanation": "Promote · window · smoke tests · roll back · hotfix · canary. Seis palavras e a nota de deploy está escrita."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre práticas de entrega.",
+          "items": [
+            { "text": "Promoting a build means rebuilding it for the new environment.", "answer": false, "why": "É o contrário: promover é levar o MESMO artefato. Reconstruir invalida o teste." },
+            { "text": "A canary release exposes the new version to a small group first.", "answer": true, "why": "O nome vem do canário na mina: o primeiro grupo detecta o problema antes dos demais." },
+            { "text": "A rollback means the deployment process failed.", "answer": false, "why": "Significa que a rede de segurança funcionou. É o oposto de falha de processo." },
+            { "text": "Smoke tests are exhaustive tests of the whole system.", "answer": false, "why": "São rápidos e superficiais de propósito — só verificam que nada óbvio quebrou." },
+            { "text": "A hotfix skips the normal release cycle.", "answer": true, "why": "E por isso precisa de justificativa explícita comparando os riscos." }
+          ],
+          "explanation": "Promote o mesmo build · canary primeiro · rollback é a rede funcionando · smoke test é raso de propósito."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Pedindo um deploy fora da janela",
+          "badge": "Conversa",
+          "situation": "São 8h20 da manhã. O total do dashboard está zerado para três plantas. A janela de deploy é terça às 22h e hoje é quinta.",
+          "turns": [
+            {
+              "who": "Head of IT",
+              "them": "You know the window is Tuesday. What's so urgent?",
+              "options": [
+                { "text": "The totals are showing zero while the rows are correct. Supervisors are making shift decisions on that number right now.", "correct": true, "why": "O que está errado e por que importa AGORA. Decisão de turno em cima de número errado é argumento suficiente." },
+                { "text": "It's a critical bug, we need to fix it immediately.", "why": "\"Crítico\" é adjetivo. Ele já ouviu isso de todo mundo esta semana." },
+                { "text": "The users are complaining a lot.", "why": "Reclamação é sintoma. O risco é a decisão errada de turno." }
+              ]
+            },
+            {
+              "who": "Head of IT",
+              "them": "Deploying outside the window carries its own risk. You know that.",
+              "options": [
+                { "text": "It's a one-line change, it can't break anything.", "why": "Ninguém que já viu produção acredita nessa frase — e ela custa credibilidade." },
+                { "text": "Agreed. The fix is one query, it's already through the pipeline and tested in staging, and I'd release it to Macaé only as a canary. If it misbehaves, rollback is twenty minutes.", "correct": true, "why": "Reconhece o risco dele e o reduz: escopo pequeno, já testado, canário e rollback conhecido." },
+                { "text": "The risk of waiting is higher.", "why": "Afirmação sem mostrar como você reduziu o outro lado do risco." }
+              ]
+            },
+            {
+              "who": "Head of IT",
+              "them": "Fine. Macaé only, and tell me when the smoke tests come back.",
+              "options": [
+                { "text": "Will do. Deploying at 09:00, smoke tests at 09:10, and I'll message you either way.", "correct": true, "why": "Horários concretos e o compromisso de avisar mesmo se der certo. É o \"either way\" que constrói confiança." },
+                { "text": "Thanks, I'll let you know if there's a problem.", "why": "Só avisar se der errado deixa a pessoa esperando em silêncio. Avise sempre." },
+                { "text": "Great, doing it now.", "why": "Sem horário e sem retorno combinado, você acabou de criar a próxima interrupção dele." }
+              ]
+            }
+          ],
+          "explanation": "O risco de esperar em termos concretos · reduza o risco do outro lado · horários e retorno \"either way\"."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Essas frases costumam ser ditas sob pressão — treine-as calmas.",
+          "sentences": [
+            "We rolled back to the previous version at 22:40, as designed.",
+            "No data was affected and the dashboard is fully working.",
+            "I'd like to hotfix outside the window, and here's why.",
+            "We'll release it to Macaé only, as a canary.",
+            "Smoke tests at 09:10 — I'll message you either way."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can describe a CI/CD pipeline end to end in English.", "pt": "Sei descrever uma esteira de CI/CD do início ao fim em inglês." },
+            { "en": "I announce a rollback as the safety net working, with times and impact.", "pt": "Anuncio um rollback como a rede de segurança funcionando, com horários e impacto." },
+            { "en": "I justify an off-window deployment by comparing the two risks.", "pt": "Justifico um deploy fora da janela comparando os dois riscos." },
+            { "en": "I promise to report back \"either way\", not only if it goes wrong.", "pt": "Prometo dar retorno \"either way\", não só se der errado." }
+          ],
+          "doneMessage": "entrega dominada. O próximo tópico é relação com clientes e fornecedores.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre publicar software em inglês",
+        "intro": "Quatro expressões e uma etimologia que vale saber.",
+        "cards": [
+          { "en": "\"Canary release\" comes from canaries carried into coal mines to detect gas. The first small group detects the problem before everyone else.", "pt": "\"Canary release\" vem dos canários levados às minas de carvão para detectar gás. O primeiro grupo pequeno detecta o problema antes de todos." },
+          { "en": "\"As designed\" is the single most useful phrase in incident communication. A rollback \"as designed\" is a system working, not a failure.", "pt": "\"As designed\" é a expressão mais útil da comunicação de incidente. Um rollback \"as designed\" é sistema funcionando, não falha." },
+          { "en": "Deployments should be boring. Saying \"it was a boring deployment\" is genuine praise in English-speaking engineering teams.", "pt": "Deploys devem ser entediantes. Dizer \"it was a boring deployment\" é elogio de verdade em times de engenharia anglófonos." },
+          { "en": "\"I'll message you either way\" is a small promise with a big effect. Reporting success as well as failure is what stops people chasing you.", "pt": "\"I'll message you either way\" é uma promessa pequena de efeito grande. Avisar tanto o sucesso quanto a falha é o que faz as pessoas pararem de te cobrar." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now make a rollback sound like exactly what it is: the system working.",
+        "pt": "Agora você faz um rollback soar exatamente como o que ele é: o sistema funcionando."
+      }
+    }
+  ]
+}

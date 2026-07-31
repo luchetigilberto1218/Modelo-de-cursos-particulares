@@ -1,0 +1,369 @@
+{
+  "topic": "Process Automation & Workflow",
+  "lessons": [
+    {
+      "title": "Mapping a Process Before You Automate It",
+      "focus": "Desenhar o processo como ele é de verdade — passos, gargalos e retrabalho",
+      "character": "us-female",
+      "objective": "Mapear e descrever um processo em inglês: passos, quem faz o quê, onde trava e o que é retrabalho puro.",
+      "intro": [
+        "The first rule of automation is unglamorous: <strong>automating a bad process gives you a fast bad process</strong>.",
+        "So the work starts with mapping what actually happens — not what the procedure says happens. Those two are almost never the same, and the gap is where the real problem lives.",
+        "The English you need is the language of process: <strong>step</strong>, <strong>handoff</strong>, <strong>bottleneck</strong>, <strong>rework</strong>, <strong>cycle time</strong>, <strong>touchpoint</strong>. Six words that let you describe almost any workflow in an organisation."
+      ],
+      "introPt": [
+        "A primeira regra da automação não tem glamour: <strong>automatizar um processo ruim dá um processo ruim rápido</strong>.",
+        "Então o trabalho começa por mapear o que realmente acontece — não o que o procedimento diz que acontece. Os dois quase nunca são iguais, e é nessa diferença que mora o problema real.",
+        "O inglês de que você precisa é a linguagem de processo: <strong>step</strong>, <strong>handoff</strong>, <strong>bottleneck</strong>, <strong>rework</strong>, <strong>cycle time</strong>, <strong>touchpoint</strong>. Seis palavras que descrevem quase qualquer fluxo numa organização."
+      ],
+      "vocab": [
+        { "en": "step", "pt": "etapa do processo", "example": "There are eleven steps between request and approval." },
+        { "en": "handoff", "pt": "passagem de uma pessoa/área para outra", "example": "Every handoff adds a day of waiting." },
+        { "en": "bottleneck", "pt": "gargalo — onde tudo espera", "example": "The bottleneck is the single approver." },
+        { "en": "rework", "pt": "retrabalho — refazer o que já foi feito", "example": "Thirty per cent of requests come back for rework." },
+        { "en": "cycle time", "pt": "tempo do início ao fim", "example": "Cycle time is nine days, of which seven are waiting." },
+        { "en": "touchpoint", "pt": "cada momento em que alguém precisa intervir", "example": "Four touchpoints could be one." },
+        { "en": "as-is vs to-be", "pt": "como é hoje vs. como será", "example": "Let's map the as-is before we design the to-be." },
+        { "en": "manual workaround", "pt": "gambiarra manual que sustenta o processo", "example": "The whole thing runs on a manual workaround." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia o mapa do processo",
+          "badge": "Leia e responda",
+          "heading": "As-is process map · Spare parts request",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Eleven steps between a supervisor identifying a needed part and the purchase order being raised. Cycle time averages nine working days, of which about seven are waiting rather than working.",
+            "The bottleneck is a single approver: all requests above 10k go to the same regional manager, who reviews them on Fridays. A request submitted on a Monday waits four days before anyone looks at it.",
+            "Rework: roughly 30% of requests come back because the asset number is missing or wrong. The supervisor types it from memory; the correct number is on a sticker on the equipment and in the maintenance system.",
+            "Handoffs: supervisor → planner → approver → procurement → vendor. Each handoff is an email, and each email waits in someone's inbox.",
+            "Manual workaround: the planner keeps a personal spreadsheet of pending requests, because the system does not show what is waiting on whom. When the planner is on leave, nobody knows the status of anything."
+          ],
+          "questions": [
+            {
+              "prompt": "What would give the biggest reduction in cycle time?",
+              "options": [
+                { "text": "Removing the four-day wait at the single Friday approver.", "correct": true },
+                { "text": "Making the emails shorter.", "correct": false },
+                { "text": "Adding one more handoff for quality checking." }
+              ],
+              "why": "Sete dos nove dias são espera, e o gargalo concentra quatro deles. Otimizar o trabalho em vez da espera é o erro clássico."
+            },
+            {
+              "prompt": "What does the 30% rework tell you?",
+              "options": [
+                { "text": "The form asks a person to remember data the system already holds.", "correct": true },
+                { "text": "Supervisors are careless.", "correct": false },
+                { "text": "The approver is too strict." }
+              ],
+              "why": "Retrabalho quase nunca é falta de atenção. É um formulário pedindo algo que o sistema já sabe."
+            },
+            {
+              "prompt": "Why does the planner's spreadsheet matter so much?",
+              "options": [
+                { "text": "It shows the system doesn't expose status — and the knowledge lives in one person.", "correct": true },
+                { "text": "It shows the planner is well organised.", "correct": false },
+                { "text": "It's a data security issue." }
+              ],
+              "why": "Toda planilha pessoal é um sintoma. Ela aponta exatamente o que o sistema deixou de fazer."
+            }
+          ],
+          "explanation": "Espera versus trabalho · gargalo único · retrabalho por dado que o sistema já tem · planilha pessoal como sintoma."
+        },
+        {
+          "type": "categorize",
+          "title": "Trabalho ou espera?",
+          "badge": "Classifique",
+          "instruction": "Num processo de nove dias, classifique cada trecho.",
+          "categories": [
+            { "id": "work", "name": "Working time · alguém está fazendo", "short": "Trabalho" },
+            { "id": "wait", "name": "Waiting time · parado numa fila", "short": "Espera" }
+          ],
+          "items": [
+            { "text": "The supervisor fills in the request form (12 minutes)", "cat": "work" },
+            { "text": "The request sits in the planner's inbox until Tuesday", "cat": "wait" },
+            { "text": "The planner checks stock levels (20 minutes)", "cat": "work" },
+            { "text": "The request waits for the Friday approval session", "cat": "wait" },
+            { "text": "Procurement raises the purchase order (15 minutes)", "cat": "work" },
+            { "text": "The rejected request sits with the supervisor until they notice the email", "cat": "wait" }
+          ],
+          "explanation": "Menos de uma hora de trabalho real dentro de nove dias. É por isso que automatizar o trabalho quase nunca é onde está o ganho."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual proposta de automação faz sentido?",
+          "badge": "A ou B",
+          "instruction": "Escolha a que ataca o problema real.",
+          "items": [
+            { "prompt": "Reduzindo o tempo de ciclo.", "a": "Let's automate the form so supervisors fill it in faster.", "b": "The form takes twelve minutes; the waiting takes seven days. I'd start by raising the approval threshold and adding a second approver.", "correct": "b", "why": "Otimizar doze minutos dentro de nove dias é o erro mais comum em projetos de automação." },
+            { "prompt": "Atacando o retrabalho.", "a": "Let's add a validation message when the asset number is wrong.", "b": "Let's remove the field. The supervisor scans the sticker, and the system fills the asset number from the maintenance database.", "correct": "b", "why": "Melhor que validar um erro é tornar o erro impossível. Campo removido é retrabalho eliminado." },
+            { "prompt": "Sobre a planilha do planner.", "a": "We should ask the planner to stop using a personal spreadsheet.", "b": "That spreadsheet is the requirement. It's showing us exactly what the system fails to display: what is waiting on whom.", "correct": "b", "why": "Gambiarra manual não é indisciplina — é uma especificação escrita pelo usuário." },
+            { "prompt": "Escopo da primeira fase.", "a": "Let's automate the whole eleven-step process.", "b": "Let's do the two steps that hold seven of the nine days, measure again, and then decide what's next.", "correct": "b", "why": "Automatizar tudo de uma vez é como se automatiza também os problemas que ninguém mapeou." }
+          ],
+          "explanation": "Ataque a espera, não o trabalho. Elimine o campo em vez de validá-lo. E a gambiarra é o requisito."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "bottleneck", "right": "o ponto onde tudo se acumula e espera" },
+            { "left": "rework", "right": "refazer algo que já tinha sido feito, por erro ou falta de informação" },
+            { "left": "cycle time", "right": "o tempo total do início ao fim, incluindo as esperas" },
+            { "left": "handoff", "right": "cada vez que o trabalho muda de mãos" },
+            { "left": "as-is", "right": "o processo como ele realmente funciona hoje" },
+            { "left": "to-be", "right": "o processo como se pretende que funcione depois" }
+          ],
+          "explanation": "Cycle time inclui espera. Se você medir só o trabalho, o número fica ótimo e o cliente continua esperando nove dias."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Mapeando com quem faz o trabalho",
+          "badge": "Conversa",
+          "situation": "Você está sentada com o planner para mapear o processo de peças. Ele está na defensiva — acha que você veio procurar culpado.",
+          "turns": [
+            {
+              "who": "Planner",
+              "them": "Look, the process works. If people filled in the form properly we wouldn't have problems.",
+              "options": [
+                { "text": "I'm not here to look at people. I'm here to look at where the days go — nine days, and I suspect most of them are nobody actually working.", "correct": true, "why": "Move o foco de pessoas para tempo, e já sinaliza que a hipótese não é sobre culpa." },
+                { "text": "Well, 30% of requests come back, so something isn't working.", "why": "Começar com a estatística que ele lê como acusação garante uma hora de defesa." },
+                { "text": "Let's just go through the steps.", "why": "Ignorar a defensiva dele significa que ele vai te dar o processo oficial, não o real." }
+              ]
+            },
+            {
+              "who": "Planner",
+              "them": "Fine. Most of it is waiting for the Friday approval, honestly.",
+              "options": [
+                { "text": "Right, so that's the target.", "why": "Você fechou cedo demais. Ele estava começando a abrir." },
+                { "text": "That's four days for anything submitted on a Monday. What else waits, that isn't in the official flow?", "correct": true, "why": "Confirma com número e pede o que não está no fluxo oficial — que é onde estão as descobertas." },
+                { "text": "Why does approval only happen on Fridays?", "why": "Boa pergunta, mas cedo demais: você ainda está coletando, não questionando." }
+              ]
+            },
+            {
+              "who": "Planner",
+              "them": "Well… I keep a spreadsheet, because the system doesn't show what's waiting on whom. If I'm off, nobody knows anything.",
+              "options": [
+                { "text": "That's a risk we should remove.", "why": "Verdade, mas soa como se a planilha dele fosse o problema — e ele acabou de te dar a informação mais valiosa da reunião." },
+                { "text": "That spreadsheet is the best requirement document I've seen today. Can I take a photo of it? That's what the system should be showing.", "correct": true, "why": "Valoriza o que ele construiu e transforma a gambiarra em especificação. A partir daqui ele te conta tudo." },
+                { "text": "How long have you been doing that?", "why": "Pergunta de auditoria. Ele volta para a defensiva na hora." }
+              ]
+            }
+          ],
+          "explanation": "Foque no tempo, não nas pessoas · pergunte o que não está no fluxo oficial · trate a gambiarra como especificação."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The process takes nine days since the request until the purchase order.", "wrong": "since", "fix": "from", "why": "\"From X to Y\" para intervalo. \"Since\" é a partir de um ponto no passado até agora." },
+            { "sentence": "We need to map how the process actually works today.", "wrong": "actually", "fix": "really", "why": "Aqui \"actually\" funciona, mas o par natural com \"today\" é <strong>really</strong>. Cuidado: \"actually\" nunca significa \"atualmente\"." },
+            { "sentence": "There are too much steps in this workflow.", "wrong": "much", "fix": "many", "why": "Steps é contável: too many steps." },
+            { "sentence": "The planner realizes this control in a spreadsheet.", "wrong": "realizes", "fix": "does / keeps", "why": "Falso amigo de novo: \"realize\" é perceber, não realizar." },
+            { "sentence": "This step doesn't aggregate any value.", "wrong": "aggregate", "fix": "add", "why": "Calque de \"agregar valor\": em inglês é <strong>add value</strong>." }
+          ],
+          "explanation": "\"Aggregate value\" e \"realize\" são dois calques que aparecem em toda apresentação de processo traduzida do português."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I map the process as it really runs, not as the procedure says.", "pt": "Mapeio o processo como ele realmente roda, não como o procedimento diz." },
+            { "en": "I separate working time from waiting time before proposing anything.", "pt": "Separo tempo de trabalho de tempo de espera antes de propor qualquer coisa." },
+            { "en": "I treat a manual workaround as a requirement, not as bad behaviour.", "pt": "Trato uma gambiarra manual como requisito, não como mau comportamento." },
+            { "en": "I say \"add value\", not \"aggregate value\".", "pt": "Digo \"add value\", não \"aggregate value\"." }
+          ],
+          "doneMessage": "processo mapeado. A próxima lição é sobre automatizar e implantar sem quebrar a operação.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre mapear processos em inglês",
+        "intro": "Quatro coisas que separam um mapa útil de um slide bonito.",
+        "cards": [
+          { "en": "\"As-is\" and \"to-be\" are standard consulting English. Insisting on mapping the as-is first is what stops you automating a fantasy.", "pt": "\"As-is\" e \"to-be\" são inglês padrão de consultoria. Insistir em mapear o as-is primeiro é o que impede você de automatizar uma fantasia." },
+          { "en": "In most office processes, over 80% of cycle time is waiting. Optimising the working minutes is the most common expensive mistake.", "pt": "Na maioria dos processos de escritório, mais de 80% do tempo de ciclo é espera. Otimizar os minutos de trabalho é o erro caro mais comum." },
+          { "en": "Every personal spreadsheet is a specification. Someone built exactly what the system failed to give them — read it, don't ban it.", "pt": "Toda planilha pessoal é uma especificação. Alguém construiu exatamente o que o sistema deixou de dar — leia, não proíba." },
+          { "en": "\"Add value\" is the English phrase; \"aggregate value\" is a direct translation from Portuguese that native speakers will not parse.", "pt": "\"Add value\" é a expressão inglesa; \"aggregate value\" é tradução direta do português que um nativo não vai processar." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now find where the nine days actually go — which is the whole job.",
+        "pt": "Agora você descobre para onde os nove dias realmente vão — que é o trabalho inteiro."
+      }
+    },
+    {
+      "title": "Automating and Rolling Out",
+      "focus": "Implantar automação sem quebrar a operação nem perder as pessoas",
+      "character": "gb-male",
+      "objective": "Explicar e conduzir a implantação de uma automação em inglês — incluindo a conversa sobre o que acontece com o trabalho das pessoas.",
+      "intro": [
+        "Automation projects rarely fail technically. They fail at rollout, for two reasons: the exception nobody mapped, and the people who quietly keep doing it the old way.",
+        "The English for the first is about <strong>exceptions</strong> and <strong>fallbacks</strong>. The English for the second is harder and more important: it's how you talk to people whose work is being changed.",
+        "Pretending nothing changes for them is the fastest way to lose an automation project. Naming it honestly is the fastest way to save one."
+      ],
+      "introPt": [
+        "Projetos de automação raramente falham por tecnologia. Falham na implantação, por dois motivos: a exceção que ninguém mapeou e as pessoas que continuam fazendo do jeito antigo, em silêncio.",
+        "O inglês para o primeiro é o de <strong>exceções</strong> e <strong>fallbacks</strong>. O inglês para o segundo é mais difícil e mais importante: é como você fala com pessoas cujo trabalho está mudando.",
+        "Fingir que nada muda para elas é o jeito mais rápido de perder um projeto de automação. Nomear com honestidade é o jeito mais rápido de salvá-lo."
+      ],
+      "vocab": [
+        { "en": "to roll out", "pt": "implantar gradualmente", "example": "We roll out to one plant first." },
+        { "en": "exception handling", "pt": "tratamento das exceções", "example": "Exception handling is 70% of the work." },
+        { "en": "straight-through processing", "pt": "quando passa direto, sem intervenção", "example": "About 80% goes straight through." },
+        { "en": "to flag for review", "pt": "marcar para alguém olhar", "example": "Anything unusual is flagged for review." },
+        { "en": "parallel run", "pt": "rodar o novo e o velho ao mesmo tempo", "example": "We'll do a two-week parallel run." },
+        { "en": "adoption", "pt": "uso real pelas pessoas", "example": "Adoption is the risk, not the technology." },
+        { "en": "to free up capacity", "pt": "liberar tempo das pessoas", "example": "It frees up about a day a week per planner." },
+        { "en": "change management", "pt": "gestão da mudança com as pessoas", "example": "Change management starts before the build, not after." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Falando com quem tem o trabalho automatizado",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão honesta que ainda assim mantém as pessoas do seu lado.",
+          "items": [
+            { "prompt": "O planner pergunta se ele vai perder o emprego.", "a": "Don't worry, nothing will change for you.", "b": "Your job changes. The spreadsheet chasing goes — that's about a day a week. What stays, and grows, is the judgement part: which exceptions matter. I'd rather tell you that straight.", "correct": "b", "why": "\"Nada muda\" é mentira e ele sabe. Nomear o que sai e o que fica é o que preserva a confiança." },
+            { "prompt": "Apresentando o benefício à liderança.", "a": "It saves one FTE.", "b": "It frees up about a day a week per planner. Whether that becomes headcount or capacity for the September expansion is a decision for you, not for the project.", "correct": "b", "why": "Diz o efeito real e devolve a decisão política a quem cabe — sem prometer corte que você não controla." },
+            { "prompt": "Alguém continua fazendo do jeito antigo.", "a": "The new process is mandatory now.", "b": "You're still using the old form — is there something it does that the new one doesn't? I'd rather fix the tool than police the process.", "correct": "b", "why": "Comportamento persistente quase sempre indica uma lacuna real na ferramenta." },
+            { "prompt": "Definindo a fase de implantação.", "a": "We'll switch everyone over on the 1st.", "b": "Two-week parallel run at Macaé, then one plant at a time. The old process stays available until adoption is above 90%.", "correct": "b", "why": "Corte único é como automação vira crise operacional numa segunda-feira." }
+          ],
+          "explanation": "Honestidade sobre o que muda · devolva a decisão política · resistência é diagnóstico · implante em paralelo."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o plano de implantação",
+          "badge": "Leia e responda",
+          "heading": "Rollout plan · Automated spare parts request",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Scope of the automation: the asset number is filled automatically from the maintenance system; requests under 10k are approved automatically against budget; anything above 10k, or with an unusual part, is flagged for review.",
+            "Expected straight-through processing: about 80% of requests. The remaining 20% still go to a human — deliberately.",
+            "Exception handling: if the maintenance system is unavailable, the supervisor can type the asset number manually and the request is flagged. The process never blocks because a system is down.",
+            "Rollout: two-week parallel run at Macaé, with both processes available. Then one plant every two weeks. The old process stays available until adoption exceeds 90% at that plant.",
+            "People: this removes roughly one day a week of chasing per planner. That capacity is committed to the September expansion — not to a headcount reduction. This was stated to the planners before the build started, not after."
+          ],
+          "questions": [
+            {
+              "prompt": "Why is 20% deliberately left to humans?",
+              "options": [
+                { "text": "Because unusual and high-value cases need judgement the rules can't encode.", "correct": true },
+                { "text": "Because the automation isn't finished.", "correct": false },
+                { "text": "To keep the planners busy." }
+              ],
+              "why": "Automação boa não busca 100%. Busca o corte certo entre o previsível e o que precisa de julgamento."
+            },
+            {
+              "prompt": "What is the purpose of the parallel run?",
+              "options": [
+                { "text": "To find the exceptions nobody mapped, while the old process still works.", "correct": true },
+                { "text": "To train users twice.", "correct": false },
+                { "text": "To compare speed." }
+              ],
+              "why": "É a rede de segurança contra a exceção não mapeada — que sempre existe."
+            },
+            {
+              "prompt": "Why does the note say the capacity commitment was made before the build?",
+              "options": [
+                { "text": "Because saying it afterwards would be read as damage control, and nobody would believe it.", "correct": true },
+                { "text": "Because HR required it.", "correct": false },
+                { "text": "To speed up the project." }
+              ],
+              "why": "O momento em que você fala sobre o impacto nas pessoas determina se acreditam em você."
+            }
+          ],
+          "explanation": "Corte consciente entre automático e humano · exceção nunca bloqueia · parallel run · e a conversa sobre pessoas ANTES da construção."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que faz uma automação pegar?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "You're rolling out an automated approval flow to three plants.",
+          "options": [
+            { "text": "A parallel run where the old process still works.", "correct": true },
+            { "text": "A fallback for when a dependent system is unavailable.", "correct": true },
+            { "text": "Talking to the affected people before the build, not after.", "correct": true },
+            { "text": "Making the new process mandatory from day one.", "correct": false },
+            { "text": "Treating continued use of the old way as a diagnostic signal.", "correct": true },
+            { "text": "Aiming for 100% straight-through processing.", "correct": false }
+          ],
+          "explanation": "Paralelo, fallback, conversa antecipada e resistência lida como diagnóstico. Obrigatoriedade e 100% automático são as duas armadilhas."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o plano",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "We expect about 80% ___ -through processing. The remaining 20% is ___ for review, deliberately — unusual parts need judgement. If the maintenance system is down, the supervisor types the number manually; the process never blocks. We'll ___ out with a two-week ___ run at Macaé, keeping the old process available. The automation ___ up about a day a week per planner, and that capacity is committed to the September expansion. The ___ management conversation happened before the build, not after.",
+          "gaps": [
+            { "options": ["straight", "direct", "clean"], "answer": "straight", "why": "Straight-through processing — expressão fixa." },
+            { "options": ["flagged", "marked", "signalled"], "answer": "flagged", "why": "to flag for review é a colocação padrão." },
+            { "options": ["roll", "take", "put"], "answer": "roll", "why": "to roll out = implantar gradualmente." },
+            { "options": ["parallel", "double", "twin"], "answer": "parallel", "why": "Parallel run: rodar o novo e o velho ao mesmo tempo." },
+            { "options": ["frees", "releases", "liberates"], "answer": "frees", "why": "to free up capacity/time — \"liberate\" é para prisioneiros." },
+            { "options": ["change", "changing", "transition"], "answer": "change", "why": "Change management é o termo consagrado." }
+          ],
+          "explanation": "Straight-through · flag for review · roll out · parallel run · free up · change management. Seis termos e o plano se escreve sozinho."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre implantar automação.",
+          "items": [
+            { "text": "A good automation should aim for 100% straight-through processing.", "answer": false, "why": "As exceções que exigem julgamento devem ir para humanos de propósito. Forçar 100% é como se automatizam decisões erradas." },
+            { "text": "If people keep using the old process, the tool probably has a gap.", "answer": true, "why": "Resistência persistente quase sempre é diagnóstico, não teimosia." },
+            { "text": "\"Parallel run\" means running the process twice as fast.", "answer": false, "why": "Significa rodar o novo e o antigo ao mesmo tempo, comparando resultados." },
+            { "text": "Talking about headcount impact after go-live is safer.", "answer": false, "why": "É lido como controle de danos — e ninguém acredita depois." },
+            { "text": "Exception handling is usually a small part of an automation project.", "answer": false, "why": "Costuma ser a maior parte do esforço. O caminho feliz é a parte fácil." }
+          ],
+          "explanation": "Nem tudo deve ser automático · resistência é diagnóstico · paralelo é segurança · conversa sobre pessoas vem antes."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. A primeira e a última são conversas difíceis — treine até saírem calmas.",
+          "sentences": [
+            "Your job changes, and I'd rather tell you that straight.",
+            "It frees up about a day a week per planner.",
+            "About eighty per cent goes straight through; the rest is flagged for review, deliberately.",
+            "The process never blocks because a system is down.",
+            "I'd rather fix the tool than police the process."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I design a deliberate split between automated and human cases.", "pt": "Desenho um corte consciente entre casos automáticos e humanos." },
+            { "en": "My process never blocks because a dependent system is down.", "pt": "Meu processo nunca trava porque um sistema dependente caiu." },
+            { "en": "I run the old and new processes in parallel before switching.", "pt": "Rodo o processo antigo e o novo em paralelo antes de trocar." },
+            { "en": "I have the people conversation before the build, not after.", "pt": "Tenho a conversa sobre as pessoas antes da construção, não depois." },
+            { "en": "I read continued old-process use as a gap in my tool.", "pt": "Leio o uso persistente do processo antigo como uma lacuna da minha ferramenta." }
+          ],
+          "doneMessage": "automação implantada. Fecha aqui o bloco técnico — os próximos tópicos são do produto com que você trabalha.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre implantar automação",
+        "intro": "Quatro verdades que decidem se o projeto pega ou morre em silêncio.",
+        "cards": [
+          { "en": "\"I'd rather fix the tool than police the process\" is a sentence that changes how a whole plant treats you. It signals you're on their side.", "pt": "\"I'd rather fix the tool than police the process\" é uma frase que muda como uma planta inteira te trata. Sinaliza que você está do lado deles." },
+          { "en": "Exception handling is usually 70% of an automation project. The happy path is the quick part — always price the exceptions.", "pt": "O tratamento de exceções costuma ser 70% de um projeto de automação. O caminho feliz é a parte rápida — sempre precifique as exceções." },
+          { "en": "\"Frees up capacity\" and \"saves an FTE\" mean the same arithmetic and completely different things politically. Choose consciously.", "pt": "\"Frees up capacity\" e \"saves an FTE\" têm a mesma aritmética e sentidos politicamente opostos. Escolha conscientemente." },
+          { "en": "Saying \"nothing changes for you\" to someone whose work is being automated destroys your credibility for every future project.", "pt": "Dizer \"nada muda para você\" a alguém cujo trabalho está sendo automatizado destrói sua credibilidade em todos os projetos futuros." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now roll out an automation without breaking the operation or losing the people.",
+        "pt": "Agora você implanta uma automação sem quebrar a operação nem perder as pessoas."
+      }
+    }
+  ]
+}

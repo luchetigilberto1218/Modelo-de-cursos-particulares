@@ -1,0 +1,361 @@
+{
+  "topic": "DDD (Domain-driven design)",
+  "lessons": [
+    {
+      "title": "Ubiquitous Language",
+      "focus": "O vocabulário compartilhado entre negócio e software — e por que ele decide o projeto",
+      "character": "gb-female",
+      "objective": "Explicar e aplicar o conceito de ubiquitous language: fazer negócio e engenharia usarem exatamente as mesmas palavras, com exatamente o mesmo significado.",
+      "intro": [
+        "Domain-driven design starts with a claim that sounds like a language lesson, because it is one: the biggest source of bugs is not code, it's <strong>words</strong>.",
+        "In one company, \"asset\" means a physical pump to the plant, a cost centre entry to finance, and a database row to engineering. Nobody notices until the software is built on the wrong one.",
+        "<strong>Ubiquitous language</strong> is the agreement that one word means one thing — in conversation, in the ticket, and in the code. It sounds bureaucratic. It is the single highest-leverage thing you can do on a technical project."
+      ],
+      "introPt": [
+        "Domain-driven design começa com uma afirmação que parece aula de idioma, porque é: a maior fonte de bugs não é código, são <strong>palavras</strong>.",
+        "Numa mesma empresa, \"asset\" significa uma bomba física para a planta, um lançamento de centro de custo para o financeiro e uma linha de banco para a engenharia. Ninguém percebe até o software ser construído sobre o significado errado.",
+        "<strong>Ubiquitous language</strong> é o acordo de que uma palavra significa uma coisa — na conversa, no ticket e no código. Parece burocracia. É a coisa de maior alavancagem que se pode fazer num projeto técnico."
+      ],
+      "vocab": [
+        { "en": "domain", "pt": "o negócio que o software representa", "example": "The domain here is well intervention, not IT." },
+        { "en": "ubiquitous language", "pt": "linguagem única entre negócio e código", "example": "Let's fix the ubiquitous language before we model anything." },
+        { "en": "domain expert", "pt": "quem entende o negócio de verdade", "example": "The domain expert is a reliability engineer, not a manager." },
+        { "en": "entity", "pt": "coisa com identidade própria ao longo do tempo", "example": "A pump is an entity — it's the same pump after a repair." },
+        { "en": "value object", "pt": "coisa definida só pelos seus valores", "example": "A pressure reading is a value object." },
+        { "en": "to model", "pt": "representar o negócio em estruturas", "example": "We modelled the work order as an aggregate." },
+        { "en": "glossary", "pt": "glossário do projeto", "example": "The glossary lives next to the code." },
+        { "en": "to disambiguate", "pt": "desambiguar um termo", "example": "We need to disambiguate \"asset\"." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia o glossário do projeto",
+          "badge": "Leia e responda",
+          "heading": "Glossary · Well Intervention platform",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Asset: a physical piece of equipment with a serial number, tracked through its whole life. A pump that is repaired and reinstalled is the same asset.",
+            "Installation: the placement of an asset in a specific well, with a start date and an end date. The same asset can have many installations over its life.",
+            "Job: a piece of paid work agreed with a customer. A job may involve several assets and several installations.",
+            "Note: before this glossary, \"asset\" was used by finance to mean a capitalised item, and by the field team to mean whatever was in the truck that day. In this platform, \"asset\" means only the definition above. Where finance means the capitalised item, we say \"capital item\".",
+            "Rule: if a term appears in this glossary, it appears in the code with the same name. If we change the word here, we change it in the code."
+          ],
+          "questions": [
+            {
+              "prompt": "Is a repaired pump a new asset?",
+              "options": [
+                { "text": "No — it keeps its identity through repair. Same serial number, same asset.", "correct": true },
+                { "text": "Yes, a repair creates a new asset.", "correct": false },
+                { "text": "It depends on the job." }
+              ],
+              "why": "É a definição de uma entidade: identidade que sobrevive a mudanças de estado."
+            },
+            {
+              "prompt": "Why did they introduce the term \"capital item\"?",
+              "options": [
+                { "text": "So finance's meaning has its own word, and \"asset\" stops being ambiguous.", "correct": true },
+                { "text": "Because finance asked for it.", "correct": false },
+                { "text": "To satisfy accounting rules." }
+              ],
+              "why": "Desambiguar não é escolher um lado — é dar a cada significado a sua própria palavra."
+            },
+            {
+              "prompt": "What does the last rule commit the team to?",
+              "options": [
+                { "text": "Keeping the words in the code identical to the words in the business glossary.", "correct": true },
+                { "text": "Writing documentation for every change.", "correct": false },
+                { "text": "Getting finance's approval on naming." }
+              ],
+              "why": "É essa a regra que faz a ubiquitous language existir de verdade em vez de ser um documento morto."
+            }
+          ],
+          "explanation": "Uma palavra, um significado, do negócio ao código. E quando há dois significados legítimos, cada um ganha sua palavra."
+        },
+        {
+          "type": "categorize",
+          "title": "Entity ou value object?",
+          "badge": "Classifique",
+          "instruction": "Entidade tem identidade que persiste. Value object é definido só pelos seus valores. Classifique.",
+          "categories": [
+            { "id": "entity", "name": "Entity · tem identidade", "short": "Entity" },
+            { "id": "value", "name": "Value object · só valores", "short": "Value object" }
+          ],
+          "items": [
+            { "text": "A specific pump, serial number BH-40219", "cat": "entity" },
+            { "text": "A pressure reading of 340 bar", "cat": "value" },
+            { "text": "A customer's job, number J-2026-114", "cat": "entity" },
+            { "text": "A date range from 1 to 14 August", "cat": "value" },
+            { "text": "A supervisor's user account", "cat": "entity" },
+            { "text": "An amount of 45,000 USD", "cat": "value" }
+          ],
+          "explanation": "Teste simples: se você trocar dois deles com os mesmos valores e ninguém se importar, é value object. Se importar quem é quem, é entidade."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual conversa produz linguagem compartilhada?",
+          "badge": "A ou B",
+          "instruction": "Escolha a que evita o bug daqui a seis meses.",
+          "items": [
+            { "prompt": "O engenheiro de campo e o dev usam \"asset\" de forma diferente.", "a": "Let's just be careful with that word.", "b": "We have two meanings here. Let's give finance's meaning its own word — \"capital item\" — and keep \"asset\" for the physical equipment. Both go in the glossary today.", "correct": "b", "why": "Duas palavras para dois significados. \"Ser cuidadoso\" não sobrevive à terceira pessoa que entra no projeto." },
+            { "prompt": "O time quer começar a modelar.", "a": "Let's start with the database schema.", "b": "Before the schema: is a repaired pump the same pump? If yes, we have an entity, and identity has to survive repair.", "correct": "b", "why": "Uma pergunta do domínio decide a modelagem inteira. Começar pelo schema é decidir isso por acidente." },
+            { "prompt": "Um termo do negócio soa estranho no código.", "a": "We renamed it to something clearer for developers.", "b": "We keep the business word, even if it's odd. If engineers and the plant use different words, the translation errors come back as bugs.", "correct": "b", "why": "É literalmente o princípio central de DDD. Renomear \"para ficar mais claro\" é como a linguagem se fragmenta." },
+            { "prompt": "Quem é o domain expert.", "a": "The IT manager who knows the systems.", "b": "The reliability engineer who actually decides which pump to pull. He's the one whose distinctions matter.", "correct": "b", "why": "Domain expert é quem toma as decisões do negócio, não quem conhece os sistemas." }
+          ],
+          "explanation": "Duas palavras para dois significados · perguntas de domínio antes do schema · palavra do negócio no código · o expert é quem decide."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "domain", "right": "a área do negócio que o software representa" },
+            { "left": "ubiquitous language", "right": "o acordo de que uma palavra significa a mesma coisa em toda parte" },
+            { "left": "domain expert", "right": "a pessoa cujas distinções de negócio o software precisa respeitar" },
+            { "left": "entity", "right": "algo cuja identidade sobrevive a mudanças de estado" },
+            { "left": "value object", "right": "algo definido inteiramente pelos seus valores, sem identidade" },
+            { "left": "to disambiguate", "right": "dar palavras diferentes a significados diferentes" }
+          ],
+          "explanation": "Domain expert é o papel mais mal atribuído de qualquer projeto. Quase nunca é a pessoa mais sênior."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Descobrindo uma ambiguidade",
+          "badge": "Conversa",
+          "situation": "Numa sessão de modelagem, você percebe que \"job\" está sendo usada com dois sentidos por duas pessoas diferentes.",
+          "turns": [
+            {
+              "who": "Field engineer",
+              "them": "A job is what we do at the well on a given day. Some days there's no job.",
+              "options": [
+                { "text": "And Paulo, when you say \"job\", do you mean the same thing?", "correct": true, "why": "Testar a palavra com a segunda pessoa é como se descobre a ambiguidade antes de ela virar código." },
+                { "text": "Right, so a job is a day's work at the well.", "why": "Você acabou de fechar a definição com uma fonte só. É assim que o bug entra." },
+                { "text": "Let's write that down and move on.", "why": "Registrar uma definição não checada é pior que não registrar nada — vira autoridade." }
+              ]
+            },
+            {
+              "who": "Paulo (commercial)",
+              "them": "For me a job is the whole contracted piece of work. It can run three months.",
+              "options": [
+                { "text": "One of you will have to change your word.", "why": "Forçar uma área a abandonar sua própria palavra é como glossários morrem." },
+                { "text": "So we have two real concepts. Let's call yours \"job\" and the field's \"intervention\" — or the other way round. Which feels more natural to say out loud?", "correct": true, "why": "Duas palavras para dois conceitos, e a escolha feita por quem vai falar em voz alta todo dia." },
+                { "text": "We'll handle it in the data model.", "why": "Resolver ambiguidade no modelo sem resolver na fala garante que a confusão volta em cada reunião." }
+              ]
+            },
+            {
+              "who": "Field engineer",
+              "them": "\"Intervention\" is what we already say in the field, actually.",
+              "options": [
+                { "text": "Then that's settled: intervention for the day's work at the well, job for the contracted work. Both go in the glossary, and both go into the code with those names.", "correct": true, "why": "Usa a palavra que já existe no campo e fecha o compromisso de levá-la ao código." },
+                { "text": "Good, I'll remember that.", "why": "Memória não é glossário. A terceira pessoa que entrar no projeto não estava nessa sala." },
+                { "text": "We can revisit the naming later.", "why": "Nomes revisitados depois custam refatoração — é mais barato decidir agora." }
+              ]
+            }
+          ],
+          "explanation": "Teste a palavra com a segunda pessoa · dê palavra própria a cada conceito · use o termo que já existe no campo · registre e leve ao código."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "We need to align the vocabulary between the business and the developers.", "wrong": "vocabulary", "fix": "language", "why": "O termo consagrado é \"ubiquitous language\". \"Vocabulary\" sugere lista de palavras, não acordo de significado." },
+            { "sentence": "The domain expert is the person who knows the system better.", "wrong": "better", "fix": "best", "why": "Superlativo: knows the system best. \"Better\" pede comparação com algo." },
+            { "sentence": "A pump keeps the same identity even it is repaired.", "wrong": "even", "fix": "even if", "why": "\"Even if it is repaired\" — even sozinho não introduz oração condicional." },
+            { "sentence": "We modelled the work order like an aggregate.", "wrong": "like", "fix": "as", "why": "\"Modelled X as Y\" — \"like\" sugere semelhança, não papel." },
+            { "sentence": "These two terms have different meanings, we need to desambiguate them.", "wrong": "desambiguate", "fix": "disambiguate", "why": "Prefixo em inglês é dis-, não des-." }
+          ],
+          "explanation": "\"Desambiguate\" e \"knows better\" são dois calques que aparecem sempre em sessões de modelagem."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I test a term with a second person before writing it into the glossary.", "pt": "Testo um termo com uma segunda pessoa antes de escrevê-lo no glossário." },
+            { "en": "When two meanings are both legitimate, I give each its own word.", "pt": "Quando dois significados são legítimos, dou a cada um a sua palavra." },
+            { "en": "I can explain the difference between an entity and a value object.", "pt": "Sei explicar a diferença entre entidade e value object." },
+            { "en": "I keep the business word in the code, even when it sounds odd.", "pt": "Mantenho a palavra do negócio no código, mesmo quando soa estranha." }
+          ],
+          "doneMessage": "linguagem única no lugar. A próxima lição é sobre desenhar as fronteiras entre os pedaços do sistema.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre linguagem em projetos técnicos",
+        "intro": "Quatro coisas que fazem DDD funcionar ou virar burocracia.",
+        "cards": [
+          { "en": "\"Ubiquitous\" means \"present everywhere\" — the point is that the same word appears in the meeting, the ticket and the code. Not a dictionary, a habit.", "pt": "\"Ubiquitous\" significa \"presente em toda parte\" — a ideia é que a mesma palavra apareça na reunião, no ticket e no código. Não é dicionário, é hábito." },
+          { "en": "The best glossary term is the one people already say out loud in the field. Invented terms never survive contact with the plant.", "pt": "O melhor termo de glossário é o que as pessoas já dizem em voz alta no campo. Termo inventado não sobrevive ao contato com a planta." },
+          { "en": "Asking \"do you two mean the same thing by that word?\" in a modelling session is the highest-value question you can ask.", "pt": "Perguntar \"vocês dois querem dizer a mesma coisa com essa palavra?\" numa sessão de modelagem é a pergunta de maior valor que existe." },
+          { "en": "In English, \"business\" is uncountable in this sense: \"the business needs\", never \"the businesses need\" when you mean your own company's business side.", "pt": "Em inglês, \"business\" é incontável nesse sentido: \"the business needs\", nunca \"the businesses need\" quando você quer dizer a área de negócio da sua empresa." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now spot the word that would have caused a six-month bug — before anyone writes code.",
+        "pt": "Agora você identifica a palavra que causaria um bug de seis meses — antes de alguém escrever código."
+      }
+    },
+    {
+      "title": "Bounded Contexts and Boundaries",
+      "focus": "Dividir o sistema pelas costuras do negócio, não pelas tabelas",
+      "character": "us-male",
+      "objective": "Explicar em inglês por que um sistema é dividido de determinada forma — e defender uma fronteira quando alguém quer atravessá-la.",
+      "intro": [
+        "The second big idea of DDD is that no single model can serve a whole company. Trying is how you get the system nobody can change.",
+        "A <strong>bounded context</strong> is a part of the system where one set of definitions holds. Inside maintenance, \"asset\" means one thing. Inside finance, it means another. Both are correct — inside their boundary.",
+        "The English you need is about <strong>defending the seam</strong>: explaining why a boundary exists, what crosses it, and what happens when someone wants to reach through it."
+      ],
+      "introPt": [
+        "A segunda grande ideia do DDD é que nenhum modelo único serve a empresa inteira. Tentar é como se chega ao sistema que ninguém consegue mudar.",
+        "Um <strong>bounded context</strong> é uma parte do sistema onde vale um conjunto de definições. Dentro de manutenção, \"asset\" significa uma coisa. Dentro de finanças, outra. As duas estão certas — dentro da sua fronteira.",
+        "O inglês de que você precisa é o de <strong>defender a costura</strong>: explicar por que a fronteira existe, o que a atravessa e o que acontece quando alguém quer furar."
+      ],
+      "vocab": [
+        { "en": "bounded context", "pt": "fronteira onde um conjunto de definições vale", "example": "Maintenance and finance are separate bounded contexts." },
+        { "en": "boundary", "pt": "fronteira", "example": "That call crosses a boundary — it needs a contract." },
+        { "en": "coupling", "pt": "acoplamento — quanto uma parte depende da outra", "example": "Direct database access creates tight coupling." },
+        { "en": "contract", "pt": "acordo formal de troca entre partes", "example": "The contract between the two contexts is one API." },
+        { "en": "anti-corruption layer", "pt": "camada que traduz o mundo externo", "example": "We put an anti-corruption layer in front of the vendor's model." },
+        { "en": "monolith vs microservices", "pt": "sistema único vs. vários serviços", "example": "Splitting a monolith along the wrong seams is worse than keeping it." },
+        { "en": "to leak", "pt": "vazar conceitos para fora da fronteira", "example": "Their internal IDs are leaking into our model." },
+        { "en": "seam", "pt": "costura natural do negócio", "example": "The seam is where the business hands over, not where the tables split." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Defendendo uma fronteira",
+          "badge": "A ou B",
+          "instruction": "Escolha a explicação que faz a fronteira ser respeitada.",
+          "items": [
+            { "prompt": "Alguém quer ler direto do seu banco de dados.", "a": "That's against our architecture principles.", "b": "If you read our tables directly, we can't change them without breaking you. Give me the two fields you need and I'll expose them as an endpoint we both control.", "correct": "b", "why": "Explica a consequência concreta e já oferece a alternativa. Princípios sozinhos não convencem ninguém com prazo." },
+            { "prompt": "Explicando por que finanças e manutenção são separados.", "a": "They're different departments.", "b": "\"Asset\" means a serial-numbered pump to maintenance and a capitalised item to finance. One model can't hold both without one side lying.", "correct": "b", "why": "A fronteira existe por causa da linguagem, não do organograma. É esse o argumento." },
+            { "prompt": "O modelo do fornecedor está vazando para o seu.", "a": "Their data model is terrible.", "b": "Their concepts are leaking into ours — we're carrying their IDs around in our code. I'd put a translation layer at the boundary so their model stops shaping ours.", "correct": "b", "why": "Nomeia o problema (vazamento) e a solução (anti-corruption layer) sem depender de julgar o outro." },
+            { "prompt": "Alguém quer quebrar o monolito em microserviços.", "a": "Microservices would be much cleaner.", "b": "The question isn't monolith or microservices, it's where the seams are. If we split along the wrong seam, we get all the cost of distribution and none of the independence.", "correct": "b", "why": "Move a discussão de moda tecnológica para a pergunta que realmente importa." }
+          ],
+          "explanation": "Consequência concreta · a fronteira é linguística · nomeie o vazamento · a pergunta é a costura, não a arquitetura da moda."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia a nota de arquitetura",
+          "badge": "Leia e responda",
+          "heading": "Architecture note · Context boundaries",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "We have three bounded contexts: Maintenance, Commercial and Reporting.",
+            "In Maintenance, \"asset\" is a serial-numbered piece of equipment. In Commercial, the equivalent concept is a \"line item\" on a contract, and the same physical pump may appear as several line items across different jobs. Reporting consumes both and keeps its own read model.",
+            "The only communication between contexts is through published events and one query API per context. No context reads another's database. This is deliberate: it lets Maintenance change its internal model without a coordinated release across three teams.",
+            "The vendor's telemetry system sits outside all three. We put an anti-corruption layer in front of it, so their identifiers and their notion of \"device\" never enter our models. When they changed their schema in 2025, that layer was the only thing we had to update."
+          ],
+          "questions": [
+            {
+              "prompt": "Why can't Reporting read Maintenance's database?",
+              "options": [
+                { "text": "So Maintenance can change its internal model without coordinating a release with other teams.", "correct": true },
+                { "text": "For security reasons.", "correct": false },
+                { "text": "Because the databases are different technologies." }
+              ],
+              "why": "Autonomia de mudança é o benefício real de uma fronteira. Segurança é outro assunto."
+            },
+            {
+              "prompt": "What did the anti-corruption layer achieve in 2025?",
+              "options": [
+                { "text": "It contained the vendor's schema change to one place instead of three models.", "correct": true },
+                { "text": "It improved performance.", "correct": false },
+                { "text": "It prevented a security incident." }
+              ],
+              "why": "É exatamente para isso que a camada existe: absorver a mudança do mundo externo num só lugar."
+            },
+            {
+              "prompt": "Why do Maintenance and Commercial model the same pump differently?",
+              "options": [
+                { "text": "Because each context has a legitimately different notion of what matters about it.", "correct": true },
+                { "text": "Because of a modelling mistake.", "correct": false },
+                { "text": "Because they use different databases." }
+              ],
+              "why": "Dois modelos diferentes do mesmo objeto físico não é duplicação — é a ideia central de bounded context."
+            }
+          ],
+          "explanation": "Fronteiras dão autonomia de mudança. A camada anticorrupção protege você do modelo dos outros."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "bounded context", "right": "o espaço dentro do qual um conjunto de definições vale" },
+            { "left": "coupling", "right": "o quanto uma parte não pode mudar sem quebrar a outra" },
+            { "left": "contract", "right": "o acordo explícito sobre o que atravessa a fronteira" },
+            { "left": "anti-corruption layer", "right": "camada que traduz o modelo externo para o seu, protegendo o seu" },
+            { "left": "to leak", "right": "quando conceitos de fora entram e passam a moldar o seu modelo" },
+            { "left": "seam", "right": "o ponto onde o negócio realmente passa o trabalho de uma mão para outra" }
+          ],
+          "explanation": "Costura de negócio, não linha de tabela. É essa a diferença entre uma divisão que ajuda e uma que atrapalha."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre fronteiras e contextos.",
+          "items": [
+            { "text": "The same physical pump can be modelled differently in two contexts, and that's correct.", "answer": true, "why": "É o coração de bounded context: cada contexto guarda o que importa para ele." },
+            { "text": "Microservices automatically give you good boundaries.", "answer": false, "why": "Dividir na costura errada dá o custo da distribuição sem a independência. A costura é a decisão, não a tecnologia." },
+            { "text": "An anti-corruption layer protects you from the external model shaping yours.", "answer": true, "why": "E concentra num só lugar o impacto quando o externo muda." },
+            { "text": "Tight coupling means two parts can change independently.", "answer": false, "why": "É o oposto: acoplamento forte significa que mudar um quebra o outro." },
+            { "text": "One shared model across the whole company is the ideal goal.", "answer": false, "why": "É justamente o que DDD argumenta ser impossível — e a origem do sistema que ninguém consegue mudar." }
+          ],
+          "explanation": "Contextos diferentes, modelos diferentes. Fronteira serve para poder mudar sem pedir licença."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Explicar por que a fronteira existe.", "answer": "The boundary lets us change our model without a coordinated release", "extra": ["changing", "for"] },
+            { "hint": "Recusar acesso direto ao banco.", "answer": "If you read our tables directly we cannot change them safely", "extra": ["reading", "of"] },
+            { "hint": "Propor a camada de tradução.", "answer": "I would put a translation layer at the boundary", "extra": ["putting", "on"] }
+          ],
+          "explanation": "Autonomia, consequência e alternativa. Três frases e a fronteira se sustenta numa reunião."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Essas frases defendem uma decisão de arquitetura sob pressão.",
+          "sentences": [
+            "Maintenance and Commercial are separate bounded contexts.",
+            "If you read our tables directly, we can't change them without breaking you.",
+            "Their concepts are leaking into ours.",
+            "The question isn't monolith or microservices — it's where the seams are.",
+            "That layer was the only thing we had to update when the vendor changed their schema."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can explain why two contexts model the same object differently.", "pt": "Sei explicar por que dois contextos modelam o mesmo objeto de formas diferentes." },
+            { "en": "I defend a boundary with consequences, not with principles.", "pt": "Defendo uma fronteira com consequências, não com princípios." },
+            { "en": "I can explain what an anti-corruption layer buys us.", "pt": "Sei explicar o que uma camada anticorrupção nos compra." },
+            { "en": "I move the microservices debate to \"where are the seams?\".", "pt": "Levo o debate de microserviços para \"onde estão as costuras?\"." }
+          ],
+          "doneMessage": "fronteiras defendidas. O próximo tópico é cloud e deploy.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre fronteiras de sistema",
+        "intro": "Quatro frases que mudam o rumo de uma discussão de arquitetura.",
+        "cards": [
+          { "en": "\"Where are the seams?\" is the question that rescues any monolith-versus-microservices debate from becoming a fashion argument.", "pt": "\"Where are the seams?\" é a pergunta que salva qualquer debate monolito-versus-microserviços de virar discussão de moda." },
+          { "en": "\"Leaking\" is the standard verb for concepts crossing a boundary they shouldn't: \"their IDs are leaking into our model\".", "pt": "\"Leaking\" é o verbo padrão para conceitos atravessando uma fronteira indevida: \"their IDs are leaking into our model\"." },
+          { "en": "\"Anti-corruption layer\" sounds dramatic and is a completely standard DDD term. Nobody will think you're talking about ethics.", "pt": "\"Anti-corruption layer\" soa dramático e é termo padrão de DDD. Ninguém vai achar que você está falando de ética." },
+          { "en": "Defending architecture with \"it's our principle\" loses. Defending it with \"here's what breaks and here's the alternative\" wins.", "pt": "Defender arquitetura com \"é o nosso princípio\" perde. Defender com \"aqui está o que quebra e aqui está a alternativa\" ganha." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now defend a system boundary in English, to someone who has a deadline and wants to cross it.",
+        "pt": "Agora você defende uma fronteira de sistema em inglês, para alguém com prazo e vontade de atravessá-la."
+      }
+    }
+  ]
+}

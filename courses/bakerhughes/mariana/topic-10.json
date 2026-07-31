@@ -1,0 +1,335 @@
+{
+  "topic": "Risk Assessment and Mitigation",
+  "lessons": [
+    {
+      "title": "Naming and Sizing Risk",
+      "focus": "Escrever um risco de verdade: probabilidade, impacto e o gatilho",
+      "character": "gb-female",
+      "objective": "Enunciar um risco em inglês de forma que ele possa ser avaliado — com causa, probabilidade, impacto e o sinal que indica que ele está se concretizando.",
+      "intro": [
+        "Most risk registers are full of sentences that can't be acted on: <em>\"vendor delays\"</em>, <em>\"resource constraints\"</em>, <em>\"scope creep\"</em>. Those are categories, not risks.",
+        "A real risk in English has a shape: <strong>if</strong> [cause], <strong>then</strong> [consequence], with a probability and an impact you can argue about.",
+        "And the part almost everyone forgets: the <strong>trigger</strong> — the observable signal that tells you the risk is turning into an issue. Without a trigger, a risk register is a list of worries nobody reads."
+      ],
+      "introPt": [
+        "A maioria dos registros de risco está cheia de frases sobre as quais não se pode agir: <em>\"atrasos do fornecedor\"</em>, <em>\"restrição de recursos\"</em>, <em>\"scope creep\"</em>. Isso são categorias, não riscos.",
+        "Um risco de verdade em inglês tem forma: <strong>if</strong> [causa], <strong>then</strong> [consequência], com uma probabilidade e um impacto sobre os quais se pode discutir.",
+        "E a parte que quase todo mundo esquece: o <strong>gatilho</strong> — o sinal observável que avisa que o risco está virando problema. Sem gatilho, um registro de riscos é uma lista de preocupações que ninguém lê."
+      ],
+      "vocab": [
+        { "en": "risk vs issue", "pt": "risco (pode acontecer) vs. problema (já aconteceu)", "example": "That's not a risk any more — it's an issue." },
+        { "en": "likelihood", "pt": "probabilidade", "example": "Likelihood is medium; impact is high." },
+        { "en": "impact", "pt": "impacto se acontecer", "example": "The impact would be a three-week delay." },
+        { "en": "trigger", "pt": "gatilho — o sinal observável", "example": "The trigger is no committed date by the 12th." },
+        { "en": "risk owner", "pt": "dono do risco", "example": "Every risk needs a named owner." },
+        { "en": "to mitigate", "pt": "reduzir probabilidade ou impacto", "example": "We mitigate by starting integration in parallel." },
+        { "en": "contingency plan", "pt": "plano B se o risco se concretizar", "example": "The contingency is a manual export for two weeks." },
+        { "en": "residual risk", "pt": "o risco que sobra depois da mitigação", "example": "Residual risk is low but not zero." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Qual é um risco de verdade?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que alguém pode avaliar e acompanhar.",
+          "items": [
+            { "prompt": "Sobre o fornecedor.", "a": "Vendor delays.", "b": "If the vendor doesn't deliver the remaining endpoints by 12 August, integration testing can't start and go-live moves by at least two weeks.", "correct": "b", "why": "Causa, prazo, consequência e tamanho. \"Vendor delays\" é uma categoria, não um risco." },
+            { "prompt": "Sobre adoção.", "a": "Users might not adopt the tool.", "b": "If fewer than half the supervisors complete training before go-live, adoption stalls below 40% and the efficiency case doesn't land this year.", "correct": "b", "why": "Condição mensurável e consequência mensurável. É isso que permite decidir se vale mitigar." },
+            { "prompt": "Sobre pessoas.", "a": "Resource constraints.", "b": "If the second developer is pulled to the ERP migration in September, integration loses its only person who knows the schema.", "correct": "b", "why": "Nomear a dependência específica é o que torna o risco discutível com quem pode evitá-lo." },
+            { "prompt": "Um risco que já se concretizou.", "a": "Risk: the API might arrive late.", "b": "This is now an issue, not a risk — the API arrived nine days late. Moving it to the issue log.", "correct": "b", "why": "Manter no registro de riscos algo que já aconteceu esconde o problema real de quem lê." }
+          ],
+          "explanation": "If X, then Y, with a number. E quando acontece, deixa de ser risco e vira issue."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o registro de riscos",
+          "badge": "Leia e responda",
+          "heading": "Risk register extract · Dashboard programme",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "R-04. If the vendor does not deliver the remaining endpoints by 12 August, integration testing cannot start and go-live moves by at least two weeks. Likelihood: medium. Impact: high. Owner: Mariana. Trigger: no committed date received by 5 August.",
+            "Mitigation: a second developer has been assigned so that the non-dependent integration work runs in parallel, reducing the recovery time from ten days to six.",
+            "Contingency: if go-live slips past 20 September, the three plants continue on the manual export for four weeks, at a cost of one analyst day per week.",
+            "Residual risk after mitigation: medium likelihood, medium impact. Reviewed weekly at the programme call."
+          ],
+          "questions": [
+            {
+              "prompt": "What is the trigger, and why does it matter?",
+              "options": [
+                { "text": "No committed date by 5 August — it tells you to act a week before the deadline itself.", "correct": true },
+                { "text": "The vendor missing the 12 August date.", "correct": false },
+                { "text": "Go-live moving by two weeks." }
+              ],
+              "why": "O gatilho vem ANTES do prazo. Se ele for a própria data, você já perdeu a chance de agir."
+            },
+            {
+              "prompt": "What's the difference between the mitigation and the contingency?",
+              "options": [
+                { "text": "Mitigation reduces the risk; contingency is what you do if it happens anyway.", "correct": true },
+                { "text": "They're two words for the same thing.", "correct": false },
+                { "text": "Contingency happens first." }
+              ],
+              "why": "Mitigação age antes; contingência age depois. Um bom registro tem as duas."
+            },
+            {
+              "prompt": "Why is residual risk stated?",
+              "options": [
+                { "text": "To show mitigation reduced the risk but did not remove it.", "correct": true },
+                { "text": "To show the risk is closed.", "correct": false },
+                { "text": "Because the process requires it." }
+              ],
+              "why": "Residual risk é o que impede a sala de achar que \"mitigado\" significa \"resolvido\"."
+            }
+          ],
+          "explanation": "If/then · likelihood · impact · owner · trigger · mitigation · contingency · residual. Oito campos e o risco vira gerenciável."
+        },
+        {
+          "type": "categorize",
+          "title": "Risco, problema ou premissa?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada frase.",
+          "categories": [
+            { "id": "risk", "name": "Risk · ainda pode acontecer", "short": "Risk" },
+            { "id": "issue", "name": "Issue · já aconteceu", "short": "Issue" },
+            { "id": "assumption", "name": "Assumption · estamos assumindo", "short": "Assumption" }
+          ],
+          "items": [
+            { "text": "The API arrived nine days late and testing hasn't started.", "cat": "issue" },
+            { "text": "The second developer may be pulled to the ERP migration in September.", "cat": "risk" },
+            { "text": "We're taking it that the fourth plant's data volume matches the others.", "cat": "assumption" },
+            { "text": "Two supervisors have already said they won't use the tool.", "cat": "issue" },
+            { "text": "The vendor might change their schema again, as they did in 2025.", "cat": "risk" },
+            { "text": "We expect regional IT to keep the environment available until October.", "cat": "assumption" }
+          ],
+          "explanation": "Premissas são riscos disfarçados. Toda premissa não testada merece uma linha no registro."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete a linha do registro",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "R-04. ___ the vendor does not deliver the remaining endpoints by 12 August, integration testing cannot start. ___ : medium. Impact: high. The ___ is that no committed date has been received by 5 August. Our ___ is a second developer working the non-dependent tasks in parallel. If it happens anyway, the ___ is four more weeks on the manual export. ___ risk after mitigation is medium.",
+          "gaps": [
+            { "options": ["If", "In case of", "When"], "answer": "If", "why": "Riscos se escrevem com \"If X, then Y\". \"When\" pressupõe que vai acontecer." },
+            { "options": ["Likelihood", "Possibility", "Chance"], "answer": "Likelihood", "why": "Likelihood é o termo padrão em registros de risco." },
+            { "options": ["trigger", "signal", "alarm"], "answer": "trigger", "why": "Trigger é o sinal que dispara a ação." },
+            { "options": ["mitigation", "solution", "prevention"], "answer": "mitigation", "why": "Mitigation reduz, não resolve." },
+            { "options": ["contingency", "backup", "plan B"], "answer": "contingency", "why": "Contingency é o termo formal para o plano se acontecer." },
+            { "options": ["Residual", "Remaining", "Rest"], "answer": "Residual", "why": "Residual risk — expressão fixa." }
+          ],
+          "explanation": "Esse parágrafo é uma linha completa de registro de riscos. Troque o conteúdo e a estrutura serve para qualquer um."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A palavra exata do risco",
+          "badge": "Escolha certa",
+          "instruction": "Escolha o termo correto para cada situação.",
+          "items": [
+            { "prompt": "Já aconteceu e está afetando o projeto agora.", "options": [{ "text": "an issue", "correct": true }, { "text": "a risk" }, { "text": "a threat" }], "why": "Risco é o que pode acontecer. O que já aconteceu é issue." },
+            { "prompt": "Reduzir a chance de algo dar errado.", "options": [{ "text": "to mitigate", "correct": true }, { "text": "to solve" }, { "text": "to avoid" }], "why": "Mitigate reduz probabilidade ou impacto — sem prometer eliminação." },
+            { "prompt": "O que sobra de risco depois da mitigação.", "options": [{ "text": "residual risk", "correct": true }, { "text": "remaining danger" }, { "text": "rest of risk" }], "why": "Residual risk é a expressão consagrada." },
+            { "prompt": "O sinal observável que avisa que o risco está virando problema.", "options": [{ "text": "trigger", "correct": true }, { "text": "warning" }, { "text": "indication" }], "why": "Trigger é o termo técnico, e ele deve ter data e responsável." },
+            { "prompt": "Decidir aceitar um risco sem agir sobre ele.", "options": [{ "text": "to accept the risk", "correct": true }, { "text": "to ignore the risk" }, { "text": "to pass the risk" }], "why": "Aceitar formalmente é uma decisão válida e registrada. Ignorar não é." }
+          ],
+          "explanation": "Issue · mitigate · residual · trigger · accept. Cinco palavras que estruturam qualquer conversa de risco."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I write risks as \"if X, then Y\" with a number attached.", "pt": "Escrevo riscos como \"if X, then Y\" com um número junto." },
+            { "en": "Every risk I raise has a named owner and a trigger with a date.", "pt": "Todo risco que levanto tem dono nomeado e gatilho com data." },
+            { "en": "I know the difference between mitigation and contingency.", "pt": "Sei a diferença entre mitigação e contingência." },
+            { "en": "I move a risk to the issue log the day it materialises.", "pt": "Movo um risco para o registro de problemas no dia em que ele se concretiza." }
+          ],
+          "doneMessage": "risco bem escrito. A próxima lição é a conversa: comunicar risco a quem decide.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre risco em inglês",
+        "intro": "Quatro distinções que separam um registro vivo de uma planilha morta.",
+        "cards": [
+          { "en": "\"Risk\" and \"issue\" are strictly different in English project language. Calling an issue a risk reads as hiding it.", "pt": "\"Risk\" e \"issue\" são estritamente diferentes no inglês de projetos. Chamar um problema de risco soa como estar escondendo." },
+          { "en": "\"Mitigate\" never means \"solve\". Using it precisely protects you: you promised to reduce, not to remove.", "pt": "\"Mitigate\" nunca significa resolver. Usá-la com precisão te protege: você prometeu reduzir, não eliminar." },
+          { "en": "A trigger must be dated earlier than the deadline itself. A trigger on the deadline is not a trigger — it's an obituary.", "pt": "Um gatilho tem que ter data anterior ao próprio prazo. Gatilho na data do prazo não é gatilho — é obituário." },
+          { "en": "\"Accepting\" a risk is a legitimate, recorded decision in English project management. \"Ignoring\" it is not. The words matter in an audit.", "pt": "\"Aceitar\" um risco é uma decisão legítima e registrada na gestão de projetos anglófona. \"Ignorar\" não é. Numa auditoria, a palavra importa." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now write a risk that someone can actually act on.",
+        "pt": "Agora você escreve um risco sobre o qual alguém consegue de fato agir."
+      }
+    },
+    {
+      "title": "Raising Risk with Decision-Makers",
+      "focus": "Levar um risco para cima sem parecer alarmista nem pessimista",
+      "character": "us-male",
+      "objective": "Comunicar um risco a quem decide de forma que ele seja levado a sério — e fazer a escalada quando o risco não é endereçado.",
+      "intro": [
+        "Raising risk is a reputational tightrope. Do it too often and you become the person who always sees clouds. Do it too late and you own the failure.",
+        "The English that works has three parts: the risk in <strong>one sentence</strong>, what you're <strong>already doing</strong> about it, and the <strong>one thing you need</strong> from the person you're talking to.",
+        "Never raise a risk without the second part. A risk with no action attached sounds like a complaint. A risk with action attached sounds like management."
+      ],
+      "introPt": [
+        "Levantar risco é uma corda bamba reputacional. Faça demais e você vira a pessoa que só vê nuvem. Faça tarde e o fracasso é seu.",
+        "O inglês que funciona tem três partes: o risco em <strong>uma frase</strong>, o que você <strong>já está fazendo</strong> a respeito e a <strong>única coisa</strong> que você precisa de quem está ouvindo.",
+        "Nunca levante um risco sem a segunda parte. Risco sem ação atrelada soa como reclamação. Risco com ação atrelada soa como gestão."
+      ],
+      "vocab": [
+        { "en": "to raise a risk", "pt": "levantar um risco", "example": "I'd like to raise a risk on the September date." },
+        { "en": "to escalate", "pt": "levar ao nível superior", "example": "I'm escalating this to the steering committee." },
+        { "en": "worst case / best case", "pt": "pior caso / melhor caso", "example": "Worst case is a four-week slip." },
+        { "en": "exposure", "pt": "o quanto se está exposto ao risco", "example": "Our exposure is about 90k." },
+        { "en": "early warning", "pt": "aviso antecipado", "example": "Treat this as an early warning, not an alarm." },
+        { "en": "to have a plan B", "pt": "ter um plano B", "example": "We do have a plan B, and here it is." },
+        { "en": "to close a risk", "pt": "encerrar um risco", "example": "We can close R-02 — the dependency is delivered." },
+        { "en": "downside scenario", "pt": "cenário adverso", "example": "In the downside scenario we're four weeks late." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a escalada na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas frases na ordem que faz um risco ser levado a sério.",
+          "items": [
+            "I'd like to raise one risk on the September go-live — treat this as an early warning, not an alarm.",
+            "If the vendor's remaining endpoints don't arrive by 12 August, testing can't start and we slip by at least two weeks.",
+            "We've already put a second developer on the non-dependent work, which cuts the recovery from ten days to six.",
+            "There's also a plan B: the plants stay on the manual export for four weeks, at one analyst day per week.",
+            "The one thing I need from you is a call to their account director this week — a committed date is all we're missing."
+          ],
+          "explanation": "Aviso antecipado → o if/then com número → o que já está sendo feito → plano B → o pedido único."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual versão é levada a sério?",
+          "badge": "A ou B",
+          "instruction": "Escolha a que faz um diretor agir em vez de descontar.",
+          "items": [
+            { "prompt": "Levantando o risco pela primeira vez.", "a": "I'm worried about September, it's looking difficult.", "b": "One risk on September: if the endpoints don't land by the 12th, we slip two weeks. We've already mitigated six of the ten days.", "correct": "b", "why": "Preocupação não é acionável. If/then com número e mitigação já feita, é." },
+            { "prompt": "O risco já foi levantado e ignorado duas vezes.", "a": "As I've said before, this is a real problem.", "b": "This is the third week without a committed date. I'm formally escalating it to the committee on the 21st — I wanted you to hear it from me first.", "correct": "b", "why": "Escalada formal, com contagem, e a cortesia de avisar antes. É assim que se escala sem queimar a relação." },
+            { "prompt": "Perguntam qual é o pior cenário.", "a": "It could be really bad.", "b": "Worst case is a four-week slip and 90k of exposure. Best case, we hold September. Most likely, one week late.", "correct": "b", "why": "Três cenários com números. \"Really bad\" não permite decidir nada." },
+            { "prompt": "O risco deixou de existir.", "a": "(não diz nada)", "b": "Closing R-02 — the dependency was delivered on Friday. That takes the September exposure down to 30k.", "correct": "b", "why": "Fechar riscos publicamente é o que te dá crédito quando você abre o próximo." }
+          ],
+          "explanation": "If/then com número · mitigação já feita · três cenários · e fechar riscos em voz alta."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Escalando um risco que ninguém quis endereçar",
+          "badge": "Conversa",
+          "situation": "Há três semanas você pede uma data comprometida ao fornecedor via o gerente de contas. Nada. Você marca quinze minutos com o seu diretor.",
+          "turns": [
+            {
+              "who": "Director",
+              "them": "You said this was under control two weeks ago.",
+              "options": [
+                { "text": "It was — the mitigation worked and we recovered six of the ten days. What hasn't moved is the committed date, and that's why I'm here.", "correct": true, "why": "Separa o que funcionou do que não funcionou. Isso te posiciona como quem está gerenciando, não como quem errou a leitura." },
+                { "text": "Things changed since then.", "why": "Vago. Ele fica sem saber se você perdeu o controle ou se o mundo mudou." },
+                { "text": "I did warn you it was risky.", "why": "\"Eu avisei\" é a frase que faz diretores pararem de te chamar para conversas difíceis." }
+              ]
+            },
+            {
+              "who": "Director",
+              "them": "What's the actual exposure if this goes wrong?",
+              "options": [
+                { "text": "It's hard to quantify.", "why": "Com um diretor, \"difícil de quantificar\" é lido como \"não fiz a conta\"." },
+                { "text": "Four weeks and about 90k — that's four more weeks of manual export plus the delayed efficiency gain. Best case we hold September; most likely, one week late.", "correct": true, "why": "Número, composição do número e os três cenários. Ele consegue decidir com isso." },
+                { "text": "It would be a disaster for the programme.", "why": "Linguagem emocional faz o risco ser descontado, não levado a sério." }
+              ]
+            },
+            {
+              "who": "Director",
+              "them": "So what do you want me to do?",
+              "options": [
+                { "text": "One call to their account director this week. A committed date is the only thing missing — everything else is already covered.", "correct": true, "why": "Um pedido, pequeno, com prazo, e a garantia de que o resto está resolvido. Difícil dizer não." },
+                { "text": "Whatever you think is best.", "why": "Você o trouxe até aqui e devolveu o problema sem pedido. A reunião foi desperdiçada." },
+                { "text": "Push them hard, they're not taking us seriously.", "why": "Vago e emocional. Ele não sabe o que fazer com isso na segunda-feira." }
+              ]
+            },
+            {
+              "who": "Director",
+              "them": "Fine. And if that doesn't work?",
+              "options": [
+                { "text": "Then it goes to the steering committee on the 21st as a formal escalation, and we trigger plan B on the 25th.", "correct": true, "why": "Caminho de escalada e data de acionar o plano B. A conversa fecha sem pontas soltas." },
+                { "text": "Let's cross that bridge when we come to it.", "why": "Um diretor quer saber o próximo passo antes de gastar o capital dele." },
+                { "text": "I'll think of something.", "why": "Depois de tudo o que você mostrou, essa frase desfaz a impressão de controle." }
+              ]
+            }
+          ],
+          "explanation": "O que funcionou vs. o que não moveu · exposição em número · um pedido pequeno · o caminho se falhar."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que faz um risco ser levado a sério?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "You're raising a risk with a director who has ten minutes.",
+          "options": [
+            { "text": "The risk in one sentence, as if/then.", "correct": true },
+            { "text": "What you have already done about it.", "correct": true },
+            { "text": "The exposure in money or weeks.", "correct": true },
+            { "text": "How stressful the situation has been for the team.", "correct": false },
+            { "text": "A single, specific ask.", "correct": true },
+            { "text": "A list of everyone who contributed to the problem.", "correct": false }
+          ],
+          "explanation": "If/then, mitigação já feita, exposição, pedido único. Estresse e culpa fazem o risco ser descontado."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "I would like to rise a risk about the September date.", "wrong": "rise", "fix": "raise", "why": "Rise é intransitivo (o sol nasce). Levantar algo é <strong>raise</strong>." },
+            { "sentence": "In the worst hypothesis we slip four weeks.", "wrong": "hypothesis", "fix": "case", "why": "Calque do português: em inglês é \"in the worst case\"." },
+            { "sentence": "We have already mitigated six days of the ten.", "wrong": "of", "fix": "out of", "why": "\"Six out of ten\" é a forma correta de proporção." },
+            { "sentence": "This risk can affect in the go-live date.", "wrong": "in", "fix": "(nada)", "why": "Affect não leva preposição: \"can affect the go-live date\"." },
+            { "sentence": "I am escalating this for the steering committee.", "wrong": "for", "fix": "to", "why": "to escalate something TO someone." }
+          ],
+          "explanation": "\"Rise/raise\" e \"worst hypothesis\" são os dois que mais denunciam tradução literal numa escalada."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Numa escalada, hesitar faz o risco parecer menor do que é.",
+          "sentences": [
+            "I'd like to raise one risk on the September go-live.",
+            "Treat this as an early warning, not an alarm.",
+            "We've already mitigated six out of the ten days.",
+            "Worst case is a four-week slip and about ninety thousand of exposure.",
+            "The one thing I need from you is a call to their account director this week."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I never raise a risk without saying what I've already done about it.", "pt": "Nunca levanto um risco sem dizer o que já fiz a respeito." },
+            { "en": "I quantify exposure in weeks or money, never in adjectives.", "pt": "Quantifico a exposição em semanas ou dinheiro, nunca em adjetivos." },
+            { "en": "I bring exactly one ask to a decision-maker.", "pt": "Levo exatamente um pedido a quem decide." },
+            { "en": "I tell someone before I escalate past them.", "pt": "Aviso a pessoa antes de escalar por cima dela." },
+            { "en": "I close risks publicly, so my next warning carries weight.", "pt": "Encerro riscos publicamente, para que meu próximo alerta tenha peso." }
+          ],
+          "doneMessage": "risco comunicado com peso. Fecha aqui o bloco de soft skills — o próximo é o inglês técnico.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre escalar em inglês",
+        "intro": "Quatro movimentos que preservam sua reputação enquanto você entrega má notícia.",
+        "cards": [
+          { "en": "\"Treat this as an early warning, not an alarm\" calibrates the reaction before you say anything. It buys you the right to raise risks often.", "pt": "\"Treat this as an early warning, not an alarm\" calibra a reação antes de você dizer qualquer coisa. Compra o direito de levantar riscos com frequência." },
+          { "en": "\"I wanted you to hear it from me first\" is the sentence that lets you escalate past someone without losing them.", "pt": "\"I wanted you to hear it from me first\" é a frase que permite escalar por cima de alguém sem perder a pessoa." },
+          { "en": "Always close risks out loud. People who only ever open risks get filtered out; people who close them get believed.", "pt": "Sempre encerre riscos em voz alta. Quem só abre risco é filtrado; quem fecha é levado a sério." },
+          { "en": "\"Exposure\" is the business word for how much you stand to lose. It's more precise — and more senior — than \"impact\" when money is involved.", "pt": "\"Exposure\" é a palavra de negócio para o quanto se pode perder. É mais precisa — e mais sênior — que \"impact\" quando envolve dinheiro." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now deliver bad news upwards and come out of the room with more credibility, not less.",
+        "pt": "Agora você entrega má notícia para cima e sai da sala com mais credibilidade, não menos."
+      }
+    }
+  ]
+}

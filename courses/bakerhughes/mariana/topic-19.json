@@ -1,0 +1,367 @@
+{
+  "topic": "HSE (Health, Safety, and Environment) Regulations",
+  "lessons": [
+    {
+      "title": "The Language of Safety",
+      "focus": "Perigo, risco, permissões e a linguagem que evita acidentes",
+      "character": "gb-female",
+      "objective": "Usar corretamente o vocabulário de HSE em inglês — a começar pela distinção entre hazard e risk, que é a base de todo o resto.",
+      "intro": [
+        "HSE English is the most precise vocabulary in the industry, and for a good reason: ambiguity here costs people.",
+        "The distinction that everything else rests on is <strong>hazard</strong> versus <strong>risk</strong>. A hazard is a thing with the potential to harm — pressure, height, a rotating shaft. A risk is the chance that it actually harms someone, and how badly.",
+        "You cannot remove most hazards. You control the risk. Once that distinction is solid in your head, every safety document in English becomes readable."
+      ],
+      "introPt": [
+        "O inglês de HSE é o vocabulário mais preciso do setor, e por um bom motivo: ambiguidade aqui custa gente.",
+        "A distinção sobre a qual tudo se apoia é <strong>hazard</strong> versus <strong>risk</strong>. Hazard é algo com potencial de causar dano — pressão, altura, um eixo girando. Risk é a chance de isso de fato ferir alguém, e com que gravidade.",
+        "Você não elimina a maioria dos perigos. Você controla o risco. Quando essa distinção fica firme na cabeça, todo documento de segurança em inglês vira legível."
+      ],
+      "vocab": [
+        { "en": "hazard", "pt": "perigo — algo com potencial de causar dano", "example": "Stored pressure is the main hazard on this job." },
+        { "en": "risk", "pt": "risco — probabilidade e gravidade do dano", "example": "The risk is high without isolation." },
+        { "en": "near miss", "pt": "quase-acidente", "example": "Report every near miss, even with no injury." },
+        { "en": "permit to work (PTW)", "pt": "permissão de trabalho", "example": "No hot work without a permit." },
+        { "en": "lockout/tagout (LOTO)", "pt": "bloqueio e etiquetagem de energia", "example": "LOTO before anyone opens the housing." },
+        { "en": "PPE", "pt": "EPI — equipamento de proteção individual", "example": "PPE is the last line of defence, not the first." },
+        { "en": "toolbox talk", "pt": "diálogo de segurança antes do trabalho", "example": "We do a toolbox talk at the start of every shift." },
+        { "en": "stop work authority", "pt": "autoridade para parar o trabalho", "example": "Everyone on site has stop work authority." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "Hazard ou risk?",
+          "badge": "Classifique",
+          "instruction": "Perigo é a coisa. Risco é a chance de ela machucar alguém. Classifique.",
+          "categories": [
+            { "id": "hazard", "name": "Hazard · o perigo em si", "short": "Hazard" },
+            { "id": "risk", "name": "Risk · a chance e a gravidade", "short": "Risk" }
+          ],
+          "items": [
+            { "text": "Stored pressure in the line", "cat": "hazard" },
+            { "text": "A high chance of serious injury if the line is opened before bleeding down", "cat": "risk" },
+            { "text": "A rotating shaft with no guard", "cat": "hazard" },
+            { "text": "Low likelihood of harm because the area is barriered and nobody works there", "cat": "risk" },
+            { "text": "Working at four metres", "cat": "hazard" },
+            { "text": "Moderate risk of a fall, controlled by a harness and a trained spotter", "cat": "risk" }
+          ],
+          "explanation": "Você raramente elimina o perigo. Você reduz o risco com controles. Trocar as duas palavras num relatório é erro sério."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte a hierarquia de controles",
+          "badge": "Coloque em ordem",
+          "instruction": "Do controle mais eficaz ao menos eficaz. Clique na ordem.",
+          "items": [
+            "Elimination: remove the hazard entirely — do the job a way that doesn't need pressure at all.",
+            "Substitution: replace it with something less dangerous.",
+            "Engineering controls: guards, barriers, isolation, ventilation.",
+            "Administrative controls: procedures, permits, training, signage.",
+            "PPE: the last line of defence, protecting one person if everything else fails."
+          ],
+          "explanation": "EPI é o ÚLTIMO da lista, não o primeiro. Uma cultura de segurança que começa por EPI está começando pelo fim."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o relato de quase-acidente",
+          "badge": "Leia e responda",
+          "heading": "Near miss report · Macaé workshop",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "What happened: a technician began to open the housing of a test pump at 14:20. A colleague noticed the isolation tag was not in place and called a stop. No injury, no damage.",
+            "Hazard: stored pressure in the test line, up to 210 bar.",
+            "Why it nearly happened: the job card said \"isolate\" but did not say who signs off the isolation. The technician assumed the previous shift had done it; the previous shift assumed the day team would.",
+            "Immediate action: work stopped, line bled down, isolation verified and tagged before restart.",
+            "Corrective action: the job card now names the isolating authority by role, and the toolbox talk includes a verbal confirmation that isolation is tagged. Owner: HSE lead, in place from 1 August.",
+            "Note: the colleague who called the stop was thanked publicly at the shift meeting. Stop work authority only works if using it is visibly welcomed."
+          ],
+          "questions": [
+            {
+              "prompt": "What was the root cause?",
+              "options": [
+                { "text": "The job card did not name who signs off the isolation, so both shifts assumed the other had.", "correct": true },
+                { "text": "The technician was careless.", "correct": false },
+                { "text": "The pressure was too high." }
+              ],
+              "why": "Ambiguidade de responsabilidade num procedimento. É a causa raiz mais comum e a mais fácil de corrigir."
+            },
+            {
+              "prompt": "Why was the colleague thanked publicly?",
+              "options": [
+                { "text": "Because stop work authority only works if using it is visibly rewarded.", "correct": true },
+                { "text": "Because he prevented equipment damage.", "correct": false },
+                { "text": "As part of the corrective action." }
+              ],
+              "why": "Se parar o trabalho custa algo socialmente, ninguém para. Reconhecer publicamente é o que mantém a autoridade viva."
+            },
+            {
+              "prompt": "Why report this at all, since nobody was hurt?",
+              "options": [
+                { "text": "Because near misses are the leading indicator — they show the gap before it costs someone.", "correct": true },
+                { "text": "Because the procedure requires it.", "correct": false },
+                { "text": "To record the technician's mistake." }
+              ],
+              "why": "Quase-acidente é a informação mais barata que uma operação pode ter. Ela só existe se reportar for seguro."
+            }
+          ],
+          "explanation": "O que houve · perigo · por que quase aconteceu · ação imediata · ação corretiva com dono e data · e o reconhecimento de quem parou."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual formulação é correta em HSE?",
+          "badge": "A ou B",
+          "instruction": "Em segurança, a palavra exata importa. Escolha.",
+          "items": [
+            { "prompt": "Descrevendo pressão numa linha.", "a": "The risk is the stored pressure in the line.", "b": "The hazard is the stored pressure; the risk is serious injury if the line is opened before it's bled down.", "correct": "b", "why": "Trocar hazard por risk num relatório de HSE é um erro que revisores pegam imediatamente." },
+            { "prompt": "Falando de EPI.", "a": "PPE is our first line of defence.", "b": "PPE is the last line of defence — it protects one person if every other control has failed.", "correct": "b", "why": "Chamar EPI de primeira linha inverte a hierarquia de controles inteira." },
+            { "prompt": "Reportando um quase-acidente.", "a": "Nothing happened, so there's nothing to report.", "b": "No injury and no damage — and it's still a reportable near miss, because the gap that allowed it is real.", "correct": "b", "why": "Quase-acidente sem reporte é a informação mais valiosa da operação sendo jogada fora." },
+            { "prompt": "Alguém parou o trabalho e estava enganado.", "a": "You should check before stopping a job.", "b": "You were right to stop. If you're not sure, stop — I'd rather have ten unnecessary stops than one we didn't make.", "correct": "b", "why": "Punir uma parada desnecessária é como se garante que a parada necessária não vai acontecer." }
+          ],
+          "explanation": "Hazard ≠ risk · EPI é o último · quase-acidente sempre se reporta · parada desnecessária nunca se pune."
+        },
+        {
+          "type": "matching",
+          "title": "Associe a sigla ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "PTW", "right": "autorização formal e documentada para executar um trabalho de risco" },
+            { "left": "LOTO", "right": "bloquear e etiquetar a energia para que ninguém a religue durante a intervenção" },
+            { "left": "PPE", "right": "equipamento vestido pela pessoa, última barreira de proteção" },
+            { "left": "near miss", "right": "evento que não causou dano, mas poderia ter causado" },
+            { "left": "toolbox talk", "right": "conversa curta de segurança antes de começar a tarefa" },
+            { "left": "stop work authority", "right": "o direito de qualquer pessoa interromper o trabalho ao ver risco" }
+          ],
+          "explanation": "PTW, LOTO e stop work authority são as três siglas que aparecem em qualquer conversa de campo na indústria de óleo e gás."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The main risk on this job is the stored pressure.", "wrong": "risk", "fix": "hazard", "why": "Pressão armazenada é o perigo. O risco é a lesão que ela pode causar." },
+            { "sentence": "We had an accident but nobody got injured.", "wrong": "accident", "fix": "near miss", "why": "Sem dano, o termo correto é near miss. Chamar de accident distorce a estatística de segurança." },
+            { "sentence": "All personnel must use the security equipment.", "wrong": "security", "fix": "safety", "why": "Falso amigo importante: <strong>safety</strong> é segurança contra acidentes; <strong>security</strong> é contra crime." },
+            { "sentence": "The technician was not aware about the isolation.", "wrong": "about", "fix": "of", "why": "aware OF something. Sempre \"of\"." },
+            { "sentence": "This procedure prevents that the valve is opened.", "wrong": "that", "fix": "the valve from being", "why": "\"Prevents the valve from being opened\" — prevent não aceita \"that\"." }
+          ],
+          "explanation": "\"Security\" no lugar de \"safety\" é o erro mais grave desta lista — muda o assunto inteiro do documento."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Em campo, essas frases precisam sair sem hesitação.",
+          "sentences": [
+            "The hazard is the stored pressure; the risk is serious injury if it isn't bled down.",
+            "No hot work without a permit.",
+            "PPE is the last line of defence, not the first.",
+            "This is a reportable near miss, even though nobody was hurt.",
+            "If you're not sure, stop. You were right to stop."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I never use \"risk\" when I mean \"hazard\".", "pt": "Nunca uso \"risk\" quando quero dizer \"hazard\"." },
+            { "en": "I can list the hierarchy of controls with PPE last.", "pt": "Sei listar a hierarquia de controles com EPI por último." },
+            { "en": "I say \"safety\", not \"security\", for accident prevention.", "pt": "Digo \"safety\", não \"security\", para prevenção de acidentes." },
+            { "en": "I report a near miss even when nothing happened.", "pt": "Reporto um quase-acidente mesmo quando nada aconteceu." },
+            { "en": "I thank people for stopping work, even when they were wrong.", "pt": "Agradeço a quem para o trabalho, mesmo quando estava enganado." }
+          ],
+          "doneMessage": "linguagem de segurança no lugar. A próxima lição é sobre auditoria, conformidade e meio ambiente.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre inglês de HSE",
+        "intro": "Quatro precisões que um auditor percebe na primeira página.",
+        "cards": [
+          { "en": "\"Safety\" and \"security\" are completely different in English. Safety is about accidents; security is about crime and access. Portuguese uses one word for both.", "pt": "\"Safety\" e \"security\" são completamente diferentes em inglês. Safety é acidente; security é crime e acesso. O português usa uma palavra só para os dois." },
+          { "en": "Hazard is the thing; risk is the chance and the severity. Every HSE document in English is built on that one distinction.", "pt": "Hazard é a coisa; risk é a chance e a gravidade. Todo documento de HSE em inglês se apoia nessa distinção." },
+          { "en": "Near miss reporting rates going UP is usually good news — it means people trust the system enough to report.", "pt": "Taxa de reporte de quase-acidentes SUBINDO costuma ser boa notícia — significa que as pessoas confiam no sistema o bastante para reportar." },
+          { "en": "\"Stop work authority\" is meaningless unless using it is visibly welcomed. The public thank-you is part of the control, not a nicety.", "pt": "\"Stop work authority\" não significa nada se usá-la não for visivelmente bem-vindo. O agradecimento público faz parte do controle, não é gentileza." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now read, write and speak the language that keeps people safe — precisely.",
+        "pt": "Agora você lê, escreve e fala com precisão a linguagem que mantém as pessoas seguras."
+      }
+    },
+    {
+      "title": "Compliance, Audits and Environment",
+      "focus": "Normas, auditoria, não conformidade e o vocabulário ambiental",
+      "character": "us-male",
+      "objective": "Falar de conformidade e auditoria em inglês: responder a uma não conformidade, entender os termos ambientais e sustentar uma conversa com auditor.",
+      "intro": [
+        "Compliance English has a particular quality: it is written to be checked. Every sentence in an audit response will be read by someone looking for what you didn't say.",
+        "The core vocabulary is small — <strong>non-conformity</strong>, <strong>finding</strong>, <strong>corrective action</strong>, <strong>root cause</strong>, <strong>evidence</strong> — and using it precisely is what makes an audit go quickly instead of painfully.",
+        "The second half of this lesson is environmental: <strong>emissions</strong>, <strong>spill</strong>, <strong>containment</strong>, <strong>disposal</strong>. In this industry those words appear in contracts, not just in policies."
+      ],
+      "introPt": [
+        "O inglês de compliance tem uma qualidade particular: ele é escrito para ser conferido. Toda frase de uma resposta de auditoria vai ser lida por alguém procurando o que você não disse.",
+        "O vocabulário central é pequeno — <strong>non-conformity</strong>, <strong>finding</strong>, <strong>corrective action</strong>, <strong>root cause</strong>, <strong>evidence</strong> — e usá-lo com precisão é o que faz uma auditoria correr rápido em vez de doer.",
+        "A segunda metade desta lição é ambiental: <strong>emissions</strong>, <strong>spill</strong>, <strong>containment</strong>, <strong>disposal</strong>. Neste setor, essas palavras aparecem em contratos, não só em políticas."
+      ],
+      "vocab": [
+        { "en": "non-conformity (NC)", "pt": "não conformidade", "example": "Two minor non-conformities, no major ones." },
+        { "en": "finding", "pt": "constatação da auditoria", "example": "The finding was about record retention." },
+        { "en": "corrective action", "pt": "ação para corrigir e evitar repetição", "example": "The corrective action is due by 30 September." },
+        { "en": "evidence", "pt": "prova documental", "example": "The auditor wants evidence, not explanation." },
+        { "en": "audit trail", "pt": "rastro documental verificável", "example": "There's a full audit trail for every permit." },
+        { "en": "spill / containment", "pt": "derramamento / contenção", "example": "Secondary containment held the spill." },
+        { "en": "emissions", "pt": "emissões", "example": "Flaring accounts for most of the emissions on site." },
+        { "en": "waste disposal", "pt": "destinação de resíduos", "example": "Disposal is documented for every drum." }
+      ],
+      "exercises": [
+        {
+          "type": "swipeChoice",
+          "title": "Respondendo a uma não conformidade",
+          "badge": "A ou B",
+          "instruction": "Escolha a resposta que fecha o achado em vez de prolongá-lo.",
+          "items": [
+            { "prompt": "O auditor aponta permissões sem assinatura.", "a": "That's unusual, normally our permits are signed.", "b": "Confirmed: four of the twenty permits sampled were unsigned. Root cause: the signing step is on paper while the rest of the flow is digital. Corrective action: move the signature into the digital permit by 30 September. Owner: HSE lead.", "correct": "b", "why": "Confirma o fato, dá a causa raiz, a ação, a data e o dono. É o que fecha um achado." },
+            { "prompt": "Você discorda do achado.", "a": "We don't agree with this finding.", "b": "We'd like to challenge this one. The clause requires retention for five years; our records go back seven. Can we walk through the sample together?", "correct": "b", "why": "Contestar é legítimo — com a cláusula, o fato e um convite para verificar juntos." },
+            { "prompt": "O auditor pede uma prova.", "a": "I can explain how the process works.", "b": "Here are the signed permits for those four jobs, and the system log showing when each was approved.", "correct": "b", "why": "Auditor não quer explicação, quer evidência. Explicar quando pedem prova prolonga a auditoria." },
+            { "prompt": "Um achado se repete de auditoria anterior.", "a": "We've been very busy this year.", "b": "This is a repeat finding, which we take more seriously. The previous action addressed the symptom; this one changes the process step itself.", "correct": "b", "why": "Achado repetido reconhecido, com a diferença entre a ação anterior e a nova. É isso que evita a escalada." }
+          ],
+          "explanation": "Confirme o fato · causa raiz · ação com dono e data · evidência em vez de explicação · e trate repetição como coisa séria."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "non-conformity", "right": "algo que não está de acordo com a norma ou o procedimento" },
+            { "left": "corrective action", "right": "o que se faz para corrigir e impedir a repetição" },
+            { "left": "evidence", "right": "o documento ou registro que prova, sem depender de explicação" },
+            { "left": "audit trail", "right": "o rastro que permite reconstruir quem fez o quê e quando" },
+            { "left": "containment", "right": "a barreira que impede um derramamento de se espalhar" },
+            { "left": "disposal", "right": "a destinação final e documentada de um resíduo" }
+          ],
+          "explanation": "\"Evidence\" é a palavra mais importante de uma auditoria. Explicação sem evidência não fecha achado nenhum."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o relatório de auditoria",
+          "badge": "Leia e responda",
+          "heading": "Audit summary · Macaé site · ISO 14001 surveillance",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Two minor non-conformities, no major ones, and three observations.",
+            "NC-01: four of twenty sampled hot work permits had no recorded signature from the issuing authority. The permits themselves and the work were correct; the record was incomplete.",
+            "NC-02: waste transfer notes for two drums of used oil in March could not be located. Disposal was carried out by an approved contractor, but the audit trail is incomplete.",
+            "Observation: secondary containment around the day tank is in good condition and was tested in June — noted as good practice.",
+            "Corrective actions agreed: digital signature step in the permit system (owner: HSE lead, 30 September); waste transfer notes stored automatically at the point of collection rather than filed later (owner: site admin, 15 September).",
+            "Note on both NCs: the work was compliant; the records were not. The auditor's point is that without the record, compliance cannot be demonstrated — and in this framework, what cannot be demonstrated is treated as not done."
+          ],
+          "questions": [
+            {
+              "prompt": "What do both non-conformities have in common?",
+              "options": [
+                { "text": "The work was done correctly, but the record was missing or incomplete.", "correct": true },
+                { "text": "The work was done incorrectly.", "correct": false },
+                { "text": "They involve the same contractor." }
+              ],
+              "why": "É a distinção central de compliance: fazer certo e registrar são duas obrigações separadas."
+            },
+            {
+              "prompt": "Why is \"what cannot be demonstrated is treated as not done\"?",
+              "options": [
+                { "text": "Because an auditor can only verify records, not intentions or memories.", "correct": true },
+                { "text": "Because auditors are strict.", "correct": false },
+                { "text": "Because the standard says so arbitrarily." }
+              ],
+              "why": "Essa frase resume toda a lógica de auditoria. Entendê-la muda como você escreve qualquer registro."
+            },
+            {
+              "prompt": "What makes the corrective actions likely to work?",
+              "options": [
+                { "text": "They change where the record is created, rather than asking people to remember.", "correct": true },
+                { "text": "They have deadlines.", "correct": false },
+                { "text": "They were agreed with the auditor." }
+              ],
+              "why": "Ação corretiva que depende de as pessoas lembrarem falha. Mudar o ponto de captura do registro, não."
+            }
+          ],
+          "explanation": "Menor vs. maior · trabalho certo com registro incompleto · e ações que mudam o processo em vez de pedir atenção."
+        },
+        {
+          "type": "categorize",
+          "title": "Que área de HSE é essa?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada item.",
+          "categories": [
+            { "id": "health", "name": "Health · saúde ocupacional", "short": "Health" },
+            { "id": "safety", "name": "Safety · segurança", "short": "Safety" },
+            { "id": "env", "name": "Environment · meio ambiente", "short": "Environment" }
+          ],
+          "items": [
+            { "text": "Noise exposure limits over an eight-hour shift", "cat": "health" },
+            { "text": "Lockout/tagout before opening a housing", "cat": "safety" },
+            { "text": "Secondary containment around the day tank", "cat": "env" },
+            { "text": "Hand-arm vibration monitoring for tool operators", "cat": "health" },
+            { "text": "Flaring volumes reported monthly", "cat": "env" },
+            { "text": "Guarding on a rotating shaft", "cat": "safety" }
+          ],
+          "explanation": "Health é o dano lento e cumulativo — ruído, vibração, exposição química. É a parte de HSE que menos se fala e mais afeta carreiras."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre auditoria e conformidade.",
+          "items": [
+            { "text": "If the work was done correctly, a missing record is not a non-conformity.", "answer": false, "why": "É sim. Sem registro, a conformidade não pode ser demonstrada — e o que não se demonstra é tratado como não feito." },
+            { "text": "An auditor prefers evidence to explanation.", "answer": true, "why": "Explicação sem documento não fecha achado. É a regra número um de qualquer auditoria." },
+            { "text": "A repeat finding is treated the same as a new one.", "answer": false, "why": "É tratado com muito mais gravidade — sugere que a ação anterior atacou o sintoma." },
+            { "text": "\"Containment\" refers to stopping a spill from spreading.", "answer": true, "why": "Contenção primária é o próprio tanque; secundária é a bacia ao redor." },
+            { "text": "A corrective action that depends on people remembering is usually effective.", "answer": false, "why": "É a ação corretiva mais comum e a que mais falha. Mude o processo, não a atenção." }
+          ],
+          "explanation": "Registro é obrigação separada · evidência acima de explicação · repetição é grave · não confie na memória."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "We received two minor non-conformances in the audit.", "wrong": "non-conformances", "fix": "non-conformities", "why": "Ambas as formas circulam, mas ISO usa <strong>non-conformity / non-conformities</strong>." },
+            { "sentence": "The auditor asked for evidences of the disposal.", "wrong": "evidences", "fix": "evidence", "why": "Evidence é incontável em inglês. Nunca vai ao plural." },
+            { "sentence": "We need to attend the requirements of the standard.", "wrong": "attend", "fix": "meet", "why": "Atender requisitos é <strong>meet</strong> requirements." },
+            { "sentence": "The corrective action was implemented in 30 September.", "wrong": "in", "fix": "on", "why": "Data específica leva <strong>on</strong>: on 30 September." },
+            { "sentence": "The company must be in conformity with the environmental legislation.", "wrong": "legislation", "fix": "regulations", "why": "\"Legislation\" existe, mas o termo usado no dia a dia industrial é <strong>regulations</strong>." }
+          ],
+          "explanation": "\"Evidences\" no plural é o erro que mais aparece em resposta de auditoria escrita por brasileiro."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I answer a finding with fact, root cause, action, owner and date.", "pt": "Respondo a um achado com fato, causa raiz, ação, dono e data." },
+            { "en": "I provide evidence rather than explanation.", "pt": "Forneço evidência em vez de explicação." },
+            { "en": "I understand that an unrecorded action counts as not done.", "pt": "Entendo que ação não registrada conta como não feita." },
+            { "en": "I say \"evidence\", never \"evidences\".", "pt": "Digo \"evidence\", nunca \"evidences\"." },
+            { "en": "I design corrective actions that change the process, not people's memory.", "pt": "Desenho ações corretivas que mudam o processo, não a memória das pessoas." }
+          ],
+          "doneMessage": "compliance dominado. O próximo tópico é cadeia de suprimentos e manufatura.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre auditoria em inglês",
+        "intro": "Quatro coisas que fazem uma auditoria durar dois dias em vez de cinco.",
+        "cards": [
+          { "en": "\"What cannot be demonstrated is treated as not done\" is the operating logic of every management system audit. Say it to yourself when writing any record.", "pt": "\"O que não pode ser demonstrado é tratado como não feito\" é a lógica operante de toda auditoria de sistema de gestão. Repita isso ao escrever qualquer registro." },
+          { "en": "\"Evidence\" is uncountable in English: a piece of evidence, plenty of evidence — never \"evidences\".", "pt": "\"Evidence\" é incontável em inglês: a piece of evidence, plenty of evidence — nunca \"evidences\"." },
+          { "en": "\"We'd like to challenge this finding\" is the correct, respectful way to disagree with an auditor. Disagreement is expected and normal.", "pt": "\"We'd like to challenge this finding\" é o jeito correto e respeitoso de discordar de um auditor. Discordar é esperado e normal." },
+          { "en": "Auditors notice when an observation is recorded as good practice. Volunteering what works well is not showing off — it's part of the record.", "pt": "Auditores reparam quando uma observação é registrada como boa prática. Mostrar o que funciona bem não é exibição — faz parte do registro." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now sit in an audit and close findings instead of prolonging them.",
+        "pt": "Agora você senta numa auditoria e fecha achados em vez de prolongá-los."
+      }
+    }
+  ]
+}

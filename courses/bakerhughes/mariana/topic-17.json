@@ -1,0 +1,347 @@
+{
+  "topic": "Data Integration & Software Architecture",
+  "lessons": [
+    {
+      "title": "Making Systems Talk",
+      "focus": "Integração: APIs, eventos, lotes e o que dá errado entre dois sistemas",
+      "character": "us-male",
+      "objective": "Explicar em inglês como dois sistemas se comunicam, escolher entre os padrões de integração e nomear os problemas típicos.",
+      "intro": [
+        "Integration is where most of the real work in enterprise software happens, and where most of the surprises live.",
+        "There are only three shapes: <strong>request/response</strong> (I ask, you answer), <strong>events</strong> (I announce, whoever cares listens) and <strong>batch</strong> (once a night, everything at once).",
+        "Each one fails differently, and the English for those failure modes — <em>duplicates</em>, <em>out of order</em>, <em>stale data</em>, <em>backpressure</em> — is what lets you have a useful conversation before the failure happens instead of after."
+      ],
+      "introPt": [
+        "Integração é onde acontece a maior parte do trabalho real em software corporativo, e onde moram quase todas as surpresas.",
+        "Existem só três formatos: <strong>request/response</strong> (eu pergunto, você responde), <strong>eventos</strong> (eu anuncio, quem se interessa escuta) e <strong>batch</strong> (uma vez por noite, tudo de uma vez).",
+        "Cada um falha de um jeito, e o inglês desses modos de falha — <em>duplicates</em>, <em>out of order</em>, <em>stale data</em>, <em>backpressure</em> — é o que permite ter a conversa útil antes da falha, em vez de depois."
+      ],
+      "vocab": [
+        { "en": "API / endpoint", "pt": "interface / ponto de acesso específico", "example": "The endpoint returns the last 24 hours of readings." },
+        { "en": "payload", "pt": "o conteúdo enviado na mensagem", "example": "The payload includes the asset ID and a timestamp." },
+        { "en": "event-driven", "pt": "orientado a eventos", "example": "The reporting context is event-driven." },
+        { "en": "batch job", "pt": "processamento em lote", "example": "The nightly batch job takes forty minutes." },
+        { "en": "stale data", "pt": "dado desatualizado", "example": "Users were looking at stale data all morning." },
+        { "en": "duplicates / idempotency", "pt": "duplicados / processar duas vezes sem estragar", "example": "Without idempotency, a retry creates duplicates." },
+        { "en": "out of order", "pt": "fora da ordem de acontecimento", "example": "Events can arrive out of order." },
+        { "en": "throttling / rate limit", "pt": "limitação de chamadas por período", "example": "Their API throttles us at 100 calls a minute." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Associe o problema ao padrão",
+          "instruction": "Clique na caixa à direita e escolha a descrição certa.",
+          "pairs": [
+            { "left": "stale data", "right": "a tela mostra um valor que já mudou na origem" },
+            { "left": "duplicates", "right": "a mesma informação chega duas vezes e é contada duas vezes" },
+            { "left": "out of order", "right": "o evento mais novo chega antes do mais antigo e sobrescreve errado" },
+            { "left": "rate limit", "right": "o outro sistema recusa chamadas depois de um número por minuto" },
+            { "left": "backpressure", "right": "chega mais rápido do que se consegue processar e a fila cresce" },
+            { "left": "idempotency", "right": "a propriedade de poder repetir a operação sem estragar nada" }
+          ],
+          "explanation": "Duplicados e fora de ordem são as duas causas de quase todo número errado num dashboard integrado."
+        },
+        {
+          "type": "categorize",
+          "title": "Que padrão de integração serve aqui?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada necessidade pelo padrão mais adequado.",
+          "categories": [
+            { "id": "req", "name": "Request/response · API", "short": "API" },
+            { "id": "event", "name": "Event-driven", "short": "Eventos" },
+            { "id": "batch", "name": "Batch · lote noturno", "short": "Batch" }
+          ],
+          "items": [
+            { "text": "A supervisor opens a pump and wants its maintenance history now.", "cat": "req" },
+            { "text": "Three other systems need to know whenever a work order is closed.", "cat": "event" },
+            { "text": "Finance needs the full month of readings, consolidated, once a month.", "cat": "batch" },
+            { "text": "The alert service should react the moment a threshold is crossed.", "cat": "event" },
+            { "text": "The reporting warehouse is refreshed every night at 3 a.m.", "cat": "batch" },
+            { "text": "The mobile app checks whether the user still has access.", "cat": "req" }
+          ],
+          "explanation": "Pergunta pontual: API. Algo aconteceu e vários precisam saber: evento. Volume grande sem urgência: batch."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia a especificação de integração",
+          "badge": "Leia e responda",
+          "heading": "Integration spec · Vendor telemetry → Dashboard",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "The vendor pushes sensor readings to our endpoint every fifteen minutes. Each payload contains the asset ID, a timestamp and up to 96 readings.",
+            "Known behaviour: the vendor retries on any timeout, and their retry sends the same payload again. Our endpoint is therefore idempotent — the same asset ID and timestamp is written once, however many times it arrives.",
+            "Readings can arrive out of order, particularly after a vendor outage, when several hours are pushed at once. We never overwrite a newer reading with an older one; ordering is by the reading timestamp, not by arrival time.",
+            "Their API rate-limits us at 100 calls per minute on the pull side. During the morning peak we hit that limit, so the backfill job runs at 02:00 instead.",
+            "If the vendor is unavailable, the dashboard shows the last successful reading with its timestamp, plus a banner saying \"data as of HH:MM\". It never shows a blank value, and it never shows an old number as if it were current."
+          ],
+          "questions": [
+            {
+              "prompt": "Why does the endpoint need to be idempotent?",
+              "options": [
+                { "text": "Because the vendor retries and sends the same payload more than once.", "correct": true },
+                { "text": "Because readings arrive out of order.", "correct": false },
+                { "text": "Because of the rate limit." }
+              ],
+              "why": "Idempotência é a defesa contra retentativa. Sem ela, cada timeout vira um dado duplicado."
+            },
+            {
+              "prompt": "How is ordering handled?",
+              "options": [
+                { "text": "By the reading timestamp, never by arrival time.", "correct": true },
+                { "text": "By arrival time, since that's simpler.", "correct": false },
+                { "text": "The last one to arrive always wins." }
+              ],
+              "why": "Ordenar por chegada é a causa clássica de um valor antigo sobrescrever um novo depois de uma queda."
+            },
+            {
+              "prompt": "What does the dashboard do when the vendor is down?",
+              "options": [
+                { "text": "Shows the last reading with its timestamp and a banner — never a blank, never an old number as current.", "correct": true },
+                { "text": "Shows a blank screen.", "correct": false },
+                { "text": "Shows an estimate." }
+              ],
+              "why": "\"Never silent, never misleading\" é a regra de ouro de qualquer tela que uma planta usa para decidir."
+            }
+          ],
+          "explanation": "Idempotência contra retentativa · ordenação por timestamp · rate limit conhecido · comportamento explícito na queda."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Explicando um problema de integração",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que faz a outra área entender o problema.",
+          "items": [
+            { "prompt": "Números duplicados no relatório.", "a": "There's a data quality issue in the integration.", "b": "When their system times out, it sends the reading again. We were counting both, so downtime looked about 8% higher than it was.", "correct": "b", "why": "Causa concreta e o tamanho do efeito. \"Data quality issue\" não permite a ninguém entender nem decidir." },
+            { "prompt": "Um valor antigo sobrescreveu um novo.", "a": "The events arrived in the wrong sequence.", "b": "After their outage they pushed six hours at once. We were ordering by arrival, so an 06:00 reading landed after the 09:00 one and overwrote it.", "correct": "b", "why": "Conta a história do que aconteceu. É assim que a correção fica óbvia para todo mundo na sala." },
+            { "prompt": "Pedindo mudança no fornecedor.", "a": "Please stop sending duplicates.", "b": "Could you include a unique message ID in the payload? Then we can discard retries reliably without depending on the timestamp.", "correct": "b", "why": "Pedido técnico específico e implementável. \"Pare de mandar duplicados\" ignora que a retentativa é intencional do lado deles." },
+            { "prompt": "Explicando o limite de chamadas.", "a": "Their API is slow.", "b": "They cap us at 100 calls a minute. During the morning peak we hit the cap, which is why the backfill runs at 2 a.m. instead.", "correct": "b", "why": "Rate limit não é lentidão. Confundir os dois leva o time a otimizar a coisa errada." }
+          ],
+          "explanation": "Conte o que aconteceu, com número · peça mudanças implementáveis · não confunda limite com lentidão."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre integração de sistemas.",
+          "items": [
+            { "text": "An idempotent endpoint gives the same result whether it receives a message once or five times.", "answer": true, "why": "É exatamente a definição — e a única defesa confiável contra retentativas." },
+            { "text": "Ordering messages by arrival time is safe.", "answer": false, "why": "Depois de uma queda, várias horas chegam de uma vez e a ordem de chegada não é a ordem dos fatos." },
+            { "text": "\"Stale data\" means the data is wrong.", "answer": false, "why": "Está correta — só não é atual. Por isso a tela deve mostrar o horário do dado." },
+            { "text": "A rate limit is the same as a slow API.", "answer": false, "why": "Rate limit é uma recusa deliberada acima de um número de chamadas. Lentidão é outra coisa." },
+            { "text": "Batch integration is always the wrong choice.", "answer": false, "why": "Para volume grande sem urgência — consolidação mensal, por exemplo — continua sendo o mais simples e barato." }
+          ],
+          "explanation": "Idempotência · ordenar por timestamp · stale ≠ errado · rate limit ≠ lentidão · batch ainda é válido."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The two systems need to communicate between them.", "wrong": "between", "fix": "with each other", "why": "\"Communicate with each other\" — \"between them\" é calque do português." },
+            { "sentence": "We receive the datas every fifteen minutes.", "wrong": "datas", "fix": "data", "why": "Data é incontável. Nunca vai ao plural." },
+            { "sentence": "The integration is realized through an API.", "wrong": "realized", "fix": "done / built", "why": "Falso amigo: realizar algo é do, carry out, build. \"Realize\" é perceber." },
+            { "sentence": "Their API limits us in 100 calls per minute.", "wrong": "in", "fix": "to", "why": "\"Limits us TO 100 calls\" — sempre \"to\"." },
+            { "sentence": "The information is actualized every night.", "wrong": "actualized", "fix": "updated", "why": "Atualizar é <strong>update</strong>. \"Actualize\" existe em inglês, mas significa realizar potencial — nada a ver." }
+          ],
+          "explanation": "\"Realized\" e \"actualized\" são dois falsos amigos que aparecem quase sempre em spec escrita por brasileiro."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can choose between API, events and batch and say why.", "pt": "Sei escolher entre API, eventos e batch e dizer por quê." },
+            { "en": "I can explain idempotency and why retries make it necessary.", "pt": "Sei explicar idempotência e por que retentativas a tornam necessária." },
+            { "en": "I know why ordering by arrival time is dangerous.", "pt": "Sei por que ordenar por hora de chegada é perigoso." },
+            { "en": "I say \"update\", not \"actualize\", and \"data\", not \"datas\".", "pt": "Digo \"update\", não \"actualize\", e \"data\", não \"datas\"." }
+          ],
+          "doneMessage": "integração dominada. A próxima lição sobe um nível: decisões de arquitetura e como defendê-las.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre integração em inglês",
+        "intro": "Quatro coisas que evitam números errados em dashboards.",
+        "cards": [
+          { "en": "\"Idempotent\" is worth learning to pronounce: eye-DEM-po-tent. It's one of the few words that instantly signals you know how integrations fail.", "pt": "\"Idempotent\" vale aprender a pronunciar: eye-DEM-po-tent. É uma das poucas palavras que sinalizam na hora que você sabe como integrações falham." },
+          { "en": "\"Stale\" is the right word for data that is correct but old. \"Wrong\" would be inaccurate and would send people looking for the wrong bug.", "pt": "\"Stale\" é a palavra certa para dado correto mas velho. \"Wrong\" seria impreciso e mandaria as pessoas caçarem o bug errado." },
+          { "en": "\"Data as of 09:15\" on a screen is one of the cheapest trust-building features there is. Users forgive old data; they don't forgive being misled.", "pt": "\"Data as of 09:15\" numa tela é uma das features mais baratas de construção de confiança. Usuários perdoam dado velho; não perdoam ser enganados." },
+          { "en": "\"Realize\" never means \"to carry out\" in English. A project is carried out, delivered or done — never realised.", "pt": "\"Realize\" nunca significa realizar/executar em inglês. Um projeto é carried out, delivered ou done — nunca \"realised\"." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now explain why two systems disagree — and what to do about it.",
+        "pt": "Agora você explica por que dois sistemas discordam — e o que fazer a respeito."
+      }
+    },
+    {
+      "title": "Defending Architecture Decisions",
+      "focus": "Registrar e defender uma decisão técnica que vai durar anos",
+      "character": "gb-female",
+      "objective": "Escrever e defender uma decisão de arquitetura em inglês: o contexto, as opções, a escolha e as consequências que a empresa vai viver.",
+      "intro": [
+        "Architecture decisions are the ones nobody notices until they're expensive. Two years later somebody asks \"why on earth is it built like this?\" and the person who knew has left.",
+        "The tool for this in English is the <strong>ADR</strong> — architecture decision record. Four short sections: <strong>context</strong>, <strong>options</strong>, <strong>decision</strong>, <strong>consequences</strong>.",
+        "The last section is the one people skip and the one that matters most, because it's where you write down the price you knowingly agreed to pay."
+      ],
+      "introPt": [
+        "Decisões de arquitetura são as que ninguém percebe até ficarem caras. Dois anos depois alguém pergunta \"por que raios isso foi construído assim?\" e quem sabia já saiu da empresa.",
+        "A ferramenta para isso em inglês é o <strong>ADR</strong> — architecture decision record. Quatro seções curtas: <strong>contexto</strong>, <strong>opções</strong>, <strong>decisão</strong>, <strong>consequências</strong>.",
+        "A última é a que todo mundo pula e a que mais importa, porque é onde você registra o preço que concordou conscientemente em pagar."
+      ],
+      "vocab": [
+        { "en": "ADR (architecture decision record)", "pt": "registro de decisão de arquitetura", "example": "It's ADR-07, written in March." },
+        { "en": "context", "pt": "a situação que forçou a decisão", "example": "The context was three plants and a fixed date." },
+        { "en": "consequences", "pt": "o que a decisão custa e permite", "example": "The consequences section is the honest part." },
+        { "en": "constraint", "pt": "restrição que limitava as opções", "example": "The main constraint was the vendor's schema." },
+        { "en": "to supersede", "pt": "substituir uma decisão anterior", "example": "ADR-12 supersedes ADR-07." },
+        { "en": "reversible vs irreversible", "pt": "decisão que dá para voltar ou não", "example": "This one is cheap to reverse — let's just decide." },
+        { "en": "at the time", "pt": "na época, com o que se sabia", "example": "It was the right call at the time." },
+        { "en": "to revisit", "pt": "reavaliar depois", "example": "We agreed to revisit this at ten plants." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia o ADR",
+          "badge": "Leia e responda",
+          "heading": "ADR-07 · Build alerts internally rather than licensing the vendor module",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Context. Three plants live, a fourth joining in September. The vendor's alert module is available immediately; building our own takes three weeks. The vendor changed their schema without notice in 2025.",
+            "Options considered. (1) License the vendor module: fastest, 60k per year indexed, tied to their schema. (2) Build internally: three weeks, ~45k once, independent. (3) Build a thin wrapper over the vendor module: rejected — it inherits the coupling without saving the work.",
+            "Decision. Build internally.",
+            "Consequences. Go-live moves from 5 to 12 September; we accept that. We now own alerting for its whole life, including on-call. We are no longer exposed to the vendor's schema, but we are exposed to our own capacity — if the team shrinks, this becomes a burden. We agreed to revisit at ten plants, when the query layer needs redesign anyway.",
+            "Status: accepted, March 2026. Reversible at moderate cost for about six months; after that, effectively irreversible."
+          ],
+          "questions": [
+            {
+              "prompt": "What makes the consequences section credible?",
+              "options": [
+                { "text": "It names a cost of the chosen option — ownership and on-call — not just its benefits.", "correct": true },
+                { "text": "It lists the price.", "correct": false },
+                { "text": "It mentions September." }
+              ],
+              "why": "ADR que só lista vantagens da opção escolhida é propaganda. A honestidade fica na seção de consequências."
+            },
+            {
+              "prompt": "Why was option 3 rejected?",
+              "options": [
+                { "text": "It keeps the coupling to the vendor's schema without avoiding the build effort.", "correct": true },
+                { "text": "It was too expensive.", "correct": false },
+                { "text": "Nobody proposed it seriously." }
+              ],
+              "why": "Registrar por que uma opção foi descartada evita que ela seja reproposta todo trimestre."
+            },
+            {
+              "prompt": "Why does the ADR say when it should be revisited?",
+              "options": [
+                { "text": "Because decisions are correct in a context, and the context will change at ten plants.", "correct": true },
+                { "text": "To leave the decision open.", "correct": false },
+                { "text": "Because the team was unsure." }
+              ],
+              "why": "Marcar o gatilho de reavaliação é o que impede uma decisão certa de virar dogma."
+            }
+          ],
+          "explanation": "Contexto · opções, inclusive as rejeitadas e por quê · decisão · consequências honestas · gatilho de revisão."
+        },
+        {
+          "type": "orderList",
+          "title": "Monte o ADR na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas seções na ordem padrão de um ADR.",
+          "items": [
+            "Context: what situation forced a decision, including the constraints.",
+            "Options considered: including the ones rejected, and why.",
+            "Decision: the choice, in one sentence.",
+            "Consequences: what this costs us as well as what it buys us.",
+            "Status and revisit trigger: accepted when, reversible until when, revisit at what point."
+          ],
+          "explanation": "Contexto antes de opções. Consequências depois da decisão. E sempre um gatilho de revisão."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Defendendo a decisão dois anos depois",
+          "badge": "A ou B",
+          "instruction": "Alguém questiona uma decisão antiga. Escolha a resposta.",
+          "items": [
+            { "prompt": "\"Why is it built like this?\"", "a": "It was decided before I got involved.", "b": "It's ADR-07. Three plants, a vendor who'd broken their schema once, and a fixed September date. Given that, it was the right call — and we said we'd revisit at ten plants, which is roughly now.", "correct": "b", "why": "Contexto da época + a decisão + o gatilho que já estava previsto. Isso encerra a discussão em trinta segundos." },
+            { "prompt": "A decisão envelheceu mal.", "a": "We got it wrong.", "b": "It was right at the time and it's wrong now — the context changed. Let's write ADR-12 to supersede it rather than argue about the old one.", "correct": "b", "why": "Separar \"errado então\" de \"errado agora\" é o que permite mudar sem julgar quem decidiu." },
+            { "prompt": "Alguém repropõe uma opção descartada.", "a": "We already discussed that.", "b": "We considered the wrapper in ADR-07 and rejected it because it keeps the coupling without saving the build. Has something changed that makes it work now?", "correct": "b", "why": "Mostra o registro, dá a razão e abre a única porta legítima: informação nova." },
+            { "prompt": "Uma decisão pequena e reversível.", "a": "Let's write an ADR and take it to the architecture forum.", "b": "This is cheap to reverse. Let's just pick one and move — I'll note it in the README.", "correct": "b", "why": "Processo pesado em decisão reversível é desperdício. Reserve o ADR para o que é caro desfazer." }
+          ],
+          "explanation": "Contexto da época · certo então, errado agora · supersede em vez de discutir · e processo proporcional à reversibilidade."
+        },
+        {
+          "type": "categorize",
+          "title": "Isso merece um ADR?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada decisão pela reversibilidade.",
+          "categories": [
+            { "id": "adr", "name": "ADR · caro de reverter", "short": "ADR" },
+            { "id": "just", "name": "Só decida e siga", "short": "Decida" }
+          ],
+          "items": [
+            { "text": "Whether to build alerting in-house or license it", "cat": "adr" },
+            { "text": "The name of a variable in one module", "cat": "just" },
+            { "text": "Which cloud region the platform runs in", "cat": "adr" },
+            { "text": "The order of two columns on a screen", "cat": "just" },
+            { "text": "Whether contexts communicate by events or shared database", "cat": "adr" },
+            { "text": "Which chart library to use for one internal page", "cat": "just" }
+          ],
+          "explanation": "Regra prática: se desfazer custa mais de uma sprint ou envolve outra área, vale um ADR. Se não, decida e siga."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Defender a decisão no contexto da época.", "answer": "It was the right call at the time given the constraints", "extra": ["calling", "for"] },
+            { "hint": "Substituir uma decisão antiga.", "answer": "Let us write a new record that supersedes ADR seven", "extra": ["superseding", "over"] },
+            { "hint": "Marcar quando reavaliar.", "answer": "We agreed to revisit this decision at ten plants", "extra": ["revisiting", "in"] }
+          ],
+          "explanation": "\"At the time\", \"supersedes\" e \"revisit at\". Três expressões que dão vida longa às suas decisões."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Essas frases costumam ser ditas em frente a uma sala cética.",
+          "sentences": [
+            "It was the right call at the time, given the constraints we had.",
+            "We considered that option and rejected it — here's why.",
+            "Has something changed that makes it work now?",
+            "This is cheap to reverse, so let's just pick one and move.",
+            "Let's write a new record that supersedes it, rather than argue about the old one."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I write down the options I rejected, and why.", "pt": "Registro as opções que rejeitei, e por quê." },
+            { "en": "My consequences section names what the decision costs us.", "pt": "Minha seção de consequências nomeia o que a decisão nos custa." },
+            { "en": "Every significant decision has a revisit trigger.", "pt": "Toda decisão significativa tem um gatilho de reavaliação." },
+            { "en": "I match the process weight to how reversible the decision is.", "pt": "Ajusto o peso do processo à reversibilidade da decisão." },
+            { "en": "I say \"right at the time\" instead of defending or disowning old decisions.", "pt": "Digo \"certo na época\" em vez de defender ou renegar decisões antigas." }
+          ],
+          "doneMessage": "arquitetura defensável. O próximo tópico é automação de processos e workflow.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre decisões de arquitetura",
+        "intro": "Quatro hábitos que fazem uma decisão sobreviver à saída de quem a tomou.",
+        "cards": [
+          { "en": "\"It was the right call at the time\" is the sentence that lets a team change direction without blaming anyone. Learn it word for word.", "pt": "\"It was the right call at the time\" é a frase que permite mudar de rumo sem culpar ninguém. Decore palavra por palavra." },
+          { "en": "\"Supersede\" is the formal verb for replacing a decision: ADR-12 supersedes ADR-07. The old one stays readable — that's the point.", "pt": "\"Supersede\" é o verbo formal para substituir uma decisão: ADR-12 supersedes ADR-07. A antiga continua legível — é justamente essa a ideia." },
+          { "en": "Amazon's \"one-way door versus two-way door\" framing is standard vocabulary now: irreversible decisions deserve process, reversible ones deserve speed.", "pt": "A metáfora da Amazon — \"one-way door\" versus \"two-way door\" — já é vocabulário padrão: decisão irreversível merece processo, reversível merece velocidade." },
+          { "en": "Writing what a decision costs you is what makes people trust the rest of the document. Documents that only list benefits get read as sales.", "pt": "Escrever o que a decisão te custa é o que faz as pessoas confiarem no resto do documento. Documento que só lista benefícios é lido como venda." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now write down a decision in a way that still makes sense to someone two years from now.",
+        "pt": "Agora você registra uma decisão de um jeito que ainda fará sentido para alguém daqui a dois anos."
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "topic": "Supply Chain & Manufacturing",
+  "lessons": [
+    {
+      "title": "From Order to Delivery",
+      "focus": "O caminho de uma peça: lead time, estoque, incoterms e o que atrasa tudo",
+      "character": "us-female",
+      "objective": "Descrever e discutir uma cadeia de suprimentos em inglês: prazos, estoque, transporte e os pontos onde ela quebra.",
+      "intro": [
+        "In this industry, a two-dollar seal can stop a two-million-dollar job. That asymmetry is what makes supply chain language worth learning properly.",
+        "The core concepts are four: <strong>lead time</strong> (how long from order to arrival), <strong>stock</strong> (what we hold and where), <strong>criticality</strong> (what stops the job if it's missing) and <strong>incoterms</strong> (who owns the goods, and the risk, at each point).",
+        "Get those four right in English and you can join any conversation between procurement, the warehouse and the field."
+      ],
+      "introPt": [
+        "Neste setor, um retentor de dois dólares pode parar um trabalho de dois milhões. É essa assimetria que faz valer a pena aprender direito a linguagem de suprimentos.",
+        "Os conceitos centrais são quatro: <strong>lead time</strong> (quanto tempo do pedido à chegada), <strong>stock</strong> (o que se guarda e onde), <strong>criticality</strong> (o que para o trabalho se faltar) e <strong>incoterms</strong> (de quem é a mercadoria, e o risco, em cada ponto).",
+        "Acerte esses quatro em inglês e você entra em qualquer conversa entre compras, almoxarifado e campo."
+      ],
+      "vocab": [
+        { "en": "lead time", "pt": "prazo entre pedido e chegada", "example": "Lead time on that seal kit is eight weeks." },
+        { "en": "stock / inventory", "pt": "estoque", "example": "We hold two in stock at Macaé." },
+        { "en": "stockout", "pt": "ruptura de estoque", "example": "A stockout on a critical part costs a day of rig time." },
+        { "en": "critical spare", "pt": "peça crítica que se mantém em estoque", "example": "It's a critical spare — we never run to zero." },
+        { "en": "supplier / sourcing", "pt": "fornecedor / seleção de fornecimento", "example": "We're dual-sourcing that component now." },
+        { "en": "purchase order (PO)", "pt": "ordem de compra", "example": "The PO was raised on Tuesday." },
+        { "en": "incoterms (EXW, FOB, DAP)", "pt": "termos que definem quem assume custo e risco", "example": "It's DAP — they deliver to our site." },
+        { "en": "customs clearance", "pt": "desembaraço aduaneiro", "example": "Customs clearance adds two weeks in Brazil." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte o caminho de uma peça",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas etapas na ordem em que elas acontecem.",
+          "items": [
+            "The supervisor identifies the need and raises a requisition.",
+            "Procurement checks stock and raises a purchase order with the approved supplier.",
+            "The supplier manufactures or picks the part — this is the bulk of the lead time.",
+            "The part ships, and customs clearance adds time on any import.",
+            "Goods receipt at the warehouse, then transfer to the site that needs it."
+          ],
+          "explanation": "O prazo de fabricação e o desembaraço costumam ser 80% do lead time. Otimizar a aprovação interna quase nunca é onde está o ganho."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia a análise de estoque crítico",
+          "badge": "Leia e responda",
+          "heading": "Critical spares review · Macaé",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Item BH-4021, seal kit for ESP pumps. Unit cost 900 USD. Lead time from the supplier is eight weeks, plus about two weeks for customs clearance in Brazil.",
+            "Criticality: high. Without it, an ESP intervention cannot be completed. A day of lost rig time is invoiced at around 45,000 USD.",
+            "Current policy: hold two units at Macaé, reorder when stock reaches one. Consumption over the last year: eleven units, but clustered — four were used in a single fortnight in March.",
+            "Risk: with a reorder point of one and a ten-week replenishment, a cluster like March would leave us exposed for roughly six weeks.",
+            "Recommendation: raise the holding to four units and the reorder point to two. The additional working capital is about 1,800 USD. One avoided day of downtime pays for that twenty-five times over.",
+            "Second recommendation: qualify a second supplier. Single-sourcing a high-criticality item with a ten-week lead time is the real exposure, and it costs nothing to hold two approved sources."
+          ],
+          "questions": [
+            {
+              "prompt": "Why does the March cluster matter more than the annual total?",
+              "options": [
+                { "text": "Because consumption in bursts empties stock faster than the replenishment cycle can refill it.", "correct": true },
+                { "text": "Because March is a busy month.", "correct": false },
+                { "text": "Because four units is a lot." }
+              ],
+              "why": "Média anual esconde o padrão. É o pico agrupado que causa ruptura, não o consumo médio."
+            },
+            {
+              "prompt": "What makes the financial argument here so strong?",
+              "options": [
+                { "text": "1,800 USD of extra stock against 45,000 USD per day of lost rig time.", "correct": true },
+                { "text": "The part is cheap.", "correct": false },
+                { "text": "The supplier is reliable." }
+              ],
+              "why": "Comparar capital de giro com o custo de parada é o argumento que aprova qualquer política de estoque crítico."
+            },
+            {
+              "prompt": "Why is single-sourcing called \"the real exposure\"?",
+              "options": [
+                { "text": "Because one supplier plus a ten-week lead time means one problem stops everything.", "correct": true },
+                { "text": "Because the supplier is expensive.", "correct": false },
+                { "text": "Because of customs." }
+              ],
+              "why": "Fonte única em item crítico com prazo longo é um ponto único de falha — o mesmo conceito da arquitetura de sistemas."
+            }
+          ],
+          "explanation": "Consumo agrupado · custo de parada · fonte única. Três ideias e a política de estoque crítico se justifica sozinha."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o incoterm ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "EXW (ex works)", "right": "você retira na fábrica do fornecedor e assume tudo a partir dali" },
+            { "left": "FOB (free on board)", "right": "o fornecedor entrega a bordo no porto de origem; o risco passa para você ali" },
+            { "left": "DAP (delivered at place)", "right": "o fornecedor entrega no local combinado; ele carrega o transporte" },
+            { "left": "lead time", "right": "o tempo entre a colocação do pedido e a chegada da peça" },
+            { "left": "stockout", "right": "não ter o item quando ele é necessário" },
+            { "left": "dual sourcing", "right": "manter dois fornecedores aprovados para o mesmo item" }
+          ],
+          "explanation": "Incoterm define onde o risco muda de mãos. Numa disputa sobre carga danificada, é a única coisa que importa."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual argumento de suprimentos convence?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que consegue aprovação.",
+          "items": [
+            { "prompt": "Pedindo aumento de estoque de segurança.", "a": "We keep running out of seal kits, we need more stock.", "b": "Holding two more units costs 1,800 USD of working capital. One avoided day of rig downtime is 45,000. The March cluster showed we're exposed for six weeks.", "correct": "b", "why": "Capital de giro contra custo de parada, com o evento que provou o risco. Aprovação em um slide." },
+            { "prompt": "Explicando um atraso de importação.", "a": "The part is stuck in customs.", "b": "It cleared the supplier on the 12th. Customs clearance is running at two weeks, so arrival is around the 28th. I've asked the broker for a daily update.", "correct": "b", "why": "Onde está, quanto falta, quando chega e o que você está fazendo. \"Preso na alfândega\" não permite ninguém planejar." },
+            { "prompt": "Justificando um segundo fornecedor.", "a": "It's good practice to have two suppliers.", "b": "One supplier plus a ten-week lead time on a high-criticality item is a single point of failure. Qualifying a second source costs us nothing to hold.", "correct": "b", "why": "Nomeia o risco em linguagem de arquitetura e mostra que a mitigação é praticamente de graça." },
+            { "prompt": "Falando de consumo.", "a": "We used eleven units last year.", "b": "Eleven units last year, but four in a single fortnight in March. It's the cluster that breaks us, not the average.", "correct": "b", "why": "A média esconde o problema. Mostrar o pico é o que muda a decisão." }
+          ],
+          "explanation": "Capital de giro vs. parada · rastreio com datas · fonte única como ponto de falha · pico em vez de média."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o e-mail de suprimentos",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "Hi Paulo — update on the seal kits. The ___ order was raised on the 5th. Supplier ___ time is eight weeks, so they ship around the 30th. Add roughly two weeks for customs ___ and we're looking at mid-October. We currently hold one unit, which is our ___ point — if we get another cluster like March, we'd face a ___ . I'd like to raise the holding to four and qualify a second supplier: ___ -sourcing a critical item with a ten-week lead time is our real exposure.",
+          "gaps": [
+            { "options": ["purchase", "buying", "acquisition"], "answer": "purchase", "why": "Purchase order (PO) é o termo padrão." },
+            { "options": ["lead", "delivery", "waiting"], "answer": "lead", "why": "Lead time é a expressão fixa." },
+            { "options": ["clearance", "release", "liberation"], "answer": "clearance", "why": "Customs clearance = desembaraço aduaneiro." },
+            { "options": ["reorder", "minimum", "alert"], "answer": "reorder", "why": "Reorder point é o nível em que se dispara nova compra." },
+            { "options": ["stockout", "lack", "missing"], "answer": "stockout", "why": "Stockout é a ruptura de estoque." },
+            { "options": ["single", "unique", "sole"], "answer": "single", "why": "Single-sourcing é o termo consagrado. \"Sole source\" existe, mas descreve quando só há um fornecedor possível." }
+          ],
+          "explanation": "PO · lead time · customs clearance · reorder point · stockout · single-sourcing. Seis termos e o e-mail está escrito."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The delivery has a delay of two weeks.", "wrong": "has", "fix": "is running", "why": "Mais natural: \"the delivery is running two weeks late\". \"Has a delay\" é tradução literal." },
+            { "sentence": "We need to buy more stocks of that seal kit.", "wrong": "stocks", "fix": "stock", "why": "Stock como estoque é incontável. \"Stocks\" são ações na bolsa." },
+            { "sentence": "The part is retained in the customs.", "wrong": "the", "fix": "(nada)", "why": "\"In customs\", sem artigo. E prefira \"held\" a \"retained\"." },
+            { "sentence": "The provider will ship on the 30th.", "wrong": "provider", "fix": "supplier", "why": "Fornecedor de bens é <strong>supplier</strong> ou vendor. \"Provider\" é para serviços." },
+            { "sentence": "We have a rupture of stock on that item.", "wrong": "rupture", "fix": "stockout", "why": "\"Ruptura de estoque\" traduzida literalmente. Em inglês é stockout." }
+          ],
+          "explanation": "\"Stocks\", \"provider\" e \"rupture\" são as três traduções literais mais frequentes em e-mail de suprimentos."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I justify stock levels by comparing working capital to downtime cost.", "pt": "Justifico níveis de estoque comparando capital de giro com custo de parada." },
+            { "en": "I look at consumption clusters, not just annual averages.", "pt": "Olho os picos de consumo, não só a média anual." },
+            { "en": "I can explain what an incoterm decides.", "pt": "Sei explicar o que um incoterm define." },
+            { "en": "I say \"supplier\" and \"stock\", not \"provider\" and \"stocks\".", "pt": "Digo \"supplier\" e \"stock\", não \"provider\" nem \"stocks\"." }
+          ],
+          "doneMessage": "cadeia mapeada. A próxima lição entra na fábrica: qualidade e produção.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre suprimentos em inglês",
+        "intro": "Quatro coisas que mudam como o seu pedido é lido.",
+        "cards": [
+          { "en": "\"Stock\" is uncountable when it means inventory. \"Stocks\" means shares on a stock exchange — a confusing slip in a finance meeting.", "pt": "\"Stock\" é incontável no sentido de estoque. \"Stocks\" são ações na bolsa — um deslize confuso numa reunião com o financeiro." },
+          { "en": "Averages hide stockouts. Consumption in this industry is clustered, and it's the cluster that empties the shelf.", "pt": "Médias escondem rupturas. O consumo neste setor é agrupado, e é o agrupamento que esvazia a prateleira." },
+          { "en": "Incoterms decide exactly where risk passes from seller to buyer. In a damaged-cargo dispute, that three-letter code is the whole argument.", "pt": "Incoterms definem exatamente onde o risco passa do vendedor ao comprador. Numa disputa de carga danificada, aquele código de três letras é o argumento inteiro." },
+          { "en": "\"Single point of failure\" works just as well for suppliers as for servers — and it lands harder with engineers than \"supply risk\".", "pt": "\"Single point of failure\" funciona tão bem para fornecedores quanto para servidores — e pega mais com engenheiros do que \"risco de fornecimento\"." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now argue for the stock policy that keeps a two-million-dollar job running.",
+        "pt": "Agora você defende a política de estoque que mantém um trabalho de dois milhões rodando."
+      }
+    },
+    {
+      "title": "Manufacturing and Quality",
+      "focus": "Chão de fábrica: tolerância, inspeção, rastreabilidade e não conformidade de produto",
+      "character": "gb-male",
+      "objective": "Falar de produção e qualidade em inglês: especificação, tolerância, inspeção e o que acontece quando uma peça sai fora do especificado.",
+      "intro": [
+        "Manufacturing English is built on one idea: <strong>a part is not \"good\" or \"bad\" — it is inside or outside specification</strong>.",
+        "That is why the key words are <strong>spec</strong>, <strong>tolerance</strong>, <strong>inspection</strong>, <strong>traceability</strong> and <strong>non-conformance</strong>. Every one of them exists to replace an opinion with a measurement.",
+        "In oil and gas, traceability goes further than in most industries: for critical components, you can follow a single part back to the heat number of the steel it was made from. That level of record-keeping is why the vocabulary is so precise."
+      ],
+      "introPt": [
+        "O inglês de manufatura se apoia numa ideia: <strong>uma peça não é \"boa\" ou \"ruim\" — ela está dentro ou fora da especificação</strong>.",
+        "Por isso as palavras-chave são <strong>spec</strong>, <strong>tolerance</strong>, <strong>inspection</strong>, <strong>traceability</strong> e <strong>non-conformance</strong>. Todas existem para substituir uma opinião por uma medição.",
+        "Em óleo e gás, a rastreabilidade vai além do usual: em componentes críticos, dá para seguir uma peça até o número da corrida do aço de que foi feita. Esse nível de registro é o motivo de o vocabulário ser tão preciso."
+      ],
+      "vocab": [
+        { "en": "specification (spec)", "pt": "especificação técnica", "example": "The shaft is machined to spec." },
+        { "en": "tolerance", "pt": "faixa aceitável em torno da medida", "example": "Tolerance is plus or minus fifty microns." },
+        { "en": "out of tolerance / out of spec", "pt": "fora da faixa aceitável", "example": "Three units came out of tolerance." },
+        { "en": "inspection", "pt": "inspeção", "example": "Final inspection is 100% on critical parts." },
+        { "en": "traceability", "pt": "rastreabilidade até a origem", "example": "Traceability goes back to the heat number." },
+        { "en": "batch / lot", "pt": "lote de produção", "example": "The whole batch was quarantined." },
+        { "en": "to quarantine", "pt": "segregar até decidir", "example": "Quarantine it until engineering reviews." },
+        { "en": "scrap / rework / concession", "pt": "sucatear / retrabalhar / liberar com concessão", "example": "Scrap, rework or concession — those are the three options." }
+      ],
+      "exercises": [
+        {
+          "type": "categorize",
+          "title": "O que fazer com a peça fora de especificação?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada situação pela decisão correta.",
+          "categories": [
+            { "id": "scrap", "name": "Scrap · sucatear", "short": "Scrap" },
+            { "id": "rework", "name": "Rework · retrabalhar", "short": "Rework" },
+            { "id": "conc", "name": "Concession · usar como está, com aprovação", "short": "Concession" }
+          ],
+          "items": [
+            { "text": "A shaft machined 200 microns undersize — material cannot be added back.", "cat": "scrap" },
+            { "text": "A shaft machined 100 microns oversize — a second pass brings it to spec.", "cat": "rework" },
+            { "text": "A cosmetic surface mark outside the finish spec, on a non-sealing face, engineering-approved for this application.", "cat": "conc" },
+            { "text": "A casting with a crack detected on inspection.", "cat": "scrap" },
+            { "text": "A part with a burr that can be removed without affecting dimensions.", "cat": "rework" },
+            { "text": "A dimension 10 microns outside tolerance on a non-critical feature, signed off by the design authority.", "cat": "conc" }
+          ],
+          "explanation": "Concessão nunca é decisão do chão de fábrica sozinho — precisa da autoridade de projeto. É esse controle que impede a concessão de virar hábito."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o relatório de não conformidade",
+          "badge": "Leia e responda",
+          "heading": "NCR-2026-118 · Shaft batch B-7741",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "Description: three shafts from batch B-7741 measured 60 to 80 microns oversize on the seal diameter. Tolerance is plus or minus fifty microns. Detected at final inspection; none released to stores.",
+            "Containment: the full batch of twenty was quarantined and 100% inspected rather than sampled. Two further units were found marginal but inside tolerance.",
+            "Traceability: all twenty units trace to the same bar stock, heat number H-2291, and to the same machine and shift.",
+            "Root cause: tool wear compensation on machine 4 was set on a twenty-part interval. On harder material from this heat, wear exceeded the compensation before the interval ended.",
+            "Corrective action: compensation interval reduced to ten parts on that material grade, and hardness now recorded on goods receipt so the setter knows before the run starts. Owner: production engineering, by 20 August.",
+            "Disposition: the three oversize units are reworked to spec with a second grinding pass and re-inspected. No concession requested."
+          ],
+          "questions": [
+            {
+              "prompt": "Why was the whole batch 100% inspected rather than sampled?",
+              "options": [
+                { "text": "Because the cause was suspected to affect the whole run, so sampling could miss units.", "correct": true },
+                { "text": "Because the customer asked.", "correct": false },
+                { "text": "Because sampling is never allowed." }
+              ],
+              "why": "Quando a causa é sistemática, amostragem deixa passar. Contenção 100% é a resposta padrão até a causa ser conhecida."
+            },
+            {
+              "prompt": "What role did traceability play?",
+              "options": [
+                { "text": "It linked all units to one heat, one machine and one shift, which pointed straight at the cause.", "correct": true },
+                { "text": "It identified the customer.", "correct": false },
+                { "text": "It was required by the standard." }
+              ],
+              "why": "Rastreabilidade não é burocracia: é o que transforma três peças ruins numa causa raiz identificável."
+            },
+            {
+              "prompt": "Why is \"no concession requested\" worth stating?",
+              "options": [
+                { "text": "Because it records that the parts were brought to spec rather than accepted outside it.", "correct": true },
+                { "text": "Because concessions are forbidden.", "correct": false },
+                { "text": "To save time." }
+              ],
+              "why": "Declarar explicitamente que não houve concessão é o que mantém a estatística de concessões honesta e útil."
+            }
+          ],
+          "explanation": "Descrição com números · contenção · rastreabilidade · causa raiz · ação com dono e data · destinação declarada."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual descrição serve para qualidade?",
+          "badge": "A ou B",
+          "instruction": "Em manufatura, opinião não fecha nada. Escolha.",
+          "items": [
+            { "prompt": "Descrevendo uma peça problemática.", "a": "The shaft looks bad on the seal area.", "b": "The seal diameter measures 60 microns oversize; tolerance is plus or minus fifty.", "correct": "b", "why": "Medida contra tolerância. \"Looks bad\" não permite decidir entre scrap, rework e concessão." },
+            { "prompt": "Contendo o problema.", "a": "We'll check the next few parts carefully.", "b": "The full batch is quarantined and being 100% inspected until we know the cause.", "correct": "b", "why": "Contenção formal antes da causa. \"Prestar atenção\" não é contenção." },
+            { "prompt": "Explicando a causa.", "a": "The machine wasn't set up properly.", "b": "Tool wear compensation was on a twenty-part interval; this heat was harder, so wear exceeded compensation before the interval ended.", "correct": "b", "why": "Mecanismo específico. \"Setup errado\" não leva a nenhuma ação corretiva." },
+            { "prompt": "Fechando o NCR.", "a": "The parts were fixed.", "b": "The three units were reworked with a second grinding pass and re-inspected to spec. No concession requested.", "correct": "b", "why": "Destinação nomeada e reinspeção registrada. \"Consertado\" não passa numa auditoria." }
+          ],
+          "explanation": "Medida vs. tolerância · contenção formal · mecanismo específico · destinação registrada."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "tolerance", "right": "a faixa dentro da qual a medida ainda é aceitável" },
+            { "left": "out of spec", "right": "fora do que a especificação técnica permite" },
+            { "left": "to quarantine", "right": "segregar material até se decidir o que fazer com ele" },
+            { "left": "traceability", "right": "poder seguir a peça até o material e o processo que a produziram" },
+            { "left": "concession", "right": "usar a peça fora de especificação, com aprovação formal da engenharia" },
+            { "left": "heat number", "right": "o identificador da corrida de aço de que o material veio" }
+          ],
+          "explanation": "Heat number é o nível mais fino de rastreabilidade em óleo e gás. É o que permite recolher exatamente as peças afetadas, e só elas."
+        },
+        {
+          "type": "trueFalse",
+          "title": "Verdadeiro ou falso?",
+          "instruction": "Sobre qualidade em manufatura.",
+          "items": [
+            { "text": "A part slightly outside tolerance can be released if production is behind schedule.", "answer": false, "why": "Só com concessão formal aprovada pela autoridade de projeto — nunca por pressão de prazo." },
+            { "text": "Rework means bringing a part back within specification.", "answer": true, "why": "E ela precisa ser reinspecionada depois, como qualquer peça." },
+            { "text": "Sampling is adequate containment when the cause is unknown.", "answer": false, "why": "Se a causa pode ser sistemática, amostragem deixa passar. Contenção é 100% até saber." },
+            { "text": "Traceability to heat number matters mainly for audits.", "answer": false, "why": "Importa principalmente para recall: recolher exatamente as peças afetadas em vez de todas." },
+            { "text": "\"Out of spec\" and \"defective\" mean exactly the same thing.", "answer": false, "why": "Fora de especificação é um fato medido; defeituoso é um julgamento. Em qualidade, use sempre o fato." }
+          ],
+          "explanation": "Concessão é formal · rework reinspeciona · contenção é 100% · rastreabilidade é para recall · fato acima de julgamento."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The piece is out of the tolerance.", "wrong": "the", "fix": "(nada)", "why": "\"Out of tolerance\", sem artigo. E \"piece\" soa amador: use <strong>part</strong>." },
+            { "sentence": "We need to inspect 100% of the peaces in this batch.", "wrong": "peaces", "fix": "parts", "why": "\"Peace\" é paz. A peça é <strong>part</strong>; \"piece\" existe mas não é o termo técnico." },
+            { "sentence": "The shaft was rectified to bring it to spec.", "wrong": "rectified", "fix": "reworked", "why": "\"Retificar\" traduzido literalmente. A operação é <strong>ground</strong> (grinding) e o processo é rework." },
+            { "sentence": "The batch was blocked until engineering reviews it.", "wrong": "blocked", "fix": "quarantined", "why": "O termo técnico é quarantined ou put on hold." },
+            { "sentence": "This part attends the specification.", "wrong": "attends", "fix": "meets", "why": "Atender uma especificação é <strong>meet</strong> the spec." }
+          ],
+          "explanation": "\"Peaces\", \"rectified\" e \"attends\" são os três que mais aparecem em relatório de qualidade traduzido do português."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Essas frases são ditas em auditoria e em call com cliente — precisam sair precisas.",
+          "sentences": [
+            "The seal diameter measures sixty microns oversize; tolerance is plus or minus fifty.",
+            "The full batch is quarantined and being one hundred per cent inspected.",
+            "All twenty units trace to the same heat number and the same shift.",
+            "The three units were reworked and re-inspected to spec.",
+            "No concession was requested."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I describe a part by measurement against tolerance, never as \"good\" or \"bad\".", "pt": "Descrevo uma peça por medida contra tolerância, nunca como \"boa\" ou \"ruim\"." },
+            { "en": "I know the three dispositions: scrap, rework, concession.", "pt": "Conheço as três destinações: scrap, rework, concession." },
+            { "en": "I understand why containment is 100% until the cause is known.", "pt": "Entendo por que a contenção é 100% até a causa ser conhecida." },
+            { "en": "I say \"meets the spec\", not \"attends the spec\".", "pt": "Digo \"meets the spec\", não \"attends the spec\"." }
+          ],
+          "doneMessage": "qualidade dominada. O próximo tópico é o vocabulário de engenharia de óleo e gás.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre qualidade em inglês",
+        "intro": "Quatro precisões que aparecem em toda auditoria de cliente.",
+        "cards": [
+          { "en": "\"Out of spec\" is a measured fact; \"defective\" is a judgement. Quality documents in English always prefer the fact.", "pt": "\"Out of spec\" é um fato medido; \"defective\" é um julgamento. Documentos de qualidade em inglês preferem sempre o fato." },
+          { "en": "A \"heat number\" identifies the batch of molten steel a part came from. It is the finest level of traceability in oil and gas — and it's what makes a targeted recall possible.", "pt": "\"Heat number\" identifica a corrida de aço de que a peça veio. É o nível mais fino de rastreabilidade em óleo e gás — e o que torna possível um recall dirigido." },
+          { "en": "\"Concession\" means using a non-conforming part with formal engineering approval. It is legitimate, recorded, and should be rare.", "pt": "\"Concession\" é usar uma peça não conforme com aprovação formal da engenharia. É legítimo, registrado e deve ser raro." },
+          { "en": "In technical English, say \"part\" rather than \"piece\". \"Piece\" is understood but marks you as outside the trade.", "pt": "Em inglês técnico, diga \"part\" e não \"piece\". \"Piece\" é entendido, mas te marca como de fora do ramo." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now discuss a quality problem in the language that closes it, not the one that argues about it.",
+        "pt": "Agora você discute um problema de qualidade na linguagem que o encerra, não na que discute sobre ele."
+      }
+    }
+  ]
+}

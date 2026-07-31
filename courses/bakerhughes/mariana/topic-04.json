@@ -1,0 +1,390 @@
+{
+  "topic": "Leadership",
+  "lessons": [
+    {
+      "title": "Delegating and Setting Expectations",
+      "focus": "Pedir trabalho de forma clara: o quê, por quê, até quando e com quanta autonomia",
+      "character": "us-female",
+      "objective": "Delegar uma tarefa em inglês sem ambiguidade — e sem soar nem autoritária nem hesitante.",
+      "intro": [
+        "Delegating badly in English is easy: you soften the request so much that nobody realises it was a request.",
+        "<em>\"Maybe you could have a look at this at some point?\"</em> is not delegation. It is a wish.",
+        "Good delegation in English has four parts: the <strong>task</strong>, the <strong>why</strong>, the <strong>deadline</strong>, and the <strong>level of autonomy</strong>. That last one is the part most people forget — and it's the one that causes the rework."
+      ],
+      "introPt": [
+        "Delegar mal em inglês é fácil: você suaviza tanto o pedido que ninguém percebe que era um pedido.",
+        "<em>\"Maybe you could have a look at this at some point?\"</em> não é delegação. É um desejo.",
+        "Boa delegação em inglês tem quatro partes: a <strong>tarefa</strong>, o <strong>porquê</strong>, o <strong>prazo</strong> e o <strong>grau de autonomia</strong>. Essa última é a que quase todo mundo esquece — e é a que gera retrabalho."
+      ],
+      "vocab": [
+        { "en": "to own something", "pt": "ser o dono/responsável por algo", "example": "You'd own the vendor relationship end to end." },
+        { "en": "to hand over", "pt": "passar a responsabilidade", "example": "I'm handing the reporting over to you from June." },
+        { "en": "remit / scope of the role", "pt": "alçada, âmbito de atuação", "example": "That's outside your remit — send it to me." },
+        { "en": "to check in", "pt": "dar/ter um alinhamento rápido", "example": "Let's check in on Wednesday, ten minutes." },
+        { "en": "autonomy", "pt": "autonomia para decidir", "example": "You have full autonomy below fifty thousand." },
+        { "en": "to loop someone in", "pt": "incluir alguém no assunto", "example": "Loop me in if the vendor pushes back." },
+        { "en": "to escalate", "pt": "levar a uma instância superior", "example": "Escalate to me before you escalate to the sponsor." },
+        { "en": "stretch assignment", "pt": "tarefa que estica a capacidade da pessoa", "example": "This is a stretch assignment — that's deliberate." }
+      ],
+      "exercises": [
+        {
+          "type": "readingTask",
+          "title": "Leia o pedido e avalie",
+          "badge": "Leia e responda",
+          "heading": "Teams message · to a team member",
+          "instruction": "Leia a mensagem e responda.",
+          "passage": [
+            "Hi Ana — I'd like you to own the vendor evaluation for the alerts module. That means running the comparison, talking to the three suppliers directly, and coming back with a recommendation.",
+            "Why you: you already know the data model better than anyone, and this is a good stretch for the architecture side of your development plan.",
+            "Timing: recommendation by the 18th, so it lands before the steering committee on the 21st. You have full autonomy on how you run the comparison. Loop me in only if a supplier asks for something commercial — pricing and contracts stay with me."
+          ],
+          "questions": [
+            {
+              "prompt": "What exactly is Ana accountable for?",
+              "options": [
+                { "text": "Running the comparison and producing a recommendation.", "correct": true },
+                { "text": "Signing the contract with the chosen supplier.", "correct": false },
+                { "text": "Presenting at the steering committee." }
+              ],
+              "why": "\"Own the vendor evaluation… coming back with a recommendation.\" Contrato e preço ficam fora."
+            },
+            {
+              "prompt": "What is her level of autonomy?",
+              "options": [
+                { "text": "She must check every step with her manager.", "correct": false },
+                { "text": "Full autonomy on method; escalate only on commercial matters.", "correct": true },
+                { "text": "No autonomy at all." }
+              ],
+              "why": "Definir onde a autonomia termina é o que evita retrabalho e surpresa."
+            },
+            {
+              "prompt": "Why does the message explain \"why you\"?",
+              "options": [
+                { "text": "To be polite.", "correct": false },
+                { "text": "Because it connects the task to her skills and her development.", "correct": true },
+                { "text": "Because the task is unpleasant." }
+              ],
+              "why": "Delegar sem o \"why you\" vira distribuição de tarefa. Com ele, vira desenvolvimento."
+            }
+          ],
+          "explanation": "What · why you · by when · how much autonomy. Quatro linhas e não sobra ambiguidade."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual pedido é de verdade um pedido?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que a pessoa vai entender como um pedido claro.",
+          "items": [
+            { "prompt": "Pedindo uma análise para quinta.", "a": "Maybe you could look at this when you have some time?", "b": "Could you own the analysis and come back to me by Thursday midday?", "correct": "b", "why": "Dono + entrega + prazo com hora. A versão A é um desejo, não um pedido." },
+            { "prompt": "Definindo até onde a pessoa decide.", "a": "Use your judgement.", "b": "Full autonomy on method. Come to me before anything commercial.", "correct": "b", "why": "\"Use your judgement\" parece generoso, mas deixa a pessoa adivinhando onde está o limite." },
+            { "prompt": "Marcando o acompanhamento.", "a": "Let me know if you need anything.", "b": "Let's do a ten-minute check-in Wednesday — not to review, just to unblock.", "correct": "b", "why": "Check-in agendado tira o peso de a pessoa ter que pedir ajuda." },
+            { "prompt": "Dando um trabalho difícil de propósito.", "a": "It's easy, don't worry.", "b": "This is a stretch — that's deliberate. I'll back you if it gets bumpy.", "correct": "b", "why": "Chamar de fácil algo difícil destrói a confiança quando a pessoa trava." }
+          ],
+          "explanation": "Clareza não é dureza. Ambiguidade é que é falta de respeito com o tempo do outro."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "to own something", "right": "ser a pessoa responsável pelo resultado, não só pela execução" },
+            { "left": "remit", "right": "o âmbito de decisão que cabe àquela pessoa" },
+            { "left": "to loop someone in", "right": "trazer alguém para dentro do assunto a partir de agora" },
+            { "left": "to escalate", "right": "levar a decisão a quem tem mais alçada" },
+            { "left": "check-in", "right": "conversa curta e combinada para desbloquear, não para revisar" },
+            { "left": "stretch assignment", "right": "trabalho um pouco acima do nível atual, dado de propósito" }
+          ],
+          "explanation": "Own, remit e loop in são o vocabulário de quem lidera sem microgerenciar."
+        },
+        {
+          "type": "flowChoice",
+          "title": "Delegando uma tarefa difícil",
+          "badge": "Conversa",
+          "situation": "Você precisa passar a avaliação de fornecedores para alguém do time que nunca fez isso — e a pessoa está insegura.",
+          "turns": [
+            {
+              "who": "Ana",
+              "them": "I've never run a vendor evaluation before. Are you sure I'm the right person?",
+              "options": [
+                { "text": "You know the data model better than anyone here, and that's the hardest part. The process I can teach you in twenty minutes.", "correct": true, "why": "Separa o que ela já tem do que ela vai aprender. É o que dissolve a insegurança." },
+                { "text": "Don't worry, it's really simple.", "why": "Minimizar não tranquiliza — e quando ficar difícil, ela vai achar que o problema é ela." },
+                { "text": "There's nobody else available.", "why": "Verdadeiro talvez, mas transforma uma oportunidade em sobra." }
+              ]
+            },
+            {
+              "who": "Ana",
+              "them": "What if a supplier pushes me on price? I really don't want to commit to something wrong.",
+              "options": [
+                { "text": "Just say something neutral and move on.", "why": "Vago. Ela vai continuar insegura no momento em que acontecer." },
+                { "text": "Anything commercial is outside your remit — say \"pricing sits with Mariana, I'll pass it on\". That sentence is enough.", "correct": true, "why": "Dá a ela a frase exata para o momento difícil. Isso é delegar de verdade." },
+                { "text": "Then you should learn to negotiate.", "why": "Empurra o problema de volta sem dar ferramenta." }
+              ]
+            },
+            {
+              "who": "Ana",
+              "them": "Ok. And if I get stuck halfway?",
+              "options": [
+                { "text": "We have a ten-minute check-in Wednesday. And if something blocks you before that, message me — I'd rather unblock early than rescue late.", "correct": true, "why": "Ritmo combinado + permissão explícita de pedir ajuda antes." },
+                { "text": "You'll figure it out.", "why": "Autonomia sem rede de segurança é abandono." },
+                { "text": "Just send me everything and I'll review it all.", "why": "Isso desfaz a delegação — vira trabalho seu de novo." }
+              ]
+            }
+          ],
+          "explanation": "Nomeie a força dela → dê a frase para o momento difícil → combine o ritmo. Delegação em três turnos."
+        },
+        {
+          "type": "sentenceBuild",
+          "title": "Monte a frase na ordem certa",
+          "instruction": "Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.",
+          "items": [
+            { "hint": "Dar a responsabilidade.", "answer": "I would like you to own the vendor evaluation", "extra": ["owning", "for"] },
+            { "hint": "Definir o limite da autonomia.", "answer": "You have full autonomy on method but loop me in on pricing", "extra": ["autonomous", "into"] },
+            { "hint": "Combinar o acompanhamento.", "answer": "Let us do a ten minute check in on Wednesday", "extra": ["checking", "at"] }
+          ],
+          "explanation": "Responsabilidade, limite e ritmo. Três frases e a delegação está completa."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "I will delegate you the vendor evaluation.", "wrong": "you", "fix": "(nada)", "why": "Delegate não leva objeto indireto assim: \"I'll delegate the evaluation TO you\"." },
+            { "sentence": "Can you charge yourself of the supplier calls?", "wrong": "charge", "fix": "take charge", "why": "Calque do português. Em inglês: \"take charge of\" ou, melhor ainda, \"own\"." },
+            { "sentence": "Please advise me if the vendor pushes back.", "wrong": "advise", "fix": "let me know", "why": "\"Advise\" é aconselhar. Para avisar, use let me know ou loop me in." },
+            { "sentence": "She is responsible of the reporting.", "wrong": "of", "fix": "for", "why": "responsible FOR something. Sempre \"for\"." },
+            { "sentence": "I want that you decide this one.", "wrong": "that", "fix": "you to", "why": "Want não aceita \"that\": \"I want you to decide this one\"." }
+          ],
+          "explanation": "Cinco erros de calque do português que aparecem toda vez que um gestor brasileiro delega em inglês."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I state the task, the why, the deadline and the autonomy — all four.", "pt": "Digo a tarefa, o porquê, o prazo e a autonomia — os quatro." },
+            { "en": "I say \"own\" instead of \"be responsible of\".", "pt": "Digo \"own\" em vez de \"be responsible of\"." },
+            { "en": "I give people the exact sentence for the hard moment.", "pt": "Dou às pessoas a frase exata para o momento difícil." },
+            { "en": "I schedule the check-in instead of saying \"let me know if you need anything\".", "pt": "Agendo o check-in em vez de dizer \"me avise se precisar\"." }
+          ],
+          "doneMessage": "delegação limpa. A próxima lição é a parte mais difícil: feedback e conversas difíceis.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre delegar em inglês",
+        "intro": "Quatro detalhes que mudam como o seu pedido é recebido.",
+        "cards": [
+          { "en": "\"Own\" is the strongest word in leadership English. \"You own this\" means the outcome is yours, not just the task.", "pt": "\"Own\" é a palavra mais forte do inglês de liderança. \"You own this\" significa que o resultado é seu, não só a tarefa." },
+          { "en": "In English, over-softening reads as unclear, not as kind. \"Could you…?\" is polite enough — you don't need \"maybe\", \"perhaps\" and \"at some point\" on top.", "pt": "Em inglês, suavizar demais soa confuso, não gentil. \"Could you…?\" já é educado — não precisa de \"maybe\", \"perhaps\" e \"at some point\" por cima." },
+          { "en": "\"Loop me in\" and \"keep me posted\" are different: loop in means make me part of it; keep posted means just tell me what happened.", "pt": "\"Loop me in\" e \"keep me posted\" são diferentes: loop in é me incluir; keep posted é só me contar depois." },
+          { "en": "\"Escalate\" is neutral in English, not aggressive. \"I'm escalating this\" simply means moving it to the right level.", "pt": "\"Escalate\" é neutro em inglês, não agressivo. \"I'm escalating this\" é só levar ao nível certo." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now hand over real responsibility in English without leaving anything to guesswork.",
+        "pt": "Agora você passa responsabilidade de verdade em inglês, sem deixar nada para adivinhação."
+      }
+    },
+    {
+      "title": "Feedback and Difficult Conversations",
+      "focus": "Elogiar com peso, corrigir sem ferir e conduzir a conversa que ninguém quer ter",
+      "character": "gb-female",
+      "objective": "Dar feedback específico em inglês, positivo ou corretivo, e conduzir uma conversa difícil até um acordo concreto.",
+      "intro": [
+        "Feedback in English lives or dies on one thing: <strong>specificity</strong>. \"Great job\" and \"that wasn't good enough\" carry almost no information.",
+        "The structure that works everywhere is: <em>situation → behaviour → impact → ask</em>. What happened, what you did, what it caused, what I need next time.",
+        "It sounds mechanical written down. In the room it just sounds like someone who is being fair and clear — which is exactly what people want from a manager."
+      ],
+      "introPt": [
+        "Feedback em inglês vive ou morre de uma coisa: <strong>especificidade</strong>. \"Great job\" e \"that wasn't good enough\" quase não carregam informação.",
+        "A estrutura que funciona em qualquer lugar é: <em>situação → comportamento → impacto → pedido</em>. O que aconteceu, o que você fez, o que isso causou, o que eu preciso da próxima vez.",
+        "Escrito assim parece mecânico. Na sala, soa apenas como alguém sendo justo e claro — que é exatamente o que as pessoas querem de uma gestora."
+      ],
+      "vocab": [
+        { "en": "specific feedback", "pt": "feedback específico", "example": "Let me be specific about what worked." },
+        { "en": "impact", "pt": "o efeito que o comportamento causou", "example": "The impact was that the client had to ask twice." },
+        { "en": "to raise something with someone", "pt": "levantar um assunto com alguém", "example": "I'd like to raise something with you." },
+        { "en": "pattern", "pt": "padrão que se repete", "example": "This is the third time — I'm seeing a pattern." },
+        { "en": "one-to-one (1:1)", "pt": "conversa individual periódica", "example": "Let's take that to our one-to-one." },
+        { "en": "to be candid", "pt": "ser franco", "example": "Can I be candid with you?" },
+        { "en": "expectation", "pt": "expectativa combinada", "example": "Let me be clear about the expectation." },
+        { "en": "to land well / badly", "pt": "ser bem/mal recebido", "example": "The message didn't land well with the team." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte o feedback corretivo na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Situação → comportamento → impacto → pedido. Clique nas frases na ordem.",
+          "items": [
+            "Can I give you some feedback on yesterday's client call?",
+            "When the client asked about the timeline, you said you'd check and come back — but the answer was in the deck we'd prepared.",
+            "The impact was that they left the call without the one number they came for, and I had to email it afterwards.",
+            "Next time, if it's in the deck, answer live — even roughly. \"Around mid-July, I'll confirm in writing\" is enough.",
+            "You handled the technical questions really well, by the way. It was only that one moment."
+          ],
+          "explanation": "O elogio vem no fim, específico e verdadeiro — não como sanduíche para amaciar a crítica."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Qual feedback carrega informação?",
+          "badge": "A ou B",
+          "instruction": "Escolha a versão que a pessoa consegue usar amanhã.",
+          "items": [
+            { "prompt": "Elogiando uma apresentação.", "a": "Great presentation, well done!", "b": "The way you opened with the downtime number landed really well — the plant managers were with you from the first slide.", "correct": "b", "why": "Elogio específico ensina o que repetir. \"Great job\" não ensina nada." },
+            { "prompt": "Corrigindo um atraso recorrente.", "a": "You're always late with your reports.", "b": "The last three reports came in after the deadline. The impact is that I can't consolidate before the steering committee.", "correct": "b", "why": "Fatos contáveis + impacto. \"Always\" convida a pessoa a lembrar da vez em que não atrasou." },
+            { "prompt": "Abrindo uma conversa difícil.", "a": "We need to talk.", "b": "I'd like to raise something with you — it's about the vendor calls. Is now a good time?", "correct": "b", "why": "Nomear o assunto e perguntar do momento tira o pânico da abertura." },
+            { "prompt": "Depois de um erro grave.", "a": "It's fine, these things happen.", "b": "It's fixable, and I'm not worried about you. But let's understand how the wrong figure got into the deck.", "correct": "b", "why": "Separa a pessoa do problema sem apagar o problema." }
+          ],
+          "explanation": "Específico, contável, com impacto. Feedback vago é só uma emoção compartilhada."
+        },
+        {
+          "type": "flowChoice",
+          "title": "A conversa que você adiou três vezes",
+          "badge": "Conversa",
+          "situation": "Um colega sênior do seu time interrompe os outros em toda reunião. Duas pessoas já reclamaram com você. É hora do 1:1.",
+          "turns": [
+            {
+              "who": "Você abre",
+              "them": "(você começa a conversa)",
+              "options": [
+                { "text": "I'd like to raise something about how our meetings run. It's not a complaint about your work — that's not in question. Can I be candid?", "correct": true, "why": "Nomeia o tema, protege o que não está em jogo e pede licença para ser franca." },
+                { "text": "Some people have been complaining about you.", "why": "Começar com denúncia anônima põe a pessoa na defensiva imediatamente." },
+                { "text": "How do you think the meetings are going?", "why": "Pergunta aberta demais para abrir — ela adia a conversa em vez de começá-la." }
+              ]
+            },
+            {
+              "who": "Colleague",
+              "them": "Go ahead. Though I have to say I think our meetings are pretty efficient.",
+              "options": [
+                { "text": "They're not, and everyone knows it.", "why": "Confronto direto sem evidência vira discussão sobre quem tem razão." },
+                { "text": "They are efficient. What I'm seeing is a pattern of people being cut off mid-sentence — twice on Tuesday, three times last week. The impact is that the junior folks have stopped bringing things up.", "correct": true, "why": "Concorda no que é verdade, traz o padrão com números e mostra o custo real." },
+                { "text": "Some people feel a bit steamrolled sometimes.", "why": "Vago e impessoal. Ele não tem como agir sobre \"a bit\" e \"sometimes\"." }
+              ]
+            },
+            {
+              "who": "Colleague",
+              "them": "I move fast because those meetings drag. If people were sharper I wouldn't need to.",
+              "options": [
+                { "text": "That's not an acceptable attitude.", "why": "Julgar a atitude fecha a porta. Você quer mudança de comportamento, não uma confissão." },
+                { "text": "You're probably right that they drag. Here's what I'd like: let people finish, and if it's going long, say \"can we park it\" instead of cutting in. I'll hold the timekeeping — that's my job, not yours.", "correct": true, "why": "Aceita a preocupação legítima, dá o comportamento substituto e tira o peso dele." },
+                { "text": "Just try to interrupt less, ok?", "why": "\"Try to\" sem comportamento substituto quase nunca produz mudança." }
+              ]
+            },
+            {
+              "who": "Colleague",
+              "them": "Alright. I can do that.",
+              "options": [
+                { "text": "Thanks. I'll pay attention over the next few weeks and I'll tell you what I see — good or bad.", "correct": true, "why": "Fecha com acompanhamento explícito. Sem isso, a conversa evapora em duas semanas." },
+                { "text": "Great, thanks. Sorry to bring it up.", "why": "Pedir desculpa por dar feedback desfaz o que você acabou de construir." },
+                { "text": "Good. Let's not have this conversation again.", "why": "Termina com ameaça velada — a pessoa lembra disso e não da combinação." }
+              ]
+            }
+          ],
+          "explanation": "Nomear o tema → padrão com números → comportamento substituto → acompanhamento combinado."
+        },
+        {
+          "type": "multiSelect",
+          "title": "O que torna um feedback acionável?",
+          "instruction": "Marque todas as opções que ajudam. Há mais de uma.",
+          "prompt": "You're preparing feedback for someone in your team. What makes it usable?",
+          "options": [
+            { "text": "A specific situation the person can remember.", "correct": true },
+            { "text": "The observable behaviour, not your interpretation of their intent.", "correct": true },
+            { "text": "What the behaviour caused.", "correct": true },
+            { "text": "The words \"always\" and \"never\".", "correct": false },
+            { "text": "A concrete alternative for next time.", "correct": true },
+            { "text": "The opinions of colleagues who asked not to be named.", "correct": false }
+          ],
+          "explanation": "Situação, comportamento, impacto, alternativa. \"Always\" e fofoca anônima destroem qualquer feedback."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A palavra certa na hora difícil",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a formulação que funciona melhor em inglês corporativo.",
+          "items": [
+            {
+              "prompt": "Abrindo uma conversa difícil.",
+              "options": [
+                { "text": "I'd like to raise something with you.", "correct": true },
+                { "text": "I need to complain about something." },
+                { "text": "We have a problem with you." }
+              ],
+              "why": "\"Raise something\" é neutro. Não pré-julga nem alarma."
+            },
+            {
+              "prompt": "Pedindo permissão para ser direta.",
+              "options": [
+                { "text": "Can I be candid?", "correct": true },
+                { "text": "Can I be sincere?" },
+                { "text": "Can I be brutal?" }
+              ],
+              "why": "\"Candid\" é a palavra certa. \"Sincere\" sugere que você normalmente não é."
+            },
+            {
+              "prompt": "Descrevendo algo que se repete.",
+              "options": [
+                { "text": "You always do this." },
+                { "text": "I'm seeing a pattern — three times in the last month.", "correct": true },
+                { "text": "It happens sometimes." }
+              ],
+              "why": "\"Pattern\" com contagem é factual. \"Always\" é convite para discussão."
+            },
+            {
+              "prompt": "Dizendo que a mensagem foi mal recebida.",
+              "options": [
+                { "text": "The message didn't land well with the team.", "correct": true },
+                { "text": "The team hated your message." },
+                { "text": "The message fell down." }
+              ],
+              "why": "\"Land well/badly\" é a metáfora padrão em inglês para recepção de uma mensagem."
+            }
+          ],
+          "explanation": "Raise · candid · pattern · land. Quatro palavras que fazem o trabalho pesado numa conversa difícil."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Numa conversa difícil, o que importa é sair fluido — hesitar faz a frase soar mais dura do que ela é.",
+          "sentences": [
+            "I'd like to raise something with you. Can I be candid?",
+            "I'm seeing a pattern — three times in the last month.",
+            "The impact is that the junior members have stopped speaking up.",
+            "Here's what I'd like instead: let people finish, then say \"can we park it\".",
+            "I'll tell you what I see over the next few weeks — good or bad."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I give feedback as situation, behaviour, impact and ask.", "pt": "Dou feedback como situação, comportamento, impacto e pedido." },
+            { "en": "My praise is specific enough for someone to repeat it.", "pt": "Meu elogio é específico o bastante para a pessoa repetir o acerto." },
+            { "en": "I use \"I'm seeing a pattern\" with a count, never \"you always\".", "pt": "Uso \"I'm seeing a pattern\" com contagem, nunca \"you always\"." },
+            { "en": "I always offer a replacement behaviour, not just a criticism.", "pt": "Sempre ofereço um comportamento substituto, não só a crítica." },
+            { "en": "I close a difficult conversation with a follow-up I commit to.", "pt": "Fecho uma conversa difícil com um acompanhamento que eu me comprometo a fazer." }
+          ],
+          "doneMessage": "conversa difícil destravada. O próximo tópico é decidir — sozinha e em grupo.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre feedback em inglês",
+        "intro": "Quatro coisas que mudam a temperatura da conversa.",
+        "cards": [
+          { "en": "The \"feedback sandwich\" (praise-criticism-praise) is out of fashion in English-speaking companies. People hear the praise as packaging and stop trusting it.", "pt": "O \"sanduíche de feedback\" caiu de moda em empresas de língua inglesa. As pessoas leem o elogio como embalagem e param de acreditar nele." },
+          { "en": "\"I'd like to raise something\" is the universal opener. It signals seriousness without signalling anger.", "pt": "\"I'd like to raise something\" é a abertura universal. Sinaliza seriedade sem sinalizar raiva." },
+          { "en": "Describe behaviour, never intent. \"You interrupted twice\" is a fact; \"you don't respect the team\" is an accusation the person can deny.", "pt": "Descreva comportamento, nunca intenção. \"You interrupted twice\" é fato; \"you don't respect the team\" é acusação que a pessoa pode negar." },
+          { "en": "\"Land\" is the verb for how a message was received: \"how did that land?\" is a normal, caring question after a tough conversation.", "pt": "\"Land\" é o verbo para como a mensagem foi recebida: \"how did that land?\" é uma pergunta normal e cuidadosa depois de uma conversa dura." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now have the conversation you were avoiding — in English, and better than you would in Portuguese.",
+        "pt": "Agora você tem a conversa que estava evitando — em inglês, e melhor do que teria em português."
+      }
+    }
+  ]
+}

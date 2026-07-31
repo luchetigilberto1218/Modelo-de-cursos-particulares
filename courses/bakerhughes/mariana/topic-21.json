@@ -1,0 +1,347 @@
+{
+  "topic": "Oil & Gas Engineering Vocabulary",
+  "lessons": [
+    {
+      "title": "From Reservoir to Surface",
+      "focus": "O caminho do óleo: reservatório, poço, completação e produção",
+      "character": "us-male",
+      "objective": "Descrever em inglês as etapas da vida de um poço e nomear corretamente os equipamentos e conceitos que aparecem em qualquer conversa técnica do setor.",
+      "intro": [
+        "Everything Baker Hughes does sits somewhere on one line: from the rock, through the well, to the surface. Knowing where a conversation sits on that line is half of understanding it.",
+        "Four stages, four vocabularies: <strong>drilling</strong> (making the hole), <strong>evaluation</strong> (finding out what's down there), <strong>completion</strong> (making the well able to produce) and <strong>production</strong> (getting it out and keeping it flowing).",
+        "This lesson gives you the map. You don't need to be an engineer — you need to know which stage someone is talking about, and what the words mean when they say them."
+      ],
+      "introPt": [
+        "Tudo o que a Baker Hughes faz está em algum ponto de uma linha: da rocha, pelo poço, até a superfície. Saber onde uma conversa se situa nessa linha é metade de entendê-la.",
+        "Quatro etapas, quatro vocabulários: <strong>drilling</strong> (fazer o furo), <strong>evaluation</strong> (descobrir o que há lá embaixo), <strong>completion</strong> (deixar o poço apto a produzir) e <strong>production</strong> (tirar e manter fluindo).",
+        "Esta lição te dá o mapa. Você não precisa ser engenheira — precisa saber de que etapa a pessoa está falando e o que as palavras significam quando ela as diz."
+      ],
+      "vocab": [
+        { "en": "reservoir", "pt": "reservatório — a rocha que contém o hidrocarboneto", "example": "The reservoir is at 3,200 metres." },
+        { "en": "to drill / drilling rig", "pt": "perfurar / sonda", "example": "The rig drilled to target depth in nineteen days." },
+        { "en": "casing", "pt": "revestimento de aço do poço", "example": "Casing is cemented in place to isolate the formations." },
+        { "en": "completion", "pt": "completação — deixar o poço pronto para produzir", "example": "It's a dual-zone completion." },
+        { "en": "downhole", "pt": "no fundo do poço", "example": "The sensor is downhole, at 2,900 metres." },
+        { "en": "wellhead / Christmas tree", "pt": "cabeça de poço / árvore de natal", "example": "Pressure is measured at the wellhead." },
+        { "en": "flow rate", "pt": "vazão", "example": "Flow rate is 1,800 barrels per day." },
+        { "en": "workover / intervention", "pt": "intervenção num poço já existente", "example": "The workover took eleven days." }
+      ],
+      "exercises": [
+        {
+          "type": "orderList",
+          "title": "Monte a vida do poço na ordem certa",
+          "badge": "Coloque em ordem",
+          "instruction": "Clique nas etapas na ordem em que acontecem.",
+          "items": [
+            "Exploration and evaluation: understanding what is in the reservoir and whether it's worth producing.",
+            "Drilling: making the hole down to the target depth.",
+            "Casing and cementing: lining the hole with steel and isolating the formations.",
+            "Completion: installing what the well needs to produce safely — tubing, valves, the Christmas tree.",
+            "Production, and later intervention or workover when flow declines or something fails."
+          ],
+          "explanation": "Revestir e cimentar antes de completar. Se o isolamento entre formações falha, tudo o que vem depois herda o problema."
+        },
+        {
+          "type": "matching",
+          "title": "Associe o termo ao significado",
+          "instruction": "Clique na caixa à direita e escolha a definição certa.",
+          "pairs": [
+            { "left": "reservoir", "right": "a formação rochosa porosa que contém óleo ou gás" },
+            { "left": "casing", "right": "o tubo de aço que reveste o poço e isola as formações" },
+            { "left": "completion", "right": "o conjunto de equipamentos que torna o poço apto a produzir" },
+            { "left": "Christmas tree", "right": "o conjunto de válvulas na cabeça do poço que controla a produção" },
+            { "left": "downhole", "right": "qualquer coisa que fica no fundo do poço, não na superfície" },
+            { "left": "workover", "right": "a intervenção num poço já em produção para restaurar ou melhorar o fluxo" }
+          ],
+          "explanation": "\"Christmas tree\" é o nome real e sério do equipamento — vem do formato. Ninguém no setor acha graça, e você também não deve estranhar."
+        },
+        {
+          "type": "categorize",
+          "title": "Que etapa é essa?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada atividade.",
+          "categories": [
+            { "id": "drill", "name": "Drilling & Evaluation", "short": "Drilling" },
+            { "id": "compl", "name": "Completion", "short": "Completion" },
+            { "id": "prod", "name": "Production & Intervention", "short": "Production" }
+          ],
+          "items": [
+            { "text": "Running logging tools to measure formation properties", "cat": "drill" },
+            { "text": "Installing the tubing and the Christmas tree", "cat": "compl" },
+            { "text": "Replacing a failed ESP after two years in service", "cat": "prod" },
+            { "text": "Making hole to target depth with a directional assembly", "cat": "drill" },
+            { "text": "Perforating the casing so the reservoir can flow into the well", "cat": "compl" },
+            { "text": "Monitoring flow rate and pressure decline month by month", "cat": "prod" }
+          ],
+          "explanation": "Perfuração faz o buraco; completação decide como o poço vai produzir; produção é a vida longa dele — e é onde a maior parte do dinheiro é ganho ou perdido."
+        },
+        {
+          "type": "readingTask",
+          "title": "Leia o resumo do poço",
+          "badge": "Leia e responda",
+          "heading": "Well summary · MCA-14",
+          "instruction": "Leia e responda.",
+          "passage": [
+            "MCA-14 was drilled to 3,240 metres in twenty-two days, against a plan of nineteen. The extra three days were lost to hole instability in the shale section at 1,800 metres.",
+            "The well is cased and cemented to total depth. The cement bond log shows good isolation across the reservoir interval, which was the main concern after the instability.",
+            "Completion is single-zone with an electrical submersible pump (ESP) set at 2,900 metres. Downhole gauges report pressure and temperature every fifteen minutes.",
+            "Initial flow rate was 1,850 barrels per day, declining to about 1,600 over the first six months, which is within expectation for this reservoir.",
+            "The ESP is the main intervention risk: a failure means a workover, roughly eleven days of lost production plus the intervention cost. This is why the predictive alerting project is focused on ESPs first."
+          ],
+          "questions": [
+            {
+              "prompt": "Why was the cement bond log important here?",
+              "options": [
+                { "text": "Because hole instability raised the risk that the isolation across the reservoir wouldn't be good.", "correct": true },
+                { "text": "Because it measures flow rate.", "correct": false },
+                { "text": "Because it is always run after drilling." }
+              ],
+              "why": "O log foi lido à luz do problema anterior. Isolamento ruim depois de instabilidade compromete o poço inteiro."
+            },
+            {
+              "prompt": "Why does the ESP get so much attention?",
+              "options": [
+                { "text": "Its failure costs eleven days of lost production plus the workover.", "correct": true },
+                { "text": "It is the most expensive component.", "correct": false },
+                { "text": "It is new technology." }
+              ],
+              "why": "Custo de falha, não custo de compra. É por isso que a manutenção preditiva começa por ele."
+            },
+            {
+              "prompt": "How is the production decline described?",
+              "options": [
+                { "text": "As expected behaviour for this reservoir, not as a problem.", "correct": true },
+                { "text": "As a failure of the completion.", "correct": false },
+                { "text": "As a measurement error." }
+              ],
+              "why": "Declínio de produção é normal e previsto. Confundir declínio natural com falha é um erro caro de interpretação."
+            }
+          ],
+          "explanation": "Profundidade e prazo · isolamento verificado · tipo de completação · vazão e declínio · o risco de intervenção."
+        },
+        {
+          "type": "serialChoice",
+          "title": "A colocação certa do setor",
+          "badge": "Escolha certa",
+          "instruction": "Escolha a forma que um engenheiro de petróleo usaria.",
+          "items": [
+            { "prompt": "The well was drilled ___ 3,240 metres.", "options": [{ "text": "to", "correct": true }, { "text": "until" }, { "text": "in" }], "why": "drilled TO a depth. \"Until\" é para tempo, não profundidade." },
+            { "prompt": "The pump is set ___ 2,900 metres.", "options": [{ "text": "at", "correct": true }, { "text": "in" }, { "text": "on" }], "why": "Profundidade específica leva <strong>at</strong>." },
+            { "prompt": "Flow rate is 1,800 barrels ___ day.", "options": [{ "text": "per", "correct": true }, { "text": "by" }, { "text": "a" }], "why": "\"Barrels per day\" (bpd) é a forma padrão do setor. \"A day\" existe em fala informal, mas não em relatório." },
+            { "prompt": "The ESP ___ after two years in service.", "options": [{ "text": "failed", "correct": true }, { "text": "broke" }, { "text": "damaged" }], "why": "Equipamento <strong>fails</strong> em linguagem técnica. \"Broke\" é coloquial; \"damaged\" precisa de agente." },
+            { "prompt": "We're running a ___ on that well next month.", "options": [{ "text": "workover", "correct": true }, { "text": "revision" }, { "text": "maintenance intervention" }], "why": "Workover é o termo exato para intervenção em poço produtor." }
+          ],
+          "explanation": "Drilled to · set at · barrels per day · equipment fails · workover. Cinco colocações que aparecem em toda conversa de campo."
+        },
+        {
+          "type": "errorSpot",
+          "title": "Ache a palavra errada",
+          "badge": "Ache o erro",
+          "instruction": "Cada frase tem exatamente uma palavra errada. Clique nela.",
+          "items": [
+            { "sentence": "The well produces 1,800 barrels of petroleum per day.", "wrong": "petroleum", "fix": "oil", "why": "No dia a dia do setor se diz <strong>oil</strong>. \"Petroleum\" aparece em nomes de empresas e textos formais." },
+            { "sentence": "The drilling rig arrived in the platform yesterday.", "wrong": "in", "fix": "at / on", "why": "\"At the platform\" ou \"on the platform\". \"In the platform\" não funciona." },
+            { "sentence": "The pump is installed in 2,900 meters of depth.", "wrong": "in", "fix": "at", "why": "\"Set at 2,900 metres\" — e sem \"of depth\", que é redundante." },
+            { "sentence": "We need to make an intervention in that well.", "wrong": "make", "fix": "run / carry out", "why": "Intervenção se <strong>runs</strong> ou se carries out. \"Make an intervention\" é calque." },
+            { "sentence": "The production is declining since March.", "wrong": "is", "fix": "has been", "why": "Com \"since\" o inglês exige present perfect continuous: has been declining since March." }
+          ],
+          "explanation": "\"Petroleum\" em vez de \"oil\" é o que mais denuncia alguém de fora do campo numa conversa técnica."
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I can place any technical conversation on the drilling–completion–production line.", "pt": "Sei situar qualquer conversa técnica na linha perfuração–completação–produção." },
+            { "en": "I know what casing, completion and a Christmas tree are.", "pt": "Sei o que são casing, completação e árvore de natal." },
+            { "en": "I say \"oil\", not \"petroleum\", in everyday technical talk.", "pt": "Digo \"oil\", não \"petroleum\", na conversa técnica do dia a dia." },
+            { "en": "I understand that production decline is expected, not a failure.", "pt": "Entendo que declínio de produção é esperado, não uma falha." }
+          ],
+          "doneMessage": "mapa do poço na cabeça. A próxima lição entra nos equipamentos e nos modos de falha.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre o vocabulário de óleo e gás",
+        "intro": "Quatro coisas que fazem você soar de dentro do setor.",
+        "cards": [
+          { "en": "\"Christmas tree\" is the real, formal name of the valve assembly at the wellhead. Nobody in the industry finds it funny — use it without hesitating.", "pt": "\"Christmas tree\" é o nome real e formal do conjunto de válvulas na cabeça do poço. Ninguém no setor acha graça — use sem hesitar." },
+          { "en": "Everyone says \"oil\", almost nobody says \"petroleum\" in day-to-day technical conversation.", "pt": "Todo mundo diz \"oil\"; quase ninguém diz \"petroleum\" na conversa técnica cotidiana." },
+          { "en": "\"Downhole\" is one word and it's used as an adjective and an adverb: a downhole gauge, installed downhole.", "pt": "\"Downhole\" é uma palavra só, usada como adjetivo e advérbio: a downhole gauge, installed downhole." },
+          { "en": "Production decline is natural physics, not a fault. Treating a normal decline curve as a problem is a classic outsider mistake.", "pt": "Declínio de produção é física natural, não defeito. Tratar uma curva normal de declínio como problema é erro clássico de quem vem de fora." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now follow a well conversation from the reservoir to the surface.",
+        "pt": "Agora você acompanha uma conversa sobre poço do reservatório à superfície."
+      }
+    },
+    {
+      "title": "Equipment, Failure and Field Talk",
+      "focus": "Equipamentos, modos de falha e a linguagem curta e direta do campo",
+      "character": "gb-female",
+      "objective": "Nomear equipamentos e modos de falha em inglês, e comunicar-se com o campo no registro certo: curto, factual e sem ambiguidade.",
+      "intro": [
+        "Field English is a register of its own: short sentences, no hedging, numbers first. On a radio or a poor satellite line, elegance is a liability.",
+        "The vocabulary you need is about <strong>equipment</strong> (pump, valve, seal, bearing, motor) and <strong>failure modes</strong> (wear, fatigue, corrosion, erosion, seizure).",
+        "And one habit worth borrowing from the field: say the number and the unit first, then the explanation. <em>\"340 bar, still rising\"</em> beats <em>\"we're seeing quite a significant increase in the pressure reading\"</em> every single time."
+      ],
+      "introPt": [
+        "O inglês de campo é um registro próprio: frases curtas, sem rodeio, número primeiro. Num rádio ou numa linha de satélite ruim, elegância é um defeito.",
+        "O vocabulário necessário é de <strong>equipamentos</strong> (bomba, válvula, retentor, mancal, motor) e de <strong>modos de falha</strong> (desgaste, fadiga, corrosão, erosão, travamento).",
+        "E um hábito que vale roubar do campo: diga o número e a unidade primeiro, depois a explicação. <em>\"340 bar, still rising\"</em> ganha de <em>\"we're seeing quite a significant increase in the pressure reading\"</em> todas as vezes."
+      ],
+      "vocab": [
+        { "en": "seal / gasket", "pt": "retentor, vedação / junta", "example": "The seal failed after nine months." },
+        { "en": "bearing", "pt": "rolamento, mancal", "example": "Vibration points to a bearing." },
+        { "en": "valve", "pt": "válvula", "example": "The valve is stuck open." },
+        { "en": "wear", "pt": "desgaste progressivo", "example": "Normal wear for this duty." },
+        { "en": "fatigue", "pt": "fadiga — falha por ciclos repetidos", "example": "Fatigue cracking at the weld." },
+        { "en": "corrosion / erosion", "pt": "corrosão (química) / erosão (mecânica)", "example": "Sand is causing erosion, not corrosion." },
+        { "en": "to seize", "pt": "travar, agarrar", "example": "The shaft seized and the motor tripped." },
+        { "en": "to trip", "pt": "desarmar por proteção", "example": "The unit tripped on high current." }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "title": "Associe o modo de falha ao mecanismo",
+          "instruction": "Clique na caixa à direita e escolha a descrição certa.",
+          "pairs": [
+            { "left": "wear", "right": "perda gradual de material pelo contato normal de operação" },
+            { "left": "fatigue", "right": "trinca que cresce por ciclos repetidos de carga, mesmo abaixo do limite" },
+            { "left": "corrosion", "right": "ataque químico do material pelo fluido ou pelo ambiente" },
+            { "left": "erosion", "right": "remoção mecânica de material por partículas no fluxo, como areia" },
+            { "left": "seizure", "right": "travamento por perda de folga ou de lubrificação" },
+            { "left": "trip", "right": "desarme automático da proteção antes de o dano acontecer" }
+          ],
+          "explanation": "Corrosão é química, erosão é mecânica. Trocar as duas num relatório manda a engenharia investigar o material errado."
+        },
+        {
+          "type": "swipeChoice",
+          "title": "Registro de campo",
+          "badge": "A ou B",
+          "instruction": "Numa linha ruim, com pouco tempo. Escolha a versão que funciona.",
+          "items": [
+            { "prompt": "Reportando pressão subindo.", "a": "We're seeing quite a significant increase in the pressure reading over the last few minutes.", "b": "340 bar, still rising. Was 280 ten minutes ago.", "correct": "b", "why": "Número, unidade, tendência, referência. Doze palavras contra vinte e uma, e muito mais informação." },
+            { "prompt": "Descrevendo um desarme.", "a": "The pump stopped for some reason.", "b": "ESP tripped on high current at 14:20. Third trip this week.", "correct": "b", "why": "O que, por quê, quando, e o padrão. \"Por algum motivo\" não permite ninguém agir." },
+            { "prompt": "Você não tem certeza da causa.", "a": "It's probably the bearing.", "b": "Vibration is up on the drive end. Could be a bearing — I'd want the spectrum before I say so.", "correct": "b", "why": "Dado observado, hipótese marcada como hipótese, e o que resolveria a dúvida." },
+            { "prompt": "Pedindo uma parada.", "a": "Maybe we should consider stopping if you agree.", "b": "I want to stop the unit. Pressure is above the limit and I'm not comfortable running it. Stopping now.", "correct": "b", "why": "Em campo, hesitação custa tempo e às vezes custa gente. Decisão declarada, razão dada, ação tomada." }
+          ],
+          "explanation": "Número primeiro · o que aconteceu e quando · hipótese marcada · e decisão declarada, não sugerida."
+        },
+        {
+          "type": "listenChoose",
+          "title": "Ouça o rádio e escolha",
+          "badge": "Ouça e escolha",
+          "instruction": "Toque em cada áudio quantas vezes quiser e escolha a interpretação correta.",
+          "items": [
+            {
+              "audio": "ESP tripped on high current at fourteen twenty. Third trip this week. Vibration was up on the drive end before it went.",
+              "options": [
+                { "text": "A bomba desarmou por corrente alta, é o terceiro desarme na semana, e a vibração estava alta antes.", "correct": true },
+                { "text": "A bomba foi desligada manualmente às 14h20." },
+                { "text": "A bomba está funcionando normalmente com vibração alta." }
+              ],
+              "why": "<strong>tripped</strong> = desarmou pela proteção, não foi desligada por alguém. E \"before it went\" = antes de parar."
+            },
+            {
+              "audio": "It's erosion, not corrosion. There's sand in the flow and the wear pattern follows the stream.",
+              "options": [
+                { "text": "É erosão mecânica por areia, não ataque químico — o desgaste segue o fluxo.", "correct": true },
+                { "text": "É corrosão química acelerada pela areia." },
+                { "text": "Não há desgaste identificado." }
+              ],
+              "why": "O padrão de desgaste seguindo o fluxo é a assinatura clássica de erosão."
+            },
+            {
+              "audio": "Seal failed at nine months against an expected life of twenty-four. I'd treat that as a premature failure and pull the records for the batch.",
+              "options": [
+                { "text": "O retentor falhou muito antes do esperado; ele quer investigar o lote.", "correct": true },
+                { "text": "O retentor durou mais do que o esperado." },
+                { "text": "O retentor será substituído na próxima parada programada." }
+              ],
+              "why": "<strong>premature failure</strong> dispara investigação de lote — é aqui que a rastreabilidade da lição anterior entra em uso."
+            }
+          ],
+          "explanation": "Tripped · erosion vs corrosion · premature failure. Três expressões que decidem o que a engenharia vai investigar."
+        },
+        {
+          "type": "categorize",
+          "title": "Que tipo de falha é essa?",
+          "badge": "Classifique",
+          "instruction": "Classifique cada evidência.",
+          "categories": [
+            { "id": "wear", "name": "Wear / erosion · mecânico", "short": "Mecânico" },
+            { "id": "chem", "name": "Corrosion · químico", "short": "Químico" },
+            { "id": "fat", "name": "Fatigue · cíclico", "short": "Fadiga" }
+          ],
+          "items": [
+            { "text": "Grooves in the impeller following the flow path, with sand in the produced fluid", "cat": "wear" },
+            { "text": "Pitting on the internal surface where CO2 is present", "cat": "chem" },
+            { "text": "A crack initiating at a weld toe after eighteen months of cyclic loading", "cat": "fat" },
+            { "text": "Uniform thinning of the wall in a wet, sour environment", "cat": "chem" },
+            { "text": "Beach marks visible on the fracture surface", "cat": "fat" },
+            { "text": "Polished, gradually reduced clearance on a bearing surface", "cat": "wear" }
+          ],
+          "explanation": "\"Beach marks\" na superfície de fratura são a assinatura visual de fadiga. É o tipo de detalhe que faz um relatório de falha ser levado a sério."
+        },
+        {
+          "type": "dropdownGap",
+          "title": "Complete o relato de falha",
+          "badge": "Complete o texto",
+          "instruction": "Escolha a palavra certa em cada lacuna.",
+          "text": "The ESP ___ on high current at 14:20 — the third ___ this week. Vibration on the drive end had been rising for two days. On strip-down we found the ___ had lost clearance and the shaft had partially ___ . The impeller shows grooves following the flow path, which points to ___ from sand rather than chemical attack. Seal life was nine months against an expected twenty-four, so I'd call this a ___ failure and pull the batch records.",
+          "gaps": [
+            { "options": ["tripped", "stopped", "turned off"], "answer": "tripped", "why": "to trip = desarmar pela proteção automática." },
+            { "options": ["trip", "stop", "shutdown"], "answer": "trip", "why": "O substantivo é trip: \"the third trip this week\"." },
+            { "options": ["bearing", "gasket", "valve"], "answer": "bearing", "why": "Perda de folga com vibração crescente é assinatura de mancal." },
+            { "options": ["seized", "blocked", "locked"], "answer": "seized", "why": "to seize = travar por perda de folga ou lubrificação." },
+            { "options": ["erosion", "corrosion", "abrasion"], "answer": "erosion", "why": "Areia no fluxo removendo material mecanicamente = erosão." },
+            { "options": ["premature", "early", "anticipated"], "answer": "premature", "why": "\"Premature failure\" é o termo técnico que dispara investigação." }
+          ],
+          "explanation": "Tripped · bearing · seized · erosion · premature failure. Cinco palavras e o relato de falha está completo."
+        },
+        {
+          "type": "readAloud",
+          "title": "Agora fale em voz alta",
+          "instruction": "Ouça, repita e grave. Fale rápido e claro — é assim que se fala num rádio.",
+          "sentences": [
+            "Three-forty bar, still rising. Was two-eighty ten minutes ago.",
+            "ESP tripped on high current at fourteen twenty.",
+            "Vibration is up on the drive end — could be a bearing.",
+            "It's erosion, not corrosion. There's sand in the flow.",
+            "Nine months against an expected twenty-four — I'd call that premature."
+          ]
+        },
+        {
+          "type": "checkOff",
+          "title": "Antes de fechar esta lição",
+          "items": [
+            { "en": "I say the number and the unit before the explanation.", "pt": "Digo o número e a unidade antes da explicação." },
+            { "en": "I can tell corrosion from erosion and say why.", "pt": "Sei distinguir corrosão de erosão e dizer por quê." },
+            { "en": "I use \"tripped\" for a protective shutdown, not \"stopped\".", "pt": "Uso \"tripped\" para desarme de proteção, não \"stopped\"." },
+            { "en": "I mark a hypothesis as a hypothesis, even on the radio.", "pt": "Marco uma hipótese como hipótese, mesmo no rádio." },
+            { "en": "I declare a decision instead of suggesting it, when safety is involved.", "pt": "Declaro uma decisão em vez de sugeri-la, quando há segurança envolvida." }
+          ],
+          "doneMessage": "linguagem de campo dominada. Último tópico: vida útil e degradação do produto.",
+          "openMessage": "leve o que ficou em branco para a próxima aula com o professor."
+        }
+      ],
+      "insights": {
+        "kicker": "Sacadas · did you know?",
+        "title": "O que ninguém explica sobre falar com o campo",
+        "intro": "Quatro hábitos que fazem o campo confiar em quem está no escritório.",
+        "cards": [
+          { "en": "Field English puts the number first: \"340 bar, still rising\". On a bad line, the number is the part that must survive.", "pt": "O inglês de campo põe o número primeiro: \"340 bar, still rising\". Numa linha ruim, o número é a parte que precisa sobreviver." },
+          { "en": "\"Trip\" is both verb and noun: the pump tripped; that's the third trip this week. It always means a protective shutdown, never a manual one.", "pt": "\"Trip\" é verbo e substantivo: the pump tripped; that's the third trip this week. Sempre significa desarme de proteção, nunca parada manual." },
+          { "en": "Corrosion is chemical, erosion is mechanical. Getting this wrong sends engineering to investigate the wrong material entirely.", "pt": "Corrosão é química, erosão é mecânica. Errar isso manda a engenharia investigar o material completamente errado." },
+          { "en": "\"Premature failure\" is a trigger phrase: it opens a batch investigation. Use it when you mean it, and it will be taken seriously.", "pt": "\"Premature failure\" é uma expressão-gatilho: abre uma investigação de lote. Use quando for o caso, e será levada a sério." }
+        ]
+      },
+      "celebrate": {
+        "en": "You can now talk to the field in the register the field actually uses.",
+        "pt": "Agora você fala com o campo no registro que o campo realmente usa."
+      }
+    }
+  ]
+}
