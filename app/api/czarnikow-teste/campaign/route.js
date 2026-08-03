@@ -8,10 +8,13 @@ import { demoParticipants, demoBacklog, DEMO_CLASSES } from '../../../../data/cz
 /*
   Campanha Czarnikow Ago–Dez 2026 (ambiente de teste).
 
-  Devolve a pontuação do usuário logado + o ranking aberto (decisão do RH: todos
-  veem todos). O ranking mistura participantes reais (quem já sincronizou
-  progresso) com os colaboradores de demonstração, marcados com `demo: true` —
-  enquanto o roster real da CZ não chega.
+  Devolve a pontuação do usuário logado e a posição dele entre os participantes.
+
+  A campanha é FECHADA: cada colaborador vê apenas a si mesmo. A resposta nunca
+  carrega nome, pontuação ou progresso de outra pessoa — só o número da posição e
+  o total de participantes, calculados aqui no servidor. Os colaboradores de
+  demonstração continuam entrando na CONTAGEM (enquanto o roster real da CZ não
+  chega), mas nada deles é exposto.
 
   ADITIVO e tolerante a falha: qualquer erro devolve um payload vazio e a
   interface simplesmente não mostra a campanha.
@@ -48,7 +51,7 @@ function demoLessonNums(lessons, { excludeHr = false } = {}) {
 export async function GET() {
   const session = await getSession();
   if (!session?.id || !isValidStudent(session.id)) {
-    return NextResponse.json({ semester: SEMESTER, me: null, ranking: [] }, { status: 401 });
+    return NextResponse.json({ semester: SEMESTER, me: null, standing: null }, { status: 401 });
   }
 
   const lessons = lessonMeta();
@@ -78,7 +81,9 @@ export async function GET() {
       realLessonsDone: Object.values(realLessons).filter((l) => l?.done).length,
     };
 
-    // ── ranking aberto ───────────────────────────────────────────────────
+    // ── posição, sem expor ninguém ───────────────────────────────────────
+    // Monta a tabela completa APENAS para contar e ordenar; nada dela sai daqui
+    // além do número da posição do próprio usuário e do total de participantes.
     let real = [];
     try {
       real = await listAll();
@@ -91,45 +96,41 @@ export async function GET() {
       const cls = r.classes || DEMO_CLASSES[r.student] || { general: 0, private: 0 };
       rows.set(r.student, {
         student: r.student,
-        name: r.name || nameOf(r.student),
         demo: false,
-        score: computeScore({ lessons, state: r.lessons || {}, classes: cls }),
+        total: computeScore({ lessons, state: r.lessons || {}, classes: cls }).total,
       });
     }
     // o próprio usuário entra mesmo que ainda não tenha sincronizado nada
-    rows.set(me.student, { student: me.student, name: me.name, demo: false, score: me.score });
+    rows.set(me.student, { student: me.student, demo: false, total: me.score.total });
 
     for (const p of demoParticipants(demoLessonNums(lessons))) {
       if (rows.has(p.student)) continue;
       rows.set(p.student, {
         student: p.student,
-        name: p.name,
         demo: true,
-        score: computeScore({ lessons, state: p.state, classes: p.classes }),
+        total: computeScore({ lessons, state: p.state, classes: p.classes }).total,
       });
     }
 
-    const ranking = [...rows.values()]
-      .sort((a, b) => b.score.total - a.score.total)
-      .map((r, i) => ({
-        position: i + 1,
-        student: r.student,
-        name: r.name,
-        demo: r.demo,
-        total: r.score.total,
-        classPoints: r.score.classPoints,
-        materialPoints: r.score.materialPoints,
-        lessonsDone: r.score.lessonsDone,
-        tier: r.score.tier,
-      }));
+    const ordered = [...rows.values()].sort((a, b) => b.total - a.total);
+    const participants = ordered.length;
+    const position = ordered.findIndex((r) => r.student === me.student) + 1 || null;
+    // quantos participantes estão ATRÁS do usuário, em %
+    const aheadOfPct = position && participants > 1
+      ? Math.round(((participants - position) / (participants - 1)) * 100)
+      : null;
 
     return NextResponse.json({
       semester: SEMESTER,
-      me: { ...me, position: ranking.find((r) => r.student === me.student)?.position || null },
-      ranking,
-      hasDemo: ranking.some((r) => r.demo),
+      me: { ...me, position, participants },
+      standing: {
+        position,
+        participants,
+        aheadOfPct,
+        demoCount: ordered.filter((r) => r.demo).length,
+      },
     });
   } catch {
-    return NextResponse.json({ semester: SEMESTER, me: null, ranking: [] });
+    return NextResponse.json({ semester: SEMESTER, me: null, standing: null });
   }
 }

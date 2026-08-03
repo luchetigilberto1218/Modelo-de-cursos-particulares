@@ -47,9 +47,11 @@ export const SCORING = {
    On Course. Delivered exige ir além — aulas extras ou particulares.
 
    Os nomes seguem a viagem de uma carga, o vocabulário da própria Czarnikow.
-   Foi uma escolha deliberada: o ranking é ABERTO, então nenhum degrau pode
-   soar como julgamento de quem está embaixo — são etapas de um percurso, não
-   notas. E, ao contrário dos nomes anteriores (Foundation / Working Proficiency
+   Foi uma escolha deliberada: nenhum degrau pode soar como julgamento de quem
+   está embaixo — são etapas de um percurso, não notas. (A regra nasceu quando o
+   ranking ainda era aberto; hoje a campanha é fechada, mas o critério continua
+   valendo: a etapa também aparece no widget e nos marcos.)
+   E, ao contrário dos nomes anteriores (Foundation / Working Proficiency
    / Business Fluent / Advisor), estes não se confundem com nível de inglês:
    o tier mede ENGAJAMENTO na campanha, não proficiência. */
 export const TIERS = [

@@ -9,8 +9,12 @@ import { SEMESTER, SCORING, TIERS, projectSemester } from './campaign';
   Campanha Ago–Dez 2026 — página do participante (Czarnikow · ambiente de teste).
 
   Mostra a pontuação real (calculada no servidor a partir do progresso), a etapa,
-  o ranking aberto e um simulador de semestre. Só existe para o cliente
+  a posição do participante e um simulador de semestre. Só existe para o cliente
   `czarnikow-teste`; nenhum outro curso é afetado.
+
+  A campanha é FECHADA: cada colaborador vê apenas a si mesmo. Da comparação com
+  o grupo sobra só o número da posição ("4º de 12"), sem nome de ninguém — a API
+  nem chega a mandar a lista.
 
   A ÚNICA progressão do participante são as quatro etapas (Loading → Underway →
   On Course → Delivered). Não há badge de competência por trilha: mais um sistema
@@ -35,7 +39,7 @@ export default function CampaignPage({ clientId, theme }) {
   const { data, loading } = useCampaign(true);
   const logos = theme?.logos || {};
   const me = data?.me || null;
-  const ranking = data?.ranking || [];
+  const standing = data?.standing || null;
 
   return (
     <div style={{ minHeight: '100vh', background: C.bg, fontFamily: FONT, color: C.text, WebkitFontSmoothing: 'antialiased' }}>
@@ -82,7 +86,11 @@ export default function CampaignPage({ clientId, theme }) {
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 22 }}>
                 <HeroStat label="Seus pontos" value={me.score.total} big />
                 <HeroStat label="Etapa atual" value={me.score.tier.name} tint={TIER_COLOR[me.score.tier.id]} />
-                <HeroStat label="Posição" value={me.position ? `${me.position}º` : '—'} />
+                <HeroStat
+                  label="Sua posição"
+                  value={me.position ? `${me.position}º` : '—'}
+                  hint={me.participants ? `de ${me.participants}` : null}
+                />
                 <HeroStat label="Lições concluídas" value={me.score.lessonsDone} />
               </div>
 
@@ -108,16 +116,16 @@ export default function CampaignPage({ clientId, theme }) {
         <Simulator />
       </section>
 
-      {/* ── Ranking ───────────────────────────────────────────────────────── */}
+      {/* ── Sua posição (sem expor ninguém) ───────────────────────────────── */}
       <section style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 24px 0' }}>
         <Card
-          title="Ranking da campanha"
-          subtitle="Aberto: todos veem todos. Foi decisão do RH — a comparação puxa o grupo para cima."
+          title="Onde você está na campanha"
+          subtitle="Sua pontuação é sua. Ninguém vê a sua, e você não vê a de ninguém — só a sua posição no grupo."
         >
-          {ranking.length === 0 ? (
-            <p style={{ color: C.gray, margin: 0 }}>O ranking aparece assim que houver participantes.</p>
+          {!standing || !standing.position ? (
+            <p style={{ color: C.gray, margin: 0 }}>Sua posição aparece assim que a campanha começar.</p>
           ) : (
-            <Ranking rows={ranking} meId={me?.student} hasDemo={data?.hasDemo} />
+            <Standing s={standing} />
           )}
         </Card>
       </section>
@@ -171,7 +179,7 @@ export default function CampaignPage({ clientId, theme }) {
 }
 
 /* ── hero ─────────────────────────────────────────────────────────────────── */
-function HeroStat({ label, value, big, tint }) {
+function HeroStat({ label, value, big, tint, hint }) {
   return (
     <div style={{
       background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.14)',
@@ -180,7 +188,10 @@ function HeroStat({ label, value, big, tint }) {
       <div style={{ fontSize: 11.5, letterSpacing: 0.6, textTransform: 'uppercase', color: 'rgba(255,255,255,0.6)', fontWeight: 600, marginBottom: 6 }}>
         {label}
       </div>
-      <div style={{ fontSize: big ? 30 : 19, fontWeight: 700, lineHeight: 1.1, color: tint || '#fff' }}>{value}</div>
+      <div style={{ fontSize: big ? 30 : 19, fontWeight: 700, lineHeight: 1.1, color: tint || '#fff' }}>
+        {value}
+        {hint && <span style={{ fontSize: 13, fontWeight: 500, color: 'rgba(255,255,255,0.55)', marginLeft: 5 }}>{hint}</span>}
+      </div>
     </div>
   );
 }
@@ -386,63 +397,55 @@ function Slider({ label, value, min, max, onChange }) {
   );
 }
 
-/* ── ranking ──────────────────────────────────────────────────────────────── */
-function Ranking({ rows, meId, hasDemo }) {
+/* ── posição (campanha fechada) ───────────────────────────────────────────────
+   Substitui o antigo ranking aberto. O participante vê a própria colocação e
+   quanto do grupo ficou atrás dele — nunca quem são os outros nem quanto fizeram.
+   A API sequer envia a lista: só position, participants e aheadOfPct. */
+function Standing({ s }) {
+  const { position, participants, aheadOfPct, demoCount } = s;
+  // marcador na régua: 1º na ponta direita, último na esquerda
+  const pct = participants > 1 ? ((participants - position) / (participants - 1)) * 100 : 100;
+
   return (
     <>
-      <div style={{ overflowX: 'auto' }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14, minWidth: 560 }}>
-          <thead>
-            <tr style={{ textAlign: 'left', color: C.gray, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.6 }}>
-              <th style={th}>#</th>
-              <th style={th}>Participante</th>
-              <th style={{ ...th, textAlign: 'right' }}>Aula</th>
-              <th style={{ ...th, textAlign: 'right' }}>Material</th>
-              <th style={{ ...th, textAlign: 'right' }}>Total</th>
-              <th style={th}>Etapa</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => {
-              const isMe = r.student === meId;
-              return (
-                <tr key={r.student} style={{
-                  background: isMe ? C.accentLight : 'transparent',
-                  borderTop: `1px solid ${C.grayLight}`,
-                }}>
-                  <td style={{ ...td, fontWeight: 700, color: r.position <= 3 ? C.gold : C.gray }}>{r.position}</td>
-                  <td style={td}>
-                    <strong style={{ color: C.navy }}>{r.name}</strong>
-                    {isMe && <span style={pill(C.accent)}>você</span>}
-                    {r.demo && <span style={pill(C.gray)}>demo</span>}
-                  </td>
-                  <td style={{ ...td, textAlign: 'right', color: C.gray }}>{r.classPoints}</td>
-                  <td style={{ ...td, textAlign: 'right', color: C.gray }}>{r.materialPoints}</td>
-                  <td style={{ ...td, textAlign: 'right', fontWeight: 700 }}>{r.total}</td>
-                  <td style={{ ...td, color: TIER_COLOR[r.tier.id], fontWeight: 600, fontSize: 13 }}>{r.tier.name}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+      <div style={{ display: 'flex', gap: 26, alignItems: 'baseline', flexWrap: 'wrap', marginBottom: 22 }}>
+        <div>
+          <span style={{ fontSize: 46, fontWeight: 700, letterSpacing: -2, color: C.navy, lineHeight: 1 }}>{position}º</span>
+          <span style={{ fontSize: 16, color: C.gray, marginLeft: 8 }}>de {participants} participantes</span>
+        </div>
+        {aheadOfPct !== null && aheadOfPct !== undefined && (
+          <div style={{ fontSize: 14.5, color: C.text, lineHeight: 1.5 }}>
+            Você está à frente de <strong style={{ color: C.navy }}>{aheadOfPct}%</strong> do grupo.
+          </div>
+        )}
       </div>
-      {hasDemo && (
-        <p style={{ fontSize: 13, color: C.gray, margin: '14px 0 0', lineHeight: 1.5 }}>
-          ⓘ Os participantes marcados como <strong>demo</strong> são colaboradores fictícios, aqui só para
-          mostrar como o ranking se comporta. Eles somem quando a lista real da Czarnikow entrar.
-        </p>
-      )}
+
+      {/* régua: último → 1º, com o marcador do participante */}
+      <div style={{ position: 'relative', height: 12, borderRadius: 999, background: C.grayLight, marginBottom: 10 }}>
+        <div style={{
+          position: 'absolute', left: 0, top: 0, bottom: 0, width: `${pct}%`,
+          borderRadius: 999, background: `linear-gradient(90deg, ${C.accentLight}, ${C.accent})`, transition: 'width .6s ease',
+        }} />
+        <div style={{
+          position: 'absolute', left: `${pct}%`, top: -4, transform: 'translateX(-50%)',
+          width: 20, height: 20, borderRadius: '50%', background: C.navy, border: '3px solid #fff',
+          boxShadow: '0 1px 6px rgba(27,39,54,0.3)', transition: 'left .6s ease',
+        }} />
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11.5, color: C.gray }}>
+        <span>{participants}º</span><span>1º</span>
+      </div>
+
+      <p style={{ fontSize: 13, color: C.gray, margin: '18px 0 0', lineHeight: 1.55 }}>
+        ⓘ A campanha é <strong>fechada</strong>: sua pontuação não aparece para nenhum colega, e a de
+        ninguém aparece para você. A posição existe só para você medir o próprio ritmo.
+        {demoCount > 0 && (
+          <> Hoje {demoCount} dos {participants} participantes são <strong>fictícios</strong>, para a
+          contagem fazer sentido antes de a lista real da Czarnikow entrar.</>
+        )}
+      </p>
     </>
   );
-}
-
-const th = { padding: '8px 10px', fontWeight: 600 };
-const td = { padding: '11px 10px' };
-function pill(color) {
-  return {
-    marginLeft: 8, fontSize: 10.5, fontWeight: 700, letterSpacing: 0.4, textTransform: 'uppercase',
-    padding: '2px 7px', borderRadius: 999, border: `1px solid ${color}`, color,
-  };
 }
 
 /* ── blocos genéricos ─────────────────────────────────────────────────────── */

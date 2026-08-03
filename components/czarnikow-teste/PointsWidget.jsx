@@ -47,7 +47,9 @@ export default function PointsWidget({ clientId, compact = false }) {
             <span style={{ fontSize: compact ? 22 : 26, fontWeight: 700, letterSpacing: -0.6 }}>{s.total} pts</span>
             <span style={{ fontSize: 14, fontWeight: 600, color: TIER_COLOR[s.tier.id] || '#fff' }}>{s.tier.name}</span>
             {me.position && (
-              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>{me.position}º no ranking</span>
+              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>
+                {me.position}º{me.participants ? ` de ${me.participants}` : ''}
+              </span>
             )}
           </div>
         </div>

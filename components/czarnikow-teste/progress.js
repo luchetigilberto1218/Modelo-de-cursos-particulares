@@ -190,8 +190,9 @@ export function useLessonDone(studentId, num) {
 }
 
 /* -------------------------------------------------------------------------
- * Campanha Ago–Dez: pontuação + ranking, calculados no servidor (o ranking
- * precisa ver todo mundo). Recarrega quando o progresso local muda.
+ * Campanha Ago–Dez: pontuação + posição, calculadas no servidor (a posição
+ * precisa ver todo mundo, mas nada de terceiros volta para o cliente).
+ * Recarrega quando o progresso local muda.
  * ----------------------------------------------------------------------- */
 export function useCampaign(enabled = true) {
   const [data, setData] = useState(null);

@@ -96,6 +96,8 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
 
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '28px 24px 60px' }}>
 
+        {l.teacherGuide && <TeacherGuide g={l.teacherGuide} />}
+
         {l.objective && (
           <Section navy={navy} accent={accent} letter="O" title={l.objectiveLabel || 'Objetivo da lição'} bg={accentLight} border="#BBD6F2">
             <p style={{ margin: 0, fontSize: 15.5, lineHeight: 1.65, color: text }}>{l.objective}</p>
@@ -241,6 +243,93 @@ function Milestone({ count, c, clientId }) {
         Ver sua pontuação na campanha →
       </Link>
     </div>
+  );
+}
+
+/* ── Teacher Guide ──
+   Portado do components/LessonView.jsx (o renderizador do /czarnikow real), que
+   as lições convertidas tinham perdido — o DADO nunca saiu do course.json, só
+   faltava quem desenhasse. Recolhido por padrão e visível para todos, como no
+   curso original. Paleta dourada: separa na hora o que é plano de aula do que é
+   material do aluno. */
+const TG = { bg: '#FFFBF2', border: '#E8D9B5', ink: '#5A4A1F', label: '#8C6A00', gold: '#B08D57', green: '#1B7A3D' };
+
+function TeacherGuide({ g }) {
+  return (
+    <details style={{ background: TG.bg, border: `1px solid ${TG.border}`, borderRadius: 14, padding: 0, marginBottom: 20, overflow: 'hidden' }}>
+      <summary style={{
+        cursor: 'pointer', fontWeight: 700, color: TG.label, fontSize: 15, listStyle: 'none',
+        padding: '15px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        gap: 12, userSelect: 'none', flexWrap: 'wrap',
+      }}>
+        <span>Teacher Guide · plano da aula</span>
+        <span style={{ fontSize: 12, fontWeight: 600, color: TG.gold }}>
+          {g.pacing ? `${g.pacing} · ` : ''}toque para abrir
+        </span>
+      </summary>
+
+      <div style={{ padding: '0 20px 20px' }}>
+        {g.overview && (
+          <p style={{ fontSize: 14, lineHeight: 1.65, color: TG.ink, marginTop: 0 }}>{g.overview}</p>
+        )}
+
+        {Array.isArray(g.lessonFlow) && g.lessonFlow.length > 0 && (
+          <>
+            <TgLabel>Roteiro da aula</TgLabel>
+            <ol style={{ paddingLeft: 22, margin: 0 }}>
+              {g.lessonFlow.map((s, i) => (
+                <li key={i} style={{ marginBottom: 10, fontSize: 14, lineHeight: 1.55, color: TG.ink }}>
+                  <strong>{s.what || `Passo ${i + 1}`}</strong>
+                  {s.duration && <span style={{ color: TG.label, fontSize: 12, marginLeft: 8 }}>({s.duration})</span>}
+                  {s.instructions && <div style={{ marginTop: 2, whiteSpace: 'pre-wrap' }}>{s.instructions}</div>}
+                </li>
+              ))}
+            </ol>
+          </>
+        )}
+
+        {Array.isArray(g.extraPractice) && g.extraPractice.length > 0 && (
+          <>
+            <TgLabel>Exercícios extras · não estão no app — faça com o aluno</TgLabel>
+            <div style={{ display: 'grid', gap: 12 }}>
+              {g.extraPractice.map((b, bi) => (
+                <div key={bi} style={{ background: '#fff', border: `1px solid ${TG.border}`, borderRadius: 10, padding: 14 }}>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: TG.ink, marginBottom: b.note ? 2 : 8 }}>{b.title}</div>
+                  {b.note && <div style={{ fontSize: 12, color: TG.label, fontStyle: 'italic', marginBottom: 8 }}>{b.note}</div>}
+                  <ol style={{ paddingLeft: 20, margin: 0 }}>
+                    {(b.items || []).map((it, ii) => (
+                      <li key={ii} style={{ marginBottom: 6, fontSize: 13, lineHeight: 1.55, color: TG.ink }}>
+                        <span>{it.q}</span>
+                        {it.a && <span style={{ color: TG.green, fontWeight: 600 }}>{`   →   ${it.a}`}</span>}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+
+        {g.commonChallenges?.length > 0 && (
+          <>
+            <TgLabel>Onde o aluno costuma tropeçar</TgLabel>
+            <ul style={{ paddingLeft: 22, margin: 0 }}>
+              {g.commonChallenges.map((c, i) => (
+                <li key={i} style={{ marginBottom: 6, fontSize: 14, lineHeight: 1.55, color: TG.ink }}>{c}</li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
+    </details>
+  );
+}
+
+function TgLabel({ children }) {
+  return (
+    <h4 style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: 1, color: TG.label, margin: '20px 0 10px' }}>
+      {children}
+    </h4>
   );
 }
 

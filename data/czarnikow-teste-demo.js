@@ -1,10 +1,11 @@
 /*
   Colaboradores de DEMONSTRAÇÃO da campanha Czarnikow (ambiente de teste).
 
-  Servem para o RH enxergar o ranking funcionando antes de a campanha começar
-  (3/ago/2026) e antes de existir o roster real. São claramente marcados como
-  demo na interface (`demo: true`) e passam pelo MESMO motor de pontuação dos
-  participantes reais — ninguém tem número "chumbado".
+  Servem para a campanha ter um grupo antes de existir o roster real (a campanha
+  começa em 3/ago/2026). Como a campanha é FECHADA (cada um vê só a si mesmo),
+  eles não aparecem em lista nenhuma: entram apenas na CONTAGEM que gera a
+  posição do participante, e a interface avisa quantos são fictícios. Passam pelo
+  MESMO motor de pontuação dos reais — ninguém tem número "chumbado".
 
   QUANDO O ROSTER REAL CHEGAR: basta esvaziar DEMO_PEOPLE (ou trocar por
   `export const DEMO_PEOPLE = []`) e cadastrar as pessoas em data/users.json.
@@ -16,8 +17,8 @@ import { SEMESTER } from '../components/czarnikow-teste/campaign.js';
 /*
   O retrato é o de uma campanha por volta da 15ª das 20 semanas: gente espalhada
   por tiers diferentes e por perfis diferentes — quem é puxado pelas aulas, quem
-  é puxado pelo material, quem faz particulares. Assim o RH vê o ranking contando
-  uma história, e não dez linhas iguais.
+  é puxado pelo material, quem faz particulares. Assim a posição do participante
+  cai num grupo realista, e não numa fila de dez pessoas idênticas.
 
   nome, aulas em turma, aulas particulares, lições concluídas, semanas ativas.
 */
