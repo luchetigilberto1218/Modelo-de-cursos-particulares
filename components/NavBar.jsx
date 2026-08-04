@@ -52,6 +52,21 @@ export default function NavBar({ user, theme, clientId }) {
       </Link>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        {/* Atalho para o painel do professor — só no ambiente de teste da CZ e só
+            para quem é professor/coordenador. Aluno nunca vê (a rota também é 404). */}
+        {clientId === 'czarnikow-teste'
+          && (shownUser?.role === 'teacher' || shownUser?.role === 'coordinator') && (
+          <Link
+            href={`/${clientId}/professor`}
+            style={{
+              color: '#fff', fontSize: 12, fontWeight: 600, textDecoration: 'none',
+              background: 'rgba(42,170,226,0.22)', border: '1px solid rgba(42,170,226,0.5)',
+              padding: '6px 12px', borderRadius: 8,
+            }}
+          >
+            Painel do professor
+          </Link>
+        )}
         {shownUser && (
           <>
             <span style={{ color: '#fff', fontSize: 13, fontWeight: 500 }}>{shownUser.name}</span>
