@@ -84,14 +84,24 @@ export async function GET() {
       if (l) touched.add(`${l.level}|${l.track}`);
     }
 
+    // Quem já teve aula antes do lançamento começa adiante (users.json.startAt).
+    // Essas lições foram DADAS EM AULA, não estudadas no material — por isso não
+    // entram como concluídas (não valem ponto de material na campanha); só
+    // empurram o ponto de partida do professor.
+    const startAt = typeof u.startAt === 'number' ? u.startAt : null;
+
     const blockRows = [...touched].map((key) => {
       const [level, track] = key.split('|');
       const arr = blocks.get(key) || [];
       const done = arr.filter((l) => doneNums.has(l.num)).length;
-      const next = arr.find((l) => !doneNums.has(l.num)) || null;
+      // o startAt só vale para o bloco a que a lição pertence
+      const daPartida = startAt && arr.some((l) => l.num === startAt);
+      const next = arr.find((l) => !doneNums.has(l.num) && (!daPartida || l.num >= startAt)) || null;
+      const jaEmAula = daPartida ? arr.filter((l) => l.num < startAt).length : 0;
       return {
         level,
         track,
+        jaEmAula,
         levelName: LEVEL_LABEL[level] || level,
         trackName: trackName.get(track) || track,
         designated: designated.includes(key),

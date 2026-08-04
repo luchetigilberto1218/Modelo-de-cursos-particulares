@@ -200,6 +200,11 @@ function AlunoCard({ aluno, clientId }) {
                 </p>
                 <p style={{ fontSize: 13, color: C.gray, margin: 0 }}>
                   {principal.done} de {principal.total} concluídas nesta trilha
+                  {principal.jaEmAula > 0 && (
+                    <> · <strong style={{ color: C.text, fontWeight: 600 }}>
+                      {principal.jaEmAula === 1 ? 'a 1ª já foi dada em aula' : `as ${principal.jaEmAula} primeiras já foram dadas em aula`}
+                    </strong></>
+                  )}
                 </p>
               </>
             ) : (
