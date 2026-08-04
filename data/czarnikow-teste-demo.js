@@ -1,15 +1,14 @@
 /*
   Colaboradores de DEMONSTRAÇÃO da campanha Czarnikow (ambiente de teste).
 
-  Servem para a campanha ter um grupo antes de existir o roster real (a campanha
-  começa em 3/ago/2026). Como a campanha é FECHADA (cada um vê só a si mesmo),
-  eles não aparecem em lista nenhuma: entram apenas na CONTAGEM que gera a
-  posição do participante, e a interface avisa quantos são fictícios. Passam pelo
-  MESMO motor de pontuação dos reais — ninguém tem número "chumbado".
+  A lista de colegas fictícios (SEED) está VAZIA desde 03/08/2026: os 20
+  colaboradores reais foram cadastrados em data/users.json e a campanha passou a
+  contar gente de verdade. Ninguém fictício entra mais na posição de ninguém.
 
-  QUANDO O ROSTER REAL CHEGAR: basta esvaziar DEMO_PEOPLE (ou trocar por
-  `export const DEMO_PEOPLE = []`) e cadastrar as pessoas em data/users.json.
-  Nenhum outro arquivo precisa mudar.
+  O que sobrou aqui é só o login de DEMONSTRAÇÃO (`czt-teste`), que continua
+  recebendo aulas e histórico sintéticos — sem isso, quem abre a campanha para
+  apresentar cai numa tela zerada que não mostra o 60/40 funcionando. Aluno real
+  nunca recebe nada disso (demoBacklog devolve null para qualquer outro id).
 */
 
 import { SEMESTER } from '../components/czarnikow-teste/campaign.js';
@@ -23,16 +22,11 @@ import { SEMESTER } from '../components/czarnikow-teste/campaign.js';
   nome, aulas em turma, aulas particulares, lições concluídas, semanas ativas.
 */
 const SEED = [
-  { student: 'demo-ana',      name: 'Ana Beatriz Moraes',  general: 30, private: 5, lessons: 45, weeks: 15 },
-  { student: 'demo-juliana',  name: 'Juliana Petrelli',    general: 30, private: 4, lessons: 30, weeks: 15 },
-  { student: 'demo-rafael',   name: 'Rafael Nogueira',     general: 28, private: 3, lessons: 42, weeks: 15 },
-  { student: 'demo-thiago',   name: 'Thiago Aoki',         general: 26, private: 0, lessons: 48, weeks: 15 },
-  { student: 'demo-camila',   name: 'Camila Ferreira',     general: 24, private: 2, lessons: 35, weeks: 14 },
-  { student: 'demo-lucas',    name: 'Lucas Bernardes',     general: 22, private: 0, lessons: 26, weeks: 13 },
-  { student: 'demo-patricia', name: 'Patrícia Salgado',    general: 24, private: 1, lessons: 18, weeks: 13 },
-  { student: 'demo-eduardo',  name: 'Eduardo Tanaka',      general: 18, private: 0, lessons: 20, weeks: 11 },
-  { student: 'demo-marina',   name: 'Marina Cordeiro',     general: 14, private: 0, lessons: 12, weeks: 9 },
-  { student: 'demo-felipe',   name: 'Felipe Andrade',      general: 8,  private: 0, lessons: 6,  weeks: 6 },
+  // VAZIO desde 03/08/2026: os 20 colaboradores reais da Czarnikow foram
+  // cadastrados em data/users.json e a campanha passou a contar gente de
+  // verdade. Manter colegas fictícios ao lado de pessoas reais distorceria a
+  // posição de cada um. Para voltar a demonstrar a campanha "em regime" sem
+  // roster real, basta repovoar esta lista.
 ];
 
 const DAY = 86400000;
