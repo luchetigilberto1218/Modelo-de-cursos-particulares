@@ -47,7 +47,7 @@ const ROSTER = [
   { nome: 'Thiago Pereira',            trilha: 'Information Technology' },
   { nome: 'Vinicius Steck',            trilha: 'General Business', nivel: 'Rise 1' },
   { nome: 'Vitor Oliveira',            trilha: 'General Business' },
-  { nome: 'Vitória Duarte Matto',      trilha: 'Fiscal & Taxes' },
+  { nome: 'Vitória Duarte Matto',      trilha: 'Fiscal & Taxes' },  // a lista de inscrição diz Accounting; Fiscal & Taxes confirmado pelo usuário em 03/08/2026
   { nome: 'Douglas Salomão',           trilha: 'General Business' },
   { nome: 'Alessandra de Melo Cruz',   trilha: 'Fiscal & Taxes' },
   { nome: 'Claudia Gonçalves da Silva', trilha: 'General Business' },
