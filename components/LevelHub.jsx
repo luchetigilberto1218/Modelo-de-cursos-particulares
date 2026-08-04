@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import AudioPlayer from './AudioPlayer';
 import { useIdentity } from './czarnikow-teste/progress';
 import PointsWidget from './czarnikow-teste/PointsWidget';
+import { isCzarnikow } from '../lib/czarnikow';
 
 const HISTORY_PARAGRAPHS = [
   "Czarnikow was founded in London in 1861 by Caesar Czarnikow, a young Polish sugar broker who saw an opportunity in the growing British market. From a small office in the City, he began trading sugar from the Caribbean and built trust with refiners across Europe.",
@@ -78,8 +79,8 @@ function LevelCard({ level, clientId }) {
 export default function LevelHub({ course, theme, clientId }) {
   const logos = theme?.logos || {};
   const router = useRouter();
-  // Saudação + "Sair" só no ambiente de teste (login obrigatório); aditivo.
-  const cztProgress = clientId === 'czarnikow-teste';
+  // Saudação + "Sair" nas rotas da Czarnikow (login obrigatório); aditivo.
+  const cztProgress = isCzarnikow(clientId);
   const identity = useIdentity(cztProgress);
   async function handleLogout() {
     await fetch('/api/auth', { method: 'DELETE' });
@@ -138,7 +139,7 @@ export default function LevelHub({ course, theme, clientId }) {
         </p>
       </section>
 
-      {/* Campanha Ago–Dez: só no ambiente de teste da Czarnikow (aditivo). */}
+      {/* Campanha Ago–Dez: só nas rotas da Czarnikow (aditivo). */}
       {cztProgress && (
         <section style={{ maxWidth: 1080, margin: '0 auto', padding: '0 24px 28px' }}>
           <PointsWidget clientId={clientId} />
@@ -147,9 +148,8 @@ export default function LevelHub({ course, theme, clientId }) {
 
       {/* No celular a grade de 3 colunas fixas (+ o Apex preso à coluna 2) não
           colapsa: o hub pede 504px numa tela de 390 e o navegador encolhe a
-          página inteira para 77%. Uma coluna abaixo de 760px resolve. Gateado
-          no ambiente de teste — o /czarnikow real fica como está até o RH
-          validar, mesmo tendo o mesmo comportamento. */}
+          página inteira para 77%. Uma coluna abaixo de 760px resolve. Vale para
+          as duas portas da Czarnikow; os demais cursos seguem como estavam. */}
       {cztProgress && (
         <style>{`
           @media (max-width: 760px) {

@@ -9,6 +9,7 @@ import SpeakingExercise from './SpeakingExercise';
 import Icon from './Icon';
 import { useIdentity, useLessonDone } from './czarnikow-teste/progress';
 import CztLesson from './czarnikow-teste/CztLesson';
+import { isCzarnikow } from '../lib/czarnikow';
 
 function stripHtml(html) {
   return html?.replace(/<br>/g, ' ').replace(/<[^>]+>/g, '').trim() || '';
@@ -86,8 +87,8 @@ const TRACK_LABEL = {
 export default function LessonView({ lesson, lessonIndex, totalLessons, clientId, backHref, course, prevNum: prevNumProp, nextNum: nextNumProp }) {
   const l = lesson;
   const isOutdoor = l.type === 'outdoor';
-  // Progresso "acende a lição" — SÓ no ambiente de teste do Czarnikow (aditivo).
-  const cztProgress = clientId === 'czarnikow-teste';
+  // Progresso "acende a lição" — SÓ nas rotas da Czarnikow (aditivo).
+  const cztProgress = isCzarnikow(clientId);
   const cztIdentity = useIdentity(cztProgress);
   const cztLesson = useLessonDone(cztProgress ? cztIdentity?.student : null, l.num);
   // Navigation by real lesson `num`. The page passes prevNum/nextNum scoped to the

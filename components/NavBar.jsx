@@ -3,17 +3,18 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
+import { isCzarnikow } from '../lib/czarnikow';
 
 export default function NavBar({ user, theme, clientId }) {
   const router = useRouter();
   const homeHref = clientId ? `/${clientId}` : '/';
 
-  // No ambiente de teste do Czarnikow (login obrigatório), a NavBar descobre
+  // Nas rotas da Czarnikow (login obrigatório), a NavBar descobre
   // sozinha quem está logado para mostrar o nome + "Sair". Aditivo: se um `user`
   // for passado por prop, ele tem prioridade; os outros cursos ficam intactos.
   const [me, setMe] = useState(null);
   useEffect(() => {
-    if (user || clientId !== 'czarnikow-teste') return;
+    if (user || !isCzarnikow(clientId)) return;
     fetch('/api/czarnikow-teste/me', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (d?.student) setMe({ name: d.name, role: d.role }); })
@@ -52,9 +53,9 @@ export default function NavBar({ user, theme, clientId }) {
       </Link>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        {/* Atalho para o painel do professor — só no ambiente de teste da CZ e só
-            para quem é professor/coordenador. Aluno nunca vê (a rota também é 404). */}
-        {clientId === 'czarnikow-teste'
+        {/* Atalho para o painel do professor — só nas rotas da CZ e só para
+            quem é professor/coordenador. Aluno nunca vê (a rota também é 404). */}
+        {isCzarnikow(clientId)
           && (shownUser?.role === 'teacher' || shownUser?.role === 'coordinator') && (
           <Link
             href={`/${clientId}/professor`}

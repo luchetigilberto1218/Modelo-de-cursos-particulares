@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useIdentity, useDoneMap } from './czarnikow-teste/progress';
 import PointsWidget from './czarnikow-teste/PointsWidget';
+import { isCzarnikow } from '../lib/czarnikow';
 
 const LEVEL_COLOR = {
   confidence: '#7FD4F5',
@@ -116,8 +117,8 @@ export default function TrackPage({ course, theme, clientId, levelId, trackId })
   );
   const mobile = useIsMobile();
 
-  // Progresso "acende a lição" — SÓ no ambiente de teste; os demais cursos não mudam.
-  const trackProgress = clientId === 'czarnikow-teste';
+  // Progresso "acende a lição" — SÓ nas rotas da Czarnikow; os demais cursos não mudam.
+  const trackProgress = isCzarnikow(clientId);
   const identity = useIdentity(trackProgress);
   const doneMap = useDoneMap(trackProgress ? identity?.student : null);
   const doneCount = trackProgress ? lessons.filter((l) => doneMap[l.num]).length : 0;
