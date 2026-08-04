@@ -366,7 +366,9 @@ const course = JSON.parse(fs.readFileSync(COURSE, 'utf8'));
 const alvo = course.lessons.filter((l) => (
   l.level === ONLY_LEVEL
   && (!ONLY_TRACK || l.track === ONLY_TRACK)
-  && !(l.exercises || []).some((e) => e.type) // pula o que já é interativo
+  // basta sobrar UM exercício no formato antigo — lições parcialmente convertidas
+  // continuam aparecendo no relatório, com o que ainda falta nelas
+  && (l.exercises || []).some((e) => !e.type)
 ));
 
 const stat = { licoes: alvo.length, ex: 0, ok: 0, falha: 0 };
@@ -379,6 +381,7 @@ for (const l of alvo) {
   let algumOk = false;
   let todosOk = true;
   for (const e of l.exercises || []) {
+    if (e.type) { novos.push(e); algumOk = true; continue; } // já convertido antes
     stat.ex += 1;
     const r = converte(e);
     if (r.ex) {
