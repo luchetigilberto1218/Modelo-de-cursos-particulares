@@ -92,6 +92,8 @@ export default function SpeakingExercise({
   const [error, setError] = useState('');
   const [elapsed, setElapsed] = useState(0);
   const [recordingUrl, setRecordingUrl] = useState(null);
+  // Gravou, mas sem nota: o navegador não entregou transcrição (ver `degradado`).
+  const [semNota, setSemNota] = useState(false);
 
   const recognitionRef = useRef(null);
   const startedAtRef = useRef(0);
@@ -101,8 +103,28 @@ export default function SpeakingExercise({
   const chunksRef = useRef([]);
   const phaseRef = useRef(phase);
   useEffect(() => { phaseRef.current = phase; }, [phase]);
+  // O reconhecimento morreu no meio (serviço indisponível) e seguimos só gravando.
+  const degradadoRef = useRef(false);
 
-  const supported = typeof window !== 'undefined' && hasWebSpeech();
+  /*
+    Duas capacidades DIFERENTES, e o exercício não pode depender de uma só:
+
+    - GRAVAR (getUserMedia + MediaRecorder) funciona em praticamente todo
+      navegador atual.
+    - AVALIAR A PRONÚNCIA (Web Speech API) depende de um serviço de
+      reconhecimento que, nos navegadores Chromium que não são o Chrome
+      (Samsung Internet, Opera, Brave, Edge no Android), EXISTE na API mas
+      responde com erro de serviço.
+
+    Antes o botão inteiro sumia — ou pior, aparecia e a gravação morria junto
+    com o reconhecimento. Agora, sem avaliação, o aluno ainda grava e ouve a
+    própria voz para comparar com o áudio do exercício.
+  */
+  const podeGravar = typeof window !== 'undefined'
+    && !!navigator.mediaDevices?.getUserMedia
+    && typeof MediaRecorder !== 'undefined';
+  const podeAvaliar = typeof window !== 'undefined' && hasWebSpeech();
+  const supported = podeGravar || podeAvaliar;
 
   useEffect(() => {
     if (!supported && phase === 'idle') setPhase('unsupported');
@@ -123,7 +145,23 @@ export default function SpeakingExercise({
       clearInterval(timerRef.current);
       timerRef.current = null;
     }
+    // Quem normalmente fecha a gravação é o rec.onend. Sem reconhecimento (ou
+    // com ele caído), é este stop que precisa fechar — senão a tela fica
+    // eternamente em "Gravando...".
+    if (!recognitionRef.current || degradadoRef.current) {
+      setPhase((p) => (p === 'recording' ? 'done' : p));
+    }
   }, []);
+
+  // Cronômetro da gravação (para sozinho no limite de tempo).
+  const iniciaCronometro = useCallback((pararFn) => {
+    startedAtRef.current = Date.now();
+    timerRef.current = setInterval(() => {
+      const e = Math.round((Date.now() - startedAtRef.current) / 1000);
+      setElapsed(e);
+      if (e >= maxSeconds) pararFn();
+    }, 250);
+  }, [maxSeconds]);
 
   const start = useCallback(async () => {
     if (!supported) { setPhase('unsupported'); return; }
@@ -132,6 +170,8 @@ export default function SpeakingExercise({
     setDiff([]);
     setAccuracy(0);
     setElapsed(0);
+    setSemNota(false);
+    degradadoRef.current = false;
 
     setPhase('requesting-mic');
     if (recordingUrl) {
@@ -168,6 +208,16 @@ export default function SpeakingExercise({
       return;
     }
 
+    // Navegador que não avalia pronúncia: grava assim mesmo, sem nota.
+    if (!podeAvaliar) {
+      degradadoRef.current = true;
+      setSemNota(true);
+      recognitionRef.current = null;
+      iniciaCronometro(() => stop());
+      setPhase('recording');
+      return;
+    }
+
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const rec = new SpeechRecognition();
     rec.lang = lang;
@@ -185,11 +235,23 @@ export default function SpeakingExercise({
       setTranscript((finalText + interim).trim());
     };
     rec.onerror = (event) => {
+      // Com o gravador rodando, falha do reconhecimento NÃO derruba a gravação:
+      // é o caso dos navegadores Chromium fora do Chrome, onde o serviço de
+      // reconhecimento responde 'network'/'service-not-allowed'. O aluno segue
+      // gravando e ouve a própria voz; só não recebe a nota de pronúncia.
+      if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
+        degradadoRef.current = true;
+        setSemNota(true);
+        try { recognitionRef.current?.stop(); } catch (_) {}
+        recognitionRef.current = null;
+        return;
+      }
       setError(`${event.error || 'unknown error'}`);
       setPhase('error');
       stop();
     };
     rec.onend = () => {
+      if (degradadoRef.current) return;
       if (phaseRef.current !== 'recording') return;
       const finalTranscript = (finalText || transcript).trim();
       if (mode === 'read' && targetText && finalTranscript) {
@@ -205,21 +267,19 @@ export default function SpeakingExercise({
     };
 
     recognitionRef.current = rec;
-    startedAtRef.current = Date.now();
-    timerRef.current = setInterval(() => {
-      const e = Math.round((Date.now() - startedAtRef.current) / 1000);
-      setElapsed(e);
-      if (e >= maxSeconds) stop();
-    }, 250);
+    iniciaCronometro(() => stop());
 
     try {
       rec.start();
       setPhase('recording');
     } catch (e) {
-      setError(T('Erro ao iniciar gravação.', 'Error starting recognition.'));
-      setPhase('error');
+      // O reconhecimento não subiu, mas o microfone já está aberto: grava mesmo assim.
+      degradadoRef.current = true;
+      setSemNota(true);
+      recognitionRef.current = null;
+      setPhase('recording');
     }
-  }, [supported, lang, maxSeconds, mode, targetText, transcript, stop]);
+  }, [supported, podeAvaliar, lang, mode, targetText, transcript, stop, iniciaCronometro]);
 
   const reset = () => {
     stop();
@@ -228,6 +288,8 @@ export default function SpeakingExercise({
     }
     setRecordingUrl(null);
     setPhase('idle'); setTranscript(''); setDiff([]); setAccuracy(0); setError('');
+    setSemNota(false);
+    degradadoRef.current = false;
   };
 
   const accuracyColor = accuracy >= 80 ? '#22543D' : accuracy >= 50 ? '#7B5300' : '#742A2A';
@@ -241,8 +303,8 @@ export default function SpeakingExercise({
         background: '#FFF5F5', border: '1px solid #FEB2B2', color: '#742A2A', fontSize: 13,
       }}>
         🎤 {T(
-          'Seu navegador não suporta gravação de voz. Use Chrome, Edge ou Safari.',
-          'Your browser does not support voice recording. Use Chrome, Edge or Safari.'
+          'Este navegador não permite gravar áudio. Abra a lição no Chrome ou no Safari.',
+          'This browser cannot record audio. Open the lesson in Chrome or Safari.'
         )}
       </div>
     );
@@ -285,6 +347,21 @@ export default function SpeakingExercise({
       {phase === 'recording' && transcript && (
         <div style={{ marginTop: 12, fontSize: 14, color: '#4A5568', fontStyle: 'italic' }}>
           "{transcript}"
+        </div>
+      )}
+
+      {/* Gravou, mas este navegador não avalia a pronúncia. Dizer isso é melhor
+          do que deixar o aluno esperando uma nota que nunca vem. */}
+      {semNota && (phase === 'recording' || phase === 'done') && (
+        <div style={{
+          marginTop: 12, padding: '10px 12px', borderRadius: 8,
+          background: '#FFFBEB', border: '1px solid #FBD38D', color: '#7B5300',
+          fontSize: 12.5, lineHeight: 1.5,
+        }}>
+          {T(
+            'Este navegador não avalia a pronúncia automaticamente. Sua gravação funciona normalmente: ouça e compare com o áudio da frase. Para receber a nota, abra a lição no Chrome.',
+            'This browser does not score pronunciation automatically. Your recording still works: listen and compare it with the sentence audio. For the score, open the lesson in Chrome.'
+          )}
         </div>
       )}
 

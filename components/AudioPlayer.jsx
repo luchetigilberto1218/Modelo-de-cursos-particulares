@@ -54,6 +54,15 @@ function pickVoice(voices, voiceType = 'us-male') {
   return anyEn || voices[0] || null;
 }
 
+// O aparelho tem ALGUMA voz do idioma pedido? Fora do Chrome, muito celular
+// não tem nenhuma voz em inglês instalada — o speak() é aceito e não sai som.
+function temVozDoIdioma(voices, voiceType = 'us-male') {
+  if (!voices || voices.length === 0) return false;
+  const pref = VOICE_PREFS[voiceType] || VOICE_PREFS['us-male'];
+  const prefixo = pref.lang.split('-')[0].toLowerCase();
+  return voices.some((v) => v.lang?.toLowerCase().startsWith(prefixo));
+}
+
 function stripHtml(s) {
   return String(s || '')
     .replace(/<br\s*\/?>/gi, '. ')
@@ -110,10 +119,12 @@ export default function AudioPlayer({
 
   const useNative = !!audioUrl;
   const supportsSpeech = typeof window !== 'undefined' && !!window.speechSynthesis;
+  const falouRef = useRef(false);   // a fala do navegador REALMENTE começou?
 
   useEffect(() => {
     if (useNative) return;
-    if (!supportsSpeech) { setState('unsupported'); return; }
+    // Sem Web Speech não é mais "não suportado": o /api/tts entrega o MP3.
+    if (!supportsSpeech) return;
     function loadVoices() { setVoices(window.speechSynthesis.getVoices() || []); }
     loadVoices();
     window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -145,26 +156,68 @@ export default function AudioPlayer({
     }
     // Texto PT → voz neural pt-BR via Edge TTS (/api/tts, grátis). Muito melhor que a
     // voz robótica do navegador; se a rota falhar, cai no Web Speech como fallback.
-    if (vt.startsWith('pt')) {
-      const clean = stripHtml(text);
-      if (clean) {
-        const apiUrl = `/api/tts?voice=${encodeURIComponent(vt)}&text=${encodeURIComponent(clean.slice(0, 3000))}`;
-        audioRef.current = new Audio(apiUrl);
-        audioRef.current.dataset.url = apiUrl;
-        audioRef.current.onended = () => setState('idle');
-        audioRef.current.onerror = () => { audioRef.current = null; speakViaWebSpeech(vt); };
-        modeRef.current = 'mp3';
-        audioRef.current.playbackRate = rate;
-        audioRef.current.play().then(() => setState('playing')).catch(() => speakViaWebSpeech(vt));
-        return;
-      }
-    }
+    if (vt.startsWith('pt')) { playViaApi(vt, () => speakViaWebSpeech(vt)); return; }
+
+    // Inglês: tenta a voz do próprio aparelho (instantânea, sem rede). Mas só se
+    // ele TIVER voz do idioma — muito celular fora do Chrome não tem nenhuma, e
+    // aí a fala simplesmente não sai, em silêncio. Nesse caso vai direto de MP3.
+    if (!supportsSpeech || !temVozDoIdioma(voices, vt)) { playViaApi(vt); return; }
+    destravaAudio();   // ainda dentro do toque, para o plano B poder tocar depois
     speakViaWebSpeech(vt);
+  }
+
+  // Áudio de verdade, gerado no servidor (Edge TTS). Funciona em qualquer
+  // navegador, independe de voz instalada no aparelho.
+  // Sempre no MESMO elemento: um <audio> só pode tocar fora de um toque se já
+  // tiver sido liberado por um toque antes (ver destravaAudio).
+  function playViaApi(vt, aoFalhar) {
+    const clean = stripHtml(text);
+    if (!clean) { setState('idle'); return; }
+    try { window.speechSynthesis?.cancel(); } catch (_) {}
+    const apiUrl = `/api/tts?voice=${encodeURIComponent(vt)}&text=${encodeURIComponent(clean.slice(0, 3000))}`;
+    const el = audioRef.current || new Audio();
+    audioRef.current = el;
+    el.src = apiUrl;
+    el.dataset.url = apiUrl;
+    el.onended = () => setState('idle');
+    el.onerror = () => { if (aoFalhar) aoFalhar(); else setState('idle'); };
+    modeRef.current = 'mp3';
+    el.playbackRate = rate;
+    el.play()
+      .then(() => setState('playing'))
+      .catch(() => { if (aoFalhar) aoFalhar(); else setState('idle'); });
+  }
+
+  /*
+    Celular só deixa tocar áudio a partir de um toque do usuário. O nosso plano B
+    (trocar a fala do navegador pelo MP3 do servidor) só descobre que precisa
+    agir 1,2s DEPOIS do toque — e aí a reprodução já seria bloqueada.
+
+    Solução padrão: no próprio toque, damos play num WAV vazio no elemento que
+    vamos reusar. Isso marca o elemento como liberado pelo usuário, e o play()
+    seguinte passa. Se o plano B não for necessário, o elemento fica ali parado
+    sem custo nenhum.
+  */
+  const SILENCIO = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAgD4AAAB9AAACABAAZGF0YQAAAAA=';
+  function destravaAudio() {
+    try {
+      const el = audioRef.current || new Audio();
+      audioRef.current = el;
+      if (el.dataset.liberado) return;
+      el.src = SILENCIO;
+      const p = el.play();
+      if (p && p.then) p.then(() => {
+        // só pausa se ainda for o silêncio: o plano B pode já ter trocado o src
+        if (el.src === SILENCIO) { try { el.pause(); } catch (_) {} }
+        el.dataset.liberado = '1';
+      }).catch(() => {});
+      else el.dataset.liberado = '1';
+    } catch (_) { /* sem áudio destravado o plano B pode falhar, mas nada quebra */ }
   }
 
   // Fallback (e via padrão p/ EN sem MP3): Web Speech do navegador.
   function speakViaWebSpeech(vt) {
-    if (!supportsSpeech) { setState('idle'); return; }
+    if (!supportsSpeech) { playViaApi(vt); return; }
     try { window.speechSynthesis.cancel(); } catch (_) {}
     const cleanText = stripHtml(text);
     if (!cleanText) return;
@@ -174,12 +227,25 @@ export default function AudioPlayer({
     const v = pickVoice(voices, vt);
     if (v) { u.voice = v; u.lang = v.lang; }
     else u.lang = (VOICE_PREFS[vt]?.lang) || 'en-US';
-    u.onend = () => setState('idle');
-    u.onerror = () => setState('idle');
+    falouRef.current = false;
+    u.onstart = () => { falouRef.current = true; };
+    // Se o plano B assumiu, o cancel() desta fala dispara onend — e ele não pode
+    // apagar o estado do MP3 que acabou de começar a tocar.
+    u.onend = () => { if (modeRef.current === 'speech') setState('idle'); };
+    u.onerror = () => { if (!falouRef.current) playViaApi(vt); else setState('idle'); };
     utteranceRef.current = u;
     modeRef.current = 'speech';
     window.speechSynthesis.speak(u);
     setState('playing');
+    // Rede de segurança: em vários navegadores de celular o speak() é aceito e
+    // simplesmente não sai som — sem erro nenhum. Se em 1,2s a fala não começou,
+    // troca pelo MP3 do servidor.
+    setTimeout(() => {
+      if (modeRef.current !== 'speech' || falouRef.current) return;
+      const s = window.speechSynthesis;
+      if (s && (s.speaking || s.pending)) return;
+      playViaApi(vt);
+    }, 1200);
   }
 
   // Pausa mantendo a posição.
