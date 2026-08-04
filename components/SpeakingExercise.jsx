@@ -306,6 +306,19 @@ export default function SpeakingExercise({
     }
   }, [supported, podeAvaliar, lang, mode, targetText, transcript, stop, iniciaCronometro]);
 
+  /*
+    Um toque só: limpa a gravação anterior e já começa a próxima.
+
+    Antes eram dois toques ("Tentar de novo" voltava ao início e só depois vinha
+    "Gravar minha voz"). O start() precisa acontecer DENTRO do mesmo toque —
+    iPhone e Android só liberam o microfone a partir de um gesto do usuário, e
+    chamar depois (por efeito ou timer) seria bloqueado.
+  */
+  const regravar = () => {
+    stop();
+    start();   // start() já limpa transcrição, nota, erro e a gravação anterior
+  };
+
   const reset = () => {
     stop();
     if (recordingUrl) {
@@ -358,13 +371,13 @@ export default function SpeakingExercise({
           </>
         )}
         {phase === 'done' && (
-          <button onClick={reset} style={{ ...btnMic(false), background: '#0071E3' }}>
-            🔁 {T('Tentar de novo', 'Try again')}
+          <button onClick={regravar} style={{ ...btnMic(false), background: '#0071E3' }}>
+            🎤 {T('Gravar de novo', 'Record again')}
           </button>
         )}
         {phase === 'error' && (
-          <button onClick={reset} style={btnMic(false)}>
-            🔁 {T('Tentar de novo', 'Try again')}
+          <button onClick={regravar} style={btnMic(false)}>
+            🎤 {T('Gravar de novo', 'Record again')}
           </button>
         )}
       </div>
