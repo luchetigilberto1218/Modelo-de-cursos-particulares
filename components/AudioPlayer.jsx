@@ -110,6 +110,10 @@ export default function AudioPlayer({
   label = 'Listen',
   small = false,
   size,
+  // Prefere o áudio neural do servidor à voz do aparelho. As vozes embutidas
+  // variam demais — a do iPhone soa mecânica, e o aluno de inglês precisa de um
+  // modelo de pronúncia bom. O MP3 fica no CDN, então repetir é instantâneo.
+  preferServer = false,
 }) {
   const [state, setState] = useState('idle'); // 'idle' | 'playing' | 'paused' | 'unsupported'
   const [voices, setVoices] = useState([]);
@@ -161,6 +165,8 @@ export default function AudioPlayer({
     // Inglês: tenta a voz do próprio aparelho (instantânea, sem rede). Mas só se
     // ele TIVER voz do idioma — muito celular fora do Chrome não tem nenhuma, e
     // aí a fala simplesmente não sai, em silêncio. Nesse caso vai direto de MP3.
+    // Voz neural do servidor por preferência; a do aparelho fica de reserva.
+    if (preferServer) { playViaApi(vt, () => speakViaWebSpeech(vt)); return; }
     if (!supportsSpeech || !temVozDoIdioma(voices, vt)) { playViaApi(vt); return; }
     destravaAudio();   // ainda dentro do toque, para o plano B poder tocar depois
     speakViaWebSpeech(vt);

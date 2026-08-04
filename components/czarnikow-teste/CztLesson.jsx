@@ -117,7 +117,7 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
                     <div><strong style={{ color: navy }}>{v.en}</strong> <span style={{ color: gray }}>— {v.pt}</span></div>
                     {v.example && <div style={{ fontSize: 13.5, color: gray, marginTop: 3, fontStyle: 'italic' }}>e.g. {v.example}</div>}
                   </div>
-                  <AudioPlayer text={v.example ? `${v.en}. ${v.example}` : v.en} rate={0.85} label="" small voiceType={voiceType} />
+                  <AudioPlayer text={v.example ? `${v.en}. ${v.example}` : v.en} rate={0.85} label="" small voiceType={voiceType}  preferServer />
                 </div>
               ))}
             </div>
@@ -166,7 +166,7 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 14px', background: accentLight, borderRadius: 10 }}>
                   <span style={{ color: accent, fontWeight: 800 }}>✓</span>
                   <span style={{ flex: 1, fontSize: 14.5 }}>{t}</span>
-                  <AudioPlayer text={t} rate={0.85} label="" small voiceType={voiceType} />
+                  <AudioPlayer text={t} rate={0.85} label="" small voiceType={voiceType}  preferServer />
                 </div>
               ))}
             </div>
@@ -375,7 +375,7 @@ function IntroBlock({ l, navy, accent, accentLight, grayLight, voiceType }) {
         <div style={{ marginTop: 14, padding: '14px 16px', background: accentLight, borderLeft: `3px solid ${accent}`, borderRadius: 10, fontSize: 15, lineHeight: 1.7, color: '#33443F' }} dangerouslySetInnerHTML={{ __html: ptHtml }} />
       )}
       <div style={{ marginTop: 14, display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
-        <AudioPlayer text={stripHtml(Array.isArray(l.intro) ? l.intro.join(' ') : l.intro)} rate={0.95} label="Listen to introduction" voiceType={voiceType} />
+        <AudioPlayer text={stripHtml(Array.isArray(l.intro) ? l.intro.join(' ') : l.intro)} rate={0.95} label="Listen to introduction" voiceType={voiceType}  preferServer />
         {ptHtml && (
           <button onClick={() => setShowPt(s => !s)} style={{ padding: '9px 16px', borderRadius: 999, border: `1px solid ${grayLight}`, background: '#fff', color: navy, fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
             {showPt ? 'Ocultar tradução' : '🇧🇷 Ver tradução'}
@@ -600,7 +600,7 @@ function ReadAloud({ ex, c, voiceType }) {
         {(ex.sentences || []).map((s, i) => (
           <div key={i} style={{ padding: 14, background: c.offWhite, border: `1px solid ${c.grayLight}`, borderRadius: 12 }}>
             <div style={{ fontSize: 15.5, fontWeight: 500, marginBottom: 10 }}>{s}</div>
-            <AudioPlayer text={s} rate={0.85} label="Listen" small voiceType={ex.voice || voiceType} />
+            <AudioPlayer text={s} rate={0.85} label="Listen" small voiceType={ex.voice || voiceType}  preferServer />
             <div style={{ marginTop: 8 }}>
               <SpeakingExercise mode="read" targetText={s} levelId="starter" lang="en-US" />
             </div>

@@ -105,6 +105,10 @@ export default function SpeakingExercise({
   useEffect(() => { phaseRef.current = phase; }, [phase]);
   // O reconhecimento morreu no meio (serviço indisponível) e seguimos só gravando.
   const degradadoRef = useRef(false);
+  // Já falhou uma vez nesta página: não insiste mais. No iPhone o reconhecimento
+  // costuma funcionar na PRIMEIRA gravação e falhar da segunda em diante — sem
+  // isso, toda tentativa seguinte tropeçaria no mesmo lugar.
+  const avaliacaoDesistiuRef = useRef(false);
 
   /*
     Duas capacidades DIFERENTES, e o exercício não pode depender de uma só:
@@ -132,6 +136,9 @@ export default function SpeakingExercise({
 
   const stop = useCallback(() => {
     if (recognitionRef.current) {
+      // abort() antes de stop(): o iPhone só devolve o microfone quando a sessão
+      // de reconhecimento é realmente encerrada, e sem isso a próxima gravação falha.
+      try { recognitionRef.current.abort?.(); } catch (_) {}
       try { recognitionRef.current.stop(); } catch (_) {}
     }
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
@@ -181,7 +188,16 @@ export default function SpeakingExercise({
     chunksRef.current = [];
     try {
       // Get a stream we can record in parallel with Web Speech API.
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // O iPhone não devolve o microfone na hora: a segunda gravação seguida
+      // falhava aqui e o aluno via "não consegui acessar o microfone". Uma nova
+      // tentativa depois de meio segundo resolve.
+      let stream;
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      } catch (primeiraFalha) {
+        await new Promise((r) => setTimeout(r, 500));
+        stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      }
       streamRef.current = stream;
       // MediaRecorder captures the audio blob alongside the speech recognition.
       try {
@@ -209,7 +225,7 @@ export default function SpeakingExercise({
     }
 
     // Navegador que não avalia pronúncia: grava assim mesmo, sem nota.
-    if (!podeAvaliar) {
+    if (!podeAvaliar || avaliacaoDesistiuRef.current) {
       degradadoRef.current = true;
       setSemNota(true);
       recognitionRef.current = null;
@@ -241,7 +257,9 @@ export default function SpeakingExercise({
       // gravando e ouve a própria voz; só não recebe a nota de pronúncia.
       if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
         degradadoRef.current = true;
+        avaliacaoDesistiuRef.current = true;   // não tenta de novo nesta página
         setSemNota(true);
+        try { recognitionRef.current?.abort?.(); } catch (_) {}
         try { recognitionRef.current?.stop(); } catch (_) {}
         recognitionRef.current = null;
         return;
@@ -264,6 +282,12 @@ export default function SpeakingExercise({
         }
       }
       setPhase('done');
+      // O reconhecimento termina sozinho depois de um trecho de silêncio. Sem
+      // fechar o gravador aqui, ele seguia rodando: o arquivo nunca era
+      // finalizado (o aluno ficava sem a própria gravação) e o microfone
+      // continuava ocupado — que é o que fazia a gravação seguinte falhar no
+      // iPhone.
+      stop();
     };
 
     recognitionRef.current = rec;
@@ -275,6 +299,7 @@ export default function SpeakingExercise({
     } catch (e) {
       // O reconhecimento não subiu, mas o microfone já está aberto: grava mesmo assim.
       degradadoRef.current = true;
+      avaliacaoDesistiuRef.current = true;
       setSemNota(true);
       recognitionRef.current = null;
       setPhase('recording');
