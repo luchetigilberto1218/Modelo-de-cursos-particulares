@@ -19,6 +19,9 @@
   Uso:
     node scripts/czt-cadastra-roster.cjs --dry     (mostra, não grava)
     node scripts/czt-cadastra-roster.cjs --apply
+    node scripts/czt-cadastra-roster.cjs --senhas  (reimprime as senhas de quem
+                                                    JÁ está cadastrado, conferindo
+                                                    cada uma contra o hash)
 */
 
 const fs = require('fs');
@@ -27,6 +30,7 @@ const bcrypt = require('bcryptjs');
 
 const USERS = path.join(__dirname, '..', 'data', 'users.json');
 const APPLY = process.argv.includes('--apply');
+const SENHAS = process.argv.includes('--senhas');
 const CLIENT = 'czarnikow-teste';
 
 /* Trilha vem do CSV de presença; `nivel` só onde o relatório de julho registrou
@@ -70,6 +74,32 @@ function senhaPara(i) {
   const s = SILABAS[i % SILABAS.length];
   const n = 234 + (i * 37) % 700;   // 3 dígitos, determinístico
   return `${s}-${n}`;
+}
+
+/* ── reimpressão das senhas ─────────────────────────────────────────────────
+   A senha é determinística (índice na lista), então dá para reconstituí-la a
+   qualquer momento sem guardar nada em texto puro. Cada uma é CONFERIDA contra o
+   hash antes de aparecer: se alguém trocou a senha de um aluno na mão, a linha
+   sai marcada em vez de entregar uma senha que não funciona. */
+if (SENHAS) {
+  const usuarios = JSON.parse(fs.readFileSync(USERS, 'utf8')).users;
+  const norm = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/\s+/g, ' ').trim().toLowerCase();
+  const porNome = new Map(usuarios.map((u) => [norm(u.name), u]));
+  let ok = 0; const linhas = [];
+  ROSTER.forEach((p, i) => {
+    const u = porNome.get(norm(p.nome));
+    const senha = senhaPara(i);
+    if (!u) { linhas.push(`  ✗ ${p.nome} — não está cadastrado`); return; }
+    const confere = bcrypt.compareSync(senha, u.password);
+    if (confere) ok += 1;
+    linhas.push(`  ${confere ? ' ' : '✗'} ${p.nome.padEnd(29)} | ${senha.padEnd(12)} | ${(u.stage || '—').padEnd(13)} | ${p.trilha}`);
+  });
+  console.log(`\nSenhas conferidas contra o hash: ${ok} de ${ROSTER.length}\n`);
+  console.log('   NOME COMPLETO (é o login)     | SENHA        | NÍVEL         | TRILHA');
+  console.log('  ' + '-'.repeat(84));
+  linhas.forEach((l) => console.log(l));
+  process.exit(0);
 }
 
 /* ── execução ──────────────────────────────────────────────────────────────── */
