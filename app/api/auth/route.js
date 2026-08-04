@@ -5,12 +5,17 @@ export async function POST(request) {
   const { username, email, password } = await request.json();
 
   // Accept login by username (name) — case/space-insensitive — or by email (legacy).
-  const id = (username ?? email ?? '').trim().toLowerCase();
+  // Acento também é ignorado: com login por NOME COMPLETO (Czarnikow), exigir
+  // "Antônio Sérgio" com os acentos certos no celular é pedir chamado de suporte.
+  // A normalização é aplicada dos DOIS lados, então ela só faz mais login passar,
+  // nunca menos — nenhum usuário existente deixa de entrar.
+  const norm = (s) => (s ?? '')
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')  // tira acento
+    .replace(/\s+/g, ' ').trim().toLowerCase();        // colapsa espaços
+  const id = norm(username ?? email);
   const users = getUsers();
   const user = users.find(
-    u =>
-      u.username?.trim().toLowerCase() === id ||
-      u.email?.trim().toLowerCase() === id
+    u => norm(u.username) === id || norm(u.email) === id
   );
 
   if (!user) {
