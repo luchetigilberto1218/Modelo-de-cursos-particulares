@@ -64,6 +64,13 @@ export default function PointsWidget({ clientId, compact = false }) {
           <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.6)', marginTop: 7 }}>
             {s.nextTier ? `Faltam ${s.toNext} pts para ${s.nextTier.name}` : 'Última etapa alcançada — carga entregue'}
           </div>
+          {/* Enquanto a presença do mês não é lançada, o widget mostraria só os
+              pontos de material — sem explicação, parece que a aula não conta. */}
+          {s.classPoints === 0 && (
+            <div style={{ fontSize: 11.5, color: 'rgba(255,255,255,0.45)', marginTop: 4 }}>
+              Suas aulas entram no começo do mês que vem
+            </div>
+          )}
         </div>
 
         <span style={{

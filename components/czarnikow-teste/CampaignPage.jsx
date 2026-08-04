@@ -78,6 +78,11 @@ export default function CampaignPage({ clientId, theme }) {
             {' '}<strong style={{ color: '#fff' }}>60% aula, 40% material</strong> — porque o material
             reforça o que você pratica em aula, e nunca substitui a aula.
           </p>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)', lineHeight: 1.55, margin: '-14px 0 26px', maxWidth: 620 }}>
+            O material conta na hora. <strong style={{ color: 'rgba(255,255,255,0.85)' }}>As aulas são
+            lançadas uma vez por mês</strong>, junto com o relatório de assiduidade: as aulas de um mês
+            entram no começo do mês seguinte.
+          </p>
 
           {loading && <p style={{ color: 'rgba(255,255,255,0.6)', margin: 0 }}>Carregando sua pontuação…</p>}
 
@@ -137,7 +142,7 @@ export default function CampaignPage({ clientId, theme }) {
             <RuleGroup
               tone="accent"
               title="Aula · 60% da campanha"
-              note="Sem teto. A política da CZ é de no mínimo 2 aulas por semana."
+              note="Sem teto. A política da CZ é de no mínimo 2 aulas por semana. A presença é lançada pela Alumni uma vez por mês, junto com o relatório de assiduidade — as aulas de um mês aparecem aqui no começo do mês seguinte."
               rules={[
                 [`${SCORING.classPrivate} pts`, 'por aula particular'],
                 [`${SCORING.classGeneral} pts`, 'por aula em turma'],
@@ -290,26 +295,45 @@ function TiersExplained({ current }) {
 function SplitCard({ score, classesAreDemo, isDemoLogin, realLessonsDone }) {
   const total = score.total || 1;
   const classW = (score.classPoints / total) * 100;
+  // Presença de aula é lançada UMA VEZ POR MÊS, junto com o relatório de
+  // assiduidade. Enquanto o primeiro lançamento não acontece, mostrar uma barra
+  // "Material 100%" logo abaixo de um título que promete 60% aula faria a tela
+  // contradizer a própria regra — parece defeito, e não é.
+  const semAulaAinda = score.classPoints === 0;
   return (
     <Card title="Sua composição de pontos" subtitle="A campanha é desenhada para ficar por volta de 60% aula / 40% material.">
-      <div style={{ display: 'flex', height: 34, borderRadius: 10, overflow: 'hidden', border: `1px solid ${C.grayLight}` }}>
+      {semAulaAinda ? (
         <div style={{
-          width: `${classW}%`, background: C.navy, color: '#fff', display: 'flex', alignItems: 'center',
-          justifyContent: 'center', fontSize: 13, fontWeight: 700, transition: 'width .5s ease',
+          padding: '16px 18px', borderRadius: 12, background: C.accentLight,
+          border: `1px solid ${C.grayLight}`, fontSize: 14.5, lineHeight: 1.6, color: C.navy,
         }}>
-          {score.split.classPct > 12 ? `Aula ${score.split.classPct}%` : ''}
+          <strong>Suas aulas ainda não foram lançadas neste mês.</strong> A presença é registrada pela
+          Alumni <strong>uma vez por mês</strong>, junto com o relatório de assiduidade — as aulas de um
+          mês entram no começo do mês seguinte. Por isso a barra de composição só aparece depois do
+          primeiro lançamento. Seus pontos de material já estão contando normalmente.
         </div>
-        <div style={{
-          flex: 1, background: C.accentLight, color: C.navy, display: 'flex', alignItems: 'center',
-          justifyContent: 'center', fontSize: 13, fontWeight: 700,
-        }}>
-          {score.split.materialPct > 12 ? `Material ${score.split.materialPct}%` : ''}
+      ) : (
+        <div style={{ display: 'flex', height: 34, borderRadius: 10, overflow: 'hidden', border: `1px solid ${C.grayLight}` }}>
+          <div style={{
+            width: `${classW}%`, background: C.navy, color: '#fff', display: 'flex', alignItems: 'center',
+            justifyContent: 'center', fontSize: 13, fontWeight: 700, transition: 'width .5s ease',
+          }}>
+            {score.split.classPct > 12 ? `Aula ${score.split.classPct}%` : ''}
+          </div>
+          <div style={{
+            flex: 1, background: C.accentLight, color: C.navy, display: 'flex', alignItems: 'center',
+            justifyContent: 'center', fontSize: 13, fontWeight: 700,
+          }}>
+            {score.split.materialPct > 12 ? `Material ${score.split.materialPct}%` : ''}
+          </div>
         </div>
-      </div>
+      )}
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 12, marginTop: 18 }}>
         <MiniStat label="Pontos de aula" value={score.classPoints}
-          hint={`${score.classes.general} em turma · ${score.classes.private} particulares`} />
+          hint={semAulaAinda
+            ? 'lançado 1× por mês pela Alumni'
+            : `${score.classes.general} em turma · ${score.classes.private} particulares`} />
         <MiniStat label="Pontos de material" value={score.materialPoints}
           hint={`${score.lessonsDone} lições · ${score.activeDays} dias de estudo`} />
         {score.streaks > 0 && (

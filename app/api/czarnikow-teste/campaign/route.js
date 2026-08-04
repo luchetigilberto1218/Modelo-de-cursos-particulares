@@ -91,8 +91,18 @@ export async function GET() {
       real = [];
     }
 
+    // O grupo é o ROSTER cadastrado, não só quem já sincronizou. Contar apenas
+    // quem tem doc no Blob faria os primeiros a entrar verem "1º de 1" no dia do
+    // lançamento, como se a campanha fosse deles sozinhos.
     const rows = new Map();
+    for (const u of users) {
+      if (u.role !== 'student' || !(u.clients || []).includes(CLIENT)) continue;
+      if (u.id === 'czt-teste' && me.student !== 'czt-teste') continue;  // conta de demonstração
+      rows.set(u.id, { student: u.id, demo: false, total: 0 });
+    }
+    // quem já sincronizou entra com a pontuação real
     for (const r of real) {
+      if (r.student === 'czt-teste' && me.student !== 'czt-teste') continue;
       const cls = r.classes || DEMO_CLASSES[r.student] || { general: 0, private: 0 };
       rows.set(r.student, {
         student: r.student,
@@ -100,7 +110,7 @@ export async function GET() {
         total: computeScore({ lessons, state: r.lessons || {}, classes: cls }).total,
       });
     }
-    // o próprio usuário entra mesmo que ainda não tenha sincronizado nada
+    // o próprio usuário sempre com a pontuação recém-calculada
     rows.set(me.student, { student: me.student, demo: false, total: me.score.total });
 
     for (const p of demoParticipants(demoLessonNums(lessons))) {
