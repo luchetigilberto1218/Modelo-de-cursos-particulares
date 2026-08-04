@@ -48,7 +48,7 @@ const ROSTER = [
   { nome: 'Vinicius Steck',            trilha: 'General Business', nivel: 'Rise 1' },
   { nome: 'Vitor Oliveira',            trilha: 'General Business' },
   { nome: 'Vitória Duarte Matto',      trilha: 'Fiscal & Taxes' },
-  { nome: 'Douglas Salomão',           trilha: '?' },
+  { nome: 'Douglas Salomão',           trilha: 'General Business' },
   { nome: 'Alessandra de Melo Cruz',   trilha: 'Fiscal & Taxes' },
   { nome: 'Claudia Gonçalves da Silva', trilha: 'General Business' },
   { nome: 'Wesley Magnano',            trilha: 'General Business', nivel: 'Rise 1' },
