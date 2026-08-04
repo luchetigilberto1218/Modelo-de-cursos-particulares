@@ -145,14 +145,30 @@ export default function LevelHub({ course, theme, clientId }) {
         </section>
       )}
 
-      <section style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: 16,
-        maxWidth: 1080,
-        margin: '0 auto',
-        padding: '0 24px 60px',
-      }}>
+      {/* No celular a grade de 3 colunas fixas (+ o Apex preso à coluna 2) não
+          colapsa: o hub pede 504px numa tela de 390 e o navegador encolhe a
+          página inteira para 77%. Uma coluna abaixo de 760px resolve. Gateado
+          no ambiente de teste — o /czarnikow real fica como está até o RH
+          validar, mesmo tendo o mesmo comportamento. */}
+      {cztProgress && (
+        <style>{`
+          @media (max-width: 760px) {
+            .czt-niveis { grid-template-columns: 1fr !important; }
+            .czt-niveis > * { grid-column: auto !important; }
+          }
+        `}</style>
+      )}
+
+      <section
+        className={cztProgress ? 'czt-niveis' : undefined}
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: 16,
+          maxWidth: 1080,
+          margin: '0 auto',
+          padding: '0 24px 60px',
+        }}>
         {LEVELS.map((level, i) => (
           <div
             key={level.id}

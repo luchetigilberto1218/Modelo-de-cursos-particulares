@@ -100,8 +100,13 @@ export async function GET() {
       if (u.id === 'czt-teste' && me.student !== 'czt-teste') continue;  // conta de demonstração
       rows.set(u.id, { student: u.id, demo: false, total: 0 });
     }
-    // quem já sincronizou entra com a pontuação real
+    // quem já sincronizou entra com a pontuação real.
+    // SÓ quem já está em `rows`, ou seja, colaborador do roster: o Blob também
+    // guarda o progresso de quem NÃO participa da campanha (coordenação e o
+    // login do professor, que abrem o curso para conferir). Sem esse filtro a
+    // tela dizia "1º de 22" com 20 colaboradores cadastrados.
     for (const r of real) {
+      if (!rows.has(r.student)) continue;
       if (r.student === 'czt-teste' && me.student !== 'czt-teste') continue;
       const cls = r.classes || DEMO_CLASSES[r.student] || { general: 0, private: 0 };
       rows.set(r.student, {
@@ -124,19 +129,30 @@ export async function GET() {
 
     const ordered = [...rows.values()].sort((a, b) => b.total - a.total);
     const participants = ordered.length;
-    const position = ordered.findIndex((r) => r.student === me.student) + 1 || null;
-    // quantos participantes estão ATRÁS do usuário, em %
-    const aheadOfPct = position && participants > 1
-      ? Math.round(((participants - position) / (participants - 1)) * 100)
+
+    // Posição com EMPATE de verdade: quem tem a mesma pontuação ocupa a mesma
+    // posição. Sem isso, no dia do lançamento — com todo mundo em 0 — o
+    // desempate cairia na ordem do cadastro e alguém abriria a campanha já
+    // vendo "20º de 20" sem nada ter acontecido.
+    const meuTotal = me.score.total;
+    const allTied = participants > 1 && ordered.every((r) => r.total === ordered[0].total);
+    const position = ordered.filter((r) => r.total > meuTotal).length + 1;
+    // quantos participantes estão ATRÁS do usuário, em % (empatados não contam)
+    const atras = ordered.filter((r) => r.total < meuTotal).length;
+    const aheadOfPct = participants > 1
+      ? Math.round((atras / (participants - 1)) * 100)
       : null;
 
     return NextResponse.json({
       semester: SEMESTER,
-      me: { ...me, position, participants },
+      me: { ...me, position, participants, allTied },
       standing: {
         position,
         participants,
         aheadOfPct,
+        // no dia do lançamento ninguém pontuou ainda: a tela troca a colocação
+        // por "todos empatados" em vez de dizer "1º" e "à frente de 0%" juntos
+        allTied,
         demoCount: ordered.filter((r) => r.demo).length,
       },
     });

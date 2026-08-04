@@ -91,10 +91,11 @@ export default function CampaignPage({ clientId, theme }) {
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 22 }}>
                 <HeroStat label="Seus pontos" value={me.score.total} big />
                 <HeroStat label="Etapa atual" value={me.score.tier.name} tint={TIER_COLOR[me.score.tier.id]} />
+                {/* enquanto ninguém pontuou, "1º de 20" para os 20 não informa nada */}
                 <HeroStat
                   label="Sua posição"
-                  value={me.position ? `${me.position}º` : '—'}
-                  hint={me.participants ? `de ${me.participants}` : null}
+                  value={me.allTied ? '—' : (me.position ? `${me.position}º` : '—')}
+                  hint={me.allTied ? 'todos empatados' : (me.participants ? `de ${me.participants}` : null)}
                 />
                 <HeroStat label="Lições concluídas" value={me.score.lessonsDone} />
               </div>
@@ -426,9 +427,29 @@ function Slider({ label, value, min, max, onChange }) {
    quanto do grupo ficou atrás dele — nunca quem são os outros nem quanto fizeram.
    A API sequer envia a lista: só position, participants e aheadOfPct. */
 function Standing({ s }) {
-  const { position, participants, aheadOfPct, demoCount } = s;
+  const { position, participants, aheadOfPct, demoCount, allTied } = s;
   // marcador na régua: 1º na ponta direita, último na esquerda
   const pct = participants > 1 ? ((participants - position) / (participants - 1)) * 100 : 100;
+
+  // Todo mundo com a mesma pontuação (é o retrato do dia do lançamento): mostrar
+  // "1º de 20" junto de "à frente de 0% do grupo" seria contraditório.
+  if (allTied) {
+    return (
+      <>
+        <p style={{ fontSize: 20, fontWeight: 650, color: C.navy, margin: '0 0 8px', letterSpacing: -0.3 }}>
+          Os {participants} participantes estão empatados.
+        </p>
+        <p style={{ fontSize: 14.5, color: C.text, lineHeight: 1.55, margin: 0 }}>
+          A campanha começou agora — a sua colocação aparece assim que as primeiras
+          pontuações entrarem.
+        </p>
+        <p style={{ fontSize: 13, color: C.gray, margin: '18px 0 0', lineHeight: 1.55 }}>
+          ⓘ A campanha é <strong>fechada</strong>: sua pontuação não aparece para nenhum colega, e a de
+          ninguém aparece para você. A posição existe só para você medir o próprio ritmo.
+        </p>
+      </>
+    );
+  }
 
   return (
     <>
