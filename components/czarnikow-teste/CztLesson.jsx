@@ -46,13 +46,13 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
 
   // Identidade + progresso (marca a lição e acende a trilha)
   const identity = useIdentity(true);
-  const { done: persistedDone, markDone } = useLessonDone(identity?.student, l.num);
+  const { done: persistedDone, markDone, markUndone } = useLessonDone(identity?.student, l.num);
 
   // Conclusão: o card "lição completa" só aparece quando os exercícios avaliáveis
   // foram respondidos (certo ou errado). Espelha o doneSet da Baker Hughes.
   // Cada exercício guarda também o acerto da PRIMEIRA tentativa (0..1), que vira
   // pontos na campanha Ago–Dez.
-  const GRADEABLE = ['wordBank', 'verbFill', 'quickDrill', ...RACIONAL_TYPES.filter(t => t !== 'info')];
+  const GRADEABLE = ['wordBank', 'verbFill', 'quickDrill', 'wordOrder', ...RACIONAL_TYPES.filter(t => t !== 'info')];
   const gradeableIdx = exercises.map((ex, i) => (GRADEABLE.includes(ex.type) ? i : null)).filter(i => i !== null);
   const [doneSet, setDoneSet] = useState({});
   const mark = (i, accuracy) => setDoneSet(prev => (
@@ -140,8 +140,10 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
               }
               if (ex.type === 'wordBank') return <WordBank key={i} ex={ex} c={c} onChecked={(acc) => mark(i, acc)} />;
               if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill key={i} ex={ex} c={c} onChecked={(acc) => mark(i, acc)} />;
+              if (ex.type === 'wordOrder') return <WordOrder key={i} ex={ex} c={c} onChecked={(acc) => mark(i, acc)} />;
               if (ex.type === 'readAloud') return <ReadAloud key={i} ex={ex} c={c} voiceType={voiceType} />;
               if (ex.type === 'makeItYourOwn') return <MakeItYourOwn key={i} ex={ex} c={c} voiceType={voiceType} />;
+              if (!ex.type && ex.content) return <ExercicioEstatico key={i} ex={ex} c={c} />;
               return null;
             })}
           </>
@@ -188,6 +190,33 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
           <div style={{ margin: '30px 0 8px', padding: '18px 22px', borderRadius: 14, background: '#fff', border: `1px dashed ${grayLight}`, color: gray, fontSize: 14, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
             <span style={{ fontWeight: 800, color: navy }}>{doneCount}/{totalGradeable}</span>
             <span>Responda os exercícios acima (basta corrigir cada um) — a lição se conclui sozinha e acende a sua trilha.</span>
+          </div>
+        )}
+
+        {/* Lição sem nenhum exercício auto-corrigido (os dela ainda estão no
+            formato antigo): a conclusão volta a ser manual, como era antes da
+            conversão — senão a trilha nunca acenderia. */}
+        {!showCelebrate && totalGradeable === 0 && (
+          <div style={{ margin: '30px 0 8px', padding: '20px 22px', borderRadius: 14, background: '#fff', border: `1px dashed ${grayLight}`, textAlign: 'center' }}>
+            <p style={{ margin: '0 0 14px', fontSize: 14.5, color: gray, lineHeight: 1.55 }}>
+              Terminou esta lição? Marque como concluída para acender a sua trilha.
+            </p>
+            <button
+              onClick={() => identity?.student && markDone()}
+              style={{ padding: '11px 22px', borderRadius: 999, border: 'none', background: accent, color: '#fff', fontWeight: 700, fontSize: 14.5, cursor: 'pointer' }}
+            >
+              Marcar como concluída
+            </button>
+          </div>
+        )}
+        {showCelebrate && totalGradeable === 0 && (
+          <div style={{ textAlign: 'center', marginTop: 12 }}>
+            <button
+              onClick={markUndone}
+              style={{ padding: '9px 18px', borderRadius: 999, border: `1px solid ${grayLight}`, background: '#fff', color: gray, fontWeight: 600, fontSize: 13.5, cursor: 'pointer' }}
+            >
+              Desfazer
+            </button>
           </div>
         )}
 
@@ -450,6 +479,115 @@ function VerbFill({ ex, c, onChecked }) {
       </div>
       <CheckRow checked={checked} setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(accuracyOf(items, isRight)); }} onReset={() => setAnswers({})} canCheck={allFilled} c={c} />
       {checked && <ResultLine ok={items.every((_, i) => isRight(i))} c={c} explanation={ex.explanation} corrections={items.map((it, i) => !isRight(i) ? `${it.prompt.replace('___', `[${it.answer}]`)}` : null).filter(Boolean)} />}
+    </ExShell>
+  );
+}
+
+/* Exercício ainda no formato antigo (HTML + gabarito).
+   A conversão para o formato interativo é feita exercício a exercício: quando um
+   deles não encaixa em nenhuma forma conhecida — ou está defeituoso —, ele
+   continua como estava, em vez de sumir da tela. Fica visualmente igual aos
+   outros, com o gabarito atrás de um "ver respostas", como no /czarnikow real.
+   Não conta para a conclusão da lição: não há como corrigir automaticamente. */
+function ExercicioEstatico({ ex, c }) {
+  return (
+    <ExShell title={ex.title} c={c} badge="Faça no caderno">
+      <div style={{ fontSize: 15, lineHeight: 1.75 }} dangerouslySetInnerHTML={{ __html: ex.content }} />
+      {ex.answers?.length > 0 && (
+        <details style={{ marginTop: 14 }}>
+          <summary style={{ cursor: 'pointer', color: c.accent, fontSize: 13, fontWeight: 700 }}>Ver respostas</summary>
+          <div style={{ marginTop: 8, padding: 12, background: '#F0FFF4', border: '1px solid #C6F6D5', borderRadius: 8, fontSize: 14, color: '#2F855A', lineHeight: 1.8 }}>
+            {ex.answers.map((a, j) => <div key={j}>{a}</div>)}
+          </div>
+        </details>
+      )}
+    </ExShell>
+  );
+}
+
+/* Ordenar palavras para formar a frase.
+   O material do Czarnikow tem centenas de exercícios de "reorder" — várias
+   frases embaralhadas por exercício —, formato que o Exercise.jsx compartilhado
+   não cobre (o reorder de lá é de UMA sequência só). Aqui cada frase é uma
+   linha: toca na palavra para colocar, toca na palavra colocada para tirar. */
+function WordOrder({ ex, c, onChecked }) {
+  const items = ex.items || [];
+  const [built, setBuilt] = useState({});   // { itemIdx: [índices das palavras, na ordem] }
+  const [checked, setChecked] = useState(false);
+
+  const frase = (i) => (built[i] || []).map((w) => items[i].words[w]).join(' ');
+  const isRight = (i) => normalize(frase(i)) === normalize(items[i].answer);
+  const allBuilt = items.every((it, i) => (built[i] || []).length === it.words.length);
+
+  const toque = (i, w) => {
+    if (checked) return;
+    setBuilt((prev) => {
+      const atual = prev[i] || [];
+      return { ...prev, [i]: atual.includes(w) ? atual.filter((x) => x !== w) : [...atual, w] };
+    });
+  };
+
+  return (
+    <ExShell title={ex.title} c={c} badge="Monte a frase">
+      <p style={{ fontSize: 14, color: c.gray, margin: '0 0 12px', lineHeight: 1.5 }}>
+        {ex.instruction || 'Toque nas palavras na ordem certa para formar a frase. Toque de novo para tirar.'}
+      </p>
+      <div style={{ display: 'grid', gap: 18 }}>
+        {items.map((it, i) => {
+          const usados = built[i] || [];
+          const ok = checked && isRight(i);
+          const errou = checked && !ok;
+          return (
+            <div key={i}>
+              {/* linha montada */}
+              <div style={{
+                minHeight: 44, padding: '10px 12px', borderRadius: 10, marginBottom: 8,
+                border: `2px solid ${checked ? (ok ? '#9AE6B4' : '#FEB2B2') : c.grayLight}`,
+                background: checked ? (ok ? '#F0FFF4' : '#FFF5F5') : c.offWhite,
+                display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center',
+              }}>
+                {usados.length === 0 && <span style={{ color: c.gray, fontSize: 14 }}>…</span>}
+                {usados.map((w) => (
+                  <button key={w} onClick={() => toque(i, w)} disabled={checked}
+                    style={{
+                      padding: '5px 11px', borderRadius: 8, border: `1px solid ${c.accent}`,
+                      background: '#fff', color: c.navy, fontWeight: 600, fontSize: 14,
+                      fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
+                    }}>
+                    {it.words[w]}
+                  </button>
+                ))}
+              </div>
+              {/* palavras disponíveis */}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                {it.words.map((p, w) => usados.includes(w) ? null : (
+                  <button key={w} onClick={() => toque(i, w)} disabled={checked}
+                    style={{
+                      padding: '5px 11px', borderRadius: 8, border: `1px solid ${c.grayLight}`,
+                      background: '#fff', color: c.text, fontSize: 14, fontFamily: 'inherit',
+                      cursor: checked ? 'default' : 'pointer',
+                    }}>
+                    {p}
+                  </button>
+                ))}
+              </div>
+              {errou && (
+                <div style={{ fontSize: 13.5, color: '#2F855A', marginTop: 6 }}>✓ {it.answer}</div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+      <CheckRow
+        checked={checked}
+        setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(accuracyOf(items, isRight)); }}
+        onReset={() => setBuilt({})}
+        canCheck={allBuilt}
+        c={c}
+      />
+      {checked && (
+        <ResultLine ok={items.every((_, i) => isRight(i))} c={c} explanation={ex.explanation} corrections={[]} />
+      )}
     </ExShell>
   );
 }
