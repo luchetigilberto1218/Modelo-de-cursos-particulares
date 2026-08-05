@@ -166,7 +166,22 @@ export default function AudioPlayer({
     // ele TIVER voz do idioma — muito celular fora do Chrome não tem nenhuma, e
     // aí a fala simplesmente não sai, em silêncio. Nesse caso vai direto de MP3.
     // Voz neural do servidor por preferência; a do aparelho fica de reserva.
-    if (preferServer) { playViaApi(vt, () => speakViaWebSpeech(vt)); return; }
+    //
+    // A reserva só entra se o MP3 REALMENTE não saiu do lugar. O Safari/iOS
+    // rejeita o play() com AbortError ("interrupted by a new load request")
+    // mesmo quando o áudio toca logo em seguida — confiar nessa rejeição fazia
+    // a voz do aparelho entrar por cima da neural, as duas ao mesmo tempo.
+    if (preferServer) {
+      playViaApi(vt, () => {
+        setTimeout(() => {
+          const el = audioRef.current;
+          if (el && (!el.paused || el.currentTime > 0)) return;  // o MP3 pegou: nada a fazer
+          pararMp3();                       // silencia o MP3 antes de qualquer outra voz
+          speakViaWebSpeech(vt, true);      // sem rede de segurança: ela traria o MP3 de volta
+        }, 700);
+      });
+      return;
+    }
     if (!supportsSpeech || !temVozDoIdioma(voices, vt)) { playViaApi(vt); return; }
     destravaAudio();   // ainda dentro do toque, para o plano B poder tocar depois
     speakViaWebSpeech(vt);
@@ -221,8 +236,19 @@ export default function AudioPlayer({
     } catch (_) { /* sem áudio destravado o plano B pode falhar, mas nada quebra */ }
   }
 
+  // Para o MP3 do servidor. Usado antes de dar voz ao aparelho, para que nunca
+  // saiam duas vozes juntas. Sem áudio tocando, é uma operação sem efeito.
+  function pararMp3() {
+    try {
+      const el = audioRef.current;
+      if (el) { el.pause(); el.currentTime = 0; }
+    } catch (_) {}
+  }
+
   // Fallback (e via padrão p/ EN sem MP3): Web Speech do navegador.
-  function speakViaWebSpeech(vt) {
+  // `semRede` desliga a rede de segurança de 1,2s — usado quando já viemos de um
+  // MP3 que falhou, para o plano B não chamar de volta o plano A.
+  function speakViaWebSpeech(vt, semRede = false) {
     if (!supportsSpeech) { playViaApi(vt); return; }
     try { window.speechSynthesis.cancel(); } catch (_) {}
     const cleanText = stripHtml(text);
@@ -246,6 +272,7 @@ export default function AudioPlayer({
     // Rede de segurança: em vários navegadores de celular o speak() é aceito e
     // simplesmente não sai som — sem erro nenhum. Se em 1,2s a fala não começou,
     // troca pelo MP3 do servidor.
+    if (semRede) return;
     setTimeout(() => {
       if (modeRef.current !== 'speech' || falouRef.current) return;
       const s = window.speechSynthesis;
