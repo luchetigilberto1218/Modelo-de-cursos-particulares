@@ -32,10 +32,12 @@ const CLIENT = 'czarnikow-teste';
    `trilha` só onde o cadastro diverge do que a aula mostrou. */
 const PARTIDA = [
   { nome: 'Aline Momi',      startAt: 42 },   // apex · HR · já viu a 1
-  // 11/08/2026: o usuário reviu a posição da Serena e voltou para 462 —
-  // apex/fiscal-taxes, "Strategic Frame of the Main Taxes". Isso REVERTE a
-  // decisão de 04/08 (162 · trade-finance), então a trilha volta a fiscal-taxes.
-  { nome: 'Serena Lanças',   startAt: 462, trilha: 'fiscal-taxes' },
+  // A Serena já oscilou duas vezes entre 462 (fiscal-taxes) e 162 (trade-finance),
+  // porque as duas são a 2ª lição do Apex na sua trilha. Confirmado de novo em
+  // 11/08/2026: ela é TRADE & FINANCE — 162, "Incoterms as a Risk-Allocation
+  // Language". Trade & Finance não tem lição de impostos, então um link para
+  // "…Main Taxes" é sempre fiscal-taxes e NÃO serve para ela.
+  { nome: 'Serena Lanças',   startAt: 162, trilha: 'trade-finance' },
   { nome: 'Thiago Pereira',  startAt: 482 },  // essentials · IT · já viu a 1
   { nome: 'Vinicius Steck',  startAt: 83 },   // rise · General Business · já viu 1 e 2
   // 11/08/2026 — aulas particulares, posição informada pelo usuário:
