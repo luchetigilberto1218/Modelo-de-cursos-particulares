@@ -32,11 +32,18 @@ const CLIENT = 'czarnikow-teste';
    `trilha` só onde o cadastro diverge do que a aula mostrou. */
 const PARTIDA = [
   { nome: 'Aline Momi',      startAt: 42 },   // apex · HR · já viu a 1
-  // O link mandado apontava para 462 (apex/fiscal-taxes), mas o usuário
-  // confirmou em 04/08: ela é Trade & Finance e está na 2ª lição — 162.
-  { nome: 'Serena Lanças',   startAt: 162, trilha: 'trade-finance' },
+  // 11/08/2026: o usuário reviu a posição da Serena e voltou para 462 —
+  // apex/fiscal-taxes, "Strategic Frame of the Main Taxes". Isso REVERTE a
+  // decisão de 04/08 (162 · trade-finance), então a trilha volta a fiscal-taxes.
+  { nome: 'Serena Lanças',   startAt: 462, trilha: 'fiscal-taxes' },
   { nome: 'Thiago Pereira',  startAt: 482 },  // essentials · IT · já viu a 1
   { nome: 'Vinicius Steck',  startAt: 83 },   // rise · General Business · já viu 1 e 2
+  // 11/08/2026 — aulas particulares, posição informada pelo usuário:
+  // migrou de Confidence, recomeça do zero em Logistics (301 = 1ª da trilha).
+  { nome: 'Matheus Santos da Paz', startAt: 301 },
+  // 122 é essentials/trade-finance ("Incoterms Made Simple"); o cadastro dizia
+  // General Business, então a trilha acompanha a lição que ele está tendo.
+  { nome: 'Vitor Oliveira',  startAt: 122, trilha: 'trade-finance' },
 ];
 
 const course = JSON.parse(fs.readFileSync(COURSE, 'utf-8'));
