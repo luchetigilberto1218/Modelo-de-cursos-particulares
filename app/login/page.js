@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 // Destino pós-login pedido pela URL (?next=/algum/caminho). Só aceitamos caminho
@@ -25,6 +25,16 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [reveal, setReveal] = useState(false);
+  // O navegador só dispara o alerta de "senha vazada/fraca" quando enxerga um
+  // <input type="password">. Mascarando por CSS o campo continua escondido na
+  // tela, mas o Chrome não trata mais o envio como credencial — o aviso que
+  // interrompia o login some. Só trocamos depois de montar (e só onde o CSS é
+  // suportado); sem suporte, fica exatamente como era antes: type="password".
+  const [maskByCss, setMaskByCss] = useState(false);
+  useEffect(() => {
+    setMaskByCss(typeof CSS !== 'undefined' && CSS.supports?.('-webkit-text-security', 'disc'));
+  }, []);
   const router = useRouter();
   const searchParams = useSearchParams();
   // Chegou aqui porque a conta foi desativada (guardClient manda com ?desativado=1).
@@ -95,13 +105,28 @@ function LoginForm() {
           </div>
           <div className="form-group">
             <label>Password</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter your password"
-              required
-            />
+            <div className="password-field">
+              <input
+                type={reveal || maskByCss ? 'text' : 'password'}
+                className={maskByCss && !reveal ? 'masked' : undefined}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter your password"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
+                spellCheck={false}
+                required
+              />
+              <button
+                type="button"
+                className="password-toggle"
+                onClick={() => setReveal((v) => !v)}
+                aria-label={reveal ? 'Ocultar senha' : 'Mostrar senha'}
+              >
+                {reveal ? 'Ocultar' : 'Mostrar'}
+              </button>
+            </div>
           </div>
           {!error && desativado && (
             <div className="login-error">Este acesso está desativado. Fale com a Alumni para reativá-lo.</div>
