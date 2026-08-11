@@ -296,9 +296,14 @@ function BusinessLineButton({ bl, clientId, navy, accent, grayLight, gray }) {
 
 /* Trilha personalizada do aluno — fecha a página, com "continue de onde parou".
    O ponto de retomada vem do localStorage gravado pela própria lição, então
-   funciona sem back-end e é privado ao navegador de quem estuda. */
+   funciona sem back-end e é privado ao navegador de quem estuda.
+
+   Trilha com `status: "inactive"` continua visível e navegável, mas em tom
+   arquivado: sem CTA de retomar e com o aviso de trilha pausada. Nada é
+   apagado — voltar o status para "active" no course.json restaura tudo. */
 function MyTrackCard({ track, lessons, clientId, student, c }) {
   const { navy, navyLight, accent, accentLight, teal, gray, grayLight } = c;
+  const inactive = track.status === 'inactive';
   const [last, setLast] = useState(null);
   useEffect(() => {
     try {
@@ -328,11 +333,13 @@ function MyTrackCard({ track, lessons, clientId, student, c }) {
   const topics = [...new Set(lessons.map((l) => l.topic).filter(Boolean))];
 
   return (
-    <div style={{ borderRadius: 18, overflow: 'hidden', border: `1px solid ${grayLight}`, boxShadow: '0 14px 44px rgba(6,46,43,0.10)', background: '#fff' }}>
-      <div style={{ background: `linear-gradient(135deg, ${navy}, ${navyLight})`, color: '#fff', padding: 'clamp(24px, 3.4vw, 34px) clamp(22px, 3.4vw, 38px)', position: 'relative' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${accent}, ${teal})` }} />
-        <p style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: 1.6, textTransform: 'uppercase', color: accent, margin: '0 0 10px' }}>
-          {firstName ? `Feita para você, ${firstName}` : 'Trilha personalizada'}
+    <div style={{ borderRadius: 18, overflow: 'hidden', border: `1px solid ${grayLight}`, boxShadow: inactive ? '0 6px 22px rgba(6,46,43,0.06)' : '0 14px 44px rgba(6,46,43,0.10)', background: '#fff', opacity: inactive ? 0.94 : 1 }}>
+      <div style={{ background: inactive ? 'linear-gradient(135deg, #48524F, #6B7570)' : `linear-gradient(135deg, ${navy}, ${navyLight})`, color: '#fff', padding: 'clamp(24px, 3.4vw, 34px) clamp(22px, 3.4vw, 38px)', position: 'relative' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: inactive ? 'rgba(255,255,255,0.28)' : `linear-gradient(90deg, ${accent}, ${teal})` }} />
+        <p style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: 1.6, textTransform: 'uppercase', color: inactive ? 'rgba(255,255,255,0.72)' : accent, margin: '0 0 10px' }}>
+          {inactive
+            ? `Trilha inativa${track.inactiveSince ? ` · desde ${track.inactiveSince}` : ''}`
+            : (firstName ? `Feita para você, ${firstName}` : 'Trilha personalizada')}
         </p>
         <h2 style={{ fontSize: 'clamp(23px, 3vw, 32px)', fontWeight: 800, letterSpacing: -0.7, margin: '0 0 10px', lineHeight: 1.12 }}>{track.name}</h2>
         {track.description && (
@@ -341,7 +348,20 @@ function MyTrackCard({ track, lessons, clientId, student, c }) {
       </div>
 
       <div style={{ padding: 'clamp(20px, 3vw, 28px) clamp(22px, 3.4vw, 38px)' }}>
-        {target && (
+        {inactive && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap', padding: '14px 18px', borderRadius: 12, background: '#F1F4F3', border: '1px solid #DDE4E2', marginBottom: topics.length || target ? 20 : 0 }}>
+            <div style={{ flex: '1 1 260px' }}>
+              <div style={{ fontSize: 13.5, fontWeight: 800, color: '#3D4744', marginBottom: 3 }}>Trilha pausada</div>
+              <div style={{ fontSize: 13, color: gray, lineHeight: 1.5 }}>
+                {track.inactiveNote || 'O material segue disponível para consulta, mas a trilha não está em andamento.'}
+              </div>
+            </div>
+            <Link href={`/${clientId}/level/${track.level || 'essentials'}/track/${track.id}`} style={{ padding: '10px 20px', borderRadius: 999, background: '#fff', color: '#3D4744', fontWeight: 700, fontSize: 13.5, textDecoration: 'none', border: '1px solid #C9D3D0' }}>
+              Ver o material →
+            </Link>
+          </div>
+        )}
+        {!inactive && target && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', marginBottom: topics.length ? 20 : 0 }}>
             <div style={{ flex: '1 1 250px' }}>
               <div style={{ fontSize: 11, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: accent, marginBottom: 5 }}>
