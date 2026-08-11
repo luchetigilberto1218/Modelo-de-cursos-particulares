@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getUsers, verifyPassword, createToken } from '../../../lib/auth';
+import { getUsers, verifyPassword, createToken, isDisabledUser } from '../../../lib/auth';
 
 export async function POST(request) {
   const { username, email, password } = await request.json();
@@ -25,6 +25,16 @@ export async function POST(request) {
   const valid = await verifyPassword(password, user.password);
   if (!valid) {
     return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
+  }
+
+  // Conta desativada: a senha até confere, mas o acesso está fechado. O
+  // cadastro e o material continuam intactos — é só remover o `disabled`
+  // do users.json para liberar de novo.
+  if (isDisabledUser(user)) {
+    return NextResponse.json(
+      { error: 'Este acesso está desativado. Fale com a Alumni para reativá-lo.' },
+      { status: 403 }
+    );
   }
 
   const token = createToken(user);

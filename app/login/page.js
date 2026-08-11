@@ -27,6 +27,8 @@ function LoginForm() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const searchParams = useSearchParams();
+  // Chegou aqui porque a conta foi desativada (guardClient manda com ?desativado=1).
+  const desativado = searchParams.get('desativado') === '1';
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -101,6 +103,9 @@ function LoginForm() {
               required
             />
           </div>
+          {!error && desativado && (
+            <div className="login-error">Este acesso está desativado. Fale com a Alumni para reativá-lo.</div>
+          )}
           {error && <div className="login-error">{error}</div>}
           <button type="submit" className="login-btn" disabled={loading}>
             {loading ? 'Signing in...' : 'Sign in'}
