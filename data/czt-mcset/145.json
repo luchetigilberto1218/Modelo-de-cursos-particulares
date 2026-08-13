@@ -1,0 +1,210 @@
+{
+ "num": 145,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "A letter of credit only works if it is used with discipline. The bank does not pay for the deal. It pays for the documents that match the LC. One small difference between the two — a wrong date, a spelling mistake, a missing stamp — and the bank refuses.<br><br>In practice, this means the letter of credit and the shipping documents must be prepared by people who read the text word by word. It also means that the LC itself must be checked the moment it arrives: impossible dates, documents you cannot provide, or conditions you cannot meet should be negotiated out before you ship.<br><br>Used well, an LC is one of the safest tools in trade. Used carelessly, it is a trap the seller builds for themselves.",
+   "items": [
+    {
+     "q": "What does the bank actually pay for under a letter of credit?",
+     "options": [
+      "The deal itself",
+      "The documents that match the LC",
+      "The goods on arrival",
+      "The buyer's promise"
+     ],
+     "answer": 1,
+     "why": "\"The bank does not pay for the deal. It pays for the documents that match the LC.\""
+    },
+    {
+     "q": "What can make the bank refuse to pay?",
+     "options": [
+      "A late shipment only",
+      "One small difference — a wrong date, a spelling mistake, a missing stamp",
+      "A price change",
+      "A new supplier"
+     ],
+     "answer": 1,
+     "why": "\"One small difference between the two… and the bank refuses.\""
+    },
+    {
+     "q": "When should the LC itself be checked?",
+     "options": [
+      "After shipping",
+      "The moment it arrives",
+      "When the bank refuses",
+      "Never"
+     ],
+     "answer": 1,
+     "why": "\"the LC itself must be checked the moment it arrives.\""
+    },
+    {
+     "q": "What should be done with impossible conditions in the LC?",
+     "options": [
+      "Ship anyway",
+      "Negotiate them out before you ship",
+      "Ignore them",
+      "Ask the buyer to pay more"
+     ],
+     "answer": 1,
+     "why": "\"conditions you cannot meet should be negotiated out before you ship.\""
+    },
+    {
+     "q": "\"A trap the seller builds for themselves\" means a careless LC…",
+     "options": [
+      "protects the seller",
+      "creates a problem the seller caused",
+      "is the buyer's fault",
+      "cannot be avoided"
+     ],
+     "answer": 1,
+     "why": "Inferência: usada sem cuidado, a LC vira um problema criado pelo próprio vendedor."
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "The letter of credit just arrived, and before we ship a single bag, I want to read it line by line — because there are three terms here the exporter can't realistically meet.<br><br>First, the latest shipment date. It says the fifteenth. But our vessel doesn't sail until the eighteenth. If we ship on the eighteenth and present documents dated the eighteenth, the bank will refuse — the documents won't match the LC. So we need this date amended before we do anything.<br><br>Second, it asks for a certificate signed by the buyer's agent at the port of loading. We don't have their agent at our port. We literally cannot produce that document. It has to come out.<br><br>Third, it requires the bill of lading to say 'freight prepaid'. But we agreed FOB, where the buyer pays the freight. So that clause contradicts our actual deal.<br><br>None of these are dramatic, but every one of them would give the bank a reason to refuse payment. So: no shipping until we've requested three amendments and the buyer's bank has confirmed them.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Sophie want to do before shipping?",
+     "options": [
+      "Send the goods quickly",
+      "Read the LC line by line for terms the exporter can't meet",
+      "Pay the bank",
+      "Call the buyer's agent"
+     ],
+     "answer": 1,
+     "why": "\"I want to read it line by line — because there are three terms here the exporter can't realistically meet.\""
+    },
+    {
+     "q": "What is the problem with the latest shipment date?",
+     "options": [
+      "It is too early — the vessel sails on the 18th, not the 15th",
+      "It is missing",
+      "It is in the wrong format",
+      "It matches the vessel exactly"
+     ],
+     "answer": 0,
+     "why": "\"It says the fifteenth. But our vessel doesn't sail until the eighteenth.\""
+    },
+    {
+     "q": "Why can't the exporter provide the certificate signed by the buyer's agent?",
+     "options": [
+      "It costs too much",
+      "They don't have the buyer's agent at their port of loading",
+      "It's illegal",
+      "The buyer refused"
+     ],
+     "answer": 1,
+     "why": "\"We don't have their agent at our port. We literally cannot produce that document.\""
+    },
+    {
+     "q": "Why does 'freight prepaid' contradict the deal?",
+     "options": [
+      "They agreed FOB, where the buyer pays the freight",
+      "The freight is free",
+      "The bank pays freight",
+      "There is no freight"
+     ],
+     "answer": 0,
+     "why": "\"we agreed FOB, where the buyer pays the freight. So that clause contradicts our actual deal.\""
+    },
+    {
+     "q": "What is Sophie's conclusion?",
+     "options": [
+      "Ship immediately",
+      "No shipping until three amendments are requested and confirmed",
+      "Cancel the LC",
+      "Pay the difference"
+     ],
+     "answer": 1,
+     "why": "\"no shipping until we've requested three amendments and the buyer's bank has confirmed them.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "\"There's a **discrepancy** between the documents and the LC.\" A discrepancy is…",
+     "options": [
+      "a perfect match",
+      "a difference or mismatch",
+      "a payment",
+      "a shipping date"
+     ],
+     "answer": 1,
+     "why": "Discrepancy = discrepância, diferença."
+    },
+    {
+     "q": "The **issuing bank** is the bank that…",
+     "options": [
+      "ships the goods",
+      "opens the letter of credit on the buyer's behalf",
+      "insures the cargo",
+      "clears customs"
+     ],
+     "answer": 1,
+     "why": "Issuing bank = banco emissor (do comprador)."
+    },
+    {
+     "q": "Choose the correct word: \"We need an **___** to change the shipment date in the LC.\"",
+     "options": ["amendment", "invoice", "discrepancy", "draft"],
+     "answer": 0,
+     "why": "Amendment = alteração/emenda ao LC."
+    },
+    {
+     "q": "\"The documents must **comply** with the LC.\" To comply means to…",
+     "options": ["contradict", "match the requirements", "delay", "cancel"],
+     "answer": 1,
+     "why": "To comply = cumprir, estar conforme."
+    },
+    {
+     "q": "Choose the correct term: \"Only **___** documents will be paid.\"",
+     "options": ["compliant", "late", "damaged", "prepaid"],
+     "answer": 0,
+     "why": "Compliant documents = documentos conformes."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"Let's **read it line by line**.\" To read something line by line means to…",
+     "options": ["skim it", "examine every part carefully", "sign it", "summarise it"],
+     "answer": 1,
+     "why": "Line by line = linha por linha, com cuidado."
+    },
+    {
+     "q": "\"That clause has to **come out**.\" To come out (of a document) means to…",
+     "options": ["be added", "be removed", "be signed", "be paid"],
+     "answer": 1,
+     "why": "Come out = ser retirado."
+    },
+    {
+     "q": "\"Let's **iron out** the terms before shipping.\" To iron out means to…",
+     "options": ["resolve the problems in", "add to", "sign off", "delay"],
+     "answer": 0,
+     "why": "Iron out = resolver os pontos problemáticos."
+    },
+    {
+     "q": "\"One mistake and the bank will **turn it down**.\" To turn something down means to…",
+     "options": ["accept it", "reject it", "delay it", "amend it"],
+     "answer": 1,
+     "why": "Turn down = recusar."
+    },
+    {
+     "q": "\"Don't ship until the amendments are **signed off**.\" To be signed off means to…",
+     "options": ["formally approved", "cancelled", "shipped", "lost"],
+     "answer": 0,
+     "why": "Signed off = aprovado formalmente."
+    }
+   ]
+  }
+ ]
+}

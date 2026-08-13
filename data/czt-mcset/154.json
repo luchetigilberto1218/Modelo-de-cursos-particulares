@@ -1,0 +1,230 @@
+{
+ "num": 154,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "In practice, due diligence is a short, disciplined checklist — not a long legal report. The goal is to answer four questions before the first deal: Does the company exist? Who owns and controls it? Is anyone on a sanctions list? And is there anything obviously wrong in their public record?<br><br>Most of these questions can be answered in under an hour. A company registry check confirms existence. A UBO (ultimate beneficial owner) search identifies real ownership. Sanctions screening uses online tools. A quick news search spots red flags: lawsuits, fraud stories, bad press.<br><br>You are not hunting for perfection. You are filtering out the clear 'no' cases before they waste your time and your balance sheet.",
+   "items": [
+    {
+     "q": "How does the text describe practical due diligence?",
+     "options": [
+      "A long legal report",
+      "A short, disciplined checklist",
+      "A courtroom process",
+      "An insurance policy"
+     ],
+     "answer": 1,
+     "why": "\"due diligence is a short, disciplined checklist — not a long legal report.\""
+    },
+    {
+     "q": "Which is one of the four questions to answer before the first deal?",
+     "options": [
+      "How much profit will we make?",
+      "Who owns and controls the company?",
+      "What is the exchange rate?",
+      "Which port will we use?"
+     ],
+     "answer": 1,
+     "why": "\"Who owns and controls it?\" é uma das quatro perguntas."
+    },
+    {
+     "q": "What does a UBO search identify?",
+     "options": [
+      "The company's profit",
+      "The real ownership",
+      "The shipping route",
+      "The sanctions list"
+     ],
+     "answer": 1,
+     "why": "\"A UBO (ultimate beneficial owner) search identifies real ownership.\""
+    },
+    {
+     "q": "What does a quick news search help spot?",
+     "options": [
+      "The best price",
+      "Red flags: lawsuits, fraud stories, bad press",
+      "The exchange rate",
+      "The delivery date"
+     ],
+     "answer": 1,
+     "why": "\"A quick news search spots red flags: lawsuits, fraud stories, bad press.\""
+    },
+    {
+     "q": "What is the real goal of this due diligence?",
+     "options": [
+      "To find a perfect partner",
+      "To filter out the clear 'no' cases before they waste time and money",
+      "To write a long report",
+      "To avoid all deals"
+     ],
+     "answer": 1,
+     "why": "\"You are filtering out the clear 'no' cases before they waste your time and your balance sheet.\""
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "A new distributor has just sent us a large first order, and a few things feel slightly off, so before we ship anything, I'm running the standard checks. It's a checklist, not a witch hunt — I'm just filtering.<br><br>First, does the company exist? I ran a company registry check. Yes, it's registered — but only three months ago. That's not a dealbreaker, but for a large first order, a brand-new company is worth noting.<br><br>Second, who really owns it? The UBO search shows the ultimate owner is an individual in a different country from the company address. Again, not automatically bad, but it's a flag — I want to understand why.<br><br>Third, sanctions. I screened the company and the owner against the watchlists. Both came back clean. Good.<br><br>Fourth, a quick news search. Nothing alarming — no lawsuits, no fraud stories.<br><br>So where does that leave us? Two mild flags: very new, and owner in another country. No hard 'no', but enough that I'll ask for a smaller first order and payment secured, rather than shipping the full amount on open credit. Cautious, not paranoid.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why is Charlotte running the checks?",
+     "options": [
+      "A new distributor sent a large first order and a few things feel off",
+      "The bank asked",
+      "It is an annual review",
+      "The order was small"
+     ],
+     "answer": 0,
+     "why": "\"A new distributor has just sent us a large first order, and a few things feel slightly off.\""
+    },
+    {
+     "q": "What did the company registry check show?",
+     "options": [
+      "The company doesn't exist",
+      "It's registered, but only three months ago",
+      "It's on a sanctions list",
+      "It has lawsuits"
+     ],
+     "answer": 1,
+     "why": "\"it's registered — but only three months ago.\""
+    },
+    {
+     "q": "What did the UBO search reveal?",
+     "options": [
+      "The owner is on a watchlist",
+      "The ultimate owner is an individual in a different country from the company address",
+      "There is no owner",
+      "The company owns itself"
+     ],
+     "answer": 1,
+     "why": "\"the ultimate owner is an individual in a different country from the company address.\""
+    },
+    {
+     "q": "What did the sanctions screening find?",
+     "options": ["A match", "Both the company and owner came back clean", "A lawsuit", "A fraud story"],
+     "answer": 1,
+     "why": "\"I screened the company and the owner… Both came back clean.\""
+    },
+    {
+     "q": "What does Charlotte decide to do?",
+     "options": [
+      "Ship the full amount on open credit",
+      "Ask for a smaller first order with payment secured",
+      "Refuse the deal",
+      "Ignore the flags"
+     ],
+     "answer": 1,
+     "why": "\"I'll ask for a smaller first order and payment secured, rather than shipping the full amount on open credit.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "**Due diligence** is…",
+     "options": [
+      "a payment method",
+      "the checks you do before trusting or dealing with a party",
+      "a shipping term",
+      "an insurance policy"
+     ],
+     "answer": 1,
+     "why": "Due diligence = diligência prévia."
+    },
+    {
+     "q": "A **red flag** is…",
+     "options": [
+      "a good sign",
+      "a warning sign of a possible problem",
+      "a payment",
+      "a customs form"
+     ],
+     "answer": 1,
+     "why": "Red flag = sinal de alerta."
+    },
+    {
+     "q": "Choose the correct word: \"A **company ___** check confirms the business exists.\"",
+     "options": ["registry", "invoice", "tranche", "draft"],
+     "answer": 0,
+     "why": "Company registry = registro empresarial."
+    },
+    {
+     "q": "The **UBO** (ultimate beneficial owner) is…",
+     "options": [
+      "the company's bank",
+      "the real person who ultimately owns or controls the company",
+      "the shipping agent",
+      "the customer"
+     ],
+     "answer": 1,
+     "why": "UBO = beneficiário final."
+    },
+    {
+     "q": "Choose the correct term: \"We **___** the clear 'no' cases early.\"",
+     "options": ["filter out", "ship", "insure", "invoice"],
+     "answer": 0,
+     "why": "Filter out = filtrar/descartar."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"A few things feel **off**.\" If something feels off, it…",
+     "options": ["feels right", "feels slightly wrong or suspicious", "is finished", "is cheap"],
+     "answer": 1,
+     "why": "Feel off = parecer estranho/suspeito."
+    },
+    {
+     "q": "\"It's not a **dealbreaker**.\" A dealbreaker is…",
+     "options": [
+      "a minor detail",
+      "something serious enough to stop the deal",
+      "a discount",
+      "a bonus"
+     ],
+     "answer": 1,
+     "why": "Dealbreaker = impedimento decisivo."
+    },
+    {
+     "q": "\"The screening **came back clean**.\" To come back clean means to…",
+     "options": [
+      "show no problems",
+      "reveal a match",
+      "be delayed",
+      "be expensive"
+     ],
+     "answer": 0,
+     "why": "Come back clean = voltar sem apontamentos."
+    },
+    {
+     "q": "\"Let's **err on the side of caution**.\" This means to…",
+     "options": [
+      "take the safer option",
+      "take the risky option",
+      "do nothing",
+      "rush"
+     ],
+     "answer": 0,
+     "why": "Err on the side of caution = pecar pela cautela."
+    },
+    {
+     "q": "\"Cautious, not **paranoid**.\" Being paranoid means being…",
+     "options": [
+      "sensibly careful",
+      "excessively and unreasonably suspicious",
+      "trusting",
+      "fast"
+     ],
+     "answer": 1,
+     "why": "Paranoid = paranoico, desconfiado em excesso."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,210 @@
+{
+ "num": 149,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "Every international payment is a trade-off between three things: speed, cost and risk. A SWIFT wire is reliable and global but takes one to three days and costs money. A correspondent banking chain is cheap but slower and less transparent. A fintech rail can be faster and cheaper, but may be less widely accepted.<br><br>The right choice depends on what you need. For a small, urgent payment to a known supplier, speed matters most. For a large, high-value payment, certainty matters most. For routine payments to many suppliers, cost and ease of reconciliation usually win.<br><br>The best treasury teams do not use one method for everything. They match the method to the situation, and they review the choice as new options appear.",
+   "items": [
+    {
+     "q": "What three things is every international payment a trade-off between?",
+     "options": [
+      "Speed, cost and risk",
+      "Buyer, seller and bank",
+      "Currency, date and amount",
+      "Price, weight and route"
+     ],
+     "answer": 0,
+     "why": "\"a trade-off between three things: speed, cost and risk.\""
+    },
+    {
+     "q": "How is a SWIFT wire described?",
+     "options": [
+      "Cheap but slow",
+      "Reliable and global but takes one to three days and costs money",
+      "Instant and free",
+      "Untraceable"
+     ],
+     "answer": 1,
+     "why": "\"A SWIFT wire is reliable and global but takes one to three days and costs money.\""
+    },
+    {
+     "q": "For a large, high-value payment, what matters most?",
+     "options": ["Speed", "Certainty", "Cost", "Novelty"],
+     "answer": 1,
+     "why": "\"For a large, high-value payment, certainty matters most.\""
+    },
+    {
+     "q": "For routine payments to many suppliers, what usually wins?",
+     "options": [
+      "Speed",
+      "Cost and ease of reconciliation",
+      "Risk",
+      "The newest rail"
+     ],
+     "answer": 1,
+     "why": "\"cost and ease of reconciliation usually win.\""
+    },
+    {
+     "q": "What do the best treasury teams do?",
+     "options": [
+      "Use one method for everything",
+      "Match the method to the situation and review as options appear",
+      "Always use fintech",
+      "Avoid SWIFT"
+     ],
+     "answer": 1,
+     "why": "\"They match the method to the situation, and they review the choice as new options appear.\""
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "You've got a recurring payment to an Asian supplier and you're asking whether to stick with a SWIFT wire or move to a fintech rail. Let me weigh it up with you.<br><br>Start with the situation. This isn't a one-off; it's the same supplier, same amount, every month. That changes things — for a recurring, predictable payment, cost and ease of reconciliation matter more than raw speed.<br><br>The SWIFT wire you use now is rock-solid and everyone accepts it, but it's the most expensive option, and honestly, for a routine payment, you're paying a premium for a certainty you don't strictly need with a supplier you trust.<br><br>The fintech rail is cheaper and faster, and it reconciles automatically, which would save your team time every month. The only real question is acceptance — does this supplier's bank take it cleanly? If yes, it's the better fit here.<br><br>So my advice: test the fintech rail on one month's payment. If it lands cleanly and reconciles, switch. If there's any friction, stay on SWIFT. Low risk to try, real savings if it works.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What kind of payment is Emily's client making?",
+     "options": [
+      "A one-off large payment",
+      "A recurring monthly payment to the same supplier",
+      "A payment to many suppliers",
+      "An urgent emergency payment"
+     ],
+     "answer": 1,
+     "why": "\"it's the same supplier, same amount, every month.\""
+    },
+    {
+     "q": "For this recurring payment, what matters more than raw speed?",
+     "options": [
+      "Cost and ease of reconciliation",
+      "Certainty",
+      "Novelty",
+      "Currency"
+     ],
+     "answer": 0,
+     "why": "\"for a recurring, predictable payment, cost and ease of reconciliation matter more than raw speed.\""
+    },
+    {
+     "q": "What is the downside of the SWIFT wire here?",
+     "options": [
+      "It is unreliable",
+      "It is the most expensive option for a routine payment",
+      "It is not accepted",
+      "It is too fast"
+     ],
+     "answer": 1,
+     "why": "\"it's the most expensive option, and… you're paying a premium for a certainty you don't strictly need.\""
+    },
+    {
+     "q": "What is the only real question about the fintech rail?",
+     "options": [
+      "Whether it is legal",
+      "Whether the supplier's bank accepts it cleanly",
+      "Whether it is fast enough",
+      "Whether it is cheap"
+     ],
+     "answer": 1,
+     "why": "\"The only real question is acceptance — does this supplier's bank take it cleanly?\""
+    },
+    {
+     "q": "What is Emily's advice?",
+     "options": [
+      "Switch immediately to fintech",
+      "Test the fintech rail on one month; switch if it reconciles cleanly, else stay on SWIFT",
+      "Stay on SWIFT forever",
+      "Use both every month"
+     ],
+     "answer": 1,
+     "why": "\"test the fintech rail on one month's payment. If it lands cleanly and reconciles, switch.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "\"A **SWIFT wire** is a…\"",
+     "options": [
+      "cash payment",
+      "bank-to-bank international transfer via the SWIFT network",
+      "type of loan",
+      "customs form"
+     ],
+     "answer": 1,
+     "why": "SWIFT wire = transferência internacional pela rede SWIFT."
+    },
+    {
+     "q": "**Reconciliation** in payments means…",
+     "options": [
+      "sending money",
+      "matching payments received against invoices",
+      "changing currency",
+      "delaying payment"
+     ],
+     "answer": 1,
+     "why": "Reconciliation = conciliação (bater pagamentos com faturas)."
+    },
+    {
+     "q": "Choose the correct word: \"For a big payment, **___** matters most.\"",
+     "options": ["novelty", "certainty", "speed", "colour"],
+     "answer": 1,
+     "why": "Certainty = certeza."
+    },
+    {
+     "q": "\"The method is **reliable**.\" Reliable means…",
+     "options": ["risky", "dependable", "cheap", "slow"],
+     "answer": 1,
+     "why": "Reliable = confiável."
+    },
+    {
+     "q": "Choose the correct term: \"A **payment ___** is the route a payment travels.\"",
+     "options": ["rail", "wire", "draft", "claim"],
+     "answer": 0,
+     "why": "Payment rail = trilho/via de pagamento."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"Let me **weigh it up** with you.\" To weigh up means to…",
+     "options": ["ignore", "carefully consider the options", "reject", "rush"],
+     "answer": 1,
+     "why": "Weigh up = ponderar."
+    },
+    {
+     "q": "\"For now, let's **stick with** SWIFT.\" To stick with means to…",
+     "options": ["abandon", "continue using", "test", "cancel"],
+     "answer": 1,
+     "why": "Stick with = manter, continuar com."
+    },
+    {
+     "q": "\"You're **paying a premium** for certainty.\" To pay a premium means to…",
+     "options": ["pay less", "pay extra", "pay nothing", "pay late"],
+     "answer": 1,
+     "why": "Pay a premium = pagar mais caro."
+    },
+    {
+     "q": "\"Let's **try it out** on one payment.\" To try something out means to…",
+     "options": ["reject it", "test it", "commit fully", "delay it"],
+     "answer": 1,
+     "why": "Try out = experimentar, testar."
+    },
+    {
+     "q": "\"If there's any **friction**, stay on SWIFT.\" Friction here means…",
+     "options": [
+      "difficulty or resistance in the process",
+      "a discount",
+      "speed",
+      "trust"
+     ],
+     "answer": 0,
+     "why": "Friction = atrito, dificuldade no processo."
+    }
+   ]
+  }
+ ]
+}
