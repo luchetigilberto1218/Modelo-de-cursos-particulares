@@ -440,6 +440,39 @@ for (const blocos of Object.values(PILOTO)) {
   for (const b of blocos) b.items.forEach((it) => { it.q = negrito(it.q); });
 }
 
+/* Compreensão vai a 5 perguntas (decisão do usuário, 13/08/2026: 10 era muito).
+   A escolha não é "as cinco primeiras" — são as cinco que cobrem a tese da
+   lição e mantêm pelo menos duas de inferência, que é o que o formato antigo
+   não tinha. Os índices ficam explícitos para a seleção ser auditável. */
+const CORTE = { reading: [0, 2, 4, 7, 9], listening: [0, 2, 3, 7, 8] };
+for (const blocos of Object.values(PILOTO)) {
+  for (const b of blocos) {
+    const manter = CORTE[b.skill];
+    if (manter) b.items = manter.map((i) => b.items[i]);
+  }
+}
+
+/* Ordem dos exercícios na lição. A gramática estava caindo no MEIO dos blocos
+   de compreensão; agora ela fecha a bateria, encostada na seção "Grammar Point"
+   que vem logo abaixo na página. O resto segue a progressão natural: pronúncia →
+   entender → reconhecer vocabulário → usar vocabulário → expressões → gramática. */
+const ORDEM = (ex) => {
+  if (ex.type === 'readAloud') return 1;
+  if (ex.type === 'mcSet' && ex.skill === 'reading') return 2;
+  if (ex.type === 'mcSet' && ex.skill === 'listening') return 3;
+  if (ex.type === 'matching') return 4;
+  if (ex.type === 'mcSet' && ex.skill === 'vocabulary') return 5;
+  if (ex.type === 'mcSet' && ex.skill === 'expressions') return 6;
+  return 7;   // verbFill, wordBank, wordOrder, quickDrill — tudo que é gramática
+};
+
+/** Renumera o "1." / "2." do título para bater com a nova posição. */
+const renumera = (ex, i) => {
+  ex.title = (ex.title || '').replace(/^\s*\d+\.\s*/, '');
+  ex.title = `${i + 1}. ${ex.title}`;
+  return ex;
+};
+
 let resumo = [];
 
 for (const file of COURSES) {
@@ -453,7 +486,9 @@ for (const file of COURSES) {
     // Idempotente: remove uma aplicação anterior antes de reinserir, para que
     // rodar duas vezes não empilhe blocos repetidos na lição.
     lesson.exercises = (lesson.exercises || []).filter((e) => e.type !== 'mcSet');
-    lesson.exercises.push(...novos);
+    lesson.exercises.push(...JSON.parse(JSON.stringify(novos)));
+    lesson.exercises.sort((a, b) => ORDEM(a) - ORDEM(b));
+    lesson.exercises.forEach(renumera);
 
     tocadas += 1;
     blocos += novos.length;
