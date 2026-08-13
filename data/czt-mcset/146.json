@@ -8,12 +8,12 @@
     {
      "q": "What does a bid bond protect?",
      "options": [
-      "A buyer after delivery",
-      "A buyer while suppliers are competing for a contract",
+      "The bank's fee",
       "A supplier's profit",
-      "The bank's fee"
+      "A buyer after delivery",
+      "A buyer while suppliers are competing for a contract"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A bid bond protects a buyer while suppliers are competing for a contract.\""
     },
     {
@@ -30,23 +30,23 @@
     {
      "q": "What can asking for the wrong or oversized guarantee do?",
      "options": [
+      "Improve quality",
       "Make the deal cheaper",
       "Push a supplier away or make the deal more expensive",
-      "Speed up delivery",
-      "Improve quality"
+      "Speed up delivery"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"can push a supplier away — or make the deal more expensive for everyone.\""
     },
     {
      "q": "What is the best approach to choosing a guarantee?",
      "options": [
       "Always ask for the largest",
+      "Ask the bank to decide",
       "Think about the moment of risk — what could go wrong, and when",
-      "Copy the last contract",
-      "Ask the bank to decide"
+      "Copy the last contract"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"think about the moment of risk. What could go wrong, and when?\""
     },
     {
@@ -85,8 +85,8 @@
      "options": [
       "A bid bond",
       "A performance guarantee",
-      "A warranty bond only",
-      "No guarantee"
+      "No guarantee",
+      "A warranty bond only"
      ],
      "answer": 1,
      "why": "\"What you do need is a performance guarantee.\""
@@ -94,34 +94,34 @@
     {
      "q": "What is the real risk for the client?",
      "options": [
+      "The goods are damaged",
       "The supplier signs and then underdelivers over three years",
-      "The advance is lost",
       "The bid is unfair",
-      "The goods are damaged"
+      "The advance is lost"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"the real risk is that the supplier signs, takes the work, and then underdelivers over three years.\""
     },
     {
      "q": "What size does Sophie recommend, and why?",
      "options": [
       "Thirty per cent, to be safe",
-      "Ten per cent — the market norm and enough, without being priced back into the fee",
       "Fifty per cent",
+      "Ten per cent — the market norm and enough, without being priced back into the fee",
       "One per cent"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Ten per cent is the market norm here and it's genuinely enough… a big number… the supplier will price that cost straight back into your fee.\""
     },
     {
      "q": "When should the guarantee's expiry be set?",
      "options": [
-      "The day the contract ends",
-      "A few months after the final delivery, when problems surface",
       "Before the contract starts",
-      "Never"
+      "Never",
+      "A few months after the final delivery, when problems surface",
+      "The day the contract ends"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"set the expiry to run until a few months after the final delivery.\""
     }
    ]
@@ -132,10 +132,10 @@
     {
      "q": "\"A **performance guarantee** protects the buyer if…\"",
      "options": [
-      "the advance is lost",
+      "the goods are late in transit",
       "the supplier fails to deliver as agreed",
       "the bid is cancelled",
-      "the goods are late in transit"
+      "the advance is lost"
      ],
      "answer": 1,
      "why": "Performance guarantee = garantia de execução."
@@ -143,35 +143,45 @@
     {
      "q": "The **beneficiary** of a guarantee is…",
      "options": [
-      "the party protected by it",
+      "the shipper",
       "the bank",
       "the supplier",
-      "the shipper"
+      "the party protected by it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Beneficiary = beneficiário, quem é protegido."
     },
     {
      "q": "Choose the correct word: \"If the supplier fails, the buyer can **___** the guarantee.\"",
-     "options": ["call", "expire", "amend", "insure"],
-     "answer": 0,
+     "options": [
+      "expire",
+      "call",
+      "insure",
+      "amend"
+     ],
+     "answer": 1,
      "why": "To call a guarantee = acionar a garantia."
     },
     {
      "q": "The **expiry** of a guarantee is…",
      "options": [
-      "its start date",
       "the date it stops being valid",
+      "its beneficiary",
       "its value",
-      "its beneficiary"
+      "its start date"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Expiry = vencimento."
     },
     {
      "q": "Choose the correct term: \"A larger guarantee increases the supplier's **___**.\"",
-     "options": ["expiry", "exposure", "beneficiary", "counter-guarantee"],
-     "answer": 1,
+     "options": [
+      "exposure",
+      "beneficiary",
+      "counter-guarantee",
+      "expiry"
+     ],
+     "answer": 0,
      "why": "Exposure = exposição (ao risco/custo)."
     }
    ]
@@ -181,33 +191,43 @@
    "items": [
     {
      "q": "\"That option is **off the table**.\" Off the table means…",
-     "options": ["the best choice", "no longer an option", "under review", "the cheapest"],
-     "answer": 1,
+     "options": [
+      "no longer an option",
+      "the cheapest",
+      "the best choice",
+      "under review"
+     ],
+     "answer": 0,
      "why": "Off the table = fora de cogitação."
     },
     {
      "q": "\"The supplier will **price that back into** the fee.\" To price something back in means to…",
      "options": [
-      "add the cost to the price they charge you",
-      "reduce the price",
       "remove the cost",
-      "ignore it"
+      "ignore it",
+      "reduce the price",
+      "add the cost to the price they charge you"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Price back in = repassar o custo ao preço."
     },
     {
      "q": "\"Ten per cent is enough to make them **take it seriously**.\" To take something seriously means to…",
-     "options": ["ignore it", "treat it as important", "reject it", "delay it"],
-     "answer": 1,
+     "options": [
+      "treat it as important",
+      "reject it",
+      "ignore it",
+      "delay it"
+     ],
+     "answer": 0,
      "why": "Take seriously = levar a sério."
     },
     {
      "q": "\"Let's **think it through** before deciding the size.\" To think something through means to…",
      "options": [
-      "decide quickly",
-      "consider it carefully and fully",
       "ignore it",
+      "consider it carefully and fully",
+      "decide quickly",
       "delegate it"
      ],
      "answer": 1,
@@ -215,7 +235,12 @@
     },
     {
      "q": "\"You want the guarantee **live** when problems surface.\" If a guarantee is live, it is…",
-     "options": ["expired", "currently valid and in force", "cancelled", "unsigned"],
+     "options": [
+      "expired",
+      "currently valid and in force",
+      "cancelled",
+      "unsigned"
+     ],
      "answer": 1,
      "why": "Live = em vigor, válida."
     }

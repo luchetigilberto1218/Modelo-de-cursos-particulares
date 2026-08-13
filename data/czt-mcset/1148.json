@@ -10,12 +10,12 @@
     {
      "q": "What is the name of this lesson?",
      "options": [
-      "Forms and Papers",
-      "Emails and Calls",
       "Numbers and Dates",
-      "Names and Places"
+      "Names and Places",
+      "Emails and Calls",
+      "Forms and Papers"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "O texto diz: \"In this lesson, 'Forms and Papers'\"."
     },
     {
@@ -23,43 +23,43 @@
      "options": [
       "Three",
       "Four",
-      "Five",
-      "Six"
+      "Six",
+      "Five"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Today you learn five useful words: paper, document, file, signature and copy.\""
     },
     {
      "q": "What is the plural of \"copy\"?",
      "options": [
       "copys",
+      "copy",
       "copies",
-      "copyes",
-      "copy"
+      "copyes"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Palavras terminadas em consoante + y trocam o y por -ies: copy → copies."
     },
     {
      "q": "The text suggests that taxes are…",
      "options": [
-      "impossible to understand",
       "a normal part of work that gets easier with practice",
-      "only for the accountant",
-      "not important in English"
+      "impossible to understand",
+      "not important in English",
+      "only for the accountant"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"Taxes are just one more part of the company's routine… they become easier with practice.\""
     },
     {
      "q": "Sophie would most likely AGREE that…",
      "options": [
-      "students should learn everything in one day",
       "it is better to learn slowly, one step at a time",
+      "students should learn everything in one day",
       "tax words are too hard for beginners",
       "the plural is never important"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"Sophie explains the tax words slowly… one step at a time.\""
     }
    ]
@@ -77,34 +77,34 @@
     {
      "q": "Who comes this afternoon?",
      "options": [
-      "The accountant",
       "The auditor",
+      "The accountant",
       "The manager",
       "A new student"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The auditor comes this afternoon.\""
     },
     {
      "q": "Where does Sophie put the tax forms?",
      "options": [
-      "In a blue file",
       "In her bag",
+      "In an email",
       "On the floor",
-      "In an email"
+      "In a blue file"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"I put the tax forms in one file. The file is blue.\""
     },
     {
      "q": "How long do they keep the copies?",
      "options": [
+      "Seven years",
       "One year",
       "Three years",
-      "Seven years",
       "Ten years"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"We keep the copies for seven years.\""
     },
     {
@@ -121,12 +121,12 @@
     {
      "q": "How does Sophie feel about her work?",
      "options": [
+      "Bored",
       "Nervous and lost",
       "Calm and organised",
-      "Angry",
-      "Bored"
+      "Angry"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"I am calm, because I know my files well\" — ela está tranquila e organizada."
     }
    ]
@@ -141,8 +141,8 @@
      "options": [
       "a paper with important information",
       "a phone call",
-      "a coffee break",
-      "a meeting room"
+      "a meeting room",
+      "a coffee break"
      ],
      "answer": 0,
      "why": "Document = documento: um papel com informação importante."
@@ -150,12 +150,12 @@
     {
      "q": "Choose the correct word: \"The form is not valid without your ___ at the bottom.\"",
      "options": [
-      "signature",
-      "copy",
       "file",
+      "copy",
+      "signature",
       "paper"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Signature = assinatura: o que valida o formulário."
     },
     {
@@ -172,23 +172,23 @@
     {
      "q": "\"All the tax forms are in this <strong>file</strong>.\" A file is…",
      "options": [
-      "a folder that keeps papers together",
-      "a person",
+      "a tax",
       "a company car",
-      "a tax"
+      "a folder that keeps papers together",
+      "a person"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "File = arquivo/pasta: guarda os papéis juntos."
     },
     {
      "q": "Choose the correct plural: \"There are three ___ on the desk.\"",
      "options": [
+      "papers's",
       "papers",
       "paper",
-      "papers's",
       "paperes"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Plural simples: paper → papers, só com -s."
     }
    ]
@@ -201,21 +201,21 @@
     {
      "q": "\"Please <strong>fill out</strong> this form.\" To fill out means to…",
      "options": [
+      "sign it twice",
       "write your information in the spaces",
-      "throw it away",
       "read it out loud",
-      "sign it twice"
+      "throw it away"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fill out = preencher: escrever suas informações nos espaços."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
       "approve it",
-      "print it",
       "copy it",
-      "lose it"
+      "lose it",
+      "print it"
      ],
      "answer": 0,
      "why": "Sign off on = aprovar, dar o aval final."
@@ -223,34 +223,34 @@
     {
      "q": "\"Please <strong>hand in</strong> the document before Friday.\" To hand in means to…",
      "options": [
-      "give it to the right person",
       "keep it at home",
-      "read it slowly",
-      "translate it"
+      "translate it",
+      "give it to the right person",
+      "read it slowly"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Hand in = entregar o documento à pessoa certa."
     },
     {
      "q": "\"I will <strong>print out</strong> a copy for the auditor.\" To print out means to…",
      "options": [
-      "make a paper copy from the computer",
+      "sign the form",
       "delete the file",
-      "send an email",
-      "sign the form"
+      "make a paper copy from the computer",
+      "send an email"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Print out = imprimir: fazer uma cópia em papel a partir do computador."
     },
     {
      "q": "\"Can you <strong>check over</strong> these papers before we send them?\" To check over means to…",
      "options": [
-      "look at them carefully for mistakes",
-      "throw them in the file",
       "copy them all",
-      "sign them for me"
+      "look at them carefully for mistakes",
+      "sign them for me",
+      "throw them in the file"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Check over = revisar, olhar com atenção para achar erros."
     }
    ]

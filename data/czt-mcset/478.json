@@ -10,21 +10,21 @@
     {
      "q": "According to the text, how should trade taxes be understood at senior level?",
      "options": [
-      "As a strategic input to sourcing decisions",
       "As a back-office formality handled at invoicing",
-      "As a fixed cost that cannot be influenced",
-      "As a purely legal compliance obligation"
+      "As a strategic input to sourcing decisions",
+      "As a purely legal compliance obligation",
+      "As a fixed cost that cannot be influenced"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"trade taxes… are a strategic input to sourcing decisions, not a back-office formality.\""
     },
     {
      "q": "By how much can trade taxes change the landed cost of a product?",
      "options": [
-      "By a negligible amount",
-      "By double-digit percentages",
       "Only at the invoice stage",
-      "By exactly the tariff rate quoted"
+      "By double-digit percentages",
+      "By exactly the tariff rate quoted",
+      "By a negligible amount"
      ],
      "answer": 1,
      "why": "\"they can change the landed cost of a product by double-digit percentages.\""
@@ -32,21 +32,21 @@
     {
      "q": "The text compares managing tariffs to managing…",
      "options": [
-      "headcount",
-      "currency exposure",
+      "supplier contracts",
       "office overheads",
-      "supplier contracts"
+      "headcount",
+      "currency exposure"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"treat tariffs the way they treat currency exposure — a background variable…\""
     },
     {
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
-      "Modelling tax alongside cost makes sourcing decisions sharper.",
-      "Tariffs are best left to be discovered when the invoice arrives.",
       "Where a company builds is shaped by border taxes.",
-      "Mature companies raise trade taxes early with suppliers."
+      "Tariffs are best left to be discovered when the invoice arrives.",
+      "Mature companies raise trade taxes early with suppliers.",
+      "Modelling tax alongside cost makes sourcing decisions sharper."
      ],
      "answer": 1,
      "why": "Inferência: o texto inteiro critica descobrir os tributos na fase de fatura; ele defende trazê-los para a primeira conversa."
@@ -54,10 +54,10 @@
     {
      "q": "What does the phrase \"leaving on the table\" suggest about the first group of companies?",
      "options": [
-      "They deliberately sacrifice margin for speed",
-      "They forgo margin they could have captured, without realising it",
       "They pay their suppliers late",
-      "They overstate their landed costs"
+      "They forgo margin they could have captured, without realising it",
+      "They overstate their landed costs",
+      "They deliberately sacrifice margin for speed"
      ],
      "answer": 1,
      "why": "Inferência: \"points of margin that the first group never even knew they were leaving on the table\" — perdem margem sem perceber."
@@ -77,31 +77,31 @@
     {
      "q": "What was said about last year's supplier when it was signed?",
      "options": [
+      "It was the nearest supplier available",
       "It had the highest quality rating",
       "It was called the cheapest option, with the lowest unit price on paper",
-      "It was the nearest supplier available",
       "It offered the fastest delivery"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"the one everyone called the cheapest option. On paper, the unit price was clearly the lowest.\""
     },
     {
      "q": "By roughly how much does the landed cost jump once tariffs and duties are added?",
      "options": [
       "About four percent",
-      "About fourteen percent",
       "About forty percent",
-      "It does not change"
+      "It does not change",
+      "About fourteen percent"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The landed cost jumps by roughly fourteen percent.\""
     },
     {
      "q": "What does Oliver reveal about the nearer supplier they passed over?",
      "options": [
       "It lands cheaper once border taxes are included",
-      "It is no longer available",
       "It has the same landed cost as the first supplier",
+      "It is no longer available",
       "It was rejected for quality reasons"
      ],
      "answer": 0,
@@ -112,8 +112,8 @@
      "options": [
       "Quotes are always inaccurate",
       "The quoted price omits the taxes that ultimately affect profitability",
-      "Margins should never be discussed with suppliers",
-      "The finance director sets the quote"
+      "The finance director sets the quote",
+      "Margins should never be discussed with suppliers"
      ],
      "answer": 1,
      "why": "Inferência: o preço cotado ignora tributos de fronteira, que é o que de fato afeta a margem."
@@ -121,12 +121,12 @@
     {
      "q": "What change in behaviour is Oliver asking the new director to adopt?",
      "options": [
-      "To always choose the nearest supplier",
       "To compare landed costs early, rather than invoices after the fact",
+      "To always choose the nearest supplier",
       "To stop shortlisting suppliers altogether",
       "To defer all tax questions to the finance director"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"Whereas the old team compared invoices, I want you comparing landed costs… before you ever shortlist a supplier.\""
     }
    ]
@@ -139,43 +139,43 @@
     {
      "q": "\"We treat tariffs as a <strong>strategic input</strong>, not an afterthought.\" A strategic input is…",
      "options": [
-      "a factor deliberately fed into a high-level decision",
       "a routine administrative filing",
+      "a supplier's opening quote",
       "an unavoidable fixed cost",
-      "a supplier's opening quote"
+      "a factor deliberately fed into a high-level decision"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Strategic input = entrada estratégica: algo que você considera de propósito ao decidir."
     },
     {
      "q": "\"The <strong>landed cost</strong> came in higher than the quote once duties were added.\" Landed cost means…",
      "options": [
-      "the total cost of a product delivered to its destination, including taxes",
-      "the price shown on the original supplier quote",
       "the cost of warehousing alone",
-      "the freight charge on its own"
+      "the price shown on the original supplier quote",
+      "the freight charge on its own",
+      "the total cost of a product delivered to its destination, including taxes"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Landed cost = custo no destino: o total já com tributos e transporte."
     },
     {
      "q": "Choose the correct word: \"Tariffs are a ___ variable — they quietly shape the margin if you ignore them.\"",
      "options": [
-      "background",
       "temporary",
-      "irrelevant",
-      "fixed"
+      "fixed",
+      "background",
+      "irrelevant"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Background variable = variável de fundo: age silenciosamente sobre a margem."
     },
     {
      "q": "\"Most firms only notice the tax at the <strong>invoice stage</strong>.\" This means they notice it…",
      "options": [
       "when the bill is issued, after the decision is made",
-      "during the first supplier conversation",
       "before shortlisting any supplier",
-      "at the board's annual review"
+      "at the board's annual review",
+      "during the first supplier conversation"
      ],
      "answer": 0,
      "why": "Invoice stage = fase de fatura: tarde demais, quando a conta chega."
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct phrase: \"Ignoring tariffs meant we were ___ points of margin without realising it.\"",
      "options": [
-      "leaving on the table",
       "signing off on",
       "rolling out",
+      "leaving on the table",
       "bringing forward"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To leave on the table = deixar na mesa: abrir mão de ganho que estava disponível."
     }
    ]
@@ -201,20 +201,20 @@
     {
      "q": "\"Finance still has to <strong>sign off on</strong> the new sourcing corridor.\" To sign off on means to…",
      "options": [
-      "formally approve",
-      "quietly criticise",
       "postpone indefinitely",
+      "quietly criticise",
+      "formally approve",
       "audit afterwards"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We will <strong>roll out</strong> the landed-cost model across every buying team.\" To roll out means to…",
      "options": [
       "implement in stages",
-      "cancel gradually",
       "keep it confidential",
+      "cancel gradually",
       "outsource it"
      ],
      "answer": 0,
@@ -223,34 +223,34 @@
     {
      "q": "\"Two buyers <strong>pushed back on</strong> switching suppliers.\" They…",
      "options": [
-      "resisted or objected to the idea",
       "approved it at once",
-      "rewrote the contract",
-      "delayed the invoice"
+      "delayed the invoice",
+      "resisted or objected to the idea",
+      "rewrote the contract"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
     },
     {
      "q": "\"We agreed to model tariffs early, but nobody <strong>followed through</strong>.\" They…",
      "options": [
-      "failed to carry the plan to completion",
       "changed suppliers halfway",
-      "documented it thoroughly",
-      "escalated it to the board"
+      "escalated it to the board",
+      "failed to carry the plan to completion",
+      "documented it thoroughly"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"Renegotiating that one duty line really <strong>moved the needle</strong> on margin.\" This means it…",
      "options": [
-      "made a noticeable difference",
-      "created supplier resistance",
       "cost more than expected",
-      "took years to measure"
+      "made a noticeable difference",
+      "took years to measure",
+      "created supplier resistance"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
     }
    ]

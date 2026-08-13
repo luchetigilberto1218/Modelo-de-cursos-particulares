@@ -10,21 +10,21 @@
     {
      "q": "What is the name of this lesson?",
      "options": [
-      "Employees and Taxes",
+      "Managers and Staff",
       "Clients and Suppliers",
-      "Forms and Reports",
-      "Managers and Staff"
+      "Employees and Taxes",
+      "Forms and Reports"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "O texto diz: \"this lesson, 'Employees and Taxes'\"."
     },
     {
      "q": "How many new words do you learn today?",
      "options": [
-      "Three",
       "Four",
+      "Six",
       "Five",
-      "Six"
+      "Three"
      ],
      "answer": 2,
      "why": "\"Today you learn five useful words.\""
@@ -32,12 +32,12 @@
     {
      "q": "Where do these words appear?",
      "options": [
-      "On Czarnikow's forms and reports",
-      "On the office door",
       "In a dictionary only",
+      "On the office door",
+      "On Czarnikow's forms and reports",
       "On the tax office website"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"the words that appear on Czarnikow's forms and reports\"."
     },
     {
@@ -45,8 +45,8 @@
      "options": [
       "learn everything in one day",
       "take your time and not rush",
-      "skip the hard words",
-      "study without practice"
+      "study without practice",
+      "skip the hard words"
      ],
      "answer": 1,
      "why": "Inferência: \"one step at a time\" mostra que o autor prefere calma, não pressa."
@@ -54,12 +54,12 @@
     {
      "q": "\"English comes in CAN's, not in CAN'Ts.\" The author most likely wants you to feel…",
      "options": [
-      "afraid of taxes",
       "confident that you can do it",
+      "worried about the forms",
       "bored with the lesson",
-      "worried about the forms"
+      "afraid of taxes"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: a frase e \"You can do it!\" passam confiança ao aluno."
     }
    ]
@@ -78,8 +78,8 @@
      "q": "Who is speaking?",
      "options": [
       "Sophie, from the tax team",
-      "A new client",
       "The company manager only",
+      "A new client",
       "A supplier"
      ],
      "answer": 0,
@@ -88,45 +88,45 @@
     {
      "q": "How does Sophie describe the manager?",
      "options": [
-      "Very busy",
       "Very kind",
       "Very strict",
-      "Very quiet"
+      "Very quiet",
+      "Very busy"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Our manager is very kind. You can ask her any question.\""
     },
     {
      "q": "For how long do they keep the supplier files?",
      "options": [
-      "One year",
-      "Three years",
       "Five years",
-      "Seven years"
+      "Three years",
+      "Seven years",
+      "One year"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"We keep the supplier files for seven years.\""
     },
     {
      "q": "Sophie says the team is small \"but we work together every day.\" This suggests the team…",
      "options": [
-      "does not need each other",
-      "works well as a group",
       "is too big to manage",
-      "only meets once a year"
+      "only meets once a year",
+      "does not need each other",
+      "works well as a group"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: mesmo pequena, a equipe colabora bem — trabalha junta todo dia."
     },
     {
      "q": "How does Sophie most likely want the new employees to feel?",
      "options": [
-      "Nervous about the deadline",
       "Welcome and calm",
+      "Nervous about the deadline",
       "In a hurry",
       "Confused about the words"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"take your time\", \"You can do it\" e \"Welcome to the team\" passam acolhimento e calma."
     }
    ]
@@ -139,45 +139,45 @@
     {
      "q": "\"Our <strong>staff</strong> is ready for the meeting.\" A <strong>staff</strong> is…",
      "options": [
-      "the people who work in a company",
-      "a tax form",
+      "a report",
       "a bank account",
-      "a report"
+      "the people who work in a company",
+      "a tax form"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Staff = equipe, as pessoas que trabalham na empresa."
     },
     {
      "q": "Choose the correct word: \"When I have a question, I ask my ___. She leads the team.\"",
      "options": [
-      "manager",
       "client",
-      "supplier",
-      "deadline"
+      "manager",
+      "deadline",
+      "supplier"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Manager = gerente, quem lidera a equipe."
     },
     {
      "q": "\"My <strong>colleague</strong> sits next to me at work.\" A <strong>colleague</strong> is…",
      "options": [
-      "a person who works with you",
-      "your boss's boss",
       "a customer",
-      "a company that sells to you"
+      "a company that sells to you",
+      "a person who works with you",
+      "your boss's boss"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Colleague = colega, quem trabalha com você."
     },
     {
      "q": "Choose the correct word: \"We check every ___ before the deadline, because they pay for our service.\"",
      "options": [
-      "client",
       "colleague",
       "manager",
-      "staff"
+      "staff",
+      "client"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Client = cliente, quem paga pelo serviço."
     },
     {
@@ -201,12 +201,12 @@
     {
      "q": "\"Please <strong>fill out</strong> this tax form.\" To fill out means to…",
      "options": [
-      "write your answers on it",
       "throw it away",
+      "write your answers on it",
       "read it aloud",
       "send it by email"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fill out = preencher, escrever as respostas no formulário."
     },
     {
@@ -223,20 +223,20 @@
     {
      "q": "\"The manager will <strong>sign off on</strong> the numbers.\" To sign off on means to…",
      "options": [
-      "approve them",
-      "delete them",
       "print them",
-      "hide them"
+      "delete them",
+      "hide them",
+      "approve them"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"I will <strong>follow up</strong> with the client tomorrow.\" To follow up means to…",
      "options": [
       "check again later",
-      "forget about it",
       "start a new job",
+      "forget about it",
       "close the office"
      ],
      "answer": 0,
@@ -245,12 +245,12 @@
     {
      "q": "\"Let's <strong>go over</strong> the form together.\" To go over means to…",
      "options": [
-      "review it carefully",
       "sign it fast",
+      "send it back",
       "walk across the room",
-      "send it back"
+      "review it carefully"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Go over = revisar, passar por cada parte com atenção."
     }
    ]

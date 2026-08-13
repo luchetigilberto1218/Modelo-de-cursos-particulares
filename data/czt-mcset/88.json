@@ -8,42 +8,42 @@
     {
      "q": "How does the text describe project management \"at its heart\"?",
      "options": [
+      "A risk register",
       "A set of software tools",
-      "A promise about scope, cost, quality and date",
       "A weekly meeting",
-      "A risk register"
+      "A promise about scope, cost, quality and date"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"a promise to the business: 'This will be ready, at this cost, with this quality, by this date.'\""
     },
     {
      "q": "According to the text, why do most projects fail?",
      "options": [
-      "Technical issues",
       "Scope creep, unmanaged risks and late bad news",
-      "Lack of funding",
-      "Too many stakeholders"
+      "Technical issues",
+      "Too many stakeholders",
+      "Lack of funding"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"scope creeps quietly, risks are tracked but not managed, and stakeholders discover bad news too late.\""
     },
     {
      "q": "What does \"make the invisible visible\" mean here?",
      "options": [
+      "Hide risks until solved",
       "Use more charts",
-      "Surface issues early and keep the business informed",
       "Hold more meetings",
-      "Hide risks until solved"
+      "Surface issues early and keep the business informed"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"they surface issues early, escalate without drama, and keep the business honestly informed.\""
     },
     {
      "q": "By the end of the quarter, a skilled PM will have…",
      "options": [
-      "cancelled the project",
-      "kept the promise — or renegotiated it in time",
       "replaced the sponsor",
+      "kept the promise — or renegotiated it in time",
+      "cancelled the project",
       "removed all risks"
      ],
      "answer": 1,
@@ -52,12 +52,12 @@
     {
      "q": "The phrase \"escalate without drama\" suggests a PM should raise issues…",
      "options": [
-      "loudly, to get attention",
       "calmly and factually",
+      "to everyone at once",
       "only at the end",
-      "to everyone at once"
+      "loudly, to get attention"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: escalar sem drama é comunicar o problema de forma calma e objetiva."
     }
    ]
@@ -72,51 +72,56 @@
     {
      "q": "Why is Oliver giving the update now rather than later?",
      "options": [
+      "Because the sponsor asked",
       "It's the scheduled time",
-      "To be straight about the slipping milestone rather than surprise the sponsor",
       "Because the project is finished",
-      "Because the sponsor asked"
+      "To be straight about the slipping milestone rather than surprise the sponsor"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I want to be straight with you about it rather than surprise you later.\""
     },
     {
      "q": "What caused the delay, according to Oliver?",
      "options": [
-      "The design team was slow",
       "Scope crept — two extra features were added without moving the date",
       "A technical failure",
+      "The design team was slow",
       "The sponsor changed the budget"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The scope quietly grew — two extra features got added three weeks ago without moving the date.\""
     },
     {
      "q": "Who does Oliver say the scope creep is \"on\"?",
-     "options": ["The design team", "Himself, for not flagging it sooner", "The sponsor", "The client"],
+     "options": [
+      "The sponsor",
+      "Himself, for not flagging it sooner",
+      "The design team",
+      "The client"
+     ],
      "answer": 1,
      "why": "\"it's on me for not flagging it sooner.\""
     },
     {
      "q": "What is option one?",
      "options": [
+      "Cancel the project",
       "Move the launch two weeks",
       "Hold the date and drop the two new features to a later release",
-      "Cancel the project",
       "Add more people"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Option one: we hold the date and drop the two new features to a later release.\""
     },
     {
      "q": "What will Oliver have done by the end of next week?",
      "options": [
       "Finished the build",
-      "Updated the plan and the risk register",
       "Replaced the design team",
-      "Cancelled the features"
+      "Cancelled the features",
+      "Updated the plan and the risk register"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"by the end of next week I'll have updated the plan and the risk register.\""
     }
    ]
@@ -128,27 +133,32 @@
      "q": "\"We've got **scope creep** again.\" Scope creep is…",
      "options": [
       "the project finishing early",
-      "the work quietly expanding beyond the plan",
       "a budget cut",
+      "the work quietly expanding beyond the plan",
       "a risk being closed"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Scope creep = expansão silenciosa do escopo."
     },
     {
      "q": "A **milestone** in a project is…",
      "options": [
-      "a daily task",
       "a significant checkpoint or stage",
       "a budget line",
-      "a team member"
+      "a team member",
+      "a daily task"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Milestone = marco importante do projeto."
     },
     {
      "q": "Choose the correct word: \"Let's log that in the **risk ___** so the sponsor can see it.\"",
-     "options": ["milestone", "register", "creep", "path"],
+     "options": [
+      "milestone",
+      "register",
+      "creep",
+      "path"
+     ],
      "answer": 1,
      "why": "Risk register = registro de riscos."
     },
@@ -157,16 +167,21 @@
      "options": [
       "the software vendor",
       "anyone with an interest in the project's outcome",
-      "the project budget",
-      "the final deadline"
+      "the final deadline",
+      "the project budget"
      ],
      "answer": 1,
      "why": "Stakeholder = parte interessada."
     },
     {
      "q": "Choose the correct term: \"This issue is serious — I'll ___ it to the sponsor today.\"",
-     "options": ["escalate", "creep", "pace", "skim"],
-     "answer": 0,
+     "options": [
+      "creep",
+      "skim",
+      "pace",
+      "escalate"
+     ],
+     "answer": 3,
      "why": "To escalate = escalar, levar a uma instância superior."
     }
    ]
@@ -176,37 +191,57 @@
    "items": [
     {
      "q": "\"The build is **behind schedule**.\" Behind schedule means…",
-     "options": ["ahead of plan", "later than planned", "on budget", "cancelled"],
-     "answer": 1,
+     "options": [
+      "later than planned",
+      "on budget",
+      "ahead of plan",
+      "cancelled"
+     ],
+     "answer": 0,
      "why": "Behind schedule = atrasado em relação ao plano."
     },
     {
      "q": "\"Let's **flag** this risk to the sponsor.\" To flag means to…",
-     "options": ["close it", "raise it for attention", "solve it", "ignore it"],
-     "answer": 1,
+     "options": [
+      "solve it",
+      "close it",
+      "raise it for attention",
+      "ignore it"
+     ],
+     "answer": 2,
      "why": "To flag = sinalizar, chamar atenção."
     },
     {
      "q": "\"We need to **keep track of** the dependencies.\" To keep track of means to…",
-     "options": ["monitor", "remove", "escalate", "approve"],
-     "answer": 0,
+     "options": [
+      "remove",
+      "monitor",
+      "escalate",
+      "approve"
+     ],
+     "answer": 1,
      "why": "Keep track of = acompanhar, monitorar."
     },
     {
      "q": "\"That feature can **wait for** the next release.\" To wait for means to…",
-     "options": ["be delayed to", "be cancelled from", "be added to", "be escalated to"],
-     "answer": 0,
+     "options": [
+      "be cancelled from",
+      "be added to",
+      "be escalated to",
+      "be delayed to"
+     ],
+     "answer": 3,
      "why": "Aqui, empurrar para (esperar até) o próximo release."
     },
     {
      "q": "\"Let's not **bite off more than we can chew** this sprint.\" This idiom means to…",
      "options": [
-      "take on more than we can handle",
       "finish early",
+      "take on more than we can handle",
       "reduce the team",
       "skip testing"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Bite off more than you can chew = assumir mais do que se dá conta."
     }
    ]

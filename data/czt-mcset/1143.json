@@ -10,12 +10,12 @@
     {
      "q": "How many new words does the lesson teach?",
      "options": [
-      "Three",
-      "Four",
       "Five",
-      "Seven"
+      "Four",
+      "Seven",
+      "Three"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"we learn five useful words: invoice, receipt, form, folder and report.\""
     },
     {
@@ -32,32 +32,32 @@
     {
      "q": "What must be correct before we send the form?",
      "options": [
-      "The invoice",
-      "The folder",
       "The report",
-      "The deadline"
+      "The folder",
+      "The deadline",
+      "The invoice"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"the invoice must be correct before we send the form.\""
     },
     {
      "q": "The text suggests that taxes are…",
      "options": [
       "very rare at the company",
-      "a normal part of the company's routine",
+      "only Sophie's job",
       "impossible to understand",
-      "only Sophie's job"
+      "a normal part of the company's routine"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"Taxes are just one more part of the company's routine\" — algo normal, não excepcional."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "English and taxes are too hard to learn",
-      "practice makes taxes in English easier",
       "you should learn many words at once",
-      "the report can be thrown away quickly"
+      "practice makes taxes in English easier",
+      "the report can be thrown away quickly",
+      "English and taxes are too hard to learn"
      ],
      "answer": 1,
      "why": "Inferência: \"One small step at a time… with practice, they become easier.\""
@@ -77,21 +77,21 @@
     {
      "q": "What is inside the blue folder?",
      "options": [
-      "One invoice and one receipt",
-      "Two forms",
+      "Nothing",
       "The monthly report",
-      "Nothing"
+      "Two forms",
+      "One invoice and one receipt"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Inside the folder, there is one invoice and one receipt.\""
     },
     {
      "q": "What is in the middle of the desk?",
      "options": [
-      "A folder",
-      "A form",
       "A receipt",
-      "A report"
+      "A form",
+      "A report",
+      "A folder"
      ],
      "answer": 1,
      "why": "\"In the middle of the desk, there is a form.\""
@@ -99,23 +99,23 @@
     {
      "q": "When is the deadline?",
      "options": [
-      "Monday",
-      "Wednesday",
       "Friday",
-      "Sunday"
+      "Sunday",
+      "Monday",
+      "Wednesday"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"two numbers to add before the deadline on Friday.\""
     },
     {
      "q": "The report is not finished. What does this suggest?",
      "options": [
+      "The report is lost",
       "There is still a little work to do before Friday",
-      "The report is wrong",
       "Sophie will not send the report",
-      "The report is lost"
+      "The report is wrong"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: faltam dois números — ainda há um pouco de trabalho, mas dá tempo antes de sexta."
     },
     {
@@ -139,56 +139,56 @@
     {
      "q": "\"We send the client an <strong>invoice</strong> at the end of the month.\" An invoice is…",
      "options": [
-      "a bill that shows what to pay",
+      "a phone number",
       "a small paper that proves you paid",
       "an empty folder",
-      "a phone number"
+      "a bill that shows what to pay"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Invoice = nota fiscal: o documento que mostra o que deve ser pago."
     },
     {
      "q": "\"Please keep the <strong>receipt</strong> after you pay.\" A receipt is…",
      "options": [
-      "a proof that you paid",
       "a long report",
-      "a meeting room",
-      "a tax law"
+      "a tax law",
+      "a proof that you paid",
+      "a meeting room"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Receipt = recibo: prova de que o pagamento foi feito."
     },
     {
      "q": "Choose the correct word: \"The accountant must sign the tax ___ today.\"",
      "options": [
-      "form",
       "coffee",
-      "window",
-      "chair"
+      "form",
+      "chair",
+      "window"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Form = formulário: o documento fiscal que o contador assina."
     },
     {
      "q": "Choose the correct word: \"All the papers are in one green ___ on the desk.\"",
      "options": [
+      "report",
       "folder",
       "receipt",
-      "invoice",
-      "report"
+      "invoice"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Folder = pasta: onde os papéis ficam guardados."
     },
     {
      "q": "\"The team writes a monthly <strong>report</strong> for the manager.\" A report is…",
      "options": [
-      "a document with information and numbers",
       "a small receipt",
+      "a coffee break",
       "an empty box",
-      "a coffee break"
+      "a document with information and numbers"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Report = relatório: documento com informações e números."
     }
    ]
@@ -212,45 +212,45 @@
     {
      "q": "\"Please <strong>fill in</strong> the tax form.\" To fill in means to…",
      "options": [
-      "write your answers in it",
-      "close it",
       "lose it",
-      "sell it"
+      "close it",
+      "sell it",
+      "write your answers in it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Fill in = preencher: escrever as informações no formulário."
     },
     {
      "q": "\"We must <strong>hand in</strong> the report on Friday.\" To hand in means to…",
      "options": [
-      "give it to the right person",
-      "keep it a secret",
       "copy it",
-      "delete it"
+      "give it to the right person",
+      "delete it",
+      "keep it a secret"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Hand in = entregar o documento para quem o recebe."
     },
     {
      "q": "\"Let's <strong>check on</strong> the invoice before we pay.\" To check on means to…",
      "options": [
+      "print more copies",
       "look at it to be sure it is correct",
       "pay it twice",
-      "hide it",
-      "print more copies"
+      "hide it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Check on = verificar, conferir se está certo."
     },
     {
      "q": "\"We are almost done. Let's <strong>wrap up</strong> the folder.\" To wrap up means to…",
      "options": [
-      "finish it",
       "start it again",
+      "open a new one",
       "lose it",
-      "open a new one"
+      "finish it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Wrap up = finalizar, terminar a tarefa."
     }
    ]

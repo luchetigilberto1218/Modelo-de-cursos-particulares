@@ -22,42 +22,42 @@
      "q": "How does Sophie explain the tax words?",
      "options": [
       "Very fast",
-      "Slowly, in simple English",
+      "In Portuguese",
       "Only in writing",
-      "In Portuguese"
+      "Slowly, in simple English"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"She explains the tax words slowly, in simple English.\""
     },
     {
      "q": "What must happen before we send the form?",
      "options": [
-      "The report must be correct",
       "We must call the bank",
+      "The report must be correct",
       "We must print the calendar",
       "We must pay the team"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The report must be correct before we send the form.\""
     },
     {
      "q": "The text says \"one step at a time.\" This suggests that…",
      "options": [
+      "taxes are impossible",
       "the report is easy if you go slowly",
       "you must finish in one minute",
-      "taxes are impossible",
       "you should skip the report"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: a mensagem é calma — devagar, um passo por vez, você consegue."
     },
     {
      "q": "Sophie would most likely DISAGREE with which sentence?",
      "options": [
-      "Taxes are part of the routine.",
+      "We check the numbers before the deadline.",
       "Taxes in English are too hard to learn.",
-      "The report must be correct.",
-      "We check the numbers before the deadline."
+      "Taxes are part of the routine.",
+      "The report must be correct."
      ],
      "answer": 1,
      "why": "Inferência: o texto todo diz que os impostos seguem padrões simples — ela discordaria de que são difíceis demais."
@@ -79,8 +79,8 @@
      "options": [
       "A long email",
       "The first tax report",
-      "A new calendar",
-      "A phone list"
+      "A phone list",
+      "A new calendar"
      ],
      "answer": 1,
      "why": "\"today we write your first tax report together.\""
@@ -89,9 +89,9 @@
      "q": "What does the summary say?",
      "options": [
       "What we did last month",
-      "The name of the team",
+      "The office address",
       "The bank number",
-      "The office address"
+      "The name of the team"
      ],
      "answer": 0,
      "why": "\"The summary is one small paragraph. It says what we did last month.\""
@@ -99,12 +99,12 @@
     {
      "q": "How long do we keep the report in the fiscal folder?",
      "options": [
-      "One month",
-      "One year",
       "Seven years",
-      "Ten days"
+      "Ten days",
+      "One month",
+      "One year"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"We keep it safe for seven years.\""
     },
     {
@@ -112,8 +112,8 @@
      "options": [
       "feel that the report is small and easy",
       "write ten pages",
-      "skip this month",
-      "wait for next year"
+      "wait for next year",
+      "skip this month"
      ],
      "answer": 0,
      "why": "Inferência: dividir em três frases curtas mostra que o objetivo é deixar simples e possível."
@@ -139,56 +139,56 @@
     {
      "q": "\"I send the tax <strong>report</strong> to the accountant.\" A <strong>report</strong> is…",
      "options": [
-      "a written document with information",
-      "a phone call",
+      "a new office",
       "a coffee break",
-      "a new office"
+      "a written document with information",
+      "a phone call"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Report = relatório: um documento escrito com informações."
     },
     {
      "q": "Choose the correct word: \"The ___ is a short paragraph at the top of the report.\"",
      "options": [
-      "summary",
-      "deadline",
       "folder",
-      "team"
+      "summary",
+      "team",
+      "deadline"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Summary = resumo: o parágrafo curto no topo do relatório."
     },
     {
      "q": "\"<strong>Last month</strong>, we sent the form on time.\" <strong>Last month</strong> means…",
      "options": [
-      "the month before now",
-      "the month after now",
       "today",
-      "next year"
+      "the month after now",
+      "next year",
+      "the month before now"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Last month = mês passado, o mês antes de agora."
     },
     {
      "q": "Choose the correct word: \"___, we check every number before the deadline.\" (the current month)",
      "options": [
-      "This month",
-      "Last month",
       "Next year",
+      "Last month",
+      "This month",
       "Yesterday"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "This month = este mês, o mês em que estamos agora."
     },
     {
      "q": "\"<strong>Next month</strong>, we start a new report.\" <strong>Next month</strong> means…",
      "options": [
-      "the month after now",
       "the month before now",
-      "last week",
-      "this morning"
+      "the month after now",
+      "this morning",
+      "last week"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Next month = mês que vem, o mês depois de agora."
     }
    ]
@@ -203,8 +203,8 @@
      "options": [
       "approve it",
       "print it",
-      "lose it",
-      "read it fast"
+      "read it fast",
+      "lose it"
      ],
      "answer": 0,
      "why": "Sign off on = aprovar, dar o \"ok\" final."
@@ -212,32 +212,32 @@
     {
      "q": "\"We <strong>fill in</strong> the tax form every month.\" To fill in a form means to…",
      "options": [
-      "write the information in it",
-      "throw it away",
       "close the office",
-      "call the bank"
+      "call the bank",
+      "throw it away",
+      "write the information in it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Fill in = preencher, escrever as informações no formulário."
     },
     {
      "q": "\"Please <strong>check over</strong> the numbers before we send it.\" To check over means to…",
      "options": [
-      "look at it carefully",
       "delete it",
-      "send it now",
-      "hide it"
+      "hide it",
+      "look at it carefully",
+      "send it now"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Check over = revisar, olhar com atenção."
     },
     {
      "q": "\"We agreed on the plan, but we did not <strong>follow through</strong>.\" This means we…",
      "options": [
       "did not finish it",
-      "finished it early",
+      "sent it to the bank",
       "printed it twice",
-      "sent it to the bank"
+      "finished it early"
      ],
      "answer": 0,
      "why": "Follow through = levar até o fim o que foi combinado."
@@ -245,12 +245,12 @@
     {
      "q": "\"We must <strong>hand in</strong> the report before the deadline.\" To hand in means to…",
      "options": [
-      "give it to the right person",
-      "keep it at home",
       "start it later",
-      "lose it"
+      "lose it",
+      "give it to the right person",
+      "keep it at home"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Hand in = entregar, dar o documento a quem deve receber."
     }
    ]

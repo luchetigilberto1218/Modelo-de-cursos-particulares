@@ -8,10 +8,10 @@
     {
      "q": "Why does the text say difficult conversations are difficult?",
      "options": [
-      "Because people are rude",
+      "Because they are rare",
       "Precisely because they matter",
       "Because they take too long",
-      "Because they are rare"
+      "Because people are rude"
      ],
      "answer": 1,
      "why": "\"Difficult conversations are difficult precisely because they matter.\""
@@ -20,11 +20,11 @@
      "q": "What usually happens to avoided conversations?",
      "options": [
       "They resolve themselves",
+      "They disappear",
       "They almost always get worse",
-      "They become easier",
-      "They disappear"
+      "They become easier"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"avoided conversations almost always get worse.\""
     },
     {
@@ -32,8 +32,8 @@
      "options": [
       "Facts, impact and the ask",
       "Praise, blame and apology",
-      "Who, what and when",
-      "Problem, cause and cost"
+      "Problem, cause and cost",
+      "Who, what and when"
      ],
      "answer": 0,
      "why": "\"First, the facts… Second, the impact… Third, the ask.\""
@@ -43,8 +43,8 @@
      "options": [
       "With strong emotion",
       "Without blame",
-      "In as much detail as possible",
-      "Only in writing"
+      "Only in writing",
+      "In as much detail as possible"
      ],
      "answer": 1,
      "why": "\"the impact — how it affected others, without blame.\""
@@ -52,12 +52,12 @@
     {
      "q": "\"Kindness is not the same as vagueness\" warns against…",
      "options": [
-      "being too harsh",
-      "softening the message until it disappears",
       "speaking too slowly",
-      "preparing too much"
+      "preparing too much",
+      "being too harsh",
+      "softening the message until it disappears"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Resist the temptation to soften the message so much that it disappears.\""
     }
    ]
@@ -72,21 +72,21 @@
     {
      "q": "Why does James say he needs to have this conversation?",
      "options": [
-      "Because he was told to",
       "Because he has been putting it off, and that's exactly why",
+      "Because he was told to",
       "Because it is easy",
       "Because the colleague asked"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"This is a conversation I've been putting off, and that's exactly why I need to have it.\""
     },
     {
      "q": "How does James begin — with what?",
      "options": [
-      "The ask",
+      "A compliment",
       "The facts, stated neutrally",
-      "An apology",
-      "A compliment"
+      "The ask",
+      "An apology"
      ],
      "answer": 1,
      "why": "\"Let me start with the facts, as neutrally as I can.\""
@@ -94,34 +94,34 @@
     {
      "q": "What impact does James describe?",
      "options": [
-      "The meetings run long",
-      "Two juniors have stopped contributing",
+      "The reports are unclear",
       "The colleague arrives late",
-      "The reports are unclear"
+      "The meetings run long",
+      "Two juniors have stopped contributing"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Two of the juniors have stopped contributing altogether.\""
     },
     {
      "q": "How does James frame the colleague's intention?",
      "options": [
       "As deliberately unkind",
+      "As dishonest",
       "As not coming from a bad place — they care about rigour",
-      "As lazy",
-      "As dishonest"
+      "As lazy"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I don't think it's coming from a bad place. You care about rigour.\""
     },
     {
      "q": "What is James's ask, going forward?",
      "options": [
-      "Stop attending meetings",
-      "Let juniors finish, and ask a question before offering critique",
       "Email all feedback",
-      "Apologise to the team"
+      "Apologise to the team",
+      "Stop attending meetings",
+      "Let juniors finish, and ask a question before offering critique"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"could you let them finish, and maybe ask a question before offering the critique?\""
     }
    ]
@@ -132,12 +132,12 @@
     {
      "q": "\"Use **neutral language** to describe what happened.\" Neutral language is…",
      "options": [
-      "emotional and strong",
       "free of blame or judgement",
-      "very formal",
-      "vague"
+      "vague",
+      "emotional and strong",
+      "very formal"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Neutral language = linguagem neutra, sem culpa."
     },
     {
@@ -145,27 +145,42 @@
      "options": [
       "facing the issue",
       "staying away from the issue",
-      "escalating",
-      "apologising"
+      "apologising",
+      "escalating"
      ],
      "answer": 1,
      "why": "Avoidance = evitação."
     },
     {
      "q": "Choose the correct word: \"She kept her **___** even when he raised his voice.\"",
-     "options": ["composure", "avoidance", "impact", "silence"],
-     "answer": 0,
+     "options": [
+      "silence",
+      "impact",
+      "composure",
+      "avoidance"
+     ],
+     "answer": 2,
      "why": "Composure = serenidade, autocontrole."
     },
     {
      "q": "\"He was **candid** about the problem.\" Candid means…",
-     "options": ["vague", "honest and direct", "aggressive", "silent"],
-     "answer": 1,
+     "options": [
+      "honest and direct",
+      "aggressive",
+      "silent",
+      "vague"
+     ],
+     "answer": 0,
      "why": "Candid = franco, sincero."
     },
     {
      "q": "Choose the correct term: \"A short **___** after the hard sentence gives the other person space to react.\"",
-     "options": ["impact", "silence", "avoidance", "ask"],
+     "options": [
+      "impact",
+      "silence",
+      "ask",
+      "avoidance"
+     ],
      "answer": 1,
      "why": "Silence = silêncio, a pausa que dá espaço."
     }
@@ -176,47 +191,57 @@
    "items": [
     {
      "q": "\"I've been **putting off** this conversation.\" To put off means to…",
-     "options": ["prepare", "postpone", "rush", "cancel"],
-     "answer": 1,
+     "options": [
+      "rush",
+      "prepare",
+      "postpone",
+      "cancel"
+     ],
+     "answer": 2,
      "why": "Put off = adiar."
     },
     {
      "q": "\"Let's try to **clear the air**.\" To clear the air means to…",
      "options": [
-      "resolve tension by talking openly",
-      "end the relationship",
+      "escalate",
       "avoid the topic",
-      "escalate"
+      "resolve tension by talking openly",
+      "end the relationship"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Clear the air = esclarecer, dissipar a tensão."
     },
     {
      "q": "\"I don't want to **beat around the bush**.\" To beat around the bush means to…",
      "options": [
-      "get to the point directly",
-      "avoid saying the main thing",
       "be aggressive",
-      "prepare well"
+      "prepare well",
+      "avoid saying the main thing",
+      "get to the point directly"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Beat around the bush = enrolar, não ir ao ponto."
     },
     {
      "q": "\"Let's **talk it through** calmly.\" To talk something through means to…",
-     "options": ["avoid it", "discuss it fully", "write it down", "escalate it"],
-     "answer": 1,
+     "options": [
+      "avoid it",
+      "write it down",
+      "escalate it",
+      "discuss it fully"
+     ],
+     "answer": 3,
      "why": "Talk through = conversar a fundo."
     },
     {
      "q": "\"I'd like to **hear you out** before I respond.\" To hear someone out means to…",
      "options": [
       "interrupt them",
+      "ignore them",
       "let them finish their point",
-      "correct them",
-      "ignore them"
+      "correct them"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Hear out = ouvir até o fim."
     }
    ]

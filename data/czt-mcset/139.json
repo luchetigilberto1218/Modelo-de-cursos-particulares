@@ -8,10 +8,10 @@
     {
      "q": "What are emerging markets?",
      "options": [
-      "The slowest economies",
-      "Some of the fastest-growing economies, like Brazil, India or Indonesia",
       "Countries with no trade",
-      "Only rich countries"
+      "Some of the fastest-growing economies, like Brazil, India or Indonesia",
+      "Only rich countries",
+      "The slowest economies"
      ],
      "answer": 1,
      "why": "\"Emerging markets — places like Brazil, India or Indonesia — are some of the fastest-growing economies.\""
@@ -19,45 +19,45 @@
     {
      "q": "Which is one difficulty the text mentions?",
      "options": [
-      "The currency can move a lot",
       "There are no customers",
+      "The currency can move a lot",
       "Goods are free",
       "There is no growth"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The currency can move a lot. Banks may be less experienced.\""
     },
     {
      "q": "What is 'the trick' for these markets?",
      "options": [
+      "Ignore the risks",
       "Avoid them",
       "Go in with open eyes: opportunity, risks, and a careful plan",
-      "Ignore the risks",
       "Ship without a plan"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The trick is to go in with open eyes: real opportunity, real risks, and a careful plan.\""
     },
     {
      "q": "What do experienced people know about these markets?",
      "options": [
-      "Rush everything",
-      "Patience pays",
+      "Never plan",
       "Avoid them",
-      "Never plan"
+      "Patience pays",
+      "Rush everything"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"People who have worked these markets for years know: patience pays.\""
     },
     {
      "q": "\"Go in with open eyes\" means to enter…",
      "options": [
+      "only for the risk",
       "carelessly",
-      "aware of both the opportunity and the risks",
       "without a plan",
-      "only for the risk"
+      "aware of both the opportunity and the risks"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: entrar consciente das oportunidades e dos riscos."
     }
    ]
@@ -71,17 +71,22 @@
    "items": [
     {
      "q": "How long has James worked with these markets?",
-     "options": ["Five years", "Fifteen years", "One year", "Thirty years"],
-     "answer": 1,
+     "options": [
+      "Five years",
+      "Thirty years",
+      "One year",
+      "Fifteen years"
+     ],
+     "answer": 3,
      "why": "\"I've worked with Brazilian sugar exporters and Indonesian buyers for fifteen years.\""
     },
     {
      "q": "What does James say about the opportunity?",
      "options": [
-      "It is small",
+      "It is only for banks",
       "It is real — the clients from fifteen years ago are ten times bigger now",
       "It does not exist",
-      "It is only for banks"
+      "It is small"
      ],
      "answer": 1,
      "why": "\"the opportunity is real… The clients I met fifteen years ago are ten times bigger now.\""
@@ -89,21 +94,21 @@
     {
      "q": "Which 'bump' has James seen?",
      "options": [
+      "Instant payments",
       "The currency moving 20% in a month",
       "Free shipping",
-      "No customers",
-      "Instant payments"
+      "No customers"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"I've seen the currency move twenty per cent in a month.\""
     },
     {
      "q": "What does James say matters more than anywhere here?",
      "options": [
-      "The contract only",
-      "Relationships — a trusted local partner",
       "The lowest price",
-      "The biggest ship"
+      "Relationships — a trusted local partner",
+      "The biggest ship",
+      "The contract only"
      ],
      "answer": 1,
      "why": "\"relationships matter more here than anywhere… a trusted local partner… is worth more.\""
@@ -111,12 +116,12 @@
     {
      "q": "What is James's advice for someone starting out?",
      "options": [
-      "Rush and take big risks",
       "Be patient, keep a buffer for the bumps, and invest in real relationships",
-      "Avoid these markets",
-      "Ignore relationships"
+      "Rush and take big risks",
+      "Ignore relationships",
+      "Avoid these markets"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"be patient, keep a buffer for the bumps, and invest in real relationships.\""
     }
    ]
@@ -127,9 +132,9 @@
     {
      "q": "An **emerging market** is…",
      "options": [
-      "a fully developed, slow economy",
-      "a fast-growing developing economy",
       "a bank",
+      "a fast-growing developing economy",
+      "a fully developed, slow economy",
       "a currency"
      ],
      "answer": 1,
@@ -138,34 +143,44 @@
     {
      "q": "**Currency volatility** means the exchange rate…",
      "options": [
-      "never changes",
       "moves a lot",
+      "never changes",
       "is fixed",
       "is free"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Currency volatility = volatilidade cambial."
     },
     {
      "q": "Choose the correct word: \"A trusted **local ___** knows the market well.\"",
-     "options": ["partner", "duty", "freight", "border"],
-     "answer": 0,
+     "options": [
+      "border",
+      "duty",
+      "partner",
+      "freight"
+     ],
+     "answer": 2,
      "why": "Local partner = parceiro local."
     },
     {
      "q": "**Patience** means…",
      "options": [
       "rushing",
-      "the ability to wait calmly",
+      "a currency",
       "a payment",
-      "a currency"
+      "the ability to wait calmly"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Patience = paciência."
     },
     {
      "q": "Choose the correct word: \"These markets offer real **___** for the next ten years.\"",
-     "options": ["opportunity", "duty", "loss", "delay"],
+     "options": [
+      "opportunity",
+      "delay",
+      "loss",
+      "duty"
+     ],
      "answer": 0,
      "why": "Opportunity = oportunidade."
     }
@@ -177,9 +192,9 @@
     {
      "q": "\"Go in with **open eyes**.\" To go in with open eyes means to…",
      "options": [
-      "enter carelessly",
-      "enter aware of the risks",
       "avoid the market",
+      "enter aware of the risks",
+      "enter carelessly",
       "close the deal fast"
      ],
      "answer": 1,
@@ -198,7 +213,12 @@
     },
     {
      "q": "\"Keep a buffer for the **bumps**.\" Bumps here means…",
-     "options": ["smooth times", "small problems along the way", "profits", "ships"],
+     "options": [
+      "ships",
+      "small problems along the way",
+      "profits",
+      "smooth times"
+     ],
      "answer": 1,
      "why": "Bumps = solavancos, contratempos."
     },
@@ -207,8 +227,8 @@
      "options": [
       "shrink",
       "expand together as they expand",
-      "leave them",
-      "compete"
+      "compete",
+      "leave them"
      ],
      "answer": 1,
      "why": "Grow with them = crescer junto."
@@ -216,12 +236,12 @@
     {
      "q": "\"Patience **pays**.\" To say patience pays means…",
      "options": [
+      "patience costs money",
       "patience is a waste",
       "being patient brings rewards",
-      "patience costs money",
       "patience is slow"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Patience pays = a paciência compensa."
     }
    ]

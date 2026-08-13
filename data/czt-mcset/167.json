@@ -10,21 +10,21 @@
     {
      "q": "According to the text, what does a documentary collection transfer?",
      "options": [
-      "The risk of misaligned documents, but not buyer default",
       "The risk of buyer default, but not document risk",
+      "Logistical and default risk together",
       "Almost all of the trade's risk",
-      "Logistical and default risk together"
+      "The risk of misaligned documents, but not buyer default"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"A collection transfers the risk of misaligned documents but not the risk of buyer default.\""
     },
     {
      "q": "Why does a receivables programme cost more than an LC?",
      "options": [
-      "Because it takes longer to arrange",
+      "Because it only works on weak buyers",
       "Because the bank discounts the draft and absorbs almost all the risk",
       "Because it requires two banks instead of one",
-      "Because it only works on weak buyers"
+      "Because it takes longer to arrange"
      ],
      "answer": 1,
      "why": "\"A structured receivables programme — where the bank discounts the draft — can transfer almost all of it, at a still higher cost.\""
@@ -33,11 +33,11 @@
      "q": "When does the text say a mature team uses collections?",
      "options": [
       "On every trade, for the sake of consistency",
-      "Only when an LC is unavailable",
       "Selectively — on strong buyers, low-risk routes and resaleable commodities",
+      "Only when an LC is unavailable",
       "Only on brand-new trading relationships"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"a mature trade team uses collections selectively: on buyers with strong payment history… low… commodities where a rejected parcel can easily be resold.\""
     },
     {
@@ -45,8 +45,8 @@
      "options": [
       "The right instrument depends on the specific risk of the trade",
       "A team should standardise on one instrument and apply it everywhere",
-      "Cost and protection have to be weighed against each other",
-      "Collections and LCs transfer different kinds of risk"
+      "Collections and LCs transfer different kinds of risk",
+      "Cost and protection have to be weighed against each other"
      ],
      "answer": 1,
      "why": "Inferência: a metáfora do martelo critica justamente o uso de um só instrumento para tudo."
@@ -54,12 +54,12 @@
     {
      "q": "The phrase \"not to the habit of the team\" implies that…",
      "options": [
+      "habits are the most reliable guide to risk",
       "teams should always default to the cheapest instrument",
       "many teams choose instruments out of routine rather than genuine risk analysis",
-      "habits are the most reliable guide to risk",
       "the finance team should be replaced regularly"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: o autor contrasta o 'true risk' com o hábito, sugerindo que a escolha por costume é um erro comum."
     }
    ]
@@ -77,43 +77,43 @@
     {
      "q": "What is Emily actually proposing?",
      "options": [
-      "A brand-new financial instrument",
-      "A new way of choosing between the instruments the desk already has",
       "That the desk stop using collections entirely",
-      "That every trade now use a receivables programme"
+      "That every trade now use a receivables programme",
+      "A new way of choosing between the instruments the desk already has",
+      "A brand-new financial instrument"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"it's not a new instrument — it's a new way of choosing between the ones we already have.\""
     },
     {
      "q": "What two questions does Emily want written on the deal sheet?",
      "options": [
       "The buyer's credit rating and the cargo value",
+      "The margin target and the delivery date",
       "Which risks are already comfortable to carry, and which need to move off the book",
-      "The bank's fee and the shipping route",
-      "The margin target and the delivery date"
+      "The bank's fee and the shipping route"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"which risks am I already comfortable carrying, and which risks genuinely need to move off our book?\""
     },
     {
      "q": "For a ten-year buyer with easily resaleable cargo, what does Emily say is appropriate?",
      "options": [
+      "No instrument at all",
       "A receivables programme, to be safe",
-      "A collection, which is probably plenty and cheap",
       "A letter of credit, because it transfers the most risk",
-      "No instrument at all"
+      "A collection, which is probably plenty and cheap"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"a collection is probably plenty — and it's cheap.\""
     },
     {
      "q": "When Emily says \"If we had built this discipline two years ago, we would not be sitting on the exposure we're carrying today,\" she is implying that…",
      "options": [
       "the current exposure is at least partly the result of past habits",
+      "the bank is responsible for the current risk",
       "the desk has never carried any exposure",
-      "the discipline will take another two years to work",
-      "the bank is responsible for the current risk"
+      "the discipline will take another two years to work"
      ],
      "answer": 0,
      "why": "Inferência (mixed conditional): a falta de disciplina no passado explica a exposição atual."
@@ -122,11 +122,11 @@
      "q": "Why is Emily wary of \"defaulting to a collection just to save a few basis points\"?",
      "options": [
       "Because collections are always the most expensive option",
-      "Because on a risky new counterparty the small saving is not worth the extra default risk",
+      "Because the bank forbids collections on new routes",
       "Because basis points are impossible to measure",
-      "Because the bank forbids collections on new routes"
+      "Because on a risky new counterparty the small saving is not worth the extra default risk"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: em rota difícil com contraparte nova, economizar pouco não compensa o risco de calote assumido."
     }
    ]
@@ -140,9 +140,9 @@
      "q": "\"The whole point of a collection is <strong>risk transfer</strong> — moving exposure off our own book.\" Risk transfer means…",
      "options": [
       "shifting a given risk to another party",
-      "calculating the total value of a trade",
+      "delaying a payment deadline",
       "insuring the physical cargo only",
-      "delaying a payment deadline"
+      "calculating the total value of a trade"
      ],
      "answer": 0,
      "why": "Risk transfer = transferência de risco: passar a exposição para outra parte (banco, contraparte)."
@@ -151,9 +151,9 @@
      "q": "Choose the correct term: \"On buyers with a strong ___, a simple collection is usually enough.\"",
      "options": [
       "payment history",
-      "toolbox",
       "draft",
-      "hammer"
+      "hammer",
+      "toolbox"
      ],
      "answer": 0,
      "why": "Payment history = histórico de pagamento — o que qualifica o comprador para o instrumento mais leve."
@@ -173,9 +173,9 @@
      "q": "Choose the correct word: \"Under the receivables programme the bank will ___ the draft, paying us early for a fee.\"",
      "options": [
       "discount",
-      "reject",
+      "resell",
       "endorse",
-      "resell"
+      "reject"
      ],
      "answer": 0,
      "why": "To discount (the draft) = descontar o saque: adiantar o valor cobrando uma taxa."
@@ -183,12 +183,12 @@
     {
      "q": "\"We should choose instruments <strong>deliberately</strong>, trade by trade.\" Deliberately means…",
      "options": [
-      "on purpose, with careful thought",
-      "quickly and by instinct",
+      "reluctantly",
       "in secret",
-      "reluctantly"
+      "on purpose, with careful thought",
+      "quickly and by instinct"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Deliberately = deliberadamente: de forma consciente e ponderada, o oposto de agir por hábito."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"Treasury still has to <strong>sign off on</strong> the receivables programme before we roll it out.\" To sign off on means to…",
      "options": [
-      "formally approve",
       "question informally",
+      "formally approve",
       "postpone indefinitely",
       "audit afterwards"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We'll <strong>roll out</strong> the new selection policy on the larger flows first.\" To roll out means to…",
      "options": [
-      "quietly cancel",
-      "implement in stages",
+      "test in secret",
       "outsource to the bank",
-      "test in secret"
+      "implement in stages",
+      "quietly cancel"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Roll out = implementar de forma progressiva."
     },
     {
      "q": "\"Two traders <strong>pushed back on</strong> dropping the default collection.\" They…",
      "options": [
       "approved it at once",
+      "rewrote the policy themselves",
       "resisted or objected to it",
-      "forgot about it",
-      "rewrote the policy themselves"
+      "forgot about it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Push back on = resistir, discordar — sem necessariamente rejeitar por completo."
     },
     {
      "q": "\"The desk agreed the risk-based approach but never <strong>followed through</strong>.\" They…",
      "options": [
-      "carried it out fully",
-      "failed to carry it to completion",
       "delegated it to the bank",
-      "documented it in detail"
+      "documented it in detail",
+      "carried it out fully",
+      "failed to carry it to completion"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Follow through = levar até o fim o que foi combinado; aqui, o oposto aconteceu."
     },
     {
      "q": "\"Shaving a few basis points off the fee won't <strong>move the needle</strong> on our overall exposure.\" This means it will…",
      "options": [
+      "trigger an audit",
       "not make a noticeable difference",
-      "cause immediate resistance",
       "double the cost",
-      "trigger an audit"
+      "cause immediate resistance"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Move the needle = fazer diferença perceptível; aqui, a economia é pequena demais para isso."
     }
    ]

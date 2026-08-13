@@ -10,10 +10,10 @@
     {
      "q": "How many new words does the lesson teach today?",
      "options": [
-      "Three",
       "Four",
+      "Seven",
       "Five",
-      "Seven"
+      "Three"
      ],
      "answer": 2,
      "why": "\"Today we learn five useful words.\""
@@ -21,45 +21,45 @@
     {
      "q": "What does Sophie open with the student?",
      "options": [
+      "A bank card",
       "A folder of expenses",
-      "A new laptop",
       "A tax book",
-      "A bank card"
+      "A new laptop"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Sophie opens a folder of expenses with the student.\""
     },
     {
      "q": "How long does the record stay in the fiscal folder?",
      "options": [
-      "One year",
       "Five years",
-      "Seven years",
-      "Ten years"
+      "Ten years",
+      "One year",
+      "Seven years"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"The record stays in the fiscal folder for seven years.\""
     },
     {
      "q": "The text suggests that Sophie is…",
      "options": [
-      "patient and helpful",
-      "angry with the student",
       "in a big hurry",
-      "not interested in taxes"
+      "angry with the student",
+      "not interested in taxes",
+      "patient and helpful"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: ela explica devagar, em inglês simples, \"one small step at a time\" — é paciente."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
       "taxes are impossible to learn",
+      "English makes taxes harder",
       "taxes get easier with practice",
-      "receipts are not important",
-      "English makes taxes harder"
+      "receipts are not important"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"taxes become easier with practice\" e \"they follow simple patterns\"."
     }
    ]
@@ -77,32 +77,32 @@
     {
      "q": "Does Sophie have proof for the first expense?",
      "options": [
+      "Only a form",
       "Yes, she has the receipt",
-      "No, she has nothing",
       "Only a photo",
-      "Only a form"
+      "No, she has nothing"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Yes, we have the receipt right here.\""
     },
     {
      "q": "Is the first expense deductible?",
      "options": [
-      "Yes, it is",
       "No, it is not",
       "Only half of it",
-      "Sophie is not sure"
+      "Sophie is not sure",
+      "Yes, it is"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"No. This one is not deductible.\""
     },
     {
      "q": "Does the student have the record for last month?",
      "options": [
-      "Yes, right away",
+      "No, and Sophie is angry",
       "No, so they look for it together",
-      "Yes, in the email",
-      "No, and Sophie is angry"
+      "Yes, right away",
+      "Yes, in the email"
      ],
      "answer": 1,
      "why": "\"No? That's okay. We look for it together.\""
@@ -110,23 +110,23 @@
     {
      "q": "Sophie says taxes are \"not scary.\" This suggests she wants the student to feel…",
      "options": [
-      "calm and confident",
-      "worried",
       "bored",
-      "in a hurry"
+      "calm and confident",
+      "in a hurry",
+      "worried"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ela repete que é fácil, \"I promise\", \"one small step at a time\" — quer tranquilizar."
     },
     {
      "q": "The audio suggests that doing a little every week…",
      "options": [
-      "makes taxes easy",
       "is a waste of time",
       "is only for the accountant",
+      "makes taxes easy",
       "is too much work"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"You do a little every week, and it becomes easy.\""
     }
    ]
@@ -139,23 +139,23 @@
     {
      "q": "\"Please keep the <strong>receipt</strong> from the store.\" A receipt is…",
      "options": [
-      "a paper that shows you paid",
-      "a tax form",
       "a phone bill only",
+      "a tax form",
+      "a paper that shows you paid",
       "a bank card"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Receipt = recibo: o papel que mostra que você pagou."
     },
     {
      "q": "\"We need <strong>proof</strong> for every payment.\" Proof means…",
      "options": [
-      "something that shows it is true",
       "a guess",
+      "a plan",
       "a question",
-      "a plan"
+      "something that shows it is true"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Proof = comprovante: algo que mostra que é verdade."
     },
     {
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct word: \"We keep a ___ of every payment for seven years.\"",
      "options": [
-      "record",
-      "receipt",
       "proof",
-      "expense"
+      "record",
+      "expense",
+      "receipt"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Record = registro: guardamos o registro de cada pagamento."
     }
    ]
@@ -201,32 +201,32 @@
     {
      "q": "\"Can you <strong>fill out</strong> this tax form?\" To fill out means to…",
      "options": [
-      "write your answers on it",
-      "throw it away",
       "read it fast",
-      "send it back empty"
+      "send it back empty",
+      "throw it away",
+      "write your answers on it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Fill out = preencher: escrever as respostas no formulário."
     },
     {
      "q": "\"The manager will <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
-      "approve it",
-      "lose it",
       "print it",
+      "lose it",
+      "approve it",
       "hide it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"Please <strong>hold on to</strong> the receipt.\" This means…",
      "options": [
       "keep it safe",
-      "throw it out",
       "give it away",
-      "copy it"
+      "copy it",
+      "throw it out"
      ],
      "answer": 0,
      "why": "Hold on to = guardar, manter com você."
@@ -234,23 +234,23 @@
     {
      "q": "\"Let's <strong>go over</strong> the expenses together.\" To go over means to…",
      "options": [
-      "check them carefully",
-      "pay them fast",
       "delete them",
+      "pay them fast",
+      "check them carefully",
       "email them"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Go over = revisar, checar com atenção."
     },
     {
      "q": "\"We must send the form <strong>on time</strong>.\" On time means…",
      "options": [
-      "not late",
+      "by hand",
       "very slowly",
-      "next year",
-      "by hand"
+      "not late",
+      "next year"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "On time = no prazo, sem atraso."
     }
    ]

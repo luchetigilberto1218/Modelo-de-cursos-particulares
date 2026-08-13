@@ -10,21 +10,21 @@
     {
      "q": "What is a network?",
      "options": [
-      "A group of devices that can talk to each other",
-      "A type of laptop",
       "A room in the office",
-      "A kind of website"
+      "A kind of website",
+      "A group of devices that can talk to each other",
+      "A type of laptop"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"A network is a group of devices that can talk to each other.\""
     },
     {
      "q": "What does a VPN do?",
      "options": [
-      "It makes your laptop faster",
-      "It makes your laptop act as if it were inside the office",
       "It turns off the Wi-Fi",
-      "It prints your documents"
+      "It makes your laptop act as if it were inside the office",
+      "It prints your documents",
+      "It makes your laptop faster"
      ],
      "answer": 1,
      "why": "\"A VPN… makes your laptop act as if it were still inside the office.\""
@@ -33,8 +33,8 @@
      "q": "What happens when latency is high?",
      "options": [
       "Video calls freeze and websites feel slow",
-      "Everything feels instant",
       "The Wi-Fi gets stronger",
+      "Everything feels instant",
       "The network disappears"
      ],
      "answer": 0,
@@ -45,8 +45,8 @@
      "options": [
       "you notice all the time",
       "you almost never think about",
-      "is very expensive",
-      "only works with Wi-Fi"
+      "only works with Wi-Fi",
+      "is very expensive"
      ],
      "answer": 1,
      "why": "Inferência: \"Good networks are almost invisible\" — se está tudo bem, você nem repara nele."
@@ -55,11 +55,11 @@
      "q": "If you START thinking about your network, the text suggests that…",
      "options": [
       "the network is working perfectly",
-      "something is probably wrong",
       "you should buy a new laptop",
-      "your latency is low"
+      "your latency is low",
+      "something is probably wrong"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"The moment you start thinking about the network, something is usually wrong.\""
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "What is Emily helping her new colleague do?",
      "options": [
-      "Set up her VPN",
       "Buy a new laptop",
-      "Write an email",
-      "Change her password"
+      "Set up her VPN",
+      "Change her password",
+      "Write an email"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Today I will help you set up your VPN.\""
     },
     {
      "q": "What must the colleague do FIRST?",
      "options": [
-      "Open the video call",
-      "Connect the laptop to the home Wi-Fi",
       "Turn off the router",
-      "Call the office"
+      "Open the video call",
+      "Call the office",
+      "Connect the laptop to the home Wi-Fi"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"First, connect your laptop to your home Wi-Fi.\""
     },
     {
      "q": "What does Emily say about the small delay?",
      "options": [
+      "It never happens",
       "It is a big problem",
-      "It is normal and it is called latency",
       "It means the VPN is broken",
-      "It never happens"
+      "It is normal and it is called latency"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"You may notice a small delay… That delay is called latency. It is normal.\""
     },
     {
      "q": "If the internet feels slow, Emily suggests that you…",
      "options": [
-      "move closer to the Wi-Fi router",
-      "turn off the laptop",
+      "wait one hour",
       "restart the office",
-      "wait one hour"
+      "move closer to the Wi-Fi router",
+      "turn off the laptop"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"if your internet feels slow, move closer to your Wi-Fi router. A weak signal makes everything slow.\""
     },
     {
      "q": "How would you describe Emily's tone?",
      "options": [
-      "Angry and impatient",
       "Friendly and helpful",
-      "Bored and tired",
-      "Serious and cold"
+      "Angry and impatient",
+      "Serious and cold",
+      "Bored and tired"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ela dá boas-vindas, explica com calma e oferece ajuda — um tom acolhedor."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"My phone, my laptop and the printer are all on the same <strong>network</strong>.\" A network is…",
      "options": [
-      "a group of devices connected together",
-      "a type of email",
       "a meeting room",
-      "a password"
+      "a password",
+      "a type of email",
+      "a group of devices connected together"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Network = rede: dispositivos conectados que trocam dados."
     },
     {
      "q": "Choose the correct word: \"When I work from home, I use a ___ to connect safely to the office.\"",
      "options": [
-      "VPN",
+      "window",
       "printer",
       "coffee",
-      "window"
+      "VPN"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "VPN = túnel seguro para trabalhar de casa como se estivesse no escritório."
     },
     {
      "q": "\"The video call started to <strong>freeze</strong>.\" To freeze here means…",
      "options": [
-      "to become very cold",
       "to stop moving for a moment",
+      "to become very cold",
       "to end the call",
       "to get louder"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To freeze = travar; a imagem para por alguns segundos."
     },
     {
      "q": "Choose the correct word: \"Low ___ feels instant, but high ___ makes websites feel slow.\"",
      "options": [
-      "latency",
       "device",
       "tunnel",
+      "latency",
       "office"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Latency = latência: o atraso entre enviar e receber."
     },
     {
      "q": "\"A good network is almost <strong>invisible</strong>.\" Invisible means…",
      "options": [
-      "very expensive",
-      "you cannot see it or notice it",
+      "always broken",
       "very fast",
-      "always broken"
+      "you cannot see it or notice it",
+      "very expensive"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Invisible = invisível: você nem percebe que está lá."
     }
    ]
@@ -201,31 +201,31 @@
     {
      "q": "\"Please <strong>set up</strong> the VPN on your new laptop.\" To set up means to…",
      "options": [
-      "prepare something so it is ready to use",
-      "turn something off",
       "throw something away",
-      "sell something"
+      "sell something",
+      "prepare something so it is ready to use",
+      "turn something off"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Set up = configurar, deixar pronto para usar."
     },
     {
      "q": "\"I can't <strong>log in</strong> to the system.\" To log in means to…",
      "options": [
-      "enter with your name and password",
-      "close the program",
+      "restart the computer",
       "delete a file",
-      "restart the computer"
+      "enter with your name and password",
+      "close the program"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Log in = entrar no sistema com usuário e senha."
     },
     {
      "q": "\"The Wi-Fi went down, so I had to <strong>reconnect</strong>.\" If the Wi-Fi 'went down', it…",
      "options": [
-      "got much faster",
-      "stopped working",
       "moved to another room",
+      "stopped working",
+      "got much faster",
       "became free"
      ],
      "answer": 1,
@@ -234,23 +234,23 @@
     {
      "q": "\"Can you <strong>turn off</strong> the router and turn it on again?\" To turn off means to…",
      "options": [
+      "clean it",
       "make it louder",
       "stop the power",
-      "buy a new one",
-      "clean it"
+      "buy a new one"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Turn off = desligar; o clássico \"desligar e ligar de novo\"."
     },
     {
      "q": "\"If you have a problem, just <strong>reach out</strong> to me.\" To reach out means to…",
      "options": [
-      "contact someone for help",
       "wait quietly",
+      "contact someone for help",
       "fix it alone",
       "close the app"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Reach out = procurar alguém, pedir ajuda ou contato."
     }
    ]

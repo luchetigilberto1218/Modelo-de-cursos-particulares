@@ -10,56 +10,56 @@
     {
      "q": "According to the text, what is the senior tax leader's job at enterprise scale?",
      "options": [
-      "To read every invoice personally",
       "To design a system that catches problem invoices before the ledger",
+      "To read every invoice personally",
       "To negotiate directly with each supplier",
       "To approve the quarterly VAT return line by line"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"not to read every invoice, but to design a system that catches the problem invoices and routes them out before they reach the general ledger.\""
     },
     {
      "q": "What triggers the \"quiet escalation\" described in the text?",
      "options": [
-      "A supplier requesting faster payment",
-      "A change in a country's tax rules that invalidates old invoices",
       "The arrival of the annual budget",
-      "A drop in invoice volume"
+      "A supplier requesting faster payment",
+      "A drop in invoice volume",
+      "A change in a country's tax rules that invalidates old invoices"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"quiet escalation when a country's tax rules change in a way that makes old invoices no longer valid.\""
     },
     {
      "q": "The phrase \"None of this is exciting\" most likely suggests that the author believes…",
      "options": [
-      "the work is unimportant and can be deprioritised",
       "unglamorous, low-visibility work is what actually protects the company",
+      "invoices are too dull to be worth automating",
       "governance should be made more engaging for staff",
-      "invoices are too dull to be worth automating"
+      "the work is unimportant and can be deprioritised"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o autor contrasta o tédio da tarefa com sua consequência crítica — é o trabalho invisível que sustenta a conformidade."
     },
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
-      "Good governance anticipates the questions an auditor will ask.",
-      "The value of documentation controls only becomes visible in a crisis.",
+      "A single incomplete invoice can create a real tax exposure.",
       "Manual review of every invoice is the most reliable safeguard at scale.",
-      "A single incomplete invoice can create a real tax exposure."
+      "The value of documentation controls only becomes visible in a crisis.",
+      "Good governance anticipates the questions an auditor will ask."
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: o texto argumenta o oposto — a revisão manual não escala; o valor está no sistema desenhado, não na leitura de cada nota."
     },
     {
      "q": "Why does the text mention \"two years from now\"?",
      "options": [
-      "To stress that today's controls will be tested by a future audit",
       "To indicate when the new system will be finished",
+      "To stress that today's controls will be tested by a future audit",
       "To show how long suppliers take to correct invoices",
       "To describe the retention period for the ledger"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: a qualidade de hoje decide se a declaração sobrevive a uma auditoria detalhada anos depois — o controle precede o problema."
     }
    ]
@@ -77,45 +77,45 @@
     {
      "q": "What problem with the current process does Emily describe?",
      "options": [
-      "Suppliers are refusing to submit invoices electronically",
       "Manual review does not scale past a few hundred invoices a month",
-      "The general ledger keeps crashing under the volume",
-      "Auditors have already rejected the last VAT return"
+      "Suppliers are refusing to submit invoices electronically",
+      "Auditors have already rejected the last VAT return",
+      "The general ledger keeps crashing under the volume"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"a handful of people eyeball them… That is fine at a few hundred a month. We are running past forty thousand.\""
     },
     {
      "q": "When does the new intake layer check an invoice?",
      "options": [
-      "Once a month during reconciliation",
-      "The moment it arrives, against the mandatory fields",
       "Only after it reaches the general ledger",
-      "When a supplier requests payment"
+      "When a supplier requests payment",
+      "Once a month during reconciliation",
+      "The moment it arrives, against the mandatory fields"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"checks each invoice against the mandatory fields the moment it arrives… before it ever touches the general ledger.\""
     },
     {
      "q": "What happens to the roughly five per cent the rules cannot handle?",
      "options": [
       "They are posted to the ledger unchecked",
-      "They are deleted from the queue",
       "They are escalated to a human without stopping the flow",
-      "They are returned to the supplier without review"
+      "They are returned to the supplier without review",
+      "They are deleted from the queue"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"those get escalated to a human — quietly, without stopping the flow.\""
     },
     {
      "q": "Why does Emily say the system will \"look like nothing is happening\"?",
      "options": [
-      "Because success is invisible — a prevented crisis leaves no visible signal",
-      "Because the system will run very slowly",
       "Because the committee will not be given access to it",
-      "Because most invoices will be rejected"
+      "Because success is invisible — a prevented crisis leaves no visible signal",
+      "Because most invoices will be rejected",
+      "Because the system will run very slowly"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: valor preventivo não gera alarde; só se percebe o sistema quando ele falha ou quando o auditor pede a documentação limpa."
     },
     {
@@ -139,32 +139,32 @@
     {
      "q": "\"At scale, governance is no longer an <strong>intake checklist</strong> but a full programme.\" An intake checklist is…",
      "options": [
-      "a simple list used to screen items as they arrive",
-      "a legal contract with a supplier",
       "a summary of the year's tax filings",
-      "a schedule of board meetings"
+      "a simple list used to screen items as they arrive",
+      "a schedule of board meetings",
+      "a legal contract with a supplier"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Intake checklist = checklist de entrada: uma lista de triagem aplicada às notas quando chegam."
     },
     {
      "q": "Choose the correct word: \"The engine flags every ___ invoice — one missing a tax number, a date or the currency.\"",
      "options": [
-      "incomplete",
-      "detailed",
       "patient",
-      "automated"
+      "detailed",
+      "automated",
+      "incomplete"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Incomplete = incompleta: nota à qual falta um campo obrigatório."
     },
     {
      "q": "Choose the correct term: \"When a rule cannot resolve a case, it triggers an ___ to a senior reviewer.\"",
      "options": [
       "escalation",
-      "intake checklist",
       "flood",
-      "control"
+      "control",
+      "intake checklist"
      ],
      "answer": 0,
      "why": "Escalation = escalonamento: elevar o caso a alguém com mais autoridade."
@@ -172,23 +172,23 @@
     {
      "q": "\"Tens of thousands of invoices arrive each month — a genuine <strong>flood</strong>.\" Here flood means…",
      "options": [
-      "an overwhelming volume",
-      "a system failure",
       "a financial loss",
-      "a delayed payment"
+      "a delayed payment",
+      "a system failure",
+      "an overwhelming volume"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Flood = enxurrada: um volume que domina qualquer processo manual."
     },
     {
      "q": "<strong>Patient design</strong> is best described as…",
      "options": [
-      "a quick fix applied under deadline pressure",
-      "the unhurried, deliberate building of systems before they are needed",
       "a design approved only by the patient teams",
-      "a temporary workaround pending audit"
+      "a quick fix applied under deadline pressure",
+      "a temporary workaround pending audit",
+      "the unhurried, deliberate building of systems before they are needed"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Patient design = desenho paciente: construir controles com antecedência, para que já existam quando o problema surgir."
     }
    ]
@@ -201,20 +201,20 @@
     {
      "q": "\"The head of tax still has to <strong>sign off on</strong> the intake rules.\" To sign off on means to…",
      "options": [
+      "leak to a supplier",
       "formally approve",
       "quietly ignore",
-      "postpone indefinitely",
-      "leak to a supplier"
+      "postpone indefinitely"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We'll <strong>roll out</strong> the checks country by country.\" To roll out means to…",
      "options": [
-      "shut down gradually",
-      "implement in stages",
       "audit retrospectively",
+      "implement in stages",
+      "shut down gradually",
       "outsource entirely"
      ],
      "answer": 1,
@@ -223,10 +223,10 @@
     {
      "q": "\"Two suppliers <strong>pushed back on</strong> the new mandatory fields.\" They…",
      "options": [
-      "adopted them at once",
-      "resisted or objected to them",
       "forgot about them",
-      "rewrote the tax code"
+      "resisted or objected to them",
+      "rewrote the tax code",
+      "adopted them at once"
      ],
      "answer": 1,
      "why": "Push back on = resistir, contestar — sem necessariamente recusar de vez."
@@ -234,23 +234,23 @@
     {
      "q": "\"The team agreed the controls but never <strong>followed through</strong>.\" They…",
      "options": [
-      "failed to carry them to completion",
       "over-delivered on them",
-      "documented them perfectly",
-      "escalated them too early"
+      "escalated them too early",
+      "failed to carry them to completion",
+      "documented them perfectly"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Follow through = levar até o fim aquilo que foi combinado."
     },
     {
      "q": "\"Catching ninety-five per cent of bad invoices genuinely <strong>moves the needle</strong> on audit risk.\" This means it…",
      "options": [
-      "makes a real, measurable difference",
       "adds needless cost",
-      "delays the audit",
-      "has no effect at all"
+      "makes a real, measurable difference",
+      "has no effect at all",
+      "delays the audit"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Move the needle = mexer o ponteiro, produzir um efeito perceptível e mensurável."
     }
    ]

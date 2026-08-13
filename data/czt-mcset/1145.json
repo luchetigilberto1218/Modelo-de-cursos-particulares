@@ -10,56 +10,56 @@
     {
      "q": "How many tax words does the text teach today?",
      "options": [
+      "Five",
       "Three",
       "Four",
-      "Five",
       "Ten"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Today we learn five useful words about income tax.\""
     },
     {
      "q": "What does a deduction do to the tax?",
      "options": [
-      "It makes the tax smaller",
       "It makes the tax bigger",
+      "It makes the tax smaller",
       "It stops the tax",
       "It hides the tax"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"a deduction makes the tax smaller.\""
     },
     {
      "q": "What is a refund?",
      "options": [
-      "A form you send",
-      "Money the worker gets back",
       "A big salary",
-      "A new job"
+      "A new job",
+      "A form you send",
+      "Money the worker gets back"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Sometimes the worker gets money back — that is a refund.\""
     },
     {
      "q": "The text suggests that taxes are easier when you…",
      "options": [
-      "know the words",
       "have a big salary",
+      "send many forms",
       "work very fast",
-      "send many forms"
+      "know the words"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"When you know the words, taxes are easier.\" O texto liga saber as palavras a facilidade."
     },
     {
      "q": "The tone of the text suggests the author wants you to feel…",
      "options": [
-      "worried about taxes",
-      "calm and confident",
       "bored with the topic",
-      "in a big hurry"
+      "worried about taxes",
+      "in a big hurry",
+      "calm and confident"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"Go slowly — one step at a time. You can do it!\" — o tom é de encorajamento e calma."
     }
    ]
@@ -77,21 +77,21 @@
     {
      "q": "What does the company have on the form, according to Sophie?",
      "options": [
-      "Your income",
+      "Your address",
       "Your refund",
-      "Your holidays",
-      "Your address"
+      "Your income",
+      "Your holidays"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"the company has your income on this form.\""
     },
     {
      "q": "How often do they send the tax return?",
      "options": [
-      "Every month",
       "Every week",
+      "Every day",
       "Once a year",
-      "Every day"
+      "Every month"
      ],
      "answer": 2,
      "why": "\"this line is the tax return. We send it once a year.\""
@@ -99,34 +99,34 @@
     {
      "q": "Why does Sophie say the deduction is good for you?",
      "options": [
-      "It makes the tax smaller",
       "It gives you a new salary",
+      "It makes the tax smaller",
       "It stops the form",
       "It is faster to send"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"A deduction is good for you, because it makes the tax smaller.\""
     },
     {
      "q": "Why does Sophie check every deduction slowly, one by one?",
      "options": [
-      "Because she wants them to be correct and calm",
-      "Because the computer is slow",
       "Because the colleague is late",
-      "Because there are too many forms"
+      "Because there are too many forms",
+      "Because she wants them to be correct and calm",
+      "Because the computer is slow"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"we check every deduction, slowly, one by one. We never rush.\" — a ideia é cuidado e calma."
     },
     {
      "q": "How does Sophie feel about the colleague learning taxes?",
      "options": [
       "Angry and impatient",
+      "Nervous and unsure",
       "Bored and tired",
-      "Patient and encouraging",
-      "Nervous and unsure"
+      "Patient and encouraging"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"Don't worry… Good job! Next month it will be even easier.\" — tom paciente e encorajador."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"My <strong>salary</strong> comes on the fifth of every month.\" A salary is…",
      "options": [
+      "a company holiday",
       "the money you get for your work",
       "a tax form",
-      "money you get back",
-      "a company holiday"
+      "money you get back"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Salary = salário, o dinheiro pago pelo seu trabalho."
     },
     {
      "q": "Choose the correct word: \"We send the ___ to the government once a year.\"",
      "options": [
+      "meeting",
       "salary",
-      "tax return",
       "coffee",
-      "meeting"
+      "tax return"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Tax return = declaração de imposto, o formulário enviado ao governo."
     },
     {
      "q": "\"Each <strong>deduction</strong> makes the final tax smaller.\" A deduction is…",
      "options": [
-      "an amount taken off the tax",
       "a new salary",
+      "an amount taken off the tax",
       "a big meeting",
       "a company car"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Deduction = dedução, um valor descontado do imposto."
     },
     {
      "q": "Choose the correct word: \"The company has a lot of ___ this year, so it pays more tax.\"",
      "options": [
-      "income",
       "refund",
-      "coffee",
-      "holiday"
+      "holiday",
+      "income",
+      "coffee"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Income = renda, o dinheiro que a empresa recebe."
     },
     {
      "q": "\"I paid too much, so I get a <strong>refund</strong>.\" A refund is…",
      "options": [
-      "money that comes back to you",
-      "a new form",
+      "a longer deadline",
       "a bigger tax",
-      "a longer deadline"
+      "a new form",
+      "money that comes back to you"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Refund = restituição, o dinheiro que volta para você."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the tax return.\" To sign off on means to…",
      "options": [
-      "approve it",
-      "lose it",
+      "read it fast",
       "print it",
-      "read it fast"
+      "approve it",
+      "lose it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"Let's <strong>fill in</strong> the form together.\" To fill in a form means to…",
      "options": [
+      "hide the form",
       "put the numbers in the blank spaces",
-      "throw the form away",
       "send the form",
-      "hide the form"
+      "throw the form away"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fill in = preencher, colocar as informações nos espaços."
     },
     {
      "q": "\"Please <strong>check over</strong> the numbers before we send.\" To check over means to…",
      "options": [
-      "look at them carefully",
       "delete them",
-      "add more taxes",
-      "print them twice"
+      "look at them carefully",
+      "print them twice",
+      "add more taxes"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Check over = revisar, olhar com cuidado."
     },
     {
      "q": "\"We are almost at the <strong>deadline</strong>.\" A deadline is…",
      "options": [
-      "the last day to do something",
       "a new salary",
+      "the last day to do something",
       "a tax refund",
       "a small deduction"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Deadline = prazo final, o último dia para fazer algo."
     },
     {
      "q": "\"Don't worry, I will <strong>help you out</strong> with the tax return.\" To help someone out means to…",
      "options": [
-      "give them help",
-      "leave them alone",
       "make it harder",
+      "leave them alone",
+      "give them help",
       "say goodbye"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Help out = ajudar alguém com uma tarefa."
     }
    ]

@@ -11,8 +11,8 @@
      "q": "What is taxable income?",
      "options": [
       "Money the tax office counts when it decides what you owe",
-      "Money that is always left out",
       "Only money from gifts",
+      "Money that is always left out",
       "Money you never receive"
      ],
      "answer": 0,
@@ -21,42 +21,42 @@
     {
      "q": "Which of these is NON-taxable, according to the text?",
      "options": [
-      "A salary",
-      "A business profit",
       "Some scholarships",
-      "Rental income"
+      "A salary",
+      "Rental income",
+      "A business profit"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Some gifts, some scholarships, and certain benefits are not taxed.\""
     },
     {
      "q": "The text says the rules…",
      "options": [
       "are the same in every country",
+      "are made by each person",
       "are not the same in every country, and they change",
-      "never change",
-      "are made by each person"
+      "never change"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The rules are not the same in every country, and they change over time.\""
     },
     {
      "q": "The text suggests that doing a tax return correctly…",
      "options": [
-      "is impossible for most people",
-      "starts with knowing what is taxable and what is not",
+      "is only about salaries",
       "does not need any skill",
-      "is only about salaries"
+      "starts with knowing what is taxable and what is not",
+      "is impossible for most people"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"Knowing which side each amount sits on is the first real skill\" — é o ponto de partida."
     },
     {
      "q": "The author would most likely DISAGREE with this idea:",
      "options": [
-      "Some income is not taxed",
-      "Every amount you receive is always taxed",
       "The rules can change over time",
+      "Every amount you receive is always taxed",
+      "Some income is not taxed",
       "You should know which income is taxable"
      ],
      "answer": 1,
@@ -77,53 +77,53 @@
     {
      "q": "What is the first step, according to Charlotte?",
      "options": [
-      "Sort each income as taxable or not",
-      "Sign the tax return",
+      "Add every number together",
       "Call the client",
-      "Add every number together"
+      "Sort each income as taxable or not",
+      "Sign the tax return"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Before we prepare the tax return, we must sort each income. Is it taxable, or is it not? That is the first step.\""
     },
     {
      "q": "Which incomes does Charlotte count as taxable?",
      "options": [
       "The scholarship and the gift",
-      "The salary, the rental income, and the business profit",
+      "None of them",
       "Only the salary",
-      "None of them"
+      "The salary, the rental income, and the business profit"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A salary is taxable… rental income… also taxable. And here, business profit… also taxable. We add all three.\""
     },
     {
      "q": "Why does Charlotte leave the scholarship out?",
      "options": [
+      "Because it is a salary",
       "Because it is very small",
       "Because it is not taxable in this case",
-      "Because the son did not receive it",
-      "Because it is a salary"
+      "Because the son did not receive it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"that scholarship is not taxable, so we leave it out.\""
     },
     {
      "q": "Charlotte says \"never guess.\" What does this suggest?",
      "options": [
-      "The assistant should check the rules when not sure",
-      "The rules are always easy",
+      "The client already knows the answer",
       "Guessing is faster and fine",
-      "The client already knows the answer"
+      "The rules are always easy",
+      "The assistant should check the rules when not sure"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: ela pede para checar as regras da receita ou perguntar quando houver dúvida."
     },
     {
      "q": "Why is getting the split right so important?",
      "options": [
-      "Because the client pays more that way",
-      "Because if the wrong income is counted, the whole return is wrong",
       "Because it saves paper",
+      "Because if the wrong income is counted, the whole return is wrong",
+      "Because the client pays more that way",
       "Because the tax office prefers it"
      ],
      "answer": 1,
@@ -139,32 +139,32 @@
     {
      "q": "\"Her <strong>salary</strong> is paid at the end of every month.\" A salary is…",
      "options": [
-      "the money you receive for your work",
-      "money you give away",
       "a tax you pay",
-      "a bank loan"
+      "a bank loan",
+      "money you give away",
+      "the money you receive for your work"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Salary = salário: o dinheiro que você recebe pelo trabalho."
     },
     {
      "q": "Choose the correct word: \"He owns two apartments, so he has ___ every month.\"",
      "options": [
-      "a scholarship",
       "rental income",
-      "an exception",
-      "a business profit"
+      "a scholarship",
+      "a business profit",
+      "an exception"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Rental income = renda de aluguel, o dinheiro que vem dos imóveis alugados."
     },
     {
      "q": "\"The <strong>tax office</strong> sent her a letter about the return.\" The tax office is…",
      "options": [
       "the government body that deals with taxes",
+      "a shop",
       "her private bank",
-      "her employer",
-      "a shop"
+      "her employer"
      ],
      "answer": 0,
      "why": "Tax office = receita: o órgão do governo que cuida dos impostos."
@@ -172,23 +172,23 @@
     {
      "q": "Choose the correct word: \"Her son won a ___ to study at the university for free.\"",
      "options": [
-      "salary",
       "scholarship",
       "profit",
+      "salary",
       "rental income"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Scholarship = bolsa de estudos, para estudar sem pagar."
     },
     {
      "q": "\"There is one <strong>exception</strong> to this rule.\" An exception is…",
      "options": [
-      "a case that does not follow the normal rule",
       "a normal example",
-      "a kind of tax",
-      "a large payment"
+      "a large payment",
+      "a case that does not follow the normal rule",
+      "a kind of tax"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Exception = exceção: um caso que foge da regra normal."
     }
    ]
@@ -201,43 +201,43 @@
     {
      "q": "\"The manager must <strong>sign off on</strong> the tax return before we send it.\" To sign off on means to…",
      "options": [
+      "translate",
       "formally approve",
-      "delete",
       "print",
-      "translate"
+      "delete"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"Let's <strong>go through</strong> the list one line at a time.\" To go through means to…",
      "options": [
-      "throw away",
       "check carefully, item by item",
+      "throw away",
       "hide",
       "copy"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Go through = revisar com cuidado, item por item."
     },
     {
      "q": "\"We <strong>leave out</strong> the non-taxable income.\" To leave out means to…",
      "options": [
-      "not include it",
       "pay more for it",
+      "explain it",
       "count it twice",
-      "explain it"
+      "not include it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Leave out = deixar de fora, não incluir."
     },
     {
      "q": "\"Please <strong>fill in</strong> the form with the correct numbers.\" To fill in means to…",
      "options": [
       "complete it with information",
-      "tear it up",
+      "send it back",
       "read it aloud",
-      "send it back"
+      "tear it up"
      ],
      "answer": 0,
      "why": "Fill in = preencher com as informações."
@@ -247,8 +247,8 @@
      "options": [
       "ask them to be sure",
       "pay them",
-      "ignore them",
-      "hire them"
+      "hire them",
+      "ignore them"
      ],
      "answer": 0,
      "why": "Check with = confirmar com alguém, perguntar para ter certeza."

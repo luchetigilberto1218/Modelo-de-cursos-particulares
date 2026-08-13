@@ -8,10 +8,10 @@
     {
      "q": "What is negotiating an international contract mostly about?",
      "options": [
-      "Winning the argument",
+      "Signing fast",
       "Making sure both sides understand the same thing",
-      "Using clever words",
-      "Signing fast"
+      "Winning the argument",
+      "Using clever words"
      ],
      "answer": 1,
      "why": "\"less about winning words and more about making sure both sides understand the same thing.\""
@@ -31,33 +31,33 @@
      "q": "Which is described as one of the 'quiet' but most important clauses?",
      "options": [
       "The price",
+      "The product description",
       "Governing law",
-      "The delivery date",
-      "The product description"
+      "The delivery date"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"governing law (whose court decides?)\" é uma das cláusulas quietas mais importantes."
     },
     {
      "q": "What does the force majeure clause define?",
      "options": [
-      "The price",
-      "What counts as a real emergency",
+      "The shipping route",
       "Who owns the goods",
-      "The shipping route"
+      "The price",
+      "What counts as a real emergency"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"force majeure (what counts as a real emergency?).\""
     },
     {
      "q": "What is the 'second reading' of each clause for?",
      "options": [
-      "To understand what it says",
       "To imagine what could go wrong",
-      "To sign it",
-      "To translate it"
+      "To understand what it says",
+      "To translate it",
+      "To sign it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"once to imagine what could go wrong. The second reading is where the real negotiation happens.\""
     }
    ]
@@ -72,10 +72,10 @@
     {
      "q": "How is Charlotte reading the draft contract?",
      "options": [
-      "Once, quickly",
+      "Not at all",
       "Twice — once for what it says, once for what could go wrong",
       "Only the price clause",
-      "Not at all"
+      "Once, quickly"
      ],
      "answer": 1,
      "why": "\"I'm reading it twice — once for what it says, once for what could go wrong.\""
@@ -84,44 +84,44 @@
      "q": "What does the current draft say about governing law and disputes?",
      "options": [
       "Neutral third country",
-      "Their home country's law, disputes in their local court",
       "International arbitration",
-      "No governing law"
+      "No governing law",
+      "Their home country's law, disputes in their local court"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the governing law is their home country, and any dispute goes to their local court.\""
     },
     {
      "q": "Why is that a disadvantage for Charlotte's side?",
      "options": [
+      "It is faster",
       "It is cheaper",
       "They'd fight a case in a foreign system, in another language, on the other side's home ground",
-      "It is faster",
       "It has no effect"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"we'd be fighting a case in a foreign legal system, in another language, on their home ground.\""
     },
     {
      "q": "What is Charlotte's counter-proposal?",
      "options": [
+      "Her own country's court",
       "Accept their court",
       "Neutral governing law and international arbitration",
-      "No contract at all",
-      "Her own country's court"
+      "No contract at all"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"governing law of a third country that both sides respect, and disputes settled by international arbitration.\""
     },
     {
      "q": "Why does Charlotte say the quiet clauses matter?",
      "options": [
-      "They matter every day",
       "Contracts exist for the day the deal doesn't go well",
+      "They speed up shipping",
       "They set the price",
-      "They speed up shipping"
+      "They matter every day"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"contracts exist for the day it doesn't go well.\""
     }
    ]
@@ -132,46 +132,56 @@
     {
      "q": "The **governing law** of a contract is…",
      "options": [
-      "the price rule",
       "the legal system that applies to it",
+      "the currency",
       "the delivery term",
-      "the currency"
+      "the price rule"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Governing law = lei aplicável."
     },
     {
      "q": "**Arbitration** is…",
      "options": [
+      "a payment method",
       "a court trial",
       "settling a dispute through a neutral arbitrator instead of a court",
-      "a payment method",
       "a shipping term"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Arbitration = arbitragem."
     },
     {
      "q": "Choose the correct word: \"The **___** clause says who can end the deal and when.\"",
-     "options": ["termination", "governing law", "force majeure", "arbitration"],
+     "options": [
+      "termination",
+      "governing law",
+      "arbitration",
+      "force majeure"
+     ],
      "answer": 0,
      "why": "Termination = rescisão."
     },
     {
      "q": "**Force majeure** covers…",
      "options": [
-      "normal delays",
       "extraordinary events beyond a party's control",
-      "the price",
-      "the payment terms"
+      "normal delays",
+      "the payment terms",
+      "the price"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Force majeure = força maior."
     },
     {
      "q": "Choose the correct term: \"A vague clause creates **___** about what was agreed.\"",
-     "options": ["ambiguity", "arbitration", "termination", "jurisdiction"],
-     "answer": 0,
+     "options": [
+      "termination",
+      "jurisdiction",
+      "ambiguity",
+      "arbitration"
+     ],
+     "answer": 2,
      "why": "Ambiguity = ambiguidade."
     }
    ]
@@ -181,47 +191,57 @@
    "items": [
     {
      "q": "\"I'm not signing this **as it stands**.\" As it stands means…",
-     "options": ["in its current form", "eventually", "quickly", "in writing"],
-     "answer": 0,
+     "options": [
+      "in writing",
+      "in its current form",
+      "eventually",
+      "quickly"
+     ],
+     "answer": 1,
      "why": "As it stands = como está atualmente."
     },
     {
      "q": "\"That clause never **comes up** if the deal goes well.\" To come up means to…",
-     "options": ["disappear", "arise or become relevant", "be signed", "be paid"],
+     "options": [
+      "be paid",
+      "arise or become relevant",
+      "disappear",
+      "be signed"
+     ],
      "answer": 1,
      "why": "Come up = surgir, tornar-se relevante."
     },
     {
      "q": "\"Let's settle disputes on **neutral ground**.\" Neutral ground means…",
      "options": [
-      "one side's home court",
       "a place favouring neither side",
+      "one side's home court",
       "no contract",
       "a foreign language"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Neutral ground = terreno neutro."
     },
     {
      "q": "\"This isn't me **being difficult**.\" To be difficult means to…",
      "options": [
+      "be silent",
       "be unreasonably obstructive",
       "be helpful",
-      "be fast",
-      "be silent"
+      "be fast"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Being difficult = criando dificuldade."
     },
     {
      "q": "\"It doesn't matter **until it matters absolutely**.\" This phrase stresses that a clause is…",
      "options": [
-      "always irrelevant",
-      "unimportant until a crisis, then critical",
       "important every day",
-      "never useful"
+      "never useful",
+      "always irrelevant",
+      "unimportant until a crisis, then critical"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Ideia: quieto até o dia em que se torna decisivo."
     }
    ]

@@ -8,51 +8,56 @@
     {
      "q": "What is good time management about?",
      "options": [
+      "Never resting",
       "Doing everything at once",
-      "Choosing the right task at the right moment",
       "Working very fast",
-      "Never resting"
+      "Choosing the right task at the right moment"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Good time management is about choosing the right task at the right moment.\""
     },
     {
      "q": "When do many people do the hardest task?",
      "options": [
-      "At the end of the day",
-      "At the start, when the mind is fresh",
       "Never",
-      "During lunch"
+      "During lunch",
+      "At the start, when the mind is fresh",
+      "At the end of the day"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Many people start the day with the hardest task, when the mind is fresh.\""
     },
     {
      "q": "What do they do with emails?",
      "options": [
-      "Answer them first thing",
       "Leave them for later",
       "Delete them all",
-      "Ignore them forever"
+      "Ignore them forever",
+      "Answer them first thing"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"They leave emails for later.\""
     },
     {
      "q": "Why do they put meetings together?",
      "options": [
       "To have more meetings",
-      "So the rest of the day is for real work",
       "To avoid work",
+      "So the rest of the day is for real work",
       "For fun"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"They put meetings together, so the rest of the day is for real work.\""
     },
     {
      "q": "What does the text call 'your best friend at work'?",
-     "options": ["A calendar", "A phone", "A coffee", "A manager"],
-     "answer": 0,
+     "options": [
+      "A manager",
+      "A phone",
+      "A coffee",
+      "A calendar"
+     ],
+     "answer": 3,
      "why": "\"A calendar is your best friend at work.\""
     }
    ]
@@ -78,45 +83,45 @@
     {
      "q": "What happens if she opens email first?",
      "options": [
-      "She finishes early",
-      "She loses control — others' questions become her whole day",
+      "She has more time",
       "Nothing changes",
-      "She has more time"
+      "She finishes early",
+      "She loses control — others' questions become her whole day"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"If I open my email first, I lose control immediately.\""
     },
     {
      "q": "What are her three priorities today?",
      "options": [
-      "Finish the report, call the supplier, prepare for Friday",
       "Lunch, coffee, a walk",
+      "A holiday",
       "Email, email, email",
-      "A holiday"
+      "Finish the report, call the supplier, prepare for Friday"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"finish the client report, call the São Paulo supplier, and prepare for the Friday meeting.\""
     },
     {
      "q": "Which task does she do first, and why?",
      "options": [
-      "The easiest, to warm up",
       "The hardest one, while her mind is fresh",
       "Email, because it's quick",
-      "None"
+      "None",
+      "The easiest, to warm up"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I do the hardest one first — the report — while my mind is fresh.\""
     },
     {
      "q": "When does she schedule meetings?",
      "options": [
       "First thing",
+      "During lunch",
       "In the afternoon, to keep the morning clear",
-      "Never",
-      "During lunch"
+      "Never"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Meetings I put together in the afternoon, so my morning stays clear.\""
     }
    ]
@@ -128,36 +133,41 @@
      "q": "A **priority** is…",
      "options": [
       "the least important task",
-      "a task that matters most and comes first",
       "an email",
-      "a break"
+      "a break",
+      "a task that matters most and comes first"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Priority = prioridade."
     },
     {
      "q": "Something **urgent** is…",
      "options": [
-      "not important",
-      "needs to be done very soon",
       "a holiday",
-      "slow"
+      "needs to be done very soon",
+      "slow",
+      "not important"
      ],
      "answer": 1,
      "why": "Urgent = urgente."
     },
     {
      "q": "Choose the correct word: \"A **___** helps you see and plan your day.\"",
-     "options": ["calendar", "problem", "mistake", "email"],
-     "answer": 0,
+     "options": [
+      "problem",
+      "calendar",
+      "mistake",
+      "email"
+     ],
+     "answer": 1,
      "why": "Calendar = agenda/calendário."
     },
     {
      "q": "**Focus** means…",
      "options": [
-      "doing many things at once",
-      "giving your full attention to one thing",
       "resting",
+      "giving your full attention to one thing",
+      "doing many things at once",
       "talking"
      ],
      "answer": 1,
@@ -165,8 +175,13 @@
     },
     {
      "q": "Choose the correct word: \"I'm very **___** today — three big tasks.\"",
-     "options": ["busy", "free", "late", "bored"],
-     "answer": 0,
+     "options": [
+      "late",
+      "free",
+      "busy",
+      "bored"
+     ],
+     "answer": 2,
      "why": "Busy = ocupado."
     }
    ]
@@ -176,37 +191,57 @@
    "items": [
     {
      "q": "\"Do the hardest task **first thing**.\" First thing means…",
-     "options": ["at the end", "at the very start of the day", "at lunch", "never"],
+     "options": [
+      "never",
+      "at the very start of the day",
+      "at the end",
+      "at lunch"
+     ],
      "answer": 1,
      "why": "First thing = logo cedo."
     },
     {
      "q": "\"Let's **deal with** the emails later.\" To deal with means to…",
-     "options": ["ignore forever", "handle / take care of", "delete", "print"],
-     "answer": 1,
+     "options": [
+      "handle / take care of",
+      "ignore forever",
+      "delete",
+      "print"
+     ],
+     "answer": 0,
      "why": "Deal with = lidar com."
     },
     {
      "q": "\"I need to **protect my time** in the morning.\" To protect your time means to…",
      "options": [
-      "let anyone take it",
-      "keep it free for important work",
+      "share it",
       "waste it",
-      "share it"
+      "let anyone take it",
+      "keep it free for important work"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Protect your time = proteger seu tempo."
     },
     {
      "q": "\"Meetings, I **put together** in the afternoon.\" To put together (meetings) means to…",
-     "options": ["cancel them", "group them", "spread them out", "forget them"],
+     "options": [
+      "spread them out",
+      "group them",
+      "cancel them",
+      "forget them"
+     ],
      "answer": 1,
      "why": "Put together = agrupar."
     },
     {
      "q": "\"Sorry, I'm **tied up** right now.\" To be tied up means to…",
-     "options": ["be free", "be busy", "be bored", "be early"],
-     "answer": 1,
+     "options": [
+      "be busy",
+      "be free",
+      "be early",
+      "be bored"
+     ],
+     "answer": 0,
      "why": "Tied up = ocupado, sem tempo."
     }
    ]

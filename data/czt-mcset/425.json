@@ -10,56 +10,56 @@
     {
      "q": "Who pays a direct tax?",
      "options": [
-      "The person or company who owes it",
-      "The shop",
       "The customer's bank",
+      "The shop",
+      "The person or company who owes it",
       "Another company"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Direct taxes are paid directly by the person or company who owes them.\""
     },
     {
      "q": "How is an indirect tax collected?",
      "options": [
       "The government visits your house",
-      "Through someone else, like a shop",
       "You send it by post",
+      "Through someone else, like a shop",
       "It is never collected"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Indirect taxes are collected through someone else.\""
     },
     {
      "q": "What is a classic example of a direct tax?",
      "options": [
       "Sales tax",
-      "Income tax",
       "Shop tax",
+      "Income tax",
       "Price tax"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"income tax and corporate tax are the classic examples.\""
     },
     {
      "q": "The text suggests that indirect taxes are…",
      "options": [
-      "easy to see on every receipt",
       "hidden in the price of many things",
       "never paid by customers",
-      "bigger than direct taxes"
+      "bigger than direct taxes",
+      "easy to see on every receipt"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"they sit quietly in almost every price\" — estão escondidos no preço."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "people often do not notice indirect taxes",
-      "direct taxes are always invisible",
       "shops keep the sales tax for themselves",
-      "only companies pay taxes"
+      "direct taxes are always invisible",
+      "only companies pay taxes",
+      "people often do not notice indirect taxes"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: se são \"almost invisible\" e \"quietly\" no preço, as pessoas não os percebem."
     }
    ]
@@ -78,33 +78,33 @@
      "q": "What is Harry showing the junior?",
      "options": [
       "A payslip",
-      "A receipt from a coffee shop",
+      "A price list",
       "A tax form",
-      "A price list"
+      "A receipt from a coffee shop"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"This is a receipt from the coffee shop next door.\""
     },
     {
      "q": "Why is the sales tax an indirect tax?",
      "options": [
+      "Nobody pays it",
       "Harry pays it, but the shop hands it to the government",
       "The government adds it to the coffee",
-      "Nobody pays it",
       "The bank collects it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"I paid it, but the shop does the work\" e a loja entrega o imposto ao governo."
     },
     {
      "q": "How does Harry pay his income tax?",
      "options": [
-      "The shop collects it",
       "It comes out of his salary and he pays it himself",
+      "He never pays it",
       "He pays it at the coffee shop",
-      "He never pays it"
+      "The shop collects it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"That comes out of my salary… I owe it, and I pay it myself.\""
     },
     {
@@ -121,10 +121,10 @@
     {
      "q": "What is Harry's main point?",
      "options": [
-      "Coffee is too expensive",
+      "Income tax is invisible",
       "One tax is easy to see, the other hides in the price",
       "Shops pay all the taxes",
-      "Income tax is invisible"
+      "Coffee is too expensive"
      ],
      "answer": 1,
      "why": "Inferência: \"One I can see clearly, one is hiding in the price of a coffee.\""
@@ -140,8 +140,8 @@
      "q": "\"I <strong>owe</strong> the government some tax this year.\" To owe means to…",
      "options": [
       "have to pay something",
-      "receive money",
       "count money",
+      "receive money",
       "save money"
      ],
      "answer": 0,
@@ -150,12 +150,12 @@
     {
      "q": "Choose the correct word: \"The shop ___ the tax from every customer and sends it to the government.\"",
      "options": [
-      "collects",
-      "owes",
       "hides",
-      "buys"
+      "owes",
+      "buys",
+      "collects"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To collect = coletar; a loja coleta o imposto dos clientes."
     },
     {
@@ -163,8 +163,8 @@
      "options": [
       "easy to see",
       "very small",
-      "very old",
-      "hard to pay"
+      "hard to pay",
+      "very old"
      ],
      "answer": 0,
      "why": "Visible = visível, fácil de ver."
@@ -172,12 +172,12 @@
     {
      "q": "Choose the correct word: \"The tax sits ___ inside the price, so nobody notices it.\"",
      "options": [
-      "quietly",
       "loudly",
+      "quietly",
       "quickly",
       "clearly"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Quietly = silenciosamente; o imposto fica escondido sem chamar atenção."
     },
     {
@@ -185,8 +185,8 @@
      "options": [
       "give to",
       "take from",
-      "count for",
-      "hide from"
+      "hide from",
+      "count for"
      ],
      "answer": 0,
      "why": "To hand to = entregar a alguém."
@@ -201,53 +201,53 @@
     {
      "q": "\"The tax is <strong>added to</strong> the price at the till.\" Added to means…",
      "options": [
+      "paid before",
       "put together with",
-      "taken away from",
       "hidden behind",
-      "paid before"
+      "taken away from"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Add to = somar, juntar ao preço."
     },
     {
      "q": "\"Income tax <strong>comes out of</strong> your salary each month.\" This means it is…",
      "options": [
-      "taken from your salary",
       "added to your salary",
+      "taken from your salary",
       "saved for later",
       "paid by the shop"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Come out of = sair de, ser descontado do salário."
     },
     {
      "q": "\"Please <strong>hand over</strong> the tax to the government.\" To hand over means to…",
      "options": [
-      "give it",
+      "hide it",
       "keep it",
-      "count it",
-      "hide it"
+      "give it",
+      "count it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Hand over = entregar algo a alguém."
     },
     {
      "q": "\"Sales taxes <strong>add up</strong> over a year.\" To add up means to…",
      "options": [
-      "become a big total",
-      "become smaller",
       "disappear",
+      "become smaller",
+      "become a big total",
       "stay the same"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Add up = somar, virar um total grande."
     },
     {
      "q": "\"The accountant <strong>pointed out</strong> the tax on the receipt.\" To point out means to…",
      "options": [
       "show or explain something",
-      "pay something",
       "remove something",
+      "pay something",
       "buy something"
      ],
      "answer": 0,

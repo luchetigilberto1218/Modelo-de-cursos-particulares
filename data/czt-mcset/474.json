@@ -10,32 +10,32 @@
     {
      "q": "According to the text, what determines whether small issues become a material problem?",
      "options": [
-      "Whether they are caught early and handled cleanly",
       "How many jurisdictions the group operates in",
+      "The size of the penalty involved",
       "Whether the auditor is experienced",
-      "The size of the penalty involved"
+      "Whether they are caught early and handled cleanly"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"None of these, caught early and handled cleanly, grows into a material problem.\""
     },
     {
      "q": "How are large issues handled under the triage system described?",
      "options": [
-      "They are tracked quarterly",
-      "They are resolved and closed at the operational level",
       "They go directly to the executive committee",
-      "They are left to accumulate until the next audit"
+      "They are left to accumulate until the next audit",
+      "They are resolved and closed at the operational level",
+      "They are tracked quarterly"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Large issues go directly to the executive committee.\""
     },
     {
      "q": "What does the phrase \"a very uncomfortable narrative at the next audit\" most likely refer to?",
      "options": [
-      "A single catastrophic error discovered by chance",
+      "A change in tax legislation",
       "The combined effect of several small issues left unaddressed",
-      "A disagreement between two auditors",
-      "A change in tax legislation"
+      "A single catastrophic error discovered by chance",
+      "A disagreement between two auditors"
      ],
      "answer": 1,
      "why": "Inferência: o texto liga a narrativa a vários problemas pequenos que se acumulam em silêncio."
@@ -44,9 +44,9 @@
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
       "Small tax incidents are inevitable in any large group",
-      "Penalty management should be systematic rather than ad hoc",
+      "Documenting and assigning ownership reduces exposure",
       "Waiting to see if minor issues resolve themselves is prudent",
-      "Documenting and assigning ownership reduces exposure"
+      "Penalty management should be systematic rather than ad hoc"
      ],
      "answer": 2,
      "why": "Inferência: o texto inteiro defende agir cedo — deixar problemas 'à deriva' é justamente o que ele condena."
@@ -56,8 +56,8 @@
      "options": [
       "It is dramatic and high-profile by nature",
       "It is undervalued but quietly decisive",
-      "It is largely a matter of legal expertise",
-      "It can be delegated to junior staff entirely"
+      "It can be delegated to junior staff entirely",
+      "It is largely a matter of legal expertise"
      ],
      "answer": 1,
      "why": "Inferência: 'unglamorous' e 'quiet motto' indicam trabalho discreto, sem holofote, mas que decide o resultado."
@@ -78,55 +78,55 @@
      "q": "Why does Charlotte want the three cases closed before quarter end?",
      "options": [
       "Each one is individually severe",
-      "Together they could read like a pattern at next year's audit",
       "The auditor has already pressed the borderline position",
-      "The executive committee has demanded it"
+      "The executive committee has demanded it",
+      "Together they could read like a pattern at next year's audit"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Together, at next year's audit, they'd read like a pattern.\""
     },
     {
      "q": "How is Charlotte handling the misclassified charge?",
      "options": [
+      "She is escalating it to the executive committee",
       "She is closing it herself this week",
       "She is holding it fully documented for the record",
-      "She is assigning it to Daniel, who booked it, with a note on treatment",
-      "She is escalating it to the executive committee"
+      "She is assigning it to Daniel, who booked it, with a note on treatment"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"The misclassification goes to Daniel, who booked it, with a note on the correct treatment.\""
     },
     {
      "q": "Why does Charlotte insist on \"an owner. Not a committee\"?",
      "options": [
-      "Committees are cheaper to run",
       "A single owner ensures clear accountability for closing the issue",
+      "Committees are cheaper to run",
       "The committee is already overloaded",
       "Ownership is required by Dutch law"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: um dono único responde pelo fechamento — um comitê dilui a responsabilidade."
     },
     {
      "q": "What does Charlotte imply about the value of this work?",
      "options": [
-      "It is glamorous and widely recognised",
-      "It is thankless but prevents bigger problems from reaching the top",
       "It is mostly a legal formality",
-      "It should be automated to save effort"
+      "It should be automated to save effort",
+      "It is glamorous and widely recognised",
+      "It is thankless but prevents bigger problems from reaching the top"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: 'unglamorous, nobody thanks you' + 'nothing lands on the committee's desk that shouldn't be there'."
     },
     {
      "q": "Why is Charlotte documenting the borderline position rather than closing it?",
      "options": [
-      "Because the auditor has already rejected it",
-      "Because she wants it on record regardless of how it goes",
       "Because Daniel booked it incorrectly",
-      "Because it is the largest of the three cases"
+      "Because it is the largest of the three cases",
+      "Because the auditor has already rejected it",
+      "Because she wants it on record regardless of how it goes"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"we document fully and hold, because that one I want on record either way.\""
     }
    ]
@@ -140,9 +140,9 @@
      "q": "\"Left unchecked, the exposure could turn into a <strong>material problem</strong> for the group.\" A material problem is one that…",
      "options": [
       "is significant enough to affect the financial picture",
-      "concerns physical assets rather than tax",
       "has already been fully documented",
-      "only affects a single minor entity"
+      "only affects a single minor entity",
+      "concerns physical assets rather than tax"
      ],
      "answer": 0,
      "why": "Material problem = problema material, relevante o bastante para pesar no resultado."
@@ -150,45 +150,45 @@
     {
      "q": "\"The desk took a <strong>borderline position</strong> that the auditor could reasonably challenge.\" This is a position that is…",
      "options": [
-      "clearly compliant and beyond dispute",
       "at the edge of what the rules allow, open to disagreement",
+      "clearly compliant and beyond dispute",
       "already rejected by the tax authority",
       "purely internal and never disclosed"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Borderline position = posição limítrofe, no limite do defensável."
     },
     {
      "q": "Choose the correct word: \"Small issues that are left to ___ quietly can combine into something serious.\"",
      "options": [
+      "document",
       "accumulate",
       "classify",
-      "document",
       "resolve"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "To accumulate = acumular-se; é o verbo que descreve problemas somando-se em silêncio."
     },
     {
      "q": "\"The senior discipline is <strong>triage</strong>.\" In this context, triage means…",
      "options": [
-      "escalating every issue to the executive committee",
-      "sorting issues by size and priority so each is handled appropriately",
       "outsourcing risk assessment to auditors",
-      "documenting issues without acting on them"
+      "escalating every issue to the executive committee",
+      "documenting issues without acting on them",
+      "sorting issues by size and priority so each is handled appropriately"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Triage = triagem: classificar por gravidade/prioridade para tratar cada caso do jeito certo."
     },
     {
      "q": "Choose the correct term: \"Every exposure must be assessed and reported to the ___, which owns the largest risks.\"",
      "options": [
-      "borderline position",
       "executive committee",
       "material problem",
+      "borderline position",
       "institutional memory"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Executive committee = comitê executivo, para onde vão os riscos grandes."
     }
    ]
@@ -202,9 +202,9 @@
      "q": "\"The committee still has to <strong>sign off on</strong> the provision before we book it.\" To sign off on means to…",
      "options": [
       "formally approve",
-      "quietly ignore",
       "reopen for debate",
-      "delegate downward"
+      "delegate downward",
+      "quietly ignore"
      ],
      "answer": 0,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
@@ -212,45 +212,45 @@
     {
      "q": "\"Two entities <strong>pushed back on</strong> the reclassification.\" They…",
      "options": [
-      "approved it immediately",
       "resisted or disagreed with it",
-      "documented it in full",
-      "escalated it to the auditor"
+      "escalated it to the auditor",
+      "approved it immediately",
+      "documented it in full"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Push back on = resistir, discordar, sem necessariamente rejeitar de vez."
     },
     {
      "q": "\"We agreed the mitigation plan, but nobody <strong>followed through</strong>.\" They…",
      "options": [
-      "carried it out to completion",
-      "failed to carry it to completion",
       "rewrote it from scratch",
-      "reported it to the committee"
+      "carried it out to completion",
+      "reported it to the committee",
+      "failed to carry it to completion"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Follow through = levar até o fim o que foi combinado — aqui, não aconteceu."
     },
     {
      "q": "\"Closing three minor penalties won't <strong>move the needle</strong> on the group's overall exposure.\" This means it will…",
      "options": [
-      "make a decisive difference",
       "create serious resistance",
       "not make a noticeable difference",
-      "take years to measure"
+      "take years to measure",
+      "make a decisive difference"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível; com 'won't', não muda nada relevante."
     },
     {
      "q": "\"Let's <strong>get ahead of</strong> the audit and document the borderline positions now.\" To get ahead of something means to…",
      "options": [
-      "deal with it proactively before it becomes a problem",
       "postpone it until absolutely necessary",
       "hand it over to a competitor",
+      "deal with it proactively before it becomes a problem",
       "overstate its importance to the board"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Get ahead of = antecipar-se, agir antes que o problema cresça — o próprio espírito da triagem da lição."
     }
    ]

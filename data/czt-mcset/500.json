@@ -10,32 +10,32 @@
     {
      "q": "According to the text, why do many IT projects fail?",
      "options": [
-      "The technology is always wrong",
-      "Nobody explained the project clearly to the people who pay",
       "The team is too small",
-      "The deadline is too short"
+      "The deadline is too short",
+      "The technology is always wrong",
+      "Nobody explained the project clearly to the people who pay"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the problem is not always the technology... nobody explained the project clearly to the people who pay for it.\""
     },
     {
      "q": "What three things does a non-technical stakeholder want to know?",
      "options": [
-      "The budget, the team, and the office",
-      "Is it on track, what is the next milestone, what could go wrong",
       "The code, the servers, and the tests",
-      "The past, the present, and the future"
+      "The past, the present, and the future",
+      "Is it on track, what is the next milestone, what could go wrong",
+      "The budget, the team, and the office"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"is the project on track, what is the next milestone, and what could go wrong.\""
     },
     {
      "q": "What should you do if you must use a technical term?",
      "options": [
       "Explain it in one sentence",
-      "Use more technical terms",
+      "Ask the stakeholder to study it",
       "Send a long list to the stakeholder",
-      "Ask the stakeholder to study it"
+      "Use more technical terms"
      ],
      "answer": 0,
      "why": "\"If you must use a technical word, explain it in one sentence.\""
@@ -43,23 +43,23 @@
     {
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
-      "Stakeholders should trust the team's decisions",
-      "Stakeholders must learn all the technical words to understand a project",
       "Clear communication builds trust",
-      "Reports should use normal business language"
+      "Reports should use normal business language",
+      "Stakeholders should trust the team's decisions",
+      "Stakeholders must learn all the technical words to understand a project"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto diz \"Stakeholders do not need to become experts\" — eles não precisam aprender o jargão."
     },
     {
      "q": "The example about the bank system suggests that…",
      "options": [
-      "a hard word becomes clear with one simple sentence",
-      "the bank system is broken",
       "the team will miss the deadline",
-      "integration is impossible to explain"
+      "integration is impossible to explain",
+      "the bank system is broken",
+      "a hard word becomes clear with one simple sentence"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: o exemplo mostra como explicar \"integration\" em uma frase simples e clara."
     }
    ]
@@ -78,9 +78,9 @@
      "q": "What does Sophie think is the real problem with the update?",
      "options": [
       "It has five technical terms",
-      "It is too short",
+      "It was sent late",
       "It has no numbers",
-      "It was sent late"
+      "It is too short"
      ],
      "answer": 0,
      "why": "\"It has five technical terms, and I think that is the real problem here.\""
@@ -89,44 +89,44 @@
      "q": "How does Sophie explain \"API integration\"?",
      "options": [
       "She deletes the whole line",
-      "She says the systems connect and share information automatically",
       "She adds three more technical words",
+      "She says the systems connect and share information automatically",
       "She asks the executive to study it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"We are connecting our system to the bank's system, so they can share information automatically.\""
     },
     {
      "q": "Instead of \"latency is high,\" what does Sophie write?",
      "options": [
-      "The system is a bit slow, so we are fixing it this week",
       "The system is broken",
+      "The system is offline",
       "The system is perfect",
-      "The system is offline"
+      "The system is a bit slow, so we are fixing it this week"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The system is a bit slow, so we are fixing it this week.\""
     },
     {
      "q": "Why does Sophie say \"look at your face now\"?",
      "options": [
-      "The executive is angry",
       "The executive finally understands the project",
+      "The executive is asleep",
       "The executive is bored",
-      "The executive is asleep"
+      "The executive is angry"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: as palavras simples fizeram o executivo entender pela primeira vez."
     },
     {
      "q": "What does Sophie believe the executive really needs?",
      "options": [
       "To become a software expert",
-      "To trust that the team makes honest, thoughtful decisions",
       "To read every technical term",
+      "To trust that the team makes honest, thoughtful decisions",
       "To manage the code himself"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"You do not need to be an expert. You just need to trust that we are making honest, thoughtful decisions.\""
     }
    ]
@@ -139,20 +139,20 @@
     {
      "q": "\"Every <strong>stakeholder</strong> will get the report on Friday.\" A stakeholder is…",
      "options": [
-      "a person with an interest in the project",
-      "a computer program",
       "a type of report",
-      "a technical error"
+      "a technical error",
+      "a computer program",
+      "a person with an interest in the project"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Stakeholder = parte interessada: quem tem interesse no projeto."
     },
     {
      "q": "Choose the correct word: \"Good news — the project is ___ and we will finish on time.\"",
      "options": [
       "on track",
-      "jargon",
       "expert",
+      "jargon",
       "milestone"
      ],
      "answer": 0,
@@ -161,34 +161,34 @@
     {
      "q": "\"We reached an important <strong>milestone</strong> today.\" A milestone is…",
      "options": [
-      "a key point or step in the project",
-      "a technical error",
       "a long meeting",
+      "a technical error",
+      "a key point or step in the project",
       "a type of software"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Milestone = marco: um ponto importante do projeto."
     },
     {
      "q": "Choose the correct word: \"Please write the report without ___ so everyone can understand it.\"",
      "options": [
-      "jargon",
-      "trust",
       "milestones",
-      "stakeholders"
+      "trust",
+      "stakeholders",
+      "jargon"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Jargon = jargão: palavras técnicas que confundem quem não é da área."
     },
     {
      "q": "\"The two systems <strong>exchange</strong> information every hour.\" To exchange means to…",
      "options": [
-      "give and receive",
-      "delete",
+      "count",
       "hide",
-      "count"
+      "delete",
+      "give and receive"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To exchange = trocar: um dá e o outro recebe."
     }
    ]
@@ -201,43 +201,43 @@
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
-      "formally approve",
-      "delete",
       "translate",
-      "ignore"
+      "ignore",
+      "formally approve",
+      "delete"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"Next month we will <strong>roll out</strong> the new system to all teams.\" To roll out means to…",
      "options": [
-      "cancel it",
-      "launch or start using it",
+      "test it in secret",
       "hide it",
-      "test it in secret"
+      "cancel it",
+      "launch or start using it"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Roll out = lançar, colocar em uso."
     },
     {
      "q": "\"Some stakeholders <strong>pushed back on</strong> the new deadline.\" They…",
      "options": [
-      "agreed at once",
-      "disagreed or resisted",
+      "wrote it down",
       "forgot about it",
-      "wrote it down"
+      "disagreed or resisted",
+      "agreed at once"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Push back on = resistir, discordar."
     },
     {
      "q": "\"We must <strong>keep the stakeholders in the loop</strong> about the risks.\" This means we should…",
      "options": [
       "keep them informed",
+      "give them more work",
       "keep them out of the project",
-      "ask them to leave",
-      "give them more work"
+      "ask them to leave"
      ],
      "answer": 0,
      "why": "Keep in the loop = manter informado, atualizado."
@@ -246,9 +246,9 @@
      "q": "\"Let's <strong>touch base</strong> every Friday to check the project.\" To touch base means to…",
      "options": [
       "have a short check-in",
-      "cancel the project",
       "start again",
-      "send money"
+      "send money",
+      "cancel the project"
      ],
      "answer": 0,
      "why": "Touch base = fazer um contato rápido para se atualizar."

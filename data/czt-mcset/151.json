@@ -9,31 +9,31 @@
      "q": "How does the payment-terms conversation often become?",
      "options": [
       "A friendly chat",
+      "A legal dispute",
       "A tug of war, each side thinking the other is unreasonable",
-      "A quick agreement",
-      "A legal dispute"
+      "A quick agreement"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The conversation often becomes a tug of war.\""
     },
     {
      "q": "How do good negotiators reframe the conversation?",
      "options": [
-      "By fighting harder about the days",
-      "By talking about the trade-off instead of the number of days",
+      "By raising the price silently",
       "By walking away",
-      "By raising the price silently"
+      "By talking about the trade-off instead of the number of days",
+      "By fighting harder about the days"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"they talk about the trade-off… instead of fighting about the number of days.\""
     },
     {
      "q": "Why does the seller need something in return for longer terms?",
      "options": [
       "Because longer terms cost the seller money",
+      "Because it is the law",
       "Because the buyer is unreasonable",
-      "Because the bank requires it",
-      "Because it is the law"
+      "Because the bank requires it"
      ],
      "answer": 0,
      "why": "\"longer terms cost the seller money, so the seller needs something in return.\""
@@ -41,23 +41,23 @@
     {
      "q": "Which of these is given as something the seller might get in return?",
      "options": [
-      "A higher price or a larger order",
-      "A public apology",
       "A shorter contract",
-      "Free shipping"
+      "A higher price or a larger order",
+      "Free shipping",
+      "A public apology"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"a higher price, a larger order, an early payment discount… or a partial deposit up front.\""
     },
     {
      "q": "What happens once the trade-off is visible?",
      "options": [
+      "The buyer always wins",
       "The conversation gets more emotional",
-      "The conversation stops being emotional",
       "The deal collapses",
-      "The buyer always wins"
+      "The conversation stops being emotional"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Once you make the trade-off visible, the conversation stops being emotional.\""
     }
    ]
@@ -71,39 +71,44 @@
    "items": [
     {
      "q": "What is the buyer pushing for?",
-     "options": ["30 days", "120 days", "A discount only", "Cash up front"],
-     "answer": 1,
+     "options": [
+      "120 days",
+      "A discount only",
+      "Cash up front",
+      "30 days"
+     ],
+     "answer": 0,
      "why": "\"they're pushing hard for 120 days.\""
     },
     {
      "q": "Why does Oliver avoid simply fighting for 30 days?",
      "options": [
       "It's the law",
+      "He prefers 120 days",
       "That's the tug of war — he'd lose it or damage the relationship",
-      "The buyer is small",
-      "He prefers 120 days"
+      "The buyer is small"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"that's the tug of war, and I'd probably lose it or damage the relationship.\""
     },
     {
      "q": "What does Oliver do instead of refusing the long terms?",
      "options": [
-      "Prices them — 120 days at a 3% higher price",
+      "Reduces the order",
       "Cancels the deal",
-      "Gives them for free",
-      "Reduces the order"
+      "Prices them — 120 days at a 3% higher price",
+      "Gives them for free"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"you can have 120 days — but at the 120-day price, which is 3% higher.\""
     },
     {
      "q": "What is the 'carrot' Oliver adds?",
      "options": [
-      "Free shipping",
-      "Pay within 10 days, take 2% off",
       "A longer contract",
-      "A bigger limit"
+      "Pay within 10 days, take 2% off",
+      "A bigger limit",
+      "Free shipping"
      ],
      "answer": 1,
      "why": "\"if you pay within 10 days, take 2% off.\""
@@ -111,12 +116,12 @@
     {
      "q": "How does Oliver describe the final offer?",
      "options": [
-      "A demand",
       "Just a menu — the buyer picks what fits their cash flow",
       "A threat",
-      "A refusal"
+      "A refusal",
+      "A demand"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"It's just a menu. They pick the option that fits their cash flow.\""
     }
    ]
@@ -127,45 +132,55 @@
     {
      "q": "\"The negotiation became a **tug of war**.\" A tug of war is…",
      "options": [
+      "a discount",
       "an easy agreement",
       "a hard back-and-forth struggle",
-      "a legal case",
-      "a discount"
+      "a legal case"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Tug of war = cabo de guerra, disputa."
     },
     {
      "q": "To **reframe** a conversation means to…",
      "options": [
-      "end it",
       "present it from a different, more useful angle",
-      "repeat it",
-      "avoid it"
+      "end it",
+      "avoid it",
+      "repeat it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Reframe = reformular, dar novo enquadramento."
     },
     {
      "q": "Choose the correct word: \"We asked for a **partial ___** up front to reduce our risk.\"",
-     "options": ["deposit", "discount", "tranche", "claim"],
-     "answer": 0,
+     "options": [
+      "tranche",
+      "discount",
+      "deposit",
+      "claim"
+     ],
+     "answer": 2,
      "why": "Partial deposit = sinal parcial."
     },
     {
      "q": "\"Longer terms give the buyer **leverage**.\" Leverage means…",
      "options": [
       "a disadvantage",
-      "bargaining power",
       "a payment",
-      "a currency"
+      "a currency",
+      "bargaining power"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Leverage = alavancagem, poder de barganha."
     },
     {
      "q": "Choose the correct term: \"Each concession should be met with **___** from the other side.\"",
-     "options": ["reciprocity", "leverage", "friction", "expiry"],
+     "options": [
+      "reciprocity",
+      "expiry",
+      "leverage",
+      "friction"
+     ],
      "answer": 0,
      "why": "Reciprocity = reciprocidade."
     }
@@ -176,42 +191,57 @@
    "items": [
     {
      "q": "\"Let's not get **bogged down** in the number of days.\" To get bogged down means to…",
-     "options": ["move fast", "get stuck on something", "agree", "reframe"],
-     "answer": 1,
+     "options": [
+      "move fast",
+      "reframe",
+      "agree",
+      "get stuck on something"
+     ],
+     "answer": 3,
      "why": "Bogged down = atolado, preso num ponto."
     },
     {
      "q": "\"I'll add a **carrot** for early payment.\" A carrot is…",
-     "options": ["a penalty", "an incentive", "a threat", "a delay"],
+     "options": [
+      "a penalty",
+      "an incentive",
+      "a threat",
+      "a delay"
+     ],
      "answer": 1,
      "why": "Carrot = cenoura, incentivo."
     },
     {
      "q": "\"If you want long terms, you **pay for them**.\" To pay for something here means to…",
      "options": [
+      "refuse it",
       "give something in return for it",
       "get it free",
-      "refuse it",
       "delay it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Pay for them = dar uma contrapartida."
     },
     {
      "q": "\"Let's **meet halfway** on the terms.\" To meet halfway means to…",
-     "options": ["refuse", "compromise", "walk away", "delay"],
+     "options": [
+      "refuse",
+      "compromise",
+      "delay",
+      "walk away"
+     ],
      "answer": 1,
      "why": "Meet halfway = chegar a um meio-termo."
     },
     {
      "q": "\"That offer **protects our margin**.\" To protect the margin means to…",
      "options": [
-      "keep the profit safe",
+      "extend the terms",
       "lower the price",
-      "give a discount",
-      "extend the terms"
+      "keep the profit safe",
+      "give a discount"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Protect the margin = preservar a margem."
     }
    ]

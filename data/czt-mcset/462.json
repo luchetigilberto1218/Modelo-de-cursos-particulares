@@ -10,21 +10,21 @@
     {
      "q": "According to the text, what does corporate tax reveal?",
      "options": [
-      "The profitability of the economic model",
-      "How much value lives in people",
       "The flow of value through the operation",
-      "How globally exposed the business is"
+      "The profitability of the economic model",
+      "How globally exposed the business is",
+      "How much value lives in people"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Corporate tax reveals the profitability of the economic model.\""
     },
     {
      "q": "A company where payroll tax dominates is described as…",
      "options": [
-      "a transaction-driven business",
-      "a human-capital business",
       "a business generating economic rent",
-      "a globally exposed business"
+      "a human-capital business",
+      "a globally exposed business",
+      "a transaction-driven business"
      ],
      "answer": 1,
      "why": "\"A company where payroll tax dominates is a human-capital business.\""
@@ -43,23 +43,23 @@
     {
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
-      "The tax profile can reveal patterns the P&L conceals",
-      "Reading the four taxes together outlines the shape of a business",
+      "Taxes can be harder to flatter than the profit statement",
       "The P&L alone tells executives everything they need to know",
-      "Taxes can be harder to flatter than the profit statement"
+      "Reading the four taxes together outlines the shape of a business",
+      "The tax profile can reveal patterns the P&L conceals"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: o texto afirma o oposto — os impostos mostram o que o P&L sozinho não revela."
     },
     {
      "q": "What does \"sometimes harder to flatter than the first\" imply about the tax lens?",
      "options": [
-      "It is easier to manipulate than the P&L",
-      "It can expose realities the P&L might dress up more favourably",
+      "It always agrees with the P&L",
       "It is irrelevant to strategic decisions",
-      "It always agrees with the P&L"
+      "It can expose realities the P&L might dress up more favourably",
+      "It is easier to manipulate than the P&L"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: 'harder to flatter' sugere que os impostos são menos maquiáveis, revelando a realidade crua."
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "What does Harry say the thin corporate tax line tells the CFO?",
      "options": [
-      "The company operates on high margins",
       "The company is not generating much economic rent",
-      "The company avoids paying tax",
-      "The company is highly profitable"
+      "The company is highly profitable",
+      "The company operates on high margins",
+      "The company avoids paying tax"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Our corporate tax line is thin, which tells you we're not generating much economic rent.\""
     },
     {
      "q": "According to Harry, what does the dominant VAT line signal?",
      "options": [
-      "A human-capital business",
-      "A transaction-driven business",
       "A business generating economic rent",
+      "A transaction-driven business",
+      "A human-capital business",
       "A purely domestic business"
      ],
      "answer": 1,
@@ -99,34 +99,34 @@
     {
      "q": "What does Harry say about the international withholding column?",
      "options": [
+      "It is the smallest line on the page",
       "It has stayed the same for years",
       "It was almost nothing three years ago but is now material and growing",
-      "It has fallen sharply",
-      "It is the smallest line on the page"
+      "It has fallen sharply"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Three years ago it was almost nothing. Today it's material, and it's growing every quarter.\""
     },
     {
      "q": "What does Harry imply with \"Nobody sat in a room and decided to become a global business\"?",
      "options": [
       "The company became global through deliberate strategy",
-      "The company drifted into global operations without a conscious decision",
       "The company should stop operating abroad",
+      "The company drifted into global operations without a conscious decision",
       "The withholding figures are unreliable"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: a mudança foi gradual e não planejada — o perfil tributário revelou algo que a liderança não decidiu ativamente."
     },
     {
      "q": "How would you best describe Harry's overall message to the CFO?",
      "options": [
-      "Treat the tax page as a routine compliance chore",
       "Read the tax profile as a candid diagnosis of the business",
+      "Delegate the tax review to the finance team",
       "Ignore the tax profile and focus on earnings",
-      "Delegate the tax review to the finance team"
+      "Treat the tax page as a routine compliance chore"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ele pede explicitamente 'read them as a diagnosis', contrastando com o slide de lucros que 'favorece'."
     }
    ]
@@ -139,53 +139,53 @@
     {
      "q": "\"The four taxes give the board a <strong>frame</strong> for judging the company.\" Here <strong>frame</strong> means…",
      "options": [
+      "a physical border",
       "a structured way of interpreting something",
       "a legal deadline",
-      "a physical border",
       "a financial penalty"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Frame = enquadramento: uma estrutura mental para interpretar o negócio."
     },
     {
      "q": "Choose the correct word: \"When a firm's value sits mostly in its staff, it is a ___ business.\"",
      "options": [
       "transaction-driven",
+      "economic-rent",
       "human-capital",
-      "home-jurisdiction",
-      "economic-rent"
+      "home-jurisdiction"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Human-capital business = negócio de capital humano, onde o valor vive nas pessoas."
     },
     {
      "q": "\"A company generating real <strong>economic rent</strong> is one that…\"",
      "options": [
-      "earns returns above the competitive norm",
-      "pays high office rents",
       "leases most of its assets",
-      "operates only at break-even"
+      "operates only at break-even",
+      "earns returns above the competitive norm",
+      "pays high office rents"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Economic rent = renda econômica: retorno acima do que a mera concorrência permitiria."
     },
     {
      "q": "\"Read together, the taxes <strong>outline</strong> the shape of the business.\" To <strong>outline</strong> here means to…",
      "options": [
-      "sketch or reveal the broad form of",
-      "erase completely",
+      "audit line by line",
       "calculate precisely",
-      "audit line by line"
+      "erase completely",
+      "sketch or reveal the broad form of"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To outline = delinear, mostrar os contornos gerais — não os detalhes exatos."
     },
     {
      "q": "\"The earnings slide tends to <strong>flatter</strong> performance.\" To <strong>flatter</strong> here means to…",
      "options": [
       "present something more favourably than it truly is",
-      "criticise harshly",
       "measure objectively",
+      "criticise harshly",
       "ignore entirely"
      ],
      "answer": 0,
@@ -201,56 +201,56 @@
     {
      "q": "\"The board still has to <strong>sign off on</strong> the new tax strategy.\" To sign off on means to…",
      "options": [
-      "formally approve",
-      "quietly ignore",
       "postpone indefinitely",
-      "leak to the press"
+      "leak to the press",
+      "formally approve",
+      "quietly ignore"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new reporting frame across all jurisdictions.\" To roll out means to…",
      "options": [
-      "cancel it region by region",
-      "implement it progressively",
+      "audit it retroactively",
       "keep it confidential",
-      "audit it retroactively"
+      "implement it progressively",
+      "cancel it region by region"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Roll out = implementar de forma progressiva, área por área."
     },
     {
      "q": "\"The tax team <strong>pushed back on</strong> the CFO's classification.\" They…",
      "options": [
-      "resisted or challenged it",
-      "approved it immediately",
       "forgot about it",
-      "published it externally"
+      "resisted or challenged it",
+      "published it externally",
+      "approved it immediately"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
     },
     {
      "q": "\"Reframing the taxes as a diagnosis really <strong>moved the needle</strong> in the boardroom.\" This means it…",
      "options": [
-      "made a noticeable difference",
-      "wasted everyone's time",
       "created legal risk",
+      "wasted everyone's time",
+      "made a noticeable difference",
       "had no measurable effect"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Move the needle = mexer o ponteiro, produzir uma diferença perceptível."
     },
     {
      "q": "\"Once the frame is agreed, we must <strong>follow through</strong> and monitor it quarterly.\" To follow through means to…",
      "options": [
-      "carry the commitment to completion",
       "abandon it halfway",
+      "carry the commitment to completion",
       "delegate it and forget it",
       "revise it constantly"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Follow through = levar até o fim aquilo que foi combinado."
     }
    ]

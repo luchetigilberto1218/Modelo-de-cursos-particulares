@@ -11,9 +11,9 @@
      "q": "What are the three main taxes in the text?",
      "options": [
       "Corporate tax, VAT, and payroll tax",
-      "Corporate tax, rent, and interest",
       "VAT, salary, and profit",
-      "Sales tax, bank tax, and travel tax"
+      "Sales tax, bank tax, and travel tax",
+      "Corporate tax, rent, and interest"
      ],
      "answer": 0,
      "why": "\"corporate tax on profits, VAT or sales tax… and payroll taxes on salaries\"."
@@ -21,45 +21,45 @@
     {
      "q": "What happens if you miss a deadline?",
      "options": [
-      "You get a penalty",
-      "You get a new form",
+      "Nothing happens",
       "The tax office pays you",
-      "Nothing happens"
+      "You get a new form",
+      "You get a penalty"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"its own penalty if you miss it\" — perder o prazo gera multa."
     },
     {
      "q": "According to the text, compliance means MORE than…",
      "options": [
-      "paying taxes",
-      "keeping records",
       "filing reports",
-      "answering questions"
+      "keeping records",
+      "answering questions",
+      "paying taxes"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Compliance means more than paying taxes.\" Envolve registros, relatórios e respostas honestas."
     },
     {
      "q": "The author would most likely DISAGREE with…",
      "options": [
-      "\"Tax is a calm, year-round routine.\"",
-      "\"You should keep good records.\"",
       "\"It is fine to do all your tax in a panic in March.\"",
-      "\"Missing a deadline can cost money.\""
+      "\"Missing a deadline can cost money.\"",
+      "\"Tax is a calm, year-round routine.\"",
+      "\"You should keep good records.\""
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: o texto elogia a rotina calma e critica o pânico — logo, discordaria da opção do pânico."
     },
     {
      "q": "The last paragraph suggests that…",
      "options": [
-      "the way you manage tax affects the company",
+      "taxes are not important",
       "March is the only tax month",
-      "accountants never make mistakes",
-      "taxes are not important"
+      "the way you manage tax affects the company",
+      "accountants never make mistakes"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"their companies pay for it\" — a atitude do contador tem consequências para a empresa."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "What are Charlotte and the new accountant building?",
      "options": [
-      "A simple tax calendar",
-      "A new office",
+      "A list of clients",
       "A sales report",
-      "A list of clients"
+      "A simple tax calendar",
+      "A new office"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"we are going to build a simple tax calendar\"."
     },
     {
      "q": "Why does payroll tax need twelve rows?",
      "options": [
-      "Because it comes every month",
+      "Because it is paid once a year",
       "Because it is the biggest tax",
-      "Because there are twelve forms per month",
-      "Because it is paid once a year"
+      "Because it comes every month",
+      "Because there are twelve forms per month"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Payroll tax comes every month, so it needs twelve rows\"."
     },
     {
      "q": "How long should the records be kept?",
      "options": [
+      "Forever",
       "At least five years",
       "One year",
-      "Three days",
-      "Forever"
+      "Three days"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"we keep the records for at least five years\"."
     },
     {
      "q": "Why does Charlotte want a note three days before each deadline?",
      "options": [
+      "So the tax office does not call",
       "So they file early and stay calm",
       "So they can pay a smaller tax",
-      "So the tax office does not call",
       "So they can skip the form"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"We never wait until the last day… Calm and early\" — o lembrete evita o pânico de última hora."
     },
     {
      "q": "Why does she want to write where each file is saved?",
      "options": [
+      "So they can print more copies",
       "So they can answer the tax office quickly",
       "So they can delete old files",
-      "So the office looks tidy",
-      "So they can print more copies"
+      "So the office looks tidy"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"find the answer in one minute, not one week\" — localizar o arquivo rápido quando a receita pergunta."
     }
    ]
@@ -139,32 +139,32 @@
     {
      "q": "\"We paid the <strong>tax</strong> on our profits last week.\" A tax is…",
      "options": [
-      "money you pay to the government",
-      "a company profit",
       "a bank loan",
-      "a work meeting"
+      "a company profit",
+      "a work meeting",
+      "money you pay to the government"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Tax = imposto: dinheiro pago ao governo."
     },
     {
      "q": "Choose the correct word: \"We missed the ___, so now we have to pay a penalty.\"",
      "options": [
-      "deadline",
-      "office",
+      "record",
       "profit",
-      "record"
+      "office",
+      "deadline"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Deadline = prazo. Perder o prazo gera multa."
     },
     {
      "q": "\"The company must add <strong>VAT</strong> to almost every sale.\" VAT is…",
      "options": [
       "a tax on sales",
-      "a salary bonus",
+      "a type of form",
       "a bank fee",
-      "a type of form"
+      "a salary bonus"
      ],
      "answer": 0,
      "why": "VAT = IVA: imposto sobre a maioria das vendas."
@@ -173,9 +173,9 @@
      "q": "Choose the correct word: \"Good ___ means keeping clean records and filing on time.\"",
      "options": [
       "compliance",
+      "salary",
       "penalty",
-      "panic",
-      "salary"
+      "panic"
      ],
      "answer": 0,
      "why": "Compliance = conformidade: seguir as regras, guardar registros e entregar no prazo."
@@ -183,12 +183,12 @@
     {
      "q": "\"When the <strong>tax office</strong> asks a question, we answer honestly.\" The tax office is…",
      "options": [
-      "the government body that collects taxes",
-      "the company's sales team",
       "a private bank",
-      "the accountant's desk"
+      "the accountant's desk",
+      "the government body that collects taxes",
+      "the company's sales team"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Tax office = receita: o órgão do governo que cobra os impostos."
     }
    ]
@@ -201,12 +201,12 @@
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the tax return.\" To sign off on means to…",
      "options": [
-      "formally approve",
-      "print",
       "delay",
-      "email"
+      "email",
+      "print",
+      "formally approve"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
@@ -214,8 +214,8 @@
      "options": [
       "stay on top of it, not fall behind",
       "forget it",
-      "cancel it",
-      "hide it"
+      "hide it",
+      "cancel it"
      ],
      "answer": 0,
      "why": "Keep up with = acompanhar, não ficar para trás."
@@ -223,34 +223,34 @@
     {
      "q": "\"Please <strong>fill in</strong> the VAT form.\" To fill in means to…",
      "options": [
-      "complete it with information",
-      "throw it away",
       "read it aloud",
-      "sign it only"
+      "complete it with information",
+      "sign it only",
+      "throw it away"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fill in = preencher o formulário com as informações."
     },
     {
      "q": "\"The team agreed on the plan but never <strong>followed through</strong>.\" They…",
      "options": [
-      "did not finish what they promised",
-      "changed the plan",
       "asked for help",
-      "paid too much"
+      "did not finish what they promised",
+      "paid too much",
+      "changed the plan"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"Let's file the report early so we don't <strong>run out of</strong> time.\" To run out of means to…",
      "options": [
-      "have no more of something",
       "have plenty of it",
-      "save it for later",
-      "share it"
+      "have no more of something",
+      "share it",
+      "save it for later"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Run out of = ficar sem algo; aqui, ficar sem tempo."
     }
    ]

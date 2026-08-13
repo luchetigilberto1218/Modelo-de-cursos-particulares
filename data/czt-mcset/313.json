@@ -21,43 +21,43 @@
     {
      "q": "What is the difference between tracking and visibility?",
      "options": [
-      "There is no difference",
       "Tracking shows the location; visibility also shows if it will arrive on time",
       "Visibility is only for trucks",
+      "There is no difference",
       "Tracking is only for customers"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Visibility é a palavra maior: não só o ponto no mapa, mas saber se vai chegar a tempo."
     },
     {
      "q": "Why do customers love good tracking?",
      "options": [
-      "It makes the parcel cheaper",
       "It removes worry",
       "It is faster than a truck",
+      "It makes the parcel cheaper",
       "It gives them a free gift"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Customers love good tracking because it removes worry.\""
     },
     {
      "q": "The text says \"A parcel you can see is a problem you can solve.\" This suggests that…",
      "options": [
       "Every parcel is a problem",
+      "Seeing a parcel is a waste of time",
       "You cannot help what you cannot see",
-      "Parcels should not be seen",
-      "Seeing a parcel is a waste of time"
+      "Parcels should not be seen"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: se ver ajuda a resolver, então o que você não vê é mais difícil de resolver."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
       "Real-time tracking helps teams react early",
-      "Visibility helps catch problems in hours",
+      "Good tracking removes customer worry",
       "It is fine to wait days to find a problem",
-      "Good tracking removes customer worry"
+      "Visibility helps catch problems in hours"
      ],
      "answer": 2,
      "why": "Inferência: o texto elogia quem acha o problema em horas, não em dias."
@@ -78,9 +78,9 @@
      "q": "What is Emily showing the new colleague?",
      "options": [
       "A live tracking map of Europe",
+      "A photo of a customer",
       "A list of prices",
-      "A new truck",
-      "A photo of a customer"
+      "A new truck"
      ],
      "answer": 0,
      "why": "\"This is our live tracking map of Europe.\""
@@ -88,31 +88,31 @@
     {
      "q": "What does a red dot mean?",
      "options": [
-      "The shipment is on time",
-      "The shipment is late or has a problem",
       "The shipment is very cheap",
-      "The shipment is not real"
+      "The shipment is on time",
+      "The shipment is not real",
+      "The shipment is late or has a problem"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A red dot is a shipment that is late, or that has a problem.\""
     },
     {
      "q": "What does Emily do when she sees the two red dots near Paris?",
      "options": [
+      "She calls the customer to say goodbye",
       "She checks them today, not tomorrow",
-      "She waits one week",
       "She turns off the screen",
-      "She calls the customer to say goodbye"
+      "She waits one week"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"I know we need to check them today, not tomorrow.\""
     },
     {
      "q": "Emily says a red dot early in the day is a small problem. This suggests that…",
      "options": [
-      "Red dots are never a problem",
-      "Waiting makes the problem bigger",
       "The morning is a bad time to work",
+      "Waiting makes the problem bigger",
+      "Red dots are never a problem",
       "You should ignore red dots"
      ],
      "answer": 1,
@@ -121,12 +121,12 @@
     {
      "q": "Why does Emily say \"every dot is a promise to a customer\"?",
      "options": [
-      "Because the dots are only colours",
       "Because each shipment matters to a real person",
-      "Because customers do not like dots",
-      "Because promises are not important"
+      "Because the dots are only colours",
+      "Because promises are not important",
+      "Because customers do not like dots"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: cada ponto é um pedido real que a empresa quer entregar bem."
     }
    ]
@@ -150,45 +150,45 @@
     {
      "q": "Choose the correct word: \"Good tracking removes the customer's ___.\"",
      "options": [
+      "map",
       "worry",
       "truck",
-      "map",
       "box"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Worry = preocupação, o que o bom rastreamento tira do cliente."
     },
     {
      "q": "\"The map shows the <strong>location</strong> of every truck.\" Location means…",
      "options": [
-      "the place where it is",
+      "the driver's name",
       "the price of it",
       "the colour of it",
-      "the driver's name"
+      "the place where it is"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Location = localização: o lugar onde a coisa está."
     },
     {
      "q": "Choose the correct word: \"When we see a problem, we ___ early instead of waiting.\"",
      "options": [
-      "react",
+      "close",
       "sleep",
       "sing",
-      "close"
+      "react"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To react = reagir: agir quando vê o problema."
     },
     {
      "q": "\"Companies with <strong>strong</strong> visibility catch problems fast.\" Strong here means…",
      "options": [
-      "very good and reliable",
-      "very heavy",
       "very loud",
-      "very small"
+      "very heavy",
+      "very small",
+      "very good and reliable"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Strong = forte, aqui no sentido de bom e confiável."
     }
    ]
@@ -201,23 +201,23 @@
     {
      "q": "\"Let's <strong>keep an eye on</strong> the red dots.\" To keep an eye on means to…",
      "options": [
-      "watch it carefully",
       "throw it away",
       "hide it",
-      "forget it"
+      "forget it",
+      "watch it carefully"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Keep an eye on = ficar de olho, observar com atenção."
     },
     {
      "q": "\"The truck is <strong>held up</strong> in traffic.\" Held up means…",
      "options": [
-      "delayed or stopped",
       "very fast",
+      "already delivered",
       "very cheap",
-      "already delivered"
+      "delayed or stopped"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Held up = atrasado, parado por algum motivo."
     },
     {
@@ -234,12 +234,12 @@
     {
      "q": "\"We need to <strong>sort out</strong> the problem before the end of the day.\" To sort out means to…",
      "options": [
-      "solve or fix it",
-      "make it bigger",
       "ignore it",
-      "sell it"
+      "make it bigger",
+      "sell it",
+      "solve or fix it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sort out = resolver, arrumar o problema."
     },
     {

@@ -11,9 +11,9 @@
      "q": "What is the text about?",
      "options": [
       "Writing short, clear email replies",
-      "Making phone calls",
       "Planning a big meeting",
-      "Learning to read reports"
+      "Learning to read reports",
+      "Making phone calls"
      ],
      "answer": 0,
      "why": "O texto fala de respostas de email curtas e claras."
@@ -21,32 +21,32 @@
     {
      "q": "According to the text, a good reply does all of these EXCEPT…",
      "options": [
-      "says thanks",
-      "confirms the plan",
+      "closes in a warm way",
       "uses long, difficult words",
-      "closes in a warm way"
+      "confirms the plan",
+      "says thanks"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"You do not need long words.\" Um bom email é curto e simples."
     },
     {
      "q": "Why are short replies good?",
      "options": [
-      "They save time for everyone",
       "They look more serious",
+      "They save time for everyone",
       "They are harder to write",
       "They need more words"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Short email replies save time for everyone.\""
     },
     {
      "q": "The author would most likely DISAGREE with…",
      "options": [
-      "A short reply can be clear and useful.",
-      "You should write long emails to sound professional.",
       "\"Thanks for your email\" is a useful phrase.",
-      "A few clear lines are enough."
+      "You should write long emails to sound professional.",
+      "A few clear lines are enough.",
+      "A short reply can be clear and useful."
      ],
      "answer": 1,
      "why": "Inferência: o texto todo defende o email curto — a ideia de escrever email longo vai contra isso."
@@ -54,12 +54,12 @@
     {
      "q": "\"Take your time. Every sentence counts.\" suggests that…",
      "options": [
-      "you should write fast and not think",
       "each line matters, so write with care",
+      "you should write fast and not think",
       "long emails are always better",
       "you should copy other emails"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"every sentence counts\" mostra que cada frase é importante — escreva com cuidado."
     }
    ]
@@ -78,9 +78,9 @@
      "q": "Who sent Oliver an email this morning?",
      "options": [
       "Maria",
+      "A new client",
       "James",
-      "His boss",
-      "A new client"
+      "His boss"
      ],
      "answer": 0,
      "why": "\"This morning I got a message from Maria.\""
@@ -89,20 +89,20 @@
      "q": "What did Maria send Oliver?",
      "options": [
       "A file with photos",
-      "The report",
+      "A phone number",
       "A meeting invite only",
-      "A phone number"
+      "The report"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"She sent me the report.\""
     },
     {
      "q": "What does Oliver do BEFORE he clicks send?",
      "options": [
-      "He calls Maria",
+      "He asks his boss",
       "He checks the file is there",
-      "He waits one day",
-      "He asks his boss"
+      "He calls Maria",
+      "He waits one day"
      ],
      "answer": 1,
      "why": "\"I always check the file is there before I click send.\""
@@ -110,23 +110,23 @@
     {
      "q": "Why does Oliver write \"Good question. I will check and reply soon.\"?",
      "options": [
-      "He does not know the answer yet",
       "He does not want to help",
+      "He does not know the answer yet",
       "The question is not important",
       "He already answered it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ele diz \"I do not know the answer yet\", por isso promete verificar e responder depois."
     },
     {
      "q": "How would you best describe Oliver's replies?",
      "options": [
-      "Long and formal",
       "Short, clear and kind",
       "Cold and rushed",
+      "Long and formal",
       "Confusing and slow"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ele usa frases curtas, confirma tudo e fecha de forma calorosa."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"<strong>Thanks</strong> for your reply.\" What does <strong>thanks</strong> mean?",
      "options": [
-      "obrigado",
-      "desculpe",
       "por favor",
-      "olá"
+      "olá",
+      "obrigado",
+      "desculpe"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Thanks = obrigado. Usamos para agradecer."
     },
     {
      "q": "Choose the correct word: \"Please find the file ___.\"",
      "options": [
-      "attached",
+      "late",
       "open",
       "closed",
-      "late"
+      "attached"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Attached = anexo. \"Please find the file attached\" é uma frase pronta."
     },
     {
      "q": "\"I <strong>confirm</strong> the meeting on Monday.\" To <strong>confirm</strong> means to…",
      "options": [
-      "say yes, it is sure",
+      "forget the date",
       "cancel the plan",
-      "ask a new question",
-      "forget the date"
+      "say yes, it is sure",
+      "ask a new question"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Confirm = confirmar, dizer que está certo."
     },
     {
      "q": "Choose the correct word: \"Good ___ — I will check and reply soon.\"",
      "options": [
-      "question",
       "file",
       "meeting",
-      "report"
+      "report",
+      "question"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Question = dúvida/pergunta. \"Good question\" é uma resposta comum."
     },
     {
      "q": "\"I <strong>received</strong> the report, thanks.\" To <strong>receive</strong> means to…",
      "options": [
-      "get something someone sent",
       "send something out",
-      "lose a file",
-      "write a report"
+      "write a report",
+      "get something someone sent",
+      "lose a file"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Receive = receber, ou seja, ter recebido algo que foi enviado."
     }
    ]
@@ -202,8 +202,8 @@
      "q": "\"I will <strong>get back to you</strong> soon.\" This means…",
      "options": [
       "I will reply to you later",
-      "I will visit you",
       "I will delete your email",
+      "I will visit you",
       "I will call your boss"
      ],
      "answer": 0,
@@ -214,8 +214,8 @@
      "options": [
       "tell me if you need more",
       "come to my office",
-      "wait one week",
-      "send me a report"
+      "send me a report",
+      "wait one week"
      ],
      "answer": 0,
      "why": "Let me know = me avise / me diga."
@@ -223,31 +223,31 @@
     {
      "q": "\"<strong>Noted</strong>, thank you.\" When you write \"Noted\", you mean…",
      "options": [
-      "I saw it and I understand",
-      "I do not agree",
       "I am busy now",
-      "please send it again"
+      "please send it again",
+      "I saw it and I understand",
+      "I do not agree"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Noted = anotado / entendido. Você viu a mensagem e registrou."
     },
     {
      "q": "\"I will <strong>look into</strong> your question.\" This means…",
      "options": [
-      "I will check it",
+      "I will print it",
       "I will ignore it",
       "I will delete it",
-      "I will print it"
+      "I will check it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Look into = investigar, verificar algo."
     },
     {
      "q": "\"Feel free to <strong>reach out</strong> any time.\" To <strong>reach out</strong> means to…",
      "options": [
       "contact me",
-      "close the email",
       "wait for me",
+      "close the email",
       "pay the bill"
      ],
      "answer": 0,

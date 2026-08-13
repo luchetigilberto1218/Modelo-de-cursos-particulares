@@ -8,31 +8,31 @@
     {
      "q": "What does research show about interruptions, according to the text?",
      "options": [
-      "They have no lasting effect",
-      "It takes several minutes to return to the same depth of focus",
       "They improve productivity",
-      "They only affect meetings"
+      "They only affect meetings",
+      "They have no lasting effect",
+      "It takes several minutes to return to the same depth of focus"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"after an interruption, it takes several minutes to return to the same depth of focus.\""
     },
     {
      "q": "How do the most productive professionals treat their attention?",
      "options": [
-      "As unlimited",
-      "As a scarce resource to protect",
       "As less important than availability",
-      "As something to share freely"
+      "As something to share freely",
+      "As unlimited",
+      "As a scarce resource to protect"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"protect their attention like a scarce resource.\""
     },
     {
      "q": "Why do they make themselves unavailable for a few hours a day?",
      "options": [
-      "Because they don't care about colleagues",
-      "Because they care about doing good work",
       "To avoid meetings entirely",
+      "Because they care about doing good work",
+      "Because they don't care about colleagues",
       "To finish earlier"
      ],
      "answer": 1,
@@ -40,17 +40,22 @@
     },
     {
      "q": "What does the text say is often more valuable than doing more?",
-     "options": ["Working longer", "Choosing what not to do", "Answering faster", "Attending every meeting"],
-     "answer": 1,
+     "options": [
+      "Working longer",
+      "Attending every meeting",
+      "Answering faster",
+      "Choosing what not to do"
+     ],
+     "answer": 3,
      "why": "\"Choosing what not to do is often more valuable than doing more.\""
     },
     {
      "q": "\"An hour multiplied by its quality\" suggests that…",
      "options": [
-      "all hours are equal",
-      "focused time is worth more than the same time interrupted",
       "longer hours are always better",
-      "quality cannot be measured"
+      "focused time is worth more than the same time interrupted",
+      "quality cannot be measured",
+      "all hours are equal"
      ],
      "answer": 1,
      "why": "Inferência: uma hora protegida rende mais do que uma hora fragmentada."
@@ -67,10 +72,10 @@
     {
      "q": "How does the colleague feel?",
      "options": [
-      "Bored",
+      "Underworked",
       "Overwhelmed — busy all day but never getting the real work done",
-      "Confident",
-      "Underworked"
+      "Bored",
+      "Confident"
      ],
      "answer": 1,
      "why": "\"you feel overwhelmed, like you're busy all day but never get the real work done.\""
@@ -78,45 +83,45 @@
     {
      "q": "What does Emily suggest doing every morning?",
      "options": [
+      "Clear the whole inbox",
       "Check messages first",
-      "Block two hours for deep work before checking messages",
       "Attend a stand-up",
-      "Clear the whole inbox"
+      "Block two hours for deep work before checking messages"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Every morning, before checking messages, block two hours for deep work.\""
     },
     {
      "q": "According to Emily, what is the hard part?",
      "options": [
-      "Blocking the time",
-      "Protecting the time from interruptions",
+      "Turning off the phone",
       "Choosing the task",
-      "Turning off the phone"
+      "Blocking the time",
+      "Protecting the time from interruptions"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The hard part isn't the blocking; it's protecting it.\""
     },
     {
      "q": "Why does Emily tell the colleague to stop multitasking?",
      "options": [
-      "It's against policy",
       "Each switch costs focus, even though it feels productive",
+      "Managers dislike it",
       "It's faster to do everything at once",
-      "Managers dislike it"
+      "It's against policy"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"each switch costs you focus. Do one thing, finish it, then move on.\""
     },
     {
      "q": "What does Emily ask the colleague to try for a week?",
      "options": [
-      "Longer working hours",
-      "The same two hours, same task first",
       "Fewer meetings only",
-      "Working from home"
+      "Longer working hours",
+      "Working from home",
+      "The same two hours, same task first"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Try it for a week. Same two hours, same task first.\""
     }
    ]
@@ -127,46 +132,56 @@
     {
      "q": "\"She protects two hours for **deep work** each morning.\" Deep work is…",
      "options": [
-      "answering emails",
-      "focused, undistracted work on a demanding task",
+      "quick admin",
       "attending meetings",
-      "quick admin"
+      "focused, undistracted work on a demanding task",
+      "answering emails"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Deep work = trabalho profundo, concentrado."
     },
     {
      "q": "\"Every **notification** pulls your attention away.\" A notification is…",
      "options": [
-      "a scheduled meeting",
-      "an alert from an app or device",
       "a deadline",
-      "a report"
+      "an alert from an app or device",
+      "a report",
+      "a scheduled meeting"
      ],
      "answer": 1,
      "why": "Notification = notificação, alerta."
     },
     {
      "q": "Choose the correct word: \"Try to **block time** for the report so nothing ___ it.\"",
-     "options": ["finishes", "interrupts", "improves", "shortens"],
+     "options": [
+      "shortens",
+      "interrupts",
+      "improves",
+      "finishes"
+     ],
      "answer": 1,
      "why": "O sentido do bloco de tempo é impedir interrupções (interruption)."
     },
     {
      "q": "A **context switch** is…",
      "options": [
+      "a type of meeting",
       "a longer break",
       "moving your attention from one task to another",
-      "a type of meeting",
       "a deadline change"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Context switch = troca de contexto, custosa para o foco."
     },
     {
      "q": "Choose the correct term: \"Don't try to ___ — do one thing at a time.\"",
-     "options": ["prioritise", "multitask", "pace yourself", "focus"],
-     "answer": 1,
+     "options": [
+      "prioritise",
+      "focus",
+      "multitask",
+      "pace yourself"
+     ],
+     "answer": 2,
      "why": "To multitask = fazer várias coisas ao mesmo tempo."
     }
    ]
@@ -176,36 +191,56 @@
    "items": [
     {
      "q": "\"I need to **buckle down** and finish this report.\" To buckle down means to…",
-     "options": ["relax", "start working seriously", "delegate", "give up"],
+     "options": [
+      "give up",
+      "start working seriously",
+      "relax",
+      "delegate"
+     ],
      "answer": 1,
      "why": "Buckle down = concentrar-se e trabalhar a sério."
     },
     {
      "q": "\"Messages keep **cropping up** and breaking my focus.\" To crop up means to…",
-     "options": ["disappear", "appear unexpectedly", "get answered", "pile up"],
-     "answer": 1,
+     "options": [
+      "disappear",
+      "get answered",
+      "appear unexpectedly",
+      "pile up"
+     ],
+     "answer": 2,
      "why": "Crop up = surgir de repente."
     },
     {
      "q": "\"Let's **knock out** the easy tasks first.\" To knock out means to…",
-     "options": ["delay", "finish quickly", "cancel", "review"],
-     "answer": 1,
+     "options": [
+      "cancel",
+      "delay",
+      "review",
+      "finish quickly"
+     ],
+     "answer": 3,
      "why": "Knock out = despachar/terminar rapidamente."
     },
     {
      "q": "\"I keep getting **bogged down** in email.\" To be bogged down means to…",
      "options": [
-      "be stuck and slowed by something",
-      "finish early",
       "be highly focused",
+      "finish early",
+      "be stuck and slowed by something",
       "delegate well"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Bogged down = atolado, preso."
     },
     {
      "q": "\"Let's **switch off** notifications for two hours.\" To switch off means to…",
-     "options": ["turn on", "turn off", "reply to", "schedule"],
+     "options": [
+      "schedule",
+      "turn off",
+      "turn on",
+      "reply to"
+     ],
      "answer": 1,
      "why": "Switch off = desligar."
     }

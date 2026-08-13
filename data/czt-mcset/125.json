@@ -7,47 +7,57 @@
    "items": [
     {
      "q": "Who makes the promise in a letter of credit?",
-     "options": ["The buyer", "A bank", "The seller", "Customs"],
+     "options": [
+      "The seller",
+      "A bank",
+      "The buyer",
+      "Customs"
+     ],
      "answer": 1,
      "why": "\"A letter of credit is a promise made by a bank.\""
     },
     {
      "q": "What must the seller do for the bank to pay?",
      "options": [
-      "Nothing",
-      "Send the goods and bring the right documents",
       "Pay a duty",
-      "Visit the buyer"
+      "Visit the buyer",
+      "Send the goods and bring the right documents",
+      "Nothing"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"if the seller sends the goods and brings the right documents, the bank will pay.\""
     },
     {
      "q": "Why is a letter of credit useful?",
      "options": [
-      "The buyer and seller may not know each other",
       "It is free",
-      "It replaces the goods",
-      "It avoids customs"
+      "It avoids customs",
+      "The buyer and seller may not know each other",
+      "It replaces the goods"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"the buyer and the seller may not know each other.\""
     },
     {
      "q": "With a letter of credit, who do the two sides trust?",
-     "options": ["Each other", "The bank", "Customs", "The ship"],
-     "answer": 1,
+     "options": [
+      "Each other",
+      "The ship",
+      "The bank",
+      "Customs"
+     ],
+     "answer": 2,
      "why": "\"With one, they trust the bank instead.\""
     },
     {
      "q": "How does the text describe the letter of credit?",
      "options": [
-      "A new and rare tool",
-      "One of the oldest and most used tools, still working well today",
       "A risky idea",
-      "A type of ship"
+      "A type of ship",
+      "One of the oldest and most used tools, still working well today",
+      "A new and rare tool"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"one of the oldest and most used tools in international trade, and it still works very well today.\""
     }
    ]
@@ -61,27 +71,32 @@
    "items": [
     {
      "q": "In the example, what is being sold?",
-     "options": ["Sugar", "Coffee", "Machines", "Phones"],
+     "options": [
+      "Sugar",
+      "Coffee",
+      "Machines",
+      "Phones"
+     ],
      "answer": 1,
      "why": "\"you're selling coffee to a buyer in another country.\""
     },
     {
      "q": "What is the problem the letter of credit solves?",
      "options": [
-      "The goods are too heavy",
-      "Neither side fully trusts the other",
       "The price is too high",
-      "The ship is slow"
+      "The goods are too heavy",
+      "The ship is slow",
+      "Neither side fully trusts the other"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Neither side fully trusts the other.\""
     },
     {
      "q": "What does the buyer's bank promise?",
      "options": [
-      "To ship the coffee",
-      "To pay when the seller sends the coffee and shows the right documents",
       "To lower the price",
+      "To pay when the seller sends the coffee and shows the right documents",
+      "To ship the coffee",
       "To visit the seller"
      ],
      "answer": 1,
@@ -90,12 +105,12 @@
     {
      "q": "Why must the documents be exactly right?",
      "options": [
-      "To make them longer",
       "If a date is wrong or a paper is missing, the bank can say no",
       "To pay more duty",
+      "To make them longer",
       "To please the buyer"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"If a date is wrong, or a paper is missing, the bank can say no.\""
     },
     {
@@ -117,40 +132,55 @@
     {
      "q": "A **letter of credit** is…",
      "options": [
+      "a currency",
       "a shipping form",
       "a bank's promise to pay if the right documents are shown",
-      "a type of duty",
-      "a currency"
+      "a type of duty"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Letter of credit = carta de crédito."
     },
     {
      "q": "The **beneficiary** of a letter of credit is…",
      "options": [
-      "the buyer",
-      "the seller who will be paid",
+      "the ship",
       "the bank",
-      "the ship"
+      "the buyer",
+      "the seller who will be paid"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Beneficiary = beneficiário (o vendedor que recebe)."
     },
     {
      "q": "Choose the correct word: \"The bank will **___** the payment if the documents are right.\"",
-     "options": ["guarantee", "ship", "pack", "import"],
-     "answer": 0,
+     "options": [
+      "import",
+      "ship",
+      "pack",
+      "guarantee"
+     ],
+     "answer": 3,
      "why": "Guarantee = garantir."
     },
     {
      "q": "To **issue** a letter of credit means to…",
-     "options": ["cancel it", "open or create it", "pay it", "ship it"],
-     "answer": 1,
+     "options": [
+      "pay it",
+      "ship it",
+      "open or create it",
+      "cancel it"
+     ],
+     "answer": 2,
      "why": "Issue = emitir."
     },
     {
      "q": "Choose the correct word: \"A letter of credit builds **___** between two sides who don't know each other.\"",
-     "options": ["trust", "duty", "freight", "delay"],
+     "options": [
+      "trust",
+      "delay",
+      "duty",
+      "freight"
+     ],
      "answer": 0,
      "why": "Trust = confiança."
     }
@@ -162,36 +192,56 @@
     {
      "q": "\"The bank **stands in the middle**.\" To stand in the middle means to…",
      "options": [
-      "take one side",
-      "act between the two sides",
+      "pay nothing",
       "leave the deal",
-      "pay nothing"
+      "act between the two sides",
+      "take one side"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Stand in the middle = ficar no meio, entre as partes."
     },
     {
      "q": "\"The buyer asks the bank to **open** a letter of credit.\" To open here means to…",
-     "options": ["close", "create / issue", "cancel", "sign"],
-     "answer": 1,
+     "options": [
+      "create / issue",
+      "cancel",
+      "close",
+      "sign"
+     ],
+     "answer": 0,
      "why": "Open a letter of credit = abrir/emitir."
     },
     {
      "q": "\"We check the documents **word by word**.\" Word by word means…",
-     "options": ["quickly", "very carefully, every detail", "not at all", "once"],
-     "answer": 1,
+     "options": [
+      "very carefully, every detail",
+      "not at all",
+      "quickly",
+      "once"
+     ],
+     "answer": 0,
      "why": "Word by word = palavra por palavra, com cuidado."
     },
     {
      "q": "\"If a paper is missing, the bank can **say no**.\" To say no means to…",
-     "options": ["accept", "refuse", "pay", "ship"],
-     "answer": 1,
+     "options": [
+      "refuse",
+      "accept",
+      "ship",
+      "pay"
+     ],
+     "answer": 0,
      "why": "Say no = recusar."
     },
     {
      "q": "\"Both sides can do business **with confidence**.\" With confidence means…",
-     "options": ["with fear", "feeling safe and sure", "quickly", "for free"],
-     "answer": 1,
+     "options": [
+      "quickly",
+      "for free",
+      "feeling safe and sure",
+      "with fear"
+     ],
+     "answer": 2,
      "why": "With confidence = com segurança."
     }
    ]

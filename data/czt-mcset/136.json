@@ -8,56 +8,56 @@
     {
      "q": "How does the text describe a contract?",
      "options": [
-      "A promise on paper",
+      "A currency",
       "A type of ship",
-      "A bank account",
-      "A currency"
+      "A promise on paper",
+      "A bank account"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"A contract is just a promise on paper.\""
     },
     {
      "q": "Why are contracts especially important in international trade?",
      "options": [
-      "The goods are cheaper",
-      "The two sides often speak different languages and follow different laws",
       "There is no bank",
-      "Shipping is free"
+      "The goods are cheaper",
+      "Shipping is free",
+      "The two sides often speak different languages and follow different laws"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the two sides often speak different languages and follow different laws.\""
     },
     {
      "q": "Which is one of the basic parts of a contract?",
      "options": [
+      "The ship's speed",
       "The colour of the office",
-      "The price and payment terms",
       "The weather",
-      "The ship's speed"
+      "The price and payment terms"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the price, the payment terms, the delivery and what happens if something goes wrong.\""
     },
     {
      "q": "What does a contract say happens 'if something goes wrong'?",
      "options": [
       "Nothing",
-      "It sets out what happens in that case",
+      "The bank pays",
       "The deal ends automatically",
-      "The bank pays"
+      "It sets out what happens in that case"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the delivery and what happens if something goes wrong.\""
     },
     {
      "q": "What does the text say you need to do with contracts?",
      "options": [
-      "Write them from memory",
       "Read them carefully before you sign",
+      "Ignore them",
       "Sign them quickly",
-      "Ignore them"
+      "Write them from memory"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"You only need to read them carefully before you sign.\""
     }
    ]
@@ -72,34 +72,34 @@
     {
      "q": "What does Charlotte want the colleague to do with the contract?",
      "options": [
+      "Ignore it",
       "Memorise it",
       "Notice the three clauses that matter most",
-      "Sign it quickly",
-      "Ignore it"
+      "Sign it quickly"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I just want you to notice three clauses that always matter most.\""
     },
     {
      "q": "What is the problem if the currency isn't clear in the price clause?",
      "options": [
-      "Nothing",
       "'Ten thousand' without dollars or euros is asking for an argument later",
       "The goods are late",
+      "Nothing",
       "The bank refuses"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"a contract that just says 'ten thousand' without saying dollars or euros is asking for an argument later.\""
     },
     {
      "q": "What should the delivery clause say?",
      "options": [
       "Only the price",
-      "When goods must arrive and who pays if they're late",
       "The currency",
+      "When goods must arrive and who pays if they're late",
       "The ship's name"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"When must the goods arrive, and who pays if they're late?\""
     },
     {
@@ -107,8 +107,8 @@
      "options": [
       "The price",
       "Whose law decides and in which country's court if the sides disagree",
-      "The delivery date",
-      "The currency"
+      "The currency",
+      "The delivery date"
      ],
      "answer": 1,
      "why": "\"whose law decides, and in which country's court?\""
@@ -116,12 +116,12 @@
     {
      "q": "Which three clauses does Charlotte say to read carefully every time?",
      "options": [
-      "Price and payment, delivery, and disputes",
       "Colour, size and weight",
       "Ship, port and truck",
+      "Price and payment, delivery, and disputes",
       "Name, date and address"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"price and payment, delivery, and disputes.\""
     }
    ]
@@ -133,11 +133,11 @@
      "q": "A **clause** is…",
      "options": [
       "a type of ship",
+      "a duty",
       "a part or section of a contract",
-      "a currency",
-      "a duty"
+      "a currency"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Clause = cláusula."
     },
     {
@@ -145,33 +145,43 @@
      "options": [
       "the celebrations",
       "the two sides who sign it",
-      "the banks",
-      "the ships"
+      "the ships",
+      "the banks"
      ],
      "answer": 1,
      "why": "Parties = partes (do contrato)."
     },
     {
      "q": "Choose the correct word: \"To **___** a contract means to break it.\"",
-     "options": ["breach", "sign", "read", "ship"],
+     "options": [
+      "breach",
+      "ship",
+      "sign",
+      "read"
+     ],
      "answer": 0,
      "why": "Breach = descumprir."
     },
     {
      "q": "**Governing law** is…",
      "options": [
-      "the price",
       "the legal system that applies to the contract",
+      "the currency",
       "the delivery date",
-      "the currency"
+      "the price"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Governing law = lei aplicável."
     },
     {
      "q": "Choose the correct word: \"Read it carefully before you **___**.\"",
-     "options": ["sign", "ship", "pay", "import"],
-     "answer": 0,
+     "options": [
+      "pay",
+      "ship",
+      "sign",
+      "import"
+     ],
+     "answer": 2,
      "why": "Sign = assinar."
     }
    ]
@@ -181,17 +191,22 @@
    "items": [
     {
      "q": "\"Let's **read through** the contract.\" To read through means to…",
-     "options": ["skip", "read from start to end", "sign", "hide"],
+     "options": [
+      "skip",
+      "read from start to end",
+      "hide",
+      "sign"
+     ],
      "answer": 1,
      "why": "Read through = ler do começo ao fim."
     },
     {
      "q": "\"An unclear clause is **asking for** an argument.\" To be asking for trouble means to…",
      "options": [
-      "avoid a problem",
+      "sign quickly",
       "likely cause a problem",
       "solve a problem",
-      "sign quickly"
+      "avoid a problem"
      ],
      "answer": 1,
      "why": "Asking for (trouble) = provocar/pedir problema."
@@ -199,23 +214,33 @@
     {
      "q": "\"If it's **silent on** that, we carry the cost.\" To be silent on something means to…",
      "options": [
-      "explain it clearly",
+      "ship it",
       "say nothing about it",
       "sign it",
-      "ship it"
+      "explain it clearly"
      ],
      "answer": 1,
      "why": "Silent on = omisso, sem mencionar."
     },
     {
      "q": "\"We don't want to **end up** in a foreign court.\" To end up means to…",
-     "options": ["start", "finish in a situation", "avoid", "sign"],
+     "options": [
+      "avoid",
+      "finish in a situation",
+      "start",
+      "sign"
+     ],
      "answer": 1,
      "why": "End up = acabar (numa situação)."
     },
     {
      "q": "\"Everything else is usually **standard**.\" Standard means…",
-     "options": ["unusual", "normal and expected", "wrong", "expensive"],
+     "options": [
+      "unusual",
+      "normal and expected",
+      "expensive",
+      "wrong"
+     ],
      "answer": 1,
      "why": "Standard = padrão, comum."
     }

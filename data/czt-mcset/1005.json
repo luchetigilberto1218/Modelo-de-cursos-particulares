@@ -11,9 +11,9 @@
      "q": "What does Sophie want to teach the new hire?",
      "options": [
       "The numbers from one to twenty",
-      "How to write emails",
       "The names of the team",
-      "How to use the coffee machine"
+      "How to use the coffee machine",
+      "How to write emails"
      ],
      "answer": 0,
      "why": "\"She wants to teach the numbers from one to twenty.\""
@@ -21,10 +21,10 @@
     {
      "q": "Where is HR?",
      "options": [
-      "In room twelve",
+      "On the first floor",
       "On the second floor",
-      "On extension seventeen",
-      "On the first floor"
+      "In room twelve",
+      "On extension seventeen"
      ],
      "answer": 1,
      "why": "\"HR is on the second floor.\""
@@ -32,21 +32,21 @@
     {
      "q": "What is the new hire's extension?",
      "options": [
-      "Twelve",
-      "Two",
+      "Twenty",
       "Seventeen",
-      "Twenty"
+      "Twelve",
+      "Two"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Your extension is seventeen,\" Sophie says."
     },
     {
      "q": "The new hire is a little nervous. What does this suggest?",
      "options": [
       "He is new and everything is fresh for him",
+      "He wants to go home",
       "He does not like Sophie",
-      "He already knows all the numbers",
-      "He wants to go home"
+      "He already knows all the numbers"
      ],
      "answer": 0,
      "why": "Inferência: ele é novo (new hire) e está aprendendo — por isso o nervosismo."
@@ -54,12 +54,12 @@
     {
      "q": "Sophie says \"English comes in CAN's, not in CAN'Ts.\" She most likely wants the new hire to feel…",
      "options": [
+      "bored with the job",
       "confident and positive",
       "afraid of numbers",
-      "bored with the job",
       "angry with HR"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: a frase é de encorajamento — \"você consegue\", então ela quer que ele se sinta confiante."
     }
    ]
@@ -77,45 +77,45 @@
     {
      "q": "What is the new hire's extension?",
      "options": [
-      "Seven",
       "Fifteen",
-      "Twenty",
-      "Four"
+      "Seven",
+      "Four",
+      "Twenty"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Your extension is fifteen. One, five.\""
     },
     {
      "q": "Where is the team meeting?",
      "options": [
-      "In room seven",
       "In room twenty",
+      "In room seven",
       "On floor three",
       "On floor two"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Our team meeting is today. It is in room twenty.\""
     },
     {
      "q": "HR is on which floor?",
      "options": [
-      "Floor two",
-      "Floor three",
+      "Floor fifteen",
       "Floor four",
-      "Floor fifteen"
+      "Floor three",
+      "Floor two"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"HR is on floor two.\""
     },
     {
      "q": "Sophie says to call her extension when the call is not for you. What does this suggest about her?",
      "options": [
-      "She wants to help the new hire",
-      "She does not like phones",
       "She is too busy to talk",
-      "She works on floor three"
+      "She wants to help the new hire",
+      "She works on floor three",
+      "She does not like phones"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ela se oferece para ajudar com as ligações, então quer apoiar o novo colega."
     },
     {
@@ -123,8 +123,8 @@
      "options": [
       "Friendly and calm",
       "Angry and fast",
-      "Sad and tired",
-      "Cold and formal"
+      "Cold and formal",
+      "Sad and tired"
      ],
      "answer": 0,
      "why": "Inferência: ela diz \"don't worry\", \"easy, right?\" e \"you can do it!\" — um tom amigável e tranquilo."
@@ -139,53 +139,53 @@
     {
      "q": "\"My <strong>extension</strong> is seventeen.\" An extension is…",
      "options": [
-      "your short phone number at work",
       "the name of your team",
+      "your short phone number at work",
       "the floor of the office",
       "a meeting room"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Extension = ramal: o número curto do seu telefone no trabalho."
     },
     {
      "q": "Choose the correct word: \"The meeting is in ___ twelve.\"",
      "options": [
-      "room",
-      "phone",
       "floor",
-      "page"
+      "room",
+      "page",
+      "phone"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Room = sala. A reunião acontece na sala doze."
     },
     {
      "q": "Choose the correct word: \"HR is on the second ___.\"",
      "options": [
-      "floor",
-      "number",
       "extension",
-      "desk"
+      "desk",
+      "floor",
+      "number"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Floor = andar. RH fica no segundo andar."
     },
     {
      "q": "\"The <strong>phone</strong> is on desk four.\" A phone is…",
      "options": [
-      "the thing you use to call people",
       "a small room",
       "a page in a book",
+      "the thing you use to call people",
       "a floor number"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Phone = telefone: o aparelho que você usa para ligar."
     },
     {
      "q": "Choose the correct word: \"My ___ is seven, so just dial seven.\"",
      "options": [
       "number",
-      "room",
       "floor",
+      "room",
       "page"
      ],
      "answer": 0,
@@ -203,8 +203,8 @@
      "options": [
       "answer the phone",
       "turn off the phone",
-      "drop the phone",
-      "buy a new phone"
+      "buy a new phone",
+      "drop the phone"
      ],
      "answer": 0,
      "why": "Pick up = atender o telefone."
@@ -212,20 +212,20 @@
     {
      "q": "\"Sorry, wrong number. I will <strong>hang up</strong> now.\" To hang up means to…",
      "options": [
-      "end the call",
-      "start the call",
       "call again",
-      "hold the phone"
+      "hold the phone",
+      "end the call",
+      "start the call"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Hang up = desligar o telefone, encerrar a ligação."
     },
     {
      "q": "\"She is busy now. Can you <strong>call back</strong> later?\" To call back means to…",
      "options": [
       "phone again later",
-      "come to the office",
       "send an email",
+      "come to the office",
       "wait in the room"
      ],
      "answer": 0,
@@ -234,23 +234,23 @@
     {
      "q": "\"One moment, please. I will <strong>put you through</strong> to HR.\" To put through means to…",
      "options": [
-      "connect the call to someone",
       "end the call now",
-      "write down the number",
-      "go to the second floor"
+      "go to the second floor",
+      "connect the call to someone",
+      "write down the number"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Put through = transferir/passar a ligação para outra pessoa."
     },
     {
      "q": "\"Please <strong>hold on</strong>, I will find the room number.\" To hold on means to…",
      "options": [
-      "wait a moment",
       "hang up now",
-      "speak louder",
-      "call back tomorrow"
+      "call back tomorrow",
+      "wait a moment",
+      "speak louder"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Hold on = espere um momento, aguarde na linha."
     }
    ]

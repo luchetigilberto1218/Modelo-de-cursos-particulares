@@ -8,38 +8,43 @@
     {
      "q": "What is managing risk in trade NOT about?",
      "options": [
-      "Seeing risk clearly",
       "Eliminating risk entirely",
+      "Seeing risk clearly",
       "Choosing which risks to carry",
       "Passing on some risks"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"not about eliminating it — that would mean eliminating the business.\""
     },
     {
      "q": "What three questions does a practical risk register ask?",
      "options": [
-      "Who, what and when",
       "How likely, how bad, and what do we do about it",
       "Cost, speed and route",
-      "Buyer, seller and bank"
+      "Buyer, seller and bank",
+      "Who, what and when"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"how likely is it, how bad would it be, and what do we do about it?\""
     },
     {
      "q": "How can credit risk be covered?",
-     "options": ["By hedging", "By credit insurance", "By watch lists", "By pricing it in"],
-     "answer": 1,
+     "options": [
+      "By pricing it in",
+      "By watch lists",
+      "By hedging",
+      "By credit insurance"
+     ],
+     "answer": 3,
      "why": "\"Credit risk can be covered by credit insurance.\""
     },
     {
      "q": "How is country risk monitored?",
      "options": [
-      "By credit insurance",
-      "With watch lists, and sometimes political risk insurance",
       "By hedging",
-      "By ignoring it"
+      "With watch lists, and sometimes political risk insurance",
+      "By ignoring it",
+      "By credit insurance"
      ],
      "answer": 1,
      "why": "\"Country risk can be monitored with watch lists and sometimes covered with political risk insurance.\""
@@ -47,12 +52,12 @@
     {
      "q": "\"The cheapest risk to manage is the one you thought about before it happened\" argues for…",
      "options": [
-      "reacting after problems",
       "anticipating risks in advance",
-      "avoiding all risk",
-      "buying more insurance"
+      "buying more insurance",
+      "reacting after problems",
+      "avoiding all risk"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: antecipar o risco custa menos do que remediar depois."
     }
    ]
@@ -67,56 +72,56 @@
     {
      "q": "How does Sophie want to approach the risk register?",
      "options": [
-      "Just list worries",
-      "Systematically — for each risk, how likely, how bad, and what to do",
       "Ignore small risks",
-      "Insure everything"
+      "Insure everything",
+      "Systematically — for each risk, how likely, how bad, and what to do",
+      "Just list worries"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I want to be systematic… three questions: how likely, how bad, and what we do about it.\""
     },
     {
      "q": "What is the action for credit risk on the three new customers?",
      "options": [
       "Hedge with forwards",
-      "Credit insurance until they've proven themselves",
       "Political risk insurance",
-      "Do nothing"
+      "Do nothing",
+      "Credit insurance until they've proven themselves"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the action is credit insurance on those three until they've proven themselves.\""
     },
     {
      "q": "What is the action for currency risk?",
      "options": [
-      "Credit insurance",
       "Hedge the large exposures with forwards, price a buffer into smaller ones",
-      "A watch list",
-      "Ignore it"
+      "Credit insurance",
+      "Ignore it",
+      "A watch list"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"hedge the large exposures with forwards and price a buffer into the smaller ones.\""
     },
     {
      "q": "How does Sophie handle country risk?",
      "options": [
+      "Hedges it",
       "Insures every contract",
-      "Monitors it weekly on a watch list; political risk insurance for the biggest contract",
       "Ignores it",
-      "Hedges it"
+      "Monitors it weekly on a watch list; political risk insurance for the biggest contract"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"we monitor it on a watch list weekly, and for the biggest contract, we look at political risk insurance.\""
     },
     {
      "q": "What does Sophie say the process achieves?",
      "options": [
-      "It eliminates all risk",
-      "If something goes wrong, they chose to carry it — they weren't surprised",
       "It guarantees payment",
-      "It removes the need for insurance"
+      "It removes the need for insurance",
+      "It eliminates all risk",
+      "If something goes wrong, they chose to carry it — they weren't surprised"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"if something goes wrong, we chose to carry it — we weren't surprised by it.\""
     }
    ]
@@ -128,31 +133,41 @@
      "q": "A **risk register** is…",
      "options": [
       "an insurance policy",
+      "a shipping document",
       "a structured list of risks, their likelihood, impact and actions",
-      "a bank account",
-      "a shipping document"
+      "a bank account"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Risk register = registro de riscos."
     },
     {
      "q": "**Likelihood** means…",
-     "options": ["how bad something is", "how probable something is", "the cost", "the insurance"],
-     "answer": 1,
+     "options": [
+      "how probable something is",
+      "how bad something is",
+      "the insurance",
+      "the cost"
+     ],
+     "answer": 0,
      "why": "Likelihood = probabilidade."
     },
     {
      "q": "Choose the correct word: \"We **___** the risk by buying credit insurance.\"",
-     "options": ["retain", "transfer", "ignore", "increase"],
+     "options": [
+      "increase",
+      "transfer",
+      "ignore",
+      "retain"
+     ],
      "answer": 1,
      "why": "Transfer risk = transferir o risco (para o segurador)."
     },
     {
      "q": "To **retain** a risk means to…",
      "options": [
-      "pass it on",
-      "keep and carry it yourself",
       "insure it",
+      "keep and carry it yourself",
+      "pass it on",
       "eliminate it"
      ],
      "answer": 1,
@@ -160,7 +175,12 @@
     },
     {
      "q": "Choose the correct term: \"We **___** the country risk on a weekly basis.\"",
-     "options": ["monitor", "transfer", "retain", "hedge"],
+     "options": [
+      "monitor",
+      "retain",
+      "hedge",
+      "transfer"
+     ],
      "answer": 0,
      "why": "To monitor = monitorar."
     }
@@ -171,37 +191,57 @@
    "items": [
     {
      "q": "\"We'll **keep an eye on** the political situation.\" To keep an eye on means to…",
-     "options": ["ignore", "watch closely", "insure", "transfer"],
-     "answer": 1,
+     "options": [
+      "transfer",
+      "ignore",
+      "insure",
+      "watch closely"
+     ],
+     "answer": 3,
      "why": "Keep an eye on = ficar de olho."
     },
     {
      "q": "\"Let's **pass on** the credit risk to an insurer.\" To pass on means to…",
-     "options": ["keep", "transfer to someone else", "eliminate", "double"],
-     "answer": 1,
+     "options": [
+      "keep",
+      "double",
+      "transfer to someone else",
+      "eliminate"
+     ],
+     "answer": 2,
      "why": "Pass on = repassar, transferir."
     },
     {
      "q": "\"We don't want to **be caught off guard**.\" To be caught off guard means to…",
-     "options": ["be prepared", "be surprised by something", "be insured", "be late"],
-     "answer": 1,
+     "options": [
+      "be surprised by something",
+      "be prepared",
+      "be insured",
+      "be late"
+     ],
+     "answer": 0,
      "why": "Caught off guard = pego de surpresa."
     },
     {
      "q": "\"That risk we'll **take on** ourselves.\" To take on a risk means to…",
-     "options": ["avoid it", "accept and carry it", "insure it", "ignore it"],
-     "answer": 1,
+     "options": [
+      "ignore it",
+      "avoid it",
+      "insure it",
+      "accept and carry it"
+     ],
+     "answer": 3,
      "why": "Take on = assumir."
     },
     {
      "q": "\"Let's **factor in** the currency risk.\" To factor in means to…",
      "options": [
-      "include it in your planning",
       "remove it",
+      "include it in your planning",
       "ignore it",
       "insure it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Factor in = levar em conta."
     }
    ]

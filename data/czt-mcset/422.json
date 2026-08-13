@@ -10,56 +10,56 @@
     {
      "q": "What is income tax paid on?",
      "options": [
-      "What a person earns from work",
       "A company's profit",
+      "A family's savings",
       "The price of a car",
-      "A family's savings"
+      "What a person earns from work"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Income tax is paid on what a person earns from work.\""
     },
     {
      "q": "Where does sales tax \"sit\"?",
      "options": [
+      "In your salary",
       "In the company's profit",
       "Inside the shop price",
-      "In your salary",
       "In the bank"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Sales tax sits inside the shop price.\""
     },
     {
      "q": "Corporate tax is calculated from…",
      "options": [
-      "your salary",
-      "the shop price",
+      "the number of workers",
       "business profit",
-      "the number of workers"
+      "the shop price",
+      "your salary"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Corporate tax is calculated from business profit.\""
     },
     {
      "q": "The text says you pay sales tax \"without really noticing.\" This suggests that…",
      "options": [
-      "sales tax is illegal",
       "many people do not see the tax when they buy things",
       "shops do not pay any tax",
+      "sales tax is illegal",
       "sales tax is bigger than income tax"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o imposto já está dentro do preço, então o cliente paga sem perceber."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "all three taxes are exactly the same",
       "different taxes are paid on different things",
+      "taxes are never added to prices",
       "only companies pay taxes",
-      "taxes are never added to prices"
+      "all three taxes are exactly the same"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto todo mostra que cada imposto incide sobre uma coisa diferente."
     }
    ]
@@ -78,30 +78,30 @@
      "q": "How many main taxes does Harry explain?",
      "options": [
       "Two",
-      "Three",
       "Four",
+      "Three",
       "Five"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Let me show you the three main taxes.\""
     },
     {
      "q": "According to Harry, who pays corporate tax?",
      "options": [
-      "The intern",
       "The company",
-      "The shop customer",
-      "The bank"
+      "The bank",
+      "The intern",
+      "The shop customer"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"This one is for the company, not for you.\""
     },
     {
      "q": "What does Harry say about sales tax in a shop?",
      "options": [
       "It is already inside the price",
-      "You pay it later at the bank",
       "Only companies pay it",
+      "You pay it later at the bank",
       "It is added to your salary"
      ],
      "answer": 0,
@@ -110,23 +110,23 @@
     {
      "q": "Harry says \"It is easy, I promise.\" This suggests that he…",
      "options": [
-      "thinks the intern will fail",
-      "wants the intern to feel calm about the topic",
       "does not like taxes",
-      "is in a hurry to leave"
+      "is in a hurry to leave",
+      "thinks the intern will fail",
+      "wants the intern to feel calm about the topic"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: ele quer tranquilizar o estagiário, mostrando que o assunto é simples."
     },
     {
      "q": "Why does Harry repeat the three questions at the end?",
      "options": [
+      "Because the intern was not listening",
       "To help the intern remember the three taxes",
-      "Because he forgot the answer",
       "To sell a product",
-      "Because the intern was not listening"
+      "Because he forgot the answer"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: repetir as três perguntas é uma forma de ajudar na memorização."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"She pays <strong>income tax</strong> every month.\" Income tax is a tax on…",
      "options": [
-      "what a person earns",
-      "the price of food",
       "a company's building",
+      "the price of food",
+      "what a person earns",
       "money in the bank"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Income tax = imposto de renda, pago sobre o que a pessoa ganha."
     },
     {
      "q": "Choose the correct word: \"The company made a big ___ this year, so it pays more corporate tax.\"",
      "options": [
-      "salary",
-      "profit",
       "shop",
-      "price"
+      "salary",
+      "price",
+      "profit"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Profit = lucro; o imposto corporativo incide sobre o lucro."
     },
     {
      "q": "\"He gets his <strong>salary</strong> on the first day of the month.\" A salary is…",
      "options": [
+      "a company's tax",
       "the money you get from work",
       "the price of a product",
-      "a company's tax",
       "a bank account"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Salary = salário, o dinheiro que se recebe pelo trabalho."
     },
     {
      "q": "Choose the correct word: \"The ___ of the coffee is ten dollars, and the sales tax is already inside it.\"",
      "options": [
-      "profit",
       "salary",
       "price",
-      "income"
+      "income",
+      "profit"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Price = preço; o imposto sobre vendas já está dentro do preço."
     },
     {
      "q": "\"You pay VAT but you often do not <strong>notice</strong> it.\" To notice means to…",
      "options": [
-      "pay again",
-      "see or become aware of something",
       "buy something",
-      "sell something"
+      "sell something",
+      "pay again",
+      "see or become aware of something"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "To notice = perceber, dar-se conta de algo."
     }
    ]
@@ -202,9 +202,9 @@
      "q": "\"The manager has to <strong>sign off on</strong> the tax report.\" To sign off on means to…",
      "options": [
       "approve it",
-      "throw it away",
       "print it",
-      "translate it"
+      "translate it",
+      "throw it away"
      ],
      "answer": 0,
      "why": "Sign off on = aprovar, dar o aval final."
@@ -212,21 +212,21 @@
     {
      "q": "\"We will <strong>roll out</strong> the new tax rules next month.\" To roll out means to…",
      "options": [
-      "cancel",
-      "start to use something new",
       "hide",
-      "count"
+      "cancel",
+      "count",
+      "start to use something new"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Roll out = lançar, começar a usar algo novo."
     },
     {
      "q": "\"I need to <strong>fill out</strong> the tax form.\" To fill out means to…",
      "options": [
-      "read it fast",
+      "sell it",
       "write the information on it",
       "lose it",
-      "sell it"
+      "read it fast"
      ],
      "answer": 1,
      "why": "Fill out = preencher um formulário."
@@ -234,23 +234,23 @@
     {
      "q": "\"Let me <strong>break it down</strong> for the new intern.\" To break it down means to…",
      "options": [
-      "explain it in simple parts",
-      "make it harder",
       "pay for it",
-      "forget it"
+      "forget it",
+      "explain it in simple parts",
+      "make it harder"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Break it down = explicar em partes simples."
     },
     {
      "q": "\"Please <strong>keep track of</strong> your work expenses.\" To keep track of means to…",
      "options": [
-      "watch and record them",
       "give them away",
+      "watch and record them",
       "hide them",
       "spend more"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Keep track of = acompanhar, controlar e registrar algo."
     }
    ]

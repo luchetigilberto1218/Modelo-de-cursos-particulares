@@ -10,56 +10,56 @@
     {
      "q": "According to the text, what is the real value of accounting?",
      "options": [
-      "Helping leaders make better decisions",
-      "Printing many long reports",
       "Cutting all costs to zero",
-      "Hiring more analysts"
+      "Hiring more analysts",
+      "Helping leaders make better decisions",
+      "Printing many long reports"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Its real value is helping leaders make better decisions.\""
     },
     {
      "q": "Which team uses margin analysis to choose contracts?",
      "options": [
-      "The operations team",
       "The trading team",
       "The CEO",
-      "The freight team"
+      "The freight team",
+      "The operations team"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The trading team uses margin analysis to choose which contracts to pursue.\""
     },
     {
      "q": "What do the best analysts do, according to the text?",
      "options": [
+      "Send fewer reports",
       "Only show the numbers",
-      "Explain what the numbers mean and what to do next",
       "Hide the numbers from managers",
-      "Send fewer reports"
+      "Explain what the numbers mean and what to do next"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"They explain what the numbers mean, what changed, and what the business should do next.\""
     },
     {
      "q": "The text suggests that numbers alone are…",
      "options": [
       "enough for a good decision",
-      "not very useful without a clear explanation",
+      "only for the CEO",
       "always wrong",
-      "only for the CEO"
+      "not very useful without a clear explanation"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto diz que os melhores analistas explicam os números — só os números não bastam."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
+      "Analysts should say what to do next.",
       "Reports should help people decide.",
-      "Accounting is just about producing reports.",
       "Good numbers show where costs are too high.",
-      "Analysts should say what to do next."
+      "Accounting is just about producing reports."
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto começa dizendo que contabilidade NÃO é só produzir relatórios."
     }
    ]
@@ -77,32 +77,32 @@
     {
      "q": "How has James organised last quarter's P&L?",
      "options": [
-      "By month",
-      "By product line",
+      "By customer age",
       "By country",
-      "By customer age"
+      "By product line",
+      "By month"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"This is last quarter's P&L, and I have split it by product line.\""
     },
     {
      "q": "Why does James want to invest in sugar next quarter?",
      "options": [
-      "It is cheap to produce",
       "It is growing fast and the margin is strong",
+      "It has the weakest margin",
       "The CEO ordered it",
-      "It has the weakest margin"
+      "It is cheap to produce"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Sugar is growing fast, and the margin is strong. So this is where we should invest.\""
     },
     {
      "q": "What does James suggest when a product has a very thin margin?",
      "options": [
       "Ask whether to raise prices or cut costs",
-      "Send more reports",
       "Hire more analysts",
-      "Push the product harder"
+      "Push the product harder",
+      "Send more reports"
      ],
      "answer": 0,
      "why": "\"do we raise prices, or do we cut costs? If we can do neither, maybe we should stop.\""
@@ -110,23 +110,23 @@
     {
      "q": "Why does James want to keep the small, quiet customer?",
      "options": [
+      "The client is new",
       "The client buys the most",
       "The client always pays on time",
-      "The client is new",
       "The client pushes sugar"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"this client pays on time, every time. So we keep them.\" — um cliente seguro vale muito."
     },
     {
      "q": "What does James mean by \"the numbers do not decide for you\"?",
      "options": [
-      "The person must make the decision, not the report",
-      "The numbers are always wrong",
       "Only the CEO can decide",
-      "You should ignore the P&L"
+      "You should ignore the P&L",
+      "The numbers are always wrong",
+      "The person must make the decision, not the report"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: o relatório mostra onde olhar, mas a decisão é da pessoa — boas perguntas fazem os números falarem."
     }
    ]
@@ -140,9 +140,9 @@
      "q": "\"We use <strong>financial analysis</strong> to plan next year.\" Financial analysis means…",
      "options": [
       "studying the numbers to make better choices",
-      "printing invoices",
       "paying the staff",
-      "cleaning the office"
+      "cleaning the office",
+      "printing invoices"
      ],
      "answer": 0,
      "why": "Financial analysis = análise financeira: estudar os números para decidir melhor."
@@ -151,44 +151,44 @@
      "q": "Choose the correct word: \"Sugar and coffee are two different ___ in our business.\"",
      "options": [
       "reports",
-      "product lines",
       "prices",
+      "product lines",
       "customers"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Product line = linha de produtos; açúcar e café são duas linhas diferentes."
     },
     {
      "q": "\"This plan is <strong>realistic</strong>.\" Realistic means…",
      "options": [
-      "possible and sensible",
       "very expensive",
-      "very old",
-      "impossible"
+      "impossible",
+      "possible and sensible",
+      "very old"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Realistic = realista: possível e sensato, com os pés no chão."
     },
     {
      "q": "Choose the correct word: \"The margin is strong, so we want to ___ this product next quarter.\"",
      "options": [
+      "stop",
       "push",
-      "close",
       "hide",
-      "stop"
+      "close"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "To push a product = impulsionar, investir mais nele."
     },
     {
      "q": "\"The small account looks <strong>silent</strong>, but it is safe.\" Here silent means…",
      "options": [
-      "quiet, without much attention",
       "very loud",
-      "very risky",
-      "brand new"
+      "brand new",
+      "quiet, without much attention",
+      "very risky"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Silent = silencioso; aqui, uma conta discreta que não chama atenção."
     }
    ]
@@ -201,32 +201,32 @@
     {
      "q": "\"The CEO has to <strong>sign off on</strong> the budget.\" To sign off on means to…",
      "options": [
-      "formally approve",
-      "quietly ignore",
       "print again",
-      "delay for a year"
+      "quietly ignore",
+      "delay for a year",
+      "formally approve"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new report to every desk.\" To roll out means to…",
      "options": [
-      "cancel it",
-      "start using it step by step",
+      "sell it",
       "hide it",
-      "sell it"
+      "start using it step by step",
+      "cancel it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Roll out = implementar de forma progressiva."
     },
     {
      "q": "\"Two managers <strong>pushed back on</strong> the new prices.\" They…",
      "options": [
-      "agreed at once",
+      "left the room",
       "resisted or disagreed",
       "paid more",
-      "left the room"
+      "agreed at once"
      ],
      "answer": 1,
      "why": "Push back on = resistir, discordar."
@@ -234,21 +234,21 @@
     {
      "q": "\"We agreed the plan, but nobody <strong>followed through</strong>.\" They…",
      "options": [
-      "did not finish what was agreed",
       "finished early",
       "wrote it down",
-      "changed the price"
+      "changed the price",
+      "did not finish what was agreed"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"This small change will not <strong>move the needle</strong> on profit.\" It means it will…",
      "options": [
       "make no real difference",
-      "cost too much",
       "take a long time",
-      "make people angry"
+      "make people angry",
+      "cost too much"
      ],
      "answer": 0,
      "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."

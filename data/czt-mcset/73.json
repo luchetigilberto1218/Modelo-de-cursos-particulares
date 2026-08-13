@@ -8,56 +8,56 @@
     {
      "q": "What are the three parts of a short business report?",
      "options": [
-      "Situation, facts, and recommendation",
-      "Start, middle, end",
       "Buy, sell, pay",
-      "Hello, reason, goodbye"
+      "Hello, reason, goodbye",
+      "Situation, facts, and recommendation",
+      "Start, middle, end"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"situation, facts, and recommendation.\""
     },
     {
      "q": "What do you do first?",
      "options": [
       "Give the recommendation",
+      "Say goodbye",
       "Describe the situation in one or two sentences",
-      "List all numbers",
-      "Say goodbye"
+      "List all numbers"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"First, describe the situation in one or two sentences.\""
     },
     {
      "q": "What is the last part?",
      "options": [
-      "The situation",
       "What you think we should do next",
+      "The facts",
       "The greeting",
-      "The facts"
+      "The situation"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Finally, say what you think we should do next.\""
     },
     {
      "q": "What kind of words and sentences should you use?",
      "options": [
-      "Long and complex",
-      "Simple words, short sentences, small numbers",
+      "Only big words",
       "No words",
-      "Only big words"
+      "Simple words, short sentences, small numbers",
+      "Long and complex"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Use simple words, short sentences, and small numbers.\""
     },
     {
      "q": "When is your report a success?",
      "options": [
+      "When nobody reads it",
       "When it takes an hour to read",
       "When the reader finishes in two minutes with the right information",
-      "When it is very long",
-      "When nobody reads it"
+      "When it is very long"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"If the reader finishes in two minutes with the right information, your report is a success.\""
     }
    ]
@@ -72,23 +72,23 @@
     {
      "q": "What is the report about?",
      "options": [
-      "Sales numbers",
       "Client satisfaction",
+      "The weather",
       "A new office",
-      "The weather"
+      "Sales numbers"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"a one-page report on client satisfaction.\""
     },
     {
      "q": "What is the situation (part one)?",
      "options": [
+      "They lost money",
       "They asked their top twenty clients how happy they are",
       "They fired a client",
-      "They opened a new office",
-      "They lost money"
+      "They opened a new office"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"We asked our top twenty clients how happy they are with us.\""
     },
     {
@@ -96,8 +96,8 @@
      "options": [
       "All clients are unhappy",
       "Eighteen of twenty are happy; the two unhappy ones mentioned slow email replies",
-      "No clients replied",
-      "Sales fell"
+      "Sales fell",
+      "No clients replied"
      ],
      "answer": 1,
      "why": "\"Eighteen of twenty clients are happy… The two unhappy clients both mentioned… slow replies to emails.\""
@@ -105,20 +105,20 @@
     {
      "q": "What is the recommendation?",
      "options": [
-      "Hire more staff",
       "Reply to every client email within one working day",
+      "Hire more staff",
       "Raise prices",
       "Do nothing"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"reply to every client email within one working day.\""
     },
     {
      "q": "What makes it a report that gets read?",
      "options": [
-      "Long story and big words",
-      "Short sentences, small numbers, clear next step",
       "Many pages",
+      "Short sentences, small numbers, clear next step",
+      "Long story and big words",
       "No structure"
      ],
      "answer": 1,
@@ -132,46 +132,56 @@
     {
      "q": "The **situation** part of a report…",
      "options": [
-      "gives the recommendation",
-      "describes what is happening",
       "lists the greeting",
-      "says goodbye"
+      "gives the recommendation",
+      "says goodbye",
+      "describes what is happening"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Situation = situação."
     },
     {
      "q": "A **recommendation** is…",
      "options": [
       "a fact",
-      "what you think should be done",
+      "a number",
       "a greeting",
-      "a number"
+      "what you think should be done"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Recommendation = recomendação."
     },
     {
      "q": "Choose the correct word: \"Let me **___** the situation in one sentence.\"",
-     "options": ["describe", "ignore", "cancel", "ship"],
-     "answer": 0,
+     "options": [
+      "cancel",
+      "ship",
+      "describe",
+      "ignore"
+     ],
+     "answer": 2,
      "why": "Describe = descrever."
     },
     {
      "q": "To **summarise** means to…",
      "options": [
-      "make longer",
       "give the main points shortly",
+      "repeat everything",
       "delete",
-      "repeat everything"
+      "make longer"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Summarise = resumir."
     },
     {
      "q": "Choose the correct word: \"A good report is short and **___**.\"",
-     "options": ["clear", "confusing", "long", "empty"],
-     "answer": 0,
+     "options": [
+      "confusing",
+      "long",
+      "clear",
+      "empty"
+     ],
+     "answer": 2,
      "why": "Clear = claro."
     }
    ]
@@ -181,31 +191,56 @@
    "items": [
     {
      "q": "\"A report that **gets read**.\" To get read means…",
-     "options": ["nobody reads it", "people actually read it", "it is lost", "it is long"],
-     "answer": 1,
+     "options": [
+      "people actually read it",
+      "it is long",
+      "it is lost",
+      "nobody reads it"
+     ],
+     "answer": 0,
      "why": "Gets read = é de fato lido."
     },
     {
      "q": "\"Let's **cut it down** to one page.\" To cut down means to…",
-     "options": ["make longer", "make shorter", "delete all", "repeat"],
-     "answer": 1,
+     "options": [
+      "make shorter",
+      "make longer",
+      "delete all",
+      "repeat"
+     ],
+     "answer": 0,
      "why": "Cut down = reduzir."
     },
     {
      "q": "\"Get **to the point**.\" To get to the point means to…",
-     "options": ["say the main thing directly", "add stories", "delay", "stop"],
-     "answer": 0,
+     "options": [
+      "add stories",
+      "say the main thing directly",
+      "delay",
+      "stop"
+     ],
+     "answer": 1,
      "why": "To the point = direto ao assunto."
     },
     {
      "q": "\"The two unhappy clients **mentioned the same thing**.\" To mention means to…",
-     "options": ["hide", "say briefly", "shout", "write a book"],
+     "options": [
+      "shout",
+      "say briefly",
+      "write a book",
+      "hide"
+     ],
      "answer": 1,
      "why": "Mention = mencionar."
     },
     {
      "q": "\"That should **fix the main complaint**.\" A complaint is…",
-     "options": ["a compliment", "a statement that something is wrong", "a thank you", "a report"],
+     "options": [
+      "a compliment",
+      "a statement that something is wrong",
+      "a report",
+      "a thank you"
+     ],
      "answer": 1,
      "why": "Complaint = reclamação."
     }

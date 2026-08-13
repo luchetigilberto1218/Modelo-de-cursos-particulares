@@ -10,52 +10,52 @@
     {
      "q": "What do short breaks help us have?",
      "options": [
+      "Long meetings",
       "Good ideas",
       "More money",
-      "New rules",
-      "Long meetings"
+      "New rules"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Short breaks help us have good ideas.\""
     },
     {
      "q": "Which word do we count, one or two?",
      "options": [
-      "Water",
-      "Coffee",
       "Sandwich",
-      "Tea"
+      "Coffee",
+      "Tea",
+      "Water"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"a sandwich or two sandwiches\" — sandwich é contável."
     },
     {
      "q": "How many useful words do we learn today?",
      "options": [
-      "Three",
-      "Five",
       "Ten",
-      "Two"
+      "Two",
+      "Five",
+      "Three"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Today we learn five useful words.\""
     },
     {
      "q": "The text suggests that the writer wants you to feel…",
      "options": [
-      "Relaxed and confident",
-      "Worried and fast",
       "Angry and tired",
-      "Bored and sad"
+      "Bored and sad",
+      "Worried and fast",
+      "Relaxed and confident"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"Take your time — every sentence counts.\" O tom é calmo e apoiador."
     },
     {
      "q": "The writer would most likely DISAGREE with which idea?",
      "options": [
-      "Breaks are good for us",
       "You can count sandwiches",
+      "Breaks are good for us",
       "Breaks are a waste of time",
       "Coffee and tea help a long day"
      ],
@@ -77,56 +77,56 @@
     {
      "q": "Where is Emma talking to you?",
      "options": [
-      "In the kitchen",
       "In a car",
       "In a shop",
-      "At home"
+      "At home",
+      "In the kitchen"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"This is the kitchen.\""
     },
     {
      "q": "When does Emma drink coffee?",
      "options": [
-      "At noon",
-      "Every morning",
+      "At night",
       "In the afternoon",
-      "At night"
+      "Every morning",
+      "At noon"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I drink coffee every morning.\""
     },
     {
      "q": "What can you take for lunch?",
      "options": [
-      "A sandwich",
-      "A cake",
       "An apple",
-      "A pizza"
+      "A sandwich",
+      "A pizza",
+      "A cake"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"You can take a sandwich for lunch.\""
     },
     {
      "q": "Emma suggests that breaks are…",
      "options": [
-      "A problem for the team",
-      "Good and helpful",
+      "Not allowed at work",
       "Only for the morning",
-      "Not allowed at work"
+      "Good and helpful",
+      "A problem for the team"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"Short breaks help us… I feel good and I work well.\""
     },
     {
      "q": "How does Emma feel about you being there?",
      "options": [
+      "Sad and quiet",
       "Friendly and welcoming",
-      "Angry and tired",
       "Busy and cold",
-      "Sad and quiet"
+      "Angry and tired"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ela convida a sentar, comer e descansar — tom acolhedor."
     }
    ]
@@ -140,9 +140,9 @@
      "q": "\"Can I have some <strong>water</strong>, please?\" <strong>Water</strong> is…",
      "options": [
       "água",
+      "sanduíche",
       "café",
-      "chá",
-      "sanduíche"
+      "chá"
      ],
      "answer": 0,
      "why": "Water = água."
@@ -151,9 +151,9 @@
      "q": "Choose the correct word: \"I have a ___ for lunch.\"",
      "options": [
       "sandwich",
-      "water",
       "coffee",
-      "tea"
+      "tea",
+      "water"
      ],
      "answer": 0,
      "why": "Sandwich é contável, então usamos \"a sandwich\"."
@@ -161,12 +161,12 @@
     {
      "q": "\"She likes <strong>tea</strong> in the afternoon.\" <strong>Tea</strong> is…",
      "options": [
-      "chá",
-      "almoço",
       "água",
-      "café"
+      "almoço",
+      "café",
+      "chá"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Tea = chá."
     },
     {
@@ -174,8 +174,8 @@
      "options": [
       "coffee",
       "sandwich",
-      "lunch",
-      "table"
+      "table",
+      "lunch"
      ],
      "answer": 0,
      "why": "Coffee é incontável; combina com \"some\" e com \"hot in the pot\"."
@@ -185,8 +185,8 @@
      "options": [
       "almoço",
       "café da manhã",
-      "jantar",
-      "pausa"
+      "pausa",
+      "jantar"
      ],
      "answer": 0,
      "why": "Lunch = almoço."
@@ -212,32 +212,32 @@
     {
      "q": "\"Let's <strong>take a break</strong> for ten minutes.\" To take a break means to…",
      "options": [
-      "stop and rest",
+      "go home",
       "work faster",
       "start a meeting",
-      "go home"
+      "stop and rest"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Take a break = fazer uma pausa, descansar um pouco."
     },
     {
      "q": "\"Do you want to <strong>grab a coffee</strong>?\" This means…",
      "options": [
-      "get a coffee",
       "clean the cup",
-      "make lunch",
-      "drink water"
+      "drink water",
+      "get a coffee",
+      "make lunch"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Grab a coffee = pegar/tomar um café, jeito informal."
     },
     {
      "q": "\"Let's <strong>have lunch together</strong> today.\" This means…",
      "options": [
       "eat lunch as a group",
-      "skip lunch",
+      "work through lunch",
       "cook at home",
-      "work through lunch"
+      "skip lunch"
      ],
      "answer": 0,
      "why": "Have lunch together = almoçar juntos."
@@ -245,12 +245,12 @@
     {
      "q": "\"<strong>Would you like</strong> some tea?\" This is a polite way to…",
      "options": [
-      "offer something",
       "say no",
+      "offer something",
       "ask for help",
       "end the talk"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Would you like…? = jeito educado de oferecer algo."
     }
    ]

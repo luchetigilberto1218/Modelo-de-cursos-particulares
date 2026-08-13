@@ -11,9 +11,9 @@
      "q": "What does on-premise mean?",
      "options": [
       "You keep the servers inside your own building",
-      "You rent the servers from a provider",
+      "You share the servers with other companies",
       "You do not use servers at all",
-      "You share the servers with other companies"
+      "You rent the servers from a provider"
      ],
      "answer": 0,
      "why": "\"On-premise means you keep the servers inside your own building.\""
@@ -21,21 +21,21 @@
     {
      "q": "With cloud, what do you do with the capacity?",
      "options": [
-      "You buy it",
       "You rent it from a provider",
-      "You build it yourself",
-      "You sell it to clients"
+      "You buy it",
+      "You sell it to clients",
+      "You build it yourself"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Cloud... You rent the same capacity from a provider.\""
     },
     {
      "q": "What do most companies do today?",
      "options": [
       "They use only cloud",
-      "They use only on-premise",
+      "They use no servers",
       "They use a mix of both",
-      "They use no servers"
+      "They use only on-premise"
      ],
      "answer": 2,
      "why": "\"Most companies today use a mix.\""
@@ -43,12 +43,12 @@
     {
      "q": "The text suggests that on-premise is best for…",
      "options": [
+      "very small budgets",
       "the everyday systems",
       "the most sensitive systems",
-      "companies with no IT staff",
-      "very small budgets"
+      "companies with no IT staff"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: a empresa mantém \"the most sensitive systems on-premise\" — logo, é a melhor opção para eles."
     },
     {
@@ -77,56 +77,56 @@
     {
      "q": "Where does the company keep its sensitive customer data?",
      "options": [
+      "On the employees' laptops",
       "In the cloud",
       "On-premise, in its own building",
-      "At the provider's office",
-      "On the employees' laptops"
+      "At the provider's office"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"We keep our most sensitive customer data on-premise... the servers are here, in our own building.\""
     },
     {
      "q": "What does the company move to the cloud?",
      "options": [
       "The customer data",
+      "Nothing at all",
       "Email, shared files and everyday tools",
-      "The whole company",
-      "Nothing at all"
+      "The whole company"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Email, our shared files, the small everyday tools — all of that we rent from a provider.\""
     },
     {
      "q": "Why does Harry say the cloud is a good choice for everyday systems?",
      "options": [
-      "It gives full control",
       "It is cheaper and easier, and grows with the company",
+      "It gives full control",
       "It never needs a provider",
       "It keeps the data more private"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"It is cheaper and much easier. When we grow, the cloud grows with us.\""
     },
     {
      "q": "Harry suggests that on-premise…",
      "options": [
-      "needs more work than the cloud",
-      "is always cheaper",
+      "is used for everyday tools",
       "does not need any servers",
-      "is used for everyday tools"
+      "is always cheaper",
+      "needs more work than the cloud"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: ele diz \"on-premise asks for more work. We maintain the servers, and we replace them.\""
     },
     {
      "q": "How would you best describe Harry's tone with the new joiner?",
      "options": [
-      "Impatient and cold",
       "Friendly and helpful",
+      "Impatient and cold",
       "Angry about the servers",
       "Bored and tired"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ele dá boas-vindas e diz \"just ask me. Nobody understands all of this on day one.\" — é acolhedor."
     }
    ]
@@ -139,45 +139,45 @@
     {
      "q": "\"We keep our servers <strong>on-premise</strong>.\" On-premise means…",
      "options": [
-      "in your own building",
-      "in another country",
       "on the internet",
+      "in another country",
+      "in your own building",
       "at the client's office"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "On-premise = no próprio local, dentro do seu prédio."
     },
     {
      "q": "Choose the correct word: \"When a server breaks, we ___ it with a new one.\"",
      "options": [
-      "maintain",
-      "replace",
       "rent",
-      "share"
+      "maintain",
+      "share",
+      "replace"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "To replace = substituir; trocar o antigo por um novo."
     },
     {
      "q": "\"The cloud can grow with us because it has more <strong>capacity</strong>.\" Capacity means…",
      "options": [
-      "how much it can hold or do",
       "how old it is",
+      "who owns it",
       "how much it costs",
-      "who owns it"
+      "how much it can hold or do"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Capacity = capacidade; quanto ele consegue armazenar ou processar."
     },
     {
      "q": "Choose the correct word: \"Cloud is easy, but it creates a ___ on the provider.\"",
      "options": [
+      "mix",
       "convenience",
       "dependency",
-      "capacity",
-      "mix"
+      "capacity"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Dependency = dependência; você passa a depender do provedor."
     },
     {
@@ -201,45 +201,45 @@
     {
      "q": "\"We plan to <strong>roll out</strong> the new cloud system next month.\" To roll out means to…",
      "options": [
-      "start using it, step by step",
       "cancel it",
       "hide it from the team",
+      "start using it, step by step",
       "sell it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Roll out = implementar, colocar em uso aos poucos."
     },
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the budget.\" To sign off on means to…",
      "options": [
+      "delay",
       "formally approve",
       "read quickly",
-      "delay",
       "delete"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"The IT team <strong>pushed back on</strong> the plan.\" They…",
      "options": [
-      "agreed at once",
       "resisted or disagreed",
+      "agreed at once",
       "forgot about it",
       "copied it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Push back on = resistir, discordar."
     },
     {
      "q": "\"We must <strong>back up</strong> the customer data every night.\" To back up means to…",
      "options": [
+      "move to the office",
       "save an extra copy",
       "delete the files",
-      "move to the office",
       "print the data"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Back up = fazer uma cópia de segurança dos dados."
     },
     {

@@ -9,20 +9,20 @@
      "q": "How does a documentary collection compare with a letter of credit?",
      "options": [
       "It is more complex",
+      "It is identical",
       "It is simpler, but asks more from the two sides",
-      "It guarantees payment",
-      "It is identical"
+      "It guarantees payment"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"a documentary collection is a simpler animal than a letter of credit, but it asks more from the two sides.\""
     },
     {
      "q": "What does the bank NOT do in a collection?",
      "options": [
-      "Send the documents",
+      "Charge fees",
       "Guarantee payment",
-      "Handle paperwork",
-      "Charge fees"
+      "Send the documents",
+      "Handle paperwork"
      ],
      "answer": 1,
      "why": "\"The bank sends the documents, but it does not guarantee payment.\""
@@ -31,20 +31,20 @@
      "q": "Why do teams used to LCs find collections refreshing?",
      "options": [
       "More paperwork",
-      "Less paperwork, fewer fees, faster cycles",
       "Guaranteed payment",
+      "Less paperwork, fewer fees, faster cycles",
       "Higher fees"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"less paperwork, fewer fees, faster cycles.\""
     },
     {
      "q": "What is the risk if a buyer decides not to pay?",
      "options": [
-      "The bank covers the loss",
-      "The seller is left with goods stuck at the destination port",
       "Nothing happens",
-      "The buyer pays a fine"
+      "The seller is left with goods stuck at the destination port",
+      "The buyer pays a fine",
+      "The bank covers the loss"
      ],
      "answer": 1,
      "why": "\"can leave the seller with goods stuck at the destination port.\""
@@ -53,11 +53,11 @@
      "q": "When do collections work well?",
      "options": [
       "With anyone",
-      "With trusted partners",
       "Only with new buyers",
-      "Only with banks"
+      "Only with banks",
+      "With trusted partners"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Collections work beautifully with trusted partners — and poorly with anyone else.\""
     }
    ]
@@ -72,10 +72,10 @@
     {
      "q": "Why does a collection make sense for this buyer?",
      "options": [
-      "The buyer is new",
-      "It's a long-term buyer they trust completely",
       "The bank guarantees it",
-      "It is the cheapest"
+      "It's a long-term buyer they trust completely",
+      "It is the cheapest",
+      "The buyer is new"
      ],
      "answer": 1,
      "why": "\"our long-term buyer in France — someone we've dealt with for years and trust completely.\""
@@ -84,44 +84,44 @@
      "q": "What type of collection does Emily choose?",
      "options": [
       "Documents against payment",
-      "Documents against acceptance (D/A)",
       "A letter of credit",
-      "Cash in advance"
+      "Cash in advance",
+      "Documents against acceptance (D/A)"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"we'll use documents against acceptance — D/A.\""
     },
     {
      "q": "What does D/A mean for the buyer here?",
      "options": [
-      "They pay immediately",
-      "They get the documents in exchange for a signed promise to pay in sixty days",
+      "They get nothing until payment",
       "They pay the bank first",
-      "They get nothing until payment"
+      "They get the documents in exchange for a signed promise to pay in sixty days",
+      "They pay immediately"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"the buyer gets the documents… in exchange for a signed promise to pay in sixty days.\""
     },
     {
      "q": "What would Emily insist on with a new buyer?",
      "options": [
-      "Documents against acceptance",
-      "Documents against payment",
       "No documents",
-      "A discount"
+      "A discount",
+      "Documents against payment",
+      "Documents against acceptance"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"With a new buyer I'd never do that; I'd insist on documents against payment.\""
     },
     {
      "q": "What is Emily's key point about collections?",
      "options": [
-      "They are always safe",
-      "A collection is only as safe as the buyer",
       "They replace trust",
-      "They are cheaper than trust"
+      "They are cheaper than trust",
+      "A collection is only as safe as the buyer",
+      "They are always safe"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"a collection is only as safe as the buyer.\""
     }
    ]
@@ -132,45 +132,55 @@
     {
      "q": "The **remitting bank** is…",
      "options": [
-      "the buyer's bank",
-      "the seller's bank that sends the documents",
       "the insurer",
-      "the carrier"
+      "the buyer's bank",
+      "the carrier",
+      "the seller's bank that sends the documents"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Remitting bank = banco remetente (do vendedor)."
     },
     {
      "q": "A **sight draft** is paid…",
      "options": [
-      "in sixty days",
       "on presentation / immediately",
+      "in sixty days",
       "after delivery",
       "before shipping"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Sight draft = saque à vista, pago na apresentação."
     },
     {
      "q": "Choose the correct word: \"With a time draft, the buyer signs an **___** to pay later.\"",
-     "options": ["acceptance", "expiry", "invoice", "discrepancy"],
+     "options": [
+      "acceptance",
+      "expiry",
+      "discrepancy",
+      "invoice"
+     ],
      "answer": 0,
      "why": "Acceptance = aceite, compromisso de pagar no prazo."
     },
     {
      "q": "\"If the buyer refuses to pay, they **dishonour** the draft.\" To dishonour means to…",
      "options": [
-      "pay on time",
       "fail to pay or accept",
       "amend it",
+      "pay on time",
       "insure it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To dishonour = não honrar."
     },
     {
      "q": "Choose the correct term: \"The **collecting bank** presents the documents to the…\"",
-     "options": ["seller", "buyer", "insurer", "carrier"],
+     "options": [
+      "carrier",
+      "buyer",
+      "insurer",
+      "seller"
+     ],
      "answer": 1,
      "why": "Collecting bank = banco cobrador, apresenta ao comprador."
     }
@@ -181,32 +191,57 @@
    "items": [
     {
      "q": "\"With this client, we're **comfortable**.\" To be comfortable with something means to…",
-     "options": ["be worried about it", "be confident and at ease with it", "reject it", "delay it"],
-     "answer": 1,
+     "options": [
+      "be worried about it",
+      "delay it",
+      "be confident and at ease with it",
+      "reject it"
+     ],
+     "answer": 2,
      "why": "Be comfortable with = sentir-se seguro/tranquilo."
     },
     {
      "q": "\"A buyer might **back out** of paying.\" To back out means to…",
-     "options": ["commit", "withdraw from an agreement", "pay early", "sign"],
+     "options": [
+      "sign",
+      "withdraw from an agreement",
+      "commit",
+      "pay early"
+     ],
      "answer": 1,
      "why": "Back out = desistir, sair do acordo."
     },
     {
      "q": "\"Don't **release** the documents until they accept.\" To release documents means to…",
-     "options": ["hold them", "hand them over", "destroy them", "sign them"],
+     "options": [
+      "sign them",
+      "hand them over",
+      "destroy them",
+      "hold them"
+     ],
      "answer": 1,
      "why": "Release = liberar, entregar."
     },
     {
      "q": "\"Collections **punish carelessness**.\" This means careless work…",
-     "options": ["is rewarded", "leads to real losses", "is ignored", "is cheaper"],
-     "answer": 1,
+     "options": [
+      "is ignored",
+      "is cheaper",
+      "is rewarded",
+      "leads to real losses"
+     ],
+     "answer": 3,
      "why": "Punish carelessness = o descuido custa caro."
     },
     {
      "q": "\"We've **dealt with** them for years.\" To deal with someone means to…",
-     "options": ["avoid them", "do business with them", "sue them", "insure them"],
-     "answer": 1,
+     "options": [
+      "insure them",
+      "sue them",
+      "do business with them",
+      "avoid them"
+     ],
+     "answer": 2,
      "why": "Deal with = negociar/lidar com."
     }
    ]

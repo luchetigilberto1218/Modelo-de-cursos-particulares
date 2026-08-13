@@ -7,47 +7,57 @@
    "items": [
     {
      "q": "According to the text, what is a chart?",
-     "options": ["A finished story", "Raw material", "An insight", "A benchmark"],
-     "answer": 1,
+     "options": [
+      "A finished story",
+      "A benchmark",
+      "An insight",
+      "Raw material"
+     ],
+     "answer": 3,
      "why": "\"A chart is not a story. A chart is raw material.\""
     },
     {
      "q": "Where do good data storytellers start?",
      "options": [
-      "By opening Excel",
-      "With the message — what they want the audience to conclude",
       "With the colours",
-      "With the raw data"
+      "With the raw data",
+      "By opening Excel",
+      "With the message — what they want the audience to conclude"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"They decide, before opening Excel, what they want the audience to conclude.\""
     },
     {
      "q": "What happens to a colour or label that doesn't serve the message?",
-     "options": ["It stays for decoration", "It gets removed", "It is highlighted", "It is explained"],
-     "answer": 1,
+     "options": [
+      "It stays for decoration",
+      "It is explained",
+      "It gets removed",
+      "It is highlighted"
+     ],
+     "answer": 2,
      "why": "\"Every colour, every axis label, every annotation serves the message or gets removed.\""
     },
     {
      "q": "Why is \"Sales grew 12 percent\" potentially misleading?",
      "options": [
+      "It is too old",
       "12 percent is too small",
-      "The market may have grown faster, e.g. 18 percent",
       "It has no chart",
-      "It is too old"
+      "The market may have grown faster, e.g. 18 percent"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"'Sales grew 12 percent' sounds good until you discover the market grew 18 percent.\""
     },
     {
      "q": "\"A number without context is noise dressed up as insight\" means a number alone…",
      "options": [
+      "should never be shown",
       "is always insightful",
       "can look meaningful without actually being so",
-      "should never be shown",
       "is the whole story"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: sem referência ou comparação, o número parece insight mas não é."
     }
    ]
@@ -63,33 +73,33 @@
      "q": "Why is Harry cutting the update to one chart?",
      "options": [
       "To save paper",
-      "Because right now it's data without a story",
       "The board asked for one",
+      "Because right now it's data without a story",
       "The software failed"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"right now it's data without a story.\""
     },
     {
      "q": "What is the single message Harry wants the board to take away?",
      "options": [
-      "Headcount is rising",
       "Costs have fallen three quarters running, protecting the margin",
+      "Headcount is rising",
       "The market is shrinking",
       "Q2 had a spike"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"our costs have fallen for three quarters in a row, and that trend is what's protecting our margin.\""
     },
     {
      "q": "Why did Harry remove the headcount chart?",
      "options": [
-      "It was wrong",
-      "It's interesting but off-message",
+      "The board had seen it",
       "It had no data",
-      "The board had seen it"
+      "It's interesting but off-message",
+      "It was wrong"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"One showed headcount, which is interesting but off-message.\""
     },
     {
@@ -106,12 +116,12 @@
     {
      "q": "Why did Harry annotate the Q2 outlier?",
      "options": [
-      "To highlight a success",
-      "So nobody wastes the meeting asking about it",
       "Because it was the main point",
-      "To add another chart"
+      "To highlight a success",
+      "To add another chart",
+      "So nobody wastes the meeting asking about it"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I've annotated the one outlier… so nobody wastes the meeting asking about it.\""
     }
    ]
@@ -121,37 +131,57 @@
    "items": [
     {
      "q": "\"Costs **fell** three quarters in a row.\" To fall means…",
-     "options": ["to rise", "to go down", "to stay level", "to double"],
-     "answer": 1,
+     "options": [
+      "to stay level",
+      "to rise",
+      "to go down",
+      "to double"
+     ],
+     "answer": 2,
      "why": "To fall = cair, diminuir."
     },
     {
      "q": "\"Sales **remained stable** all year.\" To remain stable means…",
-     "options": ["to rise sharply", "to stay roughly the same", "to fall", "to fluctuate wildly"],
-     "answer": 1,
+     "options": [
+      "to stay roughly the same",
+      "to fluctuate wildly",
+      "to fall",
+      "to rise sharply"
+     ],
+     "answer": 0,
      "why": "Remain stable = permanecer estável."
     },
     {
      "q": "Choose the correct word: \"Compare it against the industry **___** to see if it's good.\"",
-     "options": ["peak", "benchmark", "outlier", "trough"],
+     "options": [
+      "trough",
+      "benchmark",
+      "peak",
+      "outlier"
+     ],
      "answer": 1,
      "why": "Benchmark = referência para comparação."
     },
     {
      "q": "An **outlier** in data is…",
      "options": [
-      "the average",
+      "the benchmark",
       "a value far from the rest",
       "the trend line",
-      "the benchmark"
+      "the average"
      ],
      "answer": 1,
      "why": "Outlier = ponto fora da curva."
     },
     {
      "q": "Choose the correct term: \"Revenue hit a **___** in December, the highest all year.\"",
-     "options": ["trough", "peak", "benchmark", "outlier"],
-     "answer": 1,
+     "options": [
+      "peak",
+      "outlier",
+      "trough",
+      "benchmark"
+     ],
+     "answer": 0,
      "why": "Peak = pico, o ponto mais alto."
     }
    ]
@@ -161,25 +191,35 @@
    "items": [
     {
      "q": "\"Costs have **gone up** sharply.\" To go up means to…",
-     "options": ["decrease", "increase", "stay level", "disappear"],
-     "answer": 1,
+     "options": [
+      "increase",
+      "disappear",
+      "stay level",
+      "decrease"
+     ],
+     "answer": 0,
      "why": "Go up = subir."
     },
     {
      "q": "\"Let the data **speak for itself**.\" If data speaks for itself, it…",
      "options": [
-      "needs no exaggeration to make the point",
-      "is confusing",
       "is wrong",
-      "needs more colour"
+      "needs more colour",
+      "is confusing",
+      "needs no exaggeration to make the point"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Speak for itself = ser claro por si só."
     },
     {
      "q": "\"Sales **picked up** in the second half.\" To pick up means to…",
-     "options": ["decline", "improve or increase", "stay flat", "stop"],
-     "answer": 1,
+     "options": [
+      "decline",
+      "stop",
+      "improve or increase",
+      "stay flat"
+     ],
+     "answer": 2,
      "why": "Pick up = melhorar, aumentar."
     },
     {
@@ -187,16 +227,21 @@
      "options": [
       "select only what supports your point",
       "show everything",
-      "round up",
-      "annotate"
+      "annotate",
+      "round up"
      ],
      "answer": 0,
      "why": "Cherry-pick = escolher a dedo só o que convém."
     },
     {
      "q": "\"That spike **stands out**.\" To stand out means to…",
-     "options": ["blend in", "be clearly noticeable", "disappear", "be average"],
-     "answer": 1,
+     "options": [
+      "blend in",
+      "disappear",
+      "be clearly noticeable",
+      "be average"
+     ],
+     "answer": 2,
      "why": "Stand out = destacar-se, saltar aos olhos."
     }
    ]

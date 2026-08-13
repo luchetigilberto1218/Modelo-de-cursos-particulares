@@ -7,28 +7,33 @@
    "items": [
     {
      "q": "What should you be when you talk to your manager?",
-     "options": ["Long and detailed", "Short and clear", "Silent", "Loud"],
-     "answer": 1,
+     "options": [
+      "Long and detailed",
+      "Loud",
+      "Silent",
+      "Short and clear"
+     ],
+     "answer": 3,
      "why": "\"When you talk to them, be short and clear.\""
     },
     {
      "q": "How should you start?",
      "options": [
+      "With a question",
       "With the goal of the conversation",
-      "With the weather",
       "With a long story",
-      "With a question"
+      "With the weather"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Start with the goal of the conversation.\""
     },
     {
      "q": "What do managers appreciate?",
      "options": [
       "A short problem AND a possible solution",
-      "A long list of problems",
       "Silence",
-      "Surprises"
+      "Surprises",
+      "A long list of problems"
      ],
      "answer": 0,
      "why": "\"Managers appreciate people who come with a short problem and a possible solution.\""
@@ -46,7 +51,12 @@
     },
     {
      "q": "How many sentences should you use for the key points?",
-     "options": ["Twenty", "Three or four", "None", "One hundred"],
+     "options": [
+      "Twenty",
+      "Three or four",
+      "One hundred",
+      "None"
+     ],
      "answer": 1,
      "why": "\"in three or four sentences, give the key points.\""
     }
@@ -63,9 +73,9 @@
      "q": "How has Sophie prepared for the meeting?",
      "options": [
       "One topic, two requests, no surprises",
+      "A long story",
       "Ten topics",
-      "No preparation",
-      "A long story"
+      "No preparation"
      ],
      "answer": 0,
      "why": "\"one topic, two requests. No surprises, no long stories.\""
@@ -73,12 +83,12 @@
     {
      "q": "How does she start?",
      "options": [
-      "With the weekend",
-      "With the goal — 'I'd like to talk about the Brazil project…'",
       "With a complaint",
-      "With silence"
+      "With silence",
+      "With the weekend",
+      "With the goal — 'I'd like to talk about the Brazil project…'"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"'I'd like to talk about the Brazil project — I have one problem and two small requests.'\""
     },
     {
@@ -95,23 +105,23 @@
     {
      "q": "What does Sophie bring besides the problem?",
      "options": [
-      "Just a complaint",
       "A solution — a plan to catch up",
-      "Nothing",
-      "A new problem"
+      "A new problem",
+      "Just a complaint",
+      "Nothing"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I come with a solution, not just a complaint. Here's my plan to catch up.\""
     },
     {
      "q": "What is the lesson for managing up well?",
      "options": [
       "Be long and vague",
-      "Come prepared, be brief, bring a solution",
       "Surprise the manager",
+      "Come prepared, be brief, bring a solution",
       "Tell long stories"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Come prepared, be brief, bring a solution.\""
     }
    ]
@@ -122,41 +132,56 @@
     {
      "q": "Your **manager** is…",
      "options": [
-      "your client",
       "your boss / the person you report to",
-      "a supplier",
-      "a customer"
+      "a customer",
+      "your client",
+      "a supplier"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Manager = gerente/chefe."
     },
     {
      "q": "The **goal** of a conversation is…",
      "options": [
-      "the greeting",
-      "what you want to achieve from it",
+      "a surprise",
       "the ending",
-      "a surprise"
+      "what you want to achieve from it",
+      "the greeting"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Goal = objetivo."
     },
     {
      "q": "Choose the correct phrase: \"'I **___** to share an idea.'\"",
-     "options": ["would like", "refuse", "forget", "cancel"],
-     "answer": 0,
+     "options": [
+      "forget",
+      "would like",
+      "refuse",
+      "cancel"
+     ],
+     "answer": 1,
      "why": "Would like = gostaria."
     },
     {
      "q": "To **share** something means to…",
-     "options": ["hide it", "tell it to others", "delete it", "ignore it"],
-     "answer": 1,
+     "options": [
+      "ignore it",
+      "hide it",
+      "tell it to others",
+      "delete it"
+     ],
+     "answer": 2,
      "why": "Share = compartilhar."
     },
     {
      "q": "Choose the correct word: \"Managers don't like a **___** — they want to be told early.\"",
-     "options": ["surprise", "plan", "solution", "report"],
-     "answer": 0,
+     "options": [
+      "report",
+      "plan",
+      "surprise",
+      "solution"
+     ],
+     "answer": 2,
      "why": "Surprise = surpresa."
     }
    ]
@@ -166,37 +191,57 @@
    "items": [
     {
      "q": "\"Come with a solution, not just a **complaint**.\" A complaint is…",
-     "options": ["a thank you", "a statement that something is wrong", "a plan", "a greeting"],
-     "answer": 1,
+     "options": [
+      "a statement that something is wrong",
+      "a plan",
+      "a thank you",
+      "a greeting"
+     ],
+     "answer": 0,
      "why": "Complaint = reclamação."
     },
     {
      "q": "\"Let me **catch up** on the lost time.\" To catch up means to…",
-     "options": ["fall behind", "get back to where you should be", "stop", "rest"],
-     "answer": 1,
+     "options": [
+      "get back to where you should be",
+      "rest",
+      "fall behind",
+      "stop"
+     ],
+     "answer": 0,
      "why": "Catch up = recuperar o atraso."
     },
     {
      "q": "\"Can I have a **quick word** with the team?\" A quick word means…",
-     "options": ["a long meeting", "a short talk", "a written report", "a shout"],
-     "answer": 1,
+     "options": [
+      "a written report",
+      "a long meeting",
+      "a shout",
+      "a short talk"
+     ],
+     "answer": 3,
      "why": "Quick word = uma conversinha."
     },
     {
      "q": "\"Come **prepared** to the meeting.\" To be prepared means to…",
-     "options": ["be ready", "be late", "be lost", "be silent"],
-     "answer": 0,
+     "options": [
+      "be late",
+      "be ready",
+      "be silent",
+      "be lost"
+     ],
+     "answer": 1,
      "why": "Prepared = preparado."
     },
     {
      "q": "\"That's how you **manage up** well.\" To manage up means to…",
      "options": [
-      "supervise juniors",
       "work well with your own manager",
-      "avoid your boss",
-      "get promoted fast"
+      "supervise juniors",
+      "get promoted fast",
+      "avoid your boss"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Manage up = lidar bem com o próprio gestor."
     }
    ]

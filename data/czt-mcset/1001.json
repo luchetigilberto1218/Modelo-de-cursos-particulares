@@ -21,45 +21,45 @@
     {
      "q": "What does the HR team take care of?",
      "options": [
-      "The money",
       "The people at the company",
+      "The money",
       "The building",
       "The computers"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"It is the team that takes care of people at the company.\""
     },
     {
      "q": "How does the lesson start today?",
      "options": [
-      "Fast",
-      "Slow",
+      "In silence",
       "With a test",
-      "In silence"
+      "Slow",
+      "Fast"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"We start slow. You can do it!\""
     },
     {
      "q": "The HR team hires new employees. This suggests that the company is…",
      "options": [
-      "closing down",
-      "growing and adding new people",
+      "cutting the team",
       "moving to another city",
-      "cutting the team"
+      "growing and adding new people",
+      "closing down"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: contratar novos funcionários indica que a empresa está crescendo."
     },
     {
      "q": "The writer would most likely AGREE with which idea?",
      "options": [
-      "Learning English is too hard for you",
-      "You can learn, one step at a time",
       "You should study alone, with no help",
-      "HR only cares about numbers"
+      "HR only cares about numbers",
+      "You can learn, one step at a time",
+      "Learning English is too hard for you"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: o tom é encorajador — \"We start slow. You can do it!\""
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "Who is Sophie?",
      "options": [
-      "A new employee",
       "A person from HR",
-      "The manager of sugar sales",
-      "A visitor"
+      "A new employee",
+      "A visitor",
+      "The manager of sugar sales"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"My name is Sophie. I am from HR.\""
     },
     {
      "q": "Where is the new employee's desk?",
      "options": [
-      "Next to the window",
       "In the kitchen",
-      "Near the door",
-      "On the left"
+      "Next to the window",
+      "On the left",
+      "Near the door"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Your desk is here, next to the window.\""
     },
     {
      "q": "Why do you need the badge?",
      "options": [
-      "To buy coffee",
       "To open the door",
       "To join the meeting",
+      "To buy coffee",
       "To use the computer"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"You need it to open the door.\""
     },
     {
      "q": "Sophie says the first day is \"a little strange.\" She wants the new employee to feel…",
      "options": [
       "worried and in a hurry",
+      "ready to leave early",
       "calm — it is normal to feel this way",
-      "afraid to ask questions",
-      "ready to leave early"
+      "afraid to ask questions"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: ela normaliza o nervosismo do primeiro dia para deixar a pessoa tranquila."
     },
     {
      "q": "Sophie says \"we all make mistakes, and that is okay.\" This suggests she thinks…",
      "options": [
-      "you should not speak English",
       "it is fine to make mistakes while learning",
-      "only Sophie can speak English",
-      "the new employee must be perfect"
+      "the new employee must be perfect",
+      "you should not speak English",
+      "only Sophie can speak English"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ela encoraja falar sem medo — errar faz parte de aprender."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"Many <strong>people</strong> work at Czarnikow.\" People means…",
      "options": [
-      "pessoas",
-      "salas",
+      "dias",
       "papéis",
-      "dias"
+      "pessoas",
+      "salas"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "People = pessoas."
     },
     {
      "q": "Choose the correct word: \"I work in a big ___ in London.\"",
      "options": [
-      "office",
       "job",
+      "people",
       "team",
-      "people"
+      "office"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Office = escritório, o lugar onde você trabalha."
     },
     {
      "q": "\"We are a small <strong>team</strong>.\" Team means…",
      "options": [
-      "time / equipe",
-      "empresa",
+      "escritório",
       "emprego",
-      "escritório"
+      "empresa",
+      "time / equipe"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Team = time / equipe."
     },
     {
      "q": "Choose the correct word: \"Czarnikow is a food ___.\"",
      "options": [
+      "team",
       "company",
       "office",
-      "people",
-      "team"
+      "people"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Company = empresa."
     },
     {
      "q": "\"My <strong>job</strong> is to help you.\" Job means…",
      "options": [
-      "emprego / função",
-      "escritório",
       "empresa",
-      "pessoa"
+      "pessoa",
+      "emprego / função",
+      "escritório"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Job = emprego / função."
     }
    ]
@@ -202,8 +202,8 @@
      "q": "\"<strong>Welcome aboard</strong>! We are happy you are here.\" Welcome aboard means…",
      "options": [
       "welcome to the team",
-      "please sit down",
       "the meeting is over",
+      "please sit down",
       "you can go home"
      ],
      "answer": 0,
@@ -212,32 +212,32 @@
     {
      "q": "\"Take your time to <strong>settle in</strong>.\" To settle in means to…",
      "options": [
-      "leave the office",
       "get comfortable in a new place",
+      "pay a bill",
       "start a meeting",
-      "pay a bill"
+      "leave the office"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Settle in = se adaptar, se acostumar com o lugar novo."
     },
     {
      "q": "\"If you need something, I can <strong>help out</strong>.\" To help out means to…",
      "options": [
-      "give help",
-      "go outside",
       "say no",
-      "make a call"
+      "give help",
+      "make a call",
+      "go outside"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Help out = dar uma ajuda, ajudar."
     },
     {
      "q": "\"Sophie will <strong>show you around</strong> the office.\" To show someone around means to…",
      "options": [
       "take them to see the place",
-      "give them a badge",
+      "write a report",
       "send them home",
-      "write a report"
+      "give them a badge"
      ],
      "answer": 0,
      "why": "Show around = mostrar o lugar para alguém."

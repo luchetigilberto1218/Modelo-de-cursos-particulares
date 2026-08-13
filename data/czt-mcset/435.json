@@ -10,56 +10,56 @@
     {
      "q": "How often are VAT returns usually due?",
      "options": [
-      "Every month",
-      "Every quarter",
+      "Every Monday",
       "Once a year",
-      "Every Monday"
+      "Every quarter",
+      "Every month"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"VAT returns are usually due every quarter.\""
     },
     {
      "q": "When does the team look at next month's deadlines?",
      "options": [
-      "Every Monday",
-      "Once a year",
       "At the end of the year",
-      "Every quarter"
+      "Every quarter",
+      "Once a year",
+      "Every Monday"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Every Monday, the team looks at next month's deadlines.\""
     },
     {
      "q": "What happens if a company misses a deadline?",
      "options": [
-      "It pays a penalty",
-      "It gets more time",
       "It pays no tax",
-      "It changes the form"
+      "It gets more time",
+      "It changes the form",
+      "It pays a penalty"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"its own penalty if it slips\" — perder o prazo gera multa."
     },
     {
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
+      "Each deadline should have an owner.",
       "One calendar helps a company stay organised.",
       "It is safe to remember each deadline in your head.",
-      "Each deadline should have an owner.",
       "Reviewing deadlines weekly is a good habit."
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: o texto defende um calendário único e revisão semanal, não a memória de cada um."
     },
     {
      "q": "\"A quiet routine — which is exactly what tax should be\" suggests that…",
      "options": [
-      "tax should be full of surprises",
       "tax should be calm and predictable",
+      "tax should be full of surprises",
       "tax is the most exciting part of work",
       "tax does not need any planning"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"quiet routine\" indica que o imposto deveria ser calmo e previsível, sem sustos."
     }
    ]
@@ -77,21 +77,21 @@
     {
      "q": "On how many pages is Emily building the calendar?",
      "options": [
-      "One page",
       "Twelve pages",
       "One page for each tax",
+      "One page",
       "One page each month"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"One A4 page for the whole year.\""
     },
     {
      "q": "When is corporate tax due?",
      "options": [
-      "Every month",
+      "Every Monday",
       "Every quarter",
       "Once a year, in March",
-      "Every Monday"
+      "Every month"
      ],
      "answer": 2,
      "why": "\"Corporate tax is due once a year, in March.\""
@@ -99,12 +99,12 @@
     {
      "q": "Who is the owner of the VAT returns?",
      "options": [
-      "Tom",
-      "Emily",
       "Sarah",
-      "The whole team"
+      "The whole team",
+      "Emily",
+      "Tom"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"VAT goes to me\" — Emily fala em primeira pessoa."
     },
     {
@@ -122,11 +122,11 @@
      "q": "What does Emily believe the Monday review will prevent?",
      "options": [
       "New forms",
-      "Missed deadlines and penalties",
       "Extra meetings",
-      "A bigger calendar"
+      "A bigger calendar",
+      "Missed deadlines and penalties"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"nothing slips, and we never pay a penalty\" — a revisão evita prazos perdidos e multas."
     }
    ]
@@ -140,8 +140,8 @@
      "q": "\"We missed the <strong>deadline</strong>, so we paid a small fine.\" A deadline is…",
      "options": [
       "the last date to do something",
-      "a type of tax",
       "a company report",
+      "a type of tax",
       "a bank account"
      ],
      "answer": 0,
@@ -150,12 +150,12 @@
     {
      "q": "Choose the correct word: \"The company pays a ___ every time it sends a form late.\"",
      "options": [
-      "penalty",
       "calendar",
       "routine",
-      "quarter"
+      "quarter",
+      "penalty"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Penalty = multa, o que se paga por atraso."
     },
     {
@@ -173,9 +173,9 @@
      "q": "Choose the correct word: \"The <strong>payroll</strong> tax is paid every month, with the ___.\"",
      "options": [
       "salaries",
-      "penalties",
       "surprises",
-      "quarters"
+      "quarters",
+      "penalties"
      ],
      "answer": 0,
      "why": "Payroll = folha de pagamento; o imposto sai junto com os salários."
@@ -183,12 +183,12 @@
     {
      "q": "\"Every deadline has an <strong>owner</strong>.\" Here, an owner is…",
      "options": [
-      "the person responsible for it",
-      "the person who owns the company",
       "the tax office",
-      "the calendar itself"
+      "the person who owns the company",
+      "the calendar itself",
+      "the person responsible for it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Owner = responsável, quem cuida daquele prazo."
     }
    ]
@@ -201,21 +201,21 @@
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the tax calendar.\" To sign off on means to…",
      "options": [
-      "formally approve",
       "delete",
+      "forget",
       "print",
-      "forget"
+      "formally approve"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new calendar next month.\" To roll out means to…",
      "options": [
       "start using it",
-      "throw it away",
+      "copy it",
       "hide it",
-      "copy it"
+      "throw it away"
      ],
      "answer": 0,
      "why": "Roll out = colocar em uso, implementar."
@@ -223,34 +223,34 @@
     {
      "q": "\"Please <strong>keep track of</strong> every deadline.\" To keep track of means to…",
      "options": [
-      "follow and remember it",
       "pay for it",
       "cancel it",
-      "share it online"
+      "share it online",
+      "follow and remember it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Keep track of = acompanhar, não perder de vista."
     },
     {
      "q": "\"The VAT deadline is <strong>coming up</strong> soon.\" Coming up means it is…",
      "options": [
+      "very old",
       "happening soon",
       "already finished",
-      "very old",
       "not important"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Coming up = está chegando, vai acontecer em breve."
     },
     {
      "q": "\"Let's <strong>follow through</strong> and file the form on time.\" To follow through means to…",
      "options": [
-      "finish what we planned",
+      "change the plan",
       "start something new",
       "ask for more time",
-      "change the plan"
+      "finish what we planned"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Follow through = levar até o fim o que foi combinado."
     }
    ]

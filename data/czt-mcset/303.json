@@ -10,21 +10,21 @@
     {
      "q": "How many key activities does logistics have?",
      "options": [
-      "Two",
       "Three",
       "Four",
+      "Two",
       "Five"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Logistics is built from four key activities.\""
     },
     {
      "q": "What does transporting do?",
      "options": [
       "It moves goods between places",
+      "It sells products",
       "It keeps goods safe",
-      "It loads boxes",
-      "It sells products"
+      "It loads boxes"
      ],
      "answer": 0,
      "why": "\"Transporting moves goods between places.\""
@@ -33,33 +33,33 @@
      "q": "What is handling?",
      "options": [
       "Sending emails to customers",
-      "The physical work of loading, unloading, and moving boxes",
       "Keeping goods safe for a long time",
+      "The physical work of loading, unloading, and moving boxes",
       "Choosing the right price"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Handling is the physical work of loading, unloading, and moving boxes.\""
     },
     {
      "q": "The text says \"the activities never stop.\" This suggests that…",
      "options": [
-      "the work happens all the time",
-      "the team works only one day a week",
       "logistics is easy",
-      "the warehouse is closed at night"
+      "the work happens all the time",
+      "the warehouse is closed at night",
+      "the team works only one day a week"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: se nunca param, o trabalho é contínuo, todos os dias."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "Doing all four activities well is hard work",
-      "One activity alone is the whole job",
+      "Each activity has a clear purpose",
       "A logistics team is busy every day",
-      "Each activity has a clear purpose"
+      "Doing all four activities well is hard work",
+      "One activity alone is the whole job"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto diz que o trabalho real é fazer os QUATRO bem — não só um."
     }
    ]
@@ -78,55 +78,55 @@
      "q": "Where is Emily taking the intern?",
      "options": [
       "To the office",
-      "To the warehouse",
       "To a meeting",
+      "To the warehouse",
       "To another city"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Let me show you the warehouse.\""
     },
     {
      "q": "What are the two people doing next to the truck?",
      "options": [
-      "Loading boxes",
-      "Cleaning the floor",
+      "Driving away",
       "Writing labels",
-      "Driving away"
+      "Cleaning the floor",
+      "Loading boxes"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"two people are loading boxes. That is handling.\""
     },
     {
      "q": "What are the tall shelves used for?",
      "options": [
-      "Transporting",
       "Storing",
-      "Distributing",
-      "Selling"
+      "Selling",
+      "Transporting",
+      "Distributing"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"This part is for storing… we keep the goods here.\""
     },
     {
      "q": "Emily says \"when one truck leaves, another one arrives.\" This suggests that…",
      "options": [
-      "the work is slow and quiet",
       "the activities are always moving",
       "there is only one truck",
-      "the warehouse is closing"
+      "the warehouse is closing",
+      "the work is slow and quiet"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: os caminhões se sucedem, o trabalho nunca para."
     },
     {
      "q": "How does Emily seem toward the new intern?",
      "options": [
-      "Angry and impatient",
       "Bored and tired",
       "Friendly and helpful",
-      "Worried and unsure"
+      "Worried and unsure",
+      "Angry and impatient"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: ela dá boas-vindas, explica com calma e diz \"let's start!\"."
     }
    ]
@@ -139,54 +139,54 @@
     {
      "q": "\"We are <strong>storing</strong> the boxes until Friday.\" Storing means…",
      "options": [
-      "keeping goods safe until they are needed",
-      "moving goods to another city",
       "throwing goods away",
-      "selling goods online"
+      "moving goods to another city",
+      "selling goods online",
+      "keeping goods safe until they are needed"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Storing = armazenar: guardar em segurança até precisar."
     },
     {
      "q": "Choose the correct word: \"The workers ___ the boxes onto the truck before it leaves.\"",
      "options": [
-      "load",
       "unload",
-      "store",
-      "sell"
+      "sell",
+      "load",
+      "store"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To load = carregar, colocar as caixas no caminhão."
     },
     {
      "q": "Choose the correct word: \"When the truck arrives, we ___ all the boxes and check them.\"",
      "options": [
       "load",
-      "unload",
       "transport",
-      "store"
+      "store",
+      "unload"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "To unload = descarregar, tirar as caixas do caminhão."
     },
     {
      "q": "\"Our job is <strong>distributing</strong> the products to the shops.\" Distributing means…",
      "options": [
-      "getting the right product to the right customer",
       "cleaning the warehouse",
+      "paying the drivers",
       "loading the shelves",
-      "paying the drivers"
+      "getting the right product to the right customer"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Distributing = distribuir: levar o produto certo ao cliente certo."
     },
     {
      "q": "Choose the correct word: \"A good team delivers at the right ___, not too early and not too late.\"",
      "options": [
       "time",
-      "box",
       "shelf",
-      "truck"
+      "truck",
+      "box"
      ],
      "answer": 0,
      "why": "Right time = momento certo: nem cedo, nem tarde demais."
@@ -201,20 +201,20 @@
     {
      "q": "\"Please <strong>load up</strong> the truck before lunch.\" To load up means to…",
      "options": [
-      "fill it with boxes",
-      "wash it",
       "drive it away",
-      "empty it"
+      "empty it",
+      "fill it with boxes",
+      "wash it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Load up = encher, carregar completamente."
     },
     {
      "q": "\"The new system will <strong>roll out</strong> next month.\" To roll out means to…",
      "options": [
       "start using it step by step",
-      "cancel it",
       "hide it",
+      "cancel it",
       "sell it"
      ],
      "answer": 0,
@@ -223,34 +223,34 @@
     {
      "q": "\"We ran out of space, so we had to <strong>set up</strong> a second shelf.\" To set up means to…",
      "options": [
-      "prepare or arrange something new",
       "take something away",
-      "clean something",
-      "sell something"
+      "prepare or arrange something new",
+      "sell something",
+      "clean something"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Set up = montar, preparar algo novo."
     },
     {
      "q": "\"Can you <strong>check in</strong> the boxes when they arrive?\" To check in means to…",
      "options": [
+      "open all of them",
       "register and record them",
       "throw them away",
-      "send them back",
-      "open all of them"
+      "send them back"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Check in = registrar a entrada dos itens."
     },
     {
      "q": "\"We are almost out of stock; we need to <strong>keep up</strong> with the orders.\" To keep up means to…",
      "options": [
-      "stay at the same speed as the work",
       "stop working",
-      "slow down",
-      "close the warehouse"
+      "stay at the same speed as the work",
+      "close the warehouse",
+      "slow down"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Keep up = acompanhar o ritmo, não ficar para trás."
     }
    ]

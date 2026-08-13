@@ -10,21 +10,21 @@
     {
      "q": "Who is a taxpayer?",
      "options": [
-      "Anyone who pays tax",
       "Only a big company",
+      "A bank",
       "The government",
-      "A bank"
+      "Anyone who pays tax"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"A taxpayer is anyone who pays tax.\" Pode ser pessoa ou empresa."
     },
     {
      "q": "What is revenue in this text?",
      "options": [
       "The money the government collects from taxes",
-      "The salary of a worker",
+      "A percentage",
       "A rule about tax",
-      "A percentage"
+      "The salary of a worker"
      ],
      "answer": 0,
      "why": "\"Revenue is the money that the government collects from taxes.\""
@@ -33,9 +33,9 @@
      "q": "What is a deduction?",
      "options": [
       "An amount you subtract before the tax is calculated",
-      "A person who pays tax",
+      "A public office",
       "The money the government collects",
-      "A public office"
+      "A person who pays tax"
      ],
      "answer": 0,
      "why": "\"A deduction is an amount that you can subtract before the tax is calculated.\""
@@ -44,9 +44,9 @@
      "q": "The text says \"everything else is built on them.\" This suggests that…",
      "options": [
       "these five words are the base for the rest of the subject",
-      "there are only five words in tax",
       "tax is very easy for everyone",
-      "you never need more words"
+      "you never need more words",
+      "there are only five words in tax"
      ],
      "answer": 0,
      "why": "Inferência: se tudo é construído sobre essas palavras, elas são a base — mas há mais coisa depois."
@@ -54,12 +54,12 @@
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "learning the basic words first makes tax easier to understand",
       "tax is impossible to learn",
       "the tax rate is not important",
-      "a taxpayer is always a company"
+      "a taxpayer is always a company",
+      "learning the basic words first makes tax easier to understand"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: o texto diz que aprender essas palavras deixa o assunto \"less frightening\"."
     }
    ]
@@ -77,43 +77,43 @@
     {
      "q": "Why is Harry going over the five words with the assistant?",
      "options": [
-      "For her client call tomorrow",
       "For a test at school",
+      "For her client call tomorrow",
       "For a report to the boss",
       "For a job interview"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"let's go over the five words for your call tomorrow.\""
     },
     {
      "q": "What is the English word for \"alíquota\"?",
      "options": [
-      "Tax rate",
-      "Revenue",
       "Exemption",
-      "Deduction"
+      "Deduction",
+      "Tax rate",
+      "Revenue"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"'alíquota' is the tax rate.\""
     },
     {
      "q": "What does an exemption mean?",
      "options": [
-      "Something is not taxed",
+      "You calculate the tax",
       "You pay more tax",
-      "The government keeps the money",
-      "You calculate the tax"
+      "Something is not taxed",
+      "The government keeps the money"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"An exemption means that something is not taxed.\""
     },
     {
      "q": "When Harry says \"Take your time. There is no rush,\" he wants the assistant to feel…",
      "options": [
       "calm and not nervous",
-      "in a big hurry",
+      "bored",
       "angry with him",
-      "bored"
+      "in a big hurry"
      ],
      "answer": 0,
      "why": "Inferência: ele fala com calma para deixá-la tranquila antes da ligação."
@@ -121,12 +121,12 @@
     {
      "q": "Why does Harry say \"You are ready\" at the end?",
      "options": [
-      "He thinks she now knows enough for the call",
       "She has finished all her work for the year",
       "She is leaving the company",
-      "The call is cancelled"
+      "The call is cancelled",
+      "He thinks she now knows enough for the call"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: depois de repassar as cinco palavras, ele mostra confiança de que ela está preparada."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"Every <strong>taxpayer</strong> must send the form by April.\" A taxpayer is…",
      "options": [
-      "a person or company that pays tax",
-      "a government office",
       "a bank manager",
-      "a tax rule"
+      "a person or company that pays tax",
+      "a tax rule",
+      "a government office"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Taxpayer = contribuinte: quem paga o imposto."
     },
     {
      "q": "\"The tax <strong>rate</strong> is ten percent this year.\" The tax rate is…",
      "options": [
-      "the percentage used to calculate the tax",
-      "the money the government spends",
       "the name of the tax office",
-      "the day you must pay"
+      "the money the government spends",
+      "the day you must pay",
+      "the percentage used to calculate the tax"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Tax rate = alíquota: a porcentagem aplicada para calcular o imposto."
     },
     {
      "q": "Choose the correct word: \"This product has an ___, so you do not pay tax on it.\"",
      "options": [
-      "exemption",
+      "revenue",
       "amount",
-      "taxpayer",
-      "revenue"
+      "exemption",
+      "taxpayer"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Exemption = isenção: quando algo não é taxado."
     },
     {
      "q": "Choose the correct word: \"You can ___ this cost before the tax is calculated.\"",
      "options": [
-      "subtract",
-      "collect",
       "pay",
+      "collect",
+      "subtract",
       "sell"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To subtract = subtrair: você tira o valor antes do cálculo (é a ideia de deduction)."
     },
     {
      "q": "\"The government's <strong>revenue</strong> comes mostly from taxes.\" Revenue here is…",
      "options": [
-      "the money the government collects",
       "the office of the president",
       "the tax form",
-      "the number of taxpayers"
+      "the number of taxpayers",
+      "the money the government collects"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Revenue = receita: o dinheiro que o governo arrecada."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"Please <strong>fill out</strong> the tax form.\" To fill out means to…",
      "options": [
-      "write your answers in a form",
-      "throw the form away",
       "read the form fast",
-      "sign the form only"
+      "sign the form only",
+      "throw the form away",
+      "write your answers in a form"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Fill out = preencher (um formulário)."
     },
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
-      "approve it",
-      "delete it",
       "print it",
-      "ignore it"
+      "ignore it",
+      "delete it",
+      "approve it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"Let's <strong>go over</strong> the numbers again.\" To go over means to…",
      "options": [
-      "check or review",
       "hide",
+      "sell",
       "delete",
-      "sell"
+      "check or review"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Go over = revisar, repassar."
     },
     {
      "q": "\"Do these numbers <strong>add up</strong>?\" To add up means to…",
      "options": [
+      "disappear",
       "make sense when you total them",
       "become smaller",
-      "disappear",
       "get lost"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Add up = somar corretamente / fazer sentido no total."
     },
     {
      "q": "\"I need to <strong>work out</strong> the tax on this amount.\" To work out means to…",
      "options": [
-      "calculate",
+      "copy",
       "forget",
       "cancel",
-      "copy"
+      "calculate"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Work out = calcular, chegar ao resultado."
     }
    ]

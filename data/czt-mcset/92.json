@@ -8,38 +8,43 @@
     {
      "q": "What three questions should a good status report answer?",
      "options": [
-      "Who, what and when",
       "What is going well, what is at risk, and what decision is needed",
-      "Cost, scope and quality",
-      "Past, present and future"
+      "Who, what and when",
+      "Past, present and future",
+      "Cost, scope and quality"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"what is going well, what is at risk, and what decision the reader needs to make.\""
     },
     {
      "q": "What does amber mean in the colour coding?",
-     "options": ["On track", "Needs attention", "Blocked", "Complete"],
-     "answer": 1,
+     "options": [
+      "Needs attention",
+      "Complete",
+      "On track",
+      "Blocked"
+     ],
+     "answer": 0,
      "why": "\"Green for on track, amber for needs attention, red for blocked.\""
     },
     {
      "q": "Why is honest colour coding more valuable than optimistic coding?",
      "options": [
-      "It is quicker to write",
-      "Leaders spot dishonest amber and stop trusting the author",
+      "It avoids escalation",
       "It uses fewer colours",
-      "It avoids escalation"
+      "It is quicker to write",
+      "Leaders spot dishonest amber and stop trusting the author"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"can spot amber-that-should-have-been-red within moments, and quickly stops trusting the author.\""
     },
     {
      "q": "How does the text describe good escalations?",
      "options": [
-      "Long and detailed",
+      "Aggressive and firm",
       "Factual, short and respectful",
-      "Apologetic and cautious",
-      "Aggressive and firm"
+      "Long and detailed",
+      "Apologetic and cautious"
      ],
      "answer": 1,
      "why": "\"Good escalations are factual, short and respectful.\""
@@ -47,9 +52,9 @@
     {
      "q": "Why is an over-apologetic escalation a problem?",
      "options": [
-      "It is too aggressive",
-      "It can hide the actual problem",
       "It is too long",
+      "It can hide the actual problem",
+      "It is too aggressive",
       "It uses the wrong colour"
      ],
      "answer": 1,
@@ -66,41 +71,46 @@
    "items": [
     {
      "q": "What is the status of workstream one, the platform migration?",
-     "options": ["Red — blocked", "Amber — needs attention", "Green — on track", "Not started"],
+     "options": [
+      "Amber — needs attention",
+      "Red — blocked",
+      "Green — on track",
+      "Not started"
+     ],
      "answer": 2,
      "why": "\"Workstream one, the platform migration, is green. On track, no blockers, on budget.\""
     },
     {
      "q": "Why is Harry flagging workstream two now?",
      "options": [
-      "It is already blocked",
-      "Because if it slips another week it turns red",
+      "Because the sponsor asked",
       "Because the budget ran out",
-      "Because the sponsor asked"
+      "Because if it slips another week it turns red",
+      "It is already blocked"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I'm flagging it now rather than waiting, because if it slips another week it turns red.\""
     },
     {
      "q": "What is the mitigation for the amber workstream?",
      "options": [
       "Cut the scope",
-      "Add a second tester for two weeks, within budget",
       "Escalate to the vendor",
+      "Add a second tester for two weeks, within budget",
       "Move the deadline"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"add a second tester for two weeks — I can cover that within the existing budget.\""
     },
     {
      "q": "Why is the vendor integration red?",
      "options": [
+      "The team is on holiday",
       "It is over budget",
       "The vendor hasn't delivered the promised API documentation",
-      "The team is on holiday",
       "The tests failed"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"the vendor hasn't delivered the API documentation… my team can't proceed without it.\""
     },
     {
@@ -108,8 +118,8 @@
      "options": [
       "Approve more budget",
       "Make the vendor call",
-      "Add a tester",
-      "Change the deadline"
+      "Change the deadline",
+      "Add a tester"
      ],
      "answer": 1,
      "why": "\"The decision I need from you is just the vendor call.\""
@@ -121,42 +131,57 @@
    "items": [
     {
      "q": "\"The project is **on track**.\" On track means…",
-     "options": ["delayed", "going to plan", "cancelled", "over budget"],
-     "answer": 1,
+     "options": [
+      "over budget",
+      "cancelled",
+      "delayed",
+      "going to plan"
+     ],
+     "answer": 3,
      "why": "On track = no prazo, conforme o plano."
     },
     {
      "q": "\"This workstream is **at risk**.\" At risk means…",
      "options": [
-      "finished",
-      "in danger of not meeting its target",
+      "blocked completely",
       "on budget",
-      "blocked completely"
+      "finished",
+      "in danger of not meeting its target"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "At risk = em risco de não cumprir a meta."
     },
     {
      "q": "Choose the correct word: \"The missing documentation is the **___** — we can't proceed.\"",
-     "options": ["mitigation", "blocker", "summary", "milestone"],
-     "answer": 1,
+     "options": [
+      "milestone",
+      "summary",
+      "blocker",
+      "mitigation"
+     ],
+     "answer": 2,
      "why": "Blocker = bloqueador, o que impede o avanço."
     },
     {
      "q": "A **mitigation** is…",
      "options": [
       "the cause of a risk",
-      "an action taken to reduce a risk or its impact",
       "a status colour",
-      "a deadline"
+      "a deadline",
+      "an action taken to reduce a risk or its impact"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Mitigation = mitigação, ação para reduzir o risco."
     },
     {
      "q": "Choose the correct term: \"I'll ___ the two key risks at the top of the report.\"",
-     "options": ["highlight", "bury", "skim", "block"],
-     "answer": 0,
+     "options": [
+      "bury",
+      "block",
+      "skim",
+      "highlight"
+     ],
+     "answer": 3,
      "why": "To highlight = destacar."
     }
    ]
@@ -166,37 +191,57 @@
    "items": [
     {
      "q": "\"I'll **flag** this to the sponsor today.\" To flag means to…",
-     "options": ["close", "raise for attention", "solve", "hide"],
-     "answer": 1,
+     "options": [
+      "hide",
+      "close",
+      "solve",
+      "raise for attention"
+     ],
+     "answer": 3,
      "why": "To flag = sinalizar."
     },
     {
      "q": "\"We're **on top of** the amber workstream.\" To be on top of something means to…",
-     "options": ["be behind on it", "have it under control", "have ignored it", "have escalated it"],
+     "options": [
+      "be behind on it",
+      "have it under control",
+      "have ignored it",
+      "have escalated it"
+     ],
      "answer": 1,
      "why": "On top of = sob controle, acompanhando de perto."
     },
     {
      "q": "\"The vendor issue is **holding us up**.\" To hold up means to…",
-     "options": ["support", "delay", "approve", "summarise"],
+     "options": [
+      "approve",
+      "delay",
+      "support",
+      "summarise"
+     ],
      "answer": 1,
      "why": "Hold up = atrasar, travar."
     },
     {
      "q": "\"I don't want to **cry wolf**, so I only escalate real blockers.\" To cry wolf means to…",
      "options": [
-      "raise false alarms",
-      "escalate correctly",
       "stay silent",
-      "apologise"
+      "apologise",
+      "escalate correctly",
+      "raise false alarms"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Cry wolf = dar alarme falso, tirando a credibilidade dos alertas reais."
     },
     {
      "q": "\"Let's **loop in** the sponsor on the red item.\" To loop in means to…",
-     "options": ["remove", "include in the conversation", "blame", "close"],
-     "answer": 1,
+     "options": [
+      "include in the conversation",
+      "remove",
+      "blame",
+      "close"
+     ],
+     "answer": 0,
      "why": "Loop in = incluir alguém na conversa."
     }
    ]

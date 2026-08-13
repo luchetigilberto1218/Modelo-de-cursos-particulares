@@ -11,9 +11,9 @@
      "q": "Why can the help desk only help \"as fast as your message lets them\"?",
      "options": [
       "Because your message tells them what the problem is",
+      "Because they need your manager's approval",
       "Because the help desk works very slowly",
-      "Because they answer messages in order",
-      "Because they need your manager's approval"
+      "Because they answer messages in order"
      ],
      "answer": 0,
      "why": "\"the help desk can only help as fast as your message lets them\" — uma boa descrição acelera a ajuda."
@@ -21,45 +21,45 @@
     {
      "q": "How long does the clear message get an answer in?",
      "options": [
-      "Ten minutes",
       "Three minutes",
-      "One hour",
-      "The same morning"
+      "The same morning",
+      "Ten minutes",
+      "One hour"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"gets a real answer in three minutes.\""
     },
     {
      "q": "What are the three simple habits in the text?",
      "options": [
+      "Be fast, be short, and be quiet",
       "Call, email, and wait",
-      "Say what you were doing, what happened, and what you tried",
       "Restart, wait, and restart again",
-      "Be fast, be short, and be quiet"
+      "Say what you were doing, what happened, and what you tried"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Say exactly what you were doing… what happened… what you have already tried.\""
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
       "A clear message helps IT work faster",
-      "The message \"it doesn't work\" is enough to fix the problem",
       "Being polite to the help desk is a good idea",
-      "You should stay available while they work"
+      "You should stay available while they work",
+      "The message \"it doesn't work\" is enough to fix the problem"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: todo o texto mostra que \"it doesn't work\" é ruim e gera uma conversa longa."
     },
     {
      "q": "\"Kindness travels fast between colleagues\" suggests that…",
      "options": [
+      "kindness is not important at work",
       "being polite helps you get better help",
-      "colleagues talk too much",
       "the help desk is far away",
-      "kindness is not important at work"
+      "colleagues talk too much"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ser gentil com a equipe ocupada faz a relação (e a ajuda) fluir melhor."
     }
    ]
@@ -78,31 +78,31 @@
      "q": "What was wrong with the new joiner's first message?",
      "options": [
       "It was too long",
-      "It only said \"my email is broken\"",
       "It was not polite",
-      "It was sent to the wrong team"
+      "It was sent to the wrong team",
+      "It only said \"my email is broken\""
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"It just said 'my email is broken'.\""
     },
     {
      "q": "What are the three steps Oliver teaches?",
      "options": [
       "Call, wait, and restart",
-      "Say what you were doing, what happened, and what you tried",
+      "Be short, be fast, and be quiet",
       "Say your name, your team, and your desk",
-      "Be short, be fast, and be quiet"
+      "Say what you were doing, what happened, and what you tried"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"First, say what you were doing. Second, say what happened. Third, say what you already tried.\""
     },
     {
      "q": "How does Oliver start the polite message?",
      "options": [
-      "\"Fix this now.\"",
+      "\"Where is my answer?\"",
       "\"Could you help me, please?\"",
-      "\"My email is broken.\"",
-      "\"Where is my answer?\""
+      "\"Fix this now.\"",
+      "\"My email is broken.\""
      ],
      "answer": 1,
      "why": "\"Start with 'Could you help me, please?'\""
@@ -110,23 +110,23 @@
     {
      "q": "Why does Oliver want the new joiner to stay at the desk?",
      "options": [
-      "To answer the help desk's questions quickly",
       "Because the manager is watching",
-      "Because the laptop cannot move",
-      "To restart the computer every hour"
+      "To answer the help desk's questions quickly",
+      "To restart the computer every hour",
+      "Because the laptop cannot move"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"if you answer fast, they fix it fast\" — ficar disponível acelera a solução."
     },
     {
      "q": "How would you best describe Oliver's tone?",
      "options": [
-      "Angry and impatient",
       "Friendly and helpful",
       "Bored and quiet",
+      "Angry and impatient",
       "Cold and formal"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ele senta ao lado, ensina passo a passo e faz junto — é acolhedor."
     }
    ]
@@ -139,12 +139,12 @@
     {
      "q": "\"Please <strong>describe</strong> the problem in your message.\" To <strong>describe</strong> means to…",
      "options": [
-      "say what something is like",
+      "hide something",
       "delete something",
-      "restart something",
-      "hide something"
+      "say what something is like",
+      "restart something"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To describe = descrever, dizer como a coisa é."
     },
     {
@@ -162,31 +162,31 @@
      "q": "Choose the correct word: \"Please ___ your computer before we look at the problem.\"",
      "options": [
       "describe",
-      "restart",
       "answer",
-      "crash"
+      "crash",
+      "restart"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "To restart = reiniciar; é o pedido comum do suporte de TI."
     },
     {
      "q": "Choose the correct word: \"Good IT support is a ___ conversation — both people help each other.\"",
      "options": [
-      "two-way",
       "polite",
-      "available",
-      "exactly"
+      "exactly",
+      "two-way",
+      "available"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Two-way = de mão dupla; os dois lados participam."
     },
     {
      "q": "\"Please stay <strong>available</strong> while they fix it.\" <strong>Available</strong> means…",
      "options": [
       "ready and free to help",
+      "tired",
       "busy and away",
-      "angry",
-      "tired"
+      "angry"
      ],
      "answer": 0,
      "why": "Available = disponível, pronto para responder."
@@ -201,31 +201,31 @@
     {
      "q": "\"IT will <strong>look into</strong> the problem this afternoon.\" To look into means to…",
      "options": [
-      "investigate it",
       "ignore it",
-      "close it",
-      "print it"
+      "investigate it",
+      "print it",
+      "close it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Look into = investigar, examinar o problema."
     },
     {
      "q": "\"Can you <strong>log in</strong> again and try?\" To log in means to…",
      "options": [
       "turn off the computer",
-      "enter your account with a password",
+      "call the help desk",
       "send an email",
-      "call the help desk"
+      "enter your account with a password"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Log in = entrar na conta com usuário e senha."
     },
     {
      "q": "\"They will <strong>set up</strong> the new email for you.\" To set up means to…",
      "options": [
       "prepare and make it ready",
-      "delete it",
       "break it",
+      "delete it",
       "hide it"
      ],
      "answer": 0,
@@ -234,12 +234,12 @@
     {
      "q": "\"The help desk will <strong>get back to</strong> you soon.\" To get back to someone means to…",
      "options": [
+      "restart their computer",
       "reply to them later",
       "visit their desk",
-      "close their ticket",
-      "restart their computer"
+      "close their ticket"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Get back to = retornar, responder depois."
     },
     {

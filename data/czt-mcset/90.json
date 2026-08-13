@@ -8,43 +8,43 @@
     {
      "q": "Why does networking have a bad reputation, according to the text?",
      "options": [
-      "It is dishonest by nature",
-      "People confuse it with collecting cards or handing out CVs",
       "It takes too long",
-      "It only happens at conferences"
+      "It only happens at conferences",
+      "It is dishonest by nature",
+      "People confuse it with collecting cards or handing out CVs"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"most people confuse it with collecting business cards or handing out CVs.\""
     },
     {
      "q": "How does the text define real networking?",
      "options": [
-      "Meeting as many people as possible",
-      "The slow, honest cultivation of relationships before you need anything",
       "Exchanging contact details quickly",
-      "Sending your CV widely"
+      "Meeting as many people as possible",
+      "Sending your CV widely",
+      "The slow, honest cultivation of relationships before you need anything"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the slow, honest cultivation of relationships… before you ever need anything from them.\""
     },
     {
      "q": "What is the recommended way to follow up after an event?",
      "options": [
-      "Send your CV",
       "A short, specific note referring to their work",
       "A long formal email",
-      "A phone call the same night"
+      "A phone call the same night",
+      "Send your CV"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Follow up afterwards with a short, specific note — 'It was really interesting to hear about your work on X'.\""
     },
     {
      "q": "Where does the text say the most valuable people usually are?",
      "options": [
-      "Rushing to meet everyone",
+      "By the entrance",
       "In small, interesting conversations near the side",
       "At the main stage",
-      "By the entrance"
+      "Rushing to meet everyone"
      ],
      "answer": 1,
      "why": "\"They are the ones in small, interesting conversations near the side.\""
@@ -53,11 +53,11 @@
      "q": "\"Listen properly, rather than waiting to speak\" suggests that many people…",
      "options": [
       "listen too much",
-      "are planning their reply instead of really listening",
       "ask too many questions",
+      "are planning their reply instead of really listening",
       "stay silent"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: 'esperar para falar' é pensar na própria resposta em vez de ouvir de verdade."
     }
    ]
@@ -72,23 +72,23 @@
     {
      "q": "Which group does Emily choose to approach?",
      "options": [
-      "The big crowd by the door",
-      "A small group by the coffee table",
+      "The people leaving",
       "The speakers on stage",
-      "The people leaving"
+      "The big crowd by the door",
+      "A small group by the coffee table"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"there's a small group by the coffee table — that's where I'll go, not into the big crowd.\""
     },
     {
      "q": "How does Emily plan to introduce herself?",
      "options": [
+      "By talking about her achievements",
       "With her full CV",
-      "With one honest line and a request to join",
       "By handing out cards",
-      "By talking about her achievements"
+      "With one honest line and a request to join"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I'll keep the introduction to one line… Simple, honest, no CV.\""
     },
     {
@@ -96,8 +96,8 @@
      "options": [
       "Ask a curious question about their work",
       "Give a short pitch",
-      "Wait to be asked",
-      "Move to the next group"
+      "Move to the next group",
+      "Wait to be asked"
      ],
      "answer": 0,
      "why": "\"Then I'll ask a curious question rather than talk about myself.\""
@@ -105,23 +105,23 @@
     {
      "q": "What does Emily say is \"the trick\"?",
      "options": [
-      "To speak first",
-      "To actually listen, not just wait for her turn",
       "To collect cards",
-      "To meet everyone"
+      "To meet everyone",
+      "To actually listen, not just wait for her turn",
+      "To speak first"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The trick is to actually listen, not just wait for my turn.\""
     },
     {
      "q": "What kind of follow-up note does Emily plan to send?",
      "options": [
+      "A meeting invite",
       "A generic 'let's connect'",
-      "Something specific about what they discussed",
       "Her CV",
-      "A meeting invite"
+      "Something specific about what they discussed"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"not 'let's connect', but something specific about what we discussed.\""
     }
    ]
@@ -132,41 +132,56 @@
     {
      "q": "\"He's good at **networking**.\" To network means to…",
      "options": [
-      "collect as many cards as possible",
       "build professional relationships over time",
       "give presentations",
-      "manage projects"
+      "manage projects",
+      "collect as many cards as possible"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To network = cultivar relações profissionais."
     },
     {
      "q": "\"We met at a **conference** last year.\" A conference is…",
      "options": [
-      "a private meeting",
-      "a large professional event",
+      "a written report",
       "a phone call",
-      "a written report"
+      "a large professional event",
+      "a private meeting"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Conference = conferência, evento profissional."
     },
     {
      "q": "Choose the correct word: \"A **genuine** connection is one that is ___.\"",
-     "options": ["fake", "sincere", "brief", "formal"],
-     "answer": 1,
+     "options": [
+      "formal",
+      "fake",
+      "brief",
+      "sincere"
+     ],
+     "answer": 3,
      "why": "Genuine = genuíno, sincero."
     },
     {
      "q": "\"I'll **follow up** with a note tomorrow.\" To follow up means to…",
-     "options": ["forget it", "make contact again after", "cancel", "reply-all"],
-     "answer": 1,
+     "options": [
+      "reply-all",
+      "forget it",
+      "cancel",
+      "make contact again after"
+     ],
+     "answer": 3,
      "why": "Follow up = dar sequência ao contato."
     },
     {
      "q": "Choose the correct term: \"She has a wide **professional ___** in logistics.\"",
-     "options": ["card", "circle", "conference", "introduction"],
-     "answer": 1,
+     "options": [
+      "circle",
+      "conference",
+      "card",
+      "introduction"
+     ],
+     "answer": 0,
      "why": "Professional circle = círculo profissional."
     }
    ]
@@ -176,22 +191,32 @@
    "items": [
     {
      "q": "\"Do you mind if I **join you**?\" This is a polite way to…",
-     "options": ["leave a group", "enter a conversation", "end a chat", "change the subject"],
-     "answer": 1,
+     "options": [
+      "change the subject",
+      "leave a group",
+      "end a chat",
+      "enter a conversation"
+     ],
+     "answer": 3,
      "why": "Join you = juntar-se ao grupo/conversa."
     },
     {
      "q": "\"Let's **keep in touch** after the event.\" To keep in touch means to…",
-     "options": ["stay in contact", "meet once", "exchange CVs", "say goodbye"],
-     "answer": 0,
+     "options": [
+      "meet once",
+      "exchange CVs",
+      "stay in contact",
+      "say goodbye"
+     ],
+     "answer": 2,
      "why": "Keep in touch = manter contato."
     },
     {
      "q": "\"I don't want to **work the room** — I'd rather have one real chat.\" To work the room means to…",
      "options": [
-      "clean up",
-      "move around meeting as many people as possible",
       "give a speech",
+      "move around meeting as many people as possible",
+      "clean up",
       "stay in one corner"
      ],
      "answer": 1,
@@ -200,10 +225,10 @@
     {
      "q": "\"She **broke the ice** with a question about the venue.\" To break the ice means to…",
      "options": [
-      "end a conversation",
-      "start a conversation and ease the tension",
       "disagree politely",
-      "leave early"
+      "start a conversation and ease the tension",
+      "leave early",
+      "end a conversation"
      ],
      "answer": 1,
      "why": "Break the ice = quebrar o gelo."
@@ -211,12 +236,12 @@
     {
      "q": "\"Let's **catch up** properly over coffee.\" To catch up means to…",
      "options": [
-      "compete",
-      "talk and share news after a while",
       "hurry",
-      "finish work"
+      "compete",
+      "finish work",
+      "talk and share news after a while"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Catch up = colocar a conversa em dia."
     }
    ]

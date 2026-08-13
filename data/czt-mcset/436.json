@@ -10,56 +10,56 @@
     {
      "q": "When does international tax happen?",
      "options": [
-      "When a deal crosses a border",
-      "When a company hires new staff",
+      "When a company opens a bank account",
       "When a business pays its rent",
-      "When a company opens a bank account"
+      "When a deal crosses a border",
+      "When a company hires new staff"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"International tax happens when a deal crosses a border.\""
     },
     {
      "q": "What decides how much each country takes?",
      "options": [
-      "The size of the company",
-      "Their laws and the treaties they sign",
       "The number of workers",
-      "The price of the service"
+      "The price of the service",
+      "Their laws and the treaties they sign",
+      "The size of the company"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"How much each country takes depends on their laws and on the treaties they sign.\""
     },
     {
      "q": "What do treaties stop?",
      "options": [
-      "The same income being taxed twice in full",
-      "Companies from selling abroad",
+      "Countries from making laws",
       "Clients from paying late",
-      "Countries from making laws"
+      "The same income being taxed twice in full",
+      "Companies from selling abroad"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Treaties stop the same income being taxed twice in full.\""
     },
     {
      "q": "The text suggests that a small business selling only at home…",
      "options": [
-      "pays the highest taxes",
-      "does not face international tax yet",
       "must sign a treaty",
-      "cannot grow"
+      "pays the highest taxes",
+      "cannot grow",
+      "does not face international tax yet"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"not a problem for a small domestic business\" — só entra nesse sistema quando vende para fora."
     },
     {
      "q": "The word \"quietly\" suggests that the company…",
      "options": [
       "makes a lot of noise about the change",
-      "joins the bigger system without really noticing",
       "stops all its sales abroad",
-      "asks the client for help"
+      "asks the client for help",
+      "joins the bigger system without really noticing"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"quietly becomes part\" — a mudança acontece sem barulho, quase sem a empresa perceber."
     }
    ]
@@ -78,9 +78,9 @@
      "q": "Why is this new deal different from the client's past deals?",
      "options": [
       "The money crosses a border",
-      "The client is much bigger",
+      "It has no contract",
       "It is worth less money",
-      "It has no contract"
+      "The client is much bigger"
      ],
      "answer": 0,
      "why": "\"The money crosses a border, so two countries may both have a right to tax the income.\""
@@ -89,9 +89,9 @@
      "q": "What does James ask the client to send him?",
      "options": [
       "The contract and who signs the invoice",
+      "A copy of the treaty",
       "A list of all staff",
-      "The office address",
-      "A copy of the treaty"
+      "The office address"
      ],
      "answer": 0,
      "why": "\"Send me the contract and tell me who signs the invoice.\""
@@ -99,20 +99,20 @@
     {
      "q": "According to James, does the client pay tax twice in full?",
      "options": [
-      "No, the treaty shares the tax",
       "Yes, always",
-      "Only in the UK",
-      "Only in Brazil"
+      "Only in Brazil",
+      "No, the treaty shares the tax",
+      "Only in the UK"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"This does not mean you pay tax twice in full… the treaty decides how they share the tax.\""
     },
     {
      "q": "How does James most likely want the client to feel?",
      "options": [
       "Calm and supported",
-      "Guilty about a mistake",
       "Angry with Brazil",
+      "Guilty about a mistake",
       "Ready to cancel the deal"
      ],
      "answer": 0,
@@ -121,12 +121,12 @@
     {
      "q": "What does James suggest about selling abroad?",
      "options": [
-      "It brings new rules the client did not have before",
       "It is always a bad idea",
+      "It brings new rules the client did not have before",
       "It removes all taxes",
       "It is exactly the same as selling at home"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"grown into a wider, more formal system\" — vender fora traz regras novas que não existiam em casa."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"The sale crossed a <strong>border</strong>.\" A border is…",
      "options": [
-      "the line between two countries",
       "a type of tax",
       "a company office",
+      "the line between two countries",
       "a bank account"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Border = fronteira, a linha entre dois países."
     },
     {
      "q": "Choose the correct word: \"Both countries may have a ___ to tax this income.\"",
      "options": [
-      "right",
       "door",
       "seat",
-      "clock"
+      "clock",
+      "right"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Right to tax = direito de tributar."
     },
     {
      "q": "\"The two countries signed a <strong>treaty</strong>.\" A treaty is…",
      "options": [
-      "a formal agreement between countries",
       "a company report",
-      "a client invoice",
-      "a private letter"
+      "a private letter",
+      "a formal agreement between countries",
+      "a client invoice"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Treaty = tratado, um acordo formal entre países."
     },
     {
      "q": "Choose the correct word: \"They must follow the tax ___ of both countries.\"",
      "options": [
-      "laws",
+      "meals",
       "songs",
       "roads",
-      "meals"
+      "laws"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Law = lei; \"tax laws\" são as leis de imposto."
     },
     {
      "q": "\"A small <strong>domestic</strong> business\" is a business that…",
      "options": [
+      "pays no tax at all",
       "sells only inside its own country",
       "sells all over the world",
-      "pays no tax at all",
       "has many offices abroad"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Domestic = doméstico; aqui, que vende só dentro do próprio país."
     }
    ]
@@ -201,31 +201,31 @@
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the invoice.\" To sign off on means to…",
      "options": [
-      "formally approve",
-      "throw away",
       "read quickly",
-      "translate"
+      "throw away",
+      "translate",
+      "formally approve"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new tax process next month.\" To roll out means to…",
      "options": [
+      "print it",
       "start using it step by step",
-      "cancel it",
       "hide it from the team",
-      "print it"
+      "cancel it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Roll out = começar a usar de forma progressiva."
     },
     {
      "q": "\"The client <strong>pushed back on</strong> the extra fee.\" This means the client…",
      "options": [
       "resisted or disagreed with it",
-      "paid it at once",
       "forgot about it",
+      "paid it at once",
       "asked for more"
      ],
      "answer": 0,
@@ -234,23 +234,23 @@
     {
      "q": "\"They agreed to send the contract but never <strong>followed through</strong>.\" They…",
      "options": [
-      "did not finish what they promised",
-      "sent it twice",
       "changed the price",
+      "sent it twice",
+      "did not finish what they promised",
       "read it carefully"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"Let's <strong>sort out</strong> the tax before the deal closes.\" To sort out means to…",
      "options": [
-      "fix or organise it",
-      "delay it",
       "ignore it",
+      "delay it",
+      "fix or organise it",
       "cancel the deal"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sort out = resolver, organizar algo."
     }
    ]

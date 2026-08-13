@@ -9,37 +9,42 @@
      "q": "What does running an operation mean, according to the text?",
      "options": [
       "Closing a single big deal",
-      "Turning a single deal into a repeatable process",
       "Avoiding shipments",
-      "Handling only exceptions"
+      "Handling only exceptions",
+      "Turning a single deal into a repeatable process"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Running an import or export operation means turning a single deal into a repeatable process.\""
     },
     {
      "q": "What habit do the best trade operators share?",
      "options": [
       "Answering every email",
+      "Avoiding standard processes",
       "Separating the routine from the exception",
-      "Treating all shipments the same",
-      "Avoiding standard processes"
+      "Treating all shipments the same"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"they separate the routine from the exception.\""
     },
     {
      "q": "What proportion of shipments follow a standard path?",
-     "options": ["Half", "Ninety per cent", "Ten per cent", "All of them"],
-     "answer": 1,
+     "options": [
+      "Ten per cent",
+      "All of them",
+      "Ninety per cent",
+      "Half"
+     ],
+     "answer": 2,
      "why": "\"Ninety per cent of shipments follow a standard path.\""
     },
     {
      "q": "Why should routine shipments get a standard process, not endless emails?",
      "options": [
-      "Because they are unimportant",
+      "To slow the operation down",
       "So attention is saved for the exceptions that need real thinking",
-      "Because customers prefer emails",
-      "To slow the operation down"
+      "Because they are unimportant",
+      "Because customers prefer emails"
      ],
      "answer": 1,
      "why": "Inferência: padronizar o rotineiro libera atenção para os 10% de exceções."
@@ -66,25 +71,35 @@
    "items": [
     {
      "q": "How many live shipments are on the board?",
-     "options": ["Four", "Ten", "Forty", "Ninety"],
-     "answer": 2,
+     "options": [
+      "Forty",
+      "Four",
+      "Ninety",
+      "Ten"
+     ],
+     "answer": 0,
      "why": "\"We've got forty live shipments on the board.\""
     },
     {
      "q": "How does James handle the routine shipments?",
      "options": [
+      "Ignores them entirely",
       "Discusses each one",
       "Marks them green and moves on fast",
-      "Escalates them",
-      "Ignores them entirely"
+      "Escalates them"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I'm going to mark those green and move on fast. If it's on track, we don't discuss it.\""
     },
     {
      "q": "How many exceptions does James count?",
-     "options": ["Two", "Four", "Ten", "Forty"],
-     "answer": 1,
+     "options": [
+      "Ten",
+      "Two",
+      "Forty",
+      "Four"
+     ],
+     "answer": 3,
      "why": "\"Right now I count four.\""
     },
     {
@@ -102,11 +117,11 @@
      "q": "What is the goal of the morning, in James's words?",
      "options": [
       "To review all forty shipments",
-      "To stop four exceptions from quietly turning into ten",
+      "To invoice customers",
       "To close new deals",
-      "To invoice customers"
+      "To stop four exceptions from quietly turning into ten"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"stop those four exceptions from quietly turning into ten.\""
     }
    ]
@@ -116,8 +131,13 @@
    "items": [
     {
      "q": "\"The shipment is **in transit**.\" In transit means…",
-     "options": ["delivered", "on its way, still travelling", "cancelled", "in customs"],
-     "answer": 1,
+     "options": [
+      "on its way, still travelling",
+      "delivered",
+      "in customs",
+      "cancelled"
+     ],
+     "answer": 0,
      "why": "In transit = em trânsito."
     },
     {
@@ -133,16 +153,21 @@
     },
     {
      "q": "Choose the correct word: \"We need to **___** this shipment — the customer needs it urgently.\"",
-     "options": ["expedite", "coordinate", "hold", "classify"],
-     "answer": 0,
+     "options": [
+      "coordinate",
+      "hold",
+      "expedite",
+      "classify"
+     ],
+     "answer": 2,
      "why": "To expedite = acelerar, agilizar."
     },
     {
      "q": "A **backlog** is…",
      "options": [
       "work that has piled up and is overdue",
-      "a routine process",
       "a finished order",
+      "a routine process",
       "a customs form"
      ],
      "answer": 0,
@@ -150,8 +175,13 @@
     },
     {
      "q": "Choose the correct term: \"There are ten deals in the **___** for next month.\"",
-     "options": ["backlog", "pipeline", "exception", "clearance"],
-     "answer": 1,
+     "options": [
+      "backlog",
+      "exception",
+      "pipeline",
+      "clearance"
+     ],
+     "answer": 2,
      "why": "Pipeline = fluxo do que está por vir."
     }
    ]
@@ -161,36 +191,56 @@
    "items": [
     {
      "q": "\"Let's **keep an eye on** the delayed vessel.\" To keep an eye on means to…",
-     "options": ["ignore", "monitor closely", "cancel", "escalate"],
-     "answer": 1,
+     "options": [
+      "monitor closely",
+      "cancel",
+      "escalate",
+      "ignore"
+     ],
+     "answer": 0,
      "why": "Keep an eye on = ficar de olho, monitorar."
     },
     {
      "q": "\"That customs issue could **hold up** the whole order.\" To hold up means to…",
-     "options": ["support", "delay", "release", "invoice"],
+     "options": [
+      "support",
+      "delay",
+      "invoice",
+      "release"
+     ],
      "answer": 1,
      "why": "Hold up = atrasar, travar."
     },
     {
      "q": "\"Can you **chase up** the missing documents?\" To chase up means to…",
      "options": [
-      "follow up to get something done",
+      "approve",
       "cancel",
       "file away",
-      "approve"
+      "follow up to get something done"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Chase up = cobrar/perseguir uma pendência."
     },
     {
      "q": "\"Three orders are **piling up** at the port.\" To pile up means to…",
-     "options": ["clear quickly", "accumulate", "disappear", "move on"],
+     "options": [
+      "disappear",
+      "accumulate",
+      "move on",
+      "clear quickly"
+     ],
      "answer": 1,
      "why": "Pile up = acumular-se."
     },
     {
      "q": "\"Let's **stay on top of** the exceptions this week.\" To stay on top of means to…",
-     "options": ["fall behind on", "keep in control of", "hand over", "ignore"],
+     "options": [
+      "hand over",
+      "keep in control of",
+      "ignore",
+      "fall behind on"
+     ],
      "answer": 1,
      "why": "Stay on top of = manter sob controle."
     }

@@ -8,21 +8,21 @@
     {
      "q": "Which is an example of a difficult conversation?",
      "options": [
-      "Saying hello",
       "Saying no, sharing a concern, or asking a colleague to change something",
-      "Making coffee",
-      "Reading an email"
+      "Saying hello",
+      "Reading an email",
+      "Making coffee"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Maybe you need to say no, to share a concern, or to ask a colleague to change something.\""
     },
     {
      "q": "What is the best way to have a difficult conversation?",
      "options": [
-      "Shout and speak fast",
+      "Say nothing",
       "Stay calm, speak slowly, and start with 'I'",
-      "Blame the other person",
-      "Say nothing"
+      "Shout and speak fast",
+      "Blame the other person"
      ],
      "answer": 1,
      "why": "\"stay calm, speak slowly, and start with I instead of you.\""
@@ -30,29 +30,34 @@
     {
      "q": "Which sentence is better, according to the text?",
      "options": [
-      "\"You are always late\"",
       "\"I feel worried about the deadline\"",
+      "\"You are always late\"",
       "\"You never listen\"",
       "\"You are the problem\""
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"'I feel worried about the deadline' is much better than 'You are always late'.\""
     },
     {
      "q": "How does the text describe a difficult conversation?",
      "options": [
+      "A waste of time",
       "A fight",
-      "A gift of honesty",
       "A punishment",
-      "A waste of time"
+      "A gift of honesty"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A difficult conversation is a gift of honesty.\""
     },
     {
      "q": "What should a difficult conversation focus on?",
-     "options": ["Blame", "A solution", "The past", "Winning"],
-     "answer": 1,
+     "options": [
+      "Blame",
+      "The past",
+      "Winning",
+      "A solution"
+     ],
+     "answer": 3,
      "why": "\"It is short, respectful, and focused on a solution.\""
     }
    ]
@@ -78,45 +83,45 @@
     {
      "q": "Why won't James say 'You did a bad job'?",
      "options": [
-      "It's polite",
       "It's an attack, and the colleague will just defend himself",
-      "It's true",
-      "It's short"
+      "It's short",
+      "It's polite",
+      "It's true"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"That's an attack, and he'll just defend himself.\""
     },
     {
      "q": "How does James describe the problem?",
      "options": [
-      "By calling the colleague careless",
       "By describing the problem and how it affected him, using 'I'",
+      "By saying nothing",
       "By shouting",
-      "By saying nothing"
+      "By calling the colleague careless"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I'm describing the problem and how it affected me, not calling him careless.\""
     },
     {
      "q": "What solution does James suggest?",
      "options": [
-      "Fire the colleague",
       "Add a quick check of the numbers before the report goes out",
+      "Blame someone else",
       "Never write reports",
-      "Blame someone else"
+      "Fire the colleague"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"could we add a quick check of the numbers before it goes out?\""
     },
     {
      "q": "Why is this a difficult conversation done well?",
      "options": [
-      "The colleague feels attacked",
-      "Short, respectful, about a solution — he doesn't feel attacked and both know the next step",
+      "It is very long",
       "Nothing is solved",
-      "It is very long"
+      "The colleague feels attacked",
+      "Short, respectful, about a solution — he doesn't feel attacked and both know the next step"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Short, respectful, and about a solution. He doesn't feel attacked…\""
     }
    ]
@@ -127,40 +132,55 @@
     {
      "q": "A **concern** is…",
      "options": [
-      "a celebration",
-      "a worry about something",
       "a report",
-      "a holiday"
+      "a holiday",
+      "a celebration",
+      "a worry about something"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Concern = preocupação."
     },
     {
      "q": "To **worry** means to…",
-     "options": ["feel calm", "feel anxious about something", "be happy", "sleep"],
-     "answer": 1,
+     "options": [
+      "be happy",
+      "feel calm",
+      "feel anxious about something",
+      "sleep"
+     ],
+     "answer": 2,
      "why": "Worry = preocupar-se."
     },
     {
      "q": "Choose the correct word: \"Please stay **___** and speak slowly.\"",
-     "options": ["calm", "angry", "loud", "late"],
-     "answer": 0,
+     "options": [
+      "angry",
+      "loud",
+      "calm",
+      "late"
+     ],
+     "answer": 2,
      "why": "Calm = calmo."
     },
     {
      "q": "**Respect** means…",
      "options": [
       "treating someone rudely",
-      "treating someone with care and politeness",
       "ignoring someone",
-      "shouting"
+      "shouting",
+      "treating someone with care and politeness"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Respect = respeito."
     },
     {
      "q": "Choose the correct word: \"A good difficult conversation focuses on a **___**.\"",
-     "options": ["solution", "fight", "blame", "story"],
+     "options": [
+      "solution",
+      "blame",
+      "fight",
+      "story"
+     ],
      "answer": 0,
      "why": "Solution = solução."
     }
@@ -171,42 +191,57 @@
    "items": [
     {
      "q": "\"Avoiding it **makes it worse**.\" To make something worse means to…",
-     "options": ["improve it", "make it more of a problem", "solve it", "ignore it"],
-     "answer": 1,
+     "options": [
+      "make it more of a problem",
+      "ignore it",
+      "solve it",
+      "improve it"
+     ],
+     "answer": 0,
      "why": "Make it worse = piorar."
     },
     {
      "q": "\"I felt a bit **stuck**.\" To feel stuck means to…",
      "options": [
-      "feel free",
       "feel unable to move forward",
-      "feel happy",
-      "feel fast"
+      "feel fast",
+      "feel free",
+      "feel happy"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Stuck = travado, sem saída."
     },
     {
      "q": "\"Let's **clear the air**.\" To clear the air means to…",
      "options": [
       "start a fight",
-      "resolve tension by talking openly",
       "avoid the topic",
+      "resolve tension by talking openly",
       "leave"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Clear the air = esclarecer, aliviar a tensão."
     },
     {
      "q": "\"I'm **happy to help** with that.\" Happy to help means…",
-     "options": ["I refuse", "I'm glad to assist", "I'm too busy", "I don't care"],
+     "options": [
+      "I refuse",
+      "I'm glad to assist",
+      "I'm too busy",
+      "I don't care"
+     ],
      "answer": 1,
      "why": "Happy to help = feliz em ajudar."
     },
     {
      "q": "\"Let's **talk it over**.\" To talk something over means to…",
-     "options": ["discuss it calmly", "avoid it", "shout about it", "write it"],
-     "answer": 0,
+     "options": [
+      "shout about it",
+      "write it",
+      "discuss it calmly",
+      "avoid it"
+     ],
+     "answer": 2,
      "why": "Talk over = conversar sobre."
     }
    ]

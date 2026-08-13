@@ -8,46 +8,56 @@
     {
      "q": "According to the text, who do we work with every day?",
      "options": [
-      "Only people from our city",
       "People from different countries",
-      "No one",
-      "Only managers"
+      "Only people from our city",
+      "Only managers",
+      "No one"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Every day, we work with people from different countries.\""
     },
     {
      "q": "What do different cultures have?",
-     "options": ["The same habits", "Different habits", "No habits", "One habit"],
-     "answer": 1,
+     "options": [
+      "Different habits",
+      "No habits",
+      "One habit",
+      "The same habits"
+     ],
+     "answer": 0,
      "why": "\"Different cultures have different habits.\""
     },
     {
      "q": "Are different habits wrong?",
      "options": [
-      "Yes, always",
-      "No — they are just different",
+      "Only in meetings",
       "Only some",
-      "Only in meetings"
+      "Yes, always",
+      "No — they are just different"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"None of them are wrong — they are just different.\""
     },
     {
      "q": "What is 'the best tool'?",
-     "options": ["Curiosity", "Money", "Speed", "Silence"],
+     "options": [
+      "Curiosity",
+      "Silence",
+      "Speed",
+      "Money"
+     ],
      "answer": 0,
      "why": "\"The best tool is curiosity.\""
     },
     {
      "q": "Why ask 'How do you usually start meetings in your country?'",
      "options": [
-      "To criticise",
       "To learn and build a friendly relationship",
+      "To show off",
       "To end the talk",
-      "To show off"
+      "To criticise"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"a great way to learn and build a friendly relationship.\""
     }
    ]
@@ -62,51 +72,56 @@
     {
      "q": "What is James doing before the first meeting?",
      "options": [
-      "Assuming his style is right",
-      "Asking questions to understand the team's style",
       "Nothing",
-      "Cancelling the meeting"
+      "Assuming his style is right",
+      "Cancelling the meeting",
+      "Asking questions to understand the team's style"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I'm asking questions to understand their style.\""
     },
     {
      "q": "What did James read about meetings in Japan?",
      "options": [
-      "People are very loud",
       "People are often more soft-spoken, with more silence that is normal and comfortable",
+      "People are very loud",
       "Meetings are cancelled",
       "There are no meetings"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"people are often more soft-spoken, and there's more silence, and that silence is normal.\""
     },
     {
      "q": "What can a soft 'that might be difficult' mean?",
-     "options": ["Yes", "No", "Maybe later", "Nothing"],
+     "options": [
+      "Yes",
+      "No",
+      "Maybe later",
+      "Nothing"
+     ],
      "answer": 1,
      "why": "\"A soft 'that might be difficult' can mean no.\""
     },
     {
      "q": "What respectful question does James plan to ask?",
      "options": [
-      "'Why is your way different?'",
       "'How do you usually like to run meetings?'",
+      "'Can we skip the meeting?'",
       "'Is my way better?'",
-      "'Can we skip the meeting?'"
+      "'Why is your way different?'"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"'How do you usually like to run meetings?'\""
     },
     {
      "q": "What is James's attitude to different styles?",
      "options": [
       "Different is wrong",
+      "Ignore the differences",
       "Different isn't wrong — it's just different; be curious and respectful",
-      "Change everything",
-      "Ignore the differences"
+      "Change everything"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Different isn't wrong — it's just different.\""
     }
    ]
@@ -117,46 +132,56 @@
     {
      "q": "A **culture** is…",
      "options": [
-      "a currency",
-      "the shared habits and ways of a group or country",
       "a report",
-      "a ship"
+      "a ship",
+      "the shared habits and ways of a group or country",
+      "a currency"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Culture = cultura."
     },
     {
      "q": "A **habit** is…",
      "options": [
-      "a mistake",
-      "something you usually do",
       "a country",
-      "a meeting"
+      "a meeting",
+      "a mistake",
+      "something you usually do"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Habit = hábito."
     },
     {
      "q": "Choose the correct word: \"Some people speak **___**, saying what they think quickly.\"",
-     "options": ["directly", "silently", "never", "slowly only"],
+     "options": [
+      "directly",
+      "silently",
+      "slowly only",
+      "never"
+     ],
      "answer": 0,
      "why": "Directly = diretamente."
     },
     {
      "q": "**Curiosity** is…",
      "options": [
-      "not caring",
       "the wish to learn and understand",
       "anger",
+      "not caring",
       "silence"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Curiosity = curiosidade."
     },
     {
      "q": "Choose the correct word: \"A local **___** is a normal way of doing things in a place.\"",
-     "options": ["custom", "mistake", "report", "deadline"],
-     "answer": 0,
+     "options": [
+      "report",
+      "mistake",
+      "custom",
+      "deadline"
+     ],
+     "answer": 2,
      "why": "Custom = costume."
     }
    ]
@@ -167,45 +192,55 @@
     {
      "q": "\"I won't **rush to fill** the silence.\" To fill the silence means to…",
      "options": [
-      "stay quiet",
-      "quickly say something to end a pause",
       "leave",
-      "shout"
+      "quickly say something to end a pause",
+      "shout",
+      "stay quiet"
      ],
      "answer": 1,
      "why": "Fill the silence = preencher o silêncio."
     },
     {
      "q": "\"I'll **adapt a little** to their style.\" To adapt means to…",
-     "options": ["refuse to change", "adjust", "leave", "argue"],
-     "answer": 1,
+     "options": [
+      "leave",
+      "refuse to change",
+      "argue",
+      "adjust"
+     ],
+     "answer": 3,
      "why": "Adapt = adaptar-se."
     },
     {
      "q": "\"Listen not just to the **words**.\" This means also notice…",
      "options": [
+      "nothing",
       "the meaning behind them",
       "the volume only",
-      "the clock",
-      "nothing"
+      "the clock"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Ouvir além das palavras = captar o sentido."
     },
     {
      "q": "\"I don't **assume** my way is right.\" To assume means to…",
      "options": [
       "check carefully",
-      "believe something without checking",
       "ask",
-      "learn"
+      "learn",
+      "believe something without checking"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Assume = supor sem checar."
     },
     {
      "q": "\"The relationship starts **warm**.\" A warm start is…",
-     "options": ["cold and distant", "friendly and open", "angry", "silent"],
+     "options": [
+      "cold and distant",
+      "friendly and open",
+      "silent",
+      "angry"
+     ],
      "answer": 1,
      "why": "Warm = caloroso, amistoso."
     }

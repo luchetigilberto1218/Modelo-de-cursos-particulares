@@ -8,10 +8,10 @@
     {
      "q": "What does customs clearance turn a shipment into?",
      "options": [
-      "A paper form",
+      "An insurance claim",
       "Goods you can actually sell",
-      "A tax bill",
-      "An insurance claim"
+      "A paper form",
+      "A tax bill"
      ],
      "answer": 1,
      "why": "\"Customs clearance turns a shipment on paper into goods you can actually sell.\""
@@ -19,45 +19,45 @@
     {
      "q": "What three things does clearance depend on?",
      "options": [
-      "Speed, cost and route",
-      "The right documents, classification, and values",
       "Price, weight and origin",
-      "Buyer, seller and bank"
+      "Speed, cost and route",
+      "Buyer, seller and bank",
+      "The right documents, classification, and values"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the right documents, the right classification, and the right values.\""
     },
     {
      "q": "What can happen if one of these is wrong?",
      "options": [
-      "Nothing",
       "The shipment can be held, fined, or sent back",
       "The price rises",
-      "The insurance pays out"
+      "The insurance pays out",
+      "Nothing"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"the shipment can be held, fined, or sent back.\""
     },
     {
      "q": "How do experienced trade teams treat documents?",
      "options": [
-      "Check them once",
       "Check every document twice",
       "Leave it to customs",
-      "Ignore the certificate of origin"
+      "Ignore the certificate of origin",
+      "Check them once"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Experienced trade teams check every document twice.\""
     },
     {
      "q": "How does the text describe customs officers?",
      "options": [
-      "The enemy",
-      "People paid to look for problems, so your paperwork must be clean",
+      "Always slow",
       "Irrelevant",
-      "Always slow"
+      "People paid to look for problems, so your paperwork must be clean",
+      "The enemy"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"They are paid to look for problems, and you are paid to make sure they do not find any.\""
     }
    ]
@@ -72,10 +72,10 @@
     {
      "q": "Why has the shipment been held?",
      "options": [
-      "The goods were damaged",
-      "It's a paperwork problem — a wrong HS code",
       "The buyer didn't pay",
-      "The ship was late"
+      "It's a paperwork problem — a wrong HS code",
+      "The ship was late",
+      "The goods were damaged"
      ],
      "answer": 1,
      "why": "\"it's entirely a paperwork problem.\""
@@ -83,32 +83,32 @@
     {
      "q": "What was wrong with the HS code?",
      "options": [
+      "It was too long",
       "It said roasted coffee but the goods were green, unroasted beans",
       "It was missing",
-      "It was in the wrong language",
-      "It was too long"
+      "It was in the wrong language"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"the code here says 0901 — that's roasted coffee. But the goods are actually green, unroasted beans.\""
     },
     {
      "q": "Why does the wrong code matter?",
      "options": [
-      "It changes the shipping route",
-      "The duty rate is different for the two codes",
       "It delays the invoice",
-      "It affects the insurance"
+      "It changes the shipping route",
+      "It affects the insurance",
+      "The duty rate is different for the two codes"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the duty rate is different for the two codes.\""
     },
     {
      "q": "What is the fix?",
      "options": [
-      "Return the goods",
+      "Cancel the order",
       "Submit a corrected invoice with the right code and pay the correct duty",
       "Re-route the shipment",
-      "Cancel the order"
+      "Return the goods"
      ],
      "answer": 1,
      "why": "\"We submit a corrected invoice with the right HS code, we pay the correct duty.\""
@@ -116,12 +116,12 @@
     {
      "q": "What is the lesson Charlotte draws?",
      "options": [
-      "Trust last month's paperwork",
       "Always check the HS code against the actual goods, every document twice",
       "Avoid customs",
+      "Trust last month's paperwork",
       "Pay more duty to be safe"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"always check the HS code against the actual goods, not against last month's shipment. Every document, twice.\""
     }
    ]
@@ -132,37 +132,42 @@
     {
      "q": "\"The **commercial invoice** lists the goods and their value.\" A commercial invoice is…",
      "options": [
-      "a shipping schedule",
-      "the seller's bill describing the goods and price",
       "an insurance policy",
-      "a customs receipt"
+      "a customs receipt",
+      "a shipping schedule",
+      "the seller's bill describing the goods and price"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Commercial invoice = fatura comercial."
     },
     {
      "q": "The **bill of lading** is…",
      "options": [
-      "a tax form",
       "the document issued by the carrier for the goods shipped",
       "a price list",
-      "a bank guarantee"
+      "a bank guarantee",
+      "a tax form"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Bill of lading = conhecimento de embarque."
     },
     {
      "q": "Choose the correct word: \"Customs will **___** the shipment until the code is corrected.\"",
-     "options": ["release", "hold", "classify", "insure"],
-     "answer": 1,
+     "options": [
+      "insure",
+      "classify",
+      "hold",
+      "release"
+     ],
+     "answer": 2,
      "why": "To hold a shipment = reter a carga."
     },
     {
      "q": "The **certificate of origin** shows…",
      "options": [
-      "the goods' value",
-      "the country where the goods were produced",
       "the shipping date",
+      "the country where the goods were produced",
+      "the goods' value",
       "the buyer's name"
      ],
      "answer": 1,
@@ -170,8 +175,13 @@
     },
     {
      "q": "Choose the correct term: \"Once satisfied, customs will **___** the goods.\"",
-     "options": ["hold", "release", "classify", "fine"],
-     "answer": 1,
+     "options": [
+      "release",
+      "fine",
+      "hold",
+      "classify"
+     ],
+     "answer": 0,
      "why": "To release = liberar a carga."
     }
    ]
@@ -181,14 +191,24 @@
    "items": [
     {
      "q": "\"The shipment got **held up** at customs.\" To be held up means to…",
-     "options": ["be released", "be delayed", "be insured", "be cheap"],
-     "answer": 1,
+     "options": [
+      "be delayed",
+      "be released",
+      "be cheap",
+      "be insured"
+     ],
+     "answer": 0,
      "why": "Held up = retido, atrasado."
     },
     {
      "q": "\"Let's **sort out** the paperwork before it ships.\" To sort out means to…",
-     "options": ["ignore", "resolve or fix", "delay", "lose"],
-     "answer": 1,
+     "options": [
+      "resolve or fix",
+      "ignore",
+      "delay",
+      "lose"
+     ],
+     "answer": 0,
      "why": "Sort out = resolver, arrumar."
     },
     {
@@ -204,14 +224,24 @@
     },
     {
      "q": "\"That one-digit error **cost us** three days.\" To cost someone something means to…",
-     "options": ["save them", "make them lose it", "insure it", "refund it"],
-     "answer": 1,
+     "options": [
+      "insure it",
+      "save them",
+      "refund it",
+      "make them lose it"
+     ],
+     "answer": 3,
      "why": "Cost us three days = custou-nos três dias."
     },
     {
      "q": "\"Let's **go over** the documents once more.\" To go over means to…",
-     "options": ["skip", "review carefully", "sign", "send"],
-     "answer": 1,
+     "options": [
+      "send",
+      "sign",
+      "skip",
+      "review carefully"
+     ],
+     "answer": 3,
      "why": "Go over = revisar."
     }
    ]

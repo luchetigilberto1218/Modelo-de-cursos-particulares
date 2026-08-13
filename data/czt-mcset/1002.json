@@ -10,21 +10,21 @@
     {
      "q": "When does the week start?",
      "options": [
+      "On Friday",
       "On Monday",
       "On Sunday",
-      "On Friday",
       "On Saturday"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The week starts on Monday and ends on Sunday.\""
     },
     {
      "q": "Which two days are the weekend?",
      "options": [
-      "Monday and Tuesday",
+      "Wednesday and Thursday",
       "Saturday and Sunday",
       "Friday and Monday",
-      "Wednesday and Thursday"
+      "Monday and Tuesday"
      ],
      "answer": 1,
      "why": "\"Saturday and Sunday are the weekend.\""
@@ -32,8 +32,8 @@
     {
      "q": "How many new words do you learn today?",
      "options": [
-      "Two",
       "Three",
+      "Two",
       "Five",
       "Ten"
      ],
@@ -45,8 +45,8 @@
      "options": [
       "very fast and hard",
       "slow and easy to follow",
-      "only for managers",
-      "about numbers"
+      "about numbers",
+      "only for managers"
      ],
      "answer": 1,
      "why": "Inferência: \"step by step\" mostra que a lição é calma e simples, feita para iniciantes."
@@ -54,12 +54,12 @@
     {
      "q": "The message \"English comes in CAN's, not in CAN'Ts\" is there to…",
      "options": [
-      "give the students confidence",
-      "explain the office rules",
       "list the meetings",
-      "correct a mistake"
+      "explain the office rules",
+      "correct a mistake",
+      "give the students confidence"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: é uma frase de motivação — quer dizer \"você é capaz\"."
     }
    ]
@@ -77,21 +77,21 @@
     {
      "q": "What day does the team have the big meeting?",
      "options": [
-      "On Monday",
       "On Friday",
+      "On Monday",
       "On Sunday",
       "On Thursday"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"On Monday we have our big meeting.\""
     },
     {
      "q": "What time does the team start in the morning?",
      "options": [
-      "At six",
+      "At eight",
       "At nine",
-      "At ten",
-      "At eight"
+      "At six",
+      "At ten"
      ],
      "answer": 1,
      "why": "\"We start at nine in the morning.\""
@@ -99,9 +99,9 @@
     {
      "q": "Where does Sophie work on Friday?",
      "options": [
-      "In the office",
-      "From home",
       "In another city",
+      "From home",
+      "In the office",
       "At the training room"
      ],
      "answer": 1,
@@ -110,20 +110,20 @@
     {
      "q": "Sophie says \"please come on time\" for the Monday meeting. This suggests that the meeting is…",
      "options": [
+      "cancelled",
       "not important",
       "important, so being late is a problem",
-      "cancelled",
       "only online"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: ela pede pontualidade porque a reunião é importante."
     },
     {
      "q": "Why is the office probably quiet on Friday?",
      "options": [
-      "Because it is closed",
-      "Because many people work from home",
       "Because it is a holiday",
+      "Because many people work from home",
+      "Because it is closed",
       "Because the team is on training"
      ],
      "answer": 1,
@@ -139,56 +139,56 @@
     {
      "q": "\"The team meeting is on <strong>Monday</strong>.\" Monday is…",
      "options": [
-      "segunda-feira",
-      "sexta-feira",
       "domingo",
-      "sábado"
+      "sexta-feira",
+      "sábado",
+      "segunda-feira"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Monday = segunda-feira, o primeiro dia da semana de trabalho."
     },
     {
      "q": "Choose the correct word: \"I am in the office on ___, the second day of the week.\"",
      "options": [
       "Monday",
+      "weekend",
       "Tuesday",
-      "Sunday",
-      "weekend"
+      "Sunday"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Tuesday = terça-feira, o segundo dia da semana."
     },
     {
      "q": "\"This <strong>week</strong> is very busy.\" Week means…",
      "options": [
-      "dia",
       "semana",
       "mês",
-      "hora"
+      "hora",
+      "dia"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Week = semana (de segunda a domingo)."
     },
     {
      "q": "Choose the correct word: \"We do not work on Saturday and Sunday. Have a nice ___!\"",
      "options": [
-      "weekend",
       "schedule",
       "Monday",
-      "meeting"
+      "meeting",
+      "weekend"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Weekend = fim de semana (sábado e domingo)."
     },
     {
      "q": "\"My <strong>schedule</strong> is full this week.\" Schedule means…",
      "options": [
-      "agenda / horário",
-      "escritório",
       "salário",
+      "escritório",
+      "agenda / horário",
       "e-mail"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Schedule = agenda / horário: os dias e horas do seu trabalho."
     }
    ]
@@ -203,8 +203,8 @@
      "options": [
       "a free day, with no work",
       "a very busy day",
-      "a training day",
-      "a meeting day"
+      "a meeting day",
+      "a training day"
      ],
      "answer": 0,
      "why": "Day off = dia de folga, um dia sem trabalho."
@@ -213,19 +213,19 @@
      "q": "\"On Monday I <strong>work from home</strong>.\" This means I…",
      "options": [
       "go to the office",
+      "travel for work",
       "work at my house",
-      "take a holiday",
-      "travel for work"
+      "take a holiday"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Work from home = trabalhar de casa, sem ir ao escritório."
     },
     {
      "q": "\"Let's <strong>catch up</strong> on Tuesday.\" To catch up means to…",
      "options": [
       "meet and talk to share news",
-      "start a new project",
       "close the office",
+      "start a new project",
       "go home early"
      ],
      "answer": 0,
@@ -246,9 +246,9 @@
      "q": "\"Please <strong>check in</strong> with me on Wednesday.\" To check in means to…",
      "options": [
       "give a quick update to someone",
-      "leave the office",
       "book a hotel",
-      "read your email"
+      "read your email",
+      "leave the office"
      ],
      "answer": 0,
      "why": "Check in (with someone) = dar um retorno rápido, falar para atualizar."

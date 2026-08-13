@@ -8,46 +8,56 @@
     {
      "q": "According to the text, good negotiation is about…",
      "options": [
-      "winning against the other side",
       "building an agreement both sides want to honour",
-      "getting the lowest price",
-      "ending quickly"
+      "ending quickly",
+      "winning against the other side",
+      "getting the lowest price"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"building an agreement that both sides actually want to honour after the handshake.\""
     },
     {
      "q": "What do skilled negotiators do instead of giving things for free?",
-     "options": ["They refuse all concessions", "They trade — each concession is linked to something in return", "They raise the price", "They walk away"],
-     "answer": 1,
+     "options": [
+      "They walk away",
+      "They raise the price",
+      "They trade — each concession is linked to something in return",
+      "They refuse all concessions"
+     ],
+     "answer": 2,
      "why": "\"They trade… Each concession is linked to something they receive in return.\""
     },
     {
      "q": "Why is trading described as keeping the process \"fair and visible\"?",
      "options": [
-      "Because it is faster",
       "Because each side can see what is being exchanged",
       "Because it avoids questions",
+      "Because it is faster",
       "Because it hides the interests"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: quando cada concessão está ligada a uma contrapartida, o que se troca fica à vista de todos."
     },
     {
      "q": "What does the text say is usually less important than it seems?",
      "options": [
-      "The other side's opening position",
-      "The volume",
       "The price",
-      "The relationship"
+      "The relationship",
+      "The volume",
+      "The other side's opening position"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Their opening position is usually less important than the interests behind it.\""
     },
     {
      "q": "Where, according to the text, do the best deals come from?",
-     "options": ["Pressure", "Understanding", "Speed", "A low first offer"],
-     "answer": 1,
+     "options": [
+      "Pressure",
+      "Speed",
+      "Understanding",
+      "A low first offer"
+     ],
+     "answer": 2,
      "why": "\"The best deals come from understanding, not from pressure.\""
     }
    ]
@@ -73,38 +83,43 @@
     {
      "q": "What does Oliver offer in return for a twelve-month contract?",
      "options": [
+      "A lower volume",
       "A free sample",
-      "Locking the price for the whole year",
       "A shorter contract",
-      "A lower volume"
+      "Locking the price for the whole year"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"If you can commit to a twelve-month contract… we could look at locking the price for the whole year.\""
     },
     {
      "q": "What condition does Oliver attach to shortening the lead time?",
      "options": [
       "A higher price",
-      "Bringing the volume up to the higher tier",
       "A signed NDA",
-      "Nothing — it's free"
+      "Nothing — it's free",
+      "Bringing the volume up to the higher tier"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"if you can bring the volume up to the higher tier, we could shorten the lead time… it only works if the volume is there.\""
     },
     {
      "q": "What does Oliver want to avoid?",
-     "options": ["Signing a contract", "Haggling line by line", "Locking the price", "Discussing volume"],
-     "answer": 1,
+     "options": [
+      "Signing a contract",
+      "Locking the price",
+      "Haggling line by line",
+      "Discussing volume"
+     ],
+     "answer": 2,
      "why": "\"What I'd rather avoid is haggling line by line.\""
     },
     {
      "q": "What does Oliver believe will produce a deal that holds?",
      "options": [
-      "Pressure",
-      "Both sides acting in good faith",
       "A very low first offer",
-      "A long meeting"
+      "Both sides acting in good faith",
+      "A long meeting",
+      "Pressure"
      ],
      "answer": 1,
      "why": "\"If we're both acting in good faith, we'll get to a deal that holds.\""
@@ -116,42 +131,57 @@
    "items": [
     {
      "q": "\"We made one **concession** and got two in return.\" A concession is…",
-     "options": ["a demand", "something you give up to reach a deal", "a deadline", "a contract"],
-     "answer": 1,
+     "options": [
+      "a deadline",
+      "a demand",
+      "something you give up to reach a deal",
+      "a contract"
+     ],
+     "answer": 2,
      "why": "Concession = concessão, algo que você cede."
     },
     {
      "q": "A **win-win** outcome is one where…",
      "options": [
       "one side wins clearly",
-      "both sides gain",
       "nobody signs",
+      "both sides gain",
       "the price is lowest"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Win-win = ganha-ganha, os dois lados ganham."
     },
     {
      "q": "Choose the correct word: \"Their opening ___ was high, but their real interest was fast delivery.\"",
-     "options": ["concession", "position", "good faith", "volume"],
+     "options": [
+      "volume",
+      "position",
+      "good faith",
+      "concession"
+     ],
      "answer": 1,
      "why": "Position = posição (declarada); interest é o interesse por trás dela."
     },
     {
      "q": "The **lead time** is…",
      "options": [
-      "the price per unit",
-      "the time between order and delivery",
+      "the discount",
       "the contract length",
-      "the discount"
+      "the price per unit",
+      "the time between order and delivery"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Lead time = prazo entre pedido e entrega."
     },
     {
      "q": "Choose the correct term: \"That's my ___ — below it, there's no deal.\"",
-     "options": ["walk-away point", "concession", "lead time", "good faith"],
-     "answer": 0,
+     "options": [
+      "concession",
+      "good faith",
+      "lead time",
+      "walk-away point"
+     ],
+     "answer": 3,
      "why": "Walk-away point = ponto de retirada, o limite abaixo do qual não há acordo."
     }
    ]
@@ -161,37 +191,57 @@
    "items": [
     {
      "q": "\"Let's **meet in the middle** on the price.\" To meet in the middle means to…",
-     "options": ["refuse to move", "compromise between two positions", "walk away", "raise the offer"],
+     "options": [
+      "raise the offer",
+      "compromise between two positions",
+      "walk away",
+      "refuse to move"
+     ],
      "answer": 1,
      "why": "Meet in the middle = chegar a um meio-termo."
     },
     {
      "q": "\"I can't move on price, but I can **throw in** free delivery.\" To throw in means to…",
-     "options": ["remove", "add at no extra cost", "charge for", "delay"],
+     "options": [
+      "remove",
+      "add at no extra cost",
+      "charge for",
+      "delay"
+     ],
      "answer": 1,
      "why": "Throw in = incluir sem custo adicional."
     },
     {
      "q": "\"If the terms don't improve, we may have to **walk away**.\" To walk away means to…",
-     "options": ["accept the deal", "leave the negotiation without a deal", "ask for time", "sign quickly"],
-     "answer": 1,
+     "options": [
+      "sign quickly",
+      "accept the deal",
+      "ask for time",
+      "leave the negotiation without a deal"
+     ],
+     "answer": 3,
      "why": "Walk away = abandonar a negociação sem fechar."
     },
     {
      "q": "\"Let's **nail down** the volume before we discuss price.\" To nail down means to…",
-     "options": ["postpone", "settle firmly", "estimate", "ignore"],
+     "options": [
+      "postpone",
+      "settle firmly",
+      "estimate",
+      "ignore"
+     ],
      "answer": 1,
      "why": "Nail down = definir com firmeza."
     },
     {
      "q": "\"We're close — let's not **haggle over** the last one percent.\" To haggle over means to…",
      "options": [
-      "argue about small details of price",
       "sign immediately",
+      "argue about small details of price",
       "add a discount",
       "change suppliers"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Haggle over = pechinchar/discutir pequenos detalhes de preço."
     }
    ]

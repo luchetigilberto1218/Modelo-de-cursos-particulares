@@ -8,51 +8,56 @@
     {
      "q": "What three things is every international payment a trade-off between?",
      "options": [
-      "Speed, cost and risk",
       "Buyer, seller and bank",
       "Currency, date and amount",
-      "Price, weight and route"
+      "Price, weight and route",
+      "Speed, cost and risk"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"a trade-off between three things: speed, cost and risk.\""
     },
     {
      "q": "How is a SWIFT wire described?",
      "options": [
       "Cheap but slow",
-      "Reliable and global but takes one to three days and costs money",
+      "Untraceable",
       "Instant and free",
-      "Untraceable"
+      "Reliable and global but takes one to three days and costs money"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A SWIFT wire is reliable and global but takes one to three days and costs money.\""
     },
     {
      "q": "For a large, high-value payment, what matters most?",
-     "options": ["Speed", "Certainty", "Cost", "Novelty"],
-     "answer": 1,
+     "options": [
+      "Speed",
+      "Novelty",
+      "Certainty",
+      "Cost"
+     ],
+     "answer": 2,
      "why": "\"For a large, high-value payment, certainty matters most.\""
     },
     {
      "q": "For routine payments to many suppliers, what usually wins?",
      "options": [
-      "Speed",
       "Cost and ease of reconciliation",
-      "Risk",
-      "The newest rail"
+      "The newest rail",
+      "Speed",
+      "Risk"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"cost and ease of reconciliation usually win.\""
     },
     {
      "q": "What do the best treasury teams do?",
      "options": [
       "Use one method for everything",
-      "Match the method to the situation and review as options appear",
+      "Avoid SWIFT",
       "Always use fintech",
-      "Avoid SWIFT"
+      "Match the method to the situation and review as options appear"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"They match the method to the situation, and they review the choice as new options appear.\""
     }
    ]
@@ -67,23 +72,23 @@
     {
      "q": "What kind of payment is Emily's client making?",
      "options": [
-      "A one-off large payment",
       "A recurring monthly payment to the same supplier",
       "A payment to many suppliers",
+      "A one-off large payment",
       "An urgent emergency payment"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"it's the same supplier, same amount, every month.\""
     },
     {
      "q": "For this recurring payment, what matters more than raw speed?",
      "options": [
-      "Cost and ease of reconciliation",
+      "Currency",
       "Certainty",
       "Novelty",
-      "Currency"
+      "Cost and ease of reconciliation"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"for a recurring, predictable payment, cost and ease of reconciliation matter more than raw speed.\""
     },
     {
@@ -91,8 +96,8 @@
      "options": [
       "It is unreliable",
       "It is the most expensive option for a routine payment",
-      "It is not accepted",
-      "It is too fast"
+      "It is too fast",
+      "It is not accepted"
      ],
      "answer": 1,
      "why": "\"it's the most expensive option, and… you're paying a premium for a certainty you don't strictly need.\""
@@ -100,23 +105,23 @@
     {
      "q": "What is the only real question about the fintech rail?",
      "options": [
-      "Whether it is legal",
       "Whether the supplier's bank accepts it cleanly",
-      "Whether it is fast enough",
-      "Whether it is cheap"
+      "Whether it is legal",
+      "Whether it is cheap",
+      "Whether it is fast enough"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The only real question is acceptance — does this supplier's bank take it cleanly?\""
     },
     {
      "q": "What is Emily's advice?",
      "options": [
       "Switch immediately to fintech",
+      "Use both every month",
       "Test the fintech rail on one month; switch if it reconciles cleanly, else stay on SWIFT",
-      "Stay on SWIFT forever",
-      "Use both every month"
+      "Stay on SWIFT forever"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"test the fintech rail on one month's payment. If it lands cleanly and reconciles, switch.\""
     }
    ]
@@ -127,41 +132,56 @@
     {
      "q": "\"A **SWIFT wire** is a…\"",
      "options": [
+      "customs form",
       "cash payment",
       "bank-to-bank international transfer via the SWIFT network",
-      "type of loan",
-      "customs form"
+      "type of loan"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "SWIFT wire = transferência internacional pela rede SWIFT."
     },
     {
      "q": "**Reconciliation** in payments means…",
      "options": [
+      "delaying payment",
       "sending money",
       "matching payments received against invoices",
-      "changing currency",
-      "delaying payment"
+      "changing currency"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Reconciliation = conciliação (bater pagamentos com faturas)."
     },
     {
      "q": "Choose the correct word: \"For a big payment, **___** matters most.\"",
-     "options": ["novelty", "certainty", "speed", "colour"],
-     "answer": 1,
+     "options": [
+      "speed",
+      "colour",
+      "certainty",
+      "novelty"
+     ],
+     "answer": 2,
      "why": "Certainty = certeza."
     },
     {
      "q": "\"The method is **reliable**.\" Reliable means…",
-     "options": ["risky", "dependable", "cheap", "slow"],
-     "answer": 1,
+     "options": [
+      "dependable",
+      "risky",
+      "cheap",
+      "slow"
+     ],
+     "answer": 0,
      "why": "Reliable = confiável."
     },
     {
      "q": "Choose the correct term: \"A **payment ___** is the route a payment travels.\"",
-     "options": ["rail", "wire", "draft", "claim"],
-     "answer": 0,
+     "options": [
+      "claim",
+      "wire",
+      "draft",
+      "rail"
+     ],
+     "answer": 3,
      "why": "Payment rail = trilho/via de pagamento."
     }
    ]
@@ -171,37 +191,57 @@
    "items": [
     {
      "q": "\"Let me **weigh it up** with you.\" To weigh up means to…",
-     "options": ["ignore", "carefully consider the options", "reject", "rush"],
-     "answer": 1,
+     "options": [
+      "rush",
+      "reject",
+      "carefully consider the options",
+      "ignore"
+     ],
+     "answer": 2,
      "why": "Weigh up = ponderar."
     },
     {
      "q": "\"For now, let's **stick with** SWIFT.\" To stick with means to…",
-     "options": ["abandon", "continue using", "test", "cancel"],
-     "answer": 1,
+     "options": [
+      "abandon",
+      "cancel",
+      "test",
+      "continue using"
+     ],
+     "answer": 3,
      "why": "Stick with = manter, continuar com."
     },
     {
      "q": "\"You're **paying a premium** for certainty.\" To pay a premium means to…",
-     "options": ["pay less", "pay extra", "pay nothing", "pay late"],
-     "answer": 1,
+     "options": [
+      "pay nothing",
+      "pay less",
+      "pay late",
+      "pay extra"
+     ],
+     "answer": 3,
      "why": "Pay a premium = pagar mais caro."
     },
     {
      "q": "\"Let's **try it out** on one payment.\" To try something out means to…",
-     "options": ["reject it", "test it", "commit fully", "delay it"],
-     "answer": 1,
+     "options": [
+      "delay it",
+      "commit fully",
+      "reject it",
+      "test it"
+     ],
+     "answer": 3,
      "why": "Try out = experimentar, testar."
     },
     {
      "q": "\"If there's any **friction**, stay on SWIFT.\" Friction here means…",
      "options": [
-      "difficulty or resistance in the process",
+      "trust",
       "a discount",
       "speed",
-      "trust"
+      "difficulty or resistance in the process"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Friction = atrito, dificuldade no processo."
     }
    ]

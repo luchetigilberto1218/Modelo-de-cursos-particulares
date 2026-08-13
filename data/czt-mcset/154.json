@@ -8,10 +8,10 @@
     {
      "q": "How does the text describe practical due diligence?",
      "options": [
-      "A long legal report",
+      "An insurance policy",
       "A short, disciplined checklist",
-      "A courtroom process",
-      "An insurance policy"
+      "A long legal report",
+      "A courtroom process"
      ],
      "answer": 1,
      "why": "\"due diligence is a short, disciplined checklist — not a long legal report.\""
@@ -19,10 +19,10 @@
     {
      "q": "Which is one of the four questions to answer before the first deal?",
      "options": [
-      "How much profit will we make?",
+      "Which port will we use?",
       "Who owns and controls the company?",
       "What is the exchange rate?",
-      "Which port will we use?"
+      "How much profit will we make?"
      ],
      "answer": 1,
      "why": "\"Who owns and controls it?\" é uma das quatro perguntas."
@@ -30,21 +30,21 @@
     {
      "q": "What does a UBO search identify?",
      "options": [
+      "The sanctions list",
       "The company's profit",
       "The real ownership",
-      "The shipping route",
-      "The sanctions list"
+      "The shipping route"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"A UBO (ultimate beneficial owner) search identifies real ownership.\""
     },
     {
      "q": "What does a quick news search help spot?",
      "options": [
-      "The best price",
+      "The delivery date",
       "Red flags: lawsuits, fraud stories, bad press",
       "The exchange rate",
-      "The delivery date"
+      "The best price"
      ],
      "answer": 1,
      "why": "\"A quick news search spots red flags: lawsuits, fraud stories, bad press.\""
@@ -53,11 +53,11 @@
      "q": "What is the real goal of this due diligence?",
      "options": [
       "To find a perfect partner",
-      "To filter out the clear 'no' cases before they waste time and money",
       "To write a long report",
+      "To filter out the clear 'no' cases before they waste time and money",
       "To avoid all deals"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"You are filtering out the clear 'no' cases before they waste your time and your balance sheet.\""
     }
    ]
@@ -72,49 +72,54 @@
     {
      "q": "Why is Charlotte running the checks?",
      "options": [
+      "The order was small",
       "A new distributor sent a large first order and a few things feel off",
       "The bank asked",
-      "It is an annual review",
-      "The order was small"
+      "It is an annual review"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"A new distributor has just sent us a large first order, and a few things feel slightly off.\""
     },
     {
      "q": "What did the company registry check show?",
      "options": [
       "The company doesn't exist",
-      "It's registered, but only three months ago",
       "It's on a sanctions list",
+      "It's registered, but only three months ago",
       "It has lawsuits"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"it's registered — but only three months ago.\""
     },
     {
      "q": "What did the UBO search reveal?",
      "options": [
-      "The owner is on a watchlist",
       "The ultimate owner is an individual in a different country from the company address",
-      "There is no owner",
-      "The company owns itself"
+      "The owner is on a watchlist",
+      "The company owns itself",
+      "There is no owner"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"the ultimate owner is an individual in a different country from the company address.\""
     },
     {
      "q": "What did the sanctions screening find?",
-     "options": ["A match", "Both the company and owner came back clean", "A lawsuit", "A fraud story"],
+     "options": [
+      "A fraud story",
+      "Both the company and owner came back clean",
+      "A lawsuit",
+      "A match"
+     ],
      "answer": 1,
      "why": "\"I screened the company and the owner… Both came back clean.\""
     },
     {
      "q": "What does Charlotte decide to do?",
      "options": [
-      "Ship the full amount on open credit",
+      "Ignore the flags",
       "Ask for a smaller first order with payment secured",
       "Refuse the deal",
-      "Ignore the flags"
+      "Ship the full amount on open credit"
      ],
      "answer": 1,
      "why": "\"I'll ask for a smaller first order and payment secured, rather than shipping the full amount on open credit.\""
@@ -127,46 +132,56 @@
     {
      "q": "**Due diligence** is…",
      "options": [
-      "a payment method",
       "the checks you do before trusting or dealing with a party",
+      "a payment method",
       "a shipping term",
       "an insurance policy"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Due diligence = diligência prévia."
     },
     {
      "q": "A **red flag** is…",
      "options": [
-      "a good sign",
       "a warning sign of a possible problem",
+      "a customs form",
       "a payment",
-      "a customs form"
+      "a good sign"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Red flag = sinal de alerta."
     },
     {
      "q": "Choose the correct word: \"A **company ___** check confirms the business exists.\"",
-     "options": ["registry", "invoice", "tranche", "draft"],
-     "answer": 0,
+     "options": [
+      "tranche",
+      "registry",
+      "draft",
+      "invoice"
+     ],
+     "answer": 1,
      "why": "Company registry = registro empresarial."
     },
     {
      "q": "The **UBO** (ultimate beneficial owner) is…",
      "options": [
-      "the company's bank",
-      "the real person who ultimately owns or controls the company",
       "the shipping agent",
-      "the customer"
+      "the real person who ultimately owns or controls the company",
+      "the customer",
+      "the company's bank"
      ],
      "answer": 1,
      "why": "UBO = beneficiário final."
     },
     {
      "q": "Choose the correct term: \"We **___** the clear 'no' cases early.\"",
-     "options": ["filter out", "ship", "insure", "invoice"],
-     "answer": 0,
+     "options": [
+      "ship",
+      "invoice",
+      "insure",
+      "filter out"
+     ],
+     "answer": 3,
      "why": "Filter out = filtrar/descartar."
     }
    ]
@@ -176,28 +191,33 @@
    "items": [
     {
      "q": "\"A few things feel **off**.\" If something feels off, it…",
-     "options": ["feels right", "feels slightly wrong or suspicious", "is finished", "is cheap"],
-     "answer": 1,
+     "options": [
+      "is finished",
+      "is cheap",
+      "feels right",
+      "feels slightly wrong or suspicious"
+     ],
+     "answer": 3,
      "why": "Feel off = parecer estranho/suspeito."
     },
     {
      "q": "\"It's not a **dealbreaker**.\" A dealbreaker is…",
      "options": [
       "a minor detail",
-      "something serious enough to stop the deal",
+      "a bonus",
       "a discount",
-      "a bonus"
+      "something serious enough to stop the deal"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Dealbreaker = impedimento decisivo."
     },
     {
      "q": "\"The screening **came back clean**.\" To come back clean means to…",
      "options": [
       "show no problems",
+      "be expensive",
       "reveal a match",
-      "be delayed",
-      "be expensive"
+      "be delayed"
      ],
      "answer": 0,
      "why": "Come back clean = voltar sem apontamentos."
@@ -205,21 +225,21 @@
     {
      "q": "\"Let's **err on the side of caution**.\" This means to…",
      "options": [
-      "take the safer option",
+      "rush",
       "take the risky option",
-      "do nothing",
-      "rush"
+      "take the safer option",
+      "do nothing"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Err on the side of caution = pecar pela cautela."
     },
     {
      "q": "\"Cautious, not **paranoid**.\" Being paranoid means being…",
      "options": [
-      "sensibly careful",
+      "fast",
       "excessively and unreasonably suspicious",
-      "trusting",
-      "fast"
+      "sensibly careful",
+      "trusting"
      ],
      "answer": 1,
      "why": "Paranoid = paranoico, desconfiado em excesso."

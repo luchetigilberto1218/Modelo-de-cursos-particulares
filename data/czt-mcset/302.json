@@ -12,8 +12,8 @@
      "options": [
       "What comes into the company",
       "What goes out to customers",
-      "The sales team",
-      "The factory building"
+      "The factory building",
+      "The sales team"
      ],
      "answer": 0,
      "why": "\"Inbound is what comes into the company.\""
@@ -22,33 +22,33 @@
      "q": "What does outbound deal with?",
      "options": [
       "Suppliers",
-      "Customers",
+      "Raw materials",
       "Printers",
-      "Raw materials"
+      "Customers"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Outbound deals with customers.\""
     },
     {
      "q": "Why do companies use different teams for each side?",
      "options": [
-      "Because the work is different",
-      "Because it is cheaper",
       "Because the trucks are the same",
-      "Because customers ask for it"
+      "Because it is cheaper",
+      "Because customers ask for it",
+      "Because the work is different"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Companies usually have different teams for each side, because the work is different.\""
     },
     {
      "q": "The text suggests that a company needs…",
      "options": [
-      "only inbound",
-      "only outbound",
+      "no logistics at all",
       "both inbound and outbound",
-      "no logistics at all"
+      "only outbound",
+      "only inbound"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: sem inbound a fábrica para; sem outbound não entrega. Os dois lados são necessários."
     },
     {
@@ -77,56 +77,56 @@
     {
      "q": "What is the door on the left for?",
      "options": [
-      "Inbound trucks",
-      "Outbound trucks",
       "Staff cars",
-      "The office"
+      "Inbound trucks",
+      "The office",
+      "Outbound trucks"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"This door on the left is for inbound trucks.\""
     },
     {
      "q": "What do the inbound trucks bring?",
      "options": [
-      "Finished products",
       "Raw materials, parts, and packaging",
+      "Money",
       "Customers",
-      "Money"
+      "Finished products"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"They bring raw materials, parts, and packaging.\""
     },
     {
      "q": "Where do the outbound trucks go?",
      "options": [
-      "To the suppliers",
-      "To the customers",
       "To the printer",
-      "To the office"
+      "To the office",
+      "To the suppliers",
+      "To the customers"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Then the trucks drive to our customers.\""
     },
     {
      "q": "Why does Oliver say \"you will not get lost\"?",
      "options": [
-      "Because the two doors are easy to remember",
       "Because the dock is very small",
+      "Because the two doors are easy to remember",
       "Because there is a map on the wall",
       "Because the trucks are red"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: com a regra simples (in à esquerda, out à direita) o novato não se confunde."
     },
     {
      "q": "What does Oliver want the new coordinator to do if a truck is at the wrong door?",
      "options": [
-      "Move it alone",
-      "Tell Oliver",
+      "Send it away",
       "Ignore it",
-      "Send it away"
+      "Move it alone",
+      "Tell Oliver"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: ele diz \"come and tell me\" — o novato deve avisá-lo, não resolver sozinho."
     }
    ]
@@ -139,34 +139,34 @@
     {
      "q": "\"The <strong>supplier</strong> sends us parts every week.\" A supplier is…",
      "options": [
-      "a company that gives us materials",
       "a customer who buys from us",
       "a truck driver",
+      "a company that gives us materials",
       "a warehouse door"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Supplier = fornecedor: quem fornece materiais para a empresa."
     },
     {
      "q": "Choose the correct word: \"We put the boxes on a wooden ___ before we load the truck.\"",
      "options": [
-      "pallet",
+      "packaging",
       "supplier",
       "direction",
-      "packaging"
+      "pallet"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Pallet = palete, a base de madeira onde as caixas ficam."
     },
     {
      "q": "Choose the correct word: \"Your ___ will arrive at your house tomorrow.\"",
      "options": [
-      "supplier",
       "parcel",
+      "supplier",
       "factory",
       "part"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Parcel = encomenda, o pacote que chega ao cliente."
     },
     {
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct word: \"A factory with no inbound cannot ___ anything.\"",
      "options": [
-      "produce",
-      "deliver",
       "sell",
-      "buy"
+      "deliver",
+      "buy",
+      "produce"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To produce = produzir. Sem inbound, faltam materiais e a fábrica para de produzir."
     }
    ]
@@ -201,31 +201,31 @@
     {
      "q": "\"We <strong>load up</strong> the truck in the morning.\" To load up means to…",
      "options": [
+      "drive the truck",
       "put things onto the truck",
-      "take things off the truck",
       "clean the truck",
-      "drive the truck"
+      "take things off the truck"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Load up = carregar, colocar as coisas dentro do caminhão."
     },
     {
      "q": "\"The parts will <strong>come in</strong> on Monday.\" To come in means to…",
      "options": [
-      "arrive",
+      "wait",
       "leave",
       "break",
-      "wait"
+      "arrive"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Come in = chegar, entrar. É o sentido de inbound."
     },
     {
      "q": "\"The finished products <strong>go out</strong> to customers.\" To go out means to…",
      "options": [
       "leave the company",
-      "come into the company",
       "stay in the warehouse",
+      "come into the company",
       "get lost"
      ],
      "answer": 0,
@@ -234,23 +234,23 @@
     {
      "q": "\"We <strong>check in</strong> every box that arrives.\" To check in means to…",
      "options": [
-      "receive and record it",
-      "throw it away",
       "sell it",
-      "hide it"
+      "hide it",
+      "receive and record it",
+      "throw it away"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Check in = registrar a chegada de algo, dar entrada."
     },
     {
      "q": "\"The truck is ready to <strong>set off</strong>.\" To set off means to…",
      "options": [
+      "wait at the door",
       "start the journey",
-      "stop for the day",
       "unload the boxes",
-      "wait at the door"
+      "stop for the day"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Set off = partir, começar a viagem."
     }
    ]

@@ -10,8 +10,8 @@
      "options": [
       "Beginning, middle and end",
       "Read, write and speak",
-      "Buy, sell and pay",
-      "Start, stop and repeat"
+      "Start, stop and repeat",
+      "Buy, sell and pay"
      ],
      "answer": 0,
      "why": "\"A good short presentation has three parts: beginning, middle and end.\""
@@ -19,40 +19,45 @@
     {
      "q": "What do you say in the beginning?",
      "options": [
+      "Two or three ideas",
       "Your name and your topic",
       "The conclusion",
-      "Goodbye",
-      "Two or three ideas"
+      "Goodbye"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"In the beginning, you say your name and your topic.\""
     },
     {
      "q": "How many main ideas do you share in the middle?",
-     "options": ["Ten", "Two or three", "None", "Twenty"],
-     "answer": 1,
+     "options": [
+      "Two or three",
+      "Twenty",
+      "Ten",
+      "None"
+     ],
+     "answer": 0,
      "why": "\"In the middle, you share two or three main ideas.\""
     },
     {
      "q": "What do you do at the end?",
      "options": [
       "Say your name",
-      "Give a conclusion and thank the audience",
+      "Leave silently",
       "Start again",
-      "Leave silently"
+      "Give a conclusion and thank the audience"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"In the end, you give a conclusion and thank the audience.\""
     },
     {
      "q": "According to the text, which is better?",
      "options": [
-      "A long, confusing presentation",
       "A short, clear presentation",
-      "A silent one",
-      "A very fast one"
+      "A long, confusing presentation",
+      "A very fast one",
+      "A silent one"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"A short, clear presentation is better than a long, confusing one.\""
     }
    ]
@@ -67,51 +72,56 @@
     {
      "q": "What is James's topic?",
      "options": [
-      "Next year's plan",
       "Last quarter's sugar trade results",
       "A new office",
+      "Next year's plan",
       "The weather"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"today I'll talk about last quarter's sugar trade results.\""
     },
     {
      "q": "In one sentence, how was the quarter?",
-     "options": ["Bad", "A good quarter", "Confusing", "Empty"],
+     "options": [
+      "Bad",
+      "A good quarter",
+      "Confusing",
+      "Empty"
+     ],
      "answer": 1,
      "why": "\"In one sentence: it was a good quarter.\""
     },
     {
      "q": "What was the first main idea?",
      "options": [
+      "Profit fell",
       "Costs went up",
       "Sales went up eight percent compared with last year",
-      "They lost clients",
-      "Profit fell"
+      "They lost clients"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"One: sales went up eight percent compared with last year.\""
     },
     {
      "q": "What happened to costs?",
      "options": [
-      "They went up",
-      "They stayed the same, so profit grew",
       "They disappeared",
-      "They doubled"
+      "They doubled",
+      "They stayed the same, so profit grew",
+      "They went up"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Two: our costs stayed the same, so the profit grew.\""
     },
     {
      "q": "What is the structure James recommends?",
      "options": [
-      "Name and topic, three ideas, one conclusion, thank you",
-      "Only numbers",
       "A long story",
+      "Only numbers",
+      "Name and topic, three ideas, one conclusion, thank you",
       "No plan"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Name and topic, three ideas, one conclusion, thank you.\""
     }
    ]
@@ -122,41 +132,56 @@
     {
      "q": "The **audience** is…",
      "options": [
-      "the speaker",
-      "the people who listen",
       "the slides",
-      "the room"
+      "the room",
+      "the speaker",
+      "the people who listen"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Audience = público."
     },
     {
      "q": "A **conclusion** is…",
      "options": [
+      "a question",
       "the beginning",
       "the final part with the main message",
-      "the title",
-      "a question"
+      "the title"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Conclusion = conclusão."
     },
     {
      "q": "Choose the correct phrase: \"Share only two or three **___**.\"",
-     "options": ["main ideas", "goodbyes", "greetings", "rooms"],
-     "answer": 0,
+     "options": [
+      "rooms",
+      "goodbyes",
+      "main ideas",
+      "greetings"
+     ],
+     "answer": 2,
      "why": "Main idea = ideia principal."
     },
     {
      "q": "To **introduce** yourself means to…",
-     "options": ["say goodbye", "say who you are", "ask a question", "leave"],
-     "answer": 1,
+     "options": [
+      "say who you are",
+      "say goodbye",
+      "ask a question",
+      "leave"
+     ],
+     "answer": 0,
      "why": "Introduce = apresentar-se."
     },
     {
      "q": "Choose the correct word: \"At the end, we **___** the audience.\"",
-     "options": ["thank", "ignore", "leave", "confuse"],
-     "answer": 0,
+     "options": [
+      "leave",
+      "ignore",
+      "thank",
+      "confuse"
+     ],
+     "answer": 2,
      "why": "Thank = agradecer."
     }
    ]
@@ -166,32 +191,57 @@
    "items": [
     {
      "q": "\"Let me **run through** the three ideas.\" To run through means to…",
-     "options": ["skip", "go over quickly", "hide", "cancel"],
-     "answer": 1,
+     "options": [
+      "skip",
+      "hide",
+      "go over quickly",
+      "cancel"
+     ],
+     "answer": 2,
      "why": "Run through = passar por, revisar."
     },
     {
      "q": "\"Sales **went up** eight percent.\" To go up means to…",
-     "options": ["decrease", "increase", "stay flat", "stop"],
+     "options": [
+      "decrease",
+      "increase",
+      "stop",
+      "stay flat"
+     ],
      "answer": 1,
      "why": "Go up = subir."
     },
     {
      "q": "\"Costs **stayed the same**.\" To stay the same means to…",
-     "options": ["change a lot", "not change", "rise", "fall"],
-     "answer": 1,
+     "options": [
+      "not change",
+      "fall",
+      "change a lot",
+      "rise"
+     ],
+     "answer": 0,
      "why": "Stay the same = permanecer igual."
     },
     {
      "q": "\"I'll **be quick** — about five minutes.\" To be quick means to…",
-     "options": ["take a long time", "not take long", "be silent", "be slow"],
+     "options": [
+      "be silent",
+      "not take long",
+      "take a long time",
+      "be slow"
+     ],
      "answer": 1,
      "why": "Be quick = ser breve."
     },
     {
      "q": "\"Any questions? **Fire away**.\" Fire away means…",
-     "options": ["stop", "go ahead and ask", "leave", "wait"],
-     "answer": 1,
+     "options": [
+      "stop",
+      "wait",
+      "leave",
+      "go ahead and ask"
+     ],
+     "answer": 3,
      "why": "Fire away = pode perguntar."
     }
    ]

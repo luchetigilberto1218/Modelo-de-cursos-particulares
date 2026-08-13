@@ -10,23 +10,23 @@
     {
      "q": "What is cloud computing?",
      "options": [
-      "Using computer power and storage that belong to someone else",
-      "Building a new office",
       "Buying a new phone",
-      "Writing code on paper"
+      "Building a new office",
+      "Writing code on paper",
+      "Using computer power and storage that belong to someone else"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Cloud computing means using computer power and storage that belong to someone else.\""
     },
     {
      "q": "How do you reach the cloud?",
      "options": [
       "By phone call",
-      "Through the internet",
+      "In person",
       "By post",
-      "In person"
+      "Through the internet"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"You reach it through the internet.\""
     },
     {
@@ -43,21 +43,21 @@
     {
      "q": "The text suggests that a company that uses the cloud does NOT need to…",
      "options": [
-      "pay any money",
       "have an internet connection",
-      "buy and keep its own server",
-      "have any staff"
+      "have any staff",
+      "pay any money",
+      "buy and keep its own server"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"You do not buy a server and keep it in your building\" — a empresa rents em vez de comprar."
     },
     {
      "q": "Why can the cloud be a risk?",
      "options": [
       "You depend on the provider and on a good internet connection",
-      "It is always very slow",
+      "It cannot scale",
       "It has no storage",
-      "It cannot scale"
+      "It is always very slow"
      ],
      "answer": 0,
      "why": "Inferência: \"you depend on the provider — and on a good internet connection\" é o custo/risco citado."
@@ -77,10 +77,10 @@
     {
      "q": "Where did the company keep its servers three years ago?",
      "options": [
-      "In a big data centre far away",
-      "In a small room on this floor",
       "At another company",
-      "In Harry's home"
+      "In a small room on this floor",
+      "In Harry's home",
+      "In a big data centre far away"
      ],
      "answer": 1,
      "why": "\"we had our own servers in a small room on this floor.\""
@@ -88,45 +88,45 @@
     {
      "q": "What does the company use now?",
      "options": [
+      "Only laptops",
       "Its own new servers",
       "AWS",
-      "Only laptops",
       "Paper files"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Now we use AWS.\""
     },
     {
      "q": "What does Harry say is the best part of the cloud?",
      "options": [
-      "They pay only for what they use",
-      "It is free",
+      "The room is quiet",
       "It never needs the internet",
-      "The room is quiet"
+      "They pay only for what they use",
+      "It is free"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The best part is that we pay only for what we use.\""
     },
     {
      "q": "Harry suggests that the OLD servers were a problem mainly because they were…",
      "options": [
       "too new",
-      "slow and expensive",
       "too small to see",
+      "slow and expensive",
       "very easy to use"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: máquinas barulhentas, quentes, com espera de semanas e caras — \"slow and it cost a lot of money\"."
     },
     {
      "q": "Why does Harry mention the internet connection?",
      "options": [
-      "Because it makes the servers hot",
-      "Because without it they cannot reach their systems",
       "Because it is very cheap",
-      "Because AWS gives free internet"
+      "Because it makes the servers hot",
+      "Because AWS gives free internet",
+      "Because without it they cannot reach their systems"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"If the connection goes down, we cannot reach our systems\" — a dependência da internet."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"We use <strong>cloud computing</strong> for all our systems now.\" Cloud computing means…",
      "options": [
-      "using computers and storage over the internet",
       "a weather app",
       "a type of laptop",
+      "using computers and storage over the internet",
       "a paper report"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Cloud computing = computação em nuvem: usar computador e armazenamento pela internet."
     },
     {
      "q": "Choose the correct word: \"We keep all our files in cloud ___ , not on our own machines.\"",
      "options": [
-      "storage",
       "coffee",
       "meeting",
+      "storage",
       "office"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Storage = armazenamento: onde os arquivos ficam guardados."
     },
     {
      "q": "\"We do not buy a server. We <strong>rent</strong> a piece of a data centre.\" To rent means to…",
      "options": [
+      "break something",
       "pay to use something for a time",
       "own something forever",
-      "sell something",
-      "break something"
+      "sell something"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "To rent = alugar: pagar para usar por um tempo, sem comprar."
     },
     {
      "q": "Choose the correct word: \"When we are busy, we can ___ up in minutes and add more power.\"",
      "options": [
-      "scale",
+      "walk",
       "close",
-      "sleep",
-      "walk"
+      "scale",
+      "sleep"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To scale = escalar: aumentar (ou reduzir) a capacidade conforme a necessidade."
     },
     {
      "q": "\"AWS is our cloud <strong>provider</strong>.\" A provider is…",
      "options": [
-      "a company that gives you a service",
       "a new employee",
+      "a company that gives you a service",
       "a broken machine",
       "an old room"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Provider = provedor: a empresa que fornece o serviço (aqui, a nuvem)."
     }
    ]
@@ -201,32 +201,32 @@
     {
      "q": "\"We will <strong>roll out</strong> the new system next month.\" To roll out means to…",
      "options": [
-      "start using it, step by step",
       "delete it",
+      "sell it",
       "hide it",
-      "sell it"
+      "start using it, step by step"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Roll out = lançar/implementar aos poucos."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the new cloud plan.\" To sign off on means to…",
      "options": [
+      "print it",
       "approve it",
       "cancel it",
-      "read it fast",
-      "print it"
+      "read it fast"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"We can <strong>scale up</strong> when we need more power.\" To scale up means to…",
      "options": [
       "make it bigger",
-      "turn it off",
+      "move the office",
       "make it slower",
-      "move the office"
+      "turn it off"
      ],
      "answer": 0,
      "why": "Scale up = aumentar a capacidade."
@@ -234,23 +234,23 @@
     {
      "q": "\"When work is quiet, we <strong>scale down</strong>.\" To scale down means to…",
      "options": [
-      "make it smaller",
       "buy a new server",
       "call a client",
+      "make it smaller",
       "close the company"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Scale down = reduzir a capacidade (e o custo)."
     },
     {
      "q": "\"If the internet goes down, our systems <strong>go down</strong> too.\" To go down means to…",
      "options": [
-      "stop working",
       "become cheaper",
+      "grow bigger",
       "get faster",
-      "grow bigger"
+      "stop working"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Go down = cair, parar de funcionar (sistema/serviço fora do ar)."
     }
    ]

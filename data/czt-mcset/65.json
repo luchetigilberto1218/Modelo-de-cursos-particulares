@@ -8,51 +8,56 @@
     {
      "q": "According to the text, when do you negotiate?",
      "options": [
-      "Only in big meetings",
-      "Every day — asking for time, help or information",
       "Never",
-      "Only with clients"
+      "Only in big meetings",
+      "Only with clients",
+      "Every day — asking for time, help or information"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Every day at work, you negotiate. You ask for time, for help, for information.\""
     },
     {
      "q": "What is a negotiation, according to the text?",
      "options": [
-      "A fight",
-      "A polite conversation to find a good answer for everyone",
       "A silent moment",
-      "A report"
+      "A polite conversation to find a good answer for everyone",
+      "A report",
+      "A fight"
      ],
      "answer": 1,
      "why": "\"A negotiation is just a polite conversation to find a good answer for everyone.\""
     },
     {
      "q": "What do we try to find in a small negotiation?",
-     "options": ["A winner", "A middle point", "A loser", "A silence"],
-     "answer": 1,
+     "options": [
+      "A silence",
+      "A winner",
+      "A loser",
+      "A middle point"
+     ],
+     "answer": 3,
      "why": "\"we try to find a middle point.\""
     },
     {
      "q": "Which are good soft words for negotiation?",
      "options": [
-      "Can, could, would, maybe",
-      "Now, must, always",
       "No, never, stop",
-      "Fast, loud, hard"
+      "Fast, loud, hard",
+      "Can, could, would, maybe",
+      "Now, must, always"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Good words for negotiation are can, could, would, maybe.\""
     },
     {
      "q": "Why are soft words good?",
      "options": [
       "They are loud",
+      "They end the talk",
       "They are polite and show respect",
-      "They are fast",
-      "They end the talk"
+      "They are fast"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"They are soft and polite. They show respect for the other person.\""
     }
    ]
@@ -67,43 +72,43 @@
     {
      "q": "What does Oliver need to ask for?",
      "options": [
+      "A holiday",
       "More money",
       "Two more days to finish the report",
-      "A new job",
-      "A holiday"
+      "A new job"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I need to ask my manager for two more days to finish the weekly sugar position report.\""
     },
     {
      "q": "Why is Oliver behind?",
      "options": [
-      "He was lazy",
-      "The numbers from Brazil arrived late",
       "He was on holiday",
-      "The report is easy"
+      "He was lazy",
+      "The report is easy",
+      "The numbers from Brazil arrived late"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The numbers from Brazil arrived late this week, so I'm a little behind.\""
     },
     {
      "q": "How does Oliver make his request?",
      "options": [
-      "'I must have more time'",
-      "'Could I have two extra days…?'",
       "'Give me the time now'",
-      "He doesn't ask"
+      "'I must have more time'",
+      "He doesn't ask",
+      "'Could I have two extra days…?'"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"'Could I have two extra days to finish the report?'\""
     },
     {
      "q": "What middle point do they find?",
      "options": [
-      "No report at all",
+      "The report is cancelled",
       "Main numbers on Wednesday, full report on Friday",
       "Everything on Monday",
-      "The report is cancelled"
+      "No report at all"
      ],
      "answer": 1,
      "why": "\"could I give you the main numbers on Wednesday, and the full report on Friday?\""
@@ -111,10 +116,10 @@
     {
      "q": "How does Oliver describe a good small negotiation?",
      "options": [
-      "One person wins, one loses",
+      "Say no to everything",
       "Ask, give a reason, stay polite, find a middle point — nobody feels bad",
       "Be loud and fast",
-      "Say no to everything"
+      "One person wins, one loses"
      ],
      "answer": 1,
      "why": "\"I asked for what I need, I gave a reason, I stayed polite, and I found a middle point.\""
@@ -127,41 +132,56 @@
     {
      "q": "To **negotiate** means to…",
      "options": [
-      "argue loudly",
       "talk politely to find a good answer for everyone",
-      "stay silent",
-      "give up"
+      "argue loudly",
+      "give up",
+      "stay silent"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Negotiate = negociar."
     },
     {
      "q": "A **middle point** is…",
      "options": [
-      "a total win for you",
       "an answer that works for both sides",
+      "a total win for you",
       "a refusal",
       "a mistake"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Middle point = meio-termo."
     },
     {
      "q": "Choose the correct word: \"A fair answer is **___** for everyone.\"",
-     "options": ["fair", "rude", "loud", "late"],
-     "answer": 0,
+     "options": [
+      "rude",
+      "late",
+      "fair",
+      "loud"
+     ],
+     "answer": 2,
      "why": "Fair = justo."
     },
     {
      "q": "To **offer** something means to…",
-     "options": ["ask for it", "give or propose it", "hide it", "refuse it"],
-     "answer": 1,
+     "options": [
+      "refuse it",
+      "hide it",
+      "ask for it",
+      "give or propose it"
+     ],
+     "answer": 3,
      "why": "Offer = oferecer."
     },
     {
      "q": "Choose the correct word: \"'Maybe' and 'could' are **___** words.\"",
-     "options": ["soft / polite", "rude", "loud", "fast"],
-     "answer": 0,
+     "options": [
+      "fast",
+      "loud",
+      "rude",
+      "soft / polite"
+     ],
+     "answer": 3,
      "why": "Soft/polite = suaves/educadas."
     }
    ]
@@ -171,32 +191,57 @@
    "items": [
     {
      "q": "\"I'm a little **behind**.\" To be behind means to…",
-     "options": ["be ahead", "be late with your work", "be finished", "be early"],
-     "answer": 1,
+     "options": [
+      "be finished",
+      "be early",
+      "be late with your work",
+      "be ahead"
+     ],
+     "answer": 2,
      "why": "Behind = atrasado."
     },
     {
      "q": "\"Let's **meet in the middle**.\" To meet in the middle means to…",
-     "options": ["refuse", "compromise", "win", "leave"],
+     "options": [
+      "win",
+      "compromise",
+      "refuse",
+      "leave"
+     ],
      "answer": 1,
      "why": "Meet in the middle = chegar a um meio-termo."
     },
     {
      "q": "\"Could you **give me a hand**?\" To give someone a hand means to…",
-     "options": ["ignore them", "help them", "pay them", "leave them"],
-     "answer": 1,
+     "options": [
+      "help them",
+      "leave them",
+      "pay them",
+      "ignore them"
+     ],
+     "answer": 0,
      "why": "Give a hand = dar uma ajuda."
     },
     {
      "q": "\"That **works for both of us**.\" This means it is…",
-     "options": ["bad for both", "good for both sides", "only for you", "unfair"],
-     "answer": 1,
+     "options": [
+      "bad for both",
+      "only for you",
+      "good for both sides",
+      "unfair"
+     ],
+     "answer": 2,
      "why": "Works for both = bom para os dois."
     },
     {
      "q": "\"Could I **have a word** with you?\" To have a word means to…",
-     "options": ["have a short talk", "write a letter", "say nothing", "shout"],
-     "answer": 0,
+     "options": [
+      "say nothing",
+      "write a letter",
+      "have a short talk",
+      "shout"
+     ],
+     "answer": 2,
      "why": "Have a word = trocar uma palavra, conversar rápido."
     }
    ]

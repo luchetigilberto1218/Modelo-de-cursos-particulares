@@ -10,32 +10,32 @@
     {
      "q": "According to the text, what is one thing AI helps businesses do?",
      "options": [
-      "Predict customer demand",
-      "Hire new managers",
+      "Write the annual report",
       "Design the office",
-      "Write the annual report"
+      "Hire new managers",
+      "Predict customer demand"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"It helps predict customer demand.\""
     },
     {
      "q": "What do the best companies do with AI?",
      "options": [
-      "They chase every new trend",
-      "They pick two or three areas and try small experiments",
       "They use AI for everything at once",
-      "They avoid AI completely"
+      "They avoid AI completely",
+      "They pick two or three areas and try small experiments",
+      "They chase every new trend"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"They pick two or three areas… They try small experiments.\""
     },
     {
      "q": "How does the text describe AI in a use case?",
      "options": [
-      "The whole answer",
+      "A tool only for chatbots",
       "Just one useful piece of the process",
-      "A short-term trend",
-      "A tool only for chatbots"
+      "The whole answer",
+      "A short-term trend"
      ],
      "answer": 1,
      "why": "\"AI is rarely the whole answer. It is just one useful piece of the process.\""
@@ -43,23 +43,23 @@
     {
      "q": "The text suggests that companies that chase every AI trend will most likely…",
      "options": [
-      "get better results than careful companies",
       "waste effort and not focus on what works",
+      "finish their projects faster",
       "save more money",
-      "finish their projects faster"
+      "get better results than careful companies"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto elogia focar em poucas áreas, então perseguir toda tendência é o caminho errado."
     },
     {
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
-      "AI works best when companies focus and measure honestly",
-      "AI will change business as a sudden revolution",
+      "Companies should expand what works",
       "AI is one useful piece of a bigger process",
-      "Companies should expand what works"
+      "AI works best when companies focus and measure honestly",
+      "AI will change business as a sudden revolution"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto diz \"not as a revolution, but as a steady improvement\"."
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "Why does James say many companies had problems two years ago?",
      "options": [
-      "They started ten projects at the same time",
-      "They did not have enough money",
+      "They stopped using AI",
       "They only used chatbots",
-      "They stopped using AI"
+      "They started ten projects at the same time",
+      "They did not have enough money"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"They started ten projects at the same time. Most of those projects were slow.\""
     },
     {
      "q": "What were the two AI use cases James's company chose?",
      "options": [
-      "Translation and hiring",
-      "Flagging unusual transactions and a customer chatbot",
       "Marketing and design",
+      "Flagging unusual transactions and a customer chatbot",
+      "Translation and hiring",
       "Reports and meetings"
      ],
      "answer": 1,
@@ -99,32 +99,32 @@
     {
      "q": "What did James's company do after the small experiments worked?",
      "options": [
+      "They changed the whole business",
       "They stopped the projects",
-      "They expanded what worked",
       "They started ten more projects",
-      "They changed the whole business"
+      "They expanded what worked"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"When the results were good, we expanded.\""
     },
     {
      "q": "James suggests that starting small is a good idea because…",
      "options": [
-      "it is cheaper than hiring people",
-      "you can measure results and only expand what works",
       "it makes AI a revolution",
-      "it avoids using AI at all"
+      "it is cheaper than hiring people",
+      "it avoids using AI at all",
+      "you can measure results and only expand what works"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: ele mede o tempo economizado e só expande quando dá certo."
     },
     {
      "q": "How would you best describe James's advice to the new director?",
      "options": [
       "Focused and careful, not rushed",
-      "Against using AI",
       "Only about saving money",
-      "In favour of doing everything at once"
+      "In favour of doing everything at once",
+      "Against using AI"
      ],
      "answer": 0,
      "why": "Inferência: ele recomenda focar em poucas áreas e testar antes de expandir."
@@ -139,42 +139,42 @@
     {
      "q": "\"Fraud detection is a common AI <strong>use case</strong>.\" A use case is…",
      "options": [
-      "a specific way to use something",
       "a legal problem",
-      "a type of computer",
-      "a customer complaint"
+      "a specific way to use something",
+      "a customer complaint",
+      "a type of computer"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Use case = caso de uso: uma forma específica de usar algo."
     },
     {
      "q": "Choose the correct word: \"The system can ___ unusual transactions and send them to the finance team.\"",
      "options": [
-      "flag",
       "translate",
       "chase",
-      "expand"
+      "expand",
+      "flag"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To flag = sinalizar, marcar algo para revisão."
     },
     {
      "q": "\"AI can help us <strong>predict</strong> next month's demand.\" To predict means to…",
      "options": [
-      "say what will happen in the future",
-      "explain what happened before",
+      "translate a document",
       "cancel an order",
-      "translate a document"
+      "say what will happen in the future",
+      "explain what happened before"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To predict = prever, dizer o que vai acontecer."
     },
     {
      "q": "Choose the correct word: \"We did not want to ___ every new AI ___; we chose only two areas.\"",
      "options": [
       "chase / trend",
-      "flag / transaction",
       "predict / chatbot",
+      "flag / transaction",
       "translate / experiment"
      ],
      "answer": 0,
@@ -183,12 +183,12 @@
     {
      "q": "\"The tool can <strong>translate</strong> contracts between English and Portuguese.\" To translate means to…",
      "options": [
-      "change words from one language to another",
+      "count the words",
       "sign a contract",
       "delete a file",
-      "count the words"
+      "change words from one language to another"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To translate = traduzir, passar de um idioma para outro."
     }
    ]
@@ -202,9 +202,9 @@
      "q": "\"The director will <strong>sign off on</strong> the new AI project.\" To sign off on means to…",
      "options": [
       "formally approve",
-      "cancel it",
+      "talk about it later",
       "start it in secret",
-      "talk about it later"
+      "cancel it"
      ],
      "answer": 0,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
@@ -212,45 +212,45 @@
     {
      "q": "\"We will <strong>roll out</strong> the chatbot team by team.\" To roll out means to…",
      "options": [
-      "implement in stages",
       "stop it slowly",
       "hide it from clients",
+      "implement in stages",
       "explain it once"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Roll out = implementar aos poucos, passo a passo."
     },
     {
      "q": "\"We started small, then decided to <strong>scale up</strong> the tool.\" To scale up means to…",
      "options": [
-      "make it bigger",
       "make it smaller",
       "delete it",
+      "make it bigger",
       "keep it the same"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Scale up = aumentar, expandir para mais áreas."
     },
     {
      "q": "\"The team agreed the plan but did not <strong>follow through</strong>.\" They…",
      "options": [
-      "did not finish what they started",
-      "finished early",
       "changed the whole plan",
-      "asked another team"
+      "asked another team",
+      "finished early",
+      "did not finish what they started"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"A small chatbot will not <strong>move the needle</strong> on sales.\" This means it will…",
      "options": [
-      "not make a real difference",
-      "break the system",
       "cost too much",
-      "take a long time"
+      "take a long time",
+      "not make a real difference",
+      "break the system"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Move the needle = fazer diferença perceptível."
     }
    ]

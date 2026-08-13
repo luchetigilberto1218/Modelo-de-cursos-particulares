@@ -8,10 +8,10 @@
     {
      "q": "What are the two ways feedback commonly fails, according to the text?",
      "options": [
-      "Too long or too short",
+      "Too formal or too casual",
       "Too vague to be useful, or too harsh to be heard",
       "Too early or too late",
-      "Too formal or too casual"
+      "Too long or too short"
      ],
      "answer": 1,
      "why": "\"either too vague to be useful or too harsh to be heard.\""
@@ -19,40 +19,45 @@
     {
      "q": "What makes feedback useful, according to the text?",
      "options": [
+      "Being brief",
       "Being encouraging",
       "Being specific and behavioural",
-      "Being brief",
       "Being written down"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Useful feedback is specific and behavioural.\""
     },
     {
      "q": "Why is \"when you moved from the budget to the forecast, I lost the connection\" better than \"you were unclear\"?",
      "options": [
-      "It is shorter",
+      "It avoids the topic",
       "It points to a specific behaviour the person can respond to",
-      "It is more polite",
-      "It avoids the topic"
+      "It is shorter",
+      "It is more polite"
      ],
      "answer": 1,
      "why": "\"That is something you can actually respond to.\""
     },
     {
      "q": "What does the text say is usually our first reaction to feedback?",
-     "options": ["Curiosity", "Defensive", "Grateful", "Indifferent"],
-     "answer": 1,
+     "options": [
+      "Grateful",
+      "Curiosity",
+      "Indifferent",
+      "Defensive"
+     ],
+     "answer": 3,
      "why": "\"resist their first reaction — usually defensive.\""
     },
     {
      "q": "\"Say thank you, even when it stings\" suggests that receiving feedback well means…",
      "options": [
       "agreeing with everything",
-      "staying open even when the comment is uncomfortable",
       "defending yourself firmly",
-      "ignoring the example"
+      "ignoring the example",
+      "staying open even when the comment is uncomfortable"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: agradecer mesmo quando incomoda é manter-se aberto e decidir depois o que fazer."
     }
    ]
@@ -67,37 +72,42 @@
     {
      "q": "How does Sophie frame the feedback at the start?",
      "options": [
-      "As a warning",
       "As specific, not vague, and worth getting right",
-      "As a formal complaint",
-      "As unimportant"
+      "As a warning",
+      "As unimportant",
+      "As a formal complaint"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I want to be specific, not vague, because you're good and I think this is worth getting right.\""
     },
     {
      "q": "What specific behaviour did Sophie notice?",
      "options": [
+      "The analyst gave wrong numbers",
       "The analyst arrived late",
       "Under pressure, the pace sped up and the client stopped taking notes",
-      "The analyst gave wrong numbers",
       "The analyst was too quiet"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"when the pressure went up, the pace went up too\" — o cliente parou de anotar."
     },
     {
      "q": "What was NOT the problem, according to Sophie?",
-     "options": ["The pace", "The content", "The pressure", "The timing"],
+     "options": [
+      "The pace",
+      "The content",
+      "The pressure",
+      "The timing"
+     ],
      "answer": 1,
      "why": "\"the pace lost them, not the content — the content was solid.\""
     },
     {
      "q": "What does Sophie ask the analyst?",
      "options": [
-      "To apologise to the client",
-      "How the moment felt from their side",
       "To rewrite the report",
+      "How the moment felt from their side",
+      "To apologise to the client",
       "To skip the next meeting"
      ],
      "answer": 1,
@@ -106,12 +116,12 @@
     {
      "q": "Why does Sophie mention the client's email?",
      "options": [
-      "To warn the analyst",
-      "To reassure them that the relationship is fine",
       "To change the subject",
-      "To end the meeting"
+      "To end the meeting",
+      "To warn the analyst",
+      "To reassure them that the relationship is fine"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the relationship is fine. The client emailed this morning; they want to continue.\""
     }
    ]
@@ -121,42 +131,57 @@
    "items": [
     {
      "q": "\"Try to be **specific** rather than general.\" Specific means…",
-     "options": ["vague", "precise and detailed", "kind", "brief"],
-     "answer": 1,
+     "options": [
+      "brief",
+      "vague",
+      "kind",
+      "precise and detailed"
+     ],
+     "answer": 3,
      "why": "Specific = específico, preciso."
     },
     {
      "q": "\"Give **behavioural** feedback.\" Behavioural feedback focuses on…",
      "options": [
-      "the person's character",
-      "what the person actually did",
       "the outcome only",
-      "the mood"
+      "the person's character",
+      "the mood",
+      "what the person actually did"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Behavioural = comportamental, sobre a ação concreta."
     },
     {
      "q": "Choose the correct word: \"He got **defensive** and ___ the comment instead of listening.\"",
-     "options": ["welcomed", "rejected", "requested", "owned"],
-     "answer": 1,
+     "options": [
+      "welcomed",
+      "owned",
+      "rejected",
+      "requested"
+     ],
+     "answer": 2,
      "why": "Defensive = defensivo; a reação é rejeitar em vez de ouvir."
     },
     {
      "q": "A **blind spot** is…",
      "options": [
-      "a strength you overuse",
       "something about yourself you cannot easily see",
       "a deadline",
-      "a clear weakness everyone knows"
+      "a clear weakness everyone knows",
+      "a strength you overuse"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Blind spot = ponto cego, o que você não enxerga em si."
     },
     {
      "q": "Choose the correct term: \"Good feedback is ___ — it helps the person improve.\"",
-     "options": ["vague", "constructive", "harsh", "defensive"],
-     "answer": 1,
+     "options": [
+      "constructive",
+      "defensive",
+      "harsh",
+      "vague"
+     ],
+     "answer": 0,
      "why": "Constructive = construtivo."
     }
    ]
@@ -166,42 +191,57 @@
    "items": [
     {
      "q": "\"Can I give you some feedback? Feel free to **push back** if you disagree.\" To push back means to…",
-     "options": ["agree", "respectfully challenge or disagree", "leave", "stay silent"],
-     "answer": 1,
+     "options": [
+      "respectfully challenge or disagree",
+      "stay silent",
+      "leave",
+      "agree"
+     ],
+     "answer": 0,
      "why": "Push back = contestar respeitosamente."
     },
     {
      "q": "\"I know this is hard to hear, but **bear with me**.\" To bear with someone means to…",
-     "options": ["interrupt them", "be patient with them", "correct them", "ignore them"],
-     "answer": 1,
+     "options": [
+      "be patient with them",
+      "ignore them",
+      "interrupt them",
+      "correct them"
+     ],
+     "answer": 0,
      "why": "Bear with me = tenha paciência comigo."
     },
     {
      "q": "\"Let's not **sugar-coat** it — the deadline was missed.\" To sugar-coat means to…",
      "options": [
-      "make something sound nicer than it is",
+      "escalate",
       "explain clearly",
-      "apologise",
-      "escalate"
+      "make something sound nicer than it is",
+      "apologise"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sugar-coat = suavizar demais, dourar a pílula."
     },
     {
      "q": "\"Take it **on board** and see what fits.\" To take something on board means to…",
-     "options": ["reject it", "consider and accept it", "forward it", "delay it"],
-     "answer": 1,
+     "options": [
+      "reject it",
+      "forward it",
+      "delay it",
+      "consider and accept it"
+     ],
+     "answer": 3,
      "why": "Take on board = levar em conta, absorver."
     },
     {
      "q": "\"I'll **own** my part in what went wrong.\" To own something means to…",
      "options": [
-      "deny it",
       "take responsibility for it",
       "blame others",
+      "deny it",
       "ignore it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To own = assumir a responsabilidade."
     }
    ]

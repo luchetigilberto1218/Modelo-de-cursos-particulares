@@ -10,32 +10,32 @@
     {
      "q": "What does logistics focus on?",
      "options": [
-      "Moving and storing things",
-      "Making the sales plan",
       "Hiring new people",
-      "Designing the products"
+      "Designing the products",
+      "Making the sales plan",
+      "Moving and storing things"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"It focuses on moving and storing things.\""
     },
     {
      "q": "According to the text, when do people notice logistics?",
      "options": [
-      "When it works well",
       "When it fails",
       "Every single day",
+      "When it works well",
       "Only at the factory"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"When it works, nobody notices. When it fails, everybody notices.\""
     },
     {
      "q": "The text says the supply chain is the plan. What is logistics?",
      "options": [
-      "The plan",
+      "The price",
       "The movement",
-      "The office",
-      "The price"
+      "The plan",
+      "The office"
      ],
      "answer": 1,
      "why": "\"If the supply chain is the plan, logistics is the movement.\""
@@ -44,11 +44,11 @@
      "q": "A late delivery suggests that…",
      "options": [
       "the plan was very good",
-      "logistics failed somewhere",
+      "the box was empty",
       "nobody ordered anything",
-      "the box was empty"
+      "logistics failed somewhere"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: um atraso é um sinal visível de que a logística falhou."
     },
     {
@@ -56,10 +56,10 @@
      "options": [
       "Logistics moves goods from place to place.",
       "When logistics works, most people do not notice it.",
-      "Logistics is the same as the whole supply chain.",
-      "A damaged box is a logistics problem."
+      "A damaged box is a logistics problem.",
+      "Logistics is the same as the whole supply chain."
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: o texto diz que a logística é só uma PARTE da cadeia, não a cadeia inteira."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "What left the warehouse this morning?",
      "options": [
-      "A truck with three hundred boxes",
-      "A new team member",
       "A supply chain plan",
-      "A damaged pallet"
+      "A truck with three hundred boxes",
+      "A damaged pallet",
+      "A new team member"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"This morning a truck left our warehouse. It carried three hundred boxes.\""
     },
     {
      "q": "How does James define logistics?",
      "options": [
       "The big plan",
-      "The movement of the goods",
       "The price of the product",
+      "The movement of the goods",
       "The shop shelf"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Logistics is the movement. It is how we carry the goods.\""
     },
     {
      "q": "What does James say the supply chain covers?",
      "options": [
       "Only the warehouse",
-      "Only the truck",
       "The whole journey",
-      "Only the customer"
+      "Only the customer",
+      "Only the truck"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"The supply chain is the big plan. It covers the whole journey.\""
     },
     {
      "q": "Why does James check every pallet before it leaves?",
      "options": [
-      "To avoid late or damaged shipments",
-      "To count the new workers",
+      "To make the truck heavier",
       "To change the plan",
-      "To make the truck heavier"
+      "To count the new workers",
+      "To avoid late or damaged shipments"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: ele checa para que nada chegue atrasado ou danificado — senão todos ligam para ele."
     },
     {
      "q": "What does James mean when he says good logistics is invisible?",
      "options": [
       "Nobody can see the truck",
-      "When it works well, people do not notice it",
       "The boxes are transparent",
+      "When it works well, people do not notice it",
       "The warehouse is closed"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: se tudo dá certo, ninguém repara — a logística só aparece quando falha."
     }
    ]
@@ -151,44 +151,44 @@
      "q": "\"Logistics is the <strong>engine</strong> of the supply chain.\" Here engine means…",
      "options": [
       "a small box",
-      "the part that makes things move",
+      "a shop shelf",
       "a late delivery",
-      "a shop shelf"
+      "the part that makes things move"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Engine = motor: a parte que faz tudo se mover."
     },
     {
      "q": "Choose the correct word: \"The box arrived ___, so we cannot sell the product inside.\"",
      "options": [
-      "invisible",
       "damaged",
+      "invisible",
       "finished",
       "raw"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Damaged = danificado; uma caixa danificada não pode ser vendida."
     },
     {
      "q": "Choose the correct word: \"Trucks ___ the goods from the factory to the customer.\"",
      "options": [
-      "carry",
-      "store",
       "fail",
-      "notice"
+      "notice",
+      "store",
+      "carry"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To carry = transportar; caminhões transportam as mercadorias."
     },
     {
      "q": "\"The whole <strong>supply chain</strong> starts with raw materials.\" A supply chain is…",
      "options": [
-      "one single truck",
-      "the whole journey of a product",
+      "a type of warehouse",
       "the price of a box",
-      "a type of warehouse"
+      "the whole journey of a product",
+      "one single truck"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Supply chain = cadeia de suprimentos: toda a jornada do produto."
     }
    ]
@@ -201,45 +201,45 @@
     {
      "q": "\"We will <strong>roll out</strong> the new delivery plan next month.\" To roll out means to…",
      "options": [
+      "hide a truck",
       "start using something new",
       "cancel a plan",
-      "hide a truck",
       "sell the warehouse"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Roll out = começar a usar/implementar algo novo."
     },
     {
      "q": "\"The manager must <strong>sign off on</strong> the shipment before it leaves.\" To sign off on means to…",
      "options": [
+      "carry it",
       "break it",
       "approve it",
-      "count it",
-      "carry it"
+      "count it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"The truck <strong>set off</strong> at six in the morning.\" To set off means to…",
      "options": [
-      "stop working",
       "start a journey",
       "load the boxes",
-      "call the customer"
+      "call the customer",
+      "stop working"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Set off = partir, começar uma viagem."
     },
     {
      "q": "\"Please <strong>keep track of</strong> every box in the truck.\" To keep track of means to…",
      "options": [
-      "throw away",
       "follow and know where it is",
       "sell quickly",
-      "damage on purpose"
+      "damage on purpose",
+      "throw away"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Keep track of = acompanhar, saber onde algo está."
     },
     {

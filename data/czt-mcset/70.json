@@ -8,51 +8,56 @@
     {
      "q": "What is small talk?",
      "options": [
+      "A report",
       "A long, deep conversation",
       "A short, friendly conversation before the real work",
-      "A report",
       "A meeting"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Small talk is the short, friendly conversation before the real work starts.\""
     },
     {
      "q": "What do people talk about in small talk?",
      "options": [
-      "Simple things — weather, travel, food, the weekend",
       "Secrets",
+      "Big problems",
       "Salaries",
-      "Big problems"
+      "Simple things — weather, travel, food, the weekend"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"people talk about simple things — the weather, travel, food, the weekend.\""
     },
     {
      "q": "Why is small talk 'not deep' — and why is that the point?",
      "options": [
       "It is boring",
-      "It helps us feel comfortable with each other",
       "It is a mistake",
-      "It wastes time"
+      "It wastes time",
+      "It helps us feel comfortable with each other"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"It is not deep — and that is the point. It helps us feel comfortable with each other.\""
     },
     {
      "q": "In British English, how important is small talk?",
-     "options": ["Not important", "Very important", "Forbidden", "Only for managers"],
+     "options": [
+      "Not important",
+      "Very important",
+      "Only for managers",
+      "Forbidden"
+     ],
      "answer": 1,
      "why": "\"In British English, small talk is very important.\""
     },
     {
      "q": "What is 'the magic trick' for small talk?",
      "options": [
-      "Talk for a long time",
-      "Answer briefly and return the question",
       "Say nothing",
-      "Change the subject"
+      "Change the subject",
+      "Talk for a long time",
+      "Answer briefly and return the question"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Answer briefly and return the question. That is the magic trick.\""
     }
    ]
@@ -67,20 +72,20 @@
     {
      "q": "Where is Emily?",
      "options": [
-      "In her office",
-      "At a small sugar industry event in London",
+      "At home",
       "On a ship",
-      "At home"
+      "At a small sugar industry event in London",
+      "In her office"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I'm at a small sugar industry event in London.\""
     },
     {
      "q": "How does Emily start the small talk?",
      "options": [
-      "With a business question",
-      "'Hi, I'm Emily. Lovely event, isn't it?'",
       "With silence",
+      "'Hi, I'm Emily. Lovely event, isn't it?'",
+      "With a business question",
       "By talking about salaries"
      ],
      "answer": 1,
@@ -89,34 +94,34 @@
     {
      "q": "What is 'the magic trick' she uses?",
      "options": [
-      "Talk for a long time",
-      "Answer briefly, then return the question",
+      "Change the subject",
       "Ask nothing",
-      "Change the subject"
+      "Talk for a long time",
+      "Answer briefly, then return the question"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I answer briefly, then return the question.\""
     },
     {
      "q": "What do they chat about?",
      "options": [
-      "The weather, the journey, the coffee",
       "Money and contracts",
-      "Secrets",
-      "Nothing"
+      "Nothing",
+      "The weather, the journey, the coffee",
+      "Secrets"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"we chat for a minute about the weather, the journey to London, the coffee.\""
     },
     {
      "q": "According to Emily, what do you need for small talk?",
      "options": [
-      "Perfect English",
-      "To be warm — keep it light, ask questions, and smile",
       "A long speech",
-      "A report"
+      "A report",
+      "Perfect English",
+      "To be warm — keep it light, ask questions, and smile"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"You don't need perfect English — you need to be warm.\""
     }
    ]
@@ -127,41 +132,56 @@
     {
      "q": "**Small talk** is…",
      "options": [
-      "a serious business meeting",
       "short, friendly conversation about simple things",
       "a report",
+      "a serious business meeting",
       "a phone number"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Small talk = conversa fiada."
     },
     {
      "q": "A **coffee break** is…",
      "options": [
-      "a long meeting",
       "a short rest, often with coffee",
-      "a report",
-      "a deadline"
+      "a deadline",
+      "a long meeting",
+      "a report"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Coffee break = intervalo para café."
     },
     {
      "q": "Choose the correct word: \"Let's **___** for a minute before the meeting.\"",
-     "options": ["chat", "cancel", "argue", "leave"],
-     "answer": 0,
+     "options": [
+      "argue",
+      "chat",
+      "leave",
+      "cancel"
+     ],
+     "answer": 1,
      "why": "Chat = bater papo."
     },
     {
      "q": "A **friendly** person is…",
-     "options": ["cold and rude", "warm and kind", "very busy", "late"],
-     "answer": 1,
+     "options": [
+      "late",
+      "cold and rude",
+      "very busy",
+      "warm and kind"
+     ],
+     "answer": 3,
      "why": "Friendly = amigável."
     },
     {
      "q": "Choose the correct word: \"Nice to **___** you at the event.\"",
-     "options": ["meet", "cancel", "ignore", "leave"],
-     "answer": 0,
+     "options": [
+      "leave",
+      "cancel",
+      "ignore",
+      "meet"
+     ],
+     "answer": 3,
      "why": "Meet = conhecer/encontrar."
     }
    ]
@@ -171,17 +191,22 @@
    "items": [
     {
      "q": "\"Lovely event, **isn't it**?\" Adding 'isn't it?' is a way to…",
-     "options": ["end the talk", "invite a friendly reply", "disagree", "leave"],
-     "answer": 1,
+     "options": [
+      "invite a friendly reply",
+      "leave",
+      "disagree",
+      "end the talk"
+     ],
+     "answer": 0,
      "why": "Question tag = convida a pessoa a responder."
     },
     {
      "q": "\"How are you **finding it**?\" This asks…",
      "options": [
-      "where something is",
+      "the time",
       "what you think of it",
       "how to leave",
-      "the time"
+      "where something is"
      ],
      "answer": 1,
      "why": "How are you finding it = o que você está achando."
@@ -189,24 +214,34 @@
     {
      "q": "\"Small talk is a friendly **bridge**.\" A bridge here means…",
      "options": [
-      "a wall",
       "something that connects people",
       "a problem",
-      "an ending"
+      "an ending",
+      "a wall"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Bridge = ponte, o que conecta."
     },
     {
      "q": "\"Keep it **light**.\" To keep it light means to…",
-     "options": ["make it heavy and serious", "keep it easy and pleasant", "end it", "argue"],
-     "answer": 1,
+     "options": [
+      "keep it easy and pleasant",
+      "make it heavy and serious",
+      "end it",
+      "argue"
+     ],
+     "answer": 0,
      "why": "Keep it light = manter leve."
     },
     {
      "q": "\"We're not **strangers** any more.\" A stranger is…",
-     "options": ["a friend", "a person you don't know", "a manager", "a client"],
-     "answer": 1,
+     "options": [
+      "a manager",
+      "a friend",
+      "a person you don't know",
+      "a client"
+     ],
+     "answer": 2,
      "why": "Stranger = desconhecido."
     }
    ]

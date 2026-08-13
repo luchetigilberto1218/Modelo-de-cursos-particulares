@@ -7,45 +7,55 @@
    "items": [
     {
      "q": "What is feedback, according to the text?",
-     "options": ["A punishment", "Information", "A meeting", "A report"],
-     "answer": 1,
+     "options": [
+      "A meeting",
+      "A report",
+      "A punishment",
+      "Information"
+     ],
+     "answer": 3,
      "why": "\"Feedback is information.\""
     },
     {
      "q": "What is good feedback like?",
      "options": [
-      "Long and harsh",
+      "Angry",
       "Short, clear and kind",
-      "Silent",
-      "Angry"
+      "Long and harsh",
+      "Silent"
      ],
      "answer": 1,
      "why": "\"Good feedback is short, clear and kind.\""
     },
     {
      "q": "How many things to improve should you mention?",
-     "options": ["A long list", "One or two useful points", "Ten", "None ever"],
-     "answer": 1,
+     "options": [
+      "One or two useful points",
+      "Ten",
+      "A long list",
+      "None ever"
+     ],
+     "answer": 0,
      "why": "\"just one or two useful points.\""
     },
     {
      "q": "How should you receive feedback?",
      "options": [
-      "Defend yourself right away",
       "Listen calmly, say thank you, and ask a question if needed",
       "Argue",
-      "Leave the room"
+      "Leave the room",
+      "Defend yourself right away"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Listen calmly, say thank you, and ask a question if you need to understand better.\""
     },
     {
      "q": "What should you NOT do when getting feedback?",
      "options": [
-      "Listen",
-      "Defend yourself right away",
       "Say thank you",
-      "Ask a question"
+      "Defend yourself right away",
+      "Ask a question",
+      "Listen"
      ],
      "answer": 1,
      "why": "\"Do not defend yourself right away.\""
@@ -61,16 +71,21 @@
    "items": [
     {
      "q": "What did João just do?",
-     "options": ["Write a report", "Give a good presentation", "Make a call", "Send an email"],
-     "answer": 1,
+     "options": [
+      "Write a report",
+      "Send an email",
+      "Make a call",
+      "Give a good presentation"
+     ],
+     "answer": 3,
      "why": "\"João just gave a good presentation.\""
     },
     {
      "q": "What positive does Sophie give?",
      "options": [
-      "Just 'good job'",
-      "The three main points were easy to follow and he looked at the audience",
       "Nothing",
+      "The three main points were easy to follow and he looked at the audience",
+      "Just 'good job'",
       "The room was nice"
      ],
      "answer": 1,
@@ -79,34 +94,34 @@
     {
      "q": "What is the one thing to improve?",
      "options": [
-      "The whole presentation",
-      "At the end, he spoke a little fast — slow down on the last slide",
       "The colours",
-      "The room"
+      "The room",
+      "The whole presentation",
+      "At the end, he spoke a little fast — slow down on the last slide"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"at the end, you spoke a little fast. If you slow down on the last slide…\""
     },
     {
      "q": "Why doesn't Sophie give ten problems?",
      "options": [
-      "She is lazy",
-      "He'd remember none of them and just feel bad",
+      "She has no time",
       "There are no problems",
-      "She has no time"
+      "He'd remember none of them and just feel bad",
+      "She is lazy"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"he'd remember none of them and just feel bad.\""
     },
     {
      "q": "How does Sophie sum up good feedback?",
      "options": [
-      "A long list of problems",
-      "Short, clear, kind — one thing to keep, one thing to try",
       "Only criticism",
-      "Silence"
+      "Silence",
+      "Short, clear, kind — one thing to keep, one thing to try",
+      "A long list of problems"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Short, clear, kind — one thing to keep, one thing to try.\""
     }
    ]
@@ -117,36 +132,56 @@
     {
      "q": "**Feedback** is…",
      "options": [
-      "a punishment",
-      "information that helps you know what works and what to improve",
       "a meeting",
-      "a salary"
+      "a salary",
+      "a punishment",
+      "information that helps you know what works and what to improve"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Feedback = retorno/informação para melhorar."
     },
     {
      "q": "To **improve** means to…",
-     "options": ["get worse", "get better", "stop", "leave"],
-     "answer": 1,
+     "options": [
+      "get better",
+      "stop",
+      "get worse",
+      "leave"
+     ],
+     "answer": 0,
      "why": "Improve = melhorar."
     },
     {
      "q": "Choose the correct word: \"That was a **___** point — it really helped.\"",
-     "options": ["helpful", "rude", "late", "loud"],
-     "answer": 0,
+     "options": [
+      "late",
+      "helpful",
+      "rude",
+      "loud"
+     ],
+     "answer": 1,
      "why": "Helpful = útil."
     },
     {
      "q": "Being **kind** means being…",
-     "options": ["harsh", "gentle and caring", "fast", "silent"],
-     "answer": 1,
+     "options": [
+      "gentle and caring",
+      "fast",
+      "harsh",
+      "silent"
+     ],
+     "answer": 0,
      "why": "Kind = gentil."
     },
     {
      "q": "Choose the correct word: \"When you get feedback, stay **___**.\"",
-     "options": ["calm", "angry", "loud", "late"],
-     "answer": 0,
+     "options": [
+      "late",
+      "angry",
+      "calm",
+      "loud"
+     ],
+     "answer": 2,
      "why": "Calm = calmo."
     }
    ]
@@ -156,36 +191,56 @@
    "items": [
     {
      "q": "\"**Well done** on the presentation!\" Well done means…",
-     "options": ["that was bad", "good job", "try again", "stop"],
-     "answer": 1,
+     "options": [
+      "try again",
+      "stop",
+      "that was bad",
+      "good job"
+     ],
+     "answer": 3,
      "why": "Well done = muito bem."
     },
     {
      "q": "\"I'll end **on a good note**.\" To end on a good note means to…",
-     "options": ["finish badly", "finish in a positive way", "not finish", "argue"],
-     "answer": 1,
+     "options": [
+      "not finish",
+      "argue",
+      "finish in a positive way",
+      "finish badly"
+     ],
+     "answer": 2,
      "why": "On a good note = de forma positiva."
     },
     {
      "q": "\"Don't **take it personally**.\" To take something personally means to…",
      "options": [
-      "feel hurt as if it's an attack on you",
       "share it",
       "write it down",
+      "feel hurt as if it's an attack on you",
       "ignore it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Take personally = levar para o lado pessoal."
     },
     {
      "q": "\"One thing to **work on** next time.\" To work on something means to…",
-     "options": ["improve it", "ignore it", "finish it", "cancel it"],
+     "options": [
+      "improve it",
+      "cancel it",
+      "finish it",
+      "ignore it"
+     ],
      "answer": 0,
      "why": "Work on = trabalhar para melhorar."
     },
     {
      "q": "\"Thanks, I'll **keep that in mind**.\" To keep something in mind means to…",
-     "options": ["forget it", "remember it", "reject it", "share it"],
+     "options": [
+      "share it",
+      "remember it",
+      "reject it",
+      "forget it"
+     ],
      "answer": 1,
      "why": "Keep in mind = ter em mente."
     }

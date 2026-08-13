@@ -19,43 +19,43 @@
     {
      "q": "What does a good credit structure do?",
      "options": [
-      "Scares the buyer away",
-      "Protects the seller without scaring the buyer away",
       "Removes all limits",
-      "Guarantees payment"
+      "Guarantees payment",
+      "Scares the buyer away",
+      "Protects the seller without scaring the buyer away"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A good structure protects the seller without scaring the buyer away.\""
     },
     {
      "q": "In the example, what happens if the buyer exceeds the limit?",
      "options": [
-      "The price rises",
-      "Shipments stop until the balance comes down",
       "The limit is removed",
-      "Nothing"
+      "The price rises",
+      "Nothing",
+      "Shipments stop until the balance comes down"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"If the buyer exceeds the limit, shipments stop until the balance comes down.\""
     },
     {
      "q": "What mistake do many sellers make?",
      "options": [
       "Granting terms too strictly",
-      "Granting terms too generously at the start",
+      "Shipping too fast",
       "Charging too little",
-      "Shipping too fast"
+      "Granting terms too generously at the start"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"to grant terms too generously at the start and then struggle to pull them back later.\""
     },
     {
      "q": "\"Credit, once given, is painful to take away\" advises sellers to…",
      "options": [
-      "start generous and tighten later",
-      "start cautious, because loosening is easier than tightening",
       "never give credit",
-      "give unlimited credit"
+      "start cautious, because loosening is easier than tightening",
+      "give unlimited credit",
+      "start generous and tighten later"
      ],
      "answer": 1,
      "why": "Inferência: é mais fácil afrouxar depois do que apertar; comece cauteloso."
@@ -71,14 +71,24 @@
    "items": [
     {
      "q": "What has the customer asked for?",
-     "options": ["A discount only", "Open credit, to grow orders a lot", "A shorter contract", "Cash terms"],
-     "answer": 1,
+     "options": [
+      "Open credit, to grow orders a lot",
+      "A discount only",
+      "A shorter contract",
+      "Cash terms"
+     ],
+     "answer": 0,
      "why": "\"they've asked for open credit… wants to grow its orders a lot this year.\""
     },
     {
      "q": "What credit limit does Oliver set?",
-     "options": ["€10,000", "€100,000", "Unlimited", "€1,000,000"],
-     "answer": 1,
+     "options": [
+      "€100,000",
+      "€10,000",
+      "Unlimited",
+      "€1,000,000"
+     ],
+     "answer": 0,
      "why": "\"a credit limit of a hundred thousand euros… a ceiling, not a blank cheque.\""
     },
     {
@@ -86,8 +96,8 @@
      "options": [
       "2% if paid within 10 days",
       "10% if paid within 2 days",
-      "No discount",
-      "5% always"
+      "5% always",
+      "No discount"
      ],
      "answer": 0,
      "why": "\"a 2% discount if they pay within ten.\""
@@ -95,23 +105,23 @@
     {
      "q": "What is the rule if they hit the limit?",
      "options": [
-      "The price rises",
       "New shipments pause until the balance comes down",
-      "The limit doubles",
-      "Nothing happens"
+      "Nothing happens",
+      "The price rises",
+      "The limit doubles"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"if they hit the limit, new shipments pause until the balance comes down.\""
     },
     {
      "q": "Why does Oliver start slightly conservative?",
      "options": [
-      "To scare the customer",
       "Because raising a limit is easy, but clawing it back is hard",
-      "To charge more",
-      "Because he distrusts them"
+      "To scare the customer",
+      "Because he distrusts them",
+      "To charge more"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"if I start too generous and have to pull it back, that conversation is much harder.\""
     }
    ]
@@ -122,46 +132,56 @@
     {
      "q": "\"We set a **credit limit** of €100,000.\" A credit limit is…",
      "options": [
-      "the discount rate",
       "the maximum a buyer can owe at once",
       "the payment term",
+      "the discount rate",
       "the interest rate"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Credit limit = limite de crédito."
     },
     {
      "q": "\"**Net 60** terms\" means…",
      "options": [
-      "pay within 60 days",
       "pay 60% now",
-      "a 60% discount",
-      "60 shipments"
+      "60 shipments",
+      "pay within 60 days",
+      "a 60% discount"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Net 60 = prazo de 60 dias para pagar."
     },
     {
      "q": "Choose the correct word: \"The **___** balance must come down before we ship again.\"",
-     "options": ["outstanding", "early", "compliant", "net"],
+     "options": [
+      "outstanding",
+      "compliant",
+      "early",
+      "net"
+     ],
      "answer": 0,
      "why": "Outstanding balance = saldo devedor em aberto."
     },
     {
      "q": "\"They are **creditworthy**.\" Creditworthy means…",
      "options": [
-      "unable to pay",
       "reliable enough to be given credit",
+      "over the limit",
       "asking for a discount",
-      "over the limit"
+      "unable to pay"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Creditworthy = digno de crédito."
     },
     {
      "q": "Choose the correct term: \"The rules are simple to **___**.\"",
-     "options": ["enforce", "grant", "exceed", "discount"],
-     "answer": 0,
+     "options": [
+      "exceed",
+      "grant",
+      "discount",
+      "enforce"
+     ],
+     "answer": 3,
      "why": "To enforce = fazer valer, aplicar."
     }
    ]
@@ -172,41 +192,56 @@
     {
      "q": "\"It's a ceiling, not a **blank cheque**.\" A blank cheque means…",
      "options": [
-      "a strict limit",
       "unlimited freedom to spend",
       "a signed contract",
+      "a strict limit",
       "a small amount"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Blank cheque = carta branca, sem limite."
     },
     {
      "q": "\"If I start generous, I have to **pull it back** later.\" To pull something back means to…",
-     "options": ["extend it", "reduce or withdraw it", "increase it", "sign it"],
-     "answer": 1,
+     "options": [
+      "extend it",
+      "sign it",
+      "reduce or withdraw it",
+      "increase it"
+     ],
+     "answer": 2,
      "why": "Pull back = recuar, reduzir."
     },
     {
      "q": "\"Better to grow trust than to **claw it back**.\" To claw back means to…",
-     "options": ["give more", "recover something already given", "ignore", "reward"],
-     "answer": 1,
+     "options": [
+      "ignore",
+      "give more",
+      "reward",
+      "recover something already given"
+     ],
+     "answer": 3,
      "why": "Claw back = reaver algo já concedido."
     },
     {
      "q": "\"The discount **pulls cash in** faster.\" To pull cash in means to…",
-     "options": ["delay payment", "bring money in sooner", "spend money", "lose money"],
-     "answer": 1,
+     "options": [
+      "lose money",
+      "spend money",
+      "delay payment",
+      "bring money in sooner"
+     ],
+     "answer": 3,
      "why": "Pull cash in = trazer o dinheiro mais cedo."
     },
     {
      "q": "\"Let them grow, but don't just **say yes to everything**.\" This means…",
      "options": [
-      "agree to every request without limits",
-      "refuse everything",
       "negotiate hard",
-      "delay decisions"
+      "refuse everything",
+      "delay decisions",
+      "agree to every request without limits"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Say yes to everything = conceder tudo sem critério."
     }
    ]

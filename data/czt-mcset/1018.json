@@ -10,56 +10,56 @@
     {
      "q": "What is the past of \"is\"?",
      "options": [
-      "was",
-      "were",
       "are",
+      "were",
+      "was",
       "am"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"the past of 'am' and 'is' is 'was'.\""
     },
     {
      "q": "What is the past of \"are\"?",
      "options": [
       "was",
-      "is",
       "were",
-      "am"
+      "am",
+      "is"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"The past of 'are' is 'were'.\""
     },
     {
      "q": "How was the meeting?",
      "options": [
-      "Bad",
       "Great",
-      "Short",
-      "Boring"
+      "Boring",
+      "Bad",
+      "Short"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The meeting was great.\""
     },
     {
      "q": "Why were they tired? The text suggests that…",
      "options": [
-      "last week was busy",
-      "the office was cold",
       "the meeting was short",
-      "today is a holiday"
+      "today is a holiday",
+      "last week was busy",
+      "the office was cold"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"Last week was busy, so we were tired.\" A semana cheia deixou-os cansados."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "English is very hard for beginners",
       "you can learn the past step by step",
       "you must learn 100 words today",
-      "the meeting was a waste of time"
+      "the meeting was a waste of time",
+      "English is very hard for beginners"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"We go step by step. You can do it!\" — o tom é encorajador."
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "When was the big meeting?",
      "options": [
-      "Today",
       "Yesterday",
       "Last month",
+      "Today",
       "Tomorrow"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Yesterday was a long day. We were in a big meeting all morning.\""
     },
     {
      "q": "How did Sophie feel at the end of the day?",
      "options": [
-      "Happy",
-      "Tired",
       "Angry",
+      "Tired",
+      "Happy",
       "Bored"
      ],
      "answer": 1,
@@ -100,20 +100,20 @@
      "q": "Who was helpful with the report?",
      "options": [
       "Sophie",
-      "Tom",
       "The whole team",
+      "Tom",
       "The manager"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Tom was helpful with the report.\""
     },
     {
      "q": "Sophie suggests that today is…",
      "options": [
       "calmer than yesterday",
-      "busier than yesterday",
+      "the same as last week",
       "a holiday",
-      "the same as last week"
+      "busier than yesterday"
      ],
      "answer": 0,
      "why": "Inferência: \"Today we are calm. There is no big meeting today.\" — hoje é mais tranquilo."
@@ -122,11 +122,11 @@
      "q": "How does Sophie feel about the team?",
      "options": [
       "Disappointed",
-      "Proud",
       "Worried",
-      "Neutral"
+      "Neutral",
+      "Proud"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"you were right about the numbers. Thank you! I am proud of the team.\""
     }
    ]
@@ -139,43 +139,43 @@
     {
      "q": "\"We were in a <strong>meeting</strong> all morning.\" A meeting is…",
      "options": [
-      "a break for coffee",
       "a moment when people talk about work",
       "a long email",
+      "a break for coffee",
       "a holiday"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Meeting = reunião: pessoas juntas para falar de trabalho."
     },
     {
      "q": "Choose the correct word: \"I worked a lot, so now I am very ___.\"",
      "options": [
-      "tired",
-      "today",
       "meeting",
-      "last week"
+      "today",
+      "last week",
+      "tired"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Tired = cansado(a): como você fica depois de trabalhar muito."
     },
     {
      "q": "Choose the correct word: \"We are at the office now. This is ___.\"",
      "options": [
+      "tired",
       "yesterday",
       "last week",
-      "today",
-      "tired"
+      "today"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Today = hoje: o dia de agora."
     },
     {
      "q": "\"I was at home <strong>yesterday</strong>.\" Yesterday means…",
      "options": [
       "the day before today",
-      "the day after today",
+      "next month",
       "right now",
-      "next month"
+      "the day after today"
      ],
      "answer": 0,
      "why": "Yesterday = ontem: o dia antes de hoje."
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct words: \"The report was not for today. It was ready ___.\"",
      "options": [
-      "today",
       "last week",
-      "tired",
-      "meeting"
+      "meeting",
+      "today",
+      "tired"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Last week = semana passada: um tempo já no passado."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"Let's <strong>get started</strong> with the new project.\" Get started means…",
      "options": [
-      "to begin",
-      "to stop",
       "to wait",
-      "to finish"
+      "to stop",
+      "to finish",
+      "to begin"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Get started = começar."
     },
     {
      "q": "\"The manager will <strong>sign off on</strong> the report today.\" Sign off on means…",
      "options": [
-      "to approve",
-      "to delete",
       "to read fast",
-      "to print"
+      "to print",
+      "to delete",
+      "to approve"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"You were <strong>right about</strong> the numbers.\" To be right about something means…",
      "options": [
-      "to be correct about it",
       "to forget it",
       "to change it",
-      "to hide it"
+      "to hide it",
+      "to be correct about it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To be right about = estar certo(a) sobre algo."
     },
     {
      "q": "\"Yesterday was busy, but today we can <strong>slow down</strong>.\" Slow down means…",
      "options": [
-      "to go faster",
       "to go slower and calmer",
-      "to stop working",
-      "to start a meeting"
+      "to start a meeting",
+      "to go faster",
+      "to stop working"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Slow down = diminuir o ritmo, ficar mais calmo."
     },
     {
      "q": "\"We plan the project <strong>step by step</strong>.\" Step by step means…",
      "options": [
-      "all at once",
-      "very slowly and never",
       "one small part at a time",
+      "very slowly and never",
+      "all at once",
       "with no plan"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Step by step = passo a passo, uma parte de cada vez."
     }
    ]

@@ -7,37 +7,57 @@
    "items": [
     {
      "q": "What does the text call 'the language of business'?",
-     "options": ["Numbers", "Emails", "Meetings", "Coffee"],
-     "answer": 0,
+     "options": [
+      "Emails",
+      "Meetings",
+      "Coffee",
+      "Numbers"
+     ],
+     "answer": 3,
      "why": "\"Numbers are the language of business.\""
     },
     {
      "q": "How do you say 1,000,000 in English?",
-     "options": ["A thousand", "A million", "A hundred", "Ten percent"],
-     "answer": 1,
+     "options": [
+      "A million",
+      "Ten percent",
+      "A thousand",
+      "A hundred"
+     ],
+     "answer": 0,
      "why": "\"1,000,000 is 'a million'.\""
     },
     {
      "q": "What word do percentages use?",
-     "options": ["Thousand", "Percent", "Million", "Growth"],
+     "options": [
+      "Million",
+      "Percent",
+      "Thousand",
+      "Growth"
+     ],
      "answer": 1,
      "why": "\"Percentages use the word percent, as in 'ten percent'.\""
     },
     {
      "q": "On a chart, what does a line going up mean?",
-     "options": ["Decline", "Growth", "Nothing", "A mistake"],
-     "answer": 1,
+     "options": [
+      "Growth",
+      "Decline",
+      "Nothing",
+      "A mistake"
+     ],
+     "answer": 0,
      "why": "\"A line going up means growth.\""
     },
     {
      "q": "What does the text say is 'the way'?",
      "options": [
-      "Numbers, then a story",
       "A story with no numbers",
       "Numbers only",
-      "No numbers at all"
+      "No numbers at all",
+      "Numbers, then a story"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Numbers, then a story — that is the way.\""
     }
    ]
@@ -53,48 +73,53 @@
      "q": "What does Harry want to do the right way?",
      "options": [
       "Show only numbers",
-      "Show the number, then tell the story",
+      "Hide the chart",
       "Tell a story with no numbers",
-      "Hide the chart"
+      "Show the number, then tell the story"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"show the number, then tell the story.\""
     },
     {
      "q": "What does the line on the chart do?",
-     "options": ["Goes down", "Goes up — meaning growth", "Stays flat", "Disappears"],
-     "answer": 1,
+     "options": [
+      "Goes down",
+      "Disappears",
+      "Stays flat",
+      "Goes up — meaning growth"
+     ],
+     "answer": 3,
      "why": "\"The line goes up… Up means growth.\""
     },
     {
      "q": "By how much were sales up?",
      "options": [
       "Eighty percent",
-      "Eight percent, compared with the same month last year",
+      "They fell",
       "One percent",
-      "They fell"
+      "Eight percent, compared with the same month last year"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Sales were up eight percent compared with the same month last year.\""
     },
     {
      "q": "What is the story behind the number?",
      "options": [
       "Costs went up",
+      "Nothing changed",
       "Most of the growth came from the two new Brazilian clients — they're paying off",
-      "The team is tired",
-      "Nothing changed"
+      "The team is tired"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"most of it came from our two new Brazilian clients… 'the new clients are already paying off'.\""
     },
     {
      "q": "How does Harry sum it up?",
      "options": [
-      "Numbers alone are enough",
+      "Never use numbers",
       "A chart shows; a story sticks",
       "Stories don't matter",
-      "Never use numbers"
+      "Numbers alone are enough"
      ],
      "answer": 1,
      "why": "\"A chart shows; a story sticks.\""
@@ -106,36 +131,56 @@
    "items": [
     {
      "q": "**Growth** means…",
-     "options": ["going down", "going up / increasing", "staying flat", "disappearing"],
-     "answer": 1,
+     "options": [
+      "going up / increasing",
+      "going down",
+      "disappearing",
+      "staying flat"
+     ],
+     "answer": 0,
      "why": "Growth = crescimento."
     },
     {
      "q": "**Decline** means…",
-     "options": ["going up", "going down / decreasing", "staying flat", "growing"],
-     "answer": 1,
+     "options": [
+      "staying flat",
+      "going up",
+      "growing",
+      "going down / decreasing"
+     ],
+     "answer": 3,
      "why": "Decline = queda."
     },
     {
      "q": "Choose the correct word: \"Sales were up ten **___**.\"",
-     "options": ["percent", "million only", "chart", "pie"],
-     "answer": 0,
+     "options": [
+      "pie",
+      "million only",
+      "percent",
+      "chart"
+     ],
+     "answer": 2,
      "why": "Percent = por cento."
     },
     {
      "q": "A **pie chart** shows…",
      "options": [
       "a line over time",
-      "parts of a whole as slices",
       "a single number",
+      "parts of a whole as slices",
       "a photo"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Pie chart = gráfico de pizza."
     },
     {
      "q": "Choose the correct word: \"We **___** everything: sales, costs, hours.\"",
-     "options": ["measure", "ignore", "forget", "hide"],
+     "options": [
+      "measure",
+      "forget",
+      "ignore",
+      "hide"
+     ],
      "answer": 0,
      "why": "Measure = medir."
     }
@@ -146,32 +191,57 @@
    "items": [
     {
      "q": "\"The new clients are **paying off**.\" To pay off means to…",
-     "options": ["cost money", "bring good results", "fail", "be cancelled"],
-     "answer": 1,
+     "options": [
+      "be cancelled",
+      "cost money",
+      "fail",
+      "bring good results"
+     ],
+     "answer": 3,
      "why": "Pay off = dar resultado, compensar."
     },
     {
      "q": "\"A story makes the numbers **stick**.\" To stick here means to…",
-     "options": ["be forgotten", "be remembered", "be lost", "be hidden"],
-     "answer": 1,
+     "options": [
+      "be hidden",
+      "be forgotten",
+      "be remembered",
+      "be lost"
+     ],
+     "answer": 2,
      "why": "Stick = grudar, ficar na memória."
     },
     {
      "q": "\"Sales **went up** eight percent.\" To go up means to…",
-     "options": ["fall", "rise", "stay flat", "stop"],
+     "options": [
+      "stay flat",
+      "rise",
+      "fall",
+      "stop"
+     ],
      "answer": 1,
      "why": "Go up = subir."
     },
     {
      "q": "\"That's the **main point**.\" The main point is…",
-     "options": ["a small detail", "the most important idea", "the ending", "a mistake"],
-     "answer": 1,
+     "options": [
+      "the ending",
+      "a mistake",
+      "the most important idea",
+      "a small detail"
+     ],
+     "answer": 2,
      "why": "Main point = o ponto principal."
     },
     {
      "q": "\"Numbers alone are **boring**.\" Boring means…",
-     "options": ["exciting", "not interesting", "difficult", "expensive"],
-     "answer": 1,
+     "options": [
+      "not interesting",
+      "difficult",
+      "exciting",
+      "expensive"
+     ],
+     "answer": 0,
      "why": "Boring = entediante."
     }
    ]

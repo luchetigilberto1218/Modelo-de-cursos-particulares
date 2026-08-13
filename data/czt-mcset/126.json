@@ -8,34 +8,34 @@
     {
      "q": "What does a bank guarantee say?",
      "options": [
-      "The customer will always pay",
-      "If our customer does not do what they promised, we will pay you instead",
+      "The bank ships the goods",
       "The goods are free",
-      "The bank ships the goods"
+      "The customer will always pay",
+      "If our customer does not do what they promised, we will pay you instead"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"if our customer does not do what they promised, we will pay you instead.\""
     },
     {
      "q": "When is a bank guarantee useful?",
      "options": [
-      "When one company wants another to trust them",
-      "When the goods are cheap",
       "When there is no bank",
-      "When the ship is fast"
+      "When the ship is fast",
+      "When the goods are cheap",
+      "When one company wants another to trust them"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"It is useful when one company wants another to trust them.\""
     },
     {
      "q": "In the example, who might ask for a guarantee?",
      "options": [
-      "A supplier, before starting a big project",
       "A customs officer",
+      "A bank teller",
       "A ship's captain",
-      "A bank teller"
+      "A supplier, before starting a big project"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"a supplier may ask for a guarantee before starting a big project.\""
     },
     {
@@ -53,11 +53,11 @@
      "q": "What is the purpose of the safety net?",
      "options": [
       "To make the deal cheaper",
+      "To speed up shipping",
       "So the two sides can do business with confidence",
-      "To avoid the bank",
-      "To speed up shipping"
+      "To avoid the bank"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"so the two sides can do business with confidence.\""
     }
    ]
@@ -72,32 +72,32 @@
     {
      "q": "What is the buyer asking for before signing?",
      "options": [
-      "A discount",
       "A performance guarantee",
+      "A discount",
       "A letter of credit",
       "A lower price"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Your new buyer in Asia is asking for a performance guarantee.\""
     },
     {
      "q": "Why does the buyer want it?",
      "options": [
-      "They've never worked with you and depend on you to deliver",
       "They dislike you",
       "The bank requires it",
+      "They've never worked with you and depend on you to deliver",
       "The goods are cheap"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"They've never worked with you… What if you don't [deliver]?\""
     },
     {
      "q": "What does the performance guarantee promise?",
      "options": [
-      "The buyer pays more",
+      "The bank ships the goods",
       "If the supplier doesn't deliver as agreed, the bank pays the buyer instead",
-      "The goods are free",
-      "The bank ships the goods"
+      "The buyer pays more",
+      "The goods are free"
      ],
      "answer": 1,
      "why": "\"if you, the supplier, don't perform… the bank pays them instead.\""
@@ -106,22 +106,22 @@
      "q": "Is the request an insult, according to Sophie?",
      "options": [
       "Yes",
-      "No — it's how careful companies protect themselves with a new partner",
       "Only for small buyers",
+      "No — it's how careful companies protect themselves with a new partner",
       "Only in Asia"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"this is not an insult… It's just how careful companies protect themselves with a new partner.\""
     },
     {
      "q": "What is the 'good news' at the end?",
      "options": [
       "The guarantee is free",
-      "Once you deliver well, they'll trust you and probably won't ask next time",
       "The buyer will pay more",
+      "Once you deliver well, they'll trust you and probably won't ask next time",
       "The bank ships for free"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"once you deliver well… next time they probably won't ask for one at all.\""
     }
    ]
@@ -132,10 +132,10 @@
     {
      "q": "A **bank guarantee** is…",
      "options": [
-      "a shipping form",
+      "a duty",
       "a bank's promise to pay if its customer fails to do what they promised",
-      "a currency",
-      "a duty"
+      "a shipping form",
+      "a currency"
      ],
      "answer": 1,
      "why": "Bank guarantee = garantia bancária."
@@ -143,35 +143,45 @@
     {
      "q": "A **safety net** is…",
      "options": [
-      "a type of ship",
       "protection in case something goes wrong",
       "a discount",
-      "a customs form"
+      "a customs form",
+      "a type of ship"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Safety net = rede de segurança."
     },
     {
      "q": "Choose the correct word: \"If the buyer **___** to pay, the bank will pay instead.\"",
-     "options": ["fails", "agrees", "ships", "declares"],
-     "answer": 0,
+     "options": [
+      "declares",
+      "ships",
+      "agrees",
+      "fails"
+     ],
+     "answer": 3,
      "why": "To fail = falhar."
     },
     {
      "q": "The **beneficiary** of a guarantee is…",
      "options": [
-      "the party protected by it",
       "the bank",
+      "customs",
       "the ship",
-      "customs"
+      "the party protected by it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Beneficiary = beneficiário."
     },
     {
      "q": "Choose the correct word: \"A **performance** guarantee protects the buyer if the supplier does not **___**.\"",
-     "options": ["deliver", "pay a duty", "ship early", "cancel"],
-     "answer": 0,
+     "options": [
+      "ship early",
+      "pay a duty",
+      "deliver",
+      "cancel"
+     ],
+     "answer": 2,
      "why": "Performance = cumprimento/entrega do combinado."
     }
    ]
@@ -192,31 +202,46 @@
     },
     {
      "q": "\"It's normal — big buyers ask for this **all the time**.\" All the time means…",
-     "options": ["never", "very often", "once", "rarely"],
-     "answer": 1,
+     "options": [
+      "never",
+      "once",
+      "rarely",
+      "very often"
+     ],
+     "answer": 3,
      "why": "All the time = o tempo todo, com frequência."
     },
     {
      "q": "\"Think about it **from their side**.\" From their side means…",
-     "options": ["from their point of view", "against them", "without them", "next to them"],
+     "options": [
+      "from their point of view",
+      "without them",
+      "against them",
+      "next to them"
+     ],
      "answer": 0,
      "why": "From their side = do ponto de vista deles."
     },
     {
      "q": "\"If you don't deliver, they'd be **stuck**.\" To be stuck means to…",
      "options": [
-      "be fine",
       "be in a difficult position with no easy way out",
       "be paid",
+      "be fine",
       "be early"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Be stuck = ficar preso, em apuros."
     },
     {
      "q": "\"Once you **deliver well**, they'll trust you.\" To deliver well means to…",
-     "options": ["do the job as promised", "fail", "delay", "cancel"],
-     "answer": 0,
+     "options": [
+      "fail",
+      "delay",
+      "cancel",
+      "do the job as promised"
+     ],
+     "answer": 3,
      "why": "Deliver well = cumprir bem o combinado."
     }
    ]

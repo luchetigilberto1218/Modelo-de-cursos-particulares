@@ -21,10 +21,10 @@
     {
      "q": "What does SaaS mean?",
      "options": [
-      "Software you buy once",
+      "A kind of computer",
       "Software as a Service — software you rent",
       "A type of server",
-      "A kind of computer"
+      "Software you buy once"
      ],
      "answer": 1,
      "why": "\"SaaS means Software as a Service. It is software you rent, not software you buy.\""
@@ -32,34 +32,34 @@
     {
      "q": "Where does cloud software run?",
      "options": [
-      "On your own computer",
+      "Inside a web browser only",
       "On paper",
-      "On servers somewhere else",
-      "Inside a web browser only"
+      "On your own computer",
+      "On servers somewhere else"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Cloud software runs on servers somewhere else, not on your own computer.\""
     },
     {
      "q": "The text suggests that a modern company usually uses…",
      "options": [
-      "only one kind of software",
-      "no software at all",
+      "only local machines",
       "more than one kind of software together",
-      "only local machines"
+      "only one kind of software",
+      "no software at all"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: \"Modern companies usually mix all three\" — elas usam vários tipos juntos."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "IT keeps different software working together.",
       "A company should use only one kind of software and nothing else.",
       "Some tools can run on the cloud.",
+      "IT keeps different software working together.",
       "SaaS is used through a web browser."
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto diz que empresas misturam os três tipos, então usar só um contraria a ideia central."
     }
    ]
@@ -79,8 +79,8 @@
      "options": [
       "A web browser",
       "Enterprise software",
-      "A game",
-      "A local tool only"
+      "A local tool only",
+      "A game"
      ],
      "answer": 1,
      "why": "\"the ERP. That is enterprise software.\""
@@ -88,21 +88,21 @@
     {
      "q": "How does the sales team pay for the CRM?",
      "options": [
-      "They buy it once",
-      "They get it for free",
       "They rent it every month",
-      "They build it themselves"
+      "They get it for free",
+      "They build it themselves",
+      "They buy it once"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"That one is SaaS. We do not buy it; we rent it every month.\""
     },
     {
      "q": "Where does the ERP run?",
      "options": [
       "On the cloud, on a server",
-      "On your laptop",
+      "In a web browser only",
       "On paper",
-      "In a web browser only"
+      "On your laptop"
      ],
      "answer": 0,
      "why": "\"It lives on the cloud, so it runs on a server, not on your laptop.\""
@@ -110,23 +110,23 @@
     {
      "q": "Why does the team keep the old tools on local machines?",
      "options": [
-      "Because they are new",
       "Because they still work well",
       "Because they are free",
+      "Because they are new",
       "Because nobody uses them"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"They are old, but they work well, so we keep them.\""
     },
     {
      "q": "What does Harry want the new joiner to do to stay safe?",
      "options": [
-      "Install the updates",
       "Turn off the computer",
-      "Delete the CRM",
-      "Buy new software"
+      "Install the updates",
+      "Buy new software",
+      "Delete the CRM"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"remember to install the updates — they keep everything safe.\""
     }
    ]
@@ -150,32 +150,32 @@
     {
      "q": "\"The sales team uses a <strong>CRM</strong> to help with clients.\" A CRM helps teams…",
      "options": [
+      "print reports on paper",
       "manage customer relationships",
       "clean the office",
-      "pay the rent",
-      "print reports on paper"
+      "pay the rent"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "CRM = software para gerir o relacionamento com os clientes."
     },
     {
      "q": "Choose the correct word: \"You open SaaS tools in your ___.\"",
      "options": [
-      "web browser",
       "car",
-      "phone battery",
-      "printer"
+      "web browser",
+      "printer",
+      "phone battery"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Web browser = navegador; é onde você abre as ferramentas SaaS."
     },
     {
      "q": "\"Cloud software runs on a <strong>server</strong>, not on your laptop.\" A server is…",
      "options": [
       "a computer that stores and runs software for others",
-      "a paper file",
+      "an office chair",
       "a mobile phone",
-      "an office chair"
+      "a paper file"
      ],
      "answer": 0,
      "why": "Server = servidor; computador que guarda e roda o software para os outros."
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct word: \"We do not buy this tool; we ___ it every month.\"",
      "options": [
-      "rent",
       "eat",
-      "drive",
-      "paint"
+      "rent",
+      "paint",
+      "drive"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "To rent = alugar; você paga todo mês em vez de comprar."
     }
    ]
@@ -201,54 +201,54 @@
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the new tool.\" To sign off on means to…",
      "options": [
-      "approve it",
+      "break it",
       "delete it",
       "hide it",
-      "break it"
+      "approve it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new CRM next month.\" To roll out means to…",
      "options": [
-      "start using it, step by step",
+      "sell it",
       "throw it away",
-      "keep it secret forever",
-      "sell it"
+      "start using it, step by step",
+      "keep it secret forever"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Roll out = implementar, colocar em uso aos poucos."
     },
     {
      "q": "\"Please remember to <strong>back up</strong> your files.\" To back up means to…",
      "options": [
-      "make a safe copy",
-      "delete them",
+      "email them to a client",
       "print them",
-      "email them to a client"
+      "make a safe copy",
+      "delete them"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Back up = fazer uma cópia de segurança."
     },
     {
      "q": "\"The old system broke, so IT had to <strong>set up</strong> a new one.\" To set up means to…",
      "options": [
-      "prepare and start it",
       "turn it off",
       "sell it",
-      "lose it"
+      "lose it",
+      "prepare and start it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Set up = configurar e deixar pronto para usar."
     },
     {
      "q": "\"If the app stops, just <strong>log in</strong> again.\" To log in means to…",
      "options": [
       "enter with your name and password",
-      "close the computer",
+      "call the client",
       "buy new software",
-      "call the client"
+      "close the computer"
      ],
      "answer": 0,
      "why": "Log in = entrar no sistema com usuário e senha."

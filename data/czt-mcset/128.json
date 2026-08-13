@@ -8,37 +8,42 @@
     {
      "q": "What is trade credit?",
      "options": [
-      "Paying before delivery",
+      "A customs duty",
       "When a seller lets the buyer pay later",
       "A bank guarantee",
-      "A customs duty"
+      "Paying before delivery"
      ],
      "answer": 1,
      "why": "\"Trade credit is when a seller lets the buyer pay later.\""
     },
     {
      "q": "How long after delivery is payment often made?",
-     "options": ["Immediately", "30, 60 or 90 days", "One year", "Never"],
-     "answer": 1,
+     "options": [
+      "30, 60 or 90 days",
+      "Never",
+      "One year",
+      "Immediately"
+     ],
+     "answer": 0,
      "why": "\"often 30, 60 or 90 days after delivery.\""
     },
     {
      "q": "Why do sellers offer trade credit?",
      "options": [
-      "To lose customers",
       "Because it helps win customers and sell more",
       "To pay less tax",
-      "To avoid the bank"
+      "To avoid the bank",
+      "To lose customers"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"it helps win customers and sell more.\""
     },
     {
      "q": "What is the cost to the seller?",
      "options": [
-      "Nothing",
-      "They must wait for the money and carry a small risk",
       "A higher price",
+      "They must wait for the money and carry a small risk",
+      "Nothing",
       "A customs fine"
      ],
      "answer": 1,
@@ -47,12 +52,12 @@
     {
      "q": "Why is trade credit 'a kind of loan'?",
      "options": [
-      "Because a bank lends the money",
-      "Because the seller effectively lets the buyer use the goods before paying",
       "Because it is free",
-      "Because it avoids risk"
+      "Because a bank lends the money",
+      "Because it avoids risk",
+      "Because the seller effectively lets the buyer use the goods before paying"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o vendedor espera e assume risco — é como emprestar ao comprador."
     }
    ]
@@ -67,34 +72,34 @@
     {
      "q": "Why does the company offer sixty days of credit to its best clients?",
      "options": [
-      "To lose money",
-      "It's a tool to win business — buyers prefer suppliers who let them pay later",
       "Because the bank requires it",
-      "To avoid tax"
+      "To lose money",
+      "To avoid tax",
+      "It's a tool to win business — buyers prefer suppliers who let them pay later"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"trade credit is a tool to win business.\""
     },
     {
      "q": "In the example, which supplier gets the order?",
      "options": [
-      "The one asking to be paid on delivery",
       "The one offering to be paid in sixty days",
-      "Neither",
-      "Both equally"
+      "The one asking to be paid on delivery",
+      "Both equally",
+      "Neither"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Which one gets the order? Almost always the second.\""
     },
     {
      "q": "Why is trade credit not free for the seller?",
      "options": [
       "They pay a duty",
-      "They've delivered but don't have the money for sixty days — like lending it",
       "The bank charges them",
-      "The goods are lost"
+      "The goods are lost",
+      "They've delivered but don't have the money for sixty days — like lending it"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"we've delivered the coffee but we don't have the money. We're basically lending it to them.\""
     },
     {
@@ -111,12 +116,12 @@
     {
      "q": "What is the simple rule?",
      "options": [
+      "Never offer credit",
       "Offer unlimited credit",
       "Offer credit to good clients to win orders, but never more than you can afford to wait for",
-      "Never offer credit",
       "Always ask for cash"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"offer credit to good clients… but never more than you can afford to wait for.\""
     }
    ]
@@ -127,41 +132,56 @@
     {
      "q": "**Trade credit** is…",
      "options": [
-      "a bank loan",
-      "when a seller lets the buyer pay later",
+      "a currency",
       "a customs duty",
-      "a currency"
+      "a bank loan",
+      "when a seller lets the buyer pay later"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Trade credit = crédito comercial."
     },
     {
      "q": "**Net 30** means…",
-     "options": ["pay 30% now", "pay within 30 days", "30 shipments", "a 30% discount"],
+     "options": [
+      "30 shipments",
+      "pay within 30 days",
+      "pay 30% now",
+      "a 30% discount"
+     ],
      "answer": 1,
      "why": "Net 30 = pagar em até 30 dias."
     },
     {
      "q": "Choose the correct word: \"The **___** is the money the buyer will pay us later.\"",
-     "options": ["receivable", "duty", "freight", "border"],
-     "answer": 0,
+     "options": [
+      "duty",
+      "receivable",
+      "border",
+      "freight"
+     ],
+     "answer": 1,
      "why": "Receivable = conta a receber."
     },
     {
      "q": "The **due date** is…",
      "options": [
-      "the shipping date",
       "the date the payment must be made",
+      "the delivery date",
       "the order date",
-      "the delivery date"
+      "the shipping date"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Due date = data de vencimento."
     },
     {
      "q": "Choose the correct word: \"Offering credit affects our **___** because the money comes in later.\"",
-     "options": ["cash flow", "border", "duty", "freight"],
-     "answer": 0,
+     "options": [
+      "border",
+      "freight",
+      "cash flow",
+      "duty"
+     ],
+     "answer": 2,
      "why": "Cash flow = fluxo de caixa."
     }
    ]
@@ -171,37 +191,57 @@
    "items": [
     {
      "q": "\"Good clients **come back** for another order.\" To come back means to…",
-     "options": ["leave", "return", "pay", "cancel"],
-     "answer": 1,
+     "options": [
+      "leave",
+      "pay",
+      "return",
+      "cancel"
+     ],
+     "answer": 2,
      "why": "Come back = voltar."
     },
     {
      "q": "\"We're **basically lending** them the money.\" Basically means…",
-     "options": ["never", "in effect / essentially", "quickly", "expensively"],
+     "options": [
+      "expensively",
+      "in effect / essentially",
+      "quickly",
+      "never"
+     ],
      "answer": 1,
      "why": "Basically = essencialmente, na prática."
     },
     {
      "q": "\"Buyers like to **hold on to** their cash.\" To hold on to means to…",
-     "options": ["spend", "keep", "lose", "lend"],
-     "answer": 1,
+     "options": [
+      "spend",
+      "lose",
+      "keep",
+      "lend"
+     ],
+     "answer": 2,
      "why": "Hold on to = segurar, manter."
     },
     {
      "q": "\"Never lend more than you can **afford to wait for**.\" To afford means to…",
      "options": [
-      "be able to manage",
+      "ship",
       "refuse",
-      "borrow",
-      "ship"
+      "be able to manage",
+      "borrow"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Afford = ter condições de arcar."
     },
     {
      "q": "\"Trade credit helps us **win business**.\" To win business means to…",
-     "options": ["lose orders", "gain customers and sales", "pay tax", "ship goods"],
-     "answer": 1,
+     "options": [
+      "gain customers and sales",
+      "lose orders",
+      "pay tax",
+      "ship goods"
+     ],
+     "answer": 0,
      "why": "Win business = ganhar negócios/clientes."
     }
    ]

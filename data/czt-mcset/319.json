@@ -10,42 +10,42 @@
     {
      "q": "What does a TMS do?",
      "options": [
+      "It cleans the warehouse",
       "It plans routes and books carriers",
-      "It packs the boxes",
       "It replaces the team",
-      "It cleans the warehouse"
+      "It packs the boxes"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"A TMS plans routes, books carriers, and tracks shipments.\""
     },
     {
      "q": "What does a WMS run?",
      "options": [
-      "The website",
-      "The warehouse",
       "The trucks",
-      "The office phones"
+      "The office phones",
+      "The warehouse",
+      "The website"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"A WMS runs the warehouse — receiving, picking, packing, and dispatch.\""
     },
     {
      "q": "What do tracking systems show?",
      "options": [
-      "The price of each parcel",
       "Where every parcel is in real time",
       "The name of the driver",
-      "The weather"
+      "The weather",
+      "The price of each parcel"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Tracking systems show where every parcel is in real time.\""
     },
     {
      "q": "The text says nobody types the same information twice. This suggests that…",
      "options": [
       "the systems share information with each other",
-      "the team is very small",
       "typing is not allowed",
+      "the team is very small",
       "the order never arrives"
      ],
      "answer": 0,
@@ -77,21 +77,21 @@
     {
      "q": "How many screens does Emily show?",
      "options": [
+      "Ten",
       "Two",
-      "Three",
       "Four",
-      "Ten"
+      "Three"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Let me show you the three screens we use every day.\""
     },
     {
      "q": "What does the TMS do when a new order comes in?",
      "options": [
-      "It packs the box",
-      "It chooses the best truck and road",
       "It calls the customer",
-      "It prints a label"
+      "It chooses the best truck and road",
+      "It prints a label",
+      "It packs the box"
      ],
      "answer": 1,
      "why": "\"the TMS chooses the best truck and the best road.\""
@@ -100,9 +100,9 @@
      "q": "Why does every box have a code?",
      "options": [
       "So the system always knows where it is",
+      "So the price goes down",
       "So the customer can pay",
-      "So the truck can start",
-      "So the price goes down"
+      "So the truck can start"
      ],
      "answer": 0,
      "why": "\"Every box has a code, so the system always knows where it is.\""
@@ -112,8 +112,8 @@
      "options": [
       "bad data can cause real problems in the operation",
       "trucks stop every day",
-      "the driver is careless",
-      "the screen is broken"
+      "the screen is broken",
+      "the driver is careless"
      ],
      "answer": 0,
      "why": "Inferência: um erro pequeno no sistema tem efeito grande na operação real."
@@ -139,56 +139,56 @@
     {
      "q": "\"The system tracks every parcel in <strong>real time</strong>.\" Real time means…",
      "options": [
+      "in the past",
       "at the exact moment it happens",
-      "once a week",
       "at the end of the day",
-      "in the past"
+      "once a week"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Real time = tempo real: a informação aparece no momento em que acontece."
     },
     {
      "q": "Choose the correct word: \"When the systems ___ , information moves from one screen to the next by itself.\"",
      "options": [
-      "connect",
-      "replace",
+      "close",
       "print",
-      "close"
+      "replace",
+      "connect"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To connect = conectar: os sistemas se ligam e trocam dados."
     },
     {
      "q": "Choose the correct word: \"Please ___ the numbers with care, or the order will be wrong.\"",
      "options": [
+      "cook",
       "type",
       "sleep",
-      "drive",
-      "cook"
+      "drive"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "To type = digitar os números no sistema."
     },
     {
      "q": "\"The TMS can <strong>book</strong> a carrier in one click.\" To book means to…",
      "options": [
-      "reserve or arrange it",
-      "read it",
       "close it",
-      "clean it"
+      "clean it",
+      "read it",
+      "reserve or arrange it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To book = reservar: aqui, contratar/arranjar a transportadora."
     },
     {
      "q": "\"Good tools do not <strong>replace</strong> a good team.\" To replace means to…",
      "options": [
-      "take the place of",
       "help",
       "pay",
-      "call"
+      "call",
+      "take the place of"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To replace = substituir, tomar o lugar de."
     }
    ]
@@ -201,31 +201,31 @@
     {
      "q": "\"We will <strong>roll out</strong> the new system next month.\" To roll out means to…",
      "options": [
-      "start using it, step by step",
+      "sell it",
       "throw it away",
-      "hide it",
-      "sell it"
+      "start using it, step by step",
+      "hide it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Roll out = implantar de forma progressiva."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the new dashboard first.\" To sign off on means to…",
      "options": [
-      "formally approve it",
-      "delete it",
       "copy it",
-      "test it in secret"
+      "test it in secret",
+      "delete it",
+      "formally approve it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"A new order <strong>comes in</strong> every few seconds.\" To come in means to…",
      "options": [
       "arrive",
-      "leave",
       "stop",
+      "leave",
       "wait"
      ],
      "answer": 0,
@@ -234,23 +234,23 @@
     {
      "q": "\"If the data is wrong, the whole order can <strong>break down</strong>.\" To break down means to…",
      "options": [
+      "arrive early",
       "stop working",
       "get cheaper",
-      "arrive early",
       "grow bigger"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Break down = parar de funcionar, dar problema."
     },
     {
      "q": "\"Please <strong>fill in</strong> the numbers before you save.\" To fill in means to…",
      "options": [
+      "close the screen",
       "write the information in the fields",
       "delete the file",
-      "close the screen",
       "call the driver"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fill in = preencher os campos com a informação."
     }
    ]

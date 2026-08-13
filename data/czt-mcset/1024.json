@@ -10,34 +10,34 @@
     {
      "q": "When are the calls?",
      "options": [
-      "On Monday",
-      "On Wednesday",
       "On Friday",
-      "On Sunday"
+      "On Sunday",
+      "On Monday",
+      "On Wednesday"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"There are calls on Monday.\" — as ligações são na segunda."
     },
     {
      "q": "What day is the team lunch?",
      "options": [
       "Monday",
-      "Wednesday",
       "Friday",
-      "Thursday"
+      "Thursday",
+      "Wednesday"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"There is a team lunch on Friday.\" — o almoço em equipe é na sexta."
     },
     {
      "q": "What do people do on Wednesday?",
      "options": [
-      "Calls",
-      "Reports",
       "Lunch",
-      "Rest"
+      "Calls",
+      "Rest",
+      "Reports"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"There are reports on Wednesday.\" — relatórios na quarta."
     },
     {
@@ -55,11 +55,11 @@
      "q": "The text suggests that each day at Czarnikow has…",
      "options": [
       "the same tasks",
+      "only calls",
       "no tasks",
-      "its own tasks",
-      "only calls"
+      "its own tasks"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"every weekday has its own tasks\" — cada dia tem tarefas diferentes."
     }
    ]
@@ -77,54 +77,54 @@
     {
      "q": "What does Emma do on Monday?",
      "options": [
+      "She works from home",
       "She calls clients",
       "She has a meeting with her team",
-      "She works from home",
       "She rests"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"On Monday, I have a meeting with my team.\""
     },
     {
      "q": "Where does Emma work on Thursday?",
      "options": [
-      "At the office",
-      "At a client's office",
+      "At lunch",
       "From home",
-      "At lunch"
+      "At a client's office",
+      "At the office"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"On Thursday, I work from home.\""
     },
     {
      "q": "What is Emma's favourite day?",
      "options": [
-      "Monday",
       "Wednesday",
-      "Friday",
-      "Sunday"
+      "Sunday",
+      "Monday",
+      "Friday"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Friday is my favourite day. Friday is team lunch.\""
     },
     {
      "q": "Why does Emma like Tuesday?",
      "options": [
-      "Because she talks to many people",
-      "Because she rests",
       "Because she eats lunch",
-      "Because she writes reports"
+      "Because she rests",
+      "Because she writes reports",
+      "Because she talks to many people"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"I like Tuesday because I talk to many people.\""
     },
     {
      "q": "How does Emma feel about her week?",
      "options": [
-      "Tired and unhappy",
-      "Calm and happy",
       "Angry",
-      "Bored"
+      "Calm and happy",
+      "Bored",
+      "Tired and unhappy"
      ],
      "answer": 1,
      "why": "Inferência: ela diz \"I like it\", \"It is quiet and calm\" e \"a nice way to end the week\" — ela gosta da semana."
@@ -139,56 +139,56 @@
     {
      "q": "\"I have a big meeting on <strong>Monday</strong>.\" Monday is…",
      "options": [
-      "segunda",
-      "terça",
+      "domingo",
       "sexta",
-      "domingo"
+      "terça",
+      "segunda"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Monday = segunda-feira."
     },
     {
      "q": "\"On <strong>Wednesday</strong>, I write my report.\" Wednesday is…",
      "options": [
       "segunda",
-      "quarta",
       "quinta",
-      "sábado"
+      "sábado",
+      "quarta"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Wednesday = quarta-feira."
     },
     {
      "q": "Choose the correct word: \"On ___, I call my clients. It is the day after Monday.\"",
      "options": [
-      "Tuesday",
-      "Friday",
       "Sunday",
-      "Thursday"
+      "Thursday",
+      "Friday",
+      "Tuesday"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Tuesday = terça, o dia depois de Monday (segunda)."
     },
     {
      "q": "Choose the correct word: \"The team lunch is on ___. It is the last workday of the week.\"",
      "options": [
-      "Monday",
       "Wednesday",
       "Friday",
-      "Tuesday"
+      "Tuesday",
+      "Monday"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Friday = sexta, o último dia útil da semana."
     },
     {
      "q": "\"I work from home on <strong>Thursday</strong>.\" Thursday is…",
      "options": [
       "terça",
+      "sexta",
       "quarta",
-      "quinta",
-      "sexta"
+      "quinta"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Thursday = quinta-feira."
     }
    ]
@@ -201,21 +201,21 @@
     {
      "q": "\"<strong>See you on Monday!</strong>\" This means…",
      "options": [
+      "Estou atrasado.",
       "Até segunda!",
       "Bom trabalho!",
-      "Estou atrasado.",
       "Adeus para sempre."
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "See you on Monday = a gente se vê na segunda."
     },
     {
      "q": "\"I <strong>work from home</strong> on Thursday.\" This means I…",
      "options": [
-      "go to the office",
-      "do my job at home",
       "take the day off",
-      "travel for work"
+      "do my job at home",
+      "travel for work",
+      "go to the office"
      ],
      "answer": 1,
      "why": "Work from home = trabalhar de casa."
@@ -223,12 +223,12 @@
     {
      "q": "\"Let's <strong>set up a meeting</strong> for Monday.\" To set up a meeting means to…",
      "options": [
-      "cancel a meeting",
       "arrange a meeting",
       "leave a meeting",
-      "join a meeting late"
+      "join a meeting late",
+      "cancel a meeting"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Set up a meeting = marcar/organizar uma reunião."
     },
     {
@@ -236,8 +236,8 @@
      "options": [
       "send it to me",
       "delete it",
-      "print it",
-      "read it out loud"
+      "read it out loud",
+      "print it"
      ],
      "answer": 0,
      "why": "Send over = enviar (algo) para alguém."
@@ -246,9 +246,9 @@
      "q": "\"On Friday we <strong>catch up</strong> at lunch.\" To catch up means to…",
      "options": [
       "talk and share news",
-      "work faster",
+      "start a new project",
       "go home early",
-      "start a new project"
+      "work faster"
      ],
      "answer": 0,
      "why": "Catch up = colocar a conversa em dia, trocar novidades."

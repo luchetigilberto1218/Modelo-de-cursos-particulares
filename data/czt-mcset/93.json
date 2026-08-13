@@ -8,23 +8,23 @@
     {
      "q": "According to the text, what do busy readers actually do?",
      "options": [
-      "Read every word",
-      "Skim — catching the first line, headings and bold text",
       "Read only the ending",
-      "Ignore the document"
+      "Read every word",
+      "Ignore the document",
+      "Skim — catching the first line, headings and bold text"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"They skim. They catch the first line, the headings, and whatever is in bold.\""
     },
     {
      "q": "What does \"front-load the main point\" mean?",
      "options": [
       "Put the point at the end",
-      "Put the main point at the start",
       "Add more detail",
-      "Use more headings"
+      "Use more headings",
+      "Put the main point at the start"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"good business writing front-loads the main point.\""
     },
     {
@@ -40,19 +40,24 @@
     },
     {
      "q": "According to the text, \"In order to\" should be replaced with…",
-     "options": ["\"so that\"", "\"to\"", "\"because\"", "\"now\""],
+     "options": [
+      "\"so that\"",
+      "\"to\"",
+      "\"now\"",
+      "\"because\""
+     ],
      "answer": 1,
      "why": "\"'In order to' is just 'to'.\""
     },
     {
      "q": "\"Good writing is not about adding more — it is about taking away\" means that clarity comes from…",
      "options": [
-      "longer documents",
       "removing what is unnecessary",
-      "more headings",
-      "formal language"
+      "formal language",
+      "longer documents",
+      "more headings"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: cortar o supérfluo faz o essencial se destacar."
     }
    ]
@@ -68,42 +73,42 @@
      "q": "Why did Charlotte change the headline from 'Q3 Operations Update'?",
      "options": [
       "It was too long",
-      "It told the reader nothing and named no decision",
+      "It was too informal",
       "It had a typo",
-      "It was too informal"
+      "It told the reader nothing and named no decision"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"That tells the reader nothing… the headline answers the question and names the decision.\""
     },
     {
      "q": "What was wrong with the main point in the draft?",
      "options": [
-      "It was repeated twice",
       "It was buried on page two",
+      "It was missing",
       "It was in the headline",
-      "It was missing"
+      "It was repeated twice"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The main point was buried on page two — a classic case of burying the lead.\""
     },
     {
      "q": "What does Charlotte do with the background that was on page one?",
      "options": [
       "Deletes it",
+      "Turns it into bullet points",
       "Moves it further down for anyone who wants it",
-      "Puts it in the headline",
-      "Turns it into bullet points"
+      "Puts it in the headline"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"the background that was on page one is now further down, for anyone who wants it.\""
     },
     {
      "q": "What does Charlotte say about phrases like 'it should be noted that'?",
      "options": [
-      "They add authority",
-      "They add words and no meaning, so they're gone",
       "They should be in bold",
-      "They belong in the headline"
+      "They add words and no meaning, so they're gone",
+      "They belong in the headline",
+      "They add authority"
      ],
      "answer": 1,
      "why": "\"They add words and no meaning, so they're gone.\""
@@ -127,10 +132,10 @@
     {
      "q": "\"Try to **front-load** the key point.\" To front-load means to…",
      "options": [
-      "put it at the end",
+      "delete it",
       "put it early, near the start",
-      "repeat it",
-      "delete it"
+      "put it at the end",
+      "repeat it"
      ],
      "answer": 1,
      "why": "Front-load = priorizar no início."
@@ -140,15 +145,20 @@
      "options": [
       "the main point",
       "a word or phrase that adds no meaning",
-      "a heading",
-      "a summary"
+      "a summary",
+      "a heading"
      ],
      "answer": 1,
      "why": "Filler = palavra de preenchimento, sem valor."
     },
     {
      "q": "Choose the correct word: \"Please keep it **___** — one page, no fluff.\"",
-     "options": ["vague", "concise", "formal", "detailed"],
+     "options": [
+      "formal",
+      "concise",
+      "detailed",
+      "vague"
+     ],
      "answer": 1,
      "why": "Concise = conciso."
     },
@@ -156,17 +166,22 @@
      "q": "An **executive summary** is…",
      "options": [
       "the full report",
-      "a short overview of the key points for senior readers",
       "the appendix",
+      "a short overview of the key points for senior readers",
       "the title page"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Executive summary = sumário executivo."
     },
     {
      "q": "Choose the correct term: \"Don't ___ — put the main point in the first line.\"",
-     "options": ["front-load", "bury the lead", "edit down", "skim"],
-     "answer": 1,
+     "options": [
+      "bury the lead",
+      "edit down",
+      "skim",
+      "front-load"
+     ],
+     "answer": 0,
      "why": "Bury the lead = esconder a ideia principal no meio do texto."
     }
    ]
@@ -176,22 +191,32 @@
    "items": [
     {
      "q": "\"Let's **cut to the chase**.\" To cut to the chase means to…",
-     "options": ["add detail", "get to the main point", "slow down", "apologise"],
+     "options": [
+      "slow down",
+      "get to the main point",
+      "apologise",
+      "add detail"
+     ],
      "answer": 1,
      "why": "Cut to the chase = ir direto ao ponto."
     },
     {
      "q": "\"Can you **trim** this down to a page?\" To trim down means to…",
-     "options": ["expand", "shorten", "translate", "format"],
-     "answer": 1,
+     "options": [
+      "format",
+      "translate",
+      "shorten",
+      "expand"
+     ],
+     "answer": 2,
      "why": "Trim down = enxugar, reduzir."
     },
     {
      "q": "\"That paragraph doesn't **pull its weight**.\" If something doesn't pull its weight, it…",
      "options": [
-      "does more than needed",
-      "adds nothing useful",
       "is too heavy",
+      "adds nothing useful",
+      "does more than needed",
       "is well written"
      ],
      "answer": 1,
@@ -199,14 +224,24 @@
     },
     {
      "q": "\"Let's **flesh out** the recommendation with two examples.\" To flesh out means to…",
-     "options": ["remove", "add detail to", "shorten", "reject"],
+     "options": [
+      "remove",
+      "add detail to",
+      "reject",
+      "shorten"
+     ],
      "answer": 1,
      "why": "Flesh out = detalhar, dar corpo."
     },
     {
      "q": "\"The memo is much **punchier** now.\" Punchy means…",
-     "options": ["long and formal", "short, direct and forceful", "vague", "polite"],
-     "answer": 1,
+     "options": [
+      "polite",
+      "long and formal",
+      "vague",
+      "short, direct and forceful"
+     ],
+     "answer": 3,
      "why": "Punchy = direto e forte."
     }
    ]

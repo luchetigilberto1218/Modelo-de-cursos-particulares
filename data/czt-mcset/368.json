@@ -10,56 +10,56 @@
     {
      "q": "What is the general ledger?",
      "options": [
-      "The central book of a company's accounting",
-      "A list of new employees",
       "A monthly sales report",
-      "A type of bank account"
+      "A type of bank account",
+      "The central book of a company's accounting",
+      "A list of new employees"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The general ledger is the central book of a company's accounting.\""
     },
     {
      "q": "How are the transactions in the ledger organised?",
      "options": [
+      "By city",
       "By date only",
       "By account",
-      "By name",
-      "By city"
+      "By name"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Every transaction ends up there, sorted by account.\""
     },
     {
      "q": "What was the ledger in the old days?",
      "options": [
-      "A screen on a computer",
       "A thick leather book",
       "A small notebook",
+      "A screen on a computer",
       "A phone app"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"In the old days, the ledger was a thick leather book.\""
     },
     {
      "q": "The author suggests that paper and screen are…",
      "options": [
-      "completely different ideas",
       "the same idea in a different form",
       "both out of date",
+      "completely different ideas",
       "only for big companies"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"The idea is the same\" — muda o formato (papel ou tela), mas a ideia central não muda."
     },
     {
      "q": "Calling the ledger a \"library\" suggests that it is…",
      "options": [
-      "hard to use",
-      "organised and easy to search",
+      "open only once a year",
       "full of old paper",
-      "open only once a year"
+      "hard to use",
+      "organised and easy to search"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: biblioteca = organizada e sempre pronta para busca (\"organised… always ready to be searched\")."
     }
    ]
@@ -78,9 +78,9 @@
      "q": "Where does Emily say every transaction lives?",
      "options": [
       "In the general ledger, sorted by account",
-      "In an email folder",
+      "On the trainee's phone",
       "In a leather bag",
-      "On the trainee's phone"
+      "In an email folder"
      ],
      "answer": 0,
      "why": "\"Every transaction lives here, sorted by account.\""
@@ -88,45 +88,45 @@
     {
      "q": "How does the trainee find the payments from last week?",
      "options": [
+      "By reading a printed report",
       "By asking the manager",
-      "By opening the ledger and clicking on the right account",
       "By counting the cash",
-      "By reading a printed report"
+      "By opening the ledger and clicking on the right account"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"You open the ledger, you click on the right account, and you read the list.\""
     },
     {
      "q": "What does the screen show for each entry?",
      "options": [
-      "The date and the amount",
-      "Only a name",
       "A photo",
-      "The address"
+      "The date and the amount",
+      "The address",
+      "Only a name"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The screen shows every entry, with the date and the amount.\""
     },
     {
      "q": "Why does Emily say \"you always start here\"?",
      "options": [
-      "Because the ledger is the first door in the office",
       "Because every money question begins with the ledger",
+      "Because the ledger is the first door in the office",
       "Because the trainee is new",
       "Because it is Monday"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: qualquer dúvida sobre dinheiro começa abrindo a conta certa no razão."
     },
     {
      "q": "How does Emily seem to feel about teaching the trainee?",
      "options": [
-      "Annoyed and in a hurry",
       "Calm and helpful",
+      "Worried and unsure",
       "Bored and tired",
-      "Worried and unsure"
+      "Annoyed and in a hurry"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ela diz \"Take your time\" e explica passo a passo — tom calmo e prestativo."
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"Open the <strong>account</strong> to see all its transactions.\" An <strong>account</strong> is…",
      "options": [
-      "a place where transactions of one type are kept",
-      "a person in the office",
       "a computer screen",
-      "a leather book"
+      "a person in the office",
+      "a leather book",
+      "a place where transactions of one type are kept"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Account = conta: onde ficam as transações de um mesmo tipo."
     },
     {
      "q": "\"Each <strong>entry</strong> shows the date and the amount.\" An <strong>entry</strong> is…",
      "options": [
       "a single record of a transaction",
-      "the door to the office",
       "a monthly report",
-      "a bank"
+      "a bank",
+      "the door to the office"
      ],
      "answer": 0,
      "why": "Entry = lançamento: um registro de uma transação."
@@ -162,9 +162,9 @@
      "q": "Choose the correct word: \"The transactions are ___ by account, so they are easy to find.\"",
      "options": [
       "sorted",
-      "lost",
       "closed",
-      "paid"
+      "paid",
+      "lost"
      ],
      "answer": 0,
      "why": "Sorted = ordenado: organizado por conta."
@@ -172,23 +172,23 @@
     {
      "q": "Choose the correct word: \"Today the ledger is a ___ on a computer, not a paper book.\"",
      "options": [
-      "screen",
-      "library",
       "leather",
-      "cash"
+      "cash",
+      "library",
+      "screen"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Screen = tela: hoje o razão é digital."
     },
     {
      "q": "\"You can <strong>search</strong> the ledger any time.\" To <strong>search</strong> means to…",
      "options": [
-      "look for something in it",
-      "close it",
       "print it",
-      "buy it"
+      "buy it",
+      "look for something in it",
+      "close it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To search = pesquisar: procurar algo dentro do razão."
     }
    ]
@@ -201,21 +201,21 @@
     {
      "q": "\"Please <strong>look up</strong> last week's payments in the ledger.\" To look up means to…",
      "options": [
+      "delete the data",
       "find information about something",
       "close the file",
-      "raise your head",
-      "delete the data"
+      "raise your head"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Look up = buscar/consultar uma informação."
     },
     {
      "q": "\"The manager will <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
       "approve it",
+      "throw it away",
       "hide it",
-      "print it",
-      "throw it away"
+      "print it"
      ],
      "answer": 0,
      "why": "Sign off on = aprovar, dar o aval."
@@ -223,34 +223,34 @@
     {
      "q": "\"Let's <strong>check on</strong> the cash account before lunch.\" To check on means to…",
      "options": [
-      "look at it to see if it is correct",
-      "sell it",
+      "forget about it",
       "open a new one",
-      "forget about it"
+      "look at it to see if it is correct",
+      "sell it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Check on = verificar como algo está."
     },
     {
      "q": "\"Every payment is <strong>written down</strong> in the ledger.\" Written down means…",
      "options": [
-      "recorded",
+      "counted twice",
       "erased",
-      "sent by email",
-      "counted twice"
+      "recorded",
+      "sent by email"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Written down = registrado por escrito."
     },
     {
      "q": "\"Don't worry, nothing <strong>gets lost</strong> in the ledger.\" This means…",
      "options": [
-      "everything stays and can be found",
-      "everything disappears",
+      "the data is old",
       "the ledger is broken",
-      "the data is old"
+      "everything disappears",
+      "everything stays and can be found"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Gets lost = se perde; \"nothing gets lost\" = nada se perde, tudo pode ser encontrado."
     }
    ]

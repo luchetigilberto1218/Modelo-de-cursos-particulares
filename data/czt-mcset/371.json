@@ -10,23 +10,23 @@
     {
      "q": "What is another name for the income statement?",
      "options": [
-      "The profit and loss statement",
-      "The balance sheet",
       "The cash flow report",
-      "The budget plan"
+      "The budget plan",
+      "The profit and loss statement",
+      "The balance sheet"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The income statement is also called the profit and loss statement.\""
     },
     {
      "q": "What period does an income statement usually cover?",
      "options": [
+      "One week",
       "One day",
       "A month, a quarter or a year",
-      "Five years",
-      "One week"
+      "Five years"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The period is usually a month, a quarter or a year.\""
     },
     {
@@ -43,23 +43,23 @@
     {
      "q": "The text suggests that reading a P&L is…",
      "options": [
+      "too hard for most people",
       "only for accountants",
       "possible for anyone in business",
-      "too hard for most people",
       "not useful"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"You do not need to be an accountant\" — qualquer pessoa de negócios pode ler."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "the bottom line is the least important number",
-      "the bottom line answers if the company made money",
       "revenue is not shown on the statement",
-      "expenses do not matter"
+      "expenses do not matter",
+      "the bottom line is the least important number",
+      "the bottom line answers if the company made money"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"The bottom line tells you if the company made money or not.\""
     }
    ]
@@ -77,43 +77,43 @@
     {
      "q": "Where does Sophie say the revenue line is?",
      "options": [
-      "At the bottom",
-      "At the top",
+      "On a second page",
       "In the middle",
-      "On a second page"
+      "At the bottom",
+      "At the top"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"We start at the top. This first line is revenue.\""
     },
     {
      "q": "What does Sophie do with revenue and the costs?",
      "options": [
       "She adds them together",
-      "She subtracts each cost, line by line",
       "She ignores the costs",
+      "She subtracts each cost, line by line",
       "She multiplies them"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"We take revenue, and we subtract each cost, line by line.\""
     },
     {
      "q": "This month, the bottom line is green. What does that mean?",
      "options": [
+      "There is no revenue",
       "The company made a profit",
       "The company made a loss",
-      "The page is not finished",
-      "There is no revenue"
+      "The page is not finished"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: verde = número positivo = lucro. \"If the number is positive, we made a profit.\""
     },
     {
      "q": "Why does Sophie say the page is important?",
      "options": [
-      "Because it is very long",
-      "Because every department reviews it every month",
       "Because only she can read it",
-      "Because it shows the office rent"
+      "Because every department reviews it every month",
+      "Because it shows the office rent",
+      "Because it is very long"
      ],
      "answer": 1,
      "why": "\"Every department reviews this page every month… the most important page you will read.\""
@@ -121,12 +121,12 @@
     {
      "q": "How would you best describe Sophie's tone?",
      "options": [
-      "Worried about the numbers",
-      "Bored and rushed",
+      "Angry with the analyst",
       "Calm and helpful",
-      "Angry with the analyst"
+      "Worried about the numbers",
+      "Bored and rushed"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: ela explica com calma, passo a passo, para ensinar o novo analista."
     }
    ]
@@ -139,12 +139,12 @@
     {
      "q": "\"Our <strong>revenue</strong> grew this year.\" Revenue is…",
      "options": [
+      "the office rent",
       "the money a company earns",
-      "the money a company spends",
       "the number of staff",
-      "the office rent"
+      "the money a company spends"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Revenue = receita: o dinheiro que a empresa ganha."
     },
     {
@@ -152,8 +152,8 @@
      "options": [
       "profit",
       "loss",
-      "revenue",
-      "period"
+      "period",
+      "revenue"
      ],
      "answer": 1,
      "why": "Loss = prejuízo: quando as despesas passam da receita."
@@ -161,23 +161,23 @@
     {
      "q": "\"Salaries and rent are a big <strong>expense</strong> for us.\" An expense is…",
      "options": [
-      "money that comes in",
       "money that goes out",
-      "a type of profit",
-      "a report"
+      "money that comes in",
+      "a report",
+      "a type of profit"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Expense = despesa: dinheiro que sai da empresa."
     },
     {
      "q": "Choose the correct word: \"The report covers one ___: the month of June.\"",
      "options": [
-      "period",
-      "cost",
       "profit",
-      "revenue"
+      "revenue",
+      "cost",
+      "period"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Period = período: o intervalo de tempo do relatório."
     },
     {
@@ -185,8 +185,8 @@
      "options": [
       "money left after expenses",
       "money the company owes",
-      "a list of costs",
-      "the office address"
+      "the office address",
+      "a list of costs"
      ],
      "answer": 0,
      "why": "Profit = lucro: o que sobra depois de tirar as despesas."
@@ -201,32 +201,32 @@
     {
      "q": "\"Let's look at the <strong>bottom line</strong>.\" The bottom line is…",
      "options": [
-      "the final profit or loss figure",
+      "the number of staff",
       "the first line of revenue",
       "the office rent",
-      "the number of staff"
+      "the final profit or loss figure"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Bottom line = a linha final do P&L: o lucro ou prejuízo."
     },
     {
      "q": "\"Our costs are going up, so profit is going down.\" To <strong>go up</strong> means to…",
      "options": [
-      "get bigger",
-      "get smaller",
       "stay the same",
+      "get smaller",
+      "get bigger",
       "stop"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Go up = subir, aumentar."
     },
     {
      "q": "\"The boss has to <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
       "approve it",
-      "delete it",
+      "hide it",
       "print it",
-      "hide it"
+      "delete it"
      ],
      "answer": 0,
      "why": "Sign off on = aprovar, dar o aval final."
@@ -234,12 +234,12 @@
     {
      "q": "\"We need to <strong>cut costs</strong> next quarter.\" To cut costs means to…",
      "options": [
+      "buy new offices",
       "spend less money",
-      "earn more money",
       "hire more staff",
-      "buy new offices"
+      "earn more money"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Cut costs = cortar custos, gastar menos."
     },
     {

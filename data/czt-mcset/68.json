@@ -8,10 +8,10 @@
     {
      "q": "What is a project?",
      "options": [
-      "A single email",
+      "A holiday",
       "A group of tasks with a clear goal and a deadline",
       "A meeting",
-      "A holiday"
+      "A single email"
      ],
      "answer": 1,
      "why": "\"A project is a group of tasks with a clear goal and a deadline.\""
@@ -19,38 +19,43 @@
     {
      "q": "What three things does every project need?",
      "options": [
-      "Who does what, and when it must be ready",
-      "Coffee, lunch and breaks",
       "Buy, sell and pay",
-      "Read, write and speak"
+      "Read, write and speak",
+      "Coffee, lunch and breaks",
+      "Who does what, and when it must be ready"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"who does what, and when it must be ready.\""
     },
     {
      "q": "Who is in charge of a project?",
-     "options": ["The client", "The project manager", "The bank", "The customer"],
+     "options": [
+      "The customer",
+      "The project manager",
+      "The client",
+      "The bank"
+     ],
      "answer": 1,
      "why": "\"The person in charge is the project manager.\""
     },
     {
      "q": "What is the project manager's job?",
      "options": [
+      "To sell goods",
       "To organise, follow up and remove problems",
       "To make coffee",
-      "To do nothing",
-      "To sell goods"
+      "To do nothing"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Their job is to organise, to follow up, and to remove problems.\""
     },
     {
      "q": "What is always the same idea, big project or small?",
      "options": [
       "Clear tasks, clear owners, clear deadlines",
-      "A big office",
       "A lot of money",
-      "Many meetings"
+      "Many meetings",
+      "A big office"
      ],
      "answer": 0,
      "why": "\"clear tasks, clear owners, clear deadlines.\""
@@ -67,29 +72,34 @@
     {
      "q": "What is the small project?",
      "options": [
-      "A new office",
       "A new customer pack for Brazilian clients",
-      "A holiday plan",
-      "A new report"
+      "A new office",
+      "A new report",
+      "A holiday plan"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"a new customer pack for our Brazilian clients.\""
     },
     {
      "q": "What is the goal?",
      "options": [
       "A long report",
-      "A clear, friendly pack explaining who they are, ready in two weeks",
       "A new logo only",
+      "A clear, friendly pack explaining who they are, ready in two weeks",
       "A meeting"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"a clear, friendly pack that explains who we are… ready in two weeks.\""
     },
     {
      "q": "What is Maria's task?",
-     "options": ["Design the layout", "Write the text", "Gather photos", "Check everything"],
-     "answer": 1,
+     "options": [
+      "Write the text",
+      "Design the layout",
+      "Gather photos",
+      "Check everything"
+     ],
+     "answer": 0,
      "why": "\"Maria, you'll write the text — that's your task.\""
     },
     {
@@ -105,8 +115,13 @@
     },
     {
      "q": "How often will Oliver follow up?",
-     "options": ["Never", "Each Monday", "Once at the end", "Every hour"],
-     "answer": 1,
+     "options": [
+      "Never",
+      "Every hour",
+      "Each Monday",
+      "Once at the end"
+     ],
+     "answer": 2,
      "why": "\"I'll follow up each Monday to see how we're doing.\""
     }
    ]
@@ -118,45 +133,55 @@
      "q": "A **task** is…",
      "options": [
       "a goal",
-      "a piece of work to do",
       "a deadline",
-      "a manager"
+      "a manager",
+      "a piece of work to do"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Task = tarefa."
     },
     {
      "q": "A **deadline** is…",
      "options": [
-      "the start",
-      "the date something must be ready",
       "the goal",
-      "the owner"
+      "the owner",
+      "the start",
+      "the date something must be ready"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Deadline = prazo."
     },
     {
      "q": "Choose the correct word: \"The person responsible for a task is its **___**.\"",
-     "options": ["owner", "client", "reader", "audience"],
-     "answer": 0,
+     "options": [
+      "audience",
+      "client",
+      "reader",
+      "owner"
+     ],
+     "answer": 3,
      "why": "Owner = responsável."
     },
     {
      "q": "The **goal** of a project is…",
      "options": [
-      "a mistake",
+      "a meeting",
       "what you want to achieve",
       "a deadline",
-      "a meeting"
+      "a mistake"
      ],
      "answer": 1,
      "why": "Goal = meta."
     },
     {
      "q": "Choose the correct phrase: \"We finished the pack **___**.\"",
-     "options": ["on time", "too late", "never", "by mistake"],
-     "answer": 0,
+     "options": [
+      "by mistake",
+      "on time",
+      "too late",
+      "never"
+     ],
+     "answer": 1,
      "why": "On time = no prazo."
     }
    ]
@@ -166,32 +191,57 @@
    "items": [
     {
      "q": "\"I'll **follow up** each Monday.\" To follow up means to…",
-     "options": ["forget", "check on progress", "cancel", "leave"],
-     "answer": 1,
+     "options": [
+      "check on progress",
+      "cancel",
+      "forget",
+      "leave"
+     ],
+     "answer": 0,
      "why": "Follow up = acompanhar."
     },
     {
      "q": "\"The person **in charge** is the manager.\" To be in charge means to…",
-     "options": ["be responsible", "be a visitor", "be new", "be late"],
-     "answer": 0,
+     "options": [
+      "be a visitor",
+      "be late",
+      "be new",
+      "be responsible"
+     ],
+     "answer": 3,
      "why": "In charge = responsável."
     },
     {
      "q": "\"Let's **kick off** the project.\" To kick off means to…",
-     "options": ["end", "start", "delay", "cancel"],
-     "answer": 1,
+     "options": [
+      "start",
+      "cancel",
+      "end",
+      "delay"
+     ],
+     "answer": 0,
      "why": "Kick off = começar."
     },
     {
      "q": "\"I'll **keep an eye on** the deadlines.\" To keep an eye on means to…",
-     "options": ["ignore", "watch", "remove", "finish"],
+     "options": [
+      "finish",
+      "watch",
+      "ignore",
+      "remove"
+     ],
      "answer": 1,
      "why": "Keep an eye on = ficar de olho."
     },
     {
      "q": "\"Everyone **clear on** their task?\" To be clear on something means to…",
-     "options": ["not understand it", "understand it well", "cancel it", "forget it"],
-     "answer": 1,
+     "options": [
+      "not understand it",
+      "cancel it",
+      "understand it well",
+      "forget it"
+     ],
+     "answer": 2,
      "why": "Clear on = entender bem."
     }
    ]

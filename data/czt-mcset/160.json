@@ -9,8 +9,8 @@
      "q": "What is negotiating across borders rarely about?",
      "options": [
       "The price alone",
-      "Understanding the other side",
       "Asking questions",
+      "Understanding the other side",
       "Confirming in writing"
      ],
      "answer": 0,
@@ -19,34 +19,34 @@
     {
      "q": "What does understanding the other side include?",
      "options": [
-      "Only their budget",
-      "Who is really in the room, who says yes later, how face and hierarchy matter",
       "Only the price",
-      "The shipping route"
+      "Only their budget",
+      "The shipping route",
+      "Who is really in the room, who says yes later, how face and hierarchy matter"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"who is really in the room, who will say yes later, how much face and hierarchy matter.\""
     },
     {
      "q": "How can silence be interpreted differently across cultures?",
      "options": [
       "It always means agreement",
-      "In some it means thinking (wait); in others discomfort (fill it)",
       "It always means no",
+      "In some it means thinking (wait); in others discomfort (fill it)",
       "It has no meaning"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"In some cultures, silence means the other side is thinking… In others, it means discomfort.\""
     },
     {
      "q": "How can a quick agreement be read in different cultures?",
      "options": [
-      "Always as trust",
       "As a sign of trust in some, carelessness in others",
+      "Always as trust",
       "Always as carelessness",
       "As a mistake"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"a quick agreement is a sign of trust; in others, it is a sign of carelessness.\""
     },
     {
@@ -54,8 +54,8 @@
      "options": [
       "Speak fast and sound final",
       "Slow down and ask more questions than you answer",
-      "Skip written confirmation",
-      "Decide immediately"
+      "Decide immediately",
+      "Skip written confirmation"
      ],
      "answer": 1,
      "why": "\"slow down, ask more questions than you answer, use hedging language.\""
@@ -72,23 +72,23 @@
     {
      "q": "With the Japanese buyer, how should James treat silence?",
      "options": [
-      "Fill it quickly",
       "Not rush to fill it — a pause usually means thinking or consulting",
       "End the meeting",
+      "Fill it quickly",
       "Repeat the offer"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"expect silence, and don't rush to fill it. A pause usually means they're thinking or consulting.\""
     },
     {
      "q": "Why shouldn't James push for a signature in the room with the Japanese buyer?",
      "options": [
-      "It is rude to sign",
-      "The real yes may come later, after an internal discussion up the hierarchy",
+      "The price is wrong",
       "They never sign",
-      "The price is wrong"
+      "The real yes may come later, after an internal discussion up the hierarchy",
+      "It is rude to sign"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"the real yes might come later… let it travel up the hierarchy.\""
     },
     {
@@ -96,8 +96,8 @@
      "options": [
       "The numbers",
       "The relationship — time on the personal side before the numbers",
-      "The contract",
-      "The silence"
+      "The silence",
+      "The contract"
      ],
      "answer": 1,
      "why": "\"Relationships come first — spend time on the personal side before the numbers.\""
@@ -116,12 +116,12 @@
     {
      "q": "What is the common thread for both negotiations?",
      "options": [
-      "Speak fast and decide in the room",
-      "Slow down, ask more than you tell, use hedging language, confirm in writing",
+      "Push for a signature",
       "Avoid writing anything",
-      "Push for a signature"
+      "Slow down, ask more than you tell, use hedging language, confirm in writing",
+      "Speak fast and decide in the room"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"slow down, ask more than you tell, use hedging language… and put everything in writing afterwards.\""
     }
    ]
@@ -132,46 +132,56 @@
     {
      "q": "To use **hedging language** means to…",
      "options": [
-      "sound absolutely final",
       "soften your words to avoid sounding final",
       "raise your voice",
+      "sound absolutely final",
       "stay silent"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Hedging language = linguagem que ameniza, evita soar definitivo."
     },
     {
      "q": "The **decision-maker** is…",
      "options": [
-      "the person who does the talking",
       "the person with the real authority to say yes",
+      "the note-taker",
       "the translator",
-      "the note-taker"
+      "the person who does the talking"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Decision-maker = tomador de decisão."
     },
     {
      "q": "Choose the correct word: \"Respect the **___** — let the proposal travel up to the senior person.\"",
-     "options": ["hierarchy", "silence", "time zone", "price"],
-     "answer": 0,
+     "options": [
+      "silence",
+      "time zone",
+      "price",
+      "hierarchy"
+     ],
+     "answer": 3,
      "why": "Hierarchy = hierarquia."
     },
     {
      "q": "In this context, **face** refers to…",
      "options": [
-      "physical appearance",
-      "a person's dignity and social standing",
+      "the deadline",
       "the contract",
-      "the deadline"
+      "a person's dignity and social standing",
+      "physical appearance"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Face = honra/imagem social."
     },
     {
      "q": "Choose the correct term: \"Confirm everything in writing in their **___**, not yours.\"",
-     "options": ["time zone", "language", "currency", "office"],
-     "answer": 0,
+     "options": [
+      "language",
+      "currency",
+      "time zone",
+      "office"
+     ],
+     "answer": 2,
      "why": "Time zone = fuso horário."
     }
    ]
@@ -182,46 +192,56 @@
     {
      "q": "\"You need to **read the room**.\" To read the room means to…",
      "options": [
+      "speak loudly",
       "sense the mood and adjust",
       "read a document",
-      "speak loudly",
       "leave quickly"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Read the room = sentir o clima e adaptar-se."
     },
     {
      "q": "\"Let's **plant the proposal** and let it travel.\" To plant a proposal means to…",
      "options": [
-      "present it and let it develop over time",
-      "reject it",
       "sign it now",
-      "hide it"
+      "reject it",
+      "hide it",
+      "present it and let it develop over time"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Plant = deixar a proposta e dar-lhe tempo."
     },
     {
      "q": "\"Don't **push for** a signature in the room.\" To push for means to…",
-     "options": ["press hard to get", "avoid", "delay", "forget"],
+     "options": [
+      "press hard to get",
+      "delay",
+      "avoid",
+      "forget"
+     ],
      "answer": 0,
      "why": "Push for = pressionar por."
     },
     {
      "q": "\"Their two styles are **worlds apart**.\" Worlds apart means…",
-     "options": ["very similar", "extremely different", "identical", "close"],
-     "answer": 1,
+     "options": [
+      "very similar",
+      "close",
+      "identical",
+      "extremely different"
+     ],
+     "answer": 3,
      "why": "Worlds apart = completamente diferentes."
     },
     {
      "q": "\"Same toolkit, but **play it differently**.\" To play it differently means to…",
      "options": [
-      "use the same approach unchanged",
-      "adapt your approach to the situation",
+      "rush",
       "give up",
-      "rush"
+      "use the same approach unchanged",
+      "adapt your approach to the situation"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Play it differently = conduzir de forma adaptada."
     }
    ]

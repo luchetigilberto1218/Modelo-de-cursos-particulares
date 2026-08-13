@@ -10,56 +10,56 @@
     {
      "q": "What does Ana say to open the conversation?",
      "options": [
-      "\"Hi, I'm Ana. I work at Czarnikow.\"",
-      "\"Goodbye, see you later.\"",
       "\"I am very tired today.\"",
-      "\"You are late for the meeting.\""
+      "\"You are late for the meeting.\"",
+      "\"Goodbye, see you later.\"",
+      "\"Hi, I'm Ana. I work at Czarnikow.\""
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "O texto traz a frase exata: \"Hi, I'm Ana. I work at Czarnikow.\""
     },
     {
      "q": "What does the text say we practise today?",
      "options": [
-      "\"I am\" and \"you are\"",
       "Numbers from one to ten",
+      "\"I am\" and \"you are\"",
       "The days of the week",
       "How to write an email"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Today we practise I am and you are.\""
     },
     {
      "q": "The text says \"Take your time.\" This suggests that…",
      "options": [
-      "you do not need to rush",
-      "you must speak very fast",
+      "you should not speak at all",
       "the class is almost over",
-      "you should not speak at all"
+      "you must speak very fast",
+      "you do not need to rush"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"take your time\" = não tenha pressa, vá com calma."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "a simple hello can start a good conversation",
       "the first day at work is easy for everyone",
-      "you should stay quiet on your first day",
-      "long sentences are always better"
+      "long sentences are always better",
+      "a simple hello can start a good conversation",
+      "you should stay quiet on your first day"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: o texto todo mostra que uma frase simples \"opens every door\"."
     },
     {
      "q": "Why does the text say the first day \"can feel big\"?",
      "options": [
-      "because everything is new for you",
       "because the office is very large",
       "because you work many hours",
-      "because you have a big desk"
+      "because you have a big desk",
+      "because everything is new for you"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: é o primeiro dia num lugar novo — tudo é novo, por isso parece \"grande\"."
     }
    ]
@@ -78,9 +78,9 @@
      "q": "What is the speaker's name?",
      "options": [
       "Oliver",
+      "Carlos",
       "Ana",
-      "James",
-      "Carlos"
+      "James"
      ],
      "answer": 0,
      "why": "\"My name is Oliver.\""
@@ -88,21 +88,21 @@
     {
      "q": "What is Oliver's job?",
      "options": [
-      "He is a new trader.",
+      "He is a driver.",
       "He is the manager.",
-      "He is a teacher.",
-      "He is a driver."
+      "He is a new trader.",
+      "He is a teacher."
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"I am a new trader here at Czarnikow.\""
     },
     {
      "q": "Where is Oliver from?",
      "options": [
       "São Paulo, in Brazil",
-      "London, in England",
+      "New York, in the USA",
       "Lisbon, in Portugal",
-      "New York, in the USA"
+      "London, in England"
      ],
      "answer": 0,
      "why": "\"I am from São Paulo, in Brazil.\""
@@ -110,23 +110,23 @@
     {
      "q": "Oliver says he is \"a little nervous, but also happy.\" This suggests that…",
      "options": [
-      "he has mixed feelings on his first day",
       "he does not like the office",
+      "he has mixed feelings on his first day",
       "he wants to go home",
       "he is bored at work"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: nervoso + feliz ao mesmo tempo = sentimentos misturados no primeiro dia."
     },
     {
      "q": "\"You are on my team now,\" says Ana. This suggests that…",
      "options": [
-      "Ana wants Oliver to feel welcome",
-      "Ana is Oliver's manager",
+      "Ana does not know Oliver",
       "Oliver is leaving the team",
-      "Ana does not know Oliver"
+      "Ana wants Oliver to feel welcome",
+      "Ana is Oliver's manager"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: dizer \"you are on my team now\" é acolher o colega novo."
     }
    ]
@@ -139,23 +139,23 @@
     {
      "q": "\"Ana is my <strong>colleague</strong>. We work together.\" A colleague is…",
      "options": [
-      "a person you work with",
       "a room in the office",
+      "a cup of coffee",
       "a computer",
-      "a cup of coffee"
+      "a person you work with"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Colleague = colega, a pessoa com quem você trabalha."
     },
     {
      "q": "Choose the correct word: \"Hi, my ___ is Oliver. Nice to meet you.\"",
      "options": [
-      "name",
       "desk",
       "team",
-      "city"
+      "city",
+      "name"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Name = nome; \"my name is Oliver\"."
     },
     {
@@ -172,23 +172,23 @@
     {
      "q": "Choose the correct word: \"I sit at my ___ next to the window.\"",
      "options": [
-      "desk",
-      "manager",
+      "colleague",
       "name",
-      "colleague"
+      "manager",
+      "desk"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Desk = mesa (de trabalho); é onde a pessoa senta."
     },
     {
      "q": "\"Oliver is a <strong>trader</strong> at Czarnikow.\" A trader is a person who…",
      "options": [
-      "buys and sells for the company",
       "cleans the office",
-      "cooks the lunch",
-      "drives the manager"
+      "drives the manager",
+      "buys and sells for the company",
+      "cooks the lunch"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Trader = quem compra e vende no mercado; a função de Oliver."
     }
    ]
@@ -202,9 +202,9 @@
      "q": "Someone says \"thank you.\" You answer: \"<strong>You are welcome</strong>.\" This means…",
      "options": [
       "it is my pleasure / no problem",
-      "please go away",
       "I am very busy",
-      "see you tomorrow"
+      "see you tomorrow",
+      "please go away"
      ],
      "answer": 0,
      "why": "\"You are welcome\" = de nada; resposta gentil a um \"obrigado\"."
@@ -212,45 +212,45 @@
     {
      "q": "Oliver says \"<strong>Nice to meet you</strong>\" to his new team. He uses this to…",
      "options": [
-      "greet people for the first time",
-      "say goodbye at the end of the day",
       "ask for help",
+      "say goodbye at the end of the day",
+      "greet people for the first time",
       "order a coffee"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Nice to meet you\" = prazer em conhecer; usado no primeiro encontro."
     },
     {
      "q": "\"I am <strong>ready to work</strong>.\" This means Oliver…",
      "options": [
+      "is very tired",
       "is prepared to start",
-      "wants to go home",
       "is on holiday",
-      "is very tired"
+      "wants to go home"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Ready to work\" = pronto para começar/trabalhar."
     },
     {
      "q": "A colleague says \"<strong>You are on my team</strong>.\" This means…",
      "options": [
-      "you work together in the same group",
-      "you are the boss now",
+      "you are a client",
       "you are leaving the company",
-      "you are a client"
+      "you are the boss now",
+      "you work together in the same group"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"On my team\" = no meu time, no mesmo grupo de trabalho."
     },
     {
      "q": "It is the morning. Oliver says \"<strong>Good morning</strong>\" to his desk neighbour. He uses this to…",
      "options": [
-      "greet someone early in the day",
-      "say thank you",
       "ask a question",
-      "end a meeting"
+      "say thank you",
+      "end a meeting",
+      "greet someone early in the day"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Good morning\" = bom dia; saudação usada de manhã."
     }
    ]

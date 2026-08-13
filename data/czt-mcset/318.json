@@ -11,9 +11,9 @@
      "q": "What does customs check at the border?",
      "options": [
       "What is coming in and going out",
-      "How many workers a company has",
       "The price of the office",
-      "The name of the driver"
+      "The name of the driver",
+      "How many workers a company has"
      ],
      "answer": 0,
      "why": "\"It checks what is coming in and going out.\""
@@ -21,31 +21,31 @@
     {
      "q": "What does the declaration tell customs?",
      "options": [
-      "Only the weight of the box",
-      "What is in the box, its value, and where it came from",
+      "The color of the truck",
       "The name of the customer",
-      "The color of the truck"
+      "Only the weight of the box",
+      "What is in the box, its value, and where it came from"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The declaration tells customs what is in the box, how much it is worth, and where it came from.\""
     },
     {
      "q": "How are taxes calculated?",
      "options": [
+      "From the number of boxes only",
       "From the information in the declaration",
       "From the size of the truck",
-      "From the day of the week",
-      "From the number of boxes only"
+      "From the day of the week"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Taxes are calculated from that information.\""
     },
     {
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
-      "Rules can change from country to country",
-      "Compliance is easy and never a problem",
       "A declaration is needed for every shipment",
+      "Compliance is easy and never a problem",
+      "Rules can change from country to country",
       "Customs checks goods at the border"
      ],
      "answer": 1,
@@ -55,11 +55,11 @@
      "q": "\"Compliance is boring on a good day and very expensive on a bad one\" suggests that…",
      "options": [
       "compliance is always fun",
-      "a mistake in compliance can cost a lot of money",
+      "customs never stops a shipment",
       "compliance has no rules",
-      "customs never stops a shipment"
+      "a mistake in compliance can cost a lot of money"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: um \"bad day\" (erro) fica caro — por isso as regras importam."
     }
    ]
@@ -77,45 +77,45 @@
     {
      "q": "What is the FIRST question customs asks?",
      "options": [
-      "What is in the box?",
       "Who is the driver?",
       "When did the box leave?",
-      "What is the weather?"
+      "What is the weather?",
+      "What is in the box?"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"First, customs asks: what is in the box?\""
     },
     {
      "q": "How long does the team keep every record?",
      "options": [
+      "Ten years",
       "One year",
       "Five years",
-      "One month",
-      "Ten years"
+      "One month"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"We keep every record for five years.\""
     },
     {
      "q": "What can one small labelling mistake do?",
      "options": [
+      "Change the driver",
       "Stop a shipment at the border for days",
       "Make the box cheaper",
-      "Help the shipment go faster",
-      "Change the driver"
+      "Help the shipment go faster"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"one small labelling mistake can stop a shipment at the border for days.\""
     },
     {
      "q": "Why does Charlotte say \"No paper, big problem\"?",
      "options": [
-      "Because paper is expensive",
-      "Because without the record they cannot answer customs",
+      "Because paper is boring",
       "Because the printer is broken",
-      "Because paper is boring"
+      "Because paper is expensive",
+      "Because without the record they cannot answer customs"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: se customs ligar e não houver registro, o time fica sem prova — daí o problema."
     },
     {
@@ -139,43 +139,43 @@
     {
      "q": "\"The box was stopped at <strong>customs</strong> for one day.\" Customs is…",
      "options": [
+      "a customer's home",
       "the government office at the border",
       "the name of a truck",
-      "a type of box",
-      "a customer's home"
+      "a type of box"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Customs = alfândega, o escritório do governo na fronteira."
     },
     {
      "q": "Choose the correct word: \"Every shipment must have a ___ that says what is inside.\"",
      "options": [
-      "declaration",
-      "safety",
+      "rule",
       "tax",
-      "rule"
+      "safety",
+      "declaration"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Declaration = declaração, o documento que diz o que há na caixa."
     },
     {
      "q": "\"We must <strong>declare</strong> the goods.\" To declare means to…",
      "options": [
-      "hide the goods",
       "tell customs what the goods are",
-      "sell the goods",
-      "pack the goods"
+      "pack the goods",
+      "hide the goods",
+      "sell the goods"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To declare = declarar, informar à alfândega o conteúdo."
     },
     {
      "q": "Choose the correct word: \"Wrong ___ on the box can stop the shipment. Always check the label.\"",
      "options": [
       "labelling",
-      "customs",
       "value",
-      "office"
+      "office",
+      "customs"
      ],
      "answer": 0,
      "why": "Labelling = rotulagem; um erro no rótulo trava o envio."
@@ -183,10 +183,10 @@
     {
      "q": "\"Following the rules is called <strong>compliance</strong>.\" Compliance means…",
      "options": [
-      "breaking the rules",
+      "ignoring the rules",
       "following the rules",
       "writing new rules",
-      "ignoring the rules"
+      "breaking the rules"
      ],
      "answer": 1,
      "why": "Compliance = conformidade, seguir as regras."
@@ -201,21 +201,21 @@
     {
      "q": "\"The manager must <strong>sign off on</strong> the declaration before we send it.\" To sign off on means to…",
      "options": [
-      "formally approve",
       "throw away",
-      "read slowly",
-      "print again"
+      "formally approve",
+      "print again",
+      "read slowly"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new labelling rule next month.\" To roll out means to…",
      "options": [
-      "cancel the rule",
+      "forget the rule",
       "start using it step by step",
       "hide the rule",
-      "forget the rule"
+      "cancel the rule"
      ],
      "answer": 1,
      "why": "Roll out = implementar aos poucos."
@@ -225,8 +225,8 @@
      "options": [
       "complete the form",
       "lose the form",
-      "sell the form",
-      "fold the form"
+      "fold the form",
+      "sell the form"
      ],
      "answer": 0,
      "why": "Fill out = preencher o formulário."
@@ -235,22 +235,22 @@
      "q": "\"We agreed to check the labels, but the team never <strong>followed through</strong>.\" They…",
      "options": [
       "did the job to the end",
-      "did not finish what they agreed",
       "checked the labels twice",
-      "asked for help"
+      "asked for help",
+      "did not finish what they agreed"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Follow through = levar até o fim; aqui, não levaram."
     },
     {
      "q": "\"Customs <strong>held up</strong> the shipment for two days.\" To hold up means to…",
      "options": [
-      "delay something",
+      "start something fast",
       "pay for something",
       "clean something",
-      "start something fast"
+      "delay something"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Hold up = atrasar, segurar algo."
     }
    ]

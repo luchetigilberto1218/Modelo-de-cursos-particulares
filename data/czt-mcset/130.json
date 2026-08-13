@@ -8,51 +8,56 @@
     {
      "q": "What do you have to do when you buy or sell in another country?",
      "options": [
-      "Nothing",
-      "Change one currency into another",
       "Pay a duty only",
-      "Use a ship"
+      "Use a ship",
+      "Nothing",
+      "Change one currency into another"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"you have to change one currency into another. This is called currency exchange, or FX.\""
     },
     {
      "q": "How often do exchange rates move?",
-     "options": ["Once a year", "Every second", "Never", "Once a month"],
-     "answer": 1,
+     "options": [
+      "Every second",
+      "Once a month",
+      "Never",
+      "Once a year"
+     ],
+     "answer": 0,
      "why": "\"rates move every second.\""
     },
     {
      "q": "What can a small change in the rate do?",
      "options": [
-      "Nothing",
-      "Turn a profit into a loss",
+      "Lower the duty",
       "Ship the goods faster",
-      "Lower the duty"
+      "Nothing",
+      "Turn a profit into a loss"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A small change in the rate can turn a profit into a loss.\""
     },
     {
      "q": "Why do cross-border companies pay close attention to FX?",
      "options": [
-      "Because it is fun",
-      "Because rate changes can hurt their profit",
       "Because the bank requires it",
-      "Because it is free"
+      "Because it is free",
+      "Because it is fun",
+      "Because rate changes can hurt their profit"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: como o câmbio afeta o lucro, elas precisam acompanhá-lo."
     },
     {
      "q": "According to the text, what does a little FX knowledge do?",
      "options": [
-      "Wastes time",
-      "Protects a lot of margin",
+      "Slows the ship",
       "Raises the duty",
-      "Slows the ship"
+      "Protects a lot of margin",
+      "Wastes time"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"A little knowledge here protects a lot of margin.\""
     }
    ]
@@ -66,37 +71,57 @@
    "items": [
     {
      "q": "How much did the company sell the goods for?",
-     "options": ["£100,000", "$100,000", "$80,000", "£77,000"],
+     "options": [
+      "£100,000",
+      "$100,000",
+      "$80,000",
+      "£77,000"
+     ],
      "answer": 1,
      "why": "\"We sold goods to an American buyer for one hundred thousand dollars.\""
     },
     {
      "q": "What was the expected value in pounds when the deal was agreed?",
-     "options": ["About £80,000", "About £77,000", "About £100,000", "About £3,000"],
-     "answer": 0,
+     "options": [
+      "About £77,000",
+      "About £3,000",
+      "About £80,000",
+      "About £100,000"
+     ],
+     "answer": 2,
      "why": "\"one hundred thousand dollars was worth about eighty thousand pounds.\""
     },
     {
      "q": "What happened to the pound over the sixty days?",
-     "options": ["It got weaker", "It got stronger", "It stayed the same", "It disappeared"],
-     "answer": 1,
+     "options": [
+      "It got weaker",
+      "It disappeared",
+      "It stayed the same",
+      "It got stronger"
+     ],
+     "answer": 3,
      "why": "\"In those sixty days, the pound got stronger.\""
     },
     {
      "q": "What did the $100,000 become in pounds after the rate moved?",
-     "options": ["About £80,000", "About £77,000", "About £100,000", "About £3,000"],
+     "options": [
+      "About £100,000",
+      "About £77,000",
+      "About £3,000",
+      "About £80,000"
+     ],
      "answer": 1,
      "why": "\"the same hundred thousand dollars became only about seventy-seven thousand pounds.\""
     },
     {
      "q": "Why did the company lose about £3,000?",
      "options": [
-      "They sold badly",
       "The exchange rate moved against them while they waited for payment",
       "The goods were damaged",
-      "The duty was high"
+      "The duty was high",
+      "They sold badly"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"the rate moved against us while we waited for payment.\""
     }
    ]
@@ -108,44 +133,54 @@
      "q": "A **currency** is…",
      "options": [
       "a ship",
-      "the money a country uses",
       "a tax",
+      "the money a country uses",
       "a document"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Currency = moeda."
     },
     {
      "q": "The **exchange rate** is…",
      "options": [
-      "the price of shipping",
-      "how much one currency is worth in another",
+      "the invoice total",
       "the duty",
-      "the invoice total"
+      "the price of shipping",
+      "how much one currency is worth in another"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Exchange rate = taxa de câmbio."
     },
     {
      "q": "Choose the correct word: \"When the pound is **___**, you get fewer pounds for your dollars.\"",
-     "options": ["stronger", "weaker", "gone", "cheaper"],
-     "answer": 0,
+     "options": [
+      "gone",
+      "cheaper",
+      "weaker",
+      "stronger"
+     ],
+     "answer": 3,
      "why": "Stronger = mais forte (rende menos pounds por dólar)."
     },
     {
      "q": "A **loss** is…",
      "options": [
       "money gained",
+      "a currency",
       "money lost",
-      "a shipment",
-      "a currency"
+      "a shipment"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Loss = prejuízo."
     },
     {
      "q": "Choose the correct word: \"High **___** means the rate moves a lot.\"",
-     "options": ["volatility", "margin", "duty", "freight"],
+     "options": [
+      "volatility",
+      "duty",
+      "margin",
+      "freight"
+     ],
      "answer": 0,
      "why": "Volatility = volatilidade."
     }
@@ -157,46 +192,56 @@
     {
      "q": "\"The rate **moved against us**.\" To move against someone means to…",
      "options": [
-      "change in their favour",
       "change in a way that hurts them",
       "stay the same",
-      "help them"
+      "help them",
+      "change in their favour"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Move against = mover contra, prejudicando."
     },
     {
      "q": "\"A rate change can **turn a profit into a loss**.\" This means it can…",
      "options": [
       "make a gain become a loss",
+      "speed up shipping",
       "double the profit",
-      "remove the duty",
-      "speed up shipping"
+      "remove the duty"
      ],
      "answer": 0,
      "why": "Turn a profit into a loss = transformar lucro em prejuízo."
     },
     {
      "q": "\"FX **eats into** your margin.\" To eat into means to…",
-     "options": ["increase", "reduce gradually", "protect", "double"],
-     "answer": 1,
+     "options": [
+      "reduce gradually",
+      "protect",
+      "double",
+      "increase"
+     ],
+     "answer": 0,
      "why": "Eat into = corroer, reduzir."
     },
     {
      "q": "\"Pay **close attention** to the rate.\" To pay close attention means to…",
-     "options": ["ignore", "watch carefully", "forget", "delay"],
-     "answer": 1,
+     "options": [
+      "watch carefully",
+      "ignore",
+      "forget",
+      "delay"
+     ],
+     "answer": 0,
      "why": "Pay close attention = prestar muita atenção."
     },
     {
      "q": "\"The rate is **quietly deciding** part of your result.\" Quietly here means…",
      "options": [
-      "loudly",
-      "without you noticing",
       "quickly",
-      "never"
+      "loudly",
+      "never",
+      "without you noticing"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Quietly = de forma silenciosa, sem se notar."
     }
    ]

@@ -10,10 +10,10 @@
     {
      "q": "How many new words does the text teach today?",
      "options": [
-      "Three",
       "Four",
+      "Ten",
       "Five",
-      "Ten"
+      "Three"
      ],
      "answer": 2,
      "why": "\"Today you learn five useful words.\""
@@ -21,45 +21,45 @@
     {
      "q": "Where do these words appear?",
      "options": [
+      "On a menu",
       "On Czarnikow's forms and reports",
       "In the news",
-      "On a menu",
       "In a song"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"These words appear on Czarnikow's forms and reports.\""
     },
     {
      "q": "The text says English comes in…",
      "options": [
+      "numbers only",
       "CAN'Ts, not CAN's",
       "CAN's, not CAN'Ts",
-      "numbers only",
       "long sentences"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"English comes in CAN's, not in CAN'Ts.\""
     },
     {
      "q": "What does \"one small step at a time\" suggest about learning?",
      "options": [
-      "You should learn everything in one day",
       "You can learn slowly and it is fine",
-      "Taxes are impossible to learn",
-      "You must be an expert first"
+      "You must be an expert first",
+      "You should learn everything in one day",
+      "Taxes are impossible to learn"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto pede calma — aprender aos poucos é o caminho certo."
     },
     {
      "q": "The author would most likely DISAGREE with…",
      "options": [
-      "Taxes follow simple patterns in English",
-      "You can learn these words with practice",
+      "Short sentences help you learn",
       "Taxes in English are too hard for a beginner",
-      "Short sentences help you learn"
+      "Taxes follow simple patterns in English",
+      "You can learn these words with practice"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: o tom do texto é positivo — ele diz que você consegue, então discordaria de que é difícil demais."
     }
    ]
@@ -77,21 +77,21 @@
     {
      "q": "What is the amount for this month?",
      "options": [
-      "One hundred",
       "Two hundred",
+      "Five hundred",
       "Three hundred",
-      "Five hundred"
+      "One hundred"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"It is one hundred. That is the amount for this month.\""
     },
     {
      "q": "What is the rate on the first line?",
      "options": [
-      "Five percent",
-      "Ten percent",
       "Twenty percent",
-      "One hundred percent"
+      "Ten percent",
+      "One hundred percent",
+      "Five percent"
      ],
      "answer": 1,
      "why": "\"The rate is ten percent.\""
@@ -99,34 +99,34 @@
     {
      "q": "What is the total of the two lines?",
      "options": [
-      "One hundred",
       "Two hundred",
-      "Three hundred",
-      "Four hundred"
+      "Four hundred",
+      "One hundred",
+      "Three hundred"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"One hundred plus two hundred. The total is three hundred.\""
     },
     {
      "q": "Why does Sophie say \"Take your time\" and \"one line at a time\"?",
      "options": [
-      "She wants to help the student learn calmly",
-      "She is in a hurry",
       "The table is very short",
-      "She does not like numbers"
+      "She wants to help the student learn calmly",
+      "She does not like numbers",
+      "She is in a hurry"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ela repete que dá para ir devagar — quer que o aluno aprenda com calma."
     },
     {
      "q": "How does Sophie feel about the student's work?",
      "options": [
-      "She is not happy",
-      "She thinks the student is doing well",
       "She wants to stop the lesson",
-      "She is confused"
+      "She is confused",
+      "She is not happy",
+      "She thinks the student is doing well"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: ela diz \"Very good!\" e \"You are doing well\" — está satisfeita."
     }
    ]
@@ -139,32 +139,32 @@
     {
      "q": "\"The <strong>number</strong> must be correct before we send the form.\" A <strong>number</strong> is…",
      "options": [
-      "a número (like 1, 2, 3)",
       "a color",
-      "a name",
-      "a day"
+      "a day",
+      "a número (like 1, 2, 3)",
+      "a name"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Number = número."
     },
     {
      "q": "\"There is a new <strong>percent</strong> on the tax calendar this month.\" <strong>Percent</strong> means…",
      "options": [
+      "a folder",
       "por cento (%)",
-      "total",
       "a form",
-      "a folder"
+      "total"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Percent = por cento (%)."
     },
     {
      "q": "Choose the correct word: \"The ___ is ready for the accountant to review.\"",
      "options": [
       "amount",
-      "door",
+      "week",
       "chair",
-      "week"
+      "door"
      ],
      "answer": 0,
      "why": "Amount = valor / quantia — o que o contador vai revisar."
@@ -172,23 +172,23 @@
     {
      "q": "\"We check every <strong>total</strong> before the deadline.\" A <strong>total</strong> is…",
      "options": [
-      "the final sum of the numbers",
       "the first number",
-      "a name",
-      "a color"
+      "a color",
+      "the final sum of the numbers",
+      "a name"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Total = a soma final dos números."
     },
     {
      "q": "Choose the correct word: \"The ___ stays in the fiscal folder for seven years.\"",
      "options": [
-      "rate",
       "lunch",
+      "song",
       "window",
-      "song"
+      "rate"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Rate = alíquota — fica guardada na pasta fiscal."
     }
    ]
@@ -202,9 +202,9 @@
      "q": "\"Please <strong>fill in</strong> the tax form.\" To <strong>fill in</strong> means to…",
      "options": [
       "write the information in the spaces",
+      "hide the form",
       "throw the form away",
-      "read the form fast",
-      "hide the form"
+      "read the form fast"
      ],
      "answer": 0,
      "why": "Fill in = preencher — escrever a informação nos espaços."
@@ -213,9 +213,9 @@
      "q": "\"Let's <strong>add up</strong> the numbers.\" To <strong>add up</strong> means to…",
      "options": [
       "find the total",
-      "delete the numbers",
       "read the numbers",
-      "copy the numbers"
+      "copy the numbers",
+      "delete the numbers"
      ],
      "answer": 0,
      "why": "Add up = somar, encontrar o total."
@@ -223,34 +223,34 @@
     {
      "q": "\"We <strong>send off</strong> the form before the deadline.\" To <strong>send off</strong> means to…",
      "options": [
+      "sign it",
       "send it to someone",
       "keep it in a drawer",
-      "print it many times",
-      "sign it"
+      "print it many times"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Send off = enviar, mandar para alguém."
     },
     {
      "q": "\"Let's <strong>go over</strong> the total one more time.\" To <strong>go over</strong> means to…",
      "options": [
-      "check or review it",
-      "forget it",
       "delete it",
-      "hide it"
+      "check or review it",
+      "hide it",
+      "forget it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Go over = revisar, conferir mais uma vez."
     },
     {
      "q": "\"Take your time and <strong>carry on</strong>.\" To <strong>carry on</strong> means to…",
      "options": [
-      "continue",
       "stop now",
-      "start again",
-      "close the book"
+      "close the book",
+      "continue",
+      "start again"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Carry on = continuar."
     }
    ]

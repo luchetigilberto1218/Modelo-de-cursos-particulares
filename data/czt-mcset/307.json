@@ -10,10 +10,10 @@
     {
      "q": "What is \"freight\"?",
      "options": [
-      "The company that moves the goods",
-      "The general word for goods being transported",
       "The price of a truck",
-      "A type of container"
+      "The general word for goods being transported",
+      "A type of container",
+      "The company that moves the goods"
      ],
      "answer": 1,
      "why": "\"Freight is the general word for goods being transported.\""
@@ -21,45 +21,45 @@
     {
      "q": "Who is the carrier?",
      "options": [
-      "The company that moves the goods",
       "The customer who buys the goods",
       "The truck driver's assistant",
-      "The batch being sent"
+      "The batch being sent",
+      "The company that moves the goods"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The carrier is the company that moves them.\""
     },
     {
      "q": "What is a shipment?",
      "options": [
-      "The full truck",
-      "A specific batch being sent",
       "The freight cost",
-      "The invoice"
+      "The invoice",
+      "The full truck",
+      "A specific batch being sent"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A shipment is a specific batch being sent.\""
     },
     {
      "q": "The text suggests that using these words wrongly…",
      "options": [
+      "is not important",
       "makes people trust you more",
-      "makes people doubt you",
       "saves money on freight",
-      "is not important"
+      "makes people doubt you"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"makes people wonder whether you know what you are doing\" — as pessoas duvidam de você."
     },
     {
      "q": "What does \"The rest follows\" most likely mean?",
      "options": [
+      "The carrier will teach you",
       "There is nothing more to learn",
       "The other words come later, but these five are the base",
-      "You must learn a hundred words first",
-      "The carrier will teach you"
+      "You must learn a hundred words first"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: aprender essas cinco palavras é a base; o resto vem depois."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "How many words does Harry say she needs?",
      "options": [
-      "Three",
       "Five",
       "Ten",
+      "Three",
       "Twenty"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"You only need five words.\""
     },
     {
      "q": "Is Czarnikow the carrier?",
      "options": [
       "Yes, they own the trucks",
-      "No, they book the carrier",
       "Yes, they drive the ships",
+      "No, they book the carrier",
       "No, they sell the trucks"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"We are not the carrier. We book the carrier.\""
     },
     {
      "q": "What does the customer always ask about?",
      "options": [
+      "The container colour",
       "The freight cost",
       "The driver's name",
-      "The container colour",
       "The weather"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The customer always asks about the freight cost.\""
     },
     {
      "q": "Why does Harry give her simple sentences to say?",
      "options": [
-      "Because the customer speaks no English",
-      "So she sounds clear and professional",
       "Because there is no time",
-      "Because the call is very long"
+      "Because the call is very long",
+      "So she sounds clear and professional",
+      "Because the customer speaks no English"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: frases curtas e claras a fazem soar profissional desde o começo."
     },
     {
      "q": "Why does Harry mention \"one shipment, two shipments\"?",
      "options": [
-      "To show that freight is uncountable but shipment is countable",
       "To count the trucks",
+      "To show that freight is uncountable but shipment is countable",
       "To explain the freight cost",
       "To name the carrier"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ele ensina que 'freight' não tem plural, mas 'shipment' sim (contável vs incontável)."
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"The <strong>carrier</strong> will collect the boxes on Friday.\" A carrier is…",
      "options": [
-      "the company that transports the goods",
       "the customer who orders",
-      "the price of the trip",
-      "the warehouse manager"
+      "the company that transports the goods",
+      "the warehouse manager",
+      "the price of the trip"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Carrier = transportadora, a empresa que move a carga."
     },
     {
      "q": "Choose the correct word: \"Your ___ of sugar is ready. It leaves tonight.\"",
      "options": [
       "shipment",
-      "carrier",
+      "professional",
       "invoice",
-      "professional"
+      "carrier"
      ],
      "answer": 0,
      "why": "Shipment = remessa: um lote específico que está sendo enviado."
@@ -161,32 +161,32 @@
     {
      "q": "\"We put the whole <strong>load</strong> into one truck.\" The load is…",
      "options": [
-      "what fills the truck or container",
-      "the driver",
+      "the invoice number",
       "the freight cost",
-      "the invoice number"
+      "the driver",
+      "what fills the truck or container"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Load = carga: aquilo que enche o caminhão ou o contêiner."
     },
     {
      "q": "Choose the correct word: \"The customer wants to know the ___ before booking.\"",
      "options": [
-      "freight cost",
       "container",
       "batch",
+      "freight cost",
       "carrier"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Freight cost = custo do frete, o preço para mover a carga."
     },
     {
      "q": "\"We sent one <strong>container</strong> by ship.\" A container is…",
      "options": [
       "a large metal box for transporting goods",
-      "the company that ships",
       "the invoice",
-      "the sugar sample"
+      "the sugar sample",
+      "the company that ships"
      ],
      "answer": 0,
      "why": "Container = contêiner: a grande caixa de metal usada no transporte."
@@ -201,12 +201,12 @@
     {
      "q": "\"The carrier will <strong>pick up</strong> the load on Monday.\" To pick up means to…",
      "options": [
-      "collect it",
       "pay for it",
+      "collect it",
       "count it",
       "cancel it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Pick up = pegar, coletar a carga."
     },
     {
@@ -223,34 +223,34 @@
     {
      "q": "\"Can you <strong>set up</strong> the call with the carrier?\" To set up means to…",
      "options": [
-      "arrange or organise it",
-      "cancel it",
       "record it",
-      "translate it"
+      "cancel it",
+      "translate it",
+      "arrange or organise it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Set up = organizar, marcar."
     },
     {
      "q": "\"The manager will <strong>sign off on</strong> the freight cost.\" To sign off on means to…",
      "options": [
+      "hide it",
       "approve it formally",
-      "reject it",
       "delay it",
-      "hide it"
+      "reject it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"Please <strong>fill in</strong> the invoice before you send it.\" To fill in means to…",
      "options": [
+      "print it twice",
       "complete it with the details",
-      "throw it away",
       "read it aloud",
-      "print it twice"
+      "throw it away"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fill in = preencher com as informações."
     }
    ]

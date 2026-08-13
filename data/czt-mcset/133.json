@@ -9,55 +9,55 @@
      "q": "Why does international trade come with more risks than selling at home?",
      "options": [
       "The goods are cheaper",
+      "It is always faster",
       "Goods travel further, buyers are harder to check, laws differ, money moves slower",
-      "There is no bank",
-      "It is always faster"
+      "There is no bank"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The goods travel further. The buyer is harder to check. The law may be different. And the money may move more slowly.\""
     },
     {
      "q": "What is commercial risk?",
      "options": [
+      "The country changes its law",
       "The buyer does not pay",
       "The ship sinks",
-      "The rate moves",
-      "The country changes its law"
+      "The rate moves"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"the commercial risk (the buyer does not pay).\""
     },
     {
      "q": "What is currency risk?",
      "options": [
+      "The goods are late",
       "The buyer disappears",
       "The exchange rate moves against you",
-      "The goods are late",
       "The bank closes"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"the currency risk (the exchange rate moves against you).\""
     },
     {
      "q": "What is the 'good news'?",
      "options": [
-      "There is no risk",
       "For each risk, there is a tool",
       "Trade is free",
+      "There is no risk",
       "The buyer always pays"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"for each risk, there is a tool.\""
     },
     {
      "q": "What is the first step?",
      "options": [
-      "Buy insurance for everything",
       "See the risk clearly",
       "Avoid all trade",
-      "Ignore the risk"
+      "Ignore the risk",
+      "Buy insurance for everything"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The first step is just to see the risk clearly.\""
     }
    ]
@@ -72,56 +72,56 @@
     {
      "q": "What is the idea behind the risk map?",
      "options": [
-      "To scare the team",
-      "To see the three main risks clearly and match each to a tool",
       "To stop the deal",
-      "To buy insurance for everything"
+      "To buy insurance for everything",
+      "To scare the team",
+      "To see the three main risks clearly and match each to a tool"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"it's just to see the three main risks clearly, and match each one to a tool.\""
     },
     {
      "q": "What is the tool for commercial risk?",
      "options": [
+      "A bigger order",
       "Locking the rate",
-      "Credit insurance",
       "A watch list",
-      "A bigger order"
+      "Credit insurance"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The tool is credit insurance — if the buyer doesn't pay, the insurer covers most of it.\""
     },
     {
      "q": "How does the team handle country risk?",
      "options": [
       "Ignore it",
-      "Watch the country closely, and buy special insurance for the biggest deal",
+      "Cancel the market",
       "Lock the currency",
-      "Cancel the market"
+      "Watch the country closely, and buy special insurance for the biggest deal"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"watch the country closely, and for our biggest deal, we can buy special insurance.\""
     },
     {
      "q": "What is a tool for currency risk?",
      "options": [
-      "Credit insurance",
       "Lock in the rate now, or build a small buffer into the price",
       "A watch list",
+      "Credit insurance",
       "Nothing"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"lock in the rate now with the bank, or to build a small buffer into the price.\""
     },
     {
      "q": "What does Sophie say the real mistake is?",
      "options": [
+      "Watching the country",
       "Taking any risk",
-      "Not looking at the risk",
       "Buying insurance",
-      "Watching the country"
+      "Not looking at the risk"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The mistake is not the risk; the mistake is not looking at it.\""
     }
    ]
@@ -132,45 +132,55 @@
     {
      "q": "**Commercial risk** is the risk that…",
      "options": [
-      "the rate moves",
       "the buyer does not pay",
       "the country changes its law",
+      "the rate moves",
       "the ship is late"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Commercial risk = risco de o comprador não pagar."
     },
     {
      "q": "**Country risk** is the risk that…",
      "options": [
       "the buyer disappears",
-      "something goes wrong in the country (law, politics)",
+      "the bank closes",
       "the goods are heavy",
-      "the bank closes"
+      "something goes wrong in the country (law, politics)"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Country risk = risco país."
     },
     {
      "q": "Choose the correct word: \"We use insurance to **___** the risk.\"",
-     "options": ["mitigate", "increase", "ignore", "ship"],
-     "answer": 0,
+     "options": [
+      "increase",
+      "ignore",
+      "ship",
+      "mitigate"
+     ],
+     "answer": 3,
      "why": "Mitigate = mitigar."
     },
     {
      "q": "**Default** means…",
      "options": [
-      "paying on time",
-      "failing to pay",
       "shipping early",
-      "a discount"
+      "failing to pay",
+      "a discount",
+      "paying on time"
      ],
      "answer": 1,
      "why": "Default = inadimplência."
     },
     {
      "q": "Choose the correct word: \"The first step is to see the risk **___**.\"",
-     "options": ["clearly", "quickly", "loudly", "cheaply"],
+     "options": [
+      "clearly",
+      "quickly",
+      "cheaply",
+      "loudly"
+     ],
      "answer": 0,
      "why": "Clearly = claramente."
     }
@@ -181,35 +191,55 @@
    "items": [
     {
      "q": "\"If the rate goes against us, our profit **shrinks**.\" To shrink means to…",
-     "options": ["grow", "get smaller", "disappear fully", "double"],
+     "options": [
+      "grow",
+      "get smaller",
+      "double",
+      "disappear fully"
+     ],
      "answer": 1,
      "why": "Shrink = encolher."
     },
     {
      "q": "\"The insurer **covers** most of it.\" To cover means to…",
-     "options": ["hide", "pay for / protect against", "cause", "ship"],
-     "answer": 1,
+     "options": [
+      "ship",
+      "cause",
+      "pay for / protect against",
+      "hide"
+     ],
+     "answer": 2,
      "why": "Cover = cobrir (o prejuízo)."
     },
     {
      "q": "\"Let's **keep an eye on** the country.\" To keep an eye on means to…",
-     "options": ["ignore", "watch closely", "insure", "leave"],
-     "answer": 1,
+     "options": [
+      "ignore",
+      "leave",
+      "insure",
+      "watch closely"
+     ],
+     "answer": 3,
      "why": "Keep an eye on = ficar de olho."
     },
     {
      "q": "\"We **build in** a small buffer.\" To build in means to…",
-     "options": ["remove", "include as part of something", "ignore", "ship"],
-     "answer": 1,
+     "options": [
+      "ignore",
+      "ship",
+      "remove",
+      "include as part of something"
+     ],
+     "answer": 3,
      "why": "Build in = incorporar."
     },
     {
      "q": "\"Nothing is dangerous **once we see it**.\" Once we see it means…",
      "options": [
       "after we recognise it",
-      "before we know it",
+      "never",
       "if we hide it",
-      "never"
+      "before we know it"
      ],
      "answer": 0,
      "why": "Once we see it = uma vez que o enxergamos."

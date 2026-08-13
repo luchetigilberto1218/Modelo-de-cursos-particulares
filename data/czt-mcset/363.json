@@ -10,56 +10,56 @@
     {
      "q": "What is the basic accounting equation?",
      "options": [
+      "Liabilities = Assets + Equity",
       "Assets = Liabilities + Equity",
       "Assets = Equity - Liabilities",
-      "Liabilities = Assets + Equity",
       "Equity = Assets + Liabilities"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Assets = Liabilities + Equity.\" É a equação central da lição."
     },
     {
      "q": "When the company buys the truck with a loan, what happens?",
      "options": [
-      "Only assets go up",
-      "Only liabilities go up",
       "Assets and liabilities both go up by £50,000",
-      "Assets go down and liabilities go up"
+      "Only assets go up",
+      "Assets go down and liabilities go up",
+      "Only liabilities go up"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"assets go up by £50,000… and liabilities go up by £50,000.\" Os dois lados sobem juntos."
     },
     {
      "q": "Why do accountants check the equation every day?",
      "options": [
-      "To make the company bigger",
       "To find mistakes when it does not balance",
-      "To pay the loan faster",
-      "To buy a new truck"
+      "To buy a new truck",
+      "To make the company bigger",
+      "To pay the loan faster"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"If it does not, something has been recorded wrong.\" O check serve para achar o erro."
     },
     {
      "q": "The text suggests that if the equation does NOT balance, then…",
      "options": [
-      "the company has no money",
       "there is a mistake in the records",
       "the company must sell the truck",
-      "the loan is too big"
+      "the loan is too big",
+      "the company has no money"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: um lado diferente do outro é sinal de erro no registro, não de falta de dinheiro."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "the two sides of the equation must always match",
-      "assets are more important than liabilities",
+      "a loan makes the equation stop working",
       "accountants only check the numbers once a year",
-      "a loan makes the equation stop working"
+      "assets are more important than liabilities",
+      "the two sides of the equation must always match"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: a ideia central é que os dois lados sempre se equilibram."
     }
    ]
@@ -78,20 +78,20 @@
      "q": "Where is Harry when he explains the equation?",
      "options": [
       "In his car",
-      "At the whiteboard",
+      "In the truck",
       "At the bank",
-      "In the truck"
+      "At the whiteboard"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Come here to the whiteboard.\" Ele explica no quadro branco."
     },
     {
      "q": "How much does the truck cost?",
      "options": [
-      "Five thousand pounds",
       "Fifteen thousand pounds",
+      "Five hundred pounds",
       "Fifty thousand pounds",
-      "Five hundred pounds"
+      "Five thousand pounds"
      ],
      "answer": 2,
      "why": "\"The truck costs fifty thousand pounds.\""
@@ -99,10 +99,10 @@
     {
      "q": "How does the company pay for the truck?",
      "options": [
-      "With cash",
-      "With a loan from the bank",
       "With equity from the owners",
-      "It does not pay"
+      "With a loan from the bank",
+      "It does not pay",
+      "With cash"
      ],
      "answer": 1,
      "why": "\"we take a loan from the bank.\""
@@ -110,23 +110,23 @@
     {
      "q": "Harry says \"both sides move together.\" This suggests that…",
      "options": [
-      "the equation stays in balance",
-      "the company loses money",
       "only assets change",
-      "the truck is too expensive"
+      "the equation stays in balance",
+      "the truck is too expensive",
+      "the company loses money"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: se os dois lados sobem igual, o equilíbrio se mantém."
     },
     {
      "q": "Why does Harry check the equation every day?",
      "options": [
-      "Because he likes numbers",
-      "To find a mistake if the two sides are not equal",
+      "Because the bank asks him to",
       "To buy more trucks",
-      "Because the bank asks him to"
+      "Because he likes numbers",
+      "To find a mistake if the two sides are not equal"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"If the two sides are not equal, I know we made a mistake.\" O check é para achar o erro."
     }
    ]
@@ -141,8 +141,8 @@
      "options": [
       "something the company owns",
       "something the company owes",
-      "a mistake in the books",
-      "money from the bank"
+      "money from the bank",
+      "a mistake in the books"
      ],
      "answer": 0,
      "why": "Asset = ativo: algo que a empresa possui."
@@ -150,23 +150,23 @@
     {
      "q": "Choose the correct word: \"The bank loan is a ___ because the company owes the money.\"",
      "options": [
-      "liability",
       "asset",
+      "equation",
       "equity",
-      "equation"
+      "liability"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Liability = passivo: aquilo que a empresa deve."
     },
     {
      "q": "\"The owners' part of the company is the <strong>equity</strong>.\" <strong>Equity</strong> means…",
      "options": [
-      "what the owners have in the company",
       "the money owed to the bank",
-      "the price of the truck",
-      "a daily check"
+      "a daily check",
+      "what the owners have in the company",
+      "the price of the truck"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Equity = patrimônio: a parte que pertence aos donos."
     },
     {
@@ -174,8 +174,8 @@
      "options": [
       "loan",
       "asset",
-      "equity",
-      "balance"
+      "balance",
+      "equity"
      ],
      "answer": 0,
      "why": "Loan = empréstimo: o dinheiro que o banco emprestou."
@@ -184,9 +184,9 @@
      "q": "\"Accountants <strong>record</strong> every transaction.\" To <strong>record</strong> means to…",
      "options": [
       "write it down in the books",
-      "pay it back",
       "check the truck",
-      "own the money"
+      "own the money",
+      "pay it back"
      ],
      "answer": 0,
      "why": "To record = registrar: anotar a transação nos livros."
@@ -201,56 +201,56 @@
     {
      "q": "\"The numbers do not <strong>add up</strong>, so there is a mistake.\" To <strong>add up</strong> means…",
      "options": [
-      "to be correct and match",
       "to grow bigger",
       "to be paid late",
+      "to be correct and match",
       "to be very simple"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Add up = bater, fazer sentido: quando os números não batem, há erro."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the report.\" To <strong>sign off on</strong> means to…",
      "options": [
-      "formally approve it",
       "throw it away",
-      "read it quickly",
-      "print it again"
+      "print it again",
+      "formally approve it",
+      "read it quickly"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"Please <strong>write down</strong> the loan in the books.\" To <strong>write down</strong> means to…",
      "options": [
+      "hide it",
       "record it on paper",
       "pay it back",
-      "cancel it",
-      "hide it"
+      "cancel it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Write down = anotar, registrar por escrito."
     },
     {
      "q": "\"We need to <strong>pay back</strong> the bank loan.\" To <strong>pay back</strong> means to…",
      "options": [
-      "return the money we owe",
       "borrow more money",
+      "check the numbers",
       "buy a new truck",
-      "check the numbers"
+      "return the money we owe"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Pay back = pagar de volta o que se deve."
     },
     {
      "q": "\"Let's <strong>go over</strong> the equation one more time.\" To <strong>go over</strong> means to…",
      "options": [
-      "check or review it",
-      "delete it",
       "sell it",
-      "sign it"
+      "sign it",
+      "delete it",
+      "check or review it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Go over = revisar, passar por cima para conferir."
     }
    ]

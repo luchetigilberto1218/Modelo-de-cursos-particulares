@@ -10,23 +10,23 @@
     {
      "q": "How many small words do we use to answer \"where\"?",
      "options": [
-      "One",
-      "Two",
       "Three",
-      "Five"
+      "Five",
+      "Two",
+      "One"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"we use three small words… in, on and at\"."
     },
     {
      "q": "Where is the laptop?",
      "options": [
+      "In the kitchen",
       "In the drawer",
-      "On the desk",
       "At reception",
-      "In the kitchen"
+      "On the desk"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"the laptop is on the desk\"."
     },
     {
@@ -34,8 +34,8 @@
      "options": [
       "On the desk",
       "In the drawer",
-      "At the door",
-      "In the meeting room"
+      "In the meeting room",
+      "At the door"
      ],
      "answer": 1,
      "why": "\"the pens are in the drawer\"."
@@ -43,12 +43,12 @@
     {
      "q": "The text suggests that in, on and at are…",
      "options": [
-      "very difficult and only for experts",
-      "useful for everyday \"where\" questions at work",
+      "only for writing long emails",
       "not needed at work",
-      "only for writing long emails"
+      "useful for everyday \"where\" questions at work",
+      "very difficult and only for experts"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: o texto diz que essas palavrinhas resolvem a maioria das perguntas de \"where\" no trabalho."
     },
     {
@@ -56,8 +56,8 @@
      "options": [
       "Small words can be very useful.",
       "You need many long words to say where something is.",
-      "In, on and at answer \"where\" questions.",
-      "Learning step by step helps."
+      "Learning step by step helps.",
+      "In, on and at answer \"where\" questions."
      ],
      "answer": 1,
      "why": "Inferência: o texto defende que três palavrinhas curtas já bastam — o autor discordaria da ideia de precisar de muitas palavras longas."
@@ -77,10 +77,10 @@
     {
      "q": "Where is Sophie's laptop?",
      "options": [
-      "In the drawer",
-      "On the desk",
       "In the kitchen",
-      "At reception"
+      "On the desk",
+      "At reception",
+      "In the drawer"
      ],
      "answer": 1,
      "why": "\"My laptop is on the desk.\""
@@ -89,44 +89,44 @@
      "q": "Where are the pens?",
      "options": [
       "On the table",
+      "In the corner",
       "In the drawer",
-      "At the door",
-      "In the corner"
+      "At the door"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"My pens are in the drawer, next to the paper.\""
     },
     {
      "q": "Where is Tom?",
      "options": [
-      "In the kitchen",
-      "At reception",
       "In the meeting room",
-      "At his desk"
+      "In the kitchen",
+      "At his desk",
+      "At reception"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Tom is in the meeting room right now.\""
     },
     {
      "q": "Why does Sophie say they are quiet?",
      "options": [
-      "Because Tom has a call",
       "Because the office is closed",
+      "Because Tom has a call",
       "Because it is very late",
       "Because the visitor is sleeping"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: eles ficam quietos porque Tom tem uma ligação às dez horas."
     },
     {
      "q": "How does Sophie sound?",
      "options": [
+      "Worried about the coffee",
       "Friendly and welcoming",
-      "Angry with the visitor",
       "Bored and tired",
-      "Worried about the coffee"
+      "Angry with the visitor"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ela recebe bem, mostra tudo e oferece um café — tom simpático."
     }
    ]
@@ -141,8 +141,8 @@
      "options": [
       "a table where you work",
       "a small box that opens",
-      "a room for coffee",
-      "the front area of the office"
+      "the front area of the office",
+      "a room for coffee"
      ],
      "answer": 0,
      "why": "Desk = mesa de trabalho."
@@ -150,45 +150,45 @@
     {
      "q": "Choose the correct word: \"We make coffee in the ___.\"",
      "options": [
-      "drawer",
       "kitchen",
+      "reception",
       "desk",
-      "reception"
+      "drawer"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Kitchen = cozinha, onde fazemos café."
     },
     {
      "q": "\"The pens are in the <strong>drawer</strong>.\" A <strong>drawer</strong> is…",
      "options": [
-      "a big meeting table",
-      "a small part of the desk that you open and close",
       "a place for visitors",
-      "a room with a door"
+      "a room with a door",
+      "a big meeting table",
+      "a small part of the desk that you open and close"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Drawer = gaveta: abre e fecha e guarda coisas pequenas."
     },
     {
      "q": "Choose the correct word: \"We talk about the project in the ___.\"",
      "options": [
-      "kitchen",
-      "meeting room",
       "drawer",
-      "reception"
+      "kitchen",
+      "reception",
+      "meeting room"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Meeting room = sala de reunião, onde falamos sobre o projeto."
     },
     {
      "q": "\"The visitor is at <strong>reception</strong>.\" <strong>Reception</strong> is…",
      "options": [
-      "the front area where visitors arrive",
       "a drawer in the desk",
+      "the front area where visitors arrive",
       "the room where we make coffee",
       "a phone on the table"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Reception = recepção, a área da frente onde as visitas chegam."
     }
    ]
@@ -201,34 +201,34 @@
     {
      "q": "\"Can you <strong>set up</strong> the meeting room?\" To set up means to…",
      "options": [
-      "get it ready",
       "clean the floor",
+      "paint the wall",
       "lock the door",
-      "paint the wall"
+      "get it ready"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Set up = preparar, deixar pronto."
     },
     {
      "q": "\"Please <strong>drop by</strong> my desk later.\" To drop by means to…",
      "options": [
-      "call on the phone",
-      "visit for a short time",
+      "stay all day",
       "send a long email",
-      "stay all day"
+      "call on the phone",
+      "visit for a short time"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Drop by = dar uma passadinha, visitar por pouco tempo."
     },
     {
      "q": "\"I will <strong>follow up</strong> with an email.\" To follow up means to…",
      "options": [
-      "send more information later",
-      "forget the topic",
       "close the office",
-      "go home early"
+      "send more information later",
+      "go home early",
+      "forget the topic"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Follow up = dar seguimento, mandar mais informação depois."
     },
     {
@@ -236,8 +236,8 @@
      "options": [
       "have a short talk about progress",
       "leave the building",
-      "turn off the lights",
-      "buy a new laptop"
+      "buy a new laptop",
+      "turn off the lights"
      ],
      "answer": 0,
      "why": "Check in = fazer um alinhamento rápido para ver como estão as coisas."
@@ -246,9 +246,9 @@
      "q": "\"The manager must <strong>sign off on</strong> the plan.\" To sign off on means to…",
      "options": [
       "approve it",
-      "print it",
+      "hide it",
       "cancel it",
-      "hide it"
+      "print it"
      ],
      "answer": 0,
      "why": "Sign off on = aprovar, dar o aval."

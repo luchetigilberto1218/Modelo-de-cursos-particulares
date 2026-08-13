@@ -19,35 +19,45 @@
     {
      "q": "What can a 3% exchange rate move do to a company on 5% margins?",
      "options": [
-      "Nothing",
-      "Wipe out most of a year's work",
+      "Reduce shipping costs",
       "Double the profit",
-      "Reduce shipping costs"
+      "Nothing",
+      "Wipe out most of a year's work"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"a 3% move in the exchange rate wipes out most of a year's work.\""
     },
     {
      "q": "What does managing FX risk start with?",
-     "options": ["Hedging everything", "Measuring it", "Ignoring it", "Changing banks"],
-     "answer": 1,
+     "options": [
+      "Measuring it",
+      "Changing banks",
+      "Hedging everything",
+      "Ignoring it"
+     ],
+     "answer": 0,
      "why": "\"Managing FX risk starts with measuring it.\""
     },
     {
      "q": "What is a natural hedge?",
      "options": [
       "Locking in a future rate",
-      "Matching inflows and outflows in the same currency",
       "Buying insurance",
+      "Matching inflows and outflows in the same currency",
       "Accepting the risk"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"natural hedges (matching inflows and outflows).\""
     },
     {
      "q": "According to the text, what is the worst strategy?",
-     "options": ["Forwards", "Natural hedges", "No strategy", "Pricing it in"],
-     "answer": 2,
+     "options": [
+      "No strategy",
+      "Forwards",
+      "Pricing it in",
+      "Natural hedges"
+     ],
+     "answer": 0,
      "why": "\"The worst strategy is no strategy.\""
     }
    ]
@@ -62,38 +72,43 @@
     {
      "q": "Why does Harry draw the exposure on the whiteboard?",
      "options": [
+      "Because the CFO asked",
       "To fill time",
       "Because once you see it on one page, the risk becomes obvious",
-      "Because the CFO asked",
       "To hide the numbers"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"once you see the exposure on one page, the risk becomes obvious.\""
     },
     {
      "q": "What currency does the company receive?",
-     "options": ["Dollars", "Euros", "Reais", "Yen"],
-     "answer": 1,
+     "options": [
+      "Euros",
+      "Yen",
+      "Reais",
+      "Dollars"
+     ],
+     "answer": 0,
      "why": "\"you're receiving euros — a big chunk every month.\""
     },
     {
      "q": "Where does Harry say the real risk lives?",
      "options": [
+      "In the customs duty",
       "In the salaries",
-      "Receiving euros but paying dollars, which move independently",
       "In the shipping",
-      "In the customs duty"
+      "Receiving euros but paying dollars, which move independently"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"You receive euros but you pay dollars, and those two currencies move independently.\""
     },
     {
      "q": "What does a forward let the company do?",
      "options": [
-      "Find matching income",
+      "Change suppliers",
       "Lock in today's rate for future payments, so the margin is known",
-      "Avoid all payments",
-      "Change suppliers"
+      "Find matching income",
+      "Avoid all payments"
      ],
      "answer": 1,
      "why": "\"a forward: lock in today's euro-dollar rate for your big payments over the next six months.\""
@@ -101,12 +116,12 @@
     {
      "q": "What does Harry recommend for a thin-margin company?",
      "options": [
+      "Do nothing",
       "Accept all the risk",
       "Lock in the big payments with forwards",
-      "Do nothing",
       "Change currency entirely"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I'd lock in the big ones with forwards.\""
     }
    ]
@@ -117,12 +132,12 @@
     {
      "q": "\"Our **FX risk** is significant.\" FX risk is…",
      "options": [
-      "credit risk",
-      "the risk from currency movements",
       "shipping risk",
-      "legal risk"
+      "legal risk",
+      "credit risk",
+      "the risk from currency movements"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "FX risk = risco cambial."
     },
     {
@@ -130,27 +145,42 @@
      "options": [
       "increase the risk",
       "protect against a risk, e.g. currency movement",
-      "ignore the risk",
-      "pay a supplier"
+      "pay a supplier",
+      "ignore the risk"
      ],
      "answer": 1,
      "why": "To hedge = proteger-se de um risco."
     },
     {
      "q": "Choose the correct word: \"A **forward contract** lets you **___** today's rate for the future.\"",
-     "options": ["lock in", "give up", "raise", "ignore"],
-     "answer": 0,
+     "options": [
+      "give up",
+      "lock in",
+      "ignore",
+      "raise"
+     ],
+     "answer": 1,
      "why": "Lock in = travar a taxa."
     },
     {
      "q": "\"The currency has high **volatility**.\" Volatility means…",
-     "options": ["stability", "frequent, large price movement", "low value", "a fixed rate"],
+     "options": [
+      "a fixed rate",
+      "frequent, large price movement",
+      "low value",
+      "stability"
+     ],
      "answer": 1,
      "why": "Volatility = volatilidade."
     },
     {
      "q": "Choose the correct term: \"The **spot rate** is the rate for…\"",
-     "options": ["a future date", "immediate exchange today", "a loan", "insurance"],
+     "options": [
+      "insurance",
+      "immediate exchange today",
+      "a loan",
+      "a future date"
+     ],
      "answer": 1,
      "why": "Spot rate = taxa à vista (para hoje)."
     }
@@ -162,29 +192,44 @@
     {
      "q": "\"Your margin is really a **bet** on the exchange rate.\" To be a bet on something means to…",
      "options": [
+      "be fixed",
       "depend on an uncertain outcome",
-      "be guaranteed",
       "be insured",
-      "be fixed"
+      "be guaranteed"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "A bet on = uma aposta em algo incerto."
     },
     {
      "q": "\"You've been **leaving it exposed**.\" To leave something exposed means to…",
-     "options": ["protect it", "leave it unprotected against risk", "insure it", "hedge it"],
-     "answer": 1,
+     "options": [
+      "insure it",
+      "protect it",
+      "leave it unprotected against risk",
+      "hedge it"
+     ],
+     "answer": 2,
      "why": "Leave exposed = deixar sem proteção."
     },
     {
      "q": "\"Let's **lock in** the rate now.\" To lock in means to…",
-     "options": ["fix it for the future", "leave it open", "cancel it", "raise it"],
-     "answer": 0,
+     "options": [
+      "leave it open",
+      "fix it for the future",
+      "cancel it",
+      "raise it"
+     ],
+     "answer": 1,
      "why": "Lock in = travar, fixar."
     },
     {
      "q": "\"A rate move could **wipe out** the margin.\" To wipe out means to…",
-     "options": ["increase", "eliminate completely", "protect", "double"],
+     "options": [
+      "increase",
+      "eliminate completely",
+      "protect",
+      "double"
+     ],
      "answer": 1,
      "why": "Wipe out = eliminar por completo."
     },

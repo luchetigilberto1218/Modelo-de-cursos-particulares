@@ -8,45 +8,45 @@
     {
      "q": "What must goods do when they cross a border?",
      "options": [
-      "Walk straight through",
-      "Stop at customs, where officers check documents and products",
       "Go to the shop first",
-      "Return to the seller"
+      "Walk straight through",
+      "Return to the seller",
+      "Stop at customs, where officers check documents and products"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"They must stop at customs, where officers check the documents and the products.\""
     },
     {
      "q": "What is a duty?",
      "options": [
-      "A shipping cost",
       "A small tax on imported goods",
       "A discount",
-      "A document"
+      "A document",
+      "A shipping cost"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Many countries also charge a small tax on imported goods. We call this a duty.\""
     },
     {
      "q": "According to the text, what do duties do?",
      "options": [
       "Lower prices",
-      "Protect local industries and raise money for governments",
       "Speed up shipping",
-      "Replace customs"
+      "Replace customs",
+      "Protect local industries and raise money for governments"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Duties protect local industries and raise money for governments.\""
     },
     {
      "q": "What is the simple rule for companies?",
      "options": [
       "Hide what you bring in",
-      "Declare what you bring in and pay what you owe",
       "Avoid customs",
-      "Pay nothing"
+      "Pay nothing",
+      "Declare what you bring in and pay what you owe"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"you must declare what you bring in, and you must pay what you owe.\""
     },
     {
@@ -71,52 +71,57 @@
    "items": [
     {
      "q": "Where is the exporter sending their first shipment?",
-     "options": ["Brazil", "Germany", "The UK", "France"],
-     "answer": 1,
+     "options": [
+      "Germany",
+      "Brazil",
+      "France",
+      "The UK"
+     ],
+     "answer": 0,
      "why": "\"You're sending your first shipment to Germany.\""
     },
     {
      "q": "What does customs use the commercial invoice for?",
      "options": [
-      "To ship the goods",
       "To work out the duty",
-      "To pack the boxes",
-      "To pay the seller"
+      "To pay the seller",
+      "To ship the goods",
+      "To pack the boxes"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Customs use this to work out the duty.\""
     },
     {
      "q": "What mistake gets companies in trouble?",
      "options": [
-      "Writing a correct price",
       "Putting a lower price on the invoice to pay less duty",
       "Sending a packing list",
+      "Writing a correct price",
       "Declaring the goods"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"the price on it must be correct — not lower to pay less duty. That's the mistake.\""
     },
     {
      "q": "What must the packing list match?",
      "options": [
-      "The invoice price",
-      "Exactly what is inside the boxes",
+      "The ship's name",
       "The exchange rate",
-      "The ship's name"
+      "The invoice price",
+      "Exactly what is inside the boxes"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"it must match the list.\""
     },
     {
      "q": "What is the golden rule Charlotte gives?",
      "options": [
-      "Guess the value to be fast",
       "Be honest, be complete, and never guess on the invoice value",
       "Pay no duty",
-      "Skip the packing list"
+      "Skip the packing list",
+      "Guess the value to be fast"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"be honest, be complete, and never guess on the invoice value.\""
     }
    ]
@@ -127,29 +132,34 @@
     {
      "q": "**Customs** is…",
      "options": [
+      "a bank",
       "a shop",
-      "the government office that checks goods at the border",
       "a ship",
-      "a bank"
+      "the government office that checks goods at the border"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Customs = alfândega."
     },
     {
      "q": "A **duty** is…",
      "options": [
+      "a document",
       "a discount",
       "a tax on imported goods",
-      "a document",
       "a delivery"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Duty = imposto de importação."
     },
     {
      "q": "Choose the correct word: \"You must **___** what you bring in.\"",
-     "options": ["declare", "hide", "sell", "ship"],
-     "answer": 0,
+     "options": [
+      "hide",
+      "sell",
+      "declare",
+      "ship"
+     ],
+     "answer": 2,
      "why": "Declare = declarar."
     },
     {
@@ -165,8 +175,13 @@
     },
     {
      "q": "Choose the correct word: \"A customs **___** checks the documents.\"",
-     "options": ["officer", "supplier", "buyer", "driver"],
-     "answer": 0,
+     "options": [
+      "supplier",
+      "driver",
+      "buyer",
+      "officer"
+     ],
+     "answer": 3,
      "why": "Customs officer = fiscal aduaneiro."
     }
    ]
@@ -176,37 +191,57 @@
    "items": [
     {
      "q": "\"The goods **got held** at customs.\" To be held means to…",
-     "options": ["be released", "be stopped and kept", "be sold", "be shipped"],
-     "answer": 1,
+     "options": [
+      "be released",
+      "be shipped",
+      "be stopped and kept",
+      "be sold"
+     ],
+     "answer": 2,
      "why": "Held = retido."
     },
     {
      "q": "\"Customs **work out** the duty.\" To work out means to…",
-     "options": ["ignore", "calculate", "cancel", "pay"],
+     "options": [
+      "cancel",
+      "calculate",
+      "pay",
+      "ignore"
+     ],
      "answer": 1,
      "why": "Work out = calcular."
     },
     {
      "q": "\"Don't **guess** on the invoice value.\" To guess means to…",
      "options": [
-      "check carefully",
-      "give an answer without being sure",
+      "pay exactly",
       "declare honestly",
-      "pay exactly"
+      "check carefully",
+      "give an answer without being sure"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Guess = chutar, arriscar sem certeza."
     },
     {
      "q": "\"Be honest and you'll **stay out of trouble**.\" To stay out of trouble means to…",
-     "options": ["cause problems", "avoid problems", "pay a fine", "be held"],
-     "answer": 1,
+     "options": [
+      "cause problems",
+      "pay a fine",
+      "be held",
+      "avoid problems"
+     ],
+     "answer": 3,
      "why": "Stay out of trouble = evitar problemas."
     },
     {
      "q": "\"Fix it and customs will **let it through**.\" To let something through means to…",
-     "options": ["stop it", "allow it to pass", "return it", "tax it"],
-     "answer": 1,
+     "options": [
+      "tax it",
+      "return it",
+      "allow it to pass",
+      "stop it"
+     ],
+     "answer": 2,
      "why": "Let through = deixar passar."
     }
    ]

@@ -8,49 +8,54 @@
     {
      "q": "What is cash flow?",
      "options": [
-      "The company's profit",
+      "A tax",
       "The movement of money in and out of a company",
       "A bank loan",
-      "A tax"
+      "The company's profit"
      ],
      "answer": 1,
      "why": "\"Cash flow is the movement of money in and out of a company.\""
     },
     {
      "q": "When does money come in?",
-     "options": ["When bills arrive", "When customers pay", "When staff are hired", "When goods ship"],
-     "answer": 1,
+     "options": [
+      "When bills arrive",
+      "When staff are hired",
+      "When customers pay",
+      "When goods ship"
+     ],
+     "answer": 2,
      "why": "\"Money comes in when customers pay.\""
     },
     {
      "q": "Why is cash flow harder in international business?",
      "options": [
-      "Payments from abroad can be slow",
-      "There is no money",
       "Goods are cheaper",
-      "There are no bills"
+      "Payments from abroad can be slow",
+      "There are no bills",
+      "There is no money"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Payments from abroad can be slow. A client in another country may take sixty or ninety days.\""
     },
     {
      "q": "What do you still have to do while waiting for a foreign payment?",
      "options": [
-      "Nothing",
       "Pay suppliers and staff",
-      "Cancel the deal",
-      "Return the goods"
+      "Nothing",
+      "Return the goods",
+      "Cancel the deal"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"In the meantime, you still have to pay suppliers and staff.\""
     },
     {
      "q": "Why do many good companies fail?",
      "options": [
-      "They are unprofitable",
-      "They run out of cash, even when profitable",
       "They have too much cash",
-      "They sell too much"
+      "They run out of cash, even when profitable",
+      "They sell too much",
+      "They are unprofitable"
      ],
      "answer": 1,
      "why": "\"not because they are unprofitable, but because they run out of cash.\""
@@ -67,56 +72,56 @@
     {
      "q": "How does the founder feel, even after a profitable quarter?",
      "options": [
+      "Overpaid",
       "Relaxed",
-      "Short of money all the time",
       "Bored",
-      "Overpaid"
+      "Short of money all the time"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"you feel short of money all the time.\""
     },
     {
      "q": "Why does growth pull money out first?",
      "options": [
+      "There is no tax",
       "You buy more materials and pay more staff now, but sales money comes in later",
       "Customers pay in advance",
-      "There is no tax",
       "Suppliers pay you"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"you have to buy more materials and pay more staff — now… the money… comes in later.\""
     },
     {
      "q": "What is cash flow about?",
      "options": [
-      "Profit at the end",
-      "Timing — having the money when the bill lands",
+      "The ship",
       "The exchange rate",
-      "The ship"
+      "Timing — having the money when the bill lands",
+      "Profit at the end"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Cash flow is about timing — do you have the money when the bill lands?\""
     },
     {
      "q": "What is NOT the fix?",
      "options": [
-      "Planning the timing",
       "Stopping growth",
-      "Keeping a cash buffer",
-      "Asking clients to pay faster"
+      "Planning the timing",
+      "Asking clients to pay faster",
+      "Keeping a cash buffer"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The fix isn't to stop growing.\""
     },
     {
      "q": "What does Sophie recommend?",
      "options": [
+      "Ignore cash flow",
       "Stop selling",
       "Plan the timing, keep a buffer, and ask best clients to pay a little faster",
-      "Ignore cash flow",
       "Pay staff later"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"know when big payments come in, keep a small buffer of cash, and maybe ask your best clients to pay a little faster.\""
     }
    ]
@@ -127,46 +132,56 @@
     {
      "q": "An **inflow** is…",
      "options": [
-      "money going out",
       "money coming in",
+      "a ship",
       "a tax",
-      "a ship"
+      "money going out"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inflow = entrada de dinheiro."
     },
     {
      "q": "An **outflow** is…",
      "options": [
-      "money coming in",
-      "money going out",
       "a profit",
-      "a currency"
+      "a currency",
+      "money going out",
+      "money coming in"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Outflow = saída de dinheiro."
     },
     {
      "q": "Choose the correct phrase: \"A company can **___** cash even when profitable.\"",
-     "options": ["run out of", "save up", "print", "import"],
-     "answer": 0,
+     "options": [
+      "import",
+      "print",
+      "run out of",
+      "save up"
+     ],
+     "answer": 2,
      "why": "Run out of = ficar sem."
     },
     {
      "q": "\"It's about **timing**.\" Timing means…",
      "options": [
+      "the duty",
       "the amount only",
       "when things happen",
-      "the currency",
-      "the duty"
+      "the currency"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Timing = o momento em que as coisas acontecem."
     },
     {
      "q": "Choose the correct word: \"A company can be **___** but still short of cash.\"",
-     "options": ["profitable", "closed", "late", "empty"],
-     "answer": 0,
+     "options": [
+      "late",
+      "empty",
+      "closed",
+      "profitable"
+     ],
+     "answer": 3,
      "why": "Profitable = lucrativo."
     }
    ]
@@ -176,25 +191,45 @@
    "items": [
     {
      "q": "\"When you grow, cash gets **tight**.\" Tight here means…",
-     "options": ["plenty", "in short supply", "free", "late"],
-     "answer": 1,
+     "options": [
+      "in short supply",
+      "free",
+      "late",
+      "plenty"
+     ],
+     "answer": 0,
      "why": "Tight = apertado."
     },
     {
      "q": "\"Do you have the money when the bill **lands**?\" To land here means to…",
-     "options": ["fly", "arrive / become due", "disappear", "be paid"],
-     "answer": 1,
+     "options": [
+      "fly",
+      "disappear",
+      "arrive / become due",
+      "be paid"
+     ],
+     "answer": 2,
      "why": "Land = chegar, vencer (a conta)."
     },
     {
      "q": "\"Keep a small **buffer** of cash.\" A buffer is…",
-     "options": ["a debt", "spare cash for safety", "a tax", "a ship"],
-     "answer": 1,
+     "options": [
+      "a tax",
+      "a debt",
+      "a ship",
+      "spare cash for safety"
+     ],
+     "answer": 3,
      "why": "Buffer = reserva de segurança."
     },
     {
      "q": "\"Growth can **pull money out** first.\" To pull money out means to…",
-     "options": ["bring money in", "take cash out now", "save money", "print money"],
+     "options": [
+      "save money",
+      "take cash out now",
+      "bring money in",
+      "print money"
+     ],
      "answer": 1,
      "why": "Pull money out = tirar caixa (antes de voltar)."
     },
@@ -202,11 +237,11 @@
      "q": "\"Manage the timing and growth becomes a **joy**, not a worry.\" This contrast means growth changes from…",
      "options": [
       "a pleasure to a problem",
-      "a problem to a pleasure",
       "fast to slow",
+      "a problem to a pleasure",
       "cheap to costly"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "De preocupação para alegria — a joy, not a worry."
     }
    ]

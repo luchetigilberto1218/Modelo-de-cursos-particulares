@@ -8,54 +8,54 @@
     {
      "q": "According to the text, when are ethics most often tested?",
      "options": [
-      "In dramatic, rare moments",
       "In small, ordinary moments",
       "Only in legal disputes",
+      "In dramatic, rare moments",
       "Never in daily work"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Ethics at work are tested in small, ordinary moments far more often than in dramatic ones.\""
     },
     {
      "q": "How do good companies make the right choice easier?",
      "options": [
+      "By avoiding the topic",
       "By paying more",
       "By providing clear policies and safe channels to raise concerns",
-      "By avoiding the topic",
       "By punishing mistakes"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"by providing clear policies and safe channels to raise concerns.\""
     },
     {
      "q": "How do good professionals make the right choice automatic?",
      "options": [
-      "By deciding case by case",
       "By deciding in advance what they will and will not do",
+      "By deciding case by case",
       "By asking their manager each time",
       "By following the crowd"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"by deciding in advance what they will and will not do.\""
     },
     {
      "q": "Why is \"I don't accept gifts over £50\" easier than \"I'll think about it\"?",
      "options": [
-      "It is more polite",
       "There is no thinking to do — the decision was already made",
       "It is required by law",
-      "It avoids the client"
+      "It avoids the client",
+      "It is more polite"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"there is no thinking to do — the decision was already made.\""
     },
     {
      "q": "How does the text distinguish compliance from ethics?",
      "options": [
-      "They are the same",
-      "Compliance is the legal minimum; ethics is the private standard beyond it",
       "Ethics is the legal minimum",
-      "Compliance is optional"
+      "Compliance is the legal minimum; ethics is the private standard beyond it",
+      "Compliance is optional",
+      "They are the same"
      ],
      "answer": 1,
      "why": "\"Compliance is the legal minimum. Ethics is the private standard you hold yourself to.\""
@@ -73,33 +73,33 @@
      "q": "Why does Charlotte avoid dramatic fraud examples?",
      "options": [
       "They are secret",
+      "The team has heard them",
       "The real tests are smaller and much more common",
-      "They are too rare to matter",
-      "The team has heard them"
+      "They are too rare to matter"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The real tests are much smaller and much more common.\""
     },
     {
      "q": "What should you do with a gift over the fifty-pound limit?",
      "options": [
-      "Keep it quietly",
       "Disclose it and decline it politely",
+      "Keep it quietly",
       "Share it with the team",
       "Return it secretly"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"You disclose it, you decline it politely, and the policy takes the awkwardness off you.\""
     },
     {
      "q": "What is the answer when a client asks how another client is pricing?",
      "options": [
-      "Give a rough idea",
       "We don't discuss one client's business with another",
+      "Give a rough idea",
       "Ask your manager",
       "Only share publicly known figures"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"we don't discuss one client's business with another. Full stop.\""
     },
     {
@@ -107,8 +107,8 @@
      "options": [
       "Sign if it's urgent",
       "You must not sign — your signature means you checked it",
-      "Sign and review later",
-      "Let someone else sign"
+      "Let someone else sign",
+      "Sign and review later"
      ],
      "answer": 1,
      "why": "\"Your signature means you checked it. If you haven't, you must not sign.\""
@@ -132,46 +132,56 @@
     {
      "q": "\"She acted with **integrity**.\" Integrity means…",
      "options": [
-      "speed",
-      "honesty and strong moral principles",
       "seniority",
-      "ambition"
+      "ambition",
+      "honesty and strong moral principles",
+      "speed"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Integrity = integridade."
     },
     {
      "q": "A **conflict of interest** is a situation where…",
      "options": [
       "two teams disagree",
-      "your private interest could improperly influence your professional duty",
       "a deadline is missed",
+      "your private interest could improperly influence your professional duty",
       "a client complains"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Conflict of interest = conflito de interesses."
     },
     {
      "q": "Choose the correct word: \"You must **___** any gift over the limit.\"",
-     "options": ["disclose", "accept", "hide", "sign"],
+     "options": [
+      "disclose",
+      "hide",
+      "sign",
+      "accept"
+     ],
      "answer": 0,
      "why": "To disclose = divulgar, declarar."
     },
     {
      "q": "The **code of conduct** is…",
      "options": [
+      "the contract",
       "the price list",
       "the set of rules on how to behave professionally",
-      "the org chart",
-      "the contract"
+      "the org chart"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Code of conduct = código de conduta."
     },
     {
      "q": "Choose the correct term: \"Mishandling this could create serious **___** for the firm.\"",
-     "options": ["reputational risk", "goodwill", "benchmark", "bandwidth"],
-     "answer": 0,
+     "options": [
+      "goodwill",
+      "benchmark",
+      "reputational risk",
+      "bandwidth"
+     ],
+     "answer": 2,
      "why": "Reputational risk = risco reputacional."
     }
    ]
@@ -181,19 +191,24 @@
    "items": [
     {
      "q": "\"If something feels off, **speak up**.\" To speak up means to…",
-     "options": ["stay silent", "raise a concern openly", "leave", "agree"],
+     "options": [
+      "agree",
+      "raise a concern openly",
+      "stay silent",
+      "leave"
+     ],
      "answer": 1,
      "why": "Speak up = manifestar-se, levantar a questão."
     },
     {
      "q": "\"We must **draw the line** at accepting large gifts.\" To draw the line means to…",
      "options": [
-      "set a limit on what is acceptable",
       "sign a document",
       "start negotiating",
+      "set a limit on what is acceptable",
       "ignore the rule"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Draw the line = estabelecer o limite."
     },
     {
@@ -209,19 +224,24 @@
     },
     {
      "q": "\"I won't **sign off on** something I haven't read.\" To sign off on means to…",
-     "options": ["formally approve", "criticise", "postpone", "forward"],
-     "answer": 0,
+     "options": [
+      "forward",
+      "postpone",
+      "criticise",
+      "formally approve"
+     ],
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente."
     },
     {
      "q": "\"Let's **play it by the book** on this one.\" To play it by the book means to…",
      "options": [
+      "delay",
       "follow the rules exactly",
-      "improvise",
       "cut corners",
-      "delay"
+      "improvise"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Play it by the book = seguir as regras à risca."
     }
    ]

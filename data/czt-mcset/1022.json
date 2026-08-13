@@ -11,8 +11,8 @@
      "q": "What is meeting people compared to in the text?",
      "options": [
       "Opening a door",
-      "Closing a book",
       "Writing an email",
+      "Closing a book",
       "Making coffee"
      ],
      "answer": 0,
@@ -21,12 +21,12 @@
     {
      "q": "When do we use \"this is\"?",
      "options": [
-      "For someone near us",
-      "For someone far away",
       "For a client only",
+      "For someone far away",
+      "For someone near us",
       "For a boss only"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"We use this is for someone near us.\""
     },
     {
@@ -43,21 +43,21 @@
     {
      "q": "The text suggests that these words are…",
      "options": [
-      "small but very useful",
-      "hard and long",
       "only for the boss",
-      "not important at work"
+      "not important at work",
+      "small but very useful",
+      "hard and long"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"The words are small, but they help a lot.\""
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
       "Simple words are not useful at work.",
-      "Introductions matter in meetings.",
       "We should take our time.",
-      "Every sentence counts."
+      "Every sentence counts.",
+      "Introductions matter in meetings."
      ],
      "answer": 0,
      "why": "Inferência: o texto diz o contrário — palavras simples ajudam muito."
@@ -77,45 +77,45 @@
     {
      "q": "Who is Ana?",
      "options": [
-      "Sophie's friend and a new colleague",
       "The client",
       "The boss",
-      "A visitor from HR"
+      "A visitor from HR",
+      "Sophie's friend and a new colleague"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"This is Ana. Ana is my friend and a new colleague.\""
     },
     {
      "q": "Who is Mr. Silva?",
      "options": [
-      "The client",
-      "A new colleague",
       "Sophie's boss",
+      "A new colleague",
+      "The client",
       "The coffee man"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"That is Mr. Silva. He is our client.\""
     },
     {
      "q": "Where is the new person's chair?",
      "options": [
+      "At the client's desk",
       "Next to the window",
-      "In the kitchen",
       "In the meeting room",
-      "At the client's desk"
+      "In the kitchen"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"That is your chair, next to the window.\""
     },
     {
      "q": "How does Sophie feel about the new person? (inference)",
      "options": [
-      "Welcoming and kind",
       "Angry and tired",
-      "Bored and cold",
-      "Worried and sad"
+      "Worried and sad",
+      "Welcoming and kind",
+      "Bored and cold"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: ela diz \"Welcome\", \"Do not worry\" e oferece ajuda."
     },
     {
@@ -141,8 +141,8 @@
      "options": [
       "a human being",
       "a room",
-      "a machine",
-      "a chair"
+      "a chair",
+      "a machine"
      ],
      "answer": 0,
      "why": "Person = pessoa, um ser humano."
@@ -150,23 +150,23 @@
     {
      "q": "Choose the correct word: \"This is my <strong>boss</strong>. She is the ___ of our team.\"",
      "options": [
-      "leader",
-      "door",
       "coffee",
-      "window"
+      "door",
+      "window",
+      "leader"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Boss = chefe, quem lidera a equipe."
     },
     {
      "q": "Choose the correct word: \"That is our ___. He buys from our company.\"",
      "options": [
+      "desk",
       "client",
-      "friend",
       "kitchen",
-      "desk"
+      "friend"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Client = cliente, quem compra da empresa."
     },
     {
@@ -174,8 +174,8 @@
      "options": [
       "a person you like and know well",
       "a company you buy from",
-      "your manager at work",
-      "a meeting room"
+      "a meeting room",
+      "your manager at work"
      ],
      "answer": 0,
      "why": "Friend = amigo(a), alguém de quem você gosta."
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct word: \"A ___ is here today. Please open the door for her.\"",
      "options": [
-      "visitor",
       "chair",
       "coffee machine",
-      "desk"
+      "desk",
+      "visitor"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Visitor = visitante, alguém que vem ao escritório."
     }
    ]
@@ -201,31 +201,31 @@
     {
      "q": "\"<strong>Come in</strong>, please.\" This means…",
      "options": [
-      "Enter the room",
       "Go away",
-      "Sit down outside",
-      "Close the door"
+      "Enter the room",
+      "Close the door",
+      "Sit down outside"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Come in = entre, por favor."
     },
     {
      "q": "\"<strong>Say hello to</strong> Ana!\" This means…",
      "options": [
+      "Call Ana on the phone",
       "Greet Ana",
       "Say goodbye to Ana",
-      "Call Ana on the phone",
       "Write to Ana"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Say hello to = cumprimentar, dar um oi."
     },
     {
      "q": "\"I want you to <strong>meet</strong> the team.\" To <strong>meet</strong> here means…",
      "options": [
       "to be introduced to them",
-      "to fight with them",
       "to pay them",
+      "to fight with them",
       "to email them"
      ],
      "answer": 0,
@@ -236,8 +236,8 @@
      "options": [
       "Do not hurry",
       "Be very fast",
-      "Go home now",
-      "Stop working"
+      "Stop working",
+      "Go home now"
      ],
      "answer": 0,
      "why": "Take your time = sem pressa, com calma."
@@ -245,12 +245,12 @@
     {
      "q": "\"If you need help, just <strong>ask me</strong>.\" This means…",
      "options": [
+      "Send a letter",
       "Tell me and I will help you",
-      "Do it alone",
       "Wait for the boss",
-      "Send a letter"
+      "Do it alone"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Ask me = peça a mim, estou aqui para ajudar."
     }
    ]

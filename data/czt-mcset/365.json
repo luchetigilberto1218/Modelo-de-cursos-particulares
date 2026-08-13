@@ -10,30 +10,30 @@
     {
      "q": "When does cash accounting record a transaction?",
      "options": [
-      "The day the money moves",
       "The day the sale is agreed",
-      "At the end of the year",
-      "When the customer signs the contract"
+      "The day the money moves",
+      "When the customer signs the contract",
+      "At the end of the year"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Cash accounting records it the day the money actually moves.\""
     },
     {
      "q": "Where is the December sale in accrual accounting?",
      "options": [
-      "In the January accounts",
       "In the December accounts",
       "In no accounts",
-      "In next year's accounts"
+      "In next year's accounts",
+      "In the January accounts"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"the December sale is in the December accounts, even if the payment arrives later.\""
     },
     {
      "q": "Why do most real companies use accrual accounting?",
      "options": [
-      "It is cheaper",
       "It is faster to learn",
+      "It is cheaper",
       "It shows the true shape of the business month by month",
       "It needs no software"
      ],
@@ -44,8 +44,8 @@
      "q": "The text suggests that cash accounting can…",
      "options": [
       "hide a real sale for a month",
-      "count a sale twice",
       "show more profit than accrual",
+      "count a sale twice",
       "record payments too early"
      ],
      "answer": 0,
@@ -54,12 +54,12 @@
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
-      "Accrual gives a clearer monthly picture",
-      "Cash accounting is simple",
       "Cash accounting always shows the true shape of the business",
-      "A late payment can hide a sale in cash accounting"
+      "A late payment can hide a sale in cash accounting",
+      "Cash accounting is simple",
+      "Accrual gives a clearer monthly picture"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: o texto diz que o caixa esconde coisas; só o accrual mostra a forma real."
     }
    ]
@@ -77,34 +77,34 @@
     {
      "q": "Why is the sale already in the December report?",
      "options": [
+      "The manager moved it there",
       "The customer paid in December",
       "The sale happened in December and they use accrual accounting",
-      "It was a mistake",
-      "The manager moved it there"
+      "It was a mistake"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"We use accrual accounting… the sale happened in December, so it goes in December.\""
     },
     {
      "q": "When will the customer pay?",
      "options": [
-      "In December",
-      "In January",
+      "At the end of the year",
       "Never",
-      "At the end of the year"
+      "In December",
+      "In January"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"They will pay in January.\""
     },
     {
      "q": "What would happen with cash accounting?",
      "options": [
-      "The sale would be invisible until January",
       "The sale would appear twice",
-      "The sale would stay in December",
-      "The sale would be cancelled"
+      "The sale would be invisible until January",
+      "The sale would be cancelled",
+      "The sale would stay in December"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The sale would be invisible until January.\""
     },
     {
@@ -112,8 +112,8 @@
      "options": [
       "look weak and January look strong",
       "look strong and January look weak",
-      "look the same as January",
-      "show no sales at all for the year"
+      "show no sales at all for the year",
+      "look the same as January"
      ],
      "answer": 0,
      "why": "Inferência: sem a venda, dezembro fica fraco e janeiro fica muito forte."
@@ -139,56 +139,56 @@
     {
      "q": "\"We <strong>record</strong> the sale in December.\" To record means to…",
      "options": [
+      "hide it",
       "write it in the accounts",
       "cancel it",
-      "hide it",
       "pay it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "To record = registrar, anotar nas contas."
     },
     {
      "q": "Choose the correct word: \"With cash accounting, we wait until the money ___.\"",
      "options": [
-      "moves",
-      "stops",
+      "hides",
       "grows",
-      "hides"
+      "moves",
+      "stops"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"the day the money actually moves\" — o caixa espera o dinheiro se mover."
     },
     {
      "q": "\"The December sale is <strong>invisible</strong> in the cash report.\" Invisible means…",
      "options": [
+      "counted twice",
       "you cannot see it",
       "very large",
-      "already paid",
-      "counted twice"
+      "already paid"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Invisible = invisível, não aparece no relatório."
     },
     {
      "q": "Choose the correct word: \"Accrual shows the ___ of the business, month by month.\"",
      "options": [
-      "true shape",
       "old name",
-      "first day",
-      "email address"
+      "true shape",
+      "email address",
+      "first day"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"it shows the true shape of the business\" — a forma real do negócio."
     },
     {
      "q": "\"<strong>Accrual accounting</strong> records the sale when it happens.\" This means it records the sale…",
      "options": [
-      "at the moment the sale happens, not when money moves",
-      "only when the money arrives",
       "once a year",
-      "never"
+      "only when the money arrives",
+      "never",
+      "at the moment the sale happens, not when money moves"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Accrual (competência) registra pelo fato gerador, não pelo caixa."
     }
    ]
@@ -202,8 +202,8 @@
      "q": "\"The manager has to <strong>sign off on</strong> the December report.\" To sign off on means to…",
      "options": [
       "approve it",
-      "print it",
       "delete it",
+      "print it",
       "read it slowly"
      ],
      "answer": 0,
@@ -212,23 +212,23 @@
     {
      "q": "\"We will <strong>roll out</strong> the new method next month.\" To roll out means to…",
      "options": [
+      "test it once",
       "start using it",
       "stop it",
-      "keep it secret",
-      "test it once"
+      "keep it secret"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Roll out = colocar em uso, implementar."
     },
     {
      "q": "\"The customer is late, so the payment is <strong>overdue</strong>.\" Overdue means…",
      "options": [
-      "not paid on time",
-      "paid early",
       "very small",
-      "cancelled"
+      "not paid on time",
+      "cancelled",
+      "paid early"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Overdue = atrasado, passou do prazo."
     },
     {
@@ -245,12 +245,12 @@
     {
      "q": "\"Please <strong>write down</strong> the date of each sale.\" To write down means to…",
      "options": [
-      "note it on paper or in a system",
-      "say it out loud",
       "forget it",
+      "say it out loud",
+      "note it on paper or in a system",
       "change it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Write down = anotar, registrar por escrito."
     }
    ]

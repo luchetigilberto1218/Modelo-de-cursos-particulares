@@ -10,56 +10,56 @@
     {
      "q": "According to the text, what is the task of a compliance programme?",
      "options": [
-      "To guarantee that no mistakes will ever occur",
       "To demonstrate that the organisation takes the problem as seriously as regulators expect",
+      "To keep every incident confidential inside the company",
       "To screen only at the moment of payment execution",
-      "To keep every incident confidential inside the company"
+      "To guarantee that no mistakes will ever occur"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"not to promise no mistakes, but to demonstrate that the organisation takes the problem as seriously as the regulators expect\"."
     },
     {
      "q": "What are the three pillars named in the text?",
      "options": [
-      "Screening, reporting and auditing",
       "Coverage, escalation and culture",
       "Onboarding, contracting and shipping",
-      "Regulation, jurisdiction and enforcement"
+      "Regulation, jurisdiction and enforcement",
+      "Screening, reporting and auditing"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The three pillars are coverage, escalation and culture.\""
     },
     {
      "q": "What does escalation mean, according to the text?",
      "options": [
+      "Automated screening at every relevant moment",
       "A gradual increase in the number of names screened",
       "A clear path for borderline cases to reach a specialist within hours",
-      "The public disclosure of every compliance breach",
-      "Automated screening at every relevant moment"
+      "The public disclosure of every compliance breach"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Escalation means a clear path for borderline cases to reach a specialist within hours, not weeks.\""
     },
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
-      "Coverage catches most sanctions incidents.",
       "A strong screening system alone is enough to prevent the worst outcomes.",
       "Compliance officers should be treated as strategic partners.",
-      "New sanctioned names appear continuously, so screening is never finished."
+      "New sanctioned names appear continuously, so screening is never finished.",
+      "Coverage catches most sanctions incidents."
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto afirma que é a camada de cultura, não a de cobertura, que evita os piores desfechos."
     },
     {
      "q": "What does the contrast between a company that \"pretends to be clean\" and one that \"treats compliance as a genuine discipline\" suggest?",
      "options": [
-      "Honesty about risk is safer than a flawless public image",
+      "Screening technology matters more than internal honesty",
       "Compliance is mostly a matter of good public relations",
       "Only large companies are ever publicly embarrassed",
-      "Screening technology matters more than internal honesty"
+      "Honesty about risk is safer than a flawless public image"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: o autor valoriza a disciplina real e o reconhecimento do problema acima da aparência de perfeição."
     }
    ]
@@ -77,12 +77,12 @@
     {
      "q": "According to Charlotte, what did the near-miss actually reveal?",
      "options": [
-      "The screening tool failed to flag the counterparty",
       "The coverage held, but the escalation broke down",
       "The subsidiary had no compliance programme at all",
+      "The screening tool failed to flag the counterparty",
       "The regulators had changed the rules overnight"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"although our coverage held, our escalation didn't\" — a ferramenta sinalizou; o alerta ficou parado."
     },
     {
@@ -90,8 +90,8 @@
      "options": [
       "It was deleted by mistake",
       "It sat in a shared inbox for eleven days before anyone looked at it",
-      "The specialist rejected it incorrectly",
-      "The payment had already been sent weeks earlier"
+      "The payment had already been sent weeks earlier",
+      "The specialist rejected it incorrectly"
      ],
      "answer": 1,
      "why": "\"The alert sat in a shared inbox for eleven days before anyone looked at it.\""
@@ -100,9 +100,9 @@
      "q": "What is Charlotte's first proposed change?",
      "options": [
       "Route borderline cases straight to a named specialist within hours",
-      "Replace the screening software entirely",
+      "Reduce the number of alerts the system generates",
       "Move all compliance work to the subsidiary",
-      "Reduce the number of alerts the system generates"
+      "Replace the screening software entirely"
      ],
      "answer": 0,
      "why": "\"borderline cases route straight to a named specialist within hours — no shared inboxes\"."
@@ -111,20 +111,20 @@
      "q": "What does Charlotte mean by \"I'd rather field a hundred false alarms than have one person stay quiet\"?",
      "options": [
       "False alarms are cheaper than real incidents",
-      "She prefers over-reporting to silence, even if most concerns turn out to be nothing",
       "The team should stop raising concerns unless they are certain",
+      "She prefers over-reporting to silence, even if most concerns turn out to be nothing",
       "She wants to reduce the total number of alerts"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: ela aceita muitos alarmes falsos como preço para que ninguém deixe de falar."
     },
     {
      "q": "What does Charlotte imply about a team that fears compliance?",
      "options": [
-      "It will report problems faster to avoid blame",
+      "It performs better under pressure",
       "It will hope the problem disappears on its own, which it never does",
-      "It will always escalate borderline cases correctly",
-      "It performs better under pressure"
+      "It will report problems faster to avoid blame",
+      "It will always escalate borderline cases correctly"
      ],
      "answer": 1,
      "why": "Inferência: \"A team that fears it will hope the problem quietly disappears — and it never does.\""
@@ -141,8 +141,8 @@
      "options": [
       "penalties aimed at third parties who deal with a sanctioned entity",
       "a milder, optional set of rules for small firms",
-      "sanctions that apply only after a first warning",
-      "restrictions limited to a single jurisdiction"
+      "restrictions limited to a single jurisdiction",
+      "sanctions that apply only after a first warning"
      ],
      "answer": 0,
      "why": "Sanções secundárias atingem terceiros que negociam com a parte sancionada — alcançam além das fronteiras."
@@ -150,45 +150,45 @@
     {
      "q": "Choose the correct word: \"Compliance rests on three ___: coverage, escalation and culture.\"",
      "options": [
-      "pillars",
       "gatekeepers",
+      "inboxes",
       "shipments",
-      "inboxes"
+      "pillars"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Pillar = pilar, cada um dos sustentáculos do programa."
     },
     {
      "q": "\"Screening at <strong>onboarding</strong> stops the riskiest counterparties before any money moves.\" Onboarding here means…",
      "options": [
-      "the process of taking on a new counterparty or client",
-      "the final payment of a contract",
       "the dispatch of a shipment",
-      "an internal staff training session"
+      "the final payment of a contract",
+      "an internal staff training session",
+      "the process of taking on a new counterparty or client"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Onboarding = integração/entrada de uma nova contraparte ao sistema."
     },
     {
      "q": "Choose the correct word: \"The case was ___ — not clearly permitted, not clearly forbidden — so it needed a specialist's judgement.\"",
      "options": [
-      "borderline",
-      "frontline",
       "secondary",
-      "automated"
+      "borderline",
+      "automated",
+      "frontline"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Borderline = limítrofe, um caso na zona cinzenta que exige escalonamento."
     },
     {
      "q": "\"Treating officers as <strong>gatekeepers</strong> makes teams route around them.\" A gatekeeper is…",
      "options": [
+      "a shared inbox for alerts",
       "someone who controls access or approval to something",
-      "a junior analyst on the frontline",
       "an external regulator",
-      "a shared inbox for alerts"
+      "a junior analyst on the frontline"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Gatekeeper = guardião que controla passagem/aprovação; a lição defende vê-los como parceiros, não obstáculos."
     }
    ]
@@ -201,32 +201,32 @@
     {
      "q": "\"Legal still has to <strong>sign off on</strong> the new escalation policy.\" To sign off on means to…",
      "options": [
-      "formally approve",
       "quietly ignore",
       "postpone indefinitely",
-      "leak to the press"
+      "leak to the press",
+      "formally approve"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We'll <strong>roll out</strong> the new screening rules subsidiary by subsidiary.\" To roll out means to…",
      "options": [
+      "outsource entirely",
       "cancel in secret",
       "implement in stages",
-      "audit retroactively",
-      "outsource entirely"
+      "audit retroactively"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Roll out = implementar de forma progressiva, unidade a unidade."
     },
     {
      "q": "\"Two country heads <strong>pushed back on</strong> the tighter payment controls.\" They…",
      "options": [
-      "approved them without comment",
+      "rewrote them overnight",
       "resisted or objected to them",
-      "forgot to read them",
-      "rewrote them overnight"
+      "approved them without comment",
+      "forgot to read them"
      ],
      "answer": 1,
      "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
@@ -236,8 +236,8 @@
      "options": [
       "failed to carry it out to completion",
       "escalated everything at once",
-      "delegated it to the regulator",
-      "documented it too thoroughly"
+      "documented it too thoroughly",
+      "delegated it to the regulator"
      ],
      "answer": 0,
      "why": "Follow through = levar até o fim o que foi combinado."
@@ -246,9 +246,9 @@
      "q": "\"A named owner and a two-hour SLA will actually <strong>move the needle</strong> on escalation speed.\" This means it will…",
      "options": [
       "make a noticeable difference",
-      "raise legal costs",
       "confuse the frontline",
-      "take years to measure"
+      "take years to measure",
+      "raise legal costs"
      ],
      "answer": 0,
      "why": "Move the needle = mexer o ponteiro, produzir diferença perceptível."

@@ -10,21 +10,21 @@
     {
      "q": "What time does James finish work?",
      "options": [
-      "At 6 pm",
       "At 9 am",
+      "At 6 pm",
       "At 10 am",
       "At noon"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"...and finishes at 6 pm.\" Ele termina às 6 da tarde."
     },
     {
      "q": "What does James do in the morning?",
      "options": [
-      "He goes home",
+      "He sleeps at the desk",
       "He checks his emails",
       "He writes a book",
-      "He sleeps at the desk"
+      "He goes home"
      ],
      "answer": 1,
      "why": "\"I check emails every morning.\" De manhã ele checa os e-mails."
@@ -32,34 +32,34 @@
     {
      "q": "Which grammar does the lesson use today?",
      "options": [
+      "The Present Perfect",
       "The Past Simple",
-      "The Present Simple",
       "The Future",
-      "The Present Perfect"
+      "The Present Simple"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Today we use the Present Simple to talk about this rhythm.\""
     },
     {
      "q": "The text says \"every day has a rhythm\". This suggests that…",
      "options": [
-      "every day is very different",
-      "the days follow a similar pattern",
+      "the desk is closed",
       "James never works",
-      "the desk is closed"
+      "the days follow a similar pattern",
+      "every day is very different"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"rhythm\" (ritmo) mostra que os dias seguem um padrão parecido."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "long sentences are the best way to learn",
       "small, simple sentences can help a lot",
+      "long sentences are the best way to learn",
       "practice is not important",
       "routine is bad for learning"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto diz que as frases são simples \"but they help a lot\" e que a rotina é a melhor professora."
     }
    ]
@@ -77,10 +77,10 @@
     {
      "q": "Where does James work?",
      "options": [
-      "At a school",
-      "At the trading desk",
       "At a coffee shop",
-      "At home"
+      "At the trading desk",
+      "At home",
+      "At a school"
      ],
      "answer": 1,
      "why": "\"I work at Czarnikow, at the trading desk.\""
@@ -90,8 +90,8 @@
      "options": [
       "He calls clients",
       "He checks his emails",
-      "He writes reports",
-      "He has a meeting"
+      "He has a meeting",
+      "He writes reports"
      ],
      "answer": 1,
      "why": "\"First, I check my emails.\" Primeiro ele checa os e-mails."
@@ -99,34 +99,34 @@
     {
      "q": "When does James write his reports?",
      "options": [
-      "On Monday",
-      "On Friday",
       "Every morning",
-      "At nine"
+      "At nine",
+      "On Friday",
+      "On Monday"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I write my reports on Friday.\""
     },
     {
      "q": "James says the meeting is short and the team helps each other. This suggests that…",
      "options": [
-      "he does not like his team",
-      "he enjoys working with his team",
       "the team never talks",
-      "the meetings are very long"
+      "the meetings are very long",
+      "he enjoys working with his team",
+      "he does not like his team"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"My team is friendly, and we help each other\" mostra que ele gosta do time."
     },
     {
      "q": "Why does James say the routine helps him?",
      "options": [
-      "Because it makes work harder",
-      "Because it helps his work and his English",
       "Because he wants to change jobs",
-      "Because he does not like coffee"
+      "Because he does not like coffee",
+      "Because it makes work harder",
+      "Because it helps his work and his English"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"The routine helps me, and it helps my English too.\""
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"I <strong>start</strong> work at nine.\" To start means to…",
      "options": [
-      "begin",
       "stop",
-      "sleep",
-      "eat"
+      "eat",
+      "begin",
+      "sleep"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Start = começar. Ele começa o trabalho às nove."
     },
     {
      "q": "Choose the correct word: \"We ___ in a big team every day.\"",
      "options": [
-      "work",
-      "finish",
       "call",
-      "start"
+      "start",
+      "work",
+      "finish"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Work = trabalhar. \"We work in a big team.\""
     },
     {
      "q": "\"You <strong>finish</strong> at six.\" To finish means to…",
      "options": [
-      "begin the day",
-      "end or stop",
+      "read an email",
       "call a client",
-      "read an email"
+      "end or stop",
+      "begin the day"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Finish = terminar. Você termina às seis."
     },
     {
      "q": "Choose the correct word: \"I ___ my emails every morning.\"",
      "options": [
-      "check",
-      "finish",
+      "drink",
       "start",
-      "drink"
+      "check",
+      "finish"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Check = checar. \"I check emails every morning.\""
     },
     {
      "q": "\"I <strong>call</strong> clients every day.\" To call means to…",
      "options": [
       "write a report",
-      "phone someone",
       "close the office",
+      "phone someone",
       "have lunch"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Call = ligar. Ele liga (telefona) para os clientes todo dia."
     }
    ]
@@ -201,21 +201,21 @@
     {
      "q": "\"I <strong>start work</strong> at nine.\" To start work means to…",
      "options": [
-      "begin your job for the day",
       "go home",
       "take a holiday",
+      "begin your job for the day",
       "close the computer"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Start work = começar a trabalhar (o dia)."
     },
     {
      "q": "\"Please <strong>call me back</strong> later.\" To call someone back means to…",
      "options": [
       "phone them again",
+      "forget them",
       "send an email",
-      "visit them",
-      "forget them"
+      "visit them"
      ],
      "answer": 0,
      "why": "Call back = ligar de volta, telefonar novamente."
@@ -223,34 +223,34 @@
     {
      "q": "\"I <strong>check in</strong> with my team on Monday.\" To check in means to…",
      "options": [
-      "talk quickly to see how things are",
       "leave the office",
       "start a long project",
-      "write a report"
+      "write a report",
+      "talk quickly to see how things are"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Check in = dar um alô rápido, ver como estão as coisas."
     },
     {
      "q": "\"Let's <strong>wrap up</strong> the meeting now.\" To wrap up means to…",
      "options": [
-      "finish or end it",
-      "start it again",
       "make it longer",
-      "cancel it"
+      "cancel it",
+      "finish or end it",
+      "start it again"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Wrap up = terminar, encerrar."
     },
     {
      "q": "\"I <strong>log off</strong> at six and go home.\" To log off means to…",
      "options": [
-      "sign out of the computer",
+      "drink coffee",
       "call a client",
-      "start a meeting",
-      "drink coffee"
+      "sign out of the computer",
+      "start a meeting"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Log off = desconectar, sair do sistema/computador."
     }
    ]

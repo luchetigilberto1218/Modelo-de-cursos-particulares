@@ -8,12 +8,12 @@
     {
      "q": "What does the text say most professionals lack?",
      "options": [
-      "Time to write emails",
       "Training in how to write emails well",
+      "Time to write emails",
       "Access to email tools",
       "A reason to write emails"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"very few have ever been trained in how to write them well.\""
     },
     {
@@ -21,33 +21,43 @@
      "options": [
       "Greet, apologise and thank",
       "Say what it is about, what is expected, and by when",
-      "Copy everyone, attach a file and sign off",
-      "Ask, wait and follow up"
+      "Ask, wait and follow up",
+      "Copy everyone, attach a file and sign off"
      ],
      "answer": 1,
      "why": "\"it tells the reader what it is about, what is expected of them, and by when.\""
     },
     {
      "q": "According to the text, the first line should answer…",
-     "options": ["\"Who sent this?\"", "\"Why am I reading this?\"", "\"When is it due?\"", "\"Where do I reply?\""],
+     "options": [
+      "\"Where do I reply?\"",
+      "\"Why am I reading this?\"",
+      "\"When is it due?\"",
+      "\"Who sent this?\""
+     ],
      "answer": 1,
      "why": "\"The first line should answer the question 'Why am I reading this?'\""
     },
     {
      "q": "The last line should answer…",
-     "options": ["\"What do I do now?\"", "\"Who else was copied?\"", "\"How long is this?\"", "\"Why me?\""],
+     "options": [
+      "\"What do I do now?\"",
+      "\"How long is this?\"",
+      "\"Why me?\"",
+      "\"Who else was copied?\""
+     ],
      "answer": 0,
      "why": "\"The last line should answer the question 'What do I do now?'\""
     },
     {
      "q": "What is the author's overall advice when unsure about an email?",
      "options": [
+      "Wait a day before sending",
       "Add more detail to be safe",
       "Shorter, calmer and clearer wins",
-      "Copy your manager",
-      "Wait a day before sending"
+      "Copy your manager"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"When in doubt, shorter, calmer and clearer always wins.\""
     }
    ]
@@ -61,17 +71,22 @@
    "items": [
     {
      "q": "What does Charlotte say about the content of the draft?",
-     "options": ["It is wrong", "It is fine, just buried", "It is too short", "It is off-topic"],
-     "answer": 1,
+     "options": [
+      "It is off-topic",
+      "It is wrong",
+      "It is too short",
+      "It is fine, just buried"
+     ],
+     "answer": 3,
      "why": "\"the content is fine — it's just buried.\""
     },
     {
      "q": "Why did she rewrite the subject line?",
      "options": [
-      "It was too long",
-      "So the client knows the topic and that action is expected before opening",
       "To make it more formal",
-      "To add the client's name"
+      "So the client knows the topic and that action is expected before opening",
+      "To add the client's name",
+      "It was too long"
      ],
      "answer": 1,
      "why": "\"They know what it's about and that something is expected of them before they even open it.\""
@@ -80,31 +95,31 @@
      "q": "What did she do with the main point of the first paragraph?",
      "options": [
       "Deleted it",
-      "Moved it up, ahead of the background",
       "Turned it into a question",
+      "Moved it up, ahead of the background",
       "Moved it to the subject line"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I've moved the point up… Background can come after.\""
     },
     {
      "q": "Why did she change \"you failed to send the spec\"?",
      "options": [
-      "It was inaccurate",
       "To keep the same fact but a better tone",
-      "Because the spec had arrived",
-      "To make it shorter"
+      "To make it shorter",
+      "It was inaccurate",
+      "Because the spec had arrived"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"'you failed to send the spec' became 'we haven't received the spec yet'. Same fact, better tone.\""
     },
     {
      "q": "What is Charlotte's reason for putting the request on its own line at the end?",
      "options": [
-      "To make the email longer",
-      "So there is no way to miss what to do next",
       "To match the subject line",
-      "To copy more people"
+      "So there is no way to miss what to do next",
+      "To copy more people",
+      "To make the email longer"
      ],
      "answer": 1,
      "why": "\"so there's no way to miss what to do next.\""
@@ -116,36 +131,56 @@
    "items": [
     {
      "q": "\"Most readers **skim** a long email rather than read every word.\" To skim means to…",
-     "options": ["read quickly for the main points", "reply immediately", "delete without reading", "forward it"],
-     "answer": 0,
+     "options": [
+      "forward it",
+      "delete without reading",
+      "reply immediately",
+      "read quickly for the main points"
+     ],
+     "answer": 3,
      "why": "To skim = ler por cima, buscando o essencial."
     },
     {
      "q": "The **subject line** is…",
      "options": [
-      "the signature at the bottom",
       "the short heading that tells the reader what the email is about",
-      "the list of recipients",
-      "the first paragraph"
+      "the first paragraph",
+      "the signature at the bottom",
+      "the list of recipients"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Subject line = linha de assunto."
     },
     {
      "q": "Choose the correct word: \"End with a clear ___ so the reader knows exactly what to do.\"",
-     "options": ["register", "call to action", "reply-all", "subject line"],
-     "answer": 1,
+     "options": [
+      "call to action",
+      "register",
+      "subject line",
+      "reply-all"
+     ],
+     "answer": 0,
      "why": "Call to action = chamada para ação: o que o leitor deve fazer."
     },
     {
      "q": "\"Please keep the message **concise**.\" Concise means…",
-     "options": ["polite", "short and clear", "formal", "detailed"],
-     "answer": 1,
+     "options": [
+      "short and clear",
+      "polite",
+      "formal",
+      "detailed"
+     ],
+     "answer": 0,
      "why": "Concise = conciso, curto e claro."
     },
     {
      "q": "Choose the correct term: \"I'll ___ next week to see if you need anything else.\"",
-     "options": ["circle back", "skim", "reply-all", "BCC"],
+     "options": [
+      "circle back",
+      "BCC",
+      "skim",
+      "reply-all"
+     ],
      "answer": 0,
      "why": "Circle back = retomar o contato mais tarde."
     }
@@ -156,28 +191,43 @@
    "items": [
     {
      "q": "\"I'll **follow up** on this by Friday.\" To follow up means to…",
-     "options": ["take further action later", "close the thread", "ignore it", "reply-all"],
-     "answer": 0,
+     "options": [
+      "close the thread",
+      "reply-all",
+      "take further action later",
+      "ignore it"
+     ],
+     "answer": 2,
      "why": "Follow up = dar sequência."
     },
     {
      "q": "\"Let me **flag** one risk before we send.\" To flag something means to…",
-     "options": ["approve it", "point it out for attention", "delete it", "delay it"],
-     "answer": 1,
+     "options": [
+      "point it out for attention",
+      "approve it",
+      "delete it",
+      "delay it"
+     ],
+     "answer": 0,
      "why": "To flag = sinalizar, chamar atenção para um ponto."
     },
     {
      "q": "\"Please **loop in** legal on this thread.\" To loop someone in means to…",
-     "options": ["remove them", "include them in the conversation", "reply only to them", "forward and delete"],
-     "answer": 1,
+     "options": [
+      "remove them",
+      "forward and delete",
+      "reply only to them",
+      "include them in the conversation"
+     ],
+     "answer": 3,
      "why": "Loop in = incluir alguém na conversa (geralmente em cópia)."
     },
     {
      "q": "\"Can you **CC** me on the reply?\" To CC someone means to…",
      "options": [
-      "hide their address from others",
-      "send them a copy visible to all recipients",
       "reply to them privately",
+      "send them a copy visible to all recipients",
+      "hide their address from others",
       "block them"
      ],
      "answer": 1,
@@ -186,12 +236,12 @@
     {
      "q": "\"Let's not **reply-all** — only the two of us need this.\" Reply-all means to…",
      "options": [
-      "answer only the sender",
-      "answer everyone on the thread",
       "delete the thread",
-      "archive the message"
+      "archive the message",
+      "answer everyone on the thread",
+      "answer only the sender"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Reply-all = responder a todos; aqui, evitável porque só duas pessoas precisam."
     }
    ]

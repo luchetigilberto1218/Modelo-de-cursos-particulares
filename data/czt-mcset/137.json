@@ -8,10 +8,10 @@
     {
      "q": "What is working capital?",
      "options": [
-      "The company's profit",
+      "A type of tax",
       "The money a company needs to run its daily business",
-      "A bank loan",
-      "A type of tax"
+      "The company's profit",
+      "A bank loan"
      ],
      "answer": 1,
      "why": "\"Working capital is the money a company needs to run its daily business.\""
@@ -19,39 +19,44 @@
     {
      "q": "What does working capital pay for?",
      "options": [
-      "Only the ship",
-      "Salaries, materials and bills while waiting to get paid",
       "Only the duty",
-      "The customer"
+      "The customer",
+      "Only the ship",
+      "Salaries, materials and bills while waiting to get paid"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"It pays the salaries, buys the materials and covers the bills while the company waits to get paid.\""
     },
     {
      "q": "Working capital is the gap between…",
      "options": [
-      "profit and loss",
       "money coming in and money going out",
-      "import and export",
-      "buyer and seller"
+      "buyer and seller",
+      "profit and loss",
+      "import and export"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"money coming in from customers, and money going out… Working capital is the gap between the two.\""
     },
     {
      "q": "What can managing working capital be the difference between?",
      "options": [
-      "A big and a small ship",
       "A healthy company and a stressed one",
-      "Import and export",
-      "Two currencies"
+      "A big and a small ship",
+      "Two currencies",
+      "Import and export"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"the difference between a healthy company and a stressed one.\""
     },
     {
      "q": "How often do good trade companies watch their working capital?",
-     "options": ["Once a year", "Every week", "Never", "Once a month"],
+     "options": [
+      "Once a month",
+      "Every week",
+      "Once a year",
+      "Never"
+     ],
      "answer": 1,
      "why": "\"Good trade companies watch their working capital every week.\""
     }
@@ -67,21 +72,21 @@
     {
      "q": "What does profit tell you?",
      "options": [
+      "The exchange rate",
       "If there's money in the bank today",
       "If the business is doing well over time",
-      "The exchange rate",
       "The shipping cost"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Profit tells you if the business is doing well over time.\""
     },
     {
      "q": "What can happen to a company that is profitable on paper?",
      "options": [
-      "Nothing",
+      "It pays no tax",
       "It can still run out of cash",
-      "It always has cash",
-      "It pays no tax"
+      "Nothing",
+      "It always has cash"
      ],
      "answer": 1,
      "why": "\"A company can be profitable on paper and still run out of cash.\""
@@ -89,34 +94,34 @@
     {
      "q": "Why is there a gap?",
      "options": [
-      "Money comes in slowly (60 days) but goes out fast (salaries, suppliers, tax)",
       "Customers pay first",
+      "Money comes in slowly (60 days) but goes out fast (salaries, suppliers, tax)",
       "There is no tax",
       "Suppliers pay the company"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"money is coming in from customers, but slowly… money is going out fast — salaries every month, suppliers, tax.\""
     },
     {
      "q": "What does the team ask every week?",
      "options": [
-      "What's the profit for the year?",
       "What's coming in, what's going out, and is there enough in between?",
+      "What's the profit for the year?",
       "What's the exchange rate?",
       "What's the ship's name?"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"what's coming in, what's going out, and is there enough in between?\""
     },
     {
      "q": "How does Harry sum it up?",
      "options": [
-      "Profit is this week; working capital is the year",
-      "Profit is the story of the year; working capital is the story of this week",
       "Both are the same",
-      "Neither matters"
+      "Neither matters",
+      "Profit is the story of the year; working capital is the story of this week",
+      "Profit is this week; working capital is the year"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Profit is the story of the year. Working capital is the story of this week.\""
     }
    ]
@@ -127,29 +132,34 @@
     {
      "q": "**Working capital** is…",
      "options": [
+      "the share price",
       "long-term profit",
       "the money needed to run the daily business",
-      "a bank loan",
-      "the share price"
+      "a bank loan"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Working capital = capital de giro."
     },
     {
      "q": "A **receivable** is…",
      "options": [
-      "money you owe suppliers",
+      "a tax",
       "money a customer will pay you",
       "your stock",
-      "a tax"
+      "money you owe suppliers"
      ],
      "answer": 1,
      "why": "Receivable = conta a receber."
     },
     {
      "q": "Choose the correct word: \"A **___** is money the company must pay a supplier.\"",
-     "options": ["payable", "receivable", "profit", "duty"],
-     "answer": 0,
+     "options": [
+      "receivable",
+      "payable",
+      "profit",
+      "duty"
+     ],
+     "answer": 1,
      "why": "Payable = conta a pagar."
     },
     {
@@ -165,8 +175,13 @@
     },
     {
      "q": "Choose the correct word: \"A **___** company always has enough cash for its bills.\"",
-     "options": ["healthy", "stressed", "late", "closed"],
-     "answer": 0,
+     "options": [
+      "stressed",
+      "closed",
+      "healthy",
+      "late"
+     ],
+     "answer": 2,
      "why": "Healthy = saudável."
     }
    ]
@@ -176,37 +191,57 @@
    "items": [
     {
      "q": "\"The company could **run out of** cash.\" To run out of means to…",
-     "options": ["have plenty of", "use up all of", "borrow", "save"],
+     "options": [
+      "have plenty of",
+      "use up all of",
+      "save",
+      "borrow"
+     ],
      "answer": 1,
      "why": "Run out of = ficar sem."
     },
     {
      "q": "\"Profit **on paper** can hide a cash problem.\" On paper means…",
-     "options": ["in reality now", "in the accounts / in theory", "in the bank", "in the ship"],
-     "answer": 1,
+     "options": [
+      "in the ship",
+      "in the bank",
+      "in the accounts / in theory",
+      "in reality now"
+     ],
+     "answer": 2,
      "why": "On paper = no papel, na teoria."
     },
     {
      "q": "\"Money **comes in** from customers.\" To come in means to…",
-     "options": ["go out", "arrive / be received", "disappear", "be paid out"],
+     "options": [
+      "be paid out",
+      "arrive / be received",
+      "go out",
+      "disappear"
+     ],
      "answer": 1,
      "why": "Come in = entrar."
     },
     {
      "q": "\"Money **goes out** to suppliers.\" To go out means to…",
-     "options": ["arrive", "be paid out", "be saved", "be received"],
+     "options": [
+      "arrive",
+      "be paid out",
+      "be received",
+      "be saved"
+     ],
      "answer": 1,
      "why": "Go out = sair."
     },
     {
      "q": "\"If the gap is too big, the company is **stretched**.\" To be stretched means to…",
      "options": [
-      "have plenty spare",
       "be under strain with little to spare",
+      "have plenty spare",
       "be closed",
       "be profitable"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Stretched = no limite, esticado."
     }
    ]

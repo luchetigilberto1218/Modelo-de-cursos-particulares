@@ -10,21 +10,21 @@
     {
      "q": "What does on-time delivery measure?",
      "options": [
-      "The percentage of shipments that arrive on time",
-      "The cost of one parcel",
       "The number of damaged parcels",
-      "The size of each parcel"
+      "The cost of one parcel",
+      "The size of each parcel",
+      "The percentage of shipments that arrive on time"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"On-time delivery is the percentage of shipments that arrive within the promised window.\""
     },
     {
      "q": "How often should you watch these three numbers?",
      "options": [
-      "Every year",
+      "Every day",
       "Every month",
       "Every week",
-      "Every day"
+      "Every year"
      ],
      "answer": 2,
      "why": "\"Watch these three numbers every week…\" — o texto diz semanalmente."
@@ -32,34 +32,34 @@
     {
      "q": "A rising damage rate points to a problem with…",
      "options": [
-      "prices",
       "handling or packaging",
       "delivery time",
+      "prices",
       "the weekly report"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"A rising damage rate points to a handling or packaging problem.\""
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
       "a long report is better than three numbers",
-      "watching a few key numbers helps you find problems early",
       "KPIs do not matter in logistics",
-      "cost per shipment is the only useful number"
+      "cost per shipment is the only useful number",
+      "watching a few key numbers helps you find problems early"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto defende que três números, vistos toda semana, pegam a maioria dos problemas cedo."
     },
     {
      "q": "\"Catch most trouble before it grows\" suggests that…",
      "options": [
-      "small problems can become big if you ignore them",
-      "problems never grow in logistics",
+      "trouble is impossible to see",
       "you should wait for problems to get bigger",
-      "trouble is impossible to see"
+      "problems never grow in logistics",
+      "small problems can become big if you ignore them"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: ver cedo evita que um problema pequeno cresça."
     }
    ]
@@ -77,23 +77,23 @@
     {
      "q": "Why is Harry changing the old report?",
      "options": [
-      "It was too short",
       "It was long and nobody read it",
+      "It had no numbers",
       "It cost too much money",
-      "It had no numbers"
+      "It was too short"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"It was long, and honestly, nobody read it.\""
     },
     {
      "q": "How many numbers will the new dashboard show?",
      "options": [
-      "One",
-      "Two",
+      "Fifteen",
       "Three",
-      "Fifteen"
+      "Two",
+      "One"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"we will look at just three numbers.\""
     },
     {
@@ -101,8 +101,8 @@
      "options": [
       "Every Monday",
       "Every Friday",
-      "Every morning",
-      "Once a month"
+      "Once a month",
+      "Every morning"
      ],
      "answer": 0,
      "why": "\"Please look at the dashboard every Monday.\""
@@ -110,21 +110,21 @@
     {
      "q": "Why does Harry say \"numbers are only useful if we act on them\"?",
      "options": [
-      "Because looking is not enough — you must fix the problem",
       "Because numbers are always wrong",
-      "Because the team should not read numbers",
-      "Because the report should be longer"
+      "Because the report should be longer",
+      "Because looking is not enough — you must fix the problem",
+      "Because the team should not read numbers"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: ele quer que a equipe use os números para agir, não só olhar."
     },
     {
      "q": "How does Harry seem to feel about the new dashboard?",
      "options": [
-      "Worried that it is too hard",
-      "Positive and confident that it is simpler",
       "Sad about the old report",
-      "Unsure if it will work"
+      "Positive and confident that it is simpler",
+      "Unsure if it will work",
+      "Worried that it is too hard"
      ],
      "answer": 1,
      "why": "Inferência: ele apresenta o painel como mais fácil e rápido, com tom positivo."
@@ -139,34 +139,34 @@
     {
      "q": "\"We check the <strong>damage rate</strong> every week.\" The damage rate is…",
      "options": [
-      "the percentage of parcels that arrive broken",
-      "the price of one parcel",
       "the number of workers",
-      "the speed of the truck"
+      "the percentage of parcels that arrive broken",
+      "the speed of the truck",
+      "the price of one parcel"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Damage rate = taxa de avaria: quantos parcels chegam danificados."
     },
     {
      "q": "Choose the correct word: \"The trucks are stuck at the gate. That is a ___.\"",
      "options": [
-      "bottleneck",
       "percentage",
-      "dashboard",
-      "package"
+      "bottleneck",
+      "package",
+      "dashboard"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Bottleneck = gargalo: um ponto onde tudo trava."
     },
     {
      "q": "Choose the correct word: \"Better ___ means fewer boxes arrive broken.\"",
      "options": [
+      "report",
       "packaging",
       "delivery",
-      "meeting",
-      "report"
+      "meeting"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Packaging = embalagem: proteger bem o produto reduz avarias."
     },
     {
@@ -183,12 +183,12 @@
     {
      "q": "\"A KPI is a key number you watch.\" What does <strong>KPI</strong> help you do?",
      "options": [
-      "See how the operation is doing",
       "Pack the boxes",
-      "Drive the truck",
-      "Write a long report"
+      "See how the operation is doing",
+      "Write a long report",
+      "Drive the truck"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "KPI = indicador-chave: um número que mostra o desempenho da operação."
     }
    ]
@@ -202,8 +202,8 @@
      "q": "\"Harry wants to <strong>roll out</strong> the new dashboard next week.\" To roll out means to…",
      "options": [
       "start using something new",
-      "stop a project",
       "hide a plan",
+      "stop a project",
       "cancel a report"
      ],
      "answer": 0,
@@ -212,21 +212,21 @@
     {
      "q": "\"The manager will <strong>sign off on</strong> the plan today.\" To sign off on means to…",
      "options": [
-      "say yes and approve it",
-      "read it slowly",
       "throw it away",
-      "print it out"
+      "read it slowly",
+      "print it out",
+      "say yes and approve it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"On-time delivery went down. Let's <strong>look into</strong> it.\" To look into means to…",
      "options": [
       "find out what happened",
-      "ignore it",
       "wait a year",
-      "close the office"
+      "close the office",
+      "ignore it"
      ],
      "answer": 0,
      "why": "Look into = investigar, descobrir o motivo."
@@ -234,23 +234,23 @@
     {
      "q": "\"Two workers <strong>pushed back on</strong> the new plan.\" They…",
      "options": [
-      "disagreed with it",
-      "loved it right away",
       "forgot about it",
-      "printed it"
+      "printed it",
+      "disagreed with it",
+      "loved it right away"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Push back on = resistir, discordar."
     },
     {
      "q": "\"We agreed to fix it, so let's <strong>follow through</strong>.\" To follow through means to…",
      "options": [
+      "ask someone else",
       "finish what you started",
-      "stop the work",
       "change the plan",
-      "ask someone else"
+      "stop the work"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Follow through = levar até o fim o que foi combinado."
     }
    ]

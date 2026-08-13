@@ -10,45 +10,45 @@
     {
      "q": "What do you do first in a trial balance?",
      "options": [
+      "You close the company",
       "You list every account and its total",
-      "You call the bank",
       "You pay all the debits",
-      "You close the company"
+      "You call the bank"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"you list every account and its total\" — esse é o primeiro passo."
     },
     {
      "q": "When are the books balanced?",
      "options": [
+      "When there are no accounts",
       "When the debits are bigger than the credits",
       "When the debits and the credits are equal",
-      "When there are no accounts",
       "When the period ends"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"If they are equal, the books are balanced.\""
     },
     {
      "q": "The text suggests that a balanced trial balance…",
      "options": [
-      "proves every number is correct",
-      "does not prove every number is correct",
+      "means the work is finished",
       "means the company made a profit",
-      "means the work is finished"
+      "proves every number is correct",
+      "does not prove every number is correct"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"does not mean everything is correct\" — só mostra que os números fecham."
     },
     {
      "q": "Why do accountants run the trial balance often?",
      "options": [
+      "Because it makes money",
       "Because it is fun",
-      "Because small errors found early are easy to fix",
       "Because the boss likes it",
-      "Because it makes money"
+      "Because small errors found early are easy to fix"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Small errors found early are almost always easy to fix.\""
     },
     {
@@ -77,21 +77,21 @@
     {
      "q": "What is Emily doing?",
      "options": [
-      "She is paying the bills",
-      "She is running the trial balance for February",
       "She is closing the company",
-      "She is calling a client"
+      "She is paying the bills",
+      "She is calling a client",
+      "She is running the trial balance for February"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I am running the trial balance for February.\""
     },
     {
      "q": "How often does Emily do this check?",
      "options": [
       "At the end of every month",
-      "Once a year",
       "Every day",
-      "Only when the boss asks"
+      "Only when the boss asks",
+      "Once a year"
      ],
      "answer": 0,
      "why": "\"I do this at the end of every month.\""
@@ -110,23 +110,23 @@
     {
      "q": "What caused the mistake?",
      "options": [
-      "The bank made an error",
-      "One entry has the wrong code",
+      "A number was missing",
       "The computer broke",
-      "A number was missing"
+      "One entry has the wrong code",
+      "The bank made an error"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"one entry has the wrong code. Someone put it in the wrong account.\""
     },
     {
      "q": "Emily suggests that catching a mistake early is…",
      "options": [
-      "harder than waiting",
       "easier than waiting",
-      "not important",
-      "impossible"
+      "harder than waiting",
+      "impossible",
+      "not important"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"When you catch a mistake early, it is easy to fix. If you wait, it grows.\""
     }
    ]
@@ -139,45 +139,45 @@
     {
      "q": "\"I run the <strong>trial balance</strong> at the end of the month.\" A trial balance is…",
      "options": [
-      "a check that the debits and credits are equal",
       "a type of bank account",
+      "a check that the debits and credits are equal",
       "a monthly salary",
       "a company meeting"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Trial balance = balancete: a checagem de que débitos e créditos batem."
     },
     {
      "q": "Choose the correct word: \"On the left side we write the ___, and on the right side we write the credits.\"",
      "options": [
-      "debits",
-      "clients",
       "offices",
-      "emails"
+      "emails",
+      "clients",
+      "debits"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Debit = débito, o par de credit (crédito)."
     },
     {
      "q": "\"The two totals are equal, so the books are <strong>balanced</strong>.\" Balanced means…",
      "options": [
-      "equal on both sides",
       "very large",
-      "empty",
-      "closed"
+      "closed",
+      "equal on both sides",
+      "empty"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Balanced = equilibrado: os dois lados são iguais."
     },
     {
      "q": "Choose the correct word: \"I want to ___ the mistake before it grows into a big problem.\"",
      "options": [
-      "catch",
       "sell",
-      "send",
-      "open"
+      "catch",
+      "open",
+      "send"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "To catch = pegar / flagrar o erro."
     },
     {
@@ -185,8 +185,8 @@
      "options": [
       "correct",
       "print",
-      "hide",
-      "forget"
+      "forget",
+      "hide"
      ],
      "answer": 0,
      "why": "To fix = corrigir."
@@ -201,43 +201,43 @@
     {
      "q": "\"Can you <strong>add up</strong> all the debits?\" To add up means to…",
      "options": [
-      "put numbers together to find the total",
-      "delete the numbers",
       "print the numbers",
-      "hide the numbers"
+      "put numbers together to find the total",
+      "hide the numbers",
+      "delete the numbers"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Add up = somar, juntar os números para achar o total."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
-      "approve it",
-      "lose it",
       "read it slowly",
-      "delete it"
+      "approve it",
+      "delete it",
+      "lose it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"I need to <strong>look for</strong> the mistake.\" To look for means to…",
      "options": [
-      "try to find",
       "throw away",
-      "pay",
-      "close"
+      "try to find",
+      "close",
+      "pay"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Look for = procurar, tentar encontrar."
     },
     {
      "q": "\"Small errors can <strong>grow into</strong> big problems.\" To grow into means to…",
      "options": [
       "become",
+      "sell",
       "stop",
-      "copy",
-      "sell"
+      "copy"
      ],
      "answer": 0,
      "why": "Grow into = crescer até virar, tornar-se."
@@ -245,12 +245,12 @@
     {
      "q": "\"Let's <strong>go through</strong> each entry one by one.\" To go through means to…",
      "options": [
-      "check each item carefully",
-      "cancel the work",
+      "send an email",
       "leave the office",
-      "send an email"
+      "cancel the work",
+      "check each item carefully"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Go through = revisar, examinar item por item."
     }
    ]

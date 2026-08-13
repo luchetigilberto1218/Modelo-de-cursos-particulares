@@ -10,34 +10,34 @@
     {
      "q": "How many new words does the lesson teach today?",
      "options": [
-      "Three",
-      "Four",
+      "Ten",
       "Five",
-      "Ten"
+      "Four",
+      "Three"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Today you learn five useful words\" — cinco palavras."
     },
     {
      "q": "Who explains the tax words?",
      "options": [
       "The accountant",
-      "Sophie",
+      "The student",
       "The manager",
-      "The student"
+      "Sophie"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Sophie explains the tax words slowly.\""
     },
     {
      "q": "How does Sophie explain the words?",
      "options": [
-      "Fast and in hard English",
-      "Slowly and in simple English",
+      "With no examples",
       "Only in Portuguese",
-      "With no examples"
+      "Slowly and in simple English",
+      "Fast and in hard English"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Sophie explains the tax words slowly, in simple English.\""
     },
     {
@@ -54,12 +54,12 @@
     {
      "q": "\"One small step at a time\" suggests that the author would most likely DISAGREE with…",
      "options": [
-      "learning a little every day",
-      "practising short sentences",
       "trying to learn everything at once",
-      "going step by step"
+      "practising short sentences",
+      "going step by step",
+      "learning a little every day"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: o texto defende passos pequenos, então discordaria de aprender tudo de uma vez."
     }
    ]
@@ -78,19 +78,19 @@
      "q": "What phrase does Sophie teach in this audio?",
      "options": [
       "\"I want…\"",
-      "\"Can I…?\"",
       "\"Give me…\"",
-      "\"I need…\""
+      "\"I need…\"",
+      "\"Can I…?\""
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"we use one small phrase: 'Can I…?'\""
     },
     {
      "q": "Why does Sophie like the phrase \"Can I…?\"",
      "options": [
       "It is polite and easy",
-      "It is very long",
       "It is only for email",
+      "It is very long",
       "It is hard to say"
      ],
      "answer": 0,
@@ -99,12 +99,12 @@
     {
      "q": "Which sentence does Sophie use as an example?",
      "options": [
-      "\"Can I ask a question?\"",
       "\"Send the form now.\"",
+      "\"Close the report.\"",
       "\"Pay the tax today.\"",
-      "\"Close the report.\""
+      "\"Can I ask a question?\""
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"For example: 'Can I ask a question?'\""
     },
     {
@@ -112,8 +112,8 @@
      "options": [
       "the words are not useful at work",
       "you will really use these words at Czarnikow",
-      "the accountant never reads forms",
-      "the words are only for exams"
+      "the words are only for exams",
+      "the accountant never reads forms"
      ],
      "answer": 1,
      "why": "Inferência: se aparecem toda semana nos formulários, são úteis no trabalho real."
@@ -121,12 +121,12 @@
     {
      "q": "How would you best describe Sophie's tone?",
      "options": [
+      "Bored and tired",
       "Angry and in a hurry",
       "Calm and encouraging",
-      "Bored and tired",
       "Strict and cold"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: ela pede calma, frases curtas e diz \"You can do it!\" — tom acolhedor."
     }
    ]
@@ -139,53 +139,53 @@
     {
      "q": "\"Can I ask a <strong>question</strong> about this form?\" A <strong>question</strong> is…",
      "options": [
-      "something you ask",
       "a form you sign",
       "a tax you pay",
+      "something you ask",
       "a report you send"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Question = pergunta: algo que você pergunta."
     },
     {
      "q": "Choose the correct word: \"Can I have some ___ with this tax form, please?\"",
      "options": [
+      "table",
       "help",
       "money",
-      "table",
       "week"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Help = ajuda; \"Can I have some help\" pede ajuda."
     },
     {
      "q": "\"The <strong>answer</strong> is ready for the accountant to review.\" An <strong>answer</strong> is…",
      "options": [
-      "a new question",
-      "a reply to a question",
       "a fiscal folder",
-      "a deadline"
+      "a deadline",
+      "a new question",
+      "a reply to a question"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Answer = resposta: o que você responde a uma pergunta."
     },
     {
      "q": "Choose the correct word: \"The tax is hard, so I ask Sophie for ___.\"",
      "options": [
+      "keys",
       "advice",
       "paper",
-      "coffee",
-      "keys"
+      "coffee"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Advice = conselho; pedimos conselho quando algo é difícil."
     },
     {
      "q": "\"The <strong>explanation</strong> stays in the fiscal folder.\" An <strong>explanation</strong> is…",
      "options": [
       "words that make something clear",
-      "a payment",
       "a phone number",
+      "a payment",
       "a signature"
      ],
      "answer": 0,
@@ -201,23 +201,23 @@
     {
      "q": "\"Can I <strong>fill out</strong> this tax form?\" To fill out a form means to…",
      "options": [
-      "write your answers on it",
       "throw it away",
+      "sign it only",
       "read it fast",
-      "sign it only"
+      "write your answers on it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Fill out = preencher: escrever as informações no formulário."
     },
     {
      "q": "\"I will <strong>follow up</strong> with the accountant tomorrow.\" To follow up means to…",
      "options": [
       "forget the task",
-      "check again later",
       "cancel the meeting",
+      "check again later",
       "pay the tax"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Follow up = dar continuidade, checar de novo mais tarde."
     },
     {
@@ -234,23 +234,23 @@
     {
      "q": "\"The accountant has to <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
-      "approve it",
       "read it slowly",
+      "print it",
       "hide it",
-      "print it"
+      "approve it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"Please <strong>hand in</strong> the form before the deadline.\" To hand in means to…",
      "options": [
-      "give or submit it",
-      "keep it at home",
+      "copy it",
       "lose it",
-      "copy it"
+      "give or submit it",
+      "keep it at home"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Hand in = entregar, submeter o documento."
     }
    ]

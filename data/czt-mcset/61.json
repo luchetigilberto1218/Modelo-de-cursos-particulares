@@ -8,20 +8,20 @@
     {
      "q": "Why do we join meetings every week?",
      "options": [
-      "To share news, make decisions or solve problems",
       "To eat lunch",
-      "To go home early",
-      "To travel"
+      "To travel",
+      "To share news, make decisions or solve problems",
+      "To go home early"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"we join meetings to share news, make decisions or solve problems.\""
     },
     {
      "q": "What are the three moments of a good meeting?",
      "options": [
       "The start, the middle and the end",
-      "Morning, noon and night",
       "Buy, sell and pay",
+      "Morning, noon and night",
       "Read, write and speak"
      ],
      "answer": 0,
@@ -30,28 +30,33 @@
     {
      "q": "What do we do at the start?",
      "options": [
-      "Agree on next steps",
       "Say hello and explain the topic",
+      "Pay the bill",
       "Leave the room",
-      "Pay the bill"
+      "Agree on next steps"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"At the start, we say hello and explain the topic.\""
     },
     {
      "q": "What do we do at the end?",
      "options": [
-      "Say hello",
-      "Agree on next steps",
       "Explain the topic",
-      "Start the discussion"
+      "Start the discussion",
+      "Agree on next steps",
+      "Say hello"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"At the end, we agree on next steps.\""
     },
     {
      "q": "How do meeting phrases become easy?",
-     "options": ["With money", "With practice", "With luck", "With a manager"],
+     "options": [
+      "With luck",
+      "With practice",
+      "With a manager",
+      "With money"
+     ],
      "answer": 1,
      "why": "\"With practice, they become easy.\""
     }
@@ -66,8 +71,13 @@
    "items": [
     {
      "q": "How many things are on the agenda?",
-     "options": ["Two", "Three", "Four", "Five"],
-     "answer": 1,
+     "options": [
+      "Four",
+      "Five",
+      "Three",
+      "Two"
+     ],
+     "answer": 2,
      "why": "\"we have three things to talk about: the weekly sugar numbers, one client question, and the plan for Friday.\""
     },
     {
@@ -83,20 +93,35 @@
     },
     {
      "q": "What did the client in São Paulo ask about?",
-     "options": ["The price", "The delivery date", "The weather", "The report"],
-     "answer": 1,
+     "options": [
+      "The price",
+      "The report",
+      "The weather",
+      "The delivery date"
+     ],
+     "answer": 3,
      "why": "\"The client in São Paulo asked about the delivery date.\""
     },
     {
      "q": "When must the report be ready?",
-     "options": ["Monday", "Thursday evening", "Friday morning", "Next week"],
-     "answer": 1,
+     "options": [
+      "Thursday evening",
+      "Monday",
+      "Next week",
+      "Friday morning"
+     ],
+     "answer": 0,
      "why": "\"We need the report ready by Thursday evening.\""
     },
     {
      "q": "How does Oliver describe the meeting at the end?",
-     "options": ["Long and confusing", "Short and clear", "Difficult", "Boring"],
-     "answer": 1,
+     "options": [
+      "Difficult",
+      "Boring",
+      "Short and clear",
+      "Long and confusing"
+     ],
+     "answer": 2,
      "why": "\"Thank you all — short and clear.\""
     }
    ]
@@ -109,34 +134,54 @@
      "options": [
       "the list of topics for the meeting",
       "the room",
-      "the manager",
-      "the coffee"
+      "the coffee",
+      "the manager"
      ],
      "answer": 0,
      "why": "Agenda = pauta."
     },
     {
      "q": "To **discuss** something means to…",
-     "options": ["ignore it", "talk about it together", "write it", "cancel it"],
-     "answer": 1,
+     "options": [
+      "talk about it together",
+      "write it",
+      "cancel it",
+      "ignore it"
+     ],
+     "answer": 0,
      "why": "Discuss = discutir, conversar sobre."
     },
     {
      "q": "Choose the correct phrase: \"At the end, we decide the **___**.\"",
-     "options": ["next steps", "weather", "lunch", "email"],
-     "answer": 0,
+     "options": [
+      "lunch",
+      "next steps",
+      "email",
+      "weather"
+     ],
+     "answer": 1,
      "why": "Next steps = próximos passos."
     },
     {
      "q": "To **join** a meeting means to…",
-     "options": ["leave it", "take part in it", "cancel it", "write it"],
-     "answer": 1,
+     "options": [
+      "leave it",
+      "write it",
+      "take part in it",
+      "cancel it"
+     ],
+     "answer": 2,
      "why": "Join = participar, entrar."
     },
     {
      "q": "Choose the correct word: \"When two people **___**, they say yes to the same idea.\"",
-     "options": ["agree", "discuss", "start", "end"],
-     "answer": 0,
+     "options": [
+      "start",
+      "agree",
+      "discuss",
+      "end"
+     ],
+     "answer": 1,
      "why": "Agree = concordar."
     }
    ]
@@ -146,32 +191,57 @@
    "items": [
     {
      "q": "\"Let's **kick off** the meeting.\" To kick off means to…",
-     "options": ["end", "start", "leave", "wait"],
+     "options": [
+      "end",
+      "start",
+      "leave",
+      "wait"
+     ],
      "answer": 1,
      "why": "Kick off = começar."
     },
     {
      "q": "\"Let's **move on** to the next topic.\" To move on means to…",
-     "options": ["go to the next point", "repeat", "stop", "go back"],
-     "answer": 0,
+     "options": [
+      "go back",
+      "repeat",
+      "go to the next point",
+      "stop"
+     ],
+     "answer": 2,
      "why": "Move on = passar adiante."
     },
     {
      "q": "\"Can you **fill me in** on the numbers?\" To fill someone in means to…",
-     "options": ["confuse them", "give them the information", "ignore them", "pay them"],
-     "answer": 1,
+     "options": [
+      "give them the information",
+      "ignore them",
+      "pay them",
+      "confuse them"
+     ],
+     "answer": 0,
      "why": "Fill in = pôr a par, informar."
     },
     {
      "q": "\"Let's **wrap up** the meeting.\" To wrap up means to…",
-     "options": ["start", "finish", "delay", "repeat"],
-     "answer": 1,
+     "options": [
+      "finish",
+      "repeat",
+      "start",
+      "delay"
+     ],
+     "answer": 0,
      "why": "Wrap up = encerrar."
     },
     {
      "q": "\"Everyone **on the same page**?\" To be on the same page means to…",
-     "options": ["disagree", "share the same understanding", "leave", "be late"],
-     "answer": 1,
+     "options": [
+      "share the same understanding",
+      "disagree",
+      "be late",
+      "leave"
+     ],
+     "answer": 0,
      "why": "On the same page = alinhados."
     }
    ]

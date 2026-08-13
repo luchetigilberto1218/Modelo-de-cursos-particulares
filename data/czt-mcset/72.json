@@ -8,51 +8,56 @@
     {
      "q": "What is a status update?",
      "options": [
-      "A long story",
       "A short report: what is done, in progress, and next",
+      "A meeting",
       "A holiday",
-      "A meeting"
+      "A long story"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"A status update is a short report: what is done, what is in progress, and what is next.\""
     },
     {
      "q": "What do managers need in an update?",
-     "options": ["A long story", "Just the facts", "Nothing", "A speech"],
-     "answer": 1,
+     "options": [
+      "Just the facts",
+      "A speech",
+      "A long story",
+      "Nothing"
+     ],
+     "answer": 0,
      "why": "\"They do not need a long story — just the facts.\""
     },
     {
      "q": "Which is a good example of an update line?",
      "options": [
-      "\"I have finished the report.\"",
-      "\"It's a long story…\"",
       "\"I don't know.\"",
-      "\"Maybe later.\""
+      "\"I have finished the report.\"",
+      "\"Maybe later.\"",
+      "\"It's a long story…\""
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"'I have finished the report. I am working on the slides. Next, I will talk to the client.'\""
     },
     {
      "q": "What do good updates do?",
      "options": [
       "Waste time",
-      "Save time and build trust",
       "Confuse the manager",
+      "Save time and build trust",
       "Create problems"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Good updates save time and build trust.\""
     },
     {
      "q": "What happens when your manager knows what you are doing?",
      "options": [
-      "They ask more",
       "They stop asking — and you can focus on the work",
-      "They give you more meetings",
-      "Nothing"
+      "They ask more",
+      "Nothing",
+      "They give you more meetings"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"they stop asking — and you can focus on the work.\""
     }
    ]
@@ -66,39 +71,44 @@
    "items": [
     {
      "q": "How long is Harry's update?",
-     "options": ["Three lines, three tasks", "Three pages", "One word", "A long story"],
-     "answer": 0,
+     "options": [
+      "A long story",
+      "One word",
+      "Three pages",
+      "Three lines, three tasks"
+     ],
+     "answer": 3,
      "why": "\"a short update — three lines, three tasks.\""
     },
     {
      "q": "Why doesn't Harry start with the weekend and weather?",
      "options": [
-      "He forgot",
       "Managers are busy — he goes straight to the facts",
+      "He forgot",
       "It's rude to say hello",
       "The weather was bad"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Managers are busy. I go straight to the facts.\""
     },
     {
      "q": "What is line one (what's done)?",
      "options": [
+      "Nothing is done",
       "The slides are done",
       "The client report is finished and sent",
-      "The call is made",
-      "Nothing is done"
+      "The call is made"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"'The client report is finished and sent.'\""
     },
     {
      "q": "What is the structure of the update?",
      "options": [
       "Done, in progress, next",
+      "Only questions",
       "Hello, weather, goodbye",
-      "One long paragraph",
-      "Only questions"
+      "One long paragraph"
      ],
      "answer": 0,
      "why": "\"Done, in progress, next. Three lines.\""
@@ -107,11 +117,11 @@
      "q": "What is the point of a good update?",
      "options": [
       "More meetings",
-      "Fewer interruptions, more real work — and it builds trust",
+      "More emails",
       "A longer day",
-      "More emails"
+      "Fewer interruptions, more real work — and it builds trust"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"a good update means fewer interruptions, more real work.\""
     }
    ]
@@ -122,36 +132,56 @@
     {
      "q": "A **status update** is…",
      "options": [
-      "a long report",
+      "a meeting",
       "a short report on what's done, in progress and next",
       "a holiday",
-      "a meeting"
+      "a long report"
      ],
      "answer": 1,
      "why": "Status update = atualização de status."
     },
     {
      "q": "**In progress** means…",
-     "options": ["finished", "being worked on now", "not started", "cancelled"],
-     "answer": 1,
+     "options": [
+      "being worked on now",
+      "not started",
+      "cancelled",
+      "finished"
+     ],
+     "answer": 0,
      "why": "In progress = em andamento."
     },
     {
      "q": "Choose the correct word: \"The report is **___** — it's completely finished.\"",
-     "options": ["done", "missing", "late", "next"],
+     "options": [
+      "done",
+      "late",
+      "missing",
+      "next"
+     ],
      "answer": 0,
      "why": "Done = feito, concluído."
     },
     {
      "q": "\"I've **just** finished it.\" Just here means…",
-     "options": ["a long time ago", "a very short time ago", "never", "tomorrow"],
-     "answer": 1,
+     "options": [
+      "a very short time ago",
+      "never",
+      "a long time ago",
+      "tomorrow"
+     ],
+     "answer": 0,
      "why": "Just = acabei de."
     },
     {
      "q": "Choose the correct word: \"I haven't started the slides **___**.\"",
-     "options": ["yet", "done", "next", "already"],
-     "answer": 0,
+     "options": [
+      "next",
+      "already",
+      "done",
+      "yet"
+     ],
+     "answer": 3,
      "why": "Yet = ainda (com negativa)."
     }
    ]
@@ -161,32 +191,57 @@
    "items": [
     {
      "q": "\"That's **off the list**.\" To be off the list means…",
-     "options": ["still to do", "finished", "cancelled", "lost"],
-     "answer": 1,
+     "options": [
+      "finished",
+      "lost",
+      "still to do",
+      "cancelled"
+     ],
+     "answer": 0,
      "why": "Off the list = já resolvido, riscado da lista."
     },
     {
      "q": "\"I'm about **halfway** through.\" Halfway means…",
-     "options": ["not started", "at the middle", "finished", "at the end"],
+     "options": [
+      "at the end",
+      "at the middle",
+      "finished",
+      "not started"
+     ],
      "answer": 1,
      "why": "Halfway = na metade."
     },
     {
      "q": "\"How's it **going**?\" How's it going asks…",
-     "options": ["where you are", "how things are progressing", "the time", "the weather"],
+     "options": [
+      "the weather",
+      "how things are progressing",
+      "the time",
+      "where you are"
+     ],
      "answer": 1,
      "why": "How's it going = como está indo."
     },
     {
      "q": "\"Let me **keep you posted**.\" To keep someone posted means to…",
-     "options": ["keep them informed", "ignore them", "confuse them", "leave them"],
-     "answer": 0,
+     "options": [
+      "leave them",
+      "keep them informed",
+      "ignore them",
+      "confuse them"
+     ],
+     "answer": 1,
      "why": "Keep posted = manter informado."
     },
     {
      "q": "\"I'll get **straight to** the facts.\" To get straight to something means to…",
-     "options": ["avoid it", "go directly to it", "delay it", "hide it"],
-     "answer": 1,
+     "options": [
+      "delay it",
+      "hide it",
+      "go directly to it",
+      "avoid it"
+     ],
+     "answer": 2,
      "why": "Straight to = direto ao ponto."
     }
    ]
