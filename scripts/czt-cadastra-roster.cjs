@@ -4,7 +4,7 @@
 
   Fonte dos nomes: CSV de presença de junho/2026 (16 nomes + a trilha de cada um,
   baixado do Drive) cruzado com o relatório de julho/2026 (Douglas Salomão, e as
-  duas entradas novas: Alessandra e Claudia) e com o Wesley Magnano, que começa
+  duas entradas novas: Alessandra e Claudia) e com o Weslley Magnago, que começa
   em 04/08/2026. Total: 20.
 
   Login por NOME COMPLETO (decisão do usuário) + senha individual por aluno. A
@@ -55,7 +55,7 @@ const ROSTER = [
   { nome: 'Douglas Salomão',           trilha: 'General Business' },
   { nome: 'Alessandra de Melo Cruz',   trilha: 'Fiscal & Taxes' },
   { nome: 'Claudia Gonçalves da Silva', trilha: 'General Business' },
-  { nome: 'Wesley Magnano',            trilha: 'General Business', nivel: 'Rise 1' },
+  { nome: 'Weslley Magnago',            trilha: 'General Business', nivel: 'Rise 1' },
 ];
 
 /** id do progresso: precisa casar com /^[a-z0-9-]{1,64}$/ (isValidStudent) */

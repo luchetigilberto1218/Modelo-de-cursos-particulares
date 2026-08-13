@@ -66,7 +66,7 @@ const TRILHAS = {
   'Douglas Salomão': ['General Business'],
   'Alessandra de Melo Cruz': ['Fiscal & Taxes'],
   'Claudia Gonçalves da Silva': ['General Business'],
-  'Wesley Magnano': ['General Business'],
+  'Weslley Magnago': ['General Business'],
   // conta de demonstração: mostra a trilha já convertida
   'Colaborador Teste': ['HR'],
 };
