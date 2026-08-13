@@ -1,0 +1,205 @@
+{
+ "num": 97,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "A chart is not a story. A chart is raw material. The story is what you choose to say about it, and how you guide the audience through what matters.<br><br>Good data storytellers start with the message. They decide, before opening Excel, what they want the audience to conclude. Then they build the chart that supports that message in the cleanest, simplest way. Every colour, every axis label, every annotation serves the message or gets removed.<br><br>Numbers also need context to mean anything. \"Sales grew 12 percent\" sounds good until you discover the market grew 18 percent. Always provide the benchmark, the trend, or the comparison that makes the number interpretable. A number without context is noise dressed up as insight.",
+   "items": [
+    {
+     "q": "According to the text, what is a chart?",
+     "options": ["A finished story", "Raw material", "An insight", "A benchmark"],
+     "answer": 1,
+     "why": "\"A chart is not a story. A chart is raw material.\""
+    },
+    {
+     "q": "Where do good data storytellers start?",
+     "options": [
+      "By opening Excel",
+      "With the message — what they want the audience to conclude",
+      "With the colours",
+      "With the raw data"
+     ],
+     "answer": 1,
+     "why": "\"They decide, before opening Excel, what they want the audience to conclude.\""
+    },
+    {
+     "q": "What happens to a colour or label that doesn't serve the message?",
+     "options": ["It stays for decoration", "It gets removed", "It is highlighted", "It is explained"],
+     "answer": 1,
+     "why": "\"Every colour, every axis label, every annotation serves the message or gets removed.\""
+    },
+    {
+     "q": "Why is \"Sales grew 12 percent\" potentially misleading?",
+     "options": [
+      "12 percent is too small",
+      "The market may have grown faster, e.g. 18 percent",
+      "It has no chart",
+      "It is too old"
+     ],
+     "answer": 1,
+     "why": "\"'Sales grew 12 percent' sounds good until you discover the market grew 18 percent.\""
+    },
+    {
+     "q": "\"A number without context is noise dressed up as insight\" means a number alone…",
+     "options": [
+      "is always insightful",
+      "can look meaningful without actually being so",
+      "should never be shown",
+      "is the whole story"
+     ],
+     "answer": 1,
+     "why": "Inferência: sem referência ou comparação, o número parece insight mas não é."
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "I'm cutting the board update from five charts to one, because right now it's data without a story.<br><br>The message I want the board to walk away with is simple: our costs have fallen for three quarters in a row, and that trend is what's protecting our margin. Everything on the slide now serves that one message.<br><br>I've removed two charts entirely. One showed headcount, which is interesting but off-message. The other had so many colours you couldn't tell the trend from the noise. Gone.<br><br>On the chart that's left, I've added the benchmark. Our costs fell 9 percent, but on its own that number means nothing. So I've put the industry average next to it, which rose 2 percent. Now the board can see we didn't just improve — we improved while everyone else got more expensive.<br><br>And I've annotated the one outlier, that spike in Q2, so nobody wastes the meeting asking about it. One chart, one message, context included. Thirty seconds and they've got it.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why is Harry cutting the update to one chart?",
+     "options": [
+      "To save paper",
+      "Because right now it's data without a story",
+      "The board asked for one",
+      "The software failed"
+     ],
+     "answer": 1,
+     "why": "\"right now it's data without a story.\""
+    },
+    {
+     "q": "What is the single message Harry wants the board to take away?",
+     "options": [
+      "Headcount is rising",
+      "Costs have fallen three quarters running, protecting the margin",
+      "The market is shrinking",
+      "Q2 had a spike"
+     ],
+     "answer": 1,
+     "why": "\"our costs have fallen for three quarters in a row, and that trend is what's protecting our margin.\""
+    },
+    {
+     "q": "Why did Harry remove the headcount chart?",
+     "options": [
+      "It was wrong",
+      "It's interesting but off-message",
+      "It had no data",
+      "The board had seen it"
+     ],
+     "answer": 1,
+     "why": "\"One showed headcount, which is interesting but off-message.\""
+    },
+    {
+     "q": "Why did Harry add the industry average to the chart?",
+     "options": [
+      "To fill space",
+      "To give context — the 9% fall means more when others rose 2%",
+      "Because the board asked",
+      "To add colour"
+     ],
+     "answer": 1,
+     "why": "\"our costs fell 9 percent, but on its own that number means nothing. So I've put the industry average next to it.\""
+    },
+    {
+     "q": "Why did Harry annotate the Q2 outlier?",
+     "options": [
+      "To highlight a success",
+      "So nobody wastes the meeting asking about it",
+      "Because it was the main point",
+      "To add another chart"
+     ],
+     "answer": 1,
+     "why": "\"I've annotated the one outlier… so nobody wastes the meeting asking about it.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "\"Costs **fell** three quarters in a row.\" To fall means…",
+     "options": ["to rise", "to go down", "to stay level", "to double"],
+     "answer": 1,
+     "why": "To fall = cair, diminuir."
+    },
+    {
+     "q": "\"Sales **remained stable** all year.\" To remain stable means…",
+     "options": ["to rise sharply", "to stay roughly the same", "to fall", "to fluctuate wildly"],
+     "answer": 1,
+     "why": "Remain stable = permanecer estável."
+    },
+    {
+     "q": "Choose the correct word: \"Compare it against the industry **___** to see if it's good.\"",
+     "options": ["peak", "benchmark", "outlier", "trough"],
+     "answer": 1,
+     "why": "Benchmark = referência para comparação."
+    },
+    {
+     "q": "An **outlier** in data is…",
+     "options": [
+      "the average",
+      "a value far from the rest",
+      "the trend line",
+      "the benchmark"
+     ],
+     "answer": 1,
+     "why": "Outlier = ponto fora da curva."
+    },
+    {
+     "q": "Choose the correct term: \"Revenue hit a **___** in December, the highest all year.\"",
+     "options": ["trough", "peak", "benchmark", "outlier"],
+     "answer": 1,
+     "why": "Peak = pico, o ponto mais alto."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"Costs have **gone up** sharply.\" To go up means to…",
+     "options": ["decrease", "increase", "stay level", "disappear"],
+     "answer": 1,
+     "why": "Go up = subir."
+    },
+    {
+     "q": "\"Let the data **speak for itself**.\" If data speaks for itself, it…",
+     "options": [
+      "needs no exaggeration to make the point",
+      "is confusing",
+      "is wrong",
+      "needs more colour"
+     ],
+     "answer": 0,
+     "why": "Speak for itself = ser claro por si só."
+    },
+    {
+     "q": "\"Sales **picked up** in the second half.\" To pick up means to…",
+     "options": ["decline", "improve or increase", "stay flat", "stop"],
+     "answer": 1,
+     "why": "Pick up = melhorar, aumentar."
+    },
+    {
+     "q": "\"Let's not **cherry-pick** the good numbers.\" To cherry-pick means to…",
+     "options": [
+      "select only what supports your point",
+      "show everything",
+      "round up",
+      "annotate"
+     ],
+     "answer": 0,
+     "why": "Cherry-pick = escolher a dedo só o que convém."
+    },
+    {
+     "q": "\"That spike **stands out**.\" To stand out means to…",
+     "options": ["blend in", "be clearly noticeable", "disappear", "be average"],
+     "answer": 1,
+     "why": "Stand out = destacar-se, saltar aos olhos."
+    }
+   ]
+  }
+ ]
+}

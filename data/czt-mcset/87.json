@@ -1,0 +1,210 @@
+{
+ "num": 87,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "The most common mistake in problem solving is rushing to the solution before understanding the problem. We see a symptom, grab the first explanation that feels right, and start fixing — only to discover, weeks later, that the real cause was somewhere else entirely.<br><br>A useful discipline is five whys: ask \"why?\" five times in a row, going deeper each time. The surface problem is rarely the real one. A late delivery might be due to a missed container, which was due to a supplier change, which was due to a sourcing decision taken six months ago for an entirely different reason.<br><br>Root causes are almost always less dramatic and more systemic than the symptom suggests. Good problem solvers stay patient, resist blame, and look for the quiet structural issues that allowed the visible problem to happen in the first place.",
+   "items": [
+    {
+     "q": "What is the most common mistake in problem solving, according to the text?",
+     "options": [
+      "Asking too many questions",
+      "Rushing to the solution before understanding the problem",
+      "Blaming the wrong person",
+      "Waiting too long"
+     ],
+     "answer": 1,
+     "why": "\"rushing to the solution before understanding the problem.\""
+    },
+    {
+     "q": "What does the \"five whys\" discipline involve?",
+     "options": [
+      "Asking five people",
+      "Asking 'why?' five times, going deeper each time",
+      "Trying five solutions",
+      "Waiting five days"
+     ],
+     "answer": 1,
+     "why": "\"ask 'why?' five times in a row, going deeper each time.\""
+    },
+    {
+     "q": "In the delivery example, what was the deepest cause?",
+     "options": [
+      "The late delivery itself",
+      "A sourcing decision taken six months ago",
+      "The missed container",
+      "The supplier change"
+     ],
+     "answer": 1,
+     "why": "A cadeia recua até \"a sourcing decision taken six months ago for an entirely different reason.\""
+    },
+    {
+     "q": "According to the text, root causes are usually…",
+     "options": [
+      "more dramatic than the symptom",
+      "less dramatic and more systemic than the symptom",
+      "impossible to find",
+      "the same as the symptom"
+     ],
+     "answer": 1,
+     "why": "\"Root causes are almost always less dramatic and more systemic than the symptom suggests.\""
+    },
+    {
+     "q": "Why does the text say good problem solvers \"resist blame\"?",
+     "options": [
+      "Blame is against the rules",
+      "Because the cause is usually a structural issue, not a person",
+      "Because blame is slow",
+      "Because managers dislike it"
+     ],
+     "answer": 1,
+     "why": "Inferência: procurar a causa estrutural quieta é incompatível com apontar culpados."
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "So the monthly report has been late three times in a row. The easy answer is \"the analyst is slow\" — but let's not stop there. Let's ask why.<br><br>Why was it late? Because the data arrived late. Why did the data arrive late? Because the sales figures weren't ready. Why weren't they ready? Because the regional numbers come in on the last working day, which is exactly when the report is due.<br><br>So the real problem isn't the analyst at all. It's the schedule. The report deadline and the data deadline are the same day, which is impossible by design.<br><br>The quick fix would be to push the analyst to work late — but that just hides the issue until next month. The proper fix is to move the report deadline two days later, or bring the data in earlier. Either way, it's a process change, not a people problem.<br><br>Let's write it up as a scheduling root cause, not blame anyone, and propose the deadline change to the team.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the \"easy answer\" Harry refuses to accept?",
+     "options": ["The system is broken", "The analyst is slow", "The data is wrong", "The client is late"],
+     "answer": 1,
+     "why": "\"The easy answer is 'the analyst is slow' — but let's not stop there.\""
+    },
+    {
+     "q": "Why weren't the sales figures ready?",
+     "options": [
+      "The analyst forgot",
+      "The regional numbers come in on the last working day",
+      "The client changed them",
+      "The system crashed"
+     ],
+     "answer": 1,
+     "why": "\"the regional numbers come in on the last working day.\""
+    },
+    {
+     "q": "What does Harry identify as the real problem?",
+     "options": ["The analyst", "The schedule — the report and data deadlines are the same day", "The software", "The clients"],
+     "answer": 1,
+     "why": "\"The report deadline and the data deadline are the same day, which is impossible by design.\""
+    },
+    {
+     "q": "Why does Harry reject the quick fix of pushing the analyst to work late?",
+     "options": [
+      "It costs too much",
+      "It just hides the issue until next month",
+      "The analyst refused",
+      "It's against policy"
+     ],
+     "answer": 1,
+     "why": "\"that just hides the issue until next month.\""
+    },
+    {
+     "q": "How does Harry want to write it up?",
+     "options": [
+      "As the analyst's fault",
+      "As a scheduling root cause, blaming no one",
+      "As a software bug",
+      "As a client delay"
+     ],
+     "answer": 1,
+     "why": "\"write it up as a scheduling root cause, not blame anyone.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "The **root cause** of a problem is…",
+     "options": [
+      "its most visible sign",
+      "the underlying reason it happened",
+      "the quickest fix",
+      "the person responsible"
+     ],
+     "answer": 1,
+     "why": "Root cause = causa raiz, a razão de fundo."
+    },
+    {
+     "q": "A **symptom** is…",
+     "options": [
+      "the deepest cause",
+      "the visible sign of a deeper problem",
+      "a solution",
+      "a hypothesis"
+     ],
+     "answer": 1,
+     "why": "Symptom = sintoma, o sinal visível."
+    },
+    {
+     "q": "Choose the correct word: \"That's only a **quick fix** — it ___ the real issue.\"",
+     "options": ["solves", "hides", "diagnoses", "escalates"],
+     "answer": 1,
+     "why": "Quick fix = solução rápida, que costuma esconder o problema de fundo."
+    },
+    {
+     "q": "\"It's a **systemic** issue.\" Systemic means…",
+     "options": [
+      "caused by one person",
+      "built into the way the system works",
+      "temporary",
+      "minor"
+     ],
+     "answer": 1,
+     "why": "Systemic = sistêmico, próprio da estrutura."
+    },
+    {
+     "q": "Choose the correct term: \"Let's not ___ the analyst — the schedule is the problem.\"",
+     "options": ["diagnose", "blame", "revisit", "pattern"],
+     "answer": 1,
+     "why": "To blame = culpar."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"Let's **get to the bottom of** why it's late.\" To get to the bottom of means to…",
+     "options": ["ignore", "find the real cause of", "speed up", "delegate"],
+     "answer": 1,
+     "why": "Get to the bottom of = chegar à causa real."
+    },
+    {
+     "q": "\"That doesn't **add up** — the numbers don't match.\" To add up means to…",
+     "options": ["make sense", "increase", "finish", "escalate"],
+     "answer": 0,
+     "why": "Add up = fazer sentido, bater."
+    },
+    {
+     "q": "\"We keep **papering over the cracks** instead of fixing it.\" To paper over the cracks means to…",
+     "options": [
+      "hide a problem superficially",
+      "solve it fully",
+      "escalate it",
+      "document it"
+     ],
+     "answer": 0,
+     "why": "Paper over the cracks = disfarçar o problema sem resolvê-lo."
+    },
+    {
+     "q": "\"Let's **dig into** the process before blaming anyone.\" To dig into means to…",
+     "options": ["examine closely", "cancel", "summarise", "postpone"],
+     "answer": 0,
+     "why": "Dig into = investigar a fundo."
+    },
+    {
+     "q": "\"The late data is what's **holding up** the report.\" To hold something up means to…",
+     "options": ["support it", "delay it", "cancel it", "approve it"],
+     "answer": 1,
+     "why": "Hold up = atrasar, travar."
+    }
+   ]
+  }
+ ]
+}
