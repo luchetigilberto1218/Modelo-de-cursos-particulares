@@ -440,11 +440,17 @@ for (const blocos of Object.values(PILOTO)) {
   for (const b of blocos) b.items.forEach((it) => { it.q = negrito(it.q); });
 }
 
-/* Compreensão vai a 5 perguntas (decisão do usuário, 13/08/2026: 10 era muito).
-   A escolha não é "as cinco primeiras" — são as cinco que cobrem a tese da
-   lição e mantêm pelo menos duas de inferência, que é o que o formato antigo
-   não tinha. Os índices ficam explícitos para a seleção ser auditável. */
-const CORTE = { reading: [0, 2, 4, 7, 9], listening: [0, 2, 3, 7, 8] };
+/* 5 perguntas em TODOS os blocos novos (decisão do usuário, 13/08/2026: 10 era
+   muito). A escolha não é "as cinco primeiras" — em compreensão ficam as que
+   cobrem a tese da lição, com pelo menos duas de inferência; em vocabulário,
+   uma mistura de sentido e lacuna; em expressões, as de maior frequência real
+   numa reunião. Os índices ficam explícitos para a seleção ser auditável. */
+const CORTE = {
+  reading: [0, 2, 4, 7, 9],
+  listening: [0, 2, 3, 7, 8],
+  vocabulary: [0, 3, 4, 6, 9],
+  expressions: [0, 1, 2, 6, 9],
+};
 for (const blocos of Object.values(PILOTO)) {
   for (const b of blocos) {
     const manter = CORTE[b.skill];
