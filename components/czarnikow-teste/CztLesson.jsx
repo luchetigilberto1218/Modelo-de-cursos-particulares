@@ -52,7 +52,7 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
   // foram respondidos (certo ou errado). Espelha o doneSet da Baker Hughes.
   // Cada exercício guarda também o acerto da PRIMEIRA tentativa (0..1), que vira
   // pontos na campanha Ago–Dez.
-  const GRADEABLE = ['wordBank', 'verbFill', 'quickDrill', 'wordOrder', ...RACIONAL_TYPES.filter(t => t !== 'info')];
+  const GRADEABLE = ['wordBank', 'verbFill', 'quickDrill', 'wordOrder', 'mcSet', ...RACIONAL_TYPES.filter(t => t !== 'info')];
   const gradeableIdx = exercises.map((ex, i) => (GRADEABLE.includes(ex.type) ? i : null)).filter(i => i !== null);
   const [doneSet, setDoneSet] = useState({});
   const mark = (i, accuracy) => setDoneSet(prev => (
@@ -141,6 +141,7 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
               if (ex.type === 'wordBank') return <WordBank key={i} ex={ex} c={c} onChecked={(acc) => mark(i, acc)} />;
               if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill key={i} ex={ex} c={c} onChecked={(acc) => mark(i, acc)} />;
               if (ex.type === 'wordOrder') return <WordOrder key={i} ex={ex} c={c} onChecked={(acc) => mark(i, acc)} />;
+              if (ex.type === 'mcSet') return <McSet key={i} ex={ex} c={c} voiceType={voiceType} onChecked={(acc) => mark(i, acc)} />;
               if (ex.type === 'readAloud') return <ReadAloud key={i} ex={ex} c={c} voiceType={voiceType} />;
               if (ex.type === 'makeItYourOwn') return <MakeItYourOwn key={i} ex={ex} c={c} voiceType={voiceType} />;
               if (!ex.type && ex.content) return <ExercicioEstatico key={i} ex={ex} c={c} />;
@@ -632,6 +633,94 @@ function MakeItYourOwn({ ex, c, voiceType }) {
           );
         })}
       </div>
+    </ExShell>
+  );
+}
+
+/* Bloco de múltipla escolha com VÁRIAS perguntas (10, no padrão novo).
+   O `multipleChoice` do Exercise.jsx compartilhado cobre UMA pergunta por
+   exercício — não serve para compreensão de texto, onde o aluno lê/ouve uma vez
+   e responde uma bateria. Aqui cada item tem seu enunciado, alternativas e
+   explicação; a correção é de uma vez só, como nos outros exercícios, e a
+   fração de acertos vira ponto na campanha.
+
+   Variações, todas pelo mesmo componente:
+   · `passage`  → texto para ler antes de responder (compreensão de leitura)
+   · `audio`    → áudio para ouvir antes (compreensão oral); a transcrição só
+                  aparece depois de corrigir, senão o exercício vira leitura
+   · sem os dois → vocabulário em contexto, expressões, phrasal verbs */
+function McSet({ ex, c, voiceType, onChecked }) {
+  const [answers, setAnswers] = useState({});
+  const [checked, setChecked] = useState(false);
+  const items = ex.items || [];
+  const isRight = (i) => answers[i] === items[i].answer;
+  const allAnswered = items.every((_, i) => answers[i] !== undefined);
+  const BADGE = { reading: 'Compreensão de leitura', listening: 'Compreensão oral', vocabulary: 'Vocabulário em contexto', expressions: 'Expressões e phrasal verbs' };
+
+  return (
+    <ExShell title={ex.title} c={c} badge={BADGE[ex.skill] || 'Escolha a alternativa'}>
+      {ex.instruction && <p style={{ fontSize: 14, color: c.gray, margin: '0 0 12px', lineHeight: 1.5 }}>{ex.instruction}</p>}
+
+      {ex.passage && (
+        <div style={{ padding: 16, background: c.offWhite, border: `1px solid ${c.grayLight}`, borderRadius: 12, marginBottom: 16, fontSize: 15, lineHeight: 1.7 }}
+          dangerouslySetInnerHTML={{ __html: ex.passage }} />
+      )}
+
+      {ex.audio && (
+        <div style={{ padding: 14, background: c.accentLight, border: `1px solid ${c.grayLight}`, borderRadius: 12, marginBottom: 16 }}>
+          <div style={{ fontSize: 13.5, color: c.navy, fontWeight: 600, marginBottom: 8 }}>{ex.audio.label || 'Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.'}</div>
+          <AudioPlayer text={stripHtml(ex.audio.text)} rate={ex.audio.rate || 0.92} label="Listen" voiceType={ex.audio.voice || voiceType} preferServer />
+        </div>
+      )}
+
+      <div style={{ display: 'grid', gap: 18 }}>
+        {items.map((it, i) => (
+          <div key={i}>
+            {/* O enunciado aceita <strong> para destacar o termo em foco. */}
+            <div style={{ fontSize: 15, fontWeight: 600, color: c.navy, lineHeight: 1.55, marginBottom: 8 }}
+              dangerouslySetInnerHTML={{ __html: `${i + 1}. ${it.q}` }} />
+            <div style={{ display: 'grid', gap: 6 }}>
+              {(it.options || []).map((opt, j) => {
+                const sel = answers[i] === j;
+                const reveal = checked && (sel || j === it.answer);
+                const ok = j === it.answer;
+                return (
+                  <button key={j} onClick={() => { if (!checked) setAnswers(a => ({ ...a, [i]: j })); }} disabled={checked}
+                    style={{
+                      textAlign: 'left', padding: '9px 12px', borderRadius: 9, fontSize: 14.5, lineHeight: 1.5, fontFamily: 'inherit',
+                      cursor: checked ? 'default' : 'pointer',
+                      border: `2px solid ${reveal ? (ok ? '#9AE6B4' : '#FEB2B2') : sel ? c.accent : c.grayLight}`,
+                      background: reveal ? (ok ? '#F0FFF4' : '#FFF5F5') : sel ? c.accentLight : '#fff',
+                      color: c.text,
+                    }}>
+                    <span style={{ fontWeight: 700, color: c.gray, marginRight: 8 }}>{'abcd'[j]}</span>{opt}
+                  </button>
+                );
+              })}
+            </div>
+            {checked && it.why && (
+              <div style={{ marginTop: 6, fontSize: 13.5, lineHeight: 1.55, color: isRight(i) ? '#2F855A' : '#9B2C2C' }}>
+                {isRight(i) ? '✓ ' : '✗ '}{it.why}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <CheckRow checked={checked} setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(accuracyOf(items, isRight)); }} onReset={() => setAnswers({})} canCheck={allAnswered} c={c} />
+
+      {checked && (
+        <div style={{ marginTop: 12, fontSize: 14, fontWeight: 700, color: c.navy }}>
+          {items.filter((_, i) => isRight(i)).length} de {items.length} corretas
+        </div>
+      )}
+      {checked && ex.audio?.text && (
+        <details style={{ marginTop: 10 }}>
+          <summary style={{ cursor: 'pointer', color: c.accent, fontSize: 13, fontWeight: 700 }}>Ver transcrição</summary>
+          <div style={{ marginTop: 8, padding: 12, background: c.offWhite, border: `1px solid ${c.grayLight}`, borderRadius: 8, fontSize: 14, lineHeight: 1.75 }}
+            dangerouslySetInnerHTML={{ __html: ex.audio.text }} />
+        </details>
+      )}
     </ExShell>
   );
 }
