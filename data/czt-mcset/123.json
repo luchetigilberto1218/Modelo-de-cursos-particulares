@@ -1,0 +1,190 @@
+{
+ "num": 123,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "A supply chain is the long journey a product takes before it reaches you. It starts with raw materials, goes through factories, warehouses and ships, and ends in a shop or at your door.<br><br>Most of the things we use every day — from coffee to phones — travel through a supply chain with many steps and many countries.<br><br>When one step has a problem, the whole chain feels it. That is why people talk so much about supply chains today.",
+   "items": [
+    {
+     "q": "What is a supply chain?",
+     "options": [
+      "A type of ship",
+      "The long journey a product takes before it reaches you",
+      "A bank account",
+      "A customs form"
+     ],
+     "answer": 1,
+     "why": "\"A supply chain is the long journey a product takes before it reaches you.\""
+    },
+    {
+     "q": "Where does a supply chain start?",
+     "options": ["In a shop", "With raw materials", "At your door", "At the bank"],
+     "answer": 1,
+     "why": "\"It starts with raw materials.\""
+    },
+    {
+     "q": "Where does it end?",
+     "options": [
+      "At the factory",
+      "In a shop or at your door",
+      "At the port",
+      "In the warehouse"
+     ],
+     "answer": 1,
+     "why": "\"ends in a shop or at your door.\""
+    },
+    {
+     "q": "What happens when one step has a problem?",
+     "options": [
+      "Nothing changes",
+      "The whole chain feels it",
+      "Only that step stops",
+      "The price goes down"
+     ],
+     "answer": 1,
+     "why": "\"When one step has a problem, the whole chain feels it.\""
+    },
+    {
+     "q": "Which everyday products does the text mention travelling through supply chains?",
+     "options": ["Coffee and phones", "Cars and boats", "Books and pens", "Bread and milk"],
+     "answer": 0,
+     "why": "\"from coffee to phones — travel through a supply chain.\""
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "Let me draw a simple diagram to show how sugar travels from a farm in Brazil to a supermarket in London. Follow the arrows.<br><br>First, the farm. The sugar cane grows in Brazil. That's our raw material.<br><br>Next, the factory. The cane goes to a mill, where it becomes sugar. Now it's a product.<br><br>Then, the warehouse and the port. The sugar is stored, then taken to a Brazilian port and loaded onto a ship.<br><br>Next, the ship crosses the ocean. This is the longest step — a few weeks at sea.<br><br>Then it arrives at a port in England, passes through customs, and goes to a warehouse in the UK.<br><br>Finally, a truck takes it to the supermarket in London, and you buy it.<br><br>Farm, factory, warehouse, ship, port, shop. Six steps, two countries, one bag of sugar. And if any one step is delayed — a strike at the port, a storm at sea — the sugar is late on the shelf. That's a supply chain.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What product does the diagram follow?",
+     "options": ["Coffee", "Sugar", "Phones", "Machines"],
+     "answer": 1,
+     "why": "\"how sugar travels from a farm in Brazil to a supermarket in London.\""
+    },
+    {
+     "q": "What is the raw material at the start?",
+     "options": ["Sugar", "Sugar cane growing in Brazil", "A truck", "A ship"],
+     "answer": 1,
+     "why": "\"The sugar cane grows in Brazil. That's our raw material.\""
+    },
+    {
+     "q": "What happens at the factory (mill)?",
+     "options": [
+      "The cane is stored",
+      "The cane becomes sugar",
+      "The sugar is sold",
+      "The ship is loaded"
+     ],
+     "answer": 1,
+     "why": "\"The cane goes to a mill, where it becomes sugar.\""
+    },
+    {
+     "q": "Which is the longest step?",
+     "options": ["The farm", "The ship crossing the ocean", "The truck", "The warehouse"],
+     "answer": 1,
+     "why": "\"the ship crosses the ocean. This is the longest step — a few weeks at sea.\""
+    },
+    {
+     "q": "What could make the sugar late on the shelf?",
+     "options": [
+      "A strike at the port or a storm at sea",
+      "A cheaper price",
+      "A faster ship",
+      "A new supermarket"
+     ],
+     "answer": 0,
+     "why": "\"a strike at the port, a storm at sea — the sugar is late on the shelf.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "A **raw material** is…",
+     "options": [
+      "a finished product",
+      "the basic material a product is made from",
+      "a shop",
+      "a ship"
+     ],
+     "answer": 1,
+     "why": "Raw material = matéria-prima."
+    },
+    {
+     "q": "A **warehouse** is…",
+     "options": [
+      "a place where goods are stored",
+      "a ship",
+      "a shop",
+      "a border"
+     ],
+     "answer": 0,
+     "why": "Warehouse = armazém."
+    },
+    {
+     "q": "Choose the correct word: \"The sugar is loaded at the **___** onto a ship.\"",
+     "options": ["port", "factory", "shop", "office"],
+     "answer": 0,
+     "why": "Port = porto."
+    },
+    {
+     "q": "A **delay** is…",
+     "options": ["an early arrival", "a late arrival or hold-up", "a discount", "a payment"],
+     "answer": 1,
+     "why": "Delay = atraso."
+    },
+    {
+     "q": "Choose the correct word: \"Each step is a **___** in the chain.\"",
+     "options": ["link", "port", "ship", "duty"],
+     "answer": 0,
+     "why": "Link = elo."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"The sugar is **on the shelf**.\" On the shelf means…",
+     "options": ["in the ship", "for sale in the shop", "at the farm", "at customs"],
+     "answer": 1,
+     "why": "On the shelf = na prateleira, à venda."
+    },
+    {
+     "q": "\"The ship **sets off** from Brazil.\" To set off means to…",
+     "options": ["arrive", "start a journey", "stop", "return"],
+     "answer": 1,
+     "why": "Set off = partir."
+    },
+    {
+     "q": "\"The whole chain **feels it** when one step fails.\" To feel it means to…",
+     "options": [
+      "not notice",
+      "be affected by it",
+      "fix it",
+      "ignore it"
+     ],
+     "answer": 1,
+     "why": "Feel it = ser afetado."
+    },
+    {
+     "q": "\"The truck **takes it to** the supermarket.\" To take something to means to…",
+     "options": ["bring it away from", "deliver it to", "buy it at", "store it in"],
+     "answer": 1,
+     "why": "Take it to = levar até."
+    },
+    {
+     "q": "\"The goods **pass through** customs.\" To pass through means to…",
+     "options": ["stay in", "go through and continue", "avoid", "buy"],
+     "answer": 1,
+     "why": "Pass through = passar por."
+    }
+   ]
+  }
+ ]
+}

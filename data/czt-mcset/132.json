@@ -1,0 +1,200 @@
+{
+ "num": 132,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "A cross-border transaction is any deal where the buyer and the seller are in different countries. It looks like a normal sale, but many small extras appear along the way.<br><br>You will pay for shipping. You will pay customs. You will lose a little in the currency exchange. There may be a small bank fee. None of these are huge, but together they change the price.<br><br>The lesson is simple: always check the real cost of a cross-border deal, not just the invoice price.",
+   "items": [
+    {
+     "q": "What is a cross-border transaction?",
+     "options": [
+      "A sale inside one country",
+      "A deal where buyer and seller are in different countries",
+      "A bank loan",
+      "A customs form"
+     ],
+     "answer": 1,
+     "why": "\"any deal where the buyer and the seller are in different countries.\""
+    },
+    {
+     "q": "Which is one of the 'small extras' the text lists?",
+     "options": ["Shipping", "A bigger product", "A free gift", "A longer warranty"],
+     "answer": 0,
+     "why": "\"You will pay for shipping.\""
+    },
+    {
+     "q": "What do the extras do together?",
+     "options": [
+      "Lower the price",
+      "Change the price (make it higher)",
+      "Remove the duty",
+      "Speed up the ship"
+     ],
+     "answer": 1,
+     "why": "\"together they change the price.\""
+    },
+    {
+     "q": "What is the simple lesson?",
+     "options": [
+      "Only look at the invoice price",
+      "Always check the real cost, not just the invoice price",
+      "Never trade abroad",
+      "Ignore the extras"
+     ],
+     "answer": 1,
+     "why": "\"always check the real cost of a cross-border deal, not just the invoice price.\""
+    },
+    {
+     "q": "Why does the text say to check the real cost?",
+     "options": [
+      "Because the invoice price hides the extras",
+      "Because the goods are free",
+      "Because there is no duty",
+      "Because shipping is free"
+     ],
+     "answer": 0,
+     "why": "Inferência: os extras não aparecem no preço da fatura, mas somam-se a ele."
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "You saw a supplier's price of one thousand euros and thought 'that's the cost'. But when the goods arrived, it had become one thousand and eighty. Let me show you where the extra eighty came from — none of it is a surprise once you know.<br><br>Start with the invoice: one thousand euros for the goods. That's the number everyone remembers.<br><br>Then, shipping. Getting the goods to you cost thirty euros. That's on top.<br><br>Then, a small customs duty at the border — say twenty euros.<br><br>Then, the currency exchange. You paid in euros but your account is in another currency, and you lost a little in the conversion — about twenty euros.<br><br>And finally, a small bank fee for the international payment — ten euros.<br><br>Thirty, plus twenty, plus twenty, plus ten. That's eighty euros of extras. So the real, landed cost is one thousand and eighty, not one thousand.<br><br>None of these are big on their own. But if you plan on the invoice price alone, your margin quietly disappears. Always add up the landed cost first.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What was the supplier's invoice price?",
+     "options": ["€1,080", "€1,000", "€80", "€30"],
+     "answer": 1,
+     "why": "\"a supplier's price of one thousand euros.\""
+    },
+    {
+     "q": "How much did shipping add?",
+     "options": ["€10", "€20", "€30", "€80"],
+     "answer": 2,
+     "why": "\"Getting the goods to you cost thirty euros.\""
+    },
+    {
+     "q": "Why did the currency exchange add a cost?",
+     "options": [
+      "The bank charged nothing",
+      "You paid in euros but your account is in another currency, losing a little in conversion",
+      "The goods were cheaper",
+      "There was no exchange"
+     ],
+     "answer": 1,
+     "why": "\"you lost a little in the conversion — about twenty euros.\""
+    },
+    {
+     "q": "What is the real, landed cost?",
+     "options": ["€1,000", "€1,080", "€80", "€920"],
+     "answer": 1,
+     "why": "\"the real, landed cost is one thousand and eighty, not one thousand.\""
+    },
+    {
+     "q": "What happens if you plan on the invoice price alone?",
+     "options": [
+      "You make more profit",
+      "Your margin quietly disappears",
+      "Shipping is free",
+      "The duty is removed"
+     ],
+     "answer": 1,
+     "why": "\"if you plan on the invoice price alone, your margin quietly disappears.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "A **cross-border** transaction is…",
+     "options": [
+      "inside one country",
+      "between different countries",
+      "online only",
+      "cash only"
+     ],
+     "answer": 1,
+     "why": "Cross-border = transfronteiriço."
+    },
+    {
+     "q": "The **landed cost** is…",
+     "options": [
+      "only the invoice price",
+      "the total real cost including shipping, duty, fees and exchange",
+      "the shipping cost only",
+      "the duty only"
+     ],
+     "answer": 1,
+     "why": "Landed cost = custo total no destino."
+    },
+    {
+     "q": "Choose the correct word: \"A **bank ___** is charged for the international payment.\"",
+     "options": ["fee", "duty", "loss", "border"],
+     "answer": 0,
+     "why": "Bank fee = tarifa bancária."
+    },
+    {
+     "q": "An **exchange loss** happens when…",
+     "options": [
+      "the goods are lost",
+      "you lose value converting one currency to another",
+      "the ship is late",
+      "the duty is high"
+     ],
+     "answer": 1,
+     "why": "Exchange loss = perda na conversão de moeda."
+    },
+    {
+     "q": "Choose the correct word: \"These costs are **___** — they don't show on the invoice.\"",
+     "options": ["hidden", "free", "large", "shipped"],
+     "answer": 0,
+     "why": "Hidden = ocultos."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"Shipping is **on top of** the price.\" On top of means…",
+     "options": ["included in", "added to", "instead of", "below"],
+     "answer": 1,
+     "why": "On top of = além de, somado a."
+    },
+    {
+     "q": "\"Let's **add up** the extras.\" To add up means to…",
+     "options": ["remove", "total together", "ignore", "split"],
+     "answer": 1,
+     "why": "Add up = somar."
+    },
+    {
+     "q": "\"The extras **pile up** quickly.\" To pile up means to…",
+     "options": ["disappear", "accumulate", "reduce", "ship"],
+     "answer": 1,
+     "why": "Pile up = acumular-se."
+    },
+    {
+     "q": "\"Your margin can **quietly disappear**.\" Quietly disappear means…",
+     "options": [
+      "grow loudly",
+      "vanish without you noticing",
+      "stay the same",
+      "double"
+     ],
+     "answer": 1,
+     "why": "Quietly disappear = sumir sem se perceber."
+    },
+    {
+     "q": "\"Always **factor in** the extras.\" To factor in means to…",
+     "options": ["ignore", "include in your calculation", "remove", "hide"],
+     "answer": 1,
+     "why": "Factor in = levar em conta."
+    }
+   ]
+  }
+ ]
+}

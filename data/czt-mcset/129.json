@@ -1,0 +1,210 @@
+{
+ "num": 129,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "When money moves from one country to another, it usually travels on a system called SWIFT. SWIFT is not a bank — it is the network that banks use to send messages about payments.<br><br>A wire transfer is the most common form. The money is sent from one bank to another, often through one or two middle banks on the way. This takes one to three days.<br><br>New systems are faster and cheaper, but SWIFT and wires are still the standard for most international payments today.",
+   "items": [
+    {
+     "q": "What system does international money usually travel on?",
+     "options": ["A bank", "SWIFT", "Customs", "A ship"],
+     "answer": 1,
+     "why": "\"it usually travels on a system called SWIFT.\""
+    },
+    {
+     "q": "What is SWIFT?",
+     "options": [
+      "A bank",
+      "The network banks use to send messages about payments",
+      "A currency",
+      "A customs office"
+     ],
+     "answer": 1,
+     "why": "\"SWIFT is not a bank — it is the network that banks use to send messages about payments.\""
+    },
+    {
+     "q": "How does the money often travel in a wire transfer?",
+     "options": [
+      "Directly with no middle banks",
+      "Through one or two middle banks on the way",
+      "By ship",
+      "Never"
+     ],
+     "answer": 1,
+     "why": "\"often through one or two middle banks on the way.\""
+    },
+    {
+     "q": "How long does a wire transfer usually take?",
+     "options": ["A few seconds", "One to three days", "One month", "One year"],
+     "answer": 1,
+     "why": "\"This takes one to three days.\""
+    },
+    {
+     "q": "What does the text say about SWIFT and wires today?",
+     "options": [
+      "They are gone",
+      "They are still the standard for most international payments",
+      "They are the fastest",
+      "They are free"
+     ],
+     "answer": 1,
+     "why": "\"SWIFT and wires are still the standard for most international payments today.\""
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "You're sending your first international wire, and you're surprised it takes two days and passes through another bank. Let me explain, because it's completely normal.<br><br>First, SWIFT. When your bank sends money abroad, it doesn't physically carry cash. It sends a secure message on the SWIFT network to the other bank, saying 'pay this amount to this account'. SWIFT is just the messaging system that banks trust.<br><br>Now, why the middle bank? Your bank in Brazil may not have a direct link to the small bank in, say, Vietnam. So the money passes through a bigger bank that both of them work with — a correspondent bank. It's like changing planes: sometimes there's no direct flight, so you connect through a hub.<br><br>And why two days? Each bank in the chain checks the payment — the account, the name, the compliance rules. That checking takes time, and time zones add a little more.<br><br>New systems are faster, but for a first payment to a new supplier, the SWIFT wire is safe and standard. Two days is normal. Nothing is wrong.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What surprised the client about their first wire?",
+     "options": [
+      "It was instant",
+      "It takes two days and passes through another bank",
+      "It was free",
+      "It was cancelled"
+     ],
+     "answer": 1,
+     "why": "\"it takes two days and passes through another bank.\""
+    },
+    {
+     "q": "What does the bank actually send on the SWIFT network?",
+     "options": [
+      "Physical cash",
+      "A secure message saying 'pay this amount to this account'",
+      "A ship",
+      "A document"
+     ],
+     "answer": 1,
+     "why": "\"It sends a secure message on the SWIFT network… 'pay this amount to this account'.\""
+    },
+    {
+     "q": "Why does the money pass through a middle (correspondent) bank?",
+     "options": [
+      "To lose time",
+      "Because the two banks may not have a direct link, so a bigger shared bank connects them",
+      "To pay more duty",
+      "Because SWIFT requires cash"
+     ],
+     "answer": 1,
+     "why": "\"the money passes through a bigger bank that both of them work with — a correspondent bank.\""
+    },
+    {
+     "q": "What comparison does Emily use for the correspondent bank?",
+     "options": [
+      "A warehouse",
+      "Changing planes / connecting through a hub",
+      "A ship",
+      "A shop"
+     ],
+     "answer": 1,
+     "why": "\"It's like changing planes… you connect through a hub.\""
+    },
+    {
+     "q": "Why does it take two days?",
+     "options": [
+      "The money is lost",
+      "Each bank checks the payment, and time zones add more",
+      "The ship is slow",
+      "The buyer is slow"
+     ],
+     "answer": 1,
+     "why": "\"Each bank in the chain checks the payment… time zones add a little more.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "**SWIFT** is…",
+     "options": [
+      "a bank",
+      "the network banks use to send payment messages",
+      "a currency",
+      "a duty"
+     ],
+     "answer": 1,
+     "why": "SWIFT = rede de mensagens entre bancos."
+    },
+    {
+     "q": "A **wire transfer** is…",
+     "options": [
+      "a cash payment by hand",
+      "money sent electronically from one bank to another",
+      "a shipping form",
+      "a customs check"
+     ],
+     "answer": 1,
+     "why": "Wire transfer = transferência internacional."
+    },
+    {
+     "q": "Choose the correct word: \"The money passes through a **___** bank on the way.\"",
+     "options": ["correspondent", "central", "customs", "issuing"],
+     "answer": 0,
+     "why": "Correspondent bank = banco correspondente."
+    },
+    {
+     "q": "A **fee** is…",
+     "options": [
+      "the total price",
+      "a charge for a service, e.g. from the bank",
+      "the currency",
+      "the goods"
+     ],
+     "answer": 1,
+     "why": "Fee = tarifa."
+    },
+    {
+     "q": "Choose the correct word: \"You need the **___** to identify the receiving account.\"",
+     "options": ["IBAN", "duty", "invoice", "border"],
+     "answer": 0,
+     "why": "IBAN = número internacional da conta."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"The payment **passes through** two banks.\" To pass through means to…",
+     "options": ["stop at", "go through and continue", "avoid", "stay in"],
+     "answer": 1,
+     "why": "Pass through = passar por."
+    },
+    {
+     "q": "\"It's like **changing planes**.\" This comparison means…",
+     "options": [
+      "going directly",
+      "connecting through a middle point",
+      "cancelling",
+      "flying home"
+     ],
+     "answer": 1,
+     "why": "Changing planes = fazer conexão, passar por um intermediário."
+    },
+    {
+     "q": "\"Two days is normal — **nothing is wrong**.\" Nothing is wrong means…",
+     "options": ["there's a problem", "everything is fine", "it failed", "it's late"],
+     "answer": 1,
+     "why": "Nothing is wrong = está tudo certo."
+    },
+    {
+     "q": "\"Time zones **add a little more** time.\" To add more means to…",
+     "options": ["reduce", "increase", "remove", "save"],
+     "answer": 1,
+     "why": "Add more = acrescentar."
+    },
+    {
+     "q": "\"Each bank **checks** the payment.\" To check means to…",
+     "options": ["ignore", "examine to make sure it's right", "cancel", "send"],
+     "answer": 1,
+     "why": "Check = conferir."
+    }
+   ]
+  }
+ ]
+}

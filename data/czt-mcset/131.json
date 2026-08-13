@@ -1,0 +1,205 @@
+{
+ "num": 131,
+ "blocks": [
+  {
+   "skill": "reading",
+   "passage": "Payment terms tell you when and how the money moves. They are part of almost every business deal, and they are always open to negotiation.<br><br>Common terms are net 30 (pay within 30 days), 50% upfront (pay half before, half after) or COD (pay on delivery). Each one has a different balance of risk for the buyer and the seller.<br><br>A good negotiator asks for what they want, but also listens. Payment terms are a conversation, not a fight.",
+   "items": [
+    {
+     "q": "What do payment terms tell you?",
+     "options": [
+      "The colour of the goods",
+      "When and how the money moves",
+      "The ship's name",
+      "The duty rate"
+     ],
+     "answer": 1,
+     "why": "\"Payment terms tell you when and how the money moves.\""
+    },
+    {
+     "q": "What does 'net 30' mean?",
+     "options": ["Pay 30% now", "Pay within 30 days", "30 shipments", "A 30% discount"],
+     "answer": 1,
+     "why": "\"net 30 (pay within 30 days).\""
+    },
+    {
+     "q": "What does 'COD' mean?",
+     "options": ["Pay before shipping", "Pay on delivery", "Pay in 90 days", "Never pay"],
+     "answer": 1,
+     "why": "\"COD (pay on delivery).\""
+    },
+    {
+     "q": "What does each term have a different balance of?",
+     "options": [
+      "Risk for the buyer and the seller",
+      "Colour",
+      "Weight",
+      "Shipping speed"
+     ],
+     "answer": 0,
+     "why": "\"Each one has a different balance of risk for the buyer and the seller.\""
+    },
+    {
+     "q": "How does the text describe payment terms?",
+     "options": [
+      "A fight",
+      "A conversation, not a fight",
+      "A secret",
+      "A tax"
+     ],
+     "answer": 1,
+     "why": "\"Payment terms are a conversation, not a fight.\""
+    }
+   ]
+  },
+  {
+   "skill": "listening",
+   "audio": {
+    "text": "I'm on the phone with a long-term client. They usually pay in sixty days, but today they're asking for ninety. Listen to how I keep it a friendly conversation, not a fight.<br><br>First, I don't say no straight away. I say, 'I understand — cash is tight for everyone right now. Let me see what we can do.' That keeps it warm.<br><br>Then I make the trade-off gentle and clear. 'Ninety days costs us a little, because we wait a month longer for the money. So, if I give you ninety days, could you increase the order slightly, or pay a small deposit up front? Then it works for both of us.'<br><br>Notice I'm not fighting about the number. I'm asking for something small in return, politely. 'Would you be able to…' 'Could we perhaps…' Soft language keeps a long relationship healthy.<br><br>And I listen. Maybe ninety days really matters to them this quarter, and a deposit is easy. We find the version that works for both sides. That's a good negotiation — nobody loses, and they stay our client for another ten years.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the client asking for?",
+     "options": [
+      "Thirty days instead of sixty",
+      "Ninety days instead of the usual sixty",
+      "A discount only",
+      "Cash on delivery"
+     ],
+     "answer": 1,
+     "why": "\"They usually pay in sixty days, but today they're asking for ninety.\""
+    },
+    {
+     "q": "How does Oliver start his answer?",
+     "options": [
+      "By saying no straight away",
+      "By understanding and saying 'let me see what we can do'",
+      "By ending the call",
+      "By raising the price"
+     ],
+     "answer": 1,
+     "why": "\"I don't say no straight away… 'Let me see what we can do.'\""
+    },
+    {
+     "q": "What does Oliver ask for in return for ninety days?",
+     "options": [
+      "Nothing",
+      "A slightly bigger order or a small deposit up front",
+      "A public apology",
+      "A new contract"
+     ],
+     "answer": 1,
+     "why": "\"could you increase the order slightly, or pay a small deposit up front?\""
+    },
+    {
+     "q": "What kind of language does Oliver use?",
+     "options": [
+      "Hard demands",
+      "Soft language — 'Would you be able to…', 'Could we perhaps…'",
+      "Angry words",
+      "Silence"
+     ],
+     "answer": 1,
+     "why": "\"'Would you be able to…' 'Could we perhaps…' Soft language keeps a long relationship healthy.\""
+    },
+    {
+     "q": "What does Oliver call a good negotiation?",
+     "options": [
+      "One where he wins everything",
+      "One where nobody loses and the client stays for years",
+      "One where the client loses",
+      "One with no talking"
+     ],
+     "answer": 1,
+     "why": "\"nobody loses, and they stay our client for another ten years.\""
+    }
+   ]
+  },
+  {
+   "skill": "vocabulary",
+   "items": [
+    {
+     "q": "**Payment terms** are…",
+     "options": [
+      "the rules for when and how payment is made",
+      "the shipping route",
+      "the duty",
+      "the currency"
+     ],
+     "answer": 0,
+     "why": "Payment terms = prazos/condições de pagamento."
+    },
+    {
+     "q": "**Upfront** payment means paying…",
+     "options": ["after delivery", "before / in advance", "never", "in 90 days"],
+     "answer": 1,
+     "why": "Upfront = antecipado."
+    },
+    {
+     "q": "Choose the correct word: \"They offered a **___** — a different set of terms in reply.\"",
+     "options": ["counter-offer", "duty", "freight", "border"],
+     "answer": 0,
+     "why": "Counter-offer = contraproposta."
+    },
+    {
+     "q": "A **deposit** is…",
+     "options": [
+      "the full price",
+      "a part payment made early",
+      "a duty",
+      "a document"
+     ],
+     "answer": 1,
+     "why": "Deposit = sinal, entrada."
+    },
+    {
+     "q": "Choose the correct word: \"Good terms find a fair **___** of risk for both sides.\"",
+     "options": ["balance", "duty", "freight", "loss"],
+     "answer": 0,
+     "why": "Balance = equilíbrio."
+    }
+   ]
+  },
+  {
+   "skill": "expressions",
+   "items": [
+    {
+     "q": "\"I won't say no **straight away**.\" Straight away means…",
+     "options": ["later", "immediately", "never", "slowly"],
+     "answer": 1,
+     "why": "Straight away = imediatamente."
+    },
+    {
+     "q": "\"Cash is **tight** right now.\" If cash is tight, there is…",
+     "options": ["plenty of money", "not much money available", "no business", "a discount"],
+     "answer": 1,
+     "why": "Tight = apertado, pouco disponível."
+    },
+    {
+     "q": "\"Let's find a version that **works for both of us**.\" This means…",
+     "options": [
+      "good for only one side",
+      "good for both sides",
+      "bad for everyone",
+      "quick"
+     ],
+     "answer": 1,
+     "why": "Works for both of us = bom para os dois lados."
+    },
+    {
+     "q": "\"I ask for something small **in return**.\" In return means…",
+     "options": ["for free", "in exchange", "by force", "later"],
+     "answer": 1,
+     "why": "In return = em troca."
+    },
+    {
+     "q": "\"Would you be able to **meet me halfway**?\" To meet someone halfway means to…",
+     "options": ["refuse", "compromise", "leave", "pay everything"],
+     "answer": 1,
+     "why": "Meet halfway = chegar a um meio-termo."
+    }
+   ]
+  }
+ ]
+}
