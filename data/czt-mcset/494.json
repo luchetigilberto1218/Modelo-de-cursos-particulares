@@ -1,0 +1,259 @@
+{
+ "num": 494,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Most countries now have laws that protect personal data. In Europe, the most famous is GDPR. In Brazil, it is LGPD. The rules are different in detail, but they share a simple idea: companies must respect the privacy of the people whose data they hold.<br><br>In practice, a company has to know exactly what personal data it has, why it has it, who can see it, and how long it keeps it. It has to ask for consent when consent is needed. And it has to delete data when it is no longer needed.<br><br>Data protection is not paperwork. It is a promise to the people who trusted you with their information. Breaking that promise — even by accident — is one of the fastest ways to lose customer trust.",
+   "items": [
+    {
+     "q": "What is the famous data law in Europe?",
+     "options": [
+      "LGPD",
+      "GDPR",
+      "GPS",
+      "PDF"
+     ],
+     "answer": 1,
+     "why": "\"In Europe, the most famous is GDPR.\""
+    },
+    {
+     "q": "What simple idea do the rules share?",
+     "options": [
+      "Companies must respect people's privacy",
+      "Companies must sell more data",
+      "Companies must keep data forever",
+      "Companies must hide their data"
+     ],
+     "answer": 0,
+     "why": "\"companies must respect the privacy of the people whose data they hold.\""
+    },
+    {
+     "q": "When must a company delete data?",
+     "options": [
+      "Every week",
+      "When it is no longer needed",
+      "Never",
+      "Only in Europe"
+     ],
+     "answer": 1,
+     "why": "\"it has to delete data when it is no longer needed.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with the idea that…",
+     "options": [
+      "Data protection is only paperwork",
+      "Privacy is important",
+      "Companies must ask for consent",
+      "Trust can be lost"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz \"Data protection is not paperwork\" — o autor discorda dessa ideia."
+    },
+    {
+     "q": "The last paragraph suggests that losing customer trust…",
+     "options": [
+      "is easy and can happen fast",
+      "is impossible",
+      "only happens on purpose",
+      "does not matter to companies"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"even by accident — is one of the fastest ways to lose customer trust\" mostra que a confiança se perde fácil e rápido."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte falando com uma nova colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team! Let me show you how we think about data here. It is quite simple. For every set of data we hold, we ask four questions.<br><br>First: what? What personal data do we have? Names, emails, phone numbers. We must always know exactly what we are keeping.<br><br>Second: why? Why do we have this data? There must be a good reason. If there is no reason, we should not keep it.<br><br>Third: who? Who can see this data? Not everyone. Only the people who really need it for their work. This keeps the data safe.<br><br>And fourth: how long? How long do we keep it? When we do not need the data any more, we have to delete it. We cannot keep it forever.<br><br>These four questions — what, why, who, and how long — protect our clients. They trust us with their information, and that trust is very important. So please, if you are not sure about any dataset, come and ask me. It is always better to ask.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many questions does the team ask about each set of data?",
+     "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+     ],
+     "answer": 2,
+     "why": "\"we ask four questions\" — what, why, who, and how long."
+    },
+    {
+     "q": "Who can see the data, according to Charlotte?",
+     "options": [
+      "Everyone in the company",
+      "Only people who really need it",
+      "Only the clients",
+      "Nobody"
+     ],
+     "answer": 1,
+     "why": "\"Only the people who really need it for their work.\""
+    },
+    {
+     "q": "What must the team do when they do not need the data any more?",
+     "options": [
+      "Keep it forever",
+      "Sell it",
+      "Delete it",
+      "Print it"
+     ],
+     "answer": 2,
+     "why": "\"When we do not need the data any more, we have to delete it.\""
+    },
+    {
+     "q": "Charlotte suggests that the new colleague should…",
+     "options": [
+      "ask her when they are not sure",
+      "never ask questions",
+      "keep all data just in case",
+      "decide alone about every dataset"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"if you are not sure... come and ask me. It is always better to ask.\""
+    },
+    {
+     "q": "Why does Charlotte think the four questions are important?",
+     "options": [
+      "They make the work slower",
+      "They protect the clients and their trust",
+      "They help the company sell data",
+      "They are required only in Europe"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"These four questions... protect our clients. They trust us... and that trust is very important.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Your name and email are <strong>personal data</strong>.\" Personal data is…",
+     "options": [
+      "information about a person",
+      "a type of computer",
+      "a company report",
+      "an old file"
+     ],
+     "answer": 0,
+     "why": "Personal data = dados pessoais: informação sobre uma pessoa."
+    },
+    {
+     "q": "Choose the correct word: \"We must ask for ___ before we collect someone's data.\"",
+     "options": [
+      "consent",
+      "coffee",
+      "money",
+      "time"
+     ],
+     "answer": 0,
+     "why": "Consent = consentimento: a permissão da pessoa."
+    },
+    {
+     "q": "\"When we do not need the file, we <strong>delete</strong> it.\" To delete means to…",
+     "options": [
+      "remove it",
+      "save it",
+      "copy it",
+      "print it"
+     ],
+     "answer": 0,
+     "why": "To delete = apagar, remover."
+    },
+    {
+     "q": "Choose the correct word: \"The client gave us their data, so we must not break their ___.\"",
+     "options": [
+      "trust",
+      "door",
+      "phone",
+      "office"
+     ],
+     "answer": 0,
+     "why": "Trust = confiança: o que a pessoa deposita na empresa."
+    },
+    {
+     "q": "\"We <strong>respect</strong> the privacy of our clients.\" To respect privacy means to…",
+     "options": [
+      "keep their information safe and private",
+      "share their information",
+      "sell their information",
+      "forget their information"
+     ],
+     "answer": 0,
+     "why": "To respect privacy = respeitar a privacidade, manter os dados seguros e privados."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns em reuniões sobre dados. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new privacy rules.\" To sign off on means to…",
+     "options": [
+      "approve",
+      "delete",
+      "ignore",
+      "print"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new data policy next month.\" To roll out means to…",
+     "options": [
+      "start using it",
+      "stop it",
+      "hide it",
+      "lose it"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em prática, começar a usar."
+    },
+    {
+     "q": "\"Some staff <strong>pushed back on</strong> the new rules.\" They…",
+     "options": [
+      "did not agree with them",
+      "loved them",
+      "wrote them",
+      "forgot them"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, discordar."
+    },
+    {
+     "q": "\"We agreed to delete old files, but nobody <strong>followed through</strong>.\" They…",
+     "options": [
+      "did not finish the job",
+      "did it very well",
+      "did it too fast",
+      "asked for help"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar a tarefa até o fim."
+    },
+    {
+     "q": "\"If there is a data problem, we must <strong>speak up</strong>.\" To speak up means to…",
+     "options": [
+      "say something and not stay quiet",
+      "keep it secret",
+      "delete the data",
+      "leave the room"
+     ],
+     "answer": 0,
+     "why": "Speak up = falar, dizer o que se pensa em vez de ficar calado."
+    }
+   ]
+  }
+ ]
+}

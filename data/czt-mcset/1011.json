@@ -1,0 +1,259 @@
+{
+ "num": 1011,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Time is gold in a global company. Today we learn how to say the time in English. We ask: \"What time is it?\"<br><br>There are easy answers. We can say \"It is nine o'clock\", \"It is half past ten\", or \"It is quarter to five\". Today you learn five important words. We go step by step.<br><br>English comes in CAN's, not in CAN'Ts. You can do it!",
+   "items": [
+    {
+     "q": "What is the lesson about?",
+     "options": [
+      "How to say the time in English",
+      "How to write emails",
+      "How to book a flight",
+      "How to make coffee"
+     ],
+     "answer": 0,
+     "why": "\"Today we learn how to say the time in English.\""
+    },
+    {
+     "q": "How many important words do you learn today?",
+     "options": [
+      "Two",
+      "Five",
+      "Ten",
+      "Twenty"
+     ],
+     "answer": 1,
+     "why": "\"Today you learn five important words.\""
+    },
+    {
+     "q": "Which question do we ask?",
+     "options": [
+      "How are you?",
+      "What time is it?",
+      "Where are you?",
+      "Who is it?"
+     ],
+     "answer": 1,
+     "why": "\"We ask: What time is it?\""
+    },
+    {
+     "q": "The text says \"Time is gold\". This suggests that time is…",
+     "options": [
+      "not important",
+      "very important",
+      "slow",
+      "yellow"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"gold\" = ouro, algo de muito valor. Tempo é valioso."
+    },
+    {
+     "q": "\"You can do it!\" tells us the author wants you to feel…",
+     "options": [
+      "confident",
+      "sad",
+      "tired",
+      "afraid"
+     ],
+     "answer": 0,
+     "why": "Inferência: a frase \"English comes in CAN's\" e \"You can do it\" passa confiança."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie falar com o novo colega sobre os horários das reuniões. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the team. I am Sophie. Let me tell you the times of our meetings today.<br><br>The first meeting is at nine o'clock. Please come five minutes early. It is short.<br><br>Then we have lunch. Lunch is at half past twelve. We eat together in the kitchen. It is a nice time to talk.<br><br>In the afternoon we have a call with London. The call is at quarter to three. London is far away, so we start on time. Please do not be late.<br><br>The last meeting of the day is at quarter past four. It is a small meeting, only our team. We talk about tomorrow.<br><br>So, nine o'clock, half past twelve, quarter to three, and quarter past four. Time is precious here. Do you have any questions? Just one minute, and I will show you your desk.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time is the first meeting?",
+     "options": [
+      "At nine o'clock",
+      "At half past twelve",
+      "At quarter to three",
+      "At quarter past four"
+     ],
+     "answer": 0,
+     "why": "\"The first meeting is at nine o'clock.\""
+    },
+    {
+     "q": "What time is lunch?",
+     "options": [
+      "At nine o'clock",
+      "At half past twelve",
+      "At quarter to three",
+      "At quarter past four"
+     ],
+     "answer": 1,
+     "why": "\"Lunch is at half past twelve.\""
+    },
+    {
+     "q": "The call is with London. What time is it?",
+     "options": [
+      "At quarter to three",
+      "At nine o'clock",
+      "At half past twelve",
+      "At quarter past four"
+     ],
+     "answer": 0,
+     "why": "\"The call is at quarter to three.\""
+    },
+    {
+     "q": "Why does Sophie say \"please do not be late\" for the London call?",
+     "options": [
+      "Because being on time matters for the call",
+      "Because London is a big city",
+      "Because the call is very long",
+      "Because there is no lunch"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"London is far away, so we start on time\" — ser pontual importa."
+    },
+    {
+     "q": "How does Sophie feel about the new colleague?",
+     "options": [
+      "Friendly and helpful",
+      "Angry",
+      "Bored",
+      "Worried"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela diz \"Welcome to the team\" e oferece mostrar a mesa — é acolhedora."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"What <strong>time</strong> is the meeting?\" The word <strong>time</strong> means…",
+     "options": [
+      "hora",
+      "sala",
+      "dia",
+      "nome"
+     ],
+     "answer": 0,
+     "why": "Time = hora / tempo."
+    },
+    {
+     "q": "\"The meeting is at three <strong>o'clock</strong>.\" <strong>O'clock</strong> means…",
+     "options": [
+      "em ponto",
+      "e meia",
+      "um quarto",
+      "quase"
+     ],
+     "answer": 0,
+     "why": "O'clock = em ponto (hora cheia)."
+    },
+    {
+     "q": "Choose the correct word: \"Lunch is at ___ past twelve, so we eat at 12:30.\"",
+     "options": [
+      "half",
+      "quarter",
+      "minute",
+      "o'clock"
+     ],
+     "answer": 0,
+     "why": "Half past twelve = doze e meia (12:30)."
+    },
+    {
+     "q": "\"It is a <strong>quarter</strong> past two.\" A <strong>quarter</strong> is…",
+     "options": [
+      "15 minutos",
+      "30 minutos",
+      "60 minutos",
+      "5 minutos"
+     ],
+     "answer": 0,
+     "why": "Quarter = um quarto de hora = 15 minutos."
+    },
+    {
+     "q": "Choose the correct word: \"Please wait one ___, I am almost ready.\"",
+     "options": [
+      "minute",
+      "o'clock",
+      "quarter",
+      "half"
+     ],
+     "answer": 0,
+     "why": "Minute = minuto; \"one minute\" = só um instante."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho ligadas a tempo e horários. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please be <strong>on time</strong> for the meeting.\" <strong>On time</strong> means…",
+     "options": [
+      "at the right time",
+      "very late",
+      "one hour early",
+      "not today"
+     ],
+     "answer": 0,
+     "why": "On time = pontual, na hora certa."
+    },
+    {
+     "q": "\"We <strong>kick off</strong> the meeting at nine.\" To <strong>kick off</strong> means to…",
+     "options": [
+      "start",
+      "finish",
+      "cancel",
+      "wait"
+     ],
+     "answer": 0,
+     "why": "Kick off = começar, dar início."
+    },
+    {
+     "q": "\"Let's <strong>wrap up</strong>, it is almost five.\" To <strong>wrap up</strong> means to…",
+     "options": [
+      "finish",
+      "begin",
+      "start again",
+      "eat lunch"
+     ],
+     "answer": 0,
+     "why": "Wrap up = encerrar, finalizar."
+    },
+    {
+     "q": "\"We are late. Can we <strong>put off</strong> the call to tomorrow?\" To <strong>put off</strong> means to…",
+     "options": [
+      "move to a later time",
+      "start now",
+      "make longer",
+      "join quickly"
+     ],
+     "answer": 0,
+     "why": "Put off = adiar, deixar para depois."
+    },
+    {
+     "q": "\"I am busy now. Let's <strong>catch up</strong> after lunch.\" To <strong>catch up</strong> means to…",
+     "options": [
+      "talk later",
+      "run fast",
+      "go home",
+      "stop working"
+     ],
+     "answer": 0,
+     "why": "Catch up = pôr a conversa em dia, falar depois."
+    }
+   ]
+  }
+ ]
+}

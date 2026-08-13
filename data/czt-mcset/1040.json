@@ -1,0 +1,259 @@
+{
+ "num": 1040,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Congratulations! You are here, and this is not a small thing. Forty lessons. Many new words, emails, and meetings.<br><br>Today we use the present perfect to look back. I have learned. We have improved. She has written many emails. Your journey in English has officially started.<br><br>Today you have five useful words and a lot of practice. Take your time. Every sentence counts.",
+   "items": [
+    {
+     "q": "How many lessons has the student finished?",
+     "options": [
+      "Forty",
+      "Fourteen",
+      "Four",
+      "Fifty"
+     ],
+     "answer": 0,
+     "why": "\"Forty lessons.\" — o texto diz quarenta aulas."
+    },
+    {
+     "q": "Which grammar does the lesson use to look back?",
+     "options": [
+      "The past continuous",
+      "The present perfect",
+      "The future",
+      "The imperative"
+     ],
+     "answer": 1,
+     "why": "\"Today we use the present perfect to look back.\""
+    },
+    {
+     "q": "What does the student have today?",
+     "options": [
+      "A test only",
+      "Five useful words and a lot of practice",
+      "One new email",
+      "Ten meetings"
+     ],
+     "answer": 1,
+     "why": "\"Today you have five useful words and a lot of practice.\""
+    },
+    {
+     "q": "The text says \"this is not a small thing.\" This suggests that the author…",
+     "options": [
+      "thinks the student's progress is important",
+      "thinks the lessons are too easy",
+      "wants the student to stop now",
+      "is not happy with the student"
+     ],
+     "answer": 0,
+     "why": "Inferência: o autor valoriza o progresso — não é pouca coisa chegar até aqui."
+    },
+    {
+     "q": "\"Take your time. Every sentence counts.\" The author would most likely DISAGREE with…",
+     "options": [
+      "\"Go slowly and think about each sentence.\"",
+      "\"Finish fast and do not check your answers.\"",
+      "\"Practice is important.\"",
+      "\"Small steps matter.\""
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto pede calma e atenção, então terminar às pressas sem revisar é o contrário."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emma falando sobre a jornada do aluno. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello, and welcome to this special lesson. My name is Emma, and I want to talk to you today.<br><br>You have come a long way. When we started, English was new and difficult. Now look at you. You have learned many words. You have written emails to your team. You have joined meetings and you have understood them. That is real progress.<br><br>I am very proud of you. I have watched many students, and I know this is not easy. You have practised every day, and every day counts. Small steps make a big journey.<br><br>So today, let us stop for one moment and look back. You have started something good. Please continue. The best part is still in front of you. Thank you, and see you in the next lesson.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking in the audio?",
+     "options": [
+      "Emma",
+      "James",
+      "The student's manager",
+      "A new colleague"
+     ],
+     "answer": 0,
+     "why": "\"My name is Emma.\""
+    },
+    {
+     "q": "What has the student done, according to Emma?",
+     "options": [
+      "Learned words, written emails and joined meetings",
+      "Only read one book",
+      "Changed jobs",
+      "Moved to London"
+     ],
+     "answer": 0,
+     "why": "\"You have learned many words. You have written emails… You have joined meetings.\""
+    },
+    {
+     "q": "How does Emma feel about the student?",
+     "options": [
+      "Worried",
+      "Proud",
+      "Angry",
+      "Bored"
+     ],
+     "answer": 1,
+     "why": "\"I am very proud of you.\""
+    },
+    {
+     "q": "When Emma says \"Small steps make a big journey,\" she suggests that…",
+     "options": [
+      "daily practice adds up over time",
+      "the student should study only once",
+      "big changes happen in one day",
+      "the journey is already finished"
+     ],
+     "answer": 0,
+     "why": "Inferência: passos pequenos e diários somam e criam um grande progresso."
+    },
+    {
+     "q": "\"The best part is still in front of you.\" This suggests that Emma wants the student to…",
+     "options": [
+      "keep going and continue learning",
+      "stop after this lesson",
+      "start again from zero",
+      "take a long break"
+     ],
+     "answer": 0,
+     "why": "Inferência: o melhor ainda está por vir, então ela incentiva o aluno a continuar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I want to <strong>learn</strong> three new words today.\" To learn means to…",
+     "options": [
+      "get new knowledge or skill",
+      "forget something",
+      "sell something",
+      "clean something"
+     ],
+     "answer": 0,
+     "why": "Learn = aprender: ganhar conhecimento ou habilidade."
+    },
+    {
+     "q": "Choose the correct word: \"After forty lessons, my English shows real ___.\"",
+     "options": [
+      "progress",
+      "money",
+      "traffic",
+      "weather"
+     ],
+     "answer": 0,
+     "why": "Progress = progresso, o avanço no inglês."
+    },
+    {
+     "q": "\"I am very <strong>proud</strong> of my work this month.\" Proud means…",
+     "options": [
+      "happy and pleased with something you did",
+      "tired and sleepy",
+      "afraid of something",
+      "hungry"
+     ],
+     "answer": 0,
+     "why": "Proud = orgulhoso: contente com algo que você fez."
+    },
+    {
+     "q": "Choose the correct word: \"Do not stop now. Please ___ your studies.\"",
+     "options": [
+      "continue",
+      "close",
+      "delete",
+      "forget"
+     ],
+     "answer": 0,
+     "why": "Continue = continuar: seguir com os estudos."
+    },
+    {
+     "q": "\"My English <strong>journey</strong> has started.\" A journey is…",
+     "options": [
+      "a long trip or path over time",
+      "a short email",
+      "a quick meeting",
+      "a coffee break"
+     ],
+     "answer": 0,
+     "why": "Journey = jornada: um caminho ou percurso ao longo do tempo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Great job! <strong>Keep it up</strong> and you will improve fast.\" Keep it up means…",
+     "options": [
+      "continue doing the good work",
+      "stop right now",
+      "start again from zero",
+      "take a long rest"
+     ],
+     "answer": 0,
+     "why": "Keep it up = continue assim, mantenha o bom trabalho."
+    },
+    {
+     "q": "\"You have come a long way with your English.\" To <strong>come a long way</strong> means to…",
+     "options": [
+      "make a lot of progress",
+      "travel by car",
+      "arrive late",
+      "make a big mistake"
+     ],
+     "answer": 0,
+     "why": "Come a long way = evoluir muito, progredir bastante."
+    },
+    {
+     "q": "\"Let's <strong>look back</strong> at everything you have learned.\" To look back means to…",
+     "options": [
+      "think about the past",
+      "turn your head only",
+      "plan the future",
+      "cancel a meeting"
+     ],
+     "answer": 0,
+     "why": "Look back = olhar para trás, refletir sobre o que já passou."
+    },
+    {
+     "q": "\"You did well. <strong>Well done</strong>!\" Well done means…",
+     "options": [
+      "good job",
+      "try again",
+      "please wait",
+      "see you later"
+     ],
+     "answer": 0,
+     "why": "Well done = muito bem, parabéns pelo trabalho."
+    },
+    {
+     "q": "\"I have started, and now I want to <strong>carry on</strong>.\" To carry on means to…",
+     "options": [
+      "keep going",
+      "give up",
+      "start a fight",
+      "go home"
+     ],
+     "answer": 0,
+     "why": "Carry on = seguir em frente, continuar."
+    }
+   ]
+  }
+ ]
+}

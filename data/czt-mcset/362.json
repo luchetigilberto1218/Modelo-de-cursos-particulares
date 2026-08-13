@@ -1,0 +1,259 @@
+{
+ "num": 362,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Good accounting follows a few simple principles. The first is accuracy: every number must reflect what really happened, not what we hoped for.<br><br>The second is consistency: we use the same rules month after month and year after year. This way, numbers can be compared. The third is transparency: nothing is hidden. Anyone with the right access can see how each number was built.<br><br>These three — accuracy, consistency, transparency — are not optional. They are the difference between a company that its people trust and one that is quietly guessing.",
+   "items": [
+    {
+     "q": "What must every number reflect?",
+     "options": [
+      "What really happened",
+      "What we hoped for",
+      "What the boss wants",
+      "What is easy to type"
+     ],
+     "answer": 0,
+     "why": "\"every number must reflect what really happened, not what we hoped for.\""
+    },
+    {
+     "q": "Why do we use the same rules every month and year?",
+     "options": [
+      "To hide numbers",
+      "So that numbers can be compared",
+      "To make work slower",
+      "To change the results"
+     ],
+     "answer": 1,
+     "why": "Consistency = mesmas regras sempre, \"so that numbers can be compared.\""
+    },
+    {
+     "q": "What does transparency mean here?",
+     "options": [
+      "Numbers are secret",
+      "Only the boss can see the numbers",
+      "Nothing is hidden and the right people can see how numbers were built",
+      "Numbers are always big"
+     ],
+     "answer": 2,
+     "why": "\"nothing is hidden. Anyone with the right access can see how each number was built.\""
+    },
+    {
+     "q": "The text suggests that a company that guesses its numbers is…",
+     "options": [
+      "hard to trust",
+      "very safe",
+      "always right",
+      "easy to compare"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto opõe \"trust\" a \"quietly guessing\" — adivinhar mina a confiança."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "Accuracy matters more than hope",
+      "We can follow only the principles we like",
+      "The same rules help us compare numbers",
+      "Trust comes from open numbers"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"They are not optional\" — os três princípios não podem ser escolhidos a dedo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte explicando os princípios a um colega novo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team. Let me show you how we work here. Before any number goes into the accounts, it must pass three tests.<br><br>First, it has to be accurate. So when you type a number, ask yourself: is this what really happened? Not what we wanted, not what looks nice. The real number. If you are not sure, you have to check. Never guess.<br><br>Second, consistency. We use the same rules every month. If we do it one way in March, we do it the same way in April. That is how we can compare our numbers over time.<br><br>Third, transparency. Nothing is hidden. Anyone with the right access can open the file and see how you built the number. So keep your work clean and clear.<br><br>These three are not extra. They are the job. When people trust our numbers, they can make good decisions. When the numbers are wrong, that trust goes away very fast. Any questions? Good. Let's start.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many tests must a number pass before it goes into the accounts?",
+     "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+     ],
+     "answer": 1,
+     "why": "\"it must pass three tests\" — accuracy, consistency, transparency."
+    },
+    {
+     "q": "What does Charlotte say to do when you are not sure about a number?",
+     "options": [
+      "Guess the number",
+      "Ask the boss to guess",
+      "Check it",
+      "Leave it empty"
+     ],
+     "answer": 2,
+     "why": "\"If you are not sure, you have to check. Never guess.\""
+    },
+    {
+     "q": "If we do something one way in March, what should we do in April?",
+     "options": [
+      "The same way",
+      "A new way",
+      "A faster way",
+      "Nothing"
+     ],
+     "answer": 0,
+     "why": "\"If we do it one way in March, we do it the same way in April.\" — consistência."
+    },
+    {
+     "q": "Why does Charlotte want the work to be clean and clear?",
+     "options": [
+      "So the file looks pretty",
+      "So people with access can see how the number was built",
+      "So nobody can open the file",
+      "So it takes more time"
+     ],
+     "answer": 1,
+     "why": "Inferência: transparência — \"Anyone with the right access can open the file and see how you built the number.\""
+    },
+    {
+     "q": "What happens to trust when the numbers are wrong?",
+     "options": [
+      "It grows",
+      "It stays the same",
+      "It goes away very fast",
+      "It comes back later"
+     ],
+     "answer": 2,
+     "why": "\"When the numbers are wrong, that trust goes away very fast.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Accuracy is our first <strong>principle</strong>.\" A principle is…",
+     "options": [
+      "a basic rule",
+      "a big number",
+      "a new worker",
+      "a computer file"
+     ],
+     "answer": 0,
+     "why": "Principle = princípio, uma regra básica."
+    },
+    {
+     "q": "Choose the correct word: \"Every number must ___ what really happened.\"",
+     "options": [
+      "hide",
+      "reflect",
+      "guess",
+      "sell"
+     ],
+     "answer": 1,
+     "why": "To reflect = refletir, mostrar a realidade."
+    },
+    {
+     "q": "\"With the same rules, we can <strong>compare</strong> the months.\" To compare means to…",
+     "options": [
+      "look at two things to see how they are different or the same",
+      "delete a number",
+      "print a report",
+      "close the file"
+     ],
+     "answer": 0,
+     "why": "To compare = comparar."
+    },
+    {
+     "q": "Choose the correct word: \"Transparency means we do not ___ any number.\"",
+     "options": [
+      "hide",
+      "trust",
+      "reflect",
+      "compare"
+     ],
+     "answer": 0,
+     "why": "To hide = esconder; transparência é o contrário de esconder."
+    },
+    {
+     "q": "\"You need the right <strong>access</strong> to open the file.\" Access is…",
+     "options": [
+      "permission to see or use something",
+      "a small mistake",
+      "a monthly rule",
+      "a paper form"
+     ],
+     "answer": 0,
+     "why": "Access = acesso, permissão para ver ou usar algo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the numbers.\" To sign off on means to…",
+     "options": [
+      "approve them",
+      "hide them",
+      "delete them",
+      "print them"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"Please <strong>check</strong> the number if you are not sure.\" To check means to…",
+     "options": [
+      "look at it to see if it is correct",
+      "throw it away",
+      "make it bigger",
+      "keep it secret"
+     ],
+     "answer": 0,
+     "why": "To check = conferir, verificar se está certo."
+    },
+    {
+     "q": "\"We must <strong>keep to</strong> the same rules every month.\" To keep to means to…",
+     "options": [
+      "follow and not change",
+      "forget",
+      "hide",
+      "sell"
+     ],
+     "answer": 0,
+     "why": "Keep to = seguir sempre, não mudar — consistência."
+    },
+    {
+     "q": "\"Do not <strong>make up</strong> a number when you are not sure.\" To make up means to…",
+     "options": [
+      "invent it",
+      "check it",
+      "share it",
+      "save it"
+     ],
+     "answer": 0,
+     "why": "Make up = inventar; o oposto de usar o número real."
+    },
+    {
+     "q": "\"When something is wrong, we <strong>look into</strong> it.\" To look into means to…",
+     "options": [
+      "study it to understand it",
+      "hide it",
+      "print it",
+      "trust it"
+     ],
+     "answer": 0,
+     "why": "Look into = investigar, examinar de perto."
+    }
+   ]
+  }
+ ]
+}

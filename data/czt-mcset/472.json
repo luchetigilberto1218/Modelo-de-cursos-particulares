@@ -1,0 +1,259 @@
+{
+ "num": 472,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At enterprise scale, invoice and documentation governance stops being an intake checklist and becomes a formal governance programme. Tens of thousands of invoices flow through the systems every month, from hundreds of suppliers across many countries. The senior tax leader's job is not to read every invoice, but to design a system that catches the problem invoices and routes them out before they reach the general ledger.<br><br>Built into such a system are automated checks for the fields every invoice must contain, alerts when suppliers send repeatedly incomplete invoices, and quiet escalation when a country's tax rules change in a way that makes old invoices no longer valid. None of this is exciting. All of it determines whether the quarterly VAT return, two years from now, can survive a detailed audit.<br><br>Governance at this level is the patient design of systems — so that, when something eventually goes wrong, the company has already built exactly the controls the auditor is about to ask about.",
+   "items": [
+    {
+     "q": "According to the text, what is the senior tax leader's job at enterprise scale?",
+     "options": [
+      "To read every invoice personally",
+      "To design a system that catches problem invoices before the ledger",
+      "To negotiate directly with each supplier",
+      "To approve the quarterly VAT return line by line"
+     ],
+     "answer": 1,
+     "why": "\"not to read every invoice, but to design a system that catches the problem invoices and routes them out before they reach the general ledger.\""
+    },
+    {
+     "q": "What triggers the \"quiet escalation\" described in the text?",
+     "options": [
+      "A supplier requesting faster payment",
+      "A change in a country's tax rules that invalidates old invoices",
+      "The arrival of the annual budget",
+      "A drop in invoice volume"
+     ],
+     "answer": 1,
+     "why": "\"quiet escalation when a country's tax rules change in a way that makes old invoices no longer valid.\""
+    },
+    {
+     "q": "The phrase \"None of this is exciting\" most likely suggests that the author believes…",
+     "options": [
+      "the work is unimportant and can be deprioritised",
+      "unglamorous, low-visibility work is what actually protects the company",
+      "governance should be made more engaging for staff",
+      "invoices are too dull to be worth automating"
+     ],
+     "answer": 1,
+     "why": "Inferência: o autor contrasta o tédio da tarefa com sua consequência crítica — é o trabalho invisível que sustenta a conformidade."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Good governance anticipates the questions an auditor will ask.",
+      "The value of documentation controls only becomes visible in a crisis.",
+      "Manual review of every invoice is the most reliable safeguard at scale.",
+      "A single incomplete invoice can create a real tax exposure."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto argumenta o oposto — a revisão manual não escala; o valor está no sistema desenhado, não na leitura de cada nota."
+    },
+    {
+     "q": "Why does the text mention \"two years from now\"?",
+     "options": [
+      "To stress that today's controls will be tested by a future audit",
+      "To indicate when the new system will be finished",
+      "To show how long suppliers take to correct invoices",
+      "To describe the retention period for the ledger"
+     ],
+     "answer": 0,
+     "why": "Inferência: a qualidade de hoje decide se a declaração sobrevive a uma auditoria detalhada anos depois — o controle precede o problema."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily apresentar o sistema de entrada de notas fiscais ao comitê. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thanks for making time. I'll be brief, because honestly, if this system works, none of you will ever think about it again.<br><br>Right now every supplier invoice lands in the same queue, and a handful of people eyeball them before anything reaches the ledger. That is fine at a few hundred a month. We are running past forty thousand. So what I'm building is an intake layer that checks each invoice against the mandatory fields the moment it arrives — tax numbers, dates, currency, the country-specific bits. If a field is missing or malformed, the invoice is held and sent back automatically, before it ever touches the general ledger.<br><br>The target is ninety-five per cent of incomplete invoices caught at the door. The remaining five per cent are the odd cases a rule can't anticipate, and those get escalated to a human — quietly, without stopping the flow.<br><br>I want to be candid about one thing. If we do this well, it will look like nothing is happening. There is no dashboard that lights up to say a crisis was avoided. The only moment anyone notices this system is the day it stops running, or the day an auditor asks for two years of clean documentation and we simply hand it over.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What problem with the current process does Emily describe?",
+     "options": [
+      "Suppliers are refusing to submit invoices electronically",
+      "Manual review does not scale past a few hundred invoices a month",
+      "The general ledger keeps crashing under the volume",
+      "Auditors have already rejected the last VAT return"
+     ],
+     "answer": 1,
+     "why": "\"a handful of people eyeball them… That is fine at a few hundred a month. We are running past forty thousand.\""
+    },
+    {
+     "q": "When does the new intake layer check an invoice?",
+     "options": [
+      "Once a month during reconciliation",
+      "The moment it arrives, against the mandatory fields",
+      "Only after it reaches the general ledger",
+      "When a supplier requests payment"
+     ],
+     "answer": 1,
+     "why": "\"checks each invoice against the mandatory fields the moment it arrives… before it ever touches the general ledger.\""
+    },
+    {
+     "q": "What happens to the roughly five per cent the rules cannot handle?",
+     "options": [
+      "They are posted to the ledger unchecked",
+      "They are deleted from the queue",
+      "They are escalated to a human without stopping the flow",
+      "They are returned to the supplier without review"
+     ],
+     "answer": 2,
+     "why": "\"those get escalated to a human — quietly, without stopping the flow.\""
+    },
+    {
+     "q": "Why does Emily say the system will \"look like nothing is happening\"?",
+     "options": [
+      "Because success is invisible — a prevented crisis leaves no visible signal",
+      "Because the system will run very slowly",
+      "Because the committee will not be given access to it",
+      "Because most invoices will be rejected"
+     ],
+     "answer": 0,
+     "why": "Inferência: valor preventivo não gera alarde; só se percebe o sistema quando ele falha ou quando o auditor pede a documentação limpa."
+    },
+    {
+     "q": "What can be inferred about Emily's attitude toward her own project?",
+     "options": [
+      "She overstates its visibility to win praise",
+      "She is realistic about it being unglamorous but consequential",
+      "She doubts it will ever be approved",
+      "She expects constant recognition once it launches"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela é franca — \"look like nothing is happening\" — mas defende o valor real: entregar dois anos de documentação limpa sob demanda."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"At scale, governance is no longer an <strong>intake checklist</strong> but a full programme.\" An intake checklist is…",
+     "options": [
+      "a simple list used to screen items as they arrive",
+      "a legal contract with a supplier",
+      "a summary of the year's tax filings",
+      "a schedule of board meetings"
+     ],
+     "answer": 0,
+     "why": "Intake checklist = checklist de entrada: uma lista de triagem aplicada às notas quando chegam."
+    },
+    {
+     "q": "Choose the correct word: \"The engine flags every ___ invoice — one missing a tax number, a date or the currency.\"",
+     "options": [
+      "incomplete",
+      "detailed",
+      "patient",
+      "automated"
+     ],
+     "answer": 0,
+     "why": "Incomplete = incompleta: nota à qual falta um campo obrigatório."
+    },
+    {
+     "q": "Choose the correct term: \"When a rule cannot resolve a case, it triggers an ___ to a senior reviewer.\"",
+     "options": [
+      "escalation",
+      "intake checklist",
+      "flood",
+      "control"
+     ],
+     "answer": 0,
+     "why": "Escalation = escalonamento: elevar o caso a alguém com mais autoridade."
+    },
+    {
+     "q": "\"Tens of thousands of invoices arrive each month — a genuine <strong>flood</strong>.\" Here flood means…",
+     "options": [
+      "an overwhelming volume",
+      "a system failure",
+      "a financial loss",
+      "a delayed payment"
+     ],
+     "answer": 0,
+     "why": "Flood = enxurrada: um volume que domina qualquer processo manual."
+    },
+    {
+     "q": "<strong>Patient design</strong> is best described as…",
+     "options": [
+      "a quick fix applied under deadline pressure",
+      "the unhurried, deliberate building of systems before they are needed",
+      "a design approved only by the patient teams",
+      "a temporary workaround pending audit"
+     ],
+     "answer": 1,
+     "why": "Patient design = desenho paciente: construir controles com antecedência, para que já existam quando o problema surgir."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de governança e conformidade. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The head of tax still has to <strong>sign off on</strong> the intake rules.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly ignore",
+      "postpone indefinitely",
+      "leak to a supplier"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the checks country by country.\" To roll out means to…",
+     "options": [
+      "shut down gradually",
+      "implement in stages",
+      "audit retrospectively",
+      "outsource entirely"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva, região por região."
+    },
+    {
+     "q": "\"Two suppliers <strong>pushed back on</strong> the new mandatory fields.\" They…",
+     "options": [
+      "adopted them at once",
+      "resisted or objected to them",
+      "forgot about them",
+      "rewrote the tax code"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, contestar — sem necessariamente recusar de vez."
+    },
+    {
+     "q": "\"The team agreed the controls but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "failed to carry them to completion",
+      "over-delivered on them",
+      "documented them perfectly",
+      "escalated them too early"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim aquilo que foi combinado."
+    },
+    {
+     "q": "\"Catching ninety-five per cent of bad invoices genuinely <strong>moves the needle</strong> on audit risk.\" This means it…",
+     "options": [
+      "makes a real, measurable difference",
+      "adds needless cost",
+      "delays the audit",
+      "has no effect at all"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, produzir um efeito perceptível e mensurável."
+    }
+   ]
+  }
+ ]
+}

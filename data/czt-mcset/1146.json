@@ -1,0 +1,259 @@
+{
+ "num": 1146,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Taxes can sound hard, but in English they follow simple patterns.<br><br>Today you learn five useful words: number, percent, amount, total and rate. These words appear on Czarnikow's forms and reports. You will practise them in short, natural sentences.<br><br>Go slowly — one small step at a time. English comes in CAN's, not in CAN'Ts. You can do it!",
+   "items": [
+    {
+     "q": "How many new words does the text teach today?",
+     "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"Today you learn five useful words.\""
+    },
+    {
+     "q": "Where do these words appear?",
+     "options": [
+      "On Czarnikow's forms and reports",
+      "In the news",
+      "On a menu",
+      "In a song"
+     ],
+     "answer": 0,
+     "why": "\"These words appear on Czarnikow's forms and reports.\""
+    },
+    {
+     "q": "The text says English comes in…",
+     "options": [
+      "CAN'Ts, not CAN's",
+      "CAN's, not CAN'Ts",
+      "numbers only",
+      "long sentences"
+     ],
+     "answer": 1,
+     "why": "\"English comes in CAN's, not in CAN'Ts.\""
+    },
+    {
+     "q": "What does \"one small step at a time\" suggest about learning?",
+     "options": [
+      "You should learn everything in one day",
+      "You can learn slowly and it is fine",
+      "Taxes are impossible to learn",
+      "You must be an expert first"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto pede calma — aprender aos poucos é o caminho certo."
+    },
+    {
+     "q": "The author would most likely DISAGREE with…",
+     "options": [
+      "Taxes follow simple patterns in English",
+      "You can learn these words with practice",
+      "Taxes in English are too hard for a beginner",
+      "Short sentences help you learn"
+     ],
+     "answer": 2,
+     "why": "Inferência: o tom do texto é positivo — ele diz que você consegue, então discordaria de que é difícil demais."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie ler a tabela de alíquotas com o aluno. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! Let's read this tax table together. Take your time. We go one line at a time.<br><br>Look at the first number. It is one hundred. That is the amount for this month. Good. Now look next to it. The rate is ten percent. So we say: the rate is ten percent.<br><br>Now the second line. The number is two hundred. The rate is five percent. Say it with me: five percent. Very good!<br><br>Now we add the two lines. One hundred plus two hundred. The total is three hundred. We always check the total before the deadline. The number must be correct before we send the form.<br><br>You are doing well. Taxes are just one more part of our routine. One small step at a time. You can do it!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the amount for this month?",
+     "options": [
+      "One hundred",
+      "Two hundred",
+      "Three hundred",
+      "Five hundred"
+     ],
+     "answer": 0,
+     "why": "\"It is one hundred. That is the amount for this month.\""
+    },
+    {
+     "q": "What is the rate on the first line?",
+     "options": [
+      "Five percent",
+      "Ten percent",
+      "Twenty percent",
+      "One hundred percent"
+     ],
+     "answer": 1,
+     "why": "\"The rate is ten percent.\""
+    },
+    {
+     "q": "What is the total of the two lines?",
+     "options": [
+      "One hundred",
+      "Two hundred",
+      "Three hundred",
+      "Four hundred"
+     ],
+     "answer": 2,
+     "why": "\"One hundred plus two hundred. The total is three hundred.\""
+    },
+    {
+     "q": "Why does Sophie say \"Take your time\" and \"one line at a time\"?",
+     "options": [
+      "She wants to help the student learn calmly",
+      "She is in a hurry",
+      "The table is very short",
+      "She does not like numbers"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela repete que dá para ir devagar — quer que o aluno aprenda com calma."
+    },
+    {
+     "q": "How does Sophie feel about the student's work?",
+     "options": [
+      "She is not happy",
+      "She thinks the student is doing well",
+      "She wants to stop the lesson",
+      "She is confused"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela diz \"Very good!\" e \"You are doing well\" — está satisfeita."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>number</strong> must be correct before we send the form.\" A <strong>number</strong> is…",
+     "options": [
+      "a número (like 1, 2, 3)",
+      "a color",
+      "a name",
+      "a day"
+     ],
+     "answer": 0,
+     "why": "Number = número."
+    },
+    {
+     "q": "\"There is a new <strong>percent</strong> on the tax calendar this month.\" <strong>Percent</strong> means…",
+     "options": [
+      "por cento (%)",
+      "total",
+      "a form",
+      "a folder"
+     ],
+     "answer": 0,
+     "why": "Percent = por cento (%)."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ is ready for the accountant to review.\"",
+     "options": [
+      "amount",
+      "door",
+      "chair",
+      "week"
+     ],
+     "answer": 0,
+     "why": "Amount = valor / quantia — o que o contador vai revisar."
+    },
+    {
+     "q": "\"We check every <strong>total</strong> before the deadline.\" A <strong>total</strong> is…",
+     "options": [
+      "the final sum of the numbers",
+      "the first number",
+      "a name",
+      "a color"
+     ],
+     "answer": 0,
+     "why": "Total = a soma final dos números."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ stays in the fiscal folder for seven years.\"",
+     "options": [
+      "rate",
+      "lunch",
+      "window",
+      "song"
+     ],
+     "answer": 0,
+     "why": "Rate = alíquota — fica guardada na pasta fiscal."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>fill in</strong> the tax form.\" To <strong>fill in</strong> means to…",
+     "options": [
+      "write the information in the spaces",
+      "throw the form away",
+      "read the form fast",
+      "hide the form"
+     ],
+     "answer": 0,
+     "why": "Fill in = preencher — escrever a informação nos espaços."
+    },
+    {
+     "q": "\"Let's <strong>add up</strong> the numbers.\" To <strong>add up</strong> means to…",
+     "options": [
+      "find the total",
+      "delete the numbers",
+      "read the numbers",
+      "copy the numbers"
+     ],
+     "answer": 0,
+     "why": "Add up = somar, encontrar o total."
+    },
+    {
+     "q": "\"We <strong>send off</strong> the form before the deadline.\" To <strong>send off</strong> means to…",
+     "options": [
+      "send it to someone",
+      "keep it in a drawer",
+      "print it many times",
+      "sign it"
+     ],
+     "answer": 0,
+     "why": "Send off = enviar, mandar para alguém."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the total one more time.\" To <strong>go over</strong> means to…",
+     "options": [
+      "check or review it",
+      "forget it",
+      "delete it",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Go over = revisar, conferir mais uma vez."
+    },
+    {
+     "q": "\"Take your time and <strong>carry on</strong>.\" To <strong>carry on</strong> means to…",
+     "options": [
+      "continue",
+      "stop now",
+      "start again",
+      "close the book"
+     ],
+     "answer": 0,
+     "why": "Carry on = continuar."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 469,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At scale, deductions and exemptions add up to meaningful amounts — but only when they are tracked systematically. Every country has its own set; every set changes over time; and every deduction requires specific documentation to survive an audit years later. A large group that leaves this to ad-hoc effort misses roughly a third of what it is legally entitled to claim, every single year.<br><br>Senior leaders respond by building a central register of deductions and exemptions, refreshed annually, mapped to the calendar, and assigned to named owners. The register is boring. The value it captures is not.<br><br>Had the team kept a proper register last year, the R&D credit we missed would have covered the cost of the whole tax department. The anecdote is common across large groups. It is precisely why the quiet, unglamorous work of maintaining the register is one of the highest-return activities in senior tax leadership.",
+   "items": [
+    {
+     "q": "According to the text, when do deductions and exemptions add up to meaningful amounts?",
+     "options": [
+      "Only when they are tracked systematically",
+      "Only in a single jurisdiction",
+      "Whenever an audit is announced",
+      "Only for small companies"
+     ],
+     "answer": 0,
+     "why": "\"deductions and exemptions add up to meaningful amounts — but only when they are tracked systematically.\""
+    },
+    {
+     "q": "How much does a group relying on ad-hoc effort typically miss each year?",
+     "options": [
+      "Nothing measurable",
+      "Roughly a third of what it is legally entitled to claim",
+      "The entire R&D credit only",
+      "Half of its taxable income"
+     ],
+     "answer": 1,
+     "why": "\"misses roughly a third of what it is legally entitled to claim, every single year.\""
+    },
+    {
+     "q": "What does the phrase \"The register is boring. The value it captures is not\" most strongly suggest?",
+     "options": [
+      "The register should be replaced by something more engaging",
+      "Tedious, routine work can produce high financial returns",
+      "Boring work rarely matters in tax leadership",
+      "The register captures no measurable value"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto contrapõe o tédio da tarefa ao alto valor que ela gera — o esforço maçante é justamente o que rende."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A central register should have named owners.",
+      "Unglamorous, repetitive work can be strategically valuable.",
+      "Leaving deductions to ad-hoc effort is an efficient use of resources.",
+      "Documentation must survive an audit years later."
+     ],
+     "answer": 2,
+     "why": "Inferência: todo o texto argumenta contra o esforço improvisado, que faz a empresa perder um terço do que teria direito."
+    },
+    {
+     "q": "What does the R&D credit anecdote suggest about missed deductions?",
+     "options": [
+      "They are trivial compared with total tax paid",
+      "A single missed item can outweigh the entire cost of the tax team",
+      "They occur only in R&D-heavy companies",
+      "They are impossible to recover once lost"
+     ],
+     "answer": 1,
+     "why": "Inferência: o crédito perdido teria coberto o custo de todo o departamento — logo, uma única omissão pode superar o custo da equipe."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie explicando à liderança por que está reconstruindo o registro central. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, before anyone asks why I'm spending three weeks on a spreadsheet — let me put a number on it. Last year we missed a single R&D credit. Just one. Had we captured it, it would have covered the entire salary bill of this tax team. That's the scale we're talking about.<br><br>The problem was never that we're careless. It's that we've been doing this ad-hoc. Someone remembers a deduction in March, someone else claims a different one in October, and nobody keeps the full picture. So every year we quietly leave roughly a third of what we're entitled to on the table.<br><br>What I'm building is a central register. Every deduction, every exemption, mapped to the calendar, refreshed once a year, and — this is the part that matters — assigned to a named owner. If it isn't someone's job, it doesn't get done.<br><br>I know a register sounds tedious. It is. But had we maintained one last year, we wouldn't be having this conversation. The boring work is the work that pays.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How does Sophie justify spending three weeks on the register?",
+     "options": [
+      "It is required by the auditors",
+      "A single missed credit would have covered the whole team's salary bill",
+      "The board asked her to do it",
+      "It reduces the number of jurisdictions to track"
+     ],
+     "answer": 1,
+     "why": "\"it would have covered the entire salary bill of this tax team.\""
+    },
+    {
+     "q": "According to Sophie, what was the real cause of the missed deductions?",
+     "options": [
+      "The team was careless",
+      "The work was done ad-hoc, with no one keeping the full picture",
+      "The jurisdictions changed their rules",
+      "The software was out of date"
+     ],
+     "answer": 1,
+     "why": "\"The problem was never that we're careless. It's that we've been doing this ad-hoc.\""
+    },
+    {
+     "q": "Which feature of the register does Sophie stress as the one that matters most?",
+     "options": [
+      "It is refreshed once a year",
+      "It is mapped to the calendar",
+      "Each item is assigned to a named owner",
+      "It lists every jurisdiction"
+     ],
+     "answer": 2,
+     "why": "\"assigned to a named owner. If it isn't someone's job, it doesn't get done.\""
+    },
+    {
+     "q": "What does Sophie imply with \"If it isn't someone's job, it doesn't get done\"?",
+     "options": [
+      "Shared responsibility tends to become no responsibility",
+      "The team should hire more staff",
+      "Owners should rotate every month",
+      "The register should be fully automated"
+     ],
+     "answer": 0,
+     "why": "Inferência: sem um dono nomeado, a tarefa fica difusa e acaba não sendo feita por ninguém."
+    },
+    {
+     "q": "How would you best describe Sophie's overall attitude?",
+     "options": [
+      "Defensive and apologetic about the delay",
+      "Pragmatic, making the case that dull work is high-value",
+      "Uncertain about whether the register is worth it",
+      "Dismissive of the tax team's past efforts"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela reconhece o tédio, mas argumenta com números que o trabalho maçante é o que dá retorno."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The deductions were tracked <strong>systematically</strong>, not left to chance.\" This means they were tracked…",
+     "options": [
+      "in a methodical, organised way",
+      "occasionally, when convenient",
+      "only during audits",
+      "by an external consultant"
+     ],
+     "answer": 0,
+     "why": "Systematically = sistematicamente, de forma metódica e organizada."
+    },
+    {
+     "q": "Choose the correct word: \"Relying on ___ effort, the group missed a third of what it could have claimed.\"",
+     "options": [
+      "ad-hoc",
+      "systematic",
+      "refreshed",
+      "documented"
+     ],
+     "answer": 0,
+     "why": "Ad-hoc = improvisado, sem método — o oposto de sistemático."
+    },
+    {
+     "q": "\"The group was legally <strong>entitled to</strong> the credit.\" To be entitled to something means to…",
+     "options": [
+      "have a legal right to it",
+      "be obliged to pay it",
+      "have already lost it",
+      "be advised against it"
+     ],
+     "answer": 0,
+     "why": "To entitle = autorizar, dar direito; be entitled to = ter direito a."
+    },
+    {
+     "q": "Choose the correct term: \"The ___ is refreshed once a year and assigned to named owners.\"",
+     "options": [
+      "central register",
+      "audit trail",
+      "R&D credit",
+      "anecdote"
+     ],
+     "answer": 0,
+     "why": "Central register = registro central, o documento único onde tudo é mapeado."
+    },
+    {
+     "q": "\"The maintenance work is <strong>unglamorous</strong> but highly profitable.\" Unglamorous means…",
+     "options": [
+      "dull and unexciting",
+      "risky and uncertain",
+      "expensive and slow",
+      "public and visible"
+     ],
+     "answer": 0,
+     "why": "Unglamorous = sem glamour, tedioso — mas, aqui, de alto retorno."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de gestão tributária. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The CFO still has to <strong>sign off on</strong> the register before we file.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly ignore",
+      "postpone indefinitely",
+      "hand over to auditors"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the register across all entities next quarter.\" To roll out means to…",
+     "options": [
+      "implement in stages",
+      "shut down gradually",
+      "audit in secret",
+      "outsource entirely"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva, entidade por entidade."
+    },
+    {
+     "q": "\"The team agreed to update the register but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "failed to carry it to completion",
+      "finished it ahead of schedule",
+      "delegated it to the auditors",
+      "rewrote it from scratch"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"A single missed credit like that really <strong>moves the needle</strong> on the department's budget.\" This means it…",
+     "options": [
+      "makes a noticeable difference",
+      "has no measurable effect",
+      "is impossible to quantify",
+      "increases the audit risk"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    },
+    {
+     "q": "\"Over-claiming deductions can quickly <strong>backfire</strong> in an audit.\" To backfire means to…",
+     "options": [
+      "produce the opposite of the intended result",
+      "be approved without question",
+      "save more money than expected",
+      "be postponed to a later year"
+     ],
+     "answer": 0,
+     "why": "Backfire = sair pela culatra; a tentativa de ganhar mais acaba gerando uma disputa fiscal."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 1036,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Looking at yesterday helps us plan tomorrow. Last week had good moments. It also had busy ones.<br><br>Today we use <strong>was</strong> and <strong>were</strong> to tell that story. Monday was busy. The calls were long. The team was great.<br><br>Today we learn 5 useful words and we practise a lot. Take your time. Every sentence counts.",
+   "items": [
+    {
+     "q": "What helps us plan tomorrow?",
+     "options": [
+      "Looking at yesterday",
+      "Reading the news",
+      "Making calls",
+      "Learning ten words"
+     ],
+     "answer": 0,
+     "why": "\"Looking at yesterday helps us plan tomorrow.\""
+    },
+    {
+     "q": "How were the calls?",
+     "options": [
+      "Short",
+      "Long",
+      "Easy",
+      "Quiet"
+     ],
+     "answer": 1,
+     "why": "\"The calls were long.\""
+    },
+    {
+     "q": "The text says Monday was...",
+     "options": [
+      "free",
+      "busy",
+      "happy",
+      "late"
+     ],
+     "answer": 1,
+     "why": "\"Monday was busy.\""
+    },
+    {
+     "q": "The writer would most likely AGREE that...",
+     "options": [
+      "the past has nothing to teach us",
+      "we can learn from last week",
+      "practice is not important",
+      "every day is the same"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que olhar para ontem ajuda a planejar — o passado ensina."
+    },
+    {
+     "q": "\"Take your time. Every sentence counts.\" This suggests the lesson wants you to...",
+     "options": [
+      "go slowly and practise well",
+      "finish very fast",
+      "skip the hard parts",
+      "only read, not speak"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"take your time\" pede calma; cada frase importa, então vale praticar com cuidado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emma falar da semana passada. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello. My name is Emma. Let me tell you about my last week here at Czarnikow.<br><br>Monday was very busy. I was at the office early. The morning calls were long, but they were good. My team was great. Everyone was ready.<br><br>Tuesday was easy. I was at home. I was on two calls, and they were short. The report was easy, so I was happy.<br><br>Wednesday was different. I was tired. Two days before, I was a little sick, so the day was slow. But my friends at work were kind. They were there for me.<br><br>On Thursday and Friday, we were in a big meeting. The room was full. The plans were clear. At the end, we were all happy with the results.<br><br>So, last week was busy, but it was a good week. Now I am ready for a new one. Thank you for listening.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How was Emma's Monday?",
+     "options": [
+      "Easy",
+      "Very busy",
+      "Free",
+      "Sad"
+     ],
+     "answer": 1,
+     "why": "\"Monday was very busy.\""
+    },
+    {
+     "q": "Where was Emma on Tuesday?",
+     "options": [
+      "At the office",
+      "At home",
+      "In London",
+      "In a big meeting"
+     ],
+     "answer": 1,
+     "why": "\"Tuesday was easy. I was at home.\""
+    },
+    {
+     "q": "Why was Wednesday slow?",
+     "options": [
+      "The calls were long",
+      "She was a little sick two days before",
+      "The room was full",
+      "The report was hard"
+     ],
+     "answer": 1,
+     "why": "\"Two days before, I was a little sick, so the day was slow.\""
+    },
+    {
+     "q": "Emma says her friends at work \"were there for me.\" This suggests they were...",
+     "options": [
+      "supportive",
+      "angry",
+      "away",
+      "too busy"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"kind\" e \"there for me\" mostram apoio."
+    },
+    {
+     "q": "How does Emma feel about last week overall?",
+     "options": [
+      "It was bad",
+      "It was busy but good",
+      "It was boring",
+      "It was too easy"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"last week was busy, but it was a good week.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I was at the office <strong>yesterday</strong>.\" <strong>Yesterday</strong> means...",
+     "options": [
+      "the day before today",
+      "next week",
+      "right now",
+      "tomorrow morning"
+     ],
+     "answer": 0,
+     "why": "Yesterday = ontem, o dia antes de hoje."
+    },
+    {
+     "q": "Choose the correct word: \"___ week was great for the team.\"",
+     "options": [
+      "Last",
+      "Next",
+      "Every",
+      "Some"
+     ],
+     "answer": 0,
+     "why": "Last week = a semana passada, que combina com \"was\"."
+    },
+    {
+     "q": "\"Two days <strong>ago</strong>, I was sick.\" <strong>Ago</strong> means...",
+     "options": [
+      "in the past, from now",
+      "in the future",
+      "at the office",
+      "very soon"
+     ],
+     "answer": 0,
+     "why": "Ago = atrás; \"two days ago\" = há dois dias."
+    },
+    {
+     "q": "Choose the correct word: \"Monday was ___. I had many calls and no free time.\"",
+     "options": [
+      "busy",
+      "easy",
+      "late",
+      "short"
+     ],
+     "answer": 0,
+     "why": "Busy = ocupado; muitas ligações e sem tempo livre."
+    },
+    {
+     "q": "\"The report was <strong>easy</strong>.\" <strong>Easy</strong> means...",
+     "options": [
+      "not hard to do",
+      "very long",
+      "very important",
+      "full of errors"
+     ],
+     "answer": 0,
+     "why": "Easy = fácil, não difícil."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"I <strong>was off</strong> on Friday.\" To be off means you were...",
+     "options": [
+      "not at work",
+      "at a long meeting",
+      "very busy",
+      "on a call"
+     ],
+     "answer": 0,
+     "why": "To be off = estar de folga, fora do trabalho."
+    },
+    {
+     "q": "\"On Monday I <strong>caught up on</strong> my emails.\" To catch up on means to...",
+     "options": [
+      "do work you were behind on",
+      "delete all your emails",
+      "send new emails",
+      "ignore your emails"
+     ],
+     "answer": 0,
+     "why": "Catch up on = colocar em dia o que estava atrasado."
+    },
+    {
+     "q": "\"The team <strong>signed off on</strong> the report.\" To sign off on means to...",
+     "options": [
+      "approve it",
+      "print it",
+      "lose it",
+      "start it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"The call was long, but we <strong>followed up</strong> by email.\" To follow up means to...",
+     "options": [
+      "send a message after, to continue",
+      "cancel the plan",
+      "arrive late",
+      "say no"
+     ],
+     "answer": 0,
+     "why": "Follow up = dar continuidade, retomar depois."
+    },
+    {
+     "q": "\"On Tuesday I <strong>worked from home</strong>.\" This means you...",
+     "options": [
+      "did your job at home",
+      "took the day off",
+      "went to the office",
+      "stopped working"
+     ],
+     "answer": 0,
+     "why": "Work from home = trabalhar de casa."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 170,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Managing FX at scale means moving from single trades to exposure aggregation. A large trade business receives dollars, euros, yen and rupees in hundreds of transactions a month, and pays out in another mix entirely. The task is not to hedge each trade but to understand the net exposure of the enterprise — and then decide what to do with it.<br><br>A mature FX programme has three layers. At the bottom, natural hedges — matching inflows and outflows in the same currency before doing anything else. In the middle, a rolling forward hedge programme that locks in a declining percentage of exposure over the next quarters. At the top, carefully judged tactical positions for unusual situations: a commodity move, a political event, a treasury officer with a view.<br><br>The discipline is not to predict currencies. It is to make sure that, however they move, the business remains close to its target margin. The CFOs who protect margin across cycles rarely make the most money in any single year — but they are still running the company five years later. That is the only test that matters.",
+   "items": [
+    {
+     "q": "According to the text, what is the central task when managing FX at scale?",
+     "options": [
+      "To hedge every individual trade as it settles",
+      "To understand the net exposure of the enterprise",
+      "To predict the direction of each currency pair",
+      "To maximise profit in the strongest year"
+     ],
+     "answer": 1,
+     "why": "\"The task is not to hedge each trade but to understand the net exposure of the enterprise.\""
+    },
+    {
+     "q": "Which layer sits at the bottom of a mature FX programme?",
+     "options": [
+      "Tactical positions for unusual situations",
+      "A rolling forward hedge programme",
+      "Natural hedges matching inflows and outflows",
+      "Speculative currency bets"
+     ],
+     "answer": 2,
+     "why": "\"At the bottom, natural hedges — matching inflows and outflows in the same currency.\""
+    },
+    {
+     "q": "What does the rolling forward programme do?",
+     "options": [
+      "Locks in a declining percentage of exposure over coming quarters",
+      "Hedges the full exposure in a single contract",
+      "Reacts only to political events",
+      "Eliminates the need for natural hedges"
+     ],
+     "answer": 0,
+     "why": "\"a rolling forward hedge programme that locks in a declining percentage of exposure over the next quarters.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Protecting the target margin matters more than any single year's profit",
+      "A treasurer who forecasts the euro correctly is running the programme well",
+      "Natural hedges should be exhausted before other layers are used",
+      "Longevity is the truest measure of an FX programme's success"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto insiste que a disciplina não é prever moedas — acertar o câmbio não é o sinal de um bom programa."
+    },
+    {
+     "q": "The final sentence, \"That is the only test that matters,\" suggests that the author values…",
+     "options": [
+      "the highest annual return above all else",
+      "survival and consistency across cycles over peak performance",
+      "the size of the tactical positions taken",
+      "the number of transactions processed each month"
+     ],
+     "answer": 1,
+     "why": "Inferência: os CFOs premiados são os que \"ainda estão dirigindo a empresa cinco anos depois\" — durabilidade, não o pico."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentando o programa de FX ao comitê de tesouraria. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thank you all for making the time. What I'm proposing today replaces the trade-by-trade approach we've been running, which, frankly, has been reactive at best. We hedge when someone remembers to, and we've been carrying exposures nobody had aggregated.<br><br>The new programme has three layers. First, natural hedges — before we buy a single forward, we match dollar inflows against dollar outflows, euros against euros. Last quarter, had we done that properly, we would have avoided roughly forty per cent of the contracts we actually placed. That's cost we simply didn't need to incur.<br><br>Second, a rolling forward programme that locks in a declining share of the net exposure over the coming quarters. And third — only third — tactical positions, reserved for genuinely unusual situations and signed off individually.<br><br>I want to be clear about what this is not. It is not a bet on where sterling or the real is heading. None of us can predict that reliably, and the programme doesn't ask us to. The single measure of success is whether we hold close to target margin, whatever the currencies do. Protect the margin across the cycle, and we'll still be here to run this desk in five years.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How does Harry describe the approach the new programme replaces?",
+     "options": [
+      "Disciplined but too expensive",
+      "Reactive, hedging only when someone remembered to",
+      "Fully automated and rules-based",
+      "Focused entirely on tactical positions"
+     ],
+     "answer": 1,
+     "why": "\"reactive at best. We hedge when someone remembers to.\""
+    },
+    {
+     "q": "What benefit does Harry attribute to natural hedges, using last quarter as an example?",
+     "options": [
+      "They would have avoided roughly forty per cent of the contracts placed",
+      "They would have doubled the desk's trading profit",
+      "They would have removed the need for tactical positions",
+      "They would have predicted the euro's movement"
+     ],
+     "answer": 0,
+     "why": "\"had we done that properly, we would have avoided roughly forty per cent of the contracts we actually placed.\""
+    },
+    {
+     "q": "How are tactical positions treated in Harry's programme?",
+     "options": [
+      "They are the first layer applied",
+      "They are placed automatically each quarter",
+      "They are reserved for unusual situations and signed off individually",
+      "They replace the rolling forward programme"
+     ],
+     "answer": 2,
+     "why": "\"tactical positions, reserved for genuinely unusual situations and signed off individually.\""
+    },
+    {
+     "q": "What can be inferred about Harry's view of currency forecasting?",
+     "options": [
+      "He believes the desk can forecast sterling with enough data",
+      "He thinks reliable prediction is not realistic and the programme doesn't rely on it",
+      "He wants the committee to hire external forecasters",
+      "He sees forecasting as the programme's main strength"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"None of us can predict that reliably, and the programme doesn't ask us to.\""
+    },
+    {
+     "q": "What does Harry imply by \"we'll still be here to run this desk in five years\"?",
+     "options": [
+      "The desk will grow its headcount over five years",
+      "Protecting margin is what lets the business survive over time",
+      "The programme guarantees the best return each year",
+      "Currency markets will stabilise within five years"
+     ],
+     "answer": 1,
+     "why": "Inferência: proteger a margem ao longo do ciclo é o que assegura a continuidade — não o lucro máximo de um ano."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Before hedging anything, we built a full picture through <strong>exposure aggregation</strong>.\" This means…",
+     "options": [
+      "combining all currency exposures into a single enterprise-wide view",
+      "hedging each transaction the moment it settles",
+      "forecasting where each currency will trade next",
+      "cancelling contracts that overlap"
+     ],
+     "answer": 0,
+     "why": "Exposure aggregation = agregação de exposição: juntar tudo numa visão única da empresa."
+    },
+    {
+     "q": "Choose the correct term: \"By matching dollar receipts against dollar payments, the desk created a ___ before buying any forwards.\"",
+     "options": [
+      "tactical position",
+      "natural hedge",
+      "target margin",
+      "rolling programme"
+     ],
+     "answer": 1,
+     "why": "Natural hedge = hedge natural: compensar entradas e saídas na mesma moeda sem instrumento."
+    },
+    {
+     "q": "<strong>Net exposure</strong> is best described as…",
+     "options": [
+      "the total of all incoming transactions",
+      "what remains once inflows and outflows are offset against each other",
+      "the largest single trade of the month",
+      "the fee charged on a forward contract"
+     ],
+     "answer": 1,
+     "why": "Net exposure = exposição líquida: o saldo após compensar entradas e saídas."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ forward programme locks in a declining percentage of exposure quarter after quarter.\"",
+     "options": [
+      "rolling",
+      "tactical",
+      "natural",
+      "reactive"
+     ],
+     "answer": 0,
+     "why": "Rolling hedge = hedge rolante: renovado e ajustado a cada período."
+    },
+    {
+     "q": "\"The whole point is not to <strong>predict</strong> the currency, but to protect the <strong>target margin</strong>.\" Together these terms contrast…",
+     "options": [
+      "forecasting the market versus defending the intended profit margin",
+      "buying forwards versus selling them",
+      "two different reporting currencies",
+      "short-term versus long-term contracts"
+     ],
+     "answer": 0,
+     "why": "To predict = prever; target margin = margem-alvo. A lição opõe prever o câmbio a proteger a margem."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de tesouraria e hedge. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The committee still has to <strong>sign off on</strong> each tactical position.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly ignore",
+      "postpone indefinitely",
+      "publicly announce"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the three-layer programme desk by desk.\" To roll out means to…",
+     "options": [
+      "implement in stages",
+      "shut down gradually",
+      "keep confidential",
+      "escalate to the board"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two treasurers <strong>pushed back on</strong> the tactical layer.\" They…",
+     "options": [
+      "approved it at once",
+      "resisted or challenged it",
+      "rewrote the whole plan",
+      "delayed reading it"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The desk approved the hedge policy but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "carried it out fully",
+      "failed to carry it to completion",
+      "handed it to another team",
+      "documented it in detail"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado — aqui, o que faltou."
+    },
+    {
+     "q": "\"Chasing the best year won't <strong>move the needle</strong> on long-term survival.\" This means it will…",
+     "options": [
+      "make a decisive difference",
+      "not make a noticeable difference",
+      "raise costs sharply",
+      "take years to measure"
+     ],
+     "answer": 1,
+     "why": "Move the needle = fazer diferença perceptível; com \"won't\", significa que não muda nada de fato."
+    }
+   ]
+  }
+ ]
+}

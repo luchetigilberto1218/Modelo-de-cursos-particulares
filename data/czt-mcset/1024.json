@@ -1,0 +1,259 @@
+{
+ "num": 1024,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A good week is easy when it is organised. At Czarnikow, every weekday has its own tasks.<br><br>There are calls on Monday. There are reports on Wednesday. There is a team lunch on Friday.<br><br>Today we connect the days of the week with the things we really do at work. Take your time. Every sentence counts.",
+   "items": [
+    {
+     "q": "When are the calls?",
+     "options": [
+      "On Monday",
+      "On Wednesday",
+      "On Friday",
+      "On Sunday"
+     ],
+     "answer": 0,
+     "why": "\"There are calls on Monday.\" — as ligações são na segunda."
+    },
+    {
+     "q": "What day is the team lunch?",
+     "options": [
+      "Monday",
+      "Wednesday",
+      "Friday",
+      "Thursday"
+     ],
+     "answer": 2,
+     "why": "\"There is a team lunch on Friday.\" — o almoço em equipe é na sexta."
+    },
+    {
+     "q": "What do people do on Wednesday?",
+     "options": [
+      "Calls",
+      "Reports",
+      "Lunch",
+      "Rest"
+     ],
+     "answer": 1,
+     "why": "\"There are reports on Wednesday.\" — relatórios na quarta."
+    },
+    {
+     "q": "The text suggests that a good week is easier when it is…",
+     "options": [
+      "long",
+      "organised",
+      "busy",
+      "short"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"A good week is easy when it is organised.\" — organização ajuda."
+    },
+    {
+     "q": "The text suggests that each day at Czarnikow has…",
+     "options": [
+      "the same tasks",
+      "no tasks",
+      "its own tasks",
+      "only calls"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"every weekday has its own tasks\" — cada dia tem tarefas diferentes."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emma falar sobre a semana dela no Czarnikow. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! I am Emma. Let me tell you about my week at Czarnikow. It is simple and I like it.<br><br>On Monday, I have a meeting with my team. We talk about the new week. On Tuesday, I call clients. I like Tuesday because I talk to many people.<br><br>Wednesday is report day. I sit at my desk and I write reports. It is quiet and calm. On Thursday, I work from home. I do not go to the office, so I have more time in the morning.<br><br>Friday is my favourite day. Friday is team lunch. We eat together and we laugh. It is a nice way to end the week.<br><br>On Saturday, I rest. Sunday is family day. Then, on Monday, the week starts again. See you on Monday!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Emma do on Monday?",
+     "options": [
+      "She calls clients",
+      "She has a meeting with her team",
+      "She works from home",
+      "She rests"
+     ],
+     "answer": 1,
+     "why": "\"On Monday, I have a meeting with my team.\""
+    },
+    {
+     "q": "Where does Emma work on Thursday?",
+     "options": [
+      "At the office",
+      "At a client's office",
+      "From home",
+      "At lunch"
+     ],
+     "answer": 2,
+     "why": "\"On Thursday, I work from home.\""
+    },
+    {
+     "q": "What is Emma's favourite day?",
+     "options": [
+      "Monday",
+      "Wednesday",
+      "Friday",
+      "Sunday"
+     ],
+     "answer": 2,
+     "why": "\"Friday is my favourite day. Friday is team lunch.\""
+    },
+    {
+     "q": "Why does Emma like Tuesday?",
+     "options": [
+      "Because she talks to many people",
+      "Because she rests",
+      "Because she eats lunch",
+      "Because she writes reports"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"I like Tuesday because I talk to many people.\""
+    },
+    {
+     "q": "How does Emma feel about her week?",
+     "options": [
+      "Tired and unhappy",
+      "Calm and happy",
+      "Angry",
+      "Bored"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela diz \"I like it\", \"It is quiet and calm\" e \"a nice way to end the week\" — ela gosta da semana."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I have a big meeting on <strong>Monday</strong>.\" Monday is…",
+     "options": [
+      "segunda",
+      "terça",
+      "sexta",
+      "domingo"
+     ],
+     "answer": 0,
+     "why": "Monday = segunda-feira."
+    },
+    {
+     "q": "\"On <strong>Wednesday</strong>, I write my report.\" Wednesday is…",
+     "options": [
+      "segunda",
+      "quarta",
+      "quinta",
+      "sábado"
+     ],
+     "answer": 1,
+     "why": "Wednesday = quarta-feira."
+    },
+    {
+     "q": "Choose the correct word: \"On ___, I call my clients. It is the day after Monday.\"",
+     "options": [
+      "Tuesday",
+      "Friday",
+      "Sunday",
+      "Thursday"
+     ],
+     "answer": 0,
+     "why": "Tuesday = terça, o dia depois de Monday (segunda)."
+    },
+    {
+     "q": "Choose the correct word: \"The team lunch is on ___. It is the last workday of the week.\"",
+     "options": [
+      "Monday",
+      "Wednesday",
+      "Friday",
+      "Tuesday"
+     ],
+     "answer": 2,
+     "why": "Friday = sexta, o último dia útil da semana."
+    },
+    {
+     "q": "\"I work from home on <strong>Thursday</strong>.\" Thursday is…",
+     "options": [
+      "terça",
+      "quarta",
+      "quinta",
+      "sexta"
+     ],
+     "answer": 2,
+     "why": "Thursday = quinta-feira."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>See you on Monday!</strong>\" This means…",
+     "options": [
+      "Até segunda!",
+      "Bom trabalho!",
+      "Estou atrasado.",
+      "Adeus para sempre."
+     ],
+     "answer": 0,
+     "why": "See you on Monday = a gente se vê na segunda."
+    },
+    {
+     "q": "\"I <strong>work from home</strong> on Thursday.\" This means I…",
+     "options": [
+      "go to the office",
+      "do my job at home",
+      "take the day off",
+      "travel for work"
+     ],
+     "answer": 1,
+     "why": "Work from home = trabalhar de casa."
+    },
+    {
+     "q": "\"Let's <strong>set up a meeting</strong> for Monday.\" To set up a meeting means to…",
+     "options": [
+      "cancel a meeting",
+      "arrange a meeting",
+      "leave a meeting",
+      "join a meeting late"
+     ],
+     "answer": 1,
+     "why": "Set up a meeting = marcar/organizar uma reunião."
+    },
+    {
+     "q": "\"Can you <strong>send over</strong> the report on Wednesday?\" To send over means to…",
+     "options": [
+      "send it to me",
+      "delete it",
+      "print it",
+      "read it out loud"
+     ],
+     "answer": 0,
+     "why": "Send over = enviar (algo) para alguém."
+    },
+    {
+     "q": "\"On Friday we <strong>catch up</strong> at lunch.\" To catch up means to…",
+     "options": [
+      "talk and share news",
+      "work faster",
+      "go home early",
+      "start a new project"
+     ],
+     "answer": 0,
+     "why": "Catch up = colocar a conversa em dia, trocar novidades."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 310,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Cross-docking is a clever way to move goods without really storing them. A truck arrives on one side of the warehouse. The goods are unloaded, sorted, and almost immediately loaded onto another truck on the other side. They never sit on a shelf.<br><br>The benefit is speed and a lower storage cost. Products spend hours, not days, inside the warehouse.<br><br>The downside is that it only works when everything is well coordinated. A missed inbound truck breaks the whole flow. Cross-docking is the art of moving goods without keeping them.",
+   "items": [
+    {
+     "q": "What happens to the goods after they are unloaded?",
+     "options": [
+      "They are sorted and loaded onto another truck",
+      "They are stored on a shelf for days",
+      "They are sent back to the supplier",
+      "They are counted and left on the floor"
+     ],
+     "answer": 0,
+     "why": "\"unloaded, sorted, and almost immediately loaded onto another truck\"."
+    },
+    {
+     "q": "How long do products stay in the warehouse?",
+     "options": [
+      "Weeks",
+      "Days",
+      "Hours",
+      "Months"
+     ],
+     "answer": 2,
+     "why": "\"Products spend hours, not days, inside the warehouse.\""
+    },
+    {
+     "q": "What is the main benefit of cross-docking?",
+     "options": [
+      "More shelf space",
+      "Speed and lower storage cost",
+      "Bigger trucks",
+      "Less paperwork"
+     ],
+     "answer": 1,
+     "why": "\"The benefit is speed and a lower storage cost.\""
+    },
+    {
+     "q": "The text suggests that cross-docking needs…",
+     "options": [
+      "a very big warehouse",
+      "good timing and coordination",
+      "many shelves",
+      "cheap workers"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"it only works when everything is well coordinated\" — depende de tempo e coordenação."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "Goods should stay on the shelf for a long time",
+      "Cross-docking is fast",
+      "A late truck can cause problems",
+      "Storage cost can be reduced"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto todo defende NÃO guardar os produtos na prateleira."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver mostrar o cross-dock a um novo supervisor. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the cross-dock. Let me show you how it works. It is really simple.<br><br>Look at that door on the left. The inbound trucks arrive there. The team unloads the sugar pallets fast. Then they sort them — this group goes to São Paulo, that group goes to Santos. There is no shelf here. We do not store anything.<br><br>On the right side, the outbound trucks are already waiting. We load the pallets straight onto them. From inbound to outbound, the sugar is here for less than ninety minutes. Hours, not days.<br><br>But listen — timing is everything. If one inbound truck is late, the whole flow stops. The outbound truck waits, and we lose time. So we watch the schedule all day. Every truck must be on time.<br><br>That is cross-docking. We move the sugar, but we never keep it.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where do the inbound trucks arrive?",
+     "options": [
+      "At the door on the left",
+      "At the door on the right",
+      "Behind the shelves",
+      "In the office"
+     ],
+     "answer": 0,
+     "why": "\"The inbound trucks arrive there\" — na porta da esquerda."
+    },
+    {
+     "q": "What do the workers do after they unload the pallets?",
+     "options": [
+      "They put them on a shelf",
+      "They sort them by destination",
+      "They send them back",
+      "They count them for a week"
+     ],
+     "answer": 1,
+     "why": "\"Then they sort them — this group goes to São Paulo, that group goes to Santos.\""
+    },
+    {
+     "q": "How long is the sugar in the warehouse?",
+     "options": [
+      "Less than ninety minutes",
+      "About two days",
+      "One week",
+      "A few hours only at night"
+     ],
+     "answer": 0,
+     "why": "\"the sugar is here for less than ninety minutes.\""
+    },
+    {
+     "q": "Why does Oliver watch the schedule all day?",
+     "options": [
+      "Because the trucks are old",
+      "Because a late truck stops the whole flow",
+      "Because the workers are slow",
+      "Because the office asks for it"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"If one inbound truck is late, the whole flow stops\" — por isso ele vigia os horários."
+    },
+    {
+     "q": "What does Oliver mean by \"we move the sugar, but we never keep it\"?",
+     "options": [
+      "The sugar is not stored, only passed through",
+      "The sugar is sold very fast",
+      "The sugar belongs to another company",
+      "The sugar is thrown away"
+     ],
+     "answer": 0,
+     "why": "Inferência: a ideia do cross-docking é passar a mercadoria adiante sem armazenar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The team will <strong>unload</strong> the truck in ten minutes.\" To unload means to…",
+     "options": [
+      "take the goods off the truck",
+      "put the goods on the truck",
+      "drive the truck away",
+      "clean the truck"
+     ],
+     "answer": 0,
+     "why": "To unload = descarregar, tirar a carga do caminhão."
+    },
+    {
+     "q": "Choose the correct word: \"We ___ the boxes by city before we send them.\"",
+     "options": [
+      "sort",
+      "unload",
+      "buy",
+      "sell"
+     ],
+     "answer": 0,
+     "why": "To sort = separar / triar, aqui por cidade."
+    },
+    {
+     "q": "\"The products never sit on a <strong>shelf</strong>.\" A shelf is…",
+     "options": [
+      "a flat board to store things",
+      "a type of truck",
+      "a worker",
+      "a door"
+     ],
+     "answer": 0,
+     "why": "Shelf = prateleira, onde se guardam as coisas."
+    },
+    {
+     "q": "Choose the correct word: \"Cross-docking cuts the ___ cost because goods are not kept for long.\"",
+     "options": [
+      "storage",
+      "travel",
+      "phone",
+      "coffee"
+     ],
+     "answer": 0,
+     "why": "Storage cost = custo de armazenagem, reduzido no cross-docking."
+    },
+    {
+     "q": "\"One late truck can break the whole <strong>flow</strong>.\" Here flow means…",
+     "options": [
+      "the movement of goods through the process",
+      "the price of sugar",
+      "the size of the warehouse",
+      "the number of workers"
+     ],
+     "answer": 0,
+     "why": "Flow = fluxo, o movimento contínuo das mercadorias no processo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no dia a dia da distribuição. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We will <strong>roll out</strong> cross-docking at all sites next year.\" To roll out means to…",
+     "options": [
+      "start using it step by step",
+      "stop using it",
+      "hide it",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar aos poucos, colocar em prática."
+    },
+    {
+     "q": "\"The manager must <strong>sign off on</strong> the new schedule.\" To sign off on means to…",
+     "options": [
+      "approve it",
+      "delete it",
+      "read it fast",
+      "copy it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"If a truck is late, we have to <strong>keep up with</strong> the schedule.\" To keep up with means to…",
+     "options": [
+      "stay at the same pace",
+      "fall behind",
+      "cancel the plan",
+      "slow down"
+     ],
+     "answer": 0,
+     "why": "Keep up with = acompanhar, manter o mesmo ritmo."
+    },
+    {
+     "q": "\"Two drivers <strong>pushed back on</strong> the new times.\" They…",
+     "options": [
+      "disagreed with them",
+      "agreed at once",
+      "forgot them",
+      "wrote them down"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, discordar."
+    },
+    {
+     "q": "\"We agreed the plan, but the team did not <strong>follow through</strong>.\" They…",
+     "options": [
+      "did not finish what they planned",
+      "did it perfectly",
+      "changed the truck",
+      "called the office"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    }
+   ]
+  }
+ ]
+}

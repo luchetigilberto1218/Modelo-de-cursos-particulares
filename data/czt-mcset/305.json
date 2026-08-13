@@ -1,0 +1,259 @@
+{
+ "num": 305,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Not all logistics operations are the same. B2B means business to business. It moves large volumes between companies: pallets, containers, and full trucks.<br><br>B2C means business to consumer. It moves small parcels to individual customers, often to their homes. E-commerce logistics is a special kind of B2C. It is built around fast online orders and fast delivery.<br><br>Each type has its own rhythm. B2B is heavy and planned. B2C is lighter and more reactive. E-commerce is small, fast, and relentless. The same company may run all three at once.",
+   "items": [
+    {
+     "q": "What does B2B move?",
+     "options": [
+      "Small parcels to homes",
+      "Large volumes between companies",
+      "Online orders only",
+      "Passengers"
+     ],
+     "answer": 1,
+     "why": "\"B2B… moves large volumes between companies: pallets, containers, and full trucks.\""
+    },
+    {
+     "q": "Who receives B2C deliveries?",
+     "options": [
+      "Individual customers",
+      "Other companies",
+      "Only factories",
+      "Ports"
+     ],
+     "answer": 0,
+     "why": "\"B2C… moves small parcels to individual customers, often to their homes.\""
+    },
+    {
+     "q": "E-commerce logistics is a special kind of…",
+     "options": [
+      "B2B",
+      "B2C",
+      "container shipping",
+      "air travel"
+     ],
+     "answer": 1,
+     "why": "\"E-commerce logistics is a special kind of B2C.\""
+    },
+    {
+     "q": "The text suggests that a company…",
+     "options": [
+      "must choose only one type",
+      "can run B2B, B2C and e-commerce together",
+      "should stop using B2B",
+      "cannot do e-commerce"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"The same company may run all three at once\" — pode rodar os três juntos."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "all logistics operations work the same way",
+      "different operations need different rhythms",
+      "B2B is faster than e-commerce",
+      "parcels move in full trucks"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto todo mostra que cada tipo tem seu próprio ritmo e forma de trabalho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James explicando ao novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team. Let me show you the warehouse. It can look strange at first, because we run two very different operations here, side by side.<br><br>On this side, we have the B2B operation. It is big and slow. We move pallets and containers between companies. Everything is planned days before. The trucks are full, and the volumes are large. This is our main business at Czarnikow. We move commodities in bulk.<br><br>Now walk with me to the other side. This is our e-commerce operation. It is small and very fast. We pack single parcels for individual customers. Orders come in online, and people want them the same week. The rhythm here is relentless. It never stops.<br><br>So one side is heavy and planned. The other side is light and reactive. Same company, same building, but two very different rhythms. Do not mix them up. Any questions?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many operations does James show?",
+     "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+     ],
+     "answer": 1,
+     "why": "\"we run two very different operations here, side by side.\""
+    },
+    {
+     "q": "How does James describe the B2B side?",
+     "options": [
+      "Small and fast",
+      "Big and slow",
+      "Light and reactive",
+      "Empty and quiet"
+     ],
+     "answer": 1,
+     "why": "\"On this side, we have the B2B operation. It is big and slow.\""
+    },
+    {
+     "q": "What does the e-commerce side pack?",
+     "options": [
+      "Pallets and containers",
+      "Full trucks",
+      "Single parcels",
+      "Nothing"
+     ],
+     "answer": 2,
+     "why": "\"We pack single parcels for individual customers.\""
+    },
+    {
+     "q": "Why does James say \"Do not mix them up\"?",
+     "options": [
+      "The two operations work in very different ways",
+      "The parcels are all the same",
+      "Both sides are slow",
+      "There is only one team"
+     ],
+     "answer": 0,
+     "why": "Inferência: os dois lados têm ritmos muito diferentes, então não se pode tratá-los da mesma forma."
+    },
+    {
+     "q": "What is Czarnikow's main business, based on James?",
+     "options": [
+      "E-commerce parcels",
+      "Moving commodities in bulk (B2B)",
+      "Home delivery",
+      "Passenger transport"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"This is our main business… We move commodities in bulk\" — o forte é o B2B."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We ship a large <strong>volume</strong> of sugar every month.\" A <strong>volume</strong> is…",
+     "options": [
+      "an amount or quantity",
+      "a small box",
+      "a delivery time",
+      "a price"
+     ],
+     "answer": 0,
+     "why": "Volume = quantidade, a amount of goods."
+    },
+    {
+     "q": "Choose the correct word: \"The customer's order fits in one small ___.\"",
+     "options": [
+      "parcel",
+      "container",
+      "truck",
+      "warehouse"
+     ],
+     "answer": 0,
+     "why": "Parcel = encomenda pequena, para um cliente."
+    },
+    {
+     "q": "\"We load the goods into a big steel <strong>container</strong>.\" A <strong>container</strong> is…",
+     "options": [
+      "a large box for shipping",
+      "a paper letter",
+      "an online order",
+      "a home address"
+     ],
+     "answer": 0,
+     "why": "Container = contêiner, a grande caixa de transporte."
+    },
+    {
+     "q": "\"Each operation has its own <strong>rhythm</strong>.\" A <strong>rhythm</strong> is…",
+     "options": [
+      "a regular pace or pattern",
+      "a type of truck",
+      "a price list",
+      "a customer"
+     ],
+     "answer": 0,
+     "why": "Rhythm = ritmo, o padrão/velocidade de trabalho."
+    },
+    {
+     "q": "Choose the correct word: \"The e-commerce team is very ___ — orders never stop coming.\"",
+     "options": [
+      "relentless",
+      "slow",
+      "empty",
+      "planned"
+     ],
+     "answer": 0,
+     "why": "Relentless = incansável, que não para."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns em logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the shipment first.\" To sign off on means to…",
+     "options": [
+      "approve",
+      "cancel",
+      "hide",
+      "lose"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new delivery service next month.\" To roll out means to…",
+     "options": [
+      "start or launch",
+      "stop",
+      "forget",
+      "return"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar, colocar em funcionamento."
+    },
+    {
+     "q": "\"The new joiner needs to <strong>keep up with</strong> the fast rhythm.\" To keep up with means to…",
+     "options": [
+      "move at the same speed",
+      "fall behind",
+      "take a break",
+      "slow down"
+     ],
+     "answer": 0,
+     "why": "Keep up with = acompanhar, ir no mesmo ritmo."
+    },
+    {
+     "q": "\"We <strong>run</strong> B2B and e-commerce <strong>side by side</strong>.\" Side by side means…",
+     "options": [
+      "at the same time, together",
+      "one after the other",
+      "far apart",
+      "never"
+     ],
+     "answer": 0,
+     "why": "Side by side = lado a lado, ao mesmo tempo."
+    },
+    {
+     "q": "\"Please <strong>set up</strong> the packing station before the orders arrive.\" To set up means to…",
+     "options": [
+      "prepare or get ready",
+      "take away",
+      "break",
+      "sell"
+     ],
+     "answer": 0,
+     "why": "Set up = preparar, montar."
+    }
+   ]
+  }
+ ]
+}

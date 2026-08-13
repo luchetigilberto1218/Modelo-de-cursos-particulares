@@ -1,0 +1,259 @@
+{
+ "num": 1020,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "It was my first month at Czarnikow. I started my new job in April. The first day was exciting and a little scary.<br><br>I worked with the HR team every day. I learned many new things, and I met all my colleagues. Sophie helped me a lot, and Tom trained me. We had weekly meetings, and I always arrived on time.<br><br>I enjoyed every day. It was a great first month, and now I feel like part of the team.",
+   "items": [
+    {
+     "q": "When did the person start the new job?",
+     "options": [
+      "In April",
+      "In May",
+      "In June",
+      "In March"
+     ],
+     "answer": 0,
+     "why": "\"I started my new job in April.\""
+    },
+    {
+     "q": "Who helped the person a lot?",
+     "options": [
+      "Tom",
+      "Sophie",
+      "The CEO",
+      "Nobody"
+     ],
+     "answer": 1,
+     "why": "\"Sophie helped me a lot.\" O Tom treinou; a Sophie ajudou."
+    },
+    {
+     "q": "How did the person feel about the first month?",
+     "options": [
+      "Bored",
+      "Angry",
+      "Happy",
+      "Tired"
+     ],
+     "answer": 2,
+     "why": "\"I enjoyed every day. It was a great first month.\" — sentimento positivo."
+    },
+    {
+     "q": "The text suggests that the person is now…",
+     "options": [
+      "leaving the company",
+      "part of the team",
+      "still looking for a job",
+      "unhappy at work"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"now I feel like part of the team\" — a pessoa se integrou."
+    },
+    {
+     "q": "The words \"exciting and a little scary\" suggest that the first day was…",
+     "options": [
+      "completely easy",
+      "new and a bit stressful",
+      "very boring",
+      "a normal day like any other"
+     ],
+     "answer": 1,
+     "why": "Inferência: um primeiro dia \"exciting and a little scary\" é novo e um pouco tenso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie falando com você sobre o seu primeiro mês. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! It's Sophie. I want to say congratulations. You finished your first month at Czarnikow!<br><br>I remember your first day. You arrived early, and you were a little nervous. That is normal. Everybody is nervous on the first day. But you smiled, and you said hello to everyone.<br><br>You worked hard every week. You learned fast, and you asked good questions. Tom trained you, and he told me you did a great job. In our meetings, you listened and you helped the team. I was very happy.<br><br>Next month we start a new project together. I think you are ready. You can do it! Let's have a coffee tomorrow and talk about it. See you soon!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does Sophie call?",
+     "options": [
+      "To give bad news",
+      "To say congratulations",
+      "To cancel a meeting",
+      "To ask for help"
+     ],
+     "answer": 1,
+     "why": "\"I want to say congratulations. You finished your first month.\""
+    },
+    {
+     "q": "How was the person on the first day?",
+     "options": [
+      "Late and tired",
+      "Early and a little nervous",
+      "Angry and quiet",
+      "Bored and slow"
+     ],
+     "answer": 1,
+     "why": "\"You arrived early, and you were a little nervous.\""
+    },
+    {
+     "q": "What did Tom tell Sophie?",
+     "options": [
+      "That the person did a great job",
+      "That the person arrived late",
+      "That the person needs more training",
+      "That the person wants to leave"
+     ],
+     "answer": 0,
+     "why": "\"Tom trained you, and he told me you did a great job.\""
+    },
+    {
+     "q": "Sophie's words suggest that she is…",
+     "options": [
+      "worried about the person",
+      "proud of the person",
+      "angry with the team",
+      "too busy to talk"
+     ],
+     "answer": 1,
+     "why": "Inferência: congratulações, elogios e \"I was very happy\" mostram orgulho."
+    },
+    {
+     "q": "When Sophie says \"I think you are ready\", she means…",
+     "options": [
+      "the person can start the new project",
+      "the person should go home",
+      "the person needs to study more",
+      "the person will change teams"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Next month we start a new project… I think you are ready.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I <strong>started</strong> my job in April.\" Started means…",
+     "options": [
+      "began",
+      "finished",
+      "changed",
+      "lost"
+     ],
+     "answer": 0,
+     "why": "Started = comecei/começou (passado de start)."
+    },
+    {
+     "q": "Choose the correct word: \"Last week I ___ with the HR team on a report.\"",
+     "options": [
+      "worked",
+      "worry",
+      "walk",
+      "wear"
+     ],
+     "answer": 0,
+     "why": "Worked = trabalhei (passado de work)."
+    },
+    {
+     "q": "\"I <strong>learned</strong> many new things this month.\" Learned means…",
+     "options": [
+      "got new knowledge",
+      "forgot",
+      "taught others",
+      "asked"
+     ],
+     "answer": 0,
+     "why": "Learned = aprendi (passado de learn)."
+    },
+    {
+     "q": "Choose the correct word: \"On my first day, I ___ all my new colleagues.\"",
+     "options": [
+      "met",
+      "make",
+      "miss",
+      "move"
+     ],
+     "answer": 0,
+     "why": "Met = conheci (passado de meet)."
+    },
+    {
+     "q": "\"I really <strong>enjoyed</strong> the team lunch.\" Enjoyed means…",
+     "options": [
+      "liked it a lot",
+      "was late for it",
+      "paid for it",
+      "missed it"
+     ],
+     "answer": 0,
+     "why": "Enjoyed = curti/gostei (passado de enjoy)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Sophie always <strong>helps out</strong> the new people.\" To help out means to…",
+     "options": [
+      "give help",
+      "say goodbye",
+      "leave the room",
+      "ask for money"
+     ],
+     "answer": 0,
+     "why": "Help out = ajudar, dar uma mão."
+    },
+    {
+     "q": "\"I <strong>arrived on time</strong> for every meeting.\" On time means…",
+     "options": [
+      "not late",
+      "very early in the year",
+      "after lunch",
+      "at home"
+     ],
+     "answer": 0,
+     "why": "On time = na hora certa, sem atraso."
+    },
+    {
+     "q": "\"I <strong>look forward to</strong> the new project.\" To look forward to means to…",
+     "options": [
+      "feel happy about something in the future",
+      "look behind you",
+      "be afraid of something",
+      "forget a plan"
+     ],
+     "answer": 0,
+     "why": "Look forward to = estar animado/esperar algo com vontade."
+    },
+    {
+     "q": "\"I <strong>get on well with</strong> my colleagues.\" This means I…",
+     "options": [
+      "have a good relationship with them",
+      "arrive before them",
+      "work far from them",
+      "never talk to them"
+     ],
+     "answer": 0,
+     "why": "Get on well with = se dar bem com alguém."
+    },
+    {
+     "q": "\"I <strong>took part in</strong> the weekly meeting.\" To take part in means to…",
+     "options": [
+      "join and be active in it",
+      "watch from outside",
+      "cancel it",
+      "be late for it"
+     ],
+     "answer": 0,
+     "why": "Take part in = participar de algo."
+    }
+   ]
+  }
+ ]
+}

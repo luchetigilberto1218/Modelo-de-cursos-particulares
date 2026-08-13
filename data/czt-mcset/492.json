@@ -1,0 +1,259 @@
+{
+ "num": 492,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "AI and data raise real questions about ethics. Whose data is the AI trained on? Who gave permission? Does the system treat everyone fairly, or does it quietly prefer some groups?<br><br>These are not theoretical questions. When a bank uses AI to approve a loan, an unfair model can hurt real lives. When a hospital uses AI, a biased system can affect real patients. Ethics is not a separate department. It is a responsibility every user, designer and leader shares.<br><br>The simplest test is honesty. If the company cannot explain, in plain words, what the system does and why, it should not be running in production yet.",
+   "items": [
+    {
+     "q": "What is the simplest test for AI, according to the text?",
+     "options": [
+      "Speed",
+      "Honesty",
+      "Cost",
+      "Size"
+     ],
+     "answer": 1,
+     "why": "\"The simplest test is honesty.\" — o teste mais simples é a honestidade."
+    },
+    {
+     "q": "When a bank uses an unfair AI model to approve a loan, it can…",
+     "options": [
+      "save more money",
+      "hurt real lives",
+      "work faster",
+      "train new staff"
+     ],
+     "answer": 1,
+     "why": "\"an unfair model can hurt real lives.\""
+    },
+    {
+     "q": "According to the text, ethics in AI is…",
+     "options": [
+      "a separate department",
+      "a shared responsibility",
+      "only the bank's job",
+      "not important"
+     ],
+     "answer": 1,
+     "why": "\"It is a responsibility every user, designer and leader shares.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "A company should explain how its AI decides.",
+      "It is fine to use AI in production even if no one can explain it.",
+      "A biased system can affect real patients.",
+      "Permission for data is an important question."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz o contrário — se não dá para explicar, não deve rodar em produção."
+    },
+    {
+     "q": "The text suggests that a system that quietly prefers some groups is…",
+     "options": [
+      "fair",
+      "not fair",
+      "fast",
+      "cheap"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"treat everyone fairly, or… prefer some groups\" — preferir alguns grupos é o oposto de justo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte falando com a equipe. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thanks, everyone. So the question today is simple. Is this AI model ready to move from test to production? I know the team worked very hard, and the results look good.<br><br>But I have one question first. Can we explain, in plain words, how the model reaches its answer? If a client asks us why the model said no, what do we tell them?<br><br>Right now, I am not sure we can answer that. And that worries me a little. This model helps decide who gets a loan. That is a real decision about real people. We must be fair, and we must be honest.<br><br>So I am going to push back gently. I do not want to stop the project. I think we should wait one more week. Let us write down, in simple language, how the model works and what data it uses. Then we check that it treats everyone fairly.<br><br>If we can do that, I am happy to move it to production. Ethics is not extra work. It is part of our job, and it builds trust with our clients.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Charlotte's main question today?",
+     "options": [
+      "Is the AI model ready to move from test to production?",
+      "How much does the model cost?",
+      "Who built the model?",
+      "How fast is the model?"
+     ],
+     "answer": 0,
+     "why": "\"Is this AI model ready to move from test to production?\""
+    },
+    {
+     "q": "What does Charlotte want the team to explain?",
+     "options": [
+      "How the model reaches its answer, in plain words",
+      "How many people worked on it",
+      "Where the office is",
+      "When the project started"
+     ],
+     "answer": 0,
+     "why": "\"Can we explain, in plain words, how the model reaches its answer?\""
+    },
+    {
+     "q": "What does the model help decide?",
+     "options": [
+      "Who gets a loan",
+      "Which office to open",
+      "How to price coffee",
+      "Who to hire"
+     ],
+     "answer": 0,
+     "why": "\"This model helps decide who gets a loan.\""
+    },
+    {
+     "q": "Why does Charlotte want to wait one more week?",
+     "options": [
+      "So the team can rest",
+      "So the team can explain the model clearly and check it is fair",
+      "Because the budget is not ready",
+      "Because a client asked her to"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela pede uma semana para escrever em linguagem simples como o modelo funciona e checar se é justo."
+    },
+    {
+     "q": "How would you best describe Charlotte's attitude?",
+     "options": [
+      "She wants to cancel the whole project.",
+      "She is careful and fair, but still supports the project.",
+      "She does not care about the model.",
+      "She is angry with the team."
+     ],
+     "answer": 1,
+     "why": "Inferência: ela faz uma ressalva gentil (\"push back gently\") mas diz que não quer parar o projeto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Good <strong>ethics</strong> means doing the right thing, even when no one is watching.\" <strong>Ethics</strong> is about…",
+     "options": [
+      "what is right and fair",
+      "how fast you work",
+      "how much money you make",
+      "who your boss is"
+     ],
+     "answer": 0,
+     "why": "Ethics = ética: o que é certo e justo."
+    },
+    {
+     "q": "Choose the correct word: \"You cannot use their data without their ___.\"",
+     "options": [
+      "permission",
+      "loan",
+      "patient",
+      "production"
+     ],
+     "answer": 0,
+     "why": "Permission = permissão: você precisa dela para usar os dados."
+    },
+    {
+     "q": "\"The model must treat every client <strong>fairly</strong>.\" <strong>Fairly</strong> means…",
+     "options": [
+      "in a just and equal way",
+      "very quickly",
+      "in secret",
+      "for free"
+     ],
+     "answer": 0,
+     "why": "Fairly = justamente, de forma igual para todos."
+    },
+    {
+     "q": "Choose the correct word: \"If the training data is bad, the AI can become ___ against some groups.\"",
+     "options": [
+      "biased",
+      "honest",
+      "plain",
+      "ready"
+     ],
+     "answer": 0,
+     "why": "Biased = enviesado: quando o modelo prefere ou prejudica alguns grupos."
+    },
+    {
+     "q": "\"The team moved the model into <strong>production</strong>.\" <strong>Production</strong> means…",
+     "options": [
+      "real, live use with real clients",
+      "the test phase only",
+      "a training class",
+      "an old version"
+     ],
+     "answer": 0,
+     "why": "Production = produção: quando o sistema está no ar, em uso real."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre AI e dados. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the new model.\" To sign off on means to…",
+     "options": [
+      "approve it",
+      "delete it",
+      "hide it",
+      "test it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the tool to one team first.\" To roll out means to…",
+     "options": [
+      "put it into use, step by step",
+      "throw it away",
+      "keep it secret",
+      "make it cheaper"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em uso, aos poucos."
+    },
+    {
+     "q": "\"Charlotte <strong>pushed back on</strong> the plan.\" She…",
+     "options": [
+      "said yes at once",
+      "raised concerns and disagreed a little",
+      "forgot the plan",
+      "wrote a new plan"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, discordar de forma educada."
+    },
+    {
+     "q": "\"They agreed to check the data but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "finished the job",
+      "did not do what they promised",
+      "asked for more time",
+      "changed teams"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado; aqui, não fizeram."
+    },
+    {
+     "q": "\"We need to <strong>look into</strong> where this data came from.\" To look into means to…",
+     "options": [
+      "investigate it",
+      "ignore it",
+      "sell it",
+      "copy it"
+     ],
+     "answer": 0,
+     "why": "Look into = investigar, examinar com cuidado."
+    }
+   ]
+  }
+ ]
+}

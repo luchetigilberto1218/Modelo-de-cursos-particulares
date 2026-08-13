@@ -1,0 +1,259 @@
+{
+ "num": 304,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A logistics network is the set of places and routes a company uses to move its goods. The places are usually warehouses, hubs, and distribution centres. The routes are the roads, rails, sea lanes, or flight paths that connect them.<br><br>A simple network has one warehouse and a few delivery routes. A large network may have dozens of hubs, hundreds of routes, and three or four modes of transport working together.<br><br>Good networks are designed, not accidental. They match how the company wants to serve its customers.",
+   "items": [
+    {
+     "q": "What is a logistics network made of?",
+     "options": [
+      "Places and routes",
+      "Only warehouses",
+      "Only roads",
+      "Trucks and drivers"
+     ],
+     "answer": 0,
+     "why": "\"the set of places and routes a company uses to move its goods.\""
+    },
+    {
+     "q": "Which of these is a route in the network?",
+     "options": [
+      "A warehouse",
+      "A hub",
+      "A sea lane",
+      "A distribution centre"
+     ],
+     "answer": 2,
+     "why": "Routes = roads, rails, sea lanes, flight paths. A sea lane is a route."
+    },
+    {
+     "q": "How many warehouses does a simple network have?",
+     "options": [
+      "One",
+      "Dozens",
+      "Hundreds",
+      "None"
+     ],
+     "answer": 0,
+     "why": "\"A simple network has one warehouse and a few delivery routes.\""
+    },
+    {
+     "q": "The text suggests that a good network is…",
+     "options": [
+      "planned on purpose",
+      "the result of luck",
+      "always very small",
+      "the same for every company"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Good networks are designed, not accidental\" — feito de propósito, não por acaso."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "A network can use more than one mode of transport.",
+      "The network should fit how the company serves its customers.",
+      "A network just happens on its own, with no plan.",
+      "Large networks can have many hubs and routes."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz que boas redes são desenhadas, não acidentais — ele discordaria de que a rede \"acontece sozinha\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry explicando o mapa ao novo analista. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, come and sit here. Let me show you our network on this map. It is simple. We have five warehouses. I will draw them as boxes.<br><br>This one, in the middle, is our main hub. All the big routes go through it. The other four warehouses are around it. Look — one is in the north, one is in the south, one is near the port, and one is by the airport.<br><br>Now the routes. The line from the hub to the north warehouse is a road. Goods go by truck on that one. The line to the port warehouse is a sea lane, because we send some goods by ship. The line to the airport is a flight path.<br><br>So we move goods by road, by sea, and by air. Three modes. The hub connects all of them. If you understand this map, you understand where our costs come from. Take a photo of it, and we will look at the routes again tomorrow.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many warehouses does Harry draw on the map?",
+     "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"We have five warehouses.\""
+    },
+    {
+     "q": "Where is the main hub on the map?",
+     "options": [
+      "In the north",
+      "In the middle",
+      "Near the port",
+      "By the airport"
+     ],
+     "answer": 1,
+     "why": "\"This one, in the middle, is our main hub.\""
+    },
+    {
+     "q": "How do goods travel to the port warehouse?",
+     "options": [
+      "By road",
+      "By rail",
+      "By sea",
+      "By air"
+     ],
+     "answer": 2,
+     "why": "\"The line to the port warehouse is a sea lane, because we send some goods by ship.\""
+    },
+    {
+     "q": "Harry says the map helps the analyst understand…",
+     "options": [
+      "where the company's costs come from",
+      "the names of the drivers",
+      "the price of each truck",
+      "the weather on each route"
+     ],
+     "answer": 0,
+     "why": "\"If you understand this map, you understand where our costs come from.\""
+    },
+    {
+     "q": "Why does the hub matter so much in Harry's network?",
+     "options": [
+      "It is the newest warehouse",
+      "It connects all the routes and modes",
+      "It is the only place with trucks",
+      "It has no routes at all"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"All the big routes go through it\" e \"The hub connects all of them\" — o hub liga tudo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We keep the boxes in the <strong>warehouse</strong> before we ship them.\" A warehouse is…",
+     "options": [
+      "a building where goods are stored",
+      "a type of truck",
+      "a sea route",
+      "a customer"
+     ],
+     "answer": 0,
+     "why": "Warehouse = armazém, o prédio onde as mercadorias ficam guardadas."
+    },
+    {
+     "q": "Choose the correct word: \"The main ___ in the middle connects all the other warehouses.\"",
+     "options": [
+      "hub",
+      "road",
+      "customer",
+      "ship"
+     ],
+     "answer": 0,
+     "why": "Hub = centro que liga as outras partes da rede."
+    },
+    {
+     "q": "\"There is a fast <strong>route</strong> from the port to the city.\" A route is…",
+     "options": [
+      "a way that goods travel from one place to another",
+      "a place where goods are stored",
+      "a company that sells goods",
+      "a kind of box"
+     ],
+     "answer": 0,
+     "why": "Route = rota, o caminho pelo qual as mercadorias viajam."
+    },
+    {
+     "q": "Choose the correct word: \"We send some goods by ship, so we use a ___.\"",
+     "options": [
+      "sea lane",
+      "road",
+      "warehouse",
+      "hub"
+     ],
+     "answer": 0,
+     "why": "Sea lane = rota marítima, usada quando os produtos vão por navio."
+    },
+    {
+     "q": "\"A good network helps us <strong>serve</strong> our customers well.\" To serve means to…",
+     "options": [
+      "give service to",
+      "store goods for",
+      "build a road for",
+      "buy goods from"
+     ],
+     "answer": 0,
+     "why": "To serve = atender, dar serviço aos clientes."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem em reuniões de logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new route.\" To sign off on means to…",
+     "options": [
+      "approve it",
+      "cancel it",
+      "hide it",
+      "forget it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new map next month.\" To roll out means to…",
+     "options": [
+      "start using it, step by step",
+      "throw it away",
+      "keep it secret",
+      "print it once"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em uso aos poucos."
+    },
+    {
+     "q": "\"Let's <strong>set up</strong> a new warehouse near the port.\" To set up means to…",
+     "options": [
+      "start or build it",
+      "close it",
+      "sell it",
+      "clean it"
+     ],
+     "answer": 0,
+     "why": "Set up = montar, começar algo novo."
+    },
+    {
+     "q": "\"Two drivers <strong>pushed back on</strong> the new route.\" They…",
+     "options": [
+      "did not agree with it",
+      "loved it right away",
+      "drove it very fast",
+      "drew it on the map"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, não concordar com algo."
+    },
+    {
+     "q": "\"We need to <strong>keep track of</strong> every route on the map.\" This means to…",
+     "options": [
+      "watch and follow them carefully",
+      "delete them",
+      "hide them from the team",
+      "sell them to a client"
+     ],
+     "answer": 0,
+     "why": "Keep track of = acompanhar, não perder de vista."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 313,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Tracking is how we know where a shipment is right now. Good tracking shows the location of every parcel, every truck, and every container, in real time.<br><br>Visibility is the bigger word. It means not just seeing the dot on the map, but knowing if a shipment will arrive on time, and if not, why. Customers love good tracking because it removes worry. Operations teams love it because they can react early.<br><br>Companies with strong visibility catch problems in hours, not days. A parcel you can see is a problem you can solve.",
+   "items": [
+    {
+     "q": "What does tracking show us?",
+     "options": [
+      "Where a shipment is right now",
+      "Who packed the parcel",
+      "How much the parcel costs",
+      "When the truck was bought"
+     ],
+     "answer": 0,
+     "why": "\"Tracking is how we know where a shipment is right now.\""
+    },
+    {
+     "q": "What is the difference between tracking and visibility?",
+     "options": [
+      "There is no difference",
+      "Tracking shows the location; visibility also shows if it will arrive on time",
+      "Visibility is only for trucks",
+      "Tracking is only for customers"
+     ],
+     "answer": 1,
+     "why": "Visibility é a palavra maior: não só o ponto no mapa, mas saber se vai chegar a tempo."
+    },
+    {
+     "q": "Why do customers love good tracking?",
+     "options": [
+      "It makes the parcel cheaper",
+      "It removes worry",
+      "It is faster than a truck",
+      "It gives them a free gift"
+     ],
+     "answer": 1,
+     "why": "\"Customers love good tracking because it removes worry.\""
+    },
+    {
+     "q": "The text says \"A parcel you can see is a problem you can solve.\" This suggests that…",
+     "options": [
+      "Every parcel is a problem",
+      "You cannot help what you cannot see",
+      "Parcels should not be seen",
+      "Seeing a parcel is a waste of time"
+     ],
+     "answer": 1,
+     "why": "Inferência: se ver ajuda a resolver, então o que você não vê é mais difícil de resolver."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "Real-time tracking helps teams react early",
+      "Visibility helps catch problems in hours",
+      "It is fine to wait days to find a problem",
+      "Good tracking removes customer worry"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto elogia quem acha o problema em horas, não em dias."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily mostrando a tela de rastreamento ao vivo para o novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team! Come and look at this big screen with me. This is our live tracking map of Europe. Do you see all these little dots?<br><br>Every dot is a shipment. Some dots are moving, some are stopped. A green dot is a shipment that is on time. A red dot is a shipment that is late, or that has a problem. Right now I can see two red dots near Paris. So I know we need to check them today, not tomorrow.<br><br>This is why tracking is so good. We can see where every parcel is, in real time. And when a customer calls to ask, \"Where is my box?\", we don't have to guess. We just look at the map and tell them.<br><br>My advice for you is simple. Watch the red dots. A red dot early in the day is a small problem. A red dot at the end of the day is an angry customer. So we react early. Every dot is a promise to a customer, and we want to keep it.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Emily showing the new colleague?",
+     "options": [
+      "A live tracking map of Europe",
+      "A list of prices",
+      "A new truck",
+      "A photo of a customer"
+     ],
+     "answer": 0,
+     "why": "\"This is our live tracking map of Europe.\""
+    },
+    {
+     "q": "What does a red dot mean?",
+     "options": [
+      "The shipment is on time",
+      "The shipment is late or has a problem",
+      "The shipment is very cheap",
+      "The shipment is not real"
+     ],
+     "answer": 1,
+     "why": "\"A red dot is a shipment that is late, or that has a problem.\""
+    },
+    {
+     "q": "What does Emily do when she sees the two red dots near Paris?",
+     "options": [
+      "She checks them today, not tomorrow",
+      "She waits one week",
+      "She turns off the screen",
+      "She calls the customer to say goodbye"
+     ],
+     "answer": 0,
+     "why": "\"I know we need to check them today, not tomorrow.\""
+    },
+    {
+     "q": "Emily says a red dot early in the day is a small problem. This suggests that…",
+     "options": [
+      "Red dots are never a problem",
+      "Waiting makes the problem bigger",
+      "The morning is a bad time to work",
+      "You should ignore red dots"
+     ],
+     "answer": 1,
+     "why": "Inferência: cedo é problema pequeno, tarde vira cliente irritado — esperar piora."
+    },
+    {
+     "q": "Why does Emily say \"every dot is a promise to a customer\"?",
+     "options": [
+      "Because the dots are only colours",
+      "Because each shipment matters to a real person",
+      "Because customers do not like dots",
+      "Because promises are not important"
+     ],
+     "answer": 1,
+     "why": "Inferência: cada ponto é um pedido real que a empresa quer entregar bem."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We can see the parcel in <strong>real time</strong>.\" Real time means…",
+     "options": [
+      "right now, as it happens",
+      "last week",
+      "in a dream",
+      "next year"
+     ],
+     "answer": 0,
+     "why": "Real time = tempo real: você vê no momento em que acontece."
+    },
+    {
+     "q": "Choose the correct word: \"Good tracking removes the customer's ___.\"",
+     "options": [
+      "worry",
+      "truck",
+      "map",
+      "box"
+     ],
+     "answer": 0,
+     "why": "Worry = preocupação, o que o bom rastreamento tira do cliente."
+    },
+    {
+     "q": "\"The map shows the <strong>location</strong> of every truck.\" Location means…",
+     "options": [
+      "the place where it is",
+      "the price of it",
+      "the colour of it",
+      "the driver's name"
+     ],
+     "answer": 0,
+     "why": "Location = localização: o lugar onde a coisa está."
+    },
+    {
+     "q": "Choose the correct word: \"When we see a problem, we ___ early instead of waiting.\"",
+     "options": [
+      "react",
+      "sleep",
+      "sing",
+      "close"
+     ],
+     "answer": 0,
+     "why": "To react = reagir: agir quando vê o problema."
+    },
+    {
+     "q": "\"Companies with <strong>strong</strong> visibility catch problems fast.\" Strong here means…",
+     "options": [
+      "very good and reliable",
+      "very heavy",
+      "very loud",
+      "very small"
+     ],
+     "answer": 0,
+     "why": "Strong = forte, aqui no sentido de bom e confiável."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem no dia a dia da logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's <strong>keep an eye on</strong> the red dots.\" To keep an eye on means to…",
+     "options": [
+      "watch it carefully",
+      "throw it away",
+      "hide it",
+      "forget it"
+     ],
+     "answer": 0,
+     "why": "Keep an eye on = ficar de olho, observar com atenção."
+    },
+    {
+     "q": "\"The truck is <strong>held up</strong> in traffic.\" Held up means…",
+     "options": [
+      "delayed or stopped",
+      "very fast",
+      "very cheap",
+      "already delivered"
+     ],
+     "answer": 0,
+     "why": "Held up = atrasado, parado por algum motivo."
+    },
+    {
+     "q": "\"Please <strong>follow up</strong> with the customer about the late parcel.\" To follow up means to…",
+     "options": [
+      "check again and give news",
+      "buy a new parcel",
+      "close the office",
+      "delete the order"
+     ],
+     "answer": 0,
+     "why": "Follow up = dar sequência, voltar a falar para atualizar."
+    },
+    {
+     "q": "\"We need to <strong>sort out</strong> the problem before the end of the day.\" To sort out means to…",
+     "options": [
+      "solve or fix it",
+      "make it bigger",
+      "ignore it",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Sort out = resolver, arrumar o problema."
+    },
+    {
+     "q": "\"The shipment will <strong>show up</strong> on the map soon.\" To show up means to…",
+     "options": [
+      "appear",
+      "disappear",
+      "get lost",
+      "break"
+     ],
+     "answer": 0,
+     "why": "Show up = aparecer, surgir na tela."
+    }
+   ]
+  }
+ ]
+}

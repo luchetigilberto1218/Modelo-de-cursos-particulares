@@ -1,0 +1,259 @@
+{
+ "num": 1014,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. Today we learn the 12 months and dates.<br><br>Months and dates are part of every HR calendar. We use them for birthdays, reviews, and holidays. The year starts in January. We say \"in + month\" and \"on + date\".<br><br>For example: \"The review is in April.\" \"My birthday is on July 10.\" We go step by step. You can do it!",
+   "items": [
+    {
+     "q": "What do we learn today?",
+     "options": [
+      "The 12 months and dates",
+      "Numbers from 1 to 100",
+      "The days of the week",
+      "Colors and shapes"
+     ],
+     "answer": 0,
+     "why": "\"Today we learn the 12 months and dates.\""
+    },
+    {
+     "q": "The text says months and dates are part of…",
+     "options": [
+      "every lunch menu",
+      "every HR calendar",
+      "every email",
+      "every meeting room"
+     ],
+     "answer": 1,
+     "why": "\"Months and dates are part of every HR calendar.\""
+    },
+    {
+     "q": "Which word goes before a month?",
+     "options": [
+      "on",
+      "at",
+      "in",
+      "to"
+     ],
+     "answer": 2,
+     "why": "\"in + month\" — ex.: \"in April\", \"in December\"."
+    },
+    {
+     "q": "The text says \"You can do it!\". This suggests the tone is…",
+     "options": [
+      "positive and helpful",
+      "angry and strict",
+      "sad and tired",
+      "bored and cold"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"English comes in CAN's\" e \"You can do it!\" mostram um tom positivo."
+    },
+    {
+     "q": "\"My birthday is on July 10.\" The author would most likely say a date needs…",
+     "options": [
+      "the word \"in\"",
+      "the word \"on\"",
+      "no preposition",
+      "the word \"at\""
+     ],
+     "answer": 1,
+     "why": "Inferência: com datas usamos \"on\" (\"on July 10\"), não \"in\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentar o calendário do RH. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi team! I am Sophie from HR. Today I want to share our calendar for the year. It is very simple, so please listen.<br><br>First, the reviews. The next review is in April. Please put this date in your calendar. April is a busy month, so we start early. We talk about your goals and your work.<br><br>Next, the holidays. We have a holiday in December. The office is closed, and we can rest with our family. There is also a short break in June, so remember that too.<br><br>Now, the fun part — birthdays! We celebrate team birthdays every month. For example, my birthday is on July 10. Ana's birthday is on March 3. We bring a small cake and we sing together. It is a nice moment for the team.<br><br>One more thing. Our team training is on September 20. It is a Monday. Please save the date and come to the big room.<br><br>So, remember: reviews in April, holiday in December, and training on September 20. If you have a question about any date, just send me an email. Thank you, and have a great month!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "When is the next review?",
+     "options": [
+      "In April",
+      "In June",
+      "In December",
+      "On July 10"
+     ],
+     "answer": 0,
+     "why": "\"The next review is in April.\""
+    },
+    {
+     "q": "When is Sophie's birthday?",
+     "options": [
+      "On March 3",
+      "On July 10",
+      "On September 20",
+      "In December"
+     ],
+     "answer": 1,
+     "why": "\"my birthday is on July 10.\""
+    },
+    {
+     "q": "When is the team training?",
+     "options": [
+      "On September 20",
+      "In April",
+      "On March 3",
+      "In June"
+     ],
+     "answer": 0,
+     "why": "\"Our team training is on September 20.\""
+    },
+    {
+     "q": "Why does Sophie say December is special?",
+     "options": [
+      "The team starts a new project",
+      "There is a holiday and the office is closed",
+      "It is her birthday",
+      "The review happens then"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"We have a holiday in December. The office is closed, and we can rest.\""
+    },
+    {
+     "q": "How does Sophie feel about team birthdays?",
+     "options": [
+      "She thinks they are boring",
+      "She sees them as the fun part",
+      "She wants to stop them",
+      "She forgets them"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Now, the fun part — birthdays!\" e \"we bring a small cake and we sing together\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The year starts in <strong>January</strong>.\" January is…",
+     "options": [
+      "the first month",
+      "the last month",
+      "a day of the week",
+      "a holiday"
+     ],
+     "answer": 0,
+     "why": "January = janeiro, o primeiro mês do ano."
+    },
+    {
+     "q": "\"December is a busy <strong>month</strong>.\" A month is…",
+     "options": [
+      "a week",
+      "one of the 12 parts of the year",
+      "a weekend",
+      "a year"
+     ],
+     "answer": 1,
+     "why": "Month = mês; o ano tem 12 meses."
+    },
+    {
+     "q": "Choose the correct word: \"What is the ___ today? It is May 5.\"",
+     "options": [
+      "date",
+      "month",
+      "holiday",
+      "birthday"
+     ],
+     "answer": 0,
+     "why": "Date = data (ex.: May 5)."
+    },
+    {
+     "q": "\"Happy <strong>birthday</strong>! You are 30 today.\" A birthday is…",
+     "options": [
+      "a work meeting",
+      "the day a person was born",
+      "a review",
+      "a training"
+     ],
+     "answer": 1,
+     "why": "Birthday = aniversário, o dia em que a pessoa nasceu."
+    },
+    {
+     "q": "Choose the correct word: \"The office is closed. It is a ___.\"",
+     "options": [
+      "holiday",
+      "date",
+      "month",
+      "email"
+     ],
+     "answer": 0,
+     "why": "Holiday = feriado / férias; nesse dia o escritório fecha."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem quando falamos de calendário e datas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's <strong>set up</strong> a meeting for April.\" To set up means to…",
+     "options": [
+      "cancel",
+      "arrange or plan",
+      "forget",
+      "finish"
+     ],
+     "answer": 1,
+     "why": "Set up = marcar, organizar (uma reunião, um encontro)."
+    },
+    {
+     "q": "\"I will <strong>write down</strong> the date in my calendar.\" To write down means to…",
+     "options": [
+      "put on paper or in a note",
+      "say out loud",
+      "delete",
+      "read again"
+     ],
+     "answer": 0,
+     "why": "Write down = anotar, registrar por escrito."
+    },
+    {
+     "q": "\"Sorry, I need a <strong>day off</strong> on July 10.\" A day off is…",
+     "options": [
+      "an extra work day",
+      "a day you do not work",
+      "a long meeting",
+      "a training day"
+     ],
+     "answer": 1,
+     "why": "Day off = dia de folga, um dia sem trabalho."
+    },
+    {
+     "q": "\"Can we <strong>put off</strong> the review to May?\" To put off means to…",
+     "options": [
+      "move to a later date",
+      "start now",
+      "cancel forever",
+      "make shorter"
+     ],
+     "answer": 0,
+     "why": "Put off = adiar, deixar para depois."
+    },
+    {
+     "q": "\"I <strong>look forward to</strong> the December holiday.\" This means you…",
+     "options": [
+      "are happy and waiting for it",
+      "do not like it",
+      "already had it",
+      "forgot it"
+     ],
+     "answer": 0,
+     "why": "Look forward to = estar animado, esperar algo com alegria."
+    }
+   ]
+  }
+ ]
+}

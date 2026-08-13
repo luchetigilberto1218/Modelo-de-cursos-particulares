@@ -1,0 +1,259 @@
+{
+ "num": 1155,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. Taxes can sound hard, but in English they follow simple patterns. Today we talk about yesterday's tax meeting at Czarnikow.<br><br>The meeting was in a small room. Sophie was there. The tax numbers were on the table, and the result was good. Everybody was happy.<br><br>Taxes are just one more part of the company's routine. Sophie explains the tax words slowly, in simple English. One small step at a time — you can do it!",
+   "items": [
+    {
+     "q": "Where was the meeting?",
+     "options": [
+      "In a small room",
+      "In the big office",
+      "At Sophie's house",
+      "On the phone"
+     ],
+     "answer": 0,
+     "why": "\"The meeting was in a small room.\""
+    },
+    {
+     "q": "How was the result?",
+     "options": [
+      "Bad",
+      "Good",
+      "Late",
+      "Wrong"
+     ],
+     "answer": 1,
+     "why": "\"the result was good.\""
+    },
+    {
+     "q": "When was the meeting?",
+     "options": [
+      "Today",
+      "Tomorrow",
+      "Yesterday",
+      "Next week"
+     ],
+     "answer": 2,
+     "why": "O texto fala de \"yesterday's tax meeting\" — a reunião foi ontem."
+    },
+    {
+     "q": "The text suggests that Sophie is…",
+     "options": [
+      "helpful and patient",
+      "angry with the team",
+      "new at the company",
+      "never at the meeting"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Sophie explains the tax words slowly, in simple English\" — ela ajuda com calma."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "taxes are always impossible",
+      "English about taxes can be simple",
+      "the team was unhappy",
+      "the numbers were wrong"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Taxes can sound hard, but in English they follow simple patterns.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie contar a reunião de ontem para um colega que faltou. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! You were not at the tax meeting yesterday, so let me tell you about it.<br><br>The meeting was in room two, next to the coffee machine. It was short — only thirty minutes. Marta and I were there, and Peter was there too. The room was small, but it was fine for three people.<br><br>The numbers were ready on the table. The result was good — very good, actually. Last month the numbers were not clear, and we were a little worried. But yesterday they were correct, so we were all happy.<br><br>Peter was a little late, but that was okay. He was busy with another form. The tax form was on the table, the numbers were right, and we were fast this time. No problems.<br><br>So, don't worry. Everything was fine. The result is on my desk now. When you have time, come to my room and we go over it together. It is easy — one small step at a time. See you soon!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where was the meeting?",
+     "options": [
+      "In room two",
+      "In the big hall",
+      "At the coffee shop",
+      "On the phone"
+     ],
+     "answer": 0,
+     "why": "\"The meeting was in room two, next to the coffee machine.\""
+    },
+    {
+     "q": "Who was a little late?",
+     "options": [
+      "Marta",
+      "Sophie",
+      "Peter",
+      "The colleague"
+     ],
+     "answer": 2,
+     "why": "\"Peter was a little late, but that was okay.\""
+    },
+    {
+     "q": "How were the numbers last month?",
+     "options": [
+      "Correct",
+      "Not clear",
+      "On the desk",
+      "Ready"
+     ],
+     "answer": 1,
+     "why": "\"Last month the numbers were not clear, but yesterday they were correct.\""
+    },
+    {
+     "q": "Sophie's message suggests that she is…",
+     "options": [
+      "worried and upset",
+      "calm and friendly",
+      "in a hurry to leave",
+      "angry with Peter"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"don't worry\", \"It is easy\", \"See you soon\" — o tom é calmo e amigável."
+    },
+    {
+     "q": "Why does Sophie say \"one small step at a time\"?",
+     "options": [
+      "To tell the colleague the work is late",
+      "To make the colleague feel it is easy",
+      "To ask for more people",
+      "To cancel the next meeting"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela quer que o colega fique tranquilo — passo a passo é fácil."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The tax <strong>meeting</strong> starts at ten.\" A meeting is…",
+     "options": [
+      "a time when people come together to talk",
+      "a tax form",
+      "a big number",
+      "a coffee break"
+     ],
+     "answer": 0,
+     "why": "Meeting = reunião: quando as pessoas se juntam para conversar."
+    },
+    {
+     "q": "Choose the correct word: \"We were in the small ___ next to the coffee machine.\"",
+     "options": [
+      "room",
+      "number",
+      "result",
+      "meeting"
+     ],
+     "answer": 0,
+     "why": "Room = sala; é o lugar onde a reunião aconteceu."
+    },
+    {
+     "q": "\"Please check this <strong>number</strong> on the form.\" A number is…",
+     "options": [
+      "a figure like 10 or 250",
+      "a person's name",
+      "a day of the week",
+      "an office"
+     ],
+     "answer": 0,
+     "why": "Number = número: uma cifra, como 10 ou 250."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ was good, so everybody was happy.\"",
+     "options": [
+      "result",
+      "room",
+      "yesterday",
+      "meeting"
+     ],
+     "answer": 0,
+     "why": "Result = resultado: o que a reunião mostrou no fim."
+    },
+    {
+     "q": "\"The meeting was <strong>yesterday</strong>.\" Yesterday means…",
+     "options": [
+      "the day before today",
+      "next week",
+      "this morning",
+      "tomorrow"
+     ],
+     "answer": 0,
+     "why": "Yesterday = ontem: o dia antes de hoje."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho com impostos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>fill in</strong> the tax form.\" To fill in means to…",
+     "options": [
+      "write the information in the blanks",
+      "throw the form away",
+      "read the form fast",
+      "sign the form"
+     ],
+     "answer": 0,
+     "why": "Fill in = preencher: escrever as informações nos espaços."
+    },
+    {
+     "q": "\"Can you <strong>hand in</strong> the report today?\" To hand in means to…",
+     "options": [
+      "give it to the person in charge",
+      "keep it at home",
+      "copy it",
+      "lose it"
+     ],
+     "answer": 0,
+     "why": "Hand in = entregar: dar o documento para quem pediu."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the numbers together.\" To go over means to…",
+     "options": [
+      "check them carefully",
+      "delete them",
+      "print them",
+      "hide them"
+     ],
+     "answer": 0,
+     "why": "Go over = revisar: olhar com atenção, ponto a ponto."
+    },
+    {
+     "q": "\"Please <strong>write down</strong> the result.\" To write down means to…",
+     "options": [
+      "put it on paper",
+      "say it out loud",
+      "forget it",
+      "send it by email only"
+     ],
+     "answer": 0,
+     "why": "Write down = anotar: registrar no papel."
+    },
+    {
+     "q": "\"The boss must <strong>sign off on</strong> the form.\" To sign off on means to…",
+     "options": [
+      "give final approval",
+      "read it later",
+      "cancel it",
+      "print it twice"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 169,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A serious international payments architecture is not a list of bank accounts; it is a map of flows. Money moves between entities, currencies, regions and counterparties on a rhythm that repeats every month, every week, sometimes every day. When the map is clear, treasury decisions become easy. When it is not, every new payment is a small emergency.<br><br>At the architectural level, the priorities are netting and pooling. Netting means offsetting payments between related entities so that only the net balance actually moves through a bank — reducing fees, FX costs and reconciliation load. Pooling means concentrating cash balances across entities into a single virtual pot, so that surplus in one country can fund shortage in another without a physical transfer.<br><br>Add in-house banks, intercompany loans, and a deliberate selection of correspondent banks in each region, and you have the architecture of a mature multinational treasury. None of this is visible to customers. All of it is visible to the P&L — quietly, line by line, as saved fees, faster reconciliation, and fewer painful surprises at month-end.",
+   "items": [
+    {
+     "q": "According to the text, a serious payments architecture is fundamentally…",
+     "options": [
+      "a list of bank accounts",
+      "a map of flows",
+      "a set of FX contracts",
+      "a treasury policy manual"
+     ],
+     "answer": 1,
+     "why": "\"is not a list of bank accounts; it is a map of flows.\""
+    },
+    {
+     "q": "What does netting achieve, according to the passage?",
+     "options": [
+      "It concentrates cash into a single virtual pot",
+      "It moves only the net balance through a bank, cutting fees and reconciliation load",
+      "It replaces correspondent banks with in-house banks",
+      "It makes payments visible to customers"
+     ],
+     "answer": 1,
+     "why": "\"offsetting payments… so that only the net balance actually moves through a bank — reducing fees, FX costs and reconciliation load.\""
+    },
+    {
+     "q": "How does pooling let surplus in one country fund shortage in another?",
+     "options": [
+      "Through a physical transfer between the two accounts",
+      "By concentrating balances into a single virtual pot, without a physical transfer",
+      "By netting the two payments against each other",
+      "By opening an intercompany loan each time"
+     ],
+     "answer": 1,
+     "why": "\"concentrating cash balances… into a single virtual pot, so that surplus… can fund shortage… without a physical transfer.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "The benefits of a good architecture surface in the P&L over time",
+      "A well-run treasury is largely invisible to customers",
+      "Adding accounts, rather than mapping flows, is the way to build a strong architecture",
+      "Unclear flows turn routine payments into recurring emergencies"
+     ],
+     "answer": 2,
+     "why": "Inferência: a tese central é que a arquitetura é um mapa de FLUXOS, não uma lista de contas — o autor rejeita a ideia de somar contas."
+    },
+    {
+     "q": "The phrase \"quietly, line by line\" suggests that the savings…",
+     "options": [
+      "are dramatic and immediately obvious",
+      "accumulate gradually and undramatically, but do reach the bottom line",
+      "never actually materialise",
+      "are only visible to customers"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"quietly\" indica ganhos discretos e graduais que, ainda assim, aparecem no P&L."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily apresentando a redesenho de arquitetura à liderança. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thank you. I know a treasury slide is rarely the highlight of a leadership meeting, so let me keep this concrete. Over the next two years, this redesign will cut our cross-border bank fees by roughly a third. Not through a heroic negotiation — through architecture.<br><br>Today we run more than forty accounts across eleven entities, and almost every intercompany payment moves in full through a correspondent bank. We pay a fee, we bear the FX spread, and someone in the São Paulo team reconciles it by hand. Multiply that by a few thousand payments a month and you can see where the money goes.<br><br>What I'm proposing is a netting cycle plus a pooling structure. Instead of settling every flow gross, we offset payments between related entities once a month and move only the net. Surplus in one country funds shortage in another, inside a single virtual pot, without a physical transfer.<br><br>The catch is that none of this shows up where you'd look for a win. There's no headline, no press release. The proof is in the P&L twelve months out — lower fees, a lighter reconciliation load, and far fewer surprises at month-end. I'd rather promise you something quiet and real than something loud and fragile.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "By how much will the redesign cut cross-border bank fees, and over what period?",
+     "options": [
+      "By half, over one year",
+      "By roughly a third, over two years",
+      "By a third, over five years",
+      "By two thirds, over two years"
+     ],
+     "answer": 1,
+     "why": "\"Over the next two years, this redesign will cut our cross-border bank fees by roughly a third.\""
+    },
+    {
+     "q": "What does Emily say is the source of the savings?",
+     "options": [
+      "A heroic negotiation with the banks",
+      "Architecture, not negotiation",
+      "Cutting the São Paulo reconciliation team",
+      "Closing all but one entity"
+     ],
+     "answer": 1,
+     "why": "\"Not through a heroic negotiation — through architecture.\""
+    },
+    {
+     "q": "What is the current problem with intercompany payments?",
+     "options": [
+      "They move in full through a correspondent bank, incurring fees, FX spread and manual reconciliation",
+      "They are netted too aggressively",
+      "They are pooled but never settled",
+      "They bypass the treasury entirely"
+     ],
+     "answer": 0,
+     "why": "\"almost every intercompany payment moves in full through a correspondent bank. We pay a fee, we bear the FX spread… reconciles it by hand.\""
+    },
+    {
+     "q": "What does Emily mean by \"none of this shows up where you'd look for a win\"?",
+     "options": [
+      "The benefits are hidden from the treasury team",
+      "The gains are undramatic and appear later in the P&L, not as a visible headline",
+      "The project will actually fail",
+      "The savings go to a competitor"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela contrasta um resultado \"quiet and real\" no P&L com um \"headline\" chamativo — o ganho não é vistoso."
+    },
+    {
+     "q": "What does her closing line reveal about Emily's approach?",
+     "options": [
+      "She prefers bold, high-visibility bets",
+      "She favours a dependable, understated result over a flashy but risky one",
+      "She is indifferent to whether the project succeeds",
+      "She distrusts the leadership team"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"I'd rather promise you something quiet and real than something loud and fragile\" mostra preferência pelo sólido sobre o vistoso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We run a monthly <strong>netting</strong> cycle across the group.\" Netting is…",
+     "options": [
+      "offsetting payments between entities so only the net balance moves",
+      "opening a new account in each currency",
+      "hedging every payment with a forward contract",
+      "auditing the bank statements line by line"
+     ],
+     "answer": 0,
+     "why": "Netting = compensação: abater pagamentos entre entidades e mover só o saldo líquido."
+    },
+    {
+     "q": "Choose the correct word: \"Under our ___ structure, cash from Chile can cover a gap in Poland inside one virtual pot.\"",
+     "options": [
+      "netting",
+      "pooling",
+      "reconciliation",
+      "correspondent"
+     ],
+     "answer": 1,
+     "why": "Pooling = concentração de saldos num único pote virtual — excedente cobre a escassez."
+    },
+    {
+     "q": "\"They fund the shortfall with an <strong>intercompany loan</strong> rather than a bank line.\" This is…",
+     "options": [
+      "a loan between related entities of the same group",
+      "a loan from an external correspondent bank",
+      "a short-term FX swap",
+      "an overdraft with the central treasury's bank"
+     ],
+     "answer": 0,
+     "why": "Intercompany loan = empréstimo entre empresas do mesmo grupo."
+    },
+    {
+     "q": "\"A well-designed architecture cuts the <strong>reconciliation load</strong> on the desk.\" Reconciliation load refers to…",
+     "options": [
+      "the effort of matching payments and balances to confirm they agree",
+      "the total value of cross-border payments",
+      "the number of correspondent banks in use",
+      "the FX spread paid on each transfer"
+     ],
+     "answer": 0,
+     "why": "Reconciliation load = a carga de trabalho de conciliar e casar pagamentos e saldos."
+    },
+    {
+     "q": "Choose the correct word: \"An ___ acts as an internal bank for the group, lending surplus to entities that are short.\"",
+     "options": [
+      "in-house bank",
+      "correspondent bank",
+      "external auditor",
+      "clearing house"
+     ],
+     "answer": 0,
+     "why": "In-house bank = banco interno que funciona como banco do próprio grupo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem numa reunião de tesouraria. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The CFO still has to <strong>sign off on</strong> the pooling structure.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly criticise",
+      "postpone indefinitely",
+      "announce to the press"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the netting cycle region by region.\" To roll out means to…",
+     "options": [
+      "cancel it in stages",
+      "implement it progressively",
+      "test it in secret",
+      "reverse it after a year"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two regional controllers <strong>pushed back on</strong> the single virtual pot.\" They…",
+     "options": [
+      "approved it at once",
+      "resisted or challenged it",
+      "forgot to review it",
+      "rewrote the whole plan"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"We agreed the netting calendar but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "carried it out fully",
+      "failed to see it through to completion",
+      "delegated it to the auditors",
+      "documented it in detail"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado; aqui, o oposto aconteceu."
+    },
+    {
+     "q": "\"Renegotiating one fee schedule won't <strong>move the needle</strong> on total costs.\" This means it will…",
+     "options": [
+      "make no noticeable difference",
+      "trigger an audit",
+      "breach the loan covenant",
+      "delay the month-end close"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível — aqui, não fará."
+    }
+   ]
+  }
+ ]
+}

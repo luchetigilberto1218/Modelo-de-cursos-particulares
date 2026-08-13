@@ -1,0 +1,259 @@
+{
+ "num": 1019,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Tomorrow is another day at Czarnikow. To talk about the future, English uses \"will + verb\". For example: I will help, she will call, we will meet. It is that simple!<br><br>Today you will learn 5 important words: tomorrow, next week, plan, prepare, and send. We go step by step. You can do it!<br><br>Here is a dica: English comes in CAN's, not in CAN'Ts. The future starts today.",
+   "items": [
+    {
+     "q": "What does English use to talk about the future?",
+     "options": [
+      "will + verb",
+      "the past tense",
+      "can + verb",
+      "the word yesterday"
+     ],
+     "answer": 0,
+     "why": "\"English uses 'will + verb'\" — é a regra da lição: will + verbo."
+    },
+    {
+     "q": "How many new words will you learn today?",
+     "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Six"
+     ],
+     "answer": 2,
+     "why": "\"Today you will learn 5 important words.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which sentence?",
+     "options": [
+      "You can learn English.",
+      "English is impossible for you.",
+      "The future starts today.",
+      "Will + verb is simple."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto é positivo (\"You can do it!\"), então discorda de \"impossible\"."
+    },
+    {
+     "q": "\"English comes in CAN's, not in CAN'Ts\" suggests that the author wants you to…",
+     "options": [
+      "feel confident and try",
+      "stop studying English",
+      "learn only grammar rules",
+      "wait until next year"
+     ],
+     "answer": 0,
+     "why": "Inferência: a frase é de encorajamento — foco no que você PODE fazer."
+    },
+    {
+     "q": "Which sentence is a correct example of will + verb?",
+     "options": [
+      "She will call.",
+      "She called yesterday.",
+      "She can call now?",
+      "She calling later."
+     ],
+     "answer": 0,
+     "why": "\"will + verb\": will call. As outras não seguem a estrutura da lição."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie contando o plano de amanhã para o time de RH. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello team. Let me tell you the plan for tomorrow. It will be a busy day, but a good day. I am happy to work with you.<br><br>First, I will send the schedule to you tonight. Please read it before you sleep. Tomorrow morning, we will meet at nine. The meeting will be short, only thirty minutes. Please arrive on time.<br><br>After the meeting, Tom will help me with the new report. We will prepare it together. I will call the manager at eleven, and she will answer our questions.<br><br>In the afternoon, we will start the plan for next week. We have many new people this month. I will prepare a welcome email, and then we will send it to them. Every new person will feel happy here.<br><br>We will finish everything by five. Then you can go home and rest. Thank you, everyone. Tomorrow will be a great day, and next week will be even better!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time will the team meet tomorrow morning?",
+     "options": [
+      "At eight",
+      "At nine",
+      "At ten",
+      "At eleven"
+     ],
+     "answer": 1,
+     "why": "\"Tomorrow morning, we will meet at nine.\""
+    },
+    {
+     "q": "Who will help Sophie with the new report?",
+     "options": [
+      "The manager",
+      "Tom",
+      "The new people",
+      "Nobody"
+     ],
+     "answer": 1,
+     "why": "\"Tom will help me with the new report.\""
+    },
+    {
+     "q": "When will Sophie send the schedule?",
+     "options": [
+      "Tonight",
+      "Tomorrow morning",
+      "Next week",
+      "At five o'clock"
+     ],
+     "answer": 0,
+     "why": "\"I will send the schedule to you tonight.\""
+    },
+    {
+     "q": "Why does Sophie send the schedule tonight?",
+     "options": [
+      "So the team can read it before the meeting",
+      "Because the meeting is cancelled",
+      "Because Tom asked for it",
+      "Because it is very long"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela diz \"Please read it before you sleep\" — para o time chegar preparado."
+    },
+    {
+     "q": "How does Sophie feel about tomorrow?",
+     "options": [
+      "Worried and tired",
+      "Positive and organised",
+      "Angry with the team",
+      "Bored"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela tem um plano claro e diz \"Tomorrow will be a great day\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I will call you <strong>tomorrow</strong>.\" Tomorrow means…",
+     "options": [
+      "today",
+      "the next day",
+      "last week",
+      "tonight"
+     ],
+     "answer": 1,
+     "why": "Tomorrow = amanhã, o dia seguinte."
+    },
+    {
+     "q": "Choose the correct word: \"I am busy today, so we will meet ___.\"",
+     "options": [
+      "yesterday",
+      "next week",
+      "last month",
+      "one hour ago"
+     ],
+     "answer": 1,
+     "why": "Next week = semana que vem, um tempo no futuro."
+    },
+    {
+     "q": "\"We need a good <strong>plan</strong> for the project.\" A plan is…",
+     "options": [
+      "a big problem",
+      "an idea of what to do",
+      "a finished report",
+      "a coffee break"
+     ],
+     "answer": 1,
+     "why": "Plan = plano: a ideia do que você vai fazer."
+    },
+    {
+     "q": "Choose the correct word: \"I will ___ the report before the meeting.\"",
+     "options": [
+      "prepare",
+      "yesterday",
+      "next week",
+      "tomorrow"
+     ],
+     "answer": 0,
+     "why": "Prepare = preparar; é o verbo que completa \"will + verb\"."
+    },
+    {
+     "q": "\"She will <strong>send</strong> the email now.\" To send means…",
+     "options": [
+      "to make something go to someone",
+      "to delete it",
+      "to read it",
+      "to print it"
+     ],
+     "answer": 0,
+     "why": "Send = enviar: fazer algo chegar até alguém."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples do dia a dia de RH. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"I will <strong>send out</strong> the schedule tonight.\" To send out means to…",
+     "options": [
+      "cancel it",
+      "give it to many people",
+      "hide it",
+      "read it"
+     ],
+     "answer": 1,
+     "why": "Send out = enviar para várias pessoas (o time todo)."
+    },
+    {
+     "q": "\"Let's <strong>set up</strong> a meeting for tomorrow.\" To set up means to…",
+     "options": [
+      "finish it",
+      "cancel it",
+      "arrange or plan it",
+      "leave it"
+     ],
+     "answer": 2,
+     "why": "Set up = organizar, marcar (uma reunião)."
+    },
+    {
+     "q": "\"I will <strong>follow up</strong> with you next week.\" To follow up means to…",
+     "options": [
+      "check again later",
+      "forget about it",
+      "say no",
+      "go home"
+     ],
+     "answer": 0,
+     "why": "Follow up = retomar, checar de novo mais tarde."
+    },
+    {
+     "q": "\"Please <strong>fill in</strong> this form for HR.\" To fill in means to…",
+     "options": [
+      "throw it away",
+      "complete it with information",
+      "sign it fast",
+      "copy it"
+     ],
+     "answer": 1,
+     "why": "Fill in = preencher (um formulário) com as informações."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the plan.\" To sign off on means to…",
+     "options": [
+      "read it",
+      "reject it",
+      "write it",
+      "approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    }
+   ]
+  }
+ ]
+}

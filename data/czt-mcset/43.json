@@ -1,0 +1,259 @@
+{
+ "num": 43,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "People analytics has matured from novelty into a legitimate discipline. A decade ago, HR functions produced descriptive dashboards — how many employees, how many leavers, how many hires. Today, leading teams run predictive models, conduct controlled experiments and partner with data scientists to test causal hypotheses.<br><br>With that maturity comes greater responsibility. Correlation is not causation, and even the most elegant model can mislead if the underlying data is biased or incomplete. A good people analyst is, above all, intellectually honest: willing to say \"the evidence suggests, but does not prove\", rather than dressing up opinion in the language of science.<br><br>The strategic value lies in the questions, not the tools. The right question — \"Which managers retain talent significantly above the organisational average, and what do they actually do differently?\" — often produces more insight than a twenty-tab dashboard that answers none of the questions that leaders truly care about.",
+   "items": [
+    {
+     "q": "According to the text, what did HR functions mainly produce a decade ago?",
+     "options": [
+      "Descriptive dashboards",
+      "Controlled experiments",
+      "Predictive models",
+      "Causal hypotheses"
+     ],
+     "answer": 0,
+     "why": "\"HR functions produced descriptive dashboards — how many employees, how many leavers, how many hires.\""
+    },
+    {
+     "q": "What does the author say an elegant model can still do?",
+     "options": [
+      "Guarantee causal proof",
+      "Mislead if the underlying data is biased or incomplete",
+      "Replace the need for questions",
+      "Remove all human judgement"
+     ],
+     "answer": 1,
+     "why": "\"even the most elegant model can mislead if the underlying data is biased or incomplete.\""
+    },
+    {
+     "q": "The author suggests that the strategic value of people analytics lies mainly in…",
+     "options": [
+      "the sophistication of the tools",
+      "the number of tabs in the dashboard",
+      "the questions being asked",
+      "the size of the data science team"
+     ],
+     "answer": 2,
+     "why": "\"The strategic value lies in the questions, not the tools.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A twenty-tab dashboard is more valuable than one well-framed question.",
+      "Correlation and causation are not the same thing.",
+      "Analysts should admit when evidence is only suggestive.",
+      "Biased data can undermine even a sophisticated model."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto argumenta que uma boa pergunta rende mais que um dashboard de vinte abas."
+    },
+    {
+     "q": "The phrase \"dressing up opinion in the language of science\" suggests that the author disapproves of analysts who…",
+     "options": [
+      "use plain language in reports",
+      "make opinions sound like proven facts",
+      "admit the limits of their data",
+      "run controlled experiments"
+     ],
+     "answer": 1,
+     "why": "Inferência: 'dressing up opinion' = disfarçar opinião de ciência, algo que o autor critica em favor da honestidade intelectual."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry comentando o estudo de engajamento com a equipe. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, I've read the study three times now, and I want us to be careful before we take that eighteen percent to the board. The headline is seductive — a new engagement programme, productivity up eighteen percent — but the more I look at it, the more cautious I become.<br><br>Here's my worry. The teams that opted into the programme were, on average, already the higher performers. That's a classic confounding variable. So the number may reflect who joined, not what the programme actually did. The evidence suggests an effect, but it certainly doesn't prove one.<br><br>And the sample is small — barely forty people across two sites. With numbers that thin, I'd hesitate to claim anything with confidence. I'm not saying the programme failed; I'm saying we don't yet know.<br><br>What I'd propose is a proper controlled comparison next quarter — randomise who takes part, hold the conditions steady, and then measure. If the effect survives that, I'll be the first to champion it upstairs. Until then, let's report it as promising but unproven, and resist the temptation to overclaim.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why is Harry cautious about the eighteen percent figure?",
+     "options": [
+      "The programme was too expensive",
+      "The teams that joined were already higher performers",
+      "The board asked him to lower the number",
+      "The data scientists disagreed with him"
+     ],
+     "answer": 1,
+     "why": "\"the teams that opted into the programme were, on average, already the higher performers.\""
+    },
+    {
+     "q": "What technical problem does Harry identify with the study?",
+     "options": [
+      "A confounding variable",
+      "A missing dashboard",
+      "An outdated predictive model",
+      "A translation error"
+     ],
+     "answer": 0,
+     "why": "\"That's a classic confounding variable.\""
+    },
+    {
+     "q": "What does Harry say about the sample?",
+     "options": [
+      "It is large and reliable",
+      "It is small — barely forty people across two sites",
+      "It covers the whole company",
+      "It was never actually collected"
+     ],
+     "answer": 1,
+     "why": "\"the sample is small — barely forty people across two sites.\""
+    },
+    {
+     "q": "What can we infer about Harry's overall position on the programme?",
+     "options": [
+      "He is convinced it failed",
+      "He is certain it worked",
+      "He is genuinely undecided and wants better evidence",
+      "He wants it cancelled immediately"
+     ],
+     "answer": 2,
+     "why": "Inferência: 'I'm not saying the programme failed; I'm saying we don't yet know' — ele suspende o juízo à espera de evidência."
+    },
+    {
+     "q": "What does Harry's proposal for next quarter reveal about how he thinks?",
+     "options": [
+      "He prefers opinion to experiment",
+      "He values a controlled test over a headline number",
+      "He distrusts all data equally",
+      "He wants to avoid measuring anything"
+     ],
+     "answer": 1,
+     "why": "Inferência: propor randomização e condições controladas mostra preferência por inferência causal, não por manchete."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The uplift may be driven by a <strong>confounding variable</strong> we haven't measured.\" A confounding variable is…",
+     "options": [
+      "a hidden factor that distorts the apparent relationship",
+      "a deliberately falsified data point",
+      "a variable with no effect at all",
+      "the main outcome being measured"
+     ],
+     "answer": 0,
+     "why": "Variável de confusão: um fator oculto que influencia o resultado e distorce a relação observada."
+    },
+    {
+     "q": "Choose the correct word: \"With such a small ___, the confidence interval is far too wide to draw firm conclusions.\"",
+     "options": [
+      "sample size",
+      "hypothesis",
+      "dashboard",
+      "correlation"
+     ],
+     "answer": 0,
+     "why": "Sample size = tamanho da amostra; amostra pequena gera intervalos de confiança amplos."
+    },
+    {
+     "q": "\"We found a strong <strong>correlation</strong> between training hours and retention.\" A correlation tells you that…",
+     "options": [
+      "two variables move together, without proving cause",
+      "one variable definitely causes the other",
+      "the data has been cleaned",
+      "the model is unbiased"
+     ],
+     "answer": 0,
+     "why": "Correlação = associação estatística entre variáveis; não implica causalidade."
+    },
+    {
+     "q": "An <strong>actionable insight</strong> is best described as…",
+     "options": [
+      "a finding leaders can actually act on",
+      "any chart in a dashboard",
+      "a raw export of the database",
+      "an untested opinion"
+     ],
+     "answer": 0,
+     "why": "Insight acionável: uma conclusão que orienta uma decisão ou ação concreta."
+    },
+    {
+     "q": "Choose the correct term: \"Before we run the numbers, let's state the ___ we're actually testing.\"",
+     "options": [
+      "hypothesis",
+      "bias in data",
+      "sample size",
+      "correlation"
+     ],
+     "answer": 0,
+     "why": "Hypothesis = hipótese: a afirmação que o estudo se propõe a testar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem ao discutir estudos e dados. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"I don't want us to <strong>overclaim</strong> on the strength of one small study.\" To overclaim means to…",
+     "options": [
+      "state more than the evidence supports",
+      "understate the results deliberately",
+      "double-check the data",
+      "present the findings visually"
+     ],
+     "answer": 0,
+     "why": "Overclaim = afirmar excessivamente, ir além do que os dados sustentam."
+    },
+    {
+     "q": "\"Let's <strong>drill down into</strong> the manager-level data before we generalise.\" To drill down into means to…",
+     "options": [
+      "examine something in finer detail",
+      "delete part of the dataset",
+      "summarise at a high level",
+      "ignore the outliers"
+     ],
+     "answer": 0,
+     "why": "Drill down into = descer ao detalhe, analisar em granularidade mais fina."
+    },
+    {
+     "q": "\"Two directors <strong>pushed back on</strong> the causal claim.\" They…",
+     "options": [
+      "approved it without question",
+      "challenged or questioned it",
+      "rewrote the whole study",
+      "postponed reading it"
+     ],
+     "answer": 1,
+     "why": "Push back on = contestar, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"On closer reading, the correlation doesn't <strong>hold up</strong>.\" To hold up means to…",
+     "options": [
+      "remain valid under scrutiny",
+      "delay the analysis",
+      "raise the estimate",
+      "support the leadership"
+     ],
+     "answer": 0,
+     "why": "Hold up = resistir ao escrutínio, continuar válido quando examinado de perto."
+    },
+    {
+     "q": "\"A tidier dashboard won't <strong>move the needle</strong> on decision quality.\" This means it will…",
+     "options": [
+      "not make a meaningful difference",
+      "confuse the board",
+      "take too long to build",
+      "cost more than expected"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, gerar diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

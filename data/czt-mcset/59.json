@@ -1,0 +1,259 @@
+{
+ "num": 59,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "The conflicts that land on an HR director's desk are rarely the small ones. By the time they escalate to that level, several attempts at resolution have already failed, trust has eroded and positions have hardened. What the parties need at that point is not more advice but a structured, skilled intervention.<br><br>High-stakes mediation begins with individual conversations. The goal is not to extract concessions, but to understand the story each party is telling themselves. Almost always, those stories are incompatible on the surface and surprisingly reconcilable underneath, once the fears and unspoken interests are drawn out.<br><br>There is a professional art to diplomatic language in these moments. A skilled HR leader knows when to be deliberately vague and when to be unambiguously clear; when to name a difficult truth and when to let it emerge through the parties themselves. The objective is not merely to resolve the current conflict, but to leave the relationship in a state where future disagreements can be handled at a lower cost.",
+   "items": [
+    {
+     "q": "According to the text, why are the conflicts that reach an HR director rarely small?",
+     "options": [
+      "Because HR directors only handle senior staff",
+      "Because by that stage earlier attempts at resolution have already failed",
+      "Because small conflicts are resolved by legal teams",
+      "Because the CEO screens them first"
+     ],
+     "answer": 1,
+     "why": "\"By the time they escalate to that level, several attempts at resolution have already failed.\""
+    },
+    {
+     "q": "What is the primary goal of the initial individual conversations?",
+     "options": [
+      "To extract concessions from each party",
+      "To assign blame for the breakdown",
+      "To understand the story each party is telling themselves",
+      "To document the dispute for the record"
+     ],
+     "answer": 2,
+     "why": "\"The goal is not to extract concessions, but to understand the story each party is telling themselves.\""
+    },
+    {
+     "q": "The text suggests that conflicting parties' stories are…",
+     "options": [
+      "identical once examined closely",
+      "irreconcilable in almost every case",
+      "incompatible on the surface but often reconcilable underneath",
+      "irrelevant to the mediation process"
+     ],
+     "answer": 2,
+     "why": "\"those stories are incompatible on the surface and surprisingly reconcilable underneath.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Diplomatic vagueness can be a deliberate professional choice",
+      "Being unambiguously clear is always the strongest move in mediation",
+      "Success includes lowering the cost of future disagreements",
+      "Unspoken interests must be drawn out before resolution is possible"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto valoriza saber QUANDO ser vago e QUANDO ser claro — clareza total nem sempre é a melhor jogada."
+    },
+    {
+     "q": "The phrase \"handled at a lower cost\" in the final paragraph most strongly suggests that…",
+     "options": [
+      "mediation should be financially cheaper next time",
+      "a well-mediated conflict leaves the relationship better able to absorb future friction",
+      "future conflicts should be avoided entirely",
+      "HR should reduce its budget for interventions"
+     ],
+     "answer": 1,
+     "why": "Inferência: o \"custo\" aqui é relacional — a boa mediação deixa o vínculo mais resiliente para desacordos futuros."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James informando o CEO sobre a mediação em curso. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thanks for making time. I know you want this closed inside a fortnight, and I think that's achievable — but let me be candid about where we are.<br><br>I've now sat down with each of them separately, and what I heard was not what the corridor gossip would lead you to expect. On the surface they're fighting over the reporting line for the new unit. Underneath, one feels she was passed over eighteen months ago and never told why, and the other is quietly terrified of losing credibility with his own team. Neither of those is on any org chart, and neither is solved by us picking a winner.<br><br>So here's what I'd ask of you. Please don't force a public ruling this week. If we impose an outcome, we'll get a truce, not a resolution, and it will resurface within the quarter — probably louder. Give me the room to bring them into the same conversation, and let them arrive at something they can both defend to their teams.<br><br>I'm not asking you to soften the deadline. I'm asking you to let the process do the work, so that the next disagreement between these two costs us a great deal less than this one has.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the surface-level issue the two executives appear to be fighting over?",
+     "options": [
+      "Their annual bonuses",
+      "The reporting line for the new unit",
+      "Office space allocation",
+      "A public disagreement in a board meeting"
+     ],
+     "answer": 1,
+     "why": "\"On the surface they're fighting over the reporting line for the new unit.\""
+    },
+    {
+     "q": "According to James, what is really driving one of the executives?",
+     "options": [
+      "She wants a larger budget",
+      "She feels she was passed over eighteen months ago and never told why",
+      "She is planning to resign",
+      "She distrusts the CEO"
+     ],
+     "answer": 1,
+     "why": "\"one feels she was passed over eighteen months ago and never told why.\""
+    },
+    {
+     "q": "Why does James warn against forcing a public ruling this week?",
+     "options": [
+      "It would breach company policy",
+      "It would produce a truce rather than a resolution, and the issue would resurface",
+      "It would take longer than two weeks",
+      "It would embarrass the CEO"
+     ],
+     "answer": 1,
+     "why": "\"If we impose an outcome, we'll get a truce, not a resolution, and it will resurface within the quarter.\""
+    },
+    {
+     "q": "What does James mean when he says he is not asking the CEO to \"soften the deadline\"?",
+     "options": [
+      "He wants the deadline extended quietly",
+      "He accepts the two-week target but wants freedom over how the process runs",
+      "He thinks the deadline is unimportant",
+      "He wants the CEO to announce the deadline publicly"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele mantém o prazo, mas pede autonomia sobre o método — prazo firme, processo livre."
+    },
+    {
+     "q": "What can be inferred about James's approach to the mediation?",
+     "options": [
+      "He prefers to let leadership impose a clear winner",
+      "He treats the visible dispute as a symptom of deeper, unspoken interests",
+      "He believes the conflict cannot be resolved",
+      "He views the deadline as the main obstacle"
+     ],
+     "answer": 1,
+     "why": "Inferência: James olha além do organograma para medos e interesses não ditos — o conflito visível é sintoma."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"This is a genuine <strong>high-stakes conflict</strong> — reputations and the whole unit's morale hang on how it ends.\" A high-stakes conflict is one where…",
+     "options": [
+      "the disagreement is trivial and easily dropped",
+      "the potential losses or gains are substantial",
+      "only junior staff are involved",
+      "the outcome has already been decided"
+     ],
+     "answer": 1,
+     "why": "High-stakes = alto risco: muito em jogo, perdas ou ganhos substanciais."
+    },
+    {
+     "q": "Choose the correct word: \"Both leaders had dug into ___ positions, refusing to concede a single point.\"",
+     "options": [
+      "entrenched",
+      "reconcilable",
+      "restorative",
+      "diplomatic"
+     ],
+     "answer": 0,
+     "why": "Entrenched position = posição entrincheirada, cravada e resistente a mudança."
+    },
+    {
+     "q": "\"The real driver was an <strong>unspoken interest</strong> neither had ever put into words.\" An unspoken interest is…",
+     "options": [
+      "a formal demand tabled in writing",
+      "a motive or concern that is real but never openly stated",
+      "a financial incentive offered by HR",
+      "a public grievance filed with the board"
+     ],
+     "answer": 1,
+     "why": "Unspoken interest = interesse não dito: um motivo real que não foi verbalizado."
+    },
+    {
+     "q": "Choose the correct term: \"Rather than picking a winner, she designed a ___ — a planned, deliberate process to bring both sides together.\"",
+     "options": [
+      "structured intervention",
+      "high-stakes conflict",
+      "entrenched position",
+      "escalation"
+     ],
+     "answer": 0,
+     "why": "Structured intervention = intervenção estruturada, um processo planejado e deliberado."
+    },
+    {
+     "q": "\"The mediator aimed for a <strong>restorative outcome</strong>, not just a signed agreement.\" A restorative outcome is one that…",
+     "options": [
+      "restores the working relationship, not merely ends the dispute",
+      "returns both parties to their original job titles",
+      "compensates the loser financially",
+      "restarts the negotiation from scratch"
+     ],
+     "answer": 0,
+     "why": "Restorative outcome = resultado restaurativo: repara o vínculo, não só encerra a disputa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em mediações e conversas de alto risco. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Before we announce anything, the CEO has to <strong>sign off on</strong> the settlement.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly ignore",
+      "publicly criticise",
+      "postpone indefinitely"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Both executives <strong>pushed back on</strong> the first proposal.\" They…",
+     "options": [
+      "accepted it without comment",
+      "resisted or objected to it",
+      "forwarded it to the board",
+      "signed it immediately"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"We need both of them to <strong>follow through</strong> on what they agree today.\" To follow through means to…",
+     "options": [
+      "carry the commitment to completion",
+      "renegotiate the terms later",
+      "delegate the task to their teams",
+      "record the meeting minutes"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim aquilo que foi combinado."
+    },
+    {
+     "q": "\"Let's not <strong>paper over</strong> the real grievance just to hit the deadline.\" To paper over a problem means to…",
+     "options": [
+      "conceal it superficially without truly resolving it",
+      "document it in detail",
+      "escalate it to senior management",
+      "solve it completely"
+     ],
+     "answer": 0,
+     "why": "Paper over = disfarçar por cima, mascarar o problema sem realmente resolvê-lo."
+    },
+    {
+     "q": "\"Imposing a winner now would only <strong>kick the can down the road</strong>.\" This means it would…",
+     "options": [
+      "settle the matter permanently",
+      "delay the real problem to a later point",
+      "escalate the cost immediately",
+      "satisfy both parties at once"
+     ],
+     "answer": 1,
+     "why": "Kick the can down the road = empurrar o problema para depois, adiar a solução de fato."
+    }
+   ]
+  }
+ ]
+}

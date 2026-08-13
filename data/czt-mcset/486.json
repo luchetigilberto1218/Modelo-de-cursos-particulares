@@ -1,0 +1,259 @@
+{
+ "num": 486,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "On-premise means you keep the servers inside your own building. You buy them, you maintain them, and you replace them when they break. Cloud is different. You rent the same capacity from a provider.<br><br>On-premise gives you full control, but it asks for constant work. Cloud gives you convenience, but it creates a permanent dependency on the provider.<br><br>Most companies today use a mix. They keep the most sensitive systems on-premise, and they move the everyday ones to the cloud. The choice is rarely simple. It depends on cost, security, speed, and the kind of work the company does.",
+   "items": [
+    {
+     "q": "What does on-premise mean?",
+     "options": [
+      "You keep the servers inside your own building",
+      "You rent the servers from a provider",
+      "You do not use servers at all",
+      "You share the servers with other companies"
+     ],
+     "answer": 0,
+     "why": "\"On-premise means you keep the servers inside your own building.\""
+    },
+    {
+     "q": "With cloud, what do you do with the capacity?",
+     "options": [
+      "You buy it",
+      "You rent it from a provider",
+      "You build it yourself",
+      "You sell it to clients"
+     ],
+     "answer": 1,
+     "why": "\"Cloud... You rent the same capacity from a provider.\""
+    },
+    {
+     "q": "What do most companies do today?",
+     "options": [
+      "They use only cloud",
+      "They use only on-premise",
+      "They use a mix of both",
+      "They use no servers"
+     ],
+     "answer": 2,
+     "why": "\"Most companies today use a mix.\""
+    },
+    {
+     "q": "The text suggests that on-premise is best for…",
+     "options": [
+      "the everyday systems",
+      "the most sensitive systems",
+      "companies with no IT staff",
+      "very small budgets"
+     ],
+     "answer": 1,
+     "why": "Inferência: a empresa mantém \"the most sensitive systems on-premise\" — logo, é a melhor opção para eles."
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "The choice depends on cost and security",
+      "Cloud creates a dependency on the provider",
+      "One option is always the right one for everyone",
+      "On-premise asks for constant work"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz \"The choice is rarely simple\" e depende de vários fatores — não existe uma opção única sempre certa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry explicando ao novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team! Let me explain how we work here.<br><br>We keep our most sensitive customer data on-premise. That means the servers are here, in our own building. We can see them and we control them. This is important for us, because we must protect our clients' private information.<br><br>Everything else goes to the cloud. Email, our shared files, the small everyday tools — all of that we rent from a provider. It is cheaper and much easier. When we grow, the cloud grows with us. We do not have to buy new machines, and we do not have to fix them at night.<br><br>So it is a mix. The sensitive systems stay here, and the everyday systems live in the cloud. Yes, on-premise asks for more work. We maintain the servers, and we replace them when they break. But for customer data, that control is worth it.<br><br>If you have any questions this week, just ask me. Nobody understands all of this on day one.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does the company keep its sensitive customer data?",
+     "options": [
+      "In the cloud",
+      "On-premise, in its own building",
+      "At the provider's office",
+      "On the employees' laptops"
+     ],
+     "answer": 1,
+     "why": "\"We keep our most sensitive customer data on-premise... the servers are here, in our own building.\""
+    },
+    {
+     "q": "What does the company move to the cloud?",
+     "options": [
+      "The customer data",
+      "Email, shared files and everyday tools",
+      "The whole company",
+      "Nothing at all"
+     ],
+     "answer": 1,
+     "why": "\"Email, our shared files, the small everyday tools — all of that we rent from a provider.\""
+    },
+    {
+     "q": "Why does Harry say the cloud is a good choice for everyday systems?",
+     "options": [
+      "It gives full control",
+      "It is cheaper and easier, and grows with the company",
+      "It never needs a provider",
+      "It keeps the data more private"
+     ],
+     "answer": 1,
+     "why": "\"It is cheaper and much easier. When we grow, the cloud grows with us.\""
+    },
+    {
+     "q": "Harry suggests that on-premise…",
+     "options": [
+      "needs more work than the cloud",
+      "is always cheaper",
+      "does not need any servers",
+      "is used for everyday tools"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele diz \"on-premise asks for more work. We maintain the servers, and we replace them.\""
+    },
+    {
+     "q": "How would you best describe Harry's tone with the new joiner?",
+     "options": [
+      "Impatient and cold",
+      "Friendly and helpful",
+      "Angry about the servers",
+      "Bored and tired"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele dá boas-vindas e diz \"just ask me. Nobody understands all of this on day one.\" — é acolhedor."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We keep our servers <strong>on-premise</strong>.\" On-premise means…",
+     "options": [
+      "in your own building",
+      "in another country",
+      "on the internet",
+      "at the client's office"
+     ],
+     "answer": 0,
+     "why": "On-premise = no próprio local, dentro do seu prédio."
+    },
+    {
+     "q": "Choose the correct word: \"When a server breaks, we ___ it with a new one.\"",
+     "options": [
+      "maintain",
+      "replace",
+      "rent",
+      "share"
+     ],
+     "answer": 1,
+     "why": "To replace = substituir; trocar o antigo por um novo."
+    },
+    {
+     "q": "\"The cloud can grow with us because it has more <strong>capacity</strong>.\" Capacity means…",
+     "options": [
+      "how much it can hold or do",
+      "how old it is",
+      "how much it costs",
+      "who owns it"
+     ],
+     "answer": 0,
+     "why": "Capacity = capacidade; quanto ele consegue armazenar ou processar."
+    },
+    {
+     "q": "Choose the correct word: \"Cloud is easy, but it creates a ___ on the provider.\"",
+     "options": [
+      "convenience",
+      "dependency",
+      "capacity",
+      "mix"
+     ],
+     "answer": 1,
+     "why": "Dependency = dependência; você passa a depender do provedor."
+    },
+    {
+     "q": "\"We use a <strong>mix</strong> of on-premise and cloud.\" A mix means…",
+     "options": [
+      "only one option",
+      "a combination of both",
+      "no option",
+      "a new server"
+     ],
+     "answer": 1,
+     "why": "Mix = combinação; usar os dois juntos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de tecnologia. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We plan to <strong>roll out</strong> the new cloud system next month.\" To roll out means to…",
+     "options": [
+      "start using it, step by step",
+      "cancel it",
+      "hide it from the team",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar, colocar em uso aos poucos."
+    },
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the budget.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "read quickly",
+      "delay",
+      "delete"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"The IT team <strong>pushed back on</strong> the plan.\" They…",
+     "options": [
+      "agreed at once",
+      "resisted or disagreed",
+      "forgot about it",
+      "copied it"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, discordar."
+    },
+    {
+     "q": "\"We must <strong>back up</strong> the customer data every night.\" To back up means to…",
+     "options": [
+      "save an extra copy",
+      "delete the files",
+      "move to the office",
+      "print the data"
+     ],
+     "answer": 0,
+     "why": "Back up = fazer uma cópia de segurança dos dados."
+    },
+    {
+     "q": "\"Let's <strong>go with</strong> the cloud for the everyday tools.\" To go with means to…",
+     "options": [
+      "choose that option",
+      "refuse that option",
+      "travel with it",
+      "wait longer"
+     ],
+     "answer": 0,
+     "why": "Go with = escolher, optar por."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 1033,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Small talk is easy. It helps us feel close to other people. On Monday morning we all ask the same question: \"How was your weekend?\"<br><br>Today we answer with like + -ing. We say: I like walking. I enjoy cooking. I love spending time with my family. These are short, simple sentences.<br><br>You do not need big words. Take your time. Every sentence counts. Small talk is where trust begins.",
+   "items": [
+    {
+     "q": "What question do we ask on Monday morning?",
+     "options": [
+      "How was your weekend?",
+      "What is your name?",
+      "Where do you work?",
+      "How old are you?"
+     ],
+     "answer": 0,
+     "why": "\"On Monday morning we all ask the same question: How was your weekend?\""
+    },
+    {
+     "q": "How do we answer today?",
+     "options": [
+      "With numbers",
+      "With like + -ing",
+      "With one word",
+      "With questions"
+     ],
+     "answer": 1,
+     "why": "\"Today we answer with like + -ing.\""
+    },
+    {
+     "q": "Which sentence is an example from the text?",
+     "options": [
+      "I like walking.",
+      "I walked yesterday.",
+      "Do you walk?",
+      "Walking is hard."
+     ],
+     "answer": 0,
+     "why": "O texto dá o exemplo \"I like walking.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "Small talk helps us feel close.",
+      "You need big words for small talk.",
+      "Short sentences are fine.",
+      "How was your weekend? is a good question."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz \"You do not need big words\", então discordaria disso."
+    },
+    {
+     "q": "\"Small talk is where trust begins\" suggests that…",
+     "options": [
+      "small talk is not important",
+      "small talk can build good relationships",
+      "we should not talk on Monday",
+      "trust comes from big meetings"
+     ],
+     "answer": 1,
+     "why": "Inferência: se a confiança começa na small talk, ela ajuda a criar boas relações."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver falar sobre o fim de semana dele. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, my name is Oliver. I work at Czarnikow. It is Monday morning, and I want to tell you about my weekend.<br><br>On Saturday I like resting. I stay at home and I drink coffee. In the afternoon, I like walking in the park. It is quiet and nice. I love the fresh air.<br><br>On Sunday I spend time with my family. We enjoy watching movies together. My son loves football, so he plays in the garden. My wife likes reading her book.<br><br>In the evening we cook dinner. I love cooking pasta. It is my favourite. After dinner, we talk and we laugh.<br><br>I like my weekends because they are simple. I rest, I walk, and I am with my family. On Monday I come to work happy. How was your weekend? Please tell me!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does Oliver work?",
+     "options": [
+      "At Czarnikow",
+      "At a park",
+      "At a coffee shop",
+      "At home"
+     ],
+     "answer": 0,
+     "why": "\"I work at Czarnikow.\""
+    },
+    {
+     "q": "What does Oliver like doing on Saturday?",
+     "options": [
+      "Resting at home",
+      "Playing football",
+      "Going to work",
+      "Reading a book"
+     ],
+     "answer": 0,
+     "why": "\"On Saturday I like resting. I stay at home.\""
+    },
+    {
+     "q": "What does the family enjoy doing on Sunday?",
+     "options": [
+      "Watching movies",
+      "Running in the park",
+      "Cooking breakfast",
+      "Driving to work"
+     ],
+     "answer": 0,
+     "why": "\"We enjoy watching movies together.\""
+    },
+    {
+     "q": "Oliver's weekend suggests that he…",
+     "options": [
+      "does not like his family",
+      "likes a calm and simple life",
+      "works on Saturday and Sunday",
+      "does not rest at all"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele descansa, caminha e fica com a família — gosta de uma vida simples e calma."
+    },
+    {
+     "q": "Why does Oliver come to work happy on Monday?",
+     "options": [
+      "Because he had a good, restful weekend",
+      "Because he does not like weekends",
+      "Because he works on Sunday",
+      "Because he skips breakfast"
+     ],
+     "answer": 0,
+     "why": "Inferência: um fim de semana simples e bom com descanso e família o deixa feliz na segunda."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I have two free days at the <strong>weekend</strong>.\" A weekend is…",
+     "options": [
+      "Saturday and Sunday",
+      "Monday and Tuesday",
+      "a work meeting",
+      "the end of the year"
+     ],
+     "answer": 0,
+     "why": "Weekend = fim de semana (sábado e domingo)."
+    },
+    {
+     "q": "\"I like to <strong>walk</strong> in the park.\" A walk is…",
+     "options": [
+      "a caminhada",
+      "a phone call",
+      "a lunch",
+      "a car"
+     ],
+     "answer": 0,
+     "why": "Walk = caminhada / caminhar."
+    },
+    {
+     "q": "Choose the correct word: \"On Sunday we watch a good ___ at home.\"",
+     "options": [
+      "movie",
+      "walk",
+      "coffee",
+      "office"
+     ],
+     "answer": 0,
+     "why": "Movie = filme, o que assistimos em casa."
+    },
+    {
+     "q": "\"I love my <strong>family</strong>.\" Family means…",
+     "options": [
+      "família",
+      "amigos do trabalho",
+      "vizinhos",
+      "clientes"
+     ],
+     "answer": 0,
+     "why": "Family = família."
+    },
+    {
+     "q": "Choose the correct word: \"I am tired. I need some ___ on Saturday.\"",
+     "options": [
+      "rest",
+      "work",
+      "movie",
+      "walk"
+     ],
+     "answer": 0,
+     "why": "Rest = descanso, o que precisamos quando estamos cansados."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de conversa no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>How was your weekend?</strong>\" This question asks about…",
+     "options": [
+      "your Saturday and Sunday",
+      "your work plan",
+      "your name",
+      "your job title"
+     ],
+     "answer": 0,
+     "why": "É a pergunta clássica de segunda-feira sobre o fim de semana."
+    },
+    {
+     "q": "\"I <strong>spend time with</strong> my family on Sunday.\" To spend time with someone means to…",
+     "options": [
+      "be together with them",
+      "pay them money",
+      "call them once",
+      "work for them"
+     ],
+     "answer": 0,
+     "why": "Spend time with = passar tempo junto com alguém."
+    },
+    {
+     "q": "\"Let's <strong>catch up</strong> on Monday.\" To catch up means to…",
+     "options": [
+      "talk and share news",
+      "run fast",
+      "finish work early",
+      "cancel a meeting"
+     ],
+     "answer": 0,
+     "why": "Catch up = colocar a conversa em dia, trocar novidades."
+    },
+    {
+     "q": "\"I like to <strong>relax</strong> at the weekend.\" To relax means to…",
+     "options": [
+      "rest and feel calm",
+      "work harder",
+      "travel far",
+      "wake up early"
+     ],
+     "answer": 0,
+     "why": "Relax = relaxar, descansar e ficar calmo."
+    },
+    {
+     "q": "\"See you Monday. <strong>Take care!</strong>\" Take care means…",
+     "options": [
+      "look after yourself",
+      "come to work now",
+      "you are late",
+      "call me tonight"
+     ],
+     "answer": 0,
+     "why": "Take care = cuide-se; uma despedida gentil."
+    }
+   ]
+  }
+ ]
+}

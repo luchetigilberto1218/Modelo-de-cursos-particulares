@@ -1,0 +1,259 @@
+{
+ "num": 483,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Hardware is the physical part of IT. It is the machines you can touch. Laptops, desktops, phones, screens and printers are the hardware most people use every day.<br><br>Behind them there are other machines. There are servers in a data centre. There are routers and switches that connect everything. There are storage systems that hold the data.<br><br>Modern companies care less about owning the hardware. They care more about having it available when they need it. But every laptop that fails, and every router that restarts, reminds the business that the physical layer is always there.",
+   "items": [
+    {
+     "q": "What is hardware?",
+     "options": [
+      "The physical part of IT that you can touch",
+      "A program you install on a computer",
+      "A company rule about computers",
+      "A team in the office"
+     ],
+     "answer": 0,
+     "why": "\"Hardware is the physical part of IT. It is the machines you can touch.\""
+    },
+    {
+     "q": "Where are the servers?",
+     "options": [
+      "On every desk",
+      "In a data centre",
+      "In the printer",
+      "In the phone"
+     ],
+     "answer": 1,
+     "why": "\"There are servers in a data centre.\""
+    },
+    {
+     "q": "What do routers and switches do?",
+     "options": [
+      "They hold the data",
+      "They print documents",
+      "They connect everything",
+      "They replace laptops"
+     ],
+     "answer": 2,
+     "why": "\"There are routers and switches that connect everything.\""
+    },
+    {
+     "q": "The text suggests that modern companies…",
+     "options": [
+      "want to own all the hardware themselves",
+      "just want the hardware to work when they need it",
+      "do not use hardware anymore",
+      "only use printers"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"They care more about having it available when they need it\" — o importante é funcionar, não ter."
+    },
+    {
+     "q": "Why does the text mention a laptop that fails and a router that restarts?",
+     "options": [
+      "To show that hardware is not important",
+      "To remind us that the physical layer is always there",
+      "To say that servers are cheap",
+      "To explain how to buy a phone"
+     ],
+     "answer": 1,
+     "why": "Inferência: quando algo quebra, a empresa lembra que a camada física está sempre presente."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry mostrando o diagrama para a nova colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the team. Let me show you this simple diagram. It shows what sits between your laptop and the company's data.<br><br>So, here is your laptop. You use it every day. But your laptop is not alone. There are three kinds of hardware behind it, and most people never think about them.<br><br>First, there is a router. The router connects our office to the internet. When the router is slow, everything is slow.<br><br>Second, there are servers. A server is a big, powerful computer. It stores our files and runs our applications for the whole company. There is not just one server — there are many, in a room we call the data centre.<br><br>Third, there is the storage system. This is where all the data lives. It is safe there, and we can find it when we need it.<br><br>So, from your laptop to the data, there are three steps: the router, the server, and the storage. You never see them, but they are always working. Any questions? Great. Let's have a coffee.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does the diagram show?",
+     "options": [
+      "How to fix a laptop",
+      "What sits between your laptop and the company's data",
+      "How to make coffee",
+      "The names of the team members"
+     ],
+     "answer": 1,
+     "why": "\"It shows what sits between your laptop and the company's data.\""
+    },
+    {
+     "q": "How many kinds of hardware are behind the laptop?",
+     "options": [
+      "One",
+      "Two",
+      "Three",
+      "Five"
+     ],
+     "answer": 2,
+     "why": "\"There are three kinds of hardware behind it\" — router, server e storage."
+    },
+    {
+     "q": "What does the router do?",
+     "options": [
+      "It connects the office to the internet",
+      "It stores all the files",
+      "It prints documents",
+      "It runs the coffee machine"
+     ],
+     "answer": 0,
+     "why": "\"The router connects our office to the internet.\""
+    },
+    {
+     "q": "Harry says there are many servers. This suggests that…",
+     "options": [
+      "one server is enough for the company",
+      "the company needs a lot of computing power",
+      "servers do not store data",
+      "servers are only for the new joiner"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"there are many, in a room we call the data centre\" — a empresa precisa de muita capacidade."
+    },
+    {
+     "q": "Why does Harry say \"You never see them, but they are always working\"?",
+     "options": [
+      "Because the hardware is broken",
+      "Because the hardware is invisible to users but always doing its job",
+      "Because nobody uses the hardware",
+      "Because the laptop is the only machine that matters"
+     ],
+     "answer": 1,
+     "why": "Inferência: router, server e storage trabalham no fundo, mesmo que o usuário não os veja."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"A <strong>server</strong> stores our files for the whole company.\" A server is…",
+     "options": [
+      "a powerful computer that holds data and runs applications",
+      "a person who brings coffee",
+      "a small printer",
+      "a mobile phone"
+     ],
+     "answer": 0,
+     "why": "Server = servidor: um computador potente que guarda dados e roda aplicações."
+    },
+    {
+     "q": "Choose the correct word: \"The office is slow because the ___ lost its connection to the internet.\"",
+     "options": [
+      "router",
+      "printer",
+      "desktop",
+      "laptop"
+     ],
+     "answer": 0,
+     "why": "Router = roteador: conecta o escritório à internet."
+    },
+    {
+     "q": "\"All the servers are in one big room, the <strong>data centre</strong>.\" A data centre is…",
+     "options": [
+      "a room full of servers and storage",
+      "a coffee room",
+      "a mobile phone",
+      "a type of software"
+     ],
+     "answer": 0,
+     "why": "Data centre = centro de dados: a sala onde ficam os servidores."
+    },
+    {
+     "q": "Choose the correct word: \"I need to print this report, so I will send it to the ___.\"",
+     "options": [
+      "printer",
+      "server",
+      "switch",
+      "router"
+     ],
+     "answer": 0,
+     "why": "Printer = impressora: usada para imprimir documentos."
+    },
+    {
+     "q": "\"The router, the servers and the storage are all part of the <strong>physical layer</strong>.\" The physical layer is…",
+     "options": [
+      "the real machines you can touch",
+      "the company's rules",
+      "the software on your laptop",
+      "the internet password"
+     ],
+     "answer": 0,
+     "why": "Physical layer = camada física: as máquinas reais, o oposto do software."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho no dia a dia de TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The old laptop is slow, so the IT team will <strong>set it up</strong> with a new one.\" To set up means to…",
+     "options": [
+      "prepare and get it ready to use",
+      "throw it away",
+      "sell it",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Set up = configurar, deixar pronto para usar."
+    },
+    {
+     "q": "\"My computer is frozen. I will <strong>turn it off</strong> and on again.\" To turn off means to…",
+     "options": [
+      "stop it / switch it off",
+      "clean it",
+      "start a new program",
+      "call the manager"
+     ],
+     "answer": 0,
+     "why": "Turn off = desligar."
+    },
+    {
+     "q": "\"The internet is down. Can you <strong>check on</strong> the router?\" To check on the router means to…",
+     "options": [
+      "look at it to see if it is okay",
+      "buy a new router",
+      "throw the router away",
+      "paint the router"
+     ],
+     "answer": 0,
+     "why": "Check on = dar uma olhada para ver se está tudo bem."
+    },
+    {
+     "q": "\"Old hardware is slow. The company will <strong>replace</strong> it every three to five years.\" To replace means to…",
+     "options": [
+      "put a new one in place of the old one",
+      "repair the old one forever",
+      "give it to a friend",
+      "keep it in a box"
+     ],
+     "answer": 0,
+     "why": "Replace = substituir, trocar o antigo por um novo."
+    },
+    {
+     "q": "\"My screen is not working. I need to <strong>ask for</strong> help from IT.\" To ask for means to…",
+     "options": [
+      "request something",
+      "answer a question",
+      "give something away",
+      "turn off the screen"
+     ],
+     "answer": 0,
+     "why": "Ask for = pedir, solicitar."
+    }
+   ]
+  }
+ ]
+}

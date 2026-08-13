@@ -1,0 +1,259 @@
+{
+ "num": 487,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A network is a group of devices that can talk to each other. Laptops, phones, printers and servers can all be part of a network. At work, most people connect through Wi-Fi.<br><br>When people work from home, many use a VPN. A VPN is a secure, private tunnel. It makes your laptop act as if it were still inside the office. Another useful word is latency — the small delay between sending a message and getting an answer. Low latency feels instant. High latency makes video calls freeze and websites feel slow.<br><br>Good networks are almost invisible. You do not think about them. The moment you start thinking about the network, something is usually wrong.",
+   "items": [
+    {
+     "q": "What is a network?",
+     "options": [
+      "A group of devices that can talk to each other",
+      "A type of laptop",
+      "A room in the office",
+      "A kind of website"
+     ],
+     "answer": 0,
+     "why": "\"A network is a group of devices that can talk to each other.\""
+    },
+    {
+     "q": "What does a VPN do?",
+     "options": [
+      "It makes your laptop faster",
+      "It makes your laptop act as if it were inside the office",
+      "It turns off the Wi-Fi",
+      "It prints your documents"
+     ],
+     "answer": 1,
+     "why": "\"A VPN… makes your laptop act as if it were still inside the office.\""
+    },
+    {
+     "q": "What happens when latency is high?",
+     "options": [
+      "Video calls freeze and websites feel slow",
+      "Everything feels instant",
+      "The Wi-Fi gets stronger",
+      "The network disappears"
+     ],
+     "answer": 0,
+     "why": "\"High latency makes video calls freeze and websites feel slow.\""
+    },
+    {
+     "q": "The text suggests that a GOOD network is one that…",
+     "options": [
+      "you notice all the time",
+      "you almost never think about",
+      "is very expensive",
+      "only works with Wi-Fi"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Good networks are almost invisible\" — se está tudo bem, você nem repara nele."
+    },
+    {
+     "q": "If you START thinking about your network, the text suggests that…",
+     "options": [
+      "the network is working perfectly",
+      "something is probably wrong",
+      "you should buy a new laptop",
+      "your latency is low"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"The moment you start thinking about the network, something is usually wrong.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily ajudando uma nova colega remota a configurar a VPN. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team! Today I will help you set up your VPN, so your laptop works as if you were here in the office.<br><br>First, connect your laptop to your home Wi-Fi. Is the Wi-Fi on? Good. Now open the VPN app and type your name and password. When it says \"connected\", you are inside our private tunnel. This tunnel keeps your work safe.<br><br>You may notice a small delay sometimes. That delay is called latency. It is normal. If a video call starts to freeze, do not worry — just wait a few seconds, and it usually comes back.<br><br>One tip: if your internet feels slow, move closer to your Wi-Fi router. A weak signal makes everything slow. When the network works well, you will not even think about it. That is a good sign. If you have any problem, send me a message and I will help you.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Emily helping her new colleague do?",
+     "options": [
+      "Set up her VPN",
+      "Buy a new laptop",
+      "Write an email",
+      "Change her password"
+     ],
+     "answer": 0,
+     "why": "\"Today I will help you set up your VPN.\""
+    },
+    {
+     "q": "What must the colleague do FIRST?",
+     "options": [
+      "Open the video call",
+      "Connect the laptop to the home Wi-Fi",
+      "Turn off the router",
+      "Call the office"
+     ],
+     "answer": 1,
+     "why": "\"First, connect your laptop to your home Wi-Fi.\""
+    },
+    {
+     "q": "What does Emily say about the small delay?",
+     "options": [
+      "It is a big problem",
+      "It is normal and it is called latency",
+      "It means the VPN is broken",
+      "It never happens"
+     ],
+     "answer": 1,
+     "why": "\"You may notice a small delay… That delay is called latency. It is normal.\""
+    },
+    {
+     "q": "If the internet feels slow, Emily suggests that you…",
+     "options": [
+      "move closer to the Wi-Fi router",
+      "turn off the laptop",
+      "restart the office",
+      "wait one hour"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"if your internet feels slow, move closer to your Wi-Fi router. A weak signal makes everything slow.\""
+    },
+    {
+     "q": "How would you describe Emily's tone?",
+     "options": [
+      "Angry and impatient",
+      "Friendly and helpful",
+      "Bored and tired",
+      "Serious and cold"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela dá boas-vindas, explica com calma e oferece ajuda — um tom acolhedor."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"My phone, my laptop and the printer are all on the same <strong>network</strong>.\" A network is…",
+     "options": [
+      "a group of devices connected together",
+      "a type of email",
+      "a meeting room",
+      "a password"
+     ],
+     "answer": 0,
+     "why": "Network = rede: dispositivos conectados que trocam dados."
+    },
+    {
+     "q": "Choose the correct word: \"When I work from home, I use a ___ to connect safely to the office.\"",
+     "options": [
+      "VPN",
+      "printer",
+      "coffee",
+      "window"
+     ],
+     "answer": 0,
+     "why": "VPN = túnel seguro para trabalhar de casa como se estivesse no escritório."
+    },
+    {
+     "q": "\"The video call started to <strong>freeze</strong>.\" To freeze here means…",
+     "options": [
+      "to become very cold",
+      "to stop moving for a moment",
+      "to end the call",
+      "to get louder"
+     ],
+     "answer": 1,
+     "why": "To freeze = travar; a imagem para por alguns segundos."
+    },
+    {
+     "q": "Choose the correct word: \"Low ___ feels instant, but high ___ makes websites feel slow.\"",
+     "options": [
+      "latency",
+      "device",
+      "tunnel",
+      "office"
+     ],
+     "answer": 0,
+     "why": "Latency = latência: o atraso entre enviar e receber."
+    },
+    {
+     "q": "\"A good network is almost <strong>invisible</strong>.\" Invisible means…",
+     "options": [
+      "very expensive",
+      "you cannot see it or notice it",
+      "very fast",
+      "always broken"
+     ],
+     "answer": 1,
+     "why": "Invisible = invisível: você nem percebe que está lá."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns no trabalho com tecnologia. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>set up</strong> the VPN on your new laptop.\" To set up means to…",
+     "options": [
+      "prepare something so it is ready to use",
+      "turn something off",
+      "throw something away",
+      "sell something"
+     ],
+     "answer": 0,
+     "why": "Set up = configurar, deixar pronto para usar."
+    },
+    {
+     "q": "\"I can't <strong>log in</strong> to the system.\" To log in means to…",
+     "options": [
+      "enter with your name and password",
+      "close the program",
+      "delete a file",
+      "restart the computer"
+     ],
+     "answer": 0,
+     "why": "Log in = entrar no sistema com usuário e senha."
+    },
+    {
+     "q": "\"The Wi-Fi went down, so I had to <strong>reconnect</strong>.\" If the Wi-Fi 'went down', it…",
+     "options": [
+      "got much faster",
+      "stopped working",
+      "moved to another room",
+      "became free"
+     ],
+     "answer": 1,
+     "why": "Go down = cair, parar de funcionar (rede, sistema, site)."
+    },
+    {
+     "q": "\"Can you <strong>turn off</strong> the router and turn it on again?\" To turn off means to…",
+     "options": [
+      "make it louder",
+      "stop the power",
+      "buy a new one",
+      "clean it"
+     ],
+     "answer": 1,
+     "why": "Turn off = desligar; o clássico \"desligar e ligar de novo\"."
+    },
+    {
+     "q": "\"If you have a problem, just <strong>reach out</strong> to me.\" To reach out means to…",
+     "options": [
+      "contact someone for help",
+      "wait quietly",
+      "fix it alone",
+      "close the app"
+     ],
+     "answer": 0,
+     "why": "Reach out = procurar alguém, pedir ajuda ou contato."
+    }
+   ]
+  }
+ ]
+}

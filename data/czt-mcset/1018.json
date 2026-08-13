@@ -1,0 +1,259 @@
+{
+ "num": 1018,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Today we are at work. Yesterday we were at work too. In English, the past of \"am\" and \"is\" is \"was\". The past of \"are\" is \"were\". Two short words open the door to the past.<br><br>I was at the office yesterday. We were in a meeting. The meeting was great. Last week was busy, so we were tired. But it was a good day.<br><br>Today you learn 5 important words: yesterday, today, last week, meeting, and tired. We go step by step. You can do it!",
+   "items": [
+    {
+     "q": "What is the past of \"is\"?",
+     "options": [
+      "was",
+      "were",
+      "are",
+      "am"
+     ],
+     "answer": 0,
+     "why": "\"the past of 'am' and 'is' is 'was'.\""
+    },
+    {
+     "q": "What is the past of \"are\"?",
+     "options": [
+      "was",
+      "is",
+      "were",
+      "am"
+     ],
+     "answer": 2,
+     "why": "\"The past of 'are' is 'were'.\""
+    },
+    {
+     "q": "How was the meeting?",
+     "options": [
+      "Bad",
+      "Great",
+      "Short",
+      "Boring"
+     ],
+     "answer": 1,
+     "why": "\"The meeting was great.\""
+    },
+    {
+     "q": "Why were they tired? The text suggests that…",
+     "options": [
+      "last week was busy",
+      "the office was cold",
+      "the meeting was short",
+      "today is a holiday"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Last week was busy, so we were tired.\" A semana cheia deixou-os cansados."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "English is very hard for beginners",
+      "you can learn the past step by step",
+      "you must learn 100 words today",
+      "the meeting was a waste of time"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"We go step by step. You can do it!\" — o tom é encorajador."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie falando com os colegas sobre a reunião de ontem e os planos de hoje. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone! How are you today? I am happy to see you all here. Sit down, please. Are you okay? Good.<br><br>Yesterday was a long day. We were in a big meeting all morning. The room was full, and there were many questions. The meeting was good, but it was also very long. At the end of the day, I was very tired. Were you tired too? I think we were all tired.<br><br>Last week was busy for the whole team. There were reports, calls, and more meetings. But the team was great. Tom was very helpful with the report, and you were right about the numbers. Thank you so much! I am proud of the team. You were all fantastic.<br><br>But today is different. Today we are calm. There is no big meeting today. So today we plan the new project. We go step by step, slow and easy. First, we talk. Then, we make a small list. It is a good day to start something new. Are you ready? I am ready. Let's go, team!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "When was the big meeting?",
+     "options": [
+      "Today",
+      "Yesterday",
+      "Last month",
+      "Tomorrow"
+     ],
+     "answer": 1,
+     "why": "\"Yesterday was a long day. We were in a big meeting all morning.\""
+    },
+    {
+     "q": "How did Sophie feel at the end of the day?",
+     "options": [
+      "Happy",
+      "Tired",
+      "Angry",
+      "Bored"
+     ],
+     "answer": 1,
+     "why": "\"At the end of the day, I was very tired.\""
+    },
+    {
+     "q": "Who was helpful with the report?",
+     "options": [
+      "Sophie",
+      "Tom",
+      "The whole team",
+      "The manager"
+     ],
+     "answer": 1,
+     "why": "\"Tom was helpful with the report.\""
+    },
+    {
+     "q": "Sophie suggests that today is…",
+     "options": [
+      "calmer than yesterday",
+      "busier than yesterday",
+      "a holiday",
+      "the same as last week"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Today we are calm. There is no big meeting today.\" — hoje é mais tranquilo."
+    },
+    {
+     "q": "How does Sophie feel about the team?",
+     "options": [
+      "Disappointed",
+      "Proud",
+      "Worried",
+      "Neutral"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"you were right about the numbers. Thank you! I am proud of the team.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We were in a <strong>meeting</strong> all morning.\" A meeting is…",
+     "options": [
+      "a break for coffee",
+      "a moment when people talk about work",
+      "a long email",
+      "a holiday"
+     ],
+     "answer": 1,
+     "why": "Meeting = reunião: pessoas juntas para falar de trabalho."
+    },
+    {
+     "q": "Choose the correct word: \"I worked a lot, so now I am very ___.\"",
+     "options": [
+      "tired",
+      "today",
+      "meeting",
+      "last week"
+     ],
+     "answer": 0,
+     "why": "Tired = cansado(a): como você fica depois de trabalhar muito."
+    },
+    {
+     "q": "Choose the correct word: \"We are at the office now. This is ___.\"",
+     "options": [
+      "yesterday",
+      "last week",
+      "today",
+      "tired"
+     ],
+     "answer": 2,
+     "why": "Today = hoje: o dia de agora."
+    },
+    {
+     "q": "\"I was at home <strong>yesterday</strong>.\" Yesterday means…",
+     "options": [
+      "the day before today",
+      "the day after today",
+      "right now",
+      "next month"
+     ],
+     "answer": 0,
+     "why": "Yesterday = ontem: o dia antes de hoje."
+    },
+    {
+     "q": "Choose the correct words: \"The report was not for today. It was ready ___.\"",
+     "options": [
+      "today",
+      "last week",
+      "tired",
+      "meeting"
+     ],
+     "answer": 1,
+     "why": "Last week = semana passada: um tempo já no passado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's <strong>get started</strong> with the new project.\" Get started means…",
+     "options": [
+      "to begin",
+      "to stop",
+      "to wait",
+      "to finish"
+     ],
+     "answer": 0,
+     "why": "Get started = começar."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the report today.\" Sign off on means…",
+     "options": [
+      "to approve",
+      "to delete",
+      "to read fast",
+      "to print"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"You were <strong>right about</strong> the numbers.\" To be right about something means…",
+     "options": [
+      "to be correct about it",
+      "to forget it",
+      "to change it",
+      "to hide it"
+     ],
+     "answer": 0,
+     "why": "To be right about = estar certo(a) sobre algo."
+    },
+    {
+     "q": "\"Yesterday was busy, but today we can <strong>slow down</strong>.\" Slow down means…",
+     "options": [
+      "to go faster",
+      "to go slower and calmer",
+      "to stop working",
+      "to start a meeting"
+     ],
+     "answer": 1,
+     "why": "Slow down = diminuir o ritmo, ficar mais calmo."
+    },
+    {
+     "q": "\"We plan the project <strong>step by step</strong>.\" Step by step means…",
+     "options": [
+      "all at once",
+      "very slowly and never",
+      "one small part at a time",
+      "with no plan"
+     ],
+     "answer": 2,
+     "why": "Step by step = passo a passo, uma parte de cada vez."
+    }
+   ]
+  }
+ ]
+}

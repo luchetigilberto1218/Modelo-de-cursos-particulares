@@ -1,0 +1,259 @@
+{
+ "num": 500,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Many IT projects fail. But the problem is not always the technology. Often, nobody explained the project clearly to the people who pay for it.<br><br>A non-technical stakeholder wants to know three things: Is the project on track? What is the next milestone? What could go wrong? The answer should be short, honest, and in normal business language. No jargon.<br><br>If you must use a technical term, explain it in one sentence. For example: \"We are testing integration with the bank system. This means we check that both systems exchange the right information without errors. We expect to finish by Friday.\" Stakeholders do not need to be experts. They need to trust that the team makes honest, thoughtful decisions. Clear communication builds that trust.",
+   "items": [
+    {
+     "q": "According to the text, why do many IT projects fail?",
+     "options": [
+      "The technology is always wrong",
+      "Nobody explained the project clearly to the people who pay",
+      "The team is too small",
+      "The deadline is too short"
+     ],
+     "answer": 1,
+     "why": "\"the problem is not always the technology... nobody explained the project clearly to the people who pay for it.\""
+    },
+    {
+     "q": "What three things does a non-technical stakeholder want to know?",
+     "options": [
+      "The budget, the team, and the office",
+      "Is it on track, what is the next milestone, what could go wrong",
+      "The code, the servers, and the tests",
+      "The past, the present, and the future"
+     ],
+     "answer": 1,
+     "why": "\"is the project on track, what is the next milestone, and what could go wrong.\""
+    },
+    {
+     "q": "What should you do if you must use a technical term?",
+     "options": [
+      "Explain it in one sentence",
+      "Use more technical terms",
+      "Send a long list to the stakeholder",
+      "Ask the stakeholder to study it"
+     ],
+     "answer": 0,
+     "why": "\"If you must use a technical word, explain it in one sentence.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Stakeholders should trust the team's decisions",
+      "Stakeholders must learn all the technical words to understand a project",
+      "Clear communication builds trust",
+      "Reports should use normal business language"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz \"Stakeholders do not need to become experts\" — eles não precisam aprender o jargão."
+    },
+    {
+     "q": "The example about the bank system suggests that…",
+     "options": [
+      "a hard word becomes clear with one simple sentence",
+      "the bank system is broken",
+      "the team will miss the deadline",
+      "integration is impossible to explain"
+     ],
+     "answer": 0,
+     "why": "Inferência: o exemplo mostra como explicar \"integration\" em uma frase simples e clara."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie reescrever um relatório de projeto de TI para um executivo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, let me look at this project update together with you. It has five technical terms, and I think that is the real problem here. You are not an engineer, so you should not need to be one to read this.<br><br>Look at this line: \"We are running an API integration.\" That means nothing to you. So let me change it. I will write: \"We are connecting our system to the bank's system, so they can share information automatically.\" Now you understand it, right?<br><br>Here is the next one. The report says \"latency is high.\" I will write instead: \"The system is a bit slow, so we are fixing it this week.\" Simple.<br><br>I do this for all five terms. One short sentence each. No jargon. And look at your face now — you finally understand the project. That is the whole point. You do not need to be an expert. You just need to trust that we are making honest, thoughtful decisions. That trust starts with clear words.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Sophie think is the real problem with the update?",
+     "options": [
+      "It has five technical terms",
+      "It is too short",
+      "It has no numbers",
+      "It was sent late"
+     ],
+     "answer": 0,
+     "why": "\"It has five technical terms, and I think that is the real problem here.\""
+    },
+    {
+     "q": "How does Sophie explain \"API integration\"?",
+     "options": [
+      "She deletes the whole line",
+      "She says the systems connect and share information automatically",
+      "She adds three more technical words",
+      "She asks the executive to study it"
+     ],
+     "answer": 1,
+     "why": "\"We are connecting our system to the bank's system, so they can share information automatically.\""
+    },
+    {
+     "q": "Instead of \"latency is high,\" what does Sophie write?",
+     "options": [
+      "The system is a bit slow, so we are fixing it this week",
+      "The system is broken",
+      "The system is perfect",
+      "The system is offline"
+     ],
+     "answer": 0,
+     "why": "\"The system is a bit slow, so we are fixing it this week.\""
+    },
+    {
+     "q": "Why does Sophie say \"look at your face now\"?",
+     "options": [
+      "The executive is angry",
+      "The executive finally understands the project",
+      "The executive is bored",
+      "The executive is asleep"
+     ],
+     "answer": 1,
+     "why": "Inferência: as palavras simples fizeram o executivo entender pela primeira vez."
+    },
+    {
+     "q": "What does Sophie believe the executive really needs?",
+     "options": [
+      "To become a software expert",
+      "To trust that the team makes honest, thoughtful decisions",
+      "To read every technical term",
+      "To manage the code himself"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"You do not need to be an expert. You just need to trust that we are making honest, thoughtful decisions.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Every <strong>stakeholder</strong> will get the report on Friday.\" A stakeholder is…",
+     "options": [
+      "a person with an interest in the project",
+      "a computer program",
+      "a type of report",
+      "a technical error"
+     ],
+     "answer": 0,
+     "why": "Stakeholder = parte interessada: quem tem interesse no projeto."
+    },
+    {
+     "q": "Choose the correct word: \"Good news — the project is ___ and we will finish on time.\"",
+     "options": [
+      "on track",
+      "jargon",
+      "expert",
+      "milestone"
+     ],
+     "answer": 0,
+     "why": "On track = no caminho: seguindo bem o plano."
+    },
+    {
+     "q": "\"We reached an important <strong>milestone</strong> today.\" A milestone is…",
+     "options": [
+      "a key point or step in the project",
+      "a technical error",
+      "a long meeting",
+      "a type of software"
+     ],
+     "answer": 0,
+     "why": "Milestone = marco: um ponto importante do projeto."
+    },
+    {
+     "q": "Choose the correct word: \"Please write the report without ___ so everyone can understand it.\"",
+     "options": [
+      "jargon",
+      "trust",
+      "milestones",
+      "stakeholders"
+     ],
+     "answer": 0,
+     "why": "Jargon = jargão: palavras técnicas que confundem quem não é da área."
+    },
+    {
+     "q": "\"The two systems <strong>exchange</strong> information every hour.\" To exchange means to…",
+     "options": [
+      "give and receive",
+      "delete",
+      "hide",
+      "count"
+     ],
+     "answer": 0,
+     "why": "To exchange = trocar: um dá e o outro recebe."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de projetos de TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the report.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "delete",
+      "translate",
+      "ignore"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"Next month we will <strong>roll out</strong> the new system to all teams.\" To roll out means to…",
+     "options": [
+      "cancel it",
+      "launch or start using it",
+      "hide it",
+      "test it in secret"
+     ],
+     "answer": 1,
+     "why": "Roll out = lançar, colocar em uso."
+    },
+    {
+     "q": "\"Some stakeholders <strong>pushed back on</strong> the new deadline.\" They…",
+     "options": [
+      "agreed at once",
+      "disagreed or resisted",
+      "forgot about it",
+      "wrote it down"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, discordar."
+    },
+    {
+     "q": "\"We must <strong>keep the stakeholders in the loop</strong> about the risks.\" This means we should…",
+     "options": [
+      "keep them informed",
+      "keep them out of the project",
+      "ask them to leave",
+      "give them more work"
+     ],
+     "answer": 0,
+     "why": "Keep in the loop = manter informado, atualizado."
+    },
+    {
+     "q": "\"Let's <strong>touch base</strong> every Friday to check the project.\" To touch base means to…",
+     "options": [
+      "have a short check-in",
+      "cancel the project",
+      "start again",
+      "send money"
+     ],
+     "answer": 0,
+     "why": "Touch base = fazer um contato rápido para se atualizar."
+    }
+   ]
+  }
+ ]
+}

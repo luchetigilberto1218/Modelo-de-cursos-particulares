@@ -1,0 +1,259 @@
+{
+ "num": 1156,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Today is a busy day at Czarnikow. There is a new tax form on Sophie's desk. The form is important. It is for the fiscal team.<br><br>Sophie is ready. She looks at the form. Taxes can sound difficult, but the words are simple. One step at a time.<br><br>The form must be correct. Sophie checks every line. Then the team sends it to accounting. Taxes are just one more part of the company's routine. You can do it too!",
+   "items": [
+    {
+     "q": "Where is the new form?",
+     "options": [
+      "On Sophie's desk",
+      "In the accounting office",
+      "At the student's home",
+      "On the tax calendar"
+     ],
+     "answer": 0,
+     "why": "\"There is a new tax form on Sophie's desk.\""
+    },
+    {
+     "q": "Is the form important?",
+     "options": [
+      "No, it is old",
+      "Yes, it is important",
+      "No, it is empty",
+      "Yes, but only next month"
+     ],
+     "answer": 1,
+     "why": "\"The form is important.\""
+    },
+    {
+     "q": "Why does Sophie check every line?",
+     "options": [
+      "Because she is tired",
+      "Because the form must be correct",
+      "Because the desk is small",
+      "Because it is not important"
+     ],
+     "answer": 1,
+     "why": "\"The form must be correct. Sophie checks every line.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with this sentence:",
+     "options": [
+      "Taxes are just part of the routine.",
+      "Taxes are impossible to learn.",
+      "The words on the form are simple.",
+      "We can do it one step at a time."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que impostos parecem difíceis, mas as palavras são simples — não são impossíveis."
+    },
+    {
+     "q": "\"One step at a time\" suggests that we should…",
+     "options": [
+      "work very fast",
+      "go slowly and calmly",
+      "skip the form",
+      "wait until next year"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"one step at a time\" pede calma, um passo de cada vez."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie mostrando o formulário fiscal ao aluno. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Come and sit here. This is my desk. Today we have a new tax form. Look — it is here, on the desk. The form is important, so we work carefully.<br><br>First, we read the top. It has the name of the company. Then we write the numbers. The numbers must be correct. If a number is wrong, we stop and start that line again. It is not difficult, but it needs time.<br><br>I am ready to help you. We go slowly, one line at a time. You do not need to be fast. You need to be careful. That is the important part.<br><br>When the form is ready, we send it to accounting. They check it again. Then it stays in the fiscal folder. We keep it for seven years. See? Taxes are simple when we take small steps. Now, you try the first line. You can do it!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where are Sophie and the student?",
+     "options": [
+      "At Sophie's desk",
+      "In the accounting room",
+      "At the bank",
+      "In a meeting room"
+     ],
+     "answer": 0,
+     "why": "\"This is my desk… it is here, on the desk.\""
+    },
+    {
+     "q": "What is on the desk today?",
+     "options": [
+      "An old letter",
+      "A new tax form",
+      "A phone",
+      "A cup of coffee"
+     ],
+     "answer": 1,
+     "why": "\"Today we have a new tax form.\""
+    },
+    {
+     "q": "What must the numbers be?",
+     "options": [
+      "Fast",
+      "Correct",
+      "Big",
+      "New"
+     ],
+     "answer": 1,
+     "why": "\"The numbers must be correct.\""
+    },
+    {
+     "q": "Why does Sophie say \"we go slowly, one line at a time\"?",
+     "options": [
+      "Because being careful matters more than being fast",
+      "Because the office is closing soon",
+      "Because the student is late",
+      "Because the form is very short"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela diz \"You do not need to be fast. You need to be careful.\""
+    },
+    {
+     "q": "How does Sophie feel about taxes?",
+     "options": [
+      "She thinks they are impossible",
+      "She thinks they are simple with small steps",
+      "She does not like the form",
+      "She wants someone else to do them"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Taxes are simple when we take small steps.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>Today</strong> we send the report.\" Today means…",
+     "options": [
+      "this day, now",
+      "next year",
+      "last week",
+      "every Monday"
+     ],
+     "answer": 0,
+     "why": "Today = hoje, este dia."
+    },
+    {
+     "q": "Choose the correct word: \"Please put the ___ on my desk.\"",
+     "options": [
+      "form",
+      "today",
+      "ready",
+      "important"
+     ],
+     "answer": 0,
+     "why": "Form = formulário, o papel que Sophie precisa."
+    },
+    {
+     "q": "\"The papers are on my <strong>desk</strong>.\" A desk is…",
+     "options": [
+      "a table where you work",
+      "a small window",
+      "a company car",
+      "a tax number"
+     ],
+     "answer": 0,
+     "why": "Desk = mesa de trabalho."
+    },
+    {
+     "q": "Choose the correct word: \"The form is ___. We cannot lose it.\"",
+     "options": [
+      "important",
+      "today",
+      "desk",
+      "slow"
+     ],
+     "answer": 0,
+     "why": "Important = importante; por isso não podemos perdê-lo."
+    },
+    {
+     "q": "\"I am <strong>ready</strong> to start.\" Ready means…",
+     "options": [
+      "prepared",
+      "tired",
+      "late",
+      "wrong"
+     ],
+     "answer": 0,
+     "why": "Ready = pronto, preparado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no trabalho com formulários. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>fill out</strong> the form.\" To fill out means to…",
+     "options": [
+      "write your information on it",
+      "throw it away",
+      "read it aloud",
+      "hide it in a drawer"
+     ],
+     "answer": 0,
+     "why": "Fill out = preencher o formulário com suas informações."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the tax form.\" To sign off on means to…",
+     "options": [
+      "officially approve it",
+      "lose it",
+      "copy it",
+      "delay it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"Please <strong>hand in</strong> the form today.\" To hand in means to…",
+     "options": [
+      "give it in / submit it",
+      "print more copies",
+      "keep it at home",
+      "sign your name"
+     ],
+     "answer": 0,
+     "why": "Hand in = entregar, submeter o formulário."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the numbers again.\" To go over means to…",
+     "options": [
+      "check or review them",
+      "delete them",
+      "send them now",
+      "count the pages"
+     ],
+     "answer": 0,
+     "why": "Go over = revisar, conferir de novo."
+    },
+    {
+     "q": "\"We need to <strong>fill in</strong> the empty box.\" To fill in means to…",
+     "options": [
+      "complete it with information",
+      "leave it empty",
+      "cross it out",
+      "fold the page"
+     ],
+     "answer": 0,
+     "why": "Fill in = completar o espaço com a informação."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 314,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Three KPIs tell you almost everything about a logistics operation. On-time delivery is the percentage of shipments that arrive within the promised window. Cost per shipment is how much it costs, on average, to move one parcel. Damage rate is the percentage of parcels that arrive damaged.<br><br>Watch these three numbers every week and you will spot problems early. A drop in on-time delivery points to a bottleneck. A rising cost per shipment points to inefficiency. A rising damage rate points to a handling or packaging problem.<br><br>Three numbers, reviewed weekly, catch most trouble before it grows.",
+   "items": [
+    {
+     "q": "What does on-time delivery measure?",
+     "options": [
+      "The percentage of shipments that arrive on time",
+      "The cost of one parcel",
+      "The number of damaged parcels",
+      "The size of each parcel"
+     ],
+     "answer": 0,
+     "why": "\"On-time delivery is the percentage of shipments that arrive within the promised window.\""
+    },
+    {
+     "q": "How often should you watch these three numbers?",
+     "options": [
+      "Every year",
+      "Every month",
+      "Every week",
+      "Every day"
+     ],
+     "answer": 2,
+     "why": "\"Watch these three numbers every week…\" — o texto diz semanalmente."
+    },
+    {
+     "q": "A rising damage rate points to a problem with…",
+     "options": [
+      "prices",
+      "handling or packaging",
+      "delivery time",
+      "the weekly report"
+     ],
+     "answer": 1,
+     "why": "\"A rising damage rate points to a handling or packaging problem.\""
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "a long report is better than three numbers",
+      "watching a few key numbers helps you find problems early",
+      "KPIs do not matter in logistics",
+      "cost per shipment is the only useful number"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto defende que três números, vistos toda semana, pegam a maioria dos problemas cedo."
+    },
+    {
+     "q": "\"Catch most trouble before it grows\" suggests that…",
+     "options": [
+      "small problems can become big if you ignore them",
+      "problems never grow in logistics",
+      "you should wait for problems to get bigger",
+      "trouble is impossible to see"
+     ],
+     "answer": 0,
+     "why": "Inferência: ver cedo evita que um problema pequeno cresça."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentar o novo painel para a equipe. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone. Thank you for coming. Today I want to show you something new.<br><br>For years, we sent a fifteen-page report every week. It was long, and honestly, nobody read it. So we are going to change that. From now on, we will look at just three numbers.<br><br>The first number is on-time delivery. This tells us how many parcels arrive on time. The second number is cost per shipment. This tells us how much we spend to move one parcel. The third number is damage rate. This tells us how many parcels arrive damaged.<br><br>That is all. Three numbers on one screen. You can read them in one minute.<br><br>Please look at the dashboard every Monday. If on-time delivery goes down, we have a bottleneck. If cost goes up, we are not working well. If damage goes up, we have a packaging problem.<br><br>Numbers are only useful if we act on them. So every week, we will look, and then we will fix. Any questions? Great. Let's get started.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why is Harry changing the old report?",
+     "options": [
+      "It was too short",
+      "It was long and nobody read it",
+      "It cost too much money",
+      "It had no numbers"
+     ],
+     "answer": 1,
+     "why": "\"It was long, and honestly, nobody read it.\""
+    },
+    {
+     "q": "How many numbers will the new dashboard show?",
+     "options": [
+      "One",
+      "Two",
+      "Three",
+      "Fifteen"
+     ],
+     "answer": 2,
+     "why": "\"we will look at just three numbers.\""
+    },
+    {
+     "q": "When should the team look at the dashboard?",
+     "options": [
+      "Every Monday",
+      "Every Friday",
+      "Every morning",
+      "Once a month"
+     ],
+     "answer": 0,
+     "why": "\"Please look at the dashboard every Monday.\""
+    },
+    {
+     "q": "Why does Harry say \"numbers are only useful if we act on them\"?",
+     "options": [
+      "Because looking is not enough — you must fix the problem",
+      "Because numbers are always wrong",
+      "Because the team should not read numbers",
+      "Because the report should be longer"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele quer que a equipe use os números para agir, não só olhar."
+    },
+    {
+     "q": "How does Harry seem to feel about the new dashboard?",
+     "options": [
+      "Worried that it is too hard",
+      "Positive and confident that it is simpler",
+      "Sad about the old report",
+      "Unsure if it will work"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele apresenta o painel como mais fácil e rápido, com tom positivo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We check the <strong>damage rate</strong> every week.\" The damage rate is…",
+     "options": [
+      "the percentage of parcels that arrive broken",
+      "the price of one parcel",
+      "the number of workers",
+      "the speed of the truck"
+     ],
+     "answer": 0,
+     "why": "Damage rate = taxa de avaria: quantos parcels chegam danificados."
+    },
+    {
+     "q": "Choose the correct word: \"The trucks are stuck at the gate. That is a ___.\"",
+     "options": [
+      "bottleneck",
+      "percentage",
+      "dashboard",
+      "package"
+     ],
+     "answer": 0,
+     "why": "Bottleneck = gargalo: um ponto onde tudo trava."
+    },
+    {
+     "q": "Choose the correct word: \"Better ___ means fewer boxes arrive broken.\"",
+     "options": [
+      "packaging",
+      "delivery",
+      "meeting",
+      "report"
+     ],
+     "answer": 0,
+     "why": "Packaging = embalagem: proteger bem o produto reduz avarias."
+    },
+    {
+     "q": "\"<strong>Cost per shipment</strong> went up this month.\" This means…",
+     "options": [
+      "each parcel is now more expensive to move",
+      "we sent fewer parcels",
+      "the trucks are faster",
+      "the report is longer"
+     ],
+     "answer": 0,
+     "why": "Cost per shipment = custo por envio: quanto custa mover um parcel."
+    },
+    {
+     "q": "\"A KPI is a key number you watch.\" What does <strong>KPI</strong> help you do?",
+     "options": [
+      "See how the operation is doing",
+      "Pack the boxes",
+      "Drive the truck",
+      "Write a long report"
+     ],
+     "answer": 0,
+     "why": "KPI = indicador-chave: um número que mostra o desempenho da operação."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de operações. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Harry wants to <strong>roll out</strong> the new dashboard next week.\" To roll out means to…",
+     "options": [
+      "start using something new",
+      "stop a project",
+      "hide a plan",
+      "cancel a report"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar, começar a usar algo novo."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the plan today.\" To sign off on means to…",
+     "options": [
+      "say yes and approve it",
+      "read it slowly",
+      "throw it away",
+      "print it out"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"On-time delivery went down. Let's <strong>look into</strong> it.\" To look into means to…",
+     "options": [
+      "find out what happened",
+      "ignore it",
+      "wait a year",
+      "close the office"
+     ],
+     "answer": 0,
+     "why": "Look into = investigar, descobrir o motivo."
+    },
+    {
+     "q": "\"Two workers <strong>pushed back on</strong> the new plan.\" They…",
+     "options": [
+      "disagreed with it",
+      "loved it right away",
+      "forgot about it",
+      "printed it"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, discordar."
+    },
+    {
+     "q": "\"We agreed to fix it, so let's <strong>follow through</strong>.\" To follow through means to…",
+     "options": [
+      "finish what you started",
+      "stop the work",
+      "change the plan",
+      "ask someone else"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    }
+   ]
+  }
+ ]
+}

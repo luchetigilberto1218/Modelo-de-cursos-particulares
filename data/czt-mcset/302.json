@@ -1,0 +1,259 @@
+{
+ "num": 302,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Logistics has two directions. Inbound is what comes into the company. It is raw materials from suppliers, parts for the factory, and packaging from a printer.<br><br>Outbound is what goes out to customers. It is finished products, parcels, and pallets ready to sell. Both directions matter. A factory with no inbound stops producing. A factory with no outbound cannot deliver.<br><br>Companies usually have different teams for each side, because the work is different. Inbound deals with suppliers. Outbound deals with customers. In and out — the two halves of any logistics operation.",
+   "items": [
+    {
+     "q": "What is inbound?",
+     "options": [
+      "What comes into the company",
+      "What goes out to customers",
+      "The sales team",
+      "The factory building"
+     ],
+     "answer": 0,
+     "why": "\"Inbound is what comes into the company.\""
+    },
+    {
+     "q": "What does outbound deal with?",
+     "options": [
+      "Suppliers",
+      "Customers",
+      "Printers",
+      "Raw materials"
+     ],
+     "answer": 1,
+     "why": "\"Outbound deals with customers.\""
+    },
+    {
+     "q": "Why do companies use different teams for each side?",
+     "options": [
+      "Because the work is different",
+      "Because it is cheaper",
+      "Because the trucks are the same",
+      "Because customers ask for it"
+     ],
+     "answer": 0,
+     "why": "\"Companies usually have different teams for each side, because the work is different.\""
+    },
+    {
+     "q": "The text suggests that a company needs…",
+     "options": [
+      "only inbound",
+      "only outbound",
+      "both inbound and outbound",
+      "no logistics at all"
+     ],
+     "answer": 2,
+     "why": "Inferência: sem inbound a fábrica para; sem outbound não entrega. Os dois lados são necessários."
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "Inbound and outbound are both important.",
+      "One team can do all the work the same way.",
+      "Suppliers send parts and materials.",
+      "Customers receive finished products."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que o trabalho é diferente e que as equipes costumam ser separadas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver mostrando as duas portas do cais. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the dock. Let me show you the two doors. This is the most important thing to learn on your first day.<br><br>This door on the left is for inbound trucks. Inbound means everything that comes in. Trucks from our suppliers arrive here. They bring raw materials, parts, and packaging. We check every box. Then we move it into the warehouse. This side deals with suppliers.<br><br>Now look at the door on the right. This one is for outbound trucks. Outbound means everything that goes out. We load finished products here. We put parcels and pallets on the trucks. Then the trucks drive to our customers. This side deals with customers.<br><br>So, two doors, two directions. In on the left, out on the right. Remember this and you will not get lost. If you ever see a truck at the wrong door, come and tell me. In and out must always stay separate here.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the door on the left for?",
+     "options": [
+      "Inbound trucks",
+      "Outbound trucks",
+      "Staff cars",
+      "The office"
+     ],
+     "answer": 0,
+     "why": "\"This door on the left is for inbound trucks.\""
+    },
+    {
+     "q": "What do the inbound trucks bring?",
+     "options": [
+      "Finished products",
+      "Raw materials, parts, and packaging",
+      "Customers",
+      "Money"
+     ],
+     "answer": 1,
+     "why": "\"They bring raw materials, parts, and packaging.\""
+    },
+    {
+     "q": "Where do the outbound trucks go?",
+     "options": [
+      "To the suppliers",
+      "To the customers",
+      "To the printer",
+      "To the office"
+     ],
+     "answer": 1,
+     "why": "\"Then the trucks drive to our customers.\""
+    },
+    {
+     "q": "Why does Oliver say \"you will not get lost\"?",
+     "options": [
+      "Because the two doors are easy to remember",
+      "Because the dock is very small",
+      "Because there is a map on the wall",
+      "Because the trucks are red"
+     ],
+     "answer": 0,
+     "why": "Inferência: com a regra simples (in à esquerda, out à direita) o novato não se confunde."
+    },
+    {
+     "q": "What does Oliver want the new coordinator to do if a truck is at the wrong door?",
+     "options": [
+      "Move it alone",
+      "Tell Oliver",
+      "Ignore it",
+      "Send it away"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele diz \"come and tell me\" — o novato deve avisá-lo, não resolver sozinho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>supplier</strong> sends us parts every week.\" A supplier is…",
+     "options": [
+      "a company that gives us materials",
+      "a customer who buys from us",
+      "a truck driver",
+      "a warehouse door"
+     ],
+     "answer": 0,
+     "why": "Supplier = fornecedor: quem fornece materiais para a empresa."
+    },
+    {
+     "q": "Choose the correct word: \"We put the boxes on a wooden ___ before we load the truck.\"",
+     "options": [
+      "pallet",
+      "supplier",
+      "direction",
+      "packaging"
+     ],
+     "answer": 0,
+     "why": "Pallet = palete, a base de madeira onde as caixas ficam."
+    },
+    {
+     "q": "Choose the correct word: \"Your ___ will arrive at your house tomorrow.\"",
+     "options": [
+      "supplier",
+      "parcel",
+      "factory",
+      "part"
+     ],
+     "answer": 1,
+     "why": "Parcel = encomenda, o pacote que chega ao cliente."
+    },
+    {
+     "q": "\"The <strong>packaging</strong> keeps the product safe.\" Packaging is…",
+     "options": [
+      "the box or material around a product",
+      "the price of the product",
+      "the delivery date",
+      "the name of the customer"
+     ],
+     "answer": 0,
+     "why": "Packaging = embalagem: o material que protege o produto."
+    },
+    {
+     "q": "Choose the correct word: \"A factory with no inbound cannot ___ anything.\"",
+     "options": [
+      "produce",
+      "deliver",
+      "sell",
+      "buy"
+     ],
+     "answer": 0,
+     "why": "To produce = produzir. Sem inbound, faltam materiais e a fábrica para de produzir."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no cais e na logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We <strong>load up</strong> the truck in the morning.\" To load up means to…",
+     "options": [
+      "put things onto the truck",
+      "take things off the truck",
+      "clean the truck",
+      "drive the truck"
+     ],
+     "answer": 0,
+     "why": "Load up = carregar, colocar as coisas dentro do caminhão."
+    },
+    {
+     "q": "\"The parts will <strong>come in</strong> on Monday.\" To come in means to…",
+     "options": [
+      "arrive",
+      "leave",
+      "break",
+      "wait"
+     ],
+     "answer": 0,
+     "why": "Come in = chegar, entrar. É o sentido de inbound."
+    },
+    {
+     "q": "\"The finished products <strong>go out</strong> to customers.\" To go out means to…",
+     "options": [
+      "leave the company",
+      "come into the company",
+      "stay in the warehouse",
+      "get lost"
+     ],
+     "answer": 0,
+     "why": "Go out = sair. É o sentido de outbound."
+    },
+    {
+     "q": "\"We <strong>check in</strong> every box that arrives.\" To check in means to…",
+     "options": [
+      "receive and record it",
+      "throw it away",
+      "sell it",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Check in = registrar a chegada de algo, dar entrada."
+    },
+    {
+     "q": "\"The truck is ready to <strong>set off</strong>.\" To set off means to…",
+     "options": [
+      "start the journey",
+      "stop for the day",
+      "unload the boxes",
+      "wait at the door"
+     ],
+     "answer": 0,
+     "why": "Set off = partir, começar a viagem."
+    }
+   ]
+  }
+ ]
+}

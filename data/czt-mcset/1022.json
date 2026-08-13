@@ -1,0 +1,259 @@
+{
+ "num": 1022,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Meeting people is like opening a door. At the office, we meet many people every day.<br><br>We use <strong>this is</strong> for someone near us. For example: \"This is my boss.\" We use <strong>that is</strong> for someone a little further away. For example: \"That is our client.\"<br><br>The words are small, but they help a lot in meetings and introductions. Take your time. Every sentence counts.",
+   "items": [
+    {
+     "q": "What is meeting people compared to in the text?",
+     "options": [
+      "Opening a door",
+      "Closing a book",
+      "Writing an email",
+      "Making coffee"
+     ],
+     "answer": 0,
+     "why": "\"Meeting people is like opening a door.\""
+    },
+    {
+     "q": "When do we use \"this is\"?",
+     "options": [
+      "For someone near us",
+      "For someone far away",
+      "For a client only",
+      "For a boss only"
+     ],
+     "answer": 0,
+     "why": "\"We use this is for someone near us.\""
+    },
+    {
+     "q": "When do we use \"that is\"?",
+     "options": [
+      "For someone a little further away",
+      "For someone very near us",
+      "For friends only",
+      "For the coffee machine only"
+     ],
+     "answer": 0,
+     "why": "\"We use that is for someone a little further away.\""
+    },
+    {
+     "q": "The text suggests that these words are…",
+     "options": [
+      "small but very useful",
+      "hard and long",
+      "only for the boss",
+      "not important at work"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"The words are small, but they help a lot.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "Simple words are not useful at work.",
+      "Introductions matter in meetings.",
+      "We should take our time.",
+      "Every sentence counts."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz o contrário — palavras simples ajudam muito."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentando pessoas no escritório. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! My name is Sophie. Welcome to our office. Come in, please. I want you to meet some people today.<br><br>Look here. This is Ana. Ana is my friend and a new colleague. She is from Brazil. Ana works with me every day. Say hello to Ana!<br><br>Now look over there. That is Mr. Silva. He is our client. He is here for a meeting. He is a very nice person. We are happy to see him today.<br><br>This is my desk. It is small, but it is good. That is your chair, next to the window. And that is the coffee machine. The coffee here is very good!<br><br>Over there is the meeting room. That is the kitchen. And this is the HR team. They can help you with many things.<br><br>Do not worry. Everyone here is kind. Take your time. If you need help, just ask me. Welcome again!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is Ana?",
+     "options": [
+      "Sophie's friend and a new colleague",
+      "The client",
+      "The boss",
+      "A visitor from HR"
+     ],
+     "answer": 0,
+     "why": "\"This is Ana. Ana is my friend and a new colleague.\""
+    },
+    {
+     "q": "Who is Mr. Silva?",
+     "options": [
+      "The client",
+      "A new colleague",
+      "Sophie's boss",
+      "The coffee man"
+     ],
+     "answer": 0,
+     "why": "\"That is Mr. Silva. He is our client.\""
+    },
+    {
+     "q": "Where is the new person's chair?",
+     "options": [
+      "Next to the window",
+      "In the kitchen",
+      "In the meeting room",
+      "At the client's desk"
+     ],
+     "answer": 0,
+     "why": "\"That is your chair, next to the window.\""
+    },
+    {
+     "q": "How does Sophie feel about the new person? (inference)",
+     "options": [
+      "Welcoming and kind",
+      "Angry and tired",
+      "Bored and cold",
+      "Worried and sad"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela diz \"Welcome\", \"Do not worry\" e oferece ajuda."
+    },
+    {
+     "q": "What can we guess about the office? (inference)",
+     "options": [
+      "It is a friendly place",
+      "It is empty",
+      "People do not talk there",
+      "There are no meetings"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Everyone here is kind\" e Sophie apresenta várias pessoas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"This is a new <strong>person</strong> in our team.\" A <strong>person</strong> is…",
+     "options": [
+      "a human being",
+      "a room",
+      "a machine",
+      "a chair"
+     ],
+     "answer": 0,
+     "why": "Person = pessoa, um ser humano."
+    },
+    {
+     "q": "Choose the correct word: \"This is my <strong>boss</strong>. She is the ___ of our team.\"",
+     "options": [
+      "leader",
+      "door",
+      "coffee",
+      "window"
+     ],
+     "answer": 0,
+     "why": "Boss = chefe, quem lidera a equipe."
+    },
+    {
+     "q": "Choose the correct word: \"That is our ___. He buys from our company.\"",
+     "options": [
+      "client",
+      "friend",
+      "kitchen",
+      "desk"
+     ],
+     "answer": 0,
+     "why": "Client = cliente, quem compra da empresa."
+    },
+    {
+     "q": "\"Ana is my <strong>friend</strong>.\" A <strong>friend</strong> is…",
+     "options": [
+      "a person you like and know well",
+      "a company you buy from",
+      "your manager at work",
+      "a meeting room"
+     ],
+     "answer": 0,
+     "why": "Friend = amigo(a), alguém de quem você gosta."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ is here today. Please open the door for her.\"",
+     "options": [
+      "visitor",
+      "chair",
+      "coffee machine",
+      "desk"
+     ],
+     "answer": 0,
+     "why": "Visitor = visitante, alguém que vem ao escritório."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que usamos no trabalho ao receber pessoas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>Come in</strong>, please.\" This means…",
+     "options": [
+      "Enter the room",
+      "Go away",
+      "Sit down outside",
+      "Close the door"
+     ],
+     "answer": 0,
+     "why": "Come in = entre, por favor."
+    },
+    {
+     "q": "\"<strong>Say hello to</strong> Ana!\" This means…",
+     "options": [
+      "Greet Ana",
+      "Say goodbye to Ana",
+      "Call Ana on the phone",
+      "Write to Ana"
+     ],
+     "answer": 0,
+     "why": "Say hello to = cumprimentar, dar um oi."
+    },
+    {
+     "q": "\"I want you to <strong>meet</strong> the team.\" To <strong>meet</strong> here means…",
+     "options": [
+      "to be introduced to them",
+      "to fight with them",
+      "to pay them",
+      "to email them"
+     ],
+     "answer": 0,
+     "why": "Meet = conhecer, ser apresentado a alguém."
+    },
+    {
+     "q": "\"<strong>Take your time.</strong>\" This means…",
+     "options": [
+      "Do not hurry",
+      "Be very fast",
+      "Go home now",
+      "Stop working"
+     ],
+     "answer": 0,
+     "why": "Take your time = sem pressa, com calma."
+    },
+    {
+     "q": "\"If you need help, just <strong>ask me</strong>.\" This means…",
+     "options": [
+      "Tell me and I will help you",
+      "Do it alone",
+      "Wait for the boss",
+      "Send a letter"
+     ],
+     "answer": 0,
+     "why": "Ask me = peça a mim, estou aqui para ajudar."
+    }
+   ]
+  }
+ ]
+}

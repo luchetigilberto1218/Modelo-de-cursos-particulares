@@ -1,0 +1,259 @@
+{
+ "num": 1005,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Numbers are everywhere at work. We use them for extensions, for meeting rooms, for page numbers, and for floors. Today Sophie helps a new hire. She wants to teach the numbers from one to twenty.<br><br>\"Your extension is seventeen,\" Sophie says. \"The meeting is in room twelve. HR is on the second floor.\" The new hire writes everything down. He is a little nervous, but Sophie is calm and kind.<br><br>\"English comes in CAN's, not in CAN'Ts,\" Sophie says with a smile. \"We go step by step. You can do it!\" The new hire feels better. Numbers one to twenty are not hard. He is ready to start.",
+   "items": [
+    {
+     "q": "What does Sophie want to teach the new hire?",
+     "options": [
+      "The numbers from one to twenty",
+      "How to write emails",
+      "The names of the team",
+      "How to use the coffee machine"
+     ],
+     "answer": 0,
+     "why": "\"She wants to teach the numbers from one to twenty.\""
+    },
+    {
+     "q": "Where is HR?",
+     "options": [
+      "In room twelve",
+      "On the second floor",
+      "On extension seventeen",
+      "On the first floor"
+     ],
+     "answer": 1,
+     "why": "\"HR is on the second floor.\""
+    },
+    {
+     "q": "What is the new hire's extension?",
+     "options": [
+      "Twelve",
+      "Two",
+      "Seventeen",
+      "Twenty"
+     ],
+     "answer": 2,
+     "why": "\"Your extension is seventeen,\" Sophie says."
+    },
+    {
+     "q": "The new hire is a little nervous. What does this suggest?",
+     "options": [
+      "He is new and everything is fresh for him",
+      "He does not like Sophie",
+      "He already knows all the numbers",
+      "He wants to go home"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele é novo (new hire) e está aprendendo — por isso o nervosismo."
+    },
+    {
+     "q": "Sophie says \"English comes in CAN's, not in CAN'Ts.\" She most likely wants the new hire to feel…",
+     "options": [
+      "confident and positive",
+      "afraid of numbers",
+      "bored with the job",
+      "angry with HR"
+     ],
+     "answer": 0,
+     "why": "Inferência: a frase é de encorajamento — \"você consegue\", então ela quer que ele se sinta confiante."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie no primeiro dia do novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the team. Let me give you some numbers. They are easy, don't worry.<br><br>First, your phone. Your extension is fifteen. One, five. If you need me, my extension is seven. Just dial seven.<br><br>Our team meeting is today. It is in room twenty. Room two, zero, at the end of the hall. The big room, not the small one.<br><br>The office manager sits on floor three. Take the lift and press three. HR is on floor two. So, HR is on two, and the manager is on three. Easy, right?<br><br>Oh, and one more thing. The phone on your desk is desk number four. When it rings, you can pick it up. If the person is not for you, you say \"one moment, please,\" and you call me on extension seven.<br><br>That is all for now. Numbers one to twenty. You will use them every day. You can do it!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the new hire's extension?",
+     "options": [
+      "Seven",
+      "Fifteen",
+      "Twenty",
+      "Four"
+     ],
+     "answer": 1,
+     "why": "\"Your extension is fifteen. One, five.\""
+    },
+    {
+     "q": "Where is the team meeting?",
+     "options": [
+      "In room seven",
+      "In room twenty",
+      "On floor three",
+      "On floor two"
+     ],
+     "answer": 1,
+     "why": "\"Our team meeting is today. It is in room twenty.\""
+    },
+    {
+     "q": "HR is on which floor?",
+     "options": [
+      "Floor two",
+      "Floor three",
+      "Floor four",
+      "Floor fifteen"
+     ],
+     "answer": 0,
+     "why": "\"HR is on floor two.\""
+    },
+    {
+     "q": "Sophie says to call her extension when the call is not for you. What does this suggest about her?",
+     "options": [
+      "She wants to help the new hire",
+      "She does not like phones",
+      "She is too busy to talk",
+      "She works on floor three"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela se oferece para ajudar com as ligações, então quer apoiar o novo colega."
+    },
+    {
+     "q": "How would you best describe Sophie's tone?",
+     "options": [
+      "Friendly and calm",
+      "Angry and fast",
+      "Sad and tired",
+      "Cold and formal"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela diz \"don't worry\", \"easy, right?\" e \"you can do it!\" — um tom amigável e tranquilo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"My <strong>extension</strong> is seventeen.\" An extension is…",
+     "options": [
+      "your short phone number at work",
+      "the name of your team",
+      "the floor of the office",
+      "a meeting room"
+     ],
+     "answer": 0,
+     "why": "Extension = ramal: o número curto do seu telefone no trabalho."
+    },
+    {
+     "q": "Choose the correct word: \"The meeting is in ___ twelve.\"",
+     "options": [
+      "room",
+      "phone",
+      "floor",
+      "page"
+     ],
+     "answer": 0,
+     "why": "Room = sala. A reunião acontece na sala doze."
+    },
+    {
+     "q": "Choose the correct word: \"HR is on the second ___.\"",
+     "options": [
+      "floor",
+      "number",
+      "extension",
+      "desk"
+     ],
+     "answer": 0,
+     "why": "Floor = andar. RH fica no segundo andar."
+    },
+    {
+     "q": "\"The <strong>phone</strong> is on desk four.\" A phone is…",
+     "options": [
+      "the thing you use to call people",
+      "a small room",
+      "a page in a book",
+      "a floor number"
+     ],
+     "answer": 0,
+     "why": "Phone = telefone: o aparelho que você usa para ligar."
+    },
+    {
+     "q": "Choose the correct word: \"My ___ is seven, so just dial seven.\"",
+     "options": [
+      "number",
+      "room",
+      "floor",
+      "page"
+     ],
+     "answer": 0,
+     "why": "Number = número. \"Meu número é sete.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que usamos no telefone e no escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"When the phone rings, you can <strong>pick it up</strong>.\" To pick up means to…",
+     "options": [
+      "answer the phone",
+      "turn off the phone",
+      "drop the phone",
+      "buy a new phone"
+     ],
+     "answer": 0,
+     "why": "Pick up = atender o telefone."
+    },
+    {
+     "q": "\"Sorry, wrong number. I will <strong>hang up</strong> now.\" To hang up means to…",
+     "options": [
+      "end the call",
+      "start the call",
+      "call again",
+      "hold the phone"
+     ],
+     "answer": 0,
+     "why": "Hang up = desligar o telefone, encerrar a ligação."
+    },
+    {
+     "q": "\"She is busy now. Can you <strong>call back</strong> later?\" To call back means to…",
+     "options": [
+      "phone again later",
+      "come to the office",
+      "send an email",
+      "wait in the room"
+     ],
+     "answer": 0,
+     "why": "Call back = ligar de novo mais tarde."
+    },
+    {
+     "q": "\"One moment, please. I will <strong>put you through</strong> to HR.\" To put through means to…",
+     "options": [
+      "connect the call to someone",
+      "end the call now",
+      "write down the number",
+      "go to the second floor"
+     ],
+     "answer": 0,
+     "why": "Put through = transferir/passar a ligação para outra pessoa."
+    },
+    {
+     "q": "\"Please <strong>hold on</strong>, I will find the room number.\" To hold on means to…",
+     "options": [
+      "wait a moment",
+      "hang up now",
+      "speak louder",
+      "call back tomorrow"
+     ],
+     "answer": 0,
+     "why": "Hold on = espere um momento, aguarde na linha."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 495,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Three threats cause most of the trouble at work. Phishing is a fake email. It tries to trick you into clicking a link or giving a password. Malware is harmful software. It gets onto your computer through a download, an email attachment, or a USB stick.<br><br>Ransomware is a kind of malware. It locks your files and asks for money to unlock them. But the same simple habits stop almost all of these attacks: do not click strange links, do not open attachments you did not expect, keep your software up to date, and report anything odd right away.<br><br>If something looks wrong, it probably is. You spend a few extra seconds to check. The company would spend hours or days to fix an attack you let through. So those few seconds are worth much more.",
+   "items": [
+    {
+     "q": "What is phishing, according to the text?",
+     "options": [
+      "A fake email that tries to trick you",
+      "A kind of hardware",
+      "A safe download",
+      "A new password"
+     ],
+     "answer": 0,
+     "why": "\"Phishing is a fake email. It tries to trick you.\""
+    },
+    {
+     "q": "How does malware get onto your computer?",
+     "options": [
+      "Only through phone calls",
+      "Through a download, attachment, or USB stick",
+      "Only from the office Wi-Fi",
+      "Through a paper letter"
+     ],
+     "answer": 1,
+     "why": "\"It gets onto your computer through a download, an email attachment, or a USB stick.\""
+    },
+    {
+     "q": "What does ransomware do?",
+     "options": [
+      "It makes your computer faster",
+      "It locks your files and asks for money",
+      "It cleans your files",
+      "It sends free emails"
+     ],
+     "answer": 1,
+     "why": "\"It locks your files and asks for money to unlock them.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "Checking a strange email is a waste of time",
+      "Simple habits stop most attacks",
+      "You should report anything odd",
+      "Old software is a risk"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que os poucos segundos para verificar valem muito mais — logo, não é perda de tempo."
+    },
+    {
+     "q": "The last paragraph suggests that…",
+     "options": [
+      "attacks are impossible to fix",
+      "a small effort now saves a big problem later",
+      "you should never use email",
+      "the company likes fixing attacks"
+     ],
+     "answer": 1,
+     "why": "Inferência: poucos segundos de checagem evitam horas ou dias de conserto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver numa aula rápida com a nova equipe. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone. This is just a quick five minutes. I want to show you a real email. It came to our team last month, and it almost worked.<br><br>Look at the screen. The email says it is from the bank. It says, \"Your account is locked. Click here now to fix it.\" It looks real. There is a logo. There is a blue button. Many people would click it.<br><br>But look at the address at the top. The name of the bank is spelled wrong. There is one extra letter. That is the small sign. That is how we knew it was fake.<br><br>So here is my rule. If an email asks you to click fast, stop. If it says \"now\" or \"urgent\", slow down. Check the address. Check the spelling. If you are not sure, do not click. Just call me or send it to the IT team.<br><br>It only takes ten seconds. Ten seconds saved us a very bad week last month. Thank you.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Oliver showing the team?",
+     "options": [
+      "A new computer",
+      "A real email that almost worked",
+      "A company report",
+      "A training video"
+     ],
+     "answer": 1,
+     "why": "\"I want to show you a real email… it almost worked.\""
+    },
+    {
+     "q": "What did the fake email ask people to do?",
+     "options": [
+      "Call the police",
+      "Click a link now to fix the account",
+      "Change their desk",
+      "Buy a new phone"
+     ],
+     "answer": 1,
+     "why": "\"Your account is locked. Click here now to fix it.\""
+    },
+    {
+     "q": "What small sign showed the email was fake?",
+     "options": [
+      "The logo was missing",
+      "The bank's name was spelled wrong",
+      "The button was red",
+      "There was no date"
+     ],
+     "answer": 1,
+     "why": "\"The name of the bank is spelled wrong. There is one extra letter.\""
+    },
+    {
+     "q": "Why does Oliver say to slow down when an email says \"now\" or \"urgent\"?",
+     "options": [
+      "Because urgent emails are always safe",
+      "Because pressure to act fast is a warning sign",
+      "Because the IT team is closed",
+      "Because his computer is slow"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele liga a pressa a um sinal de perigo, por isso pede para parar e checar."
+    },
+    {
+     "q": "What can we understand about Oliver's advice?",
+     "options": [
+      "A few seconds of checking can prevent a big problem",
+      "You should never use email again",
+      "Only IT can read email",
+      "Fake emails never have logos"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Ten seconds saved us a very bad week\" — pouca checagem evita um problema grande."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I got a <strong>fake email</strong> from my bank this morning.\" A fake email is…",
+     "options": [
+      "an email that is not real",
+      "an email with a photo",
+      "a long email",
+      "an email from a friend"
+     ],
+     "answer": 0,
+     "why": "Fake email = e-mail falso, que finge ser de outra pessoa."
+    },
+    {
+     "q": "Choose the correct word: \"Do not open the ___ if you did not expect it.\"",
+     "options": [
+      "attachment",
+      "window",
+      "coffee",
+      "meeting"
+     ],
+     "answer": 0,
+     "why": "Attachment = anexo; não abrir anexos inesperados."
+    },
+    {
+     "q": "\"He copied the files with a <strong>USB stick</strong>.\" A USB stick is…",
+     "options": [
+      "a small device to save files",
+      "a type of email",
+      "a password",
+      "a website"
+     ],
+     "answer": 0,
+     "why": "USB stick = pendrive, um dispositivo pequeno para guardar arquivos."
+    },
+    {
+     "q": "Choose the correct word: \"Please keep your software ___ so it is safe.\"",
+     "options": [
+      "up to date",
+      "far away",
+      "on the desk",
+      "in the box"
+     ],
+     "answer": 0,
+     "why": "Up to date = atualizado; software atualizado é mais seguro."
+    },
+    {
+     "q": "\"Ransomware can <strong>lock your files</strong>.\" This means it…",
+     "options": [
+      "blocks your files so you cannot open them",
+      "prints your files",
+      "sends your files to a friend",
+      "makes your files bigger"
+     ],
+     "answer": 0,
+     "why": "To lock files = bloquear arquivos, deixando você sem acesso a eles."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>report</strong> anything odd to the IT team.\" To report something means to…",
+     "options": [
+      "tell someone about it",
+      "hide it",
+      "delete it",
+      "print it"
+     ],
+     "answer": 0,
+     "why": "To report = avisar, contar sobre algo para alguém."
+    },
+    {
+     "q": "\"Do not <strong>click on</strong> that link.\" To click on a link means to…",
+     "options": [
+      "press it with the mouse",
+      "read it slowly",
+      "save it for later",
+      "send it to a friend"
+     ],
+     "answer": 0,
+     "why": "To click on = clicar, pressionar com o mouse."
+    },
+    {
+     "q": "\"If you are not sure, <strong>check with</strong> your manager first.\" To check with someone means to…",
+     "options": [
+      "ask them to be sure",
+      "wait for them to leave",
+      "copy their work",
+      "call the police"
+     ],
+     "answer": 0,
+     "why": "To check with = confirmar/perguntar a alguém antes de agir."
+    },
+    {
+     "q": "\"The company will <strong>roll out</strong> new training next week.\" To roll out means to…",
+     "options": [
+      "start it for everyone",
+      "cancel it",
+      "hide it",
+      "forget it"
+     ],
+     "answer": 0,
+     "why": "To roll out = lançar/colocar em prática para todos."
+    },
+    {
+     "q": "\"Please <strong>back up</strong> your files every week.\" To back up means to…",
+     "options": [
+      "save a copy in a safe place",
+      "throw them away",
+      "email them to clients",
+      "make them smaller"
+     ],
+     "answer": 0,
+     "why": "To back up = fazer cópia de segurança dos arquivos."
+    }
+   ]
+  }
+ ]
+}

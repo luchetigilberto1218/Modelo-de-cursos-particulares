@@ -1,0 +1,259 @@
+{
+ "num": 308,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Every warehouse runs on the same four steps: receiving, picking, packing, and dispatch.<br><br>First, receiving takes goods off the incoming truck and checks them. Then, picking selects the right items for each order from the shelves. Next, packing puts them in boxes safely, with the right label. Finally, dispatch hands them to the outgoing truck or carrier.<br><br>The four steps always happen in the same order. What changes, from one warehouse to another, is how fast each step runs and how well the team coordinates the hand-offs between them.",
+   "items": [
+    {
+     "q": "How many steps does every warehouse run on?",
+     "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+     ],
+     "answer": 2,
+     "why": "\"Every warehouse runs on the same four steps.\" São quatro: receiving, picking, packing, dispatch."
+    },
+    {
+     "q": "What is the FIRST step?",
+     "options": [
+      "Packing",
+      "Receiving",
+      "Dispatch",
+      "Picking"
+     ],
+     "answer": 1,
+     "why": "\"First, receiving takes goods off the incoming truck.\""
+    },
+    {
+     "q": "What does packing do?",
+     "options": [
+      "It puts items in boxes with the right label",
+      "It checks the incoming truck",
+      "It selects items from the shelves",
+      "It hands goods to the carrier"
+     ],
+     "answer": 0,
+     "why": "\"packing puts them in boxes safely, with the right label.\""
+    },
+    {
+     "q": "The text suggests that the order of the four steps…",
+     "options": [
+      "changes in every warehouse",
+      "stays the same everywhere",
+      "depends on the carrier",
+      "is decided by the trainee"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"The four steps always happen in the same order.\" Só a velocidade muda."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "a fast team and a slow team can follow the same four steps",
+      "each warehouse invents its own steps",
+      "dispatch happens before receiving",
+      "the label is not important"
+     ],
+     "answer": 0,
+     "why": "Inferência: a ordem é sempre igual; o que muda é a velocidade e a coordenação — então times diferentes seguem os mesmos passos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily mostrando o depósito a um novo colaborador. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the warehouse! I will show you all four zones today. We start here, at the receiving dock.<br><br>This is where the incoming trucks stop. We take the goods off the truck and we check them. We count the boxes and we look for damage. This is step one.<br><br>Now, walk with me to the shelves. This is picking. We read the order, we find the right items on the shelf, and we take them. Only the right items — never the wrong ones. This is step two.<br><br>Next, we go to the packing tables. Here we put the items in a box. We close the box and we add the label. The label must be correct, always. This is step three.<br><br>And here, at the end, is dispatch. The packed boxes wait for the outgoing truck. The carrier takes them to the customer. This is step four.<br><br>So, remember: first receiving, then picking, next packing, and finally dispatch. Always in this order. Any questions?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does Emily start the tour?",
+     "options": [
+      "At the packing tables",
+      "At the receiving dock",
+      "At dispatch",
+      "At the shelves"
+     ],
+     "answer": 1,
+     "why": "\"We start here, at the receiving dock.\""
+    },
+    {
+     "q": "At the shelves, what do they do in picking?",
+     "options": [
+      "They close the box and add the label",
+      "They find the right items for the order",
+      "They wait for the outgoing truck",
+      "They count the incoming boxes"
+     ],
+     "answer": 1,
+     "why": "\"we find the right items on the shelf, and we take them.\""
+    },
+    {
+     "q": "What does Emily say about the label?",
+     "options": [
+      "It must always be correct",
+      "It is not important",
+      "It is added at dispatch",
+      "The carrier writes it"
+     ],
+     "answer": 0,
+     "why": "\"The label must be correct, always.\""
+    },
+    {
+     "q": "Why does Emily say \"only the right items — never the wrong ones\"?",
+     "options": [
+      "Because picking the wrong item would cause a problem for the order",
+      "Because the shelves are empty",
+      "Because the truck is late",
+      "Because there are too many boxes"
+     ],
+     "answer": 0,
+     "why": "Inferência: pegar o item errado quebra o pedido — por isso ela insiste em pegar só o certo."
+    },
+    {
+     "q": "What is Emily's main goal in this tour?",
+     "options": [
+      "To sell products to a customer",
+      "To teach the trainee the four steps in order",
+      "To repair a broken truck",
+      "To hire more workers"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela leva o novato zona por zona e repete a ordem — o objetivo é ensinar os quatro passos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We put the box on the top <strong>shelf</strong>.\" A <strong>shelf</strong> is…",
+     "options": [
+      "a flat surface where you store items",
+      "a truck",
+      "a door",
+      "an order form"
+     ],
+     "answer": 0,
+     "why": "Shelf = prateleira: a superfície onde os itens ficam guardados."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ truck arrives at the dock every morning with new goods.\"",
+     "options": [
+      "incoming",
+      "outgoing",
+      "packing",
+      "picking"
+     ],
+     "answer": 0,
+     "why": "Incoming = que chega. O caminhão que traz mercadoria é o incoming."
+    },
+    {
+     "q": "\"Please put the <strong>label</strong> on the box.\" A <strong>label</strong> is…",
+     "options": [
+      "a small tag with the address and information",
+      "a box",
+      "a shelf",
+      "a truck driver"
+     ],
+     "answer": 0,
+     "why": "Label = etiqueta: o adesivo com endereço e informações."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ takes the packed boxes to the customer.\"",
+     "options": [
+      "carrier",
+      "shelf",
+      "label",
+      "order"
+     ],
+     "answer": 0,
+     "why": "Carrier = transportadora: quem leva as caixas ao cliente."
+    },
+    {
+     "q": "\"A clean <strong>hand-off</strong> between steps keeps everything moving.\" A <strong>hand-off</strong> is…",
+     "options": [
+      "the moment one step passes the work to the next",
+      "a coffee break",
+      "a broken box",
+      "the end of the day"
+     ],
+     "answer": 0,
+     "why": "Hand-off = passagem: quando um passo entrega o trabalho ao próximo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no dia a dia do depósito. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We <strong>roll out</strong> the new system next month.\" To roll out means to…",
+     "options": [
+      "start using something new, step by step",
+      "close the warehouse",
+      "throw something away",
+      "clean the floor"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em uso, implementar aos poucos."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the order today.\" To sign off on means to…",
+     "options": [
+      "officially approve",
+      "cancel",
+      "lose",
+      "read slowly"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar oficialmente, dar o ok final."
+    },
+    {
+     "q": "\"Please <strong>follow through</strong> and finish every box.\" To follow through means to…",
+     "options": [
+      "finish what you started",
+      "stop halfway",
+      "ask another team",
+      "start again"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que começou."
+    },
+    {
+     "q": "\"The truck is late, so we have to <strong>catch up</strong> in the afternoon.\" To catch up means to…",
+     "options": [
+      "do the work you are behind on",
+      "take a long break",
+      "leave early",
+      "change the label"
+     ],
+     "answer": 0,
+     "why": "Catch up = colocar o trabalho em dia, recuperar o atraso."
+    },
+    {
+     "q": "\"Let's <strong>speed up</strong> picking before the outgoing truck arrives.\" To speed up means to…",
+     "options": [
+      "do something faster",
+      "stop working",
+      "wait longer",
+      "make it heavier"
+     ],
+     "answer": 0,
+     "why": "Speed up = acelerar, fazer mais rápido."
+    }
+   ]
+  }
+ ]
+}

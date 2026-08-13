@@ -1,0 +1,259 @@
+{
+ "num": 366,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A financial transaction is any event that changes the numbers of the business. A sale, a purchase, a salary payment, a refund, a loan, a bill — each one is a transaction.<br><br>Every transaction has two sides: something comes in and something goes out. If we pay a supplier, cash goes down and the bill we owe disappears. If we sell a product, cash goes up and inventory goes down.<br><br>Learning to see both sides of every event is the first real habit of accounting.",
+   "items": [
+    {
+     "q": "What is a financial transaction?",
+     "options": [
+      "Any event that changes the numbers of the business",
+      "A meeting with a supplier",
+      "A report at the end of the month",
+      "A new employee"
+     ],
+     "answer": 0,
+     "why": "\"A financial transaction is any event that changes the numbers of the business.\""
+    },
+    {
+     "q": "How many sides does every transaction have?",
+     "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+     ],
+     "answer": 1,
+     "why": "\"Every transaction has two sides: something comes in and something goes out.\""
+    },
+    {
+     "q": "When we pay a supplier, what happens?",
+     "options": [
+      "Cash goes up",
+      "Cash goes down and the bill disappears",
+      "Inventory goes up",
+      "Nothing changes"
+     ],
+     "answer": 1,
+     "why": "\"If we pay a supplier, cash goes down and the bill we owe disappears.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "A sale is a transaction",
+      "Only one side of a transaction moves",
+      "A refund changes the numbers",
+      "Seeing both sides is a good habit"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que TODA transação tem dois lados; ele discordaria da ideia de só um lado se mover."
+    },
+    {
+     "q": "The text suggests that a good accountant…",
+     "options": [
+      "looks at both sides of every event",
+      "only counts the money that comes in",
+      "never writes anything down",
+      "works only at the end of the year"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"see both sides of every event is the first real habit of accounting\" — o bom contador olha os dois lados."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver treinando o novo assistente. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning. Today we look at yesterday's transactions. There are ten. For each one, I want you to tell me two things: what came in, and what went out.<br><br>Number one. We sold coffee to a client. Cash came in, and the coffee went out. Two sides. Good.<br><br>Number two. We paid a supplier for sugar. Here, cash went out, and the bill we owed also went out. Both sides moved.<br><br>Number three is a refund. A client returned a bad box, so we gave the money back. Cash went out, and the product came back in.<br><br>Number four. We received a small loan from the bank. Cash came in, and now we owe the money. That is the other side.<br><br>Now, this is the important habit. Every event has two sides. If you write only one side, something is missing. Always ask: what came in, and what went out? Do this every day, and soon you will see both sides without thinking.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many transactions will they look at today?",
+     "options": [
+      "Five",
+      "Ten",
+      "Twenty",
+      "Two"
+     ],
+     "answer": 1,
+     "why": "\"Today we look at yesterday's transactions. There are ten.\""
+    },
+    {
+     "q": "In the first transaction, what came in?",
+     "options": [
+      "Coffee",
+      "Cash",
+      "Sugar",
+      "A loan"
+     ],
+     "answer": 1,
+     "why": "\"We sold coffee to a client. Cash came in, and the coffee went out.\""
+    },
+    {
+     "q": "What happened with the refund?",
+     "options": [
+      "Cash went out and the product came back in",
+      "Cash came in and the product went out",
+      "Nothing moved",
+      "The client paid more"
+     ],
+     "answer": 0,
+     "why": "\"we gave the money back. Cash went out, and the product came back in.\""
+    },
+    {
+     "q": "Why does Oliver say \"if you write only one side, something is missing\"?",
+     "options": [
+      "Because every event must have two sides",
+      "Because the loan was too small",
+      "Because the client was angry",
+      "Because he forgot a number"
+     ],
+     "answer": 0,
+     "why": "Inferência: como toda transação tem dois lados, anotar só um lado significa que faltou algo."
+    },
+    {
+     "q": "What does Oliver want the new bookkeeper to do every day?",
+     "options": [
+      "Ask what came in and what went out",
+      "Count only the cash",
+      "Call the bank",
+      "Wait until the end of the month"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele diz \"Always ask: what came in, and what went out? Do this every day\" — é o hábito que ele quer ensinar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We made a big <strong>sale</strong> today.\" A <strong>sale</strong> is when you…",
+     "options": [
+      "sell something for money",
+      "pay a bill",
+      "borrow money",
+      "hire a worker"
+     ],
+     "answer": 0,
+     "why": "Sale = venda: você vende algo e recebe dinheiro."
+    },
+    {
+     "q": "Choose the correct word: \"The client returned the box, so we gave a ___.\"",
+     "options": [
+      "loan",
+      "refund",
+      "sale",
+      "supplier"
+     ],
+     "answer": 1,
+     "why": "Refund = reembolso: devolver o dinheiro ao cliente."
+    },
+    {
+     "q": "\"We got a <strong>loan</strong> from the bank.\" A <strong>loan</strong> is money that you…",
+     "options": [
+      "receive and must pay back",
+      "earn from a sale",
+      "give to a client",
+      "keep forever"
+     ],
+     "answer": 0,
+     "why": "Loan = empréstimo: você recebe e depois precisa devolver."
+    },
+    {
+     "q": "Choose the correct word: \"We buy our sugar from one ___.\"",
+     "options": [
+      "supplier",
+      "refund",
+      "habit",
+      "event"
+     ],
+     "answer": 0,
+     "why": "Supplier = fornecedor: a empresa que vende para você."
+    },
+    {
+     "q": "\"When we pay the bill, it will <strong>disappear</strong>.\" To <strong>disappear</strong> means to…",
+     "options": [
+      "go away",
+      "grow bigger",
+      "come back",
+      "stay the same"
+     ],
+     "answer": 0,
+     "why": "To disappear = desaparecer: sair, não estar mais lá."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no dia a dia do escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the payment.\" To sign off on means to…",
+     "options": [
+      "approve it",
+      "cancel it",
+      "hide it",
+      "forget it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o \"ok\" final."
+    },
+    {
+     "q": "\"Please <strong>write down</strong> both sides of the transaction.\" To write down means to…",
+     "options": [
+      "put it on paper",
+      "say it out loud",
+      "throw it away",
+      "read it again"
+     ],
+     "answer": 0,
+     "why": "Write down = anotar, registrar no papel."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> yesterday's numbers.\" To go over means to…",
+     "options": [
+      "check them carefully",
+      "delete them",
+      "send them to the client",
+      "print them"
+     ],
+     "answer": 0,
+     "why": "Go over = revisar, olhar com cuidado."
+    },
+    {
+     "q": "\"The client wants to <strong>pay back</strong> the loan next month.\" To pay back means to…",
+     "options": [
+      "return the money",
+      "keep the money",
+      "spend more money",
+      "ask for more"
+     ],
+     "answer": 0,
+     "why": "Pay back = devolver, pagar de volta o que foi emprestado."
+    },
+    {
+     "q": "\"Don't forget to <strong>keep track of</strong> every sale.\" To keep track of means to…",
+     "options": [
+      "follow and record it",
+      "sell it fast",
+      "give it away",
+      "lose it"
+     ],
+     "answer": 0,
+     "why": "Keep track of = acompanhar e registrar, não perder de vista."
+    }
+   ]
+  }
+ ]
+}

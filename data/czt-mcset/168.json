@@ -1,0 +1,259 @@
+{
+ "num": 168,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Beyond vanilla trade credit lie the structured facilities that keep large commodity businesses moving: borrowing base facilities secured by inventory and receivables, prepayment facilities against future production, silent factoring lines that sit behind the receivables ledger, and supply chain finance programmes that let a strong buyer unlock cheap financing for a whole tier of suppliers.<br><br>Each structure is an attempt to answer the same question from a different angle: how can capital be brought closer to the moment goods actually move, rather than to the balance sheet date? The answer is rarely one clean instrument. It is usually a negotiated blend, specific to the collateral, the counterparties and the risk appetite of the lender.<br><br>At this level, the English of trade finance becomes dense and abstract: borrowing base, eligibility criteria, advance rate, waterfall, covenant. None of these words can be understood without context. A senior trade finance banker lives inside a small vocabulary of very precise terms — and uses them constantly, because imprecision at this level costs everyone money.",
+   "items": [
+    {
+     "q": "According to the text, what question does every structured facility try to answer?",
+     "options": [
+      "How to bring capital closer to the moment goods actually move",
+      "How to shrink the balance sheet at year end",
+      "How to replace bank lenders with equity",
+      "How to standardise every deal into one instrument"
+     ],
+     "answer": 0,
+     "why": "\"how can capital be brought closer to the moment goods actually move, rather than to the balance sheet date?\""
+    },
+    {
+     "q": "How does the text describe the typical solution?",
+     "options": [
+      "A single clean instrument",
+      "A negotiated blend specific to the collateral and counterparties",
+      "An off-the-shelf standard product",
+      "A purely regulatory arrangement"
+     ],
+     "answer": 1,
+     "why": "\"It is usually a negotiated blend, specific to the collateral, the counterparties and the risk appetite of the lender.\""
+    },
+    {
+     "q": "Where does a silent factoring line sit, according to the text?",
+     "options": [
+      "In front of the buyer's order book",
+      "Behind the receivables ledger",
+      "On the lender's balance sheet",
+      "Inside the borrowing base covenant"
+     ],
+     "answer": 1,
+     "why": "\"silent factoring lines that sit behind the receivables ledger\"."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Trade finance vocabulary can be safely learned as isolated definitions",
+      "Precise terms matter because errors are expensive",
+      "Most structured deals are tailored rather than standard",
+      "Context is essential to understanding these terms"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz \"None of these words can be understood without context\" — logo, aprender definições soltas contraria o argumento."
+    },
+    {
+     "q": "The line \"imprecision at this level costs everyone money\" suggests that…",
+     "options": [
+      "Vocabulary precision is decorative, not functional",
+      "Language mastery is part of doing the job well, not an optional extra",
+      "Only lawyers need to worry about wording",
+      "Cheaper financing removes the need for careful terms"
+     ],
+     "answer": 1,
+     "why": "Inferência: se a imprecisão custa dinheiro, o domínio preciso do vocabulário é ferramenta de trabalho — não enfeite."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver explicando a estrutura no quadro branco. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let me draw this out — it's easier to see than to describe. Ignore the jargon and just follow the arrows.<br><br>At the top is the borrowing base. Think of it as a pool of assets we lend against — mostly inventory in the tanks and receivables owed by your buyers. We don't advance the full value, though. We apply eligibility criteria first, so anything past due or concentrated in one shaky counterparty gets stripped out. Then we apply an advance rate — say seventy per cent — to whatever survives. That number is your available facility.<br><br>Now, when the cash comes back from your customers, it doesn't just land in your account. It hits this waterfall down the right-hand side. Fees first, then interest, then principal, and only what's left at the bottom flows back to you. That ordering is the whole game.<br><br>One last thing before you sign. The covenants — the promises you make to keep the facility alive, mainly a minimum coverage ratio. Breach one, even by accident, and the advance rate can be cut overnight. So the moment your numbers drift, you call me. You don't wait for the month-end report.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Oliver compare the borrowing base to?",
+     "options": [
+      "A pool of assets the bank lends against",
+      "A single large loan from head office",
+      "The company's equity buffer",
+      "A schedule of future production"
+     ],
+     "answer": 0,
+     "why": "\"Here at the top is the borrowing base. Think of it as a pool of assets we lend against.\""
+    },
+    {
+     "q": "Why does the bank apply eligibility criteria before advancing funds?",
+     "options": [
+      "To increase the advance rate above 100%",
+      "To strip out weak assets, such as past-due or concentrated receivables",
+      "To speed up month-end reporting",
+      "To avoid drawing the diagram at all"
+     ],
+     "answer": 1,
+     "why": "\"anything past due or concentrated in one shaky counterparty gets stripped out.\""
+    },
+    {
+     "q": "In the waterfall Oliver describes, what does the borrower receive?",
+     "options": [
+      "Everything, before fees and interest",
+      "Only what is left after fees, interest and principal",
+      "A fixed seventy per cent of all cash",
+      "Nothing until the covenants are breached"
+     ],
+     "answer": 1,
+     "why": "\"Fees first, then interest, then principal, and only what's left at the bottom flows back to you.\""
+    },
+    {
+     "q": "When Oliver says \"That ordering is the whole game,\" he most likely means…",
+     "options": [
+      "The sequence of payments is a minor detail",
+      "The priority order determines who actually gets paid and when",
+      "The diagram is only decorative",
+      "The advance rate is irrelevant"
+     ],
+     "answer": 1,
+     "why": "Inferência: a cascata define a prioridade dos pagamentos, e é ela que realmente decide o resultado para cada parte."
+    },
+    {
+     "q": "Why does Oliver tell the CFO to call him the moment the numbers drift?",
+     "options": [
+      "Because a covenant breach can cut the advance rate almost immediately",
+      "Because the month-end report is always wrong",
+      "Because he wants to renegotiate the fees",
+      "Because the inventory must be sold at once"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele explica que quebrar um covenant corta o advance rate \"overnight\", então avisar cedo evita o dano."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We size the line off the <strong>borrowing base</strong>, not off the parent's balance sheet.\" A borrowing base is…",
+     "options": [
+      "a pool of assets, such as inventory and receivables, that a facility lends against",
+      "the interest rate charged on the loan",
+      "the legal domicile of the borrower",
+      "the total equity of the group"
+     ],
+     "answer": 0,
+     "why": "Borrowing base = base de empréstimo: o conjunto de ativos (estoque + recebíveis) contra o qual se empresta."
+    },
+    {
+     "q": "Choose the correct term: \"After the audit, half the receivables failed the ___ and were excluded from the base.\"",
+     "options": [
+      "prepayment facility",
+      "eligibility criteria",
+      "supply chain finance",
+      "advance rate"
+     ],
+     "answer": 1,
+     "why": "Eligibility criteria = critérios de elegibilidade: definem quais ativos entram na garantia."
+    },
+    {
+     "q": "\"The lender applied a conservative <strong>advance rate</strong> of sixty per cent.\" The advance rate is…",
+     "options": [
+      "the percentage of eligible asset value the lender will fund",
+      "the deadline for repayment",
+      "the fee charged for early drawdown",
+      "the ranking of creditors in a default"
+     ],
+     "answer": 0,
+     "why": "Advance rate = taxa de adiantamento: o percentual do valor elegível que o banco financia."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ lets us fund the producer today against tonnage that will only be shipped next quarter.\"",
+     "options": [
+      "prepayment facility",
+      "silent factoring",
+      "waterfall",
+      "covenant"
+     ],
+     "answer": 0,
+     "why": "Prepayment facility = linha de pré-pagamento: paga antecipadamente contra produção futura."
+    },
+    {
+     "q": "\"Under the <strong>waterfall</strong>, junior lenders only get paid once the senior tranche is cleared.\" A waterfall is…",
+     "options": [
+      "a sudden fall in commodity prices",
+      "the volume of goods in transit",
+      "the priority order in which cash is distributed",
+      "a type of collateral"
+     ],
+     "answer": 2,
+     "why": "Waterfall = cascata: a ordem de prioridade em que o caixa é distribuído."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em mesas de trade finance. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Credit committee still has to <strong>sign off on</strong> the borrowing base before we draw.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly ignore",
+      "renegotiate downward",
+      "leak to the market"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the supply chain finance programme tier by tier.\" To roll out means to…",
+     "options": [
+      "wind down slowly",
+      "implement in stages",
+      "keep it confidential",
+      "audit retroactively"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva, aqui por camada de fornecedores."
+    },
+    {
+     "q": "\"The treasurer <strong>pushed back on</strong> the tighter covenant package.\" She…",
+     "options": [
+      "signed it immediately",
+      "resisted or challenged it",
+      "forwarded it unread",
+      "doubled the advance rate"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"They agreed the eligibility rules but never <strong>followed through</strong> on the monthly reporting.\" They…",
+     "options": [
+      "failed to carry the commitment to completion",
+      "reported twice as often",
+      "cancelled the facility",
+      "hired an external auditor"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Shaving ten basis points off the fee won't <strong>move the needle</strong> on the all-in cost.\" This means it will…",
+     "options": [
+      "not make a meaningful difference",
+      "breach a covenant",
+      "trigger an early repayment",
+      "improve the collateral"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

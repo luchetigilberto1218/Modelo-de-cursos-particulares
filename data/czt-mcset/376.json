@@ -1,0 +1,259 @@
+{
+ "num": 376,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Cost accounting puts costs into two big groups. Fixed costs stay the same. It does not matter if you sell ten products or ten thousand. Rent, the salaries of permanent staff, and insurance are fixed costs.<br><br>Variable costs are different. They change with the volume. Raw materials, shipping, and packaging go up when you sell more, and down when you sell less.<br><br>The mix matters. A company with high fixed costs feels pressure to sell more and more, just to cover them. A company with mostly variable costs can shrink more easily when sales drop. But it rarely gets big economies of scale. Two small words — fixed and variable — shape almost every decision about pricing, growth, and risk.",
+   "items": [
+    {
+     "q": "According to the text, do fixed costs change when you sell more products?",
+     "options": [
+      "No, they stay the same",
+      "Yes, they go up",
+      "Yes, they go down",
+      "Only in a big company"
+     ],
+     "answer": 0,
+     "why": "\"Fixed costs stay the same. It does not matter if you sell ten products or ten thousand.\""
+    },
+    {
+     "q": "Which of these is a variable cost in the text?",
+     "options": [
+      "Rent",
+      "Insurance",
+      "Raw materials",
+      "Salaries of permanent staff"
+     ],
+     "answer": 2,
+     "why": "\"Raw materials, shipping, and packaging\" são custos variáveis; aluguel, seguro e salários fixos são fixos."
+    },
+    {
+     "q": "Why does a company with high fixed costs feel pressure?",
+     "options": [
+      "It must sell a lot to cover the fixed costs",
+      "It has no staff",
+      "It never pays rent",
+      "It sells only ten products"
+     ],
+     "answer": 0,
+     "why": "\"A company with high fixed costs feels pressure to sell more and more, just to cover them.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "The cost mix affects pricing and risk",
+      "Fixed and variable costs are not important",
+      "Variable costs change with the volume",
+      "A company with variable costs can shrink more easily"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto todo diz que esses dois tipos de custo moldam quase toda decisão — logo, são muito importantes."
+    },
+    {
+     "q": "The text suggests that a company with mostly variable costs…",
+     "options": [
+      "can never grow",
+      "finds it easier to get smaller when sales fall",
+      "always makes more money",
+      "has no shipping costs"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"can shrink more easily when sales drop\" — quando os custos são variáveis, eles caem junto com as vendas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver explicando os custos a um novo product manager. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, so you asked why we can't just cut costs a little when sales go down. Good question. Let me show you.<br><br>Look at this list. The rent for the office is the same every month. The salaries of our permanent staff are the same too. And the insurance — the same. These are fixed costs. When sales drop, they do not drop with you. You still pay them all.<br><br>Now look at the other list. Raw materials, shipping, packaging. If we sell less, we buy less material and we ship fewer boxes. So these costs go down. These are variable costs.<br><br>Here is the problem. Most of our costs are fixed. So when sales fall by twenty percent, our costs do not fall by twenty percent. The fixed part does not bend that fast. That is the pressure.<br><br>So when you plan a price, remember this. You are not just paying for the material in one product. You are helping to pay the rent, the salaries, the insurance — every single month. That is why we can't just reduce costs a little.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What question does Oliver answer at the start?",
+     "options": [
+      "Why we can't just cut costs a little when sales go down",
+      "How to hire permanent staff",
+      "Where to buy raw materials",
+      "How to raise the office rent"
+     ],
+     "answer": 0,
+     "why": "\"you asked why we can't just cut costs a little when sales go down.\""
+    },
+    {
+     "q": "Which costs does Oliver put on the fixed list?",
+     "options": [
+      "Rent, salaries of permanent staff, and insurance",
+      "Shipping and packaging",
+      "Raw materials and boxes",
+      "Only insurance"
+     ],
+     "answer": 0,
+     "why": "\"The rent… the salaries of our permanent staff… the insurance… These are fixed costs.\""
+    },
+    {
+     "q": "What happens to the variable costs when the company sells less?",
+     "options": [
+      "They go down",
+      "They stay the same",
+      "They go up",
+      "They disappear completely"
+     ],
+     "answer": 0,
+     "why": "\"If we sell less, we buy less material and we ship fewer boxes. So these costs go down.\""
+    },
+    {
+     "q": "Oliver says the fixed part \"does not bend that fast.\" What does he mean?",
+     "options": [
+      "Fixed costs do not fall quickly when sales fall",
+      "Fixed costs are easy to remove",
+      "Fixed costs change every day",
+      "Fixed costs are very small"
+     ],
+     "answer": 0,
+     "why": "Inferência: se as vendas caem 20%, os custos fixos não caem junto — eles permanecem, criando a pressão."
+    },
+    {
+     "q": "From Oliver's advice about price, what should the product manager remember?",
+     "options": [
+      "The price should only pay for one product's material",
+      "The price also helps pay the rent, salaries and insurance",
+      "The price does not matter",
+      "Fixed costs are paid only once a year"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"You are helping to pay the rent, the salaries, the insurance — every single month.\" O preço cobre mais do que a matéria-prima."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The office <strong>rent</strong> is the same every month.\" Rent is…",
+     "options": [
+      "the money you pay to use a place",
+      "the money from sales",
+      "the price of raw materials",
+      "the salary of a manager"
+     ],
+     "answer": 0,
+     "why": "Rent = aluguel: o valor pago para usar o espaço."
+    },
+    {
+     "q": "Choose the correct word: \"Steel and wood are the ___ we use to build the product.\"",
+     "options": [
+      "raw materials",
+      "insurance",
+      "rent",
+      "packaging"
+     ],
+     "answer": 0,
+     "why": "Raw materials = matérias-primas: aço e madeira são os materiais para produzir."
+    },
+    {
+     "q": "\"We pay for good <strong>insurance</strong> in case something goes wrong.\" Insurance is…",
+     "options": [
+      "protection you pay for against loss or damage",
+      "the box around a product",
+      "money for shipping",
+      "a variable cost that grows fast"
+     ],
+     "answer": 0,
+     "why": "Insurance = seguro: você paga para se proteger contra perdas ou danos."
+    },
+    {
+     "q": "Choose the correct word: \"When we sell more units, the cost per unit falls. That is an ___.\"",
+     "options": [
+      "economy of scale",
+      "insurance policy",
+      "fixed cost",
+      "office rent"
+     ],
+     "answer": 0,
+     "why": "Economy of scale = economia de escala: quanto mais você produz, menor o custo por unidade."
+    },
+    {
+     "q": "\"The <strong>packaging</strong> costs more when we sell more products.\" Packaging is…",
+     "options": [
+      "the boxes and material that protect the product",
+      "the office building",
+      "the permanent staff",
+      "the insurance you pay"
+     ],
+     "answer": 0,
+     "why": "Packaging = embalagem: o material (caixas etc.) que envolve e protege o produto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre custos e preços. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"When sales fell, we had to <strong>cut costs</strong>.\" To cut costs means to…",
+     "options": [
+      "spend less money",
+      "sell more products",
+      "hire more people",
+      "raise the price"
+     ],
+     "answer": 0,
+     "why": "Cut costs = cortar/reduzir custos, gastar menos."
+    },
+    {
+     "q": "\"These fixed costs are hard to <strong>bring down</strong>.\" To bring down means to…",
+     "options": [
+      "make lower or reduce",
+      "make higher",
+      "explain clearly",
+      "pay every month"
+     ],
+     "answer": 0,
+     "why": "Bring down = baixar, reduzir (aqui, os custos)."
+    },
+    {
+     "q": "\"We must sell enough just to <strong>cover</strong> the fixed costs.\" To cover a cost means to…",
+     "options": [
+      "have enough money to pay it",
+      "hide it from the manager",
+      "make it bigger",
+      "forget about it"
+     ],
+     "answer": 0,
+     "why": "Cover a cost = cobrir um custo: ter dinheiro suficiente para pagá-lo."
+    },
+    {
+     "q": "\"When can we <strong>break even</strong> on this product?\" To break even means to…",
+     "options": [
+      "make just enough to pay the costs, with no loss",
+      "make a huge profit",
+      "stop selling the product",
+      "cut all the staff"
+     ],
+     "answer": 0,
+     "why": "Break even = empatar: as vendas cobrem exatamente os custos, sem lucro nem prejuízo."
+    },
+    {
+     "q": "\"The market got worse, so we had to <strong>scale back</strong>.\" To scale back means to…",
+     "options": [
+      "make the business smaller",
+      "raise all the salaries",
+      "buy a new office",
+      "double the shipping"
+     ],
+     "answer": 0,
+     "why": "Scale back = reduzir, encolher a operação — o que é mais fácil com custos variáveis."
+    }
+   ]
+  }
+ ]
+}

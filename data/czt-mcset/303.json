@@ -1,0 +1,259 @@
+{
+ "num": 303,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Logistics is built from four key activities: transporting, storing, handling, and distributing. Transporting moves goods between places. Storing keeps them safe until they are needed.<br><br>Handling is the physical work of loading, unloading, and moving boxes inside a warehouse. Distributing means getting the right product to the right customer at the right time.<br><br>Each activity sounds simple. But doing all four well, every day, is the real job of a logistics team. The activities never stop — they just change direction.",
+   "items": [
+    {
+     "q": "How many key activities does logistics have?",
+     "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+     ],
+     "answer": 2,
+     "why": "\"Logistics is built from four key activities.\""
+    },
+    {
+     "q": "What does transporting do?",
+     "options": [
+      "It moves goods between places",
+      "It keeps goods safe",
+      "It loads boxes",
+      "It sells products"
+     ],
+     "answer": 0,
+     "why": "\"Transporting moves goods between places.\""
+    },
+    {
+     "q": "What is handling?",
+     "options": [
+      "Sending emails to customers",
+      "The physical work of loading, unloading, and moving boxes",
+      "Keeping goods safe for a long time",
+      "Choosing the right price"
+     ],
+     "answer": 1,
+     "why": "\"Handling is the physical work of loading, unloading, and moving boxes.\""
+    },
+    {
+     "q": "The text says \"the activities never stop.\" This suggests that…",
+     "options": [
+      "the work happens all the time",
+      "the team works only one day a week",
+      "logistics is easy",
+      "the warehouse is closed at night"
+     ],
+     "answer": 0,
+     "why": "Inferência: se nunca param, o trabalho é contínuo, todos os dias."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "Doing all four activities well is hard work",
+      "One activity alone is the whole job",
+      "A logistics team is busy every day",
+      "Each activity has a clear purpose"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que o trabalho real é fazer os QUATRO bem — não só um."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily mostrando o armazém para um novo estagiário. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team! Let me show you the warehouse. It's your first day, so I will keep it simple.<br><br>Look over there. That truck is transporting goods to another city. It leaves in ten minutes. Next to it, two people are loading boxes. That is handling — the physical work of moving boxes by hand.<br><br>Now look at these tall shelves. This part is for storing. We keep the goods here, safe and ready, until a customer needs them. Some boxes stay for one day, some for one week.<br><br>And here, at the end, is distributing. We put the right product in the right box for the right customer. See these labels? Each one has a name and an address.<br><br>Remember one thing: the four activities never stop. When one truck leaves, another one arrives. When one shelf is empty, we fill it again. It is always moving. Any questions? Great — let's start!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where is Emily taking the intern?",
+     "options": [
+      "To the office",
+      "To the warehouse",
+      "To a meeting",
+      "To another city"
+     ],
+     "answer": 1,
+     "why": "\"Let me show you the warehouse.\""
+    },
+    {
+     "q": "What are the two people doing next to the truck?",
+     "options": [
+      "Loading boxes",
+      "Cleaning the floor",
+      "Writing labels",
+      "Driving away"
+     ],
+     "answer": 0,
+     "why": "\"two people are loading boxes. That is handling.\""
+    },
+    {
+     "q": "What are the tall shelves used for?",
+     "options": [
+      "Transporting",
+      "Storing",
+      "Distributing",
+      "Selling"
+     ],
+     "answer": 1,
+     "why": "\"This part is for storing… we keep the goods here.\""
+    },
+    {
+     "q": "Emily says \"when one truck leaves, another one arrives.\" This suggests that…",
+     "options": [
+      "the work is slow and quiet",
+      "the activities are always moving",
+      "there is only one truck",
+      "the warehouse is closing"
+     ],
+     "answer": 1,
+     "why": "Inferência: os caminhões se sucedem, o trabalho nunca para."
+    },
+    {
+     "q": "How does Emily seem toward the new intern?",
+     "options": [
+      "Angry and impatient",
+      "Bored and tired",
+      "Friendly and helpful",
+      "Worried and unsure"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela dá boas-vindas, explica com calma e diz \"let's start!\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We are <strong>storing</strong> the boxes until Friday.\" Storing means…",
+     "options": [
+      "keeping goods safe until they are needed",
+      "moving goods to another city",
+      "throwing goods away",
+      "selling goods online"
+     ],
+     "answer": 0,
+     "why": "Storing = armazenar: guardar em segurança até precisar."
+    },
+    {
+     "q": "Choose the correct word: \"The workers ___ the boxes onto the truck before it leaves.\"",
+     "options": [
+      "load",
+      "unload",
+      "store",
+      "sell"
+     ],
+     "answer": 0,
+     "why": "To load = carregar, colocar as caixas no caminhão."
+    },
+    {
+     "q": "Choose the correct word: \"When the truck arrives, we ___ all the boxes and check them.\"",
+     "options": [
+      "load",
+      "unload",
+      "transport",
+      "store"
+     ],
+     "answer": 1,
+     "why": "To unload = descarregar, tirar as caixas do caminhão."
+    },
+    {
+     "q": "\"Our job is <strong>distributing</strong> the products to the shops.\" Distributing means…",
+     "options": [
+      "getting the right product to the right customer",
+      "cleaning the warehouse",
+      "loading the shelves",
+      "paying the drivers"
+     ],
+     "answer": 0,
+     "why": "Distributing = distribuir: levar o produto certo ao cliente certo."
+    },
+    {
+     "q": "Choose the correct word: \"A good team delivers at the right ___, not too early and not too late.\"",
+     "options": [
+      "time",
+      "box",
+      "shelf",
+      "truck"
+     ],
+     "answer": 0,
+     "why": "Right time = momento certo: nem cedo, nem tarde demais."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns em um armazém. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>load up</strong> the truck before lunch.\" To load up means to…",
+     "options": [
+      "fill it with boxes",
+      "wash it",
+      "drive it away",
+      "empty it"
+     ],
+     "answer": 0,
+     "why": "Load up = encher, carregar completamente."
+    },
+    {
+     "q": "\"The new system will <strong>roll out</strong> next month.\" To roll out means to…",
+     "options": [
+      "start using it step by step",
+      "cancel it",
+      "hide it",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar aos poucos."
+    },
+    {
+     "q": "\"We ran out of space, so we had to <strong>set up</strong> a second shelf.\" To set up means to…",
+     "options": [
+      "prepare or arrange something new",
+      "take something away",
+      "clean something",
+      "sell something"
+     ],
+     "answer": 0,
+     "why": "Set up = montar, preparar algo novo."
+    },
+    {
+     "q": "\"Can you <strong>check in</strong> the boxes when they arrive?\" To check in means to…",
+     "options": [
+      "register and record them",
+      "throw them away",
+      "send them back",
+      "open all of them"
+     ],
+     "answer": 0,
+     "why": "Check in = registrar a entrada dos itens."
+    },
+    {
+     "q": "\"We are almost out of stock; we need to <strong>keep up</strong> with the orders.\" To keep up means to…",
+     "options": [
+      "stay at the same speed as the work",
+      "stop working",
+      "slow down",
+      "close the warehouse"
+     ],
+     "answer": 0,
+     "why": "Keep up = acompanhar o ritmo, não ficar para trás."
+    }
+   ]
+  }
+ ]
+}

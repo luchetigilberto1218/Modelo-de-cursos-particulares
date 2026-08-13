@@ -1,0 +1,259 @@
+{
+ "num": 484,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "An IT department has several different roles. The help desk answers everyday questions: a frozen laptop, a forgotten password, a printer problem. The infrastructure team looks after the servers, the network and the cloud accounts.<br><br>Developers build and maintain software. Security protects the company from threats. The IT director or CIO leads the whole function.<br><br>Knowing who does what saves you time. If the problem is your laptop, call the help desk. If you need a new app, talk to developers. If a strange email feels wrong, call security today, not tomorrow.",
+   "items": [
+    {
+     "q": "Who answers everyday questions like a frozen laptop or a forgotten password?",
+     "options": [
+      "The help desk",
+      "The developers",
+      "The CIO",
+      "The security team"
+     ],
+     "answer": 0,
+     "why": "\"The help desk answers everyday questions: a frozen laptop, a forgotten password…\""
+    },
+    {
+     "q": "What does the infrastructure team look after?",
+     "options": [
+      "The servers, the network and the cloud accounts",
+      "The company's software",
+      "New job interviews",
+      "The office printers only"
+     ],
+     "answer": 0,
+     "why": "\"The infrastructure team looks after the servers, the network and the cloud accounts.\""
+    },
+    {
+     "q": "Who leads the whole IT function?",
+     "options": [
+      "The help desk",
+      "The IT director or CIO",
+      "The developers",
+      "The security team"
+     ],
+     "answer": 1,
+     "why": "\"The IT director or CIO leads the whole function.\""
+    },
+    {
+     "q": "The text says to call security about a strange email \"today, not tomorrow\". This suggests that…",
+     "options": [
+      "a strange email can be a real risk, so time matters",
+      "security only works in the morning",
+      "emails are not important",
+      "the help desk is closed tomorrow"
+     ],
+     "answer": 0,
+     "why": "Inferência: agir rápido só importa se o e-mail estranho puder ser uma ameaça real."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "knowing the right person saves you time",
+      "you should always call the CIO first",
+      "the help desk can fix every problem",
+      "IT roles are all the same"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Knowing who does what saves you time.\" — a ideia central do texto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver mostrando o organograma de TI para uma nova colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team! Let me show you our IT org chart. It looks big, but it is simple.<br><br>See this box at the top? That is our CIO. She leads the whole department. You will not call her every day, but she sets the plan.<br><br>Here is the help desk. This is your first stop for small problems. A frozen laptop, a forgotten password, a printer that does not work — just call the help desk. They are friendly, I promise.<br><br>Next to them is the infrastructure team. They take care of the servers and the network. And these people are the developers. They build our apps. If you need a new tool for your work, talk to them.<br><br>Now, this box is very important. This is security. Please listen. If you get a strange email, an email that feels wrong, call security today. Not tomorrow, not next week — today. One bad email can be a real threat to the company. So when in doubt, always call security.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is in the box at the top of the org chart?",
+     "options": [
+      "The CIO",
+      "The help desk",
+      "A developer",
+      "The security team"
+     ],
+     "answer": 0,
+     "why": "\"See this box at the top? That is our CIO. She leads the whole department.\""
+    },
+    {
+     "q": "What should the new joiner do about a frozen laptop or a forgotten password?",
+     "options": [
+      "Call the help desk",
+      "Call the CIO",
+      "Talk to the developers",
+      "Wait until tomorrow"
+     ],
+     "answer": 0,
+     "why": "\"A frozen laptop, a forgotten password… just call the help desk.\""
+    },
+    {
+     "q": "Who should she talk to if she needs a new tool for her work?",
+     "options": [
+      "The developers",
+      "The infrastructure team",
+      "The security team",
+      "The CIO"
+     ],
+     "answer": 0,
+     "why": "\"These people are the developers. They build our apps. If you need a new tool… talk to them.\""
+    },
+    {
+     "q": "Why does Oliver say to call security \"today, not tomorrow\"?",
+     "options": [
+      "Because one bad email can be a real threat",
+      "Because security is very busy tomorrow",
+      "Because the help desk is closed",
+      "Because emails are not important"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"One bad email can be a real threat to the company.\" — por isso a urgência."
+    },
+    {
+     "q": "How would you best describe Oliver's tone?",
+     "options": [
+      "Friendly, but serious about security",
+      "Angry with the new joiner",
+      "Bored and in a hurry",
+      "Unsure about the roles"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele é acolhedor (\"Welcome!\", \"They are friendly\"), mas fica firme no ponto da segurança."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"My laptop is <strong>frozen</strong> and the screen will not move.\" A frozen laptop is…",
+     "options": [
+      "a laptop that stopped responding",
+      "a laptop that is very cold",
+      "a brand new laptop",
+      "a laptop with no battery"
+     ],
+     "answer": 0,
+     "why": "Frozen laptop = notebook travado, que parou de responder."
+    },
+    {
+     "q": "Choose the correct word: \"I forgot my ___, so I cannot log in to my email.\"",
+     "options": [
+      "password",
+      "network",
+      "developer",
+      "threat"
+     ],
+     "answer": 0,
+     "why": "Password = senha, o que você usa para fazer login."
+    },
+    {
+     "q": "\"The office <strong>network</strong> is slow today.\" The network is…",
+     "options": [
+      "the system that connects the computers",
+      "the company's software",
+      "a type of printer",
+      "the help desk team"
+     ],
+     "answer": 0,
+     "why": "Network = rede, o sistema que conecta os computadores."
+    },
+    {
+     "q": "Choose the correct word: \"A strange email can be a real ___ to the company.\"",
+     "options": [
+      "threat",
+      "password",
+      "help desk",
+      "network"
+     ],
+     "answer": 0,
+     "why": "Threat = ameaça, um risco para a empresa."
+    },
+    {
+     "q": "\"This <strong>strange</strong> email asks for my password.\" Strange here means…",
+     "options": [
+      "unusual and not normal",
+      "very long",
+      "in another language",
+      "from a friend"
+     ],
+     "answer": 0,
+     "why": "Strange = estranho, algo fora do normal."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no dia a dia de um time de TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>call the help desk</strong> if your laptop is frozen.\" To call the help desk means to…",
+     "options": [
+      "ask the IT support team for help",
+      "restart your computer",
+      "send an email to the CIO",
+      "buy a new laptop"
+     ],
+     "answer": 0,
+     "why": "Call the help desk = pedir ajuda ao time de suporte de TI."
+    },
+    {
+     "q": "\"IT will <strong>roll out</strong> the new app next week.\" To roll out means to…",
+     "options": [
+      "start using it for everyone",
+      "delete it",
+      "test it in secret",
+      "explain it to the CIO"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar, colocar em uso para todos."
+    },
+    {
+     "q": "\"Can you <strong>look after</strong> the servers this week?\" To look after something means to…",
+     "options": [
+      "take care of it",
+      "turn it off",
+      "sell it",
+      "forget about it"
+     ],
+     "answer": 0,
+     "why": "Look after = cuidar de, tomar conta."
+    },
+    {
+     "q": "\"If an email feels wrong, <strong>reach out to</strong> security.\" To reach out to someone means to…",
+     "options": [
+      "contact them for help",
+      "wait for them to call you",
+      "ignore them",
+      "reply to the email"
+     ],
+     "answer": 0,
+     "why": "Reach out to = entrar em contato com, procurar alguém."
+    },
+    {
+     "q": "\"The CIO wants us to <strong>keep an eye on</strong> the network today.\" To keep an eye on means to…",
+     "options": [
+      "watch it carefully",
+      "shut it down",
+      "forget it",
+      "replace it"
+     ],
+     "answer": 0,
+     "why": "Keep an eye on = ficar de olho, observar com atenção."
+    }
+   ]
+  }
+ ]
+}

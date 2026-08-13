@@ -1,0 +1,259 @@
+{
+ "num": 319,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Modern logistics runs on a few key systems. A TMS plans routes, books carriers, and tracks shipments. A WMS runs the warehouse — receiving, picking, packing, and dispatch.<br><br>Tracking systems show where every parcel is in real time. Together, these tools connect the whole operation. When they talk to each other, one order flows from the website to the doorstep. Nobody types the same information twice.<br><br>Tools do not replace good teams. They just let good teams do much more.",
+   "items": [
+    {
+     "q": "What does a TMS do?",
+     "options": [
+      "It plans routes and books carriers",
+      "It packs the boxes",
+      "It replaces the team",
+      "It cleans the warehouse"
+     ],
+     "answer": 0,
+     "why": "\"A TMS plans routes, books carriers, and tracks shipments.\""
+    },
+    {
+     "q": "What does a WMS run?",
+     "options": [
+      "The website",
+      "The warehouse",
+      "The trucks",
+      "The office phones"
+     ],
+     "answer": 1,
+     "why": "\"A WMS runs the warehouse — receiving, picking, packing, and dispatch.\""
+    },
+    {
+     "q": "What do tracking systems show?",
+     "options": [
+      "The price of each parcel",
+      "Where every parcel is in real time",
+      "The name of the driver",
+      "The weather"
+     ],
+     "answer": 1,
+     "why": "\"Tracking systems show where every parcel is in real time.\""
+    },
+    {
+     "q": "The text says nobody types the same information twice. This suggests that…",
+     "options": [
+      "the systems share information with each other",
+      "the team is very small",
+      "typing is not allowed",
+      "the order never arrives"
+     ],
+     "answer": 0,
+     "why": "Inferência: se os sistemas \"talk to each other\", os dados passam sozinhos — ninguém redigita."
+    },
+    {
+     "q": "Which idea would the author most likely DISAGREE with?",
+     "options": [
+      "Good tools help good teams do more",
+      "Tools can fully replace the team",
+      "Systems should connect the whole operation",
+      "Tracking helps you find a parcel"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Tools do not replace good teams\" — o autor discorda que a tecnologia substitua as pessoas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily mostrando os sistemas a um colega novo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team! Let me show you the three screens we use every day. Everything is here, on one dashboard.<br><br>This first screen is the TMS. It plans the routes and books the carriers. When a new order comes in, the TMS chooses the best truck and the best road. You can see all the trucks here, moving on the map.<br><br>The screen in the middle is the WMS. It runs the warehouse. The team uses it to receive boxes, pick the right items, pack them, and send them out. Every box has a code, so the system always knows where it is.<br><br>The last screen is the tracking system. It shows where every parcel is, in real time. If a customer calls, you look here and you have the answer in two seconds.<br><br>One thing — the systems are only as good as the data. So please type the numbers with care. A small mistake here can stop a truck out there. But do not worry. You will learn fast, and I am right next to you.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many screens does Emily show?",
+     "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Ten"
+     ],
+     "answer": 1,
+     "why": "\"Let me show you the three screens we use every day.\""
+    },
+    {
+     "q": "What does the TMS do when a new order comes in?",
+     "options": [
+      "It packs the box",
+      "It chooses the best truck and road",
+      "It calls the customer",
+      "It prints a label"
+     ],
+     "answer": 1,
+     "why": "\"the TMS chooses the best truck and the best road.\""
+    },
+    {
+     "q": "Why does every box have a code?",
+     "options": [
+      "So the system always knows where it is",
+      "So the customer can pay",
+      "So the truck can start",
+      "So the price goes down"
+     ],
+     "answer": 0,
+     "why": "\"Every box has a code, so the system always knows where it is.\""
+    },
+    {
+     "q": "Emily says a small mistake in the data \"can stop a truck out there.\" She means that…",
+     "options": [
+      "bad data can cause real problems in the operation",
+      "trucks stop every day",
+      "the driver is careless",
+      "the screen is broken"
+     ],
+     "answer": 0,
+     "why": "Inferência: um erro pequeno no sistema tem efeito grande na operação real."
+    },
+    {
+     "q": "How would you describe Emily's tone with the new joiner?",
+     "options": [
+      "Angry and impatient",
+      "Bored and distant",
+      "Friendly and helpful",
+      "Worried and unsure"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela dá boas-vindas, explica com calma e diz \"I am right next to you\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The system tracks every parcel in <strong>real time</strong>.\" Real time means…",
+     "options": [
+      "at the exact moment it happens",
+      "once a week",
+      "at the end of the day",
+      "in the past"
+     ],
+     "answer": 0,
+     "why": "Real time = tempo real: a informação aparece no momento em que acontece."
+    },
+    {
+     "q": "Choose the correct word: \"When the systems ___ , information moves from one screen to the next by itself.\"",
+     "options": [
+      "connect",
+      "replace",
+      "print",
+      "close"
+     ],
+     "answer": 0,
+     "why": "To connect = conectar: os sistemas se ligam e trocam dados."
+    },
+    {
+     "q": "Choose the correct word: \"Please ___ the numbers with care, or the order will be wrong.\"",
+     "options": [
+      "type",
+      "sleep",
+      "drive",
+      "cook"
+     ],
+     "answer": 0,
+     "why": "To type = digitar os números no sistema."
+    },
+    {
+     "q": "\"The TMS can <strong>book</strong> a carrier in one click.\" To book means to…",
+     "options": [
+      "reserve or arrange it",
+      "read it",
+      "close it",
+      "clean it"
+     ],
+     "answer": 0,
+     "why": "To book = reservar: aqui, contratar/arranjar a transportadora."
+    },
+    {
+     "q": "\"Good tools do not <strong>replace</strong> a good team.\" To replace means to…",
+     "options": [
+      "take the place of",
+      "help",
+      "pay",
+      "call"
+     ],
+     "answer": 0,
+     "why": "To replace = substituir, tomar o lugar de."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no dia a dia da logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We will <strong>roll out</strong> the new system next month.\" To roll out means to…",
+     "options": [
+      "start using it, step by step",
+      "throw it away",
+      "hide it",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Roll out = implantar de forma progressiva."
+    },
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new dashboard first.\" To sign off on means to…",
+     "options": [
+      "formally approve it",
+      "delete it",
+      "copy it",
+      "test it in secret"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"A new order <strong>comes in</strong> every few seconds.\" To come in means to…",
+     "options": [
+      "arrive",
+      "leave",
+      "stop",
+      "wait"
+     ],
+     "answer": 0,
+     "why": "Come in = chegar, entrar (um pedido que aparece no sistema)."
+    },
+    {
+     "q": "\"If the data is wrong, the whole order can <strong>break down</strong>.\" To break down means to…",
+     "options": [
+      "stop working",
+      "get cheaper",
+      "arrive early",
+      "grow bigger"
+     ],
+     "answer": 0,
+     "why": "Break down = parar de funcionar, dar problema."
+    },
+    {
+     "q": "\"Please <strong>fill in</strong> the numbers before you save.\" To fill in means to…",
+     "options": [
+      "write the information in the fields",
+      "delete the file",
+      "close the screen",
+      "call the driver"
+     ],
+     "answer": 0,
+     "why": "Fill in = preencher os campos com a informação."
+    }
+   ]
+  }
+ ]
+}

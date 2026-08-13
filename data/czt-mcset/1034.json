@@ -1,0 +1,259 @@
+{
+ "num": 1034,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "On the phone, being polite is being professional. We use <strong>can I</strong> and <strong>can you</strong> all the time. For example: \"Can I speak to Ana?\" or \"Can you repeat that, please?\"<br><br>These small words are simple, but they help a lot. They are clear, and everyone understands them. You sound kind and easy to work with.<br><br>Today you learn five useful words and you practise a lot. Take your time. Every sentence counts.",
+   "items": [
+    {
+     "q": "What is the text about?",
+     "options": [
+      "Writing emails",
+      "Being polite on the phone",
+      "Sending a message on paper",
+      "Learning to read"
+     ],
+     "answer": 1,
+     "why": "O texto fala sobre ser educado ao telefone usando \"can I\" e \"can you\"."
+    },
+    {
+     "q": "Which words does the text ask you to use?",
+     "options": [
+      "Can I and can you",
+      "Must I and must you",
+      "Will I and will you",
+      "Do I and do you"
+     ],
+     "answer": 0,
+     "why": "\"We use can I and can you all the time.\""
+    },
+    {
+     "q": "According to the text, why are these words good?",
+     "options": [
+      "They are long and formal",
+      "They are clear and everyone understands them",
+      "They are only for friends",
+      "They are difficult to say"
+     ],
+     "answer": 1,
+     "why": "\"They are clear, and everyone understands them.\""
+    },
+    {
+     "q": "The text says \"take your time.\" The writer would most likely DISAGREE with…",
+     "options": [
+      "You should speak calmly.",
+      "You should hurry and speak very fast.",
+      "Every sentence counts.",
+      "Practice helps you."
+     ],
+     "answer": 1,
+     "why": "Inferência: \"take your time\" quer dizer o contrário de correr; o autor não quer que você fale rápido demais."
+    },
+    {
+     "q": "\"You sound kind and easy to work with\" suggests that polite words…",
+     "options": [
+      "make people trust you less",
+      "help you build a good relationship",
+      "are only useful in writing",
+      "are not important at work"
+     ],
+     "answer": 1,
+     "why": "Inferência: soar gentil e fácil de trabalhar junto ajuda o relacionamento profissional."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie no telefone com um colega da Czarnikow. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello. This is Sophie from Czarnikow. Can I speak to Mark, please?<br><br>Oh, he is in a meeting? That is okay. Can you take a message for me? Thank you.<br><br>Please tell him I called. Can you ask him to call me back later? My number is easy. Can I give it to you now?<br><br>It is five, five, five, one, two, three, four. Can you repeat it, please? Yes, that is right. Thank you very much.<br><br>One more thing. Can you spell his name for me? I want to write it right. M, A, R, K. Perfect.<br><br>Thank you for your help. Have a good day. Goodbye.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who does Sophie want to speak to?",
+     "options": [
+      "Ana",
+      "Mark",
+      "John",
+      "Sophie"
+     ],
+     "answer": 1,
+     "why": "\"Can I speak to Mark, please?\""
+    },
+    {
+     "q": "Why can't Sophie speak to him?",
+     "options": [
+      "He is on holiday",
+      "He is in a meeting",
+      "He is at lunch",
+      "He is sick"
+     ],
+     "answer": 1,
+     "why": "\"Oh, he is in a meeting?\""
+    },
+    {
+     "q": "What does Sophie ask the colleague to do?",
+     "options": [
+      "Take a message",
+      "Send an email",
+      "Close the door",
+      "Wait for her"
+     ],
+     "answer": 0,
+     "why": "\"Can you take a message for me?\""
+    },
+    {
+     "q": "Why does Sophie ask the colleague to repeat the number?",
+     "options": [
+      "She wants the number to be correct",
+      "She forgot her own number",
+      "The colleague is angry",
+      "The phone is broken"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela pede para repetir e confirma (\"that is right\") para ter certeza que o número está certo."
+    },
+    {
+     "q": "How would you best describe Sophie on the call?",
+     "options": [
+      "Rude and in a hurry",
+      "Polite and calm",
+      "Confused and lost",
+      "Bored and tired"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela diz \"please\" e \"thank you\" muitas vezes e fala com calma — é educada."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>Hello</strong>, can I speak to Ana?\" <strong>Hello</strong> means…",
+     "options": [
+      "goodbye",
+      "alô / oi",
+      "thank you",
+      "sorry"
+     ],
+     "answer": 1,
+     "why": "Hello = alô/oi, a saudação ao atender ou começar a ligação."
+    },
+    {
+     "q": "Choose the correct word: \"Can I ___ to the manager, please?\"",
+     "options": [
+      "speak",
+      "hold",
+      "spell",
+      "call"
+     ],
+     "answer": 0,
+     "why": "Speak = falar. \"Can I speak to the manager?\""
+    },
+    {
+     "q": "\"Can you <strong>hold</strong>, please?\" To <strong>hold</strong> on the phone means to…",
+     "options": [
+      "hang up now",
+      "wait a moment",
+      "speak louder",
+      "call again"
+     ],
+     "answer": 1,
+     "why": "Hold = aguardar na linha por um momento."
+    },
+    {
+     "q": "Choose the correct word: \"He is busy now. Can I leave a ___?\"",
+     "options": [
+      "message",
+      "hello",
+      "later",
+      "hold"
+     ],
+     "answer": 0,
+     "why": "Message = recado. \"Can I leave a message?\""
+    },
+    {
+     "q": "\"Can you call me <strong>later</strong>?\" <strong>Later</strong> means…",
+     "options": [
+      "right now",
+      "yesterday",
+      "at a future time",
+      "never"
+     ],
+     "answer": 2,
+     "why": "Later = mais tarde, num momento futuro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que usamos no telefone. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>call back</strong> in ten minutes?\" To call back means to…",
+     "options": [
+      "phone again",
+      "hang up",
+      "shout",
+      "send a letter"
+     ],
+     "answer": 0,
+     "why": "Call back = ligar de volta, telefonar de novo."
+    },
+    {
+     "q": "\"Please <strong>hold on</strong> a second.\" Hold on means…",
+     "options": [
+      "stop talking forever",
+      "wait a moment",
+      "speak faster",
+      "end the call"
+     ],
+     "answer": 1,
+     "why": "Hold on = espere um momento, aguarde na linha."
+    },
+    {
+     "q": "\"Can you <strong>speak up</strong>, please? I can't hear you.\" Speak up means…",
+     "options": [
+      "speak louder",
+      "speak slower",
+      "stop speaking",
+      "speak later"
+     ],
+     "answer": 0,
+     "why": "Speak up = falar mais alto para ser ouvido."
+    },
+    {
+     "q": "\"He is not here. Can I <strong>take a message</strong>?\" To take a message means to…",
+     "options": [
+      "write down a note for someone",
+      "read an email",
+      "end the call",
+      "start a meeting"
+     ],
+     "answer": 0,
+     "why": "Take a message = anotar um recado para outra pessoa."
+    },
+    {
+     "q": "\"Sorry, wrong number. Let me <strong>hang up</strong>.\" To hang up means to…",
+     "options": [
+      "end the call",
+      "answer the phone",
+      "hold the line",
+      "call back"
+     ],
+     "answer": 0,
+     "why": "Hang up = desligar o telefone, encerrar a ligação."
+    }
+   ]
+  }
+ ]
+}

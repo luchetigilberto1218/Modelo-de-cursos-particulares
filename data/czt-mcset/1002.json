@@ -1,0 +1,259 @@
+{
+ "num": 1002,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Today we learn the days of the week in English. At Czarnikow we use them every day — in meetings, emails and schedules.<br><br>The week starts on Monday and ends on Sunday. Saturday and Sunday are the weekend. Today you learn five important words. We go step by step.<br><br>English comes in CAN's, not in CAN'Ts. You can do it!",
+   "items": [
+    {
+     "q": "When does the week start?",
+     "options": [
+      "On Monday",
+      "On Sunday",
+      "On Friday",
+      "On Saturday"
+     ],
+     "answer": 0,
+     "why": "\"The week starts on Monday and ends on Sunday.\""
+    },
+    {
+     "q": "Which two days are the weekend?",
+     "options": [
+      "Monday and Tuesday",
+      "Saturday and Sunday",
+      "Friday and Monday",
+      "Wednesday and Thursday"
+     ],
+     "answer": 1,
+     "why": "\"Saturday and Sunday are the weekend.\""
+    },
+    {
+     "q": "How many new words do you learn today?",
+     "options": [
+      "Two",
+      "Three",
+      "Five",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"Today you learn five important words.\""
+    },
+    {
+     "q": "\"We go step by step\" suggests that the lesson is…",
+     "options": [
+      "very fast and hard",
+      "slow and easy to follow",
+      "only for managers",
+      "about numbers"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"step by step\" mostra que a lição é calma e simples, feita para iniciantes."
+    },
+    {
+     "q": "The message \"English comes in CAN's, not in CAN'Ts\" is there to…",
+     "options": [
+      "give the students confidence",
+      "explain the office rules",
+      "list the meetings",
+      "correct a mistake"
+     ],
+     "answer": 0,
+     "why": "Inferência: é uma frase de motivação — quer dizer \"você é capaz\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie mostrar a agenda da semana para o novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team! Let me show you our weekly schedule.<br><br>The team is in the office from Monday to Thursday. We start at nine in the morning. On Monday we have our big meeting. It is important, so please come on time.<br><br>On Tuesday and Wednesday we work on emails and reports. On Thursday we have training. It is fun and easy, don't worry.<br><br>On Friday I work from home. Many people take Friday to work from home too. The office is quiet on Friday.<br><br>Saturday and Sunday are the weekend. We do not work. The office closes at six in the evening every day.<br><br>Your schedule is on the wall and in your email. Any questions? Have a nice week!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What day does the team have the big meeting?",
+     "options": [
+      "On Monday",
+      "On Friday",
+      "On Sunday",
+      "On Thursday"
+     ],
+     "answer": 0,
+     "why": "\"On Monday we have our big meeting.\""
+    },
+    {
+     "q": "What time does the team start in the morning?",
+     "options": [
+      "At six",
+      "At nine",
+      "At ten",
+      "At eight"
+     ],
+     "answer": 1,
+     "why": "\"We start at nine in the morning.\""
+    },
+    {
+     "q": "Where does Sophie work on Friday?",
+     "options": [
+      "In the office",
+      "From home",
+      "In another city",
+      "At the training room"
+     ],
+     "answer": 1,
+     "why": "\"On Friday I work from home.\""
+    },
+    {
+     "q": "Sophie says \"please come on time\" for the Monday meeting. This suggests that the meeting is…",
+     "options": [
+      "not important",
+      "important, so being late is a problem",
+      "cancelled",
+      "only online"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela pede pontualidade porque a reunião é importante."
+    },
+    {
+     "q": "Why is the office probably quiet on Friday?",
+     "options": [
+      "Because it is closed",
+      "Because many people work from home",
+      "Because it is a holiday",
+      "Because the team is on training"
+     ],
+     "answer": 1,
+     "why": "Inferência: muitos trabalham de casa na sexta, então há menos gente no escritório."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The team meeting is on <strong>Monday</strong>.\" Monday is…",
+     "options": [
+      "segunda-feira",
+      "sexta-feira",
+      "domingo",
+      "sábado"
+     ],
+     "answer": 0,
+     "why": "Monday = segunda-feira, o primeiro dia da semana de trabalho."
+    },
+    {
+     "q": "Choose the correct word: \"I am in the office on ___, the second day of the week.\"",
+     "options": [
+      "Monday",
+      "Tuesday",
+      "Sunday",
+      "weekend"
+     ],
+     "answer": 1,
+     "why": "Tuesday = terça-feira, o segundo dia da semana."
+    },
+    {
+     "q": "\"This <strong>week</strong> is very busy.\" Week means…",
+     "options": [
+      "dia",
+      "semana",
+      "mês",
+      "hora"
+     ],
+     "answer": 1,
+     "why": "Week = semana (de segunda a domingo)."
+    },
+    {
+     "q": "Choose the correct word: \"We do not work on Saturday and Sunday. Have a nice ___!\"",
+     "options": [
+      "weekend",
+      "schedule",
+      "Monday",
+      "meeting"
+     ],
+     "answer": 0,
+     "why": "Weekend = fim de semana (sábado e domingo)."
+    },
+    {
+     "q": "\"My <strong>schedule</strong> is full this week.\" Schedule means…",
+     "options": [
+      "agenda / horário",
+      "escritório",
+      "salário",
+      "e-mail"
+     ],
+     "answer": 0,
+     "why": "Schedule = agenda / horário: os dias e horas do seu trabalho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que usamos no trabalho para falar da agenda. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"I have a <strong>day off</strong> on Friday.\" A day off is…",
+     "options": [
+      "a free day, with no work",
+      "a very busy day",
+      "a training day",
+      "a meeting day"
+     ],
+     "answer": 0,
+     "why": "Day off = dia de folga, um dia sem trabalho."
+    },
+    {
+     "q": "\"On Monday I <strong>work from home</strong>.\" This means I…",
+     "options": [
+      "go to the office",
+      "work at my house",
+      "take a holiday",
+      "travel for work"
+     ],
+     "answer": 1,
+     "why": "Work from home = trabalhar de casa, sem ir ao escritório."
+    },
+    {
+     "q": "\"Let's <strong>catch up</strong> on Tuesday.\" To catch up means to…",
+     "options": [
+      "meet and talk to share news",
+      "start a new project",
+      "close the office",
+      "go home early"
+     ],
+     "answer": 0,
+     "why": "Catch up = colocar o papo/assunto em dia, conversar rapidamente."
+    },
+    {
+     "q": "\"We <strong>wrap up</strong> the meeting at five.\" To wrap up means to…",
+     "options": [
+      "finish it",
+      "open it",
+      "cancel it",
+      "move it to Monday"
+     ],
+     "answer": 0,
+     "why": "Wrap up = terminar, encerrar (uma reunião ou tarefa)."
+    },
+    {
+     "q": "\"Please <strong>check in</strong> with me on Wednesday.\" To check in means to…",
+     "options": [
+      "give a quick update to someone",
+      "leave the office",
+      "book a hotel",
+      "read your email"
+     ],
+     "answer": 0,
+     "why": "Check in (with someone) = dar um retorno rápido, falar para atualizar."
+    }
+   ]
+  }
+ ]
+}

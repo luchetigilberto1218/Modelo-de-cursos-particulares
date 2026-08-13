@@ -1,0 +1,259 @@
+{
+ "num": 1021,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Every \"hi\" is the start of a talk. Your first day at a new desk can feel big. But a simple sentence opens every door: \"Hi, I'm Ana. I work at Czarnikow.\"<br><br>Today we practise <strong>I am</strong> and <strong>you are</strong>. We use them with the people and places we see every day. \"I am a new trader.\" \"You are my manager.\" \"I am from São Paulo.\" \"You are on my team.\"<br><br>Take your time. Every sentence counts. Say \"hi\", say your name, and start the conversation.",
+   "items": [
+    {
+     "q": "What does Ana say to open the conversation?",
+     "options": [
+      "\"Hi, I'm Ana. I work at Czarnikow.\"",
+      "\"Goodbye, see you later.\"",
+      "\"I am very tired today.\"",
+      "\"You are late for the meeting.\""
+     ],
+     "answer": 0,
+     "why": "O texto traz a frase exata: \"Hi, I'm Ana. I work at Czarnikow.\""
+    },
+    {
+     "q": "What does the text say we practise today?",
+     "options": [
+      "\"I am\" and \"you are\"",
+      "Numbers from one to ten",
+      "The days of the week",
+      "How to write an email"
+     ],
+     "answer": 0,
+     "why": "\"Today we practise I am and you are.\""
+    },
+    {
+     "q": "The text says \"Take your time.\" This suggests that…",
+     "options": [
+      "you do not need to rush",
+      "you must speak very fast",
+      "the class is almost over",
+      "you should not speak at all"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"take your time\" = não tenha pressa, vá com calma."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "a simple hello can start a good conversation",
+      "the first day at work is easy for everyone",
+      "you should stay quiet on your first day",
+      "long sentences are always better"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto todo mostra que uma frase simples \"opens every door\"."
+    },
+    {
+     "q": "Why does the text say the first day \"can feel big\"?",
+     "options": [
+      "because everything is new for you",
+      "because the office is very large",
+      "because you work many hours",
+      "because you have a big desk"
+     ],
+     "answer": 0,
+     "why": "Inferência: é o primeiro dia num lugar novo — tudo é novo, por isso parece \"grande\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver se apresentando no seu primeiro dia. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! My name is Oliver. I am a new trader here at Czarnikow. Today is my first day at the London office. It is a big day for me.<br><br>You are my manager, and you are very kind. Thank you very much. This is my desk. It is next to the window, and it is very nice. I am happy here. I have a computer, a phone, and a small plant on my desk.<br><br>My colleague is Ana. She sits close to me. She is friendly and calm. She says, \"You are on my team now. Welcome!\" That is very nice. I say, \"Thank you, Ana. Nice to meet you.\"<br><br>I am from São Paulo, in Brazil. It is a big city, and I love it. Now I am here in London, and I am ready to work. I am a little nervous, but I am also happy. Every day I learn one new word in English.<br><br>So, hello, everyone. My name is Oliver. I am a trader, and you are my new team. I am glad to be here. Nice to meet you all.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the speaker's name?",
+     "options": [
+      "Oliver",
+      "Ana",
+      "James",
+      "Carlos"
+     ],
+     "answer": 0,
+     "why": "\"My name is Oliver.\""
+    },
+    {
+     "q": "What is Oliver's job?",
+     "options": [
+      "He is a new trader.",
+      "He is the manager.",
+      "He is a teacher.",
+      "He is a driver."
+     ],
+     "answer": 0,
+     "why": "\"I am a new trader here at Czarnikow.\""
+    },
+    {
+     "q": "Where is Oliver from?",
+     "options": [
+      "São Paulo, in Brazil",
+      "London, in England",
+      "Lisbon, in Portugal",
+      "New York, in the USA"
+     ],
+     "answer": 0,
+     "why": "\"I am from São Paulo, in Brazil.\""
+    },
+    {
+     "q": "Oliver says he is \"a little nervous, but also happy.\" This suggests that…",
+     "options": [
+      "he has mixed feelings on his first day",
+      "he does not like the office",
+      "he wants to go home",
+      "he is bored at work"
+     ],
+     "answer": 0,
+     "why": "Inferência: nervoso + feliz ao mesmo tempo = sentimentos misturados no primeiro dia."
+    },
+    {
+     "q": "\"You are on my team now,\" says Ana. This suggests that…",
+     "options": [
+      "Ana wants Oliver to feel welcome",
+      "Ana is Oliver's manager",
+      "Oliver is leaving the team",
+      "Ana does not know Oliver"
+     ],
+     "answer": 0,
+     "why": "Inferência: dizer \"you are on my team now\" é acolher o colega novo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Ana is my <strong>colleague</strong>. We work together.\" A colleague is…",
+     "options": [
+      "a person you work with",
+      "a room in the office",
+      "a computer",
+      "a cup of coffee"
+     ],
+     "answer": 0,
+     "why": "Colleague = colega, a pessoa com quem você trabalha."
+    },
+    {
+     "q": "Choose the correct word: \"Hi, my ___ is Oliver. Nice to meet you.\"",
+     "options": [
+      "name",
+      "desk",
+      "team",
+      "city"
+     ],
+     "answer": 0,
+     "why": "Name = nome; \"my name is Oliver\"."
+    },
+    {
+     "q": "\"My <strong>manager</strong> helps me and checks my work.\" A manager is…",
+     "options": [
+      "the person who leads the team",
+      "a new trader",
+      "a client",
+      "a visitor"
+     ],
+     "answer": 0,
+     "why": "Manager = gerente, quem lidera a equipe."
+    },
+    {
+     "q": "Choose the correct word: \"I sit at my ___ next to the window.\"",
+     "options": [
+      "desk",
+      "manager",
+      "name",
+      "colleague"
+     ],
+     "answer": 0,
+     "why": "Desk = mesa (de trabalho); é onde a pessoa senta."
+    },
+    {
+     "q": "\"Oliver is a <strong>trader</strong> at Czarnikow.\" A trader is a person who…",
+     "options": [
+      "buys and sells for the company",
+      "cleans the office",
+      "cooks the lunch",
+      "drives the manager"
+     ],
+     "answer": 0,
+     "why": "Trader = quem compra e vende no mercado; a função de Oliver."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que usamos ao nos apresentar no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "Someone says \"thank you.\" You answer: \"<strong>You are welcome</strong>.\" This means…",
+     "options": [
+      "it is my pleasure / no problem",
+      "please go away",
+      "I am very busy",
+      "see you tomorrow"
+     ],
+     "answer": 0,
+     "why": "\"You are welcome\" = de nada; resposta gentil a um \"obrigado\"."
+    },
+    {
+     "q": "Oliver says \"<strong>Nice to meet you</strong>\" to his new team. He uses this to…",
+     "options": [
+      "greet people for the first time",
+      "say goodbye at the end of the day",
+      "ask for help",
+      "order a coffee"
+     ],
+     "answer": 0,
+     "why": "\"Nice to meet you\" = prazer em conhecer; usado no primeiro encontro."
+    },
+    {
+     "q": "\"I am <strong>ready to work</strong>.\" This means Oliver…",
+     "options": [
+      "is prepared to start",
+      "wants to go home",
+      "is on holiday",
+      "is very tired"
+     ],
+     "answer": 0,
+     "why": "\"Ready to work\" = pronto para começar/trabalhar."
+    },
+    {
+     "q": "A colleague says \"<strong>You are on my team</strong>.\" This means…",
+     "options": [
+      "you work together in the same group",
+      "you are the boss now",
+      "you are leaving the company",
+      "you are a client"
+     ],
+     "answer": 0,
+     "why": "\"On my team\" = no meu time, no mesmo grupo de trabalho."
+    },
+    {
+     "q": "It is the morning. Oliver says \"<strong>Good morning</strong>\" to his desk neighbour. He uses this to…",
+     "options": [
+      "greet someone early in the day",
+      "say thank you",
+      "ask a question",
+      "end a meeting"
+     ],
+     "answer": 0,
+     "why": "\"Good morning\" = bom dia; saudação usada de manhã."
+    }
+   ]
+  }
+ ]
+}

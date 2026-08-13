@@ -1,0 +1,259 @@
+{
+ "num": 1010,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Czarnikow is a big company. Many people work here. We call them colleagues. Colleagues work together every day. My colleagues are kind.<br><br>Czarnikow has offices in many countries. We have offices in 13 countries. Every office has departments. A department is a team, like Sales or Finance. The company has many departments.<br><br>Managers lead the teams. They meet on Monday and they read the reports. When we talk about more than one thing, we use plurals: colleague → colleagues, office → offices, box → boxes. Plurals help us count people and things.",
+   "items": [
+    {
+     "q": "What do we call the people who work at Czarnikow?",
+     "options": [
+      "Colleagues",
+      "Managers only",
+      "Reports",
+      "Countries"
+     ],
+     "answer": 0,
+     "why": "\"We call them colleagues.\" Colleagues = colegas."
+    },
+    {
+     "q": "In how many countries does Czarnikow have offices?",
+     "options": [
+      "3",
+      "13",
+      "30",
+      "5"
+     ],
+     "answer": 1,
+     "why": "\"We have offices in 13 countries.\""
+    },
+    {
+     "q": "What do the managers do on Monday?",
+     "options": [
+      "They read the reports",
+      "They open new offices",
+      "They count the boxes",
+      "They travel abroad"
+     ],
+     "answer": 0,
+     "why": "\"They meet on Monday and they read the reports.\""
+    },
+    {
+     "q": "The text suggests that Czarnikow is…",
+     "options": [
+      "a small local shop",
+      "an international company with many teams",
+      "a company with only one office",
+      "a company with no managers"
+     ],
+     "answer": 1,
+     "why": "Inferência: offices em 13 países e many departments mostram uma empresa internacional e grande."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "plurals are useful to count people and things",
+      "you never need plurals at work",
+      "Czarnikow has only one department",
+      "colleagues do not work together"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto ensina plurais justamente para contar pessoas e coisas na empresa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie falar sobre as pessoas e os departamentos da Czarnikow. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! I am Sophie. Welcome to Czarnikow! Today I talk about our people and our departments. It is very simple, so relax and listen. I speak slowly for you.<br><br>We are a big company. We have offices in many countries. We have offices in 13 countries. That is a lot! In every office, people work in departments. We have a Sales department, a Finance department, and a Logistics department. The company has many departments, and every team is important.<br><br>My colleagues are kind. They help me every day. My team has five people, and we work together. Today we have two meetings, and I like them. This month we have three new hires. New colleagues! I am very happy. It is nice to meet new people at work.<br><br>The managers meet on Monday. They read the reports and they plan the week. The reports are ready now, so we are happy. All days are different, but we are one team. Thank you for listening, and have a nice day at Czarnikow!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many people are on Sophie's team?",
+     "options": [
+      "Two",
+      "Five",
+      "Thirteen",
+      "Three"
+     ],
+     "answer": 1,
+     "why": "\"My team has five people, and we work together.\""
+    },
+    {
+     "q": "How many new hires are there this month?",
+     "options": [
+      "Three",
+      "Five",
+      "Two",
+      "Thirteen"
+     ],
+     "answer": 0,
+     "why": "\"This month we have three new hires.\""
+    },
+    {
+     "q": "When do the managers meet?",
+     "options": [
+      "On Friday",
+      "On Monday",
+      "Every day",
+      "On the weekend"
+     ],
+     "answer": 1,
+     "why": "\"The managers meet on Monday.\""
+    },
+    {
+     "q": "How does Sophie feel about her colleagues?",
+     "options": [
+      "She thinks they are kind and helpful",
+      "She thinks they are too busy",
+      "She does not know them",
+      "She wants to change teams"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"My colleagues are kind. They help me every day.\" — ela gosta deles."
+    },
+    {
+     "q": "Why are the managers ready to plan the week?",
+     "options": [
+      "Because the offices are closed",
+      "Because the reports are ready",
+      "Because there are no meetings",
+      "Because it is the weekend"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"They read the reports… The reports are ready now\" — com os relatórios prontos, eles podem planejar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"My <strong>colleagues</strong> are kind and they help me.\" Colleagues are…",
+     "options": [
+      "people you work with",
+      "clients",
+      "buildings",
+      "reports"
+     ],
+     "answer": 0,
+     "why": "Colleagues = colegas, as pessoas com quem você trabalha."
+    },
+    {
+     "q": "Choose the correct word: \"Czarnikow has ___ in 13 countries.\"",
+     "options": [
+      "offices",
+      "managers",
+      "reports",
+      "days"
+     ],
+     "answer": 0,
+     "why": "Offices = escritórios; ficam em países."
+    },
+    {
+     "q": "\"Sales and Finance are two <strong>departments</strong>.\" A department is…",
+     "options": [
+      "a team in a company",
+      "a country",
+      "a meeting",
+      "a report"
+     ],
+     "answer": 0,
+     "why": "Department = departamento, um time dentro da empresa."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ lead the teams and meet on Monday.\"",
+     "options": [
+      "managers",
+      "offices",
+      "boxes",
+      "countries"
+     ],
+     "answer": 0,
+     "why": "Managers = gerentes; eles lideram os times."
+    },
+    {
+     "q": "\"The <strong>reports</strong> are ready.\" A report is…",
+     "options": [
+      "a document with information",
+      "a colleague",
+      "an office",
+      "a country"
+     ],
+     "answer": 0,
+     "why": "Report = relatório, um documento com informação."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples do dia a dia no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"My team and I <strong>work together</strong> every day.\" To work together means to…",
+     "options": [
+      "work as a team",
+      "work alone",
+      "stop working",
+      "change jobs"
+     ],
+     "answer": 0,
+     "why": "Work together = trabalhar em equipe."
+    },
+    {
+     "q": "\"My colleagues always <strong>help out</strong>.\" To help out means to…",
+     "options": [
+      "give help",
+      "say no",
+      "go home",
+      "read reports"
+     ],
+     "answer": 0,
+     "why": "Help out = dar uma ajuda, colaborar."
+    },
+    {
+     "q": "\"We <strong>take part in</strong> the Monday meeting.\" To take part in means to…",
+     "options": [
+      "join it",
+      "cancel it",
+      "forget it",
+      "leave the company"
+     ],
+     "answer": 0,
+     "why": "Take part in = participar de."
+    },
+    {
+     "q": "\"The manager will <strong>set up</strong> a new team.\" To set up means to…",
+     "options": [
+      "start or create it",
+      "close it",
+      "count it",
+      "read it"
+     ],
+     "answer": 0,
+     "why": "Set up = montar, criar algo novo."
+    },
+    {
+     "q": "\"I <strong>check in</strong> with my colleagues every morning.\" To check in with someone means to…",
+     "options": [
+      "talk to them to see how they are",
+      "say goodbye to them",
+      "ignore them",
+      "give them a report"
+     ],
+     "answer": 0,
+     "why": "Check in with = dar um alô, ver como a pessoa está."
+    }
+   ]
+  }
+ ]
+}

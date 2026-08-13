@@ -1,0 +1,259 @@
+{
+ "num": 1006,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Where is the laptop? Where is Sophie? At work, we ask these questions every day. In English, we use three small words to answer them: in, on and at.<br><br>We say the laptop is on the desk. We say the pens are in the drawer. We say the visitor is at reception. These three little words solve most \"where\" questions at work.<br><br>Today you learn five new words: desk, drawer, meeting room, reception and kitchen. We go step by step. You can do it!",
+   "items": [
+    {
+     "q": "How many small words do we use to answer \"where\"?",
+     "options": [
+      "One",
+      "Two",
+      "Three",
+      "Five"
+     ],
+     "answer": 2,
+     "why": "\"we use three small words… in, on and at\"."
+    },
+    {
+     "q": "Where is the laptop?",
+     "options": [
+      "In the drawer",
+      "On the desk",
+      "At reception",
+      "In the kitchen"
+     ],
+     "answer": 1,
+     "why": "\"the laptop is on the desk\"."
+    },
+    {
+     "q": "Where are the pens?",
+     "options": [
+      "On the desk",
+      "In the drawer",
+      "At the door",
+      "In the meeting room"
+     ],
+     "answer": 1,
+     "why": "\"the pens are in the drawer\"."
+    },
+    {
+     "q": "The text suggests that in, on and at are…",
+     "options": [
+      "very difficult and only for experts",
+      "useful for everyday \"where\" questions at work",
+      "not needed at work",
+      "only for writing long emails"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que essas palavrinhas resolvem a maioria das perguntas de \"where\" no trabalho."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Small words can be very useful.",
+      "You need many long words to say where something is.",
+      "In, on and at answer \"where\" questions.",
+      "Learning step by step helps."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto defende que três palavrinhas curtas já bastam — o autor discordaria da ideia de precisar de muitas palavras longas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie mostrar o escritório. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to our office. My name is Sophie. Let me show you around. Come with me.<br><br>This is my desk. My laptop is on the desk, and my phone is on the desk too. My pens are in the drawer, next to the paper. I keep small things in the drawer.<br><br>Now look over there. That is the meeting room. Tom is in the meeting room right now. He has a call at ten o'clock, so we are quiet here.<br><br>Here is reception, at the front. A visitor is at reception today. Her name is Ana, and she is here for a meeting. Please say hello to her later.<br><br>And this is the kitchen. The coffee is in the kitchen, and it is very good! I go to the kitchen every morning for a cup. The printer is in the corner, near the window.<br><br>So, that is our office. Do you want a coffee? Come, the kitchen is this way!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where is Sophie's laptop?",
+     "options": [
+      "In the drawer",
+      "On the desk",
+      "In the kitchen",
+      "At reception"
+     ],
+     "answer": 1,
+     "why": "\"My laptop is on the desk.\""
+    },
+    {
+     "q": "Where are the pens?",
+     "options": [
+      "On the table",
+      "In the drawer",
+      "At the door",
+      "In the corner"
+     ],
+     "answer": 1,
+     "why": "\"My pens are in the drawer, next to the paper.\""
+    },
+    {
+     "q": "Where is Tom?",
+     "options": [
+      "In the kitchen",
+      "At reception",
+      "In the meeting room",
+      "At his desk"
+     ],
+     "answer": 2,
+     "why": "\"Tom is in the meeting room right now.\""
+    },
+    {
+     "q": "Why does Sophie say they are quiet?",
+     "options": [
+      "Because Tom has a call",
+      "Because the office is closed",
+      "Because it is very late",
+      "Because the visitor is sleeping"
+     ],
+     "answer": 0,
+     "why": "Inferência: eles ficam quietos porque Tom tem uma ligação às dez horas."
+    },
+    {
+     "q": "How does Sophie sound?",
+     "options": [
+      "Friendly and welcoming",
+      "Angry with the visitor",
+      "Bored and tired",
+      "Worried about the coffee"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela recebe bem, mostra tudo e oferece um café — tom simpático."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"My laptop is on the <strong>desk</strong>.\" A <strong>desk</strong> is…",
+     "options": [
+      "a table where you work",
+      "a small box that opens",
+      "a room for coffee",
+      "the front area of the office"
+     ],
+     "answer": 0,
+     "why": "Desk = mesa de trabalho."
+    },
+    {
+     "q": "Choose the correct word: \"We make coffee in the ___.\"",
+     "options": [
+      "drawer",
+      "kitchen",
+      "desk",
+      "reception"
+     ],
+     "answer": 1,
+     "why": "Kitchen = cozinha, onde fazemos café."
+    },
+    {
+     "q": "\"The pens are in the <strong>drawer</strong>.\" A <strong>drawer</strong> is…",
+     "options": [
+      "a big meeting table",
+      "a small part of the desk that you open and close",
+      "a place for visitors",
+      "a room with a door"
+     ],
+     "answer": 1,
+     "why": "Drawer = gaveta: abre e fecha e guarda coisas pequenas."
+    },
+    {
+     "q": "Choose the correct word: \"We talk about the project in the ___.\"",
+     "options": [
+      "kitchen",
+      "meeting room",
+      "drawer",
+      "reception"
+     ],
+     "answer": 1,
+     "why": "Meeting room = sala de reunião, onde falamos sobre o projeto."
+    },
+    {
+     "q": "\"The visitor is at <strong>reception</strong>.\" <strong>Reception</strong> is…",
+     "options": [
+      "the front area where visitors arrive",
+      "a drawer in the desk",
+      "the room where we make coffee",
+      "a phone on the table"
+     ],
+     "answer": 0,
+     "why": "Reception = recepção, a área da frente onde as visitas chegam."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que usamos no escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>set up</strong> the meeting room?\" To set up means to…",
+     "options": [
+      "get it ready",
+      "clean the floor",
+      "lock the door",
+      "paint the wall"
+     ],
+     "answer": 0,
+     "why": "Set up = preparar, deixar pronto."
+    },
+    {
+     "q": "\"Please <strong>drop by</strong> my desk later.\" To drop by means to…",
+     "options": [
+      "call on the phone",
+      "visit for a short time",
+      "send a long email",
+      "stay all day"
+     ],
+     "answer": 1,
+     "why": "Drop by = dar uma passadinha, visitar por pouco tempo."
+    },
+    {
+     "q": "\"I will <strong>follow up</strong> with an email.\" To follow up means to…",
+     "options": [
+      "send more information later",
+      "forget the topic",
+      "close the office",
+      "go home early"
+     ],
+     "answer": 0,
+     "why": "Follow up = dar seguimento, mandar mais informação depois."
+    },
+    {
+     "q": "\"Let's <strong>check in</strong> at ten o'clock.\" To check in means to…",
+     "options": [
+      "have a short talk about progress",
+      "leave the building",
+      "turn off the lights",
+      "buy a new laptop"
+     ],
+     "answer": 0,
+     "why": "Check in = fazer um alinhamento rápido para ver como estão as coisas."
+    },
+    {
+     "q": "\"The manager must <strong>sign off on</strong> the plan.\" To sign off on means to…",
+     "options": [
+      "approve it",
+      "print it",
+      "cancel it",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 1029,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In business English, time lives in one small word: <strong>at</strong>. Meetings, calls and breaks all live on a clock. We say at 9 am, at noon, at 3:30.<br><br>At Czarnikow, the day has a schedule. People start at 9 am and finish at 6 pm. There is a break at noon. Many meetings are at 10, and some calls are at 3:30.<br><br>Times are short and clear. \"The meeting is at 10.\" \"See you at 5.\" \"Coffee at 10:30.\" When you know the word at, you can talk about any hour, minute or meeting.",
+   "items": [
+    {
+     "q": "What time do people start at Czarnikow?",
+     "options": [
+      "At 6 pm",
+      "At 9 am",
+      "At noon",
+      "At 3:30"
+     ],
+     "answer": 1,
+     "why": "\"People start at 9 am and finish at 6 pm.\""
+    },
+    {
+     "q": "When is the break?",
+     "options": [
+      "At 9 am",
+      "At 6 pm",
+      "At noon",
+      "At 10:30"
+     ],
+     "answer": 2,
+     "why": "\"There is a break at noon.\" Noon = meio-dia."
+    },
+    {
+     "q": "Which small word does the text say time \"lives\" in?",
+     "options": [
+      "in",
+      "on",
+      "at",
+      "to"
+     ],
+     "answer": 2,
+     "why": "\"In business English, time lives in one small word: at.\""
+    },
+    {
+     "q": "The text suggests that, once you know \"at\", you can…",
+     "options": [
+      "talk about any hour, minute or meeting",
+      "only talk about morning meetings",
+      "stop using a schedule",
+      "speak English perfectly"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"When you know the word at, you can talk about any hour, minute or meeting.\""
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "business times are long and hard to say",
+      "business times are short and clear",
+      "you do not need the word at",
+      "meetings never have a fixed time"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Times are short and clear\" — o texto todo mostra frases curtas com at."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver falar sobre a agenda do dia. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, I am Oliver. Let me tell you about my day at Czarnikow. It is simple, but listen: every time uses the same small word. That word is at.<br><br>I start work at 9 am. I open my computer and I look at my schedule. My first meeting is at 10. It is a short meeting, about thirty minutes. We talk about our week. Then I have a call at 11:30 with a client. The client is in London, so the time is important.<br><br>My break is at noon. I like my break. I get a coffee and I rest for one hour. After lunch, I have another meeting at 2. We look at the schedule again and we plan the next days.<br><br>At 3:30 there is a team call. It is quick, only fifteen minutes. Then I finish my emails. I stop work at 6 pm. Before I go home, I say to my team: \"See you tomorrow at 9.\"<br><br>So, that is my day. Nine, ten, half past eleven, noon, two, three thirty, six. Every meeting, every break, every call — they all start at a time. Now, can you say your day with at? Try it. Take your time!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time is Oliver's first meeting?",
+     "options": [
+      "At 9 am",
+      "At 10",
+      "At 11:30",
+      "At noon"
+     ],
+     "answer": 1,
+     "why": "\"My first meeting is at 10.\""
+    },
+    {
+     "q": "What time does Oliver stop work?",
+     "options": [
+      "At 2",
+      "At 3:30",
+      "At 6 pm",
+      "At 9 am"
+     ],
+     "answer": 2,
+     "why": "\"I stop work at 6 pm.\""
+    },
+    {
+     "q": "What does Oliver do on his break?",
+     "options": [
+      "He has a client call",
+      "He gets a coffee and rests",
+      "He writes emails",
+      "He looks at the schedule"
+     ],
+     "answer": 1,
+     "why": "\"I get a coffee and I rest for one hour.\""
+    },
+    {
+     "q": "Oliver says \"See you tomorrow at 9.\" This suggests that…",
+     "options": [
+      "he starts every day at the same time",
+      "he will not come tomorrow",
+      "the meeting is cancelled",
+      "he works at night"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele começa às 9 am, então \"at 9\" amanhã é o mesmo início de sempre."
+    },
+    {
+     "q": "How would you best describe Oliver's day?",
+     "options": [
+      "Busy and confusing",
+      "Simple, with clear times",
+      "Long and without breaks",
+      "Full of problems"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele mesmo diz \"It is simple\" e lista horários claros com at."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The meeting is one <strong>hour</strong> long.\" An <strong>hour</strong> is…",
+     "options": [
+      "sixty minutes",
+      "one day",
+      "one week",
+      "one meeting"
+     ],
+     "answer": 0,
+     "why": "Hour = hora (60 minutos)."
+    },
+    {
+     "q": "\"The call is only ten <strong>minutes</strong>.\" A <strong>minute</strong> is…",
+     "options": [
+      "a short part of an hour",
+      "a full day",
+      "a long meeting",
+      "a break"
+     ],
+     "answer": 0,
+     "why": "Minute = minuto: uma parte curta da hora."
+    },
+    {
+     "q": "Choose the correct word: \"We have a ___ at 10 with the whole team.\"",
+     "options": [
+      "meeting",
+      "coffee",
+      "hour",
+      "email"
+     ],
+     "answer": 0,
+     "why": "Meeting = reunião — é o encontro do time às 10."
+    },
+    {
+     "q": "Choose the correct word: \"Let me check my ___ for tomorrow's times.\"",
+     "options": [
+      "schedule",
+      "minute",
+      "break",
+      "coffee"
+     ],
+     "answer": 0,
+     "why": "Schedule = agenda: onde ficam os horários do dia."
+    },
+    {
+     "q": "\"I take a short <strong>break</strong> at noon.\" A <strong>break</strong> is…",
+     "options": [
+      "a time to rest",
+      "a long meeting",
+      "a client call",
+      "a report"
+     ],
+     "answer": 0,
+     "why": "Break = pausa: um tempo para descansar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem quando falamos de horários e reuniões. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's <strong>set up</strong> a meeting for 10.\" To set up a meeting means to…",
+     "options": [
+      "arrange it",
+      "cancel it",
+      "be late for it",
+      "leave it"
+     ],
+     "answer": 0,
+     "why": "Set up = marcar/organizar a reunião."
+    },
+    {
+     "q": "\"Can we <strong>move</strong> the meeting to 3?\" To move a meeting means to…",
+     "options": [
+      "change its time",
+      "make it longer",
+      "invite more people",
+      "record it"
+     ],
+     "answer": 0,
+     "why": "Move the meeting = mudar o horário dela."
+    },
+    {
+     "q": "\"See you at 5. <strong>Don't be late.</strong>\" This means…",
+     "options": [
+      "arrive on time",
+      "arrive early",
+      "arrive after 6",
+      "do not come"
+     ],
+     "answer": 0,
+     "why": "Don't be late = não atrase, chegue no horário."
+    },
+    {
+     "q": "\"The meeting is <strong>on time</strong>.\" On time means…",
+     "options": [
+      "at the right time",
+      "too early",
+      "too late",
+      "cancelled"
+     ],
+     "answer": 0,
+     "why": "On time = na hora certa."
+    },
+    {
+     "q": "\"Let's <strong>take a break</strong> at noon.\" To take a break means to…",
+     "options": [
+      "stop and rest",
+      "start a meeting",
+      "send an email",
+      "work faster"
+     ],
+     "answer": 0,
+     "why": "Take a break = fazer uma pausa, parar para descansar."
+    }
+   ]
+  }
+ ]
+}

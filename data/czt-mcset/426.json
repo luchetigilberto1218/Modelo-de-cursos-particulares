@@ -1,0 +1,259 @@
+{
+ "num": 426,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Most taxes start from a simple formula. You take a number, you multiply by a percentage, and you have the tax. If the rate is 20% and the amount is £1,000, the tax is £200.<br><br>What changes is which number you start from. For income tax, you start from salary minus deductions. For corporate tax, you start from profit. For VAT, you start from the price of what you sell.<br><br>The formula is always the same: base amount × rate = tax. Once you see this, the subject is not mysterious. The only question is which base and which rate.",
+   "items": [
+    {
+     "q": "What is the simple formula for tax?",
+     "options": [
+      "Base amount × rate = tax",
+      "Salary + profit = tax",
+      "Price − rate = tax",
+      "Tax × amount = rate"
+     ],
+     "answer": 0,
+     "why": "\"base amount × rate = tax\" — a fórmula básica da lição."
+    },
+    {
+     "q": "If the rate is 20% and the amount is £1,000, the tax is…",
+     "options": [
+      "£100",
+      "£200",
+      "£500",
+      "£1,000"
+     ],
+     "answer": 1,
+     "why": "20% de £1,000 = £200, o exemplo do texto."
+    },
+    {
+     "q": "For income tax, what number do you start from?",
+     "options": [
+      "Profit",
+      "The price of what you sell",
+      "Salary minus deductions",
+      "The tax rate"
+     ],
+     "answer": 2,
+     "why": "\"For income tax, you start from salary minus deductions.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "Tax is too hard to understand.",
+      "The formula is always the same.",
+      "Only the base and the rate change.",
+      "You multiply by a percentage."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que o assunto deixa de ser misterioso — o autor discorda que seja difícil demais."
+    },
+    {
+     "q": "The text suggests that the three taxes are different mainly because of…",
+     "options": [
+      "the formula they use",
+      "the number you start from",
+      "the country you are in",
+      "the day you pay them"
+     ],
+     "answer": 1,
+     "why": "Inferência: a fórmula é a mesma; muda \"which number you start from\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily explicando o cálculo para o novo assistente. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, let's do this together. Don't worry — it is easier than it looks. We will do three taxes, but the steps are always the same. Three steps. That's it.<br><br>Step one: find the base amount. Step two: find the rate. Step three: multiply. Base times rate equals the tax. That is the whole job.<br><br>Let's try VAT first. The price is two hundred pounds. The rate is twenty percent. So we multiply. Two hundred times zero point two is forty pounds. The VAT is forty pounds.<br><br>Now corporate tax. Here the base is not the price — it is the profit. The profit is one thousand pounds and the rate is ten percent. One thousand times zero point one is one hundred pounds.<br><br>See? Same three steps. Only the numbers change. When you know the base and the rate, the rest is just simple maths. Take your time, and always write the base down first.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many steps does Emily use?",
+     "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+     ],
+     "answer": 1,
+     "why": "\"Three steps. That's it.\""
+    },
+    {
+     "q": "What is step three?",
+     "options": [
+      "Find the base amount",
+      "Find the rate",
+      "Multiply base times rate",
+      "Write the answer"
+     ],
+     "answer": 2,
+     "why": "\"Step three: multiply. Base times rate equals the tax.\""
+    },
+    {
+     "q": "For the VAT example, how much is the tax?",
+     "options": [
+      "Twenty pounds",
+      "Forty pounds",
+      "Two hundred pounds",
+      "One hundred pounds"
+     ],
+     "answer": 1,
+     "why": "£200 × 20% = £40."
+    },
+    {
+     "q": "Why does Emily say \"only the numbers change\"?",
+     "options": [
+      "Because the steps stay the same for every tax",
+      "Because the rate is always twenty percent",
+      "Because VAT and corporate tax are the same tax",
+      "Because the base is always the price"
+     ],
+     "answer": 0,
+     "why": "Inferência: os três passos se repetem; só a base e a alíquota mudam."
+    },
+    {
+     "q": "How would you describe Emily's tone?",
+     "options": [
+      "Angry and impatient",
+      "Calm and encouraging",
+      "Bored and tired",
+      "Worried and unsure"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Don't worry… take your time\" — ela é calma e encorajadora."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We always use the same <strong>formula</strong>.\" A formula is…",
+     "options": [
+      "a fixed way to calculate something",
+      "a tax office",
+      "a type of report",
+      "a large number"
+     ],
+     "answer": 0,
+     "why": "Formula = fórmula: um jeito fixo de calcular."
+    },
+    {
+     "q": "Choose the correct word: \"To find the tax, you ___ the base by the rate.\"",
+     "options": [
+      "multiply",
+      "sell",
+      "start",
+      "write"
+     ],
+     "answer": 0,
+     "why": "To multiply = multiplicar: base × alíquota."
+    },
+    {
+     "q": "\"The <strong>rate</strong> is twenty percent.\" The rate is…",
+     "options": [
+      "the percentage you use",
+      "the total price",
+      "the profit",
+      "the deduction"
+     ],
+     "answer": 0,
+     "why": "Rate = alíquota, a porcentagem aplicada."
+    },
+    {
+     "q": "Choose the correct word: \"Your salary minus your ___ gives the base for income tax.\"",
+     "options": [
+      "deductions",
+      "formula",
+      "percentage",
+      "profit"
+     ],
+     "answer": 0,
+     "why": "Deduction = dedução: o que se subtrai do salário."
+    },
+    {
+     "q": "\"The <strong>base amount</strong> is the number you start from.\" It is…",
+     "options": [
+      "the number the tax is calculated on",
+      "the final tax",
+      "the tax office address",
+      "the payment date"
+     ],
+     "answer": 0,
+     "why": "Base amount = base de cálculo: o número de partida."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em conversas de trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the numbers.\" To sign off on means to…",
+     "options": [
+      "approve them",
+      "delete them",
+      "hide them",
+      "print them"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval final."
+    },
+    {
+     "q": "\"Let's <strong>work out</strong> the tax together.\" To work out means to…",
+     "options": [
+      "calculate it",
+      "forget it",
+      "send it",
+      "delay it"
+     ],
+     "answer": 0,
+     "why": "Work out = calcular, resolver."
+    },
+    {
+     "q": "\"Can you <strong>go over</strong> the steps again?\" To go over means to…",
+     "options": [
+      "review them",
+      "cancel them",
+      "pay them",
+      "count them"
+     ],
+     "answer": 0,
+     "why": "Go over = revisar, repassar."
+    },
+    {
+     "q": "\"The new rate will <strong>roll out</strong> next month.\" To roll out means to…",
+     "options": [
+      "start to be used",
+      "stop being used",
+      "be kept secret",
+      "be paid twice"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em uso, implementar."
+    },
+    {
+     "q": "\"Don't worry, I will <strong>walk you through</strong> it.\" To walk someone through means to…",
+     "options": [
+      "explain it step by step",
+      "do it without help",
+      "ignore the person",
+      "finish it quickly"
+     ],
+     "answer": 0,
+     "why": "Walk through = guiar passo a passo, exatamente o que Emily faz."
+    }
+   ]
+  }
+ ]
+}

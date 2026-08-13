@@ -1,0 +1,259 @@
+{
+ "num": 1013,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Small talk is the art of short, friendly conversations. You use it at the coffee machine, in the lift, or before a meeting. It is quick and easy.<br><br>Small talk breaks the ice. It helps you build bonds with your colleagues. You do not need long sentences. A few simple phrases are enough.<br><br>Today you learn 5 easy phrases. You can ask \"How was your weekend?\" or say \"Nice weather today!\" Step by step, you can do it. Remember: English comes in CAN's, not in CAN'Ts.",
+   "items": [
+    {
+     "q": "What is small talk?",
+     "options": [
+      "A long, formal meeting",
+      "Short, friendly conversations",
+      "A written report",
+      "A big presentation"
+     ],
+     "answer": 1,
+     "why": "\"Small talk is the art of short, friendly conversations.\""
+    },
+    {
+     "q": "Where do you use small talk?",
+     "options": [
+      "Only at home",
+      "At the coffee machine, in the lift, or before a meeting",
+      "Only in emails",
+      "Only on the phone"
+     ],
+     "answer": 1,
+     "why": "\"You use it at the coffee machine, in the lift, or before a meeting.\""
+    },
+    {
+     "q": "What does small talk help you do?",
+     "options": [
+      "Build bonds with your colleagues",
+      "Finish your work faster",
+      "Write better reports",
+      "Save money"
+     ],
+     "answer": 0,
+     "why": "\"It helps you build bonds with your colleagues.\""
+    },
+    {
+     "q": "The text suggests that small talk is…",
+     "options": [
+      "very difficult and only for experts",
+      "easy, because you only need a few simple phrases",
+      "a waste of time at work",
+      "only for managers"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"You do not need long sentences. A few simple phrases are enough.\" — logo, é fácil."
+    },
+    {
+     "q": "The author would most likely DISAGREE with…",
+     "options": [
+      "\"A short chat can help you connect with people.\"",
+      "\"You need perfect English to make small talk.\"",
+      "\"Simple phrases are useful at work.\"",
+      "\"Small talk is friendly.\""
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz \"English comes in CAN's\" e que frases simples bastam — não é preciso inglês perfeito."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie na máquina de café. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Oh, hi Tom! Good morning. Do you want a coffee? The machine is free now.<br><br>How was your weekend? Mine was very nice. I stayed at home and I read a book. The weather was good, so I walked in the park with my dog. And you? Did you do anything fun?<br><br>It is a busy day today, isn't it? I have three meetings this morning. But I need my coffee first! I am always slow before my coffee.<br><br>Nice weather today, look — the sun is out. Maybe we can have lunch outside later. Let's chat again at lunch, okay?<br><br>Oh, my coffee is ready. I have to go now. It was nice to talk to you, Tom. Have a good day! See you at the coffee machine tomorrow.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What did Sophie do on the weekend?",
+     "options": [
+      "She worked at the office",
+      "She stayed home, read a book, and walked in the park",
+      "She went to three meetings",
+      "She travelled to another city"
+     ],
+     "answer": 1,
+     "why": "\"I stayed at home and I read a book… I walked in the park with my dog.\""
+    },
+    {
+     "q": "How many meetings does Sophie have this morning?",
+     "options": [
+      "One",
+      "Two",
+      "Three",
+      "Five"
+     ],
+     "answer": 2,
+     "why": "\"I have three meetings this morning.\""
+    },
+    {
+     "q": "What does Sophie want to do at lunch?",
+     "options": [
+      "Have lunch outside and chat again",
+      "Go home early",
+      "Cancel her meetings",
+      "Clean the coffee machine"
+     ],
+     "answer": 0,
+     "why": "\"Maybe we can have lunch outside later. Let's chat again at lunch.\""
+    },
+    {
+     "q": "\"I am always slow before my coffee.\" This suggests that Sophie…",
+     "options": [
+      "does not like coffee",
+      "feels more awake after her coffee",
+      "never drinks coffee at work",
+      "is late for work"
+     ],
+     "answer": 1,
+     "why": "Inferência: se ela é lenta antes do café, o café a deixa mais desperta depois."
+    },
+    {
+     "q": "How would you describe Sophie's tone?",
+     "options": [
+      "Angry and tired",
+      "Friendly and relaxed",
+      "Bored and quiet",
+      "Nervous and worried"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela cumprimenta, oferece café e faz planos — um tom amigável e leve."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"How was your <strong>weekend</strong>?\" A <strong>weekend</strong> is…",
+     "options": [
+      "Saturday and Sunday",
+      "Monday morning",
+      "a long meeting",
+      "the end of the year"
+     ],
+     "answer": 0,
+     "why": "Weekend = fim de semana (sábado e domingo)."
+    },
+    {
+     "q": "Choose the correct word: \"I have many meetings today. I am very ___.\"",
+     "options": [
+      "busy",
+      "coffee",
+      "weekend",
+      "weather"
+     ],
+     "answer": 0,
+     "why": "Busy = ocupado; combina com \"many meetings today\"."
+    },
+    {
+     "q": "Choose the correct word: \"The sun is out and it is warm. The ___ is nice today.\"",
+     "options": [
+      "weather",
+      "chat",
+      "coffee",
+      "weekend"
+     ],
+     "answer": 0,
+     "why": "Weather = clima; sol e calor descrevem o clima."
+    },
+    {
+     "q": "\"Do you want a <strong>coffee</strong>?\" A <strong>coffee</strong> is…",
+     "options": [
+      "a hot drink",
+      "a small meeting",
+      "a free day",
+      "a phone call"
+     ],
+     "answer": 0,
+     "why": "Coffee = café, uma bebida quente."
+    },
+    {
+     "q": "Choose the correct word: \"Let's have a quick ___ at the coffee machine.\"",
+     "options": [
+      "chat",
+      "busy",
+      "weather",
+      "weekend"
+     ],
+     "answer": 0,
+     "why": "Chat = bate-papo, uma conversa curta e informal."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões úteis para conversas curtas no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"A friendly hello can <strong>break the ice</strong>.\" To break the ice means to…",
+     "options": [
+      "start a friendly conversation",
+      "end a meeting",
+      "make people angry",
+      "leave the room"
+     ],
+     "answer": 0,
+     "why": "Break the ice = quebrar o gelo, começar uma conversa e deixar as pessoas à vontade."
+    },
+    {
+     "q": "\"How are things? — <strong>Not bad</strong>, thanks.\" \"Not bad\" means…",
+     "options": [
+      "quite good",
+      "very sad",
+      "very busy",
+      "goodbye"
+     ],
+     "answer": 0,
+     "why": "\"Not bad\" = tudo bem / razoavelmente bom; é uma resposta positiva e comum."
+    },
+    {
+     "q": "\"<strong>Fancy a coffee?</strong>\" This means…",
+     "options": [
+      "Would you like a coffee?",
+      "Where is the coffee?",
+      "The coffee is expensive.",
+      "I don't drink coffee."
+     ],
+     "answer": 0,
+     "why": "\"Fancy a…?\" = Você quer/topa um…? É um convite informal."
+    },
+    {
+     "q": "\"I'm busy now. Let's <strong>catch up</strong> later.\" To catch up means to…",
+     "options": [
+      "talk and share news later",
+      "run very fast",
+      "finish all the work",
+      "go home now"
+     ],
+     "answer": 0,
+     "why": "Catch up = colocar o papo em dia, conversar e trocar novidades depois."
+    },
+    {
+     "q": "\"<strong>Have a good weekend!</strong>\" You say this…",
+     "options": [
+      "on Friday, before the weekend",
+      "on Monday morning",
+      "in the middle of a meeting",
+      "when you are angry"
+     ],
+     "answer": 0,
+     "why": "\"Have a good weekend!\" = Bom fim de semana! — dito na sexta, antes do fim de semana."
+    }
+   ]
+  }
+ ]
+}

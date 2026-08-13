@@ -1,0 +1,259 @@
+{
+ "num": 488,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Every company has data. Emails, documents, customer records and financial entries are all data. This data has to be stored in a safe place. It also has to be backed up. A backup is a second copy of the data, kept in a different place.<br><br>Why does the backup matter? A laptop can be dropped in a puddle. A server can die. A ransomware attack can lock the files. When this happens, the backup lets the company keep going.<br><br>There is an old rule: data that has not been backed up does not really exist. You only discover this the moment the original is gone.",
+   "items": [
+    {
+     "q": "What is a backup?",
+     "options": [
+      "A second copy of the data, kept in a different place",
+      "The only copy of the data",
+      "A list of all the emails",
+      "A safe in the office"
+     ],
+     "answer": 0,
+     "why": "\"A backup is a second copy of the data, kept in a different place.\""
+    },
+    {
+     "q": "Which of these is an example of data?",
+     "options": [
+      "The office building",
+      "Customer records",
+      "A laptop screen",
+      "A puddle"
+     ],
+     "answer": 1,
+     "why": "O texto lista emails, documentos, customer records e financial entries como data."
+    },
+    {
+     "q": "According to the text, why is a backup important?",
+     "options": [
+      "It makes the laptop faster",
+      "It lets the company keep going when something goes wrong",
+      "It saves money on servers",
+      "It stops emails from arriving"
+     ],
+     "answer": 1,
+     "why": "\"the backup lets the company keep going\" quando o laptop cai, o servidor morre ou o ransomware bloqueia os arquivos."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "one copy of the data is enough",
+      "a company should not worry about backups",
+      "you should back up data before something goes wrong",
+      "backups are only needed for emails"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"data that has not been backed up does not really exist\" — a mensagem é fazer o backup antes de perder o original."
+    },
+    {
+     "q": "The line \"You only discover this the moment the original is gone\" suggests that…",
+     "options": [
+      "people often forget to back up until it is too late",
+      "the original is always safe",
+      "backups happen automatically",
+      "data is never really lost"
+     ],
+     "answer": 0,
+     "why": "Inferência: você percebe a falta do backup só quando já perdeu o original — por isso não pode esperar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily explicando para o novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team. Let me show you how we keep our files safe here.<br><br>The most important thing is this: we never keep only one copy. For our critical files, we keep two separate backups. Two copies, in two different places.<br><br>Why two places? Imagine a fire or a flood in this office. If both copies are here, we lose everything. So one backup stays here, and the other one is far away, in another city.<br><br>And we do this every single night. When you go home, the system copies the files by itself. Every morning, the backup is fresh and ready.<br><br>You will hear people talk about the three-two-one rule. It is simple. Three copies of your data. Two different types of storage. One copy off-site, far from the office.<br><br>Please remember one thing. If you save an important file only on your laptop, it is not safe. Save it in the shared drive, so the backup can copy it too. A file that is not backed up can be gone in one second.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many backups does the company keep for critical files?",
+     "options": [
+      "One",
+      "Two",
+      "Three",
+      "None"
+     ],
+     "answer": 1,
+     "why": "\"we keep two separate backups. Two copies, in two different places.\""
+    },
+    {
+     "q": "Why does the company keep the copies in two different places?",
+     "options": [
+      "To make the files load faster",
+      "So a fire or flood in one place does not destroy everything",
+      "Because the office is too small",
+      "To save money"
+     ],
+     "answer": 1,
+     "why": "\"Imagine a fire or a flood… If both copies are here, we lose everything. So one backup stays here, and the other one is far away.\""
+    },
+    {
+     "q": "When are the files copied?",
+     "options": [
+      "Once a week",
+      "Every single night",
+      "Only when someone asks",
+      "Once a month"
+     ],
+     "answer": 1,
+     "why": "\"we do this every single night… the system copies the files by itself.\""
+    },
+    {
+     "q": "Why does Emily say NOT to save an important file only on your laptop?",
+     "options": [
+      "Because laptops are slow",
+      "Because a file only on the laptop is not backed up and can be lost",
+      "Because the laptop has no space",
+      "Because the file must be printed"
+     ],
+     "answer": 1,
+     "why": "Inferência: só no laptop o backup não copia o arquivo, então ele pode sumir. Por isso ela pede para salvar no shared drive."
+    },
+    {
+     "q": "What is the main message of Emily's explanation?",
+     "options": [
+      "Always keep more than one copy, in more than one place",
+      "The office should buy new laptops",
+      "Emails are the most important data",
+      "The new joiner should work at night"
+     ],
+     "answer": 0,
+     "why": "Inferência: toda a fala gira em torno de nunca ter uma cópia só e guardar em lugares diferentes (regra 3-2-1)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We <strong>store</strong> all the invoices in the cloud.\" To store means to…",
+     "options": [
+      "delete",
+      "keep in a place",
+      "print",
+      "send by email"
+     ],
+     "answer": 1,
+     "why": "To store = armazenar, guardar em um lugar."
+    },
+    {
+     "q": "Choose the correct word: \"The company runs a ___ every night, so there is always a second copy of the files.\"",
+     "options": [
+      "backup",
+      "puddle",
+      "meeting",
+      "laptop"
+     ],
+     "answer": 0,
+     "why": "Backup = cópia de segurança, feita para ter uma segunda cópia dos arquivos."
+    },
+    {
+     "q": "\"The files are on the <strong>server</strong> in the data centre.\" A server is…",
+     "options": [
+      "a person who serves coffee",
+      "a computer that stores and shares data",
+      "a type of email",
+      "a small puddle"
+     ],
+     "answer": 1,
+     "why": "Server = servidor, um computador que armazena e compartilha dados."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ attack can ___ your files, so you cannot open them.\"",
+     "options": [
+      "ransomware / lock",
+      "backup / store",
+      "server / copy",
+      "puddle / exist"
+     ],
+     "answer": 0,
+     "why": "Ransomware = tipo de ataque que bloqueia (lock) os arquivos até um resgate ser pago."
+    },
+    {
+     "q": "\"Please make a <strong>copy</strong> of this document.\" A copy is…",
+     "options": [
+      "the original file only",
+      "another version that is the same as the first",
+      "an empty page",
+      "a deleted file"
+     ],
+     "answer": 1,
+     "why": "Copy = cópia, outra versão igual ao original."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem quando se fala de dados e sistemas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>back up</strong> your files before you go home.\" To back up means to…",
+     "options": [
+      "delete the files",
+      "make a safe copy of the files",
+      "open the files",
+      "send the files to a client"
+     ],
+     "answer": 1,
+     "why": "To back up = fazer uma cópia de segurança dos arquivos."
+    },
+    {
+     "q": "\"The IT team will <strong>roll out</strong> the new backup system next week.\" To roll out means to…",
+     "options": [
+      "stop using it",
+      "start using it, step by step",
+      "hide it from staff",
+      "sell it"
+     ],
+     "answer": 1,
+     "why": "Roll out = colocar em uso, implementar aos poucos."
+    },
+    {
+     "q": "\"After we lost the file, we had to <strong>restore</strong> it from the backup.\" To restore means to…",
+     "options": [
+      "throw it away",
+      "bring it back from the copy",
+      "print it",
+      "lock it"
+     ],
+     "answer": 1,
+     "why": "To restore = restaurar, trazer o arquivo de volta a partir da cópia."
+    },
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new data policy.\" To sign off on means to…",
+     "options": [
+      "read it quickly",
+      "formally approve it",
+      "delete it",
+      "translate it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"If the server dies, the backup can help us <strong>keep going</strong>.\" To keep going means to…",
+     "options": [
+      "stop working",
+      "continue working",
+      "buy a new office",
+      "call the police"
+     ],
+     "answer": 1,
+     "why": "Keep going = seguir em frente, continuar funcionando."
+    }
+   ]
+  }
+ ]
+}

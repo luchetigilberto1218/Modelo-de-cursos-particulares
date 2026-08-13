@@ -1,0 +1,259 @@
+{
+ "num": 1025,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Look around you. The office already speaks English! The Czarnikow office is full of useful words: meeting rooms, chairs, tables, windows and doors.<br><br>Today we describe the office. We use there is for one thing. We use there are for more than one thing. For example: there is a window near my desk, and there are five chairs at the table.<br><br>Take your time. Every sentence counts. Today we learn five useful words and we practise a lot.",
+   "items": [
+    {
+     "q": "What is the office full of?",
+     "options": [
+      "Useful words",
+      "Old computers",
+      "Empty boxes",
+      "Coffee cups"
+     ],
+     "answer": 0,
+     "why": "\"The Czarnikow office is full of useful words.\""
+    },
+    {
+     "q": "We use \"there is\" for…",
+     "options": [
+      "one thing",
+      "more than one thing",
+      "no things",
+      "people only"
+     ],
+     "answer": 0,
+     "why": "\"We use there is for one thing.\""
+    },
+    {
+     "q": "How many chairs are there at the table in the example?",
+     "options": [
+      "Two",
+      "Three",
+      "Five",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"there are five chairs at the table.\""
+    },
+    {
+     "q": "The text says \"take your time.\" This suggests that the author wants you to…",
+     "options": [
+      "go slowly and not worry",
+      "finish very fast",
+      "skip the practice",
+      "study only one word"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"take your time\" e \"every sentence counts\" mostram um tom calmo e paciente."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "English is all around us at work",
+      "the office has nothing to learn from",
+      "we must leave the office to learn English",
+      "words in the office are not useful"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz \"the office already speaks English\" e está cheio de palavras úteis."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver mostrando o escritório. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! I am Oliver. Welcome to our office. Come with me. I will show you the room.<br><br>Look. There is a big table in the middle. There are eight chairs around the table. This is our meeting room. There is a window here, and the window is very big. There is a lot of light in the morning.<br><br>Now look at the wall. There is a clock on the wall. There is a small door next to the clock. That door goes to the kitchen. In the kitchen there is a coffee machine. I like coffee very much!<br><br>There are three computers on my desk. My desk is near the window. There are many traders in this office. Today there are ten people in the team, but two people are at home.<br><br>Take your time. Look around. There is a lot of English here. See you soon!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many chairs are there around the table?",
+     "options": [
+      "Five",
+      "Six",
+      "Eight",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"There are eight chairs around the table.\""
+    },
+    {
+     "q": "Where is the clock?",
+     "options": [
+      "On the table",
+      "On the wall",
+      "In the kitchen",
+      "Near the door only"
+     ],
+     "answer": 1,
+     "why": "\"There is a clock on the wall.\""
+    },
+    {
+     "q": "What is in the kitchen?",
+     "options": [
+      "A coffee machine",
+      "Three computers",
+      "Eight chairs",
+      "A big clock"
+     ],
+     "answer": 0,
+     "why": "\"In the kitchen there is a coffee machine.\""
+    },
+    {
+     "q": "The team has ten people, but only eight are there today. This suggests that…",
+     "options": [
+      "two people are working from home",
+      "the office is closed",
+      "nobody came today",
+      "there are no traders"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"two people are at home\", então dez menos dois dá oito presentes."
+    },
+    {
+     "q": "How does Oliver feel about the office?",
+     "options": [
+      "He is proud and happy to show it",
+      "He is bored and tired",
+      "He does not like the office",
+      "He wants to leave quickly"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele diz \"Welcome\", \"Come with me\" e \"I like coffee very much\" — tom simpático e positivo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Please close the <strong>door</strong> when you leave.\" A <strong>door</strong> is…",
+     "options": [
+      "porta",
+      "janela",
+      "mesa",
+      "cadeira"
+     ],
+     "answer": 0,
+     "why": "Door = porta."
+    },
+    {
+     "q": "\"I sit on this <strong>chair</strong> every day.\" A <strong>chair</strong> is…",
+     "options": [
+      "cadeira",
+      "sala",
+      "janela",
+      "porta"
+     ],
+     "answer": 0,
+     "why": "Chair = cadeira."
+    },
+    {
+     "q": "Choose the correct word: \"There is a big ___ near my desk, so I can see the street.\"",
+     "options": [
+      "window",
+      "table",
+      "door",
+      "chair"
+     ],
+     "answer": 0,
+     "why": "Window = janela, por onde você vê a rua."
+    },
+    {
+     "q": "Choose the correct word: \"There are five chairs at the ___ in the meeting room.\"",
+     "options": [
+      "table",
+      "window",
+      "door",
+      "clock"
+     ],
+     "answer": 0,
+     "why": "Table = mesa: as cadeiras ficam ao redor da mesa."
+    },
+    {
+     "q": "\"We have a meeting in <strong>room</strong> 3.\" A <strong>room</strong> is…",
+     "options": [
+      "sala",
+      "mesa",
+      "cadeira",
+      "porta"
+     ],
+     "answer": 0,
+     "why": "Room = sala."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e verbos simples do dia a dia no escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Come in and <strong>sit down</strong>, please.\" To sit down means to…",
+     "options": [
+      "take a seat",
+      "stand up",
+      "go out",
+      "open the door"
+     ],
+     "answer": 0,
+     "why": "Sit down = sentar-se."
+    },
+    {
+     "q": "\"Please <strong>have a seat</strong>, the meeting starts now.\" This means…",
+     "options": [
+      "sit down",
+      "leave the room",
+      "close the window",
+      "turn off the light"
+     ],
+     "answer": 0,
+     "why": "Have a seat = sente-se (forma educada)."
+    },
+    {
+     "q": "\"Can you <strong>turn on</strong> the light? The room is dark.\" To turn on means to…",
+     "options": [
+      "make it work / start it",
+      "stop it",
+      "clean it",
+      "move it"
+     ],
+     "answer": 0,
+     "why": "Turn on = ligar (a luz, a máquina)."
+    },
+    {
+     "q": "\"<strong>Come in</strong>, the door is open!\" To come in means to…",
+     "options": [
+      "enter the room",
+      "go home",
+      "sit down",
+      "wait outside"
+     ],
+     "answer": 0,
+     "why": "Come in = entrar."
+    },
+    {
+     "q": "\"Let's <strong>take a break</strong> and get some coffee.\" To take a break means to…",
+     "options": [
+      "stop work for a short time",
+      "start a meeting",
+      "go home now",
+      "work faster"
+     ],
+     "answer": 0,
+     "why": "Take a break = fazer uma pausa."
+    }
+   ]
+  }
+ ]
+}

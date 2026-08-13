@@ -1,0 +1,259 @@
+{
+ "num": 485,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Cloud computing means using computer power and storage that belong to someone else. You reach it through the internet.<br><br>You do not buy a server and keep it in your building. You rent a small piece of a big data centre far away. The three big providers are AWS from Amazon, Azure from Microsoft and Google Cloud.<br><br>The good thing is flexibility. You pay only for what you use. You can scale up or down fast. You do not manage the hardware yourself. The bad thing is that you depend on the provider — and on a good internet connection.",
+   "items": [
+    {
+     "q": "What is cloud computing?",
+     "options": [
+      "Using computer power and storage that belong to someone else",
+      "Building a new office",
+      "Buying a new phone",
+      "Writing code on paper"
+     ],
+     "answer": 0,
+     "why": "\"Cloud computing means using computer power and storage that belong to someone else.\""
+    },
+    {
+     "q": "How do you reach the cloud?",
+     "options": [
+      "By phone call",
+      "Through the internet",
+      "By post",
+      "In person"
+     ],
+     "answer": 1,
+     "why": "\"You reach it through the internet.\""
+    },
+    {
+     "q": "Who are the three big providers?",
+     "options": [
+      "Apple, Sony and Dell",
+      "AWS, Azure and Google Cloud",
+      "IBM, Intel and Cisco",
+      "Meta, Oracle and SAP"
+     ],
+     "answer": 1,
+     "why": "\"The three big providers are AWS from Amazon, Azure from Microsoft and Google Cloud.\""
+    },
+    {
+     "q": "The text suggests that a company that uses the cloud does NOT need to…",
+     "options": [
+      "pay any money",
+      "have an internet connection",
+      "buy and keep its own server",
+      "have any staff"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"You do not buy a server and keep it in your building\" — a empresa rents em vez de comprar."
+    },
+    {
+     "q": "Why can the cloud be a risk?",
+     "options": [
+      "You depend on the provider and on a good internet connection",
+      "It is always very slow",
+      "It has no storage",
+      "It cannot scale"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"you depend on the provider — and on a good internet connection\" é o custo/risco citado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry falando com um novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team. Let me tell you a bit about how we work here.<br><br>Three years ago, we had our own servers in a small room on this floor. They were noisy and hot. When we needed more power, we had to buy a new machine and wait weeks for it. It was slow and it cost a lot of money.<br><br>So we changed. Now we use AWS. All our systems run in a big data centre far away, and we reach them through the internet. We do not touch the hardware at all.<br><br>The best part is that we pay only for what we use. On a quiet week, the bill is small. When we are busy, we scale up in minutes, and then we scale back down. There is no old room, no noise, no waiting for new machines.<br><br>One thing to remember: the internet has to work. If the connection goes down, we cannot reach our systems. But that is rare here, so do not worry too much. Any questions?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where did the company keep its servers three years ago?",
+     "options": [
+      "In a big data centre far away",
+      "In a small room on this floor",
+      "At another company",
+      "In Harry's home"
+     ],
+     "answer": 1,
+     "why": "\"we had our own servers in a small room on this floor.\""
+    },
+    {
+     "q": "What does the company use now?",
+     "options": [
+      "Its own new servers",
+      "AWS",
+      "Only laptops",
+      "Paper files"
+     ],
+     "answer": 1,
+     "why": "\"Now we use AWS.\""
+    },
+    {
+     "q": "What does Harry say is the best part of the cloud?",
+     "options": [
+      "They pay only for what they use",
+      "It is free",
+      "It never needs the internet",
+      "The room is quiet"
+     ],
+     "answer": 0,
+     "why": "\"The best part is that we pay only for what we use.\""
+    },
+    {
+     "q": "Harry suggests that the OLD servers were a problem mainly because they were…",
+     "options": [
+      "too new",
+      "slow and expensive",
+      "too small to see",
+      "very easy to use"
+     ],
+     "answer": 1,
+     "why": "Inferência: máquinas barulhentas, quentes, com espera de semanas e caras — \"slow and it cost a lot of money\"."
+    },
+    {
+     "q": "Why does Harry mention the internet connection?",
+     "options": [
+      "Because it makes the servers hot",
+      "Because without it they cannot reach their systems",
+      "Because it is very cheap",
+      "Because AWS gives free internet"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"If the connection goes down, we cannot reach our systems\" — a dependência da internet."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We use <strong>cloud computing</strong> for all our systems now.\" Cloud computing means…",
+     "options": [
+      "using computers and storage over the internet",
+      "a weather app",
+      "a type of laptop",
+      "a paper report"
+     ],
+     "answer": 0,
+     "why": "Cloud computing = computação em nuvem: usar computador e armazenamento pela internet."
+    },
+    {
+     "q": "Choose the correct word: \"We keep all our files in cloud ___ , not on our own machines.\"",
+     "options": [
+      "storage",
+      "coffee",
+      "meeting",
+      "office"
+     ],
+     "answer": 0,
+     "why": "Storage = armazenamento: onde os arquivos ficam guardados."
+    },
+    {
+     "q": "\"We do not buy a server. We <strong>rent</strong> a piece of a data centre.\" To rent means to…",
+     "options": [
+      "pay to use something for a time",
+      "own something forever",
+      "sell something",
+      "break something"
+     ],
+     "answer": 0,
+     "why": "To rent = alugar: pagar para usar por um tempo, sem comprar."
+    },
+    {
+     "q": "Choose the correct word: \"When we are busy, we can ___ up in minutes and add more power.\"",
+     "options": [
+      "scale",
+      "close",
+      "sleep",
+      "walk"
+     ],
+     "answer": 0,
+     "why": "To scale = escalar: aumentar (ou reduzir) a capacidade conforme a necessidade."
+    },
+    {
+     "q": "\"AWS is our cloud <strong>provider</strong>.\" A provider is…",
+     "options": [
+      "a company that gives you a service",
+      "a new employee",
+      "a broken machine",
+      "an old room"
+     ],
+     "answer": 0,
+     "why": "Provider = provedor: a empresa que fornece o serviço (aqui, a nuvem)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de negócios que aparecem quando falamos de nuvem e sistemas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We will <strong>roll out</strong> the new system next month.\" To roll out means to…",
+     "options": [
+      "start using it, step by step",
+      "delete it",
+      "hide it",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar/implementar aos poucos."
+    },
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new cloud plan.\" To sign off on means to…",
+     "options": [
+      "approve it",
+      "cancel it",
+      "read it fast",
+      "print it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval final."
+    },
+    {
+     "q": "\"We can <strong>scale up</strong> when we need more power.\" To scale up means to…",
+     "options": [
+      "make it bigger",
+      "turn it off",
+      "make it slower",
+      "move the office"
+     ],
+     "answer": 0,
+     "why": "Scale up = aumentar a capacidade."
+    },
+    {
+     "q": "\"When work is quiet, we <strong>scale down</strong>.\" To scale down means to…",
+     "options": [
+      "make it smaller",
+      "buy a new server",
+      "call a client",
+      "close the company"
+     ],
+     "answer": 0,
+     "why": "Scale down = reduzir a capacidade (e o custo)."
+    },
+    {
+     "q": "\"If the internet goes down, our systems <strong>go down</strong> too.\" To go down means to…",
+     "options": [
+      "stop working",
+      "become cheaper",
+      "get faster",
+      "grow bigger"
+     ],
+     "answer": 0,
+     "why": "Go down = cair, parar de funcionar (sistema/serviço fora do ar)."
+    }
+   ]
+  }
+ ]
+}
