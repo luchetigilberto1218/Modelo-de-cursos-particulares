@@ -10,41 +10,41 @@
     {
      "q": "According to the text, what is 'price'?",
      "options": [
-      "How much you pay for one thing",
       "All the numbers together",
+      "How much you pay for one thing",
       "A gift for clients",
       "The money the company spends"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The price is how much you pay for one thing.\""
     },
     {
      "q": "What is the 'total'?",
      "options": [
-      "The money for one chair",
       "All the numbers together",
       "A big client",
-      "A smaller price"
+      "A smaller price",
+      "The money for one chair"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The total is all the numbers together.\""
     },
     {
      "q": "A discount makes the price…",
      "options": [
-      "bigger",
-      "gone",
       "the same",
-      "smaller"
+      "smaller",
+      "bigger",
+      "gone"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"A discount makes the price smaller.\""
     },
     {
      "q": "The text says a discount is 'good news for clients'. This suggests that clients…",
      "options": [
-      "do not care about money",
       "want a bigger price",
+      "do not care about money",
       "never buy anything",
       "like to pay less"
      ],
@@ -55,11 +55,11 @@
      "q": "The author would most likely AGREE that…",
      "options": [
       "numbers are not useful at work",
-      "only managers use numbers",
+      "simple number words help you talk about money",
       "prices are always secret",
-      "simple number words help you talk about money"
+      "only managers use numbers"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: o texto diz que essas palavras ajudam você a falar de dinheiro com confiança."
     }
    ]
@@ -78,11 +78,11 @@
      "q": "How many pages does the report have?",
      "options": [
       "Twenty",
-      "Fifteen",
       "Fifty",
-      "One hundred"
+      "One hundred",
+      "Fifteen"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"It has fifty pages.\""
     },
     {
@@ -90,8 +90,8 @@
      "options": [
       "Ten dollars",
       "Twenty dollars",
-      "Two hundred dollars",
-      "Fifty dollars"
+      "Fifty dollars",
+      "Two hundred dollars"
      ],
      "answer": 0,
      "why": "\"This bag of sugar has a price of ten dollars.\""
@@ -100,33 +100,33 @@
      "q": "What is the discount today?",
      "options": [
       "Ten percent",
+      "Twenty percent",
       "Fifty percent",
-      "Fifteen percent",
-      "Twenty percent"
+      "Fifteen percent"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Today the discount is fifteen percent.\""
     },
     {
      "q": "Sophie says the cost for the company is low. This suggests that…",
      "options": [
-      "the company loses money",
       "there are no clients",
-      "the sugar is very expensive",
-      "the price is a good deal for the company"
+      "the company loses money",
+      "the price is a good deal for the company",
+      "the sugar is very expensive"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: custo baixo e preço de dez dólares é um bom negócio para a empresa."
     },
     {
      "q": "How would you best describe Sophie?",
      "options": [
-      "Angry and in a hurry",
       "Kind and patient with a new colleague",
+      "Bored and quiet",
       "Worried about the numbers",
-      "Bored and quiet"
+      "Angry and in a hurry"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ela dá boas-vindas, fala devagar e diz 'você consegue' — é gentil e paciente."
     }
    ]
@@ -150,45 +150,45 @@
     {
      "q": "\"The <strong>cost</strong> is low, so the company is happy.\" Cost is…",
      "options": [
-      "the money the company spends",
-      "a free gift",
       "a small chair",
-      "the total pages"
+      "the total pages",
+      "the money the company spends",
+      "a free gift"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Cost = custo: o dinheiro que a empresa gasta."
     },
     {
      "q": "Choose the correct word: \"Add all the numbers and give me the ___.\"",
      "options": [
-      "page",
-      "total",
       "chair",
-      "client"
+      "page",
+      "client",
+      "total"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Total = total: todos os números somados."
     },
     {
      "q": "Choose the correct word: \"The client buys a lot, so we give a ___ of ten percent.\"",
      "options": [
       "page",
-      "week",
       "discount",
-      "number"
+      "number",
+      "week"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Discount = desconto: preço menor para o cliente."
     },
     {
      "q": "\"My phone <strong>number</strong> is easy to remember.\" A number is…",
      "options": [
-      "a figure like 5, 10 or 20",
       "a big client",
-      "a report",
-      "a small price"
+      "a figure like 5, 10 or 20",
+      "a small price",
+      "a report"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Number = número: uma cifra como 5, 10 ou 20."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"How much does this <strong>cost</strong>?\" You are asking about…",
      "options": [
-      "the time",
       "the weather",
+      "the price",
       "the client's name",
-      "the price"
+      "the time"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "'How much does this cost?' = Quanto custa isto? — você pergunta o preço."
     },
     {
      "q": "\"Can I get a <strong>discount</strong>?\" You are asking for…",
      "options": [
-      "a new client",
       "a longer day",
       "a lower price",
-      "more pages"
+      "more pages",
+      "a new client"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "'Can I get a discount?' = Posso ter um desconto? — você pede um preço menor."
     },
     {
      "q": "\"That is a good <strong>deal</strong>.\" A good deal means…",
      "options": [
-      "a good price for what you get",
       "an empty report",
       "a very long meeting",
-      "a bad number"
+      "a bad number",
+      "a good price for what you get"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "'Good deal' = bom negócio: você paga um bom preço pelo que recebe."
     },
     {
      "q": "\"Let me <strong>add up</strong> the numbers.\" To add up means to…",
      "options": [
-      "put the numbers together to find the total",
       "make the price bigger",
-      "call a client",
-      "read one page"
+      "read one page",
+      "put the numbers together to find the total",
+      "call a client"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "'Add up' = somar: juntar os números para achar o total."
     },
     {
      "q": "\"Sugar is not cheap this month; it is quite <strong>expensive</strong>.\" Expensive means…",
      "options": [
-      "it costs a lot of money",
       "it is free",
+      "it is on page fifty",
       "it is very small",
-      "it is on page fifty"
+      "it costs a lot of money"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "'Expensive' = caro: custa muito dinheiro (o contrário de cheap)."
     }
    ]

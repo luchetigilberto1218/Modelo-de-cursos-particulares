@@ -10,10 +10,10 @@
     {
      "q": "How many main types of accounts does accounting use?",
      "options": [
-      "Three",
+      "Six",
       "Five",
       "Four",
-      "Six"
+      "Three"
      ],
      "answer": 1,
      "why": "\"Accounting uses five main types of accounts.\""
@@ -22,20 +22,20 @@
      "q": "What are assets?",
      "options": [
       "Money going out",
-      "The owners' salaries",
       "What the company owns",
+      "The owners' salaries",
       "What the company owes"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Assets are what the company owns — cash, inventory, buildings, and equipment.\""
     },
     {
      "q": "Which of these is an expense?",
      "options": [
+      "A loan",
       "A building",
-      "Cash",
       "Rent",
-      "A loan"
+      "Cash"
      ],
      "answer": 2,
      "why": "\"Expenses are money going out for rent, salaries, and supplies.\""
@@ -56,8 +56,8 @@
      "options": [
       "a skill only new accountants use",
       "a basic and lasting skill",
-      "not really needed",
-      "harder than all other skills"
+      "harder than all other skills",
+      "not really needed"
      ],
      "answer": 1,
      "why": "Inferência: é \"the first skill every accountant learns\" e \"never stops mattering\" — básica e sempre útil."
@@ -78,20 +78,20 @@
      "q": "What type of account is the office rent?",
      "options": [
       "An asset",
-      "An expense",
       "Equity",
-      "Revenue"
+      "Revenue",
+      "An expense"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Rent is money going out, so that is an expense.\""
     },
     {
      "q": "The money from the client who paid for sugar is…",
      "options": [
       "revenue",
+      "an expense",
       "a liability",
-      "an asset",
-      "an expense"
+      "an asset"
      ],
      "answer": 0,
      "why": "\"Money coming in from a sale — that is revenue.\""
@@ -99,34 +99,34 @@
     {
      "q": "Why is the new computer an asset and not an expense?",
      "options": [
-      "Because it will be sold",
-      "Because it was cheap",
       "Because the company owns it",
-      "Because it was paid in cash"
+      "Because it was paid in cash",
+      "Because it was cheap",
+      "Because it will be sold"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"We own it now, so it is an asset. Equipment is always an asset.\""
     },
     {
      "q": "Harry says people often mix up equipment. This suggests that…",
      "options": [
       "equipment is never bought",
-      "equipment costs too much",
+      "it is a common mistake to call equipment an expense",
       "computers are not assets",
-      "it is a common mistake to call equipment an expense"
+      "equipment costs too much"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: ele avisa \"Careful with that one — people mix it up\", ou seja, é erro comum."
     },
     {
      "q": "What is Harry's main advice when you are not sure?",
      "options": [
+      "Wait until the next day",
       "Ask: own it, owe it, earn it, or spend it?",
       "Ask a manager every time",
-      "Wait until the next day",
       "Copy the last transaction"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"When you are not sure, ask that question first\" — a regra dos quatro verbos."
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"The company owns two buildings, so they are an <strong>asset</strong>.\" An asset is…",
      "options": [
-      "something the company owes",
       "something the company owns",
       "a type of tax",
-      "money going out"
+      "money going out",
+      "something the company owes"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Asset = ativo: aquilo que a empresa possui."
     },
     {
      "q": "\"We have not paid the loan yet, so it is a <strong>liability</strong>.\" A liability is…",
      "options": [
       "the owners' stake",
-      "money the company earns",
+      "something the company owns",
       "something the company owes",
-      "something the company owns"
+      "money the company earns"
      ],
      "answer": 2,
      "why": "Liability = passivo: aquilo que a empresa deve."
@@ -161,34 +161,34 @@
     {
      "q": "Choose the correct word: \"The sale brought in money, so we record it as ___.\"",
      "options": [
-      "inventory",
-      "revenue",
+      "a liability",
       "rent",
-      "a liability"
+      "inventory",
+      "revenue"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Revenue = receita: dinheiro que entra com as vendas."
     },
     {
      "q": "Choose the correct word: \"We keep the sugar in the warehouse. Our ___ is very large this month.\"",
      "options": [
+      "inventory",
       "revenue",
       "equity",
-      "expense",
-      "inventory"
+      "expense"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inventory = estoque: os produtos guardados no depósito."
     },
     {
      "q": "\"We pay the office <strong>rent</strong> on the first day of the month.\" Rent is…",
      "options": [
-      "money a client pays you",
-      "a machine you own",
       "money you pay to use a place",
-      "a loan from the bank"
+      "money a client pays you",
+      "a loan from the bank",
+      "a machine you own"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Rent = aluguel: o que se paga para usar um espaço; é uma despesa."
     }
    ]
@@ -201,54 +201,54 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the report before we send it.\" To sign off on means to…",
      "options": [
-      "approve it",
-      "translate it",
+      "print it",
       "delete it",
-      "print it"
+      "translate it",
+      "approve it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"Let's <strong>write down</strong> every transaction so we don't forget.\" To write down means to…",
      "options": [
+      "cancel it",
       "check it twice",
       "send it by email",
-      "record it on paper",
-      "cancel it"
+      "record it on paper"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Write down = anotar, registrar."
     },
     {
      "q": "\"People often <strong>mix up</strong> assets and expenses.\" To mix up means to…",
      "options": [
-      "explain clearly",
-      "add two numbers",
+      "confuse two things",
       "agree on something",
-      "confuse two things"
+      "explain clearly",
+      "add two numbers"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Mix up = confundir uma coisa com outra."
     },
     {
      "q": "\"We use up the supplies fast, so we buy more each week.\" To <strong>use up</strong> means to…",
      "options": [
-      "return it",
       "finish or consume it all",
+      "return it",
       "sell it",
       "store it safely"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Use up = gastar / consumir por completo."
     },
     {
      "q": "\"Get the type right, and the rest will <strong>fall into place</strong>.\" This means the rest will…",
      "options": [
       "become easy and work out",
-      "cost more money",
       "be forgotten",
-      "get harder"
+      "get harder",
+      "cost more money"
      ],
      "answer": 0,
      "why": "Fall into place = se encaixar, dar tudo certo naturalmente."

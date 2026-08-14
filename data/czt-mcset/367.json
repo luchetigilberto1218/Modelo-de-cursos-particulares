@@ -11,8 +11,8 @@
      "q": "How many sides does every accounting entry have?",
      "options": [
       "No sides",
-      "Three sides",
       "One side",
+      "Three sides",
       "Two sides"
      ],
      "answer": 3,
@@ -22,8 +22,8 @@
      "q": "For an asset account like cash, what does a debit do?",
      "options": [
       "It makes it go up",
-      "It makes it go down",
       "It does nothing",
+      "It makes it go down",
       "It closes the account"
      ],
      "answer": 0,
@@ -32,34 +32,34 @@
     {
      "q": "The text says the two sides of an entry must be…",
      "options": [
-      "big",
       "equal",
       "different",
+      "big",
       "new"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"the two must be equal.\" Os dois lados sempre são iguais."
     },
     {
      "q": "The author would most likely DISAGREE with which sentence?",
      "options": [
-      "Debits and credits must be equal.",
-      "The rule is hard to learn and never gets easier.",
+      "Every entry has two sides.",
       "Practice makes the rule feel natural.",
-      "Every entry has two sides."
+      "The rule is hard to learn and never gets easier.",
+      "Debits and credits must be equal."
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: o texto diz que a regra \"becomes natural with practice\", então o autor discorda que ela nunca fica fácil."
     },
     {
      "q": "The text suggests that, at first, the rule…",
      "options": [
-      "changes every day",
-      "is easy for everyone",
       "is not important",
-      "feels strange or backwards"
+      "changes every day",
+      "feels strange or backwards",
+      "is easy for everyone"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: \"The rule feels backwards at first\" — no começo parece estranho, depois fica natural."
     }
    ]
@@ -78,55 +78,55 @@
      "q": "What does the customer buy in Harry's example?",
      "options": [
       "A loan",
-      "A computer",
       "Some coffee",
+      "A computer",
       "A car"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"A customer buys some coffee and pays us in cash.\""
     },
     {
      "q": "How much is the debit for cash?",
      "options": [
-      "One hundred dollars",
-      "Fifty dollars",
       "One thousand dollars",
-      "Ten dollars"
+      "Ten dollars",
+      "One hundred dollars",
+      "Fifty dollars"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The debit is one hundred dollars.\""
     },
     {
      "q": "What is Harry's simple test after every entry?",
      "options": [
-      "Write the date",
-      "Call the manager",
+      "Count the customers",
       "Check if the debits equal the credits",
-      "Count the customers"
+      "Write the date",
+      "Call the manager"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Do the debits equal the credits? If yes, good.\""
     },
     {
      "q": "Why does Harry say \"everybody feels that way on the first day\"?",
      "options": [
-      "Because the trainee is late",
       "Because the rule feels strange to new people at first",
       "Because the work is boring",
+      "Because the trainee is late",
       "Because the office is cold"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ele fala logo depois de \"it feels backwards at first\" — é normal achar estranho no começo."
     },
     {
      "q": "How does Harry treat the nervous trainee?",
      "options": [
+      "He is bored and quiet",
       "He is calm and helpful",
       "He is in a hurry",
-      "He is bored and quiet",
       "He is angry and impatient"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ele diz \"don't be nervous\", dá um exemplo pequeno e um teste simples — é paciente e ajuda."
     }
    ]
@@ -140,9 +140,9 @@
      "q": "\"We write one <strong>debit</strong> and one credit for the sale.\" A <strong>debit</strong> is…",
      "options": [
       "one side of an accounting entry",
-      "the name of the customer",
       "a mistake in the book",
-      "a type of coffee"
+      "a type of coffee",
+      "the name of the customer"
      ],
      "answer": 0,
      "why": "Debit = débito, um dos dois lados de um lançamento."
@@ -150,9 +150,9 @@
     {
      "q": "Choose the correct word: \"Every ___ has two sides, a debit and a credit.\"",
      "options": [
-      "office",
-      "entry",
       "customer",
+      "entry",
+      "office",
       "day"
      ],
      "answer": 1,
@@ -161,21 +161,21 @@
     {
      "q": "\"For a loan, it is the <strong>opposite</strong>: a credit makes it go up.\" <strong>Opposite</strong> means…",
      "options": [
-      "very fast",
-      "the same",
       "very big",
-      "completely different / the other way"
+      "completely different / the other way",
+      "very fast",
+      "the same"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Opposite = oposto, o contrário."
     },
     {
      "q": "Choose the correct word: \"The two sides must be ___, not different.\"",
      "options": [
-      "open",
+      "small",
       "equal",
-      "late",
-      "small"
+      "open",
+      "late"
      ],
      "answer": 1,
      "why": "Equal = igual; os dois lados sempre são iguais."
@@ -183,12 +183,12 @@
     {
      "q": "\"With a little <strong>practice</strong>, the rule feels easy.\" <strong>Practice</strong> means…",
      "options": [
-      "doing something many times to get better",
       "a big mistake",
-      "reading the news",
-      "a long meeting"
+      "a long meeting",
+      "doing something many times to get better",
+      "reading the news"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Practice = prática; fazer muitas vezes para melhorar."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The numbers do not match, so we have to <strong>look again</strong>.\" To look again means to…",
      "options": [
-      "close the office",
       "call the customer",
-      "stop working",
-      "check one more time"
+      "close the office",
+      "check one more time",
+      "stop working"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Look again = olhar de novo, verificar mais uma vez."
     },
     {
      "q": "\"The debit and the credit must always <strong>match</strong>.\" To match means to…",
      "options": [
-      "come late",
+      "be equal / be the same",
       "be very big",
       "go down",
-      "be equal / be the same"
+      "come late"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Match = combinar, ser igual; os dois lados têm o mesmo valor."
     },
     {
      "q": "\"Cash <strong>goes up</strong> when we make a sale.\" To go up means to…",
      "options": [
-      "disappear",
       "become less",
       "increase / become more",
-      "stay the same"
+      "stay the same",
+      "disappear"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Go up = subir, aumentar."
     },
     {
      "q": "\"Let me <strong>show you</strong> a small example.\" To show someone means to…",
      "options": [
+      "hide something",
       "help them see or understand something",
-      "forget something",
       "sell something",
-      "hide something"
+      "forget something"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Show you = mostrar, ajudar a ver e entender."
     },
     {
      "q": "\"If the sides are not equal, something is <strong>wrong</strong>.\" Wrong means…",
      "options": [
-      "not correct",
-      "very new",
       "very cheap",
-      "very fast"
+      "not correct",
+      "very fast",
+      "very new"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Wrong = errado, não correto."
     }
    ]

@@ -8,56 +8,56 @@
     {
      "q": "How does the text describe a global supply chain up close?",
      "options": [
-      "A simple contract",
       "A long rope of relationships",
-      "A tidy diagram",
-      "A single warehouse"
+      "A single warehouse",
+      "A simple contract",
+      "A tidy diagram"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"up close it is a long rope of relationships.\""
     },
     {
      "q": "What happens when one link slows down?",
      "options": [
-      "The customer benefits",
+      "The whole rope feels it",
       "Only that link is affected",
       "Nothing changes",
-      "The whole rope feels it"
+      "The customer benefits"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"When one link slows down, the whole rope feels it.\""
     },
     {
      "q": "What is the first thing managing the chain well requires?",
      "options": [
-      "Fewer suppliers",
       "Visibility — knowing where each shipment is",
       "More warehouses",
+      "Fewer suppliers",
       "Lower prices"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"First, visibility: you need to know, in close to real time, where each shipment is.\""
     },
     {
      "q": "What are the options when a problem appears?",
      "options": [
-      "Insure, invoice, or classify",
       "Wait, expedite, re-route, or tell the customer",
+      "Cancel, refund, or escalate",
       "Buy, sell, or hold",
-      "Cancel, refund, or escalate"
+      "Insure, invoice, or classify"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"decide fast whether to wait, expedite, re-route, or tell the customer.\""
     },
     {
      "q": "According to the text, which managers earn trust?",
      "options": [
+      "Those who avoid the customer",
       "Those who share bad news early and clearly",
       "Those who never make mistakes",
-      "Those who avoid the customer",
       "Those who hide problems until solved"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"the ones who share bad news early and clearly.\""
     }
    ]
@@ -72,12 +72,12 @@
     {
      "q": "Why is Oliver calling the customer?",
      "options": [
-      "To cancel the order",
-      "To close a new deal",
       "To be straight that the container is stuck at a congested port",
-      "To ask for payment"
+      "To cancel the order",
+      "To ask for payment",
+      "To close a new deal"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"your container has been stuck at the port for four days now, because the terminal is badly congested.\""
     },
     {
@@ -85,18 +85,18 @@
      "options": [
       "Pay to expedite",
       "Cancel the shipment",
-      "Wait — clears in about three days, no extra cost, a week late",
-      "Re-route through Antwerp"
+      "Re-route through Antwerp",
+      "Wait — clears in about three days, no extra cost, a week late"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Option one, we wait… No extra cost, but you get it a week late.\""
     },
     {
      "q": "What does option three involve?",
      "options": [
       "Re-routing through Antwerp, adding two days of trucking",
-      "Paying a priority fee",
       "Waiting for the congestion to clear",
+      "Paying a priority fee",
       "Returning the goods"
      ],
      "answer": 0,
@@ -116,12 +116,12 @@
     {
      "q": "What does Oliver promise regardless of the choice?",
      "options": [
-      "A new container",
       "A tracking update every morning until delivery",
+      "Free shipping next time",
       "A refund",
-      "Free shipping next time"
+      "A new container"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I'll send you a tracking update every morning until it's delivered.\""
     }
    ]
@@ -132,54 +132,54 @@
     {
      "q": "\"We need better **visibility** over the chain.\" Visibility means…",
      "options": [
-      "faster ships",
       "lower costs",
       "more suppliers",
-      "the ability to see where shipments are in real time"
+      "the ability to see where shipments are in real time",
+      "faster ships"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Visibility = visibilidade, saber onde está cada carga."
     },
     {
      "q": "\"The port is a major **bottleneck**.\" A bottleneck is…",
      "options": [
-      "a warehouse",
-      "a point where flow is restricted and slows everything",
+      "a type of ship",
       "a fast route",
-      "a type of ship"
+      "a warehouse",
+      "a point where flow is restricted and slows everything"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Bottleneck = gargalo."
     },
     {
      "q": "Choose the correct word: \"A strike caused a major **___** to the supply chain.\"",
      "options": [
-      "link",
+      "disruption",
       "visibility",
       "contingency",
-      "disruption"
+      "link"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Disruption = interrupção."
     },
     {
      "q": "\"We have a **contingency** in place.\" A contingency is…",
      "options": [
-      "a delivery date",
-      "a price list",
       "a backup plan for when something goes wrong",
-      "a customs form"
+      "a customs form",
+      "a delivery date",
+      "a price list"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Contingency = plano de contingência."
     },
     {
      "q": "Choose the correct term: \"Given the delay, we may need to consider **___** through another port.\"",
      "options": [
-      "visibility",
       "clearance",
+      "backlog",
       "re-routing",
-      "backlog"
+      "visibility"
      ],
      "answer": 2,
      "why": "Re-routing = redirecionamento."
@@ -192,56 +192,56 @@
     {
      "q": "\"The shipment is **held up** at the port.\" To be held up means to…",
      "options": [
-      "be delayed",
       "be delivered",
+      "be insured",
       "be cheap",
-      "be insured"
+      "be delayed"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Held up = atrasado, retido."
     },
     {
      "q": "\"Let's **speed things up** and pay the priority fee.\" To speed up means to…",
      "options": [
       "slow down",
+      "cancel",
       "make faster",
-      "delay",
-      "cancel"
+      "delay"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Speed up = acelerar."
     },
     {
      "q": "\"The congestion should **clear up** in a few days.\" To clear up means to…",
      "options": [
-      "start",
       "resolve or improve",
       "get worse",
-      "spread"
+      "spread",
+      "start"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Clear up = desanuviar, resolver-se."
     },
     {
      "q": "\"I'd rather **give you a heads-up** now.\" To give someone a heads-up means to…",
      "options": [
-      "cancel on them",
-      "warn them in advance",
       "invoice them",
-      "delay telling them"
+      "cancel on them",
+      "delay telling them",
+      "warn them in advance"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Give a heads-up = avisar com antecedência."
     },
     {
      "q": "\"We can **work around** the congestion by re-routing.\" To work around something means to…",
      "options": [
-      "cause it",
-      "ignore it",
       "find a way past a problem",
-      "make it worse"
+      "make it worse",
+      "ignore it",
+      "cause it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Work around = contornar."
     }
    ]

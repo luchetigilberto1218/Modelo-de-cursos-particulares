@@ -1,0 +1,259 @@
+{
+ "num": 442,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the intermediate level, a finance team does not handle one tax at a time. Income tax, corporate tax, VAT and payroll taxes all run in parallel, each on its own rhythm, and each one touching the same set of numbers from a slightly different angle. A salary entry affects payroll tax today, income tax this month, and eventually feeds into corporate tax at year-end. A single sale triggers VAT now and shapes profit for corporate tax later.<br><br>Because each tax looks at the same business from a different window, errors in one quietly cause questions in another. A payroll miscalculation this quarter may show up as a mismatch in next year's corporate return — and the tax office notices.<br><br>Good intermediate tax work is about seeing how the four big taxes connect, so that one clean set of records supports all of them at the same time.",
+   "items": [
+    {
+     "q": "According to the text, how does a finance team handle taxes at the intermediate level?",
+     "options": [
+      "Several taxes in parallel, each on its own rhythm",
+      "Only the corporate tax matters",
+      "One tax at a time, in sequence",
+      "Payroll first, everything else at year-end"
+     ],
+     "answer": 0,
+     "why": "\"Income tax, corporate tax, VAT and payroll taxes all run in parallel, each on its own rhythm.\""
+    },
+    {
+     "q": "What happens after a single sale, according to the text?",
+     "options": [
+      "It only affects payroll tax",
+      "It replaces the income tax entry",
+      "It has no tax effect until year-end",
+      "It triggers VAT now and shapes profit for corporate tax later"
+     ],
+     "answer": 3,
+     "why": "\"A single sale triggers VAT now and shapes profit for corporate tax later.\""
+    },
+    {
+     "q": "Why can an error in one tax cause questions in another?",
+     "options": [
+      "Because payroll is always calculated last",
+      "Because each tax looks at the same business from a different window",
+      "Because VAT rates change every quarter",
+      "Because the tax office audits every company yearly"
+     ],
+     "answer": 1,
+     "why": "\"Because each tax looks at the same business from a different window, errors in one quietly cause questions in another.\""
+    },
+    {
+     "q": "The text suggests that the author would most likely DISAGREE with which statement?",
+     "options": [
+      "The four big taxes are connected through the same numbers",
+      "You can safely fix each tax in isolation without checking the others",
+      "A payroll mistake today can surface in next year's corporate return",
+      "One clean set of records can support all the taxes"
+     ],
+     "answer": 1,
+     "why": "Inferência: todo o texto defende que as taxas estão conectadas — tratar cada uma isoladamente contradiz a tese."
+    },
+    {
+     "q": "What does \"and the tax office notices\" most strongly imply?",
+     "options": [
+      "The tax office corrects the records for you",
+      "The tax office rarely reviews small businesses",
+      "Only VAT errors are ever detected",
+      "Internal mismatches become visible and carry real consequences"
+     ],
+     "answer": 3,
+     "why": "Inferência: a frase reforça que uma inconsistência interna não fica escondida — ela é percebida e cobrada por fora."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry orientando um analista júnior. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, come sit next to me. See this one line? It's just a salary entry — one number. But watch what it does over the next twelve months, because this is where people get lost.<br><br>Today, it feeds the payroll tax. That's the fast one — it moves this pay run. This month, the same figure shapes the income tax withheld from the employee. So already, one entry, two taxes, two different rhythms.<br><br>Now stay with me, because at year-end that same salary becomes a cost in the corporate accounts, so it lowers the taxable profit. And although it feels far away now, it's the same number you keyed in this morning.<br><br>Here's my point. If you mistype it today, the payroll run looks fine, but the mismatch shows up months later in the corporate return — and by then nobody remembers the original entry. So I don't want four separate spreadsheets. I want one clean record that all four taxes can read. Get the number right once, and it stays right everywhere. Does that make sense?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What single item is Harry using to teach the junior?",
+     "options": [
+      "A corporate tax return",
+      "A VAT invoice",
+      "A salary entry — one number",
+      "A payroll spreadsheet with four columns"
+     ],
+     "answer": 2,
+     "why": "\"It's just a salary entry — one number. But watch what it does over the next twelve months.\""
+    },
+    {
+     "q": "According to Harry, what does the salary entry do THIS MONTH?",
+     "options": [
+      "It triggers VAT on a sale",
+      "It shapes the income tax withheld from the employee",
+      "It has no effect until year-end",
+      "It becomes a cost in the corporate accounts"
+     ],
+     "answer": 1,
+     "why": "\"This month, the same figure shapes the income tax withheld from the employee.\""
+    },
+    {
+     "q": "What happens to the same salary figure at year-end?",
+     "options": [
+      "It becomes a cost that lowers the taxable profit",
+      "It is refunded to the employee",
+      "It doubles the payroll tax",
+      "It is deleted from the records"
+     ],
+     "answer": 0,
+     "why": "\"At year-end that same salary becomes a cost in the corporate accounts, so it lowers the taxable profit.\""
+    },
+    {
+     "q": "Why does Harry warn that a typo is dangerous?",
+     "options": [
+      "Because the number cannot be edited afterwards",
+      "Because the mismatch surfaces months later, when no one remembers the original entry",
+      "Because the tax office fines the employee",
+      "Because the payroll run will fail immediately"
+     ],
+     "answer": 1,
+     "why": "Inferência: o perigo não é o erro visível hoje, mas a inconsistência que aparece tarde, sem rastro da origem."
+    },
+    {
+     "q": "What is Harry ultimately recommending?",
+     "options": [
+      "Letting the corporate team re-enter the number",
+      "One clean record that all four taxes can read",
+      "Checking each tax only at year-end",
+      "Keeping four separate spreadsheets, one per tax"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"I don't want four separate spreadsheets. I want one clean record… Get the number right once, and it stays right everywhere.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The four taxes run <strong>in parallel</strong>, not one after the other.\" In parallel means…",
+     "options": [
+      "at the same time, side by side",
+      "in strict order, one at a time",
+      "on the same document",
+      "only at year-end"
+     ],
+     "answer": 0,
+     "why": "In parallel = em paralelo: ao mesmo tempo, cada um seguindo seu curso."
+    },
+    {
+     "q": "Choose the correct word: \"One salary ___ can affect three different taxes over the year.\"",
+     "options": [
+      "audit",
+      "entry",
+      "window",
+      "refund"
+     ],
+     "answer": 1,
+     "why": "Salary entry = lançamento de salário: o registro que dispara os efeitos nas taxas."
+    },
+    {
+     "q": "\"A payroll ___ this quarter appeared as a mismatch in the corporate return.\" Choose the correct word.",
+     "options": [
+      "salary",
+      "rhythm",
+      "record",
+      "miscalculation"
+     ],
+     "answer": 3,
+     "why": "Miscalculation = erro de cálculo, que reaparece como inconsistência mais tarde."
+    },
+    {
+     "q": "\"Each tax looks at the business from a different <strong>window</strong>.\" Here, window means…",
+     "options": [
+      "a deadline for filing",
+      "a physical office",
+      "a software screen",
+      "a point of view or angle on the same numbers"
+     ],
+     "answer": 3,
+     "why": "Window = janela, no sentido de ângulo/perspectiva sobre os mesmos números."
+    },
+    {
+     "q": "\"The two returns did not match; the auditor flagged the <strong>mismatch</strong>.\" A mismatch is…",
+     "options": [
+      "an inconsistency between figures that should agree",
+      "a missing signature",
+      "a duplicated invoice",
+      "a late payment"
+     ],
+     "answer": 0,
+     "why": "Mismatch = inconsistência: números que deveriam bater e não batem."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem no trabalho com impostos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The finance director still has to <strong>sign off on</strong> the year-end return.\" To sign off on means to…",
+     "options": [
+      "read informally",
+      "reject outright",
+      "postpone indefinitely",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We need to <strong>reconcile</strong> the payroll figures with the corporate accounts.\" To reconcile means to…",
+     "options": [
+      "round the numbers up",
+      "file them separately",
+      "make two sets of figures agree",
+      "delete the differences"
+     ],
+     "answer": 2,
+     "why": "Reconcile = reconciliar: comparar dois conjuntos de números até que batam."
+    },
+    {
+     "q": "\"A single sale can <strong>feed into</strong> the corporate tax at year-end.\" To feed into means to…",
+     "options": [
+      "contribute to or become part of",
+      "cancel out",
+      "delay",
+      "replace"
+     ],
+     "answer": 0,
+     "why": "Feed into = alimentar, entrar como parte de outro cálculo."
+    },
+    {
+     "q": "\"Let's <strong>flag up</strong> the mismatch before the audit starts.\" To flag up means to…",
+     "options": [
+      "approve it",
+      "measure it exactly",
+      "raise it for attention",
+      "hide it quietly"
+     ],
+     "answer": 2,
+     "why": "Flag up = sinalizar, trazer à atenção antes que vire problema."
+    },
+    {
+     "q": "\"If we get the entry wrong, errors will <strong>carry over</strong> into next year's return.\" To carry over means to…",
+     "options": [
+      "disappear at year-end",
+      "be corrected automatically",
+      "pass on into a later period",
+      "double in size"
+     ],
+     "answer": 2,
+     "why": "Carry over = transportar-se para um período seguinte, arrastando o efeito."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 526,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At executive level, the on-premise and cloud mix is a portfolio decision, not a technology debate. Each workload belongs somewhere for specific reasons — regulatory, financial, performance, or strategic — and the whole picture, taken together, is what the senior leader designs and defends.<br><br>Rarely does a serious company sit at either extreme. Almost always, the right answer is a careful mix: sensitive or regulated workloads on-premise, variable or growing workloads in the cloud, and a small number of systems deliberately kept in a form that can be moved if circumstances change. Not only does this reduce risk, but it also keeps costs in a defensible range over time.<br><br>Strategic balance costs mental effort. Pure options are simpler but dangerous. The teams that accept the complexity quietly outperform the ones that chase ideological purity in either direction.",
+   "items": [
+    {
+     "q": "According to the text, the on-premise and cloud mix is primarily…",
+     "options": [
+      "a technology debate",
+      "a compliance formality",
+      "a procurement exercise",
+      "a portfolio decision"
+     ],
+     "answer": 3,
+     "why": "\"the on-premise and cloud mix is a portfolio decision, not a technology debate.\""
+    },
+    {
+     "q": "Why are a small number of systems deliberately kept in a movable form?",
+     "options": [
+      "To satisfy auditors",
+      "In case circumstances change",
+      "To keep vendors competing on price",
+      "Because they are the cheapest to run"
+     ],
+     "answer": 1,
+     "why": "\"a small number of systems deliberately kept in a form that can be moved if circumstances change.\""
+    },
+    {
+     "q": "The phrase \"Rarely does a serious company sit at either extreme\" implies that…",
+     "options": [
+      "Extreme positions are cheaper to defend",
+      "Most serious companies adopt an all-cloud model",
+      "Serious companies avoid cloud entirely",
+      "Committing fully to one side is uncommon among serious firms"
+     ],
+     "answer": 3,
+     "why": "Inferência: a inversão enfática indica que ir a um dos extremos é raro entre empresas sérias — o normal é a mistura."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Choosing a single model for the whole estate is the wisest course",
+      "A defensible cost range matters over time",
+      "Accepting complexity can be an advantage",
+      "Sensitive workloads often belong on-premise"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto todo argumenta contra a \"pureza ideológica\" — escolher um único modelo para tudo é o que ele critica."
+    },
+    {
+     "q": "What does \"chase ideological purity in either direction\" suggest about the teams that do it?",
+     "options": [
+      "They are the most innovative",
+      "They tend to underperform the teams that accept complexity",
+      "They save the most money",
+      "They reduce risk most effectively"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"the teams that accept the complexity quietly outperform the ones that chase ideological purity\" — perseguir pureza é o lado mais fraco."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentar sua visão de portfólio à liderança. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, rather than argue cloud versus on-premise in the abstract, I have laid every workload we run on a single board and placed each one where it actually belongs.<br><br>The trading and risk engines stay on-premise. Latency matters, and frankly, so does the regulator's view of where that data sits. The customer analytics and the seasonal reporting jobs go to the cloud, because their demand swings wildly and I refuse to pay for peak capacity we use eleven days a year.<br><br>Then there is a third bucket, and this is the part I care about most. A handful of systems we are keeping deliberately portable — containerised, no exotic dependencies — so that if the economics or the rules shift, we can move them without a two-year migration project. That optionality is not free, but it is cheap insurance.<br><br>What I am not going to do is declare us a cloud-first company on a slide and pretend the estate is that simple. It never is. The moment you pick an ideology, you stop thinking about the individual workload, and that is exactly where the money leaks out.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does Harry keep the trading and risk engines on-premise?",
+     "options": [
+      "They are the cheapest to run there",
+      "The cloud provider refused to host them",
+      "They rarely need to be updated",
+      "Latency matters and the regulator cares where the data sits"
+     ],
+     "answer": 3,
+     "why": "\"Latency matters, and frankly, so does the regulator's view of where that data sits.\""
+    },
+    {
+     "q": "Why does he move the analytics and seasonal reporting jobs to the cloud?",
+     "options": [
+      "They must sit near the trading engines",
+      "The regulator requires it",
+      "Their demand swings wildly and he won't pay for unused peak capacity",
+      "They contain the most sensitive data"
+     ],
+     "answer": 2,
+     "why": "\"their demand swings wildly and I refuse to pay for peak capacity we use eleven days a year.\""
+    },
+    {
+     "q": "What is the purpose of the third \"portable\" bucket?",
+     "options": [
+      "To test new cloud features",
+      "To keep systems movable if economics or rules shift",
+      "To store archived data cheaply",
+      "To reduce the number of vendors"
+     ],
+     "answer": 1,
+     "why": "\"if the economics or the rules shift, we can move them without a two-year migration project.\""
+    },
+    {
+     "q": "When Harry calls the portable option \"cheap insurance,\" he means it…",
+     "options": [
+      "is the most expensive choice available",
+      "carries a modest cost that protects against a costly future problem",
+      "is a formal insurance policy",
+      "costs nothing to maintain"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"That optionality is not free, but it is cheap insurance\" — um custo pequeno que evita uma migração cara depois."
+    },
+    {
+     "q": "What is Harry's attitude toward calling the company \"cloud-first\" on a slide?",
+     "options": [
+      "He is indifferent to it",
+      "He is waiting for board approval before using it",
+      "He is proud of the label",
+      "He is dismissive, seeing it as an oversimplification that wastes money"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"pretend the estate is that simple. It never is… that is exactly where the money leaks out\" — ele rejeita o rótulo simplista."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"He framed it as a <strong>portfolio decision</strong>, weighing each system against the others.\" A portfolio decision is one that…",
+     "options": [
+      "postpones any commitment",
+      "concerns a single isolated system",
+      "is made only by the finance team",
+      "considers the whole set of assets together"
+     ],
+     "answer": 3,
+     "why": "Portfolio decision = decisão de portfólio: pesa o conjunto todo, não uma peça isolada."
+    },
+    {
+     "q": "Choose the correct word: \"Because the audit body oversees us, the payroll system faces strict ___ requirements.\"",
+     "options": [
+      "portable",
+      "regulatory",
+      "variable",
+      "ideological"
+     ],
+     "answer": 1,
+     "why": "Regulatory = regulatório: ligado às exigências do órgão fiscalizador."
+    },
+    {
+     "q": "\"Reporting demand is highly <strong>variable</strong>, peaking at quarter-end and flat otherwise.\" Variable here means…",
+     "options": [
+      "unimportant",
+      "consistently high",
+      "impossible to predict",
+      "changing significantly over time"
+     ],
+     "answer": 3,
+     "why": "Variable = variável: que oscila bastante ao longo do tempo — motivo para usar a nuvem."
+    },
+    {
+     "q": "Choose the correct word: \"She kept costs within a ___ range, so she could justify every line to the board.\"",
+     "options": [
+      "regulatory",
+      "defensible",
+      "variable",
+      "extreme"
+     ],
+     "answer": 1,
+     "why": "Defensible = defensável: uma faixa que se consegue justificar/sustentar diante da diretoria."
+    },
+    {
+     "q": "\"They chased <strong>ideological purity</strong> and moved everything to the cloud, evidence be damned.\" Ideological purity describes…",
+     "options": [
+      "a temporary pilot project",
+      "rigid commitment to a doctrine regardless of the case",
+      "a cost-cutting exercise",
+      "a balanced, workload-by-workload approach"
+     ],
+     "answer": 1,
+     "why": "Ideological purity = pureza ideológica: apego rígido a uma doutrina, ignorando o caso concreto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre estratégia de infraestrutura. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the migration budget.\" To sign off on means to…",
+     "options": [
+      "quietly cancel",
+      "delay indefinitely",
+      "informally discuss",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the hybrid model region by region.\" To roll out means to…",
+     "options": [
+      "explain to auditors",
+      "keep secret from users",
+      "abandon quietly",
+      "implement in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"The security team <strong>pushed back on</strong> the all-cloud plan.\" They…",
+     "options": [
+      "resisted or challenged it",
+      "rewrote the whole plan",
+      "approved it at once",
+      "forgot to review it"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, questionar — sem necessariamente vetar de vez."
+    },
+    {
+     "q": "\"Keeping those systems portable is how we <strong>hedge our bets</strong> on future rules.\" To hedge your bets means to…",
+     "options": [
+      "ignore the risk altogether",
+      "gamble the entire budget",
+      "protect yourself against several possible outcomes",
+      "commit fully to one outcome"
+     ],
+     "answer": 2,
+     "why": "Hedge your bets = não apostar tudo num só cenário; proteger-se contra vários desfechos."
+    },
+    {
+     "q": "\"A vanity 'cloud-first' slide won't <strong>move the needle</strong> on our actual costs.\" This means it will…",
+     "options": [
+      "make a decisive difference",
+      "take too long to measure",
+      "not make a noticeable difference",
+      "create internal resistance"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro; aqui, negado: não faz diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

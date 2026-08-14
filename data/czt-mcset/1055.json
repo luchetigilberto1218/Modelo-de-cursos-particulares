@@ -1,0 +1,259 @@
+{
+ "num": 1055,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A trader writes many short reports. She likes to look back at the week. \"Looking back is also progress,\" she says.<br><br>Yesterday, she wrote the report. She sent the invoice. She called the client. These are small things, but they are important.<br><br>Today she learns five verbs: write, wrote, send, sent, and yesterday. It is her first look at the Past Simple. \"Look back, move forward,\" she thinks.",
+   "items": [
+    {
+     "q": "What does the trader write?",
+     "options": [
+      "No reports",
+      "Many short reports",
+      "Long books",
+      "One big report"
+     ],
+     "answer": 1,
+     "why": "\"A trader writes many short reports.\" — muitos relatórios curtos."
+    },
+    {
+     "q": "What did she do yesterday?",
+     "options": [
+      "She wrote the report",
+      "She read a book",
+      "She met the team",
+      "She went home early"
+     ],
+     "answer": 0,
+     "why": "\"Yesterday, she wrote the report.\""
+    },
+    {
+     "q": "What is she learning today?",
+     "options": [
+      "New clients",
+      "How to send money",
+      "Her first look at the Past Simple",
+      "The Present Simple"
+     ],
+     "answer": 2,
+     "why": "\"It is her first look at the Past Simple.\""
+    },
+    {
+     "q": "The text suggests that the trader thinks small tasks are…",
+     "options": [
+      "a waste of time",
+      "too difficult",
+      "only for new people",
+      "important"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"These are small things, but they are important.\""
+    },
+    {
+     "q": "\"Look back, move forward\" suggests that looking at the past…",
+     "options": [
+      "is bad for work",
+      "is only for old traders",
+      "helps you go forward",
+      "stops you"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Looking back is also progress\" — olhar para trás ajuda a avançar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça o trader no fechamento de sexta-feira. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi Ethan. It is Friday, so let me tell you about my week.<br><br>On Monday, I wrote the weekly report. It was short, but clear. On Tuesday, I sent five invoices to our clients. I also called two clients in the morning.<br><br>On Wednesday, the ship arrived. Sophie and I checked the market at eight in the morning. It was a busy day, but a good one.<br><br>Yesterday, I wrote ten emails. I know, it is a lot! And this morning, I sent the payment on time. Sophie met the new team on Monday too.<br><br>So, that is my week. I wrote reports, I sent invoices, and I called clients. Small things, but I did them all. Have a good weekend, Ethan!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What day is it when the trader speaks?",
+     "options": [
+      "Monday",
+      "Friday",
+      "Sunday",
+      "Wednesday"
+     ],
+     "answer": 1,
+     "why": "\"It is Friday, so let me tell you about my week.\""
+    },
+    {
+     "q": "How many invoices did the trader send on Tuesday?",
+     "options": [
+      "One",
+      "Five",
+      "Ten",
+      "Two"
+     ],
+     "answer": 1,
+     "why": "\"On Tuesday, I sent five invoices to our clients.\""
+    },
+    {
+     "q": "What did the trader write yesterday?",
+     "options": [
+      "Five invoices",
+      "Ten emails",
+      "A contract",
+      "The weekly report"
+     ],
+     "answer": 1,
+     "why": "\"Yesterday, I wrote ten emails.\""
+    },
+    {
+     "q": "The trader says her week was busy. This suggests she…",
+     "options": [
+      "had a lot to do",
+      "did nothing",
+      "was sick",
+      "was on holiday"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"It was a busy day\" e a lista de tarefas mostram muito trabalho."
+    },
+    {
+     "q": "How does the trader feel about her week?",
+     "options": [
+      "Angry with Ethan",
+      "Tired and sad",
+      "Happy with her work",
+      "Bored"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"a good one\", \"but I did them all\" — tom positivo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I <strong>wrote</strong> the report yesterday.\" <strong>Wrote</strong> is the past of…",
+     "options": [
+      "send",
+      "read",
+      "call",
+      "write"
+     ],
+     "answer": 3,
+     "why": "Wrote = passado de write (escrever)."
+    },
+    {
+     "q": "Choose the correct word: \"Yesterday, I ___ the report to my boss.\"",
+     "options": [
+      "sending",
+      "send",
+      "sent",
+      "sends"
+     ],
+     "answer": 2,
+     "why": "\"Yesterday\" pede passado: sent."
+    },
+    {
+     "q": "\"She will <strong>send</strong> the invoice today.\" <strong>Send</strong> means…",
+     "options": [
+      "to enviar / to make it go to someone",
+      "to read",
+      "to call",
+      "to write"
+     ],
+     "answer": 0,
+     "why": "Send = enviar."
+    },
+    {
+     "q": "Choose the correct word: \"I ___ ten emails this morning.\"",
+     "options": [
+      "writing",
+      "writes",
+      "wrote",
+      "write"
+     ],
+     "answer": 2,
+     "why": "\"This morning\" (já passou) pede o passado: wrote."
+    },
+    {
+     "q": "\"The ship arrived <strong>yesterday</strong>.\" <strong>Yesterday</strong> means…",
+     "options": [
+      "the day before today",
+      "next week",
+      "tomorrow",
+      "today"
+     ],
+     "answer": 0,
+     "why": "Yesterday = ontem, o dia antes de hoje."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"I sent the payment <strong>on time</strong>.\" This means the payment was…",
+     "options": [
+      "very big",
+      "wrong",
+      "at the right time, not late",
+      "late"
+     ],
+     "answer": 2,
+     "why": "On time = na hora certa, sem atraso."
+    },
+    {
+     "q": "\"Let me tell you about my week\" — the speaker wants to…",
+     "options": [
+      "say what happened in the week",
+      "ask a question",
+      "leave the office",
+      "send money"
+     ],
+     "answer": 0,
+     "why": "\"Tell you about my week\" = contar o que aconteceu na semana."
+    },
+    {
+     "q": "\"<strong>Look back</strong>, move forward.\" To <strong>look back</strong> means to…",
+     "options": [
+      "call a client",
+      "think about the past",
+      "close the door",
+      "run away"
+     ],
+     "answer": 1,
+     "why": "Look back = olhar para trás, pensar no que passou."
+    },
+    {
+     "q": "\"That is <strong>a lot</strong> of emails!\" <strong>A lot</strong> means…",
+     "options": [
+      "just one",
+      "none",
+      "a big number, many",
+      "a small number"
+     ],
+     "answer": 2,
+     "why": "A lot = muito, um número grande."
+    },
+    {
+     "q": "\"Have a good <strong>weekend</strong>!\" The <strong>weekend</strong> is…",
+     "options": [
+      "every day",
+      "Saturday and Sunday",
+      "Monday and Tuesday",
+      "the middle of the week"
+     ],
+     "answer": 1,
+     "why": "Weekend = fim de semana (sábado e domingo)."
+    }
+   ]
+  }
+ ]
+}

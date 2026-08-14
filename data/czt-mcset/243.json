@@ -1,0 +1,259 @@
+{
+ "num": 243,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A basic supply chain has three big stages: procurement, production and distribution. First, the company procures, or buys, what it needs. Then, production turns those inputs into finished products. Finally, distribution moves the products to customers.<br><br>Each stage depends on the one before it. If procurement is late, production waits. If production stops, distribution has nothing to send. If distribution fails, the customer is not happy.<br><br>A supply chain is only as fast as its slowest step. A simple three-box diagram helps people see the flow and find where the problem is.",
+   "items": [
+    {
+     "q": "What are the three main stages of the supply chain?",
+     "options": [
+      "Planning, testing and shipping",
+      "Procurement, production and distribution",
+      "Farming, trading and banking",
+      "Buying, selling and marketing"
+     ],
+     "answer": 1,
+     "why": "\"three big stages: procurement, production and distribution.\""
+    },
+    {
+     "q": "What comes FIRST in the flow?",
+     "options": [
+      "Distribution",
+      "Procurement",
+      "Production",
+      "The customer"
+     ],
+     "answer": 1,
+     "why": "\"First, the company procures, or buys, what it needs.\""
+    },
+    {
+     "q": "What does production do?",
+     "options": [
+      "It turns inputs into finished products",
+      "It moves products to customers",
+      "It buys the inputs",
+      "It draws the diagram"
+     ],
+     "answer": 0,
+     "why": "\"production turns those inputs into finished products.\""
+    },
+    {
+     "q": "If procurement is late, what happens next? (inference)",
+     "options": [
+      "Distribution starts first",
+      "The customer is very happy",
+      "Nothing changes",
+      "Production has to wait"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"If procurement is late, production waits.\" — cada etapa depende da anterior."
+    },
+    {
+     "q": "The text says \"a supply chain is only as fast as its slowest step.\" This suggests that… (inference)",
+     "options": [
+      "Every stage is always fast",
+      "Speed does not matter",
+      "One slow stage slows the whole chain",
+      "The last stage is the most important"
+     ],
+     "answer": 2,
+     "why": "Inferência: se uma etapa é lenta, ela segura todo o fluxo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily explicando o diagrama para um novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team! Let me show you how an order works. I will draw three boxes on the whiteboard.<br><br>Look at the first box. This is procurement. First, we buy what we need. For us, that is sugar from farms in Brazil. These are our inputs.<br><br>Now the second box. This is production. Next, we turn the inputs into finished products. The sugar is packed and made ready to sell.<br><br>And here is the third box. This is distribution. Finally, we move the finished products to the customer in London. When the customer gets the order, the flow is complete.<br><br>Remember, each box depends on the box before it. If the first box is slow, the second box waits. If the second box stops, the third box has nothing to send. So we watch every stage. This simple three-box picture helps you see the flow and find the problem fast. Any questions? Great, let's start.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many boxes does Emily draw?",
+     "options": [
+      "Two",
+      "Three",
+      "Five",
+      "Four"
+     ],
+     "answer": 1,
+     "why": "\"I will draw three boxes on the whiteboard.\""
+    },
+    {
+     "q": "What is in the first box?",
+     "options": [
+      "Production",
+      "Procurement",
+      "Distribution",
+      "The customer"
+     ],
+     "answer": 1,
+     "why": "\"Look at the first box. This is procurement.\""
+    },
+    {
+     "q": "Where does the finished product go at the end?",
+     "options": [
+      "To the farms in Brazil",
+      "To the customer in London",
+      "To the whiteboard",
+      "Back to procurement"
+     ],
+     "answer": 1,
+     "why": "\"Finally, we move the finished products to the customer in London.\""
+    },
+    {
+     "q": "Why does Emily say \"we watch every stage\"? (inference)",
+     "options": [
+      "Because the customer is in Brazil",
+      "Because production is not important",
+      "Because there are five boxes",
+      "Because each stage depends on the one before it"
+     ],
+     "answer": 3,
+     "why": "Inferência: se uma caixa é lenta ou para, a próxima é afetada — por isso ela observa tudo."
+    },
+    {
+     "q": "How does Emily seem to feel about the new joiner? (inference)",
+     "options": [
+      "Angry and worried",
+      "Friendly and helpful",
+      "Bored and tired",
+      "Annoyed and in a hurry"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela diz \"welcome\", explica com calma e pergunta \"any questions?\" — tom acolhedor."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>procurement</strong> team buys the sugar we need.\" Procurement is…",
+     "options": [
+      "buying what the company needs",
+      "drawing a diagram",
+      "selling to customers",
+      "packing the products"
+     ],
+     "answer": 0,
+     "why": "Procurement = aquisição/compras: comprar o que a empresa precisa."
+    },
+    {
+     "q": "Choose the correct word: \"We turn our ___ into finished products in the second stage.\"",
+     "options": [
+      "boxes",
+      "farms",
+      "inputs",
+      "customers"
+     ],
+     "answer": 2,
+     "why": "Input = insumo; é o que entra na produção para virar produto acabado."
+    },
+    {
+     "q": "\"A supply chain has three main <strong>stages</strong>.\" A stage is…",
+     "options": [
+      "a factory",
+      "a step or part of a process",
+      "a customer",
+      "a price"
+     ],
+     "answer": 1,
+     "why": "Stage = etapa: uma parte do processo."
+    },
+    {
+     "q": "Choose the correct word: \"When the sugar is packed and ready to sell, it is a ___.\"",
+     "options": [
+      "finished product",
+      "empty box",
+      "slow step",
+      "raw farm"
+     ],
+     "answer": 0,
+     "why": "Finished product = produto acabado: pronto para o cliente."
+    },
+    {
+     "q": "\"If procurement is <strong>slow</strong>, production waits.\" Slow is the opposite of…",
+     "options": [
+      "big",
+      "late",
+      "hard",
+      "fast"
+     ],
+     "answer": 3,
+     "why": "Slow = lento; o oposto é fast = rápido."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre a cadeia de suprimentos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the plan.\" To sign off on means to…",
+     "options": [
+      "forget it",
+      "print it",
+      "cancel it",
+      "formally approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new system next month.\" To roll out means to…",
+     "options": [
+      "start using it, step by step",
+      "sell it",
+      "hide it",
+      "throw it away"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em uso de forma progressiva."
+    },
+    {
+     "q": "\"Production is <strong>held up</strong> because the inputs are late.\" Held up means…",
+     "options": [
+      "closed",
+      "finished early",
+      "delayed",
+      "very fast"
+     ],
+     "answer": 2,
+     "why": "Held up = atrasado, parado por um problema."
+    },
+    {
+     "q": "\"Let's <strong>keep track of</strong> every stage.\" To keep track of means to…",
+     "options": [
+      "sell it",
+      "forget about it",
+      "stop it",
+      "follow and check it"
+     ],
+     "answer": 3,
+     "why": "Keep track of = acompanhar, monitorar."
+    },
+    {
+     "q": "\"We need to <strong>speed up</strong> the slowest step.\" To speed up means to…",
+     "options": [
+      "pay for it",
+      "make it slower",
+      "close it",
+      "make it faster"
+     ],
+     "answer": 3,
+     "why": "Speed up = acelerar, tornar mais rápido."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 10,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A leader is a person who guides a team. A good leader listens, explains, and helps. A leader does not need to shout.<br><br>A real leader brings calm and direction. When the team is worried, the leader stays calm and shows the way.<br><br>Leadership is not only for the boss. Every person can be a leader in their own work — when they help, when they plan, when they teach others.",
+   "items": [
+    {
+     "q": "What does a good leader do?",
+     "options": [
+      "Give orders only",
+      "Shout at the team",
+      "Listen, explain, and help",
+      "Work alone"
+     ],
+     "answer": 2,
+     "why": "\"A good leader listens, explains, and helps.\""
+    },
+    {
+     "q": "What does a real leader bring to the team?",
+     "options": [
+      "Fear and pressure",
+      "Calm and direction",
+      "Rules and reports",
+      "Money and gifts"
+     ],
+     "answer": 1,
+     "why": "\"A real leader brings calm and direction.\""
+    },
+    {
+     "q": "According to the text, who can be a leader?",
+     "options": [
+      "Only new workers",
+      "Every person in their own work",
+      "Only the boss",
+      "Only managers"
+     ],
+     "answer": 1,
+     "why": "\"Every person can be a leader in their own work.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "A leader can stay calm",
+      "Leadership is not only for the boss",
+      "A good leader must shout to be strong",
+      "A leader helps the team"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz \"A leader does not need to shout\", então o autor discordaria dessa ideia."
+    },
+    {
+     "q": "\"A leader is a person who guides a team\" suggests that a leader…",
+     "options": [
+      "works without a team",
+      "shows the team the way",
+      "never makes plans",
+      "only follows orders"
+     ],
+     "answer": 1,
+     "why": "Inferência: guiar (to guide) significa mostrar o caminho ao time."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James no workshop de liderança. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone. Today I want to talk about a simple question. What is the difference between a boss and a leader?<br><br>A boss gives orders. A boss says, \"Do this now.\" People do the work because they are afraid. But a leader is different. A leader explains the goal. A leader listens first, and then speaks. People follow a leader because they trust him.<br><br>When I was young, I had a boss who liked to shout. The team was quiet and scared. Nobody wanted to help. Then I had a leader who stayed calm. She always asked, \"What do you think?\" The team was happy, and we did great work together.<br><br>So my advice today is simple. You should lead by example. You should respect your team. And you should stay calm in hard moments. Remember, leadership is not about power. It is about people. Thank you.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What question does James want to talk about?",
+     "options": [
+      "How to become a boss",
+      "The difference between a boss and a leader",
+      "How to give more orders",
+      "How to work alone"
+     ],
+     "answer": 1,
+     "why": "\"What is the difference between a boss and a leader?\""
+    },
+    {
+     "q": "According to James, why do people follow a leader?",
+     "options": [
+      "Because he shouts",
+      "Because they trust him",
+      "Because he pays more",
+      "Because they are afraid"
+     ],
+     "answer": 1,
+     "why": "\"People follow a leader because they trust him.\""
+    },
+    {
+     "q": "What did James's calm leader always ask?",
+     "options": [
+      "\"What do you think?\"",
+      "\"Do this now.\"",
+      "\"Who made this mistake?\"",
+      "\"Why are you late?\""
+     ],
+     "answer": 0,
+     "why": "\"She always asked, 'What do you think?'\""
+    },
+    {
+     "q": "Why was the team with the shouting boss quiet and scared?",
+     "options": [
+      "The work was too easy",
+      "The team had no computers",
+      "There was too much money",
+      "The boss made them afraid"
+     ],
+     "answer": 3,
+     "why": "Inferência: o chefe gritava, então o time ficava com medo e ninguém queria ajudar."
+    },
+    {
+     "q": "What does James mean when he says \"leadership is about people\"?",
+     "options": [
+      "A leader should hire more people",
+      "A leader should work without people",
+      "A leader should care about the team, not power",
+      "A leader should count the people"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele contrasta poder com pessoas — liderar é cuidar do time."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"A good manager will <strong>guide</strong> the new worker on the first day.\" To guide means to…",
+     "options": [
+      "write a report",
+      "close the door",
+      "show the way and help",
+      "give money"
+     ],
+     "answer": 2,
+     "why": "To guide = guiar, mostrar o caminho e ajudar."
+    },
+    {
+     "q": "Choose the correct word: \"A leader should ___ to the team before making a decision.\"",
+     "options": [
+      "listen",
+      "shout",
+      "sleep",
+      "hide"
+     ],
+     "answer": 0,
+     "why": "To listen = ouvir; o líder ouve o time antes de decidir."
+    },
+    {
+     "q": "\"The team was nervous, but the leader stayed <strong>calm</strong>.\" Calm means…",
+     "options": [
+      "tired",
+      "afraid",
+      "quiet and relaxed",
+      "angry"
+     ],
+     "answer": 2,
+     "why": "Calm = calmo, tranquilo e relaxado."
+    },
+    {
+     "q": "Choose the correct word: \"A good leader will ___ the goal clearly, so everyone understands.\"",
+     "options": [
+      "hide",
+      "forget",
+      "sell",
+      "explain"
+     ],
+     "answer": 3,
+     "why": "To explain = explicar; o líder explica o objetivo com clareza."
+    },
+    {
+     "q": "\"Good leaders earn the <strong>respect</strong> of their team.\" Respect means…",
+     "options": [
+      "a high salary",
+      "a long meeting",
+      "a new office",
+      "a good feeling of value for someone"
+     ],
+     "answer": 3,
+     "why": "Respect = respeito, o valor e a consideração que o time sente pela pessoa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem quando falamos de liderança. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"A good leader should <strong>lead by example</strong>.\" This means to…",
+     "options": [
+      "work only from home",
+      "give many orders",
+      "talk a lot in meetings",
+      "do the right thing so others can copy it"
+     ],
+     "answer": 3,
+     "why": "Lead by example = liderar pelo exemplo, fazer para os outros seguirem."
+    },
+    {
+     "q": "\"When a colleague is sick, a good leader will <strong>step up</strong> and help.\" To step up means to…",
+     "options": [
+      "ask for money",
+      "take more responsibility",
+      "go home early",
+      "leave the room"
+     ],
+     "answer": 1,
+     "why": "Step up = assumir mais responsabilidade, dar um passo à frente."
+    },
+    {
+     "q": "\"I will <strong>back you up</strong> in the meeting.\" This means I will…",
+     "options": [
+      "leave you",
+      "copy you",
+      "stop you",
+      "support you"
+     ],
+     "answer": 3,
+     "why": "Back (someone) up = apoiar, dar suporte à pessoa."
+    },
+    {
+     "q": "\"The young workers <strong>look up to</strong> her.\" This means they…",
+     "options": [
+      "work far from her",
+      "respect and admire her",
+      "are afraid of her",
+      "do not know her"
+     ],
+     "answer": 1,
+     "why": "Look up to = admirar, respeitar alguém como referência."
+    },
+    {
+     "q": "\"A real leader will <strong>stand up for</strong> the team.\" This means to…",
+     "options": [
+      "leave the team alone",
+      "count the team",
+      "sit with the team",
+      "defend and support the team"
+     ],
+     "answer": 3,
+     "why": "Stand up for = defender, ficar do lado de alguém."
+    }
+   ]
+  }
+ ]
+}

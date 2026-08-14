@@ -8,20 +8,20 @@
     {
      "q": "What system does international money usually travel on?",
      "options": [
-      "A ship",
       "SWIFT",
-      "Customs",
-      "A bank"
+      "A ship",
+      "A bank",
+      "Customs"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"it usually travels on a system called SWIFT.\""
     },
     {
      "q": "What is SWIFT?",
      "options": [
-      "A customs office",
-      "The network banks use to send messages about payments",
       "A bank",
+      "The network banks use to send messages about payments",
+      "A customs office",
       "A currency"
      ],
      "answer": 1,
@@ -30,34 +30,34 @@
     {
      "q": "How does the money often travel in a wire transfer?",
      "options": [
+      "Directly with no middle banks",
       "Never",
       "Through one or two middle banks on the way",
-      "Directly with no middle banks",
       "By ship"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"often through one or two middle banks on the way.\""
     },
     {
      "q": "How long does a wire transfer usually take?",
      "options": [
-      "One month",
-      "One year",
+      "One to three days",
       "A few seconds",
-      "One to three days"
+      "One year",
+      "One month"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"This takes one to three days.\""
     },
     {
      "q": "What does the text say about SWIFT and wires today?",
      "options": [
+      "They are the fastest",
       "They are free",
       "They are still the standard for most international payments",
-      "They are the fastest",
       "They are gone"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"SWIFT and wires are still the standard for most international payments today.\""
     }
    ]
@@ -73,9 +73,9 @@
      "q": "What surprised the client about their first wire?",
      "options": [
       "It was free",
-      "It was cancelled",
+      "It was instant",
       "It takes two days and passes through another bank",
-      "It was instant"
+      "It was cancelled"
      ],
      "answer": 2,
      "why": "\"it takes two days and passes through another bank.\""
@@ -83,45 +83,45 @@
     {
      "q": "What does the bank actually send on the SWIFT network?",
      "options": [
-      "A ship",
-      "A secure message saying 'pay this amount to this account'",
       "A document",
-      "Physical cash"
+      "Physical cash",
+      "A secure message saying 'pay this amount to this account'",
+      "A ship"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"It sends a secure message on the SWIFT network… 'pay this amount to this account'.\""
     },
     {
      "q": "Why does the money pass through a middle (correspondent) bank?",
      "options": [
+      "Because the two banks may not have a direct link, so a bigger shared bank connects them",
       "To lose time",
-      "To pay more duty",
       "Because SWIFT requires cash",
-      "Because the two banks may not have a direct link, so a bigger shared bank connects them"
+      "To pay more duty"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"the money passes through a bigger bank that both of them work with — a correspondent bank.\""
     },
     {
      "q": "What comparison does Emily use for the correspondent bank?",
      "options": [
-      "A shop",
+      "Changing planes / connecting through a hub",
       "A ship",
-      "A warehouse",
-      "Changing planes / connecting through a hub"
+      "A shop",
+      "A warehouse"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"It's like changing planes… you connect through a hub.\""
     },
     {
      "q": "Why does it take two days?",
      "options": [
+      "The money is lost",
       "Each bank checks the payment, and time zones add more",
       "The ship is slow",
-      "The money is lost",
       "The buyer is slow"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Each bank in the chain checks the payment… time zones add a little more.\""
     }
    ]
@@ -132,56 +132,56 @@
     {
      "q": "**SWIFT** is…",
      "options": [
-      "a bank",
       "the network banks use to send payment messages",
+      "a bank",
       "a currency",
       "a duty"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "SWIFT = rede de mensagens entre bancos."
     },
     {
      "q": "A **wire transfer** is…",
      "options": [
-      "money sent electronically from one bank to another",
-      "a customs check",
+      "a cash payment by hand",
       "a shipping form",
-      "a cash payment by hand"
+      "a customs check",
+      "money sent electronically from one bank to another"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Wire transfer = transferência internacional."
     },
     {
      "q": "Choose the correct word: \"The money passes through a **___** bank on the way.\"",
      "options": [
-      "correspondent",
-      "central",
       "customs",
-      "issuing"
+      "issuing",
+      "central",
+      "correspondent"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Correspondent bank = banco correspondente."
     },
     {
      "q": "A **fee** is…",
      "options": [
-      "the currency",
-      "the total price",
       "a charge for a service, e.g. from the bank",
-      "the goods"
+      "the currency",
+      "the goods",
+      "the total price"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Fee = tarifa."
     },
     {
      "q": "Choose the correct word: \"You need the **___** to identify the receiving account.\"",
      "options": [
-      "invoice",
-      "IBAN",
+      "border",
       "duty",
-      "border"
+      "invoice",
+      "IBAN"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "IBAN = número internacional da conta."
     }
    ]
@@ -192,8 +192,8 @@
     {
      "q": "\"The payment **passes through** two banks.\" To pass through means to…",
      "options": [
-      "stop at",
       "stay in",
+      "stop at",
       "avoid",
       "go through and continue"
      ],
@@ -203,12 +203,12 @@
     {
      "q": "\"It's like **changing planes**.\" This comparison means…",
      "options": [
-      "going directly",
-      "connecting through a middle point",
+      "cancelling",
       "flying home",
-      "cancelling"
+      "going directly",
+      "connecting through a middle point"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Changing planes = fazer conexão, passar por um intermediário."
     },
     {
@@ -225,8 +225,8 @@
     {
      "q": "\"Time zones **add a little more** time.\" To add more means to…",
      "options": [
-      "save",
       "reduce",
+      "save",
       "remove",
       "increase"
      ],
@@ -237,11 +237,11 @@
      "q": "\"Each bank **checks** the payment.\" To check means to…",
      "options": [
       "ignore",
+      "send",
       "examine to make sure it's right",
-      "cancel",
-      "send"
+      "cancel"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Check = conferir."
     }
    ]

@@ -1,0 +1,259 @@
+{
+ "num": 279,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Implementing digital supply chain tools is less about software and more about adoption. The best ERP in the world is useless if the team ignores it; the simplest spreadsheet, used well, beats an abandoned system every day of the week. Technology only pays off when the people using it trust it, understand it, and let it change the way they work.<br><br>Successful implementations share a few habits. They start small, with one use case that will visibly help the team. They include the users in the design, instead of presenting them with a finished system. They protect the roll-out from unrealistic deadlines. And they measure adoption honestly — who actually uses it? — rather than counting licences issued.<br><br>Technology does not save supply chains on its own. People using the right technology, well, do.",
+   "items": [
+    {
+     "q": "According to the text, what does implementing digital supply chain tools depend on most?",
+     "options": [
+      "The quality of the software",
+      "Adoption by the people who use it",
+      "The size of the IT budget",
+      "The number of licences purchased"
+     ],
+     "answer": 1,
+     "why": "\"less about software and more about adoption\" — o que decide é o uso real pelas pessoas."
+    },
+    {
+     "q": "What habits do successful implementations share?",
+     "options": [
+      "They start small, include the users, and protect the roll-out from unrealistic deadlines",
+      "They present a finished system to the whole company at once",
+      "They count how many licences were issued",
+      "They buy the most advanced ERP available"
+     ],
+     "answer": 0,
+     "why": "\"They start small… include the users in the design… protect the roll-out from unrealistic deadlines.\""
+    },
+    {
+     "q": "How does the author say adoption should be measured?",
+     "options": [
+      "By the number of licences issued",
+      "By the amount spent on software",
+      "By who actually uses the tool",
+      "By how quickly it was installed"
+     ],
+     "answer": 2,
+     "why": "\"measure adoption honestly — who actually uses it? — rather than counting licences issued.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Users should be included in the design",
+      "Unrealistic deadlines can damage a roll-out",
+      "Buying a powerful ERP is enough to fix a supply chain",
+      "A simple spreadsheet used well can beat an abandoned system"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto inteiro argumenta que a tecnologia sozinha não resolve — comprar um ERP potente não basta."
+    },
+    {
+     "q": "The final line, \"People using the right technology, well, do,\" suggests that…",
+     "options": [
+      "the right tool matters more than the people",
+      "results come from people combined with the right tool, used properly",
+      "any technology works if the budget is large enough",
+      "technology alone rescues supply chains"
+     ],
+     "answer": 1,
+     "why": "Inferência: o crédito vai para as pessoas usando a ferramenta certa, e bem — não para a tecnologia isolada."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily explicando como está resgatando a implementação. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, the ERP roll-out failed last year, and I want to be honest about why. We bought a brilliant system, trained everyone in one weekend, and then went live across all six warehouses at once. Six months later, most people had quietly gone back to their old spreadsheets.<br><br>This time I'm doing the opposite. I've picked one small team — just the inbound desk here in the main warehouse — and one use case: tracking incoming shipments. Nothing else. If we can make that one thing genuinely easier for them, we've earned the right to expand.<br><br>I'm also protecting the deadline. Last time we promised the board a full launch in three months, which was never realistic, and the pressure pushed us to skip the training. This round, I've told them plainly: give me twelve weeks with one team, and let me prove the value before we scale.<br><br>And here's the part that matters most. I'm not going to report how many licences we've handed out. I'm going to report how many people actually log in and use the tool every day. That number is the only one that tells the truth.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why did last year's ERP roll-out fail, according to Emily?",
+     "options": [
+      "The software was too weak for the warehouses",
+      "They went live everywhere at once and people returned to old spreadsheets",
+      "The team refused all training from the start",
+      "The board cancelled the budget halfway through"
+     ],
+     "answer": 1,
+     "why": "\"went live across all six warehouses at once… most people had quietly gone back to their old spreadsheets.\""
+    },
+    {
+     "q": "What is Emily doing differently this time?",
+     "options": [
+      "Removing training to save time",
+      "Launching in all warehouses on the same day",
+      "Starting with one small team and one use case",
+      "Buying a more expensive system"
+     ],
+     "answer": 2,
+     "why": "\"I've picked one small team… and one use case: tracking incoming shipments. Nothing else.\""
+    },
+    {
+     "q": "Why did the previous team skip the training?",
+     "options": [
+      "The staff already knew the system",
+      "The trainer was unavailable",
+      "The budget did not cover it",
+      "Pressure from an unrealistic three-month deadline"
+     ],
+     "answer": 3,
+     "why": "\"we promised the board a full launch in three months, which was never realistic, and the pressure pushed us to skip the training.\""
+    },
+    {
+     "q": "What does Emily mean by \"we've earned the right to expand\"?",
+     "options": [
+      "Expansion is only justified once the small case proves it helps the team",
+      "The team must expand before proving anything",
+      "Expansion happens on a fixed schedule regardless of results",
+      "The board will automatically approve more spending"
+     ],
+     "answer": 0,
+     "why": "Inferência: crescer é consequência de provar valor primeiro, não uma etapa garantida."
+    },
+    {
+     "q": "Why does Emily prefer to report daily logins rather than licences handed out?",
+     "options": [
+      "Licences are more expensive than logins",
+      "The board asked specifically for login data",
+      "Real usage tells the truth about adoption; licences do not",
+      "Logins are easier to count"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela quer medir adoção real — quem usa de fato — não números que parecem bons no papel."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The project's success depends on <strong>adoption</strong>, not installation.\" Adoption means…",
+     "options": [
+      "people actually taking up and using the tool",
+      "the number of licences bought",
+      "the cost of the software",
+      "the day the system goes live"
+     ],
+     "answer": 0,
+     "why": "Adoption = adoção: quando as pessoas de fato passam a usar a ferramenta."
+    },
+    {
+     "q": "Choose the correct word: \"An ___ system that nobody logs into is worse than a simple spreadsheet.\"",
+     "options": [
+      "included",
+      "measured",
+      "unrealistic",
+      "abandoned"
+     ],
+     "answer": 3,
+     "why": "Abandoned = abandonado: sistema largado, sem uso."
+    },
+    {
+     "q": "\"We chose one <strong>use case</strong> to prove the value first.\" A use case is…",
+     "options": [
+      "the training manual",
+      "a specific task the tool is meant to help with",
+      "a legal contract for the software",
+      "the list of users"
+     ],
+     "answer": 1,
+     "why": "Use case = caso de uso: uma tarefa concreta que a ferramenta resolve."
+    },
+    {
+     "q": "Choose the correct word: \"Promising a full launch in three months was completely ___.\"",
+     "options": [
+      "abandoned",
+      "included",
+      "unrealistic",
+      "measured"
+     ],
+     "answer": 2,
+     "why": "Unrealistic = irrealista: prazo impossível de cumprir."
+    },
+    {
+     "q": "\"The investment only <strong>pays off</strong> when people use the tool well.\" To pay off means to…",
+     "options": [
+      "cost more than expected",
+      "deliver a real return",
+      "be paid in instalments",
+      "be cancelled early"
+     ],
+     "answer": 1,
+     "why": "To pay off = compensar, dar retorno real."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre implementação de sistemas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We plan to <strong>roll out</strong> the tool team by team.\" To roll out means to…",
+     "options": [
+      "test it in secret",
+      "explain it to the board",
+      "cancel it gradually",
+      "implement it in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"The board wants the CIO to <strong>sign off on</strong> the pilot before we scale.\" To sign off on means to…",
+     "options": [
+      "comment informally",
+      "quietly ignore",
+      "formally approve",
+      "postpone indefinitely"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"Several warehouse leads <strong>pushed back on</strong> the tight deadline.\" They…",
+     "options": [
+      "rewrote the whole plan",
+      "forgot about it",
+      "approved it at once",
+      "resisted or objected to it"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, discordar de algo."
+    },
+    {
+     "q": "\"The team agreed to log usage daily but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "measured it too often",
+      "delegated it elsewhere",
+      "failed to carry it out to the end",
+      "changed the metric"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Counting licences won't <strong>move the needle</strong> on real adoption.\" This means it will…",
+     "options": [
+      "make a big difference",
+      "take too long to install",
+      "not make a noticeable difference",
+      "cost more than planned"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível — aqui, no negativo, não faz."
+    }
+   ]
+  }
+ ]
+}

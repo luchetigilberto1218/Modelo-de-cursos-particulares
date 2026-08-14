@@ -10,21 +10,21 @@
     {
      "q": "When is sales tax or VAT added to the price?",
      "options": [
-      "When you sell your house",
       "When you buy something",
-      "Only for big companies",
-      "At the end of the year"
+      "At the end of the year",
+      "When you sell your house",
+      "Only for big companies"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Sales tax or VAT is added to the price when you buy something.\""
     },
     {
      "q": "In the UK, how much is VAT on most goods and services?",
      "options": [
       "20%",
+      "10%",
       "50%",
-      "5%",
-      "10%"
+      "5%"
      ],
      "answer": 0,
      "why": "\"VAT is usually 20% on most goods and services.\""
@@ -43,23 +43,23 @@
     {
      "q": "The text says VAT is \"invisible on the receipt\". This suggests that…",
      "options": [
-      "the shop hides the price",
-      "VAT does not exist",
       "the receipt is never printed",
-      "the customer does not always notice it"
+      "the customer does not always notice it",
+      "VAT does not exist",
+      "the shop hides the price"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"invisible\" quer dizer que o cliente não repara no imposto, mas ele está lá."
     },
     {
      "q": "The author would most likely AGREE that VAT for an accountant is…",
      "options": [
       "only for customers",
-      "easy and rare",
       "a regular, repeated job",
-      "not important"
+      "not important",
+      "easy and rare"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: o texto chama a tarefa de \"constant and repetitive\" — algo que se repete sempre."
     }
    ]
@@ -77,31 +77,31 @@
     {
      "q": "What is Oliver showing the junior?",
      "options": [
-      "How to sell more products",
-      "How to hire new staff",
       "How to build one VAT return",
+      "How to hire new staff",
+      "How to sell more products",
       "How to design a receipt"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Today I want to show you how we build one VAT return.\""
     },
     {
      "q": "What are the invoices on the left?",
      "options": [
-      "Things the company sold",
-      "Old contracts",
       "Things the company bought",
-      "Bank statements"
+      "Old contracts",
+      "Bank statements",
+      "Things the company sold"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"these are the invoices for the things we bought this quarter.\""
     },
     {
      "q": "How often does Oliver do this job?",
      "options": [
       "Every day",
-      "Every week",
       "Once a year",
+      "Every week",
       "Every three months"
      ],
      "answer": 3,
@@ -110,20 +110,20 @@
     {
      "q": "Why does Oliver say \"you must be careful\"?",
      "options": [
-      "Because the tax office is far away",
-      "Because the paper is very heavy",
       "Because one wrong invoice makes the whole return wrong",
-      "Because the customers are angry"
+      "Because the paper is very heavy",
+      "Because the customers are angry",
+      "Because the tax office is far away"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: ele diz \"every number must be correct. One wrong invoice, and the whole return is wrong.\""
     },
     {
      "q": "What does Oliver think about the work?",
      "options": [
-      "It is impossible to finish",
-      "It is repetitive but must be exact",
       "It is fun and always different",
+      "It is repetitive but must be exact",
+      "It is impossible to finish",
       "It is a waste of time"
      ],
      "answer": 1,
@@ -140,55 +140,55 @@
      "q": "\"The shop must <strong>collect</strong> the tax from every customer.\" To collect means to…",
      "options": [
       "forget",
-      "hide",
       "give away",
-      "take or receive"
+      "take or receive",
+      "hide"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "To collect = coletar, receber o dinheiro do cliente."
     },
     {
      "q": "Choose the correct word: \"We send the VAT to the ___ every quarter.\"",
      "options": [
-      "supplier",
       "tax office",
+      "customer",
       "shop",
-      "customer"
+      "supplier"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Tax office = receita, para onde o imposto é enviado."
     },
     {
      "q": "\"A <strong>quarter</strong> is three months of the year.\" This word means…",
      "options": [
-      "one day",
+      "a whole year",
       "one week",
-      "a period of three months",
-      "a whole year"
+      "one day",
+      "a period of three months"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Quarter = trimestre, um quarto do ano."
     },
     {
      "q": "Choose the correct word: \"We paid more than we collected, so we got a ___.\"",
      "options": [
-      "price",
       "supplier",
-      "receipt",
-      "refund"
+      "refund",
+      "price",
+      "receipt"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Refund = reembolso, o dinheiro que volta."
     },
     {
      "q": "\"VAT is added to most <strong>goods and services</strong>.\" This means…",
      "options": [
-      "products and work you pay for",
-      "only big machines",
       "only free samples",
-      "only food"
+      "only food",
+      "products and work you pay for",
+      "only big machines"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Goods and services = bens (produtos) e serviços (trabalho)."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager must <strong>sign off on</strong> the VAT return.\" To sign off on means to…",
      "options": [
-      "print it",
       "approve it",
+      "print it",
       "throw it away",
       "translate it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"Please <strong>fill in</strong> this form with the numbers.\" To fill in means to…",
      "options": [
       "delete it",
+      "fold it",
       "sell it",
-      "write the information in it",
-      "fold it"
+      "write the information in it"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Fill in = preencher, escrever as informações."
     },
     {
      "q": "\"The tax office will <strong>pay back</strong> the extra VAT.\" To pay back means to…",
      "options": [
-      "ask for more money",
       "return the money",
+      "ask for more money",
       "keep the money",
       "lose the money"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Pay back = devolver o dinheiro (aqui, o reembolso)."
     },
     {
      "q": "\"We need to <strong>add up</strong> all the invoices.\" To add up means to…",
      "options": [
-      "hide them",
-      "sign them",
+      "throw them away",
       "find the total",
-      "throw them away"
+      "sign them",
+      "hide them"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Add up = somar, chegar ao total."
     },
     {
      "q": "\"Let's <strong>go over</strong> the numbers again before we send them.\" To go over means to…",
      "options": [
-      "print them twice",
       "send them fast",
       "check them carefully",
+      "print them twice",
       "delete them"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Go over = revisar, checar com cuidado."
     }
    ]

@@ -11,9 +11,9 @@
      "q": "When does the team plan the week?",
      "options": [
       "Every Monday",
+      "At the end of the month",
       "Every Friday",
-      "On Sunday",
-      "At the end of the month"
+      "On Sunday"
      ],
      "answer": 0,
      "why": "\"every Monday we plan the week ahead\"."
@@ -21,45 +21,45 @@
     {
      "q": "What is \"going to\" used for?",
      "options": [
-      "Things we do every day",
       "Plans we have already decided",
+      "Things that happened last year",
       "Plans that never change",
-      "Things that happened last year"
+      "Things we do every day"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"We use going to for plans we have already decided.\""
     },
     {
      "q": "How does planning help you, according to the text?",
      "options": [
-      "You never take a break",
-      "You work more hours",
       "You feel calm and do not forget meetings",
-      "You travel more"
+      "You work more hours",
+      "You travel more",
+      "You never take a break"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"you feel calm\" e \"You do not forget your meetings\"."
     },
     {
      "q": "The text suggests that the writer thinks planning is…",
      "options": [
-      "helpful and worth the time",
-      "very difficult",
+      "boring and useless",
       "only for managers",
-      "boring and useless"
+      "helpful and worth the time",
+      "very difficult"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"it helps a lot\", \"you feel calm\" — o tom é positivo sobre planejar."
     },
     {
      "q": "The writer would most likely DISAGREE with this idea:",
      "options": [
-      "It is a waste of time to plan the week.",
-      "Planning can make you feel calm.",
       "Writing a plan helps you remember your meetings.",
-      "Monday is a good day to plan."
+      "It is a waste of time to plan the week.",
+      "Monday is a good day to plan.",
+      "Planning can make you feel calm."
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: o texto todo defende o planejamento — dizer que é perda de tempo vai contra a mensagem."
     }
    ]
@@ -78,19 +78,19 @@
      "q": "What is James going to do at ten o'clock today?",
      "options": [
       "Travel to London",
+      "Send a report",
       "Call Brazil",
-      "Visit a client",
-      "Send a report"
+      "Visit a client"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Today I am going to call Brazil at ten o'clock.\""
     },
     {
      "q": "What are they going to do tomorrow?",
      "options": [
       "Visit a client together",
-      "Stay in the office all day",
       "Have a long meeting",
+      "Stay in the office all day",
       "Send the big report"
      ],
      "answer": 0,
@@ -99,10 +99,10 @@
     {
      "q": "Why does James ask the team not to book a meeting at ten?",
      "options": [
-      "Because the office is closed",
+      "Because he is going to travel",
       "Because he has an important call",
       "Because he is going to rest",
-      "Because he is going to travel"
+      "Because the office is closed"
      ],
      "answer": 1,
      "why": "Inferência: a ligação com o Brasil é importante, por isso ele não quer reunião nesse horário."
@@ -110,23 +110,23 @@
     {
      "q": "How does James feel about the client visit?",
      "options": [
-      "He thinks it will be a bad day",
       "He is worried about it",
       "He is positive about it",
+      "He thinks it will be a bad day",
       "He does not want to go"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: \"It is going to be a good day\" e \"the client is going to be happy\" — ele está otimista."
     },
     {
      "q": "When are they going to finish everything?",
      "options": [
-      "On Sunday",
       "By Wednesday",
       "By Friday",
+      "On Sunday",
       "Next month"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"we are going to finish everything by Friday.\""
     }
    ]
@@ -140,55 +140,55 @@
      "q": "\"I write my <strong>plan</strong> every Monday morning.\" A plan is…",
      "options": [
       "a place to work",
+      "something you decide to do",
       "a phone call",
-      "a type of report",
-      "something you decide to do"
+      "a type of report"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Plan = plano: aquilo que você decide fazer."
     },
     {
      "q": "Choose the correct word: \"We are going to visit the client ___ week.\"",
      "options": [
-      "next",
       "travel",
+      "plan",
       "soon",
-      "plan"
+      "next"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Next week = próxima semana."
     },
     {
      "q": "\"The report is not ready today, but it will be ready <strong>soon</strong>.\" Soon means…",
      "options": [
-      "last year",
+      "in a short time",
       "never",
       "every day",
-      "in a short time"
+      "last year"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Soon = em breve, dentro de pouco tempo."
     },
     {
      "q": "Choose the correct word: \"I am going to ___ to London on Thursday.\"",
      "options": [
-      "plan",
       "travel",
-      "soon",
-      "next"
+      "plan",
+      "next",
+      "soon"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Travel = viajar."
     },
     {
      "q": "\"On Tuesday we are going to <strong>visit</strong> a client.\" To visit means to…",
      "options": [
-      "go and see someone",
-      "send an email",
+      "write a report",
       "make a plan",
-      "write a report"
+      "send an email",
+      "go and see someone"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Visit = visitar, ir ver alguém."
     }
    ]
@@ -201,43 +201,43 @@
     {
      "q": "\"Let's <strong>plan ahead</strong> for next week.\" To plan ahead means to…",
      "options": [
-      "cancel all plans",
       "start with no plan",
       "work very late",
-      "make plans before the time comes"
+      "make plans before the time comes",
+      "cancel all plans"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Plan ahead = planejar com antecedência."
     },
     {
      "q": "\"I am going to <strong>set up</strong> a meeting for Monday.\" To set up a meeting means to…",
      "options": [
-      "arrange it",
-      "join it late",
+      "cancel it",
       "forget it",
-      "cancel it"
+      "arrange it",
+      "join it late"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Set up = organizar, marcar."
     },
     {
      "q": "\"We are going to <strong>go over</strong> the plan on Monday.\" To go over means to…",
      "options": [
-      "review it together",
-      "hide it",
       "print it",
-      "delete it"
+      "delete it",
+      "hide it",
+      "review it together"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Go over = revisar, passar por algo com cuidado."
     },
     {
      "q": "\"Ana is going to <strong>carry out</strong> the plan this week.\" To carry out means to…",
      "options": [
       "stop it",
-      "share it",
+      "change it",
       "do it",
-      "change it"
+      "share it"
      ],
      "answer": 2,
      "why": "Carry out = executar, colocar em prática."
@@ -245,12 +245,12 @@
     {
      "q": "\"I am busy now, but I am going to <strong>catch up</strong> on my emails later.\" To catch up on emails means to…",
      "options": [
-      "delete all emails",
       "do the emails you are behind on",
+      "write new emails only",
       "close your inbox",
-      "write new emails only"
+      "delete all emails"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Catch up on = pôr em dia, fazer o que ficou atrasado."
     }
    ]

@@ -10,56 +10,56 @@
     {
      "q": "What tax does an individual pay on their salary?",
      "options": [
-      "Corporate tax",
       "Profit tax",
       "Income tax",
+      "Corporate tax",
       "Payroll tax"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"An individual pays income tax on their salary.\""
     },
     {
      "q": "Who collects the sales tax from customers?",
      "options": [
-      "The employee",
       "The bank",
-      "The company",
-      "The government office"
+      "The government office",
+      "The employee",
+      "The company"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"It collects sales tax from customers\" — a empresa coleta o imposto sobre vendas."
     },
     {
      "q": "The text suggests that a company pays…",
      "options": [
-      "more kinds of taxes than a person",
-      "no taxes at all",
       "fewer taxes than a person",
+      "no taxes at all",
+      "more kinds of taxes than a person",
       "the same taxes as a person"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: o indivíduo paga dois impostos; a empresa paga três (corporate, sales, payroll)."
     },
     {
      "q": "\"Every sale supports a little bit of public life.\" This suggests that taxes…",
      "options": [
-      "make products cheaper",
-      "are paid once a year",
       "help pay for public things",
-      "are only for companies"
+      "make products cheaper",
+      "are only for companies",
+      "are paid once a year"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: o imposto de cada venda ajuda a sustentar a vida pública (serviços do país)."
     },
     {
      "q": "When one product is sold, how many taxes move?",
      "options": [
-      "Only two",
+      "None",
       "Only one",
-      "Several at once",
-      "None"
+      "Only two",
+      "Several at once"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"several taxes move at once.\""
     }
    ]
@@ -88,10 +88,10 @@
     {
      "q": "What does the company do with the sales tax?",
      "options": [
-      "It keeps the money",
+      "It pays it to the employee",
       "It gives it back to the customer",
       "It collects it and sends it to the government",
-      "It pays it to the employee"
+      "It keeps the money"
      ],
      "answer": 2,
      "why": "\"We only collect it and send it to the government.\""
@@ -99,34 +99,34 @@
     {
      "q": "Which tax does the company pay on its profit?",
      "options": [
-      "Income tax",
       "Payroll tax",
+      "Corporate tax",
       "Sales tax",
-      "Corporate tax"
+      "Income tax"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"On that profit, we pay corporate tax.\""
     },
     {
      "q": "Oliver says two taxes touch the salary. This suggests that a salary is…",
      "options": [
-      "taxed only once a year",
-      "free of any tax",
       "paid only by the customer",
-      "taxed by both the worker and the company"
+      "taxed only once a year",
+      "taxed by both the worker and the company",
+      "free of any tax"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: o funcionário paga income tax e a empresa paga payroll tax sobre o mesmo salário."
     },
     {
      "q": "Why does Oliver explain all this to the junior?",
      "options": [
-      "To lower the company's taxes",
-      "To sell more products",
+      "To ask for a bigger salary",
       "To show that a simple sale is not so simple",
-      "To ask for a bigger salary"
+      "To lower the company's taxes",
+      "To sell more products"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: ele mostra que uma venda de £100 esconde quatro impostos ao mesmo tempo."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"Every <strong>employee</strong> in the shop pays income tax.\" An employee is…",
      "options": [
-      "a government office",
       "a person who works for a company",
       "a customer who buys things",
-      "the owner of the company"
+      "the owner of the company",
+      "a government office"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Employee = funcionário, a pessoa que trabalha para a empresa."
     },
     {
      "q": "Choose the correct word: \"The company pays a ___ on the salaries of its workers.\"",
      "options": [
+      "payroll tax",
       "income tax",
       "sales tax",
-      "customer",
-      "payroll tax"
+      "customer"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Payroll tax = imposto sobre a folha de pagamento, ligado aos salários."
     },
     {
      "q": "\"She likes to <strong>shop</strong> on Saturday.\" To shop means to…",
      "options": [
-      "pay taxes",
-      "buy things in a store",
+      "sell a company",
       "work in an office",
-      "sell a company"
+      "pay taxes",
+      "buy things in a store"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "To shop = comprar, ir às compras."
     },
     {
      "q": "Choose the correct word: \"After work, he gets his ___ at the end of the month.\"",
      "options": [
-      "profit",
       "customer",
       "salary",
+      "profit",
       "product"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Salary = salário, o dinheiro que o funcionário recebe pelo trabalho."
     },
     {
      "q": "\"The store makes one <strong>sale</strong> every minute.\" A sale is…",
      "options": [
-      "a company office",
       "a worker's salary",
-      "a kind of tax",
-      "the act of selling something"
+      "the act of selling something",
+      "a company office",
+      "a kind of tax"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Sale = venda, quando um produto é vendido."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The company has to <strong>pay taxes</strong> every year.\" To pay taxes means to…",
      "options": [
-      "sell more products",
       "close the shop",
       "give money to the government",
+      "sell more products",
       "hire new workers"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Pay taxes = pagar impostos ao governo."
     },
     {
      "q": "\"The shop <strong>sold out</strong> of that product.\" It means the product is…",
      "options": [
-      "very cheap now",
-      "on sale next week",
       "all gone, none left",
-      "back in the store"
+      "very cheap now",
+      "back in the store",
+      "on sale next week"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Sold out = esgotado, tudo vendido."
     },
     {
      "q": "\"We <strong>hand over</strong> the sales tax to the government.\" To hand over means to…",
      "options": [
-      "give something to someone",
       "keep it for later",
       "count the money",
-      "throw it away"
+      "throw it away",
+      "give something to someone"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Hand over = entregar, passar algo para outra pessoa."
     },
     {
      "q": "\"Let me <strong>break it down</strong> for you.\" To break it down means to…",
      "options": [
-      "make it more difficult",
       "explain it in simple parts",
+      "make it more difficult",
       "stop the meeting",
       "pay the whole bill"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Break it down = explicar por partes, de forma simples."
     },
     {
      "q": "\"The customer <strong>picked up</strong> two products.\" To pick up means to…",
      "options": [
-      "pay a tax",
       "call the office",
-      "return an item",
-      "take or buy something"
+      "pay a tax",
+      "take or buy something",
+      "return an item"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Pick up = pegar, apanhar (aqui, comprar/levar um produto)."
     }
    ]

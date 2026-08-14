@@ -1,0 +1,259 @@
+{
+ "num": 222,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the top of British business, small talk is never small. The two minutes of weather and weekend conversation at the start of a senior meeting serve real functions: they warm up the room, reset relationships that may have turned tense in the last exchange, and give everyone a chance to read each other's mood before the serious conversation begins.<br><br>Senior leaders who skip this step to 'get straight to business' usually pay for it. The meeting may be efficient on paper, but the room is slightly colder, the nuances slightly harder to read, and the quiet doubts of the junior participants are less likely to surface.<br><br>Not only does small talk build relationships, but it also carries information. Who looks tired? Who is unusually quiet today? Whose weekend was surprisingly difficult? These details, collected casually, often explain the shape of the rest of the meeting. Experienced British executives listen to small talk the way experienced doctors listen to a patient describing a pain — lightly on the surface, carefully underneath.",
+   "items": [
+    {
+     "q": "According to the text, what is the effect when a senior leader skips small talk to 'get straight to business'?",
+     "options": [
+      "The junior participants leave the room more confident",
+      "The agenda takes noticeably longer to complete",
+      "Relationships are reset faster than usual",
+      "The meeting is efficient on paper, but reads colder and its nuances are harder to catch"
+     ],
+     "answer": 3,
+     "why": "\"efficient on paper, but the room is slightly colder, the nuances slightly harder to read\" — a eficiência aparente cobra um preço."
+    },
+    {
+     "q": "What functions does the opening small talk serve, according to the first paragraph?",
+     "options": [
+      "It warms up the room, resets relationships and lets people read each other's mood",
+      "It gives the chair control over the timing",
+      "It formalises the agenda and records decisions",
+      "It replaces the need for a serious conversation"
+     ],
+     "answer": 0,
+     "why": "\"they warm up the room, reset relationships… and give everyone a chance to read each other's mood.\""
+    },
+    {
+     "q": "The comparison with doctors listening to a patient's pain suggests that small talk is…",
+     "options": [
+      "a ritual with no practical value",
+      "a symptom of an unhealthy organisation",
+      "a source of diagnostic information beneath a casual surface",
+      "something only specialists should attempt"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"lightly on the surface, carefully underneath\" — o médico e o executivo escutam para diagnosticar, não por cortesia."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Cutting the opening chatter is the most efficient way to run a senior meeting",
+      "The first minutes of a meeting carry information as well as warmth",
+      "The mood of the room shapes how the rest of the meeting unfolds",
+      "Small talk can reveal who is quiet or under strain"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto inteiro argumenta que essa 'eficiência' é falsa — corta justamente a informação que importa."
+    },
+    {
+     "q": "The phrase 'small talk is never small' most strongly implies that…",
+     "options": [
+      "casual conversation is trivial and should be limited",
+      "executives should talk for longer before every meeting",
+      "the apparently trivial exchange is doing serious, deliberate work",
+      "British business avoids personal topics entirely"
+     ],
+     "answer": 2,
+     "why": "Inferência: o paradoxo abre o texto — o que parece banal é, na verdade, uma ferramenta estratégica."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily orientando um executivo dito 'eficiente demais'. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, I've watched you chair three meetings now, and here's what I keep noticing. You open the folder, you name the first agenda item, and you're off. Ninety seconds in. It's impressive, honestly — but you're leaving something on the table.<br><br>Last Tuesday, before you'd even sat down, two of your regional heads were talking about a weekend that had clearly gone badly for one of them. You didn't hear it, because you were already on point one. And then you couldn't understand why he pushed back so hard on the forecast. The signal was in the corridor, not in the deck.<br><br>Here's what I'd like you to try. Give the room the first two minutes. Ask about the weekend and actually listen — not for the words, for the temperature. Who's tired? Who's gone quiet? Who's a little too cheerful? That's not delay, that's diagnosis.<br><br>You've been told you're too efficient. I'd reframe that. You're efficient about the agenda and blind to the room. The best people in this building read both.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How quickly does Emily say the executive gets into the agenda?",
+     "options": [
+      "After reading the whole deck aloud",
+      "After the first two minutes of small talk",
+      "Roughly ninety seconds in",
+      "Only once everyone has sat down"
+     ],
+     "answer": 2,
+     "why": "\"You're off. Ninety seconds in.\""
+    },
+    {
+     "q": "What example does Emily give from last Tuesday?",
+     "options": [
+      "A regional head arrived late without warning",
+      "Two regional heads were discussing a weekend that had gone badly, which he missed",
+      "The board rejected the agenda entirely",
+      "The forecast was wrong and had to be redone"
+     ],
+     "answer": 1,
+     "why": "\"two of your regional heads were talking about a weekend that had clearly gone badly.\""
+    },
+    {
+     "q": "When Emily says 'The signal was in the corridor, not in the deck', she means that…",
+     "options": [
+      "the presentation contained a factual error",
+      "the real explanation for the pushback came from the informal conversation, not the slides",
+      "the meeting should have been held somewhere else",
+      "the forecast should have been printed, not projected"
+     ],
+     "answer": 1,
+     "why": "Inferência: a causa da resistência estava no clima captado antes da reunião, não nos dados apresentados."
+    },
+    {
+     "q": "What does Emily mean by listening 'not for the words, for the temperature'?",
+     "options": [
+      "Paying attention to the emotional state of the room rather than the literal content",
+      "Checking whether the room is physically too warm",
+      "Waiting for someone to raise their voice",
+      "Timing how long each person speaks"
+     ],
+     "answer": 0,
+     "why": "Inferência: 'temperature' aqui é o estado emocional — cansaço, silêncio, entusiasmo forçado — não a conversa em si."
+    },
+    {
+     "q": "How does Emily reframe the label 'too efficient'?",
+     "options": [
+      "As proof he is ready for promotion",
+      "As a sign he should chair fewer meetings",
+      "As efficient about the agenda but blind to the room",
+      "As a compliment that needs no change"
+     ],
+     "answer": 2,
+     "why": "\"You're efficient about the agenda and blind to the room.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The quiet doubts of the junior members finally began to <strong>surface</strong> once the room relaxed.\" To surface means to…",
+     "options": [
+      "come out into the open",
+      "be dismissed by the chair",
+      "be written down formally",
+      "grow more serious over time"
+     ],
+     "answer": 0,
+     "why": "To surface = aflorar, vir à tona — o que estava submerso aparece."
+    },
+    {
+     "q": "Choose the correct word: \"The last exchange had left the two directors slightly ___, so she used the weekend chat to ease things.\"",
+     "options": [
+      "casual",
+      "tense",
+      "experienced",
+      "efficient"
+     ],
+     "answer": 1,
+     "why": "Tense = tenso — o clima entre eles estava carregado."
+    },
+    {
+     "q": "\"These details, collected <strong>casually</strong>, often explain the rest of the meeting.\" Casually here means…",
+     "options": [
+      "in an informal, unforced way",
+      "through a formal survey",
+      "by accident and without value",
+      "reluctantly"
+     ],
+     "answer": 0,
+     "why": "Casually = de modo casual, informal — sem interrogar ninguém, mas com atenção."
+    },
+    {
+     "q": "\"A single offhand remark can <strong>shape</strong> the tone of the entire discussion.\" To shape means to…",
+     "options": [
+      "record",
+      "interrupt",
+      "shorten",
+      "give form to or influence"
+     ],
+     "answer": 3,
+     "why": "To shape = moldar, dar forma — influenciar como algo se desenvolve."
+    },
+    {
+     "q": "Choose the correct word: \"An ___ executive treats the corridor conversation as data, not as delay.\"",
+     "options": [
+      "experienced",
+      "casual",
+      "tense",
+      "efficient"
+     ],
+     "answer": 0,
+     "why": "Experienced = experiente — quem já viveu o suficiente para ler os sinais sutis."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em reuniões executivas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Give the room a moment to <strong>warm up</strong> before you open the folder.\" To warm up means to…",
+     "options": [
+      "speak more loudly",
+      "review the numbers in advance",
+      "become gradually more at ease and engaged",
+      "raise the temperature of the office"
+     ],
+     "answer": 2,
+     "why": "Warm up = aquecer — as pessoas relaxam e se abrem antes do assunto sério."
+    },
+    {
+     "q": "\"He <strong>pushed back on</strong> the forecast far harder than the data justified.\" He…",
+     "options": [
+      "postponed reading it",
+      "resisted or challenged it",
+      "rewrote it overnight",
+      "approved it without comment"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, contestar — discordar com firmeza."
+    },
+    {
+     "q": "\"Two minutes of small talk lets everyone <strong>read the room</strong> before decisions are made.\" To read the room means to…",
+     "options": [
+      "sense the collective mood and adjust to it",
+      "review the meeting minutes",
+      "check who is physically present",
+      "assign seats to participants"
+     ],
+     "answer": 0,
+     "why": "Read the room = ler o ambiente — captar o clima e o humor coletivo."
+    },
+    {
+     "q": "\"You keep jumping in and <strong>getting straight to business</strong>, missing what the mood is telling you.\" This means to…",
+     "options": [
+      "deal privately with each person",
+      "handle only urgent matters",
+      "close the meeting early",
+      "start with the serious agenda immediately, skipping the warm-up"
+     ],
+     "answer": 3,
+     "why": "Get straight to business = ir direto ao ponto — pular a conversa inicial e atacar a pauta."
+    },
+    {
+     "q": "\"Whatever surfaces in those first minutes, don't just note it — <strong>follow up on</strong> it afterwards.\" To follow up on means to…",
+     "options": [
+      "ignore it for now",
+      "report it to HR",
+      "repeat it to the group",
+      "take further action on it later"
+     ],
+     "answer": 3,
+     "why": "Follow up on = dar seguimento — agir sobre o que foi percebido, em vez de deixar passar."
+    }
+   ]
+  }
+ ]
+}

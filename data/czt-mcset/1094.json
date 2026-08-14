@@ -1,0 +1,259 @@
+{
+ "num": 1094,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At Czarnikow we trade sugar, coffee, ethanol and cocoa. These are our main products.<br><br>These products are uncountable. We measure them in tonnes, not in pieces. We do not say \"three sugars\". We say \"some sugar\" or \"200 tonnes of sugar\".<br><br>We buy, store and deliver these products around the world. Every product has a source country. Today is a slow, easy start. You can do it!",
+   "items": [
+    {
+     "q": "What does Czarnikow trade?",
+     "options": [
+      "Books and pens",
+      "Sugar, coffee, ethanol and cocoa",
+      "Cars and phones",
+      "Fruit and water"
+     ],
+     "answer": 1,
+     "why": "\"we trade sugar, coffee, ethanol and cocoa.\""
+    },
+    {
+     "q": "How do we measure these products?",
+     "options": [
+      "In boxes",
+      "In tonnes",
+      "In pieces",
+      "In bottles"
+     ],
+     "answer": 1,
+     "why": "\"We measure them in tonnes, not in pieces.\""
+    },
+    {
+     "q": "Which sentence is correct?",
+     "options": [
+      "I want two sugar.",
+      "I want three sugars.",
+      "I want a sugar.",
+      "I want some sugar."
+     ],
+     "answer": 3,
+     "why": "Sugar é incontável: \"some sugar\", não \"a sugar\" ou \"three sugars\"."
+    },
+    {
+     "q": "The text says \"You can do it!\". This suggests that…",
+     "options": [
+      "you must work fast",
+      "the lesson is very hard",
+      "the lesson is only for experts",
+      "the lesson is easy and you should feel confident"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"a slow, easy start\" + \"You can do it!\" mostram que a intenção é dar confiança."
+    },
+    {
+     "q": "\"Every product has a source country.\" This suggests that…",
+     "options": [
+      "products come from different places in the world",
+      "products come from one shop",
+      "products are made in the office",
+      "products have no origin"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"source country\" + \"around the world\" indicam que cada produto vem de um lugar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça o colaborador apresentando os produtos da Czarnikow a um novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team! Let me show you our products. It is very simple.<br><br>At Czarnikow we trade sugar, coffee, cocoa and ethanol. Sugar is our biggest product. Coffee is a grain. Cocoa comes from a tree. Ethanol is a fuel, not a food.<br><br>These are uncountable nouns. That is important. We do not say \"two sugars\" or \"three coffees\". We say \"some sugar\" or \"200 tonnes of coffee\". We always measure in tonnes.<br><br>Be careful with one word. \"A coffee\" means a drink, like a cup of coffee. But \"coffee\" the product is the grain. In our work, we mean the grain.<br><br>Every product has a source country. The sugar can come from Brazil. The coffee can come from Colombia. We buy it, we store it, and we deliver it around the world.<br><br>Do not worry. You will learn fast. When you talk about our products, use \"some\" and use \"tonnes\". Say \"some sugar\", not \"a sugar\". Say \"200 tonnes of coffee\", not \"200 coffees\". Good products need good words. That is all for now. Welcome again!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Which product is the biggest?",
+     "options": [
+      "Cocoa",
+      "Coffee",
+      "Sugar",
+      "Ethanol"
+     ],
+     "answer": 2,
+     "why": "\"Sugar is our biggest product.\""
+    },
+    {
+     "q": "What is ethanol?",
+     "options": [
+      "A grain",
+      "A fuel",
+      "A drink",
+      "A food"
+     ],
+     "answer": 1,
+     "why": "\"Ethanol is a fuel, not a food.\""
+    },
+    {
+     "q": "What does \"a coffee\" mean?",
+     "options": [
+      "The grain",
+      "A drink, like a cup",
+      "A country",
+      "A tonne"
+     ],
+     "answer": 1,
+     "why": "\"'A coffee' means a drink, like a cup of coffee.\""
+    },
+    {
+     "q": "Why does the speaker talk about Brazil and Colombia?",
+     "options": [
+      "To show that each product has a source country",
+      "To sell tickets",
+      "To close the company",
+      "To change the office"
+     ],
+     "answer": 0,
+     "why": "Inferência: são exemplos de \"source country\" — de onde vêm os produtos."
+    },
+    {
+     "q": "How does the speaker want the new colleague to feel?",
+     "options": [
+      "Tired",
+      "Angry",
+      "Calm and confident",
+      "Worried and slow"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"It is very simple\", \"Do not worry\", \"You will learn fast\" transmitem calma e confiança."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We ship 500 tonnes of <strong>sugar</strong> to Europe.\" Sugar is…",
+     "options": [
+      "açúcar",
+      "etanol",
+      "cacau",
+      "café"
+     ],
+     "answer": 0,
+     "why": "Sugar = açúcar."
+    },
+    {
+     "q": "\"I drink one <strong>coffee</strong> every morning.\" Here, coffee means…",
+     "options": [
+      "the grain we trade",
+      "a country",
+      "a hot drink",
+      "a tonne"
+     ],
+     "answer": 2,
+     "why": "\"A coffee\" / \"one coffee\" = a bebida, não o grão."
+    },
+    {
+     "q": "Choose the correct word: \"We make chocolate from ___.\"",
+     "options": [
+      "grain",
+      "ethanol",
+      "cocoa",
+      "sugar"
+     ],
+     "answer": 2,
+     "why": "Chocolate vem do cocoa (cacau)."
+    },
+    {
+     "q": "\"<strong>Ethanol</strong> is a fuel for cars.\" Ethanol is…",
+     "options": [
+      "uma fruta",
+      "uma bebida quente",
+      "um alimento",
+      "um combustível"
+     ],
+     "answer": 3,
+     "why": "Ethanol = etanol, um combustível."
+    },
+    {
+     "q": "Choose the correct word: \"Wheat and rice are types of ___.\"",
+     "options": [
+      "grain",
+      "coffee",
+      "sugar",
+      "cocoa"
+     ],
+     "answer": 0,
+     "why": "Grain = grão; trigo e arroz são grãos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de negócios com produtos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We <strong>deliver</strong> coffee around the world.\" To deliver means to…",
+     "options": [
+      "take the product to the client",
+      "eat the product",
+      "count the product",
+      "hide the product"
+     ],
+     "answer": 0,
+     "why": "Deliver = entregar, levar o produto ao cliente."
+    },
+    {
+     "q": "\"We <strong>store</strong> the sugar in a big room.\" To store means to…",
+     "options": [
+      "throw away",
+      "sell fast",
+      "keep for later",
+      "cook"
+     ],
+     "answer": 2,
+     "why": "Store = armazenar, guardar para depois."
+    },
+    {
+     "q": "\"We <strong>trade</strong> sugar and coffee.\" To trade means to…",
+     "options": [
+      "read about",
+      "buy and sell",
+      "drink",
+      "grow at home"
+     ],
+     "answer": 1,
+     "why": "Trade = negociar; comprar e vender."
+    },
+    {
+     "q": "\"The sugar <strong>comes from</strong> Brazil.\" This means Brazil is…",
+     "options": [
+      "the client",
+      "the office",
+      "the source",
+      "the price"
+     ],
+     "answer": 2,
+     "why": "Come from = vir de; Brasil é a origem (source) do produto."
+    },
+    {
+     "q": "\"We <strong>ship</strong> 200 tonnes to Europe.\" To ship means to…",
+     "options": [
+      "pay for",
+      "measure",
+      "send by boat or transport",
+      "taste"
+     ],
+     "answer": 2,
+     "why": "Ship = enviar/transportar a mercadoria."
+    }
+   ]
+  }
+ ]
+}

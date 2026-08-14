@@ -1,0 +1,259 @@
+{
+ "num": 1051,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Sugar travels around the world. Usually it goes by sea, in big ships. Ships are slow, but they are cheap. One ship can carry a lot of sugar.<br><br>Sometimes sugar goes by truck or by train inside a country. First, a truck takes the sugar from the mill to the port. Then the ship carries it across the ocean. At the end, another truck takes it to the client.<br><br>Every route has a cost. By sea is the cheapest. By plane is the fastest, but it is very expensive. So most sugar goes by sea, and only documents go by plane.",
+   "items": [
+    {
+     "q": "How does sugar usually travel?",
+     "options": [
+      "By plane",
+      "By train",
+      "By car",
+      "By sea, in ships"
+     ],
+     "answer": 3,
+     "why": "\"Usually it goes by sea, in big ships.\""
+    },
+    {
+     "q": "What takes the sugar from the mill to the port?",
+     "options": [
+      "A truck",
+      "A ship",
+      "A train",
+      "A plane"
+     ],
+     "answer": 0,
+     "why": "\"First, a truck takes the sugar from the mill to the port.\""
+    },
+    {
+     "q": "Which route is the cheapest?",
+     "options": [
+      "By plane",
+      "By sea",
+      "By truck",
+      "By train"
+     ],
+     "answer": 1,
+     "why": "\"By sea is the cheapest.\""
+    },
+    {
+     "q": "The text suggests that companies choose ships because they…",
+     "options": [
+      "are the fastest option",
+      "never need trucks",
+      "are cheap and carry a lot",
+      "carry only documents"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz que navios são baratos e levam muito açúcar — por isso a escolha."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which sentence?",
+     "options": [
+      "Most sugar travels by plane.",
+      "A truck goes from the mill to the port.",
+      "Sugar usually travels by sea.",
+      "By plane is expensive."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que avião é caro e só documentos vão por avião — logo, a maioria NÃO vai de avião."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ethan mostrando o caminho do açúcar no mapa. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! Look at my map. I want to show you the journey of the sugar. It is easy to follow.<br><br>First, a truck picks up the sugar at the mill. The truck drives to the port in Santos. It is not a long trip, so the truck is a good choice for this part.<br><br>Then the sugar goes on a big ship. The ship crosses the ocean. This part is slow. It takes many days, sometimes weeks. But the ship is cheap, and it carries a lot of sugar. That is why we love ships.<br><br>When the ship arrives, another truck picks up the sugar. This truck takes it to the client. In some countries, we use a train, because a train can also carry a lot.<br><br>We almost never use a plane. A plane is very fast, but it is too expensive for sugar. We only send documents by plane.<br><br>So the route is simple: truck, ship, and truck again. Sometimes a train helps too. It is slow, but it is cheap. And for sugar, cheap is the right choice. Thank you for looking at my map!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What picks up the sugar at the mill first?",
+     "options": [
+      "A truck",
+      "A ship",
+      "A train",
+      "A plane"
+     ],
+     "answer": 0,
+     "why": "\"First, a truck picks up the sugar at the mill.\""
+    },
+    {
+     "q": "Which part of the journey is slow?",
+     "options": [
+      "The truck to the port",
+      "The truck to the client",
+      "The train inside the country",
+      "The ship crossing the ocean"
+     ],
+     "answer": 3,
+     "why": "\"Then the sugar goes on a big ship… This part is slow.\""
+    },
+    {
+     "q": "Why does the company almost never use a plane for sugar?",
+     "options": [
+      "It is too small",
+      "It is too expensive",
+      "It is too slow",
+      "It is not safe"
+     ],
+     "answer": 1,
+     "why": "\"A plane is very fast, but it is too expensive for sugar.\""
+    },
+    {
+     "q": "Ethan suggests that the company likes ships because…",
+     "options": [
+      "they are cheap and carry a lot",
+      "they go to every country",
+      "they never need trucks",
+      "they are very fast"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"the ship is cheap, and it carries a lot of sugar. That is why we love ships.\""
+    },
+    {
+     "q": "How does Ethan feel about the whole route?",
+     "options": [
+      "It is too difficult",
+      "It is a big problem",
+      "It is simple and cheap",
+      "It is very fast"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"the route is simple: truck, ship, and truck again… it is cheap. And cheap is good for sugar!\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>ship</strong> leaves the port tomorrow.\" A ship is…",
+     "options": [
+      "a road for trucks",
+      "a small box",
+      "a train station",
+      "a big boat that carries cargo on the sea"
+     ],
+     "answer": 3,
+     "why": "Ship = navio: barco grande que leva carga pelo mar."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ takes the sugar from the mill to the port.\"",
+     "options": [
+      "route",
+      "ship",
+      "truck",
+      "plane"
+     ],
+     "answer": 2,
+     "why": "Truck = caminhão: leva a carga da usina até o porto."
+    },
+    {
+     "q": "\"Some countries move cargo by <strong>train</strong>.\" A train…",
+     "options": [
+      "flies in the sky",
+      "runs on rails and carries a lot",
+      "sails on the sea",
+      "is a small car"
+     ],
+     "answer": 1,
+     "why": "Train = trem: anda sobre trilhos e leva muita carga."
+    },
+    {
+     "q": "Choose the correct word: \"Documents can go by ___ because it is fast.\"",
+     "options": [
+      "ship",
+      "plane",
+      "train",
+      "truck"
+     ],
+     "answer": 1,
+     "why": "Plane = avião: é rápido, bom para documentos."
+    },
+    {
+     "q": "\"Each <strong>route</strong> has a cost.\" A route is…",
+     "options": [
+      "a way or path from one place to another",
+      "a kind of sugar",
+      "a price list",
+      "a type of ship"
+     ],
+     "answer": 0,
+     "why": "Route = rota: o caminho de um lugar até outro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem quando falamos de envio e transporte. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The truck will <strong>pick up</strong> the sugar at the mill.\" To pick up means to…",
+     "options": [
+      "clean",
+      "sell",
+      "count",
+      "collect or take"
+     ],
+     "answer": 3,
+     "why": "Pick up = pegar, coletar a carga."
+    },
+    {
+     "q": "\"The truck will <strong>drop off</strong> the sugar at the port.\" To drop off means to…",
+     "options": [
+      "leave or deliver",
+      "lose",
+      "buy",
+      "hide"
+     ],
+     "answer": 0,
+     "why": "Drop off = deixar, entregar a carga em um lugar."
+    },
+    {
+     "q": "\"The ship will <strong>set off</strong> tomorrow morning.\" To set off means to…",
+     "options": [
+      "start a journey",
+      "wait",
+      "come back",
+      "stop"
+     ],
+     "answer": 0,
+     "why": "Set off = partir, começar a viagem."
+    },
+    {
+     "q": "\"The sugar must <strong>ship out</strong> this week.\" To ship out means to…",
+     "options": [
+      "be paid",
+      "be tested",
+      "be stored",
+      "be sent or dispatched"
+     ],
+     "answer": 3,
+     "why": "Ship out = ser enviado, sair para o cliente."
+    },
+    {
+     "q": "\"The ship arrived <strong>on time</strong>.\" On time means…",
+     "options": [
+      "very early",
+      "too late",
+      "not at all",
+      "at the right time, not late"
+     ],
+     "answer": 3,
+     "why": "On time = no horário, sem atraso."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 348,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Warehousing, at senior level, is not a cost line — it is a capability that shapes what the company can promise its customers. A warehouse designed for speed enables a different service offer than one designed for volume; a warehouse designed for flexibility supports a different product strategy than one designed for throughput. The physical building is downstream of the commercial promise, not the other way round.<br><br>Executives who understand this treat warehouse decisions as part of the product strategy. When a new customer segment opens up, the warehouse question is asked at the same time as the pricing and marketing questions — not a year later, when the building is already wrong for what the business has become.<br><br>Built on this understanding, warehousing becomes a quiet source of competitive advantage. The companies that do not understand it end up with expensive real estate holding the wrong product for the wrong customer, wondering why their unit economics refuse to improve.",
+   "items": [
+    {
+     "q": "According to the text, how should warehousing be understood at senior level?",
+     "options": [
+      "As a cost line to be minimised",
+      "As a real-estate investment decision",
+      "As a capability that shapes what the company can promise",
+      "As a purely operational matter for logistics teams"
+     ],
+     "answer": 2,
+     "why": "\"it is a capability that shapes what the company can promise its customers.\""
+    },
+    {
+     "q": "What does the text mean by \"the physical building is downstream of the commercial promise\"?",
+     "options": [
+      "The building follows from the promise, not the reverse",
+      "The promise should be designed to fit the existing building",
+      "The building determines what the company can promise",
+      "The building and the promise are unrelated"
+     ],
+     "answer": 0,
+     "why": "\"downstream of the commercial promise, not the other way round\" — a promessa vem primeiro; o prédio decorre dela."
+    },
+    {
+     "q": "When a new customer segment opens up, when do executives who understand warehousing ask the warehouse question?",
+     "options": [
+      "A year later, once the building shows its limits",
+      "Only after pricing and marketing are settled",
+      "Once the segment has proven profitable",
+      "At the same time as the pricing and marketing questions"
+     ],
+     "answer": 3,
+     "why": "\"the warehouse question is asked at the same time as the pricing and marketing questions.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Poor warehouse fit shows up in weak unit economics",
+      "A warehouse optimised for throughput may struggle with flexibility",
+      "Warehousing can be a quiet source of competitive advantage",
+      "Building the right warehouse is a decision that can wait until strategy is proven"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto todo argumenta que a decisão de warehouse deve ser feita junto com a estratégia — adiá-la é o erro que ele critica."
+    },
+    {
+     "q": "What does the final paragraph suggest about companies with stubbornly weak unit economics?",
+     "options": [
+      "Their pricing is the only thing that needs to change",
+      "Their marketing has failed to reach the right segment",
+      "They are simply spending too little on real estate",
+      "The cause may be a warehouse mismatched to product and customer"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"expensive real estate holding the wrong product for the wrong customer, wondering why their unit economics refuse to improve\" — o desencaixe do armazém é a causa implícita."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily apresentando o redesenho do armazém à liderança. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let me set the scene before we get into floor plans. This building was designed years ago for B2B pallets — full loads, predictable, going out by the truckload to a handful of accounts. That worked beautifully for the business we were.<br><br>But the new B2C segment behaves nothing like that. We're now picking single items, hundreds of small orders a day, each one going to a different doorstep. Trying to run that flow through a pallet-shaped building, we're seeing pick times double and errors climb. The racking, the aisles, the whole layout is optimised for exactly the wrong thing.<br><br>So I don't want us to think of this as a maintenance job — patching a warehouse. This is a strategic decision. Whatever we choose to promise these new customers on delivery speed, we can only promise it if the building can physically deliver it. Get the design wrong and we've locked in the constraint for twenty years.<br><br>My proposal is that we design the space around the service we intend to sell, not around what fits neatly on the current footprint. Give me a fortnight with the commercial team, and I'll come back with two options and the unit economics behind each.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What was the original building designed for?",
+     "options": [
+      "B2B pallets going out by the truckload",
+      "Single-item B2C orders",
+      "Cold storage of perishable goods",
+      "Cross-docking between suppliers"
+     ],
+     "answer": 0,
+     "why": "\"This building was designed years ago for B2B pallets — full loads… going out by the truckload.\""
+    },
+    {
+     "q": "What symptoms is Emily seeing from running B2C flow through the old building?",
+     "options": [
+      "Fewer orders but larger ones",
+      "Pick times doubling and errors climbing",
+      "Falling storage costs but rising rent",
+      "Faster picking but more returns"
+     ],
+     "answer": 1,
+     "why": "\"we're seeing pick times double and errors climb.\""
+    },
+    {
+     "q": "Why does Emily insist this is NOT a maintenance job?",
+     "options": [
+      "Because the building is too old to patch",
+      "Because the landlord has refused further changes",
+      "Because the budget is too small for repairs",
+      "Because it is a strategic decision that sets what the company can promise customers"
+     ],
+     "answer": 3,
+     "why": "\"This is a strategic decision. Whatever we choose to promise these new customers… we can only promise it if the building can physically deliver it.\""
+    },
+    {
+     "q": "When Emily says \"Get the design wrong and we've locked in the constraint for twenty years\", she implies that…",
+     "options": [
+      "Warehouse decisions have very long-lasting consequences",
+      "The team has twenty years to decide",
+      "The design can be easily reversed later",
+      "The lease runs for exactly twenty years"
+     ],
+     "answer": 0,
+     "why": "Inferência: uma escolha física de armazém amarra a operação por muito tempo — o custo do erro é estrutural, não pontual."
+    },
+    {
+     "q": "What does Emily's proposal reveal about how she wants to approach the redesign?",
+     "options": [
+      "She wants to start from what fits the current footprint",
+      "She wants to design around the service they intend to sell",
+      "She wants to postpone the decision until sales grow",
+      "She wants to cut costs before consulting the commercial team"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"design the space around the service we intend to sell, not around what fits neatly on the current footprint\" — a promessa comercial guia o prédio."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"At this level, warehousing is a strategic <strong>capability</strong>, not a storage function.\" A capability is…",
+     "options": [
+      "a legal obligation",
+      "a physical piece of equipment",
+      "a fixed operating cost",
+      "the power or capacity to do something well"
+     ],
+     "answer": 3,
+     "why": "Capability = capacidade: aquilo que a organização consegue fazer bem, e que sustenta a estratégia."
+    },
+    {
+     "q": "Choose the correct term: \"The warehouse is optimised for volume, so its raw ___ is high but same-day dispatch is impossible.\"",
+     "options": [
+      "real estate",
+      "service offer",
+      "throughput",
+      "customer segment"
+     ],
+     "answer": 2,
+     "why": "Throughput = taxa de processamento: o volume que passa pelo sistema, distinto da velocidade prometida ao cliente."
+    },
+    {
+     "q": "\"A promise of next-day delivery is only credible if the building can honour that <strong>commercial promise</strong>.\" A commercial promise is…",
+     "options": [
+      "a supplier contract",
+      "what the company commits to deliver to its customers",
+      "a marketing slogan with no operational backing",
+      "an internal cost target"
+     ],
+     "answer": 1,
+     "why": "Commercial promise = promessa comercial: o compromisso de serviço que a empresa assume perante o cliente."
+    },
+    {
+     "q": "Choose the correct word: \"Each ___ — B2B pallets versus B2C parcels — needs a fundamentally different warehousing strategy.\"",
+     "options": [
+      "throughput",
+      "downstream",
+      "customer segment",
+      "flexibility"
+     ],
+     "answer": 2,
+     "why": "Customer segment = segmento de cliente: grupos distintos que exigem operações distintas."
+    },
+    {
+     "q": "\"Expensive <strong>real estate</strong> holding the wrong stock quietly erodes the <strong>unit economics</strong>.\" This sentence contrasts…",
+     "options": [
+      "the physical property with the per-unit profitability",
+      "throughput with flexibility",
+      "marketing spend with sales revenue",
+      "headcount with automation"
+     ],
+     "answer": 0,
+     "why": "Real estate = imóveis; unit economics = economia unitária (custo/lucro por unidade). O prédio caro pesa sobre a rentabilidade por item."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre operações e reestruturação de armazéns. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the capital for the new layout.\" To sign off on means to…",
+     "options": [
+      "review informally",
+      "formally approve",
+      "delay indefinitely",
+      "publicly announce"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new picking process one aisle at a time.\" To roll out means to…",
+     "options": [
+      "cancel it gradually",
+      "test it in secret",
+      "implement it in stages",
+      "explain it to suppliers"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Operations <strong>pushed back on</strong> the aggressive delivery target.\" They…",
+     "options": [
+      "rewrote the whole plan",
+      "accepted it without question",
+      "postponed reading it",
+      "resisted or challenged it"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"Redrawing the layout won't <strong>move the needle</strong> on delivery speed unless we change the racking too.\" This means it will…",
+     "options": [
+      "provoke resistance from staff",
+      "not make a noticeable difference",
+      "cost more than budgeted",
+      "take too long to measure"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    },
+    {
+     "q": "\"Once we commit to same-day dispatch, we have to <strong>follow through</strong>, whatever the peak-season volume.\" To follow through means to…",
+     "options": [
+      "delegate it to another site",
+      "measure it more carefully",
+      "renegotiate the terms",
+      "carry the commitment to completion"
+     ],
+     "answer": 3,
+     "why": "Follow through = levar até o fim aquilo que foi assumido."
+    }
+   ]
+  }
+ ]
+}

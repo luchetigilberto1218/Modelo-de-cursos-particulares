@@ -1,0 +1,259 @@
+{
+ "num": 1176,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "IT supports every Czarnikow office, from London to São Paulo. When you talk to the help desk or join an online meeting, you need some simple English words.<br><br>Today the lesson is Fast and Slow Connection. You will learn five useful words: fast, slow, strong, weak and stable. You will use them in short, easy sentences.<br><br>Good IT habits protect the whole company. Small IT habits today save big problems tomorrow. Go step by step. You can do it!",
+   "items": [
+    {
+     "q": "What is the lesson about today?",
+     "options": [
+      "A meeting with the CEO",
+      "A holiday in São Paulo",
+      "Fast and slow connection",
+      "A new office in London"
+     ],
+     "answer": 2,
+     "why": "\"Today the lesson is Fast and Slow Connection.\""
+    },
+    {
+     "q": "How many new words will you learn?",
+     "options": [
+      "Three",
+      "Five",
+      "Ten",
+      "Two"
+     ],
+     "answer": 1,
+     "why": "\"You will learn five useful words: fast, slow, strong, weak and stable.\""
+    },
+    {
+     "q": "When do you need these words?",
+     "options": [
+      "When you go home",
+      "When you write a report",
+      "When you have lunch",
+      "When you talk to the help desk or join a meeting"
+     ],
+     "answer": 3,
+     "why": "\"When you talk to the help desk or join an online meeting, you need some simple English words.\""
+    },
+    {
+     "q": "The text says \"Small IT habits today save big problems tomorrow.\" This suggests that…",
+     "options": [
+      "IT is not important",
+      "good habits now help you later",
+      "big problems are always fun",
+      "you should not use IT"
+     ],
+     "answer": 1,
+     "why": "Inferência: pequenos hábitos hoje evitam problemas grandes depois."
+    },
+    {
+     "q": "\"You can do it!\" suggests that the lesson is…",
+     "options": [
+      "not for Czarnikow",
+      "easy and possible for you",
+      "very long and hard",
+      "only for IT experts"
+     ],
+     "answer": 1,
+     "why": "Inferência: a frase encoraja o aluno — a lição é simples e possível."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James ajudar um colega numa videochamada lenta. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! This is James from IT. I can help you with your slow video call. Let's fix it together, step by step.<br><br>First, look at your screen. Is the connection fast or slow now? Okay, it is slow. That is fine. We can make it better.<br><br>Is the signal strong or weak? It looks weak. A weak signal makes the call slow and not clear. Please move close to the router. Good. Now the signal is more strong.<br><br>Is the call stable now, or does it stop and start? It stops sometimes. Let's try one thing. Please close the other programs. Now try again.<br><br>Better? Yes! The call is fast and stable now. The signal is strong. Great job!<br><br>Remember: if it is slow again, call the help desk. Small IT habits today save big problems tomorrow. Have a good meeting!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "The CEO",
+      "A client from London",
+      "James from IT",
+      "A new colleague"
+     ],
+     "answer": 2,
+     "why": "\"This is James from IT.\""
+    },
+    {
+     "q": "How is the connection at the start?",
+     "options": [
+      "Perfect",
+      "Off",
+      "Fast",
+      "Slow"
+     ],
+     "answer": 3,
+     "why": "\"it is slow.\""
+    },
+    {
+     "q": "What does James ask the user to do to make the signal strong?",
+     "options": [
+      "Turn off the computer",
+      "Move close to the router",
+      "Call the CEO",
+      "Go to another office"
+     ],
+     "answer": 1,
+     "why": "\"Please move close to the router.\""
+    },
+    {
+     "q": "Why does James ask the user to close the other programs?",
+     "options": [
+      "To change the language",
+      "To save the file",
+      "To make the call more stable",
+      "To end the meeting"
+     ],
+     "answer": 2,
+     "why": "Inferência: os outros programas deixam a chamada instável; fechá-los ajuda a estabilizar."
+    },
+    {
+     "q": "How does James feel at the end?",
+     "options": [
+      "Angry",
+      "Sad",
+      "Tired and bored",
+      "Happy and helpful"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele diz \"Great job!\" e \"Have a good meeting!\" — está contente e prestativo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The internet is very <strong>fast</strong> today.\" Fast means…",
+     "options": [
+      "slow",
+      "loud",
+      "quick",
+      "old"
+     ],
+     "answer": 2,
+     "why": "Fast = rápido."
+    },
+    {
+     "q": "\"My video is <strong>slow</strong>, so I can't see you well.\" Slow means…",
+     "options": [
+      "not fast",
+      "very strong",
+      "new",
+      "very loud"
+     ],
+     "answer": 0,
+     "why": "Slow = lento, não rápido."
+    },
+    {
+     "q": "Choose the correct word: \"The signal is ___, so the call is clear and fast.\"",
+     "options": [
+      "weak",
+      "broken",
+      "strong",
+      "slow"
+     ],
+     "answer": 2,
+     "why": "Strong = forte; um sinal forte deixa a chamada clara."
+    },
+    {
+     "q": "\"The signal is <strong>weak</strong> here.\" Weak means…",
+     "options": [
+      "very fast",
+      "very big",
+      "not strong",
+      "new"
+     ],
+     "answer": 2,
+     "why": "Weak = fraco, o contrário de forte."
+    },
+    {
+     "q": "Choose the correct word: \"The call does not stop now. It is ___.\"",
+     "options": [
+      "slow",
+      "stable",
+      "weak",
+      "closed"
+     ],
+     "answer": 1,
+     "why": "Stable = estável; a chamada não para."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que você ouve quando fala com o suporte de IT. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>log in</strong> now?\" To log in means to…",
+     "options": [
+      "call a friend",
+      "enter with your name and password",
+      "turn off the computer",
+      "close the program"
+     ],
+     "answer": 1,
+     "why": "Log in = entrar no sistema com usuário e senha."
+    },
+    {
+     "q": "\"Please <strong>restart</strong> your computer.\" To restart means to…",
+     "options": [
+      "start it again",
+      "sell it",
+      "paint it",
+      "clean it"
+     ],
+     "answer": 0,
+     "why": "Restart = reiniciar, ligar de novo."
+    },
+    {
+     "q": "\"I will <strong>call the help desk</strong>.\" This means you will…",
+     "options": [
+      "ask IT support for help",
+      "go home",
+      "write an email to a client",
+      "buy a new phone"
+     ],
+     "answer": 0,
+     "why": "Call the help desk = ligar para o suporte de IT."
+    },
+    {
+     "q": "\"Please <strong>hold on</strong> a moment.\" To hold on means to…",
+     "options": [
+      "go out",
+      "wait",
+      "run",
+      "stop working"
+     ],
+     "answer": 1,
+     "why": "Hold on = espere um momento."
+    },
+    {
+     "q": "\"Let's <strong>try again</strong>.\" This means…",
+     "options": [
+      "call the CEO",
+      "stop and go home",
+      "do it one more time",
+      "change the office"
+     ],
+     "answer": 2,
+     "why": "Try again = tentar de novo, mais uma vez."
+    }
+   ]
+  }
+ ]
+}

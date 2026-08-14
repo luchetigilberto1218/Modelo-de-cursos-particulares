@@ -10,21 +10,21 @@
     {
      "q": "What is today's lesson about?",
      "options": [
-      "Simple tax calculation",
       "New office rules",
+      "Simple tax calculation",
       "Travel plans",
       "A company party"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Today's lesson is about simple tax calculation.\""
     },
     {
      "q": "According to the text, taxes are…",
      "options": [
       "one more part of the company's routine",
-      "only for the manager",
+      "not important",
       "impossible to understand",
-      "not important"
+      "only for the manager"
      ],
      "answer": 0,
      "why": "\"Taxes are just one more part of the company's routine.\""
@@ -32,34 +32,34 @@
     {
      "q": "When does the fiscal team check the numbers?",
      "options": [
-      "After the deadline",
-      "Never",
+      "Before every deadline",
       "Only once a year",
-      "Before every deadline"
+      "After the deadline",
+      "Never"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"the fiscal team checks the numbers before every deadline.\""
     },
     {
      "q": "The phrase \"one small step at a time\" suggests that you should…",
      "options": [
-      "learn slowly and with patience",
       "stop studying English",
+      "learn everything in one day",
       "only read the numbers",
-      "learn everything in one day"
+      "learn slowly and with patience"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"Go slowly — one small step at a time\" pede paciência, um passo de cada vez."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "you should study alone",
       "learning English is impossible",
+      "you can learn English step by step",
       "taxes are always easy",
-      "you can learn English step by step"
+      "you should study alone"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"English comes in CAN's… You can do it!\" — o texto é positivo e encorajador."
     }
    ]
@@ -77,54 +77,54 @@
     {
      "q": "What does Sophie compare in this audio?",
      "options": [
-      "Taxes in two countries",
       "Two office desks",
+      "Two deadlines",
       "Two managers",
-      "Two deadlines"
+      "Taxes in two countries"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Today let's compare taxes in two countries.\""
     },
     {
      "q": "The tax in Country A is…",
      "options": [
-      "higher than in Country B",
-      "the same as Country B",
+      "lower than in Country B",
       "not on the form",
-      "lower than in Country B"
+      "the same as Country B",
+      "higher than in Country B"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"the tax in Country A is higher than the tax in Country B.\""
     },
     {
      "q": "The number in Country B is…",
      "options": [
       "wrong",
-      "smaller",
+      "bigger",
       "missing",
-      "bigger"
+      "smaller"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The number in Country B is smaller.\""
     },
     {
      "q": "Which word does Sophie use to compare?",
      "options": [
-      "\"than\"",
+      "\"and\"",
       "\"but\"",
-      "\"because\"",
-      "\"and\""
+      "\"than\"",
+      "\"because\""
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: ela repete \"higher than, lower than, bigger than, smaller than\" — a palavra-chave para comparar é \"than\"."
     },
     {
      "q": "How would you best describe Sophie's tone?",
      "options": [
-      "Bored and tired",
+      "Nervous and unsure",
       "Calm and encouraging",
       "Angry and fast",
-      "Nervous and unsure"
+      "Bored and tired"
      ],
      "answer": 1,
      "why": "Inferência: \"Take it slow. You can do it!\" — ela é calma e encorajadora."
@@ -141,8 +141,8 @@
      "options": [
       "baixo",
       "alto",
-      "novo",
-      "pequeno"
+      "pequeno",
+      "novo"
      ],
      "answer": 1,
      "why": "High = alto."
@@ -150,45 +150,45 @@
     {
      "q": "Choose the correct word: \"The tax in Country B is ___, so we pay less.\"",
      "options": [
-      "low",
-      "high",
+      "big",
       "long",
-      "big"
+      "high",
+      "low"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Low = baixo; se pagamos menos, o imposto é baixo."
     },
     {
      "q": "\"Country A has a <strong>big</strong> number on the form.\" <strong>Big</strong> means…",
      "options": [
-      "grande",
-      "pequeno",
       "certo",
-      "alto"
+      "grande",
+      "alto",
+      "pequeno"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Big = grande."
     },
     {
      "q": "Choose the correct word: \"We check every ___ number before the deadline.\"",
      "options": [
-      "late",
       "high",
       "small",
+      "late",
       "low"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Small = pequeno; checamos cada número pequeno também."
     },
     {
      "q": "\"The tax is higher <strong>than</strong> last year.\" <strong>Than</strong> means…",
      "options": [
-      "do que",
       "porque",
+      "e",
       "mas",
-      "e"
+      "do que"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Than = do que; usamos para comparar (higher than = mais alto do que)."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager must <strong>sign off on</strong> the tax form.\" To sign off on means to…",
      "options": [
+      "approve it",
       "throw it away",
       "read it fast",
-      "approve it",
       "print it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Sign off on = aprovar, dar o \"ok\" final."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new tax form next month.\" To roll out means to…",
      "options": [
       "hide it",
-      "start using it",
       "cancel it",
-      "lose it"
+      "lose it",
+      "start using it"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Roll out = colocar em uso, lançar."
     },
     {
      "q": "\"Please <strong>fill in</strong> the tax form.\" To fill in means to…",
      "options": [
+      "send it back",
       "write the information",
       "sign your name only",
-      "read it aloud",
-      "send it back"
+      "read it aloud"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fill in = preencher (escrever as informações)."
     },
     {
      "q": "\"Let's <strong>go over</strong> the numbers before the deadline.\" To go over means to…",
      "options": [
-      "delete them",
-      "copy them",
       "check them carefully",
-      "translate them"
+      "delete them",
+      "translate them",
+      "copy them"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Go over = revisar, checar com cuidado."
     },
     {
      "q": "\"We must <strong>hand in</strong> the form today.\" To hand in means to…",
      "options": [
-      "keep it at home",
       "lose it",
-      "start it",
-      "give or submit it"
+      "give or submit it",
+      "keep it at home",
+      "start it"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Hand in = entregar (enviar/submeter)."
     }
    ]

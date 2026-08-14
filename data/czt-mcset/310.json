@@ -11,9 +11,9 @@
      "q": "What happens to the goods after they are unloaded?",
      "options": [
       "They are sent back to the supplier",
-      "They are counted and left on the floor",
+      "They are stored on a shelf for days",
       "They are sorted and loaded onto another truck",
-      "They are stored on a shelf for days"
+      "They are counted and left on the floor"
      ],
      "answer": 2,
      "why": "\"unloaded, sorted, and almost immediately loaded onto another truck\"."
@@ -21,9 +21,9 @@
     {
      "q": "How long do products stay in the warehouse?",
      "options": [
-      "Days",
-      "Months",
       "Weeks",
+      "Months",
+      "Days",
       "Hours"
      ],
      "answer": 3,
@@ -34,32 +34,32 @@
      "options": [
       "More shelf space",
       "Bigger trucks",
-      "Speed and lower storage cost",
-      "Less paperwork"
+      "Less paperwork",
+      "Speed and lower storage cost"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"The benefit is speed and a lower storage cost.\""
     },
     {
      "q": "The text suggests that cross-docking needs…",
      "options": [
       "cheap workers",
-      "good timing and coordination",
       "many shelves",
-      "a very big warehouse"
+      "a very big warehouse",
+      "good timing and coordination"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"it only works when everything is well coordinated\" — depende de tempo e coordenação."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "Goods should stay on the shelf for a long time",
       "A late truck can cause problems",
-      "Storage cost can be reduced",
-      "Cross-docking is fast"
+      "Goods should stay on the shelf for a long time",
+      "Cross-docking is fast",
+      "Storage cost can be reduced"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: o texto todo defende NÃO guardar os produtos na prateleira."
     }
    ]
@@ -78,8 +78,8 @@
      "q": "Where do the inbound trucks arrive?",
      "options": [
       "Behind the shelves",
-      "In the office",
       "At the door on the right",
+      "In the office",
       "At the door on the left"
      ],
      "answer": 3,
@@ -89,44 +89,44 @@
      "q": "What do the workers do after they unload the pallets?",
      "options": [
       "They put them on a shelf",
-      "They send them back",
       "They count them for a week",
-      "They sort them by destination"
+      "They sort them by destination",
+      "They send them back"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Then they sort them — this group goes to São Paulo, that group goes to Santos.\""
     },
     {
      "q": "How long is the sugar in the warehouse?",
      "options": [
-      "Less than ninety minutes",
+      "One week",
       "A few hours only at night",
-      "About two days",
-      "One week"
+      "Less than ninety minutes",
+      "About two days"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"the sugar is here for less than ninety minutes.\""
     },
     {
      "q": "Why does Oliver watch the schedule all day?",
      "options": [
+      "Because the trucks are old",
       "Because a late truck stops the whole flow",
-      "Because the office asks for it",
       "Because the workers are slow",
-      "Because the trucks are old"
+      "Because the office asks for it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"If one inbound truck is late, the whole flow stops\" — por isso ele vigia os horários."
     },
     {
      "q": "What does Oliver mean by \"we move the sugar, but we never keep it\"?",
      "options": [
-      "The sugar is not stored, only passed through",
-      "The sugar belongs to another company",
+      "The sugar is sold very fast",
       "The sugar is thrown away",
-      "The sugar is sold very fast"
+      "The sugar belongs to another company",
+      "The sugar is not stored, only passed through"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: a ideia do cross-docking é passar a mercadoria adiante sem armazenar."
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"The team will <strong>unload</strong> the truck in ten minutes.\" To unload means to…",
      "options": [
-      "put the goods on the truck",
-      "drive the truck away",
+      "clean the truck",
       "take the goods off the truck",
-      "clean the truck"
+      "drive the truck away",
+      "put the goods on the truck"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "To unload = descarregar, tirar a carga do caminhão."
     },
     {
      "q": "Choose the correct word: \"We ___ the boxes by city before we send them.\"",
      "options": [
       "sort",
+      "sell",
       "unload",
-      "buy",
-      "sell"
+      "buy"
      ],
      "answer": 0,
      "why": "To sort = separar / triar, aqui por cidade."
@@ -162,22 +162,22 @@
      "q": "\"The products never sit on a <strong>shelf</strong>.\" A shelf is…",
      "options": [
       "a worker",
-      "a flat board to store things",
+      "a door",
       "a type of truck",
-      "a door"
+      "a flat board to store things"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Shelf = prateleira, onde se guardam as coisas."
     },
     {
      "q": "Choose the correct word: \"Cross-docking cuts the ___ cost because goods are not kept for long.\"",
      "options": [
-      "coffee",
-      "storage",
       "travel",
-      "phone"
+      "phone",
+      "storage",
+      "coffee"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Storage cost = custo de armazenagem, reduzido no cross-docking."
     },
     {
@@ -201,56 +201,56 @@
     {
      "q": "\"We will <strong>roll out</strong> cross-docking at all sites next year.\" To roll out means to…",
      "options": [
-      "sell it",
-      "hide it",
       "start using it step by step",
-      "stop using it"
+      "sell it",
+      "stop using it",
+      "hide it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Roll out = implementar aos poucos, colocar em prática."
     },
     {
      "q": "\"The manager must <strong>sign off on</strong> the new schedule.\" To sign off on means to…",
      "options": [
+      "delete it",
       "read it fast",
       "approve it",
-      "copy it",
-      "delete it"
+      "copy it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"If a truck is late, we have to <strong>keep up with</strong> the schedule.\" To keep up with means to…",
      "options": [
-      "stay at the same pace",
-      "cancel the plan",
       "fall behind",
-      "slow down"
+      "cancel the plan",
+      "slow down",
+      "stay at the same pace"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Keep up with = acompanhar, manter o mesmo ritmo."
     },
     {
      "q": "\"Two drivers <strong>pushed back on</strong> the new times.\" They…",
      "options": [
-      "agreed at once",
-      "wrote them down",
       "forgot them",
-      "disagreed with them"
+      "agreed at once",
+      "disagreed with them",
+      "wrote them down"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Push back on = resistir, discordar."
     },
     {
      "q": "\"We agreed the plan, but the team did not <strong>follow through</strong>.\" They…",
      "options": [
+      "called the office",
       "changed the truck",
       "did not finish what they planned",
-      "did it perfectly",
-      "called the office"
+      "did it perfectly"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Follow through = levar até o fim o que foi combinado."
     }
    ]

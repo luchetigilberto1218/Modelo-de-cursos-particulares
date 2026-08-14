@@ -1,0 +1,259 @@
+{
+ "num": 447,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Progressive tax rates are where many people slip. The temptation is to take the top rate and multiply the whole income by it, which gives a much higher number than the real tax. The correct method is slice by slice: the first slice of income is taxed at the lowest rate, the second at a higher one, the third higher still, and so on. Each slice pays its own rate; only the portion that falls in the top slice is taxed at the top rate.<br><br>Confusing the marginal rate with the effective rate is the most common error. The marginal rate is what you pay on the next pound you earn. The effective rate is what you actually pay on the whole income — and in a progressive system it is always lower.<br><br>Getting this right matters because tax decisions often turn on the marginal rate, while budgeting decisions turn on the effective rate. Using the wrong one leads to conversations that go nowhere.",
+   "items": [
+    {
+     "q": "According to the text, why does multiplying the whole income by the top rate give the wrong figure?",
+     "options": [
+      "It taxes every slice at the top rate instead of slice by slice",
+      "It forgets to convert the currency",
+      "It ignores allowances and deductions",
+      "It uses last year's rate"
+     ],
+     "answer": 0,
+     "why": "\"take the top rate and multiply the whole income by it, which gives a much higher number\" — só a faixa do topo paga a alíquota máxima."
+    },
+    {
+     "q": "What is the difference between the marginal rate and the effective rate?",
+     "options": [
+      "The marginal rate is on the next pound earned; the effective rate is on the whole income",
+      "There is no real difference",
+      "The marginal rate applies to companies; the effective rate to individuals",
+      "The marginal rate is annual; the effective rate is monthly"
+     ],
+     "answer": 0,
+     "why": "\"The marginal rate is what you pay on the next pound you earn. The effective rate is what you actually pay on the whole income.\""
+    },
+    {
+     "q": "In a progressive system, the effective rate is…",
+     "options": [
+      "impossible to calculate",
+      "higher than the marginal rate",
+      "always lower than the marginal rate",
+      "equal to the top rate"
+     ],
+     "answer": 2,
+     "why": "\"in a progressive system it is always lower\" — porque só a última faixa paga a alíquota máxima."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Each slice of income is taxed at its own rate",
+      "Your whole salary is taxed at your top rate",
+      "The rate you choose depends on the kind of decision you are making",
+      "Mixing up the two rates wastes people's time"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto inteiro argumenta contra a ideia de tributar o salário inteiro pela alíquota do topo."
+    },
+    {
+     "q": "What does \"conversations that go nowhere\" suggest about using the wrong rate?",
+     "options": [
+      "It leads to discussions built on a false number, so no useful decision follows",
+      "It only affects junior staff",
+      "It slows down the software",
+      "It always breaks the law"
+     ],
+     "answer": 0,
+     "why": "Inferência: se a base do número está errada, a conversa não chega a uma decisão útil."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry orientando o novo analista. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, let's look at what you did here. You took the salary, multiplied it by the top rate, and got a tax figure that's almost double what's actually owed. I can see why — it feels tidy to use one number. But that's not how a progressive system works.<br><br>Think of the income as a stack of slices. The first slice is taxed at the lowest rate. The next slice sits higher, so it pays a higher rate. Only the money that lands in the very top slice pays the top rate. So most of this person's salary is nowhere near the top rate at all.<br><br>Here's the trap you fell into. The top rate is the marginal rate — what they'd pay on the next pound. It is not what they pay on the whole salary. That figure is the effective rate, and it's always lower.<br><br>Redo it slice by slice, and you'll land close to the real number. And remember which rate to reach for: if we're advising on a bonus or a pay rise, we care about the marginal rate. If we're building a household budget, we use the effective rate. Grab the wrong one and the whole conversation goes nowhere.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What mistake did the analyst make in the first calculation?",
+     "options": [
+      "Rounded the figure too early",
+      "Forgot to include the bonus",
+      "Used last year's tax table",
+      "Multiplied the whole salary by the top rate"
+     ],
+     "answer": 3,
+     "why": "\"You took the salary, multiplied it by the top rate\" — quase o dobro do imposto real."
+    },
+    {
+     "q": "According to Harry, which part of the income pays the top rate?",
+     "options": [
+      "None of it",
+      "The whole salary",
+      "The first slice",
+      "Only the money in the very top slice"
+     ],
+     "answer": 3,
+     "why": "\"Only the money that lands in the very top slice pays the top rate.\""
+    },
+    {
+     "q": "Harry says the top rate is the marginal rate. What does that mean here?",
+     "options": [
+      "What they pay on the whole salary",
+      "What they would pay on the next pound earned",
+      "The average of all the rates",
+      "The lowest rate on the table"
+     ],
+     "answer": 1,
+     "why": "\"The top rate is the marginal rate — what they'd pay on the next pound.\""
+    },
+    {
+     "q": "Why does Harry mention advising on a bonus versus building a household budget?",
+     "options": [
+      "To show that each situation calls for a different rate",
+      "To recommend hiring an accountant",
+      "To suggest budgets are less important",
+      "To warn that bonuses are taxed twice"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele contrasta os dois casos para ilustrar quando usar a marginal e quando usar a efetiva."
+    },
+    {
+     "q": "What can we infer about Harry's approach to coaching?",
+     "options": [
+      "He thinks the mistake does not matter",
+      "He prefers to redo the work himself",
+      "He explains the reasoning so the analyst can avoid the trap next time",
+      "He is dismissive and just corrects the number"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele reconhece por que o erro é tentador e ensina o método, em vez de só apontar o erro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Income is taxed in slices, not all at once.\" A <strong>slice</strong> here is…",
+     "options": [
+      "a band of income taxed at one rate",
+      "a type of refund",
+      "a tax deduction",
+      "a payment deadline"
+     ],
+     "answer": 0,
+     "why": "Slice = faixa: um trecho da renda tributado a uma alíquota."
+    },
+    {
+     "q": "Choose the correct term: \"On a pay rise, what matters is the ___ rate — the tax on the next pound earned.\"",
+     "options": [
+      "marginal",
+      "average",
+      "effective",
+      "flat"
+     ],
+     "answer": 0,
+     "why": "Marginal rate = alíquota marginal: incide sobre a próxima unidade ganha."
+    },
+    {
+     "q": "Choose the correct term: \"For the family budget we used the ___ rate, since it reflects tax on the whole income.\"",
+     "options": [
+      "progressive",
+      "top",
+      "effective",
+      "marginal"
+     ],
+     "answer": 2,
+     "why": "Effective rate = alíquota efetiva: o que se paga de fato sobre toda a renda."
+    },
+    {
+     "q": "\"Only the <strong>portion</strong> above the threshold is taxed at the higher rate.\" A portion is…",
+     "options": [
+      "the tax office",
+      "the entire amount",
+      "a part of the whole",
+      "a fixed fee"
+     ],
+     "answer": 2,
+     "why": "Portion = porção: apenas a parte que ultrapassa o limite."
+    },
+    {
+     "q": "\"A <strong>progressive</strong> system taxes higher slices at higher rates.\" Progressive means…",
+     "options": [
+      "the rate rises as income rises",
+      "no tax below a limit",
+      "the same rate for everyone",
+      "the rate falls as income rises"
+     ],
+     "answer": 0,
+     "why": "Progressive = progressivo: a alíquota sobe conforme a renda aumenta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em conversas sobre cálculos e finanças. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let me <strong>walk you through</strong> the calculation step by step.\" To walk someone through means to…",
+     "options": [
+      "reject their version",
+      "speed it up",
+      "guide them carefully through each part",
+      "hand it over and leave"
+     ],
+     "answer": 2,
+     "why": "Walk someone through = guiar passo a passo por algo."
+    },
+    {
+     "q": "\"That's the trap you <strong>fell into</strong>.\" To fall into a trap means to…",
+     "options": [
+      "make the easy but wrong move",
+      "spot the mistake early",
+      "double-check the work",
+      "ask for help"
+     ],
+     "answer": 0,
+     "why": "Fall into a trap = cair na armadilha, cometer o erro fácil e tentador."
+    },
+    {
+     "q": "\"Which rate should I <strong>reach for</strong> when advising on a bonus?\" To reach for means to…",
+     "options": [
+      "choose or turn to",
+      "postpone",
+      "hide",
+      "delete"
+     ],
+     "answer": 0,
+     "why": "Reach for = recorrer a, escolher usar algo."
+    },
+    {
+     "q": "\"Redo it slice by slice and you'll <strong>land close to</strong> the real number.\" To land close to means to…",
+     "options": [
+      "miss it by a lot",
+      "ignore it",
+      "round it up",
+      "end up near it"
+     ],
+     "answer": 3,
+     "why": "Land close to = chegar perto de um resultado."
+    },
+    {
+     "q": "\"Grab the wrong rate and the whole conversation <strong>goes nowhere</strong>.\" This means the conversation…",
+     "options": [
+      "ends politely",
+      "gets heated",
+      "takes a new direction",
+      "leads to no useful result"
+     ],
+     "answer": 3,
+     "why": "Go nowhere = não levar a nada, não produzir uma decisão útil."
+    }
+   ]
+  }
+ ]
+}

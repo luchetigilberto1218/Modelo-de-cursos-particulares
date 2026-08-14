@@ -1,0 +1,259 @@
+{
+ "num": 1059,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Yesterday teaches today. The past of \"to be\" is <strong>was</strong> and <strong>were</strong>. We use <strong>was</strong> with I, he, she and it. We use <strong>were</strong> with you, we and they.<br><br>The market was high yesterday. The prices were stable last week. Ethan was at the office. Sophie and Ana were in a meeting. It was a good day.<br><br>Today is new, but yesterday helps us. We look at today and yesterday. We compare them. Yesterday's lesson is today's step.",
+   "items": [
+    {
+     "q": "What is the past of \"to be\"?",
+     "options": [
+      "was and were",
+      "is and are",
+      "do and did",
+      "have and had"
+     ],
+     "answer": 0,
+     "why": "\"The past of 'to be' is was and were.\""
+    },
+    {
+     "q": "Which word do we use with \"they\"?",
+     "options": [
+      "was",
+      "were",
+      "am",
+      "is"
+     ],
+     "answer": 1,
+     "why": "\"We use were with you, we and they.\""
+    },
+    {
+     "q": "Where were Sophie and Ana?",
+     "options": [
+      "In a meeting",
+      "On the ship",
+      "At home",
+      "In Brazil"
+     ],
+     "answer": 0,
+     "why": "\"Sophie and Ana were in a meeting.\""
+    },
+    {
+     "q": "The text suggests that the writer thinks the past is…",
+     "options": [
+      "boring",
+      "the same as today",
+      "useful for today",
+      "not important"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Yesterday teaches today\" e \"yesterday helps us\" — o passado é útil."
+    },
+    {
+     "q": "The writer would most likely AGREE that…",
+     "options": [
+      "the market is never good",
+      "we should forget yesterday",
+      "yesterday and today are connected",
+      "meetings are a waste of time"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Yesterday's lesson is today's step\" — ontem e hoje estão ligados."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ethan comparar o mercado de hoje com o de ontem. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning. Let me compare today with yesterday.<br><br>Yesterday the market was slow. The prices were low, and the mood was quiet. Not many trades. I was at my desk all day, and it was a long day.<br><br>Today is different. The market is busy now. Prices are up, and the volumes are high. Sophie was right. She said the prices were too low yesterday, and today they are better.<br><br>Last week we were very busy too. The ship was late on Monday, but the deal was good in the end. It was a great week for the team.<br><br>So, yesterday was slow, and today is strong. We learn from yesterday, and we plan for tomorrow. Thank you.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How was the market yesterday?",
+     "options": [
+      "Busy",
+      "Closed",
+      "High",
+      "Slow"
+     ],
+     "answer": 3,
+     "why": "\"Yesterday the market was slow.\""
+    },
+    {
+     "q": "How are the prices today?",
+     "options": [
+      "Down",
+      "The same",
+      "Up",
+      "Zero"
+     ],
+     "answer": 2,
+     "why": "\"Today is different… Prices are up.\""
+    },
+    {
+     "q": "What was late on Monday?",
+     "options": [
+      "The ship",
+      "The team",
+      "The meeting",
+      "Ethan"
+     ],
+     "answer": 0,
+     "why": "\"The ship was late on Monday.\""
+    },
+    {
+     "q": "The talk suggests that Sophie's opinion yesterday was…",
+     "options": [
+      "a joke",
+      "correct",
+      "wrong",
+      "unclear"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Sophie was right. She said the prices were too low yesterday\" — hoje subiram, ela acertou."
+    },
+    {
+     "q": "How does Ethan seem to feel about today?",
+     "options": [
+      "Bored",
+      "Positive",
+      "Angry",
+      "Worried"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"today is strong\" e \"a great week\" — ele está otimista."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I was at the office <strong>yesterday</strong>.\" <strong>Yesterday</strong> means…",
+     "options": [
+      "today",
+      "the day before today",
+      "tomorrow",
+      "next week"
+     ],
+     "answer": 1,
+     "why": "Yesterday = ontem, o dia antes de hoje."
+    },
+    {
+     "q": "Choose the correct word: \"The market ___ open yesterday.\"",
+     "options": [
+      "is",
+      "was",
+      "are",
+      "were"
+     ],
+     "answer": 1,
+     "why": "\"The market\" = it → usamos was."
+    },
+    {
+     "q": "Choose the correct word: \"We ___ busy last week.\"",
+     "options": [
+      "were",
+      "is",
+      "am",
+      "was"
+     ],
+     "answer": 0,
+     "why": "\"We\" usa were."
+    },
+    {
+     "q": "\"Prices were lower <strong>last</strong> week.\" <strong>Last</strong> here means…",
+     "options": [
+      "next",
+      "the best",
+      "the week before this one",
+      "final in a line"
+     ],
+     "answer": 2,
+     "why": "Last week = a semana passada, a anterior a esta."
+    },
+    {
+     "q": "Choose the correct word: \"Ethan ___ in Brazil last month.\"",
+     "options": [
+      "were",
+      "are",
+      "was",
+      "am"
+     ],
+     "answer": 2,
+     "why": "\"Ethan\" = he → was."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"You were <strong>right</strong> about the quote.\" To be right means to be…",
+     "options": [
+      "late",
+      "busy",
+      "correct",
+      "wrong"
+     ],
+     "answer": 2,
+     "why": "To be right = estar certo, correto."
+    },
+    {
+     "q": "\"It was a <strong>great deal</strong>.\" A great deal is…",
+     "options": [
+      "a small problem",
+      "a long meeting",
+      "a very good agreement",
+      "a bad price"
+     ],
+     "answer": 2,
+     "why": "A great deal = um ótimo negócio."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the plan.\" To sign off on means to…",
+     "options": [
+      "read it slowly",
+      "approve it",
+      "print it",
+      "cancel it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"We <strong>look at</strong> today and yesterday.\" To look at something means to…",
+     "options": [
+      "throw it away",
+      "sell it",
+      "hide it",
+      "examine or check it"
+     ],
+     "answer": 3,
+     "why": "Look at = olhar para, examinar."
+    },
+    {
+     "q": "\"The ship was <strong>late</strong> this morning.\" Late means…",
+     "options": [
+      "after the right time",
+      "very fast",
+      "on time",
+      "early"
+     ],
+     "answer": 0,
+     "why": "Late = atrasado, depois da hora certa."
+    }
+   ]
+  }
+ ]
+}

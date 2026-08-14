@@ -1,0 +1,259 @@
+{
+ "num": 505,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Using cloud services in practice is mostly about cost and control. The cloud charges you for exactly what you use — which is great when you use it efficiently, and painful when you do not. A forgotten test server can quietly cost thousands of pounds a month. A wrongly sized database can double the bill overnight. A badly configured storage bucket can even be publicly accessible by accident.<br><br>The rise-level discipline is simple and unglamorous. Tag every resource so you know who owns it. Set automatic shutdown for things that do not need to run overnight. Review the cloud bill every month — not for the totals, but for anything unusual that looks bigger or smaller than last month for no clear reason.<br><br>If we were to leave cloud spending unchecked, the bill would drift upward every month. Small reviews, done steadily, are the only thing that keeps it in shape.",
+   "items": [
+    {
+     "q": "According to the text, why does the cloud become painful?",
+     "options": [
+      "When you migrate too slowly",
+      "When it is offline for maintenance",
+      "When the provider raises its prices",
+      "When you use it inefficiently"
+     ],
+     "answer": 3,
+     "why": "\"great when you use it efficiently, and painful when you do not\" — a dor vem do uso ineficiente."
+    },
+    {
+     "q": "What can a wrongly sized database do?",
+     "options": [
+      "Expose data to the public",
+      "Double the bill overnight",
+      "Slow down every other server",
+      "Delete your backups"
+     ],
+     "answer": 1,
+     "why": "\"A wrongly sized database can double the bill overnight.\""
+    },
+    {
+     "q": "When reviewing the monthly bill, what should you look for?",
+     "options": [
+      "New features to enable",
+      "Only the final total",
+      "Anything unusual compared with last month",
+      "The cheapest possible provider"
+     ],
+     "answer": 2,
+     "why": "\"not for the totals, but for anything unusual that looks bigger or smaller than last month\"."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Tagging resources helps you know who owns them.",
+      "A forgotten resource can waste a lot of money.",
+      "Once cloud services are set up, they need no further attention.",
+      "Cost control needs steady, small reviews."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto defende revisão mensal contínua — a ideia de \"configurou, esqueceu\" contraria toda a lição."
+    },
+    {
+     "q": "What does the phrase \"the bill would drift upward every month\" suggest about unchecked spending?",
+     "options": [
+      "It rises slowly and quietly rather than in one jump",
+      "It becomes impossible to measure",
+      "It stays flat until the contract ends",
+      "It falls if you ignore it"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"drift upward\" descreve uma subida gradual e silenciosa, difícil de notar sem revisão."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry revisando a fatura da nuvem. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, I've been going through this month's cloud bill line by line, and I've found something that made me stop. There are three test servers that have been running for nine months. Nine months. Nobody switched them off.<br><br>I traced them back to a project that finished last spring. The team spun them up to try something, the test worked, and then everyone moved on. The servers just kept running, quietly, night and day, charging us the whole time. Nobody was watching that line on the bill.<br><br>If we had tagged those resources properly, I would have known who owned them in about ten seconds. Instead it took me half a morning of digging. So I'm going to shut them down today, and I'll set automatic shutdown on anything that doesn't need to run overnight.<br><br>Honestly, this isn't about blame. It's an easy mistake to make. But it's exactly why I want us reviewing the bill every month from now on — not the total, just anything that looks odd. A small habit like that would have caught this months ago.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What did Harry find while going through the bill?",
+     "options": [
+      "A database that had crashed",
+      "Three test servers running for nine months",
+      "A duplicate invoice from the provider",
+      "A publicly exposed storage bucket"
+     ],
+     "answer": 1,
+     "why": "\"There are three test servers that have been running for nine months.\""
+    },
+    {
+     "q": "Why were the servers still running?",
+     "options": [
+      "The team finished the test and simply moved on",
+      "The project needed them for compliance",
+      "They were kept as backups on purpose",
+      "The provider refused to shut them down"
+     ],
+     "answer": 0,
+     "why": "\"the test worked, and then everyone moved on. The servers just kept running.\""
+    },
+    {
+     "q": "What would have helped Harry identify the owner quickly?",
+     "options": [
+      "If the resources had been tagged properly",
+      "If the project had lasted longer",
+      "If the servers had been bigger",
+      "If the provider had sent an alert"
+     ],
+     "answer": 0,
+     "why": "\"If we had tagged those resources properly, I would have known who owned them in about ten seconds.\""
+    },
+    {
+     "q": "What can we infer about Harry's attitude toward the team?",
+     "options": [
+      "He is more interested in fixing the habit than in blaming anyone",
+      "He blames the team for wasting money",
+      "He plans to report them to management",
+      "He wants the project reopened"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"this isn't about blame… it's an easy mistake\" — o foco é o hábito, não a culpa."
+    },
+    {
+     "q": "Why does Harry want a monthly review of the bill?",
+     "options": [
+      "To justify moving away from the cloud",
+      "To negotiate a lower price with the provider",
+      "To catch unusual items early, before they add up",
+      "To replace the whole finance team"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"A small habit like that would have caught this months ago\" — a revisão pega o incomum cedo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Good <strong>cost control</strong> stopped the project from going over budget.\" Cost control means…",
+     "options": [
+      "paying the provider in advance",
+      "keeping spending managed and predictable",
+      "letting each team spend freely",
+      "cutting all spending to zero"
+     ],
+     "answer": 1,
+     "why": "Cost control = controle de custo: manter o gasto sob controle e previsível."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ database was charging us for far more capacity than we ever used.\"",
+     "options": [
+      "tagged",
+      "efficient",
+      "steadily",
+      "wrongly sized"
+     ],
+     "answer": 3,
+     "why": "Wrongly sized = dimensionado incorretamente — grande demais para a necessidade real."
+    },
+    {
+     "q": "\"We set <strong>automatic shutdown</strong> on the test machines.\" This means the machines…",
+     "options": [
+      "send an alert when the bill rises",
+      "turn themselves off when they are not needed",
+      "back up their data every night",
+      "run continuously without a break"
+     ],
+     "answer": 1,
+     "why": "Automatic shutdown = desligamento automático: a máquina se desliga sozinha quando não é preciso."
+    },
+    {
+     "q": "\"If nobody reviews the bill, the cost tends to <strong>drift upward</strong>.\" To drift upward means to…",
+     "options": [
+      "stay exactly the same",
+      "rise slowly and quietly over time",
+      "double instantly",
+      "drop suddenly"
+     ],
+     "answer": 1,
+     "why": "To drift upward = subir aos poucos, de forma gradual e pouco perceptível."
+    },
+    {
+     "q": "Choose the correct word: \"Reviewing the bill ___ every month is what keeps spending under control.\"",
+     "options": [
+      "steadily",
+      "overnight",
+      "publicly",
+      "wrongly"
+     ],
+     "answer": 0,
+     "why": "Steadily = de forma constante e regular — o hábito que mantém o custo em ordem."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em conversas sobre nuvem e custos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The team <strong>spun up</strong> a few servers to test the idea.\" To spin up a server means to…",
+     "options": [
+      "sell it to another team",
+      "move it to another region",
+      "shut it down",
+      "create and start it quickly"
+     ],
+     "answer": 3,
+     "why": "Spin up = criar e ligar um recurso na nuvem rapidamente."
+    },
+    {
+     "q": "\"Nobody <strong>switched off</strong> the machines after the test.\" To switch something off means to…",
+     "options": [
+      "turn it off",
+      "duplicate it",
+      "reconfigure it",
+      "turn it on"
+     ],
+     "answer": 0,
+     "why": "Switch off = desligar."
+    },
+    {
+     "q": "\"Finance asked us to <strong>keep an eye on</strong> the cloud bill.\" This means…",
+     "options": [
+      "hand it to the provider",
+      "monitor it regularly",
+      "pay it immediately",
+      "ignore it for now"
+     ],
+     "answer": 1,
+     "why": "Keep an eye on = ficar de olho, acompanhar de perto."
+    },
+    {
+     "q": "\"Forgotten resources can quickly <strong>add up</strong>.\" To add up means to…",
+     "options": [
+      "be counted incorrectly",
+      "cancel each other out",
+      "accumulate into a large total",
+      "be split between teams"
+     ],
+     "answer": 2,
+     "why": "Add up = somar-se aos poucos até virar um total grande."
+    },
+    {
+     "q": "\"Tagging every resource helps us <strong>stay on top of</strong> the costs.\" To stay on top of something means to…",
+     "options": [
+      "keep it under control and well managed",
+      "lose track of it",
+      "make it more expensive",
+      "delegate it entirely"
+     ],
+     "answer": 0,
+     "why": "Stay on top of = manter sob controle, sem deixar escapar."
+    }
+   ]
+  }
+ ]
+}

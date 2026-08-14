@@ -1,0 +1,259 @@
+{
+ "num": 504,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Working with IT effectively means treating the team as a partner, not a service counter. Give them context, not just requests. \"Our sales team needs a way to see live customer data during calls because the current delay is losing us deals\" gets a very different response from \"give us a dashboard by next week\".<br><br>Good collaboration also means accepting that IT has constraints you may not see. Security, capacity, existing integrations and support load all limit what is actually possible in any given week. When a request is rejected or delayed, it is rarely because IT does not care — it is because the real picture is more complicated than the request suggested.<br><br>The teams that work best with IT ask for outcomes, not tools. \"We need to shorten our sales cycle\" opens a much wider conversation than \"we need a Salesforce plugin\". Outcomes let IT help; tool names limit them to whatever you already thought of.",
+   "items": [
+    {
+     "q": "According to the text, how should you treat the IT team?",
+     "options": [
+      "As a service counter",
+      "As a partner",
+      "As an outside supplier",
+      "As a support desk"
+     ],
+     "answer": 1,
+     "why": "\"treating the team as a partner, not a service counter\" — parceiro, não balcão de serviço."
+    },
+    {
+     "q": "Why does the text say a request is usually rejected or delayed?",
+     "options": [
+      "Because IT does not care",
+      "Because the real picture is more complicated than the request suggested",
+      "Because the budget was not approved",
+      "Because the sales team asked too late"
+     ],
+     "answer": 1,
+     "why": "\"it is because the real picture is more complicated than the request suggested.\""
+    },
+    {
+     "q": "What is the difference between asking for outcomes and asking for tools?",
+     "options": [
+      "There is no real difference",
+      "Outcomes open a wider conversation; tool names limit IT",
+      "Tools are always faster to deliver",
+      "Outcomes cost less than tools"
+     ],
+     "answer": 1,
+     "why": "\"Outcomes let IT help; tool names limit them to whatever you already thought of.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "IT often works within limits the business does not see.",
+      "Explaining why helps IT respond better.",
+      "Context changes the kind of answer you get.",
+      "The fastest way to get results is to name the exact tool you want."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto todo argumenta contra pedir a ferramenta pronta — pedir o resultado é que abre a conversa."
+    },
+    {
+     "q": "The example about the sales team \"losing us deals\" suggests that…",
+     "options": [
+      "IT should always say yes to sales",
+      "sales and IT rarely agree",
+      "dashboards are the best solution",
+      "explaining the business impact makes a request more persuasive"
+     ],
+     "answer": 3,
+     "why": "Inferência: ao mostrar o custo real (perder negócios), o pedido ganha peso e muda a resposta da IT."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver orientando uma nova gerente comercial antes da reunião com a IT. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, before you go in there, let me give you one piece of advice. Don't walk in and ask IT for the Salesforce plugin. I know that's what you've decided you want, but the moment you name a tool, you've already narrowed the whole conversation.<br><br>Tell them the outcome instead. Say, \"our sales cycle is too long and we're losing deals because reps can't see live customer data on a call.\" That's it. Give them the problem and the reason. Let them tell you what's possible.<br><br>And go in expecting some constraints. There may be a security review, or the integration you want might clash with something they're already running. If they push back, it usually isn't because they don't care — it's because they can see the parts you can't.<br><br>One more thing. Bring them in early, not after you've promised the board a date. When you treat them as a partner, you get their best thinking. When you treat them as a counter, you get exactly what you asked for and nothing more. Trust me, you'll walk out with a better answer than the one you rehearsed.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Oliver tell the manager NOT to do?",
+     "options": [
+      "Describe the business problem",
+      "Walk in and ask IT for the Salesforce plugin",
+      "Talk to IT before the board",
+      "Mention the sales cycle at all"
+     ],
+     "answer": 1,
+     "why": "\"Don't walk in and ask IT for the Salesforce plugin.\""
+    },
+    {
+     "q": "What should she tell IT instead?",
+     "options": [
+      "The deadline the board expects",
+      "The exact software she has chosen",
+      "The budget she has available",
+      "The outcome — the problem and the reason behind it"
+     ],
+     "answer": 3,
+     "why": "\"Tell them the outcome instead… Give them the problem and the reason.\""
+    },
+    {
+     "q": "According to Oliver, if IT pushes back, it is usually because…",
+     "options": [
+      "they can see the parts she can't",
+      "they dislike the manager",
+      "they do not care about sales",
+      "they want a bigger budget"
+     ],
+     "answer": 0,
+     "why": "\"it's because they can see the parts you can't\" — eles enxergam restrições que ela não vê."
+    },
+    {
+     "q": "Why does Oliver say to bring IT in early?",
+     "options": [
+      "Because the board requires it",
+      "To reduce the project's cost",
+      "So they give their best thinking instead of just filling an order",
+      "So IT can approve the deadline faster"
+     ],
+     "answer": 2,
+     "why": "Inferência: tratados como parceiros e envolvidos cedo, contribuem com ideias; como balcão, só entregam o pedido."
+    },
+    {
+     "q": "What does Oliver imply with \"a better answer than the one you rehearsed\"?",
+     "options": [
+      "She should memorise her request",
+      "The plugin is the right choice after all",
+      "IT will simply refuse everything",
+      "IT may propose a solution she had not thought of"
+     ],
+     "answer": 3,
+     "why": "Inferência: abrindo pelo resultado, a IT pode sugerir algo melhor do que a ferramenta que ela já tinha em mente."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Treat IT as a <strong>partner</strong>, not a supplier.\" A partner is someone who…",
+     "options": [
+      "simply carries out your orders",
+      "signs your contracts",
+      "works with you toward a shared goal",
+      "reviews your budget"
+     ],
+     "answer": 2,
+     "why": "Partner = parceiro: trabalha junto rumo a um objetivo comum, não apenas executa."
+    },
+    {
+     "q": "Choose the correct word: \"Security and capacity are real ___ that limit what IT can deliver in a week.\"",
+     "options": [
+      "requests",
+      "constraints",
+      "partners",
+      "outcomes"
+     ],
+     "answer": 1,
+     "why": "Constraints = restrições: aquilo que limita o que é possível."
+    },
+    {
+     "q": "<strong>Support load</strong> refers to…",
+     "options": [
+      "the number of managers on a project",
+      "the amount of support work the team already has to handle",
+      "the weight of the servers",
+      "the cost of new software"
+     ],
+     "answer": 1,
+     "why": "Support load = carga de suporte: o volume de chamados e manutenção que a equipe já sustenta."
+    },
+    {
+     "q": "Choose the correct word: \"Don't just send a ___ — explain the business reason behind it.\"",
+     "options": [
+      "counter",
+      "constraint",
+      "partner",
+      "request"
+     ],
+     "answer": 3,
+     "why": "Request = solicitação: o pedido em si, que ganha força quando vem com contexto."
+    },
+    {
+     "q": "\"Ask IT for the <strong>outcome</strong> you need, not the tool.\" An outcome is…",
+     "options": [
+      "the person who approves the plan",
+      "the deadline you set",
+      "the result you want to achieve",
+      "the specific software you request"
+     ],
+     "answer": 2,
+     "why": "Outcome = resultado: o que você quer alcançar, não a ferramenta específica."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem ao trabalhar com times de IT. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"IT decided to <strong>roll out</strong> the new tool team by team.\" To roll out means to…",
+     "options": [
+      "implement it in stages",
+      "test it in secret",
+      "explain it to the board",
+      "cancel it slowly"
+     ],
+     "answer": 0,
+     "why": "Roll out = implantar de forma progressiva, aos poucos."
+    },
+    {
+     "q": "\"Two developers <strong>pushed back on</strong> the deadline.\" They…",
+     "options": [
+      "approved it at once",
+      "rewrote the whole plan",
+      "forgot about it",
+      "resisted or challenged it"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, questionar — sem necessariamente recusar de vez."
+    },
+    {
+     "q": "\"Please <strong>follow up on</strong> that ticket to make sure it's fully resolved.\" To follow up on means to…",
+     "options": [
+      "delegate it to sales",
+      "close it immediately",
+      "ignore it for now",
+      "check on its progress until it's done"
+     ],
+     "answer": 3,
+     "why": "Follow up on = acompanhar até a conclusão, garantir que não ficou pela metade."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the integration next week.\" To sign off on means to…",
+     "options": [
+      "formally approve it",
+      "announce it publicly",
+      "postpone it",
+      "comment informally"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Let's <strong>bring IT in</strong> early, before we promise a date.\" To bring someone in means to…",
+     "options": [
+      "involve them in the project",
+      "remove them from the project",
+      "report them to the board",
+      "replace them with a vendor"
+     ],
+     "answer": 0,
+     "why": "Bring in = envolver, trazer para dentro do projeto desde o início."
+    }
+   ]
+  }
+ ]
+}

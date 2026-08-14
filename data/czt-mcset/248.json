@@ -1,0 +1,259 @@
+{
+ "num": 248,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A warehouse is more than a big room full of boxes. It is an organised space. Every product has its own location. The goal is simple: move goods in, store them safely, find them fast, and send them out again.<br><br>A good layout helps a lot. Fast-moving items go near the door. Heavy items go on the ground. Small items go in labelled bins. Nothing is random.<br><br>The layout saves steps and saves time. Every second saved in a warehouse pays off a hundred times over.",
+   "items": [
+    {
+     "q": "What is a warehouse, according to the text?",
+     "options": [
+      "A small office near the door",
+      "A big room full of random boxes",
+      "A place only for heavy items",
+      "An organised space where every product has a location"
+     ],
+     "answer": 3,
+     "why": "\"It is an organised space. Every product has its own location.\""
+    },
+    {
+     "q": "Where do fast-moving items go?",
+     "options": [
+      "In labelled bins",
+      "Near the door",
+      "In the office",
+      "On the ground"
+     ],
+     "answer": 1,
+     "why": "\"Fast-moving items go near the door.\""
+    },
+    {
+     "q": "Why do heavy items go on the ground?",
+     "options": [
+      "Because they are small",
+      "The text does not say the exact reason, but it is safer and easier",
+      "The text says it keeps workers safe",
+      "Because they move fast"
+     ],
+     "answer": 1,
+     "why": "Inferência: pesado no chão evita acidentes e é mais fácil de mover — o texto não explica, mas é a razão lógica."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "A warehouse needs organisation",
+      "Small items go in labelled bins",
+      "A good layout saves time",
+      "You can store items in any random place"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz \"Nothing is random\" — o autor discorda de guardar em qualquer lugar."
+    },
+    {
+     "q": "\"Every second saved pays off a hundred times over\" suggests that…",
+     "options": [
+      "workers should move slowly",
+      "the warehouse loses money",
+      "the layout does not matter",
+      "small time savings become very big savings"
+     ],
+     "answer": 3,
+     "why": "Inferência: um pequeno ganho de tempo, repetido muitas vezes, vira um ganho grande."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily mostrando o armazém para um novo funcionário. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the warehouse! This is your first tour, so stay close to me. Let me show you how everything works here.<br><br>Look at the door. The boxes near the door are our fast-moving items. We send these out every day, so we keep them close. Short steps, less time.<br><br>Now look down at the ground. The heavy boxes are always on the floor, never up high. It is safer for you, and it is easier to move them.<br><br>Over here, on the shelves, we have the small parts. Every bin has a label. If you need a part, read the label and go straight to it. Do not guess. Do not walk around the room. The label tells you where it is.<br><br>One more thing. Nothing here is random. Every item has a location, and every location has a reason. When you put a box back, put it in the right place. If you save one step, you save time. And time is money in a warehouse.<br><br>Okay? Any questions? Good. Let's start.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why are the boxes near the door?",
+     "options": [
+      "They are fast-moving items sent out every day",
+      "They are heavy",
+      "They have no label",
+      "They are broken"
+     ],
+     "answer": 0,
+     "why": "\"The boxes near the door are our fast-moving items. We send these out every day.\""
+    },
+    {
+     "q": "Where are the heavy boxes?",
+     "options": [
+      "Near the door",
+      "On the floor",
+      "In the office",
+      "Up high on the shelves"
+     ],
+     "answer": 1,
+     "why": "\"The heavy boxes are always on the floor, never up high.\""
+    },
+    {
+     "q": "What should the trainee do to find a small part?",
+     "options": [
+      "Walk around the room",
+      "Guess where it is",
+      "Ask another worker",
+      "Read the label on the bin"
+     ],
+     "answer": 3,
+     "why": "\"Every bin has a label… read the label and go straight to it.\""
+    },
+    {
+     "q": "Why does Emily say \"Do not guess. Do not walk around the room\"?",
+     "options": [
+      "The room is dangerous",
+      "The parts are secret",
+      "Walking is not allowed",
+      "Guessing and walking waste time"
+     ],
+     "answer": 3,
+     "why": "Inferência: ela quer que o funcionário economize passos e tempo, indo direto ao lugar certo."
+    },
+    {
+     "q": "What does Emily think is the most important idea?",
+     "options": [
+      "Good organisation saves time and money",
+      "New workers must be fast",
+      "The warehouse is very big",
+      "Boxes should be heavy"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela repete que nada é aleatório e que economizar um passo economiza tempo e dinheiro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We keep all the boxes in the <strong>warehouse</strong>.\" A warehouse is…",
+     "options": [
+      "a small office",
+      "a shop for customers",
+      "a delivery truck",
+      "a big building where goods are stored"
+     ],
+     "answer": 3,
+     "why": "Warehouse = armazém: prédio onde as mercadorias ficam guardadas."
+    },
+    {
+     "q": "\"The new <strong>layout</strong> is much better.\" Layout means…",
+     "options": [
+      "the price of the boxes",
+      "how the space is organised",
+      "the number of workers",
+      "the name of the company"
+     ],
+     "answer": 1,
+     "why": "Layout = disposição: como o espaço é organizado."
+    },
+    {
+     "q": "Choose the correct word: \"Please ___ these boxes on the top shelf.\"",
+     "options": [
+      "open",
+      "buy",
+      "store",
+      "sell"
+     ],
+     "answer": 2,
+     "why": "To store = armazenar, guardar."
+    },
+    {
+     "q": "Choose the correct word: \"This part is easy to find because it is in a ___.\"",
+     "options": [
+      "labelled bin",
+      "long step",
+      "random box",
+      "heavy truck"
+     ],
+     "answer": 0,
+     "why": "Labelled bin = caixa etiquetada, que ajuda a achar rápido."
+    },
+    {
+     "q": "\"The good layout will <strong>pay off</strong> in the end.\" To pay off means…",
+     "options": [
+      "to take a long time",
+      "to break down",
+      "to be worth it, to bring a good result",
+      "to cost a lot of money"
+     ],
+     "answer": 2,
+     "why": "To pay off = valer a pena, trazer bom resultado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no trabalho de armazém e logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new layout.\" To sign off on means to…",
+     "options": [
+      "talk about it",
+      "print it",
+      "formally approve it",
+      "cancel it"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new system next week.\" To roll out means to…",
+     "options": [
+      "start using it, put it in place",
+      "stop using it",
+      "hide it",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar, colocar em uso."
+    },
+    {
+     "q": "\"Please <strong>keep track of</strong> the boxes near the door.\" To keep track of means to…",
+     "options": [
+      "count once a year",
+      "throw away",
+      "close them",
+      "watch and know where they are"
+     ],
+     "answer": 3,
+     "why": "Keep track of = acompanhar, saber onde as coisas estão."
+    },
+    {
+     "q": "\"We need to <strong>speed up</strong> the deliveries.\" To speed up means to…",
+     "options": [
+      "make slower",
+      "stop",
+      "pay more",
+      "make faster"
+     ],
+     "answer": 3,
+     "why": "Speed up = acelerar, fazer mais rápido."
+    },
+    {
+     "q": "\"The team <strong>ran out of</strong> space on the shelves.\" To run out of means to…",
+     "options": [
+      "have no more left",
+      "clean it",
+      "have too much",
+      "buy more"
+     ],
+     "answer": 0,
+     "why": "Run out of = ficar sem, esgotar."
+    }
+   ]
+  }
+ ]
+}

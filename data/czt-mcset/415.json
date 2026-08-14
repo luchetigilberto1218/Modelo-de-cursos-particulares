@@ -1,0 +1,259 @@
+{
+ "num": 415,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At executive level, ratios are less individual numbers and more a small dashboard of interlocking signals. The senior finance leader does not watch twenty ratios; they watch six or seven, chosen because together they cover performance, position, efficiency and risk. Each one, on its own, is limited. In combination, they give the leader a confident read on the whole business.<br><br>Good dashboards tell a story across time. Six quarters of the same six ratios side by side reveal drift that a single month's numbers hide — a slow erosion in return on capital, a steady rise in receivables days, or a margin that used to move up and down with volume but has quietly been rising for three quarters. That last pattern might signal a genuine strategic improvement, or an accounting change that deserves a closer look.<br><br>The point of the dashboard is not to watch numbers. It is to notice the drift early enough that the response can still be calm, and to catch the changes that the rest of the company has not yet felt.",
+   "items": [
+    {
+     "q": "According to the text, how many ratios does the senior finance leader actually watch?",
+     "options": [
+      "As many as possible",
+      "Twenty",
+      "Six or seven",
+      "A single decisive one"
+     ],
+     "answer": 2,
+     "why": "\"they watch six or seven, chosen because together they cover performance, position, efficiency and risk.\""
+    },
+    {
+     "q": "Why are the ratios chosen as a set rather than individually?",
+     "options": [
+      "To make the report harder to challenge",
+      "Because the board prefers longer reports",
+      "Because a single ratio is always misleading",
+      "Each ratio is limited on its own but together they cover the whole business"
+     ],
+     "answer": 3,
+     "why": "\"Each one, on its own, is limited. In combination, they give the leader a confident read on the whole business.\""
+    },
+    {
+     "q": "What does looking at six quarters side by side reveal that a single month hides?",
+     "options": [
+      "The exact cause of every change",
+      "Drift — a slow trend across time",
+      "Whether the board has read the report",
+      "The company's total headcount"
+     ],
+     "answer": 1,
+     "why": "\"Six quarters… side by side reveal drift that a single month's numbers hide.\""
+    },
+    {
+     "q": "The text suggests that a margin quietly rising for three quarters should be…",
+     "options": [
+      "investigated, since it may be strategy OR an accounting change",
+      "ignored as statistical noise",
+      "corrected back to its old range immediately",
+      "celebrated without further question"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que o padrão \"might signal a genuine strategic improvement, or an accounting change that deserves a closer look\" — logo, merece investigação, não aceitação automática."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Trends across quarters matter more than any single month",
+      "The real value of a dashboard is spotting drift early",
+      "A concise dashboard can outperform an exhaustive one",
+      "Adding more ratios always gives the leader a clearer picture"
+     ],
+     "answer": 3,
+     "why": "Inferência: a tese é que o líder observa seis ou sete sinais, não vinte — acrescentar ratios não torna a leitura mais clara."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentando o novo painel à liderança. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So this is the report I want us to retire. Twenty-two metrics, four pages, and if I'm honest, nobody at board level reads past the first one. It looks thorough. It isn't useful.<br><br>What I'm proposing instead fits on a single screen. Six ratios — one each for performance, position, efficiency and risk, plus two I'd defend to anyone. And crucially, each of them shown across the last six quarters, not just this month.<br><br>Here's why that matters. Look at receivables days. Any single month, it's within range, nobody blinks. But laid out across six quarters, it has been climbing quietly the whole time. That's cash walking out of the door, and the old report hid it in plain sight.<br><br>I'm not asking the board to watch numbers. I'm asking them to notice drift — early enough that we can respond calmly, before it becomes the kind of problem you fix in a panic. The moment a change is loud enough for everyone in the company to feel it, we've already lost the advantage of catching it first.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Harry's main criticism of the old report?",
+     "options": [
+      "It looks thorough but nobody at board level reads past the first metric",
+      "It uses the wrong ratios entirely",
+      "It is too expensive to produce",
+      "It arrives too late each quarter"
+     ],
+     "answer": 0,
+     "why": "\"Twenty-two metrics… nobody at board level reads past the first one. It looks thorough. It isn't useful.\""
+    },
+    {
+     "q": "How does Harry propose the six ratios be displayed?",
+     "options": [
+      "One ratio per page for detail",
+      "As a single current-month snapshot",
+      "Across the last six quarters, on one screen",
+      "Only when a threshold is breached"
+     ],
+     "answer": 2,
+     "why": "\"each of them shown across the last six quarters, not just this month.\""
+    },
+    {
+     "q": "Why does Harry use receivables days as his example?",
+     "options": [
+      "Any single month looks fine, but across six quarters it has been climbing quietly",
+      "It fell sharply last quarter",
+      "It is the only ratio the board understands",
+      "It is the easiest ratio to calculate"
+     ],
+     "answer": 0,
+     "why": "\"Any single month, it's within range… But laid out across six quarters, it has been climbing quietly the whole time.\""
+    },
+    {
+     "q": "When Harry says the rising receivables is \"cash walking out of the door\", he implies that…",
+     "options": [
+      "money is slowly being tied up and effectively lost to the business",
+      "the sales team is underperforming",
+      "the ratio is measured incorrectly",
+      "the company is deliberately spending more"
+     ],
+     "answer": 0,
+     "why": "Inferência: dias de recebíveis subindo significa caixa preso em contas a receber — dinheiro que deixa de estar disponível."
+    },
+    {
+     "q": "What does Harry mean by losing \"the advantage of catching it first\"?",
+     "options": [
+      "Competitors will copy the dashboard",
+      "Once a change is obvious to everyone, the chance to respond early and calmly is gone",
+      "The report will need to be redesigned again",
+      "The board will stop funding the finance team"
+     ],
+     "answer": 1,
+     "why": "Inferência: o valor do painel é notar a deriva antes que ela seja alta o bastante para todos sentirem — depois disso, resta apenas reagir em pânico."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The dashboard is built from <strong>interlocking signals</strong>, not isolated figures.\" Interlocking signals are…",
+     "options": [
+      "indicators that only make sense read together",
+      "numbers reported to the regulator",
+      "warnings that flash in red",
+      "signals that never change"
+     ],
+     "answer": 0,
+     "why": "Interlocking signals = sinais entrelaçados: cada um é limitado sozinho, mas juntos revelam o quadro."
+    },
+    {
+     "q": "Choose the correct word: \"Six quarters side by side exposed a slow ___ in return on capital that no single month showed.\"",
+     "options": [
+      "dashboard",
+      "position",
+      "erosion",
+      "efficiency"
+     ],
+     "answer": 2,
+     "why": "Erosion = erosão: a queda lenta e gradual que só aparece ao longo do tempo."
+    },
+    {
+     "q": "\"A steady rise in <strong>receivables days</strong> is a warning sign.\" Receivables days measure…",
+     "options": [
+      "how long customers take to pay what they owe",
+      "the number of trading days in a quarter",
+      "the days of stock held in the warehouse",
+      "how quickly suppliers are paid"
+     ],
+     "answer": 0,
+     "why": "Receivables days = dias de recebíveis: quanto tempo, em média, os clientes levam para pagar."
+    },
+    {
+     "q": "Choose the correct term: \"Together the ratios give the leader a ___ on the whole business, even though each is limited alone.\"",
+     "options": [
+      "single metric",
+      "panic response",
+      "receivables day",
+      "confident read"
+     ],
+     "answer": 3,
+     "why": "Confident read = leitura segura: a compreensão firme do todo que o conjunto proporciona."
+    },
+    {
+     "q": "\"The dashboard exists to catch <strong>drift</strong> early.\" In this context, drift means…",
+     "options": [
+      "a deliberate change of strategy",
+      "a sudden one-off spike",
+      "an accounting error",
+      "a slow, gradual movement in a trend over time"
+     ],
+     "answer": 3,
+     "why": "Drift = deriva: o deslocamento lento e contínuo que um único mês esconde."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de finanças e reporte executivo. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The CFO still has to <strong>sign off on</strong> the new dashboard before it goes to the board.\" To sign off on means to…",
+     "options": [
+      "quietly shelve",
+      "formally approve",
+      "comment informally",
+      "circulate for feedback"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the six-ratio format across every business unit next quarter.\" To roll out means to…",
+     "options": [
+      "present it to the auditors",
+      "cancel it gradually",
+      "test it in secret",
+      "implement it in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two board members <strong>pushed back on</strong> dropping the old twenty-metric report.\" They…",
+     "options": [
+      "rewrote it themselves",
+      "forgot to read it",
+      "resisted or objected to the idea",
+      "approved it at once"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"Spotting the drift is useless if we don't <strong>follow through</strong> on it.\" To follow through means to…",
+     "options": [
+      "carry the response to completion",
+      "measure it again next month",
+      "document the finding",
+      "escalate it to the CEO"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim a ação combinada."
+    },
+    {
+     "q": "\"Trimming two ratios won't <strong>move the needle</strong> on how quickly the board reacts.\" This means it will…",
+     "options": [
+      "take too long to measure",
+      "create internal resistance",
+      "cost more than expected",
+      "not make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

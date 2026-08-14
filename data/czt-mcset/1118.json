@@ -1,0 +1,259 @@
+{
+ "num": 1118,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Every truck has a bad day now and then. Last week, Oliver's truck had a bad day too. The engine stopped on the road. Then a tire went flat. It was not a good morning.<br><br>Oliver did not panic. He called a mechanic. The mechanic arrived and looked at the engine. He fixed the problem. He changed the tire too. After two hours, the truck worked again.<br><br>At work, Oliver told his supervisor the full story. He explained what broke, when it happened, and what he did about it. An honest report builds trust. Every problem is a lesson if you write it down.",
+   "items": [
+    {
+     "q": "What happened to the engine?",
+     "options": [
+      "It made a new sound",
+      "It got faster",
+      "It was fine all day",
+      "It stopped on the road"
+     ],
+     "answer": 3,
+     "why": "\"The engine stopped on the road.\""
+    },
+    {
+     "q": "Who did Oliver call?",
+     "options": [
+      "The police",
+      "A mechanic",
+      "His supervisor",
+      "A friend"
+     ],
+     "answer": 1,
+     "why": "\"He called a mechanic.\""
+    },
+    {
+     "q": "The text says the truck worked again after two hours. This suggests that…",
+     "options": [
+      "Oliver bought a new truck",
+      "the repair took some time but it worked",
+      "the tire was never flat",
+      "the mechanic could not help"
+     ],
+     "answer": 1,
+     "why": "Inferência: o motor voltou a funcionar depois de duas horas, então o conserto levou tempo mas deu certo."
+    },
+    {
+     "q": "Why did Oliver tell the full story to his supervisor?",
+     "options": [
+      "To ask for money",
+      "Because an honest report builds trust",
+      "To blame the mechanic",
+      "To get a new job"
+     ],
+     "answer": 1,
+     "why": "\"An honest report builds trust.\""
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "trucks never break",
+      "reports are a waste of time",
+      "you should hide small problems",
+      "a problem can teach you something"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Every problem is a lesson if you write it down.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver contar ao supervisor o que aconteceu. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi. I want to tell you about the truck last week. It was Tuesday morning. I started the truck and I drove to the first stop.<br><br>On the road, the engine made a strange sound. Then it stopped. I moved the truck to the side and I checked it. I saw smoke, so I did not touch the engine.<br><br>I called a mechanic. He arrived in thirty minutes. He looked at the engine and he found the problem. It was a small part. He fixed it. He also checked the tires, and one tire was low. He changed it too.<br><br>After that, the truck worked again. I finished my stops, but I arrived late. I am sorry about the delay.<br><br>Next time I will check the truck before I start. A quick check in the morning saves a big problem later.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "When did the problem happen?",
+     "options": [
+      "Sunday",
+      "Friday afternoon",
+      "Monday night",
+      "Tuesday morning"
+     ],
+     "answer": 3,
+     "why": "\"It was Tuesday morning.\""
+    },
+    {
+     "q": "Why did Oliver NOT touch the engine?",
+     "options": [
+      "He was in a hurry",
+      "He saw smoke",
+      "The supervisor said no",
+      "It was too hot to see"
+     ],
+     "answer": 1,
+     "why": "\"I saw smoke, so I did not touch the engine.\""
+    },
+    {
+     "q": "What did the mechanic do with the tire?",
+     "options": [
+      "He left it",
+      "He cleaned it",
+      "He sold it",
+      "He changed it"
+     ],
+     "answer": 3,
+     "why": "\"one tire was low. He changed it too.\""
+    },
+    {
+     "q": "Oliver says he arrived late. This suggests that…",
+     "options": [
+      "the repair made him lose time",
+      "the truck was faster than usual",
+      "he did not do his stops",
+      "he stopped for lunch"
+     ],
+     "answer": 0,
+     "why": "Inferência: o conserto atrasou o dia, então ele chegou tarde."
+    },
+    {
+     "q": "What can we learn from Oliver's last line?",
+     "options": [
+      "He wants a new truck",
+      "A morning check can stop a big problem",
+      "The mechanic was slow",
+      "He will not drive again"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"A quick check in the morning saves a big problem later.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The old part <strong>broke</strong> after many years.\" Broke means…",
+     "options": [
+      "was clean",
+      "stopped working",
+      "worked well",
+      "was new"
+     ],
+     "answer": 1,
+     "why": "Broke = quebrou, parou de funcionar (passado de break)."
+    },
+    {
+     "q": "Choose the correct word: \"The mechanic can ___ the truck in one hour.\"",
+     "options": [
+      "sell",
+      "fix",
+      "wash",
+      "drive"
+     ],
+     "answer": 1,
+     "why": "Fix = consertar; combina com \"the mechanic\" e \"the truck\"."
+    },
+    {
+     "q": "\"The <strong>engine</strong> is very hot after a long trip.\" An engine is…",
+     "options": [
+      "the door",
+      "the seat",
+      "the motor of the truck",
+      "the wheel"
+     ],
+     "answer": 2,
+     "why": "Engine = motor, a parte que faz o caminhão andar."
+    },
+    {
+     "q": "Choose the correct word: \"One ___ was flat, so the truck could not move well.\"",
+     "options": [
+      "tire",
+      "engine",
+      "road",
+      "report"
+     ],
+     "answer": 0,
+     "why": "Tire = pneu; um pneu \"flat\" (vazio) atrapalha o caminhão."
+    },
+    {
+     "q": "\"We called a <strong>mechanic</strong> to look at the truck.\" A mechanic is a person who…",
+     "options": [
+      "sells fuel",
+      "repairs machines and cars",
+      "drives the truck",
+      "cleans the office"
+     ],
+     "answer": 1,
+     "why": "Mechanic = mecânico, quem conserta máquinas e veículos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The truck <strong>broke down</strong> on the road.\" To break down means to…",
+     "options": [
+      "arrive early",
+      "go faster",
+      "turn left",
+      "stop working"
+     ],
+     "answer": 3,
+     "why": "Break down = quebrar, parar de funcionar (um veículo ou máquina)."
+    },
+    {
+     "q": "\"Please <strong>check on</strong> the tires before the trip.\" To check on something means to…",
+     "options": [
+      "forget it",
+      "throw it away",
+      "look at it to see if it is okay",
+      "buy it"
+     ],
+     "answer": 2,
+     "why": "Check on = dar uma olhada para ver se está tudo bem."
+    },
+    {
+     "q": "\"The supervisor asked Oliver to <strong>write up</strong> the problem.\" To write up means to…",
+     "options": [
+      "erase the notes",
+      "call the mechanic",
+      "make a full written report",
+      "read it aloud"
+     ],
+     "answer": 2,
+     "why": "Write up = escrever um relatório completo de algo."
+    },
+    {
+     "q": "\"We need to <strong>sort out</strong> the tire before Monday.\" To sort out means to…",
+     "options": [
+      "hide the problem",
+      "fix or solve the problem",
+      "sell the tire",
+      "ignore the problem"
+     ],
+     "answer": 1,
+     "why": "Sort out = resolver, dar um jeito no problema."
+    },
+    {
+     "q": "\"The mechanic will <strong>show up</strong> at eight.\" To show up means to…",
+     "options": [
+      "be late",
+      "arrive",
+      "call first",
+      "leave the job"
+     ],
+     "answer": 1,
+     "why": "Show up = aparecer, chegar a um lugar."
+    }
+   ]
+  }
+ ]
+}

@@ -10,10 +10,10 @@
     {
      "q": "Where is the new form?",
      "options": [
-      "At the student's home",
-      "On Sophie's desk",
       "On the tax calendar",
-      "In the accounting office"
+      "On Sophie's desk",
+      "In the accounting office",
+      "At the student's home"
      ],
      "answer": 1,
      "why": "\"There is a new tax form on Sophie's desk.\""
@@ -22,8 +22,8 @@
      "q": "Is the form important?",
      "options": [
       "Yes, it is important",
-      "No, it is empty",
       "Yes, but only next month",
+      "No, it is empty",
       "No, it is old"
      ],
      "answer": 0,
@@ -32,34 +32,34 @@
     {
      "q": "Why does Sophie check every line?",
      "options": [
-      "Because the form must be correct",
-      "Because it is not important",
+      "Because she is tired",
       "Because the desk is small",
-      "Because she is tired"
+      "Because the form must be correct",
+      "Because it is not important"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The form must be correct. Sophie checks every line.\""
     },
     {
      "q": "The author would most likely DISAGREE with this sentence:",
      "options": [
-      "The words on the form are simple.",
-      "Taxes are just part of the routine.",
       "Taxes are impossible to learn.",
-      "We can do it one step at a time."
+      "Taxes are just part of the routine.",
+      "We can do it one step at a time.",
+      "The words on the form are simple."
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: o texto diz que impostos parecem difíceis, mas as palavras são simples — não são impossíveis."
     },
     {
      "q": "\"One step at a time\" suggests that we should…",
      "options": [
-      "work very fast",
       "go slowly and calmly",
       "skip the form",
-      "wait until next year"
+      "wait until next year",
+      "work very fast"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"one step at a time\" pede calma, um passo de cada vez."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "Where are Sophie and the student?",
      "options": [
-      "At Sophie's desk",
       "In the accounting room",
-      "At the bank",
-      "In a meeting room"
+      "In a meeting room",
+      "At Sophie's desk",
+      "At the bank"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"This is my desk… it is here, on the desk.\""
     },
     {
      "q": "What is on the desk today?",
      "options": [
+      "A new tax form",
       "An old letter",
-      "A phone",
       "A cup of coffee",
-      "A new tax form"
+      "A phone"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Today we have a new tax form.\""
     },
     {
      "q": "What must the numbers be?",
      "options": [
       "New",
-      "Correct",
+      "Fast",
       "Big",
-      "Fast"
+      "Correct"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The numbers must be correct.\""
     },
     {
      "q": "Why does Sophie say \"we go slowly, one line at a time\"?",
      "options": [
       "Because the student is late",
+      "Because being careful matters more than being fast",
       "Because the office is closing soon",
-      "Because the form is very short",
-      "Because being careful matters more than being fast"
+      "Because the form is very short"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: ela diz \"You do not need to be fast. You need to be careful.\""
     },
     {
      "q": "How does Sophie feel about taxes?",
      "options": [
-      "She thinks they are impossible",
       "She wants someone else to do them",
-      "She does not like the form",
-      "She thinks they are simple with small steps"
+      "She thinks they are impossible",
+      "She thinks they are simple with small steps",
+      "She does not like the form"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: \"Taxes are simple when we take small steps.\""
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"<strong>Today</strong> we send the report.\" Today means…",
      "options": [
-      "next year",
       "last week",
-      "every Monday",
-      "this day, now"
+      "this day, now",
+      "next year",
+      "every Monday"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Today = hoje, este dia."
     },
     {
      "q": "Choose the correct word: \"Please put the ___ on my desk.\"",
      "options": [
-      "today",
-      "form",
       "ready",
-      "important"
+      "form",
+      "important",
+      "today"
      ],
      "answer": 1,
      "why": "Form = formulário, o papel que Sophie precisa."
@@ -161,34 +161,34 @@
     {
      "q": "\"The papers are on my <strong>desk</strong>.\" A desk is…",
      "options": [
+      "a tax number",
       "a table where you work",
       "a small window",
-      "a tax number",
       "a company car"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Desk = mesa de trabalho."
     },
     {
      "q": "Choose the correct word: \"The form is ___. We cannot lose it.\"",
      "options": [
-      "important",
-      "slow",
       "desk",
-      "today"
+      "slow",
+      "today",
+      "important"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Important = importante; por isso não podemos perdê-lo."
     },
     {
      "q": "\"I am <strong>ready</strong> to start.\" Ready means…",
      "options": [
       "tired",
-      "late",
       "prepared",
+      "late",
       "wrong"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Ready = pronto, preparado."
     }
    ]
@@ -201,32 +201,32 @@
     {
      "q": "\"Please <strong>fill out</strong> the form.\" To fill out means to…",
      "options": [
-      "throw it away",
-      "hide it in a drawer",
       "write your information on it",
-      "read it aloud"
+      "read it aloud",
+      "hide it in a drawer",
+      "throw it away"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Fill out = preencher o formulário com suas informações."
     },
     {
      "q": "\"The manager will <strong>sign off on</strong> the tax form.\" To sign off on means to…",
      "options": [
+      "officially approve it",
       "delay it",
-      "copy it",
       "lose it",
-      "officially approve it"
+      "copy it"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"Please <strong>hand in</strong> the form today.\" To hand in means to…",
      "options": [
+      "print more copies",
       "keep it at home",
-      "sign your name",
       "give it in / submit it",
-      "print more copies"
+      "sign your name"
      ],
      "answer": 2,
      "why": "Hand in = entregar, submeter o formulário."
@@ -235,22 +235,22 @@
      "q": "\"Let's <strong>go over</strong> the numbers again.\" To go over means to…",
      "options": [
       "count the pages",
+      "send them now",
       "check or review them",
-      "delete them",
-      "send them now"
+      "delete them"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Go over = revisar, conferir de novo."
     },
     {
      "q": "\"We need to <strong>fill in</strong> the empty box.\" To fill in means to…",
      "options": [
-      "complete it with information",
       "leave it empty",
+      "fold the page",
       "cross it out",
-      "fold the page"
+      "complete it with information"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Fill in = completar o espaço com a informação."
     }
    ]

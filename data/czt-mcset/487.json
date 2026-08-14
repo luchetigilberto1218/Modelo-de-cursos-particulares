@@ -10,10 +10,10 @@
     {
      "q": "What is a network?",
      "options": [
-      "A room in the office",
       "A kind of website",
+      "A type of laptop",
       "A group of devices that can talk to each other",
-      "A type of laptop"
+      "A room in the office"
      ],
      "answer": 2,
      "why": "\"A network is a group of devices that can talk to each other.\""
@@ -22,44 +22,44 @@
      "q": "What does a VPN do?",
      "options": [
       "It turns off the Wi-Fi",
-      "It makes your laptop act as if it were inside the office",
       "It prints your documents",
-      "It makes your laptop faster"
+      "It makes your laptop faster",
+      "It makes your laptop act as if it were inside the office"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A VPN… makes your laptop act as if it were still inside the office.\""
     },
     {
      "q": "What happens when latency is high?",
      "options": [
-      "Video calls freeze and websites feel slow",
-      "The Wi-Fi gets stronger",
       "Everything feels instant",
+      "The Wi-Fi gets stronger",
+      "Video calls freeze and websites feel slow",
       "The network disappears"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"High latency makes video calls freeze and websites feel slow.\""
     },
     {
      "q": "The text suggests that a GOOD network is one that…",
      "options": [
+      "is very expensive",
       "you notice all the time",
-      "you almost never think about",
       "only works with Wi-Fi",
-      "is very expensive"
+      "you almost never think about"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"Good networks are almost invisible\" — se está tudo bem, você nem repara nele."
     },
     {
      "q": "If you START thinking about your network, the text suggests that…",
      "options": [
       "the network is working perfectly",
-      "you should buy a new laptop",
       "your latency is low",
-      "something is probably wrong"
+      "something is probably wrong",
+      "you should buy a new laptop"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: \"The moment you start thinking about the network, something is usually wrong.\""
     }
    ]
@@ -77,9 +77,9 @@
     {
      "q": "What is Emily helping her new colleague do?",
      "options": [
-      "Buy a new laptop",
-      "Set up her VPN",
       "Change her password",
+      "Set up her VPN",
+      "Buy a new laptop",
       "Write an email"
      ],
      "answer": 1,
@@ -89,11 +89,11 @@
      "q": "What must the colleague do FIRST?",
      "options": [
       "Turn off the router",
-      "Open the video call",
       "Call the office",
-      "Connect the laptop to the home Wi-Fi"
+      "Connect the laptop to the home Wi-Fi",
+      "Open the video call"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"First, connect your laptop to your home Wi-Fi.\""
     },
     {
@@ -110,21 +110,21 @@
     {
      "q": "If the internet feels slow, Emily suggests that you…",
      "options": [
-      "wait one hour",
-      "restart the office",
       "move closer to the Wi-Fi router",
-      "turn off the laptop"
+      "restart the office",
+      "turn off the laptop",
+      "wait one hour"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: \"if your internet feels slow, move closer to your Wi-Fi router. A weak signal makes everything slow.\""
     },
     {
      "q": "How would you describe Emily's tone?",
      "options": [
       "Friendly and helpful",
+      "Bored and tired",
       "Angry and impatient",
-      "Serious and cold",
-      "Bored and tired"
+      "Serious and cold"
      ],
      "answer": 0,
      "why": "Inferência: ela dá boas-vindas, explica com calma e oferece ajuda — um tom acolhedor."
@@ -140,8 +140,8 @@
      "q": "\"My phone, my laptop and the printer are all on the same <strong>network</strong>.\" A network is…",
      "options": [
       "a meeting room",
-      "a password",
       "a type of email",
+      "a password",
       "a group of devices connected together"
      ],
      "answer": 3,
@@ -150,45 +150,45 @@
     {
      "q": "Choose the correct word: \"When I work from home, I use a ___ to connect safely to the office.\"",
      "options": [
-      "window",
       "printer",
+      "VPN",
       "coffee",
-      "VPN"
+      "window"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "VPN = túnel seguro para trabalhar de casa como se estivesse no escritório."
     },
     {
      "q": "\"The video call started to <strong>freeze</strong>.\" To freeze here means…",
      "options": [
-      "to stop moving for a moment",
-      "to become very cold",
+      "to get louder",
       "to end the call",
-      "to get louder"
+      "to become very cold",
+      "to stop moving for a moment"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To freeze = travar; a imagem para por alguns segundos."
     },
     {
      "q": "Choose the correct word: \"Low ___ feels instant, but high ___ makes websites feel slow.\"",
      "options": [
-      "device",
       "tunnel",
-      "latency",
-      "office"
+      "office",
+      "device",
+      "latency"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Latency = latência: o atraso entre enviar e receber."
     },
     {
      "q": "\"A good network is almost <strong>invisible</strong>.\" Invisible means…",
      "options": [
-      "always broken",
-      "very fast",
       "you cannot see it or notice it",
-      "very expensive"
+      "very expensive",
+      "very fast",
+      "always broken"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Invisible = invisível: você nem percebe que está lá."
     }
    ]
@@ -201,54 +201,54 @@
     {
      "q": "\"Please <strong>set up</strong> the VPN on your new laptop.\" To set up means to…",
      "options": [
-      "throw something away",
-      "sell something",
       "prepare something so it is ready to use",
+      "sell something",
+      "throw something away",
       "turn something off"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Set up = configurar, deixar pronto para usar."
     },
     {
      "q": "\"I can't <strong>log in</strong> to the system.\" To log in means to…",
      "options": [
-      "restart the computer",
       "delete a file",
       "enter with your name and password",
+      "restart the computer",
       "close the program"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Log in = entrar no sistema com usuário e senha."
     },
     {
      "q": "\"The Wi-Fi went down, so I had to <strong>reconnect</strong>.\" If the Wi-Fi 'went down', it…",
      "options": [
-      "moved to another room",
       "stopped working",
-      "got much faster",
-      "became free"
+      "became free",
+      "moved to another room",
+      "got much faster"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Go down = cair, parar de funcionar (rede, sistema, site)."
     },
     {
      "q": "\"Can you <strong>turn off</strong> the router and turn it on again?\" To turn off means to…",
      "options": [
-      "clean it",
       "make it louder",
-      "stop the power",
-      "buy a new one"
+      "buy a new one",
+      "clean it",
+      "stop the power"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Turn off = desligar; o clássico \"desligar e ligar de novo\"."
     },
     {
      "q": "\"If you have a problem, just <strong>reach out</strong> to me.\" To reach out means to…",
      "options": [
-      "wait quietly",
+      "close the app",
       "contact someone for help",
       "fix it alone",
-      "close the app"
+      "wait quietly"
      ],
      "answer": 1,
      "why": "Reach out = procurar alguém, pedir ajuda ou contato."

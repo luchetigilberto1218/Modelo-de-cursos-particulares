@@ -1,0 +1,259 @@
+{
+ "num": 444,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the intermediate level, tax vocabulary stops being a list of words and becomes a working language. A meeting with an external advisor, a letter to the tax office, a clarification email to a colleague — each one depends on using the right word at the right moment. Exemption, deduction, allowance, relief, credit, rebate: each has a precise meaning, and mixing them up quietly damages your credibility.<br><br>The distinctions matter. A deduction reduces taxable income. A credit reduces the tax itself. A rebate is a refund after tax has been paid. An allowance is a specific amount the law lets you not count. These distinctions are easy to learn with practice, and impossible to fake in a room full of people who know them.<br><br>Speaking the language well does not make you a tax expert. But it does mean the tax experts in the room start taking you seriously — which is usually where the real work begins.",
+   "items": [
+    {
+     "q": "According to the text, what does mixing up tax words quietly damage?",
+     "options": [
+      "The tax office's records",
+      "The advisor's schedule",
+      "The company's revenue",
+      "Your credibility"
+     ],
+     "answer": 3,
+     "why": "\"mixing them up quietly damages your credibility\" — usar o termo errado corrói a confiança em você."
+    },
+    {
+     "q": "According to the text, what does a credit reduce?",
+     "options": [
+      "The tax itself",
+      "The taxable income",
+      "The allowance",
+      "The refund"
+     ],
+     "answer": 0,
+     "why": "\"A credit reduces the tax itself\" — diferente da dedução, que reduz a renda tributável."
+    },
+    {
+     "q": "What is a rebate, according to the text?",
+     "options": [
+      "A reduction in taxable income",
+      "A refund after tax has been paid",
+      "A discount offered by an advisor",
+      "A specific amount you may not count"
+     ],
+     "answer": 1,
+     "why": "\"A rebate is a refund after tax has been paid.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Using the wrong tax term can cost you credibility.",
+      "Precise language earns you a seat at serious conversations.",
+      "Deduction and credit are not interchangeable.",
+      "You can bluff your way through a room of specialists if you sound confident."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz que essas distinções são \"impossible to fake\" diante de quem conhece — blefar não funciona."
+    },
+    {
+     "q": "What does the final line suggest about speaking the language well?",
+     "options": [
+      "It is the end of the process",
+      "It replaces the need for tax advisors",
+      "It is a starting point, not the whole job",
+      "It guarantees a lower tax bill"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"which is usually where the real work begins\" — falar bem abre a porta; o trabalho de verdade vem depois."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry orientando um colega novo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Can I grab you for two minutes before you send that? I noticed something in the last few emails, and I'd rather flag it now than let it snowball.<br><br>You've been using 'deduction' and 'credit' as if they were the same thing. They're not, and the advisor picked up on it in yesterday's call. A deduction reduces the income we're taxed on. A credit comes off the tax bill itself, pound for pound. So when you wrote that the R&D scheme would 'deduct' fifty thousand from what we owe, that's actually a credit — and the number the advisor quoted back was wrong because of it.<br><br>Honestly, it's a small thing, but with an external advisor these small things add up. If we're loose with the words, they start double-checking everything we say, and that slows the whole engagement down.<br><br>So here's what I'd suggest. Before anything goes out, ask yourself one question: is this reducing the income or reducing the tax? If it's the income, it's a deduction or an allowance. If it's the tax, it's a credit. Get that split right and you'll sound like you've been doing this for years.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why did Harry stop his colleague before the email went out?",
+     "options": [
+      "The email was sent to the wrong person",
+      "The advisor had complained about the tone",
+      "The colleague had confused 'deduction' and 'credit'",
+      "The numbers had not been approved yet"
+     ],
+     "answer": 2,
+     "why": "\"You've been using 'deduction' and 'credit' as if they were the same thing. They're not.\""
+    },
+    {
+     "q": "According to Harry, how does a credit differ from a deduction?",
+     "options": [
+      "A credit reduces the income; a deduction reduces the tax",
+      "A credit comes off the tax bill itself; a deduction reduces taxable income",
+      "There is no real difference between them",
+      "A credit is a refund; a deduction is an allowance"
+     ],
+     "answer": 1,
+     "why": "\"A deduction reduces the income we're taxed on. A credit comes off the tax bill itself.\""
+    },
+    {
+     "q": "What was wrong with the colleague's line about the R&D scheme?",
+     "options": [
+      "The fifty thousand figure was invented",
+      "It called a credit a 'deduction', so the advisor quoted a wrong number",
+      "The scheme did not qualify at all",
+      "It was sent before the deadline"
+     ],
+     "answer": 1,
+     "why": "\"that's actually a credit — and the number the advisor quoted back was wrong because of it.\""
+    },
+    {
+     "q": "What does Harry imply happens when you are 'loose with the words'?",
+     "options": [
+      "The tax office issues a fine",
+      "The advisor starts double-checking everything, slowing things down",
+      "The advisor charges a lower fee",
+      "The emails get shorter"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"they start double-checking everything we say, and that slows the whole engagement down.\""
+    },
+    {
+     "q": "How would you best describe Harry's approach with the colleague?",
+     "options": [
+      "Indifferent to the mistake",
+      "Purely critical, with no guidance",
+      "Corrective but supportive, offering a simple rule",
+      "Dismissive and impatient"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele aponta o erro, mas dá uma regra prática (\"is this reducing the income or the tax?\") — tom de ajuda."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The export scheme qualifies for a full <strong>exemption</strong>, so no tax is due on those sales.\" An exemption is…",
+     "options": [
+      "a small reduction in the tax rate",
+      "a refund paid after the tax year",
+      "a delay in the payment deadline",
+      "a release from having to pay a tax at all"
+     ],
+     "answer": 3,
+     "why": "Exemption = isenção: fica-se livre de pagar o tributo."
+    },
+    {
+     "q": "Choose the correct word: \"We sent a short ___ to the advisor because two figures in the report seemed to contradict each other.\"",
+     "options": [
+      "exemption",
+      "clarification email",
+      "allowance",
+      "rebate"
+     ],
+     "answer": 1,
+     "why": "Clarification email = e-mail de esclarecimento, para resolver a contradição nos números."
+    },
+    {
+     "q": "\"Each employee gets a travel <strong>allowance</strong> that is not counted as taxable income.\" Here, an allowance is…",
+     "options": [
+      "a penalty for late filing",
+      "a specific amount the rules let you not count",
+      "a loan from the company",
+      "a percentage taken off the final tax"
+     ],
+     "answer": 1,
+     "why": "Allowance = abatimento: um valor específico que a lei permite não incluir na conta."
+    },
+    {
+     "q": "Choose the correct word: \"After overpaying last quarter, the company received a ___ of eight thousand from the tax office.\"",
+     "options": [
+      "exemption",
+      "rebate",
+      "credibility",
+      "deduction"
+     ],
+     "answer": 1,
+     "why": "Rebate = restituição: devolução depois de o imposto ter sido pago a mais."
+    },
+    {
+     "q": "\"You can't <strong>fake</strong> the terminology in front of specialists.\" To fake something means to…",
+     "options": [
+      "write it down carefully",
+      "measure it precisely",
+      "pretend to know or have it when you don't",
+      "explain it clearly"
+     ],
+     "answer": 2,
+     "why": "To fake = fingir: aparentar domínio que não se tem."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em conversas sobre impostos e reuniões com consultores. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The advisor <strong>picked up on</strong> the mistake straight away.\" To pick up on means to…",
+     "options": [
+      "argue about",
+      "notice or become aware of",
+      "forgive",
+      "collect from a desk"
+     ],
+     "answer": 1,
+     "why": "Pick up on = perceber, dar-se conta de algo."
+    },
+    {
+     "q": "\"I'd rather <strong>flag</strong> this now than deal with it later.\" To flag something means to…",
+     "options": [
+      "hide it from the team",
+      "raise it for attention",
+      "postpone it indefinitely",
+      "approve it formally"
+     ],
+     "answer": 1,
+     "why": "To flag = sinalizar, chamar a atenção para um ponto."
+    },
+    {
+     "q": "\"With an external advisor, small errors <strong>add up</strong>.\" To add up here means to…",
+     "options": [
+      "accumulate into something significant",
+      "be calculated correctly",
+      "cancel each other out",
+      "disappear over time"
+     ],
+     "answer": 0,
+     "why": "Add up = ir se acumulando até virar algo relevante."
+    },
+    {
+     "q": "\"The finance director still has to <strong>sign off on</strong> the tax return before we file it.\" To sign off on means to…",
+     "options": [
+      "reject",
+      "read informally",
+      "formally approve",
+      "translate"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Getting the wording right won't <strong>move the needle</strong> on the tax we owe, but it protects our credibility.\" To move the needle means to…",
+     "options": [
+      "start an argument",
+      "cause a delay",
+      "increase the workload",
+      "make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, causar diferença perceptível (aqui, na conta do imposto)."
+    }
+   ]
+  }
+ ]
+}

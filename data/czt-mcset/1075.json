@@ -1,0 +1,259 @@
+{
+ "num": 1075,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "The pub is like an extension of the London office. When there is good news, people celebrate there. On Fridays, the week ends there.<br><br>Colleagues sit together, have a beer, and become friends over a pint. The food is simple and good. The company is warm.<br><br>Today we use have and has to order food and drinks, and to talk about the people around the table.",
+   "items": [
+    {
+     "q": "Where does the London week often end?",
+     "options": [
+      "At the airport",
+      "At home",
+      "At the pub",
+      "At the gym"
+     ],
+     "answer": 2,
+     "why": "\"On Fridays, the week ends there\" — \"there\" = the pub."
+    },
+    {
+     "q": "What do colleagues become at the pub?",
+     "options": [
+      "Managers",
+      "Friends",
+      "Neighbours",
+      "Clients"
+     ],
+     "answer": 1,
+     "why": "\"colleagues become friends over a pint.\""
+    },
+    {
+     "q": "How is the pub food described?",
+     "options": [
+      "Hard to find",
+      "Very expensive",
+      "Simple and good",
+      "Cold and old"
+     ],
+     "answer": 2,
+     "why": "\"The food is simple and good.\""
+    },
+    {
+     "q": "The text says the pub is \"an extension of the office.\" This suggests that…",
+     "options": [
+      "work relationships continue at the pub",
+      "the pub is inside the office building",
+      "the office is very small",
+      "people do their job at the pub"
+     ],
+     "answer": 0,
+     "why": "Inferência: o pub não é o escritório, mas os colegas de trabalho seguem juntos lá."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "colleagues should not go to the pub",
+      "the pub helps people connect",
+      "the pub is a cold and quiet place",
+      "the pub is only about food"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto fala de amizade, calor e companhia — o pub aproxima as pessoas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emma no pub com os colegas depois do expediente. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, we have a table in the corner. It's a table for four, so we're all here. Good.<br><br>Let me get the first round. Tom, what do you want? A pint? Great. Sara has a glass of white wine after work, so I'll get that too. And I'll have a pint as well.<br><br>Here is the menu. The fish and chips is very good here. The burger is big and the chips are hot. I always have the fish, but today I want the burger. Tom, you have the fish. It's a classic.<br><br>Okay, the drinks are here. Three pints and one wine. We have a long week behind us, and now it's Friday. Let's celebrate. Raise your glass. Cheers, everyone! To a good week, and to good friends. Next round is on Tom!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where is their table?",
+     "options": [
+      "In the corner",
+      "By the door",
+      "Near the bar",
+      "Outside"
+     ],
+     "answer": 0,
+     "why": "\"we have a table in the corner.\""
+    },
+    {
+     "q": "What does Sara drink after work?",
+     "options": [
+      "A cup of tea",
+      "Water",
+      "A pint of beer",
+      "A glass of white wine"
+     ],
+     "answer": 3,
+     "why": "\"Sara has a glass of white wine after work.\""
+    },
+    {
+     "q": "What does Emma want to eat today?",
+     "options": [
+      "The soup",
+      "The burger",
+      "The fish",
+      "The chips only"
+     ],
+     "answer": 1,
+     "why": "\"I always have the fish, but today I want the burger.\""
+    },
+    {
+     "q": "How many people are at the table?",
+     "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Two"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"a table for four, so we're all here\" — o grupo tem quatro pessoas."
+    },
+    {
+     "q": "Who probably pays for the next round?",
+     "options": [
+      "Emma",
+      "Sara",
+      "Nobody",
+      "Tom"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Next round is on Tom!\" — a próxima rodada é por conta do Tom."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We meet at the <strong>pub</strong> every Friday.\" A pub is…",
+     "options": [
+      "a small shop",
+      "a big office",
+      "a traditional bar",
+      "a train station"
+     ],
+     "answer": 2,
+     "why": "Pub = bar tradicional britânico."
+    },
+    {
+     "q": "Choose the correct word: \"I'll have a cold ___, please.\"",
+     "options": [
+      "order",
+      "beer",
+      "table",
+      "menu"
+     ],
+     "answer": 1,
+     "why": "Beer = cerveja; é o que você pede para beber."
+    },
+    {
+     "q": "\"Can I see the <strong>menu</strong>, please?\" A menu is…",
+     "options": [
+      "the kitchen",
+      "the waiter",
+      "the bill",
+      "the list of food and drinks"
+     ],
+     "answer": 3,
+     "why": "Menu = cardápio, a lista de comidas e bebidas."
+    },
+    {
+     "q": "Choose the correct word: \"The waiter takes our ___ and brings the food.\"",
+     "options": [
+      "cheers",
+      "beer",
+      "pub",
+      "order"
+     ],
+     "answer": 3,
+     "why": "Order = pedido; é o que o garçom anota."
+    },
+    {
+     "q": "\"We raise our glasses and say <strong>cheers</strong>!\" Cheers means…",
+     "options": [
+      "please",
+      "goodbye forever",
+      "a toast, like \"saúde\"",
+      "sorry"
+     ],
+     "answer": 2,
+     "why": "Cheers = saúde, o que se diz ao brindar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões comuns no pub e no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"This <strong>round</strong> is on me.\" A round is…",
+     "options": [
+      "drinks for the whole group",
+      "a small tip",
+      "a type of food",
+      "the last drink"
+     ],
+     "answer": 0,
+     "why": "Round = uma rodada de bebidas para todo o grupo."
+    },
+    {
+     "q": "\"Let's <strong>grab a drink</strong> after work.\" This means…",
+     "options": [
+      "skip the drink",
+      "buy a drink to take home",
+      "have a drink together",
+      "clean the glasses"
+     ],
+     "answer": 2,
+     "why": "Grab a drink = tomar um drink (junto), de forma informal."
+    },
+    {
+     "q": "\"The next round is <strong>on you</strong>.\" This means…",
+     "options": [
+      "you say no",
+      "you drink last",
+      "you drink alone",
+      "you pay for it"
+     ],
+     "answer": 3,
+     "why": "\"On you\" = por sua conta, você paga."
+    },
+    {
+     "q": "\"Let's <strong>call it a day</strong> and go to the pub.\" This means…",
+     "options": [
+      "stop working for the day",
+      "start a new project",
+      "cancel the meeting",
+      "work all night"
+     ],
+     "answer": 0,
+     "why": "Call it a day = encerrar o trabalho por hoje."
+    },
+    {
+     "q": "\"Cheers! Here's <strong>to a good week</strong>.\" This is…",
+     "options": [
+      "a complaint",
+      "a toast to celebrate",
+      "an order for food",
+      "a question"
+     ],
+     "answer": 1,
+     "why": "\"Here's to…\" = um brinde em celebração a algo."
+    }
+   ]
+  }
+ ]
+}

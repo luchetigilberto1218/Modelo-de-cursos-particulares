@@ -12,8 +12,8 @@
      "options": [
       "How to make coffee",
       "How to say the time in English",
-      "How to book a flight",
-      "How to write emails"
+      "How to write emails",
+      "How to book a flight"
      ],
      "answer": 1,
      "why": "\"Today we learn how to say the time in English.\""
@@ -21,30 +21,30 @@
     {
      "q": "How many important words do you learn today?",
      "options": [
+      "Two",
       "Five",
       "Ten",
-      "Two",
       "Twenty"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Today you learn five important words.\""
     },
     {
      "q": "Which question do we ask?",
      "options": [
+      "How are you?",
       "What time is it?",
-      "Where are you?",
       "Who is it?",
-      "How are you?"
+      "Where are you?"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"We ask: What time is it?\""
     },
     {
      "q": "The text says \"Time is gold\". This suggests that time is…",
      "options": [
-      "not important",
       "yellow",
+      "not important",
       "slow",
       "very important"
      ],
@@ -54,12 +54,12 @@
     {
      "q": "\"You can do it!\" tells us the author wants you to feel…",
      "options": [
-      "tired",
       "confident",
-      "sad",
-      "afraid"
+      "tired",
+      "afraid",
+      "sad"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: a frase \"English comes in CAN's\" e \"You can do it\" passa confiança."
     }
    ]
@@ -77,8 +77,8 @@
     {
      "q": "What time is the first meeting?",
      "options": [
-      "At quarter past four",
       "At half past twelve",
+      "At quarter past four",
       "At quarter to three",
       "At nine o'clock"
      ],
@@ -88,23 +88,23 @@
     {
      "q": "What time is lunch?",
      "options": [
-      "At quarter to three",
+      "At half past twelve",
       "At nine o'clock",
-      "At quarter past four",
-      "At half past twelve"
+      "At quarter to three",
+      "At quarter past four"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Lunch is at half past twelve.\""
     },
     {
      "q": "The call is with London. What time is it?",
      "options": [
-      "At nine o'clock",
+      "At half past twelve",
       "At quarter past four",
-      "At quarter to three",
-      "At half past twelve"
+      "At nine o'clock",
+      "At quarter to three"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"The call is at quarter to three.\""
     },
     {
@@ -121,8 +121,8 @@
     {
      "q": "How does Sophie feel about the new colleague?",
      "options": [
-      "Worried",
       "Bored",
+      "Worried",
       "Angry",
       "Friendly and helpful"
      ],
@@ -139,21 +139,21 @@
     {
      "q": "\"What <strong>time</strong> is the meeting?\" The word <strong>time</strong> means…",
      "options": [
-      "hora",
       "sala",
-      "dia",
-      "nome"
+      "nome",
+      "hora",
+      "dia"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Time = hora / tempo."
     },
     {
      "q": "\"The meeting is at three <strong>o'clock</strong>.\" <strong>O'clock</strong> means…",
      "options": [
       "quase",
-      "e meia",
+      "um quarto",
       "em ponto",
-      "um quarto"
+      "e meia"
      ],
      "answer": 2,
      "why": "O'clock = em ponto (hora cheia)."
@@ -161,34 +161,34 @@
     {
      "q": "Choose the correct word: \"Lunch is at ___ past twelve, so we eat at 12:30.\"",
      "options": [
-      "half",
-      "o'clock",
+      "minute",
       "quarter",
-      "minute"
+      "o'clock",
+      "half"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Half past twelve = doze e meia (12:30)."
     },
     {
      "q": "\"It is a <strong>quarter</strong> past two.\" A <strong>quarter</strong> is…",
      "options": [
-      "30 minutos",
       "15 minutos",
+      "30 minutos",
       "5 minutos",
       "60 minutos"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Quarter = um quarto de hora = 15 minutos."
     },
     {
      "q": "Choose the correct word: \"Please wait one ___, I am almost ready.\"",
      "options": [
-      "o'clock",
-      "half",
       "quarter",
-      "minute"
+      "minute",
+      "o'clock",
+      "half"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Minute = minuto; \"one minute\" = só um instante."
     }
    ]
@@ -202,19 +202,19 @@
      "q": "\"Please be <strong>on time</strong> for the meeting.\" <strong>On time</strong> means…",
      "options": [
       "one hour early",
+      "very late",
       "not today",
-      "at the right time",
-      "very late"
+      "at the right time"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "On time = pontual, na hora certa."
     },
     {
      "q": "\"We <strong>kick off</strong> the meeting at nine.\" To <strong>kick off</strong> means to…",
      "options": [
-      "wait",
-      "finish",
       "cancel",
+      "finish",
+      "wait",
       "start"
      ],
      "answer": 3,
@@ -223,32 +223,32 @@
     {
      "q": "\"Let's <strong>wrap up</strong>, it is almost five.\" To <strong>wrap up</strong> means to…",
      "options": [
-      "begin",
+      "eat lunch",
       "start again",
-      "finish",
-      "eat lunch"
+      "begin",
+      "finish"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Wrap up = encerrar, finalizar."
     },
     {
      "q": "\"We are late. Can we <strong>put off</strong> the call to tomorrow?\" To <strong>put off</strong> means to…",
      "options": [
+      "make longer",
       "start now",
       "move to a later time",
-      "make longer",
       "join quickly"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Put off = adiar, deixar para depois."
     },
     {
      "q": "\"I am busy now. Let's <strong>catch up</strong> after lunch.\" To <strong>catch up</strong> means to…",
      "options": [
       "talk later",
+      "go home",
       "stop working",
-      "run fast",
-      "go home"
+      "run fast"
      ],
      "answer": 0,
      "why": "Catch up = pôr a conversa em dia, falar depois."

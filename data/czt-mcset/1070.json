@@ -1,0 +1,259 @@
+{
+ "num": 1070,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Small talk looks easy, but it is very useful. A short, friendly chat can open doors at work. Today we practise \"like + -ing\", the simplest way to talk about hobbies and weekends.<br><br>You can say: \"I like working in London.\" Sophie likes walking by the Thames. James loves watching football on the weekend. We use \"like + -ing\" to talk about things we enjoy in general.<br><br>The weather is the easiest way to start. Weekends are a good topic on Monday. Keep your answers short, and then ask back: \"And you?\" At work, do not talk about politics or religion.",
+   "items": [
+    {
+     "q": "What is the text about?",
+     "options": [
+      "A football match",
+      "The London weather report",
+      "Life by the Thames",
+      "Small talk and \"like + -ing\""
+     ],
+     "answer": 3,
+     "why": "O texto ensina small talk usando \"like + -ing\"."
+    },
+    {
+     "q": "What does James love doing on the weekend?",
+     "options": [
+      "Walking by the Thames",
+      "Working in London",
+      "Watching football",
+      "Talking about politics"
+     ],
+     "answer": 2,
+     "why": "\"James loves watching football on the weekend.\""
+    },
+    {
+     "q": "According to the text, what is the easiest way to start small talk?",
+     "options": [
+      "Politics",
+      "Religion",
+      "Football",
+      "The weather"
+     ],
+     "answer": 3,
+     "why": "\"The weather is the easiest way to start.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "Short answers are good.",
+      "Small talk can help at work.",
+      "The weather is an easy topic.",
+      "You should talk about religion at work."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz para NÃO falar de política ou religião no trabalho."
+    },
+    {
+     "q": "Asking \"And you?\" suggests that…",
+     "options": [
+      "you want the other person to talk too",
+      "you do not like the person",
+      "you want to end the chat",
+      "you are angry"
+     ],
+     "answer": 0,
+     "why": "Inferência: perguntar de volta mantém a conversa e mostra interesse."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie falando com um colega no corredor. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Good morning. How was your weekend?<br><br>Mine was really nice, thank you. I like walking by the Thames on Saturday. The weather was good, so I walked for two hours. I love music too, so on Sunday I went to a small concert with a friend. It was great.<br><br>And you? Do you have a hobby? Oh, football? Nice! My colleague James loves watching football on the weekend. He talks about it every Monday.<br><br>I don't play sports, but I like cooking at home. It's my little hobby. Cooking helps me relax after work.<br><br>Well, it's nine o'clock. We have a meeting soon. Let's get a coffee first. It was nice to talk to you. See you later!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Sophie like doing on Saturday?",
+     "options": [
+      "Playing sports",
+      "Walking by the Thames",
+      "Working late",
+      "Watching football"
+     ],
+     "answer": 1,
+     "why": "\"I like walking by the Thames on Saturday.\""
+    },
+    {
+     "q": "What did Sophie do on Sunday?",
+     "options": [
+      "She went to a concert",
+      "She stayed at the office",
+      "She cooked all day",
+      "She played football"
+     ],
+     "answer": 0,
+     "why": "\"On Sunday I went to a small concert with a friend.\""
+    },
+    {
+     "q": "What is Sophie's little hobby?",
+     "options": [
+      "Cooking at home",
+      "Music lessons",
+      "Running",
+      "Football"
+     ],
+     "answer": 0,
+     "why": "\"I like cooking at home. It's my little hobby.\""
+    },
+    {
+     "q": "The talk suggests that Sophie is…",
+     "options": [
+      "friendly and open",
+      "angry with her colleague",
+      "tired and bored",
+      "in a big hurry to leave"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela puxa conversa, pergunta de volta e convida para um café."
+    },
+    {
+     "q": "Why does Sophie say \"Let's get a coffee first\"?",
+     "options": [
+      "There is time before the meeting",
+      "She does not like the meeting room",
+      "She is not hungry",
+      "She wants to skip the meeting"
+     ],
+     "answer": 0,
+     "why": "Inferência: são nove horas e a reunião é logo, então dá tempo de um café antes."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I <strong>like</strong> working in London.\" <strong>Like</strong> here means…",
+     "options": [
+      "to need",
+      "to hate",
+      "to enjoy",
+      "to forget"
+     ],
+     "answer": 2,
+     "why": "Like = gostar de / enjoy (curtir)."
+    },
+    {
+     "q": "Choose the correct word: \"See you on Monday! Have a nice ___.\"",
+     "options": [
+      "weekend",
+      "meeting",
+      "coffee",
+      "office"
+     ],
+     "answer": 0,
+     "why": "Weekend = fim de semana; é o que vem depois de sexta."
+    },
+    {
+     "q": "\"Cooking is my little <strong>hobby</strong>.\" A <strong>hobby</strong> is…",
+     "options": [
+      "something you do for fun",
+      "a work meeting",
+      "a type of food",
+      "a hard job"
+     ],
+     "answer": 0,
+     "why": "Hobby = algo que você faz por prazer no tempo livre."
+    },
+    {
+     "q": "Choose the correct word: \"James loves watching ___ on TV every weekend.\"",
+     "options": [
+      "email",
+      "Monday",
+      "football",
+      "coffee"
+     ],
+     "answer": 2,
+     "why": "Football = futebol; é o que se assiste na TV."
+    },
+    {
+     "q": "\"I love <strong>music</strong>, so I went to a concert.\" <strong>Music</strong> is…",
+     "options": [
+      "a kind of food",
+      "songs and sounds you listen to",
+      "a sport",
+      "a meeting room"
+     ],
+     "answer": 1,
+     "why": "Music = música; sons e canções que ouvimos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem em small talk no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's <strong>catch up</strong> over coffee.\" To catch up means to…",
+     "options": [
+      "start a meeting",
+      "talk and share news",
+      "clean the room",
+      "run faster"
+     ],
+     "answer": 1,
+     "why": "Catch up = colocar a conversa em dia, trocar novidades."
+    },
+    {
+     "q": "\"How is it <strong>going</strong>?\" This is a friendly way to ask…",
+     "options": [
+      "What time is it?",
+      "Can I go now?",
+      "Where are you going?",
+      "How are you?"
+     ],
+     "answer": 3,
+     "why": "\"How is it going?\" = Como vai?, um cumprimento informal."
+    },
+    {
+     "q": "\"Let's <strong>grab a coffee</strong> before the meeting.\" To grab a coffee means to…",
+     "options": [
+      "make coffee for the team",
+      "get a coffee quickly",
+      "buy a new coffee machine",
+      "clean the kitchen"
+     ],
+     "answer": 1,
+     "why": "Grab a coffee = pegar um café rápido, de forma casual."
+    },
+    {
+     "q": "\"Nice to talk to you. <strong>See you later!</strong>\" This means…",
+     "options": [
+      "I am sorry",
+      "goodbye for now",
+      "come here now",
+      "sit down, please"
+     ],
+     "answer": 1,
+     "why": "See you later = até mais, uma despedida amigável."
+    },
+    {
+     "q": "\"I went to a concert on Sunday.\" \"Oh, <strong>what about you?</strong>\" This asks…",
+     "options": [
+      "where is the concert?",
+      "and how about your weekend?",
+      "do you need help?",
+      "what is the time?"
+     ],
+     "answer": 1,
+     "why": "What about you? = E você? — devolve a pergunta e mantém a conversa."
+    }
+   ]
+  }
+ ]
+}

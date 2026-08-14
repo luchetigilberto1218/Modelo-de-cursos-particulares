@@ -1,0 +1,259 @@
+{
+ "num": 186,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "British workplaces are sometimes more traditional than they look. On the surface, teams seem flat and friendly. Everyone uses first names, even the CEO.<br><br>Below the surface, hierarchy still matters. Titles, experience and time at the company all carry quiet weight. The trick is to read the room. Use first names, but watch how decisions get made.<br><br>Often the most senior person says the least, and then the final word belongs to them. Polite on top, structured underneath — that is the British office.",
+   "items": [
+    {
+     "q": "How do teams look on the surface?",
+     "options": [
+      "Cold and formal",
+      "Angry and busy",
+      "Big and slow",
+      "Flat and friendly"
+     ],
+     "answer": 3,
+     "why": "\"teams seem flat and friendly\" — na superfície parecem horizontais e amigáveis."
+    },
+    {
+     "q": "What do people call the CEO?",
+     "options": [
+      "His first name",
+      "His title",
+      "Boss",
+      "Sir"
+     ],
+     "answer": 0,
+     "why": "\"Everyone uses first names, even the CEO.\""
+    },
+    {
+     "q": "What still matters below the surface?",
+     "options": [
+      "The lunch time",
+      "The office size",
+      "Salary",
+      "Hierarchy"
+     ],
+     "answer": 3,
+     "why": "\"Below the surface, hierarchy still matters.\""
+    },
+    {
+     "q": "The text suggests that the quiet senior person…",
+     "options": [
+      "is not important",
+      "never joins meetings",
+      "has the final word",
+      "does not like the team"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"the final word belongs to them\" — quem fala menos pode decidir tudo."
+    },
+    {
+     "q": "The author would most likely DISAGREE with…",
+     "options": [
+      "Titles carry quiet weight.",
+      "First names show there is no hierarchy.",
+      "You should watch how decisions are made.",
+      "British offices are polite on top."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que, apesar dos primeiros nomes, a hierarquia continua existindo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James explicando ao novo colega quem realmente decide. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team! Let me help you on your first day. You will hear everyone call the CEO 'Richard'. That is normal here. We use first names for everyone.<br><br>But do not let that confuse you. We are friendly, yes, but we are not flat. There is a hierarchy under the surface. Richard is the CEO, and his word is final.<br><br>In most meetings, only three people really decide. Watch them. They are often quiet. The most senior person in the room usually says the least. Then, at the end, they give the final word.<br><br>My advice? Read the room. Do not just read the org chart. Titles matter, but influence matters more. Your line manager may hold more real power than her title shows.<br><br>So, be polite, use first names, and watch how decisions are actually made. Do that, and you will do very well here.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does James say about names in the office?",
+     "options": [
+      "They do not use names",
+      "They use first names for everyone",
+      "They use titles for the CEO",
+      "They use last names only"
+     ],
+     "answer": 1,
+     "why": "\"We use first names for everyone.\""
+    },
+    {
+     "q": "In most meetings, how many people really decide?",
+     "options": [
+      "Everyone",
+      "Only three",
+      "Ten people",
+      "Only one"
+     ],
+     "answer": 1,
+     "why": "\"only three people really decide.\""
+    },
+    {
+     "q": "What is James's advice to the new joiner?",
+     "options": [
+      "Speak the most",
+      "Change your name",
+      "Read the room",
+      "Follow only the org chart"
+     ],
+     "answer": 2,
+     "why": "\"Read the room. Do not just read the org chart.\""
+    },
+    {
+     "q": "James suggests that the quiet person in a meeting is…",
+     "options": [
+      "new to the company",
+      "often the most senior",
+      "bored with the meeting",
+      "not paying attention"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"The most senior person in the room usually says the least.\""
+    },
+    {
+     "q": "What does James mean about your line manager?",
+     "options": [
+      "She is not important",
+      "She may have more power than her title shows",
+      "Her title shows all her power",
+      "She has no real power"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"influence matters more\" — o cargo esconde o poder real do gerente direto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The company has a clear <strong>hierarchy</strong>.\" A hierarchy is…",
+     "options": [
+      "a group of levels, from top to bottom",
+      "a lunch room",
+      "a small team",
+      "a type of contract"
+     ],
+     "answer": 0,
+     "why": "Hierarchy = hierarquia, os níveis do topo até a base."
+    },
+    {
+     "q": "\"We have a <strong>flat structure</strong> here.\" This means…",
+     "options": [
+      "few levels between people",
+      "a big office",
+      "no teams at all",
+      "many levels of bosses"
+     ],
+     "answer": 0,
+     "why": "Flat structure = estrutura horizontal, poucos níveis entre as pessoas."
+    },
+    {
+     "q": "Choose the correct word: \"Talk to your ___ if you have a problem at work.\"",
+     "options": [
+      "first name",
+      "title",
+      "hierarchy",
+      "line manager"
+     ],
+     "answer": 3,
+     "why": "Line manager = gerente direto, a quem você reporta."
+    },
+    {
+     "q": "\"He is very <strong>senior</strong> in the team.\" Senior means…",
+     "options": [
+      "far from the office",
+      "new and young",
+      "friendly and quiet",
+      "high in level and experience"
+     ],
+     "answer": 3,
+     "why": "Senior = sênior, alto no nível e com mais experiência."
+    },
+    {
+     "q": "\"You need to <strong>read the room</strong> in meetings.\" This means…",
+     "options": [
+      "understand the mood and who decides",
+      "clean the meeting room",
+      "read a book in the room",
+      "count the people"
+     ],
+     "answer": 0,
+     "why": "To read the room = ler o ambiente, entender o clima e quem manda."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no dia a dia do escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The CEO has to <strong>sign off on</strong> the plan.\" To sign off on means to…",
+     "options": [
+      "forget it",
+      "approve it formally",
+      "say no to it",
+      "read quickly"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new tool next week.\" To roll out means to…",
+     "options": [
+      "put it in place, step by step",
+      "hide it",
+      "sell it",
+      "throw it away"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar aos poucos."
+    },
+    {
+     "q": "\"Two people <strong>pushed back on</strong> the idea.\" They…",
+     "options": [
+      "left the meeting",
+      "wrote it down",
+      "loved the idea",
+      "resisted or disagreed"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, discordar."
+    },
+    {
+     "q": "\"He agreed but never <strong>followed through</strong>.\" He…",
+     "options": [
+      "asked for more time",
+      "did not finish what he promised",
+      "did it very fast",
+      "shared the plan"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Try to <strong>find out</strong> who really decides.\" To find out means to…",
+     "options": [
+      "write a report",
+      "make a decision",
+      "learn or discover",
+      "leave the room"
+     ],
+     "answer": 2,
+     "why": "Find out = descobrir, ficar sabendo."
+    }
+   ]
+  }
+ ]
+}

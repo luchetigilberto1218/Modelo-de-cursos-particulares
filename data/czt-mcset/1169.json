@@ -1,0 +1,259 @@
+{
+ "num": 1169,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "IT helps every Czarnikow office. It works for London and for São Paulo. When your computer is slow or broken, you call the help desk. They listen and they help.<br><br>In this lesson you learn simple English. You learn the words you need to talk to IT. You also learn the words you need for an online meeting.<br><br>Today you learn five useful words. You practise them in short sentences. Go slow — one step at a time. You can do it!",
+   "items": [
+    {
+     "q": "Which offices does IT help?",
+     "options": [
+      "No office",
+      "Only London",
+      "Every Czarnikow office",
+      "Only São Paulo"
+     ],
+     "answer": 2,
+     "why": "\"IT helps every Czarnikow office.\" — atende todos os escritórios."
+    },
+    {
+     "q": "What do you call when your computer is broken?",
+     "options": [
+      "The help desk",
+      "A meeting",
+      "The bank",
+      "A friend"
+     ],
+     "answer": 0,
+     "why": "\"you call the help desk\" — é o suporte de TI."
+    },
+    {
+     "q": "How many useful words do you learn today?",
+     "options": [
+      "Three",
+      "Ten",
+      "Five",
+      "Two"
+     ],
+     "answer": 2,
+     "why": "\"Today you learn five useful words.\""
+    },
+    {
+     "q": "\"Go slow — one step at a time.\" This suggests the lesson wants you to…",
+     "options": [
+      "stop after one word",
+      "study only at night",
+      "learn calmly, without rushing",
+      "learn fast and skip words"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"go slow, one step at a time\" pede calma, não pressa."
+    },
+    {
+     "q": "The text would most likely AGREE that…",
+     "options": [
+      "online meetings need no English",
+      "you cannot talk to IT in English",
+      "simple English is enough to talk to the help desk",
+      "these words are only for London"
+     ],
+     "answer": 2,
+     "why": "Inferência: a lição ensina inglês simples justamente para falar com a TI e em reuniões."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James no help desk. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, this is James from IT. How can I help you today?<br><br>Okay. Your computer is slow. I understand. When did it start? This morning? Good, thank you. Please close all the programs first. Now, restart the computer. We do this first, always. Many small problems go away after a restart.<br><br>And the screen? Is it dark, or can you see it? Dark. Okay, no problem. Please check the power. Is the cable in? Push it in. Yes? Good. Is there a light on the screen now?<br><br>Now the video call. You say it is frozen. That is a common problem. Please leave the meeting and join again. Slow internet can do this. It is not your computer.<br><br>One more thing. Is any file broken? A file that does not open? No? That is good news. Your files are safe.<br><br>So, three small steps: restart the computer, check the screen, and join the call again. Try them now, slowly, one at a time. If it is still bad, call me back. I am here all day. We are a small team, but we are fast and we like to help. Thank you, and have a good day!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "The user's boss",
+      "James from IT",
+      "A teacher",
+      "A bank manager"
+     ],
+     "answer": 1,
+     "why": "\"Hi, this is James from IT.\""
+    },
+    {
+     "q": "What is the first thing James asks the user to do for the slow computer?",
+     "options": [
+      "Wait one week",
+      "Buy a new computer",
+      "Close the programs and restart",
+      "Send an email"
+     ],
+     "answer": 2,
+     "why": "\"close all the programs. Now, restart the computer. We do this first, always.\""
+    },
+    {
+     "q": "The video call is frozen. What does James say to do?",
+     "options": [
+      "Turn off the computer",
+      "Change the password",
+      "Leave the meeting and join again",
+      "Call a friend"
+     ],
+     "answer": 2,
+     "why": "\"Please leave the meeting and join again.\""
+    },
+    {
+     "q": "James asks about the screen and the cable. This suggests that a dark screen…",
+     "options": [
+      "is always a broken computer",
+      "is never a problem",
+      "can be a simple power problem",
+      "means the file is lost"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele manda checar o cabo e a energia, ou seja, a tela escura pode ser só falta de energia."
+    },
+    {
+     "q": "How would you describe James's attitude?",
+     "options": [
+      "Bored and quiet",
+      "Calm and helpful",
+      "Confused",
+      "Angry and in a hurry"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele explica passo a passo, agradece e diz que fica o dia todo — é calmo e prestativo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"My computer is very <strong>slow</strong> today.\" Slow means…",
+     "options": [
+      "fast",
+      "new",
+      "expensive",
+      "not fast; it takes a long time"
+     ],
+     "answer": 3,
+     "why": "Slow = lento; demora para responder."
+    },
+    {
+     "q": "Choose the correct word: \"The printer does not work. It is ___.\"",
+     "options": [
+      "broken",
+      "big",
+      "happy",
+      "clean"
+     ],
+     "answer": 0,
+     "why": "Broken = quebrado; a impressora não funciona."
+    },
+    {
+     "q": "\"The video call is <strong>frozen</strong>.\" Frozen means the screen…",
+     "options": [
+      "is cold",
+      "does not move; it is stuck",
+      "is very bright",
+      "has new colours"
+     ],
+     "answer": 1,
+     "why": "Frozen = travado; a imagem para e não se move."
+    },
+    {
+     "q": "Choose the correct word: \"I turn on the computer, but the screen is ___. I see nothing.\"",
+     "options": [
+      "loud",
+      "dark",
+      "warm",
+      "small"
+     ],
+     "answer": 1,
+     "why": "Dark = escuro; a tela não mostra nada."
+    },
+    {
+     "q": "\"The internet is <strong>bad</strong> today.\" Bad means…",
+     "options": [
+      "very fast",
+      "not good; of low quality",
+      "free",
+      "very good"
+     ],
+     "answer": 1,
+     "why": "Bad = ruim; de baixa qualidade."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem quando você fala com a TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>restart</strong> your computer.\" To restart means to…",
+     "options": [
+      "clean the screen",
+      "turn it off and on again",
+      "sell it",
+      "buy a new one"
+     ],
+     "answer": 1,
+     "why": "Restart = reiniciar: desligar e ligar de novo."
+    },
+    {
+     "q": "\"I can't <strong>log in</strong> to my email.\" To log in means to…",
+     "options": [
+      "delete the email",
+      "close the program",
+      "print a file",
+      "enter with your name and password"
+     ],
+     "answer": 3,
+     "why": "Log in = entrar (fazer login) com usuário e senha."
+    },
+    {
+     "q": "\"Please <strong>turn off</strong> the computer before you go home.\" To turn off means to…",
+     "options": [
+      "stop it; make it not work",
+      "make it faster",
+      "open a file",
+      "start a call"
+     ],
+     "answer": 0,
+     "why": "Turn off = desligar."
+    },
+    {
+     "q": "\"Don't worry, IT will <strong>sort out</strong> the problem.\" To sort out means to…",
+     "options": [
+      "forget it",
+      "write it down",
+      "make it worse",
+      "solve it; make it right"
+     ],
+     "answer": 3,
+     "why": "Sort out = resolver, dar um jeito no problema."
+    },
+    {
+     "q": "\"Please <strong>back up</strong> your files every week.\" To back up means to…",
+     "options": [
+      "send your files to a client",
+      "delete your files",
+      "hide your files",
+      "make a safe copy of your files"
+     ],
+     "answer": 3,
+     "why": "Back up = fazer cópia de segurança (backup)."
+    }
+   ]
+  }
+ ]
+}

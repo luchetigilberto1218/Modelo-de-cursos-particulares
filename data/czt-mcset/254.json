@@ -1,0 +1,259 @@
+{
+ "num": 254,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Lead time and cycle time sound similar, but they are different. Lead time is the total time from the customer's order to delivery. Cycle time is the time to produce one unit inside the factory.<br><br>Both matter. Long lead times frustrate customers. Long cycle times tie up the factory and make production expensive.<br><br>Good teams measure both every week. They work to shorten them a little at a time. Over a year, small gains add up to a very different operation.",
+   "items": [
+    {
+     "q": "What is lead time?",
+     "options": [
+      "The time to produce one unit",
+      "The time to train a planner",
+      "The total time from order to delivery",
+      "The time the factory is closed"
+     ],
+     "answer": 2,
+     "why": "\"Lead time is the total time from the customer's order to delivery.\""
+    },
+    {
+     "q": "What is cycle time?",
+     "options": [
+      "The time to write the report",
+      "The time to produce one unit",
+      "The time to ship the order",
+      "The time the customer waits"
+     ],
+     "answer": 1,
+     "why": "\"Cycle time is the time to produce one unit inside the factory.\""
+    },
+    {
+     "q": "According to the text, why are long lead times a problem?",
+     "options": [
+      "They make the factory faster",
+      "They help the planners",
+      "They frustrate customers",
+      "They lower the price"
+     ],
+     "answer": 2,
+     "why": "\"Long lead times frustrate customers.\""
+    },
+    {
+     "q": "The text suggests that big improvements come from…",
+     "options": [
+      "hiring more customers",
+      "many small gains over time",
+      "stopping the measurements",
+      "one large change every year"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"shorten them a little at a time… small gains add up\" — o ganho grande vem de muitos ganhos pequenos."
+    },
+    {
+     "q": "The author would most likely AGREE that teams should…",
+     "options": [
+      "check both times often and keep improving them",
+      "ignore cycle time and watch only lead time",
+      "measure lead time and cycle time only once a year",
+      "accept long times because they never change"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que bons times medem os dois toda semana e trabalham para encurtá-los."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry mostrando o painel a um novo planejador. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning. Come and sit here. This is the weekly dashboard. We look at it every Monday.<br><br>See these two numbers for each product line? The first one is lead time. That is the total time from the customer's order to delivery. The second one is cycle time. That is the time to produce one unit here in the factory.<br><br>Look at this line. The cycle time is short. That is good. But the lead time is very long. Why? Because the order waits many days before we start. The waiting is the problem, not the machine.<br><br>So do not look at only one number. Look at both. If the lead time goes up this week, come and tell me. We fix small problems early, before they grow.<br><br>Your job is simple. Every Monday, read the two numbers for each line. Write down anything strange. A good planner does not just accept a long lead time. A good planner asks why and works to shorten it.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How often does the team look at the dashboard?",
+     "options": [
+      "Once a year",
+      "Every day",
+      "Every Monday",
+      "Once a month"
+     ],
+     "answer": 2,
+     "why": "\"This is the weekly dashboard. We look at it every Monday.\""
+    },
+    {
+     "q": "On the line Harry shows, what is the problem?",
+     "options": [
+      "There is no cycle time number",
+      "The cycle time is very long",
+      "The order waits many days before they start",
+      "The machine is broken"
+     ],
+     "answer": 2,
+     "why": "\"the order waits many days before we start. The waiting is the problem.\""
+    },
+    {
+     "q": "What should the new planner do if the lead time goes up?",
+     "options": [
+      "Change the machine alone",
+      "Tell Harry",
+      "Delete the number",
+      "Wait until next month"
+     ],
+     "answer": 1,
+     "why": "\"If the lead time goes up this week, come and tell me.\""
+    },
+    {
+     "q": "Harry suggests that a good planner should…",
+     "options": [
+      "accept a long lead time as normal",
+      "measure the times once a year",
+      "ask why the lead time is long and try to shorten it",
+      "look at only one number"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"A good planner does not just accept a long lead time. A good planner asks why and works to shorten it.\""
+    },
+    {
+     "q": "Why does Harry want to fix small problems early?",
+     "options": [
+      "Because customers like waiting",
+      "Because small problems can grow",
+      "Because the dashboard is new",
+      "Because the factory is closed"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"We fix small problems early, before they grow.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We received a big <strong>order</strong> from a new customer.\" An <strong>order</strong> is…",
+     "options": [
+      "a request to buy goods",
+      "a broken machine",
+      "a factory line",
+      "a weekly meeting"
+     ],
+     "answer": 0,
+     "why": "Order = pedido: o cliente pede para comprar."
+    },
+    {
+     "q": "Choose the correct word: \"The truck brings the ___ to the customer's door.\"",
+     "options": [
+      "cycle",
+      "delivery",
+      "order",
+      "unit"
+     ],
+     "answer": 1,
+     "why": "Delivery = entrega: o que chega à porta do cliente."
+    },
+    {
+     "q": "\"A late train can <strong>frustrate</strong> the passengers.\" To <strong>frustrate</strong> means to…",
+     "options": [
+      "make people annoyed",
+      "make people happy",
+      "make people faster",
+      "make people leave"
+     ],
+     "answer": 0,
+     "why": "To frustrate = frustrar, deixar irritado/insatisfeito."
+    },
+    {
+     "q": "Choose the correct word: \"A big stock can ___ a lot of money in the warehouse.\"",
+     "options": [
+      "add up",
+      "produce",
+      "shorten",
+      "tie up"
+     ],
+     "answer": 3,
+     "why": "To tie up = imobilizar (dinheiro parado)."
+    },
+    {
+     "q": "\"We want to <strong>shorten</strong> the lead time.\" To <strong>shorten</strong> means to…",
+     "options": [
+      "make it shorter",
+      "make it longer",
+      "make it stop",
+      "make it wait"
+     ],
+     "answer": 0,
+     "why": "To shorten = encurtar, tornar menor."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de produção. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Small delays every day <strong>add up</strong> to a long lead time.\" To add up means to…",
+     "options": [
+      "come together into a bigger total",
+      "cancel each other",
+      "stay the same",
+      "get smaller"
+     ],
+     "answer": 0,
+     "why": "To add up = somar-se, juntar-se num total maior."
+    },
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new plan.\" To sign off on means to…",
+     "options": [
+      "throw it away",
+      "formally approve it",
+      "read it quickly",
+      "print it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new dashboard to every line.\" To roll out means to…",
+     "options": [
+      "hide it from the team",
+      "stop using it",
+      "sell it",
+      "put it into use step by step"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar, colocar em uso aos poucos."
+    },
+    {
+     "q": "\"The team agreed the plan but did not <strong>follow through</strong>.\" They…",
+     "options": [
+      "did not do what they agreed",
+      "finished the plan",
+      "asked for help",
+      "wrote a new plan"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"One faster machine will not <strong>move the needle</strong> on lead time.\" This means it will…",
+     "options": [
+      "break the line",
+      "not make a real difference",
+      "cost nothing",
+      "make a big difference"
+     ],
+     "answer": 1,
+     "why": "Move the needle = fazer diferença perceptível; aqui, não faz."
+    }
+   ]
+  }
+ ]
+}

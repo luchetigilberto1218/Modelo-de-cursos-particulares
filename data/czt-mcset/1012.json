@@ -10,56 +10,56 @@
     {
      "q": "What is the text about?",
      "options": [
-      "Office furniture",
-      "Business emails",
+      "Frequency adverbs",
       "Job interviews",
-      "Frequency adverbs"
+      "Office furniture",
+      "Business emails"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "O texto fala sobre frequency adverbs: always, usually, often, sometimes, never."
     },
     {
      "q": "Which words are frequency adverbs in the text?",
      "options": [
-      "Big, small, fast, slow",
-      "Always, usually, often, sometimes, never",
       "Coffee, lunch, meeting, report",
-      "Monday, Tuesday, Wednesday"
+      "Big, small, fast, slow",
+      "Monday, Tuesday, Wednesday",
+      "Always, usually, often, sometimes, never"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"we use frequency adverbs: always, usually, often, sometimes, never.\""
     },
     {
      "q": "Why do we use frequency adverbs?",
      "options": [
       "To count money",
+      "To ask for the time",
       "To write our name",
-      "To describe our week clearly",
-      "To ask for the time"
+      "To describe our week clearly"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"They help us describe our week clearly.\""
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "frequency adverbs are not useful",
       "we do everything every day",
       "you cannot learn new words",
-      "learning English can be simple and step by step"
+      "learning English can be simple and step by step",
+      "frequency adverbs are not useful"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: \"We go step by step. You can do it!\" — o tom é positivo e encorajador."
     },
     {
      "q": "\"I sometimes work from home\" suggests that the person…",
      "options": [
-      "always works from home",
-      "never works from home",
       "does not have a home",
-      "works from home now and then, not every day"
+      "works from home now and then, not every day",
+      "never works from home",
+      "always works from home"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"sometimes\" = às vezes, ou seja, em alguns dias, não todos."
     }
    ]
@@ -77,43 +77,43 @@
     {
      "q": "What time does Sophie always start work?",
      "options": [
+      "At seven",
       "At nine",
-      "At noon",
       "At ten",
-      "At seven"
+      "At noon"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"I always start work at nine in the morning.\""
     },
     {
      "q": "What does Sophie usually do on Mondays?",
      "options": [
-      "She writes reports",
-      "She stays at home all day",
+      "She has a team meeting",
       "She travels to Brazil",
-      "She has a team meeting"
+      "She stays at home all day",
+      "She writes reports"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"On Mondays, I usually have a team meeting.\""
     },
     {
      "q": "What can we say about Tom?",
      "options": [
-      "He does not like Sophie",
-      "He never works",
+      "He is always late",
       "He is punctual and reliable",
-      "He is always late"
+      "He never works",
+      "He does not like Sophie"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: \"Tom is never late. He is always on time\" — ele é pontual e confiável."
     },
     {
      "q": "How does Sophie feel about her routine?",
      "options": [
       "She wants to change everything",
-      "She hates her job",
+      "She is always sad",
       "She likes it, even though her week is busy",
-      "She is always sad"
+      "She hates her job"
      ],
      "answer": 2,
      "why": "Inferência: \"My week is busy, but I really like my routine… I feel lucky!\""
@@ -121,12 +121,12 @@
     {
      "q": "Why does Sophie like Mondays?",
      "options": [
-      "Because she has lunch with Tom",
-      "Because she finishes early",
       "Because the team plans the week together",
-      "Because she works from home"
+      "Because she finishes early",
+      "Because she works from home",
+      "Because she has lunch with Tom"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"I like Mondays because we plan the week together.\""
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"I <strong>always</strong> arrive at 9am.\" <strong>Always</strong> means…",
      "options": [
-      "never",
       "one time only",
-      "every time, 100%",
-      "maybe"
+      "never",
+      "maybe",
+      "every time, 100%"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Always = sempre, todas as vezes."
     },
     {
      "q": "Choose the correct word: \"She ___ has lunch at one o'clock, but today she ate at two.\"",
      "options": [
       "here",
-      "yesterday",
+      "never",
       "usually",
-      "never"
+      "yesterday"
      ],
      "answer": 2,
      "why": "Usually = geralmente: quase sempre, mas hoje foi diferente."
@@ -173,9 +173,9 @@
      "q": "Choose the correct word: \"They ___ travel to Brazil — maybe two times a year.\"",
      "options": [
       "quickly",
-      "never",
+      "always",
       "sometimes",
-      "always"
+      "never"
      ],
      "answer": 2,
      "why": "Sometimes = às vezes: em algumas ocasiões, não sempre."
@@ -183,12 +183,12 @@
     {
      "q": "\"I <strong>never</strong> skip the morning meeting.\" <strong>Never</strong> means…",
      "options": [
-      "usually",
-      "sometimes",
+      "not one time, 0%",
       "always",
-      "not one time, 0%"
+      "sometimes",
+      "usually"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Never = nunca, nenhuma vez."
     }
    ]
@@ -201,10 +201,10 @@
     {
      "q": "\"On Fridays I sometimes <strong>work from home</strong>.\" To work from home means to…",
      "options": [
-      "look for a new job",
+      "take a day off",
       "clean the house",
       "do your job at home, not at the office",
-      "take a day off"
+      "look for a new job"
      ],
      "answer": 2,
      "why": "Work from home = trabalhar de casa (home office)."
@@ -214,8 +214,8 @@
      "options": [
       "at the right moment, not late",
       "one hour late",
-      "at home",
-      "very slow"
+      "very slow",
+      "at home"
      ],
      "answer": 0,
      "why": "On time = na hora, pontual."
@@ -225,8 +225,8 @@
      "options": [
       "a very hard work day",
       "a free day, without work",
-      "a meeting day",
-      "the first day of the job"
+      "the first day of the job",
+      "a meeting day"
      ],
      "answer": 1,
      "why": "Day off = dia de folga, sem trabalho."
@@ -234,23 +234,23 @@
     {
      "q": "\"Let's <strong>catch up</strong> on Friday and talk about the week.\" To catch up means to…",
      "options": [
+      "run very fast",
       "cancel the meeting",
       "meet and share news",
-      "go home early",
-      "run very fast"
+      "go home early"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Catch up = colocar o papo/assunto em dia, atualizar-se."
     },
     {
      "q": "\"We usually <strong>wrap up</strong> the week on Friday afternoon.\" To wrap up means to…",
      "options": [
-      "finish something",
-      "travel far away",
       "forget the plan",
-      "start something new"
+      "travel far away",
+      "start something new",
+      "finish something"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Wrap up = finalizar, encerrar."
     }
    ]

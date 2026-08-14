@@ -19,21 +19,21 @@
     {
      "q": "What do you say in the beginning?",
      "options": [
-      "Two or three ideas",
       "Your name and your topic",
-      "The conclusion",
-      "Goodbye"
+      "Two or three ideas",
+      "Goodbye",
+      "The conclusion"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"In the beginning, you say your name and your topic.\""
     },
     {
      "q": "How many main ideas do you share in the middle?",
      "options": [
       "Two or three",
+      "None",
       "Twenty",
-      "Ten",
-      "None"
+      "Ten"
      ],
      "answer": 0,
      "why": "\"In the middle, you share two or three main ideas.\""
@@ -41,23 +41,23 @@
     {
      "q": "What do you do at the end?",
      "options": [
-      "Say your name",
-      "Leave silently",
+      "Give a conclusion and thank the audience",
       "Start again",
-      "Give a conclusion and thank the audience"
+      "Leave silently",
+      "Say your name"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"In the end, you give a conclusion and thank the audience.\""
     },
     {
      "q": "According to the text, which is better?",
      "options": [
+      "A silent one",
       "A short, clear presentation",
-      "A long, confusing presentation",
       "A very fast one",
-      "A silent one"
+      "A long, confusing presentation"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"A short, clear presentation is better than a long, confusing one.\""
     }
    ]
@@ -83,45 +83,45 @@
     {
      "q": "In one sentence, how was the quarter?",
      "options": [
-      "Bad",
       "A good quarter",
       "Confusing",
+      "Bad",
       "Empty"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"In one sentence: it was a good quarter.\""
     },
     {
      "q": "What was the first main idea?",
      "options": [
-      "Profit fell",
       "Costs went up",
       "Sales went up eight percent compared with last year",
-      "They lost clients"
+      "They lost clients",
+      "Profit fell"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"One: sales went up eight percent compared with last year.\""
     },
     {
      "q": "What happened to costs?",
      "options": [
+      "They stayed the same, so profit grew",
       "They disappeared",
       "They doubled",
-      "They stayed the same, so profit grew",
       "They went up"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Two: our costs stayed the same, so the profit grew.\""
     },
     {
      "q": "What is the structure James recommends?",
      "options": [
-      "A long story",
-      "Only numbers",
       "Name and topic, three ideas, one conclusion, thank you",
-      "No plan"
+      "No plan",
+      "A long story",
+      "Only numbers"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Name and topic, three ideas, one conclusion, thank you.\""
     }
    ]
@@ -132,43 +132,43 @@
     {
      "q": "The **audience** is…",
      "options": [
-      "the slides",
       "the room",
-      "the speaker",
-      "the people who listen"
+      "the slides",
+      "the people who listen",
+      "the speaker"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Audience = público."
     },
     {
      "q": "A **conclusion** is…",
      "options": [
-      "a question",
-      "the beginning",
+      "the title",
       "the final part with the main message",
-      "the title"
+      "a question",
+      "the beginning"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Conclusion = conclusão."
     },
     {
      "q": "Choose the correct phrase: \"Share only two or three **___**.\"",
      "options": [
-      "rooms",
-      "goodbyes",
       "main ideas",
-      "greetings"
+      "greetings",
+      "goodbyes",
+      "rooms"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Main idea = ideia principal."
     },
     {
      "q": "To **introduce** yourself means to…",
      "options": [
       "say who you are",
+      "leave",
       "say goodbye",
-      "ask a question",
-      "leave"
+      "ask a question"
      ],
      "answer": 0,
      "why": "Introduce = apresentar-se."
@@ -176,12 +176,12 @@
     {
      "q": "Choose the correct word: \"At the end, we **___** the audience.\"",
      "options": [
-      "leave",
-      "ignore",
       "thank",
-      "confuse"
+      "confuse",
+      "ignore",
+      "leave"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Thank = agradecer."
     }
    ]
@@ -192,21 +192,21 @@
     {
      "q": "\"Let me **run through** the three ideas.\" To run through means to…",
      "options": [
-      "skip",
       "hide",
       "go over quickly",
-      "cancel"
+      "cancel",
+      "skip"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Run through = passar por, revisar."
     },
     {
      "q": "\"Sales **went up** eight percent.\" To go up means to…",
      "options": [
-      "decrease",
-      "increase",
       "stop",
-      "stay flat"
+      "increase",
+      "stay flat",
+      "decrease"
      ],
      "answer": 1,
      "why": "Go up = subir."
@@ -214,30 +214,30 @@
     {
      "q": "\"Costs **stayed the same**.\" To stay the same means to…",
      "options": [
-      "not change",
+      "rise",
       "fall",
-      "change a lot",
-      "rise"
+      "not change",
+      "change a lot"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Stay the same = permanecer igual."
     },
     {
      "q": "\"I'll **be quick** — about five minutes.\" To be quick means to…",
      "options": [
-      "be silent",
-      "not take long",
       "take a long time",
-      "be slow"
+      "be slow",
+      "not take long",
+      "be silent"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Be quick = ser breve."
     },
     {
      "q": "\"Any questions? **Fire away**.\" Fire away means…",
      "options": [
-      "stop",
       "wait",
+      "stop",
       "leave",
       "go ahead and ask"
      ],

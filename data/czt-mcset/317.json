@@ -10,56 +10,56 @@
     {
      "q": "What does an export do?",
      "options": [
-      "Goods are only stored in a warehouse",
+      "Goods leave one country and go to another",
       "Goods are sent back to the seller",
-      "Goods stay in the same country",
-      "Goods leave one country and go to another"
+      "Goods are only stored in a warehouse",
+      "Goods stay in the same country"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"In an export, goods leave one country and go to another.\""
     },
     {
      "q": "In an import, what happens before the goods are released?",
      "options": [
-      "The buyer pays duties",
       "The ship sails away",
+      "The exporter packs the goods",
       "The goods are cleared for export",
-      "The exporter packs the goods"
+      "The buyer pays duties"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The buyer pays duties. Then the goods are released.\""
     },
     {
      "q": "The text says import and export are \"like a mirror\". This suggests that…",
      "options": [
-      "the two processes are very different",
-      "the steps happen in reverse on the other side",
+      "only exports need customs",
       "imports are always faster",
-      "only exports need customs"
+      "the steps happen in reverse on the other side",
+      "the two processes are very different"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: espelho = os mesmos passos, mas invertidos nos dois lados da fronteira."
     },
     {
      "q": "What happens when one link is missing?",
      "options": [
-      "Everything stops",
       "Customs is not needed",
-      "The buyer pays less",
-      "The shipment moves faster"
+      "The shipment moves faster",
+      "Everything stops",
+      "The buyer pays less"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"When one link is missing, everything stops.\""
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "every role depends on the others",
-      "duties are paid after the goods are released",
+      "customs is not important",
       "one person can do the whole shipment alone",
-      "customs is not important"
+      "duties are paid after the goods are released",
+      "every role depends on the others"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: o texto diz que cada passo tem um dono e que, sem um deles, tudo para — logo, todos dependem uns dos outros."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "How many people work on this one container?",
      "options": [
-      "Five",
       "Ten",
+      "Four",
       "Three",
-      "Four"
+      "Five"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"It is only one container, but five people work on it.\""
     },
     {
      "q": "What does the customs broker do?",
      "options": [
-      "Packs the goods",
       "Drives the ship",
-      "Clears the container for export",
-      "Pays the duties"
+      "Pays the duties",
+      "Packs the goods",
+      "Clears the container for export"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"The customs broker clears it for export.\""
     },
     {
      "q": "Why did the container stay at the port for three days?",
      "options": [
-      "The ship was late",
       "There was a storm",
       "The importer did not want the goods",
-      "The broker forgot one document"
+      "The broker forgot one document",
+      "The ship was late"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"the broker forgot one document… customs did not release it. It stayed at the port for three days.\""
     },
     {
      "q": "Charlotte says \"small mistakes cost real money\". This suggests that…",
      "options": [
-      "even a tiny mistake can be expensive",
       "only big mistakes matter",
+      "small errors have no effect",
       "money is not important",
-      "small errors have no effect"
+      "even a tiny mistake can be expensive"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: um papel esquecido gerou taxas extras — pequenos erros custam caro."
     },
     {
      "q": "What advice does Charlotte give the new joiner?",
      "options": [
-      "Ask questions and check first when unsure",
       "Work faster and do not stop",
       "Never talk to customs",
+      "Ask questions and check first when unsure",
       "Do all five steps alone"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"Ask questions when you are not sure. It is always better to check first.\""
     }
    ]
@@ -140,8 +140,8 @@
      "q": "\"We <strong>clear customs</strong> before the ship leaves.\" To clear customs means to…",
      "options": [
       "pay the ship's crew",
-      "load the goods",
       "clean the container",
+      "load the goods",
       "get official approval to pass customs"
      ],
      "answer": 3,
@@ -151,33 +151,33 @@
      "q": "Choose the correct word: \"The buyer must pay the ___ before the goods are released.\"",
      "options": [
       "ships",
+      "duties",
       "workers",
-      "papers",
-      "duties"
+      "papers"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Duty = imposto pago sobre a mercadoria importada."
     },
     {
      "q": "\"The customs officer will <strong>release</strong> the goods now.\" To release means to…",
      "options": [
-      "check the papers",
-      "pack the goods",
       "send the goods back",
-      "let the goods go to the buyer"
+      "let the goods go to the buyer",
+      "check the papers",
+      "pack the goods"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Release = liberar a mercadoria para o comprador."
     },
     {
      "q": "\"You must <strong>declare</strong> the goods at customs.\" To declare means to…",
      "options": [
-      "sell the goods",
-      "pack the goods",
+      "hide the goods",
       "tell customs what you are bringing",
-      "hide the goods"
+      "sell the goods",
+      "pack the goods"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Declare = declarar, informar à alfândega o que está sendo transportado."
     },
     {
@@ -185,8 +185,8 @@
      "options": [
       "driver",
       "customs broker",
-      "buyer",
-      "ship"
+      "ship",
+      "buyer"
      ],
      "answer": 1,
      "why": "Customs broker = despachante, o profissional que cuida do desembaraço."
@@ -201,42 +201,42 @@
     {
      "q": "\"We will <strong>roll out</strong> the new shipping plan next month.\" To roll out means to…",
      "options": [
-      "cancel the plan",
+      "start using the plan",
       "print the plan",
-      "hide the plan",
-      "start using the plan"
+      "cancel the plan",
+      "hide the plan"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Roll out = colocar em prática, começar a usar algo novo."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the documents.\" To sign off on means to…",
      "options": [
+      "throw them away",
       "approve them officially",
-      "read them quickly",
       "lose them",
-      "throw them away"
+      "read them quickly"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar oficialmente, dar o aval."
     },
     {
      "q": "\"The buyer <strong>pushed back on</strong> the extra fees.\" This means the buyer…",
      "options": [
-      "paid them fast",
       "disagreed with them",
       "forgot them",
+      "paid them fast",
       "agreed at once"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Push back on = resistir, discordar de algo."
     },
     {
      "q": "\"The broker promised to fix it, but he did not <strong>follow through</strong>.\" This means he…",
      "options": [
       "did not do what he promised",
-      "sent an email",
       "asked for more time",
+      "sent an email",
       "finished the job well"
      ],
      "answer": 0,
@@ -245,12 +245,12 @@
     {
      "q": "\"The container is <strong>held up</strong> at customs.\" This means it is…",
      "options": [
-      "lost forever",
       "already delivered",
       "packed and ready",
-      "delayed and cannot move"
+      "delayed and cannot move",
+      "lost forever"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Held up = retido, parado por um atraso."
     }
    ]

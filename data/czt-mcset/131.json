@@ -8,45 +8,45 @@
     {
      "q": "What do payment terms tell you?",
      "options": [
-      "The ship's name",
-      "The colour of the goods",
       "The duty rate",
-      "When and how the money moves"
+      "The colour of the goods",
+      "When and how the money moves",
+      "The ship's name"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Payment terms tell you when and how the money moves.\""
     },
     {
      "q": "What does 'net 30' mean?",
      "options": [
+      "Pay within 30 days",
       "Pay 30% now",
-      "A 30% discount",
       "30 shipments",
-      "Pay within 30 days"
+      "A 30% discount"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"net 30 (pay within 30 days).\""
     },
     {
      "q": "What does 'COD' mean?",
      "options": [
-      "Pay in 90 days",
       "Pay on delivery",
       "Never pay",
-      "Pay before shipping"
+      "Pay before shipping",
+      "Pay in 90 days"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"COD (pay on delivery).\""
     },
     {
      "q": "What does each term have a different balance of?",
      "options": [
-      "Risk for the buyer and the seller",
+      "Shipping speed",
       "Colour",
-      "Weight",
-      "Shipping speed"
+      "Risk for the buyer and the seller",
+      "Weight"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Each one has a different balance of risk for the buyer and the seller.\""
     },
     {
@@ -72,56 +72,56 @@
     {
      "q": "What is the client asking for?",
      "options": [
-      "Thirty days instead of sixty",
       "Ninety days instead of the usual sixty",
       "A discount only",
-      "Cash on delivery"
+      "Cash on delivery",
+      "Thirty days instead of sixty"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"They usually pay in sixty days, but today they're asking for ninety.\""
     },
     {
      "q": "How does Oliver start his answer?",
      "options": [
-      "By raising the price",
-      "By ending the call",
+      "By understanding and saying 'let me see what we can do'",
       "By saying no straight away",
-      "By understanding and saying 'let me see what we can do'"
+      "By raising the price",
+      "By ending the call"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"I don't say no straight away… 'Let me see what we can do.'\""
     },
     {
      "q": "What does Oliver ask for in return for ninety days?",
      "options": [
       "A new contract",
-      "A slightly bigger order or a small deposit up front",
       "Nothing",
-      "A public apology"
+      "A public apology",
+      "A slightly bigger order or a small deposit up front"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"could you increase the order slightly, or pay a small deposit up front?\""
     },
     {
      "q": "What kind of language does Oliver use?",
      "options": [
-      "Hard demands",
-      "Soft language — 'Would you be able to…', 'Could we perhaps…'",
+      "Silence",
       "Angry words",
-      "Silence"
+      "Hard demands",
+      "Soft language — 'Would you be able to…', 'Could we perhaps…'"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"'Would you be able to…' 'Could we perhaps…' Soft language keeps a long relationship healthy.\""
     },
     {
      "q": "What does Oliver call a good negotiation?",
      "options": [
       "One where the client loses",
-      "One with no talking",
       "One where nobody loses and the client stays for years",
-      "One where he wins everything"
+      "One where he wins everything",
+      "One with no talking"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"nobody loses, and they stay our client for another ten years.\""
     }
    ]
@@ -132,56 +132,56 @@
     {
      "q": "**Payment terms** are…",
      "options": [
-      "the shipping route",
       "the currency",
-      "the rules for when and how payment is made",
-      "the duty"
+      "the shipping route",
+      "the duty",
+      "the rules for when and how payment is made"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Payment terms = prazos/condições de pagamento."
     },
     {
      "q": "**Upfront** payment means paying…",
      "options": [
-      "never",
+      "before / in advance",
       "after delivery",
       "in 90 days",
-      "before / in advance"
+      "never"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Upfront = antecipado."
     },
     {
      "q": "Choose the correct word: \"They offered a **___** — a different set of terms in reply.\"",
      "options": [
-      "counter-offer",
       "duty",
-      "freight",
-      "border"
+      "border",
+      "counter-offer",
+      "freight"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Counter-offer = contraproposta."
     },
     {
      "q": "A **deposit** is…",
      "options": [
       "a duty",
-      "a part payment made early",
       "the full price",
-      "a document"
+      "a document",
+      "a part payment made early"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Deposit = sinal, entrada."
     },
     {
      "q": "Choose the correct word: \"Good terms find a fair **___** of risk for both sides.\"",
      "options": [
-      "loss",
-      "balance",
+      "freight",
       "duty",
-      "freight"
+      "balance",
+      "loss"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Balance = equilíbrio."
     }
    ]
@@ -192,23 +192,23 @@
     {
      "q": "\"I won't say no **straight away**.\" Straight away means…",
      "options": [
+      "slowly",
       "never",
       "immediately",
-      "slowly",
       "later"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Straight away = imediatamente."
     },
     {
      "q": "\"Cash is **tight** right now.\" If cash is tight, there is…",
      "options": [
-      "not much money available",
       "no business",
-      "a discount",
-      "plenty of money"
+      "not much money available",
+      "plenty of money",
+      "a discount"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Tight = apertado, pouco disponível."
     },
     {
@@ -225,23 +225,23 @@
     {
      "q": "\"I ask for something small **in return**.\" In return means…",
      "options": [
+      "in exchange",
       "later",
       "for free",
-      "by force",
-      "in exchange"
+      "by force"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "In return = em troca."
     },
     {
      "q": "\"Would you be able to **meet me halfway**?\" To meet someone halfway means to…",
      "options": [
       "pay everything",
-      "leave",
+      "compromise",
       "refuse",
-      "compromise"
+      "leave"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Meet halfway = chegar a um meio-termo."
     }
    ]

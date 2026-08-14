@@ -10,8 +10,8 @@
     {
      "q": "What must every number reflect?",
      "options": [
-      "What the boss wants",
       "What is easy to type",
+      "What the boss wants",
       "What really happened",
       "What we hoped for"
      ],
@@ -22,9 +22,9 @@
      "q": "Why do we use the same rules every month and year?",
      "options": [
       "So that numbers can be compared",
+      "To make work slower",
       "To hide numbers",
-      "To change the results",
-      "To make work slower"
+      "To change the results"
      ],
      "answer": 0,
      "why": "Consistency = mesmas regras sempre, \"so that numbers can be compared.\""
@@ -32,34 +32,34 @@
     {
      "q": "What does transparency mean here?",
      "options": [
-      "Numbers are secret",
-      "Nothing is hidden and the right people can see how numbers were built",
       "Only the boss can see the numbers",
-      "Numbers are always big"
+      "Numbers are secret",
+      "Numbers are always big",
+      "Nothing is hidden and the right people can see how numbers were built"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"nothing is hidden. Anyone with the right access can see how each number was built.\""
     },
     {
      "q": "The text suggests that a company that guesses its numbers is…",
      "options": [
-      "very safe",
       "always right",
       "hard to trust",
-      "easy to compare"
+      "easy to compare",
+      "very safe"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: o texto opõe \"trust\" a \"quietly guessing\" — adivinhar mina a confiança."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "Trust comes from open numbers",
       "The same rules help us compare numbers",
-      "We can follow only the principles we like",
-      "Accuracy matters more than hope"
+      "Trust comes from open numbers",
+      "Accuracy matters more than hope",
+      "We can follow only the principles we like"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"They are not optional\" — os três princípios não podem ser escolhidos a dedo."
     }
    ]
@@ -77,9 +77,9 @@
     {
      "q": "How many tests must a number pass before it goes into the accounts?",
      "options": [
-      "Five",
-      "Two",
       "Four",
+      "Two",
+      "Five",
       "Three"
      ],
      "answer": 3,
@@ -88,20 +88,20 @@
     {
      "q": "What does Charlotte say to do when you are not sure about a number?",
      "options": [
+      "Guess the number",
       "Ask the boss to guess",
       "Check it",
-      "Leave it empty",
-      "Guess the number"
+      "Leave it empty"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"If you are not sure, you have to check. Never guess.\""
     },
     {
      "q": "If we do something one way in March, what should we do in April?",
      "options": [
-      "A faster way",
       "Nothing",
       "A new way",
+      "A faster way",
       "The same way"
      ],
      "answer": 3,
@@ -111,22 +111,22 @@
      "q": "Why does Charlotte want the work to be clean and clear?",
      "options": [
       "So it takes more time",
+      "So the file looks pretty",
       "So nobody can open the file",
-      "So people with access can see how the number was built",
-      "So the file looks pretty"
+      "So people with access can see how the number was built"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: transparência — \"Anyone with the right access can open the file and see how you built the number.\""
     },
     {
      "q": "What happens to trust when the numbers are wrong?",
      "options": [
-      "It stays the same",
-      "It comes back later",
       "It goes away very fast",
-      "It grows"
+      "It grows",
+      "It comes back later",
+      "It stays the same"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"When the numbers are wrong, that trust goes away very fast.\""
     }
    ]
@@ -139,23 +139,23 @@
     {
      "q": "\"Accuracy is our first <strong>principle</strong>.\" A principle is…",
      "options": [
-      "a basic rule",
-      "a new worker",
+      "a computer file",
       "a big number",
-      "a computer file"
+      "a new worker",
+      "a basic rule"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Principle = princípio, uma regra básica."
     },
     {
      "q": "Choose the correct word: \"Every number must ___ what really happened.\"",
      "options": [
-      "reflect",
+      "sell",
       "guess",
-      "hide",
-      "sell"
+      "reflect",
+      "hide"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To reflect = refletir, mostrar a realidade."
     },
     {
@@ -172,23 +172,23 @@
     {
      "q": "Choose the correct word: \"Transparency means we do not ___ any number.\"",
      "options": [
-      "hide",
+      "reflect",
       "compare",
-      "trust",
-      "reflect"
+      "hide",
+      "trust"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To hide = esconder; transparência é o contrário de esconder."
     },
     {
      "q": "\"You need the right <strong>access</strong> to open the file.\" Access is…",
      "options": [
+      "a monthly rule",
       "a paper form",
-      "permission to see or use something",
       "a small mistake",
-      "a monthly rule"
+      "permission to see or use something"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Access = acesso, permissão para ver ou usar algo."
     }
    ]
@@ -201,43 +201,43 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the numbers.\" To sign off on means to…",
      "options": [
-      "delete them",
       "approve them",
       "hide them",
+      "delete them",
       "print them"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"Please <strong>check</strong> the number if you are not sure.\" To check means to…",
      "options": [
       "keep it secret",
-      "throw it away",
       "make it bigger",
-      "look at it to see if it is correct"
+      "look at it to see if it is correct",
+      "throw it away"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "To check = conferir, verificar se está certo."
     },
     {
      "q": "\"We must <strong>keep to</strong> the same rules every month.\" To keep to means to…",
      "options": [
-      "hide",
       "sell",
-      "forget",
-      "follow and not change"
+      "hide",
+      "follow and not change",
+      "forget"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Keep to = seguir sempre, não mudar — consistência."
     },
     {
      "q": "\"Do not <strong>make up</strong> a number when you are not sure.\" To make up means to…",
      "options": [
+      "save it",
       "share it",
-      "check it",
       "invent it",
-      "save it"
+      "check it"
      ],
      "answer": 2,
      "why": "Make up = inventar; o oposto de usar o número real."
@@ -246,11 +246,11 @@
      "q": "\"When something is wrong, we <strong>look into</strong> it.\" To look into means to…",
      "options": [
       "trust it",
+      "hide it",
       "print it",
-      "study it to understand it",
-      "hide it"
+      "study it to understand it"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Look into = investigar, examinar de perto."
     }
    ]

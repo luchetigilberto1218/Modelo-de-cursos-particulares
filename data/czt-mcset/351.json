@@ -1,0 +1,259 @@
+{
+ "num": 351,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Route optimisation at network scale is not the same exercise as route optimisation at van level. At a thousand daily vans, the relevant questions become structural: where the depots are sited, how zones are assigned, how capacity is allocated between day and evening shifts, which customers deserve which service tier, and how the whole system re-balances when demand spikes in one region and collapses in another.<br><br>The real gains at this scale come from structure, not from individual cleverness. A well-placed depot is worth a hundred clever drivers. A well-assigned zone is worth a month of manual route adjustments. A well-designed shift pattern is worth more than any single piece of optimisation software.<br><br>Senior leaders who invest in these structural choices produce operations that are significantly cheaper, considerably more reliable, and far more pleasant to work in — without any of the heroic route-planning stories that impress nobody after a week.",
+   "items": [
+    {
+     "q": "According to the text, how does optimisation at network scale differ from optimisation at van level?",
+     "options": [
+      "It requires more skilled drivers",
+      "It abandons the idea of service tiers",
+      "It relies on faster software",
+      "The questions it asks become structural"
+     ],
+     "answer": 3,
+     "why": "\"the relevant questions become structural\" — mudam de nível, deixam de ser de rota individual."
+    },
+    {
+     "q": "What does the text say a well-placed depot is worth?",
+     "options": [
+      "An extra evening shift",
+      "A single piece of optimisation software",
+      "A hundred clever drivers",
+      "A month of manual route adjustments"
+     ],
+     "answer": 2,
+     "why": "\"A well-placed depot is worth a hundred clever drivers.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Structural choices drive most of the savings at scale.",
+      "Individual route-planning heroics are the key to lasting gains.",
+      "Depot placement matters more than driver cleverness.",
+      "Well-designed shift patterns beat optimisation software."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto todo argumenta contra o heroísmo individual — \"impress nobody after a week\"."
+    },
+    {
+     "q": "The phrase \"heroic route-planning stories that impress nobody after a week\" suggests that…",
+     "options": [
+      "clever individual fixes are impressive but not durable",
+      "storytelling should be part of every review",
+      "drivers rarely talk about their routes",
+      "such stories are the pride of the operation"
+     ],
+     "answer": 0,
+     "why": "Inferência: o brilhantismo pontual chama atenção no curto prazo, mas não sustenta o ganho."
+    },
+    {
+     "q": "What can be inferred about the author's view of optimisation software?",
+     "options": [
+      "It is the single most important lever",
+      "It replaces the need for depots",
+      "It should be avoided entirely",
+      "It matters less than good structural design"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"worth more than any single piece of optimisation software\" — a estrutura vem antes da ferramenta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentar o programa de rotas à liderança. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thank you all for making the time. What I'm putting in front of you today is not a set of clever routes — it's a network programme. Three changes, essentially. We relocate three depots, we redesign two shift patterns, and we replace a single zone-assignment rule that has quietly cost us for years.<br><br>Let me be precise about the numbers, because I know that's what you'll hold me to. Modelled across a full quarter, this cuts total miles by nine per cent — and, crucially, it holds. This isn't a good week that regresses to the mean; it's a structural floor that stays lower.<br><br>Now, I want to head off the obvious objection. Someone will say our current planners are excellent, and they are. But no amount of individual brilliance offsets a depot in the wrong place. A better-sited depot is worth considerably more than a month of manual adjustments — and it works while everyone sleeps.<br><br>The one thing I'd ask of this room is discipline. Re-balance the zones every quarter, resist the temptation to tinker between reviews, and let the structure do the work. If we do that, this is significantly cheaper and far more reliable — permanently.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How does Harry describe what he is presenting?",
+     "options": [
+      "A software upgrade",
+      "A set of clever routes",
+      "A hiring plan for planners",
+      "A network programme with three changes"
+     ],
+     "answer": 3,
+     "why": "\"it's a network programme. Three changes, essentially.\""
+    },
+    {
+     "q": "What figure does Harry commit to, and what does he emphasise about it?",
+     "options": [
+      "A cut he cannot yet quantify",
+      "A twenty per cent cut in headcount",
+      "A nine per cent cut in miles that holds over time",
+      "A nine per cent cut that appears only in a good week"
+     ],
+     "answer": 2,
+     "why": "\"cuts total miles by nine per cent — and, crucially, it holds… a structural floor.\""
+    },
+    {
+     "q": "How does Harry handle the point that the current planners are excellent?",
+     "options": [
+      "He says planners should be replaced by software",
+      "He avoids the point entirely",
+      "He disputes that they are excellent",
+      "He agrees, but says brilliance can't offset a badly-sited depot"
+     ],
+     "answer": 3,
+     "why": "\"they are. But no amount of individual brilliance offsets a depot in the wrong place.\""
+    },
+    {
+     "q": "What does Harry mean by \"it works while everyone sleeps\"?",
+     "options": [
+      "The savings appear only overnight",
+      "Nobody will notice the change",
+      "The system runs on a night shift only",
+      "The gain is automatic and needs no ongoing heroics"
+     ],
+     "answer": 3,
+     "why": "Inferência: a estrutura bem desenhada entrega o ganho sem esforço manual contínuo."
+    },
+    {
+     "q": "What does Harry's request for \"discipline\" imply about the main risk to the programme?",
+     "options": [
+      "That the depots cannot physically be moved",
+      "That people will tinker between reviews and erode the structure",
+      "That the board will reject the budget",
+      "That the planners will resign"
+     ],
+     "answer": 1,
+     "why": "Inferência: pedir para não mexer entre revisões sinaliza que a ameaça é a intervenção ad hoc, não a estrutura em si."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The savings are <strong>structural</strong>, not tactical.\" Here structural means…",
+     "options": [
+      "built into how the system is designed",
+      "temporary and easily reversed",
+      "limited to one depot",
+      "based on individual effort"
+     ],
+     "answer": 0,
+     "why": "Structural = estrutural: inerente ao desenho do sistema, não a ajustes pontuais."
+    },
+    {
+     "q": "Choose the correct word: \"Relocating the ___ closer to demand cut the average first-mile distance in half.\"",
+     "options": [
+      "depot",
+      "tier",
+      "zone",
+      "shift"
+     ],
+     "answer": 0,
+     "why": "Depot = depósito: é a base física de onde saem as vans."
+    },
+    {
+     "q": "Choose the correct term: \"Premium accounts sit in a higher ___, with tighter delivery windows.\"",
+     "options": [
+      "depot",
+      "service tier",
+      "shift pattern",
+      "re-balance"
+     ],
+     "answer": 1,
+     "why": "Service tier = nível de serviço: a faixa de promessa de entrega atribuída ao cliente."
+    },
+    {
+     "q": "\"We <strong>re-balance</strong> the zones every quarter.\" To re-balance means to…",
+     "options": [
+      "redistribute load so the zones stay evenly matched to demand",
+      "audit the drivers' hours",
+      "renegotiate customer contracts",
+      "shut down the underused zones"
+     ],
+     "answer": 0,
+     "why": "Re-balance = reequilibrar: redistribuir a carga para que nenhuma zona fique sobrecarregada ou ociosa."
+    },
+    {
+     "q": "\"The gains come from structure, not from individual <strong>cleverness</strong>.\" Cleverness here refers to…",
+     "options": [
+      "expensive software",
+      "senior leadership decisions",
+      "smart, improvised individual problem-solving",
+      "formal training programmes"
+     ],
+     "answer": 2,
+     "why": "Cleverness = esperteza: o improviso brilhante de um indivíduo, oposto ao ganho estrutural."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de operações e logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The COO still has to <strong>sign off on</strong> the depot moves.\" To sign off on means to…",
+     "options": [
+      "postpone indefinitely",
+      "formally approve",
+      "comment informally",
+      "announce to the press"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new zone rule region by region.\" To roll out means to…",
+     "options": [
+      "cancel it in phases",
+      "explain it to the board",
+      "implement it in stages",
+      "test it in secret"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two depot managers <strong>pushed back on</strong> the shift redesign.\" They…",
+     "options": [
+      "resisted or objected to it",
+      "rewrote it themselves",
+      "forwarded it upward",
+      "approved it at once"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The team agreed the re-balancing plan but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "changed it halfway",
+      "documented it poorly",
+      "failed to carry it to completion",
+      "escalated it too early"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Shaving a few metres off each route won't <strong>move the needle</strong> at network scale.\" This means it will…",
+     "options": [
+      "take too long to measure",
+      "cost more than expected",
+      "not make a noticeable difference",
+      "provoke resistance"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível no resultado."
+    }
+   ]
+  }
+ ]
+}

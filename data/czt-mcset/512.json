@@ -1,0 +1,259 @@
+{
+ "num": 512,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Applying AI and data ethics in practice means asking a short list of questions before any new project goes live. Is the data allowed to be used for this purpose? Are the people in the data represented fairly? Can the system explain its output to a non-technical reviewer? And what happens when it gets something wrong?<br><br>Provided that these questions have clear answers, the project can usually proceed. Where any answer is missing or uncomfortable, the project is either reshaped or paused until the gap is addressed. This is not a legal discussion; it is a judgement conversation, held early, while there is still time to change the design.<br><br>Although regulators are starting to ask these questions formally, the most serious risk is not the regulator. It is the quiet loss of customer trust when a badly designed system treats real people unfairly — and the story eventually becomes public.",
+   "items": [
+    {
+     "q": "According to the text, when should the ethics questions be asked?",
+     "options": [
+      "Only when a regulator requests it",
+      "Once customer trust has been lost",
+      "Before any new project goes live",
+      "After the project has gone live"
+     ],
+     "answer": 2,
+     "why": "\"asking a short list of questions before any new project goes live.\""
+    },
+    {
+     "q": "What happens when an answer is missing or uncomfortable?",
+     "options": [
+      "The regulator is notified immediately",
+      "The project proceeds under legal review",
+      "The project is reshaped or paused until the gap is addressed",
+      "The project is cancelled permanently"
+     ],
+     "answer": 2,
+     "why": "\"the project is either reshaped or paused until the gap is addressed.\""
+    },
+    {
+     "q": "The author calls this \"a judgement conversation, not a legal discussion.\" This suggests that…",
+     "options": [
+      "the decision is about values and design choices, not just compliance",
+      "regulators make the final call",
+      "the conversation can be skipped if the law allows it",
+      "lawyers should lead the review"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"judgement conversation, held early\" — trata-se de escolhas de valor e design, decididas antes, não só de cumprir a lei."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "As long as a system is legal, its ethics do not need reviewing.",
+      "A fairness gap should be addressed before launch.",
+      "Losing customer trust is harder to fix than passing an audit.",
+      "Ethics questions are best asked while the design can still change."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto insiste que o maior risco não é o regulador, mas a perda de confiança — legalidade não basta."
+    },
+    {
+     "q": "What does the text imply about the timing of an ethics review?",
+     "options": [
+      "Doing it early is what makes it useful, because the design can still be changed",
+      "It matters little as long as it happens eventually",
+      "It should wait until the system is fully built",
+      "It should only follow a public complaint"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"held early, while there is still time to change the design\" — o valor está em fazê-lo enquanto a mudança ainda é possível."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte conduzindo uma revisão de ética sobre uma IA de pontuação de clientes. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thanks for walking me through the model. It's clearly well built, and I can see the team has put a lot of work into the accuracy. But before we schedule the launch, I want to stop on one thing.<br><br>When I broke the scores down by customer group, the system was noticeably harder on newer accounts from smaller markets. Nobody designed it to do that. It simply learned the pattern from the historical data, where those accounts had thinner records. So the model is being fair to the data — but not fair to the people.<br><br>Here's my concern. If we go live and a real customer is scored badly for a reason we can't explain to them, that's not a technical bug. That's a trust problem, and trust is the one thing we can't patch later.<br><br>So I'm not killing the project. I'm pausing the launch. I'd like the team to reshape how those thin-record accounts are handled, and to make sure a non-technical reviewer can read the output and understand why a score came out the way it did. Give me two weeks, and let's do this properly the first time.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What problem did Charlotte find when she broke the scores down by customer group?",
+     "options": [
+      "The model was slower for larger markets",
+      "The scores were identical across every group",
+      "The engineering team had faked the accuracy figures",
+      "The system was noticeably harder on newer accounts from smaller markets"
+     ],
+     "answer": 3,
+     "why": "\"the system was noticeably harder on newer accounts from smaller markets.\""
+    },
+    {
+     "q": "Why does Charlotte say the model behaves this way?",
+     "options": [
+      "Someone deliberately programmed it to penalise those accounts",
+      "The regulator required stricter scoring",
+      "The data was entered incorrectly by the team",
+      "It learned the pattern from historical data where those accounts had thinner records"
+     ],
+     "answer": 3,
+     "why": "\"It simply learned the pattern from the historical data, where those accounts had thinner records.\""
+    },
+    {
+     "q": "What does Charlotte mean by \"fair to the data — but not fair to the people\"?",
+     "options": [
+      "The people in the team disagreed with each other",
+      "The model followed the historical pattern faithfully, yet that pattern is unjust to real customers",
+      "The data was collected illegally",
+      "The model ignored the data entirely"
+     ],
+     "answer": 1,
+     "why": "Inferência: reproduzir fielmente um padrão enviesado dos dados é ser justo com os dados, mas injusto com as pessoas."
+    },
+    {
+     "q": "What is Charlotte's decision about the project?",
+     "options": [
+      "She is handing it to the regulator",
+      "She is cancelling it permanently",
+      "She is pausing the launch, not killing the project",
+      "She is approving it as it is"
+     ],
+     "answer": 2,
+     "why": "\"I'm not killing the project. I'm pausing the launch.\""
+    },
+    {
+     "q": "What does \"trust is the one thing we can't patch later\" suggest about her priorities?",
+     "options": [
+      "She wants to delegate the decision to engineering",
+      "She sees lost customer trust as far harder to repair than a technical fault",
+      "She thinks trust is irrelevant to the project",
+      "She values a quick launch above everything else"
+     ],
+     "answer": 1,
+     "why": "Inferência: ao contrastar com um \"bug\", ela sinaliza que confiança perdida não se conserta como código — é o risco mais sério."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We need to <strong>apply</strong> these ethics questions to every launch, not just the sensitive ones.\" To apply here means to…",
+     "options": [
+      "submit a form",
+      "postpone",
+      "put into practice",
+      "advertise"
+     ],
+     "answer": 2,
+     "why": "Apply = aplicar, pôr em prática o critério em cada projeto."
+    },
+    {
+     "q": "Choose the correct word: \"Before launch, run through a short ___ of questions: consent, fairness, explainability and failure.\"",
+     "options": [
+      "reviewer",
+      "list",
+      "purpose",
+      "reshape"
+     ],
+     "answer": 1,
+     "why": "\"a short list of questions\" — lista curta de verificação antes do lançamento."
+    },
+    {
+     "q": "\"The data was collected for billing, so using it for scoring is a different <strong>purpose</strong>.\" Purpose means…",
+     "options": [
+      "the legal owner of the data",
+      "the size of the dataset",
+      "the goal or use something is intended for",
+      "the accuracy of the model"
+     ],
+     "answer": 2,
+     "why": "Purpose = finalidade; a razão para a qual algo é usado."
+    },
+    {
+     "q": "Choose the correct word: \"A good system can explain its output to a ___ reviewer, in plain language.\"",
+     "options": [
+      "public",
+      "reshaped",
+      "paused",
+      "non-technical"
+     ],
+     "answer": 3,
+     "why": "\"non-technical reviewer\" — alguém sem formação técnica que precisa entender a decisão."
+    },
+    {
+     "q": "\"Rather than scrap the project, we'll <strong>reshape</strong> how thin-record accounts are handled.\" To reshape means to…",
+     "options": [
+      "hand it to the regulator",
+      "delete it completely",
+      "redesign or restructure it",
+      "advertise it more widely"
+     ],
+     "answer": 2,
+     "why": "Reshape = remodelar, mudar a forma sem abandonar o projeto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em revisões de ética e lançamento de produtos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Legal still has to <strong>sign off on</strong> the launch.\" To sign off on means to…",
+     "options": [
+      "comment casually",
+      "rewrite from scratch",
+      "delay indefinitely",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Two reviewers <strong>pushed back on</strong> the fairness assumptions.\" They…",
+     "options": [
+      "approved them at once",
+      "ignored them entirely",
+      "copied them elsewhere",
+      "resisted or challenged them"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, questionar — levantar objeções sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"We agreed to fix the bias, but the team never <strong>followed through</strong>.\" They…",
+     "options": [
+      "escalated it to the board",
+      "documented it carefully",
+      "failed to carry it to completion",
+      "finished ahead of schedule"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Let's <strong>hold off on</strong> the launch until the fairness gap is closed.\" To hold off on means to…",
+     "options": [
+      "delay or postpone",
+      "speed up",
+      "cancel forever",
+      "announce publicly"
+     ],
+     "answer": 0,
+     "why": "Hold off on = adiar, segurar algo até que uma condição seja atendida."
+    },
+    {
+     "q": "\"Cosmetic tweaks won't <strong>move the needle</strong> on fairness.\" This means they will…",
+     "options": [
+      "create legal risk",
+      "cost too much",
+      "not make a noticeable difference",
+      "take too long to measure"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro, produzir uma diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

@@ -10,32 +10,32 @@
     {
      "q": "What is a contingency plan?",
      "options": [
-      "A ten-page report about costs",
       "A short document that says: if X happens, we will do Y",
-      "A map of every border in the world",
-      "A list of all the company's trucks"
+      "A list of all the company's trucks",
+      "A ten-page report about costs",
+      "A map of every border in the world"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"A contingency plan is a short document. It says: if X happens, we will do Y.\""
     },
     {
      "q": "According to the text, can risk management stop all problems?",
      "options": [
+      "No, nobody can stop all problems",
       "Yes, it stops every problem",
       "No, because plans are too long",
-      "No, nobody can stop all problems",
       "Yes, but only in warehouses"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Nobody can stop all problems.\" O plano ajuda a reagir, não a evitar tudo."
     },
     {
      "q": "How fast does a team WITH a rehearsed plan react?",
      "options": [
-      "It does not react",
+      "In hours",
       "In minutes",
       "In days",
-      "In hours"
+      "It does not react"
      ],
      "answer": 1,
      "why": "\"a team with a small, rehearsed plan reacts in minutes\"."
@@ -43,23 +43,23 @@
     {
      "q": "The text suggests that having a plan is…",
      "options": [
-      "better than having no plan",
       "a waste of time",
+      "impossible for small teams",
       "only for trucks",
-      "impossible for small teams"
+      "better than having no plan"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: o time com plano reage em minutos e o sem plano em horas — logo, ter plano é melhor."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "Some risks matter more than others",
-      "Problems in logistics are common",
       "If you have a good plan, no problem will ever happen",
+      "Problems in logistics are common",
+      "Some risks matter more than others",
       "A short plan can help a team react fast"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: o texto diz que ninguém pode parar todos os problemas — o plano só melhora a reação."
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "How many common crises does Charlotte show the new team lead?",
      "options": [
-      "Two",
-      "Ten",
       "Three",
+      "Ten",
+      "Two",
       "Five"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"the three most common crises… and the one-page plan for each.\""
     },
     {
      "q": "What is the plan if a truck breaks down?",
      "options": [
       "Ask the client to collect the goods",
-      "Cancel the delivery",
       "Wait for the truck to start again",
+      "Cancel the delivery",
       "Call the backup driver and send a second truck"
      ],
      "answer": 3,
@@ -99,12 +99,12 @@
     {
      "q": "What does Charlotte do when a ship is delayed?",
      "options": [
-      "She tells the client the same day and changes the date",
       "She sends a second ship",
+      "She tells the client the same day and changes the date",
       "She says nothing to the client",
       "She waits a few days"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"If the ship is delayed, we will tell the client the same day and change the delivery date.\""
     },
     {
@@ -112,10 +112,10 @@
      "options": [
       "Because there is not enough paper",
       "Because the boss does not like reading",
-      "Because the team has no time to write long plans",
-      "Because a short plan is easier to remember and use"
+      "Because a short plan is easier to remember and use",
+      "Because the team has no time to write long plans"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: ela diz que um plano curto que as pessoas lembram é melhor que um longo que ninguém lê."
     },
     {
@@ -123,8 +123,8 @@
      "options": [
       "The team never practises the plans",
       "People help each other and share the work",
-      "Each person works alone",
-      "Only Charlotte solves problems"
+      "Only Charlotte solves problems",
+      "Each person works alone"
      ],
      "answer": 1,
      "why": "Inferência: \"Nobody works alone here\" e o trabalho é movido para outras pessoas — a equipe se apoia."
@@ -139,56 +139,56 @@
     {
      "q": "\"The old truck can <strong>break down</strong> in the cold.\" To break down means to…",
      "options": [
-      "get clean",
-      "arrive early",
       "drive very fast",
-      "stop working"
+      "stop working",
+      "arrive early",
+      "get clean"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "To break down = quebrar, parar de funcionar."
     },
     {
      "q": "Choose the correct word: \"There was a ___, so the lights and computers went off.\"",
      "options": [
+      "border",
       "delay",
       "power cut",
-      "risk",
-      "border"
+      "risk"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Power cut = queda de energia; por isso luzes e computadores desligaram."
     },
     {
      "q": "\"A big storm can be a serious <strong>risk</strong> for our ships.\" A risk is…",
      "options": [
-      "a new client",
-      "a happy surprise",
       "a fast truck",
-      "a chance that something bad can happen"
+      "a new client",
+      "a chance that something bad can happen",
+      "a happy surprise"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Risk = risco: a chance de algo ruim acontecer."
     },
     {
      "q": "Choose the correct word: \"The ship is late, so there is a two-day ___.\"",
      "options": [
+      "plan",
       "driver",
       "delay",
-      "crisis",
-      "plan"
+      "crisis"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Delay = atraso; o navio está atrasado dois dias."
     },
     {
      "q": "\"The team is <strong>rehearsed</strong>, so they act fast.\" Rehearsed means…",
      "options": [
+      "new to the job",
       "very tired",
       "practised before",
-      "far away",
-      "new to the job"
+      "far away"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Rehearsed = ensaiado, que já treinou antes."
     }
    ]
@@ -201,12 +201,12 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the new plan.\" To sign off on means to…",
      "options": [
-      "throw it away",
-      "print it",
+      "read it slowly",
       "approve it officially",
-      "read it slowly"
+      "print it",
+      "throw it away"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Sign off on = aprovar oficialmente, dar o ok final."
     },
     {
@@ -214,8 +214,8 @@
      "options": [
       "start using it, step by step",
       "hide it from the team",
-      "stop it for now",
-      "make it shorter"
+      "make it shorter",
+      "stop it for now"
      ],
      "answer": 0,
      "why": "Roll out = colocar em prática, aos poucos, em vários lugares."
@@ -223,9 +223,9 @@
     {
      "q": "\"When the ship was late, the team had to <strong>deal with</strong> the problem fast.\" To deal with means to…",
      "options": [
-      "write about it",
-      "take care of it",
       "sell it",
+      "take care of it",
+      "write about it",
       "forget it"
      ],
      "answer": 1,
@@ -234,23 +234,23 @@
     {
      "q": "\"Please <strong>back up</strong> the driver if he is sick.\" To back up someone means to…",
      "options": [
+      "help or replace them",
       "drive behind them",
       "call the client",
-      "help or replace them",
       "close the border"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Back up = dar apoio, substituir ou ajudar alguém."
     },
     {
      "q": "\"We agreed the plan, but we did not <strong>follow through</strong>.\" This means we…",
      "options": [
-      "did not finish it",
-      "made it longer",
+      "did it too fast",
       "sold it to a client",
-      "did it too fast"
+      "made it longer",
+      "did not finish it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Follow through = levar até o fim o que foi combinado."
     }
    ]

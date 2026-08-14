@@ -1,0 +1,259 @@
+{
+ "num": 532,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the top, AI ethics cannot be delegated. Whichever AI systems a company puts into production eventually reflect the values of the leaders who approved them. When something goes wrong — when the system quietly treats some customers unfairly, or uses data the owner never agreed to, or produces an output the company cannot explain — the conversation reaches the executive team very quickly.<br><br>Provided that senior leaders stay close to the ethical questions at the start, most of the worst outcomes can be avoided before they happen. Although the technical teams can build the controls, the judgement about what 'acceptable' means has to live with the people who will be accountable when something goes public.<br><br>Every senior leader who approves an AI project should be able to answer, in plain words, three questions: what is this system deciding, who is affected, and how do we know it is fair? If those answers are unclear, the project is not yet ready for senior approval.",
+   "items": [
+    {
+     "q": "According to the text, whose values do AI systems in production eventually reflect?",
+     "options": [
+      "The values of the customers who are affected",
+      "The values of the vendors who supplied the technology",
+      "The values of the leaders who approved them",
+      "The values of the technical teams who built the controls"
+     ],
+     "answer": 2,
+     "why": "\"AI systems… eventually reflect the values of the leaders who approved them.\""
+    },
+    {
+     "q": "What are the three questions a senior leader should be able to answer?",
+     "options": [
+      "Which vendor supplied it, who owns the data, and who signs off",
+      "What could go wrong, who is liable, and how it is insured",
+      "What it decides, who is affected, and how we know it is fair",
+      "How much it costs, who built it, and when it launches"
+     ],
+     "answer": 2,
+     "why": "\"what is this system deciding, who is affected, and how do we know it is fair?\""
+    },
+    {
+     "q": "The phrase \"the judgement about what 'acceptable' means has to live with the people who will be accountable\" suggests that…",
+     "options": [
+      "acceptability is a purely technical question",
+      "those who bear the consequences must own the ethical decision",
+      "ethical judgement can be safely handed to the engineers",
+      "the standard for 'acceptable' should be set by regulators alone"
+     ],
+     "answer": 1,
+     "why": "Inferência: a responsabilidade final pertence a quem responderá pelas consequências, não à equipe técnica."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "AI ethics can be outsourced to the technical team as a side task.",
+      "Getting involved early prevents most of the worst outcomes.",
+      "A project with unclear answers is not ready for approval.",
+      "Leaders are accountable when an AI decision goes public."
+     ],
+     "answer": 0,
+     "why": "Inferência: a tese central é que a ética de IA não pode ser delegada — é responsabilidade executiva."
+    },
+    {
+     "q": "What does the text imply about a project whose three answers are unclear?",
+     "options": [
+      "It is not yet mature enough for senior sign-off",
+      "It only needs technical, not ethical, review",
+      "It should proceed while the answers are refined later",
+      "It should be approved with additional monitoring"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"If those answers are unclear, the project is not yet ready for senior approval.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte apresentando à liderança a folha de aprovação de três perguntas. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So this is the sheet. One page, three questions, and no project reaches a senior leader's desk until someone has filled it in. What does the system decide, who is affected, and how do we know it is fair. That's it.<br><br>I'll be honest — when I circulated it, a couple of teams thought it was bureaucracy. Then the first project came through, and the person who had to write down 'who is affected' realised she couldn't actually name them. That single blank line sent them back to the data for a week, and the model that came out the other side was far cleaner.<br><br>The second project stalled on the fairness question. They had metrics, but nobody could explain them in plain words, which told us the explanation itself wasn't ready. Rather than wave it through, we held it.<br><br>What I'd ask of you today is simple. Whichever project lands on your desk, don't sign off until the sheet is complete and you personally understand the three answers. If you can't say them out loud, we're not ready — and that's exactly what this is meant to catch.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Charlotte's sheet require before a project reaches a senior leader?",
+     "options": [
+      "A public statement about the system",
+      "The three questions filled in on one page",
+      "Sign-off from the technical team first",
+      "A full budget forecast and a legal opinion"
+     ],
+     "answer": 1,
+     "why": "\"One page, three questions, and no project reaches a senior leader's desk until someone has filled it in.\""
+    },
+    {
+     "q": "What happened with the FIRST project that went through the sheet?",
+     "options": [
+      "It passed without any changes",
+      "The fairness metrics were already perfect",
+      "The person could not name who was affected, so they went back to the data",
+      "It was rejected outright by the board"
+     ],
+     "answer": 2,
+     "why": "\"she couldn't actually name them… sent them back to the data for a week.\""
+    },
+    {
+     "q": "Why did the SECOND project stall?",
+     "options": [
+      "Nobody could explain the fairness metrics in plain words",
+      "It ran out of budget",
+      "A senior leader refused to read the sheet",
+      "The team missed the deadline"
+     ],
+     "answer": 0,
+     "why": "\"They had metrics, but nobody could explain them in plain words.\""
+    },
+    {
+     "q": "When Charlotte says \"we held it\" rather than \"wave it through\", she implies that…",
+     "options": [
+      "delaying a project is always a failure",
+      "the fairness metrics were irrelevant",
+      "the project was permanently cancelled",
+      "an explanation that can't be stated simply isn't yet ready"
+     ],
+     "answer": 3,
+     "why": "Inferência: se não dá para explicar em palavras simples, a própria explicação ainda não está pronta."
+    },
+    {
+     "q": "What is the underlying purpose Charlotte attributes to the sheet?",
+     "options": [
+      "To speed up approvals by removing debate",
+      "To catch projects where leaders can't articulate the three answers",
+      "To shift responsibility onto the technical teams",
+      "To create a record for auditors only"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"If you can't say them out loud, we're not ready — and that's exactly what this is meant to catch.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Ethics at the top cannot be <strong>delegated</strong> to a working group.\" To delegate means to…",
+     "options": [
+      "hand a task or authority to someone else",
+      "postpone a decision",
+      "record something formally",
+      "approve something quickly"
+     ],
+     "answer": 0,
+     "why": "To delegate = delegar: passar uma tarefa ou autoridade a outra pessoa."
+    },
+    {
+     "q": "Choose the correct word: \"When a leader is ___ for an AI decision, they answer for it when it goes public.\"",
+     "options": [
+      "acceptable",
+      "accountable",
+      "unclear",
+      "delegated"
+     ],
+     "answer": 1,
+     "why": "Accountable = responsável: quem responde pelo resultado publicamente."
+    },
+    {
+     "q": "Choose the correct term: \"The system used data the customer never ___, which raised an immediate consent problem.\"",
+     "options": [
+      "agreed to",
+      "reflected",
+      "delegated",
+      "affected"
+     ],
+     "answer": 0,
+     "why": "To agree to = concordar com: o cliente nunca deu consentimento para o uso dos dados."
+    },
+    {
+     "q": "\"Explain it in <strong>plain words</strong> before you ask for sign-off.\" This phrase means…",
+     "options": [
+      "in technical detail",
+      "in simple, clear language anyone can follow",
+      "in written form",
+      "in a formal report"
+     ],
+     "answer": 1,
+     "why": "Plain words = palavras simples: linguagem clara, sem jargão."
+    },
+    {
+     "q": "The systems a company deploys eventually <strong>reflect the values</strong> of its leaders. This means they…",
+     "options": [
+      "mirror the priorities and standards leaders chose",
+      "replace the leaders' judgement",
+      "measure the leaders' performance",
+      "hide the leaders' intentions"
+     ],
+     "answer": 0,
+     "why": "To reflect values = refletir valores: os sistemas espelham as prioridades de quem os aprovou."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre governança de IA. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"No senior leader should <strong>sign off on</strong> a project until the sheet is complete.\" To sign off on means to…",
+     "options": [
+      "comment informally",
+      "formally approve",
+      "delegate downward",
+      "announce to the press"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Two teams <strong>pushed back on</strong> the sheet, calling it bureaucracy.\" They…",
+     "options": [
+      "resisted or objected to it",
+      "adopted it enthusiastically",
+      "ignored it silently",
+      "rewrote it entirely"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"Rather than <strong>wave it through</strong>, Charlotte held the project.\" To wave something through means to…",
+     "options": [
+      "reject it firmly",
+      "approve it without proper scrutiny",
+      "escalate it to the board",
+      "delay it deliberately"
+     ],
+     "answer": 1,
+     "why": "Wave through = aprovar sem o devido escrutínio, deixar passar."
+    },
+    {
+     "q": "\"They agreed to fix the metrics but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "documented it poorly",
+      "changed the metrics halfway",
+      "failed to carry it to completion",
+      "escalated it upward"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"A vague fairness statement won't <strong>hold up</strong> once the decision goes public.\" To hold up means to…",
+     "options": [
+      "slow the rollout",
+      "cause a delay",
+      "remain valid under scrutiny",
+      "raise the price"
+     ],
+     "answer": 2,
+     "why": "Hold up = resistir ao escrutínio, manter-se válido quando questionado."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 1101,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Logistics is what keeps Czarnikow moving. Sugar goes from the mill to the port. The port sends it to the ship. The ship takes it to the client. This movement never stops.<br><br>Today you learn five core words: logistics, delivery, truck, warehouse, and driver. You also learn the verb to be — am, is, are. It is the smallest word in English, but you use it every day at work.<br><br>Logistics is the movement of goods from A to B. A delivery is a promise to a customer. The truck is our most common tool. A warehouse is a temporary home for the product. A driver is the front line of every operation.",
+   "items": [
+    {
+     "q": "What keeps Czarnikow moving?",
+     "options": [
+      "Logistics",
+      "Sugar prices",
+      "The office",
+      "Meetings"
+     ],
+     "answer": 0,
+     "why": "\"Logistics is what keeps Czarnikow moving.\""
+    },
+    {
+     "q": "What is the path of the sugar?",
+     "options": [
+      "Port, mill, ship, client",
+      "Ship, port, mill, client",
+      "Client, ship, port, mill",
+      "Mill, port, ship, client"
+     ],
+     "answer": 3,
+     "why": "\"Sugar goes from the mill to the port. The port sends it to the ship. The ship takes it to the client.\""
+    },
+    {
+     "q": "According to the text, a delivery is…",
+     "options": [
+      "a driver",
+      "a big truck",
+      "a promise to a customer",
+      "a warehouse"
+     ],
+     "answer": 2,
+     "why": "\"A delivery is a promise to a customer.\""
+    },
+    {
+     "q": "The text says the verb to be is small. It suggests that…",
+     "options": [
+      "you rarely need it at work",
+      "it is not important",
+      "a small word can still be very useful",
+      "it is hard to learn"
+     ],
+     "answer": 2,
+     "why": "Inferência: é pequeno, mas você o usa todos os dias — logo, pequeno não quer dizer pouco importante."
+    },
+    {
+     "q": "Why does the text call a warehouse a \"temporary home\"?",
+     "options": [
+      "It is only open at night",
+      "The product stops there for a short time before it moves on",
+      "The product stays there forever",
+      "People live in the warehouse"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"temporary\" = por pouco tempo; o produto para ali antes de continuar a viagem."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry falar com um colega novo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the team. My name is Harry, and I work here at the warehouse. Let me show you around.<br><br>This is a busy place. Every day, trucks come to the gate. The drivers are our friends — they are always on time, and they know the roads very well. When a truck is ready, we load the sugar and it goes to the port.<br><br>Look over there. That big blue truck is ready now. The driver is new, like you. His name is Paulo. He is a little nervous today, but he is a good worker.<br><br>Remember: a delivery is a promise. When we say the sugar is ready at three, it must be ready at three. The client is waiting. We are never late — that is our daily goal.<br><br>So, welcome again. You are part of the team now. Any question is a good question. I am always here to help.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does Harry work?",
+     "options": [
+      "At the warehouse",
+      "In the office",
+      "At the port",
+      "On a ship"
+     ],
+     "answer": 0,
+     "why": "\"My name is Harry, and I work here at the warehouse.\""
+    },
+    {
+     "q": "What does Harry say about the drivers?",
+     "options": [
+      "They do not know the roads",
+      "They work only at night",
+      "They are always late",
+      "They are always on time and know the roads well"
+     ],
+     "answer": 3,
+     "why": "\"The drivers are our friends — they are always on time, and they know the roads very well.\""
+    },
+    {
+     "q": "Who is Paulo?",
+     "options": [
+      "A client",
+      "A new driver",
+      "The manager",
+      "Harry's boss"
+     ],
+     "answer": 1,
+     "why": "\"The driver is new, like you. His name is Paulo.\""
+    },
+    {
+     "q": "Harry says a delivery is a promise. This suggests that…",
+     "options": [
+      "the time does not matter",
+      "trucks are never ready",
+      "keeping the schedule is very important",
+      "the client can wait many days"
+     ],
+     "answer": 2,
+     "why": "Inferência: se é uma promessa e o cliente espera, cumprir o horário importa muito."
+    },
+    {
+     "q": "How does Harry feel about the new colleague?",
+     "options": [
+      "He is bored",
+      "He is friendly and wants to help",
+      "He does not want questions",
+      "He is angry"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele dá boas-vindas, diz \"Any question is a good question\" e \"I am always here to help\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Our <strong>logistics</strong> team moves sugar all day.\" Logistics is…",
+     "options": [
+      "the client's name",
+      "the price of sugar",
+      "the sales report",
+      "the movement of goods from A to B"
+     ],
+     "answer": 3,
+     "why": "Logistics = logística: o movimento das mercadorias de um ponto a outro."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ is late, so the client is waiting.\"",
+     "options": [
+      "meeting",
+      "delivery",
+      "warehouse",
+      "office"
+     ],
+     "answer": 1,
+     "why": "Delivery = entrega: é o que chega ao cliente."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ is at the gate, ready to take the sugar to the port.\"",
+     "options": [
+      "warehouse",
+      "truck",
+      "port",
+      "ship"
+     ],
+     "answer": 1,
+     "why": "Truck = caminhão: o veículo que leva a carga até o porto."
+    },
+    {
+     "q": "\"We keep the boxes in the <strong>warehouse</strong>.\" A warehouse is…",
+     "options": [
+      "a person who drives",
+      "a small truck",
+      "a phone call",
+      "a place to store products"
+     ],
+     "answer": 3,
+     "why": "Warehouse = armazém/depósito: o lugar onde o produto fica guardado."
+    },
+    {
+     "q": "\"The <strong>driver</strong> knows every road to the port.\" A driver is…",
+     "options": [
+      "the warehouse",
+      "a person who drives the truck",
+      "the sugar",
+      "the client"
+     ],
+     "answer": 1,
+     "why": "Driver = motorista: quem dirige o caminhão."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples usadas no dia a dia do trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The truck is <strong>on time</strong>.\" On time means…",
+     "options": [
+      "empty",
+      "at the right time",
+      "very late",
+      "broken"
+     ],
+     "answer": 1,
+     "why": "On time = na hora certa, pontual."
+    },
+    {
+     "q": "\"The drivers <strong>pick up</strong> the sugar at the mill.\" To pick up means to…",
+     "options": [
+      "clean something",
+      "leave something behind",
+      "get or collect something",
+      "pay for something"
+     ],
+     "answer": 2,
+     "why": "Pick up = pegar, coletar algo."
+    },
+    {
+     "q": "\"We <strong>load up</strong> the truck in the morning.\" To load up means to…",
+     "options": [
+      "park the truck",
+      "put things into the truck",
+      "wash the truck",
+      "sell the truck"
+     ],
+     "answer": 1,
+     "why": "Load up = carregar, colocar a carga no caminhão."
+    },
+    {
+     "q": "\"The truck is <strong>ready to go</strong>.\" This means the truck is…",
+     "options": [
+      "in the warehouse",
+      "still empty",
+      "prepared to start the trip",
+      "broken"
+     ],
+     "answer": 2,
+     "why": "Ready to go = pronto para sair, para começar a viagem."
+    },
+    {
+     "q": "\"Welcome! You are <strong>part of the team</strong> now.\" This means you…",
+     "options": [
+      "are a visitor",
+      "are a client",
+      "are the boss",
+      "belong to the group of workers"
+     ],
+     "answer": 3,
+     "why": "Part of the team = fazer parte do time, do grupo de trabalho."
+    }
+   ]
+  }
+ ]
+}

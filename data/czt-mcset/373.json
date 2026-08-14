@@ -12,8 +12,8 @@
      "options": [
       "How many customers the company has",
       "Where the money came from and where it went",
-      "Who owns the company",
-      "How much tax the country charges"
+      "How much tax the country charges",
+      "Who owns the company"
      ],
      "answer": 1,
      "why": "\"where did the money come from, and where did it go?\" — essa é a pergunta central."
@@ -21,21 +21,21 @@
     {
      "q": "According to the text, what can a company do?",
      "options": [
-      "Have cash but never make a profit",
       "Show a profit and still run out of cash",
-      "Avoid all taxes with good accounting",
-      "Track money without a report"
+      "Have cash but never make a profit",
+      "Track money without a report",
+      "Avoid all taxes with good accounting"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"A company can show a profit on paper and still run out of cash.\""
     },
     {
      "q": "What does the text say about cash flow?",
      "options": [
-      "It is easy to change",
+      "It is not important",
       "It is brutal and honest",
       "It is the same as profit",
-      "It is not important"
+      "It is easy to change"
      ],
      "answer": 1,
      "why": "\"Cash flow… is brutal and honest\" — não pode ser moldada como o lucro."
@@ -54,12 +54,12 @@
     {
      "q": "The phrase \"cannot lie\" suggests that…",
      "options": [
-      "cash flow shows the real situation",
+      "profit is always false",
       "accountants never make mistakes",
-      "the report is hard to read",
-      "profit is always false"
+      "cash flow shows the real situation",
+      "the report is hard to read"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: se não pode mentir, o fluxo de caixa mostra a verdade — há ou não dinheiro no banco."
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "What two reports does Sophie show the analyst?",
      "options": [
-      "The P&L and the cash flow statement",
       "The bank letter and the contract",
+      "The P&L and the cash flow statement",
       "The budget and the invoice",
       "The tax form and the loan"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Here is the P&L, and here is the cash flow statement, side by side.\""
     },
     {
      "q": "What does the P&L show for the month?",
      "options": [
-      "A new loan",
       "No sales",
       "A loss",
+      "A new loan",
       "A profit"
      ],
      "answer": 3,
@@ -100,33 +100,33 @@
      "q": "Why was there less cash in the bank at the end of the month?",
      "options": [
       "The bank closed the account",
-      "The company made no sales",
       "The company gave the cash away",
-      "Many customers had not paid yet, but the company paid others"
+      "Many customers had not paid yet, but the company paid others",
+      "The company made no sales"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"many customers have not paid us yet… we paid our suppliers… the staff… the tax.\""
     },
     {
      "q": "Sophie says both reports are correct. This suggests that…",
      "options": [
-      "the analyst made a mistake",
       "one report is wrong",
+      "profit and cash answer different questions",
       "the company is losing money",
-      "profit and cash answer different questions"
+      "the analyst made a mistake"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: ela diz \"They just answer different questions\" — os dois estão certos, mas medem coisas diferentes."
     },
     {
      "q": "Why does Sophie always read the cash flow statement?",
      "options": [
-      "It tells her if the company can pay its bills soon",
       "It is required by the customer",
-      "It is shorter than the P&L",
-      "It shows the biggest profit"
+      "It tells her if the company can pay its bills soon",
+      "It shows the biggest profit",
+      "It is shorter than the P&L"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"Cash tells you if you can pay the bills next week\" — é a pergunta prática que a preocupa."
     }
    ]
@@ -140,8 +140,8 @@
      "q": "\"We use this report to <strong>track</strong> the cash every month.\" To track means to…",
      "options": [
       "spend it quickly",
-      "hide it from the bank",
       "count it only once",
+      "hide it from the bank",
       "follow and watch it over time"
      ],
      "answer": 3,
@@ -150,32 +150,32 @@
     {
      "q": "\"The company almost <strong>ran out</strong> of cash last month.\" To run out means to…",
      "options": [
-      "borrow more",
-      "save carefully",
       "have none left",
-      "have too much"
+      "have too much",
+      "borrow more",
+      "save carefully"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "To run out = ficar sem, acabar."
     },
     {
      "q": "Choose the correct word: \"We paid the ___ to the government at the end of the year.\"",
      "options": [
       "profit",
+      "bank",
       "tax",
-      "customer",
-      "bank"
+      "customer"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Tax = imposto, é o que se paga ao governo."
     },
     {
      "q": "Choose the correct word: \"The cash flow statement is ___ — it shows the real numbers, good or bad.\"",
      "options": [
-      "expensive",
+      "friendly",
       "honest",
-      "quiet",
-      "friendly"
+      "expensive",
+      "quiet"
      ],
      "answer": 1,
      "why": "Honest = honesto: mostra a verdade dos números."
@@ -183,12 +183,12 @@
     {
      "q": "\"The company put money into a new machine. That is an <strong>investment</strong>.\" An investment is…",
      "options": [
-      "a tax paid to the state",
-      "a report about profit",
+      "a loan from a customer",
       "money put in to get a future return",
-      "a loan from a customer"
+      "a tax paid to the state",
+      "a report about profit"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Investment = investimento: dinheiro aplicado esperando retorno futuro."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> every big payment.\" To sign off on means to…",
      "options": [
-      "delay it",
-      "cancel it",
       "hide it",
-      "formally approve"
+      "cancel it",
+      "formally approve",
+      "delay it"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"Money keeps <strong>coming in</strong> from our customers.\" Coming in means the money…",
      "options": [
-      "is frozen",
       "is lost",
-      "is arriving to us",
-      "is leaving us"
+      "is leaving us",
+      "is frozen",
+      "is arriving to us"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Come in = entrar; o dinheiro chega até a empresa."
     },
     {
      "q": "\"A lot of cash <strong>went out</strong> to pay the staff.\" Went out means the money…",
      "options": [
+      "grew bigger",
       "stayed in the bank",
       "came back",
-      "left the company",
-      "grew bigger"
+      "left the company"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Go out = sair; o dinheiro deixa a empresa."
     },
     {
      "q": "\"We must <strong>keep an eye on</strong> the cash every week.\" To keep an eye on means to…",
      "options": [
+      "count it once a year",
       "give it away",
       "watch it carefully",
-      "forget about it",
-      "count it once a year"
+      "forget about it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Keep an eye on = ficar de olho, monitorar."
     },
     {
      "q": "\"If we spend too fast, we could <strong>run out of</strong> money.\" To run out of means to…",
      "options": [
-      "save it",
       "make more",
+      "have none left",
       "invest it",
-      "have none left"
+      "save it"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Run out of = ficar sem; o recurso acaba."
     }
    ]

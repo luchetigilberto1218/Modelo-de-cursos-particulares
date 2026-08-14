@@ -1,0 +1,259 @@
+{
+ "num": 403,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At senior level, the accounting equation stops being a reconciliation check and becomes a lens for understanding the whole company. Assets represent everything the business uses to create value. Liabilities represent everything it has financed by borrowing, paying later, or deferring obligations. Equity represents what the owners have actually put in and earned over time.<br><br>The shape of the equation reveals strategy. A company with a large asset base and thin equity is leaning heavily on debt — comfortable in good times, precarious in bad. A company with growing equity and shrinking liabilities is compounding quietly, on its own strength. A company where receivables and inventory dominate the asset side may be working hard for customers who are slow to pay.<br><br>What matters at this level is not the equation itself, but the ability to read it as a story — and to ask the questions that story suggests before the numbers stop flattering them.",
+   "items": [
+    {
+     "q": "According to the text, what does the accounting equation become at senior level?",
+     "options": [
+      "A legal disclosure requirement",
+      "A substitute for the P&L",
+      "A lens for understanding the whole company",
+      "A reconciliation check"
+     ],
+     "answer": 2,
+     "why": "\"the accounting equation stops being a reconciliation check and becomes a lens for understanding the whole company.\""
+    },
+    {
+     "q": "What does a large asset base combined with thin equity indicate?",
+     "options": [
+      "The company has no liabilities to speak of",
+      "The company is leaning heavily on debt",
+      "The company is compounding on its own strength",
+      "The company is over-reserving cash"
+     ],
+     "answer": 1,
+     "why": "\"A company with a large asset base and thin equity is leaning heavily on debt.\""
+    },
+    {
+     "q": "A firm where receivables and inventory dominate the asset side suggests that…",
+     "options": [
+      "it has stopped creating value",
+      "it is debt-free and self-financing",
+      "it is compounding equity quietly",
+      "it may be serving customers who are slow to pay"
+     ],
+     "answer": 3,
+     "why": "\"receivables and inventory dominate the asset side may be working hard for customers who are slow to pay.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A healthy balance sheet in good times can turn precarious in bad ones.",
+      "The equation is most useful as a mechanical check that both sides tie out.",
+      "Reading the balance sheet is a matter of interpretation, not arithmetic.",
+      "The same equation can conceal very different strategies."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto argumenta justamente que, no nível sênior, o valor está na leitura estratégica — não em conferir se os dois lados batem."
+    },
+    {
+     "q": "What does \"before the numbers stop flattering them\" most strongly imply?",
+     "options": [
+      "Balance sheets can look reassuring right up until a problem surfaces",
+      "The equation is always misleading",
+      "Auditors deliberately embellish the figures",
+      "Equity is the only figure worth trusting"
+     ],
+     "answer": 0,
+     "why": "Inferência: a aparência favorável não dura — a hora de perguntar é enquanto os números ainda tranquilizam."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry conduzindo o novo CFO pelos balanços de três concorrentes. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, here are three competitors, side by side. On the P&L they look almost indistinguishable — similar revenue, similar margins. It's only on the balance sheet that the strategies pull apart.<br><br>Take the first one. Enormous asset base, wafer-thin equity. Nearly everything is financed by debt and deferred obligations. In a strong year that flatters the returns beautifully. But the moment demand softens, that same leverage works against them — and there is very little equity underneath to absorb the shock.<br><br>Now compare the second. Equity has been climbing year after year, liabilities are shrinking, and no one outside is talking about it. That's a company compounding quietly, on its own strength. Unglamorous, but I'd back it in a downturn every time.<br><br>The third is the one I'd watch most closely. Receivables and inventory dominate the asset side. On paper the business is growing, but read the shape and you can see it's working hard for customers who are slow to pay. So my question to you is not which one earns the most this year — it's which one you'd still want to own when the numbers stop flattering them.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why do the three competitors look almost indistinguishable at first?",
+     "options": [
+      "They report on the same balance sheet date",
+      "On the P&L they show similar revenue and margins",
+      "They operate in the same city",
+      "They share the same auditor"
+     ],
+     "answer": 1,
+     "why": "\"On the P&L they look almost indistinguishable — similar revenue, similar margins.\""
+    },
+    {
+     "q": "What is Harry's concern about the FIRST company?",
+     "options": [
+      "It refuses to take on any debt",
+      "Its margins are shrinking",
+      "There is little equity to absorb a downturn",
+      "It has too much idle cash"
+     ],
+     "answer": 2,
+     "why": "\"very little equity underneath to absorb the shock\" quando a demanda cai."
+    },
+    {
+     "q": "Why would Harry back the SECOND company in a downturn?",
+     "options": [
+      "Its receivables are the largest",
+      "It carries the highest leverage of the three",
+      "It has the most exciting story in the market",
+      "It is growing equity and shrinking liabilities on its own strength"
+     ],
+     "answer": 3,
+     "why": "\"Equity has been climbing… liabilities are shrinking… compounding quietly, on its own strength.\""
+    },
+    {
+     "q": "What does Harry imply about the THIRD company's growth?",
+     "options": [
+      "It is entirely self-financed",
+      "Its growth may be tied up in customers who pay slowly",
+      "It is the safest bet of the three",
+      "It has stopped growing altogether"
+     ],
+     "answer": 1,
+     "why": "Inferência: crescimento 'no papel', mas com recebíveis e estoque dominando — o dinheiro está preso em quem paga devagar."
+    },
+    {
+     "q": "What is the real question Harry puts to the CFO at the end?",
+     "options": [
+      "Which company has the largest asset base",
+      "Which company has the newest management team",
+      "Which company earns the most this year",
+      "Which company you'd still want to own once the numbers stop flattering them"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele desloca o critério do lucro do ano para a resiliência — quem você ainda quereria ter quando a aparência favorável acabar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Read the equation as a <strong>lens</strong>, not a checklist.\" Here, a lens is…",
+     "options": [
+      "a piece of accounting software",
+      "a mandatory disclosure",
+      "a way of seeing and interpreting",
+      "a rounding adjustment"
+     ],
+     "answer": 2,
+     "why": "Lens = lente: um enquadramento pelo qual se enxerga e interpreta a empresa."
+    },
+    {
+     "q": "Choose the correct word: \"When equity keeps climbing and debt keeps falling, the business is ___ quietly, without any outside noise.\"",
+     "options": [
+      "flattering",
+      "compounding",
+      "borrowing",
+      "deferring"
+     ],
+     "answer": 1,
+     "why": "To compound = compor-se, crescer sobre si mesmo — o retrato da segunda empresa."
+    },
+    {
+     "q": "\"A <strong>deferred obligation</strong> sits on the balance sheet as…\"",
+     "options": [
+      "an asset available for immediate use",
+      "a gain the owners have earned",
+      "an amount the company must settle later",
+      "a cost already paid in full"
+     ],
+     "answer": 2,
+     "why": "Deferred obligation = obrigação diferida: algo devido que será liquidado mais adiante."
+    },
+    {
+     "q": "Choose the correct word: \"Receivables and inventory ___ the asset side, so most of the value is tied up rather than in cash.\"",
+     "options": [
+      "borrow",
+      "represent",
+      "flatter",
+      "dominate"
+     ],
+     "answer": 3,
+     "why": "To dominate = dominar: os dois itens ocupam a maior parte dos ativos."
+    },
+    {
+     "q": "\"In a strong year, leverage can <strong>flatter</strong> the returns.\" To flatter here means to…",
+     "options": [
+      "audit them independently",
+      "delay reporting them",
+      "reduce them sharply",
+      "make them look better than they are"
+     ],
+     "answer": 3,
+     "why": "To flatter = favorecer/enfeitar: fazer os números parecerem melhores do que a realidade sustenta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em conversas sobre balanço e estratégia. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the refinancing before we cut the debt.\" To sign off on means to…",
+     "options": [
+      "publicly announce",
+      "quietly postpone",
+      "informally discuss",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"On paper the growth looks strong, but it doesn't <strong>stack up</strong> once you factor in slow-paying customers.\" To stack up means to…",
+     "options": [
+      "be rounded upward",
+      "increase steadily",
+      "hold together under scrutiny",
+      "be filed on time"
+     ],
+     "answer": 2,
+     "why": "To stack up = fazer sentido/sustentar-se quando examinado de perto."
+    },
+    {
+     "q": "\"Too much of the balance sheet is <strong>tied up</strong> in inventory and receivables.\" Capital that is tied up is…",
+     "options": [
+      "held offshore",
+      "immediately available as cash",
+      "committed and not freely accessible",
+      "already written off"
+     ],
+     "answer": 2,
+     "why": "Tied up = preso/comprometido: o capital existe, mas não está disponível como caixa."
+    },
+    {
+     "q": "\"None of these cosmetic adjustments will <strong>move the needle</strong> on solvency.\" This means they will…",
+     "options": [
+      "breach a covenant",
+      "trigger an audit",
+      "take years to reverse",
+      "not make a meaningful difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, produzir diferença perceptível — aqui, o contrário."
+    },
+    {
+     "q": "\"When demand softened, the leverage <strong>caught up with</strong> them.\" This means the leverage…",
+     "options": [
+      "was disclosed to regulators",
+      "was finally repaid in full",
+      "eventually produced the consequences they had put off",
+      "was matched by rivals"
+     ],
+     "answer": 2,
+     "why": "Catch up with = alcançar: as consequências adiadas do endividamento acabam cobrando seu preço."
+    }
+   ]
+  }
+ ]
+}

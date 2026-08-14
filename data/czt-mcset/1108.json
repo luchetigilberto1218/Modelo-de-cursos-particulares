@@ -1,0 +1,259 @@
+{
+ "num": 1108,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In logistics, time is everything. One minute late can miss a slot at the port. So we learn to say times in a clear way.<br><br>We use \"o'clock\" for exact hours. \"Seven o'clock\" is 7:00. We say \"half past\" for thirty minutes: \"half past seven\" is 7:30. We say \"quarter past\" for fifteen minutes and \"quarter to\" for forty-five: \"quarter to eight\" is 7:45.<br><br>We always use \"at\" before a time. \"The truck leaves at seven o'clock.\" Times are sacred here. Arriving early is better than late, because a delay costs money and trust.",
+   "items": [
+    {
+     "q": "In logistics, why is time so important?",
+     "options": [
+      "Drivers do not like to wait",
+      "The port opens very late",
+      "Trucks are always slow",
+      "One minute late can miss a slot at the port"
+     ],
+     "answer": 3,
+     "why": "\"One minute late can miss a slot at the port.\""
+    },
+    {
+     "q": "What time is \"half past seven\"?",
+     "options": [
+      "7:45",
+      "7:15",
+      "7:00",
+      "7:30"
+     ],
+     "answer": 3,
+     "why": "\"half past\" = trinta minutos, então 7:30."
+    },
+    {
+     "q": "Which word do we always use before a time?",
+     "options": [
+      "in",
+      "on",
+      "at",
+      "to"
+     ],
+     "answer": 2,
+     "why": "\"We always use 'at' before a time.\" Ex.: at seven o'clock."
+    },
+    {
+     "q": "The text suggests that a driver should…",
+     "options": [
+      "wait for other trucks",
+      "arrive a little late",
+      "arrive early, not late",
+      "leave the port slot open"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Arriving early is better than late\" — chegar cedo é melhor."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "times can change every day",
+      "being late is not a big problem",
+      "being on time protects money and trust",
+      "port slots do not matter"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"a delay costs money and trust\" — o horário protege dinheiro e confiança."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily lendo o cronograma do dia para os motoristas. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone. This is Emily with the schedule. Please listen for your departure time.<br><br>Carlos, your truck leaves at seven o'clock sharp. That is seven, on the dot. You go to the north port, and your arrival time is half past eight. Please be on time.<br><br>Maria, you are next. Your departure is at quarter past seven. Not seven o'clock — quarter past. Your arrival at the south port is nine o'clock.<br><br>Bruno, your slot is later. You leave at quarter to eight, so seven forty-five. Do not be late, because your port slot closes at ten.<br><br>Remember, times are sacred here. One minute late can miss the slot. Always confirm your time on the radio before you go. If you have a question, call me now. Thank you, and drive safe.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time does Carlos leave?",
+     "options": [
+      "Quarter past seven",
+      "Quarter to eight",
+      "Half past seven",
+      "Seven o'clock"
+     ],
+     "answer": 3,
+     "why": "\"Carlos, your truck leaves at seven o'clock sharp.\""
+    },
+    {
+     "q": "What is Maria's departure time?",
+     "options": [
+      "Quarter to eight",
+      "Seven o'clock",
+      "Quarter past seven",
+      "Half past eight"
+     ],
+     "answer": 2,
+     "why": "\"Your departure is at quarter past seven.\""
+    },
+    {
+     "q": "What does Emily mean by \"seven o'clock sharp\"?",
+     "options": [
+      "About seven o'clock",
+      "A little after seven",
+      "Before seven",
+      "Exactly at seven, on the dot"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"sharp\" e \"on the dot\" = exatamente na hora."
+    },
+    {
+     "q": "Why does Emily tell Bruno not to be late?",
+     "options": [
+      "He has no schedule",
+      "The radio is broken",
+      "His port slot closes at ten",
+      "His truck is very slow"
+     ],
+     "answer": 2,
+     "why": "\"Do not be late, because your port slot closes at ten.\""
+    },
+    {
+     "q": "What should the drivers do before they go?",
+     "options": [
+      "Change their departure time",
+      "Confirm their time on the radio",
+      "Call the port directly",
+      "Wait for the next slot"
+     ],
+     "answer": 1,
+     "why": "\"Always confirm your time on the radio before you go.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Emily reads the <strong>schedule</strong> to the drivers.\" A <strong>schedule</strong> is…",
+     "options": [
+      "a phone number",
+      "a plan of times and tasks",
+      "a map of the port",
+      "a type of truck"
+     ],
+     "answer": 1,
+     "why": "Schedule = agenda / cronograma: o plano de horários."
+    },
+    {
+     "q": "\"The <strong>departure</strong> is at seven o'clock.\" <strong>Departure</strong> means…",
+     "options": [
+      "arrival",
+      "a break",
+      "leaving / start of the trip",
+      "the port"
+     ],
+     "answer": 2,
+     "why": "Departure = partida, a saída do caminhão."
+    },
+    {
+     "q": "Choose the correct word: \"The truck's ___ at the port is half past eight.\"",
+     "options": [
+      "schedule",
+      "arrival",
+      "radio",
+      "departure"
+     ],
+     "answer": 1,
+     "why": "Arrival = chegada; o momento de chegar ao porto."
+    },
+    {
+     "q": "\"Carlos is always <strong>on time</strong>.\" <strong>On time</strong> means…",
+     "options": [
+      "too late",
+      "in the wrong place",
+      "at the right time, not late",
+      "very early"
+     ],
+     "answer": 2,
+     "why": "On time = no horário, pontual."
+    },
+    {
+     "q": "Choose the correct word: \"The truck is ten minutes ___, so it will miss the slot.\"",
+     "options": [
+      "late",
+      "on time",
+      "fast",
+      "early"
+     ],
+     "answer": 0,
+     "why": "Late = atrasado; por isso perde o slot."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no dia a dia da logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The truck leaves at seven o'clock <strong>sharp</strong>.\" Sharp means…",
+     "options": [
+      "more or less seven",
+      "exactly at seven",
+      "after seven",
+      "before seven"
+     ],
+     "answer": 1,
+     "why": "Sharp = em ponto, exatamente na hora."
+    },
+    {
+     "q": "\"Please <strong>be on time</strong> for your slot.\" This means…",
+     "options": [
+      "stay at home",
+      "drive very fast",
+      "call the manager",
+      "arrive at the right time"
+     ],
+     "answer": 3,
+     "why": "Be on time = chegar/estar no horário certo."
+    },
+    {
+     "q": "\"The manager wants to <strong>sign off on</strong> the schedule.\" To sign off on means to…",
+     "options": [
+      "throw it away",
+      "formally approve it",
+      "read it fast",
+      "print it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new schedule next week.\" To roll out means to…",
+     "options": [
+      "hide it",
+      "cancel it",
+      "copy it",
+      "start using it"
+     ],
+     "answer": 3,
+     "why": "Roll out = colocar em uso, implementar."
+    },
+    {
+     "q": "\"The truck is running <strong>behind schedule</strong>.\" This means it is…",
+     "options": [
+      "at the port",
+      "on time",
+      "early",
+      "late"
+     ],
+     "answer": 3,
+     "why": "Behind schedule = atrasado em relação ao plano."
+    }
+   ]
+  }
+ ]
+}

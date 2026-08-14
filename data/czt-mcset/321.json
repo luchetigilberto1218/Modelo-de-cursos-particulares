@@ -1,0 +1,259 @@
+{
+ "num": 321,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Running an end-to-end logistics operation means seeing inbound, warehousing, transport and last mile as one single system. A late inbound truck at 8 a.m. becomes a missed picking slot at 11, a delayed outbound at 2, and an unhappy customer by dinner. Nothing is isolated — every hour touches the next.<br><br>Experienced logistics leaders watch three things every day: flow at each stage, exceptions, and customer impact. Is everything moving on the plan? Which shipments have drifted off script? And which of those drifts will actually matter to the people who paid for them?<br><br>The skill at this level is not perfection; it is honest, early attention. A problem caught at 9 a.m. is usually cheap to fix. The same problem at 4 p.m. is expensive for everyone.",
+   "items": [
+    {
+     "q": "According to the text, what does running an end-to-end operation mean?",
+     "options": [
+      "Seeing every stage as one single system",
+      "Measuring only last-mile delivery",
+      "Keeping each department fully separate",
+      "Focusing mainly on the warehouse"
+     ],
+     "answer": 0,
+     "why": "\"seeing inbound, warehousing, transport and last mile as one single system\"."
+    },
+    {
+     "q": "Which three things do experienced leaders watch every day?",
+     "options": [
+      "Cost, headcount and revenue",
+      "Trucks, drivers and fuel",
+      "Inbound, storage and returns",
+      "Flow, exceptions and customer impact"
+     ],
+     "answer": 3,
+     "why": "\"they watch three things every day: flow at each stage, exceptions, and customer impact\"."
+    },
+    {
+     "q": "What happens to a late inbound truck at 8 a.m., according to the text?",
+     "options": [
+      "It is quickly forgotten",
+      "It only affects the inbound team",
+      "It is fixed automatically by the system",
+      "It ripples into missed picking, delayed outbound and an unhappy customer"
+     ],
+     "answer": 3,
+     "why": "O texto descreve a cadeia: janela de separação perdida às 11, saída atrasada às 2 e cliente insatisfeito no jantar."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A delay in one stage can affect all the others",
+      "Every hour of the operation is connected to the next",
+      "Chasing perfection matters more than early attention",
+      "Catching a problem early is usually cheaper"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz que a habilidade \"não é perfeição; é atenção honesta e precoce\"."
+    },
+    {
+     "q": "The line \"A problem caught at 9 a.m. is cheap; at 4 p.m. it is expensive\" suggests that…",
+     "options": [
+      "Morning shifts are more skilled than afternoon shifts",
+      "Problems should be ignored until the afternoon",
+      "Most problems solve themselves during the day",
+      "Timing is central to controlling the cost of a problem"
+     ],
+     "answer": 3,
+     "why": "Inferência: o mesmo problema custa mais quanto mais tarde é tratado — o momento importa tanto quanto a solução."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James conduzindo o stand-up das 8:30. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, quick stand-up, then we get moving. We have three inbound issues this morning, and I want us to act on them now, not at lunch.<br><br>First, the truck from the port is running ninety minutes late. That sounds small, but it means we lose the ten-thirty picking slot, and if we lose that slot, the afternoon outbound to the north region slips. So Sara, I want you to call the port and get a firm time, and meanwhile the team should start picking the orders we can already fulfil.<br><br>Second, one pallet came in damaged overnight. Right now it looks like it only affects two customer orders, so it is annoying but not a crisis. Log it, flag the two accounts, and move on.<br><br>Third — and this is the one that worries me — a supplier is sending the wrong reference again. If nobody catches it before eleven, it goes straight onto the wrong lorry and we spend all afternoon unpicking it. So please check the labels at goods-in before anything is loaded.<br><br>Remember, none of these is isolated. A slow morning here becomes an expensive evening downstairs. Catch it now while it is still cheap.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does James say the ninety-minute delay is not small?",
+     "options": [
+      "It cancels the whole morning shift",
+      "It means losing the picking slot and slipping the afternoon outbound",
+      "It will cost extra fuel",
+      "It will upset the port authorities"
+     ],
+     "answer": 1,
+     "why": "\"we lose the ten-thirty picking slot, and if we lose that slot, the afternoon outbound to the north region slips\"."
+    },
+    {
+     "q": "What does James ask Sara to do about the late truck?",
+     "options": [
+      "Wait until lunch for an update",
+      "Call the port and get a firm time",
+      "Send another truck to the port",
+      "Cancel the shipment"
+     ],
+     "answer": 1,
+     "why": "\"Sara, I want you to call the port and get a firm time\"."
+    },
+    {
+     "q": "How does James treat the damaged pallet?",
+     "options": [
+      "As a reason to stop all outbound",
+      "As the biggest problem of the day",
+      "As annoying but not a crisis — log it and move on",
+      "As something to ignore completely"
+     ],
+     "answer": 2,
+     "why": "\"it is annoying but not a crisis. Log it, flag the two accounts, and move on.\""
+    },
+    {
+     "q": "Why does the wrong supplier reference worry James most?",
+     "options": [
+      "Because the supplier will cancel the contract",
+      "Because it costs more than the late truck",
+      "Because if it is not caught, it wastes the whole afternoon unpicking",
+      "Because it always damages the pallets"
+     ],
+     "answer": 2,
+     "why": "Inferência: se ninguém flagra antes das 11, vai na lorry errada e a tarde inteira é gasta desfazendo o erro."
+    },
+    {
+     "q": "What is James's main message to the team?",
+     "options": [
+      "The evening team should handle everything",
+      "Perfection is the goal for the morning",
+      "Small issues connect, so catch them early while they are still cheap",
+      "Each issue is separate and can wait"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"none of these is isolated… Catch it now while it is still cheap\" — atenção precoce evita custo alto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We manage the whole chain <strong>end-to-end</strong>, from the port to the customer's door.\" End-to-end means…",
+     "options": [
+      "covering the whole process from start to finish",
+      "handled by an outside company",
+      "measured once a year",
+      "only the final delivery stage"
+     ],
+     "answer": 0,
+     "why": "End-to-end = de ponta a ponta: do início ao fim do processo."
+    },
+    {
+     "q": "Choose the correct word: \"If the truck is late, we miss the ___ and the afternoon dispatch slips.\"",
+     "options": [
+      "picking slot",
+      "warranty",
+      "headcount",
+      "invoice"
+     ],
+     "answer": 0,
+     "why": "Picking slot = janela de separação; perdê-la atrasa a saída."
+    },
+    {
+     "q": "\"Two shipments have <strong>drifted</strong> off the plan since this morning.\" To drift means to…",
+     "options": [
+      "be cancelled",
+      "double in size",
+      "arrive early",
+      "move slowly away from the plan"
+     ],
+     "answer": 3,
+     "why": "To drift = desviar, afastar-se aos poucos do previsto."
+    },
+    {
+     "q": "\"A damaged pallet is a normal <strong>exception</strong>, not a disaster.\" An exception is…",
+     "options": [
+      "a customer complaint form",
+      "a routine daily report",
+      "a case that departs from the normal plan",
+      "a type of delivery vehicle"
+     ],
+     "answer": 2,
+     "why": "Exception = exceção: um caso que foge do fluxo normal e precisa de resposta."
+    },
+    {
+     "q": "Choose the correct word: \"Nothing here works in ___ — every stage affects the next.\"",
+     "options": [
+      "isolation",
+      "reverse",
+      "advance",
+      "public"
+     ],
+     "answer": 0,
+     "why": "\"work in isolation\" = trabalhar isolado; a lição insiste que nenhum estágio é isolado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem no dia a dia de uma operação logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We need to <strong>catch</strong> the wrong label before eleven.\" To catch a problem means to…",
+     "options": [
+      "notice and stop it in time",
+      "report it after it happens",
+      "pass it to another team",
+      "cause it"
+     ],
+     "answer": 0,
+     "why": "To catch = flagrar, perceber e deter a tempo."
+    },
+    {
+     "q": "\"The port delay will <strong>ripple into</strong> the afternoon dispatch.\" This means it will…",
+     "options": [
+      "be fixed automatically",
+      "disappear on its own",
+      "reduce the workload",
+      "spread and affect a later stage"
+     ],
+     "answer": 3,
+     "why": "Ripple into = repercutir, espalhar o efeito para uma etapa seguinte."
+    },
+    {
+     "q": "\"Please <strong>flag</strong> the two affected accounts for the service team.\" To flag means to…",
+     "options": [
+      "ship them first",
+      "close them permanently",
+      "mark them for attention",
+      "delete them"
+     ],
+     "answer": 2,
+     "why": "To flag = sinalizar, marcar algo para receber atenção."
+    },
+    {
+     "q": "\"We agreed the fix but nobody <strong>followed through</strong>.\" They…",
+     "options": [
+      "delegated it correctly",
+      "documented it well",
+      "failed to carry it to completion",
+      "did it too quickly"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Let's <strong>get moving</strong> before the picking slot closes.\" This means…",
+     "options": [
+      "let's start acting now",
+      "let's cancel the plan",
+      "let's wait for more data",
+      "let's schedule a meeting"
+     ],
+     "answer": 0,
+     "why": "Get moving = começar a agir, colocar as coisas em andamento agora."
+    }
+   ]
+  }
+ ]
+}

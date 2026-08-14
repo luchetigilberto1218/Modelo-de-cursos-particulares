@@ -10,10 +10,10 @@
     {
      "q": "Which mode goes almost door-to-door?",
      "options": [
+      "Rail",
       "Air",
-      "Sea",
       "Road",
-      "Rail"
+      "Sea"
      ],
      "answer": 2,
      "why": "\"Road is flexible and goes almost door-to-door.\""
@@ -21,42 +21,42 @@
     {
      "q": "According to the text, why is sea good for large volumes?",
      "options": [
+      "It is very fast",
       "It is very cheap",
-      "It goes door-to-door",
       "It is very flexible",
-      "It is very fast"
+      "It goes door-to-door"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Sea is very cheap for large volumes, but it takes weeks.\""
     },
     {
      "q": "The text says rail is less flexible than…",
      "options": [
-      "road",
+      "trucks and planes",
       "air",
       "sea",
-      "trucks and planes"
+      "road"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Rail... is less flexible than road.\""
     },
     {
      "q": "For an urgent and small shipment, which mode would the writer most likely choose?",
      "options": [
+      "Air",
       "Sea",
       "Road",
-      "Rail",
-      "Air"
+      "Rail"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: \"For urgent and small shipments, air wins.\" — air é rápido."
     },
     {
      "q": "\"The cheapest option is rarely the right one if the clock is running.\" This suggests that…",
      "options": [
+      "the fastest mode is always the cheapest",
       "sea is always the best choice",
       "cost is the only thing that matters",
-      "the fastest mode is always the cheapest",
       "when time is short, you may need to pay more"
      ],
      "answer": 3,
@@ -77,56 +77,56 @@
     {
      "q": "Where do the samples need to go?",
      "options": [
-      "To a client in Singapore",
-      "To a factory",
+      "To a client in London",
       "To the port",
-      "To a client in London"
+      "To a factory",
+      "To a client in Singapore"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"you have samples that need to go to a client in Singapore\"."
     },
     {
      "q": "Why does Oliver say the samples cannot go by sea?",
      "options": [
-      "The box is too big for a ship",
       "Sea is too slow and takes weeks",
+      "There are no ships to Singapore",
       "Sea is too expensive",
-      "There are no ships to Singapore"
+      "The box is too big for a ship"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Sea is slow. It takes weeks. Your client cannot wait weeks.\""
     },
     {
      "q": "What does Oliver finally advise?",
      "options": [
       "Wait a few weeks",
-      "Choose air",
       "Choose sea",
+      "Choose air",
       "Split the shipment"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"for this shipment, choose air.\""
     },
     {
      "q": "Why is the high cost of air not a big problem here?",
      "options": [
-      "Air is actually cheaper than sea",
-      "The box is small and light",
+      "The company has a lot of money",
       "The client will pay extra",
-      "The company has a lot of money"
+      "The box is small and light",
+      "Air is actually cheaper than sea"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"The box is small and light, so the cost is not so high.\""
     },
     {
      "q": "When would Oliver probably use sea instead?",
      "options": [
+      "For a big, heavy load with no rush",
       "For anything urgent",
-      "Only for Singapore",
       "For small samples",
-      "For a big, heavy load with no rush"
+      "Only for Singapore"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: \"Next time you have a big, heavy load with no rush, we talk about sea.\""
     }
    ]
@@ -139,31 +139,31 @@
     {
      "q": "\"We need to choose the right <strong>mode</strong> of transport.\" A mode is…",
      "options": [
-      "a client",
-      "a delivery date",
+      "a way or method (road, sea, air, rail)",
       "a price",
-      "a way or method (road, sea, air, rail)"
+      "a client",
+      "a delivery date"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Mode = modal, o meio de transporte."
     },
     {
      "q": "Choose the correct word: \"Road is very ___ because it can change route and go almost anywhere.\"",
      "options": [
-      "flexible",
-      "expensive",
       "slow",
-      "heavy"
+      "heavy",
+      "flexible",
+      "expensive"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Flexible = flexível, pode mudar e ir a quase qualquer lugar."
     },
     {
      "q": "\"The truck offers a <strong>door-to-door</strong> service.\" This means…",
      "options": [
-      "from door to airport",
       "only to the port",
       "only inside the city",
+      "from door to airport",
       "from the seller's door to the buyer's door"
      ],
      "answer": 3,
@@ -173,22 +173,22 @@
      "q": "Choose the correct word: \"Air freight is fast, but it is very ___.\"",
      "options": [
       "slow",
+      "cheap",
       "expensive",
-      "flexible",
-      "cheap"
+      "flexible"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Expensive = caro; o avião é rápido, porém caro."
     },
     {
      "q": "\"This shipment is <strong>urgent</strong>.\" This means it…",
      "options": [
-      "is very large",
       "can wait a few weeks",
-      "is very cheap",
-      "must arrive very soon"
+      "must arrive very soon",
+      "is very large",
+      "is very cheap"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Urgent = urgente, precisa chegar logo."
     }
    ]
@@ -201,20 +201,20 @@
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the air shipment.\" To sign off on means to…",
      "options": [
-      "pay for it",
-      "approve it",
+      "cancel it",
       "pack it",
-      "cancel it"
+      "approve it",
+      "pay for it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"Let's <strong>go ahead with</strong> air for these samples.\" To go ahead with means to…",
      "options": [
       "look for another option",
-      "ask the client first",
       "stop and wait",
+      "ask the client first",
       "start or continue with a plan"
      ],
      "answer": 3,
@@ -223,21 +223,21 @@
     {
      "q": "\"The client asked us to <strong>speed up</strong> the delivery.\" To speed up means to…",
      "options": [
-      "make it faster",
       "cancel it",
       "make it cheaper",
+      "make it faster",
       "make it slower"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Speed up = acelerar, tornar mais rápido."
     },
     {
      "q": "\"The samples arrived late because the plane was <strong>held up</strong> at the airport.\" Held up means…",
      "options": [
+      "loaded first",
       "lost",
-      "sent early",
       "delayed",
-      "loaded first"
+      "sent early"
      ],
      "answer": 2,
      "why": "Held up = atrasado, retido."
@@ -245,10 +245,10 @@
     {
      "q": "\"The clock is running, so we can't <strong>hold off on</strong> the decision.\" To hold off on means to…",
      "options": [
-      "agree at once",
+      "pay in advance",
       "delay or wait",
-      "decide quickly",
-      "pay in advance"
+      "agree at once",
+      "decide quickly"
      ],
      "answer": 1,
      "why": "Hold off on = adiar, esperar antes de agir."

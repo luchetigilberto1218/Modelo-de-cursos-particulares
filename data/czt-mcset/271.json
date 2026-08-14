@@ -1,0 +1,259 @@
+{
+ "num": 271,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Demand forecasting in practice is a blend of data and judgement. The data tells you what happened; the judgement tells you what it means. Neither works alone. A spreadsheet full of perfect history can still be wrong if nobody notices that a major customer is switching supplier, and the best-informed gut is still dangerous if it is not disciplined by the numbers.<br><br>The intermediate forecaster uses three inputs together: historical patterns such as seasonality, trend and baseline; quantitative signals such as recent sales, promotions and competitor activity; and qualitative input — what the sales team is hearing from customers and what the supplier is saying about delivery.<br><br>Crucially, the good forecaster admits uncertainty. Saying \"it might rise by 5 to 10%\" is more honest, and more useful, than saying \"7% exactly\" when you know perfectly well that the truth could be either side of that.",
+   "items": [
+    {
+     "q": "According to the text, what is demand forecasting in practice?",
+     "options": [
+      "A blend of data and judgement",
+      "A purely statistical exercise",
+      "A matter of experience alone",
+      "A weekly spreadsheet routine"
+     ],
+     "answer": 0,
+     "why": "\"Demand forecasting in practice is a blend of data and judgement.\""
+    },
+    {
+     "q": "Which three inputs does the intermediate forecaster combine?",
+     "options": [
+      "Seasonality, promotions and delivery times",
+      "Historical patterns, quantitative signals and qualitative input",
+      "Budgets, headcount and capacity",
+      "Marketing, finance and operations"
+     ],
+     "answer": 1,
+     "why": "\"three inputs together: historical patterns… quantitative signals… and qualitative input.\""
+    },
+    {
+     "q": "Why is a perfect spreadsheet of history still described as potentially wrong?",
+     "options": [
+      "Because judgement is more accurate than data",
+      "Because the maths may contain errors",
+      "Because it can miss real-world changes, like a customer switching supplier",
+      "Because it is always out of date"
+     ],
+     "answer": 2,
+     "why": "\"can still be wrong if nobody notices that a major customer is switching supplier.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Admitting uncertainty can be more useful than false precision.",
+      "The sales team is a valuable source of qualitative input.",
+      "Data and judgement should reinforce each other.",
+      "A single precise number is the most professional forecast."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto argumenta que uma faixa honesta vale mais que um número exato falso, como \"7% exactly\"."
+    },
+    {
+     "q": "What does \"the best-informed gut is still dangerous\" suggest about intuition?",
+     "options": [
+      "Intuition is more reliable than data",
+      "Only senior planners should trust their intuition",
+      "Intuition is safe only when checked against the numbers",
+      "Intuition should always be ignored"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"dangerous if it is not disciplined by the numbers\" — a intuição precisa ser checada pelos dados."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie orientando uma planejadora. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, let's look at your forecast for the next quarter. You've written a single number — 12,000 units. It's a clean number, and I understand why it feels professional. But let me push you a little.<br><br>Where did the 12,000 come from? You checked the seasonality, you looked at last month's sales, and you factored in the spring promotion. That's good work. But have you spoken to the sales team this week? Because if one of them tells me a big account might reduce its order, then 12,000 could be optimistic.<br><br>Here's what I'd like you to do instead. Give operations a range. Say demand may land between 11,000 and 13,500, and tell them where the risk sits. That way they can plan the buffer stock properly.<br><br>A single number looks confident, but it hides the uncertainty. Operations would rather know the truth than trust a figure that could be wrong by two thousand units. Honesty about the range is not a weakness — it's the whole job.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the planner's forecast written as?",
+     "options": [
+      "A percentage increase",
+      "A range between 11,000 and 13,500",
+      "A single number, 12,000 units",
+      "A seasonal average"
+     ],
+     "answer": 2,
+     "why": "\"You've written a single number — 12,000 units.\""
+    },
+    {
+     "q": "Which inputs did the planner already use?",
+     "options": [
+      "Only historical trend data",
+      "The buffer stock levels from operations",
+      "Seasonality, last month's sales and the spring promotion",
+      "Competitor pricing and supplier delivery"
+     ],
+     "answer": 2,
+     "why": "\"you checked the seasonality, you looked at last month's sales, and you factored in the spring promotion.\""
+    },
+    {
+     "q": "What does Sophie say the planner has NOT yet done?",
+     "options": [
+      "Spoken to the sales team this week",
+      "Looked at last month's sales",
+      "Calculated the promotion effect",
+      "Checked the seasonality"
+     ],
+     "answer": 0,
+     "why": "\"have you spoken to the sales team this week?\" — a etapa qualitativa que faltou."
+    },
+    {
+     "q": "Why does Sophie prefer a range for operations?",
+     "options": [
+      "Because it always looks more confident",
+      "Because it lets them plan the buffer stock properly",
+      "Because it avoids talking to the sales team",
+      "Because it is faster to calculate"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Give operations a range… That way they can plan the buffer stock properly.\""
+    },
+    {
+     "q": "What does Sophie imply about a single confident number?",
+     "options": [
+      "It should always be rounded up",
+      "It can hide uncertainty and mislead operations",
+      "It is fine as long as it comes from data",
+      "It is the mark of an experienced planner"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"looks confident, but it hides the uncertainty\" — parece seguro, mas engana quem planeja."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"A good forecast is a <strong>blend</strong> of numbers and market feel.\" A blend is…",
+     "options": [
+      "a single dominant source",
+      "a strict rule",
+      "a formal report",
+      "a mixture of things combined together"
+     ],
+     "answer": 3,
+     "why": "Blend = mistura: elementos combinados que trabalham juntos."
+    },
+    {
+     "q": "Choose the correct word: \"Ice-cream sales show strong ___, peaking every summer.\"",
+     "options": [
+      "baseline",
+      "seasonality",
+      "uncertainty",
+      "judgement"
+     ],
+     "answer": 1,
+     "why": "Seasonality = sazonalidade: o padrão que se repete em certas épocas do ano."
+    },
+    {
+     "q": "Choose the correct word: \"Strip out the promotions and the summer spike, and the ___ demand is about 8,000 units a month.\"",
+     "options": [
+      "trend",
+      "seasonality",
+      "baseline",
+      "blend"
+     ],
+     "answer": 2,
+     "why": "Baseline = linha base: o nível de fundo, sem picos nem promoções."
+    },
+    {
+     "q": "\"We rely on both <strong>quantitative</strong> and qualitative inputs.\" Quantitative input is…",
+     "options": [
+      "based on opinions and conversations",
+      "based on the competitor's strategy",
+      "based on numbers and measurable data",
+      "based on the manager's experience"
+     ],
+     "answer": 2,
+     "why": "Quantitative = quantitativo: baseado em números e dados mensuráveis."
+    },
+    {
+     "q": "\"A forecast that admits <strong>uncertainty</strong> is more honest than a fixed number.\" Uncertainty is…",
+     "options": [
+      "the state of not knowing something exactly",
+      "the risk of being fired",
+      "a lack of data entirely",
+      "a deliberate error"
+     ],
+     "answer": 0,
+     "why": "Uncertainty = incerteza: não saber o resultado exato de antemão."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em reuniões de planejamento. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The planning lead has to <strong>sign off on</strong> the final forecast.\" To sign off on means to…",
+     "options": [
+      "email it to the team",
+      "question it in a meeting",
+      "delay it for a week",
+      "formally approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Operations <strong>pushed back on</strong> the optimistic estimate.\" They…",
+     "options": [
+      "accepted it at once",
+      "rewrote the whole plan",
+      "resisted or challenged it",
+      "forwarded it to finance"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"Let's <strong>factor in</strong> the spring promotion before we finalise the numbers.\" To factor in means to…",
+     "options": [
+      "ignore it for now",
+      "cancel it",
+      "include it in the calculation",
+      "measure it separately later"
+     ],
+     "answer": 2,
+     "why": "Factor in = levar em conta, incluir no cálculo."
+    },
+    {
+     "q": "\"A tighter range won't <strong>move the needle</strong> unless we talk to customers.\" This means it will…",
+     "options": [
+      "not make a noticeable difference",
+      "take too long to build",
+      "confuse the operations team",
+      "cost too much"
+     ],
+     "answer": 0,
+     "why": "Move the needle = fazer diferença perceptível no resultado."
+    },
+    {
+     "q": "\"New orders came in, so we had to <strong>revise</strong> the forecast <strong>upwards</strong>.\" To revise upwards means to…",
+     "options": [
+      "cancel the estimate",
+      "lower the estimate",
+      "confirm the estimate unchanged",
+      "raise the estimate"
+     ],
+     "answer": 3,
+     "why": "Revise upwards = revisar para cima, aumentar a estimativa."
+    }
+   ]
+  }
+ ]
+}

@@ -8,21 +8,21 @@
     {
      "q": "What is a supply chain?",
      "options": [
-      "A type of ship",
       "A bank account",
       "The long journey a product takes before it reaches you",
+      "A type of ship",
       "A customs form"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"A supply chain is the long journey a product takes before it reaches you.\""
     },
     {
      "q": "Where does a supply chain start?",
      "options": [
       "At your door",
-      "In a shop",
+      "At the bank",
       "With raw materials",
-      "At the bank"
+      "In a shop"
      ],
      "answer": 2,
      "why": "\"It starts with raw materials.\""
@@ -30,12 +30,12 @@
     {
      "q": "Where does it end?",
      "options": [
+      "At the factory",
       "In the warehouse",
       "At the port",
-      "In a shop or at your door",
-      "At the factory"
+      "In a shop or at your door"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"ends in a shop or at your door.\""
     },
     {
@@ -72,12 +72,12 @@
     {
      "q": "What product does the diagram follow?",
      "options": [
-      "Phones",
-      "Coffee",
       "Sugar",
+      "Coffee",
+      "Phones",
       "Machines"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"how sugar travels from a farm in Brazil to a supermarket in London.\""
     },
     {
@@ -85,10 +85,10 @@
      "options": [
       "A ship",
       "Sugar",
-      "A truck",
-      "Sugar cane growing in Brazil"
+      "Sugar cane growing in Brazil",
+      "A truck"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"The sugar cane grows in Brazil. That's our raw material.\""
     },
     {
@@ -96,18 +96,18 @@
      "options": [
       "The cane is stored",
       "The ship is loaded",
-      "The sugar is sold",
-      "The cane becomes sugar"
+      "The cane becomes sugar",
+      "The sugar is sold"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"The cane goes to a mill, where it becomes sugar.\""
     },
     {
      "q": "Which is the longest step?",
      "options": [
-      "The truck",
       "The farm",
       "The warehouse",
+      "The truck",
       "The ship crossing the ocean"
      ],
      "answer": 3,
@@ -116,12 +116,12 @@
     {
      "q": "What could make the sugar late on the shelf?",
      "options": [
-      "A new supermarket",
-      "A cheaper price",
       "A strike at the port or a storm at sea",
-      "A faster ship"
+      "A faster ship",
+      "A new supermarket",
+      "A cheaper price"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"a strike at the port, a storm at sea — the sugar is late on the shelf.\""
     }
    ]
@@ -144,44 +144,44 @@
      "q": "A **warehouse** is…",
      "options": [
       "a shop",
-      "a border",
       "a place where goods are stored",
-      "a ship"
+      "a ship",
+      "a border"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Warehouse = armazém."
     },
     {
      "q": "Choose the correct word: \"The sugar is loaded at the **___** onto a ship.\"",
      "options": [
-      "shop",
+      "port",
       "office",
       "factory",
-      "port"
+      "shop"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Port = porto."
     },
     {
      "q": "A **delay** is…",
      "options": [
-      "a late arrival or hold-up",
       "a discount",
       "a payment",
+      "a late arrival or hold-up",
       "an early arrival"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Delay = atraso."
     },
     {
      "q": "Choose the correct word: \"Each step is a **___** in the chain.\"",
      "options": [
-      "ship",
       "link",
       "port",
-      "duty"
+      "duty",
+      "ship"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Link = elo."
     }
    ]
@@ -192,56 +192,56 @@
     {
      "q": "\"The sugar is **on the shelf**.\" On the shelf means…",
      "options": [
+      "in the ship",
       "at the farm",
       "for sale in the shop",
-      "in the ship",
       "at customs"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "On the shelf = na prateleira, à venda."
     },
     {
      "q": "\"The ship **sets off** from Brazil.\" To set off means to…",
      "options": [
-      "start a journey",
+      "arrive",
       "return",
-      "stop",
-      "arrive"
+      "start a journey",
+      "stop"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Set off = partir."
     },
     {
      "q": "\"The whole chain **feels it** when one step fails.\" To feel it means to…",
      "options": [
       "not notice",
-      "be affected by it",
+      "fix it",
       "ignore it",
-      "fix it"
+      "be affected by it"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Feel it = ser afetado."
     },
     {
      "q": "\"The truck **takes it to** the supermarket.\" To take something to means to…",
      "options": [
-      "buy it at",
       "bring it away from",
-      "store it in",
-      "deliver it to"
+      "deliver it to",
+      "buy it at",
+      "store it in"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Take it to = levar até."
     },
     {
      "q": "\"The goods **pass through** customs.\" To pass through means to…",
      "options": [
-      "avoid",
       "go through and continue",
-      "buy",
-      "stay in"
+      "avoid",
+      "stay in",
+      "buy"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Pass through = passar por."
     }
    ]

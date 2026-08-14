@@ -8,56 +8,56 @@
     {
      "q": "How does the text describe an Incoterm?",
      "options": [
-      "A pricing formula",
       "A risk decision dressed up as three letters",
-      "A shipping route",
-      "Just paperwork"
+      "Just paperwork",
+      "A pricing formula",
+      "A shipping route"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"it is a risk decision dressed up as three letters.\""
     },
     {
      "q": "What does the difference between FOB and CIF change?",
      "options": [
-      "Who pays insurance and bears the risk of the sea",
-      "The currency",
       "The product quality",
-      "The delivery speed"
+      "The currency",
+      "The delivery speed",
+      "Who pays insurance and bears the risk of the sea"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"it changes who pays insurance, who bears the risk of the sea, and who has to handle a claim.\""
     },
     {
      "q": "Which terms do experienced sellers usually prefer?",
      "options": [
-      "Any term",
-      "EXW or FOB",
       "DDP only",
-      "CIF or DDP"
+      "CIF or DDP",
+      "EXW or FOB",
+      "Any term"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Experienced sellers usually prefer EXW or FOB, where their responsibility ends early.\""
     },
     {
      "q": "What question does the text suggest asking to choose an Incoterm?",
      "options": [
+      "Which is cheapest?",
       "If something went wrong on this leg, who would be best placed to fix it?",
-      "Which is most common?",
       "What does the competitor use?",
-      "Which is cheapest?"
+      "Which is most common?"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"if something went wrong on this leg, who would be best placed to fix it?\""
     },
     {
      "q": "\"Neither is right in every case\" implies that the choice of Incoterm…",
      "options": [
       "should always be CIF",
+      "is set by the bank",
       "depends on the specific situation",
-      "does not matter",
-      "is set by the bank"
+      "does not matter"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: não há termo universalmente correto — depende do caso."
     }
    ]
@@ -74,54 +74,54 @@
      "options": [
       "Which is cheapest?",
       "Which is fastest?",
-      "Who's better placed to handle the sea leg?",
-      "What does the buyer want?"
+      "What does the buyer want?",
+      "Who's better placed to handle the sea leg?"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"who's better placed to handle the sea leg?\""
     },
     {
      "q": "Why is Harry's company better placed for the sea leg?",
      "options": [
-      "It ships the route monthly, knows the carriers and has insurance in place",
-      "The buyer asked",
+      "It is cheaper",
       "It is closer to Vietnam",
-      "It is cheaper"
+      "The buyer asked",
+      "It ships the route monthly, knows the carriers and has insurance in place"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"We ship this route every month. We know the carriers, we've got the insurance in place.\""
     },
     {
      "q": "Why does Harry reject EXW or FOB?",
      "options": [
-      "The buyer would carry a sea risk they can't manage",
+      "They are too expensive",
       "They are illegal",
-      "The seller dislikes them",
-      "They are too expensive"
+      "The buyer would carry a sea risk they can't manage",
+      "The seller dislikes them"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"the buyer would be carrying a risk they can't really manage.\""
     },
     {
      "q": "Which Incoterm does Harry recommend?",
      "options": [
-      "FOB",
-      "CIF",
       "DDP",
-      "EXW"
+      "EXW",
+      "FOB",
+      "CIF"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"That points me to CIF.\""
     },
     {
      "q": "Why doesn't Harry go all the way to DDP?",
      "options": [
+      "It would put his company on the hook for Dutch import customs, the buyer's home turf",
       "It has no insurance",
       "The buyer refused",
-      "It's cheaper",
-      "It would put his company on the hook for Dutch import customs, the buyer's home turf"
+      "It's cheaper"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"that would put us on the hook for import customs in the Netherlands, which is genuinely their home turf.\""
     }
    ]
@@ -133,33 +133,33 @@
      "q": "\"The **risk transfer** happens when goods are loaded.\" Risk transfer is…",
      "options": [
       "the delivery date",
-      "when payment is made",
       "the insurance cost",
-      "the moment risk passes from one party to another"
+      "the moment risk passes from one party to another",
+      "when payment is made"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Risk transfer = transferência de risco."
     },
     {
      "q": "\"Under CIF, the seller pays for **insurance**.\" Insurance covers…",
      "options": [
-      "loss or damage to the goods",
-      "the profit",
+      "the shipping speed",
       "the customs duty",
-      "the shipping speed"
+      "the profit",
+      "loss or damage to the goods"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Insurance = seguro, cobre perda ou dano."
     },
     {
      "q": "Choose the correct word: \"If the cargo is damaged, the buyer files a **___**.\"",
      "options": [
       "clause",
-      "claim",
+      "draft",
       "tranche",
-      "draft"
+      "claim"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Claim = reclamação/sinistro."
     },
     {
@@ -176,12 +176,12 @@
     {
      "q": "Choose the correct term: \"Under EXW, the seller's **___** ends very early.\"",
      "options": [
+      "insurance",
       "claim",
-      "responsibility",
       "control",
-      "insurance"
+      "responsibility"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Responsibility = responsabilidade."
     }
    ]
@@ -192,31 +192,31 @@
     {
      "q": "\"That would put us **on the hook** for customs.\" To be on the hook means to…",
      "options": [
-      "be responsible or liable for",
-      "insure",
       "profit from",
-      "be free of"
+      "insure",
+      "be free of",
+      "be responsible or liable for"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "On the hook = responsável, no gancho."
     },
     {
      "q": "\"CIF is the **sweet spot** here.\" The sweet spot is…",
      "options": [
       "the cheapest option",
+      "a legal term",
       "the worst option",
-      "the ideal balance point",
-      "a legal term"
+      "the ideal balance point"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Sweet spot = ponto ideal."
     },
     {
      "q": "\"Customs in the Netherlands is their **home turf**.\" Home turf means…",
      "options": [
-      "a foreign country",
-      "an expensive market",
       "a shipping route",
+      "an expensive market",
+      "a foreign country",
       "an area they know and control"
      ],
      "answer": 3,
@@ -226,22 +226,22 @@
      "q": "\"Let's **draw the line** at CIF, not DDP.\" To draw the line means to…",
      "options": [
       "negotiate more",
-      "set a limit",
       "sign the deal",
-      "cancel"
+      "cancel",
+      "set a limit"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Draw the line = definir o limite."
     },
     {
      "q": "\"They'd **be lost** if a claim came up.\" To be lost here means to…",
      "options": [
       "lose money for sure",
-      "win the claim",
       "not know how to handle it",
+      "win the claim",
       "miss the shipment"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Be lost = ficar perdido, sem saber o que fazer."
     }
    ]

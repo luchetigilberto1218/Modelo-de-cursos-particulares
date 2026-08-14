@@ -1,0 +1,259 @@
+{
+ "num": 1082,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A product travels from the farm to the customer in clear steps.<br><br>First, the farmer grows the sugar. Then, a truck moves it to the factory. Next, workers pack it. After that, a ship carries it. Finally, the customer receives the product.<br><br>Every step matters. The truck and the ship work together, and a good route saves time.",
+   "items": [
+    {
+     "q": "What is the first step?",
+     "options": [
+      "The ship carries it.",
+      "The farmer grows the sugar.",
+      "The workers pack it.",
+      "The customer receives it."
+     ],
+     "answer": 1,
+     "why": "\"First, the farmer grows the sugar.\" — é o primeiro passo."
+    },
+    {
+     "q": "Who packs the sugar?",
+     "options": [
+      "The farmer",
+      "The ship",
+      "The workers",
+      "The customer"
+     ],
+     "answer": 2,
+     "why": "\"Next, workers pack it.\" — os trabalhadores empacotam."
+    },
+    {
+     "q": "What is the last step?",
+     "options": [
+      "The customer receives the product.",
+      "The farmer grows it.",
+      "The workers pack it.",
+      "The truck moves it."
+     ],
+     "answer": 0,
+     "why": "\"Finally, the customer receives the product.\""
+    },
+    {
+     "q": "The text suggests that one step alone is…",
+     "options": [
+      "faster than the ship",
+      "not enough — every step matters",
+      "enough to reach the customer",
+      "only for the farmer"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Every step matters\" — um passo sozinho não basta."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "a bad route saves time",
+      "the customer grows the sugar",
+      "the truck works alone",
+      "a good route helps the process"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"a good route saves time\" — uma boa rota ajuda o processo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça você explicando ao Carlos, o novo estagiário. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi Carlos! Welcome to the team. You asked me how sugar moves from the farm to the customer. It is easy. Let me show you the steps.<br><br>First, the farmer grows the sugar on a big farm. This part takes many months. Then, a truck comes and moves the sugar to the factory. The truck is fast, but the road can be long.<br><br>Next, the workers pack the sugar in bags. The workers are very important. They check every bag. After that, a ship carries the bags to another country. The ship is slow, but it can carry a lot.<br><br>Finally, the customer receives the product in a shop. That is the last step. The truck and the ship work together, and a good route saves time. So we always plan the route with care. Do you have a question, Carlos?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who are you talking to?",
+     "options": [
+      "Carlos, the new intern",
+      "The farmer",
+      "The ship captain",
+      "The customer"
+     ],
+     "answer": 0,
+     "why": "\"Hi Carlos! Welcome to the team.\""
+    },
+    {
+     "q": "How does the sugar move to the factory?",
+     "options": [
+      "By truck",
+      "By ship",
+      "By plane",
+      "By train"
+     ],
+     "answer": 0,
+     "why": "\"a truck comes and moves the sugar to the factory.\""
+    },
+    {
+     "q": "What do the workers do?",
+     "options": [
+      "They grow the sugar.",
+      "They sell the sugar.",
+      "They pack the sugar in bags.",
+      "They drive the ship."
+     ],
+     "answer": 2,
+     "why": "\"the workers pack the sugar in bags.\""
+    },
+    {
+     "q": "Why is the ship good, even if it is slow?",
+     "options": [
+      "It packs the bags.",
+      "It is the first step.",
+      "It can carry a lot.",
+      "It grows the sugar."
+     ],
+     "answer": 2,
+     "why": "Inferência: \"The ship is slow, but it can carry a lot.\""
+    },
+    {
+     "q": "Your tone with Carlos is…",
+     "options": [
+      "friendly and helpful",
+      "sad and worried",
+      "angry and tired",
+      "bored and quiet"
+     ],
+     "answer": 0,
+     "why": "Inferência: você dá boas-vindas e explica com calma — é amigável e prestativo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The farmer grows the sugar on a big <strong>farm</strong>.\" A <strong>farm</strong> is…",
+     "options": [
+      "a shop in the city",
+      "a big ship",
+      "a factory office",
+      "a place where people grow food"
+     ],
+     "answer": 3,
+     "why": "Farm = fazenda: lugar onde se cultiva alimento."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ carries the bags to another country by sea.\"",
+     "options": [
+      "truck",
+      "worker",
+      "farm",
+      "ship"
+     ],
+     "answer": 3,
+     "why": "Ship = navio: leva a carga pelo mar."
+    },
+    {
+     "q": "\"A <strong>truck</strong> moves the sugar to the factory.\" A <strong>truck</strong> is…",
+     "options": [
+      "a person who packs bags",
+      "a small boat",
+      "a place to grow food",
+      "a big vehicle for the road"
+     ],
+     "answer": 3,
+     "why": "Truck = caminhão: veículo grande que anda na estrada."
+    },
+    {
+     "q": "Choose the correct word: \"Every ___ checks the bags before they leave the factory.\"",
+     "options": [
+      "ship",
+      "route",
+      "farm",
+      "worker"
+     ],
+     "answer": 3,
+     "why": "Worker = trabalhador: a pessoa que confere as sacas."
+    },
+    {
+     "q": "\"A good <strong>route</strong> saves time.\" A <strong>route</strong> is…",
+     "options": [
+      "a bag of sugar",
+      "a worker at the farm",
+      "the way from one place to another",
+      "a big truck"
+     ],
+     "answer": 2,
+     "why": "Route = rota: o caminho de um lugar a outro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que usamos no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We will <strong>roll out</strong> the new bags next month.\" To roll out means to…",
+     "options": [
+      "start using something new",
+      "grow the sugar",
+      "clean the truck",
+      "stop the work"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar, começar a usar algo novo."
+    },
+    {
+     "q": "\"The boss has to <strong>sign off on</strong> the route.\" To sign off on means to…",
+     "options": [
+      "write a long email",
+      "carry the bags",
+      "drive the truck",
+      "say yes and approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar, dar o okay."
+    },
+    {
+     "q": "\"The truck is late, so we need to <strong>speed up</strong>.\" To speed up means to…",
+     "options": [
+      "go faster",
+      "go slower",
+      "wait more",
+      "stop the work"
+     ],
+     "answer": 0,
+     "why": "Speed up = acelerar, ir mais rápido."
+    },
+    {
+     "q": "\"The workers <strong>set up</strong> the machine before the shift.\" To set up means to…",
+     "options": [
+      "throw something away",
+      "sell something",
+      "carry it to the ship",
+      "get something ready"
+     ],
+     "answer": 3,
+     "why": "Set up = preparar, deixar pronto."
+    },
+    {
+     "q": "\"Carlos wants to <strong>find out</strong> how the sugar moves.\" To find out means to…",
+     "options": [
+      "hide it",
+      "learn or discover it",
+      "pack it",
+      "forget it"
+     ],
+     "answer": 1,
+     "why": "Find out = descobrir, ficar sabendo."
+    }
+   ]
+  }
+ ]
+}

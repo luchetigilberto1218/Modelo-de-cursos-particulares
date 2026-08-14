@@ -10,54 +10,54 @@
     {
      "q": "What is the last mile?",
      "options": [
-      "A long journey between two cities",
-      "The final step from a local depot to the customer's door",
+      "The first step in the factory",
       "The trip from the port to the depot",
-      "The first step in the factory"
+      "The final step from a local depot to the customer's door",
+      "A long journey between two cities"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The last mile is the final step of delivery… from a local depot to the customer's door.\""
     },
     {
      "q": "Why is the last mile expensive?",
      "options": [
-      "Because the depot is far from the port",
-      "Because the parcels are very heavy",
       "Because it is one big trip",
-      "Because it is many small trips, not one big one"
+      "Because the parcels are very heavy",
+      "Because it is many small trips, not one big one",
+      "Because the depot is far from the port"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"it is many small trips instead of one big one.\""
     },
     {
      "q": "What can make a single parcel need two or three attempts?",
      "options": [
-      "The customer may not be home",
+      "The driver forgets the address",
       "The parcel is too big",
-      "The depot is closed",
-      "The driver forgets the address"
+      "The customer may not be home",
+      "The depot is closed"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The customer may not be home. A single parcel may need two or three attempts.\""
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
       "The last mile is hard to plan.",
-      "Good last-mile service builds loyalty.",
       "The last mile is easy because it is short.",
+      "Good last-mile service builds loyalty.",
       "Traffic makes delivery difficult."
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: o texto diz que \"soa curto, mas é a parte mais difícil\" — logo, o autor discorda de que seja fácil por ser curto."
     },
     {
      "q": "\"The ones that do not hear about it very quickly\" suggests that…",
      "options": [
       "customers complain fast when delivery is bad",
+      "delivery is always slow",
       "customers never notice delivery problems",
-      "companies never find out about mistakes",
-      "delivery is always slow"
+      "companies never find out about mistakes"
      ],
      "answer": 0,
      "why": "Inferência: \"hear about it\" = os clientes reclamam rápido quando a última milha falha."
@@ -77,56 +77,56 @@
     {
      "q": "How many kinds of problem does Sophie describe this week?",
      "options": [
-      "One",
       "Three",
       "Four",
-      "Two"
+      "Two",
+      "One"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"this week we have had three kinds of problem.\""
     },
     {
      "q": "What happens with the traffic problem?",
      "options": [
+      "The van does not leave the depot",
       "The parcel is lost",
       "The parcel is late but still arrives the same day",
-      "The van does not leave the depot",
       "The customer never gets the box"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"the parcel arrives late… they still get the box the same day.\""
     },
     {
      "q": "Why is a wrong address worse than traffic?",
      "options": [
-      "Because the parcel is heavier",
-      "Because the depot is closed",
+      "Because the van is slower",
       "Because the customer waits at home for nothing",
-      "Because the van is slower"
+      "Because the depot is closed",
+      "Because the parcel is heavier"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"the customer waits at home for nothing.\""
     },
     {
      "q": "Why does Sophie say a missed attempt \"costs us twice\"?",
      "options": [
-      "Because the team must try again another day",
-      "Because two vans are needed at once",
+      "Because the customer pays twice",
       "Because the parcel is very expensive",
-      "Because the customer pays twice"
+      "Because the team must try again another day",
+      "Because two vans are needed at once"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"we try again tomorrow… two attempts\" — repetir a viagem custa de novo."
     },
     {
      "q": "Why does Sophie want the lead to know which problem it is?",
      "options": [
+      "So she can raise the price",
       "So she can fire the driver",
       "So she knows what to say and how to help the customer",
-      "So she can raise the price",
       "So she can close the depot"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"That tells you what to say and how to help\" — o tipo de falha guia a resposta ao cliente."
     }
    ]
@@ -140,55 +140,55 @@
      "q": "\"The van picks up the parcels at the <strong>depot</strong>.\" A depot is…",
      "options": [
       "a delivery driver",
-      "a busy road",
       "a local base where goods are stored",
-      "the customer's home"
+      "the customer's home",
+      "a busy road"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Depot = depósito/base local de onde saem as entregas."
     },
     {
      "q": "\"Please check the <strong>address</strong> on the label.\" An address tells you…",
      "options": [
-      "how heavy the parcel is",
       "where to deliver the parcel",
       "the name of the driver",
+      "how heavy the parcel is",
       "the price of the parcel"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Address = endereço, o lugar da entrega."
     },
     {
      "q": "Choose the correct word: \"The driver made two ___ but no one was home.\"",
      "options": [
-      "prices",
-      "roads",
       "attempts",
+      "roads",
+      "prices",
       "depots"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Attempt = tentativa; duas tentativas de entrega."
     },
     {
      "q": "Choose the correct word: \"Good service keeps customers happy and builds their ___.\"",
      "options": [
-      "traffic",
-      "address",
+      "loyalty",
       "depot",
-      "loyalty"
+      "address",
+      "traffic"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Loyalty = lealdade; bom serviço faz o cliente ficar."
     },
     {
      "q": "\"The last mile is the most <strong>expensive</strong> part.\" Expensive means…",
      "options": [
-      "it is very fast",
-      "it is very short",
       "it costs a lot of money",
-      "it is very easy"
+      "it is very easy",
+      "it is very short",
+      "it is very fast"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Expensive = caro, custa muito."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"We will <strong>roll out</strong> the new delivery app next month.\" To roll out means to…",
      "options": [
-      "start using it step by step",
       "hide it from the team",
+      "start using it step by step",
       "stop using it",
       "throw it away"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Roll out = colocar em uso, aos poucos."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the new routes.\" To sign off on means to…",
      "options": [
-      "print the plan",
-      "cancel the plan",
       "read it quickly",
-      "give formal approval"
+      "give formal approval",
+      "print the plan",
+      "cancel the plan"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"The driver said he would call, but he did not <strong>follow through</strong>.\" This means he…",
      "options": [
-      "called too many times",
       "changed his phone",
-      "wrote a report",
-      "did not finish what he promised"
+      "did not finish what he promised",
+      "called too many times",
+      "wrote a report"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"When a parcel is late, please <strong>follow up</strong> with the customer.\" To follow up means to…",
      "options": [
+      "check back with them later",
       "send two parcels",
-      "ignore them",
       "cancel the order",
-      "check back with them later"
+      "ignore them"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Follow up = dar retorno/checar depois com o cliente."
     },
     {
      "q": "\"If we miss too many attempts, customers will <strong>push back</strong>.\" To push back means to…",
      "options": [
-      "pay more",
-      "complain or resist",
+      "wait quietly",
       "say thank you",
-      "wait quietly"
+      "pay more",
+      "complain or resist"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Push back = resistir, reclamar."
     }
    ]

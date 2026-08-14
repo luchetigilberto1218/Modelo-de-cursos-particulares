@@ -1,0 +1,259 @@
+{
+ "num": 250,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Order fulfilment is the journey from the moment a customer clicks \"buy\" to the moment the parcel arrives at their door. It has four steps: order, picking, packing and delivery.<br><br>First, the system receives the order. Then, a warehouse team picks the items from the shelves. Next, the items are packed into a box and labelled. Finally, the parcel goes to a carrier for delivery.<br><br>A smooth process is invisible to the customer. A broken one is all they remember.",
+   "items": [
+    {
+     "q": "How many steps does order fulfilment have?",
+     "options": [
+      "Four",
+      "Three",
+      "Five",
+      "Two"
+     ],
+     "answer": 0,
+     "why": "\"It has four steps: order, picking, packing and delivery.\""
+    },
+    {
+     "q": "What is the first step?",
+     "options": [
+      "The system receives the order",
+      "The carrier delivers the parcel",
+      "The team picks the items",
+      "The team packs the box"
+     ],
+     "answer": 0,
+     "why": "\"First, the system receives the order.\""
+    },
+    {
+     "q": "Who takes the parcel to the customer's door?",
+     "options": [
+      "A carrier",
+      "The warehouse team",
+      "The system",
+      "The customer"
+     ],
+     "answer": 0,
+     "why": "\"Finally, the parcel goes to a carrier for delivery.\""
+    },
+    {
+     "q": "The text says a smooth process is \"invisible.\" This suggests that…",
+     "options": [
+      "the customer only notices the process when it goes wrong",
+      "the customer can see every step",
+      "the process is a secret",
+      "the parcel is hard to find"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"A smooth process is invisible… A broken one is all they remember.\" O cliente só percebe quando falha."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "each step should happen in order for the parcel to arrive well",
+      "picking is the only important step",
+      "the order of the four steps does not matter",
+      "customers enjoy watching the packing"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto descreve os passos em sequência (First, Then, Next, Finally) para chegar bem ao cliente."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily explicando o processo a um novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team! Let me show you what happens after a customer clicks \"buy.\" It is easier than it sounds.<br><br>The order comes into our system first. You do not need to do anything — the computer just receives it. After that, someone in the warehouse walks to the shelves and picks the right items. We call this step picking. Speed is good, but accuracy is more important. The wrong item makes the customer unhappy.<br><br>Next comes packing. We put the items into a box, add some protection, and stick a label on the front. The label has the address, so the carrier knows where to go. Please always check the label twice.<br><br>Finally, the carrier takes the parcel and delivers it to the door. When everything works, the customer does not think about us at all. That is a good sign. But when a box is late or broken, that is the only thing they remember. So take care with every step.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does the new colleague need to do when the order comes in?",
+     "options": [
+      "Nothing — the computer receives it",
+      "Call the customer",
+      "Print the label",
+      "Pick the items"
+     ],
+     "answer": 0,
+     "why": "\"You do not need to do anything — the computer just receives it.\""
+    },
+    {
+     "q": "During picking, what does Emily say is more important than speed?",
+     "options": [
+      "Accuracy",
+      "The label colour",
+      "The size of the box",
+      "The price"
+     ],
+     "answer": 0,
+     "why": "\"Speed is good, but accuracy is more important.\""
+    },
+    {
+     "q": "Why is the label important?",
+     "options": [
+      "It tells the customer to click buy",
+      "It protects the items in the box",
+      "It shows the price of the order",
+      "It has the address, so the carrier knows where to go"
+     ],
+     "answer": 3,
+     "why": "\"The label has the address, so the carrier knows where to go.\""
+    },
+    {
+     "q": "Emily says \"when everything works, the customer does not think about us at all.\" She means that…",
+     "options": [
+      "the customer forgets to pay",
+      "the team should work slowly",
+      "the customer never receives the parcel",
+      "a good process is not noticed by the customer"
+     ],
+     "answer": 3,
+     "why": "Inferência: um processo suave é invisível — o cliente só nota quando algo dá errado."
+    },
+    {
+     "q": "Why does Emily say \"take care with every step\"?",
+     "options": [
+      "Because one mistake can be the only thing the customer remembers",
+      "Because the boxes are very heavy",
+      "Because the warehouse is dangerous",
+      "Because the carrier is always late"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela avisa que um erro (caixa quebrada ou atrasada) é o que fica na memória do cliente."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The team took the books from the <strong>shelf</strong>.\" A shelf is…",
+     "options": [
+      "a paper label",
+      "a delivery van",
+      "a customer order",
+      "a flat surface where items are stored"
+     ],
+     "answer": 3,
+     "why": "Shelf = prateleira, onde os itens ficam guardados."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ picks up the parcel and takes it to the customer.\"",
+     "options": [
+      "shelf",
+      "label",
+      "carrier",
+      "order"
+     ],
+     "answer": 2,
+     "why": "Carrier = transportadora, a empresa que leva o pacote."
+    },
+    {
+     "q": "\"Please stick the <strong>label</strong> on the box.\" A label is…",
+     "options": [
+      "a customer's payment",
+      "a warehouse shelf",
+      "a big delivery truck",
+      "a small paper with the address on it"
+     ],
+     "answer": 3,
+     "why": "Label = etiqueta, com o endereço para a entrega."
+    },
+    {
+     "q": "Choose the correct word: \"After ___, the items are inside a safe box, ready to send.\"",
+     "options": [
+      "packing",
+      "picking",
+      "delivery",
+      "buying"
+     ],
+     "answer": 0,
+     "why": "Packing = embalagem: colocar os itens na caixa com segurança."
+    },
+    {
+     "q": "\"The whole process was very <strong>smooth</strong>.\" Smooth here means…",
+     "options": [
+      "full of mistakes",
+      "with no problems",
+      "very slow",
+      "very expensive"
+     ],
+     "answer": 1,
+     "why": "Smooth = suave, sem problemas, sem falhas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no dia a dia de um armazém e de entregas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the shipping plan.\" To sign off on means to…",
+     "options": [
+      "print it",
+      "cancel it",
+      "read it aloud",
+      "formally approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new packing system next month.\" To roll out means to…",
+     "options": [
+      "hide it",
+      "start using it, step by step",
+      "throw it away",
+      "sell it"
+     ],
+     "answer": 1,
+     "why": "Roll out = começar a usar, implementar aos poucos."
+    },
+    {
+     "q": "\"Please <strong>follow up</strong> with the carrier about the late parcel.\" To follow up means to…",
+     "options": [
+      "pack a new box",
+      "ignore the problem",
+      "check again and ask for news",
+      "pay the carrier"
+     ],
+     "answer": 2,
+     "why": "Follow up = dar seguimento, checar de novo e cobrar retorno."
+    },
+    {
+     "q": "\"The order is <strong>on its way</strong>.\" This means the order is…",
+     "options": [
+      "travelling to the customer now",
+      "cancelled",
+      "already delivered",
+      "still on the shelf"
+     ],
+     "answer": 0,
+     "why": "On its way = a caminho, sendo entregue neste momento."
+    },
+    {
+     "q": "\"We <strong>ran out of</strong> boxes this morning.\" To run out of means to…",
+     "options": [
+      "have too many",
+      "have none left",
+      "count them",
+      "order more"
+     ],
+     "answer": 1,
+     "why": "Run out of = ficar sem, acabar o estoque de algo."
+    }
+   ]
+  }
+ ]
+}

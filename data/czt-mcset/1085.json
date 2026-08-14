@@ -1,0 +1,259 @@
+{
+ "num": 1085,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Products travel in many ways. They travel by truck, by ship, by train or by plane. The choice depends on the distance and the time.<br><br>At Czarnikow, sugar travels by truck to the port. Then it travels by ship across the ocean. By ship is slow, but it is cheap for big loads. By plane is fast, but it is expensive.<br><br>Every mode has a role. By truck is good for short distances. By train is good for heavy cargo. The port is the place where ships meet trucks. Distance decides the transport.",
+   "items": [
+    {
+     "q": "How does sugar travel to the port?",
+     "options": [
+      "By train",
+      "By plane",
+      "By truck",
+      "By ship"
+     ],
+     "answer": 2,
+     "why": "\"sugar travels by truck to the port\" — o caminhão leva o açúcar até o porto."
+    },
+    {
+     "q": "How does sugar cross the ocean?",
+     "options": [
+      "By ship",
+      "By train",
+      "By car",
+      "By truck"
+     ],
+     "answer": 0,
+     "why": "\"it travels by ship across the ocean\" — o navio cruza o oceano."
+    },
+    {
+     "q": "Why is by ship a good choice for big loads?",
+     "options": [
+      "It uses planes",
+      "It is cheap",
+      "It is very fast",
+      "It is short"
+     ],
+     "answer": 1,
+     "why": "\"By ship is slow, but it is cheap for big loads.\""
+    },
+    {
+     "q": "For a very urgent product, which mode would the author most likely choose?",
+     "options": [
+      "By plane, because it is fast",
+      "By truck, because it is slow",
+      "By ship, because it is cheap",
+      "By train, because it is heavy"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz \"By plane is fast\" — para algo urgente, rapidez é o que importa."
+    },
+    {
+     "q": "The text suggests that the choice of transport depends mainly on…",
+     "options": [
+      "the distance and the time",
+      "the color of the product",
+      "the size of the port",
+      "the name of the company"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"The choice depends on the distance and the time\" e \"Distance decides the transport.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça o colega falando sobre o transporte do açúcar. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! I have a quick question. How does our sugar reach customers in Europe? I want to understand each step.<br><br>Okay, let me explain. First, the sugar leaves the factory. It goes by truck to the port. The trucks are fast on short distances, so this part is easy.<br><br>At the port, the sugar waits. Then it goes by ship across the ocean. By ship is slow. A ship can take many days, sometimes weeks. But a ship carries a very big load, and it is cheap. This is good for us.<br><br>When the ship arrives in Europe, we use trucks again. The trucks take the sugar from the port to the customers. Sometimes, for a small and urgent order, we use a plane. By plane is fast, but it is very expensive, so we do not use it often.<br><br>So the sugar travels by truck, then by ship, then by truck again. Simple, right? Distance and time decide the transport. Do you have any questions?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How does the sugar leave the factory?",
+     "options": [
+      "By truck",
+      "By train",
+      "By ship",
+      "By plane"
+     ],
+     "answer": 0,
+     "why": "\"It goes by truck to the port.\""
+    },
+    {
+     "q": "How does the sugar cross the ocean?",
+     "options": [
+      "By plane",
+      "By ship",
+      "By train",
+      "By car"
+     ],
+     "answer": 1,
+     "why": "\"Then it goes by ship across the ocean.\""
+    },
+    {
+     "q": "Why does the company like using ships?",
+     "options": [
+      "Because they are very fast",
+      "Because they never wait at the port",
+      "Because they fly over the ocean",
+      "Because they carry a big load and are cheap"
+     ],
+     "answer": 3,
+     "why": "\"a ship carries a very big load, and it is cheap. This is good for us.\""
+    },
+    {
+     "q": "Why does the company use a plane only sometimes?",
+     "options": [
+      "Because it cannot leave the port",
+      "Because it is too small",
+      "Because it is very expensive",
+      "Because it is very slow"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"By plane is fast, but it is very expensive, so we do not use it often.\""
+    },
+    {
+     "q": "How would you best describe the colleague who explains?",
+     "options": [
+      "Patient and helpful",
+      "Bored and tired",
+      "Confused and unsure",
+      "Angry and in a hurry"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele explica passo a passo, diz \"Simple, right?\" e \"Do you have any questions?\" — é paciente e prestativo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>truck</strong> is full of sugar bags.\" A truck is a…",
+     "options": [
+      "train station",
+      "small boat",
+      "type of plane",
+      "big road vehicle for cargo"
+     ],
+     "answer": 3,
+     "why": "Truck = caminhão, um veículo grande de estrada para carga."
+    },
+    {
+     "q": "\"The big <strong>ship</strong> carries sugar across the sea.\" A ship is a…",
+     "options": [
+      "large boat on water",
+      "long train",
+      "fast plane",
+      "small car"
+     ],
+     "answer": 0,
+     "why": "Ship = navio, um barco grande que viaja pela água."
+    },
+    {
+     "q": "Choose the correct word: \"The sugar arrives at the ___ , where the ships wait.\"",
+     "options": [
+      "plane",
+      "train",
+      "port",
+      "truck"
+     ],
+     "answer": 2,
+     "why": "Port = porto, o lugar onde os navios esperam e carregam."
+    },
+    {
+     "q": "Choose the correct word: \"Heavy cargo often travels by ___ because it is good for big and heavy loads on land.\"",
+     "options": [
+      "ship",
+      "plane",
+      "train",
+      "car"
+     ],
+     "answer": 2,
+     "why": "Train = trem, ótimo para carga pesada por terra."
+    },
+    {
+     "q": "\"The <strong>plane</strong> is fast but expensive.\" A plane is a…",
+     "options": [
+      "place near the sea",
+      "road for trucks",
+      "boat on the ocean",
+      "vehicle that flies"
+     ],
+     "answer": 3,
+     "why": "Plane = avião, um veículo que voa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e frases úteis com \"by + transporte\" e no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "We say \"<strong>by ship</strong>\", not \"by the ship\". This means we…",
+     "options": [
+      "do not use \"the\" with by + transport",
+      "always add \"my\" before ship",
+      "use \"the\" before ship",
+      "never talk about ships"
+     ],
+     "answer": 0,
+     "why": "Com by + meio de transporte não usamos artigo: \"by ship\", \"by truck\", \"by plane\"."
+    },
+    {
+     "q": "\"The sugar leaves the factory and we <strong>send it out</strong> to the port.\" To send out means to…",
+     "options": [
+      "keep it inside",
+      "count it again",
+      "ship it away to another place",
+      "make it dirty"
+     ],
+     "answer": 2,
+     "why": "Send out = despachar, mandar para fora / para outro lugar."
+    },
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the shipping plan.\" To sign off on means to…",
+     "options": [
+      "read it slowly",
+      "cancel it",
+      "formally approve it",
+      "forget it"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"When the ship arrives, we <strong>pick up</strong> the sugar at the port.\" To pick up means to…",
+     "options": [
+      "pay for it",
+      "throw it away",
+      "collect it",
+      "hide it"
+     ],
+     "answer": 2,
+     "why": "Pick up = pegar / coletar algo em um lugar."
+    },
+    {
+     "q": "\"The plane is expensive, so it does not <strong>pay off</strong> for small orders.\" To pay off means to…",
+     "options": [
+      "cost nothing",
+      "be worth it",
+      "be very slow",
+      "break down"
+     ],
+     "answer": 1,
+     "why": "Pay off = valer a pena, compensar."
+    }
+   ]
+  }
+ ]
+}

@@ -10,23 +10,23 @@
     {
      "q": "What helps us plan tomorrow?",
      "options": [
-      "Reading the news",
-      "Making calls",
       "Looking at yesterday",
-      "Learning ten words"
+      "Learning ten words",
+      "Reading the news",
+      "Making calls"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Looking at yesterday helps us plan tomorrow.\""
     },
     {
      "q": "How were the calls?",
      "options": [
-      "Short",
-      "Long",
       "Easy",
-      "Quiet"
+      "Quiet",
+      "Long",
+      "Short"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The calls were long.\""
     },
     {
@@ -44,22 +44,22 @@
      "q": "The writer would most likely AGREE that...",
      "options": [
       "the past has nothing to teach us",
-      "every day is the same",
       "we can learn from last week",
+      "every day is the same",
       "practice is not important"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: o texto diz que olhar para ontem ajuda a planejar — o passado ensina."
     },
     {
      "q": "\"Take your time. Every sentence counts.\" This suggests the lesson wants you to...",
      "options": [
       "finish very fast",
-      "only read, not speak",
+      "go slowly and practise well",
       "skip the hard parts",
-      "go slowly and practise well"
+      "only read, not speak"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"take your time\" pede calma; cada frase importa, então vale praticar com cuidado."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "How was Emma's Monday?",
      "options": [
-      "Very busy",
       "Sad",
+      "Very busy",
       "Free",
       "Easy"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Monday was very busy.\""
     },
     {
      "q": "Where was Emma on Tuesday?",
      "options": [
-      "At the office",
-      "In a big meeting",
       "In London",
-      "At home"
+      "In a big meeting",
+      "At home",
+      "At the office"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Tuesday was easy. I was at home.\""
     },
     {
      "q": "Why was Wednesday slow?",
      "options": [
-      "The room was full",
-      "The report was hard",
       "The calls were long",
-      "She was a little sick two days before"
+      "The report was hard",
+      "She was a little sick two days before",
+      "The room was full"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Two days before, I was a little sick, so the day was slow.\""
     },
     {
      "q": "Emma says her friends at work \"were there for me.\" This suggests they were...",
      "options": [
-      "angry",
-      "too busy",
+      "away",
       "supportive",
-      "away"
+      "angry",
+      "too busy"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: \"kind\" e \"there for me\" mostram apoio."
     },
     {
      "q": "How does Emma feel about last week overall?",
      "options": [
-      "It was bad",
-      "It was boring",
       "It was too easy",
-      "It was busy but good"
+      "It was busy but good",
+      "It was bad",
+      "It was boring"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"last week was busy, but it was a good week.\""
     }
    ]
@@ -141,30 +141,30 @@
      "options": [
       "tomorrow morning",
       "next week",
-      "right now",
-      "the day before today"
+      "the day before today",
+      "right now"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Yesterday = ontem, o dia antes de hoje."
     },
     {
      "q": "Choose the correct word: \"___ week was great for the team.\"",
      "options": [
-      "Every",
-      "Some",
       "Last",
-      "Next"
+      "Every",
+      "Next",
+      "Some"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Last week = a semana passada, que combina com \"was\"."
     },
     {
      "q": "\"Two days <strong>ago</strong>, I was sick.\" <strong>Ago</strong> means...",
      "options": [
       "in the past, from now",
-      "at the office",
       "very soon",
-      "in the future"
+      "in the future",
+      "at the office"
      ],
      "answer": 0,
      "why": "Ago = atrás; \"two days ago\" = há dois dias."
@@ -174,19 +174,19 @@
      "options": [
       "easy",
       "short",
-      "late",
-      "busy"
+      "busy",
+      "late"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Busy = ocupado; muitas ligações e sem tempo livre."
     },
     {
      "q": "\"The report was <strong>easy</strong>.\" <strong>Easy</strong> means...",
      "options": [
-      "full of errors",
+      "very important",
       "very long",
       "not hard to do",
-      "very important"
+      "full of errors"
      ],
      "answer": 2,
      "why": "Easy = fácil, não difícil."
@@ -201,56 +201,56 @@
     {
      "q": "\"I <strong>was off</strong> on Friday.\" To be off means you were...",
      "options": [
-      "not at work",
       "very busy",
-      "at a long meeting",
-      "on a call"
+      "on a call",
+      "not at work",
+      "at a long meeting"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To be off = estar de folga, fora do trabalho."
     },
     {
      "q": "\"On Monday I <strong>caught up on</strong> my emails.\" To catch up on means to...",
      "options": [
-      "send new emails",
-      "ignore your emails",
       "delete all your emails",
-      "do work you were behind on"
+      "do work you were behind on",
+      "send new emails",
+      "ignore your emails"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Catch up on = colocar em dia o que estava atrasado."
     },
     {
      "q": "\"The team <strong>signed off on</strong> the report.\" To sign off on means to...",
      "options": [
-      "lose it",
       "print it",
+      "approve it",
       "start it",
-      "approve it"
+      "lose it"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"The call was long, but we <strong>followed up</strong> by email.\" To follow up means to...",
      "options": [
-      "arrive late",
-      "cancel the plan",
       "say no",
-      "send a message after, to continue"
+      "send a message after, to continue",
+      "arrive late",
+      "cancel the plan"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Follow up = dar continuidade, retomar depois."
     },
     {
      "q": "\"On Tuesday I <strong>worked from home</strong>.\" This means you...",
      "options": [
-      "stopped working",
-      "went to the office",
       "took the day off",
-      "did your job at home"
+      "did your job at home",
+      "went to the office",
+      "stopped working"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Work from home = trabalhar de casa."
     }
    ]

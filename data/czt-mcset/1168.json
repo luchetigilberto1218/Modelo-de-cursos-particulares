@@ -1,0 +1,259 @@
+{
+ "num": 1168,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "IT supports every Czarnikow office, from London to São Paulo. In this lesson, you learn the everyday English you need when you talk to the help desk or join an online meeting.<br><br>Today you learn five useful words: internet, Wi-Fi, connection, router, and speed. You practise them in short, natural sentences. Good IT habits protect the whole company.<br><br>Go slowly — one step at a time. Small IT habits today save big problems tomorrow. You can do it!",
+   "items": [
+    {
+     "q": "Which offices does IT support?",
+     "options": [
+      "Only London",
+      "Only São Paulo",
+      "Every Czarnikow office",
+      "No offices"
+     ],
+     "answer": 2,
+     "why": "\"IT supports every Czarnikow office, from London to São Paulo.\""
+    },
+    {
+     "q": "How many new words do you learn today?",
+     "options": [
+      "Twenty",
+      "Two",
+      "Five",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"Today you learn five useful words.\""
+    },
+    {
+     "q": "When do you need this English?",
+     "options": [
+      "When you go on holiday",
+      "When you drive to work",
+      "When you cook dinner",
+      "When you talk to the help desk or join an online meeting"
+     ],
+     "answer": 3,
+     "why": "\"...when you talk to the help desk or join an online meeting.\""
+    },
+    {
+     "q": "The text suggests that good IT habits are…",
+     "options": [
+      "only for the IT team",
+      "a waste of time",
+      "only for São Paulo",
+      "helpful for the whole company"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Good IT habits protect the whole company\" e \"Small IT habits today save big problems tomorrow.\""
+    },
+    {
+     "q": "The author would most likely AGREE that you should…",
+     "options": [
+      "learn everything in one day",
+      "take it slowly, one step at a time",
+      "never ask the help desk",
+      "skip the practice"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Go slowly — one step at a time. You can do it!\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James explicar onde o Wi-Fi funciona e ajudar um usuário a se conectar. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! I'm James from IT. Let me help you connect to the internet.<br><br>The Wi-Fi works in this room and in the meeting room next door. It does not work in the garage. So please sit at your desk or in the meeting room.<br><br>First, look at the network on your screen. Click on \"Czarnikow\". Then type the password. The password is on the help desk board, on the wall by the door.<br><br>Now check your connection. Is it green? Good. The speed is fine today. You can join your online meeting now.<br><br>One more thing. We restart the router every evening, just in case. So in the morning the internet is fast and ready. If something looks strange, call IT support. Our team is small, but very responsive. Have a good day!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does the Wi-Fi work?",
+     "options": [
+      "Nowhere today",
+      "In this room and in the meeting room",
+      "Only in the garage",
+      "Only outside the building"
+     ],
+     "answer": 1,
+     "why": "\"The Wi-Fi works in this room and in the meeting room next door.\""
+    },
+    {
+     "q": "Where is the password?",
+     "options": [
+      "On James's phone",
+      "On the help desk board",
+      "In an email",
+      "In the garage"
+     ],
+     "answer": 1,
+     "why": "\"The password is on the help desk board, on the wall by the door.\""
+    },
+    {
+     "q": "When does the team restart the router?",
+     "options": [
+      "Never",
+      "Once a week",
+      "Every evening",
+      "Every morning"
+     ],
+     "answer": 2,
+     "why": "\"We restart the router every evening, just in case.\""
+    },
+    {
+     "q": "Why does James restart the router every evening?",
+     "options": [
+      "Because nobody uses it",
+      "So the internet is fast and ready in the morning",
+      "Because the internet is broken",
+      "To save money"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"...just in case. So in the morning the internet is fast and ready.\""
+    },
+    {
+     "q": "What does James think about the IT team?",
+     "options": [
+      "It is on holiday",
+      "It is big and slow",
+      "It is small but very responsive",
+      "It does not help users"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Our team is small, but very responsive\" — James fala do time com orgulho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>internet</strong> is working well today.\" The internet is…",
+     "options": [
+      "a printer",
+      "a password",
+      "a meeting room",
+      "the global network that connects computers"
+     ],
+     "answer": 3,
+     "why": "Internet = a rede mundial que conecta os computadores."
+    },
+    {
+     "q": "Choose the correct word: \"There's a new ___ on the help desk board. Just type the password to connect.\"",
+     "options": [
+      "Wi-Fi",
+      "speed",
+      "router",
+      "office"
+     ],
+     "answer": 0,
+     "why": "Wi-Fi = a rede sem fio à qual você se conecta com uma senha."
+    },
+    {
+     "q": "\"The <strong>connection</strong> is ready for you to check.\" A connection is…",
+     "options": [
+      "a new employee",
+      "a link between your device and the network",
+      "a report",
+      "a coffee break"
+     ],
+     "answer": 1,
+     "why": "Connection = conexão: o link entre seu aparelho e a rede."
+    },
+    {
+     "q": "\"We restart the <strong>router</strong> every evening.\" A router is…",
+     "options": [
+      "a device that sends the Wi-Fi around the office",
+      "a screen",
+      "a chair",
+      "a manager"
+     ],
+     "answer": 0,
+     "why": "Router = roteador: o aparelho que distribui o Wi-Fi."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ is fine today, so your video call will be clear.\"",
+     "options": [
+      "router",
+      "chair",
+      "speed",
+      "office"
+     ],
+     "answer": 2,
+     "why": "Speed = velocidade da internet, importante para uma chamada de vídeo boa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem quando você fala com o suporte de TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>log in</strong> with your password.\" To log in means to…",
+     "options": [
+      "enter a system with your details",
+      "turn off the computer",
+      "call the manager",
+      "close the door"
+     ],
+     "answer": 0,
+     "why": "Log in = entrar no sistema com seus dados."
+    },
+    {
+     "q": "\"Can you help me <strong>set up</strong> the Wi-Fi?\" To set up means to…",
+     "options": [
+      "break something",
+      "sell it",
+      "prepare or configure it",
+      "hide it"
+     ],
+     "answer": 2,
+     "why": "Set up = preparar/configurar algo para usar."
+    },
+    {
+     "q": "\"The internet is slow. Let's <strong>restart</strong> the router.\" To restart means to…",
+     "options": [
+      "turn it off and on again",
+      "buy a new one",
+      "paint it",
+      "throw it away"
+     ],
+     "answer": 0,
+     "why": "Restart = reiniciar: desligar e ligar de novo."
+    },
+    {
+     "q": "\"If something looks strange, <strong>call IT support</strong>.\" This means to…",
+     "options": [
+      "wait one week",
+      "write a long report",
+      "go home",
+      "ask the IT team for help"
+     ],
+     "answer": 3,
+     "why": "Call IT support = pedir ajuda ao time de TI."
+    },
+    {
+     "q": "\"The video is frozen. Let's <strong>join</strong> the meeting again.\" To join a meeting means to…",
+     "options": [
+      "print the meeting",
+      "cancel the meeting",
+      "leave the room",
+      "enter or connect to the meeting"
+     ],
+     "answer": 3,
+     "why": "Join a meeting = entrar/conectar-se à reunião online."
+    }
+   ]
+  }
+ ]
+}

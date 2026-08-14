@@ -1,0 +1,259 @@
+{
+ "num": 517,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At this level, communicating with IT support is less about asking nicely and more about making the first message complete. Every back-and-forth is time everyone loses. A five-sentence message that contains what you were doing, what happened, the error code if any, what you tried, and how reproducible the problem is often saves thirty minutes of conversation.<br><br>Good requesters also match the urgency to reality. A blocked process that stops the whole team deserves a direct call and a clear statement: 'this is blocking twelve people'. A minor annoyance can wait for the normal queue. Mixing the two — flagging small things as urgent — quickly erodes the help desk's trust, and genuinely urgent things then arrive alongside less important ones.<br><br>The help desk said that the best requesters always wrote clear first messages and matched urgency honestly. That is the rise-level skill in one sentence.",
+   "items": [
+    {
+     "q": "According to the text, what makes communication with IT support effective at this level?",
+     "options": [
+      "Calling instead of writing",
+      "Making the first message complete",
+      "Sending several short messages",
+      "Asking as politely as possible"
+     ],
+     "answer": 1,
+     "why": "\"communicating with IT support is less about asking nicely and more about making the first message complete\"."
+    },
+    {
+     "q": "What five things should a complete first message contain?",
+     "options": [
+      "What you were doing, what happened, the error code, what you tried, and how reproducible it is",
+      "The requester's name, team, role, manager and location",
+      "A greeting, an apology, a request, a deadline and a thank-you",
+      "The date, time, device, browser and network"
+     ],
+     "answer": 0,
+     "why": "O parágrafo lista exatamente esses cinco elementos da mensagem de cinco frases."
+    },
+    {
+     "q": "Why should you reserve 'urgent' for problems that block the whole team?",
+     "options": [
+      "Because false urgency erodes the help desk's trust",
+      "Because urgent tickets are always cheaper to fix",
+      "Because minor problems cannot be logged in the queue",
+      "Because the help desk only reads urgent messages"
+     ],
+     "answer": 0,
+     "why": "\"flagging small things as urgent — quickly erodes the help desk's trust\"."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Calling something urgent when it is not is a smart way to get faster help",
+      "Trust with the help desk is worth protecting",
+      "A clear first message can save both sides a lot of time",
+      "Urgency should reflect real business impact"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto argumenta que a falsa urgência destrói a confiança — portanto não é uma boa estratégia."
+    },
+    {
+     "q": "The phrase 'this is blocking twelve people' suggests that…",
+     "options": [
+      "the help desk counts how many tickets you send",
+      "urgency is more convincing when tied to concrete impact",
+      "twelve is the minimum number for an urgent request",
+      "only large teams should contact IT support"
+     ],
+     "answer": 1,
+     "why": "Inferência: dar um número concreto mostra o impacto real e justifica a urgência de forma honesta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver orientando uma nova gerente. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, before you send your first ticket to IT, let me walk you through how I'd frame it. I told the last person I coached the same thing: your goal is to end the conversation in one message, not to start ten of them.<br><br>Picture what happened this morning. The reporting tool froze while you were exporting the month-end file. Don't just write 'it's broken, please help'. Tell them what you were doing, what actually happened, the error code on the screen, what you already tried — say, closing and reopening — and whether it happens every single time or just once. That last part matters more than people think.<br><br>Now, on urgency. When the finance team can't close the books, that's a real emergency, so you call and you say plainly, 'this is blocking the whole close'. But when your mouse feels a little slow, that goes in the normal queue. The moment you start marking everything urgent, they stop believing you — and then your genuine emergencies wait behind everyone else's noise. Match the flag to reality, every time.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Oliver say the goal of a support message should be?",
+     "options": [
+      "To send at least ten messages",
+      "To start a long conversation with the help desk",
+      "To end the conversation in one message",
+      "To avoid writing and always call"
+     ],
+     "answer": 2,
+     "why": "\"your goal is to end the conversation in one message, not to start ten of them.\""
+    },
+    {
+     "q": "According to Oliver, which detail do people underestimate?",
+     "options": [
+      "Whether the problem happens every time or just once",
+      "The name of the reporting tool",
+      "The colour of the error message",
+      "The exact time the problem happened"
+     ],
+     "answer": 0,
+     "why": "\"whether it happens every single time or just once. That last part matters more than people think.\""
+    },
+    {
+     "q": "How should the manager handle a slightly slow mouse?",
+     "options": [
+      "Put it in the normal queue",
+      "Wait until it stops working completely",
+      "Call IT immediately",
+      "Mark it as urgent to be safe"
+     ],
+     "answer": 0,
+     "why": "\"when your mouse feels a little slow, that goes in the normal queue.\""
+    },
+    {
+     "q": "What does Oliver imply happens if you mark everything urgent?",
+     "options": [
+      "IT gives you a dedicated contact",
+      "Your real emergencies get delayed behind everyone else",
+      "Your tickets are automatically closed",
+      "The help desk answers you faster"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"they stop believing you — and then your genuine emergencies wait behind everyone else's noise.\""
+    },
+    {
+     "q": "How would you best describe Oliver's approach to coaching here?",
+     "options": [
+      "Practical, using a concrete example to make his point",
+      "Critical and discouraging",
+      "Focused only on being polite to IT",
+      "Vague and theoretical"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele usa o caso concreto da ferramenta de relatórios para ensinar de forma prática e direta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"If the problem is not <strong>reproducible</strong>, the technician struggles to diagnose it.\" Reproducible means…",
+     "options": [
+      "fixed automatically",
+      "impossible to explain",
+      "reported by many people",
+      "able to be made to happen again"
+     ],
+     "answer": 3,
+     "why": "Reproducible = reproduzível: que pode ser feito acontecer de novo, o que ajuda o diagnóstico."
+    },
+    {
+     "q": "Choose the correct word: \"Please include the ___ shown on the screen so IT can look it up.\"",
+     "options": [
+      "requester",
+      "annoyance",
+      "error code",
+      "queue"
+     ],
+     "answer": 2,
+     "why": "Error code = código de erro: o identificador que a IT consulta."
+    },
+    {
+     "q": "Choose the correct word: \"Non-urgent tickets simply wait in the normal ___ until a technician is free.\"",
+     "options": [
+      "first message",
+      "queue",
+      "back-and-forth",
+      "urgency"
+     ],
+     "answer": 1,
+     "why": "Queue = fila: onde os chamados esperam atendimento."
+    },
+    {
+     "q": "\"Every extra <strong>back-and-forth</strong> delays the fix.\" Back-and-forth refers to…",
+     "options": [
+      "a system restart",
+      "the help desk's opening hours",
+      "the repeated exchange of messages between two sides",
+      "a formal written report"
+     ],
+     "answer": 2,
+     "why": "Back-and-forth = ida e volta: a troca repetida de mensagens entre você e a IT."
+    },
+    {
+     "q": "\"Constantly crying wolf will <strong>erode</strong> the help desk's trust.\" To erode means to…",
+     "options": [
+      "measure precisely",
+      "wear away gradually",
+      "strengthen quickly",
+      "restore fully"
+     ],
+     "answer": 1,
+     "why": "To erode = erodir: desgastar aos poucos — aqui, a confiança."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns ao lidar com suporte de TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"A senior technician has to <strong>sign off on</strong> the fix before it goes live.\" To sign off on means to…",
+     "options": [
+      "log out of the system",
+      "formally approve",
+      "postpone indefinitely",
+      "test in secret"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"IT will <strong>roll out</strong> the patch to all offices next week.\" To roll out means to…",
+     "options": [
+      "explain to the board",
+      "implement across the organisation in stages",
+      "cancel gradually",
+      "reverse the previous update"
+     ],
+     "answer": 1,
+     "why": "Roll out = implantar de forma progressiva, aqui em todos os escritórios."
+    },
+    {
+     "q": "\"If you don't hear back, <strong>follow up</strong> on the ticket the next day.\" To follow up means to…",
+     "options": [
+      "close the ticket",
+      "delete the request",
+      "check on progress and remind them",
+      "escalate to the CEO"
+     ],
+     "answer": 2,
+     "why": "Follow up = dar seguimento: verificar o andamento e lembrar do pedido."
+    },
+    {
+     "q": "\"When the system crashed, IT had to <strong>look into</strong> the root cause.\" To look into means to…",
+     "options": [
+      "approve quickly",
+      "investigate carefully",
+      "ignore for now",
+      "report to the client"
+     ],
+     "answer": 1,
+     "why": "Look into = investigar, examinar a fundo."
+    },
+    {
+     "q": "\"Marking every ticket urgent won't <strong>move the needle</strong> on response time.\" This means it will…",
+     "options": [
+      "make no noticeable difference",
+      "take longer to measure",
+      "break the help desk's tools",
+      "cost more than expected"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível — aqui, nenhuma."
+    }
+   ]
+  }
+ ]
+}

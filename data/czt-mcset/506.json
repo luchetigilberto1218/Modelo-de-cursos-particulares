@@ -1,0 +1,259 @@
+{
+ "num": 506,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In practice, most companies run a mix of on-premise and cloud, and the intermediate skill is knowing what belongs where. Highly sensitive data, systems with strict regulatory requirements, or workloads where latency is critical may still belong on-premise. Everything else — email, file sharing, analytics, development environments, customer-facing apps — usually sits better in the cloud.<br><br>What matters is consistency. A company that moves things between on-premise and cloud without clear rules ends up with inventory problems, security gaps, and duplicated work. A simple rule set — 'sensitive data here, everything else there' — is usually enough to keep the environment clean for years.<br><br>The goal is never to be 'fully cloud' or 'fully on-premise'. It is to be deliberate about which system lives where, and why.",
+   "items": [
+    {
+     "q": "According to the text, what is the intermediate skill in running a mixed environment?",
+     "options": [
+      "Moving everything to the cloud as fast as possible",
+      "Knowing what belongs where",
+      "Buying the cheapest infrastructure",
+      "Keeping all data on-premise"
+     ],
+     "answer": 1,
+     "why": "\"the intermediate skill is knowing what belongs where\" — decidir onde cada sistema deve viver."
+    },
+    {
+     "q": "Which type of workload may still belong on-premise?",
+     "options": [
+      "Customer-facing apps",
+      "Email and file sharing",
+      "Systems with strict regulatory requirements",
+      "Development environments"
+     ],
+     "answer": 2,
+     "why": "\"systems with strict regulatory requirements… may still belong on-premise.\""
+    },
+    {
+     "q": "What happens to a company that moves things without clear rules?",
+     "options": [
+      "It ends up with inventory problems, security gaps, and duplicated work",
+      "It saves money and time",
+      "It removes all latency issues",
+      "It becomes fully cloud automatically"
+     ],
+     "answer": 0,
+     "why": "\"ends up with inventory problems, security gaps, and duplicated work.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A hybrid environment can stay clean for years with a simple rule set",
+      "Some sensitive data is better kept on-premise",
+      "Consistency matters more than the label of the setup",
+      "Being 'fully cloud' should be the ultimate goal for every company"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz explicitamente que a meta nunca é ser 'fully cloud' ou 'fully on-premise'."
+    },
+    {
+     "q": "The phrase 'sensitive data here, everything else there' suggests that…",
+     "options": [
+      "cloud should never hold company data",
+      "the rules must be long and highly technical to work",
+      "on-premise systems are always cheaper",
+      "a clear, simple rule can be more effective than a complex one"
+     ],
+     "answer": 3,
+     "why": "Inferência: o autor apresenta uma regra curta como suficiente para manter o ambiente organizado por anos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry explicando o conjunto de regras que ele está escrevendo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, I finally sat down and wrote the one-page rule set. Honestly, I think everyone knew we needed it, but nobody wanted to be the person to write it down.<br><br>The rule itself is short. Sensitive data — trading systems, anything with a regulatory requirement, anything where latency really matters — stays on-premise. Everything else goes to the cloud: email, file sharing, analytics, the development environments. If it isn't sensitive and it doesn't need to be milliseconds fast, it belongs in the cloud.<br><br>What I'm really trying to fix is the drift. For years we moved workloads back and forth with no clear reason, and we ended up with security gaps and duplicated work. Two teams were paying for the same thing without knowing it. That's the kind of mess a simple rule prevents.<br><br>I'm not asking anyone to migrate everything overnight. We'll move things gradually, one workload at a time. The point isn't to be fully cloud or fully on-premise — it's to be deliberate. Every system should live somewhere for a reason we can actually explain.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does Harry say nobody had written the rule set before?",
+     "options": [
+      "Because the company banned written rules",
+      "Because the cloud provider forbade it",
+      "Because it was technically impossible",
+      "Because nobody wanted to be the person to write it down"
+     ],
+     "answer": 3,
+     "why": "\"everyone knew we needed it, but nobody wanted to be the person to write it down.\""
+    },
+    {
+     "q": "According to Harry, what stays on-premise?",
+     "options": [
+      "Everything, until proven otherwise",
+      "Email and file sharing",
+      "Analytics and development environments",
+      "Sensitive data, regulatory systems, and latency-critical work"
+     ],
+     "answer": 3,
+     "why": "\"Sensitive data… anything with a regulatory requirement… where latency really matters — stays on-premise.\""
+    },
+    {
+     "q": "What problem is Harry really trying to fix?",
+     "options": [
+      "The cost of the cloud provider",
+      "The drift of moving workloads back and forth with no clear reason",
+      "The lack of email storage",
+      "The speed of the trading systems"
+     ],
+     "answer": 1,
+     "why": "\"What I'm really trying to fix is the drift.\""
+    },
+    {
+     "q": "What does the example of two teams paying for the same thing illustrate?",
+     "options": [
+      "That on-premise systems never fail",
+      "That the cloud is always more expensive",
+      "That the teams were overstaffed",
+      "That duplicated work and hidden waste come from having no clear rule"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele cita o pagamento duplicado como exemplo da 'bagunça' que uma regra simples evita."
+    },
+    {
+     "q": "What is Harry's overall attitude toward the migration?",
+     "options": [
+      "Rushed — he wants everything moved overnight",
+      "Indifferent — he leaves the choice to each team",
+      "Reluctant — he opposes using the cloud at all",
+      "Measured — deliberate and gradual, one workload at a time"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele rejeita a migração de tudo de uma vez e defende ser 'deliberate' e gradual."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We run a <strong>mixed environment</strong>, with some systems local and others in the cloud.\" A mixed environment is…",
+     "options": [
+      "a system that only uses the cloud",
+      "a network with no security rules",
+      "an office with people from different countries",
+      "a setup that combines on-premise and cloud systems"
+     ],
+     "answer": 3,
+     "why": "Mixed environment = ambiente misto: parte on-premise, parte na nuvem."
+    },
+    {
+     "q": "Choose the correct word: \"The audit failed because a ___ let outsiders reach the internal files.\"",
+     "options": [
+      "security gap",
+      "latency",
+      "workload",
+      "rule set"
+     ],
+     "answer": 0,
+     "why": "Security gap = lacuna de segurança, a falha que expôs os arquivos."
+    },
+    {
+     "q": "\"Trading data can't wait, so <strong>critical latency</strong> keeps it on-premise.\" Critical latency refers to…",
+     "options": [
+      "the amount of storage available",
+      "the number of users online",
+      "a situation where even tiny delays are unacceptable",
+      "the total cost of the servers"
+     ],
+     "answer": 2,
+     "why": "Critical latency = latência crítica: qualquer atraso, mesmo pequeno, é inaceitável."
+    },
+    {
+     "q": "Choose the correct term: \"Storing this data abroad breaks a ___, so it must stay in the country.\"",
+     "options": [
+      "rule set",
+      "workload",
+      "regulatory requirement",
+      "file sharing"
+     ],
+     "answer": 2,
+     "why": "Regulatory requirement = exigência regulatória, uma norma legal a cumprir."
+    },
+    {
+     "q": "\"We were <strong>deliberate</strong> about where each system lives.\" Being deliberate means…",
+     "options": [
+      "making a careful, intentional choice",
+      "acting slowly and without a plan",
+      "copying what competitors do",
+      "leaving the decision to chance"
+     ],
+     "answer": 0,
+     "why": "Deliberate = deliberado: uma escolha consciente e com razão clara."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de infraestrutura e TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Security still has to <strong>sign off on</strong> the new rule set.\" To sign off on means to…",
+     "options": [
+      "postpone indefinitely",
+      "comment informally",
+      "formally approve",
+      "reject completely"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the cloud migration one workload at a time.\" To roll out means to…",
+     "options": [
+      "explain it to the board",
+      "cancel it quietly",
+      "test it in secret",
+      "implement it in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two engineers <strong>pushed back on</strong> moving the trading system to the cloud.\" They…",
+     "options": [
+      "forgot about it",
+      "rewrote the whole plan",
+      "approved it immediately",
+      "resisted or disagreed with the idea"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The team agreed the rules but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "changed them overnight",
+      "failed to carry them to completion",
+      "shared them with everyone",
+      "documented them perfectly"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Let's not <strong>lock ourselves into</strong> a single provider we can't leave.\" To lock yourself into something means to…",
+     "options": [
+      "commit in a way that is hard to reverse",
+      "cancel the contract early",
+      "test several options first",
+      "negotiate a lower price"
+     ],
+     "answer": 0,
+     "why": "Lock yourself into = se prender a algo difícil de reverter (ex.: vendor lock-in)."
+    }
+   ]
+  }
+ ]
+}

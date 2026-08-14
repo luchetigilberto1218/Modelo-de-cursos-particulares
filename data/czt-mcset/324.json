@@ -1,0 +1,259 @@
+{
+ "num": 324,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Designing a logistics network, at this level, starts from the customer map — not from the current warehouse list. The first question is simple: where are our customers, and how quickly do they expect their orders? From there, you work backward to decide where warehouses, hubs and routes should sit.<br><br>A good network usually has a small number of hubs placed to shorten the longest trips, not the shortest ones. Moving a warehouse 20 km closer to a small customer barely changes anything. Moving it closer to the biggest cluster of customers often rewrites the whole cost and service picture.<br><br>If you were designing this network from scratch today, you would almost always choose a different shape from the one you inherited. The real question is not whether a better design exists — it usually does — but whether the change is worth the disruption.",
+   "items": [
+    {
+     "q": "According to the text, where should a network design start?",
+     "options": [
+      "From the location of the head office",
+      "From the cheapest routes available",
+      "From the current warehouse list",
+      "From the customer map"
+     ],
+     "answer": 3,
+     "why": "\"Designing a logistics network… starts from the customer map — not from the current warehouse list.\""
+    },
+    {
+     "q": "Where should the small number of hubs be placed?",
+     "options": [
+      "To shorten the shortest trips",
+      "As close to head office as possible",
+      "Next to the smallest customers",
+      "To shorten the longest trips"
+     ],
+     "answer": 3,
+     "why": "\"a small number of hubs placed to shorten the longest trips, not the shortest ones.\""
+    },
+    {
+     "q": "Why does moving a warehouse closer to the biggest cluster matter more?",
+     "options": [
+      "Because it is always cheaper to build there",
+      "Because it reduces the number of hubs to one",
+      "Because small customers order more often",
+      "Because it often rewrites the whole cost and service picture"
+     ],
+     "answer": 3,
+     "why": "\"Moving it closer to the biggest cluster of customers often rewrites the whole cost and service picture.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Customer location should drive the network shape.",
+      "The longest trips deserve the most attention.",
+      "A better design often exists but may not be worth the disruption.",
+      "An inherited network is usually the best possible one."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz que, do zero, você quase sempre escolheria uma forma diferente da herdada — logo, a rede herdada raramente é a melhor."
+    },
+    {
+     "q": "What does the last paragraph SUGGEST about redesigning a network?",
+     "options": [
+      "Knowing a better design exists is not enough to justify changing",
+      "A better design almost never exists in practice",
+      "Disruption should always be avoided",
+      "The inherited shape is impossible to improve"
+     ],
+     "answer": 0,
+     "why": "Inferência: existe quase sempre um design melhor, mas a decisão depende de o ganho compensar a disrupção."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry conduzindo a revisão da rede com um novo analista. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, come and look at the map with me. Forget the warehouse list for a minute — I want you to see where the customers actually are. See this cluster here, in the south? That's where most of our volume sits now. It wasn't like that five years ago.<br><br>Our main hub is up here, in the old industrial park. If we moved it about forty kilometres south, closer to that cluster, we would cut the longest delivery trips by nearly a day. That's the number that matters. Shaving ten minutes off a short local run does almost nothing.<br><br>Now, here's the interesting part. Everyone assumed the answer was to close the second site to save money. But if you close that site, you lose the coverage in the north entirely. Move the main hub instead, and you'd save more than closing a whole warehouse — and you'd keep the coverage.<br><br>So before you touch a spreadsheet, ask one thing: if we were building this from scratch today, would we ever put the hub where it is now? Almost certainly not. Then the only real question is whether the saving is worth the disruption of moving it.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Harry ask the analyst to look at FIRST?",
+     "options": [
+      "The delivery schedule",
+      "The cost of the second site",
+      "The warehouse list",
+      "Where the customers actually are"
+     ],
+     "answer": 3,
+     "why": "\"Forget the warehouse list for a minute — I want you to see where the customers actually are.\""
+    },
+    {
+     "q": "What would happen if the main hub moved 40 km south?",
+     "options": [
+      "It would close the second site automatically",
+      "It would save ten minutes on short local runs",
+      "It would cut the longest delivery trips by nearly a day",
+      "It would move all customers to the south"
+     ],
+     "answer": 2,
+     "why": "\"we would cut the longest delivery trips by nearly a day.\""
+    },
+    {
+     "q": "According to Harry, what is the problem with closing the second site?",
+     "options": [
+      "It would lose the coverage in the north entirely",
+      "It is the newest warehouse",
+      "It has the biggest cluster of customers",
+      "It costs too much to close"
+     ],
+     "answer": 0,
+     "why": "\"if you close that site, you lose the coverage in the north entirely.\""
+    },
+    {
+     "q": "Why does Harry mention that the cluster 'wasn't like that five years ago'?",
+     "options": [
+      "To say the data is unreliable",
+      "To suggest the network no longer matches where customers are today",
+      "To explain why the second site was built",
+      "To argue the hub should never move"
+     ],
+     "answer": 1,
+     "why": "Inferência: os clientes migraram, então a rede herdada ficou desalinhada com a realidade atual."
+    },
+    {
+     "q": "What does Harry imply by asking 'would we ever put the hub where it is now?'",
+     "options": [
+      "The location was chosen deliberately for today's map",
+      "The hub should be closed instead of moved",
+      "The current location is clearly the best choice",
+      "From scratch, nobody would choose the current spot"
+     ],
+     "answer": 3,
+     "why": "Inferência: a pergunta retórica sugere que, do zero, ninguém escolheria o local atual — ele foi herdado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We plotted every order on a <strong>customer map</strong> before touching the routes.\" A customer map is…",
+     "options": [
+      "a list of warehouse addresses",
+      "the delivery schedule for one week",
+      "a diagram of the reporting lines",
+      "a picture of where the customers and their demand are"
+     ],
+     "answer": 3,
+     "why": "Customer map = mapa de clientes: onde eles estão e quanto pedem."
+    },
+    {
+     "q": "\"Instead of starting from the sites, we <strong>worked backward</strong> from the customers.\" To work backward means to…",
+     "options": [
+      "reverse a decision already made",
+      "count the trips in reverse order",
+      "start from the goal and reason toward the steps",
+      "return to an older plan"
+     ],
+     "answer": 2,
+     "why": "To work backward = trabalhar de trás para frente: partir do resultado e voltar até as decisões."
+    },
+    {
+     "q": "Choose the correct word: \"Most of our volume sits in one dense ___ of customers in the south.\"",
+     "options": [
+      "trip",
+      "shape",
+      "cluster",
+      "hub"
+     ],
+     "answer": 2,
+     "why": "Cluster = aglomerado: um grupo denso de clientes numa região."
+    },
+    {
+     "q": "\"If we redesigned it <strong>from scratch</strong>, the network would look completely different.\" From scratch means…",
+     "options": [
+      "with a small budget",
+      "in a great hurry",
+      "from the beginning, with nothing inherited",
+      "using the current sites as a base"
+     ],
+     "answer": 2,
+     "why": "From scratch = do zero, sem partir de nada existente."
+    },
+    {
+     "q": "\"We <strong>inherited</strong> this hub location from a decision made a decade ago.\" To inherit here means to…",
+     "options": [
+      "receive and keep something set up by others earlier",
+      "rebuild something new",
+      "choose deliberately after analysis",
+      "buy from a competitor"
+     ],
+     "answer": 0,
+     "why": "To inherit = herdar: receber algo já montado por decisões anteriores."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em revisões de rede logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Moving the hub 40 km south would really <strong>move the needle</strong> on delivery times.\" This means it would…",
+     "options": [
+      "take too long to measure",
+      "cost far more than expected",
+      "create resistance from the team",
+      "make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    },
+    {
+     "q": "\"The operations director still has to <strong>sign off on</strong> the new network.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "postpone the decision",
+      "announce to customers",
+      "comment informally"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new routes region by region.\" To roll out means to…",
+     "options": [
+      "cancel gradually",
+      "explain to the board",
+      "implement in stages",
+      "test in secret"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two regional managers <strong>pushed back on</strong> closing the northern site.\" They…",
+     "options": [
+      "delayed reading the proposal",
+      "approved it quickly",
+      "resisted or disagreed with it",
+      "rewrote the whole plan"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The savings look good, but they don't <strong>outweigh</strong> the disruption of moving.\" To outweigh means to…",
+     "options": [
+      "delay a decision",
+      "share the cost equally",
+      "measure something precisely",
+      "be more important than something else"
+     ],
+     "answer": 3,
+     "why": "Outweigh = pesar mais, superar em importância — aqui, o ganho não supera a disrupção."
+    }
+   ]
+  }
+ ]
+}

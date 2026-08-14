@@ -1,0 +1,259 @@
+{
+ "num": 1105,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "When you load a truck, every box has a place. And every instruction needs a preposition. In, on, at, under, next to — five small words. They save hours of confusion at the loading bay.<br><br>The bags go in the truck. The clipboard is on the dashboard. The driver is at the gate. The spare keys are under the tyre. The office is next to the bay.<br><br>These five words are simple, but they are important. \"In\" means inside something. \"On\" means on a surface. \"At\" means a specific place. \"Under\" means below. \"Next to\" means beside. Use the right word, and nobody gets lost.",
+   "items": [
+    {
+     "q": "Where do the bags go?",
+     "options": [
+      "On the truck",
+      "Under the truck",
+      "Next to the truck",
+      "In the truck"
+     ],
+     "answer": 3,
+     "why": "\"The bags go in the truck.\" In = dentro."
+    },
+    {
+     "q": "Where is the clipboard?",
+     "options": [
+      "At the dashboard",
+      "On the dashboard",
+      "In the dashboard",
+      "Under the dashboard"
+     ],
+     "answer": 1,
+     "why": "\"The clipboard is on the dashboard.\" On = numa superfície."
+    },
+    {
+     "q": "Where are the spare keys?",
+     "options": [
+      "Under the tyre",
+      "At the tyre",
+      "In the tyre",
+      "On the tyre"
+     ],
+     "answer": 0,
+     "why": "\"The spare keys are under the tyre.\" Under = embaixo."
+    },
+    {
+     "q": "The text says these five words \"save hours of confusion\". This suggests that…",
+     "options": [
+      "prepositions are not important",
+      "the wrong preposition can cause mistakes",
+      "you do not need instructions",
+      "loading a truck is always easy"
+     ],
+     "answer": 1,
+     "why": "Inferência: se as palavras certas evitam confusão, a palavra errada gera erro."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "small words can be very useful at work",
+      "boxes do not need a place",
+      "small words are not useful at work",
+      "workers should not use prepositions"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto chama as preposições de \"small words\" mas diz que são importantes."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry explicando para o novato onde colocar cada coisa. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning! Welcome to your first day. I am Harry. Today I show you where everything goes.<br><br>First, the truck. Put the heavy bags in the truck, near the front. The light bags go on top. Please, do not put bags on the floor. The floor must be clear.<br><br>Now, look at the shelf next to the door. The tools are on the shelf. The gloves are in the box under the shelf. Take a pair before you start.<br><br>The forklift is in the corner. Only trained people drive it, so not you today, okay? Just watch me.<br><br>The clipboard is on the dashboard, in the truck. Write your name at the top. The driver is at the gate. When you finish, give the clipboard to him. Any questions? Good. Let's start!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where do the heavy bags go?",
+     "options": [
+      "In the corner",
+      "On the shelf",
+      "On the floor",
+      "In the truck, near the front"
+     ],
+     "answer": 3,
+     "why": "\"Put the heavy bags in the truck, near the front.\""
+    },
+    {
+     "q": "Where are the tools?",
+     "options": [
+      "At the gate",
+      "On the shelf",
+      "In the box",
+      "Under the truck"
+     ],
+     "answer": 1,
+     "why": "\"The tools are on the shelf.\""
+    },
+    {
+     "q": "Where are the gloves?",
+     "options": [
+      "In the corner",
+      "In the box under the shelf",
+      "At the gate",
+      "On the dashboard"
+     ],
+     "answer": 1,
+     "why": "\"The gloves are in the box under the shelf.\""
+    },
+    {
+     "q": "Harry says \"not you today, okay?\" about the forklift. This suggests that…",
+     "options": [
+      "the trainee is not trained yet",
+      "nobody can drive the forklift",
+      "the forklift is broken",
+      "the trainee can drive the forklift now"
+     ],
+     "answer": 0,
+     "why": "Inferência: só pessoas treinadas dirigem, e o novato ainda deve apenas observar."
+    },
+    {
+     "q": "Why does Harry say the floor must be clear?",
+     "options": [
+      "Because there is no truck",
+      "Because the floor is dirty",
+      "Because the bags are too heavy",
+      "To keep the space safe and easy to walk"
+     ],
+     "answer": 3,
+     "why": "Inferência: sacos no chão atrapalham a passagem — deixar livre é por segurança."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Please put the <strong>bag</strong> in the truck.\" A bag is…",
+     "options": [
+      "a door",
+      "a driver",
+      "a saco",
+      "a truck"
+     ],
+     "answer": 2,
+     "why": "Bag = saco."
+    },
+    {
+     "q": "\"Only trained people can drive the <strong>forklift</strong>.\" A forklift is…",
+     "options": [
+      "a machine that lifts and moves loads",
+      "a small bag",
+      "a gate",
+      "a shelf"
+     ],
+     "answer": 0,
+     "why": "Forklift = empilhadeira, a máquina que levanta cargas."
+    },
+    {
+     "q": "Choose the correct word: \"The tools are on the ___.\"",
+     "options": [
+      "corner",
+      "bag",
+      "driver",
+      "shelf"
+     ],
+     "answer": 3,
+     "why": "Shelf = prateleira, onde ficam as ferramentas."
+    },
+    {
+     "q": "Choose the correct word: \"Do not leave the bags on the ___. Keep it clear.\"",
+     "options": [
+      "shelf",
+      "forklift",
+      "clipboard",
+      "floor"
+     ],
+     "answer": 3,
+     "why": "Floor = chão / piso, que deve ficar livre."
+    },
+    {
+     "q": "\"The forklift is in the <strong>corner</strong>.\" A corner is…",
+     "options": [
+      "the middle of the room",
+      "the front of the truck",
+      "the place where two walls meet",
+      "the top of a shelf"
+     ],
+     "answer": 2,
+     "why": "Corner = canto, onde duas paredes se encontram."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no armazém. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>load up</strong> the truck before nine.\" To load up means to…",
+     "options": [
+      "clean the truck",
+      "drive the truck away",
+      "put things onto the truck",
+      "empty the truck"
+     ],
+     "answer": 2,
+     "why": "Load up = carregar, colocar as coisas dentro."
+    },
+    {
+     "q": "\"Watch out! The forklift is coming.\" <strong>Watch out</strong> means…",
+     "options": [
+      "go home",
+      "sit down",
+      "look happy",
+      "be careful"
+     ],
+     "answer": 3,
+     "why": "Watch out = cuidado, preste atenção."
+    },
+    {
+     "q": "\"Can you <strong>pick up</strong> that box, please?\" To pick up means to…",
+     "options": [
+      "count it",
+      "open it",
+      "throw it away",
+      "lift it with your hands"
+     ],
+     "answer": 3,
+     "why": "Pick up = pegar / levantar com as mãos."
+    },
+    {
+     "q": "\"Please <strong>put away</strong> the tools after work.\" To put away means to…",
+     "options": [
+      "return them to their place",
+      "sell them",
+      "break them",
+      "buy new ones"
+     ],
+     "answer": 0,
+     "why": "Put away = guardar, colocar de volta no lugar."
+    },
+    {
+     "q": "\"We start at eight, so please <strong>show up</strong> on time.\" To show up means to…",
+     "options": [
+      "leave early",
+      "arrive",
+      "stay home",
+      "call the driver"
+     ],
+     "answer": 1,
+     "why": "Show up = aparecer, chegar."
+    }
+   ]
+  }
+ ]
+}

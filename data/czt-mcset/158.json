@@ -10,8 +10,8 @@
      "options": [
       "Forecast, not hoped for",
       "Ignored",
-      "Hoped for",
-      "Left to the bank"
+      "Left to the bank",
+      "Hoped for"
      ],
      "answer": 0,
      "why": "\"Cash flow in a cross-border business has to be forecast, not hoped for.\""
@@ -19,10 +19,10 @@
     {
      "q": "What turns the forecast into a weekly survival tool?",
      "options": [
-      "A single customer",
+      "Simple domestic sales",
       "The complications of international trade — slow payments, FX, customs delays",
       "A big loan",
-      "Simple domestic sales"
+      "A single customer"
      ],
      "answer": 1,
      "why": "\"The complications of international trade… turn a cash flow forecast from a nice-to-have into a weekly survival tool.\""
@@ -30,34 +30,34 @@
     {
      "q": "For each line, what honest question should you ask?",
      "options": [
+      "When did it start?",
       "How big is it?",
       "Who owns it?",
-      "How sure am I?",
-      "When did it start?"
+      "How sure am I?"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"for each line, ask the honest question: how sure am I?\""
     },
     {
      "q": "What does colouring the forecast by certainty reveal?",
      "options": [
-      "Where the real risks are and where you may need to act",
+      "The total profit",
       "The exchange rate",
-      "The tax bill",
-      "The total profit"
+      "Where the real risks are and where you may need to act",
+      "The tax bill"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"you see where the real risks are. And where, in two or three weeks, you may need to act.\""
     },
     {
      "q": "In the colour system, what does red mean?",
      "options": [
-      "Received",
-      "Firm",
       "Likely",
-      "Uncertain"
+      "Uncertain",
+      "Firm",
+      "Received"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"solid green for firm, yellow for likely, red for uncertain.\""
     }
    ]
@@ -83,41 +83,41 @@
     {
      "q": "Why is the week-one payment 'solid green'?",
      "options": [
+      "It is from a new customer",
       "It is unsigned",
       "It is the largest",
-      "It's confirmed, the invoice is due Monday, and they always pay on time",
-      "It is from a new customer"
+      "It's confirmed, the invoice is due Monday, and they always pay on time"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"They've confirmed it, the invoice is due Monday, they always pay on time. That's solid green.\""
     },
     {
      "q": "Why is the week-five payment marked red?",
      "options": [
       "It arrived early",
+      "It is in euros",
       "It is small",
-      "The contract isn't even signed yet — hopeful, not real",
-      "It is in euros"
+      "The contract isn't even signed yet — hopeful, not real"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"the contract isn't even signed yet. That's red. Hopeful, not real.\""
     },
     {
      "q": "What does Sophie refuse to do with the red payment?",
      "options": [
-      "Spend against it",
-      "Record it",
       "Colour it",
-      "Chase it"
+      "Spend against it",
+      "Chase it",
+      "Record it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"I will not spend against it.\""
     },
     {
      "q": "What does the coloured forecast reveal about week five?",
      "options": [
-      "The tax bill is cancelled",
       "Everything is fine",
+      "The tax bill is cancelled",
       "They may dip below zero, giving three weeks' warning to arrange a buffer",
       "The profit is highest"
      ],
@@ -132,31 +132,31 @@
     {
      "q": "A **cash flow forecast** is…",
      "options": [
-      "a bank loan",
       "a tax return",
       "a projection of money coming in and going out over time",
-      "a record of past profit"
+      "a record of past profit",
+      "a bank loan"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Cash flow forecast = previsão de caixa."
     },
     {
      "q": "\"That number is **wishful**.\" Wishful means…",
      "options": [
       "already received",
-      "overdue",
+      "based on hope rather than fact",
       "firmly certain",
-      "based on hope rather than fact"
+      "overdue"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Wishful = otimista demais, baseado em esperança."
     },
     {
      "q": "Choose the correct word: \"That payment is **___** — the invoice is due and they always pay.\"",
      "options": [
-      "uncertain",
-      "committed",
       "red",
+      "committed",
+      "uncertain",
       "wishful"
      ],
      "answer": 1,
@@ -165,21 +165,21 @@
     {
      "q": "A **liquidity buffer** is…",
      "options": [
+      "spare cash kept to cover shortfalls",
       "a tax",
       "an invoice",
-      "spare cash kept to cover shortfalls",
       "a debt"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Liquidity buffer = reserva de liquidez."
     },
     {
      "q": "Choose the correct term: \"We use a **___** forecast, updated every week.\"",
      "options": [
-      "final",
       "annual",
+      "single",
       "rolling",
-      "single"
+      "final"
      ],
      "answer": 2,
      "why": "Rolling forecast = previsão contínua, atualizada."
@@ -192,56 +192,56 @@
     {
      "q": "\"We may **dip below zero** in week five.\" To dip below zero means to…",
      "options": [
-      "run out of cash",
-      "make a profit",
       "grow",
+      "make a profit",
+      "run out of cash",
       "break even"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Dip below zero = ficar negativo, sem caixa."
     },
     {
      "q": "\"That payment might **slip**.\" To slip means to…",
      "options": [
+      "increase",
       "be cancelled",
       "be delayed",
-      "increase",
       "arrive early"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Slip = atrasar, escorregar no prazo."
     },
     {
      "q": "\"Let's **arrange a buffer** before week five.\" To arrange a buffer means to…",
      "options": [
-      "cancel the forecast",
-      "borrow randomly",
       "set up spare cash in advance",
-      "spend the cash"
+      "spend the cash",
+      "borrow randomly",
+      "cancel the forecast"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Arrange a buffer = preparar uma reserva."
     },
     {
      "q": "\"I won't **count on** the unsigned deal.\" To count on something means to…",
      "options": [
       "ignore it",
+      "cancel it",
       "rely on it",
-      "colour it",
-      "cancel it"
+      "colour it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Count on = contar com."
     },
     {
      "q": "\"That's three weeks' **warning**.\" A warning here gives you…",
      "options": [
       "a discount",
+      "advance notice to act",
       "a delay",
-      "a penalty",
-      "advance notice to act"
+      "a penalty"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Warning = aviso antecipado para agir."
     }
    ]

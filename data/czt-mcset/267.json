@@ -1,0 +1,259 @@
+{
+ "num": 267,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Inventory management in practice is a constant game of small adjustments. Nothing is ever perfect. Demand jumps, suppliers slip, and new products arrive while old ones linger. The job is to notice, adjust and move on — repeated every week, across hundreds or thousands of SKUs.<br><br>Mature teams use ABC analysis to focus their attention. A items — the biggest 20% that generate 80% of the value — get watched daily. B items get weekly attention. C items get monthly reviews and simple automatic rules.<br><br>If the biggest items are right, the rest of the operation has room to breathe. If they are wrong, nothing else can compensate. That is why the best inventory managers spend most of their time on the smallest number of SKUs — and it is why, over a year, they usually outperform teams that try to watch everything at once.",
+   "items": [
+    {
+     "q": "According to the text, how often are A items reviewed?",
+     "options": [
+      "Monthly",
+      "Weekly",
+      "Only when demand jumps",
+      "Daily"
+     ],
+     "answer": 3,
+     "why": "\"A items… get watched daily.\" São os itens mais importantes, revisados todos os dias."
+    },
+    {
+     "q": "What is the central idea behind ABC analysis in the text?",
+     "options": [
+      "Automatic rules should manage all items",
+      "Every SKU should get the same amount of attention",
+      "New products matter more than old ones",
+      "Focus attention where most of the value is concentrated"
+     ],
+     "answer": 3,
+     "why": "A tese é focar nos poucos itens (os A) que geram a maior parte do valor."
+    },
+    {
+     "q": "The phrase \"nothing else can compensate\" suggests that…",
+     "options": [
+      "the C items are the most profitable",
+      "getting the A items wrong cannot be fixed by managing the others well",
+      "compensation depends on supplier performance",
+      "teams should ignore the biggest items"
+     ],
+     "answer": 1,
+     "why": "Inferência: se os itens maiores estão errados, acertar os demais não repara o estrago."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "ABC analysis helps managers set priorities",
+      "A small set of SKUs deserves most of a manager's attention",
+      "Inventory work is a routine of constant small adjustments",
+      "Watching every SKU equally is the mark of a strong team"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto todo argumenta contra tentar vigiar tudo igualmente — isso é o que faz times perderem desempenho."
+    },
+    {
+     "q": "Why do the best managers usually outperform others over a year?",
+     "options": [
+      "They review all SKUs on the same schedule",
+      "They concentrate effort on the fewest, highest-value SKUs",
+      "They never let old products linger",
+      "They automate every category of stock"
+     ],
+     "answer": 1,
+     "why": "\"they usually outperform teams that try to watch everything at once\" — a vantagem vem do foco no pequeno número de SKUs de maior valor."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry treinando a nova analista. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, before you open that spreadsheet, let me save you a lot of wasted time. You've got about eight hundred SKUs in this warehouse, and I can already see you're planning to check all of them every morning. Don't. You'll be exhausted by Wednesday and you still won't spot the problems that matter.<br><br>Here's how I want you to work. Pull the ABC list first. Your A items — maybe forty of them — those you know by name, not by number. If stock on an A item falls below the safety level, the system will flag it, but I want you looking before the system does. The B items you check once a week. The C items? Set a simple reorder rule and leave them alone.<br><br>Last quarter the analyst before you spent half her day tidying C items and missed a stockout on one of our top sellers. That single gap cost us more than every C adjustment she made all month. So if you focus on the top twenty percent, the rest will look after itself — and you'll actually go home on time.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the new analyst planning to do that Harry tells her not to?",
+     "options": [
+      "Ignore the A items",
+      "Set automatic rules for everything",
+      "Check all the SKUs every morning",
+      "Reorder stock without approval"
+     ],
+     "answer": 2,
+     "why": "\"you're planning to check all of them every morning. Don't.\""
+    },
+    {
+     "q": "How does Harry want her to know the A items?",
+     "options": [
+      "By name, not just by number",
+      "Only through the system's alerts",
+      "By their weekly report",
+      "By their reorder rule"
+     ],
+     "answer": 0,
+     "why": "\"Your A items… those you know by name, not by number.\""
+    },
+    {
+     "q": "What does Harry mean when he says he wants her \"looking before the system does\"?",
+     "options": [
+      "The system is unreliable and should be ignored",
+      "She should turn off the automatic alerts",
+      "She should anticipate problems rather than only react to alerts",
+      "She should check the system twice a day"
+     ],
+     "answer": 2,
+     "why": "Inferência: bom gestor previne — ele quer que ela perceba a queda antes de o sistema disparar o alerta."
+    },
+    {
+     "q": "Why does Harry mention the previous analyst?",
+     "options": [
+      "To praise how tidy the C items were kept",
+      "To explain why the safety level was raised",
+      "To show that C items deserve most of the attention",
+      "To warn that misplaced focus caused a costly stockout on a top seller"
+     ],
+     "answer": 3,
+     "why": "Inferência: o exemplo ilustra o custo de gastar tempo com C e descuidar de um item A."
+    },
+    {
+     "q": "How would you best describe Harry's overall message?",
+     "options": [
+      "Work harder and check more items each day",
+      "Treat every category with equal care",
+      "Focus effort on the few items that matter most",
+      "Trust the system and stop reviewing stock"
+     ],
+     "answer": 2,
+     "why": "\"if you focus on the top twenty percent, the rest will look after itself\" — foco, não esforço espalhado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The supplier said the shipment would <strong>slip</strong> by three days.\" Here, to slip means to…",
+     "options": [
+      "arrive earlier than planned",
+      "be split into two parts",
+      "be cancelled",
+      "be delayed"
+     ],
+     "answer": 3,
+     "why": "To slip = atrasar; o prazo escorregou para depois."
+    },
+    {
+     "q": "\"A few discontinued products still <strong>linger</strong> on the shelves.\" To linger means to…",
+     "options": [
+      "get damaged",
+      "sell quickly",
+      "remain longer than expected",
+      "be returned to the supplier"
+     ],
+     "answer": 2,
+     "why": "To linger = permanecer, ficar parado por mais tempo do que se esperava."
+    },
+    {
+     "q": "Choose the correct word: \"Getting the A items right means the C items barely need any ___.\"",
+     "options": [
+      "stockout",
+      "revenue",
+      "adjustment",
+      "supplier"
+     ],
+     "answer": 2,
+     "why": "Adjustment = ajuste; os itens C exigem poucos ajustes quando os A estão sob controle."
+    },
+    {
+     "q": "\"Careful A-item management helps the team <strong>outperform</strong> its rivals.\" To outperform means to…",
+     "options": [
+      "merge with",
+      "work alongside",
+      "do worse than",
+      "do better than"
+     ],
+     "answer": 3,
+     "why": "To outperform = superar, ter desempenho melhor do que."
+    },
+    {
+     "q": "Choose the correct term: \"With over a thousand ___ to track, no one can review every single line by hand.\"",
+     "options": [
+      "SKUs",
+      "rules",
+      "suppliers",
+      "adjustments"
+     ],
+     "answer": 0,
+     "why": "SKU = a unidade de controle de estoque; são elas que se contam aos milhares no armazém."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de operações e estoque. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The system will <strong>trigger a reorder</strong> when stock hits the safety level.\" To trigger a reorder means to…",
+     "options": [
+      "review the supplier contract",
+      "automatically start a new purchase order",
+      "cancel the order",
+      "count the shelves"
+     ],
+     "answer": 1,
+     "why": "Trigger a reorder = disparar/acionar automaticamente um novo pedido de reposição."
+    },
+    {
+     "q": "\"Overstocking C items <strong>ties up cash</strong> we need elsewhere.\" To tie up cash means to…",
+     "options": [
+      "generate extra revenue",
+      "delay a payment to a supplier",
+      "keep money locked in something unproductive",
+      "borrow money from the bank"
+     ],
+     "answer": 2,
+     "why": "Tie up cash = imobilizar dinheiro, deixá-lo preso em estoque parado."
+    },
+    {
+     "q": "\"We missed a demand spike and <strong>ran out of</strong> our top seller.\" To run out of means to…",
+     "options": [
+      "have too much of",
+      "discount",
+      "return",
+      "have none left of"
+     ],
+     "answer": 3,
+     "why": "Run out of = ficar sem, esgotar o estoque de algo."
+    },
+    {
+     "q": "\"Once the rules are set, the C items pretty much <strong>look after themselves</strong>.\" This means they…",
+     "options": [
+      "should be removed from stock",
+      "must be counted daily",
+      "require constant manual review",
+      "need very little attention"
+     ],
+     "answer": 3,
+     "why": "Look after themselves = se cuidam sozinhos, quase não pedem intervenção."
+    },
+    {
+     "q": "\"Tidying C items all day will not <strong>move the needle</strong> on service levels.\" This means it will…",
+     "options": [
+      "make a huge difference",
+      "reduce supplier delays",
+      "take very little time",
+      "not make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, causar diferença perceptível — aqui, não causa."
+    }
+   ]
+  }
+ ]
+}

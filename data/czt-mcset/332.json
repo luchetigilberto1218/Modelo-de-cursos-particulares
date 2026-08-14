@@ -1,0 +1,259 @@
+{
+ "num": 332,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Managing delivery SLAs and time windows in practice is a balancing act. Customers want the tightest possible windows; operations can only keep the ones they are actually built to hit. A gap between these two — promises that look good on the website but cannot be held on a real Tuesday — is the single biggest source of customer complaints in most logistics businesses.<br><br>The fix is honesty. If you cannot reliably hold a two-hour window across the whole city, do not promise one. Promise a three-hour window you can hit ninety-five per cent of the time. Customers, it turns out, prefer reliable honesty to heroic optimism.<br><br>Good SLA design also includes what happens when something goes wrong. If we miss the window, will we warn the customer early? Will we offer a refund? Will we try again the next day? A clear answer, known in advance, turns a failure into a mildly annoying event instead of a crisis.",
+   "items": [
+    {
+     "q": "According to the text, what is the single biggest source of customer complaints?",
+     "options": [
+      "Refund policies that are too generous",
+      "The gap between promised windows and what operations can hold",
+      "Slow delivery drivers",
+      "Websites that are hard to use"
+     ],
+     "answer": 1,
+     "why": "\"A gap between these two… is the single biggest source of customer complaints.\""
+    },
+    {
+     "q": "What does the author recommend if you cannot reliably hold a two-hour window?",
+     "options": [
+      "Promise a two-hour window anyway and apologise later",
+      "Promise a three-hour window you can hit 95% of the time",
+      "Let customers choose their own window",
+      "Stop offering deliveries in that area"
+     ],
+     "answer": 1,
+     "why": "\"Promise a three-hour window you can hit ninety-five per cent of the time.\""
+    },
+    {
+     "q": "What makes a missed delivery \"a mildly annoying event instead of a crisis\"?",
+     "options": [
+      "A very tight delivery window",
+      "A clear recovery plan known in advance",
+      "A large marketing budget",
+      "Hiring more drivers"
+     ],
+     "answer": 1,
+     "why": "\"A clear answer, known in advance, turns a failure into a mildly annoying event.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "You should plan for what happens when a delivery fails.",
+      "Advertising the tightest possible window always wins more customers.",
+      "Reliability matters more than an impressive-looking promise.",
+      "Honesty reduces complaints in the long run."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto argumenta que promessas otimistas que não se cumprem geram reclamações — 'reliable honesty over heroic optimism'."
+    },
+    {
+     "q": "The phrase \"heroic optimism\" suggests that the author sees ambitious promises as…",
+     "options": [
+      "brave and worth the risk",
+      "impressive but unreliable and self-defeating",
+      "the only way to compete on price",
+      "essential to good SLA design"
+     ],
+     "answer": 1,
+     "why": "Inferência: 'heroic' aqui é irônico — soa bonito, mas não se sustenta, ao contrário da 'reliable honesty'."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie explicar a nova política de janelas de entrega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, so I've spent the last two weeks with the operations data, and the picture is clear. The website has been promising two-hour windows citywide, but honestly, we only hit that in one neighbourhood out of six. Everywhere else, we are late roughly a third of the time.<br><br>Here is what I'm proposing. From next month, the standard window becomes three hours, not two. It's less impressive on the page, I know, but our own numbers say we can hold it about ninety-five per cent of the time. If we can hit that reliably, customers will trust the badge — and trust is what actually keeps them.<br><br>The second half is just as important. Right now, when we miss a slot, nobody tells the customer until the driver simply doesn't show. That has to stop. If a delivery is going to run late, the system will send a text the moment we know, and we'll offer either a redelivery the next morning or a small credit.<br><br>I'd rather promise a little less and keep every word of it. If we do that consistently, the complaints will fall — and the ones we do get will be about the weather, not about us.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many neighbourhoods did the two-hour window actually work in?",
+     "options": [
+      "None of them",
+      "All six",
+      "One out of six",
+      "Three out of six"
+     ],
+     "answer": 2,
+     "why": "\"we only hit that in one neighbourhood out of six.\""
+    },
+    {
+     "q": "What change to the standard window is Sophie proposing?",
+     "options": [
+      "Letting customers pick any window",
+      "Moving from two hours to three hours",
+      "Moving from three hours to two hours",
+      "Removing time windows completely"
+     ],
+     "answer": 1,
+     "why": "\"From next month, the standard window becomes three hours, not two.\""
+    },
+    {
+     "q": "What will happen when a delivery is going to run late?",
+     "options": [
+      "The driver will simply not show up",
+      "The customer will be charged a rescheduling fee",
+      "Nothing changes until the customer complains",
+      "The system will send a text and offer a redelivery or a credit"
+     ],
+     "answer": 3,
+     "why": "\"the system will send a text… and we'll offer either a redelivery the next morning or a small credit.\""
+    },
+    {
+     "q": "What does Sophie mean by \"the ones we do get will be about the weather, not about us\"?",
+     "options": [
+      "Customers will start complaining about the app design",
+      "The company will blame the weather for every failure",
+      "Complaints will disappear entirely",
+      "Remaining complaints will be about things outside the company's control"
+     ],
+     "answer": 3,
+     "why": "Inferência: se a operação cumpre a promessa, sobram só causas externas (clima), não falhas próprias."
+    },
+    {
+     "q": "What is Sophie's underlying priority in this proposal?",
+     "options": [
+      "Cutting delivery costs as fast as possible",
+      "Making the website look as impressive as possible",
+      "Winning customers on the tightest window available",
+      "Building trust by promising less and keeping every word"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"I'd rather promise a little less and keep every word of it\" — a prioridade é confiança, não a vitrine."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Setting delivery targets is a <strong>balancing act</strong> between speed and reliability.\" A balancing act is…",
+     "options": [
+      "a written contract",
+      "a situation requiring a careful trade-off between competing needs",
+      "a formal apology",
+      "a type of delivery vehicle"
+     ],
+     "answer": 1,
+     "why": "Balancing act = ato de equilíbrio: gerir necessidades que puxam em direções opostas."
+    },
+    {
+     "q": "Choose the correct word: \"There was a ___ between what the website promised and what we could actually deliver.\"",
+     "options": [
+      "badge",
+      "gap",
+      "window",
+      "refund"
+     ],
+     "answer": 1,
+     "why": "Gap = lacuna: a diferença entre a promessa e a realidade."
+    },
+    {
+     "q": "\"We now offer a three-hour delivery <strong>window</strong>.\" Here, a window is…",
+     "options": [
+      "a customer complaint form",
+      "a period of time in which something is expected to happen",
+      "a discount on the order",
+      "an opening in the warehouse wall"
+     ],
+     "answer": 1,
+     "why": "Window = janela (de tempo): o intervalo em que a entrega deve ocorrer."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ service keeps its promise almost every time, so customers stop checking.\"",
+     "options": [
+      "reliable",
+      "optimistic",
+      "tight",
+      "annoying"
+     ],
+     "answer": 0,
+     "why": "Reliable = confiável: cumpre o que promete de forma consistente."
+    },
+    {
+     "q": "\"When a slot is at risk, we <strong>warn</strong> the customer immediately.\" To warn someone means to…",
+     "options": [
+      "cancel their order",
+      "charge them extra",
+      "tell them in advance about a problem",
+      "thank them for waiting"
+     ],
+     "answer": 2,
+     "why": "To warn = avisar: comunicar com antecedência que algo pode dar errado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre entregas e nível de serviço. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Operations still has to <strong>sign off on</strong> the new three-hour window.\" To sign off on means to…",
+     "options": [
+      "postpone indefinitely",
+      "formally approve",
+      "advertise publicly",
+      "quietly ignore"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new SLA region by region.\" To roll out means to…",
+     "options": [
+      "keep it a secret",
+      "implement it progressively",
+      "cancel it in stages",
+      "explain it to the board"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two team leads <strong>pushed back on</strong> the tighter window.\" They…",
+     "options": [
+      "rewrote the whole plan",
+      "forgot to read it",
+      "approved it right away",
+      "resisted or disagreed with it"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The team agreed to send early alerts but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "carried the plan out to the end",
+      "delegated it to another team",
+      "failed to actually do what they agreed",
+      "changed the plan halfway"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado; aqui, não fizeram."
+    },
+    {
+     "q": "\"Shaving ten minutes off the window won't <strong>move the needle</strong> on complaints.\" This means it will…",
+     "options": [
+      "take too long to measure",
+      "not make a noticeable difference",
+      "confuse the drivers",
+      "cost too much money"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

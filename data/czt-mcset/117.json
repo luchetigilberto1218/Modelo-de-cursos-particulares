@@ -1,0 +1,259 @@
+{
+ "num": 117,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Data storytelling at the top of an organisation is both more powerful and more dangerous than lower down. More powerful because senior audiences make bigger decisions on fewer signals. More dangerous because the same signals, pushed a fraction too hard in the narrative, can create confident conclusions that quietly prove to be wrong.<br><br>The discipline is in the calibration. A single well-chosen chart, clearly labelled, accurately captioned, with its caveats honestly displayed, is worth more than ten dense dashboards at board level. Equally important is the willingness to say, in the story itself, what the data does not tell you. \"This movement is statistically significant but commercially small\" is exactly the kind of sentence that earns credibility over a quarter, and especially over a year.<br><br>The strongest stories also resist the temptation of the hero's arc. Real data rarely tells a clean story of decline-then-triumph. It usually tells a noisier story of small moves in different directions. Audiences respond well to honesty about that noisiness, particularly when it is paired with a clear view of which signals are worth acting on and which are not.",
+   "items": [
+    {
+     "q": "Why is data storytelling described as MORE dangerous at senior level?",
+     "options": [
+      "Data at board level is usually incomplete",
+      "Boards prefer dense dashboards to single charts",
+      "Senior audiences distrust charts by default",
+      "Bigger decisions rest on fewer signals, so overstatement carries further"
+     ],
+     "answer": 3,
+     "why": "\"More powerful because senior audiences make bigger decisions on fewer signals\" — quando o sinal é empurrado longe demais, o erro se propaga."
+    },
+    {
+     "q": "What does the author say earns credibility over a quarter and a year?",
+     "options": [
+      "A confident, upbeat narrative",
+      "Avoiding statistical language entirely",
+      "Naming what the data does not tell you, e.g. significant but commercially small",
+      "The number of dashboards presented"
+     ],
+     "answer": 2,
+     "why": "\"the willingness to say… what the data does not tell you\" e o exemplo da frase que \"earns credibility over a quarter, and especially over a year.\""
+    },
+    {
+     "q": "According to the text, what does real data usually look like?",
+     "options": [
+      "A steady, predictable upward trend",
+      "A clean arc of decline followed by triumph",
+      "Small moves in different directions — noisier than a clean narrative",
+      "A single decisive signal each quarter"
+     ],
+     "answer": 2,
+     "why": "\"It usually tells a noisier story of small moves in different directions.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Statistical and commercial significance are not the same thing",
+      "A polished decline-then-triumph story is the most trustworthy way to present results",
+      "A well-captioned chart can outweigh several dashboards",
+      "Honesty about noise can strengthen an audience's trust"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto adverte contra a tentação do \"hero's arc\"; uma história limpa demais soa manipulada, não confiável."
+    },
+    {
+     "q": "The sentence \"This movement is statistically significant but commercially small\" suggests that…",
+     "options": [
+      "commercial impact always outweighs the statistics",
+      "a result can be real yet too minor to justify action",
+      "small movements should be excluded from the story",
+      "statistical significance guarantees a real business effect"
+     ],
+     "answer": 1,
+     "why": "Inferência: separar significância estatística de relevância comercial — algo pode ser 'real' e ainda assim irrelevante para a decisão."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentando a revisão comercial trimestral. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, before you get too excited about this next chart, let me be honest with you about what it does and doesn't tell us. The line goes up and to the right, which looks wonderful on a slide. But the underlying series is extremely noisy — quarter to quarter it bounces around a good deal, and the confidence interval is wide enough that I wouldn't stake much on the exact number.<br><br>What I'm fairly confident about is the direction. Broadly speaking, retention has improved, and roughly a third of that comes from the enterprise segment. What I'm not confident about is the magnitude. The movement is statistically significant, but in commercial terms it's still fairly small — a few hundred thousand, not the millions the headline might imply.<br><br>So here's how I'd read it. Treat this as a signal worth watching, not a victory to bank. If it holds for another two quarters, we act on it properly. If it doesn't, we'll have lost nothing by waiting. I'd rather under-promise here and be proven right slowly than over-interpret one good quarter and have to walk it back in front of this board next time.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Harry say the impressive-looking chart actually hides?",
+     "options": [
+      "That retention has fallen sharply",
+      "That the data was collected incorrectly",
+      "That the enterprise segment was excluded",
+      "That the underlying series is very noisy with a wide confidence interval"
+     ],
+     "answer": 3,
+     "why": "\"the underlying series is extremely noisy… the confidence interval is wide enough that I wouldn't stake much on the exact number.\""
+    },
+    {
+     "q": "What is Harry FAIRLY CONFIDENT about?",
+     "options": [
+      "That the trend will reverse next quarter",
+      "The exact size of the improvement",
+      "The direction — retention has broadly improved",
+      "That the gain runs into the millions"
+     ],
+     "answer": 2,
+     "why": "\"What I'm fairly confident about is the direction. Broadly speaking, retention has improved.\""
+    },
+    {
+     "q": "How does Harry describe the size of the effect?",
+     "options": [
+      "Statistically insignificant and irrelevant",
+      "Both statistically and commercially large",
+      "Impossible to measure at all",
+      "Statistically significant but commercially small"
+     ],
+     "answer": 3,
+     "why": "\"The movement is statistically significant, but in commercial terms it's still fairly small.\""
+    },
+    {
+     "q": "What does Harry mean by \"a signal worth watching, not a victory to bank\"?",
+     "options": [
+      "The result should be celebrated immediately",
+      "The board should reallocate the budget at once",
+      "The finding is promising but not yet solid enough to act on",
+      "The data should be discarded"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele quer monitorar por mais dois trimestres antes de agir — trata como indício, não como resultado consolidado."
+    },
+    {
+     "q": "What does Harry's preference to \"under-promise… rather than over-interpret\" reveal about his priorities?",
+     "options": [
+      "He is uninterested in the enterprise segment",
+      "He believes noise makes all data useless",
+      "He wants to hide the good news from the board",
+      "He values protecting his long-term credibility over a strong headline now"
+     ],
+     "answer": 3,
+     "why": "Inferência: prefere ser 'proven right slowly' a ter de recuar diante do board — prioriza credibilidade ao longo do tempo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The uplift is real, but it's mostly <strong>noise</strong> from one volatile region.\" Here, noise means…",
+     "options": [
+      "a strong and reliable trend",
+      "a deliberate distortion of the figures",
+      "random, meaningless variation that obscures the underlying pattern",
+      "an error in the presentation software"
+     ],
+     "answer": 2,
+     "why": "Noise = ruído: variação aleatória que atrapalha a leitura do padrão real."
+    },
+    {
+     "q": "Choose the correct term: \"A result can be statistically significant yet lack ___ — a few thousand pounds is not worth a strategy shift.\"",
+     "options": [
+      "commercial significance",
+      "a hero's arc",
+      "an honest caveat",
+      "a confidence interval"
+     ],
+     "answer": 0,
+     "why": "Commercial significance = relevância comercial: importar de fato para o negócio, além do teste estatístico."
+    },
+    {
+     "q": "\"The estimate is 4.2%, but the <strong>confidence interval</strong> runs from 1% to 7%.\" A confidence interval is…",
+     "options": [
+      "the average of all the readings",
+      "the range within which the true value is likely to lie",
+      "the margin of profit on the product",
+      "the deadline for the analysis"
+     ],
+     "answer": 1,
+     "why": "Confidence interval = intervalo de confiança: faixa em que o valor verdadeiro provavelmente se encontra."
+    },
+    {
+     "q": "Choose the correct word: \"Cutting through the ___, only one metric is actually a ___ worth acting on.\"",
+     "options": [
+      "noise … signal",
+      "caveat … dashboard",
+      "signal … noise",
+      "arc … interval"
+     ],
+     "answer": 0,
+     "why": "Signal = sinal (o que importa) vs. noise = ruído (o que distrai); atravessa-se o ruído para achar o sinal."
+    },
+    {
+     "q": "\"He'd rather add an <strong>honest caveat</strong> than let the board over-read the chart.\" An honest caveat is…",
+     "options": [
+      "an upbeat summary of the findings",
+      "a footnote nobody reads",
+      "a candid statement of the data's limits or conditions",
+      "a formal approval from the board"
+     ],
+     "answer": 2,
+     "why": "Honest caveat = ressalva honesta: dizer abertamente o que o dado não garante ou em que condições vale."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em revisões de dados no board. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's not <strong>read too much into</strong> one good quarter.\" To read too much into something means to…",
+     "options": [
+      "share it with too many people",
+      "study it very carefully",
+      "draw a bigger conclusion than the evidence supports",
+      "record it in detail"
+     ],
+     "answer": 2,
+     "why": "Read too much into = tirar conclusão maior do que os dados sustentam; superinterpretar."
+    },
+    {
+     "q": "\"If the trend holds, we'll <strong>act on</strong> it next quarter.\" To act on something means to…",
+     "options": [
+      "ignore it for now",
+      "present it to the board",
+      "question whether it is true",
+      "take practical steps based on it"
+     ],
+     "answer": 3,
+     "why": "Act on = agir com base em algo, converter o sinal em decisão."
+    },
+    {
+     "q": "\"I don't want to overstate this and then have to <strong>walk it back</strong> in front of the board.\" To walk something back means to…",
+     "options": [
+      "delegate it to someone else",
+      "escalate it to a higher level",
+      "retract or soften a claim you made earlier",
+      "repeat it more slowly"
+     ],
+     "answer": 2,
+     "why": "Walk back = voltar atrás, recuar de uma afirmação exagerada."
+    },
+    {
+     "q": "\"A change this small is unlikely to <strong>move the needle</strong> on revenue.\" This means it will…",
+     "options": [
+      "provoke strong resistance",
+      "attract media attention",
+      "not make a noticeable difference",
+      "take too long to implement"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro, produzir diferença perceptível — aqui, o contrário."
+    },
+    {
+     "q": "\"Treat it as a signal to watch, not a win to <strong>bank on</strong>.\" To bank on something means to…",
+     "options": [
+      "keep it confidential",
+      "rely on it as if it were certain",
+      "measure it repeatedly",
+      "deposit money against it"
+     ],
+     "answer": 1,
+     "why": "Bank on = contar com algo como garantido — o que Harry justamente evita fazer com um único trimestre."
+    }
+   ]
+  }
+ ]
+}

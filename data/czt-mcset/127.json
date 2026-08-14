@@ -8,9 +8,9 @@
     {
      "q": "In a documentary collection, where does the seller first send the documents?",
      "options": [
-      "To customs",
-      "To the ship",
       "To the buyer",
+      "To the ship",
+      "To customs",
       "To their own bank"
      ],
      "answer": 3,
@@ -19,9 +19,9 @@
     {
      "q": "When does the buyer get the documents?",
      "options": [
+      "Never",
       "Before shipping",
       "After delivery only",
-      "Never",
       "When they pay or promise to pay"
      ],
      "answer": 3,
@@ -31,8 +31,8 @@
      "q": "How does a collection compare with a letter of credit in cost?",
      "options": [
       "The same",
-      "More expensive",
       "Free",
+      "More expensive",
       "Cheaper"
      ],
      "answer": 3,
@@ -52,12 +52,12 @@
     {
      "q": "When does a documentary collection work well?",
      "options": [
-      "Never",
-      "With new, unknown buyers",
       "Only with banks",
-      "When the two sides already know and trust each other"
+      "When the two sides already know and trust each other",
+      "Never",
+      "With new, unknown buyers"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"It works well when the two sides already know and trust each other.\""
     }
    ]
@@ -72,21 +72,21 @@
     {
      "q": "Why is a documentary collection right for this shipment?",
      "options": [
+      "It's the second shipment to a buyer they now know and trust",
       "The bank guarantees it",
-      "The buyer is new",
       "It is the most expensive option",
-      "It's the second shipment to a buyer they now know and trust"
+      "The buyer is new"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"since you know and trust them now, we'll use a documentary collection.\""
     },
     {
      "q": "What does the seller bring to their bank in step one?",
      "options": [
-      "The buyer",
+      "The goods",
       "The documents — the invoice and bill of lading",
-      "The payment",
-      "The goods"
+      "The buyer",
+      "The payment"
      ],
      "answer": 1,
      "why": "\"you bring the documents to us… the invoice and the bill of lading.\""
@@ -94,34 +94,34 @@
     {
      "q": "When does the French bank hand over the documents?",
      "options": [
-      "Immediately",
-      "Only after the buyer pays or signs a promise to pay",
+      "Never",
       "Before shipping",
-      "Never"
+      "Only after the buyer pays or signs a promise to pay",
+      "Immediately"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The buyer pays — or signs a promise to pay… and only then does the bank hand over the documents.\""
     },
     {
      "q": "What does the buyer do with the documents?",
      "options": [
-      "Collect the goods from the port",
       "Pay a duty",
+      "Send them back",
       "Nothing",
-      "Send them back"
+      "Collect the goods from the port"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"with the documents, the buyer can collect the goods from the port.\""
     },
     {
      "q": "What is the important limit of the bank's role?",
      "options": [
-      "It pays the seller directly",
-      "It guarantees the money",
       "It's just the messenger — it doesn't guarantee payment",
-      "It ships the goods"
+      "It ships the goods",
+      "It guarantees the money",
+      "It pays the seller directly"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"we're just the messenger here… we don't guarantee the money.\""
     }
    ]
@@ -132,9 +132,9 @@
     {
      "q": "A **documentary collection** is…",
      "options": [
-      "a bank's payment guarantee",
       "a customs form",
       "a shipping route",
+      "a bank's payment guarantee",
       "a way to get paid where the bank passes documents but doesn't guarantee payment"
      ],
      "answer": 3,
@@ -143,45 +143,45 @@
     {
      "q": "The **remitting bank** is…",
      "options": [
-      "the seller's bank that sends the documents",
       "the ship",
-      "the buyer's bank",
-      "customs"
+      "customs",
+      "the seller's bank that sends the documents",
+      "the buyer's bank"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Remitting bank = banco remetente."
     },
     {
      "q": "Choose the correct word: \"With **D/P**, the buyer gets the documents against **___**.\"",
      "options": [
       "insurance",
+      "payment",
       "delivery",
-      "shipping",
-      "payment"
+      "shipping"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "D/P = documents against payment (contra pagamento)."
     },
     {
      "q": "In a collection, the bank acts as a **messenger**, which means it…",
      "options": [
+      "ships the goods",
       "pays the duty",
-      "just passes the documents",
       "guarantees payment",
-      "ships the goods"
+      "just passes the documents"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Messenger = mensageiro (só passa os documentos)."
     },
     {
      "q": "Choose the correct word: \"The bank will **___** the documents once the buyer pays.\"",
      "options": [
+      "release",
       "cancel",
       "hold",
-      "release",
       "hide"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Release = liberar."
     }
    ]
@@ -192,53 +192,53 @@
     {
      "q": "\"The bank **hands over** the documents.\" To hand over means to…",
      "options": [
-      "keep",
-      "destroy",
+      "give to someone",
       "hide",
-      "give to someone"
+      "destroy",
+      "keep"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Hand over = entregar."
     },
     {
      "q": "\"We couldn't **force** them to pay.\" To force someone means to…",
      "options": [
-      "pay them",
       "make them do something",
+      "pay them",
       "ask politely",
       "thank them"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Force = obrigar."
     },
     {
      "q": "\"The buyer can **pick up** the goods.\" To pick up means to…",
      "options": [
-      "deliver",
       "collect",
       "pay",
+      "deliver",
       "ship"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Pick up = recolher, buscar."
     },
     {
      "q": "\"This only works with a buyer **you can count on**.\" To count on someone means to…",
      "options": [
-      "doubt them",
-      "pay them",
       "rely on them",
-      "avoid them"
+      "avoid them",
+      "pay them",
+      "doubt them"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Count on = confiar em, contar com."
     },
     {
      "q": "\"It's simpler, so it **saves money**.\" To save money means to…",
      "options": [
+      "borrow",
       "lose money",
       "spend more",
-      "borrow",
       "spend less"
      ],
      "answer": 3,

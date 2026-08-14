@@ -10,23 +10,23 @@
     {
      "q": "Where do most tax problems come from?",
      "options": [
-      "New taxes every year",
       "Bad software",
       "Big companies only",
-      "A small number of common mistakes"
+      "A small number of common mistakes",
+      "New taxes every year"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Most tax problems come from a small number of common mistakes.\""
     },
     {
      "q": "What happens to the penalty each time the same mistake repeats?",
      "options": [
       "It gets smaller",
+      "It gets bigger",
       "It disappears",
-      "It stays the same",
-      "It gets bigger"
+      "It stays the same"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"the penalty is usually small the first time. But it gets bigger each time it repeats.\""
     },
     {
@@ -43,23 +43,23 @@
     {
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
+      "Small mistakes are common.",
       "It is fine to make the same mistake every year.",
       "You should fix a mistake quickly.",
-      "Small mistakes are common.",
       "Writing down what you did is a good idea."
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: o texto todo diz o contrário — repetir o mesmo erro é o que traz multas maiores."
     },
     {
      "q": "\"Make sure the same mistake cannot happen again next month\" suggests that…",
      "options": [
+      "the tax office never checks",
       "you should change the process, not just fix one case",
-      "mistakes are impossible to avoid",
       "you should stop paying taxes",
-      "the tax office never checks"
+      "mistakes are impossible to avoid"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: prevenir a repetição significa mudar como o trabalho é feito, não só corrigir uma vez."
     }
    ]
@@ -77,21 +77,21 @@
     {
      "q": "What are Charlotte and the junior looking at today?",
      "options": [
-      "Next year's budget",
-      "New tax software",
       "The office rules",
-      "Last year's compliance errors"
+      "Last year's compliance errors",
+      "New tax software",
+      "Next year's budget"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"Today we look at last year's compliance errors.\""
     },
     {
      "q": "How much of the errors came from just five types of mistake?",
      "options": [
       "Eighty percent",
-      "All of them",
+      "Fifty percent",
       "Twenty percent",
-      "Fifty percent"
+      "All of them"
      ],
      "answer": 0,
      "why": "\"Eighty percent of them came from just five types of mistake.\""
@@ -99,34 +99,34 @@
     {
      "q": "What does Charlotte want the junior to do when he sees a mistake?",
      "options": [
-      "Fix it alone and say nothing",
-      "Send it to the tax office",
       "Tell her the same day",
+      "Send it to the tax office",
+      "Fix it alone and say nothing",
       "Wait until the end of the month"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"When you see a mistake, tell me the same day.\""
     },
     {
      "q": "Why does Charlotte say this is \"good news\"?",
      "options": [
-      "Because the tax office will pay them",
-      "Because fixing five things removes most of the problem",
+      "Because they need a hundred new rules",
       "Because there were no errors",
-      "Because they need a hundred new rules"
+      "Because fixing five things removes most of the problem",
+      "Because the tax office will pay them"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: se poucos erros causam quase tudo, resolver esses poucos resolve a maior parte."
     },
     {
      "q": "How would you best describe Charlotte's tone with the junior?",
      "options": [
-      "Bored and distant",
       "Angry and blaming",
-      "Calm and encouraging",
-      "Nervous and unsure"
+      "Nervous and unsure",
+      "Bored and distant",
+      "Calm and encouraging"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: ela diz \"do not worry\" e propõe hábitos simples — tom tranquilo e de apoio."
     }
    ]
@@ -139,52 +139,52 @@
     {
      "q": "\"We must send the report before the <strong>deadline</strong>.\" A deadline is…",
      "options": [
-      "a meeting room",
-      "a type of tax",
       "the last day or time to do something",
-      "a bank account"
+      "a bank account",
+      "a type of tax",
+      "a meeting room"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Deadline = prazo, a data-limite para entregar algo."
     },
     {
      "q": "Choose the correct word: \"Please do not ___ the invoice — we need it for the tax office.\"",
      "options": [
+      "sell",
       "sign",
-      "lose",
       "print",
-      "sell"
+      "lose"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "To lose = perder; o texto pede para não perder a nota fiscal."
     },
     {
      "q": "\"You must <strong>classify</strong> each cost correctly.\" To classify means to…",
      "options": [
-      "delete from the system",
-      "put into the right group or type",
+      "hide from the boss",
       "pay in cash",
-      "hide from the boss"
+      "delete from the system",
+      "put into the right group or type"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "To classify = classificar, colocar cada item no grupo certo."
     },
     {
      "q": "Choose the correct word: \"Lunch with a friend is not a business ___.\"",
      "options": [
-      "invoice",
       "expense",
-      "deadline",
-      "penalty"
+      "penalty",
+      "invoice",
+      "deadline"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Expense = despesa; um almoço pessoal não é despesa da empresa."
     },
     {
      "q": "\"If we repeat the same error, we pay a bigger <strong>penalty</strong>.\" A penalty is…",
      "options": [
-      "a discount",
       "a report",
+      "a discount",
       "a fine or punishment",
       "a new rule"
      ],
@@ -202,30 +202,30 @@
      "q": "\"The manager has to <strong>sign off on</strong> the tax report.\" To sign off on means to…",
      "options": [
       "hide it",
-      "approve it",
       "print it",
-      "delete it"
+      "delete it",
+      "approve it"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"When you find a mistake, please <strong>write it down</strong>.\" To write down means to…",
      "options": [
-      "forget it",
       "make a note of it",
       "say it out loud",
-      "send it away"
+      "send it away",
+      "forget it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Write down = anotar, registrar por escrito."
     },
     {
      "q": "\"We need to <strong>keep up with</strong> new tax rules.\" To keep up with means to…",
      "options": [
-      "ignore",
-      "pay for",
       "argue against",
+      "pay for",
+      "ignore",
       "stay informed about"
      ],
      "answer": 3,
@@ -234,23 +234,23 @@
     {
      "q": "\"The junior agreed to help but did not <strong>follow through</strong>.\" This means he…",
      "options": [
-      "did it perfectly",
-      "asked for more money",
+      "did not finish what he agreed to do",
       "did it too fast",
-      "did not finish what he agreed to do"
+      "did it perfectly",
+      "asked for more money"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"Let's <strong>sort out</strong> this error today.\" To sort out means to…",
      "options": [
-      "make it bigger",
+      "solve or fix it",
       "leave it for later",
-      "count it again",
-      "solve or fix it"
+      "make it bigger",
+      "count it again"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Sort out = resolver, colocar em ordem."
     }
    ]

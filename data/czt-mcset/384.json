@@ -1,0 +1,259 @@
+{
+ "num": 384,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "The chart of accounts is the company's list of every account in the ledger. Each account has a name and a number, and every transaction is coded to one of them. A good chart is simple, clear and stable — simple enough that the bookkeeping team uses it correctly without constant questions, and stable enough that this year's numbers can be compared with last year's.<br><br>The mistake most companies make is to keep adding new accounts without ever removing old ones. Over time, the chart becomes a jungle of duplicates and unused codes, and the bookkeepers quietly stop trusting it.<br><br>A clean chart is a small piece of work, done every year, that makes every other accounting task easier for the twelve months that follow.",
+   "items": [
+    {
+     "q": "According to the text, what is the chart of accounts?",
+     "options": [
+      "The list of the company's suppliers",
+      "The company's list of every account in the ledger",
+      "A record of every employee's salary",
+      "A summary of the annual budget"
+     ],
+     "answer": 1,
+     "why": "\"The chart of accounts is the company's list of every account in the ledger.\""
+    },
+    {
+     "q": "What three qualities should a good chart have?",
+     "options": [
+      "Modern, digital and shared",
+      "Long, detailed and formal",
+      "Simple, clear and stable",
+      "Cheap, fast and flexible"
+     ],
+     "answer": 2,
+     "why": "\"A good chart is simple, clear and stable.\""
+    },
+    {
+     "q": "What mistake do most companies make with the chart?",
+     "options": [
+      "They change the account numbers too often",
+      "They keep adding new accounts without removing old ones",
+      "They let too many people edit it",
+      "They copy a competitor's chart"
+     ],
+     "answer": 1,
+     "why": "\"to keep adding new accounts without ever removing old ones.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "A yearly cleanup pays off across the following months",
+      "Stability makes year-on-year comparison easier",
+      "The more accounts a chart has, the more useful it is",
+      "A messy chart can lose the team's trust"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto trata os códigos extras como uma 'selva' que atrapalha — mais contas não é melhor."
+    },
+    {
+     "q": "What does the phrase \"the bookkeepers quietly stop trusting it\" suggest?",
+     "options": [
+      "The bookkeepers report the problem to management immediately",
+      "The bookkeepers delete the chart entirely",
+      "The chart is locked and cannot be edited",
+      "The loss of trust builds up slowly and without complaint"
+     ],
+     "answer": 3,
+     "why": "Inferência: 'quietly' indica que a desconfiança cresce aos poucos, sem reclamação aberta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry falando com a equipe durante a limpeza anual do plano de contas. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Morning, everyone. Thanks for making time. This is our once-a-year cleanup of the chart of accounts, and I want us to finish it this week rather than let it drag on for a month.<br><br>Here's where we are. I've gone through the ledger and flagged forty codes that nobody has touched in over two years. Those are the obsolete ones — we archive them, we don't delete the history behind them. On top of that, I found fifteen duplicates: two accounts doing the same job, so entries get split between them and the reports never quite add up.<br><br>My plan is simple. For each duplicate, we pick one account to keep, move the balance across, and close the other. Sanjay, could you pull the last twelve months of entries so we know nothing important is sitting in a code we're about to retire?<br><br>One rule for today: if you're not sure whether an account is still needed, ask before you touch it. I would rather answer ten questions now than chase a mystery figure at year-end. When we're done, the chart should be lean enough that the team can code any transaction without emailing me first.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How often does this cleanup of the chart of accounts happen?",
+     "options": [
+      "Only when problems appear",
+      "Every month",
+      "Every quarter",
+      "Once a year"
+     ],
+     "answer": 3,
+     "why": "\"This is our once-a-year cleanup of the chart of accounts.\""
+    },
+    {
+     "q": "What does Harry want to do with the forty obsolete codes?",
+     "options": [
+      "Delete them and their history",
+      "Archive them, keeping the history",
+      "Merge them with the duplicates",
+      "Leave them untouched for another year"
+     ],
+     "answer": 1,
+     "why": "\"we archive them, we don't delete the history behind them.\""
+    },
+    {
+     "q": "Why do the reports \"never quite add up\" with the duplicates?",
+     "options": [
+      "The team forgets to close the books",
+      "The account numbers are entered incorrectly",
+      "Entries get split between two accounts doing the same job",
+      "The ledger software is out of date"
+     ],
+     "answer": 2,
+     "why": "\"two accounts doing the same job, so entries get split between them and the reports never quite add up.\""
+    },
+    {
+     "q": "Why does Harry ask Sanjay to pull the last twelve months of entries?",
+     "options": [
+      "To compare the numbers with a competitor",
+      "To make sure nothing important sits in a code about to be retired",
+      "To train Sanjay on the ledger",
+      "To calculate everyone's bonus"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele quer confirmar que nenhum valor relevante ficará perdido antes de encerrar um código."
+    },
+    {
+     "q": "What does Harry's rule — \"ask before you touch it\" — reveal about his priorities?",
+     "options": [
+      "He wants to keep every account just in case",
+      "He would rather prevent errors now than fix mysteries later",
+      "He does not trust the team to work alone",
+      "He prefers speed over accuracy"
+     ],
+     "answer": 1,
+     "why": "Inferência: 'rather answer ten questions now than chase a mystery figure at year-end' mostra prevenção sobre correção tardia."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Every invoice is coded to one <strong>account</strong> in the ledger.\" An account is…",
+     "options": [
+      "a bank statement",
+      "a member of the finance team",
+      "a category used to record transactions",
+      "a written report to management"
+     ],
+     "answer": 2,
+     "why": "Account = conta: a categoria onde a transação é registrada."
+    },
+    {
+     "q": "Choose the correct word: \"We keep the numbering ___ so this year's figures compare easily with last year's.\"",
+     "options": [
+      "stable",
+      "clean",
+      "unused",
+      "coded"
+     ],
+     "answer": 0,
+     "why": "Stable = estável, o que permite a comparação ano a ano."
+    },
+    {
+     "q": "\"Two codes were doing the same job, so we merged the <strong>duplicate</strong>.\" A duplicate is…",
+     "options": [
+      "a rarely used code",
+      "a second copy that repeats an existing one",
+      "an account with no balance",
+      "a numbering error"
+     ],
+     "answer": 1,
+     "why": "Duplicate = duplicado: uma cópia que repete algo que já existe."
+    },
+    {
+     "q": "Choose the correct word: \"Before we retire a code, we check that it is genuinely ___ and holds no recent entries.\"",
+     "options": [
+      "simple",
+      "clear",
+      "unused",
+      "stable"
+     ],
+     "answer": 2,
+     "why": "Unused = não utilizado: um código sem movimentação."
+    },
+    {
+     "q": "\"When bookkeepers can't rely on the chart, they stop trusting it.\" To <strong>trust</strong> the chart means to…",
+     "options": [
+      "ask permission to use it",
+      "rewrite it from scratch",
+      "copy it to a spreadsheet",
+      "believe it is correct and rely on it"
+     ],
+     "answer": 3,
+     "why": "To trust = confiar: acreditar que está certo e usá-lo com segurança."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem numa limpeza do plano de contas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The finance director still has to <strong>sign off on</strong> the new chart.\" To sign off on means to…",
+     "options": [
+      "explain informally",
+      "delay indefinitely",
+      "print and file",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Let's <strong>clean up</strong> the chart before year-end.\" To clean up here means to…",
+     "options": [
+      "hand it to an auditor",
+      "tidy it by removing what is no longer needed",
+      "add more detailed accounts",
+      "back it up to another system"
+     ],
+     "answer": 1,
+     "why": "Clean up = arrumar, tirar o que sobra e organizar."
+    },
+    {
+     "q": "\"We'll <strong>merge</strong> the two duplicate accounts into one.\" To merge them means to…",
+     "options": [
+      "combine them into a single account",
+      "delete both and start again",
+      "rename one of them",
+      "move them to the archive"
+     ],
+     "answer": 0,
+     "why": "Merge = mesclar: unir os dois em um só."
+    },
+    {
+     "q": "\"Once a code is empty, we <strong>phase it out</strong> quietly.\" To phase out means to…",
+     "options": [
+      "reactivate it",
+      "report it to the board",
+      "duplicate it as a backup",
+      "remove it gradually"
+     ],
+     "answer": 3,
+     "why": "Phase out = descontinuar aos poucos, de forma gradual."
+    },
+    {
+     "q": "\"A tidy chart <strong>saves the team a lot of hassle</strong> all year.\" This means it…",
+     "options": [
+      "requires extra training",
+      "raises the cost of the audit",
+      "spares them a great deal of trouble",
+      "increases their workload"
+     ],
+     "answer": 2,
+     "why": "Save someone hassle = poupar alguém de trabalho e aborrecimento."
+    }
+   ]
+  }
+ ]
+}

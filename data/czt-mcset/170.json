@@ -10,31 +10,31 @@
     {
      "q": "According to the text, what is the central task when managing FX at scale?",
      "options": [
-      "To maximise profit in the strongest year",
       "To predict the direction of each currency pair",
-      "To hedge every individual trade as it settles",
-      "To understand the net exposure of the enterprise"
+      "To maximise profit in the strongest year",
+      "To understand the net exposure of the enterprise",
+      "To hedge every individual trade as it settles"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"The task is not to hedge each trade but to understand the net exposure of the enterprise.\""
     },
     {
      "q": "Which layer sits at the bottom of a mature FX programme?",
      "options": [
-      "Natural hedges matching inflows and outflows",
       "Speculative currency bets",
+      "A rolling forward hedge programme",
       "Tactical positions for unusual situations",
-      "A rolling forward hedge programme"
+      "Natural hedges matching inflows and outflows"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"At the bottom, natural hedges — matching inflows and outflows in the same currency.\""
     },
     {
      "q": "What does the rolling forward programme do?",
      "options": [
       "Locks in a declining percentage of exposure over coming quarters",
-      "Eliminates the need for natural hedges",
       "Hedges the full exposure in a single contract",
+      "Eliminates the need for natural hedges",
       "Reacts only to political events"
      ],
      "answer": 0,
@@ -43,23 +43,23 @@
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
+      "Protecting the target margin matters more than any single year's profit",
       "A treasurer who forecasts the euro correctly is running the programme well",
       "Longevity is the truest measure of an FX programme's success",
-      "Protecting the target margin matters more than any single year's profit",
       "Natural hedges should be exhausted before other layers are used"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: o texto insiste que a disciplina não é prever moedas — acertar o câmbio não é o sinal de um bom programa."
     },
     {
      "q": "The final sentence, \"That is the only test that matters,\" suggests that the author values…",
      "options": [
-      "the highest annual return above all else",
-      "the size of the tactical positions taken",
       "the number of transactions processed each month",
-      "survival and consistency across cycles over peak performance"
+      "the size of the tactical positions taken",
+      "survival and consistency across cycles over peak performance",
+      "the highest annual return above all else"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: os CFOs premiados são os que \"ainda estão dirigindo a empresa cinco anos depois\" — durabilidade, não o pico."
     }
    ]
@@ -77,43 +77,43 @@
     {
      "q": "How does Harry describe the approach the new programme replaces?",
      "options": [
-      "Focused entirely on tactical positions",
-      "Disciplined but too expensive",
       "Reactive, hedging only when someone remembered to",
-      "Fully automated and rules-based"
+      "Disciplined but too expensive",
+      "Fully automated and rules-based",
+      "Focused entirely on tactical positions"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"reactive at best. We hedge when someone remembers to.\""
     },
     {
      "q": "What benefit does Harry attribute to natural hedges, using last quarter as an example?",
      "options": [
       "They would have doubled the desk's trading profit",
+      "They would have removed the need for tactical positions",
       "They would have avoided roughly forty per cent of the contracts placed",
-      "They would have predicted the euro's movement",
-      "They would have removed the need for tactical positions"
+      "They would have predicted the euro's movement"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"had we done that properly, we would have avoided roughly forty per cent of the contracts we actually placed.\""
     },
     {
      "q": "How are tactical positions treated in Harry's programme?",
      "options": [
       "They are the first layer applied",
-      "They are placed automatically each quarter",
       "They are reserved for unusual situations and signed off individually",
+      "They are placed automatically each quarter",
       "They replace the rolling forward programme"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"tactical positions, reserved for genuinely unusual situations and signed off individually.\""
     },
     {
      "q": "What can be inferred about Harry's view of currency forecasting?",
      "options": [
-      "He believes the desk can forecast sterling with enough data",
-      "He thinks reliable prediction is not realistic and the programme doesn't rely on it",
       "He wants the committee to hire external forecasters",
-      "He sees forecasting as the programme's main strength"
+      "He thinks reliable prediction is not realistic and the programme doesn't rely on it",
+      "He sees forecasting as the programme's main strength",
+      "He believes the desk can forecast sterling with enough data"
      ],
      "answer": 1,
      "why": "Inferência: \"None of us can predict that reliably, and the programme doesn't ask us to.\""
@@ -121,12 +121,12 @@
     {
      "q": "What does Harry imply by \"we'll still be here to run this desk in five years\"?",
      "options": [
-      "The programme guarantees the best return each year",
       "Protecting margin is what lets the business survive over time",
       "The desk will grow its headcount over five years",
+      "The programme guarantees the best return each year",
       "Currency markets will stabilise within five years"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: proteger a margem ao longo do ciclo é o que assegura a continuidade — não o lucro máximo de um ano."
     }
    ]
@@ -139,12 +139,12 @@
     {
      "q": "\"Before hedging anything, we built a full picture through <strong>exposure aggregation</strong>.\" This means…",
      "options": [
-      "cancelling contracts that overlap",
+      "combining all currency exposures into a single enterprise-wide view",
       "forecasting where each currency will trade next",
       "hedging each transaction the moment it settles",
-      "combining all currency exposures into a single enterprise-wide view"
+      "cancelling contracts that overlap"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Exposure aggregation = agregação de exposição: juntar tudo numa visão única da empresa."
     },
     {
@@ -161,9 +161,9 @@
     {
      "q": "<strong>Net exposure</strong> is best described as…",
      "options": [
+      "the fee charged on a forward contract",
       "the total of all incoming transactions",
       "the largest single trade of the month",
-      "the fee charged on a forward contract",
       "what remains once inflows and outflows are offset against each other"
      ],
      "answer": 3,
@@ -173,22 +173,22 @@
      "q": "Choose the correct word: \"A ___ forward programme locks in a declining percentage of exposure quarter after quarter.\"",
      "options": [
       "natural",
-      "rolling",
       "reactive",
+      "rolling",
       "tactical"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Rolling hedge = hedge rolante: renovado e ajustado a cada período."
     },
     {
      "q": "\"The whole point is not to <strong>predict</strong> the currency, but to protect the <strong>target margin</strong>.\" Together these terms contrast…",
      "options": [
-      "buying forwards versus selling them",
-      "forecasting the market versus defending the intended profit margin",
       "short-term versus long-term contracts",
-      "two different reporting currencies"
+      "two different reporting currencies",
+      "buying forwards versus selling them",
+      "forecasting the market versus defending the intended profit margin"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "To predict = prever; target margin = margem-alvo. A lição opõe prever o câmbio a proteger a margem."
     }
    ]
@@ -201,23 +201,23 @@
     {
      "q": "\"The committee still has to <strong>sign off on</strong> each tactical position.\" To sign off on means to…",
      "options": [
-      "formally approve",
       "postpone indefinitely",
+      "formally approve",
       "quietly ignore",
       "publicly announce"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"We'll <strong>roll out</strong> the three-layer programme desk by desk.\" To roll out means to…",
      "options": [
-      "keep confidential",
+      "implement in stages",
       "escalate to the board",
-      "shut down gradually",
-      "implement in stages"
+      "keep confidential",
+      "shut down gradually"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Roll out = implementar de forma progressiva."
     },
     {
@@ -225,8 +225,8 @@
      "options": [
       "approved it at once",
       "resisted or challenged it",
-      "delayed reading it",
-      "rewrote the whole plan"
+      "rewrote the whole plan",
+      "delayed reading it"
      ],
      "answer": 1,
      "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
@@ -234,23 +234,23 @@
     {
      "q": "\"The desk approved the hedge policy but never <strong>followed through</strong>.\" They…",
      "options": [
-      "handed it to another team",
-      "failed to carry it to completion",
       "documented it in detail",
-      "carried it out fully"
+      "carried it out fully",
+      "failed to carry it to completion",
+      "handed it to another team"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Follow through = levar até o fim o que foi combinado — aqui, o que faltou."
     },
     {
      "q": "\"Chasing the best year won't <strong>move the needle</strong> on long-term survival.\" This means it will…",
      "options": [
-      "not make a noticeable difference",
       "take years to measure",
+      "make a decisive difference",
       "raise costs sharply",
-      "make a decisive difference"
+      "not make a noticeable difference"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Move the needle = fazer diferença perceptível; com \"won't\", significa que não muda nada de fato."
     }
    ]

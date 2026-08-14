@@ -1,0 +1,259 @@
+{
+ "num": 1093,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A shipment is on the way. Everybody asks the same question: where is it? Tracking gives the answer. Every shipment has a number, a map and a status.<br><br>Today you learn 5 important words: shipment, tracking, status, location, and ETA. ETA means Estimated Time of Arrival. We start slow. You can do it!<br><br>When a customer calls, you check the tracking. Then you answer with a place. A short answer is good: \"It is in Santos.\" A clear location builds trust. Customers love updates.",
+   "items": [
+    {
+     "q": "What question does everybody ask about a shipment?",
+     "options": [
+      "Who paid for it?",
+      "Where is it?",
+      "Why is it late?",
+      "How big is it?"
+     ],
+     "answer": 1,
+     "why": "\"Everybody asks the same question: where is it?\""
+    },
+    {
+     "q": "What does ETA mean?",
+     "options": [
+      "Early Team Alert",
+      "Extra Tracking App",
+      "Easy To Answer",
+      "Estimated Time of Arrival"
+     ],
+     "answer": 3,
+     "why": "\"ETA means Estimated Time of Arrival.\""
+    },
+    {
+     "q": "How many important words do you learn today?",
+     "options": [
+      "Five",
+      "Three",
+      "Four",
+      "Six"
+     ],
+     "answer": 0,
+     "why": "\"Today you learn 5 important words.\""
+    },
+    {
+     "q": "The text says \"A clear location builds trust.\" This suggests that…",
+     "options": [
+      "customers trust you more when you give a clear place",
+      "you should hide the location",
+      "location is not important",
+      "trust has no link to tracking"
+     ],
+     "answer": 0,
+     "why": "Inferência: uma localização clara faz o cliente confiar mais em você."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "tracking is not useful",
+      "a long, difficult answer is best",
+      "you should not answer the customer",
+      "a short, clear answer is good"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto elogia respostas curtas e claras (\"A short answer is good\")."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ana, do time de logística, atender um cliente. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! This is Ana from logistics. Thank you for your call. You want to know where your shipment is. No problem. I can help you.<br><br>Let me check the tracking now. One moment, please. I have your number here. Okay, I can see it. Your shipment is in Santos. That is the location today.<br><br>The status is \"in transit.\" This means the box is on the way. It is not at your office yet, but it is close.<br><br>The ETA is tomorrow morning. ETA means Estimated Time of Arrival. So your shipment arrives tomorrow, around nine o'clock.<br><br>Is there anything else? No? Great. I will send you an update by email tonight. If you have more questions, please call again. We love to help. Have a good day. Goodbye!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "A customer",
+      "Ana from logistics",
+      "The delivery driver",
+      "The manager"
+     ],
+     "answer": 1,
+     "why": "\"This is Ana from logistics.\""
+    },
+    {
+     "q": "Where is the shipment today?",
+     "options": [
+      "At the port of Rio",
+      "At the office",
+      "In Santos",
+      "In São Paulo"
+     ],
+     "answer": 2,
+     "why": "\"Your shipment is in Santos. That is the location today.\""
+    },
+    {
+     "q": "What is the ETA?",
+     "options": [
+      "Next week",
+      "Tomorrow morning",
+      "In two hours",
+      "Today at night"
+     ],
+     "answer": 1,
+     "why": "\"The ETA is tomorrow morning… around nine o'clock.\""
+    },
+    {
+     "q": "The status is \"in transit.\" This suggests that…",
+     "options": [
+      "the shipment was cancelled",
+      "the shipment is lost",
+      "the shipment already arrived",
+      "the shipment is still on the way"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"in transit\" e \"on the way\" mostram que a remessa ainda está viajando."
+    },
+    {
+     "q": "How would you best describe Ana's tone?",
+     "options": [
+      "Bored and quiet",
+      "Angry with the customer",
+      "Rude and in a hurry",
+      "Friendly and helpful"
+     ],
+     "answer": 3,
+     "why": "Inferência: ela agradece, oferece ajuda e diz \"We love to help\" — tom simpático."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>shipment</strong> arrives on Monday.\" A shipment is…",
+     "options": [
+      "a goods delivery on the way",
+      "a phone call",
+      "an office",
+      "a price"
+     ],
+     "answer": 0,
+     "why": "Shipment = remessa: os produtos que estão sendo enviados."
+    },
+    {
+     "q": "\"I use <strong>tracking</strong> to find the box.\" Tracking is…",
+     "options": [
+      "a paper form",
+      "a way to follow where something is",
+      "a type of truck",
+      "a customer name"
+     ],
+     "answer": 1,
+     "why": "Tracking = rastreamento: seguir onde algo está."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ of the shipment is 'in transit'.\"",
+     "options": [
+      "email",
+      "price",
+      "status",
+      "office"
+     ],
+     "answer": 2,
+     "why": "Status = situação atual da remessa (ex.: \"in transit\")."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ today is Santos, near the port.\"",
+     "options": [
+      "manager",
+      "answer",
+      "location",
+      "number"
+     ],
+     "answer": 2,
+     "why": "Location = localização, o lugar onde a remessa está."
+    },
+    {
+     "q": "\"The <strong>ETA</strong> is tomorrow at nine.\" ETA tells you…",
+     "options": [
+      "who sent the shipment",
+      "when the shipment arrives",
+      "the color of the box",
+      "how much it costs"
+     ],
+     "answer": 1,
+     "why": "ETA = Estimated Time of Arrival: quando a remessa deve chegar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The box is <strong>on the way</strong>.\" This means it is…",
+     "options": [
+      "coming now",
+      "lost",
+      "already here",
+      "cancelled"
+     ],
+     "answer": 0,
+     "why": "On the way = a caminho, ainda viajando."
+    },
+    {
+     "q": "\"I will <strong>check on</strong> the shipment.\" To check on something is to…",
+     "options": [
+      "look and see how it is",
+      "send it back",
+      "pay for it",
+      "throw it away"
+     ],
+     "answer": 0,
+     "why": "Check on = verificar, ver como algo está."
+    },
+    {
+     "q": "\"Please <strong>hold on</strong> a moment.\" Hold on means…",
+     "options": [
+      "call again",
+      "speak louder",
+      "hang up the phone",
+      "wait a little"
+     ],
+     "answer": 3,
+     "why": "Hold on = espere um momento."
+    },
+    {
+     "q": "\"I will <strong>get back to</strong> you tonight.\" This means I will…",
+     "options": [
+      "forget the call",
+      "answer you later",
+      "send the box back",
+      "visit your office"
+     ],
+     "answer": 1,
+     "why": "Get back to you = retornar o contato mais tarde."
+    },
+    {
+     "q": "\"The shipment will <strong>show up</strong> tomorrow.\" To show up means to…",
+     "options": [
+      "get lost",
+      "disappear",
+      "stop",
+      "arrive"
+     ],
+     "answer": 3,
+     "why": "Show up = aparecer, chegar."
+    }
+   ]
+  }
+ ]
+}

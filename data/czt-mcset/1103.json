@@ -1,0 +1,259 @@
+{
+ "num": 1103,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. The fastest way to describe a warehouse is with <strong>there is</strong> and <strong>there are</strong>.<br><br>You say \"There are three trucks. There is one pallet missing.\" That is one sentence, and everyone knows the situation.<br><br>Use \"is\" for one thing and \"are\" for many things. Clear numbers help the team. When the numbers are clear, nobody makes a wrong decision.",
+   "items": [
+    {
+     "q": "What is the fastest way to describe a warehouse?",
+     "options": [
+      "A phone call",
+      "There is / there are",
+      "A long email",
+      "A photo"
+     ],
+     "answer": 1,
+     "why": "\"The fastest way to describe a warehouse is with there is and there are.\""
+    },
+    {
+     "q": "When do you use \"is\"?",
+     "options": [
+      "For questions only",
+      "For many things",
+      "For one thing",
+      "For trucks only"
+     ],
+     "answer": 2,
+     "why": "\"Use is for one thing and are for many things.\""
+    },
+    {
+     "q": "\"There are three trucks.\" How many trucks?",
+     "options": [
+      "Three",
+      "Four",
+      "Two",
+      "One"
+     ],
+     "answer": 0,
+     "why": "\"There are three trucks\" = três caminhões."
+    },
+    {
+     "q": "The text suggests that clear numbers help the team because…",
+     "options": [
+      "they stop wrong decisions",
+      "they look nice on paper",
+      "they are easy to say",
+      "they save money on trucks"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"When the numbers are clear, nobody makes a wrong decision.\""
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "short, clear sentences are good at work",
+      "one big sentence is confusing",
+      "numbers are not important",
+      "long reports are always better"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto elogia a frase curta e clara com there is / there are."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James no armazém. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone. It is eight o'clock, and I am walking through the warehouse for the daily report. Let me count the trucks and the drivers.<br><br>There are two trucks at the gate. One truck is full, and one truck is empty. There are three drivers here today. Two drivers are in the queue, and one driver is having a coffee. That is fine. He can start soon.<br><br>Now, there is a small problem. There is one pallet missing from truck number one. There are five bags on the floor, not on the pallet. I will put the bags back now. It is quick.<br><br>There is also a short delay on route two. The traffic is bad this morning, so the load is late. But it is not a big problem. The truck is only ten minutes late.<br><br>So, to be clear: there are two trucks, there are three drivers, there is one pallet missing, and there is one small delay. The fleet is ready. We can start. Have a good day, and drive safe.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many trucks are at the gate?",
+     "options": [
+      "Three",
+      "One",
+      "Five",
+      "Two"
+     ],
+     "answer": 3,
+     "why": "\"There are two trucks at the gate.\""
+    },
+    {
+     "q": "What is the problem with truck number one?",
+     "options": [
+      "One pallet is missing",
+      "It has no driver",
+      "It is broken",
+      "It is empty"
+     ],
+     "answer": 0,
+     "why": "\"There is one pallet missing from truck number one.\""
+    },
+    {
+     "q": "Why is the load on route two late?",
+     "options": [
+      "The truck is broken",
+      "The driver is sick",
+      "The traffic is bad",
+      "There is no fuel"
+     ],
+     "answer": 2,
+     "why": "\"The traffic is bad this morning, so the load is late.\""
+    },
+    {
+     "q": "James says the delay is \"not a big problem.\" This suggests that…",
+     "options": [
+      "he is very worried",
+      "the truck will not arrive",
+      "the small delay is okay to accept",
+      "the work must stop today"
+     ],
+     "answer": 2,
+     "why": "Inferência: dez minutos de atraso é pequeno, então James segue tranquilo."
+    },
+    {
+     "q": "How does James feel about starting the day?",
+     "options": [
+      "Afraid",
+      "Calm and ready",
+      "Confused",
+      "Angry"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"The fleet is ready. We can start.\" — tom calmo e organizado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The truck is waiting at the <strong>gate</strong>.\" A gate is…",
+     "options": [
+      "a driver",
+      "a portão",
+      "a office",
+      "a box"
+     ],
+     "answer": 1,
+     "why": "Gate = portão, a entrada do armazém."
+    },
+    {
+     "q": "\"There are ten boxes on one <strong>pallet</strong>.\" A pallet is…",
+     "options": [
+      "a palete (a base for boxes)",
+      "a door",
+      "a truck",
+      "a road"
+     ],
+     "answer": 0,
+     "why": "Pallet = palete, a base onde se empilham as caixas."
+    },
+    {
+     "q": "Choose the correct word: \"The truck is full. It has a heavy ___ today.\"",
+     "options": [
+      "load",
+      "gate",
+      "queue",
+      "driver"
+     ],
+     "answer": 0,
+     "why": "Load = carga, o que o caminhão transporta."
+    },
+    {
+     "q": "\"A car and a truck are both a <strong>vehicle</strong>.\" A vehicle is…",
+     "options": [
+      "a driver",
+      "a road",
+      "a veículo",
+      "a gate"
+     ],
+     "answer": 2,
+     "why": "Vehicle = veículo, como carro ou caminhão."
+    },
+    {
+     "q": "Choose the correct word: \"We have twenty trucks. It is a big ___.\"",
+     "options": [
+      "load",
+      "fleet",
+      "pallet",
+      "gate"
+     ],
+     "answer": 1,
+     "why": "Fleet = frota, o conjunto de todos os veículos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no armazém. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The boss has to <strong>sign off on</strong> the report.\" To sign off on means to…",
+     "options": [
+      "print it",
+      "lose it",
+      "read it fast",
+      "approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new trucks next week.\" To roll out means to…",
+     "options": [
+      "start using them",
+      "clean them",
+      "count them",
+      "sell them"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em uso, lançar."
+    },
+    {
+     "q": "\"The driver is late. We need to <strong>speed up</strong>.\" To speed up means to…",
+     "options": [
+      "stop",
+      "go slower",
+      "go faster",
+      "wait"
+     ],
+     "answer": 2,
+     "why": "Speed up = acelerar, ir mais rápido."
+    },
+    {
+     "q": "\"Please <strong>check on</strong> the drivers in the queue.\" To check on means to…",
+     "options": [
+      "call the boss",
+      "see how they are",
+      "pay them",
+      "send them home"
+     ],
+     "answer": 1,
+     "why": "Check on = verificar como algo ou alguém está."
+    },
+    {
+     "q": "\"The trucks are ready. We can <strong>set off</strong> now.\" To set off means to…",
+     "options": [
+      "stop the work",
+      "load the boxes",
+      "start the trip",
+      "close the gate"
+     ],
+     "answer": 2,
+     "why": "Set off = partir, começar a viagem."
+    }
+   ]
+  }
+ ]
+}

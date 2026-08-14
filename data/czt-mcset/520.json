@@ -1,0 +1,259 @@
+{
+ "num": 520,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the Rise level, communicating an IT project to the business is mostly about translation. Engineers speak in systems, dependencies and architecture. Business stakeholders speak in outcomes, dates and money. A good project lead translates between the two, patiently, without making either side feel spoken down to.<br><br>The working format is simple. A one-page status, updated every two weeks. At the top: three numbers — is the budget on track, is the date on track, is the scope still the same. Below that: what we delivered this period, what we will deliver next period, and what could go wrong. Nothing more.<br><br>Therefore, stakeholders do not need to understand the details. They need to know three things: are we still on the plan, what is the next milestone, and what are the risks. When every update answers those three questions clearly, trust builds — and the engineering team is left alone to do the actual work.",
+   "items": [
+    {
+     "q": "According to the text, what is communicating an IT project to the business mostly about?",
+     "options": [
+      "Writing detailed technical documentation",
+      "Reducing the project budget",
+      "Translation between two ways of speaking",
+      "Training stakeholders to code"
+     ],
+     "answer": 2,
+     "why": "\"communicating an IT project to the business is mostly about translation.\""
+    },
+    {
+     "q": "What three numbers sit at the top of the one-page status?",
+     "options": [
+      "Headcount, revenue and profit",
+      "Budget, date and scope",
+      "Milestones, risks and owners",
+      "Bugs, tickets and releases"
+     ],
+     "answer": 1,
+     "why": "\"three numbers — is the budget on track, is the date on track, is the scope still the same.\""
+    },
+    {
+     "q": "The phrase \"without making either side feel spoken down to\" suggests that the author believes…",
+     "options": [
+      "engineers should avoid talking to the business",
+      "the project lead should decide everything alone",
+      "stakeholders are usually not intelligent",
+      "clear communication should still respect both audiences"
+     ],
+     "answer": 3,
+     "why": "Inferência: traduzir bem é simplificar sem tratar ninguém como inferior — respeitar os dois lados."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Stakeholders need the full technical detail to trust the team.",
+      "The engineering team works best when left alone.",
+      "Updates should answer plan, milestone and risk.",
+      "A consistent, simple format builds trust over time."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que os stakeholders NÃO precisam entender os detalhes, só três coisas."
+    },
+    {
+     "q": "What does the ending — \"the engineering team is left alone to do the actual work\" — imply about clear reporting?",
+     "options": [
+      "Engineers should write the reports themselves",
+      "The business should attend every stand-up",
+      "Good updates reduce interruptions to the engineers",
+      "Reporting replaces the engineering work"
+     ],
+     "answer": 2,
+     "why": "Inferência: quando o report responde às três perguntas, a confiança sobe e ninguém precisa cobrar a equipe o tempo todo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentando o novo formato de status ao patrocinador executivo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thanks for making the time. I know you've been getting a twenty-page status every week, and honestly, I doubt anyone was reading all of it. So from now on it's one page, every two weeks. That's it.<br><br>Look at the top row. Three numbers — budget, date, scope. Green means on track, amber means watch it, red means we need a decision from you. Right now the budget is green, the date is amber because a vendor slipped, and the scope is green.<br><br>Underneath, I keep it to three things: what we shipped this fortnight, what's coming next, and what could go wrong. Today the main risk is that same vendor dependency. If their API isn't ready by the tenth, the next milestone moves by a week. I'll flag it the moment that changes.<br><br>What I'm not going to do is bury you in architecture diagrams. You don't need them. You need to know we're still on the plan, and where I need you to unblock something. Everything else, let my engineers get on with quietly.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Sophie replacing, and with what?",
+     "options": [
+      "A monthly report with a daily email",
+      "A dashboard with a spreadsheet",
+      "A one-page update with a weekly meeting",
+      "A twenty-page weekly status with a one-page biweekly update"
+     ],
+     "answer": 3,
+     "why": "\"a twenty-page status every week… from now on it's one page, every two weeks.\""
+    },
+    {
+     "q": "What do the colours on the top row mean?",
+     "options": [
+      "Green = done, amber = late, red = cancelled",
+      "Green = start, amber = pause, red = stop",
+      "Green = on track, amber = watch it, red = a decision is needed",
+      "Green = cheap, amber = average, red = expensive"
+     ],
+     "answer": 2,
+     "why": "\"Green means on track, amber means watch it, red means we need a decision from you.\""
+    },
+    {
+     "q": "Why is the date currently amber?",
+     "options": [
+      "The budget was cut",
+      "An engineer left the team",
+      "The scope changed",
+      "A vendor slipped"
+     ],
+     "answer": 3,
+     "why": "\"the date is amber because a vendor slipped.\""
+    },
+    {
+     "q": "What can we infer about why Sophie mentions the vendor's API and the tenth?",
+     "options": [
+      "She is warning early so the sponsor is not surprised if the milestone moves",
+      "She thinks the vendor is dishonest",
+      "She wants the sponsor to build the API",
+      "She wants to cancel the project"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela sinaliza o risco antecipadamente (\"I'll flag it the moment that changes\") para não pegar ninguém de surpresa."
+    },
+    {
+     "q": "What does Sophie's approach to the sponsor suggest about how she sees his role?",
+     "options": [
+      "He should approve each line of code",
+      "He is there to make decisions and unblock things, not to read diagrams",
+      "He should review every technical detail",
+      "He should attend the engineers' daily meetings"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"You need to know we're still on the plan, and where I need you to unblock something\" — o papel dele é decidir e destravar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The project lead's main job is <strong>translation</strong> between engineers and the business.\" Here, translation means…",
+     "options": [
+      "writing the project budget",
+      "hiring bilingual staff",
+      "converting text from English to Portuguese",
+      "turning technical language into terms the business understands"
+     ],
+     "answer": 3,
+     "why": "Translation = tradução: passar a linguagem técnica para termos que o negócio entende."
+    },
+    {
+     "q": "Choose the correct word: \"The next milestone slipped because of a vendor ___ we couldn't control.\"",
+     "options": [
+      "outcome",
+      "dependency",
+      "architecture",
+      "scope"
+     ],
+     "answer": 1,
+     "why": "Dependency = dependência: algo de que o projeto depende e que atrasou o marco."
+    },
+    {
+     "q": "\"We froze the <strong>scope</strong> so nobody could keep adding features.\" Scope means…",
+     "options": [
+      "the deadline of the project",
+      "the total cost of the project",
+      "the number of engineers assigned",
+      "the set of work the project will deliver"
+     ],
+     "answer": 3,
+     "why": "Scope = escopo: o conjunto de entregas que o projeto vai fazer."
+    },
+    {
+     "q": "<strong>Milestone</strong> is best described as…",
+     "options": [
+      "a daily task list",
+      "a significant checkpoint in the project's timeline",
+      "a member of the engineering team",
+      "a type of software licence"
+     ],
+     "answer": 1,
+     "why": "Milestone = marco: um ponto de checagem importante no cronograma."
+    },
+    {
+     "q": "Choose the correct word: \"The board cares about the ___, not the code — did the project save money and time?\"",
+     "options": [
+      "risk",
+      "architecture",
+      "outcome",
+      "dependency"
+     ],
+     "answer": 2,
+     "why": "Outcome = resultado: o que o negócio valoriza, e não os detalhes técnicos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns em reuniões de projeto. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The sponsor still has to <strong>sign off on</strong> the new reporting format.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "comment informally",
+      "postpone indefinitely",
+      "reject outright"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the one-page update across all teams next quarter.\" To roll out means to…",
+     "options": [
+      "test in secret",
+      "cancel gradually",
+      "implement in stages",
+      "explain to the board"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two managers <strong>pushed back on</strong> the biweekly cadence.\" They…",
+     "options": [
+      "approved it at once",
+      "forgot to read it",
+      "resisted or disagreed with it",
+      "rewrote it for her"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"We agreed to flag risks early, but the team never <strong>followed through</strong>.\" They…",
+     "options": [
+      "documented it badly",
+      "delegated it elsewhere",
+      "failed to carry it out to completion",
+      "changed the plan halfway"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Trimming the report won't <strong>move the needle</strong> unless the sponsor actually reads it.\" This means it will…",
+     "options": [
+      "cost more than expected",
+      "take too long to measure",
+      "create resistance",
+      "not make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 510,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "The AI use cases that actually work in practice tend to share three things. First, there is a lot of available data for the system to learn from. Second, there is a clear definition of success — 'right or wrong' rather than 'good or bad'. Third, there is a human in the loop at the start, checking and correcting the output, until the system slowly earns its own trust.<br><br>The classic examples all look modest. Flagging unusual transactions for a person to review. Translating routine documents. Suggesting draft responses that someone then polishes. Routing incoming customer requests to the right team. Each of these gives the AI a narrow job, a clear signal of success, and an easy fallback to a human whenever confidence is low.<br><br>The team we worked with last year said the secret of their AI success was doing 'boring, specific and small'. They meant it as a compliment. At this stage, 'boring, specific and small' is almost always the correct strategy.",
+   "items": [
+    {
+     "q": "According to the text, what kind of success definition do the working use cases rely on?",
+     "options": [
+      "'Cheap or expensive'",
+      "'Fast or slow'",
+      "'Right or wrong'",
+      "'Good or bad'"
+     ],
+     "answer": 2,
+     "why": "\"a clear definition of success — 'right or wrong' rather than 'good or bad'.\""
+    },
+    {
+     "q": "What is the role of the human in the loop at the start?",
+     "options": [
+      "To replace the AI entirely",
+      "To check and correct the output until the system earns trust",
+      "To design the algorithm",
+      "To collect the training data"
+     ],
+     "answer": 1,
+     "why": "\"a human in the loop at the start, checking and correcting the output, until the system slowly earns its own trust.\""
+    },
+    {
+     "q": "Which feature do all four classic examples share?",
+     "options": [
+      "A fully automated decision with no oversight",
+      "A long list of possible outcomes",
+      "A narrow job with an easy fallback to a human",
+      "A very large budget"
+     ],
+     "answer": 2,
+     "why": "\"Each of these gives the AI a narrow job… and an easy fallback to a human whenever confidence is low.\""
+    },
+    {
+     "q": "Why did the team describe 'boring, specific and small' as a COMPLIMENT?",
+     "options": [
+      "Because those qualities are what made the AI work in practice",
+      "Because exciting projects were forbidden",
+      "Because they wanted to sound modest to the board",
+      "Because small projects are cheaper to cancel"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto trata essas qualidades como a fórmula do sucesso — daí ser um elogio, não uma crítica."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "The most ambitious, wide-ranging AI project is usually the safest first bet.",
+      "A clear signal of success helps an AI use case succeed.",
+      "Modest-looking use cases can deliver real value.",
+      "A human fallback is valuable when confidence is low."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto defende 'boring, specific and small' — o oposto de apostar no projeto mais amplo e ambicioso primeiro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James ajudando a equipe a escolher o primeiro projeto de IA. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, so we have twenty ideas on this list, and honestly, most of them are far too ambitious for a first project. I want us to apply one filter, and one filter only: boring, specific and small. If an idea does not pass that test, it goes to the bottom of the pile for now.<br><br>Take idea number four — 'an AI that manages the whole trading strategy'. Exciting, yes, but there is no clear right-or-wrong signal, and no easy way for a person to step in when it is unsure. That is exactly the kind of thing that looks impressive in a slide and quietly fails in production.<br><br>Now look at idea eleven — flagging unusual transactions for a human to review. It is narrow, we have five years of data for it, and when the model is not confident, a person simply takes over. It will not win any awards, but it will actually work.<br><br>So my recommendation is that we start there. Prove the pattern on something small, earn some trust, and then we can be braver next time.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What single filter does James want the team to apply to the list of ideas?",
+     "options": [
+      "Boring, specific and small",
+      "Newest, biggest and boldest",
+      "Cheapest, fastest and easiest",
+      "Popular, visible and strategic"
+     ],
+     "answer": 0,
+     "why": "\"I want us to apply one filter, and one filter only: boring, specific and small.\""
+    },
+    {
+     "q": "Why does James reject idea number four?",
+     "options": [
+      "The data for it does not exist yet",
+      "It is too expensive to build",
+      "It has no clear right-or-wrong signal and no easy human fallback",
+      "The board has already rejected it"
+     ],
+     "answer": 2,
+     "why": "\"there is no clear right-or-wrong signal, and no easy way for a person to step in when it is unsure.\""
+    },
+    {
+     "q": "What makes idea eleven a good first project, according to James?",
+     "options": [
+      "It requires no human involvement at all",
+      "It is the most profitable idea on the list",
+      "It will win the team an award",
+      "It is narrow, has five years of data, and lets a person take over when the model is unsure"
+     ],
+     "answer": 3,
+     "why": "\"It is narrow, we have five years of data for it, and when the model is not confident, a person simply takes over.\""
+    },
+    {
+     "q": "What does James imply about ideas that 'look impressive in a slide'?",
+     "options": [
+      "They are easy to demonstrate to clients",
+      "They are usually the ones that get funded",
+      "They are the safest place to start",
+      "They tend to fail quietly once they reach production"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele diz que esse tipo de coisa 'looks impressive in a slide and quietly fails in production' — impressiona, mas falha."
+    },
+    {
+     "q": "What is James's overall strategy for the team's AI adoption?",
+     "options": [
+      "Start big to make an impact, then scale down if it fails",
+      "Prove the pattern on something small, earn trust, then be braver",
+      "Avoid AI until the data is perfect",
+      "Let each department choose its own project independently"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Prove the pattern on something small, earn some trust, and then we can be braver next time.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Fraud detection is a strong <strong>use case</strong> for machine learning.\" A use case is…",
+     "options": [
+      "a training dataset",
+      "a type of software licence",
+      "a legal dispute over technology",
+      "a specific situation where a tool delivers value"
+     ],
+     "answer": 3,
+     "why": "Use case = caso de uso: uma situação concreta em que a ferramenta gera valor."
+    },
+    {
+     "q": "Choose the correct word: \"The model performed poorly because there was not enough ___ to learn from.\"",
+     "options": [
+      "definition",
+      "fallback",
+      "available data",
+      "draft response"
+     ],
+     "answer": 2,
+     "why": "Available data = dados disponíveis, aquilo de que o modelo aprende."
+    },
+    {
+     "q": "\"The system will <strong>flag</strong> any transaction that looks unusual.\" To flag something means to…",
+     "options": [
+      "delete it automatically",
+      "mark it for attention or review",
+      "approve it instantly",
+      "translate it into another language"
+     ],
+     "answer": 1,
+     "why": "To flag = sinalizar, marcar algo para que alguém preste atenção ou revise."
+    },
+    {
+     "q": "Choose the correct word: \"When the model is unsure, it hands the case to a person — that human ___ keeps errors under control.\"",
+     "options": [
+      "draft response",
+      "transaction",
+      "fallback",
+      "use case"
+     ],
+     "answer": 2,
+     "why": "Fallback = alternativa/plano B: recorrer ao humano quando a confiança é baixa."
+    },
+    {
+     "q": "\"The chatbot suggests a <strong>draft response</strong> that an agent then edits.\" A draft response is…",
+     "options": [
+      "an internal error report",
+      "a preliminary version meant to be polished",
+      "a rejected message",
+      "a final answer sent automatically"
+     ],
+     "answer": 1,
+     "why": "Draft response = resposta preliminar, uma primeira versão que a pessoa depois ajusta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre projetos de IA. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's not <strong>bite off more than we can chew</strong> with the first project.\" This means we should not…",
+     "options": [
+      "spend the whole budget at once",
+      "take on more than we can realistically handle",
+      "delay the launch",
+      "argue with the vendor"
+     ],
+     "answer": 1,
+     "why": "Bite off more than you can chew = assumir mais do que se consegue dar conta."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the transaction-flagging tool one desk at a time.\" To roll out means to…",
+     "options": [
+      "test it once and stop",
+      "keep it a secret",
+      "cancel it gradually",
+      "implement it in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva, aos poucos."
+    },
+    {
+     "q": "\"Before we scale it, the compliance team has to <strong>sign off on</strong> the model.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "criticise informally",
+      "rewrite from scratch",
+      "postpone indefinitely"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"A tiny pilot won't <strong>move the needle</strong> on revenue, but it proves the pattern.\" This means it will…",
+     "options": [
+      "not make a noticeable difference",
+      "cost far too much",
+      "confuse the customers",
+      "take years to finish"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível — aqui, no faturamento."
+    },
+    {
+     "q": "\"The team approved the pilot but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "failed to carry it to completion",
+      "documented it badly",
+      "handed it to another vendor",
+      "changed the budget halfway"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim aquilo que foi combinado."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 6,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "An interview is a conversation between the recruiter and the candidate. The recruiter asks questions to know the person.<br><br>The candidate talks about their experience, their skills, and why they want the job. You do not need difficult words. You just need to be honest and friendly.<br><br>Good interviews are calm and clear. Simple English is enough.",
+   "items": [
+    {
+     "q": "Who asks the questions in an interview?",
+     "options": [
+      "The recruiter",
+      "The candidate",
+      "The company client",
+      "The manager's friend"
+     ],
+     "answer": 0,
+     "why": "\"The recruiter asks questions to know the person.\""
+    },
+    {
+     "q": "What does the candidate talk about?",
+     "options": [
+      "Only their salary",
+      "The recruiter's family",
+      "Their experience, skills and why they want the job",
+      "The weather in London"
+     ],
+     "answer": 2,
+     "why": "\"The candidate talks about their experience, their skills, and why they want the job.\""
+    },
+    {
+     "q": "According to the text, what kind of English do you need?",
+     "options": [
+      "Only technical words",
+      "No English at all",
+      "Simple and honest English",
+      "Very difficult words"
+     ],
+     "answer": 2,
+     "why": "\"You do not need difficult words. You just need to be honest and friendly.\""
+    },
+    {
+     "q": "The text suggests that a good candidate is…",
+     "options": [
+      "loud and funny",
+      "quiet and cold",
+      "calm and honest",
+      "nervous and fast"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz que boas entrevistas são calmas e claras, e que você precisa ser honesto e amigável."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "Honesty helps in an interview.",
+      "Simple English is enough.",
+      "You must use difficult words to sound good.",
+      "The recruiter wants to know the person."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz claramente que você não precisa de palavras difíceis."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver na entrevista com Ana. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi Ana, thank you for coming today. I am Oliver, and I work in the HR team here at Czarnikow. Please relax. This is just a simple conversation.<br><br>First, can you tell me about your current role? What do you do every day? And where did you work before this job? I like to know a little about your experience.<br><br>Now, an important question. Why do you want to join Czarnikow? What do you like about our company? Please be honest with me.<br><br>I also want to know about your skills. What are your main strengths? And how do you handle pressure when the work is very busy?<br><br>One more thing. When can you start? We need someone soon, so this is important for us. Take your time, Ana. There are no wrong answers today. Just speak clearly and tell me the truth.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does Oliver work?",
+     "options": [
+      "In the sales team",
+      "In the HR team at Czarnikow",
+      "In the finance team",
+      "In another company"
+     ],
+     "answer": 1,
+     "why": "\"I am Oliver, and I work in the HR team here at Czarnikow.\""
+    },
+    {
+     "q": "What does Oliver ask about Ana's past?",
+     "options": [
+      "Where she worked before this job",
+      "Where she lives now",
+      "Where she went to school",
+      "Where she wants to travel"
+     ],
+     "answer": 0,
+     "why": "\"where did you work before this job?\""
+    },
+    {
+     "q": "Which question does Oliver ask about difficult days at work?",
+     "options": [
+      "How do you handle pressure when the work is very busy?",
+      "How long is your lunch break?",
+      "How much do you want to earn?",
+      "How many people do you know here?"
+     ],
+     "answer": 0,
+     "why": "\"how do you handle pressure when the work is very busy?\""
+    },
+    {
+     "q": "Why does Oliver ask when Ana can start?",
+     "options": [
+      "Because the company needs someone soon",
+      "Because he is in a hurry to leave",
+      "Because the interview is finished",
+      "Because Ana asked him first"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"We need someone soon, so this is important for us.\""
+    },
+    {
+     "q": "How does Oliver want Ana to feel in the interview?",
+     "options": [
+      "Nervous and afraid",
+      "Angry and fast",
+      "Relaxed and honest",
+      "Quiet and cold"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele diz \"Please relax\", \"be honest\" e \"there are no wrong answers today\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>recruiter</strong> called Ana on Monday.\" A recruiter is a person who…",
+     "options": [
+      "cleans the office",
+      "sells products to clients",
+      "writes the company reports",
+      "hires new people for a company"
+     ],
+     "answer": 3,
+     "why": "Recruiter = recrutador(a): a pessoa que contrata gente para a empresa."
+    },
+    {
+     "q": "Choose the correct word: \"Ana has five years of ___ in trade.\"",
+     "options": [
+      "question",
+      "recruiter",
+      "answer",
+      "experience"
+     ],
+     "answer": 3,
+     "why": "Experience = experiência: os anos de trabalho na área."
+    },
+    {
+     "q": "\"English is one of Ana's best <strong>skills</strong>.\" A skill is…",
+     "options": [
+      "a thing you can do well",
+      "a type of salary",
+      "a job interview",
+      "a company rule"
+     ],
+     "answer": 0,
+     "why": "Skill = habilidade: algo que você faz bem."
+    },
+    {
+     "q": "Choose the correct word: \"Ana wants to ___ the marketing job at Czarnikow.\"",
+     "options": [
+      "apply for",
+      "report to",
+      "answer to",
+      "look at"
+     ],
+     "answer": 0,
+     "why": "To apply for = candidatar-se a uma vaga."
+    },
+    {
+     "q": "\"A good candidate is <strong>honest</strong>.\" Honest means…",
+     "options": [
+      "very quiet",
+      "very fast",
+      "telling the truth",
+      "very rich"
+     ],
+     "answer": 2,
+     "why": "Honest = honesto: quem diz a verdade."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem numa entrevista de emprego. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>tell me about yourself</strong>.\" The recruiter wants you to…",
+     "options": [
+      "give a short talk about who you are",
+      "ask a question",
+      "leave the room",
+      "read your CV out loud"
+     ],
+     "answer": 0,
+     "why": "Tell me about yourself = fale um pouco sobre você (de forma curta e clara)."
+    },
+    {
+     "q": "\"Who do you <strong>report to</strong> in your current job?\" This asks…",
+     "options": [
+      "who is your teacher",
+      "who is your boss",
+      "who is your friend",
+      "who is your client"
+     ],
+     "answer": 1,
+     "why": "Report to = a quem você se reporta, ou seja, seu chefe."
+    },
+    {
+     "q": "\"What are your main <strong>strengths</strong>?\" Your strengths are…",
+     "options": [
+      "your good and strong points",
+      "your weak points",
+      "your work hours",
+      "your old jobs"
+     ],
+     "answer": 0,
+     "why": "Strengths = pontos fortes: as coisas boas que você faz bem."
+    },
+    {
+     "q": "\"Ana works hard, but she wants to <strong>move on</strong>.\" To move on means to…",
+     "options": [
+      "take a long holiday",
+      "go to a new job or step",
+      "call the recruiter",
+      "stay in the same job"
+     ],
+     "answer": 1,
+     "why": "Move on = seguir em frente, ir para um novo passo ou emprego."
+    },
+    {
+     "q": "\"Can you <strong>fill me in</strong> on your last job?\" This means…",
+     "options": [
+      "ask me a question",
+      "forget about it",
+      "give me the details",
+      "write it on paper"
+     ],
+     "answer": 2,
+     "why": "Fill me in = me conte os detalhes, me atualize."
+    }
+   ]
+  }
+ ]
+}

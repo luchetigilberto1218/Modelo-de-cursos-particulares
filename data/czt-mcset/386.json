@@ -1,0 +1,259 @@
+{
+ "num": 386,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Recording a transaction correctly is a small craft. The simple ones are easy: cash in, cash out, a clear category. The interesting ones are less obvious. A refund, a discount given after the invoice, a customer who partly pays and partly returns the product, a supplier who invoices for two things on one line — each needs a thoughtful entry.<br><br>The rule is the same every time: the entry must reflect what actually happened. If the transaction is unusual, the entry will be unusual too. Trying to force a messy event into a neat standard code is usually how small errors start.<br><br>A good bookkeeper never records what should have happened. They record what did happen — and leave notes when reality did not match the plan.",
+   "items": [
+    {
+     "q": "According to the text, what makes some transactions harder to record?",
+     "options": [
+      "They must be approved by a manager first",
+      "They are always recorded in a foreign currency",
+      "They are unusual, like refunds or partial returns",
+      "They involve very large amounts of cash"
+     ],
+     "answer": 2,
+     "why": "\"The interesting ones are less obvious. A refund, a discount… a customer who partly pays and partly returns…\" — o difícil é o incomum."
+    },
+    {
+     "q": "What is the single rule the text repeats?",
+     "options": [
+      "Always use the standard code",
+      "Record transactions at the end of the day",
+      "The entry must reflect what actually happened",
+      "Keep every invoice on a separate line"
+     ],
+     "answer": 2,
+     "why": "\"the entry must reflect what actually happened.\""
+    },
+    {
+     "q": "According to the text, how do small errors usually start?",
+     "options": [
+      "By recording cash out before cash in",
+      "By forcing a messy event into a neat standard code",
+      "By writing too many notes on each entry",
+      "By waiting too long to record a transaction"
+     ],
+     "answer": 1,
+     "why": "\"Trying to force a messy event into a neat standard code is usually how small errors start.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Notes are useful when reality did not match the plan",
+      "Refunds and discounts need careful thought",
+      "An unusual transaction deserves an unusual entry",
+      "A tidy code is worth more than an accurate record"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto valoriza a fidelidade ao que aconteceu acima da arrumação — forçar um código limpo é onde os erros começam."
+    },
+    {
+     "q": "\"They record what did happen — and leave notes when reality did not match the plan\" suggests that…",
+     "options": [
+      "plans are usually more accurate than reality",
+      "bookkeepers should ignore the original plan",
+      "honesty about messy reality matters more than a clean-looking entry",
+      "notes should replace the entries themselves"
+     ],
+     "answer": 2,
+     "why": "Inferência: registrar o que de fato ocorreu, com anotações, mostra que a honestidade sobre a bagunça vale mais que a aparência arrumada."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver orientando o novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, let's go through these three before you touch the system. They look small, but they are the ones people get wrong.<br><br>The first is a partial refund. The customer paid four hundred, then returned one item worth ninety. Don't reverse the whole sale and re-enter it — that hides what happened. Record the original sale as it was, and then post the ninety as a separate refund line. Anyone reading it later should see both events.<br><br>The second one is a double invoice. The supplier put two different things on one line — a service and some parts. Split it. Two lines, two categories. If you leave it as one, the numbers will still add up, but the report will not reflect where the money actually went.<br><br>The third is a late discount. We agreed five percent after the invoice was already issued. Do not go back and quietly edit the original invoice. Add the discount as its own entry and leave a short note explaining it. When someone asks in six months why the figure changed, the note answers for you. Remember — we record what did happen, not what should have happened.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How does Oliver say the partial refund should be recorded?",
+     "options": [
+      "Reverse the whole sale and enter it again",
+      "Keep the original sale and post the ninety as a separate refund line",
+      "Wait until the customer returns everything",
+      "Delete the returned item from the invoice"
+     ],
+     "answer": 1,
+     "why": "\"Record the original sale as it was, and then post the ninety as a separate refund line.\""
+    },
+    {
+     "q": "What does Oliver want done with the double invoice?",
+     "options": [
+      "Reject it and ask the supplier to reissue",
+      "Leave it as one line to save time",
+      "Record only the larger of the two items",
+      "Split it into two lines with two categories"
+     ],
+     "answer": 3,
+     "why": "\"Split it. Two lines, two categories.\""
+    },
+    {
+     "q": "Why does Oliver refuse to edit the original invoice for the late discount?",
+     "options": [
+      "Because editing invoices is against the law",
+      "Because the discount was cancelled",
+      "Because the customer had not paid yet",
+      "Because a separate entry plus a note keeps the change visible and explained"
+     ],
+     "answer": 3,
+     "why": "\"Add the discount as its own entry and leave a short note… the note answers for you.\""
+    },
+    {
+     "q": "What does Oliver mean by \"the numbers will still add up, but the report will not reflect where the money actually went\"?",
+     "options": [
+      "The total will always be wrong",
+      "Reports do not matter as long as totals match",
+      "A total can be correct while the detail hides the truth",
+      "The supplier overcharged the company"
+     ],
+     "answer": 2,
+     "why": "Inferência: mesmo com o total certo, juntar tudo numa linha esconde para onde o dinheiro foi de fato."
+    },
+    {
+     "q": "Which principle best sums up Oliver's advice?",
+     "options": [
+      "Record what actually happened and explain anything unusual",
+      "Combine entries to reduce the number of lines",
+      "Keep the books looking as tidy as possible",
+      "Always trust the supplier's original invoice"
+     ],
+     "answer": 0,
+     "why": "Inferência: os três casos apontam para o mesmo princípio — registrar o que ocorreu e anotar o que fugiu do padrão."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Good bookkeeping is a quiet <strong>craft</strong> that takes years to master.\" A craft is…",
+     "options": [
+      "a piece of software",
+      "a type of report",
+      "a skilled kind of work",
+      "a strict legal requirement"
+     ],
+     "answer": 2,
+     "why": "Craft = ofício, um trabalho habilidoso que se aprende com o tempo."
+    },
+    {
+     "q": "\"The customer decided to <strong>return</strong> the faulty parts.\" To return here means to…",
+     "options": [
+      "pay for them again",
+      "repair them at home",
+      "send them back to the seller",
+      "keep them and complain"
+     ],
+     "answer": 2,
+     "why": "To return = devolver o produto ao vendedor."
+    },
+    {
+     "q": "Choose the correct word: \"Because the event was ___, Oliver added a note instead of using the standard code.\"",
+     "options": [
+      "neat",
+      "simple",
+      "cheap",
+      "unusual"
+     ],
+     "answer": 3,
+     "why": "Unusual = incomum: eventos fora do padrão pedem uma anotação em vez do código-padrão."
+    },
+    {
+     "q": "Choose the correct word: \"He gave the entry a ___ note so the next reader would understand the change.\"",
+     "options": [
+      "messy",
+      "hidden",
+      "thoughtful",
+      "random"
+     ],
+     "answer": 2,
+     "why": "Thoughtful = cuidadoso, atencioso: uma anotação bem pensada para quem ler depois."
+    },
+    {
+     "q": "\"A clean entry should <strong>reflect</strong> the real transaction.\" To reflect here means to…",
+     "options": [
+      "simplify",
+      "hide",
+      "shine light on",
+      "faithfully show"
+     ],
+     "answer": 3,
+     "why": "To reflect = refletir, mostrar fielmente o que de fato aconteceu."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em conversas sobre contabilidade e finanças. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The finance manager still has to <strong>sign off on</strong> the corrected entries.\" To sign off on means to…",
+     "options": [
+      "question",
+      "delete",
+      "formally approve",
+      "print out"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Let's <strong>write off</strong> the amount we know the client will never pay.\" To write off means to…",
+     "options": [
+      "refund the client",
+      "send a second invoice",
+      "record it as a loss and remove it from expected income",
+      "double the charge"
+     ],
+     "answer": 2,
+     "why": "Write off = dar baixa, reconhecer como perda o que não será recebido."
+    },
+    {
+     "q": "\"The two figures don't <strong>add up</strong>, so check the refund line.\" This means the figures…",
+     "options": [
+      "were entered twice",
+      "belong to another month",
+      "are far too high",
+      "do not match or make sense together"
+     ],
+     "answer": 3,
+     "why": "Add up = fechar, bater — quando não \"add up\", algo está inconsistente."
+    },
+    {
+     "q": "\"Before month-end we need to <strong>reconcile</strong> the bank statement with the books.\" To reconcile means to…",
+     "options": [
+      "close the account",
+      "forgive a debt",
+      "print two copies",
+      "make two records agree with each other"
+     ],
+     "answer": 3,
+     "why": "Reconcile = conciliar: comparar dois registros até que batam."
+    },
+    {
+     "q": "\"Please <strong>break down</strong> that single invoice into service and parts.\" To break down means to…",
+     "options": [
+      "reduce the price",
+      "approve it quickly",
+      "cancel it",
+      "separate it into its parts"
+     ],
+     "answer": 3,
+     "why": "Break down = detalhar, separar em partes — como dividir a fatura em linhas."
+    }
+   ]
+  }
+ ]
+}

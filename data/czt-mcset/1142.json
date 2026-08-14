@@ -10,20 +10,20 @@
     {
      "q": "Who is the taxpayer in the text?",
      "options": [
+      "The company",
       "The government",
-      "The office",
       "The accountant",
-      "The company"
+      "The office"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"The taxpayer is the company.\" O contribuinte é a empresa."
     },
     {
      "q": "Why is the accountant slow?",
      "options": [
-      "Because she is tired",
-      "Because every number must be correct",
       "Because the office is far away",
+      "Because every number must be correct",
+      "Because she is tired",
       "Because the forms are long"
      ],
      "answer": 1,
@@ -33,8 +33,8 @@
      "q": "According to the text, taxes in English are…",
      "options": [
       "simple patterns you can practise",
-      "impossible to learn",
       "not for the company",
+      "impossible to learn",
       "only for the government"
      ],
      "answer": 0,
@@ -43,21 +43,21 @@
     {
      "q": "The words \"one step at a time\" suggest that the author wants you to…",
      "options": [
-      "learn everything in one day",
-      "ask the government for help",
       "not worry and go slowly",
-      "skip the hard words"
+      "ask the government for help",
+      "skip the hard words",
+      "learn everything in one day"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: o tom é de calma e encorajamento — devagar, sem pressa."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "taxes are too hard for beginners",
+      "only the accountant needs English",
       "you can learn tax words with practice",
-      "the forms are not important",
-      "only the accountant needs English"
+      "taxes are too hard for beginners",
+      "the forms are not important"
      ],
      "answer": 1,
      "why": "Inferência: \"You can do it!\" e \"practise them\" mostram que o autor acredita que dá para aprender."
@@ -78,53 +78,53 @@
      "q": "Where does Sophie work?",
      "options": [
       "In the bank",
-      "In the tax department",
       "In the sales team",
+      "In the tax department",
       "In the government office"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I work in the tax department.\""
     },
     {
      "q": "Who is Paul?",
      "options": [
-      "The accountant",
-      "The government",
       "The manager",
-      "The taxpayer"
+      "The accountant",
+      "The taxpayer",
+      "The government"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"This is Paul. He is our accountant.\""
     },
     {
      "q": "Who does the company send the forms to?",
      "options": [
       "The accountant",
-      "The government",
       "The office",
-      "The employee"
+      "The employee",
+      "The government"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"We send the forms to the government.\""
     },
     {
      "q": "Sophie says the office is small. This suggests that…",
      "options": [
-      "they need a new office",
+      "the team cannot do good work",
       "they have too many employees",
-      "the team is still good and works well together",
-      "the team cannot do good work"
+      "they need a new office",
+      "the team is still good and works well together"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"our office is small, but we are a good team.\" O tamanho não atrapalha."
     },
     {
      "q": "How does Sophie feel about her job?",
      "options": [
-      "She is worried",
+      "She wants to leave",
       "She likes it",
       "She is bored",
-      "She wants to leave"
+      "She is worried"
      ],
      "answer": 1,
      "why": "Inferência: \"I like my job because the work is clear.\" O tom é positivo."
@@ -139,32 +139,32 @@
     {
      "q": "\"The company is the <strong>taxpayer</strong>, so it must send the forms.\" A taxpayer is…",
      "options": [
+      "a person or company that pays taxes",
       "a tax form",
-      "a government office",
       "a bank manager",
-      "a person or company that pays taxes"
+      "a government office"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Taxpayer = contribuinte, quem paga os impostos."
     },
     {
      "q": "Choose the correct word: \"The ___ checks all the numbers before we send the report.\"",
      "options": [
-      "accountant",
-      "deadline",
+      "taxpayer",
       "office",
-      "taxpayer"
+      "accountant",
+      "deadline"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Accountant = contador(a), a pessoa que confere os números."
     },
     {
      "q": "\"Sophie works in the tax <strong>department</strong>.\" A department is…",
      "options": [
+      "a country",
       "a computer",
-      "a tax form",
       "a part of a company",
-      "a country"
+      "a tax form"
      ],
      "answer": 2,
      "why": "Department = departamento, uma área da empresa."
@@ -173,19 +173,19 @@
      "q": "Choose the correct word: \"Every ___ in our team helps before the deadline.\"",
      "options": [
       "form",
-      "government",
       "employee",
-      "office"
+      "office",
+      "government"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Employee = funcionário(a), cada pessoa do time."
     },
     {
      "q": "\"We keep the files in the <strong>office</strong> for seven years.\" An office is…",
      "options": [
-      "a report",
       "a tax number",
       "a manager",
+      "a report",
       "a place where people work"
      ],
      "answer": 3,
@@ -201,34 +201,34 @@
     {
      "q": "\"The accountant must <strong>fill out</strong> the tax form.\" To fill out means to…",
      "options": [
-      "throw the form away",
       "sign the form only",
       "read the form once",
-      "write the information on a form"
+      "write the information on a form",
+      "throw the form away"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Fill out = preencher (um formulário)."
     },
     {
      "q": "\"We <strong>hand in</strong> the report on Friday.\" To hand in means to…",
      "options": [
-      "give or send something to someone",
-      "correct the report",
       "lose the report",
-      "print the report"
+      "print the report",
+      "give or send something to someone",
+      "correct the report"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Hand in = entregar (algo a alguém ou a um órgão)."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the numbers.\" To sign off on means to…",
      "options": [
-      "approve something officially",
       "delete something",
+      "approve something officially",
       "copy something",
       "wait for something"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
@@ -245,12 +245,12 @@
     {
      "q": "\"Let's <strong>check in</strong> with the team before the deadline.\" To check in means to…",
      "options": [
-      "cancel the meeting",
-      "pay the taxes",
       "talk and see how things are going",
-      "leave the office"
+      "leave the office",
+      "pay the taxes",
+      "cancel the meeting"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Check in = fazer um contato rápido para ver como está tudo."
     }
    ]

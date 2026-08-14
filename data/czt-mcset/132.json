@@ -8,56 +8,56 @@
     {
      "q": "What is a cross-border transaction?",
      "options": [
-      "A deal where buyer and seller are in different countries",
       "A customs form",
-      "A sale inside one country",
-      "A bank loan"
+      "A bank loan",
+      "A deal where buyer and seller are in different countries",
+      "A sale inside one country"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"any deal where the buyer and the seller are in different countries.\""
     },
     {
      "q": "Which is one of the 'small extras' the text lists?",
      "options": [
       "A longer warranty",
+      "Shipping",
       "A free gift",
-      "A bigger product",
-      "Shipping"
+      "A bigger product"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"You will pay for shipping.\""
     },
     {
      "q": "What do the extras do together?",
      "options": [
-      "Lower the price",
       "Remove the duty",
       "Change the price (make it higher)",
-      "Speed up the ship"
+      "Speed up the ship",
+      "Lower the price"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"together they change the price.\""
     },
     {
      "q": "What is the simple lesson?",
      "options": [
-      "Only look at the invoice price",
       "Always check the real cost, not just the invoice price",
       "Never trade abroad",
-      "Ignore the extras"
+      "Ignore the extras",
+      "Only look at the invoice price"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"always check the real cost of a cross-border deal, not just the invoice price.\""
     },
     {
      "q": "Why does the text say to check the real cost?",
      "options": [
-      "Because the goods are free",
       "Because there is no duty",
-      "Because the invoice price hides the extras",
-      "Because shipping is free"
+      "Because the goods are free",
+      "Because shipping is free",
+      "Because the invoice price hides the extras"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: os extras não aparecem no preço da fatura, mas somam-se a ele."
     }
    ]
@@ -73,33 +73,33 @@
      "q": "What was the supplier's invoice price?",
      "options": [
       "€30",
-      "€1,080",
       "€1,000",
+      "€1,080",
       "€80"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"a supplier's price of one thousand euros.\""
     },
     {
      "q": "How much did shipping add?",
      "options": [
-      "€30",
       "€20",
+      "€80",
       "€10",
-      "€80"
+      "€30"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Getting the goods to you cost thirty euros.\""
     },
     {
      "q": "Why did the currency exchange add a cost?",
      "options": [
-      "The bank charged nothing",
       "The goods were cheaper",
       "You paid in euros but your account is in another currency, losing a little in conversion",
+      "The bank charged nothing",
       "There was no exchange"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"you lost a little in the conversion — about twenty euros.\""
     },
     {
@@ -107,19 +107,19 @@
      "options": [
       "€80",
       "€920",
-      "€1,080",
-      "€1,000"
+      "€1,000",
+      "€1,080"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"the real, landed cost is one thousand and eighty, not one thousand.\""
     },
     {
      "q": "What happens if you plan on the invoice price alone?",
      "options": [
-      "Shipping is free",
+      "You make more profit",
       "Your margin quietly disappears",
       "The duty is removed",
-      "You make more profit"
+      "Shipping is free"
      ],
      "answer": 1,
      "why": "\"if you plan on the invoice price alone, your margin quietly disappears.\""
@@ -133,9 +133,9 @@
      "q": "A **cross-border** transaction is…",
      "options": [
       "cash only",
-      "inside one country",
+      "online only",
       "between different countries",
-      "online only"
+      "inside one country"
      ],
      "answer": 2,
      "why": "Cross-border = transfronteiriço."
@@ -143,45 +143,45 @@
     {
      "q": "The **landed cost** is…",
      "options": [
+      "the total real cost including shipping, duty, fees and exchange",
       "only the invoice price",
       "the duty only",
-      "the total real cost including shipping, duty, fees and exchange",
       "the shipping cost only"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Landed cost = custo total no destino."
     },
     {
      "q": "Choose the correct word: \"A **bank ___** is charged for the international payment.\"",
      "options": [
-      "fee",
       "duty",
+      "fee",
       "loss",
       "border"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Bank fee = tarifa bancária."
     },
     {
      "q": "An **exchange loss** happens when…",
      "options": [
-      "the goods are lost",
-      "the ship is late",
+      "the duty is high",
       "you lose value converting one currency to another",
-      "the duty is high"
+      "the ship is late",
+      "the goods are lost"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Exchange loss = perda na conversão de moeda."
     },
     {
      "q": "Choose the correct word: \"These costs are **___** — they don't show on the invoice.\"",
      "options": [
+      "free",
       "hidden",
       "large",
-      "shipped",
-      "free"
+      "shipped"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Hidden = ocultos."
     }
    ]
@@ -192,12 +192,12 @@
     {
      "q": "\"Shipping is **on top of** the price.\" On top of means…",
      "options": [
-      "added to",
       "instead of",
+      "added to",
       "included in",
       "below"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "On top of = além de, somado a."
     },
     {
@@ -215,33 +215,33 @@
      "q": "\"The extras **pile up** quickly.\" To pile up means to…",
      "options": [
       "disappear",
+      "accumulate",
       "reduce",
-      "ship",
-      "accumulate"
+      "ship"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Pile up = acumular-se."
     },
     {
      "q": "\"Your margin can **quietly disappear**.\" Quietly disappear means…",
      "options": [
-      "stay the same",
-      "double",
       "grow loudly",
-      "vanish without you noticing"
+      "stay the same",
+      "vanish without you noticing",
+      "double"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Quietly disappear = sumir sem se perceber."
     },
     {
      "q": "\"Always **factor in** the extras.\" To factor in means to…",
      "options": [
-      "hide",
       "ignore",
       "include in your calculation",
-      "remove"
+      "remove",
+      "hide"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Factor in = levar em conta."
     }
    ]

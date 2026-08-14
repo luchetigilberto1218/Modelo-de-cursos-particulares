@@ -11,42 +11,42 @@
      "q": "What is phishing, according to the text?",
      "options": [
       "A safe download",
-      "A fake email that tries to trick you",
       "A kind of hardware",
-      "A new password"
+      "A new password",
+      "A fake email that tries to trick you"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Phishing is a fake email. It tries to trick you.\""
     },
     {
      "q": "How does malware get onto your computer?",
      "options": [
-      "Only through phone calls",
-      "Only from the office Wi-Fi",
       "Through a paper letter",
-      "Through a download, attachment, or USB stick"
+      "Only through phone calls",
+      "Through a download, attachment, or USB stick",
+      "Only from the office Wi-Fi"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"It gets onto your computer through a download, an email attachment, or a USB stick.\""
     },
     {
      "q": "What does ransomware do?",
      "options": [
       "It sends free emails",
-      "It makes your computer faster",
       "It locks your files and asks for money",
+      "It makes your computer faster",
       "It cleans your files"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"It locks your files and asks for money to unlock them.\""
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "You should report anything odd",
-      "Checking a strange email is a waste of time",
       "Simple habits stop most attacks",
-      "Old software is a risk"
+      "Checking a strange email is a waste of time",
+      "Old software is a risk",
+      "You should report anything odd"
      ],
      "answer": 1,
      "why": "Inferência: o texto diz que os poucos segundos para verificar valem muito mais — logo, não é perda de tempo."
@@ -55,9 +55,9 @@
      "q": "The last paragraph suggests that…",
      "options": [
       "a small effort now saves a big problem later",
+      "the company likes fixing attacks",
       "you should never use email",
-      "attacks are impossible to fix",
-      "the company likes fixing attacks"
+      "attacks are impossible to fix"
      ],
      "answer": 0,
      "why": "Inferência: poucos segundos de checagem evitam horas ou dias de conserto."
@@ -77,31 +77,31 @@
     {
      "q": "What is Oliver showing the team?",
      "options": [
-      "A new computer",
       "A company report",
       "A training video",
-      "A real email that almost worked"
+      "A real email that almost worked",
+      "A new computer"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"I want to show you a real email… it almost worked.\""
     },
     {
      "q": "What did the fake email ask people to do?",
      "options": [
-      "Buy a new phone",
+      "Click a link now to fix the account",
       "Change their desk",
       "Call the police",
-      "Click a link now to fix the account"
+      "Buy a new phone"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Your account is locked. Click here now to fix it.\""
     },
     {
      "q": "What small sign showed the email was fake?",
      "options": [
       "The logo was missing",
-      "There was no date",
       "The button was red",
+      "There was no date",
       "The bank's name was spelled wrong"
      ],
      "answer": 3,
@@ -110,23 +110,23 @@
     {
      "q": "Why does Oliver say to slow down when an email says \"now\" or \"urgent\"?",
      "options": [
-      "Because his computer is slow",
       "Because pressure to act fast is a warning sign",
+      "Because the IT team is closed",
       "Because urgent emails are always safe",
-      "Because the IT team is closed"
+      "Because his computer is slow"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ele liga a pressa a um sinal de perigo, por isso pede para parar e checar."
     },
     {
      "q": "What can we understand about Oliver's advice?",
      "options": [
-      "Only IT can read email",
-      "You should never use email again",
       "A few seconds of checking can prevent a big problem",
+      "You should never use email again",
+      "Only IT can read email",
       "Fake emails never have logos"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: \"Ten seconds saved us a very bad week\" — pouca checagem evita um problema grande."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"I got a <strong>fake email</strong> from my bank this morning.\" A fake email is…",
      "options": [
-      "an email that is not real",
       "an email from a friend",
-      "a long email",
-      "an email with a photo"
+      "an email that is not real",
+      "an email with a photo",
+      "a long email"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fake email = e-mail falso, que finge ser de outra pessoa."
     },
     {
      "q": "Choose the correct word: \"Do not open the ___ if you did not expect it.\"",
      "options": [
-      "window",
-      "coffee",
+      "attachment",
       "meeting",
-      "attachment"
+      "window",
+      "coffee"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Attachment = anexo; não abrir anexos inesperados."
     },
     {
      "q": "\"He copied the files with a <strong>USB stick</strong>.\" A USB stick is…",
      "options": [
-      "a password",
-      "a type of email",
       "a website",
-      "a small device to save files"
+      "a small device to save files",
+      "a type of email",
+      "a password"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "USB stick = pendrive, um dispositivo pequeno para guardar arquivos."
     },
     {
      "q": "Choose the correct word: \"Please keep your software ___ so it is safe.\"",
      "options": [
+      "far away",
       "up to date",
       "on the desk",
-      "far away",
       "in the box"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Up to date = atualizado; software atualizado é mais seguro."
     },
     {
      "q": "\"Ransomware can <strong>lock your files</strong>.\" This means it…",
      "options": [
-      "prints your files",
-      "sends your files to a friend",
+      "blocks your files so you cannot open them",
       "makes your files bigger",
-      "blocks your files so you cannot open them"
+      "prints your files",
+      "sends your files to a friend"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "To lock files = bloquear arquivos, deixando você sem acesso a eles."
     }
    ]
@@ -201,10 +201,10 @@
     {
      "q": "\"Please <strong>report</strong> anything odd to the IT team.\" To report something means to…",
      "options": [
+      "hide it",
       "print it",
-      "delete it",
       "tell someone about it",
-      "hide it"
+      "delete it"
      ],
      "answer": 2,
      "why": "To report = avisar, contar sobre algo para alguém."
@@ -212,45 +212,45 @@
     {
      "q": "\"Do not <strong>click on</strong> that link.\" To click on a link means to…",
      "options": [
-      "press it with the mouse",
       "save it for later",
+      "read it slowly",
       "send it to a friend",
-      "read it slowly"
+      "press it with the mouse"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To click on = clicar, pressionar com o mouse."
     },
     {
      "q": "\"If you are not sure, <strong>check with</strong> your manager first.\" To check with someone means to…",
      "options": [
-      "call the police",
+      "ask them to be sure",
       "wait for them to leave",
       "copy their work",
-      "ask them to be sure"
+      "call the police"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "To check with = confirmar/perguntar a alguém antes de agir."
     },
     {
      "q": "\"The company will <strong>roll out</strong> new training next week.\" To roll out means to…",
      "options": [
-      "hide it",
       "start it for everyone",
       "forget it",
+      "hide it",
       "cancel it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To roll out = lançar/colocar em prática para todos."
     },
     {
      "q": "\"Please <strong>back up</strong> your files every week.\" To back up means to…",
      "options": [
-      "email them to clients",
+      "save a copy in a safe place",
       "throw them away",
       "make them smaller",
-      "save a copy in a safe place"
+      "email them to clients"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "To back up = fazer cópia de segurança dos arquivos."
     }
    ]

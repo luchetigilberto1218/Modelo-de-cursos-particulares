@@ -1,0 +1,259 @@
+{
+ "num": 1126,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Accounting is the language of Czarnikow's numbers. Today's lesson is The Accounting Team. It gives you short, simple sentences you can use with the finance team.<br><br>The team is small. There is an accountant, a manager, a trainee and an assistant. Sophie helps the new people. She uses easy words and short sentences.<br><br>Go slowly. One step at a time. English comes in CAN's, not in CAN'Ts. You can do it!",
+   "items": [
+    {
+     "q": "What is today's lesson about?",
+     "options": [
+      "The Sales Team",
+      "A new office",
+      "A long report",
+      "The Accounting Team"
+     ],
+     "answer": 3,
+     "why": "\"Today's lesson is The Accounting Team.\""
+    },
+    {
+     "q": "The text says accounting is the language of Czarnikow's…",
+     "options": [
+      "people",
+      "offices",
+      "numbers",
+      "computers"
+     ],
+     "answer": 2,
+     "why": "\"Accounting is the language of Czarnikow's numbers.\""
+    },
+    {
+     "q": "Who helps the new people?",
+     "options": [
+      "Sophie",
+      "The manager",
+      "The trainee",
+      "The assistant"
+     ],
+     "answer": 0,
+     "why": "\"Sophie helps the new people.\""
+    },
+    {
+     "q": "The text suggests that the team is…",
+     "options": [
+      "far away",
+      "closed",
+      "very big",
+      "small"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz \"The team is small\" e lista poucas pessoas."
+    },
+    {
+     "q": "\"English comes in CAN's, not in CAN'Ts\" suggests the lesson wants you to feel…",
+     "options": [
+      "afraid",
+      "bored",
+      "confident",
+      "tired"
+     ],
+     "answer": 2,
+     "why": "Inferência: a frase e \"You can do it!\" passam confiança, não medo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentando o time para um novo estagiário. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the accounting team. My name is Sophie. I am happy you are here. Please sit down. It is a good day to start.<br><br>Let me show you the team. We are small, but we are very organised. This is Tom. He is the accountant. He works with the numbers every day. He is calm and kind. This is Maria. She is the manager. She checks the reports and she signs the important papers.<br><br>You are the new trainee. That is a good thing. Everyone starts as a trainee. I help new trainees, so you are not alone. If you have a question, you ask me. We have an assistant too. It is on the desk — a small book with all the names and rules. You can use it any time.<br><br>Now, take it slowly. One careful step at a time. That is how good accountants work. We do not run. We check, and we check again. Say the words with me, and use short, simple sentences. Numbers are honest, so our work is honest too. You can do it. I am ready when you are. Let's get started!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "The manager",
+      "Maria",
+      "Tom",
+      "Sophie"
+     ],
+     "answer": 3,
+     "why": "\"My name is Sophie.\""
+    },
+    {
+     "q": "Who is the accountant?",
+     "options": [
+      "Maria",
+      "Sophie",
+      "The trainee",
+      "Tom"
+     ],
+     "answer": 3,
+     "why": "\"This is Tom. He is the accountant.\""
+    },
+    {
+     "q": "What does Maria do?",
+     "options": [
+      "She checks the reports",
+      "She writes the book",
+      "She helps trainees",
+      "She works with the desk"
+     ],
+     "answer": 0,
+     "why": "\"She is the manager. She checks the reports.\""
+    },
+    {
+     "q": "Sophie says \"you are not alone.\" This suggests the trainee can feel…",
+     "options": [
+      "lost",
+      "late",
+      "supported",
+      "angry"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela ajuda os estagiários, então o novo aluno tem apoio."
+    },
+    {
+     "q": "How would you describe Sophie's tone?",
+     "options": [
+      "Bored and tired",
+      "Warm and patient",
+      "Cold and quick",
+      "Strict and hard"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela dá boas-vindas, pede calma e diz \"You can do it\" — tom acolhedor."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>accountant</strong> checks the numbers every day.\" An accountant is…",
+     "options": [
+      "a computer",
+      "a person who works with numbers and money",
+      "a driver",
+      "a manager of sales"
+     ],
+     "answer": 1,
+     "why": "Accountant = contador(a): trabalha com números e dinheiro."
+    },
+    {
+     "q": "\"Maria is my <strong>colleague</strong>. We work together.\" A colleague is…",
+     "options": [
+      "a client",
+      "a friend from school",
+      "a boss only",
+      "a person you work with"
+     ],
+     "answer": 3,
+     "why": "Colleague = colega de trabalho."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ checks the reports and helps the team.\"",
+     "options": [
+      "manager",
+      "trainee",
+      "assistant",
+      "desk"
+     ],
+     "answer": 0,
+     "why": "Manager = gerente: quem confere os relatórios e ajuda o time."
+    },
+    {
+     "q": "Choose the correct word: \"I am new here. I am a ___.\"",
+     "options": [
+      "trainee",
+      "number",
+      "manager",
+      "colleague"
+     ],
+     "answer": 0,
+     "why": "Trainee = estagiário(a): a pessoa nova que está aprendendo."
+    },
+    {
+     "q": "\"The <strong>assistant</strong> is on the desk.\" Here, an assistant is…",
+     "options": [
+      "a manager",
+      "a big meeting",
+      "a report",
+      "a helper person or a helpful tool"
+     ],
+     "answer": 3,
+     "why": "Assistant = assistente: algo (ou alguém) que ajuda no trabalho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples do dia a dia no escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the report.\" To sign off on means to…",
+     "options": [
+      "print it",
+      "lose it",
+      "read it fast",
+      "approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"We <strong>go over</strong> the numbers together.\" To go over means to…",
+     "options": [
+      "forget them",
+      "send them",
+      "check them carefully",
+      "hide them"
+     ],
+     "answer": 2,
+     "why": "Go over = revisar, conferir com atenção."
+    },
+    {
+     "q": "\"Sophie asks the trainee to <strong>write down</strong> the names.\" To write down means to…",
+     "options": [
+      "put on paper",
+      "read again",
+      "throw away",
+      "say out loud"
+     ],
+     "answer": 0,
+     "why": "Write down = anotar, escrever no papel."
+    },
+    {
+     "q": "\"Let's <strong>get started</strong>!\" To get started means to…",
+     "options": [
+      "stop working",
+      "wait a little",
+      "begin",
+      "go home"
+     ],
+     "answer": 2,
+     "why": "Get started = começar."
+    },
+    {
+     "q": "\"Take it <strong>step by step</strong>.\" This means…",
+     "options": [
+      "ask someone else",
+      "do it slowly, one part at a time",
+      "do it all at once",
+      "do it tomorrow"
+     ],
+     "answer": 1,
+     "why": "Step by step = passo a passo, uma parte de cada vez."
+    }
+   ]
+  }
+ ]
+}

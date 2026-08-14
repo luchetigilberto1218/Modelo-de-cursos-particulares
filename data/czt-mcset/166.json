@@ -10,12 +10,12 @@
     {
      "q": "According to the text, what does a bank guarantee become at the executive level?",
      "options": [
-      "One item in a portfolio",
-      "A single decisive instrument",
       "A source of new revenue",
-      "A purely legal formality"
+      "A purely legal formality",
+      "One item in a portfolio",
+      "A single decisive instrument"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"bank guarantees cease to be individual instruments and begin to look like a portfolio.\""
     },
     {
@@ -33,9 +33,9 @@
      "q": "What surprises many CFOs, according to the passage?",
      "options": [
       "How cheap new guarantees have become",
-      "How rarely banks issue performance bonds",
+      "How quickly beneficiaries confirm discharge",
       "How much capacity sits trapped in expired or unused guarantees",
-      "How quickly beneficiaries confirm discharge"
+      "How rarely banks issue performance bonds"
      ],
      "answer": 2,
      "why": "\"how much quiet capacity is tied up in expired or unused guarantees that nobody has formally released.\""
@@ -45,21 +45,21 @@
      "options": [
       "Freeing capacity need not disrupt day-to-day operations.",
       "Obsolete bonds can quietly consume banking capacity.",
-      "Once issued and filed away, a guarantee needs no further attention.",
-      "A portfolio of guarantees should be reviewed as a whole."
+      "A portfolio of guarantees should be reviewed as a whole.",
+      "Once issued and filed away, a guarantee needs no further attention."
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: o texto argumenta justamente contra tratar garantias como papel arquivado — elas exigem revisão contínua."
     },
     {
      "q": "The phrase \"not a filing cabinet of old paperwork\" suggests that guarantees…",
      "options": [
       "should be destroyed once contracts end",
+      "are best delegated entirely to the legal team",
       "are dead documents with no financial weight",
-      "remain live commitments with ongoing balance-sheet impact",
-      "are best delegated entirely to the legal team"
+      "remain live commitments with ongoing balance-sheet impact"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: opõe \"living balance sheet of commitments\" a papelada morta — as garantias continuam pesando enquanto não liberadas."
     }
    ]
@@ -77,45 +77,45 @@
     {
      "q": "How many active guarantees did the review actually find?",
      "options": [
-      "Two hundred and thirty-one",
-      "Eleven",
       "Forty-eight",
+      "Eleven",
+      "Two hundred and thirty-one",
       "Ten to fifteen"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"We found two hundred and thirty-one active guarantees on the banking lines.\""
     },
     {
      "q": "Why had the forty-eight obsolete guarantees remained on the lines?",
      "options": [
+      "The contracts had not actually ended",
       "Nobody asked the banks to cancel them or chased discharge",
       "Regulation required them to stay open",
-      "The contracts had not actually ended",
       "The banks refused to release them"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Nobody ever asked the banks to cancel them, and nobody chased the beneficiaries to confirm discharge.\""
     },
     {
      "q": "What does Sophie say the trapped capacity meant in cash terms?",
      "options": [
-      "A loss of forty-eight million",
-      "A gain of two hundred million",
       "No measurable financial impact",
-      "Roughly eleven million in unusable headroom"
+      "A loss of forty-eight million",
+      "Roughly eleven million in unusable headroom",
+      "A gain of two hundred million"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"roughly eleven million in headroom we could not use.\""
     },
     {
      "q": "What does Sophie mean when she says it \"should embarrass us a little\"?",
      "options": [
-      "The beneficiaries acted in bad faith",
+      "The company should have been managing this all along",
       "The bank made an accounting error",
       "The review cost more than expected",
-      "The company should have been managing this all along"
+      "The beneficiaries acted in bad faith"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: o constrangimento é interno — a capacidade estava presa por negligência de processo, não por causa externa."
     },
     {
@@ -139,56 +139,56 @@
     {
      "q": "\"Treasury tracks the group's total <strong>exposure</strong> across all outstanding bonds.\" Here, exposure means…",
      "options": [
-      "the publicity a deal receives",
       "the number of banks involved",
-      "the interest rate charged",
-      "the total risk or amount committed"
+      "the total risk or amount committed",
+      "the publicity a deal receives",
+      "the interest rate charged"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Exposure = exposição: o montante total de risco/comprometimento em aberto."
     },
     {
      "q": "Choose the correct term: \"Half the bonds mature in the same quarter, so the ___ is dangerously bunched.\"",
      "options": [
-      "banking line",
+      "maturity profile",
       "discharge",
       "commitment",
-      "maturity profile"
+      "banking line"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Maturity profile = perfil de vencimento: como os vencimentos se distribuem no tempo."
     },
     {
      "q": "\"Three expired bonds were still <strong>tying up</strong> capacity nobody was using.\" To tie up capacity means to…",
      "options": [
-      "report it to the regulator",
       "lock it away so it cannot be used",
-      "release it for new deals",
-      "transfer it to another bank"
+      "transfer it to another bank",
+      "report it to the regulator",
+      "release it for new deals"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To tie up = imobilizar: prender a capacidade de modo que ela fique indisponível."
     },
     {
      "q": "Choose the correct word: \"Once the client confirms ___, the bank cancels the guarantee and returns the headroom.\"",
      "options": [
-      "exposure",
       "portfolio",
-      "concentration",
-      "discharge"
+      "exposure",
+      "discharge",
+      "concentration"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Discharge = liberação: a confirmação formal de que a obrigação foi cumprida e o instrumento pode ser cancelado."
     },
     {
      "q": "\"A high <strong>concentration</strong> of beneficiaries is a hidden risk.\" This refers to…",
      "options": [
-      "too many guarantees favouring the same few parties",
-      "the focus of the treasury team",
       "the density of legal clauses in each bond",
-      "guarantees spread thinly across many banks"
+      "guarantees spread thinly across many banks",
+      "too many guarantees favouring the same few parties",
+      "the focus of the treasury team"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Concentration = concentração: muitos instrumentos ligados aos mesmos poucos beneficiários, o que amplia o risco."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The CFO still has to <strong>sign off on</strong> cancelling the obsolete bonds.\" To sign off on means to…",
      "options": [
-      "formally approve",
-      "quietly object to",
       "postpone indefinitely",
-      "delegate to the bank"
+      "delegate to the bank",
+      "quietly object to",
+      "formally approve"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We'll <strong>roll out</strong> the quarterly review across every business unit.\" To roll out means to…",
      "options": [
       "scale back gradually",
+      "test in secret",
       "implement in stages",
-      "cancel after one cycle",
-      "test in secret"
+      "cancel after one cycle"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Roll out = implementar de forma progressiva, unidade por unidade."
     },
     {
      "q": "\"Two beneficiaries <strong>pushed back on</strong> the request to confirm discharge.\" They…",
      "options": [
-      "approved it at once",
       "signed it without reading",
       "resisted or were reluctant",
-      "forwarded it to their bank"
+      "forwarded it to their bank",
+      "approved it at once"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Push back on = resistir, relutar — sem necessariamente recusar de vez."
     },
     {
      "q": "\"Freeing that capacity really <strong>moves the needle</strong> on our banking headroom.\" This means it…",
      "options": [
-      "creates unnecessary paperwork",
       "makes a noticeable, real difference",
+      "is too small to measure",
       "triggers regulatory review",
-      "is too small to measure"
+      "creates unnecessary paperwork"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Move the needle = mexer o ponteiro, produzir um efeito perceptível."
     },
     {
      "q": "\"Everyone agreed to chase discharge, but the team never <strong>followed through</strong>.\" They…",
      "options": [
-      "documented it in full",
       "handed it to another department",
       "failed to carry it to completion",
-      "carried it to completion late"
+      "carried it to completion late",
+      "documented it in full"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Follow through = levar até o fim o que foi combinado; aqui, não foi levado."
     }
    ]

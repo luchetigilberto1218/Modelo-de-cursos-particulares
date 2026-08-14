@@ -1,0 +1,259 @@
+{
+ "num": 264,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Choosing the right supply chain model is less about following a textbook and more about matching the design to the reality of the product. A stable, high-volume product with predictable demand usually lives in a classic make-to-stock model. A custom, high-value product with variable demand needs make-to-order. Products in between need hybrids.<br><br>The cost of getting it wrong is not small. A company running make-to-stock on a custom product drowns in obsolete inventory. One running make-to-order on a commodity frustrates customers who expect fast delivery. Either mistake compounds over time until the mismatch becomes visible in the numbers.<br><br>The right question, before any investment, is simple: how predictable is demand for this product, and how much variety does the customer actually want? The honest answer usually points to the right model.",
+   "items": [
+    {
+     "q": "According to the text, which model suits a stable, high-volume product with predictable demand?",
+     "options": [
+      "No model at all",
+      "A hybrid model",
+      "Make-to-stock",
+      "Make-to-order"
+     ],
+     "answer": 2,
+     "why": "\"A stable, high-volume product with predictable demand usually lives in a classic make-to-stock model.\""
+    },
+    {
+     "q": "What happens to a company that runs make-to-stock on a custom product?",
+     "options": [
+      "It delivers faster than its rivals",
+      "It cuts its warehouse costs",
+      "It stops receiving custom orders",
+      "It drowns in obsolete inventory"
+     ],
+     "answer": 3,
+     "why": "\"A company running make-to-stock on a custom product drowns in obsolete inventory.\""
+    },
+    {
+     "q": "What two questions does the text say you should ask before any investment?",
+     "options": [
+      "How predictable is demand, and how much variety does the customer want?",
+      "How large is the factory, and how many staff do we need?",
+      "How strong is the brand, and how loyal are the customers?",
+      "How cheap is the product, and how fast can we ship it?"
+     ],
+     "answer": 0,
+     "why": "\"how predictable is demand for this product, and how much variety does the customer actually want?\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A textbook rule should decide your supply chain model.",
+      "A mismatch eventually shows up in the numbers.",
+      "The best model depends on the nature of the product.",
+      "Products in between fit and stock may need a hybrid."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto abre dizendo que a escolha é \"less about following a textbook\" — logo, o autor discordaria de deixar o livro-texto decidir."
+    },
+    {
+     "q": "The phrase \"Either mistake compounds over time\" suggests that…",
+     "options": [
+      "the two mistakes cancel each other out",
+      "the mistakes are cheap to fix immediately",
+      "the damage grows and gets worse if left uncorrected",
+      "only one of the two models can ever fail"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"compounds\" indica que o custo se acumula até ficar visível nos números — não é um erro que se resolve sozinho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry ajudando o time do novo produto. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, before we lock the factory layout, let's slow down for a second. The whole thing hinges on one question: how predictable is demand for this line, and how much variety will customers actually ask for?<br><br>Right now I'm hearing two very different products described as if they were one. If demand were stable and the spec were fixed, I'd say go make-to-stock — build ahead, fill the warehouse, ship the moment an order lands. But that's not what the sales forecast is telling us. The variety is high and the volumes swing month to month.<br><br>If we built to stock on a product this variable, we'd be sitting on obsolete inventory by the third quarter. And if we went pure make-to-order on the fast-moving version, we'd frustrate the customers who expect it off the shelf. So my honest recommendation is a hybrid: stock the stable, high-volume items and build the custom ones to order.<br><br>The point is, we decide this now. Changing the model after the layout is set is expensive and disruptive, and I'd rather we got it right before a single machine is bolted down.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Harry want the team to settle BEFORE locking the factory layout?",
+     "options": [
+      "How large the warehouse should be",
+      "Which supplier to sign first",
+      "How many machines to order",
+      "How predictable demand is and how much variety customers want"
+     ],
+     "answer": 3,
+     "why": "\"how predictable is demand for this line, and how much variety will customers actually ask for?\""
+    },
+    {
+     "q": "According to Harry, when WOULD make-to-stock be the right call?",
+     "options": [
+      "If volumes swung every month",
+      "If the customer wanted maximum variety",
+      "If demand were stable and the spec were fixed",
+      "If the product were fully custom"
+     ],
+     "answer": 2,
+     "why": "\"If demand were stable and the spec were fixed, I'd say go make-to-stock.\""
+    },
+    {
+     "q": "What does Harry finally recommend?",
+     "options": [
+      "Pure make-to-stock for everything",
+      "A hybrid: stock the stable items, build the custom ones to order",
+      "Pure make-to-order for everything",
+      "Postponing the whole project"
+     ],
+     "answer": 1,
+     "why": "\"a hybrid: stock the stable, high-volume items and build the custom ones to order.\""
+    },
+    {
+     "q": "Why does Harry say \"we decide this now\"?",
+     "options": [
+      "Because the sales team is waiting for numbers",
+      "Because the customers have cancelled their orders",
+      "Because the warehouse is already full",
+      "Because changing the model after the layout is set is expensive and disruptive"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele insiste em decidir antes porque \"changing the model after the layout is set is expensive and disruptive.\""
+    },
+    {
+     "q": "What can you infer about the sales forecast Harry has seen?",
+     "options": [
+      "It contains no useful information",
+      "It predicts falling demand across the board",
+      "It points to a single, stable product",
+      "It shows high variety and volumes that swing month to month"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele diz que a previsão NÃO aponta para demanda estável — \"The variety is high and the volumes swing month to month.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The plant was full of <strong>obsolete</strong> stock nobody would ever buy.\" Obsolete means…",
+     "options": [
+      "reserved for key clients",
+      "out of date and no longer useful",
+      "brand new and in demand",
+      "expensive but popular"
+     ],
+     "answer": 1,
+     "why": "Obsolete = obsoleto, fora de uso — estoque que perdeu valor e ninguém compra."
+    },
+    {
+     "q": "Choose the correct word: \"Because demand for this line is so ___, we cannot plan production a year ahead.\"",
+     "options": [
+      "stable",
+      "predictable",
+      "variable",
+      "classic"
+     ],
+     "answer": 2,
+     "why": "Variable = variável: oscila, então não dá para planejar com um ano de antecedência."
+    },
+    {
+     "q": "Choose the correct term: \"A ___ between the model and the product eventually shows up in the numbers.\"",
+     "options": [
+      "hybrid",
+      "mismatch",
+      "textbook",
+      "commodity"
+     ],
+     "answer": 1,
+     "why": "Mismatch = descompasso: o modelo não combina com o produto."
+    },
+    {
+     "q": "\"Salt is a <strong>commodity</strong>: buyers expect it cheap and off the shelf.\" A commodity is…",
+     "options": [
+      "a luxury brand",
+      "a rare, custom-built item",
+      "a standard, interchangeable product",
+      "a one-off prototype"
+     ],
+     "answer": 2,
+     "why": "Commodity = produto padronizado e intercambiável, comprado principalmente pelo preço."
+    },
+    {
+     "q": "Choose the correct word: \"For the items in between, we run a ___ model — some to stock, some to order.\"",
+     "options": [
+      "obsolete",
+      "stable",
+      "classic",
+      "hybrid"
+     ],
+     "answer": 3,
+     "why": "Hybrid = híbrido: combina os dois modelos para os produtos intermediários."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em decisões de cadeia de suprimentos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Operations still has to <strong>sign off on</strong> the make-to-order plan.\" To sign off on means to…",
+     "options": [
+      "rewrite from scratch",
+      "formally approve",
+      "quietly ignore",
+      "delay indefinitely"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new model plant by plant.\" To roll out means to…",
+     "options": [
+      "test in secret",
+      "implement in stages",
+      "cancel gradually",
+      "explain to the board"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"The logistics head <strong>pushed back on</strong> the make-to-stock forecast.\" She…",
+     "options": [
+      "resisted or challenged it",
+      "approved it at once",
+      "forwarded it unchanged",
+      "lost the document"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"They agreed on the hybrid model but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "changed suppliers instead",
+      "documented it in detail",
+      "failed to carry it to completion",
+      "carried it out fully"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Switching a few SKUs to order won't <strong>move the needle</strong> on inventory costs.\" This means it will…",
+     "options": [
+      "create supplier resistance",
+      "not make a noticeable difference",
+      "cost far more than planned",
+      "take years to measure"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

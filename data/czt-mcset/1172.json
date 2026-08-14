@@ -1,0 +1,259 @@
+{
+ "num": 1172,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "IT supports every Czarnikow office, from London to São Paulo. The team is small, but it helps a lot of people every day.<br><br>In \"Today's Update\", you learn simple English for IT. You use this English when you talk to the help desk or when you join an online meeting.<br><br>You will learn 5 useful words and practise them in short, natural sentences. Go slowly — one step at a time. You can do it!",
+   "items": [
+    {
+     "q": "Which offices does IT support?",
+     "options": [
+      "Only the São Paulo office",
+      "Every Czarnikow office",
+      "Only the London office",
+      "No office"
+     ],
+     "answer": 1,
+     "why": "\"IT supports every Czarnikow office, from London to São Paulo.\""
+    },
+    {
+     "q": "When do you use this English?",
+     "options": [
+      "When you talk to the help desk or join an online meeting",
+      "When you write a long report",
+      "When you go on holiday",
+      "When you cook dinner"
+     ],
+     "answer": 0,
+     "why": "\"You use this English when you talk to the help desk or when you join an online meeting.\""
+    },
+    {
+     "q": "How many useful words will you learn?",
+     "options": [
+      "Two",
+      "Twenty",
+      "Five",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"You will learn 5 useful words.\""
+    },
+    {
+     "q": "The text says \"the team is small, but it helps a lot of people.\" This suggests that…",
+     "options": [
+      "the team is too big",
+      "the team does not work hard",
+      "a small team can still do a big job",
+      "the offices do not need IT"
+     ],
+     "answer": 2,
+     "why": "Inferência: mesmo pequeno, o time ajuda muita gente — um time pequeno pode fazer muito."
+    },
+    {
+     "q": "\"Go slowly — one step at a time\" suggests that the author would most likely DISAGREE with…",
+     "options": [
+      "taking your time",
+      "trying to learn everything very fast",
+      "learning a little every day",
+      "practising short sentences"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto pede calma, um passo de cada vez — não aprender tudo de uma vez, com pressa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James dando o comunicado de hoje. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone. This is James from IT. Here is today's update.<br><br>Good news first. The email system is ready. It is working well now, so you can send and receive your messages. The shared drive is also available, and all your files are there.<br><br>Now the systems that are still updating. The video meeting app is not ready yet. The new version is downloading, and it needs about one more hour. Please do not restart your computer during this time.<br><br>There is also a new install for the help desk board. It is small and quick. When your computer asks you to install it, please click \"yes\". It is safe.<br><br>If something looks strange, call IT support. We are a small team, but we are here all day. Thank you, and have a good morning.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Which system is ready and working well?",
+     "options": [
+      "The help desk board",
+      "The printer",
+      "The email system",
+      "The video meeting app"
+     ],
+     "answer": 2,
+     "why": "\"The email system is ready. It is working well now.\""
+    },
+    {
+     "q": "Where are all your files?",
+     "options": [
+      "On the shared drive",
+      "On your phone",
+      "On the help desk board",
+      "On the video meeting app"
+     ],
+     "answer": 0,
+     "why": "\"The shared drive is also available, and all your files are there.\""
+    },
+    {
+     "q": "What should you NOT do while the video app is updating?",
+     "options": [
+      "Send an email",
+      "Restart your computer",
+      "Call IT support",
+      "Open your files"
+     ],
+     "answer": 1,
+     "why": "\"Please do not restart your computer during this time.\""
+    },
+    {
+     "q": "James says the new install is \"small and quick\". This suggests that…",
+     "options": [
+      "it will take all day",
+      "it is very hard to do",
+      "it will not take much time",
+      "you should not do it"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"small and quick\" indica que não vai demorar muito."
+    },
+    {
+     "q": "How would you best describe James's message?",
+     "options": [
+      "Sad and tired",
+      "Angry and worried",
+      "Funny and silly",
+      "Calm and helpful"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele dá boas e más notícias com calma e se oferece para ajudar o dia todo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>update</strong> is working well today.\" An update is…",
+     "options": [
+      "an old computer",
+      "a meeting room",
+      "a coffee break",
+      "a new change to make software better"
+     ],
+     "answer": 3,
+     "why": "Update = atualização: uma mudança nova que melhora o programa."
+    },
+    {
+     "q": "Choose the correct word: \"When your computer asks you, please ___ the new app.\"",
+     "options": [
+      "install",
+      "drive",
+      "cook",
+      "sleep"
+     ],
+     "answer": 0,
+     "why": "Install = instalar: colocar o programa no computador."
+    },
+    {
+     "q": "\"The new <strong>version</strong> is downloading now.\" A version is…",
+     "options": [
+      "a lunch menu",
+      "one form of a program, with a number",
+      "a type of chair",
+      "a phone call"
+     ],
+     "answer": 1,
+     "why": "Version = versão: uma forma do programa, normalmente com um número."
+    },
+    {
+     "q": "Choose the correct word: \"The email system is ___. You can use it now.\"",
+     "options": [
+      "hungry",
+      "quiet",
+      "ready",
+      "late"
+     ],
+     "answer": 2,
+     "why": "Ready = pronto: pode usar agora."
+    },
+    {
+     "q": "\"The file is <strong>available</strong> on the shared drive.\" Available means…",
+     "options": [
+      "very old",
+      "on holiday",
+      "broken",
+      "you can get it and use it"
+     ],
+     "answer": 3,
+     "why": "Available = disponível: você consegue pegar e usar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no dia a dia de TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>log in</strong> with your name and password.\" To log in means to…",
+     "options": [
+      "turn off the computer",
+      "send a file",
+      "enter a system with your details",
+      "leave the office"
+     ],
+     "answer": 2,
+     "why": "Log in = entrar no sistema com seu usuário e senha."
+    },
+    {
+     "q": "\"IT will <strong>roll out</strong> the new app next week.\" To roll out means to…",
+     "options": [
+      "delete the app",
+      "sell the app",
+      "make it available to people, step by step",
+      "hide the app"
+     ],
+     "answer": 2,
+     "why": "Roll out = lançar/disponibilizar aos poucos para as pessoas."
+    },
+    {
+     "q": "\"Please <strong>back up</strong> your files before the update.\" To back up means to…",
+     "options": [
+      "delete your files",
+      "print your files",
+      "save an extra copy, just in case",
+      "email your boss"
+     ],
+     "answer": 2,
+     "why": "Back up = fazer uma cópia de segurança dos arquivos."
+    },
+    {
+     "q": "\"The help desk will <strong>set up</strong> your new laptop.\" To set up means to…",
+     "options": [
+      "lock it in a box",
+      "get it ready to use",
+      "sell it online",
+      "throw it away"
+     ],
+     "answer": 1,
+     "why": "Set up = preparar/configurar algo para começar a usar."
+    },
+    {
+     "q": "\"My computer is slow, so I will <strong>restart</strong> it.\" To restart means to…",
+     "options": [
+      "give it to a friend",
+      "clean the screen",
+      "buy a new one",
+      "turn it off and on again"
+     ],
+     "answer": 3,
+     "why": "Restart = reiniciar: desligar e ligar de novo."
+    }
+   ]
+  }
+ ]
+}

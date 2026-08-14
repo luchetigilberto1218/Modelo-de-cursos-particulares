@@ -1,0 +1,259 @@
+{
+ "num": 1131,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Accounting is the language of numbers at Czarnikow. Today's lesson is simple: Income vs Expense. You will learn short, practical sentences to use with the finance team.<br><br>Money comes in, and money goes out. Income is the money we get. Expense is the money we spend. When income is more than expense, we have a profit. When expense is more than income, we have a loss.<br><br>Learn five useful words and practise them in short, natural sentences. Go slowly — one step at a time. English comes in CAN's, not in CAN'Ts. You can do it!",
+   "items": [
+    {
+     "q": "What is this lesson about?",
+     "options": [
+      "Marketing",
+      "Travel English",
+      "Income vs Expense",
+      "Job interviews"
+     ],
+     "answer": 2,
+     "why": "\"Today's lesson is simple: Income vs Expense.\""
+    },
+    {
+     "q": "When do we have a profit?",
+     "options": [
+      "When income is more than expense",
+      "When there is no money",
+      "When we spend everything",
+      "When expense is more than income"
+     ],
+     "answer": 0,
+     "why": "\"When income is more than expense, we have a profit.\""
+    },
+    {
+     "q": "What is \"income\"?",
+     "options": [
+      "The money we get",
+      "The money we spend",
+      "A finance report",
+      "A big office"
+     ],
+     "answer": 0,
+     "why": "\"Income is the money we get.\""
+    },
+    {
+     "q": "The text says \"one step at a time\". This suggests the author wants you to…",
+     "options": [
+      "learn quickly and skip words",
+      "study only once",
+      "stop after one lesson",
+      "learn slowly and calmly"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Go slowly — one step at a time\" mostra que o objetivo é aprender com calma."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "you can learn this",
+      "English is too hard for you",
+      "you should give up",
+      "numbers are not important"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"You can do it!\" e \"English comes in CAN's\" mostram um tom positivo e de incentivo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentando o tema para um novo trainee. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the accounting team. My name is Sophie. Don't worry — we will start slowly, one small step at a time.<br><br>Today we look at income and expense. Income is the money that comes in. Expense is the money that goes out. It is simple, but it is very important for our work.<br><br>Here is a small rule to remember. When income is more than expense, we have a profit. That is good news for the company. When income is less than expense, we have a loss. That is not so good, but it happens sometimes.<br><br>Now, repeat with me, please. Profit. Loss. More. Less. Than. Very good. Now say it again, a little louder.<br><br>Our team is small, but we are very organised. We check the numbers at the end of every day. Clear numbers, honest numbers — that is our job here.<br><br>You will make some mistakes at first, and that is okay. One careful step at a time. That is how good accountants work. I am here to help you. Are you ready for the next lesson?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "The CEO",
+      "A new client",
+      "A finance director",
+      "Sophie, from the accounting team"
+     ],
+     "answer": 3,
+     "why": "\"My name is Sophie\" e ela dá boas-vindas ao time de contabilidade."
+    },
+    {
+     "q": "What is an expense?",
+     "options": [
+      "A profit",
+      "The money that goes out",
+      "The money that comes in",
+      "A team meeting"
+     ],
+     "answer": 1,
+     "why": "\"Expense is the money that goes out.\""
+    },
+    {
+     "q": "When do we have a loss?",
+     "options": [
+      "When the team is small",
+      "When there is no expense",
+      "When income is more than expense",
+      "When income is less than expense"
+     ],
+     "answer": 3,
+     "why": "\"When income is less than expense, we have a loss.\""
+    },
+    {
+     "q": "How does Sophie feel about the trainee making mistakes?",
+     "options": [
+      "She wants them to leave",
+      "She is angry",
+      "She thinks it is okay",
+      "She does not care"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"You will make mistakes at first, and that is okay\" mostra paciência e apoio."
+    },
+    {
+     "q": "What kind of teacher is Sophie?",
+     "options": [
+      "Cold and quick",
+      "Bored and tired",
+      "Strict and unhappy",
+      "Patient and encouraging"
+     ],
+     "answer": 3,
+     "why": "Inferência: ela vai devagar, repete e diz \"I am here to help you\" — tom paciente e encorajador."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We have a <strong>profit</strong> this month.\" A <strong>profit</strong> is…",
+     "options": [
+      "money we lose",
+      "money we gain",
+      "a big mistake",
+      "a new office"
+     ],
+     "answer": 1,
+     "why": "Profit = lucro: quando ganhamos dinheiro."
+    },
+    {
+     "q": "\"Last month we had a <strong>loss</strong>.\" A <strong>loss</strong> is…",
+     "options": [
+      "a good report",
+      "a happy team",
+      "money we gain",
+      "money we lose"
+     ],
+     "answer": 3,
+     "why": "Loss = prejuízo: quando perdemos dinheiro."
+    },
+    {
+     "q": "Choose the correct word: \"Income is ___ than expense, so we have a profit.\"",
+     "options": [
+      "small",
+      "less",
+      "old",
+      "more"
+     ],
+     "answer": 3,
+     "why": "More = mais. Renda maior que despesa = lucro."
+    },
+    {
+     "q": "Choose the correct word: \"This week we spent ___ money than last week. Good news!\"",
+     "options": [
+      "many",
+      "big",
+      "less",
+      "more"
+     ],
+     "answer": 2,
+     "why": "Less = menos: gastar menos dinheiro."
+    },
+    {
+     "q": "\"Income is more <strong>than</strong> expense.\" The word <strong>than</strong> is used to…",
+     "options": [
+      "ask a question",
+      "say goodbye",
+      "compare two things",
+      "count money"
+     ],
+     "answer": 2,
+     "why": "Than = do que: usamos para comparar (more than, less than)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no dia a dia da equipe de contabilidade. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>fill in</strong> this form, please?\" To fill in means to…",
+     "options": [
+      "read it out loud",
+      "send it by post",
+      "throw it away",
+      "write the information in it"
+     ],
+     "answer": 3,
+     "why": "Fill in = preencher, escrever as informações no formulário."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the numbers again.\" To go over means to…",
+     "options": [
+      "delete them",
+      "hide the numbers",
+      "check or review them",
+      "print them"
+     ],
+     "answer": 2,
+     "why": "Go over = revisar, checar de novo."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the report.\" To sign off on means to…",
+     "options": [
+      "approve it",
+      "read it slowly",
+      "copy it",
+      "lose it"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar, dar o aval final."
+    },
+    {
+     "q": "\"Please <strong>write down</strong> the total.\" To write down means to…",
+     "options": [
+      "say it fast",
+      "forget it",
+      "put it on paper",
+      "email it"
+     ],
+     "answer": 2,
+     "why": "Write down = anotar, escrever no papel."
+    },
+    {
+     "q": "\"We need to <strong>add up</strong> the numbers.\" To add up means to…",
+     "options": [
+      "spend the money",
+      "delete the numbers",
+      "compare two teams",
+      "put numbers together to get a total"
+     ],
+     "answer": 3,
+     "why": "Add up = somar, juntar os números para achar o total."
+    }
+   ]
+  }
+ ]
+}

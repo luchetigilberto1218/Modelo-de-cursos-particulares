@@ -1,0 +1,259 @@
+{
+ "num": 101,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "The most expensive meetings in any organisation are the ones where nothing visibly goes wrong. Everyone turns up, speaks politely, and leaves with a warm feeling of alignment — which dissolves quietly over the following days, as each participant returns to their own interpretation of what was actually agreed.<br><br>The discipline that prevents this is unfashionable but effective. It is a clear, written pre-read circulated in advance, so the meeting can discuss rather than inform. It is an explicit statement of what this particular meeting must decide, separated from what it cannot. And it is a tight close in which decisions, owners and dates are repeated aloud — not because the chair doubts the attention of the room, but because saying them out loud turns implied consensus into actual commitment.<br><br>Skilled facilitators also manage the dynamics, not only the agenda. They notice who has not spoken, and create the gap for them. They interrupt the person who is drifting, gently but without apology. They pause when the air goes heavy, knowing that the most important sentence in the meeting is often the one no one wants to be the first to say.",
+   "items": [
+    {
+     "q": "Why does the author call some meetings \"the most expensive\"?",
+     "options": [
+      "They run far longer than scheduled",
+      "They look successful but produce no real commitment",
+      "They involve large financial decisions",
+      "They require the most senior people to attend"
+     ],
+     "answer": 1,
+     "why": "\"the ones where nothing visibly goes wrong\" — a sensação de alinhamento se dissolve porque nada de real foi decidido."
+    },
+    {
+     "q": "What is the purpose of circulating a written pre-read in advance?",
+     "options": [
+      "So the chair can skip the agenda",
+      "So junior staff can be excluded",
+      "So attendance can be tracked",
+      "So the meeting can discuss rather than inform"
+     ],
+     "answer": 3,
+     "why": "\"a clear, written pre-read circulated in advance, so the meeting can discuss rather than inform.\""
+    },
+    {
+     "q": "Why are decisions, owners and dates repeated aloud at the close?",
+     "options": [
+      "Because the chair doubts the room was paying attention",
+      "Because saying them aloud turns implied consensus into commitment",
+      "Because it fills the remaining time",
+      "Because company policy requires minutes"
+     ],
+     "answer": 1,
+     "why": "\"not because the chair doubts the attention… but because saying them out loud turns implied consensus into actual commitment.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Written preparation raises the quality of the discussion.",
+      "A polite, friendly meeting is a reliable sign that it succeeded.",
+      "Facilitation involves reading the room, not just the agenda.",
+      "Silence in a meeting can carry real meaning."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto abre justamente atacando a ideia de que uma reunião sem atritos visíveis é bem-sucedida."
+    },
+    {
+     "q": "What does \"the most important sentence… is often the one no one wants to be the first to say\" suggest about good facilitators?",
+     "options": [
+      "They prefer written comments to spoken ones",
+      "They deliberately surface the difficult point others are avoiding",
+      "They avoid uncomfortable topics to protect harmony",
+      "They should let silences resolve themselves"
+     ],
+     "answer": 1,
+     "why": "Inferência: pausar quando o clima pesa serve para trazer à tona o assunto que ninguém ousa iniciar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver conduzindo a reunião de revisão estratégica. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right. We've had the numbers, we've had both cases, and I can feel the room going quiet — so let me be the one to name it. The truth is, the two of you disagree, fundamentally, about whether we double down on the existing platform or fund the new one. And that disagreement is exactly what this meeting is here to resolve. It isn't a detail we can park.<br><br>Priya, you've made your case well, but Daniel hasn't finished his — and I noticed you stopped him twice. Daniel, take two minutes, uninterrupted. Tell me the one risk that keeps you up at night if we back the existing platform.<br><br>What I will not do is let us leave here with a warm sense of alignment that quietly falls apart by Thursday. So before anyone reaches for their laptop: by the end of this hour we decide a direction, we name an owner, and we set a date. If we genuinely can't decide today, then the decision is that we don't decide today — and we agree, out loud, what we need before we can. Silence is not a decision. Let's use the discomfort rather than smoothing it over.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does Oliver choose to speak up when the room goes quiet?",
+     "options": [
+      "To move on to a different agenda item",
+      "To end the meeting early",
+      "To ask for the numbers again",
+      "To name the disagreement no one is voicing"
+     ],
+     "answer": 3,
+     "why": "\"let me be the one to name it… the two of you disagree, fundamentally.\""
+    },
+    {
+     "q": "What does Oliver say is the specific purpose of this meeting?",
+     "options": [
+      "To assign minor action items",
+      "To review last quarter's numbers",
+      "To resolve the disagreement over which platform to fund",
+      "To smooth over the tension between the two executives"
+     ],
+     "answer": 2,
+     "why": "\"that disagreement is exactly what this meeting is here to resolve. It isn't a detail we can park.\""
+    },
+    {
+     "q": "What facilitation move does Oliver make with Priya and Daniel?",
+     "options": [
+      "He asks Priya to summarise Daniel's case",
+      "He postpones both of their contributions",
+      "He asks them to submit their views in writing",
+      "He gives Daniel uninterrupted time after noticing Priya cut him off"
+     ],
+     "answer": 3,
+     "why": "\"I noticed you stopped him twice. Daniel, take two minutes, uninterrupted.\""
+    },
+    {
+     "q": "When Oliver says \"if we genuinely can't decide today, then the decision is that we don't decide today\", he is implying that…",
+     "options": [
+      "leaving without an explicit outcome is itself a failure to be avoided",
+      "the meeting should be cancelled",
+      "the executives should decide privately afterwards",
+      "no decision is ever possible in one meeting"
+     ],
+     "answer": 0,
+     "why": "Inferência: mesmo o adiamento precisa ser uma escolha declarada, com owner e condições — nunca um vácuo."
+    },
+    {
+     "q": "What does \"Let's use the discomfort rather than smoothing it over\" reveal about Oliver's approach?",
+     "options": [
+      "He treats tension as a resource for reaching a real decision",
+      "He avoids conflict to protect the relationships",
+      "He wants to delegate the decision upward",
+      "He believes the meeting has already failed"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele trata o desconforto como sinal útil, não como algo a ser suavizado — coerente com \"silence is not a decision\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The board received a ten-page <strong>pre-read</strong> two days before.\" A pre-read is…",
+     "options": [
+      "a summary written after the meeting",
+      "the opening remarks of the chair",
+      "material circulated in advance so people arrive informed",
+      "a rehearsal of the presentation"
+     ],
+     "answer": 2,
+     "why": "Pre-read = leitura prévia: material enviado antes para que a reunião discuta, não informe."
+    },
+    {
+     "q": "Choose the correct word: \"Everyone nodded, but it was <strong>implicit consensus</strong> — no one had ___ committed to anything.\"",
+     "options": [
+      "privately",
+      "eventually",
+      "reluctantly",
+      "explicitly"
+     ],
+     "answer": 3,
+     "why": "Consenso implícito é o oposto de um compromisso explícito, dito em voz alta."
+    },
+    {
+     "q": "\"Every decision was logged with a <strong>decision owner</strong>.\" A decision owner is…",
+     "options": [
+      "the most senior person present",
+      "the person accountable for carrying the decision through",
+      "the person who called the meeting",
+      "the person who takes the minutes"
+     ],
+     "answer": 1,
+     "why": "Decision owner = responsável por levar a decisão adiante e responder por ela."
+    },
+    {
+     "q": "Choose the correct word: \"The chair felt the ___ in the room turn tense and paused before pushing on.\"",
+     "options": [
+      "minutes",
+      "pre-read",
+      "agenda",
+      "air"
+     ],
+     "answer": 3,
+     "why": "\"the air in the room\" = o clima da sala; é o que um bom facilitador percebe."
+    },
+    {
+     "q": "\"A strong <strong>closing loop</strong> repeats decisions, owners and dates aloud.\" A closing loop is…",
+     "options": [
+      "the final segment that confirms and commits what was agreed",
+      "the section where new topics are raised",
+      "a recurring calendar invite",
+      "a follow-up email sent the next week"
+     ],
+     "answer": 0,
+     "why": "Closing loop = fechamento: o momento que converte consenso implícito em compromisso real."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de alto risco. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's not <strong>talk over</strong> each other — Daniel, finish your point.\" To talk over someone means to…",
+     "options": [
+      "discuss the topic thoroughly",
+      "praise their contribution",
+      "summarise what they said",
+      "speak while they are still speaking, cutting them off"
+     ],
+     "answer": 3,
+     "why": "Talk over = falar por cima, interromper enquanto o outro ainda fala."
+    },
+    {
+     "q": "\"Before we close, let's <strong>circle back to</strong> the budget question.\" To circle back to means to…",
+     "options": [
+      "delegate a task",
+      "abandon a topic",
+      "vote on a proposal",
+      "return to a point raised earlier"
+     ],
+     "answer": 3,
+     "why": "Circle back to = voltar a um ponto que ficou pendente."
+    },
+    {
+     "q": "\"We keep <strong>going round in circles</strong> on this.\" This means the discussion is…",
+     "options": [
+      "dominated by one person",
+      "moving too quickly to follow",
+      "reaching a clear conclusion",
+      "repeating itself without making progress"
+     ],
+     "answer": 3,
+     "why": "Go round in circles = girar em falso, discutir sem avançar."
+    },
+    {
+     "q": "\"Can we <strong>park</strong> the pricing debate and decide the direction first?\" To park an issue means to…",
+     "options": [
+      "escalate it to the board",
+      "remove it from the agenda for good",
+      "resolve it immediately",
+      "set it aside deliberately for later"
+     ],
+     "answer": 3,
+     "why": "Park = estacionar: deixar de lado de propósito para retomar depois."
+    },
+    {
+     "q": "\"I'd like to <strong>draw you out</strong>, Sara — you've been quiet.\" To draw someone out means to…",
+     "options": [
+      "encourage them to share what they think",
+      "assign them an action item",
+      "put them on the spot to embarrass them",
+      "ask them to leave the room"
+     ],
+     "answer": 0,
+     "why": "Draw someone out = incentivar alguém calado a se expressar — criar o espaço para quem não falou."
+    }
+   ]
+  }
+ ]
+}

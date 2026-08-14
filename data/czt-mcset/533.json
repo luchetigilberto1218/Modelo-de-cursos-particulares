@@ -1,0 +1,259 @@
+{
+ "num": 533,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the top of an organisation, cybersecurity stops being a department and becomes a leadership discipline. Attacks do not respect org charts. When a serious incident hits the company, the decisions made in the first hour come from the executive team — not from the security engineers, who are busy doing the technical work. Those decisions include whom to tell, when to tell them, what to say publicly, and how to hold the business together while the response unfolds.<br><br>It is essential that senior leaders rehearse these decisions in calm times. A tabletop exercise — a simulated incident run with real people in a real room — is worth ten training videos. It is critical that the people who will make the decisions know each other, know the plan, and know the limits of what they can honestly promise in the first minutes.<br><br>Security at the top is not about knowing every threat. It is about being ready — calmly and together — when one of them finally arrives.",
+   "items": [
+    {
+     "q": "According to the text, who makes the decisions in the first hour of a serious incident?",
+     "options": [
+      "The security engineers",
+      "The executive team",
+      "The company's legal counsel",
+      "Whoever discovers the breach"
+     ],
+     "answer": 1,
+     "why": "\"the decisions made in the first hour come from the executive team — not from the security engineers\"."
+    },
+    {
+     "q": "What does the author say a tabletop exercise is worth?",
+     "options": [
+      "A week of technical drills",
+      "A published incident-response plan",
+      "Ten training videos",
+      "A dedicated security operations centre"
+     ],
+     "answer": 2,
+     "why": "\"A tabletop exercise… is worth ten training videos.\""
+    },
+    {
+     "q": "The phrase \"Attacks do not respect org charts\" most nearly suggests that…",
+     "options": [
+      "attackers deliberately target the most senior executives",
+      "reporting lines should be redrawn after every breach",
+      "the security team reports to the wrong department",
+      "an incident can cut across departments and force leaders to act outside their usual remit"
+     ],
+     "answer": 3,
+     "why": "Inferência: se o ataque ignora o organograma, a crise não fica contida numa caixa — a liderança precisa agir fora da rotina."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Cybersecurity is best left entirely to the technical specialists.",
+      "The first-hour choices are fundamentally leadership choices.",
+      "Executive readiness matters more than knowing every possible threat.",
+      "Senior leaders should practise their response before a crisis occurs."
+     ],
+     "answer": 0,
+     "why": "Inferência: a tese do texto é justamente que segurança, no topo, é disciplina de liderança — não um silo técnico."
+    },
+    {
+     "q": "Why does the author stress knowing \"the limits of what they can honestly promise in the first minutes\"?",
+     "options": [
+      "Because the security engineers set the communication rules",
+      "Because promises made under pressure without knowing the limits can damage credibility later",
+      "Because executives are legally barred from speaking during an incident",
+      "Because the first minutes are unimportant to the outcome"
+     ],
+     "answer": 1,
+     "why": "Inferência: conhecer os limites evita prometer o que não se pode cumprir — o que corroeria a confiança conforme a resposta se desenrola."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte conduzindo o exercício simulado. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let's pause the clock there. We are eleven minutes into a simulated ransomware attack, and I want you to notice what just happened in this room, because it is exactly why we run these exercises in calm times.<br><br>The moment the scenario said the trading systems were down, three of you reached for your phones to draft a public statement. Nobody had confirmed what was actually encrypted. We must resist that instinct. In a real incident, the first hour belongs to us as a leadership team, not to a press release — and whatever we say publicly, we have to be able to stand behind an hour later.<br><br>I also noticed that when I asked who has the authority to pull the payment systems offline, the room went quiet. That silence is the finding. It ought to be one name, agreed in advance, and right now it isn't. So before the next round, I want three things written down: whom we notify, in what order, and the single decision each of you owns.<br><br>We are not here to look competent. We are here to discover, calmly and together, exactly which decisions we are not yet ready to make under pressure.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What did three members of the team do the moment the trading systems were reported down?",
+     "options": [
+      "They called the security engineers",
+      "They reached for their phones to draft a public statement",
+      "They evacuated the room",
+      "They authorised a ransom payment"
+     ],
+     "answer": 1,
+     "why": "\"three of you reached for your phones to draft a public statement.\""
+    },
+    {
+     "q": "According to Charlotte, why does she say \"that silence is the finding\"?",
+     "options": [
+      "Because the scenario had ended",
+      "Because no single, pre-agreed person held the authority to pull the payment systems offline",
+      "Because the engineers had already solved the problem",
+      "Because the team was too tired to answer"
+     ],
+     "answer": 1,
+     "why": "O silêncio revela que ninguém sabia quem tinha autoridade — a lacuna é justamente o que o exercício deveria expor."
+    },
+    {
+     "q": "What are the three things Charlotte wants written down before the next round?",
+     "options": [
+      "The passwords, the backups, and the recovery time",
+      "Whom to notify, in what order, and the single decision each person owns",
+      "The budget, the timeline, and the vendor list",
+      "The attacker's demands, the deadline, and the payment method"
+     ],
+     "answer": 1,
+     "why": "\"whom we notify, in what order, and the single decision each of you owns.\""
+    },
+    {
+     "q": "What does Charlotte imply by \"We are not here to look competent\"?",
+     "options": [
+      "The exercise is meant to surface weaknesses, not to reassure people they are already prepared",
+      "Competence does not matter in a crisis",
+      "The team should hide the exercise from the board",
+      "The exercise is purely a formality"
+     ],
+     "answer": 0,
+     "why": "Inferência: o valor do exercício está em descobrir o que ainda falha — não em produzir uma boa impressão."
+    },
+    {
+     "q": "Which best describes Charlotte's approach as a facilitator?",
+     "options": [
+      "Indifferent to the team's mistakes",
+      "Composed and diagnostic, using the exercise to expose gaps",
+      "Alarmed and improvising as the scenario unfolds",
+      "Focused mainly on the technical recovery steps"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela mantém a calma, interrompe o relógio e trata cada falha como um achado a corrigir — postura diagnóstica."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"For the board, security had become a genuine <strong>leadership discipline</strong>, not a line item in the IT budget.\" A leadership discipline is…",
+     "options": [
+      "a compulsory training course for engineers",
+      "a punishment imposed on managers",
+      "a capability that senior leaders must own and practise, not delegate away",
+      "a set of firewall configurations"
+     ],
+     "answer": 2,
+     "why": "Leadership discipline = disciplina de liderança: algo que o topo deve dominar e praticar, não delegar."
+    },
+    {
+     "q": "\"The ransomware crisis began to <strong>unfold</strong> faster than anyone had modelled.\" To unfold here means to…",
+     "options": [
+      "be documented in detail",
+      "be reversed by the engineers",
+      "develop or play out over time",
+      "come to a definite conclusion"
+     ],
+     "answer": 2,
+     "why": "To unfold = desenrolar-se: a situação vai se desenvolvendo ao longo do tempo."
+    },
+    {
+     "q": "Choose the correct word: \"The whole point of drilling in ___ is that judgement built under calm conditions survives the real pressure.\"",
+     "options": [
+      "the org chart",
+      "calm times",
+      "the aftermath",
+      "the first hour"
+     ],
+     "answer": 1,
+     "why": "Calm times = tempos calmos: ensaiar antes da crise para que a decisão resista sob pressão."
+    },
+    {
+     "q": "\"A <strong>tabletop exercise</strong> revealed that no one owned the decision to notify regulators.\" A tabletop exercise is…",
+     "options": [
+      "a written policy circulated to staff",
+      "an audit performed by external consultants",
+      "a simulated incident walked through by real decision-makers in a room",
+      "a live penetration test of the network"
+     ],
+     "answer": 2,
+     "why": "Tabletop exercise = exercício simulado: as pessoas reais percorrem um incidente fictício numa sala."
+    },
+    {
+     "q": "Choose the correct word: \"Leaders must know the ___ of what they can promise, so they never commit to more than the facts allow.\"",
+     "options": [
+      "vendors",
+      "layers",
+      "backups",
+      "limits"
+     ],
+     "answer": 3,
+     "why": "Limits = limites: saber até onde se pode prometer para não extrapolar os fatos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de gestão de crise e segurança. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The CEO still has to <strong>sign off on</strong> the incident-response playbook before we can drill it.\" To sign off on means to…",
+     "options": [
+      "shelve it indefinitely",
+      "formally approve it",
+      "read it quickly",
+      "circulate it for comments"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the tabletop programme to every business unit this quarter.\" To roll out means to…",
+     "options": [
+      "implement it progressively",
+      "cancel it in phases",
+      "present it to the press",
+      "test it in secret"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva, unidade por unidade."
+    },
+    {
+     "q": "\"When Charlotte named a single decision-owner, two directors <strong>pushed back on</strong> it.\" They…",
+     "options": [
+      "forgot about it entirely",
+      "resisted or challenged the idea",
+      "approved it without question",
+      "postponed reading it"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar por completo."
+    },
+    {
+     "q": "\"The team agreed the escalation plan in the exercise but never <strong>followed through</strong> in practice.\" They…",
+     "options": [
+      "documented it in full",
+      "rewrote it from scratch",
+      "delegated it to the engineers",
+      "failed to carry it to completion"
+     ],
+     "answer": 3,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Buying yet another monitoring tool won't <strong>move the needle</strong> if no one owns the first-hour decisions.\" This means it will…",
+     "options": [
+      "not make a meaningful difference",
+      "cost more than budgeted",
+      "take too long to install",
+      "provoke internal resistance"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

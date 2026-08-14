@@ -8,10 +8,10 @@
     {
      "q": "How many parts does a professional email have?",
      "options": [
-      "Three",
-      "Four",
       "Five",
-      "Two"
+      "Four",
+      "Two",
+      "Three"
      ],
      "answer": 1,
      "why": "\"A professional email has four parts: the greeting, the reason, the request and the goodbye.\""
@@ -19,32 +19,32 @@
     {
      "q": "Which is an example of a greeting?",
      "options": [
-      "\"Could you send it?\"",
-      "\"Dear Maria\"",
       "\"Thank you\"",
-      "\"Best regards\""
+      "\"Could you send it?\"",
+      "\"Best regards\"",
+      "\"Dear Maria\""
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Greeting: 'Dear Maria' or 'Hi John'.\""
     },
     {
      "q": "Which is an example of a request?",
      "options": [
-      "\"Could you please send it by Friday?\"",
-      "\"I am writing about the report\"",
       "\"Hi John\"",
-      "\"Best regards\""
+      "\"Best regards\"",
+      "\"I am writing about the report\"",
+      "\"Could you please send it by Friday?\""
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Request: 'Could you please send it by Friday?'\""
     },
     {
      "q": "How should a good email be?",
      "options": [
       "Short and clear",
+      "Full of stories",
       "Rude",
-      "Long and detailed",
-      "Full of stories"
+      "Long and detailed"
      ],
      "answer": 0,
      "why": "\"Good emails are short and clear.\""
@@ -52,12 +52,12 @@
     {
      "q": "What does 'one topic, one email' mean?",
      "options": [
-      "Keep each email to a single subject",
+      "Put many topics in one email",
       "Send no emails",
       "Write long stories",
-      "Put many topics in one email"
+      "Keep each email to a single subject"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"One topic, one email.\""
     }
    ]
@@ -72,43 +72,43 @@
     {
      "q": "What is the email asking for?",
      "options": [
+      "A meeting",
       "The monthly sugar report",
       "A holiday",
-      "A payment",
-      "A meeting"
+      "A payment"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"to ask for the monthly sugar report.\""
     },
     {
      "q": "Why does Charlotte use 'Hi Pedro' and not 'Dear Mr'?",
      "options": [
       "He is her boss",
-      "He is a client",
       "He is a colleague, so 'Hi' is fine",
-      "It is a mistake"
+      "It is a mistake",
+      "He is a client"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"He's a colleague, so 'Hi' is fine.\""
     },
     {
      "q": "What polite words does she use in the request?",
      "options": [
+      "'Give me'",
       "'Could you please'",
-      "'Send it now'",
       "'You must'",
-      "'Give me'"
+      "'Send it now'"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Could you please send it to me by Friday?\""
     },
     {
      "q": "Why does she say 'Friday' and not 'soon'?",
      "options": [
-      "Because she forgot",
+      "To be vague",
       "To be rude",
       "To give a clear day",
-      "To be vague"
+      "Because she forgot"
      ],
      "answer": 2,
      "why": "\"I give a clear day: Friday. Not 'soon', not 'when you can'.\""
@@ -117,8 +117,8 @@
      "q": "How long does Charlotte say the email takes to read?",
      "options": [
       "Ten seconds",
-      "One day",
       "One hour",
+      "One day",
       "Ten minutes"
      ],
      "answer": 0,
@@ -143,30 +143,30 @@
     {
      "q": "The **subject** of an email is…",
      "options": [
-      "the greeting",
-      "the short title that says what it is about",
       "the attachment",
-      "the goodbye"
+      "the greeting",
+      "the goodbye",
+      "the short title that says what it is about"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Subject = assunto."
     },
     {
      "q": "Choose the correct word: \"Please find the file in the **___**.\"",
      "options": [
-      "attachment",
-      "subject",
       "deadline",
-      "greeting"
+      "subject",
+      "greeting",
+      "attachment"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Attachment = anexo."
     },
     {
      "q": "To **reply** means to…",
      "options": [
-      "forward an email",
       "send a new email",
+      "forward an email",
       "delete an email",
       "answer an email"
      ],
@@ -176,12 +176,12 @@
     {
      "q": "Choose the correct word: \"The **___** is Friday — please send it by then.\"",
      "options": [
-      "subject",
-      "greeting",
       "attachment",
-      "deadline"
+      "deadline",
+      "greeting",
+      "subject"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Deadline = prazo."
     }
    ]
@@ -192,56 +192,56 @@
     {
      "q": "\"I am **writing about** the report.\" To write about something means to…",
      "options": [
-      "ignore it",
-      "delete it",
       "email regarding it",
-      "print it"
+      "print it",
+      "ignore it",
+      "delete it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Writing about = escrevendo a respeito de."
     },
     {
      "q": "\"Could you **get back to me** by Friday?\" To get back to someone means to…",
      "options": [
-      "pay them",
-      "visit them",
+      "ignore them",
       "reply to them",
-      "ignore them"
+      "pay them",
+      "visit them"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Get back to = dar retorno."
     },
     {
      "q": "\"I'll **follow up** if I don't hear back.\" To follow up means to…",
      "options": [
       "cancel",
-      "make contact again",
       "forget",
-      "reply-all"
+      "reply-all",
+      "make contact again"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Follow up = dar sequência."
     },
     {
      "q": "\"Please **let me know** if Friday works.\" To let someone know means to…",
      "options": [
-      "tell them",
       "hide from them",
-      "ignore them",
-      "email everyone"
+      "tell them",
+      "email everyone",
+      "ignore them"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Let me know = me avise."
     },
     {
      "q": "\"Keep it **short and sweet**.\" Short and sweet means…",
      "options": [
+      "rude",
       "long and detailed",
-      "brief and pleasant",
       "confusing",
-      "rude"
+      "brief and pleasant"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Short and sweet = curto e agradável."
     }
    ]

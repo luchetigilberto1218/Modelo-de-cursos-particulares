@@ -1,0 +1,259 @@
+{
+ "num": 259,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Digital tools have changed supply chain work. An ERP system tracks orders, stock and invoices in one place. Tracking systems show exactly where a shipment is, in real time.<br><br>Dashboards turn thousands of numbers into one clear picture. AI is starting to help too. It predicts demand, spots patterns, and warns teams of problems early.<br><br>None of this replaces good people. But a good team with the right tools does in minutes what a great team used to do in days.",
+   "items": [
+    {
+     "q": "What does an ERP system do?",
+     "options": [
+      "It hires new people",
+      "It tracks orders, stock and invoices in one place",
+      "It ships the products",
+      "It sells the goods"
+     ],
+     "answer": 1,
+     "why": "\"An ERP system tracks orders, stock and invoices in one place.\""
+    },
+    {
+     "q": "What do tracking systems show?",
+     "options": [
+      "Where a shipment is, in real time",
+      "The price of the goods",
+      "The name of the driver",
+      "The weather"
+     ],
+     "answer": 0,
+     "why": "\"Tracking systems show exactly where a shipment is, in real time.\""
+    },
+    {
+     "q": "What do dashboards do?",
+     "options": [
+      "They order more stock",
+      "They pay the invoices",
+      "They send emails",
+      "They turn many numbers into one clear picture"
+     ],
+     "answer": 3,
+     "why": "\"Dashboards turn thousands of numbers into one clear picture.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "AI can warn teams early",
+      "Digital tools replace good people",
+      "Dashboards make data clear",
+      "Tools help teams work faster"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"None of this replaces good people.\" O autor discorda que as ferramentas substituam as pessoas."
+    },
+    {
+     "q": "The last sentence suggests that…",
+     "options": [
+      "Good tools make a team much faster",
+      "Minutes are longer than days",
+      "Teams should work more days",
+      "Old teams were better"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"does in minutes what a great team used to do in days\" mostra que as ferramentas economizam muito tempo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily mostrando o sistema para um novo analista. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team. Let me show you this screen. It is our ERP system.<br><br>Before, we used three different systems. Every morning I spent one hour to check the numbers. I opened one screen for orders, one for stock, and one for invoices. It was slow, and mistakes were easy.<br><br>Now everything is in one place. You open the ERP, and you see all the data on one screen. Orders, stock, invoices — all here. It saves us a lot of time.<br><br>Look at this part. It is a small dashboard. It shows our shipments in real time. You can see where each truck is right now. Green means on time. Red means late.<br><br>My advice is simple. Always put good data in. The tool is only as good as the numbers you type. If the data is wrong, the screen is wrong too.<br><br>Take your time to learn it. In one week, it will feel easy.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What screen is Emily showing the new analyst?",
+     "options": [
+      "The email system",
+      "The website",
+      "The ERP system",
+      "The phone app"
+     ],
+     "answer": 2,
+     "why": "\"Let me show you this screen. It is our ERP system.\""
+    },
+    {
+     "q": "How many systems did the team use before?",
+     "options": [
+      "One",
+      "Two",
+      "Five",
+      "Three"
+     ],
+     "answer": 3,
+     "why": "\"Before, we used three different systems.\""
+    },
+    {
+     "q": "What does the small dashboard show?",
+     "options": [
+      "The staff names",
+      "The prices",
+      "The shipments in real time",
+      "The office map"
+     ],
+     "answer": 2,
+     "why": "\"It is a small dashboard. It shows our shipments in real time.\""
+    },
+    {
+     "q": "Why does Emily say \"always put good data in\"?",
+     "options": [
+      "Because the screen is small",
+      "Because the team is new",
+      "Because bad data makes the screen wrong too",
+      "Because the tool is expensive"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"The tool is only as good as the numbers you type. If the data is wrong, the screen is wrong too.\""
+    },
+    {
+     "q": "How does Emily feel about the new system?",
+     "options": [
+      "She thinks it is worse than before",
+      "She wants the old systems back",
+      "She thinks it saves time and helps the team",
+      "She does not like it"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela diz \"It saves us a lot of time\" e mostra o sistema com tom positivo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We can see the truck in <strong>real time</strong>.\" Real time means…",
+     "options": [
+      "last week",
+      "right now, as it happens",
+      "in one year",
+      "on paper"
+     ],
+     "answer": 1,
+     "why": "Real time = tempo real: no momento em que acontece."
+    },
+    {
+     "q": "Choose the correct word: \"The AI can ___ next month's demand from old sales data.\"",
+     "options": [
+      "close",
+      "predict",
+      "clean",
+      "print"
+     ],
+     "answer": 1,
+     "why": "To predict = prever: dizer o que vai acontecer no futuro."
+    },
+    {
+     "q": "\"The system found a strange <strong>pattern</strong> in the orders.\" A pattern is…",
+     "options": [
+      "a new office",
+      "a repeated shape or trend",
+      "a broken machine",
+      "a price list"
+     ],
+     "answer": 1,
+     "why": "Pattern = padrão: algo que se repete de forma parecida."
+    },
+    {
+     "q": "Choose the correct word: \"The app can ___ the team when stock is low.\"",
+     "options": [
+      "warn",
+      "pay",
+      "sell",
+      "drive"
+     ],
+     "answer": 0,
+     "why": "To warn = avisar: dar um aviso sobre um problema."
+    },
+    {
+     "q": "\"The ERP is a very useful <strong>tool</strong>.\" A tool is…",
+     "options": [
+      "a thing you use to do work",
+      "a report",
+      "a manager",
+      "a meeting"
+     ],
+     "answer": 0,
+     "why": "Tool = ferramenta: algo que você usa para fazer um trabalho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho com ferramentas digitais. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"IT will <strong>set up</strong> the new system next week.\" To set up means to…",
+     "options": [
+      "sell it",
+      "hide it",
+      "delete it",
+      "prepare and install it"
+     ],
+     "answer": 3,
+     "why": "Set up = configurar, deixar pronto para usar."
+    },
+    {
+     "q": "\"The team will <strong>roll out</strong> the app to all offices.\" To roll out means to…",
+     "options": [
+      "start using it in the company",
+      "stop it",
+      "clean it",
+      "test it in secret"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar, colocar em uso."
+    },
+    {
+     "q": "\"Please <strong>log in</strong> with your name and password.\" To log in means to…",
+     "options": [
+      "close the screen",
+      "print a page",
+      "enter the system",
+      "turn off the computer"
+     ],
+     "answer": 2,
+     "why": "Log in = entrar no sistema com login e senha."
+    },
+    {
+     "q": "\"The old files are gone. Can you <strong>back up</strong> the data?\" To back up means to…",
+     "options": [
+      "print the data",
+      "save a copy of the data",
+      "delete the data",
+      "sell the data"
+     ],
+     "answer": 1,
+     "why": "Back up = fazer uma cópia de segurança dos dados."
+    },
+    {
+     "q": "\"If the screen freezes, just <strong>log out</strong> and try again.\" To log out means to…",
+     "options": [
+      "buy a new computer",
+      "open a new order",
+      "call the manager",
+      "leave the system"
+     ],
+     "answer": 3,
+     "why": "Log out = sair do sistema."
+    }
+   ]
+  }
+ ]
+}

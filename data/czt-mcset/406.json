@@ -1,0 +1,259 @@
+{
+ "num": 406,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At senior level, individual transactions are not merely accounting entries — they are signals about how the business is actually behaving. A pattern of small, unusual refunds tells a story about a product that is quietly disappointing customers. A spike in credit notes says something about quality or communication. A category of expenses that only ever gets approved at the last minute reveals a decision process that is breaking somewhere upstream.<br><br>Senior finance leaders learn to notice these patterns the way a doctor notices small symptoms. Individually, each one is unimportant. In combination, they reveal things that the P&L will eventually confirm — usually too late to act calmly.<br><br>The signals are almost always in the detail. The senior skill is staying close enough to the detail to hear them, while staying far enough away from it to see the pattern.",
+   "items": [
+    {
+     "q": "According to the text, what are individual transactions at senior level?",
+     "options": [
+      "Signals about how the business is behaving",
+      "Evidence of fraud",
+      "Merely accounting entries",
+      "Errors to be reconciled"
+     ],
+     "answer": 0,
+     "why": "\"they are signals about how the business is actually behaving\" — vão além do lançamento contábil."
+    },
+    {
+     "q": "What does a category of expenses approved only at the last minute reveal?",
+     "options": [
+      "A shortage of working capital",
+      "An overly cautious finance team",
+      "A software integration failure",
+      "A decision process breaking somewhere upstream"
+     ],
+     "answer": 3,
+     "why": "\"reveals a decision process that is breaking somewhere upstream.\""
+    },
+    {
+     "q": "Why does the text compare senior finance leaders to a doctor?",
+     "options": [
+      "Because both rely on standardised procedures",
+      "Because both must act with formal authority",
+      "Because both work under regulatory scrutiny",
+      "Because both read small symptoms that matter only in combination"
+     ],
+     "answer": 3,
+     "why": "\"notice these patterns the way a doctor notices small symptoms… In combination, they reveal things.\""
+    },
+    {
+     "q": "The phrase \"usually too late to act calmly\" most strongly suggests that…",
+     "options": [
+      "the P&L is an unreliable document",
+      "calm is impossible in senior finance roles",
+      "transactions should never be reviewed individually",
+      "waiting for the P&L to confirm a problem forces a reactive, pressured response"
+     ],
+     "answer": 3,
+     "why": "Inferência: quando o P&L confirma, já é tarde — daí a vantagem de ler os sinais antes."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "The P&L is the earliest reliable warning of trouble.",
+      "Staying too close to the detail can obscure the pattern.",
+      "Small anomalies can foreshadow larger problems.",
+      "Detail and pattern must be held in tension."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto todo defende que os sinais precedem o P&L, que confirma tarde demais."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver revisando os dados de transações. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So I've now been through three months of transaction data line by line, and I want to walk you through what I found — because it started as almost nothing.<br><br>It began with a handful of credit notes. Six, maybe seven, all small, all issued to different customers, all in the same product family. Individually, not one of them would have flagged anything. No single number was large enough to breach a threshold or trip an alert. But sitting side by side, they had a shape. They were telling the same story from slightly different angles.<br><br>When I pulled the underlying orders, the pattern held. Same batch window, same complaint dressed up in different words — a finish that wasn't quite right. Nobody had raised it formally. It never reached a quality report. It simply leaked out through the finance ledger as a scatter of tiny reversals.<br><br>Here's my worry. If I'd waited for this to show up in the P&L, we would have been reading about it as a margin problem, under pressure, with the customer already gone. Instead we caught it as a whisper. My recommendation is that we treat these small reversals as an early-warning feed, not as noise to be cleaned up at month end.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How did the problem first appear in the data?",
+     "options": [
+      "As a single large credit note",
+      "As a sudden drop in margin",
+      "As a handful of small credit notes across the same product family",
+      "As a formal quality report"
+     ],
+     "answer": 2,
+     "why": "\"a handful of credit notes… all small… all in the same product family.\""
+    },
+    {
+     "q": "Why did none of the credit notes trigger an alert on their own?",
+     "options": [
+      "No single number was large enough to breach a threshold",
+      "They were filed under the wrong account",
+      "They were issued to the same customer",
+      "The alerting system was offline"
+     ],
+     "answer": 0,
+     "why": "\"No single number was large enough to breach a threshold or trip an alert.\""
+    },
+    {
+     "q": "What did Oliver find when he pulled the underlying orders?",
+     "options": [
+      "A pricing error in the ledger",
+      "The same batch window and the same complaint in different words",
+      "That the notes had been duplicated",
+      "The complaints were unrelated"
+     ],
+     "answer": 1,
+     "why": "\"Same batch window, same complaint dressed up in different words.\""
+    },
+    {
+     "q": "When Oliver says the problem \"leaked out through the finance ledger,\" he implies that…",
+     "options": [
+      "the credit notes were fraudulent",
+      "the data was corrupted",
+      "the finance team caused the quality issue",
+      "the ledger caught what the formal quality process missed"
+     ],
+     "answer": 3,
+     "why": "Inferência: o problema nunca virou relatório de qualidade; apareceu primeiro no razão financeiro."
+    },
+    {
+     "q": "What is Oliver's core recommendation?",
+     "options": [
+      "Escalate every credit note to the board",
+      "Wait for the P&L to confirm the margin impact",
+      "Treat small reversals as an early-warning feed rather than noise",
+      "Clean up the small reversals at month end"
+     ],
+     "answer": 2,
+     "why": "\"treat these small reversals as an early-warning feed, not as noise to be cleaned up at month end.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Read the ledger for what each entry is telling you.\" In this context, a <strong>signal</strong> is…",
+     "options": [
+      "a formal report",
+      "an indication of underlying behaviour",
+      "an accounting error",
+      "a regulatory requirement"
+     ],
+     "answer": 1,
+     "why": "Signal = sinal: uma indicação do que está realmente acontecendo por baixo dos números."
+    },
+    {
+     "q": "Choose the correct word: \"A scatter of small ___ issued to different customers pointed to a single faulty batch.\"",
+     "options": [
+      "forecasts",
+      "budgets",
+      "refunds",
+      "invoices"
+     ],
+     "answer": 2,
+     "why": "Refunds = reembolsos: pequenos reembolsos que, somados, revelaram o lote defeituoso."
+    },
+    {
+     "q": "\"The decision was breaking somewhere <strong>upstream</strong>.\" Upstream here means…",
+     "options": [
+      "further down the reporting chain",
+      "earlier in the process, before finance sees it",
+      "at the customer's end",
+      "in an overseas office"
+     ],
+     "answer": 1,
+     "why": "Upstream = a montante: mais cedo no fluxo, antes de o problema chegar às finanças."
+    },
+    {
+     "q": "\"Each anomaly is a <strong>symptom</strong>, not the disease.\" A symptom is…",
+     "options": [
+      "a formal complaint",
+      "the root cause itself",
+      "a corrective action",
+      "a visible sign that points to a deeper problem"
+     ],
+     "answer": 3,
+     "why": "Symptom = sintoma: o sinal visível de uma causa mais profunda."
+    },
+    {
+     "q": "Choose the correct word: \"Expenses that only ever get signed at the ___ suggest a broken approval process.\"",
+     "options": [
+      "last minute",
+      "board level",
+      "month end",
+      "fiscal year"
+     ],
+     "answer": 0,
+     "why": "Last minute = última hora: aprovar sempre em cima da hora revela um processo quebrado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em conversas sobre dados financeiros. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The controller still has to <strong>sign off on</strong> each credit note above the limit.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "question informally",
+      "record automatically",
+      "reverse quietly"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Let's <strong>drill down into</strong> the underlying orders before we conclude anything.\" To drill down into means to…",
+     "options": [
+      "examine the detail closely",
+      "summarise at a high level",
+      "archive the records",
+      "delegate to another team"
+     ],
+     "answer": 0,
+     "why": "Drill down into = descer ao detalhe, analisar granularmente."
+    },
+    {
+     "q": "\"Two of these small reversals <strong>flag up</strong> a quality issue nobody reported.\" To flag up means to…",
+     "options": [
+      "delay a decision",
+      "dismiss a concern",
+      "bring a problem to attention",
+      "conceal a problem"
+     ],
+     "answer": 2,
+     "why": "Flag up = sinalizar, chamar atenção para algo."
+    },
+    {
+     "q": "\"We can't just <strong>write off</strong> the pattern as noise.\" To write off here means to…",
+     "options": [
+      "reconcile carefully",
+      "document in full",
+      "escalate to the board",
+      "dismiss as unimportant"
+     ],
+     "answer": 3,
+     "why": "Write off = descartar como irrelevante (também 'baixar' um valor incobrável)."
+    },
+    {
+     "q": "\"Caught early, a whisper like this won't <strong>snowball into</strong> a margin crisis.\" To snowball into means to…",
+     "options": [
+      "reverse without action",
+      "stay contained",
+      "resolve itself over time",
+      "grow rapidly into something much larger"
+     ],
+     "answer": 3,
+     "why": "Snowball into = crescer descontroladamente até virar algo bem maior."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 1072,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Time in business English is short and clear. In a London office, people say the time many times a day. \"At 9 am,\" \"at half past two,\" \"quarter to five\" — these are very common.<br><br>We use \"at\" before a clock time. The market opens at nine. Our meeting is at half past two. Lunch is at one o'clock. The office closes at six.<br><br>\"Half past 2\" means 2:30. \"Quarter to 5\" means 4:45. \"Quarter past 9\" means 9:15. For a call, always say London time. Being on time is a sign of respect.",
+   "items": [
+    {
+     "q": "What word do we use before a clock time?",
+     "options": [
+      "at",
+      "on",
+      "in",
+      "to"
+     ],
+     "answer": 0,
+     "why": "\"We use 'at' before a clock time.\" — at nine, at six."
+    },
+    {
+     "q": "What time does the office close?",
+     "options": [
+      "At one",
+      "At two",
+      "At nine",
+      "At six"
+     ],
+     "answer": 3,
+     "why": "\"The office closes at six.\""
+    },
+    {
+     "q": "What does \"quarter to five\" mean?",
+     "options": [
+      "5:15",
+      "4:15",
+      "4:45",
+      "5:45"
+     ],
+     "answer": 2,
+     "why": "\"Quarter to 5\" = 4:45 (falta um quarto de hora para as 5)."
+    },
+    {
+     "q": "The text says to always say London time for a call. This suggests that…",
+     "options": [
+      "the people are in different time zones",
+      "London is always late",
+      "calls are not important",
+      "clocks are wrong in London"
+     ],
+     "answer": 0,
+     "why": "Inferência: só dizemos o fuso (London time) quando as pessoas estão em lugares diferentes."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "clock times are not useful",
+      "being on time shows respect",
+      "it is fine to arrive late",
+      "you should never say the time"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Being on time is a sign of respect.\" — o texto valoriza a pontualidade."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça o colega explicando os horários. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Let me help you with the meeting time. In London, we say time in a simple way, but you need to listen well.<br><br>Our team meeting is at half past two. So it starts at two thirty, not two o'clock. Please be there five minutes early. Being on time is very important here.<br><br>The market opens at nine in the morning, and it is very busy then. Lunch is at one o'clock, so we have a small break. The office closes at six in the evening.<br><br>If we have a call with New York, I always say London time. New York is behind us, so we must be clear. Nine here is not nine there.<br><br>One more thing: \"quarter to five\" means four forty-five. \"Quarter past nine\" means nine fifteen. It is easy when you practise. See you at the meeting!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time does the team meeting start?",
+     "options": [
+      "At three o'clock",
+      "At one o'clock",
+      "At two o'clock",
+      "At two thirty"
+     ],
+     "answer": 3,
+     "why": "\"Our team meeting is at half past two. So it starts at two thirty.\""
+    },
+    {
+     "q": "What time does the market open?",
+     "options": [
+      "At five",
+      "At six",
+      "At one",
+      "At nine"
+     ],
+     "answer": 3,
+     "why": "\"The market opens at nine in the morning.\""
+    },
+    {
+     "q": "Why does the speaker say \"be there five minutes early\"?",
+     "options": [
+      "Because the meeting is short",
+      "Because being on time is important",
+      "Because lunch is at one",
+      "Because the office is far"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele liga chegar cedo a \"Being on time is very important here.\""
+    },
+    {
+     "q": "Why does the speaker always say \"London time\" for a call with New York?",
+     "options": [
+      "Because the two cities have different times",
+      "Because New York is closed",
+      "Because London is bigger",
+      "Because the call is long"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"New York is behind us\" — os fusos são diferentes, então ele deixa claro."
+    },
+    {
+     "q": "What does \"quarter past nine\" mean?",
+     "options": [
+      "Nine thirty",
+      "Eight forty-five",
+      "Nine forty-five",
+      "Nine fifteen"
+     ],
+     "answer": 3,
+     "why": "\"'Quarter past nine' means nine fifteen.\" (9:15)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The train leaves at three <strong>o'clock</strong>.\" O'clock means…",
+     "options": [
+      "a quarter",
+      "in the morning",
+      "and a half",
+      "on the hour (exact)"
+     ],
+     "answer": 3,
+     "why": "O'clock = em ponto, na hora exata (3:00)."
+    },
+    {
+     "q": "Choose the correct word: \"The class is at ___ past two, so it starts at 2:30.\"",
+     "options": [
+      "o'clock",
+      "morning",
+      "quarter",
+      "half"
+     ],
+     "answer": 3,
+     "why": "Half past = e meia. Half past two = 2:30."
+    },
+    {
+     "q": "\"It is a <strong>quarter</strong> to five.\" A quarter is…",
+     "options": [
+      "fifteen minutes",
+      "a full hour",
+      "five minutes",
+      "half an hour"
+     ],
+     "answer": 0,
+     "why": "Quarter = quarto de hora = 15 minutos. Quarter to five = 4:45."
+    },
+    {
+     "q": "Choose the correct word: \"The market opens at nine in the ___.\"",
+     "options": [
+      "quarter",
+      "half",
+      "o'clock",
+      "morning"
+     ],
+     "answer": 3,
+     "why": "Morning = manhã. Nine in the morning = 9 da manhã."
+    },
+    {
+     "q": "\"We finish at six in the <strong>evening</strong>.\" Evening means…",
+     "options": [
+      "midday",
+      "early morning",
+      "very late at night",
+      "early night / end of day"
+     ],
+     "answer": 3,
+     "why": "Evening = fim de tarde / noite (cedo)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho com horários e reuniões. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let's <strong>set up</strong> a meeting for ten o'clock.\" To set up means to…",
+     "options": [
+      "cancel",
+      "arrange or organise",
+      "finish",
+      "be late for"
+     ],
+     "answer": 1,
+     "why": "Set up = marcar, organizar (uma reunião)."
+    },
+    {
+     "q": "\"Please <strong>be on time</strong> for the call.\" To be on time means to…",
+     "options": [
+      "arrive early",
+      "arrive late",
+      "arrive at the right time",
+      "not come"
+     ],
+     "answer": 2,
+     "why": "Be on time = chegar na hora certa, ser pontual."
+    },
+    {
+     "q": "\"Can we <strong>put off</strong> the meeting to three o'clock?\" To put off means to…",
+     "options": [
+      "move to a later time",
+      "make shorter",
+      "make longer",
+      "start now"
+     ],
+     "answer": 0,
+     "why": "Put off = adiar, deixar para depois."
+    },
+    {
+     "q": "\"The market <strong>opens up</strong> at nine.\" To open up means to…",
+     "options": [
+      "start business",
+      "stop",
+      "get busy",
+      "close"
+     ],
+     "answer": 0,
+     "why": "Open up = abrir, começar a funcionar."
+    },
+    {
+     "q": "\"I need to <strong>check in</strong> before the meeting starts.\" To check in means to…",
+     "options": [
+      "leave the office",
+      "be late",
+      "report or confirm you are there",
+      "close the call"
+     ],
+     "answer": 2,
+     "why": "Check in = dar um retorno, confirmar presença/status."
+    }
+   ]
+  }
+ ]
+}

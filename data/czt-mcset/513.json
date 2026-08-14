@@ -1,0 +1,259 @@
+{
+ "num": 513,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Cybersecurity in practice is a steady discipline, not an annual training. It is the small habits, repeated daily by everyone, that block almost all realistic attacks: strong passwords, two-factor authentication, careful clicking, locked screens, reported suspicions, patched software and clean backups.<br><br>A good intermediate security programme has two parts. The technical part — the tools, the monitoring, the incident response — is usually handled by the security team. The human part — the daily habits of everyone else — is where most incidents are actually won or lost, and that part is everyone's responsibility.<br><br>Every employee must be treated as part of the security team, even if they do not think of themselves that way. When culture is right, technology rarely has to save the day. When culture is wrong, even the best technology eventually fails.",
+   "items": [
+    {
+     "q": "According to the text, what blocks almost all realistic attacks?",
+     "options": [
+      "The annual training session",
+      "The work of the security team alone",
+      "The best available technology",
+      "Small habits repeated daily by everyone"
+     ],
+     "answer": 3,
+     "why": "\"the small habits, repeated daily by everyone, that block almost all realistic attacks.\""
+    },
+    {
+     "q": "Who usually handles the technical part of the programme?",
+     "options": [
+      "The security team",
+      "The company's clients",
+      "External consultants",
+      "Every employee"
+     ],
+     "answer": 0,
+     "why": "\"The technical part… is usually handled by the security team.\""
+    },
+    {
+     "q": "According to the text, where are most incidents actually won or lost?",
+     "options": [
+      "In the incident response plan",
+      "In the daily habits of everyone else",
+      "In the monitoring tools",
+      "In the annual training"
+     ],
+     "answer": 1,
+     "why": "\"The human part — the daily habits of everyone else — is where most incidents are actually won or lost.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Good technology cannot fully replace good habits.",
+      "Careful clicking is part of practical security.",
+      "A yearly training course is enough to keep a company safe.",
+      "Everyone shares responsibility for security."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto abre dizendo que segurança \"is a steady discipline, not an annual training\" — o treinamento anual sozinho não basta."
+    },
+    {
+     "q": "What does the contrast between the last two sentences suggest?",
+     "options": [
+      "Culture and technology are unrelated",
+      "Technology should be replaced by culture",
+      "The best technology never fails",
+      "Culture matters more than the quality of the tools"
+     ],
+     "answer": 3,
+     "why": "Inferência: com cultura certa a tecnologia raramente precisa agir; com cultura errada até a melhor tecnologia falha — a cultura pesa mais."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte no lembrete semanal de segurança para a equipe. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Morning, everyone. It's Charlotte, with your one-minute security nudge for the week. No training slides today — just one habit to keep alive.<br><br>This week it's about links. If an email pushes you to act fast, click a strange link, or reset a password you didn't ask to change, that pressure is the warning sign. It should be paused, not obeyed. Nothing needs to be forwarded to prove it's real; the message can simply be reported to the security team, and they'll take it from there.<br><br>And please — you don't have to be certain. If something feels slightly off, it should still be reported. We would far rather look at ten harmless emails than miss the one that matters. Nobody here will ever be blamed for flagging a false alarm.<br><br>One last thing before you get back to it: two-factor authentication must stay switched on, even when it's annoying. That extra step is often the only thing standing between a stolen password and a real breach. That's it — same time next week. Thanks, all.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is this week's security nudge about?",
+     "options": [
+      "Choosing stronger passwords",
+      "Backing up your files",
+      "Suspicious links and pressure to act fast",
+      "Locking your screen"
+     ],
+     "answer": 2,
+     "why": "\"This week it's about links. If an email pushes you to act fast, click a strange link…\""
+    },
+    {
+     "q": "What does Charlotte say you should do with a suspicious message?",
+     "options": [
+      "Report it to the security team",
+      "Delete it immediately",
+      "Reply and ask who sent it",
+      "Forward it to prove it is real"
+     ],
+     "answer": 0,
+     "why": "\"the message can simply be reported to the security team, and they'll take it from there.\""
+    },
+    {
+     "q": "According to Charlotte, what should you do if you are not certain something is dangerous?",
+     "options": [
+      "Report it anyway",
+      "Ignore it, to avoid false alarms",
+      "Ask a colleague to decide for you",
+      "Wait until you are sure before doing anything"
+     ],
+     "answer": 0,
+     "why": "\"you don't have to be certain. If something feels slightly off, it should still be reported.\""
+    },
+    {
+     "q": "What does Charlotte suggest by saying nobody will be blamed for flagging a false alarm?",
+     "options": [
+      "Only the security team may report emails",
+      "False alarms are a serious problem for the team",
+      "She wants people to feel safe reporting, so real threats aren't missed",
+      "Reporting is optional and rarely useful"
+     ],
+     "answer": 2,
+     "why": "Inferência: ao remover o medo de errar, ela incentiva o hábito de reportar — melhor dez falsos alarmes do que perder o e-mail que importa."
+    },
+    {
+     "q": "Why does Charlotte insist that two-factor authentication stay on, even when it is annoying?",
+     "options": [
+      "Because it often is the last barrier before a real breach",
+      "Because it makes passwords unnecessary",
+      "Because it is required by the annual training",
+      "Because it speeds up logging in"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela chama o passo extra de \"the only thing standing between a stolen password and a real breach\" — a incomodação vale o risco evitado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Security is a <strong>steady discipline</strong>, not a one-off event.\" A steady discipline is…",
+     "options": [
+      "a single intensive workshop",
+      "a consistent practice kept up over time",
+      "a strict punishment for mistakes",
+      "a set of formal written rules"
+     ],
+     "answer": 1,
+     "why": "Steady discipline = disciplina constante: algo praticado com regularidade ao longo do tempo."
+    },
+    {
+     "q": "Choose the correct term: \"Even with a strong password, ___ adds a second step that a thief usually cannot pass.\"",
+     "options": [
+      "incident response",
+      "clean backups",
+      "annual training",
+      "two-factor authentication"
+     ],
+     "answer": 3,
+     "why": "Two-factor authentication = autenticação em dois fatores, o segundo passo além da senha."
+    },
+    {
+     "q": "\"The team's <strong>incident response</strong> was fast.\" Incident response is…",
+     "options": [
+      "the schedule for updating software",
+      "the daily backup routine",
+      "the yearly awareness course",
+      "the plan for handling a security event once it happens"
+     ],
+     "answer": 3,
+     "why": "Incident response = resposta a incidentes: como a equipe age quando um problema de fato ocorre."
+    },
+    {
+     "q": "Choose the correct word: \"Attackers often exploit old bugs, so ___ closes doors before anyone tries them.\"",
+     "options": [
+      "responsibility",
+      "monitoring",
+      "patched software",
+      "culture"
+     ],
+     "answer": 2,
+     "why": "Patched software = software atualizado: corrige falhas conhecidas antes que sejam exploradas."
+    },
+    {
+     "q": "\"Good <strong>monitoring</strong> caught the login from an unusual country.\" Monitoring is…",
+     "options": [
+      "training staff every year",
+      "approving new passwords",
+      "watching systems to spot unusual activity",
+      "deleting old accounts"
+     ],
+     "answer": 2,
+     "why": "Monitoring = monitoramento: observar os sistemas para detectar atividade fora do padrão."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns em reuniões de segurança. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The security lead still has to <strong>sign off on</strong> the new policy.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "explain informally",
+      "delay indefinitely",
+      "criticise in public"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> two-factor authentication team by team.\" To roll out means to…",
+     "options": [
+      "implement in stages",
+      "explain to the board",
+      "cancel gradually",
+      "test in secret"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"If an email feels wrong, <strong>flag</strong> it to the security team.\" To flag something means to…",
+     "options": [
+      "reset your password",
+      "delete it quietly",
+      "reply to the sender",
+      "bring it to someone's attention"
+     ],
+     "answer": 3,
+     "why": "Flag = sinalizar, chamar a atenção para algo suspeito."
+    },
+    {
+     "q": "\"Everyone agreed to lock their screens, but few <strong>followed through</strong>.\" They…",
+     "options": [
+      "documented it badly",
+      "did not carry it out in practice",
+      "delegated it to IT",
+      "changed the rule"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim, cumprir na prática o que foi combinado."
+    },
+    {
+     "q": "\"Reminding people once a year won't <strong>move the needle</strong> on real behaviour.\" This means it will…",
+     "options": [
+      "cost too much",
+      "cause strong resistance",
+      "take too long to plan",
+      "not make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

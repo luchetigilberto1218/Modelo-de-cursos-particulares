@@ -8,54 +8,54 @@
     {
      "q": "Why is sanctions compliance called \"a moving target\"?",
      "options": [
-      "It is optional",
-      "It only applies once",
       "It never changes",
-      "Lists are updated weekly and rules expand suddenly"
+      "It only applies once",
+      "Lists are updated weekly and rules expand suddenly",
+      "It is optional"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Lists are updated weekly, rules are expanded suddenly.\""
     },
     {
      "q": "What is the first layer of compliance?",
      "options": [
-      "Escalating to a specialist",
-      "Screening only payments",
       "Ignoring new parties",
-      "Screening every new counterparty against the main watchlists"
+      "Screening only payments",
+      "Screening every new counterparty against the main watchlists",
+      "Escalating to a specialist"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"First, every new counterparty is screened against the main watchlists.\""
     },
     {
      "q": "Why is every payment and shipment screened again at the moment it moves?",
      "options": [
-      "Because lists change",
-      "To charge a fee",
       "To slow it down",
-      "To please the bank"
+      "To charge a fee",
+      "To please the bank",
+      "Because lists change"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"every payment and shipment is screened again at the moment it moves — because lists change.\""
     },
     {
      "q": "What happens to an unusual pattern?",
      "options": [
-      "It is shipped anyway",
-      "It is deleted",
+      "It is ignored",
       "It is escalated to a specialist",
-      "It is ignored"
+      "It is shipped anyway",
+      "It is deleted"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"any unusual pattern is escalated to a specialist.\""
     },
     {
      "q": "Which companies get into real trouble, according to the text?",
      "options": [
       "Those that use specialists",
-      "Those that tried hard and made a mistake",
+      "Those that check too often",
       "Those that stopped checking, or checked once and never again",
-      "Those that check too often"
+      "Those that tried hard and made a mistake"
      ],
      "answer": 2,
      "why": "\"the ones that stopped checking, or checked once and never again.\""
@@ -73,9 +73,9 @@
      "q": "Why did this week's screening fail when last week's passed?",
      "options": [
       "The list changed — a new name was added on Monday",
-      "The bank made an error",
+      "The counterparty changed",
       "The payment was larger",
-      "The counterparty changed"
+      "The bank made an error"
      ],
      "answer": 0,
      "why": "\"Nothing about the counterparty changed. What changed is the list.\""
@@ -83,45 +83,45 @@
     {
      "q": "What is the new name linked to?",
      "options": [
-      "The shipping company",
       "One of the owners behind this company",
+      "A competitor",
       "The buyer's bank",
-      "A competitor"
+      "The shipping company"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"it's linked to one of the owners behind this company.\""
     },
     {
      "q": "Why does the team screen at the moment of every payment?",
      "options": [
-      "To slow payments",
       "To charge more",
+      "Because lists change — checking only at onboarding would miss updates",
       "Because the bank requires it",
-      "Because lists change — checking only at onboarding would miss updates"
+      "To slow payments"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"This is exactly why we screen at the moment of every payment, not just once when we onboard a client.\""
     },
     {
      "q": "What does the team do with this payment?",
      "options": [
-      "Refund it",
-      "Ignore the match",
+      "Process it quickly",
       "Freeze it and escalate to the sanctions specialist",
-      "Process it quickly"
+      "Refund it",
+      "Ignore the match"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"We freeze it, and I escalate it to our sanctions specialist today.\""
     },
     {
      "q": "What is Charlotte's closing principle?",
      "options": [
-      "Better a delayed payment than a sanctions breach",
-      "Speed above all",
+      "Trust the last check",
       "Ship first, check later",
-      "Trust the last check"
+      "Speed above all",
+      "Better a delayed payment than a sanctions breach"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Better a delayed payment than a sanctions breach.\""
     }
    ]
@@ -132,56 +132,56 @@
     {
      "q": "A **counterparty** is…",
      "options": [
+      "the other party in a transaction",
       "a shipping agent",
-      "your own company",
       "the bank only",
-      "the other party in a transaction"
+      "your own company"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Counterparty = contraparte."
     },
     {
      "q": "**Screening** against a watchlist means…",
      "options": [
-      "insuring the cargo",
-      "shipping the goods",
+      "paying the invoice",
       "checking a name against a list of restricted parties",
-      "paying the invoice"
+      "insuring the cargo",
+      "shipping the goods"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Screening = triagem contra listas."
     },
     {
      "q": "Choose the correct word: \"An unusual pattern should be **___** to a specialist.\"",
      "options": [
-      "escalated",
-      "insured",
       "invoiced",
-      "shipped"
+      "insured",
+      "shipped",
+      "escalated"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To escalate = escalar."
     },
     {
      "q": "A **false positive** is…",
      "options": [
-      "an apparent match that turns out not to be the sanctioned party",
       "a real match",
-      "a payment",
-      "a clean result"
+      "a clean result",
+      "an apparent match that turns out not to be the sanctioned party",
+      "a payment"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "False positive = alarme falso (nome parecido, não a mesma pessoa)."
     },
     {
      "q": "Choose the correct term: \"Compliance works in **___** — screen at onboarding and again at each payment.\"",
      "options": [
+      "drafts",
       "layers",
-      "claims",
       "tranches",
-      "drafts"
+      "claims"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Layered check = verificação em camadas."
     }
    ]
@@ -192,23 +192,23 @@
     {
      "q": "\"A team that checks once can **go stale**.\" To go stale means to…",
      "options": [
+      "work harder",
       "become out of date",
       "escalate",
-      "work harder",
       "stay up to date"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Go stale = ficar desatualizado."
     },
     {
      "q": "\"Let's **freeze** the payment for now.\" To freeze a payment means to…",
      "options": [
-      "speed it up",
+      "stop it temporarily",
       "refund it",
-      "process it",
-      "stop it temporarily"
+      "speed it up",
+      "process it"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Freeze = congelar, deter temporariamente."
     },
     {
@@ -216,18 +216,18 @@
      "options": [
       "do it twice",
       "do it carefully",
-      "do it without knowing an important fact",
-      "do it late"
+      "do it late",
+      "do it without knowing an important fact"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Unaware = sem saber."
     },
     {
      "q": "\"Until they **clear it**, nothing moves.\" To clear something means to…",
      "options": [
-      "ship it",
-      "delay it",
       "block it",
+      "delay it",
+      "ship it",
       "approve it as safe to proceed"
      ],
      "answer": 3,
@@ -236,12 +236,12 @@
     {
      "q": "\"Sanctions rules can **catch you out**.\" To catch someone out means to…",
      "options": [
-      "expose them in a mistake they didn't see coming",
       "reward them",
       "warn them early",
-      "help them"
+      "help them",
+      "expose them in a mistake they didn't see coming"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Catch out = pegar em falta, surpreender no erro."
     }
    ]

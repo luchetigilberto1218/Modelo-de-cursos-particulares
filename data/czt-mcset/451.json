@@ -1,0 +1,259 @@
+{
+ "num": 451,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Running VAT in practice is a quiet cycle. Every sale has VAT in it; every purchase has VAT on it; and every quarter the two are totalled and the difference is settled with the tax office. The operational challenge is not the maths — it is making sure every invoice is coded to the right rate, every reverse-charge transaction is treated correctly, and every exempt sale is flagged so that it does not quietly end up in the wrong bucket.<br><br>A good VAT process reconciles the numbers weekly, not at the end of the quarter. By the time the quarter closes, 95% of the return is already built. Surprises arrive during the week they happen, when there is still time to investigate and correct them.<br><br>We have cut our VAT errors by three quarters since we moved from quarterly to weekly reconciliation. The move took an afternoon to design. It pays off every single month of the year.",
+   "items": [
+    {
+     "q": "According to the text, what is the real operational challenge of VAT?",
+     "options": [
+      "Coding, reverse charge and exempt sales correctly",
+      "Settling the difference with the tax office",
+      "The complexity of the maths involved",
+      "Totalling sales and purchases each quarter"
+     ],
+     "answer": 0,
+     "why": "\"The operational challenge is not the maths — it is making sure every invoice is coded to the right rate…\""
+    },
+    {
+     "q": "How much of the return is already built by the time the quarter closes, under a weekly process?",
+     "options": [
+      "95% of it",
+      "Half of it",
+      "About 75%",
+      "All of it"
+     ],
+     "answer": 0,
+     "why": "\"By the time the quarter closes, 95% of the return is already built.\""
+    },
+    {
+     "q": "By how much did the team reduce VAT errors after the change?",
+     "options": [
+      "By three quarters",
+      "By one quarter",
+      "By 95%",
+      "By half"
+     ],
+     "answer": 0,
+     "why": "\"We have cut our VAT errors by three quarters since we moved from quarterly to weekly reconciliation.\""
+    },
+    {
+     "q": "The text suggests that reconciling only at quarter-end would most likely…",
+     "options": [
+      "make the maths easier",
+      "remove the need for a tax office",
+      "reduce the number of invoices to code",
+      "leave less time to investigate and correct errors"
+     ],
+     "answer": 3,
+     "why": "Inferência: se as surpresas aparecem na semana em que acontecem \"when there is still time to investigate\", esperar o fim do trimestre tira esse tempo."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "It is more efficient to leave all reconciliation to quarter-end.",
+      "Weekly reconciliation reduces quarter-end surprises.",
+      "Flagging exempt sales prevents errors.",
+      "Small changes to a process can pay off for years."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto inteiro defende a conciliação semanal contra o modelo de fim de trimestre."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver orientando o novo assistente de VAT. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let me show you what we actually do on a Friday morning. I've already pulled the week's invoices, so we can go through them together.<br><br>The job is simple, but you have to be consistent. For each invoice, you check the rate it's been coded to. Most are standard rate, but watch out for two things. First, reverse-charge transactions — usually services from suppliers abroad. The system won't add the VAT for you, so you have to flag those by hand. Second, exempt sales. If one of those slips through as standard rate, it lands in the wrong bucket, and nobody notices until the quarter closes.<br><br>Here's why we do this every week rather than at the end. Last year's team reconciled once a quarter, and they spent the final fortnight chasing errors that were three months old. Nobody could remember the details anymore. We've cut our errors by three quarters just by catching them while they're still fresh.<br><br>So don't think of Friday as extra work. Think of it as fifteen minutes now that saves you two weeks of panic later. Any questions before we start on the first batch?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "When does Oliver do this reconciliation?",
+     "options": [
+      "On a Friday morning, every week",
+      "On the last day of the quarter",
+      "Only when errors appear",
+      "Once a month"
+     ],
+     "answer": 0,
+     "why": "\"let me show you what we actually do on a Friday morning\" e ele explica por que fazem toda semana."
+    },
+    {
+     "q": "Why must reverse-charge transactions be flagged by hand?",
+     "options": [
+      "Because the system won't add the VAT for you",
+      "Because they come from local suppliers",
+      "Because they are always exempt",
+      "Because they are the largest invoices"
+     ],
+     "answer": 0,
+     "why": "\"The system won't add the VAT for you, so you have to flag those by hand.\""
+    },
+    {
+     "q": "What happens if an exempt sale slips through as standard rate?",
+     "options": [
+      "The system rejects the invoice",
+      "The tax office cancels the return",
+      "It lands in the wrong bucket and goes unnoticed until the quarter closes",
+      "The supplier is charged twice"
+     ],
+     "answer": 2,
+     "why": "\"it lands in the wrong bucket, and nobody notices until the quarter closes.\""
+    },
+    {
+     "q": "Why does Oliver suggest last year's team struggled at quarter-end?",
+     "options": [
+      "The errors were months old and nobody remembered the details",
+      "The errors were too large to fix",
+      "They had too few people",
+      "The software had failed"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"errors that were three months old. Nobody could remember the details anymore\" — o tempo apagou o contexto."
+    },
+    {
+     "q": "How would you best describe Oliver's attitude to the weekly task?",
+     "options": [
+      "He treats it as unavoidable extra paperwork",
+      "He believes it only matters at quarter-end",
+      "He thinks it is a waste of time",
+      "He sees it as a small investment that prevents big problems"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"fifteen minutes now that saves you two weeks of panic later\" — investimento pequeno, ganho grande."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Running VAT is a quiet <strong>cycle</strong> that repeats every quarter.\" A cycle is…",
+     "options": [
+      "an unexpected problem",
+      "a legal penalty",
+      "a series of events that repeats regularly",
+      "a one-off task"
+     ],
+     "answer": 2,
+     "why": "Cycle = ciclo: uma sequência que se repete regularmente."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ transaction means the buyer, not the seller, accounts for the VAT.\"",
+     "options": [
+      "reverse-charge",
+      "exempt",
+      "standard-rate",
+      "reconciled"
+     ],
+     "answer": 0,
+     "why": "Reverse charge = autoliquidação: quem compra é que declara o VAT."
+    },
+    {
+     "q": "\"If we don't <strong>flag</strong> the exempt sales, they end up misclassified.\" To flag something is to…",
+     "options": [
+      "mark it so it gets special attention",
+      "delete it",
+      "hide it from the report",
+      "pay it immediately"
+     ],
+     "answer": 0,
+     "why": "To flag = sinalizar, marcar algo para receber atenção."
+    },
+    {
+     "q": "\"Every Friday we <strong>reconcile</strong> the week's numbers.\" To reconcile means to…",
+     "options": [
+      "delete duplicate entries",
+      "send the invoices to the client",
+      "increase the totals",
+      "check that two sets of figures agree"
+     ],
+     "answer": 3,
+     "why": "To reconcile = conciliar: verificar que dois conjuntos de números batem."
+    },
+    {
+     "q": "Choose the correct word: \"An exempt sale that is coded as standard rate ends up in the wrong ___.\"",
+     "options": [
+      "cycle",
+      "bucket",
+      "afternoon",
+      "surprise"
+     ],
+     "answer": 1,
+     "why": "Bucket = caixa / categoria: onde o valor é agrupado no relatório."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em operações de VAT e finanças. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the quarterly return.\" To sign off on means to…",
+     "options": [
+      "comment informally",
+      "delay",
+      "reject",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We plan to <strong>roll out</strong> the weekly process to the other offices.\" To roll out means to…",
+     "options": [
+      "cancel gradually",
+      "explain to the board",
+      "test in secret",
+      "implement in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"A few exempt sales <strong>slipped through</strong> as standard rate.\" This means they…",
+     "options": [
+      "passed unnoticed and were handled wrongly",
+      "were flagged correctly",
+      "were paid twice",
+      "were rejected by the system"
+     ],
+     "answer": 0,
+     "why": "Slip through = passar despercebido, escapar do controle."
+    },
+    {
+     "q": "\"The team agreed to reconcile weekly but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "failed to carry it to completion",
+      "changed the deadline",
+      "delegated it to another office",
+      "documented it poorly"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Catching errors weekly really <strong>pays off</strong> at quarter-end.\" To pay off means to…",
+     "options": [
+      "create resistance",
+      "produce a worthwhile result",
+      "cost more than expected",
+      "take longer than planned"
+     ],
+     "answer": 1,
+     "why": "Pay off = compensar, dar retorno pelo esforço."
+    }
+   ]
+  }
+ ]
+}

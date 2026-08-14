@@ -1,0 +1,259 @@
+{
+ "num": 389,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the rise level, the trial balance is less a check and more a ritual. It is run at the end of each month, before any reports leave the finance team. Every account balance is pulled. Every total is tested against its expected shape. Any anomaly is investigated before the books are closed.<br><br>Good teams build a checklist of 'things to look at' that goes beyond the simple debits-equal-credits test. Are the usual zero-balance accounts still zero? Has any account suddenly grown without an explanation? Do the key totals match what the P&amp;L preview is showing?<br><br>The trial balance, done properly, is the last quiet line of defence against the numbers being wrong in public. Skipping it is the fastest way to look foolish in a board meeting.",
+   "items": [
+    {
+     "q": "According to the text, when is the trial balance run?",
+     "options": [
+      "Only when an anomaly is reported",
+      "At the end of each month, before any reports leave the team",
+      "After the reports have been sent to the board",
+      "Once a year, before the audit"
+     ],
+     "answer": 1,
+     "why": "\"It is run at the end of each month, before any reports leave the finance team.\""
+    },
+    {
+     "q": "What should a good checklist go beyond?",
+     "options": [
+      "The monthly P&L preview",
+      "The simple debits-equal-credits test",
+      "The list of zero-balance accounts",
+      "The board meeting agenda"
+     ],
+     "answer": 1,
+     "why": "\"a checklist… that goes beyond the simple debits-equal-credits test.\""
+    },
+    {
+     "q": "The text calls the trial balance \"the last quiet line of defence.\" This suggests that…",
+     "options": [
+      "it is optional once other checks are done",
+      "it is only useful during an audit",
+      "it is a noisy, public activity",
+      "it is the final safeguard before the numbers become public"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"last… line of defence against the numbers being wrong in public\" — é a proteção final antes de os números irem a público."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A trial balance is a monthly discipline worth protecting.",
+      "Skipping the trial balance carries a real risk.",
+      "If debits equal credits, no further checking is needed.",
+      "Anomalies should be investigated before the books close."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto insiste que o checklist deve ir ALÉM do teste débito = crédito, então o autor discordaria de que basta bater os dois lados."
+    },
+    {
+     "q": "What does the author imply about catching problems during the trial balance?",
+     "options": [
+      "It should be left to the auditors",
+      "It rarely makes any difference to the final numbers",
+      "It is better to find them there than in a board meeting",
+      "It is a formality with no real consequence"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Skipping it is the fastest way to look foolish in a board meeting\" — pegar o erro no processo evita o vexame público."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily conduzindo o fechamento com um analista júnior. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let's run the month-end together — I'll talk you through it as we go. First rule: we don't just glance at the totals. The debits and the credits will balance, they nearly always do. That's the easy part. What we're really doing is looking for anything that doesn't fit.<br><br>So, pull the full list of account balances and let's walk down it. Now — here. This account. It's a zero-balance account. It should be sitting at nothing, every single month. And it's showing four thousand pounds. See that? That's exactly the kind of thing the debit-equals-credit test will never catch, because the four thousand is balanced somewhere else.<br><br>Before we close anything, we investigate that. I'll pull the postings and find out where it came from. Do not close the books with a number you can't explain sitting on the page.<br><br>Honestly, this is boring work now, and I know it feels slow. But catching this here, quietly, is nothing. Catching it after the report has gone to the board — that's a very different afternoon. Let's find where the four thousand came from.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Emily say is \"the easy part\"?",
+     "options": [
+      "Investigating the anomaly",
+      "Closing the books",
+      "Pulling the list of account balances",
+      "The debits and credits balancing"
+     ],
+     "answer": 3,
+     "why": "\"The debits and the credits will balance… That's the easy part.\""
+    },
+    {
+     "q": "What is wrong with the account Emily points to?",
+     "options": [
+      "It should be at zero but shows four thousand pounds",
+      "It has been closed too early",
+      "It is missing from the list entirely",
+      "Its debits and credits do not balance"
+     ],
+     "answer": 0,
+     "why": "\"It's a zero-balance account… And it's showing four thousand pounds.\""
+    },
+    {
+     "q": "Why does Emily say the debit-equals-credit test won't catch this problem?",
+     "options": [
+      "Because the account is not on the trial balance",
+      "Because the four thousand is balanced somewhere else",
+      "Because the books are already closed",
+      "Because the totals were never pulled"
+     ],
+     "answer": 1,
+     "why": "\"the four thousand is balanced somewhere else\" — por isso o teste débito = crédito não acusa nada."
+    },
+    {
+     "q": "What does Emily mean by \"that's a very different afternoon\"?",
+     "options": [
+      "Fixing the error after it reaches the board would be far more damaging",
+      "The board meeting will be rescheduled",
+      "The junior will need to work overtime",
+      "The report will take longer to write"
+     ],
+     "answer": 0,
+     "why": "Inferência: contrasta pegar o erro agora (chato, sem consequência) com descobri-lo depois de ir ao board (constrangedor)."
+    },
+    {
+     "q": "What does the way Emily coaches the junior suggest about her approach?",
+     "options": [
+      "She treats the trial balance as a disciplined, teaching moment",
+      "She sees the anomaly as unimportant",
+      "She prefers to close the books quickly and fix errors later",
+      "She trusts the balancing test to catch every problem"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela explica cada passo, não pula nada e trata o processo como formação — uma disciplina, não uma formalidade."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The month-end trial balance is a <strong>ritual</strong> for the finance team.\" Here, ritual means…",
+     "options": [
+      "an informal chat",
+      "a fixed, disciplined routine performed every time",
+      "a religious ceremony",
+      "a one-off special event"
+     ],
+     "answer": 1,
+     "why": "Ritual = rotina disciplinada e repetida — não um evento isolado."
+    },
+    {
+     "q": "Choose the correct word: \"Emily asked the junior to <strong>pull</strong> the full list of account ___ before they started.\"",
+     "options": [
+      "deadlines",
+      "meetings",
+      "balances",
+      "auditors"
+     ],
+     "answer": 2,
+     "why": "Balance = saldo; pull the balances = extrair os saldos das contas."
+    },
+    {
+     "q": "\"A previously zero account had grown by £4,000 — a clear <strong>anomaly</strong>.\" An anomaly is…",
+     "options": [
+      "a rounding error that can be ignored",
+      "a routine, expected figure",
+      "a standard monthly adjustment",
+      "something that does not fit the expected pattern"
+     ],
+     "answer": 3,
+     "why": "Anomaly = anomalia: algo fora do padrão esperado."
+    },
+    {
+     "q": "Choose the correct phrase: \"Do not ___ with a number you cannot explain still on the page.\"",
+     "options": [
+      "pull the balances",
+      "build the checklist",
+      "close the books",
+      "run the preview"
+     ],
+     "answer": 2,
+     "why": "Close the books = fechar os livros; não se deve fechar com um valor sem explicação."
+    },
+    {
+     "q": "\"Done properly, the trial balance is the last quiet <strong>line of defence</strong>.\" This means it is…",
+     "options": [
+      "a list of the team's responsibilities",
+      "a physical barrier in the office",
+      "the final safeguard against errors reaching the public",
+      "a warning sent to the board"
+     ],
+     "answer": 2,
+     "why": "Line of defence = linha de defesa: última proteção antes de os números irem a público."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no fechamento contábil. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The controller still has to <strong>sign off on</strong> the trial balance before it's final.\" To sign off on means to…",
+     "options": [
+      "question it informally",
+      "print and file it",
+      "formally approve it",
+      "delay it to next month"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Let's <strong>flag up</strong> that £4,000 balance before we go any further.\" To flag up means to…",
+     "options": [
+      "draw attention to it as needing a look",
+      "hide it from the report",
+      "delete it from the ledger",
+      "approve it quickly"
+     ],
+     "answer": 0,
+     "why": "Flag up = sinalizar, chamar atenção para algo que precisa ser verificado."
+    },
+    {
+     "q": "\"The junior agreed to <strong>look into</strong> where the postings came from.\" To look into means to…",
+     "options": [
+      "investigate carefully",
+      "report to the board",
+      "approve without checking",
+      "ignore for now"
+     ],
+     "answer": 0,
+     "why": "Look into = investigar, examinar a fundo — sinônimo de 'to investigate'."
+    },
+    {
+     "q": "\"We agreed to check the account, but nobody <strong>followed through</strong>.\" They…",
+     "options": [
+      "failed to carry it to completion",
+      "escalated it to the board",
+      "documented it in detail",
+      "did it twice"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"If the numbers are wrong, an extra checklist item won't <strong>paper over</strong> the problem.\" To paper over something means to…",
+     "options": [
+      "document it clearly",
+      "escalate it quickly",
+      "hide or disguise it without really fixing it",
+      "solve it permanently"
+     ],
+     "answer": 2,
+     "why": "Paper over = disfarçar um problema superficialmente, sem resolvê-lo de fato."
+    }
+   ]
+  }
+ ]
+}

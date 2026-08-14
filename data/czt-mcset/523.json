@@ -1,0 +1,259 @@
+{
+ "num": 523,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At senior level, hardware and infrastructure are long-term strategic assets. They take years to build and years to change. A decision made today about data centre location, network topology, or cloud provider mix will still be shaping the business five years from now. Because these decisions are slow to unwind, they deserve more patient thinking than most other IT choices.<br><br>The useful frame at this level is optionality. Which choices keep future options open? Which ones quietly lock the company into a single provider, a single location, or a single architecture that future leaders will simply have to accept as given? A little extra cost today for meaningful optionality tomorrow is almost always a good trade.<br><br>Infrastructure decisions are where senior leaders quietly set the ceiling on what the company can attempt in the next decade. The ones who understand this make those decisions deliberately. The ones who do not discover the ceiling only when they hit it.",
+   "items": [
+    {
+     "q": "Why do infrastructure decisions deserve more patient thinking than most other IT choices?",
+     "options": [
+      "They are the most expensive line in the budget",
+      "They are decided by the CFO alone",
+      "They change every eighteen months",
+      "They are slow to unwind and shape the business for years"
+     ],
+     "answer": 3,
+     "why": "\"Because these decisions are slow to unwind, they deserve more patient thinking.\""
+    },
+    {
+     "q": "According to the text, what is the useful frame for infrastructure decisions at senior level?",
+     "options": [
+      "Cost minimisation",
+      "Optionality",
+      "Standardisation",
+      "Vendor loyalty"
+     ],
+     "answer": 1,
+     "why": "\"The useful frame at this level is optionality.\""
+    },
+    {
+     "q": "How does the text describe paying slightly more today for optionality?",
+     "options": [
+      "A decision best left to future leaders",
+      "A cost that should be avoided",
+      "A luxury only large firms can afford",
+      "Almost always a good trade"
+     ],
+     "answer": 3,
+     "why": "\"A little extra cost today for meaningful optionality tomorrow is almost always a good trade.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Optionality is worth a modest premium.",
+      "The cheapest architecture today is usually the wisest long-term choice.",
+      "Infrastructure choices can limit what a company attempts for a decade.",
+      "A single-provider design can quietly constrain future leaders."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto argumenta a favor de pagar um pouco mais por opcionalidade — o mais barato hoje pode travar a empresa."
+    },
+    {
+     "q": "The last paragraph suggests that leaders who do NOT think about ceilings will…",
+     "options": [
+      "outperform those who plan carefully",
+      "only realise the limits once they are already blocked by them",
+      "avoid infrastructure decisions altogether",
+      "still make deliberate, well-informed decisions"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"discover the ceiling only when they hit it\" — descobrem o limite quando já esbarram nele."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry defendendo o desenho de infraestrutura na reunião. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, I know the design I'm proposing comes in a little above the cheapest bid, and I want to be honest about why. The extra spend buys us three options that we do not need today — but that the next leadership team almost certainly will.<br><br>First, the workload can be moved between two providers rather than being tied to one. If pricing or reliability turns against us, we are not held hostage. Second, the architecture is written so that a second region can be added later without the whole platform having to be rebuilt. And third, nothing critical is locked into a proprietary format that only one vendor can read.<br><br>None of that shows up on this year's return. It will never appear on a spreadsheet, because you don't get a line item for a door you left open. But five years from now, when someone wants to expand into Asia or renegotiate a contract, those doors will either be there or they won't.<br><br>My honest view is that we are quietly setting a ceiling in this room. I'd rather set it high and pay a small premium than discover it the hard way.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does Harry's proposed design cost slightly more than the cheapest bid?",
+     "options": [
+      "It buys three future options the next team will need",
+      "It uses more powerful hardware",
+      "It requires a bigger data centre today",
+      "It includes a longer support contract"
+     ],
+     "answer": 0,
+     "why": "\"The extra spend buys us three options… that the next leadership team almost certainly will.\""
+    },
+    {
+     "q": "What is the FIRST option Harry mentions?",
+     "options": [
+      "A second data centre is built immediately",
+      "The workload can be moved between two providers rather than tied to one",
+      "The vendor manages everything",
+      "Costs are locked in for five years"
+     ],
+     "answer": 1,
+     "why": "\"the workload can be moved between two providers rather than being tied to one.\""
+    },
+    {
+     "q": "What does Harry mean by \"you don't get a line item for a door you left open\"?",
+     "options": [
+      "Open doors are a security risk",
+      "The vendor charges extra for flexibility",
+      "The benefit of optionality doesn't appear on a spreadsheet",
+      "The design cannot be measured at all"
+     ],
+     "answer": 2,
+     "why": "Inferência: a opcionalidade tem valor real, mas não aparece como número no retorno do ano."
+    },
+    {
+     "q": "What can be inferred about Harry's view of the current CFO's priorities?",
+     "options": [
+      "He believes the CFO shares his long-term view",
+      "He wants the CFO removed from the decision",
+      "He agrees the cheapest bid is best",
+      "He thinks the CFO focuses on this year's return rather than future flexibility"
+     ],
+     "answer": 3,
+     "why": "Inferência: Harry contrasta o valor de longo prazo com o que aparece \"on this year's return\" — sugere foco de curto prazo."
+    },
+    {
+     "q": "How would you best describe Harry's closing point about the ceiling?",
+     "options": [
+      "He believes the ceiling cannot be influenced",
+      "He prefers to set it high now and pay a small premium",
+      "He wants to postpone the whole decision",
+      "He is indifferent to how high the ceiling is set"
+     ],
+     "answer": 1,
+     "why": "\"I'd rather set it high and pay a small premium than discover it the hard way.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Our fibre backbone is a genuine <strong>strategic asset</strong>, not just a cost centre.\" A strategic asset is…",
+     "options": [
+      "a short-term expense to be minimised",
+      "a routine maintenance task",
+      "a temporary contract with a supplier",
+      "a resource that gives lasting competitive advantage"
+     ],
+     "answer": 3,
+     "why": "Strategic asset = ativo estratégico: recurso que sustenta vantagem de longo prazo."
+    },
+    {
+     "q": "Choose the correct term: \"The ___ was chosen for its proximity to renewable power and low seismic risk.\"",
+     "options": [
+      "provider mix",
+      "ceiling",
+      "network topology",
+      "data centre location"
+     ],
+     "answer": 3,
+     "why": "Data centre location = localização do data center, definida por energia e risco geológico."
+    },
+    {
+     "q": "\"The design preserves <strong>optionality</strong> across the estate.\" Optionality here means…",
+     "options": [
+      "a mandatory compliance step",
+      "the total cost of ownership",
+      "the ability to keep future choices open",
+      "the number of servers installed"
+     ],
+     "answer": 2,
+     "why": "Optionality = opcionalidade: manter portas abertas para decisões futuras."
+    },
+    {
+     "q": "\"Migrating away from that platform would take eighteen months to <strong>unwind</strong>.\" To unwind means to…",
+     "options": [
+      "expand into a new market",
+      "audit the accounts",
+      "accelerate suddenly",
+      "reverse or undo something already in place"
+     ],
+     "answer": 3,
+     "why": "To unwind = desfazer: reverter algo já montado, geralmente devagar e com custo."
+    },
+    {
+     "q": "Choose the correct word: \"A proprietary format quietly ___ us to a single vendor for a decade.\"",
+     "options": [
+      "locks in",
+      "unwinds",
+      "trades",
+      "deliberates"
+     ],
+     "answer": 0,
+     "why": "To lock in = travar: prender a empresa a um único fornecedor."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de estratégia de infraestrutura. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the multi-provider design.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "outsource",
+      "quietly delay",
+      "comment informally"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new topology region by region over three quarters.\" To roll out means to…",
+     "options": [
+      "hand it to the vendor",
+      "keep it in testing",
+      "cancel gradually",
+      "implement in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva, por etapas."
+    },
+    {
+     "q": "\"Finance <strong>pushed back on</strong> the extra spend for optionality.\" They…",
+     "options": [
+      "approved it at once",
+      "resisted or questioned it",
+      "forgot to review it",
+      "rewrote the whole design"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, questionar — sem necessariamente vetar de vez."
+    },
+    {
+     "q": "\"That single-region design will <strong>lock us into</strong> one architecture for years.\" To lock in means to…",
+     "options": [
+      "commit rigidly with no easy exit",
+      "keep flexibility open",
+      "share control with a partner",
+      "reduce the cost"
+     ],
+     "answer": 0,
+     "why": "Lock in = travar: comprometer-se de forma rígida, sem saída fácil."
+    },
+    {
+     "q": "\"A cheaper bid today won't <strong>move the needle</strong> on where we can expand in 2031.\" This means it will…",
+     "options": [
+      "create legal risk",
+      "take longer to deliver",
+      "make no noticeable difference",
+      "raise the premium"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 1052,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "The verb to have shows possession or responsibility. I have a contract. She has a meeting. We have three invoices.<br><br>In English, we say <strong>have</strong> for I, you, we and they. We say <strong>has</strong> for he, she and it. So: I have a receipt, but she has a receipt. The company has 13 offices. They have a new client in India.<br><br>At work, we use have and has every day. I have three invoices today. Ethan has a meeting at 3. We have a payment due Friday. You have my number. And 💛 we have time to learn.",
+   "items": [
+    {
+     "q": "Which word do we use with \"she\"?",
+     "options": [
+      "haves",
+      "have",
+      "has",
+      "having"
+     ],
+     "answer": 2,
+     "why": "Com he, she e it usamos \"has\": she has a meeting."
+    },
+    {
+     "q": "Complete: \"I ___ three invoices today.\"",
+     "options": [
+      "has",
+      "haves",
+      "is",
+      "have"
+     ],
+     "answer": 3,
+     "why": "Com \"I\" usamos \"have\": I have three invoices."
+    },
+    {
+     "q": "How many offices does the company have?",
+     "options": [
+      "30",
+      "3",
+      "300",
+      "13"
+     ],
+     "answer": 3,
+     "why": "\"The company has 13 offices.\""
+    },
+    {
+     "q": "The text suggests that \"have\" and \"has\"…",
+     "options": [
+      "are used at work every day",
+      "are difficult and rare",
+      "mean the same as \"be\"",
+      "are used only in contracts"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz \"At work, we use have and has every day.\""
+    },
+    {
+     "q": "Which sentence is correct?",
+     "options": [
+      "Ethan having a meeting.",
+      "Ethan has a meeting.",
+      "Ethan have a meeting.",
+      "Ethan is have a meeting."
+     ],
+     "answer": 1,
+     "why": "Inferência da regra: Ethan (he) usa \"has\" — Ethan has a meeting."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ethan falando com o novo trader sobre a pasta de faturas. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team. Let's look at the invoice folder together. It is not difficult, I promise.<br><br>So, we have three invoices this week. I have the first one here. It is from India, and the total is high. We have a payment due on Friday, so this one is important.<br><br>The second invoice is from Brazil. She has the receipt on email — I will ask her to send it to you. The deadline is next Monday.<br><br>The third one is small. The company has a receipt for it already, so we are okay. No payment now.<br><br>You have my number, right? Good. If a client has a question about a total or a deadline, call me. And remember: I have a meeting at three, so we finish before that. We have time. Any questions?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many invoices do they have this week?",
+     "options": [
+      "One",
+      "Three",
+      "Two",
+      "Four"
+     ],
+     "answer": 1,
+     "why": "\"we have three invoices this week.\""
+    },
+    {
+     "q": "When is the payment due?",
+     "options": [
+      "Friday",
+      "Sunday",
+      "Wednesday",
+      "Monday"
+     ],
+     "answer": 0,
+     "why": "\"We have a payment due on Friday.\""
+    },
+    {
+     "q": "Who has the receipt on email?",
+     "options": [
+      "She (the colleague)",
+      "The client in India",
+      "The new trader",
+      "Ethan"
+     ],
+     "answer": 0,
+     "why": "\"She has the receipt on email.\""
+    },
+    {
+     "q": "The third invoice is not a problem now. Why?",
+     "options": [
+      "The company already has a receipt for it",
+      "The total is very high",
+      "It is from Brazil",
+      "The deadline is on Friday"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"The company has a receipt for it already, so we are okay. No payment now.\""
+    },
+    {
+     "q": "Why does Ethan want to finish before three o'clock?",
+     "options": [
+      "The office closes at three",
+      "The trader has a call",
+      "The payment is at three",
+      "He has a meeting at three"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"I have a meeting at three, so we finish before that.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Please send the <strong>invoice</strong> to the client today.\" An invoice is…",
+     "options": [
+      "o cliente",
+      "a fatura",
+      "o recibo",
+      "a reunião"
+     ],
+     "answer": 1,
+     "why": "Invoice = fatura, o documento que pede o pagamento."
+    },
+    {
+     "q": "Choose the correct word: \"After I pay, I keep the ___ as proof.\"",
+     "options": [
+      "office",
+      "receipt",
+      "deadline",
+      "meeting"
+     ],
+     "answer": 1,
+     "why": "Receipt = recibo, a prova de que você pagou."
+    },
+    {
+     "q": "\"We have a <strong>payment</strong> due Friday.\" Payment means…",
+     "options": [
+      "a fatura",
+      "o prazo",
+      "o total",
+      "o pagamento"
+     ],
+     "answer": 3,
+     "why": "Payment = pagamento."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ is Monday, so we must pay before that day.\"",
+     "options": [
+      "deadline",
+      "total",
+      "receipt",
+      "invoice"
+     ],
+     "answer": 0,
+     "why": "Deadline = prazo final, o último dia para fazer algo."
+    },
+    {
+     "q": "\"The <strong>total</strong> has increased this month.\" Total means…",
+     "options": [
+      "o valor total",
+      "o recibo",
+      "o prazo",
+      "o pagamento"
+     ],
+     "answer": 0,
+     "why": "Total = total, o valor completo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The invoice is <strong>due Friday</strong>.\" This means the payment…",
+     "options": [
+      "is already paid",
+      "is cancelled",
+      "is from Friday",
+      "must be paid by Friday"
+     ],
+     "answer": 3,
+     "why": "Due Friday = o prazo é sexta; precisa ser pago até sexta."
+    },
+    {
+     "q": "\"Can you <strong>send over</strong> the receipt?\" To send over means to…",
+     "options": [
+      "send it to me",
+      "sign it",
+      "print it",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Send over = enviar (para a pessoa)."
+    },
+    {
+     "q": "\"I need to <strong>pay off</strong> this invoice today.\" To pay off means to…",
+     "options": [
+      "ask about it",
+      "pay it fully",
+      "delete it",
+      "delay it"
+     ],
+     "answer": 1,
+     "why": "Pay off = quitar, pagar por completo."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the totals together.\" To go over means to…",
+     "options": [
+      "throw away",
+      "sign",
+      "pay quickly",
+      "review or check"
+     ],
+     "answer": 3,
+     "why": "Go over = revisar, conferir juntos."
+    },
+    {
+     "q": "\"Please <strong>fill out</strong> this form for the receipt.\" To fill out means to…",
+     "options": [
+      "cancel it",
+      "read it",
+      "complete it with information",
+      "send it back"
+     ],
+     "answer": 2,
+     "why": "Fill out = preencher com as informações."
+    }
+   ]
+  }
+ ]
+}

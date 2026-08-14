@@ -8,23 +8,23 @@
     {
      "q": "Who are clients?",
      "options": [
-      "The people who pay for our products or services",
       "The suppliers",
-      "The banks",
-      "The managers"
+      "The people who pay for our products or services",
+      "The managers",
+      "The banks"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Clients are the people who pay for our products or services.\""
     },
     {
      "q": "What are the three simple parts of good customer service?",
      "options": [
-      "Buy, sell, pay",
-      "Read, write, speak",
       "Argue, defend, win",
-      "Be friendly, listen carefully, solve the problem"
+      "Buy, sell, pay",
+      "Be friendly, listen carefully, solve the problem",
+      "Read, write, speak"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"be friendly, listen carefully, and solve the problem.\""
     },
     {
@@ -32,32 +32,32 @@
      "options": [
       "It is funny",
       "It is a rule",
-      "The client can hear it in your voice",
-      "To pass the time"
+      "To pass the time",
+      "The client can hear it in your voice"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Smile, even on the phone — the client can hear it in your voice.\""
     },
     {
      "q": "What should you NOT do when a client is unhappy?",
      "options": [
-      "Listen",
-      "Look for a solution",
       "Argue",
-      "Apologise"
+      "Apologise",
+      "Listen",
+      "Look for a solution"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"When a client is unhappy, do not argue.\""
     },
     {
      "q": "According to the text, how many friends does an unhappy client tell?",
      "options": [
+      "None",
       "Ten",
       "Two",
-      "None",
       "One"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"A happy client tells two friends. An unhappy client tells ten.\""
     }
    ]
@@ -72,30 +72,30 @@
     {
      "q": "Why is the client unhappy?",
      "options": [
-      "The price is high",
       "Her delivery is late",
+      "The report is wrong",
       "The office is closed",
-      "The report is wrong"
+      "The price is high"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"she's not happy — her delivery is late.\""
     },
     {
      "q": "What does Oliver do first?",
      "options": [
-      "Argue",
+      "Listen and let her explain without interrupting",
       "Hang up",
-      "Blame the client",
-      "Listen and let her explain without interrupting"
+      "Argue",
+      "Blame the client"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"First, I listen. I let her explain the whole problem without interrupting.\""
     },
     {
      "q": "What does Oliver NOT do?",
      "options": [
-      "Understand",
       "Solve the problem",
+      "Understand",
       "Say 'it's not our fault'",
       "Apologise"
      ],
@@ -105,23 +105,23 @@
     {
      "q": "What solution does Oliver offer?",
      "options": [
-      "Nothing",
       "Find where the delivery is, call back within the hour with a real date, and make her first tomorrow",
-      "A refund only",
-      "A new product"
+      "A new product",
+      "Nothing",
+      "A refund only"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I'll find out exactly where your delivery is… call you back within the hour… you're the first shipment tomorrow.\""
     },
     {
      "q": "What is 'the whole secret'?",
      "options": [
       "Blame the supplier",
+      "Hang up fast",
       "Listen, understand, solve",
-      "Argue and win",
-      "Hang up fast"
+      "Argue and win"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Listen, understand, solve. That's the whole secret.\""
     }
    ]
@@ -132,32 +132,32 @@
     {
      "q": "A **client** is…",
      "options": [
-      "your manager",
-      "a bank",
       "someone who pays for your products or services",
-      "a supplier"
+      "a bank",
+      "a supplier",
+      "your manager"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Client = cliente."
     },
     {
      "q": "To **apologise** means to…",
      "options": [
+      "say sorry",
       "shout",
       "argue",
-      "leave",
-      "say sorry"
+      "leave"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Apologise = pedir desculpas."
     },
     {
      "q": "Choose the correct word: \"Let's **___** the client's problem quickly.\"",
      "options": [
       "solve",
-      "ignore",
       "hide",
-      "cause"
+      "cause",
+      "ignore"
      ],
      "answer": 0,
      "why": "Solve = resolver."
@@ -165,23 +165,23 @@
     {
      "q": "Good customer **service** means…",
      "options": [
-      "arguing with clients",
       "helping clients well",
-      "raising prices",
-      "ignoring clients"
+      "ignoring clients",
+      "arguing with clients",
+      "raising prices"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Service = serviço/atendimento."
     },
     {
      "q": "Choose the correct word: \"Be **___** — clients like a warm welcome.\"",
      "options": [
-      "silent",
-      "rude",
+      "friendly",
       "cold",
-      "friendly"
+      "silent",
+      "rude"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Friendly = amigável."
     }
    ]
@@ -192,8 +192,8 @@
     {
      "q": "\"She was **counting on** the delivery.\" To count on something means to…",
      "options": [
-      "cancel it",
       "ignore it",
+      "cancel it",
       "hide it",
       "depend on it"
      ],
@@ -203,32 +203,32 @@
     {
      "q": "\"I'll **call you back** within the hour.\" To call back means to…",
      "options": [
-      "return the call later",
       "never call",
-      "hang up",
-      "email"
+      "email",
+      "return the call later",
+      "hang up"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Call back = ligar de volta."
     },
     {
      "q": "\"A clear next step **calms** almost everyone.\" To calm someone means to…",
      "options": [
-      "argue",
       "make them feel less angry",
+      "ignore them",
       "upset them",
-      "ignore them"
+      "argue"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Calm = acalmar."
     },
     {
      "q": "\"She's **reassured** now.\" To be reassured means to…",
      "options": [
       "feel confident and calm again",
-      "be angry",
+      "feel worried",
       "leave",
-      "feel worried"
+      "be angry"
      ],
      "answer": 0,
      "why": "Reassured = tranquilizado."
@@ -236,12 +236,12 @@
     {
      "q": "\"A **loyal** client stays with you for years.\" Loyal means…",
      "options": [
-      "new",
       "faithful and steady",
+      "angry",
       "unfaithful",
-      "angry"
+      "new"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Loyal = leal, fiel."
     }
    ]

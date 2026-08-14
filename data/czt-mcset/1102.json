@@ -1,0 +1,259 @@
+{
+ "num": 1102,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In logistics, small words decide big things. Words like \"he\", \"she\", \"we\" and \"they\" tell the driver exactly who does what. These are personal pronouns.<br><br>We use pronouns to replace names. First we say the name. After that, we use a pronoun. For example: \"Oliver is a supervisor. He works the morning shift.\" We say \"it\" for a truck, a delivery or the warehouse.<br><br>Clear pronouns mean clear instructions. On the radio, there is no time for long sentences. One wrong pronoun can delay a truck. So the team learns them well.",
+   "items": [
+    {
+     "q": "What do personal pronouns tell the driver?",
+     "options": [
+      "The price of the truck",
+      "The time of the shift",
+      "Who does what",
+      "The name of the warehouse"
+     ],
+     "answer": 2,
+     "why": "\"...tell the driver exactly who does what.\""
+    },
+    {
+     "q": "When do we use a pronoun?",
+     "options": [
+      "Before the first name",
+      "Never with names",
+      "Only on the radio",
+      "After the first mention of the name"
+     ],
+     "answer": 3,
+     "why": "\"First we say the name. After that, we use a pronoun.\""
+    },
+    {
+     "q": "Which pronoun do we use for a truck?",
+     "options": [
+      "He",
+      "She",
+      "It",
+      "They"
+     ],
+     "answer": 2,
+     "why": "\"We say 'it' for a truck, a delivery or the warehouse.\""
+    },
+    {
+     "q": "The text suggests that on the radio the team must be…",
+     "options": [
+      "Quiet and polite",
+      "Short and clear",
+      "Formal and detailed",
+      "Slow and long"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"there is no time for long sentences\" mostra que a comunicação precisa ser curta e clara."
+    },
+    {
+     "q": "Why does the team learn pronouns well?",
+     "options": [
+      "Because drivers like long sentences",
+      "Because a wrong pronoun can delay a truck",
+      "Because pronouns are difficult",
+      "Because the boss likes grammar"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"One wrong pronoun can delay a truck. So the team learns them well.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver apresentar o time de logística para um novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the team. Let me show you who is who.<br><br>That man over there is Marco. He is a loader. He puts the boxes on the truck. He works the morning shift.<br><br>The woman next to him is Sofia. She is a planner. She plans the routes for the day. She is very fast.<br><br>And here is Tom. He is the supervisor. He checks the trucks and the deliveries. When we have a problem, we talk to him.<br><br>You and I are colleagues now. We work together in the afternoon shift. They — Marco and Sofia — work in the morning. So we do not meet them every day.<br><br>See that big blue truck? It is number twelve. It is old, but it is good. We use it for the long deliveries.<br><br>Any questions? Just ask me. I am always near the radio.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Marco's job?",
+     "options": [
+      "He is a supervisor",
+      "He is a loader",
+      "He is a planner",
+      "He is a driver"
+     ],
+     "answer": 1,
+     "why": "\"That man over there is Marco. He is a loader.\""
+    },
+    {
+     "q": "What does Sofia do?",
+     "options": [
+      "She drives the truck",
+      "She plans the routes",
+      "She puts boxes on the truck",
+      "She checks the trucks"
+     ],
+     "answer": 1,
+     "why": "\"She is a planner. She plans the routes for the day.\""
+    },
+    {
+     "q": "Which shift does the new colleague work?",
+     "options": [
+      "No shift",
+      "The afternoon shift",
+      "The morning shift",
+      "The night shift"
+     ],
+     "answer": 1,
+     "why": "\"We work together in the afternoon shift.\""
+    },
+    {
+     "q": "Why do Oliver and the new colleague NOT meet Marco and Sofia every day?",
+     "options": [
+      "Because they are on holiday",
+      "Because they work a different shift",
+      "Because they are far away",
+      "Because they are new"
+     ],
+     "answer": 1,
+     "why": "Inferência: Marco e Sofia trabalham de manhã e o novo colega de tarde, então quase não se cruzam."
+    },
+    {
+     "q": "What can we say about truck number twelve?",
+     "options": [
+      "It is broken",
+      "It is new and small",
+      "It is only for short trips",
+      "It is old but still useful"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"It is old, but it is good. We use it for the long deliveries.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>loader</strong> put the last box on the truck.\" A loader is a person who…",
+     "options": [
+      "loads boxes onto the truck",
+      "plans the routes",
+      "answers the phone",
+      "drives the truck"
+     ],
+     "answer": 0,
+     "why": "Loader = carregador, quem coloca as caixas no caminhão."
+    },
+    {
+     "q": "Choose the correct word: \"When there is a problem, we call the ___, and he decides what to do.\"",
+     "options": [
+      "delivery",
+      "truck",
+      "shift",
+      "supervisor"
+     ],
+     "answer": 3,
+     "why": "Supervisor = supervisor, quem toma a decisão sobre o time."
+    },
+    {
+     "q": "\"Sofia is our <strong>planner</strong>.\" A planner is a person who…",
+     "options": [
+      "plans the routes and the day",
+      "cleans the warehouse",
+      "loads the trucks",
+      "sells the boxes"
+     ],
+     "answer": 0,
+     "why": "Planner = planejador, quem organiza as rotas e o dia."
+    },
+    {
+     "q": "Choose the correct word: \"Marco is my ___. We work together every day.\"",
+     "options": [
+      "truck",
+      "colleague",
+      "planner",
+      "shift"
+     ],
+     "answer": 1,
+     "why": "Colleague = colega de trabalho, alguém que trabalha com você."
+    },
+    {
+     "q": "\"I work the morning <strong>shift</strong>.\" A shift is…",
+     "options": [
+      "a route on the map",
+      "a work period, like morning or afternoon",
+      "a delivery box",
+      "a type of truck"
+     ],
+     "answer": 1,
+     "why": "Shift = turno, o período de trabalho (manhã, tarde, noite)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no dia a dia do armazém. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The supervisor has to <strong>sign off on</strong> the delivery before it leaves.\" To sign off on means to…",
+     "options": [
+      "clean it",
+      "cancel it",
+      "load it",
+      "approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar, dar o \"ok\" final."
+    },
+    {
+     "q": "\"We <strong>roll out</strong> the new route next week.\" To roll out means to…",
+     "options": [
+      "stop it",
+      "start using it",
+      "sell it",
+      "hide it"
+     ],
+     "answer": 1,
+     "why": "Roll out = começar a usar algo novo, colocar em prática."
+    },
+    {
+     "q": "\"Please <strong>follow up</strong> on the late truck.\" To follow up means to…",
+     "options": [
+      "throw it away",
+      "forget about it",
+      "check it again later",
+      "drive it home"
+     ],
+     "answer": 2,
+     "why": "Follow up = dar continuidade, verificar de novo mais tarde."
+    },
+    {
+     "q": "\"Two loaders <strong>called in sick</strong> today.\" This means they…",
+     "options": [
+      "worked two shifts",
+      "phoned to say they are ill",
+      "asked for more boxes",
+      "came to work early"
+     ],
+     "answer": 1,
+     "why": "Call in sick = ligar avisando que está doente e não vai trabalhar."
+    },
+    {
+     "q": "\"Can you <strong>fill in for</strong> Marco this afternoon?\" To fill in for someone means to…",
+     "options": [
+      "do their job while they are away",
+      "give them a box",
+      "drive with them",
+      "plan their route"
+     ],
+     "answer": 0,
+     "why": "Fill in for = substituir alguém, fazer o trabalho no lugar da pessoa."
+    }
+   ]
+  }
+ ]
+}

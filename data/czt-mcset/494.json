@@ -10,21 +10,21 @@
     {
      "q": "What is the famous data law in Europe?",
      "options": [
-      "GDPR",
       "LGPD",
+      "GPS",
       "PDF",
-      "GPS"
+      "GDPR"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"In Europe, the most famous is GDPR.\""
     },
     {
      "q": "What simple idea do the rules share?",
      "options": [
-      "Companies must sell more data",
+      "Companies must keep data forever",
       "Companies must respect people's privacy",
-      "Companies must hide their data",
-      "Companies must keep data forever"
+      "Companies must sell more data",
+      "Companies must hide their data"
      ],
      "answer": 1,
      "why": "\"companies must respect the privacy of the people whose data they hold.\""
@@ -32,10 +32,10 @@
     {
      "q": "When must a company delete data?",
      "options": [
-      "Never",
-      "When it is no longer needed",
       "Only in Europe",
-      "Every week"
+      "When it is no longer needed",
+      "Every week",
+      "Never"
      ],
      "answer": 1,
      "why": "\"it has to delete data when it is no longer needed.\""
@@ -43,21 +43,21 @@
     {
      "q": "The author would most likely DISAGREE with the idea that…",
      "options": [
-      "Privacy is important",
-      "Data protection is only paperwork",
       "Trust can be lost",
-      "Companies must ask for consent"
+      "Companies must ask for consent",
+      "Data protection is only paperwork",
+      "Privacy is important"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: o texto diz \"Data protection is not paperwork\" — o autor discorda dessa ideia."
     },
     {
      "q": "The last paragraph suggests that losing customer trust…",
      "options": [
-      "does not matter to companies",
+      "is impossible",
       "is easy and can happen fast",
-      "only happens on purpose",
-      "is impossible"
+      "does not matter to companies",
+      "only happens on purpose"
      ],
      "answer": 1,
      "why": "Inferência: \"even by accident — is one of the fastest ways to lose customer trust\" mostra que a confiança se perde fácil e rápido."
@@ -77,9 +77,9 @@
     {
      "q": "How many questions does the team ask about each set of data?",
      "options": [
-      "Two",
       "Five",
       "Three",
+      "Two",
       "Four"
      ],
      "answer": 3,
@@ -88,30 +88,30 @@
     {
      "q": "Who can see the data, according to Charlotte?",
      "options": [
-      "Only the clients",
       "Nobody",
-      "Everyone in the company",
-      "Only people who really need it"
+      "Only the clients",
+      "Only people who really need it",
+      "Everyone in the company"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Only the people who really need it for their work.\""
     },
     {
      "q": "What must the team do when they do not need the data any more?",
      "options": [
-      "Sell it",
       "Delete it",
-      "Print it",
-      "Keep it forever"
+      "Keep it forever",
+      "Sell it",
+      "Print it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"When we do not need the data any more, we have to delete it.\""
     },
     {
      "q": "Charlotte suggests that the new colleague should…",
      "options": [
-      "keep all data just in case",
       "never ask questions",
+      "keep all data just in case",
       "ask her when they are not sure",
       "decide alone about every dataset"
      ],
@@ -121,12 +121,12 @@
     {
      "q": "Why does Charlotte think the four questions are important?",
      "options": [
-      "They help the company sell data",
       "They protect the clients and their trust",
+      "They help the company sell data",
       "They make the work slower",
       "They are required only in Europe"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"These four questions... protect our clients. They trust us... and that trust is very important.\""
     }
    ]
@@ -140,9 +140,9 @@
      "q": "\"Your name and email are <strong>personal data</strong>.\" Personal data is…",
      "options": [
       "information about a person",
-      "a type of computer",
       "a company report",
-      "an old file"
+      "an old file",
+      "a type of computer"
      ],
      "answer": 0,
      "why": "Personal data = dados pessoais: informação sobre uma pessoa."
@@ -150,45 +150,45 @@
     {
      "q": "Choose the correct word: \"We must ask for ___ before we collect someone's data.\"",
      "options": [
-      "money",
       "consent",
       "coffee",
+      "money",
       "time"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Consent = consentimento: a permissão da pessoa."
     },
     {
      "q": "\"When we do not need the file, we <strong>delete</strong> it.\" To delete means to…",
      "options": [
+      "remove it",
       "copy it",
       "save it",
-      "remove it",
       "print it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "To delete = apagar, remover."
     },
     {
      "q": "Choose the correct word: \"The client gave us their data, so we must not break their ___.\"",
      "options": [
-      "office",
-      "door",
       "phone",
-      "trust"
+      "office",
+      "trust",
+      "door"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Trust = confiança: o que a pessoa deposita na empresa."
     },
     {
      "q": "\"We <strong>respect</strong> the privacy of our clients.\" To respect privacy means to…",
      "options": [
-      "share their information",
       "sell their information",
       "keep their information safe and private",
-      "forget their information"
+      "forget their information",
+      "share their information"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "To respect privacy = respeitar a privacidade, manter os dados seguros e privados."
     }
    ]
@@ -201,34 +201,34 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the new privacy rules.\" To sign off on means to…",
      "options": [
-      "delete",
-      "ignore",
       "approve",
+      "ignore",
+      "delete",
       "print"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new data policy next month.\" To roll out means to…",
      "options": [
-      "stop it",
-      "hide it",
+      "lose it",
       "start using it",
-      "lose it"
+      "stop it",
+      "hide it"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Roll out = colocar em prática, começar a usar."
     },
     {
      "q": "\"Some staff <strong>pushed back on</strong> the new rules.\" They…",
      "options": [
-      "wrote them",
+      "did not agree with them",
       "forgot them",
-      "loved them",
-      "did not agree with them"
+      "wrote them",
+      "loved them"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Push back on = resistir, discordar."
     },
     {
@@ -245,12 +245,12 @@
     {
      "q": "\"If there is a data problem, we must <strong>speak up</strong>.\" To speak up means to…",
      "options": [
+      "say something and not stay quiet",
       "leave the room",
       "keep it secret",
-      "say something and not stay quiet",
       "delete the data"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Speak up = falar, dizer o que se pensa em vez de ficar calado."
     }
    ]

@@ -8,56 +8,56 @@
     {
      "q": "What do Incoterms tell us?",
      "options": [
-      "The colour of the goods",
       "Who pays for what in international trade",
-      "The name of the ship",
-      "The price of the goods"
+      "The colour of the goods",
+      "The price of the goods",
+      "The name of the ship"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Incoterms are short codes that tell us who pays for what.\""
     },
     {
      "q": "Under EXW, who does almost everything?",
      "options": [
-      "The bank",
-      "The seller",
+      "Customs",
       "The buyer",
-      "Customs"
+      "The seller",
+      "The bank"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"EXW means the buyer does almost everything.\""
     },
     {
      "q": "Under DDP, who does almost everything?",
      "options": [
-      "The buyer",
+      "The seller",
       "The border",
       "The ship",
-      "The seller"
+      "The buyer"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"DDP means the seller does almost everything.\""
     },
     {
      "q": "Where do FOB and CIF sit?",
      "options": [
+      "All on the buyer",
       "In the middle, between EXW and DDP",
       "Outside the trade",
-      "All on the seller",
-      "All on the buyer"
+      "All on the seller"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"FOB and CIF are in the middle.\""
     },
     {
      "q": "Besides who pays, what else do Incoterms say?",
      "options": [
-      "The tax rate",
       "Who takes the risk at each step",
+      "The tax rate",
       "The delivery colour",
       "The exchange rate"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Incoterms say who pays and who takes the risk at each step of the journey.\""
     }
    ]
@@ -72,54 +72,54 @@
     {
      "q": "What country is the buyer in?",
      "options": [
-      "Germany",
+      "The UK",
       "France",
-      "Brazil",
-      "The UK"
+      "Germany",
+      "Brazil"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"a simple shipment to Germany… the buyer is in Germany.\""
     },
     {
      "q": "Under EXW, what does the buyer do?",
      "options": [
       "Nothing",
-      "Collects the machines and handles transport, shipping, customs and risk",
       "Only pays the duty",
+      "Collects the machines and handles transport, shipping, customs and risk",
       "Waits at the door"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The buyer comes to our factory, collects the machines… the transport, the shipping, the customs, the risk.\""
     },
     {
      "q": "Under DDP, what does the seller pay for?",
      "options": [
       "Only the factory",
+      "Only the invoice",
       "Transport, shipping, customs and even the import duty",
-      "Nothing",
-      "Only the invoice"
+      "Nothing"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"we arrange the transport, we pay the shipping, we clear customs… we even pay the import duty.\""
     },
     {
      "q": "Under DDP, what does the buyer do?",
      "options": [
-      "Pays the duty",
-      "Collects from the factory",
+      "Everything",
       "Just waits at the door and receives the machines",
-      "Everything"
+      "Collects from the factory",
+      "Pays the duty"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"The buyer just waits at the door and receives the machines.\""
     },
     {
      "q": "What is the simple way to remember it?",
      "options": [
-      "The bank does the work",
+      "Both are the same",
       "EXW buyer works, DDP seller works",
-      "EXW seller works, DDP buyer works",
-      "Both are the same"
+      "The bank does the work",
+      "EXW seller works, DDP buyer works"
      ],
      "answer": 1,
      "why": "\"EXW, the buyer does the work. DDP, the seller does the work.\""
@@ -132,9 +132,9 @@
     {
      "q": "**Incoterms** are…",
      "options": [
-      "types of ships",
       "customs officers",
       "bank accounts",
+      "types of ships",
       "standard codes for who pays and takes risk in trade"
      ],
      "answer": 3,
@@ -143,21 +143,21 @@
     {
      "q": "**EXW (Ex Works)** means the goods are collected…",
      "options": [
-      "at the buyer's door",
       "at the port only",
-      "at the seller's factory",
-      "at the bank"
+      "at the bank",
+      "at the buyer's door",
+      "at the seller's factory"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "EXW = na fábrica, o comprador recolhe."
     },
     {
      "q": "Choose the correct word: \"Under CIF, the seller pays the **___** and freight.\"",
      "options": [
-      "duty",
+      "salary",
       "insurance",
-      "rent",
-      "salary"
+      "duty",
+      "rent"
      ],
      "answer": 1,
      "why": "CIF = custo, seguro (insurance) e frete."
@@ -165,21 +165,21 @@
     {
      "q": "**Freight** is…",
      "options": [
-      "the cost of transporting the goods",
       "the invoice",
       "the tax",
+      "the cost of transporting the goods",
       "the currency"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Freight = frete."
     },
     {
      "q": "Choose the correct word: \"Incoterms also say who takes the **___** at each step.\"",
      "options": [
       "risk",
-      "profit",
+      "border",
       "invoice",
-      "border"
+      "profit"
      ],
      "answer": 0,
      "why": "Risk = risco."
@@ -203,10 +203,10 @@
     {
      "q": "\"FOB and CIF are **in between**.\" In between means…",
      "options": [
-      "at the start",
+      "outside",
       "in the middle",
-      "at the end",
-      "outside"
+      "at the start",
+      "at the end"
      ],
      "answer": 1,
      "why": "In between = no meio."
@@ -225,23 +225,23 @@
     {
      "q": "\"The buyer **picks up** the goods at the factory.\" To pick up means to…",
      "options": [
-      "collect",
       "pay",
+      "insure",
       "deliver",
-      "insure"
+      "collect"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Pick up = recolher, buscar."
     },
     {
      "q": "\"Same goods, very **different jobs**.\" Different jobs here means…",
      "options": [
+      "different prices",
       "different tasks and responsibilities",
       "different ships",
-      "different products",
-      "different prices"
+      "different products"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Different jobs = tarefas/responsabilidades diferentes."
     }
    ]

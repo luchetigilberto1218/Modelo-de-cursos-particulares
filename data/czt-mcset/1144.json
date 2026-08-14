@@ -10,20 +10,20 @@
     {
      "q": "How many new words does the lesson teach today?",
      "options": [
-      "Five",
-      "Six",
       "Four",
+      "Six",
+      "Five",
       "Three"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Today you learn five useful words: deadline, payment, date, month, and calendar.\""
     },
     {
      "q": "Which preposition do we use with days and dates?",
      "options": [
-      "at",
-      "in",
       "to",
+      "in",
+      "at",
       "on"
      ],
      "answer": 3,
@@ -33,20 +33,20 @@
      "q": "When does the team check the tax calendar?",
      "options": [
       "Once a year",
-      "Every month, before the deadline",
       "Only on Fridays",
-      "After the deadline"
+      "After the deadline",
+      "Every month, before the deadline"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Every month, the team checks the tax calendar before the deadline.\""
     },
     {
      "q": "The text says \"English comes in CAN's, not in CAN'Ts.\" This suggests that the author wants you to feel…",
      "options": [
+      "tired",
       "bored",
-      "worried",
       "confident",
-      "tired"
+      "worried"
      ],
      "answer": 2,
      "why": "Inferência: a frase é de encorajamento — o autor quer que você se sinta confiante (\"You can do it!\")."
@@ -54,12 +54,12 @@
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
-      "Taxes are too hard to ever understand.",
+      "These words appear on real Czarnikow forms.",
       "You should learn one step at a time.",
       "Taxes follow simple patterns in English.",
-      "These words appear on real Czarnikow forms."
+      "Taxes are too hard to ever understand."
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: o texto todo diz que impostos ficam mais fáceis com prática — o autor discorda que sejam impossíveis."
     }
    ]
@@ -77,9 +77,9 @@
     {
      "q": "What does Sophie do with the important dates?",
      "options": [
-      "She deletes them",
-      "She marks them in red",
       "She sends them by email",
+      "She marks them in red",
+      "She deletes them",
       "She reads them aloud only"
      ],
      "answer": 1,
@@ -88,45 +88,45 @@
     {
      "q": "When is the first payment due?",
      "options": [
-      "On the twentieth",
       "On Friday",
+      "On Monday, the fifth",
       "Next month",
-      "On Monday, the fifth"
+      "On the twentieth"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"the first payment is due on Monday. That's the fifth.\""
     },
     {
      "q": "Why does the team send the form two days before the deadline?",
      "options": [
-      "So they are never late",
+      "To save money",
       "Because the calendar is wrong",
-      "Because the accountant is on holiday",
-      "To save money"
+      "So they are never late",
+      "Because the accountant is on holiday"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"We always send the form two days before the deadline, so we are never late.\""
     },
     {
      "q": "Why does Sophie check every payment on Friday?",
      "options": [
+      "Because the boss asks her to",
       "So there is still time to fix any mistake",
       "Because Friday is a holiday",
-      "Because the boss asks her to",
       "To finish the week early"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"If something is wrong, we still have time to fix it. That's why we check early.\""
     },
     {
      "q": "What does Sophie suggest about next month?",
      "options": [
-      "She will do the calendar alone",
       "They will stop checking payments",
+      "The colleague will do the calendar, and she will watch",
       "There will be no tax calendar",
-      "The colleague will do the calendar, and she will watch"
+      "She will do the calendar alone"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"Next month, you will do the calendar, and I will only watch\" — ela passa a tarefa ao colega."
     }
    ]
@@ -139,19 +139,19 @@
     {
      "q": "\"The <strong>deadline</strong> for the tax is next Friday.\" A deadline is…",
      "options": [
-      "a final date or time limit",
-      "a bank account",
       "a type of tax",
-      "a meeting room"
+      "a meeting room",
+      "a bank account",
+      "a final date or time limit"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Deadline = prazo final, a data limite para fazer algo."
     },
     {
      "q": "Choose the correct word: \"The company sends the ___ to the government every month.\"",
      "options": [
-      "month",
       "calendar",
+      "month",
       "chair",
       "payment"
      ],
@@ -161,20 +161,20 @@
     {
      "q": "Choose the correct word: \"Please write the correct ___ on the form: the tenth of March.\"",
      "options": [
-      "office",
-      "coffee",
       "date",
-      "phone"
+      "phone",
+      "coffee",
+      "office"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Date = data; \"the tenth of March\" é uma data."
     },
     {
      "q": "\"We pay this tax every <strong>month</strong>.\" A month is…",
      "options": [
       "one hour",
-      "one day",
       "one week",
+      "one day",
       "one of the twelve parts of a year"
      ],
      "answer": 3,
@@ -184,8 +184,8 @@
      "q": "Choose the correct word: \"The tax dates are all on the ___ near my desk.\"",
      "options": [
       "window",
-      "deadline",
       "payment",
+      "deadline",
       "calendar"
      ],
      "answer": 3,
@@ -201,45 +201,45 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the payment first.\" To sign off on means to…",
      "options": [
-      "hide it",
       "cancel it",
-      "print it",
-      "approve it"
+      "hide it",
+      "approve it",
+      "print it"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"Let's <strong>write down</strong> the deadline on the calendar.\" To write down means to…",
      "options": [
-      "read it aloud",
       "put it in writing",
-      "delete it",
-      "forget it"
+      "forget it",
+      "read it aloud",
+      "delete it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Write down = anotar, colocar por escrito."
     },
     {
      "q": "\"I will <strong>follow up</strong> with the accountant tomorrow.\" To follow up means to…",
      "options": [
-      "pay twice",
-      "start a new job",
+      "check again to make sure it is done",
       "close the office",
-      "check again to make sure it is done"
+      "pay twice",
+      "start a new job"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Follow up = dar continuidade, checar de novo para garantir que foi feito."
     },
     {
      "q": "\"Don't forget to <strong>check off</strong> each date when it is paid.\" To check off means to…",
      "options": [
       "leave the office",
-      "mark it as done",
+      "add a new date",
       "call the bank",
-      "add a new date"
+      "mark it as done"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Check off = marcar como concluído, riscar da lista."
     },
     {
@@ -247,10 +247,10 @@
      "options": [
       "very late",
       "too early",
-      "cancelled",
-      "not late"
+      "not late",
+      "cancelled"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "On time = na hora certa, sem atraso."
     }
    ]

@@ -10,23 +10,23 @@
     {
      "q": "What is cash, according to the text?",
      "options": [
-      "The number of clients you have",
-      "The price of sugar today",
       "The money you earned on paper",
-      "The money you actually have in the bank"
+      "The money you actually have in the bank",
+      "The number of clients you have",
+      "The price of sugar today"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"Cash is the money you actually have in the bank.\""
     },
     {
      "q": "Why can a profitable company still run out of cash?",
      "options": [
-      "Because it closes too many deals",
-      "Because it never earns any profit",
       "Because customers pay late or big costs come first",
-      "Because it has no clients"
+      "Because it never earns any profit",
+      "Because it has no clients",
+      "Because it closes too many deals"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"This happens when customers pay late, or when big costs come before the money arrives.\""
     },
     {
@@ -43,23 +43,23 @@
     {
      "q": "The author would most likely DISAGREE with this idea:",
      "options": [
-      "Late payments can create a cash gap",
-      "A profitable company is always safe",
+      "Profit and cash are different things",
       "Cash is needed to pay salaries",
-      "Profit and cash are different things"
+      "Late payments can create a cash gap",
+      "A profitable company is always safe"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto mostra que uma empresa lucrativa pode falir por falta de caixa, então \"sempre segura\" está errado."
     },
     {
      "q": "The last paragraph suggests that…",
      "options": [
-      "cash problems can be more dangerous than low profit",
-      "sugar deals are always safe",
       "profit is the only thing that matters",
-      "companies never fail"
+      "cash problems can be more dangerous than low profit",
+      "companies never fail",
+      "sugar deals are always safe"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: muitas empresas falem por falta de caixa, não por falta de lucro — o caixa é o risco imediato."
     }
    ]
@@ -77,9 +77,9 @@
     {
      "q": "Why does Oliver say the new deal's cash is \"not here yet\"?",
      "options": [
-      "Because there is no sugar to sell",
-      "Because the client pays in 90 days",
       "Because the client cancelled the deal",
+      "Because the client pays in 90 days",
+      "Because there is no sugar to sell",
       "Because the deal is not profitable"
      ],
      "answer": 1,
@@ -88,45 +88,45 @@
     {
      "q": "According to Oliver, what pays the bills this month?",
      "options": [
-      "The new colleague",
-      "The client",
+      "Cash",
       "Profit",
-      "Cash"
+      "The new colleague",
+      "The client"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Profit does not pay the bills. Cash pays the bills.\""
     },
     {
      "q": "What second question does Oliver want you to ask about a deal?",
      "options": [
       "Who is the client?",
-      "When does the money arrive?",
       "How big is the deal?",
-      "Where is the sugar from?"
+      "Where is the sugar from?",
+      "When does the money arrive?"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Also ask, 'When does the money arrive?'\""
     },
     {
      "q": "What can we infer about Oliver's view of long-term deals?",
      "options": [
-      "He wants to stop all sugar deals",
-      "He thinks they are always bad",
       "He accepts them, but wants people to watch the cash",
-      "He only likes deals over 90 days"
+      "He thinks they are always bad",
+      "He only likes deals over 90 days",
+      "He wants to stop all sugar deals"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: ele diz que os contratos longos são \"fine\", mas insiste em vigiar o caixa."
     },
     {
      "q": "Why does Oliver say many good companies fail?",
      "options": [
       "Because they lose money every month",
-      "Because one day there is no cash in the bank",
+      "Because their staff leave",
       "Because they have no clients",
-      "Because their staff leave"
+      "Because one day there is no cash in the bank"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"not because they lose money, but because one day there is no cash in the bank.\""
     }
    ]
@@ -139,9 +139,9 @@
     {
      "q": "\"The deal looks good <strong>on paper</strong>, but the money is not here yet.\" On paper means…",
      "options": [
-      "printed on a document",
-      "in theory, or in the numbers",
       "in the newspaper",
+      "in theory, or in the numbers",
+      "printed on a document",
       "written by hand"
      ],
      "answer": 1,
@@ -152,19 +152,19 @@
      "options": [
       "sell",
       "close",
-      "wait",
-      "pay"
+      "pay",
+      "wait"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "To wait = esperar. Precisamos esperar 90 dias pelo dinheiro."
     },
     {
      "q": "A <strong>customer</strong> is…",
      "options": [
-      "a person who works in your team",
+      "a bank account",
       "a person or company that buys from you",
       "a type of sugar",
-      "a bank account"
+      "a person who works in your team"
      ],
      "answer": 1,
      "why": "Customer = cliente, quem compra de você."
@@ -172,8 +172,8 @@
     {
      "q": "Choose the correct word: \"If a company runs out of cash, it can ___.\"",
      "options": [
-      "relax",
       "win",
+      "relax",
       "fail",
       "grow"
      ],
@@ -184,11 +184,11 @@
      "q": "\"Profit is an opinion, but cash is a <strong>fact</strong>.\" A fact is…",
      "options": [
       "a guess about the future",
-      "a type of report",
       "something true and real",
+      "a type of report",
       "a personal idea"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Fact = fato, algo real; o caixa no banco é um número concreto."
     }
    ]
@@ -201,23 +201,23 @@
     {
      "q": "\"The client did not pay, so the money is late. We are still <strong>waiting on</strong> them.\" To wait on someone means to…",
      "options": [
+      "cancel the deal",
       "call them every hour",
       "wait for them to do something",
-      "cancel the deal",
       "pay them first"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Wait on = esperar que alguém faça algo (aqui, pagar)."
     },
     {
      "q": "\"The company almost <strong>ran out of</strong> cash last month.\" To run out of something means to…",
      "options": [
-      "share it",
-      "buy more of it",
       "have too much of it",
-      "have none left"
+      "have none left",
+      "buy more of it",
+      "share it"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Run out of = acabar, ficar sem. Quase ficaram sem caixa."
     },
     {
@@ -234,10 +234,10 @@
     {
      "q": "\"We must <strong>keep an eye on</strong> the cash every week.\" To keep an eye on means to…",
      "options": [
-      "hide it",
+      "give it away",
       "watch it carefully",
-      "spend it fast",
-      "give it away"
+      "hide it",
+      "spend it fast"
      ],
      "answer": 1,
      "why": "Keep an eye on = ficar de olho, vigiar de perto."
@@ -247,8 +247,8 @@
      "options": [
       "stay the same",
       "grow bigger little by little",
-      "stop suddenly",
-      "get smaller"
+      "get smaller",
+      "stop suddenly"
      ],
      "answer": 1,
      "why": "Add up = ir somando, acumular até virar um problema grande."

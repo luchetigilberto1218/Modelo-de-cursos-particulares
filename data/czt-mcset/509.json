@@ -1,0 +1,259 @@
+{
+ "num": 509,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In practice, AI is a useful assistant, not a magic oracle. It is genuinely good at tasks with clear patterns and lots of data: recognising images, transcribing speech, summarising text and predicting the next step in a familiar process. It is unreliable at tasks that require judgement, context, or information it has never seen.<br><br>A good intermediate user of AI learns to match the tool to the task. Use it where it shines; double-check where it stumbles; avoid it where it will confidently say the wrong thing. Most of the mistakes companies make with AI come from using it for the wrong kind of problem, not from the AI being bad at what it does.<br><br>Although AI will keep improving, this core rule will not change: match the tool to the task, and never assume that confidence means correctness.",
+   "items": [
+    {
+     "q": "According to the text, what is AI genuinely good at?",
+     "options": [
+      "Tasks that require human judgement",
+      "Problems it has never seen before",
+      "Tasks with clear patterns and lots of data",
+      "Ethical decisions in complex situations"
+     ],
+     "answer": 2,
+     "why": "\"It is genuinely good at tasks with clear patterns and lots of data.\""
+    },
+    {
+     "q": "Where does the text say most company mistakes with AI come from?",
+     "options": [
+      "Managers who distrust the technology",
+      "A shortage of training data",
+      "The AI being bad at what it does",
+      "Using it for the wrong kind of problem"
+     ],
+     "answer": 3,
+     "why": "\"Most of the mistakes… come from using it for the wrong kind of problem, not from the AI being bad at what it does.\""
+    },
+    {
+     "q": "Which rule does the author say will NOT change, even as AI improves?",
+     "options": [
+      "Match the tool to the task, and don't assume confidence means correctness",
+      "Automate every routine process",
+      "Always choose the most advanced model",
+      "Trust the answer whenever the AI sounds sure"
+     ],
+     "answer": 0,
+     "why": "\"this core rule will not change: match the tool to the task, and never assume that confidence means correctness.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Users should double-check AI on tasks where it stumbles.",
+      "A confident AI answer can still be wrong.",
+      "If an AI sounds certain, its answer must be correct.",
+      "AI works best on familiar, data-rich tasks."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto insiste que confiança não é o mesmo que correção — o autor discordaria disso."
+    },
+    {
+     "q": "The phrase \"avoid it where it will confidently say the wrong thing\" suggests that AI can…",
+     "options": [
+      "warn the user before making a mistake",
+      "refuse to answer difficult questions",
+      "only fail on tasks with too little data",
+      "give a wrong answer while sounding sure of it"
+     ],
+     "answer": 3,
+     "why": "Inferência: a falha perigosa é justamente a que vem com aparência de certeza, sem aviso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James orientando um novo gerente. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Look, I love that you're excited about this. But before you plug AI into everything, let me slow you down for a second. The tool is brilliant at some things and quietly terrible at others, and the trouble is that it never tells you which is which.<br><br>Take the pricing report you wanted it to write. Summarising last quarter's numbers? Fine — that's pattern-matching over data it can see. But asking it to judge whether a supplier is trustworthy, based on a phone call it wasn't part of? That's not a job for a machine. It will give you an answer, and it will sound completely sure of itself, and it may be wrong.<br><br>So here's my rule for you. Use it where it shines, and check it where it stumbles. If a mistake is cheap and easy to spot, let the AI run. If a mistake is expensive or hard to catch, keep a human in the loop. Confidence is not correctness — write that on a sticky note if you have to.<br><br>Do that, and you'll get far more out of it than the people who either trust it blindly or refuse to touch it.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "According to James, what is the main problem with the AI tool?",
+     "options": [
+      "It never tells you when it is good or terrible at a task",
+      "It refuses to summarise reports",
+      "It is too expensive for the team to use",
+      "It is slow with large amounts of data"
+     ],
+     "answer": 0,
+     "why": "\"it never tells you which is which\" — o problema é não sinalizar onde acerta e onde falha."
+    },
+    {
+     "q": "Which task does James say IS appropriate for the AI?",
+     "options": [
+      "Judging whether a supplier is trustworthy",
+      "Making the final ethical decision",
+      "Interpreting a phone call it wasn't part of",
+      "Summarising last quarter's numbers"
+     ],
+     "answer": 3,
+     "why": "\"Summarising last quarter's numbers? Fine — that's pattern-matching over data it can see.\""
+    },
+    {
+     "q": "What is James's rule for when to keep a human in the loop?",
+     "options": [
+      "When the task involves any numbers",
+      "Only on the first attempt",
+      "Whenever the AI sounds confident",
+      "When the mistake is expensive or hard to catch"
+     ],
+     "answer": 3,
+     "why": "\"If a mistake is expensive or hard to catch, keep a human in the loop.\""
+    },
+    {
+     "q": "What does James most likely mean by \"Confidence is not correctness\"?",
+     "options": [
+      "You should only trust confident tools",
+      "The AI is never confident enough",
+      "Confident managers make fewer mistakes",
+      "A sure-sounding answer can still be wrong"
+     ],
+     "answer": 3,
+     "why": "Inferência: tom seguro não garante que a resposta esteja certa — o cerne do conselho."
+    },
+    {
+     "q": "How would you best describe James's attitude towards the new manager?",
+     "options": [
+      "Opposed to using AI at all",
+      "Encouraging, but urging more caution",
+      "Indifferent to how the tool is used",
+      "Dismissive of the manager's excitement"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele valoriza o entusiasmo (\"I love that you're excited\") mas pede critério — nem cego nem avesso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Treat the model as a <strong>useful assistant</strong>, not a magic oracle.\" A useful assistant is…",
+     "options": [
+      "a source that is always right",
+      "a helper that supports your work",
+      "a tool nobody really needs",
+      "a replacement for the whole team"
+     ],
+     "answer": 1,
+     "why": "Useful assistant = assistente útil, algo que apoia o trabalho — em oposição ao \"magic oracle\"."
+    },
+    {
+     "q": "Choose the correct word: \"The system can ___ a one-hour meeting into a short set of bullet points.\"",
+     "options": [
+      "predict",
+      "stumble",
+      "summarise",
+      "transcribe"
+     ],
+     "answer": 2,
+     "why": "Summarise = resumir: condensar o essencial de um texto longo."
+    },
+    {
+     "q": "Choose the correct word: \"With enough historical data, the model can ___ next month's demand fairly well.\"",
+     "options": [
+      "shine",
+      "transcribe",
+      "predict",
+      "summarise"
+     ],
+     "answer": 2,
+     "why": "Predict = prever: estimar o próximo passo a partir de dados."
+    },
+    {
+     "q": "\"This is where the tool tends to <strong>stumble</strong>.\" To stumble here means to…",
+     "options": [
+      "run faster than usual",
+      "refuse to start",
+      "make errors or struggle",
+      "perform very reliably"
+     ],
+     "answer": 2,
+     "why": "Stumble = tropeçar: falhar ou ter dificuldade numa tarefa."
+    },
+    {
+     "q": "\"AI cannot replace human <strong>judgement</strong> in an ethical dilemma.\" Judgement is…",
+     "options": [
+      "the amount of data available",
+      "the speed of a decision",
+      "a written company rule",
+      "the ability to weigh things and decide wisely"
+     ],
+     "answer": 3,
+     "why": "Judgement = julgamento: a capacidade de ponderar contexto e decidir com bom senso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem quando equipes adotam novas ferramentas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Legal still has to <strong>sign off on</strong> using the AI tool with client data.\" To sign off on means to…",
+     "options": [
+      "test it quietly",
+      "delay it indefinitely",
+      "formally approve it",
+      "complain about it"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We plan to <strong>roll out</strong> the assistant team by team.\" To roll out means to…",
+     "options": [
+      "hide it from users",
+      "explain it to the board",
+      "implement it in stages",
+      "cancel it gradually"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two analysts <strong>pushed back on</strong> letting the AI price the deal alone.\" They…",
+     "options": [
+      "ignored the proposal",
+      "rewrote the whole model",
+      "resisted or disagreed with it",
+      "approved it immediately"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"He was keen to try it, but never <strong>followed through</strong> on checking the output.\" He…",
+     "options": [
+      "failed to carry it to completion",
+      "documented it carefully",
+      "carried the task to completion",
+      "delegated it to another team"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado — aqui, o que faltou."
+    },
+    {
+     "q": "\"Automating those emails won't really <strong>move the needle</strong> on our workload.\" This means it will…",
+     "options": [
+      "cost far too much",
+      "not make a noticeable difference",
+      "cause a lot of resistance",
+      "make a huge difference"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível — aqui, negado."
+    }
+   ]
+  }
+ ]
+}

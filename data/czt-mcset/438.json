@@ -10,9 +10,9 @@
     {
      "q": "Who decides how much tax to charge on the goods?",
      "options": [
+      "The bank",
       "The ship's captain",
       "The company that makes the goods",
-      "The bank",
       "The importing country"
      ],
      "answer": 3,
@@ -21,45 +21,45 @@
     {
      "q": "The tax rate depends on…",
      "options": [
-      "what the goods are and where they come from",
+      "the weight of the container only",
       "the day of the week",
       "the name of the company",
-      "the weight of the container only"
+      "what the goods are and where they come from"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The rate depends on… what the goods are and where they come from.\""
     },
     {
      "q": "What do free trade agreements do?",
      "options": [
-      "They lower or remove taxes for certain goods",
-      "They make all taxes higher",
       "They stop all trade",
-      "They protect foreign companies"
+      "They protect foreign companies",
+      "They make all taxes higher",
+      "They lower or remove taxes for certain goods"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"These agreements lower or remove the taxes for certain goods.\""
     },
     {
      "q": "The author would most likely DISAGREE with this idea:",
      "options": [
-      "You should learn the tax before the goods arrive.",
+      "It is fine to check the tax after the container is at the port.",
       "The rate can change from country to country.",
       "Taxes are part of the real cost of a shipment.",
-      "It is fine to check the tax after the container is at the port."
+      "You should learn the tax before the goods arrive."
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: o texto diz para entender o imposto ANTES da chegada — checar só depois é o erro que ele critica."
     },
     {
      "q": "Why do some countries use tariffs? This suggests that…",
      "options": [
-      "they want to remove all taxes",
       "they do not like international trade at all",
       "they want to help foreign companies grow",
-      "they want to protect their own local businesses"
+      "they want to protect their own local businesses",
+      "they want to remove all taxes"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: \"tariffs to protect their local industries from foreign competition\" — a tarifa defende a empresa de dentro do país."
     }
    ]
@@ -88,43 +88,43 @@
     {
      "q": "In Brazil, who pays the import duty when the goods arrive?",
      "options": [
-      "The exporter",
       "The bank",
+      "The customer",
       "The ship company",
-      "The customer"
+      "The exporter"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"the customer pays this tax when the goods arrive.\""
     },
     {
      "q": "Why does Oliver say the low price can be a \"bad surprise\"?",
      "options": [
-      "Because the goods arrive late",
-      "Because the exporter loses the container",
+      "Because the price is wrong on paper",
       "Because the customer sees the higher final cost and says no",
-      "Because the price is wrong on paper"
+      "Because the exporter loses the container",
+      "Because the goods arrive late"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: se a tarifa não aparece no começo, o cliente descobre o custo total depois e recusa."
     },
     {
      "q": "What does Oliver mean by the \"honest number\"?",
      "options": [
-      "The full cost with product, shipping and duty together",
       "The price only the exporter can see",
+      "The full cost with product, shipping and duty together",
       "The cheapest possible price",
       "The price without any tax"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ele soma produto, frete e imposto — o custo real, não o mais barato."
     },
     {
      "q": "What is Oliver's main advice to the exporter?",
      "options": [
       "Check the duty before sending the next quote",
-      "Wait for the container to reach the port",
+      "Lower the declared value to pay less",
       "Never talk about taxes with the customer",
-      "Lower the declared value to pay less"
+      "Wait for the container to reach the port"
      ],
      "answer": 0,
      "why": "\"before you send your next quote, always check the duty first.\""
@@ -141,43 +141,43 @@
      "options": [
       "a job title",
       "a type of ship",
-      "an import tax on goods",
-      "a discount"
+      "a discount",
+      "an import tax on goods"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Duty = imposto de importação."
     },
     {
      "q": "Choose the correct word: \"The government put a high ___ on foreign steel to protect local factories.\"",
      "options": [
-      "customer",
-      "tariff",
       "shipment",
-      "border"
+      "customer",
+      "border",
+      "tariff"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Tariff = tarifa, o imposto usado para proteger a indústria local."
     },
     {
      "q": "Choose the correct word: \"Our company buys coffee from Colombia. We ___ it every month.\"",
      "options": [
-      "protect",
       "declare",
-      "import",
-      "export"
+      "export",
+      "protect",
+      "import"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "To import = importar: trazer os produtos de outro país."
     },
     {
      "q": "\"The <strong>declared value</strong> was 10,000 dollars.\" The declared value is…",
      "options": [
-      "the weight of the box",
-      "the name of the buyer",
+      "the color of the product",
       "the price written on paper for the goods",
-      "the color of the product"
+      "the name of the buyer",
+      "the weight of the box"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Declared value = valor declarado dos produtos, usado para calcular o imposto."
     },
     {
@@ -185,8 +185,8 @@
      "options": [
       "shipment",
       "duty",
-      "tariff",
-      "agreement"
+      "agreement",
+      "tariff"
      ],
      "answer": 0,
      "why": "Shipment = remessa: os produtos enviados juntos."
@@ -201,12 +201,12 @@
     {
      "q": "\"The manager must <strong>sign off on</strong> the new shipment.\" To sign off on means to…",
      "options": [
+      "pay for",
       "cancel",
       "formally approve",
-      "forget",
-      "pay for"
+      "forget"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
@@ -224,9 +224,9 @@
      "q": "\"The customer <strong>pushed back on</strong> the high price.\" This means the customer…",
      "options": [
       "agreed at once",
-      "paid more",
+      "left the country",
       "disagreed or resisted",
-      "left the country"
+      "paid more"
      ],
      "answer": 2,
      "why": "Push back on = resistir, discordar."
@@ -234,10 +234,10 @@
     {
      "q": "\"Please <strong>fill out</strong> the customs form before the goods leave.\" To fill out means to…",
      "options": [
-      "translate it",
-      "complete it with information",
       "read it fast",
-      "throw it away"
+      "complete it with information",
+      "throw it away",
+      "translate it"
      ],
      "answer": 1,
      "why": "Fill out = preencher (um formulário)."
@@ -245,12 +245,12 @@
     {
      "q": "\"The tax added a lot to the price, so the deal <strong>fell through</strong>.\" To fall through means to…",
      "options": [
+      "get bigger",
       "start again",
-      "fail or not happen",
       "become cheaper",
-      "get bigger"
+      "fail or not happen"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Fall through = fracassar, não se concretizar."
     }
    ]

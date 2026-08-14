@@ -1,0 +1,259 @@
+{
+ "num": 1113,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Weather and traffic change every delivery. A short phrase can save hours. \"It's raining\" or \"the traffic is heavy\" tells the driver a lot in one second.<br><br>Today we practise a simple structure: It is + weather or traffic. \"It's foggy\" means poor visibility. \"The road is clear\" means no big problems. \"The traffic is heavy\" means slow movement.<br><br>A 20-second update can save an hour. So always give the driver the full picture. English comes in CAN's, not in CAN'Ts.",
+   "items": [
+    {
+     "q": "What can a short phrase save?",
+     "options": [
+      "Money only",
+      "Fuel only",
+      "Hours",
+      "Nothing"
+     ],
+     "answer": 2,
+     "why": "\"A short phrase can save hours.\""
+    },
+    {
+     "q": "What does \"It's foggy\" mean?",
+     "options": [
+      "Poor visibility",
+      "No rain",
+      "Heavy traffic",
+      "Clear road"
+     ],
+     "answer": 0,
+     "why": "\"'It's foggy' means poor visibility.\""
+    },
+    {
+     "q": "What structure do we practise today?",
+     "options": [
+      "Do you + verb",
+      "It is + weather or traffic",
+      "I have + object",
+      "There is + place"
+     ],
+     "answer": 1,
+     "why": "\"a simple structure: It is + weather or traffic.\""
+    },
+    {
+     "q": "The text suggests that a good driver update should be…",
+     "options": [
+      "Short and clear",
+      "Only about the weather",
+      "Long and detailed",
+      "Sent by email"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto valoriza frases curtas de 20 segundos que dão a foto completa."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "Drivers should not be told about rain",
+      "Weather and traffic do not matter",
+      "A quick update is worth the time",
+      "Long reports are always better"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"A 20-second update can save an hour\" — o autor valoriza o aviso rápido."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry ligando para o motorista. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, it's Harry. Can you hear me? Good. Listen, I want to give you a quick update before you leave the depot. It is important, so please stay for one minute.<br><br>It's raining now, and the rain is heavy. So please drive slowly and keep more distance from the car in front. It is also a little foggy near the bridge. You cannot see well there, so turn your lights on.<br><br>The traffic is heavy on the main road today. There is an accident near the station, and the cars are very slow. It is not safe and it is not fast. So please do not take the main road. Take the second road. The second road is clear, and it is faster today. There is no accident there.<br><br>So, to be safe: it's raining, it's foggy at the bridge, and the traffic is heavy on the main road. Take the second road, drive slowly, and put your lights on. Call me when you arrive at the client. Thank you very much, and drive safe!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How is the rain today?",
+     "options": [
+      "Not there",
+      "Heavy",
+      "Stopped",
+      "Light"
+     ],
+     "answer": 1,
+     "why": "\"The rain is heavy, so please drive slowly.\""
+    },
+    {
+     "q": "Where is it foggy?",
+     "options": [
+      "Near the bridge",
+      "At the office",
+      "Near the station",
+      "On the second road"
+     ],
+     "answer": 0,
+     "why": "\"It is also a little foggy near the bridge.\""
+    },
+    {
+     "q": "Why is the traffic slow on the main road?",
+     "options": [
+      "It is a holiday",
+      "There is rain only",
+      "The road is closed",
+      "There is an accident near the station"
+     ],
+     "answer": 3,
+     "why": "\"There is an accident near the station, and the cars are very slow.\""
+    },
+    {
+     "q": "Why does Harry ask the driver to take the second road?",
+     "options": [
+      "It is longer",
+      "It is clear and faster",
+      "It is closed",
+      "It has more shops"
+     ],
+     "answer": 1,
+     "why": "Inferência: Harry quer evitar o acidente; \"The second road is clear, and it is faster today.\""
+    },
+    {
+     "q": "How would you describe Harry's message?",
+     "options": [
+      "Angry and rude",
+      "Confused and unsure",
+      "Careful and helpful",
+      "Bored and slow"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele avisa, dá instruções de segurança e termina com \"drive safe\" — atencioso e útil."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Take an umbrella, the <strong>rain</strong> is heavy.\" <strong>Rain</strong> means…",
+     "options": [
+      "Sun",
+      "Snow",
+      "Wind",
+      "Water from the sky"
+     ],
+     "answer": 3,
+     "why": "Rain = chuva, a água que cai do céu."
+    },
+    {
+     "q": "\"It is a beautiful day, the <strong>sun</strong> is out.\" <strong>Sun</strong> means…",
+     "options": [
+      "The bright light in the sky",
+      "Rain",
+      "Fog",
+      "Traffic"
+     ],
+     "answer": 0,
+     "why": "Sun = sol, a luz brilhante no céu."
+    },
+    {
+     "q": "Choose the correct word: \"Turn your lights on, there is thick ___ near the bridge.\"",
+     "options": [
+      "sun",
+      "road",
+      "traffic",
+      "fog"
+     ],
+     "answer": 3,
+     "why": "Fog = neblina; por isso ligamos os faróis e a visibilidade é ruim."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ is heavy, so the cars move very slowly.\"",
+     "options": [
+      "rain",
+      "traffic",
+      "sun",
+      "fog"
+     ],
+     "answer": 1,
+     "why": "Traffic = trânsito; \"heavy traffic\" = carros lentos."
+    },
+    {
+     "q": "\"The cars are slow because of an <strong>accident</strong>.\" An <strong>accident</strong> is…",
+     "options": [
+      "A crash on the road",
+      "A clear road",
+      "A parking spot",
+      "A traffic light"
+     ],
+     "answer": 0,
+     "why": "Accident = acidente, uma batida na estrada."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs úteis para avisos de clima e trânsito. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>turn on</strong> your lights in the fog.\" To turn on means to…",
+     "options": [
+      "Clean it",
+      "Switch off",
+      "Break it",
+      "Make something start working"
+     ],
+     "answer": 3,
+     "why": "Turn on = ligar, fazer algo funcionar (as luzes)."
+    },
+    {
+     "q": "\"The road is bad, so <strong>slow down</strong>.\" To slow down means to…",
+     "options": [
+      "Reduce speed",
+      "Stop the car",
+      "Turn around",
+      "Go faster"
+     ],
+     "answer": 0,
+     "why": "Slow down = reduzir a velocidade."
+    },
+    {
+     "q": "\"There is an accident. Please <strong>watch out</strong>!\" To watch out means to…",
+     "options": [
+      "Wait outside",
+      "Look at your watch",
+      "Take a photo",
+      "Be careful"
+     ],
+     "answer": 3,
+     "why": "Watch out = tome cuidado, preste atenção."
+    },
+    {
+     "q": "\"Call me when you <strong>set off</strong>.\" To set off means to…",
+     "options": [
+      "Start a trip",
+      "Stop for lunch",
+      "Arrive",
+      "Park the car"
+     ],
+     "answer": 0,
+     "why": "Set off = partir, começar a viagem."
+    },
+    {
+     "q": "\"The rain will <strong>clear up</strong> soon.\" To clear up means to…",
+     "options": [
+      "Get better",
+      "Stay the same",
+      "Turn to snow",
+      "Get worse"
+     ],
+     "answer": 0,
+     "why": "Clear up = melhorar, o tempo ficar bom de novo."
+    }
+   ]
+  }
+ ]
+}

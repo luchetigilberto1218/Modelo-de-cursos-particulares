@@ -1,0 +1,259 @@
+{
+ "num": 1091,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "An invoice is a simple document. It shows the price, the amount and the buyer. Every delivery has an invoice.<br><br>Every company has a tax number. The invoice has a number and a date. The total shows the full price. Tax is added to the total.<br><br>We use <strong>have</strong> with I, you, we and they. We use <strong>has</strong> with he, she and it. A good invoice is short and correct. You can do it!",
+   "items": [
+    {
+     "q": "What does an invoice show?",
+     "options": [
+      "The price, the amount and the buyer",
+      "The company's history",
+      "Only the buyer's name",
+      "The office address"
+     ],
+     "answer": 0,
+     "why": "\"It shows the price, the amount and the buyer.\""
+    },
+    {
+     "q": "What does every company have?",
+     "options": [
+      "A free delivery",
+      "Two buyers",
+      "A tax number",
+      "A new office"
+     ],
+     "answer": 2,
+     "why": "\"Every company has a tax number.\""
+    },
+    {
+     "q": "The total on the invoice shows…",
+     "options": [
+      "the full price",
+      "the delivery day",
+      "the buyer's name",
+      "the tax number"
+     ],
+     "answer": 0,
+     "why": "\"The total shows the full price.\""
+    },
+    {
+     "q": "The text suggests that an invoice is…",
+     "options": [
+      "only for big companies",
+      "not important for a company",
+      "very hard to read",
+      "easy and useful"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz \"An invoice is a simple document\" e \"A good invoice is short and correct\" — algo fácil e útil."
+    },
+    {
+     "q": "The author would most likely DISAGREE with this sentence:",
+     "options": [
+      "A company has a tax number.",
+      "The total shows the full price.",
+      "An invoice must be long and difficult.",
+      "Every delivery has an invoice."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto defende que \"A good invoice is short and correct\" — o autor discorda de \"longa e difícil\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça o colega explicando a fatura. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Can you help me read this invoice? I am new, and I want to understand it.<br><br>Look at the top. The invoice has a number. This number is 204. It also has a date. The date is May tenth. That is the delivery day.<br><br>Now look here. The company has a tax number. Every company has one. It is very important for the office.<br><br>At the bottom, we have the total. The total is the full price. First we see the amount, then we add the tax. The tax makes the total bigger.<br><br>I check the number and the date every time. A good invoice is short and correct. When the numbers are right, we save a lot of time. Thank you for your help! Now I understand the invoice, and I can read the next one alone.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the number of this invoice?",
+     "options": [
+      "10",
+      "150",
+      "204",
+      "500"
+     ],
+     "answer": 2,
+     "why": "\"The invoice has a number. This number is 204.\""
+    },
+    {
+     "q": "What is the date on the invoice?",
+     "options": [
+      "May tenth",
+      "June first",
+      "May second",
+      "April tenth"
+     ],
+     "answer": 0,
+     "why": "\"It also has a date. The date is May tenth.\""
+    },
+    {
+     "q": "What does the tax do to the total?",
+     "options": [
+      "It makes the total bigger",
+      "It changes the date",
+      "It removes the number",
+      "It makes the total smaller"
+     ],
+     "answer": 0,
+     "why": "\"The tax makes the total bigger.\""
+    },
+    {
+     "q": "The speaker suggests that he…",
+     "options": [
+      "is learning and needs some help",
+      "wrote this invoice",
+      "is an expert on invoices",
+      "does not like invoices"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"I am new\" e \"Can you help me read this invoice?\" — ele está aprendendo."
+    },
+    {
+     "q": "Why does the speaker check the number and the date every time?",
+     "options": [
+      "Because the boss is angry",
+      "Because correct invoices save time",
+      "Because the office is closed",
+      "Because he likes numbers"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"When the numbers are right, we save a lot of time.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Please send the <strong>invoice</strong> to the buyer today.\" An <strong>invoice</strong> is…",
+     "options": [
+      "a document with the price and the buyer",
+      "a delivery truck",
+      "an office room",
+      "a phone call"
+     ],
+     "answer": 0,
+     "why": "Invoice = fatura, o documento com preço, valor e comprador."
+    },
+    {
+     "q": "\"The <strong>tax</strong> is added to the total.\" <strong>Tax</strong> means…",
+     "options": [
+      "a discount",
+      "the buyer's name",
+      "money paid to the government",
+      "a free gift"
+     ],
+     "answer": 2,
+     "why": "Tax = imposto, dinheiro pago ao governo, somado ao total."
+    },
+    {
+     "q": "Choose the correct word: \"Every company has a tax ___.\"",
+     "options": [
+      "number",
+      "coffee",
+      "song",
+      "window"
+     ],
+     "answer": 0,
+     "why": "\"Every company has a tax number\" — number = número."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ on the invoice is May tenth, the delivery day.\"",
+     "options": [
+      "date",
+      "buyer",
+      "total",
+      "tax"
+     ],
+     "answer": 0,
+     "why": "Date = data; combina com \"May tenth\", o dia da entrega."
+    },
+    {
+     "q": "\"The <strong>total</strong> is 500 dollars.\" The <strong>total</strong> is…",
+     "options": [
+      "the full price",
+      "the office",
+      "the tax number",
+      "the date"
+     ],
+     "answer": 0,
+     "why": "Total = total, o preço cheio na fatura."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho com faturas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>fill in</strong> the invoice with the date and the number.\" To <strong>fill in</strong> means to…",
+     "options": [
+      "write the information in the spaces",
+      "read out loud",
+      "send by phone",
+      "throw away"
+     ],
+     "answer": 0,
+     "why": "Fill in = preencher, escrever as informações nos espaços."
+    },
+    {
+     "q": "\"Let's <strong>add up</strong> the numbers to find the total.\" To <strong>add up</strong> means to…",
+     "options": [
+      "hide the numbers",
+      "print the invoice",
+      "delete the numbers",
+      "put numbers together"
+     ],
+     "answer": 3,
+     "why": "Add up = somar, juntar os números para achar o total."
+    },
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the invoice.\" To <strong>sign off on</strong> means to…",
+     "options": [
+      "cancel it",
+      "read it slowly",
+      "lose it",
+      "formally approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"I will <strong>look up</strong> the tax number on the system.\" To <strong>look up</strong> means to…",
+     "options": [
+      "close the office",
+      "search for the information",
+      "delete the file",
+      "call the buyer"
+     ],
+     "answer": 1,
+     "why": "Look up = procurar/consultar uma informação."
+    },
+    {
+     "q": "\"We <strong>send out</strong> the invoice after the delivery.\" To <strong>send out</strong> means to…",
+     "options": [
+      "sign it twice",
+      "keep it in a drawer",
+      "deliver or dispatch it",
+      "make it bigger"
+     ],
+     "answer": 2,
+     "why": "Send out = enviar, mandar a fatura para fora."
+    }
+   ]
+  }
+ ]
+}

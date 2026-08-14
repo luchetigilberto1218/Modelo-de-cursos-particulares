@@ -10,12 +10,12 @@
     {
      "q": "According to the text, what is the object of strategic due diligence?",
      "options": [
-      "To decide on what terms to proceed",
+      "To decide a simple yes or no",
       "To satisfy the sanctions screen",
-      "To replace the credit check",
-      "To decide a simple yes or no"
+      "To decide on what terms to proceed",
+      "To replace the credit check"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The object is not to decide yes or no. The object is to decide on what terms.\""
     },
     {
@@ -32,23 +32,23 @@
     {
      "q": "What does the text say about the individual sources used in a review?",
      "options": [
-      "Only former employees can be trusted",
       "A single site visit is decisive",
-      "Public filings outweigh all other sources",
-      "None is decisive alone, but together they form a portrait"
+      "None is decisive alone, but together they form a portrait",
+      "Only former employees can be trusted",
+      "Public filings outweigh all other sources"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"None of these is decisive alone; together, they form a portrait…\""
     },
     {
      "q": "The author would most likely DISAGREE with which statement?",
      "options": [
+      "Site visits can reveal what filings do not",
       "A clean sanctions screen is enough to clear a counterparty",
       "A partner should be judged on the terms of the deal, not in the abstract",
-      "Site visits can reveal what filings do not",
       "Conflicting evidence is worth examining closely"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: o texto abre dizendo que a diligência vai muito além do sanctions screen — logo o autor discorda que ele baste."
     },
     {
@@ -79,8 +79,8 @@
      "options": [
       "Because the documents were filed too recently",
       "Because in this market public information is often stale or quietly managed",
-      "Because the counterparty refused to share them",
-      "Because the credit check had already failed"
+      "Because the credit check had already failed",
+      "Because the counterparty refused to share them"
      ],
      "answer": 1,
      "why": "\"half the public information is either stale or quietly managed, so I want us to treat every clean document with a degree of healthy suspicion.\""
@@ -89,9 +89,9 @@
      "q": "What discrepancy did Charlotte notice on the site visit?",
      "options": [
       "The accounts showed a comfortable business, but the plant ran at about sixty per cent",
-      "The court records contradicted the credit check",
+      "Two shifts had been added despite falling demand",
       "The plant was fully staffed but the accounts showed losses",
-      "Two shifts had been added despite falling demand"
+      "The court records contradicted the credit check"
      ],
      "answer": 0,
      "why": "\"The accounts… show a business running comfortably, yet the plant… was operating at maybe sixty per cent…\""
@@ -99,34 +99,34 @@
     {
      "q": "Why does she want the team to find former employees?",
      "options": [
-      "To hire them for the new venture",
-      "To verify the sanctions screen",
       "Because they still hold company shares",
-      "Because people speak more openly once they have left"
+      "To verify the sanctions screen",
+      "Because people speak more openly once they have left",
+      "To hire them for the new venture"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"find me two former employees… people talk once they are out.\""
     },
     {
      "q": "What does Charlotte imply about the deal itself?",
      "options": [
-      "She believes it is flawless as presented",
-      "She has already decided to reject it",
+      "She wants to accept it on trust to save time",
       "She is trying to establish the terms on which it makes sense, not to kill it",
-      "She wants to accept it on trust to save time"
+      "She has already decided to reject it",
+      "She believes it is flawless as presented"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: \"I am not trying to kill the deal. I am trying to work out the terms on which it becomes sensible.\""
     },
     {
      "q": "What can be inferred about Charlotte's view of a 'flawless' counterparty taken on trust?",
      "options": [
-      "She values it less than a well-understood partner structured properly",
-      "She regards it as the safest possible outcome",
       "She prefers it to a partner the team actually understands",
-      "She thinks it removes the need for site visits"
+      "She values it less than a well-understood partner structured properly",
+      "She thinks it removes the need for site visits",
+      "She regards it as the safest possible outcome"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ela diz que um parceiro genuinamente entendido e bem estruturado vale muito mais do que um impecável aceito por confiança."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"We pulled the <strong>court records</strong> before signing anything.\" Court records are…",
      "options": [
-      "press releases issued by the company",
+      "official documents of legal proceedings",
       "minutes of the board meeting",
       "internal audit spreadsheets",
-      "official documents of legal proceedings"
+      "press releases issued by the company"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Court records = registros judiciais: documentos oficiais de processos e disputas."
     },
     {
      "q": "Choose the correct term: \"The numbers looked fine on paper, but a ___ told us the plant was half idle.\"",
      "options": [
-      "sanctions screen",
       "site visit",
-      "public filing",
-      "credit check"
+      "credit check",
+      "sanctions screen",
+      "public filing"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Site visit = visita in loco: ver a operação de perto revela o que os papéis escondem."
     },
     {
      "q": "\"We wanted a <strong>first-hand</strong> account, not a summary passed through three people.\" First-hand means…",
      "options": [
-      "written in advance",
+      "obtained directly from the original source",
       "reviewed by a lawyer",
       "gathered from public press",
-      "obtained directly from the original source"
+      "written in advance"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "First-hand = em primeira mão: obtido diretamente da fonte original."
     },
     {
      "q": "Choose the correct word: \"The diligence exposed a clear ___ in the counterparty's funding, which we then addressed in the deal structure.\"",
      "options": [
+      "vulnerability",
       "filing",
       "disagreement",
-      "vulnerability",
       "portrait"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Vulnerability = vulnerabilidade: o ponto fraco que a diligência expõe."
     },
     {
      "q": "\"How has the business behaved <strong>under stress</strong> in previous downturns?\" Under stress means…",
      "options": [
       "ahead of an audit",
+      "in adverse or high-pressure conditions",
       "under new ownership",
-      "during routine trading",
-      "in adverse or high-pressure conditions"
+      "during routine trading"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Under stress = sob estresse: em condições adversas, quando o negócio é testado."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The committee still has to <strong>sign off on</strong> the diligence report.\" To sign off on means to…",
      "options": [
-      "postpone indefinitely",
       "circulate for comment",
-      "formally approve",
-      "leak to the press"
+      "leak to the press",
+      "postpone indefinitely",
+      "formally approve"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"Don't take the summary at face value — <strong>dig into</strong> the primary records.\" To dig into means to…",
      "options": [
+      "examine closely and thoroughly",
       "hand over to a lawyer",
-      "summarise briefly",
       "dismiss without reading",
-      "examine closely and thoroughly"
+      "summarise briefly"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Dig into = investigar a fundo, escarafunchar."
     },
     {
      "q": "\"Two directors <strong>pushed back on</strong> the proposed terms.\" They…",
      "options": [
-      "forgot to read them",
-      "resisted or challenged them",
       "approved them at once",
-      "leaked them externally"
+      "forgot to read them",
+      "leaked them externally",
+      "resisted or challenged them"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
     },
     {
      "q": "\"We agreed the plan, but the local team never <strong>followed through</strong>.\" They…",
      "options": [
       "revised it halfway",
-      "failed to carry it to completion",
       "documented it in full",
+      "failed to carry it to completion",
       "delegated it upward"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"A clean sanctions screen alone won't <strong>move the needle</strong> on our confidence in this counterparty.\" This means it will…",
      "options": [
       "raise the transaction cost",
-      "trigger a formal objection",
+      "not make a noticeable difference",
       "delay the closing date",
-      "not make a noticeable difference"
+      "trigger a formal objection"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
     }
    ]

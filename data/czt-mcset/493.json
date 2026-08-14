@@ -22,8 +22,8 @@
      "q": "What should you do when you walk away from your computer?",
      "options": [
       "Call the IT team",
-      "Change your password",
       "Turn it off",
+      "Change your password",
       "Lock your screen"
      ],
      "answer": 3,
@@ -32,34 +32,34 @@
     {
      "q": "The text says you should report something that feels wrong…",
      "options": [
+      "only when you are sure",
       "even if you are not sure",
       "only to your manager",
-      "only when you are sure",
       "only once a week"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Report anything that feels wrong, even if you are not sure.\""
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "Strong passwords are important.",
       "Only clever attackers can hack a company.",
       "Small habits protect the company.",
+      "Strong passwords are important.",
       "A fake email can be dangerous."
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto diz que empresas são hackeadas por hábitos pequenos e evitáveis, não por atacantes brilhantes."
     },
     {
      "q": "\"Cybersecurity starts with the small things.\" This suggests that…",
      "options": [
-      "your daily habits are important",
-      "only the IT team can help",
       "big attacks are not real",
-      "you should never use email"
+      "your daily habits are important",
+      "you should never use email",
+      "only the IT team can help"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: se começa nas pequenas coisas, os hábitos de cada pessoa fazem diferença."
     }
    ]
@@ -77,19 +77,19 @@
     {
      "q": "How long is Charlotte's talk?",
      "options": [
-      "One day",
       "Two hours",
-      "Five minutes",
-      "One hour"
+      "One day",
+      "One hour",
+      "Five minutes"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"This is short — just five minutes.\""
     },
     {
      "q": "What does two-factor authentication do, according to Charlotte?",
      "options": [
-      "It locks your screen",
       "It changes your password",
+      "It locks your screen",
       "It sends a code to your phone",
       "It deletes strange emails"
      ],
@@ -99,20 +99,20 @@
     {
      "q": "What should you do when an email looks strange?",
      "options": [
-      "Stop, think, and check the sender",
+      "Turn off your computer",
       "Delete all your emails",
       "Click it quickly",
-      "Turn off your computer"
+      "Stop, think, and check the sender"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"If an email looks strange, stop and think. Check the sender.\""
     },
     {
      "q": "Why does Charlotte say \"It is never a silly question\"?",
      "options": [
-      "She thinks questions waste time",
-      "She only answers on Fridays",
       "She wants people to work alone",
+      "She only answers on Fridays",
+      "She thinks questions waste time",
       "She wants new people to feel free to ask"
      ],
      "answer": 3,
@@ -121,12 +121,12 @@
     {
      "q": "What is the main message of Charlotte's talk?",
      "options": [
-      "Security is only the IT team's job",
-      "Passwords are not important",
+      "New joiners should not use email",
       "Small daily habits protect the company",
-      "New joiners should not use email"
+      "Security is only the IT team's job",
+      "Passwords are not important"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: ela dá cinco hábitos simples e diz que eles evitam os problemas reais."
     }
    ]
@@ -139,20 +139,20 @@
     {
      "q": "\"Our company had a small <strong>attack</strong> last week.\" An <strong>attack</strong> is…",
      "options": [
+      "a friendly email",
       "a team meeting",
       "a new software update",
-      "an attempt to harm or break in",
-      "a friendly email"
+      "an attempt to harm or break in"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Attack = ataque: uma tentativa de causar dano ou invadir."
     },
     {
      "q": "Choose the correct word: \"Please ___ your screen before you go to lunch.\"",
      "options": [
-      "report",
       "send",
       "click",
+      "report",
       "lock"
      ],
      "answer": 3,
@@ -161,34 +161,34 @@
     {
      "q": "\"I got a <strong>fake email</strong> from my bank.\" A <strong>fake email</strong> is…",
      "options": [
+      "a message from the IT team",
       "a message that is not true and tries to trick you",
       "an email with a big file",
-      "a real message from a friend",
-      "a message from the IT team"
+      "a real message from a friend"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fake email = e-mail falso, feito para enganar você."
     },
     {
      "q": "Choose the correct word: \"If something feels wrong, ___ it to the IT team.\"",
      "options": [
-      "report",
       "buy",
       "click",
-      "print"
+      "print",
+      "report"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To report = relatar, avisar sobre um problema."
     },
     {
      "q": "\"That mistake was easy to prevent. It was <strong>avoidable</strong>.\" <strong>Avoidable</strong> means…",
      "options": [
-      "very expensive",
       "impossible to stop",
       "could have been prevented",
-      "very slow"
+      "very slow",
+      "very expensive"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Avoidable = evitável: podia ter sido impedido."
     }
    ]
@@ -201,10 +201,10 @@
     {
      "q": "\"Please <strong>turn on</strong> two-factor authentication today.\" To turn on means to…",
      "options": [
-      "stop something",
       "delete something",
+      "hide something",
       "start or activate something",
-      "hide something"
+      "stop something"
      ],
      "answer": 2,
      "why": "Turn on = ligar, ativar."
@@ -212,20 +212,20 @@
     {
      "q": "\"We will <strong>roll out</strong> the new password rule next week.\" To roll out means to…",
      "options": [
-      "keep it secret",
-      "start using it for everyone",
+      "print it",
       "cancel it",
-      "print it"
+      "keep it secret",
+      "start using it for everyone"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Roll out = colocar em uso para todos, aos poucos."
     },
     {
      "q": "\"If you get a strange email, please <strong>flag it</strong> to IT.\" To flag it means to…",
      "options": [
-      "save it for later",
-      "point it out as a problem",
       "answer it quickly",
+      "point it out as a problem",
+      "save it for later",
       "forward it to a friend"
      ],
      "answer": 1,
@@ -234,19 +234,19 @@
     {
      "q": "\"Do not <strong>log in</strong> on public computers.\" To log in means to…",
      "options": [
+      "buy new software",
       "enter your account with your password",
-      "close the window",
       "turn off the computer",
-      "buy new software"
+      "close the window"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Log in = entrar na conta usando sua senha."
     },
     {
      "q": "\"Let's <strong>follow up</strong> on that report tomorrow.\" To follow up means to…",
      "options": [
-      "forget about it",
       "send it to the wrong team",
+      "forget about it",
       "check on it again and take the next step",
       "delete it"
      ],

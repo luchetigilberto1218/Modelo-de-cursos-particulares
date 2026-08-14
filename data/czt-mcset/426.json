@@ -10,9 +10,9 @@
     {
      "q": "What is the simple formula for tax?",
      "options": [
-      "Tax × amount = rate",
       "Price − rate = tax",
       "Salary + profit = tax",
+      "Tax × amount = rate",
       "Base amount × rate = tax"
      ],
      "answer": 3,
@@ -21,34 +21,34 @@
     {
      "q": "If the rate is 20% and the amount is £1,000, the tax is…",
      "options": [
-      "£100",
       "£1,000",
       "£200",
-      "£500"
+      "£500",
+      "£100"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "20% de £1,000 = £200, o exemplo do texto."
     },
     {
      "q": "For income tax, what number do you start from?",
      "options": [
-      "The tax rate",
       "Profit",
-      "Salary minus deductions",
-      "The price of what you sell"
+      "The tax rate",
+      "The price of what you sell",
+      "Salary minus deductions"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"For income tax, you start from salary minus deductions.\""
     },
     {
      "q": "The author would most likely DISAGREE with this idea:",
      "options": [
       "Only the base and the rate change.",
+      "Tax is too hard to understand.",
       "The formula is always the same.",
-      "You multiply by a percentage.",
-      "Tax is too hard to understand."
+      "You multiply by a percentage."
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: o texto diz que o assunto deixa de ser misterioso — o autor discorda que seja difícil demais."
     },
     {
@@ -78,20 +78,20 @@
      "q": "How many steps does Emily use?",
      "options": [
       "Two",
-      "Three",
       "Five",
-      "Four"
+      "Four",
+      "Three"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Three steps. That's it.\""
     },
     {
      "q": "What is step three?",
      "options": [
-      "Write the answer",
       "Find the rate",
+      "Find the base amount",
       "Multiply base times rate",
-      "Find the base amount"
+      "Write the answer"
      ],
      "answer": 2,
      "why": "\"Step three: multiply. Base times rate equals the tax.\""
@@ -99,8 +99,8 @@
     {
      "q": "For the VAT example, how much is the tax?",
      "options": [
-      "Two hundred pounds",
       "One hundred pounds",
+      "Two hundred pounds",
       "Forty pounds",
       "Twenty pounds"
      ],
@@ -111,20 +111,20 @@
      "q": "Why does Emily say \"only the numbers change\"?",
      "options": [
       "Because the base is always the price",
-      "Because the rate is always twenty percent",
       "Because VAT and corporate tax are the same tax",
-      "Because the steps stay the same for every tax"
+      "Because the steps stay the same for every tax",
+      "Because the rate is always twenty percent"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: os três passos se repetem; só a base e a alíquota mudam."
     },
     {
      "q": "How would you describe Emily's tone?",
      "options": [
-      "Worried and unsure",
+      "Angry and impatient",
       "Calm and encouraging",
       "Bored and tired",
-      "Angry and impatient"
+      "Worried and unsure"
      ],
      "answer": 1,
      "why": "Inferência: \"Don't worry… take your time\" — ela é calma e encorajadora."
@@ -140,22 +140,22 @@
      "q": "\"We always use the same <strong>formula</strong>.\" A formula is…",
      "options": [
       "a type of report",
+      "a large number",
       "a fixed way to calculate something",
-      "a tax office",
-      "a large number"
+      "a tax office"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Formula = fórmula: um jeito fixo de calcular."
     },
     {
      "q": "Choose the correct word: \"To find the tax, you ___ the base by the rate.\"",
      "options": [
-      "write",
       "multiply",
-      "start",
-      "sell"
+      "sell",
+      "write",
+      "start"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To multiply = multiplicar: base × alíquota."
     },
     {
@@ -172,10 +172,10 @@
     {
      "q": "Choose the correct word: \"Your salary minus your ___ gives the base for income tax.\"",
      "options": [
-      "profit",
+      "formula",
       "deductions",
       "percentage",
-      "formula"
+      "profit"
      ],
      "answer": 1,
      "why": "Deduction = dedução: o que se subtrai do salário."
@@ -183,12 +183,12 @@
     {
      "q": "\"The <strong>base amount</strong> is the number you start from.\" It is…",
      "options": [
+      "the final tax",
       "the payment date",
-      "the number the tax is calculated on",
       "the tax office address",
-      "the final tax"
+      "the number the tax is calculated on"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Base amount = base de cálculo: o número de partida."
     }
    ]
@@ -201,12 +201,12 @@
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the numbers.\" To sign off on means to…",
      "options": [
-      "delete them",
-      "hide them",
       "approve them",
-      "print them"
+      "delete them",
+      "print them",
+      "hide them"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
@@ -214,8 +214,8 @@
      "options": [
       "send it",
       "calculate it",
-      "delay it",
-      "forget it"
+      "forget it",
+      "delay it"
      ],
      "answer": 1,
      "why": "Work out = calcular, resolver."
@@ -224,31 +224,31 @@
      "q": "\"Can you <strong>go over</strong> the steps again?\" To go over means to…",
      "options": [
       "cancel them",
+      "count them",
       "review them",
-      "pay them",
-      "count them"
+      "pay them"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Go over = revisar, repassar."
     },
     {
      "q": "\"The new rate will <strong>roll out</strong> next month.\" To roll out means to…",
      "options": [
-      "stop being used",
+      "start to be used",
       "be kept secret",
       "be paid twice",
-      "start to be used"
+      "stop being used"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Roll out = colocar em uso, implementar."
     },
     {
      "q": "\"Don't worry, I will <strong>walk you through</strong> it.\" To walk someone through means to…",
      "options": [
+      "ignore the person",
       "do it without help",
-      "finish it quickly",
       "explain it step by step",
-      "ignore the person"
+      "finish it quickly"
      ],
      "answer": 2,
      "why": "Walk through = guiar passo a passo, exatamente o que Emily faz."

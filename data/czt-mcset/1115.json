@@ -1,0 +1,259 @@
+{
+ "num": 1115,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Logistics means connecting cities. Every shipment starts in one place and ends in another. We use two small words: <strong>from</strong> and <strong>to</strong>. \"From\" is the origin. \"To\" is the destination.<br><br>Today we describe real Czarnikow routes. The sugar goes from Santos to London. It goes from Brazil to Europe. It goes from the mill to the customer.<br><br>When you say \"from A to B\", you describe a route. Clear origin and destination means no confused deliveries. A good shipment always starts in one place and ends in the right place.",
+   "items": [
+    {
+     "q": "What word do we use for the origin?",
+     "options": [
+      "To",
+      "In",
+      "From",
+      "Via"
+     ],
+     "answer": 2,
+     "why": "\"'From' is the origin.\" From = origem."
+    },
+    {
+     "q": "Where does the sugar go, in the example?",
+     "options": [
+      "From the customer to the mill",
+      "From London to Santos",
+      "From Europe to Brazil",
+      "From Santos to London"
+     ],
+     "answer": 3,
+     "why": "\"The sugar goes from Santos to London.\""
+    },
+    {
+     "q": "What does \"to\" mean?",
+     "options": [
+      "The ship",
+      "The port",
+      "The origin",
+      "The destination"
+     ],
+     "answer": 3,
+     "why": "\"'To' is the destination.\" To = destino."
+    },
+    {
+     "q": "The text suggests that a clear origin and destination helps because…",
+     "options": [
+      "the port is bigger",
+      "the sugar is cheaper",
+      "it makes the ship faster",
+      "there are no confused deliveries"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Clear origin and destination means no confused deliveries.\""
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "London is the origin of the sugar",
+      "every shipment stays in one city",
+      "\"from\" and \"to\" are not important",
+      "a route needs both a start and an end"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto todo mostra que uma rota vai de um ponto (from) a outro (to)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James explicando a rota ao cliente novo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello, and welcome. Thank you for your first order. Let me explain the route of your sugar. It is very simple.<br><br>First, the sugar comes from the mill. The mill is in Brazil, near the fields. Then a truck takes it to the port. Our port is Santos. Santos is a big port on the coast.<br><br>At the port, we put the sugar on a ship. The ship is big and slow, but it is safe. It carries many bags. The ship goes from Brazil to Europe. This trip takes about three weeks.<br><br>The destination is London. In London, we take the sugar off the ship. Then a truck takes it from the port to you, the customer. So the full route is: from the mill, to the port, to the ship, to London, to you.<br><br>Please always check the origin and the destination on your paperwork. If both are clear, there are no problems. Do you have any questions? I am happy to help.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does the sugar come from first?",
+     "options": [
+      "The port",
+      "The mill",
+      "The ship",
+      "London"
+     ],
+     "answer": 1,
+     "why": "\"First, the sugar comes from the mill.\""
+    },
+    {
+     "q": "Which port does James name?",
+     "options": [
+      "London",
+      "Santos",
+      "Europe",
+      "Brazil"
+     ],
+     "answer": 1,
+     "why": "\"Our port is Santos.\""
+    },
+    {
+     "q": "How long does the ship trip take?",
+     "options": [
+      "About one week",
+      "About three weeks",
+      "About three months",
+      "About three days"
+     ],
+     "answer": 1,
+     "why": "\"The ship goes from Brazil to Europe. This trip takes about three weeks.\""
+    },
+    {
+     "q": "James suggests that the customer should…",
+     "options": [
+      "visit the mill in Brazil",
+      "send the sugar back to Santos",
+      "check the origin and destination on the paperwork",
+      "buy a bigger ship"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Please always check the origin and the destination on your paperwork.\""
+    },
+    {
+     "q": "How would you describe James's tone?",
+     "options": [
+      "Angry and fast",
+      "Friendly and clear",
+      "Bored and quiet",
+      "Confused and unsure"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele dá boas-vindas, explica com calma e se oferece para ajudar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>origin</strong> of the sugar is Brazil.\" Origin means…",
+     "options": [
+      "the price",
+      "the start point",
+      "the ship",
+      "the end point"
+     ],
+     "answer": 1,
+     "why": "Origin = origem, o ponto de partida."
+    },
+    {
+     "q": "\"London is the final <strong>destination</strong>.\" Destination means…",
+     "options": [
+      "the place where it starts",
+      "the place where it ends",
+      "the name of the ship",
+      "the day it leaves"
+     ],
+     "answer": 1,
+     "why": "Destination = destino, onde a carga termina."
+    },
+    {
+     "q": "Choose the correct word: \"The truck takes the sugar to the ___, and there we put it on a ship.\"",
+     "options": [
+      "origin",
+      "port",
+      "country",
+      "customer"
+     ],
+     "answer": 1,
+     "why": "Port = porto, onde o navio espera a carga."
+    },
+    {
+     "q": "\"We <strong>ship</strong> the sugar to Europe every month.\" Here, to ship means…",
+     "options": [
+      "to pay",
+      "to buy",
+      "to send",
+      "to open"
+     ],
+     "answer": 2,
+     "why": "To ship = enviar (também pode ser o substantivo \"navio\")."
+    },
+    {
+     "q": "Choose the correct word: \"Brazil is a big ___ in South America.\"",
+     "options": [
+      "country",
+      "origin",
+      "ship",
+      "port"
+     ],
+     "answer": 0,
+     "why": "Country = país. Brazil é um país."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em conversas de logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The ship goes to London <strong>via</strong> the Atlantic.\" Via means…",
+     "options": [
+      "going through",
+      "near",
+      "without",
+      "instead of"
+     ],
+     "answer": 0,
+     "why": "Via = passando por, indo através de um lugar."
+    },
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the shipment.\" To sign off on means to…",
+     "options": [
+      "cancel it",
+      "formally approve it",
+      "pay for it",
+      "load it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new route next month.\" To roll out means to…",
+     "options": [
+      "start it and put it into use",
+      "hide it",
+      "sell it",
+      "stop it"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em uso, lançar."
+    },
+    {
+     "q": "\"The customer <strong>pushed back on</strong> the delivery date.\" This means the customer…",
+     "options": [
+      "paid early",
+      "forgot the date",
+      "disagreed or resisted",
+      "agreed at once"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, discordar."
+    },
+    {
+     "q": "\"Please <strong>follow up on</strong> the order and tell me when it arrives.\" To follow up on means to…",
+     "options": [
+      "forget it",
+      "check it again later",
+      "sell it",
+      "cancel it"
+     ],
+     "answer": 1,
+     "why": "Follow up on = dar sequência, verificar de novo depois."
+    }
+   ]
+  }
+ ]
+}

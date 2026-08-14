@@ -10,10 +10,10 @@
     {
      "q": "What is a backup?",
      "options": [
-      "The only copy of the data",
-      "A second copy of the data, kept in a different place",
       "A list of all the emails",
-      "A safe in the office"
+      "A second copy of the data, kept in a different place",
+      "A safe in the office",
+      "The only copy of the data"
      ],
      "answer": 1,
      "why": "\"A backup is a second copy of the data, kept in a different place.\""
@@ -21,12 +21,12 @@
     {
      "q": "Which of these is an example of data?",
      "options": [
-      "Customer records",
-      "A laptop screen",
       "The office building",
-      "A puddle"
+      "Customer records",
+      "A puddle",
+      "A laptop screen"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "O texto lista emails, documentos, customer records e financial entries como data."
     },
     {
@@ -43,23 +43,23 @@
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "you should back up data before something goes wrong",
       "backups are only needed for emails",
+      "one copy of the data is enough",
       "a company should not worry about backups",
-      "one copy of the data is enough"
+      "you should back up data before something goes wrong"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"data that has not been backed up does not really exist\" — a mensagem é fazer o backup antes de perder o original."
     },
     {
      "q": "The line \"You only discover this the moment the original is gone\" suggests that…",
      "options": [
-      "the original is always safe",
       "people often forget to back up until it is too late",
+      "the original is always safe",
       "backups happen automatically",
       "data is never really lost"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: você percebe a falta do backup só quando já perdeu o original — por isso não pode esperar."
     }
    ]
@@ -77,23 +77,23 @@
     {
      "q": "How many backups does the company keep for critical files?",
      "options": [
-      "Two",
       "One",
       "None",
+      "Two",
       "Three"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"we keep two separate backups. Two copies, in two different places.\""
     },
     {
      "q": "Why does the company keep the copies in two different places?",
      "options": [
-      "To make the files load faster",
-      "So a fire or flood in one place does not destroy everything",
       "Because the office is too small",
-      "To save money"
+      "To save money",
+      "So a fire or flood in one place does not destroy everything",
+      "To make the files load faster"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Imagine a fire or a flood… If both copies are here, we lose everything. So one backup stays here, and the other one is far away.\""
     },
     {
@@ -101,32 +101,32 @@
      "options": [
       "Once a month",
       "Once a week",
-      "Every single night",
-      "Only when someone asks"
+      "Only when someone asks",
+      "Every single night"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"we do this every single night… the system copies the files by itself.\""
     },
     {
      "q": "Why does Emily say NOT to save an important file only on your laptop?",
      "options": [
-      "Because the file must be printed",
       "Because the laptop has no space",
+      "Because a file only on the laptop is not backed up and can be lost",
       "Because laptops are slow",
-      "Because a file only on the laptop is not backed up and can be lost"
+      "Because the file must be printed"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: só no laptop o backup não copia o arquivo, então ele pode sumir. Por isso ela pede para salvar no shared drive."
     },
     {
      "q": "What is the main message of Emily's explanation?",
      "options": [
-      "Emails are the most important data",
-      "The new joiner should work at night",
+      "The office should buy new laptops",
       "Always keep more than one copy, in more than one place",
-      "The office should buy new laptops"
+      "Emails are the most important data",
+      "The new joiner should work at night"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: toda a fala gira em torno de nunca ter uma cópia só e guardar em lugares diferentes (regra 3-2-1)."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"We <strong>store</strong> all the invoices in the cloud.\" To store means to…",
      "options": [
-      "delete",
-      "print",
       "send by email",
-      "keep in a place"
+      "keep in a place",
+      "print",
+      "delete"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "To store = armazenar, guardar em um lugar."
     },
     {
      "q": "Choose the correct word: \"The company runs a ___ every night, so there is always a second copy of the files.\"",
      "options": [
-      "backup",
       "laptop",
-      "puddle",
-      "meeting"
+      "backup",
+      "meeting",
+      "puddle"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Backup = cópia de segurança, feita para ter uma segunda cópia dos arquivos."
     },
     {
      "q": "\"The files are on the <strong>server</strong> in the data centre.\" A server is…",
      "options": [
-      "a person who serves coffee",
       "a small puddle",
-      "a type of email",
-      "a computer that stores and shares data"
+      "a computer that stores and shares data",
+      "a person who serves coffee",
+      "a type of email"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Server = servidor, um computador que armazena e compartilha dados."
     },
     {
      "q": "Choose the correct word: \"A ___ attack can ___ your files, so you cannot open them.\"",
      "options": [
-      "backup / store",
-      "ransomware / lock",
+      "puddle / exist",
       "server / copy",
-      "puddle / exist"
+      "ransomware / lock",
+      "backup / store"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Ransomware = tipo de ataque que bloqueia (lock) os arquivos até um resgate ser pago."
     },
     {
      "q": "\"Please make a <strong>copy</strong> of this document.\" A copy is…",
      "options": [
-      "the original file only",
-      "another version that is the same as the first",
+      "a deleted file",
       "an empty page",
-      "a deleted file"
+      "the original file only",
+      "another version that is the same as the first"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Copy = cópia, outra versão igual ao original."
     }
    ]
@@ -212,45 +212,45 @@
     {
      "q": "\"The IT team will <strong>roll out</strong> the new backup system next week.\" To roll out means to…",
      "options": [
-      "start using it, step by step",
-      "hide it from staff",
       "stop using it",
-      "sell it"
+      "sell it",
+      "start using it, step by step",
+      "hide it from staff"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Roll out = colocar em uso, implementar aos poucos."
     },
     {
      "q": "\"After we lost the file, we had to <strong>restore</strong> it from the backup.\" To restore means to…",
      "options": [
-      "bring it back from the copy",
-      "throw it away",
       "lock it",
+      "throw it away",
+      "bring it back from the copy",
       "print it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To restore = restaurar, trazer o arquivo de volta a partir da cópia."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the new data policy.\" To sign off on means to…",
      "options": [
-      "read it quickly",
-      "formally approve it",
       "translate it",
-      "delete it"
+      "read it quickly",
+      "delete it",
+      "formally approve it"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"If the server dies, the backup can help us <strong>keep going</strong>.\" To keep going means to…",
      "options": [
-      "stop working",
-      "continue working",
       "call the police",
-      "buy a new office"
+      "buy a new office",
+      "continue working",
+      "stop working"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Keep going = seguir em frente, continuar funcionando."
     }
    ]

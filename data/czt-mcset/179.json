@@ -10,34 +10,34 @@
     {
      "q": "According to the text, why does a deal that is attractive \"at the mean\" still deserve caution?",
      "options": [
+      "It may hide a long left tail of severe outcomes",
       "It cannot be priced in a spreadsheet",
       "Its central case is impossible to model",
-      "It may hide a long left tail of severe outcomes",
       "It usually offers lower returns than mature markets"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"A deal that looks attractive at the mean may hide a long left tail\" — a média esconde os cenários extremos ruins."
     },
     {
      "q": "What is \"scenario pricing\" said to achieve?",
      "options": [
-      "It replaces the need for a time horizon",
-      "It removes all political risk from a deal",
       "It prices the deal in both a central and a stressed case",
-      "It guarantees the highest possible return"
+      "It removes all political risk from a deal",
+      "It guarantees the highest possible return",
+      "It replaces the need for a time horizon"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Every deal is priced not just in its central case but in a stressed case.\""
     },
     {
      "q": "\"Were we to run only the central case… we would be taking on risks we had not priced for.\" This suggests the author would most likely DISAGREE with which statement?",
      "options": [
-      "Allocations should survive the stressed case",
-      "Emerging markets have a wider distribution of outcomes",
       "The central case alone is a sufficient basis for sizing a deal",
-      "Patience is rewarded across a full cycle"
+      "Allocations should survive the stressed case",
+      "Patience is rewarded across a full cycle",
+      "Emerging markets have a wider distribution of outcomes"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: todo o texto argumenta que confiar só no cenário central deixa riscos por precificar."
     },
     {
@@ -45,21 +45,21 @@
      "options": [
       "Spreadsheets are more reliable than judgement",
       "Analysts deliberately overstate downside risk",
-      "Ignoring the stressed case is widespread but rarely admitted",
-      "Central-case modelling is a recent innovation"
+      "Central-case modelling is a recent innovation",
+      "Ignoring the stressed case is widespread but rarely admitted"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"quietly\" sugere uma prática comum e não reconhecida — rodar só o caso central."
     },
     {
      "q": "How should the reader understand \"size for the worst year, then the best one still arrives with capital available\"?",
      "options": [
       "Avoid emerging markets until the cycle turns",
-      "Treat every year as equally likely to be the best",
       "Concentrate all capital in the single strongest quarter",
-      "Position so downside years never exhaust the capital needed for upside years"
+      "Position so downside years never exhaust the capital needed for upside years",
+      "Treat every year as equally likely to be the best"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: dimensionar pela pior fase preserva capital para aproveitar a melhor."
     }
    ]
@@ -88,23 +88,23 @@
     {
      "q": "What does James assume in the stressed case?",
      "options": [
-      "A sharp devaluation, a late counterparty and a regulatory shift",
-      "A booming quarter and rising demand",
       "A stable currency and a reliable counterparty",
-      "No change from the central case"
+      "No change from the central case",
+      "A sharp devaluation, a late counterparty and a regulatory shift",
+      "A booming quarter and rising demand"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"a sharp devaluation… a counterparty who delivers late… a regulatory shift that reopens the contract.\""
     },
     {
      "q": "Why does James tell the board not to \"anchor on\" the central-case number?",
      "options": [
-      "Because it ignores the downside that the stressed case exposes",
-      "Because the cycle has already turned against it",
+      "Because it understates the true return",
       "Because it is the size he is actually asking them to approve",
-      "Because it understates the true return"
+      "Because it ignores the downside that the stressed case exposes",
+      "Because the cycle has already turned against it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: ele contrasta o caso central com o estressado justamente para não decidirem só pelo número bom."
     },
     {
@@ -121,12 +121,12 @@
     {
      "q": "What exactly is James asking the board to approve?",
      "options": [
+      "The central-case size",
       "A delay until the cycle turns",
-      "The stressed-case size",
       "The largest size the model permits",
-      "The central-case size"
+      "The stressed-case size"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I'm asking for approval of the stressed-case size, not the central-case size.\""
     }
    ]
@@ -139,32 +139,32 @@
     {
      "q": "\"The committee reviewed our <strong>capital allocation</strong> across the region.\" Capital allocation is…",
      "options": [
-      "the office budget for the finance team",
-      "the deciding of where and how much capital to deploy",
+      "the total revenue booked in a quarter",
       "the currency held in local accounts",
-      "the total revenue booked in a quarter"
+      "the office budget for the finance team",
+      "the deciding of where and how much capital to deploy"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Capital allocation = alocação de capital: decidir onde e quanto capital aplicar."
     },
     {
      "q": "\"A deal can look sound at the mean yet be dangerous in its <strong>left tail</strong>.\" The left tail refers to…",
      "options": [
-      "the earliest cash flows",
       "the most likely, average outcome",
       "the region of rare, severely negative outcomes",
-      "the upside scenario"
+      "the upside scenario",
+      "the earliest cash flows"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Left tail = cauda esquerda: a faixa dos resultados raros e muito ruins."
     },
     {
      "q": "Choose the correct word: \"A sudden ___ of the local currency wiped out the margin overnight.\"",
      "options": [
       "allocation",
-      "horizon",
+      "cycle",
       "devaluation",
-      "cycle"
+      "horizon"
      ],
      "answer": 2,
      "why": "Devaluation = desvalorização da moeda, que corroeu a margem."
@@ -172,23 +172,23 @@
     {
      "q": "Choose the correct word: \"We priced the trade across every ___, not just the case we hoped for.\"",
      "options": [
-      "scenario",
-      "quarter",
       "spreadsheet",
+      "quarter",
+      "scenario",
       "counterparty"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Scenario pricing = precificar em cada cenário, e não só no esperado."
     },
     {
      "q": "\"A serious <strong>allocator</strong> respects the cycle instead of chasing one strong quarter.\" An allocator is someone who…",
      "options": [
-      "markets the fund to new investors",
-      "decides how capital is deployed and sized",
+      "audits the accounts after the fact",
       "negotiates the legal contract",
-      "audits the accounts after the fact"
+      "markets the fund to new investors",
+      "decides how capital is deployed and sized"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Allocator = alocador: quem decide como e quanto capital investir."
     }
    ]
@@ -201,9 +201,9 @@
     {
      "q": "\"The investment committee still has to <strong>sign off on</strong> the stressed-case size.\" To sign off on means to…",
      "options": [
+      "postpone indefinitely",
       "leak to the market",
       "raise informal doubts",
-      "postpone indefinitely",
       "formally approve"
      ],
      "answer": 3,
@@ -212,10 +212,10 @@
     {
      "q": "\"Two members <strong>pushed back on</strong> the central-case assumptions.\" They…",
      "options": [
-      "rewrote the whole model",
+      "approved them at once",
       "resisted or challenged them",
       "ignored them completely",
-      "approved them at once"
+      "rewrote the whole model"
      ],
      "answer": 1,
      "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
@@ -223,34 +223,34 @@
     {
      "q": "\"We agreed to <strong>hold off on</strong> the second tranche until the cycle turns.\" To hold off on means to…",
      "options": [
-      "delegate it to the desk",
-      "delay it deliberately",
+      "double it immediately",
       "cancel it permanently",
-      "double it immediately"
+      "delegate it to the desk",
+      "delay it deliberately"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Hold off on = adiar de propósito, esperar o momento certo."
     },
     {
      "q": "\"None of these tweaks will <strong>move the needle</strong> on the downside.\" This means they will…",
      "options": [
-      "breach the mandate",
-      "take years to measure",
       "not make a noticeable difference",
-      "trigger a devaluation"
+      "breach the mandate",
+      "trigger a devaluation",
+      "take years to measure"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
     },
     {
      "q": "\"If the cycle turns hard, the counterparty may not <strong>follow through</strong> on delivery.\" To follow through means to…",
      "options": [
       "hedge the currency exposure",
-      "renegotiate the price",
       "carry the commitment to completion",
+      "renegotiate the price",
       "report the breach to the regulator"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Follow through = levar até o fim o que foi combinado, cumprir o compromisso."
     }
    ]

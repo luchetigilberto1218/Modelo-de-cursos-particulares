@@ -11,31 +11,31 @@
      "q": "What time do people start at Czarnikow?",
      "options": [
       "At 3:30",
-      "At 6 pm",
+      "At 9 am",
       "At noon",
-      "At 9 am"
+      "At 6 pm"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"People start at 9 am and finish at 6 pm.\""
     },
     {
      "q": "When is the break?",
      "options": [
-      "At 10:30",
-      "At 6 pm",
       "At noon",
-      "At 9 am"
+      "At 9 am",
+      "At 10:30",
+      "At 6 pm"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"There is a break at noon.\" Noon = meio-dia."
     },
     {
      "q": "Which small word does the text say time \"lives\" in?",
      "options": [
+      "to",
       "in",
-      "on",
       "at",
-      "to"
+      "on"
      ],
      "answer": 2,
      "why": "\"In business English, time lives in one small word: at.\""
@@ -43,23 +43,23 @@
     {
      "q": "The text suggests that, once you know \"at\", you can…",
      "options": [
-      "stop using a schedule",
       "talk about any hour, minute or meeting",
+      "stop using a schedule",
       "speak English perfectly",
       "only talk about morning meetings"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"When you know the word at, you can talk about any hour, minute or meeting.\""
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
       "you do not need the word at",
-      "meetings never have a fixed time",
       "business times are long and hard to say",
-      "business times are short and clear"
+      "business times are short and clear",
+      "meetings never have a fixed time"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: \"Times are short and clear\" — o texto todo mostra frases curtas com at."
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "What time is Oliver's first meeting?",
      "options": [
+      "At 11:30",
       "At 10",
       "At noon",
-      "At 9 am",
-      "At 11:30"
+      "At 9 am"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"My first meeting is at 10.\""
     },
     {
      "q": "What time does Oliver stop work?",
      "options": [
-      "At 3:30",
-      "At 6 pm",
       "At 2",
+      "At 6 pm",
+      "At 3:30",
       "At 9 am"
      ],
      "answer": 1,
@@ -99,31 +99,31 @@
     {
      "q": "What does Oliver do on his break?",
      "options": [
-      "He has a client call",
       "He gets a coffee and rests",
-      "He writes emails",
-      "He looks at the schedule"
+      "He has a client call",
+      "He looks at the schedule",
+      "He writes emails"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I get a coffee and I rest for one hour.\""
     },
     {
      "q": "Oliver says \"See you tomorrow at 9.\" This suggests that…",
      "options": [
-      "the meeting is cancelled",
+      "he will not come tomorrow",
       "he works at night",
-      "he starts every day at the same time",
-      "he will not come tomorrow"
+      "the meeting is cancelled",
+      "he starts every day at the same time"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: ele começa às 9 am, então \"at 9\" amanhã é o mesmo início de sempre."
     },
     {
      "q": "How would you best describe Oliver's day?",
      "options": [
-      "Busy and confusing",
-      "Full of problems",
       "Long and without breaks",
+      "Full of problems",
+      "Busy and confusing",
       "Simple, with clear times"
      ],
      "answer": 3,
@@ -139,34 +139,34 @@
     {
      "q": "\"The meeting is one <strong>hour</strong> long.\" An <strong>hour</strong> is…",
      "options": [
-      "one day",
       "sixty minutes",
       "one week",
-      "one meeting"
+      "one meeting",
+      "one day"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Hour = hora (60 minutos)."
     },
     {
      "q": "\"The call is only ten <strong>minutes</strong>.\" A <strong>minute</strong> is…",
      "options": [
-      "a full day",
-      "a long meeting",
       "a break",
-      "a short part of an hour"
+      "a short part of an hour",
+      "a full day",
+      "a long meeting"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Minute = minuto: uma parte curta da hora."
     },
     {
      "q": "Choose the correct word: \"We have a ___ at 10 with the whole team.\"",
      "options": [
-      "meeting",
       "email",
-      "hour",
-      "coffee"
+      "meeting",
+      "coffee",
+      "hour"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Meeting = reunião — é o encontro do time às 10."
     },
     {
@@ -183,12 +183,12 @@
     {
      "q": "\"I take a short <strong>break</strong> at noon.\" A <strong>break</strong> is…",
      "options": [
-      "a time to rest",
-      "a long meeting",
       "a client call",
-      "a report"
+      "a report",
+      "a time to rest",
+      "a long meeting"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Break = pausa: um tempo para descansar."
     }
    ]
@@ -201,19 +201,19 @@
     {
      "q": "\"Let's <strong>set up</strong> a meeting for 10.\" To set up a meeting means to…",
      "options": [
-      "cancel it",
-      "leave it",
       "arrange it",
-      "be late for it"
+      "be late for it",
+      "leave it",
+      "cancel it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Set up = marcar/organizar a reunião."
     },
     {
      "q": "\"Can we <strong>move</strong> the meeting to 3?\" To move a meeting means to…",
      "options": [
-      "invite more people",
       "record it",
+      "invite more people",
       "make it longer",
       "change its time"
      ],
@@ -223,20 +223,20 @@
     {
      "q": "\"See you at 5. <strong>Don't be late.</strong>\" This means…",
      "options": [
-      "arrive on time",
-      "arrive after 6",
+      "arrive early",
       "do not come",
-      "arrive early"
+      "arrive after 6",
+      "arrive on time"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Don't be late = não atrase, chegue no horário."
     },
     {
      "q": "\"The meeting is <strong>on time</strong>.\" On time means…",
      "options": [
-      "too early",
       "cancelled",
       "too late",
+      "too early",
       "at the right time"
      ],
      "answer": 3,
@@ -245,12 +245,12 @@
     {
      "q": "\"Let's <strong>take a break</strong> at noon.\" To take a break means to…",
      "options": [
-      "work faster",
       "start a meeting",
-      "stop and rest",
-      "send an email"
+      "send an email",
+      "work faster",
+      "stop and rest"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Take a break = fazer uma pausa, parar para descansar."
     }
    ]

@@ -1,0 +1,259 @@
+{
+ "num": 5,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Recruitment is the process of finding new people to join the company. It is a journey, step by step. The goal is simple: find the right person for the right role.<br><br>First, HR writes a job description. Then, they post the job online. People send their CVs and apply. The best candidates come for an interview.<br><br>Finally, one person gets the offer. That person becomes a new employee. Good recruitment takes time and care.",
+   "items": [
+    {
+     "q": "What is recruitment?",
+     "options": [
+      "A meeting with the whole team",
+      "A new office in another city",
+      "The process of finding new people to join the company",
+      "A training class for managers"
+     ],
+     "answer": 2,
+     "why": "\"Recruitment is the process of finding new people to join the company.\""
+    },
+    {
+     "q": "What does HR write first?",
+     "options": [
+      "The CV",
+      "The job description",
+      "The interview questions",
+      "The offer"
+     ],
+     "answer": 1,
+     "why": "\"First, HR writes a job description.\""
+    },
+    {
+     "q": "What do people send when they apply?",
+     "options": [
+      "Their CVs",
+      "An offer",
+      "An interview",
+      "A job description"
+     ],
+     "answer": 0,
+     "why": "\"People send their CVs and apply.\""
+    },
+    {
+     "q": "The text says recruitment is \"a journey, step by step.\" This suggests that recruitment…",
+     "options": [
+      "is only for managers",
+      "has an order and takes several stages",
+      "happens all at once",
+      "never has an end"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"journey, step by step\" mostra que há etapas em ordem — não é tudo de uma vez."
+    },
+    {
+     "q": "Which idea would the author most likely AGREE with?",
+     "options": [
+      "The CV is not important",
+      "Any person is fine for any role",
+      "Choosing the right person is worth the time",
+      "Interviews are a waste of time"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"find the right person\" e \"takes time and care\" mostram que escolher bem vale o tempo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver, o recrutador, no trabalho. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, my name is Oliver. I am a recruiter here. Today is a busy day for me.<br><br>Right now I am reading CVs for a new finance role. We have many candidates this time. I am looking for the right person for the team.<br><br>This morning I am also preparing three interviews. The first candidate is coming at two o'clock. I am reading her CV again, because I want to ask good questions.<br><br>The job description is clear. We need someone with numbers and with good English. Two candidates look very strong on paper, but the interview is important. A CV tells me part of the story, not all of it.<br><br>Later today, I am writing my notes for my manager. Tomorrow we choose who gets the offer. It is a big step for the person and for the company. I always take my time here, because finding the right person is not easy.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Oliver's job?",
+     "options": [
+      "He is a teacher",
+      "He is a recruiter",
+      "He is a manager",
+      "He is an accountant"
+     ],
+     "answer": 1,
+     "why": "\"I am a recruiter here.\""
+    },
+    {
+     "q": "What is Oliver doing right now?",
+     "options": [
+      "Reading CVs for a new finance role",
+      "Interviewing the first candidate",
+      "Writing a new job description",
+      "Making the final offer"
+     ],
+     "answer": 0,
+     "why": "\"Right now I am reading CVs for a new finance role.\""
+    },
+    {
+     "q": "When is the first candidate coming?",
+     "options": [
+      "Tomorrow",
+      "This morning",
+      "At two o'clock",
+      "Next week"
+     ],
+     "answer": 2,
+     "why": "\"The first candidate is coming at two o'clock.\""
+    },
+    {
+     "q": "Oliver says \"a CV tells me part of the story, not all of it.\" This suggests that…",
+     "options": [
+      "the interview still matters a lot",
+      "he never reads CVs",
+      "the CV is not real",
+      "the candidates are all the same"
+     ],
+     "answer": 0,
+     "why": "Inferência: se o CV mostra só parte, a entrevista completa a informação — por isso importa."
+    },
+    {
+     "q": "Why does Oliver take his time?",
+     "options": [
+      "Because the manager is away",
+      "Because finding the right person is not easy",
+      "Because he does not like the job",
+      "Because he is not busy"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"I always take my time… because finding the right person is not easy.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We have ten <strong>candidates</strong> for the job.\" A candidate is…",
+     "options": [
+      "a person who wants the job",
+      "a company client",
+      "a new manager",
+      "a job description"
+     ],
+     "answer": 0,
+     "why": "Candidate = candidato(a): a pessoa que quer a vaga."
+    },
+    {
+     "q": "Choose the correct word: \"Please send your ___ so we can see your work experience.\"",
+     "options": [
+      "offer",
+      "vacancy",
+      "interview",
+      "CV"
+     ],
+     "answer": 3,
+     "why": "CV / résumé = currículo, onde estão a experiência e a formação."
+    },
+    {
+     "q": "\"She got the <strong>offer</strong> and started on Monday.\" An offer is…",
+     "options": [
+      "a proposal to give someone the job",
+      "a list of tasks",
+      "a first interview",
+      "a training day"
+     ],
+     "answer": 0,
+     "why": "Offer = proposta: o convite formal para ocupar a vaga."
+    },
+    {
+     "q": "Choose the correct word: \"There is one open ___ in the finance team, so we need one new person.\"",
+     "options": [
+      "vacancy",
+      "selection",
+      "candidate",
+      "offer"
+     ],
+     "answer": 0,
+     "why": "Vacancy = vaga: a posição aberta a ser preenchida."
+    },
+    {
+     "q": "\"I want to <strong>apply</strong> for this job.\" To apply means to…",
+     "options": [
+      "write the job description",
+      "read the other CVs",
+      "ask for the job and send your CV",
+      "give someone the job"
+     ],
+     "answer": 2,
+     "why": "To apply = se candidatar: pedir a vaga e enviar o currículo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem em recrutamento. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We need to <strong>fill</strong> this vacancy soon.\" To fill a vacancy means to…",
+     "options": [
+      "pay more money",
+      "cancel the job",
+      "close the company",
+      "find a person for the open job"
+     ],
+     "answer": 3,
+     "why": "Fill a vacancy = preencher a vaga: encontrar alguém para o cargo aberto."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the offer.\" To sign off on means to…",
+     "options": [
+      "wait a week",
+      "send it back",
+      "formally approve it",
+      "read it once"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We <strong>shortlisted</strong> three candidates for the interview.\" This means we…",
+     "options": [
+      "gave them all the job",
+      "wrote a new job description",
+      "said no to everyone",
+      "chose a small group of the best ones"
+     ],
+     "answer": 3,
+     "why": "Shortlist = fazer uma lista curta: escolher os melhores para a próxima etapa."
+    },
+    {
+     "q": "\"Two candidates <strong>turned down</strong> the offer.\" They…",
+     "options": [
+      "accepted the job",
+      "sent a new CV",
+      "said no to the job",
+      "asked for an interview"
+     ],
+     "answer": 2,
+     "why": "Turn down = recusar: dizer não à proposta."
+    },
+    {
+     "q": "\"Let's <strong>move forward</strong> with this candidate.\" This means we…",
+     "options": [
+      "continue to the next step with this person",
+      "stop the process",
+      "wait for more CVs",
+      "start again from zero"
+     ],
+     "answer": 0,
+     "why": "Move forward = seguir em frente: avançar para a próxima etapa."
+    }
+   ]
+  }
+ ]
+}

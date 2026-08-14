@@ -1,0 +1,259 @@
+{
+ "num": 2,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Every company has many people. They have different jobs. We call these jobs roles.<br><br>At the top, there is the CEO. Then we have directors, managers, team leaders, and team members. Each role has a clear job to do.<br><br>When we understand the structure, we know who to talk to. We know who makes the decisions and who does the work. This is called the organisational structure.",
+   "items": [
+    {
+     "q": "What do we call the different jobs in a company?",
+     "options": [
+      "Teams",
+      "Names",
+      "Roles",
+      "Offices"
+     ],
+     "answer": 2,
+     "why": "\"We call these jobs roles.\" — os cargos são chamados de roles."
+    },
+    {
+     "q": "Who is at the top of the company?",
+     "options": [
+      "The CEO",
+      "The team leader",
+      "The manager",
+      "The employee"
+     ],
+     "answer": 0,
+     "why": "\"At the top, there is the CEO.\""
+    },
+    {
+     "q": "What does the organisational structure help us know?",
+     "options": [
+      "The price of the products",
+      "The name of the company",
+      "The number of offices",
+      "Who to talk to and who makes decisions"
+     ],
+     "answer": 3,
+     "why": "\"we know who to talk to. We know who makes the decisions and who does the work.\""
+    },
+    {
+     "q": "The text suggests that knowing the structure is…",
+     "options": [
+      "only for the CEO",
+      "not important",
+      "difficult to learn",
+      "helpful for everyone"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz que entender a estrutura ajuda a saber com quem falar — é útil para todos."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "roles are not important",
+      "each person in a company has a clear job",
+      "only the CEO has a real job",
+      "everyone does the same work"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Each role has a clear job to do.\" — cada função tem um trabalho claro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James explicando a estrutura da empresa. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, and welcome to the team! It's your first day, so let me show you how our company works.<br><br>At the top, we have our CEO. Her name is Sofia. She makes the big decisions for the whole company. Below her, we have three directors. Each director takes care of a large area of the business.<br><br>Then we have the managers. I am a manager. I run the sales department. Every manager has a team, and each team has a team leader. The team leader helps the group every day.<br><br>You are a team member now, so you report to your team leader, Marco. He is very kind, and he can answer your questions. If you have a big problem, Marco talks to me, and I talk to my director.<br><br>Don't worry — you don't need to remember everything today. Just remember one thing: if you need help, ask Marco first. He is always happy to help new people. Welcome again, and enjoy your first day!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is the CEO of the company?",
+     "options": [
+      "The director",
+      "Marco",
+      "James",
+      "Sofia"
+     ],
+     "answer": 3,
+     "why": "\"At the top, we have our CEO. Her name is Sofia.\""
+    },
+    {
+     "q": "What is James's role?",
+     "options": [
+      "He is a manager",
+      "He is a director",
+      "He is the CEO",
+      "He is a team leader"
+     ],
+     "answer": 0,
+     "why": "\"I am a manager. I run the sales department.\""
+    },
+    {
+     "q": "Who should the new employee ask for help first?",
+     "options": [
+      "James",
+      "Sofia",
+      "The director",
+      "Marco"
+     ],
+     "answer": 3,
+     "why": "\"if you need help, ask Marco first.\""
+    },
+    {
+     "q": "The audio suggests that James wants the new employee to feel…",
+     "options": [
+      "confused",
+      "in a hurry",
+      "relaxed and welcome",
+      "worried"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele diz \"Don't worry\" e \"enjoy your first day\" — quer que a pessoa se sinta bem-vinda."
+    },
+    {
+     "q": "What can we infer about how problems move in the company?",
+     "options": [
+      "Team members solve everything alone",
+      "Only the CEO solves problems",
+      "They go from the team member up to the director",
+      "Problems go straight to Sofia"
+     ],
+     "answer": 2,
+     "why": "Inferência: o membro fala com Marco, Marco fala com James, James fala com o diretor — sobe pela estrutura."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"My <strong>role</strong> in the company is to help customers.\" A role is…",
+     "options": [
+      "a salary",
+      "a job or function",
+      "a meeting",
+      "an office"
+     ],
+     "answer": 1,
+     "why": "Role = função/cargo — o trabalho que a pessoa faz."
+    },
+    {
+     "q": "Choose the correct word: \"I ___ my manager, so I tell her about my work.\"",
+     "options": [
+      "report to",
+      "open",
+      "welcome",
+      "run"
+     ],
+     "answer": 0,
+     "why": "To report to = se reportar a — dar satisfação do trabalho a alguém."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ runs a department or a team in the company.\"",
+     "options": [
+      "customer",
+      "building",
+      "product",
+      "manager"
+     ],
+     "answer": 3,
+     "why": "Manager = gerente — quem cuida de um departamento ou equipe."
+    },
+    {
+     "q": "\"The sales <strong>department</strong> is on the second floor.\" A department is…",
+     "options": [
+      "a company car",
+      "a type of product",
+      "a part or area of the company",
+      "a small meeting room"
+     ],
+     "answer": 2,
+     "why": "Department = departamento — uma área da empresa."
+    },
+    {
+     "q": "\"The CEO makes an important <strong>decision</strong> every week.\" A decision is…",
+     "options": [
+      "a choice about what to do",
+      "a phone call",
+      "a report",
+      "a new employee"
+     ],
+     "answer": 0,
+     "why": "Decision = decisão — uma escolha sobre o que fazer."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"On your first day, someone will <strong>show you around</strong> the office.\" To show you around means to…",
+     "options": [
+      "send you home",
+      "give you a new job",
+      "give you money",
+      "take you to see the different places"
+     ],
+     "answer": 3,
+     "why": "Show someone around = mostrar os lugares, apresentar o local a alguém."
+    },
+    {
+     "q": "\"The manager <strong>takes care of</strong> the sales team.\" To take care of means to…",
+     "options": [
+      "leave",
+      "forget about",
+      "sell to",
+      "be responsible for"
+     ],
+     "answer": 3,
+     "why": "Take care of = cuidar de, ser responsável por."
+    },
+    {
+     "q": "\"New employees, please <strong>fill in</strong> this form.\" To fill in means to…",
+     "options": [
+      "give it back empty",
+      "throw it away",
+      "read it later",
+      "write the information on it"
+     ],
+     "answer": 3,
+     "why": "Fill in = preencher, escrever as informações."
+    },
+    {
+     "q": "\"If you have a question, you can <strong>ask for</strong> help.\" To ask for means to…",
+     "options": [
+      "say no",
+      "finish the work",
+      "leave the room",
+      "say you want something"
+     ],
+     "answer": 3,
+     "why": "Ask for = pedir algo, dizer que você quer aquilo."
+    },
+    {
+     "q": "\"Welcome to the team! We are happy to have you <strong>on board</strong>.\" On board means…",
+     "options": [
+      "in another company",
+      "part of the team now",
+      "on holiday",
+      "on a boat"
+     ],
+     "answer": 1,
+     "why": "On board = a bordo, ou seja, agora faz parte da equipe."
+    }
+   ]
+  }
+ ]
+}

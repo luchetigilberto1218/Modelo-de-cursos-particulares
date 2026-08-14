@@ -8,56 +8,56 @@
     {
      "q": "What do we call it when a company buys from abroad?",
      "options": [
-      "Export",
       "Delivery",
-      "Order",
-      "Import"
+      "Import",
+      "Export",
+      "Order"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"When a company buys from abroad, we call it import.\""
     },
     {
      "q": "What do we call it when a company sells to other countries?",
      "options": [
-      "Export",
-      "Shipment",
+      "Import",
       "Supply",
-      "Import"
+      "Export",
+      "Shipment"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"When it sells to other countries, we call it export.\""
     },
     {
      "q": "What is the first step in the process?",
      "options": [
-      "The seller sends the goods",
-      "The buyer and seller agree on product, price and delivery date",
       "The goods arrive",
-      "The buyer pays"
+      "The buyer pays",
+      "The seller sends the goods",
+      "The buyer and seller agree on product, price and delivery date"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"First, the buyer and the seller agree on the product, the price and the delivery date.\""
     },
     {
      "q": "What is the last step?",
      "options": [
-      "They agree the price",
-      "The seller prepares the goods",
+      "The buyer receives the goods and pays",
       "The goods leave the factory",
-      "The buyer receives the goods and pays"
+      "They agree the price",
+      "The seller prepares the goods"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Finally, the buyer receives the goods and pays.\""
     },
     {
      "q": "How often do these steps happen around the world?",
      "options": [
+      "Millions of times a day",
       "Once a year",
-      "Only in big countries",
       "Very rarely",
-      "Millions of times a day"
+      "Only in big countries"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"These simple steps happen millions of times a day around the world.\""
     }
    ]
@@ -72,8 +72,8 @@
     {
      "q": "Where does this import shipment come from and go to?",
      "options": [
-      "Inside the UK",
       "From Germany to Brazil",
+      "Inside the UK",
       "From the UK to Brazil",
       "From Brazil to the United Kingdom"
      ],
@@ -83,34 +83,34 @@
     {
      "q": "What product is used in the example?",
      "options": [
-      "Cars",
-      "Phones",
       "Coffee",
-      "Sugar"
+      "Sugar",
+      "Phones",
+      "Cars"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"We choose the product — say, sugar.\""
     },
     {
      "q": "What does the team prepare while the goods travel?",
      "options": [
-      "The warehouse",
-      "The price",
       "The documents — the invoice and customs papers",
+      "The price",
+      "The warehouse",
       "The ship"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"we prepare the documents — the invoice, and the papers we need for customs.\""
     },
     {
      "q": "What happens when the ship arrives in the UK?",
      "options": [
-      "The order starts",
-      "The goods go straight to the shop",
       "The supplier pays",
-      "The goods stop at the border and customs check the papers"
+      "The order starts",
+      "The goods stop at the border and customs check the papers",
+      "The goods go straight to the shop"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"the goods stop at the border. Customs check the papers.\""
     },
     {
@@ -132,56 +132,56 @@
     {
      "q": "\"We **import** sugar from Brazil.\" To import means to…",
      "options": [
-      "buy from another country",
       "pay a tax",
-      "sell abroad",
-      "store goods"
+      "store goods",
+      "buy from another country",
+      "sell abroad"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Import = importar, comprar de outro país."
     },
     {
      "q": "The **supplier** is the company that…",
      "options": [
       "buys the goods",
-      "pays customs",
       "provides or sells the goods",
+      "pays customs",
       "ships the goods only"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Supplier = fornecedor."
     },
     {
      "q": "Choose the correct word: \"The seller sends the **___** by ship.\"",
      "options": [
-      "order",
-      "invoice",
       "border",
-      "goods"
+      "goods",
+      "invoice",
+      "order"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Goods = mercadorias."
     },
     {
      "q": "The **invoice** is…",
      "options": [
-      "the bill that shows the price to pay",
       "the warehouse",
-      "the ship",
-      "the border"
+      "the border",
+      "the bill that shows the price to pay",
+      "the ship"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Invoice = fatura."
     },
     {
      "q": "Choose the correct word: \"Goods stop at the **___** when they enter a country.\"",
      "options": [
-      "invoice",
-      "supplier",
       "border",
-      "order"
+      "supplier",
+      "order",
+      "invoice"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Border = fronteira."
     }
    ]
@@ -194,54 +194,54 @@
      "options": [
       "from a warehouse",
       "from a shop",
-      "from another country",
-      "from our city"
+      "from our city",
+      "from another country"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "From abroad = do exterior."
     },
     {
      "q": "\"The goods are **on their way**.\" On their way means…",
      "options": [
+      "travelling to us",
       "cancelled",
       "delivered",
-      "travelling to us",
       "lost"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "On their way = a caminho."
     },
     {
      "q": "\"Let's **place an order** with the supplier.\" To place an order means to…",
      "options": [
-      "cancel a purchase",
       "pay a tax",
-      "make a purchase request",
-      "ship goods"
+      "ship goods",
+      "cancel a purchase",
+      "make a purchase request"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Place an order = fazer um pedido."
     },
     {
      "q": "\"The goods will **arrive** next week.\" To arrive means to…",
      "options": [
-      "leave",
       "reach the destination",
       "be packed",
+      "leave",
       "be sold"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Arrive = chegar."
     },
     {
      "q": "\"We **deal with** suppliers in Brazil.\" To deal with means to…",
      "options": [
-      "avoid",
       "ship to",
-      "do business with",
-      "pay a fine to"
+      "pay a fine to",
+      "avoid",
+      "do business with"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Deal with = fazer negócios com."
     }
    ]

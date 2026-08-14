@@ -1,0 +1,259 @@
+{
+ "num": 1045,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Sugar is our product. Sugar is uncountable. We do not say \"one sugar\" or \"two sugars\". We say some sugar, a lot of sugar, or ten tonnes of sugar.<br><br>To count sugar, we use tonnes. We say \"There are many tonnes\" and \"There is a lot of sugar\". We ask \"How much sugar is there?\" and \"How many tonnes are there?\"<br><br>Today we learn five words: sugar, tonne, cargo, quality, and quantity. A little English every day is a lot.",
+   "items": [
+    {
+     "q": "Is sugar countable or uncountable?",
+     "options": [
+      "Neither",
+      "Uncountable",
+      "Both",
+      "Countable"
+     ],
+     "answer": 1,
+     "why": "\"Sugar is uncountable.\" — não dizemos one sugar, two sugars."
+    },
+    {
+     "q": "What do we use to count sugar?",
+     "options": [
+      "Boxes",
+      "Ships",
+      "Bags",
+      "Tonnes"
+     ],
+     "answer": 3,
+     "why": "\"To count sugar, we use tonnes.\""
+    },
+    {
+     "q": "Which question is correct for sugar?",
+     "options": [
+      "How much sugars is there?",
+      "How much sugar is there?",
+      "How many sugar are there?",
+      "How many sugar is there?"
+     ],
+     "answer": 1,
+     "why": "Sugar é incontável, então usamos \"how much\": \"How much sugar is there?\""
+    },
+    {
+     "q": "The text suggests that the writer would NOT say…",
+     "options": [
+      "two sugars",
+      "some sugar",
+      "ten tonnes of sugar",
+      "a lot of sugar"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que não falamos \"one sugar\" ou \"two sugars\"."
+    },
+    {
+     "q": "\"A little English every day is a lot.\" This suggests that…",
+     "options": [
+      "English is not important",
+      "small daily study helps a lot",
+      "you must study only one day",
+      "sugar is easy to sell"
+     ],
+     "answer": 1,
+     "why": "Inferência: estudar um pouco todo dia soma muito."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ethan mostrando ao novo trader como descrever uma carga de açúcar. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team. Today I show you how to describe a sugar cargo. It is easy. We talk about three things: quality, quantity, and type.<br><br>First, the quantity. How much sugar is there? Here we have ten thousand tonnes. That is a lot of sugar. We do not say \"one sugar\" or \"two sugars\". Sugar is uncountable. We say some sugar, a lot of sugar, or ten thousand tonnes.<br><br>Second, the quality. Is the quality high or low? This cargo has high quality. Good quality is very important for our clients.<br><br>Third, the type. Is it white sugar or raw sugar? This cargo is raw sugar.<br><br>Now, the cargo is on the ship. We have many tonnes and we have some clients in Asia. We export a lot of sugar every month.<br><br>So remember: quantity, quality, and type. Use \"how much\" for sugar and \"how many\" for tonnes. A little English every day is a lot. Good luck!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What three things does Ethan talk about?",
+     "options": [
+      "Ship, port, and client",
+      "Price, size, and colour",
+      "Quality, quantity, and type",
+      "Name, date, and place"
+     ],
+     "answer": 2,
+     "why": "\"We talk about three things: quality, quantity, and type.\""
+    },
+    {
+     "q": "How much sugar is there in the cargo?",
+     "options": [
+      "One thousand tonnes",
+      "Ten clients",
+      "Ten thousand tonnes",
+      "Two sugars"
+     ],
+     "answer": 2,
+     "why": "\"Here we have ten thousand tonnes.\""
+    },
+    {
+     "q": "Where is the cargo now?",
+     "options": [
+      "On the ship",
+      "At the port",
+      "In Asia",
+      "In the office"
+     ],
+     "answer": 0,
+     "why": "\"Now, the cargo is on the ship.\""
+    },
+    {
+     "q": "Ethan suggests that high quality is…",
+     "options": [
+      "important for the clients",
+      "the same as quantity",
+      "only for white sugar",
+      "not important"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Good quality is very important for our clients.\""
+    },
+    {
+     "q": "From the talk, we can guess that the company…",
+     "options": [
+      "sells only in Asia",
+      "does not use ships",
+      "sells a lot of sugar often",
+      "has no clients"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"We export a lot of sugar every month\" e tem clientes na Ásia."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We sell a lot of <strong>sugar</strong> every year.\" <strong>Sugar</strong> means…",
+     "options": [
+      "sal",
+      "farinha",
+      "açúcar",
+      "café"
+     ],
+     "answer": 2,
+     "why": "Sugar = açúcar, o produto da empresa."
+    },
+    {
+     "q": "\"There are ten thousand <strong>tonnes</strong> on the ship.\" A <strong>tonne</strong> is…",
+     "options": [
+      "um navio",
+      "uma tonelada (métrica)",
+      "uma caixa",
+      "um saco pequeno"
+     ],
+     "answer": 1,
+     "why": "Tonne = tonelada métrica, usada para medir o açúcar."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ is on the ship. It has ten thousand tonnes of sugar.\"",
+     "options": [
+      "client",
+      "cargo",
+      "quality",
+      "office"
+     ],
+     "answer": 1,
+     "why": "Cargo = carga; é o que está no navio."
+    },
+    {
+     "q": "\"The <strong>quality</strong> is high.\" <strong>Quality</strong> means…",
+     "options": [
+      "quantidade",
+      "preço",
+      "cor",
+      "qualidade"
+     ],
+     "answer": 3,
+     "why": "Quality = qualidade (alta ou baixa)."
+    },
+    {
+     "q": "Choose the correct word: \"How much sugar is there? The ___ is ten thousand tonnes.\"",
+     "options": [
+      "quantity",
+      "tonne",
+      "cargo",
+      "quality"
+     ],
+     "answer": 0,
+     "why": "Quantity = quantidade; responde \"how much / how many\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem em reuniões de negócios. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"There is <strong>a lot of</strong> sugar on the ship.\" <strong>A lot of</strong> means…",
+     "options": [
+      "nenhum",
+      "pouco",
+      "muito / muita",
+      "só um"
+     ],
+     "answer": 2,
+     "why": "A lot of = muito/muita — uma grande quantidade."
+    },
+    {
+     "q": "\"We have <strong>some</strong> clients in Asia.\" <strong>Some</strong> means…",
+     "options": [
+      "todos",
+      "nenhum",
+      "alguns / algumas",
+      "muitos"
+     ],
+     "answer": 2,
+     "why": "Some = alguns/algumas — uma quantidade não exata."
+    },
+    {
+     "q": "The boss says: \"Can you <strong>sign off on</strong> the cargo?\" This means…",
+     "options": [
+      "pesar o açúcar",
+      "aprovar formalmente",
+      "cancelar a carga",
+      "comprar mais"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We <strong>ship out</strong> the sugar today.\" To <strong>ship out</strong> means to…",
+     "options": [
+      "enviar / despachar",
+      "guardar no depósito",
+      "contar as toneladas",
+      "vender o navio"
+     ],
+     "answer": 0,
+     "why": "Ship out = enviar/despachar a mercadoria."
+    },
+    {
+     "q": "\"Let's <strong>find out</strong> how much sugar is there.\" To <strong>find out</strong> means to…",
+     "options": [
+      "descobrir / saber",
+      "esquecer",
+      "esconder",
+      "vender"
+     ],
+     "answer": 0,
+     "why": "Find out = descobrir, obter a informação."
+    }
+   ]
+  }
+ ]
+}

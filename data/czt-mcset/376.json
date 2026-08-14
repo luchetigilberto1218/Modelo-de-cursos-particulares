@@ -21,23 +21,23 @@
     {
      "q": "Which of these is a variable cost in the text?",
      "options": [
+      "Raw materials",
       "Salaries of permanent staff",
       "Rent",
-      "Raw materials",
       "Insurance"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Raw materials, shipping, and packaging\" são custos variáveis; aluguel, seguro e salários fixos são fixos."
     },
     {
      "q": "Why does a company with high fixed costs feel pressure?",
      "options": [
-      "It never pays rent",
-      "It sells only ten products",
+      "It has no staff",
       "It must sell a lot to cover the fixed costs",
-      "It has no staff"
+      "It sells only ten products",
+      "It never pays rent"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"A company with high fixed costs feels pressure to sell more and more, just to cover them.\""
     },
     {
@@ -54,12 +54,12 @@
     {
      "q": "The text suggests that a company with mostly variable costs…",
      "options": [
-      "can never grow",
-      "finds it easier to get smaller when sales fall",
       "has no shipping costs",
-      "always makes more money"
+      "always makes more money",
+      "finds it easier to get smaller when sales fall",
+      "can never grow"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"can shrink more easily when sales drop\" — quando os custos são variáveis, eles caem junto com as vendas."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "What question does Oliver answer at the start?",
      "options": [
+      "How to raise the office rent",
       "Where to buy raw materials",
       "Why we can't just cut costs a little when sales go down",
-      "How to raise the office rent",
       "How to hire permanent staff"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"you asked why we can't just cut costs a little when sales go down.\""
     },
     {
      "q": "Which costs does Oliver put on the fixed list?",
      "options": [
-      "Rent, salaries of permanent staff, and insurance",
-      "Only insurance",
+      "Raw materials and boxes",
       "Shipping and packaging",
-      "Raw materials and boxes"
+      "Only insurance",
+      "Rent, salaries of permanent staff, and insurance"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The rent… the salaries of our permanent staff… the insurance… These are fixed costs.\""
     },
     {
      "q": "What happens to the variable costs when the company sells less?",
      "options": [
-      "They go up",
-      "They go down",
       "They disappear completely",
-      "They stay the same"
+      "They stay the same",
+      "They go down",
+      "They go up"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"If we sell less, we buy less material and we ship fewer boxes. So these costs go down.\""
     },
     {
      "q": "Oliver says the fixed part \"does not bend that fast.\" What does he mean?",
      "options": [
+      "Fixed costs do not fall quickly when sales fall",
       "Fixed costs are easy to remove",
       "Fixed costs change every day",
-      "Fixed costs are very small",
-      "Fixed costs do not fall quickly when sales fall"
+      "Fixed costs are very small"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: se as vendas caem 20%, os custos fixos não caem junto — eles permanecem, criando a pressão."
     },
     {
      "q": "From Oliver's advice about price, what should the product manager remember?",
      "options": [
-      "The price also helps pay the rent, salaries and insurance",
-      "The price does not matter",
+      "Fixed costs are paid only once a year",
       "The price should only pay for one product's material",
-      "Fixed costs are paid only once a year"
+      "The price does not matter",
+      "The price also helps pay the rent, salaries and insurance"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"You are helping to pay the rent, the salaries, the insurance — every single month.\" O preço cobre mais do que a matéria-prima."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"The office <strong>rent</strong> is the same every month.\" Rent is…",
      "options": [
-      "the money you pay to use a place",
-      "the salary of a manager",
       "the money from sales",
+      "the salary of a manager",
+      "the money you pay to use a place",
       "the price of raw materials"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Rent = aluguel: o valor pago para usar o espaço."
     },
     {
      "q": "Choose the correct word: \"Steel and wood are the ___ we use to build the product.\"",
      "options": [
-      "insurance",
-      "rent",
+      "raw materials",
       "packaging",
-      "raw materials"
+      "insurance",
+      "rent"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Raw materials = matérias-primas: aço e madeira são os materiais para produzir."
     },
     {
      "q": "\"We pay for good <strong>insurance</strong> in case something goes wrong.\" Insurance is…",
      "options": [
-      "the box around a product",
-      "protection you pay for against loss or damage",
+      "a variable cost that grows fast",
       "money for shipping",
-      "a variable cost that grows fast"
+      "protection you pay for against loss or damage",
+      "the box around a product"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Insurance = seguro: você paga para se proteger contra perdas ou danos."
     },
     {
      "q": "Choose the correct word: \"When we sell more units, the cost per unit falls. That is an ___.\"",
      "options": [
-      "economy of scale",
       "insurance policy",
       "fixed cost",
-      "office rent"
+      "office rent",
+      "economy of scale"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Economy of scale = economia de escala: quanto mais você produz, menor o custo por unidade."
     },
     {
      "q": "\"The <strong>packaging</strong> costs more when we sell more products.\" Packaging is…",
      "options": [
-      "the permanent staff",
       "the boxes and material that protect the product",
+      "the office building",
       "the insurance you pay",
-      "the office building"
+      "the permanent staff"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Packaging = embalagem: o material (caixas etc.) que envolve e protege o produto."
     }
    ]
@@ -201,9 +201,9 @@
     {
      "q": "\"When sales fell, we had to <strong>cut costs</strong>.\" To cut costs means to…",
      "options": [
-      "raise the price",
-      "spend less money",
       "sell more products",
+      "spend less money",
+      "raise the price",
       "hire more people"
      ],
      "answer": 1,
@@ -212,45 +212,45 @@
     {
      "q": "\"These fixed costs are hard to <strong>bring down</strong>.\" To bring down means to…",
      "options": [
-      "pay every month",
       "explain clearly",
-      "make lower or reduce",
-      "make higher"
+      "pay every month",
+      "make higher",
+      "make lower or reduce"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Bring down = baixar, reduzir (aqui, os custos)."
     },
     {
      "q": "\"We must sell enough just to <strong>cover</strong> the fixed costs.\" To cover a cost means to…",
      "options": [
       "hide it from the manager",
-      "make it bigger",
       "have enough money to pay it",
-      "forget about it"
+      "forget about it",
+      "make it bigger"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Cover a cost = cobrir um custo: ter dinheiro suficiente para pagá-lo."
     },
     {
      "q": "\"When can we <strong>break even</strong> on this product?\" To break even means to…",
      "options": [
-      "make just enough to pay the costs, with no loss",
-      "cut all the staff",
       "make a huge profit",
-      "stop selling the product"
+      "stop selling the product",
+      "cut all the staff",
+      "make just enough to pay the costs, with no loss"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Break even = empatar: as vendas cobrem exatamente os custos, sem lucro nem prejuízo."
     },
     {
      "q": "\"The market got worse, so we had to <strong>scale back</strong>.\" To scale back means to…",
      "options": [
-      "make the business smaller",
+      "buy a new office",
       "raise all the salaries",
-      "double the shipping",
-      "buy a new office"
+      "make the business smaller",
+      "double the shipping"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Scale back = reduzir, encolher a operação — o que é mais fácil com custos variáveis."
     }
    ]

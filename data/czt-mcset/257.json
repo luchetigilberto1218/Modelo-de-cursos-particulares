@@ -1,0 +1,259 @@
+{
+ "num": 257,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Incoterms are short codes used in international trade. They decide who is responsible for what. The most common ones are EXW, FOB, and CIF.<br><br>EXW means the buyer collects the goods. FOB means the seller delivers to the ship. CIF means the seller pays the freight and insurance to the destination.<br><br>For supply chain teams, these three letters change everything. They decide who pays the freight, who insures the cargo, and who takes the risk at each step. Knowing your Incoterms is the first rule of not getting surprised by a bill.",
+   "items": [
+    {
+     "q": "What do Incoterms decide?",
+     "options": [
+      "The color of the cargo",
+      "The price of the product",
+      "Who is responsible for what",
+      "The name of the ship"
+     ],
+     "answer": 2,
+     "why": "\"They decide who is responsible for what.\""
+    },
+    {
+     "q": "Under CIF, who pays the freight and insurance?",
+     "options": [
+      "The port",
+      "The seller",
+      "The ship",
+      "The buyer"
+     ],
+     "answer": 1,
+     "why": "\"CIF means the seller pays the freight and insurance to the destination.\""
+    },
+    {
+     "q": "Under EXW, what does the buyer do?",
+     "options": [
+      "The buyer sells the cargo",
+      "The buyer collects the goods",
+      "The buyer pays the insurance",
+      "The buyer delivers to the ship"
+     ],
+     "answer": 1,
+     "why": "\"EXW means the buyer collects the goods.\""
+    },
+    {
+     "q": "The text suggests that a person who does NOT know Incoterms may…",
+     "options": [
+      "deliver faster",
+      "get a good discount",
+      "be surprised by a bill",
+      "pay less freight"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"the first rule of not getting surprised by a bill\" — quem não conhece pode ser surpreendido pela conta."
+    },
+    {
+     "q": "The author would most likely AGREE that Incoterms are…",
+     "options": [
+      "only three letters with no real effect",
+      "not important for supply chain teams",
+      "important because they decide who pays and who takes the risk",
+      "the same as the product price"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz que essas três letras \"change everything\" e definem quem paga e quem corre o risco."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte treinando a nova assistente de importação. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the import team. Today I want to explain one small but very important thing: the Incoterm.<br><br>Look at this contract. It says CIF. That is good news for us. Under CIF, the seller has to pay the freight and the insurance to the destination. So we do not pay for that part.<br><br>But be careful. Last month we had a different contract. It said EXW. Under EXW, the buyer is responsible from the seller's factory. That means we pay everything after that point.<br><br>And then the surprise came. There was a port fee of three thousand euros. Because the Incoterm was EXW, we had to pay it. Nobody read the code first, and the bill was a shock.<br><br>So here is my rule for you. Before you sign any contract, check the Incoterm. Three letters decide who pays the freight, who insures the cargo, and who takes the risk. When you are not sure, come and ask me. It is always better to ask first than to pay later.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Charlotte want to explain today?",
+     "options": [
+      "The price of the product",
+      "The office rules",
+      "The name of the ship",
+      "The Incoterm"
+     ],
+     "answer": 3,
+     "why": "\"Today I want to explain one small but very important thing: the Incoterm.\""
+    },
+    {
+     "q": "Under the CIF contract, who pays the freight and insurance?",
+     "options": [
+      "The port",
+      "The buyer (us)",
+      "The assistant",
+      "The seller"
+     ],
+     "answer": 3,
+     "why": "\"Under CIF, the seller has to pay the freight and the insurance to the destination.\""
+    },
+    {
+     "q": "Why did they have to pay the three thousand euro port fee last month?",
+     "options": [
+      "The seller made a mistake",
+      "The contract was CIF",
+      "The ship was late",
+      "The Incoterm was EXW, so the buyer was responsible"
+     ],
+     "answer": 3,
+     "why": "\"Because the Incoterm was EXW, we had to pay it.\" Sob EXW o comprador é responsável."
+    },
+    {
+     "q": "Why does Charlotte say \"the bill was a shock\"?",
+     "options": [
+      "They did not expect that extra cost",
+      "The bill was in another language",
+      "The bill was very cheap",
+      "They never received the bill"
+     ],
+     "answer": 0,
+     "why": "Inferência: ninguém leu o código antes, então a conta extra chegou de surpresa."
+    },
+    {
+     "q": "What is Charlotte's main advice to the new assistant?",
+     "options": [
+      "Check the Incoterm before signing, and ask when unsure",
+      "Pay every bill quickly",
+      "Always choose CIF contracts",
+      "Never sign any contract"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Before you sign any contract, check the Incoterm… When you are not sure, come and ask me.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The seller pays the <strong>freight</strong> to the port.\" Freight is…",
+     "options": [
+      "the size of the ship",
+      "the cost of transport",
+      "the name of the buyer",
+      "the color of the box"
+     ],
+     "answer": 1,
+     "why": "Freight = frete, o custo de transportar a carga."
+    },
+    {
+     "q": "\"We pay for the <strong>insurance</strong> in case the goods are damaged.\" Insurance protects you when…",
+     "options": [
+      "the ship is fast",
+      "the contract is short",
+      "something goes wrong with the goods",
+      "the price goes up"
+     ],
+     "answer": 2,
+     "why": "Insurance = seguro: protege quando algo dá errado com a carga."
+    },
+    {
+     "q": "Choose the correct word: \"Under EXW, the buyer is ___ from the seller's factory.\"",
+     "options": [
+      "cheap",
+      "empty",
+      "responsible",
+      "slow"
+     ],
+     "answer": 2,
+     "why": "Responsible = responsável. Sob EXW, o comprador é responsável a partir da fábrica."
+    },
+    {
+     "q": "Choose the correct word: \"The ship carries the ___ to the destination port.\"",
+     "options": [
+      "office",
+      "bill",
+      "cargo",
+      "meeting"
+     ],
+     "answer": 2,
+     "why": "Cargo = carga, o que o navio transporta."
+    },
+    {
+     "q": "\"The port sent us a big <strong>bill</strong> for the extra fee.\" A bill is…",
+     "options": [
+      "a document that asks you to pay",
+      "a type of ship",
+      "a delivery date",
+      "a kind of insurance"
+     ],
+     "answer": 0,
+     "why": "Bill = conta: o documento que pede o pagamento."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de supply chain. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the contract before we send it.\" To sign off on means to…",
+     "options": [
+      "translate it",
+      "formally approve it",
+      "cancel it",
+      "read it aloud"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new Incoterm rules next month.\" To roll out means to…",
+     "options": [
+      "hide the rules",
+      "start using something step by step",
+      "print the contract",
+      "stop the project"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"The buyer <strong>pushed back on</strong> the EXW terms.\" This means the buyer…",
+     "options": [
+      "agreed quickly",
+      "resisted or disagreed",
+      "paid the bill",
+      "signed at once"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, discordar."
+    },
+    {
+     "q": "\"Always <strong>check the Incoterm first</strong> before you sign.\" This advice tells you to…",
+     "options": [
+      "ask for a discount",
+      "read the code before you commit",
+      "sign and read later",
+      "ignore the code"
+     ],
+     "answer": 1,
+     "why": "Check first = conferir antes; ler o Incoterm antes de assinar."
+    },
+    {
+     "q": "\"The extra port fee really <strong>added up</strong> at the end.\" To add up means the costs…",
+     "options": [
+      "were free",
+      "were paid by the seller",
+      "grew into a large total",
+      "became smaller"
+     ],
+     "answer": 2,
+     "why": "Add up = somar, os custos crescem até virar um total grande."
+    }
+   ]
+  }
+ ]
+}

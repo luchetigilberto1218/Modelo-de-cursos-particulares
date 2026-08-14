@@ -1,0 +1,259 @@
+{
+ "num": 1062,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. Greetings are easy, and they help a lot. British people say hello many times a day — in the lift, in the corridor, on the phone.<br><br>None of it is difficult. But the right small word at the right moment makes you sound natural from day one. \"Good morning\" works before lunch. \"Hi\" works with people you know well.<br><br>Sophie uses these words every morning in the London office. A smile always helps too. Let's practise the basics with her.",
+   "items": [
+    {
+     "q": "How often do British people say hello during the day?",
+     "options": [
+      "Never",
+      "Many times",
+      "Only on the phone",
+      "Only once"
+     ],
+     "answer": 1,
+     "why": "\"British people say hello many times a day.\""
+    },
+    {
+     "q": "When does \"Good morning\" work?",
+     "options": [
+      "Only on Monday",
+      "After dinner",
+      "Before lunch",
+      "At night"
+     ],
+     "answer": 2,
+     "why": "\"Good morning works before lunch.\""
+    },
+    {
+     "q": "Where does Sophie use these words?",
+     "options": [
+      "At school",
+      "In the park",
+      "At home",
+      "In the London office"
+     ],
+     "answer": 3,
+     "why": "\"Sophie uses these words every morning in the London office.\""
+    },
+    {
+     "q": "The text suggests that greetings are…",
+     "options": [
+      "a waste of time",
+      "very hard to learn",
+      "only for managers",
+      "simple but useful"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"None of it is difficult\" + \"they help a lot\" → simples, mas úteis."
+    },
+    {
+     "q": "The author would most likely say that a smile…",
+     "options": [
+      "should be used only once",
+      "makes your English friendlier",
+      "is rude at work",
+      "is not important"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"A smile always helps too\" — o autor valoriza o sorriso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie no corredor do escritório de Londres. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning! I'm Sophie. I work in the London office. I love my job. Every day I say hello to my colleagues in the corridor and in the lift. It is easy, and it feels nice.<br><br>This morning I met Tom near the coffee machine. I said, \"Good morning, Tom. How are you?\" He said, \"I'm fine, thanks. And you?\" I said, \"Very well, thank you.\" It was quick and easy. We did not stop for long, but the words were friendly.<br><br>Then I met a new person. Her name is Anna. It was her first day, and she looked a little nervous. I said, \"Hello, nice to meet you.\" We shook hands. Anna smiled. A first meeting is always nice with a firm handshake and a smile.<br><br>At lunch I saw Tom again. This time I said, \"Hi\" — not \"Good morning.\" We know each other well now, so \"Hi\" is fine. It is short and friendly.<br><br>At the end of the day, I said, \"See you later!\" to my team. And when someone helped me with a box, I said, \"Cheers!\" That means thank you in the office. Small words, but they help a lot every single day.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What did Sophie say to Tom in the morning?",
+     "options": [
+      "Cheers",
+      "Nice to meet you",
+      "Good morning, how are you?",
+      "See you later"
+     ],
+     "answer": 2,
+     "why": "\"Good morning, Tom. How are you?\""
+    },
+    {
+     "q": "Who was on her first day?",
+     "options": [
+      "Anna",
+      "The manager",
+      "Sophie",
+      "Tom"
+     ],
+     "answer": 0,
+     "why": "\"Her name is Anna. It was her first day.\""
+    },
+    {
+     "q": "What did Sophie say to her team at the end of the day?",
+     "options": [
+      "Nice to meet you",
+      "See you later",
+      "How are you?",
+      "Good morning"
+     ],
+     "answer": 1,
+     "why": "\"At the end of the day, I said, See you later!\""
+    },
+    {
+     "q": "Why did Sophie say \"Hi\" to Tom at lunch, not \"Good morning\"?",
+     "options": [
+      "Because Tom is new",
+      "Because it was not morning and they know each other well",
+      "Because it was her first day",
+      "Because Tom was angry"
+     ],
+     "answer": 1,
+     "why": "Inferência: é depois do almoço e \"We know each other well now, so Hi is fine.\""
+    },
+    {
+     "q": "What can we learn about \"Cheers\" in the office?",
+     "options": [
+      "It means hello",
+      "It means sorry",
+      "It means thank you",
+      "It means goodbye"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"when someone helped me, I said Cheers. That means thank you.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>Hello</strong>, Tom! How are you?\" Hello means…",
+     "options": [
+      "olá",
+      "sorry",
+      "goodbye",
+      "thank you"
+     ],
+     "answer": 0,
+     "why": "Hello = olá, um cumprimento."
+    },
+    {
+     "q": "Choose the correct word: \"Good ___, everyone! Let's start the meeting.\" (It is 9 a.m.)",
+     "options": [
+      "thanks",
+      "please",
+      "morning",
+      "fine"
+     ],
+     "answer": 2,
+     "why": "Good morning = bom dia; usa-se antes do almoço."
+    },
+    {
+     "q": "\"How are you?\" \"I'm <strong>fine</strong>, thanks.\" Fine means…",
+     "options": [
+      "late",
+      "busy",
+      "tired",
+      "bem"
+     ],
+     "answer": 3,
+     "why": "Fine = bem; a resposta segura para \"How are you?\"."
+    },
+    {
+     "q": "Choose the correct word: \"Can you help me, ___?\"",
+     "options": [
+      "fine",
+      "morning",
+      "hello",
+      "please"
+     ],
+     "answer": 3,
+     "why": "Please = por favor; usa-se para pedir algo com educação."
+    },
+    {
+     "q": "\"You helped me a lot. <strong>Thanks</strong>!\" Thanks means…",
+     "options": [
+      "por favor",
+      "até logo",
+      "olá",
+      "obrigado(a)"
+     ],
+     "answer": 3,
+     "why": "Thanks = obrigado(a)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões curtas do dia a dia no escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>Nice to meet you</strong>.\" You say this when…",
+     "options": [
+      "you say goodbye",
+      "you are angry",
+      "you meet a person for the first time",
+      "you are late"
+     ],
+     "answer": 2,
+     "why": "Nice to meet you = prazer em conhecer; usa-se no primeiro contato."
+    },
+    {
+     "q": "\"<strong>See you later</strong>!\" This means…",
+     "options": [
+      "hello",
+      "please",
+      "thank you",
+      "goodbye, until later"
+     ],
+     "answer": 3,
+     "why": "See you later = até mais tarde; despedida amigável."
+    },
+    {
+     "q": "\"<strong>How are you?</strong>\" in the corridor is usually…",
+     "options": [
+      "a complaint",
+      "an order",
+      "a request for help",
+      "a greeting, not a real question"
+     ],
+     "answer": 3,
+     "why": "\"How are you?\" costuma ser um cumprimento, não uma pergunta de verdade."
+    },
+    {
+     "q": "A colleague helps you and you say \"<strong>Cheers</strong>!\" You mean…",
+     "options": [
+      "thank you",
+      "sorry",
+      "goodbye",
+      "hello"
+     ],
+     "answer": 0,
+     "why": "Cheers = obrigado no inglês britânico informal."
+    },
+    {
+     "q": "\"I'm fine, thanks. <strong>And you?</strong>\" You add \"And you?\" to…",
+     "options": [
+      "say goodbye",
+      "end the talk fast",
+      "ask for help",
+      "ask the same question back"
+     ],
+     "answer": 3,
+     "why": "\"And you?\" devolve a mesma pergunta à outra pessoa, com educação."
+    }
+   ]
+  }
+ ]
+}

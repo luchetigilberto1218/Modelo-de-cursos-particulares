@@ -1,0 +1,259 @@
+{
+ "num": 1067,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In the UK, talking about the weather is not a cliché. It is a survival skill. It is how you break the ice in a lift, start a meeting, or fill a quiet moment.<br><br>Today you learn the structure \"It is + weather.\" You also learn the words that keep small talk going. \"How's the weather?\" is safe. \"Lovely day\" is a classic opener.<br><br>In London the rain is normal, so don't complain about it. But a sunny day is special. A sunny day in London changes the mood of the whole office.",
+   "items": [
+    {
+     "q": "In the UK, talking about the weather is…",
+     "options": [
+      "a cliché",
+      "a waste of time",
+      "a rude thing to do",
+      "a survival skill"
+     ],
+     "answer": 3,
+     "why": "\"talking about the weather is not a cliché. It is a survival skill.\""
+    },
+    {
+     "q": "Which structure does the text teach today?",
+     "options": [
+      "We go + weather",
+      "There are + weather",
+      "I have + weather",
+      "It is + weather"
+     ],
+     "answer": 3,
+     "why": "\"Today you learn the structure 'It is + weather.'\""
+    },
+    {
+     "q": "According to the text, \"How's the weather?\" is…",
+     "options": [
+      "a way to end a meeting",
+      "safe small talk",
+      "a rude question",
+      "a difficult question"
+     ],
+     "answer": 1,
+     "why": "\"'How's the weather?' is safe.\""
+    },
+    {
+     "q": "What does the text suggest about rain in London?",
+     "options": [
+      "It is a good reason to complain",
+      "It is normal, so people expect it",
+      "It stops all meetings",
+      "It is rare and special"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"the rain is normal, so don't complain about it\" — todo mundo já espera chuva."
+    },
+    {
+     "q": "The author would most likely agree that a sunny day in London is…",
+     "options": [
+      "the same as any other day",
+      "bad for the office",
+      "a small event that makes people happier",
+      "boring and normal"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"a sunny day is special\" e \"changes the mood of the whole office\" — dia de sol muda o ânimo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça o colega britânico falando no começo da reunião. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone. Come in, sit down. Ah, look outside — it's raining again. Of course it is! It's London.<br><br>It's a bit cold this morning too, isn't it? I'm freezing. I forgot my umbrella at home, so I was very wet on the way here. Not a good start to the day.<br><br>But the app says it will be sunny this afternoon. That's nice. A sunny day is not normal here, so we should be happy. When it's sunny, the whole office feels better.<br><br>Okay, before we start, how is everyone? Did you have a good weekend? Was the weather nice where you are?<br><br>Right. Let's begin. But please, keep an umbrella near you. In London you always need one.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the weather like now, at the start of the meeting?",
+     "options": [
+      "It is sunny",
+      "It is snowing",
+      "It is raining and a bit cold",
+      "It is hot"
+     ],
+     "answer": 2,
+     "why": "\"it's raining again\" e \"It's a bit cold this morning too.\""
+    },
+    {
+     "q": "Why was the speaker very wet?",
+     "options": [
+      "He washed his car",
+      "He forgot his umbrella at home",
+      "He fell in the river",
+      "The office window was open"
+     ],
+     "answer": 1,
+     "why": "\"I forgot my umbrella at home, so I was very wet on the way here.\""
+    },
+    {
+     "q": "What does the app say about the afternoon?",
+     "options": [
+      "It will be sunny",
+      "It will rain more",
+      "It will snow",
+      "It will be very cold"
+     ],
+     "answer": 0,
+     "why": "\"the app says it will be sunny this afternoon.\""
+    },
+    {
+     "q": "Why does the speaker say they \"should be happy\" about sun?",
+     "options": [
+      "Because the meeting will end early",
+      "Because a sunny day is not normal there",
+      "Because sun is normal in London",
+      "Because it is his birthday"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"A sunny day is not normal here, so we should be happy\" — sol é raro, por isso é bom."
+    },
+    {
+     "q": "Why does the speaker ask about the weekend and the weather?",
+     "options": [
+      "To cancel the meeting",
+      "To be friendly and break the ice before work",
+      "To give everyone a task",
+      "To check who is late"
+     ],
+     "answer": 1,
+     "why": "Inferência: falar do clima e do fim de semana é small talk para quebrar o gelo antes de começar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Take a jacket, it is very <strong>cold</strong> today.\" <strong>Cold</strong> means…",
+     "options": [
+      "cold (low temperature)",
+      "wet",
+      "windy",
+      "hot"
+     ],
+     "answer": 0,
+     "why": "Cold = frio, temperatura baixa."
+    },
+    {
+     "q": "Choose the correct word: \"It's ___ today, so bring an umbrella.\"",
+     "options": [
+      "raining",
+      "dry",
+      "warm",
+      "sunny"
+     ],
+     "answer": 0,
+     "why": "Você leva guarda-chuva quando está chovendo (raining/rain)."
+    },
+    {
+     "q": "\"It's a lovely and <strong>sunny</strong> day.\" <strong>Sunny</strong> means…",
+     "options": [
+      "there is a lot of snow",
+      "it is very cold",
+      "there is a lot of rain",
+      "there is a lot of sun"
+     ],
+     "answer": 3,
+     "why": "Sunny = ensolarado, com bastante sol."
+    },
+    {
+     "q": "Choose the correct word: \"The sky is grey and there is no sun. It is very ___.\"",
+     "options": [
+      "cloudy",
+      "clear",
+      "sunny",
+      "hot"
+     ],
+     "answer": 0,
+     "why": "Cloudy = nublado, céu cheio de nuvens."
+    },
+    {
+     "q": "\"I always keep an <strong>umbrella</strong> in my bag.\" An <strong>umbrella</strong> is…",
+     "options": [
+      "a cup of tea",
+      "a thing that keeps the rain off you",
+      "a pair of boots",
+      "a warm coat"
+     ],
+     "answer": 1,
+     "why": "Umbrella = guarda-chuva, protege você da chuva."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem em conversa e no começo de reuniões. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Let me <strong>break the ice</strong> before we start.\" To break the ice means to…",
+     "options": [
+      "start a friendly conversation",
+      "open a window",
+      "end the meeting",
+      "get very cold"
+     ],
+     "answer": 0,
+     "why": "Break the ice = quebrar o gelo, começar uma conversa amigável."
+    },
+    {
+     "q": "\"<strong>Lovely day</strong>, isn't it?\" This is…",
+     "options": [
+      "a goodbye",
+      "a classic small-talk opener",
+      "a complaint about work",
+      "an order"
+     ],
+     "answer": 1,
+     "why": "\"Lovely day\" é um jeito clássico de começar uma conversa (small talk)."
+    },
+    {
+     "q": "\"It's <strong>freezing</strong> out there!\" This means it is…",
+     "options": [
+      "very hot",
+      "very sunny",
+      "very windy",
+      "very cold"
+     ],
+     "answer": 3,
+     "why": "Freezing = gelado, muito frio."
+    },
+    {
+     "q": "\"How's the weather?\" is used to…",
+     "options": [
+      "start an argument",
+      "ask for a report",
+      "make safe small talk",
+      "ask about the time"
+     ],
+     "answer": 2,
+     "why": "\"How's the weather?\" é small talk seguro para conversar com qualquer pessoa."
+    },
+    {
+     "q": "\"Don't <strong>complain about</strong> the rain — it's normal here.\" To complain about means to…",
+     "options": [
+      "talk quietly",
+      "ask a question",
+      "say you are not happy about something",
+      "say thank you"
+     ],
+     "answer": 2,
+     "why": "Complain about = reclamar de algo, dizer que não está contente."
+    }
+   ]
+  }
+ ]
+}

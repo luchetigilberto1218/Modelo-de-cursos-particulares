@@ -1,0 +1,259 @@
+{
+ "num": 524,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the top, the IT department either becomes a strategic partner or quietly stays a service counter. The difference is not budget — it is posture. A strategic IT department invites itself into business conversations early, listens to the real outcome the business is trying to achieve, and offers options the business had not considered, including, sometimes, simpler ones than the business had in mind.<br><br>Although this sounds obvious, many IT teams remain trapped in service-counter mode. They wait for tickets. They deliver exactly what was asked for, even when what was asked for is the wrong question. They protect their own work and stay safely in their lane. The result is a team nobody complains about — and nobody trusts with anything important.<br><br>Provided that senior leadership genuinely wants IT as a partner, the shift is possible within a year. It begins with the CIO sitting at the strategy table and speaking in business outcomes, not in technical solutions. Everything else follows from that one change.",
+   "items": [
+    {
+     "q": "According to the text, what distinguishes a strategic IT department from a service counter?",
+     "options": [
+      "Its posture",
+      "The seniority of its engineers",
+      "The size of its budget",
+      "The number of tickets it closes"
+     ],
+     "answer": 0,
+     "why": "\"The difference is not budget — it is posture.\""
+    },
+    {
+     "q": "What does a service-counter IT team typically do?",
+     "options": [
+      "It joins strategy conversations early",
+      "It offers simpler alternatives to the business",
+      "It challenges the question behind each request",
+      "It waits for tickets and delivers exactly what was asked for"
+     ],
+     "answer": 3,
+     "why": "\"They wait for tickets. They deliver exactly what was asked for.\""
+    },
+    {
+     "q": "The phrase \"a team nobody complains about — and nobody trusts with anything important\" suggests that…",
+     "options": [
+      "reliability alone does not earn strategic influence",
+      "complaints are a sign of a failing team",
+      "the team should stop closing tickets",
+      "trust depends mostly on headcount"
+     ],
+     "answer": 0,
+     "why": "Inferência: cumprir chamados sem falhas gera zero reclamações, mas não conquista confiança para o que importa."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "The CIO should speak in business outcomes at the strategy table.",
+      "A bigger IT budget is what turns a service counter into a partner.",
+      "Staying in your lane can quietly limit IT's influence.",
+      "IT should question whether the request is even the right one."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto abre dizendo que a diferença NÃO é orçamento, e sim postura."
+    },
+    {
+     "q": "What does the author imply is the single change that starts the shift?",
+     "options": [
+      "Hiring more engineers",
+      "The CIO joining the strategy table and speaking in outcomes",
+      "Automating the ticket system",
+      "Reducing the number of business requests"
+     ],
+     "answer": 1,
+     "why": "\"It begins with the CIO sitting at the strategy table… Everything else follows from that one change.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver orientando o CIO. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Let me be blunt, because you asked me to be. The board doesn't distrust you — they simply don't think of you when the important decisions are being made. And that is entirely fixable, but not with another status report.<br><br>Look at the last three you sent me. Every one of them tells the board what your team shipped last month. Uptime, tickets closed, migrations completed. All true, all impeccable — and all invisible to a director trying to decide whether to enter a new market. You are answering a question nobody in that room is asking.<br><br>So here is what I want you to try. Next Thursday, when they discuss the expansion, don't wait to be asked about the systems. Walk in with two options for how technology could support that expansion — and, if there's a simpler path than the one they're assuming, say so. Speak about the outcome they want, not about the platform underneath it.<br><br>The moment you do that once, credibly, the invitation to the next conversation comes automatically. You won't have to ask for a seat. They'll notice the empty one.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "According to Oliver, what is the board's actual attitude towards the CIO?",
+     "options": [
+      "They simply don't think of the CIO during important decisions",
+      "They want more detailed status reports",
+      "They resent the size of the IT budget",
+      "They distrust the CIO's competence"
+     ],
+     "answer": 0,
+     "why": "\"they simply don't think of you when the important decisions are being made.\""
+    },
+    {
+     "q": "What criticism does Oliver make of the CIO's status reports?",
+     "options": [
+      "They are too technical for the IT team",
+      "They contain factual errors",
+      "They answer a question nobody in the room is asking",
+      "They arrive too late to be useful"
+     ],
+     "answer": 2,
+     "why": "\"All true… and all invisible… You are answering a question nobody in that room is asking.\""
+    },
+    {
+     "q": "What does Oliver concretely advise the CIO to do next Thursday?",
+     "options": [
+      "Send a shorter, clearer status report",
+      "Ask the board directly for a permanent seat",
+      "Walk in with options for how technology could support the expansion",
+      "Wait until asked and then explain the systems in detail"
+     ],
+     "answer": 2,
+     "why": "\"Walk in with two options for how technology could support that expansion.\""
+    },
+    {
+     "q": "What does Oliver mean by \"They'll notice the empty one\"?",
+     "options": [
+      "The board will replace the CIO's role",
+      "There will be a spare chair at every meeting",
+      "The board will realise the CIO's presence has become necessary",
+      "The IT team will be reduced in size"
+     ],
+     "answer": 2,
+     "why": "Inferência: uma vez que o CIO agrega valor, sua ausência passa a ser sentida — o convite vira automático."
+    },
+    {
+     "q": "How would you best describe Oliver's overall message?",
+     "options": [
+      "The CIO should change posture, not the quality of the work",
+      "The CIO should stop attending board meetings",
+      "The CIO must work harder on operational metrics",
+      "The problem is credibility of the reports, not their content"
+     ],
+     "answer": 0,
+     "why": "Inferência: o trabalho é impecável; o que falta é mudar a postura — falar em resultados, não em plataformas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"For years the team ran like a <strong>service counter</strong>, closing whatever came in.\" A service counter here means…",
+     "options": [
+      "a customer-facing sales desk",
+      "a reactive team that only fulfils incoming requests",
+      "a team responsible for the budget",
+      "a team that shapes strategy proactively"
+     ],
+     "answer": 1,
+     "why": "Service counter = balcão de atendimento: reage a chamados, não antecipa nada."
+    },
+    {
+     "q": "Choose the correct word: \"Becoming a partner is less about resources and more about ___ — how the team shows up in the room.\"",
+     "options": [
+      "tickets",
+      "uptime",
+      "headcount",
+      "posture"
+     ],
+     "answer": 3,
+     "why": "Posture = postura: como a equipe se apresenta e se posiciona."
+    },
+    {
+     "q": "\"A good CIO learns to <strong>invite herself in</strong> before the brief is even written.\" To invite oneself in means to…",
+     "options": [
+      "delegate the meeting to a deputy",
+      "join the conversation proactively, uninvited",
+      "ask HR for permission to attend",
+      "wait politely for a formal request"
+     ],
+     "answer": 1,
+     "why": "To invite oneself in = convidar-se a participar, entrar na conversa por conta própria."
+    },
+    {
+     "q": "Choose the correct term: \"They kept solving the stated request instead of the ___ the business actually needed.\"",
+     "options": [
+      "service counter",
+      "ticket queue",
+      "real outcome",
+      "strategy table"
+     ],
+     "answer": 2,
+     "why": "Real outcome = resultado real: o que o negócio de fato quer alcançar, além do pedido literal."
+    },
+    {
+     "q": "\"Engineers who <strong>stay in their lane</strong> rarely get pulled into the big decisions.\" To stay in one's lane means to…",
+     "options": [
+      "take on extra responsibilities",
+      "keep strictly to your own defined scope",
+      "compete with other departments",
+      "escalate every issue upward"
+     ],
+     "answer": 1,
+     "why": "To stay in one's lane = não sair da sua faixa, ficar restrito ao próprio escopo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em conversas sobre estratégia e TI. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The steering committee still has to <strong>sign off on</strong> the new IT roadmap.\" To sign off on means to…",
+     "options": [
+      "postpone indefinitely",
+      "leak to the press",
+      "comment informally",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new platform desk by desk.\" To roll out means to…",
+     "options": [
+      "implement progressively",
+      "keep it secret",
+      "explain it to the board",
+      "cancel in stages"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva, por etapas."
+    },
+    {
+     "q": "\"When the CIO proposed the simpler path, two directors <strong>pushed back on</strong> it.\" They…",
+     "options": [
+      "approved it at once",
+      "resisted or challenged it",
+      "rewrote it entirely",
+      "ignored it completely"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"Sitting at the strategy table only counts if you <strong>follow through</strong> afterwards.\" To follow through means to…",
+     "options": [
+      "carry the commitment to completion",
+      "revisit it next quarter",
+      "delegate it to another team",
+      "document it for the archive"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Another polished status report won't <strong>move the needle</strong> on how the board sees IT.\" This means it will…",
+     "options": [
+      "provoke strong resistance",
+      "cost more than expected",
+      "take too long to prepare",
+      "not make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

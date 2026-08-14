@@ -10,41 +10,41 @@
     {
      "q": "According to the text, how did boards historically treat supply chain resilience?",
      "options": [
-      "They delegated it entirely to logistics teams",
-      "They invested heavily in it every year",
       "They refused to discuss it at all",
-      "They listened politely and then largely ignored it"
+      "They listened politely and then largely ignored it",
+      "They invested heavily in it every year",
+      "They delegated it entirely to logistics teams"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"an abstract concept that boards politely listened to and then largely ignored.\""
     },
     {
      "q": "What is the \"deceptively simple question\" at the heart of resilience?",
      "options": [
-      "How much inventory can we afford to hold?",
-      "If this link in the chain disappeared tomorrow, what would we do?",
       "Who is our cheapest supplier?",
-      "Which region should we concentrate suppliers in?"
+      "How much inventory can we afford to hold?",
+      "Which region should we concentrate suppliers in?",
+      "If this link in the chain disappeared tomorrow, what would we do?"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"if this link in the chain disappeared tomorrow, what would we do?\""
     },
     {
      "q": "The phrase \"Fragile ones have only hope\" most strongly suggests that…",
      "options": [
-      "fragile chains lack any concrete plan for a disruption",
-      "resilience cannot be planned in advance",
       "fragile chains are cheaper to run and therefore preferable",
-      "hope is a reasonable substitute for contingencies"
+      "hope is a reasonable substitute for contingencies",
+      "fragile chains lack any concrete plan for a disruption",
+      "resilience cannot be planned in advance"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: sem alternativas ou contingências, resta apenas torcer — ou seja, nenhum plano real."
     },
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
-      "Resilience should be paid for before a crisis makes it obvious",
       "Optionality is a cost incurred today for an uncertain future benefit",
+      "Resilience should be paid for before a crisis makes it obvious",
       "Because resilience is expensive, it is best deferred until a disruption actually occurs",
       "Resilience can be managed like a portfolio of insurance contracts"
      ],
@@ -55,8 +55,8 @@
      "q": "Comparing the author's treatment of resilience to \"a portfolio of insurance contracts\" implies that resilience is…",
      "options": [
       "a cost deliberately accepted to protect against uncertain risk",
-      "a guaranteed source of profit",
       "a one-off purchase that never needs revisiting",
+      "a guaranteed source of profit",
       "something only large companies can afford"
      ],
      "answer": 0,
@@ -77,34 +77,34 @@
     {
      "q": "What does Oliver identify as the real cause of the six-week disruption?",
      "options": [
+      "A pricing error in the contract",
       "Bad luck",
       "A supplier bankruptcy",
-      "Concentration — ninety per cent of the component came through a single port",
-      "A pricing error in the contract"
+      "Concentration — ninety per cent of the component came through a single port"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"That disruption on the Asian route was not bad luck. It was concentration.\""
     },
     {
      "q": "According to Oliver, why does strategic inventory have a cost?",
      "options": [
-      "It is taxed at a higher rate",
       "It ties up working capital finance would rather deploy elsewhere",
-      "It requires a second warehouse",
-      "It expires quickly and must be replaced"
+      "It expires quickly and must be replaced",
+      "It is taxed at a higher rate",
+      "It requires a second warehouse"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Strategic inventory ties up working capital that finance would rather deploy elsewhere.\""
     },
     {
      "q": "Why does Oliver compare resilience measures to buying insurance?",
      "options": [
+      "Because they are legally required",
       "Because they always pay for themselves within a year",
-      "Because you buy protection not for the expected case but because the downside is unacceptable",
       "Because insurers manage supply chains directly",
-      "Because they are legally required"
+      "Because you buy protection not for the expected case but because the downside is unacceptable"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"You don't buy insurance because you expect the fire; you buy it because the downside is unacceptable.\""
     },
     {
@@ -121,12 +121,12 @@
     {
      "q": "How would you best describe Oliver's approach to the board?",
      "options": [
-      "He blames the finance team for the disruption",
+      "He downplays the cost to win approval",
       "He recommends doing nothing until the next event",
-      "He is candid about the cost while urging deliberate action",
-      "He downplays the cost to win approval"
+      "He blames the finance team for the disruption",
+      "He is candid about the cost while urging deliberate action"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: ele é honesto sobre o preço (\"resilience is free. It isn't\") mas propõe um portfólio pequeno e deliberado — franqueza somada a uma recomendação concreta."
     }
    ]
@@ -140,44 +140,44 @@
      "q": "\"We keep three months of components as <strong>strategic inventory</strong>.\" Strategic inventory is stock held…",
      "options": [
       "only to satisfy an audit requirement",
-      "because it cannot be sold",
+      "deliberately as a buffer against disruption",
       "because it was ordered by mistake",
-      "deliberately as a buffer against disruption"
+      "because it cannot be sold"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Estoque estratégico = reserva mantida de propósito para proteger contra rupturas de fornecimento."
     },
     {
      "q": "Choose the correct word: \"Sourcing everything from one region gives us a dangerous ___ of suppliers.\"",
      "options": [
-      "contingency",
-      "resilience",
       "concentration",
-      "optionality"
+      "optionality",
+      "resilience",
+      "contingency"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Concentration = concentração; depender de uma única região concentra o risco."
     },
     {
      "q": "\"Maintaining a qualified second supplier gives us <strong>optionality</strong>.\" Optionality here means…",
      "options": [
       "a legal obligation to buy",
-      "a discount on bulk orders",
       "the freedom to choose an alternative if needed",
+      "a discount on bulk orders",
       "a fixed long-term contract"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Opcionalidade = ter alternativas disponíveis para acionar caso preciso."
     },
     {
      "q": "Choose the correct word: \"Holding safety stock ___ capital that could otherwise fund growth.\"",
      "options": [
-      "hands over",
       "ties up",
-      "writes off",
-      "signs off"
+      "hands over",
+      "signs off",
+      "writes off"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To tie up capital = imobilizar capital: o dinheiro fica preso no estoque."
     },
     {
@@ -185,8 +185,8 @@
      "options": [
       "expensive but reliable",
       "easily broken and lacking backup",
-      "highly automated",
-      "spread across many regions"
+      "spread across many regions",
+      "highly automated"
      ],
      "answer": 1,
      "why": "Fragile = frágil; quebra com facilidade porque não tem alternativas."
@@ -201,12 +201,12 @@
     {
      "q": "\"The board still has to <strong>sign off on</strong> the resilience budget.\" To sign off on means to…",
      "options": [
-      "formally approve",
-      "announce to the press",
+      "postpone indefinitely",
       "quietly criticise",
-      "postpone indefinitely"
+      "announce to the press",
+      "formally approve"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
@@ -214,19 +214,19 @@
      "options": [
       "keep it confidential",
       "outsource it entirely",
-      "cancel it in phases",
-      "implement it progressively"
+      "implement it progressively",
+      "cancel it in phases"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Roll out = implementar de forma progressiva, por etapas."
     },
     {
      "q": "\"Finance <strong>pushed back on</strong> the cost of strategic inventory.\" They…",
      "options": [
       "resisted or challenged it",
-      "approved it without question",
+      "doubled the budget",
       "forgot to review it",
-      "doubled the budget"
+      "approved it without question"
      ],
      "answer": 0,
      "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
@@ -234,23 +234,23 @@
     {
      "q": "\"We identified a second supplier but never <strong>followed through</strong> on qualifying them.\" They…",
      "options": [
-      "renegotiated the price",
+      "cancelled the supplier contract",
       "carried the plan to completion",
-      "failed to see it through to the end",
-      "cancelled the supplier contract"
+      "renegotiated the price",
+      "failed to see it through to the end"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Follow through = levar até o fim o que foi iniciado; aqui, não foi levado adiante."
     },
     {
      "q": "\"A modest safety buffer won't <strong>move the needle</strong> on overall cost.\" This means it will…",
      "options": [
-      "not make a noticeable difference",
+      "trigger an audit",
       "delay the whole project",
-      "eliminate all risk",
-      "trigger an audit"
+      "not make a noticeable difference",
+      "eliminate all risk"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Move the needle = mexer o ponteiro, causar diferença perceptível."
     }
    ]

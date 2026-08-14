@@ -1,0 +1,259 @@
+{
+ "num": 507,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Managing networks in practice is mostly about noticing problems early. A Wi-Fi network that has been getting slower for weeks is not a surprise — it is a signal the team ignored. A VPN that fails only for some users has a cause, and the cause can be found. A video call that freezes every day at 3 p.m. is pointing at something specific, if anyone is paying attention.<br><br>Good intermediate work combines two habits. First, monitor the basics: latency, throughput, outages. Second, listen to users. When three different people mention \"Zoom was weird today\", that is already data, not noise.<br><br>The goal is not to have a perfect network — no one has that. It is to have a network whose problems are noticed early, explained honestly, and fixed before they become the kind of emergency everyone remembers.",
+   "items": [
+    {
+     "q": "According to the text, managing networks in practice is mostly about…",
+     "options": [
+      "reducing the number of users",
+      "having a perfect network",
+      "buying the newest equipment",
+      "noticing problems early"
+     ],
+     "answer": 3,
+     "why": "\"Managing networks in practice is mostly about noticing problems early.\""
+    },
+    {
+     "q": "What two habits does good intermediate work combine?",
+     "options": [
+      "Blocking traffic and resetting the routers",
+      "Replacing hardware and hiring engineers",
+      "Writing reports and holding meetings",
+      "Monitoring the basics and listening to users"
+     ],
+     "answer": 3,
+     "why": "\"First, monitor the basics… Second, listen to users.\""
+    },
+    {
+     "q": "When three people say \"Zoom was weird today\", the author treats this as…",
+     "options": [
+      "data worth acting on",
+      "a coincidence",
+      "noise to be ignored",
+      "a hardware failure"
+     ],
+     "answer": 0,
+     "why": "\"that is already data, not noise.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "User complaints can reveal real problems.",
+      "The realistic goal is a network with no problems at all.",
+      "Recurring failures usually have a findable cause.",
+      "A slow network for weeks is a warning sign."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz \"no one has\" uma rede perfeita — a meta é notar e explicar cedo, não eliminar todo problema."
+    },
+    {
+     "q": "The phrase \"if anyone is paying attention\" suggests that…",
+     "options": [
+      "the problem is impossible to diagnose",
+      "video calls are not important",
+      "such signals are often missed by teams",
+      "attention makes networks slower"
+     ],
+     "answer": 2,
+     "why": "Inferência: o autor insinua que a pista existe, mas frequentemente ninguém a percebe."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily explicando o que descobriu sobre as quedas das chamadas de vídeo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, so I think I've found what's been causing the 3 p.m. video call problems, and honestly it's a bit embarrassing how simple it is.<br><br>For about two weeks, people have been telling me the same thing — calls freezing, audio dropping, exactly at three o'clock. I've been watching the monitoring dashboard all afternoon, and there it is: throughput hits the ceiling at 3 p.m. sharp, latency spikes, and everything on video suffers for roughly twenty minutes.<br><br>The cause isn't the internet provider and it isn't Zoom. It's our own automated backup. Someone scheduled it for three in the afternoon, and it's been saturating the office network every single day, right in the middle of our busiest call window.<br><br>The fix is easy — I'll move the backup to two in the morning, when nobody's on a call. But here's my point: this has been sitting in the data for two weeks. If we'd been reading the dashboard properly, we'd have caught it on day one, before anyone had to escalate it. I'd rather explain a small thing today than a full outage next week.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What was actually causing the 3 p.m. video call problems?",
+     "options": [
+      "A broken office router",
+      "An automated backup running at 3 p.m.",
+      "A problem inside Zoom",
+      "The internet provider"
+     ],
+     "answer": 1,
+     "why": "\"It's our own automated backup… saturating the office network.\""
+    },
+    {
+     "q": "What did the monitoring dashboard show Emily?",
+     "options": [
+      "The VPN failing for some users",
+      "No unusual activity at all",
+      "Throughput hitting the ceiling and latency spiking at 3 p.m.",
+      "A complete network outage all day"
+     ],
+     "answer": 2,
+     "why": "\"throughput hits the ceiling at 3 p.m. sharp, latency spikes.\""
+    },
+    {
+     "q": "What is Emily's proposed fix?",
+     "options": [
+      "Ask users to avoid video calls",
+      "Move the backup to 2 a.m.",
+      "Cancel the daily backup entirely",
+      "Replace the internet provider"
+     ],
+     "answer": 1,
+     "why": "\"I'll move the backup to two in the morning, when nobody's on a call.\""
+    },
+    {
+     "q": "What does Emily mean when she says the problem \"has been sitting in the data for two weeks\"?",
+     "options": [
+      "The dashboard only started working recently",
+      "The backup stored two weeks of files",
+      "The data was deleted by mistake",
+      "The evidence was visible all along but nobody read it"
+     ],
+     "answer": 3,
+     "why": "Inferência: a pista estava no painel o tempo todo; o problema foi ninguém olhar."
+    },
+    {
+     "q": "Why does Emily prefer to \"explain a small thing today than a full outage next week\"?",
+     "options": [
+      "She dislikes writing long reports",
+      "She has no time next week",
+      "Catching issues early prevents them becoming emergencies",
+      "She wants to avoid blame from the CTO"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela valoriza notar e corrigir cedo, evitando a emergência que todos lembram."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"High <strong>latency</strong> made the video call lag by almost a second.\" Latency is…",
+     "options": [
+      "the strength of the Wi-Fi signal",
+      "the total amount of data transferred",
+      "the number of connected users",
+      "the delay before data reaches its destination"
+     ],
+     "answer": 3,
+     "why": "Latency = latência: o atraso entre enviar e receber os dados."
+    },
+    {
+     "q": "Choose the correct word: \"The backup used so much bandwidth that <strong>throughput</strong> for everyone else dropped to almost zero.\" Throughput is…",
+     "options": [
+      "the delay on a connection",
+      "the cost of the internet plan",
+      "the amount of data that actually gets through per second",
+      "the age of the equipment"
+     ],
+     "answer": 2,
+     "why": "Throughput = vazão: quanto de dados efetivamente passa pela rede."
+    },
+    {
+     "q": "Choose the correct term: \"A brief ___ on Sunday left the whole office without internet for ten minutes.\"",
+     "options": [
+      "signal",
+      "throughput",
+      "latency",
+      "outage"
+     ],
+     "answer": 3,
+     "why": "Outage = queda: interrupção do serviço de rede."
+    },
+    {
+     "q": "\"We <strong>monitor</strong> the network around the clock.\" To monitor means to…",
+     "options": [
+      "watch and measure it continuously",
+      "repair it whenever it breaks",
+      "shut it down for safety",
+      "expand its capacity"
+     ],
+     "answer": 0,
+     "why": "To monitor = monitorar: acompanhar e medir de forma contínua."
+    },
+    {
+     "q": "\"A slow connection for weeks is a <strong>signal</strong>, not bad luck.\" Here signal means…",
+     "options": [
+      "a type of cable",
+      "an indication that something is wrong",
+      "a random accident",
+      "a permanent setting"
+     ],
+     "answer": 1,
+     "why": "Signal = sinal: uma indicação de que há algo por trás a ser investigado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns quando uma equipe de TI lida com problemas de rede. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Before anyone had to <strong>escalate</strong> the issue, Emily had already fixed it.\" To escalate an issue means to…",
+     "options": [
+      "close it without a solution",
+      "make it worse on purpose",
+      "raise it to a higher level for urgent attention",
+      "explain it to the users"
+     ],
+     "answer": 2,
+     "why": "Escalate = escalar: levar o problema a um nível superior por urgência."
+    },
+    {
+     "q": "\"The backup was <strong>eating up</strong> all the bandwidth at 3 p.m.\" To eat up means to…",
+     "options": [
+      "release",
+      "measure",
+      "consume a large amount of",
+      "protect"
+     ],
+     "answer": 2,
+     "why": "Eat up = consumir em grande quantidade — aqui, a largura de banda."
+    },
+    {
+     "q": "\"Let's <strong>get to the bottom of</strong> these daily freezes.\" This means to…",
+     "options": [
+      "restart every device",
+      "ignore them for now",
+      "report them to the provider",
+      "find the real cause"
+     ],
+     "answer": 3,
+     "why": "Get to the bottom of = chegar à causa raiz de algo."
+    },
+    {
+     "q": "\"We need to <strong>roll out</strong> the VPN upgrade to all offices next week.\" To roll out means to…",
+     "options": [
+      "explain to the board",
+      "test in secret",
+      "implement in stages",
+      "cancel gradually"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva, escritório por escritório."
+    },
+    {
+     "q": "\"Moving the backup to 2 a.m. won't fully <strong>rule out</strong> other slowdowns.\" To rule out means to…",
+     "options": [
+      "schedule",
+      "guarantee",
+      "cause",
+      "eliminate as a possibility"
+     ],
+     "answer": 3,
+     "why": "Rule out = descartar, eliminar algo como possível causa."
+    }
+   ]
+  }
+ ]
+}

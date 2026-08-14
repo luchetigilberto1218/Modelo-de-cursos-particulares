@@ -1,0 +1,259 @@
+{
+ "num": 18,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Compensation is the money you receive for your work. It has two main parts: the salary and the benefits.<br><br>The salary is the money. The benefits are extra things. Benefits can be health insurance, meal vouchers, a pension plan and more.<br><br>Every month, HR sends a pay slip. The pay slip shows how much you earn and the taxes. It is important to read and understand your pay slip.",
+   "items": [
+    {
+     "q": "What are the two main parts of compensation?",
+     "options": [
+      "The salary and the benefits",
+      "The taxes and the pay slip",
+      "The health insurance and the pension",
+      "The salary and the meal voucher"
+     ],
+     "answer": 0,
+     "why": "\"It has two main parts: the salary and the benefits.\""
+    },
+    {
+     "q": "What does the pay slip show?",
+     "options": [
+      "The company address",
+      "How much you earn and the taxes",
+      "Only your name and job",
+      "The number of benefits"
+     ],
+     "answer": 1,
+     "why": "\"The pay slip shows how much you earn and the taxes.\""
+    },
+    {
+     "q": "The text says a meal voucher is…",
+     "options": [
+      "a type of benefit",
+      "a type of tax",
+      "a type of salary",
+      "a type of pay slip"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto lista o vale-refeição entre os benefícios (\"Benefits can be… meal vouchers…\")."
+    },
+    {
+     "q": "The text suggests that reading your pay slip is…",
+     "options": [
+      "difficult and useless",
+      "important",
+      "not necessary",
+      "only for HR"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"It is important to read and understand your pay slip.\""
+    },
+    {
+     "q": "Who sends the pay slip every month?",
+     "options": [
+      "The manager",
+      "The bank",
+      "HR",
+      "The government"
+     ],
+     "answer": 2,
+     "why": "\"Every month, HR sends a pay slip.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte ajudando Lucas com o primeiro holerite dele. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi Lucas! This is your first pay slip, so let me help you. It looks difficult, but it is easy.<br><br>Look here at the top. This is your gross salary. Gross means before taxes. It is the full money.<br><br>Now look down here. This is the tax. The tax is the money the government takes. So your net salary is smaller than your gross salary. Net means after taxes. This is the money you receive in your bank account.<br><br>And here you can see your benefits. Czarnikow gives you health insurance, a meal voucher and a pension plan. These are extra. They are not in your salary, but they are part of your compensation.<br><br>Your salary is paid on the last day of every month. So you receive your money at the end of the month.<br><br>Do you have questions? You can always ask me or HR. It is good to read and understand your pay slip.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Charlotte helping Lucas with?",
+     "options": [
+      "His bank account",
+      "His job interview",
+      "His new computer",
+      "His first pay slip"
+     ],
+     "answer": 3,
+     "why": "\"This is your first pay slip, so let me help you.\""
+    },
+    {
+     "q": "What does \"gross\" mean?",
+     "options": [
+      "Without benefits",
+      "After taxes",
+      "Before taxes",
+      "With benefits"
+     ],
+     "answer": 2,
+     "why": "\"Gross means before taxes.\""
+    },
+    {
+     "q": "When is the salary paid?",
+     "options": [
+      "On the last day of every month",
+      "In the middle of the month",
+      "Every week",
+      "On the first day of the month"
+     ],
+     "answer": 0,
+     "why": "\"Your salary is paid on the last day of every month.\""
+    },
+    {
+     "q": "Why is the net salary smaller than the gross salary?",
+     "options": [
+      "Because the company keeps some money",
+      "Because of the benefits",
+      "Because the government takes the tax",
+      "Because the bank charges a fee"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"The tax is the money the government takes. So your net salary is smaller.\""
+    },
+    {
+     "q": "From what Charlotte says, the benefits are…",
+     "options": [
+      "extra, and part of the compensation",
+      "part of the gross salary",
+      "the same as the tax",
+      "only for HR"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"These are extra… but they are part of your compensation.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"My <strong>salary</strong> is paid every month.\" A salary is…",
+     "options": [
+      "a plan for the future",
+      "the tax on the pay slip",
+      "a benefit like health insurance",
+      "the money you receive for your work"
+     ],
+     "answer": 3,
+     "why": "Salary = salário, o dinheiro que você recebe pelo trabalho."
+    },
+    {
+     "q": "Choose the correct word: \"Health insurance and meal vouchers are ___.\"",
+     "options": [
+      "benefits",
+      "banks",
+      "salaries",
+      "taxes"
+     ],
+     "answer": 0,
+     "why": "Benefits = benefícios; plano de saúde e vale-refeição são exemplos."
+    },
+    {
+     "q": "\"The <strong>tax</strong> is on my pay slip.\" A tax is…",
+     "options": [
+      "money the government takes from your salary",
+      "money the company gives you",
+      "an extra benefit",
+      "your net salary"
+     ],
+     "answer": 0,
+     "why": "Tax = imposto, o dinheiro que o governo tira do salário."
+    },
+    {
+     "q": "Choose the correct word: \"How much do I ___ after taxes?\"",
+     "options": [
+      "read",
+      "send",
+      "earn",
+      "pay"
+     ],
+     "answer": 2,
+     "why": "To earn = ganhar; \"how much do I earn\" = quanto eu ganho."
+    },
+    {
+     "q": "\"My <strong>gross</strong> salary is bigger than my net salary.\" Gross means…",
+     "options": [
+      "before taxes",
+      "after taxes",
+      "in the bank",
+      "with no benefits"
+     ],
+     "answer": 0,
+     "why": "Gross = bruto (antes dos impostos); net = líquido (depois)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem quando falamos de salário e benefícios no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Charlotte, can you <strong>help me out</strong> with my pay slip?\" To help someone out means to…",
+     "options": [
+      "give them money",
+      "check their bank",
+      "help them with a problem",
+      "send them home"
+     ],
+     "answer": 2,
+     "why": "Help out = dar uma ajuda, ajudar com algo."
+    },
+    {
+     "q": "\"HR will <strong>sign off on</strong> your benefits this week.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "print",
+      "cancel",
+      "explain"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"The company will <strong>set up</strong> your pension plan.\" To set up means to…",
+     "options": [
+      "sell it",
+      "start and arrange it",
+      "reduce it",
+      "stop it"
+     ],
+     "answer": 1,
+     "why": "Set up = montar, criar, deixar pronto para funcionar."
+    },
+    {
+     "q": "\"My salary is paid at the end of the month, so I have to <strong>wait for</strong> it.\" To wait for means to…",
+     "options": [
+      "stay until it comes",
+      "spend it fast",
+      "ask for more",
+      "give it back"
+     ],
+     "answer": 0,
+     "why": "Wait for = esperar por algo."
+    },
+    {
+     "q": "\"If a number is wrong, HR will <strong>sort it out</strong>.\" To sort something out means to…",
+     "options": [
+      "send the problem to you",
+      "make the problem bigger",
+      "solve the problem",
+      "ignore the problem"
+     ],
+     "answer": 2,
+     "why": "Sort out = resolver, arrumar um problema."
+    }
+   ]
+  }
+ ]
+}

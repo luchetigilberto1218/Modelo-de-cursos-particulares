@@ -11,9 +11,9 @@
      "q": "How many adjectives does the text teach today?",
      "options": [
       "Six",
-      "Four",
+      "Three",
       "Five",
-      "Three"
+      "Four"
      ],
      "answer": 2,
      "why": "\"Today we learn five adjectives.\""
@@ -21,45 +21,45 @@
     {
      "q": "According to the text, what do helpful colleagues do?",
      "options": [
-      "They ask no questions",
       "They arrive late",
-      "They save time",
-      "They work alone"
+      "They ask no questions",
+      "They work alone",
+      "They save time"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Helpful colleagues save time.\""
     },
     {
      "q": "What kind of office is a happy office?",
      "options": [
-      "A friendly office",
-      "A new office",
       "A quiet office",
-      "A big office"
+      "A friendly office",
+      "A big office",
+      "A new office"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"A friendly office is a happy office.\""
     },
     {
      "q": "The text suggests that the author thinks learning these words is…",
      "options": [
-      "very hard",
       "not important",
       "only for managers",
-      "simple and possible"
+      "simple and possible",
+      "very hard"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: \"It is simple, and you can do it\" e \"English comes in CAN's\" mostram um tom positivo e encorajador."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "Good colleagues have good qualities",
-      "You cannot learn these words",
       "Reliable teams deliver great work",
-      "A kind colleague makes the day better"
+      "Good colleagues have good qualities",
+      "A kind colleague makes the day better",
+      "You cannot learn these words"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto diz \"you can do it\" — o autor discorda da ideia de que você não consegue aprender."
     }
    ]
@@ -77,12 +77,12 @@
     {
      "q": "Where does Sophie work?",
      "options": [
-      "In Finance",
       "In IT",
       "In Sales",
-      "In HR"
+      "In HR",
+      "In Finance"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"I am Sophie, and I work in HR.\""
     },
     {
@@ -90,8 +90,8 @@
      "options": [
       "Smart",
       "Reliable",
-      "Friendly",
-      "Kind"
+      "Kind",
+      "Friendly"
      ],
      "answer": 0,
      "why": "\"Tom is very smart.\""
@@ -110,8 +110,8 @@
     {
      "q": "Sophie says \"I can always count on him\" about Lucas. This suggests that Lucas…",
      "options": [
-      "works in another team",
       "never helps",
+      "works in another team",
       "does what he promises",
       "is often late"
      ],
@@ -121,12 +121,12 @@
     {
      "q": "How does Sophie feel about her team?",
      "options": [
+      "She is bored",
       "She is happy",
       "She is worried",
-      "She is angry",
-      "She is bored"
+      "She is angry"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"I am happy to be here. It is a great team!\""
     }
    ]
@@ -140,9 +140,9 @@
      "q": "\"Sophie is very <strong>kind</strong>. She helps new people every day.\" Kind means…",
      "options": [
       "very busy",
-      "in a hurry",
+      "very tired",
       "gentle and nice",
-      "very tired"
+      "in a hurry"
      ],
      "answer": 2,
      "why": "Kind = gentil, uma pessoa boa com os outros."
@@ -150,45 +150,45 @@
     {
      "q": "\"Tom is <strong>smart</strong>. He always finds a good answer.\" Smart means…",
      "options": [
+      "friendly",
       "quiet",
       "intelligent",
-      "new",
-      "friendly"
+      "new"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Smart = inteligente."
     },
     {
      "q": "Choose the correct word: \"Ana is very ___. When I have a problem, she helps me.\"",
      "options": [
-      "late",
-      "tired",
       "quiet",
-      "helpful"
+      "tired",
+      "helpful",
+      "late"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Helpful = prestativo(a), quem ajuda."
     },
     {
      "q": "Choose the correct word: \"The team is ___. We say good morning and we smile.\"",
      "options": [
-      "slow",
-      "friendly",
+      "closed",
       "difficult",
-      "closed"
+      "friendly",
+      "slow"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Friendly = amigável, uma equipe simpática."
     },
     {
      "q": "\"My manager is <strong>reliable</strong>. When he says yes, he does it.\" Reliable means…",
      "options": [
-      "someone very fast",
       "someone very new",
+      "someone you can trust",
       "someone very funny",
-      "someone you can trust"
+      "someone very fast"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Reliable = confiável, quem cumpre o que promete."
     }
    ]
@@ -201,32 +201,32 @@
     {
      "q": "\"Ana always <strong>helps out</strong> when we are busy.\" To help out means to…",
      "options": [
-      "give help",
+      "stay quiet",
       "say no",
       "go home",
-      "stay quiet"
+      "give help"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Help out = dar uma ajuda, ajudar os colegas."
     },
     {
      "q": "\"I can <strong>count on</strong> Lucas.\" To count on someone means to…",
      "options": [
-      "pay them",
       "trust them",
+      "pay them",
       "call them",
       "teach them"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Count on = contar com alguém, confiar."
     },
     {
      "q": "\"Tom and I <strong>get along</strong> very well.\" To get along means to…",
      "options": [
-      "start a fight",
-      "have a good relationship",
       "work very fast",
-      "leave early"
+      "have a good relationship",
+      "leave early",
+      "start a fight"
      ],
      "answer": 1,
      "why": "Get along = se dar bem com alguém."
@@ -234,23 +234,23 @@
     {
      "q": "\"When I am away, Ana <strong>backs me up</strong>.\" To back someone up means to…",
      "options": [
+      "correct them",
       "support them",
       "forget them",
-      "call them",
-      "correct them"
+      "call them"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Back someone up = dar apoio, cobrir/apoiar o colega."
     },
     {
      "q": "\"Let's <strong>team up</strong> and finish the report together.\" To team up means to…",
      "options": [
-      "stop working",
-      "take a break",
+      "work alone",
       "work together",
-      "work alone"
+      "take a break",
+      "stop working"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Team up = juntar-se para trabalhar em equipe."
     }
    ]

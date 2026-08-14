@@ -1,0 +1,259 @@
+{
+ "num": 102,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Senior readers share a common habit: they read everything quickly and trust almost nothing. Their experience has taught them that most corporate prose is either too optimistic, too vague, or both. A well-written executive memo earns attention by violating those defaults — offering precision where others offer generality, and intellectual honesty where others offer reassurance.<br><br>The craft is mostly subtractive. Remove phrases that add no information. Remove qualifiers that exist only to soften uncomfortable truths. Remove headings that merely rename the sections below. What remains should be dense enough that every sentence rewards the thirty seconds of attention it receives from a senior reader between other meetings.<br><br>There is also a discipline of clarity about uncertainty. Great executive writers do not pretend to know more than they do — but they do not hide what they know behind hedged language either. They distinguish between what the data shows, what we believe, and what we are guessing, and label each clearly. That alone is enough to earn the ear of most senior audiences for a career.",
+   "items": [
+    {
+     "q": "According to the text, why do senior readers trust almost nothing they read?",
+     "options": [
+      "Because experience has shown them most corporate prose is optimistic, vague, or both",
+      "Because they prefer to rely on data alone",
+      "Because they lack the time to verify claims",
+      "Because they distrust the writers personally"
+     ],
+     "answer": 0,
+     "why": "\"Their experience has taught them that most corporate prose is either too optimistic, too vague, or both.\""
+    },
+    {
+     "q": "The text describes the craft of executive writing as \"mostly subtractive.\" This means the writer should mainly…",
+     "options": [
+      "add supporting evidence",
+      "shorten every sentence uniformly",
+      "reorganise the headings",
+      "cut what adds no information"
+     ],
+     "answer": 3,
+     "why": "\"Remove phrases that add no information… Remove qualifiers… Remove headings…\" — o trabalho é subtrair."
+    },
+    {
+     "q": "What does the author say distinguishes great executive writers when dealing with uncertainty?",
+     "options": [
+      "They present every claim as a certainty",
+      "They avoid mentioning uncertainty altogether",
+      "They separate what the data shows, what they believe, and what they are guessing",
+      "They rely on hedged language to stay safe"
+     ],
+     "answer": 2,
+     "why": "\"They distinguish between what the data shows, what we believe, and what we are guessing, and label each clearly.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Reassurance is a weaker offer than precision.",
+      "A cautious qualifier is worth keeping when it hides an awkward number.",
+      "Honesty about uncertainty builds long-term credibility.",
+      "Density is what earns a senior reader's attention."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto manda remover justamente os qualificadores que suavizam verdades desconfortáveis."
+    },
+    {
+     "q": "The line \"earn the ear of most senior audiences for a career\" suggests that intellectual honesty…",
+     "options": [
+      "is rarely noticed by executives",
+      "builds lasting credibility with senior readers",
+      "produces only short-term gains",
+      "matters less than polished style"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"for a career\" indica um efeito duradouro — a honestidade constrói credibilidade de longo prazo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte enquanto ela edita o documento de estratégia. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, five pages down to two. Let me talk through what I'm cutting, because the logic matters more than the red pen.<br><br>Look at this sentence: \"We believe the pipeline may potentially soften somewhat in the second half.\" Four hedges in one line — believe, may, potentially, somewhat. What it's actually hiding is a number: bookings are down eleven per cent and the trend is accelerating. So I'll write that instead. \"Bookings fell eleven per cent; the decline is accelerating.\" If the board wants comfort, they can find it somewhere else.<br><br>Then there's this heading, \"Strategic Considerations,\" sitting on top of a paragraph about strategic considerations. It renames the section and tells the reader nothing. Gone.<br><br>The harder discipline is the uncertainty. Half of this paper is guesswork dressed up as analysis. So I'm labelling every claim. Where the data shows something, I say the data shows it. Where we're guessing, I write \"our best guess is.\" A senior reader will forgive an honest guess far sooner than a confident one that turns out wrong.<br><br>By the time I'm done, every sentence has to earn its thirty seconds. If it doesn't reward the reader, it goes.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the main task Charlotte is working on?",
+     "options": [
+      "Translating the paper for the board",
+      "Expanding a two-page summary into a full report",
+      "Rewriting the paper for a junior audience",
+      "Cutting a five-page strategy paper down to two"
+     ],
+     "answer": 3,
+     "why": "\"Right, five pages down to two.\""
+    },
+    {
+     "q": "What does Charlotte say the four hedges in the pipeline sentence were hiding?",
+     "options": [
+      "A number — bookings down eleven per cent and accelerating",
+      "An uncertain deadline",
+      "A missing forecast",
+      "A disagreement between departments"
+     ],
+     "answer": 0,
+     "why": "\"What it's actually hiding is a number: bookings are down eleven per cent and the trend is accelerating.\""
+    },
+    {
+     "q": "Why does Charlotte delete the heading \"Strategic Considerations\"?",
+     "options": [
+      "The board asked her to remove it",
+      "It is too long for the page",
+      "It merely renames the paragraph and tells the reader nothing",
+      "It is placed in the wrong section"
+     ],
+     "answer": 2,
+     "why": "\"It renames the section and tells the reader nothing. Gone.\""
+    },
+    {
+     "q": "What can we infer from Charlotte's line \"a senior reader will forgive an honest guess far sooner than a confident one that turns out wrong\"?",
+     "options": [
+      "Labelling uncertainty honestly protects your credibility more than false confidence",
+      "Guessing should always be avoided in strategy papers",
+      "Confidence is what senior readers value most",
+      "Senior readers rarely check whether claims were right"
+     ],
+     "answer": 0,
+     "why": "Inferência: rotular o palpite como palpite preserva a credibilidade; a confiança falsa a destrói quando erra."
+    },
+    {
+     "q": "What does Charlotte mean when she says \"every sentence has to earn its thirty seconds\"?",
+     "options": [
+      "Each sentence should take thirty seconds to write",
+      "The paper should be readable in thirty seconds",
+      "Each sentence must reward the brief attention a senior reader gives it",
+      "Every section needs a thirty-second summary"
+     ],
+     "answer": 2,
+     "why": "Inferência: densidade — a frase precisa justificar os segundos de atenção do leitor sênior, ou é cortada."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The memo drops the <strong>hedging</strong> and states the loss outright.\" Hedging here means…",
+     "options": [
+      "the use of technical jargon",
+      "aggressive overstatement",
+      "hiding data entirely",
+      "cautious language that softens or qualifies a claim"
+     ],
+     "answer": 3,
+     "why": "Hedging = atenuação: linguagem cautelosa que suaviza ou qualifica uma afirmação."
+    },
+    {
+     "q": "Choose the correct word: \"Good executive writers show ___: they never claim to know more than they actually do.\"",
+     "options": [
+      "generality",
+      "optimism",
+      "epistemic modesty",
+      "reassurance"
+     ],
+     "answer": 2,
+     "why": "Epistemic modesty = modéstia epistêmica: não fingir saber mais do que se sabe."
+    },
+    {
+     "q": "\"Every <strong>qualifier</strong> that softened the number was cut.\" A qualifier is…",
+     "options": [
+      "a section heading",
+      "a senior approver",
+      "a supporting statistic",
+      "a word or phrase that limits or weakens a statement"
+     ],
+     "answer": 3,
+     "why": "Qualifier = qualificador: palavra que limita ou enfraquece uma afirmação (may, somewhat, potentially)."
+    },
+    {
+     "q": "Choose the correct word: \"The prose was so ___ that every sentence carried real information.\"",
+     "options": [
+      "optimistic",
+      "dense",
+      "vague",
+      "general"
+     ],
+     "answer": 1,
+     "why": "Dense = denso: carregado de informação, sem enchimento."
+    },
+    {
+     "q": "\"The report offered <strong>generality</strong> where the board needed specifics.\" Generality means…",
+     "options": [
+      "excessive detail",
+      "precise figures",
+      "vague, non-specific statements",
+      "honest admission of doubt"
+     ],
+     "answer": 2,
+     "why": "Generality = generalidade: afirmações vagas e não específicas, o oposto de precisão."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem ao editar e apresentar um documento executivo. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the final version.\" To sign off on means to…",
+     "options": [
+      "circulate widely",
+      "postpone indefinitely",
+      "formally approve",
+      "read informally"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Charlotte asked the analysts to <strong>back up</strong> every claim with a source.\" To back up means to…",
+     "options": [
+      "delete or remove",
+      "support with evidence",
+      "restate in simpler words",
+      "delay for review"
+     ],
+     "answer": 1,
+     "why": "Back up = respaldar, sustentar com evidência."
+    },
+    {
+     "q": "\"Two directors <strong>pushed back on</strong> the blunt phrasing.\" They…",
+     "options": [
+      "approved it at once",
+      "rewrote the whole paper",
+      "ignored it entirely",
+      "resisted or objected to it"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"Softening the numbers won't <strong>move the needle</strong> on the board's decision.\" This means it will…",
+     "options": [
+      "cost more than expected",
+      "provoke strong resistance",
+      "not make a noticeable difference",
+      "take too long to measure"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    },
+    {
+     "q": "\"Let's not <strong>gloss over</strong> the eleven per cent decline.\" To gloss over means to…",
+     "options": [
+      "measure precisely",
+      "explain in full detail",
+      "treat something briefly to hide its importance",
+      "highlight in bold"
+     ],
+     "answer": 2,
+     "why": "Gloss over = passar por cima, minimizar algo desconfortável — exatamente o que a lição manda evitar."
+    }
+   ]
+  }
+ ]
+}

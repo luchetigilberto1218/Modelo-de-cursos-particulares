@@ -10,43 +10,43 @@
     {
      "q": "How many key activities does logistics have?",
      "options": [
-      "Three",
       "Four",
+      "Three",
       "Two",
       "Five"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Logistics is built from four key activities.\""
     },
     {
      "q": "What does transporting do?",
      "options": [
-      "It moves goods between places",
-      "It sells products",
       "It keeps goods safe",
-      "It loads boxes"
+      "It moves goods between places",
+      "It loads boxes",
+      "It sells products"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Transporting moves goods between places.\""
     },
     {
      "q": "What is handling?",
      "options": [
-      "Sending emails to customers",
-      "Keeping goods safe for a long time",
       "The physical work of loading, unloading, and moving boxes",
-      "Choosing the right price"
+      "Choosing the right price",
+      "Sending emails to customers",
+      "Keeping goods safe for a long time"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Handling is the physical work of loading, unloading, and moving boxes.\""
     },
     {
      "q": "The text says \"the activities never stop.\" This suggests that…",
      "options": [
-      "logistics is easy",
-      "the work happens all the time",
       "the warehouse is closed at night",
-      "the team works only one day a week"
+      "the work happens all the time",
+      "the team works only one day a week",
+      "logistics is easy"
      ],
      "answer": 1,
      "why": "Inferência: se nunca param, o trabalho é contínuo, todos os dias."
@@ -54,8 +54,8 @@
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "Each activity has a clear purpose",
       "A logistics team is busy every day",
+      "Each activity has a clear purpose",
       "Doing all four activities well is hard work",
       "One activity alone is the whole job"
      ],
@@ -77,10 +77,10 @@
     {
      "q": "Where is Emily taking the intern?",
      "options": [
-      "To the office",
+      "To another city",
       "To a meeting",
       "To the warehouse",
-      "To another city"
+      "To the office"
      ],
      "answer": 2,
      "why": "\"Let me show you the warehouse.\""
@@ -99,12 +99,12 @@
     {
      "q": "What are the tall shelves used for?",
      "options": [
-      "Storing",
-      "Selling",
+      "Distributing",
       "Transporting",
-      "Distributing"
+      "Storing",
+      "Selling"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"This part is for storing… we keep the goods here.\""
     },
     {
@@ -112,8 +112,8 @@
      "options": [
       "the activities are always moving",
       "there is only one truck",
-      "the warehouse is closing",
-      "the work is slow and quiet"
+      "the work is slow and quiet",
+      "the warehouse is closing"
      ],
      "answer": 0,
      "why": "Inferência: os caminhões se sucedem, o trabalho nunca para."
@@ -121,12 +121,12 @@
     {
      "q": "How does Emily seem toward the new intern?",
      "options": [
-      "Bored and tired",
-      "Friendly and helpful",
+      "Angry and impatient",
       "Worried and unsure",
-      "Angry and impatient"
+      "Friendly and helpful",
+      "Bored and tired"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: ela dá boas-vindas, explica com calma e diz \"let's start!\"."
     }
    ]
@@ -139,34 +139,34 @@
     {
      "q": "\"We are <strong>storing</strong> the boxes until Friday.\" Storing means…",
      "options": [
-      "throwing goods away",
       "moving goods to another city",
+      "keeping goods safe until they are needed",
       "selling goods online",
-      "keeping goods safe until they are needed"
+      "throwing goods away"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Storing = armazenar: guardar em segurança até precisar."
     },
     {
      "q": "Choose the correct word: \"The workers ___ the boxes onto the truck before it leaves.\"",
      "options": [
-      "unload",
-      "sell",
+      "store",
       "load",
-      "store"
+      "unload",
+      "sell"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "To load = carregar, colocar as caixas no caminhão."
     },
     {
      "q": "Choose the correct word: \"When the truck arrives, we ___ all the boxes and check them.\"",
      "options": [
-      "load",
+      "unload",
       "transport",
-      "store",
-      "unload"
+      "load",
+      "store"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "To unload = descarregar, tirar as caixas do caminhão."
     },
     {
@@ -174,21 +174,21 @@
      "options": [
       "cleaning the warehouse",
       "paying the drivers",
-      "loading the shelves",
-      "getting the right product to the right customer"
+      "getting the right product to the right customer",
+      "loading the shelves"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Distributing = distribuir: levar o produto certo ao cliente certo."
     },
     {
      "q": "Choose the correct word: \"A good team delivers at the right ___, not too early and not too late.\"",
      "options": [
-      "time",
       "shelf",
       "truck",
-      "box"
+      "box",
+      "time"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Right time = momento certo: nem cedo, nem tarde demais."
     }
    ]
@@ -201,21 +201,21 @@
     {
      "q": "\"Please <strong>load up</strong> the truck before lunch.\" To load up means to…",
      "options": [
-      "drive it away",
-      "empty it",
+      "wash it",
       "fill it with boxes",
-      "wash it"
+      "empty it",
+      "drive it away"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Load up = encher, carregar completamente."
     },
     {
      "q": "\"The new system will <strong>roll out</strong> next month.\" To roll out means to…",
      "options": [
       "start using it step by step",
-      "hide it",
       "cancel it",
-      "sell it"
+      "sell it",
+      "hide it"
      ],
      "answer": 0,
      "why": "Roll out = implementar aos poucos."
@@ -224,19 +224,19 @@
      "q": "\"We ran out of space, so we had to <strong>set up</strong> a second shelf.\" To set up means to…",
      "options": [
       "take something away",
+      "clean something",
       "prepare or arrange something new",
-      "sell something",
-      "clean something"
+      "sell something"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Set up = montar, preparar algo novo."
     },
     {
      "q": "\"Can you <strong>check in</strong> the boxes when they arrive?\" To check in means to…",
      "options": [
-      "open all of them",
-      "register and record them",
       "throw them away",
+      "register and record them",
+      "open all of them",
       "send them back"
      ],
      "answer": 1,
@@ -245,12 +245,12 @@
     {
      "q": "\"We are almost out of stock; we need to <strong>keep up</strong> with the orders.\" To keep up means to…",
      "options": [
-      "stop working",
       "stay at the same speed as the work",
+      "stop working",
       "close the warehouse",
       "slow down"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Keep up = acompanhar o ritmo, não ficar para trás."
     }
    ]

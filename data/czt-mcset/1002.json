@@ -10,43 +10,43 @@
     {
      "q": "When does the week start?",
      "options": [
-      "On Friday",
       "On Monday",
-      "On Sunday",
-      "On Saturday"
+      "On Saturday",
+      "On Friday",
+      "On Sunday"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The week starts on Monday and ends on Sunday.\""
     },
     {
      "q": "Which two days are the weekend?",
      "options": [
-      "Wednesday and Thursday",
-      "Saturday and Sunday",
       "Friday and Monday",
-      "Monday and Tuesday"
+      "Monday and Tuesday",
+      "Wednesday and Thursday",
+      "Saturday and Sunday"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Saturday and Sunday are the weekend.\""
     },
     {
      "q": "How many new words do you learn today?",
      "options": [
-      "Three",
       "Two",
       "Five",
-      "Ten"
+      "Ten",
+      "Three"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Today you learn five important words.\""
     },
     {
      "q": "\"We go step by step\" suggests that the lesson is…",
      "options": [
-      "very fast and hard",
-      "slow and easy to follow",
       "about numbers",
-      "only for managers"
+      "slow and easy to follow",
+      "only for managers",
+      "very fast and hard"
      ],
      "answer": 1,
      "why": "Inferência: \"step by step\" mostra que a lição é calma e simples, feita para iniciantes."
@@ -54,9 +54,9 @@
     {
      "q": "The message \"English comes in CAN's, not in CAN'Ts\" is there to…",
      "options": [
-      "list the meetings",
-      "explain the office rules",
       "correct a mistake",
+      "explain the office rules",
+      "list the meetings",
       "give the students confidence"
      ],
      "answer": 3,
@@ -77,32 +77,32 @@
     {
      "q": "What day does the team have the big meeting?",
      "options": [
-      "On Friday",
       "On Monday",
       "On Sunday",
+      "On Friday",
       "On Thursday"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"On Monday we have our big meeting.\""
     },
     {
      "q": "What time does the team start in the morning?",
      "options": [
-      "At eight",
       "At nine",
+      "At ten",
       "At six",
-      "At ten"
+      "At eight"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"We start at nine in the morning.\""
     },
     {
      "q": "Where does Sophie work on Friday?",
      "options": [
-      "In another city",
+      "At the training room",
       "From home",
-      "In the office",
-      "At the training room"
+      "In another city",
+      "In the office"
      ],
      "answer": 1,
      "why": "\"On Friday I work from home.\""
@@ -111,9 +111,9 @@
      "q": "Sophie says \"please come on time\" for the Monday meeting. This suggests that the meeting is…",
      "options": [
       "cancelled",
-      "not important",
+      "only online",
       "important, so being late is a problem",
-      "only online"
+      "not important"
      ],
      "answer": 2,
      "why": "Inferência: ela pede pontualidade porque a reunião é importante."
@@ -121,12 +121,12 @@
     {
      "q": "Why is the office probably quiet on Friday?",
      "options": [
-      "Because it is a holiday",
       "Because many people work from home",
       "Because it is closed",
-      "Because the team is on training"
+      "Because the team is on training",
+      "Because it is a holiday"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: muitos trabalham de casa na sexta, então há menos gente no escritório."
     }
    ]
@@ -139,12 +139,12 @@
     {
      "q": "\"The team meeting is on <strong>Monday</strong>.\" Monday is…",
      "options": [
-      "domingo",
       "sexta-feira",
-      "sábado",
-      "segunda-feira"
+      "domingo",
+      "segunda-feira",
+      "sábado"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Monday = segunda-feira, o primeiro dia da semana de trabalho."
     },
     {
@@ -152,10 +152,10 @@
      "options": [
       "Monday",
       "weekend",
-      "Tuesday",
-      "Sunday"
+      "Sunday",
+      "Tuesday"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Tuesday = terça-feira, o segundo dia da semana."
     },
     {
@@ -163,8 +163,8 @@
      "options": [
       "semana",
       "mês",
-      "hora",
-      "dia"
+      "dia",
+      "hora"
      ],
      "answer": 0,
      "why": "Week = semana (de segunda a domingo)."
@@ -172,21 +172,21 @@
     {
      "q": "Choose the correct word: \"We do not work on Saturday and Sunday. Have a nice ___!\"",
      "options": [
-      "schedule",
-      "Monday",
       "meeting",
-      "weekend"
+      "weekend",
+      "Monday",
+      "schedule"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Weekend = fim de semana (sábado e domingo)."
     },
     {
      "q": "\"My <strong>schedule</strong> is full this week.\" Schedule means…",
      "options": [
-      "salário",
+      "e-mail",
       "escritório",
       "agenda / horário",
-      "e-mail"
+      "salário"
      ],
      "answer": 2,
      "why": "Schedule = agenda / horário: os dias e horas do seu trabalho."
@@ -201,45 +201,45 @@
     {
      "q": "\"I have a <strong>day off</strong> on Friday.\" A day off is…",
      "options": [
-      "a free day, with no work",
       "a very busy day",
       "a meeting day",
+      "a free day, with no work",
       "a training day"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Day off = dia de folga, um dia sem trabalho."
     },
     {
      "q": "\"On Monday I <strong>work from home</strong>.\" This means I…",
      "options": [
+      "work at my house",
       "go to the office",
       "travel for work",
-      "work at my house",
       "take a holiday"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Work from home = trabalhar de casa, sem ir ao escritório."
     },
     {
      "q": "\"Let's <strong>catch up</strong> on Tuesday.\" To catch up means to…",
      "options": [
-      "meet and talk to share news",
+      "go home early",
       "close the office",
       "start a new project",
-      "go home early"
+      "meet and talk to share news"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Catch up = colocar o papo/assunto em dia, conversar rapidamente."
     },
     {
      "q": "\"We <strong>wrap up</strong> the meeting at five.\" To wrap up means to…",
      "options": [
-      "finish it",
-      "open it",
       "cancel it",
-      "move it to Monday"
+      "move it to Monday",
+      "open it",
+      "finish it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Wrap up = terminar, encerrar (uma reunião ou tarefa)."
     },
     {

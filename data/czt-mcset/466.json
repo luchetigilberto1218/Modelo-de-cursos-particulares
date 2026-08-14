@@ -10,45 +10,45 @@
     {
      "q": "According to the text, what kind of skill is producing a clean tax calculation at senior level?",
      "options": [
+      "A purely technical skill",
       "A negotiation tactic",
-      "A trust-building discipline",
       "A compliance formality",
-      "A purely technical skill"
+      "A trust-building discipline"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"it is not a technical skill — it is a trust-building discipline.\""
     },
     {
      "q": "What must the CEO be able to assume about the effective tax rate figure?",
      "options": [
       "That it was produced by an external auditor",
+      "That it would hold up if audited tomorrow without reconstruction",
       "That it will fall next year",
-      "That it matches the statutory rate",
-      "That it would hold up if audited tomorrow without reconstruction"
+      "That it matches the statutory rate"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"a process which, if audited tomorrow, would hold up without reconstruction.\""
     },
     {
      "q": "What does the phrase \"carries a small, silent discount\" suggest about later conversations?",
      "options": [
+      "They are formally cancelled",
       "They are quietly trusted a little less",
       "They become cheaper to run",
-      "They move faster than before",
-      "They are formally cancelled"
+      "They move faster than before"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: cada correção passada corrói, sem alarde, a confiança nas conversas seguintes."
     },
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
-      "A single flawless calculation matters more than years of discipline",
       "Consistency in calculation earns executive trust over time",
-      "Corrected numbers weaken future strategic discussions",
-      "Tax credibility rests on quiet, repeated reliability"
+      "A single flawless calculation matters more than years of discipline",
+      "Tax credibility rests on quiet, repeated reliability",
+      "Corrected numbers weaken future strategic discussions"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: o texto defende que a confiança se constrói ao longo de anos, não num único acerto."
     },
     {
@@ -78,9 +78,9 @@
      "q": "What does Emily say the desk's seven years of trust is built on?",
      "options": [
       "Calculations that land on the same shape every time",
-      "Delivering figures faster than any other team",
+      "The cleverness of the analysts",
       "The CFO's personal preference",
-      "The cleverness of the analysts"
+      "Delivering figures faster than any other team"
      ],
      "answer": 0,
      "why": "\"It isn't cleverness. It's that every calculation lands on the same shape, every time.\""
@@ -88,12 +88,12 @@
     {
      "q": "What does 'traceable' mean in Emily's standard?",
      "options": [
-      "Any number can be walked back to its source quickly",
       "The figures are stored for seven years",
-      "Every number is signed by the CFO",
-      "The calculation is done by two people"
+      "Any number can be walked back to its source quickly",
+      "The calculation is done by two people",
+      "Every number is signed by the CFO"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"I should be able to walk any number back to its source in under a minute.\""
     },
     {
@@ -110,23 +110,23 @@
     {
      "q": "What does Emily imply the new head of tax will be tempted to do — and should avoid?",
      "options": [
-      "Hide errors from the review",
       "Prioritise speed over defensibility",
       "Change the calculation standard",
+      "Hide errors from the review",
       "Report directly to the CEO"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ela avisa contra ir rápido demais e prefere um número defensável a um número entregue no prazo mas irreconstruível."
     },
     {
      "q": "How would you best describe the underlying message of Emily's advice?",
      "options": [
-      "The CFO cares only about the final rate",
       "Reviews slow the team down unnecessarily",
+      "Quiet, consistent discipline earns trust that speed cannot",
       "Trust is won through occasional brilliance",
-      "Quiet, consistent discipline earns trust that speed cannot"
+      "The CFO cares only about the final rate"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: a fala inteira defende a disciplina discreta e repetida como base da credibilidade."
     }
    ]
@@ -139,23 +139,23 @@
     {
      "q": "\"Every figure we submit must be fully <strong>traceable</strong>.\" Traceable means…",
      "options": [
-      "kept strictly confidential",
-      "rounded to one decimal",
+      "able to be followed back to its source",
       "approved by the board",
-      "able to be followed back to its source"
+      "rounded to one decimal",
+      "kept strictly confidential"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Traceable = rastreável: dá para seguir o número de volta até a origem."
     },
     {
      "q": "Choose the correct term: \"Our <strong>effective tax rate</strong> was 23.4%, well below the ___ rate of 34%.\"",
      "options": [
       "traceable",
-      "reviewed",
       "statutory",
-      "silent"
+      "silent",
+      "reviewed"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "A alíquota efetiva se contrasta com a alíquota legal (statutory)."
     },
     {
@@ -172,10 +172,10 @@
     {
      "q": "\"When last year's figures had to be redone, confidence began to <strong>wobble</strong>.\" To wobble means to…",
      "options": [
-      "be formally recorded",
-      "become unsteady or shaky",
       "disappear entirely",
-      "grow rapidly"
+      "become unsteady or shaky",
+      "grow rapidly",
+      "be formally recorded"
      ],
      "answer": 1,
      "why": "To wobble = oscilar, ficar instável — a confiança tremeu."
@@ -184,9 +184,9 @@
      "q": "Choose the correct word: \"Years of clean work are the ___ on which senior tax credibility rests.\"",
      "options": [
       "discount",
-      "reconstruction",
+      "restructuring",
       "foundation",
-      "restructuring"
+      "reconstruction"
      ],
      "answer": 2,
      "why": "Foundation = fundação, a base sobre a qual a credibilidade se apoia."
@@ -202,41 +202,41 @@
      "q": "\"The CFO won't <strong>sign off on</strong> the rate until it's fully reconciled.\" To sign off on means to…",
      "options": [
       "postpone indefinitely",
-      "formally approve",
+      "recalculate from scratch",
       "quietly ignore",
-      "recalculate from scratch"
+      "formally approve"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"We'll <strong>roll out</strong> the new calculation standard across all jurisdictions.\" To roll out means to…",
      "options": [
       "outsource to consultants",
+      "implement in a planned, staged way",
       "cancel one region at a time",
-      "audit retrospectively",
-      "implement in a planned, staged way"
+      "audit retrospectively"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Roll out = implantar de forma progressiva e planejada."
     },
     {
      "q": "\"The regional controller <strong>pushed back on</strong> the timing assumption.\" She…",
      "options": [
-      "resisted or challenged it",
       "documented it in full",
-      "forgot about it",
-      "approved it at once"
+      "resisted or challenged it",
+      "approved it at once",
+      "forgot about it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Push back on = resistir, contestar sem necessariamente rejeitar de vez."
     },
     {
      "q": "\"They promised a cleaner process but never <strong>followed through</strong>.\" They…",
      "options": [
-      "reported it late",
       "delegated it upward",
       "did it twice over",
+      "reported it late",
       "failed to carry it to completion"
      ],
      "answer": 3,
@@ -245,12 +245,12 @@
     {
      "q": "\"Reconciling those two entries won't <strong>move the needle</strong> on the effective rate.\" This means it will…",
      "options": [
-      "take weeks to finish",
-      "trigger an audit",
       "make no noticeable difference",
+      "trigger an audit",
+      "take weeks to finish",
       "breach a regulation"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Move the needle = mexer o ponteiro, causar diferença perceptível."
     }
    ]

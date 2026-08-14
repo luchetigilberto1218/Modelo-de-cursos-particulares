@@ -10,56 +10,56 @@
     {
      "q": "Who answers everyday questions like a frozen laptop or a forgotten password?",
      "options": [
-      "The help desk",
-      "The developers",
       "The security team",
-      "The CIO"
+      "The help desk",
+      "The CIO",
+      "The developers"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The help desk answers everyday questions: a frozen laptop, a forgotten password…\""
     },
     {
      "q": "What does the infrastructure team look after?",
      "options": [
-      "The office printers only",
       "New job interviews",
+      "The servers, the network and the cloud accounts",
       "The company's software",
-      "The servers, the network and the cloud accounts"
+      "The office printers only"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"The infrastructure team looks after the servers, the network and the cloud accounts.\""
     },
     {
      "q": "Who leads the whole IT function?",
      "options": [
-      "The developers",
-      "The IT director or CIO",
+      "The security team",
       "The help desk",
-      "The security team"
+      "The IT director or CIO",
+      "The developers"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The IT director or CIO leads the whole function.\""
     },
     {
      "q": "The text says to call security about a strange email \"today, not tomorrow\". This suggests that…",
      "options": [
-      "the help desk is closed tomorrow",
-      "emails are not important",
       "security only works in the morning",
-      "a strange email can be a real risk, so time matters"
+      "emails are not important",
+      "a strange email can be a real risk, so time matters",
+      "the help desk is closed tomorrow"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: agir rápido só importa se o e-mail estranho puder ser uma ameaça real."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "the help desk can fix every problem",
-      "IT roles are all the same",
       "knowing the right person saves you time",
+      "IT roles are all the same",
+      "the help desk can fix every problem",
       "you should always call the CIO first"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: \"Knowing who does what saves you time.\" — a ideia central do texto."
     }
    ]
@@ -77,43 +77,43 @@
     {
      "q": "Who is in the box at the top of the org chart?",
      "options": [
-      "The CIO",
-      "A developer",
       "The security team",
-      "The help desk"
+      "The CIO",
+      "The help desk",
+      "A developer"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"See this box at the top? That is our CIO. She leads the whole department.\""
     },
     {
      "q": "What should the new joiner do about a frozen laptop or a forgotten password?",
      "options": [
-      "Wait until tomorrow",
       "Talk to the developers",
-      "Call the help desk",
-      "Call the CIO"
+      "Call the CIO",
+      "Wait until tomorrow",
+      "Call the help desk"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"A frozen laptop, a forgotten password… just call the help desk.\""
     },
     {
      "q": "Who should she talk to if she needs a new tool for her work?",
      "options": [
+      "The infrastructure team",
       "The developers",
       "The security team",
-      "The infrastructure team",
       "The CIO"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"These people are the developers. They build our apps. If you need a new tool… talk to them.\""
     },
     {
      "q": "Why does Oliver say to call security \"today, not tomorrow\"?",
      "options": [
-      "Because the help desk is closed",
-      "Because one bad email can be a real threat",
       "Because emails are not important",
-      "Because security is very busy tomorrow"
+      "Because one bad email can be a real threat",
+      "Because security is very busy tomorrow",
+      "Because the help desk is closed"
      ],
      "answer": 1,
      "why": "Inferência: \"One bad email can be a real threat to the company.\" — por isso a urgência."
@@ -121,12 +121,12 @@
     {
      "q": "How would you best describe Oliver's tone?",
      "options": [
-      "Friendly, but serious about security",
-      "Bored and in a hurry",
       "Unsure about the roles",
+      "Bored and in a hurry",
+      "Friendly, but serious about security",
       "Angry with the new joiner"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: ele é acolhedor (\"Welcome!\", \"They are friendly\"), mas fica firme no ponto da segurança."
     }
    ]
@@ -140,22 +140,22 @@
      "q": "\"My laptop is <strong>frozen</strong> and the screen will not move.\" A frozen laptop is…",
      "options": [
       "a laptop with no battery",
-      "a brand new laptop",
       "a laptop that stopped responding",
-      "a laptop that is very cold"
+      "a laptop that is very cold",
+      "a brand new laptop"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Frozen laptop = notebook travado, que parou de responder."
     },
     {
      "q": "Choose the correct word: \"I forgot my ___, so I cannot log in to my email.\"",
      "options": [
-      "network",
-      "threat",
+      "developer",
       "password",
-      "developer"
+      "threat",
+      "network"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Password = senha, o que você usa para fazer login."
     },
     {
@@ -183,12 +183,12 @@
     {
      "q": "\"This <strong>strange</strong> email asks for my password.\" Strange here means…",
      "options": [
+      "very long",
       "from a friend",
       "in another language",
-      "unusual and not normal",
-      "very long"
+      "unusual and not normal"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Strange = estranho, algo fora do normal."
     }
    ]
@@ -201,20 +201,20 @@
     {
      "q": "\"Please <strong>call the help desk</strong> if your laptop is frozen.\" To call the help desk means to…",
      "options": [
-      "send an email to the CIO",
-      "buy a new laptop",
+      "ask the IT support team for help",
       "restart your computer",
-      "ask the IT support team for help"
+      "buy a new laptop",
+      "send an email to the CIO"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Call the help desk = pedir ajuda ao time de suporte de TI."
     },
     {
      "q": "\"IT will <strong>roll out</strong> the new app next week.\" To roll out means to…",
      "options": [
-      "explain it to the CIO",
-      "start using it for everyone",
       "test it in secret",
+      "start using it for everyone",
+      "explain it to the CIO",
       "delete it"
      ],
      "answer": 1,
@@ -223,21 +223,21 @@
     {
      "q": "\"Can you <strong>look after</strong> the servers this week?\" To look after something means to…",
      "options": [
-      "turn it off",
-      "take care of it",
+      "sell it",
       "forget about it",
-      "sell it"
+      "take care of it",
+      "turn it off"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Look after = cuidar de, tomar conta."
     },
     {
      "q": "\"If an email feels wrong, <strong>reach out to</strong> security.\" To reach out to someone means to…",
      "options": [
+      "ignore them",
       "reply to the email",
-      "wait for them to call you",
       "contact them for help",
-      "ignore them"
+      "wait for them to call you"
      ],
      "answer": 2,
      "why": "Reach out to = entrar em contato com, procurar alguém."
@@ -245,12 +245,12 @@
     {
      "q": "\"The CIO wants us to <strong>keep an eye on</strong> the network today.\" To keep an eye on means to…",
      "options": [
-      "watch it carefully",
       "replace it",
+      "watch it carefully",
       "shut it down",
       "forget it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Keep an eye on = ficar de olho, observar com atenção."
     }
    ]

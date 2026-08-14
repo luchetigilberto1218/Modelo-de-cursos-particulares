@@ -10,56 +10,56 @@
     {
      "q": "According to the text, what is the hard part?",
      "options": [
-      "Learning the tools",
-      "Buying the tools",
       "Choosing the email app",
-      "Using the tools well"
+      "Using the tools well",
+      "Buying the tools",
+      "Learning the tools"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"The tools are not the hard part… The hard part is using them well.\""
     },
     {
      "q": "What does a good meeting have?",
      "options": [
-      "An agenda and action items",
-      "A big folder",
       "A long chat",
-      "Many people"
+      "An agenda and action items",
+      "Many people",
+      "A big folder"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"A good meeting has an agenda and ends with action items.\""
     },
     {
      "q": "When do tools save time?",
      "options": [
+      "When there are many of them",
       "When everyone uses them the same way",
       "When they are expensive",
-      "When there are many of them",
       "When only the manager uses them"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Tools only save time when everyone uses them the same way.\""
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "Buying new tools solves every problem",
-      "A message should be short and clear",
       "Meetings should end with action items",
-      "Everyone should follow the same folder structure"
+      "A message should be short and clear",
+      "Everyone should follow the same folder structure",
+      "Buying new tools solves every problem"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: o texto diz que a ferramenta é fácil; o difícil é o uso. Comprar mais ferramentas não é a solução."
     },
     {
      "q": "The text suggests that a good subject line helps because…",
      "options": [
-      "it hides the file",
       "it makes the message clear",
       "it costs less money",
-      "it starts a video call"
+      "it starts a video call",
+      "it hides the file"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: uma boa linha de assunto faz parte de uma mensagem curta e clara."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "What do people say about the meetings?",
      "options": [
+      "They are fun",
       "They are slow",
-      "They are on Friday",
       "They are too short",
-      "They are fun"
+      "They are on Friday"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"People here say our meetings are slow.\""
     },
     {
      "q": "According to Emily, what is the real problem?",
      "options": [
       "The tools are broken",
-      "There are no computers",
+      "How the people use the tools",
       "The internet is slow",
-      "How the people use the tools"
+      "There are no computers"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"The tools are fine… The problem is how we use them.\""
     },
     {
      "q": "What is Emily's advice before a meeting?",
      "options": [
-      "Call everyone",
       "Cancel the meeting",
       "Write a short agenda",
+      "Call everyone",
       "Buy a new tool"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Before every meeting, write a short agenda.\""
     },
     {
      "q": "Emily suggests that a meeting with no agenda…",
      "options": [
-      "wastes an hour with no results",
       "ends with clear action items",
+      "wastes an hour with no results",
       "is always short",
       "needs a new video tool"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: sem pauta, as pessoas falam uma hora e nada acontece."
     },
     {
      "q": "How would you describe Emily's tone?",
      "options": [
-      "Worried about the tools",
       "Bored and tired",
-      "Helpful and clear",
-      "Angry with the new joiner"
+      "Worried about the tools",
+      "Angry with the new joiner",
+      "Helpful and clear"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: ela dá boas-vindas e explica um conselho simples e prático."
     }
    ]
@@ -139,43 +139,43 @@
     {
      "q": "\"Please write a clear <strong>subject line</strong> in your email.\" A subject line is…",
      "options": [
-      "the name of the boss",
-      "the file inside the email",
       "the time of the meeting",
-      "the short title of the email"
+      "the short title of the email",
+      "the file inside the email",
+      "the name of the boss"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Subject line = linha de assunto: o título curto no topo do e-mail."
     },
     {
      "q": "Choose the correct word: \"Every meeting needs an ___ so people know the plan.\"",
      "options": [
-      "phone",
       "email",
-      "office",
-      "agenda"
+      "agenda",
+      "phone",
+      "office"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Agenda = pauta: a lista de pontos da reunião."
     },
     {
      "q": "\"At the end, we wrote the <strong>action items</strong>.\" Action items are…",
      "options": [
-      "the tasks people must do",
       "the meeting room",
-      "the coffee break",
-      "the names of the tools"
+      "the names of the tools",
+      "the tasks people must do",
+      "the coffee break"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Action item = item de ação: a tarefa e quem a faz."
     },
     {
      "q": "Choose the correct word: \"Save the report in the ___ so everyone can open it.\"",
      "options": [
       "shared drive",
-      "video meeting",
       "subject line",
-      "agenda"
+      "agenda",
+      "video meeting"
      ],
      "answer": 0,
      "why": "Shared drive = drive compartilhado: onde o time guarda os arquivos."
@@ -183,12 +183,12 @@
     {
      "q": "\"A clean <strong>folder structure</strong> helps you find files fast.\" A folder structure is…",
      "options": [
-      "a project name",
       "the way folders are organised",
-      "a type of email",
-      "a video call"
+      "a video call",
+      "a project name",
+      "a type of email"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Folder structure = estrutura de pastas: como as pastas estão organizadas."
     }
    ]
@@ -202,31 +202,31 @@
      "q": "\"Can you <strong>set up</strong> the Zoom call for 3 p.m.?\" To set up means to…",
      "options": [
       "close the app",
+      "prepare or arrange",
       "join late",
-      "cancel",
-      "prepare or arrange"
+      "cancel"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Set up = preparar, organizar (a chamada, a reunião)."
     },
     {
      "q": "\"Let's <strong>roll out</strong> the new tool to all teams next month.\" To roll out means to…",
      "options": [
-      "delete it",
-      "sell it",
       "start using it step by step",
-      "hide it"
+      "delete it",
+      "hide it",
+      "sell it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Roll out = implementar aos poucos, colocar em uso."
     },
     {
      "q": "\"Please <strong>follow up</strong> on the action items from Monday.\" To follow up means to…",
      "options": [
-      "forget them",
+      "print them",
       "check the progress and remind people",
-      "start a new project",
-      "print them"
+      "forget them",
+      "start a new project"
      ],
      "answer": 1,
      "why": "Follow up = dar seguimento, cobrar o andamento."
@@ -234,21 +234,21 @@
     {
      "q": "\"I will <strong>log in</strong> to Teams before the meeting.\" To log in means to…",
      "options": [
+      "turn off the computer",
       "call a colleague",
       "enter the app with your account",
-      "turn off the computer",
       "write an agenda"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Log in = entrar no sistema com seu usuário e senha."
     },
     {
      "q": "\"Can you <strong>send over</strong> the file on the shared drive?\" To send over means to…",
      "options": [
-      "save it only for you",
       "delete it",
+      "read it aloud",
       "share or forward it to someone",
-      "read it aloud"
+      "save it only for you"
      ],
      "answer": 2,
      "why": "Send over = enviar, mandar algo para alguém."

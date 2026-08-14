@@ -10,56 +10,56 @@
     {
      "q": "What is the office full of?",
      "options": [
-      "Useful words",
       "Old computers",
-      "Empty boxes",
-      "Coffee cups"
+      "Coffee cups",
+      "Useful words",
+      "Empty boxes"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The Czarnikow office is full of useful words.\""
     },
     {
      "q": "We use \"there is\" for…",
      "options": [
-      "one thing",
-      "people only",
       "no things",
-      "more than one thing"
+      "people only",
+      "more than one thing",
+      "one thing"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"We use there is for one thing.\""
     },
     {
      "q": "How many chairs are there at the table in the example?",
      "options": [
-      "Five",
-      "Three",
+      "Two",
       "Ten",
-      "Two"
+      "Three",
+      "Five"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"there are five chairs at the table.\""
     },
     {
      "q": "The text says \"take your time.\" This suggests that the author wants you to…",
      "options": [
       "skip the practice",
-      "study only one word",
       "go slowly and not worry",
-      "finish very fast"
+      "finish very fast",
+      "study only one word"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: \"take your time\" e \"every sentence counts\" mostram um tom calmo e paciente."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "the office has nothing to learn from",
       "words in the office are not useful",
+      "English is all around us at work",
       "we must leave the office to learn English",
-      "English is all around us at work"
+      "the office has nothing to learn from"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: o texto diz \"the office already speaks English\" e está cheio de palavras úteis."
     }
    ]
@@ -77,23 +77,23 @@
     {
      "q": "How many chairs are there around the table?",
      "options": [
-      "Six",
-      "Ten",
       "Five",
-      "Eight"
+      "Six",
+      "Eight",
+      "Ten"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"There are eight chairs around the table.\""
     },
     {
      "q": "Where is the clock?",
      "options": [
-      "Near the door only",
       "On the wall",
       "On the table",
-      "In the kitchen"
+      "In the kitchen",
+      "Near the door only"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"There is a clock on the wall.\""
     },
     {
@@ -110,23 +110,23 @@
     {
      "q": "The team has ten people, but only eight are there today. This suggests that…",
      "options": [
-      "nobody came today",
+      "the office is closed",
       "there are no traders",
-      "two people are working from home",
-      "the office is closed"
+      "nobody came today",
+      "two people are working from home"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"two people are at home\", então dez menos dois dá oito presentes."
     },
     {
      "q": "How does Oliver feel about the office?",
      "options": [
       "He does not like the office",
+      "He is proud and happy to show it",
       "He is bored and tired",
-      "He wants to leave quickly",
-      "He is proud and happy to show it"
+      "He wants to leave quickly"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: ele diz \"Welcome\", \"Come with me\" e \"I like coffee very much\" — tom simpático e positivo."
     }
    ]
@@ -140,55 +140,55 @@
      "q": "\"Please close the <strong>door</strong> when you leave.\" A <strong>door</strong> is…",
      "options": [
       "janela",
+      "cadeira",
       "porta",
-      "mesa",
-      "cadeira"
+      "mesa"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Door = porta."
     },
     {
      "q": "\"I sit on this <strong>chair</strong> every day.\" A <strong>chair</strong> is…",
      "options": [
-      "cadeira",
       "sala",
+      "janela",
       "porta",
-      "janela"
+      "cadeira"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Chair = cadeira."
     },
     {
      "q": "Choose the correct word: \"There is a big ___ near my desk, so I can see the street.\"",
      "options": [
       "table",
-      "window",
       "door",
-      "chair"
+      "chair",
+      "window"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Window = janela, por onde você vê a rua."
     },
     {
      "q": "Choose the correct word: \"There are five chairs at the ___ in the meeting room.\"",
      "options": [
       "door",
-      "clock",
       "window",
-      "table"
+      "table",
+      "clock"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Table = mesa: as cadeiras ficam ao redor da mesa."
     },
     {
      "q": "\"We have a meeting in <strong>room</strong> 3.\" A <strong>room</strong> is…",
      "options": [
-      "porta",
-      "sala",
+      "mesa",
       "cadeira",
-      "mesa"
+      "porta",
+      "sala"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Room = sala."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"Come in and <strong>sit down</strong>, please.\" To sit down means to…",
      "options": [
-      "take a seat",
-      "open the door",
+      "stand up",
       "go out",
-      "stand up"
+      "open the door",
+      "take a seat"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Sit down = sentar-se."
     },
     {
      "q": "\"Please <strong>have a seat</strong>, the meeting starts now.\" This means…",
      "options": [
       "leave the room",
+      "turn off the light",
       "sit down",
-      "close the window",
-      "turn off the light"
+      "close the window"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Have a seat = sente-se (forma educada)."
     },
     {
      "q": "\"Can you <strong>turn on</strong> the light? The room is dark.\" To turn on means to…",
      "options": [
-      "make it work / start it",
+      "clean it",
       "move it",
       "stop it",
-      "clean it"
+      "make it work / start it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Turn on = ligar (a luz, a máquina)."
     },
     {
      "q": "\"<strong>Come in</strong>, the door is open!\" To come in means to…",
      "options": [
-      "enter the room",
+      "go home",
       "sit down",
       "wait outside",
-      "go home"
+      "enter the room"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Come in = entrar."
     },
     {
      "q": "\"Let's <strong>take a break</strong> and get some coffee.\" To take a break means to…",
      "options": [
       "work faster",
-      "start a meeting",
+      "stop work for a short time",
       "go home now",
-      "stop work for a short time"
+      "start a meeting"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Take a break = fazer uma pausa."
     }
    ]

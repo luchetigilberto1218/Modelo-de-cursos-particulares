@@ -8,41 +8,41 @@
     {
      "q": "How does the text describe a cross-border transaction?",
      "options": [
-      "A choreography",
       "A single step",
-      "A gamble",
-      "A legal dispute"
+      "A choreography",
+      "A legal dispute",
+      "A gamble"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Running a cross-border transaction is a choreography.\""
     },
     {
      "q": "What is the most common cause of problems?",
      "options": [
-      "Currency movements",
       "Lack of handoffs",
+      "Lack of knowledge",
       "Slow ships",
-      "Lack of knowledge"
+      "Currency movements"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"The most common cause of problems is not lack of knowledge; it is lack of handoffs.\""
     },
     {
      "q": "In the example, what does the sales team forget?",
      "options": [
-      "To tell operations about a special delivery clause",
       "To pay the bank",
+      "To ship the goods",
       "To invoice",
-      "To ship the goods"
+      "To tell operations about a special delivery clause"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The sales team books a deal but forgets to tell operations about a special delivery clause.\""
     },
     {
      "q": "How do good teams fix the handoff problem?",
      "options": [
-      "By avoiding documents",
       "By hiring more staff",
+      "By avoiding documents",
       "By working alone",
       "With short, regular handoffs and a single source of truth per deal"
      ],
@@ -52,12 +52,12 @@
     {
      "q": "\"Dramatic less often, which is exactly the point\" means the goal is…",
      "options": [
-      "fewer crises through boring, reliable process",
+      "more excitement",
       "faster shipping",
-      "lower cost",
-      "more excitement"
+      "fewer crises through boring, reliable process",
+      "lower cost"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: processo chato e confiável = menos crises, que é o objetivo."
     }
    ]
@@ -73,20 +73,20 @@
      "q": "How does Emily describe the invoicing error?",
      "options": [
       "A customer error",
-      "A knowledge problem",
       "A shipping mistake",
-      "A textbook handoff failure"
+      "A textbook handoff failure",
+      "A knowledge problem"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"it's a textbook handoff failure — nobody was ignorant, the information just didn't travel.\""
     },
     {
      "q": "What change did sales agree?",
      "options": [
-      "A higher price",
-      "Payment in dollars, not euros, plus a 2% discount for bigger volume",
       "A shorter delivery time",
-      "A new supplier"
+      "Payment in dollars, not euros, plus a 2% discount for bigger volume",
+      "A new supplier",
+      "A higher price"
      ],
      "answer": 1,
      "why": "\"the customer would pay in dollars, not euros, and get an extra 2% discount for a bigger volume.\""
@@ -94,23 +94,23 @@
     {
      "q": "Why did the invoice go out wrong?",
      "options": [
-      "Finance invoiced from the original order, which still said euros with no discount",
       "The customer changed the order",
+      "Finance invoiced from the original order, which still said euros with no discount",
       "The bank made an error",
       "Operations shipped the wrong goods"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"finance raised the invoice from the original order in the system, which still said euros, no discount.\""
     },
     {
      "q": "What actually failed?",
      "options": [
-      "The product",
       "The handoff between sales and finance",
       "The customer's payment",
+      "The product",
       "The shipping"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"What failed was the handoff between sales and finance.\""
     },
     {
@@ -133,8 +133,8 @@
      "q": "A **handoff** between teams is…",
      "options": [
       "a payment",
-      "a disagreement",
       "a shipment",
+      "a disagreement",
       "the passing of work or information from one to another"
      ],
      "answer": 3,
@@ -144,31 +144,31 @@
      "q": "A **single source of truth** is…",
      "options": [
       "one honest employee",
-      "one authoritative record everyone relies on",
       "a bank statement",
-      "a legal document"
+      "a legal document",
+      "one authoritative record everyone relies on"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Source of truth = fonte única e confiável da informação."
     },
     {
      "q": "Choose the correct word: \"Sales must **___** operations about the special clause.\"",
      "options": [
-      "brief",
+      "classify",
       "ship",
-      "invoice",
-      "classify"
+      "brief",
+      "invoice"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To brief = informar/orientar."
     },
     {
      "q": "\"It's a **cross-border** transaction.\" Cross-border means…",
      "options": [
-      "domestic",
-      "between countries",
       "cash",
-      "online"
+      "between countries",
+      "online",
+      "domestic"
      ],
      "answer": 1,
      "why": "Cross-border = transfronteiriço."
@@ -176,12 +176,12 @@
     {
      "q": "Choose the correct term: \"A clear **___** prevents work from being dropped between teams.\"",
      "options": [
-      "workflow",
       "tranche",
-      "backlog",
-      "claim"
+      "claim",
+      "workflow",
+      "backlog"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Workflow = fluxo de trabalho."
     }
    ]
@@ -194,8 +194,8 @@
      "options": [
       "be handled well",
       "be missed or overlooked",
-      "be escalated",
-      "be documented"
+      "be documented",
+      "be escalated"
      ],
      "answer": 1,
      "why": "Fall through the cracks = escapar, ser esquecido."
@@ -203,45 +203,45 @@
     {
      "q": "\"Let's **loop in** finance before invoicing.\" To loop in means to…",
      "options": [
-      "include in the communication",
       "exclude",
-      "blame",
-      "delay"
+      "include in the communication",
+      "delay",
+      "blame"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Loop in = incluir na comunicação."
     },
     {
      "q": "\"Sales **dropped the ball** on telling finance.\" To drop the ball means to…",
      "options": [
+      "finish early",
       "do the job well",
       "fail to do something you were responsible for",
-      "finish early",
       "escalate"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Drop the ball = vacilar, falhar numa responsabilidade."
     },
     {
      "q": "\"Finance invoiced **from memory**.\" To do something from memory means to…",
      "options": [
-      "rely on what you remember, not a record",
-      "use the system",
       "check the record carefully",
-      "ask the customer"
+      "ask the customer",
+      "rely on what you remember, not a record",
+      "use the system"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "From memory = de cabeça, sem conferir o registro."
     },
     {
      "q": "\"Let's **keep everyone on the same page**.\" To be on the same page means to…",
      "options": [
-      "avoid contact",
       "work separately",
-      "disagree",
-      "share the same understanding"
+      "share the same understanding",
+      "avoid contact",
+      "disagree"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "On the same page = alinhados, mesmo entendimento."
     }
    ]

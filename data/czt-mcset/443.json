@@ -1,0 +1,259 @@
+{
+ "num": 443,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A company is not only a taxpayer on its own profit. It is also a collector of tax for the government — on VAT it adds to invoices, on income tax it withholds from salaries, and on payments to certain suppliers. In every one of these roles, the company has a legal duty to calculate correctly, to collect correctly, and to hand the money over on time.<br><br>Mistakes in these roles are often taken more seriously than mistakes in the company's own tax bill. The reason is simple: when a company miscalculates its own tax, it is hurting itself. When it miscalculates what it is supposed to collect for the government, it is, in a sense, taking someone else's money.<br><br>A good finance team keeps these two roles clearly separated in its own head — 'tax we owe' and 'tax we collect' — and treats the second with slightly more care than the first.",
+   "items": [
+    {
+     "q": "According to the text, in which roles does a company act besides paying tax on its own profit?",
+     "options": [
+      "It collects tax for the government",
+      "It only audits its own accounts",
+      "It refunds tax to customers",
+      "It sets the national tax rates"
+     ],
+     "answer": 0,
+     "why": "\"It is also a collector of tax for the government\" — VAT, income tax retido, etc."
+    },
+    {
+     "q": "What are the three legal duties the text lists for these collecting roles?",
+     "options": [
+      "To estimate, to negotiate and to defer",
+      "To report, to audit and to publish",
+      "To calculate, to collect and to hand the money over on time",
+      "To invoice, to invest and to reconcile"
+     ],
+     "answer": 2,
+     "why": "\"calculate correctly… collect correctly… hand the money over on time.\""
+    },
+    {
+     "q": "Why are mistakes in the collecting role treated more seriously?",
+     "options": [
+      "Because they always involve larger amounts",
+      "Because the company is mishandling money that belongs to someone else",
+      "Because they are harder to detect",
+      "Because they damage the company's credit rating"
+     ],
+     "answer": 1,
+     "why": "\"it is, in a sense, taking someone else's money\" — não é dinheiro da empresa."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "The tax a company collects deserves at least as much care as the tax it owes.",
+      "An error in withheld income tax is no more serious than an error in corporate tax.",
+      "A company can be both a taxpayer and a tax collector at the same time.",
+      "Keeping the two roles mentally separate reduces risk."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto inteiro defende que o erro no imposto arrecadado é MAIS grave, não igual."
+    },
+    {
+     "q": "What does keeping 'tax we owe' and 'tax we collect' separate suggest about good practice?",
+     "options": [
+      "Only the tax the company owes really needs monitoring",
+      "The two should be paid from the same account for simplicity",
+      "Collected tax should be treated as the company's own reserve",
+      "Clarity about whose money it is helps prevent costly errors"
+     ],
+     "answer": 3,
+     "why": "Inferência: separar os papéis na cabeça e no processo é o que protege contra o erro mais grave."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver revisando o processo de imposto sobre a folha com o novo júnior. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, so this is the payroll run, and I want to walk you through why we double-check the withholding line before anything else.<br><br>Every month we take income tax out of people's salaries. That money is never ours — not for a single day. We hold it, and then we hand it over to the tax office by the deadline. So think of us as a middleman, not an owner.<br><br>Now, imagine we get the corporate tax slightly wrong on our own profit. That's a problem, we fix it, we pay a small penalty, and honestly we're only hurting ourselves. But if we under-withhold from a hundred salaries, we've collected less than we owe the government on someone else's behalf. That's a completely different kind of mistake, and the tax office treats it that way.<br><br>So the rule I want you to remember is simple. When the number is 'tax we collect', you check it twice. When it's 'tax we owe', once is fine. Same care in the end, maybe — but never less on the collecting side. Clear?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Oliver want to check before anything else in the payroll run?",
+     "options": [
+      "The total salary cost",
+      "The corporate tax estimate",
+      "The withholding line",
+      "The supplier payments"
+     ],
+     "answer": 2,
+     "why": "\"we double-check the withholding line before anything else.\""
+    },
+    {
+     "q": "How does Oliver describe the company's relationship to the withheld income tax?",
+     "options": [
+      "As a lender to the government",
+      "As an investor holding the money",
+      "As a middleman, not an owner",
+      "As the rightful owner of the funds"
+     ],
+     "answer": 2,
+     "why": "\"That money is never ours… think of us as a middleman, not an owner.\""
+    },
+    {
+     "q": "Why does Oliver say a small corporate tax error is less serious?",
+     "options": [
+      "Because it is never penalised",
+      "Because it can always be deferred",
+      "Because the tax office ignores small errors",
+      "Because the company is only hurting itself"
+     ],
+     "answer": 3,
+     "why": "\"we're only hurting ourselves\" — o dinheiro é da própria empresa."
+    },
+    {
+     "q": "What can we infer about why Oliver stresses the difference so strongly to a junior?",
+     "options": [
+      "He wants the junior to spend less time on corporate tax",
+      "He believes corporate tax errors are impossible to fix",
+      "He assumes the junior will never touch payroll",
+      "He wants to build the habit of extra caution on collected tax from the start"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele ensina uma regra de hábito ('check it twice') para formar o júnior cedo."
+    },
+    {
+     "q": "What does Oliver mean by \"Same care in the end, maybe — but never less on the collecting side\"?",
+     "options": [
+      "Both roles can safely be checked only once",
+      "Corporate tax should always be checked more carefully",
+      "Care levels do not matter as long as deadlines are met",
+      "The collecting side may deserve equal or greater care, never less"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele admite que o cuidado pode ser igual, mas nunca menor no imposto arrecadado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"As a <strong>taxpayer</strong>, the company files a return on its own profit each year.\" A taxpayer is…",
+     "options": [
+      "an official who collects tax",
+      "a person or company that owes tax to the state",
+      "a government tax office",
+      "an accountant who prepares tax returns"
+     ],
+     "answer": 1,
+     "why": "Taxpayer = contribuinte: quem deve imposto ao Estado."
+    },
+    {
+     "q": "Choose the correct word: \"On salaries, the employer must ___ the income tax before paying the net amount.\"",
+     "options": [
+      "waive",
+      "refund",
+      "invoice",
+      "withhold"
+     ],
+     "answer": 3,
+     "why": "To withhold = reter na fonte o imposto antes de pagar o líquido."
+    },
+    {
+     "q": "\"Filing on time is a <strong>legal duty</strong>, not a courtesy.\" A legal duty is…",
+     "options": [
+      "a tax discount offered by the state",
+      "an optional best practice",
+      "an internal company guideline",
+      "an obligation imposed by law"
+     ],
+     "answer": 3,
+     "why": "Legal duty = obrigação legal: imposta por lei, não opcional."
+    },
+    {
+     "q": "Choose the correct phrase: \"After collecting the VAT, the firm must ___ to the tax office by the deadline.\"",
+     "options": [
+      "sign it off",
+      "hold it back",
+      "write it off",
+      "hand it over"
+     ],
+     "answer": 3,
+     "why": "To hand over = entregar o dinheiro arrecadado ao fisco."
+    },
+    {
+     "q": "When the company acts as a <strong>collector</strong>, it…",
+     "options": [
+      "audits other taxpayers",
+      "gathers tax on behalf of the government",
+      "decides who is exempt from tax",
+      "keeps the tax as extra revenue"
+     ],
+     "answer": 1,
+     "why": "Collector = arrecadador: recolhe o imposto em nome do governo, não é seu."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em reuniões de finanças e impostos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The controller still has to <strong>sign off on</strong> the payroll tax filing.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "reject outright",
+      "comment informally",
+      "postpone indefinitely"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Let's not <strong>put off</strong> the VAT payment — the deadline is Friday.\" To put off means to…",
+     "options": [
+      "cancel completely",
+      "split into instalments",
+      "pay in advance",
+      "delay to a later time"
+     ],
+     "answer": 3,
+     "why": "Put off = adiar, deixar para depois."
+    },
+    {
+     "q": "\"We under-withheld last quarter, and now we have to <strong>make up for</strong> the shortfall.\" To make up for means to…",
+     "options": [
+      "report it to the board",
+      "compensate or offset it",
+      "ignore it",
+      "dispute it in court"
+     ],
+     "answer": 1,
+     "why": "Make up for = compensar, cobrir aquilo que faltou."
+    },
+    {
+     "q": "\"Whatever we promise the auditor, we have to <strong>follow through</strong>.\" To follow through means to…",
+     "options": [
+      "document it poorly",
+      "carry it to completion",
+      "revise it halfway",
+      "delegate it to another team"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"A single wrong rate can <strong>add up to</strong> a large penalty across a hundred salaries.\" To add up to means to…",
+     "options": [
+      "round down",
+      "cancel out",
+      "amount to in total",
+      "be deducted from"
+     ],
+     "answer": 2,
+     "why": "Add up to = somar, totalizar — pequenos erros que resultam em muito."
+    }
+   ]
+  }
+ ]
+}

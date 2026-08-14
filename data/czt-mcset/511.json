@@ -1,0 +1,259 @@
+{
+ "num": 511,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In practice, automation and digital transformation projects fail for the same small reasons over and over. People were not involved early. The process being automated was broken to begin with. Success was never clearly defined. And nobody owned the change once the launch was over.<br><br>A good intermediate leader fixes each of these before writing a single line of code. She involves the people whose work will change. She fixes the process first, then automates it. She defines success in numbers. And she makes sure somebody, specifically named, is still responsible three months after go-live.<br><br>Automation works when the process underneath it is already working. Transformation works when the people inside it are already ready. Skip either step, and even the best technology produces an expensive disappointment.",
+   "items": [
+    {
+     "q": "According to the text, why do automation projects fail?",
+     "options": [
+      "Because budgets are always too small",
+      "Because the technology is rarely good enough",
+      "Because competitors move faster",
+      "For the same small reasons over and over"
+     ],
+     "answer": 3,
+     "why": "\"projects fail for the same small reasons over and over\" — são causas repetidas, não a tecnologia."
+    },
+    {
+     "q": "What does the good leader do FIRST, before automating?",
+     "options": [
+      "Fixes the process",
+      "Writes the code",
+      "Announces the launch",
+      "Buys the software"
+     ],
+     "answer": 0,
+     "why": "\"She fixes the process first, then automates it.\""
+    },
+    {
+     "q": "How should success be defined, according to the text?",
+     "options": [
+      "In numbers",
+      "By the launch date",
+      "By the size of the team",
+      "In adjectives"
+     ],
+     "answer": 0,
+     "why": "\"She defines success in numbers.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Someone must own the change after go-live.",
+      "Good technology alone does not guarantee success.",
+      "People should be involved before the work changes.",
+      "Automating a broken process still delivers real value."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto insiste que a automação só funciona se o processo já funciona — automatizar algo quebrado gera decepção cara."
+    },
+    {
+     "q": "The phrase \"specifically named\" suggests that…",
+     "options": [
+      "the software should carry the person's name",
+      "the owner must have a senior job title",
+      "the launch date should be public",
+      "vague, shared responsibility is not enough"
+     ],
+     "answer": 3,
+     "why": "Inferência: exigir um nome específico é o oposto de deixar a responsabilidade difusa — se é de todos, não é de ninguém."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie explicando como está resgatando o projeto. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, this is the second time we're trying to automate this workflow, and I want us to do it differently. Last time, nobody talked to the people who actually run the process. We built a tool for a process none of us really understood.<br><br>The first thing I did was sit with the team for two days and map what they actually do — not what the old diagram says they do. And honestly, the process itself was broken. There were three manual approvals that added nothing except delay. So before we touch any code, we're cutting those.<br><br>Second, success. Last time, success just meant \"the system went live.\" That's not success — that's a switch being flicked. This time, success is measured: forty percent fewer manual steps, and invoices cleared in two days instead of nine.<br><br>And here's what changed everything for me. I've asked Marco to own this after go-live. Not the vendor, not \"the team\" — Marco, by name, for three months. If something breaks in week ten, we all know exactly who is picking it up.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What did nobody do the first time the project was attempted?",
+     "options": [
+      "Set a launch date",
+      "Approve the budget",
+      "Talk to the people who run the process",
+      "Buy the right software"
+     ],
+     "answer": 2,
+     "why": "\"nobody talked to the people who actually run the process.\""
+    },
+    {
+     "q": "What did Sophie discover when she mapped the real process?",
+     "options": [
+      "It was faster than expected",
+      "It was already fully automated",
+      "It was broken, with pointless manual approvals",
+      "It matched the old diagram exactly"
+     ],
+     "answer": 2,
+     "why": "\"the process itself was broken. There were three manual approvals that added nothing except delay.\""
+    },
+    {
+     "q": "How is success measured this time?",
+     "options": [
+      "By the system simply going live",
+      "By fewer manual steps and faster invoice clearing",
+      "By the number of people trained",
+      "By the cost of the vendor"
+     ],
+     "answer": 1,
+     "why": "\"forty percent fewer manual steps, and invoices cleared in two days instead of nine.\""
+    },
+    {
+     "q": "When Sophie says \"that's a switch being flicked,\" she means the old definition of success was…",
+     "options": [
+      "trivial — it measured nothing real",
+      "expensive to achieve",
+      "impossible to explain",
+      "too ambitious to reach"
+     ],
+     "answer": 0,
+     "why": "Inferência: ligar o sistema é um evento, não um resultado — não prova que algo melhorou."
+    },
+    {
+     "q": "Why does Sophie insist on naming Marco specifically?",
+     "options": [
+      "Because the vendor requested it",
+      "Because Marco built the original system",
+      "So Marco can approve the budget",
+      "So responsibility is clear if something breaks later"
+     ],
+     "answer": 3,
+     "why": "Inferência: nomear uma pessoa evita a responsabilidade difusa — \"we all know exactly who is picking it up.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"She made sure to <strong>involve</strong> the team before designing the tool.\" To involve means to…",
+     "options": [
+      "replace them with software",
+      "ignore their opinions",
+      "train them afterwards",
+      "bring them into the process"
+     ],
+     "answer": 3,
+     "why": "Involve = envolver, trazer as pessoas para dentro do processo."
+    },
+    {
+     "q": "Choose the correct word: \"Automating a ___ only makes the same mistakes happen faster.\"",
+     "options": [
+      "named owner",
+      "quick launch",
+      "broken process",
+      "clear success"
+     ],
+     "answer": 2,
+     "why": "Broken process = processo quebrado; automatizá-lo só acelera os erros."
+    },
+    {
+     "q": "\"Marco will <strong>own</strong> this after go-live.\" To own here means to…",
+     "options": [
+      "sell it to the vendor",
+      "be responsible for it",
+      "hide the results",
+      "buy the system personally"
+     ],
+     "answer": 1,
+     "why": "To own (a change) = ser o responsável por ela, responder pelo resultado."
+    },
+    {
+     "q": "<strong>Go-live</strong> is best described as…",
+     "options": [
+      "the planning meeting",
+      "the final budget review",
+      "the vendor's sales pitch",
+      "the moment the system starts running in production"
+     ],
+     "answer": 3,
+     "why": "Go-live = entrada em produção, quando o sistema passa a rodar de verdade."
+    },
+    {
+     "q": "Choose the correct word: \"Even the best technology produces an expensive ___ if the process is broken.\"",
+     "options": [
+      "disappointment",
+      "opportunity",
+      "improvement",
+      "advantage"
+     ],
+     "answer": 0,
+     "why": "Disappointment = decepção; a tecnologia não entrega o resultado esperado e ainda custa caro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em projetos de automação e transformação. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We can't <strong>roll out</strong> the tool until the process is fixed.\" To roll out means to…",
+     "options": [
+      "cancel it quietly",
+      "test it in secret",
+      "implement it in stages",
+      "explain it to the board"
+     ],
+     "answer": 2,
+     "why": "Roll out = implantar de forma progressiva, colocar em uso."
+    },
+    {
+     "q": "\"The finance director still has to <strong>sign off on</strong> the new workflow.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly reject",
+      "comment informally",
+      "postpone indefinitely"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Two managers <strong>pushed back on</strong> automating the approvals.\" They…",
+     "options": [
+      "forgot to read it",
+      "rewrote it themselves",
+      "resisted or objected to it",
+      "approved it immediately"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, contestar — sem necessariamente vetar de vez."
+    },
+    {
+     "q": "\"The team agreed to name an owner but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "failed to actually do it",
+      "carried it to completion",
+      "delegated it to the vendor",
+      "documented it in detail"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado; aqui, não levaram."
+    },
+    {
+     "q": "\"Flicking the switch alone won't <strong>move the needle</strong> on delivery times.\" This means it will…",
+     "options": [
+      "take years to measure",
+      "make no noticeable difference",
+      "cost far too much",
+      "create strong resistance"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

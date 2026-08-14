@@ -1,0 +1,259 @@
+{
+ "num": 1170,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "IT supports every Czarnikow office, from London to São Paulo. When your computer has a problem, you call the help desk. In \"Calling IT Support\", you learn the simple English you need to ask for help.<br><br>You can ask questions in a polite way. You say \"Can you help me?\" or \"Can you fix this?\". The team is small, but it is very fast. They open a ticket for your problem and they fix it.<br><br>Good IT habits are important. Small habits today save big problems tomorrow. Go slowly — one step at a time. You can do it!",
+   "items": [
+    {
+     "q": "What does the IT team do when you have a problem?",
+     "options": [
+      "They close the office",
+      "They call São Paulo",
+      "They buy a new computer",
+      "They open a ticket and fix it"
+     ],
+     "answer": 3,
+     "why": "\"They open a ticket for your problem and they fix it.\""
+    },
+    {
+     "q": "How can you ask for help in a polite way?",
+     "options": [
+      "\"Fix it fast.\"",
+      "\"Give me help now.\"",
+      "\"I need it.\"",
+      "\"Can you help me?\""
+     ],
+     "answer": 3,
+     "why": "O texto ensina \"Can you help me?\" como pedido educado."
+    },
+    {
+     "q": "What does the text say about the IT team?",
+     "options": [
+      "It never answers",
+      "It is only in London",
+      "It is big and slow",
+      "It is small but very fast"
+     ],
+     "answer": 3,
+     "why": "\"The team is small, but it is very fast.\""
+    },
+    {
+     "q": "The text suggests that good IT habits are…",
+     "options": [
+      "helpful for the future",
+      "only for London",
+      "very difficult",
+      "not important"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Small habits today save big problems tomorrow\" — ajudam no futuro."
+    },
+    {
+     "q": "The author would most likely DISAGREE with…",
+     "options": [
+      "\"Small habits are useful.\"",
+      "\"Asking IT for help is a bad idea.\"",
+      "\"You can ask for help in a polite way.\"",
+      "\"Calling IT support is easy to learn.\""
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto todo incentiva pedir ajuda ao suporte, então discordaria da ideia de que é ruim."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James, do suporte de TI, atender a ligação. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello, this is James from IT support. How can I help you today?<br><br>Okay, your email is not working. That is a common issue. Don't worry, I can help you. First, let me open a ticket for you. The ticket number is one-four-seven.<br><br>Is this urgent? Do you have a meeting soon? Okay, good. It is not urgent, so we have some time.<br><br>Now, please try one simple thing. Can you close your email and open it again? Sometimes that is the fix. Wait ten seconds, then open it.<br><br>Is it working now? Great! I am happy to hear that. If the same issue comes back, just call IT support again. We are here every day. Have a good afternoon!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking on the phone?",
+     "options": [
+      "A client from São Paulo",
+      "A new manager",
+      "James from IT support",
+      "Sophie from finance"
+     ],
+     "answer": 2,
+     "why": "\"Hello, this is James from IT support.\""
+    },
+    {
+     "q": "What is the problem?",
+     "options": [
+      "The phone is broken",
+      "The email is not working",
+      "The printer is slow",
+      "The office is closed"
+     ],
+     "answer": 1,
+     "why": "\"your email is not working.\""
+    },
+    {
+     "q": "What does James ask the person to do?",
+     "options": [
+      "Buy a new computer",
+      "Come to the London office",
+      "Send a long report",
+      "Close the email and open it again"
+     ],
+     "answer": 3,
+     "why": "\"Can you close your email and open it again?\""
+    },
+    {
+     "q": "The call suggests that the problem is…",
+     "options": [
+      "impossible to fix",
+      "very serious and urgent",
+      "small and easy to fix",
+      "a problem for tomorrow"
+     ],
+     "answer": 2,
+     "why": "Inferência: James chama de \"common issue\", diz \"not urgent\" e resolve com um passo simples."
+    },
+    {
+     "q": "How would you describe James's tone?",
+     "options": [
+      "Bored and rude",
+      "Angry and tired",
+      "Worried and afraid",
+      "Calm and helpful"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele diz \"Don't worry\", \"I can help you\" e \"Have a good afternoon\" — calmo e prestativo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Our IT <strong>support</strong> is very fast.\" <strong>Support</strong> means…",
+     "options": [
+      "money",
+      "meeting",
+      "help",
+      "office"
+     ],
+     "answer": 2,
+     "why": "Support = suporte, ajuda."
+    },
+    {
+     "q": "\"There is a new <strong>issue</strong> with my email.\" An <strong>issue</strong> is a…",
+     "options": [
+      "team",
+      "meeting",
+      "problem",
+      "computer"
+     ],
+     "answer": 2,
+     "why": "Issue = problema."
+    },
+    {
+     "q": "Choose the correct word: \"IT opened a ___ for my problem. The number is 147.\"",
+     "options": [
+      "phone",
+      "door",
+      "chair",
+      "ticket"
+     ],
+     "answer": 3,
+     "why": "Ticket = chamado, aberto pelo suporte."
+    },
+    {
+     "q": "\"This is <strong>urgent</strong>. I have a meeting in five minutes!\" <strong>Urgent</strong> means…",
+     "options": [
+      "very important and fast",
+      "old",
+      "easy",
+      "slow"
+     ],
+     "answer": 0,
+     "why": "Urgent = urgente, precisa ser rápido."
+    },
+    {
+     "q": "Choose the correct word: \"Can you ___ my computer, please? It is not working.\"",
+     "options": [
+      "fix",
+      "call",
+      "close",
+      "buy"
+     ],
+     "answer": 0,
+     "why": "Fix = consertar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem quando você liga para o suporte. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you help me? My email is <strong>down</strong>.\" When email is <strong>down</strong>, it is…",
+     "options": [
+      "very fast",
+      "new",
+      "not working",
+      "on the desk"
+     ],
+     "answer": 2,
+     "why": "Be down = estar fora do ar, não funcionar."
+    },
+    {
+     "q": "\"Please <strong>turn off</strong> your computer and wait.\" To <strong>turn off</strong> means to…",
+     "options": [
+      "start it",
+      "move it",
+      "stop it",
+      "clean it"
+     ],
+     "answer": 2,
+     "why": "Turn off = desligar."
+    },
+    {
+     "q": "\"Let me <strong>look into</strong> this problem.\" To <strong>look into</strong> means to…",
+     "options": [
+      "check it",
+      "forget it",
+      "buy it",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Look into = examinar, verificar."
+    },
+    {
+     "q": "\"I will <strong>call you back</strong> in five minutes.\" To <strong>call back</strong> means to…",
+     "options": [
+      "close the ticket",
+      "call again later",
+      "send an email",
+      "come to the office"
+     ],
+     "answer": 1,
+     "why": "Call back = ligar de novo depois."
+    },
+    {
+     "q": "\"The problem is <strong>sorted out</strong> now.\" This means the problem is…",
+     "options": [
+      "urgent",
+      "bigger",
+      "solved",
+      "new"
+     ],
+     "answer": 2,
+     "why": "Sort out = resolver, deixar em ordem."
+    }
+   ]
+  }
+ ]
+}

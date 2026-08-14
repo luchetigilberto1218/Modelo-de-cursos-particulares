@@ -1,0 +1,259 @@
+{
+ "num": 1180,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "IT supports every Czarnikow office, from London to São Paulo. When something on your computer looks strange, the IT team can help. You are not alone.<br><br>In My First IT Task, you learn the everyday English you need for IT. You talk to the help desk, or you join an online meeting. The words are simple and the steps are short.<br><br>Today you learn five useful words and you practise in short, natural sentences. Go slowly — one step at a time. You can do it!",
+   "items": [
+    {
+     "q": "Which offices does IT support?",
+     "options": [
+      "No office",
+      "Only the São Paulo office",
+      "Only the London office",
+      "Every Czarnikow office"
+     ],
+     "answer": 3,
+     "why": "\"IT supports every Czarnikow office, from London to São Paulo.\""
+    },
+    {
+     "q": "What do you learn in \"My First IT Task\"?",
+     "options": [
+      "How to sell coffee",
+      "How to open a new office",
+      "How to build a computer",
+      "The everyday English you need for IT"
+     ],
+     "answer": 3,
+     "why": "\"you learn the everyday English you need for IT.\""
+    },
+    {
+     "q": "How does the text say you should go?",
+     "options": [
+      "Very fast",
+      "Slowly, one step at a time",
+      "All in one day",
+      "Without any help"
+     ],
+     "answer": 1,
+     "why": "\"Go slowly — one step at a time.\""
+    },
+    {
+     "q": "The text says \"You are not alone.\" This suggests that…",
+     "options": [
+      "IT is only in London",
+      "you must fix every problem by yourself",
+      "you can ask the IT team for help",
+      "no one works at Czarnikow"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"You are not alone\" quer dizer que o time de IT está lá para ajudar você."
+    },
+    {
+     "q": "Why does the text say \"You can do it!\"?",
+     "options": [
+      "To ask you to stop",
+      "To tell you to work faster",
+      "To make you feel confident about the task",
+      "To say the task is impossible"
+     ],
+     "answer": 2,
+     "why": "Inferência: a frase encoraja o aluno — o tom é positivo e simples."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James guiando você na sua primeira tarefa de IT. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! I'm James from IT. Today we do your first IT task together. It is easy. Just follow me, one step at a time.<br><br>First, log in with your name and your password. Good. Now open your email and send a test email to me. This is only a test, so a short message is fine. Perfect.<br><br>Next, save a file on the shared drive. Give the file a clear name, so people can find it later. When the file is saved, please confirm with a quick message.<br><br>Now share the folder with your team. Sharing is important, because your team needs the same files. And last, close the laptop safely. Do not just shut the lid — log out first, then close it.<br><br>Well done! You finish your first task today. Remember: small IT habits are good habits. If something looks strange, call me. I am always here to help. See you soon!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "James from IT",
+      "A help desk robot",
+      "The office manager",
+      "Sophie from sales"
+     ],
+     "answer": 0,
+     "why": "\"I'm James from IT.\""
+    },
+    {
+     "q": "What is the FIRST step James asks you to do?",
+     "options": [
+      "Share a folder",
+      "Save a file",
+      "Close the laptop",
+      "Log in with your name and password"
+     ],
+     "answer": 3,
+     "why": "\"First, log in with your name and your password.\""
+    },
+    {
+     "q": "How should you close the laptop?",
+     "options": [
+      "Leave it open",
+      "Just shut the lid",
+      "Turn it off at the wall",
+      "Log out first, then close it"
+     ],
+     "answer": 3,
+     "why": "\"log out first, then close it.\""
+    },
+    {
+     "q": "Why does James ask you to give the file a clear name?",
+     "options": [
+      "So no one can open it",
+      "So people can find it later",
+      "So it saves faster",
+      "So the file is smaller"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Give the file a clear name, so people can find it later.\""
+    },
+    {
+     "q": "How would you best describe James's tone?",
+     "options": [
+      "Angry and in a hurry",
+      "Cold and formal",
+      "Kind, calm and helpful",
+      "Bored and tired"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele fala com calma, encoraja (\"It is easy\", \"Well done!\") e oferece ajuda."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I'm ready for the next IT <strong>task</strong>.\" A task is…",
+     "options": [
+      "a meeting room",
+      "a small job or thing to do",
+      "a computer",
+      "an email"
+     ],
+     "answer": 1,
+     "why": "Task = tarefa, um trabalho ou coisa para fazer."
+    },
+    {
+     "q": "\"There's a new <strong>setup</strong> on the help desk.\" A setup is…",
+     "options": [
+      "a new office",
+      "a long report",
+      "a coffee break",
+      "a way something is arranged or configured"
+     ],
+     "answer": 3,
+     "why": "Setup = configuração, o modo como algo está montado."
+    },
+    {
+     "q": "Choose the correct word: \"This is only a ___, so a short email is fine.\"",
+     "options": [
+      "finish",
+      "office",
+      "test",
+      "setup"
+     ],
+     "answer": 2,
+     "why": "Test = teste; a frase fala de um e-mail de teste."
+    },
+    {
+     "q": "Choose the correct word: \"When the file is saved, please ___ with a quick message.\"",
+     "options": [
+      "task",
+      "test",
+      "confirm",
+      "setup"
+     ],
+     "answer": 2,
+     "why": "Confirm = confirmar; você avisa que já salvou."
+    },
+    {
+     "q": "\"You <strong>finish</strong> your first task today.\" To finish means to…",
+     "options": [
+      "cancel",
+      "end or complete",
+      "wait",
+      "start"
+     ],
+     "answer": 1,
+     "why": "Finish = terminar, completar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de IT e trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>log in</strong> with your name and password.\" To log in means to…",
+     "options": [
+      "enter the system with your details",
+      "send an email",
+      "print a file",
+      "turn off the computer"
+     ],
+     "answer": 0,
+     "why": "Log in = entrar no sistema com seus dados."
+    },
+    {
+     "q": "\"Before you close the laptop, <strong>log out</strong> first.\" To log out means to…",
+     "options": [
+      "save your work",
+      "leave the system safely",
+      "call the help desk",
+      "open a new file"
+     ],
+     "answer": 1,
+     "why": "Log out = sair do sistema com segurança."
+    },
+    {
+     "q": "\"IT will <strong>set up</strong> your new laptop tomorrow.\" To set up means to…",
+     "options": [
+      "prepare and configure it",
+      "throw it away",
+      "sell it",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Set up = preparar e configurar algo para uso."
+    },
+    {
+     "q": "\"Always <strong>back up</strong> your files on the shared drive.\" To back up means to…",
+     "options": [
+      "print the files",
+      "save a copy in a safe place",
+      "delete the files",
+      "email the files to a client"
+     ],
+     "answer": 1,
+     "why": "Back up = fazer uma cópia de segurança."
+    },
+    {
+     "q": "\"When something looks strange, <strong>reach out</strong> to IT.\" To reach out means to…",
+     "options": [
+      "wait a week",
+      "ignore the problem",
+      "ask someone for help",
+      "restart the computer"
+     ],
+     "answer": 2,
+     "why": "Reach out = procurar alguém, pedir ajuda."
+    }
+   ]
+  }
+ ]
+}

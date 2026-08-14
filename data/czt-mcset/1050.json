@@ -1,0 +1,259 @@
+{
+ "num": 1050,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Sugar is measured in tonnes and kilos. One tonne is one thousand kilos. It is a big unit.<br><br>In international trade, we usually count in tonnes. Sometimes we write MT. MT means metric tonnes. It is the same thing.<br><br>Today we learn five words. We also learn how to use two small words: per and of. We say \"the price is 400 dollars per tonne\" and \"twenty tonnes of sugar\". Small units, big business.",
+   "items": [
+    {
+     "q": "How many kilos are in one tonne?",
+     "options": [
+      "Ten kilos",
+      "One hundred kilos",
+      "Fifty kilos",
+      "One thousand kilos"
+     ],
+     "answer": 3,
+     "why": "\"One tonne is one thousand kilos.\""
+    },
+    {
+     "q": "What does MT mean?",
+     "options": [
+      "Metric tonnes",
+      "Middle time",
+      "More tonnes",
+      "Many trucks"
+     ],
+     "answer": 0,
+     "why": "\"MT means metric tonnes.\""
+    },
+    {
+     "q": "In international trade, we usually count in…",
+     "options": [
+      "tonnes",
+      "kilos",
+      "boxes",
+      "bags"
+     ],
+     "answer": 0,
+     "why": "\"In international trade, we usually count in tonnes.\""
+    },
+    {
+     "q": "The text says a tonne is \"a big unit\". This suggests that…",
+     "options": [
+      "a tonne is smaller than a kilo",
+      "we never use tonnes",
+      "a tonne holds a lot of weight",
+      "a kilo is heavier than a tonne"
+     ],
+     "answer": 2,
+     "why": "Inferência: uma tonelada = 1.000 kilos, então é muito peso — uma unidade grande."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "we can write tonnes as MT and mean the same thing",
+      "sugar is never measured in kilos",
+      "per and of are not useful words",
+      "tonnes and MT are two different weights"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Sometimes we write MT… It is the same thing.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ethan explicando como o açúcar é embalado. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, I am Ethan. Let me show you how we pack the sugar.<br><br>First, the sugar goes into bags. Each bag is fifty kilos. So twenty bags make one tonne. That is easy to remember: twenty bags, one tonne.<br><br>Then we put the bags inside a container. A big container holds many bags. It can carry about twenty-five tonnes of sugar. The bags go in, and we close the door.<br><br>After that, the containers go on a ship. Each ship carries many containers. We ship the sugar by the tonne, not by the bag. Today we are loading ten thousand tonnes.<br><br>The price is four hundred dollars per tonne. Per tonne means for each tonne. So we always talk about tonnes when we talk about money. Small bags, big numbers. That is the sugar business.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How heavy is each bag?",
+     "options": [
+      "One hundred kilos",
+      "One tonne",
+      "Fifty kilos",
+      "Ten kilos"
+     ],
+     "answer": 2,
+     "why": "\"Each bag is fifty kilos.\""
+    },
+    {
+     "q": "How many bags make one tonne?",
+     "options": [
+      "Twenty",
+      "Fifty",
+      "Ten",
+      "One hundred"
+     ],
+     "answer": 0,
+     "why": "\"twenty bags make one tonne.\""
+    },
+    {
+     "q": "How much sugar can a big container carry?",
+     "options": [
+      "About one tonne",
+      "About one hundred tonnes",
+      "About five tonnes",
+      "About twenty-five tonnes"
+     ],
+     "answer": 3,
+     "why": "\"It can carry about twenty-five tonnes of sugar.\""
+    },
+    {
+     "q": "Ethan says \"per tonne means for each tonne\". This suggests that the price is counted…",
+     "options": [
+      "for the whole ship together",
+      "for each bag",
+      "for each container",
+      "for every single tonne"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"per\" indica o preço para cada unidade — cada tonelada."
+    },
+    {
+     "q": "Why does Ethan say \"small bags, big numbers\"?",
+     "options": [
+      "Because many small bags add up to a lot of tonnes",
+      "Because the ship is small",
+      "Because one bag is very heavy",
+      "Because the bags are cheap"
+     ],
+     "answer": 0,
+     "why": "Inferência: sacas de 50 kg somam milhares de toneladas — pequeno vira grande."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We shipped ten thousand <strong>tonnes</strong> of sugar.\" A tonne is…",
+     "options": [
+      "ten kilos",
+      "one bag",
+      "one thousand kilos",
+      "one hundred kilos"
+     ],
+     "answer": 2,
+     "why": "Tonne = tonelada = 1.000 kilos."
+    },
+    {
+     "q": "\"Each bag is fifty <strong>kilos</strong>.\" A kilo is…",
+     "options": [
+      "a unit of weight",
+      "a ship",
+      "a price",
+      "a container"
+     ],
+     "answer": 0,
+     "why": "Kilo = quilo, uma unidade de peso."
+    },
+    {
+     "q": "Choose the correct word: \"We put the sugar into a fifty-kilo ___.\"",
+     "options": [
+      "bag",
+      "ship",
+      "price",
+      "tonne"
+     ],
+     "answer": 0,
+     "why": "Bag = saca/saco; é onde o açúcar vai antes de ir no contêiner."
+    },
+    {
+     "q": "\"The bags go inside a big <strong>container</strong>.\" A container is…",
+     "options": [
+      "a unit of money",
+      "a kind of ship",
+      "a small bag",
+      "a large box for shipping"
+     ],
+     "answer": 3,
+     "why": "Container = contêiner, a caixa grande usada para transportar as sacas."
+    },
+    {
+     "q": "Choose the correct word: \"The price is four hundred dollars ___ tonne.\"",
+     "options": [
+      "of",
+      "at",
+      "in",
+      "per"
+     ],
+     "answer": 3,
+     "why": "Per = por (unidade): 400 dólares por tonelada."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem quando falamos de embalar e enviar açúcar. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We <strong>load</strong> the bags into the container.\" To load means to…",
+     "options": [
+      "close the door",
+      "take things out",
+      "put things in",
+      "count the money"
+     ],
+     "answer": 2,
+     "why": "Load = carregar, colocar as coisas dentro."
+    },
+    {
+     "q": "\"We <strong>ship</strong> the sugar by the tonne.\" To ship means to…",
+     "options": [
+      "buy more sugar",
+      "send by boat",
+      "weigh the bags",
+      "sell in a shop"
+     ],
+     "answer": 1,
+     "why": "Ship = enviar (por navio)."
+    },
+    {
+     "q": "\"How much does one bag <strong>weigh</strong>?\" To weigh asks about…",
+     "options": [
+      "the colour",
+      "the heaviness",
+      "the price",
+      "the size of the ship"
+     ],
+     "answer": 1,
+     "why": "Weigh = pesar; a pergunta é sobre o peso."
+    },
+    {
+     "q": "\"Twenty bags <strong>add up to</strong> one tonne.\" To add up to means to…",
+     "options": [
+      "make a total of",
+      "become cheaper",
+      "cost too much",
+      "go inside a ship"
+     ],
+     "answer": 0,
+     "why": "Add up to = somar, dar um total de."
+    },
+    {
+     "q": "\"The container is full, so we <strong>close it up</strong>.\" To close it up means to…",
+     "options": [
+      "open it again",
+      "send it back",
+      "shut it completely",
+      "sell it"
+     ],
+     "answer": 2,
+     "why": "Close it up = fechar por completo."
+    }
+   ]
+  }
+ ]
+}

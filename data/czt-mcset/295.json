@@ -1,0 +1,259 @@
+{
+ "num": 295,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "KPIs and supply chain dashboards at board level serve a different purpose from operational ones. The board is not trying to run the warehouse or chase a specific shipment; it is trying to understand whether the supply chain is healthy enough to support the company's strategy over the next two or three years. That means the board dashboard shows different numbers: service level trend over quarters, not daily OTIF; inventory days against industry benchmarks, not weekly stock counts; concentration risk by supplier and geography, not individual open orders. The board cares about direction, risk and resilience — not operational detail.<br><br>Mistakes happen when supply chain leaders show the board their own operational dashboards, which are dense, weekly, and completely uninterpretable by outsiders. The right instinct is to translate: to build a small, stable set of board-level indicators that tell the real story of the chain in language the board can act on.<br><br>Done well, this translation changes how the board sees the supply chain — from a cost centre to a source of strategic resilience.",
+   "items": [
+    {
+     "q": "According to the text, what is the board primarily trying to understand?",
+     "options": [
+      "Which individual orders are still open",
+      "How to chase a specific delayed shipment",
+      "Whether the supply chain can support the company's strategy over the next few years",
+      "How the warehouse is run day to day"
+     ],
+     "answer": 2,
+     "why": "\"it is trying to understand whether the supply chain is healthy enough to support the company's strategy over the next two or three years.\""
+    },
+    {
+     "q": "Which set of metrics belongs on a board-level dashboard, according to the text?",
+     "options": [
+      "Line-by-line shipment tracking and hourly throughput",
+      "Individual supplier invoices and daily picking rates",
+      "Daily OTIF, weekly stock counts and individual open orders",
+      "Service level trend, inventory days against benchmarks and concentration risk"
+     ],
+     "answer": 3,
+     "why": "O texto contrasta as métricas de board (tendência, dias de estoque vs. benchmark, risco de concentração) com as operacionais."
+    },
+    {
+     "q": "Why do problems arise, according to the text?",
+     "options": [
+      "The supply chain has too few metrics to report",
+      "Leaders show the board dense operational dashboards outsiders cannot interpret",
+      "Boards refuse to look at any supply chain data at all",
+      "The board demands more operational detail than leaders can provide"
+     ],
+     "answer": 1,
+     "why": "\"Mistakes happen when supply chain leaders show the board their own operational dashboards, which are dense, weekly, and completely uninterpretable by outsiders.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Translation adds value when it is done deliberately",
+      "Resilience matters more to the board than daily throughput",
+      "A board dashboard should read differently from an operational one",
+      "The more granular the data shown to the board, the better its decisions"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto argumenta que granularidade operacional torna o painel ilegível para o board — o oposto de melhor decisão."
+    },
+    {
+     "q": "The phrase \"from a cost centre to a source of strategic resilience\" suggests that…",
+     "options": [
+      "Good translation can reframe how the board values the supply chain",
+      "The supply chain should be cut to reduce costs",
+      "The board should stop reviewing the supply chain entirely",
+      "Resilience and cost are the same measure"
+     ],
+     "answer": 0,
+     "why": "Inferência: a boa tradução muda a percepção — de despesa a fonte de resiliência estratégica."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry na preparação do board pack trimestral. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let me walk you through the new supply chain slide before it goes into the board pack. I've pulled the old one — that weekly operational view with forty-odd lines. Honestly, no one outside the function could read it, and I'm not sure it earned its place.<br><br>What I've put in its stead is six indicators. Six, no more. Service level as a trend over the last eight quarters, inventory days set against the industry benchmark, and concentration risk — how exposed we are by supplier and by geography. Then working capital tied up in stock, year on year, and total cost of ownership rather than unit cost, because unit cost flatters us and hides the freight.<br><br>Each of the six has an owner, a target and a review cadence. If a number moves the wrong way, the board knows exactly who to ask and when it gets looked at again.<br><br>The point isn't to show off how much we measure. It's the opposite. Cutting it down to six was the hard part — deciding what the board actually needs to act on, and leaving everything else in the operational pack where it belongs.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why did Harry pull the old supply chain slide?",
+     "options": [
+      "It was a dense weekly operational view outsiders could not read",
+      "It was missing the service level figures",
+      "It contained confidential supplier data",
+      "The board had asked for more detail"
+     ],
+     "answer": 0,
+     "why": "\"that weekly operational view with forty-odd lines… no one outside the function could read it.\""
+    },
+    {
+     "q": "How many indicators does the new slide contain?",
+     "options": [
+      "Six",
+      "Four",
+      "Eight",
+      "Twelve"
+     ],
+     "answer": 0,
+     "why": "\"What I've put in its stead is six indicators. Six, no more.\""
+    },
+    {
+     "q": "Why does Harry prefer total cost of ownership over unit cost?",
+     "options": [
+      "Unit cost is harder to calculate",
+      "The board specifically requested unit cost be removed",
+      "Total cost of ownership is updated more frequently",
+      "Unit cost flatters the numbers and hides freight"
+     ],
+     "answer": 3,
+     "why": "\"total cost of ownership rather than unit cost, because unit cost flatters us and hides the freight.\""
+    },
+    {
+     "q": "When Harry says \"I'm not sure it earned its place,\" he implies that…",
+     "options": [
+      "The old slide did not justify the space it took in the pack",
+      "The board had never seen the slide before",
+      "Someone else had designed the slide badly",
+      "The slide was too expensive to produce"
+     ],
+     "answer": 0,
+     "why": "Inferência: 'earn its place' = justificar sua presença; ele sugere que a informação não valia o espaço."
+    },
+    {
+     "q": "What does Harry regard as the hard part of the work?",
+     "options": [
+      "Assigning an owner to each metric",
+      "Collecting the underlying operational data",
+      "Deciding what to leave out and cutting the set down to six",
+      "Persuading the board to read the slide"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Cutting it down to six was the hard part — deciding what the board actually needs to act on.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We hold a great deal of stock with a single supplier, so our <strong>concentration risk</strong> is high.\" Concentration risk is…",
+     "options": [
+      "the risk of losing focus during long meetings",
+      "the danger of overstating inventory value",
+      "the exposure created by depending heavily on one supplier or region",
+      "the cost of concentrating production in one factory"
+     ],
+     "answer": 2,
+     "why": "Concentration risk = risco de concentração: exposição por depender demais de um fornecedor ou geografia."
+    },
+    {
+     "q": "Choose the correct word: \"Measuring inventory days against an industry ___ tells us whether we are lean or bloated.\"",
+     "options": [
+      "benchmark",
+      "geography",
+      "instinct",
+      "purpose"
+     ],
+     "answer": 0,
+     "why": "Benchmark = referência: parâmetro do setor contra o qual se compara o próprio número."
+    },
+    {
+     "q": "\"The weekly operational pack was <strong>uninterpretable</strong> to anyone outside the function.\" Uninterpretable means…",
+     "options": [
+      "confidential and restricted",
+      "impossible to make sense of",
+      "printed at the wrong scale",
+      "updated too infrequently"
+     ],
+     "answer": 1,
+     "why": "Uninterpretable = não interpretável: que não se consegue entender ou ler."
+    },
+    {
+     "q": "Choose the correct phrase: \"The board follows the ___ over eight quarters rather than a single monthly figure.\"",
+     "options": [
+      "concentration risk",
+      "service level trend",
+      "total cost of ownership",
+      "cost centre"
+     ],
+     "answer": 1,
+     "why": "Service level trend = tendência de nível de serviço, acompanhada ao longo de vários trimestres."
+    },
+    {
+     "q": "\"Reframed well, the supply chain stops being a mere <strong>cost centre</strong>.\" A cost centre is…",
+     "options": [
+      "the office where invoices are processed",
+      "a part of the business seen only as an expense to control",
+      "a supplier that charges above market rates",
+      "the department that sets prices for customers"
+     ],
+     "answer": 1,
+     "why": "Cost centre = centro de custo: unidade vista apenas como despesa a ser contida, não como fonte de valor."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de board e reporte executivo. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The CFO still has to <strong>sign off on</strong> the new KPI pack before it goes to the board.\" To sign off on means to…",
+     "options": [
+      "translate into plain language",
+      "formally approve",
+      "quietly shelve",
+      "circulate for comments"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the board dashboard from next quarter onwards.\" To roll out means to…",
+     "options": [
+      "implement or introduce in stages",
+      "test in secret",
+      "summarise on one page",
+      "withdraw gradually"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar/introduzir de forma progressiva."
+    },
+    {
+     "q": "\"Two directors <strong>pushed back on</strong> cutting the metric set to six.\" They…",
+     "options": [
+      "postponed reading the pack",
+      "resisted or challenged the idea",
+      "rewrote the whole slide themselves",
+      "approved it without discussion"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"Reporting a nicer unit cost would only <strong>paper over</strong> the freight problem.\" To paper over means to…",
+     "options": [
+      "resolve for good",
+      "conceal a problem without solving it",
+      "document thoroughly",
+      "escalate to the board"
+     ],
+     "answer": 1,
+     "why": "Paper over = mascarar/disfarçar um problema sem realmente resolvê-lo."
+    },
+    {
+     "q": "\"Six sharp indicators will <strong>move the needle</strong> on how the board sees the chain.\" This means they will…",
+     "options": [
+      "make a noticeable, meaningful difference",
+      "require external auditing",
+      "add unnecessary complexity",
+      "take too long to compile"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível e relevante."
+    }
+   ]
+  }
+ ]
+}

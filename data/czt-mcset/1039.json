@@ -11,9 +11,9 @@
      "q": "What does the text say every work trip is?",
      "options": [
       "A long holiday",
-      "A short meeting",
+      "A big problem",
       "An English lesson",
-      "A big problem"
+      "A short meeting"
      ],
      "answer": 2,
      "why": "\"Every work trip is an English lesson.\""
@@ -21,41 +21,41 @@
     {
      "q": "Which word do you use for a place, like the airport?",
      "options": [
+      "from",
       "at",
       "to",
-      "from",
       "of"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"I am at the airport\" — at é usado para lugar."
     },
     {
      "q": "You say \"I fly ___ London.\" Which word is correct?",
      "options": [
-      "in",
-      "from",
       "to",
-      "at"
+      "from",
+      "at",
+      "in"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"I fly to London\" — to mostra direção."
     },
     {
      "q": "The text suggests that the author would most likely AGREE with…",
      "options": [
       "You should study only fast",
+      "Grammar is not important",
       "Slow practice helps you learn English",
-      "Work trips are a waste of time",
-      "Grammar is not important"
+      "Work trips are a waste of time"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: \"Take your time… slow practice makes strong English.\""
     },
     {
      "q": "\"Every sentence counts\" suggests that…",
      "options": [
-      "You must count your sentences",
       "Only long sentences matter",
+      "You must count your sentences",
       "Even small, simple sentences are useful",
       "Sentences are not important"
      ],
@@ -77,19 +77,19 @@
     {
      "q": "Where is James right now?",
      "options": [
-      "At the hotel",
       "At the office",
-      "At the meeting room",
-      "At the airport"
+      "At the hotel",
+      "At the airport",
+      "At the meeting room"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Right now I am at the airport.\""
     },
     {
      "q": "Where is James's flight to?",
      "options": [
-      "São Paulo",
       "London",
+      "São Paulo",
       "New York",
       "Brazil"
      ],
@@ -99,8 +99,8 @@
     {
      "q": "What time does James arrive?",
      "options": [
-      "At six",
       "At noon",
+      "At six",
       "At nine in the morning",
       "At ten o'clock at night"
      ],
@@ -110,12 +110,12 @@
     {
      "q": "Why does James like work trips?",
      "options": [
-      "He stays at home",
-      "He does not work",
       "He meets people and practises English",
+      "He does not work",
+      "He stays at home",
       "The flights are very long"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: \"I see new people, I practise my English, and I learn every day.\""
     },
     {
@@ -123,8 +123,8 @@
      "options": [
       "Angry and sad",
       "Tired but positive",
-      "Bored and lost",
-      "Afraid of the flight"
+      "Afraid of the flight",
+      "Bored and lost"
      ],
      "answer": 1,
      "why": "Inferência: \"I am a little tired, but I am happy\" e \"I like work trips\"."
@@ -139,32 +139,32 @@
     {
      "q": "\"I wait for my plane at the <strong>airport</strong>.\" An <strong>airport</strong> is…",
      "options": [
-      "a train station",
       "a meeting room",
-      "a small hotel room",
-      "a place where planes take off and land"
+      "a train station",
+      "a place where planes take off and land",
+      "a small hotel room"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Airport = aeroporto: lugar onde os aviões chegam e partem."
     },
     {
      "q": "Choose the correct word: \"I sleep at the ___ near the office.\"",
      "options": [
       "trip",
-      "hotel",
       "airport",
+      "hotel",
       "flight"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Hotel = hotel: lugar onde você dorme na viagem."
     },
     {
      "q": "\"My <strong>flight</strong> is at six o'clock.\" A <strong>flight</strong> is…",
      "options": [
-      "a phone call",
       "a hotel room",
+      "a car",
       "a plane journey",
-      "a car"
+      "a phone call"
      ],
      "answer": 2,
      "why": "Flight = voo: a viagem de avião."
@@ -172,23 +172,23 @@
     {
      "q": "Choose the correct word: \"The ___ to New York is short — only nine hours.\"",
      "options": [
-      "office",
       "airport",
       "hotel",
-      "trip"
+      "trip",
+      "office"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Trip = viagem: o deslocamento inteiro de trabalho."
     },
     {
      "q": "\"I <strong>arrive</strong> at ten o'clock at night.\" To <strong>arrive</strong> means to…",
      "options": [
       "leave a place",
-      "call a friend",
+      "get to a place",
       "buy a ticket",
-      "get to a place"
+      "call a friend"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Arrive = chegar a um lugar."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"At the hotel, I <strong>check in</strong> first.\" To check in means to…",
      "options": [
-      "register when you arrive",
       "pay the bill and leave",
-      "clean the room",
-      "call the office"
+      "register when you arrive",
+      "call the office",
+      "clean the room"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Check in = fazer o registro de entrada no hotel ou no voo."
     },
     {
      "q": "\"My plane <strong>takes off</strong> at six.\" To take off means to…",
      "options": [
-      "stop at the gate",
-      "wait for the crew",
       "land on the ground",
-      "leave the ground and fly"
+      "stop at the gate",
+      "leave the ground and fly",
+      "wait for the crew"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Take off = decolar."
     },
     {
      "q": "\"A driver will <strong>pick me up</strong> at the airport.\" This means the driver will…",
      "options": [
-      "cancel the trip",
-      "sell me a ticket",
+      "leave me alone",
       "come and collect me",
-      "leave me alone"
+      "sell me a ticket",
+      "cancel the trip"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Pick up = buscar, pegar alguém."
     },
     {
      "q": "\"I <strong>set off</strong> early in the morning.\" To set off means to…",
      "options": [
-      "finish a meeting",
       "start a journey",
-      "go to sleep",
-      "pay for the hotel"
+      "pay for the hotel",
+      "finish a meeting",
+      "go to sleep"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Set off = partir, começar a viagem."
     },
     {
      "q": "\"After the meeting, I <strong>go back</strong> to the airport.\" To go back means to…",
      "options": [
-      "arrive for the first time",
       "return to a place",
-      "miss the flight",
-      "stay one more night"
+      "stay one more night",
+      "arrive for the first time",
+      "miss the flight"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Go back = voltar a um lugar."
     }
    ]

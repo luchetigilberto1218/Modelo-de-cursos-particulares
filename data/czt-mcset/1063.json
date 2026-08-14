@@ -1,0 +1,259 @@
+{
+ "num": 1063,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "The Czarnikow London office is smaller than many people imagine. But every corner has a story. Today you learn how to describe a room. You use <em>there is</em> for one thing and <em>there are</em> for many things.<br><br>There is a reception on the ground floor. There are three meeting rooms on our floor. There is a kettle in every kitchen, and there are biscuits next to the coffee machine. There is a view of the Thames from my desk.<br><br>There are twelve brokers on the sugar desk. There is always tea at eleven, and there are plenty of plants in the office. It is a small office, but it is a happy one.",
+   "items": [
+    {
+     "q": "How many meeting rooms are there on the floor?",
+     "options": [
+      "Twelve",
+      "Two",
+      "Three",
+      "One"
+     ],
+     "answer": 2,
+     "why": "\"There are three meeting rooms on our floor.\""
+    },
+    {
+     "q": "Where is the reception?",
+     "options": [
+      "In the kitchen",
+      "Next to the coffee machine",
+      "On the ground floor",
+      "On the sugar desk"
+     ],
+     "answer": 2,
+     "why": "\"There is a reception on the ground floor.\""
+    },
+    {
+     "q": "What can you see from the writer's desk?",
+     "options": [
+      "The reception",
+      "The coffee machine",
+      "The sugar desk",
+      "A view of the Thames"
+     ],
+     "answer": 3,
+     "why": "\"There is a view of the Thames from my desk.\""
+    },
+    {
+     "q": "The text says the office is small but happy. This suggests that…",
+     "options": [
+      "the office is empty",
+      "the writer feels good about the office",
+      "the office will close soon",
+      "the writer does not like the office"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"a happy one\" mostra um sentimento positivo sobre o escritório."
+    },
+    {
+     "q": "There are twelve brokers on the sugar desk. The writer would most likely AGREE that…",
+     "options": [
+      "many people work on the sugar desk",
+      "the sugar desk is empty",
+      "there is only one broker",
+      "there are no desks in the office"
+     ],
+     "answer": 0,
+     "why": "Inferência: doze brokers é um número grande, então muitas pessoas trabalham na mesa do açúcar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie mostrar o escritório de Londres a um visitante. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! Welcome to our London office. Come in, please. Let me show you the rooms.<br><br>This is the reception. There is one big desk here, and there are two chairs for visitors. Look — there is a window with a view of the river. It is very nice in the morning.<br><br>Now, this way. There are three meeting rooms on this floor. This one is my favourite. There is a long table, and there are eight chairs around it. There is a screen on the wall for our video calls.<br><br>Here is the kitchen. There is a kettle, and there are always biscuits next to the coffee machine. Tea is at eleven every day. Do you drink tea? Good!<br><br>And this is the sugar desk. There are twelve brokers here. It is a busy room, but it is friendly. There are plants on every desk. Is there anything you want to see? Just ask me. I am happy to help.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many chairs are there for visitors in the reception?",
+     "options": [
+      "Eight",
+      "One",
+      "Two",
+      "Twelve"
+     ],
+     "answer": 2,
+     "why": "\"there are two chairs for visitors.\""
+    },
+    {
+     "q": "What is on the wall in Sophie's favourite meeting room?",
+     "options": [
+      "A kettle",
+      "A screen",
+      "A plant",
+      "A window"
+     ],
+     "answer": 1,
+     "why": "\"There is a screen on the wall for our video calls.\""
+    },
+    {
+     "q": "What time is tea?",
+     "options": [
+      "At eleven",
+      "At ten",
+      "At nine",
+      "At twelve"
+     ],
+     "answer": 0,
+     "why": "\"Tea is at eleven every day.\""
+    },
+    {
+     "q": "Sophie says the sugar desk is \"busy, but friendly\". This suggests that…",
+     "options": [
+      "people work hard but are kind to each other",
+      "nobody likes the room",
+      "the room is quiet and empty",
+      "there are no people there"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"busy\" mostra muito trabalho e \"friendly\" mostra pessoas gentis."
+    },
+    {
+     "q": "How does Sophie feel about the visitor?",
+     "options": [
+      "She does not want to talk",
+      "She is in a hurry",
+      "She is bored",
+      "She is happy to help"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"I am happy to help\" e o tom acolhedor mostram simpatia."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I work at a big <strong>desk</strong> near the window.\" A desk is…",
+     "options": [
+      "a door",
+      "a window",
+      "a table for work",
+      "a chair"
+     ],
+     "answer": 2,
+     "why": "Desk = mesa de trabalho."
+    },
+    {
+     "q": "\"Please sit down. There is a <strong>chair</strong> for you.\" A chair is…",
+     "options": [
+      "a desk",
+      "a window",
+      "a room",
+      "a thing you sit on"
+     ],
+     "answer": 3,
+     "why": "Chair = cadeira, onde você senta."
+    },
+    {
+     "q": "Choose the correct word: \"There is a big ___ in the office, so you can see the river.\"",
+     "options": [
+      "chair",
+      "desk",
+      "window",
+      "door"
+     ],
+     "answer": 2,
+     "why": "Window = janela: é por onde você vê o rio."
+    },
+    {
+     "q": "Choose the correct word: \"We have a meeting now. Please come into this ___.\"",
+     "options": [
+      "chair",
+      "kettle",
+      "desk",
+      "room"
+     ],
+     "answer": 3,
+     "why": "Room = sala: o lugar onde a reunião acontece."
+    },
+    {
+     "q": "\"Please close the <strong>door</strong> when you leave.\" A door is…",
+     "options": [
+      "a chair",
+      "a table",
+      "the way in and out of a room",
+      "a window"
+     ],
+     "answer": 2,
+     "why": "Door = porta: por onde você entra e sai."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no dia a dia do escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>Come in</strong>, please. Take a seat.\" Come in means…",
+     "options": [
+      "enter the room",
+      "close the door",
+      "leave the room",
+      "sit on the floor"
+     ],
+     "answer": 0,
+     "why": "Come in = entre, entre na sala."
+    },
+    {
+     "q": "\"<strong>Have a look</strong> at this room. It is very nice.\" Have a look means…",
+     "options": [
+      "close the window",
+      "clean the room",
+      "look at something",
+      "buy something"
+     ],
+     "answer": 2,
+     "why": "Have a look = dar uma olhada."
+    },
+    {
+     "q": "\"I am happy to <strong>show you around</strong> the office.\" To show someone around means…",
+     "options": [
+      "to take them on a tour",
+      "to write a report",
+      "to send them home",
+      "to make coffee"
+     ],
+     "answer": 0,
+     "why": "Show someone around = mostrar o lugar, fazer um tour."
+    },
+    {
+     "q": "\"<strong>Help yourself</strong> to a biscuit and some tea.\" Help yourself means…",
+     "options": [
+      "wait outside",
+      "call a colleague",
+      "wash the cups",
+      "take what you want"
+     ],
+     "answer": 3,
+     "why": "Help yourself = sirva-se, pegue à vontade."
+    },
+    {
+     "q": "\"Is there anything you want to see? Just <strong>ask me</strong>.\" Ask me means…",
+     "options": [
+      "leave the room now",
+      "give me the answer",
+      "make a phone call",
+      "put your question to me"
+     ],
+     "answer": 3,
+     "why": "Ask me = me pergunte, faça sua pergunta para mim."
+    }
+   ]
+  }
+ ]
+}

@@ -11,22 +11,22 @@
      "q": "Where does Sophie work?",
      "options": [
       "At a bank",
-      "At home",
       "At a school",
-      "At Czarnikow"
+      "At Czarnikow",
+      "At home"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Sophie works at Czarnikow.\""
     },
     {
      "q": "How does Sophie explain taxes?",
      "options": [
-      "Fast and with hard words",
-      "Slowly, in simple English",
+      "Only in writing",
       "In another language",
-      "Only in writing"
+      "Fast and with hard words",
+      "Slowly, in simple English"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"she explains slowly, in simple English.\""
     },
     {
@@ -43,21 +43,21 @@
     {
      "q": "The author would most likely DISAGREE with this idea:",
      "options": [
+      "You need difficult words to talk about taxes.",
       "Sophie's easy words help the team.",
       "Small business taxes follow simple patterns.",
-      "One small step at a time helps.",
-      "You need difficult words to talk about taxes."
+      "One small step at a time helps."
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: o texto diz \"You do not need difficult words — you need the right words.\""
     },
     {
      "q": "\"One small step at a time\" suggests that…",
      "options": [
-      "you should learn everything today",
-      "taxes get easier little by little",
       "Sophie works alone",
-      "taxes are impossible to learn"
+      "taxes get easier little by little",
+      "taxes are impossible to learn",
+      "you should learn everything today"
      ],
      "answer": 1,
      "why": "Inferência: passo a passo, com calma, os impostos ficam mais fáceis."
@@ -77,10 +77,10 @@
     {
      "q": "What is Sophie's message about taxes at the start?",
      "options": [
-      "The team must work late",
+      "It is very hard this year",
       "Do not worry, it is easy",
       "The forms are lost",
-      "It is very hard this year"
+      "The team must work late"
      ],
      "answer": 1,
      "why": "\"Please do not worry. It is easy.\""
@@ -88,45 +88,45 @@
     {
      "q": "What is the FIRST step Sophie describes?",
      "options": [
-      "Call the accountant",
       "Check the deadline",
       "Hand in the form",
-      "Fill out the form"
+      "Fill out the form",
+      "Call the accountant"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"First, we fill out the form.\""
     },
     {
      "q": "When is the deadline?",
      "options": [
-      "Next Friday",
-      "Today",
       "Next month",
-      "In seven years"
+      "Today",
+      "In seven years",
+      "Next Friday"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The deadline is next Friday.\""
     },
     {
      "q": "Why does Sophie say \"You already know them\"?",
      "options": [
-      "Sophie taught them last year",
       "The tax words are simple and common",
       "The team wrote the forms",
-      "The team finished the taxes"
+      "The team finished the taxes",
+      "Sophie taught them last year"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: as palavras (small, quick, easy) são simples e do dia a dia, por isso a equipe já as conhece."
     },
     {
      "q": "How would you best describe Sophie's tone?",
      "options": [
-      "Calm and encouraging",
-      "Worried and unsure",
       "Angry and in a hurry",
-      "Bored and tired"
+      "Bored and tired",
+      "Worried and unsure",
+      "Calm and encouraging"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: ela tranquiliza a equipe, se oferece para ajudar e diz \"one step at a time\"."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"Our company is <strong>small</strong>, so the forms are short.\" <strong>Small</strong> means…",
      "options": [
-      "little, not big",
       "very kind",
+      "little, not big",
       "very old",
       "very fast"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Small = pequeno, não grande."
     },
     {
      "q": "Choose the correct word: \"The tax form is ___. It has only three questions.\"",
      "options": [
-      "loud",
-      "heavy",
       "simple",
-      "cold"
+      "loud",
+      "cold",
+      "heavy"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Simple = simples; poucas perguntas, fácil de responder."
     },
     {
      "q": "\"The process is <strong>quick</strong> — five minutes and it is done.\" <strong>Quick</strong> means…",
      "options": [
-      "difficult",
       "fast",
+      "difficult",
       "big",
       "slow"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Quick = rápido."
     },
     {
      "q": "Choose the correct word: \"Do not worry. This step is very ___, not difficult.\"",
      "options": [
-      "dark",
-      "expensive",
       "easy",
-      "long"
+      "dark",
+      "long",
+      "expensive"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Easy = fácil, o contrário de difficult."
     },
     {
      "q": "\"Sophie is <strong>friendly</strong>; she smiles and helps everyone.\" <strong>Friendly</strong> means…",
      "options": [
-      "kind and nice",
-      "in a hurry",
+      "far away",
       "very serious",
-      "far away"
+      "kind and nice",
+      "in a hurry"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Friendly = amigável, simpática."
     }
    ]
@@ -202,8 +202,8 @@
      "q": "\"First, we <strong>fill out</strong> the tax form.\" To fill out means to…",
      "options": [
       "write the information on it",
-      "hide it",
       "read it aloud",
+      "hide it",
       "throw it away"
      ],
      "answer": 0,
@@ -212,45 +212,45 @@
     {
      "q": "\"Please <strong>hand in</strong> the form before Friday.\" To hand in means to…",
      "options": [
-      "keep it at home",
-      "lose it",
+      "give it to the right person",
       "copy it",
-      "give it to the right person"
+      "keep it at home",
+      "lose it"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Hand in = entregar (dar o documento a quem recebe)."
     },
     {
      "q": "\"The accountant will <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
+      "delete it",
       "approve it",
       "print it",
-      "delete it",
       "read it fast"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar, dar o aval final."
     },
     {
      "q": "\"We <strong>keep track of</strong> every payment in a folder.\" To keep track of means to…",
      "options": [
       "explain it",
+      "pay for it",
       "follow and remember it",
-      "forget it",
-      "pay for it"
+      "forget it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Keep track of = acompanhar, manter o controle."
     },
     {
      "q": "\"Let's send the form <strong>on time</strong>.\" On time means…",
      "options": [
-      "in the morning only",
       "at the right moment, not late",
       "next year",
+      "in the morning only",
       "very slowly"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "On time = no prazo, na hora certa."
     }
    ]

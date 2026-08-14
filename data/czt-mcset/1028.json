@@ -10,9 +10,9 @@
     {
      "q": "According to the text, how does every good talk start?",
      "options": [
+      "With a meeting",
       "With a long email",
       "With a report",
-      "With a meeting",
       "With a good question"
      ],
      "answer": 3,
@@ -22,22 +22,22 @@
      "q": "How do you start a Yes/No question in the text?",
      "options": [
       "With \"Can\" or \"Could\"",
-      "With \"Do\" or \"Does\"",
       "With \"Is\" or \"Are\"",
+      "With \"Do\" or \"Does\"",
       "With \"What\" or \"Where\""
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"You start with 'Do' or 'Does', then the person, then the verb.\""
     },
     {
      "q": "What is a short answer to \"Do you speak English?\"",
      "options": [
-      "Yes, I do.",
-      "Yes, I speak it very well and every day.",
       "No, she doesn't.",
-      "I am speaking."
+      "Yes, I speak it very well and every day.",
+      "I am speaking.",
+      "Yes, I do."
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "A resposta curta para \"Do you...?\" é \"Yes, I do.\" / \"No, I don't.\""
     },
     {
@@ -45,21 +45,21 @@
      "options": [
       "\"A good question can start a good talk.\"",
       "\"Yes/No questions are easy to make.\"",
-      "\"Short questions are useful at work.\"",
-      "\"You need long sentences to answer a question.\""
+      "\"You need long sentences to answer a question.\"",
+      "\"Short questions are useful at work.\""
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: o texto diz \"You do not need long sentences\" — então discordaria dessa frase."
     },
     {
      "q": "\"Take your time\" at the end suggests that you should…",
      "options": [
-      "not worry and go slowly",
       "use only long words",
+      "skip the small questions",
       "answer very fast",
-      "skip the small questions"
+      "not worry and go slowly"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"Take your time\" significa ir com calma, sem pressa."
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "Where does Emma work?",
      "options": [
+      "At a school",
       "At a coffee shop",
       "At Czarnikow",
-      "At a bank",
-      "At a school"
+      "At a bank"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I am Emma. I work at Czarnikow.\""
     },
     {
      "q": "When Emma asks \"Do you speak English?\", what answer does she say is fine?",
      "options": [
-      "\"Ask me tomorrow.\"",
       "\"I speak five languages.\"",
       "\"No, never.\"",
+      "\"Ask me tomorrow.\"",
       "\"Yes, I do. A little.\""
      ],
      "answer": 3,
@@ -99,34 +99,34 @@
     {
      "q": "Do they have a meeting today?",
      "options": [
+      "No, they never have meetings",
       "Yes, at nine today",
       "No, they don't; they have a call tomorrow",
-      "Yes, after the coffee break",
-      "No, they never have meetings"
+      "Yes, after the coffee break"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Do we have a meeting today? ... No, we don't. We have a call tomorrow at nine.\""
     },
     {
      "q": "Emma suggests that asking \"Do you need help?\" is a good idea because…",
      "options": [
-      "it is only for the boss",
-      "it makes people feel good at work",
+      "it is a very hard question",
       "it takes a long time to answer",
-      "it is a very hard question"
+      "it is only for the boss",
+      "it makes people feel good at work"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"This is a kind question... people feel good. So please, ask it often.\""
     },
     {
      "q": "How would you best describe Emma's tone?",
      "options": [
+      "Bored and tired",
       "Kind and encouraging",
       "Serious and cold",
-      "Bored and tired",
       "Angry and in a hurry"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ela é calma, gentil e diz \"That is fine\", \"Thank you\", \"See you soon\"."
     }
    ]
@@ -139,43 +139,43 @@
     {
      "q": "\"That is a good <strong>question</strong>. Let me think.\" A <strong>question</strong> is…",
      "options": [
-      "a pergunta",
+      "a pausa",
       "a reunião",
       "a resposta",
-      "a pausa"
+      "a pergunta"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Question = pergunta."
     },
     {
      "q": "\"I have your <strong>answer</strong>: yes, we can meet on Monday.\" An <strong>answer</strong> is…",
      "options": [
-      "um cliente",
       "um café",
-      "a pergunta",
-      "a resposta"
+      "a resposta",
+      "um cliente",
+      "a pergunta"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Answer = resposta."
     },
     {
      "q": "Choose the correct word: \"Do you work here? ___, I do.\"",
      "options": [
+      "Question",
       "Please",
       "Yes",
-      "Question",
       "No"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Yes, I do\" é a resposta afirmativa curta."
     },
     {
      "q": "Choose the correct word: \"Do we start at nine? ___, we don't. We start at ten.\"",
      "options": [
       "No",
-      "Please",
       "Yes",
-      "Answer"
+      "Answer",
+      "Please"
      ],
      "answer": 0,
      "why": "\"No, we don't\" é a resposta negativa curta."
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct word: \"Can you help me, ___?\"",
      "options": [
+      "yes",
       "please",
       "no",
-      "answer",
-      "yes"
+      "answer"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Please = por favor, usado para pedir com educação."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"<strong>Do you have a minute?</strong>\" This means…",
      "options": [
-      "Are you late?",
+      "Do you have a little time now?",
       "What time is it?",
-      "Do you have a watch?",
-      "Do you have a little time now?"
+      "Are you late?",
+      "Do you have a watch?"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Do you have a minute?\" = você tem um minutinho / um tempo agora?"
     },
     {
      "q": "\"Let's <strong>take a break</strong> and have some coffee.\" To take a break means to…",
      "options": [
-      "call a client",
+      "go home for the day",
       "start a big project",
-      "stop work for a short rest",
-      "go home for the day"
+      "call a client",
+      "stop work for a short rest"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Take a break = fazer uma pausa curta."
     },
     {
      "q": "A friend asks \"Do you need help?\" A polite answer is \"<strong>Yes, please.</strong>\" This means…",
      "options": [
       "No, go away.",
-      "Yes, I would like help. Thank you.",
+      "Maybe tomorrow.",
       "I don't know.",
-      "Maybe tomorrow."
+      "Yes, I would like help. Thank you."
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Yes, please\" = sim, por favor: aceita com educação."
     },
     {
      "q": "Someone asks \"Do you like coffee?\" You say \"<strong>No, thanks.</strong>\" This means…",
      "options": [
-      "Ask me later",
-      "Yes, a lot",
       "I like tea only in winter",
-      "No, but thank you for asking"
+      "No, but thank you for asking",
+      "Yes, a lot",
+      "Ask me later"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"No, thanks\" = não, obrigado(a): recusa educada."
     },
     {
      "q": "At the end of a chat, Emma says \"<strong>See you soon!</strong>\" This means…",
      "options": [
-      "Goodbye, we will meet again soon",
-      "Come here quickly",
+      "Look at me now",
       "I can see you today",
-      "Look at me now"
+      "Goodbye, we will meet again soon",
+      "Come here quickly"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"See you soon\" = até logo / a gente se vê em breve."
     }
    ]

@@ -1,0 +1,259 @@
+{
+ "num": 19,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Sometimes people do not agree. This is normal. A small conflict can happen in any team. Maybe it is about a project, a deadline, or a simple message.<br><br>The important thing is to stay calm. Listen to the other person first. Many small problems are only a misunderstanding, not a real fight.<br><br>HR can help when the conflict is bigger. But often, a simple conversation is enough. Calm words solve many problems.",
+   "items": [
+    {
+     "q": "According to the text, is a small conflict normal in a team?",
+     "options": [
+      "Yes, it is normal",
+      "Only with new people",
+      "Only about money",
+      "No, it never happens"
+     ],
+     "answer": 0,
+     "why": "\"A small conflict can happen in any team.\" — o texto diz que é normal."
+    },
+    {
+     "q": "What should you do first?",
+     "options": [
+      "Stay calm and listen",
+      "Stop the project",
+      "Call HR right away",
+      "Send a long message"
+     ],
+     "answer": 0,
+     "why": "\"stay calm. Listen to the other person first.\""
+    },
+    {
+     "q": "When can HR help?",
+     "options": [
+      "Every day",
+      "When the conflict is bigger",
+      "Only on Monday",
+      "Never"
+     ],
+     "answer": 1,
+     "why": "\"HR can help when the conflict is bigger.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "A calm talk can solve a small problem",
+      "Listening is important",
+      "Small conflicts are normal",
+      "Every small conflict needs HR"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz que muitas vezes uma conversa simples basta — nem todo conflito precisa do RH."
+    },
+    {
+     "q": "The text suggests that a misunderstanding is…",
+     "options": [
+      "the same as a big fight",
+      "impossible to solve",
+      "smaller than a real conflict",
+      "always about a deadline"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"only a misunderstanding, not a real fight\" — é algo menor e mais fácil de resolver."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James ajudando dois colegas. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, let's all sit down for a minute. I know there is a small problem about the report. That is okay. This happens in every team.<br><br>Anna, you say the numbers were wrong. Marco, you say you sent the new file on Friday. So maybe this is only a misunderstanding, not a real conflict. Let's stay calm and listen to each other.<br><br>Marco, can you show us the email with the file? Good. And Anna, can you tell us which numbers were not clear? Thank you. I think you both wanted the same thing — a good report on time.<br><br>Why don't we do this? Marco sends the file again now, and Anna checks it today. A short apology from both sides, and we move on. Let's agree on a simple way forward and finish this together.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the small problem about?",
+     "options": [
+      "The report",
+      "The office",
+      "A holiday",
+      "The salary"
+     ],
+     "answer": 0,
+     "why": "\"there is a small problem about the report.\""
+    },
+    {
+     "q": "What does James ask Marco to show?",
+     "options": [
+      "The email with the file",
+      "A new project",
+      "His phone number",
+      "His calendar"
+     ],
+     "answer": 0,
+     "why": "\"Marco, can you show us the email with the file?\""
+    },
+    {
+     "q": "What is James's plan?",
+     "options": [
+      "They wait one month",
+      "They call the manager",
+      "They stop the report",
+      "Marco sends the file again and Anna checks it today"
+     ],
+     "answer": 3,
+     "why": "\"Marco sends the file again now, and Anna checks it today.\""
+    },
+    {
+     "q": "James suggests that Anna and Marco really wanted…",
+     "options": [
+      "different things",
+      "to change teams",
+      "the same thing — a good report on time",
+      "more money"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"I think you both wanted the same thing — a good report on time.\""
+    },
+    {
+     "q": "How would you describe James's tone?",
+     "options": [
+      "Bored",
+      "Sad",
+      "Calm and helpful",
+      "Angry and loud"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele mantém a calma, ouve os dois e propõe uma solução simples."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"They had a small <strong>conflict</strong> about the deadline.\" A conflict is…",
+     "options": [
+      "a party",
+      "a holiday",
+      "a disagreement",
+      "a report"
+     ],
+     "answer": 2,
+     "why": "Conflict = conflito, um desacordo entre pessoas."
+    },
+    {
+     "q": "Choose the correct word: \"It was not a real fight. It was only a ___.\"",
+     "options": [
+      "misunderstanding",
+      "meeting",
+      "solution",
+      "deadline"
+     ],
+     "answer": 0,
+     "why": "Misunderstanding = mal-entendido, algo menor que um conflito de verdade."
+    },
+    {
+     "q": "\"Please <strong>listen</strong> to your colleague first.\" To listen means to…",
+     "options": [
+      "write an email",
+      "leave the room",
+      "give an order",
+      "hear with attention"
+     ],
+     "answer": 3,
+     "why": "To listen = ouvir com atenção."
+    },
+    {
+     "q": "Choose the correct word: \"Let's find a good ___ for this problem.\"",
+     "options": [
+      "solution",
+      "problem",
+      "apology",
+      "conflict"
+     ],
+     "answer": 0,
+     "why": "Solution = solução, a resposta para o problema."
+    },
+    {
+     "q": "\"A short <strong>apology</strong> can fix many small problems.\" An apology is…",
+     "options": [
+      "a new plan",
+      "saying sorry",
+      "a strong order",
+      "a long report"
+     ],
+     "answer": 1,
+     "why": "Apology = desculpa, quando você diz \"sorry\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões úteis para acalmar um conflito no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"<strong>Let's</strong> talk about it and find a solution.\" Let's means…",
+     "options": [
+      "call HR",
+      "wait here",
+      "stop now",
+      "let us (a suggestion to do together)"
+     ],
+     "answer": 3,
+     "why": "Let's = let us: uma sugestão para fazermos algo juntos."
+    },
+    {
+     "q": "\"<strong>Why don't we</strong> sit down and talk calmly?\" This is a way to…",
+     "options": [
+      "end the meeting",
+      "say no",
+      "give a hard order",
+      "make a polite suggestion"
+     ],
+     "answer": 3,
+     "why": "Why don't we…? = uma forma educada de sugerir algo."
+    },
+    {
+     "q": "\"Let's <strong>calm down</strong> before we talk.\" To calm down means to…",
+     "options": [
+      "run away",
+      "speak louder",
+      "become relaxed and quiet",
+      "get angry"
+     ],
+     "answer": 2,
+     "why": "Calm down = acalmar-se, ficar tranquilo."
+    },
+    {
+     "q": "\"Can we <strong>sort out</strong> this problem today?\" To sort out means to…",
+     "options": [
+      "solve or fix it",
+      "make it bigger",
+      "write it down",
+      "forget it"
+     ],
+     "answer": 0,
+     "why": "Sort out = resolver, organizar o problema."
+    },
+    {
+     "q": "\"Let's <strong>move on</strong> and finish the report.\" To move on means to…",
+     "options": [
+      "continue after the problem",
+      "stop working",
+      "start a new job",
+      "leave the company"
+     ],
+     "answer": 0,
+     "why": "Move on = seguir em frente depois de resolver algo."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 290,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Order fulfilment at enterprise scale becomes an exercise in silent reliability at very large numbers. When a company is shipping ten thousand orders a day, even a 99% success rate means a hundred unhappy customers every single day; a 99.9% rate still means ten. The senior fulfilment leader lives in the decimal places, not in the headline percentages.<br><br>What matters at this level is the architecture of the process: the automation that handles the ninety per cent of routine orders without human touch, the exception-handling that catches the five per cent that need intervention, and the escalation path that brings the remaining orders to human attention before the customer has time to notice.<br><br>The worst enterprise operations are the ones where the team is heroic and the process is invisible. Heroes burn out; processes scale. The best operations look, from the outside, almost boring — most orders flowing through automatically, a few exceptions handled quickly and calmly, and the team spending most of their time improving the system that does the real work while they sleep.",
+   "items": [
+    {
+     "q": "According to the text, why does the senior leader focus on \"the decimal places\"?",
+     "options": [
+      "Because the headline percentages are usually inaccurate",
+      "Because automation cannot measure whole numbers",
+      "Because customers only complain about rounding errors",
+      "Because at scale even a tiny failure rate means many affected customers"
+     ],
+     "answer": 3,
+     "why": "\"even a 99% success rate means a hundred unhappy customers\" — em volume, a fração pequena vira muita gente."
+    },
+    {
+     "q": "The text divides orders into three streams. Which sequence is correct?",
+     "options": [
+      "Manual review, automation, cancellation",
+      "Automated routine, exception-handling, escalation to humans",
+      "Sales, operations, finance",
+      "Escalation, automation, documentation"
+     ],
+     "answer": 1,
+     "why": "\"automation… routine orders… exception-handling… escalation path… human attention.\""
+    },
+    {
+     "q": "What does the author mean by \"Heroes burn out; processes scale\"?",
+     "options": [
+      "Individual effort is more valuable than systems",
+      "Automation always replaces people entirely",
+      "Talented people should be promoted faster",
+      "Relying on individual effort is unsustainable, unlike a good system"
+     ],
+     "answer": 3,
+     "why": "Inferência: a tese é que arquitetura sustenta o volume; o esforço heroico não."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "A visibly dramatic, all-hands rescue is the sign of a healthy operation",
+      "Exceptions should be caught before customers notice",
+      "Automation should absorb the bulk of routine orders",
+      "The team's best use of time is improving the system"
+     ],
+     "answer": 0,
+     "why": "Inferência: para o autor, operação boa parece \"quase entediante\" — heroísmo visível sinaliza processo frágil."
+    },
+    {
+     "q": "That the best operations look \"almost boring\" suggests that…",
+     "options": [
+      "customers rarely place large orders",
+      "reliability has been engineered into the process rather than improvised daily",
+      "the team is understaffed and disengaged",
+      "the work is genuinely unimportant"
+     ],
+     "answer": 1,
+     "why": "Inferência: o tédio aparente é fruto de confiabilidade projetada — nada de emergências constantes."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily apresentando a revisão da arquitetura de fulfilment. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thank you all for making the time. I want to be candid with you: the numbers you shared look excellent on the dashboard, and that is precisely the problem. Ninety-eight per cent fulfilment sounds like a triumph until you multiply it by your daily volume — and then it becomes roughly two hundred customers who were let down before lunch.<br><br>What I found, walking through your operation last week, is a team that is genuinely impressive and genuinely exhausted. Every exception is being resolved, but it is being resolved by someone dropping what they were doing and heroically firefighting. Nothing is written down. When your best two people are on leave, the same order fails in the same way, and nobody can explain why.<br><br>So my recommendation is not to work harder. It is to make the routine invisible. Let automation carry the orders that never needed a human, define a written escalation path for the ones that do, and free your people to improve the system rather than rescue it. If we get this right, the next review will look boring — and boring, at your scale, is exactly what winning looks like.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does Emily call the strong dashboard numbers \"precisely the problem\"?",
+     "options": [
+      "The team inflated the figures deliberately",
+      "The high percentage hides a large absolute number of failures at their volume",
+      "The numbers are too low to celebrate",
+      "The dashboard is technically broken"
+     ],
+     "answer": 1,
+     "why": "\"Ninety-eight per cent… multiply it by your daily volume… roughly two hundred customers.\""
+    },
+    {
+     "q": "How does Emily describe the way exceptions are currently resolved?",
+     "options": [
+      "By someone dropping their work and firefighting, with nothing written down",
+      "By automation with no human involvement",
+      "By escalating everything to senior management",
+      "Through a documented, repeatable procedure"
+     ],
+     "answer": 0,
+     "why": "\"someone dropping what they were doing and heroically firefighting. Nothing is written down.\""
+    },
+    {
+     "q": "What is Emily's actual recommendation?",
+     "options": [
+      "To lower the fulfilment targets",
+      "To replace the entire team with software",
+      "To hire more people and work longer hours",
+      "To make the routine invisible and free the team to improve the system"
+     ],
+     "answer": 3,
+     "why": "\"my recommendation is not to work harder. It is to make the routine invisible.\""
+    },
+    {
+     "q": "When Emily notes the same order fails the same way while two people are on leave, she is implying that…",
+     "options": [
+      "the software should never be trusted",
+      "the knowledge lives in individuals, not in a documented process",
+      "the customers are placing incorrect orders",
+      "the two employees are unreliable"
+     ],
+     "answer": 1,
+     "why": "Inferência: a falha reincidente na ausência das pessoas mostra que o saber não está no processo."
+    },
+    {
+     "q": "What does Emily mean by \"boring, at your scale, is exactly what winning looks like\"?",
+     "options": [
+      "The team should aim for a less demanding market",
+      "Reviews should be shorter and less detailed",
+      "A calm, uneventful operation is the sign of reliability engineered into the process",
+      "Excitement in the workplace is undesirable in itself"
+     ],
+     "answer": 2,
+     "why": "Inferência: ausência de emergências = confiabilidade projetada; é isso que ela chama de vitória."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"They had built a reputation for <strong>silent reliability</strong> — orders simply arrived, on time, unremarked.\" Silent reliability means…",
+     "options": [
+      "a policy of not communicating with customers",
+      "keeping operational data confidential",
+      "a slow but steady delivery pace",
+      "dependability that draws no attention because nothing goes wrong"
+     ],
+     "answer": 3,
+     "why": "Confiabilidade silenciosa: funciona tão bem que ninguém precisa comentar."
+    },
+    {
+     "q": "Choose the correct word: \"For the routine ninety per cent of orders, ___ handles everything without a human touching the file.\"",
+     "options": [
+      "documentation",
+      "intervention",
+      "automation",
+      "escalation"
+     ],
+     "answer": 2,
+     "why": "Automation = automação, o que cuida do volume rotineiro sem intervenção humana."
+    },
+    {
+     "q": "\"Only the difficult five per cent required manual <strong>intervention</strong>.\" Intervention here means…",
+     "options": [
+      "a formal complaint",
+      "a person stepping in to act on a case",
+      "a change to the pricing",
+      "an automated retry"
+     ],
+     "answer": 1,
+     "why": "Intervention = intervenção: alguém entra para resolver o caso."
+    },
+    {
+     "q": "Choose the correct term: \"When a case cannot be resolved locally, the defined ___ routes it to the right person before the customer notices.\"",
+     "options": [
+      "escalation path",
+      "decimal place",
+      "exception-handling",
+      "silent reliability"
+     ],
+     "answer": 0,
+     "why": "Escalation path = caminho de escalonamento: por onde o caso sobe até quem resolve."
+    },
+    {
+     "q": "\"The system was designed to <strong>scale</strong> without adding headcount.\" To scale means…",
+     "options": [
+      "to reduce the number of orders",
+      "to audit the financial records",
+      "to grow in volume without breaking or needing proportional effort",
+      "to weigh the shipments precisely"
+     ],
+     "answer": 2,
+     "why": "To scale = escalar: crescer em volume sem que o esforço cresça na mesma proporção."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de operações e fulfilment. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"When an order can't be resolved by the desk, it gets <strong>escalated to</strong> the operations lead.\" To escalate to means to…",
+     "options": [
+      "delay it until the next cut-off",
+      "cancel and refund it",
+      "pass it up to a higher level of authority",
+      "duplicate it for backup"
+     ],
+     "answer": 2,
+     "why": "Escalate to = escalar para: levar a um nível superior de decisão."
+    },
+    {
+     "q": "\"Finance still has to <strong>sign off on</strong> the new fulfilment SOP.\" To sign off on means to…",
+     "options": [
+      "comment informally",
+      "formally approve",
+      "postpone indefinitely",
+      "publish externally"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We agreed to <strong>iron out</strong> the handoff between logistics and documentation before go-live.\" To iron out means to…",
+     "options": [
+      "automate the entire step",
+      "assign blame for the delay",
+      "resolve the remaining problems or friction",
+      "escalate it to the board"
+     ],
+     "answer": 2,
+     "why": "Iron out = aparar as arestas, resolver os atritos que sobraram."
+    },
+    {
+     "q": "\"Automation only helps once the team has <strong>nailed down</strong> the standard process.\" To nail down means to…",
+     "options": [
+      "abandon a plan",
+      "define something precisely and firmly",
+      "speed something up carelessly",
+      "delegate it elsewhere"
+     ],
+     "answer": 1,
+     "why": "Nail down = fixar com precisão — padronizar antes de automatizar."
+    },
+    {
+     "q": "\"None of these tweaks will <strong>move the needle</strong> on our exception rate.\" This means they will…",
+     "options": [
+      "take too long to measure",
+      "create internal resistance",
+      "not make a noticeable difference",
+      "cost more than expected"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

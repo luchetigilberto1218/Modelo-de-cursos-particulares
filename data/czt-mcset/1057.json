@@ -1,0 +1,259 @@
+{
+ "num": 1057,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Czarnikow has clients in many countries. We work with Brazil, India, China, the UK, the US, Germany and Thailand. Each country is a new word in English.<br><br>Today we learn five words: client, country, world, global and partner. We also learn plurals. Most words add <strong>s</strong>: one client, two clients. Some words add <strong>es</strong>: one box, two boxes. A few are irregular: one country, two countries.<br><br>Czarnikow has offices around the world. Our partners are global. Brazilian sugar goes to India, China and Europe. We are a global team with one goal.",
+   "items": [
+    {
+     "q": "How many clients does Czarnikow have?",
+     "options": [
+      "No clients",
+      "Clients in many countries",
+      "Only one client",
+      "Clients in one city"
+     ],
+     "answer": 1,
+     "why": "\"Czarnikow has clients in many countries.\""
+    },
+    {
+     "q": "What is the plural of \"country\"?",
+     "options": [
+      "countries",
+      "countrys",
+      "country",
+      "countryes"
+     ],
+     "answer": 0,
+     "why": "Country é irregular: troca -y por -ies → countries."
+    },
+    {
+     "q": "Where does Brazilian sugar go?",
+     "options": [
+      "Only to Brazil",
+      "To India, China and Europe",
+      "Only to the US",
+      "Nowhere"
+     ],
+     "answer": 1,
+     "why": "\"Brazilian sugar goes to India, China and Europe.\""
+    },
+    {
+     "q": "The text suggests that Czarnikow is…",
+     "options": [
+      "a global company",
+      "a small local company",
+      "a company in one country",
+      "a new company with no clients"
+     ],
+     "answer": 0,
+     "why": "Inferência: clientes em muitos países + \"offices around the world\" + \"a global team\" mostram que é global."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "learning country names is helpful for the job",
+      "Czarnikow works in only one country",
+      "plurals are not important",
+      "English is not useful at work"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto ensina países e diz \"Each country is a new word\" — aprender os nomes ajuda no trabalho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ethan mostrando o mapa do mundo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning! Look at this map. It shows our clients around the world. Each pin is a country.<br><br>Here is Brazil. This is a very big market for us. We sell a lot of sugar here. Next to it, look here, this is the US, and up here is the UK. These are old partners.<br><br>Now look at Asia. Here is India, and this one is China. They are big buyers too. And down here, this small pin, is Thailand.<br><br>So we have clients in many countries. We have partners on every continent. We are a global team. That is why English is so important. When you speak to a client in Germany or a partner in China, you use English.<br><br>Please look at the map every day. Learn the countries. Learn the words. One client, two clients. One country, two countries. It is easy. Thank you!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does the map show?",
+     "options": [
+      "The prices of sugar",
+      "A new product",
+      "Our clients around the world",
+      "The office in London"
+     ],
+     "answer": 2,
+     "why": "\"It shows our clients around the world.\""
+    },
+    {
+     "q": "What does each pin on the map mean?",
+     "options": [
+      "A price",
+      "A city",
+      "A country",
+      "A partner"
+     ],
+     "answer": 2,
+     "why": "\"Each pin is a country.\""
+    },
+    {
+     "q": "Why is English important, according to Ethan?",
+     "options": [
+      "Because the map is in English",
+      "Because you speak to clients and partners in many countries",
+      "Because the office is in the UK",
+      "Because sugar is sold in English"
+     ],
+     "answer": 1,
+     "why": "\"When you speak to a client in Germany or a partner in China, you use English.\""
+    },
+    {
+     "q": "Ethan suggests that the new trader should…",
+     "options": [
+      "study the map and learn the countries",
+      "travel to every country",
+      "stop using English",
+      "sell sugar only in Brazil"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Please look at the map every day. Learn the countries.\""
+    },
+    {
+     "q": "How would you describe Ethan's tone?",
+     "options": [
+      "Sad and tired",
+      "Angry and impatient",
+      "Friendly and encouraging",
+      "Bored and quiet"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele diz \"It is easy\", dá boas-vindas e agradece — tom amigável e encorajador."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"India is a new <strong>client</strong> for us.\" A <strong>client</strong> is…",
+     "options": [
+      "a map",
+      "a country",
+      "an office",
+      "a person or company that buys from us"
+     ],
+     "answer": 3,
+     "why": "Client = cliente: quem compra de nós."
+    },
+    {
+     "q": "\"Brazil is a big <strong>country</strong>.\" A <strong>country</strong> is…",
+     "options": [
+      "a company",
+      "a product",
+      "a partner",
+      "a nation, like Brazil or China"
+     ],
+     "answer": 3,
+     "why": "Country = país."
+    },
+    {
+     "q": "Choose the correct word: \"We have offices around the ___.\"",
+     "options": [
+      "partner",
+      "world",
+      "box",
+      "client"
+     ],
+     "answer": 1,
+     "why": "\"Around the world\" = ao redor do mundo."
+    },
+    {
+     "q": "\"Our partners are <strong>global</strong>.\" <strong>Global</strong> means…",
+     "options": [
+      "small and local",
+      "in the whole world",
+      "very cheap",
+      "very old"
+     ],
+     "answer": 1,
+     "why": "Global = do mundo todo."
+    },
+    {
+     "q": "Choose the correct word: \"China is an important business ___ for Czarnikow.\"",
+     "options": [
+      "world",
+      "map",
+      "office",
+      "partner"
+     ],
+     "answer": 3,
+     "why": "Partner = parceiro (de negócios)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We work with clients <strong>around the world</strong>.\" This means…",
+     "options": [
+      "in many countries, everywhere",
+      "at home",
+      "in the office",
+      "in only one country"
+     ],
+     "answer": 0,
+     "why": "Around the world = pelo mundo todo, em muitos países."
+    },
+    {
+     "q": "\"Let's <strong>roll out</strong> the plan in Brazil first.\" To <strong>roll out</strong> means to…",
+     "options": [
+      "start or launch it",
+      "hide it",
+      "forget it",
+      "cancel it"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar, colocar em prática."
+    },
+    {
+     "q": "\"Can you <strong>reach out to</strong> the client in India?\" To <strong>reach out to</strong> means to…",
+     "options": [
+      "pay them",
+      "ignore them",
+      "contact them",
+      "meet them at home"
+     ],
+     "answer": 2,
+     "why": "Reach out to = entrar em contato com."
+    },
+    {
+     "q": "\"The boss will <strong>sign off on</strong> the new partner.\" To <strong>sign off on</strong> means to…",
+     "options": [
+      "delay it",
+      "approve it",
+      "read it",
+      "say no"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"We <strong>deal with</strong> clients in seven countries.\" To <strong>deal with</strong> means to…",
+     "options": [
+      "work with them",
+      "travel with them",
+      "live with them",
+      "argue with them"
+     ],
+     "answer": 0,
+     "why": "Deal with = lidar/trabalhar com."
+    }
+   ]
+  }
+ ]
+}

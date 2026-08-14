@@ -1,0 +1,259 @@
+{
+ "num": 20,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Many people today do not work only in the office. Some people work from home. Others go to the office a few days a week. This is called hybrid work: part home, part office.<br><br>To work from home, we need a good laptop, a good internet connection, and a quiet place. A quiet place helps you focus.<br><br>We also need to stay in touch with the team. We stay in touch by email, by chat, and by video calls.",
+   "items": [
+    {
+     "q": "What is hybrid work?",
+     "options": [
+      "Working only in the office",
+      "Working only from home",
+      "Part home, part office",
+      "Working at night"
+     ],
+     "answer": 2,
+     "why": "\"This is called hybrid work: part home, part office.\""
+    },
+    {
+     "q": "What do we need to work from home?",
+     "options": [
+      "A car and a desk",
+      "A laptop, internet, and a quiet place",
+      "A phone and a printer",
+      "A big office"
+     ],
+     "answer": 1,
+     "why": "\"we need a good laptop, a good internet connection, and a quiet place.\""
+    },
+    {
+     "q": "How do we stay in touch with the team?",
+     "options": [
+      "Only in person",
+      "By letter",
+      "By fax",
+      "By email, chat, and video calls"
+     ],
+     "answer": 3,
+     "why": "\"We stay in touch by email, by chat, and by video calls.\""
+    },
+    {
+     "q": "The text suggests that a quiet place is important because…",
+     "options": [
+      "it helps you focus",
+      "it is cheaper",
+      "the boss likes it",
+      "it is bigger"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"A quiet place helps you focus\" — por isso o silêncio é útil no trabalho em casa."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "video calls are not useful",
+      "internet is not needed at home",
+      "hybrid work mixes home days and office days",
+      "everyone must work in the office every day"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto todo mostra que o trabalho híbrido junta dias em casa e dias no escritório."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry explicando a nova política de trabalho híbrido. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi everyone. Thank you for coming. Today I want to explain our new hybrid work policy. It is very simple.<br><br>From next month, we work three days in the office and two days at home. You come to the office on Tuesday, Wednesday, and Thursday. On Monday and Friday, you work from home.<br><br>At home, you need a good laptop and a good internet connection. You also need a quiet place to focus. If you have a problem with your internet, please tell me. We can help.<br><br>On your home days, we stay in touch by chat and by video calls. Please join the team meeting every morning at nine. It is a short call, only fifteen minutes. In this call, we talk about the plan for the day.<br><br>The schedule is flexible. If you need to change a day, just send me a message. Family and health come first. We want a good balance between work and life.<br><br>Do you have any questions? Please ask me now, or send an email. Thank you.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many days do people work in the office?",
+     "options": [
+      "One day",
+      "Two days",
+      "Three days",
+      "Five days"
+     ],
+     "answer": 2,
+     "why": "\"we work three days in the office and two days at home.\""
+    },
+    {
+     "q": "Which days do people work from home?",
+     "options": [
+      "Monday and Friday",
+      "Wednesday and Thursday",
+      "Tuesday and Wednesday",
+      "Thursday and Friday"
+     ],
+     "answer": 0,
+     "why": "\"On Monday and Friday, you work from home.\""
+    },
+    {
+     "q": "What time is the team meeting?",
+     "options": [
+      "At nine in the morning",
+      "At five in the afternoon",
+      "At eight in the morning",
+      "At noon"
+     ],
+     "answer": 0,
+     "why": "\"join the team meeting every morning at nine.\""
+    },
+    {
+     "q": "Harry says the schedule is flexible. This suggests that…",
+     "options": [
+      "you can change a day if you need to",
+      "the days can never change",
+      "you must never work from home",
+      "there are no rules at all"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"If you need to change a day, just send me a message\" — o horário pode se adaptar."
+    },
+    {
+     "q": "Why does Harry say \"family and health come first\"?",
+     "options": [
+      "Because he wants people to work more hours",
+      "Because the office is closed",
+      "Because he cares about work-life balance",
+      "Because there is no internet"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele quer um bom equilíbrio entre trabalho e vida — as pessoas vêm antes das metas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I do <strong>remote work</strong> two days a week.\" Remote work means…",
+     "options": [
+      "work in another country",
+      "work with machines",
+      "extra work at night",
+      "work you do from far away, not at the office"
+     ],
+     "answer": 3,
+     "why": "Remote work = trabalho remoto, feito de casa ou de longe, não no escritório."
+    },
+    {
+     "q": "Choose the correct word: \"I need a quiet room, a laptop, and a good ___ connection to work from home.\"",
+     "options": [
+      "door",
+      "phone",
+      "internet",
+      "coffee"
+     ],
+     "answer": 2,
+     "why": "Internet connection = conexão de internet, essencial para trabalhar de casa."
+    },
+    {
+     "q": "Choose the correct word: \"My kids are loud, so I go to a ___ room to focus.\"",
+     "options": [
+      "new",
+      "cold",
+      "quiet",
+      "big"
+     ],
+     "answer": 2,
+     "why": "Quiet = silencioso; um lugar silencioso ajuda a se concentrar."
+    },
+    {
+     "q": "\"We have a <strong>video call</strong> at ten.\" A video call is…",
+     "options": [
+      "a written email",
+      "a coffee break",
+      "a paper report",
+      "a call where you see and hear people on a screen"
+     ],
+     "answer": 3,
+     "why": "Video call = videochamada, onde você vê e ouve as pessoas na tela."
+    },
+    {
+     "q": "\"My <strong>schedule</strong> is flexible this week.\" A schedule is…",
+     "options": [
+      "your plan of times and days",
+      "an office room",
+      "a type of laptop",
+      "a group of people"
+     ],
+     "answer": 0,
+     "why": "Schedule = horário/agenda: o plano de dias e horas de trabalho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre trabalho híbrido. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"On home days, we <strong>stay in touch</strong> by chat.\" To stay in touch means to…",
+     "options": [
+      "send a letter",
+      "stop working",
+      "meet in person",
+      "keep in contact"
+     ],
+     "answer": 3,
+     "why": "Stay in touch = manter contato, continuar se comunicando."
+    },
+    {
+     "q": "\"Please <strong>log in</strong> to the meeting at nine.\" To log in means to…",
+     "options": [
+      "go to the office",
+      "write an email",
+      "enter a system or a call",
+      "turn off your computer"
+     ],
+     "answer": 2,
+     "why": "Log in = entrar num sistema ou numa chamada com sua conta."
+    },
+    {
+     "q": "\"Let's <strong>set up</strong> a video call for tomorrow.\" To set up a call means to…",
+     "options": [
+      "arrange or organize it",
+      "record a call",
+      "join a call late",
+      "cancel a call"
+     ],
+     "answer": 0,
+     "why": "Set up = organizar, marcar; preparar a reunião."
+    },
+    {
+     "q": "\"The boss will <strong>sign off on</strong> the new policy.\" To sign off on means to…",
+     "options": [
+      "read it slowly",
+      "delay it",
+      "print it",
+      "formally approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the hybrid policy next month.\" To roll out means to…",
+     "options": [
+      "test it in secret",
+      "cancel it",
+      "start it for everyone",
+      "hide it"
+     ],
+     "answer": 2,
+     "why": "Roll out = colocar em prática, lançar para todos."
+    }
+   ]
+  }
+ ]
+}

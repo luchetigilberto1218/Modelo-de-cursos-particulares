@@ -1,0 +1,259 @@
+{
+ "num": 1112,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. Every work day needs a short, honest report at the end.<br><br>Today we use <strong>was</strong> and <strong>were</strong>, the past of <em>to be</em>. We use them to say how the day went. \"Was\" is for I, he, she, and it. \"Were\" is for you, we, and they.<br><br>Clear past reports are the base of every good routine. They help the team see the good days and fix the hard ones. So we celebrate the good days — they pay for the hard ones.",
+   "items": [
+    {
+     "q": "What does the team make at the end of every work day?",
+     "options": [
+      "A short report",
+      "A long meeting",
+      "A new plan for next year",
+      "A phone call to a client"
+     ],
+     "answer": 0,
+     "why": "\"Every work day needs a short, honest report at the end.\""
+    },
+    {
+     "q": "Which words are the past of \"to be\"?",
+     "options": [
+      "Have and had",
+      "Do and did",
+      "Was and were",
+      "Is and are"
+     ],
+     "answer": 2,
+     "why": "O texto diz que usamos \"was\" e \"were\", o passado de \"to be\"."
+    },
+    {
+     "q": "You use \"were\" with…",
+     "options": [
+      "he, she, it",
+      "I, he, she",
+      "you, we, they",
+      "she and it only"
+     ],
+     "answer": 2,
+     "why": "\"'Were' is for you, we, and they.\""
+    },
+    {
+     "q": "The text suggests that a good report is…",
+     "options": [
+      "written only for the boss",
+      "short and honest",
+      "long and full of numbers",
+      "made once a month"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto pede um relatório \"short, honest\" a cada dia — não longo, nem mensal."
+    },
+    {
+     "q": "\"They pay for the hard ones\" suggests that the good days…",
+     "options": [
+      "cost the company money",
+      "make the hard days feel worth it",
+      "are never real",
+      "happen only on weekends"
+     ],
+     "answer": 1,
+     "why": "Inferência: comemorar os bons dias compensa e dá força para os dias difíceis."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily contar para o time como foi o dia de ontem. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi team, here is a short report about yesterday. It was a good day. I am happy.<br><br>The plan was thirty deliveries. In the end, we had thirty-two. That was great. The drivers were on time in the morning. The first trip was fast and easy.<br><br>In the afternoon, two trips were late. The traffic was very bad near the port. But the clients were kind. They were not angry. One client was very happy with the driver. She sent a nice message to the boss.<br><br>So, was it a perfect day? No, it was not perfect. But it was a good day. The team was strong, and the mood was positive. Thank you all. Tomorrow we try again. Good night.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many deliveries were planned for yesterday?",
+     "options": [
+      "Forty",
+      "Thirty",
+      "Twenty",
+      "Thirty-two"
+     ],
+     "answer": 1,
+     "why": "\"The plan was thirty deliveries.\""
+    },
+    {
+     "q": "What happened in the afternoon?",
+     "options": [
+      "All the trips were on time",
+      "There were no deliveries",
+      "The drivers went home early",
+      "Two trips were late"
+     ],
+     "answer": 3,
+     "why": "\"In the afternoon, two trips were late.\""
+    },
+    {
+     "q": "How were the clients?",
+     "options": [
+      "Kind and not angry",
+      "Tired and quiet",
+      "Late and busy",
+      "Angry and rude"
+     ],
+     "answer": 0,
+     "why": "\"the clients were kind. They were not angry.\""
+    },
+    {
+     "q": "Emily says it was not a perfect day. This suggests that…",
+     "options": [
+      "the day was a total failure",
+      "no deliveries arrived",
+      "she is honest about the problems",
+      "she wants to quit her job"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela admite os atrasos, mas ainda chama o dia de bom — é um relatório honesto."
+    },
+    {
+     "q": "How does Emily feel about the team?",
+     "options": [
+      "Bored",
+      "Proud and positive",
+      "Worried and afraid",
+      "Disappointed"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"The team was strong, and the mood was positive. Thank you all.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We had thirty-two deliveries <strong>yesterday</strong>.\" <strong>Yesterday</strong> means…",
+     "options": [
+      "right now",
+      "next week",
+      "in one hour",
+      "the day before today"
+     ],
+     "answer": 3,
+     "why": "Yesterday = ontem, o dia antes de hoje."
+    },
+    {
+     "q": "\"The first <strong>trip</strong> was fast and easy.\" A <strong>trip</strong> is…",
+     "options": [
+      "a coffee break",
+      "a journey from one place to another",
+      "a short meeting",
+      "a phone message"
+     ],
+     "answer": 1,
+     "why": "Trip = viagem, o trajeto do carro de um lugar a outro."
+    },
+    {
+     "q": "Choose the correct word: \"At the end of the day, Emily sends a short ___ to the team.\"",
+     "options": [
+      "client",
+      "report",
+      "trip",
+      "boss"
+     ],
+     "answer": 1,
+     "why": "Report = relatório, o resumo do dia que ela envia."
+    },
+    {
+     "q": "\"She sent a nice message to the <strong>boss</strong>.\" The <strong>boss</strong> is…",
+     "options": [
+      "the truck",
+      "a customer",
+      "the person who leads the team",
+      "a driver"
+     ],
+     "answer": 2,
+     "why": "Boss = chefe, a pessoa que lidera o time."
+    },
+    {
+     "q": "Choose the correct word: \"One ___ was very happy with the delivery.\"",
+     "options": [
+      "yesterday",
+      "boss",
+      "client",
+      "report"
+     ],
+     "answer": 2,
+     "why": "Client = cliente, quem recebe a entrega."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The drivers <strong>were on time</strong> in the morning.\" To be <strong>on time</strong> means to…",
+     "options": [
+      "stay at home",
+      "arrive at the right time",
+      "work fast",
+      "arrive late"
+     ],
+     "answer": 1,
+     "why": "On time = na hora certa, nem cedo nem tarde."
+    },
+    {
+     "q": "\"Tomorrow we <strong>try again</strong>.\" To try again means to…",
+     "options": [
+      "take a day off",
+      "call the boss",
+      "make one more attempt",
+      "give up"
+     ],
+     "answer": 2,
+     "why": "Try again = tentar de novo, mais uma vez."
+    },
+    {
+     "q": "\"The client <strong>was happy with</strong> the driver.\" To be happy with something means to…",
+     "options": [
+      "be pleased with it",
+      "be angry about it",
+      "be tired of it",
+      "be afraid of it"
+     ],
+     "answer": 0,
+     "why": "Happy with = satisfeito, contente com algo."
+    },
+    {
+     "q": "\"The traffic was bad, so two trips <strong>ran late</strong>.\" To run late means to…",
+     "options": [
+      "run very fast",
+      "be later than planned",
+      "finish early",
+      "stop working"
+     ],
+     "answer": 1,
+     "why": "Run late = atrasar, chegar mais tarde do que o planejado."
+    },
+    {
+     "q": "\"At the end of the shift, Emily <strong>sums up</strong> the day.\" To sum up means to…",
+     "options": [
+      "start the day",
+      "count the money",
+      "give a short summary",
+      "clean the truck"
+     ],
+     "answer": 2,
+     "why": "Sum up = resumir, dar um resumo curto."
+    }
+   ]
+  }
+ ]
+}

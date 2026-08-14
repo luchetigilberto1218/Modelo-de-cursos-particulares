@@ -1,0 +1,259 @@
+{
+ "num": 1047,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In trade, we use many documents every day. We use contracts, invoices, receipts, and reports. They are all important.<br><br>Each document belongs to someone. This is my contract. That is your invoice. His report is on the desk. Her email is short and polite. Our deal is strong. Their shipment arrives on Friday.<br><br>When we know whose document it is, work is easy. When we ask \"Whose document is this?\", we can find the right person fast. Good order saves time.",
+   "items": [
+    {
+     "q": "What do people use every day in trade?",
+     "options": [
+      "Only emails",
+      "One report",
+      "Many documents",
+      "No paper"
+     ],
+     "answer": 2,
+     "why": "\"we use many documents every day.\""
+    },
+    {
+     "q": "Whose report is on the desk?",
+     "options": [
+      "Her report",
+      "Our report",
+      "His report",
+      "Your report"
+     ],
+     "answer": 2,
+     "why": "\"His report is on the desk.\""
+    },
+    {
+     "q": "When does their shipment arrive?",
+     "options": [
+      "Next month",
+      "On Friday",
+      "On Monday",
+      "Today"
+     ],
+     "answer": 1,
+     "why": "\"Their shipment arrives on Friday.\""
+    },
+    {
+     "q": "The text suggests that knowing whose document it is…",
+     "options": [
+      "makes work faster and easier",
+      "takes many days",
+      "is not important",
+      "costs a lot of money"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"When we know whose document it is, work is easy… Good order saves time.\""
+    },
+    {
+     "q": "Why do we ask \"Whose document is this?\"",
+     "options": [
+      "To throw the document away",
+      "To hide the document",
+      "To find the right person fast",
+      "To copy the document"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"we can find the right person fast\" — a pergunta ajuda a achar o dono."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ethan organizando a pasta com o novo trader. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning. Welcome to the team. Today we organise this folder together.<br><br>Look here. This is my contract. It is ready and I keep it in the blue file. This invoice is yours. Please put your invoice on the desk near the window.<br><br>Now, this report is his. It is clear and short, so it is easy to read. This email is hers. Her email is very polite. And this receipt? I am not sure. Whose receipt is this? Maybe it is yours too. Please check the name at the top.<br><br>This is our deal, so we keep it safe in the drawer. And this shipment paper is theirs. Their shipment arrives on Friday, so we need it this week.<br><br>When a document has no name, we ask the team. We never guess. Good order saves time, and my English is my tool. Thank you.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What do Ethan and the new trader do today?",
+     "options": [
+      "They sign a new contract",
+      "They organise a folder together",
+      "They visit a client",
+      "They send the shipment"
+     ],
+     "answer": 1,
+     "why": "\"Today we organise this folder together.\""
+    },
+    {
+     "q": "Where should the new trader put the invoice?",
+     "options": [
+      "In the bag",
+      "In the blue file",
+      "On the desk near the window",
+      "In the drawer"
+     ],
+     "answer": 2,
+     "why": "\"put your invoice on the desk near the window.\""
+    },
+    {
+     "q": "Whose email is very polite?",
+     "options": [
+      "Their email",
+      "Your email",
+      "His email",
+      "Her email"
+     ],
+     "answer": 3,
+     "why": "\"This email is hers. Her email is very polite.\""
+    },
+    {
+     "q": "Ethan is not sure about the receipt. What does this suggest?",
+     "options": [
+      "The receipt is very old",
+      "The receipt has no clear name yet",
+      "The receipt is lost",
+      "The receipt is his"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele pede \"check the name at the top\" — o dono ainda não está claro."
+    },
+    {
+     "q": "What is Ethan's main advice about documents?",
+     "options": [
+      "Throw old papers away",
+      "Ask the team and never guess",
+      "Write only in English",
+      "Keep everything in the drawer"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"When a document has no name, we ask the team. We never guess.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Please sign this <strong>contract</strong> before Friday.\" A contract is…",
+     "options": [
+      "a phone call",
+      "a written agreement",
+      "a coffee break",
+      "a small box"
+     ],
+     "answer": 1,
+     "why": "Contract = contrato, um acordo por escrito."
+    },
+    {
+     "q": "Choose the correct word: \"The client must pay the ___ by the end of the month.\"",
+     "options": [
+      "team",
+      "desk",
+      "invoice",
+      "window"
+     ],
+     "answer": 2,
+     "why": "Invoice = fatura, o documento que o cliente paga."
+    },
+    {
+     "q": "\"Keep the <strong>receipt</strong> after you pay.\" A receipt is…",
+     "options": [
+      "an email address",
+      "a long report",
+      "a paper that shows you paid",
+      "a new contract"
+     ],
+     "answer": 2,
+     "why": "Receipt = recibo, o papel que prova o pagamento."
+    },
+    {
+     "q": "Choose the correct word: \"His ___ is clear and short, so it is easy to read.\"",
+     "options": [
+      "report",
+      "coffee",
+      "chair",
+      "door"
+     ],
+     "answer": 0,
+     "why": "Report = relatório; é o que se lê e pode ser claro e curto."
+    },
+    {
+     "q": "\"Whose <strong>document</strong> is this?\" A document is…",
+     "options": [
+      "a coffee machine",
+      "any paper with information",
+      "a type of chair",
+      "a meeting room"
+     ],
+     "answer": 1,
+     "why": "Document = documento, um papel com informação."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho com documentos. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>fill out</strong> this invoice.\" To fill out means to…",
+     "options": [
+      "write the information in the form",
+      "send it back",
+      "throw it away",
+      "read it fast"
+     ],
+     "answer": 0,
+     "why": "Fill out = preencher, escrever a informação no documento."
+    },
+    {
+     "q": "\"<strong>Hand in</strong> your report on Friday.\" To hand in means to…",
+     "options": [
+      "give it to the right person",
+      "lose it",
+      "print more copies",
+      "keep it at home"
+     ],
+     "answer": 0,
+     "why": "Hand in = entregar o documento a quem deve receber."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the contract.\" This means she will…",
+     "options": [
+      "delete it",
+      "formally approve it",
+      "translate it",
+      "hide it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"Please <strong>send back</strong> the invoice with your name.\" To send back means to…",
+     "options": [
+      "buy a new one",
+      "read it again",
+      "put it in the drawer",
+      "return it to the sender"
+     ],
+     "answer": 3,
+     "why": "Send back = devolver ao remetente."
+    },
+    {
+     "q": "\"I need to <strong>look for</strong> the receipt.\" To look for means to…",
+     "options": [
+      "sign it",
+      "try to find it",
+      "pay for it",
+      "copy it"
+     ],
+     "answer": 1,
+     "why": "Look for = procurar, tentar encontrar."
+    }
+   ]
+  }
+ ]
+}

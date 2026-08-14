@@ -1,0 +1,259 @@
+{
+ "num": 1086,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Every day we receive orders from customers. First, we check the stock. We look at the numbers and we see what we have.<br><br>Then we prepare the delivery. We put the boxes together and we send the truck. This is our daily routine.<br><br>The team works like a clock. Every order is important. Good checks prevent big problems. Routine is the friend of a supply chain team.",
+   "items": [
+    {
+     "q": "How often does the team receive orders?",
+     "options": [
+      "Every Friday",
+      "Every day",
+      "Once a week",
+      "Only in the morning"
+     ],
+     "answer": 1,
+     "why": "\"Every day we receive orders from customers.\""
+    },
+    {
+     "q": "What does the team do FIRST?",
+     "options": [
+      "They call the customer",
+      "They close the office",
+      "They check the stock",
+      "They send the truck"
+     ],
+     "answer": 2,
+     "why": "\"First, we check the stock.\" — conferir o estoque vem antes."
+    },
+    {
+     "q": "What do they send with the delivery?",
+     "options": [
+      "An email",
+      "A letter",
+      "A manager",
+      "A truck"
+     ],
+     "answer": 3,
+     "why": "\"we send the truck.\""
+    },
+    {
+     "q": "The text suggests that checking the stock is…",
+     "options": [
+      "the last step of the day",
+      "only done on Fridays",
+      "a way to prevent problems",
+      "not very important"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Good checks prevent big problems.\" — conferir evita problemas grandes."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "checks are a waste of time",
+      "routine helps the team work well",
+      "the team works slowly",
+      "orders are not important"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Routine is the friend of a supply chain team.\" — o autor valoriza a rotina."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça a colaboradora descrevendo o dia dela para o novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the team. Today you follow me for one day. I show you my routine. It is easy, you can do it.<br><br>I start work at seven. First, I open my computer and I check the new orders. We receive many orders every morning. I read each one. Then I check the stock. I look at the boxes and I count the numbers.<br><br>After that, I prepare the delivery. My colleague Maria helps me. She sends the truck at eight. The driver takes the boxes to the customer. The delivery arrives on Friday.<br><br>In the afternoon, I check my email again. Sometimes a customer sends a new order late. I write it down and I check the stock one more time.<br><br>This is my day, every day. It is simple, but every order is important. When you check well, you prevent big problems. Now, come with me. Let's check the first order together!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time does she start work?",
+     "options": [
+      "At seven",
+      "At six",
+      "At eight",
+      "At nine"
+     ],
+     "answer": 0,
+     "why": "\"I start work at seven.\""
+    },
+    {
+     "q": "What does she do FIRST in the morning?",
+     "options": [
+      "She prepares the delivery",
+      "She goes home",
+      "She checks the new orders",
+      "She sends the truck"
+     ],
+     "answer": 2,
+     "why": "\"First, I open my computer and I check the new orders.\""
+    },
+    {
+     "q": "Who sends the truck?",
+     "options": [
+      "The new team member",
+      "The customer",
+      "The driver",
+      "Maria"
+     ],
+     "answer": 3,
+     "why": "\"My colleague Maria helps me. She sends the truck at eight.\""
+    },
+    {
+     "q": "Why does she check the stock again in the afternoon?",
+     "options": [
+      "Because the truck is late",
+      "Because Maria is not there",
+      "Because she forgets the numbers",
+      "Because a customer sometimes sends a new order late"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Sometimes a customer sends a new order late… I check the stock one more time.\""
+    },
+    {
+     "q": "How would you best describe her tone with the new colleague?",
+     "options": [
+      "Friendly and encouraging",
+      "Nervous and unsure",
+      "Bored and quiet",
+      "Angry and tired"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Welcome to the team… it is easy, you can do it… come with me.\" — ela é acolhedora."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We receive a new <strong>order</strong> from the customer.\" An <strong>order</strong> is…",
+     "options": [
+      "a truck",
+      "a phone call",
+      "a report",
+      "a request to buy products"
+     ],
+     "answer": 3,
+     "why": "Order = pedido: quando o cliente pede produtos."
+    },
+    {
+     "q": "\"The <strong>delivery</strong> arrives on Friday.\" A <strong>delivery</strong> is…",
+     "options": [
+      "the goods brought to the customer",
+      "a payment",
+      "an email",
+      "a meeting"
+     ],
+     "answer": 0,
+     "why": "Delivery = entrega: os produtos levados ao cliente."
+    },
+    {
+     "q": "Choose the correct word: \"We look at the ___ to see how many boxes we have.\"",
+     "options": [
+      "stock",
+      "truck",
+      "email",
+      "customer"
+     ],
+     "answer": 0,
+     "why": "Stock = estoque: o que temos guardado."
+    },
+    {
+     "q": "Choose the correct word: \"Every morning I ___ the numbers to be sure they are right.\"",
+     "options": [
+      "sleep",
+      "close",
+      "check",
+      "send"
+     ],
+     "answer": 2,
+     "why": "To check = conferir: olhar para ter certeza."
+    },
+    {
+     "q": "Choose the correct word: \"We ___ the truck to the customer at eight.\"",
+     "options": [
+      "buy",
+      "check",
+      "send",
+      "read"
+     ],
+     "answer": 2,
+     "why": "To send = enviar: mandar o caminhão ao cliente."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho de pedidos e entregas. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>check on</strong> the delivery.\" To check on something means to…",
+     "options": [
+      "cancel it",
+      "see how it is going",
+      "pay for it",
+      "throw it away"
+     ],
+     "answer": 1,
+     "why": "Check on = verificar como está algo."
+    },
+    {
+     "q": "\"We are <strong>out of stock</strong>.\" This means…",
+     "options": [
+      "we have none left",
+      "the truck is late",
+      "the order is ready",
+      "we have a lot"
+     ],
+     "answer": 0,
+     "why": "Out of stock = sem estoque, acabou."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the order.\" To sign off on means to…",
+     "options": [
+      "print it",
+      "read it later",
+      "delete it",
+      "approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"Please <strong>send out</strong> the delivery today.\" To send out means to…",
+     "options": [
+      "wait one week",
+      "dispatch it to the customer",
+      "keep it here",
+      "return it"
+     ],
+     "answer": 1,
+     "why": "Send out = despachar, mandar para fora."
+    },
+    {
+     "q": "\"We must <strong>follow up on</strong> the late order.\" To follow up on means to…",
+     "options": [
+      "pay for it twice",
+      "cancel it now",
+      "check it again and take action",
+      "forget about it"
+     ],
+     "answer": 2,
+     "why": "Follow up on = dar seguimento, checar de novo e agir."
+    }
+   ]
+  }
+ ]
+}

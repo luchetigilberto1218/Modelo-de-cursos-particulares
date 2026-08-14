@@ -1,0 +1,259 @@
+{
+ "num": 1130,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Accounting is the language of Czarnikow's numbers. Today's lesson is \"Receipts and Records\". It gives you short, useful words for the finance team.<br><br>You will learn five words: record, folder, copy, file and box. You will also practise plurals: one record, two records; one box, two boxes. Go slowly. One step at a time.<br><br>Sophie helps new trainees. She uses short sentences and simple words. She asks you to repeat. English comes in CAN's, not in CAN'Ts. You can do it!",
+   "items": [
+    {
+     "q": "What is today's lesson about?",
+     "options": [
+      "Receipts and Records",
+      "Sales and Marketing",
+      "Emails and Meetings",
+      "Travel and Hotels"
+     ],
+     "answer": 0,
+     "why": "\"Today's lesson is 'Receipts and Records'.\""
+    },
+    {
+     "q": "How many new words will you learn?",
+     "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"You will learn five words: record, folder, copy, file and box.\""
+    },
+    {
+     "q": "What is the plural of \"box\" in the text?",
+     "options": [
+      "boxs",
+      "boxies",
+      "box",
+      "boxes"
+     ],
+     "answer": 3,
+     "why": "Palavras com -x fazem plural com -es: box → boxes."
+    },
+    {
+     "q": "The text suggests that Sophie's teaching is…",
+     "options": [
+      "calm and simple",
+      "fast and difficult",
+      "for expert accountants",
+      "only in Portuguese"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"short sentences and simple words\", \"Go slowly. One step at a time.\""
+    },
+    {
+     "q": "\"English comes in CAN's, not in CAN'Ts.\" This suggests the lesson wants you to feel…",
+     "options": [
+      "bored",
+      "tired",
+      "worried",
+      "confident"
+     ],
+     "answer": 3,
+     "why": "Inferência: a frase é de incentivo — \"You can do it!\" — para dar confiança."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentando o tema para um novo trainee. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, and welcome to the team. My name is Sophie. I work in accounting. Today I want to show you our receipts and records. Don't worry — it is easy. We go slowly, one step at a time.<br><br>Look at this desk. Here is a folder. In the folder there are two files. Each file has one copy of every receipt. When a file is full, we put it in a box. The box goes on the shelf.<br><br>At the end of every day, we check one thing: the record has to match the records. Same numbers, same date. If they match, we close the file. If they don't, we look again.<br><br>Please repeat after me: \"record, folder, copy, file, box.\" Good! Now, when you are ready, leave the box on my desk. You did very well today. See you tomorrow.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does Sophie work?",
+     "options": [
+      "In sales",
+      "In the shop",
+      "In the kitchen",
+      "In accounting"
+     ],
+     "answer": 3,
+     "why": "\"My name is Sophie. I work in accounting.\""
+    },
+    {
+     "q": "What is inside the folder?",
+     "options": [
+      "Two files",
+      "A box",
+      "A shelf",
+      "Ten copies"
+     ],
+     "answer": 0,
+     "why": "\"In the folder there are two files.\""
+    },
+    {
+     "q": "When does the team put a file in a box?",
+     "options": [
+      "Never",
+      "When a receipt is lost",
+      "When the file is full",
+      "Every morning"
+     ],
+     "answer": 2,
+     "why": "\"When a file is full, we put it in a box.\""
+    },
+    {
+     "q": "Why does Sophie say \"Don't worry — it is easy\"?",
+     "options": [
+      "She wants the trainee to feel calm",
+      "The work is boring",
+      "She is in a hurry",
+      "There is no work today"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela usa frases curtas e tranquiliza o trainee para dar confiança."
+    },
+    {
+     "q": "What can we understand about the trainee's first day?",
+     "options": [
+      "The trainee went home early",
+      "The trainee did a good job",
+      "The trainee works alone",
+      "The trainee made many mistakes"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"You did very well today. See you tomorrow.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>record</strong> has to match the records.\" A record is a…",
+     "options": [
+      "janela",
+      "registro",
+      "cadeira",
+      "caneta"
+     ],
+     "answer": 1,
+     "why": "Record = registro (uma anotação dos números)."
+    },
+    {
+     "q": "Choose the correct word: \"Please put the receipt in the new ___.\"",
+     "options": [
+      "window",
+      "folder",
+      "phone",
+      "coffee"
+     ],
+     "answer": 1,
+     "why": "Folder = pasta, onde guardamos os documentos."
+    },
+    {
+     "q": "\"The <strong>copy</strong> is ready for your signature.\" A copy is a…",
+     "options": [
+      "mesa",
+      "chave",
+      "porta",
+      "cópia"
+     ],
+     "answer": 3,
+     "why": "Copy = cópia de um documento."
+    },
+    {
+     "q": "Choose the correct word: \"We check the ___ at the end of every day.\"",
+     "options": [
+      "dog",
+      "car",
+      "file",
+      "rain"
+     ],
+     "answer": 2,
+     "why": "File = arquivo; é o que a equipe confere no fim do dia."
+    },
+    {
+     "q": "\"Please leave the <strong>box</strong> on my desk.\" A box is a…",
+     "options": [
+      "luz",
+      "flor",
+      "caixa",
+      "carta"
+     ],
+     "answer": 2,
+     "why": "Box = caixa (guarda os arquivos cheios)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que a equipe de contabilidade usa no dia a dia. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>fill in</strong> this form, please?\" To fill in means to…",
+     "options": [
+      "complete it with information",
+      "sign your name",
+      "throw it away",
+      "read it out loud"
+     ],
+     "answer": 0,
+     "why": "Fill in = preencher (completar com informação)."
+    },
+    {
+     "q": "\"The boss will <strong>sign off on</strong> the report today.\" To sign off on means to…",
+     "options": [
+      "print it",
+      "approve it",
+      "translate it",
+      "lose it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"Please <strong>check the numbers</strong> before we close the file.\" To check the numbers means to…",
+     "options": [
+      "make sure they are correct",
+      "hide them",
+      "count the boxes",
+      "delete them"
+     ],
+     "answer": 0,
+     "why": "Check the numbers = conferir se os números estão certos."
+    },
+    {
+     "q": "\"The record has to <strong>match</strong> the records.\" To match means to…",
+     "options": [
+      "be lost",
+      "be the same",
+      "be new",
+      "be very old"
+     ],
+     "answer": 1,
+     "why": "Match = bater, ser igual (mesmos números)."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the file one more time.\" To go over means to…",
+     "options": [
+      "review it carefully",
+      "print it twice",
+      "sell it",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Go over = revisar, passar por cima com atenção."
+    }
+   ]
+  }
+ ]
+}

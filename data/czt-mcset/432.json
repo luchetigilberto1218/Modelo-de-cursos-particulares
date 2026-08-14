@@ -10,9 +10,9 @@
     {
      "q": "What does an invoice prove?",
      "options": [
-      "That the price is low",
-      "That a sale happened",
       "That a worker is honest",
+      "That a sale happened",
+      "That the price is low",
       "That a company is big"
      ],
      "answer": 1,
@@ -21,21 +21,21 @@
     {
      "q": "How long does a company usually have to keep its invoices?",
      "options": [
-      "Five or six years",
+      "One year",
       "Twenty years",
       "One month",
-      "One year"
+      "Five or six years"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"keep its invoices for several years, usually five or six.\""
     },
     {
      "q": "What can happen if the invoice is not correct?",
      "options": [
+      "The price goes up",
       "The worker loses the job",
-      "The company must close",
       "The tax office will not accept the sale",
-      "The price goes up"
+      "The company must close"
      ],
      "answer": 2,
      "why": "\"Without a correct invoice, the tax office will not accept the sale.\""
@@ -43,12 +43,12 @@
     {
      "q": "The text suggests that documentation work is…",
      "options": [
-      "only for managers",
       "not important",
-      "quiet but very important",
-      "exciting and fast"
+      "exciting and fast",
+      "only for managers",
+      "quiet but very important"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: é \"quiet, repetitive work\", mas \"the evidence everything else stands on\" — pouco chamativo, mas essencial."
     },
     {
@@ -56,10 +56,10 @@
      "options": [
       "\"Invoices prove a sale.\"",
       "\"Documentation is important.\"",
-      "\"Keep your invoices for years.\"",
-      "\"You can throw invoices away after a week.\""
+      "\"You can throw invoices away after a week.\"",
+      "\"Keep your invoices for years.\""
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: o texto pede guardar por 5 ou 6 anos; jogar fora em uma semana é o oposto."
     }
    ]
@@ -78,11 +78,11 @@
      "q": "How does Emily keep the invoices in the box?",
      "options": [
       "By name of the company",
-      "In no special order",
       "By price, cheapest first",
-      "By date, oldest first"
+      "By date, oldest first",
+      "In no special order"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"We keep them by date, oldest first.\""
     },
     {
@@ -99,12 +99,12 @@
     {
      "q": "How fast must they be able to find one invoice?",
      "options": [
-      "In under a minute",
-      "In one week",
       "In one hour",
+      "In one week",
+      "In under a minute",
       "In one day"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"we must find it fast — in under a minute.\""
     },
     {
@@ -112,8 +112,8 @@
      "options": [
       "Because paper is expensive",
       "Because even a small receipt can be a deductible purchase",
-      "Because the boss counts the papers",
-      "Because the box must be full"
+      "Because the box must be full",
+      "Because the boss counts the papers"
      ],
      "answer": 1,
      "why": "Inferência: um pequeno recibo pode virar compra dedutível, então nada se joga fora."
@@ -121,10 +121,10 @@
     {
      "q": "How would you describe Emily's advice to the new person?",
      "options": [
-      "Angry and short",
+      "Careless and quick",
       "Confusing and long",
       "Careful and clear",
-      "Careless and quick"
+      "Angry and short"
      ],
      "answer": 2,
      "why": "Inferência: ela dá regras simples e diz \"if you are not sure, keep it and ask me\" — é cuidadosa e clara."
@@ -151,40 +151,40 @@
      "q": "Choose the correct word: \"We must ___ every invoice for five or six years.\"",
      "options": [
       "lose",
-      "sell",
+      "keep",
       "print",
-      "keep"
+      "sell"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "To keep = guardar; guardamos as faturas por anos."
     },
     {
      "q": "\"One invoice is <strong>missing</strong> from the box.\" Missing means…",
      "options": [
-      "very old",
-      "not there",
       "written by hand",
-      "already paid"
+      "already paid",
+      "very old",
+      "not there"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Missing = faltando, não está no lugar."
     },
     {
      "q": "Choose the correct word: \"The invoice is the ___ that proves the sale.\"",
      "options": [
-      "price",
-      "evidence",
+      "problem",
       "office",
-      "problem"
+      "price",
+      "evidence"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Evidence = evidência/prova; a fatura prova a venda."
     },
     {
      "q": "\"If the numbers are wrong, they are hard to <strong>defend</strong>.\" To defend here means…",
      "options": [
-      "to hide them",
       "to pay them",
+      "to hide them",
       "to show they are correct",
       "to change them"
      ],
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the invoice.\" To sign off on means to…",
      "options": [
-      "approve it",
       "print it again",
       "throw it away",
+      "approve it",
       "hide it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"Can you <strong>fill in</strong> the date on this invoice?\" To fill in means to…",
      "options": [
-      "write the missing information",
       "read it aloud",
       "cut the paper",
-      "send it back"
+      "send it back",
+      "write the missing information"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Fill in = preencher a informação que falta."
     },
     {
      "q": "\"Please <strong>hold on to</strong> every receipt.\" To hold on to means to…",
      "options": [
+      "give it away",
       "keep it",
-      "sell it",
       "copy it",
-      "give it away"
+      "sell it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Hold on to = segurar, guardar."
     },
     {
      "q": "\"We need to <strong>sort out</strong> the box before the tax office comes.\" To sort out means to…",
      "options": [
-      "put it in order",
-      "close the office",
       "make it dirty",
-      "buy a new one"
+      "put it in order",
+      "buy a new one",
+      "close the office"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sort out = organizar, pôr em ordem."
     },
     {
      "q": "\"I can't <strong>find</strong> that invoice — it is <strong>missing</strong>.\" What is the problem?",
      "options": [
+      "The invoice is not there",
       "The invoice is paid",
       "The invoice is new",
-      "The invoice is too long",
-      "The invoice is not there"
+      "The invoice is too long"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Missing = faltando; a fatura não está no lugar."
     }
    ]

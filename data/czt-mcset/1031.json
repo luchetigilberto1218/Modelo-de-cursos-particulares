@@ -10,56 +10,56 @@
     {
      "q": "In English, where does the adjective go?",
      "options": [
+      "It does not matter",
       "After the noun",
       "At the end of the sentence",
-      "Before the noun",
-      "It does not matter"
+      "Before the noun"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"the adjective comes before the noun\" — a blue folder, a big office."
     },
     {
      "q": "What colour is the folder?",
      "options": [
-      "White",
+      "Black",
       "Red",
-      "Blue",
-      "Black"
+      "White",
+      "Blue"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"The folder is blue.\""
     },
     {
      "q": "What is on the desk?",
      "options": [
       "A blue chair",
+      "A black laptop",
       "A white bag",
-      "A red pen",
-      "A black laptop"
+      "A red pen"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"A black laptop is on the desk.\""
     },
     {
      "q": "The text says the office is \"a good place to work\". This suggests that…",
      "options": [
-      "the writer feels positive about the office",
       "the office is closed today",
       "the writer does not like the office",
+      "the writer feels positive about the office",
       "the office is very small"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"a good place to work\" mostra uma opinião positiva sobre o escritório."
     },
     {
      "q": "The writer says \"Take your time. Every sentence counts.\" The writer would most likely DISAGREE with…",
      "options": [
-      "You should finish as fast as possible and not think.",
-      "Learning takes time.",
       "Each sentence is useful.",
-      "You should practise carefully."
+      "Learning takes time.",
+      "You should practise carefully.",
+      "You should finish as fast as possible and not think."
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"take your time\" e \"every sentence counts\" pedem calma e cuidado, o oposto de correr sem pensar."
     }
    ]
@@ -77,12 +77,12 @@
     {
      "q": "What colour is James's folder?",
      "options": [
-      "Blue",
       "Black",
+      "Blue",
       "Red",
       "White"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"I have a black laptop and a blue folder.\""
     },
     {
@@ -90,43 +90,43 @@
      "options": [
       "A white laptop",
       "A red pen",
-      "A small bag",
-      "A big chair"
+      "A big chair",
+      "A small bag"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"I have a small bag under the desk.\""
     },
     {
      "q": "When is the meeting today?",
      "options": [
-      "In the morning",
-      "There is no meeting",
       "At one o'clock",
-      "At two o'clock"
+      "There is no meeting",
+      "At two o'clock",
+      "In the morning"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Today we have a long meeting at two o'clock.\""
     },
     {
      "q": "James says he likes colours because they help him stay organised. This suggests that…",
      "options": [
-      "James wants a new office",
       "James dislikes his desk",
-      "James does not use colours",
-      "James finds colours useful at work"
+      "James finds colours useful at work",
+      "James wants a new office",
+      "James does not use colours"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: para ele as cores têm uma função prática — o ajudam a se organizar."
     },
     {
      "q": "How would you best describe James's tone?",
      "options": [
-      "Calm and friendly",
+      "Bored and tired",
       "Angry and impatient",
-      "Nervous and unsure",
-      "Bored and tired"
+      "Calm and friendly",
+      "Nervous and unsure"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: ele fala devagar, dá boas-vindas e diz \"take your time\" — um tom calmo e acolhedor."
     }
    ]
@@ -139,20 +139,20 @@
     {
      "q": "\"The sky is <strong>blue</strong> today.\" <strong>Blue</strong> means…",
      "options": [
-      "preto",
       "vermelho",
-      "branco",
-      "azul"
+      "preto",
+      "azul",
+      "branco"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Blue = azul."
     },
     {
      "q": "Choose the correct word: \"Stop! The light is ___.\"",
      "options": [
-      "blue",
       "big",
       "white",
+      "blue",
       "red"
      ],
      "answer": 3,
@@ -161,23 +161,23 @@
     {
      "q": "\"My new laptop is <strong>black</strong>.\" <strong>Black</strong> means…",
      "options": [
+      "azul",
       "grande",
       "branco",
-      "preto",
-      "azul"
+      "preto"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Black = preto."
     },
     {
      "q": "Choose the correct word: \"The paper is clean and ___.\"",
      "options": [
-      "black",
-      "blue",
       "white",
-      "red"
+      "blue",
+      "red",
+      "black"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "White = branco — a cor comum do papel limpo."
     },
     {
@@ -185,8 +185,8 @@
      "options": [
       "quieto",
       "grande",
-      "pequeno",
-      "novo"
+      "novo",
+      "pequeno"
      ],
      "answer": 1,
      "why": "Big = grande (o oposto de small)."
@@ -201,43 +201,43 @@
     {
      "q": "\"Please <strong>write down</strong> your name and the colour of the folder.\" To write down means to…",
      "options": [
-      "forget it",
-      "read it out loud",
       "throw it away",
-      "put it on paper"
+      "read it out loud",
+      "put it on paper",
+      "forget it"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Write down = anotar, colocar no papel."
     },
     {
      "q": "\"The teacher will <strong>hand out</strong> the blue folders.\" To hand out means to…",
      "options": [
-      "hide them",
-      "give them to people",
       "collect them",
-      "sell them"
+      "sell them",
+      "hide them",
+      "give them to people"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Hand out = distribuir, entregar para as pessoas."
     },
     {
      "q": "\"Please <strong>fill in</strong> your name on the white paper.\" To fill in means to…",
      "options": [
       "erase it",
-      "complete it with information",
+      "fold it",
       "paint it",
-      "fold it"
+      "complete it with information"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Fill in = preencher com a informação."
     },
     {
      "q": "\"We <strong>set up</strong> the big room for the meeting.\" To set up means to…",
      "options": [
+      "paint it black",
       "close it",
-      "clean and leave it empty",
       "prepare and arrange it",
-      "paint it black"
+      "clean and leave it empty"
      ],
      "answer": 2,
      "why": "Set up = preparar, organizar o espaço."
@@ -245,12 +245,12 @@
     {
      "q": "\"Everyone can <strong>take part</strong> in the meeting.\" To take part means to…",
      "options": [
-      "join and participate",
-      "leave early",
       "stay quiet",
-      "watch from home"
+      "watch from home",
+      "join and participate",
+      "leave early"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Take part = participar, tomar parte."
     }
    ]

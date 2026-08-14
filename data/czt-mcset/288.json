@@ -1,0 +1,259 @@
+{
+ "num": 288,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Managing warehousing at network scale means moving from a focus on individual sites to a focus on the network that connects them. Where should each warehouse sit? How big should it be? What should it hold, and how should demand flow between the nodes? These are not operational questions — they are geographical, strategic and deeply tied to the company's long-term customer promise.<br><br>A network review starts with a disarmingly simple question: if we were designing this network from scratch today, for the customers we actually have, where would we put each warehouse? The honest answer is almost always different from the current footprint, which carries the shape of decisions made by different people, for different markets, years ago.<br><br>Executing a network change is slow and expensive. Leases run for years, and teams and relationships exist on the ground. But the companies that run the review seriously, every few years, consistently outperform those that treat their network as given. Quietly, network strategy is one of the largest levers in the supply chain — and one of the most often neglected.",
+   "items": [
+    {
+     "q": "According to the text, how do the core questions about warehousing differ from operational ones?",
+     "options": [
+      "They are geographical, strategic and tied to the customer promise",
+      "They concern only the cost of individual sites",
+      "They are answered by warehouse managers alone",
+      "They can be settled without reference to customers"
+     ],
+     "answer": 0,
+     "why": "\"they are geographical, strategic and deeply tied to the company's long-term customer promise.\""
+    },
+    {
+     "q": "What is the \"disarmingly simple question\" a network review begins with?",
+     "options": [
+      "Which leases expire in the current year",
+      "Where each warehouse would go if the network were designed from scratch today",
+      "How many warehouses the competitors operate",
+      "How the existing network was originally justified"
+     ],
+     "answer": 1,
+     "why": "\"if we were designing this network from scratch today… where would we put each warehouse?\""
+    },
+    {
+     "q": "The phrase \"which carries the shape of decisions made by different people, for different markets\" suggests that the current network…",
+     "options": [
+      "is optimal and should be left untouched",
+      "was never planned at all",
+      "was designed for the customers the company has today",
+      "reflects past conditions that may no longer apply"
+     ],
+     "answer": 3,
+     "why": "Inferência: se a rede carrega a forma de decisões antigas, ela pode estar desalinhada com a realidade atual."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A network's current footprint should be treated as a fixed given",
+      "Network strategy is a powerful but under-used lever",
+      "Reviewing the network periodically tends to pay off",
+      "Warehousing decisions are ultimately strategic"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto elogia justamente quem NÃO trata a rede como dada; tratá-la como fixa é o oposto da tese."
+    },
+    {
+     "q": "Why does the author call network strategy \"one of the most often neglected\" levers?",
+     "options": [
+      "Because leases are impossible to renegotiate",
+      "Because change is slow and costly, so firms leave the network as it is",
+      "Because customers rarely notice warehouse location",
+      "Because it produces no measurable benefit"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto liga o alto custo e a lentidão da mudança ao fato de muitas empresas simplesmente não mexerem na rede."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily apresentando as conclusões da revisão de rede. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, having spent the last quarter modelling the whole network from the ground up, I want to put the headline recommendation on the table straight away: we close the central warehouse and open two smaller ones, each positioned much closer to where our customers actually are.<br><br>I know how that sounds. That central site has been the backbone of the operation for a decade, and there is real loyalty to it. But designing for the customers we have today, rather than the ones we had when the lease was signed, the case is hard to argue with. Half our volume now lands within a hundred miles of two ports we barely serve directly.<br><br>Yes, running one large facility is cheaper per pallet — nobody disputes the consolidation economics. But we pay for that unit cost twice over in expedited freight and missed delivery windows. Two smaller hubs, closer to the demand, cut the transit time enough to pay for themselves inside three years.<br><br>None of this is quick. Leases overlap, and we will carry both networks for a while. But if we keep treating the footprint as fixed, we simply hand that advantage to whoever reviews theirs first.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Emily's headline recommendation?",
+     "options": [
+      "Renegotiate the current lease for a lower rate",
+      "Outsource all warehousing to a third party",
+      "Close the central warehouse and open two smaller ones nearer customers",
+      "Expand the central warehouse to handle more volume"
+     ],
+     "answer": 2,
+     "why": "\"we close the central warehouse and open two smaller ones, each positioned much closer to where our customers actually are.\""
+    },
+    {
+     "q": "Why does Emily mention that the central site has been \"the backbone of the operation for a decade\"?",
+     "options": [
+      "To show that customers have moved closer to it",
+      "To prove it is the cheapest option available",
+      "To argue that it should never be closed",
+      "To acknowledge the emotional attachment before making her case anyway"
+     ],
+     "answer": 3,
+     "why": "Inferência: ela reconhece a lealdade ao site (\"real loyalty to it\") só para, em seguida, argumentar contra mantê-lo."
+    },
+    {
+     "q": "According to Emily, what is the drawback of running one large facility?",
+     "options": [
+      "It has a higher cost per pallet",
+      "It is too far from the ports to be legal",
+      "Its lower unit cost is offset by expedited freight and missed delivery windows",
+      "It cannot be leased for long periods"
+     ],
+     "answer": 2,
+     "why": "\"running one large facility is cheaper per pallet… We are paying for that unit cost twice over in expedited freight and missed delivery windows.\""
+    },
+    {
+     "q": "What does Emily mean by \"we simply hand that advantage to whoever reviews theirs first\"?",
+     "options": [
+      "The advantage belongs to whichever team finishes the report soonest",
+      "The first company to sign a lease wins the contract",
+      "Reviews should always be handed to an external consultant",
+      "Competitors who rethink their own networks will gain the edge Czarnikow leaves on the table"
+     ],
+     "answer": 3,
+     "why": "Inferência: manter a rede fixa deixa livre um ganho que um concorrente mais atento capturaria."
+    },
+    {
+     "q": "How would you best describe Emily's stance?",
+     "options": [
+      "Indifferent to the customers' location",
+      "Purely focused on cutting unit cost at any price",
+      "Hesitant and unwilling to commit to a recommendation",
+      "Confident in the change while candid about its cost and disruption"
+     ],
+     "answer": 3,
+     "why": "Inferência: ela defende com convicção, mas admite abertamente que a transição é lenta e que carregarão duas redes por um tempo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Managing warehousing at <strong>network scale</strong> means looking at the whole system, not one shed.\" Network scale refers to…",
+     "options": [
+      "the physical size of a single warehouse",
+      "the level of the entire connected system of sites, not the individual unit",
+      "the number of employees per site",
+      "the speed of a delivery vehicle"
+     ],
+     "answer": 1,
+     "why": "Network scale = escala de rede: olhar o sistema inteiro que conecta os sites, não a unidade isolada."
+    },
+    {
+     "q": "Choose the correct term: \"If we were redesigning the footprint ___, we would never place a hub this far from the ports.\"",
+     "options": [
+      "from scratch",
+      "at scale",
+      "by lease",
+      "on the ground"
+     ],
+     "answer": 0,
+     "why": "From scratch = do zero, começando sem herdar a estrutura existente."
+    },
+    {
+     "q": "\"The current network still <strong>carries the shape</strong> of choices made a decade ago.\" This means the network…",
+     "options": [
+      "changes shape automatically each year",
+      "still bears the imprint of old decisions",
+      "was recently redesigned for today's customers",
+      "has no fixed structure at all"
+     ],
+     "answer": 1,
+     "why": "To carry the shape = carregar a forma: ainda traz a marca de decisões antigas."
+    },
+    {
+     "q": "\"The relationships and expertise that exist <strong>on the ground</strong> are hard to replicate elsewhere.\" On the ground means…",
+     "options": [
+      "in the long-term strategy",
+      "in the local, physical operation itself",
+      "in the head office",
+      "in the financial model"
+     ],
+     "answer": 1,
+     "why": "On the ground = no terreno: na operação local e concreta, onde as coisas acontecem."
+    },
+    {
+     "q": "\"Network strategy is one of the largest <strong>levers</strong> in the supply chain, yet it is routinely <strong>neglected</strong>.\" These words mean, respectively…",
+     "options": [
+      "a fixed cost / celebrated",
+      "a means of producing a large effect / left unattended",
+      "a legal contract / audited",
+      "a minor detail / over-managed"
+     ],
+     "answer": 1,
+     "why": "Lever = alavanca (meio de produzir grande efeito); neglected = negligenciado, deixado de lado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em revisões de rede e reuniões de estratégia. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the closure before we notify staff.\" To sign off on means to…",
+     "options": [
+      "informally discuss",
+      "formally approve",
+      "publicly announce",
+      "quietly postpone"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the two new hubs one region at a time.\" To roll out means to…",
+     "options": [
+      "implement in stages",
+      "cancel gradually",
+      "test in secret",
+      "audit retrospectively"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva, faseada."
+    },
+    {
+     "q": "\"Operations <strong>pushed back on</strong> the closure, worried about the transition risk.\" They…",
+     "options": [
+      "rewrote the whole proposal",
+      "forgot to review it",
+      "approved it without comment",
+      "resisted or raised objections to it"
+     ],
+     "answer": 3,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The last review recommended two hubs, but the company never <strong>followed through</strong>.\" They…",
+     "options": [
+      "failed to carry the plan through to completion",
+      "carried the plan to completion",
+      "documented it thoroughly",
+      "expanded the plan further"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado; aqui, o oposto aconteceu."
+    },
+    {
+     "q": "\"Shaving a day off unit cost won't <strong>move the needle</strong> — it's transit time that decides the account.\" This means it will…",
+     "options": [
+      "take months to measure",
+      "not make a noticeable difference",
+      "cost far more than expected",
+      "provoke strong resistance"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível; aqui, não faz."
+    }
+   ]
+  }
+ ]
+}

@@ -10,8 +10,8 @@
      "options": [
       "The seller",
       "A bank",
-      "The buyer",
-      "Customs"
+      "Customs",
+      "The buyer"
      ],
      "answer": 1,
      "why": "\"A letter of credit is a promise made by a bank.\""
@@ -19,12 +19,12 @@
     {
      "q": "What must the seller do for the bank to pay?",
      "options": [
+      "Send the goods and bring the right documents",
       "Pay a duty",
       "Visit the buyer",
-      "Send the goods and bring the right documents",
       "Nothing"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"if the seller sends the goods and brings the right documents, the bank will pay.\""
     },
     {
@@ -42,9 +42,9 @@
      "q": "With a letter of credit, who do the two sides trust?",
      "options": [
       "Each other",
-      "The ship",
+      "Customs",
       "The bank",
-      "Customs"
+      "The ship"
      ],
      "answer": 2,
      "why": "\"With one, they trust the bank instead.\""
@@ -52,12 +52,12 @@
     {
      "q": "How does the text describe the letter of credit?",
      "options": [
-      "A risky idea",
-      "A type of ship",
+      "A new and rare tool",
       "One of the oldest and most used tools, still working well today",
-      "A new and rare tool"
+      "A type of ship",
+      "A risky idea"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"one of the oldest and most used tools in international trade, and it still works very well today.\""
     }
    ]
@@ -72,20 +72,20 @@
     {
      "q": "In the example, what is being sold?",
      "options": [
-      "Sugar",
       "Coffee",
-      "Machines",
-      "Phones"
+      "Phones",
+      "Sugar",
+      "Machines"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"you're selling coffee to a buyer in another country.\""
     },
     {
      "q": "What is the problem the letter of credit solves?",
      "options": [
-      "The price is too high",
-      "The goods are too heavy",
       "The ship is slow",
+      "The goods are too heavy",
+      "The price is too high",
       "Neither side fully trusts the other"
      ],
      "answer": 3,
@@ -96,8 +96,8 @@
      "options": [
       "To lower the price",
       "To pay when the seller sends the coffee and shows the right documents",
-      "To ship the coffee",
-      "To visit the seller"
+      "To visit the seller",
+      "To ship the coffee"
      ],
      "answer": 1,
      "why": "\"when the seller sends the coffee and shows the right documents, we will pay.\""
@@ -105,12 +105,12 @@
     {
      "q": "Why must the documents be exactly right?",
      "options": [
-      "If a date is wrong or a paper is missing, the bank can say no",
-      "To pay more duty",
+      "To please the buyer",
       "To make them longer",
-      "To please the buyer"
+      "If a date is wrong or a paper is missing, the bank can say no",
+      "To pay more duty"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"If a date is wrong, or a paper is missing, the bank can say no.\""
     },
     {
@@ -133,30 +133,30 @@
      "q": "A **letter of credit** is…",
      "options": [
       "a currency",
-      "a shipping form",
       "a bank's promise to pay if the right documents are shown",
+      "a shipping form",
       "a type of duty"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Letter of credit = carta de crédito."
     },
     {
      "q": "The **beneficiary** of a letter of credit is…",
      "options": [
       "the ship",
-      "the bank",
       "the buyer",
-      "the seller who will be paid"
+      "the seller who will be paid",
+      "the bank"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Beneficiary = beneficiário (o vendedor que recebe)."
     },
     {
      "q": "Choose the correct word: \"The bank will **___** the payment if the documents are right.\"",
      "options": [
       "import",
-      "ship",
       "pack",
+      "ship",
       "guarantee"
      ],
      "answer": 3,
@@ -165,12 +165,12 @@
     {
      "q": "To **issue** a letter of credit means to…",
      "options": [
-      "pay it",
-      "ship it",
       "open or create it",
-      "cancel it"
+      "pay it",
+      "cancel it",
+      "ship it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Issue = emitir."
     },
     {
@@ -192,10 +192,10 @@
     {
      "q": "\"The bank **stands in the middle**.\" To stand in the middle means to…",
      "options": [
-      "pay nothing",
       "leave the deal",
+      "take one side",
       "act between the two sides",
-      "take one side"
+      "pay nothing"
      ],
      "answer": 2,
      "why": "Stand in the middle = ficar no meio, entre as partes."
@@ -203,45 +203,45 @@
     {
      "q": "\"The buyer asks the bank to **open** a letter of credit.\" To open here means to…",
      "options": [
+      "sign",
       "create / issue",
       "cancel",
-      "close",
-      "sign"
+      "close"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Open a letter of credit = abrir/emitir."
     },
     {
      "q": "\"We check the documents **word by word**.\" Word by word means…",
      "options": [
-      "very carefully, every detail",
-      "not at all",
+      "once",
       "quickly",
-      "once"
+      "not at all",
+      "very carefully, every detail"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Word by word = palavra por palavra, com cuidado."
     },
     {
      "q": "\"If a paper is missing, the bank can **say no**.\" To say no means to…",
      "options": [
+      "ship",
       "refuse",
       "accept",
-      "ship",
       "pay"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Say no = recusar."
     },
     {
      "q": "\"Both sides can do business **with confidence**.\" With confidence means…",
      "options": [
-      "quickly",
       "for free",
       "feeling safe and sure",
-      "with fear"
+      "with fear",
+      "quickly"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "With confidence = com segurança."
     }
    ]

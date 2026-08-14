@@ -22,8 +22,8 @@
      "q": "How does the text say tax advice should be framed for executives?",
      "options": [
       "In purely technical tax terms",
-      "Only in writing, after decisions are signed",
       "As a list of compliance obligations",
+      "Only in writing, after decisions are signed",
       "In the language of margin, cash and valuation"
      ],
      "answer": 3,
@@ -32,12 +32,12 @@
     {
      "q": "When, according to the text, should the tax team be involved?",
      "options": [
-      "Once a year, during the budget review",
+      "When decisions are being made",
       "Only when a loophole is available",
-      "After the decisions are signed",
-      "When decisions are being made"
+      "Once a year, during the budget review",
+      "After the decisions are signed"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"the tax team be present when decisions are made, not consulted after they are signed.\""
     },
     {
@@ -54,12 +54,12 @@
     {
      "q": "The phrase \"slightly smarter than it would otherwise have been\" suggests that tax planning…",
      "options": [
+      "matters more than strategy itself",
       "improves decisions at the margin rather than transforming them",
-      "is only useful for pricing decisions",
       "should dominate every strategic decision",
-      "matters more than strategy itself"
+      "is only useful for pricing decisions"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: o ganho é incremental e discreto ('quiet, almost invisible'), não uma virada radical."
     }
    ]
@@ -77,31 +77,31 @@
     {
      "q": "Why has Sophie asked the tax team to join the early calls?",
      "options": [
-      "To lead the commercial negotiation",
-      "To replace the Singapore group's advisers",
       "To block the joint venture",
-      "To listen and flag anything that would change the structure before terms are locked"
+      "To listen and flag anything that would change the structure before terms are locked",
+      "To replace the Singapore group's advisers",
+      "To lead the commercial negotiation"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"Their brief is simple: listen, and flag anything that would change the shape of the structure before the terms are locked.\""
     },
     {
      "q": "What went wrong in the deal last year?",
      "options": [
       "The Singapore group withdrew",
+      "Tax was consulted only after the heads of terms were signed",
       "The commercial team ignored the margin entirely",
-      "The tax team blocked the deal",
-      "Tax was consulted only after the heads of terms were signed"
+      "The tax team blocked the deal"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"only then asked tax to look at it. By that point the repatriation route was fixed.\""
     },
     {
      "q": "How does Sophie want the tax team to speak in the room?",
      "options": [
       "In the language of margin, cash and valuation",
-      "As briefly as possible, with no detail",
       "Only in writing after the meeting",
+      "As briefly as possible, with no detail",
       "In technical terms about withholding rules"
      ],
      "answer": 0,
@@ -110,20 +110,20 @@
     {
      "q": "What does Sophie mean by \"No heroics\"?",
      "options": [
-      "The contribution should be quiet and unobtrusive, not dramatic",
-      "The tax team should take public credit for the deal",
       "The deal will require extraordinary effort",
-      "The team should avoid the negotiation altogether"
+      "The contribution should be quiet and unobtrusive, not dramatic",
+      "The team should avoid the negotiation altogether",
+      "The tax team should take public credit for the deal"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: 'almost invisible' e 'no heroics' apontam para uma contribuição discreta, sem protagonismo."
     },
     {
      "q": "What can be inferred about Sophie's attitude toward the tax team's role?",
      "options": [
-      "She wants them to renegotiate last year's terms",
-      "She sees them as an early, integrated voice that improves the deal",
       "She thinks they should only handle compliance",
+      "She sees them as an early, integrated voice that improves the deal",
+      "She wants them to renegotiate last year's terms",
       "She sees them as a brake on commercial deals"
      ],
      "answer": 1,
@@ -139,54 +139,54 @@
     {
      "q": "\"We treated the tax view as a <strong>considered input</strong>, weighing it alongside margin and risk.\" A considered input is…",
      "options": [
-      "a factor thought through and deliberately taken into account",
       "an optional footnote nobody reads",
+      "a last-minute objection",
       "a legal obligation with no flexibility",
-      "a last-minute objection"
+      "a factor thought through and deliberately taken into account"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Considered input = entrada considerada: algo ponderado e levado a sério na decisão."
     },
     {
      "q": "Choose the correct word: \"The scheme relied on an obscure ___ that regulators later closed.\"",
      "options": [
-      "margin",
-      "joint venture",
       "loophole",
-      "valuation"
+      "valuation",
+      "margin",
+      "joint venture"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Loophole = brecha: uma abertura na regra que se explora — depois fechada."
     },
     {
      "q": "\"The board voted to <strong>repatriate</strong> the cash held offshore.\" To repatriate means to…",
      "options": [
-      "bring funds back to the home country",
-      "write the funds off as a loss",
+      "hide the funds from the auditors",
       "reinvest funds abroad indefinitely",
-      "hide the funds from the auditors"
+      "bring funds back to the home country",
+      "write the funds off as a loss"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "To repatriate = repatriar: trazer o capital de volta ao país de origem."
     },
     {
      "q": "Choose the correct word: \"She was careful to ___ the advice as an effect on cash flow, not as a tax rule.\"",
      "options": [
-      "postpone",
       "audit",
       "repatriate",
-      "frame"
+      "frame",
+      "postpone"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "To frame = enquadrar: apresentar a informação sob determinada ótica."
     },
     {
      "q": "<strong>Valuation</strong> is best described as…",
      "options": [
+      "the cost of an internal audit",
       "the number of employees in a division",
-      "the tax rate applied to profits",
       "the estimated worth of a company or asset",
-      "the cost of an internal audit"
+      "the tax rate applied to profits"
      ],
      "answer": 2,
      "why": "Valuation = avaliação: quanto vale a empresa ou o ativo."
@@ -201,56 +201,56 @@
     {
      "q": "\"Legal still has to <strong>sign off on</strong> the joint-venture structure.\" To sign off on means to…",
      "options": [
-      "leak to the press",
+      "quietly ignore",
       "reopen for debate",
-      "formally approve",
-      "quietly ignore"
+      "leak to the press",
+      "formally approve"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We'll <strong>roll out</strong> the new tax-governance model across the regions next quarter.\" To roll out means to…",
      "options": [
-      "audit retroactively",
       "abandon quietly",
       "implement in stages",
-      "outsource entirely"
+      "outsource entirely",
+      "audit retroactively"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Roll out = implementar de forma progressiva."
     },
     {
      "q": "\"The commercial team <strong>pushed back on</strong> bringing tax in so early.\" They…",
      "options": [
-      "forgot about it",
-      "delegated it to finance",
       "resisted or objected to the idea",
-      "welcomed it immediately"
+      "forgot about it",
+      "welcomed it immediately",
+      "delegated it to finance"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
     },
     {
      "q": "\"Everyone agreed to involve tax earlier, but the process never <strong>followed through</strong>.\" It…",
      "options": [
       "was documented in full",
-      "was not carried to completion",
       "was completed ahead of time",
-      "was approved by the board"
+      "was approved by the board",
+      "was not carried to completion"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"Shaving a point off the withholding rate won't <strong>move the needle</strong> on the valuation.\" This means it will…",
      "options": [
-      "trigger an audit",
       "not make a noticeable difference",
+      "trigger an audit",
       "delay the deal indefinitely",
       "double the valuation"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
     }
    ]

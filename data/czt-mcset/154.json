@@ -8,12 +8,12 @@
     {
      "q": "How does the text describe practical due diligence?",
      "options": [
+      "A courtroom process",
       "An insurance policy",
-      "A short, disciplined checklist",
       "A long legal report",
-      "A courtroom process"
+      "A short, disciplined checklist"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"due diligence is a short, disciplined checklist — not a long legal report.\""
     },
     {
@@ -30,32 +30,32 @@
     {
      "q": "What does a UBO search identify?",
      "options": [
-      "The sanctions list",
-      "The company's profit",
+      "The shipping route",
       "The real ownership",
-      "The shipping route"
+      "The company's profit",
+      "The sanctions list"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"A UBO (ultimate beneficial owner) search identifies real ownership.\""
     },
     {
      "q": "What does a quick news search help spot?",
      "options": [
+      "The exchange rate",
       "The delivery date",
       "Red flags: lawsuits, fraud stories, bad press",
-      "The exchange rate",
       "The best price"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"A quick news search spots red flags: lawsuits, fraud stories, bad press.\""
     },
     {
      "q": "What is the real goal of this due diligence?",
      "options": [
+      "To avoid all deals",
       "To find a perfect partner",
-      "To write a long report",
       "To filter out the clear 'no' cases before they waste time and money",
-      "To avoid all deals"
+      "To write a long report"
      ],
      "answer": 2,
      "why": "\"You are filtering out the clear 'no' cases before they waste your time and your balance sheet.\""
@@ -72,32 +72,32 @@
     {
      "q": "Why is Charlotte running the checks?",
      "options": [
-      "The order was small",
       "A new distributor sent a large first order and a few things feel off",
+      "The order was small",
       "The bank asked",
       "It is an annual review"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"A new distributor has just sent us a large first order, and a few things feel slightly off.\""
     },
     {
      "q": "What did the company registry check show?",
      "options": [
-      "The company doesn't exist",
-      "It's on a sanctions list",
+      "It has lawsuits",
       "It's registered, but only three months ago",
-      "It has lawsuits"
+      "The company doesn't exist",
+      "It's on a sanctions list"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"it's registered — but only three months ago.\""
     },
     {
      "q": "What did the UBO search reveal?",
      "options": [
       "The ultimate owner is an individual in a different country from the company address",
+      "There is no owner",
       "The owner is on a watchlist",
-      "The company owns itself",
-      "There is no owner"
+      "The company owns itself"
      ],
      "answer": 0,
      "why": "\"the ultimate owner is an individual in a different country from the company address.\""
@@ -105,23 +105,23 @@
     {
      "q": "What did the sanctions screening find?",
      "options": [
-      "A fraud story",
       "Both the company and owner came back clean",
+      "A fraud story",
       "A lawsuit",
       "A match"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I screened the company and the owner… Both came back clean.\""
     },
     {
      "q": "What does Charlotte decide to do?",
      "options": [
-      "Ignore the flags",
       "Ask for a smaller first order with payment secured",
+      "Ignore the flags",
       "Refuse the deal",
       "Ship the full amount on open credit"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"I'll ask for a smaller first order and payment secured, rather than shipping the full amount on open credit.\""
     }
    ]
@@ -132,34 +132,34 @@
     {
      "q": "**Due diligence** is…",
      "options": [
-      "the checks you do before trusting or dealing with a party",
+      "an insurance policy",
       "a payment method",
       "a shipping term",
-      "an insurance policy"
+      "the checks you do before trusting or dealing with a party"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Due diligence = diligência prévia."
     },
     {
      "q": "A **red flag** is…",
      "options": [
-      "a warning sign of a possible problem",
-      "a customs form",
+      "a good sign",
       "a payment",
-      "a good sign"
+      "a customs form",
+      "a warning sign of a possible problem"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Red flag = sinal de alerta."
     },
     {
      "q": "Choose the correct word: \"A **company ___** check confirms the business exists.\"",
      "options": [
-      "tranche",
-      "registry",
       "draft",
-      "invoice"
+      "tranche",
+      "invoice",
+      "registry"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Company registry = registro empresarial."
     },
     {
@@ -167,8 +167,8 @@
      "options": [
       "the shipping agent",
       "the real person who ultimately owns or controls the company",
-      "the customer",
-      "the company's bank"
+      "the company's bank",
+      "the customer"
      ],
      "answer": 1,
      "why": "UBO = beneficiário final."
@@ -176,9 +176,9 @@
     {
      "q": "Choose the correct term: \"We **___** the clear 'no' cases early.\"",
      "options": [
-      "ship",
-      "invoice",
       "insure",
+      "invoice",
+      "ship",
       "filter out"
      ],
      "answer": 3,
@@ -192,56 +192,56 @@
     {
      "q": "\"A few things feel **off**.\" If something feels off, it…",
      "options": [
+      "feels slightly wrong or suspicious",
       "is finished",
       "is cheap",
-      "feels right",
-      "feels slightly wrong or suspicious"
+      "feels right"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Feel off = parecer estranho/suspeito."
     },
     {
      "q": "\"It's not a **dealbreaker**.\" A dealbreaker is…",
      "options": [
-      "a minor detail",
-      "a bonus",
       "a discount",
-      "something serious enough to stop the deal"
+      "a bonus",
+      "something serious enough to stop the deal",
+      "a minor detail"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Dealbreaker = impedimento decisivo."
     },
     {
      "q": "\"The screening **came back clean**.\" To come back clean means to…",
      "options": [
+      "be delayed",
       "show no problems",
       "be expensive",
-      "reveal a match",
-      "be delayed"
+      "reveal a match"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Come back clean = voltar sem apontamentos."
     },
     {
      "q": "\"Let's **err on the side of caution**.\" This means to…",
      "options": [
-      "rush",
-      "take the risky option",
+      "do nothing",
       "take the safer option",
-      "do nothing"
+      "take the risky option",
+      "rush"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Err on the side of caution = pecar pela cautela."
     },
     {
      "q": "\"Cautious, not **paranoid**.\" Being paranoid means being…",
      "options": [
-      "fast",
       "excessively and unreasonably suspicious",
       "sensibly careful",
-      "trusting"
+      "trusting",
+      "fast"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Paranoid = paranoico, desconfiado em excesso."
     }
    ]

@@ -1,0 +1,259 @@
+{
+ "num": 1128,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. Accounting is the language of Czarnikow's numbers. Today's lesson is \"The End of the Month\". It gives you short, useful sentences for the finance team.<br><br>You will learn five simple words: month, week, Friday, morning and midnight. You will also practise the prepositions of time: in, on and at. We say \"in the morning\", \"on Friday\" and \"at midnight\".<br><br>Go slowly. One step at a time. Sophie helps new trainees, so you are not alone. You can do it!",
+   "items": [
+    {
+     "q": "What is today's lesson about?",
+     "options": [
+      "A new office",
+      "The End of the Month",
+      "A long holiday",
+      "The start of the year"
+     ],
+     "answer": 1,
+     "why": "\"Today's lesson is 'The End of the Month'.\""
+    },
+    {
+     "q": "How many new words will you learn?",
+     "options": [
+      "Ten",
+      "Five",
+      "Three",
+      "Four"
+     ],
+     "answer": 1,
+     "why": "\"You will learn five simple words.\""
+    },
+    {
+     "q": "Which prepositions of time does the lesson practise?",
+     "options": [
+      "over, under, near",
+      "in, on, at",
+      "for, since, ago",
+      "by, until, from"
+     ],
+     "answer": 1,
+     "why": "\"the prepositions of time: in, on and at.\""
+    },
+    {
+     "q": "\"Sophie helps new trainees, so you are not alone.\" This suggests that…",
+     "options": [
+      "there are no trainees",
+      "Sophie is on holiday",
+      "the trainee will get support",
+      "the trainee must work alone"
+     ],
+     "answer": 2,
+     "why": "Inferência: se a Sophie ajuda, o trainee terá apoio."
+    },
+    {
+     "q": "What is the tone of the text?",
+     "options": [
+      "Angry and strict",
+      "Cold and formal",
+      "Kind and encouraging",
+      "Sad and tired"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Go slowly\", \"You can do it!\" mostram um tom gentil e encorajador."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie falando com o novo trainee. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello, and welcome to the team. My name is Sophie. I work in accounting here at Czarnikow.<br><br>Today I want to help you with time words. They are very easy. Listen and repeat with me.<br><br>We use \"in\" for the morning. So we say, \"I check the numbers in the morning.\" We use \"on\" for days. So we say, \"We close the books on Friday.\" And we use \"at\" for midnight. So we say, \"The report is ready at midnight.\"<br><br>Every month we do the same work. Every week we look at the numbers again. It is a small team, but we are very careful. One step at a time.<br><br>Do not worry if it is slow at first. That is normal. Take your time, ask me your questions, and repeat the words with me. You can do it. I am happy to help you this week and next week too.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where does Sophie work?",
+     "options": [
+      "In sales",
+      "In marketing",
+      "In the kitchen",
+      "In accounting"
+     ],
+     "answer": 3,
+     "why": "\"I work in accounting here at Czarnikow.\""
+    },
+    {
+     "q": "Which preposition does Sophie use for days like Friday?",
+     "options": [
+      "on",
+      "at",
+      "in",
+      "by"
+     ],
+     "answer": 0,
+     "why": "\"We use 'on' for days… 'We close the books on Friday.'\""
+    },
+    {
+     "q": "When is the report ready?",
+     "options": [
+      "Next month",
+      "At midnight",
+      "In the morning",
+      "On Friday"
+     ],
+     "answer": 1,
+     "why": "\"The report is ready at midnight.\""
+    },
+    {
+     "q": "Sophie says \"Do not worry if it is slow at first.\" This suggests that…",
+     "options": [
+      "learning takes a little time, and that is okay",
+      "Sophie is angry",
+      "the work is too hard for anyone",
+      "the trainee should quit"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela tranquiliza o trainee — ir devagar no começo é normal."
+    },
+    {
+     "q": "How would you describe Sophie?",
+     "options": [
+      "Strict and cold",
+      "Bored and quiet",
+      "Rude and fast",
+      "Patient and helpful"
+     ],
+     "answer": 3,
+     "why": "Inferência: ela repete, encoraja e se oferece para ajudar — é paciente e prestativa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We close the books at the end of the <strong>month</strong>.\" A month is…",
+     "options": [
+      "one of the twelve parts of a year",
+      "a day",
+      "a year",
+      "an hour"
+     ],
+     "answer": 0,
+     "why": "Month = mês, uma das doze partes do ano."
+    },
+    {
+     "q": "\"There is a lot of work this <strong>week</strong>.\" A week has…",
+     "options": [
+      "twelve months",
+      "two hours",
+      "seven days",
+      "thirty days"
+     ],
+     "answer": 2,
+     "why": "Week = semana, sete dias."
+    },
+    {
+     "q": "Choose the correct word: \"We close the books on ___, the last day of the work week.\"",
+     "options": [
+      "midnight",
+      "morning",
+      "Friday",
+      "month"
+     ],
+     "answer": 2,
+     "why": "Friday = sexta-feira, o último dia da semana de trabalho."
+    },
+    {
+     "q": "\"I drink my coffee in the <strong>morning</strong>.\" The morning is…",
+     "options": [
+      "the early part of the day",
+      "the end of the week",
+      "the middle of the night",
+      "the last month"
+     ],
+     "answer": 0,
+     "why": "Morning = manhã, a parte inicial do dia."
+    },
+    {
+     "q": "Choose the correct word: \"The report is ready at ___, when the clock shows 12:00 at night.\"",
+     "options": [
+      "week",
+      "morning",
+      "Friday",
+      "midnight"
+     ],
+     "answer": 3,
+     "why": "Midnight = meia-noite, 12:00 da noite."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples do dia a dia do trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>hand in</strong> the report on Friday.\" To hand in means to…",
+     "options": [
+      "give or deliver it",
+      "read it aloud",
+      "print it",
+      "lose it"
+     ],
+     "answer": 0,
+     "why": "Hand in = entregar (algo a alguém)."
+    },
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the numbers.\" To sign off on means to…",
+     "options": [
+      "delete them",
+      "forget them",
+      "formally approve them",
+      "copy them"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We <strong>close the books</strong> at the end of the month.\" This means we…",
+     "options": [
+      "start a new company",
+      "buy new books",
+      "finish and finalise the accounts",
+      "clean the office"
+     ],
+     "answer": 2,
+     "why": "Close the books = fechar as contas do período."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the numbers again.\" To go over means to…",
+     "options": [
+      "throw them away",
+      "send them by email",
+      "hide them",
+      "check them carefully"
+     ],
+     "answer": 3,
+     "why": "Go over = revisar, checar com cuidado."
+    },
+    {
+     "q": "\"Sophie said she will <strong>help out</strong> this week.\" To help out means to…",
+     "options": [
+      "ask for money",
+      "give help",
+      "take a holiday",
+      "leave the team"
+     ],
+     "answer": 1,
+     "why": "Help out = dar uma ajuda, colaborar."
+    }
+   ]
+  }
+ ]
+}

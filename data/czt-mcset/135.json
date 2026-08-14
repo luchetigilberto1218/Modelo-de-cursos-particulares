@@ -10,8 +10,8 @@
      "options": [
       "Stop companies from doing business with certain countries, people or products",
       "Speed up shipping",
-      "Remove duties",
-      "Lower prices"
+      "Lower prices",
+      "Remove duties"
      ],
      "answer": 0,
      "why": "\"Sanctions are rules that stop companies from doing business with certain countries, people or products.\""
@@ -19,45 +19,45 @@
     {
      "q": "Who sets sanctions?",
      "options": [
-      "Customers",
       "Individual buyers",
-      "Governments and international bodies",
-      "Shipping companies"
+      "Shipping companies",
+      "Customers",
+      "Governments and international bodies"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"They are set by governments and international bodies.\""
     },
     {
      "q": "According to the text, what can you not do?",
      "options": [
-      "Ship anything",
-      "Use a bank",
       "Sell certain products to a listed country or send money to certain names",
-      "Trade at all"
+      "Ship anything",
+      "Trade at all",
+      "Use a bank"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"You cannot sell certain products to a country on the list. You must not send money to certain names.\""
     },
     {
      "q": "Besides big fines, what else can be damaged?",
      "options": [
-      "The ship",
-      "The currency",
+      "The company's name (reputation)",
       "The warehouse",
-      "The company's name (reputation)"
+      "The currency",
+      "The ship"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"the damage to the company's name can be even bigger.\""
     },
     {
      "q": "What is the safe answer?",
      "options": [
-      "Pay the fine",
-      "Ignore the rules",
       "Ship first, ask later",
-      "If you are not sure, ask — and always check the list first"
+      "If you are not sure, ask — and always check the list first",
+      "Pay the fine",
+      "Ignore the rules"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"if you are not sure, ask — and always check the list first.\""
     }
    ]
@@ -73,9 +73,9 @@
      "q": "Why can't the team ship to this new customer?",
      "options": [
       "The customer's country is on a restricted sanctions list",
-      "The price is wrong",
+      "The ship is full",
       "The duty is high",
-      "The ship is full"
+      "The price is wrong"
      ],
      "answer": 0,
      "why": "\"This customer is in a country that is currently on a restricted list.\""
@@ -83,45 +83,45 @@
     {
      "q": "Does a good deal change the answer?",
      "options": [
-      "No — if it breaks a sanction, they cannot do it",
-      "Yes, a good deal is allowed",
       "Only with insurance",
+      "Yes, a good deal is allowed",
+      "No — if it breaks a sanction, they cannot do it",
       "Only for big orders"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"it doesn't matter how good the deal is. If it breaks a sanction, we cannot do it. Full stop.\""
     },
     {
      "q": "How big are the fines for breaking sanctions?",
      "options": [
+      "Very small",
       "The same as the order",
       "Enormous — far more than any single order is worth",
-      "Very small",
       "There are no fines"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The fines for breaking sanctions are enormous — far more than any single order is worth.\""
     },
     {
      "q": "What else can be damaged besides money?",
      "options": [
-      "The warehouse",
-      "The ship",
       "The product",
-      "The company's name — banks and partners would stop trusting them"
+      "The warehouse",
+      "The company's name — banks and partners would stop trusting them",
+      "The ship"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"our company's name would be damaged. Banks and partners would stop trusting us.\""
     },
     {
      "q": "What is the firm rule for everyone?",
      "options": [
-      "Check the sanctions list first; if unsure, stop and ask",
+      "Ignore the list",
       "Guess if unsure",
       "Ship quickly",
-      "Ignore the list"
+      "Check the sanctions list first; if unsure, stop and ask"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"we check the sanctions list first… you stop and ask me. Never guess with sanctions.\""
     }
    ]
@@ -132,56 +132,56 @@
     {
      "q": "**Sanctions** are…",
      "options": [
-      "shipping costs",
+      "discounts",
       "currencies",
-      "rules that stop business with certain countries, people or products",
-      "discounts"
+      "shipping costs",
+      "rules that stop business with certain countries, people or products"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Sanctions = sanções."
     },
     {
      "q": "A **watchlist** is…",
      "options": [
-      "a shipping route",
-      "a price list",
+      "a list of restricted names or parties to check against",
       "a shopping list",
-      "a list of restricted names or parties to check against"
+      "a price list",
+      "a shipping route"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Watchlist = lista de vigilância."
     },
     {
      "q": "Choose the correct word: \"Breaking the rules can bring a huge **___**.\"",
      "options": [
-      "fine",
       "reference",
       "discount",
+      "fine",
       "buffer"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Fine = multa."
     },
     {
      "q": "To **screen** a name means to…",
      "options": [
-      "pay it",
       "ship it",
-      "check it against a restricted list",
-      "hide it"
+      "hide it",
+      "pay it",
+      "check it against a restricted list"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Screen = checar/triar."
     },
     {
      "q": "Choose the correct word: \"That product is **___** for this country.\"",
      "options": [
-      "cheap",
-      "forbidden",
       "free",
-      "fast"
+      "fast",
+      "forbidden",
+      "cheap"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Forbidden = proibido."
     }
    ]
@@ -192,10 +192,10 @@
     {
      "q": "\"If it breaks a sanction, we cannot do it. **Full stop**.\" Full stop here means…",
      "options": [
-      "later",
+      "sometimes",
       "no exceptions / end of discussion",
       "maybe",
-      "sometimes"
+      "later"
      ],
      "answer": 1,
      "why": "Full stop = ponto final, sem exceção."
@@ -203,45 +203,45 @@
     {
      "q": "\"Always **check the list** first.\" To check the list means to…",
      "options": [
-      "ship it",
       "look at it to be sure",
       "ignore it",
+      "ship it",
       "pay it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Check the list = conferir a lista."
     },
     {
      "q": "\"Never **guess** with sanctions.\" To guess means to…",
      "options": [
-      "act without knowing for certain",
-      "be sure",
+      "ask",
       "check carefully",
-      "ask"
+      "be sure",
+      "act without knowing for certain"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Guess = chutar, agir sem certeza."
     },
     {
      "q": "\"Trust can **take years to repair**.\" To repair here means to…",
      "options": [
       "break",
-      "rebuild / fix",
+      "ship",
       "pay",
-      "ship"
+      "rebuild / fix"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Repair = reparar, reconstruir."
     },
     {
      "q": "\"If you're not sure, **stop and ask**.\" This advises you to…",
      "options": [
-      "pause and check with someone",
-      "keep going alone",
       "ship anyway",
-      "guess"
+      "guess",
+      "pause and check with someone",
+      "keep going alone"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Stop and ask = parar e perguntar."
     }
    ]

@@ -11,55 +11,55 @@
      "q": "What is hardware?",
      "options": [
       "A team in the office",
+      "A program you install on a computer",
       "The physical part of IT that you can touch",
-      "A company rule about computers",
-      "A program you install on a computer"
+      "A company rule about computers"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Hardware is the physical part of IT. It is the machines you can touch.\""
     },
     {
      "q": "Where are the servers?",
      "options": [
-      "In the phone",
       "In the printer",
+      "In a data centre",
       "On every desk",
-      "In a data centre"
+      "In the phone"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"There are servers in a data centre.\""
     },
     {
      "q": "What do routers and switches do?",
      "options": [
-      "They connect everything",
-      "They hold the data",
       "They replace laptops",
-      "They print documents"
+      "They print documents",
+      "They hold the data",
+      "They connect everything"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"There are routers and switches that connect everything.\""
     },
     {
      "q": "The text suggests that modern companies…",
      "options": [
-      "just want the hardware to work when they need it",
-      "only use printers",
       "do not use hardware anymore",
+      "only use printers",
+      "just want the hardware to work when they need it",
       "want to own all the hardware themselves"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: \"They care more about having it available when they need it\" — o importante é funcionar, não ter."
     },
     {
      "q": "Why does the text mention a laptop that fails and a router that restarts?",
      "options": [
       "To explain how to buy a phone",
-      "To say that servers are cheap",
       "To remind us that the physical layer is always there",
-      "To show that hardware is not important"
+      "To show that hardware is not important",
+      "To say that servers are cheap"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: quando algo quebra, a empresa lembra que a camada física está sempre presente."
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "What does the diagram show?",
      "options": [
-      "What sits between your laptop and the company's data",
       "How to fix a laptop",
       "How to make coffee",
+      "What sits between your laptop and the company's data",
       "The names of the team members"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"It shows what sits between your laptop and the company's data.\""
     },
     {
      "q": "How many kinds of hardware are behind the laptop?",
      "options": [
       "Three",
-      "Five",
       "One",
+      "Five",
       "Two"
      ],
      "answer": 0,
@@ -99,23 +99,23 @@
     {
      "q": "What does the router do?",
      "options": [
-      "It connects the office to the internet",
+      "It stores all the files",
       "It prints documents",
       "It runs the coffee machine",
-      "It stores all the files"
+      "It connects the office to the internet"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The router connects our office to the internet.\""
     },
     {
      "q": "Harry says there are many servers. This suggests that…",
      "options": [
       "one server is enough for the company",
-      "servers do not store data",
       "servers are only for the new joiner",
-      "the company needs a lot of computing power"
+      "the company needs a lot of computing power",
+      "servers do not store data"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: \"there are many, in a room we call the data centre\" — a empresa precisa de muita capacidade."
     },
     {
@@ -123,10 +123,10 @@
      "options": [
       "Because nobody uses the hardware",
       "Because the laptop is the only machine that matters",
-      "Because the hardware is invisible to users but always doing its job",
-      "Because the hardware is broken"
+      "Because the hardware is broken",
+      "Because the hardware is invisible to users but always doing its job"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: router, server e storage trabalham no fundo, mesmo que o usuário não os veja."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"A <strong>server</strong> stores our files for the whole company.\" A server is…",
      "options": [
-      "a powerful computer that holds data and runs applications",
+      "a mobile phone",
       "a person who brings coffee",
       "a small printer",
-      "a mobile phone"
+      "a powerful computer that holds data and runs applications"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Server = servidor: um computador potente que guarda dados e roda aplicações."
     },
     {
      "q": "Choose the correct word: \"The office is slow because the ___ lost its connection to the internet.\"",
      "options": [
       "printer",
-      "desktop",
+      "router",
       "laptop",
-      "router"
+      "desktop"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Router = roteador: conecta o escritório à internet."
     },
     {
      "q": "\"All the servers are in one big room, the <strong>data centre</strong>.\" A data centre is…",
      "options": [
       "a mobile phone",
-      "a type of software",
       "a coffee room",
-      "a room full of servers and storage"
+      "a room full of servers and storage",
+      "a type of software"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Data centre = centro de dados: a sala onde ficam os servidores."
     },
     {
      "q": "Choose the correct word: \"I need to print this report, so I will send it to the ___.\"",
      "options": [
-      "server",
-      "router",
+      "printer",
       "switch",
-      "printer"
+      "router",
+      "server"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Printer = impressora: usada para imprimir documentos."
     },
     {
      "q": "\"The router, the servers and the storage are all part of the <strong>physical layer</strong>.\" The physical layer is…",
      "options": [
-      "the company's rules",
-      "the software on your laptop",
       "the real machines you can touch",
+      "the software on your laptop",
+      "the company's rules",
       "the internet password"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Physical layer = camada física: as máquinas reais, o oposto do software."
     }
    ]
@@ -201,23 +201,23 @@
     {
      "q": "\"The old laptop is slow, so the IT team will <strong>set it up</strong> with a new one.\" To set up means to…",
      "options": [
-      "hide it",
       "prepare and get it ready to use",
-      "sell it",
-      "throw it away"
+      "hide it",
+      "throw it away",
+      "sell it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Set up = configurar, deixar pronto para usar."
     },
     {
      "q": "\"My computer is frozen. I will <strong>turn it off</strong> and on again.\" To turn off means to…",
      "options": [
       "start a new program",
-      "clean it",
       "stop it / switch it off",
+      "clean it",
       "call the manager"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Turn off = desligar."
     },
     {
@@ -234,12 +234,12 @@
     {
      "q": "\"Old hardware is slow. The company will <strong>replace</strong> it every three to five years.\" To replace means to…",
      "options": [
-      "give it to a friend",
       "repair the old one forever",
-      "keep it in a box",
-      "put a new one in place of the old one"
+      "give it to a friend",
+      "put a new one in place of the old one",
+      "keep it in a box"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Replace = substituir, trocar o antigo por um novo."
     },
     {

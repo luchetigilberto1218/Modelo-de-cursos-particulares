@@ -8,42 +8,42 @@
     {
      "q": "According to the text, how normal are problems at work?",
      "options": [
-      "Normal — something happens every day",
       "Only on Mondays",
+      "Never",
       "Very rare",
-      "Never"
+      "Normal — something happens every day"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"At work, problems are normal. Every day, something does not work perfectly.\""
     },
     {
      "q": "What is an example of an everyday problem?",
      "options": [
-      "A holiday",
-      "A party",
       "A promotion",
-      "A late delivery or a missing file"
+      "A late delivery or a missing file",
+      "A party",
+      "A holiday"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"a late delivery, a missing file, a small mistake.\""
     },
     {
      "q": "What is the first question to ask when we find a problem?",
      "options": [
-      "Who is the manager?",
-      "Who can we blame?",
+      "When is lunch?",
       "What is the real problem?",
-      "When is lunch?"
+      "Who is the manager?",
+      "Who can we blame?"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"we stop for a moment and ask: what is the real problem?\""
     },
     {
      "q": "What kind of solution do we look for?",
      "options": [
       "No solution",
-      "The most expensive one",
       "The perfect one",
+      "The most expensive one",
       "A simple, good one for today"
      ],
      "answer": 3,
@@ -52,12 +52,12 @@
     {
      "q": "What solves problems faster?",
      "options": [
-      "A fast car",
-      "A loud voice",
       "A calm mind",
-      "A stressed mind"
+      "A fast car",
+      "A stressed mind",
+      "A loud voice"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"A calm mind solves problems faster than a stressed one.\""
     }
    ]
@@ -83,19 +83,19 @@
     {
      "q": "What is the real problem?",
      "options": [
-      "The total on page two doesn't match the numbers above it",
-      "The client is angry",
       "The report is missing",
-      "The meeting is cancelled"
+      "The meeting is cancelled",
+      "The client is angry",
+      "The total on page two doesn't match the numbers above it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The total on page two doesn't match the numbers above it.\""
     },
     {
      "q": "What is the simple solution?",
      "options": [
-      "Rewrite the whole report",
       "Ignore it",
+      "Rewrite the whole report",
       "Cancel the meeting",
       "Find the wrong number, correct it, and check the total again"
      ],
@@ -106,19 +106,19 @@
      "q": "How does Harry want the team to work?",
      "options": [
       "In a panic",
+      "Calmly — big breath, small steps",
       "Very fast",
-      "Alone",
-      "Calmly — big breath, small steps"
+      "Alone"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"Let's do it calmly — big breath, small steps.\""
     },
     {
      "q": "What is Harry's view on blame?",
      "options": [
-      "Find who did it and blame them",
-      "No blame — the important thing is they caught it before the meeting",
       "Tell the manager first",
+      "No blame — the important thing is they caught it before the meeting",
+      "Find who did it and blame them",
       "Cancel the report"
      ],
      "answer": 1,
@@ -132,30 +132,30 @@
     {
      "q": "A **solution** is…",
      "options": [
-      "a report",
       "an answer that fixes a problem",
-      "a problem",
-      "a meeting"
+      "a meeting",
+      "a report",
+      "a problem"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Solution = solução."
     },
     {
      "q": "A **mistake** is…",
      "options": [
-      "a solution",
-      "a holiday",
       "something done wrong",
-      "a correct answer"
+      "a solution",
+      "a correct answer",
+      "a holiday"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Mistake = erro."
     },
     {
      "q": "Choose the correct word: \"Let's **___** the wrong number.\"",
      "options": [
-      "ignore",
       "lose",
+      "ignore",
       "hide",
       "fix"
      ],
@@ -165,23 +165,23 @@
     {
      "q": "\"The file is **missing**.\" Missing means…",
      "options": [
-      "not there",
-      "late",
       "found",
-      "correct"
+      "correct",
+      "late",
+      "not there"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Missing = faltando."
     },
     {
      "q": "Choose the correct word: \"Good **___** helps you fix a problem.\"",
      "options": [
-      "lunch",
-      "advice",
+      "noise",
       "weather",
-      "noise"
+      "lunch",
+      "advice"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Advice = conselho."
     }
    ]
@@ -192,32 +192,32 @@
     {
      "q": "\"Let's take a **big breath** and stay calm.\" To take a big breath means to…",
      "options": [
-      "run",
-      "calm yourself",
       "shout",
-      "panic"
+      "run",
+      "panic",
+      "calm yourself"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Big breath = respirar fundo, acalmar-se."
     },
     {
      "q": "\"We **caught it** before the meeting.\" To catch a problem means to…",
      "options": [
-      "notice it in time",
       "hide it",
-      "cause it",
-      "ignore it"
+      "ignore it",
+      "notice it in time",
+      "cause it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Catch it = pegar/notar a tempo."
     },
     {
      "q": "\"Let's just fix it and **move on**.\" To move on means to…",
      "options": [
       "repeat",
-      "give up",
+      "stay stuck",
       "continue after solving it",
-      "stay stuck"
+      "give up"
      ],
      "answer": 2,
      "why": "Move on = seguir em frente."
@@ -225,23 +225,23 @@
     {
      "q": "\"It's not a **disaster**.\" A disaster is…",
      "options": [
-      "a solution",
-      "a success",
       "a small thing",
-      "a very big, bad problem"
+      "a very big, bad problem",
+      "a solution",
+      "a success"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Disaster = desastre."
     },
     {
      "q": "\"Small steps **now and then** solve big problems.\" Now and then means…",
      "options": [
-      "always",
-      "sometimes",
+      "never",
       "loudly",
-      "never"
+      "always",
+      "sometimes"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Now and then = de vez em quando."
     }
    ]

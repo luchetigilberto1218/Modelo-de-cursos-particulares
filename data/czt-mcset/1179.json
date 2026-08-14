@@ -1,0 +1,259 @@
+{
+ "num": 1179,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "IT helps every Czarnikow office, from London to São Paulo. When you talk to the help desk or join an online meeting, you need a little English.<br><br>Yesterday there was a problem. The system was down for one hour. Two computers were slow, and the team was busy all morning. At the end of the day, everybody was tired.<br><br>Today the system is working well. Small IT habits protect the whole company. If something looks strange, call IT support. You can do it!",
+   "items": [
+    {
+     "q": "What happened yesterday?",
+     "options": [
+      "The team was on holiday",
+      "The help desk was empty",
+      "The office was closed",
+      "There was a problem with the system"
+     ],
+     "answer": 3,
+     "why": "\"Yesterday there was a problem. The system was down for one hour.\""
+    },
+    {
+     "q": "How long was the system down?",
+     "options": [
+      "All morning",
+      "One week",
+      "One day",
+      "One hour"
+     ],
+     "answer": 3,
+     "why": "\"The system was down for one hour.\""
+    },
+    {
+     "q": "How was the team at the end of the day?",
+     "options": [
+      "Free",
+      "Angry",
+      "Tired",
+      "Happy"
+     ],
+     "answer": 2,
+     "why": "\"At the end of the day, everybody was tired.\""
+    },
+    {
+     "q": "The text suggests that today the situation is…",
+     "options": [
+      "still down",
+      "worse than yesterday",
+      "better than yesterday",
+      "the same as yesterday"
+     ],
+     "answer": 2,
+     "why": "Inferência: ontem havia um problema; hoje \"the system is working well\" — melhor que ontem."
+    },
+    {
+     "q": "What would the writer most likely say?",
+     "options": [
+      "Online meetings are not important",
+      "IT is only for London",
+      "Never call IT support",
+      "Small IT habits help the company"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Small IT habits protect the whole company\" — o autor valoriza os bons hábitos de TI."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James falar sobre o problema de TI de ontem. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, thanks for coming. Let's look at yesterday's IT problem together. It's quick, don't worry.<br><br>Yesterday morning, the system was down. It was down for about one hour. Your computer was slow, and the internet was not stable. I know you were busy, and at the end of the day you were tired. I'm sorry about that.<br><br>The problem was on the shared drive. It was a small thing, but two computers were slow because of it. The help desk was very busy yesterday, so the answer was a little late.<br><br>Today everything is fine. The system is up, your computer is fast again, and the shared drive is back. Please tell me if it is slow again. Was the meeting okay in the end? Good. Small habits help a lot. Save your work often, and call us early. You did well. Thank you!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is James talking about?",
+     "options": [
+      "Yesterday's IT problem",
+      "A new computer",
+      "A holiday plan",
+      "A meeting for next week"
+     ],
+     "answer": 0,
+     "why": "\"Let's look at yesterday's IT problem together.\""
+    },
+    {
+     "q": "Where was the problem?",
+     "options": [
+      "In the meeting room",
+      "In the email system",
+      "On the shared drive",
+      "On the phone"
+     ],
+     "answer": 2,
+     "why": "\"The problem was on the shared drive.\""
+    },
+    {
+     "q": "How was the person yesterday, according to James?",
+     "options": [
+      "Busy and tired",
+      "Free and happy",
+      "Calm and slow",
+      "Late and angry"
+     ],
+     "answer": 0,
+     "why": "\"I know you were busy, and at the end of the day you were tired.\""
+    },
+    {
+     "q": "Why was the answer a little late?",
+     "options": [
+      "James was on holiday",
+      "The office was closed",
+      "The help desk was very busy",
+      "The computer was new"
+     ],
+     "answer": 2,
+     "why": "\"The help desk was very busy yesterday, so the answer was a little late.\""
+    },
+    {
+     "q": "What can you infer about James?",
+     "options": [
+      "He wants to close the help desk",
+      "He is angry with the user",
+      "He is kind and wants to help",
+      "He does not care about the problem"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele pede desculpas, elogia (\"You did well\") e dá dicas — é gentil e prestativo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The email was slow <strong>yesterday</strong>, but it is fast today.\" <strong>Yesterday</strong> means…",
+     "options": [
+      "the day before today",
+      "right now",
+      "next week",
+      "tomorrow"
+     ],
+     "answer": 0,
+     "why": "Yesterday = ontem, o dia antes de hoje."
+    },
+    {
+     "q": "\"The website is <strong>down</strong>, so I can't log in.\" <strong>Down</strong> here means…",
+     "options": [
+      "not working",
+      "very fast",
+      "brand new",
+      "on the desk"
+     ],
+     "answer": 0,
+     "why": "Down = fora do ar, não está funcionando."
+    },
+    {
+     "q": "Choose the correct word: \"I was ___ after a long day of meetings and calls.\"",
+     "options": [
+      "down",
+      "tired",
+      "busy",
+      "yesterday"
+     ],
+     "answer": 1,
+     "why": "Tired = cansado, o resultado de um dia longo."
+    },
+    {
+     "q": "Choose the correct word: \"Sorry, I can't talk now. I'm very ___ with the report.\"",
+     "options": [
+      "yesterday",
+      "busy",
+      "down",
+      "tired"
+     ],
+     "answer": 1,
+     "why": "Busy = ocupado, sem tempo agora."
+    },
+    {
+     "q": "\"There is a small <strong>problem</strong> on the shared drive.\" A <strong>problem</strong> is…",
+     "options": [
+      "a happy moment",
+      "something that is wrong",
+      "a new file",
+      "a good idea"
+     ],
+     "answer": 1,
+     "why": "Problem = problema, algo que está errado e precisa de solução."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs simples que aparecem em TI e reuniões. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>log in</strong> with your name and password.\" To log in means to…",
+     "options": [
+      "turn off the computer",
+      "send an email",
+      "enter a system with your account",
+      "restart the internet"
+     ],
+     "answer": 2,
+     "why": "Log in = entrar num sistema com sua conta (nome e senha)."
+    },
+    {
+     "q": "\"I always <strong>back up</strong> my files before I go home.\" To back up means to…",
+     "options": [
+      "open the files",
+      "save a copy of the files",
+      "print the files",
+      "delete the files"
+     ],
+     "answer": 1,
+     "why": "Back up = fazer uma cópia de segurança dos arquivos."
+    },
+    {
+     "q": "\"Please <strong>shut down</strong> your computer at the end of the day.\" To shut down means to…",
+     "options": [
+      "turn the computer off",
+      "clean the screen",
+      "make the computer faster",
+      "call the help desk"
+     ],
+     "answer": 0,
+     "why": "Shut down = desligar o computador."
+    },
+    {
+     "q": "\"The system was down, but now it is <strong>back up</strong>.\" To be back up means to be…",
+     "options": [
+      "working again",
+      "broken again",
+      "very slow",
+      "on holiday"
+     ],
+     "answer": 0,
+     "why": "Back up (aqui) = de volta ao ar, funcionando de novo."
+    },
+    {
+     "q": "\"I will <strong>look into</strong> the problem this morning.\" To look into means to…",
+     "options": [
+      "buy a new computer",
+      "forget about it",
+      "check it carefully",
+      "close the office"
+     ],
+     "answer": 2,
+     "why": "Look into = investigar, checar com atenção."
+    }
+   ]
+  }
+ ]
+}

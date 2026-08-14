@@ -1,0 +1,259 @@
+{
+ "num": 1098,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Yesterday the delivery was on time. The pallets were ready in the morning. The team was fast, and the customers were happy.<br><br>\"Was\" and \"were\" are the past of \"to be\". We use them to talk about yesterday, last week, or two days ago.<br><br>Today you learn 5 important words and practise was / were. We start slow. English comes in CAN's, not in CAN'Ts. You can do it!",
+   "items": [
+    {
+     "q": "When was the delivery on time?",
+     "options": [
+      "Today",
+      "Tomorrow",
+      "Next week",
+      "Yesterday"
+     ],
+     "answer": 3,
+     "why": "\"Yesterday the delivery was on time.\" — foi ontem."
+    },
+    {
+     "q": "How were the customers?",
+     "options": [
+      "Late",
+      "Happy",
+      "Busy",
+      "Angry"
+     ],
+     "answer": 1,
+     "why": "\"the customers were happy\" — eles estavam felizes."
+    },
+    {
+     "q": "\"Was\" and \"were\" are the past of…",
+     "options": [
+      "to be",
+      "to do",
+      "to have",
+      "to go"
+     ],
+     "answer": 0,
+     "why": "\"Was\" and \"were\" are the past of \"to be\"."
+    },
+    {
+     "q": "The text suggests that the day was…",
+     "options": [
+      "a good day",
+      "a slow day",
+      "a normal day with problems",
+      "a bad day"
+     ],
+     "answer": 0,
+     "why": "Inferência: entrega no horário, time rápido e clientes felizes = um bom dia."
+    },
+    {
+     "q": "The author would most likely say that you…",
+     "options": [
+      "must study for years",
+      "cannot learn this",
+      "can learn this",
+      "should stop now"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"You can do it!\" e \"English comes in CAN's\" — a mensagem é positiva."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Maria falar com o gerente sobre a entrega de ontem. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning. I want to tell you about yesterday.<br><br>Yesterday the delivery was good. The truck was here at eight. The pallets were ready, and the boxes were clean. My team was fast. We were happy.<br><br>Last week we had a problem. The truck was late, and the customers were not happy. But yesterday was different. Everything was on time.<br><br>Two days ago I was worried. Today I am calm. The customers were happy, and the manager was happy too.<br><br>Thank you for your help. See you tomorrow.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time was the truck there yesterday?",
+     "options": [
+      "At six",
+      "At nine",
+      "At eight",
+      "At ten"
+     ],
+     "answer": 2,
+     "why": "\"The truck was here at eight.\""
+    },
+    {
+     "q": "How were the pallets?",
+     "options": [
+      "Broken",
+      "Dirty",
+      "Ready",
+      "Late"
+     ],
+     "answer": 2,
+     "why": "\"The pallets were ready.\""
+    },
+    {
+     "q": "What was the problem last week?",
+     "options": [
+      "The truck was late",
+      "The boxes were dirty",
+      "The team was small",
+      "The manager was away"
+     ],
+     "answer": 0,
+     "why": "\"Last week… The truck was late, and the customers were not happy.\""
+    },
+    {
+     "q": "The speaker suggests that yesterday was…",
+     "options": [
+      "worse than last week",
+      "the same as last week",
+      "a normal day",
+      "better than last week"
+     ],
+     "answer": 3,
+     "why": "Inferência: semana passada teve problema, mas \"yesterday was different… on time\" — foi melhor."
+    },
+    {
+     "q": "How does the speaker feel now?",
+     "options": [
+      "Worried",
+      "Calm",
+      "Tired",
+      "Angry"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Two days ago I was worried. Today I am calm.\" — agora ela está tranquila."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I sent the report <strong>yesterday</strong>.\" <strong>Yesterday</strong> means…",
+     "options": [
+      "next week",
+      "tomorrow",
+      "the day before today",
+      "today"
+     ],
+     "answer": 2,
+     "why": "Yesterday = ontem, o dia antes de hoje."
+    },
+    {
+     "q": "Choose the correct word: \"The boxes are ___. We can send them now.\"",
+     "options": [
+      "last week",
+      "ready",
+      "ago",
+      "yesterday"
+     ],
+     "answer": 1,
+     "why": "Ready = pronto: as caixas estão prontas para enviar."
+    },
+    {
+     "q": "\"We met two days <strong>ago</strong>.\" <strong>Ago</strong> means…",
+     "options": [
+      "in the past",
+      "right now",
+      "every day",
+      "in the future"
+     ],
+     "answer": 0,
+     "why": "Ago = atrás: dois dias atrás, no passado."
+    },
+    {
+     "q": "Choose the correct word: \"The customers were very ___ with the fast delivery.\"",
+     "options": [
+      "ago",
+      "ready",
+      "yesterday",
+      "happy"
+     ],
+     "answer": 3,
+     "why": "Happy = feliz: os clientes ficaram felizes."
+    },
+    {
+     "q": "\"We had the meeting <strong>last week</strong>.\" <strong>Last week</strong> means…",
+     "options": [
+      "the week before this one",
+      "this week",
+      "tomorrow",
+      "next week"
+     ],
+     "answer": 0,
+     "why": "Last week = semana passada, a semana antes desta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The delivery was <strong>on time</strong>.\" On time means…",
+     "options": [
+      "at the right time",
+      "cancelled",
+      "very late",
+      "too early"
+     ],
+     "answer": 0,
+     "why": "On time = no horário, na hora certa."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the order.\" To sign off on means to…",
+     "options": [
+      "lose it",
+      "read it fast",
+      "approve it",
+      "send it back"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"We <strong>ran out of</strong> boxes yesterday.\" To run out of means to…",
+     "options": [
+      "count them",
+      "have no more left",
+      "clean them",
+      "buy more"
+     ],
+     "answer": 1,
+     "why": "Run out of = ficar sem, acabar o estoque."
+    },
+    {
+     "q": "\"Please <strong>follow up</strong> with the customer today.\" To follow up means to…",
+     "options": [
+      "pay the bill",
+      "cancel the order",
+      "contact again to check",
+      "forget about it"
+     ],
+     "answer": 2,
+     "why": "Follow up = dar seguimento, entrar em contato de novo para verificar."
+    },
+    {
+     "q": "\"The truck <strong>showed up</strong> late last week.\" To show up means to…",
+     "options": [
+      "break down",
+      "leave",
+      "stop",
+      "arrive"
+     ],
+     "answer": 3,
+     "why": "Show up = aparecer, chegar."
+    }
+   ]
+  }
+ ]
+}

@@ -10,21 +10,21 @@
     {
      "q": "How many tax systems does the text talk about?",
      "options": [
-      "Only one",
-      "None",
+      "Three",
       "Two — Brazil and the UK",
-      "Three"
+      "None",
+      "Only one"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"Brazil has one system, while the UK has a different one.\" — dois países, dois sistemas."
     },
     {
      "q": "What does the text say about the Brazilian system?",
      "options": [
       "It has many rules and is complex",
+      "It is simple and short",
       "It is the same as the UK system",
-      "It has no rules",
-      "It is simple and short"
+      "It has no rules"
      ],
      "answer": 0,
      "why": "\"The Brazilian system has many rules. It is complex.\""
@@ -32,31 +32,31 @@
     {
      "q": "Who explains the tax words to the team?",
      "options": [
-      "The client",
       "The manager",
-      "The computer",
-      "Sophie"
+      "The client",
+      "Sophie",
+      "The computer"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Sophie helps the fiscal team. She explains the tax words slowly.\""
     },
     {
      "q": "The text suggests that the UK system, compared to Brazil, is…",
      "options": [
-      "easier, but still with rules",
-      "exactly the same",
+      "without any rules",
       "harder than Brazil",
-      "without any rules"
+      "exactly the same",
+      "easier, but still with rules"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"more simple, but it still has clear rules\" — mais fácil, porém ainda com regras."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
       "with small steps, taxes become easy",
-      "taxes are impossible to learn",
       "you should never ask for help",
+      "taxes are impossible to learn",
       "English tax words are always hard"
      ],
      "answer": 0,
@@ -77,9 +77,9 @@
     {
      "q": "How many countries does Sophie check the forms for?",
      "options": [
-      "One",
       "Four",
       "Three",
+      "One",
       "Two"
      ],
      "answer": 3,
@@ -88,20 +88,20 @@
     {
      "q": "What does Sophie do if one number is wrong?",
      "options": [
-      "She fixes it before sending the form",
-      "She waits until next month",
+      "She sends the form anyway",
       "She asks the client to fix it",
-      "She sends the form anyway"
+      "She waits until next month",
+      "She fixes it before sending the form"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"If one number is wrong, I fix it before we send the form.\""
     },
     {
      "q": "What does Sophie do when she doesn't understand a rule?",
      "options": [
+      "She skips the rule",
       "She guesses the answer",
       "She stops working",
-      "She skips the rule",
       "She asks her manager"
      ],
      "answer": 3,
@@ -110,23 +110,23 @@
     {
      "q": "Sophie says the Brazilian system \"takes more time.\" This suggests that…",
      "options": [
-      "both take the same time",
-      "the UK system is faster to check",
       "Brazil has fewer rules",
-      "the UK system takes more time"
+      "the UK system takes more time",
+      "both take the same time",
+      "the UK system is faster to check"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: se o brasileiro é mais complexo e demora mais, o britânico (\"more simple\") é mais rápido."
     },
     {
      "q": "How does Sophie want the new person to feel?",
      "options": [
-      "Worried and in a hurry",
-      "Bored with the work",
       "Calm and confident, one step at a time",
+      "Bored with the work",
+      "Worried and in a hurry",
       "Ready to leave the team"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: \"Don't worry… One small step at a time… You can do it!\" — ela passa calma e confiança."
     }
    ]
@@ -139,34 +139,34 @@
     {
      "q": "\"We open the tax <strong>system</strong> on the computer every morning.\" A <strong>system</strong> is…",
      "options": [
+      "a phone call",
       "a coffee break",
       "a set of parts that work together",
-      "a phone call",
       "a single paper form"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "System = sistema: um conjunto de partes que funcionam juntas."
     },
     {
      "q": "Choose the correct word: \"There is a new tax ___ this month, so we must read it before we send the form.\"",
      "options": [
       "chair",
+      "window",
       "rule",
-      "coffee",
-      "window"
+      "coffee"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Rule = regra: a nova regra fiscal do mês."
     },
     {
      "q": "\"Brazil is one <strong>country</strong>, and the UK is another.\" A <strong>country</strong> is…",
      "options": [
-      "a computer program",
-      "a type of form",
       "a small office",
-      "a nation with its own laws"
+      "a type of form",
+      "a nation with its own laws",
+      "a computer program"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Country = país: uma nação com suas próprias leis."
     },
     {
@@ -174,21 +174,21 @@
      "options": [
       "loud",
       "green",
-      "complex",
-      "happy"
+      "happy",
+      "complex"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Complex = complexo: difícil, com muitas partes."
     },
     {
      "q": "\"The UK form is <strong>simple</strong>, so it takes only a few minutes.\" <strong>Simple</strong> means…",
      "options": [
-      "very expensive",
       "very late",
-      "very long",
-      "easy, not hard"
+      "easy, not hard",
+      "very expensive",
+      "very long"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Simple = simples: fácil, sem complicação."
     }
    ]
@@ -203,8 +203,8 @@
      "options": [
       "read the form out loud",
       "write the information in the blank spaces",
-      "throw the form away",
-      "sign the last page only"
+      "sign the last page only",
+      "throw the form away"
      ],
      "answer": 1,
      "why": "Fill in = preencher: escrever as informações nos espaços em branco."
@@ -212,42 +212,42 @@
     {
      "q": "\"We must <strong>hand in</strong> the form before the deadline.\" To hand in means to…",
      "options": [
-      "change the numbers",
       "give or send it to the right person",
-      "print more copies",
-      "keep it in your desk"
+      "keep it in your desk",
+      "change the numbers",
+      "print more copies"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Hand in = entregar: dar/enviar para quem deve receber."
     },
     {
      "q": "\"Can you <strong>check over</strong> the numbers before we send them?\" To check over means to…",
      "options": [
-      "look at it carefully to find mistakes",
       "delete the file",
+      "look at it carefully to find mistakes",
       "send it now",
       "ignore it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Check over = revisar: olhar com cuidado para achar erros."
     },
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
       "start again from zero",
-      "give the final approval",
+      "read it for fun",
       "lose the report",
-      "read it for fun"
+      "give the final approval"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Sign off on = aprovar oficialmente, dar o aval final."
     },
     {
      "q": "\"I need to <strong>find out</strong> the new tax rule for this month.\" To find out means to…",
      "options": [
-      "delay the work",
-      "learn or discover the information",
       "hide the information",
+      "learn or discover the information",
+      "delay the work",
       "forget the information"
      ],
      "answer": 1,

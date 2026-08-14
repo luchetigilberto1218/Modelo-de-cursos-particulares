@@ -1,0 +1,259 @@
+{
+ "num": 527,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the top of an organisation, network and connectivity are not plumbing — they are infrastructure strategy. A network that cannot deliver low latency to a key region closes a market before anyone notices. A connectivity design that leans on a single provider is a silent single point of failure. A remote-work network that runs beautifully in central London but dies in the provinces quietly shapes who the company can even hire.<br><br>What matters at this level is not the technical detail but the strategic implication. Where can we realistically serve customers at the speed they expect? Where can our people work from? Which countries can we expand into without the network becoming a bottleneck? These are boardroom questions dressed up as engineering ones.<br><br>It is the network that decides, quietly, which parts of the company's ambition are physically possible and which are not. Executives who grasp this invest in connectivity with the same seriousness they bring to offices, factories, or brand — and they treat a latency map as a strategy document, not an IT report.",
+   "items": [
+    {
+     "q": "According to the text, how should senior leaders regard network and connectivity?",
+     "options": [
+      "As a cost centre to be minimised",
+      "As a purely technical concern",
+      "As routine plumbing best left to IT",
+      "As infrastructure strategy"
+     ],
+     "answer": 3,
+     "why": "\"network and connectivity are not plumbing — they are infrastructure strategy.\""
+    },
+    {
+     "q": "What does the text say a network reliant on a single provider represents?",
+     "options": [
+      "A regulatory requirement",
+      "A cost-saving opportunity",
+      "A silent single point of failure",
+      "A competitive advantage"
+     ],
+     "answer": 2,
+     "why": "\"A connectivity design that leans on a single provider is a silent single point of failure.\""
+    },
+    {
+     "q": "The passage implies that a remote-work network that fails in the provinces primarily affects…",
+     "options": [
+      "which suppliers the company can pay",
+      "how much bandwidth the office needs",
+      "which people the company can hire",
+      "the price of the company's products"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"quietly shapes who the company can even hire\" — a cobertura limita o pool de talentos."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Where people can work depends on the network.",
+      "Network decisions belong entirely to the IT department.",
+      "A latency map can be a strategic document.",
+      "Connectivity choices can open or close markets."
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto argumenta justamente que essas são \"boardroom questions\", não decisões apenas de TI."
+    },
+    {
+     "q": "What does the phrase \"boardroom questions dressed up as engineering ones\" suggest?",
+     "options": [
+      "The board should avoid technical language",
+      "Engineering decisions rarely matter to strategy",
+      "Technical questions are really strategic ones in disguise",
+      "Engineers should attend every board meeting"
+     ],
+     "answer": 2,
+     "why": "Inferência: aparência técnica, essência estratégica — decidem ambição, mercado e talento."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily apresentando ao novo CEO. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Before we talk about where we'd like to grow, let me show you where we actually can. This map is our latency — the darker the region, the slower we are to serve it.<br><br>Now, here's the part nobody has said out loud. It's the network, not the market, that has quietly ruled out three of the countries on your expansion shortlist. We simply cannot deliver acceptable speed there today, and no amount of sales effort changes physics.<br><br>What surprised me is that this was never a decision anyone made. It emerged. Each individual connectivity choice looked reasonable on its own, and the sum of them drew a border around our ambition that no one ever signed off on.<br><br>So here is what I'd propose. Rather than treating this as an IT fix, let's treat it as a strategic one. If those three markets genuinely matter to you, we invest in connectivity with the same seriousness we'd give a new factory. If they don't, fine — but then we choose that on purpose, with our eyes open, instead of letting the network decide it for us in the dark.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Emily's map actually show?",
+     "options": [
+      "The location of the company's offices",
+      "Where the company would like to grow",
+      "Which competitors operate in each country",
+      "How fast the company can serve each region"
+     ],
+     "answer": 3,
+     "why": "\"This map is our latency — the darker the region, the slower we are to serve it.\""
+    },
+    {
+     "q": "According to Emily, what has ruled out three countries on the expansion shortlist?",
+     "options": [
+      "The regulators in those countries",
+      "The market, not the network",
+      "The sales team's lack of effort",
+      "The network, not the market"
+     ],
+     "answer": 3,
+     "why": "\"It's the network, not the market, that has quietly ruled out three of the countries.\""
+    },
+    {
+     "q": "What surprised Emily most about this situation?",
+     "options": [
+      "That the countries were unprofitable anyway",
+      "That the sales team had hidden it deliberately",
+      "That the CEO already knew about it",
+      "That no one had actually decided it — it emerged"
+     ],
+     "answer": 3,
+     "why": "\"this was never a decision anyone made. It emerged.\""
+    },
+    {
+     "q": "When Emily says \"no amount of sales effort changes physics\", she is implying that…",
+     "options": [
+      "the expansion should be cancelled entirely",
+      "the constraint is technical, not a matter of trying harder",
+      "the sales team is underperforming",
+      "physics should be taught to the sales team"
+     ],
+     "answer": 1,
+     "why": "Inferência: o limite é a latência real da rede — esforço comercial não o supera."
+    },
+    {
+     "q": "What is Emily ultimately asking the CEO to do?",
+     "options": [
+      "Replace the current network provider at once",
+      "Cancel the three markets without discussion",
+      "Approve an immediate IT budget increase",
+      "Make the expansion choice consciously, not by default"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"we choose that on purpose… instead of letting the network decide it for us in the dark.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The desk needs <strong>low latency</strong> to price against Singapore in real time.\" Low latency refers to…",
+     "options": [
+      "a low cost of network access",
+      "a small number of connected users",
+      "a very small delay in data reaching its destination",
+      "a weak or unreliable signal"
+     ],
+     "answer": 2,
+     "why": "Low latency = baixa latência: o atraso mínimo entre enviar e receber os dados."
+    },
+    {
+     "q": "Choose the correct term: \"Routing everything through one carrier turned that carrier into a ___.\"",
+     "options": [
+      "single point of failure",
+      "province",
+      "low latency",
+      "strategic implication"
+     ],
+     "answer": 0,
+     "why": "Single point of failure = ponto único de falha: se ele cai, tudo cai junto."
+    },
+    {
+     "q": "\"Connectivity became the <strong>bottleneck</strong> that capped our expansion.\" A bottleneck is…",
+     "options": [
+      "a redundant backup link",
+      "the point that constrains everything downstream",
+      "a temporary cost saving",
+      "a strategic advantage"
+     ],
+     "answer": 1,
+     "why": "Bottleneck = gargalo: o ponto que limita a capacidade de todo o restante."
+    },
+    {
+     "q": "Choose the correct word: \"The plan is bold, but we must ask whether it is even ___ given today's network.\"",
+     "options": [
+      "linguistically complex",
+      "physically possible",
+      "commercially secret",
+      "financially audited"
+     ],
+     "answer": 1,
+     "why": "Physically possible = fisicamente possível: a rede define o que a ambição consegue, de fato, sustentar."
+    },
+    {
+     "q": "<strong>Strategic implication</strong> is best understood as…",
+     "options": [
+      "the exact technical specification of a system",
+      "a rumour about a competitor",
+      "what a technical fact means for the company's direction",
+      "the legal consequence of a contract"
+     ],
+     "answer": 2,
+     "why": "Strategic implication = implicação estratégica: o que um detalhe técnico significa para o rumo do negócio."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em reuniões sobre infraestrutura e estratégia. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"No one ever <strong>signed off on</strong> that border around our ambition.\" To sign off on means to…",
+     "options": [
+      "publicly announce",
+      "gradually reverse",
+      "formally approve",
+      "quietly ignore"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new connectivity design region by region.\" To roll out means to…",
+     "options": [
+      "quietly abandon it",
+      "keep it secret for now",
+      "implement it in stages",
+      "audit it externally"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Upgrading a single link won't <strong>move the needle</strong> on our latency to Asia.\" This means it will…",
+     "options": [
+      "not make a noticeable difference",
+      "take years to measure",
+      "trigger strong internal resistance",
+      "cost far more than expected"
+     ],
+     "answer": 0,
+     "why": "Move the needle = fazer diferença perceptível — aqui, não faz."
+    },
+    {
+     "q": "\"Two directors <strong>pushed back on</strong> treating this as mere IT.\" They…",
+     "options": [
+      "postponed reading it",
+      "approved it immediately",
+      "resisted or challenged that framing",
+      "rewrote the whole proposal"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The board agreed to invest, but the team never <strong>followed through</strong>.\" They…",
+     "options": [
+      "delegated it elsewhere",
+      "failed to carry it to completion",
+      "documented it badly",
+      "changed the budget midway"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim aquilo que foi combinado."
+    }
+   ]
+  }
+ ]
+}

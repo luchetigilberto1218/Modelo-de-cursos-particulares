@@ -1,0 +1,259 @@
+{
+ "num": 344,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Designing a resilient logistics network means making deliberate choices about single points of failure — and paying for the absence of them. A single hub that handles 70% of volume is cheap on a good day and catastrophic on a bad one. A single carrier on a critical lane is efficient until the week it is not. A single port for all imports works beautifully for years, then breaks the company in one news cycle.<br><br>Resilient networks are rarely the cheapest on paper. They carry a small extra cost every day — a second hub, a second carrier, a second port of entry — which functions as a quiet insurance premium. The teams that understand this build in the redundancy before the crisis, not after.<br><br>If we had diversified our main port two years ago, the strike would have cost us a bad week instead of a bad quarter. Networks live or die on questions of that shape — and leaders are paid to answer them honestly before the strike begins, not during.",
+   "items": [
+    {
+     "q": "How does the text describe a single hub that handles 70% of volume?",
+     "options": [
+      "Consistently the most expensive option",
+      "Impossible to operate without redundancy",
+      "Cheap on a good day and catastrophic on a bad one",
+      "The safest architecture available"
+     ],
+     "answer": 2,
+     "why": "\"cheap on a good day and catastrophic on a bad one\" — a concentração é econômica até falhar."
+    },
+    {
+     "q": "What role does the daily extra cost of a resilient network play?",
+     "options": [
+      "A regulatory requirement",
+      "A penalty for poor planning",
+      "A short-term promotional discount",
+      "A quiet insurance premium"
+     ],
+     "answer": 3,
+     "why": "\"which functions as a quiet insurance premium\" — paga-se um pouco todo dia para evitar o desastre."
+    },
+    {
+     "q": "The sentence about diversifying the port two years ago suggests that…",
+     "options": [
+      "the strike was entirely unforeseeable",
+      "the company should have used a cheaper carrier",
+      "diversification would have contained the damage to a single bad week",
+      "the port was never actually affected by the strike"
+     ],
+     "answer": 2,
+     "why": "Inferência: o terceiro condicional implica que a redundância teria limitado o prejuízo a \"a bad week\"."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "The lowest-cost network on paper is usually the wisest choice.",
+      "Redundancy is worth paying for before a crisis hits.",
+      "Concentration of volume creates hidden fragility.",
+      "Leaders should confront failure scenarios in advance."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto argumenta que o mais barato no papel esconde risco catastrófico — o autor discordaria."
+    },
+    {
+     "q": "What does \"before the strike begins, not during\" imply about resilience decisions?",
+     "options": [
+      "They only matter for import operations",
+      "They are the responsibility of the carrier, not the company",
+      "They can be safely postponed until a disruption is under way",
+      "They lose their value once the disruption has started"
+     ],
+     "answer": 3,
+     "why": "Inferência: a janela para construir redundância é anterior à crise; durante a greve já é tarde."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentando o redesenho da rede à liderança. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Let me be upfront about the number on the slide: this redesign adds roughly two percent to our permanent landed cost. I am not going to dress that up. What it buys us is a drop in single-port exposure from eighty percent to fifty-five.<br><br>Right now, four in every five containers come through one port of entry. On an ordinary quarter, that concentration is the reason our unit economics look so healthy. On the quarter a strike lands, it is the reason a regional dispute becomes a company-wide crisis. We have simply been lucky with the calendar.<br><br>If that port went down tomorrow, we would have no viable fallback for at least six weeks. Under this proposal, we would reroute a meaningful share of volume through a second port within days. The two percent is the premium we pay for that optionality — every day, quietly, whether or not we ever draw on it.<br><br>I want to be clear this is not a cost-cutting exercise dressed as resilience. It is the opposite. I am asking you to sign off on paying more, on purpose, so that one bad news cycle never again decides our year.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Harry say the redesign does to the permanent landed cost?",
+     "options": [
+      "Reduces it by two percent",
+      "Doubles it in the first year",
+      "Leaves it unchanged",
+      "Adds roughly two percent"
+     ],
+     "answer": 3,
+     "why": "\"this redesign adds roughly two percent to our permanent landed cost.\""
+    },
+    {
+     "q": "What change in single-port exposure does the proposal deliver?",
+     "options": [
+      "From seventy percent to fifty percent",
+      "From eighty percent to fifty-five percent",
+      "From eighty percent down to zero",
+      "From fifty-five percent to eighty percent"
+     ],
+     "answer": 1,
+     "why": "\"a drop in single-port exposure from eighty percent to fifty-five.\""
+    },
+    {
+     "q": "When Harry says \"we have simply been lucky with the calendar,\" he means that…",
+     "options": [
+      "the company chose the right quarter to expand",
+      "the fiscal year ends at a convenient time",
+      "the port renegotiated its contract early",
+      "no strike has yet coincided with the current concentration"
+     ],
+     "answer": 3,
+     "why": "Inferência: a saúde atual dos números depende de nenhuma greve ter acontecido ainda — sorte, não desenho."
+    },
+    {
+     "q": "How does Harry frame the two percent extra cost?",
+     "options": [
+      "As a premium paid daily for optionality, drawn on or not",
+      "As a penalty imposed by the second port",
+      "As a saving compared with the current setup",
+      "As a temporary surcharge that disappears after a year"
+     ],
+     "answer": 0,
+     "why": "\"The two percent is the premium we pay for that optionality — every day, quietly, whether or not we ever draw on it.\""
+    },
+    {
+     "q": "What is Harry's underlying point about this proposal?",
+     "options": [
+      "It asks the leadership to pay more deliberately to remove a systemic risk",
+      "It is a cost-cutting exercise disguised as resilience",
+      "It postpones any spending until a crisis occurs",
+      "It shifts responsibility for disruptions onto the carrier"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele afirma explicitamente que é o oposto de corte de custos — pagar mais de propósito para blindar o ano."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"A <strong>single point of failure</strong> is a single point of catastrophe.\" This phrase refers to…",
+     "options": [
+      "a backup route kept in reserve",
+      "a component whose failure brings down the whole system",
+      "the most expensive node in the network",
+      "the person accountable for an outage"
+     ],
+     "answer": 1,
+     "why": "Ponto único de falha: um elemento cuja queda derruba o sistema inteiro."
+    },
+    {
+     "q": "Choose the correct word: \"To cut concentration risk, the board finally agreed to ___ its ports of entry across three regions.\"",
+     "options": [
+      "consolidate",
+      "outsource",
+      "audit",
+      "diversify"
+     ],
+     "answer": 3,
+     "why": "Diversify = diversificar — espalhar o volume para reduzir a exposição a um só ponto."
+    },
+    {
+     "q": "\"The second carrier is our <strong>insurance premium</strong> against a lane going dark.\" Here an insurance premium means…",
+     "options": [
+      "a bonus paid to the best-performing carrier",
+      "a one-off penalty for a missed delivery",
+      "the fee charged when a shipment is delayed",
+      "a recurring cost paid to protect against a future loss"
+     ],
+     "answer": 3,
+     "why": "Prêmio de seguro: custo recorrente que se paga para se proteger de uma perda futura."
+    },
+    {
+     "q": "<strong>Redundancy</strong>, in a resilient network, is best described as…",
+     "options": [
+      "information repeated needlessly in reports",
+      "duplicate capacity kept so the system survives a failure",
+      "a route that is never used and can be removed",
+      "excess staff that should be cut to save money"
+     ],
+     "answer": 1,
+     "why": "Redundância aqui é capacidade duplicada de propósito — o segundo hub, o segundo porto — para sobreviver a uma falha."
+    },
+    {
+     "q": "Choose the correct term: \"A regional dispute became a company-wide crisis in a single ___, before we could even respond.\"",
+     "options": [
+      "news cycle",
+      "insurance premium",
+      "single point of failure",
+      "port of entry"
+     ],
+     "answer": 0,
+     "why": "News cycle = ciclo de notícias — a velocidade com que um problema regional vira crise pública."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de redesenho de rede. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"I am asking you to <strong>sign off on</strong> paying more, on purpose.\" To sign off on means to…",
+     "options": [
+      "postpone indefinitely",
+      "quietly ignore",
+      "comment on informally",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the second port of entry over two quarters.\" To roll out means to…",
+     "options": [
+      "audit it retrospectively",
+      "cancel it in phases",
+      "keep it as a secret pilot",
+      "implement it in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Operations <strong>pushed back on</strong> the added complexity of a dual-hub model.\" They…",
+     "options": [
+      "approved it without question",
+      "resisted or raised objections to it",
+      "rewrote the whole proposal",
+      "delayed reading the slides"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, contestar — levantar objeções sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The board endorsed resilience but never <strong>followed through</strong> on the funding.\" They…",
+     "options": [
+      "documented it thoroughly",
+      "carried the commitment to completion",
+      "failed to see the commitment through",
+      "delegated it to the carrier"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado — aqui, justamente o que não aconteceu."
+    },
+    {
+     "q": "\"A single backup lane on a minor route won't <strong>move the needle</strong> on our overall exposure.\" This means it will…",
+     "options": [
+      "not make a meaningful difference",
+      "cost far more than budgeted",
+      "trigger resistance from operations",
+      "take years to measure"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível — aqui, não faz."
+    }
+   ]
+  }
+ ]
+}

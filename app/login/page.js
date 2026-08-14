@@ -2,6 +2,7 @@
 
 import { Suspense, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { primaryClient } from '../../lib/primary-client';
 
 // Destino pós-login pedido pela URL (?next=/algum/caminho). Só aceitamos caminho
 // relativo do próprio site — nunca "//host" ou URL absoluta, senão o link viraria
@@ -61,13 +62,13 @@ function LoginForm() {
       }
 
       // Se a URL pediu um destino (?next=), ele vence — é o que faz um link
-      // direto para uma trilha sobreviver à tela de login. Sem ?next=, nada muda:
-      // alunos/professores com um único cliente vão direto pro material dele e
-      // coordenador (acesso a tudo) segue para a raiz.
-      const clients = data.user?.clients;
-      const fallback = data.user?.role !== 'coordinator' && clients?.length === 1
-        ? `/${clients[0]}`
-        : '/';
+      // direto para uma trilha sobreviver à tela de login. Sem ?next=, a pessoa
+      // vai direto para o material dela: `primaryClient` ignora o espelho
+      // interno `<cliente>-teste`, então quem tem um único curso de verdade
+      // (o caso de todo mundo hoje) não passa mais pela raiz antes do conteúdo.
+      // Só quem tem dois cursos distintos cai em `/`, que agora lista os dois.
+      const home = primaryClient(data.user);
+      const fallback = home ? `/${home}` : '/';
       const dest = safeNext(searchParams.get('next')) || fallback;
       router.push(dest);
       router.refresh();

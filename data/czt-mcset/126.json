@@ -8,9 +8,9 @@
     {
      "q": "What does a bank guarantee say?",
      "options": [
+      "The customer will always pay",
       "The bank ships the goods",
       "The goods are free",
-      "The customer will always pay",
       "If our customer does not do what they promised, we will pay you instead"
      ],
      "answer": 3,
@@ -19,45 +19,45 @@
     {
      "q": "When is a bank guarantee useful?",
      "options": [
-      "When there is no bank",
-      "When the ship is fast",
+      "When one company wants another to trust them",
       "When the goods are cheap",
-      "When one company wants another to trust them"
+      "When the ship is fast",
+      "When there is no bank"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"It is useful when one company wants another to trust them.\""
     },
     {
      "q": "In the example, who might ask for a guarantee?",
      "options": [
-      "A customs officer",
       "A bank teller",
       "A ship's captain",
-      "A supplier, before starting a big project"
+      "A supplier, before starting a big project",
+      "A customs officer"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"a supplier may ask for a guarantee before starting a big project.\""
     },
     {
      "q": "Does a guarantee replace the deal?",
      "options": [
+      "It cancels the deal",
       "Yes, it replaces it",
       "No, it adds a safety net",
-      "It cancels the deal",
       "It changes the price"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"The guarantee does not replace the deal. It simply adds a safety net.\""
     },
     {
      "q": "What is the purpose of the safety net?",
      "options": [
-      "To make the deal cheaper",
       "To speed up shipping",
       "So the two sides can do business with confidence",
-      "To avoid the bank"
+      "To avoid the bank",
+      "To make the deal cheaper"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"so the two sides can do business with confidence.\""
     }
    ]
@@ -72,21 +72,21 @@
     {
      "q": "What is the buyer asking for before signing?",
      "options": [
-      "A performance guarantee",
-      "A discount",
       "A letter of credit",
-      "A lower price"
+      "A lower price",
+      "A discount",
+      "A performance guarantee"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Your new buyer in Asia is asking for a performance guarantee.\""
     },
     {
      "q": "Why does the buyer want it?",
      "options": [
-      "They dislike you",
       "The bank requires it",
+      "The goods are cheap",
       "They've never worked with you and depend on you to deliver",
-      "The goods are cheap"
+      "They dislike you"
      ],
      "answer": 2,
      "why": "\"They've never worked with you… What if you don't [deliver]?\""
@@ -94,34 +94,34 @@
     {
      "q": "What does the performance guarantee promise?",
      "options": [
-      "The bank ships the goods",
       "If the supplier doesn't deliver as agreed, the bank pays the buyer instead",
+      "The goods are free",
       "The buyer pays more",
-      "The goods are free"
+      "The bank ships the goods"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"if you, the supplier, don't perform… the bank pays them instead.\""
     },
     {
      "q": "Is the request an insult, according to Sophie?",
      "options": [
       "Yes",
-      "Only for small buyers",
       "No — it's how careful companies protect themselves with a new partner",
-      "Only in Asia"
+      "Only in Asia",
+      "Only for small buyers"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"this is not an insult… It's just how careful companies protect themselves with a new partner.\""
     },
     {
      "q": "What is the 'good news' at the end?",
      "options": [
-      "The guarantee is free",
       "The buyer will pay more",
       "Once you deliver well, they'll trust you and probably won't ask next time",
-      "The bank ships for free"
+      "The bank ships for free",
+      "The guarantee is free"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"once you deliver well… next time they probably won't ask for one at all.\""
     }
    ]
@@ -132,56 +132,56 @@
     {
      "q": "A **bank guarantee** is…",
      "options": [
-      "a duty",
       "a bank's promise to pay if its customer fails to do what they promised",
       "a shipping form",
+      "a duty",
       "a currency"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Bank guarantee = garantia bancária."
     },
     {
      "q": "A **safety net** is…",
      "options": [
-      "protection in case something goes wrong",
       "a discount",
+      "a type of ship",
       "a customs form",
-      "a type of ship"
+      "protection in case something goes wrong"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Safety net = rede de segurança."
     },
     {
      "q": "Choose the correct word: \"If the buyer **___** to pay, the bank will pay instead.\"",
      "options": [
-      "declares",
       "ships",
-      "agrees",
-      "fails"
+      "fails",
+      "declares",
+      "agrees"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "To fail = falhar."
     },
     {
      "q": "The **beneficiary** of a guarantee is…",
      "options": [
+      "the party protected by it",
       "the bank",
       "customs",
-      "the ship",
-      "the party protected by it"
+      "the ship"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Beneficiary = beneficiário."
     },
     {
      "q": "Choose the correct word: \"A **performance** guarantee protects the buyer if the supplier does not **___**.\"",
      "options": [
+      "deliver",
       "ship early",
       "pay a duty",
-      "deliver",
       "cancel"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Performance = cumprimento/entrega do combinado."
     }
    ]
@@ -193,9 +193,9 @@
      "q": "\"The guarantee is a **bridge of trust**.\" A bridge of trust means…",
      "options": [
       "something that helps two sides trust each other",
-      "a real bridge",
       "a payment",
-      "a delay"
+      "a delay",
+      "a real bridge"
      ],
      "answer": 0,
      "why": "Bridge of trust = ponte de confiança."
@@ -204,8 +204,8 @@
      "q": "\"It's normal — big buyers ask for this **all the time**.\" All the time means…",
      "options": [
       "never",
-      "once",
       "rarely",
+      "once",
       "very often"
      ],
      "answer": 3,
@@ -214,34 +214,34 @@
     {
      "q": "\"Think about it **from their side**.\" From their side means…",
      "options": [
+      "against them",
       "from their point of view",
       "without them",
-      "against them",
       "next to them"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "From their side = do ponto de vista deles."
     },
     {
      "q": "\"If you don't deliver, they'd be **stuck**.\" To be stuck means to…",
      "options": [
-      "be in a difficult position with no easy way out",
+      "be early",
       "be paid",
       "be fine",
-      "be early"
+      "be in a difficult position with no easy way out"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Be stuck = ficar preso, em apuros."
     },
     {
      "q": "\"Once you **deliver well**, they'll trust you.\" To deliver well means to…",
      "options": [
       "fail",
+      "do the job as promised",
       "delay",
-      "cancel",
-      "do the job as promised"
+      "cancel"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Deliver well = cumprir bem o combinado."
     }
    ]

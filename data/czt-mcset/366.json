@@ -10,56 +10,56 @@
     {
      "q": "What is a financial transaction?",
      "options": [
+      "Any event that changes the numbers of the business",
       "A new employee",
       "A report at the end of the month",
-      "A meeting with a supplier",
-      "Any event that changes the numbers of the business"
+      "A meeting with a supplier"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"A financial transaction is any event that changes the numbers of the business.\""
     },
     {
      "q": "How many sides does every transaction have?",
      "options": [
-      "Two",
       "One",
-      "Four",
-      "Three"
+      "Two",
+      "Three",
+      "Four"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Every transaction has two sides: something comes in and something goes out.\""
     },
     {
      "q": "When we pay a supplier, what happens?",
      "options": [
+      "Inventory goes up",
       "Nothing changes",
-      "Cash goes down and the bill disappears",
       "Cash goes up",
-      "Inventory goes up"
+      "Cash goes down and the bill disappears"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"If we pay a supplier, cash goes down and the bill we owe disappears.\""
     },
     {
      "q": "The author would most likely DISAGREE with this idea:",
      "options": [
-      "A sale is a transaction",
-      "A refund changes the numbers",
       "Only one side of a transaction moves",
+      "A refund changes the numbers",
+      "A sale is a transaction",
       "Seeing both sides is a good habit"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: o texto diz que TODA transação tem dois lados; ele discordaria da ideia de só um lado se mover."
     },
     {
      "q": "The text suggests that a good accountant…",
      "options": [
-      "looks at both sides of every event",
-      "works only at the end of the year",
       "only counts the money that comes in",
-      "never writes anything down"
+      "never writes anything down",
+      "works only at the end of the year",
+      "looks at both sides of every event"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"see both sides of every event is the first real habit of accounting\" — o bom contador olha os dois lados."
     }
    ]
@@ -77,9 +77,9 @@
     {
      "q": "How many transactions will they look at today?",
      "options": [
-      "Five",
       "Twenty",
       "Two",
+      "Five",
       "Ten"
      ],
      "answer": 3,
@@ -88,45 +88,45 @@
     {
      "q": "In the first transaction, what came in?",
      "options": [
-      "Sugar",
-      "A loan",
       "Coffee",
-      "Cash"
+      "Sugar",
+      "Cash",
+      "A loan"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"We sold coffee to a client. Cash came in, and the coffee went out.\""
     },
     {
      "q": "What happened with the refund?",
      "options": [
-      "Cash came in and the product went out",
-      "Cash went out and the product came back in",
       "Nothing moved",
-      "The client paid more"
+      "Cash came in and the product went out",
+      "The client paid more",
+      "Cash went out and the product came back in"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"we gave the money back. Cash went out, and the product came back in.\""
     },
     {
      "q": "Why does Oliver say \"if you write only one side, something is missing\"?",
      "options": [
       "Because the client was angry",
-      "Because every event must have two sides",
       "Because the loan was too small",
-      "Because he forgot a number"
+      "Because he forgot a number",
+      "Because every event must have two sides"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: como toda transação tem dois lados, anotar só um lado significa que faltou algo."
     },
     {
      "q": "What does Oliver want the new bookkeeper to do every day?",
      "options": [
-      "Count only the cash",
       "Ask what came in and what went out",
       "Call the bank",
-      "Wait until the end of the month"
+      "Wait until the end of the month",
+      "Count only the cash"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: ele diz \"Always ask: what came in, and what went out? Do this every day\" — é o hábito que ele quer ensinar."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"We made a big <strong>sale</strong> today.\" A <strong>sale</strong> is when you…",
      "options": [
+      "sell something for money",
       "hire a worker",
       "borrow money",
-      "sell something for money",
       "pay a bill"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Sale = venda: você vende algo e recebe dinheiro."
     },
     {
      "q": "Choose the correct word: \"The client returned the box, so we gave a ___.\"",
      "options": [
-      "loan",
-      "supplier",
       "refund",
-      "sale"
+      "sale",
+      "loan",
+      "supplier"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Refund = reembolso: devolver o dinheiro ao cliente."
     },
     {
      "q": "\"We got a <strong>loan</strong> from the bank.\" A <strong>loan</strong> is money that you…",
      "options": [
-      "receive and must pay back",
-      "give to a client",
+      "keep forever",
       "earn from a sale",
-      "keep forever"
+      "receive and must pay back",
+      "give to a client"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Loan = empréstimo: você recebe e depois precisa devolver."
     },
     {
      "q": "Choose the correct word: \"We buy our sugar from one ___.\"",
      "options": [
       "refund",
+      "habit",
       "event",
-      "supplier",
-      "habit"
+      "supplier"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Supplier = fornecedor: a empresa que vende para você."
     },
     {
      "q": "\"When we pay the bill, it will <strong>disappear</strong>.\" To <strong>disappear</strong> means to…",
      "options": [
+      "stay the same",
       "go away",
       "come back",
-      "stay the same",
       "grow bigger"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "To disappear = desaparecer: sair, não estar mais lá."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the payment.\" To sign off on means to…",
      "options": [
+      "cancel it",
       "approve it",
       "forget it",
-      "cancel it",
       "hide it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar, dar o \"ok\" final."
     },
     {
      "q": "\"Please <strong>write down</strong> both sides of the transaction.\" To write down means to…",
      "options": [
-      "say it out loud",
       "throw it away",
-      "put it on paper",
-      "read it again"
+      "read it again",
+      "say it out loud",
+      "put it on paper"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Write down = anotar, registrar no papel."
     },
     {
      "q": "\"Let's <strong>go over</strong> yesterday's numbers.\" To go over means to…",
      "options": [
-      "send them to the client",
-      "delete them",
+      "check them carefully",
       "print them",
-      "check them carefully"
+      "delete them",
+      "send them to the client"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Go over = revisar, olhar com cuidado."
     },
     {
      "q": "\"The client wants to <strong>pay back</strong> the loan next month.\" To pay back means to…",
      "options": [
-      "keep the money",
       "spend more money",
-      "return the money",
-      "ask for more"
+      "ask for more",
+      "keep the money",
+      "return the money"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Pay back = devolver, pagar de volta o que foi emprestado."
     },
     {
      "q": "\"Don't forget to <strong>keep track of</strong> every sale.\" To keep track of means to…",
      "options": [
-      "lose it",
-      "give it away",
       "follow and record it",
-      "sell it fast"
+      "give it away",
+      "sell it fast",
+      "lose it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Keep track of = acompanhar e registrar, não perder de vista."
     }
    ]

@@ -1,0 +1,259 @@
+{
+ "num": 1092,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. Sometimes problems happen at work. A delivery is late. A box is broken. A price is wrong. A customer is unhappy. This is normal. We can talk about it.<br><br>Adjectives describe these situations. We say \"a late delivery\" or \"the delivery is late\". Adjectives come before the noun, or after the verb \"to be\". Adjectives do not have a plural form. We say \"broken boxes\", not \"brokens boxes\".<br><br>Today you learn five important words: late, broken, wrong, missing and damaged. Good communication starts with clear and simple words. When there is a problem, stay calm. Describe the situation honestly. You can do it!",
+   "items": [
+    {
+     "q": "What happens sometimes at work?",
+     "options": [
+      "Nothing happens",
+      "Problems happen",
+      "Only good news",
+      "The office closes"
+     ],
+     "answer": 1,
+     "why": "\"Sometimes problems happen at work.\" — problemas acontecem, e isso é normal."
+    },
+    {
+     "q": "Where do adjectives come in a sentence?",
+     "options": [
+      "Only in questions",
+      "Before the noun or after \"to be\"",
+      "Only at the end",
+      "After the noun"
+     ],
+     "answer": 1,
+     "why": "\"Adjectives come before the noun, or after the verb 'to be'.\""
+    },
+    {
+     "q": "Which sentence is correct?",
+     "options": [
+      "The broken is boxes",
+      "The boxes is broken",
+      "The boxes are broken",
+      "The boxes are brokens"
+     ],
+     "answer": 2,
+     "why": "Adjetivos não têm plural: \"broken\", nunca \"brokens\"."
+    },
+    {
+     "q": "The text suggests that talking about a problem is…",
+     "options": [
+      "always a mistake",
+      "impossible in English",
+      "normal and okay",
+      "a bad thing to do"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"This is normal. We can talk about it.\" — falar do problema é natural."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "adjectives are not useful",
+      "you must use difficult words",
+      "you should hide problems",
+      "simple words help communication"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Good communication starts with clear and simple words.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça a atendente falando com um cliente. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello, this is Sara from the support team. Thank you for your call. I understand there is a problem with your order. Please tell me about it, and I will help you.<br><br>Okay, so the delivery is late. It was for Monday, but today is Wednesday, and the box is not here. I am very sorry about that. This is not good.<br><br>You also say one item is missing. The order has ten boxes, but you have nine. One box is missing. And one box is damaged. The corner is broken, so we cannot use it. I understand.<br><br>Let me write this down. The delivery is late. One box is missing. One box is damaged. Is the price correct on your invoice? Good, the price is correct.<br><br>Here is my plan. I will send a new box today. It will arrive tomorrow. I am very sorry for the problem. Thank you for your patience. Have a good day!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is Sara?",
+     "options": [
+      "A person from the support team",
+      "The delivery driver",
+      "The manager",
+      "The customer"
+     ],
+     "answer": 0,
+     "why": "\"this is Sara from the support team.\""
+    },
+    {
+     "q": "Why is the delivery a problem?",
+     "options": [
+      "It is free",
+      "It is too early",
+      "It is late",
+      "It is too big"
+     ],
+     "answer": 2,
+     "why": "\"the delivery is late. It was for Monday, but today is Wednesday.\""
+    },
+    {
+     "q": "How many boxes are there now?",
+     "options": [
+      "Eleven",
+      "Eight",
+      "Nine",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "\"The order has ten boxes, but you have nine. One box is missing.\""
+    },
+    {
+     "q": "The price on the invoice is…",
+     "options": [
+      "too high",
+      "correct",
+      "missing",
+      "wrong"
+     ],
+     "answer": 1,
+     "why": "\"Is the price correct on your invoice? Good, the price is correct.\""
+    },
+    {
+     "q": "How does Sara feel about the problem?",
+     "options": [
+      "She does not care",
+      "She is angry with the customer",
+      "She is sorry and wants to help",
+      "She is happy"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela diz \"I am very sorry\" e propõe uma solução — quer ajudar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The bus is <strong>late</strong> today.\" <strong>Late</strong> means…",
+     "options": [
+      "rápido",
+      "grande",
+      "novo",
+      "atrasado"
+     ],
+     "answer": 3,
+     "why": "Late = atrasado. O ônibus não chegou na hora."
+    },
+    {
+     "q": "\"The window is <strong>broken</strong>.\" <strong>Broken</strong> means…",
+     "options": [
+      "quebrado",
+      "limpo",
+      "caro",
+      "aberto"
+     ],
+     "answer": 0,
+     "why": "Broken = quebrado."
+    },
+    {
+     "q": "Choose the correct word: \"The name on the box is ___. It is not my name.\"",
+     "options": [
+      "clean",
+      "ready",
+      "happy",
+      "wrong"
+     ],
+     "answer": 3,
+     "why": "Wrong = errado. O nome não está certo."
+    },
+    {
+     "q": "Choose the correct word: \"One page is ___ from the report. We only have five of six.\"",
+     "options": [
+      "late",
+      "big",
+      "missing",
+      "wrong"
+     ],
+     "answer": 2,
+     "why": "Missing = faltando. Uma página não está lá."
+    },
+    {
+     "q": "\"The product is <strong>damaged</strong>, so we cannot sell it.\" <strong>Damaged</strong> means…",
+     "options": [
+      "barato",
+      "danificado",
+      "pequeno",
+      "pronto"
+     ],
+     "answer": 1,
+     "why": "Damaged = danificado; não pode ser vendido."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"There is a <strong>problem</strong> with the order.\" A <strong>problem</strong> is…",
+     "options": [
+      "um preço",
+      "um presente",
+      "um problema",
+      "um plano"
+     ],
+     "answer": 2,
+     "why": "Problem = problema. Algo está errado com o pedido."
+    },
+    {
+     "q": "\"I am <strong>sorry</strong> for the delay.\" To say <strong>sorry</strong> means to…",
+     "options": [
+      "ask a question",
+      "say goodbye",
+      "apologise",
+      "say thank you"
+     ],
+     "answer": 2,
+     "why": "Sorry = desculpe; você pede desculpas por um problema."
+    },
+    {
+     "q": "\"Please <strong>send back</strong> the damaged box.\" To send back means to…",
+     "options": [
+      "open it",
+      "buy it",
+      "keep it",
+      "return it"
+     ],
+     "answer": 3,
+     "why": "Send back = devolver; mandar de volta para nós."
+    },
+    {
+     "q": "\"I will <strong>fix it</strong> today.\" To fix it means to…",
+     "options": [
+      "sell it",
+      "buy a new one",
+      "solve the problem",
+      "forget it"
+     ],
+     "answer": 2,
+     "why": "Fix it = resolver, consertar o problema."
+    },
+    {
+     "q": "\"Can you <strong>check</strong> the order, please?\" To check means to…",
+     "options": [
+      "pay for it",
+      "look at it to see if it is correct",
+      "hide it",
+      "throw it away"
+     ],
+     "answer": 1,
+     "why": "Check = verificar, olhar para ver se está certo."
+    }
+   ]
+  }
+ ]
+}

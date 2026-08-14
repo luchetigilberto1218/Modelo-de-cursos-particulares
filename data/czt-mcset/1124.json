@@ -1,0 +1,259 @@
+{
+ "num": 1124,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Accounting is the language of Czarnikow's numbers. Today's lesson is called Simple Invoices. It gives you short, useful sentences for the finance team.<br><br>An invoice is a bill. It has a client, a total, a date, and each item on it. Every invoice has to match the records. The numbers must be clear and honest.<br><br>Sophie helps new trainees. She uses short sentences and simple words. \"Go slowly,\" she says. \"One careful step at a time. You can do it!\"",
+   "items": [
+    {
+     "q": "What is the lesson called?",
+     "options": [
+      "Bank Numbers",
+      "Client Meetings",
+      "Simple Invoices",
+      "Big Reports"
+     ],
+     "answer": 2,
+     "why": "\"Today's lesson is called Simple Invoices.\""
+    },
+    {
+     "q": "What does an invoice have?",
+     "options": [
+      "A client, a total, a date, and items",
+      "The trainee's name",
+      "A photo of the office",
+      "Only a total"
+     ],
+     "answer": 0,
+     "why": "\"It has a client, a total, a date, and each item on it.\""
+    },
+    {
+     "q": "Who helps the new trainees?",
+     "options": [
+      "Nobody",
+      "The bank",
+      "Sophie",
+      "The client"
+     ],
+     "answer": 2,
+     "why": "\"Sophie helps new trainees.\""
+    },
+    {
+     "q": "The text says numbers must be \"clear and honest.\" This suggests that…",
+     "options": [
+      "invoices are only for the boss",
+      "the total can be a guess",
+      "accuracy really matters in accounting",
+      "mistakes on an invoice are not important"
+     ],
+     "answer": 2,
+     "why": "Inferência: se os números têm que ser claros e honestos, a exatidão é essencial."
+    },
+    {
+     "q": "\"One careful step at a time\" suggests that Sophie…",
+     "options": [
+      "wants the trainee to rush",
+      "only works with experts",
+      "is patient with new people",
+      "does not like her job"
+     ],
+     "answer": 2,
+     "why": "Inferência: ir devagar, um passo de cada vez, mostra paciência com quem está começando."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie falando com o novo trainee. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the accounting team. I'm Sophie. Don't worry — we start with easy things.<br><br>This is an invoice. Look here. It has a client at the top. It has a total at the bottom. And it has a date, right here. Every line is one item. Simple, yes?<br><br>Our team is small, but we are very organised. Every invoice has to match our records. So we check the date at the end of every day. One careful step at a time.<br><br>There is a new client to review this week. I have the file on my desk. When the total is ready for a signature, please leave the item on my desk. I will check it with you.<br><br>You can do it. Go slowly. Ask me any question. One step at a time — that's how good accountants work!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where is the total on the invoice?",
+     "options": [
+      "At the top",
+      "On the back",
+      "In the middle",
+      "At the bottom"
+     ],
+     "answer": 3,
+     "why": "\"It has a total at the bottom.\""
+    },
+    {
+     "q": "When does the team check the date?",
+     "options": [
+      "Once a month",
+      "At the end of every day",
+      "Never",
+      "Only on Mondays"
+     ],
+     "answer": 1,
+     "why": "\"we check the date at the end of every day.\""
+    },
+    {
+     "q": "What should the trainee do when the total is ready?",
+     "options": [
+      "Sign it alone",
+      "Send it to the client",
+      "Leave the item on Sophie's desk",
+      "Throw it away"
+     ],
+     "answer": 2,
+     "why": "\"please leave the item on my desk.\""
+    },
+    {
+     "q": "Sophie says the team is small \"but very organised.\" This suggests that…",
+     "options": [
+      "size is more important than order",
+      "a small team can still work carefully",
+      "they do not check invoices",
+      "they never finish on time"
+     ],
+     "answer": 1,
+     "why": "Inferência: pequeno, mas organizado — o cuidado não depende do tamanho da equipe."
+    },
+    {
+     "q": "How does Sophie make the trainee feel?",
+     "options": [
+      "Angry",
+      "Bored",
+      "Nervous and rushed",
+      "Welcome and calm"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"don't worry\", \"go slowly\", \"you can do it\" — ela acolhe e tranquiliza."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Please send the <strong>invoice</strong> to the client today.\" An invoice is…",
+     "options": [
+      "a coffee break",
+      "a bill for a client",
+      "a phone call",
+      "a meeting room"
+     ],
+     "answer": 1,
+     "why": "Invoice = fatura, a conta que se envia ao cliente."
+    },
+    {
+     "q": "\"We have a new <strong>client</strong> this week.\" A client is…",
+     "options": [
+      "a person or company that buys from us",
+      "a report",
+      "a computer",
+      "a bank card"
+     ],
+     "answer": 0,
+     "why": "Client = cliente, quem compra o serviço ou produto."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ at the bottom of the invoice is $500.\"",
+     "options": [
+      "total",
+      "item",
+      "client",
+      "date"
+     ],
+     "answer": 0,
+     "why": "Total = o valor final somado, que fica no fim da fatura."
+    },
+    {
+     "q": "Choose the correct word: \"What is the ___ on this invoice? Is it today?\"",
+     "options": [
+      "date",
+      "client",
+      "item",
+      "total"
+     ],
+     "answer": 0,
+     "why": "Date = data; a pergunta é sobre o dia."
+    },
+    {
+     "q": "\"Every line on the invoice is one <strong>item</strong>.\" An item is…",
+     "options": [
+      "a whole company",
+      "the boss",
+      "the office",
+      "one thing on a list"
+     ],
+     "answer": 3,
+     "why": "Item = item, cada coisa listada na fatura."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho de escritório. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>fill in</strong> the date on the invoice?\" To fill in means to…",
+     "options": [
+      "read it aloud",
+      "delete it",
+      "write it in the space",
+      "hide it"
+     ],
+     "answer": 2,
+     "why": "Fill in = preencher, escrever no espaço."
+    },
+    {
+     "q": "\"Please <strong>check over</strong> the total before you send it.\" To check over means to…",
+     "options": [
+      "look at it carefully",
+      "print more copies",
+      "sign it fast",
+      "throw it away"
+     ],
+     "answer": 0,
+     "why": "Check over = revisar, olhar com atenção."
+    },
+    {
+     "q": "\"The boss will <strong>sign off on</strong> the invoice today.\" To sign off on means to…",
+     "options": [
+      "translate it",
+      "email the client",
+      "lose it",
+      "formally approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"I need to <strong>go over</strong> the numbers with you.\" To go over means to…",
+     "options": [
+      "ignore them",
+      "review them together",
+      "print them",
+      "delete them"
+     ],
+     "answer": 1,
+     "why": "Go over = repassar, revisar juntos."
+    },
+    {
+     "q": "\"Don't worry, I will <strong>help you out</strong>.\" To help someone out means to…",
+     "options": [
+      "test them",
+      "send them home",
+      "make them wait",
+      "give them support"
+     ],
+     "answer": 3,
+     "why": "Help out = ajudar, dar apoio a alguém."
+    }
+   ]
+  }
+ ]
+}

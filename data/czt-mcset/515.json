@@ -1,0 +1,259 @@
+{
+ "num": 515,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Handling a common cyber threat in practice is really about the first five minutes. A suspicious email arrives. An unusual alert pops up on your screen. A colleague reports that something strange is happening. What you do in those first five minutes decides whether the incident stays small or turns into something serious.<br><br>The rule of five minutes is simple. Stop what you are doing. Do not click anything else. Tell the security team immediately, and describe exactly what happened. Then wait for instructions before doing anything 'clever' on your own.<br><br>If we catch it in the first five minutes, we will almost certainly stop it from spreading. If we only catch it two hours later, we will spend the next two weeks investigating and explaining. The difference is not luck. It is the habit of reporting fast and resisting the urge to handle it alone.",
+   "items": [
+    {
+     "q": "According to the text, what mainly decides whether an incident stays small?",
+     "options": [
+      "The type of antivirus installed",
+      "How expensive the systems are",
+      "The size of the security team",
+      "What you do in the first five minutes"
+     ],
+     "answer": 3,
+     "why": "\"What you do in those first five minutes decides whether the incident stays small or turns into something serious.\""
+    },
+    {
+     "q": "Which action is part of the rule of five minutes?",
+     "options": [
+      "Turn off the whole network at once",
+      "Forward the email to your team so they can test it",
+      "Try to fix the problem quietly by yourself",
+      "Tell the security team immediately and describe what happened"
+     ],
+     "answer": 3,
+     "why": "\"Tell the security team immediately, and describe exactly what happened.\""
+    },
+    {
+     "q": "What happens, according to the text, if the threat is only caught two hours later?",
+     "options": [
+      "It is stopped almost automatically",
+      "The security team is not needed",
+      "It takes weeks of investigating and explaining",
+      "The company loses no time at all"
+     ],
+     "answer": 2,
+     "why": "\"we will spend the next two weeks investigating and explaining.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Reporting a threat quickly makes a real difference",
+      "A skilled employee should try to neutralise the threat alone",
+      "Cyber threats often start with something ordinary, like an email",
+      "Staying calm helps keep an incident small"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto insiste em 'wait for instructions' e 'resisting the urge to handle it alone' — agir sozinho é justamente o que ele desaconselha."
+    },
+    {
+     "q": "The phrase \"The difference is not luck\" suggests that…",
+     "options": [
+      "some companies are simply luckier than others",
+      "cyber threats are impossible to predict",
+      "good outcomes come from consistent habits, not chance",
+      "the security team rarely matters"
+     ],
+     "answer": 2,
+     "why": "Inferência: se não é sorte, é 'the habit of reporting fast' — o resultado depende de comportamento, não de acaso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver treinando um novo colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Welcome to the team. Let me walk you through the one thing that matters most when a cyber threat shows up: the five-minute rule.<br><br>Last month we had a real case. Someone in finance got an email that looked exactly like a supplier invoice. Something felt slightly off, so she stopped, she didn't click the link, and she called us. Seven minutes from the moment it arrived. That was it. We blocked the sender, checked the systems, and the company stayed completely safe. No damage at all.<br><br>Now compare that with the opposite. If you decide to be clever and investigate on your own, you might click something, and then we lose the early warning. So here is what I need from you. If anything looks strange, stop straight away. Don't click, don't reply, don't forward it to a friend to check. Just tell us and describe what you saw.<br><br>Report fast and we will almost always contain it. Try to handle it alone and you turn five easy minutes into two hard weeks. It really is that simple.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the 'one thing that matters most', according to Oliver?",
+     "options": [
+      "The five-minute rule",
+      "Backing up all files daily",
+      "Installing new antivirus software",
+      "Changing passwords every week"
+     ],
+     "answer": 0,
+     "why": "\"the one thing that matters most… the five-minute rule.\""
+    },
+    {
+     "q": "In the real case Oliver describes, what did the person in finance do?",
+     "options": [
+      "She stopped, didn't click, and called the security team",
+      "She clicked the link to check if it was safe",
+      "She deleted the email and said nothing",
+      "She forwarded the email to a colleague"
+     ],
+     "answer": 0,
+     "why": "\"she stopped, she didn't click the link, and she called us.\""
+    },
+    {
+     "q": "How long did it take her to report the suspicious email?",
+     "options": [
+      "Almost two weeks",
+      "About seven minutes",
+      "The next morning",
+      "About two hours"
+     ],
+     "answer": 1,
+     "why": "\"Seven minutes from the moment it arrived.\""
+    },
+    {
+     "q": "Why does Oliver warn against 'being clever' on your own?",
+     "options": [
+      "Because it wastes the security team's budget",
+      "Because you might click something and lose the early warning",
+      "Because it breaks company rules about email",
+      "Because only managers are allowed to report threats"
+     ],
+     "answer": 1,
+     "why": "Inferência: 'you might click something, and then we lose the early warning' — agir sozinho destrói a vantagem dos primeiros minutos."
+    },
+    {
+     "q": "What does Oliver mean by \"you turn five easy minutes into two hard weeks\"?",
+     "options": [
+      "A quick report prevents a long, difficult clean-up later",
+      "Employees should work longer hours",
+      "The training will take two weeks to finish",
+      "The security team needs two weeks' notice"
+     ],
+     "answer": 0,
+     "why": "Inferência: reportar rápido (5 min) evita o trabalho pesado de investigação (2 semanas) que vem depois de um atraso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We trained everyone to <strong>handle</strong> a suspicious message calmly.\" To handle here means to…",
+     "options": [
+      "deal with or manage",
+      "ignore completely",
+      "translate into English",
+      "print and file"
+     ],
+     "answer": 0,
+     "why": "To handle = lidar com / gerenciar uma situação."
+    },
+    {
+     "q": "Choose the correct word: \"A warning ___ appeared on the screen, so she called the security team.\"",
+     "options": [
+      "urge",
+      "invoice",
+      "alert",
+      "instruction"
+     ],
+     "answer": 2,
+     "why": "Alert = alerta, o aviso que apareceu na tela."
+    },
+    {
+     "q": "\"A strange message can <strong>pop up</strong> at any moment.\" To pop up means to…",
+     "options": [
+      "be sent by mistake",
+      "appear suddenly",
+      "be blocked automatically",
+      "disappear slowly"
+     ],
+     "answer": 1,
+     "why": "To pop up = surgir de repente na tela."
+    },
+    {
+     "q": "Choose the correct word: \"He resisted the ___ to fix the problem alone and reported it instead.\"",
+     "options": [
+      "urge",
+      "instruction",
+      "alert",
+      "email"
+     ],
+     "answer": 0,
+     "why": "Urge = impulso; ele resistiu ao impulso de agir sozinho."
+    },
+    {
+     "q": "\"If we act late, the threat can <strong>spread</strong> across the network.\" To spread means to…",
+     "options": [
+      "be repaired quickly",
+      "become slower",
+      "move and affect more systems",
+      "stay in one place"
+     ],
+     "answer": 2,
+     "why": "To spread = espalhar-se, atingindo mais sistemas."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre segurança e incidentes. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"When you spot something odd, <strong>flag it</strong> to the security team.\" To flag it means to…",
+     "options": [
+      "reply to the sender",
+      "ignore it for now",
+      "delete it quietly",
+      "bring it to their attention"
+     ],
+     "answer": 3,
+     "why": "Flag it = sinalizar, chamar a atenção para algo."
+    },
+    {
+     "q": "\"The team managed to <strong>shut down</strong> the attack within minutes.\" To shut down means to…",
+     "options": [
+      "investigate slowly",
+      "report to the board",
+      "stop or close something completely",
+      "postpone the response"
+     ],
+     "answer": 2,
+     "why": "Shut down = encerrar/parar algo por completo, como um ataque."
+    },
+    {
+     "q": "\"We asked staff not to <strong>look into</strong> suspicious emails themselves.\" To look into means to…",
+     "options": [
+      "approve",
+      "translate",
+      "investigate",
+      "forward"
+     ],
+     "answer": 2,
+     "why": "Look into = investigar, examinar algo em detalhe."
+    },
+    {
+     "q": "\"Reporting early helps us <strong>get ahead of</strong> the problem.\" To get ahead of means to…",
+     "options": [
+      "fall behind on it",
+      "deal with it before it grows",
+      "hand it to someone else",
+      "explain it in writing"
+     ],
+     "answer": 1,
+     "why": "Get ahead of = antecipar-se ao problema, agir antes que ele cresça."
+    },
+    {
+     "q": "\"If everyone <strong>follows through</strong> on the five-minute rule, incidents stay small.\" To follow through means to…",
+     "options": [
+      "carry the action to completion",
+      "change the process",
+      "wait for approval",
+      "question the rule"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim aquilo que foi combinado."
+    }
+   ]
+  }
+ ]
+}

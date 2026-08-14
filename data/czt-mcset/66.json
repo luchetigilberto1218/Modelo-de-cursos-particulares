@@ -8,9 +8,9 @@
     {
      "q": "What is an example of a small decision?",
      "options": [
-      "\"Which company to buy?\"",
-      "\"Which project do we choose?\"",
       "\"Which country to enter?\"",
+      "\"Which project do we choose?\"",
+      "\"Which company to buy?\"",
       "\"Which meeting first?\""
      ],
      "answer": 3,
@@ -20,44 +20,44 @@
      "q": "What three things do we do to make a good decision?",
      "options": [
       "Buy, sell, pay",
-      "Start, stop, repeat",
       "Look at options, ask for opinions, think about the result",
+      "Start, stop, repeat",
       "Read, write, speak"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"we look at the options, we ask for opinions, and we think about the result.\""
     },
     {
      "q": "What is important before we choose?",
      "options": [
       "To decide alone",
+      "To say no",
       "To listen to different people",
-      "To be the fastest",
-      "To say no"
+      "To be the fastest"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"It is important to listen to different people before we choose.\""
     },
     {
      "q": "Is a good decision always the fastest one?",
      "options": [
-      "Only on Mondays",
-      "Yes, always",
       "Only for big decisions",
-      "No — sometimes we need time to think"
+      "Only on Mondays",
+      "No — sometimes we need time to think",
+      "Yes, always"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"A good decision is not always the fastest one.\""
     },
     {
      "q": "What might we need before saying yes or no?",
      "options": [
       "To stop working",
-      "To ask one more question",
       "To leave the room",
+      "To ask one more question",
       "To shout"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Sometimes we need to ask one more question before we say yes or no.\""
     }
    ]
@@ -72,23 +72,23 @@
     {
      "q": "What decision must the team make?",
      "options": [
-      "Which office to use",
-      "When to have lunch",
       "Which of two new sugar suppliers to choose for next quarter",
-      "Which report to write"
+      "Which office to use",
+      "Which report to write",
+      "When to have lunch"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"we must choose between two new sugar suppliers for next quarter.\""
     },
     {
      "q": "What is the difference between Supplier A and Supplier B?",
      "options": [
+      "A is cheaper; B costs more but is more reliable",
       "They are the same",
       "Both are expensive",
-      "A is reliable; B is cheap",
-      "A is cheaper; B costs more but is more reliable"
+      "A is reliable; B is cheap"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Supplier A is cheaper. Supplier B costs a little more, but… more reliable.\""
     },
     {
@@ -96,8 +96,8 @@
      "options": [
       "Ends the meeting",
       "Asks for opinions from Maria and João",
-      "Decides alone",
-      "Chooses the cheapest"
+      "Chooses the cheapest",
+      "Decides alone"
      ],
      "answer": 1,
      "why": "\"let me ask for opinions. Maria… João…\""
@@ -106,22 +106,22 @@
      "q": "What is the risk of choosing the cheaper supplier?",
      "options": [
       "The report is late",
-      "If they deliver late, they lose more than they saved",
+      "Nothing",
       "The team is bored",
-      "Nothing"
+      "If they deliver late, they lose more than they saved"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"If we choose the cheaper one and they deliver late, we lose more than we saved.\""
     },
     {
      "q": "What one more question does Sophie want to ask?",
      "options": [
+      "Who is the manager?",
       "Can the reliable supplier match part of the lower price?",
       "What is the weather?",
-      "Who is the manager?",
       "When is lunch?"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"can they match part of the lower price?\""
     }
    ]
@@ -134,30 +134,30 @@
      "options": [
       "a mistake",
       "a meeting",
-      "a report",
-      "a choice you can pick"
+      "a choice you can pick",
+      "a report"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Option = opção."
     },
     {
      "q": "An **opinion** is…",
      "options": [
       "a rule",
+      "what someone thinks",
       "a fact",
-      "a number",
-      "what someone thinks"
+      "a number"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Opinion = opinião."
     },
     {
      "q": "Choose the correct word: \"Let's think about the **___** before we choose.\"",
      "options": [
       "result",
+      "room",
       "lunch",
-      "weather",
-      "room"
+      "weather"
      ],
      "answer": 0,
      "why": "Result = resultado."
@@ -165,21 +165,21 @@
     {
      "q": "To **choose** means to…",
      "options": [
-      "wait",
-      "ignore all",
+      "write",
       "pick one",
-      "write"
+      "ignore all",
+      "wait"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Choose = escolher."
     },
     {
      "q": "Choose the correct word: \"The reliable supplier is the **___** choice.\"",
      "options": [
-      "louder",
+      "later",
       "safer",
-      "faster only",
-      "later"
+      "louder",
+      "faster only"
      ],
      "answer": 1,
      "why": "Safer = mais seguro."
@@ -192,10 +192,10 @@
     {
      "q": "\"Let's do it **well, not fast**.\" This means we should focus on…",
      "options": [
-      "noise",
       "cost only",
+      "speed",
       "quality",
-      "speed"
+      "noise"
      ],
      "answer": 2,
      "why": "Well, not fast = bem-feito antes de rápido."
@@ -204,20 +204,20 @@
      "q": "\"What's your **view** on this?\" Your view means…",
      "options": [
       "your desk",
+      "your seat",
       "your opinion",
-      "your window",
-      "your seat"
+      "your window"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "View = opinião, ponto de vista."
     },
     {
      "q": "\"I don't want to **rush** this.\" To rush means to…",
      "options": [
-      "cancel",
       "delay forever",
+      "do it well",
       "do it too quickly",
-      "do it well"
+      "cancel"
      ],
      "answer": 2,
      "why": "Rush = apressar."
@@ -225,23 +225,23 @@
     {
      "q": "\"Let's decide with the **full picture**.\" The full picture means…",
      "options": [
+      "all the information",
       "no information",
       "a photo",
-      "all the information",
       "one number"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Full picture = o quadro completo."
     },
     {
      "q": "\"We pay more but we **sleep at night**.\" To sleep at night means to…",
      "options": [
-      "be tired",
-      "worry",
+      "feel calm and safe",
       "work late",
-      "feel calm and safe"
+      "worry",
+      "be tired"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Sleep at night = ficar tranquilo."
     }
    ]

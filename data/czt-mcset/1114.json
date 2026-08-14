@@ -1,0 +1,259 @@
+{
+ "num": 1114,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Logistics is about comparing. Every day we ask simple questions: which route is faster? Which truck is safer? Which plan is cheaper? Good comparisons help us make quick, fact-based decisions.<br><br>Today we use the comparative form. Short words add -er: fast becomes faster, safe becomes safer, cheap becomes cheaper. We use \"than\" to compare two things: Route A is faster than Route B. Some words are irregular: good becomes better, and bad becomes worse.<br><br>The best decisions use real data, not feelings. A route can be faster but less safe. A truck can be cheaper but slower. So we compare with numbers when we can, and we choose the option that is truly better for the job.",
+   "items": [
+    {
+     "q": "According to the text, what is logistics about?",
+     "options": [
+      "Buying trucks",
+      "Comparing",
+      "Writing reports",
+      "Driving fast"
+     ],
+     "answer": 1,
+     "why": "\"Logistics is about comparing.\" — é a primeira frase do texto."
+    },
+    {
+     "q": "How do we compare two things in the text?",
+     "options": [
+      "With the word \"more\"",
+      "With the word \"very\"",
+      "With the word \"than\"",
+      "With the word \"as\""
+     ],
+     "answer": 2,
+     "why": "\"We use 'than' to compare two things: Route A is faster than Route B.\""
+    },
+    {
+     "q": "What is the comparative of \"good\"?",
+     "options": [
+      "More good",
+      "Gooder",
+      "Best",
+      "Better"
+     ],
+     "answer": 3,
+     "why": "\"good becomes better\" — é um comparativo irregular."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "Feelings are better than data",
+      "A faster route is not always the safer route",
+      "Cheaper trucks are always slower",
+      "The fastest route is always the best route"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"A route can be faster but less safe.\" — rápido não é o mesmo que seguro."
+    },
+    {
+     "q": "The text suggests that a good decision needs…",
+     "options": [
+      "A cheaper plan",
+      "Real data",
+      "A faster driver",
+      "A new truck"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"The best decisions use real data, not feelings.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver comparando duas rotas e dois caminhões. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, let me compare the two routes for tomorrow. Route A is faster. It saves us about thirty minutes. But it goes through the mountains, so it is not very safe when it rains. And it rains a lot this week.<br><br>Route B is slower. It takes thirty minutes more. But it is flat and it is safer. For a big, heavy load, I think safe is better than fast. So today I choose Route B.<br><br>Now the trucks. Truck one is cheaper to run. It uses less fuel. But it is old and it is slower on the hills. Truck two is newer. It is faster and it is safer, but it is more expensive.<br><br>For this trip, the load is heavy and the weather is bad. So I want the safer option. Truck two is better for the job, even if it costs a bit more. Fast is good, but safe is better. Let's go with Route B and Truck two.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Which route is faster?",
+     "options": [
+      "Route B",
+      "Both routes",
+      "Neither route",
+      "Route A"
+     ],
+     "answer": 3,
+     "why": "\"Route A is faster. It saves us about thirty minutes.\""
+    },
+    {
+     "q": "Why does Oliver NOT choose Route A?",
+     "options": [
+      "It is not safe when it rains",
+      "It is more expensive",
+      "It is too long",
+      "It has no fuel stations"
+     ],
+     "answer": 0,
+     "why": "\"it goes through the mountains, so it is not very safe when it rains.\""
+    },
+    {
+     "q": "Why is Truck one cheaper to run?",
+     "options": [
+      "It is smaller",
+      "It uses less fuel",
+      "It is faster",
+      "It is newer"
+     ],
+     "answer": 1,
+     "why": "\"Truck one is cheaper to run. It uses less fuel.\""
+    },
+    {
+     "q": "What does Oliver think is most important for this trip?",
+     "options": [
+      "Low cost",
+      "Speed",
+      "A new driver",
+      "Safety"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"the load is heavy and the weather is bad. So I want the safer option.\""
+    },
+    {
+     "q": "What does \"Fast is good, but safe is better\" tell us about Oliver?",
+     "options": [
+      "He always picks the fastest option",
+      "He never uses new trucks",
+      "He does not care about cost",
+      "He puts safety above speed in this case"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele valoriza a rapidez, mas escolhe a segurança para esta viagem."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The new route is <strong>faster</strong> than the old one.\" <strong>Faster</strong> means…",
+     "options": [
+      "more slow",
+      "more safe",
+      "more quick",
+      "more cheap"
+     ],
+     "answer": 2,
+     "why": "Faster = mais rápido (more quick)."
+    },
+    {
+     "q": "Choose the correct word: \"The mountain road is dangerous, so the flat road is ___.\"",
+     "options": [
+      "cheaper",
+      "safer",
+      "faster",
+      "slower"
+     ],
+     "answer": 1,
+     "why": "Safer = mais seguro, o oposto de perigoso (dangerous)."
+    },
+    {
+     "q": "Choose the correct word: \"Truck one uses less fuel, so it is ___ to run.\"",
+     "options": [
+      "faster",
+      "safer",
+      "slower",
+      "cheaper"
+     ],
+     "answer": 3,
+     "why": "Cheaper = mais barato; usar menos combustível custa menos."
+    },
+    {
+     "q": "\"The old truck is <strong>slower</strong> on the hills.\" <strong>Slower</strong> means…",
+     "options": [
+      "more fast",
+      "more slow",
+      "more safe",
+      "more expensive"
+     ],
+     "answer": 1,
+     "why": "Slower = mais lento (more slow)."
+    },
+    {
+     "q": "Choose the correct word: \"Route B is safer, so for a heavy load it is ___ than Route A.\"",
+     "options": [
+      "better",
+      "worse",
+      "faster",
+      "cheaper"
+     ],
+     "answer": 0,
+     "why": "Better = melhor; comparativo irregular de \"good\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem em decisões de logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new route.\" To sign off on means to…",
+     "options": [
+      "cancel it",
+      "delay it",
+      "explain it",
+      "approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar, dar o \"ok\" final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new plan next week.\" To roll out means to…",
+     "options": [
+      "start using it",
+      "stop it",
+      "test it in secret",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Roll out = colocar em prática, começar a usar."
+    },
+    {
+     "q": "\"Let me <strong>look into</strong> the two routes before we choose.\" To look into means to…",
+     "options": [
+      "drive them both",
+      "buy them",
+      "forget them",
+      "check them carefully"
+     ],
+     "answer": 3,
+     "why": "Look into = investigar, checar com cuidado."
+    },
+    {
+     "q": "\"Some drivers <strong>pushed back on</strong> the new plan.\" They…",
+     "options": [
+      "said no or disagreed",
+      "agreed at once",
+      "signed it fast",
+      "wrote it again"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, discordar da ideia."
+    },
+    {
+     "q": "\"We chose the plan, but we did not <strong>follow through</strong>.\" We…",
+     "options": [
+      "changed the truck",
+      "made it faster",
+      "did not finish it",
+      "paid too much"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    }
+   ]
+  }
+ ]
+}

@@ -21,9 +21,9 @@
     {
      "q": "Which words are the daily tools of a Czarnikow desk?",
      "options": [
+      "Coffee, water, tea and juice",
       "Car, bus, train and bike",
       "Table, chair, door and window",
-      "Coffee, water, tea and juice",
       "Laptop, phone, report, folder and pen"
      ],
      "answer": 3,
@@ -32,12 +32,12 @@
     {
      "q": "Which grammar do we use today?",
      "options": [
-      "was and were",
-      "can and could",
       "will and going to",
-      "have and has"
+      "have and has",
+      "was and were",
+      "can and could"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"Today we use have and has.\""
     },
     {
@@ -45,8 +45,8 @@
      "options": [
       "learn slowly and carefully",
       "study only one word",
-      "hurry and finish fast",
-      "skip the practice"
+      "skip the practice",
+      "hurry and finish fast"
      ],
      "answer": 0,
      "why": "Inferência: \"Take your time. Every sentence counts.\" — a ideia é ir com calma."
@@ -54,12 +54,12 @@
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "tools do not help your work",
       "every sentence is useful when you learn",
       "practice is not important",
-      "you must learn many words in one day"
+      "you must learn many words in one day",
+      "tools do not help your work"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"Every sentence counts\" e \"5 useful words\" mostram que ele valoriza cada frase e a prática."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "What does Sophie have on her desk?",
      "options": [
+      "A car and a bike",
       "A book and a cup",
       "A laptop, a phone and two folders",
-      "A car and a bike",
       "A printer and a table"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I have a laptop… I have a phone… I have two folders.\""
     },
     {
      "q": "Where is the report?",
      "options": [
       "In the laptop",
-      "In the red folder",
       "In the blue folder",
+      "In the red folder",
       "On the phone"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"I have a report in the blue folder.\""
     },
     {
      "q": "What does Tom have?",
      "options": [
-      "A black laptop and three pens",
-      "A phone and a printer",
+      "Two laptops and a pen",
       "A blue folder and a report",
-      "Two laptops and a pen"
+      "A black laptop and three pens",
+      "A phone and a printer"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"He has a black laptop. He has three pens on his desk.\""
     },
     {
      "q": "Why does Sophie check her laptop, phone, report and folder?",
      "options": [
-      "Because she is ready for the meeting",
-      "Because she wants to go home",
+      "Because Tom needs them",
       "Because she lost her phone",
-      "Because Tom needs them"
+      "Because she is ready for the meeting",
+      "Because she wants to go home"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: ela lista tudo antes do meeting das dez — está checando se está pronta."
     },
     {
      "q": "The words \"He is always ready\" about Tom suggest that…",
      "options": [
+      "Tom is usually well prepared for work",
       "Tom does not like his job",
       "Tom is never prepared",
-      "Tom has no tools",
-      "Tom is usually well prepared for work"
+      "Tom has no tools"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: \"always ready\" — Tom costuma estar preparado."
     }
    ]
@@ -141,51 +141,51 @@
      "options": [
       "o telefone",
       "o relatório",
-      "a pasta",
-      "a caneta"
+      "a caneta",
+      "a pasta"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Pen = caneta, usada para escrever."
     },
     {
      "q": "\"She reads the numbers in the <strong>report</strong>.\" A report is…",
      "options": [
-      "um telefone",
       "um relatório",
+      "uma caneta",
       "um laptop",
-      "uma caneta"
+      "um telefone"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Report = relatório, um documento com informação."
     },
     {
      "q": "Choose the correct word: \"I put all my papers in one ___.\"",
      "options": [
-      "phone",
-      "pen",
       "laptop",
-      "folder"
+      "folder",
+      "pen",
+      "phone"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Folder = pasta, onde guardamos papéis."
     },
     {
      "q": "Choose the correct word: \"I answer my emails on my ___.\"",
      "options": [
+      "laptop",
       "pen",
       "report",
-      "laptop",
       "folder"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Laptop = computador portátil, usado para email e trabalho."
     },
     {
      "q": "\"He calls a client on his <strong>phone</strong>.\" A phone is…",
      "options": [
-      "o relatório",
       "a pasta",
       "a caneta",
+      "o relatório",
       "o telefone"
      ],
      "answer": 3,
@@ -201,20 +201,20 @@
     {
      "q": "\"I am <strong>ready for</strong> the meeting.\" Ready for means…",
      "options": [
-      "cansado de",
       "com medo de",
       "preparado para",
+      "cansado de",
       "longe de"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Ready for = pronto/preparado para algo."
     },
     {
      "q": "\"Can you <strong>write down</strong> the number?\" To write down means to…",
      "options": [
+      "ligar",
       "ler em voz alta",
       "apagar",
-      "ligar",
       "anotar no papel"
      ],
      "answer": 3,
@@ -223,10 +223,10 @@
     {
      "q": "\"Please <strong>send over</strong> the report.\" To send over means to…",
      "options": [
+      "guardar",
       "cancelar",
-      "imprimir",
       "enviar para alguém",
-      "guardar"
+      "imprimir"
      ],
      "answer": 2,
      "why": "Send over = mandar/enviar algo para alguém."
@@ -234,23 +234,23 @@
     {
      "q": "\"Let's <strong>go through</strong> the numbers together.\" To go through means to…",
      "options": [
-      "esquecer",
-      "comprar",
       "esconder",
-      "revisar / passar por"
+      "revisar / passar por",
+      "esquecer",
+      "comprar"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Go through = revisar, passar por item a item."
     },
     {
      "q": "\"I need to <strong>pick up</strong> my phone from the desk.\" To pick up means to…",
      "options": [
       "vender",
+      "pegar",
       "quebrar",
-      "limpar",
-      "pegar"
+      "limpar"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Pick up = pegar/apanhar um objeto."
     }
    ]

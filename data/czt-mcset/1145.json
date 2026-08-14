@@ -10,23 +10,23 @@
     {
      "q": "How many tax words does the text teach today?",
      "options": [
-      "Five",
-      "Three",
       "Four",
-      "Ten"
+      "Three",
+      "Ten",
+      "Five"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Today we learn five useful words about income tax.\""
     },
     {
      "q": "What does a deduction do to the tax?",
      "options": [
-      "It makes the tax bigger",
       "It makes the tax smaller",
       "It stops the tax",
-      "It hides the tax"
+      "It hides the tax",
+      "It makes the tax bigger"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"a deduction makes the tax smaller.\""
     },
     {
@@ -43,12 +43,12 @@
     {
      "q": "The text suggests that taxes are easier when you…",
      "options": [
+      "know the words",
       "have a big salary",
-      "send many forms",
       "work very fast",
-      "know the words"
+      "send many forms"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: \"When you know the words, taxes are easier.\" O texto liga saber as palavras a facilidade."
     },
     {
@@ -78,9 +78,9 @@
      "q": "What does the company have on the form, according to Sophie?",
      "options": [
       "Your address",
-      "Your refund",
+      "Your holidays",
       "Your income",
-      "Your holidays"
+      "Your refund"
      ],
      "answer": 2,
      "why": "\"the company has your income on this form.\""
@@ -88,42 +88,42 @@
     {
      "q": "How often do they send the tax return?",
      "options": [
-      "Every week",
       "Every day",
-      "Once a year",
-      "Every month"
+      "Every month",
+      "Every week",
+      "Once a year"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"this line is the tax return. We send it once a year.\""
     },
     {
      "q": "Why does Sophie say the deduction is good for you?",
      "options": [
+      "It is faster to send",
       "It gives you a new salary",
-      "It makes the tax smaller",
       "It stops the form",
-      "It is faster to send"
+      "It makes the tax smaller"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"A deduction is good for you, because it makes the tax smaller.\""
     },
     {
      "q": "Why does Sophie check every deduction slowly, one by one?",
      "options": [
-      "Because the colleague is late",
-      "Because there are too many forms",
       "Because she wants them to be correct and calm",
-      "Because the computer is slow"
+      "Because there are too many forms",
+      "Because the computer is slow",
+      "Because the colleague is late"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: \"we check every deduction, slowly, one by one. We never rush.\" — a ideia é cuidado e calma."
     },
     {
      "q": "How does Sophie feel about the colleague learning taxes?",
      "options": [
       "Angry and impatient",
-      "Nervous and unsure",
       "Bored and tired",
+      "Nervous and unsure",
       "Patient and encouraging"
      ],
      "answer": 3,
@@ -139,56 +139,56 @@
     {
      "q": "\"My <strong>salary</strong> comes on the fifth of every month.\" A salary is…",
      "options": [
-      "a company holiday",
-      "the money you get for your work",
+      "money you get back",
       "a tax form",
-      "money you get back"
+      "the money you get for your work",
+      "a company holiday"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Salary = salário, o dinheiro pago pelo seu trabalho."
     },
     {
      "q": "Choose the correct word: \"We send the ___ to the government once a year.\"",
      "options": [
-      "meeting",
       "salary",
-      "coffee",
-      "tax return"
+      "meeting",
+      "tax return",
+      "coffee"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Tax return = declaração de imposto, o formulário enviado ao governo."
     },
     {
      "q": "\"Each <strong>deduction</strong> makes the final tax smaller.\" A deduction is…",
      "options": [
       "a new salary",
-      "an amount taken off the tax",
       "a big meeting",
+      "an amount taken off the tax",
       "a company car"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Deduction = dedução, um valor descontado do imposto."
     },
     {
      "q": "Choose the correct word: \"The company has a lot of ___ this year, so it pays more tax.\"",
      "options": [
-      "refund",
+      "coffee",
       "holiday",
-      "income",
-      "coffee"
+      "refund",
+      "income"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Income = renda, o dinheiro que a empresa recebe."
     },
     {
      "q": "\"I paid too much, so I get a <strong>refund</strong>.\" A refund is…",
      "options": [
+      "money that comes back to you",
       "a longer deadline",
-      "a bigger tax",
       "a new form",
-      "money that comes back to you"
+      "a bigger tax"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Refund = restituição, o dinheiro que volta para você."
     }
    ]
@@ -213,44 +213,44 @@
      "q": "\"Let's <strong>fill in</strong> the form together.\" To fill in a form means to…",
      "options": [
       "hide the form",
-      "put the numbers in the blank spaces",
       "send the form",
-      "throw the form away"
+      "throw the form away",
+      "put the numbers in the blank spaces"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Fill in = preencher, colocar as informações nos espaços."
     },
     {
      "q": "\"Please <strong>check over</strong> the numbers before we send.\" To check over means to…",
      "options": [
-      "delete them",
-      "look at them carefully",
       "print them twice",
-      "add more taxes"
+      "add more taxes",
+      "look at them carefully",
+      "delete them"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Check over = revisar, olhar com cuidado."
     },
     {
      "q": "\"We are almost at the <strong>deadline</strong>.\" A deadline is…",
      "options": [
-      "a new salary",
-      "the last day to do something",
+      "a small deduction",
       "a tax refund",
-      "a small deduction"
+      "a new salary",
+      "the last day to do something"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Deadline = prazo final, o último dia para fazer algo."
     },
     {
      "q": "\"Don't worry, I will <strong>help you out</strong> with the tax return.\" To help someone out means to…",
      "options": [
-      "make it harder",
-      "leave them alone",
       "give them help",
-      "say goodbye"
+      "say goodbye",
+      "make it harder",
+      "leave them alone"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Help out = ajudar alguém com uma tarefa."
     }
    ]

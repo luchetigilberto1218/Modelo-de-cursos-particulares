@@ -10,31 +10,31 @@
     {
      "q": "According to the text, which rate matters when evaluating a new project or an additional hire?",
      "options": [
-      "The prior-year average rate",
-      "The statutory headline rate",
+      "The marginal rate",
       "The effective rate",
-      "The marginal rate"
+      "The statutory headline rate",
+      "The prior-year average rate"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"The marginal rate is the tax rate on the next pound… the one that matters when evaluating a new project… or an additional hire.\""
     },
     {
      "q": "Why does a project priced at the effective rate look \"healthier than it really is\"?",
      "options": [
-      "The effective rate double-counts the year's costs",
-      "The effective rate ignores revenue entirely",
       "The effective rate is usually lower than the marginal rate on the next pound of income",
-      "The effective rate is set by investors, not by policy"
+      "The effective rate is set by investors, not by policy",
+      "The effective rate double-counts the year's costs",
+      "The effective rate ignores revenue entirely"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: a decisão incremental é tributada à marginal (mais alta); usar a efetiva (média, menor) infla a atratividade do projeto."
     },
     {
      "q": "The author describes both mistakes as \"quiet and persistent.\" This most likely suggests that…",
      "options": [
-      "they cancel each other out in the end",
-      "they go unnoticed and keep distorting decisions over time",
       "they only affect investor communication",
+      "they go unnoticed and keep distorting decisions over time",
+      "they cancel each other out in the end",
       "they are easy to spot and quick to correct"
      ],
      "answer": 1,
@@ -43,23 +43,23 @@
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
+      "Asking which rate a question calls for is worth the effort.",
       "The effective rate is the right lens for benchmarking.",
       "Confusing the two rates leads to the wrong conclusion.",
-      "One rate can serve equally well for both budgeting and pricing the next hire.",
-      "Asking which rate a question calls for is worth the effort."
+      "One rate can serve equally well for both budgeting and pricing the next hire."
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: toda a tese é que cada pergunta exige a alíquota certa — uma única alíquota não serve para os dois usos."
     },
     {
      "q": "Why does the author concede that the discipline \"sounds pedantic\"?",
      "options": [
-      "To acknowledge the objection, then argue the payoff outweighs it",
       "To warn that it wastes time in meetings",
+      "To acknowledge the objection, then argue the payoff outweighs it",
       "To admit the distinction has no practical value",
       "To suggest only auditors should worry about it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: ele antecipa a crítica (\"pedante\") só para rebatê-la — evita milhares de libras de confusão."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "What mistake did the executive make in the deck?",
      "options": [
-      "He used last year's figures",
-      "He priced the project at the effective rate instead of the marginal rate",
       "He applied a foreign tax rate by mistake",
-      "He left the tax rate off the slide entirely"
+      "He left the tax rate off the slide entirely",
+      "He used last year's figures",
+      "He priced the project at the effective rate instead of the marginal rate"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"You priced the project at the effective rate… it made the return look better than it is.\""
     },
     {
      "q": "Why does Harry say the marginal rate is the right one for this decision?",
      "options": [
-      "Because the decision is incremental — the money at stake is the next pound of profit",
-      "Because the board prefers marginal figures",
       "Because the marginal rate is lower for the company",
-      "Because effective rates are illegal in board packs"
+      "Because the board prefers marginal figures",
+      "Because effective rates are illegal in board packs",
+      "Because the decision is incremental — the money at stake is the next pound of profit"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"The decision… was incremental… the next pound is taxed at the marginal rate.\""
     },
     {
      "q": "What does Harry mean when he says \"nobody downstream inherits a quiet mistake\"?",
      "options": [
       "The board never reads the appendix",
+      "The error would spread to later decisions if it went uncorrected",
       "The mistake would be caught by the auditors anyway",
-      "The junior staff would be blamed for it",
-      "The error would spread to later decisions if it went uncorrected"
+      "The junior staff would be blamed for it"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: uma vez no board pack, o erro \"silencioso\" contamina decisões de capital seguintes."
     },
     {
      "q": "How would you best describe Harry's attitude toward the executive?",
      "options": [
-      "Coaching and reassuring, while still correcting the substance",
-      "Indifferent to the outcome",
       "Impressed and uncritical",
-      "Openly annoyed and accusatory"
+      "Coaching and reassuring, while still correcting the substance",
+      "Openly annoyed and accusatory",
+      "Indifferent to the outcome"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"I'm not accusing anyone… it's an easy slip\" — ele corrige, mas protege e ensina."
     },
     {
      "q": "According to Harry, which rate belongs in the investor story and the budget?",
      "options": [
-      "The marginal rate",
-      "Whichever rate is higher that year",
       "The effective rate",
-      "A blended rate agreed with the board"
+      "The marginal rate",
+      "A blended rate agreed with the board",
+      "Whichever rate is higher that year"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Marginal for a go or no-go; effective for budgeting and the investor story.\""
     }
    ]
@@ -150,23 +150,23 @@
     {
      "q": "\"For the annual report, quote the <strong>effective rate</strong>.\" The effective rate is…",
      "options": [
+      "the top bracket alone",
       "the average rate borne across the entire year",
-      "the rate before any deductions",
       "the rate on the last unit of income",
-      "the top bracket alone"
+      "the rate before any deductions"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Effective rate = alíquota efetiva: a média do imposto sobre o ano todo."
     },
     {
      "q": "Choose the correct word: \"The error was small each quarter but ___ — it never went away.\"",
      "options": [
-      "persistent",
       "negligible",
+      "marginal",
       "provisional",
-      "marginal"
+      "persistent"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Persistent = persistente: continua ao longo do tempo, sem se corrigir."
     },
     {
@@ -174,8 +174,8 @@
      "options": [
       "benchmarking",
       "a price increase",
-      "an additional hire",
-      "the next pound"
+      "the next pound",
+      "an additional hire"
      ],
      "answer": 0,
      "why": "Benchmarking = comparação com referências de mercado ou concorrentes."
@@ -183,12 +183,12 @@
     {
      "q": "\"The distinction sounds <strong>pedantic</strong>, yet it saves real money.\" Pedantic here means…",
      "options": [
-      "deliberately vague",
-      "generous and flexible",
       "excessively concerned with tiny, formal details",
-      "poorly informed"
+      "deliberately vague",
+      "poorly informed",
+      "generous and flexible"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Pedantic = pedante: preso a minúcias formais — aqui, o autor admite a crítica só para rebatê-la."
     }
    ]
@@ -201,21 +201,21 @@
     {
      "q": "\"The board still has to <strong>sign off on</strong> the pricing assumptions.\" To sign off on means to…",
      "options": [
-      "quietly ignore",
       "formally approve",
+      "quietly ignore",
       "leak to investors",
       "postpone indefinitely"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"Using the effective rate here would <strong>flatter</strong> the return.\" To flatter the numbers means to…",
      "options": [
       "make them look better than they truly are",
+      "round them to the nearest thousand",
       "understate them on purpose",
-      "present them honestly",
-      "round them to the nearest thousand"
+      "present them honestly"
      ],
      "answer": 0,
      "why": "To flatter the numbers = fazê-los parecer melhores do que são — exatamente o risco da alíquota efetiva."
@@ -223,31 +223,31 @@
     {
      "q": "\"Two directors <strong>pushed back on</strong> the tax figure in the deck.\" They…",
      "options": [
-      "rewrote the whole model",
       "challenged or resisted it",
-      "approved it at once",
-      "forwarded it to the auditors"
+      "forwarded it to the auditors",
+      "rewrote the whole model",
+      "approved it at once"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Push back on = resistir, contestar sem necessariamente rejeitar de vez."
     },
     {
      "q": "\"That correction won't <strong>move the needle</strong> on the headline return.\" This means it will…",
      "options": [
       "delay the board meeting",
-      "make no noticeable difference",
+      "double the tax bill",
       "trigger an audit",
-      "double the tax bill"
+      "make no noticeable difference"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Move the needle = mexer o ponteiro, produzir diferença perceptível."
     },
     {
      "q": "\"Let's not <strong>gloss over</strong> which rate the decision actually calls for.\" To gloss over means to…",
      "options": [
       "escalate it to the CFO",
-      "put it to a vote",
       "explain it in full detail",
+      "put it to a vote",
       "treat something briefly to hide its importance"
      ],
      "answer": 3,

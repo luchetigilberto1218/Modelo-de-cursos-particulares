@@ -8,31 +8,31 @@
     {
      "q": "What is the most common fraud problem?",
      "options": [
+      "A rate moves",
       "A ship sinks",
       "A seller ships to a buyer who never existed or never planned to pay",
-      "A duty is too high",
-      "A rate moves"
+      "A duty is too high"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"a seller ships goods to a buyer who never really existed, or who never planned to pay.\""
     },
     {
      "q": "When should you do due diligence?",
      "options": [
-      "Never",
       "After shipping",
-      "Before you do business with a new partner",
-      "Only if there is a problem"
+      "Only if there is a problem",
+      "Never",
+      "Before you do business with a new partner"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Before you do business with a new partner, you should check who they are.\""
     },
     {
      "q": "Which is one of the checks the text suggests?",
      "options": [
       "Ship first",
-      "Pay the buyer",
       "Ignore the company",
+      "Pay the buyer",
       "Look up the company and ask for references"
      ],
      "answer": 3,
@@ -42,20 +42,20 @@
      "q": "According to the text, what do a few quiet questions at the start do?",
      "options": [
       "Slow the ship",
-      "Cost a lot of money",
       "Save a lot of pain at the end",
-      "Waste time"
+      "Waste time",
+      "Cost a lot of money"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"A few quiet questions at the start save a lot of pain at the end.\""
     },
     {
      "q": "Why is due diligence worth doing?",
      "options": [
-      "Because it is fun",
       "Because the bank requires it",
+      "Because it is free",
       "Because it filters out fake or non-paying buyers before you lose money",
-      "Because it is free"
+      "Because it is fun"
      ],
      "answer": 2,
      "why": "Inferência: checar antes evita enviar mercadoria para quem não existe ou não pagará."
@@ -72,12 +72,12 @@
     {
      "q": "How many basic checks does the team always run?",
      "options": [
-      "Three",
       "Five",
-      "One",
-      "Two"
+      "Three",
+      "Two",
+      "One"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"we always run three basic checks.\""
     },
     {
@@ -94,34 +94,34 @@
     {
      "q": "What does the team do with references?",
      "options": [
+      "Pay them",
       "Ignore them",
-      "Ask for two or three and actually call them",
       "Ship to them",
-      "Pay them"
+      "Ask for two or three and actually call them"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"We ask for references… Then we actually call those references.\""
     },
     {
      "q": "What is the online search looking for?",
      "options": [
-      "The ship's location",
-      "Good prices",
+      "The exchange rate",
       "Bad news — court cases, fraud stories, angry customers",
-      "The exchange rate"
+      "Good prices",
+      "The ship's location"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"We're checking for bad news — court cases, fraud stories, angry customers.\""
     },
     {
      "q": "What does the team do even if the checks are fine?",
      "options": [
-      "Skip the deal",
-      "Ship everything at once",
       "Start small — a smaller first order, payment secured",
-      "Pay in advance"
+      "Ship everything at once",
+      "Pay in advance",
+      "Skip the deal"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"we still start small — a smaller first order, payment secured.\""
     }
    ]
@@ -132,21 +132,21 @@
     {
      "q": "**Fraud** is…",
      "options": [
-      "deceiving someone to get money dishonestly",
-      "a currency",
       "a shipping cost",
-      "an honest mistake"
+      "an honest mistake",
+      "a currency",
+      "deceiving someone to get money dishonestly"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Fraud = fraude."
     },
     {
      "q": "**Due diligence** is…",
      "options": [
-      "a ship",
+      "a duty",
       "a payment",
       "the checks you do before trusting a new partner",
-      "a duty"
+      "a ship"
      ],
      "answer": 2,
      "why": "Due diligence = diligência prévia."
@@ -154,34 +154,34 @@
     {
      "q": "Choose the correct word: \"Ask for a **___** — another company who has worked with them.\"",
      "options": [
-      "border",
       "reference",
       "freight",
-      "duty"
+      "duty",
+      "border"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Reference = referência."
     },
     {
      "q": "A **red flag** is…",
      "options": [
-      "a discount",
-      "a good sign",
       "a warning sign",
-      "a payment"
+      "a payment",
+      "a discount",
+      "a good sign"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Red flag = sinal de alerta."
     },
     {
      "q": "Choose the correct word: \"We **___** the company before we trust them.\"",
      "options": [
-      "ship",
       "import",
       "verify",
+      "ship",
       "pay"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Verify = verificar."
     }
    ]
@@ -192,54 +192,54 @@
     {
      "q": "\"Let's **look up** the company.\" To look something up means to…",
      "options": [
-      "search for information about it",
-      "ship it",
+      "ignore it",
       "pay it",
-      "ignore it"
+      "ship it",
+      "search for information about it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Look up = pesquisar, consultar."
     },
     {
      "q": "\"If it looks strange, we **slow down**.\" To slow down means to…",
      "options": [
-      "rush",
       "take more time and care",
       "cancel",
-      "ship faster"
+      "ship faster",
+      "rush"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Slow down = ir com mais calma."
     },
     {
      "q": "\"Careful checks **save us from** most fraud.\" To save someone from something means to…",
      "options": [
-      "ship it",
       "cause it",
-      "protect them from it",
-      "ignore it"
+      "ignore it",
+      "ship it",
+      "protect them from it"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Save from = proteger de."
     },
     {
      "q": "\"Something **looks off** about this order.\" To look off means to…",
      "options": [
-      "seem wrong or suspicious",
       "look normal",
       "look fast",
+      "seem wrong or suspicious",
       "look cheap"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Look off = parecer estranho."
     },
     {
      "q": "\"If all checks are fine, we **go ahead**.\" To go ahead means to…",
      "options": [
-      "cancel",
+      "stop",
       "proceed",
-      "wait forever",
-      "stop"
+      "cancel",
+      "wait forever"
      ],
      "answer": 1,
      "why": "Go ahead = seguir em frente."

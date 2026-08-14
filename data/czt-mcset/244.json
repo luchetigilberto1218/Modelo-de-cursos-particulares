@@ -1,0 +1,259 @@
+{
+ "num": 244,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Not all supply chains work the same way. Some are \"push\". The company makes products from a forecast and pushes them to the market. Others are \"pull\". The company waits for the order and then starts to produce.<br><br>In make-to-stock, products sit on the shelf, ready to sell. In make-to-order, nothing is made until the customer asks. Push is faster for the buyer. Pull is cheaper for the seller.<br><br>Different models fit different products. Choosing the wrong one is expensive.",
+   "items": [
+    {
+     "q": "In a push supply chain, when does the company make the products?",
+     "options": [
+      "Only on the shelf",
+      "Only after the customer asks",
+      "Never",
+      "Before the order, from a forecast"
+     ],
+     "answer": 3,
+     "why": "\"The company makes products from a forecast and pushes them to the market.\" Push = produzir antes do pedido."
+    },
+    {
+     "q": "What does make-to-order mean?",
+     "options": [
+      "Products sit on the shelf",
+      "The product is always cheap",
+      "Nothing is made until the customer asks",
+      "The company always uses a forecast"
+     ],
+     "answer": 2,
+     "why": "\"In make-to-order, nothing is made until the customer asks.\""
+    },
+    {
+     "q": "The text says push is faster for the buyer. Pull is…",
+     "options": [
+      "faster for the buyer",
+      "only for coffee",
+      "always wrong",
+      "cheaper for the seller"
+     ],
+     "answer": 3,
+     "why": "\"Push is faster for the buyer. Pull is cheaper for the seller.\""
+    },
+    {
+     "q": "The text says \"choosing the wrong one is expensive.\" This suggests that…",
+     "options": [
+      "the model you choose matters a lot",
+      "all models cost the same",
+      "the model you choose does not matter",
+      "you should never use push"
+     ],
+     "answer": 0,
+     "why": "Inferência: se a escolha errada é cara, então a escolha certa importa muito."
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "Pull can save money.",
+      "Push is faster for the buyer.",
+      "Different products need different models.",
+      "One model is best for every product."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz \"different models fit different products\", ou seja, não existe um único modelo para tudo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry falando com um colega. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi. Good question. Let me explain why we use two different models here.<br><br>For our normal coffee beans, we use make-to-stock. People buy them every day, so we make them from a forecast and keep them on the shelf. When an order comes in, the beans are ready. It is fast for the customer. That is very important for a product people want now.<br><br>But for a custom blend, it is different. A custom blend is special. One client wants one taste, and another client wants a different taste. So we use make-to-order. We wait for the order, and then we produce. Nothing sits on the shelf.<br><br>Why not make custom blends for stock too? Because it is risky. We do not know which blend the client will ask for. If we guess wrong, the coffee sits there and we lose money.<br><br>So the rule is simple. Fast and popular products go make-to-stock. Special products go make-to-order. Same company, two models. Each one fits a different need.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Which model does Harry use for normal coffee beans?",
+     "options": [
+      "A custom blend",
+      "Make-to-stock",
+      "Make-to-order",
+      "No model"
+     ],
+     "answer": 1,
+     "why": "\"For our normal coffee beans, we use make-to-stock.\""
+    },
+    {
+     "q": "Why does Harry use make-to-order for custom blends?",
+     "options": [
+      "Because every client wants a different taste",
+      "Because they are cheap",
+      "Because nobody buys them",
+      "Because they are always on the shelf"
+     ],
+     "answer": 0,
+     "why": "\"One client wants one taste, and another client wants a different taste. So we use make-to-order.\""
+    },
+    {
+     "q": "What happens with make-to-stock when an order comes in?",
+     "options": [
+      "The client waits a long time",
+      "The company starts to produce",
+      "The beans are ready",
+      "Nothing is on the shelf"
+     ],
+     "answer": 2,
+     "why": "\"When an order comes in, the beans are ready. It is fast for the customer.\""
+    },
+    {
+     "q": "Harry says making custom blends for stock is risky. This suggests that…",
+     "options": [
+      "the company never sells coffee",
+      "make-to-stock is best for every product",
+      "the company could lose money if it guesses the wrong blend",
+      "custom blends are always popular"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"If we guess wrong, the coffee sits there and we lose money.\" O risco é financeiro."
+    },
+    {
+     "q": "What is Harry's main point?",
+     "options": [
+      "Different products need different models",
+      "One model is best for everything",
+      "Make-to-order is always cheaper",
+      "The company only sells coffee beans"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"Same company, two models. Each one fits a different need.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We make products from a <strong>forecast</strong>.\" A forecast is…",
+     "options": [
+      "a real order",
+      "a shelf in the shop",
+      "a guess about future demand",
+      "a type of coffee"
+     ],
+     "answer": 2,
+     "why": "Forecast = previsão: uma estimativa da demanda futura."
+    },
+    {
+     "q": "Choose the correct word: \"In make-to-stock, the products sit on the ___, ready to sell.\"",
+     "options": [
+      "shelf",
+      "forecast",
+      "market",
+      "order"
+     ],
+     "answer": 0,
+     "why": "Shelf = prateleira. \"Products sit on the shelf, ready to sell.\""
+    },
+    {
+     "q": "\"Push is faster, but it can be <strong>expensive</strong>.\" Expensive means…",
+     "options": [
+      "costs a lot of money",
+      "easy",
+      "cheap",
+      "very fast"
+     ],
+     "answer": 0,
+     "why": "Expensive = caro, custa muito dinheiro."
+    },
+    {
+     "q": "Choose the correct word: \"Different models ___ different products.\"",
+     "options": [
+      "sell",
+      "ask",
+      "push",
+      "fit"
+     ],
+     "answer": 3,
+     "why": "To fit = adequar-se. \"Different models fit different products.\""
+    },
+    {
+     "q": "\"In a pull system, we wait for the order and then <strong>produce</strong>.\" To produce means to…",
+     "options": [
+      "wait",
+      "sell",
+      "buy",
+      "make"
+     ],
+     "answer": 3,
+     "why": "To produce = produzir, fazer o produto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de supply chain. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new plan.\" To sign off on means to…",
+     "options": [
+      "read quickly",
+      "forget",
+      "cancel",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> make-to-order to all clients next month.\" To roll out means to…",
+     "options": [
+      "stop it",
+      "keep it a secret",
+      "start using it step by step",
+      "sell it fast"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar aos poucos, colocar em prática."
+    },
+    {
+     "q": "\"The team <strong>pushed back on</strong> the forecast.\" They…",
+     "options": [
+      "made more coffee",
+      "resisted or disagreed",
+      "wrote it again",
+      "agreed at once"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, discordar de uma ideia."
+    },
+    {
+     "q": "\"We agreed the plan but did not <strong>follow through</strong>.\" This means we…",
+     "options": [
+      "sold everything",
+      "finished it well",
+      "changed the coffee",
+      "did not finish what we agreed"
+     ],
+     "answer": 3,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Right now we are <strong>running low on</strong> beans.\" This means we…",
+     "options": [
+      "sell no beans",
+      "have too many beans",
+      "have almost no beans left",
+      "make new beans"
+     ],
+     "answer": 2,
+     "why": "Running low on = estar acabando, ter pouco de algo."
+    }
+   ]
+  }
+ ]
+}

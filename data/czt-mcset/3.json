@@ -1,0 +1,259 @@
+{
+ "num": 3,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "HR uses numbers to understand people at work. These numbers are called metrics. For example, how many people work in the company? How many new people start every month? How many people leave? These are all HR metrics.<br><br>A KPI is a key performance indicator. It is a number that is very important for the team. When the KPI is good, the team is doing well.<br><br>Numbers help HR tell the story of the people. A good report shows the results in a clear way, so the team can see what is good and what to improve.",
+   "items": [
+    {
+     "q": "What are HR numbers called?",
+     "options": [
+      "Stories",
+      "Teams",
+      "Reports",
+      "Metrics"
+     ],
+     "answer": 3,
+     "why": "\"These numbers are called metrics.\""
+    },
+    {
+     "q": "What does KPI mean?",
+     "options": [
+      "Key project index",
+      "Key performance indicator",
+      "Kind personal idea",
+      "Key people information"
+     ],
+     "answer": 1,
+     "why": "\"A KPI is a key performance indicator.\""
+    },
+    {
+     "q": "When the KPI is good, the team is…",
+     "options": [
+      "counting people",
+      "doing well",
+      "starting a report",
+      "leaving the company"
+     ],
+     "answer": 1,
+     "why": "\"When the KPI is good, the team is doing well.\""
+    },
+    {
+     "q": "The text suggests that numbers are useful because they…",
+     "options": [
+      "replace the team",
+      "are difficult to read",
+      "help HR understand and tell the story of the people",
+      "make the report longer"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz que os números ajudam a entender e a contar a história das pessoas."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "one metric is enough for everything",
+      "HR should not use numbers",
+      "a clear report helps the team improve",
+      "numbers are not important in HR"
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto valoriza relatórios claros para mostrar resultados e melhorar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentar o relatório mensal de RH para a equipe. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, everyone. Thank you for coming. Today I want to show you the monthly HR report. There are only a few numbers, but they are important.<br><br>First, our headcount. There are two hundred people in the company now. Last month there were one hundred and ninety-five, so we have five new people. That is good news.<br><br>Now, turnover. Turnover is the percentage of people who leave. This month it is four percent. Last month it was six percent, so it is lower. When turnover goes down, we are happy.<br><br>Our main KPI is very simple: we want people to stay and to be happy at work. This number is better than last month. There is still work to do, but the team is doing well.<br><br>Please look at the report and tell me your questions. Remember, these numbers are not just numbers. They are people. Thank you.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Harry showing the team?",
+     "options": [
+      "The lunch menu",
+      "A new office",
+      "A holiday plan",
+      "The monthly HR report"
+     ],
+     "answer": 3,
+     "why": "\"Today I want to show you the monthly HR report.\""
+    },
+    {
+     "q": "How many people are in the company now?",
+     "options": [
+      "Six",
+      "Five",
+      "One hundred and ninety-five",
+      "Two hundred"
+     ],
+     "answer": 3,
+     "why": "\"There are two hundred people in the company now.\""
+    },
+    {
+     "q": "What happened to turnover this month?",
+     "options": [
+      "It went down to four percent",
+      "It went up to six percent",
+      "There is no turnover",
+      "It stayed the same"
+     ],
+     "answer": 0,
+     "why": "\"This month it is four percent. Last month it was six percent, so it is lower.\""
+    },
+    {
+     "q": "Harry says the numbers \"are people.\" This suggests he wants the team to…",
+     "options": [
+      "ignore the report",
+      "hire more people quickly",
+      "remember the numbers are about real employees",
+      "count the numbers again"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele lembra que cada número representa uma pessoa de verdade."
+    },
+    {
+     "q": "How would you best describe Harry's message?",
+     "options": [
+      "Bored and tired",
+      "Worried and negative",
+      "Angry with the team",
+      "Positive, but there is still work to do"
+     ],
+     "answer": 3,
+     "why": "Inferência: os números melhoraram (\"the team is doing well\"), mas ele diz \"there is still work to do\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Our <strong>headcount</strong> is two hundred people.\" Headcount means…",
+     "options": [
+      "the office size",
+      "the number of meetings",
+      "the number of employees",
+      "the salary total"
+     ],
+     "answer": 2,
+     "why": "Headcount = número de funcionários."
+    },
+    {
+     "q": "\"<strong>Turnover</strong> is low this year.\" Turnover is…",
+     "options": [
+      "the number of new offices",
+      "the money the company earns",
+      "the time of the meeting",
+      "the percentage of people who leave"
+     ],
+     "answer": 3,
+     "why": "Turnover = rotatividade, a porcentagem de pessoas que saem."
+    },
+    {
+     "q": "Choose the correct word: \"We use a ___ to compare two results, like 4% and 6%.\"",
+     "options": [
+      "headcount",
+      "team",
+      "report",
+      "percentage"
+     ],
+     "answer": 3,
+     "why": "Percentage = porcentagem, usada para comparar resultados."
+    },
+    {
+     "q": "Choose the correct word: \"HR wants to ___ the results, so it is better next month.\"",
+     "options": [
+      "improve",
+      "print",
+      "count",
+      "leave"
+     ],
+     "answer": 0,
+     "why": "To improve = melhorar."
+    },
+    {
+     "q": "\"We <strong>measure</strong> the numbers every month.\" To measure means to…",
+     "options": [
+      "check the size or the value of something",
+      "forget",
+      "cancel",
+      "hire"
+     ],
+     "answer": 0,
+     "why": "To measure = medir, verificar o valor de algo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem em reuniões sobre relatórios e números. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Turnover <strong>went up</strong> this month.\" This means it…",
+     "options": [
+      "stopped",
+      "stayed the same",
+      "became higher",
+      "became lower"
+     ],
+     "answer": 2,
+     "why": "Go up = subir, ficar mais alto."
+    },
+    {
+     "q": "\"Good news — the numbers <strong>went down</strong>.\" This means they…",
+     "options": [
+      "became lower",
+      "disappeared",
+      "were wrong",
+      "became higher"
+     ],
+     "answer": 0,
+     "why": "Go down = descer, ficar mais baixo."
+    },
+    {
+     "q": "\"We need to <strong>keep track of</strong> the headcount every month.\" This means to…",
+     "options": [
+      "follow and check it regularly",
+      "forget it",
+      "hide it",
+      "delete it"
+     ],
+     "answer": 0,
+     "why": "Keep track of = acompanhar, controlar ao longo do tempo."
+    },
+    {
+     "q": "\"Harry will <strong>point out</strong> the main KPI in the report.\" This means he will…",
+     "options": [
+      "show or mention it",
+      "print it",
+      "change it",
+      "remove it"
+     ],
+     "answer": 0,
+     "why": "Point out = apontar, destacar algo."
+    },
+    {
+     "q": "\"Let's <strong>work out</strong> the percentage together.\" This means to…",
+     "options": [
+      "cancel the meeting",
+      "exercise at the gym",
+      "write a report",
+      "calculate or find the answer"
+     ],
+     "answer": 3,
+     "why": "Work out = calcular, chegar ao resultado."
+    }
+   ]
+  }
+ ]
+}

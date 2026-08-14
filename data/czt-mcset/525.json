@@ -1,0 +1,259 @@
+{
+ "num": 525,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At the very top, cloud strategy is no longer about which provider to use. It is about what kind of company the cloud lets you become. The big choices — single cloud, multi-cloud, hybrid with on-premise — each shape the company differently. Each has its own cost profile, its own dependency, its own freedom and its own ceiling.<br><br>Had we committed to one provider three years ago without thinking about lock-in, we would now be negotiating from a weaker position than we actually are. The fact that we deliberately kept a second provider alive — small, but genuinely alive — is the reason we have leverage today.<br><br>Senior cloud strategy has one deep question underneath the technical ones: how much of our destiny do we want to hand to a single external company, and how much are we willing to pay to keep more of it in our own hands? The answer is rarely 'as much as possible' in either direction. It is almost always a careful, deliberate balance — and that balance is a strategic conversation, not a procurement one.",
+   "items": [
+    {
+     "q": "According to the text, what is cloud strategy at the very top really about?",
+     "options": [
+      "Which provider is cheapest to use",
+      "Which procurement team should own the contract",
+      "How many servers to keep on-premise",
+      "What kind of company the cloud lets you become"
+     ],
+     "answer": 3,
+     "why": "\"It is about what kind of company the cloud lets you become\" — a escolha é estratégica, não técnica."
+    },
+    {
+     "q": "Why does the company have leverage in today's negotiation?",
+     "options": [
+      "It moved everything back on-premise",
+      "It standardised on a single provider early",
+      "It deliberately kept a second provider genuinely alive",
+      "It renegotiates the contract every year"
+     ],
+     "answer": 2,
+     "why": "\"The fact that we deliberately kept a second provider alive… is the reason we have leverage today.\""
+    },
+    {
+     "q": "What does each structural cloud choice have, according to the first paragraph?",
+     "options": [
+      "A guaranteed path to lower spending",
+      "No lasting consequences",
+      "Its own cost profile, dependency, freedom and ceiling",
+      "The same cost and the same risk"
+     ],
+     "answer": 2,
+     "why": "\"Each has its own cost profile, its own dependency, its own freedom and its own ceiling.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Lock-in is a strategic risk, not just a technical detail.",
+      "Optionality can be worth paying for.",
+      "Choosing a cloud model reshapes the company itself.",
+      "Consolidating on a single provider is always the smart, cheapest move."
+     ],
+     "answer": 3,
+     "why": "Inferência: todo o texto defende manter opção aberta; 'padronizar sempre' contraria a tese de leverage."
+    },
+    {
+     "q": "The sentence beginning \"Had we committed to one provider three years ago…\" suggests that…",
+     "options": [
+      "the provider was never a real risk",
+      "the company is regretting keeping a second provider",
+      "the negotiation has already failed",
+      "the past decision to preserve optionality is paying off now"
+     ],
+     "answer": 3,
+     "why": "Inferência: o condicional passado contrafactual mostra que a escolha de manter optionality evitou a posição mais fraca de hoje."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry na sala de renegociação com o fornecedor de nuvem. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thanks for making the time. Before we get into pricing, I want to be honest about where we're sitting, because it changes the tone of this conversation.<br><br>Three years ago, everyone in my own team was pushing me to standardise entirely on your platform. It would have been cheaper on paper and cleaner to run. And I held the line — we kept a second provider small but genuinely alive. Had I given in back then, I'd be walking in today with almost nothing to trade. I'd be a captive account, and we'd both know it.<br><br>So let me be direct. We are not here to threaten anyone. We like your service, and moving would be painful and expensive — I won't pretend otherwise. But 'painful' is a very different word from 'impossible', and that difference is exactly what we've spent three years protecting.<br><br>What I'm looking for is a partnership that reflects that reality: better commitment terms from us, in exchange for pricing and portability guarantees from you. If we can land that, you keep the vast majority of our workload for years.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does Harry mention keeping a second provider alive?",
+     "options": [
+      "To justify raising the company's cloud budget",
+      "To announce he is leaving the provider immediately",
+      "To explain why he now has something to trade in the negotiation",
+      "To apologise for a mistake his team warned him about"
+     ],
+     "answer": 2,
+     "why": "\"Had I given in back then, I'd be walking into this room today with almost nothing to trade.\""
+    },
+    {
+     "q": "What was Harry's own team pushing him to do three years ago?",
+     "options": [
+      "Cancel the contract altogether",
+      "Move everything back on-premise",
+      "Split the workload across four providers",
+      "Standardise entirely on the provider's platform"
+     ],
+     "answer": 3,
+     "why": "\"everyone in my own team was pushing me to standardise entirely on your platform.\""
+    },
+    {
+     "q": "How does Harry describe the option of moving away from this provider?",
+     "options": [
+      "Cheap and simple",
+      "Impossible in practice",
+      "Already decided and under way",
+      "Painful and expensive, but not impossible"
+     ],
+     "answer": 3,
+     "why": "\"'painful' is a very different word from 'impossible'\" — doloroso, mas viável."
+    },
+    {
+     "q": "What does Harry mean when he says he would have been \"a captive account\"?",
+     "options": [
+      "He would have paid nothing for the service",
+      "He would have owned the provider's technology",
+      "He would have been locked in with no real alternative",
+      "He would have had strong negotiating power"
+     ],
+     "answer": 2,
+     "why": "Inferência: captive account = aprisionado ao fornecedor, sem alternativa — o oposto de ter leverage."
+    },
+    {
+     "q": "Which best describes Harry's overall stance in the meeting?",
+     "options": [
+      "Aggressive and threatening to walk out",
+      "Cooperative but negotiating from genuine strength",
+      "Uncertain and hoping for goodwill",
+      "Indifferent to the outcome"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele elogia o serviço e quer parceria, mas deixa claro que tem alternativa real — força sem hostilidade."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"By keeping two providers, we avoided <strong>lock-in</strong> and preserved room to manoeuvre.\" Lock-in means…",
+     "options": [
+      "an internal security policy",
+      "a scheduled maintenance window",
+      "a discount for long contracts",
+      "being trapped with one supplier with no easy exit"
+     ],
+     "answer": 3,
+     "why": "Lock-in = aprisionamento: ficar preso a um fornecedor sem saída barata."
+    },
+    {
+     "q": "Choose the correct word: \"The second provider is small, but it is exactly what gives us ___ at the table.\"",
+     "options": [
+      "downtime",
+      "leverage",
+      "procurement",
+      "dependency"
+     ],
+     "answer": 1,
+     "why": "Leverage = alavancagem, poder de barganha na negociação."
+    },
+    {
+     "q": "\"Every model has its own <strong>cost profile</strong>.\" A cost profile is…",
+     "options": [
+      "the provider's list of clients",
+      "the shape of how and where the costs fall over time",
+      "the name of the finance director",
+      "a single fixed monthly fee"
+     ],
+     "answer": 1,
+     "why": "Cost profile = perfil de custo: como os custos se distribuem e evoluem."
+    },
+    {
+     "q": "Choose the correct word: \"A ___ setup keeps some workloads on-premise and moves the rest to the cloud.\"",
+     "options": [
+      "single-cloud",
+      "captive",
+      "hybrid",
+      "legacy"
+     ],
+     "answer": 2,
+     "why": "Hybrid = híbrido: mistura on-premise e nuvem."
+    },
+    {
+     "q": "\"This is a strategic conversation, not a <strong>procurement</strong> one.\" Procurement refers to…",
+     "options": [
+      "the legal compliance department",
+      "the buying and sourcing of goods and services",
+      "the long-term direction of the company",
+      "the technical architecture team"
+     ],
+     "answer": 1,
+     "why": "Procurement = compras/aquisição — o processo de contratar fornecedores, distinto da estratégia."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em negociações com fornecedores. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the new cloud contract.\" To sign off on means to…",
+     "options": [
+      "publicly criticise",
+      "informally comment on",
+      "quietly cancel",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"If negotiations stall, we can always <strong>fall back on</strong> the second provider.\" To fall back on means to…",
+     "options": [
+      "cancel entirely",
+      "criticise openly",
+      "postpone indefinitely",
+      "resort to as an alternative"
+     ],
+     "answer": 3,
+     "why": "Fall back on = recorrer a algo como plano B, alternativa de segurança."
+    },
+    {
+     "q": "\"Several architects <strong>pushed back on</strong> keeping a second vendor.\" They…",
+     "options": [
+      "rewrote the whole plan",
+      "ignored the proposal",
+      "resisted or objected to it",
+      "approved it at once"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"We agreed to standardise, but nobody <strong>followed through</strong> on the migration.\" They…",
+     "options": [
+      "documented it thoroughly",
+      "carried it to completion",
+      "failed to carry it to completion",
+      "delegated it successfully"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado — aqui, não levaram."
+    },
+    {
+     "q": "\"A tiny discount like that won't <strong>move the needle</strong> on our total cloud spend.\" This means it will…",
+     "options": [
+      "not make a noticeable difference",
+      "cost far more than expected",
+      "take years to negotiate",
+      "trigger strong resistance"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

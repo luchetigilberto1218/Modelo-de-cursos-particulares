@@ -1,0 +1,259 @@
+{
+ "num": 291,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Advanced demand forecasting, at the executive level, is the discipline of combining machine-generated forecasts with deep business judgement. The machine is better than a human at seasonality, recent trend and pattern detection across thousands of SKUs. The human is better at understanding that a big customer is quietly struggling, that a promotion in a sister brand will cannibalise this one, or that a new regulation will change the category next quarter.<br><br>The best planning teams treat the machine forecast as the starting point, not the answer. They then layer on the business context that the algorithm cannot see — honestly, not defensively — and produce a final number that reflects both.<br><br>If the team had relied only on the machine, they would have missed the context. If they had ignored the machine and trusted only their gut, they would have been slower and less accurate on the routine. The real craft is the integration: letting the algorithm do what it does best, and reserving human attention for the small number of situations where it matters most.",
+   "items": [
+    {
+     "q": "According to the text, what is the machine better at than a human?",
+     "options": [
+      "Anticipating a new regulation next quarter",
+      "Sensing that a big customer is quietly struggling",
+      "Judging the impact of a sister-brand promotion",
+      "Seasonality, recent trend and pattern detection across many SKUs"
+     ],
+     "answer": 3,
+     "why": "\"The machine is better… at seasonality, recent trend, and pattern detection across thousands of SKUs.\" O resto é força do humano."
+    },
+    {
+     "q": "How should the best teams treat the machine forecast?",
+     "options": [
+      "As the final answer",
+      "As the starting point, not the answer",
+      "As a backup used only when judgement fails",
+      "As a benchmark to be ignored in practice"
+     ],
+     "answer": 1,
+     "why": "\"treat the machine forecast as the starting point, not the answer.\""
+    },
+    {
+     "q": "The phrase \"honestly, not defensively\" suggests that human overrides should…",
+     "options": [
+      "be applied to every SKU without exception",
+      "reflect genuine context rather than justify a preferred number",
+      "always increase the machine's figure",
+      "be added to protect the team's earlier calls"
+     ],
+     "answer": 1,
+     "why": "Inferência: sobrepor contexto \"defensivamente\" seria distorcer o número para defender uma posição; o texto pede honestidade."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A skilled team can safely replace the model with experienced intuition",
+      "The value lies in integrating machine and human",
+      "The algorithm should own routine, high-volume patterns",
+      "Human judgement should focus on the exceptions"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que confiar só no faro deixa a equipe \"slower and less accurate on the routine\" — o autor discordaria de dispensar o modelo."
+    },
+    {
+     "q": "What does the text imply the human should NOT spend attention on?",
+     "options": [
+      "Situations where context truly matters",
+      "The routine bulk of predictable, high-volume forecasting",
+      "A promotion that will cannibalise another brand",
+      "A regulation that will reshape the category"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"reserving human attention for the small number of situations where it matters most\" — a rotina fica com o algoritmo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentar o novo processo de forecasting à equipe. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let me walk you through how the new process will actually run day to day. The algorithm produces the baseline every Monday morning — every SKU, every region, no exceptions. That is not up for debate; the machine is simply better than us at the routine.<br><br>What changes is where your time goes. Instead of arguing over ten thousand lines, the system flags maybe forty exceptions a week — the SKUs where the forecast has drifted, or where an external signal contradicts the pattern. Those are yours. That is where judgement earns its keep.<br><br>And I want to be honest about the last two quarters. Had we fed the model the weather data, the error on the beverage lines would have been roughly halved. We had the data; we simply never wired it in. That is on the process, not the algorithm.<br><br>So from now on, every override gets a one-line reason attached. Not to police you — so that when we run the post-mortem, we can see whether the human call actually beat the machine, or whether we were just being defensive.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How often does the algorithm produce the baseline?",
+     "options": [
+      "Every Monday morning, for every SKU and region",
+      "Once a quarter, before the post-mortem",
+      "Only for the flagged exceptions",
+      "On demand, whenever a planner requests it"
+     ],
+     "answer": 0,
+     "why": "\"The algorithm produces the baseline every Monday morning — every SKU, every region.\""
+    },
+    {
+     "q": "What does Sophie say should change about how the team spends its time?",
+     "options": [
+      "They should review all ten thousand lines each week",
+      "They should stop overriding the machine entirely",
+      "They should focus on roughly forty flagged exceptions instead of every line",
+      "They should rebuild the model themselves"
+     ],
+     "answer": 2,
+     "why": "\"the system flags maybe forty exceptions a week… Those are yours.\""
+    },
+    {
+     "q": "Why does Sophie say the beverage-line error was not the algorithm's fault?",
+     "options": [
+      "The model was too old to be trusted",
+      "The regions submitted their numbers late",
+      "The team had the weather data but never wired it in",
+      "The exceptions were reviewed by the wrong people"
+     ],
+     "answer": 2,
+     "why": "\"We had the data; we simply never wired it in. That is on the process, not the algorithm.\""
+    },
+    {
+     "q": "Why does Sophie want a one-line reason attached to every override?",
+     "options": [
+      "To satisfy an external auditor",
+      "To assign blame when forecasts miss",
+      "To reduce the number of overrides to zero",
+      "To check, at the post-mortem, whether the human call actually beat the machine"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"so that when we run the post-mortem, we can see whether the human call actually beat the machine\" — não é para vigiar, é para aprender."
+    },
+    {
+     "q": "What is Sophie's overall attitude toward the algorithm?",
+     "options": [
+      "She wants to replace human planners with the model",
+      "She sees the model as useful only for post-mortems",
+      "She trusts it for the routine but wants disciplined human judgement on exceptions",
+      "She distrusts the machine and prefers intuition"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela cede a rotina à máquina, mas exige justificativa honesta nos overrides — integração, não substituição."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The team treats the <strong>machine forecast</strong> as a starting point, not the answer.\" A machine forecast is…",
+     "options": [
+      "a prediction generated by an algorithm from the data",
+      "a record of last year's actual sales",
+      "the final number sent to the board",
+      "a planner's gut estimate written down"
+     ],
+     "answer": 0,
+     "why": "Machine forecast = previsão da máquina: o número que o algoritmo gera a partir dos dados."
+    },
+    {
+     "q": "\"The algorithm excels at <strong>pattern detection</strong> across thousands of SKUs.\" Pattern detection is…",
+     "options": [
+      "approving the final plan",
+      "spotting regularities and signals hidden in large data",
+      "deciding which customers to prioritise",
+      "manually correcting outliers one by one"
+     ],
+     "answer": 1,
+     "why": "Pattern detection = detecção de padrões: encontrar regularidades no meio de muitos dados."
+    },
+    {
+     "q": "Choose the correct term: \"The planners <strong>layer on</strong> the ___ that the algorithm cannot see — a struggling client, a coming regulation.\"",
+     "options": [
+      "baseline",
+      "business judgement",
+      "SKU count",
+      "seasonality"
+     ],
+     "answer": 1,
+     "why": "Business judgement = julgamento de negócio: o contexto humano que se acrescenta sobre a previsão da máquina."
+    },
+    {
+     "q": "\"The real <strong>craft</strong> is the integration of machine and human.\" Here, craft means…",
+     "options": [
+      "a physical tool",
+      "a piece of software",
+      "the skilled expertise involved in doing it well",
+      "a written procedure"
+     ],
+     "answer": 2,
+     "why": "Craft = ofício, a perícia/expertise de fazer bem-feito."
+    },
+    {
+     "q": "\"She wants overrides justified honestly, not <strong>defensively</strong>.\" To act defensively here means to…",
+     "options": [
+      "wait for more data before deciding",
+      "adjust the number to protect a position rather than reflect reality",
+      "delegate the decision to the algorithm",
+      "share the reasoning openly with the team"
+     ],
+     "answer": 1,
+     "why": "Defensively = defensivamente: alterar o número para se proteger, não para refletir o contexto real."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de planejamento e forecasting. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The head of planning still has to <strong>sign off on</strong> the new forecasting process.\" To sign off on means to…",
+     "options": [
+      "postpone indefinitely",
+      "announce to the press",
+      "formally approve",
+      "comment informally"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the algorithm region by region.\" To roll out means to…",
+     "options": [
+      "implement it in stages",
+      "test it in secret",
+      "cancel it gradually",
+      "explain it to the board"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two planners <strong>pushed back on</strong> handing the routine to the model.\" They…",
+     "options": [
+      "resisted or disagreed with it",
+      "approved it at once",
+      "forgot to read it",
+      "rewrote the whole plan"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"They agreed to wire in the weather data but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "documented it badly",
+      "changed the data source halfway",
+      "failed to carry it to completion",
+      "delegated it to IT"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Tuning the model by another decimal won't <strong>move the needle</strong> on accuracy.\" This means it will…",
+     "options": [
+      "cost more than expected",
+      "take too long to measure",
+      "create internal resistance",
+      "not make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

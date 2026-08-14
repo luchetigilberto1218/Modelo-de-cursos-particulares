@@ -8,56 +8,56 @@
     {
      "q": "What do you do at the start of a work call?",
      "options": [
+      "Say hello, say your name, explain the reason, and listen",
       "Stay silent",
       "Send an email",
-      "Say hello, say your name, explain the reason, and listen",
       "Hang up"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"You say hello, say your name, explain the reason, and listen.\""
     },
     {
      "q": "What do we check before a video call?",
      "options": [
       "The email",
+      "The weather",
       "The camera and microphone",
-      "The report",
-      "The weather"
+      "The report"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"we also check the camera and microphone before we start.\""
     },
     {
      "q": "Which phrase checks if people can hear you?",
      "options": [
-      "\"Can you hear me?\"",
-      "\"Thank you\"",
       "\"Goodbye\"",
+      "\"Thank you\"",
+      "\"Can you hear me?\"",
       "\"See you Friday\""
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"We say 'Can you hear me?' or 'Can you see my screen?'\""
     },
     {
      "q": "What can you say when you do not understand?",
      "options": [
-      "\"You are wrong\"",
-      "\"Goodbye\"",
       "\"Sorry, could you repeat that, please?\"",
-      "Nothing"
+      "\"Goodbye\"",
+      "Nothing",
+      "\"You are wrong\""
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Say 'Sorry, could you repeat that, please?'\""
     },
     {
      "q": "According to the text, asking someone to repeat is…",
      "options": [
-      "rude",
-      "a mistake",
       "polite and very common",
-      "not allowed"
+      "not allowed",
+      "rude",
+      "a mistake"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"This is polite and very common in English.\""
     }
    ]
@@ -72,23 +72,23 @@
     {
      "q": "How does Emily answer the phone?",
      "options": [
-      "Nothing",
-      "'Who is this?'",
       "'Hello, Czarnikow, Emily speaking.'",
+      "'Who is this?'",
+      "Nothing",
       "'Goodbye'"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Hello, Czarnikow, Emily speaking.\""
     },
     {
      "q": "Why does Emily ask the caller to repeat?",
      "options": [
-      "She is angry",
-      "The call is over",
       "She wasn't listening",
-      "The line is not very good and she can't hear well"
+      "The call is over",
+      "The line is not very good and she can't hear well",
+      "She is angry"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"I can't hear you very well — the line is not very good. Could you repeat that, please?\""
     },
     {
@@ -116,12 +116,12 @@
     {
      "q": "What does Emily do at the end?",
      "options": [
-      "Hangs up angrily",
-      "Forgets the number",
       "Confirms the information and says she'll call back this afternoon",
-      "Ends with no plan"
+      "Hangs up angrily",
+      "Ends with no plan",
+      "Forgets the number"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"I'll check with our team and call you back this afternoon. Can I take your number?\""
     }
    ]
@@ -143,32 +143,32 @@
     {
      "q": "The **line** on a phone call is…",
      "options": [
+      "the connection you speak through",
       "the screen",
       "the queue",
-      "the camera",
-      "the connection you speak through"
+      "the camera"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Line = linha (a conexão)."
     },
     {
      "q": "Choose the correct word: \"Please **___** that — I didn't hear you.\"",
      "options": [
-      "forward",
       "reply",
-      "hang up",
-      "repeat"
+      "repeat",
+      "forward",
+      "hang up"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Repeat = repetir."
     },
     {
      "q": "To **hang up** means to…",
      "options": [
-      "start the call",
+      "answer the call",
       "repeat",
       "end the call",
-      "answer the call"
+      "start the call"
      ],
      "answer": 2,
      "why": "Hang up = desligar."
@@ -176,12 +176,12 @@
     {
      "q": "Choose the correct word: \"Can you see my **___**? I'm sharing the report.\"",
      "options": [
-      "screen",
-      "microphone",
+      "line",
       "camera",
-      "line"
+      "microphone",
+      "screen"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Screen = tela."
     }
    ]
@@ -193,55 +193,55 @@
      "q": "\"The line **dropped** for a second.\" To drop (a line/call) means…",
      "options": [
       "to be loud",
+      "to be clear",
       "to end well",
-      "to be lost / cut off",
-      "to be clear"
+      "to be lost / cut off"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Drop = cair (a chamada)."
     },
     {
      "q": "\"Can I **take your number**?\" To take someone's number means to…",
      "options": [
+      "get their phone number",
       "repeat it",
       "end the call",
-      "get their phone number",
       "give yours"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Take your number = anotar o número."
     },
     {
      "q": "\"I'll **call you back** this afternoon.\" To call back means to…",
      "options": [
-      "never call",
-      "hang up",
       "return the call later",
-      "email"
+      "email",
+      "never call",
+      "hang up"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Call back = ligar de volta."
     },
     {
      "q": "\"Sorry, you're **breaking up**.\" To break up on a call means…",
      "options": [
-      "to end",
       "the audio is cutting out",
-      "the call is clear",
-      "to shout"
+      "to shout",
+      "to end",
+      "the call is clear"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Break up = cortando (o áudio)."
     },
     {
      "q": "\"Speak **soon**!\" This is a friendly way to…",
      "options": [
-      "start a call",
       "say goodbye",
-      "ask a question",
-      "repeat"
+      "repeat",
+      "start a call",
+      "ask a question"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Speak soon = até logo (ao encerrar)."
     }
    ]

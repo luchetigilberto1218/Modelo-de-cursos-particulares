@@ -1,0 +1,259 @@
+{
+ "num": 1171,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "IT supports every Czarnikow office, from London to São Paulo. When you have a problem with your files, you talk to the help desk. The IT team is small, but it is very responsive. Small IT habits today save big problems tomorrow.<br><br>Today you learn five useful words: folder, document, copy, backup and version. You can use them when you organize your files or when you join an online meeting. Go slowly — one step at a time.<br><br>Good IT habits protect the whole company. The team restarts the backup every evening, just in case. When something looks strange, call IT support. You can do it!",
+   "items": [
+    {
+     "q": "Where does IT support work?",
+     "options": [
+      "Only at the help desk",
+      "Only in São Paulo",
+      "In every Czarnikow office",
+      "Only in London"
+     ],
+     "answer": 2,
+     "why": "\"IT supports every Czarnikow office, from London to São Paulo.\""
+    },
+    {
+     "q": "How many new words do you learn today?",
+     "options": [
+      "Five",
+      "Four",
+      "Three",
+      "Six"
+     ],
+     "answer": 0,
+     "why": "\"Today you learn five useful words: folder, document, copy, backup and version.\""
+    },
+    {
+     "q": "When does the team restart the backup?",
+     "options": [
+      "Every hour",
+      "Every morning",
+      "Every week",
+      "Every evening"
+     ],
+     "answer": 3,
+     "why": "\"The team restarts the backup every evening, just in case.\""
+    },
+    {
+     "q": "The text says \"just in case.\" This suggests that the team…",
+     "options": [
+      "never has problems with files",
+      "does not like the backup",
+      "works only on weekends",
+      "wants to be ready if something goes wrong"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"just in case\" = por precaução, para estar pronto se algo der errado."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "big problems are impossible to stop",
+      "IT problems are not important",
+      "you should never call IT support",
+      "small good habits help a lot"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Small IT habits today save big problems tomorrow\" — pequenos hábitos ajudam muito."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James ajudando um usuário. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, this is James from IT support. I can help you with your files today.<br><br>First, look at the shared drive. There is a folder for your team. Open it, please. Inside, you can see some documents. Good.<br><br>Now, I want you to make a copy of the report. Never work on the only file. Always keep a copy, just in case. This is a good habit.<br><br>The backup runs every evening, so your work is safe at night. But during the day, the copy is your friend.<br><br>One more thing. Look at the name of the file. There is a version number at the end. Always use the new version, not the old one. The new version is on the shared drive.<br><br>That's all for now. It is easy, right? Call me again if something looks strange. You can do it! Have a nice day.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "The help desk manager",
+      "A new employee",
+      "James from IT support",
+      "A user from another company"
+     ],
+     "answer": 2,
+     "why": "\"Hi, this is James from IT support.\""
+    },
+    {
+     "q": "What does James ask the user to make?",
+     "options": [
+      "A copy of the report",
+      "A backup",
+      "A phone call",
+      "A new folder"
+     ],
+     "answer": 0,
+     "why": "\"I want you to make a copy of the report.\""
+    },
+    {
+     "q": "When does the backup run?",
+     "options": [
+      "Every morning",
+      "Every evening",
+      "Every hour",
+      "Only on Monday"
+     ],
+     "answer": 1,
+     "why": "\"The backup runs every evening, so your work is safe at night.\""
+    },
+    {
+     "q": "Why does James say \"the copy is your friend\"?",
+     "options": [
+      "Because copies are fun to make",
+      "Because a copy keeps your work safe during the day",
+      "Because copies are difficult",
+      "Because the copy is a real person"
+     ],
+     "answer": 1,
+     "why": "Inferência: a cópia protege o trabalho durante o dia, então é sua \"amiga\"."
+    },
+    {
+     "q": "How would you describe James's tone?",
+     "options": [
+      "Worried and unsure",
+      "Angry and in a hurry",
+      "Bored and tired",
+      "Calm and helpful"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele explica com calma, incentiva e diz \"You can do it!\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>folder</strong> is working well today.\" A folder is…",
+     "options": [
+      "an email",
+      "a meeting",
+      "a computer screen",
+      "a pasta for your files"
+     ],
+     "answer": 3,
+     "why": "Folder = pasta, onde você guarda os arquivos."
+    },
+    {
+     "q": "Choose the correct word: \"There is a new ___ on the help desk board.\"",
+     "options": [
+      "copy",
+      "backup",
+      "version",
+      "document"
+     ],
+     "answer": 3,
+     "why": "Document = documento; é o que aparece no quadro do help desk."
+    },
+    {
+     "q": "\"The <strong>copy</strong> is ready for you to check.\" A copy is…",
+     "options": [
+      "a phone call",
+      "a new folder",
+      "a cópia of a file",
+      "an online meeting"
+     ],
+     "answer": 2,
+     "why": "Copy = cópia de um arquivo."
+    },
+    {
+     "q": "Choose the correct word: \"We restart the ___ every evening, just in case.\"",
+     "options": [
+      "version",
+      "document",
+      "folder",
+      "backup"
+     ],
+     "answer": 3,
+     "why": "Backup = cópia de segurança; é reiniciado toda noite."
+    },
+    {
+     "q": "\"The <strong>version</strong> is on the shared drive.\" A version is…",
+     "options": [
+      "an evening",
+      "a versão of the file",
+      "a help desk",
+      "a new office"
+     ],
+     "answer": 1,
+     "why": "Version = versão do arquivo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho de IT. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>back up</strong> your files before you go home.\" To back up means to…",
+     "options": [
+      "print the files",
+      "delete the files",
+      "send an email",
+      "make a safe copy of the files"
+     ],
+     "answer": 3,
+     "why": "Back up = fazer uma cópia de segurança."
+    },
+    {
+     "q": "\"Can you <strong>log in</strong> to the shared drive?\" To log in means to…",
+     "options": [
+      "turn off the computer",
+      "call the help desk",
+      "enter with your name and password",
+      "close the folder"
+     ],
+     "answer": 2,
+     "why": "Log in = entrar no sistema com usuário e senha."
+    },
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the new version.\" To sign off on means to…",
+     "options": [
+      "delete it",
+      "formally approve it",
+      "read it fast",
+      "copy it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new folder to every office.\" To roll out means to…",
+     "options": [
+      "hide it",
+      "cancel it",
+      "print it",
+      "put it in use, step by step"
+     ],
+     "answer": 3,
+     "why": "Roll out = colocar em uso aos poucos, em cada lugar."
+    },
+    {
+     "q": "\"If something looks strange, please <strong>reach out</strong> to IT.\" To reach out means to…",
+     "options": [
+      "wait a week",
+      "close the file",
+      "restart the computer",
+      "contact them for help"
+     ],
+     "answer": 3,
+     "why": "Reach out = entrar em contato, procurar ajuda."
+    }
+   ]
+  }
+ ]
+}

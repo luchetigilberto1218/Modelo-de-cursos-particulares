@@ -1,0 +1,259 @@
+{
+ "num": 528,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At executive level, data storage and backup are not IT housekeeping — they are architecture choices that decide how the company survives its worst day. A well-designed data architecture means that, if a major incident strikes — a ransomware attack, a data centre failure, a catastrophic human error — what matters most can be restored within hours, not weeks.<br><br>The senior view organises data by value. Some data is priceless: customer records, contracts, financial ledgers, product designs. Other data is useful but replaceable. Still other data is not worth keeping at all. Each category deserves a different backup strategy, a different recovery target, and a different amount of executive attention.<br><br>Above all, backups must be tested, documented, and owned. A backup architecture that has never been tested at full scale is not an architecture — it is a hope written in formal language. The companies that have run the test and lived through a real recovery are quietly, permanently calmer about data than the ones that have not.",
+   "items": [
+    {
+     "q": "According to the text, why do senior leaders treat data storage and backup as an architecture choice?",
+     "options": [
+      "Because regulators require a formal document",
+      "Because it lowers the cost of IT housekeeping",
+      "Because it improves day-to-day reporting speed",
+      "Because it decides how the company survives its worst day"
+     ],
+     "answer": 3,
+     "why": "\"they are architecture choices that decide how the company survives its worst day.\""
+    },
+    {
+     "q": "How does the senior view organise data?",
+     "options": [
+      "By its file size and storage cost",
+      "By its value to the company",
+      "By the department that created it",
+      "By how recently it was accessed"
+     ],
+     "answer": 1,
+     "why": "\"The senior view organises data by value.\""
+    },
+    {
+     "q": "What does the author mean by \"a hope written in formal language\"?",
+     "options": [
+      "Formal wording makes recovery faster",
+      "An untested backup only looks like protection but may fail",
+      "A backup that is well documented is always reliable",
+      "Hope is a legitimate part of any architecture"
+     ],
+     "answer": 1,
+     "why": "Inferência: um backup nunca testado em escala real não é proteção de verdade — só parece, no papel."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Every category of data should receive the same protection",
+      "Some data does not deserve to be backed up at all",
+      "Priceless data justifies more executive attention",
+      "Testing recovery matters more than documenting it well"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto defende justamente o contrário — cada categoria merece uma estratégia diferente."
+    },
+    {
+     "q": "The final sentence suggests that companies which have never run a real recovery test are…",
+     "options": [
+      "less anxious because they trust their systems",
+      "more efficient because they avoid downtime",
+      "unaffected either way",
+      "quietly less confident about their data than those that have"
+     ],
+     "answer": 3,
+     "why": "Inferência: se os que testaram ficam \"permanently calmer\", os que não testaram carregam a incerteza."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily durante o teste de recuperação. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, it's just gone six in the morning and we have officially pulled the plug on the primary data centre. As far as the failover systems are concerned, it no longer exists. This is the first time anyone here has run this drill at full scale, and I'll be honest — half the room expected me to quietly cancel it.<br><br>Here is what I need everyone to watch. We are not restoring everything, and we should not be. The tier-one data — the ledgers, the client contracts, the trading positions — must be back and verified within four hours. That is the only number that decides whether we pass or fail. Anything replaceable can wait until tomorrow.<br><br>What I care about is not whether the restore works on paper. It always works on paper. I want to know that the people in this room can execute it under pressure, on a Tuesday, without the vendor on the phone. If a step has never been rehearsed, today is when it breaks, and I would far rather it breaks here than during a ransomware incident.<br><br>Assuming we clear the four-hour mark, I want it documented, signed off, and owned by name — so that this stops being a hope and starts being an architecture we can actually trust.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What has Emily just done at the start of the drill?",
+     "options": [
+      "Cancelled the exercise",
+      "Restored the primary data centre",
+      "Called the vendor for support",
+      "Taken the primary data centre offline for the test"
+     ],
+     "answer": 3,
+     "why": "\"we have officially pulled the plug on the primary data centre… it no longer exists.\""
+    },
+    {
+     "q": "Which data must be back and verified within four hours?",
+     "options": [
+      "The tier-one data: ledgers, contracts and trading positions",
+      "The internal email archives",
+      "Only the replaceable data",
+      "Everything, without exception"
+     ],
+     "answer": 0,
+     "why": "\"The tier-one data… must be back and verified within four hours.\""
+    },
+    {
+     "q": "Why does Emily say \"It always works on paper\"?",
+     "options": [
+      "To reassure the team that documentation is enough",
+      "To stress that a plan can look fine yet fail when executed under pressure",
+      "To criticise the vendor's paperwork",
+      "To explain that the restore has already succeeded"
+     ],
+     "answer": 1,
+     "why": "Inferência: o valor do teste é provar a execução real, não o plano no papel."
+    },
+    {
+     "q": "What can be inferred about why Emily is glad if a step breaks today?",
+     "options": [
+      "She distrusts the entire team",
+      "A controlled drill is a safer place to discover a flaw than a real attack",
+      "She wants the exercise to fail",
+      "Breaking a step means the tier-one target was met"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"far rather it breaks here than during a ransomware incident\" — melhor descobrir no ensaio."
+    },
+    {
+     "q": "How would you best describe Emily's overall stance?",
+     "options": [
+      "Indifferent to whether the drill succeeds",
+      "Deliberate and determined to prove real resilience",
+      "Focused only on satisfying the vendor",
+      "Anxious and hoping to postpone the test"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela mantém o teste que outros queriam cancelar e exige prova, documentação e dono."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Our <strong>data architecture</strong> was designed so that a single outage could never take the whole platform down.\" Data architecture refers to…",
+     "options": [
+      "a single backup file",
+      "the marketing plan for a data product",
+      "the physical building where servers are kept",
+      "the overall design of how data is stored, protected and recovered"
+     ],
+     "answer": 3,
+     "why": "Data architecture = arquitetura de dados: o desenho geral de armazenamento, proteção e recuperação."
+    },
+    {
+     "q": "Choose the correct word: \"After the fire, the team managed to ___ the ledgers from an off-site copy within hours.\"",
+     "options": [
+      "replace",
+      "postpone",
+      "restore",
+      "delete"
+     ],
+     "answer": 2,
+     "why": "To restore = restaurar: recuperar os dados a partir do backup."
+    },
+    {
+     "q": "\"The customer master records are effectively <strong>priceless</strong>.\" Priceless here means…",
+     "options": [
+      "available at no cost",
+      "no longer needed",
+      "so valuable it cannot really be replaced",
+      "cheap to store"
+     ],
+     "answer": 2,
+     "why": "Priceless = inestimável: tão valioso que não há como substituir."
+    },
+    {
+     "q": "Choose the correct term: \"We agreed a four-hour ___ for tier-one systems and twenty-four hours for the rest.\"",
+     "options": [
+      "incident report",
+      "recovery target",
+      "worst day",
+      "data centre failure"
+     ],
+     "answer": 1,
+     "why": "Recovery target = meta de recuperação: o prazo em que os dados devem voltar."
+    },
+    {
+     "q": "\"Log files are useful but ultimately <strong>replaceable</strong>.\" Replaceable means…",
+     "options": [
+      "the most valuable data we hold",
+      "impossible to recover",
+      "already lost forever",
+      "able to be regenerated or substituted without great loss"
+     ],
+     "answer": 3,
+     "why": "Replaceable = substituível: pode ser refeito ou trocado sem perda grave."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre dados e continuidade. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The CISO still has to <strong>sign off on</strong> the recovery plan before we go live.\" To sign off on means to…",
+     "options": [
+      "publish externally",
+      "cancel",
+      "formally approve",
+      "comment informally"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We plan to <strong>roll out</strong> the new backup architecture data centre by data centre.\" To roll out means to…",
+     "options": [
+      "shut down gradually",
+      "explain to the board",
+      "implement in stages",
+      "test in secret"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two directors <strong>pushed back on</strong> the four-hour recovery target as too costly.\" They…",
+     "options": [
+      "resisted or challenged it",
+      "rewrote the whole plan",
+      "approved it at once",
+      "forgot about it"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"They approved the drill but never <strong>followed through</strong> on the documentation.\" They…",
+     "options": [
+      "delegated it perfectly",
+      "failed to complete what they had committed to",
+      "carried it to completion",
+      "documented it in full"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado — aqui, não levaram."
+    },
+    {
+     "q": "\"Buying more storage will not <strong>move the needle</strong> on recovery time.\" This means it will…",
+     "options": [
+      "make a decisive difference",
+      "not make a noticeable difference",
+      "break the system",
+      "cost far too much"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível — aqui, não faz."
+    }
+   ]
+  }
+ ]
+}

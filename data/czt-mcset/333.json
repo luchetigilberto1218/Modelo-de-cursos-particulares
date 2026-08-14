@@ -1,0 +1,259 @@
+{
+ "num": 333,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Tracking and visibility in practice are two different things. Tracking is raw data — dots moving on a map. Visibility is the story those dots are telling, and the decisions the team is taking based on that story. Many companies have impressive tracking and very little real visibility.<br><br>The fix starts with alerts. Instead of watching every shipment, the team is told automatically when a shipment has drifted off plan — a truck that has been sitting for thirty minutes at a rest stop, a container that has been waiting too long at customs, a driver who has been offline for an hour. Each alert prompts a short, pre-defined response.<br><br>Tracking without alerts is entertainment. Tracking with alerts is operations. The difference, over a year, is measured in customer complaints that simply never happened.",
+   "items": [
+    {
+     "q": "According to the text, what is the difference between tracking and visibility?",
+     "options": [
+      "Tracking is expensive; visibility is cheap",
+      "Tracking is manual; visibility is automatic",
+      "Tracking is raw data; visibility is the story and the decisions",
+      "They are essentially the same thing"
+     ],
+     "answer": 2,
+     "why": "\"Tracking is raw data — dots moving on a map. Visibility is the story those dots are telling, and the decisions…\""
+    },
+    {
+     "q": "What does the fix for weak visibility start with?",
+     "options": [
+      "More dashboards",
+      "Alerts",
+      "Hiring more staff",
+      "Faster trucks"
+     ],
+     "answer": 1,
+     "why": "\"The fix starts with alerts.\""
+    },
+    {
+     "q": "The text says the team is told automatically when a shipment has drifted off plan. This suggests the team…",
+     "options": [
+      "does not need to stare at the whole map to catch problems",
+      "should watch every shipment continuously",
+      "no longer needs to monitor anything at all",
+      "cannot trust the tracking system"
+     ],
+     "answer": 0,
+     "why": "Inferência: se o alerta avisa quando algo sai do plano, não é preciso vigiar tudo o tempo todo."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A short, pre-defined response makes an alert useful",
+      "Some complaints can be prevented before they happen",
+      "Alerts turn tracking into operations",
+      "Impressive tracking automatically delivers real visibility"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz que muitas empresas têm ótimo tracking e pouca visibilidade — logo, tracking não gera visibilidade sozinho."
+    },
+    {
+     "q": "What does \"customer complaints that simply never happened\" imply about good alerts?",
+     "options": [
+      "They only matter to the finance team",
+      "They slow the operation down",
+      "They quietly prevent problems the customer never sees",
+      "They generate more paperwork"
+     ],
+     "answer": 2,
+     "why": "Inferência: o valor é medido em reclamações evitadas — problemas resolvidos antes de chegarem ao cliente."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily explicando o conjunto de alertas que está desenhando. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, here's what I've been working on this week. We've been staring at that live map for months, and honestly, nobody has been catching problems any earlier because of it. The dots move, we feel busy, and nothing actually changes.<br><br>My idea is simple: we stop watching and let the system tell us. I've been designing just five alerts — the five things that go wrong most often. If a truck has been sitting at a rest stop for more than thirty minutes, we get pinged. If a container has been waiting at customs too long, we get pinged. If a driver has been offline for an hour, same thing.<br><br>And here's the part that matters. Each alert comes with one pre-defined response — a single, obvious next step. No debate, no meeting. The person who receives it just does it.<br><br>I'd rather have five sharp alerts that people act on than fifty that everyone learns to ignore. We can always add more later, once the team has been using these for a while and we see what we've missed.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What has Emily been working on this week?",
+     "options": [
+      "Hiring people to watch the map",
+      "Buying a new tracking platform",
+      "Designing a small set of alerts",
+      "Rewriting the customer contracts"
+     ],
+     "answer": 2,
+     "why": "\"I've been designing just five alerts — the five things that go wrong most often.\""
+    },
+    {
+     "q": "According to Emily, what has watching the live map achieved so far?",
+     "options": [
+      "Nobody has been catching problems any earlier because of it",
+      "It has replaced the need for alerts",
+      "It has reduced customer complaints",
+      "It has caught problems much earlier"
+     ],
+     "answer": 0,
+     "why": "\"nobody has been catching problems any earlier because of it.\""
+    },
+    {
+     "q": "What does each alert come with?",
+     "options": [
+      "A report to the customer",
+      "One pre-defined response — a single next step",
+      "A meeting to decide what to do",
+      "A list of possible options to debate"
+     ],
+     "answer": 1,
+     "why": "\"Each alert comes with one pre-defined response — a single, obvious next step.\""
+    },
+    {
+     "q": "Why does Emily prefer five alerts to fifty?",
+     "options": [
+      "The system cannot handle more than five",
+      "Fifty alerts would get ignored, while five get acted on",
+      "Five alerts are cheaper to build",
+      "The team only has five people"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"I'd rather have five sharp alerts that people act on than fifty that everyone learns to ignore.\""
+    },
+    {
+     "q": "What does Emily's plan to \"add more later\" suggest about her approach?",
+     "options": [
+      "She wants to avoid ever changing the system",
+      "She is starting small and letting real use guide expansion",
+      "She thinks alerts are unnecessary",
+      "She has no clear plan at all"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela começa enxuto e amplia com base no que o uso mostrar — abordagem incremental."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Real <strong>visibility</strong> means understanding what the data is telling you, not just seeing it.\" Here <strong>visibility</strong> means…",
+     "options": [
+      "the speed of the trucks",
+      "the number of dots on the map",
+      "clear insight into what is happening and what to do",
+      "how bright the screen is"
+     ],
+     "answer": 2,
+     "why": "Visibility = visibilidade: enxergar a situação com clareza e agir sobre ela."
+    },
+    {
+     "q": "Choose the correct word: \"We set an ___ so the team is warned the moment a container is delayed at customs.\"",
+     "options": [
+      "invoice",
+      "audit",
+      "alert",
+      "estimate"
+     ],
+     "answer": 2,
+     "why": "Alert = alerta: o aviso automático quando algo sai do plano."
+    },
+    {
+     "q": "\"The shipment has <strong>drifted off plan</strong>.\" This means it has…",
+     "options": [
+      "been cancelled by the customer",
+      "been loaded onto a plane",
+      "moved away from what was expected",
+      "arrived exactly on time"
+     ],
+     "answer": 2,
+     "why": "Drift off plan = desviar do plano: afastar-se do que estava previsto."
+    },
+    {
+     "q": "Choose the correct word: \"The container has been held at ___ for two days while officials check the paperwork.\"",
+     "options": [
+      "the rest stop",
+      "the warehouse",
+      "customs",
+      "the dashboard"
+     ],
+     "answer": 2,
+     "why": "Customs = alfândega: onde a carga é inspecionada ao cruzar a fronteira."
+    },
+    {
+     "q": "\"Tracking without alerts is just <strong>entertainment</strong>.\" In this context, <strong>entertainment</strong> suggests the activity is…",
+     "options": [
+      "required by regulation",
+      "enjoyable and useful",
+      "highly profitable",
+      "interesting to watch but not producing action"
+     ],
+     "answer": 3,
+     "why": "Inferência: entretenimento aqui é o mapa bonito de olhar que não gera decisão nem resposta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre operações e monitoramento. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We'll <strong>roll out</strong> the alert system to one region first.\" To roll out means to…",
+     "options": [
+      "test in secret",
+      "implement in stages",
+      "cancel gradually",
+      "explain to the customer"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Operations still has to <strong>sign off on</strong> the new alerts.\" To sign off on means to…",
+     "options": [
+      "delay indefinitely",
+      "announce publicly",
+      "comment informally",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We need to <strong>keep an eye on</strong> the container at customs.\" This means to…",
+     "options": [
+      "return it to the sender",
+      "ignore it completely",
+      "monitor it closely",
+      "hand it to another team"
+     ],
+     "answer": 2,
+     "why": "Keep an eye on = ficar de olho, monitorar de perto."
+    },
+    {
+     "q": "\"A cleaner set of alerts will really <strong>move the needle</strong> on response time.\" This means it will…",
+     "options": [
+      "take too long to measure",
+      "cost more than expected",
+      "create resistance",
+      "make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    },
+    {
+     "q": "\"When an alert fires, we can't just note it — we have to <strong>follow through</strong>.\" To follow through means to…",
+     "options": [
+      "escalate it to the board",
+      "wait for the next alert",
+      "carry the action to completion",
+      "document it and stop"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar a ação até o fim, não parar no aviso."
+    }
+   ]
+  }
+ ]
+}

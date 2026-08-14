@@ -1,0 +1,259 @@
+{
+ "num": 247,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Inventory is the stock a company keeps. Some of it is raw materials, waiting to be used. Some of it is products, waiting to be sold. Too much stock ties up money. Too little means empty shelves and lost sales. The goal is to hold just enough.<br><br>Two ideas help. Safety stock is a small extra buffer. You keep it in case demand jumps or a delivery is late. The reorder point is the stock level that says: \"order more now.\"<br><br>Good inventory managers watch both numbers every week. Not too much, not too little — just enough.",
+   "items": [
+    {
+     "q": "What is inventory?",
+     "options": [
+      "The price of a product",
+      "The number of staff",
+      "The stock a company keeps",
+      "The money a company earns"
+     ],
+     "answer": 2,
+     "why": "\"Inventory is the stock a company keeps.\""
+    },
+    {
+     "q": "What does too much stock do?",
+     "options": [
+      "It fills empty shelves",
+      "It brings more sales",
+      "It ties up money",
+      "It lowers the price"
+     ],
+     "answer": 2,
+     "why": "\"Too much stock ties up money.\""
+    },
+    {
+     "q": "What is safety stock for?",
+     "options": [
+      "To fill the office",
+      "To sell at a higher price",
+      "To pay the staff",
+      "As a buffer when demand jumps or a delivery is late"
+     ],
+     "answer": 3,
+     "why": "\"Safety stock is a small extra buffer… in case demand jumps or a delivery is late.\""
+    },
+    {
+     "q": "The text suggests that the writer would DISAGREE with which idea?",
+     "options": [
+      "Empty shelves cause lost sales",
+      "Managers should watch stock every week",
+      "The goal is just enough stock",
+      "More stock is always better"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz que estoque demais imobiliza dinheiro, então mais nem sempre é melhor."
+    },
+    {
+     "q": "\"Order more now\" at the reorder point suggests that…",
+     "options": [
+      "the stock is getting low",
+      "the price is too high",
+      "the company must stop selling",
+      "the stock is very high"
+     ],
+     "answer": 0,
+     "why": "Inferência: se é hora de pedir mais, é porque o estoque está baixando."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry explicando a um novo analista. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, let me explain last week's problem. We ran out of packaging on Tuesday. The shelves were empty, and we lost a few sales. I know it looks bad, and people are asking questions.<br><br>But here is the important part. This was not a forecast problem. Our forecast was fine — we knew how much packaging we would sell this month. The real problem was our reorder point. It was simply set too low.<br><br>Think about it like this. When stock drops to the reorder point, we send a new order to the supplier. But a delivery takes four days to arrive. If the reorder point is too low, the stock runs out before the new boxes come in. That is exactly what happened to us last week.<br><br>So the fix is simple. We do not need a better forecast. We need a higher reorder point, and a little more safety stock as a buffer. Then, next time a delivery is late, we still have enough on the shelf. Watch that number every week, and this will not happen again.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What happened last week?",
+     "options": [
+      "A new analyst was hired",
+      "The forecast was wrong",
+      "The company sold too much",
+      "They ran out of packaging"
+     ],
+     "answer": 3,
+     "why": "\"We ran out of packaging on Tuesday.\""
+    },
+    {
+     "q": "According to Harry, what was NOT the problem?",
+     "options": [
+      "The safety stock",
+      "The delivery time",
+      "The reorder point",
+      "The forecast"
+     ],
+     "answer": 3,
+     "why": "\"This was not a forecast problem. Our forecast was fine.\""
+    },
+    {
+     "q": "How long does a delivery take to arrive?",
+     "options": [
+      "One day",
+      "Two days",
+      "A week",
+      "Four days"
+     ],
+     "answer": 3,
+     "why": "\"a delivery takes four days to arrive.\""
+    },
+    {
+     "q": "Harry suggests that a higher reorder point would…",
+     "options": [
+      "make the forecast better",
+      "lower the price of packaging",
+      "give more time before the stock runs out",
+      "reduce the number of sales"
+     ],
+     "answer": 2,
+     "why": "Inferência: com o ponto de pedido mais alto, sobra estoque enquanto a entrega chega."
+    },
+    {
+     "q": "How would you describe Harry's message?",
+     "options": [
+      "Worried that nothing can be done",
+      "Unsure about what went wrong",
+      "Calm and explaining a simple fix",
+      "Angry and blaming the analyst"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele diz \"the fix is simple\" e explica com calma o que ajustar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We keep a small <strong>buffer</strong> in case a delivery is late.\" A buffer is…",
+     "options": [
+      "a busy week",
+      "a little extra kept in reserve",
+      "a written report",
+      "a delivery truck"
+     ],
+     "answer": 1,
+     "why": "Buffer = reserva: um pouco a mais guardado por segurança."
+    },
+    {
+     "q": "Choose the correct word: \"Too much stock can ___ money that the company could use elsewhere.\"",
+     "options": [
+      "tie up",
+      "watch",
+      "sell",
+      "order"
+     ],
+     "answer": 0,
+     "why": "To tie up = imobilizar: o dinheiro fica preso no estoque."
+    },
+    {
+     "q": "Choose the correct term: \"When stock hits the ___, we send a new order.\"",
+     "options": [
+      "lost sale",
+      "raw material",
+      "empty shelf",
+      "reorder point"
+     ],
+     "answer": 3,
+     "why": "Reorder point = ponto de pedido: o nível que avisa para comprar mais."
+    },
+    {
+     "q": "<strong>Safety stock</strong> is…",
+     "options": [
+      "stock that is damaged",
+      "the price of a product",
+      "stock that is for sale",
+      "extra stock kept as a buffer"
+     ],
+     "answer": 3,
+     "why": "Safety stock = estoque de segurança: um extra guardado por precaução."
+    },
+    {
+     "q": "Choose the correct word: \"An ___ shelf means we have lost sales.\"",
+     "options": [
+      "open",
+      "old",
+      "empty",
+      "easy"
+     ],
+     "answer": 2,
+     "why": "Empty shelf = prateleira vazia: sem produto, a venda se perde."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem quando falamos de estoque no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We <strong>ran out of</strong> packaging on Tuesday.\" To run out of means to…",
+     "options": [
+      "have none left of",
+      "buy more of",
+      "sell quickly",
+      "look for"
+     ],
+     "answer": 0,
+     "why": "Run out of = ficar sem: acabou o estoque."
+    },
+    {
+     "q": "\"The manager will <strong>sign off on</strong> the new order.\" To sign off on means to…",
+     "options": [
+      "cancel it",
+      "formally approve it",
+      "print it",
+      "read it later"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We need to <strong>keep an eye on</strong> the stock levels.\" This means to…",
+     "options": [
+      "sell them",
+      "count them once a year",
+      "watch them carefully",
+      "ignore them"
+     ],
+     "answer": 2,
+     "why": "Keep an eye on = ficar de olho, monitorar de perto."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new stock system next month.\" To roll out means to…",
+     "options": [
+      "hide it",
+      "start using it step by step",
+      "sell it",
+      "stop using it"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma gradual."
+    },
+    {
+     "q": "\"Let's <strong>set up</strong> a higher reorder point.\" To set up means to…",
+     "options": [
+      "put in place",
+      "sell",
+      "remove",
+      "delay"
+     ],
+     "answer": 0,
+     "why": "Set up = configurar, colocar em funcionamento."
+    }
+   ]
+  }
+ ]
+}

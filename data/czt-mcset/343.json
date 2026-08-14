@@ -1,0 +1,259 @@
+{
+ "num": 343,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Orchestrating logistics at enterprise scale is a discipline of balance under pressure. Transport, storage, handling and distribution each have their own economics and their own constraints, and none of them can be optimised in isolation without breaking another. The senior leader's job is to hold them all in view at once, and to adjust the balance as conditions change, every single week.<br><br>What matters at this level is not operational excellence in any single function. It is the coherence of the whole system. A storage team hitting every metric while the transport team is running chaos has not helped the enterprise; it has merely shifted the problem to the next department.<br><br>The best orchestrators share a habit: they watch the boundaries between functions more carefully than the functions themselves. When the handoff from storage to transport is clean, the rest takes care of itself. When it is not, no amount of internal excellence compensates for what is lost in the gap.",
+   "items": [
+    {
+     "q": "According to the text, why can no single logistics function be optimised in isolation?",
+     "options": [
+      "Because it is too expensive to measure",
+      "Because it would break or burden another function",
+      "Because each function reports separately",
+      "Because senior leaders forbid it"
+     ],
+     "answer": 1,
+     "why": "\"none of them can be optimised in isolation without breaking another\"."
+    },
+    {
+     "q": "What does the author say matters most at the enterprise level?",
+     "options": [
+      "The speed of the transport team",
+      "The coherence of the whole system",
+      "The size of the overtime budget",
+      "Excellence in the strongest single function"
+     ],
+     "answer": 1,
+     "why": "\"It is the coherence of the whole system.\""
+    },
+    {
+     "q": "What do the best orchestrators watch most carefully?",
+     "options": [
+      "The boundaries between functions",
+      "The weekly cost reports",
+      "The performance of each individual function",
+      "The metrics of the storage team"
+     ],
+     "answer": 0,
+     "why": "\"they watch the boundaries between functions more carefully than the functions themselves.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Handoffs deserve more attention than internal performance.",
+      "A department can succeed while damaging the enterprise.",
+      "A team that hits every metric has proven it is helping the enterprise.",
+      "Trade-offs between functions are unavoidable."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto mostra que o time de estoque pode bater todas as metas e ainda assim prejudicar o conjunto."
+    },
+    {
+     "q": "What does \"it has merely shifted the problem to the next department\" suggest?",
+     "options": [
+      "Metrics are useless at enterprise scale",
+      "Departments should never share data",
+      "Storage teams are always to blame",
+      "Local success can hide a system-level failure"
+     ],
+     "answer": 3,
+     "why": "Inferência: um ganho local que só empurra o custo adiante não é ganho real para a empresa."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily revisando os handoffs entre estoque e transporte. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, three weeks in, and on paper the storage team has been flawless. Every metric green, every target met. If you only read their dashboard, you would think we were having an excellent quarter.<br><br>But here is what that dashboard does not show you. Transport has quietly burned through its entire overtime budget in the same three weeks, and nobody flagged it, because it is not their number to hit. What storage optimised, transport had to absorb. The pallets arrived on time, yes — but in the wrong sequence, in the wrong bays, at the wrong hour of the night.<br><br>And that is exactly the boundary I want us to look at. Not the storage numbers, not the transport numbers, but the handoff between them. What is failing us is not any one team; it is the gap between them.<br><br>So from this week, I want a single joint metric that only turns green when both sides win. If transport is bleeding overtime to make storage look tidy, that is not a success we can afford to celebrate.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "According to Emily, what does the storage dashboard fail to show?",
+     "options": [
+      "That storage missed several of its own targets",
+      "That the quarter was going badly for storage",
+      "That customers were complaining about delivery times",
+      "That transport burned through its overtime budget"
+     ],
+     "answer": 3,
+     "why": "\"Transport has quietly burned through its entire overtime budget in the same three weeks.\""
+    },
+    {
+     "q": "Why did nobody flag the transport problem, according to Emily?",
+     "options": [
+      "Because the budget was confidential",
+      "Because the storage team hid it",
+      "Because it was not transport's number to hit",
+      "Because Emily told them to stay quiet"
+     ],
+     "answer": 2,
+     "why": "\"nobody flagged it, because it is not their number to hit.\""
+    },
+    {
+     "q": "What does Emily mean by \"What storage optimised, transport had to absorb\"?",
+     "options": [
+      "Transport improved because of storage",
+      "Storage and transport shared one budget",
+      "Storage created a cost that transport ended up paying",
+      "Transport copied storage's methods"
+     ],
+     "answer": 2,
+     "why": "Inferência: o ganho do estoque virou custo do transporte — o problema foi apenas deslocado."
+    },
+    {
+     "q": "What change does Emily propose from this week?",
+     "options": [
+      "Merging storage and transport into one team",
+      "Replacing the storage dashboard",
+      "Cutting the transport overtime budget",
+      "A single joint metric that only turns green when both sides win"
+     ],
+     "answer": 3,
+     "why": "\"I want a single joint metric that only turns green when both sides win.\""
+    },
+    {
+     "q": "What is Emily's underlying attitude toward the storage team's green metrics?",
+     "options": [
+      "She trusts the dashboard as the final word",
+      "She treats them as suspect until the whole system wins",
+      "She wants to punish the storage team",
+      "She thinks metrics should be abandoned entirely"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela não celebra o verde do estoque enquanto o transporte sangra — o sistema inteiro é o critério."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"A senior leader has to <strong>orchestrate</strong> transport, storage and distribution as one system.\" To orchestrate means to…",
+     "options": [
+      "audit each function separately",
+      "outsource the least profitable part",
+      "coordinate the parts into a working whole",
+      "rank the functions by cost"
+     ],
+     "answer": 2,
+     "why": "Orchestrate = orquestrar: coordenar as partes para que funcionem como um todo."
+    },
+    {
+     "q": "Choose the correct word: \"A team hitting every target while the next one runs ___ has not helped the enterprise.\"",
+     "options": [
+      "isolation",
+      "chaos",
+      "coherence",
+      "balance"
+     ],
+     "answer": 1,
+     "why": "Chaos = caos: o oposto da coerência que se busca no sistema."
+    },
+    {
+     "q": "Choose the correct word: \"The storage win merely ___ the cost onto transport instead of removing it.\"",
+     "options": [
+      "compensated",
+      "shifted",
+      "balanced",
+      "orchestrated"
+     ],
+     "answer": 1,
+     "why": "To shift = deslocar: o custo foi empurrado para outra função, não eliminado."
+    },
+    {
+     "q": "<strong>Coherence</strong>, as used in the lesson, is best described as…",
+     "options": [
+      "the number of metrics a team hits",
+      "the speed of a single department",
+      "the whole system working as one consistent whole",
+      "the clarity of a written report"
+     ],
+     "answer": 2,
+     "why": "Coherence = coerência: o sistema inteiro alinhado, não uma função isolada."
+    },
+    {
+     "q": "\"No amount of <strong>internal excellence</strong> compensates for what is lost in the gap.\" Internal excellence refers to…",
+     "options": [
+      "the accuracy of the financial forecast",
+      "the external reputation of the company",
+      "the quality of the leadership team",
+      "a department performing brilliantly within its own scope"
+     ],
+     "answer": 3,
+     "why": "Internal excellence = excelência interna: um setor brilhando dentro do próprio escopo, sem garantir o resultado do conjunto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de operações e logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Transport was left to <strong>pick up the slack</strong> whenever storage optimised its own numbers.\" To pick up the slack means to…",
+     "options": [
+      "cut its own workload",
+      "take on the extra work others leave behind",
+      "slow the whole process down",
+      "report the problem upward"
+     ],
+     "answer": 1,
+     "why": "Pick up the slack = assumir a folga/o trabalho extra deixado por outro."
+    },
+    {
+     "q": "\"None of these local wins will <strong>move the needle</strong> on total logistics cost.\" This means they will…",
+     "options": [
+      "not make a noticeable difference",
+      "create internal resistance",
+      "cost more than expected",
+      "be hard to measure"
+     ],
+     "answer": 0,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    },
+    {
+     "q": "\"Emily wants both teams to <strong>sign off on</strong> the new joint metric.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly ignore",
+      "comment informally",
+      "postpone"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We agreed the fix, but the transport lead never <strong>followed through</strong>.\" They…",
+     "options": [
+      "failed to carry it to completion",
+      "carried it to completion",
+      "rewrote the whole plan",
+      "delegated it upward"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado; aqui, não foi levado."
+    },
+    {
+     "q": "\"Fixing storage in a hurry only <strong>shifted the bottleneck</strong> to transport.\" To shift the bottleneck means to…",
+     "options": [
+      "move the point of congestion elsewhere",
+      "remove the constraint entirely",
+      "speed up every function at once",
+      "measure the delay more precisely"
+     ],
+     "answer": 0,
+     "why": "Shift the bottleneck = deslocar o gargalo: o ponto de estrangulamento muda de lugar, mas não desaparece."
+    }
+   ]
+  }
+ ]
+}

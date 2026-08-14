@@ -1,0 +1,259 @@
+{
+ "num": 16,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Internal communication is how the company talks to its own people. It can be by email, by video, by meeting or by a simple message on the intranet.<br><br>Good communication is clear, short and friendly. When people know what is happening, they feel part of the team.<br><br>Good internal communication brings people together. It builds trust and helps everyone work as one team.",
+   "items": [
+    {
+     "q": "What is internal communication?",
+     "options": [
+      "How the company sells to clients",
+      "How the company hires new people",
+      "How the company talks to its own people",
+      "How the company pays its bills"
+     ],
+     "answer": 2,
+     "why": "\"Internal communication is how the company talks to its own people.\""
+    },
+    {
+     "q": "According to the text, good communication is…",
+     "options": [
+      "secret and slow",
+      "clear, short and friendly",
+      "long and formal",
+      "loud and funny"
+     ],
+     "answer": 1,
+     "why": "\"Good communication is clear, short and friendly.\""
+    },
+    {
+     "q": "How can the company share a message?",
+     "options": [
+      "By email, video, meeting or the intranet",
+      "By newspaper",
+      "Only by phone",
+      "Only by letter"
+     ],
+     "answer": 0,
+     "why": "\"It can be by email, by video, by meeting or by a simple message on the intranet.\""
+    },
+    {
+     "q": "The text suggests that when people know what is happening, they…",
+     "options": [
+      "work more slowly",
+      "stop reading emails",
+      "feel part of the team",
+      "want to leave the company"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"they feel part of the team\" — saber o que acontece gera pertencimento."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "clear communication helps a team trust each other",
+      "long and difficult messages are best",
+      "only managers need information",
+      "communication is not important at work"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto liga boa comunicação a confiança e a trabalhar como um só time."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver gravando um vídeo curto para toda a empresa. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi everyone, this is Oliver. Thank you for watching this short video. I have some good news to share about a new project.<br><br>Next month we start a new project called Green Office. The goal is simple: use less paper and save energy in every team. It is a small change, but it helps a lot.<br><br>Here is what you need to know. First, we will send an announcement by email this Friday. Please read it. Second, we will have a short meeting on Monday to answer your questions. And third, you can find all the updates on the intranet, in the news page.<br><br>I know we all get many emails every day. So I want this message to be clear and short. If you have a question, just send me a message on the chat. I read all of them.<br><br>Thank you for your time. Let's work together and make this project a success. See you on Monday!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the name of the new project?",
+     "options": [
+      "Green Office",
+      "Clean Desk",
+      "Save the Team",
+      "New Email"
+     ],
+     "answer": 0,
+     "why": "\"a new project called Green Office.\""
+    },
+    {
+     "q": "What is the goal of the project?",
+     "options": [
+      "To hire more people",
+      "To sell more products",
+      "To buy new computers",
+      "To use less paper and save energy"
+     ],
+     "answer": 3,
+     "why": "\"use less paper and save energy in every team.\""
+    },
+    {
+     "q": "When will Oliver send the announcement?",
+     "options": [
+      "Today",
+      "This Friday",
+      "On Monday",
+      "Next month"
+     ],
+     "answer": 1,
+     "why": "\"we will send an announcement by email this Friday.\""
+    },
+    {
+     "q": "Why does Oliver want the message to be short?",
+     "options": [
+      "Because he does not like videos",
+      "Because he is in a hurry",
+      "Because the project is a secret",
+      "Because people already get many emails every day"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"I know we all get many emails every day. So I want this message to be clear and short.\""
+    },
+    {
+     "q": "How would you best describe Oliver's tone?",
+     "options": [
+      "Friendly and positive",
+      "Bored and tired",
+      "Angry and worried",
+      "Serious and cold"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele agradece, dá boas notícias e convida o time a trabalhar junto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We will send an <strong>announcement</strong> to all teams tomorrow.\" An announcement is…",
+     "options": [
+      "a long report",
+      "a phone call",
+      "a public message with news",
+      "a private letter"
+     ],
+     "answer": 2,
+     "why": "Announcement = comunicado: uma mensagem pública com uma novidade."
+    },
+    {
+     "q": "Choose the correct word: \"Please read the company ___ on the intranet every week.\"",
+     "options": [
+      "newsletter",
+      "chair",
+      "office",
+      "meeting"
+     ],
+     "answer": 0,
+     "why": "Newsletter = boletim, que se lê na intranet."
+    },
+    {
+     "q": "Choose the correct word: \"I like to ___ good news with my team.\"",
+     "options": [
+      "close",
+      "clean",
+      "buy",
+      "share"
+     ],
+     "answer": 3,
+     "why": "To share = compartilhar."
+    },
+    {
+     "q": "\"We put all company updates on the <strong>intranet</strong>.\" The intranet is…",
+     "options": [
+      "an internal company website",
+      "a meeting room",
+      "a printed newspaper",
+      "a mobile phone"
+     ],
+     "answer": 0,
+     "why": "Intranet = a rede/site interno da empresa."
+    },
+    {
+     "q": "Choose the correct word: \"A good message is ___ , so everyone understands it fast.\"",
+     "options": [
+      "clear",
+      "closed",
+      "heavy",
+      "dark"
+     ],
+     "answer": 0,
+     "why": "Clear = claro, fácil de entender."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em comunicação de trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>send out</strong> the announcement to everyone?\" To send out means to…",
+     "options": [
+      "print a message",
+      "hide a message",
+      "delete a message",
+      "distribute a message to many people"
+     ],
+     "answer": 3,
+     "why": "Send out = enviar/distribuir para muitas pessoas."
+    },
+    {
+     "q": "\"Let's <strong>catch up</strong> in a short meeting on Monday.\" To catch up means to…",
+     "options": [
+      "run fast",
+      "clean the room",
+      "close the office",
+      "talk and share news"
+     ],
+     "answer": 3,
+     "why": "Catch up = colocar o papo em dia, trocar novidades."
+    },
+    {
+     "q": "\"Please <strong>keep me posted</strong> about the new project.\" This means…",
+     "options": [
+      "send me a letter by post",
+      "give me your seat",
+      "keep me informed with news",
+      "wait for me at the door"
+     ],
+     "answer": 2,
+     "why": "Keep me posted = me mantenha informado."
+    },
+    {
+     "q": "\"I will <strong>reach out</strong> to the team by email.\" To reach out means to…",
+     "options": [
+      "close the door",
+      "finish a task",
+      "leave the company",
+      "contact someone"
+     ],
+     "answer": 3,
+     "why": "Reach out = entrar em contato com alguém."
+    },
+    {
+     "q": "\"Let's <strong>roll out</strong> the new plan next month.\" To roll out means to…",
+     "options": [
+      "start the plan step by step",
+      "hide the plan",
+      "cancel the plan",
+      "read the plan"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar aos poucos, colocar em prática."
+    }
+   ]
+  }
+ ]
+}

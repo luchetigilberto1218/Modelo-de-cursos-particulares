@@ -1,0 +1,259 @@
+{
+ "num": 274,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Managing lead times and cycle times well means measuring them honestly and then attacking them systematically. Many teams still rely on rough averages — \"it takes about three weeks\" — without realising that their real lead time is a mixture: 60% of orders at two weeks, 30% at four weeks, and 10% at six. The average hides everything that matters.<br><br>The fix is to measure the distribution, not just the average. What is the 95th percentile? What is the worst-case? Which steps add the most variation? Once you can see that, improvement becomes focused. You attack the widest gap, the slowest step, the biggest source of variability — not a vague \"be faster\".<br><br>Good lead-time management over a year can shave weeks off the customer experience without adding a single person to the payroll. That is pure efficiency — and it almost always comes from data, not from effort.",
+   "items": [
+    {
+     "q": "According to the text, what is the problem with using a rough average?",
+     "options": [
+      "It is expensive to calculate",
+      "It requires too much data",
+      "It hides everything that matters",
+      "It is only useful for small teams"
+     ],
+     "answer": 2,
+     "why": "\"The average hides everything that matters\" — a média esconde a variação real."
+    },
+    {
+     "q": "What does the text recommend measuring instead of the average?",
+     "options": [
+      "The team's headcount",
+      "The customer's budget",
+      "The distribution",
+      "The number of orders per day"
+     ],
+     "answer": 2,
+     "why": "\"The fix is to measure the distribution, not just the average.\""
+    },
+    {
+     "q": "According to the text, where do lead-time improvements almost always come from?",
+     "options": [
+      "Working longer hours",
+      "Hiring more people",
+      "Larger budgets",
+      "Data, not effort"
+     ],
+     "answer": 3,
+     "why": "\"it almost always comes from data, not from effort.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Variation deserves as much attention as speed",
+      "Adding staff is the best way to cut lead times",
+      "The worst-case matters as much as the typical case",
+      "Focused improvement beats a vague push to be faster"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que ganhos vêm de dados sem adicionar ninguém à folha — logo, contratar não é o caminho central."
+    },
+    {
+     "q": "The example \"60% at two weeks, 30% at four, and 10% at six\" suggests that…",
+     "options": [
+      "the company has no reliable data at all",
+      "the six-week orders are the most common",
+      "most orders are actually delivered late",
+      "the average of \"about three weeks\" understates some customers' real wait"
+     ],
+     "answer": 3,
+     "why": "Inferência: uma fatia real espera quatro ou seis semanas, então a média amigável esconde o pior caso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentar a análise de três meses. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thanks, everyone. For three months we tracked every order end to end, and I want to be honest with you: our friendly line of \"about three weeks\" is not wrong, but it is misleading.<br><br>Here is what the distribution actually looks like. Most orders — roughly six in ten — clear in two weeks. About three in ten take four weeks. And one in ten stretches to six. So when a customer hears \"three weeks\" and then waits five, they don't feel an average. They feel the tail.<br><br>The good news is that the tail is not random. Almost all of it comes from two steps: credit approval and the final quality check. If we fix those two, we can bring the 95th percentile down to four weeks and cut the average by about four days — without adding a single person to the payroll.<br><br>So my proposal is simple. Let's stop quoting a number we can't stand behind, attack the two slowest steps first, and report the worst-case, not just the average. That is where the efficiency is hiding.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "According to Harry, what is wrong with the line \"about three weeks\"?",
+     "options": [
+      "It is not wrong, but it is misleading",
+      "It is completely false",
+      "It is too pessimistic",
+      "It was invented by the customers"
+     ],
+     "answer": 0,
+     "why": "\"our friendly line of 'about three weeks' is not wrong, but it is misleading.\""
+    },
+    {
+     "q": "What proportion of orders stretches to six weeks?",
+     "options": [
+      "About half",
+      "About one in ten",
+      "About three in ten",
+      "About six in ten"
+     ],
+     "answer": 1,
+     "why": "\"one in ten stretches to six.\""
+    },
+    {
+     "q": "Which two steps does Harry say cause almost all of the tail?",
+     "options": [
+      "Warehousing and delivery",
+      "Sales forecasting and invoicing",
+      "Packing and shipping",
+      "Credit approval and the final quality check"
+     ],
+     "answer": 3,
+     "why": "\"Almost all of it comes from two steps: credit approval and the final quality check.\""
+    },
+    {
+     "q": "When Harry says customers \"feel the tail, not the average,\" he means that…",
+     "options": [
+      "the average is calculated incorrectly",
+      "the slow, worst-case orders shape how customers experience the service",
+      "customers prefer a longer quoted time",
+      "customers only remember fast orders"
+     ],
+     "answer": 1,
+     "why": "Inferência: quem espera cinco semanas sente o pior caso, não a média de três."
+    },
+    {
+     "q": "What is Harry's overall attitude in the presentation?",
+     "options": [
+      "Defensive about the current numbers",
+      "Convinced they need to hire more staff",
+      "Honest about the problem but confident it can be fixed",
+      "Indifferent to the customer experience"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele admite o problema (\"be honest\") mas propõe um plano concreto sem aumentar a folha."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>95th percentile</strong> was six weeks, even though the average was three.\" The 95th percentile is…",
+     "options": [
+      "the value below which 95% of cases fall",
+      "the total number of orders",
+      "the fastest 5% of orders",
+      "the exact midpoint of the data"
+     ],
+     "answer": 0,
+     "why": "Percentil 95 = valor abaixo do qual estão 95% dos casos; mostra o quase-pior caso."
+    },
+    {
+     "q": "Choose the correct word: \"We can't plan reliably while the ___ between our fastest and slowest orders is so wide.\"",
+     "options": [
+      "variation",
+      "efficiency",
+      "payroll",
+      "average"
+     ],
+     "answer": 0,
+     "why": "Variation = variação: a diferença entre os casos, inimiga da entrega confiável."
+    },
+    {
+     "q": "\"That change let us <strong>shave</strong> four days off the cycle.\" To shave here means to…",
+     "options": [
+      "measure precisely",
+      "add carefully",
+      "reduce by a small amount",
+      "double gradually"
+     ],
+     "answer": 2,
+     "why": "To shave = reduzir um pouco de cada vez, cortar dias do ciclo."
+    },
+    {
+     "q": "Choose the correct word: \"We improved the numbers without adding a single person to the ___.\"",
+     "options": [
+      "payroll",
+      "distribution",
+      "percentile",
+      "worst-case"
+     ],
+     "answer": 0,
+     "why": "Payroll = folha de pagamento; o ganho veio sem contratar ninguém."
+    },
+    {
+     "q": "\"The <strong>distribution</strong> showed a long tail of slow orders.\" A distribution is…",
+     "options": [
+      "the single most common value",
+      "the average of two numbers",
+      "the total sum of the values",
+      "the way values spread across a range"
+     ],
+     "answer": 3,
+     "why": "Distribution = distribuição: como os valores se espalham, não apenas a média."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre lead time e eficiência. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"If we fix those steps, we can bring the 95th percentile <strong>down to</strong> four weeks.\" Down to signals…",
+     "options": [
+      "the target level reached after a reduction",
+      "the starting point before the change",
+      "a temporary pause",
+      "the amount removed"
+     ],
+     "answer": 0,
+     "why": "Down to marca o nível-alvo alcançado (chegar a quatro semanas)."
+    },
+    {
+     "q": "\"We cut the average <strong>by</strong> four days.\" Here by expresses…",
+     "options": [
+      "the deadline",
+      "the final target value",
+      "the person responsible",
+      "the size of the reduction"
+     ],
+     "answer": 3,
+     "why": "By expressa o tamanho da redução (quanto foi cortado), não o nível final."
+    },
+    {
+     "q": "\"None of these small tweaks will <strong>move the needle</strong> on the six-week orders.\" This means they will…",
+     "options": [
+      "upset the customers",
+      "cost too much",
+      "not make a noticeable difference",
+      "take too long to test"
+     ],
+     "answer": 2,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    },
+    {
+     "q": "\"Let's <strong>zero in on</strong> the two slowest steps first.\" To zero in on means to…",
+     "options": [
+      "focus closely on",
+      "report publicly",
+      "postpone dealing with",
+      "delegate away"
+     ],
+     "answer": 0,
+     "why": "Zero in on = concentrar a atenção em algo específico."
+    },
+    {
+     "q": "\"The RH team agreed the plan but never <strong>followed through</strong> on the quality check.\" They…",
+     "options": [
+      "cancelled it in advance",
+      "carried it to completion",
+      "failed to carry it to completion",
+      "rewrote it from scratch"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado; aqui não levaram."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 448,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In practice, classifying an item as taxable or not is often less obvious than the textbook suggests. A training course paid for by the company — is it a taxable benefit or a legitimate business expense? A small gift to a client — deductible or non-deductible? A reimbursed meal during a long trip — neutral or a disguised benefit?<br><br>Each of these has an answer in the local rules, but the answer often depends on small details. A training course that genuinely supports the employee's role is usually not taxable. A gift above a certain value often is. A meal during a documented business trip is different from a meal during a leisure evening.<br><br>A good intermediate tax professional does not guess. They document the reasoning for every borderline case the first time it appears, and then follow the same reasoning consistently afterwards — so that the tax office, if it asks, gets the same clear answer every time.",
+   "items": [
+    {
+     "q": "According to the text, why is classifying an item harder than the textbook suggests?",
+     "options": [
+      "The local rules do not exist yet",
+      "Companies refuse to keep records",
+      "The answer often depends on small details",
+      "Textbooks are usually out of date"
+     ],
+     "answer": 2,
+     "why": "\"the answer often depends on small details\" — o texto é claro sobre isso."
+    },
+    {
+     "q": "When is a training course usually NOT taxable, according to the text?",
+     "options": [
+      "When it genuinely supports the employee's role",
+      "When it is paid in instalments",
+      "When it happens outside working hours",
+      "When it is cheap"
+     ],
+     "answer": 0,
+     "why": "\"A training course that genuinely supports the employee's role is usually not taxable.\""
+    },
+    {
+     "q": "What does a good intermediate tax professional do with borderline cases?",
+     "options": [
+      "Treats every item as taxable to be safe",
+      "Documents the reasoning the first time and follows it consistently",
+      "Guesses quickly to save time",
+      "Waits for the tax office to decide"
+     ],
+     "answer": 1,
+     "why": "\"They document the reasoning for every borderline case the first time it appears, and then follow the same reasoning consistently.\""
+    },
+    {
+     "q": "The contrast between a meal on a documented business trip and a meal during a leisure evening suggests that…",
+     "options": [
+      "leisure meals are always taxable benefits",
+      "meals are never deductible",
+      "trips should be avoided to reduce tax",
+      "the context of an expense, not just its type, decides how it is treated"
+     ],
+     "answer": 3,
+     "why": "Inferência: o mesmo item (refeição) muda de classificação conforme o contexto documentado."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "The same detail can change whether an item is taxable",
+      "Consistency helps when the tax office asks questions",
+      "Documenting reasoning early saves trouble later",
+      "Since the rules are complex, a quick guess is good enough for borderline items"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto inteiro defende o oposto — \"does not guess\" e documenta o raciocínio."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte explicando o memorando interno. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, I'm putting together a short internal memo, because we keep having the same argument every month about three items, and I want us to decide the logic once.<br><br>Take training first. Last month someone asked me whether the leadership course counted as a taxable benefit. I told them that if the course genuinely supports the person's role, we treat it as a business expense — not taxable. So I'll write that down as our rule, with one line of reasoning next to it.<br><br>Gifts are trickier. A small branded notebook to a client is fine, but anything above the local threshold I'd flag as non-deductible. The value is what tips it over, so the memo will state the exact figure rather than leave people guessing.<br><br>And meals. A reimbursed dinner during a documented trip is neutral. A dinner on a leisure evening that quietly ends up on expenses is a disguised benefit, and we should not be paying for it. The difference is the paperwork behind it.<br><br>The point of all this is consistency. If the tax office ever asks, I want every one of us giving the same answer, because we wrote the reasoning down the first time — not because we happened to remember it.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why is Charlotte writing the internal memo?",
+     "options": [
+      "She is training a new hire",
+      "The team keeps having the same argument every month about three items",
+      "The tax office demanded it",
+      "A new law changed the rules"
+     ],
+     "answer": 1,
+     "why": "\"we keep having the same argument every month about three items, and I want us to decide the logic once.\""
+    },
+    {
+     "q": "How does Charlotte say the leadership training course should be treated?",
+     "options": [
+      "As a taxable benefit",
+      "As a disguised benefit",
+      "As a business expense, if it genuinely supports the person's role",
+      "As a non-deductible cost"
+     ],
+     "answer": 2,
+     "why": "\"if the course genuinely supports the person's role, we treat it as a business expense — not taxable.\""
+    },
+    {
+     "q": "What decides whether a gift becomes non-deductible, according to Charlotte?",
+     "options": [
+      "Whether it is branded",
+      "Whether it is given in person",
+      "Its value, once it goes above the local threshold",
+      "Whether the client is local"
+     ],
+     "answer": 2,
+     "why": "\"anything above the local threshold I'd flag as non-deductible. The value is what tips it over.\""
+    },
+    {
+     "q": "When Charlotte says \"The difference is the paperwork behind it,\" she means that…",
+     "options": [
+      "the receipts are usually lost",
+      "meals are always taxable",
+      "the trip must be approved in advance",
+      "documentation is what separates a neutral meal from a disguised benefit"
+     ],
+     "answer": 3,
+     "why": "Inferência: é a documentação da viagem que distingue uma refeição neutra de um benefício disfarçado."
+    },
+    {
+     "q": "What does Charlotte most want the memo to achieve?",
+     "options": [
+      "Fewer client gifts overall",
+      "Faster answers, even if they vary",
+      "Lower taxes for the company",
+      "Everyone giving the same answer because the reasoning was written down"
+     ],
+     "answer": 3,
+     "why": "Inferência: ela enfatiza consistência — \"the same answer… because we wrote the reasoning down the first time.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"A gift above the limit is treated as <strong>non-deductible</strong>.\" Something deductible is…",
+     "options": [
+      "an amount that can be subtracted from taxable profit",
+      "a payment made in cash only",
+      "an expense that must be repaid twice",
+      "a bonus paid to the client"
+     ],
+     "answer": 0,
+     "why": "Deductible = dedutível: pode ser abatido do lucro tributável. Non-deductible é o oposto."
+    },
+    {
+     "q": "Choose the correct word: \"The company agreed to ___ the employee for the meals he paid for during the trip.\"",
+     "options": [
+      "reimburse",
+      "classify",
+      "deduct",
+      "disguise"
+     ],
+     "answer": 0,
+     "why": "To reimburse = reembolsar: devolver ao empregado o que ele gastou."
+    },
+    {
+     "q": "\"A dinner on a leisure night that ends up on expenses is a <strong>disguised benefit</strong>.\" This means…",
+     "options": [
+      "a personal perk presented as if it were a business cost",
+      "a gift given to a client",
+      "a benefit that is legally tax-free",
+      "a benefit that everyone can see clearly"
+     ],
+     "answer": 0,
+     "why": "Disguised benefit = benefício disfarçado: uma vantagem pessoal mascarada de despesa de negócio."
+    },
+    {
+     "q": "Choose the correct term: \"A training course, a small gift, a reimbursed meal — each one is a ___ that could go either way.\"",
+     "options": [
+      "business expense",
+      "taxable benefit",
+      "leisure evening",
+      "borderline case"
+     ],
+     "answer": 3,
+     "why": "Borderline case = caso limítrofe: pode ser classificado de duas formas conforme os detalhes."
+    },
+    {
+     "q": "\"We apply the same rule <strong>consistently</strong> every month.\" This means we apply it…",
+     "options": [
+      "as an exception",
+      "in the same way each time, without varying",
+      "faster than before",
+      "only when the tax office asks"
+     ],
+     "answer": 1,
+     "why": "Consistently = consistentemente: da mesma maneira, sempre — o oposto de decidir caso a caso ao acaso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em reuniões de contabilidade e tributação. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager still has to <strong>sign off on</strong> the classification before we file it.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "announce to the client",
+      "postpone indefinitely",
+      "comment informally"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new classification memo to every regional office next month.\" To roll out means to…",
+     "options": [
+      "implement it in stages",
+      "cancel gradually",
+      "keep it secret",
+      "translate it"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two accountants <strong>pushed back on</strong> treating the meal as neutral.\" They…",
+     "options": [
+      "approved it at once",
+      "forgot to review it",
+      "resisted or disagreed with it",
+      "rewrote the whole memo"
+     ],
+     "answer": 2,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"They agreed to document each case but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "filed it early",
+      "changed the rule halfway",
+      "delegated it to the tax office",
+      "failed to carry it to completion"
+     ],
+     "answer": 3,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Before the audit, let's <strong>tighten up</strong> how we record borderline expenses.\" To tighten up means to…",
+     "options": [
+      "make it faster and looser",
+      "delay it until next year",
+      "make it stricter and more careful",
+      "hand it to another team"
+     ],
+     "answer": 2,
+     "why": "Tighten up = apertar, tornar mais rigoroso e cuidadoso um processo ou controle."
+    }
+   ]
+  }
+ ]
+}

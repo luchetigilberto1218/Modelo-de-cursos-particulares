@@ -1,0 +1,259 @@
+{
+ "num": 1095,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "We measure our products in kilos, bags and tonnes. One bag of sugar weighs 50 kilos. One tonne equals 1,000 kilos.<br><br>A big ship can carry 50,000 tonnes of sugar. That is a lot! We use a scale to check the weight. The weight goes on every label.<br><br>Today you learn 5 important words. We start slow. You can do it! English comes in CAN's, not in CAN'Ts.",
+   "items": [
+    {
+     "q": "How much does one bag of sugar weigh?",
+     "options": [
+      "1,000 kilos",
+      "50 kilos",
+      "5 kilos",
+      "50,000 tonnes"
+     ],
+     "answer": 1,
+     "why": "\"One bag of sugar weighs 50 kilos.\""
+    },
+    {
+     "q": "How many kilos are in one tonne?",
+     "options": [
+      "1,000",
+      "500",
+      "50",
+      "50,000"
+     ],
+     "answer": 0,
+     "why": "\"One tonne equals 1,000 kilos.\""
+    },
+    {
+     "q": "What do we use to check the weight?",
+     "options": [
+      "A bag",
+      "A scale",
+      "A label",
+      "A ship"
+     ],
+     "answer": 1,
+     "why": "\"We use a scale to check the weight.\""
+    },
+    {
+     "q": "The text says the weight goes on every label. This suggests that…",
+     "options": [
+      "the weight is not important",
+      "we never write the weight",
+      "labels have no numbers",
+      "the weight is important information"
+     ],
+     "answer": 3,
+     "why": "Inferência: se o peso está em toda etiqueta, é uma informação importante."
+    },
+    {
+     "q": "A ship carries 50,000 tonnes. The text suggests a ship can carry…",
+     "options": [
+      "no sugar at all",
+      "a very small amount",
+      "a very large amount",
+      "only one bag"
+     ],
+     "answer": 2,
+     "why": "Inferência: 50.000 toneladas é muito — \"That is a lot!\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça o colaborador no depósito. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning. I am at the warehouse today. I have a new shipment of sugar here, and I need to weigh it.<br><br>First, I put one bag on the scale. The scale shows the weight. One bag weighs 50 kilos. That is normal. Every bag is 50 kilos.<br><br>Now I count the bags. I have 20 bags. Twenty bags times 50 kilos is 1,000 kilos. So this is one tonne. One tonne equals 1,000 kilos.<br><br>I write the weight on the label. The weight goes on every label, so the client can check it. This is very important.<br><br>I check the scale every day. A good scale gives the right number. If the scale is wrong, the weight is wrong too. So I clean it and I test it in the morning.<br><br>Numbers with units are easy: 50 kilos, 20 bags, one tonne. We start slow, and we do it right. You can do it too!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where is the speaker today?",
+     "options": [
+      "At the office",
+      "On a ship",
+      "At home",
+      "At the warehouse"
+     ],
+     "answer": 3,
+     "why": "\"I am at the warehouse today.\""
+    },
+    {
+     "q": "How many bags does the speaker have?",
+     "options": [
+      "10 bags",
+      "50 bags",
+      "15 bags",
+      "20 bags"
+     ],
+     "answer": 3,
+     "why": "\"I have 20 bags.\""
+    },
+    {
+     "q": "Why does the speaker check the scale every day?",
+     "options": [
+      "Because the client is there",
+      "Because a good scale gives the right number",
+      "To count the ships",
+      "To make the bags heavier"
+     ],
+     "answer": 1,
+     "why": "\"A good scale gives the right number. If the scale is wrong, the weight is wrong too.\""
+    },
+    {
+     "q": "Twenty bags of 50 kilos make one tonne. This suggests that…",
+     "options": [
+      "twenty bags is 50 kilos",
+      "one tonne is 1,000 kilos",
+      "one bag is one tonne",
+      "one tonne is 500 kilos"
+     ],
+     "answer": 1,
+     "why": "Inferência: 20 × 50 = 1.000 kilos = uma tonelada."
+    },
+    {
+     "q": "The speaker writes the weight so the client can check it. This suggests the weight must be…",
+     "options": [
+      "a secret",
+      "correct and clear",
+      "very high",
+      "hidden from the client"
+     ],
+     "answer": 1,
+     "why": "Inferência: se o cliente confere, o peso precisa estar certo e claro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"One <strong>tonne</strong> equals 1,000 kilos.\" A tonne is…",
+     "options": [
+      "a machine",
+      "a unit of weight (1,000 kilos)",
+      "a type of bag",
+      "a small box"
+     ],
+     "answer": 1,
+     "why": "Tonne = tonelada, uma unidade de peso igual a 1.000 quilos."
+    },
+    {
+     "q": "Choose the correct word: \"Please put the sugar on the ___ to see the weight.\"",
+     "options": [
+      "scale",
+      "label",
+      "ship",
+      "office"
+     ],
+     "answer": 0,
+     "why": "Scale = balança, o que mostra o peso."
+    },
+    {
+     "q": "\"I carry one <strong>bag</strong> of sugar.\" A bag here is…",
+     "options": [
+      "a scale",
+      "a saca (a container of sugar)",
+      "a number",
+      "a ship"
+     ],
+     "answer": 1,
+     "why": "Bag = saca, o recipiente com o açúcar."
+    },
+    {
+     "q": "Choose the correct word: \"The label shows the ___ : 50 kilos.\"",
+     "options": [
+      "office",
+      "morning",
+      "ship",
+      "weight"
+     ],
+     "answer": 3,
+     "why": "Weight = peso; é o que a etiqueta mostra."
+    },
+    {
+     "q": "\"A bag weighs 50 <strong>kilos</strong>.\" A kilo is…",
+     "options": [
+      "a label",
+      "a quilo (a unit of weight)",
+      "a type of ship",
+      "a warehouse"
+     ],
+     "answer": 1,
+     "why": "Kilo = quilo, uma unidade de peso."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no depósito e no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>weigh</strong> this bag for me?\" To weigh means to…",
+     "options": [
+      "carry it away",
+      "open it",
+      "clean it",
+      "measure the weight"
+     ],
+     "answer": 3,
+     "why": "To weigh = pesar, medir o peso."
+    },
+    {
+     "q": "\"Please <strong>check</strong> the scale every morning.\" To check means to…",
+     "options": [
+      "throw away",
+      "look at it to see if it is right",
+      "buy",
+      "sell"
+     ],
+     "answer": 1,
+     "why": "To check = verificar, conferir se está certo."
+    },
+    {
+     "q": "\"We need to <strong>write down</strong> the weight.\" To write down means to…",
+     "options": [
+      "put it on paper",
+      "count the bags",
+      "forget it",
+      "say it out loud"
+     ],
+     "answer": 0,
+     "why": "Write down = anotar, escrever no papel ou etiqueta."
+    },
+    {
+     "q": "\"The ship can <strong>carry</strong> 50,000 tonnes.\" To carry means to…",
+     "options": [
+      "sell the sugar",
+      "count the kilos",
+      "hold and transport it",
+      "weigh the bags"
+     ],
+     "answer": 2,
+     "why": "To carry = carregar, transportar algo."
+    },
+    {
+     "q": "\"You can <strong>do it</strong>! We start slow.\" \"You can do it\" means…",
+     "options": [
+      "you must stop now",
+      "the work is finished",
+      "you are able to succeed",
+      "the scale is broken"
+     ],
+     "answer": 2,
+     "why": "\"You can do it\" = você consegue, uma frase de incentivo."
+    }
+   ]
+  }
+ ]
+}

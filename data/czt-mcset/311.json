@@ -10,9 +10,9 @@
     {
      "q": "What is route planning?",
      "options": [
-      "Hiring more drivers",
-      "Cleaning the truck every morning",
       "Buying a new delivery van",
+      "Cleaning the truck every morning",
+      "Hiring more drivers",
       "Choosing which roads and order to use for deliveries"
      ],
      "answer": 3,
@@ -21,42 +21,42 @@
     {
      "q": "What happens if the driver takes the stops in a bad order?",
      "options": [
-      "He has fewer stops",
+      "He makes more money",
       "He finishes by lunchtime",
-      "He sits in traffic all day",
-      "He makes more money"
+      "He has fewer stops",
+      "He sits in traffic all day"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"…in a bad order and sit in traffic all day.\""
     },
     {
      "q": "Which is one of the simple rules in the text?",
      "options": [
-      "Skip the hard stops",
+      "Group your stops by neighbourhood",
       "Drive as fast as possible",
-      "Deliver at night",
-      "Group your stops by neighbourhood"
+      "Skip the hard stops",
+      "Deliver at night"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Group your stops by neighbourhood.\""
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "A good order saves hours of driving",
       "A small buffer helps with surprises",
       "Planning in the morning is a waste of time",
-      "Doubling back is a bad idea"
+      "Doubling back is a bad idea",
+      "A good order saves hours of driving"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: o texto inteiro diz que planejar de manhã economiza horas — ele não concordaria que é perda de tempo."
     },
     {
      "q": "The text suggests that software…",
      "options": [
-      "is not useful for delivery",
-      "always makes mistakes",
       "replaces every driver",
+      "always makes mistakes",
+      "is not useful for delivery",
       "uses the same logic, only faster"
      ],
      "answer": 3,
@@ -77,34 +77,34 @@
     {
      "q": "What are Harry and the planner looking at?",
      "options": [
-      "Next year's budget",
       "A new truck",
-      "Yesterday's delivery routes",
-      "The driver's salary"
+      "The driver's salary",
+      "Next year's budget",
+      "Yesterday's delivery routes"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Let's look at yesterday's routes together.\""
     },
     {
      "q": "Why was going north, then south, then north again a problem?",
      "options": [
-      "It was doubling back and wasted time and fuel",
-      "The driver got lost",
+      "There were too many stops",
       "The roads were closed",
-      "There were too many stops"
+      "It was doubling back and wasted time and fuel",
+      "The driver got lost"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"That is doubling back. It wastes a lot of time and fuel.\""
     },
     {
      "q": "Why were the last two deliveries late?",
      "options": [
-      "There was heavy traffic and no buffer time",
-      "The driver forgot the addresses",
       "The van broke down",
-      "The customer was not home"
+      "The customer was not home",
+      "The driver forgot the addresses",
+      "There was heavy traffic and no buffer time"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"there was heavy traffic on the bridge… the driver had no extra time.\""
     },
     {
@@ -112,21 +112,21 @@
      "options": [
       "Angry and disappointed",
       "He thinks the planner should quit",
-      "Generally positive, with two things to improve",
-      "He does not care about the routes"
+      "He does not care about the routes",
+      "Generally positive, with two things to improve"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"You did a good job on the other stops… Just remember two things.\" Ele corrige com bom tom."
     },
     {
      "q": "What does Harry believe about morning planning?",
      "options": [
-      "It is not really necessary",
-      "It should be done by software only",
       "It should take the whole morning",
-      "A few minutes in the morning saves hours later"
+      "A few minutes in the morning saves hours later",
+      "It should be done by software only",
+      "It is not really necessary"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"A few minutes here in the morning saves us hours in the afternoon.\""
     }
    ]
@@ -141,8 +141,8 @@
      "options": [
       "a type of box",
       "the path he drives to make deliveries",
-      "the name of the truck",
-      "the driver's lunch break"
+      "the driver's lunch break",
+      "the name of the truck"
      ],
      "answer": 1,
      "why": "Route = rota: o caminho das entregas."
@@ -150,10 +150,10 @@
     {
      "q": "Choose the correct word: \"Let's group the deliveries by ___, so we don't drive across the city many times.\"",
      "options": [
-      "traffic",
+      "surprise",
       "neighbourhood",
-      "logic",
-      "surprise"
+      "traffic",
+      "logic"
      ],
      "answer": 1,
      "why": "Neighbourhood = bairro. Agrupar por bairro evita cruzar a cidade."
@@ -161,34 +161,34 @@
     {
      "q": "\"We always leave a small <strong>buffer</strong> in the schedule.\" A buffer is…",
      "options": [
-      "a faster road",
-      "a second driver",
       "extra time for surprises",
+      "a second driver",
+      "a faster road",
       "a bigger truck"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Buffer = margem: um tempo extra para imprevistos."
     },
     {
      "q": "Choose the correct phrase: \"Don't ___ on the same road — it wastes time.\"",
      "options": [
-      "save time",
       "group stops",
-      "plan ahead",
-      "double back"
+      "double back",
+      "save time",
+      "plan ahead"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "To double back = voltar pelo mesmo caminho, um dos maiores desperdícios de tempo."
     },
     {
      "q": "\"Good planning helps us <strong>save time</strong>.\" To save time means to…",
      "options": [
-      "work at night",
-      "add more stops",
       "use less time",
-      "drive faster only"
+      "work at night",
+      "drive faster only",
+      "add more stops"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "To save time = economizar tempo, usar menos tempo."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the new route plan.\" To sign off on means to…",
      "options": [
-      "delete it",
       "ignore it",
       "formally approve it",
+      "delete it",
       "print it"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new planning software next month.\" To roll out means to…",
      "options": [
-      "hide it from the team",
       "throw it away",
-      "sell it to another company",
-      "start using it step by step"
+      "hide it from the team",
+      "start using it step by step",
+      "sell it to another company"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Roll out = colocar em uso de forma progressiva."
     },
     {
      "q": "\"Two drivers <strong>pushed back on</strong> the new route.\" They…",
      "options": [
       "agreed at once",
-      "forgot about it",
+      "resisted or disagreed with it",
       "drove it perfectly",
-      "resisted or disagreed with it"
+      "forgot about it"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Push back on = resistir, discordar."
     },
     {
      "q": "\"We made a plan, but the team did not <strong>follow through</strong>.\" They…",
      "options": [
+      "planned too much",
       "changed the truck",
       "did not finish what they planned",
-      "worked extra hours",
-      "planned too much"
+      "worked extra hours"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"Grouping stops by neighbourhood really <strong>moves the needle</strong> on delivery time.\" This means it…",
      "options": [
       "breaks the truck",
+      "costs a lot of money",
       "makes no difference at all",
-      "makes a real, noticeable difference",
-      "costs a lot of money"
+      "makes a real, noticeable difference"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
     }
    ]

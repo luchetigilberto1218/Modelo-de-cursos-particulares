@@ -8,12 +8,12 @@
     {
      "q": "According to the text, what makes the difference between a good and a bad meeting?",
      "options": [
-      "The length",
       "The topic",
       "The chair",
+      "The length",
       "The number of attendees"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"The difference is not the topic — it is the chair.\""
     },
     {
@@ -30,34 +30,34 @@
     {
      "q": "What does the text say a meeting should close with?",
      "options": [
-      "A vote",
-      "A round of applause",
       "Decisions and owners",
-      "A summary email"
+      "A summary email",
+      "A vote",
+      "A round of applause"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"they close with decisions and owners\" — nomeando quem faz o quê e até quando."
     },
     {
      "q": "The text criticises \"let's think about it\" because it…",
      "options": [
-      "is too informal",
-      "names no owner, deadline or deliverable",
+      "wastes the agenda",
       "excludes attendees",
-      "wastes the agenda"
+      "is too informal",
+      "names no owner, deadline or deliverable"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: sem nomear quem pensa, até quando e o que traz de volta, a frase não gera ação."
     },
     {
      "q": "What, according to the text, is the real test of a meeting?",
      "options": [
       "How many people spoke",
-      "How long it lasted",
       "Whether people remember the decisions a week later",
+      "How long it lasted",
       "Whether everyone agreed"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"whether anyone, one week later, can describe what was decided and who is doing what.\""
     }
    ]
@@ -74,32 +74,32 @@
      "options": [
       "By asking who is missing",
       "By reviewing last month's minutes",
-      "By reading the full agenda aloud",
-      "By noting the time limit and number of topics"
+      "By noting the time limit and number of topics",
+      "By reading the full agenda aloud"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"We've got thirty minutes and three topics, so I'll keep us moving.\""
     },
     {
      "q": "What was decided about the budget?",
      "options": [
-      "To cut the forecast",
-      "To postpone the decision",
       "To hold spending until Q3",
-      "To increase spending"
+      "To cut the forecast",
+      "To increase spending",
+      "To postpone the decision"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"we agreed to hold spending until Q3… I'd like to confirm we're still holding.\""
     },
     {
      "q": "Why does Oliver \"park the detail\" on the launch date?",
      "options": [
+      "Because it is not important",
       "Because nobody prepared for it",
       "Because it could make the topic run long",
-      "Because finance must decide it",
-      "Because it is not important"
+      "Because finance must decide it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I know this could run long, so let's park the detail and just decide the date today.\""
     },
     {
@@ -116,12 +116,12 @@
     {
      "q": "What does Oliver do at twenty-six minutes?",
      "options": [
-      "Wraps up by restating the decisions and owners",
-      "Extends the meeting",
       "Cancels the last item",
-      "Adds a fourth topic"
+      "Adds a fourth topic",
+      "Extends the meeting",
+      "Wraps up by restating the decisions and owners"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"Let me wrap up: budget held, Priya following up; launch on the fourteenth; Tom on the job description by Wednesday.\""
     }
    ]
@@ -133,55 +133,55 @@
      "q": "\"Sofia will **chair** the steering committee this quarter.\" To chair a meeting means to…",
      "options": [
       "attend it",
+      "book the room",
       "lead and run it",
-      "take the minutes",
-      "book the room"
+      "take the minutes"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "To chair = presidir, conduzir a reunião."
     },
     {
      "q": "\"The discussion started to **drift**, so he brought it back to the agenda.\" To drift means to…",
      "options": [
-      "speed up",
-      "get formal",
       "move away from the point",
-      "end early"
+      "end early",
+      "speed up",
+      "get formal"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "To drift = desviar do assunto."
     },
     {
      "q": "Choose the correct word: \"Could you circulate the ___ so everyone knows what we'll cover?\"",
      "options": [
-      "agenda",
-      "takeaway",
       "attendee",
-      "minutes"
+      "minutes",
+      "takeaway",
+      "agenda"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Agenda = pauta, enviada antes; minutes (ata) é o registro do que aconteceu."
     },
     {
      "q": "The **minutes** of a meeting are…",
      "options": [
       "its length in time",
-      "the breaks taken",
       "the written record of what was discussed and decided",
+      "the breaks taken",
       "the list of invitees"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Minutes = ata; o registro do que foi discutido e decidido."
     },
     {
      "q": "Choose the correct term: \"Let's ___ — we're out of time. Priya owns the follow-up.\"",
      "options": [
-      "interrupt politely",
-      "drift",
+      "keep on track",
       "wrap up",
-      "keep on track"
+      "interrupt politely",
+      "drift"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "To wrap up = concluir, encerrar."
     }
    ]
@@ -193,9 +193,9 @@
      "q": "\"Can we **circle back to** the budget after lunch?\" To circle back to means to…",
      "options": [
       "return to it later",
-      "cancel it",
+      "escalate it",
       "vote on it",
-      "escalate it"
+      "cancel it"
      ],
      "answer": 0,
      "why": "Circle back to = voltar a um assunto mais tarde."
@@ -203,20 +203,20 @@
     {
      "q": "\"Sorry to **jump in**, but I have a quick point.\" To jump in means to…",
      "options": [
-      "leave the call",
-      "raise your hand",
       "change the topic",
-      "enter the conversation"
+      "raise your hand",
+      "enter the conversation",
+      "leave the call"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Jump in = entrar na conversa, muitas vezes interrompendo brevemente."
     },
     {
      "q": "\"Let's **move on** — we've covered this.\" To move on means to…",
      "options": [
+      "take a break",
       "repeat the point",
       "end the meeting",
-      "take a break",
       "go to the next topic"
      ],
      "answer": 3,
@@ -225,23 +225,23 @@
     {
      "q": "\"I'll **follow up** with finance and report back.\" To follow up means to…",
      "options": [
-      "take further action after the meeting",
-      "ignore it",
       "cancel the task",
-      "delegate it upwards"
+      "delegate it upwards",
+      "ignore it",
+      "take further action after the meeting"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Follow up = dar sequência, tomar a ação seguinte."
     },
     {
      "q": "\"We're **running over** — let's keep the last point short.\" To run over means to…",
      "options": [
-      "finish early",
       "start late",
       "exceed the planned time",
+      "finish early",
       "skip a topic"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Run over = passar do tempo previsto."
     }
    ]

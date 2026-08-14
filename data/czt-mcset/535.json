@@ -1,0 +1,259 @@
+{
+ "num": 535,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At executive level, threat intelligence is about knowing, honestly, which attacks are most likely to hit this company — and being ready for them before they arrive. Every industry has its own attack patterns; every company has its own weak points. The useful question is never \"are we safe from everything?\" but \"are we ready for the specific handful of things that realistically target companies like us?\"<br><br>Had we known last year how common supplier-chain attacks would become in our sector, we would have invested differently. But we did know. The reports were sitting in the security team's inbox. What we lacked was not information — it was the executive habit of acting on threat intelligence instead of quietly filing it away.<br><br>The senior discipline is reading the weather, not just the thermometer. It is the willingness to say, explicitly: this is more likely than we thought, and therefore this is where we invest next. That sentence, spoken regularly, is worth more than any defensive technology the budget can buy.",
+   "items": [
+    {
+     "q": "According to the text, what is the useful executive question about security?",
+     "options": [
+      "\"How much does defensive technology cost?\"",
+      "\"Which industry has the most attack patterns?\"",
+      "\"Are we safe from everything?\"",
+      "\"Are we ready for the threats that realistically target companies like us?\""
+     ],
+     "answer": 3,
+     "why": "O texto contrapõe as duas perguntas: a útil é a segunda, focada no punhado de ameaças realistas."
+    },
+    {
+     "q": "What does the author say the company actually lacked last year?",
+     "options": [
+      "A large enough security budget",
+      "The reports about supplier-chain attacks",
+      "Information about the sector",
+      "The habit of acting on the intelligence it already had"
+     ],
+     "answer": 3,
+     "why": "\"We did know… What we lacked was… the executive habit of acting on threat intelligence instead of filing it.\""
+    },
+    {
+     "q": "The distinction between \"reading the weather\" and \"reading the thermometer\" most likely suggests that…",
+     "options": [
+      "security is impossible to forecast",
+      "executives should monitor the climate crisis",
+      "leaders should anticipate patterns, not just record isolated measurements",
+      "raw data matters more than interpretation"
+     ],
+     "answer": 2,
+     "why": "Inferência: o termômetro dá um número solto; ler o tempo é antecipar o padrão — a disciplina sênior."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Executives should name explicitly where the risk has grown.",
+      "Reports are worthless if nobody acts on them.",
+      "Buying the best defensive technology matters more than acting on intelligence.",
+      "Different sectors face different attack patterns."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz que a frase dita regularmente vale mais do que qualquer tecnologia que o orçamento compra."
+    },
+    {
+     "q": "What does the sentence \"But we did know\" imply about the previous year's failure?",
+     "options": [
+      "The failure was one of action, not of information",
+      "The company invested too heavily in technology",
+      "The threat was genuinely impossible to foresee",
+      "The security team had hidden the reports"
+     ],
+     "answer": 0,
+     "why": "Inferência: a informação existia na caixa de entrada; o que faltou foi agir sobre ela."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver falando à liderança sobre a nova rotina de reporte de ameaças. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let me be blunt about what I'm changing. From next month, the top three attacks most likely to hit us will sit at the top of every executive agenda — not in a folder somebody opens once a quarter.<br><br>Here is why. If the supplier-chain report had reached this table last spring, rather than the security team's inbox, I suspect we would have moved money before the incident, not after it. We had the intelligence. We simply never turned it into a decision.<br><br>So the format is deliberately narrow. Three threats, ranked by likelihood for a company our size, in our sector. For each one, a single sentence: this became more probable, and this is where we spend next. No forty-slide deck, no jargon nobody follows.<br><br>What I want from all of you is the willingness to say, out loud, when something has shifted. If you'd flagged the shift and we still chose not to act, that's a decision we own together. But drifting into an attack we saw coming — that I won't defend again.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the main change Oliver is introducing?",
+     "options": [
+      "Putting the top three likely attacks on every executive agenda",
+      "A quarterly review of the security budget",
+      "A forty-slide deck for each threat",
+      "Replacing the security team's reporting tools"
+     ],
+     "answer": 0,
+     "why": "\"the top three attacks most likely to hit us will sit at the top of every executive agenda.\""
+    },
+    {
+     "q": "Why does Oliver mention the supplier-chain report?",
+     "options": [
+      "To argue the incident was unforeseeable",
+      "To praise the security team's thoroughness",
+      "To announce a new supplier policy",
+      "To illustrate intelligence that never became a decision in time"
+     ],
+     "answer": 3,
+     "why": "\"We had the intelligence. We simply never turned it into a decision.\""
+    },
+    {
+     "q": "How does Oliver want each threat to be presented?",
+     "options": [
+      "As a detailed technical appendix",
+      "As a ranked list of vendors",
+      "As three threats ranked by likelihood, each with a single action sentence",
+      "As a full board report with jargon"
+     ],
+     "answer": 2,
+     "why": "\"Three threats, ranked by likelihood… For each one, a single sentence… No forty-slide deck.\""
+    },
+    {
+     "q": "When Oliver says \"that's a decision we own together,\" he most likely means…",
+     "options": [
+      "no one should ever be blamed",
+      "decisions must always be unanimous",
+      "conscious choices not to act are shared responsibility, unlike being caught unaware",
+      "the security team alone is accountable"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele distingue a decisão consciente (aceitável, compartilhada) de deixar passar uma ameaça já sinalizada."
+    },
+    {
+     "q": "What does Oliver's tone suggest about his attitude to the past incident?",
+     "options": [
+      "He considers the topic too sensitive to raise",
+      "He is frustrated by the failure to act but focused on a concrete fix",
+      "He blames external suppliers entirely",
+      "He is resigned and expects it to recur"
+     ],
+     "answer": 1,
+     "why": "Inferência: ele é direto sobre a falha (\"that I won't defend again\"), mas propõe um formato claro para corrigi-la."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Our <strong>threat intelligence</strong> flagged the campaign weeks before it broke.\" Threat intelligence is…",
+     "options": [
+      "the company's antivirus software",
+      "the legal team's compliance record",
+      "a list of employee passwords",
+      "structured knowledge about the attacks likely to hit an organisation"
+     ],
+     "answer": 3,
+     "why": "Threat intelligence = inteligência de ameaças: o conhecimento organizado sobre os ataques prováveis."
+    },
+    {
+     "q": "Choose the correct word: \"Owning the technology is not enough; we need the operational ___ to respond within the hour.\"",
+     "options": [
+      "readiness",
+      "jargon",
+      "thermometer",
+      "inbox"
+     ],
+     "answer": 0,
+     "why": "Readiness = prontidão: estar preparado para responder quando o ataque chegar."
+    },
+    {
+     "q": "\"Every sector has its own <strong>attack patterns</strong>.\" An attack pattern is…",
+     "options": [
+      "a single isolated breach",
+      "a quarterly security report",
+      "a recurring method attackers typically use",
+      "a defensive firewall rule"
+     ],
+     "answer": 2,
+     "why": "Attack pattern = padrão de ataque: a forma recorrente que os atacantes costumam usar."
+    },
+    {
+     "q": "Choose the correct term: \"Attackers rarely go through the front door; they look for the ___ others have overlooked.\"",
+     "options": [
+      "cadence",
+      "weak point",
+      "weather",
+      "readiness"
+     ],
+     "answer": 1,
+     "why": "Weak point = ponto fraco: a vulnerabilidade negligenciada por onde o ataque entra."
+    },
+    {
+     "q": "\"The reports were simply <strong>filed away</strong> and forgotten.\" To file something away here means to…",
+     "options": [
+      "act on it decisively",
+      "escalate it to the board",
+      "store it out of sight without acting on it",
+      "delete it permanently"
+     ],
+     "answer": 2,
+     "why": "To file = arquivar: guardar sem tomar ação — exatamente a falha que a lição critica."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em reuniões de segurança. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the incident-response budget.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "announce to the press",
+      "postpone indefinitely",
+      "comment informally"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the new threat-reporting cadence across all units next quarter.\" To roll out means to…",
+     "options": [
+      "test in secret",
+      "cancel gradually",
+      "summarise to the board",
+      "implement in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two directors <strong>pushed back on</strong> the idea of monthly briefings.\" They…",
+     "options": [
+      "resisted or challenged it",
+      "rewrote it entirely",
+      "forgot to read it",
+      "approved it at once"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, questionar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"We identified the risk but never <strong>followed through</strong> on the mitigation.\" They…",
+     "options": [
+      "failed to carry it to completion",
+      "documented it thoroughly",
+      "escalated it too quickly",
+      "delegated it upward"
+     ],
+     "answer": 0,
+     "why": "Follow through = levar até o fim o que foi combinado — o que faltou aqui."
+    },
+    {
+     "q": "\"Another compliance slide won't <strong>move the needle</strong> on how ready we actually are.\" This means it will…",
+     "options": [
+      "cost more than expected",
+      "not make a noticeable difference",
+      "take too long to measure",
+      "provoke resistance"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

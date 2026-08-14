@@ -10,12 +10,12 @@
     {
      "q": "What does the fiscal team do FIRST on tax day?",
      "options": [
-      "They sign the form",
       "They work with the numbers",
-      "They file the folder",
-      "They call the manager"
+      "They sign the form",
+      "They call the manager",
+      "They file the folder"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"First, the team works with the numbers.\""
     },
     {
@@ -23,8 +23,8 @@
      "options": [
       "Because the numbers must be correct",
       "Because the manager is late",
-      "Because it is a new form",
-      "Because the folder is full"
+      "Because the folder is full",
+      "Because it is a new form"
      ],
      "answer": 0,
      "why": "\"They check every line, because the numbers must be correct.\""
@@ -33,33 +33,33 @@
      "q": "Who signs the form?",
      "options": [
       "The whole team",
-      "Sophie",
       "The manager",
+      "Sophie",
       "The accountant"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"The manager reads it and signs it.\""
     },
     {
      "q": "The text suggests that tax day is…",
      "options": [
-      "only for the manager",
-      "very hard and always different",
       "not so hard, because the steps repeat",
-      "a day with no work"
+      "a day with no work",
+      "only for the manager",
+      "very hard and always different"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: \"the steps are always the same… One small step at a time, and the day is easy.\""
     },
     {
      "q": "The author would most likely DISAGREE with…",
      "options": [
-      "\"The team checks the numbers.\"",
-      "\"Short sentences are good for taxes.\"",
+      "\"You need very difficult English for taxes.\"",
       "\"The five words come back every month.\"",
-      "\"You need very difficult English for taxes.\""
+      "\"Short sentences are good for taxes.\"",
+      "\"The team checks the numbers.\""
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: o texto diz \"You do not need difficult English for taxes.\""
     }
    ]
@@ -78,20 +78,20 @@
      "q": "Where does Sophie work?",
      "options": [
       "In the sales team",
-      "In the fiscal team at Czarnikow",
       "At home",
-      "In a coffee shop"
+      "In a coffee shop",
+      "In the fiscal team at Czarnikow"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I work in the fiscal team at Czarnikow.\""
     },
     {
      "q": "How many times does Sophie check every line?",
      "options": [
-      "She does not check",
-      "Two times",
       "One time",
-      "Three times"
+      "Two times",
+      "Three times",
+      "She does not check"
      ],
      "answer": 1,
      "why": "\"I check every line two times.\""
@@ -101,32 +101,32 @@
      "options": [
       "For seven days",
       "For one month",
-      "For seven years",
-      "For one year"
+      "For one year",
+      "For seven years"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"we keep it for seven years.\""
     },
     {
      "q": "Why is tax day easy for Sophie now?",
      "options": [
-      "Because she does the same steps every month",
-      "Because the manager does her work",
       "Because the numbers are always wrong",
-      "Because there is no form today"
+      "Because the manager does her work",
+      "Because there is no form today",
+      "Because she does the same steps every month"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"I do this every month, so it is easy for me now.\""
     },
     {
      "q": "How does Sophie feel about tax day?",
      "options": [
-      "She is a little tired, but happy",
-      "She does not like it",
       "She is bored all day",
-      "She is angry"
+      "She is a little tired, but happy",
+      "She is angry",
+      "She does not like it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Inferência: \"I am a little tired, but I am happy\" e \"But I like it.\""
     }
    ]
@@ -139,19 +139,19 @@
     {
      "q": "\"I <strong>work</strong> in the fiscal team.\" To work means to…",
      "options": [
-      "to travel",
-      "have a job or do a task",
       "to rest",
-      "to eat lunch"
+      "to eat lunch",
+      "to travel",
+      "have a job or do a task"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Work = trabalhar, fazer uma tarefa."
     },
     {
      "q": "\"Please <strong>check</strong> the numbers again.\" To check means to…",
      "options": [
-      "to delete a file",
       "to print a page",
+      "to delete a file",
       "look at something to see if it is correct",
       "to send an email"
      ],
@@ -161,34 +161,34 @@
     {
      "q": "Choose the correct word: \"I ___ the form to my manager by email.\"",
      "options": [
-      "sleep",
-      "buy",
       "send",
-      "open"
+      "buy",
+      "open",
+      "sleep"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Send = enviar. Você envia o formulário ao gestor."
     },
     {
      "q": "Choose the correct word: \"The manager reads the form and then he ___ it at the bottom.\"",
      "options": [
       "eats",
-      "signs",
+      "waters",
       "drives",
-      "waters"
+      "signs"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Sign = assinar. O gestor assina o formulário no fim."
     },
     {
      "q": "\"We <strong>file</strong> the form in the fiscal folder.\" To file means to…",
      "options": [
-      "to throw it away",
-      "to translate it",
       "put a document in order and keep it",
-      "to read it aloud"
+      "to read it aloud",
+      "to translate it",
+      "to throw it away"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "File = arquivar / declarar: guardar o documento em ordem."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"Please <strong>fill out</strong> the tax form.\" To fill out means to…",
      "options": [
-      "to lose the form",
-      "to sign the form",
+      "write your answers in all the spaces",
       "to close the form",
-      "write your answers in all the spaces"
+      "to sign the form",
+      "to lose the form"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Fill out = preencher: escrever as respostas nos campos."
     },
     {
      "q": "\"The manager has to <strong>sign off on</strong> the report.\" To sign off on means to…",
      "options": [
-      "to read it fast",
-      "to copy it",
       "to approve it",
-      "to hide it"
+      "to hide it",
+      "to copy it",
+      "to read it fast"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"We <strong>send out</strong> the forms every month.\" To send out means to…",
      "options": [
-      "to send them to people",
       "to print them twice",
       "to keep them in a drawer",
+      "to send them to people",
       "to delete them"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Send out = enviar (para fora), mandar para as pessoas."
     },
     {
      "q": "\"Please <strong>hand in</strong> the form before the deadline.\" To hand in means to…",
      "options": [
-      "to take it home",
       "to read it again",
+      "to give it to the right person",
       "to change the date",
-      "to give it to the right person"
+      "to take it home"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Hand in = entregar (à pessoa certa)."
     },
     {
      "q": "\"I will <strong>follow up</strong> with the accountant tomorrow.\" To follow up means to…",
      "options": [
-      "to say no",
-      "to start a new form",
       "to check again and ask about it later",
-      "to forget about it"
+      "to say no",
+      "to forget about it",
+      "to start a new form"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Follow up = dar sequência, verificar/perguntar depois."
     }
    ]

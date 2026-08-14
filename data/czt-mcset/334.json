@@ -1,0 +1,259 @@
+{
+ "num": 334,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Logistics KPIs only work in practice if three conditions are met: the numbers are trusted, the review cadence is regular, and the meeting actually produces decisions. A beautiful dashboard that nobody believes, or that gets looked at only in a crisis, is worse than useless — it gives the illusion of control without the discipline.<br><br>Good teams are ruthless about data hygiene. They fix calculation errors the day they appear. They agree, in writing, what each KPI measures and what it excludes. And they review the small core — on-time delivery, cost per shipment, damage rate, customer complaint rate — at the same time every week, with the same small group, making the same small number of decisions.<br><br>Over a year, this unglamorous rhythm produces the kind of operational stability that looks easy from the outside. It is not. It is the patient accumulation of a very disciplined weekly hour.",
+   "items": [
+    {
+     "q": "According to the text, which three conditions must be met for logistics KPIs to work?",
+     "options": [
+      "Daily reviews, external auditors, and long reports",
+      "New metrics, more meetings, and detailed forecasts",
+      "A large dashboard, expensive software, and a big team",
+      "Trusted numbers, a regular cadence, and decisions from the meeting"
+     ],
+     "answer": 3,
+     "why": "\"the numbers are trusted, the review cadence is regular, and the meeting actually produces decisions.\""
+    },
+    {
+     "q": "Why does the author call an unbelieved dashboard \"worse than useless\"?",
+     "options": [
+      "It gives the illusion of control without the discipline",
+      "It takes too long to update each week",
+      "It costs too much to build and maintain",
+      "It shows only historical data"
+     ],
+     "answer": 0,
+     "why": "\"it gives the illusion of control without the discipline.\""
+    },
+    {
+     "q": "What does the text mean by teams being \"ruthless about data hygiene\"?",
+     "options": [
+      "They delete metrics that look bad",
+      "They report only to the ops director",
+      "They fix calculation errors the day they appear and define each KPI in writing",
+      "They review every metric available, not just a core set"
+     ],
+     "answer": 2,
+     "why": "\"They fix calculation errors the day they appear. They agree, in writing, what each KPI measures and what it excludes.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Defining what a KPI excludes is as important as what it measures",
+      "The best dashboards are the ones that look the most impressive",
+      "A weekly review with the same small group builds discipline",
+      "Operational stability is harder to achieve than it appears"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto trata um dashboard bonito e não confiável como pior que inútil — aparência não é o critério."
+    },
+    {
+     "q": "What does \"It is not\" (about the rhythm looking easy) suggest?",
+     "options": [
+      "Outsiders understand the process better than insiders",
+      "Logistics KPIs rarely produce any stability",
+      "The weekly meeting should be replaced by daily ones",
+      "Stability comes from sustained, disciplined effort, not luck"
+     ],
+     "answer": 3,
+     "why": "Inferência: o que parece fácil de fora é, na verdade, o acúmulo paciente de uma hora semana disciplinada."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry explicando como está reconstruindo o dashboard. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, let me be honest about where we are. Two of our metrics were calculated inconsistently for three months. The ops director spotted it before we did, and that has cost us credibility we now have to earn back.<br><br>So I'm rebuilding the dashboard from the ground up. First, I've written a one-line definition for every KPI — what it measures, and just as importantly, what it excludes. On-time delivery, for example, now clearly excludes shipments the customer rescheduled. No more arguing in the meeting about whether a number is real.<br><br>Second, we're shrinking the review to a small core: on-time delivery, cost per shipment, damage rate, complaint rate. Same four numbers, same half hour every Tuesday, same three people. If a figure looks wrong, we fix the calculation that day — we don't wait for the next cycle.<br><br>And the rule I care about most: every review ends with at least one decision. If we look at the numbers and change nothing, we've wasted the hour. A dashboard nobody acts on is just decoration.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why does Harry say the team has to earn back credibility?",
+     "options": [
+      "The dashboard was too slow to load",
+      "The ops director changed the KPI targets",
+      "The team missed several weekly reviews",
+      "Two metrics were calculated inconsistently and the ops director caught it first"
+     ],
+     "answer": 3,
+     "why": "\"Two of our metrics were calculated inconsistently for three months. The ops director spotted it before we did.\""
+    },
+    {
+     "q": "What is the first thing Harry did when rebuilding the dashboard?",
+     "options": [
+      "Bought new reporting software",
+      "Wrote a one-line definition for every KPI, including what it excludes",
+      "Moved the meeting to a different day",
+      "Added more metrics to the review"
+     ],
+     "answer": 1,
+     "why": "\"I've written a one-line definition for every KPI — what it measures, and just as importantly, what it excludes.\""
+    },
+    {
+     "q": "How does Harry describe the new review cadence?",
+     "options": [
+      "An open meeting with no fixed agenda",
+      "Four core numbers, same half hour every Tuesday, same three people",
+      "A monthly deep-dive with the ops director",
+      "All metrics, reviewed daily by the whole team"
+     ],
+     "answer": 1,
+     "why": "\"a small core… Same four numbers, same half hour every Tuesday, same three people.\""
+    },
+    {
+     "q": "What does Harry mean when he says \"a dashboard nobody acts on is just decoration\"?",
+     "options": [
+      "The dashboard should be shown to more people",
+      "Metrics only matter if they lead to decisions",
+      "Dashboards should be visually attractive",
+      "Decoration helps the team stay motivated"
+     ],
+     "answer": 1,
+     "why": "Inferência: sem uma decisão, o número não muda nada — o valor está na ação, não na tela."
+    },
+    {
+     "q": "What can we infer about Harry's approach to a figure that looks wrong?",
+     "options": [
+      "He escalates it directly to the ops director",
+      "He treats it as urgent and fixes the calculation the same day",
+      "He removes the metric from the dashboard",
+      "He waits for the next cycle to review it calmly"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"If a figure looks wrong, we fix the calculation that day — we don't wait for the next cycle.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We review the same metrics on a weekly <strong>cadence</strong>.\" A cadence is…",
+     "options": [
+      "a sudden change of plan",
+      "a regular, repeating rhythm",
+      "a group of decision-makers",
+      "a written report"
+     ],
+     "answer": 1,
+     "why": "Cadence = cadência: o ritmo regular e repetido da revisão."
+    },
+    {
+     "q": "\"Good teams are <strong>ruthless</strong> about data hygiene.\" Ruthless here means…",
+     "options": [
+      "occasionally strict",
+      "slow but thorough",
+      "firm and uncompromising",
+      "careless and relaxed"
+     ],
+     "answer": 2,
+     "why": "Ruthless = implacável: rígido, sem tolerância com erros de dados."
+    },
+    {
+     "q": "Choose the correct word: \"A dashboard nobody trusts gives the ___ of control, not the reality.\"",
+     "options": [
+      "accumulation",
+      "illusion",
+      "cadence",
+      "condition"
+     ],
+     "answer": 1,
+     "why": "Illusion = ilusão: a falsa impressão de controle."
+    },
+    {
+     "q": "\"We agreed in writing what each KPI measures and what it must <strong>exclude</strong>.\" To exclude means to…",
+     "options": [
+      "highlight",
+      "double-check",
+      "leave out",
+      "estimate"
+     ],
+     "answer": 2,
+     "why": "To exclude = excluir: deixar de fora do cálculo."
+    },
+    {
+     "q": "\"Stability is the patient <strong>accumulation</strong> of a disciplined weekly hour.\" Accumulation is…",
+     "options": [
+      "a gradual build-up over time",
+      "a single decisive change",
+      "a one-off audit",
+      "a formal approval step"
+     ],
+     "answer": 0,
+     "why": "Accumulation = acumulação: o resultado que se constrói pouco a pouco, semana após semana."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem em reuniões de KPIs e operações. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The ops director still has to <strong>sign off on</strong> the new KPI definitions.\" To sign off on means to…",
+     "options": [
+      "reject outright",
+      "postpone indefinitely",
+      "formally approve",
+      "comment informally"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the rebuilt dashboard to all regions next quarter.\" To roll out means to…",
+     "options": [
+      "test it in secret",
+      "implement it in stages",
+      "cancel it gradually",
+      "explain it to the board"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Fixing data hygiene will really <strong>move the needle</strong> on our credibility.\" This means it will…",
+     "options": [
+      "cost more than expected",
+      "make a noticeable difference",
+      "create resistance",
+      "take too long to measure"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
+    },
+    {
+     "q": "\"The team agreed the metric but never <strong>followed through</strong> on the fix.\" They…",
+     "options": [
+      "documented it poorly",
+      "failed to carry it to completion",
+      "changed the metric halfway",
+      "delegated it to another team"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"When the on-time figure looked wrong, two analysts <strong>pushed back on</strong> the calculation.\" They…",
+     "options": [
+      "approved it quickly",
+      "questioned or challenged it",
+      "ignored it completely",
+      "rewrote the whole dashboard"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, questionar, discordar — sem necessariamente rejeitar de vez."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 534,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At enterprise scale, data protection is a programme, not a document. Every country where the company operates brings its own regulator, its own language, its own deadlines, and sometimes its own philosophy about what privacy actually means. The senior leader's task is to turn this complicated patchwork into something coherent enough that the team can live with it — and honest enough that the auditors believe it.<br><br>The central idea is a single data map: every dataset the company holds, its purpose, its legal basis, its retention rule, and its owner. Everything else — requests from individuals, responses to regulators, cross-border transfers — is built on top of that map. Without the map, the programme is a collection of guesses. With it, the programme has a spine.<br><br>Data protection is built quietly over years. It is never perfect, but it can be honest — and honest, at this level, is what matters most.",
+   "items": [
+    {
+     "q": "According to the text, at enterprise scale data protection is best understood as…",
+     "options": [
+      "a single deadline shared across countries",
+      "a philosophy imposed by one regulator",
+      "a legal defence built for auditors",
+      "a programme, not a document"
+     ],
+     "answer": 3,
+     "why": "\"data protection is a programme, not a document\" — a frase de abertura da lição."
+    },
+    {
+     "q": "What is described as sitting at the centre of the whole programme?",
+     "options": [
+      "The cross-border transfer agreements",
+      "A single data map of every dataset held",
+      "The individual requests from data subjects",
+      "The relationship with each national regulator"
+     ],
+     "answer": 1,
+     "why": "\"The central idea is a single data map… Everything else is built on top of that map.\""
+    },
+    {
+     "q": "The text says the leader must make the programme coherent enough for the team AND honest enough for whom?",
+     "options": [
+      "The auditors",
+      "The board of directors",
+      "The regulators in each country",
+      "The individuals who file requests"
+     ],
+     "answer": 0,
+     "why": "\"coherent enough that the team can live with it — and honest enough that the auditors believe it.\""
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Different jurisdictions define privacy differently.",
+      "Credibility with auditors depends on honesty, not perfection.",
+      "A polished policy document is enough to protect data at scale.",
+      "A programme without the data map rests on guesswork."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto insiste que proteção de dados é um programa contínuo, não um documento — logo, um documento sozinho não basta."
+    },
+    {
+     "q": "Calling the data map \"a spine\" suggests that…",
+     "options": [
+      "it is the most fragile part of the programme",
+      "it is only relevant to the auditors",
+      "it must be rewritten in every emergency",
+      "it is the structure that holds everything else up"
+     ],
+     "answer": 3,
+     "why": "Inferência: coluna = estrutura de sustentação; sem ela o programa é \"a collection of guesses\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Charlotte descrevendo o trabalho de construir o mapa de dados. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "So, where we've landed is this. For years, the same personal data was being stored in eight different folders, one per jurisdiction, and none of them agreed with the others. The German file said one retention period; the Singapore file said another; and nobody could tell me which one was actually being applied.<br><br>What I've been asked to deliver is a single map — every dataset we hold, why we hold it, the legal basis, when it must be deleted, and who owns it. It sounds unglamorous, and it is. But once it's written down honestly, the individual requests and the regulator responses more or less answer themselves.<br><br>I want to be candid about one thing. This will not be finished by the audit in March. It cannot be. A map like this is built slowly, and if we rush it, it will simply be wrong in a more organised way. What I can promise the auditors is that nothing has been hidden — every gap we know about is marked on the map as a gap.<br><br>That honesty is the point. A tidy document that quietly overstates our position would be far more dangerous than an incomplete one that tells the truth.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What was the problem with how the data used to be stored?",
+     "options": [
+      "It was held in eight uncoordinated folders that disagreed with each other",
+      "It was stored only in Germany and Singapore",
+      "It was kept entirely on paper",
+      "It had been deleted before the audit"
+     ],
+     "answer": 0,
+     "why": "\"eight different folders, one per jurisdiction, and none of them agreed with the others.\""
+    },
+    {
+     "q": "What is Charlotte being asked to deliver?",
+     "options": [
+      "A single map covering every dataset, its purpose, legal basis, deletion date and owner",
+      "A faster process for answering individuals",
+      "A merged folder for Germany and Singapore only",
+      "A new policy document for each country"
+     ],
+     "answer": 0,
+     "why": "\"a single map — every dataset we hold, why we hold it, the legal basis, when it must be deleted, and who owns it.\""
+    },
+    {
+     "q": "What does Charlotte say will happen once the map is written honestly?",
+     "options": [
+      "The regulators will stop asking questions",
+      "The audit will be cancelled",
+      "The individual requests and regulator responses will more or less answer themselves",
+      "The eight folders can be reused"
+     ],
+     "answer": 2,
+     "why": "\"the individual requests and the regulator responses more or less answer themselves.\""
+    },
+    {
+     "q": "What does Charlotte mean by warning it would otherwise be \"wrong in a more organised way\"?",
+     "options": [
+      "A rushed map would look tidy but still contain errors",
+      "The auditors prefer disorganised files",
+      "The map should be organised by country",
+      "Organised data is always incorrect"
+     ],
+     "answer": 0,
+     "why": "Inferência: apressar não corrige os erros — só os deixa arrumados, o que é mais perigoso."
+    },
+    {
+     "q": "Which best captures Charlotte's underlying priority?",
+     "options": [
+      "Honesty about gaps over the appearance of completeness",
+      "Finishing before March at any cost",
+      "Keeping the eight jurisdictions independent",
+      "Impressing the auditors with a polished document"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela diz que um documento arrumado que exagera a posição é mais perigoso do que um incompleto que diz a verdade."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We inherited a <strong>patchwork</strong> of local rules, each written by a different team.\" A patchwork is…",
+     "options": [
+      "a single, unified system",
+      "an uneven mix of pieces that don't quite fit together",
+      "a legal deadline",
+      "a formal approval"
+     ],
+     "answer": 1,
+     "why": "Patchwork = colcha de retalhos: um conjunto irregular de partes que não combinam bem."
+    },
+    {
+     "q": "Choose the correct word: \"The framework must be ___ enough that the whole team applies it the same way.\"",
+     "options": [
+      "optional",
+      "coherent",
+      "confidential",
+      "temporary"
+     ],
+     "answer": 1,
+     "why": "Coherent = coerente: consistente o bastante para ser aplicado de modo uniforme."
+    },
+    {
+     "q": "Choose the correct term: \"Sending customer records from the EU to the US office counts as a ___.\"",
+     "options": [
+      "cross-border transfer",
+      "retention rule",
+      "data map",
+      "regulator"
+     ],
+     "answer": 0,
+     "why": "Cross-border transfer = transferência transfronteiriça de dados entre jurisdições."
+    },
+    {
+     "q": "\"Each dataset has a <strong>retention rule</strong>.\" This is…",
+     "options": [
+      "the policy stating how long the data may be kept",
+      "the person responsible for the data",
+      "the legal basis for collecting it",
+      "the country where it is stored"
+     ],
+     "answer": 0,
+     "why": "Retention rule = regra de retenção: por quanto tempo o dado pode ser guardado antes de ser apagado."
+    },
+    {
+     "q": "\"Without the map, the programme is just a set of <strong>guesses</strong>.\" Here, guesses means…",
+     "options": [
+      "signed approvals",
+      "audited records",
+      "verified facts",
+      "unsupported assumptions"
+     ],
+     "answer": 3,
+     "why": "Guess = palpite: uma suposição sem base sólida — o oposto de um mapa documentado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns em reuniões sobre compliance e proteção de dados. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Legal still has to <strong>sign off on</strong> the retention schedule.\" To sign off on means to…",
+     "options": [
+      "quietly ignore",
+      "circulate for comment",
+      "translate into local law",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the data map jurisdiction by jurisdiction.\" To roll out means to…",
+     "options": [
+      "archive permanently",
+      "cancel gradually",
+      "audit in secret",
+      "implement in stages"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar de forma progressiva, por etapas."
+    },
+    {
+     "q": "\"Two country teams <strong>pushed back on</strong> the shared deletion timeline.\" They…",
+     "options": [
+      "forgot about it",
+      "resisted or objected to it",
+      "delegated it upward",
+      "approved it at once"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"They agreed to fix the gaps but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "documented it twice",
+      "failed to carry it to completion",
+      "escalated the issue",
+      "changed the deadline"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Marking every known gap honestly is what will <strong>hold up</strong> under audit.\" To hold up here means to…",
+     "options": [
+      "delay the process",
+      "increase the cost",
+      "raise its hand",
+      "remain credible under scrutiny"
+     ],
+     "answer": 3,
+     "why": "Hold up (under audit/scrutiny) = resistir ao exame, manter-se credível quando é testado."
+    }
+   ]
+  }
+ ]
+}

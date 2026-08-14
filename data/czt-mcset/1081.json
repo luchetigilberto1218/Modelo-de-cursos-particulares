@@ -1,0 +1,259 @@
+{
+ "num": 1081,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A supply chain is the path of a product. The product goes from the farm or the factory to the final customer.<br><br>A supply chain is a chain of steps. First we produce. Then we move. Then we store. Then we deliver. Every step is important.<br><br>At Czarnikow, the supply chain carries sugar, coffee and other products. The chain connects people and places around the world. I am part of the supply chain. We are a global team.",
+   "items": [
+    {
+     "q": "What is a supply chain?",
+     "options": [
+      "A type of factory",
+      "A kind of customer",
+      "A single step",
+      "The path of a product"
+     ],
+     "answer": 3,
+     "why": "\"A supply chain is the path of a product.\""
+    },
+    {
+     "q": "Where does the product go?",
+     "options": [
+      "From the customer to the factory",
+      "From the store to the farm",
+      "From one factory to another factory",
+      "From the farm or factory to the final customer"
+     ],
+     "answer": 3,
+     "why": "\"The product goes from the farm or the factory to the final customer.\""
+    },
+    {
+     "q": "What does Czarnikow's supply chain carry?",
+     "options": [
+      "Sugar, coffee and other products",
+      "Cars and phones",
+      "People only",
+      "Only sugar"
+     ],
+     "answer": 0,
+     "why": "\"the supply chain carries sugar, coffee and other products.\""
+    },
+    {
+     "q": "The text says \"Every step is important.\" This suggests that…",
+     "options": [
+      "No step should be missed",
+      "Steps are not part of the chain",
+      "You can skip a step",
+      "Only the first step matters"
+     ],
+     "answer": 0,
+     "why": "Inferência: se todo passo é importante, nenhum pode ser pulado."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "The supply chain connects people and places",
+      "The supply chain works alone, without people",
+      "The customer is not important",
+      "Only one country is in the chain"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"The chain connects people and places around the world.\" e \"We are a global team.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Maria explicando a cadeia de suprimentos para um colega novo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! Welcome to the team. My name is Maria. I am happy to help you today.<br><br>Let me explain the supply chain. It is easy. A supply chain is a path. A product goes from the factory to the customer. That is the chain.<br><br>There are four steps. First, we produce the product. Then, we move the product. After that, we store it. Finally, we deliver it to the customer. Four steps. Very simple.<br><br>Here at Czarnikow, our main product is sugar. The sugar starts at the factory. It travels many steps. In the end, it is with the customer. Every step is important.<br><br>You are part of the chain now. We are a global team. We work together every day. Do not worry — you can do it. I am here to help. Welcome again!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "A visitor from another company",
+      "Maria, a colleague",
+      "The factory manager",
+      "A new customer"
+     ],
+     "answer": 1,
+     "why": "\"My name is Maria. I am happy to help you today.\""
+    },
+    {
+     "q": "How many steps are in the chain?",
+     "options": [
+      "Five",
+      "Three",
+      "Four",
+      "Two"
+     ],
+     "answer": 2,
+     "why": "\"There are four steps.\" — produce, move, store, deliver."
+    },
+    {
+     "q": "What is Czarnikow's main product?",
+     "options": [
+      "Coffee",
+      "Water",
+      "Tea",
+      "Sugar"
+     ],
+     "answer": 3,
+     "why": "\"our main product is sugar.\""
+    },
+    {
+     "q": "How does Maria feel about the new colleague?",
+     "options": [
+      "She is bored",
+      "She is angry",
+      "She is friendly and helpful",
+      "She is worried and unsure"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Welcome to the team\", \"I am here to help\" — ela é acolhedora."
+    },
+    {
+     "q": "When Maria says \"you can do it\", she wants the colleague to feel…",
+     "options": [
+      "Confused",
+      "Confident",
+      "Tired",
+      "Afraid"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela dá ânimo — \"Do not worry — you can do it.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The <strong>supply chain</strong> moves sugar from the factory to the customer.\" A supply chain is…",
+     "options": [
+      "a type of money",
+      "one single factory",
+      "a group of customers",
+      "the path of a product from start to end"
+     ],
+     "answer": 3,
+     "why": "Supply chain = cadeia de suprimentos: o caminho do produto do início ao fim."
+    },
+    {
+     "q": "Choose the correct word: \"Sugar is our main ___ at Czarnikow.\"",
+     "options": [
+      "step",
+      "product",
+      "factory",
+      "customer"
+     ],
+     "answer": 1,
+     "why": "Product = produto: aquilo que a empresa vende."
+    },
+    {
+     "q": "\"The <strong>customer</strong> is at the end of the chain.\" A customer is…",
+     "options": [
+      "a worker in the factory",
+      "the person who buys the product",
+      "a kind of sugar",
+      "a step in the chain"
+     ],
+     "answer": 1,
+     "why": "Customer = cliente: quem compra o produto."
+    },
+    {
+     "q": "Choose the correct word: \"Production starts at the ___.\"",
+     "options": [
+      "customer",
+      "factory",
+      "product",
+      "step"
+     ],
+     "answer": 1,
+     "why": "Factory = fábrica: o lugar onde a produção começa."
+    },
+    {
+     "q": "\"Produce, move, store, deliver — each one is a <strong>step</strong>.\" A step is…",
+     "options": [
+      "a big factory",
+      "a kind of product",
+      "one part of a process",
+      "a final customer"
+     ],
+     "answer": 2,
+     "why": "Step = etapa: uma parte do processo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We <strong>roll out</strong> the new product next month.\" To roll out means to…",
+     "options": [
+      "launch or start it",
+      "sell it fast",
+      "hide it",
+      "cancel it"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar, começar a usar algo novo."
+    },
+    {
+     "q": "\"The boss must <strong>sign off on</strong> the plan.\" To sign off on means to…",
+     "options": [
+      "print it",
+      "forget it",
+      "read it fast",
+      "approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"I will <strong>follow up</strong> with the customer tomorrow.\" To follow up means to…",
+     "options": [
+      "stop working",
+      "change teams",
+      "say goodbye",
+      "check again later"
+     ],
+     "answer": 3,
+     "why": "Follow up = dar continuidade, retomar o contato depois."
+    },
+    {
+     "q": "\"Can you <strong>help out</strong> with the delivery?\" To help out means to…",
+     "options": [
+      "ask a question",
+      "leave early",
+      "wait outside",
+      "give help"
+     ],
+     "answer": 3,
+     "why": "Help out = ajudar, dar uma mão."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the four steps again.\" To go over means to…",
+     "options": [
+      "sell them",
+      "review them",
+      "skip them",
+      "delete them"
+     ],
+     "answer": 1,
+     "why": "Go over = revisar, repassar algo."
+    }
+   ]
+  }
+ ]
+}

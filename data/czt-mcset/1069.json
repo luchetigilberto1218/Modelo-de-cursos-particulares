@@ -1,0 +1,259 @@
+{
+ "num": 1069,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "London is a city of small shops. Many shops are between big buildings. You walk down one street and you see a café, a bakery and a chemist, all very close.<br><br>It helps a lot to say where a shop is. You can say \"next to\", \"near\", \"on the corner\" or \"across the street\". These small words save time every day — for lunch, for meetings, and for a pint after work.<br><br>The bakery is on the corner. The café is next to the office. The supermarket is across the street. Giving clear directions is easy, and it is polite too.",
+   "items": [
+    {
+     "q": "What kind of shops does London have, according to the text?",
+     "options": [
+      "Only online shops",
+      "No shops",
+      "Small shops",
+      "Only big malls"
+     ],
+     "answer": 2,
+     "why": "\"London is a city of small shops.\""
+    },
+    {
+     "q": "Where is the bakery?",
+     "options": [
+      "On the corner",
+      "Next to the office",
+      "Near the station",
+      "Across the street"
+     ],
+     "answer": 0,
+     "why": "\"The bakery is on the corner.\""
+    },
+    {
+     "q": "Why are words like \"next to\" and \"near\" useful?",
+     "options": [
+      "They save time every day",
+      "They cost money",
+      "They are very long",
+      "They are only for tourists"
+     ],
+     "answer": 0,
+     "why": "\"These small words save time every day.\""
+    },
+    {
+     "q": "The text suggests that the café and the office are…",
+     "options": [
+      "very far apart",
+      "in different cities",
+      "very close together",
+      "on the same corner"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"next to\" quer dizer bem ao lado, então estão bem perto."
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "London has no small shops",
+      "clear directions are polite",
+      "you should never help people",
+      "directions are a waste of time"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que dar direções claras é fácil e educado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie ajudando um turista em Londres. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! Yes, I can help you. You want the famous shops, right? Okay, it is very easy from here.<br><br>Look at the corner. Do you see the coffee shop? Good. The big shop you want is next to it. It is a very old shop, and it is always full of people.<br><br>Now, walk down this street. Walk past the café and the small bakery. At the end of the street, you cross the road. The chemist is across the street, opposite the station.<br><br>The supermarket is near the station too, but it is not next to it. It is between the bank and the pub. It is not far. Two minutes on foot, maybe three.<br><br>Oh, and one more thing. The bookshop is closed today. It is Sunday, so many small shops are closed. But the coffee shop is open. Have a nice day in London!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where is the big shop the tourist wants?",
+     "options": [
+      "Across the street",
+      "Inside the station",
+      "Next to the coffee shop",
+      "At the end of the road"
+     ],
+     "answer": 2,
+     "why": "\"The big shop you want is next to it\" (a cafeteria da esquina)."
+    },
+    {
+     "q": "Where is the supermarket?",
+     "options": [
+      "On the corner",
+      "Next to the station",
+      "Between the bank and the pub",
+      "Opposite the café"
+     ],
+     "answer": 2,
+     "why": "\"It is between the bank and the pub.\""
+    },
+    {
+     "q": "Where is the chemist?",
+     "options": [
+      "On the corner",
+      "Inside the supermarket",
+      "Next to the bakery",
+      "Across the street, opposite the station"
+     ],
+     "answer": 3,
+     "why": "\"The chemist is across the street, opposite the station.\""
+    },
+    {
+     "q": "Why are many small shops closed?",
+     "options": [
+      "Because there is a party",
+      "Because it is night",
+      "Because it is Sunday",
+      "Because it is raining"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"It is Sunday, so many small shops are closed.\""
+    },
+    {
+     "q": "How would you describe Sophie?",
+     "options": [
+      "Sad and quiet",
+      "Friendly and helpful",
+      "Rude and busy",
+      "Angry and tired"
+     ],
+     "answer": 1,
+     "why": "Inferência: ela dá direções claras e deseja um bom dia — é simpática."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I need to buy bread. Is there a <strong>shop</strong> near here?\" A shop is…",
+     "options": [
+      "a car",
+      "a store",
+      "a house",
+      "a street"
+     ],
+     "answer": 1,
+     "why": "Shop = loja."
+    },
+    {
+     "q": "\"Our office is on a small <strong>street</strong> in the city.\" A street is…",
+     "options": [
+      "a road in a town",
+      "a room",
+      "a shop",
+      "a train"
+     ],
+     "answer": 0,
+     "why": "Street = rua."
+    },
+    {
+     "q": "Choose the correct word: \"The bakery is on the ___, where the two streets meet.\"",
+     "options": [
+      "corner",
+      "office",
+      "menu",
+      "café"
+     ],
+     "answer": 0,
+     "why": "Corner = esquina, onde duas ruas se encontram."
+    },
+    {
+     "q": "Choose the correct word: \"My desk is ___ the window. It is right beside it.\"",
+     "options": [
+      "inside",
+      "next to",
+      "under",
+      "far from"
+     ],
+     "answer": 1,
+     "why": "Next to = ao lado de, bem do lado."
+    },
+    {
+     "q": "\"The hotel is <strong>near</strong> the station.\" Near means…",
+     "options": [
+      "closed",
+      "close",
+      "opposite",
+      "very far"
+     ],
+     "answer": 1,
+     "why": "Near = perto, próximo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem em direções e no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The café is <strong>across the street</strong> from the office.\" This means it is…",
+     "options": [
+      "inside the office",
+      "very far away",
+      "on the other side of the street",
+      "on the same corner"
+     ],
+     "answer": 2,
+     "why": "Across the street = do outro lado da rua."
+    },
+    {
+     "q": "\"The chemist is <strong>at the end of</strong> the road.\" This means…",
+     "options": [
+      "on the corner",
+      "next to the office",
+      "where the road finishes",
+      "in the middle of the road"
+     ],
+     "answer": 2,
+     "why": "At the end of = no fim de."
+    },
+    {
+     "q": "\"Our pub is <strong>opposite</strong> the Tube station.\" Opposite means…",
+     "options": [
+      "on the other side",
+      "next to",
+      "inside",
+      "far from"
+     ],
+     "answer": 0,
+     "why": "Opposite = em frente, do lado oposto."
+    },
+    {
+     "q": "\"The supermarket is <strong>between</strong> the bank and the pub.\" You need…",
+     "options": [
+      "a map only",
+      "two places, one on each side",
+      "no places",
+      "one place"
+     ],
+     "answer": 1,
+     "why": "Between = entre, precisa de dois pontos de referência."
+    },
+    {
+     "q": "\"It is not far. It is only two minutes <strong>on foot</strong>.\" On foot means…",
+     "options": [
+      "by car",
+      "walking",
+      "by bus",
+      "by train"
+     ],
+     "answer": 1,
+     "why": "On foot = a pé, caminhando."
+    }
+   ]
+  }
+ ]
+}

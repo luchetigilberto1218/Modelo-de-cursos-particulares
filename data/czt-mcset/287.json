@@ -1,0 +1,259 @@
+{
+ "num": 287,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Inventory, viewed from the CFO's chair, is not a supply chain metric — it is a working capital strategy. Every unit sitting on a shelf is cash that has been borrowed, invested, and is currently producing nothing. Every unit not on the shelf, when a customer wants it, is a sale lost and a relationship bruised. The senior leader's job is to find the line between these two costs, and to hold the organisation on it.<br><br>At executive level, inventory decisions are made with a second lens beyond service level: cash. How many days of inventory are we carrying? What would a 5% reduction free up, and where else could that cash be used? How much of today's inventory is a rational buffer, and how much is the accumulated silt of optimisation decisions nobody reviews anymore?<br><br>These are not questions for the warehouse manager. They are board questions. The companies that answer them honestly tend to have very different balance sheets, over time, from those that treat inventory as an operational afterthought.",
+   "items": [
+    {
+     "q": "According to the text, how should a CFO primarily view inventory?",
+     "options": [
+      "As a working capital strategy",
+      "As a supply chain metric",
+      "As a warehouse concern",
+      "As a marketing relationship"
+     ],
+     "answer": 0,
+     "why": "\"Inventory, viewed from the CFO's chair… is a working capital strategy.\""
+    },
+    {
+     "q": "What does the text say every unit on the shelf represents?",
+     "options": [
+      "Cash that has been borrowed and invested but is producing nothing",
+      "A purely operational cost with no financial weight",
+      "A guaranteed future sale",
+      "A supplier relationship being strengthened"
+     ],
+     "answer": 0,
+     "why": "\"Every unit sitting on a shelf is cash that has been borrowed, invested, and is currently producing nothing.\""
+    },
+    {
+     "q": "The phrase \"the accumulated silt of optimisation decisions nobody reviews anymore\" most likely refers to…",
+     "options": [
+      "A deliberate strategic reserve",
+      "Inventory demanded by current customers",
+      "Stock that has piled up from old choices no one revisits",
+      "Carefully justified safety stock"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"silt\" (sedimento) sugere acúmulo esquecido — estoque residual de decisões antigas, não uma reserva racional."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Setting inventory targets is best left entirely to the warehouse manager.",
+      "Inventory levels have real consequences for the balance sheet.",
+      "There is a cost to both excess stock and stockouts.",
+      "Holding too little stock can damage customer relationships."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto insiste que \"these are board questions\", não do gerente de armazém."
+    },
+    {
+     "q": "What does the final paragraph imply about companies that treat inventory as \"an operational afterthought\"?",
+     "options": [
+      "They answer the hard cash questions more honestly",
+      "They are likely to have weaker balance sheets over time",
+      "They carry no working capital risk",
+      "They tend to have stronger balance sheets over time"
+     ],
+     "answer": 1,
+     "why": "Inferência: o contraste implica que quem responde honestamente tem balanços melhores; o descuidado, piores."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentando a revisão de capital de giro ao conselho. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Thank you. I'll keep this brief, because the headline number does most of the talking. On the screen you can see our inventory position for the quarter, and beside it a figure I want the board to sit with: roughly thirty per cent of what we are currently holding cannot be tied to any live service-level requirement.<br><br>Let me be precise about what that means. It is not spoilage, and it is not obsolete in the accounting sense. It is stock that was ordered against forecasts, buffers, and rules of thumb that, frankly, nobody in this room can now explain. When my team went line by line and asked why a given position existed, the honest answer, more often than not, was that it had always been there.<br><br>Now, that thirty per cent is not free. It has been borrowed, it sits on our balance sheet, and it is earning us nothing. If we released even half of it in an orderly way before year-end, the working capital freed up could be redeployed into the supplier reliability programme we deferred last spring.<br><br>I'm not asking the board to approve a fire sale. I'm asking us to agree that inventory should be reviewed as a cash decision, quarterly, at this level — and that safety stock must be justified by service, not by habit.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is the central figure Harry wants the board to focus on?",
+     "options": [
+      "A 30% increase in quarterly sales",
+      "A 5% rise in supplier costs",
+      "Around 30% of inventory tied to no live service-level requirement",
+      "The full write-off of obsolete stock"
+     ],
+     "answer": 2,
+     "why": "\"roughly thirty per cent of what we are currently holding cannot be tied to any live service-level requirement.\""
+    },
+    {
+     "q": "How does Harry describe the origin of this excess stock?",
+     "options": [
+      "It is obsolete in the accounting sense",
+      "It was deliberately reserved for a new product launch",
+      "It was ordered against forecasts and rules of thumb nobody can now explain",
+      "It was damaged or spoiled in storage"
+     ],
+     "answer": 2,
+     "why": "\"stock that was ordered against forecasts, buffers, and rules of thumb that… nobody in this room can now explain.\""
+    },
+    {
+     "q": "Where does Harry propose the freed-up working capital could go?",
+     "options": [
+      "Into a new warehouse facility",
+      "Into the supplier reliability programme deferred last spring",
+      "Into an emergency safety-stock reserve",
+      "Into a dividend for shareholders"
+     ],
+     "answer": 1,
+     "why": "\"the working capital freed up could be redeployed into the supplier reliability programme we deferred last spring.\""
+    },
+    {
+     "q": "When Harry says \"I'm not asking the board to approve a fire sale,\" he is signalling that…",
+     "options": [
+      "He wants the stock liquidated instantly at any price",
+      "He opposes reducing inventory at all",
+      "He is proposing to close the warehouse",
+      "He favours an orderly, controlled release rather than a panic dump"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele contrasta 'fire sale' (venda desesperada) com 'in an orderly way' — quer liberação controlada."
+    },
+    {
+     "q": "What underlying principle is Harry ultimately arguing for?",
+     "options": [
+      "That the board should stop reviewing inventory",
+      "That service level no longer matters",
+      "That the warehouse manager should own inventory targets",
+      "That inventory should be judged as a cash decision, not by habit"
+     ],
+     "answer": 3,
+     "why": "Inferência: 'reviewed as a cash decision… safety stock must be justified by service, not by habit' resume sua tese."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"That order tied up cash we had to <strong>borrow</strong> at a punishing rate.\" To borrow means to…",
+     "options": [
+      "lend money to another party",
+      "invest in equity",
+      "take money temporarily, to be repaid",
+      "write off a bad debt"
+     ],
+     "answer": 2,
+     "why": "To borrow = tomar emprestado, com obrigação de devolver."
+    },
+    {
+     "q": "\"When the supplier failed, the client relationship was left badly <strong>bruised</strong>.\" Here bruised means…",
+     "options": [
+      "legally terminated",
+      "formally renewed",
+      "financially bankrupt",
+      "damaged, but not destroyed"
+     ],
+     "answer": 3,
+     "why": "Bruised = ferido/machucado: a relação foi abalada, não rompida."
+    },
+    {
+     "q": "Choose the correct word: \"Executives judge inventory through a second ___: cash, not just service level.\"",
+     "options": [
+      "buffer",
+      "forecast",
+      "lens",
+      "shelf"
+     ],
+     "answer": 2,
+     "why": "Lens = lente: uma perspectiva/critério pelo qual se analisa a decisão."
+    },
+    {
+     "q": "A <strong>rational buffer</strong> is best described as…",
+     "options": [
+      "cash held in a separate reserve account",
+      "stock deliberately held to cover justified variability in demand",
+      "stock kept for no defensible reason",
+      "the accounting value of obsolete goods"
+     ],
+     "answer": 1,
+     "why": "Rational buffer = reserva racional: estoque de segurança que se justifica pela variação real de demanda."
+    },
+    {
+     "q": "Choose the correct term: \"Treating stock as an operational ___ is exactly how excess piles up unnoticed.\"",
+     "options": [
+      "balance sheet",
+      "working capital strategy",
+      "afterthought",
+      "service level"
+     ],
+     "answer": 2,
+     "why": "Afterthought = consideração secundária: algo tratado sem prioridade, e por isso negligenciado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de capital de giro. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the liquidation plan.\" To sign off on means to…",
+     "options": [
+      "quietly ignore",
+      "postpone indefinitely",
+      "formally approve",
+      "publicly announce"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We plan to <strong>free up</strong> cash by trimming excess stock before year-end.\" To free up means to…",
+     "options": [
+      "hide from the balance sheet",
+      "spend without limit",
+      "make available for other uses",
+      "borrow at a lower rate"
+     ],
+     "answer": 2,
+     "why": "Free up = liberar (recursos) para serem usados em outro lugar."
+    },
+    {
+     "q": "\"Procurement <strong>pushed back on</strong> the deeper stock cuts.\" They…",
+     "options": [
+      "postponed reading the plan",
+      "resisted or challenged them",
+      "rewrote the whole strategy",
+      "approved them at once"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"The last review flagged the problem but no one <strong>followed through</strong>.\" They…",
+     "options": [
+      "documented it in detail",
+      "delegated it successfully",
+      "failed to carry the action to completion",
+      "escalated it to the board"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Shaving a few pallets here and there won't <strong>move the needle</strong> on working capital.\" This means it will…",
+     "options": [
+      "trigger internal resistance",
+      "cost more than expected",
+      "take too long to measure",
+      "not make a noticeable difference"
+     ],
+     "answer": 3,
+     "why": "Move the needle = mexer o ponteiro, causar diferença perceptível."
+    }
+   ]
+  }
+ ]
+}

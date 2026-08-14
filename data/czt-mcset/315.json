@@ -10,43 +10,43 @@
     {
      "q": "What are the big logistics costs in the text?",
      "options": [
-      "Fuel, labour, and storage",
-      "Marketing and sales",
+      "Trucks and phones",
       "Taxes and rent",
-      "Trucks and phones"
+      "Fuel, labour, and storage",
+      "Marketing and sales"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Fuel moves the trucks. Labour runs the warehouse. Storage holds the stock.\""
     },
     {
      "q": "What are examples of inefficiencies?",
      "options": [
-      "Empty trucks, wrong routes, and damaged pallets",
       "New trucks and fast routes",
-      "Happy drivers and full trucks",
-      "Big warehouses and cheap fuel"
+      "Empty trucks, wrong routes, and damaged pallets",
+      "Big warehouses and cheap fuel",
+      "Happy drivers and full trucks"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Empty trucks, wrong routes, and damaged pallets. We call these inefficiencies.\""
     },
     {
      "q": "The text calls inefficiencies \"silent\". This suggests that…",
      "options": [
-      "they are easy to see and everyone talks about them",
       "they are hidden and people do not notice them",
       "they make no noise in the warehouse",
-      "they only happen at night"
+      "they only happen at night",
+      "they are easy to see and everyone talks about them"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: \"silent\" aqui quer dizer que ninguém repara neles — \"Nobody looks at them.\""
     },
     {
      "q": "Which idea would the author most likely DISAGREE with?",
      "options": [
-      "Inefficiencies are important.",
+      "Small costs can add up to a lot of money.",
       "The best way to save money is to cut the big number.",
       "Nobody looks at the small costs.",
-      "Small costs can add up to a lot of money."
+      "Inefficiencies are important."
      ],
      "answer": 1,
      "why": "Inferência: o texto diz que boa gestão NÃO é cortar o número grande — é achar os pequenos."
@@ -54,12 +54,12 @@
     {
      "q": "Why does the author focus on the small costs?",
      "options": [
-      "Because together they can cost more than the fuel",
-      "Because everyone already looks at them",
       "Because they are the biggest costs of all",
-      "Because they are easy to cut"
+      "Because they are easy to cut",
+      "Because together they can cost more than the fuel",
+      "Because everyone already looks at them"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"together they often cost more than the fuel.\""
     }
    ]
@@ -77,10 +77,10 @@
     {
      "q": "What does Sophie say about the fuel line?",
      "options": [
-      "It is the smallest cost in the budget",
-      "It is a big number, but it is not the real problem",
       "It is a number nobody can see",
-      "It is not in the budget"
+      "It is a big number, but it is not the real problem",
+      "It is not in the budget",
+      "It is the smallest cost in the budget"
      ],
      "answer": 1,
      "why": "\"Fuel. It is a big number… But fuel is not our real problem.\""
@@ -88,45 +88,45 @@
     {
      "q": "What happens with the one truck she shows?",
      "options": [
-      "It never leaves the warehouse",
-      "It is damaged",
       "It goes out full but comes back empty",
-      "It is always full"
+      "It is damaged",
+      "It is always full",
+      "It never leaves the warehouse"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"It goes out full, but it comes back empty. An empty return trip.\""
     },
     {
      "q": "What is Sophie's main message to the new colleague?",
      "options": [
-      "Watch the small numbers too, because that is where you save money",
       "Only watch the big number",
-      "Cut the fuel every month",
-      "Buy more trucks"
+      "Buy more trucks",
+      "Watch the small numbers too, because that is where you save money",
+      "Cut the fuel every month"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Do not only watch the big number. Watch the small ones. That is where we save money.\""
     },
     {
      "q": "When Sophie says the empty trip makes the cost \"twice as big\", she means…",
      "options": [
-      "you pay for the trip but only use half of it",
-      "the truck carries two loads",
       "the fuel is cheaper on the way back",
-      "the truck goes twice as fast"
+      "the truck goes twice as fast",
+      "you pay for the trip but only use half of it",
+      "the truck carries two loads"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Inferência: pagar a viagem inteira mas voltar vazio dobra o custo real de cada carga útil."
     },
     {
      "q": "How does Sophie feel about the number at the bottom of the budget?",
      "options": [
-      "She thinks it is too small to matter",
-      "She wants to hide it",
+      "She is bored by it",
       "She is surprised and thinks it is important",
-      "She is bored by it"
+      "She thinks it is too small to matter",
+      "She wants to hide it"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: ela repete \"Bigger\" e diz que ninguém olhava para ele — quer chamar a atenção do colega."
     }
    ]
@@ -139,32 +139,32 @@
     {
      "q": "\"The trucks need <strong>fuel</strong> to run.\" Fuel is…",
      "options": [
-      "the box on the truck",
       "the thing that powers the engine",
+      "the box on the truck",
       "the driver of the truck",
       "the road"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Fuel = combustível, o que faz o motor funcionar."
     },
     {
      "q": "Choose the correct word: \"We pay the workers in the warehouse. That is our ___ cost.\"",
      "options": [
-      "labour",
-      "storage",
       "route",
-      "fuel"
+      "labour",
+      "fuel",
+      "storage"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Labour = mão de obra, o custo das pessoas que trabalham."
     },
     {
      "q": "An <strong>empty truck</strong> on the way back is a problem because…",
      "options": [
       "you pay for the trip but move nothing",
+      "it carries too much stock",
       "it uses no fuel",
-      "it is very fast",
-      "it carries too much stock"
+      "it is very fast"
      ],
      "answer": 0,
      "why": "Empty truck = caminhão vazio; você paga a viagem mas não transporta carga."
@@ -172,23 +172,23 @@
     {
      "q": "Choose the correct word: \"All the small costs ___ to a big number at the end of the month.\"",
      "options": [
-      "slow down",
       "add up",
-      "go away",
-      "cut down"
+      "slow down",
+      "cut down",
+      "go away"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "To add up = somar-se; os pequenos custos se juntam num total grande."
     },
     {
      "q": "\"These costs are <strong>silent</strong>.\" Silent here means…",
      "options": [
-      "hidden, nobody notices them",
       "brand new",
+      "very cheap",
       "very loud",
-      "very cheap"
+      "hidden, nobody notices them"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Silent = silencioso; aqui, custos que passam despercebidos."
     }
    ]
@@ -201,31 +201,31 @@
     {
      "q": "\"We need to <strong>cut costs</strong> this year.\" To cut costs means to…",
      "options": [
+      "spend more money",
       "spend less money",
       "buy new trucks",
-      "spend more money",
       "hire more people"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Cut costs = cortar custos, gastar menos."
     },
     {
      "q": "\"Can the finance team <strong>sign off on</strong> this budget?\" To sign off on means to…",
      "options": [
-      "print it",
-      "say no to it",
+      "give it final approval",
       "lose it",
-      "give it final approval"
+      "say no to it",
+      "print it"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Sign off on = aprovar formalmente, dar o aval."
     },
     {
      "q": "\"Let's <strong>look into</strong> the empty trucks.\" To look into means to…",
      "options": [
-      "ignore them",
-      "study them to understand the problem",
       "buy them",
+      "study them to understand the problem",
+      "ignore them",
       "clean them"
      ],
      "answer": 1,
@@ -234,23 +234,23 @@
     {
      "q": "\"These small costs <strong>add up</strong> fast.\" To add up means…",
      "options": [
-      "to stay very small",
-      "to get cheaper",
+      "to disappear",
       "to become a big total together",
-      "to disappear"
+      "to get cheaper",
+      "to stay very small"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Add up = somar-se; juntos viram um número grande."
     },
     {
      "q": "\"A better route can <strong>save money</strong>.\" To save money means to…",
      "options": [
-      "keep money by not spending it",
-      "lose money",
       "spend more",
-      "borrow money"
+      "borrow money",
+      "lose money",
+      "keep money by not spending it"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Save money = economizar, guardar dinheiro que não foi gasto."
     }
    ]

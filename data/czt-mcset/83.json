@@ -9,9 +9,9 @@
      "q": "Why can't you just start speaking when ready on a video call?",
      "options": [
       "It is against the rules",
-      "The chat is disabled",
+      "The host must call your name",
       "A delay may make you cut across someone, or over-politeness makes you miss your turn",
-      "The host must call your name"
+      "The chat is disabled"
      ],
      "answer": 2,
      "why": "\"you might cut across someone else because of a delay, or miss your moment entirely because everyone is being too polite.\""
@@ -19,21 +19,21 @@
     {
      "q": "What do good video participants do before they speak?",
      "options": [
-      "Repeat the last point",
       "Signal — a wave, a short phrase, or the chat",
       "Wait for the host",
+      "Repeat the last point",
       "Turn off their camera"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"Good video participants signal before they speak.\""
     },
     {
      "q": "Why do they use people's names more than in person?",
      "options": [
-      "To be formal",
-      "Because eye contact doesn't travel through a screen",
       "To fill the silence",
-      "Because the host requires it"
+      "Because eye contact doesn't travel through a screen",
+      "Because the host requires it",
+      "To be formal"
      ],
      "answer": 1,
      "why": "\"because eye contact doesn't travel through a screen.\""
@@ -41,23 +41,23 @@
     {
      "q": "What effect does a cheap headset have, according to the text?",
      "options": [
-      "It hides background noise",
-      "It improves your audio",
       "It quietly undermines everything you say",
-      "It saves money with no downside"
+      "It hides background noise",
+      "It saves money with no downside",
+      "It improves your audio"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"A cheap headset makes you harder to follow, which quietly undermines everything you say.\""
     },
     {
      "q": "The author calls a decent microphone \"one of the smallest, most effective professional moves\" because it…",
      "options": [
-      "impresses the host",
       "gives a large benefit for a small effort",
+      "impresses the host",
       "replaces the need to signal",
       "is expensive but necessary"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: pequeno investimento, grande efeito na forma como você é ouvido."
     }
    ]
@@ -72,56 +72,56 @@
     {
      "q": "Why does the host set ground rules first?",
      "options": [
-      "Because it is company policy",
+      "To test the microphones",
       "To make the call longer",
-      "Because with twelve people they'll talk over each other otherwise",
-      "To test the microphones"
+      "Because it is company policy",
+      "Because with twelve people they'll talk over each other otherwise"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"twelve people… otherwise we'll all talk over each other.\""
     },
     {
      "q": "How should participants signal that they want to speak?",
      "options": [
-      "Just start talking",
       "Turn their camera off",
+      "Raise-hand button or a note in the chat",
       "Email the host",
-      "Raise-hand button or a note in the chat"
+      "Just start talking"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"use the raise-hand button or just drop a note in the chat and I'll bring you in.\""
     },
     {
      "q": "Why does the host ask people not to \"jump straight in\"?",
      "options": [
-      "Only the host may speak",
-      "With the lag, two people starting at once is painful",
       "The chat is faster",
-      "It is rude"
+      "It is rude",
+      "With the lag, two people starting at once is painful",
+      "Only the host may speak"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"with the lag, two people starting at once is painful for everyone.\""
     },
     {
      "q": "Why does the host ask everyone to stay on mute?",
      "options": [
-      "Because the call is recorded",
       "Because background noise makes the speaker hard to follow",
-      "To hide who is speaking",
-      "To save bandwidth"
+      "To save bandwidth",
+      "Because the call is recorded",
+      "To hide who is speaking"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"a lot of background noise… makes the speaker really hard to follow.\""
     },
     {
      "q": "Why does the host want people to \"hand back clearly\"?",
      "options": [
-      "To repeat their point",
-      "To be polite",
+      "To end the call",
       "So the host knows the turn is finished and can move on",
-      "To end the call"
+      "To repeat their point",
+      "To be polite"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"so I know the turn is finished and I can move to the next person.\""
     }
    ]
@@ -132,21 +132,21 @@
     {
      "q": "\"There's a bit of **lag** on the line, so give it a second.\" Lag means…",
      "options": [
-      "background noise",
       "a dropped call",
       "an echo",
-      "a delay in the connection"
+      "a delay in the connection",
+      "background noise"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Lag = atraso na transmissão."
     },
     {
      "q": "\"Please stay on **mute** unless you're speaking.\" To be on mute means…",
      "options": [
-      "you are the host",
+      "you have left the call",
       "your camera is off",
       "your microphone is off to others",
-      "you have left the call"
+      "you are the host"
      ],
      "answer": 2,
      "why": "Mute = mudo; o microfone não é ouvido pelos outros."
@@ -154,34 +154,34 @@
     {
      "q": "Choose the correct term: \"There's too much ___ — can everyone mute?\"",
      "options": [
-      "the chat",
       "background noise",
+      "turn-taking",
       "a headset",
-      "turn-taking"
+      "the chat"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Background noise = ruído de fundo."
     },
     {
      "q": "**Turn-taking** on a call refers to…",
      "options": [
-      "the orderly way people take turns to speak",
       "switching hosts",
       "sharing your screen",
-      "muting and unmuting"
+      "muting and unmuting",
+      "the orderly way people take turns to speak"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Turn-taking = alternância organizada de quem fala."
     },
     {
      "q": "Choose the correct word: \"I'll **hand over** to Emily now for the numbers.\" To hand over means to…",
      "options": [
-      "pass the turn to someone",
-      "raise your hand",
       "mute someone",
-      "leave the call"
+      "leave the call",
+      "raise your hand",
+      "pass the turn to someone"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Hand over = passar a palavra."
     }
    ]
@@ -192,41 +192,41 @@
     {
      "q": "\"Can I **add something** here?\" This phrase is used to…",
      "options": [
-      "mute another person",
-      "end your turn",
+      "politely ask to contribute",
       "leave the call",
-      "politely ask to contribute"
+      "end your turn",
+      "mute another person"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Um sinal educado de que você quer contribuir."
     },
     {
      "q": "\"Sorry, you're **breaking up** — could you repeat that?\" To break up means…",
      "options": [
-      "to disagree",
       "to end the meeting",
-      "the audio is cutting in and out",
-      "to leave the room"
+      "to disagree",
+      "to leave the room",
+      "the audio is cutting in and out"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Break up (numa chamada) = o áudio está cortando."
     },
     {
      "q": "\"You're on **mute** — we can't hear you.\" This tells someone to…",
      "options": [
-      "unmute their microphone",
+      "share their screen",
       "speak up",
-      "turn on the camera",
-      "share their screen"
+      "unmute their microphone",
+      "turn on the camera"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Aviso clássico: a pessoa fala mas está no mudo."
     },
     {
      "q": "\"Let me **jump in** quickly before we move on.\" To jump in means to…",
      "options": [
-      "end your point",
       "mute yourself",
+      "end your point",
       "enter the conversation briefly",
       "leave"
      ],
@@ -236,12 +236,12 @@
     {
      "q": "\"Let's **take this offline** and sort it after the call.\" To take something offline means to…",
      "options": [
+      "put it in the chat",
       "record it",
       "cancel it",
-      "discuss it separately, outside this meeting",
-      "put it in the chat"
+      "discuss it separately, outside this meeting"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Take offline = tratar em separado, fora da reunião atual."
     }
    ]

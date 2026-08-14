@@ -10,9 +10,9 @@
     {
      "q": "How many useful words does Sophie learn today?",
      "options": [
-      "Four",
       "Ten",
       "Three",
+      "Four",
       "Five"
      ],
      "answer": 3,
@@ -21,45 +21,45 @@
     {
      "q": "What is the important thing to do before you send a form?",
      "options": [
-      "Wait one week",
+      "Check the form and fix the problem",
       "Call the manager",
       "Print it twice",
-      "Check the form and fix the problem"
+      "Wait one week"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"check the form and fix the problem before you send it.\""
     },
     {
      "q": "The text says a small mistake is…",
      "options": [
-      "never possible",
       "always Sophie's fault",
       "a big problem",
-      "normal"
+      "normal",
+      "never possible"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"A small mistake can happen on a tax form. It is normal.\""
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
-      "You can learn English one step at a time",
       "A mistake on a form is a disaster",
       "Taxes follow simple patterns in English",
+      "You can learn English one step at a time",
       "Practice makes taxes easier"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto diz que o erro é normal e tem solução — não é um desastre."
     },
     {
      "q": "\"English comes in CAN's, not in CAN'Ts\" suggests that Sophie should feel…",
      "options": [
-      "worried",
-      "confident",
+      "bored",
       "angry",
-      "bored"
+      "worried",
+      "confident"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: a frase é motivacional — foco no que você consegue fazer, então confiança."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "What did Sophie do first with the form?",
      "options": [
-      "She checked the numbers one by one",
-      "She printed it",
+      "She sent it to the accountant",
       "She deleted it",
-      "She sent it to the accountant"
+      "She printed it",
+      "She checked the numbers one by one"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"I opened the form and I checked the numbers one by one.\""
     },
     {
      "q": "What did Sophie notice on the form?",
      "options": [
-      "Nothing at all",
       "The wrong date",
-      "A small mistake — one wrong number",
-      "A missing name"
+      "A missing name",
+      "Nothing at all",
+      "A small mistake — one wrong number"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"Then I noticed a small mistake. One number was wrong.\""
     },
     {
      "q": "What did her colleague do?",
      "options": [
-      "He fixed the form for her",
-      "He looked at it and agreed with her",
+      "He sent it to the manager",
       "He was not there",
-      "He sent it to the manager"
+      "He fixed the form for her",
+      "He looked at it and agreed with her"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I asked my colleague to look at it too. He agreed with me.\""
     },
     {
      "q": "Why did Sophie stay calm when she found the mistake?",
      "options": [
       "Because the deadline was far away",
-      "Because a mistake is normal",
       "Because nobody would see it",
+      "Because a mistake is normal",
       "Because it was not her form"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: ela diz \"I stayed calm, because a mistake is normal\" — o erro faz parte da rotina."
     },
     {
      "q": "How did Sophie probably feel about her work at the end?",
      "options": [
-      "Confused",
       "Afraid",
       "Proud and calm",
+      "Confused",
       "Angry"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: ela terminou antes do prazo, foi agradecida e diz \"I felt happy and calm.\""
     }
    ]
@@ -140,22 +140,22 @@
      "q": "\"There is a small <strong>mistake</strong> on the form.\" A mistake is…",
      "options": [
       "a deadline",
-      "an error",
       "a colleague",
-      "a report"
+      "a report",
+      "an error"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Mistake = erro."
     },
     {
      "q": "Choose the correct word: \"Please ___ the numbers before you send the form.\"",
      "options": [
-      "sleep",
       "check",
       "eat",
-      "drive"
+      "drive",
+      "sleep"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Check = conferir; você confere os números antes de enviar."
     },
     {
@@ -172,21 +172,21 @@
     {
      "q": "Choose the correct word: \"She ___ the mistake and wrote the right number.\"",
      "options": [
-      "corrected",
-      "closed",
       "called",
-      "opened"
+      "opened",
+      "corrected",
+      "closed"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Correct (corrected no passado) = corrigir; ela corrigiu o erro."
     },
     {
      "q": "\"I <strong>noticed</strong> a problem on page two.\" To notice means to…",
      "options": [
-      "forget something",
+      "cook something",
       "see or become aware of something",
-      "sell something",
-      "cook something"
+      "forget something",
+      "sell something"
      ],
      "answer": 1,
      "why": "Notice = perceber, notar algo."
@@ -201,21 +201,21 @@
     {
      "q": "\"Please <strong>fill out</strong> the tax form.\" To fill out means to…",
      "options": [
-      "send it back",
-      "throw it away",
       "read it aloud",
-      "write the information on it"
+      "send it back",
+      "write the information on it",
+      "throw it away"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Fill out = preencher (escrever as informações no formulário)."
     },
     {
      "q": "\"I need to <strong>hand in</strong> the report today.\" To hand in means to…",
      "options": [
-      "copy it",
-      "give or submit it",
       "lose it",
-      "sign it"
+      "give or submit it",
+      "sign it",
+      "copy it"
      ],
      "answer": 1,
      "why": "Hand in = entregar (o trabalho, o relatório)."
@@ -223,21 +223,21 @@
     {
      "q": "\"Let's <strong>sort out</strong> the mistake before lunch.\" To sort out means to…",
      "options": [
-      "ignore the problem",
-      "print the problem",
       "share the problem online",
-      "solve or fix the problem"
+      "solve or fix the problem",
+      "print the problem",
+      "ignore the problem"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Sort out = resolver, arrumar um problema."
     },
     {
      "q": "\"Can you <strong>check over</strong> my numbers?\" To check over means to…",
      "options": [
-      "translate them",
-      "look at them carefully",
       "delete them",
-      "hide them"
+      "look at them carefully",
+      "hide them",
+      "translate them"
      ],
      "answer": 1,
      "why": "Check over = revisar, olhar com atenção."
@@ -245,12 +245,12 @@
     {
      "q": "\"The manager will <strong>sign off on</strong> the form.\" To sign off on means to…",
      "options": [
-      "cancel it",
-      "print it",
       "approve it",
-      "lose it"
+      "lose it",
+      "print it",
+      "cancel it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Sign off on = aprovar, dar o aval final."
     }
    ]

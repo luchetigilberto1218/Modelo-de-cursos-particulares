@@ -10,32 +10,32 @@
     {
      "q": "What is a security policy?",
      "options": [
-      "A new computer system",
       "A short, clear document",
+      "A new computer system",
       "A team of managers",
       "A long legal contract"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"A security policy is a short, clear document.\""
     },
     {
      "q": "Why are policies written?",
      "options": [
+      "To stop small mistakes",
       "To slow people down",
-      "To sell new devices",
       "To hire more staff",
-      "To stop small mistakes"
+      "To sell new devices"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"They are written to stop small mistakes.\""
     },
     {
      "q": "Which is an example of a small mistake from the text?",
      "options": [
       "A password used in two places",
+      "A late meeting",
       "A long email",
-      "A slow computer",
-      "A late meeting"
+      "A slow computer"
      ],
      "answer": 0,
      "why": "\"a password used in two places\" é um dos exemplos citados."
@@ -44,22 +44,22 @@
      "q": "The text suggests that most incidents are caused by…",
      "options": [
       "too many rules",
+      "expensive equipment",
       "bad internet",
-      "simple human mistakes",
-      "expensive equipment"
+      "simple human mistakes"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: os exemplos são erros humanos simples, não falhas técnicas."
     },
     {
      "q": "The author would most likely DISAGREE with…",
      "options": [
-      "\"Following the policy takes little time.\"",
-      "\"Security policies only make work slower.\"",
+      "\"A policy protects the company.\"",
       "\"You should ask when you do not understand.\"",
-      "\"A policy protects the company.\""
+      "\"Following the policy takes little time.\"",
+      "\"Security policies only make work slower.\""
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: o texto diz claramente que as políticas não existem para atrasar ninguém."
     }
    ]
@@ -77,21 +77,21 @@
     {
      "q": "How many rules does Charlotte say stop almost every problem?",
      "options": [
-      "Five",
-      "Two",
+      "Three",
       "One",
-      "Three"
+      "Two",
+      "Five"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"there are three rules that stop almost every problem I have seen.\""
     },
     {
      "q": "What does she say about the password?",
      "options": [
-      "It must be very short",
-      "It must not be shared or reused",
       "It must be written on paper",
-      "It must be changed every week"
+      "It must not be shared or reused",
+      "It must be changed every week",
+      "It must be very short"
      ],
      "answer": 1,
      "why": "\"your password must not be shared, and it must not be used on any other website.\""
@@ -99,34 +99,34 @@
     {
      "q": "What should you do if the laptop is lost or stolen?",
      "options": [
-      "Tell no one",
-      "Wait a week",
+      "Buy a new one",
       "Call the IT team the same day",
-      "Buy a new one"
+      "Tell no one",
+      "Wait a week"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"If it is lost or stolen, call the IT team the same day.\""
     },
     {
      "q": "A strange email suggests that you should…",
      "options": [
-      "reply to the sender",
-      "click the link quickly",
       "report it before doing anything",
-      "delete your account"
+      "delete your account",
+      "click the link quickly",
+      "reply to the sender"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: ela diz para não clicar e reportar primeiro — o e-mail pode ser perigoso."
     },
     {
      "q": "How would you describe Charlotte's tone?",
      "options": [
-      "Friendly and helpful",
-      "Angry and strict",
       "Worried and unsure",
-      "Bored and tired"
+      "Angry and strict",
+      "Bored and tired",
+      "Friendly and helpful"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: ela dá as boas-vindas, promete que é rápido e se oferece para ajudar."
     }
    ]
@@ -139,30 +139,30 @@
     {
      "q": "\"Please read the <strong>security policy</strong> on your first day.\" A security policy is…",
      "options": [
+      "a type of password",
       "a set of rules to protect information",
-      "a new office building",
       "a job title",
-      "a type of password"
+      "a new office building"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Security policy = política de segurança: as regras para proteger a informação."
     },
     {
      "q": "\"This laptop is a company <strong>device</strong>.\" A device is…",
      "options": [
-      "a person",
+      "a piece of equipment like a phone or laptop",
       "a meeting room",
-      "a rule",
-      "a piece of equipment like a phone or laptop"
+      "a person",
+      "a rule"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Device = dispositivo, como um celular ou notebook."
     },
     {
      "q": "Choose the correct word: \"Many people do their job from home now. We call this ___.\"",
      "options": [
-      "a rule",
       "a device",
+      "a rule",
       "visitor access",
       "remote work"
      ],
@@ -172,9 +172,9 @@
     {
      "q": "\"The company hired a <strong>third-party</strong> tool to send emails.\" A third-party is…",
      "options": [
-      "a customer",
       "a manager",
       "a new employee",
+      "a customer",
       "an outside company or person"
      ],
      "answer": 3,
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct word: \"A lost password caused a ___ last month.\"",
      "options": [
-      "remote work",
-      "visitor access",
       "clear document",
-      "security incident"
+      "security incident",
+      "remote work",
+      "visitor access"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Security incident = incidente de segurança, o problema causado pela senha perdida."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager still has to <strong>sign off on</strong> the new policy.\" To sign off on means to…",
      "options": [
+      "print it",
       "approve it officially",
       "translate it",
-      "print it",
       "delete it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar oficialmente, dar o aval."
     },
     {
      "q": "\"We will <strong>roll out</strong> the rules to every office next month.\" To roll out means to…",
      "options": [
-      "cancel them",
-      "test them in secret",
       "introduce them step by step",
-      "hide them"
+      "hide them",
+      "test them in secret",
+      "cancel them"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Roll out = implementar aos poucos, colocar em prática."
     },
     {
      "q": "\"If an email looks strange, please <strong>report</strong> it to IT.\" To report something means to…",
      "options": [
-      "answer it",
-      "save it",
       "tell the right people about it",
-      "forward it to friends"
+      "answer it",
+      "forward it to friends",
+      "save it"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Report = comunicar, avisar às pessoas certas."
     },
     {
      "q": "\"Please <strong>follow through</strong> and change your password today.\" To follow through means to…",
      "options": [
-      "wait a week",
-      "ask someone else",
       "forget about it",
-      "do what you agreed to do"
+      "wait a week",
+      "do what you agreed to do",
+      "ask someone else"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Follow through = ir até o fim, cumprir o combinado."
     },
     {
      "q": "\"Never <strong>log in</strong> with someone else's password.\" To log in means to…",
      "options": [
-      "write a report",
-      "enter a system with your account",
       "turn off the computer",
-      "leave the office"
+      "write a report",
+      "leave the office",
+      "enter a system with your account"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Log in = entrar num sistema usando sua conta."
     }
    ]

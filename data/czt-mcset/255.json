@@ -1,0 +1,259 @@
+{
+ "num": 255,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "KPIs are key performance indicators. They are numbers. They tell you if your supply chain is healthy or sick. The best KPIs are short acronyms with very specific meanings.<br><br>OTIF means On Time In Full. It is the percentage of orders delivered both on time and complete. Fill rate is the percentage of demand met from stock. Inventory turnover shows how many times a year your stock sells and is replaced.<br><br>Three numbers, watched every week, tell you almost everything.",
+   "items": [
+    {
+     "q": "What are KPIs?",
+     "options": [
+      "Key performance indicators",
+      "Company rules",
+      "Long reports",
+      "New products"
+     ],
+     "answer": 0,
+     "why": "\"KPIs are key performance indicators.\""
+    },
+    {
+     "q": "What does OTIF mean?",
+     "options": [
+      "Only The Important Files",
+      "Out To Its Factory",
+      "On Time In Full",
+      "Over The International Fleet"
+     ],
+     "answer": 2,
+     "why": "\"OTIF means On Time In Full.\""
+    },
+    {
+     "q": "Fill rate is the percentage of…",
+     "options": [
+      "workers in the team",
+      "orders that arrive late",
+      "demand met from stock",
+      "stock that is old"
+     ],
+     "answer": 2,
+     "why": "\"Fill rate is the percentage of demand met from stock.\""
+    },
+    {
+     "q": "The text suggests that watching KPIs every week helps you…",
+     "options": [
+      "lower the prices",
+      "stop using acronyms",
+      "hire more people",
+      "see if the supply chain is healthy or sick"
+     ],
+     "answer": 3,
+     "why": "Inferência: se os números mostram saúde ou doença, observá-los toda semana ajuda a ver o estado da operação."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which idea?",
+     "options": [
+      "KPIs show if the supply chain is healthy.",
+      "Good KPIs have very specific meanings.",
+      "Three numbers can tell you a lot.",
+      "You need fifty KPIs to understand your supply chain."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto defende poucos números claros — \"Three numbers… tell you almost everything.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry apresentar o novo painel semanal. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi everyone. This is our new weekly dashboard for the ops director. It is simple. Only three numbers at the top. No long reports, no big tables. Just three.<br><br>The first number is OTIF — On Time In Full. It shows the percentage of orders that arrive on time and complete. This week we are at ninety-one percent. That is not bad, but I want it higher. Our customers want their boxes on time and complete.<br><br>The second number is fill rate. It shows how much of the order we can send from stock. A healthy fill rate is usually above ninety-five percent. Right now we are at ninety-three. So we need a little more stock in the warehouse.<br><br>The third number is inventory turnover. It shows how many times a year our stock sells and comes back. High turnover is good. It means we manage our stock well and we do not keep old boxes for too long.<br><br>Three numbers, every Monday morning. That is all. If OTIF drops, we act fast. We do not wait. Numbers tell the truth when opinions disagree.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many numbers are at the top of the dashboard?",
+     "options": [
+      "One",
+      "Ten",
+      "Five",
+      "Three"
+     ],
+     "answer": 3,
+     "why": "\"Only three numbers at the top.\""
+    },
+    {
+     "q": "What is the OTIF number this week?",
+     "options": [
+      "Eighty percent",
+      "One hundred percent",
+      "Ninety-one percent",
+      "Ninety-five percent"
+     ],
+     "answer": 2,
+     "why": "\"This week we are at ninety-one percent.\""
+    },
+    {
+     "q": "Why does Harry say they need a little more stock?",
+     "options": [
+      "The dashboard is broken",
+      "The prices are too high",
+      "The team is too small",
+      "The fill rate is below ninety-five percent"
+     ],
+     "answer": 3,
+     "why": "Inferência: fill rate saudável é acima de 95%, e estão em 93 — logo, falta estoque."
+    },
+    {
+     "q": "What does Harry mean by \"if OTIF drops, we act fast\"?",
+     "options": [
+      "They will wait one month",
+      "They will hire the ops director",
+      "They will delete the dashboard",
+      "They will fix the problem quickly"
+     ],
+     "answer": 3,
+     "why": "Inferência: agir rápido = resolver o problema logo que o número cai."
+    },
+    {
+     "q": "How would you describe Harry's message?",
+     "options": [
+      "Only about prices",
+      "Long and full of details",
+      "Angry with the team",
+      "Simple and focused on a few numbers"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele repete que é simples — só três números, toda segunda."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"OTIF is a good <strong>KPI</strong> for our team.\" A KPI is…",
+     "options": [
+      "a type of truck",
+      "a customer",
+      "a number that shows performance",
+      "a new worker"
+     ],
+     "answer": 2,
+     "why": "KPI = indicador de desempenho, um número que mostra a performance."
+    },
+    {
+     "q": "\"Our order arrived <strong>on time</strong>.\" On time means…",
+     "options": [
+      "in the wrong box",
+      "at the right time",
+      "very late",
+      "with a discount"
+     ],
+     "answer": 1,
+     "why": "On time = no prazo, na hora certa."
+    },
+    {
+     "q": "Choose the correct word: \"The box came complete. The order was ___.\"",
+     "options": [
+      "off duty",
+      "at risk",
+      "on sale",
+      "in full"
+     ],
+     "answer": 3,
+     "why": "In full = completo, com tudo dentro."
+    },
+    {
+     "q": "\"Our <strong>fill rate</strong> is 96 percent.\" Fill rate is…",
+     "options": [
+      "how fast trucks drive",
+      "the price of the product",
+      "how much of the order we send from stock",
+      "the number of workers"
+     ],
+     "answer": 2,
+     "why": "Fill rate = taxa de atendimento: quanto do pedido você atende com o estoque."
+    },
+    {
+     "q": "Choose the correct word: \"High ___ means our stock sells and comes back many times a year.\"",
+     "options": [
+      "acronym",
+      "meeting",
+      "percentage",
+      "inventory turnover"
+     ],
+     "answer": 3,
+     "why": "Inventory turnover = giro de estoque: quantas vezes o estoque vende e é reposto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We will <strong>roll out</strong> the new dashboard next week.\" To roll out means to…",
+     "options": [
+      "throw it away",
+      "hide it",
+      "sell it",
+      "start using it"
+     ],
+     "answer": 3,
+     "why": "Roll out = colocar em uso, lançar."
+    },
+    {
+     "q": "\"The director has to <strong>sign off on</strong> the report.\" To sign off on means to…",
+     "options": [
+      "delete it",
+      "print it",
+      "approve it",
+      "translate it"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"Let's <strong>keep an eye on</strong> the fill rate this week.\" To keep an eye on means to…",
+     "options": [
+      "raise the price",
+      "watch it carefully",
+      "forget about it",
+      "close the store"
+     ],
+     "answer": 1,
+     "why": "Keep an eye on = ficar de olho, observar com atenção."
+    },
+    {
+     "q": "\"If OTIF drops, we must <strong>act on</strong> it fast.\" To act on it means to…",
+     "options": [
+      "talk about the weather",
+      "wait a month",
+      "do something about it",
+      "ignore it"
+     ],
+     "answer": 2,
+     "why": "Act on it = agir sobre o problema, tomar uma atitude."
+    },
+    {
+     "q": "\"These three numbers really <strong>move the needle</strong>.\" This means they…",
+     "options": [
+      "cost too much",
+      "make a real difference",
+      "break the machine",
+      "take no time"
+     ],
+     "answer": 1,
+     "why": "Move the needle = mexer o ponteiro, fazer diferença de verdade."
+    }
+   ]
+  }
+ ]
+}

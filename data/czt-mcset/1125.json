@@ -1,0 +1,259 @@
+{
+ "num": 1125,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. This is a happy way to learn. Go with a smile.<br><br>Accounting is the language of numbers at Czarnikow. Today we study Daily Expenses. You learn short, useful sentences for the finance team.<br><br>You learn five new words today. We use them in short, simple sentences. Go slowly. One step at a time. You can do it!",
+   "items": [
+    {
+     "q": "What is today's lesson about?",
+     "options": [
+      "New computers",
+      "A company party",
+      "Daily Expenses",
+      "The finance team's history"
+     ],
+     "answer": 2,
+     "why": "\"Today we study Daily Expenses.\""
+    },
+    {
+     "q": "How many new words do you learn today?",
+     "options": [
+      "Four",
+      "Ten",
+      "Five",
+      "Three"
+     ],
+     "answer": 2,
+     "why": "\"You learn five new words today.\""
+    },
+    {
+     "q": "At Czarnikow, accounting is the language of…",
+     "options": [
+      "numbers",
+      "coffee",
+      "meetings",
+      "emails"
+     ],
+     "answer": 0,
+     "why": "\"Accounting is the language of numbers at Czarnikow.\""
+    },
+    {
+     "q": "\"Go slowly. One step at a time.\" This suggests the writer wants you to…",
+     "options": [
+      "study without a teacher",
+      "learn everything in one day",
+      "not feel in a hurry",
+      "skip the new words"
+     ],
+     "answer": 2,
+     "why": "Inferência: pedir para ir devagar mostra que o autor quer que você fique calmo, sem pressa."
+    },
+    {
+     "q": "How would you best describe the writer's tone?",
+     "options": [
+      "Angry and strict",
+      "Kind and encouraging",
+      "Cold and formal",
+      "Bored and tired"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"This is a happy way to learn\" e \"You can do it!\" mostram um tom gentil e encorajador."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentar o tema para uma nova trainee. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello, and welcome to the team. My name is Sophie. I work in accounting here at Czarnikow. I am very happy to meet you today.<br><br>Today we learn about daily expenses. Daily expenses are small costs. We pay them every day. They are not big, but they are important. Let me show you five words. Please say them with me. Repetition is good.<br><br>First, coffee. We buy coffee in the morning. Second, taxi. Sometimes we take a taxi to a meeting. Third, lunch. We eat lunch at one o'clock. Fourth, supplies. Supplies are pens, paper, and small things for the office. Fifth, ticket. A ticket is for the train or the bus.<br><br>Every day, I write these costs in the computer. The numbers must be correct. Every coffee, every taxi, every ticket. This is very important in accounting. We are a small team, but we are careful.<br><br>Do not worry. This is easy. We go step by step, one word at a time. If you have a question, please ask me. I am always here to help you. Let's start now.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Sophie's job?",
+     "options": [
+      "She drives a taxi",
+      "She sells coffee",
+      "She works in accounting",
+      "She is a new trainee"
+     ],
+     "answer": 2,
+     "why": "\"I work in accounting here at Czarnikow.\""
+    },
+    {
+     "q": "What are the five words about?",
+     "options": [
+      "Office computers",
+      "Team meetings",
+      "Weekend plans",
+      "Daily expenses"
+     ],
+     "answer": 3,
+     "why": "\"Today we learn about daily expenses… Let me show you five words.\""
+    },
+    {
+     "q": "When do they eat lunch?",
+     "options": [
+      "At one o'clock",
+      "At ten o'clock",
+      "At five o'clock",
+      "At eight o'clock"
+     ],
+     "answer": 0,
+     "why": "\"Third, lunch. We eat lunch at one o'clock.\""
+    },
+    {
+     "q": "Why does Sophie say \"Say them with me\"?",
+     "options": [
+      "She wants to end the lesson",
+      "She wants the trainee to practise the words",
+      "She cannot read the words",
+      "She is talking on the phone"
+     ],
+     "answer": 1,
+     "why": "Inferência: pedir para repetir junto mostra que ela quer que a trainee pratique as palavras."
+    },
+    {
+     "q": "How would you describe Sophie with the new trainee?",
+     "options": [
+      "Quiet and shy",
+      "Friendly and helpful",
+      "Angry and busy",
+      "Serious and strict"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Do not worry\", \"I am always here to help you\" mostram um jeito amigável e prestativo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We buy <strong>coffee</strong> every morning at the office.\" Coffee is…",
+     "options": [
+      "a train stop",
+      "a paper form",
+      "a small car",
+      "a hot drink"
+     ],
+     "answer": 3,
+     "why": "Coffee = café, uma bebida quente."
+    },
+    {
+     "q": "Choose the correct word: \"I take a ___ to the airport because it is fast.\"",
+     "options": [
+      "coffee",
+      "lunch",
+      "taxi",
+      "ticket"
+     ],
+     "answer": 2,
+     "why": "Taxi = táxi, o carro que você pega para ir a algum lugar."
+    },
+    {
+     "q": "\"We eat <strong>lunch</strong> at one o'clock.\" Lunch is…",
+     "options": [
+      "the meal in the middle of the day",
+      "office paper",
+      "a morning drink",
+      "a bus ticket"
+     ],
+     "answer": 0,
+     "why": "Lunch = almoço, a refeição do meio do dia."
+    },
+    {
+     "q": "\"<strong>Supplies</strong> are pens, paper, and small things for the office.\" Supplies means…",
+     "options": [
+      "office materials",
+      "train tickets",
+      "team meetings",
+      "hot drinks"
+     ],
+     "answer": 0,
+     "why": "Supplies = suprimentos, os materiais do escritório."
+    },
+    {
+     "q": "Choose the correct word: \"I buy a train ___ to go to the meeting in São Paulo.\"",
+     "options": [
+      "coffee",
+      "ticket",
+      "lunch",
+      "supplies"
+     ],
+     "answer": 1,
+     "why": "Ticket = bilhete / passagem, para o trem ou o ônibus."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho de contabilidade. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Please <strong>hand in</strong> your receipts to me.\" Hand in means to…",
+     "options": [
+      "read again",
+      "throw away",
+      "give or submit",
+      "sign your name"
+     ],
+     "answer": 2,
+     "why": "Hand in = entregar algo à pessoa certa."
+    },
+    {
+     "q": "\"The manager must <strong>sign off on</strong> the report.\" Sign off on means to…",
+     "options": [
+      "translate it",
+      "formally approve it",
+      "hide it",
+      "print it"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"Good. The numbers <strong>add up</strong>.\" Add up means…",
+     "options": [
+      "the total is correct",
+      "the taxi is here",
+      "the meeting is late",
+      "the paper is lost"
+     ],
+     "answer": 0,
+     "why": "Add up = as contas batem, o total está correto."
+    },
+    {
+     "q": "\"Please <strong>fill out</strong> this expense form.\" Fill out means to…",
+     "options": [
+      "send it by email",
+      "sign only your name",
+      "make a copy",
+      "complete it with information"
+     ],
+     "answer": 3,
+     "why": "Fill out = preencher com as informações."
+    },
+    {
+     "q": "\"We <strong>keep track of</strong> our daily expenses.\" Keep track of means to…",
+     "options": [
+      "share with clients",
+      "forget quickly",
+      "record and follow carefully",
+      "pay in cash"
+     ],
+     "answer": 2,
+     "why": "Keep track of = acompanhar e registrar com cuidado."
+    }
+   ]
+  }
+ ]
+}

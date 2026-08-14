@@ -1,0 +1,259 @@
+{
+ "num": 9,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Training is how we learn new things at work. A company can offer many types of training. There are language classes, technical courses, and soft skills workshops.<br><br>The goal is simple: help people do their job better. When employees learn, the company grows with them.<br><br>Training is an investment, not a cost. A good course builds new skills and more confidence.",
+   "items": [
+    {
+     "q": "What is training, according to the text?",
+     "options": [
+      "A finance report",
+      "A type of meeting",
+      "A new software",
+      "A way to learn new things at work"
+     ],
+     "answer": 3,
+     "why": "\"Training is how we learn new things at work.\""
+    },
+    {
+     "q": "Which types of training does the company offer?",
+     "options": [
+      "Only workshops",
+      "Language classes, technical courses, and soft skills workshops",
+      "Only language classes",
+      "Only technical courses"
+     ],
+     "answer": 1,
+     "why": "O texto cita os três: language classes, technical courses e soft skills workshops."
+    },
+    {
+     "q": "What is the goal of training?",
+     "options": [
+      "To sell more products",
+      "To help people do their job better",
+      "To open a new office",
+      "To reduce the number of employees"
+     ],
+     "answer": 1,
+     "why": "\"The goal is simple: help people do their job better.\""
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "training is a waste of money",
+      "companies should not train people",
+      "employees learn best alone",
+      "spending on a good course is worth it"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz \"Training is an investment, not a cost\" — vale a pena investir."
+    },
+    {
+     "q": "\"The company grows with them\" suggests that…",
+     "options": [
+      "only the boss learns",
+      "training stops the company",
+      "the company gets smaller",
+      "when people learn, the company gets better too"
+     ],
+     "answer": 3,
+     "why": "Inferência: aprendizado dos funcionários e crescimento da empresa andam juntos."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry falar sobre o curso de inglês. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi team, this is Harry. I am organising an English course for the finance team, and I want to tell you the plan.<br><br>The course starts next Monday. We have classes two times a week, on Monday and Wednesday, from six to seven in the evening. The instructor is very good, and the classes are small.<br><br>You can join online or in the meeting room. If you cannot come one day, do not worry. You can watch the class later.<br><br>At the end, every student gets a certificate. This is an investment in you and in the team. I hope you can learn a lot and feel more confident in meetings. See you on Monday!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "When does the English course start?",
+     "options": [
+      "Next Monday",
+      "Today",
+      "Next month",
+      "Next Friday"
+     ],
+     "answer": 0,
+     "why": "\"The course starts next Monday.\""
+    },
+    {
+     "q": "How many times a week are the classes?",
+     "options": [
+      "One time",
+      "Three times",
+      "Two times",
+      "Every day"
+     ],
+     "answer": 2,
+     "why": "\"We have classes two times a week, on Monday and Wednesday.\""
+    },
+    {
+     "q": "What can a student do if they cannot come one day?",
+     "options": [
+      "Watch the class later",
+      "Ask for money back",
+      "Nothing",
+      "Repeat the whole course"
+     ],
+     "answer": 0,
+     "why": "\"If you cannot come one day… You can watch the class later.\""
+    },
+    {
+     "q": "Why does Harry say the course is \"an investment in you\"?",
+     "options": [
+      "Because it helps you grow and feel more confident",
+      "Because it is only for the boss",
+      "Because it is not important",
+      "Because it is very cheap"
+     ],
+     "answer": 0,
+     "why": "Inferência: Harry liga o curso a aprender e ficar mais confiante nas reuniões."
+    },
+    {
+     "q": "How does Harry feel about the course?",
+     "options": [
+      "Bored",
+      "Angry",
+      "Positive and encouraging",
+      "Worried and unsure"
+     ],
+     "answer": 2,
+     "why": "Inferência: ele convida o time, elogia o instrutor e torce para eles aprenderem muito."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The new <strong>skill</strong> helps me write better emails.\" A skill is…",
+     "options": [
+      "a salary",
+      "an ability to do something well",
+      "a mistake",
+      "a meeting room"
+     ],
+     "answer": 1,
+     "why": "Skill = habilidade, a capacidade de fazer algo bem."
+    },
+    {
+     "q": "Choose the correct word: \"At the end of the ___, every student gets a certificate.\"",
+     "options": [
+      "course",
+      "cost",
+      "office",
+      "email"
+     ],
+     "answer": 0,
+     "why": "Course = curso; é ele que termina e dá o certificado."
+    },
+    {
+     "q": "Choose the correct word: \"The ___ is very good; she teaches us clearly.\"",
+     "options": [
+      "workshop",
+      "cost",
+      "certificate",
+      "instructor"
+     ],
+     "answer": 3,
+     "why": "Instructor = instrutor(a), a pessoa que ensina."
+    },
+    {
+     "q": "\"Training is an <strong>investment</strong>, not a cost.\" An investment is…",
+     "options": [
+      "money you lose",
+      "a free gift",
+      "a fine",
+      "money you spend to get value later"
+     ],
+     "answer": 3,
+     "why": "Investment = investimento: você aplica dinheiro esperando retorno."
+    },
+    {
+     "q": "Choose the correct word: \"We join a short ___ on Friday to practise soft skills.\"",
+     "options": [
+      "certificate",
+      "cost",
+      "workshop",
+      "salary"
+     ],
+     "answer": 2,
+     "why": "Workshop = oficina, uma atividade prática curta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"I want to <strong>sign up for</strong> the English course.\" To sign up for means to…",
+     "options": [
+      "cancel",
+      "pay later",
+      "register or join",
+      "be late"
+     ],
+     "answer": 2,
+     "why": "Sign up for = inscrever-se, entrar no curso."
+    },
+    {
+     "q": "\"The company will <strong>roll out</strong> the training next month.\" To roll out means to…",
+     "options": [
+      "start and share it with everyone",
+      "stop the training",
+      "make it shorter",
+      "hide it"
+     ],
+     "answer": 0,
+     "why": "Roll out = lançar, colocar para funcionar aos poucos."
+    },
+    {
+     "q": "\"I want to <strong>brush up on</strong> my English before the meeting.\" To brush up on means to…",
+     "options": [
+      "forget",
+      "teach a class",
+      "write a report",
+      "practise and improve again"
+     ],
+     "answer": 3,
+     "why": "Brush up on = revisar e melhorar algo que você já sabe um pouco."
+    },
+    {
+     "q": "\"Please <strong>keep up with</strong> the homework each week.\" To keep up with means to…",
+     "options": [
+      "stay at the same pace, not fall behind",
+      "do it once a year",
+      "stop doing it",
+      "give it to a friend"
+     ],
+     "answer": 0,
+     "why": "Keep up with = acompanhar o ritmo, não ficar para trás."
+    },
+    {
+     "q": "\"I still need to <strong>catch up on</strong> last week's class.\" To catch up on means to…",
+     "options": [
+      "do what you missed",
+      "start a new job",
+      "cancel the class",
+      "teach the class"
+     ],
+     "answer": 0,
+     "why": "Catch up on = pôr em dia, fazer o que ficou atrasado."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "num": 1116,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "In logistics, the most-asked question is very simple: \"Where is it?\" Every day, clients call to check the status of a shipment, a truck, or a pallet.<br><br>Today we practise two small questions: <strong>Where is</strong> and <strong>Where are</strong>. \"Where is\" is for one thing. \"Where are\" is for many things. These questions are the fastest way to check any delivery.<br><br>A good rule: never guess. Always check the system first. If you are not sure, say \"Let me check and call you back.\" A clear status makes a happy client. In this job, transparency is better than optimism.",
+   "items": [
+    {
+     "q": "According to the text, what is the most-asked question in logistics?",
+     "options": [
+      "\"Who are you?\"",
+      "\"When did you send it?\"",
+      "\"Where is it?\"",
+      "\"How much is it?\""
+     ],
+     "answer": 2,
+     "why": "\"the most-asked question is very simple: 'Where is it?'\""
+    },
+    {
+     "q": "When do we use \"Where are\"?",
+     "options": [
+      "For a question about time",
+      "For one thing",
+      "For many things",
+      "For a person only"
+     ],
+     "answer": 2,
+     "why": "\"'Where are' is for many things.\" — plural."
+    },
+    {
+     "q": "What should you do if you are not sure of the status?",
+     "options": [
+      "End the call",
+      "Promise a fast delivery",
+      "Guess a good answer",
+      "Say \"Let me check and call you back.\""
+     ],
+     "answer": 3,
+     "why": "\"If you are not sure, say 'Let me check and call you back.'\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with this idea:",
+     "options": [
+      "A clear status makes a happy client.",
+      "Simple questions get fast answers.",
+      "It is fine to guess if the client is in a hurry.",
+      "You should check the system before you answer."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz \"never guess\" e \"always check the system\". Adivinhar é o oposto do conselho."
+    },
+    {
+     "q": "\"Transparency is better than optimism\" suggests that…",
+     "options": [
+      "clients do not want any information",
+      "you should always promise good news",
+      "optimism is never useful at work",
+      "it is better to say the true status than a nice guess"
+     ],
+     "answer": 3,
+     "why": "Inferência: é melhor dar a verdade (status real) do que uma resposta bonita mas incerta."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily atendendo um cliente ao telefone. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello, this is Emily from the logistics team. How can I help you?<br><br>Okay, you want to know where your delivery is. No problem. Can you give me the tracking number, please? Thank you. Let me check the system now.<br><br>Right, I can see it here. Your two pallets are on the truck now. The truck is near the city, and the driver is on the road. Good news — the status is \"out for delivery.\"<br><br>The update says the boxes are about one hour away. So the delivery is very close now. I am not going to guess the exact minute, but one hour is a safe time.<br><br>Is there anything else? No? Perfect. If you have any question later, just call me and I will check the location again. Thank you for your call, and have a good day. Bye now.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Emily ask the client for?",
+     "options": [
+      "The name of the driver",
+      "The tracking number",
+      "The price of the delivery",
+      "The client's address"
+     ],
+     "answer": 1,
+     "why": "\"Can you give me the tracking number, please?\""
+    },
+    {
+     "q": "Where are the pallets now?",
+     "options": [
+      "At the airport",
+      "On the truck",
+      "In the warehouse",
+      "Still with the client"
+     ],
+     "answer": 1,
+     "why": "\"Your two pallets are on the truck now.\""
+    },
+    {
+     "q": "What is the status of the delivery?",
+     "options": [
+      "Cancelled",
+      "Out for delivery",
+      "Lost",
+      "Waiting in the office"
+     ],
+     "answer": 1,
+     "why": "\"the status is 'out for delivery.'\""
+    },
+    {
+     "q": "Why does Emily NOT give the exact minute of arrival?",
+     "options": [
+      "Because she does not want to help",
+      "Because the truck is broken",
+      "Because she does not want to guess",
+      "Because the client did not ask"
+     ],
+     "answer": 2,
+     "why": "Inferência: ela diz \"I am not going to guess the exact minute\" — prefere um tempo seguro a adivinhar."
+    },
+    {
+     "q": "How would you best describe Emily on this call?",
+     "options": [
+      "Helpful and clear",
+      "Angry and fast",
+      "Confused and lost",
+      "Bored and quiet"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela checa o sistema, dá o status e se oferece para ajudar de novo — é prestativa e clara."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Can you tell me the <strong>status</strong> of my order?\" <strong>Status</strong> means…",
+     "options": [
+      "the situation or state",
+      "the color",
+      "the price",
+      "the size"
+     ],
+     "answer": 0,
+     "why": "Status = situação/estado atual da entrega."
+    },
+    {
+     "q": "\"The <strong>location</strong> of the truck is near the port.\" <strong>Location</strong> means…",
+     "options": [
+      "the place",
+      "the weight",
+      "the driver's name",
+      "the time"
+     ],
+     "answer": 0,
+     "why": "Location = localização, o lugar onde algo está."
+    },
+    {
+     "q": "Choose the correct word: \"Please give me the ___ number so I can find your box.\"",
+     "options": [
+      "morning",
+      "tracking",
+      "green",
+      "happy"
+     ],
+     "answer": 1,
+     "why": "Tracking number = número de rastreamento, usado para localizar a entrega."
+    },
+    {
+     "q": "Choose the correct word: \"I have good news. Here is a fresh ___ about your delivery.\"",
+     "options": [
+      "update",
+      "table",
+      "chair",
+      "window"
+     ],
+     "answer": 0,
+     "why": "Update = atualização, nova informação sobre o status."
+    },
+    {
+     "q": "\"What is your order <strong>number</strong>?\" <strong>Number</strong> here means…",
+     "options": [
+      "a color of the box",
+      "the name of the client",
+      "the price in dollars",
+      "a code to identify the order"
+     ],
+     "answer": 3,
+     "why": "Number = número, o código que identifica o pedido."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em ligações e mensagens de entrega. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The order is <strong>out for delivery</strong>.\" This means the order is…",
+     "options": [
+      "on the way to the client",
+      "still in the warehouse",
+      "lost",
+      "cancelled"
+     ],
+     "answer": 0,
+     "why": "Out for delivery = saiu para entrega, está a caminho do cliente."
+    },
+    {
+     "q": "\"Let me <strong>check on</strong> your delivery.\" To <strong>check on</strong> something is to…",
+     "options": [
+      "cancel it",
+      "sell it",
+      "look at how it is going",
+      "pay for it"
+     ],
+     "answer": 2,
+     "why": "Check on = verificar como algo está, dar uma olhada no status."
+    },
+    {
+     "q": "\"I will <strong>call you back</strong> in five minutes.\" To <strong>call back</strong> means to…",
+     "options": [
+      "end the call now",
+      "visit the client",
+      "return the call later",
+      "send an email"
+     ],
+     "answer": 2,
+     "why": "Call back = ligar de volta mais tarde."
+    },
+    {
+     "q": "\"Your box will <strong>show up</strong> in about one hour.\" To <strong>show up</strong> means to…",
+     "options": [
+      "arrive",
+      "be late",
+      "break",
+      "disappear"
+     ],
+     "answer": 0,
+     "why": "Show up = aparecer, chegar."
+    },
+    {
+     "q": "\"Please <strong>hold on</strong> while I check the system.\" To <strong>hold on</strong> means to…",
+     "options": [
+      "call again",
+      "speak louder",
+      "wait a moment",
+      "hang up the phone"
+     ],
+     "answer": 2,
+     "why": "Hold on = espere um momento, aguarde na linha."
+    }
+   ]
+  }
+ ]
+}

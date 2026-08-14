@@ -10,56 +10,56 @@
     {
      "q": "According to the text, what is the first moment of every conversation?",
      "options": [
-      "The goodbye",
-      "The greeting",
       "The email",
-      "The meeting"
+      "The meeting",
+      "The greeting",
+      "The goodbye"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"Greetings are the first moment of every conversation.\""
     },
     {
      "q": "How many polite expressions will you learn today?",
      "options": [
-      "Three",
-      "Five",
+      "Ten",
       "Four",
-      "Ten"
+      "Three",
+      "Five"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"Today you will learn five polite expressions.\""
     },
     {
      "q": "What do a warm \"Hello\" and \"Nice to meet you\" do?",
      "options": [
       "They close the meeting",
-      "They open doors",
       "They cost money",
+      "They open doors",
       "They take a long time"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"a warm 'Hello' and 'Nice to meet you' open doors.\""
     },
     {
      "q": "The author would most likely DISAGREE with the idea that…",
      "options": [
-      "A good greeting is a good start",
       "Greetings do not matter at work",
+      "A good greeting is a good start",
       "Small words are important",
       "You can learn step by step"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Inferência: o texto todo diz que pequenas palavras e cumprimentos são importantes."
     },
     {
      "q": "\"English comes in CAN's, not in CAN'Ts\" suggests that the author wants you to feel…",
      "options": [
-      "Worried about mistakes",
-      "Ready to stop",
       "Bored with the lesson",
-      "Confident and able to do it"
+      "Worried about mistakes",
+      "Confident and able to do it",
+      "Ready to stop"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: a frase é de incentivo — foco no que você CONSEGUE fazer."
     }
    ]
@@ -77,34 +77,34 @@
     {
      "q": "Where does Sophie work?",
      "options": [
-      "In the kitchen",
-      "At reception",
       "In another city",
-      "At home"
+      "At home",
+      "In the kitchen",
+      "At reception"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I work here at reception.\""
     },
     {
      "q": "What does Sophie say to her colleagues every morning?",
      "options": [
-      "\"Good morning! How are you?\"",
-      "\"This is your desk.\"",
       "\"Please sit down.\"",
+      "\"This is your desk.\"",
+      "\"Good morning! How are you?\"",
       "\"Goodbye, see you tomorrow.\""
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"I smile and I say, 'Good morning! How are you?'\""
     },
     {
      "q": "What do the new people say when Sophie helps them?",
      "options": [
       "\"How are you?\"",
-      "\"Goodbye.\"",
       "\"Thanks for your help.\"",
+      "\"Goodbye.\"",
       "\"Please come in.\""
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"They say, 'Thanks for your help.'\""
     },
     {
@@ -112,8 +112,8 @@
      "options": [
       "Welcome",
       "Afraid",
-      "Late",
-      "Tired"
+      "Tired",
+      "Late"
      ],
      "answer": 0,
      "why": "Inferência: sorrir e usar palavras gentis serve para deixar as pessoas bem-vindas."
@@ -121,12 +121,12 @@
     {
      "q": "From what Sophie says, we can understand that she thinks small words are…",
      "options": [
-      "Only for managers",
       "Not necessary",
       "Difficult to learn",
-      "Important every day"
+      "Important every day",
+      "Only for managers"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Inferência: ela diz \"Small words are important\" e usa-as o dia todo."
     }
    ]
@@ -141,8 +141,8 @@
      "options": [
       "olá",
       "obrigado",
-      "por favor",
-      "tchau"
+      "tchau",
+      "por favor"
      ],
      "answer": 0,
      "why": "Hello = olá, o cumprimento de chegada."
@@ -150,10 +150,10 @@
     {
      "q": "\"It is late. <strong>Goodbye</strong>, see you tomorrow.\" <strong>Goodbye</strong> means…",
      "options": [
-      "olá",
       "bem-vindo",
+      "por favor",
       "tchau",
-      "por favor"
+      "olá"
      ],
      "answer": 2,
      "why": "Goodbye = tchau, a despedida."
@@ -161,34 +161,34 @@
     {
      "q": "Choose the correct word: \"Can you help me, ___?\"",
      "options": [
-      "welcome",
-      "hello",
+      "goodbye",
       "please",
-      "goodbye"
+      "hello",
+      "welcome"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Please = por favor, para pedir com educação."
     },
     {
      "q": "Choose the correct word: \"You helped me a lot. ___ for your help!\"",
      "options": [
+      "Goodbye",
       "Hello",
       "Thanks",
-      "Goodbye",
       "Please"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Thanks = obrigado(a), para agradecer."
     },
     {
      "q": "\"<strong>Welcome</strong> to Czarnikow! Please come in.\" <strong>Welcome</strong> means…",
      "options": [
       "tchau",
-      "olá",
       "bem-vindo(a)",
-      "por favor"
+      "por favor",
+      "olá"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Welcome = bem-vindo(a), para receber alguém."
     }
    ]
@@ -201,10 +201,10 @@
     {
      "q": "\"Hello! Please <strong>come in</strong>.\" <strong>Come in</strong> means…",
      "options": [
-      "sit down and wait",
-      "enter the room",
       "go away",
-      "call later"
+      "enter the room",
+      "call later",
+      "sit down and wait"
      ],
      "answer": 1,
      "why": "Come in = entrar (na sala)."
@@ -212,23 +212,23 @@
     {
      "q": "\"This is your desk. Please <strong>sit down</strong>.\" <strong>Sit down</strong> means…",
      "options": [
-      "leave now",
       "take a seat",
+      "come back",
       "stand up",
-      "come back"
+      "leave now"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Sit down = sentar-se."
     },
     {
      "q": "\"Goodbye! <strong>See you tomorrow</strong>.\" <strong>See you tomorrow</strong> means…",
      "options": [
-      "we will meet again tomorrow",
-      "come in now",
       "we will never meet",
-      "thank you"
+      "thank you",
+      "come in now",
+      "we will meet again tomorrow"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "See you tomorrow = até amanhã, a gente se vê amanhã."
     },
     {
@@ -236,21 +236,21 @@
      "options": [
       "\"Please come in.\"",
       "\"My name is Sophie.\"",
-      "\"I am fine, thanks.\"",
-      "\"This is your desk.\""
+      "\"This is your desk.\"",
+      "\"I am fine, thanks.\""
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "How are you? = Como você está? A resposta educada é \"I am fine, thanks.\""
     },
     {
      "q": "\"Goodbye! <strong>Have a nice day</strong>!\" We say this to…",
      "options": [
-      "start a meeting",
-      "ask for help",
+      "say we are angry",
       "wish someone a good day",
-      "say we are angry"
+      "start a meeting",
+      "ask for help"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Have a nice day = tenha um bom dia, uma despedida simpática."
     }
    ]

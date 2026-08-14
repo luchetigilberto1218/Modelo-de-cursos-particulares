@@ -1,0 +1,259 @@
+{
+ "num": 1104,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A warehouse morning is pure routine. It is the same sequence every day: same people, same times. Today we use the Present Simple to describe those daily actions.<br><br>Emily starts work at six. Harry prints the route sheets. The team loads the first truck by seven. They check every pallet before it goes.<br><br>Once the pattern is clear, reporting a morning becomes easy. A good routine prevents mistakes. Clarity starts at 6 am, and morning habits shape the whole shift.",
+   "items": [
+    {
+     "q": "What time does Emily start work?",
+     "options": [
+      "At eight",
+      "At nine",
+      "At six",
+      "At seven"
+     ],
+     "answer": 2,
+     "why": "\"Emily starts work at six.\""
+    },
+    {
+     "q": "What does Harry do?",
+     "options": [
+      "He checks the pallets",
+      "He opens the gate",
+      "He prints the route sheets",
+      "He loads the truck"
+     ],
+     "answer": 2,
+     "why": "\"Harry prints the route sheets.\""
+    },
+    {
+     "q": "When does the team load the first truck?",
+     "options": [
+      "By eight",
+      "By seven",
+      "By nine",
+      "By six"
+     ],
+     "answer": 1,
+     "why": "\"The team loads the first truck by seven.\""
+    },
+    {
+     "q": "The text suggests that a good routine…",
+     "options": [
+      "makes more mistakes",
+      "is not important",
+      "helps to prevent mistakes",
+      "takes all day"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"A good routine prevents mistakes\" — a rotina ajuda a evitar erros."
+    },
+    {
+     "q": "The team checks every pallet before it goes. This suggests they want the work to be…",
+     "options": [
+      "different every day",
+      "done by one person",
+      "correct and careful",
+      "fast but wrong"
+     ],
+     "answer": 2,
+     "why": "Inferência: verificar cada palete antes de sair mostra cuidado para acertar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily descrever a manhã dela no armazém. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, I am Emily. Let me tell you about my morning at the warehouse.<br><br>I start work at six. First, I check the trucks. I look at the tyres and the doors. Then I open the big gate for the drivers. The morning air is cold, but I like it.<br><br>Harry arrives at half past six. He prints the route sheets for the day. He is very fast. After that, the team prepares the first truck. We load the boxes and we check every pallet.<br><br>At seven o'clock, the first truck is ready. The driver takes the sheets and goes. I say good morning to everyone. I like my job because the routine is clear. Same people, same times, every day.<br><br>A good morning is a calm morning. When I check everything, we make no mistakes. That is why I always start early.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Emily check first?",
+     "options": [
+      "The route sheets",
+      "The trucks",
+      "The boxes",
+      "The office"
+     ],
+     "answer": 1,
+     "why": "\"First, I check the trucks.\""
+    },
+    {
+     "q": "What time does Harry arrive?",
+     "options": [
+      "At six",
+      "At seven",
+      "At eight",
+      "At half past six"
+     ],
+     "answer": 3,
+     "why": "\"Harry arrives at half past six.\""
+    },
+    {
+     "q": "What is ready at seven o'clock?",
+     "options": [
+      "The office",
+      "The gate",
+      "The first truck",
+      "The route sheets"
+     ],
+     "answer": 2,
+     "why": "\"At seven o'clock, the first truck is ready.\""
+    },
+    {
+     "q": "Why does Emily like her job?",
+     "options": [
+      "Because the routine is clear",
+      "Because the work is easy",
+      "Because she starts late",
+      "Because she works alone"
+     ],
+     "answer": 0,
+     "why": "\"I like my job because the routine is clear.\""
+    },
+    {
+     "q": "Emily says she always starts early. This suggests that starting early helps her to…",
+     "options": [
+      "avoid mistakes and stay calm",
+      "work alone all day",
+      "skip the trucks",
+      "finish before lunch"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"When I check everything, we make no mistakes\" — começar cedo a deixa tranquila e sem erros."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"I <strong>start</strong> work at six.\" Start means…",
+     "options": [
+      "to stop",
+      "to wait",
+      "to begin",
+      "to finish"
+     ],
+     "answer": 2,
+     "why": "Start = começar."
+    },
+    {
+     "q": "\"I <strong>check</strong> the trucks every morning.\" Check means…",
+     "options": [
+      "to sell",
+      "to buy",
+      "to clean",
+      "to look at carefully"
+     ],
+     "answer": 3,
+     "why": "Check = verificar, olhar com atenção."
+    },
+    {
+     "q": "Choose the correct word: \"I ___ the big gate for the drivers.\"",
+     "options": [
+      "print",
+      "sleep",
+      "close",
+      "open"
+     ],
+     "answer": 3,
+     "why": "Open = abrir — ela abre o portão para os motoristas."
+    },
+    {
+     "q": "Choose the correct word: \"Harry and the drivers ___ at half past six.\"",
+     "options": [
+      "cook",
+      "read",
+      "leave",
+      "arrive"
+     ],
+     "answer": 3,
+     "why": "Arrive = chegar."
+    },
+    {
+     "q": "\"The team <strong>prepares</strong> the first truck.\" Prepare means…",
+     "options": [
+      "to hide",
+      "to paint",
+      "to get ready",
+      "to break"
+     ],
+     "answer": 2,
+     "why": "Prepare = preparar, deixar pronto."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho do dia a dia. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Every day I <strong>show up</strong> at six.\" Show up means to…",
+     "options": [
+      "call in sick",
+      "go home",
+      "take a break",
+      "arrive"
+     ],
+     "answer": 3,
+     "why": "Show up = aparecer, chegar ao trabalho."
+    },
+    {
+     "q": "\"The team <strong>sets up</strong> the trucks before seven.\" Set up means to…",
+     "options": [
+      "sit down",
+      "get ready",
+      "clean up",
+      "close down"
+     ],
+     "answer": 1,
+     "why": "Set up = preparar, deixar pronto."
+    },
+    {
+     "q": "\"We <strong>load up</strong> the boxes fast.\" Load up means to…",
+     "options": [
+      "throw things away",
+      "put things in",
+      "take things out",
+      "count the money"
+     ],
+     "answer": 1,
+     "why": "Load up = carregar, colocar as coisas dentro."
+    },
+    {
+     "q": "\"I <strong>check on</strong> the drivers in the morning.\" Check on means to…",
+     "options": [
+      "call the boss",
+      "make sure they are okay",
+      "pay them",
+      "close the gate"
+     ],
+     "answer": 1,
+     "why": "Check on = dar uma olhada, ver se está tudo bem."
+    },
+    {
+     "q": "\"At seven, the driver <strong>takes off</strong>.\" Take off means to…",
+     "options": [
+      "come back",
+      "eat lunch",
+      "stop working",
+      "leave"
+     ],
+     "answer": 3,
+     "why": "Take off = partir, ir embora."
+    }
+   ]
+  }
+ ]
+}

@@ -10,21 +10,21 @@
     {
      "q": "According to the text, how does working capital optimisation differ from cost cutting?",
      "options": [
-      "It focuses on renegotiating salaries",
       "It searches for cash that is already earned but not yet available",
+      "It focuses on renegotiating salaries",
       "It postpones capital expenditure indefinitely",
       "It reduces headcount rather than spending"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"It is the patient search for cash that is already earned but not yet available\" — não é corte, é liberação do que já existe."
     },
     {
      "q": "How is inventory reviewed by a senior treasurer?",
      "options": [
-      "By supplier terms",
+      "By moral obligation",
       "By customer name",
       "By velocity, not by line",
-      "By moral obligation"
+      "By supplier terms"
      ],
      "answer": 2,
      "why": "\"Inventory is reviewed not by line but by velocity\" — separa cash sinks de cash engines."
@@ -32,34 +32,34 @@
     {
      "q": "When does external financing enter the conversation?",
      "options": [
+      "As the first and preferred option",
       "Only after all three levers have been assessed",
       "Before any internal lever is assessed",
-      "As the first and preferred option",
       "Instead of touching receivables or payables"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Only after all three levers have been assessed does external financing come into the conversation.\""
     },
     {
      "q": "Which statement would the author most likely DISAGREE with?",
      "options": [
+      "The three levers should be pulled together, not one at a time",
       "Slow-moving inventory ties up recoverable cash",
       "Borrowing should be the first move to free up cash",
-      "The three levers should be pulled together, not one at a time",
       "Payables terms should be benchmarked against peers"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: o texto trata o financiamento externo como último recurso — o dinheiro já estava dentro de casa."
     },
     {
      "q": "The phrase \"cash that did not need to be borrowed because it had been there all along\" suggests that…",
      "options": [
       "external debt is always cheaper than internal cash",
+      "treasurers prefer inventory to receivables",
       "companies routinely overlook cash trapped inside their own operations",
-      "coordinated action is impossible in practice",
-      "treasurers prefer inventory to receivables"
+      "coordinated action is impossible in practice"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: o caixa 'preso' em estoque, recebíveis e prazos é subestimado — está lá, à espera de ser liberado."
     }
    ]
@@ -78,20 +78,20 @@
      "q": "What does Harry want to cover BEFORE discussing a new bank facility?",
      "options": [
       "A new hiring plan for the treasury team",
-      "Cash the company already owns but cannot yet spend",
       "The cost of the last audit",
+      "Cash the company already owns but cannot yet spend",
       "The exchange-rate forecast for the quarter"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"I want to walk you through what we already own but cannot yet spend.\""
     },
     {
      "q": "How much cash is the slowest fifth of SKUs tying up?",
      "options": [
       "A negligible amount",
-      "About five days of cash",
+      "About twenty per cent of revenue",
       "About forty days of cash",
-      "About twenty per cent of revenue"
+      "About five days of cash"
      ],
      "answer": 2,
      "why": "\"The slowest fifth of our SKUs is sitting on roughly forty days of cash.\""
@@ -99,34 +99,34 @@
     {
      "q": "Why did no one flag the drifting receivables cohorts?",
      "options": [
+      "The customers had strong credit ratings",
       "The terms had recently been renegotiated",
       "Each account, on its own, looked fine",
-      "The finance system was offline",
-      "The customers had strong credit ratings"
+      "The finance system was offline"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"no one flagged it because each account, on its own, looked fine\" — só o padrão por coorte revela o problema."
     },
     {
      "q": "What does Harry imply about the company's payables terms?",
      "options": [
-      "They are more generous than the market, leaving capacity unused",
-      "They are aggressive and risk damaging supplier relations",
       "They are already the tightest in the sector",
-      "They cannot be changed without board approval"
+      "They cannot be changed without board approval",
+      "They are aggressive and risk damaging supplier relations",
+      "They are more generous than the market, leaving capacity unused"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"we are simply more generous than the market… leaving real capacity on the table\" — dá para alongar prazos como os pares."
     },
     {
      "q": "What is the core of Harry's recommendation?",
      "options": [
       "Delay any action until the next quarter",
-      "Fix receivables only, since it is the fastest lever",
+      "Pull all three levers in parallel, rarely just one",
       "Borrow first, then optimise internally",
-      "Pull all three levers in parallel, rarely just one"
+      "Fix receivables only, since it is the fastest lever"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"We pull all three levers in parallel, not one after another. Rarely is the answer just one of them.\""
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"Those slow-moving lines are pure <strong>cash sinks</strong>.\" A cash sink is…",
      "options": [
-      "a bank account earning high interest",
       "a product or asset that ties up cash without releasing it",
-      "a supplier offering long payment terms",
-      "a customer who always pays early"
+      "a customer who always pays early",
+      "a bank account earning high interest",
+      "a supplier offering long payment terms"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Cash sink = sugador de caixa: prende dinheiro sem devolver."
     },
     {
      "q": "Choose the correct word: \"We review inventory by ___, so we can tell the fast sellers from the ones gathering dust.\"",
      "options": [
-      "seniority",
+      "geography",
       "velocity",
       "morality",
-      "geography"
+      "seniority"
      ],
      "answer": 1,
      "why": "Velocity = velocidade de giro do estoque — o critério da lição."
@@ -162,30 +162,30 @@
      "q": "Choose the correct term: \"Two ___ have drifted past their terms, even though every single account looked healthy.\"",
      "options": [
       "cash engines",
+      "aging cohorts",
       "credit lines",
-      "market peers",
-      "aging cohorts"
+      "market peers"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Aging cohort = coorte de vencimento; o problema só aparece agrupando os recebíveis por idade."
     },
     {
      "q": "\"By paying suppliers faster than everyone else, we are <strong>leaving capacity on the table</strong>.\" This means we are…",
      "options": [
       "overpaying for raw materials",
-      "exceeding our credit limit",
       "breaching a covenant with the bank",
-      "failing to use room we could safely exploit"
+      "failing to use room we could safely exploit",
+      "exceeding our credit limit"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Leaving capacity on the table = deixar capacidade sem uso — dá para alongar prazos sem risco."
     },
     {
      "q": "\"A handful of fast movers are pure <strong>cash engines</strong>.\" A cash engine is…",
      "options": [
       "a dormant supplier contract",
-      "a long-term fixed asset",
       "an overdue receivable",
+      "a long-term fixed asset",
       "an item that generates and turns cash quickly"
      ],
      "answer": 3,
@@ -203,54 +203,54 @@
      "options": [
       "leak to the market",
       "quietly ignore",
-      "postpone indefinitely",
-      "formally approve"
+      "formally approve",
+      "postpone indefinitely"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new payables policy across all business units.\" To roll out means to…",
      "options": [
-      "audit it retroactively",
       "implement it in stages",
-      "outsource it to a bank",
-      "quietly cancel it"
+      "audit it retroactively",
+      "quietly cancel it",
+      "outsource it to a bank"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Roll out = implementar de forma progressiva."
     },
     {
      "q": "\"Procurement <strong>pushed back on</strong> extending supplier terms.\" They…",
      "options": [
-      "approved it without question",
-      "forgot to review it",
+      "escalated it to the board",
       "resisted or objected to it",
-      "escalated it to the board"
+      "forgot to review it",
+      "approved it without question"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
     },
     {
      "q": "\"They agreed the collections plan but never <strong>followed through</strong>.\" They…",
      "options": [
-      "failed to carry it to completion",
-      "delegated it to the auditors",
+      "doubled the target overnight",
       "reversed it publicly",
-      "doubled the target overnight"
+      "failed to carry it to completion",
+      "delegated it to the auditors"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Follow through = levar até o fim o que foi combinado."
     },
     {
      "q": "\"Squeezing one small supplier will not <strong>move the needle</strong> on the cash gap.\" This means it will…",
      "options": [
       "annoy the whole supply base",
+      "trigger a covenant breach",
       "take years to measure",
-      "not make a noticeable difference",
-      "trigger a covenant breach"
+      "not make a noticeable difference"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Move the needle = mexer o ponteiro, fazer diferença perceptível."
     }
    ]

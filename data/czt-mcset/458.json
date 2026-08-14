@@ -1,0 +1,259 @@
+{
+ "num": 458,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Import and export taxes in practice shape the real economics of a trade deal. A product's final price at destination is rarely the sum of cost and margin alone. It is cost, plus freight, plus insurance, plus import duty, plus local VAT, plus any small additional levies the destination country adds. Miss one of these, and the margin the commercial team thought they had can vanish entirely.<br><br>The intermediate discipline is to calculate the landed cost of every product in every destination before it is priced, not after it is sold. Because duty rates change, sometimes quickly, a rate that was correct six months ago may no longer be. And although free trade agreements can reduce duties substantially, they usually require specific documentation — without it, the lower rate is not applied and the company pays the full amount.<br><br>Good trade operators keep a live duty table. It is not glamorous work. It is the difference between real margin and imaginary margin.",
+   "items": [
+    {
+     "q": "According to the text, the final price at destination is made up of…",
+     "options": [
+      "cost, freight, insurance, duty, VAT and any extra levies",
+      "freight and insurance only",
+      "cost and import duty only",
+      "cost and margin only"
+     ],
+     "answer": 0,
+     "why": "\"It is cost, plus freight, plus insurance, plus import duty, plus local VAT, plus any small additional levies.\""
+    },
+    {
+     "q": "When should landed cost be calculated, according to the text?",
+     "options": [
+      "Once a year, at the budget review",
+      "After the product is sold",
+      "Before the product is priced",
+      "Only when a customer complains"
+     ],
+     "answer": 2,
+     "why": "\"calculate the landed cost… before it is priced, not after it is sold.\""
+    },
+    {
+     "q": "Why might a duty rate that was correct six months ago be wrong today?",
+     "options": [
+      "Because duty rates change, sometimes quickly",
+      "Because insurance was not included",
+      "Because freight costs went up",
+      "Because the margin was too low"
+     ],
+     "answer": 0,
+     "why": "\"Because duty rates change, sometimes quickly, a rate that was correct six months ago may no longer be.\""
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "A free trade agreement guarantees a lower rate automatically.",
+      "Keeping a live duty table is worth the effort.",
+      "Missing one cost can wipe out the expected margin.",
+      "Landed cost should be known before pricing."
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto diz que o acordo reduz o imposto apenas COM a documentação específica — não é automático."
+    },
+    {
+     "q": "The phrase \"imaginary margin\" at the end suggests that…",
+     "options": [
+      "margins should never be discussed with clients",
+      "some margins are illegal",
+      "commercial teams invent their numbers on purpose",
+      "a margin can look real on paper but disappear once all landed costs are counted"
+     ],
+     "answer": 3,
+     "why": "Inferência: sem calcular o custo posto no destino, a margem existe só no papel — não no resultado real."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver explicando o caso ao novo analista. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Come and look at this shipment with me. On paper, this was one of our best deals last quarter — solid volume, a healthy margin, everyone was happy. But when the numbers finally settled, it lost money. Quietly. Nobody noticed for weeks.<br><br>Here is what happened. The destination country raised its import duty by three points, and nobody updated our pricing model. So we quoted the client using the old rate, we won the business, and then customs charged us the new one. That gap came straight out of our margin.<br><br>And it gets worse. There was a free trade agreement that could have cut the duty almost in half — but only with the right certificate of origin. We never sent it, so the lower rate simply did not apply. We paid the full amount.<br><br>The lesson is not complicated. Before you price anything, you calculate the landed cost — freight, insurance, duty, VAT, every little levy — for that exact destination, on that exact day. And you keep the duty table live, because these rates change without telling you. Real margin or imaginary margin: this is where the difference is decided.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Why did last quarter's 'best deal' actually lose money?",
+     "options": [
+      "The client refused to pay the invoice",
+      "The insurance claim was rejected",
+      "The destination raised import duty and the pricing model was not updated",
+      "Freight costs doubled after the quote"
+     ],
+     "answer": 2,
+     "why": "\"The destination country raised its import duty… and nobody updated our pricing model.\""
+    },
+    {
+     "q": "What happened with the free trade agreement in this case?",
+     "options": [
+      "It could have cut the duty, but the certificate of origin was never sent",
+      "It applied automatically and saved the deal",
+      "It did not exist for that route",
+      "It was cancelled by the destination country"
+     ],
+     "answer": 0,
+     "why": "\"only with the right certificate of origin. We never sent it, so the lower rate simply did not apply.\""
+    },
+    {
+     "q": "What does Oliver tell the analyst to do BEFORE pricing anything?",
+     "options": [
+      "Wait for customs to confirm the invoice",
+      "Ask the client for the current duty rate",
+      "Add a fixed 10% buffer to every quote",
+      "Calculate the landed cost for that exact destination and day"
+     ],
+     "answer": 3,
+     "why": "\"Before you price anything, you calculate the landed cost… for that exact destination, on that exact day.\""
+    },
+    {
+     "q": "When Oliver says the deal lost money \"quietly\", he implies that…",
+     "options": [
+      "the client was told immediately",
+      "the loss was small and unimportant",
+      "the problem went unnoticed until it was too late to fix the quote",
+      "the finance team hid the numbers on purpose"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"Nobody noticed for weeks\" — o prejuízo passou despercebido, não era visível de imediato."
+    },
+    {
+     "q": "What is the main point Oliver wants the analyst to take away?",
+     "options": [
+      "Free trade agreements should always be avoided",
+      "Duty rates rarely change, so old tables are fine",
+      "Pricing should be left to the customs broker",
+      "Live, destination-specific landed cost is what protects real margin"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele fecha com custo posto, tabela atualizada e a distinção entre margem real e imaginária."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We only price after we know the <strong>landed cost</strong>.\" Landed cost is…",
+     "options": [
+      "the freight bill on its own",
+      "the total cost of the goods delivered to the destination, with all charges included",
+      "the profit margin on the deal",
+      "the price the factory charges"
+     ],
+     "answer": 1,
+     "why": "Landed cost = custo posto no destino: mercadoria mais todos os encargos até chegar ao comprador."
+    },
+    {
+     "q": "Choose the correct word: \"The lower rate under the deal only applies if you send the ___.\"",
+     "options": [
+      "freight",
+      "imaginary margin",
+      "specific documentation",
+      "landed cost"
+     ],
+     "answer": 2,
+     "why": "Specific documentation = documentação específica; sem ela, a alíquota menor não é concedida."
+    },
+    {
+     "q": "\"The destination added a small extra <strong>levy</strong> on top of the duty.\" A levy is…",
+     "options": [
+      "an insurance policy",
+      "a shipping delay",
+      "a discount",
+      "a charge or tax imposed by an authority"
+     ],
+     "answer": 3,
+     "why": "Levy = taxa imposta por uma autoridade, cobrada além do imposto principal."
+    },
+    {
+     "q": "Choose the correct word: \"When we forgot the duty, the whole margin seemed to ___ overnight.\"",
+     "options": [
+      "insure",
+      "quote",
+      "settle",
+      "vanish"
+     ],
+     "answer": 3,
+     "why": "To vanish = desaparecer; a margem some quando um custo é esquecido."
+    },
+    {
+     "q": "\"We update our <strong>live table</strong> every week.\" A live table is…",
+     "options": [
+      "a summary of past shipments",
+      "a printed archive from last year",
+      "a table of rates kept current and updated as things change",
+      "a customer contact list"
+     ],
+     "answer": 2,
+     "why": "Live table = tabela atualizada, mantida sempre com os valores vigentes."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs comuns em operações de comércio exterior. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Finance still has to <strong>sign off on</strong> the new landed-cost model.\" To sign off on means to…",
+     "options": [
+      "postpone it",
+      "reject it",
+      "translate it",
+      "formally approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the live duty table to every desk next month.\" To roll out means to…",
+     "options": [
+      "cancel it gradually",
+      "print it once",
+      "implement it in stages",
+      "keep it secret"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"The margin thought to be safe was <strong>wiped out</strong> by the new duty.\" It was…",
+     "options": [
+      "delayed",
+      "protected",
+      "renegotiated",
+      "completely eliminated"
+     ],
+     "answer": 3,
+     "why": "Wiped out = zerado, completamente eliminado."
+    },
+    {
+     "q": "\"Nobody <strong>followed through</strong> on updating the duty table.\" They…",
+     "options": [
+      "delegated it to customs",
+      "documented it well",
+      "failed to carry the task to completion",
+      "finished the task on time"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado — o que não aconteceu aqui."
+    },
+    {
+     "q": "\"We need to <strong>factor in</strong> insurance and every small levy before we quote.\" To factor in means to…",
+     "options": [
+      "charge the client separately",
+      "include in the calculation",
+      "estimate roughly later",
+      "ignore for now"
+     ],
+     "answer": 1,
+     "why": "Factor in = incluir no cálculo, considerar no total."
+    }
+   ]
+  }
+ ]
+}

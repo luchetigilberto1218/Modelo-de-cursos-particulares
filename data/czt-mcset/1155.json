@@ -10,30 +10,30 @@
     {
      "q": "Where was the meeting?",
      "options": [
+      "At Sophie's house",
       "In the big office",
-      "In a small room",
       "On the phone",
-      "At Sophie's house"
+      "In a small room"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"The meeting was in a small room.\""
     },
     {
      "q": "How was the result?",
      "options": [
-      "Wrong",
+      "Good",
       "Late",
       "Bad",
-      "Good"
+      "Wrong"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"the result was good.\""
     },
     {
      "q": "When was the meeting?",
      "options": [
-      "Today",
       "Tomorrow",
+      "Today",
       "Next week",
       "Yesterday"
      ],
@@ -43,23 +43,23 @@
     {
      "q": "The text suggests that Sophie is…",
      "options": [
+      "angry with the team",
       "new at the company",
-      "helpful and patient",
       "never at the meeting",
-      "angry with the team"
+      "helpful and patient"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"Sophie explains the tax words slowly, in simple English\" — ela ajuda com calma."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
-      "the numbers were wrong",
-      "the team was unhappy",
       "taxes are always impossible",
-      "English about taxes can be simple"
+      "English about taxes can be simple",
+      "the numbers were wrong",
+      "the team was unhappy"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"Taxes can sound hard, but in English they follow simple patterns.\""
     }
    ]
@@ -79,8 +79,8 @@
      "options": [
       "In the big hall",
       "In room two",
-      "At the coffee shop",
-      "On the phone"
+      "On the phone",
+      "At the coffee shop"
      ],
      "answer": 1,
      "why": "\"The meeting was in room two, next to the coffee machine.\""
@@ -88,20 +88,20 @@
     {
      "q": "Who was a little late?",
      "options": [
-      "Peter",
-      "Sophie",
       "The colleague",
-      "Marta"
+      "Peter",
+      "Marta",
+      "Sophie"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Peter was a little late, but that was okay.\""
     },
     {
      "q": "How were the numbers last month?",
      "options": [
-      "On the desk",
       "Ready",
       "Correct",
+      "On the desk",
       "Not clear"
      ],
      "answer": 3,
@@ -111,22 +111,22 @@
      "q": "Sophie's message suggests that she is…",
      "options": [
       "angry with Peter",
-      "calm and friendly",
       "in a hurry to leave",
-      "worried and upset"
+      "worried and upset",
+      "calm and friendly"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Inferência: \"don't worry\", \"It is easy\", \"See you soon\" — o tom é calmo e amigável."
     },
     {
      "q": "Why does Sophie say \"one small step at a time\"?",
      "options": [
-      "To cancel the next meeting",
+      "To make the colleague feel it is easy",
       "To ask for more people",
       "To tell the colleague the work is late",
-      "To make the colleague feel it is easy"
+      "To cancel the next meeting"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: ela quer que o colega fique tranquilo — passo a passo é fácil."
     }
    ]
@@ -140,8 +140,8 @@
      "q": "\"The tax <strong>meeting</strong> starts at ten.\" A meeting is…",
      "options": [
       "a coffee break",
-      "a tax form",
       "a big number",
+      "a tax form",
       "a time when people come together to talk"
      ],
      "answer": 3,
@@ -150,10 +150,10 @@
     {
      "q": "Choose the correct word: \"We were in the small ___ next to the coffee machine.\"",
      "options": [
-      "meeting",
+      "result",
       "room",
-      "number",
-      "result"
+      "meeting",
+      "number"
      ],
      "answer": 1,
      "why": "Room = sala; é o lugar onde a reunião aconteceu."
@@ -161,23 +161,23 @@
     {
      "q": "\"Please check this <strong>number</strong> on the form.\" A number is…",
      "options": [
-      "a figure like 10 or 250",
       "a day of the week",
-      "an office",
-      "a person's name"
+      "a figure like 10 or 250",
+      "a person's name",
+      "an office"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Number = número: uma cifra, como 10 ou 250."
     },
     {
      "q": "Choose the correct word: \"The ___ was good, so everybody was happy.\"",
      "options": [
-      "yesterday",
       "room",
-      "result",
-      "meeting"
+      "meeting",
+      "yesterday",
+      "result"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Result = resultado: o que a reunião mostrou no fim."
     },
     {
@@ -185,10 +185,10 @@
      "options": [
       "next week",
       "tomorrow",
-      "this morning",
-      "the day before today"
+      "the day before today",
+      "this morning"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Yesterday = ontem: o dia antes de hoje."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"Please <strong>fill in</strong> the tax form.\" To fill in means to…",
      "options": [
-      "write the information in the blanks",
       "throw the form away",
+      "write the information in the blanks",
       "sign the form",
       "read the form fast"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Fill in = preencher: escrever as informações nos espaços."
     },
     {
      "q": "\"Can you <strong>hand in</strong> the report today?\" To hand in means to…",
      "options": [
-      "give it to the person in charge",
-      "copy it",
+      "keep it at home",
       "lose it",
-      "keep it at home"
+      "copy it",
+      "give it to the person in charge"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Hand in = entregar: dar o documento para quem pediu."
     },
     {
      "q": "\"Let's <strong>go over</strong> the numbers together.\" To go over means to…",
      "options": [
-      "delete them",
       "check them carefully",
+      "delete them",
       "hide them",
       "print them"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Go over = revisar: olhar com atenção, ponto a ponto."
     },
     {
      "q": "\"Please <strong>write down</strong> the result.\" To write down means to…",
      "options": [
-      "send it by email only",
-      "put it on paper",
       "say it out loud",
-      "forget it"
+      "forget it",
+      "send it by email only",
+      "put it on paper"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Write down = anotar: registrar no papel."
     },
     {
      "q": "\"The boss must <strong>sign off on</strong> the form.\" To sign off on means to…",
      "options": [
+      "give final approval",
       "read it later",
-      "print it twice",
       "cancel it",
-      "give final approval"
+      "print it twice"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Sign off on = aprovar formalmente, dar o aval final."
     }
    ]

@@ -10,12 +10,12 @@
     {
      "q": "What is a time window?",
      "options": [
+      "A small promise about when the order will arrive",
       "A price for delivery",
       "A window in the warehouse",
-      "A list of customers",
-      "A small promise about when the order will arrive"
+      "A list of customers"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"you make a time window. This is a small promise.\""
     },
     {
@@ -32,34 +32,34 @@
     {
      "q": "What happens over time when promises are broken?",
      "options": [
+      "The parcels arrive faster",
       "The company loses customers",
-      "The team grows bigger",
       "The website looks better",
-      "The parcels arrive faster"
+      "The team grows bigger"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"Over time, broken promises become lost customers.\""
     },
     {
      "q": "The author would most likely DISAGREE with this idea:",
      "options": [
-      "A realistic promise is a good promise",
+      "Promise only what the team can really do",
       "A missed window hurts trust",
-      "Promise the fastest window to look good on the website",
-      "Promise only what the team can really do"
+      "A realistic promise is a good promise",
+      "Promise the fastest window to look good on the website"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: o texto diz que promessas bonitas no site, mas impossíveis, são ruins."
     },
     {
      "q": "The text suggests that a promise is only good if…",
      "options": [
-      "the customer asks for it",
-      "it is very fast",
+      "it looks nice on the website",
       "the team can really keep it",
-      "it looks nice on the website"
+      "it is very fast",
+      "the customer asks for it"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: \"Good scheduling protects promises that the team can really keep.\""
     }
    ]
@@ -77,20 +77,20 @@
     {
      "q": "What does Sophie say is the most important part of the new job?",
      "options": [
-      "Time windows",
-      "Driving the van",
+      "Answering the phone",
       "Packing parcels",
-      "Answering the phone"
+      "Time windows",
+      "Driving the van"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Today I want to talk about time windows. It is the most important part of your new job.\""
     },
     {
      "q": "What mistake do many new schedulers make?",
      "options": [
-      "They call the customer too much",
-      "They forget the address",
       "They work too slowly",
+      "They forget the address",
+      "They call the customer too much",
       "They promise a very tight window to look fast"
      ],
      "answer": 3,
@@ -99,34 +99,34 @@
     {
      "q": "What tip does Sophie give about the customer?",
      "options": [
+      "Send an email in the morning",
       "Call fifteen minutes before you arrive",
-      "Ask the customer to wait at home all day",
       "Give a bigger window",
-      "Send an email in the morning"
+      "Ask the customer to wait at home all day"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"call the customer fifteen minutes before you arrive.\""
     },
     {
      "q": "Why does Sophie say a broken promise is \"expensive\"?",
      "options": [
-      "The driver works longer",
-      "The parcel costs more money",
       "The website goes down",
-      "You can lose the customer, not just one parcel"
+      "You can lose the customer, not just one parcel",
+      "The parcel costs more money",
+      "The driver works longer"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"You do not lose one parcel. Over time, you lose the customer.\""
     },
     {
      "q": "What does Sophie mean by \"be realistic, not optimistic\"?",
      "options": [
-      "Work faster every day",
-      "Never promise anything",
       "Always promise the fastest time",
-      "Promise a window you can really keep"
+      "Promise a window you can really keep",
+      "Work faster every day",
+      "Never promise anything"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: ser realista = prometer só o que dá para cumprir, não o que parece bom."
     }
    ]
@@ -139,56 +139,56 @@
     {
      "q": "\"A <strong>time window</strong> tells the customer when the parcel will arrive.\" A time window is…",
      "options": [
-      "a window in the office",
-      "the price of the delivery",
       "the name of the driver",
-      "a period when delivery will happen"
+      "a window in the office",
+      "a period when delivery will happen",
+      "the price of the delivery"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Time window = janela de entrega, o período em que a entrega deve acontecer."
     },
     {
      "q": "Choose the correct word: \"We must ___ the promise we made to the customer.\"",
      "options": [
+      "sell",
       "lose",
       "keep",
-      "sell",
       "break"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "To keep a promise = cumprir a promessa."
     },
     {
      "q": "Choose the correct word: \"The plan must be ___, not just nice on the website.\"",
      "options": [
-      "realistic",
+      "late",
       "broken",
       "empty",
-      "late"
+      "realistic"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Realistic = realista: possível de cumprir de verdade."
     },
     {
      "q": "\"An <strong>SLA</strong> is a service level agreement.\" It is…",
      "options": [
       "a delivery van",
-      "a formal promise about the service, with consequences",
       "a customer's phone number",
+      "a formal promise about the service, with consequences",
       "a type of parcel"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "SLA = nível de serviço: um compromisso formal com o cliente."
     },
     {
      "q": "Choose the correct word: \"If we miss the window, we can get a ___.\"",
      "options": [
       "faster van",
-      "new driver",
       "lost customer",
-      "bigger website"
+      "bigger website",
+      "new driver"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Lost customer = cliente perdido, o resultado de quebrar promessas."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"Can you <strong>set up</strong> the delivery for tomorrow?\" To set up means to…",
      "options": [
-      "cancel it",
       "forget it",
-      "pay for it",
-      "arrange or organise it"
+      "cancel it",
+      "arrange or organise it",
+      "pay for it"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Set up = organizar, preparar algo."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new schedule next week.\" To roll out means to…",
      "options": [
-      "start using it, step by step",
       "hide it",
       "stop it",
+      "start using it, step by step",
       "print it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Roll out = colocar em prática aos poucos."
     },
     {
      "q": "\"The customer <strong>pushed back on</strong> the late window.\" This means the customer…",
      "options": [
-      "moved house",
       "was not happy and said no",
+      "agreed at once",
       "paid more",
-      "agreed at once"
+      "moved house"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Push back on = resistir, não concordar com algo."
     },
     {
      "q": "\"We said we would call, and we <strong>followed through</strong>.\" This means we…",
      "options": [
-      "did what we promised",
       "changed the plan",
-      "forgot to call",
-      "called the wrong person"
+      "did what we promised",
+      "called the wrong person",
+      "forgot to call"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Follow through = fazer até o fim o que foi combinado."
     },
     {
      "q": "\"A quick call before delivery can <strong>make a difference</strong>.\" This means it can…",
      "options": [
-      "take too long",
-      "cost a lot of money",
       "have a real, positive effect",
-      "confuse the driver"
+      "cost a lot of money",
+      "confuse the driver",
+      "take too long"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Make a difference = fazer diferença de verdade, mudar o resultado."
     }
    ]

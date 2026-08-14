@@ -19,45 +19,45 @@
     {
      "q": "What is commercial risk?",
      "options": [
+      "The ship sinks",
       "The country changes its law",
       "The buyer does not pay",
-      "The ship sinks",
       "The rate moves"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "\"the commercial risk (the buyer does not pay).\""
     },
     {
      "q": "What is currency risk?",
      "options": [
-      "The goods are late",
-      "The buyer disappears",
       "The exchange rate moves against you",
-      "The bank closes"
+      "The goods are late",
+      "The bank closes",
+      "The buyer disappears"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"the currency risk (the exchange rate moves against you).\""
     },
     {
      "q": "What is the 'good news'?",
      "options": [
-      "For each risk, there is a tool",
-      "Trade is free",
       "There is no risk",
-      "The buyer always pays"
+      "The buyer always pays",
+      "For each risk, there is a tool",
+      "Trade is free"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"for each risk, there is a tool.\""
     },
     {
      "q": "What is the first step?",
      "options": [
+      "Ignore the risk",
       "See the risk clearly",
       "Avoid all trade",
-      "Ignore the risk",
       "Buy insurance for everything"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"The first step is just to see the risk clearly.\""
     }
    ]
@@ -72,8 +72,8 @@
     {
      "q": "What is the idea behind the risk map?",
      "options": [
-      "To stop the deal",
       "To buy insurance for everything",
+      "To stop the deal",
       "To scare the team",
       "To see the three main risks clearly and match each to a tool"
      ],
@@ -84,41 +84,41 @@
      "q": "What is the tool for commercial risk?",
      "options": [
       "A bigger order",
+      "Credit insurance",
       "Locking the rate",
-      "A watch list",
-      "Credit insurance"
+      "A watch list"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"The tool is credit insurance — if the buyer doesn't pay, the insurer covers most of it.\""
     },
     {
      "q": "How does the team handle country risk?",
      "options": [
-      "Ignore it",
       "Cancel the market",
       "Lock the currency",
-      "Watch the country closely, and buy special insurance for the biggest deal"
+      "Watch the country closely, and buy special insurance for the biggest deal",
+      "Ignore it"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"watch the country closely, and for our biggest deal, we can buy special insurance.\""
     },
     {
      "q": "What is a tool for currency risk?",
      "options": [
-      "Lock in the rate now, or build a small buffer into the price",
       "A watch list",
+      "Nothing",
       "Credit insurance",
-      "Nothing"
+      "Lock in the rate now, or build a small buffer into the price"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"lock in the rate now with the bank, or to build a small buffer into the price.\""
     },
     {
      "q": "What does Sophie say the real mistake is?",
      "options": [
       "Watching the country",
-      "Taking any risk",
       "Buying insurance",
+      "Taking any risk",
       "Not looking at the risk"
      ],
      "answer": 3,
@@ -134,8 +134,8 @@
      "options": [
       "the buyer does not pay",
       "the country changes its law",
-      "the rate moves",
-      "the ship is late"
+      "the ship is late",
+      "the rate moves"
      ],
      "answer": 0,
      "why": "Commercial risk = risco de o comprador não pagar."
@@ -143,20 +143,20 @@
     {
      "q": "**Country risk** is the risk that…",
      "options": [
-      "the buyer disappears",
       "the bank closes",
       "the goods are heavy",
-      "something goes wrong in the country (law, politics)"
+      "something goes wrong in the country (law, politics)",
+      "the buyer disappears"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Country risk = risco país."
     },
     {
      "q": "Choose the correct word: \"We use insurance to **___** the risk.\"",
      "options": [
-      "increase",
       "ignore",
       "ship",
+      "increase",
       "mitigate"
      ],
      "answer": 3,
@@ -165,23 +165,23 @@
     {
      "q": "**Default** means…",
      "options": [
-      "shipping early",
-      "failing to pay",
+      "paying on time",
       "a discount",
-      "paying on time"
+      "shipping early",
+      "failing to pay"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Default = inadimplência."
     },
     {
      "q": "Choose the correct word: \"The first step is to see the risk **___**.\"",
      "options": [
-      "clearly",
       "quickly",
       "cheaply",
+      "clearly",
       "loudly"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Clearly = claramente."
     }
    ]
@@ -203,45 +203,45 @@
     {
      "q": "\"The insurer **covers** most of it.\" To cover means to…",
      "options": [
-      "ship",
-      "cause",
+      "hide",
       "pay for / protect against",
-      "hide"
+      "ship",
+      "cause"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Cover = cobrir (o prejuízo)."
     },
     {
      "q": "\"Let's **keep an eye on** the country.\" To keep an eye on means to…",
      "options": [
+      "watch closely",
       "ignore",
-      "leave",
       "insure",
-      "watch closely"
+      "leave"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Keep an eye on = ficar de olho."
     },
     {
      "q": "\"We **build in** a small buffer.\" To build in means to…",
      "options": [
       "ignore",
-      "ship",
+      "include as part of something",
       "remove",
-      "include as part of something"
+      "ship"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Build in = incorporar."
     },
     {
      "q": "\"Nothing is dangerous **once we see it**.\" Once we see it means…",
      "options": [
+      "if we hide it",
       "after we recognise it",
       "never",
-      "if we hide it",
       "before we know it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Once we see it = uma vez que o enxergamos."
     }
    ]

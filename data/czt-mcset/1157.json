@@ -10,32 +10,32 @@
     {
      "q": "What is Sophie going to do next year?",
      "options": [
-      "Close the company",
-      "Stop the tax plan",
       "Sell the software",
-      "Train the team"
+      "Train the team",
+      "Stop the tax plan",
+      "Close the company"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"Sophie is going to train the team, one step at a time.\""
     },
     {
      "q": "What is going to change next year?",
      "options": [
-      "The team members",
-      "The office building",
       "The software for the tax forms",
-      "The name of the company"
+      "The team members",
+      "The name of the company",
+      "The office building"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"The company is going to use new software for the tax forms.\""
     },
     {
      "q": "When does the team check every form?",
      "options": [
       "Never",
-      "Only next year",
+      "After the deadline",
       "Before the deadline",
-      "After the deadline"
+      "Only next year"
      ],
      "answer": 2,
      "why": "\"The team is going to check every form before the deadline.\""
@@ -43,12 +43,12 @@
     {
      "q": "The text suggests that Sophie wants the team to feel…",
      "options": [
+      "calm and able to learn",
       "bored with the plan",
-      "afraid of taxes",
       "angry with the company",
-      "calm and able to learn"
+      "afraid of taxes"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: ela diz \"Go slow. You can do it.\" e usa inglês fácil — quer o time tranquilo."
     },
     {
@@ -77,53 +77,53 @@
     {
      "q": "What is Sophie going to show the team today?",
      "options": [
-      "The tax plan for next year",
-      "A new team member",
       "A new office",
-      "The company's sales"
+      "The company's sales",
+      "The tax plan for next year",
+      "A new team member"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Today I am going to show you our tax plan for next year.\""
     },
     {
      "q": "When are they going to start with the new software?",
      "options": [
-      "Next week",
       "In January",
       "In seven years",
+      "Next week",
       "In December"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"We are going to start in January.\""
     },
     {
      "q": "How long does the company keep every form?",
      "options": [
-      "For one year",
-      "For one month",
       "For seven years",
-      "Forever"
+      "For one year",
+      "Forever",
+      "For one month"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"We keep every form for seven years.\""
     },
     {
      "q": "Why are they going to send the first form a little early?",
      "options": [
+      "The tax calendar has a new date",
       "The accountant is on holiday",
       "The team is very fast",
-      "The tax calendar has a new date",
       "The software is broken"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: ela diz \"The tax calendar has a new date. So we are going to send the first form a little early.\""
     },
     {
      "q": "How does Sophie want the team to feel about the plan?",
      "options": [
       "Angry and busy",
-      "Worried and afraid",
       "Bored and tired",
+      "Worried and afraid",
       "Calm and ready, not worried"
      ],
      "answer": 3,
@@ -139,32 +139,32 @@
     {
      "q": "\"We have a good <strong>plan</strong> for next year.\" A <strong>plan</strong> is…",
      "options": [
-      "a big mistake",
-      "a tax form",
       "an idea of what to do",
+      "a tax form",
+      "a big mistake",
       "a phone call"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Plan = plano: uma ideia do que fazer."
     },
     {
      "q": "\"Next year we are going to <strong>change</strong> the software.\" To <strong>change</strong> means to…",
      "options": [
-      "keep it the same",
-      "sell it",
       "save it",
-      "make something different"
+      "sell it",
+      "make something different",
+      "keep it the same"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Change = mudar: tornar algo diferente."
     },
     {
      "q": "Choose the correct word: \"The team uses new ___ to fill the tax forms.\"",
      "options": [
+      "chairs",
       "windows",
-      "coffee",
       "software",
-      "chairs"
+      "coffee"
      ],
      "answer": 2,
      "why": "Software = programa de computador usado para os formulários."
@@ -172,23 +172,23 @@
     {
      "q": "\"Sophie is going to <strong>train</strong> the new people.\" To <strong>train</strong> means to…",
      "options": [
+      "check their forms",
       "teach them how to work",
-      "give them money",
       "send them home",
-      "check their forms"
+      "give them money"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Train = treinar: ensinar as pessoas a trabalhar."
     },
     {
      "q": "Choose the correct word: \"We start in January, so the plan is for ___ year.\"",
      "options": [
+      "same",
       "next",
       "last",
-      "old",
-      "same"
+      "old"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Next = próximo: o ano que vem."
     }
    ]
@@ -202,55 +202,55 @@
      "q": "\"Please <strong>fill out</strong> the tax form.\" To fill out means to…",
      "options": [
       "throw it away",
+      "read it fast",
       "write your answers on it",
-      "print it",
-      "read it fast"
+      "print it"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Fill out = preencher: escrever as respostas no formulário."
     },
     {
      "q": "\"The boss has to <strong>sign off on</strong> the plan.\" To sign off on means to…",
      "options": [
-      "cancel it",
-      "hide it",
+      "copy it",
       "say yes and approve it",
-      "copy it"
+      "hide it",
+      "cancel it"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"We are going to <strong>hand in</strong> the form on Friday.\" To hand in means to…",
      "options": [
       "keep it at home",
-      "give it to the right person",
+      "change it",
       "lose it",
-      "change it"
+      "give it to the right person"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Hand in = entregar: dar o formulário para quem precisa recebê-lo."
     },
     {
      "q": "\"Please <strong>check over</strong> the numbers before we send them.\" To check over means to…",
      "options": [
+      "print it twice",
       "look at it carefully",
-      "delete it",
       "send it now",
-      "print it twice"
+      "delete it"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Check over = revisar com atenção antes de enviar."
     },
     {
      "q": "\"Don't worry, we will <strong>sort out</strong> the small problem.\" To sort out means to…",
      "options": [
-      "forget it",
       "fix it",
       "start it",
-      "count it"
+      "count it",
+      "forget it"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Sort out = resolver: arrumar o problema."
     }
    ]

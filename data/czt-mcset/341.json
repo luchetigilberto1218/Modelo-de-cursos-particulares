@@ -1,0 +1,259 @@
+{
+ "num": 341,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At executive level, logistics stops being a set of shipments and becomes an architecture — a deliberate set of choices about where flows are routed, how much buffer is held, which lanes are owned and which are rented, and which risks the company absorbs rather than passes on. The architecture shapes both the unit economics of today and the ability to respond when tomorrow looks different from the forecast.<br><br>The board-level questions are bigger than the operational ones. How exposed are we to a single port, a single carrier, a single region? What would a three-week disruption on our longest lane actually cost us in lost customers, not just in freight? Which parts of the operation exist because they matter, and which because nobody has revisited them?<br><br>Good logistics leaders keep the architecture visible, reviewed, and willing to change. The silent drift toward whichever shape is cheapest this quarter usually ends with the company owning a set of choices nobody can remember making, and cannot easily unmake.",
+   "items": [
+    {
+     "q": "According to the text, what does logistics become at executive level?",
+     "options": [
+      "A cost-reduction exercise",
+      "A set of shipments",
+      "A deliberate architecture of choices",
+      "A single reporting line"
+     ],
+     "answer": 2,
+     "why": "\"logistics stops being a set of shipments and becomes an architecture — a deliberate set of choices\"."
+    },
+    {
+     "q": "Which of the following is described as a board-level question, rather than an operational one?",
+     "options": [
+      "How many containers ship each week",
+      "Which forklift model to buy",
+      "How exposed the company is to a single port or carrier",
+      "How to schedule the night shift"
+     ],
+     "answer": 2,
+     "why": "\"How exposed are we to a single port, a single carrier, a single region?\" é a pergunta de conselho."
+    },
+    {
+     "q": "The text asks what a three-week disruption would cost \"in lost customers, not just in freight.\" This suggests that…",
+     "options": [
+      "The true cost of disruption goes beyond the shipping bill",
+      "Longer lanes are always cheaper",
+      "Disruptions rarely affect customers",
+      "Freight is the only cost worth measuring"
+     ],
+     "answer": 0,
+     "why": "Inferência: ao contrastar clientes perdidos com frete, o texto diz que o custo real ultrapassa a conta do transporte."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "Owning a lane differs from renting one.",
+      "Architecture should be reviewed and kept visible.",
+      "Choosing whatever is cheapest each quarter is a sound long-term strategy.",
+      "A hidden dependence can build up without anyone deciding it."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto critica a \"silent drift toward whichever shape is cheapest this quarter\"."
+    },
+    {
+     "q": "What does the phrase \"a set of choices nobody can remember making\" suggest about silent drift?",
+     "options": [
+      "It is easy to reverse once noticed",
+      "It results from careful, documented planning",
+      "It only affects small companies",
+      "It accumulates through inaction rather than deliberate decisions"
+     ],
+     "answer": 3,
+     "why": "Inferência: a deriva silenciosa produz dependências que ninguém escolheu de forma consciente — daí serem difíceis de desfazer."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça James conduzindo a revisão de logística no conselho. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Before we approve next year's freight budget, I want the board to sit with one uncomfortable number. Over the last four years, roughly seventy per cent of our inbound volume has quietly funnelled through a single port, and most of that sits with one carrier.<br><br>Nobody decided this. There was no meeting, no memo, no strategy paper. Each quarter someone simply chose the cheapest available lane, and four years later we are exposed in a way none of us would have signed off on if we had seen it laid out on one slide.<br><br>So here is my concern. If that port closes for three weeks — a strike, a storm, a customs dispute — we do not just pay more for freight. We miss delivery windows, we breach service agreements, and some of those customers do not come back. That is the cost that never shows up in the logistics line of the P&L.<br><br>I am not asking us to tear everything up tomorrow. I am asking us to hold a small buffer, to open a second carrier on our critical lane, and to review this architecture every six months instead of drifting into it. A little redundancy now is far cheaper than the disruption we are currently pretending cannot happen.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What uncomfortable fact does James want the board to confront?",
+     "options": [
+      "About seventy per cent of inbound volume funnels through a single port",
+      "The company has too many carriers to manage",
+      "Customers are already leaving in large numbers",
+      "The freight budget has been overspent for four years"
+     ],
+     "answer": 0,
+     "why": "\"roughly seventy per cent of our inbound volume has quietly funnelled through a single port\"."
+    },
+    {
+     "q": "How does James say the dependence on one port came about?",
+     "options": [
+      "The board approved it four years ago",
+      "Through a formal strategy paper",
+      "Because a competitor forced it",
+      "Nobody decided it — each quarter someone chose the cheapest lane"
+     ],
+     "answer": 3,
+     "why": "\"Nobody decided this… Each quarter someone simply chose the cheapest available lane.\""
+    },
+    {
+     "q": "According to James, what is the cost that \"never shows up in the logistics line of the P&L\"?",
+     "options": [
+      "Higher freight rates",
+      "Lost customers from missed delivery windows",
+      "The cost of holding a buffer",
+      "The price of a second carrier"
+     ],
+     "answer": 1,
+     "why": "\"we miss delivery windows, we breach service agreements, and some of those customers do not come back.\""
+    },
+    {
+     "q": "When James says the exposure is something \"none of us would have signed off on if we had seen it laid out on one slide,\" he implies that…",
+     "options": [
+      "The exposure is actually harmless",
+      "The board is deliberately ignoring the risk",
+      "The slide was hidden from the board on purpose",
+      "The risk built up invisibly, not through a conscious decision"
+     ],
+     "answer": 3,
+     "why": "Inferência: ninguém aprovaria conscientemente — o risco cresceu por deriva, não por escolha."
+    },
+    {
+     "q": "How would you best describe James's overall stance?",
+     "options": [
+      "Focused only on cutting freight costs",
+      "Indifferent to the exposure",
+      "Alarmist, demanding an immediate overhaul",
+      "Measured — he wants targeted redundancy, not a full teardown"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"I am not asking us to tear everything up tomorrow\" — ele propõe buffer, segundo carrier e revisão, de forma calibrada."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"They held a generous <strong>buffer</strong> of stock ahead of the peak season.\" A buffer here is…",
+     "options": [
+      "a type of carrier",
+      "a reserve kept to absorb shocks",
+      "a shipping document",
+      "a pricing formula"
+     ],
+     "answer": 1,
+     "why": "Buffer = reserva mantida para absorver variações e choques."
+    },
+    {
+     "q": "\"Concentrating everything on one route left the firm dangerously <strong>exposed</strong>.\" Exposed means…",
+     "options": [
+      "highly profitable",
+      "publicly known",
+      "well protected",
+      "vulnerable to risk"
+     ],
+     "answer": 3,
+     "why": "Exposed = exposto, vulnerável a um risco."
+    },
+    {
+     "q": "Choose the correct term: \"A three-week ___ on the main lane would ripple through every downstream commitment.\"",
+     "options": [
+      "architecture",
+      "buffer",
+      "disruption",
+      "carrier"
+     ],
+     "answer": 2,
+     "why": "Disruption = interrupção; um corte de três semanas que se propaga pela cadeia."
+    },
+    {
+     "q": "\"Rather than pass the currency risk on, the company chose to <strong>absorb</strong> it.\" To absorb means to…",
+     "options": [
+      "ignore it entirely",
+      "hedge it with a bank",
+      "take it on internally rather than passing it along",
+      "transfer it to the client"
+     ],
+     "answer": 2,
+     "why": "To absorb = absorver, assumir o risco internamente em vez de repassá-lo."
+    },
+    {
+     "q": "\"When you <strong>own a lane</strong>, you control capacity; when you rent it, you inherit someone else's priorities.\" To own a lane means to…",
+     "options": [
+      "negotiate a one-off discount",
+      "share a route with a rival",
+      "buy the freight forwarder",
+      "have a dedicated, controlled route of your own"
+     ],
+     "answer": 3,
+     "why": "To own a lane = ter rota própria, com controle da capacidade, em contraste com alugar."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em revisões de logística no conselho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The board still has to <strong>sign off on</strong> the second-carrier plan.\" To sign off on means to…",
+     "options": [
+      "postpone indefinitely",
+      "reject outright",
+      "formally approve",
+      "comment informally"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the redundancy plan lane by lane.\" To roll out means to…",
+     "options": [
+      "audit it afterwards",
+      "keep it confidential",
+      "implement it in stages",
+      "cancel it in phases"
+     ],
+     "answer": 2,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Operations <strong>pushed back on</strong> holding extra buffer, citing the carrying cost.\" They…",
+     "options": [
+      "resisted or objected to it",
+      "forgot about it",
+      "approved it at once",
+      "delegated it upward"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, contestar — sem necessariamente vetar de vez."
+    },
+    {
+     "q": "\"The team agreed to diversify carriers but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "carried it to completion",
+      "documented it thoroughly",
+      "escalated it to the board",
+      "failed to carry it out to the end"
+     ],
+     "answer": 3,
+     "why": "Follow through = levar até o fim o que foi combinado; aqui, não levaram."
+    },
+    {
+     "q": "\"Trimming a few dollars per container will not <strong>move the needle</strong> on our real exposure.\" This means it will…",
+     "options": [
+      "make no meaningful difference",
+      "take years to measure",
+      "cost far too much",
+      "provoke strong resistance"
+     ],
+     "answer": 0,
+     "why": "Move the needle = fazer diferença perceptível; aqui, não fará."
+    }
+   ]
+  }
+ ]
+}

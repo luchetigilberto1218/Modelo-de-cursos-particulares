@@ -10,54 +10,54 @@
     {
      "q": "What does tracking show us?",
      "options": [
-      "Where a shipment is right now",
       "Who packed the parcel",
       "How much the parcel costs",
+      "Where a shipment is right now",
       "When the truck was bought"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Tracking is how we know where a shipment is right now.\""
     },
     {
      "q": "What is the difference between tracking and visibility?",
      "options": [
-      "Tracking shows the location; visibility also shows if it will arrive on time",
-      "Visibility is only for trucks",
       "There is no difference",
+      "Visibility is only for trucks",
+      "Tracking shows the location; visibility also shows if it will arrive on time",
       "Tracking is only for customers"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "Visibility é a palavra maior: não só o ponto no mapa, mas saber se vai chegar a tempo."
     },
     {
      "q": "Why do customers love good tracking?",
      "options": [
-      "It removes worry",
-      "It is faster than a truck",
       "It makes the parcel cheaper",
-      "It gives them a free gift"
+      "It gives them a free gift",
+      "It removes worry",
+      "It is faster than a truck"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Customers love good tracking because it removes worry.\""
     },
     {
      "q": "The text says \"A parcel you can see is a problem you can solve.\" This suggests that…",
      "options": [
-      "Every parcel is a problem",
+      "Parcels should not be seen",
       "Seeing a parcel is a waste of time",
-      "You cannot help what you cannot see",
-      "Parcels should not be seen"
+      "Every parcel is a problem",
+      "You cannot help what you cannot see"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: se ver ajuda a resolver, então o que você não vê é mais difícil de resolver."
     },
     {
      "q": "The author would most likely DISAGREE with which idea?",
      "options": [
+      "Visibility helps catch problems in hours",
       "Real-time tracking helps teams react early",
-      "Good tracking removes customer worry",
       "It is fine to wait days to find a problem",
-      "Visibility helps catch problems in hours"
+      "Good tracking removes customer worry"
      ],
      "answer": 2,
      "why": "Inferência: o texto elogia quem acha o problema em horas, não em dias."
@@ -77,20 +77,20 @@
     {
      "q": "What is Emily showing the new colleague?",
      "options": [
-      "A live tracking map of Europe",
-      "A photo of a customer",
       "A list of prices",
-      "A new truck"
+      "A photo of a customer",
+      "A new truck",
+      "A live tracking map of Europe"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"This is our live tracking map of Europe.\""
     },
     {
      "q": "What does a red dot mean?",
      "options": [
-      "The shipment is very cheap",
       "The shipment is on time",
       "The shipment is not real",
+      "The shipment is very cheap",
       "The shipment is late or has a problem"
      ],
      "answer": 3,
@@ -99,21 +99,21 @@
     {
      "q": "What does Emily do when she sees the two red dots near Paris?",
      "options": [
-      "She calls the customer to say goodbye",
-      "She checks them today, not tomorrow",
       "She turns off the screen",
-      "She waits one week"
+      "She waits one week",
+      "She calls the customer to say goodbye",
+      "She checks them today, not tomorrow"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"I know we need to check them today, not tomorrow.\""
     },
     {
      "q": "Emily says a red dot early in the day is a small problem. This suggests that…",
      "options": [
-      "The morning is a bad time to work",
+      "You should ignore red dots",
       "Waiting makes the problem bigger",
       "Red dots are never a problem",
-      "You should ignore red dots"
+      "The morning is a bad time to work"
      ],
      "answer": 1,
      "why": "Inferência: cedo é problema pequeno, tarde vira cliente irritado — esperar piora."
@@ -121,12 +121,12 @@
     {
      "q": "Why does Emily say \"every dot is a promise to a customer\"?",
      "options": [
-      "Because each shipment matters to a real person",
-      "Because the dots are only colours",
       "Because promises are not important",
-      "Because customers do not like dots"
+      "Because the dots are only colours",
+      "Because customers do not like dots",
+      "Because each shipment matters to a real person"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: cada ponto é um pedido real que a empresa quer entregar bem."
     }
    ]
@@ -139,31 +139,31 @@
     {
      "q": "\"We can see the parcel in <strong>real time</strong>.\" Real time means…",
      "options": [
-      "right now, as it happens",
       "last week",
+      "right now, as it happens",
       "in a dream",
       "next year"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Real time = tempo real: você vê no momento em que acontece."
     },
     {
      "q": "Choose the correct word: \"Good tracking removes the customer's ___.\"",
      "options": [
+      "truck",
       "map",
       "worry",
-      "truck",
       "box"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Worry = preocupação, o que o bom rastreamento tira do cliente."
     },
     {
      "q": "\"The map shows the <strong>location</strong> of every truck.\" Location means…",
      "options": [
       "the driver's name",
-      "the price of it",
       "the colour of it",
+      "the price of it",
       "the place where it is"
      ],
      "answer": 3,
@@ -172,23 +172,23 @@
     {
      "q": "Choose the correct word: \"When we see a problem, we ___ early instead of waiting.\"",
      "options": [
-      "close",
-      "sleep",
       "sing",
-      "react"
+      "react",
+      "sleep",
+      "close"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "To react = reagir: agir quando vê o problema."
     },
     {
      "q": "\"Companies with <strong>strong</strong> visibility catch problems fast.\" Strong here means…",
      "options": [
-      "very loud",
+      "very good and reliable",
       "very heavy",
       "very small",
-      "very good and reliable"
+      "very loud"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Strong = forte, aqui no sentido de bom e confiável."
     }
    ]
@@ -201,19 +201,19 @@
     {
      "q": "\"Let's <strong>keep an eye on</strong> the red dots.\" To keep an eye on means to…",
      "options": [
-      "throw it away",
-      "hide it",
       "forget it",
-      "watch it carefully"
+      "throw it away",
+      "watch it carefully",
+      "hide it"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Keep an eye on = ficar de olho, observar com atenção."
     },
     {
      "q": "\"The truck is <strong>held up</strong> in traffic.\" Held up means…",
      "options": [
-      "very fast",
       "already delivered",
+      "very fast",
       "very cheap",
       "delayed or stopped"
      ],
@@ -225,8 +225,8 @@
      "options": [
       "check again and give news",
       "buy a new parcel",
-      "close the office",
-      "delete the order"
+      "delete the order",
+      "close the office"
      ],
      "answer": 0,
      "why": "Follow up = dar sequência, voltar a falar para atualizar."
@@ -234,12 +234,12 @@
     {
      "q": "\"We need to <strong>sort out</strong> the problem before the end of the day.\" To sort out means to…",
      "options": [
-      "ignore it",
-      "make it bigger",
       "sell it",
-      "solve or fix it"
+      "ignore it",
+      "solve or fix it",
+      "make it bigger"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Sort out = resolver, arrumar o problema."
     },
     {
@@ -247,8 +247,8 @@
      "options": [
       "appear",
       "disappear",
-      "get lost",
-      "break"
+      "break",
+      "get lost"
      ],
      "answer": 0,
      "why": "Show up = aparecer, surgir na tela."

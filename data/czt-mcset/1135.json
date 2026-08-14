@@ -1,0 +1,259 @@
+{
+ "num": 1135,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Sophie works on the accounting team at Czarnikow. Today she helps a new trainee. The topic is \"Yesterday's Payments\". Sophie uses short and simple sentences, because the trainee is new.<br><br>\"Yesterday there were three payments,\" Sophie says. \"One was late, but two were on time. Now they are all correct. The report is ready for your signature.\"<br><br>Sophie is calm and kind. She says, \"One careful step at a time. That is how good accountants work.\" The trainee smiles. Yesterday's numbers were a little hard, but today they are clear.",
+   "items": [
+    {
+     "q": "Where does Sophie work?",
+     "options": [
+      "In the London office",
+      "On the sales team",
+      "In a bank",
+      "On the accounting team"
+     ],
+     "answer": 3,
+     "why": "\"Sophie works on the accounting team at Czarnikow.\""
+    },
+    {
+     "q": "How many payments were there yesterday?",
+     "options": [
+      "Two",
+      "Four",
+      "Three",
+      "One"
+     ],
+     "answer": 2,
+     "why": "\"Yesterday there were three payments.\""
+    },
+    {
+     "q": "How many payments were on time?",
+     "options": [
+      "One",
+      "Two",
+      "None",
+      "Three"
+     ],
+     "answer": 1,
+     "why": "\"One was late, but two were on time.\""
+    },
+    {
+     "q": "The text suggests that Sophie is…",
+     "options": [
+      "patient and helpful",
+      "tired of the trainee",
+      "new to the team",
+      "in a hurry and angry"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela usa frases simples, é calma e encoraja o trainee — é paciente e prestativa."
+    },
+    {
+     "q": "What does \"One careful step at a time\" suggest about learning here?",
+     "options": [
+      "It is better to go slowly and carefully",
+      "You must learn everything fast",
+      "Numbers are not important",
+      "The trainee should work alone"
+     ],
+     "answer": 0,
+     "why": "Inferência: a frase sugere um ritmo calmo e cuidadoso, um passo de cada vez."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie falar com o novo trainee. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, welcome to the team. My name is Sophie. Today we look at yesterday's payments. Do not worry — the sentences are short and simple.<br><br>Yesterday I was here at eight. The office was quiet. There were four payments on my list. Three were correct, but one was wrong. So I called the bank.<br><br>The person on the phone was very kind. In ten minutes the payment was correct again. Now the report is ready. It is ready for your signature.<br><br>Yesterday was a busy day, but a good day. The numbers were clear at the end. That is what we want — clear and honest numbers.<br><br>Take your time. One careful step at a time. You can do it. Are you ready for the next payment?",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time was Sophie in the office yesterday?",
+     "options": [
+      "At nine",
+      "At ten",
+      "At eight",
+      "At seven"
+     ],
+     "answer": 2,
+     "why": "\"Yesterday I was here at eight.\""
+    },
+    {
+     "q": "How many payments were on Sophie's list?",
+     "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+     ],
+     "answer": 2,
+     "why": "\"There were four payments on my list.\""
+    },
+    {
+     "q": "What did Sophie do when one payment was wrong?",
+     "options": [
+      "She deleted it",
+      "She asked the trainee",
+      "She left the office",
+      "She called the bank"
+     ],
+     "answer": 3,
+     "why": "\"So I called the bank.\""
+    },
+    {
+     "q": "The audio suggests that Sophie wants the trainee to feel…",
+     "options": [
+      "bored",
+      "worried and nervous",
+      "in a hurry",
+      "calm and confident"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Do not worry\", \"Take your time\", \"You can do it\" — ela quer o trainee calmo e confiante."
+    },
+    {
+     "q": "Why does Sophie say the numbers were \"clear at the end\"?",
+     "options": [
+      "Because she went home early",
+      "Because the problem was fixed",
+      "Because the bank was closed",
+      "Because there were no payments"
+     ],
+     "answer": 1,
+     "why": "Inferência: a payment errada foi corrigida, então no fim tudo ficou claro e certo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We checked the payments <strong>yesterday</strong>.\" Yesterday means…",
+     "options": [
+      "the day before today",
+      "next week",
+      "right now",
+      "tomorrow"
+     ],
+     "answer": 0,
+     "why": "Yesterday = ontem, o dia antes de hoje."
+    },
+    {
+     "q": "\"The report is <strong>ready</strong> for your signature.\" Ready means…",
+     "options": [
+      "wrong",
+      "late",
+      "finished and prepared",
+      "lost"
+     ],
+     "answer": 2,
+     "why": "Ready = pronto, preparado."
+    },
+    {
+     "q": "\"One payment was <strong>late</strong>.\" Late means…",
+     "options": [
+      "not on time",
+      "correct",
+      "small",
+      "on time"
+     ],
+     "answer": 0,
+     "why": "Late = atrasado, não no horário."
+    },
+    {
+     "q": "Choose the correct word: \"The numbers were ___, so we did not change them.\"",
+     "options": [
+      "correct",
+      "late",
+      "closed",
+      "wrong"
+     ],
+     "answer": 0,
+     "why": "Correct = correto; se estão certos, não é preciso mudar."
+    },
+    {
+     "q": "Choose the correct word: \"This number is ___. Please check it again.\"",
+     "options": [
+      "wrong",
+      "ready",
+      "kind",
+      "yesterday"
+     ],
+     "answer": 0,
+     "why": "Wrong = errado; por isso é preciso checar de novo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que você ouve no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>sign off on</strong> this report?\" To sign off on means to…",
+     "options": [
+      "read it",
+      "print it",
+      "delete it",
+      "approve it"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"I will <strong>check over</strong> the numbers before lunch.\" To check over means to…",
+     "options": [
+      "hide it",
+      "look at it carefully",
+      "send it fast",
+      "throw it away"
+     ],
+     "answer": 1,
+     "why": "Check over = revisar, olhar com cuidado."
+    },
+    {
+     "q": "\"Please <strong>hand in</strong> the report today.\" To hand in means to…",
+     "options": [
+      "copy it",
+      "give it to someone",
+      "lose it",
+      "keep it"
+     ],
+     "answer": 1,
+     "why": "Hand in = entregar."
+    },
+    {
+     "q": "\"The payment was wrong, so I need to <strong>follow up</strong> with the bank.\" To follow up means to…",
+     "options": [
+      "check again and take action",
+      "close the account",
+      "pay more",
+      "forget it"
+     ],
+     "answer": 0,
+     "why": "Follow up = dar sequência, checar de novo e agir."
+    },
+    {
+     "q": "\"Let's <strong>catch up</strong> tomorrow about yesterday's payments.\" To catch up means to…",
+     "options": [
+      "run fast",
+      "start over",
+      "pay late",
+      "talk and share news"
+     ],
+     "answer": 3,
+     "why": "Catch up = colocar a conversa em dia, conversar sobre novidades."
+    }
+   ]
+  }
+ ]
+}

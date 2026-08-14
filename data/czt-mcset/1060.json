@@ -1,0 +1,259 @@
+{
+ "num": 1060,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Congratulations! You are here. Today we put everything together in one simple trade deal. There is a buyer in India and a seller in Brazil. Czarnikow is in the middle.<br><br>Czarnikow is a sugar trading company. We have clients around the world. In this deal, the seller has sugar and the buyer wants sugar. The trader talks to both of them. He uses simple words: to be, to have, can, could, and the past.<br><br>Yesterday, the buyer was in London. Today, prices are stable. The ship carries ten thousand tonnes. Last week, the trader signed the contract. Now the deal is closed. You already know more than you think!",
+   "items": [
+    {
+     "q": "What kind of company is Czarnikow?",
+     "options": [
+      "A sugar trading company",
+      "A ship company",
+      "A bank",
+      "A school"
+     ],
+     "answer": 0,
+     "why": "\"Czarnikow is a sugar trading company.\""
+    },
+    {
+     "q": "Where is the buyer from?",
+     "options": [
+      "China",
+      "London",
+      "Brazil",
+      "India"
+     ],
+     "answer": 3,
+     "why": "\"There is a buyer in India and a seller in Brazil.\""
+    },
+    {
+     "q": "How many tonnes does the ship carry?",
+     "options": [
+      "One hundred",
+      "Ten hundred",
+      "One thousand",
+      "Ten thousand"
+     ],
+     "answer": 3,
+     "why": "\"The ship carries ten thousand tonnes.\""
+    },
+    {
+     "q": "The text suggests that Czarnikow's job is to…",
+     "options": [
+      "sign for the buyer",
+      "drive the ship",
+      "grow the sugar",
+      "connect the buyer and the seller"
+     ],
+     "answer": 3,
+     "why": "Inferência: Czarnikow está \"in the middle\" — ele liga o comprador e o vendedor."
+    },
+    {
+     "q": "What can we understand from \"You already know more than you think\"?",
+     "options": [
+      "The student learned a lot in the past lessons",
+      "The deal is very hard",
+      "The buyer is angry",
+      "The prices are high"
+     ],
+     "answer": 0,
+     "why": "Inferência: é uma mensagem de confiança — o aluno já aprendeu muito nas lições anteriores."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça o trader falando sobre o acordo. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello! I am a trader at Czarnikow. Today I want to tell you about a simple deal. It is a good day.<br><br>We have a seller in Brazil. The seller has sugar — very good sugar. We also have a buyer in India. The buyer wants ten thousand tonnes. I am in the middle. I talk to both of them every day.<br><br>Yesterday, the buyer was in London for a meeting. He called me and asked: \"Could you send the price, please?\" I said yes. The price is stable today, so it is a good time to buy.<br><br>Last week, we agreed on the terms. The buyer can pay in thirty days. That is fine for us. Then I signed the contract. Now the deal is closed. The ship leaves next month.<br><br>This is my job. I connect people around the world. It is simple, but I love it. Congratulations to you too — you finished twenty lessons!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Where is the buyer from?",
+     "options": [
+      "Africa",
+      "Brazil",
+      "London",
+      "India"
+     ],
+     "answer": 3,
+     "why": "\"We also have a buyer in India.\""
+    },
+    {
+     "q": "What did the buyer ask on the phone?",
+     "options": [
+      "For the price",
+      "For more sugar",
+      "For a new ship",
+      "For a meeting"
+     ],
+     "answer": 0,
+     "why": "\"Could you send the price, please?\""
+    },
+    {
+     "q": "How many days does the buyer have to pay?",
+     "options": [
+      "Ninety days",
+      "Thirty days",
+      "Sixty days",
+      "Ten days"
+     ],
+     "answer": 1,
+     "why": "\"The buyer can pay in thirty days.\""
+    },
+    {
+     "q": "Why does the trader say it is \"a good time to buy\"?",
+     "options": [
+      "Because the sugar is free",
+      "Because the buyer is in London",
+      "Because the ship is fast",
+      "Because the price is stable today"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele liga \"the price is stable today\" à ideia de um bom momento para comprar."
+    },
+    {
+     "q": "How does the trader feel about his job?",
+     "options": [
+      "He thinks it is boring",
+      "He is tired of it",
+      "He wants to change jobs",
+      "He likes it a lot"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"It is simple, but I love it\" mostra que ele gosta muito do trabalho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We closed a big <strong>deal</strong> today.\" A <strong>deal</strong> is…",
+     "options": [
+      "a business agreement",
+      "a ship",
+      "a price list",
+      "a meeting room"
+     ],
+     "answer": 0,
+     "why": "Deal = acordo / negócio."
+    },
+    {
+     "q": "Choose the correct word: \"We want to ___ this deal before Friday.\"",
+     "options": [
+      "close",
+      "eat",
+      "drive",
+      "read"
+     ],
+     "answer": 0,
+     "why": "Close a deal = fechar um acordo."
+    },
+    {
+     "q": "\"Both sides signed the <strong>agreement</strong>.\" An <strong>agreement</strong> is…",
+     "options": [
+      "a formal deal",
+      "a ship",
+      "a price",
+      "a phone call"
+     ],
+     "answer": 0,
+     "why": "Agreement = acordo formal."
+    },
+    {
+     "q": "Choose the correct word: \"Please put your ___ at the bottom of the contract.\"",
+     "options": [
+      "ship",
+      "signature",
+      "sugar",
+      "coffee"
+     ],
+     "answer": 1,
+     "why": "Signature = assinatura."
+    },
+    {
+     "q": "\"<strong>Congratulations</strong>! You closed the deal.\" We say <strong>congratulations</strong> when…",
+     "options": [
+      "someone is sad",
+      "someone is tired",
+      "someone is late",
+      "someone does something good"
+     ],
+     "answer": 3,
+     "why": "Congratulations = parabéns, para algo bom."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que usamos em negócios. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the deal.\" To sign off on means to…",
+     "options": [
+      "wait a week",
+      "say no",
+      "approve it",
+      "read it fast"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new price next month.\" To roll out means to…",
+     "options": [
+      "sell it",
+      "start using it",
+      "hide it",
+      "stop it"
+     ],
+     "answer": 1,
+     "why": "Roll out = começar a usar / lançar."
+    },
+    {
+     "q": "\"The buyer <strong>pushed back</strong> on the price.\" This means the buyer…",
+     "options": [
+      "did not agree easily",
+      "paid fast",
+      "said the price was fine",
+      "left the meeting"
+     ],
+     "answer": 0,
+     "why": "Push back = resistir, não concordar logo."
+    },
+    {
+     "q": "\"We agreed, but they did not <strong>follow through</strong>.\" They did not…",
+     "options": [
+      "come to the office",
+      "call the buyer",
+      "finish what they promised",
+      "read the contract"
+     ],
+     "answer": 2,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Let's <strong>wrap up</strong> the meeting.\" To wrap up means to…",
+     "options": [
+      "record it",
+      "start it",
+      "cancel it",
+      "finish it"
+     ],
+     "answer": 3,
+     "why": "Wrap up = encerrar, terminar."
+    }
+   ]
+  }
+ ]
+}

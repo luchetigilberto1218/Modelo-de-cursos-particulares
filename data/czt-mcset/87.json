@@ -8,10 +8,10 @@
     {
      "q": "What is the most common mistake in problem solving, according to the text?",
      "options": [
-      "Blaming the wrong person",
+      "Asking too many questions",
       "Waiting too long",
       "Rushing to the solution before understanding the problem",
-      "Asking too many questions"
+      "Blaming the wrong person"
      ],
      "answer": 2,
      "why": "\"rushing to the solution before understanding the problem.\""
@@ -19,8 +19,8 @@
     {
      "q": "What does the \"five whys\" discipline involve?",
      "options": [
-      "Asking five people",
       "Trying five solutions",
+      "Asking five people",
       "Asking 'why?' five times, going deeper each time",
       "Waiting five days"
      ],
@@ -30,34 +30,34 @@
     {
      "q": "In the delivery example, what was the deepest cause?",
      "options": [
-      "The supplier change",
-      "The late delivery itself",
       "A sourcing decision taken six months ago",
-      "The missed container"
+      "The missed container",
+      "The late delivery itself",
+      "The supplier change"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "A cadeia recua até \"a sourcing decision taken six months ago for an entirely different reason.\""
     },
     {
      "q": "According to the text, root causes are usually…",
      "options": [
+      "less dramatic and more systemic than the symptom",
       "impossible to find",
       "more dramatic than the symptom",
-      "the same as the symptom",
-      "less dramatic and more systemic than the symptom"
+      "the same as the symptom"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"Root causes are almost always less dramatic and more systemic than the symptom suggests.\""
     },
     {
      "q": "Why does the text say good problem solvers \"resist blame\"?",
      "options": [
-      "Because blame is slow",
-      "Blame is against the rules",
       "Because the cause is usually a structural issue, not a person",
-      "Because managers dislike it"
+      "Because managers dislike it",
+      "Blame is against the rules",
+      "Because blame is slow"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: procurar a causa estrutural quieta é incompatível com apontar culpados."
     }
    ]
@@ -72,43 +72,43 @@
     {
      "q": "What is the \"easy answer\" Harry refuses to accept?",
      "options": [
-      "The data is wrong",
-      "The system is broken",
+      "The client is late",
       "The analyst is slow",
-      "The client is late"
+      "The data is wrong",
+      "The system is broken"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"The easy answer is 'the analyst is slow' — but let's not stop there.\""
     },
     {
      "q": "Why weren't the sales figures ready?",
      "options": [
-      "The regional numbers come in on the last working day",
-      "The analyst forgot",
       "The system crashed",
+      "The analyst forgot",
+      "The regional numbers come in on the last working day",
       "The client changed them"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"the regional numbers come in on the last working day.\""
     },
     {
      "q": "What does Harry identify as the real problem?",
      "options": [
-      "The analyst",
       "The clients",
-      "The schedule — the report and data deadlines are the same day",
-      "The software"
+      "The analyst",
+      "The software",
+      "The schedule — the report and data deadlines are the same day"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "\"The report deadline and the data deadline are the same day, which is impossible by design.\""
     },
     {
      "q": "Why does Harry reject the quick fix of pushing the analyst to work late?",
      "options": [
+      "It costs too much",
       "The analyst refused",
-      "It's against policy",
       "It just hides the issue until next month",
-      "It costs too much"
+      "It's against policy"
      ],
      "answer": 2,
      "why": "\"that just hides the issue until next month.\""
@@ -116,12 +116,12 @@
     {
      "q": "How does Harry want to write it up?",
      "options": [
-      "As a scheduling root cause, blaming no one",
-      "As the analyst's fault",
       "As a software bug",
-      "As a client delay"
+      "As the analyst's fault",
+      "As a client delay",
+      "As a scheduling root cause, blaming no one"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"write it up as a scheduling root cause, not blame anyone.\""
     }
    ]
@@ -132,8 +132,8 @@
     {
      "q": "The **root cause** of a problem is…",
      "options": [
-      "the quickest fix",
       "its most visible sign",
+      "the quickest fix",
       "the person responsible",
       "the underlying reason it happened"
      ],
@@ -143,45 +143,45 @@
     {
      "q": "A **symptom** is…",
      "options": [
+      "a hypothesis",
       "the deepest cause",
       "the visible sign of a deeper problem",
-      "a solution",
-      "a hypothesis"
+      "a solution"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Symptom = sintoma, o sinal visível."
     },
     {
      "q": "Choose the correct word: \"That's only a **quick fix** — it ___ the real issue.\"",
      "options": [
-      "solves",
       "hides",
+      "solves",
       "diagnoses",
       "escalates"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Quick fix = solução rápida, que costuma esconder o problema de fundo."
     },
     {
      "q": "\"It's a **systemic** issue.\" Systemic means…",
      "options": [
-      "temporary",
       "caused by one person",
-      "minor",
-      "built into the way the system works"
+      "temporary",
+      "built into the way the system works",
+      "minor"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Systemic = sistêmico, próprio da estrutura."
     },
     {
      "q": "Choose the correct term: \"Let's not ___ the analyst — the schedule is the problem.\"",
      "options": [
-      "blame",
       "diagnose",
+      "revisit",
       "pattern",
-      "revisit"
+      "blame"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "To blame = culpar."
     }
    ]
@@ -192,20 +192,20 @@
     {
      "q": "\"Let's **get to the bottom of** why it's late.\" To get to the bottom of means to…",
      "options": [
+      "speed up",
       "delegate",
       "find the real cause of",
-      "speed up",
       "ignore"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Get to the bottom of = chegar à causa real."
     },
     {
      "q": "\"That doesn't **add up** — the numbers don't match.\" To add up means to…",
      "options": [
-      "increase",
-      "make sense",
       "finish",
+      "make sense",
+      "increase",
       "escalate"
      ],
      "answer": 1,
@@ -214,31 +214,31 @@
     {
      "q": "\"We keep **papering over the cracks** instead of fixing it.\" To paper over the cracks means to…",
      "options": [
-      "solve it fully",
-      "hide a problem superficially",
       "escalate it",
-      "document it"
+      "document it",
+      "solve it fully",
+      "hide a problem superficially"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Paper over the cracks = disfarçar o problema sem resolvê-lo."
     },
     {
      "q": "\"Let's **dig into** the process before blaming anyone.\" To dig into means to…",
      "options": [
-      "postpone",
-      "summarise",
       "cancel",
-      "examine closely"
+      "postpone",
+      "examine closely",
+      "summarise"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Dig into = investigar a fundo."
     },
     {
      "q": "\"The late data is what's **holding up** the report.\" To hold something up means to…",
      "options": [
+      "approve it",
       "support it",
       "cancel it",
-      "approve it",
       "delay it"
      ],
      "answer": 3,

@@ -1,0 +1,259 @@
+{
+ "num": 1096,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Every truck and every ship arrives at a specific time and at a specific place. Times are important in our work. We want everything on time.<br><br>We use \"arrive at\" for buildings and points. The truck arrives at the warehouse. The driver arrives at the gate at 9 am. We use \"arrive in\" for cities and countries. The ship arrives in Santos. It arrives in Brazil on Monday.<br><br>Today you learn 5 words: arrive, leave, on time, delay, and arrival. A delay is bad news, but it happens. We start slow. You can do it!",
+   "items": [
+    {
+     "q": "When does every truck and ship arrive?",
+     "options": [
+      "Only in the morning",
+      "At any time",
+      "Only on Monday",
+      "At a specific time and place"
+     ],
+     "answer": 3,
+     "why": "\"Every truck and every ship arrives at a specific time and at a specific place.\""
+    },
+    {
+     "q": "We use \"arrive at\" for…",
+     "options": [
+      "trucks and ships",
+      "buildings and points",
+      "days and months",
+      "cities and countries"
+     ],
+     "answer": 1,
+     "why": "\"We use 'arrive at' for buildings and points.\" (arrive at + prédio/ponto)."
+    },
+    {
+     "q": "Which sentence is correct?",
+     "options": [
+      "The ship arrives in Brazil.",
+      "The ship arrives to Brazil.",
+      "The ship arrives at Brazil.",
+      "The ship arrives on Brazil."
+     ],
+     "answer": 0,
+     "why": "País é cidade/país → \"arrive in Brazil\". Nunca \"arrive to\"."
+    },
+    {
+     "q": "The text suggests that being on time is…",
+     "options": [
+      "not important",
+      "important in this work",
+      "only for ships",
+      "impossible"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"Times are important in our work. We want everything on time.\""
+    },
+    {
+     "q": "The author would most likely AGREE that a delay…",
+     "options": [
+      "never happens",
+      "is always good",
+      "is bad but can happen",
+      "means the work stops"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"A delay is bad news, but it happens.\" — ruim, mas possível."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ana falando com um cliente sobre chegadas. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hello. This is Ana from the shipping desk. I have a small update about your order. It is short and easy. Please listen.<br><br>The truck leaves the factory at 8 am. It arrives at our warehouse at 11 am. That is on time. There is no delay today. This is good news for you and your team.<br><br>The ship is different. It arrives in Santos on Monday. It does not arrive on Sunday. The ship arrives in the city, so we say \"arrive in\". The truck arrives at the building, so we say \"arrive at\". These two words are not the same. This is important.<br><br>Arrivals are important for you and for me. So I check every time and every place. Every day I look at the plan two times. If there is a delay, I call you first. I do not wait. Right now, everything is on time, so please do not worry.<br><br>One more thing. The driver arrives at the gate at 11 am. Please be there on time, because the truck can not wait long. Thank you very much. Have a good day, and call me for any question.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking, and where does she work?",
+     "options": [
+      "Ana, at the shipping desk",
+      "A customer at home",
+      "Ana, at the factory gate",
+      "A truck driver on the road"
+     ],
+     "answer": 0,
+     "why": "\"This is Ana from the shipping desk.\""
+    },
+    {
+     "q": "When does the truck arrive at the warehouse?",
+     "options": [
+      "At 11 am",
+      "At 8 am",
+      "On Monday",
+      "At 9 am"
+     ],
+     "answer": 0,
+     "why": "\"It arrives at our warehouse at 11 am.\""
+    },
+    {
+     "q": "When does the ship arrive in Santos?",
+     "options": [
+      "At 11 am",
+      "On Monday",
+      "At 8 am",
+      "On Sunday"
+     ],
+     "answer": 1,
+     "why": "\"It arrives in Santos on Monday. It does not arrive on Sunday.\""
+    },
+    {
+     "q": "What will Ana do if there is a delay?",
+     "options": [
+      "Call the customer first",
+      "Send another truck",
+      "Cancel the order",
+      "Wait for Monday"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"If there is a delay, I call you first.\""
+    },
+    {
+     "q": "How does Ana feel about today's order?",
+     "options": [
+      "Calm, because everything is on time",
+      "Angry with the driver",
+      "Confused about the times",
+      "Worried, because of a delay"
+     ],
+     "answer": 0,
+     "why": "Inferência: \"There is no delay today… Right now, everything is on time.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"The truck will <strong>arrive</strong> at 10 am.\" To arrive means…",
+     "options": [
+      "to call",
+      "to come to a place",
+      "to leave",
+      "to wait"
+     ],
+     "answer": 1,
+     "why": "To arrive = chegar, vir a um lugar."
+    },
+    {
+     "q": "\"The ship will <strong>leave</strong> the port at 6 am.\" To leave means…",
+     "options": [
+      "to arrive",
+      "to stop",
+      "to stay",
+      "to go away from a place"
+     ],
+     "answer": 3,
+     "why": "To leave = partir. É o oposto de arrive."
+    },
+    {
+     "q": "Choose the correct word: \"The driver is never late. He is always ___.\"",
+     "options": [
+      "to leave",
+      "a delay",
+      "an arrival",
+      "on time"
+     ],
+     "answer": 3,
+     "why": "On time = no horário. \"Never late\" → always on time."
+    },
+    {
+     "q": "\"There is a two-hour <strong>delay</strong> today.\" A delay is…",
+     "options": [
+      "a new order",
+      "a late time / a hold-up",
+      "a good price",
+      "a fast arrival"
+     ],
+     "answer": 1,
+     "why": "Delay = atraso."
+    },
+    {
+     "q": "Choose the correct word: \"We wait for the ___ of the ship on Monday.\"",
+     "options": [
+      "leave",
+      "on time",
+      "arrival",
+      "delay"
+     ],
+     "answer": 2,
+     "why": "Arrival = chegada (substantivo). \"the arrival of the ship\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho com chegadas e horários. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The driver is <strong>running late</strong> today.\" This means he is…",
+     "options": [
+      "very fast",
+      "on time",
+      "early",
+      "later than planned"
+     ],
+     "answer": 3,
+     "why": "Running late = atrasado, mais tarde do que o planejado."
+    },
+    {
+     "q": "\"Please <strong>let me know</strong> when the truck arrives.\" To let me know means…",
+     "options": [
+      "to wait for me",
+      "to leave with me",
+      "to help me",
+      "to tell me"
+     ],
+     "answer": 3,
+     "why": "Let me know = me avisar, me contar."
+    },
+    {
+     "q": "\"I will <strong>follow up</strong> with the driver in one hour.\" To follow up means to…",
+     "options": [
+      "check again later",
+      "leave now",
+      "pay the bill",
+      "cancel the order"
+     ],
+     "answer": 0,
+     "why": "Follow up = dar continuidade, checar de novo depois."
+    },
+    {
+     "q": "\"The manager must <strong>sign off on</strong> the new time.\" To sign off on means to…",
+     "options": [
+      "be late",
+      "say no",
+      "forget",
+      "formally approve"
+     ],
+     "answer": 3,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We had to <strong>call off</strong> the trip because of the storm.\" To call off means to…",
+     "options": [
+      "speed up",
+      "arrive early",
+      "start",
+      "cancel"
+     ],
+     "answer": 3,
+     "why": "Call off = cancelar."
+    }
+   ]
+  }
+ ]
+}

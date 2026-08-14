@@ -10,8 +10,8 @@
     {
      "q": "What question do we ask on Monday morning?",
      "options": [
-      "How old are you?",
       "What is your name?",
+      "How old are you?",
       "Where do you work?",
       "How was your weekend?"
      ],
@@ -22,9 +22,9 @@
      "q": "How do we answer today?",
      "options": [
       "With like + -ing",
+      "With questions",
       "With one word",
-      "With numbers",
-      "With questions"
+      "With numbers"
      ],
      "answer": 0,
      "why": "\"Today we answer with like + -ing.\""
@@ -32,9 +32,9 @@
     {
      "q": "Which sentence is an example from the text?",
      "options": [
-      "Do you walk?",
       "Walking is hard.",
       "I walked yesterday.",
+      "Do you walk?",
       "I like walking."
      ],
      "answer": 3,
@@ -55,9 +55,9 @@
      "q": "\"Small talk is where trust begins\" suggests that…",
      "options": [
       "small talk can build good relationships",
-      "trust comes from big meetings",
       "small talk is not important",
-      "we should not talk on Monday"
+      "we should not talk on Monday",
+      "trust comes from big meetings"
      ],
      "answer": 0,
      "why": "Inferência: se a confiança começa na small talk, ela ajuda a criar boas relações."
@@ -77,56 +77,56 @@
     {
      "q": "Where does Oliver work?",
      "options": [
-      "At Czarnikow",
-      "At a park",
       "At a coffee shop",
+      "At a park",
+      "At Czarnikow",
       "At home"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"I work at Czarnikow.\""
     },
     {
      "q": "What does Oliver like doing on Saturday?",
      "options": [
-      "Going to work",
-      "Resting at home",
       "Reading a book",
-      "Playing football"
+      "Playing football",
+      "Going to work",
+      "Resting at home"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"On Saturday I like resting. I stay at home.\""
     },
     {
      "q": "What does the family enjoy doing on Sunday?",
      "options": [
+      "Running in the park",
       "Cooking breakfast",
-      "Watching movies",
       "Driving to work",
-      "Running in the park"
+      "Watching movies"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "\"We enjoy watching movies together.\""
     },
     {
      "q": "Oliver's weekend suggests that he…",
      "options": [
-      "does not rest at all",
-      "works on Saturday and Sunday",
       "likes a calm and simple life",
-      "does not like his family"
+      "does not like his family",
+      "works on Saturday and Sunday",
+      "does not rest at all"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "Inferência: ele descansa, caminha e fica com a família — gosta de uma vida simples e calma."
     },
     {
      "q": "Why does Oliver come to work happy on Monday?",
      "options": [
-      "Because he works on Sunday",
-      "Because he skips breakfast",
+      "Because he does not like weekends",
       "Because he had a good, restful weekend",
-      "Because he does not like weekends"
+      "Because he skips breakfast",
+      "Because he works on Sunday"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Inferência: um fim de semana simples e bom com descanso e família o deixa feliz na segunda."
     }
    ]
@@ -141,19 +141,19 @@
      "options": [
       "Monday and Tuesday",
       "the end of the year",
-      "Saturday and Sunday",
-      "a work meeting"
+      "a work meeting",
+      "Saturday and Sunday"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Weekend = fim de semana (sábado e domingo)."
     },
     {
      "q": "\"I like to <strong>walk</strong> in the park.\" A walk is…",
      "options": [
-      "a phone call",
+      "a lunch",
       "a caminhada",
-      "a car",
-      "a lunch"
+      "a phone call",
+      "a car"
      ],
      "answer": 1,
      "why": "Walk = caminhada / caminhar."
@@ -161,12 +161,12 @@
     {
      "q": "Choose the correct word: \"On Sunday we watch a good ___ at home.\"",
      "options": [
-      "coffee",
-      "movie",
+      "office",
       "walk",
-      "office"
+      "coffee",
+      "movie"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Movie = filme, o que assistimos em casa."
     },
     {
@@ -183,12 +183,12 @@
     {
      "q": "Choose the correct word: \"I am tired. I need some ___ on Saturday.\"",
      "options": [
-      "rest",
       "work",
-      "movie",
-      "walk"
+      "rest",
+      "walk",
+      "movie"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Rest = descanso, o que precisamos quando estamos cansados."
     }
    ]
@@ -201,12 +201,12 @@
     {
      "q": "\"<strong>How was your weekend?</strong>\" This question asks about…",
      "options": [
-      "your work plan",
       "your job title",
       "your Saturday and Sunday",
-      "your name"
+      "your name",
+      "your work plan"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "É a pergunta clássica de segunda-feira sobre o fim de semana."
     },
     {
@@ -214,18 +214,18 @@
      "options": [
       "pay them money",
       "work for them",
-      "call them once",
-      "be together with them"
+      "be together with them",
+      "call them once"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Spend time with = passar tempo junto com alguém."
     },
     {
      "q": "\"Let's <strong>catch up</strong> on Monday.\" To catch up means to…",
      "options": [
-      "finish work early",
-      "talk and share news",
       "run fast",
+      "talk and share news",
+      "finish work early",
       "cancel a meeting"
      ],
      "answer": 1,
@@ -234,23 +234,23 @@
     {
      "q": "\"I like to <strong>relax</strong> at the weekend.\" To relax means to…",
      "options": [
-      "travel far",
       "rest and feel calm",
+      "travel far",
       "wake up early",
       "work harder"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Relax = relaxar, descansar e ficar calmo."
     },
     {
      "q": "\"See you Monday. <strong>Take care!</strong>\" Take care means…",
      "options": [
-      "call me tonight",
-      "you are late",
       "come to work now",
-      "look after yourself"
+      "look after yourself",
+      "you are late",
+      "call me tonight"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Take care = cuide-se; uma despedida gentil."
     }
    ]

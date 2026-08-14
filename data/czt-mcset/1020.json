@@ -10,42 +10,42 @@
     {
      "q": "When did the person start the new job?",
      "options": [
-      "In May",
-      "In March",
       "In April",
-      "In June"
+      "In May",
+      "In June",
+      "In March"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"I started my new job in April.\""
     },
     {
      "q": "Who helped the person a lot?",
      "options": [
-      "Sophie",
+      "The CEO",
       "Nobody",
-      "Tom",
-      "The CEO"
+      "Sophie",
+      "Tom"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"Sophie helped me a lot.\" O Tom treinou; a Sophie ajudou."
     },
     {
      "q": "How did the person feel about the first month?",
      "options": [
       "Angry",
-      "Tired",
       "Bored",
-      "Happy"
+      "Happy",
+      "Tired"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"I enjoyed every day. It was a great first month.\" — sentimento positivo."
     },
     {
      "q": "The text suggests that the person is now…",
      "options": [
-      "still looking for a job",
       "leaving the company",
       "unhappy at work",
+      "still looking for a job",
       "part of the team"
      ],
      "answer": 3,
@@ -55,8 +55,8 @@
      "q": "The words \"exciting and a little scary\" suggest that the first day was…",
      "options": [
       "completely easy",
-      "a normal day like any other",
       "very boring",
+      "a normal day like any other",
       "new and a bit stressful"
      ],
      "answer": 3,
@@ -77,43 +77,43 @@
     {
      "q": "Why does Sophie call?",
      "options": [
-      "To give bad news",
       "To ask for help",
-      "To cancel a meeting",
-      "To say congratulations"
+      "To say congratulations",
+      "To give bad news",
+      "To cancel a meeting"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "\"I want to say congratulations. You finished your first month.\""
     },
     {
      "q": "How was the person on the first day?",
      "options": [
-      "Bored and slow",
       "Early and a little nervous",
-      "Angry and quiet",
-      "Late and tired"
+      "Bored and slow",
+      "Late and tired",
+      "Angry and quiet"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "\"You arrived early, and you were a little nervous.\""
     },
     {
      "q": "What did Tom tell Sophie?",
      "options": [
-      "That the person arrived late",
-      "That the person wants to leave",
       "That the person did a great job",
-      "That the person needs more training"
+      "That the person wants to leave",
+      "That the person needs more training",
+      "That the person arrived late"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"Tom trained you, and he told me you did a great job.\""
     },
     {
      "q": "Sophie's words suggest that she is…",
      "options": [
       "proud of the person",
-      "too busy to talk",
       "worried about the person",
-      "angry with the team"
+      "angry with the team",
+      "too busy to talk"
      ],
      "answer": 0,
      "why": "Inferência: congratulações, elogios e \"I was very happy\" mostram orgulho."
@@ -121,12 +121,12 @@
     {
      "q": "When Sophie says \"I think you are ready\", she means…",
      "options": [
-      "the person needs to study more",
       "the person should go home",
+      "the person can start the new project",
       "the person will change teams",
-      "the person can start the new project"
+      "the person needs to study more"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Inferência: \"Next month we start a new project… I think you are ready.\""
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"I <strong>started</strong> my job in April.\" Started means…",
      "options": [
-      "began",
+      "finished",
       "lost",
       "changed",
-      "finished"
+      "began"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Started = comecei/começou (passado de start)."
     },
     {
      "q": "Choose the correct word: \"Last week I ___ with the HR team on a report.\"",
      "options": [
+      "walk",
       "worry",
-      "wear",
       "worked",
-      "walk"
+      "wear"
      ],
      "answer": 2,
      "why": "Worked = trabalhei (passado de work)."
@@ -162,20 +162,20 @@
      "q": "\"I <strong>learned</strong> many new things this month.\" Learned means…",
      "options": [
       "taught others",
+      "asked",
       "forgot",
-      "got new knowledge",
-      "asked"
+      "got new knowledge"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Learned = aprendi (passado de learn)."
     },
     {
      "q": "Choose the correct word: \"On my first day, I ___ all my new colleagues.\"",
      "options": [
-      "move",
       "make",
+      "miss",
       "met",
-      "miss"
+      "move"
      ],
      "answer": 2,
      "why": "Met = conheci (passado de meet)."
@@ -184,11 +184,11 @@
      "q": "\"I really <strong>enjoyed</strong> the team lunch.\" Enjoyed means…",
      "options": [
       "was late for it",
+      "paid for it",
       "missed it",
-      "liked it a lot",
-      "paid for it"
+      "liked it a lot"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Enjoyed = curti/gostei (passado de enjoy)."
     }
    ]
@@ -201,12 +201,12 @@
     {
      "q": "\"Sophie always <strong>helps out</strong> the new people.\" To help out means to…",
      "options": [
-      "say goodbye",
       "give help",
+      "ask for money",
       "leave the room",
-      "ask for money"
+      "say goodbye"
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "Help out = ajudar, dar uma mão."
     },
     {
@@ -223,31 +223,31 @@
     {
      "q": "\"I <strong>look forward to</strong> the new project.\" To look forward to means to…",
      "options": [
-      "look behind you",
-      "be afraid of something",
       "forget a plan",
-      "feel happy about something in the future"
+      "feel happy about something in the future",
+      "be afraid of something",
+      "look behind you"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Look forward to = estar animado/esperar algo com vontade."
     },
     {
      "q": "\"I <strong>get on well with</strong> my colleagues.\" This means I…",
      "options": [
-      "never talk to them",
       "work far from them",
-      "have a good relationship with them",
-      "arrive before them"
+      "never talk to them",
+      "arrive before them",
+      "have a good relationship with them"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Get on well with = se dar bem com alguém."
     },
     {
      "q": "\"I <strong>took part in</strong> the weekly meeting.\" To take part in means to…",
      "options": [
-      "cancel it",
-      "watch from outside",
       "be late for it",
+      "watch from outside",
+      "cancel it",
       "join and be active in it"
      ],
      "answer": 3,

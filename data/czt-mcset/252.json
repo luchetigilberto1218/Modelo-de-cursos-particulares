@@ -1,0 +1,259 @@
+{
+ "num": 252,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Supply planning is the other half of the balance. First you learn how much customers will want. Then you must decide how much to produce, when to produce it, and where to put it.<br><br>A good supply plan matches the forecast. But it also protects the company. It leaves a buffer for delays. It includes safety stock. It schedules production early, so there is no last-minute panic.<br><br>Forecasting without supply planning is wishful. Supply planning without forecasting is blind. You need both.",
+   "items": [
+    {
+     "q": "What three things does a supply plan decide?",
+     "options": [
+      "Who to hire, when, and where",
+      "Which supplier, which price, and which country",
+      "How much to produce, when, and where to put it",
+      "What to sell, to whom, and for how much"
+     ],
+     "answer": 2,
+     "why": "\"how much to produce, when to produce it, and where to put it.\""
+    },
+    {
+     "q": "Why does a good plan leave a buffer?",
+     "options": [
+      "To hire more people",
+      "For delays",
+      "To save money",
+      "To sell faster"
+     ],
+     "answer": 1,
+     "why": "\"It leaves a buffer for delays.\""
+    },
+    {
+     "q": "The text says forecasting without supply planning is…",
+     "options": [
+      "wishful",
+      "safe",
+      "blind",
+      "cheap"
+     ],
+     "answer": 0,
+     "why": "\"Forecasting without supply planning is wishful.\""
+    },
+    {
+     "q": "The author would most likely AGREE that…",
+     "options": [
+      "A forecast alone is enough to run a company",
+      "You should produce only at the last minute",
+      "Buffers are a waste of time",
+      "A good plan needs both forecasting and supply planning"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz que os dois são cegos ou otimistas sozinhos — \"You need both.\""
+    },
+    {
+     "q": "Scheduling production early suggests that the company wants to…",
+     "options": [
+      "close the factory",
+      "spend more money",
+      "avoid a last-minute panic",
+      "sell to new customers"
+     ],
+     "answer": 2,
+     "why": "Inferência: programar cedo evita o pânico de última hora que o texto menciona."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie revisando o plano de suprimentos. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi, it's Sophie. I am looking at next quarter's supply plan today, and I want to check one thing: is our buffer big enough?<br><br>The forecast went up a little this month. Customers want more sugar than we thought. So the plan has to match that new number. Right now, I think the buffer is too small.<br><br>Here is my worry. If a shipment is late, and we have no safety stock, we run out. We lose the customer. That is the worst thing. So we need to produce a bit more, just to be safe.<br><br>But I don't want too much stock either. Too much stock ties up cash. It sits in the warehouse and does nothing. So I have to find the middle. Not too much, not too little.<br><br>My plan is simple. I will raise the safety stock a little, and I will schedule production one week earlier. Then I will check the numbers again next month. A supply plan is never finished. You review it, and you adjust it. Okay, let me start.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Sophie checking today?",
+     "options": [
+      "If the buffer is big enough",
+      "The number of new customers",
+      "The factory schedule for last year",
+      "The price of sugar"
+     ],
+     "answer": 0,
+     "why": "\"is our buffer big enough?\""
+    },
+    {
+     "q": "What happened to the forecast this month?",
+     "options": [
+      "It disappeared",
+      "It stayed the same",
+      "It went down",
+      "It went up a little"
+     ],
+     "answer": 3,
+     "why": "\"The forecast went up a little this month.\""
+    },
+    {
+     "q": "What is Sophie's plan?",
+     "options": [
+      "Stop producing sugar",
+      "Raise safety stock and schedule production one week earlier",
+      "Cut the buffer to zero",
+      "Wait until next year"
+     ],
+     "answer": 1,
+     "why": "\"I will raise the safety stock a little, and I will schedule production one week earlier.\""
+    },
+    {
+     "q": "Why does Sophie NOT want too much stock?",
+     "options": [
+      "Customers do not like it",
+      "It is against the rules",
+      "It is hard to count",
+      "It ties up cash and does nothing"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"Too much stock ties up cash. It sits in the warehouse and does nothing.\""
+    },
+    {
+     "q": "What does Sophie mean by \"A supply plan is never finished\"?",
+     "options": [
+      "The factory is always open",
+      "Nobody can make a supply plan",
+      "The plan is too long to write",
+      "You must review and adjust it again and again"
+     ],
+     "answer": 3,
+     "why": "Inferência: ela diz que sempre se revisa e ajusta — nunca é \"set and forget\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We keep a <strong>buffer</strong> in case a shipment is late.\" A buffer is…",
+     "options": [
+      "an extra amount kept for safety",
+      "a customer",
+      "a report",
+      "a price"
+     ],
+     "answer": 0,
+     "why": "Buffer = reserva, uma quantidade extra guardada por segurança."
+    },
+    {
+     "q": "Choose the correct word: \"The plan must ___ the forecast, or we produce the wrong amount.\"",
+     "options": [
+      "hire",
+      "match",
+      "sell",
+      "close"
+     ],
+     "answer": 1,
+     "why": "To match = corresponder: o plano tem que bater com a previsão."
+    },
+    {
+     "q": "\"<strong>Safety stock</strong> is the minimum we keep so we never run out.\" It is…",
+     "options": [
+      "the extra stock the factory throws away",
+      "the stock we sell first",
+      "the most stock we can hold",
+      "the smallest amount kept to avoid running out"
+     ],
+     "answer": 3,
+     "why": "Safety stock = estoque de segurança: o mínimo para não faltar."
+    },
+    {
+     "q": "Choose the correct word: \"Hoping for the best without a real plan is just ___ thinking.\"",
+     "options": [
+      "wishful",
+      "clear",
+      "busy",
+      "safe"
+     ],
+     "answer": 0,
+     "why": "Wishful = otimista demais, baseado só em desejo."
+    },
+    {
+     "q": "\"We <strong>schedule</strong> production for next week.\" To schedule means to…",
+     "options": [
+      "pay for it",
+      "plan the time for it",
+      "sell it",
+      "stop it"
+     ],
+     "answer": 1,
+     "why": "To schedule = programar, marcar o momento de fazer algo."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de planejamento. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The manager has to <strong>sign off on</strong> the new supply plan.\" To sign off on means to…",
+     "options": [
+      "print it",
+      "delay it",
+      "formally approve it",
+      "read it once"
+     ],
+     "answer": 2,
+     "why": "Sign off on = aprovar formalmente, dar o aval."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new plan region by region.\" To roll out means to…",
+     "options": [
+      "sell it",
+      "cancel it",
+      "hide it",
+      "start it step by step"
+     ],
+     "answer": 3,
+     "why": "Roll out = implementar aos poucos, região por região."
+    },
+    {
+     "q": "\"If we <strong>run out of</strong> stock, we lose the customer.\" To run out of means to…",
+     "options": [
+      "have none left",
+      "have too much",
+      "count again",
+      "buy more"
+     ],
+     "answer": 0,
+     "why": "Run out of = ficar sem, acabar o que se tinha."
+    },
+    {
+     "q": "\"Too much inventory can <strong>tie up</strong> cash.\" To tie up means to…",
+     "options": [
+      "make cash grow",
+      "spend cash quickly",
+      "share cash with the team",
+      "keep cash stuck and unavailable"
+     ],
+     "answer": 3,
+     "why": "Tie up = imobilizar, deixar o dinheiro preso e sem uso."
+    },
+    {
+     "q": "\"We agreed the plan, but nobody <strong>followed through</strong>.\" They…",
+     "options": [
+      "wrote a new plan",
+      "did not carry it to the end",
+      "finished it perfectly",
+      "asked for more time"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    }
+   ]
+  }
+ ]
+}

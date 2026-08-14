@@ -1,0 +1,259 @@
+{
+ "num": 522,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "At executive level, the software portfolio is architecture, not a purchase history. Every tool the company runs — ERP, CRM, HR, finance, analytics — is a strategic bet. Taken together, they form a structure that either supports the business the company is trying to become or quietly constrains it.<br><br>The senior leader's task is to keep the portfolio coherent. Every serious software decision should answer two questions: does this tool fit the architecture we are building, and what does it mean for the tools we already have? A company whose answer to both questions drifts over five years ends up with dozens of tools that were each chosen well in isolation and together make no sense at all.<br><br>Coherence costs something. It means refusing some attractive new tools because they do not fit. It means slowing down integration decisions by a few weeks. It means, occasionally, retiring something loved because it no longer belongs. All of this is worth it — because software architecture, once tangled, is very expensive to untangle.",
+   "items": [
+    {
+     "q": "According to the text, at executive level the software portfolio should be understood as…",
+     "options": [
+      "a purchase history",
+      "an IT cost centre",
+      "a list of vendors",
+      "an architecture"
+     ],
+     "answer": 3,
+     "why": "\"the software portfolio is architecture, not a purchase history\" — a tese central da lição."
+    },
+    {
+     "q": "What two questions should every serious software decision answer?",
+     "options": [
+      "How cheap it is and how quickly it can be deployed",
+      "Whether competitors use it and whether staff already know it",
+      "Whether it fits the architecture and what it means for existing tools",
+      "Who owns the budget and who signs the contract"
+     ],
+     "answer": 2,
+     "why": "\"does this tool fit the architecture we are building, and what does it mean for the tools we already have?\""
+    },
+    {
+     "q": "The phrase \"each chosen well in isolation and together make no sense at all\" suggests that…",
+     "options": [
+      "isolation is the best way to evaluate software",
+      "individually sound choices can still produce an incoherent whole",
+      "the tools were all poor choices from the start",
+      "coherence is impossible in large companies"
+     ],
+     "answer": 1,
+     "why": "Inferência: cada compra pode ser boa sozinha e, somadas sem coerência, o conjunto perde sentido."
+    },
+    {
+     "q": "Which statement would the author most likely DISAGREE with?",
+     "options": [
+      "A portfolio can quietly constrain the business it should support.",
+      "Coherence is worth a few weeks of delay.",
+      "Any tool that looks attractive should be adopted quickly.",
+      "Retiring a valued tool can be the right decision."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto defende recusar ferramentas atraentes que não encaixam — o oposto de adotar depressa o que parece bom."
+    },
+    {
+     "q": "Why does the author stress that architecture is \"very expensive to untangle\"?",
+     "options": [
+      "To recommend buying only from one vendor",
+      "To justify paying the cost of coherence upfront",
+      "To show that integration is always impossible",
+      "To argue that software should never be changed"
+     ],
+     "answer": 1,
+     "why": "Inferência: o custo alto de desemaranhar depois é o que torna a coerência antecipada válida — \"All of this is worth it\"."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Harry defendendo sua posição numa reunião de arquitetura de software. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "I know I'm the only voice in this room saying no to the tool, and I know how that looks. Everyone in that demo wanted it, and honestly, on its own merits, it's an excellent product.<br><br>But that's exactly the trap. We don't evaluate tools on their own merits any more — we evaluate them against the architecture we're trying to build. And this one doesn't fit it. It duplicates two things we already run, it holds its own copy of customer data, and it won't integrate cleanly with the platform we chose as our backbone last year.<br><br>So yes, we could buy it this quarter and everyone leaves happy. But in three years we'd be paying someone to untangle it from everything else, and by then the mess is baked in. Coherence is boring. It means occasionally being the person who slows things down. I'd rather be that person now than apologise for a tangled estate later.<br><br>Give me two weeks. Let me map how it would actually sit inside what we have. If I'm wrong, I'll be the first to sign off on it.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How does Harry describe the tool the room wants to buy?",
+     "options": [
+      "An excellent product on its own merits",
+      "A tool nobody in the demo liked",
+      "An overpriced and weak product",
+      "A tool identical to their current backbone"
+     ],
+     "answer": 0,
+     "why": "\"on its own merits, it's an excellent product\" — ele não nega a qualidade da ferramenta."
+    },
+    {
+     "q": "What are the specific reasons Harry gives for the tool not fitting?",
+     "options": [
+      "It is disliked by the customer-facing teams",
+      "It is too expensive and hard to license",
+      "It is untested and lacks support",
+      "It duplicates existing tools, holds its own customer data, and won't integrate cleanly"
+     ],
+     "answer": 3,
+     "why": "\"It duplicates two things we already run, it holds its own copy of customer data, and it won't integrate cleanly.\""
+    },
+    {
+     "q": "What does Harry mean by \"the mess is baked in\"?",
+     "options": [
+      "The tool will stop working after three years",
+      "The data will be permanently deleted",
+      "The problem becomes fixed and hard to reverse over time",
+      "The budget will be spent before delivery"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"baked in\" = entranhado; depois de três anos o emaranhado fica difícil de desfazer."
+    },
+    {
+     "q": "What does Harry's offer to \"map how it would actually sit inside what we have\" reveal about his position?",
+     "options": [
+      "He has already decided nothing will ever change",
+      "He is only defending his personal preference",
+      "He wants to delay every decision indefinitely",
+      "He is open to being proven wrong by evidence"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"If I'm wrong, I'll be the first to sign off on it\" — a recusa é condicional, baseada em análise."
+    },
+    {
+     "q": "How would you best describe Harry's tone?",
+     "options": [
+      "Principled but self-aware about being unpopular",
+      "Indifferent to the outcome",
+      "Uncertain and easily persuaded",
+      "Aggressive and dismissive of his colleagues"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele reconhece que ninguém o agradece hoje (\"I'd rather be that person now\"), mas mantém o argumento — firme e autoconsciente."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Treat the portfolio as strategic <strong>architecture</strong>, not a shopping list.\" Here architecture means…",
+     "options": [
+      "the deliberate overall structure of how the parts fit together",
+      "the software licensing agreement",
+      "the IT department's headcount",
+      "the design of the office building"
+     ],
+     "answer": 0,
+     "why": "Architecture = arquitetura: a estrutura intencional que organiza como as peças se encaixam."
+    },
+    {
+     "q": "Choose the correct term: \"Each tool is a <strong>strategic bet</strong>, so we should ask what future it commits us to.\" A strategic bet is…",
+     "options": [
+      "a wager on which the company's future partly depends",
+      "a temporary trial with no consequences",
+      "a discount negotiated with a vendor",
+      "a routine administrative purchase"
+     ],
+     "answer": 0,
+     "why": "Strategic bet = aposta estratégica: uma escolha da qual o futuro da empresa depende em parte."
+    },
+    {
+     "q": "Choose the correct word: \"If our answers ___ over five years, the portfolio loses its coherence.\"",
+     "options": [
+      "drift",
+      "untangle",
+      "integrate",
+      "retire"
+     ],
+     "answer": 0,
+     "why": "To drift = desviar aos poucos; é o que corrói a coerência ao longo do tempo."
+    },
+    {
+     "q": "\"Each tool was chosen well <strong>in isolation</strong>.\" This phrase means the tools were judged…",
+     "options": [
+      "under time pressure",
+      "against the competitors' choices",
+      "by a single decision-maker",
+      "separately, without reference to the whole"
+     ],
+     "answer": 3,
+     "why": "In isolation = isoladamente: avaliadas uma a uma, sem olhar o conjunto."
+    },
+    {
+     "q": "\"Once the estate is <strong>tangled</strong>, it is very expensive to untangle.\" Tangled here describes a system that is…",
+     "options": [
+      "so interconnected and messy that it is hard to separate",
+      "newly installed and untested",
+      "fully documented and clearly mapped",
+      "cheap and easy to replace"
+     ],
+     "answer": 0,
+     "why": "Tangled = emaranhado: tão interligado e confuso que se torna difícil de desemaranhar (untangle)."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões sobre arquitetura de software. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The architecture board still has to <strong>sign off on</strong> the new tool.\" To sign off on means to…",
+     "options": [
+      "formally approve",
+      "quietly ignore",
+      "comment informally",
+      "announce publicly"
+     ],
+     "answer": 0,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"Harry decided to <strong>push back on</strong> the popular new tool.\" He…",
+     "options": [
+      "resisted or challenged the proposal",
+      "rewrote the vendor's contract",
+      "postponed reading the demo notes",
+      "approved it without discussion"
+     ],
+     "answer": 0,
+     "why": "Push back on = resistir, contestar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"We'll <strong>phase out</strong> the legacy tool once the new backbone is stable.\" To phase out means to…",
+     "options": [
+      "buy more licences for it",
+      "integrate it with everything else",
+      "restore it to full service",
+      "gradually withdraw it from use"
+     ],
+     "answer": 3,
+     "why": "Phase out = desativar aos poucos, retirar de forma progressiva."
+    },
+    {
+     "q": "\"Adopting that tool now would <strong>lock us into</strong> a vendor for a decade.\" This means it would…",
+     "options": [
+      "guarantee the tool never changes price",
+      "give us full freedom to switch later",
+      "reduce our long-term costs automatically",
+      "commit us in a way that is hard to escape"
+     ],
+     "answer": 3,
+     "why": "Lock (someone) into = prender numa escolha difícil de reverter — o custo de saída fica alto."
+    },
+    {
+     "q": "\"Buying it in isolation would <strong>store up</strong> problems for later.\" To store up problems means to…",
+     "options": [
+      "document risks carefully",
+      "share the workload with another team",
+      "create trouble that surfaces in the future",
+      "solve issues in advance"
+     ],
+     "answer": 2,
+     "why": "Store up (trouble/problems) = acumular problemas que só aparecem mais tarde."
+    }
+   ]
+  }
+ ]
+}

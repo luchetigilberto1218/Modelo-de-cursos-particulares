@@ -1,0 +1,259 @@
+{
+ "num": 1106,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "English comes in CAN's, not in CAN'Ts. This is a small joke, but it helps us remember one rule. Some things you count, and some things you measure.<br><br>Sugar you measure. Bags you count. You cannot say \"one sugar, two sugars\" in the warehouse, but you can say \"one bag, two bags.\" This simple rule changes every sentence about stock.<br><br>Today we practise much, many, some and any. These small words are the backbone of any quick stock report. When you know them, you can tell your team how much sugar and how many bags you have.",
+   "items": [
+    {
+     "q": "What do you MEASURE, according to the text?",
+     "options": [
+      "Sugar",
+      "Labels",
+      "Bags",
+      "Boxes"
+     ],
+     "answer": 0,
+     "why": "\"Sugar you measure. Bags you count.\" — açúcar se mede, sacos se contam."
+    },
+    {
+     "q": "What do you COUNT?",
+     "options": [
+      "Water",
+      "Sugar",
+      "Weight",
+      "Bags"
+     ],
+     "answer": 3,
+     "why": "\"Bags you count.\" — sacos são contáveis."
+    },
+    {
+     "q": "Which words does the text practise today?",
+     "options": [
+      "In, on, at",
+      "Was, were, did",
+      "Much, many, some, any",
+      "Big, small, heavy"
+     ],
+     "answer": 2,
+     "why": "\"Today we practise much, many, some and any.\""
+    },
+    {
+     "q": "The text suggests that \"one sugar, two sugars\" is…",
+     "options": [
+      "The same as \"one bag\"",
+      "The correct way to speak",
+      "A good stock report",
+      "Not correct, because sugar is not counted"
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto diz que açúcar se mede, então não usamos plural para contá-lo."
+    },
+    {
+     "q": "Why are these small words important, according to the text?",
+     "options": [
+      "They help you write a quick stock report",
+      "They make the sentence longer",
+      "They are only for questions",
+      "They are hard to learn"
+     ],
+     "answer": 0,
+     "why": "Inferência: o texto chama much/many/some/any de \"backbone of any quick stock report\" — servem para relatar o estoque."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver no armazém, conferindo os sacos de açúcar. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Good morning, team. Let's check the sugar for today. We have a lot of work, but it is easy work.<br><br>How many bags do we have on this line? I count twelve bags here, and they look good. But wait — I don't see any labels on three of them. Please, put a label on every bag. A bag with no label is a problem for us. The label shows the weight and the quantity, so it is very important.<br><br>Now, how much sugar is in each bag? The note says fifty kilos. Let's check the weight. This box is too light. There is not enough sugar in it. Take it back, please, and add more sugar.<br><br>We have some boxes over there, near the door. Are there any empty ones? Yes? Good. Bring me a few empty boxes. We do not have much time before the truck comes.<br><br>Remember the simple rule. We count the bags, and we measure the sugar. Check the quantity, check the weight, check the label. Every time, every box. When the numbers are correct, we do not lose money and the client is happy. Thank you, team. Good work today.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "How many bags does Oliver count on the line?",
+     "options": [
+      "Three",
+      "Twelve",
+      "Fifty",
+      "Ten"
+     ],
+     "answer": 1,
+     "why": "\"I count twelve bags here.\""
+    },
+    {
+     "q": "What problem does Oliver see with three of the bags?",
+     "options": [
+      "They have no labels",
+      "They are near the door",
+      "They are too heavy",
+      "They are open"
+     ],
+     "answer": 0,
+     "why": "\"I don't see any labels on three of them.\""
+    },
+    {
+     "q": "Why does Oliver say \"take it back\" about one box?",
+     "options": [
+      "It is the wrong colour",
+      "It is too light — not enough sugar",
+      "It is empty",
+      "It has no label"
+     ],
+     "answer": 1,
+     "why": "\"This box is too light. There is not enough sugar in it.\""
+    },
+    {
+     "q": "What does Oliver most likely care about the most?",
+     "options": [
+      "That the numbers are correct so they do not lose money",
+      "That the boxes are a nice colour",
+      "That the team leaves early",
+      "That there are many people on the line"
+     ],
+     "answer": 0,
+     "why": "Inferência: ele repete \"check\" e diz \"when the numbers are correct, we do not lose money\"."
+    },
+    {
+     "q": "How would you describe Oliver's tone with the team?",
+     "options": [
+      "Bored and tired",
+      "Confused",
+      "Angry and rude",
+      "Calm, careful and polite"
+     ],
+     "answer": 3,
+     "why": "Inferência: ele diz \"please\", \"thank you\" e \"good work\" — é cuidadoso e educado."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Please put a <strong>label</strong> on every bag.\" A <strong>label</strong> is…",
+     "options": [
+      "a small paper with the name or price",
+      "a heavy box",
+      "a worker",
+      "a truck"
+     ],
+     "answer": 0,
+     "why": "Label = etiqueta, o papel com o nome/informação no saco."
+    },
+    {
+     "q": "\"This box is too light. Let's check the <strong>weight</strong>.\" <strong>Weight</strong> is…",
+     "options": [
+      "the name",
+      "the colour",
+      "how heavy something is",
+      "the price"
+     ],
+     "answer": 2,
+     "why": "Weight = peso, quão pesado algo é."
+    },
+    {
+     "q": "Choose the correct word: \"We put the sugar in a ___ and close it.\"",
+     "options": [
+      "label",
+      "quantity",
+      "box",
+      "weight"
+     ],
+     "answer": 2,
+     "why": "Box = caixa, onde guardamos os sacos."
+    },
+    {
+     "q": "Choose the correct word: \"Please check the ___ on the note: how many bags?\"",
+     "options": [
+      "label",
+      "sugar",
+      "quantity",
+      "colour"
+     ],
+     "answer": 2,
+     "why": "Quantity = quantidade, quantos itens temos."
+    },
+    {
+     "q": "\"We pack the <strong>sugar</strong> in bags.\" <strong>Sugar</strong> is…",
+     "options": [
+      "a label",
+      "a kind of box",
+      "a countable thing like a bag",
+      "something you measure, not count"
+     ],
+     "answer": 3,
+     "why": "Sugar = açúcar; é incontável, você mede (não conta \"one sugar, two sugars\")."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem no armazém. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"We are going to <strong>run out of</strong> boxes soon.\" To run out of means to…",
+     "options": [
+      "buy new ones",
+      "have too many",
+      "count them",
+      "have no more left"
+     ],
+     "answer": 3,
+     "why": "Run out of = ficar sem, acabar o estoque de algo."
+    },
+    {
+     "q": "\"Please <strong>fill in</strong> the quantity on the note.\" To fill in means to…",
+     "options": [
+      "throw the note away",
+      "read the note",
+      "sign the note",
+      "write the information in the blank space"
+     ],
+     "answer": 3,
+     "why": "Fill in = preencher, escrever a informação no espaço."
+    },
+    {
+     "q": "\"Let's <strong>check off</strong> each bag on the list.\" To check off means to…",
+     "options": [
+      "mark each item as done",
+      "hide the list",
+      "buy each bag",
+      "open each bag"
+     ],
+     "answer": 0,
+     "why": "Check off = marcar como conferido/feito na lista."
+    },
+    {
+     "q": "\"I need to <strong>keep track of</strong> the weight of every box.\" To keep track of means to…",
+     "options": [
+      "follow and know the information",
+      "make it heavier",
+      "forget about it",
+      "sell it"
+     ],
+     "answer": 0,
+     "why": "Keep track of = acompanhar, manter o controle da informação."
+    },
+    {
+     "q": "\"The numbers must <strong>add up</strong> at the end of the day.\" To add up means to…",
+     "options": [
+      "be too small",
+      "be very large",
+      "be written by hand",
+      "be correct together, with no mistake"
+     ],
+     "answer": 3,
+     "why": "Add up = bater, fechar a conta certa, sem erro."
+    }
+   ]
+  }
+ ]
+}

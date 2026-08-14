@@ -1,0 +1,259 @@
+{
+ "num": 508,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A working backup strategy is built from a few simple decisions. What gets backed up? How often? Where is the copy kept? How long is it stored? And — the question most teams forget — have we tested that we can actually restore from it?<br><br>A good strategy usually follows the '3-2-1' rule: three copies of important data, on two different types of storage, one of them off-site. It is not complicated. It is just disciplined.<br><br>We should restore test files from backup every single month, because a backup nobody has tested is a hope, not a plan. The month we skip the test is usually the month something goes wrong — and we discover the backup had been silently broken for weeks.",
+   "items": [
+    {
+     "q": "What does the '3-2-1' rule require?",
+     "options": [
+      "Two copies on three types of storage, all on-site",
+      "Three servers, two backups, one restore per year",
+      "Three copies, on two types of storage, one off-site",
+      "Three off-site copies stored for two years, checked once"
+     ],
+     "answer": 2,
+     "why": "\"three copies… on two different types of storage, one of them off-site.\""
+    },
+    {
+     "q": "According to the text, which question do most teams forget?",
+     "options": [
+      "How long the backup is stored",
+      "Whether they can actually restore from the backup",
+      "Where the copy is kept",
+      "How often data should be backed up"
+     ],
+     "answer": 1,
+     "why": "\"the question most teams forget — have we tested that we can actually restore from it?\""
+    },
+    {
+     "q": "The author describes a good backup strategy as…",
+     "options": [
+      "impossible without new software",
+      "expensive but necessary",
+      "not complicated, just disciplined",
+      "complex but rewarding"
+     ],
+     "answer": 2,
+     "why": "\"It is not complicated. It is just disciplined.\""
+    },
+    {
+     "q": "The phrase \"a backup nobody has tested is a hope, not a plan\" suggests that…",
+     "options": [
+      "planning matters more than backing up",
+      "backups should be run less frequently",
+      "hope is enough if the data is copied",
+      "an untested backup cannot be relied on"
+     ],
+     "answer": 3,
+     "why": "Inferência: sem teste de restauração, o backup pode falhar na hora H — logo não é confiável."
+    },
+    {
+     "q": "The author would most likely DISAGREE with which statement?",
+     "options": [
+      "Discipline matters more than complexity in backups.",
+      "Testing reveals problems before they become disasters.",
+      "Skipping the monthly test carries a real risk.",
+      "A backup that copies data is safe even if never restored."
+     ],
+     "answer": 3,
+     "why": "Inferência: o texto argumenta justamente que copiar sem testar não garante segurança — o backup pode estar quebrado silenciosamente."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Emily durante um teste de restauração. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Okay, it's the second of the month, so I'm running the restore test — same routine as always. I've picked three test files at random and I'm pulling them back from last night's backup onto a clean machine.<br><br>And… well, this is exactly why we do this. Two of the three files came back fine, but the third one failed. The backup job has been reporting 'success' every night for the last three weeks, but the database export inside it was empty. Silently broken. If I hadn't run this test, we'd never have known.<br><br>Think about where that leaves us. If a server had crashed last week, we would have reached for that backup and found nothing there. Three weeks of client transaction data — gone. And the scary part is that the dashboard was green the whole time.<br><br>So here's what I'm going to do. I'll flag the export script to the infrastructure team this morning, and once they've patched it, I'll run a full restore to confirm it holds. From now on I think we should test weekly, not monthly. A backup you haven't restored isn't a backup — it's a guess.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What is Emily doing at the start?",
+     "options": [
+      "Running the monthly restore test on random files",
+      "Deleting old test files from the server",
+      "Setting up a brand-new backup system",
+      "Presenting backup results to the board"
+     ],
+     "answer": 0,
+     "why": "\"I'm running the restore test… I've picked three test files at random.\""
+    },
+    {
+     "q": "What did Emily discover about the failed file?",
+     "options": [
+      "The file was too large to restore",
+      "The backup had never been scheduled",
+      "The database export inside the backup was empty",
+      "The wrong version of the file was saved"
+     ],
+     "answer": 2,
+     "why": "\"the database export inside it was empty. Silently broken.\""
+    },
+    {
+     "q": "Why was the problem so dangerous?",
+     "options": [
+      "The backup job kept reporting 'success' while the data was missing",
+      "The restore test itself corrupted the files",
+      "The team had no other copies of any data",
+      "The server had already crashed that week"
+     ],
+     "answer": 0,
+     "why": "\"reporting 'success' every night… but the database export inside it was empty\" — o painel ficava verde enquanto o backup estava quebrado."
+    },
+    {
+     "q": "What does Emily mean by \"the dashboard was green the whole time\"?",
+     "options": [
+      "The monitoring showed everything as fine while it was actually failing",
+      "The system had plenty of free storage",
+      "The backups were completed ahead of schedule",
+      "The team had approved the backup plan"
+     ],
+     "answer": 0,
+     "why": "Inferência: 'verde' = status OK no monitoramento, que dava falsa segurança enquanto o backup falhava."
+    },
+    {
+     "q": "What change does Emily conclude they should make?",
+     "options": [
+      "Move all backups to a single location",
+      "Keep only one copy of the data",
+      "Stop running restore tests to save time",
+      "Test backups weekly instead of monthly"
+     ],
+     "answer": 3,
+     "why": "\"From now on I think we should test weekly, not monthly.\""
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"After the outage, IT managed to <strong>restore</strong> the files from Tuesday's copy.\" To restore means to…",
+     "options": [
+      "move the files to a new server",
+      "delete the files permanently",
+      "bring the data back from a backup",
+      "compress the data to save space"
+     ],
+     "answer": 2,
+     "why": "Restore = restaurar: recuperar os dados a partir do backup."
+    },
+    {
+     "q": "Choose the correct word: \"We keep one copy ___, in a data centre in another city, in case of fire or flood.\"",
+     "options": [
+      "off-site",
+      "on-screen",
+      "in-house",
+      "overnight"
+     ],
+     "answer": 0,
+     "why": "Off-site = externo, fora das instalações — protege contra desastres locais."
+    },
+    {
+     "q": "\"The backup had been <strong>silently broken</strong> for weeks.\" This means it was…",
+     "options": [
+      "running slowly but still working",
+      "too quiet to hear on the server",
+      "deliberately switched off by the team",
+      "failing without any alert or warning"
+     ],
+     "answer": 3,
+     "why": "Silently broken = quebrado silenciosamente: falhava sem gerar nenhum aviso."
+    },
+    {
+     "q": "Choose the correct term: \"A reliable process is a ___ one — done every time, without exceptions.\"",
+     "options": [
+      "flexible",
+      "disciplined",
+      "occasional",
+      "temporary"
+     ],
+     "answer": 1,
+     "why": "Disciplined = disciplinado: feito com rigor e consistência, toda vez."
+    },
+    {
+     "q": "\"The team decided to <strong>skip</strong> this month's test.\" To skip means to…",
+     "options": [
+      "finish it early",
+      "not do it this time",
+      "repeat it twice",
+      "assign it to someone else"
+     ],
+     "answer": 1,
+     "why": "Skip = pular, deixar de fazer desta vez."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões que aparecem em reuniões de TI e infraestrutura. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The infrastructure lead has to <strong>sign off on</strong> the new backup policy.\" To sign off on means to…",
+     "options": [
+      "delay indefinitely",
+      "formally approve",
+      "criticise in private",
+      "announce to clients"
+     ],
+     "answer": 1,
+     "why": "Sign off on = aprovar formalmente, dar o aval final."
+    },
+    {
+     "q": "\"We'll <strong>roll out</strong> the weekly restore tests across all teams next quarter.\" To roll out means to…",
+     "options": [
+      "test only once",
+      "implement in stages",
+      "cancel step by step",
+      "keep secret from staff"
+     ],
+     "answer": 1,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"Two engineers <strong>pushed back on</strong> the plan to test weekly.\" They…",
+     "options": [
+      "forgot to read it",
+      "resisted or disagreed with it",
+      "approved it immediately",
+      "rewrote the whole policy"
+     ],
+     "answer": 1,
+     "why": "Push back on = resistir, discordar — sem necessariamente rejeitar de vez."
+    },
+    {
+     "q": "\"They promised to fix the export script but never <strong>followed through</strong>.\" They…",
+     "options": [
+      "documented it in detail",
+      "did it ahead of schedule",
+      "delegated it successfully",
+      "failed to carry it to completion"
+     ],
+     "answer": 3,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"If the backup fails silently, no dashboard will <strong>flag it up</strong> to the team.\" To flag something up means to…",
+     "options": [
+      "measure it precisely",
+      "approve it quickly",
+      "bring it to attention",
+      "hide it from view"
+     ],
+     "answer": 2,
+     "why": "Flag up = sinalizar, chamar a atenção para um problema."
+    }
+   ]
+  }
+ ]
+}

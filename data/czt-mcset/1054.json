@@ -1,0 +1,259 @@
+{
+ "num": 1054,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "A trader's week is full. On Monday, the market opens. On Tuesday, there are client calls. On Wednesday, Ethan writes reports.<br><br>On Thursday, the team has meetings. On Friday, they wrap up the week and send the weekly reports. Ethan is usually at his desk by 8. He always checks the market on Monday.<br><br>The market is always closed on weekends. Ethan never works on Sundays. He sometimes travels to Brazil, but not often.",
+   "items": [
+    {
+     "q": "What happens on Monday?",
+     "options": [
+      "There are client calls.",
+      "The market opens.",
+      "The team has meetings.",
+      "Ethan writes reports."
+     ],
+     "answer": 1,
+     "why": "\"On Monday, the market opens.\""
+    },
+    {
+     "q": "When does the team send the weekly reports?",
+     "options": [
+      "On Monday",
+      "On Friday",
+      "On Sunday",
+      "On Wednesday"
+     ],
+     "answer": 1,
+     "why": "\"On Friday, they wrap up the week and send the weekly reports.\""
+    },
+    {
+     "q": "How often does Ethan check the market on Monday?",
+     "options": [
+      "Never",
+      "Always",
+      "Once a month",
+      "Sometimes"
+     ],
+     "answer": 1,
+     "why": "\"He always checks the market on Monday.\""
+    },
+    {
+     "q": "The text suggests that Ethan's weekend is…",
+     "options": [
+      "the same as a work day",
+      "spent writing reports",
+      "his busiest time",
+      "a time to rest, not to work"
+     ],
+     "answer": 3,
+     "why": "Inferência: o mercado fecha no fim de semana e Ethan nunca trabalha aos domingos, então é tempo de descanso."
+    },
+    {
+     "q": "Which sentence would the author most likely DISAGREE with?",
+     "options": [
+      "The market opens on Monday.",
+      "Ethan has a busy week.",
+      "Ethan travels to Brazil every week.",
+      "Ethan works on weekdays."
+     ],
+     "answer": 2,
+     "why": "Inferência: o texto diz \"sometimes\" e \"not often\" — ele viaja às vezes, não toda semana."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Ethan falar sobre a semana dele. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! I am Ethan, and this is my week.<br><br>I always start early. From Monday to Friday, I am usually at my desk by 8. I love the morning. Clients often call before lunch, so I never leave my phone far away.<br><br>Monday is my busy day. The market opens and I check everything. On Tuesday, I have many calls. On Wednesday, I write reports. Thursday is for meetings with the team. And on Friday, we close deals and send the weekly report.<br><br>I sometimes travel to Brazil for work, but not every week. It is only a few times a year.<br><br>On the weekend, I rest. The market is always closed on Saturday and Sunday, so I never work then. I usually see my family and I sleep more. On Monday, I start again!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What time is Ethan usually at his desk?",
+     "options": [
+      "By 10",
+      "By 6",
+      "By noon",
+      "By 8"
+     ],
+     "answer": 3,
+     "why": "\"I am usually at my desk by 8.\""
+    },
+    {
+     "q": "Which day is Ethan's busy day?",
+     "options": [
+      "Sunday",
+      "Monday",
+      "Thursday",
+      "Friday"
+     ],
+     "answer": 1,
+     "why": "\"Monday is my busy day.\""
+    },
+    {
+     "q": "What does Ethan do on the weekend?",
+     "options": [
+      "He rests and sees his family.",
+      "He calls clients.",
+      "He travels to Brazil.",
+      "He writes reports."
+     ],
+     "answer": 0,
+     "why": "\"On the weekend, I rest… I usually see my family and I sleep more.\""
+    },
+    {
+     "q": "Why does Ethan keep his phone close?",
+     "options": [
+      "Because he works on Sundays",
+      "Because the market never opens",
+      "Because clients often call before lunch",
+      "Because he plays games"
+     ],
+     "answer": 2,
+     "why": "Inferência: os clientes ligam com frequência de manhã, então ele mantém o telefone por perto."
+    },
+    {
+     "q": "How does Ethan feel about his mornings?",
+     "options": [
+      "He enjoys them.",
+      "He finds them boring.",
+      "He is always late.",
+      "He does not like them."
+     ],
+     "answer": 0,
+     "why": "Inferência: ele diz \"I love the morning\" e começa cedo — ele gosta das manhãs."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"We have a big meeting on <strong>Monday</strong>.\" Monday is…",
+     "options": [
+      "domingo",
+      "segunda-feira",
+      "sexta-feira",
+      "sábado"
+     ],
+     "answer": 1,
+     "why": "Monday = segunda-feira, o primeiro dia útil da semana."
+    },
+    {
+     "q": "\"The team sends a <strong>weekly</strong> report.\" Weekly means…",
+     "options": [
+      "never",
+      "every day",
+      "once a year",
+      "once a week"
+     ],
+     "answer": 3,
+     "why": "Weekly = semanal, uma vez por semana."
+    },
+    {
+     "q": "Choose the correct word: \"I ___ check the market on Monday. I never miss it.\"",
+     "options": [
+      "never",
+      "always",
+      "rarely",
+      "sometimes"
+     ],
+     "answer": 1,
+     "why": "Always = sempre; combina com \"I never miss it\"."
+    },
+    {
+     "q": "\"We do not work on the <strong>weekend</strong>.\" The weekend is…",
+     "options": [
+      "the first day of work",
+      "Saturday and Sunday",
+      "the middle of the week",
+      "Monday and Tuesday"
+     ],
+     "answer": 1,
+     "why": "Weekend = fim de semana (sábado e domingo)."
+    },
+    {
+     "q": "Choose the correct word: \"We close deals every ___, at the end of the week.\"",
+     "options": [
+      "Wednesday",
+      "Friday",
+      "Monday",
+      "Sunday"
+     ],
+     "answer": 1,
+     "why": "Friday = sexta-feira, o fim da semana de trabalho."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples de trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"On Friday, we <strong>wrap up</strong> the week.\" To wrap up means to…",
+     "options": [
+      "cancel a meeting",
+      "travel far",
+      "finish something",
+      "start something new"
+     ],
+     "answer": 2,
+     "why": "Wrap up = finalizar, fechar o que estava aberto."
+    },
+    {
+     "q": "\"Clients <strong>call in</strong> the morning.\" To call in means to…",
+     "options": [
+      "close a deal",
+      "make a phone call",
+      "write an email",
+      "visit the office"
+     ],
+     "answer": 1,
+     "why": "Call in = telefonar, entrar em contato por telefone."
+    },
+    {
+     "q": "\"We <strong>close a deal</strong> on Friday.\" To close a deal means to…",
+     "options": [
+      "open the market",
+      "finish an agreement",
+      "cancel a sale",
+      "send an email"
+     ],
+     "answer": 1,
+     "why": "Close a deal = fechar um negócio, concluir um acordo."
+    },
+    {
+     "q": "\"I <strong>start early</strong> on Monday.\" To start early means to…",
+     "options": [
+      "finish late",
+      "begin before the usual time",
+      "work on Sunday",
+      "take a long break"
+     ],
+     "answer": 1,
+     "why": "Start early = começar cedo, antes do horário comum."
+    },
+    {
+     "q": "\"I am usually <strong>at my desk</strong> by 8.\" To be at your desk means to…",
+     "options": [
+      "be on holiday",
+      "be traveling",
+      "be ready to work",
+      "be in a meeting"
+     ],
+     "answer": 2,
+     "why": "At your desk = na sua mesa, pronto para trabalhar."
+    }
+   ]
+  }
+ ]
+}

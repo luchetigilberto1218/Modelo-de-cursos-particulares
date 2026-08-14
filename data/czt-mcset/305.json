@@ -10,20 +10,20 @@
     {
      "q": "What does B2B move?",
      "options": [
+      "Large volumes between companies",
       "Online orders only",
-      "Small parcels to homes",
       "Passengers",
-      "Large volumes between companies"
+      "Small parcels to homes"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "\"B2B… moves large volumes between companies: pallets, containers, and full trucks.\""
     },
     {
      "q": "Who receives B2C deliveries?",
      "options": [
       "Individual customers",
-      "Other companies",
       "Only factories",
+      "Other companies",
       "Ports"
      ],
      "answer": 0,
@@ -32,12 +32,12 @@
     {
      "q": "E-commerce logistics is a special kind of…",
      "options": [
-      "B2C",
       "container shipping",
+      "B2C",
       "B2B",
       "air travel"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "\"E-commerce logistics is a special kind of B2C.\""
     },
     {
@@ -45,8 +45,8 @@
      "options": [
       "can run B2B, B2C and e-commerce together",
       "cannot do e-commerce",
-      "should stop using B2B",
-      "must choose only one type"
+      "must choose only one type",
+      "should stop using B2B"
      ],
      "answer": 0,
      "why": "Inferência: \"The same company may run all three at once\" — pode rodar os três juntos."
@@ -56,10 +56,10 @@
      "options": [
       "B2B is faster than e-commerce",
       "all logistics operations work the same way",
-      "different operations need different rhythms",
-      "parcels move in full trucks"
+      "parcels move in full trucks",
+      "different operations need different rhythms"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: o texto todo mostra que cada tipo tem seu próprio ritmo e forma de trabalho."
     }
    ]
@@ -77,31 +77,31 @@
     {
      "q": "How many operations does James show?",
      "options": [
-      "Two",
+      "Three",
       "Four",
       "One",
-      "Three"
+      "Two"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "\"we run two very different operations here, side by side.\""
     },
     {
      "q": "How does James describe the B2B side?",
      "options": [
-      "Empty and quiet",
-      "Small and fast",
       "Big and slow",
+      "Small and fast",
+      "Empty and quiet",
       "Light and reactive"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"On this side, we have the B2B operation. It is big and slow.\""
     },
     {
      "q": "What does the e-commerce side pack?",
      "options": [
+      "Pallets and containers",
       "Full trucks",
       "Nothing",
-      "Pallets and containers",
       "Single parcels"
      ],
      "answer": 3,
@@ -110,23 +110,23 @@
     {
      "q": "Why does James say \"Do not mix them up\"?",
      "options": [
-      "The parcels are all the same",
-      "The two operations work in very different ways",
       "Both sides are slow",
-      "There is only one team"
+      "There is only one team",
+      "The two operations work in very different ways",
+      "The parcels are all the same"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Inferência: os dois lados têm ritmos muito diferentes, então não se pode tratá-los da mesma forma."
     },
     {
      "q": "What is Czarnikow's main business, based on James?",
      "options": [
-      "Moving commodities in bulk (B2B)",
       "Passenger transport",
       "E-commerce parcels",
-      "Home delivery"
+      "Home delivery",
+      "Moving commodities in bulk (B2B)"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: \"This is our main business… We move commodities in bulk\" — o forte é o B2B."
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"We ship a large <strong>volume</strong> of sugar every month.\" A <strong>volume</strong> is…",
      "options": [
-      "an amount or quantity",
-      "a small box",
+      "a delivery time",
       "a price",
-      "a delivery time"
+      "a small box",
+      "an amount or quantity"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Volume = quantidade, a amount of goods."
     },
     {
      "q": "Choose the correct word: \"The customer's order fits in one small ___.\"",
      "options": [
-      "truck",
-      "parcel",
       "container",
-      "warehouse"
+      "parcel",
+      "warehouse",
+      "truck"
      ],
      "answer": 1,
      "why": "Parcel = encomenda pequena, para um cliente."
@@ -161,34 +161,34 @@
     {
      "q": "\"We load the goods into a big steel <strong>container</strong>.\" A <strong>container</strong> is…",
      "options": [
+      "an online order",
       "a paper letter",
-      "a large box for shipping",
       "a home address",
-      "an online order"
+      "a large box for shipping"
      ],
-     "answer": 1,
+     "answer": 3,
      "why": "Container = contêiner, a grande caixa de transporte."
     },
     {
      "q": "\"Each operation has its own <strong>rhythm</strong>.\" A <strong>rhythm</strong> is…",
      "options": [
-      "a price list",
+      "a regular pace or pattern",
       "a type of truck",
       "a customer",
-      "a regular pace or pattern"
+      "a price list"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Rhythm = ritmo, o padrão/velocidade de trabalho."
     },
     {
      "q": "Choose the correct word: \"The e-commerce team is very ___ — orders never stop coming.\"",
      "options": [
-      "slow",
       "empty",
-      "relentless",
-      "planned"
+      "planned",
+      "slow",
+      "relentless"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Relentless = incansável, que não para."
     }
    ]
@@ -201,56 +201,56 @@
     {
      "q": "\"The manager has to <strong>sign off on</strong> the shipment first.\" To sign off on means to…",
      "options": [
-      "lose",
-      "cancel",
       "hide",
-      "approve"
+      "approve",
+      "cancel",
+      "lose"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Sign off on = aprovar, dar o aval."
     },
     {
      "q": "\"We will <strong>roll out</strong> the new delivery service next month.\" To roll out means to…",
      "options": [
+      "return",
       "start or launch",
       "stop",
-      "forget",
-      "return"
+      "forget"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Roll out = lançar, colocar em funcionamento."
     },
     {
      "q": "\"The new joiner needs to <strong>keep up with</strong> the fast rhythm.\" To keep up with means to…",
      "options": [
+      "take a break",
       "slow down",
       "fall behind",
-      "move at the same speed",
-      "take a break"
+      "move at the same speed"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Keep up with = acompanhar, ir no mesmo ritmo."
     },
     {
      "q": "\"We <strong>run</strong> B2B and e-commerce <strong>side by side</strong>.\" Side by side means…",
      "options": [
       "never",
-      "far apart",
+      "at the same time, together",
       "one after the other",
-      "at the same time, together"
+      "far apart"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Side by side = lado a lado, ao mesmo tempo."
     },
     {
      "q": "\"Please <strong>set up</strong> the packing station before the orders arrive.\" To set up means to…",
      "options": [
-      "sell",
-      "prepare or get ready",
       "take away",
-      "break"
+      "break",
+      "prepare or get ready",
+      "sell"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Set up = preparar, montar."
     }
    ]

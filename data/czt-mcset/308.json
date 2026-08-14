@@ -10,21 +10,21 @@
     {
      "q": "How many steps does every warehouse run on?",
      "options": [
-      "Five",
-      "Two",
       "Three",
-      "Four"
+      "Five",
+      "Four",
+      "Two"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "\"Every warehouse runs on the same four steps.\" São quatro: receiving, picking, packing, dispatch."
     },
     {
      "q": "What is the FIRST step?",
      "options": [
       "Receiving",
-      "Picking",
       "Packing",
-      "Dispatch"
+      "Dispatch",
+      "Picking"
      ],
      "answer": 0,
      "why": "\"First, receiving takes goods off the incoming truck.\""
@@ -32,12 +32,12 @@
     {
      "q": "What does packing do?",
      "options": [
-      "It hands goods to the carrier",
       "It selects items from the shelves",
       "It puts items in boxes with the right label",
+      "It hands goods to the carrier",
       "It checks the incoming truck"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"packing puts them in boxes safely, with the right label.\""
     },
     {
@@ -45,21 +45,21 @@
      "options": [
       "depends on the carrier",
       "is decided by the trainee",
-      "stays the same everywhere",
-      "changes in every warehouse"
+      "changes in every warehouse",
+      "stays the same everywhere"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: \"The four steps always happen in the same order.\" Só a velocidade muda."
     },
     {
      "q": "The author would most likely AGREE that…",
      "options": [
+      "a fast team and a slow team can follow the same four steps",
       "dispatch happens before receiving",
-      "each warehouse invents its own steps",
       "the label is not important",
-      "a fast team and a slow team can follow the same four steps"
+      "each warehouse invents its own steps"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Inferência: a ordem é sempre igual; o que muda é a velocidade e a coordenação — então times diferentes seguem os mesmos passos."
     }
    ]
@@ -77,56 +77,56 @@
     {
      "q": "Where does Emily start the tour?",
      "options": [
+      "At the receiving dock",
       "At the packing tables",
       "At the shelves",
-      "At the receiving dock",
       "At dispatch"
      ],
-     "answer": 2,
+     "answer": 0,
      "why": "\"We start here, at the receiving dock.\""
     },
     {
      "q": "At the shelves, what do they do in picking?",
      "options": [
-      "They close the box and add the label",
-      "They count the incoming boxes",
+      "They wait for the outgoing truck",
       "They find the right items for the order",
-      "They wait for the outgoing truck"
+      "They close the box and add the label",
+      "They count the incoming boxes"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "\"we find the right items on the shelf, and we take them.\""
     },
     {
      "q": "What does Emily say about the label?",
      "options": [
-      "It must always be correct",
       "It is added at dispatch",
       "It is not important",
+      "It must always be correct",
       "The carrier writes it"
      ],
-     "answer": 0,
+     "answer": 2,
      "why": "\"The label must be correct, always.\""
     },
     {
      "q": "Why does Emily say \"only the right items — never the wrong ones\"?",
      "options": [
+      "Because the truck is late",
       "Because there are too many boxes",
       "Because the shelves are empty",
-      "Because picking the wrong item would cause a problem for the order",
-      "Because the truck is late"
+      "Because picking the wrong item would cause a problem for the order"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Inferência: pegar o item errado quebra o pedido — por isso ela insiste em pegar só o certo."
     },
     {
      "q": "What is Emily's main goal in this tour?",
      "options": [
-      "To teach the trainee the four steps in order",
-      "To sell products to a customer",
       "To repair a broken truck",
-      "To hire more workers"
+      "To sell products to a customer",
+      "To hire more workers",
+      "To teach the trainee the four steps in order"
      ],
-     "answer": 0,
+     "answer": 3,
      "why": "Inferência: ela leva o novato zona por zona e repete a ordem — o objetivo é ensinar os quatro passos."
     }
    ]
@@ -139,21 +139,21 @@
     {
      "q": "\"We put the box on the top <strong>shelf</strong>.\" A <strong>shelf</strong> is…",
      "options": [
-      "an order form",
-      "a door",
+      "a truck",
       "a flat surface where you store items",
-      "a truck"
+      "a door",
+      "an order form"
      ],
-     "answer": 2,
+     "answer": 1,
      "why": "Shelf = prateleira: a superfície onde os itens ficam guardados."
     },
     {
      "q": "Choose the correct word: \"The ___ truck arrives at the dock every morning with new goods.\"",
      "options": [
-      "picking",
+      "packing",
       "incoming",
       "outgoing",
-      "packing"
+      "picking"
      ],
      "answer": 1,
      "why": "Incoming = que chega. O caminhão que traz mercadoria é o incoming."
@@ -161,34 +161,34 @@
     {
      "q": "\"Please put the <strong>label</strong> on the box.\" A <strong>label</strong> is…",
      "options": [
-      "a small tag with the address and information",
       "a shelf",
+      "a small tag with the address and information",
       "a box",
       "a truck driver"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Label = etiqueta: o adesivo com endereço e informações."
     },
     {
      "q": "Choose the correct word: \"The ___ takes the packed boxes to the customer.\"",
      "options": [
+      "order",
       "label",
       "carrier",
-      "order",
       "shelf"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "Carrier = transportadora: quem leva as caixas ao cliente."
     },
     {
      "q": "\"A clean <strong>hand-off</strong> between steps keeps everything moving.\" A <strong>hand-off</strong> is…",
      "options": [
       "the end of the day",
+      "a coffee break",
       "a broken box",
-      "the moment one step passes the work to the next",
-      "a coffee break"
+      "the moment one step passes the work to the next"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Hand-off = passagem: quando um passo entrega o trabalho ao próximo."
     }
    ]
@@ -202,55 +202,55 @@
      "q": "\"We <strong>roll out</strong> the new system next month.\" To roll out means to…",
      "options": [
       "throw something away",
+      "start using something new, step by step",
       "close the warehouse",
-      "clean the floor",
-      "start using something new, step by step"
+      "clean the floor"
      ],
-     "answer": 3,
+     "answer": 1,
      "why": "Roll out = colocar em uso, implementar aos poucos."
     },
     {
      "q": "\"The manager will <strong>sign off on</strong> the order today.\" To sign off on means to…",
      "options": [
-      "officially approve",
       "cancel",
+      "officially approve",
       "lose",
       "read slowly"
      ],
-     "answer": 0,
+     "answer": 1,
      "why": "Sign off on = aprovar oficialmente, dar o ok final."
     },
     {
      "q": "\"Please <strong>follow through</strong> and finish every box.\" To follow through means to…",
      "options": [
-      "ask another team",
+      "finish what you started",
       "stop halfway",
       "start again",
-      "finish what you started"
+      "ask another team"
      ],
-     "answer": 3,
+     "answer": 0,
      "why": "Follow through = levar até o fim o que começou."
     },
     {
      "q": "\"The truck is late, so we have to <strong>catch up</strong> in the afternoon.\" To catch up means to…",
      "options": [
+      "change the label",
       "leave early",
       "take a long break",
-      "do the work you are behind on",
-      "change the label"
+      "do the work you are behind on"
      ],
-     "answer": 2,
+     "answer": 3,
      "why": "Catch up = colocar o trabalho em dia, recuperar o atraso."
     },
     {
      "q": "\"Let's <strong>speed up</strong> picking before the outgoing truck arrives.\" To speed up means to…",
      "options": [
-      "stop working",
       "wait longer",
       "make it heavier",
-      "do something faster"
+      "do something faster",
+      "stop working"
      ],
-     "answer": 3,
+     "answer": 2,
      "why": "Speed up = acelerar, fazer mais rápido."
     }
    ]

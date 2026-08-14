@@ -1,0 +1,259 @@
+{
+ "num": 1136,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Accounting is the language of Czarnikow's numbers. Today's lesson is short and practical. You can use these words with the finance team.<br><br>Today you learn five useful words: today, now, current, final, and open. You practise them in short, simple sentences. Go slowly — one step at a time.<br><br>Good numbers are clear and honest. Sophie helps new trainees every day. English comes in CAN's, not in CAN'Ts. You can do it!",
+   "items": [
+    {
+     "q": "What is the language of Czarnikow's numbers?",
+     "options": [
+      "Sport",
+      "Accounting",
+      "Music",
+      "History"
+     ],
+     "answer": 1,
+     "why": "\"Accounting is the language of Czarnikow's numbers.\""
+    },
+    {
+     "q": "How many new words do you learn today?",
+     "options": [
+      "Ten",
+      "Two",
+      "Twenty",
+      "Five"
+     ],
+     "answer": 3,
+     "why": "\"You learn five useful words: today, now, current, final, and open.\""
+    },
+    {
+     "q": "Good numbers are…",
+     "options": [
+      "clear and honest",
+      "long and hard",
+      "secret and closed",
+      "old and lost"
+     ],
+     "answer": 0,
+     "why": "\"Good numbers are clear and honest.\""
+    },
+    {
+     "q": "\"Go slowly — one step at a time.\" This suggests the lesson is…",
+     "options": [
+      "easy to learn if you take your time",
+      "very long and boring",
+      "impossible to finish",
+      "only for experts"
+     ],
+     "answer": 0,
+     "why": "Inferência: a frase encoraja calma — a lição é acessível passo a passo."
+    },
+    {
+     "q": "\"You can do it!\" tells us the writer wants to…",
+     "options": [
+      "warn the reader",
+      "test the reader",
+      "encourage the reader",
+      "correct the reader"
+     ],
+     "answer": 2,
+     "why": "Inferência: o tom é de incentivo, não de aviso ou correção."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Sophie apresentando o tema para um novo trainee. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Hi! Welcome to the accounting team. I am Sophie. Today we talk about \"Today's Numbers\". It is easy. Do not worry.<br><br>First, listen to five words. Today. Now. Current. Final. Open. Say them with me. Good!<br><br>Look at this sheet. The current report is on the desk. It is ready now. The final numbers are here too. They are correct.<br><br>Is the file open? Yes, it is open. Please check today's numbers with me. We work slowly. One step at a time.<br><br>You are new, but you are doing well. Numbers are clear and honest. That is our job. You can ask me questions. I am happy to help.<br><br>Great work today. See you tomorrow!",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "Who is speaking?",
+     "options": [
+      "The trainee",
+      "The manager",
+      "Sophie",
+      "James"
+     ],
+     "answer": 2,
+     "why": "\"I am Sophie.\""
+    },
+    {
+     "q": "What are the five words?",
+     "options": [
+      "Desk, sheet, file, team, job",
+      "One, two, three, four, five",
+      "Morning, day, week, month, year",
+      "Today, now, current, final, open"
+     ],
+     "answer": 3,
+     "why": "\"Today. Now. Current. Final. Open.\""
+    },
+    {
+     "q": "Is the file open?",
+     "options": [
+      "No, it is closed",
+      "It is new",
+      "Yes, it is open",
+      "It is lost"
+     ],
+     "answer": 2,
+     "why": "\"Is the file open? Yes, it is open.\""
+    },
+    {
+     "q": "Sophie says \"We work slowly. One step at a time.\" This suggests she wants the trainee to feel…",
+     "options": [
+      "calm and not rushed",
+      "afraid of mistakes",
+      "bored with the work",
+      "in a big hurry"
+     ],
+     "answer": 0,
+     "why": "Inferência: ela repete que o trabalho é devagar para deixar o trainee tranquilo."
+    },
+    {
+     "q": "How does Sophie feel about the new trainee?",
+     "options": [
+      "She ignores them",
+      "She is worried about them",
+      "She is positive and supportive",
+      "She is angry with them"
+     ],
+     "answer": 2,
+     "why": "Inferência: \"you are doing well\", \"I am happy to help\" — tom positivo e de apoio."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"Please send the report <strong>today</strong>.\" <strong>Today</strong> means…",
+     "options": [
+      "next month",
+      "last week",
+      "tomorrow",
+      "this day"
+     ],
+     "answer": 3,
+     "why": "Today = hoje, este dia."
+    },
+    {
+     "q": "\"I am busy <strong>now</strong>.\" <strong>Now</strong> means…",
+     "options": [
+      "at this moment",
+      "never",
+      "later this year",
+      "yesterday"
+     ],
+     "answer": 0,
+     "why": "Now = agora, neste momento."
+    },
+    {
+     "q": "Choose the correct word: \"This is the ___ report — it has this week's numbers.\"",
+     "options": [
+      "wrong",
+      "old",
+      "current",
+      "empty"
+     ],
+     "answer": 2,
+     "why": "Current = atual; o relatório com os números desta semana."
+    },
+    {
+     "q": "\"These are the <strong>final</strong> numbers.\" <strong>Final</strong> means…",
+     "options": [
+      "the last, ready ones",
+      "the first",
+      "the missing ones",
+      "the wrong ones"
+     ],
+     "answer": 0,
+     "why": "Final = final, os números prontos e definitivos."
+    },
+    {
+     "q": "Choose the correct word: \"The file is ___, so you can read it now.\"",
+     "options": [
+      "quiet",
+      "open",
+      "small",
+      "late"
+     ],
+     "answer": 1,
+     "why": "Open = aberto; o arquivo está aberto para leitura."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões simples que aparecem no trabalho. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"Can you <strong>fill in</strong> this form?\" To fill in means to…",
+     "options": [
+      "hide it",
+      "throw it away",
+      "read it aloud",
+      "write the information"
+     ],
+     "answer": 3,
+     "why": "Fill in = preencher, escrever as informações."
+    },
+    {
+     "q": "\"Please <strong>check</strong> the numbers.\" To check means to…",
+     "options": [
+      "delete them",
+      "look and make sure they are right",
+      "print them",
+      "sign them"
+     ],
+     "answer": 1,
+     "why": "Check = verificar, conferir se está certo."
+    },
+    {
+     "q": "\"Let's <strong>go over</strong> the report together.\" To go over means to…",
+     "options": [
+      "review it",
+      "send it",
+      "close it",
+      "lose it"
+     ],
+     "answer": 0,
+     "why": "Go over = revisar, passar por algo juntos."
+    },
+    {
+     "q": "\"I will <strong>hand in</strong> the report today.\" To hand in means to…",
+     "options": [
+      "read it again",
+      "give it to the boss",
+      "keep it at home",
+      "copy it"
+     ],
+     "answer": 1,
+     "why": "Hand in = entregar (a alguém, como o chefe)."
+    },
+    {
+     "q": "\"Take your time and <strong>carry on</strong>.\" To carry on means to…",
+     "options": [
+      "continue",
+      "start again",
+      "stop now",
+      "wait here"
+     ],
+     "answer": 0,
+     "why": "Carry on = continuar, seguir em frente."
+    }
+   ]
+  }
+ ]
+}

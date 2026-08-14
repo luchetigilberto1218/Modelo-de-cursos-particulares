@@ -1,0 +1,259 @@
+{
+ "num": 269,
+ "blocks": [
+  {
+   "type": "mcSet",
+   "skill": "reading",
+   "instruction": "Leia o texto e escolha a alternativa correta. Algumas perguntas pedem inferência — a resposta não está escrita com todas as letras.",
+   "passage": "Coordinating transport and logistics means being the conductor of a small orchestra. Trucks, ships, planes, carriers, customs agents and warehouses all have to play their parts at the right moment, or the whole piece falls apart.<br><br>Two habits keep the music playing. First, a calm, shared view of where everything is: a simple tracking board that everyone can see, updated often enough to be believed. Second, a small set of trusted carriers for each lane, so that when something breaks, the call is short and the backup already knows the route.<br><br>Although problems will always happen, the skill is not in preventing them all — it is in noticing them early and responding quickly, because a small delay caught at hour one is much cheaper than the same delay found at hour twelve.",
+   "items": [
+    {
+     "q": "What image does the author use for coordinating transport and logistics?",
+     "options": [
+      "A pilot flying a plane",
+      "A conductor leading a small orchestra",
+      "A referee controlling a match",
+      "A captain steering a ship"
+     ],
+     "answer": 1,
+     "why": "\"being the conductor of a small orchestra\" — cada parte tem de tocar na hora certa."
+    },
+    {
+     "q": "According to the text, what makes a tracking board useful?",
+     "options": [
+      "It is designed by a specialist team",
+      "It replaces the need for phone calls",
+      "It is updated often enough to be believed",
+      "It shows only the primary carriers"
+     ],
+     "answer": 2,
+     "why": "\"a simple tracking board… updated often enough to be believed.\""
+    },
+    {
+     "q": "Why does the text recommend a small set of trusted carriers for each lane?",
+     "options": [
+      "To avoid using warehouses",
+      "So that customs agents are not needed",
+      "So that when something breaks, the call is short and the backup knows the route",
+      "To reduce shipping costs"
+     ],
+     "answer": 2,
+     "why": "\"a small set of trusted carriers for each lane, so that when something breaks, the call is short and the backup already knows the route.\""
+    },
+    {
+     "q": "The text suggests that the author would most likely DISAGREE with which statement?",
+     "options": [
+      "Having a backup carrier is worthwhile",
+      "A good coordinator aims to prevent every problem from ever happening",
+      "Early detection of problems saves money",
+      "Visibility matters as much as movement"
+     ],
+     "answer": 1,
+     "why": "Inferência: o texto diz que a habilidade não está em prevenir tudo, mas em notar cedo e responder rápido."
+    },
+    {
+     "q": "What does the comparison between \"hour one\" and \"hour twelve\" suggest?",
+     "options": [
+      "Delays should always be reported to the client",
+      "Twelve hours is the maximum acceptable delay",
+      "Most delays happen in the first hour",
+      "The cost of a delay grows the longer it goes unnoticed"
+     ],
+     "answer": 3,
+     "why": "Inferência: \"a small delay caught at hour one is much cheaper than the same delay found at hour twelve\" — quanto mais tarde, mais caro."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "listening",
+   "instruction": "Ouça Oliver orientando o novo coordenador de logística. Responda sem ler a transcrição — ela só aparece depois de corrigir.",
+   "audio": {
+    "text": "Right, so it's Monday morning — this is where the whole week is won or lost. Grab a coffee, because we're going to walk the tracking board together before anything else happens.<br><br>See these three lanes here? São Paulo to Santos, the Rotterdam sea leg, and the air freight into Frankfurt. I want a status on each one before nine, and I mean a real status, not a guess. If the number on the board is wrong, everyone downstream trusts it anyway, so a wrong board is worse than no board at all.<br><br>Now, the primary carrier on the Santos lane is reliable, although reliable doesn't mean perfect. That's why we keep two backups warm. On a Monday I actually call them, even when nothing is broken, just to confirm they have capacity this week. It takes ten minutes.<br><br>Here's the logic I live by: three calls on Monday morning can prevent five emergencies by Friday, because a delay you spot at hour one is cheap, and the same delay at hour twelve is a fire. So update the board, make the calls, and then we start the day.",
+    "label": "Ouça quantas vezes precisar. A transcrição aparece depois de corrigir.",
+    "rate": 0.95
+   },
+   "items": [
+    {
+     "q": "What does Oliver want the coordinator to do BEFORE nine on Monday?",
+     "options": [
+      "Book capacity with a new carrier",
+      "Email the clients a weekly summary",
+      "Get a real status on each lane on the tracking board",
+      "Clear the customs paperwork"
+     ],
+     "answer": 2,
+     "why": "\"I want a status on each one before nine… a real status, not a guess.\""
+    },
+    {
+     "q": "Why does Oliver say a wrong board is worse than no board at all?",
+     "options": [
+      "Because carriers refuse to use it",
+      "Because everyone downstream trusts the number anyway",
+      "Because the software crashes with bad data",
+      "Because it takes longer to update"
+     ],
+     "answer": 1,
+     "why": "\"If the number on the board is wrong, everyone downstream trusts it anyway, so a wrong board is worse than no board at all.\""
+    },
+    {
+     "q": "Why does Oliver call the backup carriers even when nothing is broken?",
+     "options": [
+      "To confirm they have capacity this week",
+      "To negotiate a lower price",
+      "To cancel their contract",
+      "To replace the primary carrier"
+     ],
+     "answer": 0,
+     "why": "\"just to confirm they have capacity this week.\""
+    },
+    {
+     "q": "What does Oliver imply when he says \"reliable doesn't mean perfect\"?",
+     "options": [
+      "Even a dependable carrier can fail, so a backup is still needed",
+      "The primary carrier should be replaced",
+      "Reliability is impossible to measure",
+      "Backups are only for unreliable lanes"
+     ],
+     "answer": 0,
+     "why": "Inferência: por isso ele mantém dois backups \"aquecidos\" mesmo na rota confiável."
+    },
+    {
+     "q": "How would you best describe Oliver's approach to logistics?",
+     "options": [
+      "Indifferent — he lets the carriers manage themselves",
+      "Proactive — he catches problems early to avoid emergencies later",
+      "Cost-driven — he chooses the cheapest carrier each week",
+      "Reactive — he waits for problems to be reported"
+     ],
+     "answer": 1,
+     "why": "Inferência: \"three calls on Monday morning can prevent five emergencies by Friday\" — ele age antes, não depois."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "vocabulary",
+   "instruction": "O vocabulário da lição aparece aqui em frases novas. Escolha o sentido ou a palavra que cabe no contexto.",
+   "items": [
+    {
+     "q": "\"A good coordinator is the <strong>conductor</strong> of the whole operation.\" A conductor is…",
+     "options": [
+      "someone who drives the truck",
+      "someone who directs the many parts so they work together",
+      "someone who signs the invoices",
+      "someone who loads the cargo"
+     ],
+     "answer": 1,
+     "why": "Conductor = maestro: quem coordena as várias partes para atuarem juntas."
+    },
+    {
+     "q": "Choose the correct word: \"We keep two ___ carriers on each lane, so a breakdown never stops the delivery.\"",
+     "options": [
+      "warehouse",
+      "backup",
+      "customs",
+      "primary"
+     ],
+     "answer": 1,
+     "why": "Backup = reserva: o transportador de apoio para quando o principal falha."
+    },
+    {
+     "q": "Choose the correct word: \"The São Paulo–Santos ___ is our busiest route, with three shipments a day.\"",
+     "options": [
+      "agent",
+      "lane",
+      "part",
+      "board"
+     ],
+     "answer": 1,
+     "why": "Lane = rota / trecho específico de transporte."
+    },
+    {
+     "q": "\"Each carrier has to <strong>play its part</strong> at the right moment.\" This means each carrier must…",
+     "options": [
+      "do its own job at the right time",
+      "compete with the others",
+      "choose its own schedule",
+      "report to the customs agent"
+     ],
+     "answer": 0,
+     "why": "To play a part = cumprir o seu papel, fazer a sua parte na hora certa."
+    },
+    {
+     "q": "\"We only work with <strong>trusted</strong> carriers on the critical lanes.\" Trusted carriers are ones that…",
+     "options": [
+      "have proven they can be relied on",
+      "operate only by sea",
+      "charge the lowest price",
+      "are new to the market"
+     ],
+     "answer": 0,
+     "why": "Trusted = de confiança: que já provaram ser confiáveis."
+    }
+   ]
+  },
+  {
+   "type": "mcSet",
+   "skill": "expressions",
+   "instruction": "Expressões e phrasal verbs que aparecem na coordenação de transporte e logística. Escolha o sentido no contexto.",
+   "items": [
+    {
+     "q": "\"The primary carrier let us down, so we had to <strong>fall back on</strong> the backup.\" To fall back on means to…",
+     "options": [
+      "complain formally",
+      "renegotiate the price",
+      "rely on something in reserve",
+      "cancel completely"
+     ],
+     "answer": 2,
+     "why": "Fall back on = recorrer a algo de reserva quando o plano principal falha."
+    },
+    {
+     "q": "\"We will <strong>roll out</strong> the new tracking board across all three lanes next month.\" To roll out means to…",
+     "options": [
+      "implement it in stages",
+      "test it in secret",
+      "shut it down",
+      "explain it to the client"
+     ],
+     "answer": 0,
+     "why": "Roll out = implementar de forma progressiva."
+    },
+    {
+     "q": "\"A container was stuck at customs, and it <strong>held up</strong> the whole shipment.\" To hold up means to…",
+     "options": [
+      "cause a delay",
+      "inspect",
+      "cancel",
+      "speed up"
+     ],
+     "answer": 0,
+     "why": "Hold up = atrasar, segurar o andamento."
+    },
+    {
+     "q": "\"The coordinator agreed to check the board daily, but she never <strong>followed through</strong>.\" She…",
+     "options": [
+      "delegated it at once",
+      "failed to carry it to completion",
+      "changed the plan",
+      "did it perfectly"
+     ],
+     "answer": 1,
+     "why": "Follow through = levar até o fim o que foi combinado."
+    },
+    {
+     "q": "\"Let's <strong>keep on top of</strong> the delays before they turn into emergencies.\" To keep on top of something means to…",
+     "options": [
+      "report it to senior management",
+      "stay in control of it and manage it closely",
+      "ignore it until it grows",
+      "hand it to another team"
+     ],
+     "answer": 1,
+     "why": "Keep on top of = manter sob controle, acompanhar de perto."
+    }
+   ]
+  }
+ ]
+}
