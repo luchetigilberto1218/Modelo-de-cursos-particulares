@@ -63,6 +63,27 @@ export function useIdentity(enabled = true) {
  * ----------------------------------------------------------------------- */
 const pulledOnce = new Set();
 
+/* Declaração "estudei e estou pronto para a aula particular".
+   Campos: ready (bool), readyAt (ISO da última vez que o aluno mexeu no botão),
+   readyDone/readyTotal (exercícios respondidos no momento da declaração) e
+   readyAcc (acerto na 1ª tentativa). Servem para o professor abrir a aula sabendo
+   o que o aluno praticou de verdade — nunca mexem no `done` da lição. */
+export function newerReady(a, b) {
+  const ra = typeof a?.readyAt === 'string' ? a.readyAt : null;
+  const rb = typeof b?.readyAt === 'string' ? b.readyAt : null;
+  if (!ra && !rb) return null;
+  if (!ra) return b;
+  if (!rb) return a;
+  return ra >= rb ? a : b;
+}
+export function readyFields(src) {
+  const out = { ready: !!src.ready, readyAt: src.readyAt };
+  if (typeof src.readyDone === 'number') out.readyDone = src.readyDone;
+  if (typeof src.readyTotal === 'number') out.readyTotal = src.readyTotal;
+  if (typeof src.readyAcc === 'number') out.readyAcc = src.readyAcc;
+  return out;
+}
+
 function mergeRemoteInto(local, remote) {
   let changed = false;
   for (const num of Object.keys(remote || {})) {
@@ -76,6 +97,10 @@ function mergeRemoteInto(local, remote) {
     const dates = [l.doneAt, r.doneAt].filter(Boolean).sort();
     if (dates.length) merged.doneAt = dates[0];
     if (typeof merged.acc !== 'number' && typeof r.acc === 'number') merged.acc = r.acc;
+    // "pronto para a aula particular": ao contrário de done/checks, NÃO é união —
+    // vale a declaração mais recente, porque o aluno pode desmarcar (ver useLessonReady).
+    const winner = newerReady(l, r);
+    if (winner) Object.assign(merged, readyFields(winner));
     if (JSON.stringify(l) !== JSON.stringify(merged)) { local[num] = merged; changed = true; }
   }
   return changed;
@@ -187,6 +212,47 @@ export function useLessonDone(studentId, num) {
   }, [studentId, num]);
 
   return { done, markDone, markUndone };
+}
+
+/**
+ * Hook da declaração "estudei a unidade e estou pronto para a aula particular".
+ *
+ * É um sinal SEPARADO da conclusão: marcar aqui não acende a lição nem dá ponto
+ * na campanha — só avisa o professor, levando junto a evidência do que foi feito
+ * (exercícios respondidos e acerto). Assim o botão nunca vira atalho para pular
+ * a prática: quem declara sem praticar aparece no painel exatamente assim.
+ *
+ * Retorna o estado da lição inteiro (done/acc/ready…) + os dois setters.
+ */
+export function useLessonReady(studentId, num) {
+  const [state, setState] = useState({});
+  useEffect(() => {
+    if (!studentId) return;
+    const read = () => setState(getLesson(studentId, num) || {});
+    read();
+    pullRemote(studentId);
+    const h = () => read();
+    window.addEventListener('czt-progress', h);
+    return () => window.removeEventListener('czt-progress', h);
+  }, [studentId, num]);
+
+  // `evidence` = { answered, total, acc } no instante da declaração. Regravado a
+  // cada vez que o aluno marca, porque o que vale para o professor é a última.
+  const markReady = useCallback((evidence) => {
+    if (!studentId) return;
+    const patch = { ready: true, readyAt: new Date().toISOString() };
+    if (typeof evidence?.answered === 'number') patch.readyDone = evidence.answered;
+    if (typeof evidence?.total === 'number') patch.readyTotal = evidence.total;
+    if (typeof evidence?.acc === 'number') patch.readyAcc = Math.min(1, Math.max(0, evidence.acc));
+    setLessonState(studentId, num, patch);
+  }, [studentId, num]);
+
+  const markUnready = useCallback(() => {
+    if (!studentId) return;
+    setLessonState(studentId, num, { ready: false, readyAt: new Date().toISOString() });
+  }, [studentId, num]);
+
+  return { ...state, markReady, markUnready };
 }
 
 /* -------------------------------------------------------------------------

@@ -111,9 +111,38 @@ export async function GET() {
       };
     }).sort((a, b) => (b.designated - a.designated) || (b.done - a.done));
 
+    // Declarações "estudei e estou pronto para a aula particular", da mais nova
+    // para a mais velha, com a evidência do que o aluno praticou. É o handoff:
+    // o professor abre a aula sabendo se dá para avançar ou se precisa retomar.
+    const ready = Object.keys(state)
+      .filter((num) => state[num]?.ready)
+      .map((num) => {
+        const s = state[num];
+        const l = lessons.find((x) => x.num === Number(num)) || null;
+        const total = typeof s.readyTotal === 'number' ? s.readyTotal : null;
+        const answered = typeof s.readyDone === 'number' ? s.readyDone : null;
+        return {
+          num: Number(num),
+          title: l?.title || `Lição ${num}`,
+          order: l?.trackOrder || null,
+          trackName: l ? (trackName.get(l.track) || l.track) : null,
+          levelName: l ? (LEVEL_LABEL[l.level] || l.level) : null,
+          at: s.readyAt || null,
+          answered,
+          total,
+          acc: typeof s.readyAcc === 'number' ? s.readyAcc
+            : (typeof s.acc === 'number' ? s.acc : null),
+          // declarou sem ter praticado o suficiente (espelha READY_MIN = 0.7 no cliente)
+          weak: total > 0 && answered !== null && answered < Math.ceil(total * 0.7),
+          done: !!s.done,
+        };
+      })
+      .sort((a, b) => String(b.at || '').localeCompare(String(a.at || '')));
+
     return {
       student: u.id,
       name: u.name,
+      ready,
       demo: u.id === 'czt-teste',
       level: u.level || null,
       stage: u.stage || null,

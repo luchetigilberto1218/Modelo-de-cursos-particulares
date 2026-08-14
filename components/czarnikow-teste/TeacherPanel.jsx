@@ -133,6 +133,8 @@ function AlunoCard({ aluno, clientId }) {
   const principal = (aluno.blocks || []).find((b) => b.designated) || (aluno.blocks || [])[0] || null;
   const outros = (aluno.blocks || []).filter((b) => b !== principal && b.done > 0);
   const atividade = since(aluno.lastAt);
+  // unidades que o próprio aluno declarou prontas para a aula particular
+  const prontas = aluno.ready || [];
 
   return (
     <article style={{
@@ -149,6 +151,14 @@ function AlunoCard({ aluno, clientId }) {
                 marginLeft: 8, fontSize: 11, fontWeight: 700, letterSpacing: 0.6, textTransform: 'uppercase',
                 color: C.gold, background: '#FBF4E9', borderRadius: 6, padding: '3px 7px', verticalAlign: 'middle',
               }}>demonstração</span>
+            )}
+            {prontas.length > 0 && (
+              <span style={{
+                marginLeft: 8, fontSize: 11, fontWeight: 700, letterSpacing: 0.6, textTransform: 'uppercase',
+                color: '#fff', background: C.green, borderRadius: 6, padding: '3px 8px', verticalAlign: 'middle',
+              }}>
+                {prontas.length === 1 ? 'pediu 1 aula' : `pediu ${prontas.length} aulas`}
+              </span>
             )}
           </h2>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
@@ -229,6 +239,23 @@ function AlunoCard({ aluno, clientId }) {
         </div>
       )}
 
+      {/* ── o que o aluno declarou pronto ─────────────────────────────────── */}
+      {prontas.length > 0 && (
+        <div style={{ marginTop: 14, padding: 16, borderRadius: 14, background: '#F0FBF4', border: '1px solid #9AE6B4' }}>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1.1, textTransform: 'uppercase', color: C.green, margin: '0 0 10px' }}>
+            O aluno se declarou pronto para a aula
+          </p>
+          <div style={{ display: 'grid', gap: 10 }}>
+            {prontas.slice(0, 3).map((r) => <Pronta key={r.num} r={r} clientId={clientId} />)}
+          </div>
+          {prontas.length > 3 && (
+            <p style={{ fontSize: 12.5, color: C.gray, margin: '10px 0 0' }}>
+              e mais {prontas.length - 3} {prontas.length - 3 === 1 ? 'unidade' : 'unidades'} declarada{prontas.length - 3 === 1 ? '' : 's'}.
+            </p>
+          )}
+        </div>
+      )}
+
       {/* ── outras trilhas em que ele já estudou ──────────────────────────── */}
       {outros.length > 0 && (
         <p style={{ fontSize: 13, color: C.gray, margin: '12px 0 0', lineHeight: 1.6 }}>
@@ -257,5 +284,51 @@ function AlunoCard({ aluno, clientId }) {
         </p>
       )}
     </article>
+  );
+}
+
+/* Uma unidade que o aluno declarou pronta.
+   A declaração vem SEMPRE com a evidência: o botão do aluno é um pedido de aula,
+   não um atestado de estudo. Quando ele declara sem ter praticado (`weak`), o
+   professor vê isso aqui e já entra na aula sabendo que precisa retomar — que é
+   justamente o que o botão sozinho, sem evidência, esconderia. */
+function Pronta({ r, clientId }) {
+  const praticou = typeof r.answered === 'number' && typeof r.total === 'number' && r.total > 0;
+  return (
+    <div style={{
+      display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12,
+      flexWrap: 'wrap', background: '#fff', border: `1px solid ${C.grayLight}`,
+      borderRadius: 10, padding: '12px 14px',
+    }}>
+      <div style={{ minWidth: 220, flex: 1 }}>
+        <p style={{ fontSize: 15, fontWeight: 600, margin: '0 0 4px', lineHeight: 1.35 }}>
+          {r.order ? `${r.order}. ` : ''}{r.title}
+          {r.weak && (
+            <span style={{
+              marginLeft: 8, fontSize: 10.5, fontWeight: 700, letterSpacing: 0.6, textTransform: 'uppercase',
+              color: '#8C6A00', background: '#FFFBF2', border: '1px solid #E8D9B5',
+              borderRadius: 5, padding: '2px 6px', verticalAlign: 'middle',
+            }}>prática incompleta</span>
+          )}
+        </p>
+        <p style={{ fontSize: 12.5, color: C.gray, margin: 0, lineHeight: 1.5 }}>
+          {r.trackName && <>{r.trackName} · {r.levelName} · </>}
+          {praticou
+            ? <>{r.answered} de {r.total} exercícios{typeof r.acc === 'number' ? ` · ${Math.round(r.acc * 100)}% de acerto` : ''}</>
+            : 'sem exercícios de correção automática nesta unidade'}
+          {r.at && <> · declarou {since(r.at)}</>}
+        </p>
+      </div>
+      <Link
+        href={`/${clientId}/lesson/${r.num}`}
+        style={{
+          background: '#fff', color: C.navy, textDecoration: 'none', border: `1px solid ${C.grayLight}`,
+          fontSize: 13.5, fontWeight: 600, padding: '9px 14px', borderRadius: 9,
+          whiteSpace: 'nowrap', minHeight: 40, display: 'inline-flex', alignItems: 'center',
+        }}
+      >
+        Abrir →
+      </Link>
+    </div>
   );
 }

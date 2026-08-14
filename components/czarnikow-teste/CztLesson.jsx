@@ -6,6 +6,7 @@ import Exercise from '../Exercise';
 import AudioPlayer from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
 import { useIdentity, useLessonDone, useDoneMap } from './progress';
+import ReadyForClass, { ReadyStrip } from './ReadyForClass';
 
 /*
   Czarnikow (ambiente de teste) — renderizador de lição no estilo Baker Hughes.
@@ -95,6 +96,14 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
       </div>
 
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '28px 24px 60px' }}>
+
+        <ReadyStrip
+          studentId={identity?.student}
+          num={l.num}
+          answered={doneCount}
+          total={totalGradeable}
+          acc={firstTryAccuracy}
+        />
 
         {l.teacherGuide && <TeacherGuide g={l.teacherGuide} />}
 
@@ -220,6 +229,16 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
             </button>
           </div>
         )}
+
+        {/* Handoff para a aula particular: declaração do aluno + evidência do que
+            praticou. Não conclui a lição — quem conclui é o exercício. */}
+        <ReadyForClass
+          studentId={identity?.student}
+          num={l.num}
+          answered={doneCount}
+          total={totalGradeable}
+          acc={firstTryAccuracy}
+        />
 
         {/* Nav */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, marginTop: 30, flexWrap: 'wrap' }}>

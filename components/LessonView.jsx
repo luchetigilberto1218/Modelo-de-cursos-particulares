@@ -9,6 +9,7 @@ import SpeakingExercise from './SpeakingExercise';
 import Icon from './Icon';
 import { useIdentity, useLessonDone } from './czarnikow-teste/progress';
 import CztLesson from './czarnikow-teste/CztLesson';
+import ReadyForClass, { ReadyStrip } from './czarnikow-teste/ReadyForClass';
 import { isCzarnikow } from '../lib/czarnikow';
 
 function stripHtml(html) {
@@ -178,6 +179,15 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
 
       {/* Lesson body */}
       <div className="lesson-body">
+
+        {cztProgress && (
+          <ReadyStrip
+            studentId={cztIdentity?.student}
+            num={l.num}
+            answered={cztGradeableIdx.filter((i) => cztAnswered[i]).length}
+            total={cztGradeableIdx.length}
+          />
+        )}
 
         {/* Teacher Guide — collapsed by default, click to expand */}
         {l.teacherGuide && (
@@ -940,6 +950,17 @@ export default function LessonView({ lesson, lessonIndex, totalLessons, clientId
               </>
             )}
           </div>
+        )}
+
+        {/* Handoff para a aula particular (Czarnikow). Sinal SEPARADO da conclusão:
+            declara que o aluno estudou e leva a evidência ao painel do professor. */}
+        {cztProgress && (
+          <ReadyForClass
+            studentId={cztIdentity?.student}
+            num={l.num}
+            answered={cztGradeableIdx.filter((i) => cztAnswered[i]).length}
+            total={cztGradeableIdx.length}
+          />
         )}
 
         {/* Bottom nav */}
