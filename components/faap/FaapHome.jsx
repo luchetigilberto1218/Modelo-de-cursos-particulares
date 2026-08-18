@@ -25,9 +25,9 @@ import AluExplica from './AluExplica';
 const EXPLICA = {
   titulo: 'Bem-vindo ao seu inglês na FAAP.',
   paragrafos: [
-    'Este material é seu, para abrir na hora que der. Não é aula: é a fonte que você consulta quando precisa resolver alguma coisa em inglês no trabalho.',
+    'Este material é seu, para abrir na hora que der. Não é uma aula. É a fonte que você consulta quando precisa resolver alguma coisa em inglês no trabalho.',
     'As instruções estão todas em português. O que está em inglês tem botão de tradução do lado, e todo áudio tem transcript.',
-    'Comece pela FAAP, siga para a sua trilha — Comercial ou Atendimento — e, quando quiser respirar, a área livre está logo abaixo.',
+    'Comece pela FAAP e siga para a sua trilha, Comercial ou Atendimento. Quando quiser respirar, a área livre está logo abaixo.',
   ],
 };
 
@@ -58,8 +58,9 @@ export default function FaapHome({ course, theme, clientId, student, role }) {
     <div style={{ minHeight: '100vh', background: offWhite, color: text, fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", WebkitFontSmoothing: 'antialiased' }}>
 
       <style>{`
-        .hub-card:hover { transform: translateY(-3px); border-color: rgba(255,61,195,0.85) !important;
-          box-shadow: 0 15px 40px rgba(0,0,0,0.4), 0 0 30px rgba(255,61,195,0.15); text-decoration: none; }
+        .hub-card { --hub-accent: #ff3dc3; }
+        .hub-card:hover { transform: translateY(-3px); border-color: var(--hub-accent) !important;
+          box-shadow: 0 15px 40px rgba(0,0,0,0.4), 0 0 30px color-mix(in srgb, var(--hub-accent) 25%, transparent); text-decoration: none; }
       `}</style>
 
       {/* Chrome */}
@@ -119,10 +120,19 @@ export default function FaapHome({ course, theme, clientId, student, role }) {
         />
 
         <DarkGroup
-          kicker="Fora do expediente"
-          title="A área livre"
-          lead="Mesmos exercícios, mesma mecânica — assunto seu. É como atravessar para outro pavilhão da mesma feira: muda o cenário, não muda a regra do jogo."
-          tracks={byGroup('livre')} {...{ c, clientId, lessons, doneMap }}
+          kicker="◉ Fora do expediente"
+          title="Pop Culture"
+          lead="Inglês pela cultura que você consome. Mesmos exercícios, mesma mecânica — assunto seu."
+          accent="#ff3dc3" accent2="#00e5ff" bg="#0a0612"
+          tracks={byGroup('popculture')} {...{ clientId, lessons, doneMap }}
+        />
+
+        <DarkGroup
+          kicker="◉ Fora do expediente"
+          title="Mind & Body"
+          lead="Equilíbrio, esporte e cuidado — o inglês do que você faz quando sai daqui."
+          accent="#a855f7" accent2="#bef264" bg="#0b0618"
+          tracks={byGroup('mindbody')} {...{ clientId, lessons, doneMap }}
         />
 
         <div style={{ marginTop: 40, padding: '20px 22px', borderRadius: 14, background: '#fff', border: `1px solid ${grayLight}`, fontSize: 13.5, color: gray, lineHeight: 1.6 }}>
@@ -156,34 +166,34 @@ function Group({ kicker, title, lead, tracks, c, clientId, lessons, doneMap }) {
 /* A área livre é outro pavilhão da mesma feira — e o pavilhão é o FAAP English
    Hub. Fundo #0a0612, glow do accent, cards com capa e borda que acende no
    hover: as mesmas peças do hub, com as mesmas cores. */
-function DarkGroup({ kicker, title, lead, tracks, c, clientId, lessons, doneMap }) {
+function DarkGroup({ kicker, title, lead, tracks, clientId, lessons, doneMap, accent = '#ff3dc3', accent2 = '#00e5ff', bg = '#0a0612' }) {
   if (!tracks.length) return null;
   return (
-    <section style={{ position: 'relative', marginTop: 48, background: '#0a0612', borderRadius: 24, padding: '46px 30px 40px', color: '#f5eeff', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'linear-gradient(90deg, #ff3dc3, #9d4edd 50%, #00e5ff)' }} />
-      <div style={{ position: 'absolute', top: '-40%', left: '50%', transform: 'translateX(-50%)', width: 900, height: 900, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,61,195,0.16) 0%, transparent 55%)', filter: 'blur(50px)', pointerEvents: 'none' }} />
+    <section style={{ position: 'relative', marginTop: 48, background: bg, borderRadius: 24, padding: '46px 30px 40px', color: '#f5eeff', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: `linear-gradient(90deg, ${accent}, #9d4edd 50%, ${accent2})` }} />
+      <div style={{ position: 'absolute', top: '-40%', left: '50%', transform: 'translateX(-50%)', width: 900, height: 900, borderRadius: '50%', background: `radial-gradient(circle, ${accent}29 0%, transparent 55%)`, filter: 'blur(50px)', pointerEvents: 'none' }} />
       <div style={{ position: 'relative' }}>
-        <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '4px 10px', borderRadius: 999, background: 'rgba(255,61,195,0.15)', color: '#ff3dc3', border: '1px solid rgba(255,61,195,0.3)' }}>
+        <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '4px 10px', borderRadius: 999, background: `${accent}26`, color: accent, border: `1px solid ${accent}4d` }}>
           {kicker}
         </span>
         <h2 style={{ margin: '14px 0 8px', fontSize: 'clamp(24px, 4vw, 38px)', fontWeight: 800, letterSpacing: -0.7, color: '#f5eeff' }}>{title}</h2>
         <p style={{ margin: '0 0 26px', fontSize: 15, lineHeight: 1.6, color: '#f5eeff8c', maxWidth: 660 }}>{lead}</p>
         <div style={{ display: 'grid', gap: 22, gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
-          {tracks.map((t) => <HubCard key={t.id} track={t} clientId={clientId} lessons={lessons} doneMap={doneMap} />)}
+          {tracks.map((t) => <HubCard key={t.id} track={t} clientId={clientId} lessons={lessons} doneMap={doneMap} accent={accent} />)}
         </div>
       </div>
     </section>
   );
 }
 
-function HubCard({ track, clientId, lessons, doneMap }) {
-  const accent = track.palette?.accent || '#ff3dc3';
+function HubCard({ track, clientId, lessons, doneMap, accent: fallback }) {
+  const accent = track.palette?.accent || fallback || '#ff3dc3';
   const mine = lessons.filter((l) => l.track === track.id);
   const done = mine.filter((l) => doneMap[l.num]).length;
   const href = `/${clientId}/level/${track.level || 'essentials'}/track/${track.id}`;
 
   return (
-    <Link href={href} className="hub-card" style={{ display: 'flex', flexDirection: 'column', textDecoration: 'none', borderRadius: 16, border: '1px solid rgba(255,255,255,0.12)', overflow: 'hidden', background: 'rgba(255,255,255,0.04)', color: '#f5eeff', transition: 'all 0.25s ease' }}>
+    <Link href={href} className="hub-card" style={{ '--hub-accent': accent, display: 'flex', flexDirection: 'column', textDecoration: 'none', borderRadius: 16, border: '1px solid rgba(255,255,255,0.12)', overflow: 'hidden', background: 'rgba(255,255,255,0.04)', color: '#f5eeff', transition: 'all 0.25s ease' }}>
       <div style={{ height: 150, backgroundImage: `url('${track.image}')`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,6,18,0) 0%, rgba(10,6,18,0.75) 100%)' }} />
       </div>

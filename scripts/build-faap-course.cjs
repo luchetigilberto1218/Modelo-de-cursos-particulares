@@ -18,8 +18,8 @@ const tracks = require(path.join(DATA, 'tracks.cjs'));
 const lessons = [];
 let num = 100;
 for (const t of tracks) {
-  const file = path.join(DATA, `${t.id}.cjs`);
-  if (!fs.existsSync(file)) {
+  const file = [path.join(DATA, `${t.id}.cjs`), path.join(DATA, 'livre', `${t.id}.cjs`)].find(fs.existsSync);
+  if (!file) {
     console.warn(`  ! trilha "${t.id}" ainda sem arquivo de lições — pulando`);
     continue;
   }
@@ -34,6 +34,7 @@ for (const t of tracks) {
       levelLabel: t.levelLabel || t.name,
       trackLabel: t.name,
       character: l.character || 'us-female',
+      difficulty: l.difficulty || undefined,
       objectiveLabel: 'Objetivo desta lição',
       practiceLabel: 'Practice · pratique sozinho',
       ...l,

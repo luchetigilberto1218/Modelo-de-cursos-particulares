@@ -1,0 +1,462 @@
+/* Pop Culture · Geek — ficção científica, jogos e o inglês que veio com eles. */
+module.exports = [
+
+{
+  title: 'Star Wars — A Space Opera Saga',
+  focus: 'Sequência narrativa: first, then, finally',
+  difficulty: 'Básico',
+  character: 'us-male',
+  image: '/faapatendimento/img/livre/foto/geek.jpg',
+  imageCaption: 'A saga mais recontada da história — e a mais fácil de recontar.',
+  objective: 'Recontar uma história em inglês na ordem certa, usando os conectores de sequência que organizam qualquer narrativa.',
+  intro: [
+    'Everyone has told the plot of <em>Star Wars</em> to someone. It is the easiest story in the world to summarise: a farm boy, a message, a war, a father.',
+    'Summarising is a skill, and it has three words at its centre: <strong>first</strong>, <strong>then</strong>, <strong>finally</strong>.',
+  ],
+  introPt: [
+    'Todo mundo já contou o enredo de <em>Star Wars</em> para alguém. É a história mais fácil do mundo de resumir: um garoto de fazenda, uma mensagem, uma guerra, um pai.',
+    'Resumir é uma habilidade, e ela tem três palavras no centro: <strong>first</strong>, <strong>then</strong>, <strong>finally</strong>.',
+  ],
+  vocab: [
+    { en: 'first / then / finally', pt: 'primeiro / depois / por fim', example: 'First he leaves home, then he joins the rebels.' },
+    { en: 'to turn out', pt: 'revelar-se, acabar sendo', example: 'It turns out he is his father.' },
+    { en: 'a twist', pt: 'uma reviravolta', example: 'That twist changed everything.' },
+    { en: 'to take place', pt: 'acontecer, passar-se', example: 'The story takes place in space.' },
+    { en: 'in the end', pt: 'no fim das contas', example: 'In the end, he saves everyone.' },
+  ],
+  exercises: [
+    {
+      type: 'orderList',
+      title: 'A saga em ordem',
+      badge: 'Coloque em ordem',
+      instruction: 'Clique nas frases na ordem em que os fatos acontecem.',
+      items: [
+        'First, a farm boy finds a message hidden inside a robot.',
+        'Then he leaves his planet with an old knight and two smugglers.',
+        'They rescue a princess and destroy a giant weapon.',
+        'Later, the boy learns that the villain is his own father.',
+        'In the end, the father saves his son and the empire falls.',
+      ],
+      explanation: 'First → then → later → in the end. Quatro conectores e a saga inteira está contada.',
+    },
+    {
+      type: 'dropdownGap',
+      title: 'Complete o resumo',
+      badge: 'Complete o texto',
+      instruction: 'Escolha o conector certo em cada lacuna.',
+      text: 'The story ___ place a long time ago, in another galaxy. ___ , a farm boy finds a hidden message. ___ he leaves home to become a pilot. ___ the film, he learns that the villain is his father — the biggest ___ in cinema history.',
+      gaps: [
+        { options: ['takes', 'makes', 'happens'], answer: 'takes', why: '<strong>to take place</strong> = acontecer, passar-se. Expressão fixa.' },
+        { options: ['First', 'One', 'At first'], answer: 'First', why: '<strong>First</strong> abre a sequência. "At first" quer dizer "no começo, mas depois mudou".' },
+        { options: ['Then', 'After', 'Later of'], answer: 'Then', why: '<strong>Then</strong> é o passo seguinte.' },
+        { options: ['Halfway through', 'In the half of', 'At the middle'], answer: 'Halfway through', why: '<strong>halfway through</strong> = na metade de.' },
+        { options: ['twist', 'turn', 'curve'], answer: 'twist', why: 'Reviravolta é <strong>twist</strong>.' },
+      ],
+      explanation: 'Esse parágrafo é o modelo para resumir qualquer filme em inglês.',
+    },
+    {
+      type: 'dialogue',
+      title: 'Explicando a ordem dos filmes',
+      badge: 'Diálogo',
+      scene: 'Alguém quer assistir e não sabe por onde começar.',
+      lines: [
+        { who: 'Friend', voice: 'us-female', en: 'I want to watch Star Wars but there are nine films. Where do I start?', pt: 'Quero assistir Star Wars mas são nove filmes. Por onde começo?' },
+        { who: 'You', voice: 'us-male', en: 'Start with the one from 1977. It was made first, even though the story is not first.', pt: 'Comece pelo de 1977. Ele foi feito primeiro, mesmo que a história não seja a primeira.' },
+        { who: 'Friend', voice: 'us-female', en: 'That is confusing.', pt: 'Isso é confuso.' },
+        { who: 'You', voice: 'us-male', en: 'It is. But the big twist only works if you watch it in that order.', pt: 'É. Mas a grande reviravolta só funciona se você assistir nessa ordem.' },
+        { who: 'Friend', voice: 'us-female', en: 'Fine. And then?', pt: 'Está bem. E depois?' },
+        { who: 'You', voice: 'us-male', en: 'Then the next two, and finally the rest — if you still want to.', pt: 'Depois os dois seguintes e, por fim, o resto — se você ainda quiser.' },
+      ],
+      questions: [
+        {
+          q: 'Why does he recommend the 1977 film first?',
+          options: [
+            { text: 'Because the twist only works in that order.', correct: true },
+            { text: 'Because it is the first in the story.' },
+            { text: 'Because it is the shortest.' },
+          ],
+          why: 'Recomendação com motivo é o que faz alguém seguir o conselho.',
+        },
+        {
+          q: 'What does "if you still want to" add?',
+          options: [
+            { text: 'It leaves the choice with the other person.', correct: true },
+            { text: 'It says the rest is bad.' },
+            { text: 'It ends the conversation.' },
+          ],
+          why: 'Devolver a escolha é sempre mais elegante que impor uma lista.',
+        },
+      ],
+      explanation: 'Repare no uso de first, then e finally organizando uma recomendação inteira.',
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can summarise a film with first, then and finally.', pt: 'Sei resumir um filme com first, then e finally.' },
+        { en: 'I say "the story takes place in…".', pt: 'Digo "the story takes place in…".' },
+        { en: 'I know that "at first" means something different from "first".', pt: 'Sei que "at first" significa algo diferente de "first".' },
+        { en: 'I can recommend an order with a reason.', pt: 'Sei recomendar uma ordem com um motivo.' },
+      ],
+      doneMessage: 'sequência dominada. A próxima lição é sobre sobreviver.',
+      openMessage: 'o resumo com lacunas é o modelo. Copie a estrutura para outro filme.',
+    },
+  ],
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Contar história em inglês',
+    intro: 'Três conectores e um aviso.',
+    cards: [
+      { en: '"At first" is not the same as "first". "At first I hated it" means the opinion changed later; "First, watch this one" is a sequence.', pt: '"At first" não é o mesmo que "first". "At first I hated it" quer dizer que a opinião mudou depois; "First, watch this one" é uma sequência.' },
+      { en: '"To take place" is the standard verb for where and when a story happens. "The story happens in space" works, but "takes place" is what people say.', pt: '"To take place" é o verbo padrão para onde e quando uma história se passa. "The story happens in space" funciona, mas "takes place" é o que se diz.' },
+      { en: 'A summary in English usually runs present tense, even for old films: "he finds a message", not "he found a message".', pt: 'Um resumo em inglês normalmente vai no presente, mesmo para filmes antigos: "he finds a message", não "he found a message".' },
+    ],
+  },
+  takeaways: [
+    'The story takes place a long time ago, in another galaxy.',
+    'First he finds a message, then he leaves home.',
+    'In the end, the father saves his son.',
+  ],
+  celebrate: {
+    en: 'Nine films summarised in five sentences.',
+    pt: 'Nove filmes resumidos em cinco frases.',
+  },
+},
+
+{
+  title: 'The Last of Us — Survival Vocabulary',
+  focus: 'Instruções e vocabulário de urgência',
+  difficulty: 'Iniciante',
+  character: 'us-female',
+  image: '/faapatendimento/img/livre/foto/geek.jpg',
+  imageCaption: 'Um jogo — e depois uma série — em que cada frase é uma instrução.',
+  objective: 'Entender e dar instruções de urgência em inglês, e reconhecer o vocabulário de sobrevivência que aparece em todo jogo e toda série do gênero.',
+  intro: [
+    '<em>The Last of Us</em> is a game that became a series: two people crossing a ruined country. Almost every line is either an instruction or a warning.',
+    'That makes it a good place to learn two things at once: <strong>imperative for instructions</strong> and the vocabulary of scarcity — <em>supplies</em>, <em>shelter</em>, <em>ammo</em>, <em>safe</em>.',
+  ],
+  introPt: [
+    '<em>The Last of Us</em> é um jogo que virou série: duas pessoas atravessando um país em ruínas. Quase toda fala é uma instrução ou um aviso.',
+    'Isso faz dele um bom lugar para aprender duas coisas de uma vez: <strong>imperativo para instruções</strong> e o vocabulário da escassez — <em>supplies</em>, <em>shelter</em>, <em>ammo</em>, <em>safe</em>.',
+  ],
+  vocab: [
+    { en: 'supplies', pt: 'suprimentos', example: 'We are running low on supplies.' },
+    { en: 'shelter', pt: 'abrigo', example: 'We need to find shelter before dark.' },
+    { en: 'to run out of', pt: 'ficar sem', example: 'We ran out of water.' },
+    { en: 'to keep an eye on', pt: 'ficar de olho em', example: 'Keep an eye on the door.' },
+    { en: 'to be safe', pt: 'estar seguro', example: 'We are safe here for tonight.' },
+  ],
+  exercises: [
+    {
+      type: 'wordBank',
+      title: 'A noite no abrigo',
+      instruction: 'Complete com o banco de palavras.',
+      bank: ['supplies', 'shelter', 'ran', 'eye', 'safe'],
+      items: [
+        { text: 'We need to find ___ before it gets dark.', answer: 'shelter' },
+        { text: 'We are running low on ___ .', answer: 'supplies' },
+        { text: 'We ___ out of water yesterday.', answer: 'ran' },
+        { text: 'Keep an ___ on that door.', answer: 'eye' },
+        { text: 'We are ___ here for tonight.', answer: 'safe' },
+      ],
+      explanation: 'Cinco frases e você atravessa qualquer jogo do gênero — ou explica uma emergência de verdade.',
+    },
+    {
+      type: 'serialChoice',
+      title: 'A instrução certa na hora certa',
+      badge: 'Escolha certa',
+      instruction: 'Situação de urgência. Escolha a frase que se usaria.',
+      items: [
+        { prompt: 'Você quer que alguém fique parado e em silêncio.', options: [{ text: 'Stay down and keep quiet.', correct: true }, { text: 'You stay down and you keep quiet.' }, { text: 'To stay down, please.' }], why: 'Imperativo, sem sujeito, duas ordens numa frase.' },
+        { prompt: 'Você quer avisar de um perigo.', options: [{ text: 'Watch out — behind you!', correct: true }, { text: 'Look the danger behind.' }, { text: 'Attention behind of you.' }], why: '<strong>Watch out</strong> é o aviso padrão de perigo imediato.' },
+        { prompt: 'Você quer que a pessoa espere.', options: [{ text: 'Hold on. Do not move yet.', correct: true }, { text: 'Hold you. No move.' }, { text: 'Wait yourself there.' }], why: '<strong>Hold on</strong> + <strong>do not</strong> + verbo.' },
+      ],
+      explanation: 'Em urgência, o inglês corta o sujeito e vai direto ao verbo. Sempre.',
+    },
+    {
+      type: 'listenChoose',
+      title: 'Ouça o aviso',
+      badge: 'Ouça e escolha',
+      instruction: 'Aviso é dito rápido e baixo. Ouça — o transcript está aí.',
+      items: [
+        {
+          audio: 'We are running low on supplies. We need to find shelter before dark.',
+          pt: 'Estamos ficando sem suprimentos. Precisamos achar abrigo antes de escurecer.',
+          options: [
+            { text: 'Low on supplies, need shelter before dark.', correct: true },
+            { text: 'Plenty of supplies, shelter already found.' },
+            { text: 'They are leaving in the morning.' },
+          ],
+          why: '<em>to run low on</em> = estar acabando. <em>to run out of</em> = já acabou.',
+        },
+        {
+          audio: 'Stay down, keep quiet, and do not move until I say so.',
+          pt: 'Fique abaixado, fique quieto e não se mexa até eu falar.',
+          options: [
+            { text: 'Three instructions: down, quiet, still.', correct: true },
+            { text: 'Run as fast as you can.' },
+            { text: 'Talk to them first.' },
+          ],
+          why: 'Três imperativos numa frase só — é assim que se fala sob pressão.',
+        },
+      ],
+      explanation: '"Until I say so" é a fórmula para "até eu mandar". Guarde essa.',
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can give an urgent instruction in the imperative.', pt: 'Sei dar uma instrução urgente no imperativo.' },
+        { en: 'I know supplies, shelter and to run out of.', pt: 'Conheço supplies, shelter e to run out of.' },
+        { en: 'I know the difference between run low on and run out of.', pt: 'Sei a diferença entre run low on e run out of.' },
+        { en: 'I can say "keep an eye on that".', pt: 'Sei dizer "keep an eye on that".' },
+      ],
+      doneMessage: 'sobrevivência resolvida. A próxima lição é sobre escolher.',
+      openMessage: 'os avisos em áudio são o melhor treino aqui. Ouça de novo sem o transcript.',
+    },
+  ],
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'O inglês da urgência',
+    intro: 'Três padrões que valem fora do jogo também.',
+    cards: [
+      { en: 'In an emergency, English drops everything that is not essential: no subject, no politeness markers, no articles. "Down! Now!" is a complete sentence.', pt: 'Numa emergência, o inglês corta tudo o que não é essencial: sem sujeito, sem marcas de educação, sem artigos. "Down! Now!" é uma frase completa.' },
+      { en: '"Run low on" means it is nearly gone; "run out of" means it is already gone. One word of difference, and a very different day.', pt: '"Run low on" quer dizer que está acabando; "run out of" quer dizer que já acabou. Uma palavra de diferença, e um dia bem diferente.' },
+      { en: 'Video games are excellent listening practice because the same instructions repeat until you get them right — which is exactly how learning works.', pt: 'Videogame é ótimo treino de escuta porque as mesmas instruções se repetem até você acertar — que é exatamente como o aprendizado funciona.' },
+    ],
+  },
+  takeaways: [
+    'We are running low on supplies.',
+    'Stay down and keep quiet.',
+    'Keep an eye on that door.',
+  ],
+  celebrate: {
+    en: 'You can now handle an emergency in English. Hopefully a fictional one.',
+    pt: 'Você já resolve uma emergência em inglês. De preferência uma fictícia.',
+  },
+},
+
+{
+  title: 'Cyberpunk and RPGs — Choices and Consequences',
+  focus: 'Condicionais e escolha',
+  difficulty: 'Intermediário',
+  character: 'gb-female',
+  image: '/faapatendimento/img/livre/foto/geek.jpg',
+  imageCaption: 'Em RPG, toda fala é uma escolha — e toda escolha tem consequência.',
+  objective: 'Falar de escolhas e consequências em inglês — a estrutura "se eu fizer isso, acontece aquilo" — usando os dois tipos de condicional mais úteis.',
+  intro: [
+    'In a role-playing game the screen constantly asks you to choose, and every choice changes what happens next. That is a conditional sentence, rendered as gameplay.',
+    'Two structures cover almost everything: <strong>if + present → will</strong> for what can happen, and <strong>if + past → would</strong> for what would happen in another life.',
+  ],
+  introPt: [
+    'Num RPG a tela pede que você escolha o tempo todo, e cada escolha muda o que vem depois. Isso é uma frase condicional, transformada em jogo.',
+    'Duas estruturas cobrem quase tudo: <strong>if + presente → will</strong> para o que pode acontecer, e <strong>if + passado → would</strong> para o que aconteceria em outra vida.',
+  ],
+  vocab: [
+    { en: 'a choice', pt: 'uma escolha', example: 'That was a hard choice.' },
+    { en: 'consequences', pt: 'consequências', example: 'Every choice has consequences.' },
+    { en: 'to level up', pt: 'subir de nível', example: 'You level up after that mission.' },
+    { en: 'a side quest', pt: 'missão secundária', example: 'I got lost in a side quest.' },
+    { en: 'to be worth it', pt: 'valer a pena', example: 'The ending is worth it.' },
+  ],
+  exercises: [
+    {
+      type: 'dropdownGap',
+      title: 'Complete as consequências',
+      badge: 'Complete o texto',
+      instruction: 'Escolha a forma certa. Duas frases falam do possível, duas do impossível.',
+      text: 'If you help the stranger, you ___ a new ally. If you ignore him, the story ___ in a different direction. If I ___ starting the game today, I would take the other path. And if the ending ___ different, people would still argue about it.',
+      gaps: [
+        { options: ['will get', 'would get', 'get'], answer: 'will get', why: 'Condição possível: if + presente → <strong>will</strong>.' },
+        { options: ['goes', 'would go', 'went'], answer: 'goes', why: 'Condição possível, presente nos dois lados também funciona.' },
+        { options: ['were', 'was', 'am'], answer: 'were', why: 'Condição irreal: <strong>if I were</strong>.' },
+        { options: ['were', 'is', 'will be'], answer: 'were', why: 'Irreal de novo: <strong>if the ending were different</strong>.' },
+      ],
+      explanation: 'Possível: if + presente → will. Impossível ou imaginário: if + passado → would.',
+    },
+    {
+      type: 'flowChoice',
+      title: 'A conversa que muda o jogo',
+      badge: 'Conversa',
+      situation: 'Você conversa com um personagem que pede ajuda. Cada resposta muda o que acontece depois.',
+      turns: [
+        {
+          who: 'Stranger',
+          them: 'You look like someone who can handle trouble. Help me and I will make it worth your while.',
+          options: [
+            { text: 'If you tell me what the job is, I will consider it.', correct: true, why: 'Condicional possível, e você não se compromete antes de saber.' },
+            { text: 'If you would tell me the job, I will consider.', why: '"If you would" não se usa numa condicional simples.' },
+            { text: 'I will help if you would pay me first.', why: 'Mistura os dois tipos de condicional. Escolha um.' },
+          ],
+        },
+        {
+          who: 'Stranger',
+          them: 'Someone took something of mine. I want it back. No questions.',
+          options: [
+            { text: 'If I did that for everyone who asked, I would not last a week here.', correct: true, why: 'Condicional irreal para recusar sem fechar a porta. Elegante.' },
+            { text: 'If I do that for everyone, I would not last.', why: 'Metade presente, metade would. Não combina.' },
+            { text: 'I will not do it never.', why: 'Negativa dupla — e o inglês não aceita.' },
+          ],
+        },
+        {
+          who: 'Stranger',
+          them: 'Then name your price.',
+          options: [
+            { text: 'If the pay is good and the job is legal, we can talk.', correct: true, why: 'Duas condições possíveis numa frase só. É assim que se negocia.' },
+            { text: 'If the pay would be good, we can talk.', why: 'Depois de "if" não entra "would" numa condicional normal.' },
+            { text: 'The pay will be good and we talk.', why: 'Sem condição, você já aceitou.' },
+          ],
+        },
+      ],
+      explanation: 'Repare: você aceitou, recusou e negociou usando só condicionais.',
+    },
+    {
+      type: 'trueFalse',
+      title: 'Verdadeiro ou falso?',
+      instruction: 'Sobre condicionais.',
+      items: [
+        { text: 'You can put "will" right after "if" in a normal conditional.', answer: false, why: '"If it rains", nunca "if it will rain".' },
+        { text: '"If I were you" is correct even in the first person singular.', answer: true, why: 'É o subjuntivo, e sobrevive justamente aí.' },
+        { text: 'Mixing "if + present" with "would" is normal.', answer: false, why: 'Escolha um par: presente→will, ou passado→would.' },
+        { text: '"Every choice has consequences" is present simple.', answer: true, why: 'Verdade geral vai no presente simples.' },
+      ],
+      explanation: 'Um par de cada vez. Misturar é o erro mais comum aqui.',
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can use if + present → will.', pt: 'Sei usar if + presente → will.' },
+        { en: 'I can use if + past → would.', pt: 'Sei usar if + passado → would.' },
+        { en: 'I do not mix the two halves.', pt: 'Não misturo as duas metades.' },
+        { en: 'I can refuse something with a conditional.', pt: 'Sei recusar algo usando uma condicional.' },
+      ],
+      doneMessage: 'escolhas e consequências resolvidas. Falta uma lição para fechar a trilha.',
+      openMessage: 'a conversa em três turnos é o melhor exercício. Refaça ela.',
+    },
+  ],
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Condicionais no jogo e na vida',
+    intro: 'Três usos que valem numa reunião.',
+    cards: [
+      { en: '"If I did that for everyone, I would not last a week" is a refusal that does not offend anyone. It works in games and in negotiations.', pt: '"If I did that for everyone, I would not last a week" é uma recusa que não ofende ninguém. Funciona em jogo e em negociação.' },
+      { en: 'Conditionals are how English negotiates: "if you can do X, we can do Y". Learning them is learning to make a deal.', pt: 'Condicionais são como o inglês negocia: "if you can do X, we can do Y". Aprendê-las é aprender a fechar acordo.' },
+      { en: '"Side quest" has escaped the game world. People now say a task became a side quest when it ate their afternoon.', pt: '"Side quest" escapou do mundo dos jogos. As pessoas hoje dizem que uma tarefa virou uma side quest quando ela comeu a tarde delas.' },
+    ],
+  },
+  takeaways: [
+    'If you tell me what the job is, I will consider it.',
+    'If I did that for everyone, I would not last a week.',
+    'Every choice has consequences.',
+  ],
+  celebrate: {
+    en: 'You just negotiated in English using nothing but "if".',
+    pt: 'Você acabou de negociar em inglês usando só "if".',
+  },
+},
+
+{
+  title: 'Dungeons & Dragons — Rolling for It',
+  focus: 'Probabilidade e improviso',
+  difficulty: 'Intermediário',
+  character: 'us-male',
+  image: '/faapatendimento/img/livre/foto/geek.jpg',
+  imageCaption: 'Um jogo em que tudo é falado — e nada está escrito.',
+  objective: 'Falar de chance e probabilidade em inglês, e improvisar uma narração — as duas coisas que um jogo de mesa exige o tempo todo.',
+  intro: [
+    'In <em>Dungeons &amp; Dragons</em> nothing exists on a screen. One person describes a world out loud, everyone else answers, and a die decides who is right.',
+    'It is, by accident, the best speaking exercise ever invented: you have to <strong>describe</strong>, <strong>decide</strong> and <strong>talk about chance</strong>, all in real time.',
+  ],
+  introPt: [
+    'Em <em>Dungeons &amp; Dragons</em> nada existe numa tela. Uma pessoa descreve um mundo em voz alta, os outros respondem, e um dado decide quem tem razão.',
+    'É, por acidente, o melhor exercício de fala já inventado: você precisa <strong>descrever</strong>, <strong>decidir</strong> e <strong>falar de chance</strong>, tudo em tempo real.',
+  ],
+  vocab: [
+    { en: 'to roll (a die)', pt: 'rolar (um dado)', example: 'Roll for it.' },
+    { en: 'odds', pt: 'chances, probabilidade', example: 'The odds are not great.' },
+    { en: 'likely / unlikely', pt: 'provável / improvável', example: 'That is unlikely to work.' },
+    { en: 'to give it a shot', pt: 'tentar', example: 'Let us give it a shot.' },
+    { en: 'to make it up', pt: 'inventar na hora', example: 'He made the whole story up.' },
+  ],
+  exercises: [
+    {
+      type: 'categorize',
+      title: 'Qual é a chance?',
+      badge: 'Classifique',
+      instruction: 'Classifique cada frase pela probabilidade que ela expressa.',
+      categories: [
+        { id: 'alta', name: 'Provável', short: 'Provável' },
+        { id: 'media', name: 'Talvez', short: 'Talvez' },
+        { id: 'baixa', name: 'Improvável', short: 'Improvável' },
+      ],
+      items: [
+        { text: 'That is likely to work.', cat: 'alta' },
+        { text: 'There is a good chance we make it.', cat: 'alta' },
+        { text: 'It could go either way.', cat: 'media' },
+        { text: 'It might work, honestly I do not know.', cat: 'media' },
+        { text: 'The odds are not great.', cat: 'baixa' },
+        { text: 'That is very unlikely.', cat: 'baixa' },
+      ],
+      explanation: 'Likely, could go either way, unlikely. Três graus e você fala de chance com precisão.',
+    },
+    {
+      type: 'wordBank',
+      title: 'A mesa de jogo',
+      instruction: 'Complete com o banco de palavras.',
+      bank: ['roll', 'odds', 'unlikely', 'shot', 'up'],
+      items: [
+        { text: 'You want to jump the gap? ___ for it.', answer: 'roll' },
+        { text: 'The ___ are not great, but it is possible.', answer: 'odds' },
+        { text: 'That plan is ___ to work.', answer: 'unlikely' },
+        { text: 'Let us give it a ___ anyway.', answer: 'shot' },
+        { text: 'He made the whole story ___ on the spot.', answer: 'up' },
+      ],
+      explanation: 'Cinco expressões que servem para jogo, para reunião e para plano de fim de semana.',
+    },
+    {
+      type: 'swipeChoice',
+      title: 'Como um falante nativo diria',
+      badge: 'A ou B',
+      instruction: 'As duas se entendem. Escolha a que soa natural.',
+      items: [
+        { prompt: 'As chances são pequenas.', a: 'The chances are little.', b: 'The odds are not great.', correct: 'b', why: 'Chance pequena é <strong>odds are not great</strong> ou "slim chance". "Little chances" não se usa.' },
+        { prompt: 'Vamos tentar mesmo assim.', a: 'Let us try the same.', b: 'Let us give it a shot anyway.', correct: 'b', why: '"Mesmo assim" é <strong>anyway</strong>, nunca "the same".' },
+        { prompt: 'Pode dar certo ou não.', a: 'It can be right or not.', b: 'It could go either way.', correct: 'b', why: '<strong>either way</strong> é a expressão exata para "dos dois jeitos".' },
+      ],
+      explanation: 'Três expressões fixas. Traduzidas ao pé da letra, nenhuma funciona.',
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar a trilha',
+      items: [
+        { en: 'I can say something is likely or unlikely.', pt: 'Sei dizer que algo é provável ou improvável.' },
+        { en: 'I can say "the odds are not great".', pt: 'Sei dizer "the odds are not great".' },
+        { en: 'I can say "let us give it a shot".', pt: 'Sei dizer "let us give it a shot".' },
+        { en: 'I know "it could go either way".', pt: 'Conheço "it could go either way".' },
+      ],
+      doneMessage: 'trilha geek concluída — e com ela, Pop Culture inteira. Mind & Body está logo abaixo na home.',
+      openMessage: 'a classificação por probabilidade é o coração da lição.',
+    },
+  ],
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Falar de chance',
+    intro: 'Três expressões que aparecem em reunião também.',
+    cards: [
+      { en: '"The odds are not great" is how a native speaker says something probably will not work — without saying no.', pt: '"The odds are not great" é como um falante nativo diz que algo provavelmente não vai dar certo — sem dizer não.' },
+      { en: '"It could go either way" is the most useful phrase in any uncertain meeting. It buys time and commits to nothing.', pt: '"It could go either way" é a expressão mais útil de qualquer reunião incerta. Ganha tempo e não compromete com nada.' },
+      { en: 'Tabletop games are used in language teaching precisely because they force improvised speech with no script and no screen.', pt: 'Jogos de mesa são usados no ensino de idiomas justamente porque forçam fala improvisada, sem roteiro e sem tela.' },
+    ],
+  },
+  takeaways: [
+    'The odds are not great, but it is possible.',
+    'Let us give it a shot anyway.',
+    'It could go either way.',
+  ],
+  celebrate: {
+    en: 'Pop Culture complete. Four topics, sixteen lessons, all yours.',
+    pt: 'Pop Culture concluída. Quatro tópicos, dezesseis lições, todas suas.',
+  },
+},
+];

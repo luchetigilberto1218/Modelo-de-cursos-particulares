@@ -33,7 +33,7 @@ export default function AluExplica({ c, texto, student }) {
     audioRef.current = a;
     a.onended = () => setPlaying(false);
     a.onerror = () => setPlaying(false);
-    a.src = `/api/tts?voice=pt-br-female&text=${encodeURIComponent(fala.slice(0, 3000))}`;
+    a.src = `/api/tts?voice=pt-br-multi&text=${encodeURIComponent(fala.slice(0, 3000))}`;
     a.play().catch(() => setPlaying(false));
   }, [playing, fala]);
 
