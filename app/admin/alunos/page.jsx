@@ -102,6 +102,8 @@ export default async function PainelCoordenacao() {
         <p style={{ color: '#9ca3af', margin: '0 0 28px', fontSize: 13 }}>
           Uma lição só conta como concluída quando o aluno termina os exercícios dela.
           Quem aparece sem nenhuma abriu o material mas não fechou nenhuma lição — ou não abriu.
+          Nos cursos com login, acesso da coordenação e dos professores deixou de entrar na conta
+          em 18/08/2026 — antes dessa data o número inclui as nossas próprias passadas pelo material.
           {' '}<Link href="/admin" style={{ color: '#2563eb' }}>Acessos por empresa →</Link>
         </p>
 
@@ -120,6 +122,9 @@ export default async function PainelCoordenacao() {
                 {c.licoes} {c.licoes === 1 ? 'lição concluída' : 'lições concluídas'}<br />
                 {c.acessos} {c.acessos === 1 ? 'acesso' : 'acessos'} em 30 dias
               </div>
+              {c.contagem && (
+                <div style={{ fontSize: 11.5, color: '#9ca3af', marginTop: 6, lineHeight: 1.45 }}>{c.contagem}</div>
+              )}
             </div>
           ))}
         </div>

@@ -19,6 +19,26 @@ const NOT_EMPRESA = new Set(['login', 'api', 'admin', '_next']);
 */
 const JANELA_MS = 30 * 60 * 1000;
 
+/*
+  Acesso da própria Alumni não é acesso da turma.
+
+  Nos cursos com login quem filtra é o servidor (app/api/hit/route.js só conta
+  sessão de aluno). A Racional não dá para filtrar lá: a senha dela é por aluno
+  e a checagem vive no navegador. O sinal que existe aqui é o modo professor —
+  quem está com ele ligado é professor ou é a coordenação abrindo o material
+  para conferir, e era isso que inflava o número da Racional.
+
+  A chave é a mesma que components/racional/access.js grava. Se ela mudar lá,
+  muda aqui: é o preço de o contador ser global e a porta da Racional ser local.
+*/
+function ehEquipeNaRacional() {
+  try {
+    return localStorage.getItem('rc-teacher-v1') === '1';
+  } catch {
+    return false;   // sem localStorage: conta, como antes
+  }
+}
+
 function jaContou(empresa) {
   try {
     const chave = `hit:${empresa}`;
@@ -41,6 +61,8 @@ export default function EmpresaTracker() {
     if (!pathname) return;
     const empresa = pathname.split('/').filter(Boolean)[0];
     if (!empresa || NOT_EMPRESA.has(empresa)) return;
+
+    if (empresa === 'racional' && ehEquipeNaRacional()) return;
 
     // contador próprio (grátis) — no máximo 1 por empresa a cada 30 min
     if (!jaContou(empresa)) {
