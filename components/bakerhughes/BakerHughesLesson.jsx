@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Exercise from '../Exercise';
-import AudioPlayer from '../AudioPlayer';
+import AudioPlayer, { AudioPrefs } from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
 import BhExercise, { BH_EXTRA_TYPES, BH_UNGRADED_TYPES } from './BhExercises';
 import { useIdentity, useLessonDone } from './progress';
@@ -98,7 +98,13 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
     return null;
   }
 
+  // Cursos que pedem `audio.preferServer` no tema tocam a voz neural do
+  // servidor em vez da voz embutida do aparelho — muito mais natural, e a
+  // mesma em qualquer navegador. Sem o campo, nada muda.
+  const audioPrefs = useMemo(() => ({ preferServer: !!theme?.audio?.preferServer }), [theme?.audio?.preferServer]);
+
   return (
+    <AudioPrefs.Provider value={audioPrefs}>
     <div style={{ minHeight: '100vh', background: offWhite, fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", color: text, WebkitFontSmoothing: 'antialiased' }}>
       {/* Chrome */}
       <div style={{ background: navy, color: '#fff' }}>
@@ -145,6 +151,15 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
           <Section navy={navy} accent={accent} letter="O" title={l.objectiveLabel || 'Objetivo da lição'} bg={accentLight} border="#B7E4C8">
             <p style={{ margin: 0, fontSize: 15.5, lineHeight: 1.65, color: '#20302D' }}>{l.objective}</p>
           </Section>
+        )}
+
+        {/* Aviso da lição (`l.disclaimer`). Existe porque exemplos com número
+            — valor, sala, horário, prazo — podem ser lidos como informação
+            oficial da instituição. Aditivo: lição sem o campo não muda. */}
+        {l.disclaimer && (
+          <div style={{ margin: '0 0 16px', padding: '12px 16px', borderRadius: 12, background: '#FFF9E6', border: '1px solid #F5D98B', fontSize: 13.5, lineHeight: 1.6, color: '#6B5310' }}>
+            <strong>Atenção:</strong> {l.disclaimer}
+          </div>
         )}
 
         {/* Introduction */}
@@ -274,6 +289,7 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
         </div>
       </div>
     </div>
+    </AudioPrefs.Provider>
   );
 }
 

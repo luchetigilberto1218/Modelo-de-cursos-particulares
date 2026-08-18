@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
 
 /**
  * AudioPlayer — instant Web Speech API (browser) with optional pre-generated MP3 fallback.
@@ -92,6 +92,14 @@ function effectiveVoiceType(voiceType, text) {
 
 // Resolve um MP3 pré-gerado (ex.: ElevenLabs) a partir de um manifesto global
 // opcional: window.__RC_AUDIO__ = { base, sep, manifest: { `${voiceType}${sep}${stripHtml(text)}`: 'rel/path.mp3' } }.
+/*
+  Preferências de áudio válidas para uma página inteira. Existe para um curso
+  inteiro poder pedir a voz neural do servidor sem passar `preferServer` em cada
+  um dos vinte AudioPlayer da tela. O default reproduz exatamente o
+  comportamento antigo, então nenhuma página que não usa o Provider muda.
+*/
+export const AudioPrefs = createContext({ preferServer: false });
+
 // Sem o global (ou sem entrada), retorna null e o player usa Web Speech.
 function resolveManifestUrl(voiceType, text) {
   if (typeof window === 'undefined') return null;
@@ -115,6 +123,10 @@ export default function AudioPlayer({
   // modelo de pronúncia bom. O MP3 fica no CDN, então repetir é instantâneo.
   preferServer = false,
 }) {
+  const prefs = useContext(AudioPrefs);
+  // A prop continua mandando; o contexto só entra quando ela não foi passada.
+  const wantServer = preferServer || !!prefs?.preferServer;
+
   const [state, setState] = useState('idle'); // 'idle' | 'playing' | 'paused' | 'unsupported'
   const [voices, setVoices] = useState([]);
   const audioRef = useRef(null);
@@ -171,7 +183,7 @@ export default function AudioPlayer({
     // rejeita o play() com AbortError ("interrupted by a new load request")
     // mesmo quando o áudio toca logo em seguida — confiar nessa rejeição fazia
     // a voz do aparelho entrar por cima da neural, as duas ao mesmo tempo.
-    if (preferServer) {
+    if (wantServer) {
       playViaApi(vt, () => {
         setTimeout(() => {
           const el = audioRef.current;

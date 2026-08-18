@@ -200,7 +200,7 @@ module.exports = [
       bank: ['match', 'kick-off', 'draw', 'scored', 'through'],
       items: [
         { text: 'Did you watch the ___ last night?', answer: 'match' },
-        { text: '___ was at four, so I missed the first half.', answer: 'kick-off' },
+        { text: 'The ___ was at four, so I missed the first half.', answer: 'kick-off' },
         { text: 'It ended in a ___ , which was fair.', answer: 'draw' },
         { text: 'He ___ in the ninetieth minute.', answer: 'scored' },
         { text: 'They are ___ to the semi-finals.', answer: 'through' },

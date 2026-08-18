@@ -607,7 +607,7 @@ module.exports = [
     intro: 'Nem todo inglês diz a mesma palavra.',
     cards: [
       { en: 'The British say "timetable", Americans say "schedule". Both understand the other, so pick one and stay with it.', pt: 'Os britânicos dizem "timetable", os americanos dizem "schedule". Os dois entendem o outro, então escolha um e mantenha.' },
-      { en: '"Transcript" is the universal word for a school record with grades. Every embassy and every university uses it.', pt: '"Transcript" é a palavra universal para histórico escolar com notas. Toda embaixada e toda universidade usa.' },
+      { en: '"Transcript" is the universal word for the school document that lists your grades. Every embassy and every university uses it.', pt: '"Transcript" é a palavra universal para histórico escolar com notas. Toda embaixada e toda universidade usa.' },
       { en: 'When a foreign student asks for a "certificate", ask what it is for. The document they need often has a different name here.', pt: 'Quando um aluno estrangeiro pede um "certificate", pergunte para que serve. O documento de que ele precisa costuma ter outro nome aqui.' },
     ],
   },
@@ -946,12 +946,12 @@ module.exports = [
   objective: 'Recusar um pedido de aluno em inglês de forma clara e humana, sempre com uma alternativa ou um próximo passo.',
   intro: [
     'Saying no to a student is harder than saying no to a partner school, because the student has nowhere else to go.',
-    'The structure is the same as always — <strong>soften, refuse clearly, offer something</strong> — but here there is a fourth part: <strong>tell them who can review it</strong>.',
+    'The structure is the same as always — <strong>soften it, say no clearly, offer something</strong> — but here there is a fourth part: <strong>tell them who can review it</strong>.',
     'A no with a route is not a no. It is a redirection.',
   ],
   introPt: [
     'Dizer não a um aluno é mais difícil do que dizer não a uma escola parceira, porque o aluno não tem para onde ir.',
-    'A estrutura é a mesma de sempre — <strong>amortecer, negar com clareza, oferecer algo</strong> — mas aqui há uma quarta parte: <strong>dizer quem pode revisar</strong>.',
+    'A estrutura é a mesma de sempre — <strong>amortecer, dizer não com clareza, oferecer algo</strong> — mas aqui há uma quarta parte: <strong>dizer quem pode revisar</strong>.',
     'Um não com caminho não é um não. É um redirecionamento.',
   ],
   vocab: [
@@ -1420,7 +1420,7 @@ module.exports = [
       title: 'A resposta a uma reclamação',
       badge: 'Complete o texto',
       instruction: 'Complete a resposta mais difícil de todas.',
-      text: 'Dear Michael, thank you for ___ us — I am sorry that happened, and you are ___ to be frustrated. Your request was in the system but was never issued, which ___ not have happened. I have issued it myself this morning and it is ___ to this email. To make ___ it does not happen again, requests like yours are now checked at the end of each day. If anything else comes up, please write to me ___ . Kind regards, Ana',
+      text: 'Dear Michael, thank you for ___ us — I am sorry that happened, and you are ___ to be frustrated. Your request was in the system but had not been issued yet, which ___ not have happened. I have issued it myself this morning and it is ___ to this email. To make ___ it does not happen again, I will follow this one personally until it is closed. If anything else comes up, please write to me ___ . Kind regards, Ana',
       gaps: [
         { options: ['telling', 'tell', 'told'], answer: 'telling', why: 'Depois de <em>for</em>, verbo com -ing: <strong>for telling us</strong>.' },
         { options: ['right', 'reason', 'rightful'], answer: 'right', why: '<strong>you are right</strong> — em inglês não se "tem razão", se "é certo".' },

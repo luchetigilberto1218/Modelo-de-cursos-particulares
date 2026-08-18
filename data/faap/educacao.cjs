@@ -14,17 +14,17 @@ module.exports = [
   intro: [
     'Sooner or later somebody from abroad asks: <em>"So how does school work in Brazil?"</em>',
     'The answer has three parts: <strong>basic education</strong> (from kindergarten to high school), the <strong>entrance exam</strong>, and <strong>university</strong>.',
-    'Two facts surprise everyone: our school year runs February to December, and our best universities are public and free.',
+    'Two things surprise every visitor: our school year runs from February to December, and Brazil has both public universities, which charge no tuition, and private institutions like FAAP, which do.',
   ],
   introPt: [
     'Mais cedo ou mais tarde alguém de fora pergunta: <em>"Como funciona a escola no Brasil?"</em>',
     'A resposta tem três partes: <strong>educação básica</strong> (do infantil ao médio), o <strong>vestibular</strong> e a <strong>universidade</strong>.',
-    'Dois fatos surpreendem todo mundo: o nosso ano letivo vai de fevereiro a dezembro, e as nossas melhores universidades são públicas e gratuitas.',
+    'Duas coisas surpreendem todo visitante: o nosso ano letivo vai de fevereiro a dezembro, e o Brasil tem universidades públicas, que não cobram mensalidade, e instituições particulares como a FAAP, que cobram.',
   ],
   vocab: [
     { en: 'basic education', pt: 'educação básica', example: 'Basic education goes up to the end of high school.' },
     { en: 'entrance exam', pt: 'vestibular / prova de entrada', example: 'Students take an entrance exam to get into university.' },
-    { en: 'tuition-free', pt: 'gratuito (sem mensalidade)', example: 'Public universities are tuition-free.' },
+    { en: 'tuition-free', pt: 'sem mensalidade', example: 'Public universities are tuition-free; private ones charge tuition.' },
     { en: 'state / federal', pt: 'estadual / federal', example: 'There are state and federal universities.' },
     { en: 'compulsory', pt: 'obrigatório', example: 'School is compulsory from age four to seventeen.' },
     { en: 'to apply to', pt: 'candidatar-se a', example: 'She applied to three universities.' },
@@ -36,10 +36,10 @@ module.exports = [
       instruction: 'Complete com o banco de palavras.',
       bank: ['basic', 'compulsory', 'entrance', 'tuition-free', 'February'],
       items: [
-        { text: '___ education goes from kindergarten to high school.', answer: 'basic' },
+        { text: 'In Brazil, ___ education goes from kindergarten to high school.', answer: 'basic' },
         { text: 'School is ___ for children and teenagers.', answer: 'compulsory' },
         { text: 'To get into university, students take an ___ exam.', answer: 'entrance' },
-        { text: 'Public universities are ___ .', answer: 'tuition-free' },
+        { text: 'Public universities are ___ , and private ones charge tuition.', answer: 'tuition-free' },
         { text: 'Our school year starts in ___ .', answer: 'February' },
       ],
       explanation: 'Cinco frases dão conta do sistema inteiro. Guarde essas.',
@@ -53,7 +53,7 @@ module.exports = [
       passage: [
         'Basic education in Brazil has three stages: early years, nine years of fundamental education, and three years of secondary school. The school year runs from February to December, with a long break in July.',
         'At the end of secondary school, most students sit the ENEM, a national exam. Results from the ENEM are used both by public universities and by many private ones.',
-        'Public universities are tuition-free, but places are limited and competition is high. Private institutions charge tuition and usually run their own entrance exams as well.',
+        'Brazil has two routes into higher education. Public universities are tuition-free, but places are limited and competition is very high. Private institutions charge tuition and usually run their own entrance exams, and families choose them for the campus, the facilities and the size of the classes.',
       ],
       questions: [
         {
@@ -91,7 +91,7 @@ module.exports = [
       instruction: 'Sobre o sistema brasileiro, como você explicaria a um estrangeiro.',
       items: [
         { text: 'In Brazil, the school year runs from September to June.', answer: false, why: 'Vai de fevereiro a dezembro. Essa é a primeira surpresa de qualquer família estrangeira.' },
-        { text: 'Public universities in Brazil are tuition-free.', answer: true, why: 'Gratuitas — e por isso muito concorridas.' },
+        { text: 'Public universities in Brazil are tuition-free.', answer: true, why: 'Não cobram mensalidade — e por isso são muito concorridas. As particulares cobram, e é aí que entram estrutura, prática e tamanho de turma.' },
         { text: 'The ENEM is taken at the end of secondary school.', answer: true, why: 'No fim do ensino médio.' },
         { text: 'Private universities never run their own entrance exams.', answer: false, why: 'Muitas rodam o próprio vestibular além de aceitar o ENEM.' },
       ],
@@ -116,7 +116,7 @@ module.exports = [
       items: [
         { en: 'I can describe the three stages of basic education.', pt: 'Sei descrever as três etapas da educação básica.' },
         { en: 'I can explain what the ENEM is.', pt: 'Sei explicar o que é o ENEM.' },
-        { en: 'I can say that public universities are tuition-free but competitive.', pt: 'Sei dizer que as universidades públicas são gratuitas, mas concorridas.' },
+        { en: 'I can explain the two routes — public and private — without ranking them.', pt: 'Sei explicar os dois caminhos — público e particular — sem colocar um acima do outro.' },
         { en: 'I say "take an exam", not "make an exam".', pt: 'Digo "take an exam", não "make an exam".' },
       ],
       doneMessage: 'sistema brasileiro explicado. Agora o vocabulário de matrícula e mensalidade.',
@@ -129,14 +129,14 @@ module.exports = [
     intro: 'Três pontos que sempre geram pergunta.',
     cards: [
       { en: 'Our school year matches the calendar year. In the northern hemisphere the year is split in two — that is why a January arrival is complicated.', pt: 'O nosso ano letivo coincide com o ano civil. No hemisfério norte o ano é partido ao meio — por isso uma chegada em janeiro é complicada.' },
-      { en: 'In most countries the best universities are private. In Brazil many of the best are public and free, which surprises almost every visitor.', pt: 'Na maioria dos países as melhores universidades são particulares. No Brasil muitas das melhores são públicas e gratuitas, o que surpreende quase todo visitante.' },
+      { en: 'Visitors often ask why families pay for a private institution when public ones are free. The answer is not about ranking: it is about campus, facilities, class size and how practical the course is from day one.', pt: 'Os visitantes costumam perguntar por que as famílias pagam por uma instituição particular se as públicas são gratuitas. A resposta não é sobre ranking: é sobre campus, estrutura, tamanho de turma e o quanto o curso é prático desde o primeiro dia.' },
       { en: 'The word "college" does not work here. Say "university" for higher education and "school" for basic education.', pt: 'A palavra "college" não funciona aqui. Diga "university" para o superior e "school" para a educação básica.' },
     ],
   },
   takeaways: [
     'Basic education has three stages and the school year runs February to December.',
     'Students take the ENEM at the end of secondary school.',
-    'Public universities are tuition-free but very competitive.',
+    'Public universities are tuition-free; private institutions charge tuition and compete on campus, facilities and practice.',
   ],
   celebrate: {
     en: 'You can explain an entire national system in four sentences.',
@@ -730,7 +730,7 @@ module.exports = [
     intro: 'Como falar de programas sem tropeçar.',
     cards: [
       { en: 'Most initials are said letter by letter: I-B, S-A-T, A-C-T, D-P. Do not try to read them as words.', pt: 'A maioria das siglas se diz letra por letra: I-B, S-A-T, A-C-T, D-P. Não tente lê-las como palavra.' },
-      { en: 'Abitur and Mizzou are read as words, not letters — "AH-bee-toor" and "mi-ZOO".', pt: 'Abitur e Mizzou são lidos como palavras, não como letras — "ÁH-bi-tur" e "mi-ZÚ".' },
+      { en: 'Abitur and Mizzou are said as words, not as letters — "AH-bee-toor" and "mi-ZOO".', pt: 'Abitur e Mizzou são lidos como palavras, não como letras — "ÁH-bi-tur" e "mi-ZÚ".' },
       { en: 'If a coordinator uses an acronym you do not know, ask: "Sorry, what does that stand for?" It is a normal, professional question.', pt: 'Se um coordenador usar uma sigla que você não conhece, pergunte: "Sorry, what does that stand for?" É uma pergunta normal e profissional.' },
     ],
   },

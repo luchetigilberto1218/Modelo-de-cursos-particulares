@@ -467,12 +467,12 @@ module.exports = [
   imageCaption: 'Do primeiro contato ao fechamento: cada etapa tem um nome em inglês.',
   objective: 'Reconhecer e usar o vocabulário comercial em inglês — da prospecção ao fechamento — aplicado ao contexto da FAAP.',
   intro: [
-    'Every commercial conversation follows the same path: a <strong>lead</strong> becomes a <strong>prospect</strong>, a prospect becomes an <strong>opportunity</strong>, and an opportunity <strong>closes</strong>.',
+    'Every commercial conversation follows the same path. First comes a <strong>lead</strong> — said like "leed", the contact you just met. That lead becomes a <strong>prospect</strong>, the prospect becomes an <strong>opportunity</strong>, and the opportunity <strong>closes</strong>.',
     'The words are simple. What is hard is using them naturally, without translating from Portuguese in your head.',
     'These are the twenty words you actually need.',
   ],
   introPt: [
-    'Toda conversa comercial segue o mesmo caminho: um <strong>lead</strong> vira <strong>prospect</strong>, um prospect vira <strong>opportunity</strong>, e uma oportunidade <strong>fecha</strong>.',
+    'Toda conversa comercial segue o mesmo caminho. Primeiro vem um <strong>lead</strong> — pronuncia-se "lid", o contato que você acabou de conhecer. Esse lead vira <strong>prospect</strong>, o prospect vira <strong>opportunity</strong>, e a oportunidade <strong>fecha</strong>.',
     'As palavras são simples. O difícil é usá-las com naturalidade, sem traduzir do português na cabeça.',
     'Estas são as vinte palavras de que você realmente precisa.',
   ],
@@ -789,7 +789,7 @@ module.exports = [
         { who: 'You', voice: 'us-female', en: 'Hi — thanks for stopping by. I am Ana, from FAAP.', pt: 'Oi — obrigada por passar aqui. Sou a Ana, da FAAP.' },
         { who: 'Coordinator', voice: 'gb-male', en: 'Tom, from the school here. We run the DP with about sixty students a year.', pt: 'Tom, da escola daqui. A gente roda o DP com uns sessenta alunos por ano.' },
         { who: 'You', voice: 'us-female', en: 'Sixty is a good size. Do most of them apply abroad, or do some stay in Brazil?', pt: 'Sessenta é um bom tamanho. A maioria se candidata para fora, ou alguns ficam no Brasil?' },
-        { who: 'Coordinator', voice: 'gb-male', en: 'About a third stay. And they always ask us the same thing: how their IB results are read here.', pt: 'Cerca de um terço fica. E eles sempre nos perguntam a mesma coisa: como as notas do IB são lidas aqui.' },
+        { who: 'Coordinator', voice: 'gb-male', en: 'About a third stay. And they always ask us the same thing: how Brazilian universities look at their IB results.', pt: 'Cerca de um terço fica. E eles sempre nos perguntam a mesma coisa: como as universidades brasileiras enxergam as notas do IB.' },
         { who: 'You', voice: 'us-female', en: 'That is exactly the question we answer most. Would it help if I sent you a one-page summary?', pt: 'Essa é exatamente a pergunta que a gente mais responde. Ajudaria se eu te mandasse um resumo de uma página?' },
         { who: 'Coordinator', voice: 'gb-male', en: 'It really would. Let me give you my card.', pt: 'Ajudaria muito. Deixa eu te dar meu cartão.' },
         { who: 'You', voice: 'us-female', en: 'Thank you. I will be in touch on Monday. I will let you get on — good to meet you, Tom.', pt: 'Obrigada. Entro em contato na segunda. Não vou tomar mais o seu tempo — prazer em te conhecer, Tom.' },
@@ -1461,7 +1461,7 @@ module.exports = [
     title: 'A economia das respostas',
     intro: 'Três verdades sobre responder em qualquer idioma.',
     cards: [
-      { en: 'The most expensive email is the one you did not answer. Silence is read as "no" or as "they forgot me" — never as "they are working on it".', pt: 'O e-mail mais caro é o que você não respondeu. Silêncio é lido como "não" ou como "esqueceram de mim" — nunca como "estão trabalhando nisso".' },
+      { en: 'The most expensive email is the one you did not answer. Silence comes across as "no" or as "they forgot me" — never as "they are working on it".', pt: 'O e-mail mais caro é o que você não respondeu. Silêncio é lido como "não" ou como "esqueceram de mim" — nunca como "estão trabalhando nisso".' },
       { en: 'A long apology draws attention to the delay. "Apologies for the delay" plus the content draws attention to the content.', pt: 'Uma desculpa longa chama atenção para o atraso. "Apologies for the delay" mais o conteúdo chama atenção para o conteúdo.' },
       { en: '"By Wednesday at the latest" is stronger than "as soon as possible". ASAP is a wish; a date is a promise.', pt: '"By Wednesday at the latest" é mais forte que "as soon as possible". ASAP é um desejo; uma data é uma promessa.' },
     ],
@@ -1632,12 +1632,12 @@ module.exports = [
   imageCaption: 'Cortesia em inglês não é enfeite: é estrutura da frase.',
   objective: 'Usar as expressões de cortesia que o inglês exige — e saber quando cada uma cabe.',
   intro: [
-    'In Portuguese, politeness lives in the tone of voice. In English, it lives <strong>inside the sentence</strong>.',
+    'In Portuguese, politeness is carried by the tone of voice. In English, it sits <strong>inside the sentence itself</strong>.',
     '"Send me the file" and "Could you send me the file?" carry the same information and two completely different relationships.',
     'This lesson is a small collection of pieces you can attach to anything you say.',
   ],
   introPt: [
-    'Em português, a educação mora no tom de voz. Em inglês, ela mora <strong>dentro da frase</strong>.',
+    'Em português, a educação é carregada pelo tom de voz. Em inglês, ela fica <strong>dentro da própria frase</strong>.',
     '"Send me the file" e "Could you send me the file?" carregam a mesma informação e duas relações completamente diferentes.',
     'Esta lição é uma pequena coleção de peças que você pode encaixar em qualquer coisa que disser.',
   ],
@@ -1870,7 +1870,7 @@ module.exports = [
     cards: [
       { en: 'The imperative is polite in instructions. "Arrive by 8:45" is not rude — it is clear. Adding "please" once at the start is enough.', pt: 'O imperativo é educado em instruções. "Arrive by 8:45" não é grosseiro — é claro. Um "please" no começo já basta.' },
       { en: 'One action per line. A paragraph with three instructions inside it will always lose one of them.', pt: 'Uma ação por linha. Um parágrafo com três instruções dentro sempre perde uma delas.' },
-      { en: 'The last line should be the plan B. People remember the last thing they read, and the plan B is what saves the day.', pt: 'A última linha deve ser o plano B. As pessoas lembram da última coisa que leram, e o plano B é o que salva o dia.' },
+      { en: 'The last line should be the plan B. People remember the last line of a message, and the plan B is what saves the day.', pt: 'A última linha deve ser o plano B. As pessoas lembram da última coisa que leram, e o plano B é o que salva o dia.' },
     ],
   },
   takeaways: [

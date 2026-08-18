@@ -40,7 +40,7 @@ module.exports = [
         { text: 'It is a ___ institution, not a public one.', answer: 'private' },
         { text: 'The main ___ is in Higienópolis, São Paulo.', answer: 'campus' },
         { text: 'The foundation began with the ___ .', answer: 'arts' },
-        { text: 'Today it ___ school, university, a museum and a theatre.', answer: 'offers' },
+        { text: 'Today it ___ a school, a university, a museum and a theatre.', answer: 'offers' },
       ],
       explanation: 'Estas cinco frases são a sua apresentação padrão. Decore o esqueleto: is a foundation → is private → is in Higienópolis → began with the arts → offers…',
     },
@@ -150,7 +150,7 @@ module.exports = [
     intro: 'Detalhes pequenos que fazem você soar natural. Ouça e revele a tradução.',
     cards: [
       { en: 'In English, "faculty" means the teaching staff, not the building. Do not say "our faculty is in Higienópolis" — say "our campus".', pt: 'Em inglês, "faculty" quer dizer o corpo docente, não o prédio. Não diga "our faculty is in Higienópolis" — diga "our campus".' },
-      { en: 'A "foundation" is a non-profit institution. That word already explains a lot about FAAP to a foreign visitor.', pt: '"Foundation" é uma instituição sem fins lucrativos. Essa palavra já explica muita coisa da FAAP para um visitante estrangeiro.' },
+      { en: 'A "foundation" is a non-profit institution — which is what FAAP is. It still charges tuition, like any private institution; the difference is where the money goes.', pt: '"Foundation" é uma instituição sem fins lucrativos — que é o que a FAAP é. Ela cobra mensalidade, como qualquer instituição particular; a diferença está no destino do dinheiro.' },
       { en: 'Say the name letter by letter: F-A-A-P. Foreigners will not read it as a Portuguese word.', pt: 'Diga o nome letra por letra: F-A-A-P. Estrangeiros não vão ler como palavra em português.' },
     ],
   },
@@ -510,7 +510,7 @@ module.exports = [
       items: [
         { text: 'The museum is here on ___ .', answer: 'campus' },
         { text: 'There is a new ___ every few months.', answer: 'exhibition' },
-        { text: 'Each ___ has a small label with the artist name.', answer: 'artwork' },
+        { text: "Each ___ has a small label with the artist's name.", answer: 'artwork' },
         { text: 'Entrance is usually ___ of charge.', answer: 'free' },
         { text: 'Our opening ___ are on the website.', answer: 'hours' },
       ],
@@ -913,7 +913,7 @@ module.exports = [
     title: 'O que confunde as famílias estrangeiras',
     intro: 'Três diferenças que geram quase todas as perguntas.',
     cards: [
-      { en: 'The Brazilian school year runs February to December. In the northern hemisphere it runs September to June — a family arriving in January arrives mid-nothing.', pt: 'O ano letivo brasileiro vai de fevereiro a dezembro. No hemisfério norte vai de setembro a junho — uma família que chega em janeiro chega no meio de nada.' },
+      { en: 'The Brazilian school year runs February to December. In the northern hemisphere it runs September to June — a family arriving in January arrives in the middle of neither.', pt: 'O ano letivo brasileiro vai de fevereiro a dezembro. No hemisfério norte vai de setembro a junho — uma família que chega em janeiro chega no meio de nenhum dos dois.' },
       { en: 'Americans say "grade" (fifth grade); the British say "year" (year five). Both understand "school year".', pt: 'Americanos dizem "grade" (fifth grade); britânicos dizem "year" (year five). Os dois entendem "school year".' },
       { en: '"College" in the US means university. If you say "our college", an American will think of higher education, not of the Colégio.', pt: '"College" nos EUA significa universidade. Se você disser "our college", um americano vai pensar em ensino superior, não no Colégio.' },
     ],
@@ -1067,6 +1067,7 @@ module.exports = [
       { en: '"Graduation" is the ceremony. The course itself is a "degree" or an "undergraduate programme".', pt: '"Graduation" é a cerimônia. O curso em si é "degree" ou "undergraduate programme".' },
       { en: '"To attend" means to go to classes — not "to attend a customer". For that, use "to help" or "to assist".', pt: '"To attend" é frequentar aulas — não "atender um cliente". Para isso, use "to help" ou "to assist".' },
       { en: '"Course" in the UK can mean the whole degree; in the US it usually means one single subject.', pt: '"Course" no Reino Unido pode ser o curso inteiro; nos EUA costuma ser uma disciplina só.' },
+      { en: 'Numbers change. Before you quote how many programmes we have, check the current list — saying "around seventeen, let me confirm the exact number" is always safe.', pt: 'Números mudam. Antes de citar quantos cursos temos, confira a lista atual — dizer "uns dezessete, deixa eu confirmar o número exato" é sempre seguro.' },
     ],
   },
   takeaways: [

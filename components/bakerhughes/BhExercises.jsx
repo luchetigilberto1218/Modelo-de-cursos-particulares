@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import AudioPlayer from '../AudioPlayer';
 import { ExShell, Instruction, CheckRow, ResultLine, TranscriptToggle, norm, seededShuffle, hashString } from './BhKit';
 
@@ -873,7 +873,41 @@ function Dialogue({ ex, c, onChecked, voiceType }) {
   const [checked, setChecked] = useState(false);
   const isRight = (i) => pick[i] === (questions[i].options || []).findIndex((o) => o.correct);
   const acc = questions.length ? questions.filter((_, i) => isRight(i)).length / questions.length : 1;
-  const fullText = lines.map((l) => l.en).join(' ');
+
+  /* Conversa inteira, linha a linha, cada fala na voz do seu personagem.
+     Antes o botão lia o diálogo todo numa voz só, e as duas pessoas soavam
+     como a mesma pessoa — que é justamente o que um diálogo não pode ser. */
+  const [nowPlaying, setNowPlaying] = useState(null); // índice da fala no ar
+  const audioRef = useRef(null);
+  const playingRef = useRef(false);
+
+  const stopConversation = () => {
+    playingRef.current = false;
+    setNowPlaying(null);
+    const el = audioRef.current;
+    if (el) { el.onended = null; try { el.pause(); } catch { /* ignore */ } }
+  };
+
+  const playFrom = (idx) => {
+    if (idx >= lines.length) { stopConversation(); return; }
+    const ln = lines[idx];
+    const el = audioRef.current || new Audio();
+    audioRef.current = el;
+    setNowPlaying(idx);
+    el.onended = () => { if (playingRef.current) playFrom(idx + 1); };
+    el.onerror = () => { if (playingRef.current) playFrom(idx + 1); };
+    el.playbackRate = ln.rate || ex.rate || 0.92;
+    el.src = `/api/tts?voice=${encodeURIComponent(ln.voice || voiceType || 'us-female')}&text=${encodeURIComponent(String(ln.en).slice(0, 800))}`;
+    el.play().catch(() => { if (playingRef.current) playFrom(idx + 1); });
+  };
+
+  const toggleConversation = () => {
+    if (playingRef.current) { stopConversation(); return; }
+    playingRef.current = true;
+    playFrom(0);
+  };
+
+  useEffect(() => () => stopConversation(), []);
 
   return (
     <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Diálogo'}>
@@ -883,7 +917,11 @@ function Dialogue({ ex, c, onChecked, voiceType }) {
       )}
 
       <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', marginBottom: 12 }}>
-        <AudioPlayer text={fullText} rate={ex.rate || 0.88} label="Ouvir a conversa inteira" small voiceType={voiceType} />
+        <button type="button" onClick={toggleConversation}
+          style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 15px 7px 12px', borderRadius: 999, border: 'none', background: accent, color: '#fff', fontSize: 12.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
+          <span>{nowPlaying !== null ? '❚❚' : '▶'}</span>
+          {nowPlaying !== null ? 'Parar' : 'Ouvir a conversa inteira'}
+        </button>
         <button type="button" onClick={() => setShowPt((v) => !v)}
           style={{ padding: '6px 13px', borderRadius: 999, border: `1px solid ${grayLight}`, background: '#fff', color: navy, fontWeight: 700, fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer' }}>
           {showPt ? 'Ocultar tradução' : '🇧🇷 Ver tradução'}
@@ -894,7 +932,10 @@ function Dialogue({ ex, c, onChecked, voiceType }) {
         {lines.map((ln, i) => {
           const mine = /^(you|voc[êe])/i.test(ln.who || '');
           return (
-            <div key={i} style={{ padding: '11px 14px', borderRadius: 12, background: mine ? c.accentLight || '#E4F7EC' : offWhite, border: `1px solid ${mine ? accent : grayLight}` }}>
+            <div key={i} style={{ padding: '11px 14px', borderRadius: 12, transition: 'box-shadow 0.2s, border-color 0.2s',
+              background: mine ? c.accentLight || '#E4F7EC' : offWhite,
+              border: `1px solid ${nowPlaying === i ? accent : mine ? accent : grayLight}`,
+              boxShadow: nowPlaying === i ? `0 0 0 2px ${accent}44` : 'none' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 5, flexWrap: 'wrap' }}>
                 <span style={{ fontSize: 11, fontWeight: 800, letterSpacing: 0.6, textTransform: 'uppercase', color: mine ? navy : gray }}>{ln.who}</span>
                 <AudioPlayer text={ln.en} rate={ln.rate || 0.85} label="" small voiceType={ln.voice || voiceType} />

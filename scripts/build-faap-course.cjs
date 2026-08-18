@@ -53,6 +53,43 @@ for (const l of lessons) {
   }
 }
 
+/* Exemplos com número — valor, taxa, sala, horário, prazo — são inventados
+   para treinar a frase, não para informar. Sem um aviso explícito, um aluno
+   repete "R$ 250" ou "room 214" para um cliente como se fosse oficial. */
+const DADOS_OPERACIONAIS = /R\$|two hundred and fifty|room 214|nine to (five|four)|the fifth of each month|two working days|gate closes at|registration fee|instalments/i;
+const AVISO = 'os valores, prazos, salas e horários dos exemplos são fictícios — servem para você treinar a frase em inglês. Os números reais da FAAP são sempre os que a sua área informar.';
+let comAviso = 0;
+for (const l of lessons) {
+  if (l.disclaimer) continue;
+  if (DADOS_OPERACIONAIS.test(JSON.stringify(l))) { l.disclaimer = AVISO; comAviso += 1; }
+}
+
+/* Homógrafos: palavras cuja pronúncia muda com a classe gramatical. O TTS
+   escolhe pela sintaxe e às vezes erra — "lives" (verbo) sai como plural de
+   "life", "read" no passado sai como presente, "lead" comercial sai como o
+   metal. Isto não bloqueia o build: só lista o que merece um ouvido, para o
+   texto ser reescrito em vez de a máquina adivinhar. */
+const HOMOGRAFOS = ['lives', 'read', 'lead', 'record', 'records', 'refuse', 'present', 'presents', 'object', 'contract', 'produce', 'progress', 'permit', 'invalid', 'wound', 'desert', 'minute'];
+const homRe = new RegExp('\\b(' + HOMOGRAFOS.join('|') + ')\\b', 'gi');
+const suspeitos = [];
+for (const l of lessons) {
+  const falado = [
+    ...(l.intro || []), ...(l.takeaways || []),
+    ...(l.vocab || []).map((v) => v.example),
+    ...(l.insights?.cards || []).map((k) => k.en),
+  ];
+  for (const ex of l.exercises || []) {
+    falado.push(...(ex.lines || []).map((x) => x.en), ...(ex.sentences || []), ...(ex.passage || []));
+    falado.push(...(ex.items || []).map((it) => it && it.audio).filter(Boolean));
+    if (ex.audioText) falado.push(ex.audioText);
+  }
+  for (const t of falado.filter(Boolean)) {
+    const limpo = String(t).replace(/<[^>]+>/g, '');
+    const m = limpo.match(homRe);
+    if (m) suspeitos.push(`${l.num} · ${[...new Set(m.map((x) => x.toLowerCase()))].join(',')} · ${limpo.slice(0, 90)}`);
+  }
+}
+
 /* ── validação: erro de conteúdo aqui é exercício impossível lá ── */
 const problems = [];
 const seenNums = new Set();
@@ -152,6 +189,11 @@ const course = {
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(course, null, 1));
 const kb = (fs.statSync(OUT).size / 1024).toFixed(0);
+console.log(`   ${comAviso} lições receberam o aviso de dados fictícios`);
+if (suspeitos.length) {
+  console.log(`   ⚠ ${suspeitos.length} trechos falados com homógrafo (confira a pronúncia):`);
+  for (const t of suspeitos) console.log('     · ' + t);
+}
 console.log(`✓ ${lessons.length} lições em ${tracks.length} trilhas → courses/faapatendimento/course.json (${kb} KB)`);
 for (const t of tracks) {
   console.log(`   ${String(lessons.filter((l) => l.track === t.id).length).padStart(3)}  ${t.id} · ${t.name}`);

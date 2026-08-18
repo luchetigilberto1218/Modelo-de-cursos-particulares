@@ -1,16 +1,19 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import AudioPlayer from '../AudioPlayer';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 /*
   "Alu explica" — o guia de boas-vindas da home da FAAP.
 
   Copiado em espírito do "Duca explica" da Delta Ducon: um apresentador que
   passa por algumas telas curtas contando como o material funciona, em
-  português, com áudio e com botão de pular. Aqui o avatar é abstrato (círculo
-  com onda de voz) em vez de um bichinho — combina com o tom institucional da
-  Fundação sem perder a simpatia.
+  português, com áudio e com botão de pular.
+
+  Um botão só, de propósito. A primeira versão tinha o ▶ (que avançava os
+  slides por tempo) e um "Ouvir" separado (que tocava a voz): apertando os dois
+  as falas se sobrepunham e ninguém sabia qual era o play. Agora o ▶ toca a
+  narração do passo e o próximo passo só entra quando o áudio termina — a
+  imagem acompanha a voz em vez de correr por fora dela.
 */
 
 export default function AluExplica({ c, steps, student }) {
@@ -21,22 +24,50 @@ export default function AluExplica({ c, steps, student }) {
 
   const [i, setI] = useState(0);
   const [playing, setPlaying] = useState(false);
-  const timer = useRef(null);
+  const audioRef = useRef(null);
+  const fallbackRef = useRef(null);
   const total = steps.length;
 
-  useEffect(() => {
-    if (!playing) return undefined;
-    timer.current = setTimeout(() => {
+  const firstName = (student || '').split(' ')[0];
+  const step = steps[i];
+  const fala = (k) => {
+    const s = steps[k];
+    const titulo = k === 0 && firstName ? `${s.title.replace(/\.$/, '')}, ${firstName}.` : s.title;
+    return `${titulo} ${s.text}`;
+  };
+
+  const parar = useCallback(() => {
+    clearTimeout(fallbackRef.current);
+    const el = audioRef.current;
+    if (el) { try { el.pause(); } catch { /* ignore */ } }
+  }, []);
+
+  // Toca o passo k e encadeia o seguinte quando a narração termina.
+  const tocar = useCallback((k) => {
+    clearTimeout(fallbackRef.current);
+    const el = audioRef.current || new Audio();
+    audioRef.current = el;
+    const avancar = () => {
       setI((prev) => {
         if (prev + 1 >= total) { setPlaying(false); return prev; }
         return prev + 1;
       });
-    }, 6200);
-    return () => clearTimeout(timer.current);
-  }, [playing, i, total]);
+    };
+    el.onended = avancar;
+    // Sem áudio (offline, rota fora do ar) o guia não trava: cai no tempo fixo.
+    el.onerror = () => { fallbackRef.current = setTimeout(avancar, 6500); };
+    el.src = `/api/tts?voice=pt-br-female&text=${encodeURIComponent(fala(k).slice(0, 3000))}`;
+    el.play().catch(() => { fallbackRef.current = setTimeout(avancar, 6500); });
+  }, [total, steps, firstName]);
 
-  const firstName = (student || '').split(' ')[0];
-  const step = steps[i];
+  // Um efeito só governa a reprodução: mudou o passo ou o play, toca de novo.
+  useEffect(() => {
+    if (!playing) { parar(); return undefined; }
+    tocar(i);
+    return () => clearTimeout(fallbackRef.current);
+  }, [playing, i, tocar, parar]);
+
+  useEffect(() => () => { parar(); }, [parar]);
 
   return (
     <div style={{ background: `linear-gradient(135deg, ${navy}, ${navyLight})`, borderRadius: 18, padding: '26px 24px', color: '#fff', display: 'flex', gap: 20, alignItems: 'flex-start', flexWrap: 'wrap', boxShadow: '0 14px 40px rgba(11,46,99,0.22)' }}>
@@ -52,19 +83,24 @@ export default function AluExplica({ c, steps, student }) {
         <p style={{ margin: 0, fontSize: 14.5, lineHeight: 1.6, color: 'rgba(255,255,255,0.78)' }}>{step.text}</p>
 
         <div style={{ marginTop: 16, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
-          <button type="button" onClick={() => setPlaying((p) => !p)}
-            style={{ width: 40, height: 40, borderRadius: 999, border: 'none', background: accent, color: '#fff', fontSize: 15, cursor: 'pointer', fontFamily: 'inherit' }}>
-            {playing ? '❚❚' : '▶'}
+          <button type="button" onClick={() => setPlaying((v) => !v)}
+            aria-label={playing ? 'Pausar a explicação' : 'Ouvir a explicação'}
+            style={{ display: 'flex', alignItems: 'center', gap: 9, padding: '9px 18px 9px 14px', borderRadius: 999, border: 'none', background: accent, color: '#fff', fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
+            <span style={{ fontSize: 13 }}>{playing ? '❚❚' : '▶'}</span>
+            {playing ? 'Pausar' : (i === 0 ? 'Ouvir a explicação' : 'Continuar')}
           </button>
+
           <div style={{ display: 'flex', gap: 6 }}>
             {steps.map((_, k) => (
-              <button key={k} type="button" onClick={() => { setI(k); setPlaying(false); }} aria-label={`Passo ${k + 1}`}
+              <button key={k} type="button" onClick={() => setI(k)} aria-label={`Passo ${k + 1}`}
                 style={{ width: k === i ? 22 : 8, height: 8, borderRadius: 999, border: 'none', padding: 0, cursor: 'pointer', transition: 'width 0.3s', background: k === i ? accent : 'rgba(255,255,255,0.3)' }} />
             ))}
           </div>
-          <AudioPlayer text={`${step.title} ${step.text}`} rate={1} label="Ouvir" small voiceType="pt-br-female" />
+
+          <span style={{ fontSize: 12.5, color: 'rgba(255,255,255,0.5)' }}>{i + 1} de {total}</span>
+
           {i < total - 1 && (
-            <button type="button" onClick={() => { setI(total - 1); setPlaying(false); }}
+            <button type="button" onClick={() => { setPlaying(false); setI(total - 1); }}
               style={{ padding: '6px 12px', borderRadius: 999, border: `1px solid ${grayLight}33`, background: 'transparent', color: 'rgba(255,255,255,0.6)', fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer' }}>
               pular
             </button>

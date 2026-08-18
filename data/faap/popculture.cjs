@@ -568,7 +568,7 @@ module.exports = [
   ],
   vocab: [
     { en: 'page-turner', pt: 'livro que prende', example: 'It is a real page-turner.' },
-    { en: 'chapter', pt: 'capítulo', example: 'I read two chapters last night.' },
+    { en: 'chapter', pt: 'capítulo', example: 'I finished two chapters last night.' },
     { en: 'character', pt: 'personagem', example: 'The main character is annoying.' },
     { en: 'to skim', pt: 'ler por alto', example: 'I skimmed the first chapter.' },
     { en: 'to look up a word', pt: 'procurar uma palavra', example: 'Do not look up every word.' },
@@ -597,7 +597,7 @@ module.exports = [
       bank: ['page-turner', 'chapters', 'character', 'through', 'up'],
       items: [
         { text: 'It is a real ___ — I could not put it down.', answer: 'page-turner' },
-        { text: 'I read two ___ last night.', answer: 'chapters' },
+        { text: 'I finished two ___ last night.', answer: 'chapters' },
         { text: 'The main ___ is really annoying, honestly.', answer: 'character' },
         { text: 'It took me a month to get ___ it.', answer: 'through' },
         { text: 'Do not look ___ every single word.', answer: 'up' },
@@ -623,7 +623,7 @@ module.exports = [
       scene: 'Alguém te pergunta o que ler em inglês.',
       lines: [
         { who: 'Friend', voice: 'us-female', en: 'I want to start reading in English but I never get past chapter two.', pt: 'Quero começar a ler em inglês mas nunca passo do capítulo dois.' },
-        { who: 'You', voice: 'gb-female', en: 'Try something you have already read in Portuguese. You know the plot, so you can relax.', pt: 'Tenta algo que você já leu em português. Você já sabe a história, então dá para relaxar.' },
+        { who: 'You', voice: 'gb-female', en: 'Try something you already know in Portuguese. You have the plot, so you can relax.', pt: 'Tenta algo que você já conhece em português. Você já tem a história, então dá para relaxar.' },
         { who: 'Friend', voice: 'us-female', en: 'That feels like cheating.', pt: 'Parece trapaça.' },
         { who: 'You', voice: 'gb-female', en: 'It is not — it is how everyone starts. And do not look up every word.', pt: 'Não é — é assim que todo mundo começa. E não procure toda palavra.' },
         { who: 'Friend', voice: 'us-female', en: 'But then I do not understand everything.', pt: 'Mas aí eu não entendo tudo.' },
