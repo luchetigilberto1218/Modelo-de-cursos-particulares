@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { getSession, isCoordinator } from '../../lib/auth';
 import { getStatsByEmpresa } from '../../lib/stats';
@@ -39,7 +40,14 @@ export default async function AdminStatsPage({ searchParams }) {
     <main style={{ padding: '40px 24px', fontFamily: 'system-ui, sans-serif', background: '#f5f5f7', minHeight: '100vh' }}>
       <div style={{ maxWidth: 720, margin: '0 auto' }}>
         <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 4 }}>Acessos por empresa</h1>
-        <p style={{ color: '#6b7280', marginBottom: 24 }}>Contador próprio · período {from} a {to}</p>
+        <p style={{ color: '#6b7280', marginBottom: 8 }}>Contador próprio · período {from} a {to}</p>
+        {/* Acesso é presença; progresso é o que a pessoa fez lá dentro. As duas
+            leituras andam juntas, então uma tela leva à outra. */}
+        <p style={{ marginBottom: 24 }}>
+          <Link href="/admin/alunos" style={{ color: '#2563eb', fontSize: 14, textDecoration: 'none' }}>
+            Evolução dos alunos, por turma →
+          </Link>
+        </p>
 
         <form method="get" style={{ display: 'flex', gap: 12, alignItems: 'flex-end', marginBottom: 24, flexWrap: 'wrap' }}>
           <label style={{ display: 'flex', flexDirection: 'column', fontSize: 13, color: '#374151' }}>

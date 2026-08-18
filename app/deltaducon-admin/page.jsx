@@ -1,36 +1,12 @@
 import { redirect } from 'next/navigation';
 import { getSession, isCoordinator } from '../../lib/auth';
 import { listAll } from '../../lib/deltaducon-progress-store';
+// Elenco/trilhas moraram aqui até virarem módulo compartilhado com o painel da
+// coordenação — mesmo conteúdo, uma fonte só.
+import { TRACKS, TOTAL, ROSTER, slugify, doneInTrack } from '../../lib/deltaducon-roster';
 
 export const dynamic = 'force-dynamic';
 
-// Trilhas na mesma ordem/índice do curso (build-lessons.cjs / lessons.js)
-const TRACKS = [
-  'Inglês para Negócios', 'Assistentes Administrativos', 'Vendas / Comercial',
-  'Gestão Industrial', 'Qualidade e PCP', 'Gestão de Pessoas',
-  'Engenharia de Aplicação', 'Compras (Procurement)',
-];
-const TOTAL = 10;
-
-// Elenco fixo dos 18 (nome -> índice da trilha), igual ao dropdown do curso.
-const ROSTER = [
-  ['Aldo Stella Junior', 2], ['André Vinicius Neves Dias', 3], ['Andrea Rosa dos Santos', 2],
-  ['Anselmo Teixeira', 2], ['Carlos Eduardo Campos de Freitas', 2], ['Felipe da Silva Ribeiro Mariano', 2],
-  ['Felipe Gomes', 6], ['Fernando Antonio Rosatti', 7], ['Fernando Maranim Sandoval', 2],
-  ['Gabriel Marcos de Rosa Miari', 3], ['Gustavo Quintela dos Santos', 6], ['Hugo César Alves Dantas', 6],
-  ['Jefferson Matozinho da Luz', 6], ['Jessica Lima da Silva', 2], ['Marcio Clementino dos Santos Sousa', 6],
-  ['Milton Chiga', 2], ['Raphael Henrique Aguiar da Silva', 2], ['Ricardo Bruno Aguiar da Silva', 6],
-];
-
-function slugify(s) {
-  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 64);
-}
-function doneInTrack(done, t) {
-  if (!done) return 0;
-  const pref = t + '_';
-  return Object.keys(done).filter(k => k.startsWith(pref)).length;
-}
 function fmtDate(iso) {
   if (!iso) return '—';
   try { return new Date(iso).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); }

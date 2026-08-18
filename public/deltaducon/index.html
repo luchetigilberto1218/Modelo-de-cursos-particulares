@@ -1068,6 +1068,26 @@ function boot(){
 
 renderStudy();
 boot();
+
+/* Contador de acesso por empresa.
+
+   O material da Delta Ducon é HTML estático servido direto de /public, então o
+   EmpresaTracker do app (que é React) nunca rodou aqui — por isso o painel da
+   coordenação mostrava ~zero acesso para uma turma que estava estudando. Este
+   beacon chama a MESMA rota que o tracker usa, com a mesma janela de 30 min
+   para contar visita e não pageview.
+
+   Fire-and-forget: qualquer falha é engolida e a aula não sente nada. */
+(function contarAcesso() {
+  try {
+    var JANELA = 30 * 60 * 1000;
+    var agora = Date.now();
+    var ultimo = Number(sessionStorage.getItem('hit:deltaducon') || 0);
+    if (agora - ultimo < JANELA) return;
+    sessionStorage.setItem('hit:deltaducon', String(agora));
+    fetch('/api/hit?empresa=deltaducon', { method: 'POST', keepalive: true }).catch(function () {});
+  } catch (e) { /* sem sessionStorage: não conta, e tudo bem */ }
+})();
 </script>
 </body>
 </html>

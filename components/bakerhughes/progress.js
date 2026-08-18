@@ -20,7 +20,7 @@ const EVENT = 'bh-progress';
    `sync: false` = progresso só no navegador, sem servidor. */
 const CLIENTS = {
   bakerhughes: { api: '/api/bakerhughes', sync: true },
-  faapatendimento: { api: '/api/faapatendimento', sync: false },
+  faapatendimento: { api: '/api/faapatendimento', sync: true },
 };
 const DEFAULT_CLIENT = 'bakerhughes';
 const cfg = (clientId) => CLIENTS[clientId] || CLIENTS[DEFAULT_CLIENT];
