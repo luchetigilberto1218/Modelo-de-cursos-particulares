@@ -12,8 +12,18 @@ import { useEffect, useState, useCallback } from 'react';
  * O servidor deriva o aluno da sessão logada (o fetch não manda id).
  */
 const KEY = 'bh-progress-v1';
-const SYNC_API = '/api/bakerhughes/progress';
 const EVENT = 'bh-progress';
+
+/* Este módulo nasceu para a Baker Hughes e hoje também serve a FAAP. O cliente
+   entra como parâmetro OPCIONAL com o valor antigo por padrão, então toda
+   chamada existente (`useIdentity()`, `useDoneMap(id)`) segue idêntica.
+   `sync: false` = progresso só no navegador, sem servidor. */
+const CLIENTS = {
+  bakerhughes: { api: '/api/bakerhughes', sync: true },
+  faapatendimento: { api: '/api/faapatendimento', sync: false },
+};
+const DEFAULT_CLIENT = 'bakerhughes';
+const cfg = (clientId) => CLIENTS[clientId] || CLIENTS[DEFAULT_CLIENT];
 
 function readAll() {
   if (typeof window === 'undefined') return {};
@@ -31,31 +41,31 @@ export function getLesson(studentId, num) {
   return all[studentId]?.[num] || { done: false };
 }
 
-export function setLessonState(studentId, num, state) {
+export function setLessonState(studentId, num, state, clientId = DEFAULT_CLIENT) {
   if (!studentId) return;
   const all = readAll();
   all[studentId] = all[studentId] || {};
   all[studentId][num] = { ...all[studentId][num], ...state };
   writeAll(all);
-  pushRemote(studentId);
+  pushRemote(studentId, clientId);
 }
 
 /* -------------------------------------------------------------------------
  * Identidade: descobre quem está logado (uma vez por sessão de navegador).
  * ----------------------------------------------------------------------- */
-let identityCache = null;
-export function useIdentity(enabled = true) {
-  const [id, setId] = useState(identityCache);
+const identityCache = {};
+export function useIdentity(clientId = DEFAULT_CLIENT) {
+  const key = clientId || DEFAULT_CLIENT;
+  const [id, setId] = useState(identityCache[key] || null);
   useEffect(() => {
-    if (!enabled) return;
-    if (identityCache) { setId(identityCache); return; }
+    if (identityCache[key]) { setId(identityCache[key]); return; }
     let alive = true;
-    fetch('/api/bakerhughes/me', { cache: 'no-store' })
+    fetch(`${cfg(key).api}/me`, { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => { if (alive && d?.student) { identityCache = d; setId(d); } })
+      .then((d) => { if (alive && d?.student) { identityCache[key] = d; setId(d); } })
       .catch(() => {});
     return () => { alive = false; };
-  }, [enabled]);
+  }, [key]);
   return id; // { student, name, role } | null
 }
 
@@ -94,12 +104,13 @@ function resetLocalIfAsked(studentId) {
   } catch { /* ignore */ }
 }
 
-export async function pullRemote(studentId) {
+export async function pullRemote(studentId, clientId = DEFAULT_CLIENT) {
   if (typeof window === 'undefined' || !studentId || pulledOnce.has(studentId)) return;
   pulledOnce.add(studentId);
   resetLocalIfAsked(studentId);
+  if (!cfg(clientId).sync) return; // cliente sem servidor de progresso: só local
   try {
-    const res = await fetch(SYNC_API, { cache: 'no-store' });
+    const res = await fetch(`${cfg(clientId).api}/progress`, { cache: 'no-store' });
     if (!res.ok) return;
     const remote = await res.json();
     if (!remote || typeof remote !== 'object') return;
@@ -109,15 +120,16 @@ export async function pullRemote(studentId) {
       all[studentId] = local;
       writeAll(all);
     }
-    if (Object.keys(all[studentId] || {}).length) pushRemote(studentId);
+    if (Object.keys(all[studentId] || {}).length) pushRemote(studentId, clientId);
   } catch { /* offline / sem backend: segue só no localStorage */ }
 }
 
-export function pushRemote(studentId) {
+export function pushRemote(studentId, clientId = DEFAULT_CLIENT) {
   if (typeof window === 'undefined' || !studentId) return;
+  if (!cfg(clientId).sync) return; // só localStorage
   try {
     const all = readAll();
-    fetch(SYNC_API, {
+    fetch(`${cfg(clientId).api}/progress`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(all[studentId] || {}),
@@ -136,32 +148,32 @@ export function getDoneMap(studentId) {
 }
 
 /** Hook reativo: mapa de concluídas, re-renderiza em mudanças. */
-export function useDoneMap(studentId) {
+export function useDoneMap(studentId, clientId = DEFAULT_CLIENT) {
   const [map, setMap] = useState({});
   const refresh = useCallback(() => setMap(getDoneMap(studentId)), [studentId]);
   useEffect(() => {
     if (!studentId) return;
     refresh();
-    pullRemote(studentId);
+    pullRemote(studentId, clientId);
     const h = () => refresh();
     window.addEventListener(EVENT, h);
     window.addEventListener('storage', h);
     return () => { window.removeEventListener(EVENT, h); window.removeEventListener('storage', h); };
-  }, [refresh, studentId]);
+  }, [refresh, studentId, clientId]);
   return map;
 }
 
 /** Hook para uma lição: done + marcar como concluída (idempotente). */
-export function useLessonDone(studentId, num) {
+export function useLessonDone(studentId, num, clientId = DEFAULT_CLIENT) {
   const [done, setDone] = useState(false);
   useEffect(() => {
     if (!studentId) return;
     setDone(!!getLesson(studentId, num).done);
-    pullRemote(studentId);
+    pullRemote(studentId, clientId);
     const h = () => setDone(!!getLesson(studentId, num).done);
     window.addEventListener(EVENT, h);
     return () => window.removeEventListener(EVENT, h);
-  }, [studentId, num]);
+  }, [studentId, num, clientId]);
 
   // A data só é gravada na PRIMEIRA conclusão — refazer a lição não a reescreve.
   const markDone = useCallback(() => {
@@ -170,8 +182,8 @@ export function useLessonDone(studentId, num) {
     if (cur.done && cur.doneAt) return;
     const state = { done: true };
     if (!cur.doneAt) state.doneAt = new Date().toISOString();
-    setLessonState(studentId, num, state);
-  }, [studentId, num]);
+    setLessonState(studentId, num, state, clientId);
+  }, [studentId, num, clientId]);
 
   return { done, markDone };
 }

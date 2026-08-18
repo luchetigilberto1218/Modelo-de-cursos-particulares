@@ -75,8 +75,8 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
   // corrigíveis são respondidos, a lição "acende" na trilha e continua acesa no
   // próximo acesso — inclusive de outro aparelho. Falha de rede não atrapalha:
   // o estudo segue igual, só não sincroniza.
-  const identity = useIdentity();
-  const { done: savedDone, markDone: persistDone } = useLessonDone(identity?.student, l.num);
+  const identity = useIdentity(clientId);
+  const { done: savedDone, markDone: persistDone } = useLessonDone(identity?.student, l.num, clientId);
   useEffect(() => {
     if (allDone) persistDone();
   }, [allDone, persistDone]);
@@ -105,7 +105,7 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
         <div style={{ maxWidth: 820, margin: '0 auto', padding: '14px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
           <Link href={`/${clientId}`} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
             {school && <img src={school} alt="Alumni" style={{ height: 24 }} />}
-            <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: 13 }}>Baker Hughes</span>
+            <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: 13 }}>{theme?.clientName || 'Baker Hughes'}</span>
           </Link>
           <Link href={backHref || `/${clientId}`} style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: 13, fontWeight: 500 }}>← Trilha</Link>
         </div>
@@ -121,6 +121,16 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
           <h1 style={{ fontSize: 'clamp(26px, 4vw, 38px)', fontWeight: 800, letterSpacing: -0.6, lineHeight: 1.1, margin: '0 0 12px' }}>{l.title}</h1>
           <span style={{ display: 'inline-block', fontSize: 13, padding: '5px 12px', borderRadius: 999, background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.18)' }}>{l.focus}</span>
         </div>
+        {/* Foto de abertura (`l.image`). Aditivo: lição sem o campo abre igual
+            ao que já estava no ar. */}
+        {l.image && (
+          <figure style={{ maxWidth: 820, margin: '0 auto', padding: '0 24px 26px' }}>
+            <img src={l.image} alt={l.imageCaption || l.title} style={{ display: 'block', width: '100%', height: 'auto', maxHeight: 300, objectFit: 'cover', objectPosition: l.imagePosition || 'center', borderRadius: 14, border: '1px solid rgba(255,255,255,0.16)' }} />
+            {l.imageCaption && (
+              <figcaption style={{ marginTop: 8, fontSize: 12.5, color: 'rgba(255,255,255,0.66)', lineHeight: 1.5 }}>{l.imageCaption}</figcaption>
+            )}
+          </figure>
+        )}
       </div>
 
       {/* Onde você está — a lição do dia dentro da trilha, sempre visível */}

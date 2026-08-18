@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Movies">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04091A"/><stop offset="55%" stop-color="#0A1B3D"/><stop offset="100%" stop-color="#0B2E63"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B6B"/><stop offset="100%" stop-color="#CB142D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <rect width="1200" height="6" fill="url(#rule)"/>
+  <rect x="830" y="150" width="70" height="190" rx="8" fill="none" stroke="#FF6B6B" stroke-width="2" opacity="0.5"/><rect x="920" y="190" width="70" height="190" rx="8" fill="none" stroke="#FF6B6B" stroke-width="2" opacity="0.4"/><rect x="1010" y="150" width="70" height="190" rx="8" fill="none" stroke="#FF6B6B" stroke-width="2" opacity="0.3"/><rect x="1100" y="190" width="70" height="190" rx="8" fill="none" stroke="#FF6B6B" stroke-width="2" opacity="0.19999999999999996"/><circle cx="900" cy="120" r="6" fill="#FF6B6B"/><circle cx="990" cy="120" r="6" fill="#FF6B6B" opacity=".6"/>
+  <text x="80" y="230" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#FF6B6B">POP CULTURE</text>
+  <text x="80" y="310" font-family="Inter, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-2" fill="#FFFFFF">Movies</text>
+  <rect x="80" y="350" width="90" height="4" rx="2" fill="#FF6B6B"/>
+</svg>

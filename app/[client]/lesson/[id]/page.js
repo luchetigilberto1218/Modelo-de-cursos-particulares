@@ -6,6 +6,10 @@ import NavBar from '../../../../components/NavBar';
 import LessonView from '../../../../components/LessonView';
 import BakerHughesLesson from '../../../../components/bakerhughes/BakerHughesLesson';
 
+// Clientes de auto-estudo que usam o renderizador self-study (hero, tradução,
+// exercícios auto-corrigíveis). Aditivo: quem não está aqui segue no LessonView.
+const SELF_STUDY = ['bakerhughes', 'faapatendimento'];
+
 export default async function LessonPage({ params }) {
   const { client, id } = await params;
   const session = await guardClient(client);
@@ -46,7 +50,7 @@ export default async function LessonPage({ params }) {
       ? siblings[siblingIndex + 1].num
       : null;
 
-  if (client === 'bakerhughes') {
+  if (SELF_STUDY.includes(client)) {
     // "Onde você está": posição da lição dentro da própria trilha.
     const position = {
       index: siblingIndex >= 0 ? siblingIndex + 1 : 1,

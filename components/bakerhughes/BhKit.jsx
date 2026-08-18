@@ -1,14 +1,26 @@
 'use client';
 
+import { useState } from 'react';
+
 /*
   Baker Hughes — peças de UI compartilhadas pelos formatos de exercício novos.
   Vive só dentro de components/bakerhughes: o BakerHughesLesson original segue
   com as suas próprias cópias, então nada do que já está no ar muda.
 */
 
-export function ExShell({ title, c, badge, children }) {
+export function ExShell({ title, c, badge, children, image, imageCaption }) {
   return (
     <div style={{ background: '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, padding: 20, marginBottom: 16 }}>
+      {/* Imagem opcional do exercício (`ex.image`). Aditivo: exercício sem o
+          campo continua exatamente como antes. */}
+      {image && (
+        <figure style={{ margin: '-20px -20px 16px', borderRadius: '12px 12px 0 0', overflow: 'hidden' }}>
+          <img src={image} alt={imageCaption || ''} style={{ display: 'block', width: '100%', height: 'auto', maxHeight: 260, objectFit: 'cover' }} />
+          {imageCaption && (
+            <figcaption style={{ padding: '8px 20px 0', fontSize: 12.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}>{imageCaption}</figcaption>
+          )}
+        </figure>
+      )}
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14, flexWrap: 'wrap' }}>
         {badge && (
           <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.5, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: c.accentLight || '#E4F7EC', color: c.navy || '#062E2B' }}>{badge}</span>
@@ -16,6 +28,42 @@ export function ExShell({ title, c, badge, children }) {
         <h4 style={{ margin: 0, fontSize: 16, color: c.navy || '#062E2B' }}>{title}</h4>
       </div>
       {children}
+    </div>
+  );
+}
+
+/* Transcript de um áudio, sob demanda. Existe porque parte do público estuda
+   sozinho e em nível básico: sem o texto, um áudio que não se entende vira
+   parede. Aditivo — só aparece onde o JSON traz o texto. */
+export function TranscriptToggle({ text, pt, c, hint }) {
+  const [open, setOpen] = useState(false);
+  const [showPt, setShowPt] = useState(false);
+  if (!text) return null;
+  const navy = c.navy || '#062E2B';
+  const accent = c.accent || '#00B04F';
+  const gray = c.gray || '#5F7570';
+  const grayLight = c.grayLight || '#E2E9E7';
+  return (
+    <div style={{ marginTop: 8 }}>
+      <button type="button" onClick={() => setOpen((o) => !o)}
+        style={{ padding: '5px 12px', borderRadius: 999, border: `1px solid ${grayLight}`, background: '#fff', color: navy, fontWeight: 700, fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer' }}>
+        {open ? 'ocultar transcript' : '📄 ver transcript'}
+      </button>
+      {open && (
+        <div style={{ marginTop: 8, padding: '10px 13px', background: c.offWhite || '#F5F8F7', border: `1px solid ${grayLight}`, borderRadius: 10 }}>
+          {hint && <div style={{ fontSize: 12, color: gray, marginBottom: 6 }}>{hint}</div>}
+          <div style={{ fontSize: 14.5, lineHeight: 1.6, color: c.text || '#20302D' }}>{text}</div>
+          {pt && (
+            <>
+              {showPt && <div style={{ marginTop: 8, fontSize: 13.5, lineHeight: 1.55, color: gray, fontStyle: 'italic' }}>{pt}</div>}
+              <button type="button" onClick={() => setShowPt((v) => !v)}
+                style={{ marginTop: 8, padding: 0, border: 'none', background: 'transparent', color: accent, fontWeight: 700, fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer', textDecoration: 'underline' }}>
+                {showPt ? 'ocultar tradução' : 'tradução'}
+              </button>
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 }

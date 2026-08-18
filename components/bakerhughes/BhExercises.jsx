@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import AudioPlayer from '../AudioPlayer';
-import { ExShell, Instruction, CheckRow, ResultLine, norm, seededShuffle, hashString } from './BhKit';
+import { ExShell, Instruction, CheckRow, ResultLine, TranscriptToggle, norm, seededShuffle, hashString } from './BhKit';
 
 /*
   Baker Hughes — banco de formatos de exercício das trilhas personalizadas.
@@ -37,6 +37,7 @@ export const BH_EXTRA_TYPES = [
   'emailTriage',
   'swipeChoice',
   'checkOff',
+  'dialogue',
 ];
 
 // Exercícios que não contam para fechar a lição. O `checkOff` saiu daqui em
@@ -65,6 +66,7 @@ export default function BhExercise({ ex, c, voiceType, onChecked, seed = 1 }) {
     case 'emailTriage': return <EmailTriage {...props} />;
     case 'swipeChoice': return <SwipeChoice {...props} />;
     case 'checkOff': return <CheckOff {...props} />;
+    case 'dialogue': return <Dialogue {...props} />;
     default: return null;
   }
 }
@@ -80,7 +82,7 @@ function MultiSelect({ ex, c, onChecked }) {
   const acc = options.length ? right / options.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Marque todas'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Marque todas'}>
       <Instruction c={c}>{ex.instruction || 'Marque todas as opções corretas — há mais de uma.'}</Instruction>
       {ex.prompt && <p style={{ fontSize: 15.5, fontWeight: 600, color: c.navy || '#062E2B', margin: '0 0 12px', lineHeight: 1.6 }}>{ex.prompt}</p>}
       <div style={{ display: 'grid', gap: 8 }}>
@@ -117,7 +119,7 @@ function TrueFalse({ ex, c, onChecked }) {
   const labels = ex.labels || ['True', 'False'];
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'True or false'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'True or false'}>
       <Instruction c={c}>{ex.instruction || 'Verdadeiro ou falso? Decida com base no que você viu na lição.'}</Instruction>
       <div style={{ display: 'grid', gap: 10 }}>
         {items.map((it, i) => (
@@ -154,7 +156,7 @@ function Categorize({ ex, c, onChecked, seed }) {
   const acc = items.length ? items.filter((_, i) => isRight(i)).length / items.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Classifique'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Classifique'}>
       <Instruction c={c}>{ex.instruction || 'Escolha a categoria certa para cada item.'}</Instruction>
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 14 }}>
         {cats.map((cat) => (
@@ -196,7 +198,7 @@ function OddOneOut({ ex, c, onChecked }) {
   const acc = groups.length ? groups.filter((_, g) => isRight(g)).length / groups.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Odd one out'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Odd one out'}>
       <Instruction c={c}>{ex.instruction || 'Em cada linha, clique na palavra que não pertence ao grupo.'}</Instruction>
       <div style={{ display: 'grid', gap: 12 }}>
         {groups.map((g, gi) => (
@@ -239,7 +241,7 @@ function OrderList({ ex, c, onChecked, seed, badge }) {
   const label = (x) => (typeof x === 'string' ? x : `${x.who ? `${x.who}: ` : ''}${x.text}`);
 
   return (
-    <ExShell title={ex.title} c={c} badge={badge || ex.badge || 'Coloque em ordem'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={badge || ex.badge || 'Coloque em ordem'}>
       <Instruction c={c}>{ex.instruction || 'Clique nas linhas na ordem certa. Use "Voltar uma" se errar o clique.'}</Instruction>
       {ex.scale && (
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12.5, fontWeight: 700, color: c.gray || '#5F7570', marginBottom: 10 }}>
@@ -294,7 +296,7 @@ function ErrorSpot({ ex, c, onChecked }) {
   const acc = items.length ? items.filter((_, i) => isRight(i)).length / items.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Ache o erro'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Ache o erro'}>
       <Instruction c={c}>{ex.instruction || 'Cada frase tem uma palavra errada. Clique nela.'}</Instruction>
       <div style={{ display: 'grid', gap: 14 }}>
         {items.map((it, i) => {
@@ -341,7 +343,7 @@ function HighlightPick({ ex, c, onChecked, voiceType }) {
   const acc = Math.max(0, (hits - wrong) / totalTargets);
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Clique nas palavras'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Clique nas palavras'}>
       <Instruction c={c}>{ex.instruction || 'Clique em todas as expressões que servem para o objetivo indicado.'}</Instruction>
       {ex.goal && <p style={{ fontSize: 14.5, fontWeight: 700, color: c.navy || '#062E2B', margin: '0 0 12px' }}>{ex.goal}</p>}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, fontSize: 15.5, lineHeight: 1.9, padding: '14px', background: c.offWhite || '#F5F8F7', borderRadius: 10, border: `1px solid ${c.grayLight || '#E2E9E7'}` }}>
@@ -372,7 +374,7 @@ function DropdownGap({ ex, c, onChecked }) {
   const parts = String(ex.text || '').split('___');
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Complete o texto'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Complete o texto'}>
       <Instruction c={c}>{ex.instruction || 'Escolha a opção certa em cada lacuna.'}</Instruction>
       <div style={{ fontSize: 15.5, lineHeight: 2.1, padding: '14px 16px', background: c.offWhite || '#F5F8F7', borderRadius: 10, border: `1px solid ${c.grayLight || '#E2E9E7'}` }}>
         {parts.map((p, i) => (
@@ -408,7 +410,7 @@ function SerialChoice({ ex, c, onChecked }) {
   const acc = items.length ? items.filter((_, i) => isRight(i)).length / items.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Escolha certa'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Escolha certa'}>
       <Instruction c={c}>{ex.instruction}</Instruction>
       <div style={{ display: 'grid', gap: 14 }}>
         {items.map((it, i) => (
@@ -460,7 +462,7 @@ function FlowChoice({ ex, c, onChecked, voiceType }) {
   };
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Conversa'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Conversa'}>
       <Instruction c={c}>{ex.instruction || 'A conversa avança conforme você escolhe. Escolha a resposta mais natural em cada turno.'}</Instruction>
       {ex.situation && <div style={{ padding: '11px 14px', background: c.offWhite || '#F5F8F7', borderRadius: 10, border: `1px solid ${c.grayLight || '#E2E9E7'}`, fontSize: 14, fontStyle: 'italic', marginBottom: 14, lineHeight: 1.55 }}>{ex.situation}</div>}
       <div style={{ display: 'grid', gap: 12 }}>
@@ -513,7 +515,7 @@ function ListenChoose({ ex, c, onChecked, voiceType }) {
   const acc = items.length ? items.filter((_, i) => isRight(i)).length / items.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Ouça e escolha'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Ouça e escolha'}>
       <Instruction c={c}>{ex.instruction || 'Toque no áudio (quantas vezes quiser) e escolha o que você ouviu ou a melhor resposta.'}</Instruction>
       <div style={{ display: 'grid', gap: 14 }}>
         {items.map((it, i) => (
@@ -521,6 +523,11 @@ function ListenChoose({ ex, c, onChecked, voiceType }) {
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
               <AudioPlayer text={it.audio} rate={it.rate || 0.9} label={`Áudio ${i + 1}`} small voiceType={it.voice || voiceType} />
             </div>
+            {/* Transcript só onde o conteúdo pede (`transcript: true` ou o texto).
+                Sem o campo, o bloco fica exatamente como sempre foi. */}
+            {it.transcript && (
+              <TranscriptToggle text={typeof it.transcript === 'string' ? it.transcript : it.audio} pt={it.pt} c={c} hint="Tente ouvir duas vezes antes de ler." />
+            )}
             <div style={{ display: 'grid', gap: 7 }}>
               {(it.options || []).map((o, oi) => {
                 const on = pick[i] === oi;
@@ -553,11 +560,14 @@ function ListenGap({ ex, c, onChecked, voiceType }) {
   const acc = items.length ? items.filter((_, i) => isRight(i)).length / items.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Ouça e complete'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Ouça e complete'}>
       <Instruction c={c}>{ex.instruction || 'Ouça o trecho e complete as lacunas com o banco de palavras.'}</Instruction>
       {ex.audioText && (
         <div style={{ padding: '12px 14px', background: c.accentLight || '#E4F7EC', borderRadius: 10, marginBottom: 14 }}>
           <AudioPlayer text={ex.audioText} rate={ex.rate || 0.88} label="Ouvir o trecho completo" small voiceType={voiceType} />
+          {ex.transcript && (
+            <TranscriptToggle text={typeof ex.transcript === 'string' ? ex.transcript : ex.audioText} pt={ex.audioTextPt} c={c} hint="Tente ouvir duas vezes antes de ler." />
+          )}
         </div>
       )}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 14 }}>
@@ -605,7 +615,7 @@ function SentenceBuild({ ex, c, onChecked, seed, voiceType }) {
   const back = (i) => !checked && setBuilt((b) => ({ ...b, [i]: (b[i] || []).slice(0, -1) }));
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Monte a frase'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Monte a frase'}>
       <Instruction c={c}>{ex.instruction || 'Clique nos blocos na ordem certa. Alguns blocos sobram — são distratores.'}</Instruction>
       <div style={{ display: 'grid', gap: 18 }}>
         {items.map((it, i) => {
@@ -657,7 +667,7 @@ function ReadingTask({ ex, c, onChecked, voiceType }) {
   const acc = qs.length ? qs.filter((_, i) => isRight(i)).length / qs.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Leia e responda'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Leia e responda'}>
       <Instruction c={c}>{ex.instruction || 'Leia o texto e responda com base nele.'}</Instruction>
       <div style={{ padding: '16px 18px', background: c.offWhite || '#F5F8F7', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, marginBottom: 16 }}>
         {ex.heading && <div style={{ fontSize: 12.5, fontWeight: 800, letterSpacing: 1, textTransform: 'uppercase', color: accent, marginBottom: 8 }}>{ex.heading}</div>}
@@ -704,7 +714,7 @@ function EmailTriage({ ex, c, onChecked }) {
   const m = ex.email || {};
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'Caixa de entrada'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Caixa de entrada'}>
       <Instruction c={c}>{ex.instruction || 'Leia a mensagem como se tivesse acabado de chegar e decida o que fazer.'}</Instruction>
       <div style={{ border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, overflow: 'hidden', marginBottom: 16 }}>
         <div style={{ background: c.navy || '#062E2B', color: '#fff', padding: '11px 15px', fontSize: 13 }}>
@@ -750,7 +760,7 @@ function SwipeChoice({ ex, c, onChecked }) {
   const acc = items.length ? items.filter((_, i) => isRight(i)).length / items.length : 0;
 
   return (
-    <ExShell title={ex.title} c={c} badge={ex.badge || 'A ou B'}>
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'A ou B'}>
       <Instruction c={c}>{ex.instruction || 'Duas versões da mesma ideia. Qual funciona melhor no contexto?'}</Instruction>
       <div style={{ display: 'grid', gap: 14 }}>
         {items.map((it, i) => (
@@ -843,5 +853,89 @@ function CheckOff({ ex, c, voiceType, onChecked }) {
         )}
       </div>
     </div>
+  );
+}
+
+/* ───────── 18. Diálogo com transcript e tradução ─────────
+   Conversa curta em duas vozes: o aluno ouve, lê o transcript (sempre à mão,
+   porque o público é básico), abre a tradução se precisar e só então responde
+   às perguntas de compreensão — que são o que fecha o bloco. */
+function Dialogue({ ex, c, onChecked, voiceType }) {
+  const accent = c.accent || '#00B04F';
+  const navy = c.navy || '#062E2B';
+  const gray = c.gray || '#5F7570';
+  const grayLight = c.grayLight || '#E2E9E7';
+  const offWhite = c.offWhite || '#F5F8F7';
+  const lines = ex.lines || [];
+  const questions = ex.questions || [];
+  const [showPt, setShowPt] = useState(false);
+  const [pick, setPick] = useState({});
+  const [checked, setChecked] = useState(false);
+  const isRight = (i) => pick[i] === (questions[i].options || []).findIndex((o) => o.correct);
+  const acc = questions.length ? questions.filter((_, i) => isRight(i)).length / questions.length : 1;
+  const fullText = lines.map((l) => l.en).join(' ');
+
+  return (
+    <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={ex.badge || 'Diálogo'}>
+      <Instruction c={c}>{ex.instruction || 'Ouça a conversa, leia junto e depois responda às perguntas.'}</Instruction>
+      {ex.scene && (
+        <p style={{ fontSize: 13.5, color: gray, margin: '0 0 12px', lineHeight: 1.55, fontStyle: 'italic' }}>{ex.scene}</p>
+      )}
+
+      <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', marginBottom: 12 }}>
+        <AudioPlayer text={fullText} rate={ex.rate || 0.88} label="Ouvir a conversa inteira" small voiceType={voiceType} />
+        <button type="button" onClick={() => setShowPt((v) => !v)}
+          style={{ padding: '6px 13px', borderRadius: 999, border: `1px solid ${grayLight}`, background: '#fff', color: navy, fontWeight: 700, fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer' }}>
+          {showPt ? 'Ocultar tradução' : '🇧🇷 Ver tradução'}
+        </button>
+      </div>
+
+      <div style={{ display: 'grid', gap: 8, marginBottom: 18 }}>
+        {lines.map((ln, i) => {
+          const mine = /^(you|voc[êe])/i.test(ln.who || '');
+          return (
+            <div key={i} style={{ padding: '11px 14px', borderRadius: 12, background: mine ? c.accentLight || '#E4F7EC' : offWhite, border: `1px solid ${mine ? accent : grayLight}` }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 5, flexWrap: 'wrap' }}>
+                <span style={{ fontSize: 11, fontWeight: 800, letterSpacing: 0.6, textTransform: 'uppercase', color: mine ? navy : gray }}>{ln.who}</span>
+                <AudioPlayer text={ln.en} rate={ln.rate || 0.85} label="" small voiceType={ln.voice || voiceType} />
+              </div>
+              <div style={{ fontSize: 15, lineHeight: 1.6, color: c.text || '#20302D' }}>{ln.en}</div>
+              {showPt && ln.pt && (
+                <div style={{ marginTop: 6, fontSize: 13.5, lineHeight: 1.55, color: gray, fontStyle: 'italic' }}>{ln.pt}</div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {questions.length > 0 && (
+        <>
+          <p style={{ fontSize: 13.5, fontWeight: 700, color: navy, margin: '0 0 10px' }}>{ex.questionsLabel || 'Você entendeu?'}</p>
+          <div style={{ display: 'grid', gap: 14 }}>
+            {questions.map((q, i) => (
+              <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? '#F0FFF4' : '#FFF5F5') : '#fff', border: `1px solid ${checked ? (isRight(i) ? '#9AE6B4' : '#FEB2B2') : grayLight}` }}>
+                <p style={{ margin: '0 0 9px', fontSize: 14.5, fontWeight: 600, color: navy, lineHeight: 1.5 }}>{q.q}</p>
+                <div style={{ display: 'grid', gap: 7 }}>
+                  {(q.options || []).map((o, oi) => {
+                    const on = pick[i] === oi;
+                    const state = checked ? (o.correct ? 'ok' : on ? 'bad' : null) : null;
+                    return (
+                      <button key={oi} type="button" onClick={() => !checked && setPick((p) => ({ ...p, [i]: oi }))} disabled={checked}
+                        style={{ textAlign: 'left', padding: '9px 13px', borderRadius: 10, fontSize: 14.5, lineHeight: 1.5, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
+                          background: state === 'ok' ? '#C6F6D5' : state === 'bad' ? '#FED7D7' : on ? c.accentLight || '#E4F7EC' : '#fff',
+                          border: `1.5px solid ${state === 'ok' ? '#9AE6B4' : state === 'bad' ? '#FEB2B2' : on ? accent : grayLight}`,
+                          color: c.text || '#20302D' }}>{o.text}</button>
+                    );
+                  })}
+                </div>
+                {checked && q.why && <div style={{ marginTop: 8, fontSize: 13.5, color: gray, lineHeight: 1.55 }}>{q.why}</div>}
+              </div>
+            ))}
+          </div>
+          <CheckRow checked={checked} setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(acc); }} onReset={() => setPick({})} canCheck={questions.every((_, i) => pick[i] !== undefined)} c={c} />
+          {checked && <ResultLine ok={acc === 1} c={c} explanation={ex.explanation} corrections={questions.filter((_, i) => !isRight(i)).map((q) => (q.options || []).find((o) => o.correct)?.text).filter(Boolean)} />}
+        </>
+      )}
+    </ExShell>
   );
 }

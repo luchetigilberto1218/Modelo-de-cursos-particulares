@@ -22,8 +22,8 @@ export default function BakerHughesTrack({ course, theme, clientId, trackId, stu
 
   // Lições concluídas: acendem verde com ✓ e alimentam o contador do topo.
   // Enquanto a identidade não carrega, `doneMap` é {} e a tela é a de sempre.
-  const identity = useIdentity();
-  const doneMap = useDoneMap(identity?.student);
+  const identity = useIdentity(clientId);
+  const doneMap = useDoneMap(identity?.student, clientId);
   const doneCount = lessons.filter((l) => doneMap[l.num]).length;
   const nextNum = (lessons.find((l) => !doneMap[l.num]) || {}).num;
   const pct = lessons.length ? Math.round((doneCount / lessons.length) * 100) : 0;
@@ -34,7 +34,7 @@ export default function BakerHughesTrack({ course, theme, clientId, trackId, stu
         <div style={{ maxWidth: 880, margin: '0 auto', padding: '14px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Link href={`/${clientId}`} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
             {school && <img src={school} alt="Alumni" style={{ height: 24 }} />}
-            <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: 13 }}>Baker Hughes</span>
+            <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: 13 }}>{theme?.clientName || 'Baker Hughes'}</span>
           </Link>
           <Link href={`/${clientId}`} style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: 13, fontWeight: 500 }}>← Home</Link>
         </div>

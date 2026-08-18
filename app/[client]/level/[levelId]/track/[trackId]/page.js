@@ -7,6 +7,7 @@ import TrackPage from '../../../../../../components/TrackPage';
 import BakerHughesTrack from '../../../../../../components/bakerhughes/BakerHughesTrack';
 
 const VALID_LEVELS = ['confidence', 'essentials', 'rise', 'apex'];
+const SELF_STUDY = ['bakerhughes', 'faapatendimento'];
 
 export default async function TrackRoute({ params }) {
   const { client, levelId, trackId } = await params;
@@ -22,7 +23,7 @@ export default async function TrackRoute({ params }) {
   // Trilha pessoal de outro aluno: manda de volta pra home, sem vazar conteúdo.
   if (!canAccessTrack(session, track)) redirect(`/${client}`);
 
-  if (client === 'bakerhughes') {
+  if (SELF_STUDY.includes(client)) {
     return (
       <BakerHughesTrack
         course={course}
