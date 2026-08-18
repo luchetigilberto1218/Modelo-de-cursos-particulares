@@ -644,7 +644,7 @@ module.exports = [
       instruction: 'Siglas ditas rápido são o que mais escapa numa reunião. Ouça — o transcript está aí.',
       items: [
         {
-          audio: 'Our students follow the I B Diploma Programme in the last two years.',
+          audio: 'Our students follow the IB Diploma Programme in the last two years.',
           pt: 'Os nossos alunos seguem o Programa do Diploma do IB nos dois últimos anos.',
           options: [
             { text: 'They follow the IB Diploma Programme.', correct: true },
@@ -654,7 +654,7 @@ module.exports = [
           why: 'IB se diz letra por letra: "eye-bee".',
         },
         {
-          audio: 'Most of them will sit the S A T in the autumn, and some will take the A C T instead.',
+          audio: 'Most of them will sit the SAT in the autumn, and some will take the ACT instead.',
           pt: 'A maioria vai prestar o SAT no outono, e alguns vão fazer o ACT no lugar.',
           options: [
             { text: 'Some take the ACT instead of the SAT.', correct: true },
