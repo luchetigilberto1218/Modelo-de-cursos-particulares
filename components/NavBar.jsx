@@ -22,9 +22,13 @@ export default function NavBar({ user, theme, clientId }) {
   }, [user, clientId]);
   const shownUser = user || me;
 
+  // Sair guarda o curso de onde a pessoa saiu (`?next=`), para que entrar de
+  // novo devolva ela ao MESMO material. Sem isso o login caía na raiz, que
+  // lista os outros clientes do cadastro — quem sai da Czarnikow via a tela de
+  // "escolha o material" com Porto de Santos e Baker Hughes.
   async function handleLogout() {
     await fetch('/api/auth', { method: 'DELETE' });
-    router.push('/login');
+    router.push(clientId ? `/login?next=${encodeURIComponent(`/${clientId}`)}` : '/login');
     router.refresh();
   }
 

@@ -2,16 +2,8 @@
 
 import { Suspense, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { primaryClient } from '../../lib/primary-client';
+import { primaryClient, allowedNext } from '../../lib/primary-client';
 
-// Destino pós-login pedido pela URL (?next=/algum/caminho). Só aceitamos caminho
-// relativo do próprio site — nunca "//host" ou URL absoluta, senão o link viraria
-// um redirecionador aberto para fora.
-function safeNext(raw) {
-  if (typeof raw !== 'string') return null;
-  if (!raw.startsWith('/') || raw.startsWith('//')) return null;
-  return raw;
-}
 
 export default function LoginPage() {
   return (
@@ -69,8 +61,14 @@ function LoginForm() {
       // Só quem tem dois cursos distintos cai em `/`, que agora lista os dois.
       const home = primaryClient(data.user);
       const fallback = home ? `/${home}` : '/';
-      const dest = safeNext(searchParams.get('next')) || fallback;
-      router.push(dest);
+      // `allowedNext` só aceita caminho interno E que esta pessoa possa abrir —
+      // assim o link não vira redirecionador para fora, e ninguém é mandado para
+      // o material de outra empresa (o guard devolveria ao login em looping).
+      const dest = allowedNext(data.user, searchParams.get('next')) || fallback;
+      // `replace` e não `push`: a tela de login não fica no histórico. Sem isso,
+      // o "voltar" do navegador cai no login e, de lá, em qualquer página que
+      // estivesse aberta antes — inclusive o material de outro cliente.
+      router.replace(dest);
       router.refresh();
     } catch {
       setError('Connection error');

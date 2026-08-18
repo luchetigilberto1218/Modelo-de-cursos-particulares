@@ -61,7 +61,7 @@ export default function FaapHome({ course, theme, clientId, student, role }) {
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             {student && <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)' }}>{student}</span>}
-            <LogoutLink gray="rgba(255,255,255,0.55)" />
+            <LogoutLink gray="rgba(255,255,255,0.55)" clientId={clientId} />
           </div>
         </div>
       </div>
@@ -196,11 +196,14 @@ function TrackCard({ track, c, clientId, lessons, doneMap, dark }) {
   );
 }
 
-function LogoutLink({ gray }) {
+// Sair guarda o curso de origem (`?next=`): entrar de novo devolve a pessoa ao
+// MESMO material, em vez da raiz, que lista os outros clientes do cadastro.
+function LogoutLink({ gray, clientId }) {
   const [busy, setBusy] = useState(false);
+  const back = clientId ? `/login?next=${encodeURIComponent(`/${clientId}`)}` : '/login';
   return (
     <button type="button" disabled={busy}
-      onClick={async () => { setBusy(true); try { await fetch('/api/auth', { method: 'DELETE' }); } catch {} window.location.href = '/login'; }}
+      onClick={async () => { setBusy(true); try { await fetch('/api/auth', { method: 'DELETE' }); } catch {} window.location.href = back; }}
       style={{ background: 'transparent', border: 'none', color: gray, fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer', padding: 0 }}>
       sair
     </button>
