@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import AudioPlayer from '../AudioPlayer';
-import { ExShell, Instruction, CheckRow, ResultLine, TranscriptToggle, norm, seededShuffle, hashString } from './BhKit';
+import { ExShell, Instruction, CheckRow, ResultLine, TranscriptToggle, maybeShuffle, norm, seededShuffle, hashString } from './BhKit';
 
 /*
   Baker Hughes — banco de formatos de exercício das trilhas personalizadas.
@@ -46,7 +46,59 @@ export const BH_EXTRA_TYPES = [
 // fazer, e exigir tudo marcado viraria pressão para marcar por obrigação.
 export const BH_UNGRADED_TYPES = [];
 
-export default function BhExercise({ ex, c, voiceType, onChecked, seed = 1 }) {
+/* Embaralha as alternativas antes de renderizar.
+
+   O conteúdo foi escrito com a resposta certa quase sempre em primeiro lugar
+   (e, no A ou B, quase sempre na segunda). Quem percebe o padrão acerta tudo
+   sem ler. Aqui a ordem é sorteada uma vez, a partir do próprio texto do item,
+   e não muda mais: recarregar a página não faz a resposta trocar de lugar.
+
+   O que NÃO se embaralha: `items` de orderList (é a resposta), de categorize,
+   trueFalse, errorSpot e sentenceBuild — esses componentes já sorteiam o que
+   precisa sorteia por dentro. */
+function embaralhar(ex, ligado) {
+  if (!ligado || !ex) return ex;
+  const k = (extra) => `${ex.type}|${ex.title || ''}|${extra}`;
+  const out = { ...ex };
+
+  if (Array.isArray(out.options)) out.options = maybeShuffle(out.options, true, k('options'));
+
+  if (Array.isArray(out.items) && ['serialChoice', 'listenChoose'].includes(ex.type)) {
+    out.items = out.items.map((it, i) => (it && typeof it === 'object' && Array.isArray(it.options)
+      ? { ...it, options: maybeShuffle(it.options, true, k(it.prompt || it.audio || i)) }
+      : it));
+  }
+  if (Array.isArray(out.questions)) {
+    out.questions = out.questions.map((q, i) => (Array.isArray(q.options)
+      ? { ...q, options: maybeShuffle(q.options, true, k(q.q || q.prompt || i)) } : q));
+  }
+  if (Array.isArray(out.turns)) {
+    out.turns = out.turns.map((t, i) => (Array.isArray(t.options)
+      ? { ...t, options: maybeShuffle(t.options, true, k(t.them || i)) } : t));
+  }
+  if (Array.isArray(out.gaps)) {
+    out.gaps = out.gaps.map((g, i) => (Array.isArray(g.options)
+      ? { ...g, options: maybeShuffle(g.options, true, k(g.answer || i)) } : g));
+  }
+  if (Array.isArray(out.groups)) {
+    out.groups = out.groups.map((g, i) => (Array.isArray(g.items)
+      ? { ...g, items: maybeShuffle(g.items, true, k(g.odd || i)) } : g));
+  }
+  if (Array.isArray(out.bank)) out.bank = maybeShuffle(out.bank, true, k('bank'));
+
+  // A ou B: trocar os lados e inverter qual é o certo.
+  if (ex.type === 'swipeChoice' && Array.isArray(out.items)) {
+    out.items = out.items.map((it, i) => {
+      const inverter = maybeShuffle(['a', 'b'], true, k(it.prompt || i))[0] === 'b';
+      if (!inverter) return it;
+      return { ...it, a: it.b, b: it.a, correct: it.correct === 'a' ? 'b' : 'a' };
+    });
+  }
+  return out;
+}
+
+export default function BhExercise({ ex: exOriginal, c, voiceType, onChecked, seed = 1, shuffle = false }) {
+  const ex = embaralhar(exOriginal, shuffle);
   const props = { ex, c, voiceType, onChecked, seed };
   switch (ex.type) {
     case 'multiSelect': return <MultiSelect {...props} />;
@@ -234,6 +286,12 @@ function OrderList({ ex, c, onChecked, seed, badge }) {
   const pool = seededShuffle(correct.map((_, i) => i), hashString(ex.title || 'ord') + seed);
   const [seq, setSeq] = useState([]);
   const [checked, setChecked] = useState(false);
+  // Ordenar frases numa língua que a pessoa mal lê é adivinhação, não exercício.
+  // Com `itemsPt` no conteúdo, o bloco ganha um botão que mostra a tradução de
+  // cada linha. Sem o campo, nada muda.
+  const [showPt, setShowPt] = useState(false);
+  const pt = (i) => (Array.isArray(ex.itemsPt) ? ex.itemsPt[i] : null);
+  const temPt = Array.isArray(ex.itemsPt) && ex.itemsPt.length === (ex.items || []).length;
   const place = (i) => { if (!checked && !seq.includes(i)) setSeq((s) => [...s, i]); };
   const undo = () => !checked && setSeq((s) => s.slice(0, -1));
   const isRight = (pos) => seq[pos] === pos;
@@ -243,6 +301,12 @@ function OrderList({ ex, c, onChecked, seed, badge }) {
   return (
     <ExShell image={ex.image} imageCaption={ex.imageCaption} title={ex.title} c={c} badge={badge || ex.badge || 'Coloque em ordem'}>
       <Instruction c={c}>{ex.instruction || 'Clique nas linhas na ordem certa. Use "Voltar uma" se errar o clique.'}</Instruction>
+      {temPt && (
+        <button type="button" onClick={() => setShowPt((v) => !v)}
+          style={{ marginBottom: 12, padding: '6px 13px', borderRadius: 999, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.ink || c.navy || '#062E2B', fontWeight: 700, fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer' }}>
+          {showPt ? 'Ocultar tradução' : '🇧🇷 Ver tradução'}
+        </button>
+      )}
       {ex.scale && (
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12.5, fontWeight: 700, color: c.gray || '#5F7570', marginBottom: 10 }}>
           <span>1 · {ex.scale[0]}</span><span>{correct.length} · {ex.scale[1]}</span>
@@ -256,7 +320,12 @@ function OrderList({ ex, c, onChecked, seed, badge }) {
             background: checked ? (isRight(pos) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : c.accentLight || '#E4F7EC',
             border: `1px solid ${checked ? (isRight(pos) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : accent}` }}>
             <span style={{ flex: '0 0 24px', height: 24, borderRadius: 7, background: accent, color: '#fff', fontSize: 12, fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{pos + 1}</span>
-            <span style={{ flex: 1, fontSize: 14.5, lineHeight: 1.5 }}>{label(correct[idx])}</span>
+            <span style={{ flex: 1, fontSize: 14.5, lineHeight: 1.5 }}>
+              {label(correct[idx])}
+              {showPt && pt(idx) && (
+                <span style={{ display: 'block', marginTop: 4, fontSize: 13, fontStyle: 'italic', color: c.gray || '#5F7570' }}>{pt(idx)}</span>
+              )}
+            </span>
           </div>
         ))}
       </div>
@@ -266,6 +335,9 @@ function OrderList({ ex, c, onChecked, seed, badge }) {
           <button key={i} onClick={() => place(i)} disabled={checked}
             style={{ padding: '9px 14px', borderRadius: 10, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || '#20302D', fontSize: 14, fontFamily: 'inherit', textAlign: 'left', cursor: checked ? 'default' : 'pointer', maxWidth: '100%', lineHeight: 1.45 }}>
             {label(correct[i])}
+            {showPt && pt(i) && (
+              <span style={{ display: 'block', marginTop: 4, fontSize: 12.5, fontStyle: 'italic', color: c.gray || '#5F7570' }}>{pt(i)}</span>
+            )}
           </button>
         ))}
       </div>

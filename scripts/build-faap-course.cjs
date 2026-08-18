@@ -65,6 +65,24 @@ for (const l of lessons) {
   if (DADOS_OPERACIONAIS.test(JSON.stringify(l))) { l.disclaimer = AVISO; comAviso += 1; }
 }
 
+/* Tradução dos "coloque em ordem".
+
+   Ordenar frases numa língua que a pessoa mal lê é adivinhação, não exercício.
+   As traduções vivem num arquivo à parte e são casadas pela frase em inglês —
+   assim o conteúdo não fica poluído e uma frase reaproveitada traduz sozinha. */
+const PT_PATH = path.join(DATA, 'orderlist-pt.json');
+const PT = fs.existsSync(PT_PATH) ? JSON.parse(fs.readFileSync(PT_PATH, 'utf-8')) : {};
+const semTraducao = [];
+for (const l of lessons) {
+  for (const ex of l.exercises || []) {
+    if (ex.type !== 'orderList' || ex.itemsPt) continue;
+    const frases = (ex.items || []).map((it) => (typeof it === 'string' ? it : `${it.who ? `${it.who}: ` : ''}${it.text}`));
+    const traduzidas = frases.map((f) => PT[f] || null);
+    if (traduzidas.every(Boolean)) ex.itemsPt = traduzidas;
+    else frases.forEach((f, i) => { if (!traduzidas[i]) semTraducao.push(`${l.num} · ${f.slice(0, 70)}`); });
+  }
+}
+
 /* Homógrafos: palavras cuja pronúncia muda com a classe gramatical. O TTS
    escolhe pela sintaxe e às vezes erra — "lives" (verbo) sai como plural de
    "life", "read" no passado sai como presente, "lead" comercial sai como o
@@ -191,6 +209,12 @@ fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(course, null, 1));
 const kb = (fs.statSync(OUT).size / 1024).toFixed(0);
 console.log(`   ${comAviso} lições receberam o aviso de dados fictícios`);
+if (semTraducao.length) {
+  console.log(`   ⚠ ${semTraducao.length} frases de "coloque em ordem" sem tradução:`);
+  for (const t of semTraducao.slice(0, 12)) console.log('     · ' + t);
+} else {
+  console.log('   todos os "coloque em ordem" têm tradução');
+}
 if (suspeitos.length) {
   console.log(`   ⚠ ${suspeitos.length} trechos falados com homógrafo (confira a pronúncia):`);
   for (const t of suspeitos) console.log('     · ' + t);

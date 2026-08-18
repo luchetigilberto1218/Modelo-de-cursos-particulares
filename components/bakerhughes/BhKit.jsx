@@ -121,6 +121,21 @@ export function seededShuffle(arr, seed) {
   return a;
 }
 
+/* Ordem embaralhada quando o curso pede.
+
+   Motivo: o material foi escrito com a alternativa certa quase sempre em
+   primeiro lugar, e o exercício vira clique automático — o aluno acerta sem
+   ler. `seededShuffle` já resolvia isso em categorize, orderList e
+   sentenceBuild; aqui a mesma ideia passa a valer para as escolhas.
+
+   A semente vem do texto do próprio item, então a ordem é estável: recarregar
+   a página não faz a resposta pular de lugar. Sem `on`, devolve o array
+   original — nenhum curso que não pediu muda. */
+export function maybeShuffle(arr, on, chave) {
+  if (!on || !Array.isArray(arr) || arr.length < 2) return arr;
+  return seededShuffle(arr, hashString(String(chave || '')) || 1);
+}
+
 export function hashString(s) {
   let h = 2166136261;
   for (let i = 0; i < String(s).length; i++) { h ^= String(s).charCodeAt(i); h = Math.imul(h, 16777619); }

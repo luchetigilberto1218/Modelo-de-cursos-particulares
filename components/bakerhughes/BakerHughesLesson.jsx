@@ -6,6 +6,7 @@ import Exercise from '../Exercise';
 import AudioPlayer, { AudioPrefs } from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
 import BhExercise, { BH_EXTRA_TYPES, BH_UNGRADED_TYPES } from './BhExercises';
+import { maybeShuffle } from './BhKit';
 import { useIdentity, useLessonDone } from './progress';
 
 /*
@@ -38,6 +39,10 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
   const voiceType = l.character || 'us-female';
 
   const exercises = l.exercises || [];
+
+  // Alternativas embaralhadas: o curso pede no tema. Sem o campo, tudo fica na
+  // ordem escrita, como sempre esteve.
+  const shuffleOpts = !!theme?.exercises?.shuffle;
 
   // Completion tracking — the "lesson complete" card only shows once the
   // gradeable exercises have actually been answered (right or wrong).
@@ -86,14 +91,19 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
   // que cada bloco possa ser embrulhado numa div com id — nada mudou aqui.
   function renderExercise(ex, i) {
     if (RACIONAL_TYPES.includes(ex.type)) {
-      return <Exercise exercise={ex} levelId="starter" onResult={() => markDone(i)} />;
+      // O <Exercise> é compartilhado com Racional e Czarnikow, então não se
+      // mexe nele: as alternativas chegam já embaralhadas de fora.
+      const baralhado = shuffleOpts && Array.isArray(ex.options)
+        ? { ...ex, options: maybeShuffle(ex.options, true, `mc|${ex.title || ''}|${ex.prompt || ''}`) }
+        : ex;
+      return <Exercise exercise={baralhado} levelId="starter" onResult={() => markDone(i)} />;
     }
-    if (ex.type === 'wordBank') return <WordBank ex={ex} c={c} onChecked={() => markDone(i)} />;
+    if (ex.type === 'wordBank') return <WordBank ex={ex} c={c} shuffle={shuffleOpts} onChecked={() => markDone(i)} />;
     if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill ex={ex} c={c} onChecked={() => markDone(i)} />;
     if (ex.type === 'readAloud') return <ReadAloud ex={ex} c={c} voiceType={voiceType} />;
     if (ex.type === 'makeItYourOwn') return <MakeItYourOwn ex={ex} c={c} voiceType={voiceType} />;
     if (BH_EXTRA_TYPES.includes(ex.type)) {
-      return <BhExercise ex={ex} c={c} voiceType={voiceType} seed={(l.num || 1) * 31 + i} onChecked={() => markDone(i)} />;
+      return <BhExercise ex={ex} c={c} voiceType={voiceType} seed={(l.num || 1) * 31 + i} shuffle={shuffleOpts} onChecked={() => markDone(i)} />;
     }
     return null;
   }
@@ -543,7 +553,11 @@ function BhBtn({ href, c, children, outline }) {
 
 /* ── Delta-style self-study exercises (auto-corrected) ── */
 
-function WordBank({ ex, c, onChecked }) {
+function WordBank({ ex, c, onChecked, shuffle = false }) {
+  // O banco vinha escrito na mesma ordem das respostas — dava para resolver de
+  // cima para baixo sem ler a frase. Sorteado uma vez, pela chave do próprio
+  // exercício, para não trocar de lugar a cada carregamento.
+  const bank = maybeShuffle(ex.bank || [], shuffle, `bank|${ex.title || ''}`);
   const accent = c.accent || '#00B04F';
   const navy = c.navy || '#062E2B';
   const [answers, setAnswers] = useState({});
@@ -556,7 +570,7 @@ function WordBank({ ex, c, onChecked }) {
     <ExShell title={ex.title} c={c} badge="Word bank">
       {ex.instruction && <p style={{ fontSize: 14, color: c.gray, margin: '0 0 10px', lineHeight: 1.5 }}>{ex.instruction}</p>}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 16, padding: 12, background: c.accentLight || '#E4F7EC', borderRadius: 10 }}>
-        {(ex.bank || []).map((w, i) => <span key={i} style={{ padding: '5px 12px', background: c.card || '#fff', border: `1px solid ${accent}`, borderRadius: 999, fontSize: 13.5, fontWeight: 600, color: c.ink || navy }}>{w}</span>)}
+        {bank.map((w, i) => <span key={i} style={{ padding: '5px 12px', background: c.card || '#fff', border: `1px solid ${accent}`, borderRadius: 999, fontSize: 13.5, fontWeight: 600, color: c.ink || navy }}>{w}</span>)}
       </div>
       <div style={{ display: 'grid', gap: 12 }}>
         {items.map((it, i) => {
@@ -567,7 +581,7 @@ function WordBank({ ex, c, onChecked }) {
               <select value={answers[i] || ''} onChange={e => setAnswers(a => ({ ...a, [i]: e.target.value }))} disabled={checked && isRight(i)}
                 style={{ margin: '0 4px', padding: '4px 8px', borderRadius: 6, fontSize: 14, fontFamily: 'inherit', border: `2px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : '#E2E9E7'}`, color: c.text || 'inherit', background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.inputBg || '#fff') }}>
                 <option value="">…</option>
-                {(ex.bank || []).map((w, j) => <option key={j} value={w}>{w}</option>)}
+                {bank.map((w, j) => <option key={j} value={w}>{w}</option>)}
               </select>
               {parts.slice(1).join('___')}
             </div>
