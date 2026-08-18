@@ -6,7 +6,7 @@ module.exports = [
 /* ─────────────────────────────── 1 ─────────────────────────────── */
 {
   title: 'TV shows and streaming',
-  focus: 'O inglês de quem assiste série',
+  focus: 'The Bear, Succession, Severance — o inglês de quem assiste série',
   character: 'us-female',
   image: '/faapatendimento/img/livre/tv.svg',
   imageCaption: 'Do "next episode" ao "no spoilers, please".',
@@ -14,17 +14,17 @@ module.exports = [
   intro: [
     'You already spend hours a week inside English. It is called <strong>streaming</strong>.',
     'The problem is that watching does not automatically turn into speaking. For that you need the twenty words people actually use to <em>talk about</em> what they watched.',
-    'This is those twenty words.',
+    'Think of the shows adults are actually watching right now — <em>The Bear</em>, <em>Succession</em>, <em>Slow Horses</em>, <em>Severance</em>. This lesson is the vocabulary for those conversations.',
   ],
   introPt: [
     'Você já passa horas por semana dentro do inglês. Isso se chama <strong>streaming</strong>.',
     'O problema é que assistir não vira falar automaticamente. Para isso você precisa das vinte palavras que as pessoas de fato usam para <em>falar sobre</em> o que assistiram.',
-    'São essas vinte palavras.',
+    'Pense nas séries que adulto está assistindo de verdade — <em>The Bear</em>, <em>Succession</em>, <em>Slow Horses</em>, <em>Severance</em>. Esta lição é o vocabulário dessas conversas.',
   ],
   vocab: [
-    { en: 'episode / season', pt: 'episódio / temporada', example: 'The last episode of season two is brilliant.' },
+    { en: 'episode / season', pt: 'episódio / temporada', example: 'The last episode of season two of The Bear is brilliant.' },
     { en: 'to binge-watch', pt: 'maratonar', example: 'I binge-watched the whole thing in a weekend.' },
-    { en: 'plot', pt: 'enredo', example: 'The plot gets confusing in season three.' },
+    { en: 'plot', pt: 'enredo', example: 'The plot of Severance gets stranger in season two.' },
     { en: 'plot twist', pt: 'reviravolta', example: 'That plot twist came out of nowhere.' },
     { en: 'cliffhanger', pt: 'final em suspense', example: 'It ends on a cliffhanger.' },
     { en: 'spoiler', pt: 'spoiler', example: 'No spoilers, please — I am only on episode four.' },
@@ -168,24 +168,24 @@ module.exports = [
 /* ─────────────────────────────── 2 ─────────────────────────────── */
 {
   title: 'Movies',
-  focus: 'Falar de filme como quem gosta de filme',
+  focus: 'Oppenheimer, Dune, Anatomia de uma Queda — cinema para adulto',
   character: 'gb-male',
   image: '/faapatendimento/img/livre/movies.svg',
-  imageCaption: 'Duas horas de inglês por sessão, se você souber falar delas depois.',
+  imageCaption: 'Duas horas de inglês por sessão — se você souber falar do filme depois.',
   objective: 'Dar sua opinião sobre um filme em inglês — recomendar, criticar e discordar sem soar rude.',
   intro: [
     'Anyone can say <em>"I liked it"</em>. What makes a conversation is the sentence after that.',
     'You need three tools: words for the <strong>parts of a film</strong>, ways to <strong>give an opinion</strong>, and ways to <strong>disagree politely</strong>.',
-    'Because half the fun of films is disagreeing about them.',
+    'The films here are the ones adults argue about at dinner — <em>Oppenheimer</em>, <em>Dune</em>, <em>Anatomy of a Fall</em>, <em>The Godfather</em> — because half the fun of cinema is disagreeing about it.',
   ],
   introPt: [
     'Qualquer um consegue dizer <em>"gostei"</em>. O que faz uma conversa é a frase depois disso.',
     'Você precisa de três ferramentas: palavras para as <strong>partes de um filme</strong>, formas de <strong>dar opinião</strong> e formas de <strong>discordar com educação</strong>.',
-    'Porque metade da graça de cinema é discordar sobre ele.',
+    'Os filmes aqui são os que adulto discute no jantar — <em>Oppenheimer</em>, <em>Duna</em>, <em>Anatomia de uma Queda</em>, <em>O Poderoso Chefão</em> — porque metade da graça do cinema é discordar sobre ele.',
   ],
   vocab: [
-    { en: 'cast', pt: 'elenco', example: 'The cast is incredible.' },
-    { en: 'soundtrack', pt: 'trilha sonora', example: 'The soundtrack carries the whole film.' },
+    { en: 'cast', pt: 'elenco', example: 'The cast of Oppenheimer is incredible.' },
+    { en: 'soundtrack', pt: 'trilha sonora', example: 'The soundtrack of Dune carries the whole film.' },
     { en: 'sequel / prequel', pt: 'continuação / prelúdio', example: 'The sequel is better than the original.' },
     { en: 'overrated / underrated', pt: 'superestimado / subestimado', example: 'Honestly, it is a bit overrated.' },
     { en: 'to be worth watching', pt: 'valer a pena assistir', example: 'It is worth watching for the ending alone.' },
@@ -203,7 +203,7 @@ module.exports = [
         { id: 'mixed', name: 'Meio-termo', short: 'Meio-termo' },
       ],
       items: [
-        { text: 'It is worth watching for the soundtrack alone.', cat: 'good' },
+        { text: 'Dune is worth watching for the soundtrack alone.', cat: 'good' },
         { text: 'Honestly, it is a bit overrated.', cat: 'bad' },
         { text: 'The acting is great, but the plot goes nowhere.', cat: 'mixed' },
         { text: 'I could not get into it.', cat: 'bad' },
@@ -253,7 +253,7 @@ module.exports = [
       title: 'Monte as frases de opinião',
       instruction: 'Monte cada frase na ordem certa. Alguns blocos sobram.',
       items: [
-        { hint: 'Recomendar com um motivo.', answer: 'It is worth watching for the soundtrack alone', extra: ['worthy', 'to'] },
+        { hint: 'Recomendar com um motivo.', answer: 'Dune is worth watching for the soundtrack alone', extra: ['worthy', 'to'] },
         { hint: 'Criticar com elegância.', answer: 'The acting is great but the plot goes nowhere', extra: ['acting', 'is'] },
         { hint: 'Dizer que não engatou.', answer: 'I could not get into it at all', extra: ['can', 'inside'] },
       ],
@@ -295,7 +295,7 @@ module.exports = [
     ],
   },
   takeaways: [
-    'It is worth watching for the soundtrack alone.',
+    'Dune is worth watching for the soundtrack alone.',
     'The acting is great, but the plot goes nowhere.',
     'I could not get into it — what did you like about it?',
   ],
@@ -308,7 +308,7 @@ module.exports = [
 /* ─────────────────────────────── 3 ─────────────────────────────── */
 {
   title: 'Music and lyrics',
-  focus: 'A letra como laboratório de idioma',
+  focus: 'Coldplay, Radiohead, Queen — pop rock como laboratório de idioma',
   character: 'us-female',
   image: '/faapatendimento/img/livre/music.svg',
   imageCaption: 'A música que você repete cem vezes é a frase que você nunca mais esquece.',
@@ -316,19 +316,19 @@ module.exports = [
   intro: [
     'A song you love is the only text you will read a hundred times without getting bored. That makes it the best study material you have.',
     'Two things here: the vocabulary to <strong>talk about music</strong>, and the trick to <strong>learn from lyrics</strong> without picking up bad grammar.',
-    'Because song lyrics break the rules on purpose — and you need to know which rules.',
+    'Think of the records that stay on repeat for years — <em>Coldplay</em>, <em>Radiohead</em>, <em>Foo Fighters</em>, <em>Queen</em>, <em>Pearl Jam</em>. Their lyrics break the rules on purpose, and you need to know which rules.',
   ],
   introPt: [
     'Uma música que você ama é o único texto que você vai ler cem vezes sem enjoar. Isso faz dela o melhor material de estudo que você tem.',
     'Duas coisas aqui: o vocabulário para <strong>falar de música</strong> e o truque para <strong>aprender com letras</strong> sem pegar gramática errada.',
-    'Porque letra de música quebra as regras de propósito — e você precisa saber quais.',
+    'Pense nos discos que ficam anos no repeat — <em>Coldplay</em>, <em>Radiohead</em>, <em>Foo Fighters</em>, <em>Queen</em>, <em>Pearl Jam</em>. As letras deles quebram as regras de propósito, e você precisa saber quais.',
   ],
   vocab: [
     { en: 'lyrics', pt: 'letra (da música)', example: 'The lyrics are the best part.' },
     { en: 'chorus / verse', pt: 'refrão / estrofe', example: 'The chorus gets stuck in your head.' },
     { en: 'catchy', pt: 'grudento / chiclete', example: 'It is so catchy.' },
-    { en: 'to release an album', pt: 'lançar um álbum', example: 'She released a new album last month.' },
-    { en: 'to be into something', pt: 'curtir alguma coisa', example: 'I am really into that band right now.' },
+    { en: 'to release an album', pt: 'lançar um álbum', example: 'They released a new album last month.' },
+    { en: 'to be into something', pt: 'curtir alguma coisa', example: 'I am really into Pearl Jam again.' },
     { en: 'on repeat', pt: 'no repeat', example: 'That song has been on repeat all week.' },
   ],
   exercises: [
@@ -341,7 +341,7 @@ module.exports = [
         { text: 'The ___ are actually really sad.', answer: 'lyrics' },
         { text: 'The ___ gets stuck in my head all day.', answer: 'chorus' },
         { text: 'It is so ___ , I cannot stop singing it.', answer: 'catchy' },
-        { text: 'She ___ a new album last month.', answer: 'released' },
+        { text: 'They ___ a new album last month.', answer: 'released' },
         { text: 'That song has been on ___ all week.', answer: 'repeat' },
       ],
       explanation: 'Cinco frases e você fala de música com qualquer pessoa.',
@@ -349,7 +349,7 @@ module.exports = [
     {
       type: 'multipleChoice',
       title: 'A gramática "errada" das letras',
-      prompt: 'A famous lyric says "I ain\'t got nobody". Why does it break two grammar rules?',
+      prompt: 'A classic rock lyric says "I ain\'t got nobody". Why does it break two grammar rules?',
       options: [
         { id: 'a', text: 'Because song lyrics use informal speech and double negatives for rhythm and effect.', correct: true },
         { id: 'b', text: 'Because the singer made a mistake.', correct: false, whyWrong: 'É escolha estilística, não erro. Está lá de propósito.' },
@@ -418,7 +418,7 @@ module.exports = [
   },
   takeaways: [
     'The chorus gets stuck in my head.',
-    'I am really into that band right now.',
+    'I am really into Pearl Jam again.',
     'That song has been on repeat all week.',
   ],
   celebrate: {
@@ -430,25 +430,25 @@ module.exports = [
 /* ─────────────────────────────── 4 ─────────────────────────────── */
 {
   title: 'Geek: games, anime and sci-fi',
-  focus: 'O inglês que já vive nos jogos',
+  focus: 'The Last of Us, Star Wars, Duna — o inglês que já vive nos jogos',
   character: 'us-male',
   image: '/faapatendimento/img/livre/geek.svg',
-  imageCaption: 'Quem joga online já negocia em inglês há anos — sem perceber.',
+  imageCaption: 'Quem joga ou lê ficção científica já negocia em inglês há anos — sem perceber.',
   objective: 'Reconhecer o inglês dos games, do anime e da ficção científica — e perceber quanto dele já entrou no inglês do trabalho.',
   intro: [
-    'If you play online, you already read English every day: <em>level up</em>, <em>side quest</em>, <em>respawn</em>, <em>grind</em>.',
+    'If you play, watch or read science fiction, you already read English every day: <em>level up</em>, <em>side quest</em>, <em>lore</em>, <em>grind</em>.',
     'And here is the surprise: half of that vocabulary <strong>escaped into the office</strong>. People say "let us level up this process" in real meetings.',
-    'This lesson connects the two.',
+    'The references here are the grown-up end of the shelf — <em>The Last of Us</em>, <em>Star Wars</em>, <em>Dune</em>, <em>Dungeons &amp; Dragons</em>. This lesson connects the two worlds.',
   ],
   introPt: [
-    'Se você joga online, já lê inglês todo dia: <em>level up</em>, <em>side quest</em>, <em>respawn</em>, <em>grind</em>.',
+    'Se você joga, assiste ou lê ficção científica, já lê inglês todo dia: <em>level up</em>, <em>side quest</em>, <em>lore</em>, <em>grind</em>.',
     'E aqui vem a surpresa: metade desse vocabulário <strong>vazou para o escritório</strong>. As pessoas dizem "vamos dar um level up nesse processo" em reunião de verdade.',
-    'Esta lição conecta os dois.',
+    'As referências aqui são a parte adulta da estante — <em>The Last of Us</em>, <em>Star Wars</em>, <em>Duna</em>, <em>Dungeons &amp; Dragons</em>. Esta lição conecta os dois mundos.',
   ],
   vocab: [
     { en: 'to level up', pt: 'subir de nível / evoluir', example: 'We need to level up our process.' },
     { en: 'side quest', pt: 'missão secundária / desvio', example: 'That project turned into a side quest.' },
-    { en: 'lore', pt: 'o universo/história por trás', example: 'The lore is more interesting than the game.' },
+    { en: 'lore', pt: 'o universo/história por trás', example: 'The lore of Dune is deeper than the films.' },
     { en: 'to grind', pt: 'ralar / repetir para evoluir', example: 'It takes a lot of grinding to get there.' },
     { en: 'spoiler-free', pt: 'sem spoiler', example: 'Give me a spoiler-free version.' },
     { en: 'to be hooked', pt: 'estar viciado', example: 'I am completely hooked on it.' },
@@ -545,260 +545,6 @@ module.exports = [
   celebrate: {
     en: 'Your hobby has been an English course this whole time.',
     pt: 'O seu hobby era um curso de inglês esse tempo todo.',
-  },
-},
-
-/* ─────────────────────────────── 5 ─────────────────────────────── */
-{
-  title: 'Book club',
-  focus: 'Falar de livro sem ter lido tudo',
-  character: 'gb-female',
-  image: '/faapatendimento/img/livre/books.svg',
-  imageCaption: 'Ler em inglês é a única atividade em que você controla a velocidade.',
-  objective: 'Falar sobre livros em inglês e começar a ler em inglês sem desistir na página vinte.',
-  intro: [
-    'Reading is the one skill where <strong>you set the speed</strong>. Nobody is waiting for your answer.',
-    'That makes it the least stressful way to spend an hour inside English — and the fastest way to grow vocabulary.',
-    'The trick is choosing the right book. Most people give up because they picked something two levels too hard.',
-  ],
-  introPt: [
-    'Ler é a única habilidade em que <strong>você controla a velocidade</strong>. Ninguém está esperando a sua resposta.',
-    'Isso faz da leitura o jeito menos estressante de passar uma hora dentro do inglês — e o mais rápido de ampliar vocabulário.',
-    'O truque é escolher o livro certo. A maioria desiste porque pegou algo dois níveis acima.',
-  ],
-  vocab: [
-    { en: 'page-turner', pt: 'livro que prende', example: 'It is a real page-turner.' },
-    { en: 'chapter', pt: 'capítulo', example: 'I finished two chapters last night.' },
-    { en: 'character', pt: 'personagem', example: 'The main character is annoying.' },
-    { en: 'to skim', pt: 'ler por alto', example: 'I skimmed the first chapter.' },
-    { en: 'to look up a word', pt: 'procurar uma palavra', example: 'Do not look up every word.' },
-    { en: 'to get through', pt: 'conseguir terminar', example: 'I finally got through it.' },
-  ],
-  exercises: [
-    {
-      type: 'multiSelect',
-      title: 'Como escolher um livro em inglês',
-      instruction: 'Marque tudo o que ajuda a não desistir. Há mais de uma resposta.',
-      prompt: 'You want to read your first full book in English. What increases the chance you finish it?',
-      options: [
-        { text: 'Choosing a book you have already read in Portuguese.', correct: true },
-        { text: 'Choosing something you would read anyway for fun.', correct: true },
-        { text: 'Choosing a literary classic to be serious about it.', correct: false },
-        { text: 'Allowing yourself not to look up every word.', correct: true },
-        { text: 'Reading young adult fiction, which uses simpler language.', correct: true },
-        { text: 'Setting a target of fifty pages a day.', correct: false },
-      ],
-      explanation: 'Livro já conhecido + assunto que você gosta + permissão para não entender tudo. Essa é a receita.',
-    },
-    {
-      type: 'wordBank',
-      title: 'Complete a conversa sobre livros',
-      instruction: 'Complete com o banco de palavras.',
-      bank: ['page-turner', 'chapters', 'character', 'through', 'up'],
-      items: [
-        { text: 'It is a real ___ — I could not put it down.', answer: 'page-turner' },
-        { text: 'I finished two ___ last night.', answer: 'chapters' },
-        { text: 'The main ___ is really annoying, honestly.', answer: 'character' },
-        { text: 'It took me a month to get ___ it.', answer: 'through' },
-        { text: 'Do not look ___ every single word.', answer: 'up' },
-      ],
-      explanation: '"I could not put it down" é o maior elogio que se faz a um livro em inglês.',
-    },
-    {
-      type: 'trueFalse',
-      title: 'Verdadeiro ou falso?',
-      instruction: 'Sobre ler em outra língua.',
-      items: [
-        { text: 'You should look up every word you do not know.', answer: false, why: 'Isso mata o ritmo e a vontade. Procure só as que se repetem e travam o sentido.' },
-        { text: 'Reading a book you already know in Portuguese makes it much easier.', answer: true, why: 'Você já tem a história, então a atenção vai toda para a língua.' },
-        { text: '"To skim" means to read carefully.', answer: false, why: 'É o contrário: ler por alto, passando os olhos.' },
-        { text: 'Young adult fiction is a good starting point for adults learning English.', answer: true, why: 'Vocabulário mais simples, enredo rápido, diálogo natural. Não tem nada de infantil nisso.' },
-      ],
-      explanation: 'A regra número um: terminar um livro fácil vale mais que abandonar três difíceis.',
-    },
-    {
-      type: 'dialogue',
-      title: 'Recomendando um livro',
-      badge: 'Diálogo',
-      scene: 'Alguém te pergunta o que ler em inglês.',
-      lines: [
-        { who: 'Friend', voice: 'us-female', en: 'I want to start reading in English but I never get past chapter two.', pt: 'Quero começar a ler em inglês mas nunca passo do capítulo dois.' },
-        { who: 'You', voice: 'gb-female', en: 'Try something you already know in Portuguese. You have the plot, so you can relax.', pt: 'Tenta algo que você já conhece em português. Você já tem a história, então dá para relaxar.' },
-        { who: 'Friend', voice: 'us-female', en: 'That feels like cheating.', pt: 'Parece trapaça.' },
-        { who: 'You', voice: 'gb-female', en: 'It is not — it is how everyone starts. And do not look up every word.', pt: 'Não é — é assim que todo mundo começa. E não procure toda palavra.' },
-        { who: 'Friend', voice: 'us-female', en: 'But then I do not understand everything.', pt: 'Mas aí eu não entendo tudo.' },
-        { who: 'You', voice: 'gb-female', en: 'You do not need to. If you get the chapter, you are reading. That is the whole point.', pt: 'Você não precisa. Se você pegou o capítulo, você está lendo. É isso que importa.' },
-      ],
-      questions: [
-        {
-          q: 'What is the main advice?',
-          options: [
-            { text: 'Read something you already know, and do not look up every word.', correct: true },
-            { text: 'Read only classics.' },
-            { text: 'Always use a dictionary.' },
-          ],
-          why: 'Duas permissões: reler o conhecido e não entender tudo. As duas destravam o leitor.',
-        },
-        {
-          q: 'What does "get past chapter two" mean?',
-          options: [
-            { text: 'To manage to continue beyond chapter two.', correct: true },
-            { text: 'To skip chapter two.' },
-            { text: 'To read chapter two twice.' },
-          ],
-          why: '<strong>to get past something</strong> = conseguir passar de.',
-        },
-      ],
-      explanation: 'Repare que o conselho inteiro cabe em duas frases. Conselho longo ninguém segue.',
-    },
-    {
-      type: 'checkOff',
-      title: 'Antes de fechar esta lição',
-      items: [
-        { en: 'I can talk about chapters, characters and plot.', pt: 'Sei falar de capítulos, personagens e enredo.' },
-        { en: 'I know I do not need to look up every word.', pt: 'Sei que não preciso procurar toda palavra.' },
-        { en: 'I have an idea of which book to start with.', pt: 'Tenho uma ideia de por qual livro começar.' },
-        { en: 'I can say "I could not put it down".', pt: 'Sei dizer "I could not put it down".' },
-      ],
-      doneMessage: 'livros resolvidos. A última lição desta trilha é sobre memes.',
-      openMessage: 'a lista de como escolher um livro é o que mais importa aqui.',
-    },
-  ],
-  insights: {
-    kicker: 'Sacadas · did you know?',
-    title: 'Ler em outra língua',
-    intro: 'Três permissões que mudam tudo.',
-    cards: [
-      { en: 'You do not need to understand every word to understand a chapter. Native speakers skip words they do not know all the time.', pt: 'Você não precisa entender toda palavra para entender um capítulo. Falantes nativos pulam palavras que não conhecem o tempo todo.' },
-      { en: 'Look up a word only when it appears for the third time or when the sentence collapses without it. That single rule is what keeps people reading.', pt: 'Procure uma palavra só quando ela aparecer pela terceira vez ou quando a frase desmontar sem ela. Essa regra sozinha é o que mantém as pessoas lendo.' },
-      { en: 'Reading is the fastest way to grow vocabulary because you meet words in context, and context is what makes them stick.', pt: 'Ler é o jeito mais rápido de ampliar vocabulário porque você encontra as palavras em contexto, e o contexto é o que faz elas grudarem.' },
-    ],
-  },
-  takeaways: [
-    'It is a real page-turner — I could not put it down.',
-    'Do not look up every word.',
-    'If you get the chapter, you are reading.',
-  ],
-  celebrate: {
-    en: 'One finished book beats three abandoned ones.',
-    pt: 'Um livro terminado vale mais que três abandonados.',
-  },
-},
-
-/* ─────────────────────────────── 6 ─────────────────────────────── */
-{
-  title: 'Memes and internet English',
-  focus: 'O inglês que só existe online',
-  character: 'us-male',
-  image: '/faapatendimento/img/livre/memes.svg',
-  imageCaption: 'A língua que muda mais rápido que qualquer dicionário.',
-  objective: 'Entender o inglês da internet — memes, abreviações e ironia — e saber o que nunca escrever num e-mail de trabalho.',
-  intro: [
-    'Internet English changes faster than any dictionary can follow. Half of it will be dead in two years.',
-    'You do not need to <em>use</em> it. You need to <strong>understand it</strong>, because it shows up in messages, in comments and in conversation.',
-    'And you need to know the line: what stays online and what can cross into work.',
-  ],
-  introPt: [
-    'O inglês da internet muda mais rápido do que qualquer dicionário consegue acompanhar. Metade dele estará morta em dois anos.',
-    'Você não precisa <em>usar</em>. Precisa <strong>entender</strong>, porque isso aparece em mensagem, em comentário e em conversa.',
-    'E precisa saber a linha: o que fica online e o que pode atravessar para o trabalho.',
-  ],
-  vocab: [
-    { en: 'relatable', pt: 'com que a gente se identifica', example: 'That is so relatable.' },
-    { en: 'to go viral', pt: 'viralizar', example: 'The video went viral overnight.' },
-    { en: 'cringe', pt: 'vergonha alheia', example: 'That was pure cringe.' },
-    { en: 'IYKYK (if you know, you know)', pt: 'quem entendeu, entendeu', example: 'IYKYK.' },
-    { en: 'lowkey / highkey', pt: 'meio que / assumidamente', example: 'I lowkey love that song.' },
-    { en: 'to be a mood', pt: 'ser exatamente isso', example: 'That picture is a mood.' },
-  ],
-  exercises: [
-    {
-      type: 'matching',
-      title: 'O que significa cada expressão',
-      instruction: 'Associe a expressão da internet ao significado.',
-      pairs: [
-        { left: 'relatable', right: 'algo com que qualquer um se identifica' },
-        { left: 'cringe', right: 'constrangedor, vergonha alheia' },
-        { left: 'to go viral', right: 'espalhar-se muito rápido pela internet' },
-        { left: 'IYKYK', right: 'quem entendeu, entendeu' },
-        { left: 'lowkey', right: 'meio que, discretamente' },
-      ],
-      explanation: 'Cinco expressões que você vai ver hoje mesmo em algum comentário.',
-    },
-    {
-      type: 'categorize',
-      title: 'Isso pode ir para o trabalho?',
-      badge: 'Classifique',
-      instruction: 'Classifique cada expressão pelo lugar onde ela cabe.',
-      categories: [
-        { id: 'work', name: 'Pode no trabalho', short: 'Trabalho' },
-        { id: 'chat', name: 'Só entre amigos', short: 'Amigos' },
-        { id: 'never', name: 'Nunca por escrito no trabalho', short: 'Nunca' },
-      ],
-      items: [
-        { text: 'That is really relatable.', cat: 'chat' },
-        { text: 'The campaign went viral.', cat: 'work' },
-        { text: 'That is cringe.', cat: 'never' },
-        { text: 'IYKYK', cat: 'never' },
-        { text: 'It is trending right now.', cat: 'work' },
-        { text: 'I lowkey agree.', cat: 'chat' },
-      ],
-      explanation: '"Viral" e "trending" já são vocabulário profissional. O resto fica no grupo de amigos.',
-    },
-    {
-      type: 'multipleChoice',
-      title: 'A ironia da internet',
-      prompt: 'A colleague writes: "Great, another meeting that could have been an email." What are they doing?',
-      options: [
-        { id: 'a', text: 'Complaining, using irony — the "great" means the opposite.', correct: true },
-        { id: 'b', text: 'Saying they are happy about the meeting.', correct: false, whyWrong: 'É ironia. O "great" no começo é o sinal.' },
-        { id: 'c', text: 'Asking for the meeting to be replaced by an email.', correct: false, whyWrong: 'Não é um pedido — é um comentário.' },
-      ],
-      explanation: 'Ironia em inglês escrito quase sempre começa com um elogio exagerado. Esse é o sinal.',
-    },
-    {
-      type: 'swipeChoice',
-      title: 'O que você escreveria?',
-      badge: 'A ou B',
-      instruction: 'Mesma reação, dois registros. Escolha o certo para o contexto.',
-      items: [
-        { prompt: 'Comentando o vídeo de um amigo no grupo.', a: 'This is so relatable, I am crying.', b: 'I identify with the content of this video.', correct: 'a', why: 'Entre amigos, o registro natural é o informal. O formal soa estranho.' },
-        { prompt: 'Comentando o resultado de uma campanha em reunião.', a: 'The post went viral, which is great for us.', b: 'The post is lowkey slaying right now.', correct: 'a', why: '"Viral" é profissional. O resto ainda não atravessou.' },
-        { prompt: 'Respondendo a um cliente que fez uma piada.', a: 'LOL', b: 'Ha! Good one. On the deadline, though —', correct: 'b', why: 'Rir por escrito com cliente é bom; "LOL" ainda soa adolescente em inglês profissional.' },
-      ],
-      explanation: 'A regra é a mesma de sempre: acompanhe o registro da outra pessoa, um passo mais formal.',
-    },
-    {
-      type: 'checkOff',
-      title: 'Antes de fechar a trilha',
-      items: [
-        { en: 'I understand relatable, cringe, viral and IYKYK.', pt: 'Entendo relatable, cringe, viral e IYKYK.' },
-        { en: 'I can spot written irony in English.', pt: 'Consigo perceber ironia por escrito em inglês.' },
-        { en: 'I know which expressions can go to work.', pt: 'Sei quais expressões podem ir para o trabalho.' },
-        { en: 'I do not write "LOL" to a client.', pt: 'Não escrevo "LOL" para um cliente.' },
-      ],
-      doneMessage: 'trilha Pop Culture concluída. Se quiser continuar por aqui, Mind & Body está ao lado.',
-      openMessage: 'a classificação "isso pode ir para o trabalho" é a parte que mais evita saia-justa.',
-    },
-  ],
-  insights: {
-    kicker: 'Sacadas · did you know?',
-    title: 'A língua mais rápida do mundo',
-    intro: 'Três coisas sobre o inglês da internet.',
-    cards: [
-      { en: 'The word "meme" was coined by biologist Richard Dawkins in 1976, long before the internet. It meant an idea that spreads by copying, like a gene.', pt: 'A palavra "meme" foi cunhada pelo biólogo Richard Dawkins em 1976, muito antes da internet. Significava uma ideia que se espalha por cópia, como um gene.' },
-      { en: 'Understanding internet English is mostly about spotting irony. When the tone seems too enthusiastic for the situation, it usually is.', pt: 'Entender o inglês da internet é, quase sempre, perceber ironia. Quando o tom parece entusiasmado demais para a situação, geralmente é.' },
-      { en: 'A few internet words graduate into professional English every year — viral, trending, engagement. Most do not. When in doubt, wait.', pt: 'Algumas palavras da internet se formam e entram no inglês profissional todo ano — viral, trending, engagement. A maioria não. Na dúvida, espere.' },
-    ],
-  },
-  takeaways: [
-    'That is so relatable.',
-    'The post went viral, which is great for us.',
-    'Ha! Good one.',
-  ],
-  celebrate: {
-    en: 'You can now read the internet in English — and know what not to copy.',
-    pt: 'Você já lê a internet em inglês — e sabe o que não copiar.',
   },
 },
 ];

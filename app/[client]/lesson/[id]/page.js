@@ -10,6 +10,14 @@ import BakerHughesLesson from '../../../../components/bakerhughes/BakerHughesLes
 // exercícios auto-corrigíveis). Aditivo: quem não está aqui segue no LessonView.
 const SELF_STUDY = ['bakerhughes', 'faapatendimento'];
 
+// Cores da trilha por cima das do cliente. Trilha sem `palette` devolve o tema
+// intacto, então todo curso que não usa o campo continua igual.
+function themeForTrack(theme, track) {
+  if (!track?.palette) return theme;
+  return { ...theme, colors: { ...(theme?.colors || {}), ...track.palette } };
+}
+
+
 export default async function LessonPage({ params }) {
   const { client, id } = await params;
   const session = await guardClient(client);
@@ -61,7 +69,7 @@ export default async function LessonPage({ params }) {
     return (
       <BakerHughesLesson
         lesson={lesson}
-        theme={theme}
+        theme={themeForTrack(theme, lessonTrack)}
         clientId={client}
         backHref={backHref}
         prevNum={prevNum}

@@ -148,8 +148,8 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
 
         {/* Objective */}
         {l.objective && (
-          <Section navy={navy} accent={accent} letter="O" title={l.objectiveLabel || 'Objetivo da lição'} bg={accentLight} border="#B7E4C8">
-            <p style={{ margin: 0, fontSize: 15.5, lineHeight: 1.65, color: '#20302D' }}>{l.objective}</p>
+          <Section c={c} navy={navy} accent={accent} letter="O" title={l.objectiveLabel || 'Objetivo da lição'} bg={accentLight} border={c.accentBorder || '#B7E4C8'}>
+            <p style={{ margin: 0, fontSize: 15.5, lineHeight: 1.65, color: c.text || '#20302D' }}>{l.objective}</p>
           </Section>
         )}
 
@@ -164,17 +164,17 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
 
         {/* Introduction */}
         {l.intro && (
-          <IntroBlock l={l} navy={navy} accent={accent} accentLight={accentLight} grayLight={grayLight} voiceType={voiceType} />
+          <IntroBlock l={l} c={c} navy={navy} accent={accent} accentLight={accentLight} grayLight={grayLight} voiceType={voiceType} />
         )}
 
         {/* Vocabulary */}
         {l.vocab?.length > 0 && (
-          <Section navy={navy} accent={accent} letter="V" title="Vocabulary">
+          <Section c={c} navy={navy} accent={accent} letter="V" title="Vocabulary">
             <div style={{ display: 'grid', gap: 10 }}>
               {l.vocab.map((v, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 14px', background: offWhite, border: `1px solid ${grayLight}`, borderRadius: 12 }}>
                   <div style={{ flex: 1 }}>
-                    <div><strong style={{ color: navy }}>{v.en}</strong> <span style={{ color: gray }}>— {v.pt}</span></div>
+                    <div><strong style={{ color: c.ink || navy }}>{v.en}</strong> <span style={{ color: gray }}>— {v.pt}</span></div>
                     {v.example && <div style={{ fontSize: 13.5, color: gray, marginTop: 3, fontStyle: 'italic' }}>e.g. {v.example}</div>}
                   </div>
                   <AudioPlayer text={v.example ? `${v.en}. ${v.example}` : v.en} rate={0.85} label="" small voiceType={voiceType} />
@@ -186,8 +186,8 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
 
         {/* Context */}
         {l.situation && (
-          <Section navy={navy} accent={accent} letter="C" title="Context">
-            <p style={{ margin: 0, fontSize: 15, lineHeight: 1.65, color: '#33443F' }}>{l.situation}</p>
+          <Section c={c} navy={navy} accent={accent} letter="C" title="Context">
+            <p style={{ margin: 0, fontSize: 15, lineHeight: 1.65, color: c.textSoft || '#33443F' }}>{l.situation}</p>
             {l.context && (
               <div style={{ marginTop: 14, padding: 14, background: offWhite, border: `1px solid ${grayLight}`, borderRadius: 10, fontStyle: 'italic', fontSize: 15, lineHeight: 1.6 }}>
                 "{l.context}"
@@ -202,7 +202,7 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
         {/* Exercises — merged Racional + Delta types */}
         {exercises.length > 0 && (
           <>
-            <PartTitle accent={accent} navy={navy}>{l.practiceLabel || 'Practice · pratique sozinho'}</PartTitle>
+            <PartTitle c={c} accent={accent} navy={navy}>{l.practiceLabel || 'Practice · pratique sozinho'}</PartTitle>
             {exercises.map((ex, i) => {
               // O bloco vai dentro de uma <div id="bh-ex-N"> só para o rastreador
               // abaixo conseguir levar o aluno até o exercício que faltou.
@@ -222,8 +222,8 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
         {/* Grammar */}
         {l.grammarDetail && (
           <>
-            <PartTitle accent={accent} navy={navy}>Grammar of the lesson</PartTitle>
-            <Section navy={navy} accent={accent} letter="G" title="Grammar Point">
+            <PartTitle c={c} accent={accent} navy={navy}>Grammar of the lesson</PartTitle>
+            <Section c={c} navy={navy} accent={accent} letter="G" title="Grammar Point">
               <div className="bh-grammar" style={{ fontSize: 15, lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: l.grammarDetail }} />
             </Section>
             {l.grammarDeepDive && <GrammarDeepDive dd={l.grammarDeepDive} c={c} />}
@@ -232,7 +232,7 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
 
         {/* Takeaways */}
         {l.takeaways?.length > 0 && (
-          <Section navy={navy} accent={accent} letter="✓" title="What I can do now · O que eu já consigo">
+          <Section c={c} navy={navy} accent={accent} letter="✓" title="What I can do now · O que eu já consigo">
             <div style={{ display: 'grid', gap: 8 }}>
               {l.takeaways.map((t, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 14px', background: accentLight, borderRadius: 10 }}>
@@ -247,12 +247,12 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
 
         {/* Q&A self-check */}
         {l.qa?.length > 0 && (
-          <Section navy={navy} accent={accent} letter="Q" title="Check yourself · perguntas e respostas">
+          <Section c={c} navy={navy} accent={accent} letter="Q" title="Check yourself · perguntas e respostas">
             <p style={{ fontSize: 13.5, color: gray, margin: '0 0 12px' }}>Responda de cabeça, depois clique para revelar uma resposta-modelo.</p>
             {l.qa.map((qa, i) => (
               <details key={i} style={{ marginBottom: 10, padding: '12px 14px', background: offWhite, border: `1px solid ${grayLight}`, borderRadius: 10 }}>
-                <summary style={{ cursor: 'pointer', fontWeight: 600, color: navy, fontSize: 14.5 }}>{qa.q || qa.question}</summary>
-                <p style={{ margin: '10px 0 0', fontSize: 14, color: '#33443F', lineHeight: 1.6 }}>{qa.a || qa.sampleAnswer}</p>
+                <summary style={{ cursor: 'pointer', fontWeight: 600, color: c.ink || navy, fontSize: 14.5 }}>{qa.q || qa.question}</summary>
+                <p style={{ margin: '10px 0 0', fontSize: 14, color: c.textSoft || '#33443F', lineHeight: 1.6 }}>{qa.a || qa.sampleAnswer}</p>
               </details>
             ))}
           </Section>
@@ -346,12 +346,12 @@ function PracticeTracker({ pending, total, done, c, compact = false }) {
   if (compact) {
     if (!falta) return null;
     return (
-      <div style={{ margin: '30px 0 8px', padding: '16px 20px', borderRadius: 14, background: '#fff', border: `1px dashed ${grayLight}`, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+      <div style={{ margin: '30px 0 8px', padding: '16px 20px', borderRadius: 14, background: c.card || '#fff', border: `1px dashed ${grayLight}`, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
         <span style={{ fontSize: 14.5, color: gray }}>
-          <strong style={{ color: navy }}>{falta === 1 ? 'Falta 1 exercício' : `Faltam ${falta} exercícios`}</strong> para esta lição contar como concluída.
+          <strong style={{ color: c.ink || navy }}>{falta === 1 ? 'Falta 1 exercício' : `Faltam ${falta} exercícios`}</strong> para esta lição contar como concluída.
         </span>
         <button onClick={() => irPara(pending[0].i)} type="button"
-          style={{ padding: '8px 14px', borderRadius: 999, border: `1px solid ${accent}`, background: '#fff', color: navy, fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
+          style={{ padding: '8px 14px', borderRadius: 999, border: `1px solid ${accent}`, background: c.card || '#fff', color: c.ink || navy, fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
           Voltar à prática ↑
         </button>
       </div>
@@ -372,7 +372,7 @@ function PracticeTracker({ pending, total, done, c, compact = false }) {
   return (
     <div style={{ margin: '22px 0 6px', padding: '20px 22px', borderRadius: 14, background: offWhite, border: `1px solid ${grayLight}` }}>
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
-        <span style={{ fontSize: 15.5, fontWeight: 800, color: navy }}>
+        <span style={{ fontSize: 15.5, fontWeight: 800, color: c.ink || navy }}>
           {falta === 1 ? 'Falta 1 exercício' : `Faltam ${falta} exercícios`} para concluir esta lição
         </span>
         <span style={{ fontSize: 13, color: gray, fontWeight: 700 }}>{done} de {total} corrigidos</span>
@@ -383,13 +383,13 @@ function PracticeTracker({ pending, total, done, c, compact = false }) {
       </div>
 
       <p style={{ margin: '0 0 10px', fontSize: 13.5, color: gray, lineHeight: 1.55 }}>
-        Basta clicar em <strong style={{ color: navy }}>Corrigir</strong>, <strong style={{ color: navy }}>Verificar respostas</strong> ou <strong style={{ color: navy }}>Concluir auto-avaliação</strong> em cada um — não precisa acertar tudo. Toque no nome para ir direto até ele:
+        Basta clicar em <strong style={{ color: c.ink || navy }}>Corrigir</strong>, <strong style={{ color: c.ink || navy }}>Verificar respostas</strong> ou <strong style={{ color: c.ink || navy }}>Concluir auto-avaliação</strong> em cada um — não precisa acertar tudo. Toque no nome para ir direto até ele:
       </p>
 
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
         {pending.map((p) => (
           <button key={p.i} onClick={() => irPara(p.i)} type="button"
-            style={{ padding: '8px 14px', borderRadius: 999, border: `1px solid ${accent}`, background: '#fff', color: navy, fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
+            style={{ padding: '8px 14px', borderRadius: 999, border: `1px solid ${accent}`, background: c.card || '#fff', color: c.ink || navy, fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
             {p.title} ↑
           </button>
         ))}
@@ -410,14 +410,14 @@ function YouAreHere({ position, student, l, c, clientId }) {
   const firstName = (student || '').split(' ')[0];
 
   return (
-    <div style={{ background: '#fff', borderBottom: `1px solid ${grayLight}` }}>
+    <div style={{ background: c.card || '#fff', borderBottom: `1px solid ${grayLight}` }}>
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '14px 24px', display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
         <div style={{ flex: '1 1 260px', minWidth: 0 }}>
           <div style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: accent, marginBottom: 4 }}>
             {firstName ? `A lição de hoje, ${firstName}` : 'A lição de hoje'}
           </div>
           <div style={{ fontSize: 13.5, color: gray, lineHeight: 1.45 }}>
-            <strong style={{ color: navy }}>{index} de {total}</strong>
+            <strong style={{ color: c.ink || navy }}>{index} de {total}</strong>
             {trackName ? ` · ${trackName}` : ''}
             {topic ? ` · tópico: ${topic}` : ''}
           </div>
@@ -437,21 +437,21 @@ function YouAreHere({ position, student, l, c, clientId }) {
 function stripHtml(html) { return (html || '').replace(/<br\s*\/?>/g, ' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(); }
 
 /* Introduction with an optional PT translation toggle (l.introPt) */
-function IntroBlock({ l, navy, accent, accentLight, grayLight, voiceType }) {
+function IntroBlock({ l, c = {}, navy, accent, accentLight, grayLight, voiceType }) {
   const [showPt, setShowPt] = useState(false);
   const toHtml = (v) => Array.isArray(v) ? v.map(p => `<p style="margin:0 0 12px">${p}</p>`).join('') : v;
   const enHtml = toHtml(l.intro);
   const ptHtml = l.introPt ? toHtml(l.introPt) : null;
   return (
-    <Section navy={navy} accent={accent} letter="I" title={l.introLabel || 'Introduction'}>
+    <Section c={c} navy={navy} accent={accent} letter="I" title={l.introLabel || 'Introduction'}>
       <div style={{ fontSize: 15.5, lineHeight: 1.75 }} dangerouslySetInnerHTML={{ __html: enHtml }} />
       {ptHtml && showPt && (
-        <div style={{ marginTop: 14, padding: '14px 16px', background: accentLight, borderLeft: `3px solid ${accent}`, borderRadius: 10, fontSize: 15, lineHeight: 1.7, color: '#33443F' }} dangerouslySetInnerHTML={{ __html: ptHtml }} />
+        <div style={{ marginTop: 14, padding: '14px 16px', background: accentLight, borderLeft: `3px solid ${accent}`, borderRadius: 10, fontSize: 15, lineHeight: 1.7, color: c.textSoft || '#33443F' }} dangerouslySetInnerHTML={{ __html: ptHtml }} />
       )}
       <div style={{ marginTop: 14, display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
         <AudioPlayer text={stripHtml(Array.isArray(l.intro) ? l.intro.join(' ') : l.intro)} rate={0.95} label="Listen to introduction" voiceType={voiceType} />
         {ptHtml && (
-          <button onClick={() => setShowPt(s => !s)} style={{ padding: '9px 16px', borderRadius: 999, border: `1px solid ${grayLight}`, background: '#fff', color: navy, fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
+          <button onClick={() => setShowPt(s => !s)} style={{ padding: '9px 16px', borderRadius: 999, border: `1px solid ${grayLight}`, background: c.card || '#fff', color: c.ink || navy, fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
             {showPt ? 'Ocultar tradução' : '🇧🇷 Ver tradução'}
           </button>
         )}
@@ -467,7 +467,7 @@ function Insights({ data, c, voiceType }) {
   const accent = c.accent || '#00B04F';
   return (
     <>
-      <PartTitle accent={accent} navy={navy}>{data.kicker || 'Sacadas · did you know?'}</PartTitle>
+      <PartTitle c={c} accent={accent} navy={navy}>{data.kicker || 'Sacadas · did you know?'}</PartTitle>
       <div style={{ background: `linear-gradient(135deg, ${navy}, ${navyLight})`, borderRadius: 16, padding: '24px 22px', marginBottom: 16, color: '#fff', boxShadow: '0 10px 34px rgba(6,46,43,0.18)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
           <span style={{ height: 2, width: 24, background: accent }} />
@@ -507,22 +507,24 @@ function InsightCard({ card, c, voiceType }) {
   );
 }
 
-function Section({ navy, accent, letter, title, children, bg = '#fff', border = '#E2E9E7' }) {
+function Section({ navy, accent, letter, title, children, c = {}, bg, border }) {
+  bg = bg || c.card || '#fff';
+  border = border || c.grayLight || '#E2E9E7';
   return (
     <div style={{ background: bg, border: `1px solid ${border}`, borderRadius: 16, padding: '20px 22px', marginBottom: 16, boxShadow: '0 1px 4px rgba(6,46,43,0.04)' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
         <span style={{ width: 28, height: 28, borderRadius: 8, background: accent, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 14 }}>{letter}</span>
-        <h3 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: navy }}>{title}</h3>
+        <h3 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: c.ink || navy }}>{title}</h3>
       </div>
       {children}
     </div>
   );
 }
-function PartTitle({ accent, navy, children }) {
+function PartTitle({ accent, navy, children, c = {} }) {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '30px 0 16px' }}>
       <span style={{ height: 2, flex: '0 0 24px', background: accent }} />
-      <h2 style={{ margin: 0, fontSize: 13, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: navy }}>{children}</h2>
+      <h2 style={{ margin: 0, fontSize: 13, fontWeight: 800, letterSpacing: 1.2, textTransform: 'uppercase', color: c.ink || navy }}>{children}</h2>
       <span style={{ height: 1, flex: 1, background: '#E2E9E7' }} />
     </div>
   );
@@ -533,7 +535,7 @@ function BhBtn({ href, c, children, outline }) {
   return (
     <Link href={href} style={{
       padding: '11px 20px', borderRadius: 999, textDecoration: 'none', fontWeight: 700, fontSize: 14,
-      background: outline ? '#fff' : accent, color: outline ? navy : '#fff',
+      background: outline ? (c.card || '#fff') : accent, color: outline ? (c.ink || navy) : '#fff',
       border: outline ? '1px solid #E2E9E7' : 'none',
     }}>{children}</Link>
   );
@@ -554,7 +556,7 @@ function WordBank({ ex, c, onChecked }) {
     <ExShell title={ex.title} c={c} badge="Word bank">
       {ex.instruction && <p style={{ fontSize: 14, color: c.gray, margin: '0 0 10px', lineHeight: 1.5 }}>{ex.instruction}</p>}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 16, padding: 12, background: c.accentLight || '#E4F7EC', borderRadius: 10 }}>
-        {(ex.bank || []).map((w, i) => <span key={i} style={{ padding: '5px 12px', background: '#fff', border: `1px solid ${accent}`, borderRadius: 999, fontSize: 13.5, fontWeight: 600, color: navy }}>{w}</span>)}
+        {(ex.bank || []).map((w, i) => <span key={i} style={{ padding: '5px 12px', background: c.card || '#fff', border: `1px solid ${accent}`, borderRadius: 999, fontSize: 13.5, fontWeight: 600, color: c.ink || navy }}>{w}</span>)}
       </div>
       <div style={{ display: 'grid', gap: 12 }}>
         {items.map((it, i) => {
@@ -563,7 +565,7 @@ function WordBank({ ex, c, onChecked }) {
             <div key={i} style={{ fontSize: 15, lineHeight: 1.7 }}>
               {parts[0]}
               <select value={answers[i] || ''} onChange={e => setAnswers(a => ({ ...a, [i]: e.target.value }))} disabled={checked && isRight(i)}
-                style={{ margin: '0 4px', padding: '4px 8px', borderRadius: 6, fontSize: 14, fontFamily: 'inherit', border: `2px solid ${checked ? (isRight(i) ? '#9AE6B4' : '#FEB2B2') : '#E2E9E7'}`, background: checked ? (isRight(i) ? '#F0FFF4' : '#FFF5F5') : '#fff' }}>
+                style={{ margin: '0 4px', padding: '4px 8px', borderRadius: 6, fontSize: 14, fontFamily: 'inherit', border: `2px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : '#E2E9E7'}`, color: c.text || 'inherit', background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.inputBg || '#fff') }}>
                 <option value="">…</option>
                 {(ex.bank || []).map((w, j) => <option key={j} value={w}>{w}</option>)}
               </select>
@@ -598,7 +600,7 @@ function VerbFill({ ex, c, onChecked }) {
             <div key={i} style={{ fontSize: 15, lineHeight: 1.7 }}>
               {parts[0]}
               <input value={answers[i] || ''} onChange={e => setAnswers(a => ({ ...a, [i]: e.target.value }))} disabled={checked && isRight(i)} placeholder="…"
-                style={{ margin: '0 4px', padding: '4px 10px', borderRadius: 6, fontSize: 14, fontFamily: 'inherit', width: 120, border: `2px solid ${checked ? (isRight(i) ? '#9AE6B4' : '#FEB2B2') : '#E2E9E7'}`, background: checked ? (isRight(i) ? '#F0FFF4' : '#FFF5F5') : '#fff' }} />
+                style={{ margin: '0 4px', padding: '4px 10px', borderRadius: 6, fontSize: 14, fontFamily: 'inherit', width: 120, color: c.text || 'inherit', border: `2px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}`, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.inputBg || '#fff') }} />
               {parts.slice(1).join('___')}
             </div>
           );
@@ -641,10 +643,10 @@ function MakeItYourOwn({ ex, c, voiceType }) {
           const min = t.minWords || 4;
           return (
             <div key={i}>
-              <div style={{ fontSize: 14.5, fontWeight: 600, color: navy, marginBottom: 4 }}>{t.label}</div>
+              <div style={{ fontSize: 14.5, fontWeight: 600, color: c.ink || navy, marginBottom: 4 }}>{t.label}</div>
               {t.hint && <div style={{ fontSize: 13, color: c.gray, marginBottom: 6, fontStyle: 'italic' }}>{t.hint}</div>}
               <textarea value={vals[i] || ''} onChange={e => setVals(v => ({ ...v, [i]: e.target.value }))} rows={2} placeholder="Escreva em inglês…"
-                style={{ width: '100%', padding: '10px 12px', borderRadius: 10, border: `2px solid ${wc >= min ? '#9AE6B4' : c.grayLight || '#E2E9E7'}`, fontSize: 15, fontFamily: 'inherit', resize: 'vertical', lineHeight: 1.5 }} />
+                style={{ width: '100%', padding: '10px 12px', borderRadius: 10, border: `2px solid ${wc >= min ? (c.okBorder || '#9AE6B4') : c.grayLight || '#E2E9E7'}`, fontSize: 15, fontFamily: 'inherit', resize: 'vertical', lineHeight: 1.5 }} />
               <div style={{ fontSize: 12, color: wc >= min ? '#2F855A' : c.gray, marginTop: 4 }}>{wc} palavra(s){wc < min ? ` · escreva pelo menos ${min}` : ' ✓'}</div>
             </div>
           );
@@ -657,9 +659,9 @@ function MakeItYourOwn({ ex, c, voiceType }) {
 /* shared exercise chrome for the self-study types */
 function ExShell({ title, c, badge, children }) {
   return (
-    <div style={{ background: '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, padding: 20, marginBottom: 16 }}>
+    <div style={{ background: c.card || '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, padding: 20, marginBottom: 16 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14, flexWrap: 'wrap' }}>
-        {badge && <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.5, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: c.accentLight || '#E4F7EC', color: c.navy || '#062E2B' }}>{badge}</span>}
+        {badge && <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.5, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: c.accentLight || '#E4F7EC', color: c.ink || c.navy || '#062E2B' }}>{badge}</span>}
         <h4 style={{ margin: 0, fontSize: 16 }}>{title}</h4>
       </div>
       {children}
@@ -671,16 +673,16 @@ function CheckRow({ checked, setChecked, onReset, canCheck, c }) {
   return (
     <div style={{ marginTop: 16, display: 'flex', gap: 10 }}>
       {!checked ? (
-        <button onClick={() => setChecked(true)} disabled={!canCheck} style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : '#CBD5D2', color: '#fff', fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>Corrigir</button>
+        <button onClick={() => setChecked(true)} disabled={!canCheck} style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : (c.disabled || '#CBD5D2'), color: '#fff', fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>Corrigir</button>
       ) : (
-        <button onClick={() => { setChecked(false); onReset(); }} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: '#fff', color: c.text || '#20302D', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>Tentar de novo</button>
+        <button onClick={() => { setChecked(false); onReset(); }} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || '#20302D', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>Tentar de novo</button>
       )}
     </div>
   );
 }
 function ResultLine({ ok, c, explanation, corrections }) {
   return (
-    <div style={{ marginTop: 14, padding: '10px 14px', borderRadius: 8, background: ok ? '#F0FFF4' : '#FFF5F5', border: `1px solid ${ok ? '#9AE6B4' : '#FEB2B2'}`, color: ok ? '#22543D' : '#742A2A', fontSize: 14 }}>
+    <div style={{ marginTop: 14, padding: '10px 14px', borderRadius: 8, background: ok ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5'), border: `1px solid ${ok ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')}`, color: ok ? (c.okText || '#22543D') : (c.badText || '#742A2A'), fontSize: 14 }}>
       {ok ? `✓ ${explanation || 'Tudo certo!'}` : '✗ Quase — confira as respostas certas:'}
       {!ok && corrections?.length > 0 && (
         <ul style={{ margin: '8px 0 0', paddingLeft: 20 }}>
@@ -695,10 +697,10 @@ function GrammarDeepDive({ dd, c }) {
   const navy = c.navy || '#062E2B';
   const gray = c.gray || '#5F7570';
   return (
-    <div style={{ background: '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 16, padding: '20px 22px', marginBottom: 16 }}>
+    <div style={{ background: c.card || '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 16, padding: '20px 22px', marginBottom: 16 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
         <span style={{ width: 28, height: 28, borderRadius: 8, background: c.teal || '#009CA6', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 12 }}>G+</span>
-        <h3 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: navy }}>{dd.title || 'Grammar Deep Dive'}</h3>
+        <h3 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: c.ink || navy }}>{dd.title || 'Grammar Deep Dive'}</h3>
       </div>
       {dd.explanation && <div style={{ fontSize: 14.5, lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: dd.explanation }} />}
       {dd.examples?.length > 0 && (
@@ -709,7 +711,7 @@ function GrammarDeepDive({ dd, c }) {
       {dd.commonMistakes?.length > 0 && (
         <div style={{ marginTop: 16 }}>
           {dd.commonMistakes.map((m, i) => (
-            <div key={i} style={{ marginBottom: 10, padding: 12, background: '#FFF5F5', borderRadius: 8, borderLeft: '3px solid #E53E3E' }}>
+            <div key={i} style={{ marginBottom: 10, padding: 12, background: (c.badBg || '#FFF5F5'), borderRadius: 8, borderLeft: '3px solid #E53E3E' }}>
               <div style={{ color: '#C53030' }}>✗ {m.wrong}</div>
               <div style={{ color: '#2F855A' }}>✓ {m.right}</div>
               {m.note && <div style={{ fontSize: 13, color: gray, marginTop: 3 }}>{m.note}</div>}

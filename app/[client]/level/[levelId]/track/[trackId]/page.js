@@ -9,6 +9,14 @@ import BakerHughesTrack from '../../../../../../components/bakerhughes/BakerHugh
 const VALID_LEVELS = ['confidence', 'essentials', 'rise', 'apex'];
 const SELF_STUDY = ['bakerhughes', 'faapatendimento'];
 
+// Cores da trilha por cima das do cliente. Trilha sem `palette` devolve o tema
+// intacto, então todo curso que não usa o campo continua igual.
+function themeForTrack(theme, track) {
+  if (!track?.palette) return theme;
+  return { ...theme, colors: { ...(theme?.colors || {}), ...track.palette } };
+}
+
+
 export default async function TrackRoute({ params }) {
   const { client, levelId, trackId } = await params;
   const session = await guardClient(client);
@@ -27,7 +35,7 @@ export default async function TrackRoute({ params }) {
     return (
       <BakerHughesTrack
         course={course}
-        theme={theme}
+        theme={themeForTrack(theme, track)}
         clientId={client}
         trackId={trackId}
         student={session?.name || null}

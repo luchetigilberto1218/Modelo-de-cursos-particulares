@@ -16,14 +16,20 @@ import AluExplica from './AluExplica';
       feira: outro ambiente, mesmas regras, ninguém se perde.
 */
 
-const EXPLICA = [
-  { title: 'Bem-vindo ao seu inglês na FAAP.', text: 'Este material é seu, para estudar na hora que der. Não é aula: é a fonte que você abre quando precisa resolver alguma coisa em inglês no trabalho.' },
-  { title: 'As instruções estão em português.', text: 'Tudo o que pede uma ação está na sua língua. O que está em inglês sempre tem um botão de tradução do lado — e todo áudio tem transcript.' },
-  { title: 'Comece pela FAAP.', text: 'As duas primeiras trilhas contam a Fundação e o mundo da educação em inglês. É o vocabulário que aparece em toda conversa com quem vem de fora.' },
-  { title: 'Depois vá para a sua trilha.', text: 'Comercial para quem recebe coordenadores e escolas; Atendimento para quem recebe aluno e família. Você pode olhar as duas.' },
-  { title: 'E tem a área livre.', text: 'Pop Culture e Mind & Body são para o inglês fora do expediente — séries, música, academia, saúde. Mesmo formato, assunto seu.' },
-  { title: 'Cada exercício se corrige sozinho.', text: 'Clique em Corrigir e a resposta aparece na hora, com explicação. Errar aqui é de graça — é para isso que o material existe.' },
-];
+/* Um texto só, curto, num áudio só.
+
+   A primeira versão eram seis telas encadeadas: cada uma disparava a sua
+   própria requisição de voz, e o resultado ficava picotado — a fala parava,
+   esperava a rede e recomeçava. Explicação de boas-vindas não é conteúdo de
+   estudo; é o recado da porta de entrada. Quatro frases resolvem. */
+const EXPLICA = {
+  titulo: 'Bem-vindo ao seu inglês na FAAP.',
+  paragrafos: [
+    'Este material é seu, para abrir na hora que der. Não é aula: é a fonte que você consulta quando precisa resolver alguma coisa em inglês no trabalho.',
+    'As instruções estão todas em português. O que está em inglês tem botão de tradução do lado, e todo áudio tem transcript.',
+    'Comece pela FAAP, siga para a sua trilha — Comercial ou Atendimento — e, quando quiser respirar, a área livre está logo abaixo.',
+  ],
+};
 
 export default function FaapHome({ course, theme, clientId, student, role }) {
   const c = theme?.colors || {};
@@ -50,6 +56,11 @@ export default function FaapHome({ course, theme, clientId, student, role }) {
 
   return (
     <div style={{ minHeight: '100vh', background: offWhite, color: text, fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", WebkitFontSmoothing: 'antialiased' }}>
+
+      <style>{`
+        .hub-card:hover { transform: translateY(-3px); border-color: rgba(255,61,195,0.85) !important;
+          box-shadow: 0 15px 40px rgba(0,0,0,0.4), 0 0 30px rgba(255,61,195,0.15); text-decoration: none; }
+      `}</style>
 
       {/* Chrome */}
       <div style={{ background: navy, color: '#fff' }}>
@@ -91,7 +102,7 @@ export default function FaapHome({ course, theme, clientId, student, role }) {
 
       <div style={{ maxWidth: 1000, margin: '0 auto', padding: '30px 24px 70px' }}>
 
-        <AluExplica c={c} steps={EXPLICA} student={student} />
+        <AluExplica c={c} texto={EXPLICA} student={student} />
 
         <Group
           kicker="Comece por aqui"
@@ -142,19 +153,51 @@ function Group({ kicker, title, lead, tracks, c, clientId, lessons, doneMap }) {
   );
 }
 
+/* A área livre é outro pavilhão da mesma feira — e o pavilhão é o FAAP English
+   Hub. Fundo #0a0612, glow do accent, cards com capa e borda que acende no
+   hover: as mesmas peças do hub, com as mesmas cores. */
 function DarkGroup({ kicker, title, lead, tracks, c, clientId, lessons, doneMap }) {
-  const navy = c.navy || '#0B2E63';
-  const accent = c.accent || '#1753D9';
   if (!tracks.length) return null;
   return (
-    <section style={{ marginTop: 46, background: `linear-gradient(140deg, ${c.dark || '#081C3E'}, ${navy})`, borderRadius: 20, padding: '30px 26px 32px', color: '#fff' }}>
-      <p style={{ margin: '0 0 8px', fontSize: 11.5, fontWeight: 800, letterSpacing: 1.4, textTransform: 'uppercase', color: accent }}>{kicker}</p>
-      <h2 style={{ margin: '0 0 8px', fontSize: 'clamp(21px, 3vw, 27px)', fontWeight: 800, letterSpacing: -0.5 }}>{title}</h2>
-      <p style={{ margin: '0 0 20px', fontSize: 14.5, lineHeight: 1.6, color: 'rgba(255,255,255,0.7)', maxWidth: 640 }}>{lead}</p>
-      <div style={{ display: 'grid', gap: 16, gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
-        {tracks.map((t) => <TrackCard key={t.id} track={t} c={c} clientId={clientId} lessons={lessons} doneMap={doneMap} dark />)}
+    <section style={{ position: 'relative', marginTop: 48, background: '#0a0612', borderRadius: 24, padding: '46px 30px 40px', color: '#f5eeff', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'linear-gradient(90deg, #ff3dc3, #9d4edd 50%, #00e5ff)' }} />
+      <div style={{ position: 'absolute', top: '-40%', left: '50%', transform: 'translateX(-50%)', width: 900, height: 900, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,61,195,0.16) 0%, transparent 55%)', filter: 'blur(50px)', pointerEvents: 'none' }} />
+      <div style={{ position: 'relative' }}>
+        <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '4px 10px', borderRadius: 999, background: 'rgba(255,61,195,0.15)', color: '#ff3dc3', border: '1px solid rgba(255,61,195,0.3)' }}>
+          {kicker}
+        </span>
+        <h2 style={{ margin: '14px 0 8px', fontSize: 'clamp(24px, 4vw, 38px)', fontWeight: 800, letterSpacing: -0.7, color: '#f5eeff' }}>{title}</h2>
+        <p style={{ margin: '0 0 26px', fontSize: 15, lineHeight: 1.6, color: '#f5eeff8c', maxWidth: 660 }}>{lead}</p>
+        <div style={{ display: 'grid', gap: 22, gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+          {tracks.map((t) => <HubCard key={t.id} track={t} clientId={clientId} lessons={lessons} doneMap={doneMap} />)}
+        </div>
       </div>
     </section>
+  );
+}
+
+function HubCard({ track, clientId, lessons, doneMap }) {
+  const accent = track.palette?.accent || '#ff3dc3';
+  const mine = lessons.filter((l) => l.track === track.id);
+  const done = mine.filter((l) => doneMap[l.num]).length;
+  const href = `/${clientId}/level/${track.level || 'essentials'}/track/${track.id}`;
+
+  return (
+    <Link href={href} className="hub-card" style={{ display: 'flex', flexDirection: 'column', textDecoration: 'none', borderRadius: 16, border: '1px solid rgba(255,255,255,0.12)', overflow: 'hidden', background: 'rgba(255,255,255,0.04)', color: '#f5eeff', transition: 'all 0.25s ease' }}>
+      <div style={{ height: 150, backgroundImage: `url('${track.image}')`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,6,18,0) 0%, rgba(10,6,18,0.75) 100%)' }} />
+      </div>
+      <div style={{ padding: 20, display: 'flex', flexDirection: 'column', gap: 8, flex: 1 }}>
+        <h3 style={{ margin: 0, fontSize: 19, fontWeight: 700, letterSpacing: -0.3, color: '#f5eeff' }}>{track.name}</h3>
+        <p style={{ margin: 0, fontSize: 13.5, lineHeight: 1.55, color: '#f5eeff8c', flex: 1 }}>{track.description}</p>
+        <div style={{ marginTop: 6, display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: 12.5 }}>
+          <span style={{ color: '#f5eeff8c' }}>
+            {done > 0 ? `${done} de ${mine.length} concluídas` : `${mine.length} ${mine.length === 1 ? 'lição' : 'lições'}`}
+          </span>
+          <span style={{ color: accent, fontWeight: 700 }}>Abrir →</span>
+        </div>
+      </div>
+    </Link>
   );
 }
 

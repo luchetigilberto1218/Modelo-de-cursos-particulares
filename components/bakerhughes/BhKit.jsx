@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 export function ExShell({ title, c, badge, children, image, imageCaption }) {
   return (
-    <div style={{ background: '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, padding: 20, marginBottom: 16 }}>
+    <div style={{ background: c.card || '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, padding: 20, marginBottom: 16 }}>
       {/* Imagem opcional do exercício (`ex.image`). Aditivo: exercício sem o
           campo continua exatamente como antes. */}
       {image && (
@@ -23,9 +23,9 @@ export function ExShell({ title, c, badge, children, image, imageCaption }) {
       )}
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14, flexWrap: 'wrap' }}>
         {badge && (
-          <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.5, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: c.accentLight || '#E4F7EC', color: c.navy || '#062E2B' }}>{badge}</span>
+          <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.5, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: c.accentLight || '#E4F7EC', color: c.ink || c.navy || '#062E2B' }}>{badge}</span>
         )}
-        <h4 style={{ margin: 0, fontSize: 16, color: c.navy || '#062E2B' }}>{title}</h4>
+        <h4 style={{ margin: 0, fontSize: 16, color: c.ink || c.navy || '#062E2B' }}>{title}</h4>
       </div>
       {children}
     </div>
@@ -46,7 +46,7 @@ export function TranscriptToggle({ text, pt, c, hint }) {
   return (
     <div style={{ marginTop: 8 }}>
       <button type="button" onClick={() => setOpen((o) => !o)}
-        style={{ padding: '5px 12px', borderRadius: 999, border: `1px solid ${grayLight}`, background: '#fff', color: navy, fontWeight: 700, fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer' }}>
+        style={{ padding: '5px 12px', borderRadius: 999, border: `1px solid ${grayLight}`, background: c.card || '#fff', color: c.ink || navy, fontWeight: 700, fontSize: 12.5, fontFamily: 'inherit', cursor: 'pointer' }}>
         {open ? 'ocultar transcript' : '📄 ver transcript'}
       </button>
       {open && (
@@ -79,12 +79,12 @@ export function CheckRow({ checked, setChecked, onReset, canCheck, c, checkLabel
     <div style={{ marginTop: 16, display: 'flex', gap: 10 }}>
       {!checked ? (
         <button onClick={() => setChecked(true)} disabled={!canCheck}
-          style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : '#CBD5D2', color: '#fff', fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>
+          style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : (c.disabled || '#CBD5D2'), color: '#fff', fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>
           {checkLabel || 'Corrigir'}
         </button>
       ) : (
         <button onClick={() => { setChecked(false); onReset && onReset(); }}
-          style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: '#fff', color: c.text || '#20302D', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>
+          style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || '#20302D', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>
           Tentar de novo
         </button>
       )}
@@ -94,7 +94,7 @@ export function CheckRow({ checked, setChecked, onReset, canCheck, c, checkLabel
 
 export function ResultLine({ ok, c, explanation, corrections }) {
   return (
-    <div style={{ marginTop: 14, padding: '10px 14px', borderRadius: 8, background: ok ? '#F0FFF4' : '#FFF5F5', border: `1px solid ${ok ? '#9AE6B4' : '#FEB2B2'}`, color: ok ? '#22543D' : '#742A2A', fontSize: 14, lineHeight: 1.55 }}>
+    <div style={{ marginTop: 14, padding: '10px 14px', borderRadius: 8, background: ok ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5'), border: `1px solid ${ok ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')}`, color: ok ? (c.okText || '#22543D') : (c.badText || '#742A2A'), fontSize: 14, lineHeight: 1.55 }}>
       {ok ? `✓ ${explanation || 'Tudo certo!'}` : '✗ Quase — confira as respostas certas:'}
       {!ok && corrections?.length > 0 && (
         <ul style={{ margin: '8px 0 0', paddingLeft: 20 }}>

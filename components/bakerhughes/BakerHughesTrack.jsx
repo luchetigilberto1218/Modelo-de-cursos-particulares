@@ -40,10 +40,21 @@ export default function BakerHughesTrack({ course, theme, clientId, trackId, stu
         </div>
       </div>
 
-      <div style={{ background: `linear-gradient(135deg, ${navy}, ${navyLight})`, color: '#fff', position: 'relative' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${accent}, ${teal})` }} />
-        <div style={{ maxWidth: 880, margin: '0 auto', padding: '34px 24px 32px' }}>
-          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1.6, textTransform: 'uppercase', color: accent, margin: '0 0 12px' }}>Learning track</p>
+      <div style={{ background: `linear-gradient(135deg, ${navy}, ${navyLight})`, color: '#fff', position: 'relative', overflow: 'hidden' }}>
+        {/* Capa da trilha ao fundo, no formato do hero do hub. Aditivo: trilha
+            sem `image` mantém o gradiente puro que já existia. */}
+        {track.image && (
+          <>
+            <div style={{ position: 'absolute', inset: 0, backgroundImage: `url('${track.heroImage || track.image}')`, backgroundSize: 'cover', backgroundPosition: 'center', opacity: track.heroImage ? 0.85 : 0.35 }} />
+            <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(180deg, ${navy}8c 0%, ${navy}e0 60%, ${navy} 100%)` }} />
+            <div style={{ position: 'absolute', top: '-30%', left: '50%', transform: 'translateX(-50%)', width: 900, height: 900, borderRadius: '50%', background: `radial-gradient(circle, ${accent}26 0%, transparent 55%)`, filter: 'blur(50px)', pointerEvents: 'none' }} />
+          </>
+        )}
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${accent}, ${teal})`, zIndex: 2 }} />
+        <div style={{ position: 'relative', zIndex: 2, maxWidth: 880, margin: '0 auto', padding: '34px 24px 32px' }}>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1.6, textTransform: 'uppercase', color: accent, margin: '0 0 12px' }}>
+            {track.kicker || 'Learning track'}
+          </p>
           {track.status === 'inactive' && (
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 14px', borderRadius: 999, background: 'rgba(255,255,255,0.14)', border: '1px solid rgba(255,255,255,0.28)', margin: '0 0 12px' }}>
               <span style={{ width: 7, height: 7, borderRadius: 999, background: 'rgba(255,255,255,0.6)' }} />
@@ -122,17 +133,17 @@ function LessonRow({ lesson, clientId, index, c, done = false, isNext = false })
 
   return (
     <Link href={`/${clientId}/lesson/${lesson.num}`} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
-      style={{ display: 'flex', alignItems: 'center', gap: 16, padding: `${18 - (borderWidth - 1)}px ${20 - (borderWidth - 1)}px`, background: done ? '#F2FBF5' : '#fff', borderRadius: 14, textDecoration: 'none', color: 'inherit',
+      style={{ display: 'flex', alignItems: 'center', gap: 16, padding: `${18 - (borderWidth - 1)}px ${20 - (borderWidth - 1)}px`, background: done ? (c.okBg || '#F2FBF5') : (c.card || '#fff'), borderRadius: 14, textDecoration: 'none', color: 'inherit',
         border: `${borderWidth}px solid ${border}`, boxShadow: hover ? '0 10px 30px rgba(6,46,43,0.10)' : '0 1px 3px rgba(6,46,43,0.04)',
         transform: hover ? 'translateX(4px)' : 'none', transition: 'all 0.25s' }}>
       <div style={{ flex: '0 0 46px', height: 46, borderRadius: 12, background: done ? '#34C759' : (c.accentLight || '#E4F7EC'), color: done ? '#fff' : navy, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: done ? 21 : 18 }}>
         {done ? '✓' : String(lesson.trackOrder || index + 1).padStart(2, '0')}
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: 17, fontWeight: 700, color: navy, letterSpacing: -0.2 }}>{lesson.title}</div>
+        <div style={{ fontSize: 17, fontWeight: 700, color: c.ink || navy, letterSpacing: -0.2 }}>{lesson.title}</div>
         <div style={{ fontSize: 13.5, color: gray, marginTop: 2 }}>{lesson.focus}</div>
         {(done || isNext) && (
-          <div style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 0.8, textTransform: 'uppercase', marginTop: 6, color: done ? '#248A3D' : accent }}>
+          <div style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 0.8, textTransform: 'uppercase', marginTop: 6, color: done ? (c.okText || '#248A3D') : accent }}>
             {done ? '✓ Concluída' : 'Continue aqui →'}
           </div>
         )}
