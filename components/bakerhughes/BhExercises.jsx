@@ -144,10 +144,10 @@ function MultiSelect({ ex, c, onChecked }) {
           return (
             <button key={i} onClick={() => toggle(i)} disabled={checked}
               style={{ display: 'flex', alignItems: 'flex-start', gap: 10, textAlign: 'left', padding: '12px 14px', borderRadius: 10, cursor: checked ? 'default' : 'pointer', fontSize: 14.5, lineHeight: 1.5, fontFamily: 'inherit',
-                background: state === 'ok' ? (c.okBg || '#F0FFF4') : state === 'bad' ? (c.badBg || '#FFF5F5') : on ? c.accentLight || '#E4F7EC' : '#fff',
+                background: state === 'ok' ? (c.okBg || '#F0FFF4') : state === 'bad' ? (c.badBg || '#FFF5F5') : on ? c.accentLight || '#E4F7EC' : (c.card || '#fff'),
                 border: `2px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : on ? accent : c.grayLight || '#E2E9E7'}`,
                 color: c.text || '#20302D' }}>
-              <span style={{ flex: '0 0 20px', height: 20, borderRadius: 5, border: `2px solid ${on ? accent : '#C9D6D2'}`, background: on ? accent : '#fff', color: '#fff', fontSize: 13, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>{on ? '✓' : ''}</span>
+              <span style={{ flex: '0 0 20px', height: 20, borderRadius: 5, border: `2px solid ${on ? accent : '#C9D6D2'}`, background: on ? accent : (c.card || '#fff'), color: '#fff', fontSize: 13, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>{on ? '✓' : ''}</span>
               <span style={{ flex: 1 }}>{o.text}{checked && o.correct && <strong style={{ color: (c.okText || '#2F855A') }}> · correta</strong>}</span>
             </button>
           );
@@ -181,7 +181,7 @@ function TrueFalse({ ex, c, onChecked }) {
               {[true, false].map((v, k) => (
                 <button key={k} onClick={() => !checked && setAns((a) => ({ ...a, [i]: v }))} disabled={checked}
                   style={{ padding: '6px 16px', borderRadius: 999, fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                    background: ans[i] === v ? accent : '#fff', color: ans[i] === v ? '#fff' : c.gray || '#5F7570',
+                    background: ans[i] === v ? accent : (c.card || '#fff'), color: ans[i] === v ? '#fff' : c.gray || '#5F7570',
                     border: `1px solid ${ans[i] === v ? accent : c.grayLight || '#E2E9E7'}` }}>{labels[k]}</button>
               ))}
             </div>
@@ -219,13 +219,13 @@ function Categorize({ ex, c, onChecked, seed }) {
         {order.map((i) => {
           const it = items[i];
           return (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', padding: '11px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : '#fff', border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
+            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', padding: '11px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.card || '#fff'), border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
               <span style={{ flex: '1 1 200px', fontSize: 14.5, lineHeight: 1.5 }}>{it.text}</span>
               <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
                 {cats.map((cat) => (
                   <button key={cat.id} onClick={() => !checked && setPut((p) => ({ ...p, [i]: cat.id }))} disabled={checked}
                     style={{ padding: '5px 12px', borderRadius: 999, fontSize: 12.5, fontWeight: 700, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                      background: put[i] === cat.id ? accent : '#fff', color: put[i] === cat.id ? '#fff' : c.gray || '#5F7570',
+                      background: put[i] === cat.id ? accent : (c.card || '#fff'), color: put[i] === cat.id ? '#fff' : c.gray || '#5F7570',
                       border: `1px solid ${put[i] === cat.id ? accent : c.grayLight || '#E2E9E7'}` }}>{cat.short || cat.name}</button>
                 ))}
               </div>
@@ -262,7 +262,7 @@ function OddOneOut({ ex, c, onChecked }) {
                 return (
                   <button key={wi} onClick={() => !checked && setPick((p) => ({ ...p, [gi]: w }))} disabled={checked}
                     style={{ padding: '8px 14px', borderRadius: 10, fontSize: 14, fontWeight: 600, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                      background: state === 'ok' ? (c.okBg || '#F0FFF4') : state === 'bad' ? (c.badBg || '#FFF5F5') : on ? c.accentLight || '#E4F7EC' : '#fff',
+                      background: state === 'ok' ? (c.okBg || '#F0FFF4') : state === 'bad' ? (c.badBg || '#FFF5F5') : on ? c.accentLight || '#E4F7EC' : (c.card || '#fff'),
                       border: `2px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : on ? accent : c.grayLight || '#E2E9E7'}`,
                       color: c.text || '#20302D' }}>{w}</button>
                 );
@@ -487,7 +487,7 @@ function SerialChoice({ ex, c, onChecked }) {
       <Instruction c={c}>{ex.instruction}</Instruction>
       <div style={{ display: 'grid', gap: 14 }}>
         {items.map((it, i) => (
-          <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : '#fff', border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
+          <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.card || '#fff'), border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
             <div style={{ fontSize: 14.5, lineHeight: 1.6, marginBottom: 9, color: c.ink || c.navy || '#062E2B', fontWeight: 600 }}>{it.prompt}</div>
             <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap' }}>
               {(it.options || []).map((o, oi) => {
@@ -496,7 +496,7 @@ function SerialChoice({ ex, c, onChecked }) {
                 return (
                   <button key={oi} onClick={() => !checked && setPick((p) => ({ ...p, [i]: oi }))} disabled={checked}
                     style={{ padding: '8px 14px', borderRadius: 999, fontSize: 14, fontWeight: 600, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer', textAlign: 'left',
-                      background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? c.accentLight || '#E4F7EC' : '#fff',
+                      background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? c.accentLight || '#E4F7EC' : (c.card || '#fff'),
                       border: `1.5px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : on ? accent : c.grayLight || '#E2E9E7'}`,
                       color: c.text || '#20302D' }}>{o.text}</button>
                 );
@@ -556,7 +556,7 @@ function FlowChoice({ ex, c, onChecked, voiceType }) {
                 return (
                   <button key={oi} onClick={() => choose(i, oi)} disabled={answered}
                     style={{ textAlign: 'left', padding: '10px 14px', borderRadius: 12, fontSize: 14.5, lineHeight: 1.5, fontFamily: 'inherit', cursor: answered ? 'default' : 'pointer',
-                      background: state === 'ok' ? (c.okBg || '#F0FFF4') : state === 'bad' ? (c.badBg || '#FFF5F5') : '#fff',
+                      background: state === 'ok' ? (c.okBg || '#F0FFF4') : state === 'bad' ? (c.badBg || '#FFF5F5') : (c.card || '#fff'),
                       border: `1.5px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : c.grayLight || '#E2E9E7'}`,
                       color: c.text || '#20302D' }}>
                     {o.text}
@@ -608,7 +608,7 @@ function ListenChoose({ ex, c, onChecked, voiceType }) {
                 return (
                   <button key={oi} onClick={() => !checked && setPick((p) => ({ ...p, [i]: oi }))} disabled={checked}
                     style={{ textAlign: 'left', padding: '9px 13px', borderRadius: 10, fontSize: 14.5, lineHeight: 1.5, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                      background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? c.accentLight || '#E4F7EC' : '#fff',
+                      background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? c.accentLight || '#E4F7EC' : (c.card || '#fff'),
                       border: `1.5px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : on ? accent : c.grayLight || '#E2E9E7'}`,
                       color: c.text || '#20302D' }}>{o.text}</button>
                 );
@@ -752,7 +752,7 @@ function ReadingTask({ ex, c, onChecked, voiceType }) {
       </div>
       <div style={{ display: 'grid', gap: 14 }}>
         {qs.map((q, i) => (
-          <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : '#fff', border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
+          <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.card || '#fff'), border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
             <div style={{ fontSize: 14.5, fontWeight: 600, color: c.ink || c.navy || '#062E2B', marginBottom: 9, lineHeight: 1.55 }}>{i + 1}. {q.prompt}</div>
             <div style={{ display: 'grid', gap: 7 }}>
               {(q.options || []).map((o, oi) => {
@@ -761,7 +761,7 @@ function ReadingTask({ ex, c, onChecked, voiceType }) {
                 return (
                   <button key={oi} onClick={() => !checked && setPick((p) => ({ ...p, [i]: oi }))} disabled={checked}
                     style={{ textAlign: 'left', padding: '9px 13px', borderRadius: 10, fontSize: 14.5, lineHeight: 1.5, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                      background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? c.accentLight || '#E4F7EC' : '#fff',
+                      background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? c.accentLight || '#E4F7EC' : (c.card || '#fff'),
                       border: `1.5px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : on ? accent : c.grayLight || '#E2E9E7'}`,
                       color: c.text || '#20302D' }}>{o.text}</button>
                 );
@@ -808,7 +808,7 @@ function EmailTriage({ ex, c, onChecked }) {
                 return (
                   <button key={oi} onClick={() => !checked && setPick((p) => ({ ...p, [i]: oi }))} disabled={checked}
                     style={{ textAlign: 'left', padding: '9px 13px', borderRadius: 10, fontSize: 14.5, lineHeight: 1.5, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                      background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? '#fff' : '#fff',
+                      background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? '#fff' : (c.card || '#fff'),
                       border: `1.5px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : on ? accent : c.grayLight || '#E2E9E7'}`,
                       color: c.text || '#20302D' }}>{o.text}</button>
                 );
@@ -838,7 +838,7 @@ function SwipeChoice({ ex, c, onChecked }) {
       <Instruction c={c}>{ex.instruction || 'Duas versões da mesma ideia. Qual funciona melhor no contexto?'}</Instruction>
       <div style={{ display: 'grid', gap: 14 }}>
         {items.map((it, i) => (
-          <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : '#fff', border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
+          <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.card || '#fff'), border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
             {it.prompt && <div style={{ fontSize: 13.8, color: c.gray || '#5F7570', marginBottom: 10, lineHeight: 1.5 }}>{it.prompt}</div>}
             <div style={{ display: 'grid', gap: 8, gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))' }}>
               {['a', 'b'].map((k) => {
@@ -894,7 +894,7 @@ function CheckOff({ ex, c, voiceType, onChecked }) {
               style={{ display: 'flex', alignItems: 'flex-start', gap: 12, textAlign: 'left', padding: '12px 14px', borderRadius: 10, cursor: 'pointer', fontFamily: 'inherit',
                 background: on[i] ? c.accentLight || '#E4F7EC' : c.offWhite || '#F5F8F7',
                 border: `1px solid ${on[i] ? accent : c.grayLight || '#E2E9E7'}` }}>
-              <span style={{ flex: '0 0 22px', height: 22, borderRadius: 6, border: `2px solid ${on[i] ? accent : '#C9D6D2'}`, background: on[i] ? accent : '#fff', color: '#fff', fontSize: 13, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>{on[i] ? '✓' : ''}</span>
+              <span style={{ flex: '0 0 22px', height: 22, borderRadius: 6, border: `2px solid ${on[i] ? accent : '#C9D6D2'}`, background: on[i] ? accent : (c.card || '#fff'), color: '#fff', fontSize: 13, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>{on[i] ? '✓' : ''}</span>
               <span style={{ flex: 1 }}>
                 <span style={{ display: 'block', fontSize: 14.8, color: c.ink || navy, fontWeight: 600, lineHeight: 1.45 }}>{text}</span>
                 {pt && <span style={{ display: 'block', fontSize: 13.3, color: c.gray || '#5F7570', marginTop: 3, lineHeight: 1.45 }}>{pt}</span>}
@@ -1028,7 +1028,7 @@ function Dialogue({ ex, c, onChecked, voiceType }) {
           <p style={{ fontSize: 13.5, fontWeight: 700, color: c.ink || navy, margin: '0 0 10px' }}>{ex.questionsLabel || 'Você entendeu?'}</p>
           <div style={{ display: 'grid', gap: 14 }}>
             {questions.map((q, i) => (
-              <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : '#fff', border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : grayLight}` }}>
+              <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.card || '#fff'), border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : grayLight}` }}>
                 <p style={{ margin: '0 0 9px', fontSize: 14.5, fontWeight: 600, color: c.ink || navy, lineHeight: 1.5 }}>{q.q}</p>
                 <div style={{ display: 'grid', gap: 7 }}>
                   {(q.options || []).map((o, oi) => {
@@ -1037,7 +1037,7 @@ function Dialogue({ ex, c, onChecked, voiceType }) {
                     return (
                       <button key={oi} type="button" onClick={() => !checked && setPick((p) => ({ ...p, [i]: oi }))} disabled={checked}
                         style={{ textAlign: 'left', padding: '9px 13px', borderRadius: 10, fontSize: 14.5, lineHeight: 1.5, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                          background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? c.accentLight || '#E4F7EC' : '#fff',
+                          background: state === 'ok' ? (c.okBgStrong || '#C6F6D5') : state === 'bad' ? (c.badBgStrong || '#FED7D7') : on ? c.accentLight || '#E4F7EC' : (c.card || '#fff'),
                           border: `1.5px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : on ? accent : grayLight}`,
                           color: c.text || '#20302D' }}>{o.text}</button>
                     );

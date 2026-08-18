@@ -545,7 +545,7 @@ function BhBtn({ href, c, children, outline }) {
   return (
     <Link href={href} style={{
       padding: '11px 20px', borderRadius: 999, textDecoration: 'none', fontWeight: 700, fontSize: 14,
-      background: outline ? (c.card || '#fff') : accent, color: outline ? (c.ink || navy) : '#fff',
+      background: outline ? (c.card || '#fff') : accent, color: outline ? (c.ink || navy) : (c.card || '#fff'),
       border: outline ? '1px solid #E2E9E7' : 'none',
     }}>{children}</Link>
   );
