@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { getSession, isCoordinator } from '../../../lib/auth';
 import { getPainelCoordenacao } from '../../../lib/coordenacao';
 import { getStatsByEmpresa } from '../../../lib/stats';
+import { getRankingCampanha } from '../../../lib/czarnikow-campanha';
 
 // Leitura de turma da coordenação: todos os clientes numa tela só.
 //
@@ -58,9 +59,12 @@ export default async function PainelCoordenacao() {
   const from = new Date(hoje.getTime() - 29 * DIA).toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
   const to = hoje.toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
 
-  const [clientes, acessosRaw] = await Promise.all([
+  const [clientes, acessosRaw, campanha] = await Promise.all([
     getPainelCoordenacao(),
     getStatsByEmpresa(from, to).catch(() => []),
+    // A campanha é fechada para o colaborador (cada um vê só a si mesmo).
+    // A tabela com nomes existe só aqui, para a coordenação.
+    getRankingCampanha().catch(() => null),
   ]);
 
   // A Czarnikow tem duas portas (/czarnikow e /czarnikow-teste) e o contador
@@ -212,6 +216,67 @@ export default async function PainelCoordenacao() {
                   </tbody>
                 </table>
               </div>
+
+              {c.id === 'czarnikow' && campanha && (
+                <div style={{ marginTop: 22 }}>
+                  <h3 style={{ fontSize: 16, fontWeight: 700, margin: '0 0 2px' }}>
+                    Campanha · {campanha.semestre.label}
+                  </h3>
+                  <p style={{ fontSize: 13, color: '#6b7280', margin: '0 0 10px' }}>
+                    {campanha.pontuaram} de {campanha.participantes} já pontuaram.
+                    Só gente real — o login de demonstração e o acesso do professor ficam de fora.
+                    O colaborador continua vendo apenas a própria posição; esta tabela é só sua.
+                  </p>
+                  <div style={{ overflowX: 'auto', background: '#fff', borderRadius: 12, border: '1px solid #ececf0' }}>
+                    <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 720 }}>
+                      <thead>
+                        <tr>
+                          <th style={{ ...th, width: 52 }}>#</th>
+                          <th style={th}>Colaborador</th>
+                          <th style={th}>Pontos</th>
+                          <th style={th}>Aula</th>
+                          <th style={th}>Material</th>
+                          <th style={th}>Lições</th>
+                          <th style={th}>Dias ativos</th>
+                          <th style={th}>Faixa</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {campanha.linhas.map((l) => (
+                          <tr key={l.student} style={{ background: l.total > 0 ? '#fff' : '#fafafa' }}>
+                            <td style={{ ...td, fontWeight: 800, color: l.posicao <= 5 && l.total > 0 ? '#b45309' : '#9ca3af' }}>
+                              {l.posicao}º
+                            </td>
+                            <td style={{ ...td, fontWeight: 600, color: l.total > 0 ? '#111827' : '#9ca3af' }}>{l.nome}</td>
+                            <td style={{ ...td, fontWeight: 800 }}>{l.total}</td>
+                            <td style={{ ...td, color: '#6b7280' }}>
+                              {l.pontosAula}
+                              <span style={{ fontSize: 12, color: '#9ca3af' }}>
+                                {' '}({l.aulas.general}t{l.aulas.private ? ` · ${l.aulas.private}p` : ''})
+                              </span>
+                            </td>
+                            <td style={{ ...td, color: '#6b7280' }}>
+                              {l.pontosMaterial}
+                              {l.perdidoNoTeto > 0 && (
+                                <span style={{ fontSize: 12, color: '#9ca3af' }}> (−{l.perdidoNoTeto} no teto)</span>
+                              )}
+                            </td>
+                            <td style={{ ...td, color: '#6b7280' }}>{l.licoes}</td>
+                            <td style={{ ...td, color: '#6b7280' }}>{l.diasAtivos}</td>
+                            <td style={{ ...td, color: '#6b7280' }}>{l.tier || '—'}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  <p style={{ fontSize: 12, color: '#9ca3af', marginTop: 10, lineHeight: 1.5 }}>
+                    Aula vale mais que material por desenho da campanha. &quot;t&quot; = aulas em turma,
+                    &quot;p&quot; = particulares. O teto semanal do material corta quem concentra tudo
+                    num dia só — quando isso acontece, aparece quanto foi cortado.
+                    As aulas só entram aqui quando forem lançadas no progresso do aluno.
+                  </p>
+                </div>
+              )}
             </section>
           );
         })}
