@@ -15,6 +15,15 @@ const OUT = path.join(ROOT, 'courses', 'faapatendimento', 'course.json');
 
 const tracks = require(path.join(DATA, 'tracks.cjs'));
 
+/* Números aposentados: lições que saíram do material depois de publicadas.
+   O contador pula esses slots de propósito. O progresso do aluno vive no
+   navegador indexado pelo número da lição, e as URLs são /lesson/<num> — se a
+   numeração andasse a cada remoção, todo mundo veria as marcas de concluído
+   pousarem na lição errada e os links antigos abririam outro conteúdo. */
+const APOSENTADOS = new Set([
+  106, // "Colégio FAAP — from kindergarten to high school" — removida em 19/08/2026: a FAAP não tem kindergarten.
+]);
+
 const lessons = [];
 let num = 100;
 for (const t of tracks) {
@@ -26,6 +35,7 @@ for (const t of tracks) {
   const list = require(file);
   list.forEach((l, i) => {
     num += 1;
+    while (APOSENTADOS.has(num)) num += 1;
     lessons.push({
       num,
       level: t.level || 'essentials',

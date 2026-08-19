@@ -25,8 +25,8 @@ import AluExplica from './AluExplica';
 const EXPLICA = {
   titulo: 'Bem-vindo ao seu inglês na FAAP.',
   paragrafos: [
-    'Este material é seu, para abrir na hora que der. Não é uma aula. É a fonte que você consulta quando precisa resolver alguma coisa em inglês no trabalho.',
-    'As instruções estão todas em português. O que está em inglês tem botão de tradução do lado, e todo áudio tem transcript.',
+    'Este material é seu, para abrir na hora que quiser, quantas vezes quiser. Não é uma aula. É uma fonte personalizada de estudo, feita para ajudar no seu aprendizado do idioma e também no seu dia a dia no trabalho.',
+    'As instruções estão todas em português. O que está em inglês tem botão de tradução do lado, e todo áudio vem com a transcrição do que foi dito.',
     'Comece pela FAAP e siga para a sua trilha, Comercial ou Atendimento. Quando quiser respirar, a área livre está logo abaixo.',
     'Bons estudos e aproveite o material. Ele fica aqui, disponível sempre que você precisar.',
   ],

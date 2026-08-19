@@ -147,7 +147,7 @@ function MultiSelect({ ex, c, onChecked }) {
                 background: state === 'ok' ? (c.okBg || '#F0FFF4') : state === 'bad' ? (c.badBg || '#FFF5F5') : on ? c.accentLight || '#E4F7EC' : (c.card || '#fff'),
                 border: `2px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : on ? accent : c.grayLight || '#E2E9E7'}`,
                 color: c.text || '#20302D' }}>
-              <span style={{ flex: '0 0 20px', height: 20, borderRadius: 5, border: `2px solid ${on ? accent : '#C9D6D2'}`, background: on ? accent : (c.card || '#fff'), color: '#fff', fontSize: 13, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>{on ? '✓' : ''}</span>
+              <span style={{ flex: '0 0 20px', height: 20, borderRadius: 5, border: `2px solid ${on ? accent : '#C9D6D2'}`, background: on ? accent : (c.card || '#fff'), color: c.onAccent || '#fff', fontSize: 13, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>{on ? '✓' : ''}</span>
               <span style={{ flex: 1 }}>{o.text}{checked && o.correct && <strong style={{ color: (c.okText || '#2F855A') }}> · correta</strong>}</span>
             </button>
           );
@@ -319,7 +319,7 @@ function OrderList({ ex, c, onChecked, seed, badge }) {
           <div key={pos} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 13px', borderRadius: 10,
             background: checked ? (isRight(pos) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : c.accentLight || '#E4F7EC',
             border: `1px solid ${checked ? (isRight(pos) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : accent}` }}>
-            <span style={{ flex: '0 0 24px', height: 24, borderRadius: 7, background: accent, color: '#fff', fontSize: 12, fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{pos + 1}</span>
+            <span style={{ flex: '0 0 24px', height: 24, borderRadius: 7, background: accent, color: c.onAccent || '#fff', fontSize: 12, fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{pos + 1}</span>
             <span style={{ flex: 1, fontSize: 14.5, lineHeight: 1.5 }}>
               {label(correct[idx])}
               {showPt && pt(idx) && (
@@ -346,11 +346,11 @@ function OrderList({ ex, c, onChecked, seed, badge }) {
         {!checked ? (
           <>
             <button onClick={() => { setChecked(true); if (onChecked) onChecked(acc); }} disabled={seq.length !== correct.length}
-              style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: seq.length === correct.length ? accent : (c.disabled || '#CBD5D2'), color: '#fff', fontWeight: 700, fontSize: 14, cursor: seq.length === correct.length ? 'pointer' : 'not-allowed' }}>Corrigir</button>
-            {seq.length > 0 && <button onClick={undo} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>Voltar uma</button>}
+              style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: seq.length === correct.length ? accent : (c.disabled || '#CBD5D2'), color: seq.length === correct.length ? (c.onAccent || '#fff') : (c.disabledText || '#fff'), fontWeight: 700, fontSize: 14, cursor: seq.length === correct.length ? 'pointer' : 'not-allowed' }}>Corrigir</button>
+            {seq.length > 0 && <button onClick={undo} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || 'inherit', fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>Voltar uma</button>}
           </>
         ) : (
-          <button onClick={() => { setChecked(false); setSeq([]); }} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>Tentar de novo</button>
+          <button onClick={() => { setChecked(false); setSeq([]); }} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || 'inherit', fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>Tentar de novo</button>
         )}
       </div>
       {checked && <ResultLine ok={acc === 1} c={c} explanation={ex.explanation} corrections={acc === 1 ? [] : correct.map((x, i) => `${i + 1}. ${label(x)}`)} />}
@@ -571,7 +571,7 @@ function FlowChoice({ ex, c, onChecked, voiceType }) {
       {done && (
         <div style={{ marginTop: 16, padding: '12px 15px', borderRadius: 10, background: acc === 1 ? (c.okBg || '#F0FFF4') : c.accentLight || '#E4F7EC', border: `1px solid ${acc === 1 ? (c.okBorder || '#9AE6B4') : accent}`, fontSize: 14.5 }}>
           <strong>{score}/{turns.length}</strong> — {ex.explanation || 'Conversa concluída.'}
-          <button onClick={() => { setPicks({}); setStep(0); }} style={{ marginLeft: 12, padding: '6px 14px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', fontSize: 13, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>Refazer</button>
+          <button onClick={() => { setPicks({}); setStep(0); }} style={{ marginLeft: 12, padding: '6px 14px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || 'inherit', fontSize: 13, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>Refazer</button>
         </div>
       )}
     </ExShell>
@@ -879,7 +879,7 @@ function CheckOff({ ex, c, voiceType, onChecked }) {
   return (
     <div style={{ background: c.card || '#fff', border: `2px solid ${all ? accent : c.grayLight || '#E2E9E7'}`, borderRadius: 14, padding: '22px 24px', marginBottom: 16 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6, flexWrap: 'wrap' }}>
-        <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.6, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: accent, color: '#fff' }}>Check-off</span>
+        <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.6, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: accent, color: c.onAccent || '#fff' }}>Check-off</span>
         <h4 style={{ margin: 0, fontSize: 16.5, color: c.ink || navy }}>{ex.title || 'Antes de fechar a lição'}</h4>
       </div>
       <p style={{ fontSize: 14, color: c.gray || '#5F7570', margin: '0 0 16px', lineHeight: 1.55 }}>
@@ -894,7 +894,7 @@ function CheckOff({ ex, c, voiceType, onChecked }) {
               style={{ display: 'flex', alignItems: 'flex-start', gap: 12, textAlign: 'left', padding: '12px 14px', borderRadius: 10, cursor: 'pointer', fontFamily: 'inherit',
                 background: on[i] ? c.accentLight || '#E4F7EC' : c.offWhite || '#F5F8F7',
                 border: `1px solid ${on[i] ? accent : c.grayLight || '#E2E9E7'}` }}>
-              <span style={{ flex: '0 0 22px', height: 22, borderRadius: 6, border: `2px solid ${on[i] ? accent : '#C9D6D2'}`, background: on[i] ? accent : (c.card || '#fff'), color: '#fff', fontSize: 13, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>{on[i] ? '✓' : ''}</span>
+              <span style={{ flex: '0 0 22px', height: 22, borderRadius: 6, border: `2px solid ${on[i] ? accent : '#C9D6D2'}`, background: on[i] ? accent : (c.card || '#fff'), color: c.onAccent || '#fff', fontSize: 13, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 1 }}>{on[i] ? '✓' : ''}</span>
               <span style={{ flex: 1 }}>
                 <span style={{ display: 'block', fontSize: 14.8, color: c.ink || navy, fontWeight: 600, lineHeight: 1.45 }}>{text}</span>
                 {pt && <span style={{ display: 'block', fontSize: 13.3, color: c.gray || '#5F7570', marginTop: 3, lineHeight: 1.45 }}>{pt}</span>}
@@ -913,7 +913,7 @@ function CheckOff({ ex, c, voiceType, onChecked }) {
       <div style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
         {!confirmed ? (
           <button onClick={() => { setConfirmed(true); if (onChecked) onChecked(items.length ? done / items.length : 1); }}
-            style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: accent, color: '#fff', fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>
+            style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: accent, color: c.onAccent || '#fff', fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>
             Concluir auto-avaliação
           </button>
         ) : (
@@ -992,7 +992,7 @@ function Dialogue({ ex, c, onChecked, voiceType }) {
 
       <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', marginBottom: 12 }}>
         <button type="button" onClick={toggleConversation}
-          style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 15px 7px 12px', borderRadius: 999, border: 'none', background: accent, color: '#fff', fontSize: 12.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
+          style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 15px 7px 12px', borderRadius: 999, border: 'none', background: accent, color: c.onAccent || '#fff', fontSize: 12.5, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>
           <span>{nowPlaying !== null ? '❚❚' : '▶'}</span>
           {nowPlaying !== null ? 'Parar' : 'Ouvir a conversa inteira'}
         </button>

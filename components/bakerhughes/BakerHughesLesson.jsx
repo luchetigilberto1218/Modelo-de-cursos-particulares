@@ -96,7 +96,14 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
       const baralhado = shuffleOpts && Array.isArray(ex.options)
         ? { ...ex, options: maybeShuffle(ex.options, true, `mc|${ex.title || ''}|${ex.prompt || ''}`) }
         : ex;
-      return <Exercise exercise={baralhado} levelId="starter" onResult={() => markDone(i)} />;
+      // O <Exercise> pinta os seus próprios cartões em branco e deixa parte do
+      // texto herdar a cor de fora. Em tema escuro isso vira claro sobre claro,
+      // então aqui ele é isolado: dentro deste bloco a tinta volta a ser escura.
+      return (
+        <div style={c.legacyText ? { color: c.legacyText } : undefined}>
+          <Exercise exercise={baralhado} levelId="starter" onResult={() => markDone(i)} />
+        </div>
+      );
     }
     if (ex.type === 'wordBank') return <WordBank ex={ex} c={c} shuffle={shuffleOpts} onChecked={() => markDone(i)} />;
     if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill ex={ex} c={c} onChecked={() => markDone(i)} />;
@@ -370,9 +377,9 @@ function PracticeTracker({ pending, total, done, c, compact = false }) {
 
   if (!falta) {
     return (
-      <div style={{ margin: '22px 0 6px', padding: '16px 20px', borderRadius: 14, background: '#F2FBF5', border: '1px solid #9AE6B4', display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+      <div style={{ margin: '22px 0 6px', padding: '16px 20px', borderRadius: 14, background: c.okBg || '#F2FBF5', border: `1px solid ${c.okBorder || '#9AE6B4'}`, display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
         <span style={{ fontSize: 20 }}>✓</span>
-        <span style={{ fontSize: 15, fontWeight: 700, color: '#248A3D' }}>
+        <span style={{ fontSize: 15, fontWeight: 700, color: c.okText || '#248A3D' }}>
           Você corrigiu os {total} exercícios desta lição — ela já conta como concluída.
         </span>
       </div>
@@ -523,7 +530,7 @@ function Section({ navy, accent, letter, title, children, c = {}, bg, border }) 
   return (
     <div style={{ background: bg, border: `1px solid ${border}`, borderRadius: 16, padding: '20px 22px', marginBottom: 16, boxShadow: '0 1px 4px rgba(6,46,43,0.04)' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
-        <span style={{ width: 28, height: 28, borderRadius: 8, background: accent, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 14 }}>{letter}</span>
+        <span style={{ width: 28, height: 28, borderRadius: 8, background: accent, color: c.onAccent || '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 14 }}>{letter}</span>
         <h3 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: c.ink || navy }}>{title}</h3>
       </div>
       {children}
@@ -687,7 +694,7 @@ function CheckRow({ checked, setChecked, onReset, canCheck, c }) {
   return (
     <div style={{ marginTop: 16, display: 'flex', gap: 10 }}>
       {!checked ? (
-        <button onClick={() => setChecked(true)} disabled={!canCheck} style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : (c.disabled || '#CBD5D2'), color: '#fff', fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>Corrigir</button>
+        <button onClick={() => setChecked(true)} disabled={!canCheck} style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : (c.disabled || '#CBD5D2'), color: canCheck ? (c.onAccent || '#fff') : (c.disabledText || '#fff'), fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>Corrigir</button>
       ) : (
         <button onClick={() => { setChecked(false); onReset(); }} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || '#20302D', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>Tentar de novo</button>
       )}

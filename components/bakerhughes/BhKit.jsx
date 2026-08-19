@@ -79,7 +79,7 @@ export function CheckRow({ checked, setChecked, onReset, canCheck, c, checkLabel
     <div style={{ marginTop: 16, display: 'flex', gap: 10 }}>
       {!checked ? (
         <button onClick={() => setChecked(true)} disabled={!canCheck}
-          style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : (c.disabled || '#CBD5D2'), color: '#fff', fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>
+          style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : (c.disabled || '#CBD5D2'), color: canCheck ? (c.onAccent || '#fff') : (c.disabledText || '#fff'), fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>
           {checkLabel || 'Corrigir'}
         </button>
       ) : (
