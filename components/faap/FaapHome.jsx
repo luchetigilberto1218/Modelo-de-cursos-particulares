@@ -137,8 +137,8 @@ export default function FaapHome({ course, theme, clientId, student, role }) {
         />
 
         <div style={{ marginTop: 40, padding: '20px 22px', borderRadius: 14, background: '#fff', border: `1px solid ${grayLight}`, fontSize: 13.5, color: gray, lineHeight: 1.6 }}>
-          Este material é de consulta livre: volte quantas vezes quiser, em qualquer ordem. O seu progresso fica gravado neste navegador —
-          se trocar de aparelho, as lições concluídas recomeçam do zero, mas o conteúdo é o mesmo.
+          Este material é de consulta livre: volte quantas vezes quiser, em qualquer ordem. O seu progresso fica guardado na sua conta —
+          entre com o seu login em qualquer aparelho e as lições concluídas continuam marcadas.
         </div>
       </div>
     </div>
