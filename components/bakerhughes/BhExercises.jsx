@@ -181,7 +181,7 @@ function TrueFalse({ ex, c, onChecked }) {
               {[true, false].map((v, k) => (
                 <button key={k} onClick={() => !checked && setAns((a) => ({ ...a, [i]: v }))} disabled={checked}
                   style={{ padding: '6px 16px', borderRadius: 999, fontSize: 13.5, fontWeight: 700, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                    background: ans[i] === v ? accent : (c.card || '#fff'), color: ans[i] === v ? '#fff' : c.gray || '#5F7570',
+                    background: ans[i] === v ? accent : (c.card || '#fff'), color: ans[i] === v ? (c.onAccent || '#fff') : c.gray || '#5F7570',
                     border: `1px solid ${ans[i] === v ? accent : c.grayLight || '#E2E9E7'}` }}>{labels[k]}</button>
               ))}
             </div>
@@ -225,7 +225,7 @@ function Categorize({ ex, c, onChecked, seed }) {
                 {cats.map((cat) => (
                   <button key={cat.id} onClick={() => !checked && setPut((p) => ({ ...p, [i]: cat.id }))} disabled={checked}
                     style={{ padding: '5px 12px', borderRadius: 999, fontSize: 12.5, fontWeight: 700, fontFamily: 'inherit', cursor: checked ? 'default' : 'pointer',
-                      background: put[i] === cat.id ? accent : (c.card || '#fff'), color: put[i] === cat.id ? '#fff' : c.gray || '#5F7570',
+                      background: put[i] === cat.id ? accent : (c.card || '#fff'), color: put[i] === cat.id ? (c.onAccent || '#fff') : c.gray || '#5F7570',
                       border: `1px solid ${put[i] === cat.id ? accent : c.grayLight || '#E2E9E7'}` }}>{cat.short || cat.name}</button>
                 ))}
               </div>
@@ -346,7 +346,7 @@ function OrderList({ ex, c, onChecked, seed, badge }) {
         {!checked ? (
           <>
             <button onClick={() => { setChecked(true); if (onChecked) onChecked(acc); }} disabled={seq.length !== correct.length}
-              style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: seq.length === correct.length ? accent : (c.disabled || '#CBD5D2'), color: seq.length === correct.length ? (c.onAccent || '#fff') : (c.disabledText || '#fff'), fontWeight: 700, fontSize: 14, cursor: seq.length === correct.length ? 'pointer' : 'not-allowed' }}>Corrigir</button>
+              style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: seq.length === correct.length ? accent : (c.disabled || '#CBD5D2'), color: seq.length === correct.length ? (c.onAccent || '#fff') : (c.disabledText || '#2D3748'), fontWeight: 700, fontSize: 14, cursor: seq.length === correct.length ? 'pointer' : 'not-allowed' }}>Corrigir</button>
             {seq.length > 0 && <button onClick={undo} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || 'inherit', fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>Voltar uma</button>}
           </>
         ) : (
@@ -703,7 +703,7 @@ function SentenceBuild({ ex, c, onChecked, seed, voiceType }) {
             <div key={i} style={{ padding: '13px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : c.offWhite || '#F5F8F7', border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : c.grayLight || '#E2E9E7'}` }}>
               {it.hint && <div style={{ fontSize: 13.5, color: c.gray || '#5F7570', marginBottom: 9, fontStyle: 'italic' }}>{it.hint}</div>}
               <div style={{ minHeight: 40, display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center', padding: '8px 10px', background: c.card || '#fff', border: `1px dashed ${c.grayLight || '#E2E9E7'}`, borderRadius: 8, marginBottom: 10 }}>
-                {used.length === 0 && <span style={{ fontSize: 13.5, color: '#A9B8B4' }}>clique nos blocos abaixo…</span>}
+                {used.length === 0 && <span style={{ fontSize: 13.5, color: c.gray || '#6B7C78' }}>clique nos blocos abaixo…</span>}
                 {used.map((w, k) => <span key={k} style={{ padding: '4px 10px', background: c.accentLight || '#E4F7EC', border: `1px solid ${accent}`, borderRadius: 8, fontSize: 14.5 }}>{w}</span>)}
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>

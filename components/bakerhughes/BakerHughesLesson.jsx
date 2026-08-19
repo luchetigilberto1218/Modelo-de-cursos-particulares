@@ -552,8 +552,11 @@ function BhBtn({ href, c, children, outline }) {
   return (
     <Link href={href} style={{
       padding: '11px 20px', borderRadius: 999, textDecoration: 'none', fontWeight: 700, fontSize: 14,
-      background: outline ? (c.card || '#fff') : accent, color: outline ? (c.ink || navy) : (c.card || '#fff'),
-      border: outline ? '1px solid #E2E9E7' : 'none',
+      // `card` é cor de superfície, não de tinta. Nos temas escuros ela é um
+      // branco quase transparente (rgba(255,255,255,0.045)), então usá-la como
+      // cor do texto sobre o accent apagava o botão: 1,01:1, invisível.
+      background: outline ? (c.card || '#fff') : accent, color: outline ? (c.ink || navy) : (c.onAccent || '#fff'),
+      border: outline ? `1px solid ${c.grayLight || '#E2E9E7'}` : 'none',
     }}>{children}</Link>
   );
 }
@@ -694,7 +697,7 @@ function CheckRow({ checked, setChecked, onReset, canCheck, c }) {
   return (
     <div style={{ marginTop: 16, display: 'flex', gap: 10 }}>
       {!checked ? (
-        <button onClick={() => setChecked(true)} disabled={!canCheck} style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : (c.disabled || '#CBD5D2'), color: canCheck ? (c.onAccent || '#fff') : (c.disabledText || '#fff'), fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>Corrigir</button>
+        <button onClick={() => setChecked(true)} disabled={!canCheck} style={{ padding: '10px 18px', borderRadius: 8, border: 'none', background: canCheck ? accent : (c.disabled || '#CBD5D2'), color: canCheck ? (c.onAccent || '#fff') : (c.disabledText || '#2D3748'), fontWeight: 700, fontSize: 14, cursor: canCheck ? 'pointer' : 'not-allowed' }}>Corrigir</button>
       ) : (
         <button onClick={() => { setChecked(false); onReset(); }} style={{ padding: '10px 18px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || '#20302D', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>Tentar de novo</button>
       )}

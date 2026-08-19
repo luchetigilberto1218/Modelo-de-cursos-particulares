@@ -71,7 +71,9 @@ function fbBad(extraStyle = {}) {
 function btnPrimary(disabled) {
   return {
     padding: '10px 18px', borderRadius: 8, border: 'none',
-    background: disabled ? '#CBD5E0' : ACCENT, color: '#FFFFFF',
+    // Desabilitado o fundo clareia, então a letra tem de escurecer junto: branco
+    // sobre #CBD5E0 dá 1,5:1 e some da tela — em qualquer tema, não só no escuro.
+    background: disabled ? '#CBD5E0' : ACCENT, color: disabled ? '#2D3748' : '#FFFFFF',
     fontWeight: 600, fontSize: 14, cursor: disabled ? 'not-allowed' : 'pointer',
   };
 }

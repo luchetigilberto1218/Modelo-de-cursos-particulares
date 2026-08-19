@@ -4,6 +4,7 @@ import { getSession, isCoordinator } from '../../../lib/auth';
 import { getPainelCoordenacao } from '../../../lib/coordenacao';
 import { getStatsByEmpresa } from '../../../lib/stats';
 import { getRankingCampanha } from '../../../lib/czarnikow-campanha';
+import { lerHistorico, evolucao } from '../../../lib/historico';
 
 // Leitura de turma da coordenação: todos os clientes numa tela só.
 //
@@ -59,13 +60,20 @@ export default async function PainelCoordenacao() {
   const from = new Date(hoje.getTime() - 29 * DIA).toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
   const to = hoje.toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
 
-  const [clientes, acessosRaw, campanha] = await Promise.all([
+  const [clientes, acessosRaw, campanha, hist] = await Promise.all([
     getPainelCoordenacao(),
     getStatsByEmpresa(from, to).catch(() => []),
     // A campanha é fechada para o colaborador (cada um vê só a si mesmo).
     // A tabela com nomes existe só aqui, para a coordenação.
     getRankingCampanha().catch(() => null),
+    // Retratos diários gravados pelo cron. Sem eles a tela funciona igual,
+    // só não mostra movimento — é a única parte que depende de histórico.
+    lerHistorico().catch(() => ({ dias: {} })),
   ]);
+
+  // Quanto se andou desde o retrato de ~7 dias atrás.
+  const evo = evolucao(clientes, hist, 7);
+  const temHistorico = evo.size > 0;
 
   // A Czarnikow tem duas portas (/czarnikow e /czarnikow-teste) e o contador
   // registra cada uma; para a coordenação é um curso só.
@@ -83,6 +91,7 @@ export default async function PainelCoordenacao() {
       engajados: ativos.filter((a) => a.feitas > 0).length,
       licoes: ativos.reduce((s, a) => s + a.feitas, 0),
       acessos: acessos.get(c.id) || 0,
+      evo: evo.get(c.id) || null,
     };
   });
 
@@ -111,6 +120,15 @@ export default async function PainelCoordenacao() {
           {' '}<Link href="/admin" style={{ color: '#2563eb' }}>Acessos por empresa →</Link>
         </p>
 
+        {!temHistorico && (
+          <p style={{ fontSize: 13, color: '#92400e', background: '#fffbeb', border: '1px solid #fde68a',
+                      borderRadius: 10, padding: '10px 14px', margin: '-14px 0 28px', lineHeight: 1.55 }}>
+            O movimento (&quot;quanto andou nos últimos 7 dias&quot;) ainda não aparece: o retrato diário
+            começou a ser gravado agora e precisa de uma semana de histórico para ter com o que comparar.
+            O acumulado abaixo já está correto e ao vivo.
+          </p>
+        )}
+
         {/* Resumo: uma linha por cliente, para bater o olho */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: 12, marginBottom: 36 }}>
           {resumo.map((c) => (
@@ -126,6 +144,12 @@ export default async function PainelCoordenacao() {
                 {c.licoes} {c.licoes === 1 ? 'lição concluída' : 'lições concluídas'}<br />
                 {c.acessos} {c.acessos === 1 ? 'acesso' : 'acessos'} em 30 dias
               </div>
+              {c.evo && (
+                <div style={{ fontSize: 13, fontWeight: 700, marginTop: 6,
+                              color: c.evo.licoes > 0 ? '#15803d' : '#9ca3af' }}>
+                  {c.evo.licoes > 0 ? `+${c.evo.licoes}` : 'nenhuma'} nos últimos 7 dias
+                </div>
+              )}
               {c.contagem && (
                 <div style={{ fontSize: 11.5, color: '#9ca3af', marginTop: 6, lineHeight: 1.45 }}>{c.contagem}</div>
               )}
@@ -171,13 +195,14 @@ export default async function PainelCoordenacao() {
                     <tr>
                       <th style={th}>Aluno</th>
                       <th style={{ ...th, width: '30%' }}>Progresso</th>
+                      {c.evo && <th style={{ ...th, width: 96 }}>7 dias</th>}
                       <th style={th}>Última atividade</th>
                       <th style={th}>Situação</th>
                     </tr>
                   </thead>
                   <tbody>
                     {alunos.length === 0 && (
-                      <tr><td style={{ ...td, color: '#9ca3af' }} colSpan={4}>Nenhum aluno cadastrado.</td></tr>
+                      <tr><td style={{ ...td, color: '#9ca3af' }} colSpan={c.evo ? 5 : 4}>Nenhum aluno cadastrado.</td></tr>
                     )}
                     {alunos.map((a, i) => {
                       const s = situacao(a);
@@ -203,6 +228,27 @@ export default async function PainelCoordenacao() {
                               <div style={{ fontSize: 12, color: '#9ca3af', marginTop: 3 }}>+{a.extra} fora da trilha</div>
                             )}
                           </td>
+                          {c.evo && (() => {
+                            // `novo` = o nome não existia no retrato de 7 dias atrás,
+                            // ou seja, entrou na turma nesta semana. Mostrar "+0" para
+                            // essa pessoa seria injusto: ela não teve a semana inteira.
+                            const m = c.evo.porAluno.get(a.nome);
+                            return (
+                              <td style={td}>
+                                {!m ? <span style={{ color: '#d1d5db' }}>—</span>
+                                  : m.novo ? (
+                                    <span style={{ fontSize: 12, fontWeight: 700, color: '#1d4ed8', background: '#eff6ff',
+                                                   border: '1px solid #1d4ed822', borderRadius: 100, padding: '4px 10px' }}>
+                                      novo
+                                    </span>
+                                  ) : (
+                                    <span style={{ fontSize: 14, fontWeight: 700, color: m.delta > 0 ? '#15803d' : '#d1d5db' }}>
+                                      {m.delta > 0 ? `+${m.delta}` : '0'}
+                                    </span>
+                                  )}
+                              </td>
+                            );
+                          })()}
                           <td style={{ ...td, color: '#6b7280' }}>{fmtData(a.ultimaAt)}</td>
                           <td style={td}>
                             <span style={{ fontSize: 12, fontWeight: 700, color: s.cor, background: s.fundo,
