@@ -37,6 +37,9 @@ function fmtData(iso) {
 
 // Como a linha do aluno deve ser lida de relance.
 function situacao(a) {
+  // Cadastrado mas ainda sem senha/trilha: tecnicamente o acesso está fechado,
+  // mas dizer "desativado" o põe no mesmo balaio de quem saiu da empresa.
+  if (a.pendente) return { rotulo: 'a liberar', cor: '#1d4ed8', fundo: '#eff6ff' };
   if (a.inativo) return { rotulo: 'desativado', cor: '#9ca3af', fundo: '#f4f4f5' };
   if (!a.feitas) return { rotulo: 'nunca começou', cor: '#b45309', fundo: '#fffbeb' };
   const d = diasDesde(a.ultimaAt);
