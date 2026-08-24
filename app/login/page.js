@@ -99,6 +99,9 @@ function LoginForm() {
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Seu nome de usuário"
               autoComplete="username"
+              autoCorrect="off"
+              autoCapitalize="off"
+              spellCheck={false}
               required
             />
           </div>

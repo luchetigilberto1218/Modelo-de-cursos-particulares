@@ -14,15 +14,28 @@ export async function POST(request) {
     .replace(/\s+/g, ' ').trim().toLowerCase();        // colapsa espaços
   const id = norm(username ?? email);
   const users = getUsers();
-  const user = users.find(
-    u => norm(u.username) === id || norm(u.email) === id
-  );
+  // Apelidos de login (`aliases` no cadastro): grafias alternativas do mesmo
+  // nome. O corretor do celular "conserta" Weslley -> Wesley e derrubava o
+  // login. Aditivo: quem não tem `aliases` entra exatamente como antes.
+  // O nome/e-mail de verdade vence SEMPRE — só quando ninguém casa por ele é
+  // que os apelidos são consultados, então um apelido nunca leva ao cadastro
+  // de outra pessoa.
+  const user =
+    users.find(u => norm(u.username) === id || norm(u.email) === id) ||
+    users.find(u => (u.aliases || []).some(a => norm(a) === id));
 
   if (!user) {
     return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
   }
 
-  const valid = await verifyPassword(password, user.password);
+  // Espaço colado no fim/começo da senha (copiar-colar, teclado do celular)
+  // derrubava o login. Tentamos primeiro a senha EXATA — quem tem espaço de
+  // propósito não muda de comportamento — e só depois a versão aparada. Isso
+  // só faz mais gente entrar, nunca menos.
+  let valid = await verifyPassword(password, user.password);
+  if (!valid && typeof password === 'string' && password.trim() !== password) {
+    valid = await verifyPassword(password.trim(), user.password);
+  }
   if (!valid) {
     return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
   }
