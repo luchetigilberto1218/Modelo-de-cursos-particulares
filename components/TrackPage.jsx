@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { useIdentity, useDoneMap } from './czarnikow-teste/progress';
+import { useIdentity, useDoneMap, useTaughtMap } from './czarnikow-teste/progress';
 import PointsWidget from './czarnikow-teste/PointsWidget';
 import { isCzarnikow } from '../lib/czarnikow';
 
@@ -38,17 +38,21 @@ function useIsMobile(breakpoint = 600) {
   return isMobile;
 }
 
-function LessonCard({ lesson, clientId, color, mobile, done = false, isNext = false }) {
+function LessonCard({ lesson, clientId, color, mobile, done = false, taught = false, isNext = false }) {
   const [hovered, setHovered] = useState(false);
 
   // Estados visuais (só mudam quando o progresso está ligado, i.e. czarnikow-teste):
-  //  - done  => "acende" verde com ✓
+  //  - done   => "acende" verde com ✓ (o aluno estudou o material)
+  //  - taught => âmbar "Aula dada" (a aula particular desta unidade aconteceu,
+  //              com ou sem material estudado — não repete)
   //  - isNext => borda de destaque + "Continue aqui →"
-  const bg = done ? '#F0FBF4' : '#fff';
-  const borderColor = done ? '#34C759' : isNext ? color : '#d2d2d7';
-  const borderWidth = done || isNext ? 2 : 1;
-  const label = done ? 'Concluída' : isNext ? 'Continue aqui →' : 'Open';
-  const labelColor = done ? '#248A3D' : color;
+  // done vence taught no visual: quem estudou E teve aula merece o ✓ verde.
+  const soAula = taught && !done;
+  const bg = done ? '#F0FBF4' : soAula ? '#FFFBF2' : '#fff';
+  const borderColor = done ? '#34C759' : soAula ? '#E0B84C' : isNext ? color : '#d2d2d7';
+  const borderWidth = done || soAula || isNext ? 2 : 1;
+  const label = done ? 'Concluída' : soAula ? 'Aula dada' : isNext ? 'Continue aqui →' : 'Open';
+  const labelColor = done ? '#248A3D' : soAula ? '#8C6A00' : color;
 
   return (
     <Link
@@ -121,12 +125,16 @@ export default function TrackPage({ course, theme, clientId, levelId, trackId })
   const trackProgress = isCzarnikow(clientId);
   const identity = useIdentity(trackProgress);
   const doneMap = useDoneMap(trackProgress ? identity?.student : null);
+  const taughtMap = useTaughtMap(trackProgress ? identity?.student : null);
+  // A barra mede ESTUDO — não infla com unidade que só teve aula.
   const doneCount = trackProgress ? lessons.filter((l) => doneMap[l.num]).length : 0;
-  // "Próxima" = primeira lição (na ordem da trilha) ainda não concluída.
+  // "Próxima" = primeira unidade (na ordem da trilha) que ainda não foi fechada,
+  // seja por estudo (done) seja por aula dada (taught). É o que impede a aula
+  // particular de se repetir quando o aluno não estudou o material.
   const nextNum = (() => {
     if (!trackProgress) return null;
     const ordered = [...lessons].sort((a, b) => (a.trackOrder || a.num) - (b.trackOrder || b.num));
-    const next = ordered.find((l) => !doneMap[l.num]);
+    const next = ordered.find((l) => !doneMap[l.num] && !taughtMap[l.num]);
     return next ? next.num : null;
   })();
 
@@ -260,6 +268,7 @@ export default function TrackPage({ course, theme, clientId, levelId, trackId })
               color={color}
               mobile={mobile}
               done={trackProgress && !!doneMap[lesson.num]}
+              taught={trackProgress && !!taughtMap[lesson.num]}
               isNext={trackProgress && lesson.num === nextNum}
             />
           ))}

@@ -76,6 +76,19 @@ export function newerReady(a, b) {
   if (!rb) return a;
   return ra >= rb ? a : b;
 }
+export function newerTaught(a, b) {
+  const ta = typeof a?.taughtAt === 'string' ? a.taughtAt : null;
+  const tb = typeof b?.taughtAt === 'string' ? b.taughtAt : null;
+  if (!ta && !tb) return null;
+  if (!ta) return b;
+  if (!tb) return a;
+  return ta >= tb ? a : b;
+}
+export function taughtFields(src) {
+  const out = { taught: !!src.taught, taughtAt: src.taughtAt };
+  if (typeof src.taughtBy === 'string') out.taughtBy = src.taughtBy;
+  return out;
+}
 export function readyFields(src) {
   const out = { ready: !!src.ready, readyAt: src.readyAt };
   if (typeof src.readyDone === 'number') out.readyDone = src.readyDone;
@@ -101,6 +114,10 @@ function mergeRemoteInto(local, remote) {
     // vale a declaração mais recente, porque o aluno pode desmarcar (ver useLessonReady).
     const winner = newerReady(l, r);
     if (winner) Object.assign(merged, readyFields(winner));
+    // "aula dada": mesma regra do ready — vale o registro mais recente, porque
+    // quem marcou por engano precisa conseguir desfazer.
+    const tw = newerTaught(l, r);
+    if (tw) Object.assign(merged, taughtFields(tw));
     if (JSON.stringify(l) !== JSON.stringify(merged)) { local[num] = merged; changed = true; }
   }
   return changed;
@@ -165,6 +182,35 @@ export function getDoneMap(studentId) {
   const s = all[studentId] || {};
   for (const k of Object.keys(s)) if (s[k]?.done) out[k] = true;
   return out;
+}
+
+/** Mapa { num: true } das unidades cuja AULA já foi dada.
+ *  Separado do de concluídas de propósito: uma unidade pode ter aula dada sem
+ *  ter sido estudada (o professor fez os exercícios junto na aula, ou o aluno
+ *  declarou-se pronto sem praticar). O ponteiro da trilha anda com os dois
+ *  juntos; a campanha continua olhando só `done`. */
+export function getTaughtMap(studentId) {
+  const all = readAll();
+  const out = {};
+  const s = all[studentId] || {};
+  for (const k of Object.keys(s)) if (s[k]?.taught) out[k] = true;
+  return out;
+}
+
+/** Hook reativo: mapa de aulas dadas. */
+export function useTaughtMap(studentId) {
+  const [map, setMap] = useState({});
+  const refresh = useCallback(() => setMap(getTaughtMap(studentId)), [studentId]);
+  useEffect(() => {
+    if (!studentId) return;
+    refresh();
+    pullRemote(studentId);
+    const h = () => refresh();
+    window.addEventListener('czt-progress', h);
+    window.addEventListener('storage', h);
+    return () => { window.removeEventListener('czt-progress', h); window.removeEventListener('storage', h); };
+  }, [refresh, studentId]);
+  return map;
 }
 
 /** Hook reativo: mapa de concluídas, re-renderiza em mudanças. */
@@ -253,6 +299,38 @@ export function useLessonReady(studentId, num) {
   }, [studentId, num]);
 
   return { ...state, markReady, markUnready };
+}
+
+/** Hook de uma unidade: "a aula particular desta unidade já aconteceu".
+ *  Encerra a unidade para todo mundo — sai da fila do professor e o ponteiro da
+ *  trilha do aluno anda. NÃO marca `done` e NÃO pontua material: quem não
+ *  estudou continua sem ponto de material, mas a aula não se repete. */
+export function useLessonTaught(studentId, num) {
+  const [state, setState] = useState({});
+  useEffect(() => {
+    if (!studentId) return;
+    const read = () => setState(getLesson(studentId, num) || {});
+    read();
+    pullRemote(studentId);
+    const h = () => read();
+    window.addEventListener('czt-progress', h);
+    return () => window.removeEventListener('czt-progress', h);
+  }, [studentId, num]);
+
+  // `by` = 'student' | 'teacher', só para o painel saber quem encerrou.
+  const markTaught = useCallback((by) => {
+    if (!studentId) return;
+    const patch = { taught: true, taughtAt: new Date().toISOString() };
+    if (by === 'student' || by === 'teacher') patch.taughtBy = by;
+    setLessonState(studentId, num, patch);
+  }, [studentId, num]);
+
+  const markUntaught = useCallback(() => {
+    if (!studentId) return;
+    setLessonState(studentId, num, { taught: false, taughtAt: new Date().toISOString() });
+  }, [studentId, num]);
+
+  return { ...state, markTaught, markUntaught };
 }
 
 /* -------------------------------------------------------------------------

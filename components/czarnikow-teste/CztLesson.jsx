@@ -7,6 +7,7 @@ import AudioPlayer from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
 import { useIdentity, useLessonDone, useDoneMap } from './progress';
 import ReadyForClass, { ReadyStrip } from './ReadyForClass';
+import ClassGiven from './ClassGiven';
 
 /*
   Czarnikow (ambiente de teste) — renderizador de lição no estilo Baker Hughes.
@@ -238,6 +239,15 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
           answered={doneCount}
           total={totalGradeable}
           acc={firstTryAccuracy}
+        />
+
+        {/* Encerramento da unidade pela AULA (não pelo material). É o que impede
+            a aula particular de se repetir quando o aluno não estudou — ver o
+            cabeçalho de ClassGiven.jsx. Não marca `done`, não pontua material. */}
+        <ClassGiven
+          studentId={identity?.student}
+          num={l.num}
+          role={identity?.role}
         />
 
         {/* Nav */}

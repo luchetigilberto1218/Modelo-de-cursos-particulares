@@ -47,12 +47,14 @@ export default function TeacherPanel({ clientId, theme }) {
   const [busca, setBusca] = useState('');
   const logos = theme?.logos || {};
 
-  useEffect(() => {
+  const carregar = () => {
     fetch('/api/czarnikow-teste/teacher', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then(setData)
       .catch(() => setError('Não consegui carregar os alunos. Recarregue a página.'));
-  }, []);
+  };
+
+  useEffect(() => { carregar(); }, []);
 
   const alunos = useMemo(() => {
     const all = data?.students || [];
@@ -122,14 +124,14 @@ export default function TeacherPanel({ clientId, theme }) {
         )}
 
         <div style={{ display: 'grid', gap: 14 }}>
-          {alunos.map((a) => <AlunoCard key={a.student} aluno={a} clientId={clientId} />)}
+          {alunos.map((a) => <AlunoCard onChange={carregar} key={a.student} aluno={a} clientId={clientId} />)}
         </div>
       </section>
     </div>
   );
 }
 
-function AlunoCard({ aluno, clientId }) {
+function AlunoCard({ aluno, clientId, onChange }) {
   const principal = (aluno.blocks || []).find((b) => b.designated) || (aluno.blocks || [])[0] || null;
   const outros = (aluno.blocks || []).filter((b) => b !== principal && b.done > 0);
   const atividade = since(aluno.lastAt);
@@ -225,16 +227,23 @@ function AlunoCard({ aluno, clientId }) {
           </div>
 
           {principal.next && (
-            <Link
-              href={`/${clientId}/lesson/${principal.next.num}`}
-              style={{
-                background: C.accent, color: '#fff', textDecoration: 'none',
-                fontSize: 14, fontWeight: 600, padding: '11px 18px', borderRadius: 10,
-                whiteSpace: 'nowrap', minHeight: 44, display: 'inline-flex', alignItems: 'center',
-              }}
-            >
-              Abrir a lição →
-            </Link>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              <Link
+                href={`/${clientId}/lesson/${principal.next.num}`}
+                style={{
+                  background: C.accent, color: '#fff', textDecoration: 'none',
+                  fontSize: 14, fontWeight: 600, padding: '11px 18px', borderRadius: 10,
+                  whiteSpace: 'nowrap', minHeight: 44, display: 'inline-flex', alignItems: 'center',
+                }}
+              >
+                Abrir a lição →
+              </Link>
+              <AulaDadaBtn
+                student={aluno.student}
+                num={principal.next.num}
+                onChange={onChange}
+              />
+            </div>
           )}
         </div>
       )}
@@ -330,5 +339,79 @@ function Pronta({ r, clientId }) {
         Abrir →
       </Link>
     </div>
+  );
+}
+
+/* "Aula dada" — encerra a unidade a partir do painel.
+   Mesmo efeito do botão que o aluno tem dentro da lição (ClassGiven.jsx): tira a
+   unidade da fila e faz a trilha andar, sem marcar `done` e sem pontuar
+   material. Existe aqui porque nem sempre o professor está com o login do aluno
+   aberto — às vezes ele fecha a aula direto do painel. */
+function AulaDadaBtn({ student, num, onChange }) {
+  const [estado, setEstado] = useState('idle'); // idle | confirmar | enviando | erro
+
+  if (estado === 'enviando') {
+    return <span style={{ fontSize: 13.5, color: C.gray, alignSelf: 'center' }}>encerrando…</span>;
+  }
+
+  if (estado === 'erro') {
+    return (
+      <span style={{ fontSize: 13, color: '#B42318', alignSelf: 'center', maxWidth: 200, lineHeight: 1.4 }}>
+        Não consegui salvar. Marque pela lição.
+      </span>
+    );
+  }
+
+  if (estado === 'confirmar') {
+    return (
+      <span style={{ display: 'inline-flex', gap: 6, alignItems: 'center' }}>
+        <button
+          onClick={async () => {
+            setEstado('enviando');
+            try {
+              const r = await fetch('/api/czarnikow-teste/teacher', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ student, num, taught: true }),
+              });
+              if (!r.ok) throw new Error(String(r.status));
+              setEstado('idle');
+              onChange?.();
+            } catch {
+              setEstado('erro');
+            }
+          }}
+          style={{
+            background: '#B98A16', color: '#fff', border: 'none', fontSize: 13.5, fontWeight: 700,
+            padding: '11px 16px', borderRadius: 10, cursor: 'pointer', whiteSpace: 'nowrap', minHeight: 44,
+          }}
+        >
+          Confirmar
+        </button>
+        <button
+          onClick={() => setEstado('idle')}
+          style={{
+            background: '#fff', color: C.gray, border: `1px solid ${C.grayLight}`, fontSize: 13.5,
+            fontWeight: 600, padding: '11px 14px', borderRadius: 10, cursor: 'pointer', minHeight: 44,
+          }}
+        >
+          Não
+        </button>
+      </span>
+    );
+  }
+
+  return (
+    <button
+      onClick={() => setEstado('confirmar')}
+      title="A aula desta unidade já aconteceu — encerra e passa para a próxima"
+      style={{
+        background: '#FFFBF2', color: '#8C6A00', border: '1px solid #E0B84C',
+        fontSize: 14, fontWeight: 600, padding: '11px 16px', borderRadius: 10,
+        cursor: 'pointer', whiteSpace: 'nowrap', minHeight: 44,
+      }}
+    >
+      Aula dada ✓
+    </button>
   );
 }

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getSession, getUsers } from '../../../../lib/auth';
-import { listAll } from '../../../../lib/czarnikow-teste-progress-store';
+import { listAll, setTaught, isValidStudent } from '../../../../lib/czarnikow-teste-progress-store';
 import { getCourseLite } from '../../../../lib/courses';
 
 /*
@@ -71,6 +71,13 @@ export async function GET() {
     const doneNums = new Set(
       Object.keys(state).filter((num) => state[num]?.done).map(Number)
     );
+    // Unidades cuja AULA já aconteceu. Fecham a unidade para o professor mesmo
+    // sem material estudado — é o que impede a aula particular de se repetir
+    // (ver components/czarnikow-teste/ClassGiven.jsx).
+    const taughtNums = new Set(
+      Object.keys(state).filter((num) => state[num]?.taught).map(Number)
+    );
+    const fechada = (num) => doneNums.has(num) || taughtNums.has(num);
 
     // datas de conclusão: a mais recente é a "última atividade" visível ao professor
     const dates = Object.values(state).map((s) => s?.doneAt).filter(Boolean).sort();
@@ -79,7 +86,7 @@ export async function GET() {
     const designated = (u.track || []).map((t) => `${u.level || 'essentials'}|${t}`);
     // blocos a mostrar: os designados + qualquer outro em que ele já tenha estudado
     const touched = new Set(designated);
-    for (const num of doneNums) {
+    for (const num of new Set([...doneNums, ...taughtNums])) {
       const l = lessons.find((x) => x.num === num);
       if (l) touched.add(`${l.level}|${l.track}`);
     }
@@ -94,9 +101,10 @@ export async function GET() {
       const [level, track] = key.split('|');
       const arr = blocks.get(key) || [];
       const done = arr.filter((l) => doneNums.has(l.num)).length;
+      const taught = arr.filter((l) => taughtNums.has(l.num) && !doneNums.has(l.num)).length;
       // o startAt só vale para o bloco a que a lição pertence
       const daPartida = startAt && arr.some((l) => l.num === startAt);
-      const next = arr.find((l) => !doneNums.has(l.num) && (!daPartida || l.num >= startAt)) || null;
+      const next = arr.find((l) => !fechada(l.num) && (!daPartida || l.num >= startAt)) || null;
       const jaEmAula = daPartida ? arr.filter((l) => l.num < startAt).length : 0;
       return {
         level,
@@ -106,6 +114,7 @@ export async function GET() {
         trackName: trackName.get(track) || track,
         designated: designated.includes(key),
         done,
+        taught,
         total: arr.length || LESSONS_PER_BLOCK,
         next: next ? { num: next.num, title: next.title, order: next.trackOrder } : null,
       };
@@ -115,7 +124,7 @@ export async function GET() {
     // para a mais velha, com a evidência do que o aluno praticou. É o handoff:
     // o professor abre a aula sabendo se dá para avançar ou se precisa retomar.
     const ready = Object.keys(state)
-      .filter((num) => state[num]?.ready)
+      .filter((num) => state[num]?.ready && !state[num]?.taught)
       .map((num) => {
         const s = state[num];
         const l = lessons.find((x) => x.num === Number(num)) || null;
@@ -148,6 +157,7 @@ export async function GET() {
       stage: u.stage || null,
       tracks: (u.track || []).map((t) => trackName.get(t) || t),
       lessonsDone: doneNums.size,
+      lessonsTaught: taughtNums.size,
       lastAt: lastDone || doc?.at || null,
       started: !!doc,
       blocks: blockRows,
@@ -158,4 +168,34 @@ export async function GET() {
   students.sort((a, b) => (a.demo - b.demo) || a.name.localeCompare(b.name, 'pt-BR'));
 
   return NextResponse.json({ students });
+}
+
+/* Encerrar (ou reabrir) uma unidade pelo painel: "a aula desta unidade já
+   aconteceu". Mesmo efeito do botão que o aluno tem dentro da lição — muda só
+   quem clica. Não toca em `done`: ponto de material continua sendo de quem
+   praticou. Só professor e coordenação escrevem aqui. */
+export async function POST(request) {
+  const session = await getSession();
+  if (!session?.id) {
+    return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  }
+  if (session.role !== 'teacher' && session.role !== 'coordinator') {
+    return NextResponse.json({ error: 'forbidden' }, { status: 403 });
+  }
+
+  let body = {};
+  try { body = await request.json(); } catch { body = {}; }
+  const student = typeof body.student === 'string' ? body.student : null;
+  const num = Number(body.num);
+  if (!student || !isValidStudent(student) || !Number.isFinite(num)) {
+    return NextResponse.json({ error: 'bad_request' }, { status: 400 });
+  }
+
+  try {
+    const lesson = await setTaught(student, num, body.taught !== false, 'teacher');
+    return NextResponse.json({ ok: true, student, num, lesson });
+  } catch {
+    // Blob fora do ar: o painel avisa e o professor pode marcar pela lição.
+    return NextResponse.json({ error: 'store_unavailable' }, { status: 503 });
+  }
 }
