@@ -19,10 +19,8 @@ const META = [
   { id:'PEO', ptName:'Gestão de Pessoas',            subtitle:'Equipe, feedback e desenvolvimento',    img:IMG.office,  files:['PEO.json','PEO2.json'] },
   { id:'ENG', ptName:'Engenharia de Aplicação',      subtitle:'Projeto e especificação técnica',       img:IMG.esp,     files:['ENG.json','ENG2.json'] },
   { id:'PUR', ptName:'Compras (Procurement)',        subtitle:'Fornecedores, pedidos e prazos',        img:IMG.steel,   files:['PUR.json','PUR2.json'] },
-  // Trilhas pessoais: aparecem SÓ para o dono (campo owner). Aditivo — as 8 trilhas
-  // por departamento acima continuam com os mesmos índices de sempre (0..7).
-  { id:'PMO', ptName:'Projetos e Contratos (PMO)',   subtitle:'Trilha de William Kulikowki · Rise 2',  img:IMG.esp,     files:['PMO.json','PMO2.json'], owner:'William Kulikowki' },
-  { id:'DET', ptName:'Engenharia de Detalhamento',   subtitle:'Trilha de Fernando Sumitani · Essential 2', img:IMG.steel, files:['DET.json','DET2.json'], owner:'Fernando Sumitani' },
+  { id:'PMO', ptName:'Projetos e Contratos',         subtitle:'Cronograma, escopo, riscos e aditivos', img:IMG.esp,     files:['PMO.json','PMO2.json'] },
+  { id:'DET', ptName:'Engenharia de Detalhamento',   subtitle:'Projeto executivo e fornecedores',      img:IMG.steel,   files:['DET.json','DET2.json'] },
 ];
 
 function load(file){
@@ -37,9 +35,7 @@ function load(file){
 const tracks = META.map(m=>{
   let lessons = [];
   m.files.forEach(f=> lessons = lessons.concat(load(f)) );
-  const t = { id:m.id, ptName:m.ptName, subtitle:m.subtitle, img:m.img, lessons };
-  if(m.owner) t.owner = m.owner;
-  return t;
+  return { id:m.id, ptName:m.ptName, subtitle:m.subtitle, img:m.img, lessons };
 });
 
 const total = tracks.reduce((s,t)=>s+t.lessons.length,0);

@@ -742,12 +742,8 @@ function leaveLesson(ti,li){
   openTrack(ti);
 }
 
-// Uma trilha com `owner` é pessoal: some da vitrine para todo mundo menos o dono.
-// Sem owner (as 8 por departamento) nada muda — continuam visíveis para todos.
-function mine(t){ return !t.owner || (USER && USER.name === t.owner); }
 function renderStudy(){
   document.getElementById('studyGrid').innerHTML = DATA.map((t,i)=>{
-    if(!mine(t)) return '';
     const dn=trackDone(i),tot=t.lessons.length,pct=Math.round(dn/tot*100);
     return `
     <button class="tcard" onclick="openTrack(${i})">
@@ -877,7 +873,7 @@ const PEOPLE=[
  {n:"Milton Chiga",t:2},
  {n:"Raphael Henrique Aguiar da Silva",t:2},
  {n:"Ricardo Bruno Aguiar da Silva",t:6},
- // Ago/26 — alunos novos, cada um com a sua trilha pessoal (8 e 9).
+ // Ago/26 — alunos novos, nas duas áreas novas (8 e 9).
  {n:"William Kulikowki",t:8},
  {n:"Fernando Sumitani",t:9}
 ].sort((a,b)=>a.n.localeCompare(b.n,'pt'));
@@ -892,7 +888,7 @@ function buildOnboard(){
   const sel=document.getElementById('nameSel');
   sel.innerHTML='<option value="">Selecione o seu nome…</option>'+PEOPLE.map((p,i)=>`<option value="${i}">${p.n}</option>`).join('');
   const ds=document.getElementById('deptSel');
-  ds.innerHTML='<option value="">Selecione o seu departamento…</option>'+DATA.map((t,i)=>t.owner?'':`<option value="${i}">${t.ptName}</option>`).join('');
+  ds.innerHTML='<option value="">Selecione o seu departamento…</option>'+DATA.map((t,i)=>`<option value="${i}">${t.ptName}</option>`).join('');
 }
 function onbFree(){document.getElementById('onbCard').classList.add('freemode');}
 function onbConfirm(){
