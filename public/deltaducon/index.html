@@ -856,7 +856,7 @@ function openLesson(ti,li){
 // track index: 0 BIZ,1 ADM,2 SAL,3 IND,4 QUA,5 PEO,6 ENG,7 PUR
 const PEOPLE=[
  {n:"André Vinicius Neves Dias",t:3},
- {n:"Andrea Rosa dos Santos",t:2},
+ {n:"Andrea Rosa da Silva",t:2},
  {n:"Anselmo Teixeira",t:2},
  {n:"Felipe da Silva Ribeiro Mariano",t:2},
  {n:"Felipe Gomes",t:6},
@@ -864,7 +864,7 @@ const PEOPLE=[
  {n:"Fernando Maranim Sandoval",t:2},
  {n:"Gabriel Marcos de Rosa Miari",t:3},
  {n:"Gustavo Quintela dos Santos",t:6},
- {n:"Jefferson Matozinho da Luz",t:6},
+ {n:"Jeferson Matozinho da Luz",t:6},
  {n:"Jessica Lima da Silva",t:2},
  {n:"Marcio Clementino dos Santos Sousa",t:6},
  {n:"Milton Chiga",t:2},
@@ -878,6 +878,12 @@ const PEOPLE=[
 const UKEY='dd_user_v1';
 let USER=null; try{USER=JSON.parse(localStorage.getItem(UKEY)||'null');}catch(e){USER=null;}
 function saveUser(){if(DEMO)return;try{localStorage.setItem(UKEY,JSON.stringify(USER));}catch(e){}}
+/* Correções de grafia do elenco (set/26, fonte: planilha de presença da Delta).
+   Quem já tinha o nome antigo salvo neste navegador migra sozinho: o progresso local
+   (dd_prog_v1) não é tocado — muda só o nome, que é o que define o slug do sync. */
+const RENAMES={"Andrea Rosa dos Santos":"Andrea Rosa da Silva",
+               "Jefferson Matozinho da Luz":"Jeferson Matozinho da Luz"};
+if(USER&&RENAMES[USER.name]){USER.name=RENAMES[USER.name];saveUser();}
 function firstName(){return (USER&&USER.name)?USER.name.trim().split(' ')[0]:'';}
 
 /* ---------- onboarding ---------- */
