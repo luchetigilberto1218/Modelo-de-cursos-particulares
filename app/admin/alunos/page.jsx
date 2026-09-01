@@ -269,7 +269,7 @@ export default async function PainelCoordenacao() {
               {c.id === 'czarnikow' && campanha && (
                 <div style={{ marginTop: 22 }}>
                   <h3 style={{ fontSize: 16, fontWeight: 700, margin: '0 0 2px' }}>
-                    Campanha · {campanha.semestre.label}
+                    {campanha.campanha.short} · {campanha.semestre.label}
                   </h3>
                   <p style={{ fontSize: 13, color: '#6b7280', margin: '0 0 10px' }}>
                     {campanha.pontuaram} de {campanha.participantes} já pontuaram.

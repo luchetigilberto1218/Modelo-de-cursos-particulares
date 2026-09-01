@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useCampaign } from './progress';
-import { SEMESTER, TIERS } from './campaign';
+import { CAMPAIGN, SEMESTER, TIERS } from './campaign';
 
 /*
   Faixa compacta da campanha, para o hub e as páginas de trilha.
@@ -41,7 +41,7 @@ export default function PointsWidget({ clientId, compact = false }) {
             fontSize: 10.5, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase',
             color: C.accent, marginBottom: 4,
           }}>
-            Campanha · {SEMESTER.label}
+            {CAMPAIGN.short} · {SEMESTER.label}
           </div>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap' }}>
             <span style={{ fontSize: compact ? 22 : 26, fontWeight: 700, letterSpacing: -0.6 }}>{s.total} pts</span>

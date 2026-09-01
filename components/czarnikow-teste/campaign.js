@@ -10,6 +10,19 @@
   presença em aula.
 */
 
+/*
+  Nome oficial da campanha, escolhido pela Czarnikow em 01/09/2026.
+
+  Duas formas de propósito: `name` é o nome completo, para documento que sai da
+  plataforma (relatório mensal, comunicado, arte). `short` é o que aparece DENTRO
+  do produto, onde dizer "Czarnikow" para um colaborador da Czarnikow é ruído — e
+  onde o espaço é de uma linha só, ao lado do período.
+*/
+export const CAMPAIGN = {
+  name: 'Campanha de Aprendizado e Assiduidade Premiada Czarnikow',
+  short: 'Aprendizado e Assiduidade Premiada',
+};
+
 export const SEMESTER = {
   start: '2026-08-03',   // segunda-feira
   end: '2026-12-18',

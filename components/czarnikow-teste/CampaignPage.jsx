@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useCampaign } from './progress';
-import { SEMESTER, SCORING, TIERS, projectSemester } from './campaign';
+import { CAMPAIGN, SEMESTER, SCORING, TIERS, projectSemester } from './campaign';
 
 /*
   Campanha Ago–Dez 2026 — página do participante (Czarnikow · ambiente de teste).
@@ -68,7 +68,7 @@ export default function CampaignPage({ clientId, theme }) {
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${C.accent}, ${C.gold})` }} />
 
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1.4, textTransform: 'uppercase', color: C.accent, margin: '0 0 10px' }}>
-            Campanha · {SEMESTER.label}
+            {CAMPAIGN.short} · {SEMESTER.label}
           </p>
           <h1 style={{ fontSize: 'clamp(28px, 4.5vw, 42px)', fontWeight: 700, letterSpacing: -1, lineHeight: 1.1, margin: '0 0 10px' }}>
             Sua evolução no inglês, medida de verdade
