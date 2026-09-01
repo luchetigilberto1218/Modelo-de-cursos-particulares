@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import AudioPlayer from './AudioPlayer';
 import { useIdentity } from './czarnikow-teste/progress';
 import PointsWidget from './czarnikow-teste/PointsWidget';
+import ScoreUpdateBanner from './czarnikow-teste/ScoreUpdateBanner';
 import { isCzarnikow } from '../lib/czarnikow';
 
 const HISTORY_PARAGRAPHS = [
@@ -146,6 +147,9 @@ export default function LevelHub({ course, theme, clientId }) {
       {/* Campanha Ago–Dez: só nas rotas da Czarnikow (aditivo). */}
       {cztProgress && (
         <section style={{ maxWidth: 1080, margin: '0 auto', padding: '0 24px 28px' }}>
+          {/* Aviso do lançamento mensal de presença: fica logo acima da faixa,
+              para o colaborador ver o número de que o aviso fala. */}
+          <ScoreUpdateBanner clientId={clientId} />
           <PointsWidget clientId={clientId} />
         </section>
       )}

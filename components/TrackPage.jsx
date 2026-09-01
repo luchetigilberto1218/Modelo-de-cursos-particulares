@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useIdentity, useDoneMap, useTaughtMap } from './czarnikow-teste/progress';
 import PointsWidget from './czarnikow-teste/PointsWidget';
+import ScoreUpdateBanner from './czarnikow-teste/ScoreUpdateBanner';
 import { isCzarnikow } from '../lib/czarnikow';
 
 const LEVEL_COLOR = {
@@ -229,6 +230,8 @@ export default function TrackPage({ course, theme, clientId, levelId, trackId })
           margin: '0 auto',
           padding: mobile ? '0 16px 4px' : '0 40px 8px',
         }}>
+          {/* Aviso do lançamento mensal de presença (ver ScoreUpdateBanner). */}
+          <ScoreUpdateBanner clientId={clientId} />
           <PointsWidget clientId={clientId} compact />
         </section>
       )}

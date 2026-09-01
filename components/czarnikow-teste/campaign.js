@@ -31,6 +31,55 @@ export const SEMESTER = {
 };
 
 /*
+  Avisos de pontuação atualizada — a régua do banner que aparece no material.
+
+  A presença em aula não entra sozinha: o Gilberto roda `scripts/czt-lanca-aulas.cjs`
+  UMA VEZ POR MÊS, quando fecha o relatório de assiduidade. Nesse dia a pontuação
+  de todo mundo dá um salto — e é exatamente aí que vale a pena o colaborador
+  voltar e olhar a própria posição. Sem aviso, o salto acontece com a sala vazia.
+
+  Cada item é UM lançamento: `data` é o dia em que o script rodou (o aviso começa
+  à meia-noite de Brasília desse dia e vale por ANUNCIO_HORAS) e `ref` é o mês de
+  aula que entrou, que aparece na linha de apoio do banner.
+
+  >>> É ESTA A LISTA QUE SE EDITA. <<<
+  Se o lançamento escorregar de dia, basta corrigir a `data` da linha do mês —
+  nada mais no produto precisa mudar. Para encerrar a campanha antes, apague a
+  linha. Fora de qualquer janela, nenhum aviso é renderizado.
+*/
+export const ANUNCIO_HORAS = 72;
+
+export const ANUNCIOS = [
+  { data: '2026-09-01', ref: 'agosto' },
+  { data: '2026-10-01', ref: 'setembro' },
+  { data: '2026-11-03', ref: 'outubro' },
+  { data: '2026-12-01', ref: 'novembro' },
+];
+
+/**
+ * O aviso vigente agora, ou null fora das janelas.
+ *
+ * A janela é ancorada na meia-noite de BRASÍLIA (-03:00), não em UTC: o público
+ * está todo no Brasil, e ancorar em UTC faria o aviso acender às 21h da véspera.
+ *
+ * @param {Date|string|number} agora  instante a testar (padrão: agora)
+ * @param {Array}              lista  avisos (padrão: ANUNCIOS) — o parâmetro
+ *                                    existe para teste, não para uso no produto
+ * @returns {{data: string, ref: string, inicio: number, fim: number}|null}
+ */
+export function anuncioAtivo(agora = new Date(), lista = ANUNCIOS) {
+  const t = agora instanceof Date ? agora.getTime() : Date.parse(agora);
+  if (!Number.isFinite(t)) return null;
+  for (const a of lista || []) {
+    const inicio = Date.parse(`${a.data}T00:00:00-03:00`);
+    if (!Number.isFinite(inicio)) continue;
+    const fim = inicio + ANUNCIO_HORAS * 3600 * 1000;
+    if (t >= inicio && t < fim) return { ...a, inicio, fim };
+  }
+  return null;
+}
+
+/*
   Dois tetos, e é aí que mora o desenho da campanha:
 
   - TETO DIÁRIO (4 pts): estudar tudo de uma vez não paga. Vinte lições numa
