@@ -56,6 +56,9 @@ const ROSTER = [
   { nome: 'Alessandra de Melo Cruz',   trilha: 'Fiscal & Taxes' },
   { nome: 'Claudia Gonçalves da Silva', trilha: 'General Business' },
   { nome: 'Weslley Magnago',            trilha: 'General Business', nivel: 'Rise 1' },
+  // entrou em 06/08/2026, já com aulas em agosto. Vai no FIM da lista de propósito:
+  // a senha é derivada do índice, então acrescentar aqui não muda a de mais ninguém.
+  { nome: 'João Vitor Caffetani',       trilha: 'Logistics', nivel: 'Essentials 3' },
 ];
 
 /** id do progresso: precisa casar com /^[a-z0-9-]{1,64}$/ (isValidStudent) */
@@ -107,12 +110,28 @@ const db = JSON.parse(fs.readFileSync(USERS, 'utf8'));
 const antes = db.users.length;
 const existentes = new Set(db.users.map((u) => u.id));
 
+/* Além do id, casar por NOME (e pelos apelidos). Alguns colaboradores foram
+   cadastrados com o id derivado de uma grafia antiga do nome — o Weslley Magnago
+   está como `czt-wesley-magnano` — e olhar só para o slug do nome atual criava
+   uma segunda conta para a mesma pessoa, vazia, enquanto a real seguia com o
+   progresso e as aulas da campanha. */
+const normNome = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  .replace(/\s+/g, ' ').trim().toLowerCase();
+const nomesExistentes = new Set();
+for (const u of db.users) {
+  nomesExistentes.add(normNome(u.name));
+  for (const a of u.aliases || []) nomesExistentes.add(normNome(a));
+}
+
 const novos = [];
 const credenciais = [];
 
 ROSTER.forEach((p, i) => {
   const id = slug(p.nome);
-  if (existentes.has(id)) { console.log(`já existe, pulando: ${p.nome} (${id})`); return; }
+  if (existentes.has(id) || nomesExistentes.has(normNome(p.nome))) {
+    console.log(`já existe, pulando: ${p.nome} (${id})`);
+    return;
+  }
   const senha = senhaPara(i);
   novos.push({
     id,
