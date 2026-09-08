@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getUsers, verifyPassword, createToken, isDisabledUser } from '../../../lib/auth';
+import { getUsers, verifyPassword, createToken, isDisabledUser, hasPassword } from '../../../lib/auth';
 
 export async function POST(request) {
   const { username, email, password } = await request.json();
@@ -25,6 +25,12 @@ export async function POST(request) {
     users.find(u => (u.aliases || []).some(a => norm(a) === id));
 
   if (!user) {
+    return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
+  }
+
+  // Cadastro sem senha é o acesso de visitante, que só entra pelo link de
+  // convite. Aqui ele nunca passa — e nem chega ao bcrypt com hash vazio.
+  if (!hasPassword(user)) {
     return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
   }
 

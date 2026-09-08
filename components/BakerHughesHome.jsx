@@ -26,7 +26,7 @@ function trackHref(clientId, trackId) {
   return `/${clientId}/level/essentials/track/${trackId}`;
 }
 
-export default function BakerHughesHome({ course, theme, clientId, student, role }) {
+export default function BakerHughesHome({ course, theme, clientId, student, role, lockedTracks = [] }) {
   const c = theme?.colors || {};
   const navy = c.navy || '#062E2B';
   const navyLight = c.navyLight || '#0E4A44';
@@ -133,6 +133,15 @@ export default function BakerHughesHome({ course, theme, clientId, student, role
       {shared.length > 0 && (
         <section style={{ maxWidth: 1040, margin: '0 auto', padding: 'clamp(38px, 5vw, 56px) 32px 0' }}>
           <SharedTracks tracks={shared} clientId={clientId} c={palette} />
+        </section>
+      )}
+
+      {/* ── 4a. TRILHAS PESSOAIS TRAVADAS — só para visitante ──
+             Ele vê que existe uma trilha desenhada por pessoa, sem abrir
+             nenhuma: o conteúdo continua fechado pelo `canAccessTrack`. */}
+      {personal.length === 0 && lockedTracks.length > 0 && (
+        <section style={{ maxWidth: 1040, margin: '0 auto', padding: 'clamp(40px, 5vw, 60px) 32px 0' }}>
+          <LockedTracks tracks={lockedTracks} c={palette} />
         </section>
       )}
 
@@ -291,6 +300,50 @@ function BusinessLineButton({ bl, clientId, navy, accent, grayLight, gray }) {
       </div>
       <p style={{ fontSize: 13, lineHeight: 1.5, color: gray, margin: 0 }}>{bl.description}</p>
     </Link>
+  );
+}
+
+/* Trilhas pessoais vistas por um VISITANTE: aparecem travadas, sem link e sem
+   o nome de quem estuda. O objetivo é mostrar que o programa tem uma trilha
+   desenhada pessoa a pessoa — não expor o conteúdo nem a turma. */
+function LockedTracks({ tracks, c }) {
+  const { navy, accent, gray, grayLight } = c;
+
+  return (
+    <div>
+      <SectionKicker accent={accent}>Desenhado pessoa a pessoa</SectionKicker>
+      <h2 style={{ fontSize: 'clamp(22px, 2.7vw, 30px)', fontWeight: 800, letterSpacing: -0.6, margin: '0 0 8px', color: navy }}>
+        E uma trilha só sua
+      </h2>
+      <p style={{ fontSize: 15, color: gray, margin: '0 0 18px', maxWidth: 660, lineHeight: 1.55 }}>
+        Além das trilhas do programa, cada participante recebe uma trilha montada a partir dos
+        temas que ele mesmo escolhe — o vocabulário do cargo, das reuniões e dos clientes com
+        que ele lida. É conteúdo exclusivo de cada pessoa, e por isso fica fechado aqui.
+      </p>
+
+      {/* Com uma trilha só, o card ocuparia a largura inteira e ficaria oco. */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, maxWidth: tracks.length === 1 ? 560 : '100%' }}>
+        {tracks.map((t) => (
+          <div key={t.key} style={{
+            background: '#fff', borderRadius: 12, padding: '18px 20px',
+            border: `1px dashed ${grayLight}`, display: 'flex', alignItems: 'flex-start', gap: 13,
+          }}>
+            <span style={{ flex: '0 0 auto', fontSize: 17, lineHeight: 1.2 }} aria-hidden="true">🔒</span>
+            <span style={{ flex: 1, minWidth: 0 }}>
+              <span style={{ display: 'block', fontSize: 11, fontWeight: 800, letterSpacing: 1.1, textTransform: 'uppercase', color: gray, marginBottom: 5 }}>
+                Trilha personalizada
+              </span>
+              <span style={{ display: 'block', fontSize: 15.5, fontWeight: 700, letterSpacing: -0.2, color: navy, lineHeight: 1.35 }}>
+                {t.label}
+              </span>
+              <span style={{ display: 'block', fontSize: 12.5, color: gray, marginTop: 6, lineHeight: 1.5 }}>
+                Exclusiva do participante — o conteúdo não abre neste acesso.
+              </span>
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

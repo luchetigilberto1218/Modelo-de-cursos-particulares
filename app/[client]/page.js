@@ -1,7 +1,7 @@
 import { redirect, notFound } from 'next/navigation';
 import { getCourseLite, getTheme } from '../../lib/courses';
 import { guardClient } from '../../lib/guard';
-import { visibleTracks } from '../../lib/auth';
+import { visibleTracks, lockedTracks } from '../../lib/auth';
 import NavBar from '../../components/NavBar';
 import CourseDashboard from '../../components/CourseDashboard';
 import LevelHub from '../../components/LevelHub';
@@ -41,6 +41,7 @@ export default async function ClientPage({ params }) {
         clientId={client}
         student={session?.name || null}
         role={session?.role || null}
+        lockedTracks={lockedTracks(session, course.tracks)}
       />
     );
   }
