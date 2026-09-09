@@ -104,11 +104,13 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
       // texto herdar a cor de fora. Em tema escuro isso vira claro sobre claro,
       // então aqui ele é isolado: dentro deste bloco a tinta volta a ser escura.
       return (
-        <div style={c.legacyText ? { color: c.legacyText } : undefined}>
-          {/* O <Exercise> é compartilhado com outros cursos, então o botão de
-              áudio fica no invólucro: ninguém mais muda de comportamento. */}
+        <div style={{ ...(c.legacyText ? { color: c.legacyText } : {}), position: 'relative' }}>
+          {/* O <Exercise> é compartilhado com outros cursos e desenha o próprio
+              cartão, então o botão não cabe dentro dele sem mexer no que os
+              outros cursos usam. Fica sobreposto no canto do cartão — no mesmo
+              lugar em que aparece nos demais formatos. */}
           {blockAudio && englishOf(ex) && (
-            <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: -10, position: 'relative', zIndex: 1, paddingRight: 4 }}>
+            <div style={{ position: 'absolute', top: 16, right: 18, zIndex: 2 }}>
               <AudioPlayer text={englishOf(ex)} rate={0.92} label="Ouvir" small voiceType={voiceType} />
             </div>
           )}
