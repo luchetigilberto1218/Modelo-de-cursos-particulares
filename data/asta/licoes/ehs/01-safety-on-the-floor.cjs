@@ -71,7 +71,7 @@ module.exports = {
       goal: 'Clique nas palavras que tornam a instrução OBRIGATÓRIA.',
       instruction: 'Toque em cada palavra que indica obrigação ou proibição.',
       text: 'Eye protection must be worn beyond this point . Ear defenders are mandatory near the drawing line . Do not remove any guard while the machine is running . Visitors should stay inside the yellow walkway at all times .',
-      targets: ['must', 'mandatory', 'not', 'always'],
+      targets: ['must', 'mandatory', 'not'],
       explanation: 'must, mandatory e do not carregam a obrigação. Repare que "should" na última frase é justamente o ponto fraco do texto.',
     },
     {

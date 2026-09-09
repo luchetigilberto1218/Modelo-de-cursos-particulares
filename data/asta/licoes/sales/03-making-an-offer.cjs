@@ -65,7 +65,7 @@ module.exports = {
       items: [
         { sentence: 'This offer is valid during 30 days from today.', wrong: 'during', fix: 'for', why: '<em>Valid FOR 30 days</em>. <em>During</em> precisa de um período nomeado: <em>during October</em>.' },
         { sentence: 'The lead time is 10 weeks since order confirmation.', wrong: 'since', fix: 'from', why: '<em>Since</em> é para o passado até agora. Prazo futuro é <strong>from</strong>.' },
-        { sentence: 'The price is subject of confirmation of the drawing.', wrong: 'of', fix: 'to', why: 'Colocação fixa: <strong>subject to</strong>.' },
+        { sentence: 'The price is subject of written confirmation.', wrong: 'of', fix: 'to', why: 'Colocação fixa: <strong>subject to</strong>.' },
         { sentence: 'Payment terms are 45 days from invoice date.', wrong: 'from', fix: '(está certa)', why: 'Pegadinha: <em>from invoice date</em> está correto. A frase não tem erro.' },
       ],
       explanation: 'valid for · from order confirmation · subject to. Três correções que aparecem em toda proposta.',
