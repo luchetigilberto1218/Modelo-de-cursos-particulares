@@ -1,0 +1,146 @@
+module.exports = {
+  character: 'gb-male',
+  topic: 'Pagamento e Incoterms',
+  title: 'Payment Terms and Incoterms',
+  focus: 'Quem paga o quê, e a partir de quando',
+  objective: 'Negociar e entender condições de pagamento em inglês e ler um Incoterm sabendo exatamente onde o risco muda de dono.',
+  intro: [
+    'Two lines in a contract decide more money than the price itself: the <strong>payment terms</strong> and the <strong>Incoterm</strong>.',
+    'Payment terms say <em>when</em> you pay. The Incoterm says <em>where</em> the goods stop being the supplier\'s problem and start being yours — including the freight, the insurance and the customs.',
+  ],
+  introPt: [
+    'Duas linhas de um contrato decidem mais dinheiro que o próprio preço: as <strong>condições de pagamento</strong> e o <strong>Incoterm</strong>.',
+    'As condições de pagamento dizem <em>quando</em> você paga. O Incoterm diz <em>onde</em> a mercadoria deixa de ser problema do fornecedor e passa a ser seu — incluindo frete, seguro e alfândega.',
+  ],
+  vocab: [
+    { en: 'payment terms', pt: 'condições de pagamento', example: 'Our standard payment terms are 45 days.' },
+    { en: 'net 30 / 30 days from invoice', pt: '30 dias da data da nota', example: 'Payment is net 30 from invoice date.' },
+    { en: 'advance payment / prepayment', pt: 'pagamento antecipado', example: 'They asked for 30% advance payment.' },
+    { en: 'in arrears', pt: 'em atraso / após o fato', example: 'Services are invoiced monthly in arrears.' },
+    { en: 'EXW (ex works)', pt: 'na fábrica do fornecedor — você retira', example: 'EXW means we arrange collection ourselves.' },
+    { en: 'FOB (free on board)', pt: 'posto a bordo no porto de origem', example: 'FOB Santos: risk passes when it is loaded.' },
+    { en: 'CIF (cost, insurance and freight)', pt: 'custo, seguro e frete até o porto de destino', example: 'CIF includes freight and insurance to destination.' },
+    { en: 'DDP (delivered duty paid)', pt: 'entregue no destino, impostos pagos', example: 'DDP is the most convenient — and the most expensive.' },
+  ],
+  exercises: [
+    {
+      type: 'matching',
+      title: 'Associe o Incoterm ao que ele significa',
+      instruction: 'Clique na caixa à direita e escolha o significado de cada Incoterm.',
+      pairs: [
+        { left: 'EXW', right: 'você retira na fábrica do fornecedor; todo o frete e o risco são seus' },
+        { left: 'FOB', right: 'o fornecedor entrega a bordo no porto de origem; dali em diante é seu' },
+        { left: 'CIF', right: 'o fornecedor paga frete e seguro até o porto de destino' },
+        { left: 'DAP', right: 'entregue no endereço combinado, mas o desembaraço é seu' },
+        { left: 'DDP', right: 'entregue no seu endereço com impostos e desembaraço já pagos' },
+      ],
+      explanation: 'Do EXW ao DDP, o fornecedor assume cada vez mais. E cobra por isso no preço.',
+    },
+    {
+      type: 'categorize',
+      title: 'Quem paga o frete internacional?',
+      badge: 'Classifique',
+      instruction: 'Classifique cada Incoterm pelo lado que paga o transporte principal.',
+      categories: [
+        { id: 'buyer', name: 'O comprador paga', short: 'Comprador' },
+        { id: 'seller', name: 'O fornecedor paga', short: 'Fornecedor' },
+      ],
+      items: [
+        { text: 'EXW', cat: 'buyer' },
+        { text: 'FOB', cat: 'buyer' },
+        { text: 'CIF', cat: 'seller' },
+        { text: 'DAP', cat: 'seller' },
+        { text: 'DDP', cat: 'seller' },
+        { text: 'FCA', cat: 'buyer' },
+      ],
+      explanation: 'Regra prática: os que começam com E e F são do comprador; os com C e D são do fornecedor.',
+    },
+    {
+      type: 'trueFalse',
+      title: 'Verdadeiro ou falso?',
+      instruction: 'Sobre pagamento e Incoterms.',
+      items: [
+        { text: '"Net 30" means you pay 30 days after the invoice date.', answer: true, why: 'É exatamente isso — e a contagem é da data da nota, não da entrega.' },
+        { text: 'A CIF price and an EXW price can be compared directly.', answer: false, why: 'Não podem: o CIF já inclui frete e seguro. Sem trazer os dois à mesma base, a comparação é falsa.' },
+        { text: 'Under DDP, the supplier handles customs clearance and duties.', answer: true, why: '<em>Duty paid</em> quer dizer isso — é o Incoterm mais confortável para o comprador.' },
+        { text: 'Longer payment terms always cost nothing to the buyer.', answer: false, why: 'Prazo é crédito. O fornecedor costuma embutir o custo financeiro no preço.' },
+        { text: '"In arrears" means paid before the service is delivered.', answer: false, why: 'Ao contrário: <em>in arrears</em> é pagar depois do período em que o serviço foi prestado.' },
+      ],
+      explanation: 'Prazo é dinheiro e Incoterm é base de comparação. Errar num dos dois anula qualquer negociação de preço.',
+    },
+    {
+      type: 'flowChoice',
+      title: 'Negociando o prazo de pagamento',
+      badge: 'Conversa',
+      situation: 'O fornecedor europeu propôs 30 dias. O padrão da ASTA é 45. Você tem uma call de dez minutos com o comercial dele.',
+      turns: [
+        {
+          who: 'Supplier',
+          them: 'So, everything is agreed except the payment terms. We proposed thirty days.',
+          options: [
+            { text: 'Our standard terms are forty-five days from invoice date. Can we align on that?', correct: true, why: 'Diz o padrão da empresa, com naturalidade, e devolve a pergunta.' },
+            { text: 'Thirty days is impossible for us, we never do that.', why: '"Impossível" e "nunca" fecham a porta antes de você saber o que ele pode oferecer.' },
+            { text: 'Whatever you prefer is fine for us.', why: 'Você acabou de dar quinze dias de capital de giro de graça.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'Forty-five is long for a first order. Could we do thirty now and review after six months?',
+          options: [
+            { text: 'That works if the review is written into the contract, with forty-five from month seven.', correct: true, why: 'Aceita a concessão e prende a contrapartida no papel. Revisão sem data é promessa.' },
+            { text: 'Yes, no problem, we can review whenever.', why: '"Whenever" é o mesmo que nunca. Revisão precisa de data.' },
+            { text: 'No. Forty-five or nothing.', why: 'Ultimato numa primeira compra, por quinze dias de prazo, não vale o desgaste.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'Agreed. And you are comfortable with EXW?',
+          options: [
+            { text: 'We would prefer a CIF price as well, so we can compare both bases before deciding.', correct: true, why: 'Pedir as duas bases é rotina e não custa nada — só assim dá para comparar de verdade.' },
+            { text: 'Yes, EXW is fine.', why: 'Talvez seja, mas você ainda não sabe quanto custa o frete. Aceitar antes é apostar.' },
+            { text: 'What is EXW exactly?', why: 'Perguntar é sempre melhor que fingir — mas isto você já sabe. Não entregue posição à toa.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'readAloud',
+      title: 'Negociando em voz alta',
+      instruction: 'Ouça, repita e grave.',
+      sentences: [
+        'Our standard payment terms are forty-five days from invoice date.',
+        'Could you also quote on a CIF basis, so we can compare both?',
+        'Under EXW we would have to arrange collection ourselves.',
+        'That works if the review is written into the contract.',
+        'Payment is net thirty, and the lead time starts at order confirmation.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can state our payment terms in English.', pt: 'Sei declarar as nossas condições de pagamento em inglês.' },
+        { en: 'I know what EXW, FOB, CIF, DAP and DDP mean.', pt: 'Sei o que significam EXW, FOB, CIF, DAP e DDP.' },
+        { en: 'I never compare prices on different Incoterms without adjusting.', pt: 'Nunca comparo preços em Incoterms diferentes sem ajustar.' },
+        { en: 'I ask for a review date in writing when I concede on terms.', pt: 'Peço data de revisão por escrito quando cedo em prazo.' },
+      ],
+      doneMessage: 'a base do contrato está clara. Agora, a negociação em si.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'Payment terms and Incoterms — the two lines that move more money than the price.',
+    pt: 'Condições de pagamento e Incoterms — as duas linhas que movem mais dinheiro que o preço.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Onde o dinheiro realmente está',
+    intro: 'Quatro fatos sobre pagamento e Incoterms.',
+    cards: [
+      { en: 'Incoterms are published by the International Chamber of Commerce and updated roughly every ten years — the current set is Incoterms 2020.', pt: 'Os Incoterms são publicados pela Câmara de Comércio Internacional e atualizados a cada dez anos — o conjunto atual é o Incoterms 2020.' },
+      { en: 'The Incoterm defines where risk passes, not only who pays. Goods damaged after that point are your problem, even if you have not paid yet.', pt: 'O Incoterm define onde o risco passa, não só quem paga. Mercadoria danificada depois desse ponto é problema seu, mesmo que você ainda não tenha pago.' },
+      { en: 'Fifteen extra days of payment terms on a million-euro spend is real working capital — that is why suppliers resist it.', pt: 'Quinze dias a mais de prazo sobre um milhão de euros é capital de giro de verdade — por isso o fornecedor resiste.' },
+      { en: '"Net 30" is American shorthand; European contracts usually write "30 days from invoice date". Same thing.', pt: '"Net 30" é a abreviação americana; contratos europeus costumam escrever "30 days from invoice date". É a mesma coisa.' },
+    ],
+  },
+};

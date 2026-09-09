@@ -1,0 +1,153 @@
+module.exports = {
+  character: 'gb-female',
+  topic: 'Descarbonização · relato',
+  title: 'Reporting and Disclosure',
+  focus: 'CSRD, questionários de cliente e o que se pode afirmar',
+  objective: 'Responder a exigências de relato e a questionários de clientes em inglês — e saber o que se pode afirmar, com que evidência, sem cair em greenwashing.',
+  intro: [
+    'Disclosure has stopped being voluntary and stopped being marketing. What you publish about emissions is now read by regulators, customers and auditors, and it is expected to be as traceable as a financial statement.',
+    'The discipline is simple to state and hard to hold: <strong>never claim more than your evidence supports</strong>. Every adjective in a sustainability report is a liability if there is no document behind it.',
+  ],
+  introPt: [
+    'A divulgação deixou de ser voluntária e deixou de ser marketing. O que você publica sobre emissões é hoje lido por reguladores, clientes e auditores, e espera-se que seja tão rastreável quanto uma demonstração financeira.',
+    'A disciplina é simples de enunciar e difícil de sustentar: <strong>nunca afirme mais do que a sua evidência sustenta</strong>. Todo adjetivo num relatório de sustentabilidade é um passivo se não houver documento por trás.',
+  ],
+  vocab: [
+    { en: 'disclosure', pt: 'divulgação / relato público', example: 'Disclosure is now mandatory for large groups.' },
+    { en: 'double materiality', pt: 'dupla materialidade', example: 'Double materiality looks both ways.' },
+    { en: 'assurance', pt: 'verificação independente', example: 'Limited assurance on scopes 1 and 2.' },
+    { en: 'limited / reasonable assurance', pt: 'asseguração limitada / razoável', example: 'Reasonable assurance is a higher standard.' },
+    { en: 'greenwashing', pt: 'greenwashing', example: 'Unsupported claims are greenwashing risk.' },
+    { en: 'substantiation', pt: 'comprovação de uma afirmação', example: 'Every claim needs substantiation.' },
+    { en: 'value chain', pt: 'cadeia de valor', example: 'Value chain data is the hardest part.' },
+    { en: 'to overstate / to understate', pt: 'exagerar / subestimar', example: 'Do not overstate progress.' },
+    { en: 'audit trail', pt: 'trilha de auditoria', example: 'Keep the audit trail for every figure.' },
+  ],
+  exercises: [
+    {
+      type: 'readingTask',
+      title: 'O que se pode afirmar',
+      badge: 'Leia e responda',
+      heading: 'Guidance note · Claims and substantiation',
+      instruction: 'Leia e responda. A lição está na distinção entre o que é verdadeiro e o que é comprovável.',
+      passage: [
+        'A claim is only usable if three conditions hold: it is accurate, it is specific, and there is a document that proves it. Accuracy without specificity produces a sentence nobody can check; specificity without evidence produces a sentence somebody will check, and win.',
+        'Consider "our Austrian site runs on renewable energy". This is accurate — it is powered by an on-site hydroelectric plant. It is specific enough to be tested. And there is metering and a generation record behind it. It is usable.',
+        'Consider "ASTA is a sustainable company". It is not testable and no document supports it, because no document could. It carries no information and carries real risk, since a regulator assessing greenwashing looks precisely at claims of this shape.',
+        'Consider "we have cut our emissions by forty per cent". This is where most trouble arises. Cut against what baseline? Which scopes? Market-based or location-based? Is it a physical reduction or a contractual one? The same sentence can be entirely honest or seriously misleading depending on four omitted qualifiers.',
+        'The working rule is therefore: state the number, the scope, the baseline and the method, in that order, and let the reader draw the conclusion. A claim that needs an adjective to sound impressive is usually a claim that will not survive assurance.',
+      ],
+      questions: [
+        { prompt: 'What are the three conditions for a usable claim?', options: [{ text: 'Accurate, specific, and supported by a document.', correct: true }, { text: 'Positive, short and memorable.', correct: false }, { text: 'Approved by legal, marketing and the board.', correct: false }], why: 'Preciso, específico e comprovável. Faltando qualquer um, a afirmação não serve.' },
+        { prompt: 'Why is "ASTA is a sustainable company" a risk?', options: [{ text: 'It is untestable and unsupported — exactly the shape regulators examine for greenwashing.', correct: true }, { text: 'Because it is false.', correct: false }, { text: 'Because it is too specific.', correct: false }], why: 'O problema não é ser mentira; é não ser verificável. E é isso que atrai escrutínio.' },
+        { prompt: 'What makes "we cut emissions by forty per cent" dangerous?', options: [{ text: 'Four missing qualifiers: baseline, scopes, method, and physical versus contractual.', correct: true }, { text: 'The number is too high.', correct: false }, { text: 'Percentages are never allowed.', correct: false }], why: 'A mesma frase pode ser honesta ou enganosa dependendo do que se omite.' },
+        { prompt: 'What is the working rule proposed?', options: [{ text: 'State number, scope, baseline and method, and let the reader conclude.', correct: true }, { text: 'Avoid publishing numbers.', correct: false }, { text: 'Use adjectives only when approved.', correct: false }], why: 'O leitor tira a conclusão; você fornece o dado. É a estrutura que sobrevive a auditoria.' },
+      ],
+    },
+    {
+      type: 'categorize',
+      title: 'Afirmação utilizável ou risco?',
+      badge: 'Classifique',
+      instruction: 'Classifique cada frase pelo critério de comprovação.',
+      categories: [
+        { id: 'ok', name: 'Utilizável', short: 'Utilizável' },
+        { id: 'risk', name: 'Risco de greenwashing', short: 'Risco' },
+      ],
+      items: [
+        { text: 'Our Oed site is powered by an on-site hydroelectric plant.', cat: 'ok' },
+        { text: 'ASTA is an environmentally responsible company.', cat: 'risk' },
+        { text: 'Scope 1 and 2 emissions fell 18% against the 2020 baseline, market-based.', cat: 'ok' },
+        { text: 'Our products are green.', cat: 'risk' },
+        { text: 'Thirty-two per cent of our copper input was recycled in 2026.', cat: 'ok' },
+        { text: 'We are committed to a sustainable future.', cat: 'risk' },
+        { text: 'Scopes 1 and 2 are covered by limited assurance from an independent provider.', cat: 'ok' },
+      ],
+      explanation: 'Número, escopo, base e método: utilizável. Adjetivo sem documento: risco.',
+    },
+    {
+      type: 'flowChoice',
+      title: 'O questionário do cliente',
+      badge: 'Conversa',
+      situation: 'Um cliente grande envia um questionário de sustentabilidade com perguntas para as quais você ainda não tem dado completo. A tentação é preencher tudo.',
+      turns: [
+        {
+          who: 'Customer',
+          them: 'Question fourteen asks for your scope 3 category 1 emissions with primary supplier data. Can you complete it?',
+          options: [
+            { text: 'Partially. About a third by value is supplier-specific; the rest is industry average. I will report both figures and label them, rather than give you one number that hides the mix.', correct: true, why: 'Resposta parcial e rotulada é utilizável no inventário dele. Um número único e opaco não é.' },
+            { text: 'Yes, we can complete it.', why: 'Se um terço é primário, dizer que está completo é uma afirmação que não sobrevive à primeira pergunta de acompanhamento.' },
+            { text: 'No, we do not have that data.', why: 'Você tem um terço. Dizer que não tem nada entrega terreno e não é verdade.' },
+          ],
+        },
+        {
+          who: 'Customer',
+          them: 'Our procurement policy scores suppliers on completeness. A partial answer will score lower.',
+          options: [
+            { text: 'I understand. I would still rather score lower on a figure I can evidence than higher on one I cannot defend in your assurance process.', correct: true, why: 'Nomeia o custo e mantém a posição. E o argumento é o interesse dele, não o seu.' },
+            { text: 'In that case, we can report the full figure using averages.', why: 'Isso é exatamente o que o processo de asseguração dele vai desmontar — e o problema volta com o seu nome.' },
+            { text: 'Could you make an exception for us?', why: 'Pedir exceção enfraquece; explicar por que o dado parcial é melhor para ele, não.' },
+          ],
+        },
+        {
+          who: 'Customer',
+          them: 'Fair enough. Can you commit to full primary data by 2028?',
+          options: [
+            { text: 'I can commit to a coverage trajectory — a stated percentage each year — rather than to a binary that depends on suppliers I do not control.', correct: true, why: 'Compromisso proporcional ao controle, e ainda assim mensurável. É o que se pode cumprir.' },
+            { text: 'Yes, full primary data by 2028.', why: 'Depende de dezenas de fornecedores. Prometer isso cria um problema datado.' },
+            { text: 'That depends entirely on our suppliers.', why: 'Verdadeiro, mas sem oferecer nenhuma trajetória você parece não ter plano.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'multipleChoice',
+      title: 'Asseguração limitada ou razoável?',
+      prompt: 'A customer asks whether your figures are "assured". You have limited assurance on scopes 1 and 2, and none on scope 3. What do you say?',
+      options: [
+        { id: 'a', text: 'Limited assurance on scopes 1 and 2; scope 3 is not assured, and I will say so explicitly in the response.', correct: true },
+        { id: 'b', text: 'Yes, our figures are assured.', correct: false, whyWrong: 'Omitir que o escopo 3 não é verificado é exatamente o tipo de omissão que o processo de asseguração dele vai encontrar.' },
+        { id: 'c', text: 'We have reasonable assurance across all scopes.', correct: false, whyWrong: 'Asseguração razoável é um nível mais alto que limitada. Declarar o nível errado é uma afirmação falsa, não um arredondamento.' },
+      ],
+      explanation: 'Diga o nível e o escopo exatos. "Assured" sem qualificação é uma afirmação maior do que a evidência.',
+    },
+    {
+      type: 'readAloud',
+      title: 'Respondendo com precisão, em voz alta',
+      instruction: 'Ouça, repita e grave. Grave duas vezes — a segunda sem olhar.',
+      sentences: [
+        'Scope one and two emissions fell eighteen per cent against the twenty twenty baseline, market-based.',
+        'Scopes one and two are covered by limited assurance; scope three is not assured.',
+        'About a third of category one by value is supplier-specific data, and I will label the split.',
+        'I would rather score lower on a figure I can evidence than higher on one I cannot defend.',
+        'I can commit to a coverage trajectory rather than to a binary I do not control.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I know the three conditions that make a claim usable.', pt: 'Sei as três condições que tornam uma afirmação utilizável.' },
+        { en: 'I state number, scope, baseline and method instead of adjectives.', pt: 'Declaro número, escopo, base e método em vez de adjetivos.' },
+        { en: 'I know the difference between limited and reasonable assurance.', pt: 'Sei a diferença entre asseguração limitada e razoável.' },
+        { en: 'I commit to trajectories I control rather than binaries I do not.', pt: 'Comprometo-me com trajetórias que controlo, não com binários que não controlo.' },
+      ],
+      doneMessage: 'relato resolvido. A próxima lição fecha o bloco de descarbonização.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'Never claim more than your evidence supports — the whole discipline, in one sentence.',
+    pt: 'Nunca afirme mais do que a sua evidência sustenta — a disciplina inteira, numa frase.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Divulgar sem se expor',
+    intro: 'Quatro princípios de relato.',
+    cards: [
+      { en: 'Greenwashing enforcement targets vague claims more often than false ones, because vagueness is what makes a claim unverifiable.', pt: 'A fiscalização de greenwashing mira afirmações vagas mais que falsas, porque é a vaguidão que torna uma afirmação inverificável.' },
+      { en: 'Limited assurance is a lower level of scrutiny than reasonable assurance. Claiming the wrong one is a false statement, not a rounding.', pt: 'Asseguração limitada é um nível de escrutínio menor que a razoável. Declarar o nível errado é uma afirmação falsa, não um arredondamento.' },
+      { en: 'A partial figure that is clearly labelled is more useful to a customer than a complete figure they cannot defend.', pt: 'Um número parcial claramente rotulado é mais útil a um cliente que um número completo que ele não consegue defender.' },
+      { en: 'Committing to a coverage trajectory instead of a binary target is how you promise something you can actually deliver.', pt: 'Comprometer-se com uma trajetória de cobertura em vez de uma meta binária é como se promete algo que se consegue cumprir.' },
+    ],
+  },
+};

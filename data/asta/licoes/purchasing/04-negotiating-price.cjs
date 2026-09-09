@@ -1,0 +1,150 @@
+module.exports = {
+  character: 'gb-male',
+  topic: 'Negociação',
+  title: 'Negotiating Price and Lead Time',
+  focus: 'Pedir, ceder e fechar sem perder a relação',
+  objective: 'Conduzir uma negociação de preço e prazo em inglês — pedir com justificativa, ceder com contrapartida e fechar por escrito.',
+  intro: [
+    'Negotiating in a second language feels harder than it is, because most of a negotiation is not vocabulary — it is structure. <strong>Ask, justify, trade, confirm.</strong>',
+    'The single most useful pattern in English is conditional: <em>"If you can do X, we can do Y."</em> It lets you offer something without giving it away.',
+  ],
+  introPt: [
+    'Negociar numa segunda língua parece mais difícil do que é, porque a maior parte de uma negociação não é vocabulário — é estrutura. <strong>Pedir, justificar, trocar, confirmar.</strong>',
+    'O padrão mais útil do inglês é o condicional: <em>"If you can do X, we can do Y."</em> Ele deixa você oferecer algo sem entregar de graça.',
+  ],
+  vocab: [
+    { en: 'to come down on price', pt: 'baixar o preço', example: 'Could you come down on price for a larger volume?' },
+    { en: 'volume commitment', pt: 'compromisso de volume', example: 'We can offer a volume commitment for twelve months.' },
+    { en: 'to match', pt: 'igualar (uma oferta)', example: 'Can you match their lead time?' },
+    { en: 'discount', pt: 'desconto', example: 'A three per cent discount on annual volume.' },
+    { en: 'to meet in the middle', pt: 'dividir a diferença', example: 'Shall we meet in the middle at 4.10?' },
+    { en: 'deal breaker', pt: 'o ponto que inviabiliza o acordo', example: 'The lead time is a deal breaker for us.' },
+    { en: 'to walk away', pt: 'desistir do negócio', example: 'We are prepared to walk away on those terms.' },
+    { en: 'in writing', pt: 'por escrito', example: 'Please confirm in writing.' },
+  ],
+  exercises: [
+    {
+      type: 'sentenceBuild',
+      title: 'Monte a frase de negociação',
+      instruction: 'Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.',
+      items: [
+        { hint: 'Oferecer algo em troca de um desconto.', answer: 'If you can come down to four euros ten we can commit to annual volume', extra: ['will commit', 'for'] },
+        { hint: 'Explicar por que o prazo é crítico.', answer: 'The lead time is a deal breaker because our line stops without the material', extra: ['stopped', 'why'] },
+        { hint: 'Propor dividir a diferença.', answer: 'Shall we meet in the middle at four euros thirty', extra: ['Do we', 'on'] },
+        { hint: 'Fechar o combinado.', answer: 'Could you confirm that in writing by the end of the week', extra: ['write', 'until'] },
+      ],
+      explanation: 'Condicional, justificativa, meio-termo e confirmação por escrito. Uma negociação inteira.',
+    },
+    {
+      type: 'swipeChoice',
+      title: 'Qual frase negocia melhor?',
+      badge: 'A ou B',
+      instruction: 'As duas são educadas. Escolha a que dá mais resultado.',
+      items: [
+        { prompt: 'Pedindo desconto.', a: 'Could you give us a better price?', b: 'If we commit to 12,000 kg over the year, can you come down to 4.10?', correct: 'b', why: 'Pedido vago recebe resposta vaga. Volume + número exato dá ao outro lado algo para levar ao gestor dele.' },
+        { prompt: 'Reagindo a uma proposta ruim.', a: 'That is too expensive.', b: 'That is about eight per cent above our current supplier — help me understand the difference.', correct: 'b', why: 'Dado em vez de julgamento. E a pergunta obriga o outro lado a justificar.' },
+        { prompt: 'Quando o prazo não serve.', a: 'Fourteen weeks does not work for us — our line stops. Eight weeks is the limit.', b: 'Fourteen weeks is a bit long, could you improve it a little?', correct: 'a', why: 'Consequência concreta e um número limite. "A little" convida a uma melhora simbólica.' },
+        { prompt: 'Fechando o acordo.', a: 'Great, we have a deal, thank you.', b: 'Great — could you confirm the price, the lead time and the terms in writing by Friday?', correct: 'b', why: 'Acordo verbal esquece. Confirmação por escrito é a parte que protege os dois lados.' },
+      ],
+      explanation: 'Número, justificativa, consequência, confirmação. Nenhum desses depende de inglês avançado.',
+    },
+    {
+      type: 'flowChoice',
+      title: 'A negociação',
+      badge: 'Conversa',
+      situation: 'Fornecedor europeu, cotação a EUR 4,45/kg com 14 semanas de prazo. Você precisa de EUR 4,15 e de 8 semanas. É um fornecedor de que você gosta e quer manter.',
+      turns: [
+        {
+          who: 'Supplier',
+          them: 'So, our offer is four forty-five per kilo, fourteen weeks lead time. What do you think?',
+          options: [
+            { text: 'The price is workable, but fourteen weeks is a deal breaker — our line stops without the material.', correct: true, why: 'Separa o que dá e o que não dá. Ataca primeiro o ponto realmente crítico.' },
+            { text: 'Both the price and the lead time are far from what we need.', why: 'Atacar tudo ao mesmo tempo dilui a pressão. Escolha a batalha principal.' },
+            { text: 'Let me discuss internally and come back to you.', why: 'Adia sem ganhar nada. Você já sabe o que precisa — diga.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'Fourteen weeks is our standard. I could look at twelve, but not less.',
+          options: [
+            { text: 'If you can do ten weeks, we can place the full annual volume with you in one order.', correct: true, why: 'Contrapartida clara. Você não pede: você troca.' },
+            { text: 'Twelve is still too long, we need eight.', why: 'Repetir a exigência sem oferecer nada trava a conversa.' },
+            { text: 'All right, twelve works.', why: 'Você cedeu quatro semanas sem receber nada em troca.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'Ten weeks I can do for a single consolidated order. But then I need to hold the price at four forty-five.',
+          options: [
+            { text: 'Understood. Then let us meet in the middle at four thirty, with the ten-week lead time.', correct: true, why: 'Fecha o prazo, que era o crítico, e ainda tira quinze centavos.' },
+            { text: 'Fine, four forty-five it is.', why: 'Ele acabou de ganhar o preço cheio. Havia espaço para pelo menos um meio-termo.' },
+            { text: 'No — four fifteen or we go elsewhere.', why: 'Ultimato depois de ele ter cedido quatro semanas queima uma relação que você quer manter.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'Four thirty with ten weeks. I can live with that.',
+          options: [
+            { text: 'Excellent. Could you confirm the price, the lead time and the payment terms in writing by Friday?', correct: true, why: 'Fecha por escrito e ainda traz as condições de pagamento para dentro do combinado.' },
+            { text: 'Perfect, I will raise the PO today.', why: 'Emitir o PO antes da confirmação por escrito deixa a interpretação do acordo com o fornecedor.' },
+            { text: 'Great, thank you very much for your time.', why: 'Educado, mas o acordo ainda não está registrado em lugar nenhum.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'multiSelect',
+      title: 'O que você pode oferecer sem baixar o preço?',
+      instruction: 'Marque tudo o que funciona como moeda de troca. Há mais de uma.',
+      prompt: 'You need a better price. What can you offer in exchange?',
+      options: [
+        { text: 'A commitment to annual volume.', correct: true },
+        { text: 'Shorter payment terms — paying faster.', correct: true },
+        { text: 'Consolidating several small orders into one.', correct: true },
+        { text: 'Promising to recommend them to other companies.', correct: false },
+        { text: 'More flexibility on the delivery date.', correct: true },
+        { text: 'Telling them what the competitor quoted.', correct: false },
+      ],
+      explanation: 'Volume, prazo de pagamento, consolidação e flexibilidade de data são moedas reais. Recomendação vaga e preço do concorrente, não.',
+    },
+    {
+      type: 'readAloud',
+      title: 'Negociando em voz alta',
+      instruction: 'Ouça, repita e grave. Diga com calma — pressa numa negociação soa como insegurança.',
+      sentences: [
+        'The price is workable, but fourteen weeks is a deal breaker.',
+        'If you can do ten weeks, we can place the full annual volume with you.',
+        'That is about eight per cent above our current supplier — help me understand the difference.',
+        'Shall we meet in the middle at four thirty?',
+        'Could you confirm the price, the lead time and the terms in writing by Friday?',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I use the "if you can… we can…" pattern to trade instead of just asking.', pt: 'Uso o padrão "if you can… we can…" para trocar em vez de só pedir.' },
+        { en: 'I give a number and a reason instead of saying "too expensive".', pt: 'Dou um número e um motivo em vez de dizer "too expensive".' },
+        { en: 'I know what I can offer that is not a lower price.', pt: 'Sei o que posso oferecer que não seja preço menor.' },
+        { en: 'I always close by asking for confirmation in writing.', pt: 'Sempre fecho pedindo confirmação por escrito.' },
+      ],
+      doneMessage: 'negociação resolvida. A próxima é a parte chata: cobrar a entrega atrasada.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'Ask, justify, trade, confirm — you can negotiate in English now.',
+    pt: 'Pedir, justificar, trocar, confirmar — agora você negocia em inglês.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Negociar em inglês',
+    intro: 'Quatro coisas que valem mais que fluência.',
+    cards: [
+      { en: 'The conditional — "if you can…, we can…" — is the most useful structure in business English. It offers without committing.', pt: 'O condicional — "if you can…, we can…" — é a estrutura mais útil do inglês de negócios. Oferece sem se comprometer.' },
+      { en: 'Silence after a proposal is a tool, not an accident. Non-native speakers often fill it and lose ground.', pt: 'O silêncio depois de uma proposta é ferramenta, não acidente. Quem não é nativo tende a preencher e perder terreno.' },
+      { en: '"Help me understand" is the most useful phrase in English negotiation: it challenges without attacking.', pt: '"Help me understand" é a frase mais útil da negociação em inglês: questiona sem atacar.' },
+      { en: 'Never reveal a competitor\'s price. It teaches the supplier exactly how little they need to move.', pt: 'Nunca revele o preço do concorrente. Isso ensina ao fornecedor exatamente o mínimo que ele precisa ceder.' },
+    ],
+  },
+};

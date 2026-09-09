@@ -1,0 +1,140 @@
+module.exports = {
+  character: 'gb-female',
+  topic: 'Transição energética',
+  title: 'Copper and the Energy Transition',
+  focus: 'Renováveis, e-mobility e o futuro do setor',
+  objective: 'Falar em inglês sobre por que a demanda por cobre cresce com a transição energética — e onde a ASTA entra nisso.',
+  intro: [
+    'The world is replacing fuel with electricity. Cars, buses, heating, industry — all of it is moving onto <strong>the grid</strong>. And every step of that move needs copper.',
+    'More renewable power means more <em>transmission</em>. More transmission means more <em>transformers</em>. And more transformers means more conductor — drawn thinner, insulated better, transposed more precisely than before.',
+  ],
+  introPt: [
+    'O mundo está trocando combustível por eletricidade. Carros, ônibus, aquecimento, indústria — tudo está migrando para <strong>a rede elétrica</strong>. E cada passo dessa migração precisa de cobre.',
+    'Mais energia renovável significa mais <em>transmissão</em>. Mais transmissão significa mais <em>transformadores</em>. E mais transformadores significa mais condutor — trefilado mais fino, isolado melhor, transposto com mais precisão do que antes.',
+  ],
+  vocab: [
+    { en: 'energy transition', pt: 'transição energética', example: 'Copper sits at the heart of the energy transition.' },
+    { en: 'renewable', pt: 'renovável', example: 'Wind and solar are renewable sources.' },
+    { en: 'e-mobility', pt: 'eletromobilidade', example: 'The Chinese plant was extended for e-mobility.' },
+    { en: 'demand', pt: 'demanda', example: 'Demand for copper conductors is growing fast.' },
+    { en: 'efficiency', pt: 'eficiência', example: 'Better efficiency means less energy lost as heat.' },
+    { en: 'to phase out', pt: 'eliminar gradualmente', example: 'The site phased out fossil fuels in 2023.' },
+    { en: 'carbon footprint', pt: 'pegada de carbono', example: 'Hydro power lowers the plant\'s carbon footprint.' },
+  ],
+  exercises: [
+    {
+      type: 'readingTask',
+      title: 'Por que a demanda cresce',
+      badge: 'Leia e responda',
+      heading: 'Market note · Why copper demand is rising',
+      instruction: 'Leia a nota de mercado e responda.',
+      passage: [
+        'Every wind turbine, every solar farm and every electric vehicle needs copper — far more than the equipment it replaces. A single electric car uses roughly four times more copper than a car with a combustion engine.',
+        'Renewable plants are also built far from the cities that consume the power. That distance has to be covered by transmission lines and, at both ends, by transformers. Each of those transformers is full of conductor.',
+        'At the same time, grid operators are under pressure to cut losses. Energy lost as heat inside a transformer is energy that was generated and never delivered. This is where the transposed conductor earns its place: it spreads the current evenly between the strands and keeps those losses down.',
+      ],
+      questions: [
+        { prompt: 'How much more copper does an electric car use?', options: [{ text: 'About four times more than a combustion car.', correct: true }, { text: 'About the same amount.', correct: false }, { text: 'Slightly less.', correct: false }], why: '"roughly four times more copper".' },
+        { prompt: 'Why do renewables need more transmission?', options: [{ text: 'Because they are built far from the cities that consume the power.', correct: true }, { text: 'Because they produce direct current only.', correct: false }, { text: 'Because they run at night.', correct: false }], why: 'A distância entre geração e consumo é o ponto do segundo parágrafo.' },
+        { prompt: 'Why do transposed conductors matter to a grid operator?', options: [{ text: 'They reduce the energy lost as heat inside the transformer.', correct: true }, { text: 'They make the transformer cheaper to build.', correct: false }, { text: 'They allow the transformer to run without oil.', correct: false }], why: '"keeps those losses down" — perda evitada é energia entregue.' },
+      ],
+    },
+    {
+      type: 'flowChoice',
+      title: 'Explicando a empresa num jantar',
+      badge: 'Conversa',
+      situation: 'Num jantar com clientes, alguém de fora do setor pergunta o que a ASTA faz e por que isso importa. Você tem duas ou três frases.',
+      turns: [
+        {
+          who: 'Guest',
+          them: 'So — ASTA. What do you actually do?',
+          options: [
+            { text: 'We make the copper conductors that go inside power transformers and generators.', correct: true, why: 'Concreto e curto. A pessoa já consegue imaginar.' },
+            { text: 'We are a global leader in high-efficiency solutions for the energy sector.', why: 'Isso não diz nada. Quem ouve não faz ideia do que sai da fábrica.' },
+            { text: 'It is quite technical, you probably would not be interested.', why: 'Fecha a conversa e soa arrogante. Sempre há uma versão simples.' },
+          ],
+        },
+        {
+          who: 'Guest',
+          them: 'Transformers? Is that a growing business these days?',
+          options: [
+            { text: 'Very much — every new wind farm and every electric car adds demand for copper in the grid.', correct: true, why: 'Liga o produto a algo que a pessoa vê no dia a dia.' },
+            { text: 'Yes, the market indicators are quite positive at the moment.', why: 'Vago. "Market indicators" não explica por quê.' },
+            { text: 'I think so, but I work in production, so I do not follow the market.', why: 'Você não precisa ser do comercial para saber por que a sua empresa cresce.' },
+          ],
+        },
+        {
+          who: 'Guest',
+          them: 'And is the company old?',
+          options: [
+            { text: 'Founded in 1814 in Austria — and in Brazil since 1945.', correct: true, why: 'Dois números, duas histórias. Impossível de esquecer.' },
+            { text: 'Yes, very old, more than two centuries I believe.', why: '"I believe" enfraquece um dado que você sabe de cor.' },
+            { text: 'It is a traditional company with a lot of heritage in the sector.', why: 'De novo, adjetivo no lugar de fato.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'highlightPick',
+      title: 'Onde está o argumento?',
+      badge: 'Clique nas palavras',
+      goal: 'Clique nas palavras que indicam CRESCIMENTO ou aumento.',
+      instruction: 'Toque em cada palavra que aponta para algo subindo.',
+      text: 'Demand for conductors is rising as more renewable capacity is connected to the grid . Losses remain a concern , but efficiency is improving and investment in transmission continues to grow across every region .',
+      targets: ['rising', 'more', 'improving', 'grow'],
+      explanation: 'Rising, more, improving e grow são as quatro palavras que sinalizam crescimento num comentário de mercado.',
+    },
+    {
+      type: 'serialChoice',
+      title: 'A colocação certa',
+      badge: 'Escolha certa',
+      instruction: 'Termos de energia têm colocações fixas. Escolha a natural.',
+      items: [
+        { prompt: 'Demand for copper is ___ fast.', options: [{ text: 'growing', correct: true }, { text: 'augmenting' }, { text: 'increasing itself' }], why: '<strong>to grow</strong> é o verbo natural para demanda. <em>Augment</em> quase não se usa.' },
+        { prompt: 'The site ___ fossil fuels in 2023.', options: [{ text: 'phased out', correct: true }, { text: 'phased off' }, { text: 'quit' }], why: '<strong>phase out</strong> = eliminar gradualmente.' },
+        { prompt: 'Energy lost ___ heat never reaches the customer.', options: [{ text: 'as', correct: true }, { text: 'like' }, { text: 'in form of' }], why: '<strong>lost as heat</strong> — colocação fixa.' },
+        { prompt: 'We need to ___ losses in the transformer.', options: [{ text: 'cut', correct: true }, { text: 'diminish' }, { text: 'lower down' }], why: '<strong>cut losses</strong> ou <em>reduce losses</em>. "Lower down" é redundante.' },
+      ],
+      explanation: 'grow · phase out · lost as heat · cut losses. Quatro colocações que aparecem em todo relatório do setor.',
+    },
+    {
+      type: 'readAloud',
+      title: 'O argumento em voz alta',
+      instruction: 'Ouça, repita e grave. É o pitch de trinta segundos sobre a empresa.',
+      sentences: [
+        'Copper sits at the heart of the energy transition.',
+        'More renewable power means more transmission, and more transmission means more transformers.',
+        'Every electric car uses about four times more copper than a combustion car.',
+        'Energy lost as heat is energy that was generated and never delivered.',
+        'That is why the transposed conductor matters.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can explain why the energy transition increases demand for copper.', pt: 'Sei explicar por que a transição energética aumenta a demanda por cobre.' },
+        { en: 'I can use the words renewable, e-mobility, demand and efficiency.', pt: 'Sei usar renewable, e-mobility, demand e efficiency.' },
+        { en: 'I can explain the company to someone outside the industry.', pt: 'Sei explicar a empresa para alguém de fora do setor.' },
+        { en: 'I can say "energy lost as heat" instead of translating word by word.', pt: 'Digo "energy lost as heat" em vez de traduzir palavra por palavra.' },
+      ],
+      doneMessage: 'o porquê do negócio, resolvido. A próxima lição é sobre falar com as outras plantas.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'You can now explain, in English, why this industry is growing.',
+    pt: 'Agora você explica, em inglês, por que este setor está crescendo.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'A transição energética em quatro fatos',
+    intro: 'Dados curtos que sustentam qualquer conversa sobre o futuro do setor.',
+    cards: [
+      { en: 'An electric car contains roughly four times more copper than a car with a combustion engine.', pt: 'Um carro elétrico contém cerca de quatro vezes mais cobre que um carro a combustão.' },
+      { en: 'The Oed site in Austria runs on its own hydroelectric plant and stopped depending on fossil fuels in 2023.', pt: 'A unidade de Oed, na Áustria, roda com a própria hidrelétrica e deixou de depender de combustíveis fósseis em 2023.' },
+      { en: 'The Chinese plant in Baoying was extended specifically for the electric mobility sector.', pt: 'A planta chinesa de Baoying foi ampliada especificamente para o setor de mobilidade elétrica.' },
+      { en: '"Energy transition" is the standard English term. "Energetic transition" is a false friend and means something else entirely.', pt: '"Energy transition" é o termo padrão em inglês. "Energetic transition" é falso amigo e significa outra coisa.' },
+    ],
+  },
+};

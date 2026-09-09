@@ -1,0 +1,73 @@
+{
+  "clientId": "asta",
+  "clientName": "ASTA",
+  "platform": "levels",
+  "tagline": "O cobre que move a energia do mundo — agora também em inglês.",
+  "colors": {
+    "navy": "#0E2350",
+    "navyLight": "#1B3C8F",
+    "accent": "#AC784A",
+    "accentHover": "#96663B",
+    "accentLight": "#F4EAE0",
+    "teal": "#C59D7E",
+    "red": "#CB142D",
+    "white": "#FFFFFF",
+    "offWhite": "#F7F6F3",
+    "grayLight": "#E3E1DC",
+    "gray": "#6B6660",
+    "text": "#1F1D1A",
+    "dark": "#030303"
+  },
+  "logos": {
+    "school": "https://alumni.org.br/wp-content/uploads/2025/12/logo_alumni-bco-1024x445.png",
+    "schoolBlue": "https://alumni.org.br/wp-content/uploads/2025/11/C%C3%B3pia-de-logo-blue-8.webp",
+    "client": "/asta/logo-asta.svg",
+    "clientWhite": "/asta/logo-asta-branco.svg"
+  },
+  "heroImage": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1600&q=80",
+  "characters": [
+    {
+      "id": "us-male",
+      "name": "Mike",
+      "gender": "male",
+      "accent": "American (neutral)",
+      "description": "Production and maintenance lead. Usado para o chão de fábrica, máquinas e manutenção.",
+      "voice": "en-US-GuyNeural"
+    },
+    {
+      "id": "us-female",
+      "name": "Sarah",
+      "gender": "female",
+      "accent": "American (neutral)",
+      "description": "Supply chain and purchasing. Usada para compras, fornecedores e prazos.",
+      "voice": "en-US-JennyNeural"
+    },
+    {
+      "id": "gb-male",
+      "name": "James",
+      "gender": "male",
+      "accent": "Neutral British",
+      "description": "Commercial manager. Usado para clientes, propostas e negociação.",
+      "voice": "en-GB-RyanNeural"
+    },
+    {
+      "id": "gb-female",
+      "name": "Claire",
+      "gender": "female",
+      "accent": "Neutral British",
+      "description": "EHS and quality specialist. Usada para segurança, meio ambiente e auditoria.",
+      "voice": "en-GB-SoniaNeural"
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "gender": "male",
+      "accent": "British (group English)",
+      "description": "Engenheiro do grupo, sediado na Áustria. Usado quando a matriz e as outras plantas entram na conversa.",
+      "voice": "en-GB-ThomasNeural"
+    }
+  ],
+  "exercises": {
+    "shuffle": true
+  }
+}

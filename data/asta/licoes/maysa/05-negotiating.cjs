@@ -1,0 +1,152 @@
+module.exports = {
+  character: 'gb-male',
+  topic: 'Purchase · negociação',
+  title: 'Negotiating with a Supplier',
+  focus: 'Pedir, trocar e fechar em inglês',
+  objective: 'Conduzir uma negociação de compra em inglês do começo ao fim — abrir, justificar, trocar e fechar por escrito.',
+  intro: [
+    'A negotiation in a second language feels harder than it is, because most of it is not vocabulary — it is <strong>structure</strong>. Ask. Justify. Trade. Confirm.',
+    'The single most useful sentence pattern in English is conditional: <em>"If you can do X, we can do Y."</em> It lets you offer without giving anything away.',
+  ],
+  introPt: [
+    'Negociar numa segunda língua parece mais difícil do que é, porque a maior parte não é vocabulário — é <strong>estrutura</strong>. Pedir. Justificar. Trocar. Confirmar.',
+    'O padrão de frase mais útil do inglês é o condicional: <em>"If you can do X, we can do Y"</em>. Ele deixa você oferecer sem entregar nada.',
+  ],
+  vocab: [
+    { en: 'to come down on price', pt: 'baixar o preço', example: 'Could you come down to 4.60?' },
+    { en: 'volume commitment', pt: 'compromisso de volume', example: 'We can commit annual volume.' },
+    { en: 'Help me understand…', pt: 'Me ajude a entender…', example: 'Help me understand the increase.' },
+    { en: 'to meet in the middle', pt: 'dividir a diferença', example: 'Shall we meet in the middle at 4.70?' },
+    { en: 'deal breaker', pt: 'o ponto que inviabiliza', example: 'The lead time is a deal breaker.' },
+    { en: 'to walk away', pt: 'desistir do negócio', example: 'We are prepared to walk away.' },
+    { en: 'best and final offer (BAFO)', pt: 'melhor e última oferta', example: 'Please send your best and final offer.' },
+    { en: 'in writing', pt: 'por escrito', example: 'Could you confirm that in writing?' },
+    { en: 'to concede', pt: 'ceder', example: 'I conceded on the date, not on the price.' },
+  ],
+  exercises: [
+    {
+      type: 'flowChoice',
+      title: 'A negociação anual',
+      badge: 'Conversa',
+      situation: 'Renovação anual do contrato de papel isolante. O fornecedor propôs um aumento de 6%. Você quer no máximo 2% e precisa manter a relação — ele é um dos poucos homologados.',
+      turns: [
+        {
+          who: 'Supplier',
+          them: 'For next year we are looking at a six per cent increase, mainly driven by energy and labour costs.',
+          options: [
+            { text: 'Help me understand the six per cent — which part is energy, and which part is labour?', correct: true, why: 'Abrir o número em partes é o movimento que mais reduz aumento. Cada parte fica sujeita a discussão separada.' },
+            { text: 'Six per cent is impossible for us.', why: '"Impossible" convida a uma discussão sobre a palavra, não sobre a conta.' },
+            { text: 'What is the best you can do?', why: 'Ele vai responder cinco e meio. Você acabou de negociar contra você mesma.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'Roughly four points are energy and two are labour.',
+          options: [
+            { text: 'Energy has come down since your last increase. Could we index that part rather than fix it at four?', correct: true, why: 'Indexar transfere a discussão para um dado público — e devolve a queda futura para você.' },
+            { text: 'Then let us say three per cent and close it.', why: 'Cortar pela metade sem argumento ensina que os seus números são arbitrários também.' },
+            { text: 'Labour costs are not our problem.', why: 'É problema dele, mas dizer isso não muda o preço e machuca a relação.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'I could index the energy part. But then I would need certainty on volume.',
+          options: [
+            { text: 'If you index the energy component, we can commit the full annual volume in a framework agreement for two years.', correct: true, why: 'Condicional puro: você não cede, você troca. E dois anos vale mais para ele que 4%.' },
+            { text: 'We usually buy about the same every year anyway.', why: '"Usually" não é compromisso. Você deu a informação sem receber nada.' },
+            { text: 'Volume depends on our customers, I cannot commit.', why: 'Talvez seja verdade, mas encerra a única moeda que você tinha na mesa.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'Two years with committed volume, energy indexed, and two per cent on the labour component. Can we close on that?',
+          options: [
+            { text: 'Yes. Could you confirm the indexation formula, the volume and the two per cent in writing by Friday?', correct: true, why: 'Fecha e amarra os três elementos. Fórmula de indexação sem texto escrito vira discussão em janeiro.' },
+            { text: 'Agreed, I will raise the framework agreement today.', why: 'Emitir o contrato antes de a fórmula estar escrita deixa a redação com ele.' },
+            { text: 'Let me think about it and come back next week.', why: 'Ele acabou de aceitar tudo o que você pediu. Hesitar agora só dá tempo para ele reconsiderar.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'swipeChoice',
+      title: 'Qual frase negocia melhor?',
+      badge: 'A ou B',
+      instruction: 'As duas são educadas. Escolha a que dá resultado.',
+      items: [
+        { prompt: 'Reagindo a um aumento de 6%.', a: 'Help me understand the six per cent — which part is energy and which is labour?', b: 'Six per cent is too much.', correct: 'a', why: 'Abrir o número em componentes é o que permite negociar cada um. "Too much" é opinião.' },
+        { prompt: 'Oferecendo algo em troca.', a: 'If you index the energy component, we can commit the full annual volume.', b: 'We buy a lot from you, so you should help us.', correct: 'a', why: 'Condicional explícito. A segunda pede favor, e favor não é negociação.' },
+        { prompt: 'Quando você precisa de tempo.', a: 'Let me check the numbers internally and come back to you by Thursday.', b: 'I am not sure, maybe we can talk again some time.', correct: 'a', why: 'Prazo concreto mantém a negociação viva. Vago a deixa morrer.' },
+        { prompt: 'Fechando.', a: 'Could you confirm the formula, the volume and the two per cent in writing by Friday?', b: 'Great, we have a deal.', correct: 'a', why: 'Acordo verbal sobre fórmula de indexação é acordo que ninguém lembra igual em janeiro.' },
+      ],
+      explanation: 'Abrir o número, condicional, prazo, confirmação escrita. Quatro movimentos.',
+    },
+    {
+      type: 'sentenceBuild',
+      title: 'Monte as frases da negociação',
+      instruction: 'Clique nos blocos na ordem certa. Alguns sobram de propósito.',
+      items: [
+        { hint: 'Pedir para abrir o número em partes.', answer: 'Help me understand which part is energy and which part is labour', extra: ['to understand', 'of'] },
+        { hint: 'Oferecer volume em troca de indexação.', answer: 'If you index the energy component we can commit the full annual volume', extra: ['will index', 'to commit'] },
+        { hint: 'Propor o meio-termo.', answer: 'Shall we meet in the middle at two per cent', extra: ['Do we', 'percents'] },
+        { hint: 'Fechar por escrito.', answer: 'Could you confirm that in writing by Friday', extra: ['to confirm', 'until'] },
+      ],
+      explanation: 'Quatro frases e a negociação inteira está estruturada.',
+    },
+    {
+      type: 'multiSelect',
+      title: 'O que você pode oferecer sem baixar preço?',
+      instruction: 'Marque tudo o que funciona como moeda de troca. Há mais de uma.',
+      prompt: 'You need a better deal. What can you offer instead of paying more?',
+      options: [
+        { text: 'A multi-year framework agreement.', correct: true },
+        { text: 'A firm annual volume commitment.', correct: true },
+        { text: 'Shorter payment terms, if your cash allows.', correct: true },
+        { text: 'Consolidating four deliveries into two.', correct: true },
+        { text: 'Telling them what the competitor quoted.', correct: false },
+        { text: 'Promising to speak well of them to other companies.', correct: false },
+        { text: 'More flexibility on the delivery window.', correct: true },
+      ],
+      explanation: 'Prazo de contrato, volume, pagamento, consolidação e flexibilidade de data. Preço do concorrente, nunca.',
+    },
+    {
+      type: 'readAloud',
+      title: 'Negociando em voz alta',
+      instruction: 'Ouça, repita e grave. Depois grave sem olhar — numa negociação você não lê.',
+      sentences: [
+        'Help me understand the six per cent — which part is energy and which is labour?',
+        'Could we index that part rather than fix it?',
+        'If you index the energy component, we can commit the full annual volume.',
+        'Shall we meet in the middle at two per cent?',
+        'Could you confirm the formula, the volume and the percentage in writing by Friday?',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I open a price increase by asking what it is made of.', pt: 'Abro um aumento perguntando de que ele é feito.' },
+        { en: 'I use "if you can…, we can…" to trade instead of just asking.', pt: 'Uso "if you can…, we can…" para trocar em vez de só pedir.' },
+        { en: 'I know what I can offer that is not money.', pt: 'Sei o que posso oferecer que não seja dinheiro.' },
+        { en: 'I always close by asking for written confirmation.', pt: 'Sempre fecho pedindo confirmação por escrito.' },
+      ],
+      doneMessage: 'negociação dominada. A próxima lição é o pedido de compra.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'Ask, justify, trade, confirm — a full negotiation in English.',
+    pt: 'Pedir, justificar, trocar, confirmar — uma negociação inteira em inglês.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Negociar em inglês',
+    intro: 'Quatro coisas que valem mais que fluência.',
+    cards: [
+      { en: '"Help me understand" is the most useful phrase in English negotiation. It challenges without attacking.', pt: '"Help me understand" é a frase mais útil da negociação em inglês. Questiona sem atacar.' },
+      { en: 'Breaking a price increase into components is the fastest way to reduce it — each part is negotiable separately.', pt: 'Abrir um aumento em componentes é o jeito mais rápido de reduzi-lo — cada parte se negocia em separado.' },
+      { en: 'Indexing a cost component transfers the argument to public data, and it works in your favour when the index falls.', pt: 'Indexar um componente de custo transfere a discussão para um dado público, e isso trabalha a seu favor quando o índice cai.' },
+      { en: 'Silence after a proposal is a tool. Non-native speakers often fill it and lose ground.', pt: 'O silêncio depois de uma proposta é ferramenta. Quem não é nativo tende a preenchê-lo e perder terreno.' },
+    ],
+  },
+};

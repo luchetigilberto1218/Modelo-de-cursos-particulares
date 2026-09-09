@@ -1,0 +1,142 @@
+module.exports = {
+  character: 'us-female',
+  topic: 'Pedir e recusar',
+  title: 'Asking for Help and Saying No',
+  focus: 'Pedir sem se diminuir, recusar sem ofender',
+  objective: 'Pedir ajuda e recusar um pedido em inglês — sem se desculpar demais e sem fechar a porta.',
+  intro: [
+    'Two things people avoid in a second language: <strong>asking for help</strong> and <strong>saying no</strong>. Avoiding the first wastes days. Avoiding the second creates promises you cannot keep.',
+    'English is generous here. There is a whole set of phrases that make both easy — and none of them require you to apologise for existing.',
+  ],
+  introPt: [
+    'Duas coisas que as pessoas evitam numa segunda língua: <strong>pedir ajuda</strong> e <strong>dizer não</strong>. Evitar a primeira desperdiça dias. Evitar a segunda cria promessas que você não consegue cumprir.',
+    'O inglês é generoso aqui. Existe um conjunto de frases que tornam as duas coisas fáceis — e nenhuma delas exige que você peça desculpa por existir.',
+  ],
+  vocab: [
+    { en: 'Could you give me a hand with…?', pt: 'Você pode me dar uma mão com…?', example: 'Could you give me a hand with the translation?' },
+    { en: 'I am stuck on…', pt: 'Estou travado em…', example: 'I am stuck on the spec interpretation.' },
+    { en: 'Would you have ten minutes?', pt: 'Você teria dez minutos?', example: 'Would you have ten minutes this afternoon?' },
+    { en: 'I would rather not', pt: 'eu preferiria não', example: 'I would rather not commit to that date yet.' },
+    { en: 'That is not going to work, because…', pt: 'Isso não vai funcionar, porque…', example: 'That is not going to work, because the line stops.' },
+    { en: 'What I can do is…', pt: 'O que eu consigo fazer é…', example: 'What I can do is send 1,000 kg this week.' },
+    { en: 'to overcommit', pt: 'prometer além do que se pode', example: 'It is better to say no than to overcommit.' },
+    { en: 'Let me check and come back to you', pt: 'Deixe-me verificar e volto', example: 'Let me check and come back to you by two.' },
+  ],
+  exercises: [
+    {
+      type: 'swipeChoice',
+      title: 'Qual pede melhor?',
+      badge: 'A ou B',
+      instruction: 'Escolha a versão que consegue ajuda sem soar frágil.',
+      items: [
+        { prompt: 'Pedindo ajuda com um documento.', a: 'I am stuck on clause 8 of the contract — would you have ten minutes today?', b: 'Sorry to bother you, I know you are very busy, it is probably a stupid question…', correct: 'a', why: 'Ponto específico e tempo pedido. A segunda gasta trinta segundos se desculpando antes de perguntar.' },
+        { prompt: 'Pedindo revisão de um e-mail em inglês.', a: 'Could you give this e-mail a quick read before I send it? Two minutes.', b: 'My English is not very good, could you fix this?', correct: 'a', why: 'Peça a ação, não a caridade. E dizer "my English is not very good" enfraquece você sem necessidade.' },
+        { prompt: 'Recusando um prazo impossível.', a: 'That is not going to work — the line stops on Thursday. What I can do is deliver half by Wednesday.', b: 'I will try my best.', correct: 'a', why: '"I will try" é um não disfarçado que só aparece na sexta-feira, tarde demais.' },
+        { prompt: 'Quando você não tem a informação.', a: 'Let me check and come back to you by two.', b: 'I do not know.', correct: 'a', why: 'Mesma honestidade, mais um prazo. Isso é tudo o que muda.' },
+      ],
+      explanation: 'Ponto específico, tempo pedido, não com alternativa, prazo em vez de "não sei".',
+    },
+    {
+      type: 'matching',
+      title: 'Associe a situação à frase',
+      instruction: 'Clique na caixa à direita e escolha a frase certa.',
+      pairs: [
+        { left: 'Você travou num ponto e precisa de ajuda', right: 'I am stuck on this — would you have ten minutes?' },
+        { left: 'Você precisa recusar um prazo', right: 'That is not going to work, because the line stops on Thursday.' },
+        { left: 'Você recusa mas quer oferecer algo', right: 'What I can do is deliver half by Wednesday.' },
+        { left: 'Você não sabe agora', right: 'Let me check and come back to you by two.' },
+        { left: 'Você prefere não se comprometer ainda', right: 'I would rather not commit to that date until I have the supplier\'s answer.' },
+        { left: 'Você quer uma revisão rápida', right: 'Could you give this a quick read before I send it?' },
+      ],
+      explanation: 'Seis frases que resolvem os dois momentos mais difíceis de trabalhar em inglês.',
+    },
+    {
+      type: 'errorSpot',
+      title: 'Ache a palavra errada',
+      badge: 'Ache o erro',
+      instruction: 'Cada frase tem exatamente uma palavra errada. Clique nela.',
+      items: [
+        { sentence: 'Can you help me in this document?', wrong: 'in', fix: 'with', why: '<strong>help someone WITH</strong> something.' },
+        { sentence: 'Sorry for disturb you.', wrong: 'disturb', fix: 'disturbing', why: 'Depois de <em>for</em> vem verbo com -ing: <em>sorry for disturbing you</em>. Mas melhor ainda: não peça desculpa.' },
+        { sentence: 'I will try my best to deliver until Thursday.', wrong: 'until', fix: 'by', why: 'Prazo é <strong>by</strong>. E "I will try my best" é um não disfarçado.' },
+        { sentence: 'What I can do is send half of the quantity this week.', wrong: 'send', fix: '(está certa)', why: 'Pegadinha: a frase está correta. <em>What I can do is + verbo</em> funciona sem "to".' },
+      ],
+      explanation: 'help with · sorry for + ing · by Thursday. E, sempre que possível, corte o "sorry".',
+    },
+    {
+      type: 'flowChoice',
+      title: 'Recusando um pedido do chefe',
+      badge: 'Conversa',
+      situation: 'O seu gestor pede que você assuma mais uma tarefa esta semana. Você já está no limite e sabe que aceitar significa atrasar algo mais importante.',
+      turns: [
+        {
+          who: 'Manager',
+          them: 'Could you also take the supplier audit report this week?',
+          options: [
+            { text: 'I can, but something has to move. Right now I have the PO-7712 chase and the NCR closure. Which is the priority?', correct: true, why: 'Não recusa: mostra a fila e devolve a decisão a quem tem a informação para tomá-la.' },
+            { text: 'Yes, of course, no problem.', why: 'Você acabou de garantir que algo vai atrasar — e você não escolheu o quê.' },
+            { text: 'No, I do not have time.', why: 'Pode ser verdade, mas sem contexto soa como recusa, não como gestão de prioridade.' },
+          ],
+        },
+        {
+          who: 'Manager',
+          them: 'The NCR closure can wait a week, I think.',
+          options: [
+            { text: 'Understood — then I will take the audit report and move the NCR to next Friday. I will note that in the tracker.', correct: true, why: 'Confirma a decisão dele por escrito. Assim ninguém lembra diferente depois.' },
+            { text: 'OK.', why: 'A decisão foi tomada, mas não ficou registrada em lugar nenhum.' },
+            { text: 'Are you sure? The customer is waiting.', why: 'Você já apresentou a fila; ele decidiu. Insistir agora é discutir, não informar.' },
+          ],
+        },
+        {
+          who: 'Manager',
+          them: 'And can you have the audit report by Wednesday?',
+          options: [
+            { text: 'Wednesday is tight. What I can do is send you the findings on Wednesday and the full report on Friday.', correct: true, why: 'Não diz não: divide a entrega. É a forma mais útil de recusar um prazo.' },
+            { text: 'I will try.', why: 'Ele vai planejar contando com quarta-feira. "Try" não é um plano.' },
+            { text: 'Yes, Wednesday.', why: 'Prometer um prazo que você sabe que é apertado é o começo de uma conversa pior na quarta.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'readAloud',
+      title: 'Pedindo e recusando em voz alta',
+      instruction: 'Ouça, repita e grave. Repare que nenhuma delas começa com "sorry".',
+      sentences: [
+        'I am stuck on clause eight — would you have ten minutes today?',
+        'Could you give this e-mail a quick read before I send it?',
+        'That is not going to work, because the line stops on Thursday.',
+        'What I can do is send half the quantity by Wednesday.',
+        'I can, but something has to move — which is the priority?',
+        'Let me check and come back to you by two.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I ask for help with a specific point and a specific amount of time.', pt: 'Peço ajuda com um ponto específico e um tempo específico.' },
+        { en: 'I do not start requests with an apology.', pt: 'Não começo pedidos com um pedido de desculpa.' },
+        { en: 'I say no with a reason and an alternative.', pt: 'Digo não com um motivo e uma alternativa.' },
+        { en: 'I never say "I will try" when I mean no.', pt: 'Nunca digo "I will try" quando quero dizer não.' },
+      ],
+      doneMessage: 'trilha do dia a dia concluída. Se você tem uma trilha personalizada, ela está no fim da página inicial.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'Asking without shrinking, refusing without closing the door — both in English.',
+    pt: 'Pedir sem se diminuir, recusar sem fechar a porta — os dois em inglês.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'As duas frases mais difíceis',
+    intro: 'Quatro observações sobre pedir e recusar.',
+    cards: [
+      { en: 'Opening with "sorry to bother you" makes the request sound like an imposition. Just ask.', pt: 'Abrir com "sorry to bother you" faz o pedido soar como imposição. Simplesmente peça.' },
+      { en: '"I will try my best" is heard as a soft no in English — and it arrives too late to be useful.', pt: '"I will try my best" é ouvido como um não suave em inglês — e chega tarde demais para ser útil.' },
+      { en: '"What I can do is…" turns a refusal into an offer. It is the single most useful phrase in this lesson.', pt: '"What I can do is…" transforma uma recusa numa oferta. É a frase mais útil desta lição.' },
+      { en: 'Never say "my English is not very good" before speaking. It lowers how everything you then say is heard.', pt: 'Nunca diga "my English is not very good" antes de falar. Isso rebaixa como tudo o que você disser depois será ouvido.' },
+    ],
+  },
+};

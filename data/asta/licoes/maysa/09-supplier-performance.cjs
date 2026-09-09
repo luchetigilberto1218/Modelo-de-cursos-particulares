@@ -1,0 +1,148 @@
+module.exports = {
+  character: 'us-female',
+  topic: 'Purchase · desempenho',
+  title: 'Supplier Performance and the Annual Review',
+  focus: 'Medir o fornecedor e conduzir a reunião anual',
+  objective: 'Apresentar em inglês a avaliação de desempenho de um fornecedor e conduzir a reunião anual — com dados, não com impressões.',
+  intro: [
+    'Once a year you sit across the table and tell a supplier how they did. If that conversation runs on impressions, it becomes an argument. If it runs on numbers, it becomes a plan.',
+    'Three measures carry almost everything: <strong>OTIF</strong> (on time in full), <strong>quality</strong> (rejection rate) and <strong>responsiveness</strong> (how fast they answer and solve).',
+  ],
+  introPt: [
+    'Uma vez por ano você senta do outro lado da mesa e diz a um fornecedor como ele foi. Se essa conversa roda em impressões, vira discussão. Se roda em números, vira plano.',
+    'Três medidas carregam quase tudo: <strong>OTIF</strong> (no prazo e completo), <strong>qualidade</strong> (índice de rejeição) e <strong>responsividade</strong> (rapidez para responder e resolver).',
+  ],
+  vocab: [
+    { en: 'OTIF (on time in full)', pt: 'no prazo e na quantidade completa', example: 'OTIF was 82% last year.' },
+    { en: 'rejection rate', pt: 'índice de rejeição', example: 'The rejection rate is 1.4%.' },
+    { en: 'responsiveness', pt: 'agilidade de resposta', example: 'Their responsiveness improved after March.' },
+    { en: 'scorecard', pt: 'painel de avaliação', example: 'This is your scorecard for 2026.' },
+    { en: 'benchmark', pt: 'referência de comparação', example: 'The benchmark for this category is 95%.' },
+    { en: 'improvement plan', pt: 'plano de melhoria', example: 'We need an improvement plan for OTIF.' },
+    { en: 'to underperform', pt: 'ficar abaixo do esperado', example: 'They underperformed on delivery.' },
+    { en: 'trend', pt: 'tendência', example: 'The trend is improving.' },
+    { en: 'root cause', pt: 'causa raiz', example: 'The root cause was their own supplier.' },
+  ],
+  exercises: [
+    {
+      type: 'readingTask',
+      title: 'O scorecard do ano',
+      badge: 'Leia e responda',
+      heading: 'Supplier scorecard 2026 · Insulating paper supplier',
+      instruction: 'Leia o painel e responda.',
+      passage: [
+        'Delivery: OTIF for the year was 82%, against a category benchmark of 95%. Eight of the twelve deliveries were on time and in full; three were late by more than a week, and one was short by 40 kg. All four failures occurred in the first half of the year.',
+        'Quality: the rejection rate was 1.4%, against a benchmark of 2%. One batch was quarantined for adhesion, and the root cause analysis was delivered within the agreed five working days.',
+        'Responsiveness: average reply time to a technical question was 1.8 working days, well inside the two-day commitment. Escalations were answered the same day.',
+        'Overall: quality and responsiveness are above benchmark; delivery is significantly below it. However, the trend matters more than the average — the last six deliveries were all on time and in full, following a change in their own upstream supplier.',
+        'Recommendation: keep the supplier, set a formal OTIF improvement target of 95% for next year, and review at the half-year point rather than waiting twelve months.',
+      ],
+      questions: [
+        { prompt: 'Which measure is below benchmark?', options: [{ text: 'Delivery — OTIF at 82% against 95%.', correct: true }, { text: 'Quality.', correct: false }, { text: 'Responsiveness.', correct: false }], why: 'Qualidade e responsividade estão acima; só entrega está abaixo.' },
+        { prompt: 'Why does the note say the trend matters more than the average?', options: [{ text: 'Because all four failures were in the first half, and the last six deliveries were perfect.', correct: true }, { text: 'Because averages are never reliable.', correct: false }, { text: 'Because the benchmark is too high.', correct: false }], why: 'A média de 82% esconde uma recuperação real. Julgar pela média puniria uma melhoria.' },
+        { prompt: 'What is the recommendation?', options: [{ text: 'Keep the supplier, set a 95% OTIF target and review at six months.', correct: true }, { text: 'Replace the supplier.', correct: false }, { text: 'Take no action.', correct: false }], why: 'Manter, com meta e revisão antecipada. É a resposta proporcional ao dado.' },
+        { prompt: 'What does "short by 40 kg" mean?', options: [{ text: 'The delivery was 40 kg less than ordered.', correct: true }, { text: 'It arrived 40 minutes late.', correct: false }, { text: 'It was 40 kg over.', correct: false }], why: '<strong>Short</strong> = a menos. É o "in full" do OTIF que falhou, não o "on time".' },
+      ],
+    },
+    {
+      type: 'flowChoice',
+      title: 'A reunião anual com o fornecedor',
+      badge: 'Conversa',
+      situation: 'Reunião anual. O fornecedor sabe que a entrega foi ruim no primeiro semestre e chega defensivo.',
+      turns: [
+        {
+          who: 'Supplier',
+          them: 'Before we start — I know delivery was difficult, but that was entirely our upstream supplier, not us.',
+          options: [
+            { text: 'Understood, and the data shows exactly that: all four failures were in the first half, and the last six deliveries were perfect.', correct: true, why: 'Reconhecer o dado que favorece o outro lado no início compra a conversa inteira.' },
+            { text: 'Whatever the reason, eighty-two per cent is unacceptable.', why: 'Verdadeiro, mas fecha a conversa na primeira frase — e ignora a recuperação real.' },
+            { text: 'Let us not discuss the past, let us look forward.', why: 'Pular a análise faz a meta do ano que vem parecer arbitrária.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'So can we agree that delivery is now resolved?',
+          options: [
+            { text: 'The trend says yes. What I need is a formal target — ninety-five per cent OTIF — and a review at six months rather than twelve.', correct: true, why: 'Aceita a tendência e ancora numa meta com prazo de verificação. Isso é gestão, não desconfiança.' },
+            { text: 'Yes, I think we can consider it resolved.', why: 'Seis entregas boas são um sinal, não uma garantia. Sem meta, o assunto volta em dezembro.' },
+            { text: 'No, I want to see two more years first.', why: 'Desproporcional ao dado, e desmotiva justamente a melhoria que você quer.' },
+          ],
+        },
+        {
+          who: 'Supplier',
+          them: 'And on quality? We had one batch quarantined.',
+          options: [
+            { text: 'Quality is above benchmark at one point four per cent, and your root cause analysis arrived inside the agreed five days. That part worked well.', correct: true, why: 'Elogio específico e com dado vale mais que dez elogios genéricos — e ensina o que você valoriza.' },
+            { text: 'One quarantined batch is one too many.', why: 'Índice de rejeição abaixo do benchmark é bom desempenho. Punir isso ensina o fornecedor a esconder.' },
+            { text: 'We can talk about quality another time.', why: 'A parte boa do desempenho também merece a reunião. Só falar do ruim distorce o incentivo.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'serialChoice',
+      title: 'O termo certo da avaliação',
+      badge: 'Escolha certa',
+      instruction: 'Escolha a forma usada num scorecard.',
+      items: [
+        { prompt: 'Delivery performance is measured by ___ .', options: [{ text: 'OTIF', correct: true }, { text: 'punctuality' }, { text: 'delivery index' }], why: '<strong>OTIF</strong> — on time in full. É o padrão internacional.' },
+        { prompt: 'They ___ on delivery but performed well on quality.', options: [{ text: 'underperformed', correct: true }, { text: 'underperform' }, { text: 'performed under' }], why: '<strong>to underperform</strong> — uma palavra só, no passado.' },
+        { prompt: 'The category ___ is ninety-five per cent.', options: [{ text: 'benchmark', correct: true }, { text: 'reference' }, { text: 'standard of comparison' }], why: '<strong>benchmark</strong> é a palavra exata para a referência de comparação.' },
+        { prompt: 'The ___ is improving, even if the average is low.', options: [{ text: 'trend', correct: true }, { text: 'tendency' }, { text: 'evolution' }], why: '<strong>Trend</strong> é o termo de dados. <em>Tendency</em> é uma inclinação pessoal.' },
+        { prompt: 'One delivery was ___ by forty kilos.', options: [{ text: 'short', correct: true }, { text: 'missing' }, { text: 'less' }], why: '<strong>short by</strong> = a menos. Colocação fixa em logística.' },
+      ],
+      explanation: 'OTIF · underperform · benchmark · trend · short by.',
+    },
+    {
+      type: 'sentenceBuild',
+      title: 'Monte a apresentação do scorecard',
+      instruction: 'Clique nos blocos na ordem certa. Alguns sobram de propósito.',
+      items: [
+        { hint: 'Abrir com o resultado de entrega.', answer: 'Delivery was eighty-two per cent OTIF against a benchmark of ninety-five', extra: ['were', 'from'] },
+        { hint: 'Reconhecer o que foi bem.', answer: 'Quality and responsiveness were both above benchmark this year', extra: ['was', 'on'] },
+        { hint: 'Apontar a tendência.', answer: 'The last six deliveries were all on time and in full', extra: ['was', 'at'] },
+        { hint: 'Fechar com a meta.', answer: 'We would like a formal target of ninety-five per cent for next year', extra: ['like to', 'in'] },
+      ],
+      explanation: 'Resultado → o que foi bem → tendência → meta. Quatro frases e a reunião está estruturada.',
+    },
+    {
+      type: 'readAloud',
+      title: 'Apresentando o scorecard em voz alta',
+      instruction: 'Ouça, repita e grave. Depois grave sem olhar — esta é a apresentação da reunião anual.',
+      sentences: [
+        'Delivery was eighty-two per cent OTIF, against a benchmark of ninety-five.',
+        'All four failures occurred in the first half of the year.',
+        'Quality and responsiveness were both above benchmark.',
+        'The last six deliveries were all on time and in full.',
+        'We would like a formal target of ninety-five per cent, with a review at six months.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I know what OTIF, rejection rate and responsiveness measure.', pt: 'Sei o que OTIF, índice de rejeição e responsividade medem.' },
+        { en: 'I present performance with numbers, not impressions.', pt: 'Apresento desempenho com números, não com impressões.' },
+        { en: 'I acknowledge what went well as specifically as what went badly.', pt: 'Reconheço o que foi bem com a mesma precisão do que foi mal.' },
+        { en: 'I close a review with a target and a review date.', pt: 'Encerro uma avaliação com uma meta e uma data de revisão.' },
+      ],
+      doneMessage: 'avaliação feita. As próximas lições são os temas que você trouxe: cobre, esmaltagem, máquinas e estoque.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'A performance review that produces a plan instead of an argument.',
+    pt: 'Uma avaliação de desempenho que produz um plano em vez de uma discussão.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Medir um fornecedor',
+    intro: 'Quatro princípios de avaliação.',
+    cards: [
+      { en: 'OTIF means both: on time AND in full. A delivery that arrives on the right day but 40 kg short still fails.', pt: 'OTIF quer dizer as duas coisas: no prazo E completo. Uma entrega que chega no dia certo com 40 kg a menos ainda falha.' },
+      { en: 'The trend often matters more than the average — an average punishes a supplier who has already fixed the problem.', pt: 'A tendência muitas vezes importa mais que a média — a média pune um fornecedor que já corrigiu o problema.' },
+      { en: 'Praising specifically what went well teaches the supplier what you actually value. Only criticising teaches them to hide.', pt: 'Elogiar especificamente o que foi bem ensina ao fornecedor o que você valoriza. Só criticar ensina a esconder.' },
+      { en: 'A review with no target and no next date is a conversation, not management.', pt: 'Uma avaliação sem meta e sem próxima data é uma conversa, não gestão.' },
+    ],
+  },
+};

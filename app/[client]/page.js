@@ -7,12 +7,14 @@ import CourseDashboard from '../../components/CourseDashboard';
 import LevelHub from '../../components/LevelHub';
 import BakerHughesHome from '../../components/BakerHughesHome';
 import FaapHome from '../../components/faap/FaapHome';
+import AstaHome from '../../components/AstaHome';
 
 // Clients with a fully bespoke home layout (own hero, business-line buttons,
 // track grid). Additive: everything else keeps the shared LevelHub/CourseDashboard.
 const CUSTOM_HOME = {
   bakerhughes: BakerHughesHome,
   faapatendimento: FaapHome,
+  asta: AstaHome,
 };
 
 export default async function ClientPage({ params }) {

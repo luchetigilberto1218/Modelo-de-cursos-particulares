@@ -1,0 +1,142 @@
+module.exports = {
+  character: 'gb-male',
+  topic: 'Call',
+  title: 'Joining a Call',
+  focus: 'Entrar, se apresentar, ouvir mal e pedir de novo',
+  objective: 'Participar de uma call em inglês — entrar, se apresentar, lidar com áudio ruim e sair sem constrangimento.',
+  intro: [
+    'The hardest part of a call in a second language is not the content. It is the first thirty seconds and the moment the audio breaks.',
+    'Both have fixed phrases. Learn eight of them and the call stops being an ordeal: <em>can you hear me, sorry you cut out, could you repeat that, let me come back to you on that</em>.',
+  ],
+  introPt: [
+    'A parte mais difícil de uma call numa segunda língua não é o conteúdo. São os primeiros trinta segundos e o momento em que o áudio falha.',
+    'Os dois têm frases fixas. Aprenda oito delas e a call deixa de ser um martírio: <em>can you hear me, sorry you cut out, could you repeat that, let me come back to you on that</em>.',
+  ],
+  vocab: [
+    { en: 'Can you hear me?', pt: 'Vocês me ouvem?', example: 'Can you hear me all right?' },
+    { en: 'You cut out.', pt: 'Você cortou / falhou.', example: 'Sorry, you cut out for a moment.' },
+    { en: 'to be on mute', pt: 'estar no mudo', example: 'I think you are on mute.' },
+    { en: 'to jump in', pt: 'entrar na conversa', example: 'Can I jump in here?' },
+    { en: 'to go over', pt: 'revisar / passar por', example: 'Let me go over the numbers again.' },
+    { en: 'to come back to you on that', pt: 'voltar depois com a resposta', example: 'Let me come back to you on that tomorrow.' },
+    { en: 'action point', pt: 'ponto de ação', example: 'Two action points from this call.' },
+    { en: 'to wrap up', pt: 'encerrar', example: 'Let us wrap up — we are at time.' },
+  ],
+  exercises: [
+    {
+      type: 'matching',
+      title: 'Associe a situação à frase',
+      instruction: 'Clique na caixa à direita e escolha a frase certa para cada momento.',
+      pairs: [
+        { left: 'Você acabou de entrar na call', right: 'Hi everyone, it is Ana from Cerquilho — can you hear me all right?' },
+        { left: 'A voz do outro falhou', right: 'Sorry, you cut out for a moment — could you say that again?' },
+        { left: 'Alguém fala mas ninguém ouve', right: 'I think you are on mute.' },
+        { left: 'Você quer entrar no assunto', right: 'Can I jump in here?' },
+        { left: 'Você não sabe a resposta agora', right: 'Let me come back to you on that by tomorrow.' },
+        { left: 'A call está no fim', right: 'Let us wrap up — two action points from my side.' },
+      ],
+      explanation: 'Seis momentos, seis frases. Elas cobrem quase toda call de trabalho.',
+    },
+    {
+      type: 'flowChoice',
+      title: 'Uma call com a matriz',
+      badge: 'Conversa',
+      situation: 'Call semanal com a Áustria. O áudio está instável e você precisa reportar o status da linha 2.',
+      turns: [
+        {
+          who: 'Host',
+          them: 'Right, let us start. Cerquilho, are you on the line?',
+          options: [
+            { text: 'Yes — hi everyone, it is Ana from Cerquilho. Can you hear me all right?', correct: true, why: 'Nome, unidade e checagem de áudio numa frase. É exatamente o que se espera.' },
+            { text: 'Yes.', why: 'Ninguém sabe quem é você nem se o seu áudio funciona.' },
+            { text: 'Hello? Hello? I think I am here.', why: 'Inseguro e confuso. Anuncie-se com clareza e siga.' },
+          ],
+        },
+        {
+          who: 'Host',
+          them: 'Loud and clear. Could you give us the status on line two? …and the… …last week…',
+          options: [
+            { text: 'Sorry, you cut out — could you repeat the second part of the question?', correct: true, why: 'Diz exatamente o que se perdeu. Assim ele repete só isso.' },
+            { text: 'Sorry, I did not understand anything.', why: 'Ele vai repetir tudo, inclusive o que você entendeu — e você perde credibilidade à toa.' },
+            { text: 'Yes, line two is fine.', why: 'Você respondeu a uma pergunta que não ouviu inteira. É assim que se combina a coisa errada.' },
+          ],
+        },
+        {
+          who: 'Host',
+          them: 'Of course — I asked for the status on line two and the scrap figure for last week.',
+          options: [
+            { text: 'Line two ran normally, output at ninety-eight per cent of plan. Scrap was one point six per cent, below target.', correct: true, why: 'Duas perguntas, duas respostas, com números. Perfeito para uma call.' },
+            { text: 'Line two was OK and the scrap was good.', why: '"OK" e "good" não são dados. Numa call de status, número.' },
+            { text: 'I have the numbers here somewhere, one moment…', why: 'Numa call semanal, os seus números têm de estar na frente antes de ela começar.' },
+          ],
+        },
+        {
+          who: 'Host',
+          them: 'And the filter interval change — is it implemented on line three as well?',
+          options: [
+            { text: 'Not yet. Let me come back to you on that by tomorrow with a date.', correct: true, why: 'Não sabe, não inventa, e dá um prazo. É a resposta profissional.' },
+            { text: 'I think so, yes.', why: 'Numa call gravada, um "acho que sim" vira um compromisso que você não controla.' },
+            { text: 'That is with maintenance, not with me.', why: 'Pode ser verdade, mas transferir sem se comprometer com nada deixa o assunto solto.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'multiSelect',
+      title: 'Antes de entrar na call',
+      instruction: 'Marque tudo o que ajuda numa call em inglês. Há mais de uma.',
+      prompt: 'What makes a call in English easier?',
+      options: [
+        { text: 'Having your numbers written down in front of you.', correct: true },
+        { text: 'Joining two minutes early to test the audio.', correct: true },
+        { text: 'Having four or five rescue phrases ready.', correct: true },
+        { text: 'Writing out every sentence you plan to say.', correct: false },
+        { text: 'Asking for the agenda beforehand.', correct: true },
+        { text: 'Staying silent to avoid making mistakes.', correct: false },
+      ],
+      explanation: 'Números na frente, áudio testado, frases de socorro, pauta antes. Script completo, não — engessa.',
+    },
+    {
+      type: 'readAloud',
+      title: 'As frases da call em voz alta',
+      instruction: 'Ouça, repita e grave. Estas oito precisam sair sem pensar.',
+      sentences: [
+        'Hi everyone, it is Ana from Cerquilho. Can you hear me all right?',
+        'Sorry, you cut out — could you repeat the second part?',
+        'I think you are on mute.',
+        'Can I jump in here?',
+        'Let me go over the numbers again.',
+        'Let me come back to you on that by tomorrow.',
+        'Two action points from my side.',
+        'Let us wrap up — we are at time.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can announce myself clearly when I join a call.', pt: 'Sei me anunciar com clareza ao entrar numa call.' },
+        { en: 'I say exactly what I missed instead of "I did not understand".', pt: 'Digo exatamente o que perdi em vez de "I did not understand".' },
+        { en: 'I give numbers, not "OK" and "good", in a status call.', pt: 'Dou números, não "OK" e "good", numa call de status.' },
+        { en: 'When I do not know, I give a deadline instead of a guess.', pt: 'Quando não sei, dou um prazo em vez de um chute.' },
+      ],
+      doneMessage: 'call resolvida. Agora, a reunião de verdade.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'Eight phrases, and a call in English stops being an ordeal.',
+    pt: 'Oito frases, e uma call em inglês deixa de ser um martírio.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'Sobrevivendo à call',
+    intro: 'Quatro hábitos de quem já participou de muitas.',
+    cards: [
+      { en: 'Saying exactly what you missed — "the second part" — means the other person repeats ten words, not two minutes.', pt: 'Dizer exatamente o que você perdeu — "a segunda parte" — faz a pessoa repetir dez palavras, não dois minutos.' },
+      { en: '"You cut out" blames the connection, not your English. It is the most useful phrase on any call.', pt: '"You cut out" culpa a conexão, não o seu inglês. É a frase mais útil de qualquer call.' },
+      { en: 'Native speakers on a bad line miss things too. You are not the only one asking for a repeat.', pt: 'Nativos numa linha ruim também perdem coisas. Você não é o único pedindo para repetir.' },
+      { en: 'Ending with "two action points from my side" makes you the person others remember as organised.', pt: 'Terminar com "two action points from my side" faz de você a pessoa de quem os outros lembram como organizada.' },
+    ],
+  },
+};

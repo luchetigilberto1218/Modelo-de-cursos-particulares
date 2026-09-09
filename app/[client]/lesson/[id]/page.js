@@ -8,7 +8,7 @@ import BakerHughesLesson from '../../../../components/bakerhughes/BakerHughesLes
 
 // Clientes de auto-estudo que usam o renderizador self-study (hero, tradução,
 // exercícios auto-corrigíveis). Aditivo: quem não está aqui segue no LessonView.
-const SELF_STUDY = ['bakerhughes', 'faapatendimento'];
+const SELF_STUDY = ['bakerhughes', 'faapatendimento', 'asta'];
 
 // Cores da trilha por cima das do cliente. Trilha sem `palette` devolve o tema
 // intacto, então todo curso que não usa o campo continua igual.

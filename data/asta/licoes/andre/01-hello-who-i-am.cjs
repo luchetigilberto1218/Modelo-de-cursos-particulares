@@ -1,0 +1,130 @@
+module.exports = {
+  character: 'us-male',
+  topic: 'Me apresentar',
+  title: 'Hello — This Is Me',
+  focus: 'Nome, área e o que eu faço',
+  objective: 'Dizer em inglês o seu nome, a sua área e o que você faz — em três frases curtas. (Objetivo: falar quem você é.)',
+  intro: [
+    'Three short sentences. That is all you need to start.',
+    '<strong>My name is André.</strong> <strong>I work in maintenance.</strong> <strong>I repair machines.</strong>',
+  ],
+  introPt: [
+    'Três frases curtas. É só isso que você precisa para começar.',
+    '<strong>My name is André</strong> (Meu nome é André). <strong>I work in maintenance</strong> (Eu trabalho na manutenção). <strong>I repair machines</strong> (Eu conserto máquinas).',
+  ],
+  vocab: [
+    { en: 'my name is…', pt: 'meu nome é…', example: 'My name is André.' },
+    { en: 'I work in…', pt: 'eu trabalho em / na…', example: 'I work in maintenance.' },
+    { en: 'maintenance', pt: 'manutenção', example: 'I work in maintenance.' },
+    { en: 'machine', pt: 'máquina', example: 'This is a big machine.' },
+    { en: 'to repair / to fix', pt: 'consertar', example: 'I repair machines.' },
+    { en: 'here', pt: 'aqui', example: 'I work here.' },
+    { en: 'every day', pt: 'todo dia', example: 'I work here every day.' },
+    { en: 'nice to meet you', pt: 'prazer em conhecer você', example: 'Nice to meet you.' },
+  ],
+  exercises: [
+    {
+      type: 'matching',
+      title: 'Associe o inglês ao português',
+      instruction: 'Clique na caixa da direita e escolha a tradução certa. Leia devagar.',
+      pairs: [
+        { left: 'My name is André.', right: 'Meu nome é André.' },
+        { left: 'I work in maintenance.', right: 'Eu trabalho na manutenção.' },
+        { left: 'I repair machines.', right: 'Eu conserto máquinas.' },
+        { left: 'I work here every day.', right: 'Eu trabalho aqui todo dia.' },
+        { left: 'Nice to meet you.', right: 'Prazer em conhecer você.' },
+      ],
+      explanation: 'Cinco frases. Com elas você já se apresenta em inglês.',
+    },
+    {
+      type: 'wordBank',
+      title: 'Complete as frases',
+      instruction: 'Escolha a palavra certa do banco. Cada palavra é usada uma vez.',
+      bank: ['name', 'work', 'maintenance', 'repair', 'here'],
+      items: [
+        { text: 'My ___ is André.', answer: 'name' },
+        { text: 'I ___ in maintenance.', answer: 'work' },
+        { text: 'I work in ___ .', answer: 'maintenance' },
+        { text: 'I ___ machines.', answer: 'repair' },
+        { text: 'I work ___ every day.', answer: 'here' },
+      ],
+      explanation: 'name = nome · work = trabalhar · maintenance = manutenção · repair = consertar · here = aqui.',
+    },
+    {
+      type: 'multipleChoice',
+      title: 'Como você responde?',
+      prompt: 'Alguém pergunta: "What do you do?" (O que você faz?) Qual é a resposta certa?',
+      options: [
+        { id: 'a', text: 'I work in maintenance. I repair machines.', correct: true },
+        { id: 'b', text: 'I am maintenance.', correct: false, whyWrong: '"I am maintenance" quer dizer "eu sou a manutenção". Diga <em>I work in maintenance</em>.' },
+        { id: 'c', text: 'I make repair in machines.', correct: false, whyWrong: 'Não se diz "make repair". O verbo já é <em>repair</em>: <em>I repair machines</em>.' },
+      ],
+      explanation: 'Padrão: I work in + área. I + verbo + o que você faz.',
+    },
+    {
+      type: 'listenChoose',
+      title: 'Ouça e escolha',
+      badge: 'Ouça e escolha',
+      instruction: 'Toque no áudio quantas vezes quiser. Depois escolha o que a pessoa disse. Você pode ver o texto no botão de transcript.',
+      items: [
+        {
+          audio: 'Hello. My name is Mike. I work in maintenance.',
+          options: [
+            { text: 'O nome dele é Mike e ele trabalha na manutenção.', correct: true },
+            { text: 'O nome dele é Mike e ele trabalha na produção.' },
+            { text: 'O nome dele é Mark e ele trabalha na manutenção.' },
+          ],
+          why: '<strong>maintenance</strong> = manutenção. <strong>production</strong> seria produção.',
+        },
+        {
+          audio: 'I repair machines. I work here every day.',
+          options: [
+            { text: 'Ele conserta máquinas e trabalha ali todo dia.', correct: true },
+            { text: 'Ele opera máquinas e trabalha ali às vezes.' },
+            { text: 'Ele limpa máquinas todo dia.' },
+          ],
+          why: '<strong>repair</strong> = consertar. <strong>every day</strong> = todo dia.',
+        },
+      ],
+    },
+    {
+      type: 'readAloud',
+      title: 'Agora fale em voz alta',
+      instruction: 'Ouça, repita e grave. Repita cada frase três vezes. Não tem pressa.',
+      sentences: [
+        'Hello. My name is André.',
+        'I work in maintenance.',
+        'I repair machines.',
+        'I work here every day.',
+        'Nice to meet you.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can say my name in English.', pt: 'Sei dizer o meu nome em inglês.' },
+        { en: 'I can say I work in maintenance.', pt: 'Sei dizer que trabalho na manutenção.' },
+        { en: 'I can say I repair machines.', pt: 'Sei dizer que conserto máquinas.' },
+        { en: 'I can say "nice to meet you".', pt: 'Sei dizer "nice to meet you".' },
+      ],
+      doneMessage: 'primeira lição feita. A próxima é o nome das ferramentas.',
+      openMessage: 'sem problema — repita esta lição amanhã. Repetir é o método.',
+    },
+  ],
+  celebrate: {
+    en: 'You can introduce yourself in English. That is the first step.',
+    pt: 'Você já se apresenta em inglês. Esse é o primeiro passo.',
+  },
+  insights: {
+    kicker: 'Sacadas · você sabia?',
+    title: 'As primeiras palavras',
+    intro: 'Quatro coisas simples que ajudam desde o começo.',
+    cards: [
+      { en: 'In English you always say "I". You cannot leave it out, like in Portuguese.', pt: 'Em inglês você sempre diz "I" (eu). Não dá para omitir, como em português.' },
+      { en: '"Work in" is for the area: I work in maintenance. "Work at" is for the place: I work at Cerquilho.', pt: '"Work in" é para a área: I work in maintenance. "Work at" é para o lugar: I work at Cerquilho.' },
+      { en: '"Repair" and "fix" mean the same thing. "Fix" is shorter and very common.', pt: '"Repair" e "fix" querem dizer a mesma coisa. "Fix" é mais curto e bem comum.' },
+      { en: 'Say "nice to meet you" only the first time you meet someone. After that, just "hello".', pt: 'Diga "nice to meet you" só na primeira vez que encontrar alguém. Depois, só "hello".' },
+    ],
+  },
+};

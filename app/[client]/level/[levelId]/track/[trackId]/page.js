@@ -7,7 +7,7 @@ import TrackPage from '../../../../../../components/TrackPage';
 import BakerHughesTrack from '../../../../../../components/bakerhughes/BakerHughesTrack';
 
 const VALID_LEVELS = ['confidence', 'essentials', 'rise', 'apex'];
-const SELF_STUDY = ['bakerhughes', 'faapatendimento'];
+const SELF_STUDY = ['bakerhughes', 'faapatendimento', 'asta'];
 
 // Cores da trilha por cima das do cliente. Trilha sem `palette` devolve o tema
 // intacto, então todo curso que não usa o campo continua igual.

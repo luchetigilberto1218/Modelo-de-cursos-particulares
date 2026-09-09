@@ -1,0 +1,143 @@
+module.exports = {
+  character: 'us-male',
+  topic: 'O chão de fábrica',
+  title: 'On the Shop Floor',
+  focus: 'Máquinas, linhas e o vocabulário da trefilação',
+  objective: 'Nomear em inglês o que existe no chão de fábrica e descrever a trefilação, do vergalhão ao fio no diâmetro certo.',
+  intro: [
+    'Everything starts with <strong>copper rod</strong> — thick, soft and about eight millimetres across. It has to become wire thinner than a hair on a machine called a <strong>drawing machine</strong>.',
+    'The rod is pulled through a series of <em>dies</em>, each one slightly smaller than the last. Nothing is cut away: the metal is stretched. That is why the verb is <strong>to draw</strong>, and the past is <em>drew / drawn</em>.',
+  ],
+  introPt: [
+    'Tudo começa com o <strong>vergalhão de cobre</strong> — grosso, macio, com uns oito milímetros. Ele precisa virar fio mais fino que um fio de cabelo numa máquina chamada <strong>trefila</strong> (drawing machine).',
+    'O vergalhão é puxado por uma sequência de <em>fieiras</em> (dies), cada uma um pouco menor que a anterior. Nada é cortado: o metal é esticado. Por isso o verbo é <strong>to draw</strong>, e o passado é <em>drew / drawn</em>.',
+  ],
+  vocab: [
+    { en: 'copper rod', pt: 'vergalhão de cobre', example: 'The copper rod arrives in coils.' },
+    { en: 'drawing machine', pt: 'trefila', example: 'The drawing machine runs at high speed.' },
+    { en: 'die (plural: dies)', pt: 'fieira', example: 'Each die reduces the diameter a little more.' },
+    { en: 'annealing', pt: 'recozimento', example: 'Annealing makes the copper soft again after drawing.' },
+    { en: 'spool / reel', pt: 'carretel / bobina', example: 'The finished wire is wound onto a spool.' },
+    { en: 'to run (a machine)', pt: 'operar / rodar', example: 'We run three drawing lines on this shift.' },
+    { en: 'output', pt: 'produção (volume)', example: 'Output was above target last week.' },
+    { en: 'scrap', pt: 'refugo / sucata', example: 'Scrap was under two per cent this month.' },
+  ],
+  exercises: [
+    {
+      type: 'matching',
+      title: 'Associe a peça à função',
+      instruction: 'Clique na caixa à direita e escolha o que cada coisa faz.',
+      pairs: [
+        { left: 'copper rod', right: 'a matéria-prima que chega à planta, grossa e macia' },
+        { left: 'die', right: 'a fieira por onde o fio passa e perde diâmetro' },
+        { left: 'annealing', right: 'o recozimento que devolve maciez ao cobre depois de trefilado' },
+        { left: 'spool', right: 'o carretel em que o fio pronto é enrolado' },
+        { left: 'scrap', right: 'o material que não passou e vira refugo' },
+      ],
+      explanation: 'Cinco palavras e você já descreve uma trefila inteira.',
+    },
+    {
+      type: 'orderList',
+      title: 'A trefilação, passo a passo',
+      badge: 'Coloque em ordem',
+      instruction: 'Clique nas etapas na ordem em que acontecem.',
+      items: [
+        'The copper rod is loaded onto the machine.',
+        'It is pulled through the first die and loses diameter.',
+        'It passes through the remaining dies until it reaches the target diameter.',
+        'The wire is annealed so that it becomes soft again.',
+        'The finished wire is wound onto a spool.',
+        'The spool is weighed, labelled and moved to the next line.',
+      ],
+      explanation: 'Load → draw → anneal → wind → weigh and label. É a mesma sequência em qualquer planta do grupo.',
+    },
+    {
+      type: 'serialChoice',
+      title: 'O verbo certo na fábrica',
+      badge: 'Escolha certa',
+      instruction: 'Chão de fábrica tem verbo próprio. Escolha o que um técnico usaria.',
+      items: [
+        { prompt: 'We ___ three drawing lines on this shift.', options: [{ text: 'run', correct: true }, { text: 'drive' }, { text: 'work' }], why: 'Máquina se <strong>runs</strong>. "Drive" é para veículo.' },
+        { prompt: 'The wire is ___ onto a spool.', options: [{ text: 'wound', correct: true }, { text: 'winded' }, { text: 'rolled up' }], why: 'O particípio de <em>wind</em> é <strong>wound</strong> (rima com "found").' },
+        { prompt: 'The machine ___ down at four this morning.', options: [{ text: 'broke', correct: true }, { text: 'was broken' }, { text: 'breaked' }], why: '<strong>to break down</strong> = quebrar, parar de funcionar. Passado: <em>broke down</em>.' },
+        { prompt: 'We had to ___ the line for twenty minutes.', options: [{ text: 'stop', correct: true }, { text: 'stop up' }, { text: 'make a stop in' }], why: 'Simples e direto: <em>stop the line</em>.' },
+        { prompt: 'Scrap ___ under two per cent this month.', options: [{ text: 'stayed', correct: true }, { text: 'maintained' }, { text: 'kept' }], why: '<em>stayed under</em> = ficou abaixo. "Maintained" precisa de objeto.' },
+      ],
+      explanation: 'run · wind/wound · break down · stop · stay under. Cinco verbos que resolvem o turno.',
+    },
+    {
+      type: 'listenChoose',
+      title: 'Ouça o colega e escolha',
+      badge: 'Ouça e escolha',
+      instruction: 'Toque em cada áudio quantas vezes quiser e escolha a interpretação correta.',
+      items: [
+        {
+          audio: 'Line two broke down at four this morning. We got it back up after about forty minutes, so output is a little behind.',
+          options: [
+            { text: 'A linha 2 quebrou às 4h, voltou em 40 minutos, e a produção está um pouco atrasada.', correct: true },
+            { text: 'A linha 2 quebrou às 4h e ainda está parada.' },
+            { text: 'A linha 2 está adiantada na produção.' },
+          ],
+          why: '<strong>got it back up</strong> = voltou a funcionar. <strong>behind</strong> = atrasado.',
+        },
+        {
+          audio: 'The last die was worn, so the diameter was drifting. We changed it and the wire is within tolerance again.',
+          options: [
+            { text: 'A última fieira estava gasta, o diâmetro estava saindo da faixa, trocaram e voltou ao normal.', correct: true },
+            { text: 'A última fieira quebrou e a linha continua parada.' },
+            { text: 'O diâmetro está fora de tolerância e ninguém sabe por quê.' },
+          ],
+          why: '<strong>worn</strong> = gasto. <strong>to drift</strong> = ir saindo aos poucos. <strong>within tolerance</strong> = dentro da faixa.',
+        },
+        {
+          audio: 'Scrap is running at one point eight per cent, which is below the two per cent target. Nothing to flag.',
+          options: [
+            { text: 'O refugo está em 1,8%, abaixo da meta de 2% — nada a reportar.', correct: true },
+            { text: 'O refugo está acima da meta e precisa ser reportado.' },
+            { text: 'A meta de refugo é 1,8% e está sendo estourada.' },
+          ],
+          why: '<strong>below target</strong> para refugo é boa notícia. <strong>nothing to flag</strong> = nada a sinalizar.',
+        },
+      ],
+    },
+    {
+      type: 'readAloud',
+      title: 'Passando o turno em voz alta',
+      instruction: 'Ouça, repita e grave. É o relato de passagem de turno em cinco frases.',
+      sentences: [
+        'Good morning. Line two ran normally through the night.',
+        'We had a twenty-minute stop at four to change a worn die.',
+        'Output is slightly behind plan, about three per cent.',
+        'Scrap stayed under two per cent.',
+        'Nothing else to flag — the line is running now.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can name rod, die, spool, annealing and scrap in English.', pt: 'Sei nomear rod, die, spool, annealing e scrap em inglês.' },
+        { en: 'I can describe the drawing process step by step.', pt: 'Sei descrever a trefilação passo a passo.' },
+        { en: 'I use run, wind, break down and stop correctly.', pt: 'Uso run, wind, break down e stop corretamente.' },
+        { en: 'I can hand over a shift in five sentences.', pt: 'Sei passar o turno em cinco frases.' },
+      ],
+      doneMessage: 'trefila resolvida. A próxima lição é a linha de esmaltagem.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'You can now describe the drawing line in English, from rod to spool.',
+    pt: 'Agora você descreve a trefila em inglês, do vergalhão ao carretel.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'O chão de fábrica em inglês',
+    intro: 'Quatro detalhes que separam o inglês de manual do inglês de quem opera.',
+    cards: [
+      { en: 'Copper rod arrives at about 8 mm and can be drawn down below 0.2 mm — thinner than a human hair.', pt: 'O vergalhão de cobre chega com uns 8 mm e pode ser trefilado abaixo de 0,2 mm — mais fino que um fio de cabelo.' },
+      { en: 'Drawing hardens the copper, so it has to be annealed — heated and cooled — to become workable again.', pt: 'A trefilação endurece o cobre, então ele precisa ser recozido — aquecido e resfriado — para voltar a ser trabalhável.' },
+      { en: '"The line is down" means it has stopped. "The line is up" means it is running. Nobody says "the line is off".', pt: '"The line is down" quer dizer que parou. "The line is up" quer dizer que está rodando. Ninguém diz "the line is off".' },
+      { en: '"Scrap" is the material lost; "waste" is broader and includes anything thrown away. On the shop floor, use scrap.', pt: '"Scrap" é o material perdido; "waste" é mais amplo e inclui qualquer descarte. No chão de fábrica, use scrap.' },
+    ],
+  },
+};

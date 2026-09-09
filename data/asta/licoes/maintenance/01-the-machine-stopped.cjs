@@ -1,0 +1,143 @@
+module.exports = {
+  character: 'us-male',
+  topic: 'Falha e parada',
+  title: 'The Machine Stopped',
+  focus: 'Reportar uma quebra: o que, quando, o que você fez',
+  objective: 'Reportar em inglês uma parada de máquina — o sintoma, o horário, o que você já verificou e o que precisa.',
+  intro: [
+    'When a line goes down, nobody wants a poem. They want four things: <strong>which machine</strong>, <strong>when</strong>, <strong>what it is doing</strong> and <strong>what you have already tried</strong>.',
+    'In English there is one verb for this above all others: <strong>to break down</strong>. <em>The machine broke down at four.</em> And the state that follows is <em>the line is down</em>.',
+  ],
+  introPt: [
+    'Quando uma linha para, ninguém quer poesia. Querem quatro coisas: <strong>qual máquina</strong>, <strong>quando</strong>, <strong>o que ela está fazendo</strong> e <strong>o que você já tentou</strong>.',
+    'Em inglês há um verbo para isso acima de todos: <strong>to break down</strong> (quebrar, parar de funcionar). <em>The machine broke down at four.</em> E o estado que segue é <em>the line is down</em>.',
+  ],
+  vocab: [
+    { en: 'to break down', pt: 'quebrar / parar de funcionar', example: 'The drawing machine broke down this morning.' },
+    { en: 'breakdown', pt: 'a quebra / falha', example: 'We had a breakdown on line two.' },
+    { en: 'fault', pt: 'falha / defeito', example: 'The fault is in the drive.' },
+    { en: 'to overheat', pt: 'superaquecer', example: 'The motor is overheating.' },
+    { en: 'leak', pt: 'vazamento', example: 'There is an oil leak under the gearbox.' },
+    { en: 'to trip', pt: 'desarmar (proteção elétrica)', example: 'The breaker tripped twice last night.' },
+    { en: 'noise / vibration', pt: 'ruído / vibração', example: 'There is an unusual noise from the bearing.' },
+    { en: 'to restart', pt: 'religar / reiniciar', example: 'We restarted the line at five.' },
+  ],
+  exercises: [
+    {
+      type: 'orderList',
+      title: 'O relato de uma parada',
+      badge: 'Coloque em ordem',
+      instruction: 'Clique nas frases na ordem em que você as diria ao supervisor.',
+      items: [
+        'Line two is down.',
+        'It stopped at ten past four this morning.',
+        'The main motor is overheating and the breaker tripped twice.',
+        'I have checked the cooling fan and the oil level — both look fine.',
+        'I need an electrician to check the drive before we restart.',
+      ],
+      explanation: 'Estado → horário → sintoma → o que você checou → o que você precisa. Cinco frases e o problema está passado.',
+    },
+    {
+      type: 'matching',
+      title: 'Associe o sintoma ao inglês',
+      instruction: 'Clique na caixa à direita e escolha a tradução certa.',
+      pairs: [
+        { left: 'the breaker tripped', right: 'o disjuntor desarmou' },
+        { left: 'the motor is overheating', right: 'o motor está superaquecendo' },
+        { left: 'there is an oil leak', right: 'há um vazamento de óleo' },
+        { left: 'the bearing is noisy', right: 'o rolamento está fazendo barulho' },
+        { left: 'the belt is slipping', right: 'a correia está patinando' },
+        { left: 'the sensor is faulty', right: 'o sensor está com defeito' },
+      ],
+      explanation: 'Seis sintomas que cobrem a maioria das paradas de uma linha.',
+    },
+    {
+      type: 'serialChoice',
+      title: 'O verbo certo da manutenção',
+      badge: 'Escolha certa',
+      instruction: 'Escolha o que um técnico de manutenção diria.',
+      items: [
+        { prompt: 'The machine ___ at four this morning.', options: [{ text: 'broke down', correct: true }, { text: 'was broken down' }, { text: 'broke' }], why: '<strong>broke down</strong> descreve a máquina parando sozinha. "Broke" sugere que algo se partiu.' },
+        { prompt: 'The breaker ___ twice last night.', options: [{ text: 'tripped', correct: true }, { text: 'jumped' }, { text: 'fell' }], why: '<strong>to trip</strong> é o verbo do disjuntor desarmando.' },
+        { prompt: 'There ___ an oil leak under the gearbox.', options: [{ text: 'is', correct: true }, { text: 'has' }, { text: 'have' }], why: '"Tem" existencial em inglês é <strong>there is / there are</strong>, nunca "has".' },
+        { prompt: 'We ___ the line at five.', options: [{ text: 'restarted', correct: true }, { text: 'reinitiated' }, { text: 'turned back' }], why: '<strong>restart</strong> — simples e padrão.' },
+        { prompt: 'I have ___ the oil level and it is fine.', options: [{ text: 'checked', correct: true }, { text: 'verified out' }, { text: 'looked' }], why: '<strong>check</strong> é o verbo do dia a dia. <em>Verify</em> é mais formal e de laboratório.' },
+      ],
+      explanation: 'break down · trip · there is · restart · check. Cinco verbos e o turno está reportado.',
+    },
+    {
+      type: 'listenChoose',
+      title: 'Ouça o colega e escolha',
+      badge: 'Ouça e escolha',
+      instruction: 'Toque em cada áudio quantas vezes quiser e escolha a interpretação correta.',
+      items: [
+        {
+          audio: 'Line two is down. It stopped at ten past four and the breaker has tripped twice since then.',
+          options: [
+            { text: 'A linha 2 está parada desde 4h10 e o disjuntor desarmou duas vezes desde então.', correct: true },
+            { text: 'A linha 2 parou às 4h10 e já voltou a funcionar.' },
+            { text: 'O disjuntor desarmou às 4h10 e a linha continua rodando.' },
+          ],
+          why: '<strong>is down</strong> = está parada. <strong>since then</strong> = desde então.',
+        },
+        {
+          audio: 'I have checked the cooling fan and the oil level. Both look fine, so I think the problem is in the drive.',
+          options: [
+            { text: 'Já checou ventilador e nível de óleo, ambos ok, e suspeita do inversor.', correct: true },
+            { text: 'Ainda vai checar o ventilador e o nível de óleo.' },
+            { text: 'Encontrou problema no ventilador e no nível de óleo.' },
+          ],
+          why: '<strong>I have checked</strong> = já checou. <strong>look fine</strong> = parecem bem.',
+        },
+        {
+          audio: 'Do not restart it yet. I want an electrician to look at the drive first.',
+          options: [
+            { text: 'Não religue ainda — ele quer que um eletricista veja o inversor antes.', correct: true },
+            { text: 'Pode religar, o eletricista já olhou.' },
+            { text: 'O eletricista vai religar a máquina.' },
+          ],
+          why: '<strong>Do not… yet</strong> = ainda não. <strong>first</strong> = antes disso.',
+        },
+      ],
+    },
+    {
+      type: 'readAloud',
+      title: 'Reporte a parada em voz alta',
+      instruction: 'Ouça, repita e grave. Troque a máquina e o horário pelos seus.',
+      sentences: [
+        'Line two is down.',
+        'It broke down at ten past four this morning.',
+        'The main motor is overheating and the breaker has tripped twice.',
+        'I have checked the cooling fan and the oil level — both look fine.',
+        'I need an electrician to check the drive before we restart.',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can say that a machine has broken down and when.', pt: 'Sei dizer que uma máquina quebrou e quando.' },
+        { en: 'I can describe a symptom: overheating, leak, noise, tripping.', pt: 'Sei descrever um sintoma: superaquecimento, vazamento, ruído, desarme.' },
+        { en: 'I say "there is a leak", not "has a leak".', pt: 'Digo "there is a leak", não "has a leak".' },
+        { en: 'I can say what I have already checked and what I need.', pt: 'Sei dizer o que já verifiquei e o que preciso.' },
+      ],
+      doneMessage: 'a quebra você já reporta. A próxima lição é como evitá-la.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'You can now report a breakdown in English — clearly and in the right order.',
+    pt: 'Agora você reporta uma quebra em inglês — com clareza e na ordem certa.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'O inglês da parada de máquina',
+    intro: 'Quatro detalhes que evitam mal-entendido numa emergência.',
+    cards: [
+      { en: '"The line is down" means stopped. "The line is up" means running. Nobody in industry says "on" or "off" for a line.', pt: '"The line is down" é parada. "The line is up" é rodando. Ninguém na indústria diz "on" ou "off" para uma linha.' },
+      { en: '"There is a leak" — never "has a leak". The Portuguese "tem" becomes "there is" in English.', pt: '"There is a leak" — nunca "has a leak". O "tem" do português vira "there is" em inglês.' },
+      { en: 'A "fault" is the defect itself; a "failure" is the moment it stopped working. Manuals use both, precisely.', pt: '"Fault" é o defeito em si; "failure" é o momento em que parou de funcionar. Manuais usam os dois com precisão.' },
+      { en: 'Saying what you have already checked saves the next person twenty minutes — and shows you did the work.', pt: 'Dizer o que você já checou economiza vinte minutos do próximo — e mostra que você fez o trabalho.' },
+    ],
+  },
+};

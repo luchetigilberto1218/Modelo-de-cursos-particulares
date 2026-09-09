@@ -1,0 +1,145 @@
+module.exports = {
+  character: 'us-female',
+  topic: 'A ASTA no Brasil',
+  title: 'ASTA in Brazil — From PPE to ASTA',
+  focus: 'Cerquilho, Três Corações e a mudança de dono',
+  objective: 'Explicar em inglês a história das duas plantas brasileiras, de 1945 até hoje, e responder à pergunta "so, what changed when ASTA arrived?".',
+  intro: [
+    'Long before the Austrian name appeared on the gate, this was <strong>PPE</strong> — the first company in Brazil to make <em>enamelled wire</em>. It started in 1945, in Santo André, inside the Italian group Pirelli.',
+    'Two plants carry the story today: <strong>Cerquilho</strong>, in the interior of São Paulo, and <strong>Três Corações</strong>, in Minas Gerais. Everyone in the group knows them simply as CQ and TC.',
+  ],
+  introPt: [
+    'Muito antes de o nome austríaco aparecer no portão, isto aqui era a <strong>PPE</strong> — a primeira empresa do Brasil a fabricar <em>fio esmaltado</em>. Começou em 1945, em Santo André, dentro do grupo italiano Pirelli.',
+    'Duas plantas carregam essa história hoje: <strong>Cerquilho</strong>, no interior de São Paulo, e <strong>Três Corações</strong>, em Minas Gerais. Todo mundo no grupo as chama simplesmente de CQ e TC.',
+  ],
+  vocab: [
+    { en: 'enamelled wire', pt: 'fio esmaltado', example: 'Cerquilho has been making enamelled wire since the 1940s.' },
+    { en: 'controlling stake', pt: 'controle acionário', example: 'ASTA acquired the controlling stake in 2015.' },
+    { en: 'shareholder', pt: 'acionista', example: 'The minority shareholders sold their shares in 2021.' },
+    { en: 'built area', pt: 'área construída', example: 'The Cerquilho plant has 35,700 square metres of built area.' },
+    { en: 'to be located', pt: 'ficar / estar localizado', example: 'Três Corações is located in Minas Gerais.' },
+    { en: 'first choice', pt: 'primeira escolha', example: 'ASTA Brazil is the first choice of customers in Latin America.' },
+    { en: 'winding wire', pt: 'fio para enrolamento', example: 'We produce the complete line of winding wires.' },
+  ],
+  exercises: [
+    {
+      type: 'readingTask',
+      title: 'A ficha das duas plantas',
+      badge: 'Leia e responda',
+      heading: 'Internal note · ASTA Brazil sites',
+      instruction: 'Leia a nota e responda. Números e distâncias estão todos no texto.',
+      passage: [
+        'ASTA Brazil has been the first choice of customers in Latin America since 1945. The operation consists of two separate plants: Cerquilho, in São Paulo state, and Três Corações, in Minas Gerais.',
+        'The Cerquilho plant is 139 kilometres from the city of São Paulo. It occupies a plot of 121,300 square metres, with 35,700 square metres of built area. The current factory was inaugurated on this site in 1980, although the business itself dates back to the mid-1940s.',
+        'The Três Corações plant is 306 kilometres from São Paulo and 293 kilometres from Belo Horizonte. It has 34,900 square metres of built area on a plot of 150,000 square metres.',
+        'Together the two plants produce the complete line of copper and aluminium wires and cables for the windings of motors, transformers and generators.',
+      ],
+      questions: [
+        { prompt: 'Which plant is closer to the city of São Paulo?', options: [{ text: 'Cerquilho, at 139 km.', correct: true }, { text: 'Três Corações, at 306 km.', correct: false }, { text: 'They are the same distance.', correct: false }], why: '139 km contra 306 km.' },
+        { prompt: 'When was the current Cerquilho factory inaugurated?', options: [{ text: 'In 1980.', correct: true }, { text: 'In 1945.', correct: false }, { text: 'In 2015.', correct: false }], why: 'O negócio remonta aos anos 1940, mas a fábrica atual é de 1980.' },
+        { prompt: 'What do the two plants produce?', options: [{ text: 'Copper and aluminium wires and cables for windings.', correct: true }, { text: 'Finished transformers and generators.', correct: false }, { text: 'Electric cars.', correct: false }], why: 'A ASTA fornece o fio; quem monta o transformador é o cliente.' },
+      ],
+    },
+    {
+      type: 'matching',
+      title: 'Associe a data ao acontecimento',
+      instruction: 'Clique na caixa à direita e escolha o que aconteceu em cada ano.',
+      pairs: [
+        { left: '1945', right: 'a operação brasileira começa em Santo André, dentro da Pirelli' },
+        { left: '1980', right: 'a fábrica se muda para a planta atual de Cerquilho' },
+        { left: '2004', right: 'a italiana Invex compra a atividade' },
+        { left: '2006', right: 'administradores e investidores nacionais assumem — nasce a PPE Fios Esmaltados S.A.' },
+        { left: '2015', right: 'a austríaca ASTA adquire o controle acionário' },
+        { left: '2021', right: 'a ASTA compra as ações dos minoritários e chega a 100%' },
+      ],
+      explanation: 'Seis donos, oitenta anos, duas plantas — e a mesma linha de produto desde o começo.',
+    },
+    {
+      type: 'trueFalse',
+      title: 'Verdadeiro ou falso?',
+      instruction: 'Com base na história real das plantas brasileiras.',
+      items: [
+        { text: 'ASTA Brazil started as part of an Italian group.', answer: true, why: 'Começou dentro da Pirelli, italiana, em 1945.' },
+        { text: 'The Cerquilho plant has always been at its current address.', answer: false, why: 'A operação nasceu em Santo André e só se mudou para Cerquilho em 1980.' },
+        { text: 'ASTA owned 100% of the Brazilian company from 2015.', answer: false, why: 'Em 2015 comprou o controle; os 100% só vieram em 2021.' },
+        { text: 'Três Corações is in Minas Gerais.', answer: true, why: 'Cerquilho é São Paulo; Três Corações é Minas.' },
+        { text: 'The plants sell wire directly to the general public.', answer: false, why: 'A venda é para fabricantes de motores, transformadores e geradores.' },
+      ],
+      explanation: 'Pirelli → Invex → capital nacional → ASTA. A empresa mudou de dono; o produto, não.',
+    },
+    {
+      type: 'sentenceBuild',
+      title: 'Monte a frase na ordem certa',
+      instruction: 'Clique nos blocos na ordem certa. Alguns blocos sobram de propósito.',
+      items: [
+        { hint: 'Dizer há quanto tempo a operação existe.', answer: 'The Brazilian operation has been running since nineteen forty-five', extra: ['for', 'was'] },
+        { hint: 'Dizer onde fica a sua planta.', answer: 'The Cerquilho plant is located in the interior of Sao Paulo', extra: ['at', 'locates'] },
+        { hint: 'Explicar a mudança de controle.', answer: 'ASTA acquired the controlling stake in two thousand and fifteen', extra: ['has acquired', 'of'] },
+        { hint: 'Dizer o que as duas plantas fabricam.', answer: 'Both plants produce winding wires for transformers and generators', extra: ['produces', 'to'] },
+      ],
+      explanation: 'Quatro frases que respondem 90% do que um estrangeiro pergunta sobre a operação brasileira.',
+    },
+    {
+      type: 'listenChoose',
+      title: 'Ouça e escolha',
+      badge: 'Ouça e escolha',
+      instruction: 'Toque em cada áudio quantas vezes quiser e escolha a interpretação correta.',
+      items: [
+        {
+          audio: 'We have two plants in Brazil: Cerquilho, in São Paulo state, and Três Corações, in Minas Gerais. Together they cover the whole Latin American market.',
+          options: [
+            { text: 'São duas plantas no Brasil, e juntas atendem toda a América Latina.', correct: true },
+            { text: 'São duas plantas, mas só uma atende a América Latina.' },
+            { text: 'São duas plantas na América Latina, fora do Brasil.' },
+          ],
+          why: '<strong>Together they cover</strong> = juntas, as duas atendem.',
+        },
+        {
+          audio: 'The business dates back to the nineteen forties, but the plant you are standing in was inaugurated in nineteen eighty.',
+          options: [
+            { text: 'O negócio é dos anos 1940, mas esta planta é de 1980.', correct: true },
+            { text: 'O negócio e a planta são ambos de 1940.' },
+            { text: 'O negócio é de 1980 e a planta é dos anos 1940.' },
+          ],
+          why: '<strong>dates back to</strong> = remonta a. A frase separa a idade do negócio da idade do prédio.',
+        },
+        {
+          audio: 'ASTA took over in twenty fifteen, and by twenty twenty-one it held one hundred per cent of the shares.',
+          options: [
+            { text: 'Assumiu em 2015 e, até 2021, chegou a 100% das ações.', correct: true },
+            { text: 'Assumiu em 2021 e vendeu as ações em 2015.' },
+            { text: 'Comprou 100% das ações já em 2015.' },
+          ],
+          why: '<strong>took over</strong> = assumiu o controle. <strong>by 2021</strong> = até 2021.',
+        },
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I can name the two Brazilian plants and the state each one is in.', pt: 'Sei nomear as duas plantas brasileiras e o estado de cada uma.' },
+        { en: 'I can explain that the business dates back to 1945 and ASTA took over in 2015.', pt: 'Sei explicar que o negócio remonta a 1945 e a ASTA assumiu em 2015.' },
+        { en: 'I can say what both plants produce.', pt: 'Sei dizer o que as duas plantas fabricam.' },
+        { en: 'I know the words plant, stake, shareholder and built area.', pt: 'Conheço plant, stake, shareholder e built area.' },
+      ],
+      doneMessage: 'a casa você já sabe explicar. Agora, o produto.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'You can now explain eighty years of Brazilian history in English — in under a minute.',
+    pt: 'Agora você explica oitenta anos de história brasileira em inglês — em menos de um minuto.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'De PPE a ASTA',
+    intro: 'Quatro coisas sobre a operação brasileira que ajudam numa conversa com a matriz.',
+    cards: [
+      { en: 'The Brazilian operation was the first in the country to make enamelled wire — it opened that market here.', pt: 'A operação brasileira foi a primeira do país a fabricar fio esmaltado — foi ela que abriu esse mercado aqui.' },
+      { en: 'In English, say "plant" for the whole site and "line" for one production line inside it.', pt: 'Em inglês, use "plant" para a unidade inteira e "line" para uma linha de produção dentro dela.' },
+      { en: 'Colleagues abroad will not know Cerquilho or Três Corações — add the state and the distance from São Paulo.', pt: 'Colegas de fora não conhecem Cerquilho nem Três Corações — acrescente o estado e a distância de São Paulo.' },
+      { en: '"Stake" is the share of a company someone owns. A "controlling stake" is enough to run it.', pt: '"Stake" é a fatia que alguém tem de uma empresa. "Controlling stake" é o suficiente para comandá-la.' },
+    ],
+  },
+};

@@ -1,0 +1,152 @@
+module.exports = {
+  character: 'us-female',
+  topic: 'Auditoria',
+  title: 'The Customer Audit',
+  focus: 'Ser auditado em inglês sem entregar mais do que perguntaram',
+  objective: 'Responder a um auditor em inglês — com fatos, evidência e a disciplina de responder exatamente o que foi perguntado.',
+  intro: [
+    'An audit is not an interrogation, but it works like one in a single respect: <strong>answer the question that was asked</strong>. Nothing more.',
+    'Every answer has the same shape: <em>state the practice, show the evidence, stop talking</em>. The finding an auditor writes is almost never the one they came looking for — it is the one someone volunteered.',
+  ],
+  introPt: [
+    'Uma auditoria não é um interrogatório, mas funciona como um num aspecto: <strong>responda à pergunta que foi feita</strong>. Nada além.',
+    'Toda resposta tem o mesmo formato: <em>diga a prática, mostre a evidência, pare de falar</em>. A não conformidade que um auditor registra quase nunca é a que ele veio procurar — é a que alguém entregou de bandeja.',
+  ],
+  vocab: [
+    { en: 'audit', pt: 'auditoria', example: 'The customer audit is on 15 October.' },
+    { en: 'auditor', pt: 'auditor', example: 'The auditor asked to see the calibration records.' },
+    { en: 'finding', pt: 'constatação / apontamento', example: 'There were two minor findings.' },
+    { en: 'evidence', pt: 'evidência', example: 'The evidence is the signed record.' },
+    { en: 'to demonstrate', pt: 'demonstrar', example: 'Can you demonstrate how you control this?' },
+    { en: 'observation', pt: 'observação (não é apontamento)', example: 'That was an observation, not a finding.' },
+    { en: 'major / minor', pt: 'maior / menor (grau do apontamento)', example: 'One minor and no major findings.' },
+    { en: 'calibration record', pt: 'registro de calibração', example: 'The calibration record is due in March.' },
+    { en: 'to walk the floor', pt: 'percorrer a fábrica', example: 'After the documents, we walk the floor.' },
+  ],
+  exercises: [
+    {
+      type: 'flowChoice',
+      title: 'Na auditoria',
+      badge: 'Conversa',
+      situation: 'Auditora de um cliente europeu, na sala de reunião de Cerquilho. Ela está no bloco de controle de processo.',
+      turns: [
+        {
+          who: 'Auditor',
+          them: 'How do you control the diameter on the drawing line?',
+          options: [
+            { text: 'We measure at set intervals and record it. Here is the control chart for the last month.', correct: true, why: 'Prática + evidência. Curto e verificável.' },
+            { text: 'The operators are very experienced, they know when something is drifting.', why: 'Experiência não é controle. Isso convida a auditora a procurar o que não existe.' },
+            { text: 'We have had some problems with that in the past, but it is much better now.', why: 'Você acabou de abrir um assunto que ela não perguntou.' },
+          ],
+        },
+        {
+          who: 'Auditor',
+          them: 'How often is the measuring instrument calibrated?',
+          options: [
+            { text: 'Every twelve months. This is the calibration certificate — the next one is due in March.', correct: true, why: 'Frequência, documento e a próxima data. A pergunta está fechada.' },
+            { text: 'Regularly, according to the plan.', why: '"Regularly" não é uma frequência. Ela vai pedir o número de qualquer forma.' },
+            { text: 'I believe it is annual, but I would have to check.', why: 'Se você não sabe, chame quem sabe — não chute na frente de um auditor.' },
+          ],
+        },
+        {
+          who: 'Auditor',
+          them: 'And if the operator finds a reading outside the tolerance?',
+          options: [
+            { text: 'The line stops, the material since the last good check is quarantined, and an NCR is raised.', correct: true, why: 'Contenção, rastreabilidade e registro. É a resposta que ela quer ouvir.' },
+            { text: 'They call the supervisor and he decides what to do.', why: 'Decisão sem critério documentado é exatamente o que vira apontamento.' },
+            { text: 'It very rarely happens.', why: 'Não responde. E sugere que não existe um procedimento para quando acontece.' },
+          ],
+        },
+        {
+          who: 'Auditor',
+          them: 'Good. Can you show me that on the shop floor?',
+          options: [
+            { text: 'Of course. Let me give you the safety briefing first, and then we go to line two.', correct: true, why: 'Aceita imediatamente e mantém a segurança em primeiro lugar — o que também é auditado.' },
+            { text: 'The line is quite busy right now, would tomorrow work?', why: 'Adiar o chão de fábrica é o sinal mais claro de que algo lá não está pronto.' },
+            { text: 'Yes, but the records are all here in the office.', why: 'Ela não pediu registros. Pediu para ver a prática acontecendo.' },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'multiSelect',
+      title: 'Como responder a um auditor',
+      instruction: 'Marque tudo o que ajuda numa auditoria. Há mais de uma.',
+      prompt: 'What are good habits when answering an auditor?',
+      options: [
+        { text: 'Answer exactly what was asked and then stop.', correct: true },
+        { text: 'Show the record rather than describe it.', correct: true },
+        { text: 'Say "I do not know, but I will get the person who does".', correct: true },
+        { text: 'Mention other problems to show transparency.', correct: false },
+        { text: 'Give a frequency in numbers, not in words like "regularly".', correct: true },
+        { text: 'Explain the history of every improvement you have made.', correct: false },
+      ],
+      explanation: 'Responda o que foi perguntado, mostre evidência, dê números, e chame quem sabe. Não ofereça material extra.',
+    },
+    {
+      type: 'trueFalse',
+      title: 'Verdadeiro ou falso?',
+      instruction: 'Sobre auditoria.',
+      items: [
+        { text: 'An observation and a finding are the same thing.', answer: false, why: 'Observação é um alerta sem apontamento formal. Finding é apontamento e exige resposta.' },
+        { text: 'Saying "I do not know, let me get the right person" is acceptable in an audit.', answer: true, why: 'É a resposta profissional. Chutar é que gera apontamento.' },
+        { text: 'A major finding usually means the system failed, not just one record.', answer: true, why: 'Major aponta uma falha sistêmica; minor é um desvio isolado.' },
+        { text: 'It is a good idea to volunteer information about other weak points.', answer: false, why: 'Transparência não é entregar assuntos não perguntados. Isso amplia o escopo sem necessidade.' },
+        { text: 'Auditors normally want to see the practice on the floor, not only the documents.', answer: true, why: 'A frase "can you show me?" é o coração de qualquer auditoria séria.' },
+      ],
+      explanation: 'Escopo, evidência e honestidade — nessa ordem.',
+    },
+    {
+      type: 'serialChoice',
+      title: 'A frase certa na auditoria',
+      badge: 'Escolha certa',
+      instruction: 'Escolha a resposta que fecha a pergunta.',
+      items: [
+        { prompt: 'Frequência de calibração:', options: [{ text: 'Every twelve months — here is the certificate.', correct: true }, { text: 'Regularly, according to plan.' }, { text: 'Quite often.' }], why: 'Número + documento. Palavra vaga sempre gera outra pergunta.' },
+        { prompt: 'Quando você não sabe:', options: [{ text: 'I do not have that detail — let me bring the process engineer.', correct: true }, { text: 'I think it is around twelve months.' }, { text: 'That is not my area.' }], why: 'A primeira resolve. A segunda é chute. A terceira soa como recusa.' },
+        { prompt: 'Mostrando evidência:', options: [{ text: 'This is the control chart for the last month.', correct: true }, { text: 'We always record everything.' }, { text: 'You can trust our process.' }], why: 'Auditoria funciona com documento, não com afirmação.' },
+        { prompt: 'Recebendo um apontamento:', options: [{ text: 'Understood. Could you confirm the clause it refers to, so we can respond precisely?', correct: true }, { text: 'I disagree, that is not how it works here.' }, { text: 'That has never been a problem before.' }], why: 'Pedir a cláusula é legítimo e ajuda a responder direito. Discutir na hora não muda o apontamento.' },
+      ],
+      explanation: 'Número, documento, quem sabe, e a cláusula. Quatro reflexos de quem já foi auditado.',
+    },
+    {
+      type: 'readAloud',
+      title: 'Respondendo em voz alta',
+      instruction: 'Ouça, repita e grave.',
+      sentences: [
+        'We measure at set intervals and record it — here is the control chart.',
+        'The instrument is calibrated every twelve months. The next one is due in March.',
+        'If a reading is outside tolerance, the line stops and the material is quarantined.',
+        'I do not have that detail — let me bring the process engineer.',
+        'Could you confirm the clause it refers to, so we can respond precisely?',
+      ],
+    },
+    {
+      type: 'checkOff',
+      title: 'Antes de fechar esta lição',
+      items: [
+        { en: 'I answer exactly what was asked, and then stop.', pt: 'Respondo exatamente o que foi perguntado e paro.' },
+        { en: 'I show evidence instead of describing it.', pt: 'Mostro evidência em vez de descrevê-la.' },
+        { en: 'I give frequencies in numbers, not in words like "regularly".', pt: 'Dou frequências em números, não em palavras como "regularly".' },
+        { en: 'I know the difference between an observation and a finding.', pt: 'Sei a diferença entre uma observação e um apontamento.' },
+      ],
+      doneMessage: 'auditoria resolvida. Agora, a análise de causa raiz.',
+      openMessage: 'leve o que ficou em branco para a próxima aula com o professor.',
+    },
+  ],
+  celebrate: {
+    en: 'Answer, show, stop — the three moves that get you through any audit.',
+    pt: 'Responder, mostrar, parar — os três movimentos que atravessam qualquer auditoria.',
+  },
+  insights: {
+    kicker: 'Sacadas · did you know?',
+    title: 'A auditoria por dentro',
+    intro: 'Quatro coisas que auditores dizem entre si.',
+    cards: [
+      { en: 'Most findings come from information the auditee volunteered, not from what the auditor asked.', pt: 'A maior parte dos apontamentos vem de informação que o auditado entregou, não do que o auditor perguntou.' },
+      { en: '"Show me" is the most important sentence in any audit. Everything else is preparation for it.', pt: '"Show me" é a frase mais importante de qualquer auditoria. Todo o resto é preparação para ela.' },
+      { en: 'A major finding says the system failed; a minor says one instance failed. The response required is very different.', pt: 'Um apontamento maior diz que o sistema falhou; um menor, que um caso falhou. A resposta exigida é bem diferente.' },
+      { en: '"I don\'t know, let me find out" costs nothing. A wrong guess in an audit becomes a written finding.', pt: '"I don\'t know, let me find out" não custa nada. Um chute errado numa auditoria vira apontamento escrito.' },
+    ],
+  },
+};
