@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { createContext, useContext, useState } from 'react';
+import AudioPlayer from '../AudioPlayer';
 
 /*
   Baker Hughes — peças de UI compartilhadas pelos formatos de exercício novos.
@@ -8,7 +9,20 @@ import { useState } from 'react';
   com as suas próprias cópias, então nada do que já está no ar muda.
 */
 
-export function ExShell({ title, c, badge, children, image, imageCaption }) {
+/* Ligado por curso, não por exercício.
+
+   O `BhExercise` publica aqui o exercício da vez e se o curso pede áudio em
+   tudo; o `ExShell` lê e decide se mostra o botão. Assim os dezessete pontos
+   que montam um bloco continuam com a mesma chamada de sempre — nenhum
+   material existente muda de comportamento. */
+export const BlockAudio = createContext(null);
+
+export function ExShell({ title, c, badge, children, image, imageCaption, audioText, voiceType }) {
+  const bloco = useContext(BlockAudio);
+  // A prop explícita manda; sem ela, o contexto decide. Curso sem a chave
+  // `audio.everywhere` no tema não recebe contexto e o botão nunca aparece.
+  const fala = audioText || (bloco?.on ? englishOf(bloco.ex) : '');
+  const voz = voiceType || bloco?.voiceType;
   return (
     <div style={{ background: c.card || '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, padding: 20, marginBottom: 16 }}>
       {/* Imagem opcional do exercício (`ex.image`). Aditivo: exercício sem o
@@ -26,6 +40,14 @@ export function ExShell({ title, c, badge, children, image, imageCaption }) {
           <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.5, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: c.accentLight || '#E4F7EC', color: c.ink || c.navy || '#062E2B' }}>{badge}</span>
         )}
         <h4 style={{ margin: 0, fontSize: 16, color: c.ink || c.navy || '#062E2B' }}>{title}</h4>
+        {/* Botão de bloco: lê o inglês do exercício inteiro. Só aparece nos
+            cursos que pedem áudio em tudo (`audio.everywhere` no tema) — sem a
+            prop, o bloco fica exatamente como sempre foi. */}
+        {fala && (
+          <span style={{ marginLeft: 'auto' }}>
+            <AudioPlayer text={fala} rate={0.92} label="Ouvir" small voiceType={voz} />
+          </span>
+        )}
       </div>
       {children}
     </div>
@@ -66,6 +88,68 @@ export function TranscriptToggle({ text, pt, c, hint }) {
       )}
     </div>
   );
+}
+
+/* Todo o inglês de um exercício, em ordem de leitura.
+
+   Serve ao botão "ouvir o bloco": o aluno escuta o enunciado e os itens sem
+   precisar de um botão por linha, que deixaria uma lista de sete itens com
+   sete botões. Cada tipo tem os seus campos, então a extração é explícita —
+   um tipo que não esteja aqui simplesmente não ganha o botão, em vez de ler
+   um objeto pela metade.
+
+   Só o inglês entra. `why`, `explanation` e `instruction` são a explicação em
+   português e ficam de fora: o que se pratica de ouvido é a língua-alvo. */
+export function englishOf(ex) {
+  if (!ex) return '';
+  const juntar = (...partes) => partes.flat(Infinity).filter(Boolean).map((t) => stripTags(String(t)).trim()).filter(Boolean).join('. ');
+  switch (ex.type) {
+    case 'multiSelect':
+      return juntar(ex.prompt, (ex.options || []).map((o) => o.text));
+    case 'trueFalse':
+      return juntar((ex.items || []).map((i) => i.text));
+    case 'categorize':
+      return juntar((ex.items || []).map((i) => i.text));
+    case 'oddOneOut':
+      return juntar((ex.groups || []).map((g) => (g.items || []).join(', ')));
+    case 'orderList':
+      return juntar(ex.items);
+    case 'errorSpot':
+      return juntar((ex.items || []).map((i) => i.sentence));
+    case 'highlightPick':
+      return juntar(ex.goal, ex.text);
+    case 'dropdownGap':
+      return juntar(ex.text);
+    case 'serialChoice':
+      return juntar((ex.items || []).map((i) => [i.prompt, (i.options || []).map((o) => o.text)]));
+    case 'sentenceBuild':
+      return juntar((ex.items || []).map((i) => i.answer));
+    case 'readingTask':
+      return juntar(ex.heading, ex.passage, (ex.questions || []).map((q) => q.prompt));
+    case 'emailTriage':
+      return juntar(ex.email?.subject, ex.email?.body, (ex.questions || []).map((q) => q.prompt));
+    case 'swipeChoice':
+      return juntar((ex.items || []).map((i) => [i.a, i.b]));
+    case 'matching':
+      return juntar((ex.pairs || []).map((p) => p.left));
+    case 'wordBank':
+      // A lacuna vira uma pausa curta em vez de "underline underline".
+      return juntar((ex.items || []).map((i) => String(i.text || '').replace(/_{2,}/g, '…')));
+    case 'checkOff':
+      return juntar((ex.items || []).map((i) => i.en));
+    case 'multipleChoice':
+      return juntar(ex.prompt, (ex.options || []).map((o) => o.text));
+    default:
+      // dialogue, listenChoose, listenGap, flowChoice e readAloud já têm áudio
+      // próprio, linha a linha — um botão de bloco só atrapalharia.
+      return '';
+  }
+}
+
+/* Tira marcação do texto antes de mandar para a síntese de voz: sem isto o
+   leitor pronuncia "strong" no meio da frase. */
+function stripTags(t) {
+  return String(t).replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ');
 }
 
 export function Instruction({ children, c }) {

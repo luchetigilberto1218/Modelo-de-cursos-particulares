@@ -6,7 +6,7 @@ import Exercise from '../Exercise';
 import AudioPlayer, { AudioPrefs } from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
 import BhExercise, { BH_EXTRA_TYPES, BH_UNGRADED_TYPES } from './BhExercises';
-import { maybeShuffle } from './BhKit';
+import { maybeShuffle, englishOf } from './BhKit';
 import { useIdentity, useLessonDone } from './progress';
 
 /*
@@ -89,6 +89,10 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
 
   // Um exercício, no formato certo para o seu `type`. Extraído do JSX só para
   // que cada bloco possa ser embrulhado numa div com id — nada mudou aqui.
+  // Áudio em todo bloco de exercício. Ligado por tema (`audio.everywhere`), então
+  // um curso que não pediu continua exatamente como já está no ar.
+  const blockAudio = !!theme?.audio?.everywhere;
+
   function renderExercise(ex, i) {
     if (RACIONAL_TYPES.includes(ex.type)) {
       // O <Exercise> é compartilhado com Racional e Czarnikow, então não se
@@ -101,16 +105,23 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
       // então aqui ele é isolado: dentro deste bloco a tinta volta a ser escura.
       return (
         <div style={c.legacyText ? { color: c.legacyText } : undefined}>
+          {/* O <Exercise> é compartilhado com outros cursos, então o botão de
+              áudio fica no invólucro: ninguém mais muda de comportamento. */}
+          {blockAudio && englishOf(ex) && (
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: -10, position: 'relative', zIndex: 1, paddingRight: 4 }}>
+              <AudioPlayer text={englishOf(ex)} rate={0.92} label="Ouvir" small voiceType={voiceType} />
+            </div>
+          )}
           <Exercise exercise={baralhado} levelId="starter" onResult={() => markDone(i)} />
         </div>
       );
     }
-    if (ex.type === 'wordBank') return <WordBank ex={ex} c={c} shuffle={shuffleOpts} onChecked={() => markDone(i)} />;
+    if (ex.type === 'wordBank') return <WordBank ex={ex} c={c} shuffle={shuffleOpts} onChecked={() => markDone(i)} audioText={blockAudio ? englishOf(ex) : ''} voiceType={voiceType} />;
     if (ex.type === 'verbFill' || ex.type === 'quickDrill') return <VerbFill ex={ex} c={c} onChecked={() => markDone(i)} />;
     if (ex.type === 'readAloud') return <ReadAloud ex={ex} c={c} voiceType={voiceType} />;
     if (ex.type === 'makeItYourOwn') return <MakeItYourOwn ex={ex} c={c} voiceType={voiceType} />;
     if (BH_EXTRA_TYPES.includes(ex.type)) {
-      return <BhExercise ex={ex} c={c} voiceType={voiceType} seed={(l.num || 1) * 31 + i} shuffle={shuffleOpts} onChecked={() => markDone(i)} />;
+      return <BhExercise ex={ex} c={c} voiceType={voiceType} seed={(l.num || 1) * 31 + i} shuffle={shuffleOpts} onChecked={() => markDone(i)} blockAudio={blockAudio} />;
     }
     return null;
   }
@@ -563,7 +574,7 @@ function BhBtn({ href, c, children, outline }) {
 
 /* ── Delta-style self-study exercises (auto-corrected) ── */
 
-function WordBank({ ex, c, onChecked, shuffle = false }) {
+function WordBank({ ex, c, onChecked, shuffle = false, audioText, voiceType }) {
   // O banco vinha escrito na mesma ordem das respostas — dava para resolver de
   // cima para baixo sem ler a frase. Sorteado uma vez, pela chave do próprio
   // exercício, para não trocar de lugar a cada carregamento.
@@ -577,7 +588,7 @@ function WordBank({ ex, c, onChecked, shuffle = false }) {
   const allFilled = items.every((_, i) => answers[i]);
 
   return (
-    <ExShell title={ex.title} c={c} badge="Word bank">
+    <ExShell title={ex.title} c={c} badge="Word bank" audioText={audioText} voiceType={voiceType}>
       {ex.instruction && <p style={{ fontSize: 14, color: c.gray, margin: '0 0 10px', lineHeight: 1.5 }}>{ex.instruction}</p>}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 16, padding: 12, background: c.accentLight || '#E4F7EC', borderRadius: 10 }}>
         {bank.map((w, i) => <span key={i} style={{ padding: '5px 12px', background: c.card || '#fff', border: `1px solid ${accent}`, borderRadius: 999, fontSize: 13.5, fontWeight: 600, color: c.ink || navy }}>{w}</span>)}
@@ -681,12 +692,18 @@ function MakeItYourOwn({ ex, c, voiceType }) {
 }
 
 /* shared exercise chrome for the self-study types */
-function ExShell({ title, c, badge, children }) {
+function ExShell({ title, c, badge, children, audioText, voiceType }) {
   return (
     <div style={{ background: c.card || '#fff', border: `1px solid ${c.grayLight || '#E2E9E7'}`, borderRadius: 12, padding: 20, marginBottom: 16 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14, flexWrap: 'wrap' }}>
         {badge && <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.5, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: c.accentLight || '#E4F7EC', color: c.ink || c.navy || '#062E2B' }}>{badge}</span>}
         <h4 style={{ margin: 0, fontSize: 16 }}>{title}</h4>
+        {/* Mesmo botão de bloco dos demais formatos. Sem `audioText`, nada muda. */}
+        {audioText && (
+          <span style={{ marginLeft: 'auto' }}>
+            <AudioPlayer text={audioText} rate={0.92} label="Ouvir" small voiceType={voiceType} />
+          </span>
+        )}
       </div>
       {children}
     </div>

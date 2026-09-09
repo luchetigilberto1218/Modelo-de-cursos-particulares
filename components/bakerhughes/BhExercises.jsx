@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import AudioPlayer from '../AudioPlayer';
-import { ExShell, Instruction, CheckRow, ResultLine, TranscriptToggle, maybeShuffle, norm, seededShuffle, hashString } from './BhKit';
+import { ExShell, Instruction, CheckRow, ResultLine, TranscriptToggle, maybeShuffle, norm, seededShuffle, hashString, BlockAudio, englishOf } from './BhKit';
 
 /*
   Baker Hughes — banco de formatos de exercício das trilhas personalizadas.
@@ -97,9 +97,19 @@ function embaralhar(ex, ligado) {
   return out;
 }
 
-export default function BhExercise({ ex: exOriginal, c, voiceType, onChecked, seed = 1, shuffle = false }) {
+export default function BhExercise({ ex: exOriginal, c, voiceType, onChecked, seed = 1, shuffle = false, blockAudio = false }) {
   const ex = embaralhar(exOriginal, shuffle);
   const props = { ex, c, voiceType, onChecked, seed };
+  // Publica o exercício da vez para o ExShell decidir sobre o botão de áudio.
+  // `blockAudio` desligado (o padrão) devolve exatamente o render de antes.
+  return (
+    <BlockAudio.Provider value={{ ex, voiceType, on: blockAudio }}>
+      {render(ex, props)}
+    </BlockAudio.Provider>
+  );
+}
+
+function render(ex, props) {
   switch (ex.type) {
     case 'multiSelect': return <MultiSelect {...props} />;
     case 'trueFalse': return <TrueFalse {...props} />;
@@ -868,6 +878,7 @@ function SwipeChoice({ ex, c, onChecked }) {
 
 /* ───────── 17. Check-off final — auto-avaliação assinalável ───────── */
 function CheckOff({ ex, c, voiceType, onChecked }) {
+  const bloco = useContext(BlockAudio);
   const accent = c.accent || '#00B04F';
   const navy = c.navy || '#062E2B';
   const items = ex.items || [];
@@ -881,6 +892,13 @@ function CheckOff({ ex, c, voiceType, onChecked }) {
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6, flexWrap: 'wrap' }}>
         <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: 0.6, textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: accent, color: c.onAccent || '#fff' }}>Check-off</span>
         <h4 style={{ margin: 0, fontSize: 16.5, color: c.ink || navy }}>{ex.title || 'Antes de fechar a lição'}</h4>
+        {/* Este bloco monta o próprio cabeçalho, então não passa pelo ExShell:
+            o botão de áudio entra aqui, com a mesma regra por tema. */}
+        {bloco?.on && (
+          <span style={{ marginLeft: 'auto' }}>
+            <AudioPlayer text={englishOf(ex)} rate={0.92} label="Ouvir" small voiceType={voiceType} />
+          </span>
+        )}
       </div>
       <p style={{ fontSize: 14, color: c.gray || '#5F7570', margin: '0 0 16px', lineHeight: 1.55 }}>
         {ex.instruction || 'Assinale só o que você realmente já consegue fazer. O que ficar em branco é o que vale revisar antes da próxima aula — leve para o professor.'}

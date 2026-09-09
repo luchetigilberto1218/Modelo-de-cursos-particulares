@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useIdentity, useDoneMap } from './bakerhughes/progress';
+import AudioPlayer from './AudioPlayer';
 
 /*
   ASTA — home do programa.
@@ -217,17 +218,28 @@ function SectionKicker({ c, children }) {
 
 /* A história abre em inglês com dois parágrafos, revela o resto, e tem o botão
    de tradução — o mesmo gesto que existe dentro de cada lição. */
-function StoryBlock({ story, c }) {
+function StoryBlock({ story, c, voiceType = 'gb-male' }) {
   const [open, setOpen] = useState(false);
   const [pt, setPt] = useState(false);
   const texto = pt ? (story.pt || []) : (story.en || []);
   const visible = open ? texto : texto.slice(0, 2);
+  // A voz acompanha o idioma que está na tela: em português o AudioPlayer já
+  // troca para a voz neural pt-BR sozinho, então basta passar o texto certo.
+  const vozPar = pt ? 'pt-br' : voiceType;
   return (
     <div>
       {visible.map((par, i) => (
-        <p key={i} style={{ fontSize: 16, lineHeight: 1.72, color: pt ? c.gray : '#2E3A45', fontStyle: pt ? 'italic' : 'normal', margin: i < visible.length - 1 ? '0 0 14px' : 0 }}>{par}</p>
+        <div key={i} style={{ margin: i < visible.length - 1 ? '0 0 16px' : 0 }}>
+          <p style={{ fontSize: 16, lineHeight: 1.72, color: pt ? c.gray : '#2E3A45', fontStyle: pt ? 'italic' : 'normal', margin: 0 }}>{par}</p>
+          {/* Um botão por parágrafo: a história é o primeiro texto longo que a
+              turma lê, e boa parte dela precisa ouvir junto para acompanhar. */}
+          <div style={{ marginTop: 7 }}>
+            <AudioPlayer text={par} rate={0.92} label="Ouvir" small voiceType={vozPar} preferServer />
+          </div>
+        </div>
       ))}
-      <div style={{ display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap', marginTop: 14 }}>
+      <div style={{ display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap', marginTop: 16 }}>
+        <AudioPlayer text={texto.join(' ')} rate={0.92} label={pt ? 'Ouvir tudo em português' : 'Ouvir a história inteira'} small voiceType={vozPar} preferServer />
         {!open && texto.length > 2 && (
           <button onClick={() => setOpen(true)}
             style={{ background: 'none', border: 'none', padding: 0, color: c.accent, fontWeight: 700, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>
