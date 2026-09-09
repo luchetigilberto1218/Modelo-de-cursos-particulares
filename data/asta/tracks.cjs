@@ -102,6 +102,16 @@ module.exports = [
       'Trilha montada a partir dos temas que você escolheu, com o peso maior em compras: fornecedores, cotações, condições de pagamento e contratos — mais cobre, esmaltagem, matérias-primas, venda de máquinas, estoque e manutenção.',
   },
   {
+    id: 'bruno',
+    name: 'Bruno · Data Storytelling & Business Analysis English',
+    level: 'essentials',
+    levelLabel: 'Trilha personalizada',
+    status: 'active',
+    owner: 'bruno',
+    description:
+      'Trilha montada a partir dos três temas que você escolheu — data storytelling e comunicação executiva, reuniões e levantamento de requisitos, apresentação de insights e recomendações —, com o que cerca cada um deles no dia a dia: a linguagem de números e incerteza, priorização entre partes interessadas, ata e aceite, a construção do argumento e a leitura da sala. Bastante inglês corrido, com compreensão de texto e conversas de verdade.',
+  },
+  {
     id: 'anilton',
     name: 'Anilton · Decarbonisation, EHS & Compliance English',
     level: 'essentials',
