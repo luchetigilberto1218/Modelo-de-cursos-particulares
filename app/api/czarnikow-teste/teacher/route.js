@@ -62,7 +62,8 @@ export async function GET() {
   const byStudent = new Map(docs.map((d) => [d.student, d]));
 
   const roster = getUsers().filter(
-    (u) => u.role === 'student' && (u.clients || []).includes(CLIENT)
+    // quem saiu (`disabled`) deixa a fila do professor; o progresso fica guardado
+    (u) => u.role === 'student' && (u.clients || []).includes(CLIENT) && !u.disabled
   );
 
   const students = roster.map((u) => {

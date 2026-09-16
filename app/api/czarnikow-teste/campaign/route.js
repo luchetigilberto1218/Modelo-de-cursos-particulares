@@ -97,6 +97,7 @@ export async function GET() {
     const rows = new Map();
     for (const u of users) {
       if (u.role !== 'student' || !(u.clients || []).includes(CLIENT)) continue;
+      if (u.disabled) continue;  // saiu do programa: cadastro e progresso guardados, fora do ranking
       if (u.id === 'czt-teste' && me.student !== 'czt-teste') continue;  // conta de demonstração
       rows.set(u.id, { student: u.id, demo: false, total: 0 });
     }
