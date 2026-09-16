@@ -482,33 +482,157 @@ function WordBank({ ex, c, onChecked }) {
   );
 }
 
+/* ── Verb fill (lacunas digitadas) ──────────────────────────────────────────
+   Formato novo (set/2026, queixa do professor no Apex/RH): em ~480 itens a
+   dica entre parênteses JÁ ERA a resposta — o aluno só recopiava. Cada item
+   agora pode trazer, no lugar da dica em inglês:
+     · `hintPt`  — a palavra em português; o aluno tem de lembrar o inglês
+     · `options` — 3 ou 4 alternativas para escolher (item de uma lacuna só)
+     · `hint`    — forma base em inglês, só quando é preciso TRANSFORMÁ-LA
+     · `hintAfterError` — dica extra que só aparece depois de errar
+   e `blanks` — uma lista de respostas aceitas POR LACUNA (uma caixa por ___).
+   Item antigo, sem esses campos, continua funcionando como antes. */
+const GAP = /_{3,}/;
+function normFill(s) {
+  return normalize((s || '').toString().replace(/…|\.\.\./g, ' ').replace(/[’‘]/g, "'"));
+}
+function blanksOf(it) {
+  const n = ((it.prompt || '').match(/_{3,}/g) || []).length;
+  if (Array.isArray(it.blanks) && it.blanks.length) return it.blanks;
+  if (n > 1) {
+    // legado: "has … been" ou "must be attached" para 2–3 lacunas
+    const porReticencias = (it.answer || '').split(/\s*(?:…|\.\.\.)\s*/).filter(Boolean);
+    if (porReticencias.length === n) return porReticencias.map((a) => [a]);
+    const porPalavra = (it.answer || '').trim().split(/\s+/);
+    if (porPalavra.length === n) return porPalavra.map((a) => [a]);
+  }
+  return null;
+}
+
 function VerbFill({ ex, c, onChecked }) {
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState({});      // chave `${item}-${lacuna}`
   const [checked, setChecked] = useState(false);
+  const [attempt, setAttempt] = useState(0);
   const items = ex.items || [];
-  const isRight = (i) => {
-    const acc = [items[i].answer, ...(items[i].acceptable || [])].map(normalize);
-    return acc.includes(normalize(answers[i]));
+  const shape = items.map((it) => {
+    const blanks = blanksOf(it);
+    const parts = (it.prompt || '').split(GAP);
+    // sem `blanks` confiáveis: uma caixa só, na primeira lacuna (comportamento antigo)
+    const boxes = blanks ? blanks.length : 1;
+    return { blanks, parts, boxes };
+  });
+  const key = (i, b) => `${i}-${b}`;
+  const blankRight = (i, b) => {
+    const { blanks } = shape[i];
+    const acc = blanks ? blanks[b] : [items[i].answer, ...(items[i].acceptable || [])];
+    return acc.map(normFill).includes(normFill(answers[key(i, b)]));
   };
-  const allFilled = items.every((_, i) => (answers[i] || '').trim());
+  const isRight = (i) => {
+    if (!shape[i].blanks) {
+      const acc = [items[i].answer, ...(items[i].acceptable || [])].map(normFill);
+      return acc.includes(normFill(answers[key(i, 0)]));
+    }
+    return shape[i].blanks.every((_, b) => blankRight(i, b));
+  };
+  const allFilled = items.every((_, i) => Array.from({ length: shape[i].boxes }).every((_, b) => (answers[key(i, b)] || '').trim()));
+  const canonical = (i) => shape[i].blanks ? shape[i].blanks.map((a) => a[0]) : [items[i].answer];
+  const filledSentence = (i) => {
+    const ans = canonical(i);
+    let b = 0;
+    return (items[i].prompt || '').replace(/_{3,}/g, (m) => (b < ans.length ? `[${ans[b++]}]` : m));
+  };
+  // dica extra: vale só na primeira correção de quem errou; depois disso, gabarito
+  const showsHint = (i) => checked && attempt === 1 && !isRight(i) && !!items[i].hintAfterError;
+
+  const boxStyle = (ok) => ({
+    margin: '0 4px', padding: '4px 10px', borderRadius: 6, fontSize: 14, fontFamily: 'inherit',
+    border: `2px solid ${checked ? (ok ? '#9AE6B4' : '#FEB2B2') : '#E4E9EF'}`,
+    background: checked ? (ok ? '#F0FFF4' : '#FFF5F5') : '#fff',
+  });
+
   return (
     <ExShell title={ex.title} c={c} badge={ex.type === 'quickDrill' ? 'Quick drill' : 'Verb fill'}>
       {ex.instruction && <p style={{ fontSize: 14, color: c.gray, margin: '0 0 10px', lineHeight: 1.5 }}>{ex.instruction}</p>}
-      <div style={{ display: 'grid', gap: 12 }}>
+      <div style={{ display: 'grid', gap: 14 }}>
         {items.map((it, i) => {
-          const parts = (it.prompt || '').split('___');
+          const { parts, boxes, blanks } = shape[i];
+          const opts = blanks && blanks.length === 1 && Array.isArray(it.options) && it.options.length ? it.options : null;
+          const out = [];
+          parts.forEach((txt, b) => {
+            out.push(<span key={`t${b}`}>{txt}</span>);
+            if (b === parts.length - 1) return;
+            if (b >= boxes) { out.push(<span key={`g${b}`}>___</span>); return; }
+            const ok = blanks ? blankRight(i, b) : isRight(i);
+            const v = answers[key(i, b)] || '';
+            if (opts) {
+              out.push(
+                <span key={`b${b}`} style={{ ...boxStyle(ok), display: 'inline-block', minWidth: 70, textAlign: 'center', fontWeight: v ? 700 : 400, color: v ? c.navy : c.gray }}>{v || '…'}</span>
+              );
+            } else {
+              out.push(
+                <input key={`b${b}`} value={v} onChange={(e) => setAnswers((a) => ({ ...a, [key(i, b)]: e.target.value }))} disabled={checked && ok} placeholder="…"
+                  style={{ ...boxStyle(ok), width: Math.max(90, Math.min(220, 14 + 9 * Math.max(...(blanks ? blanks[b] : [it.answer || '']).map((x) => x.length)))) }} />
+              );
+            }
+          });
           return (
-            <div key={i} style={{ fontSize: 15, lineHeight: 1.7 }}>
-              {parts[0]}
-              <input value={answers[i] || ''} onChange={e => setAnswers(a => ({ ...a, [i]: e.target.value }))} disabled={checked && isRight(i)} placeholder="…"
-                style={{ margin: '0 4px', padding: '4px 10px', borderRadius: 6, fontSize: 14, fontFamily: 'inherit', width: 120, border: `2px solid ${checked ? (isRight(i) ? '#9AE6B4' : '#FEB2B2') : '#E4E9EF'}`, background: checked ? (isRight(i) ? '#F0FFF4' : '#FFF5F5') : '#fff' }} />
-              {parts.slice(1).join('___')}
+            <div key={i} style={{ fontSize: 15, lineHeight: 1.8 }}>
+              {out}
+              {it.hint && <span style={{ color: c.gray, marginLeft: 6 }}>({it.hint})</span>}
+              {it.hintPt && (
+                <span title="Escreva em inglês" style={{ marginLeft: 8, whiteSpace: 'nowrap', fontSize: 13, padding: '2px 9px', borderRadius: 999, background: '#FFF8E6', border: '1px solid #F2DDA4', color: '#6B5314' }}>
+                  <b style={{ fontSize: 10, letterSpacing: 0.5, marginRight: 5 }}>PT</b>{it.hintPt}
+                </span>
+              )}
+              {opts && (
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 6 }}>
+                  {opts.map((o) => {
+                    const sel = answers[key(i, 0)] === o;
+                    return (
+                      <button key={o} type="button" disabled={checked && isRight(i)} onClick={() => setAnswers((a) => ({ ...a, [key(i, 0)]: o }))}
+                        style={{ padding: '4px 12px', borderRadius: 999, fontSize: 13.5, fontFamily: 'inherit', fontWeight: 600, cursor: checked && isRight(i) ? 'default' : 'pointer', border: `1px solid ${sel ? c.accent : c.grayLight}`, background: sel ? c.accentLight : '#fff', color: c.navy }}>{o}</button>
+                    );
+                  })}
+                </div>
+              )}
+              {showsHint(i) && (
+                <div style={{ marginTop: 6, fontSize: 13.5, color: '#6B5314', background: '#FFF8E6', border: '1px solid #F2DDA4', borderRadius: 8, padding: '6px 10px' }}>
+                  💡 {it.hintAfterError}
+                </div>
+              )}
             </div>
           );
         })}
       </div>
-      <CheckRow checked={checked} setChecked={(v) => { setChecked(v); if (v && onChecked) onChecked(accuracyOf(items, isRight)); }} onReset={() => setAnswers({})} canCheck={allFilled} c={c} />
-      {checked && <ResultLine ok={items.every((_, i) => isRight(i))} c={c} explanation={ex.explanation} corrections={items.map((it, i) => !isRight(i) ? `${it.prompt.replace('___', `[${it.answer}]`)}` : null).filter(Boolean)} />}
+      <CheckRow
+        checked={checked}
+        setChecked={(v) => {
+          setChecked(v);
+          if (v) {
+            setAttempt((n) => n + 1);
+            if (onChecked) onChecked(accuracyOf(items, isRight));
+          }
+        }}
+        // nova tentativa: o que já está certo fica; só o errado é apagado
+        onReset={() => setAnswers((a) => {
+          const keep = {};
+          items.forEach((_, i) => {
+            for (let b = 0; b < shape[i].boxes; b++) {
+              if (shape[i].blanks ? blankRight(i, b) : isRight(i)) keep[key(i, b)] = a[key(i, b)];
+            }
+          });
+          return keep;
+        })}
+        canCheck={allFilled} c={c} />
+      {checked && (() => {
+        const errados = items.map((_, i) => i).filter((i) => !isRight(i));
+        const comDica = errados.filter(showsHint);
+        const corrections = errados.filter((i) => !showsHint(i)).map(filledSentence);
+        return (
+          <ResultLine ok={errados.length === 0} c={c} explanation={ex.explanation} corrections={corrections}
+            wrongLabel={comDica.length && !corrections.length ? '✗ Quase — veja as dicas e clique em “Tentar de novo”.' : undefined} />
+        );
+      })()}
     </ExShell>
   );
 }
@@ -776,10 +900,10 @@ function CheckRow({ checked, setChecked, onReset, canCheck, c }) {
     </div>
   );
 }
-function ResultLine({ ok, c, explanation, corrections }) {
+function ResultLine({ ok, c, explanation, corrections, wrongLabel }) {
   return (
     <div style={{ marginTop: 14, padding: '10px 14px', borderRadius: 8, background: ok ? '#F0FFF4' : '#FFF5F5', border: `1px solid ${ok ? '#9AE6B4' : '#FEB2B2'}`, color: ok ? '#22543D' : '#742A2A', fontSize: 14 }}>
-      {ok ? `✓ ${explanation || 'Tudo certo!'}` : '✗ Quase — confira as respostas certas:'}
+      {ok ? `✓ ${explanation || 'Tudo certo!'}` : (wrongLabel || '✗ Quase — confira as respostas certas:')}
       {!ok && corrections?.length > 0 && (
         <ul style={{ margin: '8px 0 0', paddingLeft: 20 }}>
           {corrections.map((c2, i) => <li key={i} style={{ marginBottom: 3 }}>{c2}</li>)}
