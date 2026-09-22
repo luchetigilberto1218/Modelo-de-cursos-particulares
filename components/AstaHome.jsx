@@ -396,8 +396,8 @@ function MyTrackCard({ track, lessons, clientId, student, c }) {
     } catch { /* sem localStorage, mostra a lição 1 */ }
   }, [clientId, track.id]);
 
-  const identity = useIdentity();
-  const doneMap = useDoneMap(identity?.student);
+  const identity = useIdentity(clientId);
+  const doneMap = useDoneMap(identity?.student, clientId);
   const doneCount = lessons.filter((l) => doneMap[l.num]).length;
   const nextUndone = lessons.find((l) => !doneMap[l.num]) || null;
 

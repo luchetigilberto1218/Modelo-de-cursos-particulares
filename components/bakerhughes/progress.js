@@ -21,6 +21,7 @@ const EVENT = 'bh-progress';
 const CLIENTS = {
   bakerhughes: { api: '/api/bakerhughes', sync: true },
   faapatendimento: { api: '/api/faapatendimento', sync: true },
+  asta: { api: '/api/asta', sync: true },
 };
 const DEFAULT_CLIENT = 'bakerhughes';
 const cfg = (clientId) => CLIENTS[clientId] || CLIENTS[DEFAULT_CLIENT];
