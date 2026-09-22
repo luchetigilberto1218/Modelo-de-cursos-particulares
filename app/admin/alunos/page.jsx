@@ -6,6 +6,7 @@ import { getPainelCoordenacao } from '../../../lib/coordenacao';
 import { getStatsByEmpresa } from '../../../lib/stats';
 import { getRankingCampanha } from '../../../lib/czarnikow-campanha';
 import { lerHistorico, evolucao } from '../../../lib/historico';
+import PainelNavegacao from '../../../components/PainelNavegacao';
 
 // Leitura de turma da coordenação: todos os clientes numa tela só.
 //
@@ -172,14 +173,12 @@ export default async function PainelCoordenacao({ searchParams }) {
         @media (min-width: 900px) { .pc-tabs { flex-wrap:wrap; overflow:visible; } }
         .pc-kpis { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
         .pc-tab:hover { border-color:${AZUL}; }
-        .pc-tab[data-on="1"] { background:${AZUL}; color:#fff; border-color:${AZUL}; }
         .pc-card { display:block; text-decoration:none; color:inherit; background:#fff; border-radius:14px;
                    border:1px solid ${BORDA}; padding:18px; transition:border-color .15s, box-shadow .15s, transform .15s; }
         .pc-card:hover { border-color:${AZUL}; box-shadow:0 8px 24px rgba(16,42,113,.10); transform:translateY(-1px); }
         .pc-chip { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:999px; font-size:13px;
                    font-weight:600; text-decoration:none; color:${CINZA}; background:#fff; border:1px solid ${BORDA}; }
         .pc-chip:hover { border-color:${AZUL}; color:${AZUL}; }
-        .pc-chip[data-on="1"] { background:${AZUL_CLARO}; color:${AZUL}; border-color:${AZUL}; }
         .pc-row:hover td { background:#fafbfd; }
         .pc-link { color:${AZUL}; font-weight:600; text-decoration:none; font-size:14px; }
         .pc-link:hover { text-decoration:underline; }
@@ -209,31 +208,39 @@ export default async function PainelCoordenacao({ searchParams }) {
         </div>
       </header>
 
+      <PainelNavegacao inicialC={atual?.id || ''} inicialF={filtro} ids={resumo.map((c) => c.id)}
+                       cores={{ azul: AZUL, azulClaro: AZUL_CLARO }}>
       {/* Uma empresa por botão */}
       <nav style={{ background: '#fff', borderBottom: `1px solid ${BORDA}`, position: 'sticky', top: 0, zIndex: 5 }}>
         <div className="pc-tabs" style={{ maxWidth: 1120, margin: '0 auto' }}>
-          <Link href={hrefDe(null)} className="pc-tab" data-on={atual ? '0' : '1'}>Visão geral</Link>
+          <a href={hrefDe(null)} className="pc-tab" data-nav-c="">Visão geral</a>
           {resumo.map((c) => {
             const alerta = c.porGrupo.parado + c.porGrupo.alerta;
             return (
-              <Link key={c.id} href={hrefDe(c.id)} className="pc-tab" data-on={atual?.id === c.id ? '1' : '0'}>
+              <a key={c.id} href={hrefDe(c.id)} className="pc-tab" data-nav-c={c.id}>
                 {c.nome}
                 <span style={{ fontSize: 12, fontWeight: 600, opacity: .7 }}>{c.engajados}/{c.total}</span>
                 {(alerta > 0 || c.erro) && (
                   <span title={c.erro ? 'erro de leitura' : `${alerta} precisam de atenção`}
                         style={{ width: 8, height: 8, borderRadius: 99, background: VERMELHO, flex: '0 0 auto' }} />
                 )}
-              </Link>
+              </a>
             );
           })}
         </div>
       </nav>
 
       <div style={{ maxWidth: 1120, margin: '0 auto', padding: '28px 24px 72px' }}>
-        {atual
-          ? <Empresa c={atual} filtro={filtro} campanha={atual.id === 'czarnikow' ? campanha : null} />
-          : <VisaoGeral resumo={resumo} atencao={atencao} tot={tot} temHistorico={temHistorico} from={from} to={to} />}
+        <section data-painel="geral">
+          <VisaoGeral resumo={resumo} atencao={atencao} tot={tot} temHistorico={temHistorico} from={from} to={to} />
+        </section>
+        {resumo.map((c) => (
+          <section key={c.id} data-painel={c.id}>
+            <Empresa c={c} campanha={c.id === 'czarnikow' ? campanha : null} />
+          </section>
+        ))}
       </div>
+      </PainelNavegacao>
     </main>
   );
 }
@@ -275,7 +282,7 @@ function VisaoGeral({ resumo, atencao, tot, temHistorico, from, to }) {
         {resumo.map((c) => {
           const pct = c.total ? Math.round((c.engajados / c.total) * 100) : 0;
           return (
-            <Link key={c.id} href={hrefDe(c.id)} className="pc-card">
+            <a key={c.id} href={hrefDe(c.id)} className="pc-card" data-nav-c={c.id}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, marginBottom: 12 }}>
                 <span style={{ fontSize: 15, fontWeight: 700, color: AZUL }}>{c.nome}</span>
                 <span style={{ color: CINZA_CLARO, fontSize: 16 }}>→</span>
@@ -300,7 +307,7 @@ function VisaoGeral({ resumo, atencao, tot, temHistorico, from, to }) {
                   </div>
                 </>
               )}
-            </Link>
+            </a>
           );
         })}
       </div>
@@ -317,7 +324,7 @@ function VisaoGeral({ resumo, atencao, tot, temHistorico, from, to }) {
           {atencao.map((a, i) => (
             <tr key={i} className="pc-row">
               <td style={td}><div style={{ fontWeight: 600 }}>{a.nome}</div></td>
-              <td style={td}><Link href={hrefDe(a.empresaId)} className="pc-link">{a.empresa}</Link></td>
+              <td style={td}><a href={hrefDe(a.empresaId)} className="pc-link" data-nav-c={a.empresaId}>{a.empresa}</a></td>
               <td style={{ ...td, color: CINZA }}>{a.feitas}{a.meta ? `/${a.meta}` : ''}</td>
               <td style={{ ...td, color: CINZA }}>{fmtData(a.ultimaAt)}</td>
               <td style={td}><Selo s={a.sit} /></td>
@@ -349,29 +356,29 @@ function VisaoGeral({ resumo, atencao, tot, temHistorico, from, to }) {
 
 // ------------------------------------------------------------------- empresa
 
-function Empresa({ c, filtro, campanha }) {
+function Empresa({ c, campanha }) {
   const alunos = [...c.alunos]
-    .filter((a) => filtro === 'todos' || a.sit.grupo === filtro)
     .sort((a, b) => (a.inativo - b.inativo) || (b.feitas - a.feitas) || a.nome.localeCompare(b.nome, 'pt-BR'));
   const pctEng = c.total ? Math.round((c.engajados / c.total) * 100) : 0;
-  const LinkMaterial = c.externo ? 'a' : Link;
+  // Link comum (<a>), nunca o <Link> do Next: parte dos materiais é HTML
+  // estático em /public (a Delta Ducon) e a navegação do Next não os abre.
   const extra = c.externo ? { target: '_blank', rel: 'noreferrer' } : {};
 
   return (
     <>
       <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 20 }}>
         <h1 style={{ fontSize: 28, fontWeight: 800, letterSpacing: '-.02em', margin: 0, color: AZUL, flex: 1, minWidth: 200 }}>{c.nome}</h1>
-        <LinkMaterial href={c.href} {...extra} style={{
+        <a href={c.href} {...extra} style={{
           background: VERMELHO, color: '#fff', fontWeight: 600, fontSize: 14, textDecoration: 'none',
           borderRadius: 999, padding: '10px 18px',
         }}>
           Abrir o material →
-        </LinkMaterial>
+        </a>
         {c.painel && (
-          <Link href={c.painel} style={{ color: AZUL, fontWeight: 600, fontSize: 14, textDecoration: 'none',
-                                        border: `1px solid ${AZUL}`, borderRadius: 999, padding: '9px 16px' }}>
+          <a href={c.painel} style={{ color: AZUL, fontWeight: 600, fontSize: 14, textDecoration: 'none',
+                                     border: `1px solid ${AZUL}`, borderRadius: 999, padding: '9px 16px' }}>
             Painel do professor →
-          </Link>
+          </a>
         )}
       </div>
 
@@ -401,16 +408,16 @@ function Empresa({ c, filtro, campanha }) {
           const n = f.id === 'todos' ? c.alunos.length : c.porGrupo[f.id];
           if (f.id !== 'todos' && !n) return null;
           return (
-            <Link key={f.id} href={hrefDe(c.id, f.id)} className="pc-chip" data-on={filtro === f.id ? '1' : '0'}>
+            <a key={f.id} href={hrefDe(c.id, f.id)} className="pc-chip" data-nav-c={c.id} data-nav-f={f.id}>
               {f.rotulo} <span style={{ opacity: .6 }}>{n}</span>
-            </Link>
+            </a>
           );
         })}
       </div>
 
       <Tabela cabecalho={['Aluno', 'Progresso', c.evo ? '7 dias' : null, 'Última atividade', 'Situação']}>
         {alunos.length === 0 && (
-          <tr><td style={{ ...td, color: CINZA_CLARO }} colSpan={5}>Ninguém nesta situação.</td></tr>
+          <tr><td style={{ ...td, color: CINZA_CLARO }} colSpan={5}>Nenhum aluno cadastrado.</td></tr>
         )}
         {alunos.map((a, i) => {
           const pct = a.meta ? Math.min(100, Math.round((a.feitas / a.meta) * 100)) : 0;
@@ -418,7 +425,7 @@ function Empresa({ c, filtro, campanha }) {
           // entrou na turma nesta semana: "+0" seria injusto com essa pessoa.
           const m = c.evo?.porAluno.get(a.nome);
           return (
-            <tr key={i} className="pc-row">
+            <tr key={i} className="pc-row" data-grupo={a.sit.grupo}>
               <td style={{ ...td, color: a.inativo ? CINZA_CLARO : TEXTO }}>
                 <div style={{ fontWeight: 600 }}>{a.nome}</div>
                 {a.detalhe && <div style={{ fontSize: 12, color: CINZA_CLARO, marginTop: 2 }}>{a.detalhe}</div>}
