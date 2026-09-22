@@ -199,7 +199,10 @@ export default async function PainelCoordenacao({ searchParams }) {
             <div style={{ fontSize: 12, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,.65)', fontWeight: 600 }}>
               Coordenação
             </div>
-            <div style={{ fontSize: 20, fontWeight: 700, letterSpacing: '-.01em' }}>Evolução dos alunos</div>
+            <div style={{ fontSize: 20, fontWeight: 700, letterSpacing: '-.01em' }}>Evolução dos alunos nos materiais personalizados</div>
+            <div style={{ fontSize: 13, color: 'rgba(255,255,255,.7)', marginTop: 2 }}>
+              Como cada turma usa o material que a Alumni criou para a sua empresa
+            </div>
           </div>
           <Link href="/admin" style={{ color: '#fff', fontSize: 13.5, fontWeight: 600, textDecoration: 'none',
                                       border: '1px solid rgba(255,255,255,.35)', borderRadius: 999, padding: '8px 14px' }}>
