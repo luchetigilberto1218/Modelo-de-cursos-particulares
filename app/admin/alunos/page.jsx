@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
+import { Inter } from 'next/font/google';
 import { getSession, isCoordinator } from '../../../lib/auth';
 import { getPainelCoordenacao } from '../../../lib/coordenacao';
 import { getStatsByEmpresa } from '../../../lib/stats';
@@ -13,9 +14,27 @@ import { lerHistorico, evolucao } from '../../../lib/historico';
 // quem parou, e há quanto tempo. É a visão que faltava — e a que alimenta o
 // relatório mensal.
 //
+// Navegação por empresa: cada cliente é um botão (?c=<id>), e a visão geral
+// junta num lugar só quem precisa de atenção. Tudo no servidor, sem estado no
+// navegador — o link de uma empresa pode ser salvo e aberto direto.
+//
 // Só leitura, e só para coordenação. Rota nova: nenhum curso muda.
 
 export const dynamic = 'force-dynamic';
+
+const inter = Inter({ subsets: ['latin'], display: 'swap' });
+
+// Identidade Alumni (a mesma das propostas).
+const AZUL = '#102a71';
+const AZUL_ESCURO = '#0a1d52';
+const VERMELHO = '#cb142d';
+const AZUL_CLARO = '#e8edf8';
+const FUNDO = '#f4f5f7';
+const TEXTO = '#0b1020';
+const CINZA = '#5b6275';
+const CINZA_CLARO = '#9aa1b1';
+const BORDA = '#e4e7ee';
+const LOGO = 'https://alumni.org.br/wp-content/uploads/2025/12/logo_alumni-bco-1024x445.png';
 
 const DIA = 24 * 60 * 60 * 1000;
 
@@ -35,29 +54,48 @@ function fmtData(iso) {
   } catch { return '—'; }
 }
 
-// Como a linha do aluno deve ser lida de relance.
+// Como a linha do aluno deve ser lida de relance. `grupo` é o que os filtros usam.
 function situacao(a) {
   // Cadastrado mas ainda sem senha/trilha: tecnicamente o acesso está fechado,
   // mas dizer "desativado" o põe no mesmo balaio de quem saiu da empresa.
-  if (a.pendente) return { rotulo: 'a liberar', cor: '#1d4ed8', fundo: '#eff6ff' };
-  if (a.inativo) return { rotulo: 'desativado', cor: '#9ca3af', fundo: '#f4f4f5' };
-  if (!a.feitas) return { rotulo: 'nunca começou', cor: '#b45309', fundo: '#fffbeb' };
+  if (a.pendente) return { grupo: 'pendente', rotulo: 'a liberar', cor: '#1d4ed8', fundo: '#eff6ff' };
+  if (a.inativo) return { grupo: 'inativo', rotulo: 'desativado', cor: '#8a90a0', fundo: '#f1f2f5' };
+  if (!a.feitas) return { grupo: 'nunca', rotulo: 'nunca começou', cor: '#a15c07', fundo: '#fff7e6' };
   const d = diasDesde(a.ultimaAt);
-  if (d !== null && d >= 14) return { rotulo: `parado há ${d} dias`, cor: '#b91c1c', fundo: '#fef2f2' };
-  if (d !== null && d >= 7) return { rotulo: `${d} dias sem abrir`, cor: '#b45309', fundo: '#fffbeb' };
-  return { rotulo: 'ativo', cor: '#15803d', fundo: '#f0fdf4' };
+  if (d !== null && d >= 14) return { grupo: 'parado', rotulo: `parado há ${d} dias`, cor: VERMELHO, fundo: '#fdecee' };
+  if (d !== null && d >= 7) return { grupo: 'alerta', rotulo: `${d} dias sem abrir`, cor: '#a15c07', fundo: '#fff7e6' };
+  return { grupo: 'ativo', rotulo: 'ativo', cor: '#016630', fundo: '#dcfce7' };
 }
 
-export default async function PainelCoordenacao() {
+// Filtros da tela de empresa, na ordem em que aparecem.
+const FILTROS = [
+  { id: 'todos', rotulo: 'Todos' },
+  { id: 'ativo', rotulo: 'Ativos' },
+  { id: 'alerta', rotulo: '7+ dias sem abrir' },
+  { id: 'parado', rotulo: 'Parados 14+' },
+  { id: 'nunca', rotulo: 'Nunca começaram' },
+];
+
+function hrefDe(c, f) {
+  const q = new URLSearchParams();
+  if (c) q.set('c', c);
+  if (f && f !== 'todos') q.set('f', f);
+  const s = q.toString();
+  return `/admin/alunos${s ? `?${s}` : ''}`;
+}
+
+export default async function PainelCoordenacao({ searchParams }) {
   const session = await getSession();
   if (!session) redirect('/login?next=%2Fadmin%2Falunos');
   if (!isCoordinator(session)) {
     return (
-      <main style={{ padding: 40, fontFamily: 'system-ui', background: '#f5f5f7', minHeight: '100vh' }}>
+      <main style={{ padding: 40, fontFamily: 'system-ui', background: FUNDO, minHeight: '100vh' }}>
         <p>Acesso restrito à coordenação.</p>
       </main>
     );
   }
+
+  const sp = (await searchParams) || {};
 
   const hoje = new Date();
   const from = new Date(hoje.getTime() - 29 * DIA).toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
@@ -87,249 +125,410 @@ export default async function PainelCoordenacao() {
   }
 
   const resumo = clientes.map((c) => {
-    const ativos = c.alunos.filter((a) => !a.inativo);
+    const alunos = c.alunos.map((a) => ({ ...a, sit: situacao(a) }));
+    const ativos = alunos.filter((a) => !a.inativo);
+    const conta = (g) => ativos.filter((a) => a.sit.grupo === g).length;
     return {
       ...c,
+      alunos,
       total: ativos.length,
       engajados: ativos.filter((a) => a.feitas > 0).length,
       licoes: ativos.reduce((s, a) => s + a.feitas, 0),
       acessos: acessos.get(c.id) || 0,
       evo: evo.get(c.id) || null,
+      porGrupo: {
+        ativo: conta('ativo'), alerta: conta('alerta'), parado: conta('parado'), nunca: conta('nunca'),
+      },
+      externo: /^https?:/.test(c.href),
     };
   });
 
-  const card = {
-    background: '#fff', borderRadius: 14, padding: '16px 18px',
-    boxShadow: '0 1px 4px rgba(0,0,0,.06)', border: '1px solid #ececf0',
+  const atual = resumo.find((c) => c.id === sp.c) || null;
+  const filtro = FILTROS.some((f) => f.id === sp.f) ? sp.f : 'todos';
+
+  // Quem precisa de um toque, de todas as empresas: parados primeiro, depois
+  // quem está há 7+ dias sem abrir. "Nunca começou" fica fora da lista — são
+  // muitos no início de cada turma e afogariam quem de fato parou.
+  const atencao = resumo
+    .flatMap((c) => c.alunos
+      .filter((a) => !a.inativo && (a.sit.grupo === 'parado' || a.sit.grupo === 'alerta'))
+      .map((a) => ({ ...a, empresa: c.nome, empresaId: c.id, dias: diasDesde(a.ultimaAt) || 0 })))
+    .sort((a, b) => b.dias - a.dias);
+
+  const tot = {
+    alunos: resumo.reduce((s, c) => s + c.total, 0),
+    engajados: resumo.reduce((s, c) => s + c.engajados, 0),
+    licoes: resumo.reduce((s, c) => s + c.licoes, 0),
+    semana: temHistorico ? resumo.reduce((s, c) => s + (c.evo?.licoes || 0), 0) : null,
   };
-  const th = {
-    textAlign: 'left', padding: '9px 12px', fontSize: 11, color: '#6b7280',
-    textTransform: 'uppercase', letterSpacing: '.5px', borderBottom: '2px solid #e5e7eb', fontWeight: 700,
-  };
-  const td = { padding: '10px 12px', fontSize: 14, borderBottom: '1px solid #f2f2f4', verticalAlign: 'middle' };
 
   return (
-    <main style={{ padding: '40px 24px 64px', fontFamily: 'system-ui, sans-serif', background: '#f5f5f7', minHeight: '100vh' }}>
-      <div style={{ maxWidth: 1040, margin: '0 auto' }}>
-        <h1 style={{ fontSize: 28, fontWeight: 700, margin: '0 0 4px' }}>Coordenação · Evolução dos alunos</h1>
-        <p style={{ color: '#6b7280', margin: '0 0 8px', fontSize: 15 }}>
-          O que cada turma fez de verdade no material. Acessos dos últimos 30 dias ({from} a {to}).
-        </p>
-        <p style={{ color: '#9ca3af', margin: '0 0 28px', fontSize: 13 }}>
-          Uma lição só conta como concluída quando o aluno termina os exercícios dela.
-          Quem aparece sem nenhuma abriu o material mas não fechou nenhuma lição — ou não abriu.
-          Nos cursos com login, acesso da coordenação e dos professores deixou de entrar na conta
-          em 18/08/2026 — antes dessa data o número inclui as nossas próprias passadas pelo material.
-          {' '}<Link href="/admin" style={{ color: '#2563eb' }}>Acessos por empresa →</Link>
-        </p>
+    <main className={inter.className} style={{ background: FUNDO, minHeight: '100vh', color: TEXTO }}>
+      <style>{`
+        .pc-tabs { display:flex; gap:8px; overflow-x:auto; padding:14px 24px; scrollbar-width:thin; }
+        .pc-tab { flex:0 0 auto; display:flex; align-items:center; gap:8px; padding:9px 14px; border-radius:999px;
+                  font-size:14px; font-weight:600; text-decoration:none; color:${AZUL}; background:#fff;
+                  border:1px solid ${BORDA}; transition:border-color .15s, background .15s; white-space:nowrap; }
+        @media (min-width: 900px) { .pc-tabs { flex-wrap:wrap; overflow:visible; } }
+        .pc-kpis { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
+        .pc-tab:hover { border-color:${AZUL}; }
+        .pc-tab[data-on="1"] { background:${AZUL}; color:#fff; border-color:${AZUL}; }
+        .pc-card { display:block; text-decoration:none; color:inherit; background:#fff; border-radius:14px;
+                   border:1px solid ${BORDA}; padding:18px; transition:border-color .15s, box-shadow .15s, transform .15s; }
+        .pc-card:hover { border-color:${AZUL}; box-shadow:0 8px 24px rgba(16,42,113,.10); transform:translateY(-1px); }
+        .pc-chip { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:999px; font-size:13px;
+                   font-weight:600; text-decoration:none; color:${CINZA}; background:#fff; border:1px solid ${BORDA}; }
+        .pc-chip:hover { border-color:${AZUL}; color:${AZUL}; }
+        .pc-chip[data-on="1"] { background:${AZUL_CLARO}; color:${AZUL}; border-color:${AZUL}; }
+        .pc-row:hover td { background:#fafbfd; }
+        .pc-link { color:${AZUL}; font-weight:600; text-decoration:none; font-size:14px; }
+        .pc-link:hover { text-decoration:underline; }
+        details.pc-notas summary { cursor:pointer; color:${CINZA}; font-size:13px; font-weight:600; list-style:none; }
+        details.pc-notas summary::-webkit-details-marker { display:none; }
+        details.pc-notas summary::before { content:'+ '; color:${AZUL}; }
+        details.pc-notas[open] summary::before { content:'– '; }
+      `}</style>
 
-        {!temHistorico && (
-          <p style={{ fontSize: 13, color: '#92400e', background: '#fffbeb', border: '1px solid #fde68a',
-                      borderRadius: 10, padding: '10px 14px', margin: '-14px 0 28px', lineHeight: 1.55 }}>
-            O movimento (&quot;quanto andou nos últimos 7 dias&quot;) ainda não aparece: o retrato diário
-            começou a ser gravado agora e precisa de uma semana de histórico para ter com o que comparar.
-            O acumulado abaixo já está correto e ao vivo.
-          </p>
-        )}
-
-        {/* Resumo: uma linha por cliente, para bater o olho */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: 12, marginBottom: 36 }}>
-          {resumo.map((c) => (
-            <div key={c.id} style={card}>
-              <div style={{ fontSize: 13, fontWeight: 700, color: '#111827', marginBottom: 10 }}>{c.nome}</div>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: 6 }}>
-                <span style={{ fontSize: 30, fontWeight: 800, letterSpacing: '-.02em', color: c.engajados ? '#111827' : '#d1d5db' }}>
-                  {c.engajados}
-                </span>
-                <span style={{ fontSize: 14, color: '#6b7280' }}>de {c.total} engajaram</span>
-              </div>
-              <div style={{ fontSize: 13, color: '#6b7280', marginTop: 8, lineHeight: 1.6 }}>
-                {c.licoes} {c.licoes === 1 ? 'lição concluída' : 'lições concluídas'}<br />
-                {c.acessos} {c.acessos === 1 ? 'acesso' : 'acessos'} em 30 dias
-              </div>
-              {c.evo && (
-                <div style={{ fontSize: 13, fontWeight: 700, marginTop: 6,
-                              color: c.evo.licoes > 0 ? '#15803d' : '#9ca3af' }}>
-                  {c.evo.licoes > 0 ? `+${c.evo.licoes}` : 'nenhuma'} nos últimos 7 dias
-                </div>
-              )}
-              {c.contagem && (
-                <div style={{ fontSize: 11.5, color: '#9ca3af', marginTop: 6, lineHeight: 1.45 }}>{c.contagem}</div>
-              )}
+      {/* Cabeçalho Alumni */}
+      <header style={{ background: `linear-gradient(135deg, ${AZUL_ESCURO}, ${AZUL})`, color: '#fff', position: 'relative' }}>
+        <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 3, background: VERMELHO }} />
+        <div style={{ maxWidth: 1120, margin: '0 auto', padding: '22px 24px 24px', display: 'flex', alignItems: 'center', gap: 18, flexWrap: 'wrap' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={LOGO} alt="Alumni" style={{ height: 30, width: 'auto' }} />
+          <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,.25)' }} />
+          <div style={{ flex: 1, minWidth: 220 }}>
+            <div style={{ fontSize: 12, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,.65)', fontWeight: 600 }}>
+              Coordenação
             </div>
-          ))}
+            <div style={{ fontSize: 20, fontWeight: 700, letterSpacing: '-.01em' }}>Evolução dos alunos</div>
+          </div>
+          <Link href="/admin" style={{ color: '#fff', fontSize: 13.5, fontWeight: 600, textDecoration: 'none',
+                                      border: '1px solid rgba(255,255,255,.35)', borderRadius: 999, padding: '8px 14px' }}>
+            Acessos por empresa →
+          </Link>
         </div>
+      </header>
 
-        {/* Uma seção por cliente */}
-        {resumo.map((c) => {
-          const alunos = [...c.alunos].sort((a, b) =>
-            (a.inativo - b.inativo) || (b.feitas - a.feitas) || a.nome.localeCompare(b.nome, 'pt-BR')
-          );
-          return (
-            <section key={c.id} style={{ marginBottom: 40 }}>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, flexWrap: 'wrap', marginBottom: 10 }}>
-                <h2 style={{ fontSize: 19, fontWeight: 700, margin: 0 }}>{c.nome}</h2>
-                <Link href={c.href} style={{ fontSize: 13, color: '#2563eb', textDecoration: 'none' }}>
-                  abrir o material →
-                </Link>
-                {c.painel && (
-                  <Link href={c.painel} style={{ fontSize: 13, color: '#2563eb', textDecoration: 'none' }}>
-                    painel detalhado →
-                  </Link>
+      {/* Uma empresa por botão */}
+      <nav style={{ background: '#fff', borderBottom: `1px solid ${BORDA}`, position: 'sticky', top: 0, zIndex: 5 }}>
+        <div className="pc-tabs" style={{ maxWidth: 1120, margin: '0 auto' }}>
+          <Link href={hrefDe(null)} className="pc-tab" data-on={atual ? '0' : '1'}>Visão geral</Link>
+          {resumo.map((c) => {
+            const alerta = c.porGrupo.parado + c.porGrupo.alerta;
+            return (
+              <Link key={c.id} href={hrefDe(c.id)} className="pc-tab" data-on={atual?.id === c.id ? '1' : '0'}>
+                {c.nome}
+                <span style={{ fontSize: 12, fontWeight: 600, opacity: .7 }}>{c.engajados}/{c.total}</span>
+                {(alerta > 0 || c.erro) && (
+                  <span title={c.erro ? 'erro de leitura' : `${alerta} precisam de atenção`}
+                        style={{ width: 8, height: 8, borderRadius: 99, background: VERMELHO, flex: '0 0 auto' }} />
                 )}
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+
+      <div style={{ maxWidth: 1120, margin: '0 auto', padding: '28px 24px 72px' }}>
+        {atual
+          ? <Empresa c={atual} filtro={filtro} campanha={atual.id === 'czarnikow' ? campanha : null} />
+          : <VisaoGeral resumo={resumo} atencao={atencao} tot={tot} temHistorico={temHistorico} from={from} to={to} />}
+      </div>
+    </main>
+  );
+}
+
+// ---------------------------------------------------------------- visão geral
+
+function Kpi({ valor, rotulo, sub, destaque }) {
+  return (
+    <div style={{ background: '#fff', border: `1px solid ${BORDA}`, borderRadius: 14, padding: '16px 18px' }}>
+      <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: '-.02em', color: destaque || AZUL, lineHeight: 1.1 }}>{valor}</div>
+      <div style={{ fontSize: 13.5, color: CINZA, marginTop: 4, fontWeight: 500 }}>{rotulo}</div>
+      {sub && <div style={{ fontSize: 12, color: CINZA_CLARO, marginTop: 2 }}>{sub}</div>}
+    </div>
+  );
+}
+
+function Barra({ pct, h = 6 }) {
+  return (
+    <div style={{ height: h, borderRadius: 99, background: '#eceff5', overflow: 'hidden' }}>
+      <div style={{ width: `${pct}%`, height: '100%', borderRadius: 99, background: pct >= 100 ? '#16a34a' : AZUL }} />
+    </div>
+  );
+}
+
+function VisaoGeral({ resumo, atencao, tot, temHistorico, from, to }) {
+  return (
+    <>
+      <div className="pc-kpis" style={{ marginBottom: 32 }}>
+        <Kpi valor={`${tot.engajados}/${tot.alunos}`} rotulo="alunos engajados" sub="concluíram ao menos 1 lição" />
+        <Kpi valor={tot.licoes} rotulo="lições concluídas" sub="acumulado, todas as empresas" />
+        <Kpi valor={tot.semana === null ? '—' : `+${tot.semana}`} rotulo="nos últimos 7 dias"
+             sub={tot.semana === null ? 'histórico ainda insuficiente' : 'lições concluídas na semana'} />
+        <Kpi valor={atencao.length} rotulo="precisam de atenção" sub="7+ dias sem abrir o material"
+             destaque={atencao.length ? VERMELHO : AZUL} />
+      </div>
+
+      <Titulo>Empresas</Titulo>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 12, marginBottom: 36 }}>
+        {resumo.map((c) => {
+          const pct = c.total ? Math.round((c.engajados / c.total) * 100) : 0;
+          return (
+            <Link key={c.id} href={hrefDe(c.id)} className="pc-card">
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, marginBottom: 12 }}>
+                <span style={{ fontSize: 15, fontWeight: 700, color: AZUL }}>{c.nome}</span>
+                <span style={{ color: CINZA_CLARO, fontSize: 16 }}>→</span>
               </div>
-
-              {c.aviso && (
-                <p style={{ fontSize: 13, color: '#92400e', background: '#fffbeb', border: '1px solid #fde68a',
-                            borderRadius: 10, padding: '10px 14px', margin: '0 0 12px', lineHeight: 1.55 }}>
-                  {c.aviso}
-                </p>
-              )}
-              {c.erro && (
-                <p style={{ fontSize: 13, color: '#991b1b', background: '#fef2f2', border: '1px solid #fecaca',
-                            borderRadius: 10, padding: '10px 14px', margin: '0 0 12px' }}>
-                  Não consegui ler o progresso deste curso: {c.erro}
-                </p>
-              )}
-
-              <div style={{ overflowX: 'auto', background: '#fff', borderRadius: 12, border: '1px solid #ececf0' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 660 }}>
-                  <thead>
-                    <tr>
-                      <th style={th}>Aluno</th>
-                      <th style={{ ...th, width: '30%' }}>Progresso</th>
-                      {c.evo && <th style={{ ...th, width: 96 }}>7 dias</th>}
-                      <th style={th}>Última atividade</th>
-                      <th style={th}>Situação</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {alunos.length === 0 && (
-                      <tr><td style={{ ...td, color: '#9ca3af' }} colSpan={c.evo ? 5 : 4}>Nenhum aluno cadastrado.</td></tr>
-                    )}
-                    {alunos.map((a, i) => {
-                      const s = situacao(a);
-                      const pct = a.meta ? Math.min(100, Math.round((a.feitas / a.meta) * 100)) : 0;
-                      return (
-                        <tr key={i}>
-                          <td style={{ ...td, fontWeight: 600, color: a.inativo ? '#9ca3af' : '#111827' }}>
-                            {a.nome}
-                            {a.detalhe && (
-                              <div style={{ fontSize: 12, fontWeight: 400, color: '#9ca3af', marginTop: 2 }}>{a.detalhe}</div>
-                            )}
-                          </td>
-                          <td style={td}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                              <div style={{ flex: 1, minWidth: 70, height: 8, borderRadius: 100, background: '#eceff2', overflow: 'hidden' }}>
-                                <div style={{ width: `${pct}%`, height: '100%', background: pct >= 100 ? '#16a34a' : '#2f6f8f' }} />
-                              </div>
-                              <span style={{ fontSize: 13, fontWeight: 700, color: '#374151', minWidth: 52, textAlign: 'right' }}>
-                                {a.feitas}{a.meta ? `/${a.meta}` : ''}
-                              </span>
-                            </div>
-                            {a.extra > 0 && (
-                              <div style={{ fontSize: 12, color: '#9ca3af', marginTop: 3 }}>+{a.extra} fora da trilha</div>
-                            )}
-                          </td>
-                          {c.evo && (() => {
-                            // `novo` = o nome não existia no retrato de 7 dias atrás,
-                            // ou seja, entrou na turma nesta semana. Mostrar "+0" para
-                            // essa pessoa seria injusto: ela não teve a semana inteira.
-                            const m = c.evo.porAluno.get(a.nome);
-                            return (
-                              <td style={td}>
-                                {!m ? <span style={{ color: '#d1d5db' }}>—</span>
-                                  : m.novo ? (
-                                    <span style={{ fontSize: 12, fontWeight: 700, color: '#1d4ed8', background: '#eff6ff',
-                                                   border: '1px solid #1d4ed822', borderRadius: 100, padding: '4px 10px' }}>
-                                      novo
-                                    </span>
-                                  ) : (
-                                    <span style={{ fontSize: 14, fontWeight: 700, color: m.delta > 0 ? '#15803d' : '#d1d5db' }}>
-                                      {m.delta > 0 ? `+${m.delta}` : '0'}
-                                    </span>
-                                  )}
-                              </td>
-                            );
-                          })()}
-                          <td style={{ ...td, color: '#6b7280' }}>{fmtData(a.ultimaAt)}</td>
-                          <td style={td}>
-                            <span style={{ fontSize: 12, fontWeight: 700, color: s.cor, background: s.fundo,
-                                           border: `1px solid ${s.cor}22`, borderRadius: 100, padding: '4px 10px' }}>
-                              {s.rotulo}
-                            </span>
-                          </td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
-
-              {c.id === 'czarnikow' && campanha && (
-                <div style={{ marginTop: 22 }}>
-                  <h3 style={{ fontSize: 16, fontWeight: 700, margin: '0 0 2px' }}>
-                    {campanha.campanha.short} · {campanha.semestre.label}
-                  </h3>
-                  <p style={{ fontSize: 13, color: '#6b7280', margin: '0 0 10px' }}>
-                    {campanha.pontuaram} de {campanha.participantes} já pontuaram.
-                    Só gente real — o login de demonstração e o acesso do professor ficam de fora.
-                    O colaborador continua vendo apenas a própria posição; esta tabela é só sua.
-                  </p>
-                  <div style={{ overflowX: 'auto', background: '#fff', borderRadius: 12, border: '1px solid #ececf0' }}>
-                    <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 720 }}>
-                      <thead>
-                        <tr>
-                          <th style={{ ...th, width: 52 }}>#</th>
-                          <th style={th}>Colaborador</th>
-                          <th style={th}>Pontos</th>
-                          <th style={th}>Aula</th>
-                          <th style={th}>Material</th>
-                          <th style={th}>Lições</th>
-                          <th style={th}>Dias ativos</th>
-                          <th style={th}>Faixa</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {campanha.linhas.map((l) => (
-                          <tr key={l.student} style={{ background: l.total > 0 ? '#fff' : '#fafafa' }}>
-                            <td style={{ ...td, fontWeight: 800, color: l.posicao <= 5 && l.total > 0 ? '#b45309' : '#9ca3af' }}>
-                              {l.posicao}º
-                            </td>
-                            <td style={{ ...td, fontWeight: 600, color: l.total > 0 ? '#111827' : '#9ca3af' }}>{l.nome}</td>
-                            <td style={{ ...td, fontWeight: 800 }}>{l.total}</td>
-                            <td style={{ ...td, color: '#6b7280' }}>
-                              {l.pontosAula}
-                              <span style={{ fontSize: 12, color: '#9ca3af' }}>
-                                {' '}({l.aulas.general}t{l.aulas.private ? ` · ${l.aulas.private}p` : ''})
-                              </span>
-                            </td>
-                            <td style={{ ...td, color: '#6b7280' }}>
-                              {l.pontosMaterial}
-                              {l.perdidoNoTeto > 0 && (
-                                <span style={{ fontSize: 12, color: '#9ca3af' }}> (−{l.perdidoNoTeto} no teto)</span>
-                              )}
-                            </td>
-                            <td style={{ ...td, color: '#6b7280' }}>{l.licoes}</td>
-                            <td style={{ ...td, color: '#6b7280' }}>{l.diasAtivos}</td>
-                            <td style={{ ...td, color: '#6b7280' }}>{l.tier || '—'}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
+              {c.erro ? (
+                <div style={{ fontSize: 13, color: VERMELHO }}>Não consegui ler o progresso</div>
+              ) : (
+                <>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: 8 }}>
+                    <span style={{ fontSize: 26, fontWeight: 800, letterSpacing: '-.02em', color: c.engajados ? TEXTO : '#c9cdd6' }}>{c.engajados}</span>
+                    <span style={{ fontSize: 13, color: CINZA }}>de {c.total} engajados</span>
                   </div>
-                  <p style={{ fontSize: 12, color: '#9ca3af', marginTop: 10, lineHeight: 1.5 }}>
-                    Aula vale mais que material por desenho da campanha. &quot;t&quot; = aulas em turma,
-                    &quot;p&quot; = particulares. O teto semanal do material corta quem concentra tudo
-                    num dia só — quando isso acontece, aparece quanto foi cortado.
-                    As aulas só entram aqui quando forem lançadas no progresso do aluno.
-                  </p>
-                </div>
+                  <Barra pct={pct} />
+                  <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', fontSize: 12.5, color: CINZA, marginTop: 10 }}>
+                    <span>{c.licoes} {c.licoes === 1 ? 'lição' : 'lições'}</span>
+                    {c.evo && <span style={{ color: c.evo.licoes > 0 ? '#016630' : CINZA_CLARO, fontWeight: 600 }}>
+                      {c.evo.licoes > 0 ? `+${c.evo.licoes}` : '0'} em 7 dias
+                    </span>}
+                    {(c.porGrupo.parado + c.porGrupo.alerta) > 0 && (
+                      <span style={{ color: VERMELHO, fontWeight: 600 }}>{c.porGrupo.parado + c.porGrupo.alerta} em atenção</span>
+                    )}
+                  </div>
+                </>
               )}
-            </section>
+            </Link>
           );
         })}
       </div>
-    </main>
+
+      <Titulo sub="Quem abriu o material e parou — o toque do professor ou do RH faz diferença aqui. Quem nunca começou fica na tela de cada empresa.">
+        Precisam de atenção
+      </Titulo>
+      {atencao.length === 0 ? (
+        <p style={{ fontSize: 14, color: CINZA, background: '#fff', border: `1px solid ${BORDA}`, borderRadius: 12, padding: '16px 18px' }}>
+          Ninguém parado há 7 dias ou mais. Boa semana.
+        </p>
+      ) : (
+        <Tabela cabecalho={['Aluno', 'Empresa', 'Progresso', 'Última atividade', 'Situação']}>
+          {atencao.map((a, i) => (
+            <tr key={i} className="pc-row">
+              <td style={td}><div style={{ fontWeight: 600 }}>{a.nome}</div></td>
+              <td style={td}><Link href={hrefDe(a.empresaId)} className="pc-link">{a.empresa}</Link></td>
+              <td style={{ ...td, color: CINZA }}>{a.feitas}{a.meta ? `/${a.meta}` : ''}</td>
+              <td style={{ ...td, color: CINZA }}>{fmtData(a.ultimaAt)}</td>
+              <td style={td}><Selo s={a.sit} /></td>
+            </tr>
+          ))}
+        </Tabela>
+      )}
+
+      <details className="pc-notas" style={{ marginTop: 32 }}>
+        <summary>Como ler este painel</summary>
+        <div style={{ fontSize: 13, color: CINZA, lineHeight: 1.65, marginTop: 10, maxWidth: 820 }}>
+          <p style={{ margin: '0 0 8px' }}>
+            Uma lição só conta como concluída quando o aluno termina os exercícios dela. Engajado = concluiu ao menos uma.
+            Acessos são dos últimos 30 dias ({from} a {to}).
+          </p>
+          <p style={{ margin: '0 0 8px' }}>
+            Nos cursos com login, acesso da coordenação e dos professores deixou de entrar na conta em 18/08/2026.
+          </p>
+          {!temHistorico && (
+            <p style={{ margin: 0 }}>
+              O movimento semanal aparece quando houver uma semana de retratos diários gravados pelo cron.
+            </p>
+          )}
+        </div>
+      </details>
+    </>
+  );
+}
+
+// ------------------------------------------------------------------- empresa
+
+function Empresa({ c, filtro, campanha }) {
+  const alunos = [...c.alunos]
+    .filter((a) => filtro === 'todos' || a.sit.grupo === filtro)
+    .sort((a, b) => (a.inativo - b.inativo) || (b.feitas - a.feitas) || a.nome.localeCompare(b.nome, 'pt-BR'));
+  const pctEng = c.total ? Math.round((c.engajados / c.total) * 100) : 0;
+  const LinkMaterial = c.externo ? 'a' : Link;
+  const extra = c.externo ? { target: '_blank', rel: 'noreferrer' } : {};
+
+  return (
+    <>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 20 }}>
+        <h1 style={{ fontSize: 28, fontWeight: 800, letterSpacing: '-.02em', margin: 0, color: AZUL, flex: 1, minWidth: 200 }}>{c.nome}</h1>
+        <LinkMaterial href={c.href} {...extra} style={{
+          background: VERMELHO, color: '#fff', fontWeight: 600, fontSize: 14, textDecoration: 'none',
+          borderRadius: 999, padding: '10px 18px',
+        }}>
+          Abrir o material →
+        </LinkMaterial>
+        {c.painel && (
+          <Link href={c.painel} style={{ color: AZUL, fontWeight: 600, fontSize: 14, textDecoration: 'none',
+                                        border: `1px solid ${AZUL}`, borderRadius: 999, padding: '9px 16px' }}>
+            Painel do professor →
+          </Link>
+        )}
+      </div>
+
+      {c.erro && (
+        <p style={{ fontSize: 13.5, color: '#8f0e20', background: '#fdecee', border: '1px solid #f6c3ca',
+                    borderRadius: 12, padding: '12px 16px', margin: '0 0 20px' }}>
+          Não consegui ler o progresso deste curso: {c.erro}
+        </p>
+      )}
+
+      <div className="pc-kpis" style={{ marginBottom: 24 }}>
+        <div style={{ background: '#fff', border: `1px solid ${BORDA}`, borderRadius: 14, padding: '16px 18px' }}>
+          <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: '-.02em', color: AZUL, lineHeight: 1.1 }}>
+            {c.engajados}<span style={{ fontSize: 17, color: CINZA_CLARO, fontWeight: 700 }}>/{c.total}</span>
+          </div>
+          <div style={{ fontSize: 13.5, color: CINZA, margin: '4px 0 10px', fontWeight: 500 }}>engajados · {pctEng}%</div>
+          <Barra pct={pctEng} />
+        </div>
+        <Kpi valor={c.licoes} rotulo={c.externo ? "preparações de aula enviadas" : "lições concluídas"} />
+        <Kpi valor={c.evo ? `+${c.evo.licoes}` : '—'} rotulo="nos últimos 7 dias"
+             sub={c.evo ? null : 'histórico ainda insuficiente'} />
+        <Kpi valor={c.externo ? '—' : c.acessos} rotulo="acessos em 30 dias" sub={c.contagem} />
+      </div>
+
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 14 }}>
+        {FILTROS.map((f) => {
+          const n = f.id === 'todos' ? c.alunos.length : c.porGrupo[f.id];
+          if (f.id !== 'todos' && !n) return null;
+          return (
+            <Link key={f.id} href={hrefDe(c.id, f.id)} className="pc-chip" data-on={filtro === f.id ? '1' : '0'}>
+              {f.rotulo} <span style={{ opacity: .6 }}>{n}</span>
+            </Link>
+          );
+        })}
+      </div>
+
+      <Tabela cabecalho={['Aluno', 'Progresso', c.evo ? '7 dias' : null, 'Última atividade', 'Situação']}>
+        {alunos.length === 0 && (
+          <tr><td style={{ ...td, color: CINZA_CLARO }} colSpan={5}>Ninguém nesta situação.</td></tr>
+        )}
+        {alunos.map((a, i) => {
+          const pct = a.meta ? Math.min(100, Math.round((a.feitas / a.meta) * 100)) : 0;
+          // `novo` = o nome não existia no retrato de 7 dias atrás, ou seja,
+          // entrou na turma nesta semana: "+0" seria injusto com essa pessoa.
+          const m = c.evo?.porAluno.get(a.nome);
+          return (
+            <tr key={i} className="pc-row">
+              <td style={{ ...td, color: a.inativo ? CINZA_CLARO : TEXTO }}>
+                <div style={{ fontWeight: 600 }}>{a.nome}</div>
+                {a.detalhe && <div style={{ fontSize: 12, color: CINZA_CLARO, marginTop: 2 }}>{a.detalhe}</div>}
+              </td>
+              <td style={{ ...td, minWidth: 180 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <div style={{ flex: 1, minWidth: 70 }}>{a.meta ? <Barra pct={pct} h={8} /> : null}</div>
+                  <span style={{ fontSize: 13, fontWeight: 700, color: TEXTO, minWidth: 52, textAlign: 'right' }}>
+                    {a.feitas}{a.meta ? `/${a.meta}` : ''}
+                  </span>
+                </div>
+                {a.extra > 0 && <div style={{ fontSize: 12, color: CINZA_CLARO, marginTop: 3 }}>+{a.extra} fora da trilha</div>}
+              </td>
+              {c.evo && (
+                <td style={td}>
+                  {!m ? <span style={{ color: '#c9cdd6' }}>—</span>
+                    : m.novo ? <span style={{ fontSize: 12, fontWeight: 700, color: AZUL, background: AZUL_CLARO, borderRadius: 99, padding: '4px 10px' }}>novo</span>
+                    : <span style={{ fontSize: 14, fontWeight: 700, color: m.delta > 0 ? '#016630' : '#c9cdd6' }}>{m.delta > 0 ? `+${m.delta}` : '0'}</span>}
+                </td>
+              )}
+              <td style={{ ...td, color: CINZA }}>{fmtData(a.ultimaAt)}</td>
+              <td style={td}><Selo s={a.sit} /></td>
+            </tr>
+          );
+        })}
+      </Tabela>
+
+      {c.aviso && (
+        <details className="pc-notas" style={{ marginTop: 20 }}>
+          <summary>Notas sobre os dados desta empresa</summary>
+          <p style={{ fontSize: 13, color: CINZA, lineHeight: 1.65, margin: '10px 0 0', maxWidth: 820 }}>{c.aviso}</p>
+        </details>
+      )}
+
+      {campanha && <Campanha campanha={campanha} />}
+    </>
+  );
+}
+
+function Campanha({ campanha }) {
+  return (
+    <section style={{ marginTop: 36 }}>
+      <Titulo sub={`${campanha.pontuaram} de ${campanha.participantes} já pontuaram. Só gente real — o login de demonstração e o acesso do professor ficam de fora. O colaborador continua vendo apenas a própria posição; esta tabela é só sua.`}>
+        {campanha.campanha.short} · {campanha.semestre.label}
+      </Titulo>
+      <Tabela cabecalho={['#', 'Colaborador', 'Pontos', 'Aula', 'Material', 'Lições', 'Dias ativos', 'Faixa']}>
+        {campanha.linhas.map((l) => (
+          <tr key={l.student} className="pc-row" style={{ background: l.total > 0 ? '#fff' : '#fafbfc' }}>
+            <td style={{ ...td, fontWeight: 800, color: l.posicao <= 5 && l.total > 0 ? VERMELHO : CINZA_CLARO }}>{l.posicao}º</td>
+            <td style={{ ...td, fontWeight: 600, color: l.total > 0 ? TEXTO : CINZA_CLARO }}>{l.nome}</td>
+            <td style={{ ...td, fontWeight: 800, color: AZUL }}>{l.total}</td>
+            <td style={{ ...td, color: CINZA }}>
+              {l.pontosAula}
+              <span style={{ fontSize: 12, color: CINZA_CLARO }}>
+                {' '}({l.aulas.general}t{l.aulas.private ? ` · ${l.aulas.private}p` : ''})
+              </span>
+            </td>
+            <td style={{ ...td, color: CINZA }}>
+              {l.pontosMaterial}
+              {l.perdidoNoTeto > 0 && <span style={{ fontSize: 12, color: CINZA_CLARO }}> (−{l.perdidoNoTeto} no teto)</span>}
+            </td>
+            <td style={{ ...td, color: CINZA }}>{l.licoes}</td>
+            <td style={{ ...td, color: CINZA }}>{l.diasAtivos}</td>
+            <td style={{ ...td, color: CINZA }}>{l.tier || '—'}</td>
+          </tr>
+        ))}
+      </Tabela>
+      <p style={{ fontSize: 12, color: CINZA_CLARO, marginTop: 10, lineHeight: 1.5 }}>
+        Aula vale mais que material por desenho da campanha. &quot;t&quot; = aulas em turma,
+        &quot;p&quot; = particulares. O teto semanal do material corta quem concentra tudo
+        num dia só — quando isso acontece, aparece quanto foi cortado.
+        As aulas só entram aqui quando forem lançadas no progresso do aluno.
+      </p>
+    </section>
+  );
+}
+
+// ------------------------------------------------------------------- peças
+
+const td = { padding: '12px 14px', fontSize: 14, borderBottom: `1px solid #f0f1f5`, verticalAlign: 'middle' };
+
+function Titulo({ children, sub }) {
+  return (
+    <div style={{ margin: '0 0 12px' }}>
+      <h2 style={{ fontSize: 17, fontWeight: 700, margin: 0, color: AZUL }}>{children}</h2>
+      {sub && <p style={{ fontSize: 13, color: CINZA, margin: '4px 0 0', lineHeight: 1.55, maxWidth: 820 }}>{sub}</p>}
+    </div>
+  );
+}
+
+function Tabela({ cabecalho, children }) {
+  const th = {
+    textAlign: 'left', padding: '11px 14px', fontSize: 11, color: CINZA, textTransform: 'uppercase',
+    letterSpacing: '.6px', borderBottom: `1px solid ${BORDA}`, fontWeight: 700, background: '#fafbfd',
+  };
+  return (
+    <div style={{ overflowX: 'auto', background: '#fff', borderRadius: 14, border: `1px solid ${BORDA}` }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 620 }}>
+        <thead><tr>{cabecalho.filter(Boolean).map((h) => <th key={h} style={th}>{h}</th>)}</tr></thead>
+        <tbody>{children}</tbody>
+      </table>
+    </div>
+  );
+}
+
+function Selo({ s }) {
+  return (
+    <span style={{ display: 'inline-block', fontSize: 12, fontWeight: 700, color: s.cor, background: s.fundo,
+                   borderRadius: 999, padding: '4px 10px', whiteSpace: 'nowrap' }}>
+      {s.rotulo}
+    </span>
   );
 }
