@@ -176,16 +176,60 @@ export function CheckRow({ checked, setChecked, onReset, canCheck, c, checkLabel
   );
 }
 
+/* Texto de feedback com formatação leve.
+
+   O conteúdo das lições escreve os porquês com <strong>, <em> e <br> — o mesmo
+   jeito das introduções, que são HTML. Os exercícios, porém, imprimiam esses
+   campos como texto puro, e o aluno via as tags cruas ("<strong>at</strong>").
+   Aqui só essas três tags viram formatação, montadas como elementos React (sem
+   innerHTML): qualquer outra coisa segue como texto. Texto sem tag sai idêntico. */
+const RICO_TAG = /<(\/?)(strong|b|em|i|br)\s*\/?>/gi;
+const RICO_ENT = { '&amp;': '&', '&nbsp;': '\u00a0', '&quot;': '"', '&#39;': "'", '&lt;': '<', '&gt;': '>' };
+const desentidade = (t) => t.replace(/&(amp|nbsp|quot|#39|lt|gt);/g, (m) => RICO_ENT[m]);
+
+export function Rico({ children }) {
+  if (typeof children !== 'string') return children ?? null;
+  if (!/[<&]/.test(children)) return children;
+  const raiz = { kids: [] };
+  const pilha = [raiz];
+  let ultimo = 0;
+  let k = 0;
+  const topo = () => pilha[pilha.length - 1];
+  const texto = (t) => { if (t) topo().kids.push(desentidade(t)); };
+  for (const m of children.matchAll(RICO_TAG)) {
+    texto(children.slice(ultimo, m.index));
+    ultimo = m.index + m[0].length;
+    const tag = m[2].toLowerCase();
+    if (tag === 'br') { topo().kids.push(<br key={k++} />); continue; }
+    if (!m[1]) { pilha.push({ tag, kids: [] }); continue; }
+    // fecha a tag correspondente mais próxima; fechamento solto é ignorado
+    const at = pilha.map((n) => n.tag).lastIndexOf(tag);
+    if (at <= 0) continue;
+    while (pilha.length > at) {
+      const no = pilha.pop();
+      const El = no.tag === 'b' ? 'strong' : no.tag === 'i' ? 'em' : no.tag;
+      topo().kids.push(<El key={k++}>{no.kids}</El>);
+    }
+  }
+  texto(children.slice(ultimo));
+  while (pilha.length > 1) {   // tag aberta e nunca fechada: fecha no fim
+    const no = pilha.pop();
+    const El = no.tag === 'b' ? 'strong' : no.tag === 'i' ? 'em' : no.tag;
+    topo().kids.push(<El key={k++}>{no.kids}</El>);
+  }
+  return <>{raiz.kids}</>;
+}
+
 export function ResultLine({ ok, c, explanation, corrections }) {
   return (
     <div style={{ marginTop: 14, padding: '10px 14px', borderRadius: 8, background: ok ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5'), border: `1px solid ${ok ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')}`, color: ok ? (c.okText || '#22543D') : (c.badText || '#742A2A'), fontSize: 14, lineHeight: 1.55 }}>
-      {ok ? `✓ ${explanation || 'Tudo certo!'}` : '✗ Quase — confira as respostas certas:'}
+      {ok ? <>✓ <Rico>{explanation || 'Tudo certo!'}</Rico></> : '✗ Quase — confira as respostas certas:'}
       {!ok && corrections?.length > 0 && (
         <ul style={{ margin: '8px 0 0', paddingLeft: 20 }}>
-          {corrections.map((t, i) => <li key={i} style={{ marginBottom: 3 }}>{t}</li>)}
+          {corrections.map((t, i) => <li key={i} style={{ marginBottom: 3 }}><Rico>{t}</Rico></li>)}
         </ul>
       )}
-      {!ok && explanation && <div style={{ marginTop: 8, opacity: 0.85 }}>{explanation}</div>}
+      {!ok && explanation && <div style={{ marginTop: 8, opacity: 0.85 }}><Rico>{explanation}</Rico></div>}
     </div>
   );
 }

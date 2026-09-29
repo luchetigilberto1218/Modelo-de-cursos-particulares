@@ -2,7 +2,7 @@
 
 import { useContext, useEffect, useRef, useState } from 'react';
 import AudioPlayer from '../AudioPlayer';
-import { ExShell, Instruction, CheckRow, ResultLine, TranscriptToggle, maybeShuffle, norm, seededShuffle, hashString, BlockAudio, englishOf } from './BhKit';
+import { ExShell, Instruction, CheckRow, ResultLine, TranscriptToggle, maybeShuffle, norm, seededShuffle, hashString, BlockAudio, englishOf, Rico } from './BhKit';
 
 /*
   Baker Hughes — banco de formatos de exercício das trilhas personalizadas.
@@ -195,7 +195,7 @@ function TrueFalse({ ex, c, onChecked }) {
                     border: `1px solid ${ans[i] === v ? accent : c.grayLight || '#E2E9E7'}` }}>{labels[k]}</button>
               ))}
             </div>
-            {checked && !isRight(i) && it.why && <div style={{ marginTop: 9, fontSize: 13.5, color: (c.badText || '#742A2A') }}>{it.why}</div>}
+            {checked && !isRight(i) && it.why && <div style={{ marginTop: 9, fontSize: 13.5, color: (c.badText || '#742A2A') }}><Rico>{it.why}</Rico></div>}
           </div>
         ))}
       </div>
@@ -278,7 +278,7 @@ function OddOneOut({ ex, c, onChecked }) {
                 );
               })}
             </div>
-            {checked && g.why && <div style={{ marginTop: 7, fontSize: 13.5, color: c.gray || '#5F7570' }}>{g.why}</div>}
+            {checked && g.why && <div style={{ marginTop: 7, fontSize: 13.5, color: c.gray || '#5F7570' }}><Rico>{g.why}</Rico></div>}
           </div>
         ))}
       </div>
@@ -399,7 +399,7 @@ function ErrorSpot({ ex, c, onChecked }) {
                   );
                 })}
               </div>
-              {checked && <div style={{ marginTop: 8, fontSize: 13.5, color: isRight(i) ? (c.okText || '#22543D') : (c.badText || '#742A2A') }}><strong>{it.wrong} → {it.fix}</strong>{it.why ? ` · ${it.why}` : ''}</div>}
+              {checked && <div style={{ marginTop: 8, fontSize: 13.5, color: isRight(i) ? (c.okText || '#22543D') : (c.badText || '#742A2A') }}><strong>{it.wrong} → {it.fix}</strong>{it.why ? <> · <Rico>{it.why}</Rico></> : ''}</div>}
             </div>
           );
         })}
@@ -512,7 +512,7 @@ function SerialChoice({ ex, c, onChecked }) {
                 );
               })}
             </div>
-            {checked && it.why && <div style={{ marginTop: 9, fontSize: 13.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}>{it.why}</div>}
+            {checked && it.why && <div style={{ marginTop: 9, fontSize: 13.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}><Rico>{it.why}</Rico></div>}
           </div>
         ))}
       </div>
@@ -570,7 +570,7 @@ function FlowChoice({ ex, c, onChecked, voiceType }) {
                       border: `1.5px solid ${state === 'ok' ? (c.okBorder || '#9AE6B4') : state === 'bad' ? (c.badBorder || '#FEB2B2') : c.grayLight || '#E2E9E7'}`,
                       color: c.text || '#20302D' }}>
                     {o.text}
-                    {answered && on && o.why && <div style={{ marginTop: 6, fontSize: 13, color: o.correct ? (c.okText || '#22543D') : (c.badText || '#742A2A') }}>{o.why}</div>}
+                    {answered && on && o.why && <div style={{ marginTop: 6, fontSize: 13, color: o.correct ? (c.okText || '#22543D') : (c.badText || '#742A2A') }}><Rico>{o.why}</Rico></div>}
                   </button>
                 );
               })}
@@ -580,7 +580,7 @@ function FlowChoice({ ex, c, onChecked, voiceType }) {
       </div>
       {done && (
         <div style={{ marginTop: 16, padding: '12px 15px', borderRadius: 10, background: acc === 1 ? (c.okBg || '#F0FFF4') : c.accentLight || '#E4F7EC', border: `1px solid ${acc === 1 ? (c.okBorder || '#9AE6B4') : accent}`, fontSize: 14.5 }}>
-          <strong>{score}/{turns.length}</strong> — {ex.explanation || 'Conversa concluída.'}
+          <strong>{score}/{turns.length}</strong> — <Rico>{ex.explanation || 'Conversa concluída.'}</Rico>
           <button onClick={() => { setPicks({}); setStep(0); }} style={{ marginLeft: 12, padding: '6px 14px', borderRadius: 8, border: `1px solid ${c.grayLight || '#E2E9E7'}`, background: c.card || '#fff', color: c.text || 'inherit', fontSize: 13, fontWeight: 700, fontFamily: 'inherit', cursor: 'pointer' }}>Refazer</button>
         </div>
       )}
@@ -624,7 +624,7 @@ function ListenChoose({ ex, c, onChecked, voiceType }) {
                 );
               })}
             </div>
-            {checked && it.why && <div style={{ marginTop: 8, fontSize: 13.5, color: c.gray || '#5F7570' }}>{it.why}</div>}
+            {checked && it.why && <div style={{ marginTop: 8, fontSize: 13.5, color: c.gray || '#5F7570' }}><Rico>{it.why}</Rico></div>}
           </div>
         ))}
       </div>
@@ -777,7 +777,7 @@ function ReadingTask({ ex, c, onChecked, voiceType }) {
                 );
               })}
             </div>
-            {checked && q.why && <div style={{ marginTop: 8, fontSize: 13.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}>{q.why}</div>}
+            {checked && q.why && <div style={{ marginTop: 8, fontSize: 13.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}><Rico>{q.why}</Rico></div>}
           </div>
         ))}
       </div>
@@ -824,7 +824,7 @@ function EmailTriage({ ex, c, onChecked }) {
                 );
               })}
             </div>
-            {checked && q.why && <div style={{ marginTop: 8, fontSize: 13.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}>{q.why}</div>}
+            {checked && q.why && <div style={{ marginTop: 8, fontSize: 13.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}><Rico>{q.why}</Rico></div>}
           </div>
         ))}
       </div>
@@ -866,7 +866,7 @@ function SwipeChoice({ ex, c, onChecked }) {
                 );
               })}
             </div>
-            {checked && it.why && <div style={{ marginTop: 9, fontSize: 13.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}>{it.why}</div>}
+            {checked && it.why && <div style={{ marginTop: 9, fontSize: 13.5, color: c.gray || '#5F7570', lineHeight: 1.5 }}><Rico>{it.why}</Rico></div>}
           </div>
         ))}
       </div>
@@ -1047,7 +1047,7 @@ function Dialogue({ ex, c, onChecked, voiceType }) {
           <div style={{ display: 'grid', gap: 14 }}>
             {questions.map((q, i) => (
               <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: checked ? (isRight(i) ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5')) : (c.card || '#fff'), border: `1px solid ${checked ? (isRight(i) ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')) : grayLight}` }}>
-                <p style={{ margin: '0 0 9px', fontSize: 14.5, fontWeight: 600, color: c.ink || navy, lineHeight: 1.5 }}>{q.q}</p>
+                <p style={{ margin: '0 0 9px', fontSize: 14.5, fontWeight: 600, color: c.ink || navy, lineHeight: 1.5 }}>{q.q || q.prompt}</p>
                 <div style={{ display: 'grid', gap: 7 }}>
                   {(q.options || []).map((o, oi) => {
                     const on = pick[i] === oi;
@@ -1061,7 +1061,7 @@ function Dialogue({ ex, c, onChecked, voiceType }) {
                     );
                   })}
                 </div>
-                {checked && q.why && <div style={{ marginTop: 8, fontSize: 13.5, color: gray, lineHeight: 1.55 }}>{q.why}</div>}
+                {checked && q.why && <div style={{ marginTop: 8, fontSize: 13.5, color: gray, lineHeight: 1.55 }}><Rico>{q.why}</Rico></div>}
               </div>
             ))}
           </div>

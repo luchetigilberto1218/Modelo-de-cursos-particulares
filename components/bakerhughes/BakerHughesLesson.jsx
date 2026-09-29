@@ -6,7 +6,7 @@ import Exercise from '../Exercise';
 import AudioPlayer, { AudioPrefs } from '../AudioPlayer';
 import SpeakingExercise from '../SpeakingExercise';
 import BhExercise, { BH_EXTRA_TYPES, BH_UNGRADED_TYPES } from './BhExercises';
-import { maybeShuffle, englishOf } from './BhKit';
+import { maybeShuffle, englishOf, Rico } from './BhKit';
 import { useIdentity, useLessonDone } from './progress';
 
 /*
@@ -18,6 +18,20 @@ import { useIdentity, useLessonDone } from './progress';
 */
 
 const RACIONAL_TYPES = ['matching', 'multipleChoice', 'fillGap', 'reorder', 'writing', 'speaking', 'dictation', 'info'];
+
+// Tira <strong>/<em>/<br> dos textos de feedback antes de entregar ao <Exercise>
+// compartilhado, que não interpreta HTML. Só mexe no que tem tag.
+const TAG_LEVE = /<\/?(strong|b|em|i)\s*>|<br\s*\/?>/gi;
+const limpa = (t) => (typeof t === 'string' && /</.test(t) ? t.replace(TAG_LEVE, '').replace(/&amp;/g, '&') : t);
+function semTagsNoFeedback(ex) {
+  if (!ex) return ex;
+  const out = { ...ex, explanation: limpa(ex.explanation) };
+  if (Array.isArray(ex.options)) out.options = ex.options.map((o) => (o && typeof o === 'object' ? { ...o, whyWrong: limpa(o.whyWrong) } : o));
+  if (ex.commonErrors && typeof ex.commonErrors === 'object') {
+    out.commonErrors = Object.fromEntries(Object.entries(ex.commonErrors).map(([k, v]) => [k, limpa(v)]));
+  }
+  return out;
+}
 
 function normalize(s) {
   return (s || '').toString().trim().toLowerCase().replace(/[.,!?]/g, '').replace(/\s+/g, ' ');
@@ -97,9 +111,12 @@ export default function BakerHughesLesson({ lesson, theme, clientId, prevNum, ne
     if (RACIONAL_TYPES.includes(ex.type)) {
       // O <Exercise> é compartilhado com Racional e Czarnikow, então não se
       // mexe nele: as alternativas chegam já embaralhadas de fora.
-      const baralhado = shuffleOpts && Array.isArray(ex.options)
+      const embaralhado = shuffleOpts && Array.isArray(ex.options)
         ? { ...ex, options: maybeShuffle(ex.options, true, `mc|${ex.title || ''}|${ex.prompt || ''}`) }
         : ex;
+      // E ele imprime explicação e "porquê" como texto puro: as tags de ênfase
+      // das lições (<strong>, <em>) apareceriam cruas. Saem aqui, antes de entrar.
+      const baralhado = semTagsNoFeedback(embaralhado);
       // O <Exercise> pinta os seus próprios cartões em branco e deixa parte do
       // texto herdar a cor de fora. Em tema escuro isso vira claro sobre claro,
       // então aqui ele é isolado: dentro deste bloco a tinta volta a ser escura.
@@ -726,10 +743,10 @@ function CheckRow({ checked, setChecked, onReset, canCheck, c }) {
 function ResultLine({ ok, c, explanation, corrections }) {
   return (
     <div style={{ marginTop: 14, padding: '10px 14px', borderRadius: 8, background: ok ? (c.okBg || '#F0FFF4') : (c.badBg || '#FFF5F5'), border: `1px solid ${ok ? (c.okBorder || '#9AE6B4') : (c.badBorder || '#FEB2B2')}`, color: ok ? (c.okText || '#22543D') : (c.badText || '#742A2A'), fontSize: 14 }}>
-      {ok ? `✓ ${explanation || 'Tudo certo!'}` : '✗ Quase — confira as respostas certas:'}
+      {ok ? <>✓ <Rico>{explanation || 'Tudo certo!'}</Rico></> : '✗ Quase — confira as respostas certas:'}
       {!ok && corrections?.length > 0 && (
         <ul style={{ margin: '8px 0 0', paddingLeft: 20 }}>
-          {corrections.map((c2, i) => <li key={i} style={{ marginBottom: 3 }}>{c2}</li>)}
+          {corrections.map((c2, i) => <li key={i} style={{ marginBottom: 3 }}><Rico>{c2}</Rico></li>)}
         </ul>
       )}
     </div>
