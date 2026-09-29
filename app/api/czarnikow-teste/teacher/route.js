@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getSession, getUsers } from '../../../../lib/auth';
-import { listAll, setTaught, isValidStudent } from '../../../../lib/czarnikow-teste-progress-store';
+import { listAll, setTaught, isValidStudent, materialActivity } from '../../../../lib/czarnikow-teste-progress-store';
 import { getCourseLite } from '../../../../lib/courses';
 
 /*
@@ -80,9 +80,8 @@ export async function GET() {
     );
     const fechada = (num) => doneNums.has(num) || taughtNums.has(num);
 
-    // datas de conclusão: a mais recente é a "última atividade" visível ao professor
-    const dates = Object.values(state).map((s) => s?.doneAt).filter(Boolean).sort();
-    const lastDone = dates.length ? dates[dates.length - 1] : null;
+    // mesma leitura do /admin/alunos (lib/coordenacao.js): só o que o aluno fez
+    const atividade = materialActivity(doc);
 
     const designated = (u.track || []).map((t) => `${u.level || 'essentials'}|${t}`);
     // blocos a mostrar: os designados + qualquer outro em que ele já tenha estudado
@@ -159,8 +158,8 @@ export async function GET() {
       tracks: (u.track || []).map((t) => trackName.get(t) || t),
       lessonsDone: doneNums.size,
       lessonsTaught: taughtNums.size,
-      lastAt: lastDone || doc?.at || null,
-      started: !!doc,
+      lastAt: atividade.lastAt,
+      started: atividade.started,
       blocks: blockRows,
     };
   });

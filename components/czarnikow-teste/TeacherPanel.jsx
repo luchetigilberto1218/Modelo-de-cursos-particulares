@@ -289,7 +289,7 @@ function AlunoCard({ aluno, clientId, onChange }) {
 
       {aluno.lastAt && (
         <p style={{ fontSize: 12, color: C.gray, margin: '10px 0 0' }}>
-          Última lição concluída em {fmtDate(aluno.lastAt)}
+          Última atividade no material em {fmtDate(aluno.lastAt)}
         </p>
       )}
     </article>

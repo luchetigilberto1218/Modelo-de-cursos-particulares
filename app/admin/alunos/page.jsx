@@ -61,7 +61,9 @@ function situacao(a) {
   // mas dizer "desativado" o põe no mesmo balaio de quem saiu da empresa.
   if (a.pendente) return { grupo: 'pendente', rotulo: 'a liberar', cor: '#1d4ed8', fundo: '#eff6ff' };
   if (a.inativo) return { grupo: 'inativo', rotulo: 'desativado', cor: '#8a90a0', fundo: '#f1f2f5' };
-  if (!a.feitas) return { grupo: 'nunca', rotulo: 'nunca começou', cor: '#a15c07', fundo: '#fff7e6' };
+  // `comecou` vem de quem sabe distinguir "praticou sem concluir" (Czarnikow);
+  // nos demais, começar = ter concluído pelo menos uma lição.
+  if (!(a.comecou ?? a.feitas > 0)) return { grupo: 'nunca', rotulo: 'nunca começou', cor: '#a15c07', fundo: '#fff7e6' };
   const d = diasDesde(a.ultimaAt);
   if (d !== null && d >= 14) return { grupo: 'parado', rotulo: `parado há ${d} dias`, cor: VERMELHO, fundo: '#fdecee' };
   if (d !== null && d >= 7) return { grupo: 'alerta', rotulo: `${d} dias sem abrir`, cor: '#a15c07', fundo: '#fff7e6' };
@@ -133,7 +135,7 @@ export default async function PainelCoordenacao({ searchParams }) {
       ...c,
       alunos,
       total: ativos.length,
-      engajados: ativos.filter((a) => a.feitas > 0).length,
+      engajados: ativos.filter((a) => a.comecou ?? a.feitas > 0).length,
       licoes: ativos.reduce((s, a) => s + a.feitas, 0),
       acessos: acessos.get(c.id) || 0,
       evo: evo.get(c.id) || null,
