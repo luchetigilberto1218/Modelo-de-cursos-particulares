@@ -39,11 +39,18 @@ const LOGO = 'https://alumni.org.br/wp-content/uploads/2025/12/logo_alumni-bco-1
 
 const DIA = 24 * 60 * 60 * 1000;
 
+// Dias de CALENDÁRIO no horário de Brasília (não blocos de 24h): duas pessoas
+// com a mesma data de última atividade mostram o mesmo número de dias.
+function diasCorridos(t) {
+  const dia = (ms) => new Date(ms).toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
+  return Math.round((Date.parse(dia(Date.now())) - Date.parse(dia(t))) / 86400000);
+}
+
 function diasDesde(iso) {
   if (!iso) return null;
   const t = Date.parse(iso);
   if (Number.isNaN(t)) return null;
-  return Math.floor((Date.now() - t) / DIA);
+  return diasCorridos(t);
 }
 
 function fmtData(iso) {

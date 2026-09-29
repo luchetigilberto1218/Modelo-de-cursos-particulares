@@ -29,16 +29,22 @@ function fmtDate(iso) {
 }
 
 // "hoje" / "ontem" / "há 5 dias" — o professor lê tempo relativo mais rápido que data.
+// Dias de CALENDÁRIO no horário de Brasília (não blocos de 24h): duas pessoas
+// com a mesma data de última atividade mostram o mesmo número de dias.
+function diasCorridos(t) {
+  const dia = (ms) => new Date(ms).toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
+  return Math.round((Date.parse(dia(Date.now())) - Date.parse(dia(t))) / 86400000);
+}
+
 function since(iso) {
   if (!iso) return null;
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return null;
-  const days = Math.floor((Date.now() - d.getTime()) / 86400000);
+  const days = diasCorridos(d.getTime());
   if (days <= 0) return 'hoje';
   if (days === 1) return 'ontem';
-  if (days < 30) return `há ${days} dias`;
-  const months = Math.round(days / 30);
-  return months === 1 ? 'há 1 mês' : `há ${months} meses`;
+  // sempre em dias: "há 1 mês" escondia se eram 30 ou 44 dias
+  return `há ${days} dias`;
 }
 
 export default function TeacherPanel({ clientId, theme }) {
