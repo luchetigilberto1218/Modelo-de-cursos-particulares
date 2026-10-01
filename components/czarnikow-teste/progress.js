@@ -29,8 +29,13 @@ export function getLesson(studentId, num) {
   return all[studentId]?.[num] || { checks: [], done: false };
 }
 
+/* Visão master em "Dados reais": o coordenador está olhando o progresso de um
+   colaborador — nada pode ser gravado (o servidor também recusa com 403). */
+const READ_ONLY = new Set();
+export function isReadOnly(studentId) { return READ_ONLY.has(studentId); }
+
 export function setLessonState(studentId, num, state) {
-  if (!studentId) return;
+  if (!studentId || READ_ONLY.has(studentId)) return;
   const all = readAll();
   all[studentId] = all[studentId] || {};
   all[studentId][num] = { ...all[studentId][num], ...state };
@@ -51,7 +56,11 @@ export function useIdentity(enabled = true) {
     let alive = true;
     fetch('/api/czarnikow-teste/me', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => { if (alive && d?.student) { identityCache = d; setId(d); } })
+      .then((d) => {
+        if (!alive || !d?.student) return;
+        if (d.readOnly) READ_ONLY.add(d.student);
+        identityCache = d; setId(d);
+      })
       .catch(() => {});
     return () => { alive = false; };
   }, [enabled]);
@@ -152,6 +161,12 @@ export async function pullRemote(studentId) {
     const remote = await res.json();
     if (!remote || typeof remote !== 'object') return;
     const all = readAll();
+    if (READ_ONLY.has(studentId)) {
+      // só leitura: espelha o servidor, sem misturar com nada local
+      all[studentId] = remote;
+      writeAll(all);
+      return;
+    }
     const local = { ...(all[studentId] || {}) };
     if (mergeRemoteInto(local, remote)) {
       all[studentId] = local;
@@ -162,7 +177,7 @@ export async function pullRemote(studentId) {
 }
 
 export function pushRemote(studentId) {
-  if (typeof window === 'undefined' || !studentId) return;
+  if (typeof window === 'undefined' || !studentId || READ_ONLY.has(studentId)) return;
   try {
     const all = readAll();
     const map = all[studentId] || {};

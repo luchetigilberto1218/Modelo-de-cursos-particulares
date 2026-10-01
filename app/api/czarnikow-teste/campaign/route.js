@@ -1,5 +1,15 @@
 import { NextResponse } from 'next/server';
-import { getSession, getUsers } from '../../../../lib/auth';
+import { getSession as getRealSession, getUsers } from '../../../../lib/auth';
+import { effectiveIdentity } from '../../../../lib/czarnikow-master';
+
+// Visão master: o coordenador vê a campanha de quem está "sendo" (sandbox ou
+// colaborador escolhido). Para os demais a sessão é a própria — nada muda.
+async function getSession() {
+  const s = await getRealSession();
+  if (s?.role !== 'coordinator') return s;
+  const me = await effectiveIdentity(s);
+  return { ...s, id: me.id };
+}
 import { readDoc, listAll, isValidStudent } from '../../../../lib/czarnikow-teste-progress-store';
 import { getCourseLite } from '../../../../lib/courses';
 import { computeScore, SEMESTER } from '../../../../components/czarnikow-teste/campaign';

@@ -18,7 +18,7 @@ import { useIdentity } from './progress';
 
   "Toda vez que entra" = uma vez por SESSÃO do navegador (sessionStorage), não a
   cada clique entre páginas: num modal a cada navegação ninguém mais lê. Fechou a
-  aba e voltou outro dia, aparece de novo. Coordenador não vê (é o Gilberto).
+  aba e voltou outro dia, aparece de novo. O coordenador vê o da visão master escolhida.
 */
 
 const C = {

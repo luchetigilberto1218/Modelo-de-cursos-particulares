@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { isCzarnikow } from '../lib/czarnikow';
 import EntryReminder from './czarnikow-teste/EntryReminder';
+import MasterBar from './czarnikow-teste/MasterBar';
 
 export default function NavBar({ user, theme, clientId }) {
   const router = useRouter();
@@ -59,6 +60,8 @@ export default function NavBar({ user, theme, clientId }) {
 
       {/* Lembrete grande ao entrar (professor: aula dada · aluno: estou pronto). */}
       {isCzarnikow(clientId) && <EntryReminder />}
+      {/* Visão master (só coordenador): aluno/professor · prova/dados reais. */}
+      {isCzarnikow(clientId) && <MasterBar clientId={clientId} />}
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
         {/* Atalho para o painel do professor — só nas rotas da CZ e só para

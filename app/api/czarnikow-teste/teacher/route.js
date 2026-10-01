@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { getSession, getUsers } from '../../../../lib/auth';
 import { listAll, setTaught, isValidStudent, materialActivity } from '../../../../lib/czarnikow-teste-progress-store';
 import { getCourseLite } from '../../../../lib/courses';
+import { effectiveIdentity, PROVA_ID, PROVA_NAME, PROVA_PROFILE } from '../../../../lib/czarnikow-master';
 
 /*
   Painel do professor (Czarnikow · ambiente de teste).
@@ -61,10 +62,16 @@ export async function GET() {
   }
   const byStudent = new Map(docs.map((d) => [d.student, d]));
 
-  const roster = getUsers().filter(
+  let roster = getUsers().filter(
     // quem saiu (`disabled`) deixa a fila do professor; o progresso fica guardado
     (u) => u.role === 'student' && (u.clients || []).includes(CLIENT) && !u.disabled
   );
+  // Visão master em PROVA: o painel mostra só o aluno-sandbox, para que
+  // "aula dada" nunca encoste em colaborador real. Em "Dados reais" vê o roster.
+  if (session.role === 'coordinator') {
+    const me = await effectiveIdentity(session);
+    if (!me.readOnly) roster = [{ id: PROVA_ID, name: PROVA_NAME, role: 'student', ...PROVA_PROFILE }];
+  }
 
   const students = roster.map((u) => {
     const doc = byStudent.get(u.id) || null;
@@ -187,6 +194,13 @@ export async function POST(request) {
   try { body = await request.json(); } catch { body = {}; }
   const student = typeof body.student === 'string' ? body.student : null;
   const num = Number(body.num);
+  // Visão master: "Dados reais" é só leitura; na prova só o sandbox é gravável.
+  if (session.role === 'coordinator') {
+    const me = await effectiveIdentity(session);
+    if (me.readOnly || student !== PROVA_ID) {
+      return NextResponse.json({ error: 'read_only' }, { status: 403 });
+    }
+  }
   if (!student || !isValidStudent(student) || !Number.isFinite(num)) {
     return NextResponse.json({ error: 'bad_request' }, { status: 400 });
   }

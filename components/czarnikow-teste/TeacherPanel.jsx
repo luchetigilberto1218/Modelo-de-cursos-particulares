@@ -360,6 +360,14 @@ function AulaDadaBtn({ student, num, onChange }) {
     return <span style={{ fontSize: 13.5, color: C.gray, alignSelf: 'center' }}>encerrando…</span>;
   }
 
+  if (estado === 'leitura') {
+    return (
+      <span style={{ fontSize: 13, color: C.gray, alignSelf: 'center', maxWidth: 200, lineHeight: 1.4 }}>
+        Dados reais: só leitura (nada foi gravado).
+      </span>
+    );
+  }
+
   if (estado === 'erro') {
     return (
       <span style={{ fontSize: 13, color: '#B42318', alignSelf: 'center', maxWidth: 200, lineHeight: 1.4 }}>
@@ -380,6 +388,7 @@ function AulaDadaBtn({ student, num, onChange }) {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ student, num, taught: true }),
               });
+              if (r.status === 403) { setEstado('leitura'); return; } // visão master, dados reais
               if (!r.ok) throw new Error(String(r.status));
               setEstado('idle');
               onChange?.();
