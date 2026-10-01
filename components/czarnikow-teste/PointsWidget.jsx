@@ -81,9 +81,10 @@ export default function PointsWidget({ clientId, compact = false }) {
           data-czt-pulso={lancamento ? '' : undefined}
           style={{
             fontSize: 13, fontWeight: 600, color: '#fff', whiteSpace: 'nowrap',
-            border: `1px solid ${lancamento ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.25)'}`,
+            border: lancamento ? '1px solid #C8102E' : '1px solid rgba(255,255,255,0.25)',
+            background: lancamento ? '#C8102E' : 'transparent',
+            fontWeight: lancamento ? 700 : 600,
             borderRadius: 999, padding: '8px 16px',
-            '--czt-pulso-cor': 'rgba(255,255,255,0.45)',
           }}
         >
           Ver campanha →

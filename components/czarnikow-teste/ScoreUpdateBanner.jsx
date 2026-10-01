@@ -42,12 +42,32 @@ const CHAVE = 'czt-aviso-pontuacao';
    a cada 2,8s. Quem pediu menos movimento no sistema vê o botão parado. */
 export const PULSO_CSS = `
   @keyframes czt-pulso {
-    0%   { box-shadow: 0 0 0 0 var(--czt-pulso-cor, rgba(200,16,46,0.45)); }
-    70%  { box-shadow: 0 0 0 10px rgba(200,16,46,0); }
-    100% { box-shadow: 0 0 0 0 rgba(200,16,46,0); }
+    0%   { box-shadow: 0 0 0 0 rgba(200,16,46,0.70), 0 4px 14px rgba(200,16,46,0.35); transform: scale(1); }
+    40%  { transform: scale(1.06); }
+    70%  { box-shadow: 0 0 0 18px rgba(200,16,46,0), 0 4px 14px rgba(200,16,46,0.35); transform: scale(1); }
+    100% { box-shadow: 0 0 0 0 rgba(200,16,46,0), 0 4px 14px rgba(200,16,46,0.35); transform: scale(1); }
   }
-  [data-czt-pulso] { animation: czt-pulso 2.8s ease-out infinite; }
-  @media (prefers-reduced-motion: reduce) { [data-czt-pulso] { animation: none !important; } }
+  @keyframes czt-brilho {
+    0%, 55% { transform: translateX(-120%) skewX(-20deg); }
+    85%, 100% { transform: translateX(260%) skewX(-20deg); }
+  }
+  @keyframes czt-card {
+    0%, 100% { box-shadow: 0 6px 20px rgba(28,43,74,0.10), 0 0 0 0 rgba(200,16,46,0); }
+    50%      { box-shadow: 0 6px 20px rgba(28,43,74,0.10), 0 0 0 3px rgba(200,16,46,0.28); }
+  }
+  [data-czt-pulso] {
+    position: relative; overflow: hidden; display: inline-block;
+    animation: czt-pulso 2s ease-out infinite;
+  }
+  [data-czt-pulso]::after {
+    content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 40%;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.55), rgba(255,255,255,0));
+    animation: czt-brilho 3s ease-in-out infinite; pointer-events: none;
+  }
+  [data-czt-card-pulso] { animation: czt-card 2s ease-in-out infinite !important; }
+  @media (prefers-reduced-motion: reduce) {
+    [data-czt-pulso], [data-czt-pulso]::after, [data-czt-card-pulso] { animation: none !important; }
+  }
 `;
 
 /* true durante a janela de 72h de um lançamento (independe de ter dispensado
@@ -98,6 +118,7 @@ export default function ScoreUpdateBanner({ clientId }) {
     <div
       role="status"
       data-czt-aviso
+      data-czt-card-pulso
       style={{
         position: 'relative',
         display: 'flex',
