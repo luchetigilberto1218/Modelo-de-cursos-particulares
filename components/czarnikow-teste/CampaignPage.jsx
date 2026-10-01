@@ -96,6 +96,7 @@ export default function CampaignPage({ clientId, theme }) {
                   label="Sua posição"
                   value={me.allTied ? '—' : (me.position ? `${me.position}º` : '—')}
                   hint={me.allTied ? 'todos empatados' : (me.participants ? `de ${me.participants}` : null)}
+                  highlight={!me.allTied && !!me.position}
                 />
                 <HeroStat label="Lições concluídas" value={me.score.lessonsDone} />
               </div>
@@ -185,18 +186,22 @@ export default function CampaignPage({ clientId, theme }) {
 }
 
 /* ── hero ─────────────────────────────────────────────────────────────────── */
-function HeroStat({ label, value, big, tint, hint }) {
+// `highlight`: a colocação do participante sai em dourado, em contraste com os
+// outros quadros do hero — é o número que ele mais procura nesta tela.
+function HeroStat({ label, value, big, tint, hint, highlight }) {
   return (
     <div style={{
-      background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.14)',
+      background: highlight ? `linear-gradient(135deg, #D9B46E, ${C.gold})` : 'rgba(255,255,255,0.08)',
+      border: highlight ? '1px solid rgba(255,255,255,0.35)' : '1px solid rgba(255,255,255,0.14)',
+      boxShadow: highlight ? '0 6px 22px rgba(176,141,87,0.45)' : 'none',
       borderRadius: 14, padding: '14px 18px', minWidth: 130,
     }}>
-      <div style={{ fontSize: 11.5, letterSpacing: 0.6, textTransform: 'uppercase', color: 'rgba(255,255,255,0.6)', fontWeight: 600, marginBottom: 6 }}>
+      <div style={{ fontSize: 11.5, letterSpacing: 0.6, textTransform: 'uppercase', color: highlight ? 'rgba(27,39,54,0.75)' : 'rgba(255,255,255,0.6)', fontWeight: 700, marginBottom: 6 }}>
         {label}
       </div>
-      <div style={{ fontSize: big ? 30 : 19, fontWeight: 700, lineHeight: 1.1, color: tint || '#fff' }}>
+      <div style={{ fontSize: highlight ? 30 : (big ? 30 : 19), fontWeight: 700, lineHeight: 1.1, color: highlight ? C.navy : (tint || '#fff') }}>
         {value}
-        {hint && <span style={{ fontSize: 13, fontWeight: 500, color: 'rgba(255,255,255,0.55)', marginLeft: 5 }}>{hint}</span>}
+        {hint && <span style={{ fontSize: 13, fontWeight: 600, color: highlight ? 'rgba(27,39,54,0.7)' : 'rgba(255,255,255,0.55)', marginLeft: 5 }}>{hint}</span>}
       </div>
     </div>
   );
@@ -455,7 +460,7 @@ function Standing({ s }) {
     <>
       <div style={{ display: 'flex', gap: 26, alignItems: 'baseline', flexWrap: 'wrap', marginBottom: 22 }}>
         <div>
-          <span style={{ fontSize: 46, fontWeight: 700, letterSpacing: -2, color: C.navy, lineHeight: 1 }}>{position}º</span>
+          <span style={{ fontSize: 46, fontWeight: 700, letterSpacing: -2, color: C.gold, lineHeight: 1 }}>{position}º</span>
           <span style={{ fontSize: 16, color: C.gray, marginLeft: 8 }}>de {participants} participantes</span>
         </div>
         {aheadOfPct !== null && aheadOfPct !== undefined && (
