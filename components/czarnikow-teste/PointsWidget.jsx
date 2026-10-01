@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useCampaign } from './progress';
 import { CAMPAIGN, SEMESTER, TIERS } from './campaign';
+import { useJanelaLancamento, PULSO_CSS } from './ScoreUpdateBanner';
 
 /*
   Faixa compacta da campanha, para o hub e as páginas de trilha.
@@ -18,6 +19,7 @@ const TIER_COLOR = { loading: '#8FA3B8', underway: '#2AAAE2', oncourse: '#7FC4EC
 
 export default function PointsWidget({ clientId, compact = false }) {
   const { data, loading } = useCampaign(true);
+  const lancamento = useJanelaLancamento();
   const me = data?.me;
   if (loading || !me) return null;
 
@@ -74,10 +76,16 @@ export default function PointsWidget({ clientId, compact = false }) {
           )}
         </div>
 
-        <span style={{
-          fontSize: 13, fontWeight: 600, color: '#fff', whiteSpace: 'nowrap',
-          border: '1px solid rgba(255,255,255,0.25)', borderRadius: 999, padding: '8px 16px',
-        }}>
+        {lancamento && <style>{PULSO_CSS}</style>}
+        <span
+          data-czt-pulso={lancamento ? '' : undefined}
+          style={{
+            fontSize: 13, fontWeight: 600, color: '#fff', whiteSpace: 'nowrap',
+            border: `1px solid ${lancamento ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.25)'}`,
+            borderRadius: 999, padding: '8px 16px',
+            '--czt-pulso-cor': 'rgba(255,255,255,0.45)',
+          }}
+        >
           Ver campanha →
         </span>
       </div>

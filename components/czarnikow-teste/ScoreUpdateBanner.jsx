@@ -36,6 +36,28 @@ const C = {
 
 const CHAVE = 'czt-aviso-pontuacao';
 
+/* Pulsação SÓBRIA para o botão da campanha durante a janela do lançamento
+   (pedido do usuário, 01/10/2026: "piscante por 3 dias, sem ficar vulgar").
+   Nada de piscar a cor nem crescer o botão: um halo fino que se expande e some,
+   a cada 2,8s. Quem pediu menos movimento no sistema vê o botão parado. */
+export const PULSO_CSS = `
+  @keyframes czt-pulso {
+    0%   { box-shadow: 0 0 0 0 var(--czt-pulso-cor, rgba(200,16,46,0.45)); }
+    70%  { box-shadow: 0 0 0 10px rgba(200,16,46,0); }
+    100% { box-shadow: 0 0 0 0 rgba(200,16,46,0); }
+  }
+  [data-czt-pulso] { animation: czt-pulso 2.8s ease-out infinite; }
+  @media (prefers-reduced-motion: reduce) { [data-czt-pulso] { animation: none !important; } }
+`;
+
+/* true durante a janela de 72h de um lançamento (independe de ter dispensado
+   o banner — o botão da campanha continua chamando atenção nesses dias). */
+export function useJanelaLancamento() {
+  const [ativo, setAtivo] = useState(false);
+  useEffect(() => { setAtivo(!!anuncioAtivo(new Date())); }, []);
+  return ativo;
+}
+
 function foiDispensado(data) {
   try {
     return localStorage.getItem(`${CHAVE}:${data}`) === '1';
@@ -101,6 +123,7 @@ export default function ScoreUpdateBanner({ clientId }) {
         @media (prefers-reduced-motion: reduce) {
           [data-czt-aviso] { animation: none !important; }
         }
+        ${PULSO_CSS}
         @media (max-width: 560px) {
           [data-czt-aviso-cta] { width: 100%; text-align: center; }
         }
@@ -135,6 +158,7 @@ export default function ScoreUpdateBanner({ clientId }) {
       <Link
         href={`/${clientId}/campanha`}
         data-czt-aviso-cta
+        data-czt-pulso
         style={{
           flex: '0 0 auto',
           background: C.red,
