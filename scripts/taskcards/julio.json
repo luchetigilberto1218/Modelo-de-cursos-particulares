@@ -1,0 +1,337 @@
+{
+ "student": "julio",
+ "lessons": [
+  {
+   "num": 21,
+   "taskCard": {
+    "title": "Help the cost team and the design team agree",
+    "minutes": 20,
+    "scenario": {
+     "text": "It is Tuesday. The decision is due on Friday. The cost team and the design team do not agree about the cooling pipes in the data halls. You are the contracts manager. You need to help them find a solution.",
+     "people": [
+      { "name": "Ana", "role": "Cost team", "says": "We have only R$ 1 million left for changes. Two pipes cost R$ 1.8 million more. We cannot pay for this." },
+      { "name": "Leo", "role": "Design team", "says": "AWS wants two pipes. If one pipe stops, the other pipe keeps the servers cool. One pipe is a risk for the client." }
+     ],
+     "table": {
+      "caption": "The options",
+      "head": ["Option", "Extra cost", "Meets the AWS requirement?"],
+      "rows": [
+       ["A · Two pipes in Data Hall 1 and Data Hall 2", "R$ 1.8 million", "Yes"],
+       ["B · One pipe in both data halls", "R$ 0", "No"],
+       ["C · Two pipes in Data Hall 1 now, Data Hall 2 in phase 2", "R$ 0.9 million now", "Yes, for phase 1"]
+      ]
+     }
+    },
+    "task": "Help Ana and Leo reach a compromise. Answer the questions. Then answer what they say next.",
+    "questions": [
+     "What should the two teams do to find a solution?",
+     "Which option could work for both teams? Why?",
+     "How can you help them reach a compromise?",
+     "What should you do before Friday?"
+    ],
+    "starters": [
+     "I understand both sides.",
+     "The cost team should…",
+     "The design team should…",
+     "Option C could work because…",
+     "Can we agree on…?",
+     "Before Friday, we should…"
+    ],
+    "success": [
+     "I speak for about one minute.",
+     "I use should, could or can at least 3 times.",
+     "I do not choose a side: I talk about both teams."
+    ],
+    "replies": {
+     "from": "Ana and Leo answer you",
+     "lines": [
+      { "who": "Ana · Cost", "text": "Option C is still R$ 0.9 million. Why should we pay that now?" },
+      { "who": "Leo · Design", "text": "Option C is OK for me, but AWS must say yes." },
+      { "who": "Ana · Cost", "text": "Can the design team find a cheaper pipe?" },
+      { "who": "Leo · Design", "text": "One pipe is a big risk. I do not accept option B." },
+      { "who": "Ana · Cost", "text": "Who can talk to AWS about this?" },
+      { "who": "Leo · Design", "text": "Can we decide today?" }
+     ]
+    },
+    "model": {
+     "basic": "I understand both sides. Ana wants to save money. Leo wants to meet the AWS requirement. Option C could work. We can use two pipes in Data Hall 1 now and decide about Data Hall 2 later. We should ask AWS to approve this before Friday.",
+     "better": "I understand both sides: the budget is tight, and the AWS requirement is clear. I think option C could be a good compromise. We could install two pipes in Data Hall 1 now and leave Data Hall 2 for phase 2. The cost team should check the R$ 0.9 million in the budget, and the design team should confirm that AWS accepts it. Can we agree on this and present it to AWS on Thursday?"
+    },
+    "teacher": {
+     "background": "Data centers usam água gelada para resfriar os servidores. A AWS costuma exigir redundância: dois caminhos de tubulação, para que, se um falhar, o outro continue resfriando. É mais seguro e mais caro. A opção C divide a obra em fases, um meio-termo comum nesse tipo de projeto. Não é preciso saber engenharia: os números da tela bastam para a conversa.",
+     "watch": [
+      "Modal + verbo sem 'to': 'should talk', nunca 'should to talk'.",
+      "Modal não leva -s: 'Ana should', nunca 'Ana shoulds'.",
+      "Se o Júlio tomar partido ('Ana is right'), lembre: o mediador fala dos dois lados."
+     ]
+    }
+   }
+  },
+  {
+   "num": 40,
+   "taskCard": {
+    "title": "Close the meeting with the Amazon PM",
+    "minutes": 20,
+    "scenario": {
+     "text": "The weekly meeting with Mark Chen, the Amazon project manager, is almost over. You talked about three points. Now you need to recap the decisions, ask for approval and say what is still open.",
+     "people": [
+      { "name": "Mark Chen", "role": "Amazon project manager", "says": "OK, I think we are done. Anything else?" }
+     ],
+     "table": {
+      "caption": "Your meeting notes",
+      "head": ["Point", "Status"],
+      "rows": [
+       ["Generator test", "Agreed: this week, Wednesday to Friday. The Racional team is preparing it now."],
+       ["Phase 2 (Data Hall 2)", "Racional needs Mark's approval to start."],
+       ["UPS battery delivery date", "Open point: we are still waiting for the date from the supplier."]
+      ]
+     }
+    },
+    "task": "Close the meeting. Recap the three points, ask for approval and ask Mark to confirm in writing.",
+    "questions": [
+     "What do you and Mark agree on?",
+     "What is the Racional team doing this week?",
+     "What do you need from Mark?",
+     "What is still open?"
+    ],
+    "starters": [
+     "Let me recap what we agreed today.",
+     "This week, we are…",
+     "We need your approval for…",
+     "There is one open point:…",
+     "Can you confirm this in writing?"
+    ],
+    "success": [
+     "I recap all three points.",
+     "I use present simple (we need, we agree) and present continuous (we are preparing).",
+     "I end with a request: confirm in writing."
+    ],
+    "replies": {
+     "from": "Mark answers you",
+     "lines": [
+      { "who": "Mark · Amazon", "text": "Are you testing the generators on Wednesday or on Thursday?" },
+      { "who": "Mark · Amazon", "text": "Do you need my approval today?" },
+      { "who": "Mark · Amazon", "text": "Who is preparing the test?" },
+      { "who": "Mark · Amazon", "text": "I don't know the battery date. Can we talk next week?" },
+      { "who": "Mark · Amazon", "text": "Why do you need this in writing? We agree." },
+      { "who": "Mark · Amazon", "text": "OK. Please send me the notes today." }
+     ]
+    },
+    "model": {
+     "basic": "Let me recap what we agreed today. We are doing the generator test this week, from Wednesday to Friday. We need your approval for phase 2. There is one open point: the UPS battery date. Can you confirm this in writing? I will send a follow-up email today.",
+     "better": "Before we finish, let me recap what we agreed. The team is preparing the generator test now, and we are running it from Wednesday to Friday. For phase 2, we need your formal approval before we start in Data Hall 2. There is one open point: we are still waiting for the UPS battery date from the supplier. I will send a follow-up email today. Can you confirm the decisions in writing?"
+    },
+    "teacher": {
+     "background": "O owner's representative é quem fala pelo cliente (a Amazon) na obra: aprova fases, dá o sign-off e cobra registros. O teste de geradores verifica se eles aguentam a carga antes de o data center operar. UPS são as baterias que seguram a energia nos segundos entre a queda da rede e a partida do gerador. Regra do mercado: decisão sem registro escrito não vale. Por isso o pedido 'confirm in writing'.",
+     "watch": [
+      "Ação desta semana = present continuous: 'we are preparing', não 'we preparing'.",
+      "Verbos de estado ficam no simple: 'we need', nunca 'we are needing'.",
+      "Terceira pessoa com -s: 'the supplier confirms'."
+     ]
+    }
+   }
+  },
+  {
+   "num": 45,
+   "taskCard": {
+    "title": "Disagree with AWS, firmly and politely",
+    "minutes": 20,
+    "scenario": {
+     "text": "Sarah Miller, from the AWS team, says the cable trays for the fiber network are Racional's work, at no extra cost. You read the contract again. Annex B says something different. The value is R$ 640 thousand. You want to keep a good relationship, but you cannot accept this.",
+     "people": [
+      { "name": "Sarah Miller", "role": "AWS team", "says": "The fiber cable trays are in your scope. We are not going to pay extra for them." },
+      { "name": "The contract", "role": "Annex B, item 7", "says": "Fiber network cable trays: by Owner." }
+     ],
+     "table": {
+      "caption": "The escalation path in the contract",
+      "head": ["Level", "Who", "Time"],
+      "rows": [
+       ["1 · Working level", "Júlio and Sarah", "5 working days"],
+       ["2 · Next level", "The project directors of Racional and AWS", "10 working days"],
+       ["3 · Formal dispute", "Executives, with a formal claim", "As in the contract"]
+      ]
+     }
+    },
+    "task": "Answer Sarah. Keep Racional's position, stay polite, and explain the next step if you do not agree.",
+    "questions": [
+     "What does the contract say?",
+     "What would Racional like to do first?",
+     "Could you solve this at the working level? How?",
+     "Who would you involve if there is a deadlock?"
+    ],
+    "starters": [
+     "With all due respect, our position remains the same.",
+     "Annex B says…",
+     "We would prefer to…",
+     "Could we…?",
+     "If we reach a deadlock, we could escalate to…"
+    ],
+    "success": [
+     "I say Racional's position clearly, with the contract as my reason.",
+     "I use would or could at least 3 times.",
+     "I stay polite: no 'you are wrong'."
+    ],
+    "replies": {
+     "from": "Sarah answers you",
+     "lines": [
+      { "who": "Sarah · AWS", "text": "Everybody knows this is your scope." },
+      { "who": "Sarah · AWS", "text": "We don't have budget for this." },
+      { "who": "Sarah · AWS", "text": "If you don't install them, the schedule will slip." },
+      { "who": "Sarah · AWS", "text": "Why don't you just do it now, and we talk later?" },
+      { "who": "Sarah · AWS", "text": "Could you send me Annex B?" },
+      { "who": "Sarah · AWS", "text": "OK. Who would you like to involve at the next level?" }
+     ]
+    },
+    "model": {
+     "basic": "I understand your point, Sarah. With all due respect, our position remains the same. Annex B, item 7, says the fiber cable trays are by Owner. We would prefer to solve this at the working level. Could we review the contract together this week? If we reach a deadlock, we could escalate to the project directors.",
+     "better": "I understand your concern about the budget, Sarah. With all due respect, our position remains the same: Annex B, item 7, says the fiber cable trays are by Owner. We would like to resolve this amicably at the working level. Could we review the annex together on Thursday? We would also be happy to send a price, so AWS can decide. If we reach a deadlock, we would suggest taking it to the project directors, as the contract says."
+    },
+    "teacher": {
+     "background": "Cable trays (bandejamento) são a estrutura por onde passam os cabos. 'By Owner' no contrato quer dizer que o item é responsabilidade do dono da obra (a AWS ou um fornecedor dela), não da Racional. Quase todo contrato grande tem um caminho de escalonamento: primeiro o nível operacional tenta resolver; se travar (deadlock), o assunto sobe para os diretores. O objetivo do Júlio não é ganhar a briga, é manter a posição sem estragar a relação.",
+     "watch": [
+      "Would/could + verbo sem 'to': 'we would prefer', 'could we review'.",
+      "Pergunta com could começa pelo modal: 'Could we review…?'.",
+      "'You are wrong' e 'that is not true' soam agressivos; sugira 'I see it differently'."
+     ]
+    }
+   }
+  },
+  {
+   "num": 106,
+   "taskCard": {
+    "title": "Give your weekly status to Amazon",
+    "minutes": 20,
+    "scenario": {
+     "text": "It is Monday. You are in the weekly management meeting with the Amazon team. Karen Lopez, the Amazon project manager, asks for your status. Use the report below.",
+     "people": [
+      { "name": "Karen Lopez", "role": "Amazon project manager", "says": "Good morning, Júlio. Can you give us your update?" }
+     ],
+     "table": {
+      "caption": "Weekly report · week 32",
+      "head": ["When", "What"],
+      "rows": [
+       ["Last week · done", "The team completed the foundation of the generator yard."],
+       ["Last week · done", "Racional sent the cooling contract to Amazon."],
+       ["This week · in progress", "The team is installing the switchgear in Electrical Room 1 (60% done)."],
+       ["Next week · plan", "The team is going to start the pressure test of the cooling pipes."],
+       ["Risk", "The chillers will arrive 2 weeks late. The supplier had a problem at the factory."],
+       ["Highlight", "90 days with zero safety incidents."],
+       ["Overall", "On track for the final date."]
+      ]
+     }
+    },
+    "task": "Give your status update in about one minute: last week, this week, next week, one risk and one highlight.",
+    "questions": [
+     "What did the team complete last week?",
+     "What is the team working on this week?",
+     "What is the team going to do next week?",
+     "Is the project on track?",
+     "What risk do you want to flag?"
+    ],
+    "starters": [
+     "Last week, we completed…",
+     "This week, we are working on…",
+     "Next week, we are going to…",
+     "Overall, we are on track.",
+     "I want to flag one risk:…",
+     "One highlight:…"
+    ],
+    "success": [
+     "I cover last week, this week and next week.",
+     "I use the right tense for each: completed / are installing / are going to start.",
+     "I flag the risk and say what we are doing about it."
+    ],
+    "replies": {
+     "from": "Karen answers you",
+     "lines": [
+      { "who": "Karen · Amazon", "text": "Why are the chillers late?" },
+      { "who": "Karen · Amazon", "text": "Will this affect the final date?" },
+      { "who": "Karen · Amazon", "text": "What are you doing to recover the two weeks?" },
+      { "who": "Karen · Amazon", "text": "When are you going to finish Electrical Room 1?" },
+      { "who": "Karen · Amazon", "text": "Did you send the cooling contract to our legal team?" },
+      { "who": "Karen · Amazon", "text": "Great news about safety. Can you share it with the site team?" }
+     ]
+    },
+    "model": {
+     "basic": "Last week, we completed the foundation of the generator yard. We also sent the cooling contract to Amazon. This week, we are installing the switchgear in Electrical Room 1. Next week, we are going to start the pressure test of the cooling pipes. I want to flag one risk: the chillers will arrive two weeks late. Overall, we are on track.",
+     "better": "Good morning, Karen. Last week, we completed the foundation of the generator yard and sent the cooling contract to Amazon. This week, the team is installing the switchgear in Electrical Room 1, and we are at 60%. Next week, we are going to start the pressure test of the cooling pipes. I want to flag one risk: the chillers will arrive two weeks late because of a problem at the factory. We are working with the supplier on a recovery plan, and we are still on track for the final date. One highlight: we reached 90 days with zero safety incidents."
+    },
+    "teacher": {
+     "background": "Switchgear é o conjunto de painéis que distribui a energia elétrica. Chillers são as máquinas que geram a água gelada para resfriar o data center; um atraso nelas preocupa o cliente porque empurra os testes finais. O teste de pressão confere se a tubulação não vaza. Na reunião gerencial semanal, o cliente quer ver a tendência: o que fechou, o que está andando, o que vem e os riscos, sem detalhe técnico demais.",
+     "watch": [
+      "Passado irregular: 'we sent', não 'we sended'.",
+      "Em andamento = am/is/are + -ing: 'we are installing', não 'we installing'.",
+      "Plano = going to + verbo: 'we are going to start', não 'we going to start'."
+     ]
+    }
+   }
+  },
+  {
+   "num": 120,
+   "taskCard": {
+    "title": "AWS asks for extra work: propose a change order",
+    "minutes": 20,
+    "scenario": {
+     "text": "Mark Chen, the Amazon project manager, asks for two extra fuel tanks for the generators. With them, the generators can run for 72 hours without new fuel. The contract says 48 hours. This is out of scope. Your team did a quick impact analysis.",
+     "people": [
+      { "name": "Mark Chen", "role": "Amazon project manager", "says": "We need 72 hours of fuel, not 48. Please add two tanks. It is a small change, right?" }
+     ],
+     "table": {
+      "caption": "Impact analysis",
+      "head": ["", "Baseline (contract)", "Mark's request"],
+      "rows": [
+       ["Fuel autonomy", "48 hours", "72 hours"],
+       ["Fuel tanks", "4", "6"],
+       ["Extra cost", "—", "R$ 2.4 million"],
+       ["Extra time", "—", "+3 weeks (the tanks take 10 weeks to arrive)"],
+       ["Civil work", "—", "A new concrete base for the tanks"]
+      ]
+     }
+    },
+    "task": "Explain that the request is out of scope, show the impact, and propose a formal change order.",
+    "questions": [
+     "Is the request in the contract?",
+     "What will happen to the cost if Racional adds the tanks?",
+     "What will happen to the schedule if Racional adds the tanks?",
+     "What will you send if Mark wants the tanks?",
+     "What will happen if Mark approves the change order this week?"
+    ],
+    "starters": [
+     "Let me check the baseline.",
+     "This request is out of scope.",
+     "If we add two tanks, the cost will…",
+     "If we add two tanks, the schedule will…",
+     "If you approve the change order this week, we will…"
+    ],
+    "success": [
+     "I say clearly that the request is out of scope.",
+     "I use if + present, will + verb at least 3 times.",
+     "I end with the next step: a formal change order."
+    ],
+    "replies": {
+     "from": "Mark answers you",
+     "lines": [
+      { "who": "Mark · Amazon", "text": "It's a small change. Can you just add it?" },
+      { "who": "Mark · Amazon", "text": "Three weeks is too long. Can you do it faster?" },
+      { "who": "Mark · Amazon", "text": "Can you do it with no extra cost?" },
+      { "who": "Mark · Amazon", "text": "If we approve today, when will you start?" },
+      { "who": "Mark · Amazon", "text": "Why do you need a new concrete base?" },
+      { "who": "Mark · Amazon", "text": "OK. Send me the change order by Friday." }
+     ]
+    },
+    "model": {
+     "basic": "Let me check the baseline. The contract says 48 hours, so this request is out of scope. If we add two tanks, the cost will increase by R$ 2.4 million. The schedule will move three weeks. We need a formal change order. If you approve it this week, we will order the tanks on Monday.",
+     "better": "I understand the need for more autonomy, Mark. Let me check the baseline: the contract says 48 hours and four tanks, so 72 hours is out of scope. If we add two tanks, the cost will increase by R$ 2.4 million, and the schedule will move three weeks, because the tanks take ten weeks to arrive. We also need a new concrete base. I will send you a formal change order with the impact analysis. If you approve it this week, we will order the tanks on Monday."
+    },
+    "teacher": {
+     "background": "Autonomia de combustível = quantas horas os geradores funcionam sem reabastecer quando falta energia da rede; 48 h e 72 h são valores comuns em data centers. Change order é o aditivo formal: toda mudança de escopo precisa dele, com custo e prazo, antes de ser executada. Sem ele, a Racional faz o trabalho e não recebe. Baseline é o escopo, o custo e o prazo originais do contrato.",
+     "watch": [
+      "Depois de 'if' não vai 'will': 'If you approve', nunca 'If you will approve'.",
+      "'will' + verbo sem 'to': 'the cost will increase'.",
+      "'increase by R$ 2.4 million': 'by' antes do valor."
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -17,6 +17,7 @@ import ClassroomActivity from './ClassroomActivities';
 import RacionalFlashcards from './RacionalFlashcards';
 import LessonBonus from './LessonBonus';
 import TeacherCompass from './TeacherCompass';
+import TaskCard from './TaskCard';
 
 function pad(n) { return String(n).padStart(3, '0'); }
 
@@ -204,6 +205,15 @@ export default function RacionalLessonView({ course, lesson, prevNum = null, nex
           title: ACT_LABEL[act.kind] || T('Atividade', 'Activity'),
           render: () => <ClassroomActivity activity={act} voice={voice} level={level} accent={accent} />,
         });
+      });
+    }
+
+    // Tela: Tarefa guiada (aula ao vivo) — ponte entre os exercícios e a fala livre
+    if (lesson.taskCard) {
+      screens.push({
+        kicker: T('Tarefa guiada · aula ao vivo', 'Guided task · live class'),
+        title: lesson.taskCard.title,
+        render: () => <TaskCard card={lesson.taskCard} studentName={meta.studentName} voice={voice} accent={accent} />,
       });
     }
 
@@ -435,6 +445,11 @@ function TeacherGuide({ guide, lesson, studentId }) {
         {guide.overview && <p className="rc-teacher-over">{guide.overview}</p>}
         {guide.focus && <p className="rc-teacher-focus"><b>Foco:</b> {guide.focus}</p>}
         {guide.note && <div className="rc-teacher-note">{guide.note}</div>}
+        {lesson?.taskCard && (
+          <div className="rc-tc-pointer">
+            <b>Tarefa guiada pronta nesta aula:</b> tela “Tarefa guiada · aula ao vivo”, com cenário, perguntas e falas do cliente para mostrar ao aluno. Use-a como atividade principal; o banco de prática abaixo fica como reserva.
+          </div>
+        )}
         {guide.leadIn?.length > 0 && (
           <>
             <div className="rc-teacher-h">Lead-in · comece sempre por aqui ({guide.leadIn.length} perguntas)</div>
