@@ -9,16 +9,40 @@
     "scenario": {
      "text": "It is Tuesday. The decision is due on Friday. The cost team and the design team do not agree about the cooling pipes in the data halls. You are the contracts manager. You need to help them find a solution.",
      "people": [
-      { "name": "Ana", "role": "Cost team", "says": "We have only R$ 1 million left for changes. Two pipes cost R$ 1.8 million more. We cannot pay for this." },
-      { "name": "Leo", "role": "Design team", "says": "AWS wants two pipes. If one pipe stops, the other pipe keeps the servers cool. One pipe is a risk for the client." }
+      {
+       "name": "Ana",
+       "role": "Cost team",
+       "says": "We have only R$ 1 million left for changes. Two pipes cost R$ 1.8 million more. We cannot pay for this."
+      },
+      {
+       "name": "Leo",
+       "role": "Design team",
+       "says": "AWS wants two pipes. If one pipe stops, the other pipe keeps the servers cool. One pipe is a risk for the client."
+      }
      ],
      "table": {
       "caption": "The options",
-      "head": ["Option", "Extra cost", "Meets the AWS requirement?"],
+      "head": [
+       "Option",
+       "Extra cost",
+       "Meets the AWS requirement?"
+      ],
       "rows": [
-       ["A · Two pipes in Data Hall 1 and Data Hall 2", "R$ 1.8 million", "Yes"],
-       ["B · One pipe in both data halls", "R$ 0", "No"],
-       ["C · Two pipes in Data Hall 1 now, Data Hall 2 in phase 2", "R$ 0.9 million now", "Yes, for phase 1"]
+       [
+        "A · Two pipes in Data Hall 1 and Data Hall 2",
+        "R$ 1.8 million",
+        "Yes"
+       ],
+       [
+        "B · One pipe in both data halls",
+        "R$ 0",
+        "No"
+       ],
+       [
+        "C · Two pipes in Data Hall 1 now, Data Hall 2 in phase 2",
+        "R$ 0.9 million now",
+        "Yes, for phase 1"
+       ]
       ]
      }
     },
@@ -45,12 +69,30 @@
     "replies": {
      "from": "Ana and Leo answer you",
      "lines": [
-      { "who": "Ana · Cost", "text": "Option C is still R$ 0.9 million. Why should we pay that now?" },
-      { "who": "Leo · Design", "text": "Option C is OK for me, but AWS must say yes." },
-      { "who": "Ana · Cost", "text": "Can the design team find a cheaper pipe?" },
-      { "who": "Leo · Design", "text": "One pipe is a big risk. I do not accept option B." },
-      { "who": "Ana · Cost", "text": "Who can talk to AWS about this?" },
-      { "who": "Leo · Design", "text": "Can we decide today?" }
+      {
+       "who": "Ana · Cost",
+       "text": "Option C is still R$ 0.9 million. Why should we pay that now?"
+      },
+      {
+       "who": "Leo · Design",
+       "text": "Option C is OK for me, but AWS must say yes."
+      },
+      {
+       "who": "Ana · Cost",
+       "text": "Can the design team find a cheaper pipe?"
+      },
+      {
+       "who": "Leo · Design",
+       "text": "One pipe is a big risk. I do not accept option B."
+      },
+      {
+       "who": "Ana · Cost",
+       "text": "Who can talk to AWS about this?"
+      },
+      {
+       "who": "Leo · Design",
+       "text": "Can we decide today?"
+      }
      ]
     },
     "model": {
@@ -68,6 +110,534 @@
    }
   },
   {
+   "num": 24,
+   "taskCard": {
+    "title": "Understand the client's idioms in a short call",
+    "minutes": 20,
+    "scenario": {
+     "text": "It is Monday morning. Mike, the AWS project manager, calls you about the fire doors for Data Hall 2. He speaks fast and uses a lot of idioms. You are the contracts manager. You need to understand him and answer clearly.",
+     "people": [
+      {
+       "name": "Mike",
+       "role": "AWS project manager",
+       "says": "Hi Julio, quick one. Can you give me a ballpark figure for the new fire doors? Let's get the ball rolling this week."
+      },
+      {
+       "name": "Carla",
+       "role": "Racional · cost team",
+       "says": "I have a first number: about R$ 350 thousand. The exact price comes on Thursday, after the supplier visit."
+      }
+     ],
+     "table": {
+      "caption": "What Mike says → what it means",
+      "head": [
+       "Mike says",
+       "It means"
+      ],
+      "rows": [
+       [
+        "a ballpark figure",
+        "an approximate number"
+       ],
+       [
+        "Let's get the ball rolling.",
+        "Let's start."
+       ],
+       [
+        "Let's touch base on Thursday.",
+        "Let's talk quickly on Thursday."
+       ],
+       [
+        "Are we on the same page?",
+        "Do we agree?"
+       ],
+       [
+        "The bottom line is…",
+        "The most important point is…"
+       ]
+      ]
+     }
+    },
+    "task": "Answer Mike. Give him a ballpark figure, say when the exact price comes, and agree on the next step. Then answer what he says next.",
+    "questions": [
+     "What is the ballpark figure for the fire doors?",
+     "When can you give Mike the exact price?",
+     "When can you touch base with Mike again?",
+     "What is the bottom line for Mike?"
+    ],
+    "starters": [
+     "The ballpark figure is about…",
+     "It is not the exact number.",
+     "We can touch base on…",
+     "The bottom line is…",
+     "Are we on the same page?"
+    ],
+    "success": [
+     "I speak for about one minute.",
+     "I use at least 3 idioms from the table.",
+     "I say clearly that the number is approximate."
+    ],
+    "replies": {
+     "from": "Mike answers you",
+     "lines": [
+      {
+       "who": "Mike · AWS",
+       "text": "R$ 350 thousand? OK. Is that a ballpark or the final price?"
+      },
+      {
+       "who": "Mike · AWS",
+       "text": "Thursday is fine. Can we touch base in the morning?"
+      },
+      {
+       "who": "Mike · AWS",
+       "text": "For us, approving the doors is a no-brainer. Safety comes first."
+      },
+      {
+       "who": "Mike · AWS",
+       "text": "So, are we on the same page?"
+      },
+      {
+       "who": "Mike · AWS",
+       "text": "Great. Let's circle back on the installation date next week."
+      }
+     ]
+    },
+    "model": {
+     "basic": "Hi Mike. The ballpark figure is about R$ 350 thousand. It is not the exact number. We can touch base on Thursday with the exact price. Are we on the same page?",
+     "better": "Hi Mike, thanks for the call. The ballpark figure for the new fire doors is about R$ 350 thousand. It is not the final number: the supplier visits the site on Wednesday, so we can touch base on Thursday morning with the exact price. The bottom line is that we can get the ball rolling this week. Are we on the same page?"
+    },
+    "teacher": {
+     "background": "Aula-ponte, sem ponto gramatical: o foco de linguagem é ENTENDER e devolver idioms de negócios. Ballpark figure = estimativa aproximada (vem do beisebol, 'dentro do estádio'). Touch base = falar rapidamente; circle back = retomar o assunto depois. Portas corta-fogo (fire doors) são item comum de obra; não é preciso saber o preço real — os números da tela bastam.",
+     "watch": [
+      "'Ballpark figure' é número aproximado: o Júlio deve deixar claro 'It is not the exact number', senão o cliente toma como preço final.",
+      "Pronúncia: 'ballpark' tem o tônico em BALL; 'figure' soa 'FIG-yer', não 'fi-GU-re'.",
+      "Não precisa usar todos os idioms: 3 bem usados valem mais que 6 forçados."
+     ]
+    }
+   }
+  },
+  {
+   "num": 25,
+   "taskCard": {
+    "title": "Stay calm when the client questions a delay",
+    "minutes": 20,
+    "scenario": {
+     "text": "It is the weekly meeting with AWS. Sarah, the owner's representative, is not happy: the electrical room in Data Hall 1 is late. Everybody looks at you. You are the contracts manager. You need to answer with calm, short and firm sentences.",
+     "people": [
+      {
+       "name": "Sarah",
+       "role": "AWS · owner's representative",
+       "says": "The electrical room is two weeks late. This is a problem for the whole schedule. What is happening?"
+      },
+      {
+       "name": "Bruno",
+       "role": "Racional · site engineer",
+       "says": "The transformers arrived late from the supplier. We have a recovery plan with a second shift. I need the exact new date from the supplier."
+      }
+     ],
+     "table": {
+      "caption": "The facts",
+      "head": [
+       "Item",
+       "Status"
+      ],
+      "rows": [
+       [
+        "Structure of Data Hall 1",
+        "On schedule"
+       ],
+       [
+        "Electrical room",
+        "2 weeks late (transformers arrived late)"
+       ],
+       [
+        "Recovery plan",
+        "Second shift, starts next Monday"
+       ],
+       [
+        "Exact new date",
+        "Not confirmed yet — supplier answers today"
+       ],
+       [
+        "Main milestone (energization)",
+        "Still possible on the original date"
+       ]
+      ]
+     }
+    },
+    "task": "Answer Sarah. Use short sentences with \"Let me…\". Say what you know, say what you do not know yet, and promise when you get back to her. Then answer what she says next.",
+    "questions": [
+     "What is late, and why?",
+     "What is on schedule?",
+     "What is the recovery plan?",
+     "When can you get back to Sarah with the exact date?"
+    ],
+    "starters": [
+     "Let me be clear.",
+     "Let me explain the situation.",
+     "Here's my view:",
+     "I don't have the exact date now.",
+     "I will get back to you today."
+    ],
+    "success": [
+     "I speak slowly, for about one minute, with short sentences.",
+     "I use \"Let me + verb\" at least 3 times.",
+     "I do not invent a date: I say when I get back to her."
+    ],
+    "replies": {
+     "from": "Sarah answers you",
+     "lines": [
+      {
+       "who": "Sarah · AWS",
+       "text": "Two weeks is a lot. Why did nobody tell me before?"
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "Can you guarantee the energization date?"
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "What exactly does the second shift change?"
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "I need the new date today, not next week."
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "OK. Send me the recovery plan in writing, please."
+      }
+     ]
+    },
+    "model": {
+     "basic": "Let me be clear. The structure is on schedule. The electrical room is two weeks late. The transformers arrived late. Let me explain our plan: we start a second shift on Monday. I don't have the exact date now. I will get back to you today.",
+     "better": "Let me be clear, Sarah: the structure of Data Hall 1 is on schedule. The delay is only in the electrical room, because the transformers arrived late from the supplier. Let me explain our recovery plan: we start a second shift next Monday. Here's my view: the energization milestone is still possible. I don't have the exact new date now — the supplier answers today, and I will get back to you this afternoon, in writing."
+    },
+    "teacher": {
+     "background": "Presença executiva = calma + clareza: frases curtas, pausas, nada de inventar número. Transformadores são equipamentos grandes de energia; atraso de fornecedor é motivo comum de atraso em data center. 'Energization' é o marco em que a sala recebe energia. Recovery plan = plano de recuperação do cronograma. Não é preciso saber engenharia: os dados da tabela bastam.",
+     "watch": [
+      "Let me + verbo base, sem 'to': 'Let me explain', nunca 'Let me to explain'.",
+      "'I will get back to you' (não 'I will return to you').",
+      "Se o Júlio acelerar ou se justificar demais, peça: frase curta, pausa, próxima frase. Velocidade baixa é parte do objetivo da aula."
+     ]
+    }
+   }
+  },
+  {
+   "num": 26,
+   "taskCard": {
+    "title": "Tell AWS which phase each issue is in",
+    "minutes": 20,
+    "scenario": {
+     "text": "It is the monthly contract meeting. Tom, from AWS procurement, brings a list of three issues. Before you discuss each one, you say which phase of the contract it is in, and what it is: a change order, a claim or a closeout item.",
+     "people": [
+      {
+       "name": "Tom",
+       "role": "AWS · procurement",
+       "says": "I have three points today. Can you tell me where each one is in the contract, and how we deal with it?"
+      },
+      {
+       "name": "Paula",
+       "role": "Racional · contracts analyst",
+       "says": "We are in the execution phase. The extra cable trays are new work. The rain delay is extra time. The as-built drawings are for the end of the project."
+      }
+     ],
+     "table": {
+      "caption": "Tom's list",
+      "head": [
+       "Issue",
+       "Phase",
+       "Type"
+      ],
+      "rows": [
+       [
+        "1 · AWS asks for extra cable trays in Data Hall 2",
+        "Execution",
+        "Change order (new scope)"
+       ],
+       [
+        "2 · Heavy rain stops the work for 6 days",
+        "Execution",
+        "Claim (extra time)"
+       ],
+       [
+        "3 · As-built drawings of the whole building",
+        "Closeout",
+        "Closeout item"
+       ]
+      ]
+     }
+    },
+    "task": "Explain each issue to Tom in the Present Simple. Say the phase first, then what it is and what happens next. Then answer what he says next.",
+    "questions": [
+     "Which phase is the contract in now?",
+     "What is issue 1, and how does it go forward?",
+     "What does Racional do about issue 2?",
+     "When does issue 3 happen?"
+    ],
+    "starters": [
+     "The contract is in the execution phase.",
+     "Issue 1 is a change in scope, so it goes through…",
+     "For issue 2, Racional sends…",
+     "Issue 3 is a closeout item. It happens…",
+     "That is out of scope."
+    ],
+    "success": [
+     "I speak for about one minute.",
+     "I say the phase before I explain each issue.",
+     "I use the -s with it / the contract / Racional at least 3 times."
+    ],
+    "replies": {
+     "from": "Tom answers you",
+     "lines": [
+      {
+       "who": "Tom · AWS",
+       "text": "Why is the cable tray a change order? I think it is in the original scope."
+      },
+      {
+       "who": "Tom · AWS",
+       "text": "For the rain, what does Racional need to send us?"
+      },
+      {
+       "who": "Tom · AWS",
+       "text": "Does a claim always mean more money?"
+      },
+      {
+       "who": "Tom · AWS",
+       "text": "Can we do the as-built drawings now?"
+      },
+      {
+       "who": "Tom · AWS",
+       "text": "OK. Who sends the change order, and when?"
+      }
+     ]
+    },
+    "model": {
+     "basic": "The contract is in the execution phase. Issue 1 is new work, so it is a change order. Issue 2 is a claim for extra time. Racional sends a notice. Issue 3 is a closeout item. It happens at the end of the project.",
+     "better": "Let me put this in context: the contract is in the execution phase. Issue 1 is a change in scope — the extra cable trays are not in the original drawings — so it goes through a change order. For issue 2, the rain stops the work for six days, so Racional sends a claim for extra time, not for money. Issue 3 is a closeout item: Racional delivers the as-built drawings at the end of the project, before the handover."
+    },
+    "teacher": {
+     "background": "Ciclo do contrato: Award → Mobilization → Execution → Closeout. Change order = mudança de escopo pedida pelo cliente (trabalho novo). Claim = pleito por prazo e/ou custo por evento que não é culpa da construtora (aqui, chuva). As-built = desenhos de 'como construído', entregues no encerramento. Cable trays = eletrocalhas. Os dados são fictícios e bastam para a conversa.",
+     "watch": [
+      "Present Simple com -s na 3ª pessoa: 'The contract IS', 'Racional SENDS', 'it HAPPENS' — erro mais provável é 'Racional send'.",
+      "Change order ≠ claim: change order = trabalho novo; claim = prazo/custo por um evento.",
+      "Hábito 'context first': se o Júlio começar pelo problema, peça que diga a fase antes."
+     ]
+    }
+   }
+  },
+  {
+   "num": 27,
+   "taskCard": {
+    "title": "Explain a clause to your team: must, may or must not?",
+    "minutes": 20,
+    "scenario": {
+     "text": "The team receives a clause from the AWS contract about delays. Rafael, the site manager, does not read English well. He asks you what Racional must do, what it may do, and what it must not do. You are the contracts manager.",
+     "people": [
+      {
+       "name": "Rafael",
+       "role": "Racional · site manager",
+       "says": "Julio, the supplier says the generators are 15 days late. What does the contract say? What do we have to do?"
+      },
+      {
+       "name": "Clause 14.2",
+       "role": "AWS contract",
+       "says": "The Contractor shall notify the Owner in writing within 10 days of any delay. The Contractor may request an extension of time, provided that it gives notice. The Contractor shall not stop the work without the Owner's approval."
+      }
+     ],
+     "table": {
+      "caption": "Clause 14.2, part by part",
+      "head": [
+       "Part of the clause",
+       "Type"
+      ],
+      "rows": [
+       [
+        "shall notify … in writing within 10 days",
+        "Obligation (must)"
+       ],
+       [
+        "may request an extension of time",
+        "Permission (may)"
+       ],
+       [
+        "provided that it gives notice",
+        "Condition (only if)"
+       ],
+       [
+        "shall not stop the work without approval",
+        "Prohibition (must not)"
+       ]
+      ]
+     }
+    },
+    "task": "Explain clause 14.2 to Rafael in simple English. Say what Racional must do, may do and must not do, and by when. Then answer what he says next.",
+    "questions": [
+     "What must Racional do, and by when?",
+     "What may Racional request?",
+     "What is the condition for the extension of time?",
+     "What must Racional not do?"
+    ],
+    "starters": [
+     "\"Shall\" means it is an obligation.",
+     "We must notify the owner within…",
+     "We may request…, provided that…",
+     "We must not…",
+     "So, the first step is…"
+    ],
+    "success": [
+     "I speak for about one minute.",
+     "I use must, may and must not correctly.",
+     "I say the deadline: within 10 days, in writing."
+    ],
+    "replies": {
+     "from": "Rafael answers you",
+     "lines": [
+      {
+       "who": "Rafael · Site",
+       "text": "Can I just send a WhatsApp to the AWS engineer?"
+      },
+      {
+       "who": "Rafael · Site",
+       "text": "Do we get the extra time automatically?"
+      },
+      {
+       "who": "Rafael · Site",
+       "text": "The delay started 4 days ago. How many days do we have now?"
+      },
+      {
+       "who": "Rafael · Site",
+       "text": "Can we stop the work in Data Hall 1 until the generators arrive?"
+      },
+      {
+       "who": "Rafael · Site",
+       "text": "OK. Who writes the notice?"
+      }
+     ]
+    },
+    "model": {
+     "basic": "\"Shall\" means it is an obligation. We must notify AWS in writing within 10 days. We may request more time, provided that we give notice. We must not stop the work without AWS approval.",
+     "better": "Rafael, this clause has three parts. First, \"shall notify\" is an obligation: we must notify AWS in writing within 10 days — a WhatsApp is not enough. Second, \"may request\" is a permission: we may ask for an extension of time, but only provided that we give the notice. Third, \"shall not stop\" is a prohibition: we must not stop the work without AWS approval. The delay started 4 days ago, so we have 6 days. I write the notice today."
+    },
+    "teacher": {
+     "background": "Em contrato em inglês: shall/must = obrigação; may = permissão (opção); shall not/must not = proibição. 'Provided that' = desde que (condição). 'In writing' = por escrito, formal — mensagem informal normalmente não vale como notificação. Extension of time (EOT) = prorrogação de prazo. A cláusula é fictícia, no estilo dos contratos reais.",
+     "watch": [
+      "Modal + verbo base sem 'to': 'must notify', nunca 'must to notify'; modal não leva -s: 'Racional must', nunca 'musts'.",
+      "'May' aqui é permissão, não 'talvez' — vale perguntar ao Júlio a diferença.",
+      "Conta do prazo na fala 3: 10 dias − 4 já passados = 6 dias. Se ele errar, peça que releia a cláusula."
+     ]
+    }
+   }
+  },
+  {
+   "num": 28,
+   "taskCard": {
+    "title": "MSA or SOW? Answer AWS procurement",
+    "minutes": 20,
+    "scenario": {
+     "text": "Jennifer, from AWS procurement, sends you questions about the new data center site. Some rules come from the MSA, the general agreement for all the work. Others come from the SOW of this site. Some information is confidential. You are the contracts manager.",
+     "people": [
+      {
+       "name": "Jennifer",
+       "role": "AWS · procurement",
+       "says": "I have a few questions about the payment terms, the working hours and the insurance. Which document governs each one?"
+      },
+      {
+       "name": "Marcos",
+       "role": "Racional · legal team",
+       "says": "Payment terms and insurance are in the MSA. Working hours are in the SOW of this site. And remember: the NDA is strict — we never disclose the site location."
+      }
+     ],
+     "table": {
+      "caption": "Which document governs it?",
+      "head": [
+       "Topic",
+       "Governed by",
+       "What it says"
+      ],
+      "rows": [
+       [
+        "Payment terms",
+        "MSA",
+        "AWS pays within 45 days"
+       ],
+       [
+        "Insurance",
+        "MSA",
+        "Same rules for all sites"
+       ],
+       [
+        "Working hours",
+        "SOW (this site)",
+        "7 a.m. to 7 p.m., Monday to Saturday"
+       ],
+       [
+        "Site location and capacity",
+        "NDA",
+        "Confidential — do not disclose"
+       ]
+      ]
+     }
+    },
+    "task": "Answer Jennifer. For each topic, say which document governs it and what it says, in the Present Simple. Then answer what she says next.",
+    "questions": [
+     "Which document governs the payment terms?",
+     "What does the SOW say about working hours?",
+     "When the MSA and the SOW do not agree, which one takes precedence?",
+     "What information can you not disclose?"
+    ],
+    "starters": [
+     "That term is governed by the MSA.",
+     "The MSA says that…",
+     "The SOW of this site says…",
+     "The MSA takes precedence.",
+     "I can't disclose…"
+    ],
+    "success": [
+     "I speak for about one minute.",
+     "I say which document governs each topic.",
+     "I use the -s with it / the MSA / the SOW at least 3 times."
+    ],
+    "replies": {
+     "from": "Jennifer answers you",
+     "lines": [
+      {
+       "who": "Jennifer · AWS",
+       "text": "The SOW says payment in 30 days, but the MSA says 45. Which one applies?"
+      },
+      {
+       "who": "Jennifer · AWS",
+       "text": "Does the insurance rule change for this site?"
+      },
+      {
+       "who": "Jennifer · AWS",
+       "text": "Can the team work on Sunday?"
+      },
+      {
+       "who": "Jennifer · AWS",
+       "text": "A subcontractor asks for the site address. Can you send it?"
+      },
+      {
+       "who": "Jennifer · AWS",
+       "text": "Do the subcontractors also follow the NDA?"
+      }
+     ]
+    },
+    "model": {
+     "basic": "Payment terms are governed by the MSA. The MSA says AWS pays within 45 days. Working hours are in the SOW: 7 a.m. to 7 p.m. If the MSA and the SOW do not agree, the MSA takes precedence. I can't disclose the location.",
+     "better": "Good questions, Jennifer. The payment terms are governed by the MSA: it says AWS pays within 45 days, and it applies to all our sites. The insurance also comes from the MSA, so it does not change for this site. The working hours are in the SOW of this site: 7 a.m. to 7 p.m., Monday to Saturday. When the two documents do not agree, the MSA usually takes precedence. And the location is confidential under the NDA, so I can't disclose it — we flow this rule down to our subcontractors too."
+    },
+    "teacher": {
+     "background": "MSA (Master Services Agreement) = contrato-mãe com as regras gerais para todas as obras. SOW (Statement of Work) = escopo e condições de UMA obra. Em geral o MSA prevalece ('takes precedence') quando há conflito — o contrato pode dizer o contrário, mas para a conversa vale a regra geral. NDA = acordo de confidencialidade; 'flow down' = repassar a regra aos subcontratados. Dados fictícios.",
+     "watch": [
+      "Present Simple com -s: 'The MSA SAYS / GOVERNS / TAKES precedence'.",
+      "'Governed by' (passiva): 'That term IS governed by the MSA', não 'That term governed by'.",
+      "Fala 4 é pegadinha: o endereço é confidencial — o Júlio deve recusar com educação: 'I'm sorry, I can't disclose it.'"
+     ]
+    }
+   }
+  },
+  {
    "num": 40,
    "taskCard": {
     "title": "Close the meeting with the Amazon PM",
@@ -75,15 +645,31 @@
     "scenario": {
      "text": "The weekly meeting with Mark Chen, the Amazon project manager, is almost over. You talked about three points. Now you need to recap the decisions, ask for approval and say what is still open.",
      "people": [
-      { "name": "Mark Chen", "role": "Amazon project manager", "says": "OK, I think we are done. Anything else?" }
+      {
+       "name": "Mark Chen",
+       "role": "Amazon project manager",
+       "says": "OK, I think we are done. Anything else?"
+      }
      ],
      "table": {
       "caption": "Your meeting notes",
-      "head": ["Point", "Status"],
+      "head": [
+       "Point",
+       "Status"
+      ],
       "rows": [
-       ["Generator test", "Agreed: this week, Wednesday to Friday. The Racional team is preparing it now."],
-       ["Phase 2 (Data Hall 2)", "Racional needs Mark's approval to start."],
-       ["UPS battery delivery date", "Open point: we are still waiting for the date from the supplier."]
+       [
+        "Generator test",
+        "Agreed: this week, Wednesday to Friday. The Racional team is preparing it now."
+       ],
+       [
+        "Phase 2 (Data Hall 2)",
+        "Racional needs Mark's approval to start."
+       ],
+       [
+        "UPS battery delivery date",
+        "Open point: we are still waiting for the date from the supplier."
+       ]
       ]
      }
     },
@@ -109,12 +695,30 @@
     "replies": {
      "from": "Mark answers you",
      "lines": [
-      { "who": "Mark · Amazon", "text": "Are you testing the generators on Wednesday or on Thursday?" },
-      { "who": "Mark · Amazon", "text": "Do you need my approval today?" },
-      { "who": "Mark · Amazon", "text": "Who is preparing the test?" },
-      { "who": "Mark · Amazon", "text": "I don't know the battery date. Can we talk next week?" },
-      { "who": "Mark · Amazon", "text": "Why do you need this in writing? We agree." },
-      { "who": "Mark · Amazon", "text": "OK. Please send me the notes today." }
+      {
+       "who": "Mark · Amazon",
+       "text": "Are you testing the generators on Wednesday or on Thursday?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "Do you need my approval today?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "Who is preparing the test?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "I don't know the battery date. Can we talk next week?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "Why do you need this in writing? We agree."
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "OK. Please send me the notes today."
+      }
      ]
     },
     "model": {
@@ -139,16 +743,40 @@
     "scenario": {
      "text": "Sarah Miller, from the AWS team, says the cable trays for the fiber network are Racional's work, at no extra cost. You read the contract again. Annex B says something different. The value is R$ 640 thousand. You want to keep a good relationship, but you cannot accept this.",
      "people": [
-      { "name": "Sarah Miller", "role": "AWS team", "says": "The fiber cable trays are in your scope. We are not going to pay extra for them." },
-      { "name": "The contract", "role": "Annex B, item 7", "says": "Fiber network cable trays: by Owner." }
+      {
+       "name": "Sarah Miller",
+       "role": "AWS team",
+       "says": "The fiber cable trays are in your scope. We are not going to pay extra for them."
+      },
+      {
+       "name": "The contract",
+       "role": "Annex B, item 7",
+       "says": "Fiber network cable trays: by Owner."
+      }
      ],
      "table": {
       "caption": "The escalation path in the contract",
-      "head": ["Level", "Who", "Time"],
+      "head": [
+       "Level",
+       "Who",
+       "Time"
+      ],
       "rows": [
-       ["1 · Working level", "Júlio and Sarah", "5 working days"],
-       ["2 · Next level", "The project directors of Racional and AWS", "10 working days"],
-       ["3 · Formal dispute", "Executives, with a formal claim", "As in the contract"]
+       [
+        "1 · Working level",
+        "Júlio and Sarah",
+        "5 working days"
+       ],
+       [
+        "2 · Next level",
+        "The project directors of Racional and AWS",
+        "10 working days"
+       ],
+       [
+        "3 · Formal dispute",
+        "Executives, with a formal claim",
+        "As in the contract"
+       ]
       ]
      }
     },
@@ -174,12 +802,30 @@
     "replies": {
      "from": "Sarah answers you",
      "lines": [
-      { "who": "Sarah · AWS", "text": "Everybody knows this is your scope." },
-      { "who": "Sarah · AWS", "text": "We don't have budget for this." },
-      { "who": "Sarah · AWS", "text": "If you don't install them, the schedule will slip." },
-      { "who": "Sarah · AWS", "text": "Why don't you just do it now, and we talk later?" },
-      { "who": "Sarah · AWS", "text": "Could you send me Annex B?" },
-      { "who": "Sarah · AWS", "text": "OK. Who would you like to involve at the next level?" }
+      {
+       "who": "Sarah · AWS",
+       "text": "Everybody knows this is your scope."
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "We don't have budget for this."
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "If you don't install them, the schedule will slip."
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "Why don't you just do it now, and we talk later?"
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "Could you send me Annex B?"
+      },
+      {
+       "who": "Sarah · AWS",
+       "text": "OK. Who would you like to involve at the next level?"
+      }
      ]
     },
     "model": {
@@ -204,19 +850,47 @@
     "scenario": {
      "text": "It is Monday. You are in the weekly management meeting with the Amazon team. Karen Lopez, the Amazon project manager, asks for your status. Use the report below.",
      "people": [
-      { "name": "Karen Lopez", "role": "Amazon project manager", "says": "Good morning, Júlio. Can you give us your update?" }
+      {
+       "name": "Karen Lopez",
+       "role": "Amazon project manager",
+       "says": "Good morning, Júlio. Can you give us your update?"
+      }
      ],
      "table": {
       "caption": "Weekly report · week 32",
-      "head": ["When", "What"],
+      "head": [
+       "When",
+       "What"
+      ],
       "rows": [
-       ["Last week · done", "The team completed the foundation of the generator yard."],
-       ["Last week · done", "Racional sent the cooling contract to Amazon."],
-       ["This week · in progress", "The team is installing the switchgear in Electrical Room 1 (60% done)."],
-       ["Next week · plan", "The team is going to start the pressure test of the cooling pipes."],
-       ["Risk", "The chillers will arrive 2 weeks late. The supplier had a problem at the factory."],
-       ["Highlight", "90 days with zero safety incidents."],
-       ["Overall", "On track for the final date."]
+       [
+        "Last week · done",
+        "The team completed the foundation of the generator yard."
+       ],
+       [
+        "Last week · done",
+        "Racional sent the cooling contract to Amazon."
+       ],
+       [
+        "This week · in progress",
+        "The team is installing the switchgear in Electrical Room 1 (60% done)."
+       ],
+       [
+        "Next week · plan",
+        "The team is going to start the pressure test of the cooling pipes."
+       ],
+       [
+        "Risk",
+        "The chillers will arrive 2 weeks late. The supplier had a problem at the factory."
+       ],
+       [
+        "Highlight",
+        "90 days with zero safety incidents."
+       ],
+       [
+        "Overall",
+        "On track for the final date."
+       ]
       ]
      }
     },
@@ -244,12 +918,30 @@
     "replies": {
      "from": "Karen answers you",
      "lines": [
-      { "who": "Karen · Amazon", "text": "Why are the chillers late?" },
-      { "who": "Karen · Amazon", "text": "Will this affect the final date?" },
-      { "who": "Karen · Amazon", "text": "What are you doing to recover the two weeks?" },
-      { "who": "Karen · Amazon", "text": "When are you going to finish Electrical Room 1?" },
-      { "who": "Karen · Amazon", "text": "Did you send the cooling contract to our legal team?" },
-      { "who": "Karen · Amazon", "text": "Great news about safety. Can you share it with the site team?" }
+      {
+       "who": "Karen · Amazon",
+       "text": "Why are the chillers late?"
+      },
+      {
+       "who": "Karen · Amazon",
+       "text": "Will this affect the final date?"
+      },
+      {
+       "who": "Karen · Amazon",
+       "text": "What are you doing to recover the two weeks?"
+      },
+      {
+       "who": "Karen · Amazon",
+       "text": "When are you going to finish Electrical Room 1?"
+      },
+      {
+       "who": "Karen · Amazon",
+       "text": "Did you send the cooling contract to our legal team?"
+      },
+      {
+       "who": "Karen · Amazon",
+       "text": "Great news about safety. Can you share it with the site team?"
+      }
      ]
     },
     "model": {
@@ -274,17 +966,45 @@
     "scenario": {
      "text": "Mark Chen, the Amazon project manager, asks for two extra fuel tanks for the generators. With them, the generators can run for 72 hours without new fuel. The contract says 48 hours. This is out of scope. Your team did a quick impact analysis.",
      "people": [
-      { "name": "Mark Chen", "role": "Amazon project manager", "says": "We need 72 hours of fuel, not 48. Please add two tanks. It is a small change, right?" }
+      {
+       "name": "Mark Chen",
+       "role": "Amazon project manager",
+       "says": "We need 72 hours of fuel, not 48. Please add two tanks. It is a small change, right?"
+      }
      ],
      "table": {
       "caption": "Impact analysis",
-      "head": ["", "Baseline (contract)", "Mark's request"],
+      "head": [
+       "",
+       "Baseline (contract)",
+       "Mark's request"
+      ],
       "rows": [
-       ["Fuel autonomy", "48 hours", "72 hours"],
-       ["Fuel tanks", "4", "6"],
-       ["Extra cost", "—", "R$ 2.4 million"],
-       ["Extra time", "—", "+3 weeks (the tanks take 10 weeks to arrive)"],
-       ["Civil work", "—", "A new concrete base for the tanks"]
+       [
+        "Fuel autonomy",
+        "48 hours",
+        "72 hours"
+       ],
+       [
+        "Fuel tanks",
+        "4",
+        "6"
+       ],
+       [
+        "Extra cost",
+        "—",
+        "R$ 2.4 million"
+       ],
+       [
+        "Extra time",
+        "—",
+        "+3 weeks (the tanks take 10 weeks to arrive)"
+       ],
+       [
+        "Civil work",
+        "—",
+        "A new concrete base for the tanks"
+       ]
       ]
      }
     },
@@ -311,12 +1031,30 @@
     "replies": {
      "from": "Mark answers you",
      "lines": [
-      { "who": "Mark · Amazon", "text": "It's a small change. Can you just add it?" },
-      { "who": "Mark · Amazon", "text": "Three weeks is too long. Can you do it faster?" },
-      { "who": "Mark · Amazon", "text": "Can you do it with no extra cost?" },
-      { "who": "Mark · Amazon", "text": "If we approve today, when will you start?" },
-      { "who": "Mark · Amazon", "text": "Why do you need a new concrete base?" },
-      { "who": "Mark · Amazon", "text": "OK. Send me the change order by Friday." }
+      {
+       "who": "Mark · Amazon",
+       "text": "It's a small change. Can you just add it?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "Three weeks is too long. Can you do it faster?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "Can you do it with no extra cost?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "If we approve today, when will you start?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "Why do you need a new concrete base?"
+      },
+      {
+       "who": "Mark · Amazon",
+       "text": "OK. Send me the change order by Friday."
+      }
      ]
     },
     "model": {
