@@ -170,6 +170,11 @@ export default function CztLesson({ lesson, clientId, prevNum, nextNum, backHref
           </>
         )}
 
+        {/* Atividades da aula com o professor. O Teacher Guide (passos 4–6) pede
+            Audio A/B, role play, Q&A, Make It Your Own e production task — o
+            conteúdo estava no curso, mas este renderizador não mostrava. */}
+        {hasInClass(l.extendedExercises) && <InClass ext={l.extendedExercises} c={c} voiceType={voiceType} />}
+
         {l.takeaways?.length > 0 && (
           <Section navy={navy} accent={accent} letter="✓" title="What I can do now · O que eu já consigo">
             <div style={{ display: 'grid', gap: 8 }}>
@@ -413,6 +418,151 @@ function IntroBlock({ l, navy, accent, accentLight, grayLight, voiceType }) {
         )}
       </div>
     </Section>
+  );
+}
+
+/* ── In class · atividades da aula com o professor (extendedExercises) ── */
+// Os campos vêm como lista, mas há lições com um objeto solto (pairWork em 483).
+function lista(v) { return (Array.isArray(v) ? v : v ? [v] : []).filter(Boolean); }
+
+function hasInClass(ext) {
+  if (!ext) return false;
+  return ['additionalAudios', 'rolePlays', 'qAndA', 'contextualization', 'productionTasks', 'pairWork']
+    .some((k) => lista(ext[k]).length > 0);
+}
+
+function InClass({ ext, c, voiceType }) {
+  const { navy, accent, accentLight, gray, grayLight, offWhite } = c;
+  const audios = lista(ext.additionalAudios);
+  const rolePlays = lista(ext.rolePlays);
+  const qa = lista(ext.qAndA);
+  const mine = lista(ext.contextualization);
+  const tasks = lista(ext.productionTasks);
+  const pairs = lista(ext.pairWork);
+  const box = { padding: '14px 16px', background: offWhite, border: `1px solid ${grayLight}`, borderRadius: 12, marginBottom: 12 };
+  const small = { fontSize: 13.5, color: gray, lineHeight: 1.55, margin: '8px 0 0' };
+  const summary = { cursor: 'pointer', color: accent, fontSize: 13.5, fontWeight: 600 };
+  return (
+    <>
+      <PartTitle accent={accent} navy={navy}>In class · com o professor</PartTitle>
+
+      {audios.length > 0 && (
+        <Section navy={navy} accent={accent} letter="A" title="Audios">
+          {audios.map((a, i) => (
+            <div key={i} style={box}>
+              <div style={{ fontWeight: 700, color: navy, fontSize: 15, marginBottom: 10 }}>{a.title}</div>
+              <AudioPlayer text={a.transcript} rate={0.85} label="Listen" voiceType={a.speaker || voiceType} preferServer />
+              {a.transcript && (
+                <details style={{ marginTop: 10 }}>
+                  <summary style={summary}>Show transcript</summary>
+                  <p style={{ fontSize: 14.5, lineHeight: 1.65, margin: '8px 0 0', padding: 12, background: '#fff', borderRadius: 8 }}>{a.transcript}</p>
+                </details>
+              )}
+              {a.tasks?.length > 0 && (
+                <ol style={{ paddingLeft: 20, margin: '10px 0 0' }}>
+                  {a.tasks.map((t, j) => <li key={j} style={{ fontSize: 14, lineHeight: 1.55, marginBottom: 4 }}>{t}</li>)}
+                </ol>
+              )}
+              {a.task && <p style={{ fontSize: 14, lineHeight: 1.55, margin: '10px 0 0' }}>{a.task}</p>}
+            </div>
+          ))}
+        </Section>
+      )}
+
+      {rolePlays.length > 0 && (
+        <Section navy={navy} accent={accent} letter="R" title="Role play">
+          {rolePlays.map((rp, i) => (
+            <div key={i} style={box}>
+              {rp.title && <div style={{ fontWeight: 700, color: navy, fontSize: 15, marginBottom: 8 }}>{rp.title}</div>}
+              {rp.setup && <p style={{ fontSize: 14, lineHeight: 1.6, margin: '0 0 8px' }}><strong>Setup:</strong> {rp.setup}</p>}
+              {rp.studentA && <p style={{ fontSize: 14, lineHeight: 1.6, margin: '0 0 6px' }}><strong>Student A:</strong> {rp.studentA}</p>}
+              {rp.studentB && <p style={{ fontSize: 14, lineHeight: 1.6, margin: '0 0 6px' }}><strong>Student B:</strong> {rp.studentB}</p>}
+              {rp.roles?.length > 0 && rp.roles.map((r, j) => (
+                <div key={j} style={{ marginTop: 8 }}>
+                  <strong style={{ fontSize: 14 }}>{r.name}</strong>
+                  {r.lines?.length > 0 && (
+                    <ul style={{ paddingLeft: 20, margin: '4px 0 0' }}>
+                      {r.lines.map((line, k) => <li key={k} style={{ fontSize: 14, lineHeight: 1.55 }}>{line}</li>)}
+                    </ul>
+                  )}
+                </div>
+              ))}
+              {rp.instructions && <p style={small}><strong>Instructions:</strong> {rp.instructions}</p>}
+              {rp.sampleDialogue?.length > 0 && (
+                <details style={{ marginTop: 8 }}>
+                  <summary style={summary}>Sample dialogue</summary>
+                  <div style={{ padding: 12, background: '#fff', borderRadius: 8, fontSize: 14, lineHeight: 1.6, marginTop: 8 }}>
+                    {rp.sampleDialogue.map((line, j) => <div key={j} style={{ marginBottom: 4 }}>{line}</div>)}
+                  </div>
+                </details>
+              )}
+              {rp.successCriteria && <p style={small}><strong>Success:</strong> {rp.successCriteria}</p>}
+              {rp.teacherNotes && (
+                <p style={{ fontSize: 13.5, color: '#8C6A00', margin: '10px 0 0', padding: 10, background: '#FFF8E1', borderRadius: 8, lineHeight: 1.55 }}>
+                  <strong>Teacher note:</strong> {rp.teacherNotes}
+                </p>
+              )}
+            </div>
+          ))}
+        </Section>
+      )}
+
+      {qa.length > 0 && (
+        <Section navy={navy} accent={accent} letter="Q" title="Questions & answers">
+          {qa.map((q, i) => (
+            <div key={i} style={{ marginBottom: 14 }}>
+              <p style={{ fontWeight: 600, fontSize: 14.5, lineHeight: 1.55, margin: '0 0 4px', color: navy }}>
+                {q.type && <span style={{ fontSize: 10.5, padding: '2px 8px', borderRadius: 999, background: accentLight, color: accent, textTransform: 'uppercase', letterSpacing: 0.6, marginRight: 8, fontWeight: 700 }}>{q.type}</span>}
+                {q.question || q.q}
+              </p>
+              {(q.sampleAnswer || q.modelAnswer || q.a) && (
+                <details>
+                  <summary style={summary}>Show answer</summary>
+                  <p style={small}>{q.sampleAnswer || q.modelAnswer || q.a}</p>
+                </details>
+              )}
+            </div>
+          ))}
+        </Section>
+      )}
+
+      {mine.length > 0 && (
+        <Section navy={navy} accent={accent} letter="M" title="Make it your own">
+          <ol style={{ paddingLeft: 20, margin: 0 }}>
+            {mine.map((m, i) => <li key={i} style={{ fontSize: 14.5, lineHeight: 1.6, marginBottom: 8 }}>{typeof m === 'string' ? m : (m.prompt || m.question || m.text)}</li>)}
+          </ol>
+        </Section>
+      )}
+
+      {tasks.length > 0 && (
+        <Section navy={navy} accent={accent} letter="P" title="Production task">
+          {tasks.map((t, i) => (
+            <div key={i} style={box}>
+              {t.type && <span style={{ fontSize: 10.5, padding: '2px 10px', borderRadius: 999, background: '#C6F6D5', color: '#2F855A', textTransform: 'uppercase', letterSpacing: 0.6, fontWeight: 700 }}>{t.type}</span>}
+              {t.title && <div style={{ fontWeight: 700, color: navy, fontSize: 15, marginTop: 8 }}>{t.title}</div>}
+              <p style={{ margin: '8px 0 0', fontSize: 14.5, lineHeight: 1.6 }}>{t.task || t.prompt || t.instructions}</p>
+              {t.successCriteria && <p style={small}><strong style={{ color: '#2F855A' }}>✓ Success:</strong> {t.successCriteria}</p>}
+            </div>
+          ))}
+          <SpeakingExercise mode="free" levelId="starter" lang="en-US" />
+        </Section>
+      )}
+
+      {pairs.length > 0 && (
+        <Section navy={navy} accent={accent} letter="2" title="Pair work">
+          {pairs.map((p, i) => (typeof p === 'string' ? (
+            <div key={i} style={box}><p style={{ fontSize: 14, lineHeight: 1.6, margin: 0 }}>{p}</p></div>
+          ) : (
+            <div key={i} style={box}>
+              {p.title && <div style={{ fontWeight: 700, color: navy, fontSize: 15, marginBottom: 6 }}>{p.title}</div>}
+              {p.objective && <p style={{ ...small, margin: '0 0 6px' }}><strong>Objective:</strong> {p.objective}</p>}
+              <p style={{ fontSize: 14, lineHeight: 1.6, margin: 0 }}>{p.description || p.instructions}</p>
+              {p.duration && <p style={small}>Duration: {p.duration}</p>}
+            </div>
+          )))}
+        </Section>
+      )}
+    </>
   );
 }
 
