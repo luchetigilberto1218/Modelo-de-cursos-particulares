@@ -1,4 +1,6 @@
 import { MsEdgeTTS, OUTPUT_FORMAT } from 'msedge-tts';
+import { get, put } from '@vercel/blob';
+import { createHash } from 'node:crypto';
 
 const VOICES = {
   'us-male':   'en-US-GuyNeural',
@@ -32,7 +34,7 @@ const FORMAT = OUTPUT_FORMAT.AUDIO_24KHZ_96KBITRATE_MONO_MP3;
 // Error). Uma nova tentativa logo em seguida quase sempre passa.
 async function synth(voiceName, text) {
   let erro;
-  for (const espera of [0, 400, 1000, 2000]) {
+  for (const espera of [0, 300, 700, 1200, 2000, 3000]) {
     if (espera) await new Promise((r) => setTimeout(r, espera));
     try {
       const buf = await synthOnce(voiceName, text);
@@ -83,8 +85,12 @@ async function synthPtMixed(ptVoice, text) {
   // Sem inglês entre aspas → uma requisição só (rápido).
   if (!segs.some((s) => s.en)) return synth(ptVoice, text);
   // Gera todos os trechos em paralelo e concatena na ordem.
-  const buffers = await Promise.all(segs.map((s) => synth(s.en ? enVoice : ptVoice, s.t.trim()).catch(() => Buffer.alloc(0))));
-  return Buffer.concat(buffers.filter((b) => b.length > 256));
+  let faltouTrecho = false;
+  const buffers = await Promise.all(segs.map((s) => synth(s.en ? enVoice : ptVoice, s.t.trim()).catch(() => { faltouTrecho = true; return Buffer.alloc(0); })));
+  const audio = Buffer.concat(buffers.filter((b) => b.length > 256));
+  // Áudio com trecho faltando ainda toca, mas não pode ficar guardado para sempre.
+  if (faltouTrecho) audio.incompleto = true;
+  return audio;
 }
 
 export async function GET(request) {
@@ -99,6 +105,17 @@ export async function GET(request) {
   const trimmed = noEmoji.slice(0, 3000);
   const voiceName = VOICES[voice] || VOICES['us-male'];
 
+  // Cada áudio gerado fica guardado no Blob: da segunda vez em diante sai de lá,
+  // sem depender do serviço da Microsoft (que limita pedidos e às vezes recusa).
+  // Qualquer falha do Blob só faz pular o atalho — a geração segue como antes.
+  const chave = `tts/${createHash('sha1').update(`${voice}|${voiceName}|${trimmed}`).digest('hex')}.mp3`;
+  try {
+    const salvo = await get(chave, { access: 'private' });
+    if (salvo?.statusCode === 200 && salvo.stream) {
+      return new Response(salvo.stream, { headers: audioHeaders(salvo.blob.size) });
+    }
+  } catch (_) { /* não está guardado ainda */ }
+
   try {
     // Voz multilíngue lê o texto inteiro de uma vez (ela mesma pronuncia o inglês embutido).
     // As demais vozes PT usam o split PT/EN por aspas (synthPtMixed).
@@ -111,16 +128,22 @@ export async function GET(request) {
 
     if (!audioBuffer || audioBuffer.length < 512) return new Response('TTS generation failed', { status: 500 });
 
-    return new Response(audioBuffer, {
-      headers: {
-        'Content-Type': 'audio/mpeg',
-        'Content-Length': audioBuffer.length.toString(),
-        'Cache-Control': 'public, max-age=86400, s-maxage=604800',
-        'Accept-Ranges': 'bytes',
-      },
-    });
+    if (!audioBuffer.incompleto) try {
+      await put(chave, audioBuffer, { access: 'private', addRandomSuffix: false, allowOverwrite: true, contentType: 'audio/mpeg' });
+    } catch (_) { /* sem guardar: o próximo pedido gera de novo */ }
+
+    return new Response(audioBuffer, { headers: audioHeaders(audioBuffer.length) });
   } catch (err) {
     console.error('TTS error:', err);
     return new Response('TTS generation failed', { status: 500 });
   }
+}
+
+function audioHeaders(tamanho) {
+  return {
+    'Content-Type': 'audio/mpeg',
+    ...(tamanho ? { 'Content-Length': String(tamanho) } : {}),
+    'Cache-Control': 'public, max-age=86400, s-maxage=604800',
+    'Accept-Ranges': 'bytes',
+  };
 }
