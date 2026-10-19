@@ -30,6 +30,11 @@ const VOICE_PREFS = {
   'sophie':   { lang: 'en-GB', genderHints: ['sonia', 'female'] },
   'emily':    { lang: 'en-IE', genderHints: ['emily', 'female'] },
   'charlotte':{ lang: 'en-NZ', genderHints: ['molly', 'female'] },
+  // Personagens extras (Czarnikow): antes caíam na voz masculina americana.
+  'ethan':    { lang: 'en-GB', genderHints: ['ryan', 'thomas', 'male'] },
+  'emma':     { lang: 'en-GB', genderHints: ['libby', 'sonia', 'female'] },
+  'priya':    { lang: 'en-GB', genderHints: ['libby', 'sonia', 'female'] },
+  'fatima':   { lang: 'en-US', genderHints: ['jenny', 'aria', 'female'] },
   // Português (BR) — texto em PT deve ser lido com voz PT-BR.
   'pt-br':        { lang: 'pt-BR', genderHints: ['francisca', 'maria', 'luciana', 'female', 'antonio', 'daniel', 'male'] },
   'pt-br-multi':  { lang: 'pt-BR', genderHints: ['thalita', 'francisca', 'maria', 'luciana', 'female'] },
@@ -85,7 +90,17 @@ function isPortuguese(text) {
 }
 
 // Resolve a voiceType efetiva: se o texto é PT e a voz pedida não é PT, usa pt-BR.
+// "Oliver (London)", "James (RP)" → "oliver", "james". Nome que não é
+// personagem conhecido fica como veio (e cai na voz padrão, como sempre).
+function normalizeVoice(voiceType) {
+  const v = String(voiceType || '').trim();
+  if (!v || VOICE_PREFS[v]) return v;
+  const nome = v.toLowerCase().split(/[\s(]/)[0];
+  return VOICE_PREFS[nome] ? nome : v;
+}
+
 function effectiveVoiceType(voiceType, text) {
+  voiceType = normalizeVoice(voiceType);
   if (String(voiceType || '').startsWith('pt')) return voiceType;
   return isPortuguese(text) ? 'pt-br' : (voiceType || 'us-male');
 }

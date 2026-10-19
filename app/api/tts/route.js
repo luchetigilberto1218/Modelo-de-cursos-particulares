@@ -13,6 +13,11 @@ const VOICES = {
   'sophie':    'en-GB-SoniaNeural',
   'emily':     'en-IE-EmilyNeural',
   'charlotte': 'en-NZ-MollyNeural',
+  // Personagens extras (Czarnikow): antes caíam na voz masculina americana.
+  'ethan':     'en-GB-RyanNeural',
+  'emma':      'en-GB-LibbyNeural',
+  'priya':     'en-GB-LibbyNeural',
+  'fatima':    'en-US-JennyNeural',
   // Português (BR) — voz nativa. Trechos em inglês (entre aspas) são lidos por uma
   // voz en-US separada e os áudios são concatenados (ver synthPtMixed). Isso evita
   // tanto o "inglês aportuguesado" quanto o "sotaque gringo no português".
@@ -96,7 +101,10 @@ async function synthPtMixed(ptVoice, text) {
 export async function GET(request) {
   const url = new URL(request.url);
   const text = url.searchParams.get('text');
-  const voice = url.searchParams.get('voice') || 'us-male';
+  // "Oliver (London)" → "oliver" (mesma regra do AudioPlayer).
+  const pedida = (url.searchParams.get('voice') || 'us-male').trim();
+  const nome = pedida.toLowerCase().split(/[\s(]/)[0];
+  const voice = VOICES[pedida] ? pedida : VOICES[nome] ? nome : pedida;
 
   if (!text) return new Response('Missing text parameter', { status: 400 });
 
