@@ -28,7 +28,22 @@ const EN_PARTNER = { 'pt-BR-FranciscaNeural': 'en-US-AriaNeural', 'pt-BR-Antonio
 
 const FORMAT = OUTPUT_FORMAT.AUDIO_24KHZ_96KBITRATE_MONO_MP3;
 
+// O serviço gratuito da Microsoft recusa conexões de vez em quando (429 / Connect
+// Error). Uma nova tentativa logo em seguida quase sempre passa.
 async function synth(voiceName, text) {
+  let erro;
+  for (const espera of [0, 400, 1000, 2000]) {
+    if (espera) await new Promise((r) => setTimeout(r, espera));
+    try {
+      const buf = await synthOnce(voiceName, text);
+      if (buf.length >= 512) return buf;
+      erro = new Error('empty audio');
+    } catch (e) { erro = e; }
+  }
+  throw erro;
+}
+
+async function synthOnce(voiceName, text) {
   const tts = new MsEdgeTTS();
   await tts.setMetadata(voiceName, FORMAT);
   const { audioStream } = tts.toStream(text);
