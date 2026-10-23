@@ -36,7 +36,7 @@ const APPLY = process.argv.includes('--apply');
    julho registrou mudança de nível DEPOIS da inscrição, vale o mais recente —
    está marcado em `nota`. */
 const DADOS = [
-  { nome: 'Aline Momi',                 level: 'apex',       stage: 'Apex 1' },
+  { nome: 'Aline Momi',                 level: 'apex',       stage: 'Apex 2',       nota: 'subiu de Apex 1 no nivelamento de 23/10/2026' },
   { nome: 'Antônio Sérgio Vido Junior', level: 'confidence', stage: 'Confidence' },
   { nome: 'Bruna Beatriz',              level: 'rise',       stage: 'Rise 1' },
   { nome: 'Carla Casanova',             level: 'rise',       stage: 'Rise 2' },
