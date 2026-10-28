@@ -57,6 +57,7 @@ const DADOS = [
   { nome: 'Claudia Gonçalves da Silva', level: 'rise',       stage: 'Rise 2' },
   { nome: 'Weslley Magnago',             level: 'rise',       stage: 'Rise 1',       nota: 'começa em 04/08/2026' },
   { nome: 'João Vitor Caffetani',        level: 'essentials', stage: 'Essentials 3', nota: 'iniciou em 06/08/2026' },
+  { nome: 'Mariana Souza Santana',       level: 'essentials', stage: 'Essentials 2', nota: 'iniciou em 28/10/2026; 1 mês de intensivo e novo nivelamento em 30/11/2026' },
 ];
 
 const norm = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '')

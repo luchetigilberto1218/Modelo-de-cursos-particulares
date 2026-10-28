@@ -59,6 +59,8 @@ const ROSTER = [
   // entrou em 06/08/2026, já com aulas em agosto. Vai no FIM da lista de propósito:
   // a senha é derivada do índice, então acrescentar aqui não muda a de mais ninguém.
   { nome: 'João Vitor Caffetani',       trilha: 'Logistics', nivel: 'Essentials 3' },
+  // entrou em 28/10/2026 (fechamento do Rodrigo). Também no fim da lista, pelo mesmo motivo.
+  { nome: 'Mariana Souza Santana',      trilha: 'Trade & Finance', nivel: 'Essentials 2' },
 ];
 
 /** id do progresso: precisa casar com /^[a-z0-9-]{1,64}$/ (isValidStudent) */

@@ -68,6 +68,7 @@ const TRILHAS = {
   'Claudia Gonçalves da Silva': ['General Business'],
   'Weslley Magnago': ['General Business'],
   'João Vitor Caffetani': ['Logistics'],
+  'Mariana Souza Santana': ['Trade & Finance'],
   // conta de demonstração: mostra a trilha já convertida
   'Colaborador Teste': ['HR'],
 };
